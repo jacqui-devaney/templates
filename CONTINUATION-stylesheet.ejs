@@ -1,0 +1,44 @@
+{
+    #b1: { context: { showSubsection : true } },
+
+    #b2: { context: { 
+        showSubsection : { if: =articles.b1.subsection, not-equal-to: =articles.b2.subsection }
+    } },
+    #b3: { context: { 
+        showSubsection : { if: =articles.b2.subsection, not-equal-to: =articles.b3.subsection }
+    } },
+    #b4: { context: { 
+        showSubsection : { if: =articles.b3.subsection, not-equal-to: =articles.b4.subsection }
+    } },
+    #b5: { context: { 
+        showSubsection : { if: =articles.b4.subsection, not-equal-to: =articles.b5.subsection }
+    } },
+    #b6: { context: { 
+        showSubsection : { if: =articles.b5.subsection, not-equal-to: =articles.b6.subsection }
+    } },
+    #b7: { context: { 
+        showSubsection : { if: =articles.b6.subsection, not-equal-to: =articles.b7.subsection }
+    } },
+    #b8: { context: { 
+        showSubsection : { if: =articles.b7.subsection, not-equal-to: =articles.b8.subsection }
+    } },
+    #b9: { context: { 
+        showSubsection : { if: =articles.b8.subsection, not-equal-to: =articles.b9.subsection }
+    } },
+    #b10: { context: { 
+        showSubsection : { if: =articles.b9.subsection, not-equal-to: =articles.b10.subsection }
+    } },
+    #b11: { context: { 
+        showSubsection : { if: =articles.b10.subsection, not-equal-to: =articles.b11.subsection }
+    } },
+    #b12: { context: {  
+        showSubsection : { if: =articles.b11.subsection, not-equal-to: =articles.b12.subsection }
+    } },
+
+	#foo : {
+		background-image: url(CONTINUATION-stylesheet-test1.png),
+	},
+	#bar : {
+		background-image: url( CONTINUATION-stylesheet-test2.png )
+	}
+}

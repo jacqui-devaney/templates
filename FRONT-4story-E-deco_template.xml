@@ -1,0 +1,60 @@
+DESIGN NEEDS TO BE UPDATED
+
+<jpml id="FRONT-4story-E-deco" stylesheet="FRONT-stylesheet.ejs">
+	<style> {
+		{ if: =portrait, then: {
+			#b1:			{ frame: [195, 27, 571, 216] },
+			#b2:			{ frame: [195, 258, 571, 293] },
+			#b3:			{ frame: [194, 570, 281, 309] },
+			#b4:			{ frame: [486, 567, 281, 309] },
+			#l1: 			{ frame: [184, 240, 572, 1] }
+		}, else: {
+			#b1:			{ frame: [205, 27, 571, 276] },
+			#b2:			{ frame: [205, 320, 571, 294] },
+			#b3:			{ frame: [787, 27, 237, 276] },
+			#b4:			{ frame: [787, 318, 237, 302] },
+			#l1: 			{ frame: [207, 319, 572, 1] }
+		}
+		
+		
+		#l2: 	{ display: { if: =landscape, then: none, else: inherit },
+				{ frame: [184, 531, 274, 1] },
+		
+		#l3: 	{ 
+					display: { if-any: [
+						{ if: =articles.b4.type, equals: A-hed },
+						{ if: =landscape }
+				], then: none, else: inherit },
+				{ frame: [460, 531, 274, 1] }
+		},
+		
+	} </style>
+	
+	<box id="marketstrap" embed="marketstrap" />
+	<box id="whatsnews" embed="whatsnews" />
+	<box id="ad" embed="advertisement" />
+	<box id="b1" embed="article" module="6column-noimage-prominent-module.xml" />
+	<box id="l1" class="line" />
+	<box id="b2" embed="article" module="6column-image-prominent-E-module.xml" />
+	<box id="l2" class="line" />
+	<box id="b3" embed="article" module="3column-noimage-notprominent-module.xml" />
+	<box id="l3" class="line" />
+	<box id="b4" embed="article" module="3column-ahed-module.xml" />
+	
+</jpml>
+
+
+
+		<box id="b1" module="6column-noimage-prominent" , 195, 27, 568, 160" />
+		<!-- id must match id in PHOTO_DECO jpml -->
+		<box id="deco" module="photo-deco-E" affinity="Deco Summary Liondoor" , 203, 198, 377, 345" />
+		<box id="b3" module="2column-noimage-notprominent" , 585, 193, 183, 357" />
+		<box id="b4" module="3column-noimage-notprominent" , 195, 554, 281, 330" />
+		<box id="b5" module="3column-ahed" , 485, 549, 281, 335" />
+
+		<box id="b2" module="6column-noimage-prominent" , 203, 27, 568, 224" />
+		<!-- id must match id in PHOTO_DECO jpml -->
+		<box id="deco" module="photo-deco-E" affinity="Deco Summary Liondoor" , 211, 265, 377, 345" />
+		<box id="b3" module="2column-noimage-notprominent" , 593, 265, 183, 357" />
+		<box id="b6" module="2.5column-noimage-notprominent" , 796, 27, 225, 224" />
+		<box id="b7" module="2.5column-ahed" , 796, 260, 228, 360" />

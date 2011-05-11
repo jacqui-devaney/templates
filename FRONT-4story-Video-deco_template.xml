@@ -1,0 +1,39 @@
+<jpml id="FRONT-4story-Video-deco" stylesheet="FRONT-stylesheet.ejs">
+	<style> {
+		{ if: =portrait, then: {
+			#b1:			{ frame: [195, 26, 571, 194] },
+			#deco:			{ frame: [195, 225, 571, 393] },
+			#b2:			{ frame: [195, 620, 183, 256] },
+			#b3:			{ frame: [390, 620, 183, 256] },
+			#b4:			{ frame: [585, 620, 183, 256] },
+			#l2: 			{ frame: [794, 218, 281, 1] },
+			#l3: 			{ frame: [794, 205, 281, 1] }
+		}, else: {
+			#b1:			{ frame: [205, 26, 571, 194] },
+			#deco:			{ frame: [205, 225, 571, 396] },
+			#b2:			{ frame: [786, 26, 231, 198] },
+			#b3:			{ frame: [786, 225, 231, 196] },
+			#b4:			{ frame: [786, 422, 231, 198] },
+			#l2: 			{ frame: [368, 586, 174, 1] },
+			#l3: 			{ frame: [551, 586, 174, 1] }
+		}
+		
+		#l1: 	{ display: { if: =landscape, then: none, else: inherit },
+				{ frame: [185, 586, 174, 1] }
+		},
+		
+	} </style>
+	
+	<box id="marketstrap" embed="marketstrap" />
+	<box id="whatsnews" embed="whatsnews" />
+	<box id="ad" embed="advertisement" />
+	<box id="b1" embed="article" module="6column-noimage-prominent" />
+	<box id="deco" embed="article" module="6column-video-module.xml" />
+	<box id="l1" class="line" />
+	<box id="b2" embed="article" module="2column-noimage-notprominent-module.xml" />
+	<box id="l2" class="line" />
+	<box id="b3" embed="article" module="2column-noimage-notprominent-module.xml" />
+	<box id="l3" class="line" />
+	<box id="b4" embed="article" module="2column-noimage-notprominent-module.xml" />
+	
+</jpml>

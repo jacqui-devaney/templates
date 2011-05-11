@@ -1,0 +1,16 @@
+<jpml id="gc-3" stylesheet="CONTINUATION-stylesheet.ejs">
+    <style>{
+        { if: =portrait, then: {
+            #b1 : { frame: [0, 0, 256, 874] },
+            #b2 : { frame: [256, 0, 256, 874] },
+            #b3 : { frame: [512, 0, 256, 874] }
+        }, else: {
+            #b1 : { frame: [0, 0, 256, 618] },
+            #b2 : { frame: [256, 0, 256, 618] },        
+            #b3 : { frame: [512, 0, 256, 618] }
+        }
+    }</style>
+    <box id="b1" embed="article" module="continuation-dynamic-module.xml" />    
+    <box id="b2" embed="article" module="continuation-dynamic-module.xml" />
+    <box id="b3" embed="article" module="continuation-dynamic-module.xml" />
+</jpml>

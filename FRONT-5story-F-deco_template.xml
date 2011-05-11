@@ -1,0 +1,51 @@
+<jpml id="FRONT-5story-F-deco" stylesheet="FRONT-stylesheet.ejs">
+	<style> {
+		{ if: =portrait, then: {
+			#b1:			{ frame: [195, 27, 571, 145] },
+			#deco:			{ frame: [195, 175, 571, 270] },
+			#b2:			{ frame: [195, 473, 281, 148] },
+			#b3:			{ frame: [486, 473, 281, 148] },
+			#b4:			{ frame: [195, 625, 281, 257] },
+			#b5:			{ frame: [486, 623, 281, 257] },
+			#l1: 			{ frame: [194, 471, 279, 1] },
+			#l2: 			{ frame: [485, 471, 279, 1] }
+		}, else: {
+			#b1:			{ frame: [205, 27, 571, 145] },
+			#deco:			{ frame: [205, 175, 571, 270] },
+			#b2:			{ frame: [205, 473, 281, 148] },
+			#b3:			{ frame: [496, 473, 281, 148] },
+			#b4:			{ frame: [794, 34, 225, 177] },
+			#b5:			{ frame: [794, 217, 231, 403] },
+			#l1: 			{ frame: [205, 471, 279, 1] },
+			#l2: 			{ frame: [496, 471, 279, 1] }
+		}
+		
+		#l3: 	{ display: { if: =landscape, then: none, else: inherit },
+				{ frame: [194, 625, 279, 1] },
+	
+		#l4: 	{ 
+					display: { if-any: [
+						{ if: =articles.b5.type, equals: A-hed },
+						{ if: =landscape }
+				], then: none, else: inherit },
+				{ frame: [475, 503, 267, 1] }
+		},
+		
+		
+	} </style>
+	
+	<box id="marketstrap" embed="marketstrap" />
+	<box id="whatsnews" embed="whatsnews" />
+	<box id="ad" embed="advertisement" />
+	<box id="b1" embed="article" module="6column-noimage-prominent-module.xml" />
+	<box id="deco" embed="article" module="photo-deco-F-module.xml" />
+	<box id="l1" class="line" />
+	<box id="b2" embed="article" module="3column-noimage-notprominent-module.xml" />
+	<box id="l2" class="line" />
+	<box id="b3" embed="article" module="3column-noimage-notprominent-module.xml" />
+	<box id="l3" class="line" />
+	<box id="b4" embed="article" module="3column-noimage-notprominent-module.xml" />
+	<box id="l4" class="line" />
+	<box id="b5" embed="article" module="3column-ahed-module.xml" />
+	
+</jpml>

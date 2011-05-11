@@ -1,0 +1,31 @@
+<jpml id="SECTION-3story-G-deco-C" stylesheet="SECTION-stylesheet.ejs">
+	<style> {
+		
+		{ if: =portrait, then: {
+			#b1:			{ frame: [3, 0, 571, 176] },
+			#deco:			{ frame: [3, 178, 571, 444] },
+			#b2:			{ frame: [587, 3, 183, 306] },
+			#b3:			{ frame: [587, 325, 183, 295] },
+			#l3:			{ frame: [587, 320, 183, 1] }
+		}, else: {
+			#b1:			{ frame: [11, 0, 571, 176] },
+			#deco:			{ frame: [11, 178, 571, 444] },
+			#b2:			{ frame: [593, 3, 183, 306] },
+			#b3:			{ frame: [593, 325, 183, 295] },
+			#l3:			{ frame: [593, 320, 183, 1] }
+		},
+		
+	} </style>
+	
+	<box id="b1" embed="article" module="6column-noimage-prominent-module.xml" />
+	<box id="deco" embed="article" module="photo-deco-G-module.xml" />
+	<box id="b2" embed="article" module="2column-image-notprominent-C-module.xml" />
+	<box id="l3" class="line" />
+	<box id="b3" embed="article" module="2column-noimage-notprominent-module.xml" />
+	<box id="h1" embed="article" class="highlight_dark" module="highlights-portrait-module.xml" />
+	<box id="l1" class="line" />
+	<box id="h2" embed="article" class="highlight_dark" module="highlights-portrait-module.xml" />
+	<box id="l2" class="line" />
+	<box id="had" embed="advertisement" />
+	
+</jpml>

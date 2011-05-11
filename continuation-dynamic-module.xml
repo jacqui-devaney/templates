@@ -1,0 +1,18 @@
+<jpml>
+    <style>{
+        #subsection : {
+            display: =context.showSubsection
+        }
+    }</style>
+    
+    <panel id="subsection">
+        <p embed="subsection" />
+    </panel>
+    <box id="image-container">
+        <image />
+    </box>
+    <panel id="body-container">
+        <p embed="headline"/> TODO: keys
+        <p embed="body"/>
+    </panel>
+</jpml>

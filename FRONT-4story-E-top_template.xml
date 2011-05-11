@@ -1,0 +1,39 @@
+<jpml id="FRONT-4story-E-top" stylesheet="FRONT-stylesheet.ejs">
+	<style> {
+		{ if: =portrait, then: {
+			#b1:			{ frame: [194, 26, 377, 540] },
+			#b2:			{ frame: [582, 26, 183, 540] },
+			#b3:			{ frame: [194, 576, 281, 303] },
+			#b4:			{ frame: [485, 574, 281, 303] }
+		}, else: {
+			#b1:			{ frame: [205, 27, 377, 590] },
+			#b2:			{ frame: [592, 27, 183, 590] },
+			#b3:			{ frame: [786, 27, 225, 246] },
+			#b4:			{ frame: [791, 270, 238, 350] }
+		}
+		
+		
+		#l1: 	{ display: { if: =landscape, then: none, else: inherit },
+				{ frame: [194, 569, 572, 1] },
+	
+		#l2: 	{ 
+					display: { if-any: [
+						{ if: =articles.b4.type, equals: A-hed },
+						{ if: =landscape }
+				], then: none, else: inherit },
+				{ frame: [475, 531, 274, 1] }
+		},
+		
+	} </style>
+	
+	<box id="marketstrap" embed="marketstrap" />
+	<box id="whatsnews" embed="whatsnews" />
+	<box id="ad" embed="advertisement" />
+	<box id="b1" embed="article" module="4column-image-prominent-E-module.xml" />
+	<box id="b2" embed="article" module="2column-noimage-notprominent-module.xml" />
+	<box id="l1" class="line" />
+	<box id="b3" embed="article" module="3column-noimage-notprominent-module.xml" />
+	<box id="l2" class="line" />
+	<box id="b4" embed="article" module="3column-ahed-module.xml" />
+	
+</jpml>

@@ -1,0 +1,42 @@
+<jpml id="FRONT-4story-F-deco" stylesheet="FRONT-stylesheet.ejs">
+	<style> {
+		{ if: =portrait, then: {
+			#b1:			{ frame: [194, 27, 571, 197] },
+			#deco:			{ frame: [194, 232, 571, 285] },
+			#b2:			{ frame: [194, 517, 281, 177] },
+			#b3:			{ frame: [194, 697, 281, 177] },
+			#b4:			{ frame: [486, 471, 281, 413] },
+			#l1: 			{ frame: [186, 503, 281, 1] }
+		}, else: {
+			#b1:			{ frame: [205, 27, 571, 185] },
+			#deco:			{ frame: [205, 215, 571, 285] },
+			#b2:			{ frame: [205, 501, 582, 113] },
+			#b3:			{ frame: [787, 27, 237, 177] },
+			#b4:			{ frame: [787, 214, 237, 403] },
+			#l1: 			{ frame: [207, 503, 571, 1] }
+		}
+		
+	
+		#l2: 	{ 
+					display: { if-any: [
+						{ if: =articles.b4.type, equals: A-hed },
+						{ if: =landscape }
+				], then: none, else: inherit },
+				{ frame: [475, 503, 267, 1] }
+		},
+		
+	} </style>
+	
+	<box id="marketstrap" embed="marketstrap" />
+	<box id="whatsnews" embed="whatsnews" />
+	<box id="ad" embed="advertisement" />
+	<box id="b1" embed="article" module="6column-noimage-prominent" />
+	<box id="deco" embed="article" module="photo-deco-F-module.xml" />
+	<box id="b2" embed="article" module="6column-noimage-nonprominent-module.xml" />
+	<box id="l1" class="line" />
+	<box id="b3" embed="article" module="3column-noimage-notprominent-module.xml" />
+	<box id="l2" class="line" />
+	<box id="b4" embed="article" module="3column-ahed-module.xml" />
+	
+</jpml>
+

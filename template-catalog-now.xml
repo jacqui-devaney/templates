@@ -1,0 +1,65 @@
+<catalog stylesheet="stylesheet.xml">
+	<templates>
+		<template name="FRONT-5story-F-deco_template.xml" section="FRONT_SECTION" min="5" deco="true" usage="front" />
+		<template name="FRONT-4story-E_template.xml" section="FRONT_SECTION" min="4" usage="front" />
+		<template name="FRONT-4story-E-deco_template.xml" section="FRONT_SECTION" min="4" deco="true" usage="front" />
+		<template name="FRONT-4story-E-top_template.xml" section="FRONT_SECTION" min="4" usage="front" />
+		<template name="FRONT-4story-F_template.xml" section="FRONT_SECTION" min="4" usage="front" />
+		<template name="FRONT-4story-F-deco_template.xml" section="FRONT_SECTION" min="4" deco="true" usage="front" />
+		<template name="FRONT-4story-Vertical-deco_template.xml" section="FRONT_SECTION" min="4" deco="true" usage="front" />
+		<template name="FRONT-4story-Video-deco_template.xml" section="FRONT_SECTION" min="4" deco="true" usage="front" />
+		<template name="FRONT-3story-G-deco_template.xml" section="FRONT_SECTION" min="3" deco="true" usage="front" />
+
+		<template name="OPINION-6story-D_template.xml" section="OPINION" min="8" usage="front" />
+		<template name="OPINION-6story-E_template.xml" section="OPINION" min="8" usage="front" />
+		<template name="OPINION-5story-D_template.xml" section="OPINION" min="7" usage="front" />
+		<template name="OPINION-5story-E_template.xml" section="OPINION" min="7" usage="front" />
+		<template name="OPINION-4story-D_template.xml" section="OPINION" min="6" usage="front" />
+		<template name="OPINION-4story-E_template.xml" section="OPINION" min="6" usage="front" />
+		<template name="OPINION-3story-D_template.xml" section="OPINION" min="5" usage="front" />
+		<template name="OPINION-3story-E_template.xml" section="OPINION" min="5" usage="front" />
+		<template name="OPINION-2story-D_template.xml" section="OPINION" min="4" usage="front" />
+		<template name="OPINION-2story-E_template.xml" section="OPINION" min="4" usage="front" />
+
+		<template name="SECTION-4story-2D-C_template.xml" section="MARKETPLACE" min="6" usage="front" />
+		<template name="SECTION-4story-D-C_template.xml" section="BUSINESS_AND_FINANCE,MONEY_AND_INVESTING" min="6" usage="front" />
+		<template name="SECTION-4story-D-C-marketdata_template.xml" section="BUSINESS_AND_FINANCE,MONEY_AND_INVESTING" min="6" usage="front" />
+		<template name="SECTION-4story-smallG-deco_template.xml" section="MARKETPLACE,NEW_YORK,PERSONAL_JOURNAL" min="6" deco="true" usage="front" />
+		<template name="SECTION-4story-smallG-top_template.xml" section="MARKETPLACE,NEW_YORK" min="6" usage="front" />
+		<template name="SECTION-3story-G_template.xml" section="BUSINESS_AND_FINANCE,FRIDAY_JOURNAL,LIFE_AND_STYLE,MARKETPLACE,MONEY_AND_INVESTING,OFF_DUTY,REVIEW,THE_JOURNAL_REPORT,WSJ_MAGAZINE" min="5" usage="front" />
+		<template name="SECTION-3story-G-deco-C_template.xml" section="NEW_YORK,PERSONAL_JOURNAL,MARKETPLACE" deco="true" min="5" usage="front" />
+		<template name="SECTION-3story-G-marketdata_template.xml" section="BUSINESS_AND_FINANCE,MONEY_AND_INVESTING" min="5" usage="front" />
+		<template name="SECTION-2story-G-C_template.xml" section="FRIDAY_JOURNAL,JOURNAL_REPORT,LIFE_AND_STYLE,OFF_DUTY,PERSONAL_JOURNAL,REVIEW,WEEKEND_JOURNAL" min="4" usage="front" />
+		<template name="SECTION-1story-P_template.xml" section="FRIDAY_JOURNAL,JOURNAL_REPORT,LIFE_AND_STYLE,OFF_DUTY,PERSONAL_JOURNAL,REVIEW,WEEKEND_JOURNAL,NEW_YORK,WSJ_MAGAZINE" min="3" usage="front" />
+		<template name="SECTION-1story-P-1highlight_template.xml" section="FRIDAY_JOURNAL,JOURNAL_REPORT,LIFE_AND_STYLE,OFF_DUTY,PERSONAL_JOURNAL,REVIEW,WEEKEND_JOURNAL,NEW_YORK,WSJ_MAGAZINE" min="3" usage="front" />
+		<template name="SECTION-1story-PV_template.xml" section="FRIDAY_JOURNAL,JOURNAL_REPORT,LIFE_AND_STYLE,OFF_DUTY,PERSONAL_JOURNAL,REVIEW,WEEKEND_JOURNAL,NEW_YORK,WSJ_MAGAZINE" min="3" usage="front" />
+		<template name="SECTION-1story-PV-1highlight_template.xml" section="FRIDAY_JOURNAL,JOURNAL_REPORT,LIFE_AND_STYLE,OFF_DUTY,PERSONAL_JOURNAL,REVIEW,WEEKEND_JOURNAL,NEW_YORK,WSJ_MAGAZINE" min="3" usage="front" />
+		<template name="SECTION-1story-PV-1highlight-white_template.xml" section="FRIDAY_JOURNAL,JOURNAL_REPORT,LIFE_AND_STYLE,OFF_DUTY,PERSONAL_JOURNAL,REVIEW,WEEKEND_JOURNAL,NEW_YORK,WSJ_MAGAZINE" min="3" usage="front" />
+		<template name="SECTION-1story-PV-white_template.xml" section="FRIDAY_JOURNAL,JOURNAL_REPORT,LIFE_AND_STYLE,OFF_DUTY,PERSONAL_JOURNAL,REVIEW,WEEKEND_JOURNAL,NEW_YORK,WSJ_MAGAZINE" min="3" usage="front" />
+		
+		<template name="CONTINUATION-generic-12-template.xml" min="12" usage="continuation" />
+		<template name="CONTINUATION-generic-11-template.xml" min="11" usage="continuation" />
+		<template name="CONTINUATION-generic-10-template.xml" min="10" usage="continuation" />
+		<template name="CONTINUATION-generic-9-template.xml" min="9" usage="continuation" />
+		<template name="CONTINUATION-generic-8-template.xml" min="8" usage="continuation" />
+		<template name="CONTINUATION-generic-7-template.xml" min="7" usage="continuation" />
+		<template name="CONTINUATION-generic-6-template.xml" min="6" usage="continuation" />
+		<template name="CONTINUATION-generic-5-template.xml" min="5" usage="continuation" />
+		<template name="CONTINUATION-generic-4-template.xml" min="4" usage="continuation" />
+		<template name="CONTINUATION-generic-3-template.xml" min="3" usage="continuation" />
+		<template name="CONTINUATION-generic-2-template.xml" min="2" usage="continuation" />
+		<template name="CONTINUATION-generic-1-template.xml" min="1" usage="continuation" />
+		
+		<template name="GENERIC-fullpagead-template.xml" usage="ads" />
+	</templates>
+
+	<article-page-plans>
+		<article pages="article-pages.xml" usage="ads" />
+	</article-page-plans>
+	
+	<display-properties>
+		<ads value="2; 3; 3,5; 3,6; 3,6,8; 3,6,9; 3,6,9,11; 3,6,9,12; 3,6,9,12,14; 3,6,9,12,15" />
+	</display-properties>
+	
+</catalog>
+

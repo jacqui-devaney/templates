@@ -1,0 +1,16 @@
+<jpml id="ARTICLE-front">
+	<style>{
+		{ if: =portrait, then: {
+			#b1 : { frame: [0, 0, 593, 899] },
+			#b2 : { frame: [593, 0, 176, 899] },
+			#b3 : { frame: [0, 899, 768, 33] }
+		}, else: {
+			#b1 : { frame: [0, 0, 883, 643] },
+			#b2 : { frame: [883, 0 , 141, 643] },
+			#b3 : { frame: [0, 643, 1024, 33] }
+		}
+    }</style>
+    <box id="b1" embed="article" module="article-front-module.xml" />
+    <box id="b2" embed="index" />
+    <box id="b1" embed="footer" />
+</jpml>

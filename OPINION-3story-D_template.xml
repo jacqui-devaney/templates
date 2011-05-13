@@ -1,0 +1,33 @@
+<template id="OPINION-3story-E" stylesheet="OPINION-stylesheet.xml">
+    <style>{
+
+			#b1:	{ frame: [1, 50, 474, 284] },
+			#b3 : { frame: [389, 3, 281, 616] }		
+		
+		_comment: "Adjust boxes b2 to include a header depending on the first instance of the Letters article type",
+
+		switch: [
+			{ if: =articles.b2.type, equals: "Letters", then: {
+		 		_comment: "b2 has the header",
+				#b2 : { frame: [1, 334, 474, 285], context: {header: true} },
+			}},
+			else: {
+				_comment: "no header",
+				#b2 : { frame: [1, 334, 474, 285] },
+			}},
+        ]     
+        
+    }</style>
+    
+    <box id="b1" module="5column-opinion-module.xml" />
+    <box id="b2" module="5column-opinion-module.xml" />
+    <box id="l3" class="line" />
+    <box id="b3" module="3column-image-notprominent-E-module.xml" />
+
+    <box id="h1" module="highlights-opinion-module.xml" class="highlight_light" />
+    <box id="l1" class="line" />
+    <box id="h2" module="highlights-opinion-module.xml" class="highlight_light" />
+    <box id="l2" class="line" />    
+    <box id="had" embed="advertisement" class="highlight" />
+    
+</template>

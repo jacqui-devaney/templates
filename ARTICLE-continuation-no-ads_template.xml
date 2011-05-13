@@ -1,0 +1,35 @@
+<jpml id="ARTICLE-continuation-ads">
+	<style>{
+		{ if: =portrait, then: {
+			#b1 : { frame: [0, 0, 593, 899] },
+			#b2 : { frame: [593, 0, 176, 899] },
+			#b3 : { frame: [0, 899, 768, 33] },
+			#ad : { frame: [19, 690, 555, 206] }
+		}, else: {
+			#b1 : { frame: [0, 0, 883, 643] },
+			#b2 : { frame: [883, 0 , 141, 643] },
+			#b3 : { frame: [0, 643, 1024, 33] },
+			#ad : { frame: [310, 430, 555, 206] }
+		}
+	}</style>
+
+	<box id="b1" embed="article" module="article-front-module.xml" />
+	<box id="b2" embed="index" />
+	<box id="b1" embed="footer" />
+	<box id="ad" embed="advertisement" />
+</jpml>
+
+		<template id="portcon" class="portrait ads">
+			<box id="view" module="article-continuation-ads-portrait" x="0" y="0" w="593" h="899" />
+			<box id="index" module="none" x="593" y="0" w="176" h="899"/>
+			<box id="footer" module="none" x="0" y="899" w="768" h="33"/>
+			<box id="advertisement" module="none" x="19" y="690" w="555" h="206"/>
+		</template>
+		<template id="landcon" class="landscape ads">
+			<box id="view" module="article-continuation-ads-landscape" x="0" y="0" w="883" h="643" />
+			<box id="index" module="none" x="883" y="0" w="141" h="643"/>
+			<box id="footer" module="none" x="0" y="643" w="1024" h="33"/>
+			<box id="advertisement" module="none" x="310" y="430" w="555" h="206"/>
+		</template>
+	</page>
+</template-list>

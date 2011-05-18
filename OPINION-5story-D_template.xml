@@ -1,28 +1,31 @@
 <template id="OPINION-5story-D" stylesheet="OPINION-stylesheet.xml">
     <style>{
-		#b1:			{ frame: [1, 50, 474, 156] },
-		#b4:			{ frame: [389, 3, 281, 412] },
-		#b5:			{ frame: [389, 412, 281, 207] },
-
-		_comment: "Adjust boxes b2 to include a header depending on the first instance of the Letters article type",
-
-		switch: [
-			{ if: =articles.b2.type, equals: "Letters", then: {
-		 		_comment: "b2 has the header",
-				#b2: { frame: [1, 206, 474, 206], context: {header: true} },
-				#b3: { frame: [1, 412, 474, 207] },
-			}},
-			{ if: =articles.b3.type, equals: "Letters", then: {
-	 			_comment: "b3 has the header",
-				#b2: { frame: [1, 206, 474, 206] },
-				#b3: { frame: [1, 412, 474, 207], context: {header: true} },
-			}, else: {
-				_comment: "neither have the header",
-				#b2: { frame: [1, 206, 474, 206] },
-				#b3: { frame: [1, 412, 474, 207] },
-			}},
-        ]
-        
+		{ $join: [
+			}
+				#b1:	{ frame: [1, 50, 474, 156] },
+				#b4:	{ frame: [389, 3, 281, 412] },
+				#b5:	{ frame: [389, 412, 281, 207] }
+			},
+			
+			_comment: "Adjust boxes b2 to include a header depending on the first instance of the Letters article type",
+			{ $switch: [
+				{ if: =articles.b2.type, equals: "Letters", then: {
+					_comment: "b2 has the header",
+					#b2: { frame: [1, 206, 474, 206], context: {header: true} },
+					#b3: { frame: [1, 412, 474, 207] }
+				}},
+				{ if: =articles.b3.type, equals: "Letters", then: {
+					_comment: "b3 has the header",
+					#b2: { frame: [1, 206, 474, 206] },
+					#b3: { frame: [1, 412, 474, 207], context: {header: true} }
+				}}, 
+				{ if: true, then: {
+					_comment: "neither have the header",
+					#b2: { frame: [1, 206, 474, 206] },
+					#b3: { frame: [1, 412, 474, 207] }
+				}}
+        	]}
+    	]}    
     }</style>
     
     <box id="b1" module="5column-opinion-module.xml" />

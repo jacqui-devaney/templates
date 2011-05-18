@@ -1,22 +1,24 @@
 <template id="OPINION-4story-E" stylesheet="OPINION-stylesheet.xml">
     <style>{
-			#b1:			{ frame: [1, 50, 474, 284] },
-			#b3:			{ frame: [389, 3, 281, 412] },
-			#b4:			{ frame: [389, 412, 281, 207] },
+		{ $join: [
+			{
+				#b1:	{ frame: [1, 50, 474, 284] },
+				#b3:	{ frame: [389, 3, 281, 412] },
+				#b4:	{ frame: [389, 412, 281, 207] }
+			},
 
-		_comment: "Adjust boxes b2 to include a header depending on the first instance of the Letters article type",
-
-		switch: [
-			{ if: =articles.b2.type, equals: "Letters", then: {
-		 		_comment: "b2 has the header",
-				#b2: { frame: [1, 334, 474, 285], context: {header: true} },
-			}},
-			else: {
-				_comment: "neither have the header",
-				#b2 : { frame: [1, 334, 474, 285] },
-			}},
-        ]  
-        
+			_comment: "Adjust boxes b2 to include a header depending on the first instance of the Letters article type",
+			{ $switch: [
+				{ if: =articles.b2.type, equals: "Letters", then: {
+					_comment: "b2 has the header",
+					#b2: { frame: [1, 334, 474, 285], context: {header: true} }
+				}},
+				{ if: true, then: {
+					_comment: "no header",
+					#b2 : { frame: [1, 334, 474, 285] }
+				}}
+        	]} 
+    	]}    
     }</style>
     
     <box id="b1" module="5column-opinion-module.xml" />

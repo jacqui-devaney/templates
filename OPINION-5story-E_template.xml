@@ -1,13 +1,13 @@
 <template id="OPINION-5story-E" stylesheet="OPINION-stylesheet.xml">
-    <style>{
+    <style>
 		{ $join: [
-			}
+			{
 				#b1:	{ frame: [1, 50, 377, 156] },
 				#b4:	{ frame: [389, 3, 377, 412] },
 				#b5:	{ frame: [389, 412, 377, 207] }
 			},
+			
 			_comment: "Adjust boxes b2 to include a header depending on the first instance of the Letters article type",
-
 			{ $switch: [
 				{ if: =articles.b2.type, equals: "Letters", then: {
 					_comment: "b2 has the header",
@@ -26,7 +26,7 @@
 				}}
         	]}
     	]}    
-    }</style>
+    </style>
     
     <box id="b1" module="5column-opinion-module.xml" />
     <box id="b2" module="5column-opinion-module.xml" />

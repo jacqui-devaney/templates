@@ -1,6 +1,7 @@
 <template id="OPINION-6story-E" stylesheet="OPINION-stylesheet.xml">
-	<style>{
+	<style>
 			{ $join: [
+			{
 				#b1:	{ frame: [1, 50, 377, 156] },
 				#b5:	{ frame: [389, 3, 377, 412] },
 				#b6:	{ frame: [389, 412, 377, 207] }
@@ -25,7 +26,7 @@
 					#b2: { frame: [1, 206, 377, 206] },
 					#b3: { frame: [1, 412, 377, 207] },
 					#b4: { frame: [1, 476, 377, 142], context: {header: true} }
-				}, 
+				}}, 
 				{ if: true, then: {
 					_comment: "neither have the header",
 					#b2: { frame: [1, 206, 377, 206] },
@@ -34,7 +35,7 @@
 				}}
 	    	]}
 		]}
-	}</style>
+	</style>
     
     <box id="b1" module="5column-opinion-module.xml" />
     <box id="b2" module="5column-opinion-module.xml" />

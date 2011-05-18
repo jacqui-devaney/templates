@@ -1,5 +1,5 @@
 <template id="OPINION-4story-E" stylesheet="OPINION-stylesheet.xml">
-    <style>{
+    <style>
 		{ $join: [
 			{
 				#b1:	{ frame: [1, 50, 474, 284] },
@@ -19,7 +19,7 @@
 				}}
         	]} 
     	]}    
-    }</style>
+    </style>
     
     <box id="b1" module="5column-opinion-module.xml" />
     <box id="b2" module="5column-opinion-module.xml" />

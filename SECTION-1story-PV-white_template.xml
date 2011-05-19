@@ -1,11 +1,11 @@
 <jpml id="SECTION-1story-P-1highlight" stylesheet="SECTION-stylesheet.ejs">
-	<style>{
+	<style>
 		{ if: =portrait, then: {
 			#b1:	{ frame: [0, 0, 768, 620] }
 		}, else: {
-			#b1:	{ frame: [0, 0 787, 620] }
+			#b1:	{ frame: [0, 0, 787, 620] }
 		}}	
-	}</style>
+	</style>
 	
 	<box id="b1" embed="article" module="8column-image-prominent-PV-module.xml" />
 	<box id="h1" embed="article" class="highlight_white" module="highlights-portrait-module.xml" />

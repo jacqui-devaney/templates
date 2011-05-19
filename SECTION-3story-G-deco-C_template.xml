@@ -1,5 +1,5 @@
 <jpml id="SECTION-3story-G-deco-C" stylesheet="SECTION-stylesheet.ejs">
-	<style> {
+	<style> 
 		{ if: =portrait, then: {
 			#b1:	{ frame: [3, 0, 571, 176] },
 			#deco:	{ frame: [3, 178, 571, 444] },
@@ -13,7 +13,7 @@
 			#b3:	{ frame: [593, 325, 183, 295] },
 			#l3:	{ frame: [593, 320, 183, 1] }
 		}}
-	} </style>
+	</style>
 	
 	<box id="b1" embed="article" module="6column-noimage-prominent-module.xml" />
 	<box id="deco" embed="article" module="photo-deco-G-module.xml" />

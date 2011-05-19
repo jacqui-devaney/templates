@@ -1,28 +1,25 @@
 <jpml id="SECTION-4story-smallG-deco" stylesheet="SECTION-stylesheet.ejs">
-	<style> {
-		
+	<style>{
 		{ if: =portrait, then: {
-			#b1:			{ frame: [11, 3, 473, 210] },
-			#deco:			{ frame: [5, 220, 473, 405] },
-			#b2:			{ frame: [488, 20, 300, 205] },
-			#b3:			{ frame: [488, 223, 300, 205] },
-			#b4:			{ frame: [488, 427, 300, 205] },
-			#l3:			{ frame: [488, 14, 300, 1] },
-			#l4:			{ frame: [488, 218, 300, 1] },
-			#l5:			{ frame: [488, 422, 300, 1] }
-			
+			#b1:	{ frame: [11, 3, 473, 210] },
+			#deco:	{ frame: [5, 220, 473, 405] },
+			#b2:	{ frame: [488, 20, 300, 205] },
+			#b3:	{ frame: [488, 223, 300, 205] },
+			#b4:	{ frame: [488, 427, 300, 205] },
+			#l3:	{ frame: [488, 14, 300, 1] },
+			#l4:	{ frame: [488, 218, 300, 1] },
+			#l5:	{ frame: [488, 422, 300, 1] }
 		}, else: {
-			#b1:			{ frame: [11, 3, 473, 210] },
-			#deco:			{ frame: [11, 210, 473, 405] },
-			#b2:			{ frame: [496, 13, 280, 205] },
-			#b3:			{ frame: [496, 218, 280, 205] },
-			#b4:			{ frame: [496, 422, 280, 205] },
-			#l3:			{ frame: [496, 13, 280, 1] },
-			#l4:			{ frame: [496, 218, 280, 1] },
-			#l5:			{ frame: [496, 422, 280, 1] }
-		},
-		
-	} </style>
+			#b1:	{ frame: [11, 3, 473, 210] },
+			#deco:	{ frame: [11, 210, 473, 405] },
+			#b2:	{ frame: [496, 13, 280, 205] },
+			#b3:	{ frame: [496, 218, 280, 205] },
+			#b4:	{ frame: [496, 422, 280, 205] },
+			#l3:	{ frame: [496, 13, 280, 1] },
+			#l4:	{ frame: [496, 218, 280, 1] },
+			#l5:	{ frame: [496, 422, 280, 1] }
+		}}
+	}</style>
 	
 	<box id="b1" embed="article" module="5column-noimage-prominent-module.xml" />
 	<box id="deco" embed="article" module="photo-deco-smallG-module.xml" />

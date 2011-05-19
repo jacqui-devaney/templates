@@ -1,20 +1,18 @@
 <jpml id="SECTION-3story-G-deco-C" stylesheet="SECTION-stylesheet.ejs">
 	<style> {
-		
 		{ if: =portrait, then: {
-			#b1:			{ frame: [3, 0, 571, 176] },
-			#deco:			{ frame: [3, 178, 571, 444] },
-			#b2:			{ frame: [587, 3, 183, 306] },
-			#b3:			{ frame: [587, 325, 183, 295] },
-			#l3:			{ frame: [587, 320, 183, 1] }
+			#b1:	{ frame: [3, 0, 571, 176] },
+			#deco:	{ frame: [3, 178, 571, 444] },
+			#b2:	{ frame: [587, 3, 183, 306] },
+			#b3:	{ frame: [587, 325, 183, 295] },
+			#l3:	{ frame: [587, 320, 183, 1] }
 		}, else: {
-			#b1:			{ frame: [11, 0, 571, 176] },
-			#deco:			{ frame: [11, 178, 571, 444] },
-			#b2:			{ frame: [593, 3, 183, 306] },
-			#b3:			{ frame: [593, 325, 183, 295] },
-			#l3:			{ frame: [593, 320, 183, 1] }
-		},
-		
+			#b1:	{ frame: [11, 0, 571, 176] },
+			#deco:	{ frame: [11, 178, 571, 444] },
+			#b2:	{ frame: [593, 3, 183, 306] },
+			#b3:	{ frame: [593, 325, 183, 295] },
+			#l3:	{ frame: [593, 320, 183, 1] }
+		}}
 	} </style>
 	
 	<box id="b1" embed="article" module="6column-noimage-prominent-module.xml" />

@@ -5,8 +5,6 @@
 				#b1:	{ frame: [1, 50, 377, 284] },
 				#b3: 	{ frame: [389, 3, 377, 616] }		
 			},
-				
-			_comment: "Adjust boxes b2 to include a header depending on the first instance of the Letters article type",
 			{ $switch: [
 				{ if: =articles.b2.type, equals: "Letters", then: {
 					_comment: "b2 has the header",

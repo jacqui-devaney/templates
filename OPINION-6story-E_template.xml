@@ -1,6 +1,6 @@
 <template id="OPINION-6story-E" stylesheet="OPINION-stylesheet.xml">
 	<style>
-			{ $join: [
+		{ $join: [
 			{
 				#b1:	{ frame: [1, 50, 377, 156] },
 				#b5:	{ frame: [389, 3, 377, 412] },

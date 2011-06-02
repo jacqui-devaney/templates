@@ -39,7 +39,7 @@ DESIGN NEEDS TO BE UPDATED
 	<box id="l2" class="line" />
 	<box id="b3" embed="article" module="3column-noimage-notprominent-module.xml" />
 	<box id="l3" class="line" />
-	<box id="b4" embed="article" module="3column-ahed-module.xml" />
+	<box id="b4" embed="article" module="AHED_module-module.xml" />
 	
 </jpml>
 
@@ -50,7 +50,7 @@ DESIGN NEEDS TO BE UPDATED
 		<box id="deco" module="photo-deco-E" affinity="Deco Summary Liondoor" , 203, 198, 377, 345" />
 		<box id="b3" module="2column-noimage-notprominent" , 585, 193, 183, 357" />
 		<box id="b4" module="3column-noimage-notprominent" , 195, 554, 281, 330" />
-		<box id="b5" module="3column-ahed" , 485, 549, 281, 335" />
+		<box id="b5" module="AHED_module" , 485, 549, 281, 335" />
 
 		<box id="b2" module="6column-noimage-prominent" , 203, 27, 568, 224" />
 		<!-- id must match id in PHOTO_DECO jpml -->

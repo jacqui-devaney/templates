@@ -1,0 +1,13 @@
+<jpml id="LARGE-hed-dek-image">
+	<style src="GLOBAL_MODULES-stylesheet.ejs" />
+	<style>
+		{
+		image: { width:=view.width, height:{$multiply:[=view.width,0.66]} }
+		}
+	</style>
+	<panel>
+		<p class="large_headline"><span embed="headline" /><mark class="key" /></p>
+		<p class="large_dek"><span embed="subhed" /></p>
+	</panel>
+	<image />
+</jpml>

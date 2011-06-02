@@ -1,4 +1,4 @@
-<template id="OPINION-2story-E" stylesheet="OPINION-stylesheet.xml">
+<template id="OPINION-2story-E" stylesheet="OPINION-stylesheet.ejs">
     <style>{
 		{ if: =portrait, then: {
 			#b1:			{ frame: [1, 50, 377, 569] },

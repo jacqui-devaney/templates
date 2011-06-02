@@ -1,0 +1,24 @@
+<jpml id="CONTINUATION-dynamic">
+	<style src="GLOBAL_MODULES-stylesheet.ejs" />
+    <style>{
+        #strap: {
+            display: { if:=context.hide_strap, then:none, else:default }
+        }
+		#image_container: { 
+			anchor-x: right,
+			anchor-y: top,
+			width: 84,
+			height: 84,
+			padding: [ 4 ]
+		}
+    }</style>
+    
+    <panel id="strap">
+        <p class="subsection" embed="subsection" />
+    </panel>
+    <box id="image_container">
+        <image class="A_size" />
+    </box>
+    <p class="continuation_headline"><span embed="headline" /><mark class="key" /></p>
+   	<panel embed="body" class="continuation_body"/>
+</jpml>

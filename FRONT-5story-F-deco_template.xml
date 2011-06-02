@@ -38,7 +38,7 @@
 	<box id="whatsnews" embed="whatsnews" />
 	<box id="ad" embed="advertisement" />
 	<box id="b1" embed="article" module="6column-noimage-prominent-module.xml" />
-	<box id="deco" embed="article" module="photo-deco-F-module.xml" />
+	<box id="deco" embed="article" module="DECO_module.xml" />
 	<box id="l1" class="line" />
 	<box id="b2" embed="article" module="3column-noimage-notprominent-module.xml" />
 	<box id="l2" class="line" />
@@ -46,6 +46,6 @@
 	<box id="l3" class="line" />
 	<box id="b4" embed="article" module="3column-noimage-notprominent-module.xml" />
 	<box id="l4" class="line" />
-	<box id="b5" embed="article" module="3column-ahed-module.xml" />
+	<box id="b5" embed="article" module="AHED_module-module.xml" />
 	
 </jpml>

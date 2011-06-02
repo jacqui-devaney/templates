@@ -1,0 +1,8 @@
+<jpml id="IMAGE-only-PV">
+	<style>
+		{
+		image: { width:=view.width, height:=view.height }
+		}
+	</style>
+	<image />
+</jpml>

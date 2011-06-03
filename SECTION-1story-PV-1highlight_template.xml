@@ -1,4 +1,4 @@
-	<jpml id="SECTION-1story-P-1highlight" stylesheet="SECTION-stylesheet.ejs">
+	<jpml id="SECTION-1story-PV-1highlight" stylesheet="SECTION-stylesheet.ejs">
 	<style>
 		{ if: =portrait, then: {
 			#b1:	{ frame: [0, 0, 768, 620] }
@@ -8,8 +8,8 @@
 	</style>
 	
 	<box id="b1" embed="article" module="8column-image-prominent-P-module.xml" />
-	<box id="h3" embed="article" class="highlight_dark" module="highlights-portrait-module.xml" />
+	<box id="h3" embed="article" class="highlight_dark" module="HIGHLIGHTS_module.xml" />
 	<box id="l1" class="line" />
-	<box id="had" embed="advertisement" />
+	<box id="highlight_ad" embed="advertisement" />
 	
 </jpml>

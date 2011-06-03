@@ -11,10 +11,10 @@
 	
 	<box id="b1" embed="article" module="6column-image-prominent-G-module.xml" />
 	<box id="b2" embed="article" module="2column-image-notprominent-C-module.xml" />
-	<box id="h1" embed="article" class="highlight_dark" module="highlights-portrait-module.xml" />
+	<box id="h1" embed="article" class="highlight_dark" module="HIGHLIGHTS_module.xml" />
 	<box id="l1" class="line" />
-	<box id="h2" embed="article" class="highlight_dark" module="highlights-portrait-module.xml" />
+	<box id="h2" embed="article" class="highlight_dark" module="HIGHLIGHTS_module.xml" />
 	<box id="l2" class="line" />
-	<box id="had" embed="advertisement" />
+	<box id="highlight_ad" embed="advertisement" />
 	
 </jpml>

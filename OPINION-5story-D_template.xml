@@ -26,17 +26,17 @@
     	]}    
     </style>
     
-    <box id="b1" module="5column-opinion-module.xml" />
-    <box id="b2" module="5column-opinion-module.xml" />
-    <box id="b3" module="5column-opinion-module.xml" />
+    <box id="b1" module="OPINION-RANDO-LETTERS_module.xml" />
+    <box id="b2" module="OPINION-RANDO-LETTERS_module.xml" />
+    <box id="b3" module="OPINION-RANDO-LETTERS_module.xml" />
     <box id="l3" class="line" />
     <box id="b4" module="3column-image-notprominent-E-module.xml" />
     <box id="b5" module="3column-noimage-notprominent-module.xml" />
 
-    <box id="h1" module="highlights-opinion-module.xml" class="highlight_light" />
+    <box id="h1" module="HIGHLIGHTS-module.xml" class="highlight_light" />
     <box id="l1" class="line" />
-    <box id="h2" module="highlights-opinion-module.xml" class="highlight_light" />
+    <box id="h2" module="HIGHLIGHTS-module.xml" class="highlight_light" />
     <box id="l2" class="line" />    
-    <box id="had" embed="advertisement" class="highlight" />
+    <box id="highlight_ad" embed="advertisement" class="highlight_light" />
     
 </template>

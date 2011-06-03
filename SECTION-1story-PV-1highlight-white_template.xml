@@ -8,8 +8,8 @@
 	</style>
 	
 	<box id="b1" embed="article" module="8column-image-prominent-P-module.xml" />
-	<box id="h3" embed="article" class="highlight_white" module="highlights-portrait-module.xml" />
+	<box id="h3" embed="article" class="highlight_white" module="HIGHLIGHTS_module.xml" />
 	<box id="l1" class="line" />
-	<box id="had" embed="advertisement" />
+	<box id="highlight_ad" embed="advertisement" />
 	
 </jpml>

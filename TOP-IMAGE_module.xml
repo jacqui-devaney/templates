@@ -1,0 +1,45 @@
+<jpml id="TOP-IMAGE">
+	<style src="GLOBAL_MODULES-stylesheet.ejs" />
+	<style>
+		{
+		image: { 
+			width:=view.width, 
+			anchor-y:top,
+			anchor-x:center
+			
+			 }
+		},
+		#not_prominent {
+			if headline is prominent display, if else none
+		},
+		#prominent {
+			if headline is not prominent display, if else none
+		},
+		#mediume {
+			if headline is not prominent display, AND if width is larger then 266, display
+		},
+		#2_columns: {
+			if width is larger than 266 --> then display
+			column-count:2,
+			column-gutter:30
+		},
+		#1_column: {
+			if width is less than 266 --> then display
+		},
+		.columns: {
+		}
+	</style>
+	<image />
+	<panel id="not_prominent">
+		<p class="small_headline"><span embed="headline" /><mark class="key" /></p>
+	</panel>
+	<panel id="medium">
+		<p class="medium_headline"><span embed="headline" /><mark class="key" /></p>
+	</panel>
+	<panel id="prominent">
+		<p class="large_headline"><span embed="headline" /><mark class="key" /></p>
+	</panel>
+	<p class="byline" embed="byline" />
+	<panel class="body" id="1_column" embed="body" />
+	<panel class="body" id="2_columns" embed="body" />
+</jpml>

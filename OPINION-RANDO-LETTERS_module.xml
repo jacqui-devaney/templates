@@ -1,0 +1,28 @@
+<jpml id="OPINION-RANDO-LETTERS">
+	<style src="GLOBAL_MODULES-stylesheet.ejs" />
+	<style> {
+		#letters {
+			display: { if:=articles.type, equals:"Letters" then:default, else:none }
+		},
+		#opinion {
+			display: { if:=articles.type, equals:"Review & Outlook" then:default, else:none }
+		},
+	}
+</style>
+	<panel id="rando_header">
+	    <p class="rando_heading" />
+	</panel>
+	<panel id="letters_header">
+	    <p class="letters_heading" embed="subsection" />
+	</panel>
+	<panel id="opinion">
+		<p class="opinion_headline"><span embed="headline" /><mark class="key" /></p>
+		<p class="opinion_dek"><span embed="subhed" /></p>
+		<panel class="body" embed="body" />
+	</panel>
+	<panel id="letters">
+		<p class="letters_headline"><span embed="headline" /><mark class="key" /></p>
+		<panel class="body" embed="body" />
+	</panel>
+	
+</jpml>

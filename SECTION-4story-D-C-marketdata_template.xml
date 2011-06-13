@@ -16,12 +16,12 @@
 		}}
 	</style>
 	
-	<box id="b1" embed="article" module="6column-prominent-D-module.xml" />
-	<box id="b2" embed="article" module="6column-noimage-large-nonprominent-module.xml" />
+	<box id="b1" embed="article" module="TOP-IMAGE_module.xml" />
+	<box id="b2" embed="article" module="TOP-IMAGE_module.xml" />
 	<box id="l3" class="line" />
-	<box id="b3" embed="article" module="2column-image-notprominent-C-module.xml" />
-	<box id="b4" embed="article" module="2column-image-notprominent-C-module.xml" />
-	<box id="h1" embed="marketdata" class="highlight_dark" module="HIGHLIGHTS_module.xml" />
+	<box id="b3" embed="article" module="TOP-IMAGE_module.xml" />
+	<box id="b4" embed="article" module="TOP-IMAGE_module.xml" />
+	<box id="h1" embed="marketdata" class="highlight_dark" />
 	<box id="l1" class="line" />
 	<box id="h2" embed="article" class="highlight_dark" module="HIGHLIGHTS_module.xml" />
 	<box id="l2" class="line" />

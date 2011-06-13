@@ -1,13 +1,18 @@
-<jpml id="TOP-IMAGE">
+<jpml id="LEFT-IMAGE">
 	<style src="GLOBAL_MODULES-stylesheet.ejs" />
 	<style>
 		{
 		#image: { 
-			width:=view.width, 
+			width:359, 
 			anchor-y:top,
-			anchor-x:center
+			anchor-x:left
 			
 			 }
+		},
+		#body_copy: {
+			width: --> can this fill extra space?,
+			anchor-y:right,
+			anchor-x:top
 		},
 		#not_prominent {
 			if headline is prominent display, if else none
@@ -29,9 +34,6 @@
 		.columns: {
 		}
 	</style>
-	<box id="image">
-		<image />
-	</box>
 	<panel id="not_prominent">
 		<p class="small_headline"><span embed="headline" /><mark class="key" /></p>
 	</panel>
@@ -41,7 +43,12 @@
 	<panel id="prominent">
 		<p class="large_headline"><span embed="headline" /><mark class="key" /></p>
 	</panel>
-	<p class="byline" embed="byline" />
-	<panel class="body" id="1_column" embed="body" />
-	<panel class="body" id="2_columns" embed="body" />
+	<box id="image">
+		<image />
+	</box>
+	<panel id="body_copy">
+		<p class="byline" embed="byline" />
+		<panel class="body" id="1_column" embed="body" />
+		<panel class="body" id="2_columns" embed="body" />
+	</panel>
 </jpml>

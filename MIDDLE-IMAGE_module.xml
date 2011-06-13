@@ -1,4 +1,4 @@
-<jpml id="TOP-IMAGE">
+<jpml id="MIDDLE-IMAGE">
 	<style src="GLOBAL_MODULES-stylesheet.ejs" />
 	<style>
 		{
@@ -29,9 +29,6 @@
 		.columns: {
 		}
 	</style>
-	<box id="image">
-		<image />
-	</box>
 	<panel id="not_prominent">
 		<p class="small_headline"><span embed="headline" /><mark class="key" /></p>
 	</panel>
@@ -41,6 +38,9 @@
 	<panel id="prominent">
 		<p class="large_headline"><span embed="headline" /><mark class="key" /></p>
 	</panel>
+	<box id="image">
+		<image />
+	</box>
 	<p class="byline" embed="byline" />
 	<panel class="body" id="1_column" embed="body" />
 	<panel class="body" id="2_columns" embed="body" />

@@ -1,13 +1,19 @@
-<jpml id="TOP-IMAGE">
+<jpml id="LEFT-IMAGE">
 	<style src="GLOBAL_MODULES-stylesheet.ejs" />
 	<style>
 		{
 		#image: { 
-			width:=view.width, 
+			width:262, 
 			anchor-y:top,
-			anchor-x:center
+			anchor-x:center,
+			padding: [ 0, 0, 8, 0 ]
 			
 			 }
+		},
+		#body_image: {
+			width:262,
+			anchor-x:right,
+			anchor-y:top
 		},
 		#not_prominent {
 			if headline is prominent display, if else none
@@ -29,9 +35,6 @@
 		.columns: {
 		}
 	</style>
-	<box id="image">
-		<image />
-	</box>
 	<panel id="not_prominent">
 		<p class="small_headline"><span embed="headline" /><mark class="key" /></p>
 	</panel>
@@ -43,5 +46,10 @@
 	</panel>
 	<p class="byline" embed="byline" />
 	<panel class="body" id="1_column" embed="body" />
-	<panel class="body" id="2_columns" embed="body" />
+	<panel id="body_image">
+		<box id="image">
+			<image />
+		</box>
+		<panel class="body" id="2_columns" embed="body" />
+	</panel>
 </jpml>

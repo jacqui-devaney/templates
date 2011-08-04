@@ -1,4 +1,4 @@
-<template id="OPINION-3story-E" stylesheet="OPINION-stylesheet.ejs">
+<jpml id="OPINION-3story-E" stylesheet="OPINION-stylesheet.ejs">
     <style>
 		{ $join: [
 			{
@@ -29,4 +29,4 @@
     <box id="l2" class="line" />    
     <box id="highlight_ad" embed="advertisement" class="highlight_light" />
     
-</template>
+</jpml>

@@ -1,4 +1,4 @@
-<template id="OPINION-2story-E" stylesheet="OPINION-stylesheet.ejs">
+<jpml id="OPINION-2story-E" stylesheet="OPINION-stylesheet.ejs">
     <style>{
 		{ if: =portrait, then: {
 			#b1:			{ frame: [1, 50, 474, 569] },
@@ -20,4 +20,4 @@
     <box id="l2" class="line" />    
     <box id="highlight_ad" embed="advertisement" class="highlight_light" />
     
-</template>
+</jpml>

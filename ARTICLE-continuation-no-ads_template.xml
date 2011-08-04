@@ -19,17 +19,17 @@
 	<box id="ad" embed="advertisement" />
 </jpml>
 
-		<template id="portcon" class="portrait ads">
+		<jpml id="portcon" class="portrait ads">
 			<box id="view" module="article-continuation-ads-portrait" x="0" y="0" w="593" h="899" />
 			<box id="index" module="none" x="593" y="0" w="176" h="899"/>
 			<box id="footer" module="none" x="0" y="899" w="768" h="33"/>
 			<box id="advertisement" module="none" x="19" y="690" w="555" h="206"/>
-		</template>
-		<template id="landcon" class="landscape ads">
+		</jpml>
+		<jpml id="landcon" class="landscape ads">
 			<box id="view" module="article-continuation-ads-landscape" x="0" y="0" w="883" h="643" />
 			<box id="index" module="none" x="883" y="0" w="141" h="643"/>
 			<box id="footer" module="none" x="0" y="643" w="1024" h="33"/>
 			<box id="advertisement" module="none" x="310" y="430" w="555" h="206"/>
-		</template>
+		</jpml>
 	</page>
-</template-list>
+</jpml>

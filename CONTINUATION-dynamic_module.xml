@@ -2,7 +2,7 @@
 	<style src="GLOBAL_MODULES-stylesheet.ejs" />
     <style>{
         #strap: {
-            display: { if:=context.hide_strap, then:none, else:default }
+            display: { if:=options.hide_strap, then:none, else:default }
         }
 		#image_container: { 
 			anchor-x: right,

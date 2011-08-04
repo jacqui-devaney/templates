@@ -2,18 +2,18 @@
     <style>{
         { if: =portrait, then: {
             #b1 : { frame: [0, 0, 256, 436] },
-            #b2 : { frame: [0, 437, 256, 436], context: {hide_strap: {if:=articles.b2.subsection, equals:=articles.b1.subsection}} },
-            #b3 : { frame: [256, 0, 256, 436], context: {hide_strap: {if:=articles.b3.subsection, equals:=articles.b2.subsection}} },
-            #b4 : { frame: [256, 437, 256, 436], context: {hide_strap: {if:=articles.b4.subsection, equals:=articles.b3.subsection}} },
-            #b5 : { frame: [512, 0, 256, 436], context: {hide_strap: {if:=articles.b5.subsection, equals:=articles.b4.subsection}} },
-            #b6 : { frame: [512, 437, 256, 436], context: {hide_strap: {if:=articles.b6.subsection, equals:=articles.b5.subsection}} }
+            #b2 : { frame: [0, 437, 256, 436], options: {hide_strap: {if:=articles.b2.subsection, equals:=articles.b1.subsection}} },
+            #b3 : { frame: [256, 0, 256, 436], options: {hide_strap: {if:=articles.b3.subsection, equals:=articles.b2.subsection}} },
+            #b4 : { frame: [256, 437, 256, 436], options: {hide_strap: {if:=articles.b4.subsection, equals:=articles.b3.subsection}} },
+            #b5 : { frame: [512, 0, 256, 436], options: {hide_strap: {if:=articles.b5.subsection, equals:=articles.b4.subsection}} },
+            #b6 : { frame: [512, 437, 256, 436], options: {hide_strap: {if:=articles.b6.subsection, equals:=articles.b5.subsection}} }
         }, else: {
             #b1 : { frame: [0, 0, 256, 618] },
-            #b2 : { frame: [256, 0, 256, 618], context: {hide_strap: {if:=articles.b2.subsection, equals:=articles.b1.subsection}} },        
-            #b3 : { frame: [512, 0, 256, 618], context: {hide_strap: {if:=articles.b3.subsection, equals:=articles.b2.subsection}} },
-            #b4 : { frame: [768, 0, 256, 204], context: {hide_strap: {if:=articles.b4.subsection, equals:=articles.b3.subsection}} },
-            #b5 : { frame: [768, 205, 256, 204], context: {hide_strap: {if:=articles.b5.subsection, equals:=articles.b4.subsection}} },
-            #b6 : { frame: [768, 410, 256, 204], context: {hide_strap: {if:=articles.b6.subsection, equals:=articles.b5.subsection}} }
+            #b2 : { frame: [256, 0, 256, 618], options: {hide_strap: {if:=articles.b2.subsection, equals:=articles.b1.subsection}} },        
+            #b3 : { frame: [512, 0, 256, 618], options: {hide_strap: {if:=articles.b3.subsection, equals:=articles.b2.subsection}} },
+            #b4 : { frame: [768, 0, 256, 204], options: {hide_strap: {if:=articles.b4.subsection, equals:=articles.b3.subsection}} },
+            #b5 : { frame: [768, 205, 256, 204], options: {hide_strap: {if:=articles.b5.subsection, equals:=articles.b4.subsection}} },
+            #b6 : { frame: [768, 410, 256, 204], options: {hide_strap: {if:=articles.b6.subsection, equals:=articles.b5.subsection}} }
         }
     }</style>
     <box id="b1" embed="article" module="CONTINUATION-dynamic-module.xml" />    

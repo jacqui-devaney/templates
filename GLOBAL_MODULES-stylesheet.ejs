@@ -160,7 +160,7 @@
 		<!-- if it is the first time the module is displayed on the page, show the header, if else, hide -->
 	},
 	#letters_header: {
-        display: { if:=context.hide_header, then:none, else:default }
+        display: { if:=options.hide_header, then:none, else:default }
     },
 	.opinion_headline {
 		font-name:DJ5Escrow-Bold,

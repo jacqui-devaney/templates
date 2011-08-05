@@ -1,0 +1,46 @@
+<jpml id="ARTICLE-front">
+	<style src="GLOBAL_MODULES-stylesheet.ejs" />
+	<style>{
+        
+        #header_top:    { padding: [10, 8, 6, 8] },
+        #header_middle: { padding: [0, 8, 12, 8] },        
+        #continues_label: {
+			left: 450,
+			anchor-y: bottom
+		},
+        #mediabucket:	{
+			width: 561,
+			height: 395,
+			background-color:#666,
+			left: 19
+			},
+		#body_container : {
+            padding: [10, 8, 10, 8],
+            column-count: 2,
+            column-gutter: 11
+            }
+
+        
+    }</style>
+	
+    <panel id="header_top">
+        <p class="flashline" embed="flashline"/>
+        <p class="headline"><span embed="headline"/><mark class="key"/></p>
+		<p class="subhed" embed="subhed" />
+    </panel>
+    <panel id="header_middle">
+        <p embed="subhead"/>
+    </panel>
+    <panel id="hr" />
+    <box id="mediabucket" embed="mediabucket" />
+    <panel id="body_container">
+        <p embed="byline"/>
+        <p embed="body"/>
+    </panel>
+	<box id="continues_label">
+        <p>Article continues...</p>
+    </box>
+    
+</jpml>
+
+

@@ -1,0 +1,38 @@
+{
+    $join: [
+		=$,
+		{
+            portrait: { if: =view.width, less-than: =view.height },
+            landscape: { if: =view.width, more-than: =view.height },
+			
+			aspect: { 
+				if: { $divide:[=device.height, =device.width] },
+				at-most: 1.4,
+				then: standard,
+				else: widescreen
+			},
+
+            standard: { if: { $divide:[=device.height, =device.width] }, at-most: 1.4 },
+            widescreen: { if: { $divide:[=device.height, =device.width] }, at-least: 1.4 },
+
+			scale: {
+				dpi: { $divide: [=device.dpi, 132] },
+				
+				pagex: {
+					if: =view.width, 
+					less-than: =view.height,
+					then: { $divide: [=view.width, 768] },
+					else: { $divide: [=view.width, 1024] }
+				},	
+						
+				pagey: {
+					if: =view.width, 
+					less-than: =view.height,
+					then: { $divide: [=view.height, 876] },
+					else: { $divide: [=view.height, 620] }
+				}
+			}
+		}
+	]
+
+}

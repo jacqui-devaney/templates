@@ -1,40 +1,18 @@
-<jpml id="LEFT-IMAGE">
+<jpml id="RIGHT-INSET-IMAGE">
 	<style src="GLOBAL_MODULES-stylesheet.ejs" />
-	<style>
-		{
-		#image: { 
-			width:262, 
+	<style>{
+		#body-container: { padding: [10] },
+        #body: { 
+            column-count: {$divide: [=view.width, {$multiply:[250, =scale.dpi]}]},
+            column-gutter: 10
+        },
+        #image: { 
+			width:359, 
 			anchor-y:top,
-			anchor-x:center,
-			padding: [ 0, 0, 8, 0 ]
+			anchor-x:right
 			
 			 }
-		},
-		#body_image: {
-			width:262,
-			anchor-x:right,
-			anchor-y:top
-		},
-		#not_prominent {
-			if headline is prominent display, if else none
-		},
-		#prominent {
-			if headline is not prominent display, if else none
-		},
-		#mediume {
-			if headline is not prominent display, AND if width is larger then 266, display
-		},
-		#2_columns: {
-			if width is larger than 266 --> then display
-			column-count:2,
-			column-gutter:30
-		},
-		#1_column: {
-			if width is less than 266 --> then display
-		},
-		.columns: {
-		}
-	</style>
+		}</style>
 	<panel id="not_prominent">
 		<p class="small_headline"><span embed="headline" /><mark class="key" /></p>
 	</panel>
@@ -44,12 +22,14 @@
 	<panel id="prominent">
 		<p class="large_headline"><span embed="headline" /><mark class="key" /></p>
 	</panel>
-	<p class="byline" embed="byline" />
-	<panel class="body" id="1_column" embed="body" />
-	<panel id="body_image">
-		<box id="image">
-			<image />
-		</box>
-		<panel class="body" id="2_columns" embed="body" />
-	</panel>
+	<box id="image">
+		<image embed="summary-image"/>
+	</box>
+	<panel id="body-container">
+        <panel id="body">
+            <p class="byline" embed="byline"/>
+            <panel class="body" embed="body"/>
+        </panel>
+    </panel>
+
 </jpml>

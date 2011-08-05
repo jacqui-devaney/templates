@@ -1,39 +1,18 @@
 <jpml id="LEFT-IMAGE">
 	<style src="GLOBAL_MODULES-stylesheet.ejs" />
-	<style>
-		{
-		#image: { 
+	<style>{
+		#body-container: { padding: [10] },
+        #body: { 
+            column-count: {$divide: [=view.width, {$multiply:[250, =scale.dpi]}]},
+            column-gutter: 10
+        },
+        #image: { 
 			width:359, 
 			anchor-y:top,
 			anchor-x:left
 			
 			 }
-		},
-		#body_copy: {
-			width: --> can this fill extra space?,
-			anchor-y:right,
-			anchor-x:top
-		},
-		#not_prominent {
-			if headline is prominent display, if else none
-		},
-		#prominent {
-			if headline is not prominent display, if else none
-		},
-		#mediume {
-			if headline is not prominent display, AND if width is larger then 266, display
-		},
-		#2_columns: {
-			if width is larger than 266 --> then display
-			column-count:2,
-			column-gutter:30
-		},
-		#1_column: {
-			if width is less than 266 --> then display
-		},
-		.columns: {
-		}
-	</style>
+		}</style>
 	<panel id="not_prominent">
 		<p class="small_headline"><span embed="headline" /><mark class="key" /></p>
 	</panel>
@@ -44,11 +23,13 @@
 		<p class="large_headline"><span embed="headline" /><mark class="key" /></p>
 	</panel>
 	<box id="image">
-		<image />
+		<image embed="summary-image"/>
 	</box>
-	<panel id="body_copy">
-		<p class="byline" embed="byline" />
-		<panel class="body" id="1_column" embed="body" />
-		<panel class="body" id="2_columns" embed="body" />
-	</panel>
+	<panel id="body-container">
+        <panel id="body">
+            <p class="byline" embed="byline"/>
+            <panel class="body" embed="body"/>
+        </panel>
+    </panel>
+
 </jpml>

@@ -1,21 +1,19 @@
 <jpml id="DECO">
 	<style src="GLOBAL_MODULES-stylesheet.ejs" />
-	<style>
-		{
-		#container {
-			padding: [ 11, 8, 0, 8 ]
-		}
-		image: { width:=view.width, height:=view.height }
-		
+	<style>{
+		jpml: { padding: [11, 8, 0, 8] },
+		image: { 
+			width: { $min:[553, {$divide: [=view.width, =scale.dpi]}] }, 
+			height: { $min:[369, {$divide: [=view.height, =scale.dpi]}] }
 		}
 		
-	</style>
+	}</style>
 	<panel id="hr" />
-	<panel id="container">
-		<panel>
-			<p class="deco_headline"><span embed="headline" /><mark class="key" /></p>
-		</panel>
-		<image />
-		<panel embed="body" class="deco_caption" />
+	<panel>
+		<p class="deco_headline"><span embed="headline" /><mark class="key" /></p>
 	</panel>
+	<panel>
+		<image embed="summary-image" />
+	</panel>
+	<panel embed="body" class="deco_caption" />
 </jpml>

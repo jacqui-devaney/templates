@@ -1,29 +1,35 @@
-<jpml id="AHED">
-	<style src="GLOBAL_MODULES-stylesheet.ejs" />
-	<style>
-		{
-		#container {
-			padding: [ 11, 8, 0, 8 ],
-			background-image: url(ahed-border.png)
-		}
-		#image_container: { 
-					anchor-x: right,
-					anchor-y: top,
-					width: 84,
-					height: 84,
-					padding: [ 4 ]
-		}
+<jpml>
+<style src="GLOBAL_MODULES-stylesheet.ejs"/>
+    <style>{
+        jpml: { padding: [2] },
+        
+        #top_container: {
+            border-image: url(ahed-border.png),
+            border-slice: [16],
+            padding: [16],
+            text-align: center
+        },
+        #bottom_container: {
+            padding: [16],
+            text-overflow: "\u00bb",
+            text-align: justify
+        },
+        #image_container: { anchor-x: right, width: 78, height: 86, padding: [5, 0, 5, 10]},
 		
-	</style>
-	<panel id="container">
-		<panel>
-			<p class="ahed_headline"><span embed="headline" /><mark class="key" /></p>
-			<p class="ahed_subhead" embed="subhead" />
-		</panel>
- 		<box id="image_container">
-			<image class="A_size" />
-		</box>
-		<panel class="ahed_byline" embed="byline" />
-		<p class="ahed_body" embed="body" />
-	</panel>
+		#stars: { padding: [10, 0, 15, 0] }
+               
+    }</style>
+    
+
+    
+    <panel id="top_container">
+        <p class="ahed_headline"><span embed="headline"/><mark class="key"/></p>
+        <p id="stars"><mark class="ahed_stars" /></p>
+        <p class="ahed_subhed" embed="subhed"/>
+    </panel>
+    <panel id="bottom_container">
+        <box id="image_container"><image class="A_size" embed="summary-image"/></box>
+        <p class="ahed_byline" embed="byline"/>
+        <panel class="ahed_body" embed="body" />
+    </panel>
 </jpml>

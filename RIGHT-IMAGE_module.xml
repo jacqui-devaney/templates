@@ -1,4 +1,4 @@
-<jpml id="MIDDLE-IMAGE">
+<jpml id="RIGHT-IMAGE">
 	<style src="GLOBAL_MODULES-stylesheet.ejs" />
 	<style>{
 		#body-container: { padding: [10] },
@@ -9,7 +9,7 @@
         #image: { 
 			width:359, 
 			anchor-y:top,
-			anchor-x:left
+			anchor-x:right
 			
 			 }
 		}</style>

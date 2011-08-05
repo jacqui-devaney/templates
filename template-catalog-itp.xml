@@ -1,4 +1,4 @@
-<catalog>
+<catalog  preprocessor="preprocessor.ejs">
 	<templates>
 		<template name="FRONT-5story-F-deco_template.xml" section="FRONT_SECTION" min="5" deco="true" usage="front" />
 		<template name="FRONT-4story-E_template.xml" section="FRONT_SECTION" min="4" usage="front" />
@@ -54,7 +54,7 @@
 	</templates>
 
 	<article-page-plans>
-		<article pages="article-pages.xml" usage="ads" />
+		<article pages="ARTICLE-pages.xml" usage="ads" />
 	</article-page-plans>
 	
 	<display-properties>

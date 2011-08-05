@@ -1,0 +1,31 @@
+<pages class="article" stylesheet="stylesheet-article.ejs">
+
+    <!-- This template will always be used to render the front page -->
+	<page template="ARTICLE-front_template.xml" type="prefix">
+		<link id="view" module="ARTICLE-front_module.xml"/>
+	</page>
+	
+    <!-- These pages will repeat as needed, hence the "repeat" type -->
+	<page template="ARTICLE-continuation-ads_template.xml" type="repeat">
+		<link id="view" module="ARTICLE-continuation_module.xml"/>
+	</page>
+	<page template="ARTICLE-continuation-ads_template.xml" type="repeat">
+		<link id="view" module="ARTICLE-continuation_module.xml"/>
+	</page>	
+    <page template="ARTICLE-continuation-no-ads_template.xml" type="repeat">
+		<link id="view" module="ARTICLE-continuation_module.xml"/>
+	</page>
+	
+    <!-- The last page of every article uses column leveling with a background matte,
+     which is not supported in conjunction with the ads template. The "suffix" type
+     is used to render that last page. -->
+	<page template="ARTICLE-continuation-no-ads_template.xml" type="suffix">
+		<link id="view" module="ARTICLE-continuation_module.xml"/>
+	</page>	
+	
+    <!-- Optionally, any pages with the "coda" type are displayed after the 
+     article pagination. This can be used for advertising, but has a side effect
+     when swiping left (no ads between articles), so this is currently unused. -->
+	<!-- <page template="generic-fullpagead-template.xml" type="coda" /> -->
+	
+</pages>

@@ -1,18 +1,25 @@
 <jpml id="HIGHLIGHTS">
 	<style src="GLOBAL_MODULES-stylesheet.ejs" />
     <style>{
+		jpml: {
+			padding: [8]
+		},
+
 		#image_container: { 
 			anchor-x: right,
-			anchor-y: top,
-			width: 84,
+			width: 80,
 			height: 84,
-			padding: [ 4 ]
+			padding: [ 0, 0, 0, 10 ]
+		},
+		.highlight_body: {
+			text-overflow: "\u00bb",
+        	text-align: justify
 		}
     }</style>
     
     <p class="highlight_flashline" embed="flashline" />
     <box id="image_container">
-        <image class="A_size" />
+        <image class="A_size" embed="summary-image" />
     </box>
     <p class="highlight_headline"><span embed="headline" /><mark class="key" /></p>
    	<p class="highlight_byline" embed="byline" />

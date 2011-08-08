@@ -1,38 +1,30 @@
-<jpml id="FRONT-4story-F" stylesheet="FRONT-stylesheet.ejs">
-	<style> {
-		{ if: =portrait, then: {
-			#b1:			{ frame: [194, 27, 571, 430] },
-			#b2:			{ frame: [194, 472, 281, 201] },
-			#b3:			{ frame: [194, 674, 281, 207] },
+<jpml id="FRONT-4story-F">
+	<style src="FRONT-stylesheet.ejs" />
+	<style>{
+		if: =portrait, then: {
+			#b1:			{ frame: [200, 37, 554, 430], options:{large_headline:true} },
+			#b2:			{ frame: [200, 478, 270, 190], options:{small_headline:true} },
+			#b3:			{ frame: [200, 677, 270, 190], options:{small_headline:true} },
 			#b4:			{ frame: [486, 471, 281, 413] },
-			#l1: 			{ frame: [186, 447, 267, 1] }
+			#l1: 			{ frame: [194, 473, 280, 1] },
+			#l2: 			{ frame: [194, 670, 280, 1] }
 		}, else: {
-			#b1:			{ frame: [205, 27, 571, 430] },
-			#b2:			{ frame: [205, 472, 571, 130] },
-			#b3:			{ frame: [787, 27, 237, 177] },
-			#b4:			{ frame: [787, 214, 237, 403] },
-			#l1: 			{ frame: [207, 464, 571, 1] }
+			#b1:			{ frame: [210, 33, 551, 430], options:{large_headline:true} },
+			#b2:			{ frame: [210, 472, 551, 140], options:{small_headline:true} },
+			#b3:			{ frame: [793, 33, 221, 180], options:{small_headline:true} },
+			#b4:			{ frame: [787, 214, 237, 413] },
+			#l1: 			{ frame: [200, 464, 571, 1] }
 		}
-		
-	
-		#l2: 	{ 
-					display: { if-any: [
-						{ if: =articles.b4.type, equals: A-hed },
-						{ if: =landscape }
-				], then: none, else: inherit },
-				{ frame: [475, 447, 267, 1] }
-		},
-		
-	} </style>
+				
+	}</style>
 	
 	<box id="marketstrap" embed="marketstrap" />
 	<box id="whatsnews" embed="whatsnews" />
 	<box id="ad" embed="advertisement" />
-	<box id="b1" embed="article" module="MIDDLE-IMAGE-module.xml" />
-	<box id="b2" embed="article" module="TOP-IMAGE-module.xml" />
+	<box id="b1" embed="article" module="TOP-IMAGE_module.xml" />
+	<box id="b2" embed="article" module="TOP-IMAGE_module.xml" />
 	<box id="l1" class="line" />
-	<box id="b3" embed="article" module="TOP-IMAGE-module.xml" />
+	<box id="b3" embed="article" module="TOP-IMAGE_module.xml" />
 	<box id="l2" class="line" />
-	<box id="b4" embed="article" module="AHED_module-module.xml" />
-	
+	<box id="b4" embed="article" module="AHED_module.xml" />
 </jpml>

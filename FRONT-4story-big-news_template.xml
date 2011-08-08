@@ -1,0 +1,36 @@
+<jpml id="FRONT-4story-big-news">
+	<style src="FRONT-stylesheet.ejs" />
+	<style> {
+		if: =portrait, then: {
+			#b1:			{ frame: [10, 37, 748, 323], options:{bignews_huge_headline:true} },
+			#b2:			{ frame: [210, 371, 320, 250], options:{small_headline:true} },
+			#b3:			{ frame: [210, 630, 320, 250], options:{small_headline:true} },
+			#b4:			{ frame: [545, 361, 221, 310] },
+			#l1: 			{ frame: [200, 363, 336, 1] },
+			#l2: 			{ frame: [200, 622, 336, 1] },
+			#whatsnews:		{ frame: [10, 363, 183, 522] },
+			#ad:			{ frame: [567, 672, 183, 197] }
+		}, else: {
+			#b1:			{ frame: [10, 33, 1004, 310], options:{bignews_big_headline:true} },
+			#b2:			{ frame: [210, 360, 167, 251], options:{small_headline:true} },
+			#b3:			{ frame: [414, 360, 167, 251], options:{small_headline:true} },
+			#b4:			{ frame: [609, 352, 183, 267] },
+			#l1: 			{ frame: [200, 354, 183, 1] },
+			#l2: 			{ frame: [406, 354, 183, 1] },
+			#whatsnews:		{ frame: [10, 353, 183, 266] },
+			#ad:			{ frame: [820, 385, 183, 197] }
+		}
+
+	} </style>
+	
+	<box id="marketstrap" embed="marketstrap" />
+	<box id="whatsnews" embed="whatsnews" />
+	<box id="ad" embed="advertisement" />
+	<box id="b1" embed="article" module="BIG-NEWS_module.xml" />
+	<box id="l1" class="line" />
+	<box id="b2" embed="article" module="LEFT-IMAGE_module.xml" />
+	<box id="l2" class="line" />
+	<box id="b3" embed="article" module="TOP-IMAGE_module.xml" />
+	<box id="b4" embed="article" module="AHED_module.xml" />
+	
+</jpml>

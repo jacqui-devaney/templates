@@ -2,7 +2,6 @@
 <style src="GLOBAL_MODULES-stylesheet.ejs"/>
     <style>{
         jpml: { padding: [2] },
-        
         #top_container: {
             border-image: url(ahed-border.png),
             border-slice: [16],
@@ -15,21 +14,48 @@
             text-align: justify
         },
         #image_container: { anchor-x: right, width: 78, height: 86, padding: [5, 0, 5, 10]},
+				#stars: { padding: [10, 0, 15, 0] },
+		#body: { 
+            column-count: {$divide: [=view.width, {$multiply:[250, =scale.dpi]}]},
+            column-gutter: 20
+        },
+		#regular_content: { padding: [ 5, 10, 10, 10 ] },
+		#regular: {
+			display: { if: =article.type, equals: A-hed, then: none, else: inherit }
+		},
+		#ahed: {
+			display: { if: =article.type, equals: A-hed, then: inherit, else: none }
+		}
 		
-		#stars: { padding: [10, 0, 15, 0] }
-               
+
+
     }</style>
     
-
-    
-    <panel id="top_container">
-        <p class="ahed_headline"><span embed="headline"/><mark class="key"/></p>
-        <p id="stars"><mark class="ahed_stars" /></p>
-        <p class="ahed_subhed" embed="subhed"/>
-    </panel>
-    <panel id="bottom_container">
-        <box id="image_container"><image class="A_size" embed="summary-image"/></box>
-        <p class="ahed_byline" embed="byline"/>
-        <panel class="ahed_body" embed="body" />
-    </panel>
+	<box id="regular">
+		<panel id="hr" />
+		<box id="regular_content">
+			<panel id="not_prominent">
+				<p id="small_headline"><span embed="headline" /><mark class="key" /></p>
+			</panel>
+			<panel id="body-container">
+		        <panel id="body">
+		            <p class="byline" embed="byline"/>
+		            <panel class="body" embed="body"/>
+		        </panel>
+		    </panel>
+		</box>
+	</box>
+	
+    <box id="ahed">
+	    <panel id="top_container">
+	        <p class="ahed_headline"><span embed="headline"/><mark class="key"/></p>
+	        <p id="stars"><mark class="ahed_stars" /></p>
+	        <p class="ahed_subhed" embed="subhed"/>
+	    </panel>
+	    <panel id="bottom_container">
+	        <box id="image_container"><image class="A_size" embed="summary-image"/></box>
+	        <p class="ahed_byline" embed="byline"/>
+	        <panel class="ahed_body" embed="body" />
+	    </panel>
+	</box>
 </jpml>

@@ -1,51 +1,41 @@
-<jpml id="FRONT-5story-F-deco" stylesheet="FRONT-stylesheet.ejs">
+<jpml id="FRONT-5story-F-deco">
+	<style src="FRONT-stylesheet.ejs" />
 	<style> {
-		{ if: =portrait, then: {
-			#b1:			{ frame: [195, 27, 571, 145] },
-			#deco:			{ frame: [195, 175, 571, 270] },
-			#b2:			{ frame: [195, 473, 281, 148] },
-			#b3:			{ frame: [486, 473, 281, 148] },
-			#b4:			{ frame: [195, 625, 281, 257] },
-			#b5:			{ frame: [486, 623, 281, 257] },
-			#l1: 			{ frame: [194, 471, 279, 1] },
-			#l2: 			{ frame: [485, 471, 279, 1] }
+		if: =portrait, then: {
+			#b1:			{ frame: [202, 33, 551, 145], options:{large_headline:true} },
+			#deco:			{ frame: [194, 175, 571, 270] },
+			#b2:			{ frame: [202, 478, 261, 148], options:{small_headline:true} },
+			#b3:			{ frame: [495, 478, 261, 148], options:{small_headline:true} },
+			#b4:			{ frame: [202, 641, 261, 235], options:{small_headline:true} },
+			#b5:			{ frame: [486, 633, 281, 250] },
+			#l1: 			{ frame: [194, 471, 281, 1] },
+			#l2: 			{ frame: [485, 471, 281, 1] },
+			#l3: 			{ frame: [194, 635, 281, 1] }
 		}, else: {
-			#b1:			{ frame: [205, 27, 571, 145] },
+			#b1:			{ frame: [210, 33, 551, 145], options:{large_headline:true} },
 			#deco:			{ frame: [205, 175, 571, 270] },
-			#b2:			{ frame: [205, 473, 281, 148] },
-			#b3:			{ frame: [496, 473, 281, 148] },
-			#b4:			{ frame: [794, 34, 225, 177] },
-			#b5:			{ frame: [794, 217, 231, 403] },
-			#l1: 			{ frame: [205, 471, 279, 1] },
-			#l2: 			{ frame: [496, 471, 279, 1] }
+			#b2:			{ frame: [210, 478, 261, 140], options:{small_headline:true} },
+			#b3:			{ frame: [506, 478, 261, 140], options:{small_headline:true} },
+			#b4:			{ frame: [804, 33, 205, 185], options:{small_headline:true} },
+			#b5:			{ frame: [794, 227, 231, 400] },
+			#l1: 			{ frame: [200, 471, 281, 1] },
+			#l2: 			{ frame: [496, 471, 281, 1] }
 		}
-		
-		#l3: 	{ display: { if: =landscape, then: none, else: inherit },
-				{ frame: [194, 625, 279, 1] },
-	
-		#l4: 	{ 
-					display: { if-any: [
-						{ if: =articles.b5.type, equals: A-hed },
-						{ if: =landscape }
-				], then: none, else: inherit },
-				{ frame: [475, 503, 267, 1] }
-		},
-		
 		
 	} </style>
 	
 	<box id="marketstrap" embed="marketstrap" />
 	<box id="whatsnews" embed="whatsnews" />
 	<box id="ad" embed="advertisement" />
-	<box id="b1" embed="article" module="TOP-IMAGE-module.xml" />
+	<box id="b1" embed="article" module="TOP-IMAGE_module.xml" />
 	<box id="deco" embed="article" module="DECO_module.xml" />
 	<box id="l1" class="line" />
-	<box id="b2" embed="article" module="TOP-IMAGE-module.xml" />
+	<box id="b2" embed="article" module="TOP-IMAGE_module.xml" />
 	<box id="l2" class="line" />
-	<box id="b3" embed="article" module="TOP-IMAGE-module.xml" />
+	<box id="b3" embed="article" module="TOP-IMAGE_module.xml" />
 	<box id="l3" class="line" />
-	<box id="b4" embed="article" module="TOP-IMAGE-module.xml" />
+	<box id="b4" embed="article" module="TOP-IMAGE_module.xml" />
 	<box id="l4" class="line" />
-	<box id="b5" embed="article" module="AHED_module-module.xml" />
+	<box id="b5" embed="article" module="AHED_module.xml" />
 	
 </jpml>

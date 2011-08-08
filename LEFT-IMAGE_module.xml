@@ -1,26 +1,26 @@
 <jpml id="LEFT-IMAGE">
 	<style src="GLOBAL_MODULES-stylesheet.ejs" />
 	<style>{
-		#body-container: { padding: [10] },
         #body: { 
             column-count: {$divide: [=view.width, {$multiply:[250, =scale.dpi]}]},
-            column-gutter: 10
+            column-gutter: 20
         },
         #image: { 
 			width:359, 
 			anchor-y:top,
 			anchor-x:left
 			
-			 }
+			 },
+		.invisible: { display:none },
+		#small_headline: { display: { if: =options.small_headline, then:inherit }},
+		#medium_headline: { display: { if: =options.medium_headline, then:inherit }},
+		#large_headline: { display: { if: =options.large_headline, then:inherit }}
+		
 		}</style>
-	<panel id="not_prominent">
-		<p class="small_headline"><span embed="headline" /><mark class="key" /></p>
-	</panel>
-	<panel id="medium">
-		<p class="medium_headline"><span embed="headline" /><mark class="key" /></p>
-	</panel>
-	<panel id="prominent">
-		<p class="large_headline"><span embed="headline" /><mark class="key" /></p>
+	<panel id="headline">
+		<p id="small_headline" class="invisible"><span embed="headline" /><mark class="key" /></p>
+		<p id="medium_headline" class="invisible"><span embed="headline" /><mark class="key" /></p>
+		<p id="large_headline" class="invisible"><span embed="headline" /><mark class="key" /></p>
 	</panel>
 	<box id="image">
 		<image embed="summary-image"/>

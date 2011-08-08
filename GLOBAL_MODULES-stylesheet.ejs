@@ -7,17 +7,27 @@
 		pixels-per-point-x: { if: =intent.template, then: =scale.pagex, else: =scale.dpi },
 		pixels-per-point-y: { if: =intent.template, then: =scale.pagey, else: =scale.dpi }
 	},
-	.large_headline: {
+	#bignews_huge_headline: {
+		font-name:DJ5EscrowCond-Bold,
+		font-size:75,
+		line-height:80
+	},
+	#bignews_big_headline: {
+		font-name:DJ5EscrowCond-Bold,
+		font-size:57,
+		line-height:61
+	},
+	#large_headline: {
 		font-name:DJ5EscrowCond-Bold,
 		font-size:40,
 		line-height:44
 	},
-	.medium_headline: {
+	#medium_headline: {
 		font-name:DJ5EscrowCond-Bold,
 		font-size:36,
 		line-height:40
 	},
-	.small_headline: {
+	#small_headline: {
 		font-name:DJ5EscrowCond-Bold,
 		font-size:24,
 		line-height:28
@@ -54,7 +64,7 @@
 	},
 	#hr: {
 		padding: [ 1, 0, 0, 0 ],
-		background-color:#948464
+		background-color:#b1aca1
 	},
 	.deco_headline: {
 		font-name:DJ5Retina-Cd,

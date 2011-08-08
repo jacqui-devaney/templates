@@ -1,42 +1,32 @@
-<jpml id="FRONT-4story-F-deco" stylesheet="FRONT-stylesheet.ejs">
-	<style> {
-		{ if: =portrait, then: {
-			#b1:			{ frame: [194, 27, 571, 197] },
-			#deco:			{ frame: [194, 232, 571, 285] },
-			#b2:			{ frame: [194, 517, 281, 177] },
-			#b3:			{ frame: [194, 697, 281, 177] },
-			#b4:			{ frame: [486, 471, 281, 413] },
-			#l1: 			{ frame: [186, 503, 281, 1] }
-		}, else: {
-			#b1:			{ frame: [205, 27, 571, 185] },
-			#deco:			{ frame: [205, 215, 571, 285] },
-			#b2:			{ frame: [205, 501, 582, 113] },
-			#b3:			{ frame: [787, 27, 237, 177] },
-			#b4:			{ frame: [787, 214, 237, 403] },
-			#l1: 			{ frame: [207, 503, 571, 1] }
-		}
-		
-	
-		#l2: 	{ 
-					display: { if-any: [
-						{ if: =articles.b4.type, equals: A-hed },
-						{ if: =landscape }
-				], then: none, else: inherit },
-				{ frame: [475, 503, 267, 1] }
-		},
-		
-	} </style>
-	
-	<box id="marketstrap" embed="marketstrap" />
-	<box id="whatsnews" embed="whatsnews" />
-	<box id="ad" embed="advertisement" />
-	<box id="b1" embed="article" module="TOP-IMAGE-module.xml" />
-	<box id="deco" embed="article" module="DECO_module.xml" />
-	<box id="b2" embed="article" module="TOP-IMAGE-module.xml" />
-	<box id="l1" class="line" />
-	<box id="b3" embed="article" module="TOP-IMAGE-module.xml" />
-	<box id="l2" class="line" />
-	<box id="b4" embed="article" module="AHED_module-module.xml" />
-	
-</jpml>
+<jpml id="FRONT-4story-F-deco">
+    <style src="FRONT-stylesheet.ejs"/>
+    <style>{
+        if: =portrait, then: {
+            #b1: 			{ frame: [202, 34, 550, 205], options:{large_headline:true} },
+            #deco: 			{ frame: [190, 225, 571, 285] },
+        	#l1: 			{ frame: [194, 518, 281, 1] },
+        	#l2: 			{ frame: [194, 697, 281, 1] },
+            #b4: 			{ frame: [202, 524, 265, 172], options:{small_headline:true} },
+            #b5: 			{ frame: [202, 705, 265, 172], options:{small_headline:true}  },
+            #b6: 			{ frame: [486, 516, 281, 380] }
+        }, else: {
+            #b1:			{ frame: [210, 33, 550, 205], options:{large_headline:true} },
+            #deco:			{ frame: [205, 215, 571, 285] },
+        	#l1: 			{ frame: [200, 503, 570, 1] },
+            #b4: 			{ frame: [210, 508, 550, 113], options:{small_headline:true} },
+            #b5: 			{ frame: [797, 33, 217, 187], options:{small_headline:true} },
+            #b6: 			{ frame: [787, 224, 237, 400] }
+        }
 
+    }</style>
+    <box id="marketstrap" embed="marketstrap" />
+    <box id="whatsnews" embed="whatsnewswide" />
+    <box id="ad" embed="advertisement" />
+    <box id="b1" embed="article" module="TOP-IMAGE_module.xml" />    
+    <box id="deco" embed="article" module="DECO_module.xml" />
+    <box id="l1" class="line" />
+    <box id="b4" embed="article" module="TOP-IMAGE_module.xml" />
+	<box id="b5" embed="article" module="TOP-IMAGE_module.xml" />
+   	<box id="l2" class="line" />
+ 	<box id="b6" embed="article" module="AHED_module.xml" />
+</jpml>

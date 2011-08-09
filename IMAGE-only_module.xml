@@ -4,5 +4,5 @@
 		image: { width:=view.width, height:=view.height }
 		}
 	</style>
-	<image />
+	<image embed="summary-image" />
 </jpml>

@@ -1,11 +1,16 @@
 <jpml id="SECTION-1story-P" stylesheet="SECTION-stylesheet.ejs">
-	<style>
-		{ if: =portrait, then: {
-			#b1:	{ frame: [0, 0, 765, 615] }
+	<style src="SECTION-stylesheet.ejs" />
+	<style>{
+		if: =portrait, then: {
+			#b1:	{ frame: [8, 8, 752, 615] },
+			#h2: {options:{highlight_dark:true}},
+			#h1: {options:{highlight_dark:true}}
 		}, else: {
-			#b1:	{ frame: [11, 0, 765, 615] }
-		}}
-	</style>
+			#b1:	{ frame: [11, 8, 752, 615] },
+			#h2: {options:{highlight_dark:true}},
+			#h1: {options:{highlight_dark:true}}
+		}
+	}</style>
 	
 	<box id="b1" embed="article" module="LARGE-hed-dek-image_module.xml" />
 	<box id="h1" embed="article" class="highlight_dark" module="HIGHLIGHTS_module.xml" />
@@ -15,3 +20,5 @@
 	<box id="highlight_ad" embed="advertisement" />
 	
 </jpml>
+
+

@@ -7,8 +7,8 @@
         },
         #image: { 
 			width:359, 
-			anchor-y:top
-			
+			anchor-y:top,
+			display: { if: =options.show_image, then:inherit }
 			 },
 		.invisible: { display:none },
 		#small_headline: { display: { if: =options.small_headline, then:inherit }},

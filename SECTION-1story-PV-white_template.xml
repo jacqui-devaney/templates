@@ -1,16 +1,15 @@
-<jpml id="SECTION-1story-PV-white" stylesheet="SECTION-stylesheet.ejs">
-	<style>
-		{ if: =portrait, then: {
+<jpml id="SECTION-1story-PV-white">
+	<style src="SECTION-stylesheet.ejs" />
+	<style>{ 
+		if: =portrait, then: {
 			#b1:	{ frame: [0, 0, 768, 620] }
 		}, else: {
 			#b1:	{ frame: [0, 0, 787, 620] }
-		}}	
-	</style>
+		}
+	}</style>
 	
 	<box id="b1" embed="article" module="IMAGE-only_module.xml" />
-	<box id="h1" embed="article" class="highlight_white" module="HIGHLIGHTS_module.xml" />
-	<box id="l1" class="line" />
-	<box id="h2" embed="article" class="highlight_white" module="HIGHLIGHTS_module.xml" />
+	<box id="h3" embed="article" class="highlight_white" module="HIGHLIGHTS_module.xml" />
 	<box id="l2" class="line" />
 	<box id="highlight_ad" embed="advertisement" />
 	

@@ -5,7 +5,8 @@
 			width: { $min:[553, {$divide: [=view.width, =scale.dpi]}] }, 
 			height: { $min:[369, {$divide: [=view.height, =scale.dpi]}] }
 		},
-		#content: { padding: [8]}
+		#content: { padding: [8]},
+		#hr: { display: { if: =options.no_line, then:none }}
 		
 	}</style>
 	<panel id="hr" />

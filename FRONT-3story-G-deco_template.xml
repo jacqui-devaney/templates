@@ -20,6 +20,7 @@
 	
 	<box id="marketstrap" embed="marketstrap" />
 	<box id="whatsnews" embed="whatsnews" />
+	<box id="whatsnews_wide" embed="whatsnews" />
 	<box id="ad" embed="advertisement" />
 	<box id="b1" embed="article" module="TOP-IMAGE_module.xml" />
 	<box id="deco" embed="article" module="DECO_module.xml" options="G_size" />

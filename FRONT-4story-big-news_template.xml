@@ -9,6 +9,7 @@
 			#l1: 			{ frame: [200, 363, 336, 1] },
 			#l2: 			{ frame: [200, 622, 336, 1] },
 			#whatsnews:		{ frame: [10, 363, 183, 522] },
+			#whatsnews_wide:		{ frame: [10, 363, 550, 852] },
 			#ad:			{ frame: [567, 672, 183, 197] }
 		}, else: {
 			#b1:			{ frame: [10, 33, 1004, 310], options:{bignews_big_headline:true} },
@@ -18,6 +19,7 @@
 			#l1: 			{ frame: [200, 354, 183, 1] },
 			#l2: 			{ frame: [406, 354, 183, 1] },
 			#whatsnews:		{ frame: [10, 353, 183, 266] },
+			#whatsnews_wide:		{ frame: [10, 353, 550, 591] },
 			#ad:			{ frame: [820, 385, 183, 197] }
 		}
 
@@ -25,6 +27,7 @@
 	
 	<box id="marketstrap" embed="marketstrap" />
 	<box id="whatsnews" embed="whatsnews" />
+	<box id="whatsnews_wide" embed="whatsnews" />
 	<box id="ad" embed="advertisement" />
 	<box id="b1" embed="article" module="BIG-NEWS_module.xml" />
 	<box id="l1" class="line" />

@@ -1,6 +1,7 @@
-<jpml id="CONTINUATION-generic-11" stylesheet="CONTINUATION-stylesheet.ejs">
-    <style>{
-        { if: =portrait, then: {
+<jpml id="CONTINUATION-generic-11">
+	<style src="CONTINUATION-stylesheet.ejs" /> 
+	<style>{
+        if: =portrait, then: {
             #b1 : { frame: [0, 0, 256, 436] },
             #b2 : { frame: [0, 437, 256, 217], options: {hide_strap: {if:=articles.b2.subsection, equals:=articles.b1.subsection}} },
             #b3 : { frame: [0, 655, 256, 217], options: {hide_strap: {if:=articles.b3.subsection, equals:=articles.b2.subsection}} },
@@ -26,15 +27,15 @@
             #b11: { frame: [768, 410, 256, 204], options: {hide_strap: {if:=articles.b11.subsection, equals:=articles.b10.subsection}} }
         }
     }</style>
-    <box id="b1" embed="article" module="CONTINUATION-dynamic-module.xml" />    
-    <box id="b2" embed="article" module="CONTINUATION-dynamic-module.xml" />
-    <box id="b3" embed="article" module="CONTINUATION-dynamic-module.xml" />
-    <box id="b4" embed="article" module="CONTINUATION-dynamic-module.xml" />
-    <box id="b5" embed="article" module="CONTINUATION-dynamic-module.xml" />
-    <box id="b6" embed="article" module="CONTINUATION-dynamic-module.xml" />
-    <box id="b7" embed="article" module="CONTINUATION-dynamic-module.xml" />
-    <box id="b8" embed="article" module="CONTINUATION-dynamic-module.xml" />
-    <box id="b9" embed="article" module="CONTINUATION-dynamic-module.xml" />
-    <box id="b10" embed="article" module="CONTINUATION-dynamic-module.xml" />
-    <box id="b11" embed="article" module="CONTINUATION-dynamic-module.xml" />
+    <box id="b1" embed="article" module="CONTINUATION-dynamic_module.xml" />    
+    <box id="b2" embed="article" module="CONTINUATION-dynamic_module.xml" />
+    <box id="b3" embed="article" module="CONTINUATION-dynamic_module.xml" />
+    <box id="b4" embed="article" module="CONTINUATION-dynamic_module.xml" />
+    <box id="b5" embed="article" module="CONTINUATION-dynamic_module.xml" />
+    <box id="b6" embed="article" module="CONTINUATION-dynamic_module.xml" />
+    <box id="b7" embed="article" module="CONTINUATION-dynamic_module.xml" />
+    <box id="b8" embed="article" module="CONTINUATION-dynamic_module.xml" />
+    <box id="b9" embed="article" module="CONTINUATION-dynamic_module.xml" />
+    <box id="b10" embed="article" module="CONTINUATION-dynamic_module.xml" />
+    <box id="b11" embed="article" module="CONTINUATION-dynamic_module.xml" />
 </jpml>

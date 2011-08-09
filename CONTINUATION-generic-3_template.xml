@@ -1,6 +1,7 @@
-<jpml id="CONTINUATION-generic-3" stylesheet="CONTINUATION-stylesheet.ejs">
+<jpml id="CONTINUATION-generic-3">
+	<style src="CONTINUATION-stylesheet.ejs" />
     <style>{
-        { if: =portrait, then: {
+        if: =portrait, then: {
             #b1 : { frame: [0, 0, 256, 874] },
             #b2 : { frame: [256, 0, 256, 874], options: {hide_strap: {if:=articles.b2.subsection, equals:=articles.b1.subsection}} },
             #b3 : { frame: [512, 0, 256, 874], options: {hide_strap: {if:=articles.b3.subsection, equals:=articles.b2.subsection}} }
@@ -10,7 +11,7 @@
             #b3 : { frame: [512, 0, 256, 618], options: {hide_strap: {if:=articles.b3.subsection, equals:=articles.b2.subsection}} }
         }
     }</style>
-    <box id="b1" embed="article" module="CONTINUATION-dynamic-module.xml" />    
-    <box id="b2" embed="article" module="CONTINUATION-dynamic-module.xml" />
-    <box id="b3" embed="article" module="CONTINUATION-dynamic-module.xml" />
+    <box id="b1" embed="article" module="CONTINUATION-dynamic_module.xml" />    
+    <box id="b2" embed="article" module="CONTINUATION-dynamic_module.xml" />
+    <box id="b3" embed="article" module="CONTINUATION-dynamic_module.xml" />
 </jpml>

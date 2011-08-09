@@ -1,10 +1,11 @@
-<jpml id="CONTINUATION-generic-1" stylesheet="CONTINUATION-stylesheet.ejs">
+<jpml id="CONTINUATION-generic-1">
+	<style src="CONTINUATION-stylesheet.ejs" />
     <style>{
-        { if: =portrait, then: {
+        if: =portrait, then: {
             #b1 : { frame: [0, 0, 256, 874] }
         }, else: {
             #b1 : { frame: [0, 0, 256, 618] }        
         }
     }</style>
-    <box id="b1" embed="article" module="CONTINUATION-dynamic-module.xml" />
+    <box id="b1" embed="article" module="CONTINUATION-dynamic_module.xml" />
 </jpml>

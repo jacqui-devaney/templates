@@ -38,20 +38,20 @@
 		<template name="SECTION-1story-PV-1highlight-white_template.xml" section="FRIDAY_JOURNAL,JOURNAL_REPORT,LIFE_AND_STYLE,OFF_DUTY,PERSONAL_JOURNAL,REVIEW,WEEKEND_JOURNAL,NEW_YORK,WSJ_MAGAZINE" min="3" usage="front" />
 		<template name="SECTION-1story-PV-white_template.xml" section="FRIDAY_JOURNAL,JOURNAL_REPORT,LIFE_AND_STYLE,OFF_DUTY,PERSONAL_JOURNAL,REVIEW,WEEKEND_JOURNAL,NEW_YORK,WSJ_MAGAZINE" min="3" usage="front" />
 		
-		<template name="CONTINUATION-generic-12-template.xml" min="12" usage="continuation" />
-		<template name="CONTINUATION-generic-11-template.xml" min="11" usage="continuation" />
-		<template name="CONTINUATION-generic-10-template.xml" min="10" usage="continuation" />
-		<template name="CONTINUATION-generic-9-template.xml" min="9" usage="continuation" />
-		<template name="CONTINUATION-generic-8-template.xml" min="8" usage="continuation" />
-		<template name="CONTINUATION-generic-7-template.xml" min="7" usage="continuation" />
-		<template name="CONTINUATION-generic-6-template.xml" min="6" usage="continuation" />
-		<template name="CONTINUATION-generic-5-template.xml" min="5" usage="continuation" />
-		<template name="CONTINUATION-generic-4-template.xml" min="4" usage="continuation" />
-		<template name="CONTINUATION-generic-3-template.xml" min="3" usage="continuation" />
-		<template name="CONTINUATION-generic-2-template.xml" min="2" usage="continuation" />
-		<template name="CONTINUATION-generic-1-template.xml" min="1" usage="continuation" />
+		<template name="CONTINUATION-generic-12_template.xml" min="12" usage="continuation" />
+		<template name="CONTINUATION-generic-11_template.xml" min="11" usage="continuation" />
+		<template name="CONTINUATION-generic-10_template.xml" min="10" usage="continuation" />
+		<template name="CONTINUATION-generic-9_template.xml" min="9" usage="continuation" />
+		<template name="CONTINUATION-generic-8_template.xml" min="8" usage="continuation" />
+		<template name="CONTINUATION-generic-7_template.xml" min="7" usage="continuation" />
+		<template name="CONTINUATION-generic-6_template.xml" min="6" usage="continuation" />
+		<template name="CONTINUATION-generic-5_template.xml" min="5" usage="continuation" />
+		<template name="CONTINUATION-generic-4_template.xml" min="4" usage="continuation" />
+		<template name="CONTINUATION-generic-3_template.xml" min="3" usage="continuation" />
+		<template name="CONTINUATION-generic-2_template.xml" min="2" usage="continuation" />
+		<template name="CONTINUATION-generic-1_template.xml" min="1" usage="continuation" />
 		
-		<template name="GENERIC-fullpagead-template.xml" usage="ads" />
+		<template name="GENERIC-fullpagead_template.xml" usage="ads" />
 	</templates>
 
 	<article-page-plans>

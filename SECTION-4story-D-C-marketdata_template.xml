@@ -1,29 +1,33 @@
-<jpml id="SECTION-4story-D-C-marketdata" stylesheet="SECTION-stylesheet.ejs">
-	<style>
-		{ if: =portrait, then: {
-			#b1:	{ frame: [1, 3, 571, 298] },
-			#b2:	{ frame: [1, 299, 571, 310] },
-			#b3:	{ frame: [583, 3, 183, 299] },
-			#b4:	{ frame: [583, 299, 183, 310] },
-			#l3:	{ frame: [1, 299, 765, 1] }
-			
+<jpml id="SECTION-4story-D-C-marketdata">
+	<style src="SECTION-stylesheet.ejs" />
+	<style>{
+		if: =portrait, then: {
+			#b1:	{ frame: [11, 8, 555, 290], options:{large_headline:true} },
+			#b2:	{ frame: [11, 307, 555, 310], options:{small_headline:true} },
+			#b3:	{ frame: [583, 8, 170, 290], options:{small_headline:true} },
+			#b4:	{ frame: [583, 307, 170, 310], options:{small_headline:true, show_image:true} },
+			#l4:	{ frame: [1, 299, 765, 1] },
+			#highlight_marketdata: {options:{highlight_dark:true}},
+			#h2: {options:{highlight_dark:true}}
 		}, else: {
-			#b1:	{ frame: [11, 3, 571, 298] },
-			#b2:	{ frame: [11, 299, 571, 310] },
-			#b3:	{ frame: [593, 3, 183, 299] },
-			#b4:	{ frame: [593, 299, 183, 310] },
-			#l3:	{ frame: [11, 299, 765, 1] }
-		}}
-	</style>
+			#b1:	{ frame: [11, 10, 555, 289], options:{large_headline:true} },
+			#b2:	{ frame: [11, 307, 555, 310], options:{small_headline:true} },
+			#b3:	{ frame: [593, 10, 173, 289], options:{small_headline:true} },
+			#b4:	{ frame: [593, 307, 173, 310], options:{small_headline:true, show_image:true} },
+			#l4:	{ frame: [3, 299, 774, 1] },
+			#highlight_marketdata: {options:{highlight_dark:true}},
+			#h2: {options:{highlight_dark:true}}
+		}
+	}</style>
 	
-	<box id="b1" embed="article" module="TOP-IMAGE_module.xml" />
+	<box id="b1" embed="article" module="RIGHT-TOP-IMAGE_module.xml" />
 	<box id="b2" embed="article" module="TOP-IMAGE_module.xml" />
-	<box id="l3" class="line" />
+	<box id="l4" class="line" />
 	<box id="b3" embed="article" module="TOP-IMAGE_module.xml" />
 	<box id="b4" embed="article" module="TOP-IMAGE_module.xml" />
-	<box id="h1" embed="marketdata" class="highlight_dark" />
+	<box id="highlight_marketdata" embed="marketdata" />
 	<box id="l1" class="line" />
-	<box id="h2" embed="article" class="highlight_dark" module="HIGHLIGHTS_module.xml" />
+	<box id="h2" embed="article" module="HIGHLIGHTS_module.xml" />
 	<box id="l2" class="line" />
 	<box id="highlight_ad" embed="advertisement" />
 	

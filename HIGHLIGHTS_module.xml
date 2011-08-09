@@ -6,7 +6,7 @@
 					{ if: =options.highlight_dark, then: #e4e4e4 },
 					{ if: =options.highlight_light, then: #f6f5f3 }
 				] },
-				padding: [10]
+				padding: [8]
 		},
 		#image_container: { 
 			anchor-x: right,

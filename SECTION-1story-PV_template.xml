@@ -13,9 +13,9 @@
 	}</style>
 	
 	<box id="b1" embed="article" module="IMAGE-only_module.xml" />
-	<box id="h1" embed="article" class="highlight_dark" module="HIGHLIGHTS_module.xml" />
+	<box id="h1" embed="article" module="HIGHLIGHTS_module.xml" />
 	<box id="l1" class="line" />
-	<box id="h2" embed="article" class="highlight_dark" module="HIGHLIGHTS_module.xml" />
+	<box id="h2" embed="article" module="HIGHLIGHTS_module.xml" />
 	<box id="l2" class="line" />
 	<box id="highlight_ad" embed="advertisement" />
 	

@@ -23,10 +23,10 @@
     <box id="l3" class="line" />
     <box id="b3" module="TOP-IMAGE_module.xml" />
 
-    <box id="h1" module="HIGHLIGHTS-module.xml" class="highlight_light" />
+    <box id="h1" module="HIGHLIGHTS-module.xml" />
     <box id="l1" class="line" />
-    <box id="h2" module="HIGHLIGHTS-module.xml" class="highlight_light" />
+    <box id="h2" module="HIGHLIGHTS-module.xml" />
     <box id="l2" class="line" />    
-    <box id="highlight_ad" embed="advertisement" class="highlight_light" />
+    <box id="highlight_ad" embed="advertisement" />
     
 </jpml>

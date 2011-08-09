@@ -1,35 +1,40 @@
-<jpml id="SECTION-4story-2D-C" stylesheet="SECTION-stylesheet.ejs">
-	<style>
-		{ if: =portrait, then: {
-			#b1:	{ frame: [1, 3, 765, 206] },
-			#b2:	{ frame: [1, 208, 280, 414] },
-			#b3:	{ frame: [292, 208, 280, 414] },
-			#b4:	{ frame: [583, 208, 183, 414] },
-			#l3:	{ frame: [1, 208, 280, 1] },
-			#l4:	{ frame: [292, 208, 280, 1] },
-			#l5:	{ frame: [587, 208, 183, 1] }
+<jpml id="SECTION-4story-2D-C">
+	<style src="SECTION-stylesheet.ejs" />
+	<style>{
+		 if: =portrait, then: {
+			#b1:	{ frame: [10, 8, 765, 198], options:{large_headline:true} },
+			#b2:	{ frame: [10, 216, 263, 404], options:{small_headline:true} },
+			#b3:	{ frame: [301, 216, 263, 404], options:{small_headline:true} },
+			#b4:	{ frame: [590, 216, 165, 404], options:{small_headline:true, show_image:true} },
+			#l4:	{ frame: [3, 208, 279, 1] },
+			#l5:	{ frame: [293, 208, 279, 1] },
+			#l6:	{ frame: [584, 208, 181, 1] },
+			#h1: {options:{highlight_dark:true}},
+			#h2: {options:{highlight_dark:true}}
 			
 		}, else: {
-			#b1:	{ frame: [11, 3, 765, 206] },
-			#b2:	{ frame: [11, 207, 280, 414] },
-			#b3:	{ frame: [302, 207, 280, 414] },
-			#b4:	{ frame: [593, 207, 183, 414] },
-			#l3:	{ frame: [11, 208, 280, 1] },
-			#l4:	{ frame: [302, 208, 280, 1] },
-			#l5:	{ frame: [593, 208, 183, 1] }
-		}}
-	</style>
+			#b1:	{ frame: [11, 8, 765, 198], options:{large_headline:true} },
+			#b2:	{ frame: [11, 212, 263, 404], options:{small_headline:true, show_image:true} },
+			#b3:	{ frame: [302, 212, 263, 404], options:{small_headline:true} },
+			#b4:	{ frame: [593, 212, 165, 404], options:{small_headline:true, show_image:true} },
+			#l4:	{ frame: [3, 208, 280, 1] },
+			#l5:	{ frame: [294, 208, 279, 1] },
+			#l6:	{ frame: [584, 208, 181, 1] },
+			#h1: {options:{highlight_dark:true}},
+			#h2: {options:{highlight_dark:true}}
+		}
+	}</style>
 	
 	<box id="b1" embed="article" module="RIGHT-IMAGE_module.xml" />
-	<box id="l3" class="line" />
-	<box id="b2" embed="article" module="TOP-IMAGE_module.xml" />
 	<box id="l4" class="line" />
-	<box id="b3" embed="article" module="TOP-IMAGE_module.xml" />
+	<box id="b2" embed="article" module="TOP-IMAGE_module.xml" />
 	<box id="l5" class="line" />
+	<box id="b3" embed="article" module="TOP-IMAGE_module.xml" />
+	<box id="l6" class="line" />
 	<box id="b4" embed="article" module="TOP-IMAGE_module.xml" />
-	<box id="h1" embed="article" class="highlight_dark" module="HIGHLIGHTS_module.xml" />
+	<box id="h1" embed="article" module="HIGHLIGHTS_module.xml" />
 	<box id="l1" class="line" />
-	<box id="h2" embed="article" class="highlight_dark" module="HIGHLIGHTS_module.xml" />
+	<box id="h2" embed="article" module="HIGHLIGHTS_module.xml" />
 	<box id="l2" class="line" />
 	<box id="highlight_ad" embed="advertisement" />
 	

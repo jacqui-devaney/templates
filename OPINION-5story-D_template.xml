@@ -1,41 +1,50 @@
-<jpml id="OPINION-5story-D" stylesheet="OPINION-stylesheet.ejs">
+<jpml id="OPINION-5story-D">
+	<style src="OPINION-stylesheet.ejs" />
     <style>
 		{ $join: [
-			{
-				#b1:	{ frame: [1, 50, 474, 156] },
-				#b4:	{ frame: [389, 3, 281, 412] },
-				#b5:	{ frame: [389, 412, 281, 207] }
+			{#h2:	{options:{highlight_light:true}}},
+			{#h1:	{options:{highlight_light:true}}},
+			{	if: =portrait, then: {
+					#b1:	{ frame: [8, 50, 450, 130] },
+					#b4:	{ frame: [476, 10, 281, 382], options:{small_headline:true, show_image:true} },
+					#b5:	{ frame: [476, 402, 281, 200], options:{small_headline:true} }
+				}, else: {
+					#b1:	{ frame: [11, 50, 450, 130] },
+					#b4:	{ frame: [484, 10, 281, 382], options:{small_headline:true} },
+					#b5:	{ frame: [484, 402, 281, 200], options:{small_headline:true} }
+			
+				}
 			},
 			{ $switch: [
 				{ if: =articles.b2.type, equals: "Letters", then: {
 					_comment: "b2 has the header",
-					#b2: { frame: [1, 206, 474, 206], options: {header: true} },
-					#b3: { frame: [1, 412, 474, 207] }
+					#b2: { frame: [8, 217, 450, 184], options: {header: true} },
+					#b3: { frame: [8, 418, 450, 184] }
 				}},
 				{ if: =articles.b3.type, equals: "Letters", then: {
 					_comment: "b3 has the header",
-					#b2: { frame: [1, 206, 474, 206] },
-					#b3: { frame: [1, 412, 474, 207], options: {header: true} }
+					#b2: { frame: [8, 217, 450, 184] },
+					#b3: { frame: [8, 418, 450, 184], options: {header: true} }
 				}}, 
 				{ if: true, then: {
 					_comment: "neither have the header",
-					#b2: { frame: [1, 206, 474, 206] },
-					#b3: { frame: [1, 412, 474, 207] }
+					#b2: { frame: [8, 217, 450, 184] },
+					#b3: { frame: [8, 418, 450, 184] }
 				}}
         	]}
     	]}    
     </style>
     
-    <box id="b1" module="OPINION-RANDO-LETTERS_module.xml" />
-    <box id="b2" module="OPINION-RANDO-LETTERS_module.xml" />
-    <box id="b3" module="OPINION-RANDO-LETTERS_module.xml" />
+    <box id="b1" embed="article" module="OPINION-RANDO-LETTERS_module.xml" />
+    <box id="b2" embed="article" module="OPINION-RANDO-LETTERS_module.xml" />
+    <box id="b3" embed="article" module="OPINION-RANDO-LETTERS_module.xml" />
     <box id="l3" class="line" />
-    <box id="b4" module="TOP-IMAGE_module.xml" />
-    <box id="b5" module="TOP-IMAGE_module.xml" />
+    <box id="b4" embed="article" module="TOP-IMAGE_module.xml" />
+    <box id="b5" embed="article" module="TOP-IMAGE_module.xml" />
 
-    <box id="h1" module="HIGHLIGHTS-module.xml" />
+    <box id="h1" embed="article" module="HIGHLIGHTS_module.xml" />
     <box id="l1" class="line" />
-    <box id="h2" module="HIGHLIGHTS-module.xml" />
+    <box id="h2" embed="article" module="HIGHLIGHTS_module.xml" />
     <box id="l2" class="line" />    
     <box id="highlight_ad" embed="advertisement" />
     

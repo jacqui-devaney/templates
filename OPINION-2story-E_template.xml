@@ -1,22 +1,27 @@
-<jpml id="OPINION-2story-E" stylesheet="OPINION-stylesheet.ejs">
+<jpml id="OPINION-2story-E">
+	<style src="OPINION-stylesheet.ejs" />
     <style>{
-		{ if: =portrait, then: {
-			#b1:			{ frame: [1, 50, 377, 569] },
-			#b2:			{ frame: [389, 3, 377, 616] }
+		if: =portrait, then: {
+			#b1:	{ frame: [8, 50, 361, 557] },
+			#b2:	{ frame: [395, 10, 361, 610], options:{small_headline:true, show_image:true} },
+			#h2:	{options:{highlight_light:true}},
+			#h1:	{options:{highlight_light:true}}
 		}, else: {
-			#b1:			{ frame: [11, 50, 377, 569] },
-			#b2:			{ frame: [400, 3, 377, 616] }
+			#b1:	{ frame: [15, 50, 361, 557] },
+			#b2:	{ frame: [401, 3, 361, 610], options:{small_headline:true, show_image:true} },
+			#h2:	{options:{highlight_light:true}},
+			#h1:	{options:{highlight_light:true}}
 		}
-        
+		        
     }</style>
     
-    <box id="b1" module="OPINION-RANDO-LETTERS_module.xml" />
-    <box id="l3" class="line" />
-    <box id="b2" module="TOP-IMAGE_module.xml" />
+    <box id="b1" embed="article" module="OPINION-RANDO-LETTERS_module.xml" />
+    <box id="l4" class="line" />
+    <box id="b2" embed="article" module="TOP-IMAGE_module.xml" />
 
-    <box id="h1" module="HIGHLIGHTS-module.xml" />
+    <box id="h1" embed="article" module="HIGHLIGHTS_module.xml" />
     <box id="l1" class="line" />
-    <box id="h2" module="HIGHLIGHTS-module.xml" />
+    <box id="h2" embed="article" module="HIGHLIGHTS_module.xml" />
     <box id="l2" class="line" />    
     <box id="highlight_ad" embed="advertisement" />
     

@@ -1,23 +1,25 @@
 {
-	.line { background-color:#b1aca1 },
-	.highlight_light { background-color:#f6f5f3 },
+	$join: [
+	{.line: { background-color:#b1aca1 }},
+	{.highlight_light: { background-color:#f6f5f3 }},
 	
-	{ if =portrait, then: {
+	{ if: =portrait, then: {
 		#h1: 	{ frame: [1, 620, 255, 257] },
 		#h2: 	{ frame: [257, 620, 255, 257] },
-		#highlight_ad: 	{ frame: [515, 620, 255, 257] },
-		#l1:	{ frame: [257, 620, 1, 257] },
-		#l2:	{ frame: [515, 620, 1, 257] },
-		#l3		{ frame: [374, 412, 11, 598] },
-		#l4:	{ frame: [374, 412, 11, 598] }
+		#highlight_ad: 	{ frame: [535, 658, 210, 175] },
+		#l1:	{ frame: [256, 620, 1, 257] },
+		#l2:	{ frame: [512, 620, 1, 257] },
+		#l3:	{ frame: [466, 10, 1, 598] },
+		#l4:	{ frame: [382, 10, 1, 598] }
 		
 	}, else: {
-		#h1: 	{ frame: [787, 3, 243, 200] },
-		#h2: 	{ frame: [787, 210, 243, 200] },
-		#highlight_ad: 	{ frame: [787, 415, 243, 200] }
-		#l1:	{ frame: [787, 210, 243, 1] },
-		#l2:	{ frame: [787, 415, 243, 1] },
-		#l3:	{ frame: [491, 412, 11, 598] },
-		#l3:	{ frame: [491, 412, 11, 598] }
-	},
+		#h1: 	{ frame: [782, 0, 242, 208] },
+		#h2: 	{ frame: [782, 209, 242, 208] },
+		#highlight_ad: 	{ frame: [798, 433, 210, 175] },
+		#l1:	{ frame: [782, 208, 242, 1] },
+		#l2:	{ frame: [782, 417, 242, 1] },
+		#l3:	{ frame: [472, 10, 1, 598] },
+		#l4:	{ frame: [388, 10, 1, 598] }
+	}}
+	]
 }

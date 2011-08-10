@@ -1,33 +1,42 @@
-<jpml id="OPINION-4story-E" stylesheet="OPINION-stylesheet.ejs">
+<jpml id="OPINION-4story-E">
+	<style src="OPINION-stylesheet.ejs" />
     <style>
 		{ $join: [
-			{
-				#b1:	{ frame: [1, 50, 377, 284] },
-				#b3:	{ frame: [389, 3, 377, 412] },
-				#b4:	{ frame: [389, 412, 377, 207] }
+			{#h2:	{options:{highlight_light:true}}},
+			{#h1:	{options:{highlight_light:true}}},
+			{	if: =portrait, then: {
+					#b1:	{ frame: [8, 50, 361, 274] },
+					#b3:	{ frame: [395, 10, 361, 382], options:{small_headline:true, show_image:true} },
+					#b4:	{ frame: [395, 402, 361, 200], options:{small_headline:true} }
+				}, else: {
+					#b1:	{ frame: [15, 50, 361, 274] },
+					#b3:	{ frame: [401, 3, 361, 382], options:{small_headline:true, show_image:true} },
+					#b4:	{ frame: [401, 402, 361, 200], options:{small_headline:true} }
+			
+				}
 			},
 			{ $switch: [
 				{ if: =articles.b2.type, equals: "Letters", then: {
 					_comment: "b2 has the header",
-					#b2: { frame: [1, 334, 377, 285], options: {header: true} }
+					#b2: { frame: [8, 324, 361, 274], options: {header: true} }
 				}},
 				{ if: true, then: {
 					_comment: "no header",
-					#b2 : { frame: [1, 334, 377, 285] }
+					#b2 : { frame: [8, 324, 361, 274] }
 				}}
 			]} 
     	]}    
     </style>
     
-    <box id="b1" module="OPINION-RANDO-LETTERS_module.xml" />
-    <box id="b2" module="OPINION-RANDO-LETTERS_module.xml" />
-    <box id="l3" class="line" />
-    <box id="b3" module="TOP-IMAGE_module.xml" />
-    <box id="b4" module="TOP-IMAGE_module.xml" />
+    <box id="b1" embed="article" module="OPINION-RANDO-LETTERS_module.xml" />
+    <box id="b2" embed="article" module="OPINION-RANDO-LETTERS_module.xml" />
+    <box id="l4" class="line" />
+    <box id="b3" embed="article" module="TOP-IMAGE_module.xml" />
+    <box id="b4" embed="article" module="TOP-IMAGE_module.xml" />
 
-    <box id="h1" module="HIGHLIGHTS-module.xml" />
+    <box id="h1" embed="article" module="HIGHLIGHTS_module.xml" />
     <box id="l1" class="line" />
-    <box id="h2" module="HIGHLIGHTS-module.xml" />
+    <box id="h2" embed="article" module="HIGHLIGHTS_module.xml" />
     <box id="l2" class="line" />    
     <box id="highlight_ad" embed="advertisement" />
     

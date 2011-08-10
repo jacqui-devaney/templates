@@ -9,16 +9,14 @@
 			anchor-y: bottom
 		},
         #mediabucket:	{
-			width: 561,
-			height: 395,
+			frame: [0, 0, 25, 25]
 			background-color:#666,
-			left: 19
-			},
+		},
 		#body_container : {
             padding: [10, 8, 10, 8],
             column-count: 2,
             column-gutter: 11
-            }
+        }
 
         
     }</style>
@@ -32,9 +30,10 @@
         <p embed="subhead"/>
     </panel>
     <panel id="hr" />
-    <box id="mediabucket" embed="mediabucket" />
+    
     <panel id="body_container">
-        <p embed="byline"/>
+        <box id="mediabucket" embed="mediabucket" />
+		<p embed="byline"/>
         <p embed="body"/>
     </panel>
 	<box id="continues_label">

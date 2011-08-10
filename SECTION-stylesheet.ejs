@@ -1,7 +1,7 @@
 {
 	$join: [
 	{ .line: { background-color:#b1aca1 }},
-	{jpml: {
+	{ jpml: {
 		font-size: 12,
 		line-height: 15,
 		image-scale: { if: =intent.template, then: {$max:[=scale.pagex,=scale.pagey]}, else: =scale.dpi },
@@ -9,11 +9,17 @@
 		pixels-per-point-x: { if: =intent.template, then: =scale.pagex, else: =scale.dpi },
 		pixels-per-point-y: { if: =intent.template, then: =scale.pagey, else: =scale.dpi }
 	}},
+	{ #highlight_ad: 	{ 
+			anchor-x:center,
+			anchor-y:middle,
+			width:210,
+			height:175
+	}},
 	{ if: =portrait, then: {
 		#h1: 	{ frame: [0, 623, 255, 255] },
 		#h2: 	{ frame: [256, 623, 255, 255] },
-		#highlight_ad: 	{ frame: [535, 658, 210, 175] },
 		#highlight_marketdata: 	{ frame: [0, 623, 255, 255] },
+		#ad_background: { frame: [512, 623, 255, 255] },
 		#h3: 	{ frame: [0, 623, 511, 253] },
 		#l1:	{ frame: [255, 623, 1, 255] },
 		#l2:	{ frame: [511, 623, 1, 255] }
@@ -21,8 +27,8 @@
 	}, else: {
 		#h1: 	{ frame: [786, 0, 238, 215] },
 		#h2: 	{ frame: [786, 216, 238, 206] },
-		#highlight_ad: 	{ frame: [801, 433, 210, 175] },
 		#highlight_marketdata: 	{ frame: [786, 0, 238, 215] },
+		#ad_background: { frame: [786, 423, 238, 200] },
 		#h3: 	{ frame: [786, 0, 238, 422] },
 		#l1:	{ frame: [786, 215, 238, 1] },
 		#l2:	{ frame: [786, 422, 238, 1] }

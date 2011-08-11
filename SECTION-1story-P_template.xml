@@ -4,11 +4,14 @@
 		if: =portrait, then: {
 			#b1:	{ frame: [8, 8, 752, 615] },
 			#h2: {options:{highlight_dark:true}},
-			#h1: {options:{highlight_dark:true}}
+			#h1: {options:{highlight_dark:true}},
+			#ad_background: {options:{ad_dark:true}}
 		}, else: {
 			#b1:	{ frame: [11, 8, 752, 615] },
 			#h2: {options:{highlight_dark:true}},
-			#h1: {options:{highlight_dark:true}}
+			#h1: {options:{highlight_dark:true}},
+			#ad_background: {options:{ad_dark:true}}
+			
 		}
 	}</style>
 	

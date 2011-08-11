@@ -19,7 +19,9 @@
 		#h1: 	{ frame: [0, 623, 255, 255] },
 		#h2: 	{ frame: [256, 623, 255, 255] },
 		#highlight_marketdata: 	{ frame: [0, 623, 255, 255] },
-		#ad_background: { frame: [512, 623, 255, 255] },
+		#ad_background: { frame: [512, 623, 255, 255],
+			background-color: { $switch: [ { if: =options.ad_dark, then: #e4e4e4 }, { if: =options.ad_light, then: #f6f5f3 } ] }
+		},
 		#h3: 	{ frame: [0, 623, 511, 253] },
 		#l1:	{ frame: [255, 623, 1, 255] },
 		#l2:	{ frame: [511, 623, 1, 255] }

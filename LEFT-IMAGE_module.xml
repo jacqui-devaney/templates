@@ -14,13 +14,17 @@
 		.invisible: { display:none },
 		#small_headline: { display: { if: =options.small_headline, then:inherit }},
 		#medium_headline: { display: { if: =options.medium_headline, then:inherit }},
-		#large_headline: { display: { if: =options.large_headline, then:inherit }}
+		#large_headline: { display: { if: =options.large_headline, then:inherit }},
+		#bignews_huge_headline: { display: { if: =options.bignews_huge_headline, then:inherit }},
+		#bignews_big_headline: { display: { if: =options.bignews_big_headline, then:inherit }}		
 		
 		}</style>
 	<panel id="headline">
 		<p id="small_headline" class="invisible"><span embed="headline" /><mark class="key" /></p>
 		<p id="medium_headline" class="invisible"><span embed="headline" /><mark class="key" /></p>
 		<p id="large_headline" class="invisible"><span embed="headline" /><mark class="key" /></p>
+		<p id="bignews_huge_headline" class="invisible"><span embed="headline" /><mark class="key" /></p>
+		<p id="bignews_big_headline" class="invisible"><span embed="headline" /><mark class="key" /></p>
 	</panel>
 	<box id="image">
 		<image embed="summary-image"/>

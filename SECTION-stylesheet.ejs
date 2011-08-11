@@ -1,6 +1,8 @@
 {
 	$join: [
 	{ .line: { background-color:#b1aca1 }},
+	{ .ad_dark: {background-color: #e4e4e4}},
+	{ .ad_light: {background-color: #f6f5f3}},
 	{ jpml: {
 		font-size: 12,
 		line-height: 15,
@@ -18,10 +20,14 @@
 	{ if: =portrait, then: {
 		#h1: 	{ frame: [0, 623, 255, 255] },
 		#h2: 	{ frame: [256, 623, 255, 255] },
-		#highlight_marketdata: 	{ frame: [0, 623, 255, 255] },
-		#ad_background: { frame: [512, 623, 255, 255],
-			background-color: { $switch: [ { if: =options.ad_dark, then: #e4e4e4 }, { if: =options.ad_light, then: #f6f5f3 } ] }
+		#marketdata_background: 	{ frame: [0, 623, 255, 255] },
+		#highlight_marketdata: 	{ 
+				anchor-x:center,
+				anchor-y:middle,
+				width:239,
+				height:239
 		},
+		#ad_background: { frame: [512, 623, 255, 255]},
 		#h3: 	{ frame: [0, 623, 511, 253] },
 		#l1:	{ frame: [255, 623, 1, 255] },
 		#l2:	{ frame: [511, 623, 1, 255] }
@@ -29,7 +35,13 @@
 	}, else: {
 		#h1: 	{ frame: [786, 0, 238, 215] },
 		#h2: 	{ frame: [786, 216, 238, 206] },
-		#highlight_marketdata: 	{ frame: [786, 0, 238, 215] },
+		#marketdata_background: 	{ frame: [786, 0, 238, 215] },
+		#highlight_marketdata: 	{ 
+				anchor-x:center,
+				anchor-y:middle,
+				width:222,
+				height:199
+		},
 		#ad_background: { frame: [786, 423, 238, 200] },
 		#h3: 	{ frame: [786, 0, 238, 422] },
 		#l1:	{ frame: [786, 215, 238, 1] },

@@ -29,7 +29,7 @@
 	<box id="l1" class="line" />
 	<box id="h2" embed="article" module="HIGHLIGHTS_module.xml" />
 	<box id="l2" class="line" />
-	<box id="ad_background">
+	<box id="ad_background" class="ad_dark">
 		<box id="highlight_ad" embed="advertisement" />
 	</box>
 

@@ -6,7 +6,6 @@
 			#b2:	{ frame: [589, 10, 167, 298], options:{small_headline:true} },
 			#b3:	{ frame: [589, 317, 167, 306], options:{small_headline:true} },
 			#l4:	{ frame: [583, 308, 183, 1] },
-			#highlight_marketdata: {options:{highlight_light:true}},
 			#h2: {options:{highlight_dark:true}}
 			
 		}, else: {
@@ -14,7 +13,6 @@
 			#b2:	{ frame: [595, 10, 167, 298], options:{small_headline:true} },
 			#b3:	{ frame: [595, 320, 167, 298], options:{small_headline:true} },
 			#l4:	{ frame: [587, 311, 185, 1] },
-			#highlight_marketdata: {options:{highlight_light:true}},
 			#h2: {options:{highlight_dark:true}}
 			
 		}}
@@ -24,11 +22,13 @@
 	<box id="b2" embed="article" module="TOP-IMAGE_module.xml" />
 	<box id="l4" class="line" />
 	<box id="b3" embed="article" module="TOP-IMAGE_module.xml" />
-	<box id="highlight_marketdata" embed="marketdata" />
+	<box id="marketdata_background" class="ad_light">
+		<box id="highlight_marketdata" embed="marketdata" />
+	</box>
 	<box id="l1" class="line" />
 	<box id="h2" embed="article" module="HIGHLIGHTS_module.xml" />
 	<box id="l2" class="line" />
-	<box id="ad_background">
+	<box id="ad_background" class="ad_dark">
 		<box id="highlight_ad" embed="advertisement" />
 	</box>
 

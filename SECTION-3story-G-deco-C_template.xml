@@ -3,7 +3,7 @@
 	<style>{ 
 		if: =portrait, then: {
 			#b1:	{ frame: [10, 10, 555, 176], options:{large_headline:true} },
-			#deco:	{ frame: [3, 178, 571, 444] },
+			#deco:	{ frame: [3, 188, 571, 434] },
 			#b2:	{ frame: [590, 10, 167, 306], options:{small_headline:true} },
 			#b3:	{ frame: [590, 325, 167, 295], options:{small_headline:true} },
 			#l4:	{ frame: [587, 320, 183, 1] },
@@ -12,7 +12,7 @@
 			
 		}, else: {
 			#b1:	{ frame: [11, 8, 555, 176], options:{large_headline:true} },
-			#deco:	{ frame: [11, 178, 571, 444] },
+			#deco:	{ frame: [11, 188, 571, 434] },
 			#b2:	{ frame: [599, 8, 167, 306], options:{small_headline:true} },
 			#b3:	{ frame: [599, 328, 167, 295], options:{small_headline:true} },
 			#l4:	{ frame: [593, 320, 183, 1] },
@@ -31,7 +31,7 @@
 	<box id="l1" class="line" />
 	<box id="h2" embed="article" module="HIGHLIGHTS_module.xml" />
 	<box id="l2" class="line" />
-	<box id="ad_background">
+	<box id="ad_background" class="ad_dark">
 		<box id="highlight_ad" embed="advertisement" />
 	</box>
 

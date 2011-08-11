@@ -1,14 +1,15 @@
 <jpml id="SECTION-1story-PV">
 	<style src="SECTION-stylesheet.ejs" />
-	<style>{ 
+	<style>{
 		if: =portrait, then: {
-			#b1:	{ frame: [0, 0, 768, 620] },
-			#h1: {options:{highlight_dark:true}},
-			#h2: {options:{highlight_dark:true}}
+			#b1:	{ frame: [8, 8, 752, 615] },
+			#h2: {options:{highlight_dark:true}},
+			#h1: {options:{highlight_dark:true}}
 		}, else: {
-			#b1:	{ frame: [0, 0, 787, 620] },
-			#h1: {options:{highlight_dark:true}},
-			#h2: {options:{highlight_dark:true}}
+			#b1:	{ frame: [11, 8, 752, 615] },
+			#h2: {options:{highlight_dark:true}},
+			#h1: {options:{highlight_dark:true}}
+			
 		}
 	}</style>
 	
@@ -17,7 +18,7 @@
 	<box id="l1" class="line" />
 	<box id="h2" embed="article" module="HIGHLIGHTS_module.xml" />
 	<box id="l2" class="line" />
-	<box id="ad_background">
+	<box id="ad_background" class="ad_dark">
 		<box id="highlight_ad" embed="advertisement" />
 	</box>
 

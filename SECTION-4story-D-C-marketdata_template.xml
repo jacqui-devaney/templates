@@ -7,7 +7,6 @@
 			#b3:	{ frame: [583, 8, 170, 290], options:{small_headline:true} },
 			#b4:	{ frame: [583, 307, 170, 310], options:{small_headline:true, show_image:true} },
 			#l4:	{ frame: [1, 299, 765, 1] },
-			#highlight_marketdata: {options:{highlight_dark:true}},
 			#h2: {options:{highlight_dark:true}}
 		}, else: {
 			#b1:	{ frame: [11, 10, 555, 289], options:{large_headline:true} },
@@ -15,7 +14,6 @@
 			#b3:	{ frame: [593, 10, 173, 289], options:{small_headline:true} },
 			#b4:	{ frame: [593, 307, 173, 310], options:{small_headline:true, show_image:true} },
 			#l4:	{ frame: [3, 299, 774, 1] },
-			#highlight_marketdata: {options:{highlight_dark:true}},
 			#h2: {options:{highlight_dark:true}}
 		}
 	}</style>
@@ -25,11 +23,13 @@
 	<box id="l4" class="line" />
 	<box id="b3" embed="article" module="TOP-IMAGE_module.xml" />
 	<box id="b4" embed="article" module="TOP-IMAGE_module.xml" />
-	<box id="highlight_marketdata" embed="marketdata" />
+	<box id="marketdata_background" class="ad_light">
+		<box id="highlight_marketdata" embed="marketdata" />
+	</box>
 	<box id="l1" class="line" />
 	<box id="h2" embed="article" module="HIGHLIGHTS_module.xml" />
 	<box id="l2" class="line" />
-	<box id="ad_background">
+	<box id="ad_background" class="ad_dark">
 		<box id="highlight_ad" embed="advertisement" />
 	</box>
 

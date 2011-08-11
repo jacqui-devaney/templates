@@ -13,7 +13,7 @@
 	<box id="b1" embed="article" module="IMAGE-only_module.xml" />
 	<box id="h3" embed="article" class="highlight_white" module="HIGHLIGHTS_module.xml" />
 	<box id="l2" class="line" />
-	<box id="ad_background">
+	<box id="ad_background" class="ad_dark">
 		<box id="highlight_ad" embed="advertisement" />
 	</box>
 

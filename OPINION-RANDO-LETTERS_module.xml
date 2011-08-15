@@ -1,27 +1,40 @@
 <jpml id="OPINION-RANDO-LETTERS">
 	<style src="GLOBAL_MODULES-stylesheet.ejs" />
-	<style> {
-		#letters {
-			display: { if:=articles.type, equals:"Letters" then:default, else:none }
-		},
-		#opinion {
-			display: { if:=articles.type, equals:"Review & Outlook" then:default, else:none }
-		},
-	}
-</style>
+	<style>{
+		$join: [		
+			{ #rando_header: { display: { if: =options.rando, else:none }} },
+			{ #letters_header: { display: { if: =options.letters, else:none }} },
+		
+		
+			{ $switch: [
+				{ if: =articles.type, equals: "Letters", then: {
+					.letters_headline: { display: inherit},
+					.opinion_headline: { display: none},
+					.opinion_dek: { display: none}
+				
+				}},
+				{ if: true, then: {
+					.letters_headline: { display: none},
+					.opinion_headline: { display: inherit},
+					.opinion_dek: { display: inherit}
+				}}
+			]} 
+	]			
+	
+		
+	}</style>
 	<panel id="rando_header">
-	    <p class="rando_heading" />
+	    <p class="rando_heading"><mark class="rando" /></p>
+		<box id="opinion_line" />
 	</panel>
 	<panel id="letters_header">
-	    <p class="letters_heading" embed="subsection" />
+	    <p class="letters_heading"><mark class="letters" /></p>
+		<box id="letters_line" />
 	</panel>
-	<panel id="opinion">
+	<panel id="articles">
 		<p class="opinion_headline"><span embed="headline" /><mark class="key" /></p>
-		<p class="opinion_dek"><span embed="subhed" /></p>
-		<panel class="body" embed="body" />
-	</panel>
-	<panel id="letters">
 		<p class="letters_headline"><span embed="headline" /><mark class="key" /></p>
+		<p class="opinion_dek"><span embed="subhed" /></p>
 		<panel class="body" embed="body" />
 	</panel>
 	

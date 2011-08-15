@@ -2,19 +2,18 @@
 	<style src="OPINION-stylesheet.ejs" />
     <style>{
 		if: =portrait, then: {
-			#b1:	{ frame: [8, 50, 361, 557] },
-			#b2:	{ frame: [395, 10, 361, 610], options:{small_headline:true, show_image:true} },
+			#b1:	{ frame: [8, 10, 361, 600], options:{rando:true} },
+			#b2:	{ frame: [395, 10, 361, 600], options:{small_headline:true, show_image:true} },
 			#h2:	{options:{highlight_light:true}},
 			#h1:	{options:{highlight_light:true}}
 		}, else: {
-			#b1:	{ frame: [15, 50, 361, 557] },
-			#b2:	{ frame: [401, 3, 361, 610], options:{small_headline:true, show_image:true} },
+			#b1:	{ frame: [15, 10, 361, 600], options:{rando:true} },
+			#b2:	{ frame: [401, 10, 361, 600], options:{small_headline:true, show_image:true} },
 			#h2:	{options:{highlight_light:true}},
 			#h1:	{options:{highlight_light:true}}
 		}
 		        
     }</style>
-    
     <box id="b1" embed="article" module="OPINION-RANDO-LETTERS_module.xml" />
     <box id="l4" class="line" />
     <box id="b2" embed="article" module="TOP-IMAGE_module.xml" />
@@ -23,6 +22,9 @@
     <box id="l1" class="line" />
     <box id="h2" embed="article" module="HIGHLIGHTS_module.xml" />
     <box id="l2" class="line" />    
-    <box id="highlight_ad" embed="advertisement" />
+    	<box id="ad_background" class="ad_light">
+		<box id="highlight_ad" embed="advertisement" />
+	</box>
+
     
 </jpml>

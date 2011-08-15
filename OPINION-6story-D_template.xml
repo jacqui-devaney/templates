@@ -5,11 +5,11 @@
 			{#h2:	{options:{highlight_light:true}}},
 			{#h1:	{options:{highlight_light:true}}},
 			{	if: =portrait, then: {
-					#b1:	{ frame: [8, 50, 450, 130] },
+					#b1:	{ frame: [8, 10, 450, 150], options:{rando:true} },
 					#b5:	{ frame: [476, 10, 281, 382], options:{small_headline:true, show_image:true} },
 					#b6:	{ frame: [476, 402, 281, 200], options:{small_headline:true} }
 				}, else: {
-					#b1:	{ frame: [11, 50, 450, 130] },
+					#b1:	{ frame: [11, 10, 450, 150], options:{rando:true} },
 					#b5:	{ frame: [484, 10, 281, 382], options:{small_headline:true} },
 					#b6:	{ frame: [484, 402, 281, 200], options:{small_headline:true} }
 			
@@ -18,22 +18,22 @@
 			{ $switch: [
 				{ if: =articles.b2.type, equals: "Letters", then: {
 					_comment: "b2 has the header",
-					#b2: { frame: [8, 217, 450, 136], options: {header: true} },
-					#b3: { frame: [8, 336, 450, 136] },
-					#b4: { frame: [8, 472, 450, 136] }
+					#b2: { frame: [8, 170, 450, 170], options: {letters: true} },
+					#b3: { frame: [8, 350, 450, 125] },
+					#b4: { frame: [8, 485, 450, 125] }
 				}},
 				{ if: =articles.b3.type, equals: "Letters", then: {
 					_comment: "b3 has the header",
-					#b2: { frame: [8, 217, 450, 136] },
-					#b3: { frame: [8, 336, 450, 136], options: {header: true} },
-					#b4: { frame: [8, 472, 450, 136] }
+					#b2: { frame: [8, 170, 450, 140] },
+					#b3: { frame: [8, 310, 450, 170], options: {letters: true} },
+					#b4: { frame: [8, 490, 450, 120] }
 					
 				}}, 
 				{ if: true, then: {
 					_comment: "neither have the header",
-					#b2: { frame: [8, 200, 450, 136] },
-					#b3: { frame: [8, 336, 450, 136] },
-					#b4: { frame: [8, 472, 450, 136] }
+					#b2: { frame: [8, 170, 450, 140] },
+					#b3: { frame: [8, 320, 450, 140] },
+					#b4: { frame: [8, 470, 450, 140] }
 					
 				}}
         	]}
@@ -52,7 +52,10 @@
     <box id="l1" class="line" />
     <box id="h2" embed="article" module="HIGHLIGHTS_module.xml" />
     <box id="l2" class="line" />    
-    <box id="highlight_ad" embed="advertisement" />
+    	<box id="ad_background" class="ad_light">
+		<box id="highlight_ad" embed="advertisement" />
+	</box>
+
     
 </jpml>
 

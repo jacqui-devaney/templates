@@ -171,43 +171,66 @@
 		font-name:DJ5Exchange-Medium,
 		font-size:15,
 		line-height:17,
-		padding: [0, 0, 8, 0]
+		padding: [ 0, 0, 8, 0 ]
+	},
+	#rando_header: { 
+		padding:[ 0, 0, 20, 0 ]
+	},
+	#opinion_line: { 
+		anchor-x:center, 
+		height:1, 
+		width:210, 
+		top:13, 
+		background-color:#d5d5d5
 	},
 	.rando_heading: {
-		content: "Review &amp; Outlook",
 		font-name:DJ5EscrowOutline-Roman,
 		font-size:20,
 		color:#333,
-		text-decoration:underline
+		text-align:center,
+		text-transform:uppercase
+	},
+	.rando: {
+		content: "Review\u00a0\u0026\u00a0Outlook"
+	},
+	.letters: {
+		content: "Letters\u00a0to\u00a0the\u00a0Editor"
+	},
+	#letters_header: {
+		padding:[ 15, 0, 10, 0 ]
 	},
 	.letters_heading: {
-		content: "Letters",
 		font-name:DJ5EscrowWide-Roman,
 		font-size:20,
 		color:#333,
-		text-decoration:underline
+		text-align:center
 	},
-	#letters_header: {
-        display: { if:=options.hide_header, then:none, else:default }
-    },
+	#letters_line: { 
+		anchor-x:center, 
+		height:1, 
+		width:310, 
+		top:13, 
+		background-color:#d5d5d5
+	},
 	.opinion_headline: {
-		font-name:DJ5Escrow-Bold,
+		font-name:DJ5EscrowCond-Bold,
 		font-size:30,
-		line-height:22,
+		line-height:34,
 		text-align:center
 	},
 	.opinion_dek:{
-		font-name:DJ5Escrow-Bold,
-		font-size:19,
-		line-height:14,
+		font-name:DJ5EscrowCond-BoldItalic,
+		font-size:20,
+		line-height:24,
 		text-align:center,
 		color:#989898
 	},
 	.letters_headline: {
-		font-name:DJ5Escrow-Italic,
+		font-name:DJ5EscrowCond-Italic,
 		font-size:26,
 		text-align:center,
-		line-height:19
+		line-height:30,
+		padding: [0, 0, 5, 0]
 	}
 }
 

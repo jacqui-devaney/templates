@@ -5,11 +5,11 @@
 			{#h2:	{options:{highlight_light:true}}},
 			{#h1:	{options:{highlight_light:true}}},
 			{	if: =portrait, then: {
-					#b1:	{ frame: [8, 50, 361, 130] },
+					#b1:	{ frame: [8, 10, 361, 200], options:{rando:true} },
 					#b4:	{ frame: [395, 10, 361, 382], options:{small_headline:true, show_image:true} },
 					#b5:	{ frame: [395, 402, 361, 200], options:{small_headline:true} }
 				}, else: {
-					#b1:	{ frame: [15, 50, 361, 130] },
+					#b1:	{ frame: [15, 10, 361, 200], options:{rando:true} },
 					#b4:	{ frame: [401, 10, 361, 382], options:{small_headline:true} },
 					#b5:	{ frame: [401, 402, 361, 200], options:{small_headline:true} }
 			
@@ -18,18 +18,18 @@
 			{ $switch: [
 				{ if: =articles.b2.type, equals: "Letters", then: {
 					_comment: "b2 has the header",
-					#b2: { frame: [8, 217, 361, 184], options: {header: true} },
-					#b3: { frame: [8, 418, 361, 184] }
+					#b2: { frame: [8, 210, 361, 200], options: {letters: true} },
+					#b3: { frame: [8, 420, 361, 190] }
 				}},
 				{ if: =articles.b3.type, equals: "Letters", then: {
 					_comment: "b3 has the header",
-					#b2: { frame: [8, 217, 361, 184] },
-					#b3: { frame: [8, 418, 361, 184], options: {header: true} }
+					#b2: { frame: [8, 220, 361, 190] },
+					#b3: { frame: [8, 410, 361, 200], options: {letters: true} }
 				}}, 
 				{ if: true, then: {
 					_comment: "neither have the header",
-					#b2: { frame: [8, 217, 361, 184] },
-					#b3: { frame: [8, 418, 361, 184] }
+					#b2: { frame: [8, 210, 361, 200] },
+					#b3: { frame: [8, 420, 361, 190] }
 				}}
         	]}
     	]}    
@@ -46,7 +46,10 @@
     <box id="l1" class="line" />
     <box id="h2" embed="article" module="HIGHLIGHTS_module.xml" />
     <box id="l2" class="line" />    
-    <box id="highlight_ad" embed="advertisement" />
+    	<box id="ad_background" class="ad_light">
+		<box id="highlight_ad" embed="advertisement" />
+	</box>
+
     
 </jpml>
 

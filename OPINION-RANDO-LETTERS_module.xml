@@ -7,7 +7,7 @@
 		
 		
 			{ $switch: [
-				{ if: =articles.type, equals: "Letters", then: {
+				{ if: =article.type, equals: "Letters", then: {
 					.letters_headline: { display: inherit},
 					.opinion_headline: { display: none},
 					.opinion_dek: { display: none}

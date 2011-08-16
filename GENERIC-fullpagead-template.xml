@@ -2,5 +2,5 @@
     <style>{
         #b1 : { frame: [0, 0, =page.width, =page.height] }
     }</style>
-    <box id="b1" embed="ad" />
+    <box id="b1" embed="fullpagead" />
 </jpml>

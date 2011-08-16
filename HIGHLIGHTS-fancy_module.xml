@@ -1,0 +1,62 @@
+<jpml id="HIGHLIGHTS-fancy">
+	<style src="GLOBAL_MODULES-stylesheet.ejs" />
+    <style>{
+		$join: [
+			{if: =portrait, then: {
+				#landscape: { display:none },
+				#image_container: { 
+					anchor-x: right,
+					width: 80,
+					height: 84,
+					padding: [ 0, 0, 0, 10 ]
+				}
+			
+			}, else: {
+				#portrait: { display:none },
+				#image_container: { 
+					anchor-x: center,
+					width: 167,
+					height: 95,
+					padding: [ 8,0 ]
+				}
+				
+			}},
+			{.invisible: { display:none }},
+			{.magazine_highlight_flashline: {display: { if: =section.type, equals: FRONT_SECTION, then: inherit, else: none }}},
+			{.offduty_highlight_flashline: {display: { if: =section.type, equals: FRONT_SECTION, then: inherit, else: none }}},
+			{.highlight_body: {
+				text-overflow: "\u00bb",
+	        	text-align: justify
+			}}
+		]
+		
+		
+		
+		
+		
+		
+    }</style>
+    
+	<box id="portrait">
+	    <p class="offduty_highlight_type" embed="type" />
+	    <p class="magazine_highlight_type" embed="type" />
+    	<box id="image_container">
+        	<image class="A_size" embed="summary-image" />
+    	</box>
+	    <p class="magazine_highlight_flashline" class="invisible" embed="flashline" />
+	    <p class="highlight_headline" class="invisible"><span embed="headline" /><mark class="key" /></p>
+		<panel embed="body" class="highlight_body"/>
+   	</box>
+	<box id="landscape">
+	    <p class="offduty_highlight_flashline" embed="type" />
+	    <p class="magazine_highlight_flashline" embed="type" />
+    	<box id="image_container">
+        	<image class="C_size" embed="summary-image" />
+    	</box>
+	    <p class="offduty_highlight_headline" class="invisible"><span embed="headline" /><mark class="key" /></p>
+	    <p class="magazine_highlight_headline" class="invisible"><span embed="headline" /><mark class="key" /></p>
+	   	<p class="highlight_byline" embed="byline" />
+		<panel embed="body" class="highlight_body"/>
+   	</box>
+
+</jpml>

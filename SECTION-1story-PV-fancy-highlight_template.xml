@@ -1,0 +1,32 @@
+<jpml id="SECTION-1story-PV-fancy-highlight">
+	<style src="SECTION-stylesheet.ejs" />
+	<style>{
+		$join: [
+		{if: =portrait, then: {
+			#b1:	{ frame: [8, 8, 752, 615] },
+			#fh1: { frame:[0, 633, 253, 235] },
+			#fh2: { frame:[256, 633, 253, 235] },
+			#fh3: { frame:[514, 633, 253, 235] },
+			#l3: { frame: [253, 633, 1, 235] },
+			#l4: { frame: [255, 633, 1, 235] },
+			#l5: { frame: [510, 633, 1, 235] },
+			#l6: { frame: [512, 633, 1, 235] }
+		}, else: {
+			#b1:	{ frame: [0, 0, 752, 615] },
+			#fh1: {options:{magazine:true}},
+			#fh2: {options:{magazine:true}},
+			#fh3: {options:{magazine:true}}
+		}}
+		]
+	}</style>
+	
+	<box id="b1" embed="article" module="IMAGE-only_module.xml" />
+	<box id="fh1" embed="article" module="HIGHLIGHTS-fancy_module.xml" />
+	<box id="l3" class="line_black" />
+	<box id="l4" class="line_black" />
+	<box id="fh2" embed="article" module="HIGHLIGHTS-fancy_module.xml" />
+	<box id="l5" class="line_black" />
+	<box id="l6" class="line_black" />
+	<box id="fh3" embed="article" module="HIGHLIGHTS-fancy_module.xml" />
+	
+</jpml>

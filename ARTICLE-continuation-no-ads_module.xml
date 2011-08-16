@@ -1,0 +1,35 @@
+<jpml id="ARTICLE-continuation-no-ads">
+	<style src="GLOBAL_MODULES-stylesheet.ejs" />
+	<style>{
+		$join: [
+		{#header_top: { padding:[0, 0, 8, 5] }},
+		{#body_container : { padding: [8, 5, 0, 5]}},
+		{.body: { 
+            column-count: {$divide: [=view.width, {$multiply:[250, =scale.dpi]}]},
+            column-gutter: 20
+        }},
+		{#continues_label: {
+			anchor-y:top
+		}},
+		{#mediabucket: {frame: [8, 0, 262, 197] }},
+		{if: =portrait, then: {
+			#mediabucket_container:	{ frame: [280, 0, 275, 207]  }
+        }, else: {
+			#mediabucket_container:	{ frame: [578, 0, 275, 207]  }
+		}}
+		
+		]
+    }</style>
+	
+    <box id="continues_label">
+        <p class="continue">Continued</p>
+    </box>
+	<panel id="body_container">
+        <box id="mediabucket_container">
+			<box id="mediabucket" embed="mediabucket" />
+		</box>
+		<panel class="body" embed="body"/>
+    </panel>
+</jpml>
+
+

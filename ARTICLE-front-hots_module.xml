@@ -1,4 +1,4 @@
-<jpml id="ARTICLE-front">
+<jpml id="ARTICLE-front-hots">
 	<style src="GLOBAL_MODULES-stylesheet.ejs" />
 	<style>{
 		$join: [
@@ -24,7 +24,7 @@
     }</style>
 	
     <panel id="header_top">
-        <p class="article_flashline" embed="flashline"/>
+        <p class="hots_flashline" embed="flashline"/>
         <p class="article_headline"><span embed="headline"/><mark class="key"/></p>
 		<p class="article_subhed" embed="subhed" />
     </panel>

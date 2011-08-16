@@ -1,0 +1,53 @@
+<jpml id="ARTICLE-continuation-rando-no-ads">
+	<style src="GLOBAL_MODULES-stylesheet.ejs" />
+	<style>{
+		$join: [
+		{#header_top: { padding:[0, 0, 8, 5] }},
+		{#body_container : { padding: [8, 5, 0, 5]}},
+		{.body: { 
+            column-count: {$divide: [=view.width, {$multiply:[250, =scale.dpi]}]},
+            column-gutter: 20
+        }},
+		{#continues_label: {
+			anchor-y:top
+		}},
+		{#rando_container: { 
+			background-image:url(rando_bars.png), 
+			background-position:bottom, 
+			width:270,
+			padding:[0, 0, 10, 0]
+		}},
+		{if: =portrait, then: {
+			#rando_padding: {
+				width:270,
+				anchor-x:center, 
+				top:75,
+				padding:[20, 0]
+			}
+			
+        }, else: {
+			#rando_padding: {
+				width:270,
+				left:440, 
+				top:75,
+				padding:[20, 0]
+			}
+		}}
+		
+		]
+    }</style>
+	
+    <box id="continues_label">
+        <p class="continue">Continued</p>
+    </box>
+	<panel id="body_container">
+        <box id="rando_padding">
+			<box id="rando_container">
+				<p class="rando_subhed" embed="subhed" />
+	        </box>
+		</box>
+		<panel class="body" embed="body"/>
+    </panel>
+</jpml>
+
+

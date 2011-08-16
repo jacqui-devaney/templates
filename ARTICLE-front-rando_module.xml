@@ -1,4 +1,4 @@
-<jpml id="ARTICLE-front">
+<jpml id="ARTICLE-front-rando">
 	<style src="GLOBAL_MODULES-stylesheet.ejs" />
 	<style>{
 		$join: [
@@ -14,6 +14,14 @@
 		{.continue: {
 			text-align:right
 		}},
+		{
+		#rando_container: { 
+			background-image:url(rando_bars.png), 
+			background-position:bottom, 
+			anchor-x:left, 
+			width:270,
+			padding:[0, 0, 10, 0]
+		}},
 		{#mediabucket: {frame: [8, 2, 546, 385] }},
 		{if: =portrait, then: {
             #mediabucket_container:	{ frame: [0, 0, 574, 405]  }
@@ -24,9 +32,8 @@
     }</style>
 	
     <panel id="header_top">
-        <p class="article_flashline" embed="flashline"/>
+        <p class="rando_flashline" embed="flashline"/>
         <p class="article_headline"><span embed="headline"/><mark class="key"/></p>
-		<p class="article_subhed" embed="subhed" />
     </panel>
 	<box id="hr">
 		<panel class="hr" />
@@ -38,8 +45,11 @@
 		<box id="mediabucket_container">
 			<box id="mediabucket" embed="mediabucket" />
 		</box>
-	    <p class="byline" embed="byline"/>
-        <panel class="body" embed="body"/>
+		<box id="rando_container">
+			<p class="rando_subhed" embed="subhed" />
+        </box>
+		<panel class="body" embed="body" />
+		
     </panel>
     
 </jpml>

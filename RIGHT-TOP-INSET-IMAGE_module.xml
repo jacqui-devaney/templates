@@ -1,4 +1,4 @@
-<jpml id="TOP-IMAGE">
+<jpml id="RIGHT-INSET-IMAGE">
 	<style src="GLOBAL_MODULES-stylesheet.ejs" />
 	<style>{
         #body: { 
@@ -6,26 +6,29 @@
             column-gutter: 20
         },
         #image_container: { 
-			width:359, 
+			width:270,
+			height:174,
+			anchor-x:right,
 			anchor-y:top,
-			display: { if: =options.show_image, then:inherit }
-			 },
+			padding:[10, 0, 10, 0]
+			
+			
+		},
 		.invisible: { display:none },
 		#small_headline: { display: { if: =options.small_headline, then:inherit }},
 		#medium_headline: { display: { if: =options.medium_headline, then:inherit }},
 		#large_headline: { display: { if: =options.large_headline, then:inherit }}
-		
-		}</style>
-	<panel id="headline">
+	}</style>
+	<box id="image_container">
+		<image embed="summary-image"/>
+	</box>
+    <panel id="headline">
 		<p id="small_headline" class="invisible"><span embed="headline" /><mark class="key" /></p>
 		<p id="medium_headline" class="invisible"><span embed="headline" /><mark class="key" /></p>
 		<p id="large_headline" class="invisible"><span embed="headline" /><mark class="key" /></p>
 	</panel>
-	<box id="image_container">
-		<image embed="summary-image"/>
-	</box>
-	<panel id="body_container">
-        <panel id="body">
+	<panel id="body-container">
+		<panel id="body">
             <p class="byline" embed="byline"/>
             <panel class="body" embed="body"/>
         </panel>

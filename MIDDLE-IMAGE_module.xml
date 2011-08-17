@@ -1,12 +1,12 @@
 <jpml id="MIDDLE-IMAGE">
 	<style src="GLOBAL_MODULES-stylesheet.ejs" />
 	<style>{
-		#body-container: { padding: [10] },
+		#body_container: { padding: [10] },
         #body: { 
             column-count: {$divide: [=view.width, {$multiply:[250, =scale.dpi]}]},
             column-gutter: 20
         },
-        #image: { 
+        #image_container: { 
 			width:359, 
 			anchor-y:top,
 			anchor-x:left
@@ -22,10 +22,10 @@
 	<panel id="prominent">
 		<p class="large_headline"><span embed="headline" /><mark class="key" /></p>
 	</panel>
-	<box id="image">
+	<box id="image_container">
 		<image embed="summary-image"/>
 	</box>
-	<panel id="body-container">
+	<panel id="body_container">
         <panel id="body">
             <p class="byline" embed="byline"/>
             <panel class="body" embed="body"/>

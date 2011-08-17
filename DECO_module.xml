@@ -9,14 +9,14 @@
 		#hr: { display: { if: =options.no_line, then:none }}
 		
 	}</style>
-	<panel id="hr" />
+	<panel class="hr" />
 	<panel id="content">
 		<panel>
 			<p class="deco_headline"><span embed="headline" /><mark class="key" /></p>
 		</panel>
-		<panel>
+		<box id="image_container">
 			<image embed="summary-image" />
-		</panel>
+		</box>
 		<panel embed="body" class="deco_caption" />
 	</panel>
 </jpml>

@@ -2,26 +2,26 @@
 	<style src="SECTION-stylesheet.ejs" />
 	<style>{
 		 if: =portrait, then: {
-			#b1:	{ frame: [10, 8, 765, 198], options:{large_headline:true} },
+			#b1:	{ frame: [10, 8, 765, 190], options:{large_headline:true} },
 			#b2:	{ frame: [10, 216, 263, 404], options:{small_headline:true} },
 			#b3:	{ frame: [301, 216, 263, 404], options:{small_headline:true} },
 			#b4:	{ frame: [590, 216, 165, 404], options:{small_headline:true, show_image:true} },
 			#l4:	{ frame: [3, 208, 279, 1] },
 			#l5:	{ frame: [293, 208, 279, 1] },
 			#l6:	{ frame: [584, 208, 181, 1] },
-			#h1: {options:{highlight_dark:true}},
-			#h2: {options:{highlight_dark:true}}
+			#h1: 	{options:{highlight_dark:true}},
+			#h2: 	{options:{highlight_dark:true}}
 			
 		}, else: {
-			#b1:	{ frame: [11, 8, 765, 198], options:{large_headline:true} },
-			#b2:	{ frame: [11, 212, 263, 404], options:{small_headline:true, show_image:true} },
+			#b1:	{ frame: [15, 8, 758, 190], options:{large_headline:true} },
+			#b2:	{ frame: [15, 212, 263, 404], options:{small_headline:true, show_image:true} },
 			#b3:	{ frame: [302, 212, 263, 404], options:{small_headline:true} },
 			#b4:	{ frame: [593, 212, 165, 404], options:{small_headline:true, show_image:true} },
-			#l4:	{ frame: [3, 208, 280, 1] },
+			#l4:	{ frame: [8, 208, 280, 1] },
 			#l5:	{ frame: [294, 208, 279, 1] },
 			#l6:	{ frame: [584, 208, 181, 1] },
-			#h1: {options:{highlight_dark:true}},
-			#h2: {options:{highlight_dark:true}}
+			#h1: 	{options:{highlight_dark:true}},
+			#h2: 	{options:{highlight_dark:true}}
 		}
 	}</style>
 	

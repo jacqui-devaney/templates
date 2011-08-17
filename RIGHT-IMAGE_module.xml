@@ -1,14 +1,13 @@
 <jpml id="RIGHT-IMAGE">
 	<style src="GLOBAL_MODULES-stylesheet.ejs" />
 	<style>{
-        #body: { 
-            column-count: {$divide: [=view.width, {$multiply:[250, =scale.dpi]}]},
-            column-gutter: 20
-        },
-        #image: { 
-			width:359, 
+        #image_container: { 
+			width:262,
+			height:174,
+			anchor-x:right,
 			anchor-y:top,
-			anchor-x:right
+			padding:[0, 15, 24, 24]
+			
 			
 		},
 		.invisible: { display:none },
@@ -17,15 +16,15 @@
 		#large_headline: { display: { if: =options.large_headline, then:inherit }}
 		
 	}</style>
+	<box id="image_container">
+		<image embed="summary-image"/>
+	</box>
 	<panel id="headline">
 		<p id="small_headline" class="invisible"><span embed="headline" /><mark class="key" /></p>
 		<p id="medium_headline" class="invisible"><span embed="headline" /><mark class="key" /></p>
 		<p id="large_headline" class="invisible"><span embed="headline" /><mark class="key" /></p>
 	</panel>
-	<box id="image">
-		<image embed="summary-image"/>
-	</box>
-	<panel id="body-container">
+	<panel id="body_container">
         <panel id="body">
             <p class="byline" embed="byline"/>
             <panel class="body" embed="body"/>

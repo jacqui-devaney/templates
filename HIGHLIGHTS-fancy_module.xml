@@ -3,6 +3,7 @@
     <style>{
 		$join: [
 			{if: =portrait, then: {
+				jpml: { padding: [0] },
 				#landscape: { display:none },
 				#image_container: { 
 					anchor-x: right,
@@ -12,51 +13,71 @@
 				}
 			
 			}, else: {
+				jpml: { padding: [4, 0] },
 				#portrait: { display:none },
 				#image_container: { 
-					anchor-x: center,
 					width: 167,
-					height: 95,
-					padding: [ 8,0 ]
+					height: 100,
+					padding:[0, 24, 0, 15]
 				}
 				
 			}},
-			{.invisible: { display:none }},
-			{.magazine_highlight_flashline: {display: { if: =section.type, equals: FRONT_SECTION, then: inherit, else: none }}},
-			{.offduty_highlight_flashline: {display: { if: =section.type, equals: FRONT_SECTION, then: inherit, else: none }}},
 			{.highlight_body: {
 				text-overflow: "\u00bb",
 	        	text-align: justify
-			}}
+			}},
+			{ #inset: {
+				padding: [2, 15, 0, 15]
+			}},
+			{ $switch: [
+				{ if: =article.type, equals: "Letters", then: {
+					.magazine_highlight_type: { display: inherit},
+					.magazine_highlight_flashline: { display: inherit},
+					.magazine_highlight_headline: { display: inherit},
+					.magazine_highlight_body: { display: inherit},			
+					.offduty_highlight_type: { display: none},
+					.offduty_highlight_flashline: { display: none},
+					.offduty_highlight_headline: { display: none},
+					.offduty_highlight_body: { display: none}
+				}},
+				{ if: true, then: {
+					.magazine_highlight_type: { display: none},
+					.magazine_highlight_flashline: { display: none},
+					.magazine_highlight_headline: { display: none},
+					.magazine_highlight_body: { display: none},			
+					.offduty_highlight_type: { display: inherit},
+					.offduty_highlight_flashline: { display: inherit},
+					.offduty_highlight_headline: { display: inherit},
+					.offduty_highlight_body: { display: inherit}
+				}}
+			]}
+			
 		]
-		
-		
-		
-		
-		
-		
     }</style>
     
 	<box id="portrait">
 	    <p class="offduty_highlight_type" embed="type" />
 	    <p class="magazine_highlight_type" embed="type" />
-    	<box id="image_container">
-        	<image class="A_size" embed="summary-image" />
-    	</box>
-	    <p class="magazine_highlight_flashline" class="invisible" embed="flashline" />
-	    <p class="highlight_headline" class="invisible"><span embed="headline" /><mark class="key" /></p>
-		<panel embed="body" class="highlight_body"/>
-   	</box>
+	    <box id="image_container">
+	        <image class="A_size" embed="summary-image" />
+	    </box>
+	    <p class="magazine_highlight_flashline" embed="flashline" />
+	    <p class="offduty_highlight_flashline" embed="flashline" />
+	    <p class="magazine_highlight_headline"><span embed="headline" /><mark class="key" /></p>
+	    <p class="offduty_highlight_headline"><span embed="headline" /><mark class="key" /></p>
+		<panel embed="body" class="magazine_highlight_body"/>
+		<panel embed="body" class="offduty_highlight_body"/>
+	</box>
 	<box id="landscape">
-	    <p class="offduty_highlight_flashline" embed="type" />
-	    <p class="magazine_highlight_flashline" embed="type" />
-    	<box id="image_container">
-        	<image class="C_size" embed="summary-image" />
-    	</box>
-	    <p class="offduty_highlight_headline" class="invisible"><span embed="headline" /><mark class="key" /></p>
-	    <p class="magazine_highlight_headline" class="invisible"><span embed="headline" /><mark class="key" /></p>
-	   	<p class="highlight_byline" embed="byline" />
-		<panel embed="body" class="highlight_body"/>
-   	</box>
-
+	    <p class="offduty_highlight_type" id="inset" embed="type" />
+	    <p class="magazine_highlight_type" id="inset" embed="type" />
+	    <box id="image_container">
+	        <image class="C_size" embed="summary-image" />
+	    </box>
+	    <p class="magazine_highlight_flashline" id="inset" embed="flashline" />
+	    <p class="offduty_highlight_flashline" id="inset" embed="flashline" />
+	    <p class="magazine_highlight_headline" id="inset"><span embed="headline" /><mark class="key" /></p>
+	    <p class="offduty_highlight_headline" id="inset"><span embed="headline" /><mark class="key" /></p>
+	</box>
+	
 </jpml>

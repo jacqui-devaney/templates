@@ -5,7 +5,7 @@
             column-count: {$divide: [=view.width, {$multiply:[250, =scale.dpi]}]},
             column-gutter: 20
         },
-        #image: { 
+        #image_container: { 
 			width:359, 
 			anchor-y:top,
 			anchor-x:left
@@ -26,10 +26,10 @@
 		<p id="bignews_huge_headline" class="invisible"><span embed="headline" /><mark class="key" /></p>
 		<p id="bignews_big_headline" class="invisible"><span embed="headline" /><mark class="key" /></p>
 	</panel>
-	<box id="image">
+	<box id="image_container">
 		<image embed="summary-image"/>
 	</box>
-	<panel id="body-container">
+	<panel id="body_container">
         <panel id="body">
             <p class="byline" embed="byline"/>
             <panel class="body" embed="body"/>

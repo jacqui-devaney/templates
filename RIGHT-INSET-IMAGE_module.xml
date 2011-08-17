@@ -7,9 +7,8 @@
         },
 		#image_container: { 
 			anchor-x: right,
-			width: 80,
-			height: 84,
-			padding: [ 0, 0, 0, 15 ]
+			width: 76,
+			height: 84
 		},
         #headline: { padding: [ 0, 4, 0, 0 ] },
 		.invisible: { display:none },
@@ -25,7 +24,7 @@
 		<p id="medium_headline" class="invisible"><span embed="headline" /><mark class="key" /></p>
 		<p id="large_headline" class="invisible"><span embed="headline" /><mark class="key" /></p>
 	</box>
-	<panel id="body-container">
+	<panel id="body_container">
 		<panel id="body">
             <p class="byline" embed="byline"/>
             <panel class="body" embed="body"/>

@@ -12,7 +12,10 @@
     <page template="ARTICLE-continuation-no-ads_template.xml" type="repeat">
 		<link id="view" module="ARTICLE-continuation-no-ads_module.xml"/>
 	</page>
-	
+	<page template="ARTICLE-continuation-no-ads_template.xml" type="repeat">
+		<link id="view" module="ARTICLE-continuation-no-ads_module.xml"/>
+	</page>
+    
     <!-- The last page of every article uses column leveling with a background matte,
      which is not supported in conjunction with the ads template. The "suffix" type
      is used to render that last page. -->

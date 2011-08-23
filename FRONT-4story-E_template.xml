@@ -5,14 +5,14 @@
 			#b1:			{ frame: [202, 37, 551, 210], options:{large_headline:true, show_image:true} },
 			#b2:			{ frame: [202, 260, 551, 293], options:{small_headline:true} },
 			#b3:			{ frame: [202, 576, 265, 300], options:{small_headline:true} },
-			#b4:			{ frame: [486, 567, 281, 310] },
+			#b4:			{ frame: [486, 569, 281, 310] },
 			#l2: 			{ frame: [194, 569, 281, 1] },
 			#l1: 			{ frame: [194, 250, 572, 1] }
 		}, else: {
 			#b1:			{ frame: [210, 33, 551, 276], options:{large_headline:true, show_image:true} },
 			#b2:			{ frame: [210, 327, 551, 294], options:{small_headline:true} },
 			#b3:			{ frame: [797, 33, 217, 276], options:{small_headline:true} },
-			#b4:			{ frame: [787, 317, 237, 312] },
+			#b4:			{ frame: [787, 319, 237, 312] },
 			#l1: 			{ frame: [200, 319, 572, 1] }
 		}
 

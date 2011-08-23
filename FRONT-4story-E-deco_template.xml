@@ -8,14 +8,14 @@
         	#l2: 			{ frame: [194, 565, 281, 1] },
             #b3: 			{ frame: [584, 242, 170, 331], options:{small_headline:true} },
             #b4: 			{ frame: [202, 572, 265, 305], options:{small_headline:true} },
-            #b5: 			{ frame: [486, 563, 281, 320] }
+            #b5: 			{ frame: [486, 565, 281, 320] }
         }, else: {
             #b1:			{ frame: [210, 33, 555, 200], options:{large_headline:true} },
             #deco:			{ frame: [205, 240, 377, 375] },
         	#l1: 			{ frame: [592, 240, 181, 1] },
             #b3: 			{ frame: [803, 33, 211, 217], options:{small_headline:true} },
             #b4: 			{ frame: [599, 248, 171, 370], options:{small_headline:true} },
-            #b5: 			{ frame: [787, 238, 237, 390] }
+            #b5: 			{ frame: [787, 240, 237, 390] }
         }
 
     }</style>

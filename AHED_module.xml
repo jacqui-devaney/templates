@@ -32,7 +32,7 @@
     }</style>
     
 	<box id="regular">
-		<panel id="hr" />
+		<panel class="hr" />
 		<box id="regular_content">
 			<panel id="not_prominent">
 				<p id="small_headline"><span embed="headline" /><mark class="key" /></p>

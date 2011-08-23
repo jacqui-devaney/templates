@@ -8,7 +8,7 @@
         	#l2: 			{ frame: [194, 697, 281, 1] },
             #b4: 			{ frame: [202, 524, 265, 172], options:{small_headline:true} },
             #b5: 			{ frame: [202, 705, 265, 172], options:{small_headline:true}  },
-            #b6: 			{ frame: [486, 516, 281, 380] }
+            #b6: 			{ frame: [486, 518, 281, 380] }
         }, else: {
             #b1:			{ frame: [210, 33, 550, 205], options:{large_headline:true} },
             #deco:			{ frame: [205, 224, 571, 274] },

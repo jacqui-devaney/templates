@@ -6,17 +6,26 @@
 			height: { $min:[369, {$divide: [=view.height, =scale.dpi]}] }
 		},
 		#content: { padding: [8]},
-		#hr: { display: { if: =options.no_line, then:none }}
+		#hr: { display: { if: =options.no_line, then:none }},
+		.invisible: { display:none },
+		#deco_headline: { display: { if: =options.normal_headline, then:inherit }},
+		#deco_bottom_headline: { display: { if: =options.bottom_headline, then:inherit }},
+		#deco_small_headline: { display: { if: =options.small_headline, then:inherit }}
+		
 		
 	}</style>
 	<panel class="hr" />
 	<panel id="content">
 		<panel>
-			<p class="deco_headline"><span embed="headline" /><mark class="key" /></p>
+			<p id="deco_headline" class="invisible"><span embed="headline" /><mark class="key" /></p>
 		</panel>
 		<box id="image_container">
 			<image embed="summary-image" />
 		</box>
-		<panel embed="body" class="deco_caption" />
+		<panel>
+			<p id="deco_bottom_headline" class="invisible"><span embed="headline" /><mark class="key" /></p>
+			<p id="deco_small_headline" class="invisible"><span embed="headline" /><mark class="key" /></p>			
+			<panel embed="body" class="deco_caption" />
+		</panel>
 	</panel>
 </jpml>

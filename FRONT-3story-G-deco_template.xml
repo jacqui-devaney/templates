@@ -4,13 +4,13 @@
 		
 		if: =portrait, then: {
 			#b1:			{ frame: [204, 37, 551, 155], options:{large_headline:true} },
-			#deco:			{ frame: [194, 195, 571, 450] },
+			#deco:			{ frame: [194, 195, 571, 450], options:{normal_headline:true} },
 			#b2:			{ frame: [204, 653, 261, 221], options:{small_headline:true} },
 			#b3:			{ frame: [486, 648, 281, 241] },
 			#l1: 			{ frame: [194, 648, 281, 1] }	
 		}, else: {
 			#b1:			{ frame: [210, 33, 551, 140], options:{large_headline:true} },
-			#deco:			{ frame: [205, 175, 571, 445] },
+			#deco:			{ frame: [205, 175, 571, 445], options:{normal_headline:true} },
 			#b2:			{ frame: [797, 33, 217, 185], options:{small_headline:true} },
 			#b3:			{ frame: [787, 225, 237, 404] }
 			

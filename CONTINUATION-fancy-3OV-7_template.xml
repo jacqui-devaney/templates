@@ -1,0 +1,42 @@
+<jpml id="CONTINUATION-fancy-3OV-7">
+	<style src="CONTINUATION-stylesheet.ejs" /> 
+	<style>{
+        if: =portrait, then: {
+            #b1 : { frame: [4, 430, 253, 446] },
+            #b2 : { frame: [257, 430, 250, 446], options: {hide_strap: {if:=articles.b2.subsection, equals:=articles.b1.subsection}} },
+            #b3 : { frame: [512, 430, 256, 222], options: {hide_strap: {if:=articles.b3.subsection, equals:=articles.b2.subsection}} },
+            #b4 : { frame: [512, 653, 256, 222], options: {hide_strap: {if:=articles.b4.subsection, equals:=articles.b3.subsection}} },
+            #l1 : { frame: [0, 423, 252, 1] },
+			#l2 : { frame: [256, 423, 252, 1] },
+	        #l3 : { frame: [513, 423, 254, 1] },
+	        .line: { background-color:#b1aca1 },
+	        #deco : { frame: [0, 0, 258, 423], options: {small_headline:true, no_line:true} },
+	        #deco2 : { frame: [254, 0, 258, 423], options: {small_headline:true, no_line:true} },
+	        #deco3 : { frame: [509, 0, 258, 423], options: {small_headline:true, no_line:true} }
+	    }, else: {
+	        #b1 : { frame: [0, 0, 250, 619] },
+	        #b2 : { frame: [255, 430, 256, 190], options: {hide_strap: {if:=articles.b2.subsection, equals:=articles.b1.subsection}} },
+	        #b3 : { frame: [513, 430, 256, 190], options: {hide_strap: {if:=articles.b3.subsection, equals:=articles.b2.subsection}} },
+	        #b4 : { frame: [771, 430, 252, 190], options: {hide_strap: {if:=articles.b4.subsection, equals:=articles.b3.subsection}} },
+	        #l1 : { frame: [251, 423, 256, 1] },
+	        #l2 : { frame: [510, 423, 256, 1] },
+	        #l3 : { frame: [769, 423, 256, 1] },
+			.line: { background-color:#b1aca1 },
+	        #deco : { frame: [251, 0, 258, 423], options: {small_headline:true, no_line:true} },
+	        #deco2 : { frame: [509, 0, 258, 423], options: {small_headline:true, no_line:true} },
+	        #deco3 : { frame: [767, 0, 258, 423], options: {small_headline:true, no_line:true} }
+        }
+    }</style>
+    <box id="b1" embed="article" module="CONTINUATION-dynamic_module.xml" />    
+    <box id="b2" embed="article" module="CONTINUATION-dynamic_module.xml" />
+    <box id="b3" embed="article" module="CONTINUATION-dynamic_module.xml" />
+    <box id="b4" embed="article" module="CONTINUATION-dynamic_module.xml" />
+    <box id="deco" embed="article" module="DECO_module.xml" />
+    <box id="deco2" embed="article" module="DECO_module.xml" />
+    <box id="deco3" embed="article" module="DECO_module.xml" />
+	<box id="l1" class="line" />
+	<box id="l2" class="line" />
+	<box id="l3" class="line" />
+
+</jpml>
+

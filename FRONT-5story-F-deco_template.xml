@@ -3,7 +3,7 @@
 	<style> {
 		if: =portrait, then: {
 			#b1:			{ frame: [202, 33, 551, 145], options:{large_headline:true} },
-			#deco:			{ frame: [194, 175, 571, 270] },
+			#deco:			{ frame: [194, 175, 571, 270], options:{normal_headline:true} },
 			#b2:			{ frame: [202, 478, 261, 148], options:{small_headline:true} },
 			#b3:			{ frame: [495, 478, 261, 148], options:{small_headline:true} },
 			#b4:			{ frame: [202, 641, 261, 235], options:{small_headline:true} },
@@ -13,7 +13,7 @@
 			#l3: 			{ frame: [194, 635, 281, 1] }
 		}, else: {
 			#b1:			{ frame: [210, 33, 551, 145], options:{large_headline:true} },
-			#deco:			{ frame: [205, 175, 571, 270] },
+			#deco:			{ frame: [205, 175, 571, 270], options:{normal_headline:true} },
 			#b2:			{ frame: [210, 478, 261, 140], options:{small_headline:true} },
 			#b3:			{ frame: [506, 478, 261, 140], options:{small_headline:true} },
 			#b4:			{ frame: [804, 33, 205, 185], options:{small_headline:true} },

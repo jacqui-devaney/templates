@@ -9,7 +9,7 @@
             #b5 : { frame: [512, 649, 256, 226], options: {hide_strap: {if:=articles.b5.subsection, equals:=articles.b4.subsection}} },
             #l1 : { frame: [255, 411, 513, 1] },
 			.line: { background-color:#b1aca1 },
-            #deco : { frame: [264, 0, 491, 395], options: {no_line:true} }
+            #deco : { frame: [264, 0, 491, 395], options: {normal_headline:true, no_line:true} }
         }, else: {
 	        #b1 : { frame: [0, 0, 256, 619] },
 	        #b2 : { frame: [256, 0, 256, 406], options: {hide_strap: {if:=articles.b2.subsection, equals:=articles.b1.subsection}} },
@@ -18,7 +18,7 @@
 	        #b5 : { frame: [775, 419, 256, 200], options: {hide_strap: {if:=articles.b5.subsection, equals:=articles.b4.subsection}} },
 	        #l1 : { frame: [511, 411, 513, 1] },
 			.line: { background-color:#b1aca1 },
-	        #deco : { frame: [521, 0, 491, 395], options: {no_line:true} }
+	        #deco : { frame: [521, 0, 491, 395], options: {normal_headline:true, no_line:true} }
         }
     }</style>
     <box id="b1" embed="article" module="CONTINUATION-dynamic_module.xml" />    

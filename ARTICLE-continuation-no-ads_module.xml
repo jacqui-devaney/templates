@@ -6,11 +6,9 @@
 		{#body_container : { padding: [8, 5, 0, 5]}},
 		{.body: { 
             column-count: {$divide: [=view.width, {$multiply:[250, =scale.dpi]}]},
-            column-gutter: 20
+            column-gutter: 20,
+			column-height:balance
         }},
-		{#continues_label: {
-			anchor-y:top
-		}},
 		{#mediabucket: {frame: [8, 0, 262, 197] }},
 		{if: =portrait, then: {
 			#mediabucket_container:	{ frame: [280, 0, 275, 207]  }
@@ -21,9 +19,9 @@
 		]
     }</style>
 	
-    <box id="continues_label">
-        <p class="continue">Continued</p>
-    </box>
+	<box id="continued_label">
+		<p><mark id="continued" /></p>
+	</box>
 	<panel id="body_container">
         <box id="mediabucket_container">
 			<box id="mediabucket" embed="mediabucket" />

@@ -6,48 +6,64 @@
 		{#body_container : { padding: [8, 5, 0, 5]}},
 		{.body: { 
             column-count: {$divide: [=view.width, {$multiply:[250, =scale.dpi]}]},
-            column-gutter: 20
+            column-gutter: 20,
+			column-height:balance
         }},
-		{#continues_label: {
-			anchor-y:bottom
-		}},
-		{.continue: {
-			text-align:right
-		}},
-		{
-		#rando_container: { 
-			background-image:url(rando_bars.png), 
-			background-position:bottom, 
-			anchor-x:left, 
-			width:270,
-			padding:[0, 0, 10, 0]
-		}},
+		
 		{#mediabucket: {frame: [8, 2, 546, 385] }},
 		{if: =portrait, then: {
-            #mediabucket_container:	{ frame: [0, 0, 574, 405]  }
+            #mediabucket_container:	{ frame: [0, 0, 574, 405]  },
+			#rando_container: { 
+				background-image:url(rando_bars.png), 
+				background-position:bottom, 
+				width:270,
+				padding:[0, 0, 10, 0]
+			},
+			#rando_padding: {
+				width:270,
+				anchor-x:left, 
+				top:408,
+				padding:[0, 0, 20, 0]
+			}
+			
         }, else: {
-        	#mediabucket_container:	{ frame: [287, 0, 574, 405]  }
+        	#mediabucket_container:	{ frame: [287, 0, 574, 405]  },
+			#rando_container: { 
+				background-image:url(rando_bars.png), 
+				background-position:bottom, 
+				width:270,
+				padding:[0, 0, 10, 0]
+			},
+			#rando_padding: {
+				anchor-x:left,
+				width:270,
+				left:440, 
+				top:3,
+				padding:[0, 0, 20, 0]
+			}
+			
+
         }}
 		]
     }</style>
+	<box id="continues_label">
+		<p><mark id="continues" /></p>
+	</box>
 	
     <panel id="header_top">
         <p class="rando_flashline" embed="flashline"/>
         <p class="article_headline"><span embed="headline"/><mark class="key"/></p>
     </panel>
-	<box id="hr">
-		<panel class="hr" />
-	</box>
-    <box id="continues_label">
-        <p class="continue">Article continues...</p>
-    </box>
+	<panel class="hr" />
 	<panel id="body_container">
 		<box id="mediabucket_container">
 			<box id="mediabucket" embed="mediabucket" />
 		</box>
-		<box id="rando_container">
-			<p class="rando_subhed" embed="subhed" />
-        </box>
+        <box id="rando_padding">
+			<box id="rando_container">
+				<p class="rando_subhed" embed="subhed" />
+	        </box>
+		</box>
 		<panel class="body" embed="body" />
 		
     </panel>

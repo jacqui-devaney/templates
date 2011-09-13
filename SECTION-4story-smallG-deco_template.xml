@@ -2,25 +2,19 @@
 	<style src="SECTION-stylesheet.ejs" />
 	<style>{
 		if: =portrait, then: {
-			#b1:	{ frame: [11, 8, 462, 200], options:{large_headline:true} },
-			#deco:	{ frame: [5, 218, 473, 403], options:{normal_headline:true} },
-			#b2:	{ frame: [496, 16, 264, 200], options:{small_headline:true} },
-			#b3:	{ frame: [496, 226, 264, 195], options:{small_headline:true}},
-			#b4:	{ frame: [496, 429, 264, 195], options:{small_headline:true} },
-			#l4:	{ frame: [488, 8, 280, 1] },
-			#l5:	{ frame: [488, 218, 280, 1] },
-			#l6:	{ frame: [488, 422, 280, 1] },
+			#b1:	{ frame: [0, 8, 475, 200], options:{large_headline:true, no_border:true} },
+			#deco:	{ frame: [0, 218, 475, 400], options:{normal_headline:true} },
+			#b2:	{ frame: [494, 8, 264, 200], options:{small_headline:true}},
+			#b3:	{ frame: [486, 218, 280, 195], options:{small_headline:true, border:true}},
+			#b4:	{ frame: [486, 421, 280, 195], options:{small_headline:true, border:true} },
 			#h1: {options:{highlight_dark:true}},
 			#h2: {options:{highlight_dark:true}}
 		}, else: {
-			#b1:	{ frame: [11, 10, 462, 200], options:{large_headline:true} },
-			#deco:	{ frame: [11, 215, 473, 405], options:{normal_headline:true} },
-			#b2:	{ frame: [504, 18, 264, 196], options:{small_headline:true} },
-			#b3:	{ frame: [504, 223, 264, 195], options:{small_headline:true} },
-			#b4:	{ frame: [504, 429, 264, 195], options:{small_headline:true} },
-			#l4:	{ frame: [496, 10, 280, 1] },
-			#l5:	{ frame: [496, 215, 280, 1] },
-			#l6:	{ frame: [496, 422, 280, 1] },
+			#b1:	{ frame: [3, 10, 475, 200], options:{large_headline:true, no_border:true} },
+			#deco:	{ frame: [3, 215, 475, 405], options:{normal_headline:true} },
+			#b2:	{ frame: [502, 10, 264, 196], options:{small_headline:true} },
+			#b3:	{ frame: [494, 215, 280, 195], options:{small_headline:true, border:true} },
+			#b4:	{ frame: [494, 421, 280, 195], options:{small_headline:true, border:true} },
 			#h1: {options:{highlight_dark:true}},
 			#h2: {options:{highlight_dark:true}}
 		}
@@ -28,16 +22,11 @@
 	
 	<box id="b1" embed="article" module="TOP-IMAGE_module.xml" />
 	<box id="deco" embed="article" module="DECO_module.xml" />
-	<box id="l4" class="line" />
 	<box id="b2" embed="article" module="RIGHT-INSET-IMAGE_module.xml" />
-	<box id="l5" class="line" />
 	<box id="b3" embed="article" module="RIGHT-INSET-IMAGE_module.xml" />
-	<box id="l6" class="line" />
 	<box id="b4" embed="article" module="RIGHT-INSET-IMAGE_module.xml" />
 	<box id="h1" embed="article" module="HIGHLIGHTS_module.xml" />
-	<box id="l1" class="line" />
 	<box id="h2" embed="article" module="HIGHLIGHTS_module.xml" />
-	<box id="l2" class="line" />
 	<box id="ad_background" class="ad_dark">
 		<box id="highlight_ad" embed="advertisement" />
 	</box>

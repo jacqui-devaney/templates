@@ -1,7 +1,10 @@
 <jpml id="RIGHT-IMAGE">
 	<style src="GLOBAL_MODULES-stylesheet.ejs" />
 	<style>{
-        #image_container: { 
+        jpml: {
+			padding: [0, 0, 0, 8]
+		},
+		#image_container: { 
 			width:262,
 			height:174,
 			anchor-x:right,

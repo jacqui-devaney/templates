@@ -1,39 +1,55 @@
 <jpml id="LEFT-IMAGE">
 	<style src="GLOBAL_MODULES-stylesheet.ejs" />
 	<style>{
-        #body: { 
-            column-count: {$divide: [=view.width, {$multiply:[250, =scale.dpi]}]},
-            column-gutter: 20
-        },
-        #image_container: { 
-			width:359, 
-			anchor-y:top,
-			anchor-x:left
+        $join: [
+			{ $switch: [
+				{ if: =options.no_border, then: {
+					#wrapper: {
+						border-width: [0, 0, 0, 0],
+						padding: [0]
+					}
 			
-			 },
-		.invisible: { display:none },
-		#small_headline: { display: { if: =options.small_headline, then:inherit }},
-		#medium_headline: { display: { if: =options.medium_headline, then:inherit }},
-		#large_headline: { display: { if: =options.large_headline, then:inherit }},
-		#bignews_huge_headline: { display: { if: =options.bignews_huge_headline, then:inherit }},
-		#bignews_big_headline: { display: { if: =options.bignews_big_headline, then:inherit }}		
+				}},
+				{ if: true, then: {
+					#wrapper: {
+						border-width: [1, 0, 0, 0],
+						border-color: #b1aca1,
+						padding: [8, 0, 0, 0]
+					}
+					}}
+			]},
+			{#body_container: {
+				anchor-x:right
+			}},
+			
+	        {image: { 
+				width:359, 
+				anchor-x:left,
+				padding: [0, 8, 0, 0]
+			}},
+			{.invisible: { display:none }},
+			{#small_headline: { display: { if: =options.small_headline, then:inherit }}},
+			{#medium_headline: { display: { if: =options.medium_headline, then:inherit }}},
+			{#large_headline: { display: { if: =options.large_headline, then:inherit }}},
+			{#bignews_huge_headline: { display: { if: =options.bignews_huge_headline, then:inherit }}},
+			{#bignews_big_headline: { display: { if: =options.bignews_big_headline, then:inherit }}}	
+		]	
 		
 		}</style>
-	<panel id="headline">
-		<p id="small_headline" class="invisible"><span embed="headline" /><mark class="key" /></p>
-		<p id="medium_headline" class="invisible"><span embed="headline" /><mark class="key" /></p>
-		<p id="large_headline" class="invisible"><span embed="headline" /><mark class="key" /></p>
-		<p id="bignews_huge_headline" class="invisible"><span embed="headline" /><mark class="key" /></p>
-		<p id="bignews_big_headline" class="invisible"><span embed="headline" /><mark class="key" /></p>
-	</panel>
-	<box id="image_container">
+	<box id="wrapper">
+		<panel id="headline">
+			<p id="small_headline" class="invisible"><span embed="headline" /><mark class="key" /></p>
+			<p id="medium_headline" class="invisible"><span embed="headline" /><mark class="key" /></p>
+			<p id="large_headline" class="invisible"><span embed="headline" /><mark class="key" /></p>
+			<p id="bignews_huge_headline" class="invisible"><span embed="headline" /><mark class="key" /></p>
+			<p id="bignews_big_headline" class="invisible"><span embed="headline" /><mark class="key" /></p>
+		</panel>
 		<image embed="summary-image"/>
+		<panel id="body_container">
+	        <panel id="body">
+	            <p class="byline" embed="byline"/>
+	            <panel class="body" embed="body"/>
+	        </panel>
+	    </panel>
 	</box>
-	<panel id="body_container">
-        <panel id="body">
-            <p class="byline" embed="byline"/>
-            <panel class="body" embed="body"/>
-        </panel>
-    </panel>
-
 </jpml>

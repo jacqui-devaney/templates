@@ -2,19 +2,17 @@
 	<style src="SECTION-stylesheet.ejs" />
 	<style>{
 		if: =portrait, then: {
-			#b1:	{ frame: [8, 8, 752, 615] }
+			#b1:	{ frame: [0, 0, 768, 620] }
 		}, else: {
-			#b1:	{ frame: [11, 8, 752, 615] }
+			#b1:	{ frame: [0, 0, 768, 620] }
 			
 		}
 	}</style>
 	
 	<box id="b1" embed="article" module="IMAGE-only_module.xml" />
-	<box id="h1" embed="article" module="HIGHLIGHTS_module.xml" />
-	<box id="l1" class="line" />
-	<box id="h2" embed="article" module="HIGHLIGHTS_module.xml" />
-	<box id="l2" class="line" />
-	<box id="ad_background">
+	<box id="h5" embed="article" module="HIGHLIGHTS_module.xml" />
+	<box id="h6" embed="article" module="HIGHLIGHTS_module.xml" />
+	<box id="ad_background_PV">
 		<box id="highlight_ad" embed="advertisement" />
 	</box>
 	

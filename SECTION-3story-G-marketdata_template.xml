@@ -2,17 +2,15 @@
 	<style src="SECTION-stylesheet.ejs" />
 	<style>
 		{ if: =portrait, then: {
-			#b1:	{ frame: [11, 10, 555, 613], options:{large_headline:true, show_image:true} },
-			#b2:	{ frame: [589, 10, 167, 298], options:{small_headline:true} },
-			#b3:	{ frame: [589, 317, 167, 306], options:{small_headline:true} },
-			#l4:	{ frame: [583, 308, 183, 1] },
+			#b1:	{ frame: [0, 10, 572, 609], options:{large_headline:true, show_image:true, no_border:true} },
+			#b2:	{ frame: [583, 10, 183, 298], options:{small_headline:true, no_border:true} },
+			#b3:	{ frame: [583, 317, 183, 302], options:{small_headline:true} },
 			#h2: {options:{highlight_dark:true}}
 			
 		}, else: {
-			#b1:	{ frame: [11, 10, 555, 615], options:{large_headline:true, show_image:true} },
-			#b2:	{ frame: [595, 10, 167, 298], options:{small_headline:true} },
-			#b3:	{ frame: [595, 320, 167, 298], options:{small_headline:true} },
-			#l4:	{ frame: [587, 311, 185, 1] },
+			#b1:	{ frame: [11, 10, 572, 615], options:{large_headline:true, show_image:true, no_border:true} },
+			#b2:	{ frame: [594, 10, 183, 298], options:{small_headline:true, no_border:true} },
+			#b3:	{ frame: [594, 320, 183, 298], options:{small_headline:true} },
 			#h2: {options:{highlight_dark:true}}
 			
 		}}
@@ -20,14 +18,11 @@
 	
 	<box id="b1" embed="article" module="TOP-IMAGE_module.xml" />
 	<box id="b2" embed="article" module="TOP-IMAGE_module.xml" />
-	<box id="l4" class="line" />
 	<box id="b3" embed="article" module="TOP-IMAGE_module.xml" />
 	<box id="marketdata_background" class="ad_light">
 		<box id="highlight_marketdata" embed="marketdata" />
 	</box>
-	<box id="l1" class="line" />
 	<box id="h2" embed="article" module="HIGHLIGHTS_module.xml" />
-	<box id="l2" class="line" />
 	<box id="ad_background" class="ad_dark">
 		<box id="highlight_ad" embed="advertisement" />
 	</box>

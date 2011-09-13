@@ -6,14 +6,9 @@
 		{#body_container : { padding: [8, 5, 0, 5]}},
 		{.body: { 
             column-count: {$divide: [=view.width, {$multiply:[250, =scale.dpi]}]},
-            column-gutter: 20
+            column-gutter: 20,
+			column-height:balance
         }},
-		{#continues_label: {
-			anchor-y:bottom
-		}},
-		{.continue: {
-			text-align:right
-		}},
 		{#mediabucket: {frame: [8, 2, 546, 385] }},
 		{if: =portrait, then: {
             #mediabucket_container:	{ frame: [0, 0, 574, 405]  }
@@ -22,18 +17,17 @@
         }}
 		]
     }</style>
+	<box id="continues_label">
+		<p><mark id="continues" /></p>
+	</box>
 	
     <panel id="header_top">
         <p class="article_flashline" embed="flashline"/>
         <p class="letters_article_headline"><span embed="headline"/><mark class="key"/></p>
 		<p class="article_subhed" embed="subhed" />
     </panel>
-	<box id="hr">
-		<panel class="hr" />
-	</box>
-    <box id="continues_label">
-        <p class="continue">Article continues...</p>
-    </box>
+	<panel class="hr" />
+
 	<panel id="body_container">
 		<box id="mediabucket_container">
 			<box id="mediabucket" embed="mediabucket" />

@@ -6,11 +6,9 @@
 		{#body_container : { padding: [8, 5, 0, 5]}},
 		{.body: { 
             column-count: {$divide: [=view.width, {$multiply:[250, =scale.dpi]}]},
-            column-gutter: 20
+            column-gutter: 20,
+			column-height:balance
         }},
-		{#continues_label: {
-			anchor-y:top
-		}},
 		{#rando_container: { 
 			background-image:url(rando_bars.png), 
 			background-position:bottom, 
@@ -37,9 +35,10 @@
 		]
     }</style>
 	
-    <box id="continues_label">
-        <p class="continue">Continued</p>
-    </box>
+    <box id="continued_label">
+		<p><mark id="continued" /></p>
+	</box>
+	
 	<panel id="body_container">
         <box id="rando_padding">
 			<box id="rando_container">

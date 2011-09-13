@@ -2,18 +2,16 @@
 	<style src="FRONT-stylesheet.ejs" />
 	<style> {
 		if: =portrait, then: {
-			#b1:			{ frame: [202, 37, 551, 210], options:{large_headline:true, show_image:true} },
-			#b2:			{ frame: [202, 260, 551, 293], options:{small_headline:true} },
-			#b3:			{ frame: [202, 576, 265, 300], options:{small_headline:true} },
-			#b4:			{ frame: [486, 569, 281, 310] },
-			#l2: 			{ frame: [194, 569, 281, 1] },
-			#l1: 			{ frame: [194, 250, 572, 1] }
+			#b1:			{ frame: [194, 37, 571, 210], options:{large_headline:true, show_image:true} },
+			#b2:			{ frame: [194, 260, 571, 293], options:{small_headline:true} },
+			#b3:			{ frame: [194, 569, 280, 300], options:{small_headline:true} },
+			#b4:			{ frame: [486, 569, 280, 310] },
+			#l2: 			{ frame: [194, 569, 280, 1] }
 		}, else: {
-			#b1:			{ frame: [210, 33, 551, 276], options:{large_headline:true, show_image:true} },
-			#b2:			{ frame: [210, 327, 551, 294], options:{small_headline:true} },
-			#b3:			{ frame: [797, 33, 217, 276], options:{small_headline:true} },
-			#b4:			{ frame: [787, 319, 237, 312] },
-			#l1: 			{ frame: [200, 319, 572, 1] }
+			#b1:			{ frame: [205, 33, 571, 276], options:{large_headline:true, show_image:true, no_border:true} },
+			#b2:			{ frame: [205, 319, 571, 294], options:{small_headline:true} },
+			#b3:			{ frame: [787, 33, 238, 276], options:{small_headline:true, no_border:true} },
+			#b4:			{ frame: [787, 319, 238, 312] }
 		}
 
 	} </style>
@@ -23,9 +21,7 @@
 	<box id="whatsnews_wide" embed="whatsnews" />
 	<box id="ad" embed="advertisement" />
 	<box id="b1" embed="article" module="TOP-IMAGE_module.xml" />
-	<box id="l1" class="line" />
 	<box id="b2" embed="article" module="LEFT-IMAGE_module.xml" />
-	<box id="l2" class="line" />
 	<box id="b3" embed="article" module="TOP-IMAGE_module.xml" />
 	<box id="b4" embed="article" module="AHED_module.xml" />
 	

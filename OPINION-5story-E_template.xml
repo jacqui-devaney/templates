@@ -5,33 +5,33 @@
 			{#h2:	{options:{highlight_light:true}}},
 			{#h1:	{options:{highlight_light:true}}},
 			{	if: =portrait, then: {
-					#articles:	{ frame: [8, 10, 361, 610] },
-					#b1:	{ frame: [0, 0, 361, 220], options:{rando:true} },
-					#b4:	{ frame: [395, 10, 361, 382], options:{small_headline:true, show_image:true} },
-					#b5:	{ frame: [395, 402, 361, 207], options:{small_headline:true} }
+					#articles:	{ frame: [8, 10, 362, 610] },
+					#b1:	{ frame: [0, 0, 362, 220], options:{rando:true} },
+					#b4:	{ frame: [388, 10, 379, 382], options:{small_headline:true, show_image:true, no_border:true} },
+					#b5:	{ frame: [388, 402, 379, 207], options:{small_headline:true, no_border:true} }
 				}, else: {
-					#articles:	{ frame: [15, 10, 361, 610] },
-					#b1:	{ frame: [0, 0, 361, 220], options:{rando:true} },
-					#b4:	{ frame: [401, 10, 361, 382], options:{small_headline:true} },
-					#b5:	{ frame: [401, 402, 361, 207], options:{small_headline:true} }
+					#articles:	{ frame: [15, 10, 362, 610] },
+					#b1:	{ frame: [0, 0, 362, 220], options:{rando:true} },
+					#b4:	{ frame: [399, 10, 379, 382], options:{small_headline:true, show_image:true, no_border:true} },
+					#b5:	{ frame: [399, 402, 379, 207], options:{small_headline:true, no_border:true} }
 			
 				}
 			},
 			{ $switch: [
 				{ if: =articles.b2.type, equals: "Letters", then: {
 					_comment: "b2 has the header",
-					#b2: { frame: [0, 220, 361, 210], options: {letters: true} },
-					#b3: { frame: [0, 440, 361, 160] }
+					#b2: { frame: [0, 220, 362, 210], options: {letters: true} },
+					#b3: { frame: [0, 440, 362, 160] }
 				}},
 				{ if: =articles.b3.type, equals: "Letters", then: {
 					_comment: "b3 has the header",
-					#b2: { frame: [0, 230, 361, 180] },
-					#b3: { frame: [0, 410, 361, 190], options: {letters: true} }
+					#b2: { frame: [0, 230, 362, 180] },
+					#b3: { frame: [0, 410, 362, 190], options: {letters: true} }
 				}}, 
 				{ if: true, then: {
 					_comment: "neither have the header",
-					#b2: { frame: [0, 230, 361, 180] },
-					#b3: { frame: [0, 420, 361, 180] }
+					#b2: { frame: [0, 230, 362, 180] },
+					#b3: { frame: [0, 420, 362, 180] }
 				}}
         	]}
     	]}    
@@ -47,10 +47,8 @@
     <box id="b5" embed="article" module="TOP-IMAGE_module.xml" />
 
     <box id="h1" embed="article" module="HIGHLIGHTS_module.xml" />
-    <box id="l1" class="line" />
     <box id="h2" embed="article" module="HIGHLIGHTS_module.xml" />
-    <box id="l2" class="line" />    
-    	<box id="ad_background" class="ad_light">
+    <box id="ad_background" class="ad_light">
 		<box id="highlight_ad" embed="advertisement" />
 	</box>
 

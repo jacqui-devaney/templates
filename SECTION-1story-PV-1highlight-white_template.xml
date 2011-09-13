@@ -4,14 +4,13 @@
 		if: =portrait, then: {
 			#b1:	{ frame: [0, 0, 768, 620] }
 		}, else: {
-			#b1:	{ frame: [0, 0, 787, 620] }
+			#b1:	{ frame: [0, 0, 768, 620] }
 		}
 	}</style>
 	
 	<box id="b1" embed="article" module="IMAGE-only_module.xml" />
-	<box id="h3" embed="article" class="highlight_white" module="HIGHLIGHTS_module.xml" />
-	<box id="l2" class="line" />
-	<box id="ad_background">
+	<box id="h4" embed="article" class="highlight_white" module="HIGHLIGHTS_module.xml" />
+	<box id="ad_background_PV">
 		<box id="highlight_ad" embed="advertisement" />
 	</box>
 

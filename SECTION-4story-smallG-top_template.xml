@@ -2,21 +2,17 @@
 	<style src="SECTION-stylesheet.ejs" />
 	<style>{
 		if: =portrait, then: {
-			#b1:	{ frame: [11, 10, 462, 608], options:{large_headline:true, show_image:true} },
-			#b2:	{ frame: [495, 10, 264, 200], options:{small_headline:true} },
-			#b3:	{ frame: [495, 226, 264, 195], options:{small_headline:true} },
-			#b4:	{ frame: [495, 430, 264, 195], options:{small_headline:true} },
-			#l4:	{ frame: [488, 218, 280, 1] },
-			#l5:	{ frame: [488, 422, 280, 1] },
+			#b1:	{ frame: [0, 10, 475, 608], options:{large_headline:true, show_image:true, no_border:true} },
+			#b2:	{ frame: [486, 10, 280, 200], options:{small_headline:true, no_border:true} },
+			#b3:	{ frame: [486, 218, 280, 195], options:{small_headline:true} },
+			#b4:	{ frame: [486, 421, 280, 195], options:{small_headline:true} },
 			#h1: {options:{highlight_dark:true}},
 			#h2: {options:{highlight_dark:true}}
 		}, else: {
-			#b1:	{ frame: [11, 8, 473, 608], options:{large_headline:true, show_image:true} },
-			#b2:	{ frame: [502, 8, 264, 206], options:{small_headline:true} },
-			#b3:	{ frame: [502, 223, 264, 195], options:{small_headline:true} },
-			#b4:	{ frame: [502, 429, 264, 195], options:{small_headline:true} },
-			#l4:	{ frame: [494, 215, 280, 1] },
-			#l5:	{ frame: [494, 421, 280, 1] },
+			#b1:	{ frame: [3, 8, 475, 608], options:{large_headline:true, show_image:true, no_border:true} },
+			#b2:	{ frame: [494, 8, 280, 200], options:{small_headline:true, no_border:true} },
+			#b3:	{ frame: [494, 218, 280, 195], options:{small_headline:true} },
+			#b4:	{ frame: [494, 421, 280, 195], options:{small_headline:true} },
 			#h1: {options:{highlight_dark:true}},
 			#h2: {options:{highlight_dark:true}}
 		}
@@ -24,14 +20,10 @@
 	
 	<box id="b1" embed="article" module="TOP-IMAGE_module.xml" />
 	<box id="b2" embed="article" module="TOP-IMAGE_module.xml" />
-	<box id="l4" class="line" />
 	<box id="b3" embed="article" module="TOP-IMAGE_module.xml" />
-	<box id="l5" class="line" />
 	<box id="b4" embed="article" module="TOP-IMAGE_module.xml" />
 	<box id="h1" embed="article" module="HIGHLIGHTS_module.xml" />
-	<box id="l1" class="line" />
 	<box id="h2" embed="article" module="HIGHLIGHTS_module.xml" />
-	<box id="l2" class="line" />
 	<box id="ad_background" class="ad_dark">
 		<box id="highlight_ad" embed="advertisement" />
 	</box>

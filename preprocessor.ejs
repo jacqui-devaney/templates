@@ -2,18 +2,35 @@
     $join: [
 		=$,
 		{
-            portrait: { if: =view.width, less-than: =view.height },
-            landscape: { if: =view.width, more-than: =view.height },
+			portrait: { if: =view.width, less-than: =view.height },
+			landscape: { if: =view.width, more-than: =view.height },
 			
-			aspect: { 
-				if: { $divide:[=device.height, =device.width] },
-				at-most: 1.4,
-				then: standard,
-				else: widescreen
+			aspect: {
+				$divide: [
+					{$max: [=device.height, =device.width] },
+					{$min: [=device.height, =device.width] }
+				]
 			},
 
-            standard: { if: { $divide:[=device.height, =device.width] }, at-most: 1.4 },
-            widescreen: { if: { $divide:[=device.height, =device.width] }, at-least: 1.4 },
+			standard: { 
+				if: { 
+					$divide: [
+						{$max: [=device.height, =device.width] },
+						{$min: [=device.height, =device.width] }
+					]					
+				},
+				at-most: 1.4 
+			},
+
+			widescreen: { 
+				if: { 
+					$divide: [
+						{$max: [=device.height, =device.width] },
+						{$min: [=device.height, =device.width] }
+					]					
+				},
+				at-least: 1.4 
+			},
 
 			scale: {
 				dpi: { $divide: [=device.dpi, 132] },
@@ -31,7 +48,40 @@
 					then: { $divide: [=view.height, 876] },
 					else: { $divide: [=view.height, 620] }
 				}
-			}
+			},
+
+			ad: {
+				prefix: { $join: [
+					{ if: =issue.edition, then: =issue.edition, else: "us"},
+					".",
+					{ $switch: [
+						{ if: =device.platform, equals: iOS, then: ipad },
+						{ if: =device.platform, equals: Android, then: honeycomb },
+						"default"
+					] },
+					".wsj.com/",
+					{ $switch: [
+						{ if: =issue.section, equals: FRONT_SECTION, then: front },
+						{ if: =issue.section, equals: OPINION, then: opinion },
+						{ if: =issue.section, equals: MARKETPLACE, then: marketplace },
+						{ if: =issue.section, equals: MONEY_AND_INVESTING, then: money },
+						{ if: =issue.section, equals: WEEKEND_JOURNAL, then: weekendjournal },
+						{ if: =issue.section, equals: FRIDAY_JOURNAL, then: fridayjournal },
+						{ if: =issue.section, equals: PERSONAL_JOURNAL, then: personaljournal },
+						{ if: =issue.section, equals: THE_JOURNAL_REPORT, then: journalreport },
+						{ if: =issue.section, equals: WHATS_NEWS, then: whatsnews },
+						{ if: =issue.section, equals: NEW_YORK, then: greaterny },
+						{ if: =issue.section, equals: BUSINESS_AND_FINANCE, then: businessfinance },
+						{ if: =issue.section, equals: REVIEW, then: review },
+						{ if: =issue.section, equals: OFF_DUTY, then: offduty },
+						{ if: =issue.section, equals: CAMPAIGN, then: campaign },
+						{ if: =issue.section, equals: WSJ_MAGAZINE, then: magazine },
+						{ if: =issue.section, equals: SPECIAL_REPORT, then: specialreport },	
+						"default"
+					] },
+					"/"					
+				] }
+			}			
 		}
 	]
 

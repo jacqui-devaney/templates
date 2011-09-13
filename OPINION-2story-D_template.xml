@@ -2,13 +2,13 @@
 	<style src="OPINION-stylesheet.ejs" />
     <style>{
 		if: =portrait, then: {
-			#b1:	{ frame: [8, 10, 450, 600], options:{rando:true} },
-			#b2:	{ frame: [476, 10, 281, 600], options:{small_headline:true, show_image:true} },
+			#b1:	{ frame: [8, 10, 460, 600], options:{rando:true} },
+			#b2:	{ frame: [486, 10, 280, 600], options:{small_headline:true, show_image:true, no_border:true} },
 			#h2:	{options:{highlight_light:true}},
 			#h1:	{options:{highlight_light:true}}
 		}, else: {
-			#b1:	{ frame: [11, 10, 450, 600], options:{rando:true} },
-			#b2:	{ frame: [484, 10, 281, 600], options:{small_headline:true, show_image:true} },
+			#b1:	{ frame: [19, 10, 460, 600], options:{rando:true} },
+			#b2:	{ frame: [496, 10, 280, 600], options:{small_headline:true, show_image:true, no_border:true} },
 			#h2:	{options:{highlight_light:true}},
 			#h1:	{options:{highlight_light:true}}
 		}
@@ -20,9 +20,7 @@
     <box id="b2" embed="article" module="TOP-IMAGE_module.xml" />
 
     <box id="h1" embed="article" module="HIGHLIGHTS_module.xml" />
-    <box id="l1" class="line" />
     <box id="h2" embed="article" module="HIGHLIGHTS_module.xml" />
-    <box id="l2" class="line" />    
     <box id="ad_background" class="ad_light">
 		<box id="highlight_ad" embed="advertisement" />
 	</box>

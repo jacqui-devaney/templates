@@ -2,20 +2,18 @@
     <style src="FRONT-stylesheet.ejs"/>
     <style>{
         if: =portrait, then: {
-            #b1: 			{ frame: [202, 34, 550, 195], options:{large_headline:true} },
-            #deco: 			{ frame: [190, 235, 377, 321], options:{normal_headline:true} },
-        	#l1: 			{ frame: [580, 235, 186, 1] },
-        	#l2: 			{ frame: [194, 565, 281, 1] },
-            #b3: 			{ frame: [584, 242, 170, 331], options:{small_headline:true} },
-            #b4: 			{ frame: [202, 572, 265, 305], options:{small_headline:true} },
-            #b5: 			{ frame: [486, 565, 281, 320] }
+            #b1: 			{ frame: [194, 34, 571, 195], options:{large_headline:true, no_border:true} },
+            #deco: 			{ frame: [194, 235, 375, 321], options:{normal_headline:true} },
+            #b3: 			{ frame: [583, 235, 183, 321], options:{small_headline:true} },
+            #b4: 			{ frame: [194, 565, 280, 305], options:{small_headline:true} },
+            #b5: 			{ frame: [486, 565, 280, 305] }
         }, else: {
-            #b1:			{ frame: [210, 33, 555, 200], options:{large_headline:true} },
-            #deco:			{ frame: [205, 240, 377, 375], options:{normal_headline:true} },
-        	#l1: 			{ frame: [592, 240, 181, 1] },
-            #b3: 			{ frame: [803, 33, 211, 217], options:{small_headline:true} },
-            #b4: 			{ frame: [599, 248, 171, 370], options:{small_headline:true} },
-            #b5: 			{ frame: [787, 240, 237, 390] }
+            #b1:			{ frame: [205, 33, 571, 200], options:{large_headline:true, no_border:true} },
+            #deco:			{ frame: [205, 240, 375, 375], options:{normal_headline:true} },
+        	#l1: 			{ frame: [593, 240, 183, 1] },
+            #b3: 			{ frame: [787, 33, 238, 217], options:{small_headline:true, no_border:true} },
+            #b4: 			{ frame: [593, 240, 183, 375], options:{small_headline:true} },
+            #b5: 			{ frame: [787, 240, 238, 390] }
         }
 
     }</style>
@@ -25,9 +23,7 @@
     <box id="ad" embed="advertisement" />
     <box id="b1" embed="article" module="TOP-IMAGE_module.xml" />    
     <box id="deco" embed="article" module="DECO_module.xml" />
-    <box id="l1" class="line" />
     <box id="b3" embed="article" module="TOP-IMAGE_module.xml" />
     <box id="b4" embed="article" module="TOP-IMAGE_module.xml" />
-   	<box id="l2" class="line" />
  	<box id="b5" embed="article" module="AHED_module.xml" />
 </jpml>

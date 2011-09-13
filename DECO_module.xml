@@ -1,31 +1,51 @@
 <jpml id="DECO">
 	<style src="GLOBAL_MODULES-stylesheet.ejs" />
 	<style>{
-		image: { 
-			width: { $min:[553, {$divide: [=view.width, =scale.dpi]}] }, 
-			height: { $min:[369, {$divide: [=view.height, =scale.dpi]}] }
-		},
-		#content: { padding: [8]},
-		#hr: { display: { if: =options.no_line, then:none }},
-		.invisible: { display:none },
-		#deco_headline: { display: { if: =options.normal_headline, then:inherit }},
-		#deco_bottom_headline: { display: { if: =options.bottom_headline, then:inherit }},
-		#deco_small_headline: { display: { if: =options.small_headline, then:inherit }}
+		$join: [
+			{#bottom: {
+				anchor-y:bottom
+			}},
+			{ $switch: [
+				{ if: =options.no_border, then: {
+					#wrapper: {
+						border-width: [0, 0, 0, 0],
+						padding: [0]
+					}
 		
+				}},
+				{ if: true, then: {
+					#wrapper: {
+						border-width: [1, 0, 0, 0],
+						border-color: #b1aca1,
+						padding: [8, 0, 0, 0]
+					}
+					}}
+			]},
 		
+			{image: { 
+				padding: [ 8, 0 ]
+			}},
+			{#content: { padding: [0, 8, 8, 8]}},
+			{.invisible: { display:none }},
+			{#deco_headline: { display: { if: =options.normal_headline, then:inherit }}},
+			{#deco_bottom_headline: { display: { if: =options.bottom_headline, then:inherit }}},
+			{#deco_small_headline: { display: { if: =options.small_headline, then:inherit }}},
+			{.deco_caption: {
+				max-height: 30
+			}}
+		]
 	}</style>
-	<panel class="hr" />
-	<panel id="content">
-		<panel>
-			<p id="deco_headline" class="invisible"><span embed="headline" /><mark class="key" /></p>
-		</panel>
-		<box id="image_container">
+	<box id="wrapper">
+		<panel id="content">
+			<panel id="top_headline">
+				<p id="deco_headline" class="invisible"><span embed="headline" /><mark class="key" /></p>
+			</panel>
+			<box id="bottom">
+				<p id="deco_bottom_headline" class="invisible"><span embed="headline" /><mark class="key" /></p>
+				<p id="deco_small_headline" class="invisible"><span embed="headline" /><mark class="key" /></p>			
+				<panel embed="body" class="deco_caption" />
+			</box>
 			<image embed="summary-image" />
-		</box>
-		<panel>
-			<p id="deco_bottom_headline" class="invisible"><span embed="headline" /><mark class="key" /></p>
-			<p id="deco_small_headline" class="invisible"><span embed="headline" /><mark class="key" /></p>			
-			<panel embed="body" class="deco_caption" />
 		</panel>
-	</panel>
+	</box>
 </jpml>

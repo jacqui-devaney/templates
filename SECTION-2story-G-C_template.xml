@@ -2,13 +2,13 @@
 	<style src="SECTION-stylesheet.ejs" />
 	<style>{ 
 		if: =portrait, then: {
-			#b1:	{ frame: [11, 10, 551, 613], options:{large_headline:true, show_image:true} },
-			#b2:	{ frame: [583, 10, 173, 613], options:{small_headline:true, show_image:true} },
+			#b1:	{ frame: [0, 10, 572, 605], options:{large_headline:true, show_image:true, no_border:true} },
+			#b2:	{ frame: [583, 10, 183, 605], options:{small_headline:true, show_image:true, no_border:true} },
 			#h1: {options:{highlight_dark:true}},
 			#h2: {options:{highlight_dark:true}}
 		}, else: {
-			#b1:	{ frame: [11, 10, 551, 613], options:{large_headline:true, show_image:true} },
-			#b2:	{ frame: [593, 10, 173, 613], options:{small_headline:true, show_image:true} },
+			#b1:	{ frame: [11, 10, 572, 605], options:{large_headline:true, show_image:true, no_border:true} },
+			#b2:	{ frame: [594, 10, 183, 605], options:{small_headline:true, show_image:true, no_border:true} },
 			#h1: {options:{highlight_dark:true}},
 			#h2: {options:{highlight_dark:true}}
 		}
@@ -17,9 +17,7 @@
 	<box id="b1" embed="article" module="TOP-IMAGE_module.xml" />
 	<box id="b2" embed="article" module="TOP-IMAGE_module.xml" />
 	<box id="h1" embed="article" module="HIGHLIGHTS_module.xml" />
-	<box id="l1" class="line" />
 	<box id="h2" embed="article" module="HIGHLIGHTS_module.xml" />
-	<box id="l2" class="line" />
 	<box id="ad_background" class="ad_dark">
 		<box id="highlight_ad" embed="advertisement" />
 	</box>

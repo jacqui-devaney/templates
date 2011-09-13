@@ -6,24 +6,16 @@
 		{#body_container : { padding: [4, 5, 0, 5]}},
 		{.body: { 
             column-count: {$divide: [=view.width, {$multiply:[250, =scale.dpi]}]},
-            column-gutter: 20
+            column-gutter: 20,
+			column-height:balance
         }},
-		{#continues_label: {
-			anchor-y:bottom
-		}},
-		{.continue: {
-			text-align:right
-		}},
-		{#image_container: {
-			frame: [0, 10, 768, 604]
-		}},
-		{#image_container:{ frame: [12, 0, 722, 584]}}
+		{image: {
+			frame: [0, 0, 768, 620]
+		}}
 		]
     }</style>
 	
-    <box id="image_container">
-		<image embed="summary-image" />
-	</box>
+    <image embed="summary-image" />
 	<panel id="header_top">
         <p class="offduty_article_headline"><span embed="headline"/><mark class="key"/></p>
 		<p class="offduty_article_subhed" embed="subhed" />

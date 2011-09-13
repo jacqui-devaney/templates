@@ -9,25 +9,25 @@
 					anchor-x: right,
 					width: 80,
 					height: 84,
-					padding: [ 0, 0, 0, 10 ]
+					padding: [ 0, 0, 0, 0 ]
 				}
 			
 			}, else: {
-				jpml: { padding: [4, 0] },
+				jpml: { padding: [8, 0] },
 				#portrait: { display:none },
 				#image_container: { 
-					width: 167,
-					height: 100,
-					padding:[0, 24, 0, 15]
+					width: 225,
+					height: 126,
+					padding:[0, 20, 4, 0]
+				},
+				#inset: {
+					padding: [0]
 				}
 				
 			}},
 			{.highlight_body: {
 				text-overflow: "\u00bb",
 	        	text-align: justify
-			}},
-			{ #inset: {
-				padding: [2, 15, 0, 15]
 			}},
 			{ $switch: [
 				{ if: =article.type, equals: "Letters", then: {
@@ -72,7 +72,7 @@
 	    <p class="offduty_highlight_type" id="inset" embed="type" />
 	    <p class="magazine_highlight_type" id="inset" embed="type" />
 	    <box id="image_container">
-	        <image class="C_size" embed="summary-image" />
+	        <image embed="summary-image" />
 	    </box>
 	    <p class="magazine_highlight_flashline" id="inset" embed="flashline" />
 	    <p class="offduty_highlight_flashline" id="inset" embed="flashline" />

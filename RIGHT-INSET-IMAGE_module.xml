@@ -1,34 +1,53 @@
 <jpml id="RIGHT-INSET-IMAGE">
 	<style src="GLOBAL_MODULES-stylesheet.ejs" />
 	<style>{
-        #body: { 
+        $join: [
+			{ $switch: [
+				{ if: =options.border, then: {
+					#wrapper: {
+						border-width: [1, 0, 0, 0],
+						border-color: #b1aca1,
+						padding: [8, 8, 0, 8]
+					}
+			
+				}},
+				{ if: true, then: {
+					#wrapper: {
+					border-width: [0, 0, 0, 0],
+					padding: [0]
+					}
+					}}
+			]},
+		{#body: { 
             column-count: {$divide: [=view.width, {$multiply:[250, =scale.dpi]}]},
             column-gutter: 20
-        },
-		#image_container: { 
+        }},
+		{#image_container: { 
 			anchor-x: right,
 			width: 76,
 			height: 84
-		},
-        #headline: { padding: [ 0, 4, 0, 0 ] },
-		.invisible: { display:none },
-		#small_headline: { display: { if: =options.small_headline, then:inherit }},
-		#medium_headline: { display: { if: =options.medium_headline, then:inherit }},
-		#large_headline: { display: { if: =options.large_headline, then:inherit }}
+		}},
+        {#headline: { padding: [ 0, 4, 0, 0 ] }},
+		{.invisible: { display:none }},
+		{#small_headline: { display: { if: =options.small_headline, then:inherit }}},
+		{#medium_headline: { display: { if: =options.medium_headline, then:inherit }}},
+		{#large_headline: { display: { if: =options.large_headline, then:inherit }}}
+		]
 	}</style>
-    <box id="image_container">
-		<image embed="summary-image" class="A_size"/>
+   	<box id="wrapper">
+ 		<box id="image_container">
+			<image embed="summary-image" class="A_size"/>
+		</box>
+		<box id="headline">
+			<p id="small_headline" class=""><span embed="headline" /><mark class="key" /></p>
+			<p id="medium_headline" class="invisible"><span embed="headline" /><mark class="key" /></p>
+			<p id="large_headline" class="invisible"><span embed="headline" /><mark class="key" /></p>
+		</box>
+		<panel id="body_container">
+			<panel id="body">
+	            <p class="byline" embed="byline"/>
+	            <panel class="body" embed="body"/>
+	        </panel>
+	    </panel>
 	</box>
-	<box id="headline">
-		<p id="small_headline" class=""><span embed="headline" /><mark class="key" /></p>
-		<p id="medium_headline" class="invisible"><span embed="headline" /><mark class="key" /></p>
-		<p id="large_headline" class="invisible"><span embed="headline" /><mark class="key" /></p>
-	</box>
-	<panel id="body_container">
-		<panel id="body">
-            <p class="byline" embed="byline"/>
-            <panel class="body" embed="body"/>
-        </panel>
-    </panel>
-
 </jpml>

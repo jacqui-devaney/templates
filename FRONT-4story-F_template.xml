@@ -2,18 +2,15 @@
 	<style src="FRONT-stylesheet.ejs" />
 	<style>{
 		if: =portrait, then: {
-			#b1:			{ frame: [200, 37, 554, 430], options:{large_headline:true, show_image:true} },
-			#b2:			{ frame: [200, 478, 270, 190], options:{small_headline:true} },
-			#b3:			{ frame: [200, 677, 270, 190], options:{small_headline:true} },
-			#b4:			{ frame: [486, 473, 281, 413] },
-			#l1: 			{ frame: [194, 473, 280, 1] },
-			#l2: 			{ frame: [194, 670, 280, 1] }
+			#b1:			{ frame: [195, 37, 571, 430], options:{large_headline:true, show_image_skinny:true, no_border:true} },
+			#b2:			{ frame: [195, 473, 280, 194], options:{small_headline:true} },
+			#b3:			{ frame: [195, 674, 280, 194], options:{small_headline:true} },
+			#b4:			{ frame: [486, 473, 280, 395] }
 		}, else: {
-			#b1:			{ frame: [210, 33, 551, 430], options:{large_headline:true, show_image:true} },
-			#b2:			{ frame: [210, 472, 551, 140], options:{small_headline:true} },
-			#b3:			{ frame: [793, 33, 221, 180], options:{small_headline:true} },
-			#b4:			{ frame: [787, 214, 237, 413] },
-			#l1: 			{ frame: [200, 464, 571, 1] }
+			#b1:			{ frame: [205, 33, 571, 430], options:{large_headline:true, show_image_skinny:true, no_border:true} },
+			#b2:			{ frame: [205, 472, 571, 140], options:{small_headline:true} },
+			#b3:			{ frame: [787, 33, 238, 172], options:{small_headline:true, no_border:true} },
+			#b4:			{ frame: [787, 214, 238, 413] }
 		}
 				
 	}</style>
@@ -24,8 +21,6 @@
 	<box id="ad" embed="advertisement" />
 	<box id="b1" embed="article" module="TOP-IMAGE_module.xml" />
 	<box id="b2" embed="article" module="TOP-IMAGE_module.xml" />
-	<box id="l1" class="line" />
 	<box id="b3" embed="article" module="TOP-IMAGE_module.xml" />
-	<box id="l2" class="line" />
 	<box id="b4" embed="article" module="AHED_module.xml" />
 </jpml>

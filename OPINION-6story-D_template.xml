@@ -5,44 +5,44 @@
 			{#h2:	{options:{highlight_light:true}}},
 			{#h1:	{options:{highlight_light:true}}},
 			{	if: =portrait, then: {
-					#articles:	{ frame: [8, 10, 450, 610] },
-					#b1:	{ frame: [0, 0, 450, 150], options:{rando:true} },
-					#b5:	{ frame: [476, 10, 281, 382], options:{small_headline:true, show_image:true} },
-					#b6:	{ frame: [476, 402, 281, 200], options:{small_headline:true} }
+					#articles:	{ frame: [8, 10, 460, 610] },
+					#b1:	{ frame: [0, 0, 460, 150], options:{rando:true} },
+					#b5:	{ frame: [486, 10, 280, 382], options:{small_headline:true, show_image:true, no_border:true} },
+					#b6:	{ frame: [486, 402, 280, 200], options:{small_headline:true, no_border:true} }
 				}, else: {
-					#articles:	{ frame: [11, 10, 361, 610] },
-					#b1:	{ frame: [0, 0, 450, 150], options:{rando:true} },
-					#b5:	{ frame: [484, 10, 281, 382], options:{small_headline:true} },
-					#b6:	{ frame: [484, 402, 281, 200], options:{small_headline:true} }
+					#articles:	{ frame: [15, 10, 361, 610] },
+					#b1:	{ frame: [0, 0, 460, 150], options:{rando:true} },
+					#b5:	{ frame: [496, 10, 280, 382], options:{small_headline:true, show_image:true, no_border:true} },
+					#b6:	{ frame: [496, 402, 280, 200], options:{small_headline:true, no_border:true} }
 			
 				}
 			},
 			{ $switch: [
 				{ if: =articles.b2.type, equals: "Letters", then: {
 					_comment: "b2 has the header",
-					#b2: { frame: [0, 150, 450, 170], options: {letters: true} },
-					#b3: { frame: [0, 330, 450, 130] },
-					#b4: { frame: [0, 470, 450, 130] }
+					#b2: { frame: [0, 150, 460, 170], options: {letters: true} },
+					#b3: { frame: [0, 330, 460, 130] },
+					#b4: { frame: [0, 470, 460, 130] }
 				}},
 				{ if: =articles.b3.type, equals: "Letters", then: {
 					_comment: "b3 has the header",
-					#b2: { frame: [0, 160, 450, 140] },
-					#b3: { frame: [0, 300, 450, 170], options: {letters: true} },
-					#b4: { frame: [0, 480, 450, 120] }
+					#b2: { frame: [0, 160, 460, 140] },
+					#b3: { frame: [0, 300, 460, 170], options: {letters: true} },
+					#b4: { frame: [0, 480, 460, 120] }
 					
 				}}, 
 				{ if: =articles.b4.type, equals: "Letters", then: {
 					_comment: "b4 has the header",
-					#b2: { frame: [0, 160, 450, 140] },
-					#b3: { frame: [0, 310, 450, 140] },
-					#b4: { frame: [0, 460, 450, 140], options: {letters: true} }
+					#b2: { frame: [0, 160, 460, 140] },
+					#b3: { frame: [0, 310, 460, 140] },
+					#b4: { frame: [0, 460, 460, 140], options: {letters: true} }
 					
 				}}, 
 				{ if: true, then: {
 					_comment: "neither have the header",
-					#b2: { frame: [0, 160, 450, 140] },
-					#b3: { frame: [0, 310, 450, 140] },
-					#b4: { frame: [0, 460, 450, 140] }
+					#b2: { frame: [0, 160, 460, 140] },
+					#b3: { frame: [0, 310, 460, 140] },
+					#b4: { frame: [0, 460, 460, 140] }
 					
 				}}
         	]}
@@ -59,9 +59,7 @@
     <box id="b6" embed="article" module="TOP-IMAGE_module.xml" />
 
     <box id="h1" embed="article" module="HIGHLIGHTS_module.xml" />
-    <box id="l1" class="line" />
     <box id="h2" embed="article" module="HIGHLIGHTS_module.xml" />
-    <box id="l2" class="line" />    
     	<box id="ad_background" class="ad_light">
 		<box id="highlight_ad" embed="advertisement" />
 	</box>

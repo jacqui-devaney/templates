@@ -1,34 +1,59 @@
 <jpml id="TOP-IMAGE">
 	<style src="GLOBAL_MODULES-stylesheet.ejs" />
 	<style>{
-        #body: { 
-            column-count: {$divide: [=view.width, {$multiply:[250, =scale.dpi]}]},
-            column-gutter: 20
-        },
-        #image_container: { 
-			width:359, 
-			anchor-y:top,
-			display: { if: =options.show_image, then:inherit }
-			 },
-		.invisible: { display:none },
-		#small_headline: { display: { if: =options.small_headline, then:inherit }},
-		#medium_headline: { display: { if: =options.medium_headline, then:inherit }},
-		#large_headline: { display: { if: =options.large_headline, then:inherit }}
-		
+		$join: [
+			{ $switch: [
+				{ if: =options.no_border, then: {
+					#wrapper: {
+						border-width: [0, 0, 0, 0],
+						padding: [0]
+					}
+			
+				}},
+				{ if: true, then: {
+					#wrapper: {
+						border-width: [1, 0, 0, 0],
+						border-color: #b1aca1,
+						padding: [8, 0, 0, 0]
+					}
+					}}
+			]},
+			{#padding: [20, 8] },
+			{#body: { 
+	            column-count: {$divide: [=view.width, {$multiply:[250, =scale.dpi]}]},
+	            column-gutter: 20
+	        }},
+			{#body_container: { padding: [0, 8]}},
+			{#headline: { padding: [0, 8]}},
+			{#tall_wide: {
+				width:{$subtract:[=view.width, 16]}, 
+				height:{$multiply: [=view.width, 0.66] },
+				display: { if: =options.show_image, then:inherit },
+				padding: [0, 8, 8, 8]
+			}},
+			{#skinny_wide: {
+				height:{$multiply: [=view.width, 0.35] },
+				display: { if: =options.show_image_skinny, then:inherit }
+			}},
+			{.invisible: { display:none }},
+			{#small_headline: { display: { if: =options.small_headline, then:inherit }}},
+			{#medium_headline: { display: { if: =options.medium_headline, then:inherit }}},
+			{#large_headline: { display: { if: =options.large_headline, then:inherit }}}
+			]
 		}</style>
-	<panel id="headline">
-		<p id="small_headline" class="invisible"><span embed="headline" /><mark class="key" /></p>
-		<p id="medium_headline" class="invisible"><span embed="headline" /><mark class="key" /></p>
-		<p id="large_headline" class="invisible"><span embed="headline" /><mark class="key" /></p>
-	</panel>
-	<box id="image_container">
-		<image embed="summary-image"/>
+	<box id="wrapper">
+		<image id="tall_wide" class="invisible" embed="summary-image"/>
+		<image id="skinny_wide" class="invisible" embed="summary-image"/>
+		<panel id="headline">
+			<p id="small_headline" class="invisible"><span embed="headline" /><mark class="key" /></p>
+			<p id="medium_headline" class="invisible"><span embed="headline" /><mark class="key" /></p>
+			<p id="large_headline" class="invisible"><span embed="headline" /><mark class="key" /></p>
+		</panel>
+		<panel id="body_container">
+	        <panel id="body">
+	            <p class="byline" embed="byline"/>
+	            <panel class="body" embed="body"/>
+	        </panel>
+	    </panel>
 	</box>
-	<panel id="body_container">
-        <panel id="body">
-            <p class="byline" embed="byline"/>
-            <panel class="body" embed="body"/>
-        </panel>
-    </panel>
-
 </jpml>

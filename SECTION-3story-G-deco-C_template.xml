@@ -2,20 +2,18 @@
 	<style src="SECTION-stylesheet.ejs" />
 	<style>{ 
 		if: =portrait, then: {
-			#b1:	{ frame: [10, 10, 555, 176], options:{large_headline:true} },
-			#deco:	{ frame: [3, 188, 571, 434], options:{normal_headline:true} },
-			#b2:	{ frame: [590, 10, 167, 306], options:{small_headline:true} },
-			#b3:	{ frame: [590, 325, 167, 295], options:{small_headline:true} },
-			#l4:	{ frame: [587, 320, 183, 1] },
+			#b1:	{ frame: [0, 11, 572, 176], options:{large_headline:true, no_border:true} },
+			#deco:	{ frame: [0, 188, 572, 432], options:{normal_headline:true} },
+			#b2:	{ frame: [583, 11, 183, 306], options:{small_headline:true, no_border:true} },
+			#b3:	{ frame: [583, 325, 183, 295], options:{small_headline:true} },
 			#h1: {options:{highlight_dark:true}},
 			#h2: {options:{highlight_dark:true}}
 			
 		}, else: {
-			#b1:	{ frame: [11, 8, 555, 176], options:{large_headline:true} },
-			#deco:	{ frame: [11, 188, 571, 434], options:{normal_headline:true} },
-			#b2:	{ frame: [599, 8, 167, 306], options:{small_headline:true} },
-			#b3:	{ frame: [599, 328, 167, 295], options:{small_headline:true} },
-			#l4:	{ frame: [593, 320, 183, 1] },
+			#b1:	{ frame: [11, 11, 572, 176], options:{large_headline:true, no_border:true} },
+			#deco:	{ frame: [11, 188, 572, 432], options:{normal_headline:true} },
+			#b2:	{ frame: [594, 11, 183, 306], options:{small_headline:true, no_border:true} },
+			#b3:	{ frame: [594, 328, 183, 285], options:{small_headline:true} },
 			#h1: {options:{highlight_dark:true}},
 			#h2: {options:{highlight_dark:true}}
 			
@@ -25,12 +23,9 @@
 	<box id="b1" embed="article" module="TOP-IMAGE_module.xml" />
 	<box id="deco" embed="article" module="DECO_module.xml" />
 	<box id="b2" embed="article" module="TOP-IMAGE_module.xml" />
-	<box id="l4" class="line" />
 	<box id="b3" embed="article" module="TOP-IMAGE_module.xml" />
 	<box id="h1" embed="article" module="HIGHLIGHTS_module.xml" />
-	<box id="l1" class="line" />
 	<box id="h2" embed="article" module="HIGHLIGHTS_module.xml" />
-	<box id="l2" class="line" />
 	<box id="ad_background" class="ad_dark">
 		<box id="highlight_ad" embed="advertisement" />
 	</box>

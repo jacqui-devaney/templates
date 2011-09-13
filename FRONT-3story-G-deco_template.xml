@@ -3,16 +3,15 @@
 	<style> {
 		
 		if: =portrait, then: {
-			#b1:			{ frame: [204, 37, 551, 155], options:{large_headline:true} },
-			#deco:			{ frame: [194, 195, 571, 450], options:{normal_headline:true} },
-			#b2:			{ frame: [204, 653, 261, 221], options:{small_headline:true} },
-			#b3:			{ frame: [486, 648, 281, 241] },
-			#l1: 			{ frame: [194, 648, 281, 1] }	
+			#b1:			{ frame: [194, 37, 571, 135], options:{large_headline:true, no_border:true} },
+			#deco:			{ frame: [195, 175, 569, 450], options:{normal_headline:true} },
+			#b2:			{ frame: [194, 628, 280, 243], options:{small_headline:true} },
+			#b3:			{ frame: [486, 628, 280, 243] }
 		}, else: {
-			#b1:			{ frame: [210, 33, 551, 140], options:{large_headline:true} },
-			#deco:			{ frame: [205, 175, 571, 445], options:{normal_headline:true} },
-			#b2:			{ frame: [797, 33, 217, 185], options:{small_headline:true} },
-			#b3:			{ frame: [787, 225, 237, 404] }
+			#b1:			{ frame: [205, 33, 571, 140], options:{large_headline:true, no_border:true} },
+			#deco:			{ frame: [206, 175, 569, 445], options:{normal_headline:true} },
+			#b2:			{ frame: [787, 33, 238, 185], options:{small_headline:true, no_border:true} },
+			#b3:			{ frame: [787, 225, 238, 404] }
 			
 		}
 	
@@ -24,7 +23,6 @@
 	<box id="ad" embed="advertisement" />
 	<box id="b1" embed="article" module="TOP-IMAGE_module.xml" />
 	<box id="deco" embed="article" module="DECO_module.xml" options="G_size" />
-	<box id="l1" class="line" />
 	<box id="b2" embed="article" module="TOP-IMAGE_module.xml" />
 	<box id="b3" embed="article" module="AHED_module.xml" />
 	

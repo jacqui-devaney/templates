@@ -2,16 +2,16 @@
 	<style src="SECTION-stylesheet.ejs" />
 	<style>{ 
 		if: =portrait, then: {
-			#b1:	{ frame: [0, 11, 572, 176], options:{large_headline:true, no_border:true} },
-			#deco:	{ frame: [0, 188, 572, 432], options:{normal_headline:true} },
+			#b1:	{ frame: [0, 11, 571, 176], options:{large_headline:true, no_border:true} },
+			#deco:	{ frame: [0, 188, 571, 432], options:{normal_headline:true} },
 			#b2:	{ frame: [583, 11, 183, 306], options:{small_headline:true, no_border:true} },
 			#b3:	{ frame: [583, 325, 183, 295], options:{small_headline:true} },
 			#h1: {options:{highlight_dark:true}},
 			#h2: {options:{highlight_dark:true}}
 			
 		}, else: {
-			#b1:	{ frame: [11, 11, 572, 176], options:{large_headline:true, no_border:true} },
-			#deco:	{ frame: [11, 188, 572, 432], options:{normal_headline:true} },
+			#b1:	{ frame: [11, 11, 571, 176], options:{large_headline:true, no_border:true} },
+			#deco:	{ frame: [11, 188, 571, 432], options:{normal_headline:true} },
 			#b2:	{ frame: [594, 11, 183, 306], options:{small_headline:true, no_border:true} },
 			#b3:	{ frame: [594, 328, 183, 285], options:{small_headline:true} },
 			#h1: {options:{highlight_dark:true}},

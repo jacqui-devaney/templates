@@ -7,13 +7,30 @@
 		{.body: { 
             column-count: {$divide: [=view.width, {$multiply:[250, =scale.dpi]}]},
             column-gutter: 20,
-			column-height:balance
+			column-height:balance,
+			min-height:200
         }},
 		{#mediabucket: {frame: [8, 0, 262, 197] }},
 		{if: =portrait, then: {
 			#mediabucket_container:	{ frame: [280, 0, 275, 207]  }
         }, else: {
 			#mediabucket_container:	{ frame: [578, 0, 275, 207]  }
+		}},
+		{#filler: {
+			position: relative,
+			top: 10,
+			left: 0,
+			right: 0,
+			bottom: 0,
+			min-height: 0,
+			background-color: "rgba(.5, .5, 1, .5)"        
+		}},
+		{#article_advertisement: {
+			min-height: 206,            
+			min-width: 555,            
+			anchor-x: center,            
+			anchor-y: middle        
+
 		}}
 		
 		]
@@ -28,6 +45,9 @@
 		</box>
 		<panel class="body" embed="body"/>
     </panel>
+	<box id="filler">
+		<box id="article_advertisement" embed="advertisement"/>
+	</box>
 </jpml>
 
 

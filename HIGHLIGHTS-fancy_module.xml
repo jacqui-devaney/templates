@@ -9,7 +9,7 @@
 					anchor-x: right,
 					width: 80,
 					height: 84,
-					padding: [ 0, 0, 0, 0 ]
+					padding: [ 0, 0, 0, 10 ]
 				}
 			
 			}, else: {
@@ -25,7 +25,7 @@
 				}
 				
 			}},
-			{.highlight_body: {
+						{.highlight_body: {
 				text-overflow: "\u00bb",
 	        	text-align: justify
 			}},
@@ -56,15 +56,16 @@
     }</style>
     
 	<box id="portrait">
-	    <p class="offduty_highlight_type" embed="type" />
-	    <p class="magazine_highlight_type" embed="type" />
 	    <box id="image_container">
 	        <image class="A_size" embed="summary-image" />
 	    </box>
+	    <p class="offduty_highlight_type" embed="type" />
+	    <p class="magazine_highlight_type" embed="type" />
 	    <p class="magazine_highlight_flashline" embed="flashline" />
 	    <p class="offduty_highlight_flashline" embed="flashline" />
 	    <p class="magazine_highlight_headline"><span embed="headline" /><mark class="key" /></p>
 	    <p class="offduty_highlight_headline"><span embed="headline" /><mark class="key" /></p>
+		<p>foo foo foo foo foo foo foo foo foo foo foo foo</p>
 		<panel embed="body" class="magazine_highlight_body"/>
 		<panel embed="body" class="offduty_highlight_body"/>
 	</box>

@@ -107,7 +107,7 @@
 		color:#948464
 	},
 	.body: {
-		font-name:DJ5Exchange,
+		font-name:DJ5Exchange-Medium,
 		text-indent:20,
 		font-size:15,
 		line-height:18,
@@ -123,7 +123,7 @@
 		font-name:DJ5Exchange-MediumItalic
 		
 	},
-	tag-tagline: {
+	cite: {
 		font-name:DJ5Exchange-MediumItalic		
 	},
 	.byline: {
@@ -195,7 +195,7 @@
 		paragraph-padding: [ 0, 0, 6, 0 ]
 	},
 	.continuation_body: {
-		font-name:DJ5Exchange,
+		font-name:DJ5Exchange-Medium,
 		font-size:15,
 		text-indent:20,
 		line-height:17,
@@ -236,7 +236,7 @@
 		paragraph-padding: [ 4, 0, 3, 0 ]
 	},
 	.highlight_body: {
-		font-name:DJ5Exchange,
+		font-name:DJ5Exchange-Medium,
 		font-size:14,
 		line-height:16,
 		text-align:left,
@@ -284,7 +284,7 @@
 		text-transform:uppercase
 	},
 	.offduty_highlight_flashline: {
-		font-name:Stainless-Regular,
+		font-name:Stainless-Light,
 		font-size:18,
 		line-height:20,
 		color:#999
@@ -414,6 +414,9 @@
 		anchor-y:top,
 		anchor-x:left,
 		width:=view.width
+	},
+	#mediabucket_container: {
+		display: {if: =page.mediabucket, then:inherit, else:none}
 	}
 	
 }

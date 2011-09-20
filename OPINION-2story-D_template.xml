@@ -3,7 +3,7 @@
     <style>{
 		if: =portrait, then: {
 			#b1:	{ frame: [8, 10, 460, 600], options:{rando:true} },
-			#b2:	{ frame: [486, 10, 280, 600], options:{small_headline:true, show_image:true, no_border:true} },
+			#b2:	{ frame: [486, 10, 278, 600], options:{small_headline:true, show_image:true, no_border:true} },
 			#h2:	{options:{highlight_light:true}},
 			#h1:	{options:{highlight_light:true}}
 		}, else: {

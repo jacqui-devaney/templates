@@ -3,13 +3,13 @@
 	<style>{
 		if: =portrait, then: {
 			#b1:	{ frame: [8, 8, 556, 280], options:{large_headline:true} },
-			#b2:	{ frame: [0, 296, 572, 320], options:{large_headline:true} },
+			#b2:	{ frame: [0, 296, 571, 320], options:{large_headline:true} },
 			#b3:	{ frame: [583, 8, 183, 280], options:{small_headline:true, no_border:true} },
 			#b4:	{ frame: [583, 296, 183, 320], options:{small_headline:true, show_image:true} },
 			#h2: {options:{highlight_dark:true}}
 		}, else: {
 			#b1:	{ frame: [11, 10, 556, 280], options:{large_headline:true} },
-			#b2:	{ frame: [3, 296, 572, 320], options:{large_headline:true} },
+			#b2:	{ frame: [3, 296, 571, 320], options:{large_headline:true} },
 			#b3:	{ frame: [594, 10, 183, 280], options:{small_headline:true, no_border:true} },
 			#b4:	{ frame: [594, 296, 183, 320], options:{small_headline:true, show_image:true} },
 			#h2: {options:{highlight_dark:true}}

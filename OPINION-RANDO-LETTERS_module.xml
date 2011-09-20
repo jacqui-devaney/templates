@@ -34,7 +34,7 @@
 	<panel id="articles">
 		<p class="opinion_headline"><span embed="headline" /><mark class="key" /></p>
 		<p class="letters_headline"><span embed="headline" /><mark class="key" /></p>
-		<p class="opinion_dek"><span embed="subhed" /></p>
+		<h2 class="opinion_dek" embed="subhed" />
 		<panel class="body" embed="body" />
 	</panel>
 	

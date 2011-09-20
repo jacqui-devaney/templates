@@ -2,6 +2,9 @@
 	<style src="GLOBAL_MODULES-stylesheet.ejs" />
 	<style>{
         $join: [
+			{jpml: {
+				padding:[0, 0, 0, 8]
+			}},
 			{ $switch: [
 				{ if: =options.no_border, then: {
 					#wrapper: {
@@ -18,15 +21,21 @@
 					}
 					}}
 			]},
-			{#body_container: {
-				anchor-x:right
+			
+			{#body: { 
+	            column-count: {$divide: [=view.width, {$multiply:[450, =scale.dpi]}]},
+	            column-gutter: 15,
+				padding: [10, 0, 0, 0]
+	        }},
+			
+			{#image_container: { 
+				anchor-x: left,
+				anchor-y:bottom,
+				width: 359,
+				height: 239,
+				padding: [ 0, 15, 10, 0 ]
 			}},
 			
-	        {image: { 
-				width:359, 
-				anchor-x:left,
-				padding: [0, 8, 0, 0]
-			}},
 			{.invisible: { display:none }},
 			{#small_headline: { display: { if: =options.small_headline, then:inherit }}},
 			{#medium_headline: { display: { if: =options.medium_headline, then:inherit }}},
@@ -41,15 +50,15 @@
 			<p id="small_headline" class="invisible"><span embed="headline" /><mark class="key" /></p>
 			<p id="medium_headline" class="invisible"><span embed="headline" /><mark class="key" /></p>
 			<p id="large_headline" class="invisible"><span embed="headline" /><mark class="key" /></p>
-			<p id="bignews_huge_headline" class="invisible"><span embed="headline" /><mark class="key" /></p>
-			<p id="bignews_big_headline" class="invisible"><span embed="headline" /><mark class="key" /></p>
-		</panel>
-		<image embed="summary-image"/>
-		<panel id="body_container">
-	        <panel id="body">
-	            <p class="byline" embed="byline"/>
-	            <panel class="body" embed="body"/>
-	        </panel>
-	    </panel>
+			<p id="bignews_huge_headline" class="invisible"><span embed="headline" /></p>
+			<p id="bignews_big_headline" class="invisible"><span embed="headline" /></p>
+		</panel> 
+	</box>   
+	<box id="image_container">
+	    <image embed="summary-image" />
 	</box>
+	<panel id="body">
+		<p class="byline" embed="byline"/>
+		<panel class="body" embed="body"/>
+	</panel>
 </jpml>

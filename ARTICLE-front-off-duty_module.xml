@@ -9,16 +9,21 @@
             column-gutter: 20,
 			column-height:balance
         }},
-		{image: {
-			frame: [0, 0, 768, 620]
-		}}
+		{#mediabucket: {frame: [3, 3, 570, 612] }},
+		{if: =portrait, then: {
+            #mediabucket_container:	{ frame: [0, 0, 582, 623]  }
+        }, else: {
+        	#mediabucket_container:	{ frame: [287, 0, 582, 623]  }
+        }}
 		]
     }</style>
 	
-    <image embed="summary-image" />
+	<box id="mediabucket_container">
+		<box id="mediabucket" embed="mediabucket" />
+	</box>
 	<panel id="header_top">
         <p class="offduty_article_headline"><span embed="headline"/><mark class="key"/></p>
-		<p class="offduty_article_subhed" embed="subhed" />
+		<h2 class="offduty_article_subhed" embed="subhed" />
     </panel>
 	<panel id="body_container">
 	    <p class="byline" embed="byline"/>

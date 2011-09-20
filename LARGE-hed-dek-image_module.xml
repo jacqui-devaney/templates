@@ -6,7 +6,7 @@
 	}</style>
 	<panel>
 		<p id="bignews_big_headline"><span embed="headline" /><mark class="key" /></p>
-		<p class="large_dek"><span embed="subhed" /></p>
+		<h2 class="large_dek"><span embed="subhed" /></h2>
 	</panel>
 	<image embed="summary-image"/>
 </jpml>

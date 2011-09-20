@@ -22,11 +22,10 @@
         	text-align: justify
 		}
     }</style>
-    
-    <p class="highlight_flashline" embed="flashline" />
     <box id="image_container">
         <image class="A_size" embed="summary-image" />
     </box>
+    <p class="highlight_flashline" embed="flashline" />
     <p class="highlight_headline"><span embed="headline" /><mark class="key" /></p>
    	<p class="highlight_byline" embed="byline" />
 	<panel embed="body" class="highlight_body"/>

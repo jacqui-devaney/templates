@@ -56,7 +56,7 @@
 	    <panel id="top_container">
 	        <p class="ahed_headline"><span embed="headline"/><mark class="key"/></p>
 	        <p id="stars"><mark class="ahed_stars" /></p>
-	        <p class="ahed_subhed" embed="subhed"/>
+	        <h2 class="ahed_subhed" embed="subhed"/>
 	    </panel>
 	    <panel id="bottom_container">
 	        <box id="image_container"><image class="A_size" embed="summary-image"/></box>

@@ -21,7 +21,13 @@
 					}
 					}}
 			]},
-		
+			{#icon: {             
+				width: 100,
+				height: 100,
+				anchor-x: left,
+				anchor-y: bottom,
+				background-color: white
+			}},
 			{image: { 
 				padding: [ 8, 0 ]
 			}},
@@ -44,6 +50,9 @@
 				<p id="deco_bottom_headline" class="invisible"><span embed="headline" /><mark class="key" /></p>
 				<p id="deco_small_headline" class="invisible"><span embed="headline" /><mark class="key" /></p>			
 				<panel embed="body" class="deco_caption" />
+			</box>
+			<box id="icon">
+				<p>Media Icon</p>
 			</box>
 			<image embed="summary-image" />
 		</panel>

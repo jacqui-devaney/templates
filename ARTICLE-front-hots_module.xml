@@ -23,8 +23,10 @@
     <panel id="header_top">
         <p class="hots_flashline" embed="flashline"/>
         <p class="article_headline"><span embed="headline"/><mark class="key"/></p>
-		<p class="article_subhed" embed="subhed" />
+		<h2 class="article_subhed" embed="subhed" />
     </panel>
+	<panel class="hr" />
+
 	<panel id="body_container">
 		<box id="mediabucket_container">
 			<box id="mediabucket" embed="mediabucket" />

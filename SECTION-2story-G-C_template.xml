@@ -2,12 +2,12 @@
 	<style src="SECTION-stylesheet.ejs" />
 	<style>{ 
 		if: =portrait, then: {
-			#b1:	{ frame: [0, 10, 572, 605], options:{large_headline:true, show_image:true, no_border:true} },
+			#b1:	{ frame: [0, 10, 571, 605], options:{large_headline:true, show_image:true, no_border:true} },
 			#b2:	{ frame: [583, 10, 183, 605], options:{small_headline:true, show_image:true, no_border:true} },
 			#h1: {options:{highlight_dark:true}},
 			#h2: {options:{highlight_dark:true}}
 		}, else: {
-			#b1:	{ frame: [11, 10, 572, 605], options:{large_headline:true, show_image:true, no_border:true} },
+			#b1:	{ frame: [11, 10, 571, 605], options:{large_headline:true, show_image:true, no_border:true} },
 			#b2:	{ frame: [594, 10, 183, 605], options:{small_headline:true, show_image:true, no_border:true} },
 			#h1: {options:{highlight_dark:true}},
 			#h2: {options:{highlight_dark:true}}

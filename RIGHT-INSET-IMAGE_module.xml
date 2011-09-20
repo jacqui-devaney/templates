@@ -25,7 +25,8 @@
 		{#image_container: { 
 			anchor-x: right,
 			width: 76,
-			height: 84
+			height: 84,
+			padding: [ 0, 0, 0, 10 ]
 		}},
         {#headline: { padding: [ 0, 4, 0, 0 ] }},
 		{.invisible: { display:none }},
@@ -38,11 +39,11 @@
  		<box id="image_container">
 			<image embed="summary-image" class="A_size"/>
 		</box>
-		<box id="headline">
+		<panel id="headline">
 			<p id="small_headline" class=""><span embed="headline" /><mark class="key" /></p>
 			<p id="medium_headline" class="invisible"><span embed="headline" /><mark class="key" /></p>
 			<p id="large_headline" class="invisible"><span embed="headline" /><mark class="key" /></p>
-		</box>
+		</panel>
 		<panel id="body_container">
 			<panel id="body">
 	            <p class="byline" embed="byline"/>

@@ -20,7 +20,7 @@
      which is not supported in conjunction with the ads template. The "suffix" type
      is used to render that last page. -->
 	<page template="ARTICLE-continuation-rando-no-ads_template.xml" type="suffix">
-		<link id="view" module="ARTICLE-continuation-ads-background_module.xml"/>
+		<link id="view" module="ARTICLE-continuation-no-ads_module.xml"/>
 	</page>	
 	
     <!-- Optionally, any pages with the "coda" type are displayed after the 

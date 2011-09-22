@@ -1,4 +1,5 @@
 <jpml id="SECTION-1story-P-1highlight">
+	<style src="GLOBAL-stylesheet.ejs" />
 	<style src="SECTION-stylesheet.ejs" />
 	<style>{
 		
@@ -16,7 +17,7 @@
 	<box id="b1" embed="article" module="LARGE-hed-dek-image_module.xml" />
 	<box id="h3" embed="article" module="HIGHLIGHTS_module.xml" />
 	<box id="ad_background" class="ad_dark">
-		<box id="highlight_ad" embed="advertisement" />
+		<box id="highlight_ad" class="ad-rectangle" embed="advertisement" />
 	</box>
 	
 </jpml>

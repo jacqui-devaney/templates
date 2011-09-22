@@ -1,4 +1,5 @@
 <jpml id="OPINION-4story-E">
+	<style src="GLOBAL-stylesheet.ejs" />
 	<style src="OPINION-stylesheet.ejs" />
     <style>
 		{ $join: [
@@ -43,7 +44,7 @@
     <box id="h2" embed="article" module="HIGHLIGHTS_module.xml" />
     <box id="l2" class="line" />    
     	<box id="ad_background" class="ad_light">
-		<box id="highlight_ad" embed="advertisement" />
+		<box id="highlight_ad" class="ad-rectangle" embed="advertisement" />
 	</box>
 
     

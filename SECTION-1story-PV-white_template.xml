@@ -1,4 +1,5 @@
 <jpml id="SECTION-1story-PV-white">
+	<style src="GLOBAL-stylesheet.ejs" />
 	<style src="SECTION-stylesheet.ejs" />
 	<style>{
 		if: =portrait, then: {
@@ -13,7 +14,7 @@
 	<box id="h5" embed="article" module="HIGHLIGHTS_module.xml" />
 	<box id="h6" embed="article" module="HIGHLIGHTS_module.xml" />
 	<box id="ad_background_PV">
-		<box id="highlight_ad" embed="advertisement" />
+		<box id="highlight_ad" class="ad-rectangle" embed="advertisement" />
 	</box>
 	
 

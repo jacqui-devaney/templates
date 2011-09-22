@@ -1,5 +1,6 @@
 <jpml id="ARTICLE-continuation-ads">
 	<style src="GLOBAL_MODULES-stylesheet.ejs" />
+	<style src="GLOBAL-stylesheet.ejs" />
 	<style>{
 		$join: [
 		{#header_top: { padding:[0, 0, 8, 5] }},

@@ -1,5 +1,6 @@
 <jpml id="LARGE-hed-dek-image">
 	<style src="GLOBAL_MODULES-stylesheet.ejs" />
+	<style src="GLOBAL-stylesheet.ejs" />
 	<style>{
 		image: { width:749, height:499 },
 		jpml: {padding: [0, 8]}

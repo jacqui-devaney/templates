@@ -1,5 +1,6 @@
 <jpml id="RIGHT-INSET-IMAGE">
 	<style src="GLOBAL_MODULES-stylesheet.ejs" />
+	<style src="GLOBAL-stylesheet.ejs" />
 	<style>{
         #body: { 
             column-count: {$divide: [=view.width, {$multiply:[250, =scale.dpi]}]},

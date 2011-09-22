@@ -1,5 +1,6 @@
 <jpml id="CONTINUATION-dynamic">
 	<style src="GLOBAL_MODULES-stylesheet.ejs" />
+	<style src="GLOBAL-stylesheet.ejs" />
     <style>{
 		jpml: { padding: [ 0, 8, 0, 0] },
         #content: { padding: [4] },

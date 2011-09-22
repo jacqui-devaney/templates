@@ -1,4 +1,5 @@
 <jpml id="SECTION-4story-D-C-marketdata">
+	<style src="GLOBAL-stylesheet.ejs" />
 	<style src="SECTION-stylesheet.ejs" />
 	<style>{
 		if: =portrait, then: {
@@ -25,7 +26,7 @@
 	</box>
 	<box id="h2" embed="article" module="HIGHLIGHTS_module.xml" />
 	<box id="ad_background" class="ad_dark">
-		<box id="highlight_ad" embed="advertisement" />
+		<box id="highlight_ad" class="ad-rectangle" embed="advertisement" />
 	</box>
 
 	

@@ -1,5 +1,6 @@
 <jpml id="TOP-IMAGE">
 	<style src="GLOBAL_MODULES-stylesheet.ejs" />
+	<style src="GLOBAL-stylesheet.ejs" />
 	<style>{
 		$join: [
 			{ $switch: [

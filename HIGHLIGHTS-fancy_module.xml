@@ -1,5 +1,6 @@
 <jpml id="HIGHLIGHTS-fancy">
 	<style src="GLOBAL_MODULES-stylesheet.ejs" />
+	<style src="GLOBAL-stylesheet.ejs" />
     <style>{
 		$join: [
 			{if: =portrait, then: {

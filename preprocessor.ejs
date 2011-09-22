@@ -47,7 +47,10 @@
 					less-than: =view.height,
 					then: { $divide: [=view.height, 876] },
 					else: { $divide: [=view.height, 620] }
-				}
+				},
+
+				small: { if: =device.size, less-than: 8.8 },
+				large: { if: =device.size, at-least: 8.8 }
 			},
 
 			ad: {
@@ -61,22 +64,22 @@
 					] },
 					".wsj.com/",
 					{ $switch: [
-						{ if: =issue.section, equals: FRONT_SECTION, then: front },
-						{ if: =issue.section, equals: OPINION, then: opinion },
-						{ if: =issue.section, equals: MARKETPLACE, then: marketplace },
-						{ if: =issue.section, equals: MONEY_AND_INVESTING, then: money },
-						{ if: =issue.section, equals: WEEKEND_JOURNAL, then: weekendjournal },
-						{ if: =issue.section, equals: FRIDAY_JOURNAL, then: fridayjournal },
-						{ if: =issue.section, equals: PERSONAL_JOURNAL, then: personaljournal },
-						{ if: =issue.section, equals: THE_JOURNAL_REPORT, then: journalreport },
-						{ if: =issue.section, equals: WHATS_NEWS, then: whatsnews },
-						{ if: =issue.section, equals: NEW_YORK, then: greaterny },
-						{ if: =issue.section, equals: BUSINESS_AND_FINANCE, then: businessfinance },
-						{ if: =issue.section, equals: REVIEW, then: review },
-						{ if: =issue.section, equals: OFF_DUTY, then: offduty },
-						{ if: =issue.section, equals: CAMPAIGN, then: campaign },
-						{ if: =issue.section, equals: WSJ_MAGAZINE, then: magazine },
-						{ if: =issue.section, equals: SPECIAL_REPORT, then: specialreport },	
+						{ if: =page.section, equals: FRONT_SECTION, then: front },
+						{ if: =page.section, equals: OPINION, then: opinion },
+						{ if: =page.section, equals: MARKETPLACE, then: marketplace },
+						{ if: =page.section, equals: MONEY_AND_INVESTING, then: money },
+						{ if: =page.section, equals: WEEKEND_JOURNAL, then: weekendjournal },
+						{ if: =page.section, equals: FRIDAY_JOURNAL, then: fridayjournal },
+						{ if: =page.section, equals: PERSONAL_JOURNAL, then: personaljournal },
+						{ if: =page.section, equals: THE_JOURNAL_REPORT, then: journalreport },
+						{ if: =page.section, equals: WHATS_NEWS, then: whatsnews },
+						{ if: =page.section, equals: NEW_YORK, then: greaterny },
+						{ if: =page.section, equals: BUSINESS_AND_FINANCE, then: businessfinance },
+						{ if: =page.section, equals: REVIEW, then: review },
+						{ if: =page.section, equals: OFF_DUTY, then: offduty },
+						{ if: =page.section, equals: CAMPAIGN, then: campaign },
+						{ if: =page.section, equals: WSJ_MAGAZINE, then: magazine },
+						{ if: =page.section, equals: SPECIAL_REPORT, then: specialreport },	
 						"default"
 					] },
 					"/"					

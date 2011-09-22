@@ -1,5 +1,6 @@
 <jpml id="OPINION-RANDO-LETTERS">
 	<style src="GLOBAL_MODULES-stylesheet.ejs" />
+	<style src="GLOBAL-stylesheet.ejs" />
 	<style>{
 		$join: [		
 			{ #rando_header: { display: { if: =options.rando, else:none }} },

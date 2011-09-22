@@ -1,5 +1,6 @@
 <jpml id="HIGHLIGHTS">
 	<style src="GLOBAL_MODULES-stylesheet.ejs" />
+	<style src="GLOBAL-stylesheet.ejs" />
     <style>{
 		jpml: {
 				background-color: { $switch: [

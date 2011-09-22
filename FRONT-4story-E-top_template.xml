@@ -1,4 +1,5 @@
 <jpml id="FRONT-4story-E-top">
+	<style src="GLOBAL-stylesheet.ejs" />
 	<style src="FRONT-stylesheet.ejs" />
 	<style> {
 		if: =portrait, then: {
@@ -19,8 +20,7 @@
 	
 	<box id="marketstrap" embed="marketstrap" />
 	<box id="whatsnews" embed="whatsnews" />
-	<box id="whatsnews_wide" embed="whatsnews" />
-	<box id="ad" embed="advertisement" />
+	<box id="ad" class="ad-rectangle" embed="advertisement" />
 	<box id="b1" embed="article" module="TOP-IMAGE_module.xml" />
 	<box id="b2" embed="article" module="TOP-IMAGE_module.xml" />
 	<box id="b3" embed="article" module="TOP-IMAGE_module.xml" />

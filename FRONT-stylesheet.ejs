@@ -11,15 +11,24 @@
 		pixels-per-point-y: { if: =intent.template, then: =scale.pagey, else: =scale.dpi }
 	}},
 	{if: =portrait, then: {
-		#marketstrap:	{ frame: [0, 0, 768, 26] },
-		#whatsnews:		{ frame: [3, 34, 183, 642] },
-		#whatsnews_wide: { frame: [3, 34, 550, 642] },
-		#ad:			{ frame: [3, 677, 183, 197] }
-	}, else: {
-		#marketstrap:	{ frame: [0, 0, 1024, 26] },
-		#whatsnews:		{ frame: [11, 34, 183, 388] },
-		#whatsnews_wide: { frame: [3, 34, 550, 642] },
-		#ad:			{ frame: [11, 422, 183, 197] }
+			#marketstrap:	{ frame: [0, 0, 768, 26] },
+			#whatsnews:		{ frame: [3, 34, 183, 642], options: { expanded-frame: [
+				{$multiply:[=scale.pagex, 3]}, 
+				{$multiply:[=scale.pagey, 34]}, 
+				{$multiply:[=scale.pagex, 550]}, 
+				{$multiply:[=scale.pagey, 642]}
+			] } },
+			#ad_background: { frame: [3, 677, 183, 195]}
+		}, else: {
+			#marketstrap:	{ frame: [0, 0, 1024, 26] },
+			#whatsnews:		{ frame: [11, 34, 183, 388], options: { expanded-frame: [
+				{$multiply:[=scale.pagex, 3]}, 
+				{$multiply:[=scale.pagey, 34]}, 
+				{$multiply:[=scale.pagex, 550]}, 
+				{$multiply:[=scale.pagey, 642]}
+			] } },
+			#ad_background: { frame: [11, 422, 183, 195]}
 	}}
+	
 	]
 }

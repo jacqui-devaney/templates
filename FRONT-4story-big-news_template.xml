@@ -1,4 +1,4 @@
-<jpml id="FRONT-4story-big-news">
+<jpml id="FRONT-4story-big-news_template">
 	<style src="GLOBAL-stylesheet.ejs" />
 	<style src="FRONT-stylesheet.ejs" />
 	<style> {
@@ -8,16 +8,14 @@
 			#b3:			{ frame: [194, 621, 377, 248], options:{small_headline:true} },
 			#b4:			{ frame: [582, 365, 183, 298], options:{no_image:true} },
 			#whatsnews:		{ frame: [10, 365, 183, 522] },
-			#whatsnews_wide:		{ frame: [10, 363, 550, 852] },
-			#ad:			{ frame: [582, 672, 183, 197] }
+			#ad_background:			{ frame: [582, 672, 183, 197] }
 		}, else: {
 			#b1:			{ frame: [11, 34, 1002, 310], options:{bignews_big_headline:true, no_border:true} },
 			#b2:			{ frame: [205, 352, 183, 256], options:{small_headline:true} },
 			#b3:			{ frame: [399, 352, 183, 256], options:{small_headline:true} },
 			#b4:			{ frame: [593, 352, 183, 256], options:{no_image:true} },
 			#whatsnews:		{ frame: [11, 353, 183, 266] },
-			#whatsnews_wide:		{ frame: [11, 353, 550, 591] },
-			#ad:			{ frame: [809, 385, 183, 197] }
+			#ad_background:			{ frame: [809, 385, 183, 197] }
 		}
 
 	} </style>

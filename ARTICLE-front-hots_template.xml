@@ -1,4 +1,4 @@
-<jpml id="ARTICLE-front-hots">
+<jpml id="ARTICLE-front-hots_template">
     <style>{
         if: =portrait, then: {
             #view: { frame: [10, 10, 573, 879] },

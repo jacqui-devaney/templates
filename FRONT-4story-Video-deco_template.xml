@@ -20,7 +20,9 @@
 	
 	<box id="marketstrap" embed="marketstrap" />
 	<box id="whatsnews" embed="whatsnews" />
-	<box id="ad" class="ad-rectangle" embed="advertisement" />
+	<box id="ad_background">
+		<box id="ad" class="ad-rectangle" embed="advertisement" />
+	</box>
 	<box id="b1" embed="article" module="TOP-IMAGE_module.xml" />
 	<box id="deco" embed="article" module="DECO_module.xml" />
 	<box id="b2" embed="article" module="TOP-IMAGE_module.xml" />

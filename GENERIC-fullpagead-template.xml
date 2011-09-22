@@ -1,6 +1,27 @@
 <jpml id="ad-jpml">
-    <style>{
-        #b1 : { frame: [0, 0, =page.width, =page.height] }
+    <style src="GLOBAL-stylesheet.ejs" />
+	<style>{
+		$join: [
+        {if: =portrait, then: {
+			#b1: {frame: [0, 0, {$switch: [
+				{if: =scale.small, then: 600},
+				{if: =scale.large, then: 768}
+			]}, 	{$switch: [
+					{if: =scale.small, then: 702},
+					{if: =scale.large, then: 899}
+				]}]}
+		},
+		else: {
+			#b1: {frame: [0, 0, {$switch: [
+				{if: =scale.small, then: 828},
+				{if: =scale.large, then: 1024}
+			]}, 	{$switch: [
+					{if: =scale.small, then: 488},
+					{if: =scale.large, then: 643}
+				]}]}
+		}}]
     }</style>
-    <box id="b1" embed="fullpagead" />
+
+    <box id="b1" class="ad-fullpage" embed="advertisement" />
 </jpml>
+

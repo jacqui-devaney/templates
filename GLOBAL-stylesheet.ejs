@@ -47,6 +47,27 @@
 			{if: =scale.small, then: 137},
 			{if: =scale.large, then: 175}
 		]}
+	}},
+	{#article_advertisement: {
+		anchor-x:center,
+		anchor-y:middle,
+		pixels-per-point-x: 1,
+		pixels-per-point-y: 1,
+		width: {$switch: [
+			{if: =scale.small, then: 434},
+			{if: =scale.large, then: 555}
+		]},
+		height: {$switch: [
+			{if: =scale.small, then: 161},
+			{if: =scale.large, then: 206}
+		]}
+		
+	}},
+	{if: =portrait, then: {
+		#ad_container:	{ frame: [0, 642, 555, 206]  }
+		},
+	else: {
+		#ad_container:	{ frame: [290, 383, 565, 206]  }
 	}}
 	
 	]

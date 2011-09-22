@@ -1,4 +1,4 @@
-<jpml id="FRONT-4story-F-deco">
+<jpml id="FRONT-4story-E-deco">
     <style src="GLOBAL-stylesheet.ejs"/>
     <style src="FRONT-stylesheet.ejs"/>
     <style>{
@@ -20,7 +20,9 @@
     }</style>
     <box id="marketstrap" embed="marketstrap" />
     <box id="whatsnews" embed="whatsnewswide" />
-    <box id="ad" class="ad-rectangle" embed="advertisement" />
+	<box id="ad_background">
+		<box id="ad" class="ad-rectangle" embed="advertisement" />
+	</box>
     <box id="b1" embed="article" module="TOP-IMAGE_module.xml" />    
     <box id="deco" embed="article" module="DECO_module.xml" />
     <box id="b3" embed="article" module="TOP-IMAGE_module.xml" />

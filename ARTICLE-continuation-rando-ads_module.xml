@@ -16,9 +16,7 @@
 			width:270,
 			padding:[0, 0, 10, 0]
 		}},
-		{#article_advertisement: {frame: [0, 8, 555, 206] }},
 		{if: =portrait, then: {
-            #ad_container:	{ frame: [0, 642, 555, 206]  },
 			#rando_padding: {
 				width:270,
 				anchor-x:center, 
@@ -27,7 +25,6 @@
 				display: {if: =page.number, equals:1, then:inherit, else:none}
 			}
         }, else: {
-        	#ad_container:	{ frame: [290, 383, 585, 206]  },
 			#rando_padding: {
 				width:270,
 				left:440, 

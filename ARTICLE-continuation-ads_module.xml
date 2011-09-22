@@ -10,18 +10,10 @@
             column-gutter: 20,
 			column-height:balance
         }},
-		{#article_advertisement: {frame: [0, 8, 555, 206] }},
-		{if: =portrait, then: {
-            #ad_container:	{ frame: [0, 642, 555, 206]  }
-        }, else: {
-        	#ad_container:	{ frame: [290, 383, 585, 206]  }
-		}},
 		{#mediabucket: {frame: [8, 0, 262, 197] }},
 		{if: =portrait, then: {
-            #ad_container:	{ frame: [0, 642, 555, 206]  },
 			#mediabucket_container:	{ frame: [280, 0, 275, 207]  }
         }, else: {
-        	#ad_container:	{ frame: [296, 383, 575, 206]  },
 			#mediabucket_container:	{ frame: [578, 0, 275, 207]  }
 		}}
 		]
@@ -35,7 +27,7 @@
 			<box id="mediabucket" embed="mediabucket" />
 		</box>
         <box id="ad_container">
-			<box id="article_advertisement" embed="advertisement" />
+			<box id="article_advertisement" class="ad-twocolumn" embed="advertisement" />
 		</box>
     	<panel class="body" embed="body" />
 	</panel>

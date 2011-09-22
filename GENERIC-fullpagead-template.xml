@@ -21,7 +21,8 @@
 				]}]}
 		}}]
     }</style>
-
-    <box id="b1" class="ad-fullpage" embed="advertisement" />
+	<box if="fullpage_container">
+    	<box id="b1" class="ad-fullpage" embed="advertisement" />
+	</box>
 </jpml>
 

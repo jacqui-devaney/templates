@@ -1,8 +1,6 @@
 {
 	$join: [
 	{jpml: {
-		font-size: 12,
-		line-height: 15,
 		image-scale: { if: =intent.template, then: {$max:[=scale.pagex,=scale.pagey]}, else: =scale.dpi },
 		text-scale: =scale.dpi,
 		pixels-per-point-x: { if: =intent.template, then: =scale.pagex, else: =scale.dpi },
@@ -12,8 +10,6 @@
 	{.ad-rectangle: { options: { zone: {$join: [=ad.prefix, rectangle]} } } },
 	{.ad-twocolumn: { options: { zone: {$join: [=ad.prefix, twocolumn]} } } },
 	{.ad-fullpage: { options: { zone: {$join: [=ad.prefix, fullpage]} } } },
-
-
 
 	{ .ad_dark: {background-color: #e4e4e4}},
 	{ .ad_light: {background-color: #f6f5f3}},
@@ -59,6 +55,18 @@
 		height: {$switch: [
 			{if: =scale.small, then: 161},
 			{if: =scale.large, then: 206}
+		]}
+		
+	}},
+	{#fullpage_ad: {
+		anchor-x:center,
+		anchor-y:middle,
+		pixels-per-point-x: 1,
+		pixels-per-point-y: 1,
+		width: {$switch: [ {if: =scale.small, then: 600}, {if: =scale.large, then: 768} ]},
+		height: {$switch: [
+			{if: =scale.small, then: 1024},
+			{if: =scale.large, then: 899}
 		]}
 		
 	}},

@@ -1,12 +1,4 @@
 {
-    jpml: {
-		font-size: 12,
-		line-height: 15,
-		image-scale: { if: =intent.template, then: {$max:[=scale.pagex,=scale.pagey]}, else: =scale.dpi },
-		text-scale: =scale.dpi,
-		pixels-per-point-x: { if: =intent.template, then: =scale.pagex, else: =scale.dpi },
-		pixels-per-point-y: { if: =intent.template, then: =scale.pagey, else: =scale.dpi }
-	},
 	#b1: { options: { showSubsection : true } },
 
     #b2: { options: { 

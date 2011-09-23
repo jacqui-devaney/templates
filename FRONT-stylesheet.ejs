@@ -1,15 +1,7 @@
 {
 	
 	$join: [
-	{.line: { background-color:#b1aca1 }},
-	{jpml: {
-		font-size: 12,
-		line-height: 15,
-		image-scale: { if: =intent.template, then: {$max:[=scale.pagex,=scale.pagey]}, else: =scale.dpi },
-		text-scale: =scale.dpi,
-		pixels-per-point-x: { if: =intent.template, then: =scale.pagex, else: =scale.dpi },
-		pixels-per-point-y: { if: =intent.template, then: =scale.pagey, else: =scale.dpi }
-	}},
+	{.line: { background-color:#b1aca1}},
 	{if: =portrait, then: {
 			#marketstrap:	{ frame: [0, 0, 768, 26] },
 			#whatsnews:		{ frame: [3, 34, 183, 642], options: { expanded-frame: [

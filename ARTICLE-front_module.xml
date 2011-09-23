@@ -4,9 +4,9 @@
 	<style>{
 		$join: [
 		{#header_top: { padding:[0, 0, 8, 5] }},
-		{#body_container : { padding: [8, 5, 0, 5]}},
-		{.body: { 
-            column-count: {$divide: [=view.width, {$multiply:[250, =scale.dpi]}]},
+		{#body_container: { 
+            padding: [8, 5, 0, 5],
+			column-count: {$divide: [=view.width, {$multiply:[250, =scale.dpi]}]},
             column-gutter: 20,
 			column-height:balance
         }},
@@ -38,9 +38,6 @@
         <panel class="body" embed="body"/>
 	    
 	</panel>
-    <box id="continues_label">
-		<p><mark id="continues" /></p>
-	</box>
 	
 </jpml>
 

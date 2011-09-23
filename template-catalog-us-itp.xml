@@ -24,7 +24,7 @@
 
 		<template name="SECTION-4story-2D-C_template.xml" section="MARKETPLACE" min="6" usage="front" />
 		<template name="SECTION-4story-D-C_template.xml" section="BUSINESS_AND_FINANCE,MONEY_AND_INVESTING" min="6" usage="front" />
-		<template name="SECTION-4story-smallG-deco_template.xml" section="MARKETPLACE,NEW_YORK,PERSONAL_JOURNAL" min="6" deco="true" usage="front" />
+		<template name="SECTION-4story-smallG-deco_template.xml" section="MARKETPLACE,NEW_YORK,PERSONAL_JOURNAL,MONEY_AND_INVESTING" min="6" deco="true" usage="front" />
 		<template name="SECTION-4story-smallG-top_template.xml" section="MARKETPLACE,NEW_YORK" min="6" usage="front" />
 		<template name="SECTION-3story-G_template.xml" section="BUSINESS_AND_FINANCE,FRIDAY_JOURNAL,LIFE_AND_STYLE,MARKETPLACE,MONEY_AND_INVESTING,OFF_DUTY,REVIEW,THE_JOURNAL_REPORT,WSJ_MAGAZINE" min="5" usage="front" />
 		<template name="SECTION-3story-G-deco-C_template.xml" section="NEW_YORK,PERSONAL_JOURNAL,MARKETPLACE" deco="true" min="5" usage="front" />
@@ -52,10 +52,10 @@
 		<template name="CONTINUATION-generic-1_template.xml" min="1" usage="continuation" />
 		<template name="CONTINUATION-fancy-3OV-7_template.xml" min="7" usage="continuation" section="OFF_DUTY" deco="true" page="2" />
 		<template name="CONTINUATION-fancy-smallG-OV-6_template.xml" min="6" usage="continuation" section="OFF_DUTY" deco="true" page="2" />
-		<template name="CONTINUATION-fancy-6_template.xml" min="6" usage="continuation" deco="true" page="2" />
-		<template name="CONTINUATION-fancy-bottom-6_template.xml" min="6" usage="continuation" deco="true" page="2" />
-		<template name="CONTINUATION-fancy-8_template.xml" min="8" usage="continuation" deco="true" page="2" />
-		<template name="CONTINUATION-fancy-bottom-8_template.xml" min="8" usage="continuation" deco="true" page="2" />
+		<template name="CONTINUATION-fancy-6_template.xml" min="6" usage="continuation" SECTION="FRIDAY_JOURNAL,FRONT_SECTION,MONEY_AND_INVESTING,NEW_YORK,OFF_DUTY,PERSONAL_JOURNAL,WSJ_MAGAZINE" deco="true" page="2" />
+		<template name="CONTINUATION-fancy-bottom-6_template.xml" min="6" SECTION="JOURNAL_REPORT,MARKETPLACE,OPINION,REVIEW,WSJ_MAGAZINE" usage="continuation" deco="true" page="2" />
+		<template name="CONTINUATION-fancy-8_template.xml" min="8" SECTION="FRONT_SECTION,OFF_DUTY" usage="continuation" deco="true" page="2" />
+		<template name="CONTINUATION-fancy-bottom-8_template.xml" SECTION="OPINION" min="8" usage="continuation" deco="true" page="2" />
 		<template name="WHATSNEWS-dummy_template.xml" usage="front" min="1" section="WHATS_NEWS" />
 		<template name="WHATSNEWS-dummy_template.xml" usage="continuation" min="1" section="WHATS_NEWS" />
 		

@@ -23,7 +23,7 @@
 			#rando_padding: {
 				width:270,
 				anchor-x:left, 
-				top:408,
+				top: {if: =page.mediabucket, then: 408, else: 3},
 				padding:[0, 0, 20, 0]
 			}
 			

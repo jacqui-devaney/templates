@@ -3,7 +3,6 @@
 	<style src="GLOBAL-stylesheet.ejs" />
 	<style>{
 		$join: [
-		{#header_top: { padding:[0, 0, 8, 5] }},
 		{#body_container : { padding: [8, 5, 0, 5]}},
 		{.body: { 
             column-count: {$divide: [=view.width, {$multiply:[250, =scale.dpi]}]},
@@ -16,7 +15,9 @@
 			width:270,
 			padding:[0, 0, 10, 0]
 		}},
+		{#mediabucket: {frame: [8, 0, 262, 197] }},
 		{if: =portrait, then: {
+			#mediabucket_container:	{ frame: [280, 0, 275, 207]  },
 			#rando_padding: {
 				width:270,
 				anchor-x:center, 
@@ -25,6 +26,7 @@
 				display: {if: =page.number, equals:1, then:inherit, else:none}
 			}
         }, else: {
+			#mediabucket_container:	{ frame: [578, 0, 275, 207]  },
 			#rando_padding: {
 				width:270,
 				left:440, 
@@ -40,8 +42,11 @@
 		<p><mark id="continued" /></p>
 	</box>
 	<panel id="body_container">
+		<box id="mediabucket_container">
+			<box id="mediabucket" embed="mediabucket" />
+		</box>
 		<box id="ad_container">
-			<box id="article_advertisement" embed="advertisement" />
+			<box id="article_advertisement" class="ad-twocolumn" embed="advertisement" />
 		</box>
         <box id="rando_padding">
 			<box id="rando_container">

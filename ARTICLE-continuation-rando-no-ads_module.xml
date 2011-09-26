@@ -4,7 +4,7 @@
 	<style>{
 		$join: [
 		{#header_top: { padding:[0, 0, 8, 5] }},
-		{#body_container : { padding: [8, 5, 0, 5]}},
+		{#body_container : { padding: [8, 15, 0, 15]}},
 		{.body: { 
             column-count: {$divide: [=view.width, {$multiply:[250, =scale.dpi]}]},
             column-gutter: 20,
@@ -39,7 +39,9 @@
 			right: 0,
 			bottom: 0,
 			min-height: 0,
-			background-color: "rgba(.5, .5, 1, .5)"        
+			border-image: url(articleBackground.png),
+			border-slice: [16, 0, 0, 0],
+			border-width: [16,0, 0, 0] 
 		}},
 		{#article_advertisement: {
 			min-height: 206,            
@@ -47,6 +49,9 @@
 			anchor-x: center,            
 			anchor-y: middle        
 
+		}},
+		{#continued_label: {
+			padding: [0, 0, 0, 15]
 		}}
 		
 		]
@@ -65,7 +70,7 @@
 		<panel class="body" embed="body"/>
     </panel>
 	<box id="filler">
-		<box id="article_advertisement" embed="advertisement"/>
+		<box id="article_advertisement" class="ad-twocolumn" embed="advertisement"/>
 	</box>
 	
 </jpml>

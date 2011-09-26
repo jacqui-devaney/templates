@@ -4,9 +4,9 @@
 	<style>{
 		$join: [
 		{#header_top: { padding:[0, 0, 8, 5] }},
-		{#body_container : { padding: [4, 5, 0, 5]}},
-		{.body: { 
-            column-count: {$divide: [=view.width, {$multiply:[250, =scale.dpi]}]},
+		{#body_container: { 
+			padding: [4, 5, 0, 5],
+            column-count:{if: =portrait, then:{$divide: [=view.width, {$multiply:[250, =scale.dpi]}]}, else: 1},
             column-gutter: 20,
 			column-height:balance
         }},
@@ -14,7 +14,7 @@
 		{if: =portrait, then: {
             #mediabucket_container:	{ frame: [0, 0, 582, 623]  }
         }, else: {
-        	#mediabucket_container:	{ frame: [287, 0, 582, 623]  }
+        	#mediabucket_container:	{ frame: [0, 0, 582, 623]  }
         }}
 		]
     }</style>

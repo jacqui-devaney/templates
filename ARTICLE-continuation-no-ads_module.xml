@@ -3,8 +3,7 @@
 	<style src="GLOBAL-stylesheet.ejs" />
 	<style>{
 		$join: [
-		{#header_top: { padding:[0, 0, 8, 5] }},
-		{#body_container : { padding: [8, 5, 0, 5]}},
+		{#body_container : { padding: [8, 15, 0, 15]}},
 		{.body: { 
             column-count: {$divide: [=view.width, {$multiply:[250, =scale.dpi]}]},
             column-gutter: 20,
@@ -13,7 +12,7 @@
         }},
 		{#mediabucket: {frame: [8, 0, 262, 197] }},
 		{if: =portrait, then: {
-			#mediabucket_container:	{ frame: [280, 0, 275, 207]  }
+			#mediabucket_container:	{ frame: [290, 0, 275, 207]  }
         }, else: {
 			#mediabucket_container:	{ frame: [578, 0, 275, 207]  }
 		}},
@@ -24,7 +23,10 @@
 			right: 0,
 			bottom: 0,
 			min-height: 0,
-			background-color: "rgba(.5, .5, 1, .5)"        
+			background-image: url(articleBackground.png),
+			border-image:url(shadow.png),
+			border-width: [1, 0, 0, 0],
+			border-color:#b1aca1        
 		}},
 		{#article_advertisement: {
 			min-height: 206,            
@@ -32,6 +34,9 @@
 			anchor-x: center,            
 			anchor-y: middle        
 
+		}},
+		{#continued_label: {
+			padding: [0, 0, 0, 15]
 		}}
 		
 		]

@@ -1,11 +1,11 @@
 <jpml id="ARTICLE-continuation-no-ads_template">
     <style>{
         if: =portrait, then: {
-            #view: { frame: [15, 10, 563, 879] },
+            #view: { frame: [0, 10, 595, 889] },
 			#index: { frame: [594, 0, 173, 899]}
 			
         }, else: {
-            #view : { frame: [10, 10, 863, 623] },
+            #view : { frame: [0, 10, 885, 633] },
 			#index: { frame: [884, 0, 139, 643]}  
         }
     }</style>

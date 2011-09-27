@@ -6,15 +6,14 @@
         #content: { padding: [4] },
 		#strap: {
             display: { if:=options.hide_strap, then:none, else:default },
-			padding: [4]
+			padding: [4, 4, 0, 4]
         },
 		#image_container: { 
 			anchor-x: right,
 			width: 84,
 			height: 84,
-			padding: [ 0, 0, 4, 8 ]
-			
-			}
+			padding: [ 0, 0, 4, 8 ],
+			display:{ if:=scale.small, then:none, else:default }
 		}
     }</style>
     

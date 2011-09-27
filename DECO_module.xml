@@ -14,6 +14,14 @@
 					}
 		
 				}},
+				{ if: =options.bottom_border, then: {
+					#wrapper: {
+					border-width: [0, 0, 1, 0],
+					border-color: #b1aca1,
+					padding: [0, 0, 8, 0]
+					}
+		
+				}},
 				{ if: true, then: {
 					#wrapper: {
 						border-width: [1, 0, 0, 0],
@@ -51,9 +59,6 @@
 				<p id="deco_bottom_headline" class="invisible"><span embed="headline" /><mark class="key" /></p>
 				<p id="deco_small_headline" class="invisible"><span embed="headline" /><mark class="key" /></p>			
 				<panel embed="body" class="deco_caption" />
-			</box>
-			<box id="icon">
-				<p>Media Icon</p>
 			</box>
 			<image embed="summary-image" />
 		</panel>

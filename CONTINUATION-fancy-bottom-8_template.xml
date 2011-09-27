@@ -9,9 +9,7 @@
             #b5 : { frame: [256, 231, 256, 231], options: {hide_strap: {if:=articles.b5.subsection, equals:=articles.b4.subsection}} },
             #b6 : { frame: [512, 0, 256, 231], options: {hide_strap: {if:=articles.b6.subsection, equals:=articles.b5.subsection}} },
             #b7 : { frame: [512, 231, 256, 231], options: {hide_strap: {if:=articles.b7.subsection, equals:=articles.b6.subsection}} },
-            #l1 : { frame: [264, 472, 513, 1] },
-			.line: { background-color:#b1aca1 },
-            #deco : { frame: [272, 480, 491, 395], options: {normal_headline:true, no_line:true} }
+            #deco : { frame: [272, 480, 491, 395], options: {normal_headline:true} }
         }, else: {
 	        #b1 : { frame: [0, 0, 256, 418] },
 	        #b2 : { frame: [0, 420, 256, 197], options: {hide_strap: {if:=articles.b2.subsection, equals:=articles.b1.subsection}} },
@@ -20,9 +18,7 @@
 	        #b5 : { frame: [256, 420, 256, 197], options: {hide_strap: {if:=articles.b5.subsection, equals:=articles.b4.subsection}} },
 	        #b6 : { frame: [512, 0, 256, 217], options: {hide_strap: {if:=articles.b6.subsection, equals:=articles.b5.subsection}} },
             #b7 : { frame: [768, 0, 256, 217], options: {hide_strap: {if:=articles.b7.subsection, equals:=articles.b6.subsection}} },
-            #l1 : { frame: [511, 217, 513, 1] },
-			.line: { background-color:#b1aca1 },
-	        #deco : { frame: [521, 225, 491, 395], options: {normal_headline:true, no_line:true} }
+	        #deco : { frame: [521, 225, 491, 395], options: {normal_headline:true} }
         }
     }</style>
     <box id="b1" embed="article" module="CONTINUATION-dynamic_module.xml" />    
@@ -33,7 +29,6 @@
     <box id="b6" embed="article" module="CONTINUATION-dynamic_module.xml" />
     <box id="b7" embed="article" module="CONTINUATION-dynamic_module.xml" />
     <box id="deco" embed="article" module="DECO_module.xml" />
-	<box id="l1" class="line" />
 
 </jpml>
 

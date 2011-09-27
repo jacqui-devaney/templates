@@ -1,5 +1,6 @@
 <jpml id="CONTINUATION-fancy-6_template">
 	<style src="CONTINUATION-stylesheet.ejs" /> 
+	<style src="GLOBAL-stylesheet.ejs" /> 
 	<style>{
         if: =portrait, then: {
             #b1 : { frame: [0, 0, 256, 411] },
@@ -7,18 +8,14 @@
             #b3 : { frame: [256, 419, 256, 456], options: {hide_strap: {if:=articles.b3.subsection, equals:=articles.b2.subsection}} },
             #b4 : { frame: [512, 419, 256, 230], options: {hide_strap: {if:=articles.b4.subsection, equals:=articles.b3.subsection}} },
             #b5 : { frame: [512, 649, 256, 226], options: {hide_strap: {if:=articles.b5.subsection, equals:=articles.b4.subsection}} },
-            #l1 : { frame: [255, 411, 513, 1] },
-			.line: { background-color:#b1aca1 },
-            #deco : { frame: [264, 0, 491, 395], options: {normal_headline:true, no_line:true} }
+            #deco : { frame: [264, 0, 491, 395], options: {normal_headline:true, bottom_border:true} }
         }, else: {
 	        #b1 : { frame: [0, 0, 256, 619] },
 	        #b2 : { frame: [256, 0, 256, 406], options: {hide_strap: {if:=articles.b2.subsection, equals:=articles.b1.subsection}} },
 	        #b3 : { frame: [256, 419, 256, 200], options: {hide_strap: {if:=articles.b3.subsection, equals:=articles.b2.subsection}} },
 	        #b4 : { frame: [519, 419, 256, 200], options: {hide_strap: {if:=articles.b4.subsection, equals:=articles.b3.subsection}} },
 	        #b5 : { frame: [775, 419, 256, 200], options: {hide_strap: {if:=articles.b5.subsection, equals:=articles.b4.subsection}} },
-	        #l1 : { frame: [511, 411, 513, 1] },
-			.line: { background-color:#b1aca1 },
-	        #deco : { frame: [521, 0, 491, 395], options: {normal_headline:true, no_line:true} }
+	        #deco : { frame: [521, 0, 491, 395], options: {normal_headline:true, bottom_border:true} }
         }
     }</style>
     <box id="b1" embed="article" module="CONTINUATION-dynamic_module.xml" />    
@@ -27,7 +24,6 @@
     <box id="b4" embed="article" module="CONTINUATION-dynamic_module.xml" />
     <box id="b5" embed="article" module="CONTINUATION-dynamic_module.xml" />
     <box id="deco" embed="article" module="DECO_module.xml" />
-	<box id="l1" class="line" />
 
 </jpml>
 

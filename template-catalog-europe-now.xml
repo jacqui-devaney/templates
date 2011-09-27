@@ -1,0 +1,229 @@
+<catalog  preprocessor="preprocessor.ejs">
+	<templates>
+		<template 
+			name="FRONT-4story-Video-deco_template.xml" 
+			title="4 story - Video deco" 
+			section="FRONT_SECTION" 
+			min="4" 
+			deco="true" 
+			usage="front" 
+		/>
+		<template 
+			name="OPINION-6story-D_template.xml" 
+			title="6 story - D photo" 
+			section="OPINION" 
+			min="8" 
+			usage="front" 
+		/>
+		<template 
+			name="OPINION-6story-E_template.xml" 
+			title="6 story - E photo" 
+			section="OPINION" 
+			min="8" 
+			usage="front" 
+		/>
+		<template 
+			name="OPINION-5story-D_template.xml" 
+			title="5 story - D photo" 
+			section="OPINION" 
+			min="7" 
+			usage="front" 
+		/>
+		<template 
+			name="OPINION-5story-E_template.xml" 
+			title="5 story - E photo" 
+			section="OPINION" 
+			min="7" 
+			usage="front" 
+		/>
+		<template 
+			name="OPINION-4story-D_template.xml" 
+			title="4 story - D photo" 
+			section="OPINION" 
+			min="6" 
+			usage="front" 
+		/>
+		<template 
+			name="OPINION-4story-E_template.xml" 
+			title="4 story - E photo" 
+			section="OPINION" 
+			min="6" 
+			usage="front" 
+		/>
+		<template 
+			name="OPINION-3story-D_template.xml" 
+			title="3 story - D photo" 
+			section="OPINION" 
+			min="5" 
+			usage="front" 
+		/>
+		<template 
+			name="OPINION-3story-E_template.xml" 
+			title="3 story - E photo" 
+			section="OPINION" 
+			min="5" 
+			usage="front" 
+		/>
+		<template 
+			name="OPINION-2story-D_template.xml" 
+			title="2 story - D photo" 
+			section="OPINION" 
+			min="4" 
+			usage="front" 
+		/>
+		<template 
+			name="OPINION-2story-E_template.xml" 
+			title="2 story - E photo" 
+			section="OPINION" 
+			min="4" 
+			usage="front" 
+		/>
+
+		<template 
+			name="SECTION-4story-2D-C_template.xml" 
+			title="4 story - 2D photos - 1C photo" 
+			section="MARKETPLACE" 
+			min="6" 
+			usage="front" 
+		/>
+		<template 
+			name="SECTION-4story-D-C_template.xml" 
+			title="4 story - Plain" 
+			section="BUSINESS_AND_FINANCE,MONEY_AND_INVESTING" 
+			min="6" 
+			usage="front" 
+		/>
+		<template 
+			name="SECTION-3story-G_template.xml" 
+			title="3 story - G photo" 
+			section="REVIEW,BUSINESS_AND_FINANCE,FRIDAY_JOURNAL,OFF_DUTY,REVIEW" 
+			min="5" 
+			usage="front" 
+		/>
+		<template 
+			name="SECTION-2story-G-C_template.xml" 
+			title="2 story - G photo - C photo" 
+			section="EUROPE,FRIDAY_JOURNAL,LIFE_AND_STYLE,OFF_DUTY,PERSONAL_JOURNAL,THE_JOURNAL_REPORT,WEEKEND_JOURNAL,BUSINESS_AND_FINANCE" 
+			min="4" 
+			usage="front" 
+		/>
+		<template 
+			name="CONTINUATION-generic-12_template.xml" 
+			min="12" 
+			usage="continuation" 
+		/>
+		<template 
+			name="CONTINUATION-generic-11_template.xml" 
+			min="11" 
+			usage="continuation" 
+		/>
+		<template 
+			name="CONTINUATION-generic-10_template.xml" 
+			min="10" 
+			usage="continuation" 
+		/>
+		<template 
+			name="CONTINUATION-generic-9_template.xml" 
+			min="9" 
+			usage="continuation" 
+		/>
+		<template 
+			name="CONTINUATION-generic-8_template.xml" 
+			min="8" 
+			usage="continuation" 
+		/>
+		<template 
+			name="CONTINUATION-generic-7_template.xml" 
+			min="7" 
+			usage="continuation" 
+		/>
+		<template 
+			name="CONTINUATION-generic-6_template.xml" 
+			min="6" 
+			usage="continuation" 
+		/>
+		<template 
+			name="CONTINUATION-generic-5_template.xml" 
+			min="5" 
+			usage="continuation" 
+		/>
+		<template 
+			name="CONTINUATION-generic-4_template.xml" 
+			min="4" 
+			usage="continuation" 
+		/>
+		<template 
+			name="CONTINUATION-generic-3_template.xml" 
+			min="3" 
+			usage="continuation" 
+		/>
+		<template 
+			name="CONTINUATION-generic-2_template.xml" 
+			min="2" 
+			usage="continuation" 
+		/>
+		<template 
+			name="CONTINUATION-generic-1_template.xml" 
+			min="1" 
+			usage="continuation" 
+		/>
+		<template 
+			name="CONTINUATION-fancy-6_template.xml" 
+			min="6" 
+			usage="continuation" 
+			title="" 
+			section="WSJ_MAGAZINE" 
+			deco="true" 
+			page="2" 
+		/>
+		<template 
+			name="CONTINUATION-fancy-bottom-6_template.xml" 
+			min="6" 
+			title="" 
+			section="WSJ_MAGAZINE" 
+			usage="continuation" 
+			deco="true" 
+			page="2" 
+		/>
+		<template 
+			name="WHATSNEWS-dummy_template.xml" 
+			usage="front" 
+			min="1" 
+			title="" 
+			section="WHATS_NEWS" 
+		/>
+		<template 
+			name="WHATSNEWS-dummy_template.xml" 
+			usage="continuation" 
+			min="1" 
+			title="" 
+			section="WHATS_NEWS" 
+		/>
+		
+		<template 
+			name="GENERIC-fullpagead-template.xml" 
+			usage="ads" 
+		/>
+	</templates>
+
+	<article-page-plans>
+		<article pages="ARTICLE-pages.xml" 
+			usage="ads" 
+		/>
+		<article pages="ARTICLE-pages-hots.xml" 
+		/>
+		<article pages="ARTICLE-pages-letters.xml" 
+		/>
+		<article pages="ARTICLE-pages-off-duty.xml" 
+		/>
+		<article pages="ARTICLE-pages-rando.xml" 
+		/>
+	</article-page-plans>
+	
+	<display-properties>
+		<ads value="2; 3; 3,5; 3,6; 3,6,8; 3,6,9; 3,6,9,11; 3,6,9,12; 3,6,9,12,14; 3,6,9,12,15" 
+		/>
+	</display-properties>
+	
+</catalog>
+

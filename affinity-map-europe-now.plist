@@ -14,11 +14,14 @@
 			<array>
 				<string>Mobile Tablet Highlight1A</string>
 				<string>Mobile Tablet Highlight1B</string>
-				<string>Ahead of the Tape</string>
-				<string>Weekend Investor</string>
 				<string>Heard on the Street</string>
-				<string>Technology</string>
-				<string>Digits</string>
+				<string>The Outlook</string>
+				<string>The Game</string>
+				<string>Ahead of the Tape</string>
+				<string>Business Technology</string>
+				<string>Tech Journal</string>
+				<string>Media &amp;amp; Marketing</string>
+				<string>Advertising</string>
 			</array>
 		</dict>
 		<key>SECTION-3story-G_template</key>
@@ -43,11 +46,14 @@
 			<array>
 				<string>Mobile Tablet Highlight1A</string>
 				<string>Mobile Tablet Highlight1B</string>
-				<string>Ahead of the Tape</string>
-				<string>Weekend Investor</string>
 				<string>Heard on the Street</string>
-				<string>Technology</string>
-				<string>Digits</string>
+				<string>The Outlook</string>
+				<string>The Game</string>
+				<string>Ahead of the Tape</string>
+				<string>Business Technology</string>
+				<string>Tech Journal</string>
+				<string>Media &amp;amp; Marketing</string>
+				<string>Advertising</string>
 			</array>
 		</dict>
 		<key>SECTION-4story-D-C_template</key>
@@ -136,44 +142,15 @@
 			</array>
 			<key>h1</key>
 			<array>
-				<string>Mobile Tablet Highlight1A</string>
-				<string>Mobile Tablet Highlight1B</string>
-				<string>Mobile App Blog</string>
-				<string>The Middle Seat</string>
-				<string>Health Journal</string>
-				<string>Heart Beat</string>
-				<string>The Informed Patient</string>
-				<string>The Couch</string>
-				<string>World Cup</string>
-				<string>Food &amp; Drink</string>
-				<string>Theater</string>
-				<string>Television</string>
-				<string>Eyes on the Road</string>
-				<string>Tricks of the Trade</string>
-				<string>Lab Journal</string>
-				<string>Aches &amp; Claims</string>
-				<string>Research Report</string>
-				<string>Work &amp; Family</string>
-				<string>Cranky Consumer</string>
+				<string>Film Review</string>
+				<string>Arts &amp; Entertainment</string>
+				<string>Sightings</string>
 			</array>
 			<key>h2</key>
 			<array>
-				<string>Mobile Tablet Highlight2A</string>
-				<string>Mobile Tablet Highlight2B</string>
-				<string>Mobile Photo Journal</string>
-				<string>The Mossberg Solution</string>
-				<string>Worth It</string>
-				<string>Film Review</string>
-				<string>Bonds</string>
-				<string>Common Sense</string>
-				<string>Sports</string>
-				<string>Arts &amp; Entertainment</string>
-				<string>Sightings</string>
-				<string>Second Acts</string>
-				<string>Managing Your Career</string>
-				<string>Pay Grade</string>
-				<string>Moving On</string>
-				<string>Off the Beaten Track</string>
+				<string>Food &amp; Drink</string>
+				<string>Theater</string>
+				<string>Television</string>
 			</array>
 		</dict>
 		<key>SECTION-3story-G_template</key>
@@ -184,44 +161,15 @@
 			</array>
 			<key>h1</key>
 			<array>
-				<string>Mobile Tablet Highlight1A</string>
-				<string>Mobile Tablet Highlight1B</string>
-				<string>Mobile App Blog</string>
-				<string>Food &amp;amp; Drink</string>
-				<string>Eyes on the Road</string>
-				<string>Tricks of the Trade</string>
-				<string>The Couch</string>
-				<string>World Cup</string>
-				<string>Theater</string>
-				<string>Television</string>
-				<string>The Middle Seat</string>
-				<string>Health Journal</string>
-				<string>Heart Beat</string>
-				<string>The Informed Patient</string>
-				<string>Lab Journal</string>
-				<string>Aches &amp;amp; Claims</string>
-				<string>Research Report</string>
-				<string>Work &amp;amp; Family</string>
-				<string>Cranky Consumer</string>
+				<string>Film Review</string>
+				<string>Arts &amp;amp; Entertainment</string>
+				<string>Sightings</string>
 			</array>
 			<key>h2</key>
 			<array>
-				<string>Mobile Tablet Highlight2A</string>
-				<string>Mobile Tablet Highlight2B</string>
-				<string>Mobile Photo Journal</string>
-				<string>Bonds</string>
-				<string>Common Sense</string>
-				<string>Film Review</string>
-				<string>Moving On</string>
-				<string>Sports</string>
-				<string>Arts &amp;amp; Entertainment</string>
-				<string>Sightings</string>
-				<string>The Mossberg Solution</string>
-				<string>Worth It</string>
-				<string>Second Acts</string>
-				<string>Managing Your Career</string>
-				<string>Pay Grade</string>
-				<string>Off the Beaten Track</string>
+				<string>Food &amp;amp; Drink</string>
+				<string>Theater</string>
+				<string>Television</string>
 			</array>
 		</dict>
 	</dict>
@@ -294,7 +242,7 @@
 		<dict>
 			<key>deco</key>
 			<array>
-				<string>Mobile Vid of the Day</string>
+				<string>Mobile Vid of the Day Europe</string>
 			</array>
 		</dict>
 		<key>FRONT-5story-F-deco_template</key>
@@ -459,12 +407,31 @@
 		<dict>
 			<key>b1</key>
 			<array>
+				<false/>
 			</array>
 			<key>h1</key>
 			<array>
+				<string>Mobile Tablet Highlight1A</string>
+				<string>Mobile Tablet Highlight1B</string>
+				<string>Tina Gaudoin on Style</string>
+				<string>On Style</string>
+				<string>European Life</string>
+				<string>Golf Journal</string>
+				<string>Cultural Conversation</string>
+				<string>Film Review</string>
+				<string>Middle Seat</string>
 			</array>
 			<key>h2</key>
 			<array>
+				<string>Mobile Tablet Highlight2A</string>
+				<string>Mobile Tablet Highlight2B</string>
+				<string>The Quirk</string>
+				<string>Will Lyons on Wine</string>
+				<string>Bruce Palling on Food</string>
+				<string>Unsung Perfectionist</string>
+				<string>On Wine</string>
+				<string>Bonds</string>
+				<string>Rumble Seat</string>
 			</array>
 		</dict>
 		<key>SECTION-3story-G_template</key>
@@ -486,65 +453,27 @@
 		<dict>
 			<key>b1</key>
 			<array>
-				<false/>
 			</array>
 			<key>deco</key>
 			<array>
-				<string>Deco Summary Liondoor Section 1</string>
-				<string>Deco Summary Liondoor Marketplace</string>
 			</array>
 			<key>h1</key>
 			<array>
-				<string>Mobile Tablet Highlight1A</string>
-				<string>Mobile Tablet Highlight1B</string>
-				<string>Mobile App Blog</string>
-				<string>Business Technology</string>
-				<string>Tech Journal</string>
-				<string>Digits</string>
-				<string>Telecommunications</string>
-				<string>Technology</string>
-				<string>Digits Blog</string>
 			</array>
 			<key>h2</key>
 			<array>
-				<string>Mobile Tablet Highlight2A</string>
-				<string>Mobile Tablet Highlight2B</string>
-				<string>Executive Education</string>
-				<string>Advertising</string>
-				<string>Theory</string>
-				<string>Small Business</string>
-				<string>Earnings</string>
-				<string>Media &amp;amp; Marketing</string>
 			</array>
 		</dict>
 		<key>SECTION-3story-G_template</key>
 		<dict>
 			<key>b1</key>
 			<array>
-				<false/>
 			</array>
 			<key>h1</key>
 			<array>
-				<string>Mobile Tablet Highlight1A</string>
-				<string>Mobile Tablet Highlight1B</string>
-				<string>Mobile App Blog</string>
-				<string>Business Technology</string>
-				<string>Tech Journal</string>
-				<string>Digits</string>
-				<string>Telecommunications</string>
-				<string>Technology</string>
-				<string>Digits Blog</string>
 			</array>
 			<key>h2</key>
 			<array>
-				<string>Mobile Tablet Highlight2A</string>
-				<string>Mobile Tablet Highlight2B</string>
-				<string>Executive Education</string>
-				<string>Earnings</string>
-				<string>Advertising</string>
-				<string>Theory</string>
-				<string>Small Business</string>
-				<string>Media &amp;amp; Marketing</string>
 			</array>
 		</dict>
 		<key>SECTION-4story-2D-C_template</key>
@@ -555,25 +484,15 @@
 			</array>
 			<key>h1</key>
 			<array>
-				<string>Mobile Tablet Highlight1A</string>
-				<string>Mobile Tablet Highlight1B</string>
-				<string>Mobile App Blog</string>
-				<string>Business Technology</string>
-				<string>Tech Journal</string>
+				<string>Theory &amp;amp; Practice</string>
+				<string>Small Business</string>
 				<string>Digits</string>
-				<string>Telecommunications</string>
-				<string>Technology</string>
-				<string>Digits Blog</string>
 			</array>
 			<key>h2</key>
 			<array>
-				<string>Mobile Tablet Highlight2A</string>
-				<string>Mobile Tablet Highlight2B</string>
-				<string>Executive Education</string>
-				<string>Earnings</string>
-				<string>Advertising</string>
-				<string>Theory</string>
-				<string>Small Business</string>
+				<string>Advert</string>
+				<string>Business Technology</string>
+				<string>Technology Journal</string>
 				<string>Media &amp;amp; Marketing</string>
 			</array>
 		</dict>
@@ -581,35 +500,15 @@
 		<dict>
 			<key>b1</key>
 			<array>
-				<false/>
 			</array>
 			<key>deco</key>
 			<array>
-				<string>Deco Summary Liondoor Section 1</string>
-				<string>Deco Summary Liondoor Marketplace</string>
 			</array>
 			<key>h1</key>
 			<array>
-				<string>Mobile Tablet Highlight1A</string>
-				<string>Mobile Tablet Highlight1B</string>
-				<string>Mobile App Blog</string>
-				<string>Business Technology</string>
-				<string>Tech Journal</string>
-				<string>Digits</string>
-				<string>Telecommunications</string>
-				<string>Technology</string>
-				<string>Digits Blog</string>
 			</array>
 			<key>h2</key>
 			<array>
-				<string>Mobile Tablet Highlight2A</string>
-				<string>Mobile Tablet Highlight2B</string>
-				<string>Executive Education</string>
-				<string>Advertising</string>
-				<string>Theory</string>
-				<string>Small Business</string>
-				<string>Earnings</string>
-				<string>Media &amp;amp; Marketing</string>
 			</array>
 		</dict>
 		<key>SECTION-4story-smallG-top_template</key>
@@ -631,17 +530,9 @@
 		<dict>
 			<key>b1</key>
 			<array>
-				<false/>
 			</array>
 			<key>h2</key>
 			<array>
-				<string>Mobile Tablet Highlight1A</string>
-				<string>Mobile Tablet Highlight1B</string>
-				<string>Ahead of the Tape</string>
-				<string>Weekend Investor</string>
-				<string>Heard on the Street</string>
-				<string>Technology</string>
-				<string>Digits</string>
 			</array>
 		</dict>
 		<key>SECTION-3story-G_template</key>
@@ -660,26 +551,25 @@
 		<dict>
 			<key>b1</key>
 			<array>
-				<false/>
 			</array>
 			<key>h2</key>
 			<array>
-				<string>Mobile Tablet Highlight1A</string>
-				<string>Mobile Tablet Highlight1B</string>
-				<string>Ahead of the Tape</string>
-				<string>Heard on the Street</string>
 			</array>
 		</dict>
 		<key>SECTION-4story-D-C_template</key>
 		<dict>
 			<key>b1</key>
 			<array>
+				<false/>
 			</array>
 			<key>h1</key>
 			<array>
+				<string>Ahead of the Tape</string>
+				<string>Weekend Investor</string>
 			</array>
 			<key>h2</key>
 			<array>
+				<string>Heard on the Street</string>
 			</array>
 		</dict>
 	</dict>
@@ -689,205 +579,93 @@
 		<dict>
 			<key>b1</key>
 			<array>
-				<false/>
 			</array>
 			<key>h3</key>
 			<array>
-				<string>Mobile Tablet Highlight1A</string>
-				<string>Mobile Tablet Highlight1B</string>
-				<string>Metropolis</string>
-				<string>NY Page Two</string>
-				<string>Jason Gay</string>
-				<string>Urban Gardner</string>
-				<string>NY Transit</string>
-				<string>Mobile Tablet Highlight2A</string>
-				<string>Mobile Tablet Highlight2B</string>
-				<string>NY Food</string>
-				<string>NY Heard &amp; Scene</string>
-				<string>NY Lunch Box</string>
-				<string>NY The Couch</string>
 			</array>
 		</dict>
 		<key>SECTION-1story-P-1highlight_template</key>
 		<dict>
 			<key>b1</key>
 			<array>
-				<false/>
 			</array>
 			<key>h3</key>
 			<array>
-				<string>Mobile Tablet Highlight1A</string>
-				<string>Mobile Tablet Highlight1B</string>
-				<string>Metropolis</string>
-				<string>NY Page Two</string>
-				<string>Jason Gay</string>
-				<string>Urban Gardner</string>
-				<string>NY Transit</string>
-				<string>Mobile Tablet Highlight2A</string>
-				<string>Mobile Tablet Highlight2B</string>
-				<string>NY Food</string>
-				<string>NY Heard &amp; Scene</string>
-				<string>NY Lunch Box</string>
-				<string>NY The Couch</string>
 			</array>
 		</dict>
 		<key>SECTION-1story-PV-1highlight_template</key>
 		<dict>
 			<key>b1</key>
 			<array>
-				<false/>
 			</array>
 			<key>h3</key>
 			<array>
-				<string>Mobile Tablet Highlight1A</string>
-				<string>Mobile Tablet Highlight1B</string>
-				<string>Metropolis</string>
-				<string>NY Page Two</string>
-				<string>Jason Gay</string>
-				<string>Urban Gardner</string>
-				<string>NY Transit</string>
-				<string>Mobile Tablet Highlight2A</string>
-				<string>Mobile Tablet Highlight2B</string>
-				<string>NY Food</string>
-				<string>NY Heard &amp; Scene</string>
-				<string>NY Lunch Box</string>
-				<string>NY The Couch</string>
 			</array>
 		</dict>
 		<key>SECTION-1story-PV-white_template</key>
 		<dict>
 			<key>b1</key>
 			<array>
-				<false/>
 			</array>
 			<key>h1</key>
 			<array>
-				<string>Mobile Tablet Highlight1A</string>
-				<string>Mobile Tablet Highlight1B</string>
-				<string>Metropolis</string>
-				<string>NY Page Two</string>
-				<string>Jason Gay</string>
-				<string>Urban Gardner</string>
-				<string>NY Transit</string>
 			</array>
 			<key>h2</key>
 			<array>
-				<string>Mobile Tablet Highlight2A</string>
-				<string>Mobile Tablet Highlight2B</string>
-				<string>NY Food</string>
-				<string>NY Heard &amp; Scene</string>
-				<string>NY Lunch Box</string>
-				<string>NY The Couch</string>
 			</array>
 		</dict>
 		<key>SECTION-1story-PV_template</key>
 		<dict>
 			<key>b1</key>
 			<array>
-				<false/>
 			</array>
 			<key>h1</key>
 			<array>
-				<string>Mobile Tablet Highlight1A</string>
-				<string>Mobile Tablet Highlight1B</string>
-				<string>Metropolis</string>
-				<string>NY Page Two</string>
-				<string>Jason Gay</string>
-				<string>Urban Gardner</string>
-				<string>NY Transit</string>
 			</array>
 			<key>h2</key>
 			<array>
-				<string>Mobile Tablet Highlight2A</string>
-				<string>Mobile Tablet Highlight2B</string>
-				<string>NY Food</string>
-				<string>NY Heard &amp; Scene</string>
-				<string>NY Lunch Box</string>
-				<string>NY The Couch</string>
 			</array>
 		</dict>
 		<key>SECTION-1story-P_template</key>
 		<dict>
 			<key>b1</key>
 			<array>
-				<false/>
 			</array>
 			<key>h1</key>
 			<array>
-				<string>Mobile Tablet Highlight1A</string>
-				<string>Mobile Tablet Highlight1B</string>
-				<string>Metropolis</string>
-				<string>NY Page Two</string>
-				<string>Jason Gay</string>
-				<string>Urban Gardner</string>
-				<string>NY Transit</string>
 			</array>
 			<key>h2</key>
 			<array>
-				<string>Mobile Tablet Highlight2A</string>
-				<string>Mobile Tablet Highlight2B</string>
-				<string>NY Food</string>
-				<string>NY Heard &amp; Scene</string>
-				<string>NY Lunch Box</string>
-				<string>NY The Couch</string>
 			</array>
 		</dict>
 		<key>SECTION-3story-G-deco-C_template</key>
 		<dict>
 			<key>b1</key>
 			<array>
-				<false/>
 			</array>
 			<key>deco</key>
 			<array>
-				<string>Deco Summary Liondoor Section 1</string>
-				<string>Deco Summary Liondoor New York</string>
 			</array>
 			<key>h1</key>
 			<array>
-				<string>Mobile Tablet Highlight1A</string>
-				<string>Mobile Tablet Highlight1B</string>
-				<string>Metropolis</string>
-				<string>NY Page Two</string>
-				<string>Jason Gay</string>
-				<string>Urban Gardner</string>
-				<string>NY Transit</string>
 			</array>
 			<key>h2</key>
 			<array>
-				<string>Mobile Tablet Highlight2A</string>
-				<string>Mobile Tablet Highlight2B</string>
-				<string>NY Heard &amp;amp; Scene</string>
-				<string>NY The Couch</string>
-				<string>NY Lunch Box</string>
-				<string>NY Food</string>
 			</array>
 		</dict>
 		<key>SECTION-4story-smallG-deco_template</key>
 		<dict>
 			<key>b1</key>
 			<array>
-				<false/>
 			</array>
 			<key>deco</key>
 			<array>
-				<string>Deco Summary Liondoor Section 1</string>
-				<string>Deco Summary Liondoor New York</string>
 			</array>
 			<key>h1</key>
 			<array>
-				<string>Mobile Tablet Highlight1A</string>
-				<string>Mobile Tablet Highlight1B</string>
 			</array>
 			<key>h2</key>
 			<array>
-				<string>Mobile Tablet Highlight2A</string>
-				<string>Mobile Tablet Highlight2B</string>
-				<string>NY The Couch</string>
-				<string>Jason Gay</string>
-				<string>Urban Gardner</string>
-				<string>NY Heard &amp;amp; Scene</string>
-				<string>Sports</string>
 			</array>
 		</dict>
 		<key>SECTION-4story-smallG-top_template</key>
@@ -976,37 +754,41 @@
 			</array>
 			<key>h1</key>
 			<array>
-				<string>Mobile Tablet Highlight1A</string>
-				<string>Mobile Tablet Highlight1B</string>
-				<string>Slow Food Fast</string>
-				<string>Traveler's Tale</string>
 				<string>Extra Credit</string>
+				<string>Editors' Notebook</string>
 				<string>What to Wear There</string>
 				<string>RunwayRealWay</string>
+				<string>Traveler's Tale</string>
 			</array>
 			<key>h2</key>
 			<array>
-				<string>Mobile Tablet Highlight2A</string>
-				<string>Mobile Tablet Highlight2B</string>
-				<string>Rumble Seat</string>
-				<string>Food &amp; Drink</string>
-				<string>At Play</string>
-				<string>Fashion</string>
-				<string>Gear</string>
-				<string>Gear Rumblings</string>
-				<string>Geek Chic</string>
+				<string>On Wine</string>
+				<string>Slow Food Fast</string>
+				<string>House Tour</string>
+				<string>Deco-files</string>
 			</array>
 		</dict>
 		<key>SECTION-3story-G_template</key>
 		<dict>
 			<key>b1</key>
 			<array>
+				<false/>
 			</array>
 			<key>h1</key>
 			<array>
+				<string>Extra Credit</string>
+				<string>Editors&amp;apos; Notebook</string>
+				<string>What to Wear There</string>
+				<string>RunwayRealWay</string>
+				<string>Traveler&amp;apos;s Tale</string>
 			</array>
 			<key>h2</key>
 			<array>
+				<string>On Wine</string>
+				<string>Slow Food Fast</string>
+				<string>House Tour</string>
+				<string>Deco-files</string>
+				<false/>
 			</array>
 		</dict>
 	</dict>
@@ -1016,7 +798,7 @@
 		<dict>
 			<key>b1</key>
 			<array>
-				<string>Review &amp; Outlook (U.S.)</string>
+				<string>Review &amp; Outlook (Europe)</string>
 				<string>Letters</string>
 			</array>
 			<key>b2</key>
@@ -1027,30 +809,30 @@
 			<array>
 				<string>Mobile Tablet Highlight1A</string>
 				<string>Mobile Tablet Highlight1B</string>
-				<string>The Americas</string>
-				<string>Main Street</string>
-				<string>Business World</string>
-				<string>Wonder Land</string>
-				<string>Declarations</string>
+				<string>Opinion Europe</string>
+				<string>Review &amp;amp; Outlook (Europe)</string>
+				<string>Opinion</string>
+				<string>Review &amp;amp; Outlook (U.S.)</string>
 			</array>
 			<key>h2</key>
 			<array>
 				<string>Mobile Tablet Highlight2A</string>
 				<string>Mobile Tablet Highlight2B</string>
-				<string>John Fund on the Trail</string>
-				<string>Information Age</string>
+				<string>Business Europe</string>
 				<string>Global View</string>
-				<string>The Tilting Yard</string>
-				<string>Potomac Watch</string>
-				<string>Five Best</string>
-				<string>Bookshelf</string>
+				<string>Business World</string>
+				<string>Declarations</string>
+				<string>The Saturday Interview</string>
+				<string>Information Age</string>
+				<string>Wonderland</string>
+				<string>Main Street</string>
 			</array>
 		</dict>
 		<key>OPINION-2story-E_template</key>
 		<dict>
 			<key>b1</key>
 			<array>
-				<string>Review &amp; Outlook (U.S.)</string>
+				<string>Review &amp; Outlook (Europe)</string>
 				<string>Letters</string>
 			</array>
 			<key>b2</key>
@@ -1061,35 +843,35 @@
 			<array>
 				<string>Mobile Tablet Highlight1A</string>
 				<string>Mobile Tablet Highlight1B</string>
-				<string>The Americas</string>
-				<string>Main Street</string>
-				<string>Business World</string>
-				<string>Wonder Land</string>
-				<string>Declarations</string>
+				<string>Opinion Europe</string>
+				<string>Review &amp;amp; Outlook (Europe)</string>
+				<string>Opinion</string>
+				<string>Review &amp;amp; Outlook (U.S.)</string>
 			</array>
 			<key>h2</key>
 			<array>
 				<string>Mobile Tablet Highlight2A</string>
 				<string>Mobile Tablet Highlight2B</string>
-				<string>John Fund on the Trail</string>
-				<string>Information Age</string>
+				<string>Business Europe</string>
 				<string>Global View</string>
-				<string>The Tilting Yard</string>
-				<string>Potomac Watch</string>
-				<string>Five Best</string>
-				<string>Bookshelf</string>
+				<string>Business World</string>
+				<string>Declarations</string>
+				<string>The Saturday Interview</string>
+				<string>Information Age</string>
+				<string>Wonderland</string>
+				<string>Main Street</string>
 			</array>
 		</dict>
 		<key>OPINION-3story-D_template</key>
 		<dict>
 			<key>b1</key>
 			<array>
-				<string>Review &amp; Outlook (U.S.)</string>
+				<string>Review &amp; Outlook (Europe)</string>
 				<string>Letters</string>
 			</array>
 			<key>b2</key>
 			<array>
-				<string>Review &amp; Outlook (U.S.)</string>
+				<string>Review &amp; Outlook (Europe)</string>
 				<string>Letters</string>
 			</array>
 			<key>b3</key>
@@ -1100,35 +882,35 @@
 			<array>
 				<string>Mobile Tablet Highlight1A</string>
 				<string>Mobile Tablet Highlight1B</string>
-				<string>The Americas</string>
-				<string>Main Street</string>
-				<string>Business World</string>
-				<string>Wonder Land</string>
-				<string>Declarations</string>
+				<string>Opinion Europe</string>
+				<string>Review &amp;amp; Outlook (Europe)</string>
+				<string>Opinion</string>
+				<string>Review &amp;amp; Outlook (U.S.)</string>
 			</array>
 			<key>h2</key>
 			<array>
 				<string>Mobile Tablet Highlight2A</string>
 				<string>Mobile Tablet Highlight2B</string>
-				<string>John Fund on the Trail</string>
-				<string>Information Age</string>
+				<string>Business Europe</string>
 				<string>Global View</string>
-				<string>The Tilting Yard</string>
-				<string>Potomac Watch</string>
-				<string>Five Best</string>
-				<string>Bookshelf</string>
+				<string>Business World</string>
+				<string>Declarations</string>
+				<string>The Saturday Interview</string>
+				<string>Information Age</string>
+				<string>Wonderland</string>
+				<string>Main Street</string>
 			</array>
 		</dict>
 		<key>OPINION-3story-E_template</key>
 		<dict>
 			<key>b1</key>
 			<array>
-				<string>Review &amp; Outlook (U.S.)</string>
+				<string>Review &amp; Outlook (Europe)</string>
 				<string>Letters</string>
 			</array>
 			<key>b2</key>
 			<array>
-				<string>Review &amp; Outlook (U.S.)</string>
+				<string>Review &amp; Outlook (Europe)</string>
 				<string>Letters</string>
 			</array>
 			<key>b3</key>
@@ -1139,317 +921,329 @@
 			<array>
 				<string>Mobile Tablet Highlight1A</string>
 				<string>Mobile Tablet Highlight1B</string>
-				<string>The Americas</string>
-				<string>Main Street</string>
-				<string>Business World</string>
-				<string>Wonder Land</string>
-				<string>Declarations</string>
+				<string>Opinion Europe</string>
+				<string>Review &amp;amp; Outlook (Europe)</string>
+				<string>Opinion</string>
+				<string>Review &amp;amp; Outlook (U.S.)</string>
 			</array>
 			<key>h2</key>
 			<array>
 				<string>Mobile Tablet Highlight2A</string>
 				<string>Mobile Tablet Highlight2B</string>
-				<string>John Fund on the Trail</string>
-				<string>Information Age</string>
+				<string>Business Europe</string>
 				<string>Global View</string>
-				<string>The Tilting Yard</string>
-				<string>Potomac Watch</string>
-				<string>Five Best</string>
-				<string>Bookshelf</string>
+				<string>Business World</string>
+				<string>Declarations</string>
+				<string>The Saturday Interview</string>
+				<string>Information Age</string>
+				<string>Wonderland</string>
+				<string>Main Street</string>
 			</array>
 		</dict>
 		<key>OPINION-4story-D_template</key>
 		<dict>
 			<key>b1</key>
 			<array>
-				<string>Review &amp; Outlook (U.S.)</string>
+				<string>Review &amp; Outlook (Europe)</string>
 				<string>Letters</string>
 			</array>
 			<key>b2</key>
 			<array>
-				<string>Review &amp; Outlook (U.S.)</string>
+				<string>Review &amp; Outlook (Europe)</string>
 				<string>Letters</string>
 			</array>
 			<key>b3</key>
 			<array>
 				<false/>
+				<string>Opinion Asia</string>
+				<string>Commentary (U.S.)</string>
 			</array>
 			<key>b4</key>
 			<array>
-				<string>Political Diary</string>
+				<string>Opinion Europe</string>
 				<string>Commentary (U.S.)</string>
 			</array>
 			<key>h1</key>
 			<array>
 				<string>Mobile Tablet Highlight1A</string>
 				<string>Mobile Tablet Highlight1B</string>
-				<string>The Americas</string>
-				<string>Main Street</string>
-				<string>Business World</string>
-				<string>Wonder Land</string>
-				<string>Declarations</string>
+				<string>Opinion Europe</string>
+				<string>Review &amp;amp; Outlook (Europe)</string>
+				<string>Opinion</string>
+				<string>Review &amp;amp; Outlook (U.S.)</string>
 			</array>
 			<key>h2</key>
 			<array>
 				<string>Mobile Tablet Highlight2A</string>
 				<string>Mobile Tablet Highlight2B</string>
-				<string>John Fund on the Trail</string>
-				<string>Information Age</string>
+				<string>Business Europe</string>
 				<string>Global View</string>
-				<string>The Tilting Yard</string>
-				<string>Potomac Watch</string>
-				<string>Five Best</string>
-				<string>Bookshelf</string>
+				<string>Business World</string>
+				<string>Declarations</string>
+				<string>The Saturday Interview</string>
+				<string>Information Age</string>
+				<string>Wonderland</string>
+				<string>Main Street</string>
 			</array>
 		</dict>
 		<key>OPINION-4story-E_template</key>
 		<dict>
 			<key>b1</key>
 			<array>
-				<string>Review &amp; Outlook (U.S.)</string>
+				<string>Review &amp; Outlook (Europe)</string>
 				<string>Letters</string>
 			</array>
 			<key>b2</key>
 			<array>
-				<string>Review &amp; Outlook (U.S.)</string>
+				<string>Review &amp; Outlook (Europe)</string>
 				<string>Letters</string>
 			</array>
 			<key>b3</key>
 			<array>
 				<false/>
+				<string>Opinion Asia</string>
+				<string>Commentary (U.S.)</string>
 			</array>
 			<key>b4</key>
 			<array>
-				<string>Political Diary</string>
+				<string>Opinion Europe</string>
 				<string>Commentary (U.S.)</string>
 			</array>
 			<key>h1</key>
 			<array>
 				<string>Mobile Tablet Highlight1A</string>
 				<string>Mobile Tablet Highlight1B</string>
-				<string>The Americas</string>
-				<string>Main Street</string>
-				<string>Business World</string>
-				<string>Wonder Land</string>
-				<string>Declarations</string>
+				<string>Opinion Europe</string>
+				<string>Review &amp;amp; Outlook (Europe)</string>
+				<string>Opinion</string>
+				<string>Review &amp;amp; Outlook (U.S.)</string>
 			</array>
 			<key>h2</key>
 			<array>
 				<string>Mobile Tablet Highlight2A</string>
 				<string>Mobile Tablet Highlight2B</string>
-				<string>John Fund on the Trail</string>
-				<string>Information Age</string>
+				<string>Business Europe</string>
 				<string>Global View</string>
-				<string>The Tilting Yard</string>
-				<string>Potomac Watch</string>
-				<string>Five Best</string>
-				<string>Bookshelf</string>
+				<string>Business World</string>
+				<string>Declarations</string>
+				<string>The Saturday Interview</string>
+				<string>Information Age</string>
+				<string>Wonderland</string>
+				<string>Main Street</string>
 			</array>
 		</dict>
 		<key>OPINION-5story-D_template</key>
 		<dict>
 			<key>b1</key>
 			<array>
-				<string>Review &amp; Outlook (U.S.)</string>
+				<string>Review &amp; Outlook (Europe)</string>
 				<string>Letters</string>
 			</array>
 			<key>b2</key>
 			<array>
-				<string>Review &amp; Outlook (U.S.)</string>
+				<string>Review &amp; Outlook (Europe)</string>
 				<string>Letters</string>
 			</array>
 			<key>b3</key>
 			<array>
-				<string>Review &amp; Outlook (U.S.)</string>
+				<string>Review &amp; Outlook (Europe)</string>
 				<string>Letters</string>
 			</array>
 			<key>b4</key>
 			<array>
 				<false/>
+				<string>Opinion Asia</string>
+				<string>Commentary (U.S.)</string>
 			</array>
 			<key>b5</key>
 			<array>
-				<string>Political Diary</string>
+				<string>Opinion Europe</string>
 				<string>Commentary (U.S.)</string>
 			</array>
 			<key>h1</key>
 			<array>
 				<string>Mobile Tablet Highlight1A</string>
 				<string>Mobile Tablet Highlight1B</string>
-				<string>The Americas</string>
-				<string>Main Street</string>
-				<string>Business World</string>
-				<string>Wonder Land</string>
-				<string>Declarations</string>
+				<string>Opinion Europe</string>
+				<string>Review &amp;amp; Outlook (Europe)</string>
+				<string>Opinion</string>
+				<string>Review &amp;amp; Outlook (U.S.)</string>
 			</array>
 			<key>h2</key>
 			<array>
 				<string>Mobile Tablet Highlight2A</string>
 				<string>Mobile Tablet Highlight2B</string>
-				<string>John Fund on the Trail</string>
-				<string>Information Age</string>
+				<string>Business Europe</string>
 				<string>Global View</string>
-				<string>The Tilting Yard</string>
-				<string>Potomac Watch</string>
-				<string>Five Best</string>
-				<string>Bookshelf</string>
+				<string>Business World</string>
+				<string>Declarations</string>
+				<string>The Saturday Interview</string>
+				<string>Information Age</string>
+				<string>Wonderland</string>
+				<string>Main Street</string>
 			</array>
 		</dict>
 		<key>OPINION-5story-E_template</key>
 		<dict>
 			<key>b1</key>
 			<array>
-				<string>Review &amp; Outlook (U.S.)</string>
+				<string>Review &amp; Outlook (Europe)</string>
 				<string>Letters</string>
 			</array>
 			<key>b2</key>
 			<array>
-				<string>Review &amp; Outlook (U.S.)</string>
+				<string>Review &amp; Outlook (Europe)</string>
 				<string>Letters</string>
 			</array>
 			<key>b3</key>
 			<array>
-				<string>Review &amp; Outlook (U.S.)</string>
+				<string>Review &amp; Outlook (Europe)</string>
 				<string>Letters</string>
 			</array>
 			<key>b4</key>
 			<array>
 				<false/>
+				<string>Opinion Asia</string>
+				<string>Commentary (U.S.)</string>
 			</array>
 			<key>b5</key>
 			<array>
-				<string>Political Diary</string>
+				<string>Opinion Europe</string>
 				<string>Commentary (U.S.)</string>
 			</array>
 			<key>h1</key>
 			<array>
 				<string>Mobile Tablet Highlight1A</string>
 				<string>Mobile Tablet Highlight1B</string>
-				<string>The Americas</string>
-				<string>Main Street</string>
-				<string>Business World</string>
-				<string>Wonder Land</string>
-				<string>Declarations</string>
+				<string>Opinion Europe</string>
+				<string>Review &amp;amp; Outlook (Europe)</string>
+				<string>Opinion</string>
+				<string>Review &amp;amp; Outlook (U.S.)</string>
 			</array>
 			<key>h2</key>
 			<array>
 				<string>Mobile Tablet Highlight2A</string>
 				<string>Mobile Tablet Highlight2B</string>
-				<string>John Fund on the Trail</string>
-				<string>Information Age</string>
+				<string>Business Europe</string>
 				<string>Global View</string>
-				<string>The Tilting Yard</string>
-				<string>Potomac Watch</string>
-				<string>Five Best</string>
-				<string>Bookshelf</string>
+				<string>Business World</string>
+				<string>Declarations</string>
+				<string>The Saturday Interview</string>
+				<string>Information Age</string>
+				<string>Wonderland</string>
+				<string>Main Street</string>
 			</array>
 		</dict>
 		<key>OPINION-6story-D_template</key>
 		<dict>
 			<key>b1</key>
 			<array>
-				<string>Review &amp; Outlook (U.S.)</string>
+				<string>Review &amp; Outlook (Europe)</string>
 				<string>Letters</string>
 			</array>
 			<key>b2</key>
 			<array>
-				<string>Review &amp; Outlook (U.S.)</string>
+				<string>Review &amp; Outlook (Europe)</string>
 				<string>Letters</string>
 			</array>
 			<key>b3</key>
 			<array>
-				<string>Review &amp; Outlook (U.S.)</string>
+				<string>Review &amp; Outlook (Europe)</string>
 				<string>Letters</string>
 			</array>
 			<key>b4</key>
 			<array>
-				<string>Review &amp; Outlook (U.S.)</string>
+				<string>Review &amp; Outlook (Europe)</string>
 				<string>Letters</string>
 			</array>
 			<key>b5</key>
 			<array>
 				<false/>
+				<string>Opinion Asia</string>
+				<string>Commentary (U.S.)</string>
 			</array>
 			<key>b6</key>
 			<array>
-				<string>Political Diary</string>
+				<string>Opinion Europe</string>
 				<string>Commentary (U.S.)</string>
 			</array>
 			<key>h1</key>
 			<array>
 				<string>Mobile Tablet Highlight1A</string>
 				<string>Mobile Tablet Highlight1B</string>
-				<string>The Americas</string>
-				<string>Main Street</string>
-				<string>Business World</string>
-				<string>Wonder Land</string>
-				<string>Declarations</string>
+				<string>Opinion Europe</string>
+				<string>Review &amp;amp; Outlook (Europe)</string>
+				<string>Opinion</string>
+				<string>Review &amp;amp; Outlook (U.S.)</string>
 			</array>
 			<key>h2</key>
 			<array>
 				<string>Mobile Tablet Highlight2A</string>
 				<string>Mobile Tablet Highlight2B</string>
-				<string>John Fund on the Trail</string>
-				<string>Information Age</string>
+				<string>Business Europe</string>
 				<string>Global View</string>
-				<string>The Tilting Yard</string>
-				<string>Potomac Watch</string>
-				<string>Five Best</string>
-				<string>Bookshelf</string>
+				<string>Business World</string>
+				<string>Declarations</string>
+				<string>The Saturday Interview</string>
+				<string>Information Age</string>
+				<string>Wonderland</string>
+				<string>Main Street</string>
 			</array>
 		</dict>
 		<key>OPINION-6story-E_template</key>
 		<dict>
 			<key>b1</key>
 			<array>
-				<string>Review &amp; Outlook (U.S.)</string>
+				<string>Review &amp; Outlook (Europe)</string>
 				<string>Letters</string>
 			</array>
 			<key>b2</key>
 			<array>
-				<string>Review &amp; Outlook (U.S.)</string>
+				<string>Review &amp; Outlook (Europe)</string>
 				<string>Letters</string>
 			</array>
 			<key>b3</key>
 			<array>
-				<string>Review &amp; Outlook (U.S.)</string>
+				<string>Review &amp; Outlook (Europe)</string>
 				<string>Letters</string>
 			</array>
 			<key>b4</key>
 			<array>
-				<string>Review &amp; Outlook (U.S.)</string>
+				<string>Review &amp; Outlook (Europe)</string>
 				<string>Letters</string>
 			</array>
 			<key>b5</key>
 			<array>
 				<false/>
+				<string>Opinion Asia</string>
+				<string>Commentary (U.S.)</string>
 			</array>
 			<key>b6</key>
 			<array>
-				<string>Political Diary</string>
+				<string>Opinion Europe</string>
 				<string>Commentary (U.S.)</string>
 			</array>
 			<key>h1</key>
 			<array>
 				<string>Mobile Tablet Highlight1A</string>
 				<string>Mobile Tablet Highlight1B</string>
-				<string>The Americas</string>
-				<string>Main Street</string>
-				<string>Business World</string>
-				<string>Wonder Land</string>
-				<string>Declarations</string>
+				<string>Opinion Europe</string>
+				<string>Review &amp;amp; Outlook (Europe)</string>
+				<string>Opinion</string>
+				<string>Review &amp;amp; Outlook (U.S.)</string>
 			</array>
 			<key>h2</key>
 			<array>
 				<string>Mobile Tablet Highlight2A</string>
 				<string>Mobile Tablet Highlight2B</string>
-				<string>John Fund on the Trail</string>
-				<string>Information Age</string>
+				<string>Business Europe</string>
 				<string>Global View</string>
-				<string>The Tilting Yard</string>
-				<string>Potomac Watch</string>
-				<string>Five Best</string>
-				<string>Bookshelf</string>
+				<string>Business World</string>
+				<string>Declarations</string>
+				<string>The Saturday Interview</string>
+				<string>Information Age</string>
+				<string>Wonderland</string>
+				<string>Main Street</string>
 			</array>
 		</dict>
 	</dict>
@@ -1463,30 +1257,21 @@
 			</array>
 			<key>h3</key>
 			<array>
-				<string>Mobile Tablet Highlight1A</string>
-				<string>Mobile Tablet Highlight1B</string>
-				<string>The Mossberg Solution</string>
-				<string>Worth It</string>
-				<string>Second Acts</string>
-				<string>Managing Your Career</string>
-				<string>Personal Technology</string>
-				<string>Eyes on the Road</string>
-				<string>Pay Grade</string>
+				<string>Second Act</string>
+				<string>Managing your career </string>
+				<string>What's Your Workout</string>
+				<string>Pay grade</string>
+				<string>Mossberg Solution</string>
 				<string>Moving On</string>
-				<string>Off the Beaten Track</string>
-				<string>Mobile Tablet Highlight2A</string>
-				<string>Mobile Tablet Highlight2B</string>
-				<string>The Couch</string>
-				<string>World Cup</string>
 				<string>The Middle Seat</string>
-				<string>Sports</string>
+				<string>Off the Beaten Track</string>
 				<string>Health Journal</string>
-				<string>Heart Beat</string>
-				<string>The Informed Patient</string>
-				<string>Lab Journal</string>
-				<string>Aches &amp; Claims</string>
-				<string>Research Report</string>
-				<string>Work &amp; Family</string>
+				<string>Health Beat</string>
+				<string>Informed Patient </string>
+				<string>In the Lab </string>
+				<string>Aches and Claims </string>
+				<string>Research Report </string>
+				<string>Work and Family</string>
 				<string>Cranky Consumer</string>
 			</array>
 		</dict>
@@ -1498,30 +1283,21 @@
 			</array>
 			<key>h3</key>
 			<array>
-				<string>Mobile Tablet Highlight1A</string>
-				<string>Mobile Tablet Highlight1B</string>
-				<string>The Mossberg Solution</string>
-				<string>Worth It</string>
-				<string>Second Acts</string>
-				<string>Managing Your Career</string>
-				<string>Personal Technology</string>
-				<string>Eyes on the Road</string>
-				<string>Pay Grade</string>
+				<string>Second Act</string>
+				<string>Managing your career </string>
+				<string>What's Your Workout</string>
+				<string>Pay grade</string>
+				<string>Mossberg Solution</string>
 				<string>Moving On</string>
-				<string>Off the Beaten Track</string>
-				<string>Mobile Tablet Highlight2A</string>
-				<string>Mobile Tablet Highlight2B</string>
-				<string>The Couch</string>
-				<string>World Cup</string>
 				<string>The Middle Seat</string>
-				<string>Sports</string>
+				<string>Off the Beaten Track</string>
 				<string>Health Journal</string>
-				<string>Heart Beat</string>
-				<string>The Informed Patient</string>
-				<string>Lab Journal</string>
-				<string>Aches &amp; Claims</string>
-				<string>Research Report</string>
-				<string>Work &amp; Family</string>
+				<string>Health Beat</string>
+				<string>Informed Patient </string>
+				<string>In the Lab </string>
+				<string>Aches and Claims </string>
+				<string>Research Report </string>
+				<string>Work and Family</string>
 				<string>Cranky Consumer</string>
 			</array>
 		</dict>
@@ -1533,30 +1309,21 @@
 			</array>
 			<key>h3</key>
 			<array>
-				<string>Mobile Tablet Highlight1A</string>
-				<string>Mobile Tablet Highlight1B</string>
-				<string>The Mossberg Solution</string>
-				<string>Worth It</string>
-				<string>Second Acts</string>
-				<string>Managing Your Career</string>
-				<string>Personal Technology</string>
-				<string>Eyes on the Road</string>
-				<string>Pay Grade</string>
+				<string>Second Act</string>
+				<string>Managing your career </string>
+				<string>What's Your Workout</string>
+				<string>Pay grade</string>
+				<string>Mossberg Solution</string>
 				<string>Moving On</string>
-				<string>Off the Beaten Track</string>
-				<string>Mobile Tablet Highlight2A</string>
-				<string>Mobile Tablet Highlight2B</string>
-				<string>The Couch</string>
-				<string>World Cup</string>
 				<string>The Middle Seat</string>
-				<string>Sports</string>
+				<string>Off the Beaten Track</string>
 				<string>Health Journal</string>
-				<string>Heart Beat</string>
-				<string>The Informed Patient</string>
-				<string>Lab Journal</string>
-				<string>Aches &amp; Claims</string>
-				<string>Research Report</string>
-				<string>Work &amp; Family</string>
+				<string>Health Beat</string>
+				<string>Informed Patient </string>
+				<string>In the Lab </string>
+				<string>Aches and Claims </string>
+				<string>Research Report </string>
+				<string>Work and Family</string>
 				<string>Cranky Consumer</string>
 			</array>
 		</dict>
@@ -1568,33 +1335,24 @@
 			</array>
 			<key>h1</key>
 			<array>
-				<string>Mobile Tablet Highlight1A</string>
-				<string>Mobile Tablet Highlight1B</string>
-				<string>The Mossberg Solution</string>
-				<string>Worth It</string>
-				<string>Second Acts</string>
-				<string>Managing Your Career</string>
-				<string>Personal Technology</string>
-				<string>Eyes on the Road</string>
-				<string>Pay Grade</string>
+				<string>Second Act</string>
+				<string>Managing your career </string>
+				<string>What's Your Workout</string>
+				<string>Pay grade</string>
+				<string>Mossberg Solution</string>
 				<string>Moving On</string>
+				<string>The Middle Seat</string>
 				<string>Off the Beaten Track</string>
 			</array>
 			<key>h2</key>
 			<array>
-				<string>Mobile Tablet Highlight2A</string>
-				<string>Mobile Tablet Highlight2B</string>
-				<string>The Couch</string>
-				<string>World Cup</string>
-				<string>The Middle Seat</string>
-				<string>Sports</string>
 				<string>Health Journal</string>
-				<string>Heart Beat</string>
-				<string>The Informed Patient</string>
-				<string>Lab Journal</string>
-				<string>Aches &amp; Claims</string>
-				<string>Research Report</string>
-				<string>Work &amp; Family</string>
+				<string>Health Beat</string>
+				<string>Informed Patient </string>
+				<string>In the Lab </string>
+				<string>Aches and Claims </string>
+				<string>Research Report </string>
+				<string>Work and Family</string>
 				<string>Cranky Consumer</string>
 			</array>
 		</dict>
@@ -1606,33 +1364,24 @@
 			</array>
 			<key>h1</key>
 			<array>
-				<string>Mobile Tablet Highlight1A</string>
-				<string>Mobile Tablet Highlight1B</string>
-				<string>The Mossberg Solution</string>
-				<string>Worth It</string>
-				<string>Second Acts</string>
-				<string>Managing Your Career</string>
-				<string>Personal Technology</string>
-				<string>Eyes on the Road</string>
-				<string>Pay Grade</string>
+				<string>Second Act</string>
+				<string>Managing your career </string>
+				<string>What's Your Workout</string>
+				<string>Pay grade</string>
+				<string>Mossberg Solution</string>
 				<string>Moving On</string>
+				<string>The Middle Seat</string>
 				<string>Off the Beaten Track</string>
 			</array>
 			<key>h2</key>
 			<array>
-				<string>Mobile Tablet Highlight2A</string>
-				<string>Mobile Tablet Highlight2B</string>
-				<string>The Couch</string>
-				<string>World Cup</string>
-				<string>The Middle Seat</string>
-				<string>Sports</string>
 				<string>Health Journal</string>
-				<string>Heart Beat</string>
-				<string>The Informed Patient</string>
-				<string>Lab Journal</string>
-				<string>Aches &amp; Claims</string>
-				<string>Research Report</string>
-				<string>Work &amp; Family</string>
+				<string>Health Beat</string>
+				<string>Informed Patient </string>
+				<string>In the Lab </string>
+				<string>Aches and Claims </string>
+				<string>Research Report </string>
+				<string>Work and Family</string>
 				<string>Cranky Consumer</string>
 			</array>
 		</dict>
@@ -1644,33 +1393,24 @@
 			</array>
 			<key>h1</key>
 			<array>
-				<string>Mobile Tablet Highlight1A</string>
-				<string>Mobile Tablet Highlight1B</string>
-				<string>The Mossberg Solution</string>
-				<string>Worth It</string>
-				<string>Second Acts</string>
-				<string>Managing Your Career</string>
-				<string>Personal Technology</string>
-				<string>Eyes on the Road</string>
-				<string>Pay Grade</string>
+				<string>Second Act</string>
+				<string>Managing your career </string>
+				<string>What's Your Workout</string>
+				<string>Pay grade</string>
+				<string>Mossberg Solution</string>
 				<string>Moving On</string>
+				<string>The Middle Seat</string>
 				<string>Off the Beaten Track</string>
 			</array>
 			<key>h2</key>
 			<array>
-				<string>Mobile Tablet Highlight2A</string>
-				<string>Mobile Tablet Highlight2B</string>
-				<string>The Couch</string>
-				<string>World Cup</string>
-				<string>The Middle Seat</string>
-				<string>Sports</string>
 				<string>Health Journal</string>
-				<string>Heart Beat</string>
-				<string>The Informed Patient</string>
-				<string>Lab Journal</string>
-				<string>Aches &amp; Claims</string>
-				<string>Research Report</string>
-				<string>Work &amp; Family</string>
+				<string>Health Beat</string>
+				<string>Informed Patient </string>
+				<string>In the Lab </string>
+				<string>Aches and Claims </string>
+				<string>Research Report </string>
+				<string>Work and Family</string>
 				<string>Cranky Consumer</string>
 			</array>
 		</dict>
@@ -1682,122 +1422,55 @@
 			</array>
 			<key>h1</key>
 			<array>
-				<string>Mobile Tablet Highlight1A</string>
-				<string>Mobile Tablet Highlight1B</string>
-				<string>Mobile Photo Journal</string>
-				<string>The Couch</string>
-				<string>World Cup</string>
+				<string>Second Act</string>
+				<string>Managing your career </string>
+				<string>What's Your Workout</string>
+				<string>Pay grade</string>
+				<string>Mossberg Solution</string>
+				<string>Moving On</string>
 				<string>The Middle Seat</string>
-				<string>Sports</string>
-				<string>Health Journal</string>
-				<string>Heart Beat</string>
-				<string>The Informed Patient</string>
-				<string>Lab Journal</string>
-				<string>Aches &amp; Claims</string>
-				<string>Research Report</string>
-				<string>Work &amp; Family</string>
-				<string>Cranky Consumer</string>
+				<string>Off the Beaten Track</string>
 			</array>
 			<key>h2</key>
 			<array>
-				<string>Mobile Tablet Highlight2A</string>
-				<string>Mobile Tablet Highlight2B</string>
-				<string>Mobile App Blog</string>
-				<string>The Mossberg Solution</string>
-				<string>Worth It</string>
-				<string>Personal Technology</string>
-				<string>Second Acts</string>
-				<string>Managing Your Career</string>
-				<string>Eyes on the Road</string>
-				<string>Pay Grade</string>
-				<string>Moving On</string>
-				<string>Off the Beaten Track</string>
+				<string>Health Journal</string>
+				<string>Health Beat</string>
+				<string>Informed Patient </string>
+				<string>In the Lab </string>
+				<string>Aches and Claims </string>
+				<string>Research Report </string>
+				<string>Work and Family</string>
+				<string>Cranky Consumer</string>
 			</array>
 		</dict>
 		<key>SECTION-3story-G-deco-C_template</key>
 		<dict>
 			<key>b1</key>
 			<array>
-				<false/>
 			</array>
 			<key>deco</key>
 			<array>
-				<string>Deco Summary Liondoor Personal Journal</string>
-				<string>Deco Summary Liondoor Section 1</string>
 			</array>
 			<key>h1</key>
 			<array>
-				<string>Mobile Tablet Highlight1A</string>
-				<string>Mobile Tablet Highlight1B</string>
-				<string>Mobile Photo Journal</string>
-				<string>The Couch</string>
-				<string>World Cup</string>
-				<string>The Middle Seat</string>
-				<string>Sports</string>
-				<string>Health Journal</string>
-				<string>Heart Beat</string>
-				<string>The Informed Patient</string>
-				<string>Lab Journal</string>
-				<string>Aches &amp;amp; Claims</string>
-				<string>Research Report</string>
-				<string>Work &amp;amp; Family</string>
-				<string>Cranky Consumer</string>
 			</array>
 			<key>h2</key>
 			<array>
-				<string>Mobile Tablet Highlight2A</string>
-				<string>Mobile Tablet Highlight2B</string>
-				<string>Mobile App Blog</string>
-				<string>The Mossberg Solution</string>
-				<string>Worth It</string>
-				<string>Personal Technology</string>
-				<string>Second Acts</string>
-				<string>Managing Your Career</string>
-				<string>Eyes on the Road</string>
-				<string>Pay Grade</string>
-				<string>Moving On</string>
-				<string>Off the Beaten Track</string>
 			</array>
 		</dict>
 		<key>SECTION-4story-smallG-deco_template</key>
 		<dict>
 			<key>b1</key>
 			<array>
-				<false/>
 			</array>
 			<key>deco</key>
 			<array>
-				<string>Deco Summary Liondoor Section 1</string>
-				<string>Deco Summary Liondoor Personal Journal</string>
 			</array>
 			<key>h1</key>
 			<array>
-				<string>Mobile Tablet Highlight1A</string>
-				<string>Mobile Tablet Highlight1B</string>
-				<string>The Mossberg Solution</string>
-				<string>Worth It</string>
-				<string>Second Acts</string>
-				<string>Managing Your Career</string>
-				<string>Personal Technology</string>
-				<string>Eyes on the Road</string>
-				<string>Pay Grade</string>
-				<string>Moving On</string>
-				<string>Off the Beaten Track</string>
 			</array>
 			<key>h2</key>
 			<array>
-				<string>Mobile Tablet Highlight2A</string>
-				<string>Mobile Tablet Highlight2B</string>
-				<string>The Couch</string>
-				<string>World Cup</string>
-				<string>The Middle Seat</string>
-				<string>Sports</string>
-				<string>Health Journal</string>
-				<string>Heart Beat</string>
-				<string>The Informed Patient</string>
-				<string>Lab Journal</string>
-				<string>Research Report</string>
-				<string>Cranky Consumer</string>
 			</array>
 		</dict>
 	</dict>
@@ -1870,24 +1543,45 @@
 		<dict>
 			<key>b1</key>
 			<array>
+				<false/>
 			</array>
 			<key>h1</key>
 			<array>
+				<string>Sentiment Tracker</string>
+				<string>Creativity</string>
+				<string>Film Review</string>
+				<string>Arts &amp;amp; Entertainment</string>
+				<string>Sightings</string>
 			</array>
 			<key>h2</key>
 			<array>
+				<string>Week in Ideas</string>
+				<string>Diagram</string>
+				<string>Food &amp;amp; Drink</string>
+				<string>Theater</string>
+				<string>Television</string>
 			</array>
 		</dict>
 		<key>SECTION-3story-G_template</key>
 		<dict>
 			<key>b1</key>
 			<array>
+				<string>Sentiment Tracker</string>
 			</array>
 			<key>h1</key>
 			<array>
+				<string>Creativity</string>
+				<string>Film Review</string>
+				<string>Arts &amp;amp; Entertainment</string>
+				<string>Sightings</string>
+				<string>Week in Ideas</string>
 			</array>
 			<key>h2</key>
 			<array>
+				<string>Diagram</string>
+				<string>Food &amp;amp; Drink</string>
+				<string>Theater</string>
+				<string>Television</string>
 			</array>
 		</dict>
 	</dict>
@@ -1990,34 +1684,26 @@
 			<array>
 				<string>Mobile Tablet Highlight1A</string>
 				<string>Mobile Tablet Highlight1B</string>
-				<string>Mobile Photo Journal</string>
-				<string>The Couch</string>
-				<string>World Cup</string>
-				<string>The Middle Seat</string>
-				<string>Sports</string>
-				<string>Health Journal</string>
-				<string>Heart Beat</string>
-				<string>The Informed Patient</string>
-				<string>Lab Journal</string>
-				<string>Aches &amp;amp; Claims</string>
-				<string>Research Report</string>
-				<string>Work &amp;amp; Family</string>
-				<string>Cranky Consumer</string>
+				<string>Tina Gaudoin on Style</string>
+				<string>On Style</string>
+				<string>European Life</string>
+				<string>Golf Journal</string>
+				<string>Cultural Conversation</string>
+				<string>Film Review</string>
+				<string>Middle Seat</string>
+				<string>Rumble Seat</string>
+				<string>Bonds</string>
 			</array>
 			<key>h2</key>
 			<array>
 				<string>Mobile Tablet Highlight2A</string>
 				<string>Mobile Tablet Highlight2B</string>
-				<string>Mobile App Blog</string>
-				<string>The Mossberg Solution</string>
-				<string>Worth It</string>
-				<string>Personal Technology</string>
-				<string>Second Acts</string>
-				<string>Managing Your Career</string>
-				<string>Eyes on the Road</string>
-				<string>Pay Grade</string>
-				<string>Moving On</string>
-				<string>Off the Beaten Track</string>
+				<string>The Quirk</string>
+				<string>Will Lyons on Wine</string>
+				<string>Bruce Palling on Food</string>
+				<string>Unsung Perfectionist</string>
+				<string>On Wine</string>
+				<string>Sports</string>
 			</array>
 		</dict>
 	</dict>

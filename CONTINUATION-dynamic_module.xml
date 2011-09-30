@@ -11,9 +11,13 @@
 		#image_container: { 
 			anchor-x: right,
 			width: 84,
-			height: 84,
-			padding: [ 0, 0, 4, 8 ],
 			display:{ if:=scale.small, then:none, else:default }
+		},
+		image: {
+			width:76,
+			height:76,
+			padding: [ 0, 0, 4, 8 ]
+			
 		}
     }</style>
     

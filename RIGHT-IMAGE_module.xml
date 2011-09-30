@@ -3,17 +3,23 @@
 	<style src="GLOBAL-stylesheet.ejs" />
 	<style>{
         jpml: {
-			padding: [0, 0, 0, 8]
+			padding: [0, 8, 0, 8]
 		},
 		#image_container: { 
+			width:301,
+			anchor-x:right,
+			anchor-y:top
+		},
+		image: {
 			width:262,
 			height:174,
-			anchor-x:right,
-			anchor-y:top,
 			padding:[0, 15, 24, 24]
-			
-			
 		},
+		#body: { 
+            column-count: {$divide: [=view.width, {$multiply:[350, =scale.dpi]}]},
+            column-gutter: 20
+        },
+		
 		.invisible: { display:none },
 		#small_headline: { display: { if: =options.small_headline, then:inherit }},
 		#medium_headline: { display: { if: =options.medium_headline, then:inherit }},

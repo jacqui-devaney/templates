@@ -8,12 +8,15 @@
         },
         #image_container: { 
 			width:270,
-			height:174,
 			anchor-x:right,
-			anchor-y:top,
-			padding:[10, 0, 10, 0]
+			anchor-y:top
 			
 			
+		},
+		image: {
+			width:262,
+			height:174,
+			padding: [10, 4]
 		},
 		.invisible: { display:none },
 		#small_headline: { display: { if: =options.small_headline, then:inherit }},

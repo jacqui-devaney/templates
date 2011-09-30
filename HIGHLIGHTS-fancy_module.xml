@@ -8,18 +8,26 @@
 				#landscape: { display:none },
 				#image_container: { 
 					anchor-x: right,
-					width: 80,
-					height: 84,
+					width: 86
+				},
+				image: {
+					width:76,
+					height:76,
 					padding: [ 0, 0, 0, 10 ]
+					
 				}
 			
 			}, else: {
 				jpml: { padding: [8, 0] },
 				#portrait: { display:none },
 				#image_container: { 
-					width: 225,
-					height: 126,
-					padding:[0, 20, 4, 0]
+					width: 225
+				},
+				image: {
+					width:225,
+					height:125,
+					padding:[0, 0, 4, 0]
+					
 				},
 				#inset: {
 					padding: [0]

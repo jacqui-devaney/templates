@@ -102,9 +102,9 @@
 	.body: {
 		font-name:DJ5Exchange-Medium,
 		text-indent:20,
-		font-size:15,
-		line-height:18,
-		text-overflow: {if: =intent.article, then:"\u00bb"},
+		font-size:{$multiply: [15, =view.zoomlevel]},
+		line-height:{$multiply: [18, =view.zoomlevel]},
+		text-overflow: {if: =intent.section, then:" \u00bb"},
         text-align: justify
 	},
 	strong: {
@@ -190,16 +190,12 @@
 		font-name:DJ5Exchange-Medium,
 		font-size:15,
 		line-height:17,
-		text-overflow: "\u00bb",
+		text-overflow: " \u00bb",
         text-align: justify
 	},
 	.A_size: {
 		width:76,
 		height:76
-	},
-	.C_size: {
-		width:167,
-		height:94
 	},
 	.D_size: {
 		width:262,

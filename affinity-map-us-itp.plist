@@ -2771,6 +2771,21 @@
 	</dict>
 	<key>WSJ_MAGAZINE</key>
 	<dict>
+		<key>CONTINUATION-fancy-6_template</key>
+		<dict>
+			<key>deco</key>
+			<array>
+				<string>Deco Summary Liondoor MagCont1</string>
+			</array>
+		</dict>
+		<key>CONTINUATION-fancy-bottom-6_template</key>
+		<dict>
+			<key>deco</key>
+			<array>
+				<string>Deco Summary Liondoor MagCont2</string>
+				<string>Deco Summary Liondoor MagCont3</string>
+			</array>
+		</dict>
 		<key>SECTION-1story-P-1highlight-white_template</key>
 		<dict>
 			<key>b1</key>

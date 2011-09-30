@@ -18,8 +18,7 @@
 
     }</style>
     <box id="marketstrap" embed="marketstrap" />
-    <box id="whatsnews" embed="whatsnewswide" />
-    <box id="whatsnews_wide" embed="whatsnews" />
+    <box id="whatsnews" embed="whatsnews" />
 	<box id="ad_background">
 		<box id="ad" class="ad-rectangle" embed="advertisement" />
 	</box>

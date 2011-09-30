@@ -8,7 +8,8 @@
 			padding: [4, 5, 0, 5],
             column-count:{if: =portrait, then:{$divide: [=view.width, {$multiply:[250, =scale.dpi]}]}, else: 1},
             column-gutter: 20,
-			column-height:balance
+			column-height:balance,
+			flow: article_body
         }},
 		{#mediabucket: {frame: [3, 3, 570, 612] }},
 		{if: =portrait, then: {

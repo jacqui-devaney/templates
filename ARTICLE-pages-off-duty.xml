@@ -1,4 +1,4 @@
-<pages class="article">
+<pages preprocessor="preprocessor.ejs" class="article">
 
     <!-- This template will always be used to render the front page -->
 	<page template="ARTICLE-front-off-duty_template.xml" type="prefix">

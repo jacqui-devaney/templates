@@ -59,17 +59,20 @@
 		
 	}},
 	{#fullpage_ad: {
-		anchor-x:center,
-		anchor-y:middle,
-		pixels-per-point-x: 1,
-		pixels-per-point-y: 1,
-		width: {$switch: [ {if: =scale.small, then: 600}, {if: =scale.large, then: 768} ]},
-		height: {$switch: [
-			{if: =scale.small, then: 1024},
-			{if: =scale.large, then: 899}
-		]}
-		
-	}},
+			anchor-x:center,
+			anchor-y:middle,
+			pixels-per-point-x: 1,
+			pixels-per-point-y: 1,
+			width: {if: =portrait, 
+				then: {$switch: [ {if: =scale.small, then: 600}, {if: =scale.large, then: 768} ]},
+				else: {$switch: [ {if: =scale.small, then: 828}, {if: =scale.large, then: 1024} ]}
+			},
+			height: {if: =portrait, 
+				then: {$switch: [ {if: =scale.small, then: 828}, {if: =scale.large, then: 899} ]},
+				else: {$switch: [ {if: =scale.small, then: 488}, {if: =scale.large, then: 643} ]}
+			}
+
+		}},
 	{if: =portrait, then: {
 		#ad_container:	{ frame: [0, 642, 555, 206]  }
 		},

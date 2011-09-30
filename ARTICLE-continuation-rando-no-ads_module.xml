@@ -10,6 +10,11 @@
             column-gutter: 20,
 			column-height:balance
         }},
+		{#body_continuation: {
+			content: from-flow(article_body),
+			flow: article_body
+		}},
+
 		{#rando_container: { 
 			background-image:url(rando_bars.png), 
 			background-position:bottom, 
@@ -67,7 +72,7 @@
 				<h2 class="rando_subhed" embed="subhed" />
 	        </box>
 		</box>
-		<panel class="body" embed="body"/>
+		<panel class="body" id="body_continuation" embed="body"/>
     </panel>
 	<box id="filler">
 		<box id="article_advertisement" class="ad-twocolumn" embed="advertisement"/>

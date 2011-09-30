@@ -10,6 +10,10 @@
             column-gutter: 20,
 			column-height:balance
         }},
+		{#body_continuation: {
+			content: from-flow(article_body),
+			flow: article_body
+		}},
 		{#mediabucket: {frame: [8, 0, 262, 197] }},
 		{if: =portrait, then: {
 			#mediabucket_container:	{ frame: [280, 0, 275, 207]  }
@@ -29,6 +33,6 @@
         <box id="ad_container">
 			<box id="article_advertisement" class="ad-twocolumn" embed="advertisement" />
 		</box>
-    	<panel class="body" embed="body" />
+    	<panel class="body" id="body_continuation" embed="body" />
 	</panel>
 </jpml>

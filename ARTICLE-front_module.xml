@@ -8,7 +8,8 @@
             padding: [8, 5, 0, 5],
 			column-count: {$divide: [=view.width, {$multiply:[250, =scale.dpi]}]},
             column-gutter: 20,
-			column-height:balance
+			column-height:balance,
+			flow: article_body
         }},
 		
 		{#mediabucket: {frame: [8, 2, 546, 385] }},

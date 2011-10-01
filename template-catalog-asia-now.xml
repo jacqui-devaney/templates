@@ -103,7 +103,7 @@
 		<template 
 			name="SECTION-2story-G-C_template.xml" 
 			title="2 story - G photo - C photo" 
-			section="ASIA,FRIDAY_JOURNAL,LIFE_AND_STYLE,OFF_DUTY,PERSONAL_JOURNAL,THE_,THE_JOURNAL_REPORT,WEEKEND_JOURNAL,BUSINESS_AND_FINANCE" 
+			section="ASIA,FRIDAY_JOURNAL,LIFE_AND_STYLE,OFF_DUTY,PERSONAL_JOURNAL,THE_JOURNAL_REPORT,WEEKEND_JOURNAL,BUSINESS_AND_FINANCE" 
 			min="4" 
 			usage="front" 
 		/>
@@ -170,20 +170,26 @@
 		<template 
 			name="CONTINUATION-fancy-6_template.xml" 
 			min="6" 
-			usage="continuation" 
 			title="" 
 			section="WSJ_MAGAZINE" 
+			usage="continuation" 
 			deco="true" 
 			page="2" 
 		/>
 		<template 
 			name="CONTINUATION-fancy-bottom-6_template.xml" 
+			min="6" section="WSJ_MAGAZINE" 
+			usage="continuation" 
+			deco="true" 
+			page="3" 
+		/>
+		<template 
+			name="CONTINUATION-fancy-bottom-6_template.xml" 
 			min="6" 
-			title="" 
 			section="WSJ_MAGAZINE" 
 			usage="continuation" 
 			deco="true" 
-			page="2" 
+			page="4" 
 		/>
 		<template 
 			name="WHATSNEWS-dummy_template.xml" 

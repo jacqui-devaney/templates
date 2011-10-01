@@ -26,15 +26,15 @@
 		<template name="SECTION-4story-D-C_template.xml" section="BUSINESS_AND_FINANCE,MONEY_AND_INVESTING" min="6" usage="front" />
 		<template name="SECTION-4story-smallG-deco_template.xml" section="MARKETPLACE,NEW_YORK,PERSONAL_JOURNAL,MONEY_AND_INVESTING" min="6" deco="true" usage="front" />
 		<template name="SECTION-4story-smallG-top_template.xml" section="MARKETPLACE,NEW_YORK" min="6" usage="front" />
-		<template name="SECTION-3story-G_template.xml" section="BUSINESS_AND_FINANCE,FRIDAY_JOURNAL,MARKETPLACE,MONEY_AND_INVESTING,OFF_DUTY,REVIEW,THE_JOURNAL_REPORT,WSJ_MAGAZINE" min="5" usage="front" />
+		<template name="SECTION-3story-G_template.xml" section="BUSINESS_AND_FINANCE,FRIDAY_JOURNAL,MARKETPLACE,MONEY_AND_INVESTING,OFF_DUTY,REVIEW,THE_,THE_JOURNAL_REPORT,WSJ_MAGAZINE" min="5" usage="front" />
 		<template name="SECTION-3story-G-deco-C_template.xml" section="NEW_YORK,PERSONAL_JOURNAL,MARKETPLACE" deco="true" min="5" usage="front" />
-		<template name="SECTION-2story-G-C_template.xml" section="FRIDAY_JOURNAL,JOURNAL_REPORT,OFF_DUTY,PERSONAL_JOURNAL,REVIEW,WEEKEND_JOURNAL" min="4" usage="front" />
-		<template name="SECTION-1story-P_template.xml" section="FRIDAY_JOURNAL,JOURNAL_REPORT,OFF_DUTY,PERSONAL_JOURNAL,REVIEW,WEEKEND_JOURNAL,NEW_YORK,WSJ_MAGAZINE" min="3" usage="front" />
-		<template name="SECTION-1story-P-1highlight_template.xml" section="FRIDAY_JOURNAL,JOURNAL_REPORT,OFF_DUTY,PERSONAL_JOURNAL,REVIEW,WEEKEND_JOURNAL,NEW_YORK,WSJ_MAGAZINE" min="3" usage="front" />
-		<template name="SECTION-1story-PV_template.xml" section="FRIDAY_JOURNAL,JOURNAL_REPORT,OFF_DUTY,PERSONAL_JOURNAL,REVIEW,WEEKEND_JOURNAL,NEW_YORK,WSJ_MAGAZINE" min="3" usage="front" />
-		<template name="SECTION-1story-PV-1highlight_template.xml" section="FRIDAY_JOURNAL,JOURNAL_REPORT,OFF_DUTY,PERSONAL_JOURNAL,REVIEW,WEEKEND_JOURNAL,NEW_YORK,WSJ_MAGAZINE" min="3" usage="front" />
-		<template name="SECTION-1story-PV-1highlight-white_template.xml" section="FRIDAY_JOURNAL,JOURNAL_REPORT,OFF_DUTY,PERSONAL_JOURNAL,REVIEW,WEEKEND_JOURNAL,NEW_YORK,WSJ_MAGAZINE" min="3" usage="front" />
-		<template name="SECTION-1story-PV-white_template.xml" section="FRIDAY_JOURNAL,JOURNAL_REPORT,OFF_DUTY,PERSONAL_JOURNAL,REVIEW,WEEKEND_JOURNAL,NEW_YORK,WSJ_MAGAZINE" min="3" usage="front" />
+		<template name="SECTION-2story-G-C_template.xml" section="FRIDAY_JOURNAL,THE_,THE_JOURNAL_REPORT,OFF_DUTY,PERSONAL_JOURNAL,REVIEW,WEEKEND_JOURNAL" min="4" usage="front" />
+		<template name="SECTION-1story-P_template.xml" section="FRIDAY_JOURNAL,THE_,THE_JOURNAL_REPORT,OFF_DUTY,PERSONAL_JOURNAL,REVIEW,WEEKEND_JOURNAL,NEW_YORK,WSJ_MAGAZINE" min="3" usage="front" />
+		<template name="SECTION-1story-P-1highlight_template.xml" section="FRIDAY_JOURNAL,THE_,THE_JOURNAL_REPORT,OFF_DUTY,PERSONAL_JOURNAL,REVIEW,WEEKEND_JOURNAL,NEW_YORK,WSJ_MAGAZINE" min="3" usage="front" />
+		<template name="SECTION-1story-PV_template.xml" section="FRIDAY_JOURNAL,THE_,THE_JOURNAL_REPORT,OFF_DUTY,PERSONAL_JOURNAL,REVIEW,WEEKEND_JOURNAL,NEW_YORK,WSJ_MAGAZINE" min="3" usage="front" />
+		<template name="SECTION-1story-PV-1highlight_template.xml" section="FRIDAY_JOURNAL,THE_,THE_JOURNAL_REPORT,OFF_DUTY,PERSONAL_JOURNAL,REVIEW,WEEKEND_JOURNAL,NEW_YORK,WSJ_MAGAZINE" min="3" usage="front" />
+		<template name="SECTION-1story-PV-1highlight-white_template.xml" section="FRIDAY_JOURNAL,THE_,THE_JOURNAL_REPORT,OFF_DUTY,PERSONAL_JOURNAL,REVIEW,WEEKEND_JOURNAL,NEW_YORK,WSJ_MAGAZINE" min="3" usage="front" />
+		<template name="SECTION-1story-PV-white_template.xml" section="FRIDAY_JOURNAL,THE_,THE_JOURNAL_REPORT,OFF_DUTY,PERSONAL_JOURNAL,REVIEW,WEEKEND_JOURNAL,NEW_YORK,WSJ_MAGAZINE" min="3" usage="front" />
 		<template name="SECTION-1story-PV-fancy-highlight_template.xml" section="WSJ_MAGAZINE,OFF_DUTY" min="4" usage="front" />
 		
 		
@@ -53,7 +53,7 @@
 		<template name="CONTINUATION-fancy-3OV-7_template.xml" min="7" usage="continuation" section="OFF_DUTY" deco="true" page="2" />
 		<template name="CONTINUATION-fancy-smallG-OV-6_template.xml" min="6" usage="continuation" section="OFF_DUTY" deco="true" page="2" />
 		<template name="CONTINUATION-fancy-6_template.xml" min="6" usage="continuation" SECTION="FRIDAY_JOURNAL,FRONT_SECTION,MONEY_AND_INVESTING,NEW_YORK,OFF_DUTY,PERSONAL_JOURNAL,WSJ_MAGAZINE" deco="true" page="2" />
-		<template name="CONTINUATION-fancy-bottom-6_template.xml" min="6" SECTION="JOURNAL_REPORT,MARKETPLACE,OPINION,REVIEW,WSJ_MAGAZINE" usage="continuation" deco="true" page="2" />
+		<template name="CONTINUATION-fancy-bottom-6_template.xml" min="6" SECTION="THE_,THE_JOURNAL_REPORT,MARKETPLACE,OPINION,REVIEW,WSJ_MAGAZINE" usage="continuation" deco="true" page="2" />
 		<template name="CONTINUATION-fancy-8_template.xml" min="8" SECTION="FRONT_SECTION,OFF_DUTY" usage="continuation" deco="true" page="2" />
 		<template name="CONTINUATION-fancy-bottom-8_template.xml" SECTION="OPINION" min="8" usage="continuation" deco="true" page="2" />
 		<template name="WHATSNEWS-dummy_template.xml" usage="front" min="1" section="WHATS_NEWS" />

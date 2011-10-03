@@ -508,13 +508,28 @@
 				<string>A-hed</string>
 			</array>
 		</dict>
+		<key>FRONT-4story-E-deco_template</key>
+		<dict>
+			<key>deco</key>
+			<array>
+				<string>Deco Summary Liondoor</string>
+			</array>
+			<key>b1</key>
+			<array>
+				<true/>
+			</array>
+			<key>b5</key>
+			<array>
+				<string>A-hed</string>
+			</array>
+		</dict>
 		<key>FRONT-4story-F-deco_template</key>
 		<dict>
 			<key>b1</key>
 			<array>
 				<true/>
 			</array>
-			<key>b4</key>
+			<key>b6</key>
 			<array>
 				<string>A-hed</string>
 			</array>

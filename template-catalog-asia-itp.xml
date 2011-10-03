@@ -358,10 +358,14 @@
 
 	<article-page-plans>
 		<article pages="ARTICLE-pages.xml" />
-		<article pages="ARTICLE-pages-hots.xml" type="Heard on the Street, Overheard" />
+		<article pages="ARTICLE-pages-hots.xml" type="Heard on the Street" />
+		<article pages="ARTICLE-pages-hots.xml" type="Headrd on the Street Other"/>
+		<article pages="ARTICLE-pages-hots.xml" type="Overheard"/>
 		<article pages="ARTICLE-pages-letters.xml" type="Letters" />
 		<article pages="ARTICLE-pages-off-duty.xml" type="Off Duty" />
-		<article pages="ARTICLE-pages-rando.xml" type="Review and Outlook" />
+		<article pages="ARTICLE-pages-rando.xml" type="Review &amp; Outlook (U.S.)"/>
+		<article pages="ARTICLE-pages-rando.xml" type="Review &amp; Outlook (Asia)"/>
+		<article pages="ARTICLE-pages-rando.xml" type="Review &amp; Outlook (Europe)"/>
 	</article-page-plans>
 	
 	<display-properties>

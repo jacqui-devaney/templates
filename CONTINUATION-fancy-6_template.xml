@@ -8,14 +8,14 @@
             #b3 : { frame: [256, 419, 256, 456], options: {hide_strap: {if:=articles.b3.subsection, equals:=articles.b2.subsection}} },
             #b4 : { frame: [512, 419, 256, 230], options: {hide_strap: {if:=articles.b4.subsection, equals:=articles.b3.subsection}} },
             #b5 : { frame: [512, 649, 256, 226], options: {hide_strap: {if:=articles.b5.subsection, equals:=articles.b4.subsection}} },
-            #deco : { frame: [264, 0, 491, 395], options: {normal_headline:true, bottom_border:true} }
+            #deco : { frame: [264, 4, 491, 395], options: {normal_headline:true, bottom_border:true} }
         }, else: {
 	        #b1 : { frame: [0, 0, 256, 619] },
 	        #b2 : { frame: [256, 0, 256, 406], options: {hide_strap: {if:=articles.b2.subsection, equals:=articles.b1.subsection}} },
 	        #b3 : { frame: [256, 419, 256, 200], options: {hide_strap: {if:=articles.b3.subsection, equals:=articles.b2.subsection}} },
 	        #b4 : { frame: [519, 419, 256, 200], options: {hide_strap: {if:=articles.b4.subsection, equals:=articles.b3.subsection}} },
 	        #b5 : { frame: [775, 419, 256, 200], options: {hide_strap: {if:=articles.b5.subsection, equals:=articles.b4.subsection}} },
-	        #deco : { frame: [521, 0, 491, 395], options: {normal_headline:true, bottom_border:true} }
+	        #deco : { frame: [521, 4, 491, 395], options: {normal_headline:true, bottom_border:true} }
         }
     }</style>
     <box id="b1" embed="article" module="CONTINUATION-dynamic_module.xml" />    

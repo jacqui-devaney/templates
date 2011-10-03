@@ -107,6 +107,12 @@
 		text-overflow: {if: =intent.section, then:" \u00bb"},
         text-align: justify
 	},
+	.body-bug: {
+		font-name:DJ5Utility,
+		font-size:{$multiply: [15, =view.zoomlevel]},
+		color:#cfc8bb,
+		content: "Y"
+	},
 	strong: {
 		font-name:DJ5Exchange-Bold
 		
@@ -192,9 +198,6 @@
 		line-height:17,
 		text-overflow: " \u00bb",
         text-align: left,
-		text-indent:0
-	},
-	#body-first-p: {
 		text-indent:20
 	},
 	

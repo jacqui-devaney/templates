@@ -1,7 +1,7 @@
 <jpml>
 <style src="GLOBAL_MODULES-stylesheet.ejs"/>
     <style>{
-        jpml: { padding: [0, 2, 2, 2] },
+        jpml: { padding: [0, 2, 8, 2] },
         #top_container: {
             border-image: url(ahed-border.png),
             border-slice: [14],

@@ -3,16 +3,15 @@
 	<style src="FRONT-stylesheet.ejs" />
 	<style> {
 		if: =portrait, then: {
-			#b1:			{ frame: [194, 37, 571, 210], options:{large_headline:true, show_image:true} },
+			#b1:			{ frame: [194, 37, 571, 222], options:{large_headline:true, show_image:true} },
 			#b2:			{ frame: [194, 260, 565, 294], options:{small_headline:true} },
-			#b3:			{ frame: [194, 569, 280, 300], options:{small_headline:true} },
-			#b4:			{ frame: [486, 569, 280, 310] },
-			#l2: 			{ frame: [194, 569, 280, 1] }
+			#b3:			{ frame: [194, 555, 280, 320], options:{small_headline:true} },
+			#b4:			{ frame: [486, 555, 280, 320] }
 		}, else: {
-			#b1:			{ frame: [205, 33, 571, 276], options:{large_headline:true, show_image:true, no_border:true} },
+			#b1:			{ frame: [205, 33, 571, 284], options:{large_headline:true, show_image:true, no_border:true} },
 			#b2:			{ frame: [205, 319, 565, 294], options:{small_headline:true} },
-			#b3:			{ frame: [787, 33, 238, 276], options:{small_headline:true, no_border:true} },
-			#b4:			{ frame: [787, 319, 238, 312] }
+			#b3:			{ frame: [787, 33, 238, 284], options:{small_headline:true, no_border:true} },
+			#b4:			{ frame: [787, 319, 238, 300] }
 		}
 
 	} </style>

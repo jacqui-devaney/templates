@@ -3,17 +3,17 @@
     <style src="FRONT-stylesheet.ejs"/>
     <style>{
         if: =portrait, then: {
-            #b1: 			{ frame: [194, 34, 571, 193], options:{large_headline:true, no_border:true} },
-            #deco: 			{ frame: [194, 235, 571, 275], options:{normal_headline:true} },
-            #b4: 			{ frame: [194, 518, 280, 171], options:{small_headline:true} },
-            #b5: 			{ frame: [194, 697, 280, 171], options:{small_headline:true}  },
-            #b6: 			{ frame: [486, 518, 280, 350] }
+            #b1: 			{ frame: [194, 34, 571, 200], options:{large_headline:true, no_border:true} },
+            #deco: 			{ frame: [194, 235, 571, 283], options:{normal_headline:true} },
+            #b4: 			{ frame: [194, 518, 280, 179], options:{small_headline:true} },
+            #b5: 			{ frame: [194, 697, 280, 179], options:{small_headline:true}  },
+            #b6: 			{ frame: [486, 518, 280, 358] }
         }, else: {
-            #b1:			{ frame: [205, 33, 571, 185], options:{large_headline:true, no_border:true} },
+            #b1:			{ frame: [205, 33, 571, 190], options:{large_headline:true, no_border:true} },
             #deco:			{ frame: [205, 224, 571, 274], options:{normal_headline:true} },
-            #b4: 			{ frame: [205, 500, 571, 113], options:{small_headline:true} },
-            #b5: 			{ frame: [787, 33, 238, 187], options:{small_headline:true, no_border:true} },
-            #b6: 			{ frame: [787, 224, 238, 400] }
+            #b4: 			{ frame: [205, 500, 571, 120], options:{small_headline:true} },
+            #b5: 			{ frame: [787, 33, 238, 190], options:{small_headline:true, no_border:true} },
+            #b6: 			{ frame: [787, 224, 238, 396] }
         }
 
     }</style>

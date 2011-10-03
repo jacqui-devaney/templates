@@ -542,13 +542,15 @@
 			</array>
 			<key>deco</key>
 			<array>
-				<string>A-hed</string>
+				<string>Deco Summary Liondoor</string>
 			</array>
 		</dict>
 		<key>FRONT-4story-Video-deco_template</key>
 		<dict>
 			<key>deco</key>
-			<array/>
+			<array>
+				<string>Deco Summary Liondoor</string>
+			</array>
 		</dict>
 		<key>FRONT-5story-F-deco_template</key>
 		<dict>
@@ -558,144 +560,7 @@
 			</array>
 			<key>deco</key>
 			<array>
-				<string>A-hed</string>
-			</array>
-		</dict>
-	</dict>
-	<key>THE_JOURNAL_REPORT</key>
-	<dict>
-		<key>CONTINUATION-fancy-bottom-6_template</key>
-		<dict>
-			<key>deco</key>
-			<array>
-				<string>Deco Summary Liondoor JournalReportCont1</string>
-			</array>
-		</dict>
-		<key>SECTION-1story-P-1highlight-white_template</key>
-		<dict>
-			<key>b1</key>
-			<array>
-				<true/>
-			</array>
-			<key>h3</key>
-			<array>
-				<string>Mobile Tablet Highlight1A</string>
-				<string>Mobile Tablet Highlight1B</string>
-				<string>Mobile Tablet Highlight2A</string>
-				<string>Mobile Tablet Highlight2B</string>
-			</array>
-		</dict>
-		<key>SECTION-1story-P-1highlight_template</key>
-		<dict>
-			<key>b1</key>
-			<array>
-				<true/>
-			</array>
-			<key>h3</key>
-			<array>
-				<string>Mobile Tablet Highlight1A</string>
-				<string>Mobile Tablet Highlight1B</string>
-				<string>Mobile Tablet Highlight2A</string>
-				<string>Mobile Tablet Highlight2B</string>
-			</array>
-		</dict>
-		<key>SECTION-1story-PV-1highlight_template</key>
-		<dict>
-			<key>b1</key>
-			<array>
-				<true/>
-			</array>
-			<key>h3</key>
-			<array>
-				<string>Mobile Tablet Highlight1A</string>
-				<string>Mobile Tablet Highlight1B</string>
-				<string>Mobile Tablet Highlight2A</string>
-				<string>Mobile Tablet Highlight2B</string>
-			</array>
-		</dict>
-		<key>SECTION-1story-PV-white_template</key>
-		<dict>
-			<key>b1</key>
-			<array>
-				<true/>
-			</array>
-			<key>h1</key>
-			<array>
-				<string>Mobile Tablet Highlight1A</string>
-				<string>Mobile Tablet Highlight1B</string>
-			</array>
-			<key>h2</key>
-			<array>
-				<string>Mobile Tablet Highlight2A</string>
-				<string>Mobile Tablet Highlight2B</string>
-			</array>
-		</dict>
-		<key>SECTION-1story-PV_template</key>
-		<dict>
-			<key>b1</key>
-			<array>
-				<true/>
-			</array>
-			<key>h1</key>
-			<array>
-				<string>Mobile Tablet Highlight1A</string>
-				<string>Mobile Tablet Highlight1B</string>
-			</array>
-			<key>h2</key>
-			<array>
-				<string>Mobile Tablet Highlight2A</string>
-				<string>Mobile Tablet Highlight2B</string>
-			</array>
-		</dict>
-		<key>SECTION-1story-P_template</key>
-		<dict>
-			<key>b1</key>
-			<array>
-				<true/>
-			</array>
-			<key>h1</key>
-			<array>
-				<string>Mobile Tablet Highlight1A</string>
-				<string>Mobile Tablet Highlight1B</string>
-			</array>
-			<key>h2</key>
-			<array>
-				<string>Mobile Tablet Highlight2A</string>
-				<string>Mobile Tablet Highlight2B</string>
-			</array>
-		</dict>
-		<key>SECTION-2story-G-C_template</key>
-		<dict>
-			<key>b1</key>
-			<array>
-				<true/>
-			</array>
-			<key>h1</key>
-			<array>
-				<string>Mobile Tablet Highlight1A</string>
-				<string>Mobile Tablet Highlight1B</string>
-			</array>
-			<key>h2</key>
-			<array>
-				<string>Mobile Tablet Highlight2A</string>
-				<string>Mobile Tablet Highlight2B</string>
-			</array>
-		</dict>
-		<key>SECTION-3story-G_template</key>
-		<dict>
-			<key>b1</key>
-			<array>
-				<true/>
-			</array>
-			<key>h1</key>
-			<array>
-				<string>Mobile Tablet Highlight1A</string>
-				<string>Mobile Tablet Highlight1B</string>
-			</array>
-			<key>h2</key>
-			<array>
-				<string>Mobile Tablet Highlight2A</string>
-				<string>Mobile Tablet Highlight2B</string>
+				<string>Deco Summary Liondoor</string>
 			</array>
 		</dict>
 	</dict>
@@ -1213,7 +1078,7 @@
 				<string>Mobile Tablet Highlight1A</string>
 				<string>Mobile Tablet Highlight1B</string>
 				<string>Slow Food Fast</string>
-				<string>Travele&apos;s Tale</string>
+				<string>Travele's Tale</string>
 				<string>Extra Credit</string>
 				<string>What to Wear There</string>
 				<string>RunwayRealWay</string>
@@ -1239,7 +1104,7 @@
 				<string>Mobile Tablet Highlight1A</string>
 				<string>Mobile Tablet Highlight1B</string>
 				<string>Slow Food Fast</string>
-				<string>Travele&apos;s Tale</string>
+				<string>Travele's Tale</string>
 				<string>Extra Credit</string>
 				<string>What to Wear There</string>
 				<string>RunwayRealWay</string>
@@ -1265,7 +1130,7 @@
 				<string>Mobile Tablet Highlight1A</string>
 				<string>Mobile Tablet Highlight1B</string>
 				<string>Slow Food Fast</string>
-				<string>Travele&apos;s Tale</string>
+				<string>Travele's Tale</string>
 				<string>Extra Credit</string>
 				<string>What to Wear There</string>
 				<string>RunwayRealWay</string>
@@ -1291,7 +1156,7 @@
 				<string>Mobile Tablet Highlight1A</string>
 				<string>Mobile Tablet Highlight1B</string>
 				<string>Slow Food Fast</string>
-				<string>Travele&apos;s Tale</string>
+				<string>Travele's Tale</string>
 				<string>Extra Credit</string>
 				<string>What to Wear There</string>
 				<string>RunwayRealWay</string>
@@ -1320,7 +1185,7 @@
 				<string>Mobile Tablet Highlight1A</string>
 				<string>Mobile Tablet Highlight1B</string>
 				<string>Slow Food Fast</string>
-				<string>Travele&apos;s Tale</string>
+				<string>Travele's Tale</string>
 				<string>Extra Credit</string>
 				<string>What to Wear There</string>
 				<string>RunwayRealWay</string>
@@ -1349,7 +1214,7 @@
 				<string>Mobile Tablet Highlight1A</string>
 				<string>Mobile Tablet Highlight1B</string>
 				<string>Slow Food Fast</string>
-				<string>Travele&apos;s Tale</string>
+				<string>Travele's Tale</string>
 				<string>Extra Credit</string>
 				<string>What to Wear There</string>
 				<string>RunwayRealWay</string>
@@ -1380,7 +1245,7 @@
 				<string>Extra Credit</string>
 				<string>What to Wear There</string>
 				<string>RunwayRealWay</string>
-				<string>Traveler&apos;s Tale</string>
+				<string>Traveler's Tale</string>
 				<string>Slow Food Fast</string>
 			</array>
 			<key>h2</key>
@@ -2396,6 +2261,143 @@
 				<string>Food &amp; Drink</string>
 				<string>Television</string>
 				<string>Life &amp; Style</string>
+			</array>
+		</dict>
+		<key>SECTION-3story-G_template</key>
+		<dict>
+			<key>b1</key>
+			<array>
+				<true/>
+			</array>
+			<key>h1</key>
+			<array>
+				<string>Mobile Tablet Highlight1A</string>
+				<string>Mobile Tablet Highlight1B</string>
+			</array>
+			<key>h2</key>
+			<array>
+				<string>Mobile Tablet Highlight2A</string>
+				<string>Mobile Tablet Highlight2B</string>
+			</array>
+		</dict>
+	</dict>
+	<key>THE_JOURNAL_REPORT</key>
+	<dict>
+		<key>CONTINUATION-fancy-bottom-6_template</key>
+		<dict>
+			<key>deco</key>
+			<array>
+				<string>Deco Summary Liondoor JournalReportCont1</string>
+			</array>
+		</dict>
+		<key>SECTION-1story-P-1highlight-white_template</key>
+		<dict>
+			<key>b1</key>
+			<array>
+				<true/>
+			</array>
+			<key>h3</key>
+			<array>
+				<string>Mobile Tablet Highlight1A</string>
+				<string>Mobile Tablet Highlight1B</string>
+				<string>Mobile Tablet Highlight2A</string>
+				<string>Mobile Tablet Highlight2B</string>
+			</array>
+		</dict>
+		<key>SECTION-1story-P-1highlight_template</key>
+		<dict>
+			<key>b1</key>
+			<array>
+				<true/>
+			</array>
+			<key>h3</key>
+			<array>
+				<string>Mobile Tablet Highlight1A</string>
+				<string>Mobile Tablet Highlight1B</string>
+				<string>Mobile Tablet Highlight2A</string>
+				<string>Mobile Tablet Highlight2B</string>
+			</array>
+		</dict>
+		<key>SECTION-1story-PV-1highlight_template</key>
+		<dict>
+			<key>b1</key>
+			<array>
+				<true/>
+			</array>
+			<key>h3</key>
+			<array>
+				<string>Mobile Tablet Highlight1A</string>
+				<string>Mobile Tablet Highlight1B</string>
+				<string>Mobile Tablet Highlight2A</string>
+				<string>Mobile Tablet Highlight2B</string>
+			</array>
+		</dict>
+		<key>SECTION-1story-PV-white_template</key>
+		<dict>
+			<key>b1</key>
+			<array>
+				<true/>
+			</array>
+			<key>h1</key>
+			<array>
+				<string>Mobile Tablet Highlight1A</string>
+				<string>Mobile Tablet Highlight1B</string>
+			</array>
+			<key>h2</key>
+			<array>
+				<string>Mobile Tablet Highlight2A</string>
+				<string>Mobile Tablet Highlight2B</string>
+			</array>
+		</dict>
+		<key>SECTION-1story-PV_template</key>
+		<dict>
+			<key>b1</key>
+			<array>
+				<true/>
+			</array>
+			<key>h1</key>
+			<array>
+				<string>Mobile Tablet Highlight1A</string>
+				<string>Mobile Tablet Highlight1B</string>
+			</array>
+			<key>h2</key>
+			<array>
+				<string>Mobile Tablet Highlight2A</string>
+				<string>Mobile Tablet Highlight2B</string>
+			</array>
+		</dict>
+		<key>SECTION-1story-P_template</key>
+		<dict>
+			<key>b1</key>
+			<array>
+				<true/>
+			</array>
+			<key>h1</key>
+			<array>
+				<string>Mobile Tablet Highlight1A</string>
+				<string>Mobile Tablet Highlight1B</string>
+			</array>
+			<key>h2</key>
+			<array>
+				<string>Mobile Tablet Highlight2A</string>
+				<string>Mobile Tablet Highlight2B</string>
+			</array>
+		</dict>
+		<key>SECTION-2story-G-C_template</key>
+		<dict>
+			<key>b1</key>
+			<array>
+				<true/>
+			</array>
+			<key>h1</key>
+			<array>
+				<string>Mobile Tablet Highlight1A</string>
+				<string>Mobile Tablet Highlight1B</string>
+			</array>
+			<key>h2</key>
+			<array>
+				<string>Mobile Tablet Highlight2A</string>
+				<string>Mobile Tablet Highlight2B</string>
 			</array>
 		</dict>
 		<key>SECTION-3story-G_template</key>

@@ -17,7 +17,19 @@
             #mediabucket_container:	{ frame: [0, 0, 574, 405]  }
         }, else: {
         	#mediabucket_container:	{ frame: [287, 0, 574, 405]  }
-        }}
+        }},
+		{#filler: {
+			position: relative,
+			top: 10,
+			left: 0,
+			right: 0,
+			bottom: 0,
+			min-height: 0,
+			background-image: url(articleBackground.png),
+			border-image:url(shadow.png),
+			border-width: [1, 0, 0, 0],
+			border-color:#b1aca1        
+		}}
 		]
     }</style>
 	<box id="continues_label">
@@ -39,6 +51,8 @@
         <panel class="body" embed="body"/>
 	    
 	</panel>
+	<box id="filler">
+	</box>
 	
 </jpml>
 

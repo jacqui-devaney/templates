@@ -6,7 +6,7 @@
 			#b1:	{ frame: [0, 10, 475, 610], options:{large_headline:true, show_image:true, no_border:true} },
 			#b2:	{ frame: [486, 10, 280, 204], options:{small_headline:true, no_border:true} },
 			#b3:	{ frame: [486, 214, 280, 204], options:{small_headline:true} },
-			#b4:	{ frame: [486, 418, 280, 204], options:{small_headline:true} },
+			#b4:	{ frame: [486, 418, 280, 202], options:{small_headline:true} },
 			#h1: {options:{highlight_dark:true}},
 			#h2: {options:{highlight_dark:true}}
 		}, else: {

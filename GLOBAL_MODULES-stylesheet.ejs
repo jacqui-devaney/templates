@@ -102,9 +102,16 @@
 	.body: {
 		font-name:DJ5Exchange-Medium,
 		text-indent:20,
-		font-size:{$multiply: [15, =view.zoomlevel]},
-		line-height:{$multiply: [18, =view.zoomlevel]},
-		text-overflow: {if: =intent.section, then:" \u00bb"},
+		font-size:{$multiply:15},
+		line-height:{$multiply:18},
+		text-overflow: " \u00bb",
+        text-align: justify
+	},
+	.article_body: {
+		font-name:DJ5Exchange-Medium,
+		text-indent:20,
+		font-size:{$multiply: [16, =view.zoomlevel]},
+		line-height:{$multiply: [20, =view.zoomlevel]},
         text-align: justify
 	},
 	.body-bug: {
@@ -126,8 +133,14 @@
 	},
 	.byline: {
 		font-name:DJ5Exchange-Semibold,
-		font-size:{$multiply: [13, =view.zoomlevel]},
-		line-height:{$multiply: [18, =view.zoomlevel]},
+		font-size:13,
+		line-height:18,
+		parargraph-padding: [ 0, 0, 3, 0 ]
+	},
+	.article_byline: {
+		font-name:DJ5Exchange-Semibold,
+		font-size:{$multiply: [16, =view.zoomlevel]},
+		line-height:{$multiply: [20, =view.zoomlevel]},
 		parargraph-padding: [ 0, 0, 3, 0 ]
 	},
 	.large_dek: {
@@ -138,8 +151,12 @@
 		color:#999
 	},
 	.hr: {
-		padding: [ 1, 0, 0, 0 ],
-		background-color:#b1aca1
+		border-width: [ 1, 0, 0, 0 ],
+		border-color:#b1aca1,
+		position:relative,
+		right:8,
+		left:8,
+		height:1
 	},
 	#hr: {
 		padding: [ 0, 0, 10, 0 ]
@@ -402,12 +419,14 @@
 	#continues_label: {
 		anchor-y:bottom,
 		anchor-x:right,
-		width:=view.width
+		width:=view.width,
+		padding: [0, 15, 8, 0]
 	},
 	#continued_label: {
 		anchor-y:top,
 		anchor-x:left,
-		width:=view.width
+		width:=view.width,
+		padding: [8, 15, 0, 0]
 	},
 	#mediabucket_container: {
 		display: {if: =page.mediabucket, then:inherit, else:none}

@@ -3,19 +3,23 @@
 	<style src="GLOBAL-stylesheet.ejs" />
 	<style>{
 		$join: [
-		{#header_top: { padding:[0, 0, 8, 5] }},
+		{#header_top: { padding:[18, 10, 8, 15] }},
 		{#body_container : { 
-			padding: [8, 5, 0, 5],
+			padding: [8, 15, 8, 15],
             column-count: {$divide: [=view.width, {$multiply:[250, =scale.dpi]}]},
             column-gutter: 20,
 			column-height:balance,
 			flow: article_body
         }},
-		{#mediabucket: {frame: [8, 2, 546, 385] }},
+		{#mediabucket: {
+			width:546,
+			height:385,
+			anchor-x:center
+		}},
 		{if: =portrait, then: {
-            #mediabucket_container:	{ frame: [0, 0, 574, 405]  }
+            #mediabucket_container:	{ frame: [0, 0, 565, 402]  }
         }, else: {
-        	#mediabucket_container:	{ frame: [287, 0, 574, 405]  }
+        	#mediabucket_container:	{ frame: [290, 0, 565, 402] }
         }},
 		{#filler: {
 			position: relative,
@@ -24,10 +28,9 @@
 			right: 0,
 			bottom: 0,
 			min-height: 0,
-			background-image: url(articleBackground.png),
-			border-image:url(shadow.png),
-			border-width: [1, 0, 0, 0],
-			border-color:#b1aca1        
+			border-image:url(articleBackground.png),
+			border-width: [16, 0, 0, 0],
+			border-slice: [16, 0, 0, 0]
 		}}
 
 		]
@@ -41,14 +44,14 @@
         <p class="letters_article_headline"><span embed="headline"/><mark class="key"/></p>
 		<h2 class="article_subhed" embed="subhed" />
     </panel>
-	<panel class="hr" />
+	<box class="hr"></box>
 
 	<panel id="body_container">
 		<box id="mediabucket_container">
 			<box id="mediabucket" embed="mediabucket" />
 		</box>
-	    <p class="byline" embed="byline"/>
-        <panel class="body" embed="body"/>
+	    <p class="article_byline" embed="byline"/>
+        <panel class="article_body" embed="body"/>
     </panel>
     <box id="filler">
 	</box>

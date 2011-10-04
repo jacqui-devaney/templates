@@ -1,10 +1,10 @@
 <jpml id="ARTICLE-front-rando_template">
     <style>{
         if: =portrait, then: {
-            #view: { frame: [10, 10, 573, 879] },
+            #view: { frame: [0, 0, 594, 899] },
 			#index: { frame: [594, 0, 173, 899]}
         }, else: {
-            #view : { frame: [10, 10, 863, 623] },
+            #view : { frame: [0, 0, 884, 643] },
 			#index: { frame: [884, 0, 139, 643]}        
         }
     }</style>

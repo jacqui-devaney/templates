@@ -5,7 +5,7 @@
 		$join: [
 		{#header_top: { padding:[0, 0, 8, 5] }},
 		{#body_container : { padding: [8, 5, 0, 5]}},
-		{.body: { 
+		{.article_body: { 
             column-count: {$divide: [=view.width, {$multiply:[250, =scale.dpi]}]},
             column-gutter: 20,
 			column-height:balance
@@ -33,6 +33,6 @@
         <box id="ad_container">
 			<box id="article_advertisement" class="ad-twocolumn" embed="advertisement" />
 		</box>
-    	<panel class="body" id="body_continuation" embed="body" />
+    	<panel class="article_body" id="body_continuation" embed="body" />
 	</panel>
 </jpml>

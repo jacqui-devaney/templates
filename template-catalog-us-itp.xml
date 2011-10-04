@@ -361,6 +361,7 @@
 			name="GENERIC-fullpagead-template.xml" 
 			usage="ads" 
 		/>
+		<template name="TEST-1-fonts_template.xml" max="999" section="OPINION" usage="front" />
 	</templates>
 
 	<article-page-plans>

@@ -1,6 +1,7 @@
 <jpml id="CONTINUATION-generic-1_template">
 	<style src="CONTINUATION-stylesheet.ejs" />
-    <style>{
+   	<style src="GLOBAL-stylesheet.ejs" />
+ 	<style>{
         if: =portrait, then: {
             #b1 : { frame: [0, 0, 256, 874] }
         }, else: {

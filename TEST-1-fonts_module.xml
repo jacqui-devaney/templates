@@ -1,0 +1,49 @@
+<jpml id="TEST-1-fonts_module">
+	<style>{
+		p:	{font-size:20, padding:[0, 0, 20, 0]},
+		#p1: { font-name: DJ5EscrowCond-Bold},
+		span: { font-name: DJ5EscrowCond-Bold},
+		#p2: { font-name: DJ5EscrowCond-BoldItalic},
+		#p3: { font-name: ChronicleDisplay-Roman},
+		#p4: { font-name: Stainless-Regular},
+		#p5: { font-name: DJ5RetinaCd-Bold},
+		#p6: { font-name: DJ5Masthead-Roman},
+		#p7: { font-name: DJ5EscrowOutline-Roman},
+		#p8: { font-name: DJ5Exchange-SemiboldItalic},
+		#p9: { font-name: DJ5Utility},
+		#p10: { font-name: DJ5Exchange-Medium},
+		#p11: { font-name: DJ5Exchange-MediumItalic},
+		#p12: { font-name: DJ5Exchange-Semibold},
+		#p13: { font-name: DJ5RetinaCd-Medium},
+		#p14: { font-name: DJ5RetinaCd-Semibold},
+		#p15: { font-name: Austin-Medium},
+		#p16: { font-name: DispatchCond-Bold},
+		#p17: { font-name: Stainless-Light},
+		#p18: { font-name: DJ5EscrowCond-Roman},
+		#p19: { font-name: DJ5EscrowWide-Roman},
+		#p20: { font-name: Stainless-Light}
+		
+		
+	}</style>
+
+	<p>Font Test</p>
+	<p id="p1">DJ5Escrow-Bold -- Headlines</p>
+	<p id="p2">DJ5EscrowCond-BoldItalic -- Letters Headline</p>
+	<p id="p3">ChronicleDisplay-Roman -- Off Duty Headline</p>
+	<p id="p4">Stainless-Regular -- Off Duty Subhed</p>
+	<p id="p5">DJ5RetinaCd-Bold -- Flashline</p>
+	<p id="p6">DJ5Masthead-Roman -- HOTS</p>
+	<p id="p7">DJ5EscrowOutline-Roman -- RandO</p>
+	<p id="p8">DJ5Exchange-SemiboldItalic -- RandO subhed</p>
+	<p id="p9"><span>DJ5Utility</span> K Y</p>
+	<p id="p10">DJ5Exchange-Medium -- Body</p>
+	<p id="p11">DJ5Exchange-MediumItalic -- Body italic</p>
+	<p id="p12">DJ5Exchange-Semibold -- Byline</p>
+	<p id="p13">DJ5RetinaCd-Medium -- Deco</p>
+	<p id="p14">DJ5RetinaCd-Semibold -- Deco</p>
+	<p id="p15">Austin-Medium -- WSJ Mag</p>
+	<p id="p16">DispatchCond-Bold -- Off Duty</p>
+	<p id="p17">Stainless-Light -- Off Duty</p>
+	<p id="p18">DJ5EscrowCond-Roman -- A-hed</p>
+	<p id="p19">DJ5EscrowWide-Roman -- Letters</p>
+</jpml>

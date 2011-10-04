@@ -4,8 +4,8 @@
 	<style>{
 		$join: [
 		{#header_top: { padding:[0, 0, 8, 5] }},
-		{#body_container : { padding: [8, 15, 0, 15]}},
-		{.body: { 
+		{#body_container : { padding: [8, 15, 8, 15]}},
+		{.article_body: { 
             column-count: {$divide: [=view.width, {$multiply:[250, =scale.dpi]}]},
             column-gutter: 20,
 			column-height:balance
@@ -37,6 +37,13 @@
 				padding:[20, 0]
 			}
 		}},
+		{#article_advertisement: {
+			min-height: 206,            
+			min-width: 555,            
+			anchor-x: center,            
+			anchor-y: middle        
+
+		}},
 		{#filler: {
 			position: relative,
 			top: 10,
@@ -47,13 +54,6 @@
 			border-image: url(articleBackground.png),
 			border-slice: [16, 0, 0, 0],
 			border-width: [16,0, 0, 0] 
-		}},
-		{#article_advertisement: {
-			min-height: 206,            
-			min-width: 555,            
-			anchor-x: center,            
-			anchor-y: middle        
-
 		}},
 		{#continued_label: {
 			padding: [0, 0, 0, 15]
@@ -72,7 +72,7 @@
 				<h2 class="rando_subhed" embed="subhed" />
 	        </box>
 		</box>
-		<panel class="body" id="body_continuation" embed="body"/>
+		<panel class="article_body" id="body_continuation" embed="body"/>
     </panel>
 	<box id="filler">
 		<box id="article_advertisement" class="ad-twocolumn" embed="advertisement"/>

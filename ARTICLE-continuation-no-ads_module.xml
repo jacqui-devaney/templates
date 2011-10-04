@@ -3,8 +3,8 @@
 	<style src="GLOBAL-stylesheet.ejs" />
 	<style>{
 		$join: [
-		{#body_container : { padding: [8, 15, 0, 15]}},
-		{.body: { 
+		{#body_container : { padding: [8, 15, 8, 15]}},
+		{.article_body: { 
             column-count: {$divide: [=view.width, {$multiply:[250, =scale.dpi]}]},
             column-gutter: 20,
 			column-height:balance,
@@ -28,10 +28,9 @@
 			right: 0,
 			bottom: 0,
 			min-height: 0,
-			background-image: url(articleBackground.png),
-			border-image:url(shadow.png),
-			border-width: [1, 0, 0, 0],
-			border-color:#b1aca1        
+			border-image:url(articleBackground.png),
+			border-width: [16, 0, 0, 0],
+			border-slice: [16, 0, 0, 0]
 		}},
 		{#article_advertisement: {
 			min-height: 206,            
@@ -54,11 +53,9 @@
         <box id="mediabucket_container">
 			<box id="mediabucket" embed="mediabucket" />
 		</box>
-		<panel class="body" id="body_continuation" embed="body"/>
+		<panel class="article_body" id="body_continuation" embed="body"/>
     </panel>
 	<box id="filler">
 		<box id="article_advertisement" embed="advertisement"/>
 	</box>
 </jpml>
-
-

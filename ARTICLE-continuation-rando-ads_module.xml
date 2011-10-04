@@ -4,7 +4,7 @@
 	<style>{
 		$join: [
 		{#body_container : { padding: [8, 5, 0, 5]}},
-		{.body: { 
+		{.article_body: { 
             column-count: {$divide: [=view.width, {$multiply:[250, =scale.dpi]}]},
             column-gutter: 20,
 			column-height:balance
@@ -52,6 +52,6 @@
 				<p class="rando_subhed" embed="subhed" />
 	        </box>
 		</box>
-		<panel class="body" id="body_continuation" embed="body"/>
+		<panel class="article_body" id="body_continuation" embed="body"/>
     </panel>
 </jpml>

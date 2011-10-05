@@ -19,7 +19,7 @@
 		{if: =portrait, then: {
 			#mediabucket_container:	{ frame: [290, 0, 275, 207]  }
         }, else: {
-			#mediabucket_container:	{ frame: [578, 0, 275, 207]  }
+			#mediabucket_container:	{ frame: [580, 0, 275, 207]  }
 		}},
 		{#filler: {
 			position: relative,

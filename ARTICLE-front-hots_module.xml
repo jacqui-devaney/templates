@@ -8,7 +8,8 @@
             column-count: {$divide: [=view.width, {$multiply:[250, =scale.dpi]}]},
             column-gutter: 20,
 			column-height:balance,
-			flow: article_body
+			flow: article_body,
+			min-height: { if: =page.mediabucket, then: 400 }
         }},
 		{#mediabucket: {
 			width:546,

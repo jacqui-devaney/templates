@@ -14,11 +14,16 @@
 			content: from-flow(article_body),
 			flow: article_body
 		}},
-		{#mediabucket: {frame: [8, 0, 262, 197] }},
+		{#mediabucket: {
+			width:260,
+			height:203,
+			anchor-x:center,
+			anchor-y:top
+		}},
 		{if: =portrait, then: {
-			#mediabucket_container:	{ frame: [280, 0, 275, 207]  }
+			#mediabucket_container:	{ frame: [280, 0, 275, 212]  }
         }, else: {
-			#mediabucket_container:	{ frame: [578, 0, 275, 207]  }
+			#mediabucket_container:	{ frame: [578, 0, 275, 212], background-color:red  }
 		}}
 		]
     }</style>

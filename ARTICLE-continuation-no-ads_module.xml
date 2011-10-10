@@ -15,7 +15,12 @@
 			flow: article_body
 		}},
 
-		{#mediabucket: {frame: [8, 0, 262, 197] }},
+		{#mediabucket: {
+			width:260,
+			height:203,
+			anchor-x:center,
+			anchor-y:top
+		}},
 		{if: =portrait, then: {
 			#mediabucket_container:	{ frame: [290, 0, 275, 207]  }
         }, else: {

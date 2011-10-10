@@ -10,8 +10,7 @@
         },
 		#image_container: { 
 			anchor-x: right,
-			width: 84,
-			display:{ if:=scale.small, then:none, else:default }
+			width: 84
 		},
 		image: {
 			width:76,

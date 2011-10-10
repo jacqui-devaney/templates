@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name = "viewport" content = "user-scalable = no; maximum-scale = 1.0; minimum-scale = 1.0;">	
+
+<title>Subscribe</title>
+	<link rel="stylesheet" type="text/css" media="all" href="account.css" />
+		<script>
+			
+			function findPosX(obj)
+            {
+                var curleft = 0;
+                if(obj.offsetParent)
+                    while(1) 
+                    {
+                      curleft += obj.offsetLeft;
+                      if(!obj.offsetParent)
+                        break;
+                      obj = obj.offsetParent;
+                    }
+                else if(obj.x)
+                    curleft += obj.x;
+                return curleft;
+            }
+    
+            function findPosY(obj)
+            {
+                var curtop = 0;
+                if(obj.offsetParent)
+                    while(1)
+                    {
+                      curtop += obj.offsetTop;
+                      if(!obj.offsetParent)
+                        break;
+                      obj = obj.offsetParent;
+                    }
+                else if(obj.y)
+                    curtop += obj.y;
+                return curtop;
+            }
+    
+            function centerOfDocumentElementById(id)
+            {
+                var elem = document.getElementById(id);
+                var x = findPosX(elem);
+                var y = findPosY(elem);
+                x += elem.offsetWidth/2;
+                y += elem.offsetHeight/2;
+                return x + "," + y;
+            }
+            
+		    function switch_visibility(switcher,switchee,switched, switches) {
+                var e = document.getElementById(switcher);
+                var f = document.getElementById(switchee);
+                var g = document.getElementById(switched);
+                var h = document.getElementById(switches);
+                e.style.display = 'none';
+                f.style.display = 'none';   
+                g.style.display = 'block';   
+                h.style.display = 'block';
+		    }
+		    
+		    function show_user_error(list, text)
+		    {
+                var allLists = document.getElementsByTagName('ul');
+                for ( i = 0; i < allLists.length; i++ )
+                {
+                    if ( allLists[i].getAttribute('id') == list )
+                    {
+                        var errorList = allLists[i].getElementsByTagName('li');
+                        for ( j = 0; j < errorList.length; j++ )
+                        {
+                            if ( errorList[j].getAttribute('id') == "user" )
+                            {
+                                var message = "Unable to activate your account due to the following error: " + text;
+                                errorList[j].innerHTML = message;
+                                errorList[j].style.display = 'block';
+                                break;
+                            }
+                        }
+                        
+                        break;
+                    }
+                }
+		    }
+		    
+		    function show_error(list, errId)
+		    {
+                var allLists = document.getElementsByTagName('ul');
+                for ( i = 0; i < allLists.length; i++ )
+                {
+                    if ( allLists[i].getAttribute('id') == list )
+                    {
+                        var errorList = allLists[i].getElementsByTagName('li');
+                        for ( j = 0; j < errorList.length; j++ )
+                        {
+                            if ( errorList[j].getAttribute('id') == errId )
+                            {
+                                errorList[j].style.display = 'block';
+                                break;
+                            }
+                        }
+                        
+                        break;
+                    }
+                }
+		    }
+		    
+		    function clear_errors(list)
+		    {
+                var allLists = document.getElementsByTagName('ul');
+                for ( i = 0; i < allLists.length; i++ )
+                {
+                    if ( allLists[i].getAttribute('id') == list )
+                    {
+                        var errorList = allLists[i].getElementsByTagName('li');
+                        for ( j = 0; j < errorList.length; j++ )
+                        {
+                            errorList[j].style.display = 'none';
+                        }
+                    
+                        break;
+                    }
+                }
+		    }
+		    
+		    function init()
+		    {
+		        clear_errors('create_errors');
+		    }
+		    
+		    window.onload = init;
+
+
+			function didStylesheetLoad() {
+				var e = document.createElement("div");
+				e.className = "loaded";
+				document.body.appendChild(e);
+				var loaded = e.clientHeight != 0;
+				document.body.removeChild(e);
+				return loaded;
+			}
+
+			window.addEventListener("load", function() {
+				if (!didStylesheetLoad()) {
+					var hash = parseInt(window.location.hash.substring(1));
+					if (isNaN(hash)) hash = 0;
+					if (hash < 5) {
+						var url = window.location.href.substr(0, window.location.href.length - window.location.hash.length);
+						window.location.href = url + "#" + (hash + 1);	
+						window.location.reload();
+					}
+				}
+			}, false);
+
+
+
+			</script>
+			
+	</script>
+	
+	
+	
+</head>
+	<body>
+            <div class="container" id="form">
+                <div class="header">
+                    <div class="center">
+                        <h1 id="create">Create Account</h1>
+                        <h1 id="log">Login</h1>
+                    </div>
+                </div>
+                <div id="wrapper">
+	                <!-- HIDE/SHOW CREATE ACCOUNT FORM -->
+	                <div class="form" id="create_account">
+	                    <h2 class="top">Already have a WSJ or Barron's account? <a href="#" onclick="switch_visibility('create_account','create','login','log');clear_errors('login_errors');">Login</a></h2>
+	                    <h2>Create an account to activate your WSJ.com and mobile subscription.</h2>
+	                    <ul id="create_errors" class="error">
+	                        <li id="error1">First name is required.</li>
+	                        <li id="error2">First name must be less than 32 characters.</li>
+	                        <li id="error3">The First name is invalid. Please re-enter.</li>
+	                        <li id="error4">Last name is required.</li>
+	                        <li id="error5">Last name must be less than 32 characters.</li>
+	                        <li id="error6">The last name is invalid. Please re-enter.</li>
+	                        <li id="error7">Email is required</li>
+	                        <li id="error8">Password is required.</li>
+	                        <li id="error9">Password must be at least 5 characters in length.</li>
+	                        <li id="error10">The password is invalid. Please re-enter.</li>
+	                        <li id="error11">Passwords do not match, please re-enter.</li>
+	                        <li id="error12">Please select a security question.</li>
+	                        <li id="error13">Security answer is required.</li>
+	                        <li id="error14">Email is invalid. Please re-enter.</li>
+	                        <li id="error15">You must agree to the terms and conditions before continuing.</li>
+	                        <li id="user">Hello World!</li>
+	                    </ul>
+	                    <form method="get" action="wsj://create">
+	                    <ul class="form">
+	                        <li>
+	                            <label>Email</label><input type="email" id="email" autocapitalize="off" name="email"/>
+	                        </li>
+	                        <li>
+	                            <label>First Name</label><input type="text" id="name" name="firstName"/>
+	                        </li>
+	                        <li>
+	                            <label>Last Name</label><input type="text" id="name" name="lastName"/>
+	                        </li>
+	                        <li>
+	                            <label>Password</label><input type="Password" id="password" name="password"/>
+	                        </li>
+	                        <li>
+	                            <label>Confirm Password</label><input type="Password"id="confirm" name="confirmPassword"/>
+	                        </li>
+	                        <li>
+	                            <label>Security Question</label>
+	                            <select name="question">
+	                                <option value="0">Please Select One</option>
+	                                <option value="1">What is your mother&#39;s maiden name?</option>
+	                                <option value="2">What was your first pet&#39;s name?</option>
+	                                <option value="3">What was the name of your elementary school?</option>
+	                                <option value="4">What was the make of your first car?</option>
+	                                <option value="5">Who was your favorite grade-school teacher?</option>
+                            
+	                            </select>
+                            
+	                        </li>
+	                        <li id="last">
+	                            <label>Security Answer</label><input type="text" id="answer" name="answer"/>
+	                        </li>
+	                    </ul>
+	                    <small>Collection and use of this information is subject to the WSJ.com <a href="http://online.wsj.com/public/page/privacy_policy.html">Privacy Policy</a>.</small>
+	                    <input type="submit" value="Create Account" id="button"/>
+	                    </form>
+	            </div>
+	            <!-- END ACCOUNT FORM -->
+			</div>
+			<div id="wrapper_login">
+	            <!-- HIDE/SHOW LOGIN FORM -->
+	            <div class="form" id="login">
+	                <h3><strong>Login with your email and password.</strong></h3>
+	                    <ul id="login_errors" class="error">
+	                        <li id="error1">First name is required.</li>
+	                        <li id="error2">First name must be less than 32 characters.</li>
+	                        <li id="error3">The First name is invalid. Please re-enter.</li>
+	                        <li id="error4">Last name is required.</li>
+	                        <li id="error5">Last name must be less than 32 characters.</li>
+	                        <li id="error6">The last name is invalid. Please re-enter.</li>
+	                        <li id="error7">Email is required</li>
+	                        <li id="error8">Password is required.</li>
+	                        <li id="error9">Password must be at least 5 characters in length.</li>
+	                        <li id="error10">The password is invalid. Please re-enter.</li>
+	                        <li id="error11">Passwords do not match, please re-enter.</li>
+	                        <li id="error12">Please select a security question.</li>
+	                        <li id="error13">Security answer is required.</li>
+	                        <li id="error14">Email is invalid. Please re-enter.</li>
+	                        <li id="error15">You must agree to the terms and conditions before continuing.</li>
+	                        <li id="user">Hello World!</li>
+	                    </ul>
+	                <form method="get" action="wsj://login">
+                	<input type="hidden" name="firstName" value="default" />
+					<input type="hidden" name="lastName" value="default" />
+					<ul class="form">
+	                    <li>
+	                        <label>Email</label><input type="email" id="email" autocapitalize="off" name="email"/>
+	                    </li>
+	                    <li id="last">
+	                        <label>Password</label><input type="password" id="password" name="password"/>
+	                    </li>
+	                </ul>
+	                <small><a href="wsj://click/forgot">Forgot Password?</a></small>
+	                <h3>To continue, you must select a Security Question and then supply a Security Answer</h3>
+	                <ul class="form">
+	                    <li>
+	                        <label>Security Question</label>
+	                        <select name="question">
+	                            <option value="0">Please Select One</option>
+	                            <option value="1">What is your mother&#39;s maiden name?</option>
+	                            <option value="2">What was your first pet&#39;s name?</option>
+	                            <option value="3">What was the name of your elementary school?</option>
+	                            <option value="4">What was the make of your first car?</option>
+	                            <option value="5">Who was your favorite grade-school teacher?</option>
+                        
+	                        </select>
+                        
+	                    </li>
+	                    <li id="last">
+	                        <label>Security Answer</label><input type="text" id="answer" name="answer"/>
+	                    </li>
+	                </ul>
+	                <input type="submit" value="Login" id="button" />
+	                </form>
+	            </div>
+	            <!-- END LOGIN FORM -->
+		</div>
+	</body>
+</html>

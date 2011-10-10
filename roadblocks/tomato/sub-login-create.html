@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>Subscribe</title>
+	<link rel="stylesheet" type="text/css" media="all" href="subscription.css" />
+		<script>
+            function findPosX(obj)
+            {
+                var curleft = 0;
+                if(obj.offsetParent)
+                    while(1) 
+                    {
+                      curleft += obj.offsetLeft;
+                      if(!obj.offsetParent)
+                        break;
+                      obj = obj.offsetParent;
+                    }
+                else if(obj.x)
+                    curleft += obj.x;
+                return curleft;
+            }
+    
+            function findPosY(obj)
+            {
+                var curtop = 0;
+                if(obj.offsetParent)
+                    while(1)
+                    {
+                      curtop += obj.offsetTop;
+                      if(!obj.offsetParent)
+                        break;
+                      obj = obj.offsetParent;
+                    }
+                else if(obj.y)
+                    curtop += obj.y;
+                return curtop;
+            }
+    
+            function centerOfDocumentElementById(id)
+            {
+                var elem = document.getElementById(id);
+                var x = findPosX(elem);
+                var y = findPosY(elem);
+                x += elem.offsetWidth/2;
+                y += elem.offsetHeight/2;
+                return x + "," + y;
+            }
+            
+            function setPrice(product, price)
+            {
+                var elements = document.getElementsByTagName('span');
+                for ( i = 0; i < elements.length; i++ )
+                {
+                    if ( elements[i].getAttribute('class') == product )
+                    {
+                        var spinnerSpan = elements[i].firstChild;
+                        elements[i].removeChild(spinnerSpan);
+                        elements[i].appendChild(document.createTextNode(price));
+                    }
+                }
+            }
+			function didStylesheetLoad() {
+				var e = document.createElement("div");
+				e.className = "loaded";
+				document.body.appendChild(e);
+				var loaded = e.clientHeight != 0;
+				document.body.removeChild(e);
+				return loaded;
+			}
+
+			window.addEventListener("load", function() {
+				if (!didStylesheetLoad()) {
+					var hash = parseInt(window.location.hash.substring(1));
+					if (isNaN(hash)) hash = 0;
+					if (hash < 5) {
+						var url = window.location.href.substr(0, window.location.href.length - window.location.hash.length);
+						window.location.href = url + "#" + (hash + 1);	
+						window.location.reload();
+					}
+				}
+			}, false);
+
+		</script>
+
+</head>
+	<body>
+		<div id="form">
+			<div class="scrim">
+				<a id="close" onclick="document.location.href='wsj://click/close';" class="button"><img src="close_button.png" class="close"></a>
+				<div class="container clearfix">
+					<div class="header">
+						<h1>Welcome to The Wall Street Journal Tablet Edition</h1>
+					</div>
+					<div class="offer" id="subscribe">
+						<h2>Subscribe for <span class="com.n2n.blackcover.sub.2month"><span class="spinner"><img src="spinner.gif" /></span></span>/wk &amp; get:</h2>
+						<ul>
+							<li>The Wall Street Journal as published every morning</li>
+							<li>Updated news throughout the day with the "Now Edition"</li>
+							<li>Exclusive subscriber content - including access online and on your mobile phone</li>
+						</ul>
+						<a id="subscribe" onClick="document.location.href='wsj://click/subscribe/com.n2n.blackcover.sub.2month';" class="button"><span>Subscribe for <span class="com.n2n.blackcover.sub.2month"><span class="spinner"><img src="load_spinner.gif" /></span></span>/wk</span></a> 	
+					</div>
+					<div class="offer" id="login">
+						<h2>Already a WSJ Subscriber or Registered User?</h2>
+						<a id="login" onClick="document.location.href='wsj://click/login';" class="button"><span>Log In</span></a>
+						<h2>New to WSJ? Create a Free Account</h2>
+						<ul>
+							<li>Access to all free articles, slideshows and video</li>
+							<li>Personalize your watchlist</li>
+							<li>Email articles to friends</li>
+						</ul>
+						<a id="register" onClick="document.location.href='wsj://click/register';" class="button"><span>Create Account</span></a> 				
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

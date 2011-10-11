@@ -405,9 +405,6 @@
 		line-height:30,
 		padding: [0, 0, 5, 0]
 	},
-	#continued_label: {
-		display: { if: =page.count, equals:1, then:none, else:inherit}
-	},
 	#continued: { content: { $switch: [
 		{ if: =app.language, equals: en, then: "Continued" },
 		{ if: =app.language, equals: de, then: "Mehr" }
@@ -430,7 +427,8 @@
 		anchor-y:bottom,
 		anchor-x:right,
 		width:=view.width,
-		padding: [0, 15, 8, 0]
+		padding: [0, 15, 8, 0],
+		display: { if: =page.count, equals:1, then:none, else:inherit}
 	},
 	#continued_label: {
 		anchor-y:top,

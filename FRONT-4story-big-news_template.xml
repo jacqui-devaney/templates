@@ -6,14 +6,14 @@
 			#b1:			{ frame: [8, 34, 752, 330], options:{bignews_huge_headline:true, no_border:true} },
 			#b2:			{ frame: [194, 365, 377, 256], options:{small_headline:true} },
 			#b3:			{ frame: [194, 621, 377, 255], options:{small_headline:true} },
-			#b4:			{ frame: [582, 365, 183, 298], options:{no_image:true} },
+			#b4:			{ frame: [582, 365, 183, 298], options:{no_image:true, left:true, small_ahed:true} },
 			#whatsnews:		{ frame: [10, 365, 183, 522] },
 			#ad_background:			{ frame: [582, 672, 183, 197] }
 		}, else: {
 			#b1:			{ frame: [11, 34, 1002, 318], options:{bignews_big_headline:true, no_border:true} },
-			#b2:			{ frame: [205, 352, 183, 268], options:{small_headline:true} },
-			#b3:			{ frame: [399, 352, 183, 268], options:{small_headline:true} },
-			#b4:			{ frame: [593, 352, 183, 268], options:{no_image:true} },
+			#b2:			{ frame: [205, 352, 183, 268], options:{small_headline:true, left:true} },
+			#b3:			{ frame: [399, 352, 183, 268], options:{small_headline:true, left:true} },
+			#b4:			{ frame: [593, 352, 183, 268], options:{no_image:true, left:true, small_ahed:true} },
 			#whatsnews:		{ frame: [11, 353, 183, 266] },
 			#ad_background:			{ frame: [809, 385, 183, 197] }
 		}

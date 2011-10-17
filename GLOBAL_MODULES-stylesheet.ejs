@@ -59,11 +59,10 @@
 		text-transform:uppercase
 	},
 	.article_flashline: {
-		font-name:DJ5RetinaCd-Bold,
+		font-name:DJ5RetinaCd-SemiBold,
 		text-align:left,
 		font-size:20,
-		color:#656565,
-		padding: [0, 0, 5, 0]
+		color:#656565
 	},
 	.hots_flashline: {
 		font-name:DJ5Masthead-Roman,
@@ -104,7 +103,7 @@
 		font-size:{$multiply:15},
 		line-height:{$multiply:18},
 		text-overflow: " \u00bb",
-        text-align: justify
+        text-align: { if: =options.left, then:left, else:justify}
 	},
 	h2: {
 		font-name:DJ5Exchange-Bold,
@@ -197,15 +196,10 @@
 		line-height:15,
 		text-align:justify
 	},
-	#strap: {
-		background-color:#e4e4e4
-		
-	},
 	.subsection: {
 		color:#000,
-		font-name:DJ5RetinaCd-Semibold,
+		font-name:DJ5RetinaCd-Medium,
 		font-size:18
-			
 	},
 	.continuation_headline: {
 		font-name:DJ5Exchange-Bold,
@@ -321,14 +315,14 @@
 	},
 	.ahed_headline: {
 		font-name:DJ5EscrowCond-Italic,
-		font-size:24,
-		line-height:24,
+		font-size: {if: =options.small_ahed, then:20, else:24},
+		line-height: {if: =options.small_ahed, then:20, else:24},
 		text-align:center
 	},
 	.ahed_subhed: {
 		font-name:DJ5EscrowCond-Roman,
-		font-size:18,
-		line-height:22,
+		font-size: {if: =options.small_ahed, then:16, else:18},
+		line-height: {if: =options.small_ahed, then:20, else:24},
 		text-align:center
 	},
 	.ahed_byline: {

@@ -28,7 +28,7 @@
 		},
 		.highlight_body: {
 			text-overflow: "\u00bb",
-        	text-align: justify
+			padding: [4, 0, 0, 0]
 		}
     }</style>
     <box id="image_container">

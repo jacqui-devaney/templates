@@ -1,12 +1,12 @@
 <jpml id="TEST-1-fonts_template">
 	<style>{
 		if: =portrait, then: {
-			box: {frame:[0, 0, 768, 1024]}
+			#b1: {frame:[0, 0, 768, 1024]}
 		}, else: {
-			box: {frame:[0, 0, 1024, 768]}
+			#b1: {frame:[0, 0, 1024, 768]}
 		
 		}
 	}</style>
-	<box embed="article" module="Test-1-fonts_module.xml"/>
+	<box id="b1" embed="article" module="TEST-1-fonts_module.xml"/>
 </jpml>
 

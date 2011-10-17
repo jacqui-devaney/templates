@@ -6,7 +6,7 @@
 			#b1:	{ frame: [0, 10, 768, 188], options:{large_headline:true} },
 			#b2:	{ frame: [0, 198, 281, 422], options:{small_headline:true, show_image:true} },
 			#b3:	{ frame: [292, 198, 281, 422], options:{small_headline:true} },
-			#b4:	{ frame: [583, 198, 183, 422], options:{small_headline:true, show_image:true} },
+			#b4:	{ frame: [583, 198, 183, 422], options:{small_headline:true, show_image:true, left:true} },
 			#h1: 	{options:{highlight_dark:true}},
 			#h2: 	{options:{highlight_dark:true}}
 			
@@ -14,7 +14,7 @@
 			#b1:	{ frame: [11, 10, 768, 188], options:{large_headline:true} },
 			#b2:	{ frame: [11, 199, 281, 420], options:{small_headline:true, show_image:true} },
 			#b3:	{ frame: [303, 199, 281, 420], options:{small_headline:true} },
-			#b4:	{ frame: [594, 199, 183, 420], options:{small_headline:true, show_image:true} },
+			#b4:	{ frame: [594, 199, 183, 420], options:{small_headline:true, show_image:true, left:true} },
 			#h1: 	{options:{highlight_dark:true}},
 			#h2: 	{options:{highlight_dark:true}}
 		}

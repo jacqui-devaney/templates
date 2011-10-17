@@ -53,8 +53,8 @@
 			},
             #deco : { 
 						frame: {$switch: [
-							{if: =scale.small, then: [264, 4, 491, 345]},
-							{if: =scale.large, then: [264, 4, 491, 395]}
+							{if: =scale.small, then: [264, 8, 491, 345]},
+							{if: =scale.large, then: [264, 8, 491, 395]}
 						]},
 						options: {normal_headline:true, bottom_border:true}
 			}
@@ -66,7 +66,7 @@
 	        #b5 : { frame: [256, 420, 256, 197], options: {hide_strap: {if:=articles.b5.subsection, equals:=articles.b4.subsection}} },
 	        #b6 : { frame: [512, 420, 256, 197], options: {hide_strap: {if:=articles.b6.subsection, equals:=articles.b5.subsection}} },
             #b7 : { frame: [768, 420, 256, 197], options: {hide_strap: {if:=articles.b7.subsection, equals:=articles.b6.subsection}} },
-	        #deco : { frame: [521, 0, 491, 395], options: {normal_headline:true, bottom_border:true} }
+	        #deco : { frame: [521, 8, 491, 395], options: {normal_headline:true, bottom_border:true} }
         }
     }</style>
     <box id="b1" embed="article" module="CONTINUATION-dynamic_module.xml" />    

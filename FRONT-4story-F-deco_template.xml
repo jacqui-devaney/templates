@@ -29,7 +29,7 @@
 		#b2:	{ 
 					frame: {$switch: [
 						{if: =scale.small, then: [205, 326, 280, 292]},
-						{if: =scale.large, then: [205, 476, 280, 144]}
+						{if: =scale.large, then: [205, 476, 571, 144]}
 					]},
 					options:{small_headline:true} 
 				},

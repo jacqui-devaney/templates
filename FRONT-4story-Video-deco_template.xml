@@ -11,9 +11,9 @@
 					]},
 					options:{normal_headline:true} 
 			},
-			#b2:			{ frame: [194, 622, 183, 253], options:{small_headline:true} },
-			#b3:			{ frame: [388, 622, 183, 253], options:{small_headline:true} },
-			#b4:			{ frame: [582, 622, 183, 253], options:{small_headline:true} }
+			#b2:			{ frame: [194, 622, 183, 253], options:{small_headline:true, left:true} },
+			#b3:			{ frame: [388, 622, 183, 253], options:{small_headline:true, left:true} },
+			#b4:			{ frame: [582, 622, 183, 253], options:{small_headline:true, left:true} }
 			
 		}, else: {
 			#b1:	{ 

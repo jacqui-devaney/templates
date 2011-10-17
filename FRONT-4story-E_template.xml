@@ -4,7 +4,7 @@
 	<style> {
 		if: =portrait, then: {
 			#b1:			{ frame: [194, 37, 571, 222], options:{large_headline:true, show_image:true} },
-			#b2:			{ frame: [194, 260, 565, 294], options:{small_headline:true} },
+			#b2:			{ frame: [194, 260, 565, 294], options:{small_headline:true, left:true} },
 			#b3:			{ frame: [194, 555, 280, 320], options:{small_headline:true} },
 			#b4:			{ frame: [486, 555, 280, 320] }
 		}, else: {
@@ -20,7 +20,7 @@
 						{if: =scale.small, then: [205, 273, 565, 348]},
 						{if: =scale.large, then: [205, 319, 565, 294]}
 					]},
-					options:{small_headline:true} 
+					options:{small_headline:true, left:true} 
 			},
 			#b3:	{ 
 					frame: {$switch: [

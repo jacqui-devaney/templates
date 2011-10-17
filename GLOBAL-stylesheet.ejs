@@ -2,7 +2,7 @@
 	$join: [
 	{jpml: {
 		image-scale: { if: =intent.template, then: {$max:[=scale.pagex,=scale.pagey]}, else: =scale.dpi },
-		text-scale: =scale.dpi,
+		text-scale: 1,
 		pixels-per-point-x: { if: =intent.template, then: =scale.pagex, else: =scale.dpi },
 		pixels-per-point-y: { if: =intent.template, then: =scale.pagey, else: =scale.dpi }
 	}},

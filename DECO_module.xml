@@ -30,13 +30,6 @@
 					}
 					}}
 			]},
-			{#icon: {             
-				width: 100,
-				height: 100,
-				anchor-x: left,
-				anchor-y: bottom,
-				background-color: white
-			}},
 			{#deco_container: { 
 				padding: [ 8, 0 ],
 				position:relative
@@ -47,7 +40,8 @@
 			{#deco_bottom_headline: { display: { if: =options.bottom_headline, then:inherit }}},
 			{#deco_small_headline: { display: { if: =options.small_headline, then:inherit }}},
 			{.deco_caption: {
-				max-height: 30
+				max-height: 30,
+				display: { if: =options.no_caption, then:none, else:inherit }
 			}}
 		]
 	}</style>

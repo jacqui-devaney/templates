@@ -12,9 +12,6 @@
     <page template="ARTICLE-continuation-rando-no-ads_template.xml" type="repeat">
 		<link id="view" module="ARTICLE-continuation-rando-no-ads_module.xml"/>
 	</page>
-    <page template="ARTICLE-continuation-rando-no-ads_template.xml" type="repeat">
-		<link id="view" module="ARTICLE-continuation-rando-no-ads_module.xml"/>
-	</page>
 	
     <!-- The last page of every article uses column leveling with a background matte,
      which is not supported in conjunction with the ads template. The "suffix" type
@@ -23,9 +20,7 @@
 		<link id="view" module="ARTICLE-continuation-rando-no-ads_module.xml"/>
 	</page>	
 	
-    <!-- Optionally, any pages with the "coda" type are displayed after the 
-     article pagination. This can be used for advertising, but has a side effect
-     when swiping left (no ads between articles), so this is currently unused. -->
-	<!-- <page template="generic-fullpagead-template.xml" type="coda" /> -->
+    <page template="GENERIC-fullpagead-template.xml" type="interstitial" />
+	
 	
 </pages>

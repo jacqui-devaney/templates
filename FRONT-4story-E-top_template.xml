@@ -5,8 +5,8 @@
 		if: =portrait, then: {
 			#b1:			{ frame: [194, 37, 375, 548], options:{large_headline:true, show_image:true, no_border:true} },
 			#b2:			{ frame: [582, 37, 183, 548], options:{small_headline:true, no_border:true} },
-			#b3:			{ frame: [194, 586, 280, 300], options:{small_headline:true} },
-			#b4:			{ frame: [486, 586, 280, 300] }
+			#b3:			{ frame: [194, 586, 280, 290], options:{small_headline:true} },
+			#b4:			{ frame: [486, 586, 280, 290] }
 		}, else: {
 			#b1:			{ frame: [205, 33, 375, 587], options:{large_headline:true, show_image:true, no_border:true}  },
 			#b2:			{ frame: [593, 33, 183, 587], options:{small_headline:true, no_border:true}  },
@@ -24,8 +24,8 @@
 		<box id="ad" class="ad-rectangle" embed="advertisement" />
 	</box>
 	<box id="b1" embed="article" module="TOP-IMAGE_module.xml" />
-	<box id="b2" embed="article" module="TOP-IMAGE_module.xml" />
-	<box id="b3" embed="article" module="TOP-IMAGE_module.xml" />
+	<box id="b2" embed="article" module="FRONT-NO-IMAGE_module.xml" />
+	<box id="b3" embed="article" module="FRONT-NO-IMAGE_module.xml" />
 	<box id="b4" embed="article" module="AHED_module.xml" />
 	
 </jpml>

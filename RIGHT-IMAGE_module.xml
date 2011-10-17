@@ -16,8 +16,11 @@
 			padding:[0, 15, 24, 24]
 		},
 		#body: { 
-            column-count: {$divide: [=view.width, {$multiply:[350, =scale.dpi]}]},
-            column-gutter: 20
+            column-count: {$switch: [
+				{if: =scale.small, then: {$divide: [=view.width, {$multiply:[200, =scale.dpi]}]}},
+				{if: =scale.large, then: {$divide: [=view.width, {$multiply:[350, =scale.dpi]}]}}
+			]}, 
+			column-gutter: 20
         },
 		
 		.invisible: { display:none },

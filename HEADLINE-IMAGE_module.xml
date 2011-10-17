@@ -39,7 +39,7 @@
 			{#skinny_wide: {
 				height:{$multiply: [=view.width, 0.39] },
 				display: { if: =options.show_image_skinny, then:inherit },
-				padding: [0, 0, 8, 0]
+				padding: [0, 8, 8, 8]
 			}},
 			{.invisible: { display:none }},
 			{#small_headline: { display: { if: =options.small_headline, then:inherit }}},
@@ -48,13 +48,14 @@
 			]
 		}</style>
 	<box id="wrapper">
-		<image id="tall_wide" class="invisible" embed="summary-image"/>
-		<image id="skinny_wide" class="invisible" embed="summary-image"/>
 		<panel id="headline">
 			<p id="small_headline" class="invisible"><span embed="headline" /><mark class="key" /></p>
 			<p id="medium_headline" class="invisible"><span embed="headline" /><mark class="key" /></p>
 			<p id="large_headline" class="invisible"><span embed="headline" /><mark class="key" /></p>
 		</panel>
+		<image id="tall_wide" class="invisible" embed="summary-image"/>
+		<image id="skinny_wide" class="invisible" embed="summary-image"/>
+		
 		<panel id="body_container">
 	        <panel id="body">
 	            <p class="byline" embed="byline"/>

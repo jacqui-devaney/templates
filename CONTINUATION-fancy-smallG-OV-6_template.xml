@@ -3,12 +3,47 @@
 	<style src="GLOBAL-stylesheet.ejs" />
 	<style>{
         if: =portrait, then: {
-            #b1 : { frame: [0, 430, 256, 446] },
-            #b2 : { frame: [256, 430, 256, 446], options: {hide_strap: {if:=articles.b2.subsection, equals:=articles.b1.subsection}} },
-            #b3 : { frame: [512, 430, 256, 222], options: {hide_strap: {if:=articles.b3.subsection, equals:=articles.b2.subsection}} },
-            #b4 : { frame: [512, 653, 256, 222], options: {hide_strap: {if:=articles.b4.subsection, equals:=articles.b3.subsection}} },
-	        #deco : { frame: [0, 0, 504, 420], options: {bottom_headline:true, bottom_border:true} },
-            #deco2 : { frame: [512, 0, 252, 420], options: {bottom_border:true, small_headline:true} }
+	        #b1 : { 
+					frame: {$switch: [
+						{if: =scale.small, then: [4, 356, 253, 520]},
+						{if: =scale.large, then: [4, 430, 253, 446]}
+					]}
+			},
+	        #b2 : { 
+					frame: {$switch: [
+						{if: =scale.small, then: [256, 356, 252, 520]},
+						{if: =scale.large, then: [256, 430, 250, 446]}
+					]},
+					options: {hide_strap: {if:=articles.b2.subsection, equals:=articles.b1.subsection}} 
+			},
+	        #b3 : { 
+					frame: {$switch: [
+						{if: =scale.small, then: [512, 356, 256, 260]},
+						{if: =scale.large, then: [512, 430, 256, 222]}
+					]},
+					options: {hide_strap: {if:=articles.b3.subsection, equals:=articles.b2.subsection}} 
+			},
+	        #b4 : { 
+					frame: {$switch: [
+						{if: =scale.small, then: [512, 616, 256, 260]},
+						{if: =scale.large, then: [512, 653, 256, 222]}
+					]},
+					options: {hide_strap: {if:=articles.b4.subsection, equals:=articles.b3.subsection}} 
+			},
+	        #deco : { 
+						frame: {$switch: [
+							{if: =scale.small, then: [0, 0, 504, 348]},
+							{if: =scale.large, then: [0, 0, 504, 420]}
+						]},
+						options: {bottom_headline:true, bottom_border:true} 
+			},
+            #deco2 : { 
+						frame: {$switch: [
+							{if: =scale.small, then: [512, 0, 252, 348]},
+							{if: =scale.large, then: [512, 0, 252, 420]}
+						]},
+						options: {bottom_border:true, small_headline:true} 
+			}
 	    }, else: {
 	        #b1 : { frame: [0, 0, 256, 619] },
 	        #b2 : { frame: [256, 430, 256, 190], options: {hide_strap: {if:=articles.b2.subsection, equals:=articles.b1.subsection}} },

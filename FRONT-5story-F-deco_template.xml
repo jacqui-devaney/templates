@@ -10,10 +10,37 @@
 			#b4:			{ frame: [194, 628, 280, 248], options:{small_headline:true} },
 			#b5:			{ frame: [486, 628, 280, 248] }
 		}, else: {
-			#b1:			{ frame: [205, 34, 571, 135], options:{large_headline:true, no_border:true} },
-			#deco:			{ frame: [205, 169, 571, 307], options:{normal_headline:true} },
-			#b2:			{ frame: [205, 476, 280, 144], options:{small_headline:true} },
-			#b3:			{ frame: [496, 476, 280, 144], options:{small_headline:true} },
+			#b1:	{ 
+						frame: {$switch: [
+							{if: =scale.small, then: [205, 34, 571, 292]},
+							{if: =scale.large, then: [205, 34, 571, 135]}
+						]},
+						options:{large_headline:true, no_border:true} 
+				},
+			#deco:	{ 
+						frame: {$switch: [
+							{if: =scale.small, then: [496, 326, 280, 292]},
+							{if: =scale.large, then: [205, 169, 571, 307]}
+						]},
+						options: {$switch: [
+							{if: =scale.small, then: {normal_headline:true, no_caption:true}},
+							{if: =scale.large, then: {normal_headline:true}}						
+						]}
+					},
+			#b2:	{ 
+						frame: {$switch: [
+							{if: =scale.small, then: [205, 326, 280, 146]},
+							{if: =scale.large, then: [205, 476, 280, 144]}
+						]},
+						options:{small_headline:true} 
+					},
+			#b3:	{ 
+						frame: {$switch: [
+							{if: =scale.small, then: [205, 472, 280, 146]},
+							{if: =scale.large, then: [496, 476, 280, 144]}
+						]},
+						options:{small_headline:true} 
+					},
 			#b4:			{ frame: [787, 33, 237, 193], options:{small_headline:true, no_border:true} },
 			#b5:			{ frame: [787, 227, 237, 394] }
 		}
@@ -25,11 +52,11 @@
 	<box id="ad_background" class="front_ad">
 		<box id="ad" class="ad-rectangle" embed="advertisement" />
 	</box>
-	<box id="b1" embed="article" module="TOP-IMAGE_module.xml" />
+	<box id="b1" embed="article" module="FRONT-NO-IMAGE_module.xml" />
 	<box id="deco" embed="article" module="DECO_module.xml" />
-	<box id="b2" embed="article" module="TOP-IMAGE_module.xml" />
-	<box id="b3" embed="article" module="TOP-IMAGE_module.xml" />
-	<box id="b4" embed="article" module="TOP-IMAGE_module.xml" />
+	<box id="b2" embed="article" module="FRONT-NO-IMAGE_module.xml" />
+	<box id="b3" embed="article" module="FRONT-NO-IMAGE_module.xml" />
+	<box id="b4" embed="article" module="FRONT-NO-IMAGE_module.xml" />
 	<box id="b5" embed="article" module="AHED_module.xml" />
 	
 </jpml>

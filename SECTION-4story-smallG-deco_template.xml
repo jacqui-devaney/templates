@@ -3,11 +3,23 @@
 	<style src="SECTION-stylesheet.ejs" />
 	<style>{
 		if: =portrait, then: {
-			#b1:	{ frame: [0, 8, 475, 204], options:{large_headline:true, no_border:true} },
-			#deco:	{ frame: [0, 212, 475, 408], options:{normal_headline:true} },
+			#b1:	{ 
+						frame: {$switch: [
+						{if: =scale.small, then: [0, 8, 475, 284]},
+						{if: =scale.large, then: [0, 8, 475, 204]}
+					]},
+					options:{large_headline:true, no_border:true} 
+			},
+			#deco:	{ 
+						frame: {$switch: [
+						{if: =scale.small, then: [0, 292, 475, 328]},
+						{if: =scale.large, then: [0, 212, 475, 408]}
+					]},
+					options:{normal_headline:true} 
+			},
 			#b2:	{ frame: [486, 8, 280, 204], options:{small_headline:true}},
 			#b3:	{ frame: [486, 212, 280, 204], options:{small_headline:true, border:true}},
-			#b4:	{ frame: [486, 416, 280, 204], options:{small_headline:true, border:true} },
+			#b4:	{ frame: [486, 416, 280, 203], options:{small_headline:true, border:true} },
 			#h1: {options:{highlight_dark:true}},
 			#h2: {options:{highlight_dark:true}}
 		}, else: {

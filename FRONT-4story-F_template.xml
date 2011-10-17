@@ -8,10 +8,34 @@
 			#b3:			{ frame: [195, 674, 280, 200], options:{small_headline:true} },
 			#b4:			{ frame: [486, 473, 280, 402] }
 		}, else: {
-			#b1:			{ frame: [205, 33, 571, 430], options:{large_headline:true, show_image_skinny:true, no_border:true} },
-			#b2:			{ frame: [205, 472, 571, 140], options:{small_headline:true} },
-			#b3:			{ frame: [787, 33, 238, 172], options:{small_headline:true, no_border:true} },
-			#b4:			{ frame: [787, 214, 238, 413] }
+			#b1:	{ 
+						frame: {$switch: [
+							{if: =scale.small, then: [205, 34, 377, 585]},
+							{if: =scale.large, then: [205, 33, 571, 430]}
+						]},
+						options:{large_headline:true, show_image_skinny:true, no_border:true} 
+			},
+			#b2:	{ 
+						frame: {$switch: [
+							{if: =scale.small, then: [582, 34, 280, 292]},
+							{if: =scale.large, then: [205, 472, 571, 140]}
+						]},
+						options:{small_headline:true} 
+			},
+			#b3:	{ 
+						frame: {$switch: [
+							{if: =scale.small, then: [582, 328, 280, 292]},
+							{if: =scale.large, then: [787, 33, 238, 172]}
+						]},
+						options:{small_headline:true, no_border:true} 
+			},
+			#b4:	{ 
+						frame: {$switch: [
+							{if: =scale.small, then: [862, 34, 162, 585]},
+							{if: =scale.large, then: [787, 214, 238, 413]}
+						]},
+						options: {no_image:true}
+			}
 		}
 				
 	}</style>
@@ -21,8 +45,8 @@
 	<box id="ad_background" class="front_ad">
 		<box id="ad" class="ad-rectangle" embed="advertisement" />
 	</box>
-	<box id="b1" embed="article" module="TOP-IMAGE_module.xml" />
-	<box id="b2" embed="article" module="TOP-IMAGE_module.xml" />
-	<box id="b3" embed="article" module="TOP-IMAGE_module.xml" />
+	<box id="b1" embed="article" module="HEADLINE-IMAGE_module.xml" />
+	<box id="b2" embed="article" module="FRONT-NO-IMAGE_module.xml" />
+	<box id="b3" embed="article" module="FRONT-NO-IMAGE_module.xml" />
 	<box id="b4" embed="article" module="AHED_module.xml" />
 </jpml>

@@ -3,17 +3,77 @@
 	<style src="FRONT-stylesheet.ejs" />
 	<style> {
 		if: =portrait, then: {
-			#b1:			{ frame: [194, 34, 280, 333], options:{large_headline:true, no_border:true} },
-			#deco:			{ frame: [486, 34, 280, 558], options:{normal_headline:true, no_border:true} },
-			#b2:			{ frame: [194, 368, 280, 223], options:{small_headline:true} },
-			#b3:			{ frame: [194, 591, 280, 285] },
-			#b4:			{ frame: [486, 591, 280, 285], options:{small_headline:true} }
+			#b1:	{ 
+						frame: {$switch: [
+							{if: =scale.small, then: [194, 34, 280, 466]},
+							{if: =scale.large, then: [194, 34, 280, 333]}
+						]},
+						options:{large_headline:true, no_border:true} 
+			},
+			#deco:	{ 
+						frame: {$switch: [
+							{if: =scale.small, then: [486, 34, 280, 466]},
+							{if: =scale.large, then: [486, 34, 280, 558]}
+						]},
+						options:{normal_headline:true, no_border:true} 
+			},
+			#b2:	{ 
+						frame: {$switch: [
+							{if: =scale.small, then: [194, 500, 280, 188]},
+							{if: =scale.large, then: [194, 368, 280, 223]}
+						]},
+						options:{small_headline:true} 
+			},
+			#b3:	{ 
+						frame: {$switch: [
+							{if: =scale.small, then: [194, 689, 280, 187]},
+							{if: =scale.large, then: [194, 591, 280, 285]}
+						]},
+						options:{small_headline:true, no_border:true}
+			},
+			#b4:	{ 
+						frame: {$switch: [
+							{if: =scale.small, then: [486, 500, 280, 376]},
+							{if: =scale.large, then: [486, 591, 280, 285]}
+						]},
+						options:{small_headline:true} 
+			}
 		}, else: {
-			#b1:			{ frame: [205, 34, 280, 330], options:{large_headline:true, no_border:true} },
-			#deco:			{ frame: [496, 34, 280, 558], options:{normal_headline:true, no_border:true} },
-			#b2:			{ frame: [205, 365, 280, 255], options:{small_headline:true} },
-			#b3:			{ frame: [787, 243, 237, 377] },
-			#b4:			{ frame: [787, 34, 237, 208], options:{small_headline:true, no_border:true} }
+			#b1:	{ 
+						frame: {$switch: [
+							{if: =scale.small, then: [205, 34, 340, 330]},
+							{if: =scale.large, then: [205, 34, 280, 330]}
+						]},
+						options:{large_headline:true, no_border:true} 
+			},
+			#deco:	{ 
+						frame: {$switch: [
+							{if: =scale.small, then: [556, 34, 220, 585]},
+							{if: =scale.large, then: [496, 34, 280, 558]}
+						]},
+						options:{normal_headline:true, no_border:true} 
+			},
+			#b2:	{ 
+						frame: {$switch: [
+							{if: =scale.small, then: [205, 365, 340, 255]},
+							{if: =scale.large, then: [205, 365, 280, 255]}
+						]},
+						options:{small_headline:true} 
+			},
+			#b3:	{ 
+						frame: {$switch: [
+							{if: =scale.small, then: [787, 34, 237, 208]},
+							{if: =scale.large, then: [787, 34, 237, 208]}
+						]},
+						options:{small_headline:true}
+			},
+			#b4:	{ 
+						frame: {$switch: [
+							{if: =scale.small, then: [787, 243, 237, 377]},
+							{if: =scale.large, then: [787, 243, 237, 377]}
+						]}
+			}
+			
 		}
 	
 	} </style>
@@ -23,10 +83,10 @@
 	<box id="ad_background" class="front_ad">
 		<box id="ad" class="ad-rectangle" embed="advertisement" />
 	</box>
-	<box id="b1" embed="article" module="TOP-IMAGE_module.xml" />
-	<box id="b2" embed="article" module="TOP-IMAGE_module.xml" />
+	<box id="b1" embed="article" module="FRONT-NO-IMAGE_module.xml" />
+	<box id="b2" embed="article" module="FRONT-NO-IMAGE_module.xml" />
 	<box id="deco" embed="article" module="DECO_module.xml" />
-	<box id="b3" embed="article" module="AHED_module.xml" />
-	<box id="b4" embed="article" module="TOP-IMAGE_module.xml" />
+	<box id="b3" embed="article" module="FRONT-NO-IMAGE_module.xml" />
+	<box id="b4" embed="article" module="AHED_module.xml" />
 	
 </jpml>

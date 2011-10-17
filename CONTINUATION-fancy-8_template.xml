@@ -3,14 +3,61 @@
 	<style src="GLOBAL-stylesheet.ejs" />
 	<style>{
         if: =portrait, then: {
-            #b1 : { frame: [0, 0, 256, 408] },
-            #b2 : { frame: [0, 416, 256, 231], options: {hide_strap: {if:=articles.b2.subsection, equals:=articles.b1.subsection}} },
-            #b3 : { frame: [0, 642, 256, 231], options: {hide_strap: {if:=articles.b3.subsection, equals:=articles.b2.subsection}} },
-            #b4 : { frame: [256, 416, 256, 231], options: {hide_strap: {if:=articles.b4.subsection, equals:=articles.b3.subsection}} },
-            #b5 : { frame: [256, 642, 256, 231], options: {hide_strap: {if:=articles.b5.subsection, equals:=articles.b4.subsection}} },
-            #b6 : { frame: [512, 416, 256, 231], options: {hide_strap: {if:=articles.b6.subsection, equals:=articles.b5.subsection}} },
-            #b7 : { frame: [512, 642, 256, 231], options: {hide_strap: {if:=articles.b7.subsection, equals:=articles.b6.subsection}} },
-            #deco : { frame: [272, 0, 491, 395], options: {normal_headline:true, bottom_border:true} }
+            #b1 : { 
+ 					frame: {$switch: [
+						{if: =scale.small, then: [0, 0, 256, 349]},
+						{if: =scale.large, then: [0, 0, 256, 411]}
+					]}
+			},
+            #b2 : { 
+					frame: {$switch: [
+						{if: =scale.small, then: [0, 357, 256, 260]},
+						{if: =scale.large, then: [0, 416, 256, 231]}
+					]},
+					options: {hide_strap: {if:=articles.b2.subsection, equals:=articles.b1.subsection}} 
+			},
+            #b3 : { 
+					frame: {$switch: [
+						{if: =scale.small, then: [0, 617, 256, 259]},
+						{if: =scale.large, then: [0, 642, 256, 231]}
+					]},
+					options: {hide_strap: {if:=articles.b3.subsection, equals:=articles.b2.subsection}} 
+			},
+            #b4 : { 
+					frame: {$switch: [
+						{if: =scale.small, then: [256, 357, 256, 260]},
+						{if: =scale.large, then: [256, 416, 256, 231]}
+					]},
+					options: {hide_strap: {if:=articles.b4.subsection, equals:=articles.b3.subsection}} 
+			},
+            #b5 : { 
+					frame: {$switch: [
+						{if: =scale.small, then: [256, 617, 256, 259]},
+						{if: =scale.large, then: [256, 642, 256, 231]}
+					]},
+					options: {hide_strap: {if:=articles.b5.subsection, equals:=articles.b4.subsection}}
+			},
+            #b6 : { 
+					frame: {$switch: [
+						{if: =scale.small, then: [512, 357, 256, 260]},
+						{if: =scale.large, then: [512, 416, 256, 231]}
+					]},
+					options: {hide_strap: {if:=articles.b6.subsection, equals:=articles.b5.subsection}} 
+			},
+            #b7 : { 
+					frame: {$switch: [
+						{if: =scale.small, then: [512, 617, 256, 259]},
+						{if: =scale.large, then: [512, 642, 256, 231]}
+					]},
+					options: {hide_strap: {if:=articles.b7.subsection, equals:=articles.b6.subsection}} 
+			},
+            #deco : { 
+						frame: {$switch: [
+							{if: =scale.small, then: [264, 4, 491, 345]},
+							{if: =scale.large, then: [264, 4, 491, 395]}
+						]},
+						options: {normal_headline:true, bottom_border:true}
+			}
         }, else: {
 	        #b1 : { frame: [0, 0, 256, 413] },
 	        #b2 : { frame: [0, 420, 256, 197], options: {hide_strap: {if:=articles.b2.subsection, equals:=articles.b1.subsection}} },

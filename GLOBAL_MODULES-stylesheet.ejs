@@ -12,8 +12,7 @@
 	#large_headline: {
 		font-name:DJ5EscrowCond-Bold,
 		font-size:40,
-		line-height:44,
-		text-scale: {$multiply:[.9, =scale.dpi]}
+		line-height:44
 		
 	},
 	#medium_headline: {
@@ -351,10 +350,17 @@
 	},
 	#opinion_line: { 
 		anchor-x:center, 
-		height:1, 
-		width:210, 
-		top:30, 
-		background-color:#d5d5d5
+		border-width: [0, 0, 1, 0],
+		border-color:#b1aca1, 
+		width: {$switch: [
+			{if: =scale.small, then: 145},
+			{if: =scale.large, then: 210}
+		]},
+		top:{$switch: [
+			{if: =scale.small, then: 20},
+			{if: =scale.large, then: 30}
+		]},
+		height:1
 	},
 	.rando_heading: {
 		font-name:DJ5EscrowOutline-Roman,
@@ -374,16 +380,26 @@
 	},
 	.letters_heading: {
 		font-name:DJ5EscrowWide-Roman,
-		font-size:20,
+		font-size:{$switch: [
+			{if: =scale.small, then: 18},
+			{if: =scale.large, then: 20}
+		]},
 		color:#333,
 		text-align:center
 	},
 	#letters_line: { 
 		anchor-x:center, 
-		height:1, 
-		width:310, 
-		top:30, 
-		background-color:#d5d5d5
+		border-width: [0, 0, 1, 0],
+		border-color:#b1aca1, 
+		width: {$switch: [
+			{if: =scale.small, then: 210},
+			{if: =scale.large, then: 310}
+		]},
+		top:{$switch: [
+			{if: =scale.small, then: 20},
+			{if: =scale.large, then: 30}
+		]},
+		height:1
 	},
 	.opinion_headline: {
 		font-name:DJ5EscrowCond-Bold,

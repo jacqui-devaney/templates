@@ -1,0 +1,48 @@
+{
+        #debug_computed: { content: 
+            {$join: [
+                "  portrait: ",     {$switch: [=portrait, "false"]},
+                ", landscape: ",    {$switch: [=landscape, "false"]},
+                ", standard: ",     {$switch: [=landscape, "false"]},
+                ", widescreen: ",   {$switch: [=widescreen, "false"]},
+                ", scale.dpi: ",    {$switch: [=scale.dpi, "undefined"]},
+                ", scale.foo: ",    {$switch: [=scale.foo, "undefined"]},
+                ", scale.pagex: ",  {$switch: [=scale.pagex, "undefined"]},
+                ", scale.pagey: ",  {$switch: [=scale.pagey, "undefined"]},
+                ", scale.small: ",  {$switch: [=scale.small, "undefined"]},
+                ", scale.large: ",  {$switch: [=scale.large, "undefined"]},
+                " "
+            ]}
+        },
+        #debug_view: { content: 
+            {$join: [
+                "  view.width: ",       {$switch: [=view.width, "undefined"]},
+                ", view.height: ",      {$switch: [=view.height, "undefined"]},
+                ", view.zoomlevel: ",   {$switch: [=view.zoomlevel, "undefined"]},
+                ", view.orientation: ", {$switch: [=view.orientation, "undefined"]},
+                " "
+            ]}
+        },	
+        #debug_device: { content: 
+            {$join: [
+                "  device.dpi: ",       {$switch: [=device.dpi, "undefined"]},
+                ", device.size: ",      {$switch: [=device.size, "undefined"]},
+                ", device.width: ",     {$switch: [=device.width, "undefined"]},
+                ", device.height: ",    {$switch: [=device.height, "undefined"]},
+                ", device.platform: ",  {$switch: [=device.platform, "undefined"]},
+                ", device.model: ",     {$switch: [=device.model, "undefined"]},
+                ", device.os: ",        {$switch: [=device.os, "undefined"]},
+                " "
+            ]}
+        },   
+        #debug_issue: { content: 
+            {$join: [
+                "  issue.locked: ",     {$switch: [=issue.locked, "false"]},
+                ", issue.type: ",       {$switch: [=issue.type, "undefined"]},
+                ", issue.date: ",       {$switch: [=issue.date, "undefined"]},
+                ", issue.time: ",       {$switch: [=issue.time, "undefined"]},
+                ", issue.edition: ",    {$switch: [=issue.edition, "undefined"]},
+                " "
+            ]}
+        }     
+}

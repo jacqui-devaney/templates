@@ -18,14 +18,14 @@
 			#b2:	{ 
 						frame: {$switch: [
 							{if: =scale.small, then: [582, 34, 280, 292]},
-							{if: =scale.large, then: [205, 472, 571, 140]}
+							{if: =scale.large, then: [205, 462, 571, 158]}
 						]},
 						options:{small_headline:true} 
 			},
 			#b3:	{ 
 						frame: {$switch: [
 							{if: =scale.small, then: [582, 328, 280, 292]},
-							{if: =scale.large, then: [787, 33, 238, 172]}
+							{if: =scale.large, then: [787, 33, 238, 180]}
 						]},
 						options:{small_headline:true, no_border:true} 
 			},

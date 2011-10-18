@@ -1,7 +1,7 @@
 <jpml>
 <style src="GLOBAL_MODULES-stylesheet.ejs"/>
     <style>{
-        jpml: { padding: [0, 2, 8, 2] },
+        jpml: { padding: [0, 2, 0, 2] },
         #top_container: {
             border-image: url(ahed-border.png),
             border-slice: [14],
@@ -21,12 +21,8 @@
 		image: {
 			padding: [0, 4, 8, 8]
 		},
-		#stars: { padding: [10, 0, 15, 0] },
-		#body: { 
-            column-count: {$divide: [=view.width, {$multiply:[250, =scale.dpi]}]},
-            column-gutter: 20
-        },
-		#regular_content: { padding: [ 8, 8, 0, 8 ] },
+		#stars: { padding: [5, 0, 10, 0] },
+		#regular_content: { padding: [ 10, 8, 20, 8 ] },
 		#regular: {
 			display: { if: =article.type, equals: A-hed, then: none, else: inherit }
 		},

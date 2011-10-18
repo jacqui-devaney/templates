@@ -3,22 +3,22 @@
 	<style src="FRONT-stylesheet.ejs" />
 	<style> {
 		if: =portrait, then: {
-			#b1:			{ frame: [194, 37, 571, 222], options:{large_headline:true, show_image:true} },
-			#b2:			{ frame: [194, 260, 565, 294], options:{small_headline:true, left:true} },
+			#b1:			{ frame: [194, 37, 571, 202], options:{large_headline:true, show_image:true, no_border:true} },
+			#b2:			{ frame: [194, 240, 565, 314], options:{small_headline:true, left:true} },
 			#b3:			{ frame: [194, 555, 280, 320], options:{small_headline:true} },
 			#b4:			{ frame: [486, 555, 280, 320] }
 		}, else: {
 			#b1:	{
 					frame: {$switch: [
-						{if: =scale.small, then: [205, 33, 571, 240]},
-						{if: =scale.large, then: [205, 33, 571, 284]}
+						{if: =scale.small, then: [205, 33, 571, 220]},
+						{if: =scale.large, then: [205, 33, 571, 264]}
 					]},
 					options:{large_headline:true, show_image:true, no_border:true} 
 			},
 			#b2:	{
 					frame: {$switch: [
-						{if: =scale.small, then: [205, 273, 565, 348]},
-						{if: =scale.large, then: [205, 319, 565, 294]}
+						{if: =scale.small, then: [205, 253, 565, 368]},
+						{if: =scale.large, then: [205, 299, 565, 314]}
 					]},
 					options:{small_headline:true, left:true} 
 			},

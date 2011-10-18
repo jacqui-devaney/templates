@@ -1,0 +1,10 @@
+<jpml id="TEST-2-parameters_module">
+    <style src="TEST-2-stylesheet.ejs"/>
+
+    <p>Test 2 module</p>
+    <p>Style module debug info 1 (computed values): <mark id="debug_computed"/></p>
+    <p>Style module debug info 2 (view values): <mark id="debug_view"/></p>
+    <p>Style module debug info 3 (device values): <mark id="debug_device"/></p>
+    <p>Style module debug info 4 (issue values): <mark id="debug_issue"/></p>
+    <p><span embed="headline"/></p>
+</jpml>

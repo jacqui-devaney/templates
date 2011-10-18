@@ -2,9 +2,11 @@
 	<style src="GLOBAL_MODULES-stylesheet.ejs" />
 	<style src="GLOBAL-stylesheet.ejs" />
 	<style>{
-        #body: { 
+        jpml: {padding: [16, 0, 0, 0]},
+		#body: { 
             column-count: {$divide: [=view.width, {$multiply:[250, =scale.dpi]}]},
-            column-gutter: 20
+            column-gutter: 20,
+			padding: [0, 0, 20, 0]
         },
         #image_container: { 
 			width:270,
@@ -16,7 +18,7 @@
 		image: {
 			width:262,
 			height:174,
-			padding: [10, 4]
+			padding: [10, 4, 10, 4]
 		},
 		.invisible: { display:none },
 		#small_headline: { display: { if: =options.small_headline, then:inherit }},

@@ -10,7 +10,7 @@
 				{ if: =options.no_border, then: {
 					#wrapper: {
 						border-width: [0, 0, 0, 0],
-						padding: [0]
+						padding: [10, 0, 0, 0]
 					}
 		
 				}},
@@ -41,7 +41,8 @@
 			{#deco_small_headline: { display: { if: =options.small_headline, then:inherit }}},
 			{.deco_caption: {
 				max-height: 30,
-				display: { if: =options.no_caption, then:none, else:inherit }
+				display: { if: =options.no_caption, then:none, else:inherit },
+				padding: [0, 0, 20, 0]
 			}}
 		]
 	}</style>

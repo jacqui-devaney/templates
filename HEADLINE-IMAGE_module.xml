@@ -6,7 +6,7 @@
 			{ $switch: [
 				{ if: =options.no_border, then: {
 					#wrapper: {
-						border-width: [0, 0, 4, 0],
+						border-width: [10, 0, 20, 0],
 						padding: [0]
 					}
 			
@@ -15,7 +15,7 @@
 					#wrapper: {
 						border-width: [1, 0, 0, 0],
 						border-color: #b1aca1,
-						padding: [8, 0, 4, 0]
+						padding: [10, 0, 20, 0]
 					}
 					}}
 			]},

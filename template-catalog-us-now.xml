@@ -121,6 +121,12 @@
 			min="4"
 			usage="front"
 		/>
+		<template 
+			name="SECTION-4story-D-C-marketdata_template.xml"
+			section="BUSINESS_AND_FINANCE,MONEY_AND_INVESTING"
+			min="6"
+			usage="front"
+		/>
 
 		<template 
 			name="SECTION-4story-2D-C_template.xml"
@@ -130,12 +136,6 @@
 		/>
 		<template 
 			name="SECTION-4story-D-C_template.xml"
-			section="BUSINESS_AND_FINANCE,MONEY_AND_INVESTING"
-			min="6"
-			usage="front"
-		/>
-		<template 
-			name="SECTION-4story-D-C-marketdata_template.xml"
 			section="BUSINESS_AND_FINANCE,MONEY_AND_INVESTING"
 			min="6"
 			usage="front"

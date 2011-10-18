@@ -53,7 +53,7 @@
 				large: { if: =device.size, more-than: 8.8 }
 			},
 
-			advertisement: {
+			ad: {
 				prefix: { $join: [
 					{ if: =issue.edition, then: =issue.edition, else: "us"},
 					".",

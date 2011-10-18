@@ -1,0 +1,14 @@
+<jpml id="TEST-2-parameters_template">
+    <style src="TEST-2-stylesheet.ejs"/>
+	<style>{
+        
+        #b1: {position: relative, left: 0, top: 0, right: 0, bottom: 0 }
+ 
+        }</style>
+    <p>Style template debug info 1 (computed values): <mark id="debug_computed"/></p>
+    <p>Style template debug info 2 (view values): <mark id="debug_view"/></p>
+    <p>Style template debug info 3 (device values): <mark id="debug_device"/></p>
+    <p>Style template debug info 4 (issue values): <mark id="debug_issue"/></p>
+	<box id="b1" embed="article" module="TEST-2-parameters_module.xml"/>
+</jpml>
+

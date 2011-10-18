@@ -4,6 +4,31 @@
 <dict>
 	<key>BUSINESS_AND_FINANCE</key>
 	<dict>
+		<key>SECTION-3story-G-deco-C_template.xml</key>
+		<dict>
+			<key>b1</key>
+			<array>
+				<true/>
+			</array>
+			<key>deco</key>
+			<array>
+				<string>Deco Summary Liondoor Business Finance</string>
+			</array>
+			<key>h1</key>
+			<array>
+				<string>Mobile Tablet Highlight1A</string>
+				<string>Mobile Tablet Highlight1B</string>
+				<string>Ahead of the Tape</string>
+				<string>Weekend Investor</string>
+				<string>Heard on the Street</string>
+				<string>Advertising</string>
+			</array>
+			<key>h2</key>
+			<array>
+				<string>Mobile Tablet Highlight2A</string>
+				<string>Mobile Tablet Highlight2B</string>
+			</array>
+		</dict>
 		<key>SECTION-3story-G-marketdata_template</key>
 		<dict>
 			<key>b1</key>
@@ -44,6 +69,31 @@
 			<key>b1</key>
 			<array>
 				<true/>
+			</array>
+			<key>h1</key>
+			<array>
+				<string>Mobile Tablet Highlight1A</string>
+				<string>Mobile Tablet Highlight1B</string>
+				<string>Ahead of the Tape</string>
+				<string>Weekend Investor</string>
+				<string>Heard on the Street</string>
+				<string>Advertising</string>
+			</array>
+			<key>h2</key>
+			<array>
+				<string>Mobile Tablet Highlight2A</string>
+				<string>Mobile Tablet Highlight2B</string>
+			</array>
+		</dict>
+		<key>SECTION-4story-smallG-deco_template.xml</key>
+		<dict>
+			<key>b1</key>
+			<array>
+				<true/>
+			</array>
+			<key>deco</key>
+			<array>
+				<string>Deco Summary Liondoor Business Finance</string>
 			</array>
 			<key>h1</key>
 			<array>
@@ -482,6 +532,21 @@
 				<string>Deco Summary Liondoor</string>
 			</array>
 		</dict>
+		<key>FRONT-4story-E-deco_template</key>
+		<dict>
+			<key>b1</key>
+			<array>
+				<true/>
+			</array>
+			<key>b5</key>
+			<array>
+				<string>A-hed</string>
+			</array>
+			<key>deco</key>
+			<array>
+				<string>Deco Summary Liondoor</string>
+			</array>
+		</dict>
 		<key>FRONT-4story-E-top_template</key>
 		<dict>
 			<key>b1</key>
@@ -504,21 +569,6 @@
 				<true/>
 			</array>
 			<key>b4</key>
-			<array>
-				<string>A-hed</string>
-			</array>
-		</dict>
-		<key>FRONT-4story-E-deco_template</key>
-		<dict>
-			<key>deco</key>
-			<array>
-				<string>Deco Summary Liondoor</string>
-			</array>
-			<key>b1</key>
-			<array>
-				<true/>
-			</array>
-			<key>b5</key>
 			<array>
 				<string>A-hed</string>
 			</array>
@@ -555,13 +605,13 @@
 			<array>
 				<true/>
 			</array>
-			<key>deco</key>
-			<array>
-				<string>Deco Summary Liondoor</string>
-			</array>
 			<key>b4</key>
 			<array>
 				<string>A-hed</string>
+			</array>
+			<key>deco</key>
+			<array>
+				<string>Deco Summary Liondoor</string>
 			</array>
 		</dict>
 		<key>FRONT-4story-Video-deco_template</key>
@@ -577,13 +627,13 @@
 			<array>
 				<true/>
 			</array>
-			<key>deco</key>
-			<array>
-				<string>Deco Summary Liondoor</string>
-			</array>
 			<key>b5</key>
 			<array>
 				<string>A-hed</string>
+			</array>
+			<key>deco</key>
+			<array>
+				<string>Deco Summary Liondoor</string>
 			</array>
 		</dict>
 	</dict>
@@ -1101,7 +1151,7 @@
 				<string>Mobile Tablet Highlight1A</string>
 				<string>Mobile Tablet Highlight1B</string>
 				<string>Slow Food Fast</string>
-				<string>Travele&apos;s Tale</string>
+				<string>Travele's Tale</string>
 				<string>Extra Credit</string>
 				<string>What to Wear There</string>
 				<string>RunwayRealWay</string>
@@ -1127,7 +1177,7 @@
 				<string>Mobile Tablet Highlight1A</string>
 				<string>Mobile Tablet Highlight1B</string>
 				<string>Slow Food Fast</string>
-				<string>Travele&apos;s Tale</string>
+				<string>Travele's Tale</string>
 				<string>Extra Credit</string>
 				<string>What to Wear There</string>
 				<string>RunwayRealWay</string>
@@ -1153,7 +1203,7 @@
 				<string>Mobile Tablet Highlight1A</string>
 				<string>Mobile Tablet Highlight1B</string>
 				<string>Slow Food Fast</string>
-				<string>Travele&apos;s Tale</string>
+				<string>Travele's Tale</string>
 				<string>Extra Credit</string>
 				<string>What to Wear There</string>
 				<string>RunwayRealWay</string>
@@ -1179,7 +1229,7 @@
 				<string>Mobile Tablet Highlight1A</string>
 				<string>Mobile Tablet Highlight1B</string>
 				<string>Slow Food Fast</string>
-				<string>Travele&apos;s Tale</string>
+				<string>Travele's Tale</string>
 				<string>Extra Credit</string>
 				<string>What to Wear There</string>
 				<string>RunwayRealWay</string>
@@ -1208,7 +1258,7 @@
 				<string>Mobile Tablet Highlight1A</string>
 				<string>Mobile Tablet Highlight1B</string>
 				<string>Slow Food Fast</string>
-				<string>Travele&apos;s Tale</string>
+				<string>Travele's Tale</string>
 				<string>Extra Credit</string>
 				<string>What to Wear There</string>
 				<string>RunwayRealWay</string>
@@ -1237,7 +1287,7 @@
 				<string>Mobile Tablet Highlight1A</string>
 				<string>Mobile Tablet Highlight1B</string>
 				<string>Slow Food Fast</string>
-				<string>Travele&apos;s Tale</string>
+				<string>Travele's Tale</string>
 				<string>Extra Credit</string>
 				<string>What to Wear There</string>
 				<string>RunwayRealWay</string>
@@ -1268,7 +1318,7 @@
 				<string>Extra Credit</string>
 				<string>What to Wear There</string>
 				<string>RunwayRealWay</string>
-				<string>Traveler&apos;s Tale</string>
+				<string>Traveler's Tale</string>
 				<string>Slow Food Fast</string>
 			</array>
 			<key>h2</key>

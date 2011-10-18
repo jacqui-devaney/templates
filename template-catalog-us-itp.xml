@@ -142,7 +142,7 @@
 		/>
 		<template 
 			name="SECTION-4story-smallG-deco_template.xml" 
-			section="MARKETPLACE,NEW_YORK,PERSONAL_JOURNAL,MONEY_AND_INVESTING" 
+			section="MARKETPLACE,NEW_YORK,PERSONAL_JOURNAL,MONEY_AND_INVESTING,BUSINESS_AND_FINANCE" 
 			min="6" 
 			deco="true" 
 			usage="front" 
@@ -161,7 +161,7 @@
 		/>
 		<template 
 			name="SECTION-3story-G-deco-C_template.xml" 
-			section="NEW_YORK,PERSONAL_JOURNAL,MARKETPLACE" 
+			section="NEW_YORK,PERSONAL_JOURNAL,MARKETPLACE,BUSINESS_AND_FINANCE" 
 			deco="true" 
 			min="5" 
 			usage="front" 
@@ -362,6 +362,7 @@
 			usage="ads" 
 		/>
 		<template name="TEST-1-fonts_template.xml" max="999" section="OPINION" usage="front" />
+		<template name="TEST-2-parameters_template.xml" max="999" section="OPINION" usage="front" />
 	</templates>
 
 	<article-page-plans>

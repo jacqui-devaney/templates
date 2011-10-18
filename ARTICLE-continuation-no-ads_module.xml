@@ -22,7 +22,7 @@
 			anchor-y:top
 		}},
 		{if: =portrait, then: {
-			#mediabucket_container:	{ frame: [290, 0, 275, 207]  }
+			#mediabucket_container:	{ frame: [290, 0, 275, 207], background-color:red  }
         }, else: {
 			#mediabucket_container:	{ frame: [580, 0, 275, 207]  }
 		}},
@@ -61,6 +61,6 @@
 		<panel class="article_body" id="body_continuation" embed="body"/>
     </panel>
 	<box id="filler">
-		<box id="article_advertisement" embed="advertisement"/>
+		<box id="article_advertisement" class="ad-twocolumn" embed="advertisement"/>
 	</box>
 </jpml>

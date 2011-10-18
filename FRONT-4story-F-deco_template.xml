@@ -3,8 +3,8 @@
     <style src="FRONT-stylesheet.ejs"/>
     <style>{
         if: =portrait, then: {
-            #b1: 			{ frame: [194, 34, 571, 173], options:{large_headline:true, no_border:true} },
-            #deco: 			{ frame: [194, 209, 571, 307], options:{normal_headline:true} },
+            #b1: 			{ frame: [194, 34, 571, 153], options:{large_headline:true, no_border:true} },
+            #deco: 			{ frame: [194, 189, 571, 327], options:{normal_headline:true} },
             #b2: 			{ frame: [194, 518, 280, 179], options:{small_headline:true} },
             #b3: 			{ frame: [194, 697, 280, 179], options:{small_headline:true}  },
             #b4: 			{ frame: [486, 518, 280, 358] }

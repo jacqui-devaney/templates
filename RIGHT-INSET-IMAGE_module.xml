@@ -25,13 +25,17 @@
         }},
 		{#image_container: { 
 			anchor-x: right,
-			width: 76,
-			height: 84,
-			padding: [ 0, 0, 0, 10 ],
+			width: 86,
 			display: {$switch: [
 				{if: =scale.small, then: none},
-				{if: =scale.large, then: inherite}
+				{if: =scale.large, then: inherit}
 			]}
+			
+		}},
+		{image: {
+			width:76,
+			height:76,
+			padding: [ 0, 0, 0, 10 ]
 			
 		}},
         {#headline: { padding: [ 0, 4, 0, 0 ] }},

@@ -3,9 +3,9 @@
 	<style src="SECTION-stylesheet.ejs" />
 	<style>{
 		if: =portrait, then: {
-			#b1:	{ frame: [8, 8, 556, 288], options:{large_headline:true, show_image:true} },
+			#b1:	{ frame: [8, 0, 556, 295], options:{large_headline:true, show_image:true} },
 			#b2:	{ frame: [0, 296, 571, 324], options:{small_headline:true} },
-			#b3:	{ frame: [583, 16, 183, 280], options:{small_headline:true, no_border:true, left:true} },
+			#b3:	{ frame: [583, 0, 183, 295], options:{small_headline:true, no_border:true, left:true} },
 			#b4:	{ frame: [583, 296, 183, 324], options:{small_headline:true, show_image:true, left:true} },
 			#h1: {options:{highlight_dark:true}},
 			#h2: {options:{highlight_dark:true}}

@@ -4,10 +4,10 @@
 	<style>{
 		$join: [
 		{#header_top: { padding:[0, 0, 8, 5] }},
-		{#body_container : { padding: [8, 15, 8, 15]}},
+		{#body_container : { padding: [8, 20]}},
 		{.article_body: { 
             column-count: {$divide: [=view.width, {$multiply:[250, =scale.dpi]}]},
-            column-gutter: 20,
+            column-gutter: 30,
 			column-height:balance
         }},
 		{#body_continuation: {

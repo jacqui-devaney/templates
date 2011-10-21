@@ -3,40 +3,74 @@
     <style src="FRONT-stylesheet.ejs"/>
     <style>{
         if: =portrait, then: {
-            #b1: 			{ frame: [194, 34, 571, 153], options:{large_headline:true, no_border:true} },
-            #deco: 			{ frame: [194, 189, 571, 327], options:{normal_headline:true} },
-            #b2: 			{ frame: [194, 518, 280, 179], options:{small_headline:true} },
-            #b3: 			{ frame: [194, 697, 280, 179], options:{small_headline:true}  },
-            #b4: 			{ frame: [486, 518, 280, 358] }
+            #b1: 	{ 
+						frame: {$switch: [
+							{if: =scale.small, then: [194, 26, 571, 254]},
+							{if: =scale.large, then: [194, 26, 571, 173]}
+						]},
+						options:{large_headline:true, no_border:true} 
+			},
+            #deco: 	{ 
+						frame: {$switch: [
+							{if: =scale.small, then: [194, 281, 571, 257]},
+							{if: =scale.large, then: [194, 199, 571, 307]}
+						]},
+						options:{normal_headline:true} 
+			},
+            #b2: 	{ 
+						frame: {$switch: [
+							{if: =scale.small, then: [194, 538, 280, 169]},
+							{if: =scale.large, then: [194, 518, 280, 179]}
+						]},
+						options:{small_headline:true} 
+			},
+            #b3: 	{ 
+						frame: {$switch: [
+							{if: =scale.small, then: [194, 707, 280, 169]},
+							{if: =scale.large, then: [194, 697, 280, 179]}
+						]},
+						options:{small_headline:true, bottom:true}  
+			},
+            #b4: 	{
+						frame: {$switch: [
+							{if: =scale.small, then: [486, 538, 280, 338]},
+							{if: =scale.large, then: [486, 518, 280, 358]}
+					]}
+			}
         }, else: {
 		#b1:	{ 
 					frame: {$switch: [
-						{if: =scale.small, then: [205, 34, 571, 292]},
-						{if: =scale.large, then: [205, 34, 571, 135]}
+						{if: =scale.small, then: [205, 28, 377, 272]},
+						{if: =scale.large, then: [205, 26, 571, 143]}
 					]},
 					options:{large_headline:true, no_border:true} 
 			},
 		#deco:	{ 
 					frame: {$switch: [
-						{if: =scale.small, then: [496, 326, 280, 292]},
+						{if: =scale.small, then: [205, 300, 377, 305]},
 						{if: =scale.large, then: [205, 169, 571, 307]}
 					]},
-					options: {$switch: [
-						{if: =scale.small, then: {normal_headline:true, no_caption:true}},
-						{if: =scale.large, then: {normal_headline:true}}						
-					]}
+					options: {normal_headline:true}
 				},
 		#b2:	{ 
 					frame: {$switch: [
-						{if: =scale.small, then: [205, 326, 280, 292]},
+						{if: =scale.small, then: [592, 26, 238, 272]},
 						{if: =scale.large, then: [205, 476, 571, 144]}
 					]},
-					options:{small_headline:true} 
+					options:{small_headline:true, bottom:true} 
 				},
-		#b3:			{ frame: [787, 33, 237, 193], options:{small_headline:true, no_border:true} },
-		#b4:			{ frame: [787, 227, 237, 394] }
+		#b3:	{ 
+					frame: {$switch: [
+						{if: =scale.small, then: [592, 300, 238, 315]},
+						{if: =scale.large, then: [787, 26, 237, 201]}
+					]},
+					options:{small_headline:true, no_border:true} 
+		},
+		#b4:	{ frame: {$switch: [
+						{if: =scale.small, then: [840, 36, 183, 582]},
+						{if: =scale.large, then: [787, 227, 237, 394]}
+				]}}
         }
-
     }</style>
     <box id="marketstrap" embed="marketstrap" />
     <box id="whatsnews" embed="whatsnews" />

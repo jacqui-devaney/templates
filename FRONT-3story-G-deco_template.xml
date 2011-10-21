@@ -6,58 +6,59 @@
 		if: =portrait, then: {
 			#b1:	{ 
 					frame: {$switch: [
-						{if: =scale.small, then: [194, 37, 571, 212]},
-						{if: =scale.large, then: [194, 37, 571, 138]}
+						{if: =scale.small, then: [194, 28, 571, 200]},
+						{if: =scale.large, then: [194, 26, 571, 148]}
 					]},
 				options:{large_headline:true, no_border:true} 
 			},
 			#deco:	{ 
 					frame: {$switch: [
-						{if: =scale.small, then: [195, 249, 569, 312]},
+						{if: =scale.small, then: [195, 228, 569, 351]},
 						{if: =scale.large, then: [195, 175, 569, 450]}
 					]},
 					options:{normal_headline:true} 
 			},
 			#b2:	{ 
 					frame: {$switch: [
-						{if: =scale.small, then: [194, 562, 280, 314]},
+						{if: =scale.small, then: [194, 581, 280, 295]},
 						{if: =scale.large, then: [194, 628, 280, 246]}
 					]},
-					options:{small_headline:true} 
+					options:{small_headline:true, bottom:true} 
 			},
 			#b3:	{ 
 					frame: {$switch: [
-						{if: =scale.small, then: [486, 562, 280, 314]},
+						{if: =scale.small, then: [486, 581, 280, 295]},
 						{if: =scale.large, then: [486, 628, 280, 247]}
 					]}
 			}
 		}, else: {
 			#b1:	{ 
 						frame: {$switch: [
-							{if: =scale.small, then: [205, 33, 280, 595]},
-							{if: =scale.large, then: [205, 33, 571, 140]}
+							{if: =scale.small, then: [205, 28, 280, 595]},
+							{if: =scale.large, then: [205, 26, 571, 148]}
 						]},
 						options:{large_headline:true, no_border:true} 
 			},
 			#deco:	{ 
 						frame: {$switch: [
-							{if: =scale.small, then: [496, 175, 327, 445]},
+							{if: =scale.small, then: [496, 235, 327, 385]},
 							{if: =scale.large, then: [206, 175, 569, 445]}
 						]},
 						options:{normal_headline:true} 
 			},
 			#b2:	{ 
 						frame: {$switch: [
-							{if: =scale.small, then: [496, 33, 327, 141]},
-							{if: =scale.large, then: [787, 33, 238, 193]}
+							{if: =scale.small, then: [496, 28, 327, 205]},
+							{if: =scale.large, then: [787, 26, 238, 203]}
 						]},
 						options:{small_headline:true, no_border:true} 
 			},
 			#b3:	{ 
 						frame: {$switch: [
-							{if: =scale.small, then: [834, 33, 190, 595]},
+							{if: =scale.small, then: [834, 38, 190, 580]},
 							{if: =scale.large, then: [787, 225, 238, 404]}
-						]}
+						]},
+						options: {if: =scale.small, then: {no_border:true}}
 			}
 			
 		}

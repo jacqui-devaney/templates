@@ -56,7 +56,7 @@
 	        <h2 class="ahed_subhed" embed="subhed"/>
 	    </panel>
 	    <panel id="bottom_container">
-	        <box id="image_container"><image class="A_size" embed="summary-image"/></box>
+	        <box id="image_container"><image class="A_size" target-width="79" target-height="79" embed="summary-image"/></box>
 	        <p class="ahed_byline" embed="byline"/>
 	        <panel class="ahed_body" embed="body" />
 	    </panel>

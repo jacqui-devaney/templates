@@ -3,50 +3,74 @@
 	<style src="FRONT-stylesheet.ejs" />
 	<style> {
 		if: =portrait, then: {
-			#b1:			{ frame: [194, 34, 571, 193], options:{large_headline:true, no_border:true} },
+			#b1:	{ 
+						frame: {$switch: [
+							{if: =scale.small, then: [194, 26, 571, 250]},
+							{if: =scale.large, then: [194, 26, 571, 200]}
+					]},
+					options:{large_headline:true, no_border:true} 
+			},
 			#deco:	{ 
 						frame: {$switch: [
-							{if: =scale.small, then: [195, 228, 569, 391]},
+							{if: =scale.small, then: [195, 278, 569, 315]},
 							{if: =scale.large, then: [195, 228, 569, 391]}
 					]},
 					options:{normal_headline:true} 
 			},
-			#b2:			{ frame: [194, 622, 183, 253], options:{small_headline:true, left:true} },
-			#b3:			{ frame: [388, 622, 183, 253], options:{small_headline:true, left:true} },
-			#b4:			{ frame: [582, 622, 183, 253], options:{small_headline:true, left:true} }
+			#b2:	{ 
+						frame: {$switch: [
+							{if: =scale.small, then: [194, 595, 183, 280]},
+							{if: =scale.large, then: [194, 622, 183, 253]}
+					]},
+					options:{small_headline:true, left:true} 
+			},
+			#b3:	{ 
+						frame: {$switch: [
+							{if: =scale.small, then: [388, 595, 183, 280]},
+							{if: =scale.large, then: [388, 622, 183, 253]}
+						]},
+						options:{small_headline:true, left:true} 
+			},
+			#b4:	{ 
+						frame: {$switch: [
+							{if: =scale.small, then: [582, 595, 183, 280]},
+							{if: =scale.large, then: [582, 622, 183, 253]}
+					]},
+					options:{small_headline:true, left:true} 
+			}
 			
 		}, else: {
 			#b1:	{ 
 						frame: {$switch: [
-							{if: =scale.small, then: [205, 34, 474, 164]},
-							{if: =scale.large, then: [205, 34, 571, 194]}
+							{if: =scale.small, then: [205, 28, 280, 590]},
+							{if: =scale.large, then: [205, 26, 571, 202]}
 						]},
 						options:{large_headline:true, no_border:true} 
 			},
 			#deco:	{
 			 			frame: {$switch: [
-							{if: =scale.small, then: [205, 200, 474, 418]},
+							{if: =scale.small, then: [496, 28, 322, 358]},
 							{if: =scale.large, then: [205, 228, 569, 391]}
 						]},
 						options:{normal_headline:true} 
 			},
 			#b2:	{ 
 						frame: {$switch: [
-							{if: =scale.small, then: [691, 33, 332, 194]},
-							{if: =scale.large, then: [787, 33, 237, 194]}
+							{if: =scale.small, then: [496, 388, 322, 230]},
+							{if: =scale.large, then: [787, 26, 237, 202]}
 						]},
 						options:{small_headline:true, no_border:true} 
 			},
 			#b3:	{ 
 						frame: {$switch: [
-							{if: =scale.small, then: [691, 228, 332, 194]},
+							{if: =scale.small, then: [830, 28, 193, 358]},
 							{if: =scale.large, then: [787, 228, 237, 194]}
 						]},
 						options:{small_headline:true} 
 			},
 			#b4:	{ 
 						frame: {$switch: [
-							{if: =scale.small, then: [691, 424, 332, 194]},
+							{if: =scale.small, then: [830, 388, 193, 230]},
 							{if: =scale.large, then: [787, 424, 237, 194]}
 						]},
 						options:{small_headline:true} 

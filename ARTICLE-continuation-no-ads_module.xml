@@ -3,10 +3,10 @@
 	<style src="GLOBAL-stylesheet.ejs" />
 	<style>{
 		$join: [
-		{#body_container : { padding: [8, 15, 8, 15]}},
+		{#body_container : { padding: [8, 20, 8, 20]}},
 		{.article_body: { 
             column-count: {$divide: [=view.width, {$multiply:[250, =scale.dpi]}]},
-            column-gutter: 20,
+            column-gutter: 30,
 			column-height:balance,
 			min-height:200
         }},

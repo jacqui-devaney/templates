@@ -7,7 +7,7 @@
 		{#body_container : { padding: [8, 5, 0, 5]}},
 		{.article_body: { 
             column-count: {$divide: [=view.width, {$multiply:[250, =scale.dpi]}]},
-            column-gutter: 20,
+            column-gutter: 30,
 			column-height:balance
         }},
 		{#body_continuation: {

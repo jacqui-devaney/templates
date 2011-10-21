@@ -7,7 +7,7 @@
 				{ if: =options.no_border, then: {
 					#wrapper: {
 						border-width: [0],
-						padding: [10, 0, 20, 0]
+						padding: [10, 0, {if: =options.bottom, then:20, else:10}, 0]
 					}
 			
 				}},
@@ -15,7 +15,7 @@
 					#wrapper: {
 						border-width: [1, 0, 0, 0],
 						border-color: #b1aca1,
-						padding: [10, 0, 20, 0]
+						padding: [10, 0, {if: =options.bottom, then:20, else:10}, 0]
 					}
 					}}
 			]},
@@ -36,8 +36,6 @@
 			]
 		}</style>
 	<box id="wrapper">
-		<image id="tall_wide" class="invisible" embed="summary-image"/>
-		<image id="skinny_wide" class="invisible" embed="summary-image"/>
 		<panel id="headline">
 			<p id="small_headline" class="invisible"><span embed="headline" /><mark class="key" /></p>
 			<p id="medium_headline" class="invisible"><span embed="headline" /><mark class="key" /></p>

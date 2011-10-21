@@ -3,14 +3,14 @@
 	<style src="FRONT-stylesheet.ejs" />
 	<style> {
 		if: =portrait, then: {
-			#b1:			{ frame: [194, 37, 375, 548], options:{large_headline:true, show_image:true, no_border:true} },
-			#b2:			{ frame: [582, 37, 183, 548], options:{small_headline:true, no_border:true, left:true} },
-			#b3:			{ frame: [194, 586, 280, 290], options:{small_headline:true} },
-			#b4:			{ frame: [486, 586, 280, 290] }
+			#b1:			{ frame: [194, 26, 375, 548], options:{large_headline:true, show_image:true, no_border:true} },
+			#b2:			{ frame: [582, 26, 183, 548], options:{small_headline:true, no_border:true, left:true} },
+			#b3:			{ frame: [194, 575, 280, 298], options:{small_headline:true, bottom:true} },
+			#b4:			{ frame: [486, 575, 280, 298] }
 		}, else: {
-			#b1:			{ frame: [205, 33, 375, 587], options:{large_headline:true, show_image:true, no_border:true}  },
-			#b2:			{ frame: [593, 33, 183, 587], options:{small_headline:true, no_border:true, left:true}  },
-			#b3:			{ frame: [787, 33, 238, 246], options:{small_headline:true, no_border:true} },
+			#b1:			{ frame: [205, 26, 375, 596], options:{large_headline:true, show_image:true, no_border:true, bottom:true}  },
+			#b2:			{ frame: [593, 26, 183, 596], options:{small_headline:true, no_border:true, left:true}  },
+			#b3:			{ frame: [787, 26, 238, 254], options:{small_headline:true, no_border:true} },
 			#b4:			{ frame: [787, 280, 238, 340] }
 		}
 		

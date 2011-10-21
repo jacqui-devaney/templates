@@ -1,0 +1,11 @@
+<jpml id="WHATSNEWS-dummy_template">
+	<style src="CONTINUATION-stylesheet.ejs" />
+    <style>{
+        if: =portrait, then: {
+            #b1 : { frame: [0, 0, 256, 874] }
+        }, else: {
+            #b1 : { frame: [0, 0, 256, 618] }        
+        }
+    }</style>
+    <box id="b1" embed="article" module="CONTINUATION-dynamic_module.xml" />
+</jpml>

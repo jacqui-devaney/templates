@@ -3,36 +3,36 @@
 	<style src="FRONT-stylesheet.ejs" />
 	<style> {
 		if: =portrait, then: {
-			#b1:			{ frame: [194, 37, 571, 202], options:{large_headline:true, show_image:true, no_border:true} },
-			#b2:			{ frame: [194, 240, 565, 314], options:{small_headline:true, left:true} },
-			#b3:			{ frame: [194, 555, 280, 320], options:{small_headline:true} },
-			#b4:			{ frame: [486, 555, 280, 320] }
+			#b1:			{ frame: [194, 26, 571, 214], options:{large_headline:true, show_image:true, no_border:true} },
+			#b2:			{ frame: [194, 240, 565, 304], options:{small_headline:true, left:true} },
+			#b3:			{ frame: [194, 545, 280, 330], options:{small_headline:true, bottom:true} },
+			#b4:			{ frame: [486, 545, 280, 330] }
 		}, else: {
 			#b1:	{
 					frame: {$switch: [
-						{if: =scale.small, then: [205, 33, 571, 220]},
-						{if: =scale.large, then: [205, 33, 571, 264]}
+						{if: =scale.small, then: [205, 26, 571, 220]},
+						{if: =scale.large, then: [205, 26, 571, 274]}
 					]},
 					options:{large_headline:true, show_image:true, no_border:true} 
 			},
 			#b2:	{
 					frame: {$switch: [
-						{if: =scale.small, then: [205, 253, 565, 368]},
-						{if: =scale.large, then: [205, 299, 565, 314]}
+						{if: =scale.small, then: [205, 253, 565, 366]},
+						{if: =scale.large, then: [205, 299, 565, 320]}
 					]},
-					options:{small_headline:true, left:true} 
+					options:{small_headline:true, left:true, bottom:true} 
 			},
 			#b3:	{ 
 					frame: {$switch: [
-						{if: =scale.small, then: [787, 33, 238, 240]},
-						{if: =scale.large, then: [787, 33, 238, 284]}
+						{if: =scale.small, then: [787, 26, 238, 220]},
+						{if: =scale.large, then: [787, 26, 238, 274]}
 					]},
 					options:{small_headline:true, no_border:true} 
 			},
 			#b4:	{ 
 					frame: {$switch: [
-						{if: =scale.small, then: [787, 273, 238, 348]},
-						{if: =scale.large, then: [787, 319, 238, 300]}
+						{if: =scale.small, then: [787, 253, 238, 366]},
+						{if: =scale.large, then: [787, 300, 238, 320]}
 					]}
 			}
 		}

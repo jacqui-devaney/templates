@@ -5,9 +5,9 @@
 		$join: [
 		{#header_top: { padding:[18, 10, 8, 15] }},
 		{#body_container : { 
-			padding: [8, 15, 8, 15],
+			padding: [10, 20, 8, 20],
             column-count: {$divide: [=view.width, {$multiply:[250, =scale.dpi]}]},
-            column-gutter: 20,
+            column-gutter: 30,
 			column-height:balance,
 			flow: article_body,
 			min-height: { if: =page.mediabucket, then: 400 }

@@ -10,7 +10,7 @@
 				{ if: =options.no_border, then: {
 					#wrapper: {
 						border-width: [0, 0, 0, 0],
-						padding: [10, 0, 0, 0]
+						padding: [10, 0, 10, 0]
 					}
 		
 				}},
@@ -18,7 +18,7 @@
 					#wrapper: {
 					border-width: [0, 0, 1, 0],
 					border-color: #b1aca1,
-					padding: [0, 0, 8, 0]
+					padding: { if: =scale.small, then:[0], else:[0, 0, 10, 0]}
 					}
 		
 				}},
@@ -26,12 +26,12 @@
 					#wrapper: {
 						border-width: [1, 0, 0, 0],
 						border-color: #b1aca1,
-						padding: [8, 0, 0, 0]
+						padding: { if: =scale.small, then:[5, 0, 0, 0], else:[8, 0, 0, 0]}
 					}
 					}}
 			]},
 			{#deco_container: { 
-				padding: [ 8, 0 ],
+				padding: { if: =scale.small, then:[5, 0, 5, 0], else:[8, 0, 8, 0]},
 				position:relative
 			}},
 			{#content: { padding: [0, 8, 8, 8]}},
@@ -40,9 +40,8 @@
 			{#deco_bottom_headline: { display: { if: =options.bottom_headline, then:inherit }}},
 			{#deco_small_headline: { display: { if: =options.small_headline, then:inherit }}},
 			{.deco_caption: {
-				max-height: 30,
-				display: { if: =options.no_caption, then:none, else:inherit },
-				padding: [0, 0, 20, 0]
+				max-height: { if: =scale.small, then:35, else:40},
+				display: { if: =options.no_caption, then:none, else:inherit }
 			}}
 		]
 	}</style>

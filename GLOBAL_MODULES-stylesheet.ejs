@@ -106,7 +106,7 @@
         text-align: { if: =options.left, then:left, else:justify}
 	},
 	h2: {
-		font-name:DJ5Exchange-Bold,
+		font-name:{if: =intent.article, then:DJ5Exchange-Bold, else:DJ5Exchange-Medium},
 		text-indent:0
 	},
 	.article_body: {
@@ -124,14 +124,13 @@
 		content: " Y"
 	},
 	strong: {
-		font-name:DJ5Exchange-Bold		
+		font-name:{if: =intent.article, then:DJ5Exchange-Bold, else:DJ5Exchange-Medium}
 	},
 	em: {
-		font-name:DJ5Exchange-MediumItalic
-		
+		font-name:{if: =intent.article, then:DJ5Exchange-MediumItalic, else:DJ5Exchange-Medium}
 	},
 	cite: {
-		font-name:DJ5Exchange-MediumItalic		
+		font-name:{if: =intent.article, then:DJ5Exchange-MediumItalic, else:DJ5Exchange-Medium}
 	},
 	.byline: {
 		font-name:DJ5Exchange-Semibold,
@@ -185,8 +184,14 @@
 	},
 	.deco_caption: {
 		font-name:DJ5RetinaCd-Medium,
-		font-size:12,
-		line-height:12,
+		font-size:{$switch: [
+			{if: =scale.small, then: 13},
+			{if: =scale.large, then: 12}
+		]},
+		line-height:{$switch: [
+			{if: =scale.small, then: 14},
+			{if: =scale.large, then: 13}
+		]},
 		color:#848484
 	},
 	.subhed: {

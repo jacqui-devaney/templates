@@ -4,13 +4,13 @@
 	<style>{
 		$join: [
 		{#header_top: { padding:[18, 10, 8, 15] }},
-		{#body_container : 
-			{ padding: [8, 15, 0, 15]
-			min-height: { if: =page.mediabucket, then: 400 
+		{#body_container: { 
+			padding: [10, 20, 0, 20],
+			min-height: { if: =page.mediabucket, then: 400}
 		}},
 		{.body: { 
             column-count: {$divide: [=view.width, {$multiply:[250, =scale.dpi]}]},
-            column-gutter: 20,
+            column-gutter: 30,
 			column-height:balance,
 			flow: article_body
         }},

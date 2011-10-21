@@ -3,23 +3,29 @@
 	<style src="FRONT-stylesheet.ejs" />
 	<style> {
 		if: =portrait, then: {
-			#b1:			{ frame: [194, 34, 571, 135], options:{large_headline:true, no_border:true} },
+			#b1:	{ 
+						frame: {$switch: [
+							{if: =scale.small, then: [194, 26, 571, 143]},
+							{if: =scale.large, then: [194, 26, 571, 143]}
+						]},
+						options:{large_headline:true, no_border:true}
+			},
 			#deco:			{ frame: [194, 169, 571, 307], options:{normal_headline:true} },
 			#b2:			{ frame: [194, 476, 280, 152], options:{small_headline:true} },
 			#b3:			{ frame: [486, 476, 280, 152], options:{small_headline:true} },
-			#b4:			{ frame: [194, 628, 280, 248], options:{small_headline:true} },
+			#b4:			{ frame: [194, 628, 280, 248], options:{small_headline:true, bottom:true} },
 			#b5:			{ frame: [486, 628, 280, 248] }
 		}, else: {
 			#b1:	{ 
 						frame: {$switch: [
-							{if: =scale.small, then: [205, 34, 571, 292]},
-							{if: =scale.large, then: [205, 34, 571, 135]}
+							{if: =scale.small, then: [205, 26, 571, 292]},
+							{if: =scale.large, then: [205, 26, 571, 143]}
 						]},
 						options:{large_headline:true, no_border:true} 
 				},
 			#deco:	{ 
 						frame: {$switch: [
-							{if: =scale.small, then: [496, 326, 280, 292]},
+							{if: =scale.small, then: [496, 320, 280, 299]},
 							{if: =scale.large, then: [205, 169, 571, 307]}
 						]},
 						options: {$switch: [
@@ -29,19 +35,19 @@
 					},
 			#b2:	{ 
 						frame: {$switch: [
-							{if: =scale.small, then: [205, 326, 280, 146]},
+							{if: =scale.small, then: [205, 320, 280, 148]},
 							{if: =scale.large, then: [205, 476, 280, 144]}
 						]},
 						options:{small_headline:true} 
 					},
 			#b3:	{ 
 						frame: {$switch: [
-							{if: =scale.small, then: [205, 472, 280, 146]},
+							{if: =scale.small, then: [205, 470, 280, 148]},
 							{if: =scale.large, then: [496, 476, 280, 144]}
 						]},
 						options:{small_headline:true} 
 					},
-			#b4:			{ frame: [787, 33, 237, 193], options:{small_headline:true, no_border:true} },
+			#b4:			{ frame: [787, 26, 237, 200], options:{small_headline:true, no_border:true} },
 			#b5:			{ frame: [787, 227, 237, 394] }
 		}
 		

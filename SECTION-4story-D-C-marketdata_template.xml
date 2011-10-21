@@ -4,15 +4,15 @@
 	<style>{
 		if: =portrait, then: {
 			#b1:	{ frame: [8, 8, 556, 288], options:{large_headline:true} },
-			#b2:	{ frame: [0, 296, 571, 324], options:{large_headline:true} },
-			#b3:	{ frame: [583, 8, 183, 288], options:{large_headline:true, no_border:true} },
-			#b4:	{ frame: [583, 296, 183, 324], options:{small_headline:true, show_image:true} },
+			#b2:	{ frame: [0, 296, 571, 324], options:{small_headline:true} },
+			#b3:	{ frame: [583, 8, 183, 288], options:{small_headline:true, no_border:true, left:true} },
+			#b4:	{ frame: [583, 296, 183, 324], options:{small_headline:true, show_image:true, left:true} },
 			#h2: {options:{highlight_dark:true}}
 		}, else: {
 			#b1:	{ frame: [11, 10, 556, 286], options:{large_headline:true} },
 			#b2:	{ frame: [0, 296, 571, 324], options:{small_headline:true} },
-			#b3:	{ frame: [594, 10, 183, 286], options:{small_headline:true, no_border:true} },
-			#b4:	{ frame: [594, 296, 183, 324], options:{small_headline:true, show_image:true} },
+			#b3:	{ frame: [594, 10, 183, 286], options:{small_headline:true, no_border:true, left:true} },
+			#b4:	{ frame: [594, 296, 183, 324], options:{small_headline:true, show_image:true, left:true} },
 			#h2: {options:{highlight_dark:true}}
 		}
 	}</style>

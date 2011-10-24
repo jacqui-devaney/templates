@@ -5,8 +5,8 @@
 		if: =portrait, then: {
 			#b1:	{ 
 						frame: {$switch: [
-						{if: =scale.small, then: [0, 11, 571, 245]},
-						{if: =scale.large, then: [0, 11, 571, 176]}
+						{if: =scale.small, then: [0, 0, 571, 245]},
+						{if: =scale.large, then: [0, 0, 571, 176]}
 					]},
 					options:{large_headline:true, no_border:true} 
 			},
@@ -17,16 +17,16 @@
 					]},
 					options:{normal_headline:true} 
 			},
-			#b2:	{ frame: [583, 11, 183, 314], options:{small_headline:true, no_border:true, left:true} },
+			#b2:	{ frame: [583, 0, 183, 324], options:{small_headline:true, no_border:true, left:true} },
 			#b3:	{ frame: [583, 325, 183, 294], options:{small_headline:true, left:true} },
 			#h1: {options:{highlight_dark:true}},
 			#h2: {options:{highlight_dark:true}}
 			
 		}, else: {
-			#b1:	{ frame: [11, 11, 571, 176], options:{large_headline:true, no_border:true} },
+			#b1:	{ frame: [11, 0, 571, 186], options:{large_headline:true, no_border:true} },
 			#deco:	{ frame: [11, 188, 571, 432], options:{normal_headline:true} },
-			#b2:	{ frame: [594, 11, 183, 316], options:{small_headline:true, no_border:true, left:true} },
-			#b3:	{ frame: [594, 328, 183, 291], options:{small_headline:true, left:true} },
+			#b2:	{ frame: [594, 0, 183, 326], options:{small_headline:true, no_border:true, left:true} },
+			#b3:	{ frame: [594, 328, 183, 291], options:{small_headline:true, left:true, bottom:true} },
 			#h1: {options:{highlight_dark:true}},
 			#h2: {options:{highlight_dark:true}}
 			

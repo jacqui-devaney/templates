@@ -7,7 +7,7 @@
 					{ if: =options.highlight_dark, then: #e4e4e4 },
 					{ if: =options.highlight_light, then: #f6f5f3 }
 				] },
-				padding: [8, 8, 16, 8],
+				padding: [10, 8, 16, 8],
 				border-width: [0, {if: =portrait, then: 1, else: 0}, {if: =landscape, then: 1, else: 0}, 0],
 				border-color:#b1aca1
 		},

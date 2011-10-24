@@ -4,12 +4,12 @@
     <style>{
 		if: =portrait, then: {
 			#b1:	{ frame: [8, 10, 460, 600], options:{rando:true} },
-			#b2:	{ frame: [486, 10, 278, 600], options:{small_headline:true, show_image:true, no_border:true} },
+			#b2:	{ frame: [486, 2, 278, 600], options:{small_headline:true, show_image:true, no_border:true} },
 			#h2:	{options:{highlight_light:true}},
 			#h1:	{options:{highlight_light:true}}
 		}, else: {
 			#b1:	{ frame: [19, 10, 460, 600], options:{rando:true} },
-			#b2:	{ frame: [496, 10, 280, 600], options:{small_headline:true, show_image:true, no_border:true} },
+			#b2:	{ frame: [496, 2, 280, 608], options:{small_headline:true, show_image:true, no_border:true} },
 			#h2:	{options:{highlight_light:true}},
 			#h1:	{options:{highlight_light:true}}
 		}

@@ -148,6 +148,13 @@
 			usage="front" 
 		/>
 		<template 
+			name="SECTION-4story-smallG-bottom_template.xml" 
+			section="MARKETPLACE,MONEY_AND_INVESTING" 
+			min="6" 
+			deco="true" 
+			usage="front" 
+		/>
+		<template 
 			name="SECTION-4story-smallG-top_template.xml" 
 			section="MARKETPLACE,NEW_YORK" 
 			min="6" 

@@ -17,25 +17,25 @@
 					]},	
 					options:{normal_headline:true} 
 			},
-            #b3: 	{frame: {$switch: [
-							{if: =scale.small, then: [194, 551, 280, 323]},
-							{if: =scale.large, then: [194, 551, 280, 323]}
-					]},
-					options:{small_headline:true, bottom:true} 
-			},
-            #b4: 	{ 
+            #b2: 	{ 
 						frame: {$switch: [
 						{if: =scale.small, then: [583, 259, 183, 290]},
 						{if: =scale.large, then: [583, 229, 183, 321]}
 					]},
 					options:{small_headline:true, left:true} 
 			},
-            #b5: 	{frame: {$switch: [
+            #b3: 	{frame: {$switch: [
+							{if: =scale.small, then: [194, 551, 280, 323]},
+							{if: =scale.large, then: [194, 551, 280, 323]}
+					]},
+					options:{small_headline:true, bottom:true} 
+			},
+            #b4: 	{frame: {$switch: [
 							{if: =scale.small, then: [486, 551, 280, 323]},
 							{if: =scale.large, then: [486, 551, 280, 323]}
 						]}}
         }, else: {
-            #b1:			{ frame: [205, 26, 571, 213], options:{large_headline:true, no_border:true} },
+            #b1:	{ frame: [205, 26, 571, 213], options:{large_headline:true, no_border:true} },
             #deco:	{ 
 					frame: {$switch: [
 						{if: =scale.small, then: [205, 248, 280, 370]},
@@ -43,15 +43,15 @@
 					]},
 					options:{normal_headline:true} 
 			},
-            #b3: 	{ frame: [787, 26, 238, 217], options:{small_headline:true, no_border:true} },
-            #b4: 	{ 
+            #b2: 	{ 
 					frame: {$switch: [
 						{if: =scale.small, then: [496, 248, 280, 370]},
 						{if: =scale.large, then: [593, 240, 183, 375]}
 					]},
 					options:{small_headline:true, left:true, bottom:true} 
 			},
-            #b5: 	{frame: {$switch: [
+            #b3: 	{ frame: [787, 26, 238, 217], options:{small_headline:true, no_border:true} },
+            #b4: 	{frame: {$switch: [
 							{if: =scale.small, then: [787, 248, 238, 370]},
 							{if: =scale.large, then: [787, 240, 238, 390]}
 						]}}
@@ -65,7 +65,7 @@
 	</box>
     <box id="b1" embed="article" module="FRONT-NO-IMAGE_module.xml" />    
     <box id="deco" embed="article" module="DECO_module.xml" />
+    <box id="b2" embed="article" module="FRONT-NO-IMAGE_module.xml" />
     <box id="b3" embed="article" module="FRONT-NO-IMAGE_module.xml" />
-    <box id="b4" embed="article" module="FRONT-NO-IMAGE_module.xml" />
- 	<box id="b5" embed="article" module="AHED_module.xml" />
+ 	<box id="b4" embed="article" module="AHED_module.xml" />
 </jpml>

@@ -52,7 +52,7 @@
 				small: { if: =device.size, less-than: 8.8 },
 				large: { if: =device.size, more-than: 8.8 }
 			},
-
+			justify: { if: =scale.small, then: left, else: justify },
 			ad: {
 				prefix: { $join: [
 					{ if: =issue.edition, then: =issue.edition, else: "us"},

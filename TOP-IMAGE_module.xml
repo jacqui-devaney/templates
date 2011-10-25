@@ -6,8 +6,8 @@
 			{ $switch: [
 				{ if: =options.no_border, then: {
 					#wrapper: {
-						border-width: [1, 0, 0, 0],
-						padding: [10, 0, {if: =options.bottom, then:20, else:10}, 0]
+						border-width: [0, 0, 0, 0],
+						padding: [10, 0, 0, 0]
 					}
 			
 				}},
@@ -15,7 +15,7 @@
 					#wrapper: {
 						border-width: [1, 0, 0, 0],
 						border-color: #b1aca1,
-						padding: [10, 0, {if: =options.bottom, then:20, else:10}, 0]
+						padding: [10, 0, 0, 0]
 					}
 					}}
 			]},
@@ -27,7 +27,7 @@
 				]},
 	            column-gutter: 20
 	        }},
-			{#body_container: { padding: [0, 8]}},
+			{#body_container: { padding: [0, 8, {if: =options.bottom, then:15, else:8}, 8]}},
 			{#headline: { padding: [0, 8]}},
 			{#tall_wide: {
 				width:{$subtract:[=view.width, 18]}, 

@@ -7,7 +7,7 @@
 				{ if: =options.no_border, then: {
 					#wrapper: {
 						border-width: [0],
-						padding: [10, 0, {if: =options.bottom, then:20, else:10}, 0]
+						padding: [10, 0, 0, 0]
 					}
 			
 				}},
@@ -15,7 +15,7 @@
 					#wrapper: {
 						border-width: [1, 0, 0, 0],
 						border-color: #b1aca1,
-						padding: [10, 0, {if: =options.bottom, then:20, else:10}, 0]
+						padding: [10, 0, 0, 0]
 					}
 					}}
 			]},
@@ -25,7 +25,8 @@
 					{if: =scale.large, then: {$divide: [=view.width, {$multiply:[250, =scale.dpi]}]}}
 					
 				]},
-	            column-gutter: 20
+	            column-gutter: 20,
+				padding: [0, 0, {if: =options.bottom, then:15, else:10}, 0]
 	        }},
 			{#body_container: { padding: [0, 8]}},
 			{#headline: { padding: [0, 8]}},

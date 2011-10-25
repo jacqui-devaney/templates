@@ -3,18 +3,66 @@
 	<style src="SECTION-stylesheet.ejs" />
 	<style>{
 		 if: =portrait, then: {
-			#b1:	{ frame: [0, 10, 768, 188], options:{large_headline:true} },
-			#b2:	{ frame: [0, 198, 281, 422], options:{small_headline:true, show_image:true, bottom:true} },
-			#b3:	{ frame: [292, 198, 281, 422], options:{small_headline:true, bottom:true} },
-			#b4:	{ frame: [583, 198, 183, 422], options:{small_headline:true, show_image:true, left:true, bottom:true} },
+			#b1:	{ 
+						frame: {$switch: [
+						{if: =scale.small, then: [0, 10, 768, 253]},
+						{if: =scale.large, then: [0, 10, 768, 188]}
+					]},
+					options:{large_headline:true} 
+			},
+			#b2:	{ 
+						frame: {$switch: [
+						{if: =scale.small, then: [0, 265, 281, 355]},
+						{if: =scale.large, then: [0, 198, 281, 422]}
+					]},
+					options:{small_headline:true, show_image:true, bottom:true} 
+			},
+			#b3:	{ 
+						frame: {$switch: [
+						{if: =scale.small, then: [292, 265, 281, 355]},
+						{if: =scale.large, then: [292, 198, 281, 422]}
+					]},
+					options:{small_headline:true, bottom:true} 
+			},
+			#b4:	{ 
+						frame: {$switch: [
+						{if: =scale.small, then: [583, 265, 183, 355]},
+						{if: =scale.large, then: [583, 198, 183, 422]}
+					]},
+					options:{small_headline:true, show_image:true, left:true, bottom:true} 
+			},
 			#h1: 	{options:{highlight_dark:true}},
 			#h2: 	{options:{highlight_dark:true}}
 			
 		}, else: {
-			#b1:	{ frame: [11, 10, 768, 188], options:{large_headline:true} },
-			#b2:	{ frame: [11, 199, 281, 420], options:{small_headline:true, show_image:true, bottom:true} },
-			#b3:	{ frame: [303, 199, 281, 420], options:{small_headline:true, bottom:true} },
-			#b4:	{ frame: [594, 199, 183, 420], options:{small_headline:true, show_image:true, left:true, bottom:true} },
+			#b1:	{ 
+						frame: {$switch: [
+						{if: =scale.small, then: [11, 10, 768, 264]},
+						{if: =scale.large, then: [11, 10, 768, 188]}
+					]},
+					options:{large_headline:true} 
+			},
+			#b2:	{ 
+						frame: {$switch: [
+						{if: =scale.small, then: [11, 274, 281, 345]},
+						{if: =scale.large, then: [11, 199, 281, 420]}
+					]},
+					options:{small_headline:true, show_image:true, bottom:true} 
+			},
+			#b3:	{ 
+						frame: {$switch: [
+						{if: =scale.small, then: [303, 274, 281, 345]},
+						{if: =scale.large, then: [303, 199, 281, 420]}
+					]},
+					options:{small_headline:true, bottom:true} 
+			},
+			#b4:	{ 
+						frame: {$switch: [
+						{if: =scale.small, then: [594, 274, 183, 345]},
+						{if: =scale.large, then: [594, 199, 183, 420]}
+					]},
+					options:{small_headline:true, show_image:true, left:true, bottom:true} 
+			},
 			#h1: 	{options:{highlight_dark:true}},
 			#h2: 	{options:{highlight_dark:true}}
 		}

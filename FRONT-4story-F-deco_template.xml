@@ -67,7 +67,7 @@
 					options:{small_headline:true, no_border:true} 
 		},
 		#b4:	{ frame: {$switch: [
-						{if: =scale.small, then: [840, 36, 183, 582]},
+						{if: =scale.small, then: [840, 26, 183, 592]},
 						{if: =scale.large, then: [787, 227, 237, 394]}
 				]}}
         }

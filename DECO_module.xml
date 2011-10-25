@@ -40,7 +40,7 @@
 			{#deco_bottom_headline: { display: { if: =options.bottom_headline, then:inherit }}},
 			{#deco_small_headline: { display: { if: =options.small_headline, then:inherit }}},
 			{.deco_caption: {
-				max-height: { if: =scale.small, then:35, else:40},
+				max-height: { if: =scale.small, then:45, else:55},
 				display: { if: =options.no_caption, then:none, else:inherit }
 			}}
 		]

@@ -90,8 +90,207 @@
 			min="5"
 			usage="front"
 		/>
-		
 		<!-- END MARKETPLACE -->
+
+		<!-- MONEY AND INVESTING -->
+		<template 
+			name="SECTION-4story-D-C-marketdata_template.xml"
+			section="MONEY_AND_INVESTING" 
+			title="4 story Plain - Marketdata"
+			min="6"
+			usage="front"
+		/>
+		<template 
+			name="SECTION-4story-smallG-deco_template.xml"
+			section="MONEY_AND_INVESTING" 
+			title="4 story-Small G Deco"
+			min="6" 
+			deco="true"
+			usage="front"
+		/>
+		<template 
+			name="SECTION-4story-smallG-top_template.xml"
+			section="MONEY_AND_INVESTING" 
+			title="4 story - G photo"
+			min="6"
+			usage="front"
+		/>
+		<template 
+			name="SECTION-3story-G-marketdata_template.xml"
+			section="MONEY_AND_INVESTING" 
+			title="3story - G photo marketdata"
+			min="5"
+			usage="front"
+		/>
+		<!-- END MONEY AND INVESTING -->
+		
+		<!-- NEW YORK -->
+		<template 
+			name="SECTION-3story-G_template.xml"
+			section="NEW_YORK" 
+			title="3 story - G photo"
+			min="5"
+			usage="front"
+		/>
+		<template 
+			name="SECTION-4story-smallG-deco_template.xml"
+			section="NEW_YORK" 
+			title="4 story-Small G Media Deco"
+			min="6" 
+			deco="true"
+			usage="front"
+		/>
+		<template 
+			name="SECTION-3story-G-deco-C_template.xml"
+			section="NEW_YORK" 
+			deco="true" 
+			title="3 story - G Media Deco"
+			min="5"
+			usage="front"
+		/>
+		<template 
+			name="SECTION-1story-PV_template.xml"
+			section="NEW_YORK" 
+			title="PV photo"
+			min="3"
+			usage="front"
+		/>
+		<template 
+			name="SECTION-1story-PV-white_template.xml"
+			section="NEW_YORK" 
+			title="PV photo - White highlights"
+			min="3"
+			usage="front"
+		/>
+		<template 
+			name="SECTION-1story-PV-1highlight_template.xml"
+			section="NEW_YORK" 
+			title="PV photo - 1 highlight"
+			min="3"
+			usage="front"
+		/>
+		<template 
+			name="SECTION-1story-PV-1highlight-white_template.xml"
+			section="NEW_YORK" 
+			title="PV photo - 1 highlight (White highlights)"
+			min="3"
+			usage="front"
+		/>
+		<!-- END NEW YORK -->
+		
+		<!-- OFF DUTY -->
+		<template 
+			name="SECTION-2story-G-C_template.xml"
+			section="OFF_DUTY" 
+			title="2 story-G photo"
+			min="4"
+			usage="front"
+		/>
+		<!-- END OFF DUTY -->
+		
+		<!-- PERSONAL JOURNAL -->
+		<template 
+			name="SECTION-2story-G-C_template.xml"
+			section="PERSONAL_JOURNAL" 
+			title="2 story-G photo"
+			min="4"
+			usage="front"
+		/>
+		<template 
+			name="SECTION-4story-smallG-deco_template.xml"
+			section="PERSONAL_JOURNAL" 
+			title="4 story-Small G Media Deco"
+			min="6" 
+			deco="true"
+			usage="front"
+		/>
+		<template 
+			name="SECTION-3story-G-deco-C_template.xml"
+			section="PERSONAL_JOURNAL" 
+			deco="true" 
+			title="3 story - G Media Deco"
+			min="5"
+			usage="front"
+		/>
+		<template 
+			name="SECTION-1story-P_template.xml"
+			section="PERSONAL_JOURNAL" 
+			title="P photo"
+			min="3"
+			usage="front"
+		/>
+		<template 
+			name="SECTION-1story-PV_template.xml"
+			section="PERSONAL_JOURNAL" 
+			title="PV photo"
+			min="3"
+			usage="front"
+		/>
+		<template 
+			name="SECTION-1story-PV-white_template.xml"
+			section="PERSONAL_JOURNAL" 
+			title="PV photo - White highlights"
+			min="3"
+			usage="front"
+		/>
+		<!-- END PERSONAL JOURNAL -->
+		
+		<!-- REVIEW -->
+		<template 
+			name="SECTION-3story-G_template.xml"
+			section="REVIEW" 
+			title="3 story - G photo"
+			min="5"
+			usage="front"
+		/>
+		<!-- END REVIEW -->
+		
+		<!-- JOURNAL REPORT -->
+		<template 
+			name="SECTION-2story-G-C_template.xml"
+			section="THE_JOURNAL_REPORT" 
+			title="2 story-G photo"
+			min="4"
+			usage="front"
+		/>
+		<!-- END JOURNAL REPORT -->
+
+		<!-- WEEKEND JOURNAL -->
+		<template 
+			name="SECTION-2story-G-C_template.xml"
+			section="WEEKEND_JOURNAL" 
+			title="2 story-G photo"
+			min="4"
+			usage="front"
+		/>
+		<!-- END WEEKEND JOURNAL -->
+
+		<!-- SPECIAL REPORT -->
+		<template 
+			name="SECTION-3story-G_template.xml"
+			section="SPECIAL_REPORT" 
+			title="3 story - G photo"
+			min="5"
+			usage="front"
+		/>
+		<template 
+			name="SECTION-4story-smallG-deco_template.xml"
+			section="SPECIAL_REPORT" 
+			title="4 story-Small G Media Deco"
+			min="6" 
+			deco="true"
+			usage="front"
+		/>
+		<template 
+			name="SECTION-3story-G-deco-C_template.xml"
+			section="SPECIAL_REPORT" 
+			deco="true" 
+			title="3 story - G Media Deco"
+			min="5"
+			usage="front"
+		/>
+		
+		<!-- END SPECIAL REPORT -->
 		
 		<!-- OPINION -->
 		<template 
@@ -130,6 +329,83 @@
 			usage="front"
 		/>
 		<!-- END OPINION -->
+		
+		<!-- FANCY CONTINUATION -->
+		<template 
+			name="CONTINUATION-fancy-3OV-7_template.xml" 
+			title="7 stories - 3 OV deco"
+			min="7"
+			usage="continuation"
+			section="OFF_DUTY" 
+			deco="true"
+			page="2"
+		/>
+		<template 
+			name="CONTINUATION-fancy-smallG-OV-6_template.xml" 
+			title="6 stories - smallG deco 1 OV deco"
+			min="6"
+			usage="continuation"
+			section="OFF_DUTY" 
+			deco="true"
+			page="3"
+		/>
+
+		<template 
+			name="CONTINUATION-fancy-6_template.xml" 
+			title="6 stories - smallG deco"
+			min="6"
+			usage="continuation"
+			section="FRIDAY_JOURNAL,FRONT_SECTION,MONEY_AND_INVESTING,NEW_YORK,OFF_DUTY,PERSONAL_JOURNAL,WSJ_MAGAZINE" 
+			deco="true"
+			page="2"
+		/>
+		<template 
+			name="CONTINUATION-fancy-bottom-6_template.xml" 
+			title="6 stories - smallG deco bottom"
+			min="6"
+			section="THE_JOURNAL_REPORT,MARKETPLACE,OPINION,REVIEW"
+			usage="continuation" 
+			deco="true"
+			page="2"
+		/>
+		<template 
+			name="CONTINUATION-fancy-8_template.xml" 
+			title="8 stories - smallG deco"
+			min="8"
+			section="FRONT_SECTION,OFF_DUTY"
+			usage="continuation" 
+			deco="true"
+			page="2"
+		/>
+		<template 
+			name="CONTINUATION-fancy-bottom-8_template.xml"
+			section="OPINION" 
+			title="8 stories - smallG deco bottom"
+			min="8"
+			usage="continuation" 
+			deco="true"
+			page="2"
+		/>
+
+		<template 
+			name="CONTINUATION-fancy-bottom-6_template.xml" 
+			title="6 stories - smallG deco bottom"
+			min="6"
+			section="WSJ_MAGAZINE"
+			usage="continuation" 
+			deco="true"
+			page="3"
+		/>
+		<template 
+			name="CONTINUATION-fancy-bottom-6_template.xml" 
+			title="6 stories - smallG deco bottom"
+			min="6"
+			section="WSJ_MAGAZINE"
+			usage="continuation" 
+			deco="true"
+			page="4"
+		/>
+		<!-- END FANCY CONTINUATION -->
 		
 		<!-- GENERIC CONTINUATION -->
 		<template 

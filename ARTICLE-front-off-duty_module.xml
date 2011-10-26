@@ -27,7 +27,15 @@
 			border-image:url(articleBackground.png),
 			border-width: [16, 0, 0, 0],
 			border-slice: [16, 0, 0, 0]
+		}},
+		{#article_advertisement: {
+			min-height: 206,            
+			min-width: 555,            
+			anchor-x: center,            
+			anchor-y: middle        
+
 		}}
+		
 
 		]
     }</style>
@@ -43,7 +51,8 @@
 	    <p class="article_byline" embed="byline"/>
         <panel class="article_body" embed="body"/>
     </panel>
-    <box id="filler">
+	<box id="filler">
+		<box id="article_advertisement" class="ad-twocolumn" embed="advertisement"/>
 	</box>
 	
 </jpml>

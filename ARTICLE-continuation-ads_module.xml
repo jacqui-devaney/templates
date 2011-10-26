@@ -21,10 +21,10 @@
 			anchor-y:top
 		}},
 		{if: =portrait, then: {
-			#mediabucket_container:	{ frame: [279, 0, 276, 212] }
+			#mediabucket_container:	{ frame: [285, 0, 275, 207]  }
         }, else: {
-			#mediabucket_container:	{ frame: [578, 0, 275, 212]  }
-		}}
+			#mediabucket_container:	{ frame: [275, 0, 275, 207]  }
+		}},
 		]
     }</style>
 	

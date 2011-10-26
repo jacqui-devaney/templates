@@ -8,11 +8,12 @@
 			padding: [10, 20, 0, 20],
 			min-height: { if: =page.mediabucket, then: 400}
 		}},
-		{.body: { 
+		{.article_body: { 
             column-count: {$divide: [=view.width, {$multiply:[250, =scale.dpi]}]},
             column-gutter: 30,
 			column-height:balance,
-			flow: article_body
+			flow: article_body,
+			min-height:200
         }},
 		{#mediabucket: {
 			width:546,
@@ -71,7 +72,6 @@
 			anchor-y: middle        
 
 		}}
-		
 
 		]
     }</style>
@@ -93,7 +93,7 @@
 				<h2 class="rando_subhed" embed="subhed" />
 	        </box>
 		</box>
-		<panel class="body" embed="body" />
+		<panel class="article_body" embed="body" />
 		
     </panel>
 	<box id="filler">

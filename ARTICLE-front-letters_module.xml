@@ -17,6 +17,9 @@
 			height:385,
 			anchor-x:center
 		}},
+		{.article_body: {
+			min-height:200
+		}},
 		{if: =portrait, then: {
             #mediabucket_container:	{ frame: [0, 0, 565, 402]  }
         }, else: {

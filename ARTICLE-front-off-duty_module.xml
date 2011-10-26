@@ -11,6 +11,9 @@
 			column-height:balance,
 			flow: article_body
         }},
+		{.article_body: {
+			min-height:200
+		}},
 		{#mediabucket: {frame: [3, 3, 570, 612] }},
 		{if: =portrait, then: {
             #mediabucket_container:	{ frame: [0, 0, 582, 623]  }

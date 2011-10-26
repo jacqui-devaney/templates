@@ -11,6 +11,9 @@
 			flow: article_body,
 			min-height: { if: =page.mediabucket, then: 400 }
         }},
+		{.article_body: {
+			min-height:200
+		}},
 		{#mediabucket: {
 			width:546,
 			height:385,

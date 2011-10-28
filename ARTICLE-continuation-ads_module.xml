@@ -8,7 +8,8 @@
 		{.article_body: { 
             column-count: {$divide: [=view.width, {$multiply:[250, =scale.dpi]}]},
             column-gutter: 30,
-			column-height:balance
+			column-height:balance,
+			layout-grid-line:20
         }},
 		{#body_continuation: {
 			content: from-flow(article_body),

@@ -4,21 +4,19 @@
 	<style>{
 		if: =portrait, then: {
 			#b1:	{ frame: [0, 0, 768, 620] },
-			#h5: {options:{highlight_dark:true}},
-			#h6: {options:{highlight_dark:true}}
+			#h1: {options:{highlight_dark:true}},
+			#h2: {options:{highlight_dark:true}}
 		}, else: {
 			#b1:	{ frame: [0, 0, 768, 620] },
-			#h5: {options:{highlight_dark:true}},
-			#h6: {options:{highlight_dark:true}}
+			#h1: { frame: [768, 0, 256, 216] },
+			#h2: 	{ frame: [768, 216, 256, 207] }
 			
 		}
 	}</style>
 	
 	<box id="b1" embed="article" module="IMAGE-only_module.xml" />
-	<box id="h5" embed="article" module="HIGHLIGHTS_module.xml" />
-	<box id="l4" class="line" />
-	<box id="h6" embed="article" module="HIGHLIGHTS_module.xml" />
-	<box id="l5" class="line" />
+	<box id="h1" embed="article" module="HIGHLIGHTS_module.xml" />
+	<box id="h2" embed="article" module="HIGHLIGHTS_module.xml" />
 	<box id="ad_background_PV" class="ad_dark">
 		<box id="highlight_ad" class="ad-rectangle" embed="advertisement" />
 	</box>

@@ -23,8 +23,8 @@
 		{if: =portrait, then: {
 			#mediabucket_container:	{ frame: [285, 0, 275, 207]  }
         }, else: {
-			#mediabucket_container:	{ frame: [275, 0, 275, 207]  }
-		}},
+			#mediabucket_container:	{ frame: [575, 0, 275, 207]  }
+		}}
 		]
     }</style>
 	

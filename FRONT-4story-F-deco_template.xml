@@ -41,21 +41,21 @@
 		#b1:	{ 
 					frame: {$switch: [
 						{if: =scale.small, then: [205, 28, 377, 272]},
-						{if: =scale.large, then: [205, 26, 571, 143]}
+						{if: =scale.large, then: [205, 26, 571, 173]}
 					]},
 					options:{large_headline:true, no_border:true} 
 			},
 		#deco:	{ 
 					frame: {$switch: [
 						{if: =scale.small, then: [205, 300, 377, 305]},
-						{if: =scale.large, then: [205, 169, 571, 307]}
+						{if: =scale.large, then: [205, 199, 571, 307]}
 					]},
 					options: {normal_headline:true}
 				},
 		#b2:	{ 
 					frame: {$switch: [
 						{if: =scale.small, then: [592, 26, 238, 272]},
-						{if: =scale.large, then: [205, 476, 571, 144]}
+						{if: =scale.large, then: [205, 506, 571, 114]}
 					]},
 					options:{small_headline:true, bottom:true} 
 				},

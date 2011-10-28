@@ -5,10 +5,10 @@
 		
 		if: =portrait, then: {
 			#b1:	{ frame: [2, 22, 764, 598] },
-			#h3: {options:{highlight_dark:true}}
+			#h3: {options:{highlight_dark:true, single:true}}
 		}, else: {
 			#b1:	{ frame: [11, 11, 764, 598] },
-			#h3: {options:{highlight_dark:true}}
+			#h3: {options:{highlight_dark:true, single:true}}
 		}
 		
 		

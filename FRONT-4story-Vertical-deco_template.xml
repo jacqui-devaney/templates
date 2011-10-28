@@ -24,14 +24,14 @@
 						]},
 						options:{small_headline:true} 
 			},
-			#b3:	{ 
+			#b4:	{ 
 						frame: {$switch: [
 							{if: =scale.small, then: [194, 533, 280, 343]},
 							{if: =scale.large, then: [194, 533, 280, 343]}
 						]},
 						options:{small_headline:true}
 			},
-			#b4:	{ 
+			#b3:	{ 
 						frame: {$switch: [
 							{if: =scale.small, then: [486, 533, 280, 343]},
 							{if: =scale.large, then: [486, 583, 280, 295]}
@@ -60,13 +60,13 @@
 						]},
 						options:{small_headline:true, bottom:true} 
 			},
-			#b3:	{ 
+			#b4:	{ 
 						frame: {$switch: [
 							{if: =scale.small, then: [787, 243, 237, 377]},
 							{if: =scale.large, then: [787, 243, 237, 377]}
 						]}
 			},
-			#b4:	{ 
+			#b3:	{ 
 						frame: {$switch: [
 							{if: =scale.small, then: [787, 28, 237, 216]},
 							{if: =scale.large, then: [787, 26, 237, 216]}
@@ -86,7 +86,7 @@
 	<box id="b1" embed="article" module="FRONT-NO-IMAGE_module.xml" />
 	<box id="b2" embed="article" module="FRONT-NO-IMAGE_module.xml" />
 	<box id="deco" embed="article" module="DECO_module.xml" />
-	<box id="b3" embed="article" module="AHED_module.xml" />
-	<box id="b4" embed="article" module="FRONT-NO-IMAGE_module.xml" />
+	<box id="b4" embed="article" module="AHED_module.xml" />
+	<box id="b3" embed="article" module="FRONT-NO-IMAGE_module.xml" />
 	
 </jpml>

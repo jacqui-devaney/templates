@@ -508,6 +508,7 @@
 			<key>deco</key>
 			<array>
 				<string>Deco Summary Liondoor FrontCont1</string>
+				<string>Deco Summary Liondoor FrontCont2</string>
 			</array>
 		</dict>
 		<key>CONTINUATION-fancy-8_template</key>
@@ -579,7 +580,7 @@
 			<array>
 				<true/>
 			</array>
-			<key>b6</key>
+			<key>b4</key>
 			<array>
 				<string>A-hed</string>
 			</array>
@@ -737,6 +738,34 @@
 				<string>Technology</string>
 			</array>
 		</dict>
+		<key>SECTION-4story-smallG-bottom_template.xml</key>
+		<dict>
+			<key>b1</key>
+			<array>
+				<true/>
+			</array>
+			<key>h1</key>
+			<array>
+				<string>Mobile Tablet Highlight1A</string>
+				<string>Mobile Tablet Highlight1B</string>
+				<string>Executive Education</string>
+				<string>Earnings</string>
+				<string>Advertising</string>
+				<string>Theory</string>
+				<string>Small Business</string>
+				<string>Media &amp;amp; Marketing</string>
+			</array>
+			<key>h2</key>
+			<array>
+				<string>Mobile Tablet Highlight2A</string>
+				<string>Mobile Tablet Highlight2B</string>
+				<string>Tech Journal</string>
+				<string>Business Technology</string>
+				<string>Digits</string>
+				<string>Telecommunications</string>
+				<string>Technology</string>
+			</array>
+		</dict>
 		<key>SECTION-4story-smallG-deco_template</key>
 		<dict>
 			<key>b1</key>
@@ -846,6 +875,25 @@
 			<array/>
 		</dict>
 		<key>SECTION-4story-D-C_template</key>
+		<dict>
+			<key>b1</key>
+			<array>
+				<true/>
+			</array>
+			<key>h1</key>
+			<array>
+				<string>Mobile Tablet Highlight1A</string>
+				<string>Mobile Tablet Highlight1B</string>
+				<string>Ahead of the Tape</string>
+			</array>
+			<key>h2</key>
+			<array>
+				<string>Mobile Tablet Highlight2A</string>
+				<string>Mobile Tablet Highlight2B</string>
+				<string>Weekend Investor</string>
+			</array>
+		</dict>
+		<key>SECTION-4story-smallG-bottom_template.xml</key>
 		<dict>
 			<key>b1</key>
 			<array>
@@ -1031,6 +1079,28 @@
 			<array>
 				<string>Deco Summary Liondoor Section 1</string>
 				<string>Deco Summary Liondoor New York</string>
+			</array>
+			<key>h1</key>
+			<array>
+				<string>Mobile Tablet Highlight1A</string>
+				<string>Mobile Tablet Highlight1B</string>
+			</array>
+			<key>h2</key>
+			<array>
+				<string>Mobile Tablet Highlight2A</string>
+				<string>Mobile Tablet Highlight2B</string>
+				<string>NY The Couch</string>
+				<string>Jason Gay</string>
+				<string>Urban Gardner</string>
+				<string>NY Heard &amp;amp; Scene</string>
+				<string>Sports</string>
+			</array>
+		</dict>
+		<key>SECTION-4story-smallG-bottom_template.xml</key>
+		<dict>
+			<key>b1</key>
+			<array>
+				<true/>
 			</array>
 			<key>h1</key>
 			<array>

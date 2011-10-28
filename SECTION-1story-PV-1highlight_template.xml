@@ -4,10 +4,10 @@
 	<style>{ 
 		if: =portrait, then: {
 			#b1:	{ frame: [0, 0, 768, 620] },
-			#h4: {options:{highlight_dark:true}}
+			#h4: {options:{highlight_dark:true, single:true}}
 		}, else: {
 			#b1:	{ frame: [0, 0, 768, 620] },
-			#h4: {options:{highlight_dark:true}}
+			#h4: {options:{highlight_dark:true, single:true}}
 		}
 	}</style>
 	

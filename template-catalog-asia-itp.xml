@@ -354,6 +354,13 @@
 			name="GENERIC-fullpagead-template.xml" 
 			usage="ads" 
 		/>
+		
+		<!-- DEV TESTING  -->
+		<template name="TEST-1-fonts_template.xml" max="999" section="OPINION" usage="front" />
+		<template name="TEST-2-parameters_template.xml" max="999" section="BUSINESS_AND_FINANCE" usage="front" />
+		<template name="TEST-3-borders_template.xml" max="999" section="WEEKEND_JOURNAL" usage="front" />
+		<!-- END DEV TESTING -->
+		
 	</templates>
 
 	<article-page-plans>

@@ -231,6 +231,21 @@
 				<string>Deco Summary Liondoor</string>
 			</array>
 		</dict>
+		<key>FRONT-4story-E-deco_template</key>
+		<dict>
+			<key>b1</key>
+			<array>
+				<true/>
+			</array>
+			<key>b5</key>
+			<array>
+				<string>A-hed</string>
+			</array>
+			<key>deco</key>
+			<array>
+				<string>Deco Summary Liondoor</string>
+			</array>
+		</dict>
 		<key>FRONT-4story-E-top_template</key>
 		<dict>
 			<key>b1</key>
@@ -245,21 +260,6 @@
 			<key>b2</key>
 			<array/>
 			<key>b4</key>
-			<array>
-				<string>A-hed</string>
-			</array>
-		</dict>
-		<key>FRONT-4story-E-deco_template</key>
-		<dict>
-			<key>deco</key>
-			<array>
-				<string>Deco Summary Liondoor</string>
-			</array>
-			<key>b1</key>
-			<array>
-				<true/>
-			</array>
-			<key>b5</key>
 			<array>
 				<string>A-hed</string>
 			</array>
@@ -286,13 +286,13 @@
 		<dict>
 			<key>b1</key>
 			<array/>
-			<key>deco</key>
-			<array>
-				<string>Deco Summary Liondoor</string>
-			</array>
 			<key>b4</key>
 			<array>
 				<string>A-hed</string>
+			</array>
+			<key>deco</key>
+			<array>
+				<string>Deco Summary Liondoor</string>
 			</array>
 		</dict>
 		<key>FRONT-4story-Video-deco_template</key>
@@ -741,11 +741,24 @@
 		<key>SECTION-4story-smallG-top_template</key>
 		<dict>
 			<key>b1</key>
-			<array/>
+			<array>
+				<true/>
+			</array>
 			<key>h1</key>
-			<array/>
+			<array>
+				<string>Mobile Tablet Highlight1A</string>
+				<string>Mobile Tablet Highlight1B</string>
+			</array>
 			<key>h2</key>
-			<array/>
+			<array>
+				<string>Mobile Tablet Highlight2A</string>
+				<string>Mobile Tablet Highlight2B</string>
+				<string>NY The Couch</string>
+				<string>Jason Gay</string>
+				<string>Urban Gardner</string>
+				<string>NY Heard &amp;amp; Scene</string>
+				<string>Sports</string>
+			</array>
 		</dict>
 	</dict>
 	<key>OFF_DUTY</key>
@@ -849,7 +862,7 @@
 				<string>Mobile Tablet Highlight1A</string>
 				<string>Mobile Tablet Highlight1B</string>
 				<string>Slow Food Fast</string>
-				<string>Traveler&apos;s Tale</string>
+				<string>Traveler's Tale</string>
 				<string>Extra Credit</string>
 				<string>What to Wear There</string>
 				<string>RunwayRealWay</string>

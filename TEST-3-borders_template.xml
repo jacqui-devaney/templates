@@ -1,0 +1,13 @@
+<jpml id="TEST-3-borders_template">
+    <style src="GLOBAL-stylesheet.ejs"/>
+	<style>{
+		if: =portrait, then: {
+			#b1: {frame:[0, 0, 768, 1024]}
+		}, else: {
+			#b1: {frame:[0, 0, 1024, 768]}
+		
+		}
+	}</style>
+	<box id="b1" embed="article" module="TEST-3-borders_module.xml"/>
+</jpml>
+

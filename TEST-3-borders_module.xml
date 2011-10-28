@@ -1,0 +1,155 @@
+<jpml id="TEST-3-borders_module">
+	<style src="GLOBAL_MODULES-stylesheet.ejs" />
+	<style src="GLOBAL-stylesheet.ejs" />
+	<style>
+    {
+        box: { background-color: #eee },
+        panel: { background-color: #ebb },
+        p: { background-color: #beb },
+        
+        #b1: { frame: [50, 50, 100, 100] },
+        #p1: { border-color: black, border-width: [2] },
+        
+        #b2: { 
+            frame: [200, 50, 100, 100],
+            border-color: red,
+            border-width: [1]
+        },
+        
+        #b3: { 
+            frame: [350, 50, 100, 100],
+            border-color: green,
+            border-width: [2]
+        },
+        
+        #ahed: {
+            frame: [500, 50, 100, 100],
+            border-image: url(ahed-border.png),
+            border-slice: [14],
+			border-width: [14]
+        },
+        
+        #b-tb: { 
+            frame: [50, 200, 250, 50],
+            border-color: black,
+            border-width: [2, 0]
+        },
+        
+        #b-rl: { 
+            frame: [350, 200, 250, 50],
+            border-color: black,
+            border-width: [0, 2]
+        },
+        
+        #b-top: { 
+            frame: [50, 300, 100, 100],
+            border-color: black,
+            border-width: [1, 0, 0, 0]
+        },
+        
+        #b-right: { 
+            frame: [200, 300, 100, 100],
+            border-color: black,
+            border-width: [0, 1, 0, 0]
+        },
+        
+        #b-bottom: { 
+            frame: [350, 300, 100, 100],
+            border-color: black,
+            border-width: [0, 0, 1, 0]
+        },
+        
+        #b-left: { 
+            frame: [500, 300, 100, 100],
+            border-color: black,
+            border-width: [0, 0, 0, 1]
+        },
+        
+        #b-top2: { 
+            frame: [50, 450, 100, 100],
+            border-color: black,
+            border-width: [2, 0, 0, 0]
+        },
+        
+        #b-right2: { 
+            frame: [200, 450, 100, 100],
+            border-color: black,
+            border-width: [0, 2, 0, 0]
+        },
+        
+        #b-bottom2: { 
+            frame: [350, 450, 100, 100],
+            border-color: black,
+            border-width: [0, 0, 2, 0]
+        },
+        
+        #b-left2: { 
+            frame: [500, 450, 100, 100],
+            border-color: black,
+            border-width: [0, 0, 0, 2]
+        }
+        
+    }    
+    </style>
+
+	<p>Border Test</p>
+    
+    <box id="b1">
+        <panel id="p1">
+            <p>Here's a 2px black border on a panel</p>
+        </panel>
+    </box>
+    
+    <box id="b2">
+        <p>1px red border</p>
+    </box>
+    
+    <box id="b3">
+        <p>2px green border</p>
+    </box>
+    
+    <box id="ahed">
+        <p>a-hed style border</p>
+    </box>
+    
+    <box id="b-tb">
+        <p>2px on top/bottom</p>
+    </box>
+    
+    <box id="b-rl">
+        <p>2px on left/right</p>
+    </box>
+    
+    <box id="b-top">
+        <p>1px on top</p>
+    </box>
+    
+    <box id="b-right">
+        <p>1px on right</p>
+    </box>
+    
+    <box id="b-bottom">
+        <p>1px on bottom</p>
+    </box>
+    
+    <box id="b-left">
+        <p>1px on left</p>
+    </box>
+    
+    <box id="b-top2">
+        <p>2px on top</p>
+    </box>
+    
+    <box id="b-right2">
+        <p>2px on right</p>
+    </box>
+    
+    <box id="b-bottom2">
+        <p>2px on bottom</p>
+    </box>
+    
+    <box id="b-left2">
+        <p>2px on left</p>
+    </box>
+    
+</jpml>

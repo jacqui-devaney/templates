@@ -28,7 +28,7 @@
 			} 
 		},
 		#stars: { padding: [5, 0, 10, 0] },
-		#regular_content: { padding: [ 10, 8, 20, 8 ] },
+		#regular_content: { padding: [ 10, 8, 15, 8 ] },
 		#regular: {
 			display: { if: =article.type, equals: A-hed, then: none, else: inherit }
 		},

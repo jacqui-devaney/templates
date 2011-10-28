@@ -1,55 +1,54 @@
 <jpml id="SECTION-4story-smallG-bottom_template">
 	<style src="GLOBAL-stylesheet.ejs" />
 	<style src="SECTION-stylesheet.ejs" />
-	<style>{
+	<style>{ 
 		if: =portrait, then: {
 			#b1:	{ 
 						frame: {$switch: [
-						{if: =scale.small, then: [0, 0, 475, 292]},
-						{if: =scale.large, then: [0, 0, 475, 212]}
+						{if: =scale.small, then: [0, 0, 571, 257]},
+						{if: =scale.large, then: [0, 0, 571, 188]}
 					]},
 					options:{large_headline:true, no_border:true} 
 			},
 			#b2:	{ 
 						frame: {$switch: [
-						{if: =scale.small, then: [0, 292, 475, 328]},
-						{if: =scale.large, then: [0, 212, 475, 408]}
+						{if: =scale.small, then: [0, 257, 571, 362]},
+						{if: =scale.large, then: [0, 188, 571, 432]}
 					]},
 					options:{normal_headline:true} 
 			},
-			#b3:	{ frame: [486, 0, 280, 212], options:{small_headline:true}},
-			#b4:	{ frame: [486, 212, 280, 204], options:{small_headline:true, border:true}},
-			#b5:	{ frame: [486, 416, 280, 203], options:{small_headline:true, border:true} },
+			#b3:	{ frame: [583, 0, 183, 324], options:{small_headline:true, no_border:true, left:true} },
+			#b4:	{ frame: [583, 325, 183, 294], options:{small_headline:true, left:true} },
 			#h1: {options:{highlight_dark:true}},
 			#h2: {options:{highlight_dark:true}}
+			
 		}, else: {
 			#b1:	{ 
 						frame: {$switch: [
-						{if: =scale.small, then: [3, 0, 475, 242]},
-						{if: =scale.large, then: [3, 0, 475, 207]}
+						{if: =scale.small, then: [11, 0, 571, 250]},
+						{if: =scale.large, then: [11, 0, 571, 188]}
 					]},
 					options:{large_headline:true, no_border:true} 
 			},
 			#b2:	{ 
 						frame: {$switch: [
-						{if: =scale.small, then: [3, 243, 475, 375]},
-						{if: =scale.large, then: [3, 207, 475, 405]}
-					]},
-					options:{normal_headline:true} 
-			},
-			#b3:	{ frame: [494, 0, 280, 207], options:{small_headline:true} },
-			#b4:	{ frame: [494, 207, 280, 207], options:{small_headline:true, border:true} },
-			#b5:	{ frame: [494, 412, 280, 207], options:{small_headline:true, border:true} },
+						{if: =scale.small, then: [11, 250, 571, 370]},
+						{if: =scale.large, then: [11, 188, 571, 432]}
+					]}, 
+						options:{normal_headline:true} 
+					},
+			#b3:	{ frame: [594, 0, 183, 328], options:{small_headline:true, no_border:true, left:true} },
+			#b4:	{ frame: [594, 328, 183, 291], options:{small_headline:true, left:true, bottom:true} },
 			#h1: {options:{highlight_dark:true}},
 			#h2: {options:{highlight_dark:true}}
+			
 		}
 	}</style>
 	
 	<box id="b1" embed="article" module="TOP-IMAGE_module.xml" />
 	<box id="b2" embed="article" module="DECO_module.xml" />
-	<box id="b3" embed="article" module="RIGHT-INSET-IMAGE_module.xml" />
-	<box id="b4" embed="article" module="RIGHT-INSET-IMAGE_module.xml" />
-	<box id="b5" embed="article" module="RIGHT-INSET-IMAGE_module.xml" />
+	<box id="b3" embed="article" module="TOP-IMAGE_module.xml" />
+	<box id="b4" embed="article" module="TOP-IMAGE_module.xml" />
 	<box id="h1" embed="article" module="HIGHLIGHTS_module.xml" />
 	<box id="h2" embed="article" module="HIGHLIGHTS_module.xml" />
 	<box id="ad_background" class="ad_dark">
@@ -58,4 +57,3 @@
 
 	
 </jpml>
-

@@ -14,18 +14,24 @@
 	#large_headline: {
 		font-name:DJ5EscrowCond-Bold,
 		font-size:40,
-		line-height:44
+		line-height:42,
+		text-scale: {if: =scale.small, then: .9, else: inherit}
+		
 		
 	},
 	#medium_headline: {
 		font-name:DJ5EscrowCond-Bold,
 		font-size:36,
-		line-height:40
+		line-height:38,
+		text-scale: {if: =scale.small, then: .9, else: inherit}
+		
 	},
 	#small_headline: {
 		font-name:DJ5EscrowCond-Bold,
 		font-size:24,
-		line-height:28
+		line-height:26,
+		text-scale: {if: =scale.small, then: .9, else: inherit}
+		
 	},
 	.article_headline: {
 		font-name:DJ5EscrowCond-Bold,
@@ -222,10 +228,6 @@
 		text-indent:20
 	},
 	
-	.A_size: {
-		width:76,
-		height:76
-	},
 	.D_size: {
 		width:262,
 		height:174

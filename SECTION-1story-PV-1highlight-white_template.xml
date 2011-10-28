@@ -3,9 +3,11 @@
 	<style src="SECTION-stylesheet.ejs" />
 	<style>{ 
 		if: =portrait, then: {
-			#b1:	{ frame: [0, 0, 768, 620] }
+			#b1:	{ frame: [0, 0, 768, 620] },
+			#h4: { options: {single:true}}
 		}, else: {
-			#b1:	{ frame: [0, 0, 768, 620] }
+			#b1:	{ frame: [0, 0, 768, 620] },
+			#h4: { options: {single:true}}
 		}
 	}</style>
 	

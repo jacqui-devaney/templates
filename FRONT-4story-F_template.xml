@@ -6,28 +6,28 @@
 			#b1:	{ 
 						frame: {$switch: [
 							{if: =scale.small, then: [195, 28, 571, 500]},
-							{if: =scale.large, then: [195, 26, 571, 446]}
+							{if: =scale.large, then: [195, 26, 571, 430]}
 						]},
 						options:{large_headline:true, show_image_skinny:true, no_border:true} 
 			},
 			#b2:	{ 
 						frame: {$switch: [
 							{if: =scale.small, then: [195, 529, 280, 173]},
-							{if: =scale.large, then: [195, 473, 280, 200]}
+							{if: =scale.large, then: [195, 456, 280, 210]}
 						]},
 						options:{small_headline:true} 
 			},
 			#b3:	{ 
 						frame: {$switch: [
 							{if: =scale.small, then: [195, 703, 280, 172]},
-							{if: =scale.large, then: [195, 674, 280, 200]}
+							{if: =scale.large, then: [195, 666, 280, 210]}
 						]},
 						options:{small_headline:true, bottom:true} 
 			},
 			#b4:	{ 
 						frame: {$switch: [
 							{if: =scale.small, then: [486, 529, 280, 345]},
-							{if: =scale.large, then: [486, 473, 280, 402]}
+							{if: =scale.large, then: [486, 456, 280, 420]}
 						]}
 			}
 		}, else: {

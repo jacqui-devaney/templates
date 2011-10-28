@@ -34,7 +34,7 @@
 	</panel>
 	<panel id="content">
 	 	<box id="image_container">
-			<image class="A_size" embed="summary-image"/>
+			<image embed="summary-image"/>
 		</box>
 		<p class="continuation_headline"><span embed="headline" /><mark class="key" /></p>
 		<panel embed="body" class="continuation_body"/>

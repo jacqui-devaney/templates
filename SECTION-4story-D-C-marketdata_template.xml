@@ -4,13 +4,13 @@
 	<style>{
 		if: =portrait, then: {
 			#b1:	{ frame: [8, 0, 556, 295], options:{large_headline:true} },
-			#b2:	{ frame: [0, 296, 571, 324], options:{small_headline:true, bottom:true} },
+			#b2:	{ frame: [0, 296, 571, 324], options:{medium_headline:true, bottom:true} },
 			#b3:	{ frame: [583, 0, 183, 295], options:{small_headline:true, no_border:true, left:true} },
 			#b4:	{ frame: [583, 296, 183, 324], options:{small_headline:true, show_image:true, left:true, bottom:true} },
 			#h2: {options:{highlight_dark:true}}
 		}, else: {
 			#b1:	{ frame: [11, 10, 556, 286], options:{large_headline:true} },
-			#b2:	{ frame: [0, 296, 571, 324], options:{small_headline:true, bottom:true} },
+			#b2:	{ frame: [0, 296, 571, 324], options:{medium_headline:true, bottom:true} },
 			#b3:	{ frame: [594, 10, 183, 286], options:{small_headline:true, no_border:true, left:true} },
 			#b4:	{ frame: [594, 296, 183, 324], options:{small_headline:true, show_image:true, left:true, bottom:true} },
 			#h2: {options:{highlight_dark:true}}

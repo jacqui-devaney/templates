@@ -53,12 +53,46 @@
 			}
 	    }, else: {
 	        #b1 : { frame: [0, 0, 256, 619] },
-	        #b2 : { frame: [256, 430, 256, 190], options: {hide_strap: {if:=articles.b2.subsection, equals:=articles.b1.subsection}} },
-	        #b3 : { frame: [512, 430, 256, 190], options: {hide_strap: {if:=articles.b3.subsection, equals:=articles.b2.subsection}} },
-	        #b4 : { frame: [768, 430, 256, 190], options: {hide_strap: {if:=articles.b4.subsection, equals:=articles.b3.subsection}} },
-	        #deco : { frame: [256, 0, 252, 423], options: {small_headline:true, bottom_border:true} },
-	        #deco2 : { frame: [512, 0, 252, 423], options: {small_headline:true, bottom_border:true} },
-	        #deco3 : { frame: [768, 0, 252, 423], options: {small_headline:true, bottom_border:true} }
+	        #b2 : { 
+						frame: {$switch: [
+							{if: =scale.small, then: [256, 345, 253, 275]},
+							{if: =scale.large, then: [256, 430, 256, 190]}
+						]},
+						options: {hide_strap: {if:=articles.b2.subsection, equals:=articles.b1.subsection}} 
+			},
+	        #b3 : { 
+						frame: {$switch: [
+							{if: =scale.small, then: [512, 345, 253, 275]},
+							{if: =scale.large, then: [512, 430, 256, 190]}
+						]},
+						options: {hide_strap: {if:=articles.b3.subsection, equals:=articles.b2.subsection}} },
+	        #b4 : { 
+						frame: {$switch: [
+							{if: =scale.small, then: [768, 345, 253, 275]},
+							{if: =scale.large, then: [768, 430, 256, 190]}
+						]},
+						options: {hide_strap: {if:=articles.b4.subsection, equals:=articles.b3.subsection}} },
+	        #deco : { 
+						frame: {$switch: [
+							{if: =scale.small, then: [256, 0, 253, 345]},
+							{if: =scale.large, then: [256, 0, 237, 423]}
+						]},
+						options: {small_headline:true, bottom_border:true} 
+			},
+	        #deco2 : { 
+						frame: {$switch: [
+							{if: =scale.small, then: [512, 0, 253, 345]},
+							{if: =scale.large, then: [512, 0, 252, 423]}
+						]},
+						options: {small_headline:true, bottom_border:true} 
+			},
+	        #deco3 : { 
+						frame: {$switch: [
+							{if: =scale.small, then: [768, 0, 253, 345]},
+							{if: =scale.large, then: [768, 0, 252, 423]}
+						]},
+						options: {small_headline:true, bottom_border:true} 
+			}
         }
     }</style>
     <box id="b1" embed="article" module="CONTINUATION-dynamic_module.xml" />    

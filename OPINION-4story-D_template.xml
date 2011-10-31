@@ -8,13 +8,13 @@
 			{	if: =portrait, then: {
 					#articles:	{ frame: [8, 10, 460, 610] },
 					#b1:	{ frame: [0, 0, 460, 314], options:{rando:true} },
-					#b3:	{ frame: [486, 2, 280, 390], options:{small_headline:true, show_image:true, no_border:true} },
-					#b4:	{ frame: [486, 392, 280, 226], options:{small_headline:true, no_border:true} }
+					#b3:	{ frame: [486, 2, 280, 400], options:{small_headline:true, show_image:true, no_border:true} },
+					#b4:	{ frame: [486, 402, 280, 216], options:{small_headline:true, no_border:true} }
 				}, else: {
 					#articles:	{ frame: [16, 10, 460, 610] },
 					#b1:	{ frame: [0, 0, 460, 314], options:{rando:true} },
-					#b3:	{ frame: [496, 2, 280, 390], options:{small_headline:true, show_image:true, no_border:true} },
-					#b4:	{ frame: [496, 392, 280, 226], options:{small_headline:true, no_border:true} }
+					#b3:	{ frame: [496, 2, 280, 400], options:{small_headline:true, show_image:true, no_border:true} },
+					#b4:	{ frame: [496, 402, 280, 216], options:{small_headline:true, no_border:true} }
 			
 				}
 			},

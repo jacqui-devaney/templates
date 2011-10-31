@@ -22,11 +22,11 @@
 					}
 					}}
 			]},
-			{#headline: {padding:[2, 0, 0, 0]}},
+			{#headline: {padding:[2, 0, 0, 0]}
+			},
 			{#body: { 
 	            column-count: {$divide: [=view.width, {$multiply:[450, =scale.dpi]}]},
-	            column-gutter: 15,
-				padding: [10, 0, 0, 0]
+	            column-gutter: 15
 	        }},
 			
 			{#image_container: { 
@@ -34,7 +34,7 @@
 				anchor-y:bottom,
 				width: 359,
 				height: 239,
-				padding: [ 0, 15, 10, 0 ]
+				padding: [0, 15, 0, 0 ]
 			}},
 			{.invisible: { display:none }},
 			{#small_headline: { display: { if: =options.small_headline, then:inherit }}},

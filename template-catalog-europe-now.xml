@@ -1,5 +1,6 @@
 <catalog  preprocessor="preprocessor.ejs">
 	<templates>
+		<!-- FRONT SECTION -->
 		<template 
 			name="FRONT-4story-Video-deco_template.xml" 
 			title="4 story - Video deco" 
@@ -8,165 +9,196 @@
 			deco="true" 
 			usage="front" 
 		/>
-		<template 
-			name="OPINION-6story-D_template.xml" 
-			title="6 story - D photo" 
-			section="OPINION" 
-			min="8" 
-			usage="front" 
-		/>
-		<template 
-			name="OPINION-6story-E_template.xml" 
-			title="6 story - E photo" 
-			section="OPINION" 
-			min="8" 
-			usage="front" 
-		/>
-		<template 
-			name="OPINION-5story-D_template.xml" 
-			title="5 story - D photo" 
-			section="OPINION" 
-			min="7" 
-			usage="front" 
-		/>
+		<!-- END FRONT SECTION -->
+
+		<!-- OPINION -->
 		<template 
 			name="OPINION-5story-E_template.xml" 
-			title="5 story - E photo" 
+			title="7 story (3R and O-2CMTRY-3HLT)" 
 			section="OPINION" 
 			min="7" 
-			usage="front" 
-		/>
-		<template 
-			name="OPINION-4story-D_template.xml" 
-			title="4 story - D photo" 
-			section="OPINION" 
-			min="6" 
 			usage="front" 
 		/>
 		<template 
 			name="OPINION-4story-E_template.xml" 
-			title="4 story - E photo" 
+			title="6 story (2R and O-2CMTRY-2HLT)" 
 			section="OPINION" 
 			min="6" 
-			usage="front" 
-		/>
-		<template 
-			name="OPINION-3story-D_template.xml" 
-			title="3 story - D photo" 
-			section="OPINION" 
-			min="5" 
 			usage="front" 
 		/>
 		<template 
 			name="OPINION-3story-E_template.xml" 
-			title="3 story - E photo" 
+			title="5 story (2R and O-1CMTRY-2HLT)" 
 			section="OPINION" 
 			min="5" 
 			usage="front" 
 		/>
 		<template 
-			name="OPINION-2story-D_template.xml" 
-			title="2 story - D photo" 
-			section="OPINION" 
-			min="4" 
-			usage="front" 
-		/>
-		<template 
 			name="OPINION-2story-E_template.xml" 
-			title="2 story - E photo" 
+			title="4 story (1R and O-1CMTRY-2HLT)" 
 			section="OPINION" 
 			min="4" 
 			usage="front" 
 		/>
-
+		<!-- END OPINION -->
+		
+		<!-- BUSINESS AND FINANCE -->
 		<template 
-			name="SECTION-4story-2D-C_template.xml" 
-			title="4 story - 2D photos - 1C photo" 
-			section="MARKETPLACE" 
+			name="SECTION-4story-D-C-marketdata_template.xml" 
+			title="4 story - Plain (marketdata)" 
+			section="BUSINESS_AND_FINANCE" 
 			min="6" 
 			usage="front" 
 		/>
 		<template 
-			name="SECTION-4story-D-C_template.xml" 
-			title="4 story - Plain" 
-			section="BUSINESS_AND_FINANCE,MONEY_AND_INVESTING" 
-			min="6" 
+			name="SECTION-3story-G-marketdata_template.xml" 
+			title="3 story - G photo (marketdata)" 
+			section="BUSINESS_AND_FINANCE" 
+			min="5" 
+			usage="front" 
+		/>
+		<!-- END BUSINESS AND FINANCE -->
+		
+		<!-- FRIDAY JOURNAL -->
+		<template 
+			name="SECTION-2story-G-C_template.xml" 
+			title="2 story - G photo" 
+			section="FRIDAY_JOURNAL" 
+			min="4" 
 			usage="front" 
 		/>
 		<template 
 			name="SECTION-3story-G_template.xml" 
 			title="3 story - G photo" 
-			section="REVIEW,BUSINESS_AND_FINANCE,FRIDAY_JOURNAL,OFF_DUTY,REVIEW" 
+			section="FRIDAY_JOURNAL" 
+			min="5" 
+			usage="front" 
+		/>
+		<!-- END FRIDAY JOURNAL -->
+		
+		<!-- MARKETPLACE -->
+		<template 
+			name="SECTION-4story-D-C_template.xml" 
+			title="4 story - Plain" 
+			section="MARKETPLACE" 
+			min="6" 
+			usage="front" 
+		/>
+		<!-- END MARKETPLACE -->
+		
+		<!-- MONEY AND INVESTING -->
+		<template 
+			name="SECTION-3story-G-marketdata_template.xml" 
+			title="3 story - G photo (marketdata)" 
+			section="MONEY_AND_INVESTING" 
+			min="5" 
+			usage="front" 
+		/>
+		<!-- END MONEY AND INVESTING -->
+		
+		<!-- OFF DUTY -->
+		<template 
+			name="SECTION-2story-G-C_template.xml" 
+			title="2 story - G photo" 
+			section="OFF_DUTY" 
+			min="4" 
+			usage="front" 
+		/>
+		<template 
+			name="SECTION-3story-G_template.xml" 
+			title="3 story - G photo" 
+			section="OFF_DUTY" 
+			min="5" 
+			usage="front" 
+		/>
+		<!-- END OFF DUTY -->
+		
+		<!-- PERSONAL JOURNAL -->
+		<template 
+			name="SECTION-2story-G-C_template.xml" 
+			title="2 story - G photo" 
+			section="PERSONAL_JOURNAL" 
+			min="4" 
+			usage="front" 
+		/>
+		<!-- END PERSONAL JOURNAL -->
+		
+		<!-- LIFE AND STYLE -->
+		<template 
+			name="SECTION-2story-G-C_template.xml" 
+			title="2 story - G photo" 
+			section="LIFE_AND_STYLE" 
+			min="4" 
+			usage="front" 
+		/>
+		<!-- END LIFE AND STYLE -->
+
+		<!-- EUROPE SECTION -->
+		<template 
+			name="SECTION-2story-G-C_template.xml" 
+			title="2 story - G photo" 
+			section="EUROPE" 
+			min="4" 
+			usage="front" 
+		/>
+		<!-- END EUROPE SECTION -->
+		
+		<!-- REVIEW -->
+		<template 
+			name="SECTION-3story-G_template.xml" 
+			title="3 story - G photo" 
+			section="REVIEW" 
 			min="5" 
 			usage="front" 
 		/>
 		<template 
 			name="SECTION-2story-G-C_template.xml" 
-			title="2 story - G photo - C photo" 
-			section="EUROPE,FRIDAY_JOURNAL,LIFE_AND_STYLE,OFF_DUTY,PERSONAL_JOURNAL,THE_JOURNAL_REPORT,WEEKEND_JOURNAL,BUSINESS_AND_FINANCE" 
+			title="2 story - G photo" 
+			section="REVIEW" 
 			min="4" 
 			usage="front" 
 		/>
+		<!-- END REVIEW -->
+		
+		<!-- SPECIAL REPORT -->
 		<template 
-			name="CONTINUATION-generic-12_template.xml" 
-			min="12" 
-			usage="continuation" 
-		/>
-		<template 
-			name="CONTINUATION-generic-11_template.xml" 
-			min="11" 
-			usage="continuation" 
-		/>
-		<template 
-			name="CONTINUATION-generic-10_template.xml" 
-			min="10" 
-			usage="continuation" 
-		/>
-		<template 
-			name="CONTINUATION-generic-9_template.xml" 
-			min="9" 
-			usage="continuation" 
-		/>
-		<template 
-			name="CONTINUATION-generic-8_template.xml" 
-			min="8" 
-			usage="continuation" 
-		/>
-		<template 
-			name="CONTINUATION-generic-7_template.xml" 
-			min="7" 
-			usage="continuation" 
-		/>
-		<template 
-			name="CONTINUATION-generic-6_template.xml" 
-			min="6" 
-			usage="continuation" 
-		/>
-		<template 
-			name="CONTINUATION-generic-5_template.xml" 
+			name="SECTION-3story-G_template.xml" 
+			section="SPECIAL_REPORT" 
+			title="3 story G photo"
 			min="5" 
-			usage="continuation" 
+			usage="front" 
 		/>
 		<template 
-			name="CONTINUATION-generic-4_template.xml" 
+			name="SECTION-3story-G-deco-C_template.xml" 
+			section="SPECIAL_REPORT" 
+			deco="true" 
+			title="3 story - G deco"
+			min="5" 
+			usage="front" 
+		/>
+		<!-- END SPECIAL REPORT -->
+		
+		<!-- THE_JOURNAL_REPORT -->
+		<template 
+			name="SECTION-2story-G-C_template.xml" 
+			title="2 story - G photo" 
+			section="THE_JOURNAL_REPORT" 
 			min="4" 
-			usage="continuation" 
+			usage="front" 
 		/>
+		<!-- END THE_JOURNAL_REPORT -->
+
+		<!-- WEEKEND_JOURNAL -->
 		<template 
-			name="CONTINUATION-generic-3_template.xml" 
-			min="3" 
-			usage="continuation" 
+			name="SECTION-2story-G-C_template.xml" 
+			title="2 story - G photo" 
+			section="WEEKEND_JOURNAL" 
+			min="4" 
+			usage="front" 
 		/>
-		<template 
-			name="CONTINUATION-generic-2_template.xml" 
-			min="2" 
-			usage="continuation" 
-		/>
-		<template 
-			name="CONTINUATION-generic-1_template.xml" 
-			min="1" 
-			usage="continuation" 
-		/>
+		<!-- END WEEKEND_JOURNAL -->
+
+		<!-- FANCY CONTINUATION -->
 		<template 
 			name="CONTINUATION-fancy-6_template.xml" 
 			min="6" 
@@ -191,25 +223,107 @@
 			deco="true" 
 			page="4" 
 		/>
+		<!-- END FANCY CONTINUATION -->
+		
+		<!-- GENERIC CONTINUATION -->
+		<template 
+			name="CONTINUATION-generic-12_template.xml" 
+			title=""
+			min="12" 
+			usage="continuation" 
+		/>
+		<template 
+			name="CONTINUATION-generic-11_template.xml" 
+			title=""
+			min="11" 
+			usage="continuation" 
+		/>
+		<template 
+			name="CONTINUATION-generic-10_template.xml" 
+			title=""
+			min="10" 
+			usage="continuation" 
+		/>
+		<template 
+			name="CONTINUATION-generic-9_template.xml" 
+			title=""
+			min="9" 
+			usage="continuation" 
+		/>
+		<template 
+			name="CONTINUATION-generic-8_template.xml" 
+			title=""
+			min="8" 
+			usage="continuation" 
+		/>
+		<template 
+			name="CONTINUATION-generic-7_template.xml" 
+			title=""
+			min="7" 
+			usage="continuation" 
+		/>
+		<template 
+			name="CONTINUATION-generic-6_template.xml" 
+			title=""
+			min="6" 
+			usage="continuation" 
+		/>
+		<template 
+			name="CONTINUATION-generic-5_template.xml" 
+			title=""
+			min="5" 
+			usage="continuation" 
+		/>
+		<template 
+			name="CONTINUATION-generic-4_template.xml" 
+			title=""
+			min="4" 
+			usage="continuation" 
+		/>
+		<template 
+			name="CONTINUATION-generic-3_template.xml" 
+			title=""
+			min="3" 
+			usage="continuation" 
+		/>
+		<template 
+			name="CONTINUATION-generic-2_template.xml" 
+			title=""
+			min="2" 
+			usage="continuation" 
+		/>
+		<template 
+			name="CONTINUATION-generic-1_template.xml" 
+			title=""
+			min="1" 
+			usage="continuation" 
+		/>
+		<!-- END GENERIC CONTINUATION -->
+		
+		<!-- WHATS NEWS -->
 		<template 
 			name="WHATSNEWS-dummy_template.xml" 
 			usage="front" 
+			title="Whats News"
 			min="1" 
-			title="" 
 			section="WHATS_NEWS" 
 		/>
 		<template 
 			name="WHATSNEWS-dummy_template.xml" 
 			usage="continuation" 
+			title="Whats news"
 			min="1" 
-			title="" 
 			section="WHATS_NEWS" 
 		/>
+		<!-- END WHATS NEWS -->
 		
+		<!-- FULL PAGE AD -->
 		<template 
 			name="GENERIC-fullpagead-template.xml" 
 			usage="ads" 
 		/>
+		<!-- END FULL PAGE AD -->
+		
 	</templates>
 
 	<article-page-plans>

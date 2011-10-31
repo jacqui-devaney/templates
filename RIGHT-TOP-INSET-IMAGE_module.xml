@@ -2,18 +2,16 @@
 	<style src="GLOBAL_MODULES-stylesheet.ejs" />
 	<style src="GLOBAL-stylesheet.ejs" />
 	<style>{
-        jpml: {padding: [10, 0, 0, 0]},
+        jpml: {padding:[10, 0, {if: =options.bottom, then:15, else:10}, 8]
+		},
 		#body: { 
             column-count: {$divide: [=view.width, {$multiply:[250, =scale.dpi]}]},
-            column-gutter: 20,
-			padding: [0, 0, 15, 0]
+            column-gutter: 20
         },
         #image_container: { 
 			width:270,
 			anchor-x:right,
-			anchor-y:top
-			
-			
+			anchor-y:top			
 		},
 		image: {
 			width:262,

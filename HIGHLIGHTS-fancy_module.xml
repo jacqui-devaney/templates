@@ -36,7 +36,7 @@
 			}},
 						{.highlight_body: {
 				text-overflow: "\u00bb",
-	        	text-align: justify
+	        	text-align: =justify
 			}},
 			{ $switch: [
 				{ if: =article.type, equals: "Letters", then: {

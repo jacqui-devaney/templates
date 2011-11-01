@@ -10,7 +10,9 @@
             column-gutter: 30,
 			column-height:balance,
 			flow: article_body,
-			min-height: 200
+			min-height: {if: =page.mediabucket, then:400, else:200},
+			layout-grid-line:23,
+			layout-grid-line-offset:20			
         }},
 		{#mediabucket: {
 			width:546,

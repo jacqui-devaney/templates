@@ -75,7 +75,7 @@
 	        #deco : { 
 						frame: {$switch: [
 							{if: =scale.small, then: [256, 0, 253, 345]},
-							{if: =scale.large, then: [256, 0, 237, 423]}
+							{if: =scale.large, then: [256, 0, 253, 423]}
 						]},
 						options: {small_headline:true, bottom_border:true} 
 			},

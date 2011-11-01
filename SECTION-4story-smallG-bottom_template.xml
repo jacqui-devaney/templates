@@ -17,7 +17,7 @@
 					]},
 					options:{normal_headline:true} 
 			},
-			#b3:	{ frame: [583, 0, 183, 324], options:{small_headline:true, no_border:true, left:true} },
+			#b3:	{ frame: [583, 0, 183, 324], options:{small_headline:true, no_border:true, left:true, show_image:true} },
 			#b4:	{ frame: [583, 325, 183, 294], options:{small_headline:true, left:true} },
 			#h1: {options:{highlight_dark:true}},
 			#h2: {options:{highlight_dark:true}}
@@ -37,7 +37,7 @@
 					]}, 
 						options:{normal_headline:true} 
 					},
-			#b3:	{ frame: [594, 0, 183, 328], options:{small_headline:true, no_border:true, left:true} },
+			#b3:	{ frame: [594, 0, 183, 328], options:{small_headline:true, no_border:true, left:true, show_image:true} },
 			#b4:	{ frame: [594, 328, 183, 291], options:{small_headline:true, left:true, bottom:true} },
 			#h1: {options:{highlight_dark:true}},
 			#h2: {options:{highlight_dark:true}}

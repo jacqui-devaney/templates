@@ -4,7 +4,7 @@
 <dict>
 	<key>BUSINESS_AND_FINANCE</key>
 	<dict>
-		<key>SECTION-3story-G-deco-C_template.xml</key>
+		<key>SECTION-3story-G-deco-C_template</key>
 		<dict>
 			<key>b1</key>
 			<array>
@@ -85,7 +85,7 @@
 				<string>Mobile Tablet Highlight2B</string>
 			</array>
 		</dict>
-		<key>SECTION-4story-smallG-deco_template.xml</key>
+		<key>SECTION-4story-smallG-deco_template</key>
 		<dict>
 			<key>b1</key>
 			<array>
@@ -738,7 +738,7 @@
 				<string>Technology</string>
 			</array>
 		</dict>
-		<key>SECTION-4story-smallG-bottom_template.xml</key>
+		<key>SECTION-4story-smallG-bottom_template</key>
 		<dict>
 			<key>b1</key>
 			<array>
@@ -893,11 +893,35 @@
 				<string>Weekend Investor</string>
 			</array>
 		</dict>
-		<key>SECTION-4story-smallG-bottom_template.xml</key>
+		<key>SECTION-4story-smallG-bottom_template</key>
 		<dict>
 			<key>b1</key>
 			<array>
 				<true/>
+			</array>
+			<key>h1</key>
+			<array>
+				<string>Mobile Tablet Highlight1A</string>
+				<string>Mobile Tablet Highlight1B</string>
+				<string>Ahead of the Tape</string>
+			</array>
+			<key>h2</key>
+			<array>
+				<string>Mobile Tablet Highlight2A</string>
+				<string>Mobile Tablet Highlight2B</string>
+				<string>Weekend Investor</string>
+			</array>
+		</dict>
+		<key>SECTION-4story-smallG-deco_template</key>
+		<dict>
+			<key>b1</key>
+			<array>
+				<true/>
+			</array>
+			<key>deco</key>
+			<array>
+				<string>Deco Summary Liondoor Section 1</string>
+				<string>Deco Summary Liondoor Money Investing</string>
 			</array>
 			<key>h1</key>
 			<array>
@@ -1115,7 +1139,7 @@
 				<string>Sports</string>
 			</array>
 		</dict>
-		<key>SECTION-4story-smallG-bottom_template.xml</key>
+		<key>SECTION-4story-smallG-bottom_template</key>
 		<dict>
 			<key>b1</key>
 			<array>

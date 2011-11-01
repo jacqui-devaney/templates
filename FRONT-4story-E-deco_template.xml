@@ -35,25 +35,25 @@
 							{if: =scale.large, then: [486, 551, 280, 323]}
 						]}}
         }, else: {
-            #b1:	{ frame: [205, 26, 571, 213], options:{large_headline:true, no_border:true} },
+            #b1:	{ frame: [205, 26, 571, 247], options:{large_headline:true, no_border:true} },
             #deco:	{ 
 					frame: {$switch: [
 						{if: =scale.small, then: [205, 248, 280, 370]},
-						{if: =scale.large, then: [205, 240, 375, 375]}
+						{if: =scale.large, then: [205, 270, 375, 345]}
 					]},
 					options:{normal_headline:true} 
 			},
             #b2: 	{ 
 					frame: {$switch: [
 						{if: =scale.small, then: [496, 248, 280, 370]},
-						{if: =scale.large, then: [593, 240, 183, 375]}
+						{if: =scale.large, then: [593, 270, 183, 345]}
 					]},
 					options:{small_headline:true, left:true, bottom:true} 
 			},
-            #b3: 	{ frame: [787, 26, 238, 217], options:{small_headline:true, no_border:true} },
+            #b3: 	{ frame: [787, 26, 238, 247], options:{small_headline:true, no_border:true} },
             #b4: 	{frame: {$switch: [
 							{if: =scale.small, then: [787, 248, 238, 370]},
-							{if: =scale.large, then: [787, 240, 238, 390]}
+							{if: =scale.large, then: [787, 270, 238, 345]}
 						]}}
         }
 

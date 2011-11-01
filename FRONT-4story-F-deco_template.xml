@@ -64,7 +64,8 @@
 						{if: =scale.small, then: [592, 300, 238, 315]},
 						{if: =scale.large, then: [787, 26, 237, 201]}
 					]},
-					options:{small_headline:true, no_border:true} 
+					options:{small_headline:true, no_border:{if: =scale.small, then:false, else:true}} 
+					
 		},
 		#b4:	{ frame: {$switch: [
 						{if: =scale.small, then: [840, 26, 183, 592]},

@@ -5,18 +5,21 @@
         jpml: {padding:[10, 0, {if: =options.bottom, then:15, else:10}, 8]
 		},
 		#body: { 
-            column-count: {$divide: [=view.width, {$multiply:[250, =scale.dpi]}]},
+            column-count: 2,
             column-gutter: 20
         },
         #image_container: { 
-			width:270,
+			comment: "14 represents half of 28, which is 20 gutter + 8 jpml left padding",
+			width:{$divide: [{$subtract: [=view.width, {$multiply:[=scale.dpi,28]}]}, 2]},
+			padding: [0, 0, 8, 20],
 			anchor-x:right,
-			anchor-y:top			
+			anchor-y:top,
+			pixels-per-point-x:1,
+			pixels-per-point-y:1,
+			image-scale:1		
 		},
 		image: {
-			width:262,
-			height:174,
-			padding: [2, 4, 10, 4]
+			height:{$multiply: [{$subtract:[=view.width, {$multiply:[=scale.dpi,28]}]}, 0.33] }
 		},
 		.invisible: { display:none },
 		#small_headline: { display: { if: =options.small_headline, then:inherit }},

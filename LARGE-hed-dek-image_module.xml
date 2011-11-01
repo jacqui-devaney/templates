@@ -2,12 +2,24 @@
 	<style src="GLOBAL_MODULES-stylesheet.ejs" />
 	<style src="GLOBAL-stylesheet.ejs" />
 	<style>{
-		image: { width:749, height:499 },
-		jpml: {padding: [0, 8]}
+		#image_container: { 
+			width:749,
+			anchor-x:center,
+			anchor-y:bottom
+		},
+		image: {
+			width:749,
+			height:499,
+			padding: [10, 0]
+		},
+		
+		#text: {padding: [8, 8, 0, 8]}
 	}</style>
-	<panel>
+	<box id="text">
 		<p id="bignews_big_headline"><span embed="headline" /><mark class="key" /></p>
 		<h2 class="large_dek"><span embed="subhed" /></h2>
-	</panel>
-	<image embed="summary-image"/>
+	</box>
+	<box id="image_container">
+		<image embed="summary-image" />
+	</box>
 </jpml>

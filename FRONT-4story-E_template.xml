@@ -3,15 +3,15 @@
 	<style src="FRONT-stylesheet.ejs" />
 	<style> {
 		if: =portrait, then: {
-			#b1:			{ frame: [194, 26, 571, 214], options:{large_headline:true, show_image:true, no_border:true} },
+			#b1:			{ frame: [194, 28, 571, 214], options:{large_headline:true, show_image:true, no_border:true} },
 			#b2:			{ frame: [194, 240, 565, 304], options:{small_headline:true, left:true} },
 			#b3:			{ frame: [194, 545, 280, 330], options:{small_headline:true, bottom:true} },
 			#b4:			{ frame: [486, 545, 280, 330] }
 		}, else: {
 			#b1:	{
 					frame: {$switch: [
-						{if: =scale.small, then: [205, 26, 571, 220]},
-						{if: =scale.large, then: [205, 26, 571, 274]}
+						{if: =scale.small, then: [205, 28, 571, 220]},
+						{if: =scale.large, then: [205, 28, 571, 274]}
 					]},
 					options:{large_headline:true, show_image:true, no_border:true} 
 			},
@@ -24,8 +24,8 @@
 			},
 			#b3:	{ 
 					frame: {$switch: [
-						{if: =scale.small, then: [787, 26, 238, 220]},
-						{if: =scale.large, then: [787, 26, 238, 274]}
+						{if: =scale.small, then: [787, 28, 238, 220]},
+						{if: =scale.large, then: [787, 28, 238, 274]}
 					]},
 					options:{small_headline:true, no_border:true} 
 			},

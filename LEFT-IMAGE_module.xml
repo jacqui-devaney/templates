@@ -10,7 +10,7 @@
 				{ if: =options.no_border, then: {
 					#wrapper: {
 						border-width: [0, 0, 0, 0],
-						padding: [0]
+						padding: [0, 0, 8, 0]
 					}
 			
 				}},
@@ -18,23 +18,32 @@
 					#wrapper: {
 						border-width: [1, 0, 0, 0],
 						border-color: #b1aca1,
-						padding: [8, 0, 0, 0]
+						padding: [8, 0, 8, 0]
 					}
 					}}
 			]},
+			
 			{#headline: {padding:[2, 0, 0, 0]}
 			},
 			{#body: { 
 	            column-count: {$divide: [=view.width, {$multiply:[450, =scale.dpi]}]},
 	            column-gutter: 15
 	        }},
+			{#image_wrapper: { 
+				left:0,
+				top:0,
+				bottom:0,
+				position:relative,
+				width: 359,
+				padding: [0, 15, 8, 0 ],
+				pixels-per-point-x:{if: =scale.small, then:.9},
+				pixels-per-point-y:{if: =scale.small, then:.9},
+				image-scale:{if: =scale.small, then:.9}
+			}},
 			
 			{#image_container: { 
-				anchor-x: left,
-				anchor-y:bottom,
 				width: 359,
-				height: 239,
-				padding: [0, 15, 0, 0 ]
+				height: 239
 			}},
 			{.invisible: { display:none }},
 			{#small_headline: { display: { if: =options.small_headline, then:inherit }}},
@@ -54,8 +63,10 @@
 			<p id="bignews_big_headline" class="invisible"><span embed="headline" /></p>
 		</panel> 
 	</box>   
-	<box id="image_container">
-	    <image embed="summary-image" />
+	<box id="image_wrapper">
+		<box id="image_container">
+		    <image embed="summary-image" />
+		</box>
 	</box>
 	<panel id="body">
 		<p class="byline" embed="byline"/>

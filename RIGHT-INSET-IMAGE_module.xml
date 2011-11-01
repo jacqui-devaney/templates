@@ -29,10 +29,9 @@
 		{#image_container: { 
 			anchor-x: right,
 			width: 86,
-			display: {$switch: [
-				{if: =scale.small, then: none},
-				{if: =scale.large, then: inherit}
-			]}
+			pixels-per-point-x:1,
+			pixels-per-point-y:1,
+			image-scale:1
 			
 		}},
 		{image: {

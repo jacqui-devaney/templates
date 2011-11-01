@@ -43,19 +43,21 @@
 							{if: =scale.small, then: [592, 28, 238, 272]},
 							{if: =scale.large, then: [205, 456, 571, 164]}
 						]},
-						options:{small_headline:true, bottom:true} 
+						options:{small_headline:true, bottom:true, no_border:{if: =scale.small, then:true, else:false}} 
 					},
 			#b3:	{ 
 						frame: {$switch: [
 							{if: =scale.small, then: [592, 300, 238, 315]},
 							{if: =scale.large, then: [787, 26, 237, 201]}
 						]},
-						options:{small_headline:true, no_border:true} 
+						options:{small_headline:true, no_border:{if: =scale.small, then:false, else:true}} 
 			},
 			#b4:	{ frame: {$switch: [
 							{if: =scale.small, then: [840, 36, 183, 582]},
 							{if: =scale.large, then: [787, 227, 237, 394]}
-					]}}
+					]},
+					options: {no_hr:{if: =scale.small, then:true, else:false}}	
+			}
 		}
 				
 	}</style>

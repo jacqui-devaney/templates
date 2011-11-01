@@ -165,7 +165,9 @@
 		position:relative,
 		right:8,
 		left:8,
-		height:1
+		height:1,
+		display: { if: =options.no_hr, then:none, else:inherit }
+		
 	},
 	#hr: {
 		padding: [ 0, 0, 10, 0 ]

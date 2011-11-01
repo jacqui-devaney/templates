@@ -21,7 +21,7 @@
 			]},
 			{#body: { 
 	            column-count: {$switch: [
-					{if: =scale.small, then: {$divide: [=view.width, {$multiply:[170, =scale.dpi]}]}},
+					{if: =scale.small, then: {$divide: [=view.width, {$multiply:[200, =scale.dpi]}]}},
 					{if: =scale.large, then: {$divide: [=view.width, {$multiply:[250, =scale.dpi]}]}}
 					
 				]},
@@ -33,12 +33,20 @@
 				width:{$subtract:[=view.width, 18]}, 
 				height:{$multiply: [{$subtract:[=view.width, 18]}, 0.66] },
 				display: { if: =options.show_image, then:inherit },
-				padding: [0, 9, 8, 9]
+				padding: [0, 9, 8, 9],
+				pixels-per-point-x:1,
+				pixels-per-point-y:{if: =scale.small, then:.9},
+				image-scale:1
+				
 			}},
 			{#skinny_wide: {
 				height:{$multiply: [=view.width, 0.39] },
 				display: { if: =options.show_image_skinny, then:inherit },
-				padding: [0, 0, 8, 0]
+				padding: [0, 0, 8, 0],
+				pixels-per-point-x:1,
+				pixels-per-point-y:1,
+				image-scale:1
+				
 			}},
 			{.invisible: { display:none }},
 			{#small_headline: { display: { if: =options.small_headline, then:inherit }}},

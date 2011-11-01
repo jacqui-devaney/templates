@@ -12,10 +12,9 @@
 		#image_container: { 
 			anchor-x: right,
 			width: 84,
-			display: {$switch: [
-				{if: =scale.small, then: none},
-				{if: =scale.large, then: inherite}
-			]}
+			pixels-per-point-x:1,
+			pixels-per-point-y:1,
+			image-scale:1
 			
 		},
 		image: {

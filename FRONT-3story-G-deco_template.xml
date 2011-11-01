@@ -30,6 +30,7 @@
 						{if: =scale.small, then: [486, 581, 280, 295]},
 						{if: =scale.large, then: [486, 628, 280, 247]}
 					]}
+					
 			}
 		}, else: {
 			#b1:	{ 
@@ -58,7 +59,7 @@
 							{if: =scale.small, then: [834, 38, 190, 580]},
 							{if: =scale.large, then: [787, 225, 238, 404]}
 						]},
-						options: {if: =scale.small, then: {no_border:true}}
+						options: {no_hr: {if: =scale.small, then:true, else:false}}
 			}
 			
 		}

@@ -5,7 +5,7 @@
 		if: =portrait, then: {
 			#b1:	{ 
 						frame: {$switch: [
-							{if: =scale.small, then: [194, 26, 571, 143]},
+							{if: =scale.small, then: [194, 28, 571, 143]},
 							{if: =scale.large, then: [194, 26, 571, 143]}
 						]},
 						options:{large_headline:true, no_border:true}
@@ -32,10 +32,10 @@
 					},
 			#b2:	{ 
 						frame: {$switch: [
-							{if: =scale.small, then: [592, 26, 238, 272]},
+							{if: =scale.small, then: [592, 28, 238, 272]},
 							{if: =scale.large, then: [205, 476, 280, 144]}
 						]},
-						options:{small_headline:true} 
+						options:{small_headline:true, no_border:{if: =scale.small, then:true, else:false}} 
 					},
 			#b3:	{ 
 						frame: {$switch: [
@@ -46,7 +46,7 @@
 					},
 			#b4:		{ 
 							frame: {$switch: [
-								{if: =scale.small, then: [840, 26, 183, 223]},
+								{if: =scale.small, then: [840, 28, 183, 223]},
 								{if: =scale.large, then: [787, 26, 237, 200]}
 							]},
 							options:{small_headline:true, no_border:true

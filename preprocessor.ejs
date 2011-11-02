@@ -21,9 +21,6 @@
 				},
 				at-most: 1.4 
 			},
-			justify: {
-				if: =scale.small, then:left, else:justify	
-			},
 			widescreen: { 
 				if: { 
 					$divide: [
@@ -54,7 +51,7 @@
 				small: { if: =device.size, less-than: 8.8 },
 				large: { if: =device.size, more-than: 8.8 }
 			},
-			justify: { if: =scale.small, then: left, else: justify },
+			justify: { if: =device.size, less-than: 8.8, then: left, else: justify },
 			ad: {
 				prefix: { $join: [
 					{ if: =issue.edition, then: =issue.edition, else: "us"},

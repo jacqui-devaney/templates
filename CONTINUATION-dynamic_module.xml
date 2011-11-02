@@ -12,9 +12,9 @@
 		#image_container: { 
 			anchor-x: right,
 			width: 84,
-			pixels-per-point-x:1,
-			pixels-per-point-y:1,
-			image-scale:1
+			pixels-per-point-x:{if: =scale.small, then:.9, else:1},
+			pixels-per-point-y:{if: =scale.small, then:.9, else:1},
+			image-scale:{if: =scale.small, then:.9, else:1}
 			
 		},
 		image: {

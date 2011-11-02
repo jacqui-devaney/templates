@@ -33,7 +33,7 @@
 				<string>Theory</string>
 				<string>Business Technology</string>
 				<string>Tech Journal</string>
-				<string>Media &amp;amp; Marketing</string>
+				<string>Media &amp; Marketing</string>
 				<string>Advertising</string>
 			</array>
 		</dict>
@@ -66,7 +66,7 @@
 				<string>Theory</string>
 				<string>Business Technology</string>
 				<string>Tech Journal</string>
-				<string>Media &amp;amp; Marketing</string>
+				<string>Media &amp; Marketing</string>
 			</array>
 		</dict>
 	</dict>
@@ -243,12 +243,7 @@
 				<true/>
 			</array>
 			<key>b4</key>
-			<array>
-				<string>Patience Wheatcroft</string>
-				<string>Iain Martin</string>
-				<string>Irwin Stelzer</string>
-				<string>Agenda</string>
-			</array>
+			<array/>
 		</dict>
 		<key>FRONT-4story-E_template</key>
 		<dict>
@@ -307,12 +302,16 @@
 				<true/>
 			</array>
 			<key>deco</key>
-			<array/>
+			<array>
+				<string>Deco Summary Liondoor Europe</string>
+			</array>
 		</dict>
 		<key>FRONT-4story-Video-deco_template</key>
 		<dict>
 			<key>deco</key>
-			<array/>
+			<array>
+				<string>Deco Summary Liondoor Europe</string>
+			</array>
 		</dict>
 		<key>FRONT-5story-F-deco_template</key>
 		<dict>
@@ -321,7 +320,9 @@
 				<true/>
 			</array>
 			<key>deco</key>
-			<array/>
+			<array>
+				<string>Deco Summary Liondoor Europe</string>
+			</array>
 		</dict>
 	</dict>
 	<key>LIFE_AND_STYLE</key>
@@ -749,10 +750,10 @@
 			<key>h3</key>
 			<array>
 				<string>Extra Credit</string>
-				<string>Editors&apos; Notebook</string>
+				<string>Editors' Notebook</string>
 				<string>What to Wear There</string>
 				<string>RunwayRealWay</string>
-				<string>Traveler&apos;s Tale</string>
+				<string>Traveler's Tale</string>
 				<string>On Wine</string>
 				<string>Slow Food Fast</string>
 				<string>House Tour</string>
@@ -768,10 +769,10 @@
 			<key>h3</key>
 			<array>
 				<string>Extra Credit</string>
-				<string>Editors&apos; Notebook</string>
+				<string>Editors' Notebook</string>
 				<string>What to Wear There</string>
 				<string>RunwayRealWay</string>
-				<string>Traveler&apos;s Tale</string>
+				<string>Traveler's Tale</string>
 				<string>On Wine</string>
 				<string>Slow Food Fast</string>
 				<string>House Tour</string>
@@ -787,10 +788,10 @@
 			<key>h3</key>
 			<array>
 				<string>Extra Credit</string>
-				<string>Editors&apos; Notebook</string>
+				<string>Editors' Notebook</string>
 				<string>What to Wear There</string>
 				<string>RunwayRealWay</string>
-				<string>Traveler&apos;s Tale</string>
+				<string>Traveler's Tale</string>
 				<string>On Wine</string>
 				<string>Slow Food Fast</string>
 				<string>House Tour</string>
@@ -806,10 +807,10 @@
 			<key>h1</key>
 			<array>
 				<string>Extra Credit</string>
-				<string>Editors&apos; Notebook</string>
+				<string>Editors' Notebook</string>
 				<string>What to Wear There</string>
 				<string>RunwayRealWay</string>
-				<string>Traveler&apos;s Tale</string>
+				<string>Traveler's Tale</string>
 			</array>
 			<key>h2</key>
 			<array>
@@ -828,10 +829,10 @@
 			<key>h1</key>
 			<array>
 				<string>Extra Credit</string>
-				<string>Editors&apos; Notebook</string>
+				<string>Editors' Notebook</string>
 				<string>What to Wear There</string>
 				<string>RunwayRealWay</string>
-				<string>Traveler&apos;s Tale</string>
+				<string>Traveler's Tale</string>
 			</array>
 			<key>h2</key>
 			<array>
@@ -850,10 +851,10 @@
 			<key>h1</key>
 			<array>
 				<string>Extra Credit</string>
-				<string>Editors&apos; Notebook</string>
+				<string>Editors' Notebook</string>
 				<string>What to Wear There</string>
 				<string>RunwayRealWay</string>
-				<string>Traveler&apos;s Tale</string>
+				<string>Traveler's Tale</string>
 			</array>
 			<key>h2</key>
 			<array>
@@ -872,10 +873,10 @@
 			<key>h1</key>
 			<array>
 				<string>Extra Credit</string>
-				<string>Editors&apos; Notebook</string>
+				<string>Editors' Notebook</string>
 				<string>What to Wear There</string>
 				<string>RunwayRealWay</string>
-				<string>Traveler&apos;s Tale</string>
+				<string>Traveler's Tale</string>
 			</array>
 			<key>h2</key>
 			<array>
@@ -1363,7 +1364,7 @@
 			<array>
 				<string>Second Act</string>
 				<string>Managing your career </string>
-				<string>What&apos;s Your Workout</string>
+				<string>What's Your Workout</string>
 				<string>Pay grade</string>
 				<string>Mossberg Solution</string>
 				<string>Moving On</string>
@@ -1389,7 +1390,7 @@
 			<array>
 				<string>Second Act</string>
 				<string>Managing your career </string>
-				<string>What&apos;s Your Workout</string>
+				<string>What's Your Workout</string>
 				<string>Pay grade</string>
 				<string>Mossberg Solution</string>
 				<string>Moving On</string>
@@ -1415,7 +1416,7 @@
 			<array>
 				<string>Second Act</string>
 				<string>Managing your career </string>
-				<string>What&apos;s Your Workout</string>
+				<string>What's Your Workout</string>
 				<string>Pay grade</string>
 				<string>Mossberg Solution</string>
 				<string>Moving On</string>
@@ -1441,7 +1442,7 @@
 			<array>
 				<string>Second Act</string>
 				<string>Managing your career </string>
-				<string>What&apos;s Your Workout</string>
+				<string>What's Your Workout</string>
 				<string>Pay grade</string>
 				<string>Mossberg Solution</string>
 				<string>Moving On</string>
@@ -1470,7 +1471,7 @@
 			<array>
 				<string>Second Act</string>
 				<string>Managing your career </string>
-				<string>What&apos;s Your Workout</string>
+				<string>What's Your Workout</string>
 				<string>Pay grade</string>
 				<string>Mossberg Solution</string>
 				<string>Moving On</string>
@@ -1499,7 +1500,7 @@
 			<array>
 				<string>Second Act</string>
 				<string>Managing your career </string>
-				<string>What&apos;s Your Workout</string>
+				<string>What's Your Workout</string>
 				<string>Pay grade</string>
 				<string>Mossberg Solution</string>
 				<string>Moving On</string>
@@ -1528,7 +1529,7 @@
 			<array>
 				<string>Second Act</string>
 				<string>Managing your career </string>
-				<string>What&apos;s Your Workout</string>
+				<string>What's Your Workout</string>
 				<string>Pay grade</string>
 				<string>Mossberg Solution</string>
 				<string>Moving On</string>

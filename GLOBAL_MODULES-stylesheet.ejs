@@ -121,7 +121,7 @@
 		font-name:DJ5Exchange-Medium,
 		text-indent:20,
 		font-size:{$multiply: [16, =view.zoomlevel]},
-		line-height:{$multiply: [23, =view.zoomlevel]},
+		line-height:{$multiply: [22, =view.zoomlevel]},
         text-align: =justify
 	},
 	.body-bug: {
@@ -202,7 +202,8 @@
 			{if: =scale.small, then: 14},
 			{if: =scale.large, then: 13}
 		]},
-		color:#848484
+		color:#848484,
+		text-overflow: {if: =options.fake_deco, then:" \u00bb"}
 	},
 	.subhed: {
 		font-name:DJ5Exchange-Bold,

@@ -35,7 +35,13 @@
 							{if: =scale.large, then: [486, 551, 280, 323]}
 						]}}
         }, else: {
-            #b1:	{ frame: [205, 26, 571, 247], options:{large_headline:true, no_border:true} },
+            #b1:	{ 
+						frame: {$switch: [
+						{if: =scale.small, then: [205, 26, 571, 220]},
+						{if: =scale.large, then: [205, 26, 571, 247]}
+					]},
+					options:{large_headline:true, no_border:true} 
+			},
             #deco:	{ 
 					frame: {$switch: [
 						{if: =scale.small, then: [205, 248, 280, 370]},

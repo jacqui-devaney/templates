@@ -11,7 +11,7 @@
 			column-height:balance,
 			flow: article_body,
 			min-height: {if: =page.mediabucket, then:400, else:200},
-			layout-grid-line:23,
+			layout-grid-line:22,
 			layout-grid-line-offset:20
 			
         }},

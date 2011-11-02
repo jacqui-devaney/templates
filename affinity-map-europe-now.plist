@@ -217,83 +217,6 @@
 			<array/>
 		</dict>
 	</dict>
-	<key>THE_JOURNAL_REPORT</key>
-	<dict>
-		<key>SECTION-1story-P-1highlight-white_template</key>
-		<dict>
-			<key>b1</key>
-			<array/>
-			<key>h3</key>
-			<array/>
-		</dict>
-		<key>SECTION-3story-G_template</key>
-		<dict>
-			<key>b1</key>
-			<array/>
-			<key>h1</key>
-			<array/>
-			<key>h2</key>
-			<array/>
-		</dict>
-		<key>SECTION-1story-P-1highlight_template</key>
-		<dict>
-			<key>b1</key>
-			<array/>
-			<key>h3</key>
-			<array/>
-		</dict>
-		<key>SECTION-1story-PV-1highlight_template</key>
-		<dict>
-			<key>b1</key>
-			<array/>
-			<key>h3</key>
-			<array/>
-		</dict>
-		<key>SECTION-1story-PV-white_template</key>
-		<dict>
-			<key>b1</key>
-			<array/>
-			<key>h1</key>
-			<array/>
-			<key>h2</key>
-			<array/>
-		</dict>
-		<key>SECTION-1story-PV_template</key>
-		<dict>
-			<key>b1</key>
-			<array/>
-			<key>h1</key>
-			<array/>
-			<key>h2</key>
-			<array/>
-		</dict>
-		<key>SECTION-1story-P_template</key>
-		<dict>
-			<key>b1</key>
-			<array/>
-			<key>h1</key>
-			<array/>
-			<key>h2</key>
-			<array/>
-		</dict>
-		<key>SECTION-2story-G-C_template</key>
-		<dict>
-			<key>b1</key>
-			<array>
-				<false/>
-			</array>
-			<key>h1</key>
-			<array>
-				<string>Mobile Tablet Highlight1A</string>
-				<string>Mobile Tablet Highlight1B</string>
-			</array>
-			<key>h2</key>
-			<array>
-				<string>Mobile Tablet Highlight2A</string>
-				<string>Mobile Tablet Highlight2B</string>
-			</array>
-		</dict>
-	</dict>
 	<key>LIFE_AND_STYLE</key>
 	<dict>
 		<key>SECTION-1story-P-1highlight-white_template</key>
@@ -631,10 +554,10 @@
 			<key>h1</key>
 			<array>
 				<string>Extra Credit</string>
-				<string>Editors&apos; Notebook</string>
+				<string>Editors' Notebook</string>
 				<string>What to Wear There</string>
 				<string>RunwayRealWay</string>
-				<string>Traveler&apos;s Tale</string>
+				<string>Traveler's Tale</string>
 			</array>
 			<key>h2</key>
 			<array>
@@ -675,6 +598,8 @@
 			<key>b1</key>
 			<array>
 				<string>Review &amp; Outlook (Europe)</string>
+				<string>Review &amp; Outlook (U.S.)</string>
+				<string>Review &amp; Outlook (Asia)</string>
 				<string>Letters</string>
 			</array>
 			<key>b2</key>
@@ -709,6 +634,8 @@
 			<key>b1</key>
 			<array>
 				<string>Review &amp; Outlook (Europe)</string>
+				<string>Review &amp; Outlook (U.S.)</string>
+				<string>Review &amp; Outlook (Asia)</string>
 				<string>Letters</string>
 			</array>
 			<key>b2</key>
@@ -743,11 +670,15 @@
 			<key>b1</key>
 			<array>
 				<string>Review &amp; Outlook (Europe)</string>
+				<string>Review &amp; Outlook (U.S.)</string>
+				<string>Review &amp; Outlook (Asia)</string>
 				<string>Letters</string>
 			</array>
 			<key>b2</key>
 			<array>
 				<string>Review &amp; Outlook (Europe)</string>
+				<string>Review &amp; Outlook (U.S.)</string>
+				<string>Review &amp; Outlook (Asia)</string>
 				<string>Letters</string>
 			</array>
 			<key>b3</key>
@@ -782,11 +713,15 @@
 			<key>b1</key>
 			<array>
 				<string>Review &amp; Outlook (Europe)</string>
+				<string>Review &amp; Outlook (U.S.)</string>
+				<string>Review &amp; Outlook (Asia)</string>
 				<string>Letters</string>
 			</array>
 			<key>b2</key>
 			<array>
 				<string>Review &amp; Outlook (Europe)</string>
+				<string>Review &amp; Outlook (U.S.)</string>
+				<string>Review &amp; Outlook (Asia)</string>
 				<string>Letters</string>
 			</array>
 			<key>b3</key>
@@ -821,11 +756,15 @@
 			<key>b1</key>
 			<array>
 				<string>Review &amp; Outlook (Europe)</string>
+				<string>Review &amp; Outlook (U.S.)</string>
+				<string>Review &amp; Outlook (Asia)</string>
 				<string>Letters</string>
 			</array>
 			<key>b2</key>
 			<array>
 				<string>Review &amp; Outlook (Europe)</string>
+				<string>Review &amp; Outlook (Asia)</string>
+				<string>Review &amp; Outlook (U.S.)</string>
 				<string>Letters</string>
 			</array>
 			<key>b3</key>
@@ -867,11 +806,15 @@
 			<key>b1</key>
 			<array>
 				<string>Review &amp; Outlook (Europe)</string>
+				<string>Review &amp; Outlook (U.S.)</string>
+				<string>Review &amp; Outlook (Asia)</string>
 				<string>Letters</string>
 			</array>
 			<key>b2</key>
 			<array>
 				<string>Review &amp; Outlook (Europe)</string>
+				<string>Review &amp; Outlook (U.S.)</string>
+				<string>Review &amp; Outlook (Asia)</string>
 				<string>Letters</string>
 			</array>
 			<key>b3</key>
@@ -913,16 +856,22 @@
 			<key>b1</key>
 			<array>
 				<string>Review &amp; Outlook (Europe)</string>
+				<string>Review &amp; Outlook (U.S.)</string>
+				<string>Review &amp; Outlook (Asia)</string>
 				<string>Letters</string>
 			</array>
 			<key>b2</key>
 			<array>
 				<string>Review &amp; Outlook (Europe)</string>
+				<string>Review &amp; Outlook (U.S.)</string>
+				<string>Review &amp; Outlook (Asia)</string>
 				<string>Letters</string>
 			</array>
 			<key>b3</key>
 			<array>
 				<string>Review &amp; Outlook (Europe)</string>
+				<string>Review &amp; Outlook (U.S.)</string>
+				<string>Review &amp; Outlook (Asia)</string>
 				<string>Letters</string>
 			</array>
 			<key>b4</key>
@@ -964,16 +913,22 @@
 			<key>b1</key>
 			<array>
 				<string>Review &amp; Outlook (Europe)</string>
+				<string>Review &amp; Outlook (U.S.)</string>
+				<string>Review &amp; Outlook (Asia)</string>
 				<string>Letters</string>
 			</array>
 			<key>b2</key>
 			<array>
 				<string>Review &amp; Outlook (Europe)</string>
+				<string>Review &amp; Outlook (U.S.)</string>
+				<string>Review &amp; Outlook (Asia)</string>
 				<string>Letters</string>
 			</array>
 			<key>b3</key>
 			<array>
 				<string>Review &amp; Outlook (Europe)</string>
+				<string>Review &amp; Outlook (U.S.)</string>
+				<string>Review &amp; Outlook (Asia)</string>
 				<string>Letters</string>
 			</array>
 			<key>b4</key>
@@ -1015,21 +970,29 @@
 			<key>b1</key>
 			<array>
 				<string>Review &amp; Outlook (Europe)</string>
+				<string>Review &amp; Outlook (U.S.)</string>
+				<string>Review &amp; Outlook (Asia)</string>
 				<string>Letters</string>
 			</array>
 			<key>b2</key>
 			<array>
 				<string>Review &amp; Outlook (Europe)</string>
+				<string>Review &amp; Outlook (U.S.)</string>
+				<string>Review &amp; Outlook (Asia)</string>
 				<string>Letters</string>
 			</array>
 			<key>b3</key>
 			<array>
 				<string>Review &amp; Outlook (Europe)</string>
+				<string>Review &amp; Outlook (U.S.)</string>
+				<string>Review &amp; Outlook (Asia)</string>
 				<string>Letters</string>
 			</array>
 			<key>b4</key>
 			<array>
 				<string>Review &amp; Outlook (Europe)</string>
+				<string>Review &amp; Outlook (U.S.)</string>
+				<string>Review &amp; Outlook (Asia)</string>
 				<string>Letters</string>
 			</array>
 			<key>b5</key>
@@ -1071,21 +1034,29 @@
 			<key>b1</key>
 			<array>
 				<string>Review &amp; Outlook (Europe)</string>
+				<string>Review &amp; Outlook (U.S.)</string>
+				<string>Review &amp; Outlook (Asia)</string>
 				<string>Letters</string>
 			</array>
 			<key>b2</key>
 			<array>
 				<string>Review &amp; Outlook (Europe)</string>
+				<string>Review &amp; Outlook (U.S.)</string>
+				<string>Review &amp; Outlook (Asia)</string>
 				<string>Letters</string>
 			</array>
 			<key>b3</key>
 			<array>
 				<string>Review &amp; Outlook (Europe)</string>
+				<string>Review &amp; Outlook (U.S.)</string>
+				<string>Review &amp; Outlook (Asia)</string>
 				<string>Letters</string>
 			</array>
 			<key>b4</key>
 			<array>
 				<string>Review &amp; Outlook (Europe)</string>
+				<string>Review &amp; Outlook (U.S.)</string>
+				<string>Review &amp; Outlook (Asia)</string>
 				<string>Letters</string>
 			</array>
 			<key>b5</key>
@@ -1135,7 +1106,7 @@
 			<array>
 				<string>Second Act</string>
 				<string>Managing your career </string>
-				<string>What&apos;s Your Workout</string>
+				<string>What's Your Workout</string>
 				<string>Pay grade</string>
 				<string>Mossberg Solution</string>
 				<string>Moving On</string>
@@ -1161,7 +1132,7 @@
 			<array>
 				<string>Second Act</string>
 				<string>Managing your career </string>
-				<string>What&apos;s Your Workout</string>
+				<string>What's Your Workout</string>
 				<string>Pay grade</string>
 				<string>Mossberg Solution</string>
 				<string>Moving On</string>
@@ -1187,7 +1158,7 @@
 			<array>
 				<string>Second Act</string>
 				<string>Managing your career </string>
-				<string>What&apos;s Your Workout</string>
+				<string>What's Your Workout</string>
 				<string>Pay grade</string>
 				<string>Mossberg Solution</string>
 				<string>Moving On</string>
@@ -1213,7 +1184,7 @@
 			<array>
 				<string>Second Act</string>
 				<string>Managing your career </string>
-				<string>What&apos;s Your Workout</string>
+				<string>What's Your Workout</string>
 				<string>Pay grade</string>
 				<string>Mossberg Solution</string>
 				<string>Moving On</string>
@@ -1242,7 +1213,7 @@
 			<array>
 				<string>Second Act</string>
 				<string>Managing your career </string>
-				<string>What&apos;s Your Workout</string>
+				<string>What's Your Workout</string>
 				<string>Pay grade</string>
 				<string>Mossberg Solution</string>
 				<string>Moving On</string>
@@ -1271,7 +1242,7 @@
 			<array>
 				<string>Second Act</string>
 				<string>Managing your career </string>
-				<string>What&apos;s Your Workout</string>
+				<string>What's Your Workout</string>
 				<string>Pay grade</string>
 				<string>Mossberg Solution</string>
 				<string>Moving On</string>
@@ -1300,7 +1271,7 @@
 			<array>
 				<string>Second Act</string>
 				<string>Managing your career </string>
-				<string>What&apos;s Your Workout</string>
+				<string>What's Your Workout</string>
 				<string>Pay grade</string>
 				<string>Mossberg Solution</string>
 				<string>Moving On</string>
@@ -1438,6 +1409,83 @@
 			</array>
 		</dict>
 	</dict>
+	<key>THE_JOURNAL_REPORT</key>
+	<dict>
+		<key>SECTION-1story-P-1highlight-white_template</key>
+		<dict>
+			<key>b1</key>
+			<array/>
+			<key>h3</key>
+			<array/>
+		</dict>
+		<key>SECTION-1story-P-1highlight_template</key>
+		<dict>
+			<key>b1</key>
+			<array/>
+			<key>h3</key>
+			<array/>
+		</dict>
+		<key>SECTION-1story-PV-1highlight_template</key>
+		<dict>
+			<key>b1</key>
+			<array/>
+			<key>h3</key>
+			<array/>
+		</dict>
+		<key>SECTION-1story-PV-white_template</key>
+		<dict>
+			<key>b1</key>
+			<array/>
+			<key>h1</key>
+			<array/>
+			<key>h2</key>
+			<array/>
+		</dict>
+		<key>SECTION-1story-PV_template</key>
+		<dict>
+			<key>b1</key>
+			<array/>
+			<key>h1</key>
+			<array/>
+			<key>h2</key>
+			<array/>
+		</dict>
+		<key>SECTION-1story-P_template</key>
+		<dict>
+			<key>b1</key>
+			<array/>
+			<key>h1</key>
+			<array/>
+			<key>h2</key>
+			<array/>
+		</dict>
+		<key>SECTION-2story-G-C_template</key>
+		<dict>
+			<key>b1</key>
+			<array>
+				<false/>
+			</array>
+			<key>h1</key>
+			<array>
+				<string>Mobile Tablet Highlight1A</string>
+				<string>Mobile Tablet Highlight1B</string>
+			</array>
+			<key>h2</key>
+			<array>
+				<string>Mobile Tablet Highlight2A</string>
+				<string>Mobile Tablet Highlight2B</string>
+			</array>
+		</dict>
+		<key>SECTION-3story-G_template</key>
+		<dict>
+			<key>b1</key>
+			<array/>
+			<key>h1</key>
+			<array/>
+			<key>h2</key>
+			<array/>
+		</dict>
+	</dict>
 	<key>WEEKEND_JOURNAL</key>
 	<dict>
 		<key>SECTION-1story-P-1highlight-white_template</key>
@@ -1529,12 +1577,12 @@
 	</dict>
 	<key>WSJ_MAGAZINE</key>
 	<dict>
-		<key>SECTION-1story-P-1highlight-white_template</key>
+		<key>CONTINUATION-fancy-6_template</key>
 		<dict>
-			<key>b1</key>
-			<array/>
-			<key>h3</key>
-			<array/>
+			<key>deco</key>
+			<array>
+				<string>Deco Summary Liondoor MagCont1</string>
+			</array>
 		</dict>
 		<key>CONTINUATION-fancy-bottom-6_template</key>
 		<dict>
@@ -1544,12 +1592,12 @@
 				<string>Deco Summary Liondoor MagCont3</string>
 			</array>
 		</dict>
-		<key>CONTINUATION-fancy-6_template</key>
+		<key>SECTION-1story-P-1highlight-white_template</key>
 		<dict>
-			<key>deco</key>
-			<array>
-				<string>Deco Summary Liondoor MagCont1</string>
-			</array>
+			<key>b1</key>
+			<array/>
+			<key>h3</key>
+			<array/>
 		</dict>
 		<key>SECTION-1story-P-1highlight_template</key>
 		<dict>

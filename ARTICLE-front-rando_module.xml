@@ -6,7 +6,7 @@
 		{#header_top: { padding:[18, 10, 8, 15] }},
 		{#body_container: { 
 			padding: [10, 20, 0, 20],
-			layout-grid-line:23,
+			layout-grid-line:22,
 			min-height: {if: =page.mediabucket, then:400, else:200}
 		}},
 		{.article_body: { 

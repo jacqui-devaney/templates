@@ -177,7 +177,8 @@
 		font-name:DJ5RetinaCd-Medium,
 		font-size:24,
 		line-height:24,
-		color:#000
+		color:#000,
+		text-scale: {if: =scale.small, then: .8, else: inherit}
 		
 	},
 	#deco_bottom_headline: {
@@ -355,7 +356,7 @@
 		text-align:left
 	},
 	#rando_header: { 
-		padding:[ 0, 0, 20, 0 ]
+		padding:[ 0, 0, 16, 0 ]
 	},
 	#opinion_line: { 
 		anchor-x:center, 
@@ -414,21 +415,27 @@
 		font-name:DJ5EscrowCond-Bold,
 		font-size:30,
 		line-height:34,
-		text-align:center
+		text-align:center,
+		text-scale:{if: =scale.small, then: .9, else: 1}
+		
 	},
 	.opinion_dek:{
 		font-name:DJ5EscrowCond-BoldItalic,
 		font-size:20,
 		line-height:24,
 		text-align:center,
-		color:#989898
+		color:#989898,
+		text-scale:{if: =scale.small, then: .9, else: 1}
+		
 	},
 	.letters_headline: {
 		font-name:DJ5EscrowCond-Italic,
 		font-size:26,
 		text-align:center,
 		line-height:30,
-		padding: [0, 0, 5, 0]
+		padding: [0, 0, 5, 0],
+		text-scale:{if: =scale.small, then: .9, else: 1}
+		
 	},
 	#continued: { content: { $switch: [
 		{ if: =app.language, equals: en, then: "Continued" },

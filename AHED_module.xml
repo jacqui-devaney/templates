@@ -16,7 +16,10 @@
         #image_container: { 
 			anchor-x: right, 
 			width: 90, 
-			display: { if: =options.no_image, then:none, else:inherit }
+			display: { if: =options.no_image, then:none, else:inherit },
+			pixels-per-point-x:{if: =scale.small, then:.7, else:1},
+			pixels-per-point-y:{if: =scale.small, then:.7, else:1},
+			image-scale:{if: =scale.small, then:.7, else:1}
 		},
 		image: { 
 			padding: [0, 4, 8, 8],

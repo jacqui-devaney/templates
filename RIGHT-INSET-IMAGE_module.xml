@@ -29,9 +29,9 @@
 		{#image_container: { 
 			anchor-x: right,
 			width: 86,
-			pixels-per-point-x:1,
-			pixels-per-point-y:1,
-			image-scale:1
+			pixels-per-point-x:{if: =scale.small, then:.7, else:1},
+			pixels-per-point-y:{if: =scale.small, then:.7, else:1},
+			image-scale:{if: =scale.small, then:.7, else:1}
 			
 		}},
 		{image: {

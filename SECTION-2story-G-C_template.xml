@@ -8,7 +8,7 @@
 			#h1: {options:{highlight_dark:true}},
 			#h2: {options:{highlight_dark:true}}
 		}, else: {
-			#b1:	{ frame: [11, 0, 571, 620], options:{large_headline:true, show_image:true, no_border:true, bottom:true} },
+			#b1:	{ frame: [11, 0, 571, 620], options:{large_headline:true, show_image:{if: =scale.small, then:false, else:true}, show_image_skinny:{if: =scale.small, then:true, else:false}, no_border:true, bottom:true} },
 			#b2:	{ frame: [594, 0, 183, 620], options:{small_headline:true, show_image:true, no_border:true, left:true, bottom:true} },
 			#h1: {options:{highlight_dark:true}},
 			#h2: {options:{highlight_dark:true}}

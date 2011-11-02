@@ -10,7 +10,7 @@
 			#h1: {options:{highlight_dark:true}},
 			#h2: {options:{highlight_dark:true}}
 		}, else: {
-			#b1:	{ frame: [3, 0, 475, 620], options:{large_headline:true, show_image:true, no_border:true, bottom:true} },
+			#b1:	{ frame: [3, 0, 475, 620], options:{large_headline:true, show_image:{if: =scale.small, then:false, else:true}, show_image_skinny:{if: =scale.small, then:true, else:false}, no_border:true, bottom:true} },
 			#b2:	{ frame: [494, 0, 280, 214], options:{small_headline:true, no_border:true} },
 			#b3:	{ frame: [494, 212, 280, 204], options:{small_headline:true} },
 			#b4:	{ frame: [494, 416, 280, 204], options:{small_headline:true, bottom:true} },

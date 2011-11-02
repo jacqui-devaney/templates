@@ -7,7 +7,7 @@
 				{ if: =options.no_border, then: {
 					#wrapper: {
 						border-width: [0, 0, 0, 0],
-						padding: [10, 0, 0, 0]
+						padding: [8, 0, 0, 0]
 					}
 			
 				}},
@@ -15,7 +15,7 @@
 					#wrapper: {
 						border-width: [1, 0, 0, 0],
 						border-color: #b1aca1,
-						padding: [10, 0, 0, 0]
+						padding: [8, 0, 0, 0]
 					}
 					}}
 			]},
@@ -42,7 +42,7 @@
 			{#skinny_wide: {
 				height:{$multiply: [=view.width, 0.39] },
 				display: { if: =options.show_image_skinny, then:inherit },
-				padding: [0, 0, 8, 0],
+				padding: [0, 8, 8, 8],
 				pixels-per-point-x:1,
 				pixels-per-point-y:1,
 				image-scale:1

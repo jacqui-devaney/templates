@@ -12,7 +12,7 @@
             column-gutter: 30,
 			column-height:balance,
 			min-height:200,
-			layout-grid-line:22
+			layout-grid-line: {$multiply: [22, =view.zoomlevel]}
         }},
 		{#body_continuation: {
 			content: from-flow(article_body),

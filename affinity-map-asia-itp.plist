@@ -2,6 +2,20 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>ASIA</key>
+	<dict>
+		<key>SECTION-2story-G-C_template</key>
+		<dict>
+			<key>b1</key>
+			<array>
+				<true/>
+			</array>
+			<key>h1</key>
+			<array/>
+			<key>h2</key>
+			<array/>
+		</dict>
+	</dict>
 	<key>BUSINESS_AND_FINANCE</key>
 	<dict>
 		<key>SECTION-3story-G-marketdata_template</key>
@@ -819,10 +833,10 @@
 			<key>h3</key>
 			<array>
 				<string>Extra Credit</string>
-				<string>Editors&apos; Notebook</string>
+				<string>Editors' Notebook</string>
 				<string>What to Wear There</string>
 				<string>RunwayRealWay</string>
-				<string>Traveler&apos;s Tale</string>
+				<string>Traveler's Tale</string>
 				<string>On Wine</string>
 				<string>Slow Food Fast</string>
 				<string>House Tour</string>
@@ -838,10 +852,10 @@
 			<key>h3</key>
 			<array>
 				<string>Extra Credit</string>
-				<string>Editors&apos; Notebook</string>
+				<string>Editors' Notebook</string>
 				<string>What to Wear There</string>
 				<string>RunwayRealWay</string>
-				<string>Traveler&apos;s Tale</string>
+				<string>Traveler's Tale</string>
 				<string>On Wine</string>
 				<string>Slow Food Fast</string>
 				<string>House Tour</string>
@@ -857,10 +871,10 @@
 			<key>h3</key>
 			<array>
 				<string>Extra Credit</string>
-				<string>Editors&apos; Notebook</string>
+				<string>Editors' Notebook</string>
 				<string>What to Wear There</string>
 				<string>RunwayRealWay</string>
-				<string>Traveler&apos;s Tale</string>
+				<string>Traveler's Tale</string>
 				<string>On Wine</string>
 				<string>Slow Food Fast</string>
 				<string>House Tour</string>
@@ -876,10 +890,10 @@
 			<key>h1</key>
 			<array>
 				<string>Extra Credit</string>
-				<string>Editors&apos; Notebook</string>
+				<string>Editors' Notebook</string>
 				<string>What to Wear There</string>
 				<string>RunwayRealWay</string>
-				<string>Traveler&apos;s Tale</string>
+				<string>Traveler's Tale</string>
 			</array>
 			<key>h2</key>
 			<array>
@@ -898,10 +912,10 @@
 			<key>h1</key>
 			<array>
 				<string>Extra Credit</string>
-				<string>Editors&apos; Notebook</string>
+				<string>Editors' Notebook</string>
 				<string>What to Wear There</string>
 				<string>RunwayRealWay</string>
-				<string>Traveler&apos;s Tale</string>
+				<string>Traveler's Tale</string>
 			</array>
 			<key>h2</key>
 			<array>
@@ -920,10 +934,10 @@
 			<key>h1</key>
 			<array>
 				<string>Extra Credit</string>
-				<string>Editors&apos; Notebook</string>
+				<string>Editors' Notebook</string>
 				<string>What to Wear There</string>
 				<string>RunwayRealWay</string>
-				<string>Traveler&apos;s Tale</string>
+				<string>Traveler's Tale</string>
 			</array>
 			<key>h2</key>
 			<array>
@@ -942,10 +956,10 @@
 			<key>h1</key>
 			<array>
 				<string>Extra Credit</string>
-				<string>Editors&apos; Notebook</string>
+				<string>Editors' Notebook</string>
 				<string>What to Wear There</string>
 				<string>RunwayRealWay</string>
-				<string>Traveler&apos;s Tale</string>
+				<string>Traveler's Tale</string>
 			</array>
 			<key>h2</key>
 			<array>
@@ -985,6 +999,8 @@
 			<key>b1</key>
 			<array>
 				<string>Review &amp; Outlook (Asia)</string>
+				<string>Review &amp; Outlook (U.S.)</string>
+				<string>Review &amp; Outlook (Europe)</string>
 				<string>Letters</string>
 			</array>
 			<key>b2</key>
@@ -1015,6 +1031,8 @@
 			<key>b1</key>
 			<array>
 				<string>Review &amp; Outlook (Asia)</string>
+				<string>Review &amp; Outlook (U.S.)</string>
+				<string>Review &amp; Outlook (Europe)</string>
 				<string>Letters</string>
 			</array>
 			<key>b2</key>
@@ -1045,11 +1063,15 @@
 			<key>b1</key>
 			<array>
 				<string>Review &amp; Outlook (Asia)</string>
+				<string>Review &amp; Outlook (U.S.)</string>
+				<string>Review &amp; Outlook (Europe)</string>
 				<string>Letters</string>
 			</array>
 			<key>b2</key>
 			<array>
 				<string>Review &amp; Outlook (Asia)</string>
+				<string>Review &amp; Outlook (U.S.)</string>
+				<string>Review &amp; Outlook (Europe)</string>
 				<string>Letters</string>
 			</array>
 			<key>b3</key>
@@ -1080,11 +1102,15 @@
 			<key>b1</key>
 			<array>
 				<string>Review &amp; Outlook (Asia)</string>
+				<string>Review &amp; Outlook (U.S.)</string>
+				<string>Review &amp; Outlook (Europe)</string>
 				<string>Letters</string>
 			</array>
 			<key>b2</key>
 			<array>
 				<string>Review &amp; Outlook (Asia)</string>
+				<string>Review &amp; Outlook (U.S.)</string>
+				<string>Review &amp; Outlook (Europe)</string>
 				<string>Letters</string>
 			</array>
 			<key>b3</key>
@@ -1115,11 +1141,15 @@
 			<key>b1</key>
 			<array>
 				<string>Review &amp; Outlook (Asia)</string>
+				<string>Review &amp; Outlook (U.S.)</string>
+				<string>Review &amp; Outlook (Europe)</string>
 				<string>Letters</string>
 			</array>
 			<key>b2</key>
 			<array>
 				<string>Review &amp; Outlook (Asia)</string>
+				<string>Review &amp; Outlook (U.S.)</string>
+				<string>Review &amp; Outlook (Europe)</string>
 				<string>Letters</string>
 			</array>
 			<key>b3</key>
@@ -1155,11 +1185,15 @@
 			<key>b1</key>
 			<array>
 				<string>Review &amp; Outlook (Asia)</string>
+				<string>Review &amp; Outlook (U.S.)</string>
+				<string>Review &amp; Outlook (Europe)</string>
 				<string>Letters</string>
 			</array>
 			<key>b2</key>
 			<array>
 				<string>Review &amp; Outlook (Asia)</string>
+				<string>Review &amp; Outlook (U.S.)</string>
+				<string>Review &amp; Outlook (Europe)</string>
 				<string>Letters</string>
 			</array>
 			<key>b3</key>
@@ -1195,16 +1229,22 @@
 			<key>b1</key>
 			<array>
 				<string>Review &amp; Outlook (Asia)</string>
+				<string>Review &amp; Outlook (U.S.)</string>
+				<string>Review &amp; Outlook (Europe)</string>
 				<string>Letters</string>
 			</array>
 			<key>b2</key>
 			<array>
 				<string>Review &amp; Outlook (Asia)</string>
+				<string>Review &amp; Outlook (U.S.)</string>
+				<string>Review &amp; Outlook (Europe)</string>
 				<string>Letters</string>
 			</array>
 			<key>b3</key>
 			<array>
 				<string>Review &amp; Outlook (Asia)</string>
+				<string>Review &amp; Outlook (U.S.)</string>
+				<string>Review &amp; Outlook (Europe)</string>
 				<string>Letters</string>
 			</array>
 			<key>b4</key>
@@ -1240,16 +1280,22 @@
 			<key>b1</key>
 			<array>
 				<string>Review &amp; Outlook (Asia)</string>
+				<string>Review &amp; Outlook (U.S.)</string>
+				<string>Review &amp; Outlook (Europe)</string>
 				<string>Letters</string>
 			</array>
 			<key>b2</key>
 			<array>
 				<string>Review &amp; Outlook (Asia)</string>
+				<string>Review &amp; Outlook (U.S.)</string>
+				<string>Review &amp; Outlook (Europe)</string>
 				<string>Letters</string>
 			</array>
 			<key>b3</key>
 			<array>
 				<string>Review &amp; Outlook (Asia)</string>
+				<string>Review &amp; Outlook (U.S.)</string>
+				<string>Review &amp; Outlook (Europe)</string>
 				<string>Letters</string>
 			</array>
 			<key>b4</key>
@@ -1284,22 +1330,30 @@
 		<dict>
 			<key>b1</key>
 			<array>
+				<string>Review &amp; Outlook (U.S.)</string>
+				<string>Review &amp; Outlook (Europe)</string>
 				<string>Review &amp; Outlook (Asia)</string>
 				<string>Letters</string>
 			</array>
 			<key>b2</key>
 			<array>
+				<string>Review &amp; Outlook (U.S.)</string>
+				<string>Review &amp; Outlook (Europe)</string>
 				<string>Review &amp; Outlook (Asia)</string>
 				<string>Letters</string>
 			</array>
 			<key>b3</key>
 			<array>
 				<string>Review &amp; Outlook (Asia)</string>
+				<string>Review &amp; Outlook (U.S.)</string>
+				<string>Review &amp; Outlook (Europe)</string>
 				<string>Letters</string>
 			</array>
 			<key>b4</key>
 			<array>
 				<string>Review &amp; Outlook (Asia)</string>
+				<string>Review &amp; Outlook (U.S.)</string>
+				<string>Review &amp; Outlook (Europe)</string>
 				<string>Letters</string>
 			</array>
 			<key>b5</key>
@@ -1335,21 +1389,29 @@
 			<key>b1</key>
 			<array>
 				<string>Review &amp; Outlook (Asia)</string>
+				<string>Review &amp; Outlook (U.S.)</string>
+				<string>Review &amp; Outlook (Europe)</string>
 				<string>Letters</string>
 			</array>
 			<key>b2</key>
 			<array>
 				<string>Review &amp; Outlook (Asia)</string>
+				<string>Review &amp; Outlook (U.S.)</string>
+				<string>Review &amp; Outlook (Europe)</string>
 				<string>Letters</string>
 			</array>
 			<key>b3</key>
 			<array>
 				<string>Review &amp; Outlook (Asia)</string>
+				<string>Review &amp; Outlook (U.S.)</string>
+				<string>Review &amp; Outlook (Europe)</string>
 				<string>Letters</string>
 			</array>
 			<key>b4</key>
 			<array>
 				<string>Review &amp; Outlook (Asia)</string>
+				<string>Review &amp; Outlook (U.S.)</string>
+				<string>Review &amp; Outlook (Europe)</string>
 				<string>Letters</string>
 			</array>
 			<key>b5</key>
@@ -1393,7 +1455,7 @@
 			<array>
 				<string>Second Act</string>
 				<string>Managing your career </string>
-				<string>What&apos;s Your Workout</string>
+				<string>What's Your Workout</string>
 				<string>Pay grade</string>
 				<string>Mossberg Solution</string>
 				<string>Moving On</string>
@@ -1419,7 +1481,7 @@
 			<array>
 				<string>Second Act</string>
 				<string>Managing your career </string>
-				<string>What&apos;s Your Workout</string>
+				<string>What's Your Workout</string>
 				<string>Pay grade</string>
 				<string>Mossberg Solution</string>
 				<string>Moving On</string>
@@ -1445,7 +1507,7 @@
 			<array>
 				<string>Second Act</string>
 				<string>Managing your career </string>
-				<string>What&apos;s Your Workout</string>
+				<string>What's Your Workout</string>
 				<string>Pay grade</string>
 				<string>Mossberg Solution</string>
 				<string>Moving On</string>
@@ -1471,7 +1533,7 @@
 			<array>
 				<string>Second Act</string>
 				<string>Managing your career </string>
-				<string>What&apos;s Your Workout</string>
+				<string>What's Your Workout</string>
 				<string>Pay grade</string>
 				<string>Mossberg Solution</string>
 				<string>Moving On</string>
@@ -1500,7 +1562,7 @@
 			<array>
 				<string>Second Act</string>
 				<string>Managing your career </string>
-				<string>What&apos;s Your Workout</string>
+				<string>What's Your Workout</string>
 				<string>Pay grade</string>
 				<string>Mossberg Solution</string>
 				<string>Moving On</string>
@@ -1529,7 +1591,7 @@
 			<array>
 				<string>Second Act</string>
 				<string>Managing your career </string>
-				<string>What&apos;s Your Workout</string>
+				<string>What's Your Workout</string>
 				<string>Pay grade</string>
 				<string>Mossberg Solution</string>
 				<string>Moving On</string>
@@ -1558,7 +1620,7 @@
 			<array>
 				<string>Second Act</string>
 				<string>Managing your career </string>
-				<string>What&apos;s Your Workout</string>
+				<string>What's Your Workout</string>
 				<string>Pay grade</string>
 				<string>Mossberg Solution</string>
 				<string>Moving On</string>

@@ -3,22 +3,19 @@
 	<style src="GLOBAL-stylesheet.ejs" />
 	<style>{
 		$join: [		
-			{ #rando_header: { display: { if: =options.rando, else:none }} },
-			{ #letters_header: { display: { if: =options.letters, else:none }} },
-		
-		
 			{ $switch: [
 				{ if: =article.type, equals: "Letters", then: {
-					.letters_headline: { display: inherit},
 					.opinion_headline: { display: none},
-					.opinion_dek: { display: none}
-				
+					.opinion_dek: { display: none},
+				    #rando_header: { display: none },
+                    #letters_header: { display: { if: =options.header, then: inherit, else: none } }
+                
 				}},
 				{ if: true, then: {
 					.letters_headline: { display: none},
-					.opinion_headline: { display: inherit},
-					.opinion_dek: { display: inherit}
-				}}
+				    #letters_header: { display: none },
+                    #rando_header: { display: { if: =options.header, then: inherit, else: none } }
+                }}
 			]} 
 	]			
 	

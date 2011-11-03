@@ -725,7 +725,7 @@
 				<string>Advertising</string>
 				<string>Theory</string>
 				<string>Small Business</string>
-				<string>Media &amp;amp; Marketing</string>
+				<string>Media &amp; Marketing</string>
 			</array>
 			<key>h2</key>
 			<array>
@@ -753,7 +753,7 @@
 				<string>Advertising</string>
 				<string>Theory</string>
 				<string>Small Business</string>
-				<string>Media &amp;amp; Marketing</string>
+				<string>Media &amp; Marketing</string>
 			</array>
 			<key>h2</key>
 			<array>
@@ -782,12 +782,14 @@
 				<string>Mobile Tablet Highlight1A</string>
 				<string>Mobile Tablet Highlight1B</string>
 				<string>Mobile App Blog</string>
-				<string>Business Technology</string>
 				<string>Tech Journal</string>
 				<string>Digits</string>
+				<string>Boss Talk</string>
+				<string>How I Built It</string>
+				<string>Management</string>
+				<string>Careers</string>
+				<string>Law</string>
 				<string>Telecommunications</string>
-				<string>Technology</string>
-				<string>Digits Blog</string>
 			</array>
 			<key>h2</key>
 			<array>
@@ -797,8 +799,9 @@
 				<string>Advertising</string>
 				<string>Theory</string>
 				<string>Small Business</string>
+				<string>Health</string>
 				<string>Earnings</string>
-				<string>Media &amp;amp; Marketing</string>
+				<string>Media &amp; Marketing</string>
 			</array>
 		</dict>
 		<key>SECTION-4story-smallG-top_template</key>
@@ -812,23 +815,26 @@
 				<string>Mobile Tablet Highlight1A</string>
 				<string>Mobile Tablet Highlight1B</string>
 				<string>Mobile App Blog</string>
-				<string>Business Technology</string>
 				<string>Tech Journal</string>
 				<string>Digits</string>
+				<string>Boss Talk</string>
+				<string>How I Built It</string>
+				<string>Management</string>
+				<string>Careers</string>
+				<string>Law</string>
 				<string>Telecommunications</string>
-				<string>Technology</string>
-				<string>Digits Blog</string>
 			</array>
 			<key>h2</key>
 			<array>
 				<string>Mobile Tablet Highlight2A</string>
 				<string>Mobile Tablet Highlight2B</string>
 				<string>Executive Education</string>
-				<string>Earnings</string>
 				<string>Advertising</string>
 				<string>Theory</string>
 				<string>Small Business</string>
-				<string>Media &amp;amp; Marketing</string>
+				<string>Health</string>
+				<string>Earnings</string>
+				<string>Media &amp; Marketing</string>
 			</array>
 		</dict>
 	</dict>
@@ -1532,6 +1538,8 @@
 			<key>b1</key>
 			<array>
 				<string>Review &amp; Outlook (U.S.)</string>
+				<string>Review &amp; Outlook (Europe)</string>
+				<string>Review &amp; Outlook (Asia)</string>
 				<string>Letters</string>
 			</array>
 			<key>b2</key>
@@ -1566,11 +1574,15 @@
 			<key>b1</key>
 			<array>
 				<string>Review &amp; Outlook (U.S.)</string>
+				<string>Review &amp; Outlook (Europe)</string>
+				<string>Review &amp; Outlook (Asia)</string>
 				<string>Letters</string>
 			</array>
 			<key>b2</key>
 			<array>
 				<string>Review &amp; Outlook (U.S.)</string>
+				<string>Review &amp; Outlook (Europe)</string>
+				<string>Review &amp; Outlook (Asia)</string>
 				<string>Letters</string>
 			</array>
 			<key>b3</key>
@@ -1605,11 +1617,15 @@
 			<key>b1</key>
 			<array>
 				<string>Review &amp; Outlook (U.S.)</string>
+				<string>Review &amp; Outlook (Europe)</string>
+				<string>Review &amp; Outlook (Asia)</string>
 				<string>Letters</string>
 			</array>
 			<key>b2</key>
 			<array>
 				<string>Review &amp; Outlook (U.S.)</string>
+				<string>Review &amp; Outlook (Europe)</string>
+				<string>Review &amp; Outlook (Asia)</string>
 				<string>Letters</string>
 			</array>
 			<key>b3</key>
@@ -1644,11 +1660,15 @@
 			<key>b1</key>
 			<array>
 				<string>Review &amp; Outlook (U.S.)</string>
+				<string>Review &amp; Outlook (Europe)</string>
+				<string></string>
 				<string>Letters</string>
 			</array>
 			<key>b2</key>
 			<array>
 				<string>Review &amp; Outlook (U.S.)</string>
+				<string>Review &amp; Outlook (Europe)</string>
+				<string>Review &amp; Outlook (Asia)</string>
 				<string>Letters</string>
 			</array>
 			<key>b3</key>
@@ -1688,11 +1708,15 @@
 			<key>b1</key>
 			<array>
 				<string>Review &amp; Outlook (U.S.)</string>
+				<string>Review &amp; Outlook (Europe)</string>
+				<string>Review &amp; Outlook (Asia)</string>
 				<string>Letters</string>
 			</array>
 			<key>b2</key>
 			<array>
 				<string>Review &amp; Outlook (U.S.)</string>
+				<string>Review &amp; Outlook (Europe)</string>
+				<string>Review &amp; Outlook (Asia)</string>
 				<string>Letters</string>
 			</array>
 			<key>b3</key>
@@ -1732,16 +1756,22 @@
 			<key>b1</key>
 			<array>
 				<string>Review &amp; Outlook (U.S.)</string>
+				<string>Review &amp; Outlook (Europe)</string>
+				<string>Review &amp; Outlook (Asia)</string>
 				<string>Letters</string>
 			</array>
 			<key>b2</key>
 			<array>
 				<string>Review &amp; Outlook (U.S.)</string>
+				<string>Review &amp; Outlook (Europe)</string>
+				<string>Review &amp; Outlook (Asia)</string>
 				<string>Letters</string>
 			</array>
 			<key>b3</key>
 			<array>
 				<string>Review &amp; Outlook (U.S.)</string>
+				<string>Review &amp; Outlook (Europe)</string>
+				<string>Review &amp; Outlook (Asia)</string>
 				<string>Letters</string>
 			</array>
 			<key>b4</key>
@@ -1781,16 +1811,22 @@
 			<key>b1</key>
 			<array>
 				<string>Review &amp; Outlook (U.S.)</string>
+				<string>Review &amp; Outlook (Europe)</string>
+				<string>Review &amp; Outlook (Asia)</string>
 				<string>Letters</string>
 			</array>
 			<key>b2</key>
 			<array>
 				<string>Review &amp; Outlook (U.S.)</string>
+				<string>Review &amp; Outlook (Europe)</string>
+				<string>Review &amp; Outlook (Asia)</string>
 				<string>Letters</string>
 			</array>
 			<key>b3</key>
 			<array>
 				<string>Review &amp; Outlook (U.S.)</string>
+				<string>Review &amp; Outlook (Europe)</string>
+				<string>Review &amp; Outlook (Asia)</string>
 				<string>Letters</string>
 			</array>
 			<key>b4</key>
@@ -1830,21 +1866,29 @@
 			<key>b1</key>
 			<array>
 				<string>Review &amp; Outlook (U.S.)</string>
+				<string>Review &amp; Outlook (Europe)</string>
+				<string>Review &amp; Outlook (Asia)</string>
 				<string>Letters</string>
 			</array>
 			<key>b2</key>
 			<array>
 				<string>Review &amp; Outlook (U.S.)</string>
+				<string>Review &amp; Outlook (Europe)</string>
+				<string>Review &amp; Outlook (Asia)</string>
 				<string>Letters</string>
 			</array>
 			<key>b3</key>
 			<array>
 				<string>Review &amp; Outlook (U.S.)</string>
+				<string>Review &amp; Outlook (Europe)</string>
+				<string>Review &amp; Outlook (Asia)</string>
 				<string>Letters</string>
 			</array>
 			<key>b4</key>
 			<array>
 				<string>Review &amp; Outlook (U.S.)</string>
+				<string>Review &amp; Outlook (Europe)</string>
+				<string></string>
 				<string>Letters</string>
 			</array>
 			<key>b5</key>
@@ -1884,21 +1928,29 @@
 			<key>b1</key>
 			<array>
 				<string>Review &amp; Outlook (U.S.)</string>
+				<string>Review &amp; Outlook (Europe)</string>
+				<string>Review &amp; Outlook (Asia)</string>
 				<string>Letters</string>
 			</array>
 			<key>b2</key>
 			<array>
 				<string>Review &amp; Outlook (U.S.)</string>
+				<string>Review &amp; Outlook (Europe)</string>
+				<string>Review &amp; Outlook (Asia)</string>
 				<string>Letters</string>
 			</array>
 			<key>b3</key>
 			<array>
 				<string>Review &amp; Outlook (U.S.)</string>
+				<string>Review &amp; Outlook (Europe)</string>
+				<string>Review &amp; Outlook (Asia)</string>
 				<string>Letters</string>
 			</array>
 			<key>b4</key>
 			<array>
 				<string>Review &amp; Outlook (U.S.)</string>
+				<string>Review &amp; Outlook (Europe)</string>
+				<string>Review &amp; Outlook (Asia)</string>
 				<string>Letters</string>
 			</array>
 			<key>b5</key>

@@ -7,18 +7,21 @@
 			{#h1:	{options:{highlight_light:true}}},
 			{ if: =portrait, then: {
 					#articles:	{ frame: [8, 10, 460, 610] },
-					#b1:	{ frame: [0, 0, 460, 314], options:{rando:true} },
+					#b1:	{ frame: [0, 0, 460, 314], options:{header:true} },
 					#b3:	 { frame: [486, 2, 280, 615], options:{small_headline:true, show_image:true, no_border:true} }
 				}, else: {
 					#articles:	{ frame: [16, 10, 460, 610] },
-					#b1:	{ frame: [0, 0, 460, 314], options:{rando:true} },
+					#b1:	{ frame: [0, 0, 460, 314], options:{header:true} },
 					#b3:	{ frame: [496, 2, 280, 615], options:{small_headline:true, show_image:true, no_border:true} }
 				}	
 			},
 			{ $switch: [
+				{ if: =articles.b1.type, equals: "Letters", then: {
+                    #b99999: {}
+                }},
 				{ if: =articles.b2.type, equals: "Letters", then: {
 			 		_comment: "b2 has the header",
-					#b2 : { frame: [0, 314, 460, 286], options: {letters: true} }
+					#b2 : { frame: [0, 314, 460, 286], options: {header: true} }
 				}},
 				{ if: true, then: {
 					_comment: "no header",

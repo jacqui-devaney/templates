@@ -7,12 +7,12 @@
 			{#h1:	{options:{highlight_light:true}}},
 			{	if: =portrait, then: {
 					#articles:	{ frame: [8, 10, 460, 610] },
-					#b1:	{ frame: [0, 0, 460, 220], options:{rando:true} },
+					#b1:	{ frame: [0, 0, 460, 220], options:{header:true} },
 					#b4:	{ frame: [486, 2, 280, 400], options:{small_headline:true, show_image:true, no_border:true} },
 					#b5:	{ frame: [486, 402, 280, 216], options:{small_headline:true, no_border:true} }
 				}, else: {
 					#articles:	{ frame: [16, 10, 460, 610] },
-					#b1:	{ frame: [0, 0, 460, 220], options:{rando:true} },
+					#b1:	{ frame: [0, 0, 460, 220], options:{header:true} },
 					#b4:	{ frame: [496, 2, 280, 400], options:{small_headline:true, show_image:true, no_border:true} },
 					#b5:	{ frame: [496, 402, 280, 216], options:{small_headline:true, no_border:true} }
 			
@@ -21,13 +21,13 @@
 			{ $switch: [
 				{ if: =articles.b2.type, equals: "Letters", then: {
 					_comment: "b2 has the header",
-					#b2: { frame: [0, 220, 460, 210], options: {letters: true} },
+					#b2: { frame: [0, 220, 460, 210], options:{header:true} },
 					#b3: { frame: [0, 440, 460, 160] }
 				}},
 				{ if: =articles.b3.type, equals: "Letters", then: {
 					_comment: "b3 has the header",
 					#b2: { frame: [0, 230, 460, 180] },
-					#b3: { frame: [0, 410, 460, 190], options: {letters: true} }
+					#b3: { frame: [0, 410, 460, 190], options:{header:true} }
 				}}, 
 				{ if: true, then: {
 					_comment: "neither have the header",

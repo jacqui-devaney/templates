@@ -1,13 +1,105 @@
 <jpml id="TEST-3-borders_template">
     <style src="GLOBAL-stylesheet.ejs"/>
 	<style>{
-		if: =portrait, then: {
-			#b1: {frame:[0, 0, 768, 1024]}
-		}, else: {
-			#b1: {frame:[0, 0, 1024, 768]}
-		
-		}
+        #b1: {
+            padding: [10],
+            left: 0,
+            top: 0,
+            right: 0,
+            bottom: 0
+        },
+        
+        #container: {
+            frame: {if: =portrait, 
+                then: [0, 0, 768, 876],
+                else: [0, 0, 1024, 620]
+            }
+        },
+        
+        #inner: {
+            padding: [1],
+            border-color: red,
+            border-width: [1],
+            left: 0,
+            top: 0,
+            right: 0,
+            bottom: 0
+        },            
+            
+        .vert: {
+            padding: [1],
+            border-color: red,
+            border-width: [1, 0],
+            anchor-x: center
+        },
+        .horz: {
+            padding: [1],
+            border-color: red,
+            border-width: [0, 1],
+            anchor-y: middle
+        },
+        
+        #top: {
+            width: 7,
+            anchor-y: top
+        },
+        #bottom: {
+            width: 7,
+            anchor-y: bottom
+        },
+        #left: {
+            height: 7,
+            anchor-x: left
+        },
+        #right: {
+            height: 7,
+            anchor-x: right
+        }
 	}</style>
-	<box id="b1" embed="article" module="TEST-3-borders_module.xml"/>
+    <box id="container">
+      <box id="inner">
+        <box class="vert" id="top">
+            <box class="vert">
+            <box class="vert">
+            <box class="vert">
+            <box class="vert">
+            </box>
+            </box>
+            </box>
+            </box>
+        </box>
+        <box class="vert" id="bottom">
+            <box class="vert">
+            <box class="vert">
+            <box class="vert">
+            <box class="vert">
+            </box>
+            </box>
+            </box>
+            </box>
+        </box>
+        <box class="horz" id="left">
+            <box class="horz">
+            <box class="horz">
+            <box class="horz">
+            <box class="horz">
+            </box>
+            </box>
+            </box>
+            </box>
+        </box>
+        <box class="horz" id="right">
+            <box class="horz">
+            <box class="horz">
+            <box class="horz">
+            <box class="horz">
+            </box>
+            </box>
+            </box>
+            </box>
+        </box>
+        <box id="b1" embed="article" module="TEST-3-borders_module.xml"/>
+      </box>
+    </box>
 </jpml>
 

@@ -7,12 +7,12 @@
 			{#h1:	{options:{highlight_light:true}}},
 			{	if: =portrait, then: {
 					#articles:	{ frame: [8, 10, 362, 610] },
-					#b1:	{ frame: [0, 0, 362, 150], options:{rando:true} },
+					#b1:	{ frame: [0, 0, 362, 150], options:{header:true} },
 					#b5:	{ frame: [388, 2, 377, 420], options:{small_headline:true, show_image:{if: =scale.small, then:false, else:true}, show_image_skinny:{if: =scale.small, then:true, else:false}, no_border:true} },
 					#b6:	{ frame: [388, 422, 377, 196], options:{small_headline:true, no_border:true} }
 				}, else: {
 					#articles:	{ frame: [15, 10, 362, 610] },
-					#b1:	{ frame: [0, 0, 362, 150], options:{rando:true} },
+					#b1:	{ frame: [0, 0, 362, 150], options:{header:true} },
 					#b5:	{ frame: [399, 2, 377, 420], options:{small_headline:true, show_image:{if: =scale.small, then:false, else:true}, show_image_skinny:{if: =scale.small, then:true, else:false}, no_border:true} },
 					#b6:	{ frame: [399, 422, 377, 196], options:{small_headline:true, no_border:true} }
 			
@@ -21,14 +21,14 @@
 			{ $switch: [
 				{ if: =articles.b2.type, equals: "Letters", then: {
 					_comment: "b2 has the header",
-					#b2: { frame: [0, 150, 362, 170], options: {letters: true} },
+					#b2: { frame: [0, 150, 362, 170], options:{header:true} },
 					#b3: { frame: [0, 330, 362, 130] },
 					#b4: { frame: [0, 470, 362, 130] }
 				}},
 				{ if: =articles.b3.type, equals: "Letters", then: {
 					_comment: "b3 has the header",
 					#b2: { frame: [0, 160, 362, 140] },
-					#b3: { frame: [0, 300, 362, 170], options: {letters: true} },
+					#b3: { frame: [0, 300, 362, 170], options:{header:true} },
 					#b4: { frame: [0, 480, 362, 120] }
 					
 				}}, 
@@ -36,7 +36,7 @@
 					_comment: "b4 has the header",
 					#b2: { frame: [0, 160, 362, 140] },
 					#b3: { frame: [0, 310, 362, 140] },
-					#b4: { frame: [0, 460, 362, 140], options: {letters: true} }
+					#b4: { frame: [0, 460, 362, 140], options:{header:true} }
 					
 				}}, 
 				{ if: true, then: {

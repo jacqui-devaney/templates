@@ -15,7 +15,7 @@
 						{if: =scale.small, then: [0, 257, 569, 362]},
 						{if: =scale.large, then: [0, 188, 569, 432]}
 					]},
-					options:{normal_headline:true} 
+					options:{normal_headline:true, fake_deco:true} 
 			},
 			#b3:	{ frame: [583, 0, 183, 324], options:{small_headline:true, no_border:true, left:true, show_image:true} },
 			#b4:	{ frame: [583, 325, 183, 294], options:{small_headline:true, left:true} },

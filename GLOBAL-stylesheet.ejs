@@ -30,7 +30,7 @@
 
 	}},
 	{.front_ad: {
-		background-image:url(front-page-ad.png),
+		background-image:{if: =scale.small, then:url(front-page-ad-small.jpg), else:url(front-page-ad.png)},
 		background-position:center
 	}},
 	{#ad: {

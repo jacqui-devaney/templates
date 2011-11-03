@@ -19,6 +19,10 @@
 				}
 			},
 			{ $switch: [
+				{ if: =articles.b1.type, equals: "Letters", then: {
+					_comment: "no header",
+					#b2 : { frame: [0, 324, 460, 276] }
+                }},
 				{ if: =articles.b2.type, equals: "Letters", then: {
 					_comment: "b2 has the header",
 					#b2: { frame: [0, 314, 460, 286], options:{header:true} }

@@ -5,35 +5,35 @@
         if: =portrait, then: {
             #b1: 	{ 
 						frame: {$switch: [
-							{if: =scale.small, then: [194, 26, 571, 254]},
+							{if: =scale.small, then: [194, 26, 571, 234]},
 							{if: =scale.large, then: [194, 26, 571, 173]}
 						]},
 						options:{large_headline:true, no_border:true} 
 			},
             #deco: 	{ 
 						frame: {$switch: [
-							{if: =scale.small, then: [194, 281, 571, 257]},
+							{if: =scale.small, then: [194, 261, 571, 257]},
 							{if: =scale.large, then: [194, 199, 571, 307]}
 						]},
 						options:{normal_headline:true} 
 			},
             #b2: 	{ 
 						frame: {$switch: [
-							{if: =scale.small, then: [194, 538, 280, 169]},
+							{if: =scale.small, then: [194, 518, 280, 178]},
 							{if: =scale.large, then: [194, 518, 280, 179]}
 						]},
 						options:{small_headline:true} 
 			},
             #b3: 	{ 
 						frame: {$switch: [
-							{if: =scale.small, then: [194, 707, 280, 169]},
+							{if: =scale.small, then: [194, 697, 280, 178]},
 							{if: =scale.large, then: [194, 697, 280, 179]}
 						]},
 						options:{small_headline:true, bottom:true}  
 			},
             #b4: 	{
 						frame: {$switch: [
-							{if: =scale.small, then: [486, 538, 280, 338]},
+							{if: =scale.small, then: [486, 518, 280, 356]},
 							{if: =scale.large, then: [486, 518, 280, 358]}
 					]}
 			}

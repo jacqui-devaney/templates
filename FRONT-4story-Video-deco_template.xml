@@ -49,28 +49,28 @@
 			},
 			#deco:	{
 			 			frame: {$switch: [
-							{if: =scale.small, then: [496, 28, 322, 358]},
+							{if: =scale.small, then: [496, 28, 322, 348]},
 							{if: =scale.large, then: [205, 228, 569, 391]}
 						]},
 						options:{normal_headline:true, no_border:{if: =scale.small, then:true, else:false}} 
 			},
 			#b2:	{ 
 						frame: {$switch: [
-							{if: =scale.small, then: [496, 388, 322, 230]},
+							{if: =scale.small, then: [496, 378, 322, 240]},
 							{if: =scale.large, then: [787, 26, 237, 202]}
 						]},
-						options:{small_headline:true, no_border:true} 
+						options:{small_headline:true, no_border:{if: =scale.small, then:false, else:true}} 
 			},
 			#b3:	{ 
 						frame: {$switch: [
-							{if: =scale.small, then: [830, 28, 193, 358]},
+							{if: =scale.small, then: [830, 28, 193, 294]},
 							{if: =scale.large, then: [787, 228, 237, 194]}
 						]},
 						options:{small_headline:true, no_border:{if: =scale.small, then:true, else:false}} 
 			},
 			#b4:	{ 
 						frame: {$switch: [
-							{if: =scale.small, then: [830, 388, 193, 230]},
+							{if: =scale.small, then: [830, 322, 193, 294]},
 							{if: =scale.large, then: [787, 424, 237, 194]}
 						]},
 						options:{small_headline:true} 

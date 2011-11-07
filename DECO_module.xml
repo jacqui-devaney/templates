@@ -41,6 +41,7 @@
 			{#deco_small_headline: { display: { if: =options.small_headline, then:inherit }}},
 			{.deco_caption: {
 				max-height: { if: =options.fake_deco, then:35, else:55},
+				min-height: 25,
 				display: { if: =options.no_caption, then:none, else:inherit }
 			}}
 		]

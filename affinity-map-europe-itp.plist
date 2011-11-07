@@ -264,6 +264,17 @@
 				<string>Deco Summary Liondoor Europe</string>
 			</array>
 		</dict>
+		<key>FRONT-4story-E-deco_template</key>
+		<dict>
+			<key>b1</key>
+			<array>
+				<true/>
+			</array>
+			<key>deco</key>
+			<array>
+				<string>Deco Summary Liondoor Europe</string>
+			</array>
+		</dict>
 		<key>FRONT-4story-E-top_template</key>
 		<dict>
 			<key>b1</key>
@@ -1082,6 +1093,56 @@
 				<string>Review &amp;amp; Outlook (Europe)</string>
 				<string>Opinion</string>
 				<string>Review &amp;amp; Outlook (U.S.)</string>
+			</array>
+			<key>h2</key>
+			<array>
+				<string>Mobile Tablet Highlight2A</string>
+				<string>Mobile Tablet Highlight2B</string>
+				<string>Business Europe</string>
+				<string>Global View</string>
+				<string>Business World</string>
+				<string>Declarations</string>
+				<string>The Saturday Interview</string>
+				<string>Information Age</string>
+				<string>Wonderland</string>
+				<string>Main Street</string>
+			</array>
+		</dict>
+		<key>OPINION-4story-1E_template</key>
+		<dict>
+			<key>b1</key>
+			<array>
+				<string>Review &amp; Outlook (Europe)</string>
+				<string>Review &amp; Outlook (Asia)</string>
+				<string>Review &amp; Outlook (U.S.)</string>
+				<string>Letters</string>
+			</array>
+			<key>b2</key>
+			<array>
+				<string>Review &amp; Outlook (Europe)</string>
+				<string>Review &amp; Outlook (Asia)</string>
+				<string>Review &amp; Outlook (U.S.)</string>
+				<string>Letters</string>
+			</array>
+			<key>b3</key>
+			<array>
+				<string>Review &amp; Outlook (Europe)</string>
+				<string>Review &amp; Outlook (Asia)</string>
+				<string>Review &amp; Outlook (U.S.)</string>
+				<string>Letters</string>
+			</array>
+			<key>b4</key>
+			<array>
+				<true/>
+			</array>
+			<key>h1</key>
+			<array>
+				<string>Mobile Tablet Highlight1A</string>
+				<string>Mobile Tablet Highlight1B</string>
+				<string>Opinion Europe</string>
+				<string>Review &amp; Outlook (Europe)</string>
+				<string>Opinion</string>
+				<string>Review &amp; Outlook (U.S.)</string>
 			</array>
 			<key>h2</key>
 			<array>

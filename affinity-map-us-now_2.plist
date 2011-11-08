@@ -1,0 +1,1466 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>BUSINESS_AND_FINANCE</key>
+	<dict>
+		<key>SECTION-3story-G-marketdata_template</key>
+		<dict>
+			<key>b1</key>
+			<array>
+				<false/>
+			</array>
+			<key>h1</key>
+			<array/>
+			<key>h2</key>
+			<array/>
+		</dict>
+		<key>SECTION-3story-G_template</key>
+		<dict>
+			<key>b1</key>
+			<array>
+				<false/>
+			</array>
+			<key>h1</key>
+			<array/>
+			<key>h2</key>
+			<array/>
+		</dict>
+		<key>SECTION-4story-D-C-marketdata_template</key>
+		<dict>
+			<key>b1</key>
+			<array>
+				<false/>
+			</array>
+			<key>h1</key>
+			<array/>
+			<key>h2</key>
+			<array/>
+		</dict>
+		<key>SECTION-4story-D-C_template</key>
+		<dict>
+			<key>b1</key>
+			<array>
+				<false/>
+			</array>
+			<key>h1</key>
+			<array/>
+			<key>h2</key>
+			<array/>
+		</dict>
+		<key>SECTION-4story-smallG-top_template</key>
+		<dict>
+			<key>b1</key>
+			<array>
+				<false/>
+			</array>
+			<key>h1</key>
+			<array/>
+			<key>h2</key>
+			<array/>
+		</dict>
+	</dict>
+	<key>FRIDAY_JOURNAL</key>
+	<dict>
+		<key>CONTINUATION-fancy-6_template</key>
+		<dict>
+			<key>deco</key>
+			<array>
+				<string>Deco Summary Liondoor FridayCont1</string>
+			</array>
+		</dict>
+		<key>SECTION-1story-P-1highlight-white_template</key>
+		<dict>
+			<key>b1</key>
+			<array>
+				<false/>
+			</array>
+			<key>h3</key>
+			<array/>
+		</dict>
+		<key>SECTION-1story-P-1highlight_template</key>
+		<dict>
+			<key>b1</key>
+			<array>
+				<false/>
+			</array>
+			<key>h3</key>
+			<array/>
+		</dict>
+		<key>SECTION-1story-PV-1highlight_template</key>
+		<dict>
+			<key>b1</key>
+			<array>
+				<false/>
+			</array>
+			<key>h3</key>
+			<array/>
+		</dict>
+		<key>SECTION-1story-PV-white_template</key>
+		<dict>
+			<key>b1</key>
+			<array>
+				<false/>
+			</array>
+			<key>h1</key>
+			<array/>
+			<key>h2</key>
+			<array/>
+		</dict>
+		<key>SECTION-1story-PV_template</key>
+		<dict>
+			<key>b1</key>
+			<array>
+				<false/>
+			</array>
+			<key>h1</key>
+			<array/>
+			<key>h2</key>
+			<array/>
+		</dict>
+		<key>SECTION-1story-P_template</key>
+		<dict>
+			<key>b1</key>
+			<array>
+				<false/>
+			</array>
+			<key>h1</key>
+			<array/>
+			<key>h2</key>
+			<array/>
+		</dict>
+		<key>SECTION-2story-G-C_template</key>
+		<dict>
+			<key>b1</key>
+			<array>
+				<false/>
+			</array>
+			<key>h1</key>
+			<array/>
+			<key>h2</key>
+			<array/>
+		</dict>
+		<key>SECTION-3story-G_template</key>
+		<dict>
+			<key>b1</key>
+			<array>
+				<false/>
+			</array>
+			<key>h1</key>
+			<array/>
+			<key>h2</key>
+			<array/>
+		</dict>
+	</dict>
+	<key>FRONT_SECTION</key>
+	<dict>
+		<key>CONTINUATION-fancy-6_template</key>
+		<dict>
+			<key>deco</key>
+			<array>
+				<string>Deco Summary Liondoor FrontCont1</string>
+			</array>
+		</dict>
+		<key>FRONT-3story-G-deco_template</key>
+		<dict>
+			<key>b1</key>
+			<array/>
+			<key>b3</key>
+			<array/>
+			<key>deco</key>
+			<array>
+				<string>Mobile Vid of the Day</string>
+			</array>
+		</dict>
+		<key>FRONT-4story-E-deco_template</key>
+		<dict>
+			<key>b1</key>
+			<array>
+				<true/>
+			</array>
+			<key>b5</key>
+			<array/>
+			<key>deco</key>
+			<array>
+				<string>Mobile Vid of the Day</string>
+			</array>
+		</dict>
+		<key>FRONT-4story-E-top_template</key>
+		<dict>
+			<key>b1</key>
+			<array/>
+			<key>b4</key>
+			<array/>
+		</dict>
+		<key>FRONT-4story-E_template</key>
+		<dict>
+			<key>b1</key>
+			<array/>
+			<key>b2</key>
+			<array/>
+			<key>b4</key>
+			<array/>
+		</dict>
+		<key>FRONT-4story-F-deco_template</key>
+		<dict>
+			<key>b1</key>
+			<array/>
+			<key>b6</key>
+			<array/>
+			<key>deco</key>
+			<array>
+				<string>Mobile Vid of the Day</string>
+			</array>
+		</dict>
+		<key>FRONT-4story-F_template</key>
+		<dict>
+			<key>b1</key>
+			<array/>
+			<key>b4</key>
+			<array/>
+		</dict>
+		<key>FRONT-4story-Vertical-deco_template</key>
+		<dict>
+			<key>b1</key>
+			<array/>
+			<key>b4</key>
+			<array/>
+			<key>deco</key>
+			<array>
+				<string>Mobile Vid of the Day</string>
+			</array>
+		</dict>
+		<key>FRONT-4story-Video-deco_template</key>
+		<dict>
+			<key>deco</key>
+			<array>
+				<string>Mobile Vid of the Day</string>
+			</array>
+		</dict>
+		<key>FRONT-5story-F-deco_template</key>
+		<dict>
+			<key>b1</key>
+			<array/>
+			<key>b5</key>
+			<array/>
+			<key>deco</key>
+			<array>
+				<string>Mobile Vid of the Day</string>
+			</array>
+		</dict>
+	</dict>
+	<key>MARKETPLACE</key>
+	<dict>
+		<key>CONTINUATION-fancy-bottom-6_template</key>
+		<dict>
+			<key>deco</key>
+			<array>
+				<string>Deco Summary Liondoor MarketplaceCont1</string>
+			</array>
+		</dict>
+		<key>SECTION-3story-G-deco-C_template</key>
+		<dict>
+			<key>b1</key>
+			<array>
+				<false/>
+			</array>
+			<key>deco</key>
+			<array>
+				<string>Deco Summary Liondoor Section 1</string>
+				<string>Deco Summary Liondoor Marketplace</string>
+			</array>
+			<key>h1</key>
+			<array/>
+			<key>h2</key>
+			<array/>
+		</dict>
+		<key>SECTION-3story-G_template</key>
+		<dict>
+			<key>b1</key>
+			<array>
+				<false/>
+			</array>
+			<key>h1</key>
+			<array/>
+			<key>h2</key>
+			<array/>
+		</dict>
+		<key>SECTION-4story-2D-C_template</key>
+		<dict>
+			<key>b1</key>
+			<array>
+				<false/>
+			</array>
+			<key>h1</key>
+			<array/>
+			<key>h2</key>
+			<array/>
+		</dict>
+		<key>SECTION-4story-smallG-deco_template</key>
+		<dict>
+			<key>b1</key>
+			<array>
+				<false/>
+			</array>
+			<key>deco</key>
+			<array>
+				<string>Deco Summary Liondoor Section 1</string>
+				<string>Deco Summary Liondoor Marketplace</string>
+			</array>
+			<key>h1</key>
+			<array/>
+			<key>h2</key>
+			<array/>
+		</dict>
+		<key>SECTION-4story-smallG-top_template</key>
+		<dict>
+			<key>b1</key>
+			<array/>
+			<key>h1</key>
+			<array/>
+			<key>h2</key>
+			<array/>
+		</dict>
+	</dict>
+	<key>MONEY_AND_INVESTING</key>
+	<dict>
+		<key>CONTINUATION-fancy-6_template</key>
+		<dict>
+			<key>deco</key>
+			<array>
+				<string>Deco Summary Liondoor MoneyCont1</string>
+			</array>
+		</dict>
+		<key>SECTION-3story-G-marketdata_template</key>
+		<dict>
+			<key>b1</key>
+			<array>
+				<false/>
+			</array>
+			<key>h1</key>
+			<array/>
+			<key>h2</key>
+			<array/>
+		</dict>
+		<key>SECTION-3story-G_template</key>
+		<dict>
+			<key>b1</key>
+			<array>
+				<false/>
+			</array>
+			<key>h1</key>
+			<array/>
+			<key>h2</key>
+			<array/>
+		</dict>
+		<key>SECTION-4story-D-C-marketdata_template</key>
+		<dict>
+			<key>b1</key>
+			<array>
+				<false/>
+			</array>
+			<key>h1</key>
+			<array/>
+			<key>h2</key>
+			<array/>
+		</dict>
+		<key>SECTION-4story-D-C_template</key>
+		<dict>
+			<key>b1</key>
+			<array>
+				<false/>
+			</array>
+			<key>h1</key>
+			<array/>
+			<key>h2</key>
+			<array/>
+		</dict>
+		<key>SECTION-4story-smallG-deco_template</key>
+		<dict>
+			<key>b1</key>
+			<array>
+				<false/>
+			</array>
+			<key>deco</key>
+			<array>
+				<string>Deco Summary Liondoor Section 1</string>
+				<string>Deco Summary Liondoor Marketplace</string>
+			</array>
+			<key>h1</key>
+			<array/>
+			<key>h2</key>
+			<array/>
+		</dict>
+		<key>SECTION-4story-smallG-top_template</key>
+		<dict>
+			<key>b1</key>
+			<array/>
+			<key>h1</key>
+			<array/>
+			<key>h2</key>
+			<array/>
+		</dict>
+	</dict>
+	<key>NEW_YORK</key>
+	<dict>
+		<key>CONTINUATION-fancy-6_template</key>
+		<dict>
+			<key>deco</key>
+			<array>
+				<string>Deco Summary Liondoor NewYorkCont1</string>
+			</array>
+		</dict>
+		<key>SECTION-1story-P-1highlight-white_template</key>
+		<dict>
+			<key>b1</key>
+			<array>
+				<false/>
+			</array>
+			<key>h3</key>
+			<array/>
+		</dict>
+		<key>SECTION-1story-P-1highlight_template</key>
+		<dict>
+			<key>b1</key>
+			<array>
+				<false/>
+			</array>
+			<key>h3</key>
+			<array/>
+		</dict>
+		<key>SECTION-1story-PV-1highlight-white_template</key>
+		<dict>
+			<key>b1</key>
+			<array>
+				<false/>
+			</array>
+			<key>h3</key>
+			<array/>
+		</dict>
+		<key>SECTION-1story-PV-1highlight_template</key>
+		<dict>
+			<key>b1</key>
+			<array>
+				<false/>
+			</array>
+			<key>h3</key>
+			<array/>
+		</dict>
+		<key>SECTION-1story-PV-white_template</key>
+		<dict>
+			<key>b1</key>
+			<array>
+				<false/>
+			</array>
+			<key>h1</key>
+			<array>
+				<string>Mobile Tablet Highlight1A</string>
+				<string>Mobile Tablet Highlight1B</string>
+				<string>Metropolis</string>
+				<string>NY Page Two</string>
+				<string>Jason Gay</string>
+				<string>Urban Gardner</string>
+				<string>NY Transit</string>
+			</array>
+			<key>h2</key>
+			<array>
+				<string>Mobile Tablet Highlight2A</string>
+				<string>Mobile Tablet Highlight2B</string>
+				<string>NY Food</string>
+				<string>NY Heard &amp; Scene</string>
+				<string>NY Lunch Box</string>
+				<string>NY The Couch</string>
+			</array>
+		</dict>
+		<key>SECTION-1story-PV_template</key>
+		<dict>
+			<key>b1</key>
+			<array>
+				<false/>
+			</array>
+			<key>h1</key>
+			<array/>
+			<key>h2</key>
+			<array/>
+		</dict>
+		<key>SECTION-1story-P_template</key>
+		<dict>
+			<key>b1</key>
+			<array>
+				<false/>
+			</array>
+			<key>h1</key>
+			<array/>
+			<key>h2</key>
+			<array/>
+		</dict>
+		<key>SECTION-3story-G-deco-C_template</key>
+		<dict>
+			<key>b1</key>
+			<array>
+				<false/>
+			</array>
+			<key>deco</key>
+			<array>
+				<string>Deco Summary Liondoor Section 1</string>
+				<string>Deco Summary Liondoor New York</string>
+			</array>
+			<key>h1</key>
+			<array/>
+			<key>h2</key>
+			<array/>
+		</dict>
+		<key>SECTION-3story-G_template</key>
+		<dict>
+			<key>b1</key>
+			<array>
+				<false/>
+			</array>
+			<key>h1</key>
+			<array/>
+			<key>h2</key>
+			<array/>
+		</dict>
+		<key>SECTION-4story-smallG-deco_template</key>
+		<dict>
+			<key>b1</key>
+			<array>
+				<false/>
+			</array>
+			<key>deco</key>
+			<array>
+				<string>Deco Summary Liondoor Section 1</string>
+				<string>Deco Summary Liondoor New York</string>
+			</array>
+			<key>h1</key>
+			<array/>
+			<key>h2</key>
+			<array/>
+		</dict>
+		<key>SECTION-4story-smallG-top_template</key>
+		<dict>
+			<key>b1</key>
+			<array>
+				<true/>
+			</array>
+			<key>h1</key>
+			<array/>
+			<key>h2</key>
+			<array/>
+		</dict>
+	</dict>
+	<key>OPINION</key>
+	<dict>
+		<key>CONTINUATION-fancy-bottom-6_template</key>
+		<dict>
+			<key>deco</key>
+			<array>
+				<string>Deco Summary Liondoor OpinionCont1</string>
+			</array>
+		</dict>
+		<key>CONTINUATION-fancy-bottom-8_template</key>
+		<dict>
+			<key>deco</key>
+			<array>
+				<string>Deco Summary Liondoor OpinionCont1</string>
+			</array>
+		</dict>
+		<key>OPINION-2story-D_template</key>
+		<dict>
+			<key>b1</key>
+			<array>
+				<string>Review &amp; Outlook (U.S.)</string>
+				<string>Review &amp; Outlook (Europe)</string>
+				<string>Review &amp; Outlook (Asia)</string>
+				<string>Letters</string>
+			</array>
+			<key>b2</key>
+			<array>
+				<false/>
+			</array>
+			<key>h1</key>
+			<array>
+				<string>Mobile Tablet Highlight1A</string>
+				<string>Mobile Tablet Highlight1B</string>
+				<string>The Americas</string>
+				<string>Main Street</string>
+				<string>Business World</string>
+				<string>Wonder Land</string>
+				<string>Declarations</string>
+			</array>
+			<key>h2</key>
+			<array>
+				<string>Mobile Tablet Highlight2A</string>
+				<string>Mobile Tablet Highlight2B</string>
+				<string>John Fund on the Trail</string>
+				<string>Information Age</string>
+				<string>Global View</string>
+				<string>The Tilting Yard</string>
+				<string>Potomac Watch</string>
+				<string>Five Best</string>
+				<string>Bookshelf</string>
+			</array>
+		</dict>
+		<key>OPINION-2story-E_template</key>
+		<dict>
+			<key>b1</key>
+			<array>
+				<string>Review &amp; Outlook (U.S.)</string>
+				<string>Letters</string>
+			</array>
+			<key>b2</key>
+			<array>
+				<false/>
+			</array>
+			<key>h1</key>
+			<array>
+				<string>Mobile Tablet Highlight1A</string>
+				<string>Mobile Tablet Highlight1B</string>
+				<string>The Americas</string>
+				<string>Main Street</string>
+				<string>Business World</string>
+				<string>Wonder Land</string>
+				<string>Declarations</string>
+			</array>
+			<key>h2</key>
+			<array>
+				<string>Mobile Tablet Highlight2A</string>
+				<string>Mobile Tablet Highlight2B</string>
+				<string>John Fund on the Trail</string>
+				<string>Information Age</string>
+				<string>Global View</string>
+				<string>The Tilting Yard</string>
+				<string>Potomac Watch</string>
+				<string>Five Best</string>
+				<string>Bookshelf</string>
+			</array>
+		</dict>
+		<key>OPINION-3story-D_template</key>
+		<dict>
+			<key>b1</key>
+			<array>
+				<string>Review &amp; Outlook (U.S.)</string>
+				<string>Review &amp; Outlook (Asia)</string>
+				<string>Review &amp; Outlook (Europe)</string>
+				<string>Letters</string>
+			</array>
+			<key>b2</key>
+			<array>
+				<string>Review &amp; Outlook (U.S.)</string>
+				<string>Review &amp; Outlook (Europe)</string>
+				<string>Review &amp; Outlook (Asia)</string>
+				<string>Letters</string>
+			</array>
+			<key>b3</key>
+			<array>
+				<false/>
+			</array>
+			<key>h1</key>
+			<array>
+				<string>Mobile Tablet Highlight1A</string>
+				<string>Mobile Tablet Highlight1B</string>
+				<string>The Americas</string>
+				<string>Main Street</string>
+				<string>Business World</string>
+				<string>Wonder Land</string>
+				<string>Declarations</string>
+			</array>
+			<key>h2</key>
+			<array>
+				<string>Mobile Tablet Highlight2A</string>
+				<string>Mobile Tablet Highlight2B</string>
+				<string>John Fund on the Trail</string>
+				<string>Information Age</string>
+				<string>Global View</string>
+				<string>The Tilting Yard</string>
+				<string>Potomac Watch</string>
+				<string>Five Best</string>
+				<string>Bookshelf</string>
+			</array>
+		</dict>
+		<key>OPINION-3story-E_template</key>
+		<dict>
+			<key>b1</key>
+			<array>
+				<string>Review &amp; Outlook (U.S.)</string>
+				<string>Review &amp; Outlook (Asia)</string>
+				<string>Review &amp; Outlook (Europe)</string>
+				<string>Letters</string>
+			</array>
+			<key>b2</key>
+			<array>
+				<string>Review &amp; Outlook (U.S.)</string>
+				<string>Review &amp; Outlook (Europe)</string>
+				<string>Review &amp; Outlook (Asia)</string>
+				<string>Letters</string>
+			</array>
+			<key>b3</key>
+			<array>
+				<false/>
+			</array>
+			<key>h1</key>
+			<array>
+				<string>Mobile Tablet Highlight1A</string>
+				<string>Mobile Tablet Highlight1B</string>
+				<string>The Americas</string>
+				<string>Main Street</string>
+				<string>Business World</string>
+				<string>Wonder Land</string>
+				<string>Declarations</string>
+			</array>
+			<key>h2</key>
+			<array>
+				<string>Mobile Tablet Highlight2A</string>
+				<string>Mobile Tablet Highlight2B</string>
+				<string>John Fund on the Trail</string>
+				<string>Information Age</string>
+				<string>Global View</string>
+				<string>The Tilting Yard</string>
+				<string>Potomac Watch</string>
+				<string>Five Best</string>
+				<string>Bookshelf</string>
+			</array>
+		</dict>
+		<key>OPINION-4story-D_template</key>
+		<dict>
+			<key>b1</key>
+			<array>
+				<string>Review &amp; Outlook (U.S.)</string>
+				<string>Review &amp; Outlook (Europe)</string>
+				<string>Review &amp; Outlook (Asia)</string>
+				<string>Letters</string>
+			</array>
+			<key>b2</key>
+			<array>
+				<string>Review &amp; Outlook (U.S.)</string>
+				<string>Review &amp; Outlook (Europe)</string>
+				<string>Review &amp; Outlook (Asia)</string>
+				<string>Letters</string>
+			</array>
+			<key>b3</key>
+			<array>
+				<false/>
+			</array>
+			<key>b4</key>
+			<array>
+				<string>Political Diary</string>
+				<string>Commentary (U.S.)</string>
+			</array>
+			<key>h1</key>
+			<array>
+				<string>Mobile Tablet Highlight1A</string>
+				<string>Mobile Tablet Highlight1B</string>
+				<string>The Americas</string>
+				<string>Main Street</string>
+				<string>Business World</string>
+				<string>Wonder Land</string>
+				<string>Declarations</string>
+			</array>
+			<key>h2</key>
+			<array>
+				<string>Mobile Tablet Highlight2A</string>
+				<string>Mobile Tablet Highlight2B</string>
+				<string>John Fund on the Trail</string>
+				<string>Information Age</string>
+				<string>Global View</string>
+				<string>The Tilting Yard</string>
+				<string>Potomac Watch</string>
+				<string>Five Best</string>
+				<string>Bookshelf</string>
+			</array>
+		</dict>
+		<key>OPINION-4story-E_template</key>
+		<dict>
+			<key>b1</key>
+			<array>
+				<string>Review &amp; Outlook (U.S.)</string>
+				<string>Review &amp; Outlook (Europe)</string>
+				<string>Review &amp; Outlook (Asia)</string>
+				<string>Letters</string>
+			</array>
+			<key>b2</key>
+			<array>
+				<string>Review &amp; Outlook (U.S.)</string>
+				<string>Review &amp; Outlook (Europe)</string>
+				<string>Review &amp; Outlook (Asia)</string>
+				<string>Letters</string>
+			</array>
+			<key>b3</key>
+			<array>
+				<false/>
+			</array>
+			<key>b4</key>
+			<array>
+				<string>Political Diary</string>
+				<string>Commentary (U.S.)</string>
+			</array>
+			<key>h1</key>
+			<array>
+				<string>Mobile Tablet Highlight1A</string>
+				<string>Mobile Tablet Highlight1B</string>
+				<string>The Americas</string>
+				<string>Main Street</string>
+				<string>Business World</string>
+				<string>Wonder Land</string>
+				<string>Declarations</string>
+			</array>
+			<key>h2</key>
+			<array>
+				<string>Mobile Tablet Highlight2A</string>
+				<string>Mobile Tablet Highlight2B</string>
+				<string>John Fund on the Trail</string>
+				<string>Information Age</string>
+				<string>Global View</string>
+				<string>The Tilting Yard</string>
+				<string>Potomac Watch</string>
+				<string>Five Best</string>
+				<string>Bookshelf</string>
+			</array>
+		</dict>
+		<key>OPINION-5story-D_template</key>
+		<dict>
+			<key>b1</key>
+			<array>
+				<string>Review &amp; Outlook (U.S.)</string>
+				<string>Review &amp; Outlook (Europe)</string>
+				<string>Review &amp; Outlook (Asia)</string>
+				<string>Letters</string>
+			</array>
+			<key>b2</key>
+			<array>
+				<string>Review &amp; Outlook (U.S.)</string>
+				<string>Review &amp; Outlook (Europe)</string>
+				<string>Review &amp; Outlook (Asia)</string>
+				<string>Letters</string>
+			</array>
+			<key>b3</key>
+			<array>
+				<string>Review &amp; Outlook (U.S.)</string>
+				<string>Review &amp; Outlook (Europe)</string>
+				<string>Review &amp; Outlook (Asia)</string>
+				<string>Letters</string>
+			</array>
+			<key>b4</key>
+			<array>
+				<false/>
+			</array>
+			<key>b5</key>
+			<array>
+				<string>Political Diary</string>
+				<string>Commentary (U.S.)</string>
+			</array>
+			<key>h1</key>
+			<array>
+				<string>Mobile Tablet Highlight1A</string>
+				<string>Mobile Tablet Highlight1B</string>
+				<string>The Americas</string>
+				<string>Main Street</string>
+				<string>Business World</string>
+				<string>Wonder Land</string>
+				<string>Declarations</string>
+			</array>
+			<key>h2</key>
+			<array>
+				<string>Mobile Tablet Highlight2A</string>
+				<string>Mobile Tablet Highlight2B</string>
+				<string>John Fund on the Trail</string>
+				<string>Information Age</string>
+				<string>Global View</string>
+				<string>The Tilting Yard</string>
+				<string>Potomac Watch</string>
+				<string>Five Best</string>
+				<string>Bookshelf</string>
+			</array>
+		</dict>
+		<key>OPINION-5story-E_template</key>
+		<dict>
+			<key>b1</key>
+			<array>
+				<string>Review &amp; Outlook (U.S.)</string>
+				<string>Review &amp; Outlook (Europe)</string>
+				<string>Review &amp; Outlook (Asia)</string>
+				<string>Letters</string>
+			</array>
+			<key>b2</key>
+			<array>
+				<string>Review &amp; Outlook (U.S.)</string>
+				<string>Review &amp; Outlook (Europe)</string>
+				<string>Review &amp; Outlook (Asia)</string>
+				<string>Letters</string>
+			</array>
+			<key>b3</key>
+			<array>
+				<string>Review &amp; Outlook (U.S.)</string>
+				<string>Review &amp; Outlook (Europe)</string>
+				<string>Review &amp; Outlook (Asia)</string>
+				<string>Letters</string>
+			</array>
+			<key>b4</key>
+			<array>
+				<true/>
+			</array>
+			<key>b5</key>
+			<array>
+				<string>Political Diary</string>
+				<string>Commentary (U.S.)</string>
+			</array>
+			<key>h1</key>
+			<array>
+				<string>Mobile Tablet Highlight2A</string>
+				<string>Mobile Tablet Highlight2B</string>
+				<string>John Fund on the Trail</string>
+				<string>Information Age</string>
+				<string>Global View</string>
+				<string>The Tilting Yard</string>
+				<string>Potomac Watch</string>
+				<string>Five Best</string>
+				<string>BOTWT Mobile</string>
+				<string>Bookshelf</string>
+			</array>
+			<key>h2</key>
+			<array>
+				<string>Mobile Tablet Highlight1A</string>
+				<string>Mobile Tablet Highlight1B</string>
+				<string>The Americas</string>
+				<string>Main Street</string>
+				<string>Business World</string>
+				<string>Wonder Land</string>
+				<string>Declarations</string>
+			</array>
+		</dict>
+		<key>OPINION-6story-D_template</key>
+		<dict>
+			<key>b1</key>
+			<array>
+				<string>Review &amp; Outlook (U.S.)</string>
+				<string>Review &amp; Outlook (Europe)</string>
+				<string>Review &amp; Outlook (Asia)</string>
+				<string>Letters</string>
+			</array>
+			<key>b2</key>
+			<array>
+				<string>Review &amp; Outlook (U.S.)</string>
+				<string>Review &amp; Outlook (Europe)</string>
+				<string>Review &amp; Outlook (Asia)</string>
+				<string>Letters</string>
+			</array>
+			<key>b3</key>
+			<array>
+				<string>Review &amp; Outlook (U.S.)</string>
+				<string>Review &amp; Outlook (Europe)</string>
+				<string>Review &amp; Outlook (Asia)</string>
+				<string>Letters</string>
+			</array>
+			<key>b4</key>
+			<array>
+				<string>Review &amp; Outlook (U.S.)</string>
+				<string>Review &amp; Outlook (Europe)</string>
+				<string>Review &amp; Outlook (Asia)</string>
+				<string>Letters</string>
+			</array>
+			<key>b5</key>
+			<array>
+				<false/>
+			</array>
+			<key>b6</key>
+			<array>
+				<string>Political Diary</string>
+				<string>Commentary (U.S.)</string>
+			</array>
+			<key>h1</key>
+			<array>
+				<string>Mobile Tablet Highlight1A</string>
+				<string>Mobile Tablet Highlight1B</string>
+				<string>The Americas</string>
+				<string>Main Street</string>
+				<string>Business World</string>
+				<string>Wonder Land</string>
+				<string>Declarations</string>
+			</array>
+			<key>h2</key>
+			<array>
+				<string>Mobile Tablet Highlight2A</string>
+				<string>Mobile Tablet Highlight2B</string>
+				<string>John Fund on the Trail</string>
+				<string>Information Age</string>
+				<string>Global View</string>
+				<string>The Tilting Yard</string>
+				<string>Potomac Watch</string>
+				<string>Five Best</string>
+				<string>Bookshelf</string>
+			</array>
+		</dict>
+		<key>OPINION-6story-E_template</key>
+		<dict>
+			<key>b1</key>
+			<array>
+				<string>Review &amp; Outlook (U.S.)</string>
+				<string>Review &amp; Outlook (Europe)</string>
+				<string>Review &amp; Outlook (Asia)</string>
+				<string>Letters</string>
+			</array>
+			<key>b2</key>
+			<array>
+				<string>Review &amp; Outlook (U.S.)</string>
+				<string>Review &amp; Outlook (Europe)</string>
+				<string>Review &amp; Outlook (Asia)</string>
+				<string>Letters</string>
+			</array>
+			<key>b3</key>
+			<array>
+				<string>Review &amp; Outlook (U.S.)</string>
+				<string>Review &amp; Outlook (Europe)</string>
+				<string>Review &amp; Outlook (Asia)</string>
+				<string>Letters</string>
+			</array>
+			<key>b4</key>
+			<array>
+				<string>Review &amp; Outlook (U.S.)</string>
+				<string>Review &amp; Outlook (Europe)</string>
+				<string>Review &amp; Outlook (Asia)</string>
+				<string>Letters</string>
+			</array>
+			<key>b5</key>
+			<array>
+				<false/>
+			</array>
+			<key>b6</key>
+			<array>
+				<string>Political Diary</string>
+				<string>Commentary (U.S.)</string>
+			</array>
+			<key>h1</key>
+			<array>
+				<string>Mobile Tablet Highlight1A</string>
+				<string>Mobile Tablet Highlight1B</string>
+				<string>The Americas</string>
+				<string>Main Street</string>
+				<string>Business World</string>
+				<string>Wonder Land</string>
+				<string>Declarations</string>
+			</array>
+			<key>h2</key>
+			<array>
+				<string>Mobile Tablet Highlight2A</string>
+				<string>Mobile Tablet Highlight2B</string>
+				<string>John Fund on the Trail</string>
+				<string>Information Age</string>
+				<string>Global View</string>
+				<string>The Tilting Yard</string>
+				<string>Potomac Watch</string>
+				<string>Five Best</string>
+				<string>Bookshelf</string>
+			</array>
+		</dict>
+	</dict>
+	<key>PERSONAL_JOURNAL</key>
+	<dict>
+		<key>CONTINUATION-fancy-6_template</key>
+		<dict>
+			<key>deco</key>
+			<array>
+				<string>Deco Summary Liondoor PersonalCont1</string>
+			</array>
+		</dict>
+		<key>SECTION-1story-P-1highlight-white_template</key>
+		<dict>
+			<key>b1</key>
+			<array>
+				<false/>
+			</array>
+			<key>h3</key>
+			<array/>
+		</dict>
+		<key>SECTION-1story-P-1highlight_template</key>
+		<dict>
+			<key>b1</key>
+			<array>
+				<false/>
+			</array>
+			<key>h3</key>
+			<array/>
+		</dict>
+		<key>SECTION-1story-PV-1highlight-white_template</key>
+		<dict>
+			<key>b1</key>
+			<array>
+				<false/>
+			</array>
+			<key>h3</key>
+			<array/>
+		</dict>
+		<key>SECTION-1story-PV-1highlight_template</key>
+		<dict>
+			<key>b1</key>
+			<array>
+				<false/>
+			</array>
+			<key>h3</key>
+			<array/>
+		</dict>
+		<key>SECTION-1story-PV-white_template</key>
+		<dict>
+			<key>b1</key>
+			<array>
+				<false/>
+			</array>
+			<key>h1</key>
+			<array>
+				<string>Mobile Tablet Highlight1A</string>
+				<string>Mobile Tablet Highlight1B</string>
+				<string>Metropolis</string>
+				<string>NY Page Two</string>
+				<string>Jason Gay</string>
+				<string>Urban Gardner</string>
+				<string>NY Transit</string>
+			</array>
+			<key>h2</key>
+			<array>
+				<string>Mobile Tablet Highlight2A</string>
+				<string>Mobile Tablet Highlight2B</string>
+				<string>NY Food</string>
+				<string>NY Heard &amp; Scene</string>
+				<string>NY Lunch Box</string>
+				<string>NY The Couch</string>
+			</array>
+		</dict>
+		<key>SECTION-1story-PV_template</key>
+		<dict>
+			<key>b1</key>
+			<array>
+				<false/>
+			</array>
+			<key>h1</key>
+			<array/>
+			<key>h2</key>
+			<array/>
+		</dict>
+		<key>SECTION-1story-P_template</key>
+		<dict>
+			<key>b1</key>
+			<array>
+				<false/>
+			</array>
+			<key>h1</key>
+			<array/>
+			<key>h2</key>
+			<array/>
+		</dict>
+		<key>SECTION-3story-G-deco-C_template</key>
+		<dict>
+			<key>b1</key>
+			<array>
+				<false/>
+			</array>
+			<key>deco</key>
+			<array>
+				<string>Deco Summary Liondoor Section 1</string>
+				<string>Deco Summary Liondoor New York</string>
+			</array>
+			<key>h1</key>
+			<array/>
+			<key>h2</key>
+			<array/>
+		</dict>
+		<key>SECTION-3story-G_template</key>
+		<dict>
+			<key>b1</key>
+			<array>
+				<false/>
+			</array>
+			<key>h1</key>
+			<array/>
+			<key>h2</key>
+			<array/>
+		</dict>
+		<key>SECTION-4story-smallG-deco_template</key>
+		<dict>
+			<key>b1</key>
+			<array>
+				<false/>
+			</array>
+			<key>deco</key>
+			<array>
+				<string>Deco Summary Liondoor Section 1</string>
+				<string>Deco Summary Liondoor New York</string>
+			</array>
+			<key>h1</key>
+			<array/>
+			<key>h2</key>
+			<array/>
+		</dict>
+		<key>SECTION-4story-smallG-top_template</key>
+		<dict>
+			<key>b1</key>
+			<array>
+				<true/>
+			</array>
+			<key>h1</key>
+			<array/>
+			<key>h2</key>
+			<array/>
+		</dict>
+	</dict>
+	<key>THE_JOURNAL_REPORT</key>
+	<dict>
+		<key>CONTINUATION-fancy-bottom-6_template</key>
+		<dict>
+			<key>deco</key>
+			<array>
+				<string>Deco Summary Liondoor JournalReportCont1</string>
+			</array>
+		</dict>
+		<key>SECTION-1story-P-1highlight-white_template</key>
+		<dict>
+			<key>b1</key>
+			<array>
+				<false/>
+			</array>
+			<key>h3</key>
+			<array/>
+		</dict>
+		<key>SECTION-1story-P-1highlight_template</key>
+		<dict>
+			<key>b1</key>
+			<array>
+				<false/>
+			</array>
+			<key>h3</key>
+			<array/>
+		</dict>
+		<key>SECTION-1story-PV-1highlight-white_template</key>
+		<dict>
+			<key>b1</key>
+			<array>
+				<false/>
+			</array>
+			<key>h3</key>
+			<array/>
+		</dict>
+		<key>SECTION-1story-PV-1highlight_template</key>
+		<dict>
+			<key>b1</key>
+			<array>
+				<false/>
+			</array>
+			<key>h3</key>
+			<array/>
+		</dict>
+		<key>SECTION-1story-PV-white_template</key>
+		<dict>
+			<key>b1</key>
+			<array>
+				<false/>
+			</array>
+			<key>h1</key>
+			<array>
+				<string>Mobile Tablet Highlight1A</string>
+				<string>Mobile Tablet Highlight1B</string>
+				<string>Metropolis</string>
+				<string>NY Page Two</string>
+				<string>Jason Gay</string>
+				<string>Urban Gardner</string>
+				<string>NY Transit</string>
+			</array>
+			<key>h2</key>
+			<array>
+				<string>Mobile Tablet Highlight2A</string>
+				<string>Mobile Tablet Highlight2B</string>
+				<string>NY Food</string>
+				<string>NY Heard &amp; Scene</string>
+				<string>NY Lunch Box</string>
+				<string>NY The Couch</string>
+			</array>
+		</dict>
+		<key>SECTION-1story-PV_template</key>
+		<dict>
+			<key>b1</key>
+			<array>
+				<false/>
+			</array>
+			<key>h1</key>
+			<array/>
+			<key>h2</key>
+			<array/>
+		</dict>
+		<key>SECTION-1story-P_template</key>
+		<dict>
+			<key>b1</key>
+			<array>
+				<false/>
+			</array>
+			<key>h1</key>
+			<array/>
+			<key>h2</key>
+			<array/>
+		</dict>
+		<key>SECTION-3story-G-deco-C_template</key>
+		<dict>
+			<key>b1</key>
+			<array>
+				<false/>
+			</array>
+			<key>deco</key>
+			<array>
+				<string>Deco Summary Liondoor Section 1</string>
+				<string>Deco Summary Liondoor New York</string>
+			</array>
+			<key>h1</key>
+			<array/>
+			<key>h2</key>
+			<array/>
+		</dict>
+		<key>SECTION-3story-G_template</key>
+		<dict>
+			<key>b1</key>
+			<array>
+				<false/>
+			</array>
+			<key>h1</key>
+			<array/>
+			<key>h2</key>
+			<array/>
+		</dict>
+		<key>SECTION-4story-smallG-deco_template</key>
+		<dict>
+			<key>b1</key>
+			<array>
+				<false/>
+			</array>
+			<key>deco</key>
+			<array>
+				<string>Deco Summary Liondoor Section 1</string>
+				<string>Deco Summary Liondoor New York</string>
+			</array>
+			<key>h1</key>
+			<array/>
+			<key>h2</key>
+			<array/>
+		</dict>
+		<key>SECTION-4story-smallG-top_template</key>
+		<dict>
+			<key>b1</key>
+			<array>
+				<true/>
+			</array>
+			<key>h1</key>
+			<array/>
+			<key>h2</key>
+			<array/>
+		</dict>
+	</dict>
+	<key>WEEKEND_JOURNAL</key>
+	<dict>
+		<key>CONTINUATION-fancy-6_template</key>
+		<dict>
+			<key>deco</key>
+			<array>
+				<string>Deco Summary Liondoor MagCont1</string>
+			</array>
+		</dict>
+		<key>CONTINUATION-fancy-bottom-6_template</key>
+		<dict>
+			<key>deco</key>
+			<array>
+				<string>Deco Summary Liondoor MagCont2</string>
+				<string>Deco Summary Liondoor MagCont3</string>
+			</array>
+		</dict>
+		<key>SECTION-1story-P-1highlight-white_template</key>
+		<dict>
+			<key>b1</key>
+			<array>
+				<false/>
+			</array>
+			<key>h3</key>
+			<array/>
+		</dict>
+		<key>SECTION-1story-P-1highlight_template</key>
+		<dict>
+			<key>b1</key>
+			<array>
+				<false/>
+			</array>
+			<key>h3</key>
+			<array/>
+		</dict>
+		<key>SECTION-1story-PV-1highlight-white_template</key>
+		<dict>
+			<key>b1</key>
+			<array>
+				<false/>
+			</array>
+			<key>h3</key>
+			<array/>
+		</dict>
+		<key>SECTION-1story-PV-1highlight_template</key>
+		<dict>
+			<key>b1</key>
+			<array>
+				<false/>
+			</array>
+			<key>h3</key>
+			<array/>
+		</dict>
+		<key>SECTION-1story-PV-white_template</key>
+		<dict>
+			<key>b1</key>
+			<array>
+				<false/>
+			</array>
+			<key>h1</key>
+			<array>
+				<string>Mobile Tablet Highlight1A</string>
+				<string>Mobile Tablet Highlight1B</string>
+				<string>Metropolis</string>
+				<string>NY Page Two</string>
+				<string>Jason Gay</string>
+				<string>Urban Gardner</string>
+				<string>NY Transit</string>
+			</array>
+			<key>h2</key>
+			<array>
+				<string>Mobile Tablet Highlight2A</string>
+				<string>Mobile Tablet Highlight2B</string>
+				<string>NY Food</string>
+				<string>NY Heard &amp; Scene</string>
+				<string>NY Lunch Box</string>
+				<string>NY The Couch</string>
+			</array>
+		</dict>
+		<key>SECTION-1story-PV_template</key>
+		<dict>
+			<key>b1</key>
+			<array>
+				<false/>
+			</array>
+			<key>h1</key>
+			<array/>
+			<key>h2</key>
+			<array/>
+		</dict>
+		<key>SECTION-1story-P_template</key>
+		<dict>
+			<key>b1</key>
+			<array>
+				<false/>
+			</array>
+			<key>h1</key>
+			<array/>
+			<key>h2</key>
+			<array/>
+		</dict>
+		<key>SECTION-2story-G-C_template</key>
+		<dict>
+			<key>b1</key>
+			<array>
+				<false/>
+			</array>
+			<key>h1</key>
+			<array/>
+			<key>h2</key>
+			<array/>
+		</dict>
+	</dict>
+</dict>
+</plist>

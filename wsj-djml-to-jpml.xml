@@ -6,6 +6,7 @@
 <xsl:key name="srcid" match="image" use="@src-id" />
 <xsl:param name="subsection"></xsl:param>
 <xsl:param name="region"></xsl:param>
+<xsl:param name="issuetype"></xsl:param>
 
 <xsl:template match="/article-doc">
 <jpml>
@@ -67,7 +68,7 @@
   <xsl:when test="($region=&quot;US&quot; or $region=&quot;XAMLUS&quot;) and summary/alt-summary-body[@destination-type=&quot;THIS-ART&quot; and starts-with(@page,&quot;|Mobile|&quot;)]/headline/main-hed">
     <xsl:value-of select="summary/alt-summary-body[@destination-type=&quot;THIS-ART&quot; and starts-with(@page,&quot;|Mobile|&quot;)]/headline/main-hed" />
   </xsl:when>
-  <xsl:when test="summary/summary-body/headline/main-hed">
+  <xsl:when test="($region=&quot;US&quot; or $region=&quot;XAMLUS&quot; or $issuetype=&quot;NOW&quot;) and summary/summary-body/headline/main-hed">
      <xsl:value-of select="summary/summary-body/headline/main-hed" />
   </xsl:when>
   <xsl:otherwise>

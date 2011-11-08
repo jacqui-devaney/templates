@@ -21,7 +21,7 @@
 			]},
 			{#body: { 
 	            column-count: {$switch: [
-					{if: =scale.small, then: {$divide: [=view.width, {$multiply:[200, =scale.dpi]}]}},
+					{if: =scale.small, then: 1},
 					{if: =scale.large, then: {$divide: [=view.width, {$multiply:[250, =scale.dpi]}]}}
 					
 				]},

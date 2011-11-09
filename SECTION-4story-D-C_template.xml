@@ -3,10 +3,34 @@
 	<style src="SECTION-stylesheet.ejs" />
 	<style>{
 		if: =portrait, then: {
-			#b1:	{ frame: [8, 0, 556, 295], options:{large_headline:true, show_image:true} },
-			#b2:	{ frame: [0, 296, 571, 324], options:{medium_headline:true, bottom:true} },
-			#b3:	{ frame: [583, 0, 183, 295], options:{small_headline:true, no_border:true, left:true} },
-			#b4:	{ frame: [583, 296, 183, 324], options:{small_headline:true, show_image:true, left:true, bottom:true} },
+			#b1:	{ 
+						frame: {$switch: [
+						{if: =scale.small, then: [8, 0, 540, 295]},
+						{if: =scale.large, then: [11, 0, 556, 296]}
+					]},
+					options:{large_headline:true} 
+			},
+			#b2:	{ 
+						frame: {$switch: [
+						{if: =scale.small, then: [0, 296, 555, 324]},
+						{if: =scale.large, then: [0, 296, 571, 324]}
+					]},
+					options:{medium_headline:true, bottom:true} 
+			},
+			#b3:	{ 
+						frame: {$switch: [
+						{if: =scale.small, then: [567, 0, 199, 295]},
+						{if: =scale.large, then: [583, 0, 183, 295]}
+					]},
+					options:{small_headline:true, no_border:true, left:true} 
+			},
+			#b4:	{ 
+						frame: {$switch: [
+						{if: =scale.small, then: [567, 296, 199, 324]},
+						{if: =scale.large, then: [583, 296, 183, 324]}
+					]},
+					options:{small_headline:true, show_image:true, left:true, bottom:true} 
+			},
 			#h1: {options:{highlight_dark:true}},
 			#h2: {options:{highlight_dark:true}}
 		}, else: {
@@ -22,7 +46,7 @@
 						{if: =scale.small, then: [0, 346, 571, 274]},
 						{if: =scale.large, then: [0, 296, 571, 324]}
 					]},
-					options:{medium_headline:true, bottom:true} 
+					options:{medium_headline:true, bottom:true, two_columns:true} 
 			},
 			#b3:	{ 
 						frame: {$switch: [

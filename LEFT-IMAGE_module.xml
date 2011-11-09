@@ -36,8 +36,8 @@
 				position:relative,
 				width: 359,
 				padding: [0, 15, 8, 0 ],
-				pixels-per-point-x:{if: =scale.small, then:.9},
-				pixels-per-point-y:{if: =scale.small, then:.9},
+				pixels-per-point-x:{if: =scale.small, then:.75},
+				pixels-per-point-y:{if: =scale.small, then:.75},
 				image-scale:{if: =scale.small, then:.9}
 			}},
 			

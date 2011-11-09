@@ -4,27 +4,6 @@
 <dict>
 	<key>BUSINESS_AND_FINANCE</key>
 	<dict>
-		<key>SECTIOIN-4story-smallG-top_template</key>
-		<dict>
-			<key>b1</key>
-			<array>
-				<true/>
-			</array>
-			<key>h1</key>
-			<array>
-				<string>Mobile Tablet Highlight1A</string>
-				<string>Mobile Tablet Highlight1B</string>
-				<string>Ahead of the Tape</string>
-				<string>Weekend Investor</string>
-				<string>Heard on the Street</string>
-				<string>Advertising</string>
-			</array>
-			<key>h2</key>
-			<array>
-				<string>Mobile Tablet Highlight2A</string>
-				<string>Mobile Tablet Highlight2B</string>
-			</array>
-		</dict>
 		<key>SECTION-3story-G-deco-C_template</key>
 		<dict>
 			<key>b1</key>
@@ -138,6 +117,27 @@
 				<string>Mobile Tablet Highlight2B</string>
 			</array>
 		</dict>
+		<key>SECTION-4story-smallG-top_template</key>
+		<dict>
+			<key>b1</key>
+			<array>
+				<true/>
+			</array>
+			<key>h1</key>
+			<array>
+				<string>Mobile Tablet Highlight1A</string>
+				<string>Mobile Tablet Highlight1B</string>
+				<string>Ahead of the Tape</string>
+				<string>Weekend Investor</string>
+				<string>Heard on the Street</string>
+				<string>Advertising</string>
+			</array>
+			<key>h2</key>
+			<array>
+				<string>Mobile Tablet Highlight2A</string>
+				<string>Mobile Tablet Highlight2B</string>
+			</array>
+		</dict>
 	</dict>
 	<key>FRIDAY_JOURNAL</key>
 	<dict>
@@ -154,7 +154,7 @@
 			<array>
 				<true/>
 			</array>
-			<key>h3</key>
+			<key>h4</key>
 			<array>
 				<string>Mobile Tablet Highlight1A</string>
 				<string>Mobile Tablet Highlight1B</string>
@@ -178,7 +178,7 @@
 			<array>
 				<true/>
 			</array>
-			<key>h3</key>
+			<key>h4</key>
 			<array>
 				<string>Mobile Tablet Highlight1A</string>
 				<string>Mobile Tablet Highlight1B</string>
@@ -202,7 +202,7 @@
 			<array>
 				<true/>
 			</array>
-			<key>h3</key>
+			<key>h4</key>
 			<array>
 				<string>Mobile Tablet Highlight1A</string>
 				<string>Mobile Tablet Highlight1B</string>
@@ -226,7 +226,7 @@
 			<array>
 				<true/>
 			</array>
-			<key>h3</key>
+			<key>h4</key>
 			<array>
 				<string>Mobile Tablet Highlight1A</string>
 				<string>Mobile Tablet Highlight1B</string>
@@ -628,8 +628,8 @@
 			</array>
 			<key>deco</key>
 			<array>
-				<string>Deco Summary Liondoor Section 1</string>
 				<string>Deco Summary Liondoor Marketplace</string>
+				<string>Deco Summary Liondoor Section 1</string>
 			</array>
 			<key>h1</key>
 			<array>
@@ -762,8 +762,8 @@
 			</array>
 			<key>deco</key>
 			<array>
-				<string>Deco Summary Liondoor Section 1</string>
 				<string>Deco Summary Liondoor Marketplace</string>
+				<string>Deco Summary Liondoor Section 1</string>
 			</array>
 			<key>h1</key>
 			<array>
@@ -951,7 +951,7 @@
 			<array>
 				<true/>
 			</array>
-			<key>h3</key>
+			<key>h4</key>
 			<array>
 				<string>Mobile Tablet Highlight1A</string>
 				<string>Mobile Tablet Highlight1B</string>
@@ -963,7 +963,7 @@
 			<array>
 				<true/>
 			</array>
-			<key>h3</key>
+			<key>h4</key>
 			<array>
 				<string>Mobile Tablet Highlight1A</string>
 				<string>Mobile Tablet Highlight1B</string>
@@ -975,7 +975,7 @@
 			<array>
 				<true/>
 			</array>
-			<key>h3</key>
+			<key>h4</key>
 			<array>
 				<string>Mobile Tablet Highlight1A</string>
 				<string>Mobile Tablet Highlight1B</string>
@@ -1055,8 +1055,8 @@
 			</array>
 			<key>deco</key>
 			<array>
-				<string>Deco Summary Liondoor Section 1</string>
 				<string>Deco Summary Liondoor New York</string>
+				<string>Deco Summary Liondoor Section 1</string>
 			</array>
 			<key>h1</key>
 			<array>
@@ -1126,8 +1126,8 @@
 			</array>
 			<key>deco</key>
 			<array>
-				<string>Deco Summary Liondoor Section 1</string>
 				<string>Deco Summary Liondoor New York</string>
+				<string>Deco Summary Liondoor Section 1</string>
 			</array>
 			<key>h1</key>
 			<array>
@@ -1216,7 +1216,7 @@
 			<array>
 				<true/>
 			</array>
-			<key>h3</key>
+			<key>h4</key>
 			<array>
 				<string>Mobile Tablet Highlight1A</string>
 				<string>Mobile Tablet Highlight1B</string>
@@ -1233,7 +1233,7 @@
 			<array>
 				<true/>
 			</array>
-			<key>h3</key>
+			<key>h4</key>
 			<array>
 				<string>Mobile Tablet Highlight1A</string>
 				<string>Mobile Tablet Highlight1B</string>
@@ -1244,13 +1244,13 @@
 				<string>RunwayRealWay</string>
 			</array>
 		</dict>
-		<key>SECTION-1story-PV-1highlight-white_template </key>
+		<key>SECTION-1story-PV-1highlight-white_template</key>
 		<dict>
 			<key>b1</key>
 			<array>
 				<true/>
 			</array>
-			<key>h3</key>
+			<key>h4</key>
 			<array>
 				<string>Mobile Tablet Highlight1A</string>
 				<string>Mobile Tablet Highlight1B</string>
@@ -1267,7 +1267,7 @@
 			<array>
 				<true/>
 			</array>
-			<key>h3</key>
+			<key>h4</key>
 			<array>
 				<string>Mobile Tablet Highlight1A</string>
 				<string>Mobile Tablet Highlight1B</string>
@@ -1944,7 +1944,7 @@
 			<array>
 				<true/>
 			</array>
-			<key>h3</key>
+			<key>h4</key>
 			<array>
 				<string>Mobile Tablet Highlight1A</string>
 				<string>Mobile Tablet Highlight1B</string>
@@ -1965,7 +1965,7 @@
 			<array>
 				<true/>
 			</array>
-			<key>h3</key>
+			<key>h4</key>
 			<array>
 				<string>Mobile Tablet Highlight1A</string>
 				<string>Mobile Tablet Highlight1B</string>
@@ -1980,13 +1980,13 @@
 				<string>Off the Beaten Track</string>
 			</array>
 		</dict>
-		<key>SECTION-1story-PV-1highlight-white_template </key>
+		<key>SECTION-1story-PV-1highlight-white_template</key>
 		<dict>
 			<key>b1</key>
 			<array>
 				<true/>
 			</array>
-			<key>h3</key>
+			<key>h4</key>
 			<array>
 				<string>Mobile Tablet Highlight1A</string>
 				<string>Mobile Tablet Highlight1B</string>
@@ -2007,7 +2007,7 @@
 			<array>
 				<true/>
 			</array>
-			<key>h3</key>
+			<key>h4</key>
 			<array>
 				<string>Mobile Tablet Highlight1A</string>
 				<string>Mobile Tablet Highlight1B</string>
@@ -2293,7 +2293,7 @@
 			<array>
 				<true/>
 			</array>
-			<key>h3</key>
+			<key>h4</key>
 			<array>
 				<string>Mobile Tablet Highlight1A</string>
 				<string>Mobile Tablet Highlight1B</string>
@@ -2308,13 +2308,13 @@
 				<string>Television</string>
 			</array>
 		</dict>
-		<key>SECTION-1story-PV-1highlight-white_template </key>
+		<key>SECTION-1story-PV-1highlight-white_template</key>
 		<dict>
 			<key>b1</key>
 			<array>
 				<true/>
 			</array>
-			<key>h3</key>
+			<key>h4</key>
 			<array>
 				<string>Mobile Tablet Highlight1A</string>
 				<string>Mobile Tablet Highlight1B</string>
@@ -2335,7 +2335,7 @@
 			<array>
 				<true/>
 			</array>
-			<key>h3</key>
+			<key>h4</key>
 			<array>
 				<string>Mobile Tablet Highlight1A</string>
 				<string>Mobile Tablet Highlight1B</string>
@@ -2502,7 +2502,7 @@
 			<array>
 				<true/>
 			</array>
-			<key>h3</key>
+			<key>h4</key>
 			<array>
 				<string>Mobile Tablet Highlight1A</string>
 				<string>Mobile Tablet Highlight1B</string>
@@ -2514,7 +2514,7 @@
 			<array>
 				<true/>
 			</array>
-			<key>h3</key>
+			<key>h4</key>
 			<array>
 				<string>Mobile Tablet Highlight1A</string>
 				<string>Mobile Tablet Highlight1B</string>
@@ -2526,7 +2526,7 @@
 			<array>
 				<true/>
 			</array>
-			<key>h3</key>
+			<key>h4</key>
 			<array>
 				<string>Mobile Tablet Highlight1A</string>
 				<string>Mobile Tablet Highlight1B</string>
@@ -2538,7 +2538,7 @@
 			<array>
 				<true/>
 			</array>
-			<key>h3</key>
+			<key>h4</key>
 			<array>
 				<string>Mobile Tablet Highlight1A</string>
 				<string>Mobile Tablet Highlight1B</string>
@@ -2937,7 +2937,7 @@
 			<array>
 				<true/>
 			</array>
-			<key>h3</key>
+			<key>h4</key>
 			<array>
 				<string>Mobile Tablet Highlight1A</string>
 				<string>Mobile Tablet Highlight1B</string>
@@ -2949,19 +2949,19 @@
 			<array>
 				<true/>
 			</array>
-			<key>h3</key>
+			<key>h4</key>
 			<array>
 				<string>Mobile Tablet Highlight1A</string>
 				<string>Mobile Tablet Highlight1B</string>
 			</array>
 		</dict>
-		<key>SECTION-1story-PV-1highlight-white_template </key>
+		<key>SECTION-1story-PV-1highlight-white_template</key>
 		<dict>
 			<key>b1</key>
 			<array>
 				<true/>
 			</array>
-			<key>h3</key>
+			<key>h4</key>
 			<array>
 				<string>Mobile Tablet Highlight1A</string>
 				<string>Mobile Tablet Highlight1B</string>
@@ -2973,7 +2973,7 @@
 			<array>
 				<true/>
 			</array>
-			<key>h3</key>
+			<key>h4</key>
 			<array>
 				<string>Mobile Tablet Highlight1A</string>
 				<string>Mobile Tablet Highlight1B</string>

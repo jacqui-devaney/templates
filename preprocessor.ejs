@@ -54,7 +54,7 @@
 			justify: { if: =device.size, less-than: 8.8, then: left, else: justify },
 			ad: {
 				prefix: { $join: [
-					{ if: =issue.edition, then: =issue.edition, else: "us"},
+					{ $switch: [ =issue.edition, "us"] },
 					".",
 					{ $switch: [
 						{ if: =device.platform, equals: iOS, then: ipad },

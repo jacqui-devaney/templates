@@ -5,14 +5,14 @@
 		if: =portrait, then: {
 			#b1:	{ 
 						frame: {$switch: [
-							{if: =scale.small, then: [0, 0, 555, 620]},
+							{if: =scale.small, then: [0, 0, 514, 620]},
 							{if: =scale.large, then: [0, 0, 571, 620]}
 						]},
 						options:{large_headline:true, show_image:true, no_border:true, bottom:true} 
 			},
 			#b2:	{ 
 						frame: {$switch: [
-							{if: =scale.small, then: [567, 0, 199, 620]},
+							{if: =scale.small, then: [526, 0, 240, 620]},
 							{if: =scale.large, then: [583, 0, 183, 620]}
 						]},
 						options:{small_headline:true, show_image:true, no_border:true, left:true, bottom:true} 

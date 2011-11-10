@@ -12,21 +12,21 @@
 			},
 			#b2:	{ 
 						frame: {$switch: [
-						{if: =scale.small, then: [0, 265, 273, 355]},
+						{if: =scale.small, then: [0, 265, 256, 355]},
 						{if: =scale.large, then: [0, 198, 281, 422]}
 					]},
 					options:{small_headline:true, show_image:true, bottom:true} 
 			},
 			#b3:	{ 
 						frame: {$switch: [
-						{if: =scale.small, then: [284, 265, 273, 355]},
+						{if: =scale.small, then: [268, 265, 256, 355]},
 						{if: =scale.large, then: [292, 198, 281, 422]}
 					]},
 					options:{small_headline:true, bottom:true} 
 			},
 			#b4:	{ 
 						frame: {$switch: [
-						{if: =scale.small, then: [567, 265, 199, 355]},
+						{if: =scale.small, then: [536, 265, 230, 355]},
 						{if: =scale.large, then: [583, 198, 183, 422]}
 					]},
 					options:{small_headline:true, show_image:true, left:true, bottom:true} 

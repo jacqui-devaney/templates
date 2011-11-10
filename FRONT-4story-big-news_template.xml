@@ -3,37 +3,54 @@
 	<style src="FRONT-stylesheet.ejs" />
 	<style> {
 		if: =portrait, then: {
-			#b1:			{ frame: [8, 34, 752, 330], options:{bignews_big_headline:true, no_border:true} },
+			#b1:	{ 
+						frame: {$switch: [
+						{if: =scale.small, then: [8, 34, 752, 250]},
+						{if: =scale.large, then: [8, 34, 752, 330]}
+					]},
+					options:{bignews_big_headline:true, no_border:true} 
+			},
 			#b2:	{ 
 						frame: {$switch: [
-						{if: =scale.small, then: [194, 365, 361, 256]},
+						{if: =scale.small, then: [194, 286, 307, 293]},
 						{if: =scale.large, then: [194, 365, 377, 256]}
 					]},
 					options:{small_headline:true} 
 					},
 			#b3:	{ 
 						frame: {$switch: [
-						{if: =scale.small, then: [194, 621, 361, 255]},
+						{if: =scale.small, then: [194, 581, 307, 293]},
 						{if: =scale.large, then: [194, 621, 377, 255]}
 					]},
 					options:{small_headline:true} 
 			},
 			#b4:	{ 
 						frame: {$switch: [
-						{if: =scale.small, then: [566, 365, 199, 338]},
+						{if: =scale.small, then: [515, 286, 250, 418]},
 						{if: =scale.large, then: [582, 365, 183, 298]}
 					]},
 					options:{no_image:true, left:true, small_ahed:true} 
 			},
-			#whatsnews:		{ frame: [10, 365, 183, 522] },
+			#whatsnews:		{ 
+								frame: {$switch: [
+								{if: =scale.small, then: [10, 286, 183, 522]},
+								{if: =scale.large, then: [10, 365, 183, 522]}
+							]}
+			},
 			#ad_background:	{ 
 								frame: {$switch: [
-								{if: =scale.small, then: [566, 672, 199, 237]},
+								{if: =scale.small, then: [515, 672, 250, 217]},
 								{if: =scale.large, then: [582, 672, 183, 197]}
 							]}
 			}
 		}, else: {
-			#b1:			{ frame: [11, 34, 1002, 333], options:{bignews_huge_headline:true, no_border:true, bottom:true} },
+			#b1:	{
+			 			frame: {$switch: [
+						{if: =scale.small, then: [11, 34, 1002, 303]},
+						{if: =scale.large, then: [11, 34, 1002, 333]}
+					]},
+					options:{bignews_huge_headline:true, no_border:true, bottom:true} 
+			},
 			#b2:	{ 
 						frame: {$switch: [
 						{if: =scale.small, then: [205, 367, 199, 253]},

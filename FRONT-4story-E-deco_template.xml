@@ -12,14 +12,14 @@
 			},
             #deco: 	{ 
 						frame: {$switch: [
-						{if: =scale.small, then: [194, 259, 359, 290]},
+						{if: =scale.small, then: [194, 259, 328, 290]},
 						{if: =scale.large, then: [194, 229, 375, 321]}
 					]},	
 					options:{normal_headline:true} 
 			},
             #b2: 	{ 
 						frame: {$switch: [
-						{if: =scale.small, then: [567, 259, 199, 290]},
+						{if: =scale.small, then: [536, 259, 230, 290]},
 						{if: =scale.large, then: [583, 229, 183, 321]}
 					]},
 					options:{small_headline:true, left:true} 

@@ -11,14 +11,14 @@
 						options:{large_headline:true, show_image:true, no_border:true, bottom:true} },
 			#b2:	{ 
 						frame: {$switch: [
-						{if: =scale.small, then: [567, 0, 199, 324]},
+						{if: =scale.small, then: [567, 0, 240, 324]},
 						{if: =scale.large, then: [583, 0, 183, 324]}
 					]},
 					options:{small_headline:true, no_border:true, left:true, show_image:true} 
 			},
 			#b3:	{ 
 						frame: {$switch: [
-						{if: =scale.small, then: [567, 325, 199, 294]},
+						{if: =scale.small, then: [567, 325, 240, 294]},
 						{if: =scale.large, then: [583, 325, 183, 294]}
 					]},
 					options:{small_headline:true, left:true} 

@@ -4,7 +4,7 @@
 	<style>{
         $join: [
 			{jpml: {
-				padding:[0, 0, {if: =options.bottom, then:20, else:10}, 8]
+				padding:[0, 0, 8, 8]
 			}},
 			{ $switch: [
 				{ if: =options.no_border, then: {
@@ -26,7 +26,7 @@
 			{#headline: {padding:[2, 0, 0, 0]}
 			},
 			{#body: { 
-	            column-count: {$divide: [=view.width, {$multiply:[450, =scale.dpi]}]},
+	            column-count: {$divide: [=view.width, {$multiply:[350, =scale.dpi]}]},
 	            column-gutter: 15
 	        }},
 			{#image_wrapper: { 
@@ -36,9 +36,8 @@
 				position:relative,
 				width: 359,
 				padding: [0, 15, 8, 0 ],
-				pixels-per-point-x:{if: =scale.small, then:.75},
-				pixels-per-point-y:{if: =scale.small, then:.75},
-				image-scale:{if: =scale.small, then:.9}
+				pixels-per-point-x:{if: =scale.small, then:.7},
+				pixels-per-point-y:{if: =scale.small, then:.7}
 			}},
 			
 			{#image_container: { 

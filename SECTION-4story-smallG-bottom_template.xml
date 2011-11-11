@@ -8,7 +8,7 @@
 						{if: =scale.small, then: [0, 0, 504, 257]},
 						{if: =scale.large, then: [0, 0, 571, 188]}
 					]},
-					options:{large_headline:true, no_border:true} 
+					options:{large_headline:true, no_border:true, byline:{if: =scale.small, then:true, else:false}} 
 			},
 			#b2:	{ 
 						frame: {$switch: [
@@ -40,7 +40,7 @@
 						{if: =scale.small, then: [11, 0, 571, 250]},
 						{if: =scale.large, then: [11, 0, 571, 188]}
 					]},
-					options:{large_headline:true, no_border:true} 
+					options:{large_headline:true, no_border:true, byline:{if: =scale.small, then:true, else:false}} 
 			},
 			#b2:	{ 
 						frame: {$switch: [
@@ -51,8 +51,8 @@
 					},
 			#b3:	{ frame: [594, 0, 183, 328], options:{small_headline:true, no_border:true, left:true, show_image:true} },
 			#b4:	{ frame: [594, 328, 183, 291], options:{small_headline:true, left:true, bottom:true} },
-			#h1: {options:{highlight_dark:true}},
-			#h2: {options:{highlight_dark:true}}
+			#h1: {options:{highlight_dark:true, hide_image:true}},
+			#h2: {options:{highlight_dark:true, hide_image:true}}
 			
 		}
 	}</style>

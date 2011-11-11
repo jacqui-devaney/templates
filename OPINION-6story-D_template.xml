@@ -3,18 +3,18 @@
 	<style src="OPINION-stylesheet.ejs" />
     <style>
 		{ $join: [
-			{#h2:	{options:{highlight_light:true}}},
-			{#h1:	{options:{highlight_light:true}}},
+			{#h2:	{options:{highlight_light:true, byline:true, hide_flashline:true}}},
+			{#h1:	{options:{highlight_light:true, byline:true, hide_flashline:true}}},
 			{	if: =portrait, then: {
 					#articles:	{ frame: [8, 10, 460, 610] },
 					#b1:	{ frame: [0, 0, 460, 150], options:{header:true} },
-					#b5:	{ frame: [486, 2, 280, 400], options:{small_headline:true, show_image:true, no_border:true} },
-					#b6:	{ frame: [486, 402, 280, 216], options:{small_headline:true, no_border:true} }
+					#b5:	{ frame: [486, 2, 280, 400], options:{small_headline:true, show_image:true, no_border:true, byline:{if: =scale.small, then:true, else:false}} },
+					#b6:	{ frame: [486, 402, 280, 216], options:{small_headline:true, no_border:true, byline:{if: =scale.small, then:true, else:false}} }
 				}, else: {
 					#articles:	{ frame: [15, 10, 361, 610] },
 					#b1:	{ frame: [0, 0, 460, 150], options:{header:true} },
-					#b5:	{ frame: [496, 2, 280, 400], options:{small_headline:true, show_image:true, no_border:true} },
-					#b6:	{ frame: [496, 402, 280, 216], options:{small_headline:true, no_border:true} }
+					#b5:	{ frame: [496, 2, 280, 400], options:{small_headline:true, show_image:true, no_border:true, byline:{if: =scale.small, then:true, else:false}} },
+					#b6:	{ frame: [496, 402, 280, 216], options:{small_headline:true, no_border:true, byline:{if: =scale.small, then:true, else:false}} }
 			
 				}
 			},

@@ -8,7 +8,7 @@
 							{if: =scale.small, then: [194, 28, 571, 143]},
 							{if: =scale.large, then: [194, 26, 571, 143]}
 						]},
-						options:{large_headline:true, no_border:true}
+						options:{large_headline:true, no_border:true, byline:{if: =scale.small, then:true, else:false}}
 			},
 			#deco:			{ frame: [194, 169, 571, 307], options:{normal_headline:true} },
 			#b2:			{ frame: [194, 476, 280, 152], options:{small_headline:true} },
@@ -21,7 +21,7 @@
 							{if: =scale.small, then: [205, 28, 377, 272]},
 							{if: =scale.large, then: [205, 26, 571, 143]}
 						]},
-						options:{large_headline:true, no_border:true} 
+						options:{large_headline:true, no_border:true, byline:{if: =scale.small, then:true, else:false}} 
 				},
 			#deco:	{ 
 						frame: {$switch: [

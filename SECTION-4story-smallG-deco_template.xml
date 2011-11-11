@@ -8,7 +8,7 @@
 						{if: =scale.small, then: [0, 0, 475, 292]},
 						{if: =scale.large, then: [0, 0, 475, 211]}
 					]},
-					options:{large_headline:true, no_border:true} 
+					options:{large_headline:true, no_border:true, byline:{if: =scale.small, then:true, else:false}} 
 			},
 			#deco:	{ 
 						frame: {$switch: [
@@ -28,7 +28,7 @@
 						{if: =scale.small, then: [3, 0, 475, 242]},
 						{if: =scale.large, then: [3, 0, 475, 207]}
 					]},
-					options:{large_headline:true, no_border:true} 
+					options:{large_headline:true, no_border:true, byline:{if: =scale.small, then:true, else:false}} 
 			},
 			#deco:	{ 
 						frame: {$switch: [
@@ -40,8 +40,8 @@
 			#b2:	{ frame: [494, 0, 280, 207], options:{small_headline:true} },
 			#b3:	{ frame: [494, 207, 280, 207], options:{small_headline:true, border:true} },
 			#b4:	{ frame: [494, 412, 280, 207], options:{small_headline:true, border:true} },
-			#h1: {options:{highlight_dark:true}},
-			#h2: {options:{highlight_dark:true}}
+			#h1: {options:{highlight_dark:true, hide_image:true}},
+			#h2: {options:{highlight_dark:true, hide_image:true}}
 		}
 	}</style>
 	

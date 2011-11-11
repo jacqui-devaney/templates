@@ -8,7 +8,7 @@
 						{if: =scale.small, then: [194, 26, 571, 232]},
 						{if: =scale.large, then: [194, 26, 571, 203]}
 					]},
-					options:{large_headline:true, no_border:true} 
+					options:{large_headline:true, no_border:true, byline:{if: =scale.small, then:true, else:false}} 
 			},
             #deco: 	{ 
 						frame: {$switch: [
@@ -40,7 +40,7 @@
 						{if: =scale.small, then: [205, 26, 571, 220]},
 						{if: =scale.large, then: [205, 26, 571, 247]}
 					]},
-					options:{large_headline:true, no_border:true} 
+					options:{large_headline:true, no_border:true, byline:{if: =scale.small, then:true, else:false}} 
 			},
             #deco:	{ 
 					frame: {$switch: [

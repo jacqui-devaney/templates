@@ -72,7 +72,7 @@
 				else: {$switch: [ {if: =scale.small, then: 828}, {if: =scale.large, then: 1024} ]}
 			},
 			height: {if: =portrait, 
-			                then: {$switch: [ {if: =scale.small, then: 828}, {if: =scale.large, then: {if: =intent.section, then: 876, else: 899}} ]},
+			                then: {$switch: [ {if: =scale.small, then: 702}, {if: =scale.large, then: {if: =intent.section, then: 876, else: 899}} ]},
 			                else: {$switch: [ {if: =scale.small, then: 488}, {if: =scale.large, then: {if: =intent.section, then: 620, else: 643}} ]}
 			}
 		}},

@@ -8,7 +8,7 @@
 									{if: =scale.small, then: [194, 26, 328, 548]},
 									{if: =scale.large, then: [194, 26, 375, 548]}
 								]},
-								options:{large_headline:true, show_image:true, no_border:true} 
+								options:{large_headline:true, show_image:true, no_border:true, byline:{if: =scale.small, then:true, else:false}} 
 							},
 			#b2:			{ 
 								frame: {$switch: [
@@ -25,7 +25,7 @@
 									{if: =scale.small, then: [205, 26, 359, 596]},
 									{if: =scale.large, then: [205, 26, 375, 596]}
 								]},
-								options:{large_headline:true, show_image:true, no_border:true, bottom:true}  
+								options:{large_headline:true, show_image:true, no_border:true, bottom:true, byline:{if: =scale.small, then:true, else:false}}  
 							},
 			#b2:			{ 
 								frame: {$switch: [

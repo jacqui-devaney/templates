@@ -3,16 +3,16 @@
 	<style src="OPINION-stylesheet.ejs" />
     <style>{ 
 		$join: [
-			{#h2:	{options:{highlight_light:true}}},
-			{#h1:	{options:{highlight_light:true}}},
+			{#h2:	{options:{highlight_light:true, byline:true, hide_flashline:true}}},
+			{#h1:	{options:{highlight_light:true, byline:true, hide_flashline:true}}},
 			{ if: =portrait, then: {
 					#articles:	{ frame: [8, 10, 362, 610] },
 					#b1:	{ frame: [0, 0, 362, 314], options:{header:true} },
-					#b3:	 { frame: [388, 2, 377, 615], options:{small_headline:true, show_image:true, no_border:true} }
+					#b3:	 { frame: [388, 2, 377, 615], options:{small_headline:true, show_image:true, no_border:true, byline:{if: =scale.small, then:true, else:false}} }
 				}, else: {
 					#articles:	{ frame: [19, 10, 362, 610] },
 					#b1:	{ frame: [0, 0, 362, 314], options:{header:true} },
-					#b3:	{ frame: [399, 2, 377, 615], options:{small_headline:true, show_image:true, no_border:true} }
+					#b3:	{ frame: [399, 2, 377, 615], options:{small_headline:true, show_image:true, no_border:true, byline:{if: =scale.small, then:true, else:false}} }
 				}	
 			},
 			{ $switch: [

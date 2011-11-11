@@ -44,7 +44,13 @@
 		{.invisible: { display:none }},
 		{#small_headline: { display: { if: =options.small_headline, then:inherit }}},
 		{#medium_headline: { display: { if: =options.medium_headline, then:inherit }}},
-		{#large_headline: { display: { if: =options.large_headline, then:inherit }}}
+		{#large_headline: { display: { if: =options.large_headline, then:inherit }}},
+		{.byline: {display: {$switch: [
+			{if: =scale.small, then:{if: =options.byline, then:inherit, else:none}},
+			{if: =scale.large, then: inherit}
+		]}}},
+		{.body: {padding:{if: =options.byline, then:[0], else:[3, 0, 0, 0]}}}
+		
 		]
 	}</style>
    	<box id="wrapper">

@@ -22,7 +22,7 @@
 						{if: =scale.small, then: [194, 581, 307, 293]},
 						{if: =scale.large, then: [194, 621, 377, 255]}
 					]},
-					options:{small_headline:true} 
+					options:{small_headline:true, byline:{if: =scale.small, then:true, else:false}} 
 			},
 			#b4:	{ 
 						frame: {$switch: [
@@ -35,7 +35,15 @@
 								frame: {$switch: [
 								{if: =scale.small, then: [10, 286, 183, 522]},
 								{if: =scale.large, then: [10, 365, 183, 522]}
-							]}
+							]},
+							options: { expanded-frame: [
+								{$multiply:[=scale.pagex, 3]}, 
+								{$multiply:[=scale.pagey, 286]}, 
+								{$multiply:[=scale.pagex, 550]}, 
+								{$multiply:[=scale.pagey, 522]}
+							] } 
+							
+							
 			},
 			#ad_background:	{ 
 								frame: {$switch: [
@@ -46,10 +54,10 @@
 		}, else: {
 			#b1:	{
 			 			frame: {$switch: [
-						{if: =scale.small, then: [11, 34, 1002, 303]},
+						{if: =scale.small, then: [11, 34, 1002, 333]},
 						{if: =scale.large, then: [11, 34, 1002, 333]}
 					]},
-					options:{bignews_huge_headline:true, no_border:true, bottom:true} 
+					options:{bignews_huge_headline:true, no_border:true, bottom:true, byline:{if: =scale.small, then:true, else:false}} 
 			},
 			#b2:	{ 
 						frame: {$switch: [
@@ -72,7 +80,16 @@
 					]},
 					options:{no_image:true, left:true, small_ahed:true} 
 			},
-			#whatsnews:		{ frame: [11, 367, 183, 253] },
+			#whatsnews:		{ 
+								frame: [11, 367, 183, 253],
+			 					options: { expanded-frame: [
+									{$multiply:[=scale.pagex, 3]}, 
+									{$multiply:[=scale.pagey, 367]}, 
+									{$multiply:[=scale.pagex, 550]}, 
+									{$multiply:[=scale.pagey, 253]}
+								] } 
+								
+			},
 			#ad_background:		{ frame: {$switch: [
 									{if: =scale.small, then: [833, 385, 183, 197]},
 									{if: =scale.large, then: [809, 385, 183, 197]}

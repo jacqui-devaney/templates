@@ -4,14 +4,14 @@
     <style>{
 		if: =portrait, then: {
 			#b1:	{ frame: [8, 10, 362, 600], options:{header:true} },
-			#b2:	{ frame: [388, 2, 377, 615], options:{small_headline:true, show_image:true, no_border:true} },
-			#h2:	{options:{highlight_light:true}},
-			#h1:	{options:{highlight_light:true}}
+			#b2:	{ frame: [388, 2, 377, 615], options:{small_headline:true, show_image:true, no_border:true, byline:{if: =scale.small, then:true, else:false}} },
+			#h2:	{options:{highlight_light:true, byline:true, hide_flashline:true}},
+			#h1:	{options:{highlight_light:true, byline:true, hide_flashline:true}}
 		}, else: {
 			#b1:	{ frame: [19, 10, 362, 600], options:{header:true} },
-			#b2:	{ frame: [399, 2, 377, 618], options:{small_headline:true, show_image:true, no_border:true} },
-			#h2:	{options:{highlight_light:true}},
-			#h1:	{options:{highlight_light:true}}
+			#b2:	{ frame: [399, 2, 377, 618], options:{small_headline:true, show_image:true, no_border:true, byline:{if: =scale.small, then:true, else:false}} },
+			#h2:	{options:{highlight_light:true, byline:true, hide_flashline:true}},
+			#h1:	{options:{highlight_light:true, byline:true, hide_flashline:true}}
 		}
 		        
     }</style>

@@ -61,7 +61,7 @@
 					]},
 					options:{small_headline:true, show_image:true, left:true, bottom:true} 
 			},
-			#h2: {options:{highlight_dark:true}}
+			#h2: {options:{highlight_dark:true, hide_image:true}}
 		}
 	}</style>
 	

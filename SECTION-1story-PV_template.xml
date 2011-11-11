@@ -8,8 +8,8 @@
 			#h2: {options:{highlight_dark:true}}
 		}, else: {
 			#b1:	{ frame: [0, 0, 768, 620] },
-			#h1: { frame: [768, 0, 256, 216] },
-			#h2: 	{ frame: [768, 216, 256, 207] }
+			#h1: { frame: [768, 0, 256, 216], options:{hide_image:true} },
+			#h2: 	{ frame: [768, 216, 256, 207], options:{hide_image:true} }
 			
 		}
 	}</style>

@@ -2,6 +2,13 @@
 	<templates>
 		<!-- FRONT SECTION -->
 		<template 
+			name="FRONT-4story-E-top_template.xml" 
+			title="4 stoyr - E top photo" 
+			section="FRONT_SECTION" 
+			min="4" 
+			usage="front" 
+		/>
+		<template 
 			name="FRONT-4story-Video-deco_template.xml" 
 			title="4 story - Video deco" 
 			section="FRONT_SECTION" 
@@ -13,28 +20,28 @@
 
 		<!-- OPINION -->
 		<template 
-			name="OPINION-5story-D_template.xml" 
+			name="OPINION-5story-E_template.xml" 
 			title="7 story (3R and O-2CMTRY-3HLT)" 
 			section="OPINION" 
 			min="7" 
 			usage="front" 
 		/>
 		<template 
-			name="OPINION-4story-D_template.xml" 
+			name="OPINION-4story-E_template.xml" 
 			title="6 story (2R and O-2CMTRY-2HLT)" 
 			section="OPINION" 
 			min="6" 
 			usage="front" 
 		/>
 		<template 
-			name="OPINION-3story-D_template.xml" 
+			name="OPINION-3story-E_template.xml" 
 			title="5 story (2R and O-1CMTRY-2HLT)" 
 			section="OPINION" 
 			min="5" 
 			usage="front" 
 		/>
 		<template 
-			name="OPINION-2story-D_template.xml" 
+			name="OPINION-2story-E_template.xml" 
 			title="4 story (1R and O-1CMTRY-2HLT)" 
 			section="OPINION" 
 			min="4" 
@@ -236,6 +243,14 @@
 			min="4" 
 			usage="front" 
 		/>
+		<template 
+			name="SECTION-1story-PV-white_template.xml" 
+			title="PV (white highlights)" 
+			section="THE_JOURNAL_REPORT" 
+			min="3" 
+			usage="front" 
+		/>
+		
 		<!-- END ANALYSE -->
 
 		<!-- FANCY CONTINUATION -->

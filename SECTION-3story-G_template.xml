@@ -14,14 +14,14 @@
 					{if: =scale.small, then: [516, 0, 250, 324]},
 					{if: =scale.large, then: [583, 0, 183, 324]}
 				]},
-				options:{small_headline:true, no_border:true, left:true, show_image:true} 
+				options:{small_headline:true, no_border:true, left:true, show_image:true, no_indent:true} 
 		},
 		#b3:	{ 
 					frame: {$switch: [
 					{if: =scale.small, then: [516, 325, 250, 294]},
 					{if: =scale.large, then: [583, 325, 183, 294]}
 				]},
-				options:{small_headline:true, left:true} 
+				options:{small_headline:true, left:true, no_indent:true} 
 		},
 			#h1: {options:{highlight_dark:true}},
 			#h2: {options:{highlight_dark:true}}
@@ -29,24 +29,24 @@
 		}, else: {
 			#b1:	{ 
 						frame: {$switch: [
-						{if: =scale.small, then: [11, 0, 557, 618]},
+						{if: =scale.small, then: [11, 0, 571, 618]},
 						{if: =scale.large, then: [11, 0, 571, 618]}
 					]},
-					options:{large_headline:true, show_image:{if: =scale.small, then:false, else:true}, show_image_skinny:{if: =scale.small, then:true, else:false}, no_border:true, bottom:true, byline:{if: =scale.small, then:true, else:false}} 
+					options:{large_headline:true, show_image:true, show_skinny_image:{if: =scale.small, then:true, else:false}, no_border:true, bottom:true, byline:{if: =scale.small, then:true, else:false}} 
 			},
 			#b2:	{ 
 						frame: {$switch: [
-						{if: =scale.small, then: [580, 0, 197, 320]},
+						{if: =scale.small, then: [594, 0, 183, 320]},
 						{if: =scale.large, then: [594, 0, 183, 320]}
 					]},
-					options:{small_headline:true, no_border:true, left:true, show_image:true} 
+					options:{small_headline:true, no_border:true, left:true, show_image:true, no_indent:true} 
 			},
 			#b3:	{ 
 						frame: {$switch: [
-						{if: =scale.small, then: [580, 320, 197, 298]},
+						{if: =scale.small, then: [594, 320, 183, 298]},
 						{if: =scale.large, then: [594, 320, 183, 298]}
 					]},
-					options:{small_headline:true, left:true, bottom:true} 
+					options:{small_headline:true, left:true, bottom:true, no_indent:true} 
 			},
 			#h1: {options:{highlight_dark:true, hide_image:true}},
 			#h2: {options:{highlight_dark:true, hide_image:true}}

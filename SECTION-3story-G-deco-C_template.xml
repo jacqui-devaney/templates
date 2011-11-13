@@ -22,14 +22,14 @@
 						{if: =scale.small, then: [526, 0, 240, 324]},
 						{if: =scale.large, then: [583, 0, 183, 324]}
 					]},
-					options:{small_headline:true, no_border:true, left:true, show_image:true} 
+					options:{small_headline:true, no_border:true, left:true, show_image:true, no_indent:true} 
 			},
 			#b3:	{ 
 						frame: {$switch: [
 						{if: =scale.small, then: [526, 325, 240, 294]},
 						{if: =scale.large, then: [583, 325, 183, 294]}
 					]},
-					options:{small_headline:true, left:true} 
+					options:{small_headline:true, left:true, no_indent:true} 
 			},
 			#h1: {options:{highlight_dark:true}},
 			#h2: {options:{highlight_dark:true}}
@@ -49,8 +49,8 @@
 					]}, 
 						options:{normal_headline:true} 
 					},
-			#b2:	{ frame: [594, 0, 183, 328], options:{small_headline:true, no_border:true, left:true, show_image:true} },
-			#b3:	{ frame: [594, 328, 183, 291], options:{small_headline:true, left:true, bottom:true} },
+			#b2:	{ frame: [594, 0, 183, 328], options:{small_headline:true, no_border:true, left:true, show_image:true, no_indent:true} },
+			#b3:	{ frame: [594, 328, 183, 291], options:{small_headline:true, left:true, bottom:true, no_indent:true} },
 			#h1: {options:{highlight_dark:true, hide_image:true}},
 			#h2: {options:{highlight_dark:true, hide_image:true}}
 			

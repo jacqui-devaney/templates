@@ -41,8 +41,11 @@
 		},
 		#ahed: {
 			display: { if: =article.type, equals: A-hed, then: inherit, else: none }
-		}
-		
+		},
+		.ahed_byline: {display: {$switch: [
+			{if: =scale.small, then:{if: =options.byline, then:inherit, else:none}},
+			{if: =scale.large, then: inherit}
+		]}}
 
 
     }</style>

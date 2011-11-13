@@ -56,7 +56,12 @@
 					]},
 					options:{small_headline:true, left:true, bottom:true} 
 			},
-            #b3: 	{ frame: [787, 26, 238, 247], options:{small_headline:true, no_border:true} },
+            #b3: 	{ frame: {$switch: [
+							{if: =scale.small, then: [787, 26, 238, 220]},
+							{if: =scale.large, then: [787, 26, 238, 247]}
+						]},
+						options:{small_headline:true, no_border:true} 
+			},
             #b4: 	{frame: {$switch: [
 							{if: =scale.small, then: [787, 248, 238, 370]},
 							{if: =scale.large, then: [787, 270, 238, 345]}

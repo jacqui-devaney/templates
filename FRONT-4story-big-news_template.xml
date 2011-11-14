@@ -38,9 +38,9 @@
 							]},
 							options: { expanded-frame: [
 								{$multiply:[=scale.pagex, 3]}, 
-								{$multiply:[=scale.pagey, 286]}, 
+								{$multiply:[=scale.pagey, 28]}, 
 								{$multiply:[=scale.pagex, 550]}, 
-								{$multiply:[=scale.pagey, 522]}
+								{$multiply:[=scale.pagey, 860]}
 							] } 
 							
 							
@@ -84,9 +84,9 @@
 								frame: [11, 367, 183, 253],
 			 					options: { expanded-frame: [
 									{$multiply:[=scale.pagex, 3]}, 
-									{$multiply:[=scale.pagey, 367]}, 
+									{$multiply:[=scale.pagey, 28]}, 
 									{$multiply:[=scale.pagex, 550]}, 
-									{$multiply:[=scale.pagey, 253]}
+									{$multiply:[=scale.pagey, 593]}
 								] } 
 								
 			},

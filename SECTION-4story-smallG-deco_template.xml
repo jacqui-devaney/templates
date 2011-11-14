@@ -40,8 +40,8 @@
 			#b2:	{ frame: [494, 0, 280, 207], options:{small_headline:true, no_indent:true} },
 			#b3:	{ frame: [494, 207, 280, 207], options:{small_headline:true, border:true, no_indent:true} },
 			#b4:	{ frame: [494, 412, 280, 207], options:{small_headline:true, border:true, no_indent:true} },
-			#h1: {options:{highlight_dark:true, hide_image:true}},
-			#h2: {options:{highlight_dark:true, hide_image:true}}
+			#h1: {options:{highlight_dark:true, hide_image:{if: =scale.small, then:true, else:false}}},
+			#h2: {options:{highlight_dark:true, hide_image:{if: =scale.small, then:true, else:false}}}
 		}
 	}</style>
 	

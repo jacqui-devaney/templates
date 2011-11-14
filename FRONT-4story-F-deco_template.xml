@@ -22,20 +22,21 @@
 							{if: =scale.small, then: [194, 518, 280, 178]},
 							{if: =scale.large, then: [194, 518, 280, 179]}
 						]},
-						options:{small_headline:true} 
+						options:{small_headline:true, no_indent:true} 
 			},
             #b3: 	{ 
 						frame: {$switch: [
 							{if: =scale.small, then: [194, 697, 280, 178]},
 							{if: =scale.large, then: [194, 697, 280, 179]}
 						]},
-						options:{small_headline:true, bottom:true}  
+						options:{small_headline:true, bottom:true, no_indent:true}  
 			},
             #b4: 	{
 						frame: {$switch: [
 							{if: =scale.small, then: [486, 518, 280, 356]},
 							{if: =scale.large, then: [486, 518, 280, 358]}
-					]}
+					]},
+					options:{no_indent:true}
 			}
         }, else: {
 		#b1:	{ 
@@ -57,20 +58,21 @@
 						{if: =scale.small, then: [592, 26, 238, 272]},
 						{if: =scale.large, then: [205, 506, 571, 114]}
 					]},
-					options:{small_headline:true, bottom:true} 
+					options:{small_headline:true, bottom:true, no_indent:true} 
 				},
 		#b3:	{ 
 					frame: {$switch: [
 						{if: =scale.small, then: [592, 300, 238, 315]},
 						{if: =scale.large, then: [787, 26, 237, 201]}
 					]},
-					options:{small_headline:true, no_border:{if: =scale.small, then:false, else:true}} 
+					options:{small_headline:true, no_border:{if: =scale.small, then:false, else:true}, no_indent:true} 
 					
 		},
 		#b4:	{ frame: {$switch: [
 						{if: =scale.small, then: [840, 26, 183, 592]},
 						{if: =scale.large, then: [787, 227, 237, 394]}
-				]}}
+				]}},
+				options:{no_indent:true}
         }
     }</style>
     <box id="marketstrap" embed="marketstrap" />

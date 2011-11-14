@@ -20,28 +20,28 @@
 							{if: =scale.small, then: [486, 28, 280, 485]},
 							{if: =scale.large, then: [486, 26, 280, 558]}
 						]},
-						options:{normal_headline:true, no_border:true} 
+						options:{normal_headline:true, no_border:true, no_indent:true} 
 			},
 			#b2:	{ 
 						frame: {$switch: [
 							{if: =scale.small, then: [194, 360, 280, 213]},
 							{if: =scale.large, then: [194, 360, 280, 203]}
 						]},
-						options:{small_headline:true}
+						options:{small_headline:true, no_indent:true, no_indent:true}
 			},
 			#b4:	{ 
 						frame: {$switch: [
 							{if: =scale.small, then: [194, 573, 280, 303]},
 							{if: =scale.large, then: [194, 563, 280, 313]}
 						]},
-						options:{small_headline:true}
+						options:{small_headline:true, no_indent:true, no_indent:true}
 			},
 			#b3:	{ 
 						frame: {$switch: [
 							{if: =scale.small, then: [486, 516, 280, 360]},
 							{if: =scale.large, then: [486, 583, 280, 295]}
 						]},
-						options:{small_headline:true, bottom:true} 
+						options:{small_headline:true, bottom:true, no_indent:true} 
 			}
 		}, else: {
 			#b1:	{ 
@@ -56,27 +56,28 @@
 							{if: =scale.small, then: [556, 28, 230, 590]},
 							{if: =scale.large, then: [496, 26, 280, 565]}
 						]},
-						options:{normal_headline:true, no_border:true} 
+						options:{normal_headline:true, no_border:true, no_indent:true} 
 			},
 			#b2:	{ 
 						frame: {$switch: [
 							{if: =scale.small, then: [205, 357, 350, 263]},
 							{if: =scale.large, then: [205, 357, 280, 263]}
 						]},
-						options:{small_headline:true, bottom:true} 
+						options:{small_headline:true, bottom:true, no_indent:true} 
 			},
 			#b4:	{ 
 						frame: {$switch: [
 							{if: =scale.small, then: [787, 243, 237, 377]},
 							{if: =scale.large, then: [787, 243, 237, 377]}
-						]}
+						]},
+						options:{no_indent:true}
 			},
 			#b3:	{ 
 						frame: {$switch: [
 							{if: =scale.small, then: [787, 28, 237, 216]},
 							{if: =scale.large, then: [787, 26, 237, 216]}
 						]},
-						options:{small_headline:true, no_border:true}
+						options:{small_headline:true, no_border:true, no_indent:true}
 			}
 			
 		}

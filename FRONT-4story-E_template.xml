@@ -15,10 +15,10 @@
 							{if: =scale.small, then: [194, 280, 565, 264]},
 							{if: =scale.large, then: [194, 240, 565, 304]}
 						]},
-						options:{small_headline:true, left:true} 
+						options:{small_headline:true, left:true, no_indent:true} 
 			},
-			#b3:			{ frame: [194, 545, 280, 330], options:{small_headline:true, bottom:true} },
-			#b4:			{ frame: [486, 545, 280, 330] }
+			#b3:			{ frame: [194, 545, 280, 330], options:{small_headline:true, bottom:true, no_indent:true} },
+			#b4:			{ frame: [486, 545, 280, 330], options:{no_indent:true} }
 		}, else: {
 			#b1:	{
 					frame: {$switch: [
@@ -32,20 +32,21 @@
 						{if: =scale.small, then: [205, 253, 565, 366]},
 						{if: =scale.large, then: [205, 299, 565, 320]}
 					]},
-					options:{small_headline:true, left:true, bottom:true} 
+					options:{small_headline:true, left:true, bottom:true, no_indent:true} 
 			},
 			#b3:	{ 
 					frame: {$switch: [
 						{if: =scale.small, then: [787, 28, 238, 220]},
 						{if: =scale.large, then: [787, 28, 238, 274]}
 					]},
-					options:{small_headline:true, no_border:true} 
+					options:{small_headline:true, no_border:true, no_indent:true} 
 			},
 			#b4:	{ 
 					frame: {$switch: [
 						{if: =scale.small, then: [787, 253, 238, 366]},
 						{if: =scale.large, then: [787, 300, 238, 320]}
-					]}
+					]},
+					options:{no_indent:true}
 			}
 		}
 

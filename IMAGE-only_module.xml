@@ -1,7 +1,16 @@
 <jpml id="IMAGE-only_module">
 	<style>
 		{
-		image: { width:=view.width, height:=view.height }
+		image: { 
+			if: =widescreen, then: {
+					options: {
+						match: {
+							width:967
+						}
+					}
+				}
+				
+			}
 		}
 	</style>
 	<image embed="summary-image" />

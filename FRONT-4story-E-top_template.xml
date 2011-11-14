@@ -15,10 +15,10 @@
 									{if: =scale.small, then: [535, 26, 230, 548]},
 									{if: =scale.large, then: [582, 26, 183, 548]}
 								]},
-								options:{small_headline:true, no_border:true, left:true} 
+								options:{small_headline:true, no_border:true, left:true, no_indent:true} 
 							},
-			#b3:			{ frame: [194, 575, 280, 298], options:{small_headline:true, bottom:true} },
-			#b4:			{ frame: [486, 575, 280, 298] }
+			#b3:			{ frame: [194, 575, 280, 298], options:{small_headline:true, bottom:true, no_indent:true} },
+			#b4:			{ frame: [486, 575, 280, 298], options:{no_indent:true} }
 		}, else: {
 			#b1:			{ 
 								frame: {$switch: [
@@ -32,10 +32,10 @@
 									{if: =scale.small, then: [577, 26, 199, 596]},
 									{if: =scale.large, then: [593, 26, 183, 596]}
 								]},
-								options:{small_headline:true, no_border:true, left:true}  
+								options:{small_headline:true, no_border:true, left:true, no_indent:true}  
 							},
-			#b3:			{ frame: [787, 26, 238, 254], options:{small_headline:true, no_border:true} },
-			#b4:			{ frame: [787, 280, 238, 340] }
+			#b3:			{ frame: [787, 26, 238, 254], options:{small_headline:true, no_border:true, no_indent:true} },
+			#b4:			{ frame: [787, 280, 238, 340], options:{no_indent:true} }
 		}
 		
 		

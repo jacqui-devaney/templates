@@ -9,17 +9,21 @@
 			right:0,
 			top:0,
 			bottom:0,
-			anchor-y:{if: =scale.small, then:bottom},
-			position:relative,
-			width: 262,
+			anchor-y:{if: =scale.small, then:top},
+			width:262,
 			padding: [0, 0, 0, 15 ],
 			pixels-per-point-x:1,
 			pixels-per-point-y:1,
-			image-scale:1,
-			height:218
+			image-scale:1
 		},
 		
 		#image_container: { 
+			width: 262,
+			top:0,
+			bottom:0,
+			position:relative
+		},
+		image: { 
 			width: 262,
 			height: 174
 		},

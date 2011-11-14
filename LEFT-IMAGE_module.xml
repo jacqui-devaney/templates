@@ -49,7 +49,12 @@
 			{#medium_headline: { display: { if: =options.medium_headline, then:inherit }}},
 			{#large_headline: { display: { if: =options.large_headline, then:inherit }}},
 			{#bignews_huge_headline: { display: { if: =options.bignews_huge_headline, then:inherit }}},
-			{#bignews_big_headline: { display: { if: =options.bignews_big_headline, then:inherit }}}	
+			{#bignews_big_headline: { display: { if: =options.bignews_big_headline, then:inherit }}},
+			{#body-first-p: {text-indent: {$switch: [
+				{if: =scale.small, then:{if: =options.no_indent, then:0, else:inherit}},
+				{if: =scale.large, then: inherit}
+			]}}}
+				
 		]	
 		
 		}</style>

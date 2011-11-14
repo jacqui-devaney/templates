@@ -38,7 +38,11 @@
 				{if: =scale.small, then:{if: =options.byline, then:inherit, else:none}},
 				{if: =scale.large, then: inherit}
 			]}}},
-			{.body: {padding:{if: =options.byline, then:[0], else:[3, 0, 0, 0]}}}
+			{.body: {padding:{if: =options.byline, then:[0], else:[3, 0, 0, 0]}}},
+			{#body-first-p: {text-indent: {$switch: [
+				{if: =scale.small, then:{if: =options.no_indent, then:0, else:inherit}},
+				{if: =scale.large, then: inherit}
+			]}}}
 			
 			]
 		}</style>

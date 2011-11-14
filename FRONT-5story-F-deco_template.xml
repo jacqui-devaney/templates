@@ -11,10 +11,10 @@
 						options:{large_headline:true, no_border:true, byline:{if: =scale.small, then:true, else:false}}
 			},
 			#deco:			{ frame: [194, 169, 571, 307], options:{normal_headline:true} },
-			#b2:			{ frame: [194, 476, 280, 152], options:{small_headline:true} },
-			#b3:			{ frame: [486, 476, 280, 152], options:{small_headline:true} },
-			#b4:			{ frame: [194, 628, 280, 248], options:{small_headline:true, bottom:true} },
-			#b5:			{ frame: [486, 628, 280, 248] }
+			#b2:			{ frame: [194, 476, 280, 152], options:{small_headline:true, no_indent:true} },
+			#b3:			{ frame: [486, 476, 280, 152], options:{small_headline:true, no_indent:true} },
+			#b4:			{ frame: [194, 628, 280, 248], options:{small_headline:true, bottom:true, no_indent:true} },
+			#b5:			{ frame: [486, 628, 280, 248], options:{no_indent:true} }
 		}, else: {
 			#b1:	{ 
 						frame: {$switch: [
@@ -35,27 +35,28 @@
 							{if: =scale.small, then: [592, 28, 238, 272]},
 							{if: =scale.large, then: [205, 476, 280, 144]}
 						]},
-						options:{small_headline:true, no_border:{if: =scale.small, then:true, else:false}} 
+						options:{small_headline:true, no_border:{if: =scale.small, then:true, else:false}, no_indent:true} 
 					},
 			#b3:	{ 
 						frame: {$switch: [
 							{if: =scale.small, then: [592, 300, 238, 315]},
 							{if: =scale.large, then: [496, 476, 280, 144]}
 						]},
-						options:{small_headline:true} 
+						options:{small_headline:true, no_indent:true} 
 					},
 			#b4:		{ 
 							frame: {$switch: [
 								{if: =scale.small, then: [840, 28, 183, 223]},
 								{if: =scale.large, then: [787, 26, 237, 200]}
 							]},
-							options:{small_headline:true, no_border:true
-					} },
+							options:{small_headline:true, no_border:true, no_indent:true} 
+					},
 			#b5:	{ 
 						frame: {$switch: [
 							{if: =scale.small, then: [840, 250, 183, 370]},
 							{if: =scale.large, then: [787, 227, 237, 394]}
-						]}
+						]},
+						options:{no_indent:true}
 					}
 		}
 		

@@ -23,13 +23,14 @@
 						{if: =scale.small, then: [194, 581, 280, 295]},
 						{if: =scale.large, then: [194, 628, 280, 246]}
 					]},
-					options:{small_headline:true, bottom:true} 
+					options:{small_headline:true, bottom:true, no_indent:true} 
 			},
 			#b3:	{ 
 					frame: {$switch: [
 						{if: =scale.small, then: [486, 581, 280, 295]},
 						{if: =scale.large, then: [486, 628, 280, 247]}
-					]}
+					]},
+					options:{no_indent:true}
 					
 			}
 		}, else: {
@@ -52,14 +53,14 @@
 							{if: =scale.small, then: [496, 28, 327, 205]},
 							{if: =scale.large, then: [787, 26, 238, 200]}
 						]},
-						options:{small_headline:true, no_border:true} 
+						options:{small_headline:true, no_border:true, no_indent:true} 
 			},
 			#b3:	{ 
 						frame: {$switch: [
 							{if: =scale.small, then: [834, 38, 190, 580]},
 							{if: =scale.large, then: [787, 225, 238, 404]}
 						]},
-						options: {no_hr: {if: =scale.small, then:true, else:false}}
+						options: {no_hr: {if: =scale.small, then:true, else:false}, no_indent:true}
 			}
 			
 		}

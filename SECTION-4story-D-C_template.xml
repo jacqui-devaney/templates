@@ -62,8 +62,8 @@
 					]},
 					options:{small_headline:true, show_image:{if: =scale.small, then:false, else:true}, left:true, bottom:true, no_indent:true} 
 			},
-			#h1: {options:{highlight_dark:true, hide_image:true}},
-			#h2: {options:{highlight_dark:true, hide_image:true}}
+			#h1: {options:{highlight_dark:true, hide_image:{if: =scale.small, then:true, else:false}}},
+			#h2: {options:{highlight_dark:true, hide_image:{if: =scale.small, then:true, else:false}}}
 		}
 	}</style>
 	

@@ -26,10 +26,10 @@
 			#h2: {options:{highlight_dark:true}}
 			
 		}, else: {
-			#b1:	{ frame: [11, 0, 571, 618], options:{large_headline:true, show_image:{if: =scale.small, then:false, else:true}, show_image_skinny:{if: =scale.small, then:true, else:false}, no_border:true, bottom:true, byline:{if: =scale.small, then:true, else:false}} },
+			#b1:	{ frame: [11, 0, 571, 618], options:{large_headline:true, show_image:true, F_image:{if: =scale.small, then:true, else:false}, no_border:true, bottom:true, byline:{if: =scale.small, then:true, else:false}} },
 			#b2:	{ frame: [594, 0, 183, 320], options:{small_headline:true, no_border:true, left:true, no_indent:true} },
 			#b3:	{ frame: [594, 320, 183, 298], options:{small_headline:true, left:true, bottom:true, no_indent:true} },
-			#h2: {options:{highlight_dark:true, hide_image:true}}
+			#h2: {options:{highlight_dark:true, hide_image:{if: =scale.small, then:true, else:false}}}
 			
 		}}
 	</style>

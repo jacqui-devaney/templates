@@ -29,25 +29,22 @@
 	        }},
 			{#body_container: { padding: [0, 8, {if: =options.bottom, then:15, else:8}, 8]}},
 			{#headline: { padding: [0, 8]}},
-			{#tall_wide: {
+			{image: {
 				width:{$subtract:[=view.width, 18]}, 
-				height:{$multiply: [{$subtract:[=view.width, 18]}, 0.66] },
-				display: { if: =options.show_image, then:inherit },
+				height:{$multiply: [{$subtract:[=view.width, 18]}, {if: =options.F_image, then:0.39, else:0.66}] },
+				display: { if: =options.show_image, then:inherit, else:none },
 				padding: [0, 9, 8, 9],
+				options: {
+					match: {
+						if: =options.F_image, then: { width:571, height:226, max-height:226 }
+						}
+				},
 				pixels-per-point-x:1,
 				pixels-per-point-y:{if: =scale.small, then:.9},
 				image-scale:1
-				
 			}},
-			{#skinny_wide: {
-				height:{$multiply: [=view.width, 0.39] },
-				display: { if: =options.show_image_skinny, then:inherit },
-				padding: [0, 8, 8, 8],
-				pixels-per-point-x:1,
-				pixels-per-point-y:1,
-				image-scale:1
-				
-			}},
+			
+			
 			{.invisible: { display:none }},
 			{#small_headline: { display: { if: =options.small_headline, then:inherit }}},
 			{#medium_headline: { display: { if: =options.medium_headline, then:inherit }}},
@@ -56,13 +53,16 @@
 				{if: =scale.small, then:{if: =options.byline, then:inherit, else:none}},
 				{if: =scale.large, then: inherit}
 			]}}},
-			{.body: {padding:{if: =options.byline, then:[0], else:[3, 0, 0, 0]}}}
+			{.body: {padding:{if: =options.byline, then:[0], else:[3, 0, 0, 0]}}},
+			{#body-first-p: {text-indent: {$switch: [
+				{if: =scale.small, then:{if: =options.no_indent, then:0, else:inherit}},
+				{if: =scale.large, then: inherit}
+			]}}}
 		
 			]
 		}</style>
 	<box id="wrapper">
-		<image id="tall_wide" class="invisible" embed="summary-image"/>
-		<image id="skinny_wide" class="invisible" embed="summary-image"/>
+		<image embed="summary-image"/>
 		<panel id="headline">
 			<p id="small_headline" class="invisible"><span embed="headline" /><mark class="key" /></p>
 			<p id="medium_headline" class="invisible"><span embed="headline" /><mark class="key" /></p>

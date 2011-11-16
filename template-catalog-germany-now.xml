@@ -2,14 +2,14 @@
 	<templates>
 		<!-- FRONT SECTION -->
 		<template 
-			name="FRONT-4story-F_template.xml" 
-			title="4 story - F Photo" 
+			name="FRONT-4story-E-top_template.xml" 
+			title="4 story - E Photo" 
 			section="FRONT_SECTION" 
 			min="4" 
 			usage="front" 
 		/>
 		<template 
-			name="FRONT-4story-E-top_template.xml" 
+			name="FRONT-4story-F_template.xml" 
 			title="4 story - F Photo" 
 			section="FRONT_SECTION" 
 			min="4" 

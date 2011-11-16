@@ -147,6 +147,14 @@
 		
 		<!-- BEGIN MARKETPLACE -->
 		<template 
+			name="SECTION-4story-2D-C_template.xml" 
+			section="MARKETPLACE" 
+			title="4 story plain"
+			min="6" 
+			deco="true" 
+			usage="front" 
+		/>
+		<template 
 			name="SECTION-4story-smallG-deco_template.xml" 
 			section="MARKETPLACE" 
 			title="4 story - small G Media deco"

@@ -2,208 +2,43 @@
 	<templates>
 		<!-- FRONT SECTION -->
 		<template 
-			name="FRONT-4story-E-top_template.xml" 
-			title="4 stoyr - E top photo" 
+			name="FRONT-4story-F_template.xml" 
+			title="4 story - F Photo" 
 			section="FRONT_SECTION" 
 			min="4" 
 			usage="front" 
 		/>
 		<template 
-			name="FRONT-4story-Video-deco_template.xml" 
-			title="4 story - Video deco" 
+			name="FRONT-4story-E-top_template.xml" 
+			title="4 story - F Photo" 
+			section="FRONT_SECTION" 
+			min="4" 
+			usage="front" 
+		/>
+		<template 
+			name="FRONT-4story-Vertical-deco_template.xml" 
+			title="4 story - Vertical deco" 
+			section="FRONT_SECTION" 
+			min="4" 
+			deco="true" 
+			usage="front" 
+		/>
+		<template 
+			name="FRONT-4story-F-deco_template.xml" 
+			title="4 story - F liondoor" 
+			section="FRONT_SECTION" 
+			min="4" 
+			usage="front" 
+		/>
+		<template 
+			name="FRONT-4story-Vertical-deco_template.xml" 
+			title="4 story - Vertical deco" 
 			section="FRONT_SECTION" 
 			min="4" 
 			deco="true" 
 			usage="front" 
 		/>
 		<!-- END FRONT SECTION -->
-
-		<!-- OPINION -->
-		<template 
-			name="OPINION-5story-E_template.xml" 
-			title="7 story (3R and O-2CMTRY-3HLT)" 
-			section="OPINION" 
-			min="7" 
-			usage="front" 
-		/>
-		<template 
-			name="OPINION-4story-E_template.xml" 
-			title="6 story (2R and O-2CMTRY-2HLT)" 
-			section="OPINION" 
-			min="6" 
-			usage="front" 
-		/>
-		<template 
-			name="OPINION-3story-E_template.xml" 
-			title="5 story (2R and O-1CMTRY-2HLT)" 
-			section="OPINION" 
-			min="5" 
-			usage="front" 
-		/>
-		<template 
-			name="OPINION-2story-E_template.xml" 
-			title="4 story (1R and O-1CMTRY-2HLT)" 
-			section="OPINION" 
-			min="4" 
-			usage="front" 
-		/>
-		<!-- END OPINION -->
-		
-		<!-- BUSINESS AND FINANCE -->
-		<template 
-			name="SECTION-4story-D-C-marketdata_template.xml" 
-			title="4 story - Plain (marketdata)" 
-			section="BUSINESS_AND_FINANCE" 
-			min="6" 
-			usage="front" 
-		/>
-		<template 
-			name="SECTION-3story-G-marketdata_template.xml" 
-			title="3 story - G photo (marketdata)" 
-			section="BUSINESS_AND_FINANCE" 
-			min="5" 
-			usage="front" 
-		/>
-		<!-- END BUSINESS AND FINANCE -->
-		
-		<!-- FRIDAY JOURNAL -->
-		<template 
-			name="SECTION-2story-G-C_template.xml" 
-			title="2 story - G photo" 
-			section="FRIDAY_JOURNAL" 
-			min="4" 
-			usage="front" 
-		/>
-		<template 
-			name="SECTION-3story-G_template.xml" 
-			title="3 story - G photo" 
-			section="FRIDAY_JOURNAL" 
-			min="5" 
-			usage="front" 
-		/>
-		<!-- END FRIDAY JOURNAL -->
-		
-		<!-- MARKETPLACE -->
-		<template 
-			name="SECTION-4story-D-C_template.xml" 
-			title="4 story - Plain" 
-			section="MARKETPLACE" 
-			min="6" 
-			usage="front" 
-		/>
-		<!-- END MARKETPLACE -->
-		
-		<!-- MONEY AND INVESTING -->
-		<template 
-			name="SECTION-3story-G-marketdata_template.xml" 
-			title="3 story - G photo (marketdata)" 
-			section="MONEY_AND_INVESTING" 
-			min="5" 
-			usage="front" 
-		/>
-		<!-- END MONEY AND INVESTING -->
-		
-		<!-- OFF DUTY -->
-		<template 
-			name="SECTION-2story-G-C_template.xml" 
-			title="2 story - G photo" 
-			section="OFF_DUTY" 
-			min="4" 
-			usage="front" 
-		/>
-		<template 
-			name="SECTION-3story-G_template.xml" 
-			title="3 story - G photo" 
-			section="OFF_DUTY" 
-			min="5" 
-			usage="front" 
-		/>
-		<!-- END OFF DUTY -->
-		
-		<!-- PERSONAL JOURNAL -->
-		<template 
-			name="SECTION-2story-G-C_template.xml" 
-			title="2 story - G photo" 
-			section="PERSONAL_JOURNAL" 
-			min="4" 
-			usage="front" 
-		/>
-		<!-- END PERSONAL JOURNAL -->
-		
-		<!-- LIFE AND STYLE -->
-		<template 
-			name="SECTION-2story-G-C_template.xml" 
-			title="2 story - G photo" 
-			section="LIFE_AND_STYLE" 
-			min="4" 
-			usage="front" 
-		/>
-		<!-- END LIFE AND STYLE -->
-
-		<!-- EUROPE SECTION -->
-		<template 
-			name="SECTION-2story-G-C_template.xml" 
-			title="2 story - G photo" 
-			section="EUROPE" 
-			min="4" 
-			usage="front" 
-		/>
-		<!-- END EUROPE SECTION -->
-		
-		<!-- REVIEW -->
-		<template 
-			name="SECTION-3story-G_template.xml" 
-			title="3 story - G photo" 
-			section="REVIEW" 
-			min="5" 
-			usage="front" 
-		/>
-		<template 
-			name="SECTION-2story-G-C_template.xml" 
-			title="2 story - G photo" 
-			section="REVIEW" 
-			min="4" 
-			usage="front" 
-		/>
-		<!-- END REVIEW -->
-		
-		<!-- SPECIAL REPORT -->
-		<template 
-			name="SECTION-3story-G_template.xml" 
-			section="SPECIAL_REPORT" 
-			title="3 story G photo"
-			min="5" 
-			usage="front" 
-		/>
-		<template 
-			name="SECTION-3story-G-deco-C_template.xml" 
-			section="SPECIAL_REPORT" 
-			deco="true" 
-			title="3 story - G deco"
-			min="5" 
-			usage="front" 
-		/>
-		<!-- END SPECIAL REPORT -->
-		
-		<!-- THE_JOURNAL_REPORT -->
-		<template 
-			name="SECTION-2story-G-C_template.xml" 
-			title="2 story - G photo" 
-			section="THE_JOURNAL_REPORT" 
-			min="4" 
-			usage="front" 
-		/>
-		<!-- END THE_JOURNAL_REPORT -->
-
-		<!-- WEEKEND_JOURNAL -->
-		<template 
-			name="SECTION-2story-G-C_template.xml" 
-			title="2 story - G photo" 
-			section="WEEKEND_JOURNAL" 
-			min="4" 
-			usage="front" 
-		/>
-		<!-- END WEEKEND_JOURNAL -->
 		
 		<!-- DEUTSCHLAND -->
 		<template 
@@ -213,24 +48,39 @@
 			min="4" 
 			usage="front" 
 		/>
+		<template 
+			name="SECTION-3story-G_template.xml" 
+			title="3 story - G photo" 
+			section="DEUTSCHLAND" 
+			min="5" 
+			usage="front" 
+		/>
+		
 		<!-- END DEUTSCHLAND -->
 
 		<!-- UNTERNEHMEN -->
 		<template 
-			name="SECTION-2story-G-C_template.xml" 
-			title="2 story - G photo" 
+			name="SECTION-3story-G_template.xml" 
+			title="3 story - G photo" 
 			section="UNTERNEHMEN" 
-			min="4" 
+			min="5" 
+			usage="front" 
+		/>
+		<template 
+			name="SECTION-4story-D-C_template.xml" 
+			title="4 story - Plain" 
+			section="UNTERNEHMEN" 
+			min="6" 
 			usage="front" 
 		/>
 		<!-- END UNTERNEHMEN -->
 
 		<!-- TECHNOLOGIE -->
 		<template 
-			name="SECTION-2story-G-C_template.xml" 
-			title="2 story - G photo" 
+			name="SECTION-3story-G_template.xml" 
+			title="3 story - G photo" 
 			section="TECHNOLOGIE" 
-			min="4" 
+			min="5" 
 			usage="front" 
 		/>
 		<!-- END TECHNOLOGIE -->
@@ -243,43 +93,8 @@
 			min="4" 
 			usage="front" 
 		/>
-		<template 
-			name="SECTION-1story-PV-white_template.xml" 
-			title="PV (white highlights)" 
-			section="ANALYSE" 
-			min="3" 
-			usage="front" 
-		/>
-		
 		<!-- END ANALYSE -->
 
-		<!-- FANCY CONTINUATION -->
-		<template 
-			name="CONTINUATION-fancy-6_template.xml" 
-			min="6" 
-			title="" 
-			section="WSJ_MAGAZINE" 
-			usage="continuation" 
-			deco="true" 
-			page="2" 
-		/>
-		<template 
-			name="CONTINUATION-fancy-bottom-6_template.xml" 
-			min="6" section="WSJ_MAGAZINE" 
-			usage="continuation" 
-			deco="true" 
-			page="3" 
-		/>
-		<template 
-			name="CONTINUATION-fancy-bottom-6_template.xml" 
-			min="6" 
-			section="WSJ_MAGAZINE" 
-			usage="continuation" 
-			deco="true" 
-			page="4" 
-		/>
-		<!-- END FANCY CONTINUATION -->
-		
 		<!-- GENERIC CONTINUATION -->
 		<template 
 			name="CONTINUATION-generic-12_template.xml" 
@@ -383,11 +198,6 @@
 
 	<article-page-plans>
 		<article pages="ARTICLE-pages.xml" />
-		<article pages="ARTICLE-pages-hots.xml" type="Heard on the Street" />
-		<article pages="ARTICLE-pages-hots.xml" type="Headrd on the Street Other"/>
-		<article pages="ARTICLE-pages-hots.xml" type="Overheard"/>
-		<article pages="ARTICLE-pages-letters.xml" type="Letters" />
-		<article pages="ARTICLE-pages-off-duty.xml" type="Off Duty" />
 	</article-page-plans>
 	
 	<display-properties>

@@ -3,29 +3,22 @@
 	<style src="GLOBAL-stylesheet.ejs" />
 	<style>{
         jpml: {
-			padding: [0, 8, 0, 8]
+			padding: [0, 8, 8, 8]
 		},
 		#image_wrapper: { 
-			right:0,
-			top:0,
-			bottom:0,
-			anchor-y:{if: =scale.small, then:top},
+			anchor-x:right,
+			position:relative,
 			width:262,
-			padding: [0, 0, 0, 15 ],
+			padding:[0, 0, 0, 15],
 			pixels-per-point-x:1,
-			pixels-per-point-y:1,
+			pixels-per-point-y:{if: =scale.small, then:.9, else:1},
 			image-scale:1
-		},
-		
-		#image_container: { 
-			width: 262,
-			top:0,
-			bottom:0,
-			position:relative
+
 		},
 		image: { 
 			width: 262,
-			height: 174
+			height: 174,
+			padding: [0, 0, {$subtract:[=view.height, 174]}, 0]
 		},
 		.invisible: { display:none },
 		#small_headline: { display: { if: =options.small_headline, then:inherit }},
@@ -34,9 +27,7 @@
 		
 	}</style>
 	<box id="image_wrapper">
-		<box id="image_container">
-		    <image embed="summary-image" />
-		</box>
+		<image embed="summary-image" />
 	</box>
 	<panel id="headline">
 		<p id="small_headline" class="invisible"><span embed="headline" /><mark class="key" /></p>

@@ -34,6 +34,15 @@
 				padding: { if: =scale.small, then:[5, 0, 5, 0], else:[8, 0, 8, 0]},
 				position:relative
 			}},
+			{image:{
+				options: {
+					match: {
+						if: =options.F_image, then: { width:571, height:226, max-height:226 }
+					}
+				}
+				
+			}},
+			
 			{#content: { padding: [0, 8, 8, 8]}},
 			{.invisible: { display:none }},
 			{#deco_headline: { display: { if: =options.normal_headline, then:inherit }}},

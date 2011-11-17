@@ -15,7 +15,7 @@
 							{if: =scale.small, then: [194, 261, 571, 257]},
 							{if: =scale.large, then: [194, 199, 571, 307]}
 						]},
-						options:{normal_headline:true} 
+						options:{normal_headline:true, F_image:true} 
 			},
             #b2: 	{ 
 						frame: {$switch: [
@@ -51,7 +51,7 @@
 						{if: =scale.small, then: [205, 300, 377, 305]},
 						{if: =scale.large, then: [205, 199, 571, 307]}
 					]},
-					options: {normal_headline:true}
+					options: {normal_headline:true, F_image:true}
 				},
 		#b2:	{ 
 					frame: {$switch: [

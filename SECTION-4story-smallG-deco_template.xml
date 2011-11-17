@@ -35,7 +35,7 @@
 						{if: =scale.small, then: [3, 243, 475, 375]},
 						{if: =scale.large, then: [3, 207, 475, 405]}
 					]},
-					options:{normal_headline:true} 
+					options:{normal_headline:true, F_image:{if: =scale.small, then:true, else:false}} 
 			},
 			#b2:	{ frame: [494, 0, 280, 207], options:{small_headline:true, no_indent:true} },
 			#b3:	{ frame: [494, 207, 280, 207], options:{small_headline:true, border:true, no_indent:true} },

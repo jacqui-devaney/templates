@@ -3,7 +3,7 @@
 		<!-- FRONT SECTION -->
 		<template 
 			name="FRONT-4story-F-deco_template.xml" 
-			title="4 story - F deco" 
+			title="4 story - F liondoor" 
 			section="FRONT_SECTION" 
 			min="4" 
 			deco="true" 
@@ -11,7 +11,7 @@
 		/>
 		<template 
 			name="FRONT-5story-F-deco_template.xml" 
-			title="5 story - F deco" 
+			title="5 story - F liondoor" 
 			section="FRONT_SECTION" 
 			min="5" 
 			deco="true" 
@@ -19,7 +19,7 @@
 		/>
 		<template 
 			name="FRONT-4story-Vertical-deco_template.xml" 
-			title="4 story - Vertical PT deco" 
+			title="4 story - vertical liondoor" 
 			section="FRONT_SECTION" 
 			min="4" 
 			deco="true" 
@@ -27,7 +27,7 @@
 		/>
 		<template 
 			name="FRONT-4story-E-deco_template.xml" 
-			title="4 story - E deco " 
+			title="4 story - E liondoor " 
 			section="FRONT_SECTION" 
 			min="4" 
 			deco="true" 
@@ -35,28 +35,28 @@
 		/>
 		<template 
 			name="FRONT-4story-E-top_template.xml" 
-			title="4 story - E top photo" 
+			title="4 story - top story E photo" 
 			section="FRONT_SECTION" 
 			min="4" 
 			usage="front" 
 		/>
 		<template 
 			name="FRONT-4story-E_template.xml" 
-			title="4 story - E photo" 
+			title="4 story - middle story E photo" 
 			section="FRONT_SECTION" 
 			min="4" 
 			usage="front" 
 		/>
 		<template 
 			name="FRONT-4story-F_template.xml" 
-			title="4 story - F photo" 
+			title="4 story - top story F photo" 
 			section="FRONT_SECTION" 
 			min="4" 
 			usage="front" 
 		/>
 		<template 
 			name="FRONT-3story-G-deco_template.xml" 
-			title="3 story - G deco" 
+			title="3 story - G liondoor" 
 			section="FRONT_SECTION" 
 			min="3" 
 			deco="true" 
@@ -350,7 +350,7 @@
 			name="SECTION-4story-smallG-deco_template.xml_template.xml" 
 			section="SPECIAL_REPORT" 
 			deco="true" 
-			title="4 story - G deco"
+			title="4 story - G liondoor"
 			min="6" 
 			usage="front" 
 		/>
@@ -412,7 +412,7 @@
 		<template 
 			name="CONTINUATION-fancy-6_template.xml" 
 			min="6" 
-			title="6 story - small G deco" 
+			title="6 story - small G liondoor" 
 			section="WSJ_MAGAZINE" 
 			usage="continuation" 
 			deco="true" 
@@ -422,7 +422,7 @@
 			name="CONTINUATION-fancy-bottom-6_template.xml" 
 			min="6"
 			ection="WSJ_MAGAZINE" 
-			title="6 story - small G deco (bottom)"
+			title="6 story - small G liondoor (bottom)"
 			usage="continuation" 
 			deco="true" 
 			page="3" 
@@ -431,7 +431,7 @@
 			name="CONTINUATION-fancy-bottom-6_template.xml" 
 			min="6" 
 			section="WSJ_MAGAZINE" 
-			title="6 story - small G deco (bottom)"
+			title="6 story - small G liondoor (bottom)"
 			usage="continuation" 
 			deco="true" 
 			page="4" 

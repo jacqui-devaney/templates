@@ -20,7 +20,7 @@
 		<template 
 			section="FRONT_SECTION" 
 			name="FRONT-4story-Vertical-deco_template.xml" 
-			title="4 story-Vertical liondoor"
+			title="4 story- vertical liondoor"
 			min="4" 
 			deco="true" 
 			usage="front" 
@@ -36,28 +36,28 @@
 		<template 
 			section="FRONT_SECTION" 
 			name="FRONT-4story-E-top_template.xml" 
-			title="4 story-Top Story E photo"
+			title="4 story: Top Story E photo"
 			min="4" 
 			usage="front" 
 		/>
 		<template 
 			section="FRONT_SECTION" 
 			name="FRONT-4story-E_template.xml" 
-			title="4 story-Middle Story E photo"
+			title="4 story - middle story E photo"
 			min="4" 
 			usage="front" 
 		/>
 		<template 
 			section="FRONT_SECTION" 
 			name="FRONT-4story-F_template.xml" 
-			title="4 story-Top Story F photo"
+			title="4 story - top story F photo"
 			min="4" 
 			usage="front" 
 		/>
 		<template 
 			section="FRONT_SECTION" 
 			name="FRONT-3story-G-deco_template.xml" 
-			title="3 story-G liondoor"
+			title="3 story - G liondoor"
 			min="3" 
 			deco="true" 
 			usage="front" 
@@ -88,6 +88,13 @@
 		/>
 		<template 
 			section="OPINION" 
+			name="OPINION-4story-1E_template.xml" 
+			title="6 story (3RandO-1CMTY)"
+			min="6" 
+			usage="front" 
+		/>
+		<template 
+			section="OPINION" 
 			name="OPINION-3story-E_template.xml" 
 			title="5 story (2RandO-1CMTY)"
 			min="5" 
@@ -103,7 +110,7 @@
 		<template 
 			name="OPINION-6story-D_template.xml" 
 			section="OPINION" 
-			title="8 story (2-3RandO-1-2LTR-2CMTRY D photo)"
+			title="8 story (4 rando-2CMTY-D photo)"
 			min="8" 
 			usage="front" 
 		/>
@@ -157,7 +164,7 @@
 		<template 
 			name="SECTION-4story-smallG-deco_template.xml" 
 			section="MARKETPLACE" 
-			title="4 story - small G Media deco"
+			title="4 story - small G Media liondoor"
 			min="6" 
 			deco="true" 
 			usage="front" 
@@ -165,7 +172,7 @@
 		<template 
 			name="SECTION-4story-smallG-top_template.xml" 
 			section="MARKETPLACE" 
-			title="4 story - G photo top"
+			title="4 story - G photo"
 			min="6" 
 			usage="front" 
 		/>
@@ -187,7 +194,7 @@
 			name="SECTION-3story-G-deco-C_template.xml" 
 			section="MARKETPLACE" 
 			deco="true" 
-			title="3 story - G deco"
+			title="3 story - G liondoor"
 			min="5" 
 			usage="front" 
 		/>
@@ -205,7 +212,7 @@
 		<template 
 			name="SECTION-4story-smallG-top_template.xml" 
 			section="BUSINESS_AND_FINANCE" 
-			title="4 story - G photo top"
+			title="4 story - G photo"
 			min="6" 
 			usage="front" 
 		/>
@@ -226,7 +233,7 @@
 		<template 
 			name="SECTION-4story-smallG-deco_template.xml" 
 			section="BUSINESS_AND_FINANCE" 
-			title="4 story - small G Media deco"
+			title="4 story - small G Media liondoor"
 			min="6" 
 			deco="true" 
 			usage="front" 
@@ -235,7 +242,7 @@
 			name="SECTION-3story-G-deco-C_template.xml" 
 			section="BUSINESS_AND_FINANCE" 
 			deco="true" 
-			title="3 story - G deco"
+			title="3 story - G liondoor"
 			min="5" 
 			usage="front" 
 		/>
@@ -259,7 +266,7 @@
 		<template 
 			name="SECTION-4story-smallG-deco_template.xml" 
 			section="MONEY_AND_INVESTING" 
-			title="4 story - small G Media deco"
+			title="4 story - small G Media liondoor"
 			min="6" 
 			deco="true" 
 			usage="front" 
@@ -267,7 +274,7 @@
 		<template 
 			name="SECTION-4story-smallG-top_template.xml" 
 			section="MONEY_AND_INVESTING" 
-			title="4 story - G photo top"
+			title="4 story - G photo"
 			min="6" 
 			usage="front" 
 		/>
@@ -291,7 +298,7 @@
 		<template 
 			name="SECTION-4story-smallG-deco_template.xml" 
 			section="NEW_YORK" 
-			title="4 story - small G Media deco"
+			title="4 story - small G Media liondoor"
 			min="6" 
 			deco="true" 
 			usage="front" 
@@ -299,7 +306,7 @@
 		<template 
 			name="SECTION-4story-smallG-bottom_template.xml" 
 			section="NEW_YORK" 
-			title="4 story - G Appledoor"
+			title="4 story-second story G photo"
 			min="6" 
 			usage="front" 
 		/>
@@ -307,49 +314,49 @@
 			name="SECTION-3story-G-deco-C_template.xml" 
 			section="NEW_YORK" 
 			deco="true" 
-			title="3 story - G deco"
+			title="3 story - G liondoor"
 			min="5" 
 			usage="front" 
 		/>
 		<template 
 			name="SECTION-4story-smallG-top_template.xml" 
 			section="NEW_YORK" 
-			title="4 story - G photo top"
+			title="4 story - G photo"
 			min="6" 
 			usage="front" 
 		/>
 		<template 
 			name="SECTION-1story-PV-white_template.xml" 
 			section="NEW_YORK" 
-			title="PV Media Deco (White highlights)"
+			title="PV (white)"
 			min="3" 
 			usage="front" 
 		/>
 		<template 
 			name="SECTION-1story-PV_template.xml" 
 			section="NEW_YORK" 
-			title="PV Media Deco (Grey highlights)"
+			title="PV (grey)"
 			min="3" 
 			usage="front" 
 		/>
 		<template 
 			name="SECTION-1story-P-1highlight_template.xml" 
 			section="NEW_YORK" 
-			title="1 story P - 1 highlight"
+			title="P - 1 highlight"
 			min="2" 
 			usage="front" 
 		/>
 		<template 
 			name="SECTION-1story-PV-1highlight_template.xml" 
 			section="NEW_YORK" 
-			title="PV - 1 highlight"
+			title="PV - 1 highlight (grey)"
 			min="2" 
 			usage="front" 
 		/>
 		<template 
 			name="SECTION-1story-PV-1highlight-white_template.xml" 
 			section="NEW_YORK" 
-			title="PV - 1 highlight (white highlight)"
+			title="PV - 1 highlight (white)"
 			min="2" 
 			usage="front" 
 		/>
@@ -425,7 +432,7 @@
 		<template 
 			name="SECTION-2story-G-C_template.xml" 
 			section="PERSONAL_JOURNAL" 
-			title="PJ- 2 story - G"
+			title="2 story - G"
 			min="4" 
 			usage="front" 
 		/>
@@ -446,7 +453,7 @@
 		<template 
 			name="SECTION-4story-smallG-deco_template.xml" 
 			section="PERSONAL_JOURNAL" 
-			title="4 story - small G Media deco"
+			title="4 story - small G Media liondoor"
 			min="6" 
 			deco="true" 
 			usage="front" 
@@ -455,7 +462,7 @@
 			name="SECTION-3story-G-deco-C_template.xml" 
 			section="PERSONAL_JOURNAL" 
 			deco="true" 
-			title="3 story - G Media deco"
+			title="3 story - G Media liondoor"
 			min="5" 
 			usage="front" 
 		/>
@@ -469,21 +476,21 @@
 		<template 
 			name="SECTION-1story-P-1highlight_template.xml" 
 			section="PERSONAL_JOURNAL" 
-			title="P 1 highlight"
+			title="P photo - 1 highlight"
 			min="2" 
 			usage="front" 
 		/>
 		<template 
 			name="SECTION-1story-PV-1highlight_template.xml" 
 			section="PERSONAL_JOURNAL" 
-			title="PV 1 highlight"
+			title="PV - 1 highlight (white)"
 			min="2" 
 			usage="front" 
 		/>
 		<template 
 			name="SECTION-1story-PV-1highlight-white_template.xml" 
 			section="PERSONAL_JOURNAL" 
-			title="PV 1 highlight"
+			title="PV 1 highlight (white)"
 			min="2" 
 			usage="front" 
 		/>
@@ -678,7 +685,7 @@
 			name="SECTION-3story-G-deco-C_template.xml" 
 			section="SPECIAL_REPORT" 
 			deco="true" 
-			title="3 story - G deco"
+			title="3 story - G liondoor"
 			min="5" 
 			usage="front" 
 		/>
@@ -756,7 +763,7 @@
 		<!-- FANCY CONTINUATION -->
 		<template 
 			name="CONTINUATION-fancy-3OV-7_template.xml" 
-			title="7 stories - 3 OV deco"
+			title="7 stories - 3 OV liondoor"
 			min="7" 
 			usage="continuation" 
 			section="OFF_DUTY" 
@@ -765,7 +772,7 @@
 		/>
 		<template 
 			name="CONTINUATION-fancy-smallG-OV-6_template.xml" 
-			title="6 stories - smallG deco 1 OV deco"
+			title="6 stories - smallG liondoor 1 OV liondoor"
 			min="6" 
 			usage="continuation" 
 			section="OFF_DUTY" 
@@ -775,7 +782,7 @@
 
 		<template 
 			name="CONTINUATION-fancy-6_template.xml" 
-			title="6 stories - smallG deco"
+			title="6 stories - smallG liondoor"
 			min="6" 
 			usage="continuation" 
 			section="FRIDAY_JOURNAL,FRONT_SECTION,MONEY_AND_INVESTING,NEW_YORK,OFF_DUTY,PERSONAL_JOURNAL,WSJ_MAGAZINE" 
@@ -784,7 +791,7 @@
 		/>
 		<template 
 			name="CONTINUATION-fancy-6_template.xml" 
-			title="6 stories - smallG deco"
+			title="6 stories - smallG liondoor"
 			min="6" 
 			usage="continuation" 
 			section="FRONT_SECTION" 
@@ -793,7 +800,7 @@
 		/>
 		<template 
 			name="CONTINUATION-fancy-bottom-6_template.xml" 
-			title="6 stories - smallG deco bottom"
+			title="6 stories - smallG liondoor bottom"
 			min="6" 
 			section="THE_JOURNAL_REPORT,MARKETPLACE,OPINION,REVIEW" 
 			usage="continuation" 
@@ -802,7 +809,7 @@
 		/>
 		<template 
 			name="CONTINUATION-fancy-8_template.xml" 
-			title="8 stories - smallG deco"
+			title="8 stories - smallG liondoor"
 			min="8" 
 			section="FRONT_SECTION,OFF_DUTY" 
 			usage="continuation" 
@@ -812,7 +819,7 @@
 		<template 
 			name="CONTINUATION-fancy-bottom-8_template.xml" 
 			section="OPINION" 
-			title="8 stories - smallG deco bottom"
+			title="8 stories - smallG liondoor bottom"
 			min="8" 
 			usage="continuation" 
 			deco="true" 
@@ -821,7 +828,7 @@
 
 		<template 
 			name="CONTINUATION-fancy-bottom-6_template.xml" 
-			title="6 stories - smallG deco bottom"
+			title="6 stories - smallG liondoor bottom"
 			min="6" 
 			section="WSJ_MAGAZINE" 
 			usage="continuation" 
@@ -830,7 +837,7 @@
 		/>
 		<template 
 			name="CONTINUATION-fancy-bottom-6_template.xml" 
-			title="6 stories - smallG deco bottom"
+			title="6 stories - smallG liondoor bottom"
 			min="6" 
 			section="WSJ_MAGAZINE" 
 			usage="continuation" 

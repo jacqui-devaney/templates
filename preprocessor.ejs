@@ -65,6 +65,19 @@
 					small:  {$divide:[{$multiply:[{$count:[=article.headline]}, 12]}, =view.width]}
 				}
 			},
+			extents: {
+							if: =device.size, less-than: 8.8, then: {
+								comment: "divide the headline em width by view em width,",
+								comment: "where on average, each character takes up 0.5 em.",
+								comment: "and the view em width is the view pixel width divided by headline pixel height.",
+								comment: "the magic numbers here are half the font size.",
+								huge :  {$divide:[{$multiply:[{$count:[=article.headline]}, 37]}, =view.width]},
+								big :   {$divide:[{$multiply:[{$count:[=article.headline]}, 28]}, =view.width]},
+								large:  {$divide:[{$multiply:[{$count:[=article.headline]}, 20]}, =view.width]},
+								medium:  {$divide:[{$multiply:[{$count:[=article.headline]}, 18]}, =view.width]},
+								deco:  {$divide:[{$multiply:[{$count:[=article.headline]}, 12]}, =view.width]}
+							}
+						},
 			ad: {
 				prefix: { $join: [
 					{ $switch: [ =issue.edition, "us"] },

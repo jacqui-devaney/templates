@@ -49,7 +49,9 @@
 				},
 
 				small: { if: =device.size, less-than: 8.8 },
-				large: { if: =device.size, more-than: 8.8 }
+				large: { if: =device.size, more-than: 8.8 },
+								
+				headlines: { if-all: [{ if: =device.size, less-than: 8.8 }, { if: =device.model, equals: "Kindle Fire" }] }
 			},
 			justify: { if: =device.size, less-than: 8.8, then: left, else: justify },
 			extents: {

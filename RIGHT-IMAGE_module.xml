@@ -18,7 +18,7 @@
 		image: { 
 			width: 262,
 			height: 174,
-			padding: [0, 0, {$subtract:[=view.height, 174]}, 0]
+			padding: [0, 0, {if: =scale.small, then:{$subtract:[=view.height, 174]}, else:0}, 0]
 		},
 		.invisible: { display:none },
 		#small_headline: { display: { if: =options.small_headline, then:inherit }},

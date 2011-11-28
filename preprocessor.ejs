@@ -53,7 +53,10 @@
 								
 				headlines: { if-all: [{ if: =device.size, less-than: 8.8 }, { if: =device.model, equals: "Kindle Fire" }], then: true, else: false }
 			},
-			justify: { if: =device.size, less-than: 8.8, then: left, else: justify },
+			justify: { if-any: [
+						{if: =device.size, less-than: 8.8, then: true, else: false}, 
+						{if: =issue.edition, equals: "germany", then: true, else: false}
+					], then: left, else: justify },
 			extents: {
 				if: =device.size, less-than: 8.8, then: {
 					comment: "divide the headline em width by view em width,",

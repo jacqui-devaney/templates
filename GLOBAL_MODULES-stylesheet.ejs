@@ -3,8 +3,8 @@
 		font-name:DJ5EscrowCond-Bold,
 		font-size:{if-all: [
             =scale.headlines,
-            {if: =extents.huge, more-than: 1.0}, 
-            {if: =extents.huge, less-than: 1.5}
+            {if: =extents.huge, more-than: 1.0, then: true, else: false}, 
+            {if: =extents.huge, less-than: 1.5, then: true, else: false}
         ], then: 65, else: 75 },
 		line-height:75,
 		text-scale: {if: =scale.small, then: .9, else: inherit}
@@ -13,8 +13,8 @@
 		font-name:DJ5EscrowCond-Bold,
 		font-size:{if-all: [
             =scale.headlines,
-            {if: =extents.big, more-than: 1.0}, 
-            {if: =extents.big, less-than: 1.5}
+            {if: =extents.big, more-than: 1.0, then: true, else: false}, 
+            {if: =extents.big, less-than: 1.5, then: true, else: false}
         ], then: 47, else: 57},
 		line-height:61,
 		text-scale: {if: =scale.small, then: .9, else: inherit}
@@ -23,8 +23,8 @@
 		font-name:DJ5EscrowCond-Bold,
 		font-size:{if-all: [
             =scale.headlines,
-            {if: =extents.large, more-than: 1.0}, 
-            {if: =extents.large, less-than: 1.5}
+            {if: =extents.large, more-than: 1.0, then: true, else: false}, 
+            {if: =extents.large, less-than: 1.5, then: true, else: false}
         ], then: 32, else: 40 },
 		line-height:42,
 		text-scale: {if: =scale.small, then: .9, else: inherit}
@@ -35,8 +35,8 @@
 		font-name:DJ5EscrowCond-Bold,
 		font-size:{if-all: [
             =scale.headlines,
-            {if: =extents.medium, more-than: 1.0}, 
-            {if: =extents.medium, less-than: 1.5}
+            {if: =extents.medium, more-than: 1.0, then: true, else: false}, 
+            {if: =extents.medium, less-than: 1.5, then: true, else: false}
         ], then: 24, else: 32 },
 		line-height:36,
 		text-scale: {if: =scale.small, then: .9, else: inherit}
@@ -198,8 +198,8 @@
 		font-name:DJ5RetinaCd-Medium,
 		font-size:{if-all: [
             =scale.headlines,
-            {if: =extents.deco, more-than: 1.0}, 
-            {if: =extents.deco, less-than: 1.5}
+            {if: =extents.deco, more-than: 1.0, then: true, else: false}, 
+            {if: =extents.deco, less-than: 1.5, then: true, else: false}
         ], then: 20, else: 24 },
 		line-height:24,
 		color:#000,

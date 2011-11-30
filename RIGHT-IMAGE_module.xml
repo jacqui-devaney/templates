@@ -15,10 +15,16 @@
 			image-scale:1
 
 		},
+		#body: { 
+            column-count: { if: =options.two_columns, then:2, else:1 },
+            column-gutter: 20
+        },
+		
 		image: { 
 			width: 262,
 			height: 174,
-			padding: [0, 0, {if: =scale.small, then:{$subtract:[=view.height, 174]}, else:0}, 0]
+			padding: [0, 0, {if: =scale.small, then:{$subtract:[=view.height, 174]}, else:0}, 0],
+			display: { if: =options.hide_image, then:none, else:inherit }
 		},
 		.invisible: { display:none },
 		#small_headline: { display: { if: =options.small_headline, then:inherit }},

@@ -51,25 +51,12 @@
 				small: { if: =device.size, less-than: 8.8 },
 				large: { if: =device.size, more-than: 8.8 },
 								
-				headlines: { if-all: [{ if: =device.size, less-than: 8.8 }, { if: =device.model, equals: "Kindle Fire" }], then: true, else: false }
+				headlines: { if: =device.size, less-than: 8.8, then: true, else: false }
 			},
 			justify: { if-any: [
 						{if: =device.size, less-than: 8.8, then: true, else: false}, 
 						{if: =issue.edition, equals: "germany", then: true, else: false}
 					], then: left, else: justify },
-			extents: {
-				if: =device.size, less-than: 8.8, then: {
-					comment: "divide the headline em width by view em width,",
-					comment: "where on average, each character takes up 0.5 em.",
-					comment: "and the view em width is the view pixel width divided by headline pixel height.",
-					comment: "the magic numbers here are half the font size.",
-					huge :  {$divide:[{$multiply:[{$count:[=article.headline]}, 37]}, =view.width]},
-					big :   {$divide:[{$multiply:[{$count:[=article.headline]}, 28]}, =view.width]},
-					large:  {$divide:[{$multiply:[{$count:[=article.headline]}, 20]}, =view.width]},
-					medium: {$divide:[{$multiply:[{$count:[=article.headline]}, 18]}, =view.width]},
-					small:  {$divide:[{$multiply:[{$count:[=article.headline]}, 12]}, =view.width]}
-				}
-			},
 			extents: {
 							if: =device.size, less-than: 8.8, then: {
 								comment: "divide the headline em width by view em width,",
@@ -117,9 +104,11 @@
 						{ if: =page.section, equals: LIFE_AND_STYLE, then: lifeandstyle },	
 						{ if: =page.section, equals: HONG_KONG, then: hongkong },	
 						{ if: =page.section, equals: DEUTSCHLAND, then: deutschland },	
-						{ if: =page.section, equals: UNTERNEHMEN, then: unternehmen },	
 						{ if: =page.section, equals: ANALYSE, then: analyse },	
-						{ if: =page.section, equals: TECHNOLOGIE, then: technologie },
+						{ if: =page.section, equals: WIRTSCHAFT_AND_FINANZEN, then: wirtschaft },	
+						{ if: =page.section, equals: SEITE_EINS, then: 
+							{ if: =article.frompage, equals: 1, then: aufmacher, else: seiteeins }
+						},
 						"default"
 					] },
 					"/"					

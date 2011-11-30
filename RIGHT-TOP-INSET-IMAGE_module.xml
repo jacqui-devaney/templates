@@ -17,9 +17,10 @@
 			pixels-per-point-x:1,
 			pixels-per-point-y:1,
 			image-scale:1		
-		},
+		},		
 		image: {
-			height:{$multiply: [{$subtract:[=view.width, {$multiply:[=scale.dpi,28]}]}, 0.33] }
+			height:{$multiply: [{$subtract:[=view.width, {$multiply:[=scale.dpi,28]}]}, 0.33] },
+			display: { if: =options.hide_image, then:none, else:inherit }
 		},
 		.invisible: { display:none },
 		#small_headline: { display: { if: =options.small_headline, then:inherit }},

@@ -1643,6 +1643,32 @@
 	</dict>
 	<key>WSJ_MAGAZINE</key>
 	<dict>
+	<key>CONTINUATION-fancy-3OV-7_template</key>
+		<dict>
+			<key>deco</key>
+			<array>
+				<string>Deco Summary Liondoor MagCont1-3OVs-OV1</string>
+			</array>
+			<key>deco2</key>
+			<array>
+				<string>Deco Summary Liondoor MagCont1-3OVs-OV2</string>
+			</array>
+			<key>deco3</key>
+			<array>
+				<string>Deco Summary Liondoor MagCont1-3OVs-OV3</string>
+			</array>
+		</dict>
+		<key>CONTINUATION-fancy-smallG-OV-6_template</key>
+		<dict>
+			<key>deco</key>
+			<array>
+				<string>Deco Summary Liondoor MagCont2-SmallG_OV-G</string>
+			</array>
+			<key>deco2</key>
+			<array>
+				<string>Deco Summary Liondoor MagCont2-SmallG_OV-OV</string>
+			</array>
+		</dict>
 		<key>CONTINUATION-fancy-6_template</key>
 		<dict>
 			<key>deco</key>

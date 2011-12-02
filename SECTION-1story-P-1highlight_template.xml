@@ -5,10 +5,10 @@
 		
 		if: =portrait, then: {
 			#b1:	{ frame: [0, 0, 768, 620] },
-			#h3: {options:{highlight_dark:true, single:true}}
+			#h3: {options:{single:true}}
 		}, else: {
 			#b1:	{ frame: [8, 0, 768, 620] },
-			#h3: {options:{highlight_dark:true, single:true}}
+			#h3: {options:{single:true}}
 		}
 		
 		
@@ -16,7 +16,7 @@
 	
 	<box id="b1" embed="article" module="LARGE-hed-dek-image_module.xml" />
 	<box id="h3" embed="article" module="HIGHLIGHTS_module.xml" />
-	<box id="ad_background" class="ad_dark">
+	<box id="ad_background" class="ad_light">
 		<box id="highlight_ad" class="ad-rectangle" embed="advertisement" />
 	</box>
 	

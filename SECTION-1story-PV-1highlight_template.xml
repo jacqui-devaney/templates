@@ -4,17 +4,17 @@
 	<style>{ 
 		if: =portrait, then: {
 			#b1:	{ frame: [0, 0, 768, 620] },
-			#h4: {options:{highlight_dark:true, single:true}}
+			#h4: {options:{single:true}}
 		}, else: {
 			#b1:	{ frame: [0, 0, 768, 620] },
-			#h4: {options:{highlight_dark:true, single:true}}
+			#h4: {options:{single:true}}
 		}
 	}</style>
 	
 	<box id="b1" embed="article" module="IMAGE-only_module.xml" />
 	<box id="h4" embed="article" class="highlight_white" module="HIGHLIGHTS_module.xml" />
 	<box id="l3" class="line" />
-	<box id="ad_background_PV" class="ad_dark">
+	<box id="ad_background_PV" class="ad_light">
 		<box id="highlight_ad" class="ad-rectangle" embed="advertisement" />
 	</box>
 

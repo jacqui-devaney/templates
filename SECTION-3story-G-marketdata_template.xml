@@ -5,31 +5,30 @@
 		{ if: =portrait, then: {
 			#b1:	{ 
 						frame: {$switch: [
-							{if: =scale.small, then: [0, 0, 555, 620]},
+    						{if: =scale.small, then: [0, 0, 504, 620]},
 							{if: =scale.large, then: [0, 0, 571, 620]}
 						]},
 						options:{large_headline:true, show_image:true, no_border:true, bottom:true, byline:{if: =scale.small, then:true, else:false}} },
 			#b2:	{ 
 						frame: {$switch: [
-						{if: =scale.small, then: [567, 0, 240, 324]},
+        					{if: =scale.small, then: [516, 0, 250, 324]},
 						{if: =scale.large, then: [583, 0, 183, 324]}
 					]},
 					options:{small_headline:true, no_border:true, left:true, show_image:true, no_indent:true} 
 			},
 			#b3:	{ 
 						frame: {$switch: [
-						{if: =scale.small, then: [567, 325, 240, 294]},
+        					{if: =scale.small, then: [516, 325, 250, 294]},
 						{if: =scale.large, then: [583, 325, 183, 294]}
 					]},
 					options:{small_headline:true, left:true, no_indent:true} 
-			},
-			#h2: {options:{highlight_dark:true}}
+			}
 			
 		}, else: {
 			#b1:	{ frame: [11, 0, 571, 618], options:{large_headline:true, show_image:true, F_image:{if: =scale.small, then:true, else:false}, no_border:true, bottom:true, byline:{if: =scale.small, then:true, else:false}} },
 			#b2:	{ frame: [594, 0, 183, 320], options:{small_headline:true, no_border:true, left:true, no_indent:true} },
 			#b3:	{ frame: [594, 320, 183, 298], options:{small_headline:true, left:true, bottom:true, no_indent:true} },
-			#h2: {options:{highlight_dark:true, hide_image:{if: =scale.small, then:true, else:false}}}
+			#h2: {options:{hide_image:{if: =scale.small, then:true, else:false}}}
 			
 		}}
 	</style>
@@ -41,7 +40,7 @@
 		<box id="highlight_marketdata" embed="marketdata" />
 	</box>
 	<box id="h2" embed="article" module="HIGHLIGHTS_module.xml" />
-	<box id="ad_background" class="ad_dark">
+	<box id="ad_background" class="ad_light">
 		<box id="highlight_ad" class="ad-rectangle" embed="advertisement" />
 	</box>
 

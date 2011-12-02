@@ -766,7 +766,7 @@
 			title="7 stories - 3 OV liondoor"
 			min="7" 
 			usage="continuation" 
-			section="OFF_DUTY" 
+			section="OFF_DUTY,WSJ_MAGAZINE" 
 			deco="true" 
 			page="2" 
 		/>
@@ -775,7 +775,7 @@
 			title="6 stories - smallG liondoor 1 OV liondoor"
 			min="6" 
 			usage="continuation" 
-			section="OFF_DUTY" 
+			section="OFF_DUTY,WSJ_MAGAZINE" 
 			deco="true" 
 			page="3" 
 		/>
@@ -960,11 +960,11 @@
 		<article pages="ARTICLE-pages-hots.xml" type="Heard on the Street Other"/>
 		<article pages="ARTICLE-pages-hots.xml" type="Overheard"/>
 		<article pages="ARTICLE-pages-letters.xml" type="Letters"/>
-		<article pages="ARTICLE-pages-off-duty.xml" type="Tastings"/>
 		<article pages="ARTICLE-pages-off-duty.xml" type="Slow Food Fast"/>
-		<article pages="ARTICLE-pages-off-duty.xml" type="In My Kitchen"/>
 		<article pages="ARTICLE-pages-off-duty.xml" type="Mobile Special"/>
-		
+		<article pages="ARTICLE-pages-off-duty.xml" type="Pearls"/>
+		<article pages="ARTICLE-pages-off-duty.xml" type="Sites &amp; Sightings"/>
+		<article pages="ARTICLE-pages-off-duty.xml" type="Nursery"/>
 	</article-page-plans>
 	
 	<display-properties>

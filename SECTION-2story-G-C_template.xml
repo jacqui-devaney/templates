@@ -13,17 +13,15 @@
 			#b2:	{ 
 						frame: {$switch: [
 							{if: =scale.small, then: [526, 0, 240, 620]},
-							{if: =scale.large, then: [583, 0, 183, 620]}
+							{if: =scale.large, then: [583, 0, 183, 618]}
 						]},
 						options:{small_headline:true, show_image:true, no_border:true, left:true, bottom:true, no_indent:true} 
-			},
-			#h1: {options:{highlight_dark:true}},
-			#h2: {options:{highlight_dark:true}}
+			}
 		}, else: {
 			#b1:	{ frame: [11, 0, 571, 620], options:{large_headline:true, show_image:true, F_image:{if: =scale.small, then:true, else:false}, no_border:true, bottom:true, byline:{if: =scale.small, then:true, else:false}} },
 			#b2:	{ frame: [594, 0, 183, 620], options:{small_headline:true, show_image:true, no_border:true, left:true, bottom:true, no_indent:true} },
-			#h1: {options:{highlight_dark:true, hide_image:{if: =scale.small, then:true, else:false}}},
-			#h2: {options:{highlight_dark:true, hide_image:{if: =scale.small, then:true, else:false}}}
+			#h1: {options:{hide_image:{if: =scale.small, then:true, else:false}}},
+			#h2: {options:{hide_image:{if: =scale.small, then:true, else:false}}}
 		}
 	}</style>
 	
@@ -31,7 +29,7 @@
 	<box id="b2" embed="article" module="TOP-IMAGE_module.xml" />
 	<box id="h1" embed="article" module="HIGHLIGHTS_module.xml" />
 	<box id="h2" embed="article" module="HIGHLIGHTS_module.xml" />
-	<box id="ad_background" class="ad_dark">
+	<box id="ad_background" class="ad_light">
 		<box id="highlight_ad" class="ad-rectangle" embed="advertisement" />
 	</box>
 

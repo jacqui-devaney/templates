@@ -30,9 +30,7 @@
 						{if: =scale.large, then: [583, 325, 183, 294]}
 					]},
 					options:{small_headline:true, left:true, no_indent:true} 
-			},
-			#h1: {options:{highlight_dark:true}},
-			#h2: {options:{highlight_dark:true}}
+			}
 			
 		}, else: {
 			#b1:	{ 
@@ -51,8 +49,8 @@
 					},
 			#b3:	{ frame: [594, 0, 183, 328], options:{small_headline:true, no_border:true, left:true, show_image:true, no_indent:true} },
 			#b4:	{ frame: [594, 328, 183, 291], options:{small_headline:true, left:true, bottom:true, no_indent:true} },
-			#h1: {options:{highlight_dark:true, hide_image:{if: =scale.small, then:true, else:false}}},
-			#h2: {options:{highlight_dark:true, hide_image:{if: =scale.small, then:true, else:false}}}
+			#h1: {options:{hide_image:{if: =scale.small, then:true, else:false}}},
+			#h2: {options:{hide_image:{if: =scale.small, then:true, else:false}}}
 			
 		}
 	}</style>
@@ -63,7 +61,7 @@
 	<box id="b4" embed="article" module="TOP-IMAGE_module.xml" />
 	<box id="h1" embed="article" module="HIGHLIGHTS_module.xml" />
 	<box id="h2" embed="article" module="HIGHLIGHTS_module.xml" />
-	<box id="ad_background" class="ad_dark">
+	<box id="ad_background" class="ad_light">
 		<box id="highlight_ad" class="ad-rectangle" embed="advertisement" />
 	</box>
 

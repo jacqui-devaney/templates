@@ -450,6 +450,25 @@
 			deco="true" 
 			page="4" 
 		/>
+		<template 
+			name="CONTINUATION-fancy-3OV-7_template.xml" 
+			title="7 stories - 3 OV liondoor"
+			min="7" 
+			usage="continuation" 
+			section="WSJ_MAGAZINE" 
+			deco="true" 
+			page="2" 
+		/>
+		<template 
+			name="CONTINUATION-fancy-smallG-OV-6_template.xml" 
+			title="6 stories - smallG liondoor 1 OV liondoor"
+			min="6" 
+			usage="continuation" 
+			section="WSJ_MAGAZINE" 
+			deco="true" 
+			page="3" 
+		/>
+		
 		<!-- END FANCY CONTINUATION -->
 		
 		<!-- GENERIC CONTINUATION -->

@@ -30,8 +30,7 @@
 						{if: =scale.large, then: [583, 296, 183, 324]}
 					]},
 					options:{small_headline:true, show_image:true, left:true, bottom:true, no_indent:true,  show_image:true} 
-			},
-			#h2: {options:{highlight_dark:true}}
+			}
 		}, else: {
 			#b1:	{ 
 						frame: {$switch: [
@@ -61,7 +60,7 @@
 					]},
 					options:{small_headline:true, show_image:{if: =scale.small, then:false, else:true}, left:true, bottom:true, no_indent:true} 
 			},
-			#h2: {options:{highlight_dark:true, hide_image:{if: =scale.small, then:true, else:false}}}
+			#h2: {options:{hide_image:{if: =scale.small, then:true, else:false}}}
 		}
 	}</style>
 	
@@ -73,7 +72,7 @@
 		<box id="highlight_marketdata" embed="marketdata" />
 	</box>
 	<box id="h2" embed="article" module="HIGHLIGHTS_module.xml" />
-	<box id="ad_background" class="ad_dark">
+	<box id="ad_background" class="ad_light">
 		<box id="highlight_ad" class="ad-rectangle" embed="advertisement" />
 	</box>
 

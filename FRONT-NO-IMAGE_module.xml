@@ -49,8 +49,8 @@
 	<box id="wrapper">
 		<panel id="headline">
 			<p id="small_headline" class="invisible"><span embed="headline" /><mark class="key" /></p>
-			<p id="medium_headline" class="invisible"><span embed="headline" /><mark class="key" /></p>
-			<p id="large_headline" class="invisible"><span embed="headline" /><mark class="key" /></p>
+			<p id="medium_headline" class="invisible"><span embed="headline" /><mark class="key" /> stuff and things</p>
+			<p id="large_headline" class="invisible"><span embed="headline" /><mark class="key" /> stuff and things</p>
 		</panel>
 		<panel id="body_container">
 	        <panel id="body">

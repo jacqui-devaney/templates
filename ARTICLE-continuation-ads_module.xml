@@ -4,7 +4,7 @@
 	<style>{
 		$join: [
 		{#header_top: { padding:[0, 0, 8, 5] }},
-		{#body_container : { padding: [8, 5, 0, 5]}},
+		{#body_container : { padding: [5, 5, 5, 5]}},
 		{.article_body: { 
             column-count: {$divide: [=view.width, {$multiply:[250, =scale.dpi]}]},
             column-gutter: 30,

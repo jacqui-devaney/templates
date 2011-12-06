@@ -4,7 +4,7 @@
 	<style>{
 		$join: [
 		{#body_container : { 
-			padding: [8, 20, 8, 20], 
+			padding: [5, 20, 5, 20], 
 			min-height:200
 		}},
 		{.article_body: { 

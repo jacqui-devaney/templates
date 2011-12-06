@@ -22,7 +22,7 @@
 			{#body: { 
 	            column-count: {$switch: [
 					{if: =scale.small, then: { if: =options.two_columns, then:2, else:1 }},
-					{if: =scale.large, then: {$divide: [=view.width, {$multiply:[250, =scale.dpi]}]}}
+					{if: =scale.large, then: {$divide: [=view.width, {$multiply:[245, =scale.dpi]}]}}
 					
 				]},
 	            column-gutter: 20,
@@ -49,8 +49,8 @@
 	<box id="wrapper">
 		<panel id="headline">
 			<p id="small_headline" class="invisible"><span embed="headline" /><mark class="key" /></p>
-			<p id="medium_headline" class="invisible"><span embed="headline" /><mark class="key" /> stuff and things</p>
-			<p id="large_headline" class="invisible"><span embed="headline" /><mark class="key" /> stuff and things</p>
+			<p id="medium_headline" class="invisible"><span embed="headline" /><mark class="key" /></p>
+			<p id="large_headline" class="invisible"><span embed="headline" /><mark class="key" /></p>
 		</panel>
 		<panel id="body_container">
 	        <panel id="body">

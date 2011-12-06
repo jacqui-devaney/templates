@@ -44,18 +44,25 @@
 		
 		<!-- BUSINESS AND FINANCE -->
 		<template 
-			name="SECTION-4story-D-C-marketdata_template.xml" 
-			title="4 story - Plain (marketdata)" 
+			name="SECTION-4story-D-C-marketdata_template.xml"
 			section="BUSINESS_AND_FINANCE" 
-			min="6" 
-			usage="front" 
+			title="4 story Plain - Marketdata"
+			min="6"
+			usage="front"
 		/>
 		<template 
-			name="SECTION-3story-G-marketdata_template.xml" 
-			title="3 story - G photo (marketdata)" 
+			name="SECTION-4story-smallG-top-marketdata_template.xml"
 			section="BUSINESS_AND_FINANCE" 
-			min="5" 
-			usage="front" 
+			title="4 story - G photo"
+			min="6"
+			usage="front"
+		/>
+		<template 
+			name="SECTION-3story-G-marketdata_template.xml"
+			section="BUSINESS_AND_FINANCE" 
+			title="3story - G photo marketdata"
+			min="5"
+			usage="front"
 		/>
 		<!-- END BUSINESS AND FINANCE -->
 		
@@ -78,11 +85,41 @@
 		
 		<!-- MARKETPLACE -->
 		<template 
-			name="SECTION-4story-D-C_template.xml" 
-			title="4 story - Plain" 
+			name="SECTION-4story-2D-C_template.xml"
 			section="MARKETPLACE" 
+			title="4 story Plain"
+			min="6"
+			usage="front"
+		/>
+		<template 
+			name="SECTION-4story-smallG-top_template.xml"
+			section="MARKETPLACE" 
+			title="4 story - G photo"
+			min="6"
+			usage="front"
+		/>
+		<template 
+			name="SECTION-3story-G_template.xml"
+			section="MARKETPLACE" 
+			title="3 story - G photo"
+			min="5"
+			usage="front"
+		/>
+		<template 
+			name="SECTION-4story-smallG-deco_template.xml"
+			section="MARKETPLACE" 
+			title="4 story-Small G Media Deco"
 			min="6" 
-			usage="front" 
+			deco="true"
+			usage="front"
+		/>
+		<template 
+			name="SECTION-3story-G-deco-C_template.xml"
+			section="MARKETPLACE" 
+			deco="true" 
+			title="3 story - G Media Deco"
+			min="5"
+			usage="front"
 		/>
 		<!-- END MARKETPLACE -->
 		

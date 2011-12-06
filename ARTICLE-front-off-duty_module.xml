@@ -9,12 +9,8 @@
             column-count:{if: =portrait, then:{$divide: [=view.width, {$multiply:[250, =scale.dpi]}]}, else: 1},
             column-gutter: 20,
 			column-height:balance,
-			flow: article_body,
-			background-color:red
+			flow: article_body
         }},
-		{.article_body: {
-			min-height:200
-		}},
 		{#mediabucket: {frame: [3, 3, 570, 612] }},
 		{if: =portrait, then: {
             #mediabucket_container:	{ frame: [0, 0, 582, 623]  }

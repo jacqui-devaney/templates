@@ -22,7 +22,7 @@
 			{#padding: [20, 8] },
 			{#body: { 
 	            column-count: {$switch: [
-					{if: =scale.small, then: {$divide: [=view.width, {$multiply:[170, =scale.dpi]}]}},
+					{if: =scale.small, then: { if: =options.two_columns, then:2, else:1 }},
 					{if: =scale.large, then: {$divide: [=view.width, {$multiply:[250, =scale.dpi]}]}}
 					
 				]},
@@ -30,21 +30,19 @@
 	        }},
 			{#body_container: { padding: [0, 8]}},
 			{#headline: { padding: [0, 8]}},
-			{#tall_wide: {
+			{image: {
 				width:{$subtract:[=view.width, 18]}, 
-				height:{$multiply: [{$subtract:[=view.width, 18]}, 0.66] },
-				display: { if: =options.show_image, then:inherit },
-				padding: [0, 9, 8, 9]
-			}},
-			{#skinny_wide: {
-				height:{$multiply: [=view.width, 0.39] },
-				display: { if: =options.show_image_skinny, then:inherit },
-				padding: [0, 8, 8, 8],
+				height:{$multiply: [{$subtract:[=view.width, 18]}, {if: =options.F_image, then:0.39, else:0.66}] },
+				display: { if: =options.show_image, then:inherit, else:none },
+				padding: [0, 9, 8, 9],
+				options: {
+					match: {
+						if: =options.F_image, then: { width:571, height:226, max-height:226 }
+						}
+				},
 				pixels-per-point-x:1,
-				pixels-per-point-y:1,
-				image-scale:1,
-				options: {match: {width: 571, height:226}}
-				
+				pixels-per-point-y:{if: =scale.small, then:.9},
+				image-scale:1
 			}},
 			{.invisible: { display:none }},
 			{#small_headline: { display: { if: =options.small_headline, then:inherit }}},
@@ -58,8 +56,7 @@
 			<p id="medium_headline" class="invisible"><span embed="headline" /><mark class="key" /></p>
 			<p id="large_headline" class="invisible"><span embed="headline" /><mark class="key" /></p>
 		</panel>
-		<image id="tall_wide" class="invisible" embed="summary-image"/>
-		<image id="skinny_wide" class="invisible" embed="summary-image"/>
+		<image embed="summary-image"/>
 		
 		<panel id="body_container">
 	        <panel id="body">

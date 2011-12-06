@@ -5,28 +5,28 @@
 		if: =portrait, then: {
 			#b1:	{ 
 						frame: {$switch: [
-							{if: =scale.small, then: [195, 28, 571, 500]},
+							{if: =widescreen, then: [195, 28, 571, 500]},
 							{if: =scale.large, then: [195, 26, 571, 430]}
 						]},
-						options:{large_headline:true, show_image_skinny:true, no_border:true, byline:{if: =scale.small, then:true, else:false}} 
+						options:{large_headline:true, show_image:true, F_image:true, no_border:true, byline:{if: =scale.small, then:true, else:false}} 
 			},
 			#b2:	{ 
 						frame: {$switch: [
-							{if: =scale.small, then: [195, 529, 280, 173]},
+							{if: =widescreen, then: [195, 529, 280, 173]},
 							{if: =scale.large, then: [195, 456, 280, 210]}
 						]},
 						options:{small_headline:true, no_indent:true} 
 			},
 			#b3:	{ 
 						frame: {$switch: [
-							{if: =scale.small, then: [195, 703, 280, 172]},
+							{if: =widescreen, then: [195, 703, 280, 172]},
 							{if: =scale.large, then: [195, 666, 280, 210]}
 						]},
 						options:{small_headline:true, bottom:true, no_indent:true} 
 			},
 			#b4:	{ 
 						frame: {$switch: [
-							{if: =scale.small, then: [486, 529, 280, 345]},
+							{if: =widescreen, then: [486, 529, 280, 345]},
 							{if: =scale.large, then: [486, 456, 280, 420]}
 						]},
 						options:{no_indent:true}
@@ -34,30 +34,30 @@
 		}, else: {
 			#b1:	{ 
 						frame: {$switch: [
-							{if: =scale.small, then: [205, 28, 377, 593]},
+							{if: =widescreen, then: [205, 28, 377, 593]},
 							{if: =scale.large, then: [205, 26, 571, 430]}
 						]},
-						options:{large_headline:true, show_image_skinny:true, no_border:true, byline:{if: =scale.small, then:true, else:false}} 
+						options:{large_headline:true, F_image:true, show_image:true, no_border:true, byline:{if: =scale.small, then:true, else:false}} 
 			},
 			#b2:	{ 
 						frame: {$switch: [
-							{if: =scale.small, then: [592, 28, 238, 272]},
+							{if: =widescreen, then: [592, 28, 238, 272]},
 							{if: =scale.large, then: [205, 456, 571, 164]}
 						]},
-						options:{small_headline:true, bottom:true, no_border:{if: =scale.small, then:true, else:false}, no_indent:true} 
+						options:{small_headline:true, bottom:true, no_border:{if: =widescreen, then:true, else:false}, no_indent:true} 
 					},
 			#b3:	{ 
 						frame: {$switch: [
-							{if: =scale.small, then: [592, 300, 238, 315]},
+							{if: =widescreen, then: [592, 300, 238, 315]},
 							{if: =scale.large, then: [787, 26, 237, 201]}
 						]},
-						options:{small_headline:true, no_border:{if: =scale.small, then:false, else:true}, no_indent:true} 
+						options:{small_headline:true, no_border:{if: =widescreen, then:false, else:true}, no_indent:true} 
 			},
 			#b4:	{ frame: {$switch: [
-							{if: =scale.small, then: [840, 36, 183, 582]},
+							{if: =widescreen, then: [840, 36, 183, 582]},
 							{if: =scale.large, then: [787, 227, 237, 394]}
 					]},
-					options: {no_hr:{if: =scale.small, then:true, else:false}, no_indent:true}	
+					options: {no_hr:{if: =widescreen, then:true, else:false}, no_indent:true}	
 			}
 		}
 				

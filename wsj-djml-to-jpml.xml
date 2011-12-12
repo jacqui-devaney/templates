@@ -68,7 +68,7 @@
   <xsl:when test="($region=&quot;US&quot; or $region=&quot;XAMLUS&quot; or $region=&quot;GERMANY&quot;) and summary/alt-summary-body[@destination-type=&quot;THIS-ART&quot; and starts-with(@page,&quot;|Mobile|&quot;)]/headline/main-hed">
     <xsl:value-of select="summary/alt-summary-body[@destination-type=&quot;THIS-ART&quot; and starts-with(@page,&quot;|Mobile|&quot;)]/headline/main-hed" />
   </xsl:when>
-  <xsl:when test="($region=&quot;US&quot; or $region=&quot;XAMLUS&quot; or $issuetype=&quot;NOW&quot;) and summary/summary-body/headline/main-hed">
+  <xsl:when test="($region=&quot;US&quot; or $region=&quot;XAMLUS&quot; or $region=&quot;GERMANY&quot; or $issuetype=&quot;NOW&quot;) and summary/summary-body/headline/main-hed">
      <xsl:value-of select="summary/summary-body/headline/main-hed" />
   </xsl:when>
   <xsl:otherwise>

@@ -5,28 +5,28 @@
 		if: =portrait, then: {
 			#b1:	{ 
 						frame: {$switch: [
-						{if: =scale.small, then: [0, 0, 514, 257]},
+						{if: =widescreen, then: [0, 0, 514, 257]},
 						{if: =scale.large, then: [0, 0, 571, 188]}
 					]},
 					options:{large_headline:true, no_border:true, two_columns:true, byline:{if: =scale.small, then:true, else:false}} 
 			},
 			#deco:	{ 
 						frame: {$switch: [
-						{if: =scale.small, then: [0, 257, 514, 362]},
+						{if: =widescreen, then: [0, 257, 514, 362]},
 						{if: =scale.large, then: [0, 188, 569, 432]}
 					]},
 					options:{normal_headline:true} 
 			},
 			#b2:	{ 
 						frame: {$switch: [
-						{if: =scale.small, then: [526, 0, 240, 324]},
+						{if: =widescreen, then: [526, 0, 240, 324]},
 						{if: =scale.large, then: [583, 0, 183, 324]}
 					]},
 					options:{small_headline:true, no_border:true, left:true, show_image:true, no_indent:true} 
 			},
 			#b3:	{ 
 						frame: {$switch: [
-						{if: =scale.small, then: [526, 325, 240, 294]},
+						{if: =widescreen, then: [526, 325, 240, 294]},
 						{if: =scale.large, then: [583, 325, 183, 294]}
 					]},
 					options:{small_headline:true, left:true, no_indent:true} 
@@ -35,19 +35,19 @@
 		}, else: {
 			#b1:	{ 
 						frame: {$switch: [
-						{if: =scale.small, then: [11, 0, 571, 250]},
+						{if: =widescreen, then: [11, 0, 571, 250]},
 						{if: =scale.large, then: [11, 0, 571, 188]}
 					]},
 					options:{large_headline:true, no_border:true, two_columns:true, byline:{if: =scale.small, then:true, else:false}} 
 			},
 			#deco:	{ 
 						frame: {$switch: [
-						{if: =scale.small, then: [11, 250, 571, 370]},
+						{if: =widescreen, then: [11, 250, 571, 370]},
 						{if: =scale.large, then: [11, 188, 569, 432]}
 					]}, 
 						options:{normal_headline:true, F_image:{if: =scale.small, then:true, else:false}} 
 					},
-			#b2:	{ frame: [594, 0, 183, 328], options:{small_headline:true, no_border:true, left:true, show_image:=scale.large, no_indent:true} },
+			#b2:	{ frame: [594, 0, 183, 328], options:{small_headline:true, no_border:true, left:true, show_image: {if: =widescreen, then:false, else:true}, no_indent:true} },
 			#b3:	{ frame: [594, 328, 183, 291], options:{small_headline:true, left:true, bottom:true, no_indent:true} },
 			#h1: {options:{hide_image:true}},
 			#h2: {options:{hide_image:true}}

@@ -3,9 +3,9 @@
 	<style src="SECTION-stylesheet.ejs" />
 	<style>{
 		if: =portrait, then: {
-			#b1:	{ frame: [0, 0, 768, 620] }
+			#b1:	{ frame: [10, 0, 749, 620], options:{P_image:true} }
 		}, else: {
-			#b1:	{ frame: [8, 0, 768, 620] },
+			#b1:	{ frame: [18, 0, 749, 620], options:{P_image:true} },
 			#h2: {options:{hide_image:{if: =scale.small, then:true, else:false}}},
 			#h1: {options:{hide_image:{if: =scale.small, then:true, else:false}}}
 			

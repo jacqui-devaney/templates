@@ -2,24 +2,29 @@
 	<style src="GLOBAL_MODULES-stylesheet.ejs" />
 	<style src="GLOBAL-stylesheet.ejs" />
 	<style>{
-		#image_container: { 
-			width:749,
-			anchor-x:center,
-			anchor-y:bottom
-		},
 		image: {
-			width:749,
-			height:499,
-			padding: [10, 0]
+            pixels-per-point-x:1,
+            pixels-per-point-y:{if: =scale.small, then:.9, else: 1},
+			options: {
+				match: {
+					if: =options.P_image, 
+                    then: { width:749, height:499, min-height:499 }
+				}
+			},
+            anchor-y:bottom,
+			image-scale: {$max:[1,{$divide:[=view.width, 749]}]}
+
+            
 		},
+        
+		#text: {padding: [8, 0, 8, 0]}
 		
-		#text: {padding: [8, 8, 0, 8]}
 	}</style>
 	<box id="text">
-		<p id="bignews_big_headline"><span embed="headline" /><mark class="key" /></p>
+		<p id="large_headline"><span embed="headline" /><mark class="key" /></p>
 		<h2 class="large_dek"><span embed="subhed" /></h2>
 	</box>
-	<box id="image_container">
-		<image embed="summary-image" />
-	</box>
+    <image embed="summary-image" />
 </jpml>
+
+

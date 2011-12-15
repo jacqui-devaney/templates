@@ -30,19 +30,20 @@
 			{#body_container: { padding: [0, 8, {if: =options.bottom, then:15, else:8}, 8]}},
 			{#headline: { padding: [0, 8]}},
 			{image: {
-				width:{$subtract:[=view.width, 18]}, 
+				pixels-per-point-x:1,
+				pixels-per-point-y:1,
 				height: {$multiply: [{$subtract:[=view.width, 18]}, {if: =options.F_image, then:0.39, else:0.66}] },
-				display: { if: =options.show_image, then:inherit, else:none },
+
+                display: { if: =options.show_image, then:inherit, else:none },
 				padding: [0, 9, 8, 9],
 				options: {
 					match: {
-						if: =options.F_image, then: { width:571, height:226, max-height:226 }
-						}
+						if: =options.F_image, 
+                        then: { width:571, height:226, max-height:226 }
+					}
 				},
-				pixels-per-point-x:1,
-				pixels-per-point-y:{if: =scale.small, then:.9},
-				image-scale:1
-			}},
+                image-scale: {$max:[1,{$divide:[{$subtract:[=view.width, 18]}, 553]}]}
+            }},
 			
 			
 			{.invisible: { display:none }},

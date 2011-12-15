@@ -467,10 +467,11 @@
 		text-scale:{if: =scale.small, then: .9, else: 1}
 		
 	},
-	#continued: { content: { $switch: [
-		{ if: =app.language, equals: en, then: "Continued" },
-		{ if: =app.language, equals: de, then: "Mehr" }
-	] },
+	#continued: {
+		content: { $switch: [
+			{ if: =app.language, equals: en, then: "Continued" },
+			{ if: =app.language, equals: de, then: "\u00a0" }
+		] },		
 		font-name:DJ5EscrowCond-BoldItalic,
 		font-size:13,
 		color:#989898,
@@ -503,34 +504,4 @@
 	}
 	
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

@@ -41,8 +41,8 @@
 						}
 				},
 				pixels-per-point-x:1,
-				pixels-per-point-y:{if: =scale.small, then:.9},
-				image-scale:1
+				pixels-per-point-y:1,
+                image-scale: {$max:[1,{$divide:[{$subtract:[=view.width, 18]}, 553]}]}
 			}},
 			{.invisible: { display:none }},
 			{#small_headline: { display: { if: =options.small_headline, then:inherit }}},

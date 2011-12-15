@@ -37,9 +37,13 @@
 			{image:{
 				options: {
 					match: {
-						if: =options.F_image, then: { width:571, height:226, max-height:226 }
+						if: =options.F_image, then: { width:571, height:226, min-height:226 }
 					}
-				}
+				},
+				image-scale: {$max:[1,{$divide:[{$subtract:[=view.width, 18]}, 571]}]},
+                pixels-per-point-x:1,
+				pixels-per-point-y:1
+				
 				
 			}},
 			

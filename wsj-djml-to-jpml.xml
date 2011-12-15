@@ -30,9 +30,8 @@
     <!-- TODO: grab largest summary image if there are no article images? -->
     <!-- TODO: exclude images referenced in insets? -->
     <!-- TODO: exclude images wrapped in media@type=FLASH -->
-    <!-- REDO: generate-id(.) = generate-id(key('srcid', @src-id)) and -->
     <panel id="article-image">
-        <xsl:apply-templates select="article/article-body//image[@width &gt; 0 and @height &gt; 0]"/>
+        <xsl:apply-templates select="article/article-body//image[generate-id(.) = generate-id(key('srcid', @src-id)) and @width &gt; 0 and @height &gt; 0]"/>
     </panel>
     
     <!-- TODO: slideshows? media@type=FLASH and image@slug=slideshow -->
@@ -159,8 +158,7 @@
 </xsl:template> 
 
 <xsl:template match="summary">
-    <!-- TODO/REDO: generate-id(.) = generate-id(key('srcid', @src-id)) and -->
-    <xsl:apply-templates select="*[self::summary-body or self::alt-summary-body]//image[@width &gt; 0 and @height &gt; 0]"/>
+    <xsl:apply-templates select="*[self::summary-body or self::alt-summary-body]//image[generate-id(.) = generate-id(key('srcid', @src-id)) and @width &gt; 0 and @height &gt; 0]"/>
 </xsl:template>
 
 <xsl:template match="image">

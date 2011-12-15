@@ -49,7 +49,7 @@
 	        #b2 : { frame: [256, 430, 256, 190], options: {hide_strap: {if:=articles.b2.subsection, equals:=articles.b1.subsection}} },
 	        #b3 : { frame: [512, 430, 256, 190], options: {hide_strap: {if:=articles.b3.subsection, equals:=articles.b2.subsection}} },
 	        #b4 : { frame: [768, 430, 256, 190], options: {hide_strap: {if:=articles.b4.subsection, equals:=articles.b3.subsection}} },
-	        #deco : { frame: [256, 0, 504, 420], options: {bottom_headline:true, bottom_border:true} },
+	        #deco : { frame: [256, 0, 504, 420], options: {bottom_headline:true, bottom_border:true, F_image:{if: =widescreen, then:true, else:false}} },
 	        #deco2 : { frame: [768, 0, 252, 420], options: {small_headline:true, bottom_border:true} }
         }
     }</style>

@@ -50,7 +50,7 @@
 	        #b3: { frame: [256, 232, 256, 395], options: {hide_strap: {if:=articles.b2.subsection, equals:=articles.b1.subsection}} },
 	        #b4: { frame: [512, 0, 256, 224], options: {hide_strap: {if:=articles.b4.subsection, equals:=articles.b3.subsection}} },
 	        #b5: { frame: [768, 0, 256, 224], options: {hide_strap: {if:=articles.b5.subsection, equals:=articles.b4.subsection}} },
-	        #deco: { frame: [512, 225, 512, 395], options: {normal_headline:true} }
+	        #deco: { frame: [512, 225, 512, 395], options: {normal_headline:true, F_image:{if: =widescreen, then:true, else:false}} }
         }
     }</style>
     <box id="b1" embed="article" module="CONTINUATION-dynamic_module.xml" />    

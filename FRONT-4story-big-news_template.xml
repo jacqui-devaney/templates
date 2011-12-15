@@ -48,7 +48,7 @@
 			#ad_background:	{ 
 								frame: {$switch: [
 								{if: =widescreen, then: [515, 672, 250, 217]},
-								{if: =scale.large, then: [582, 672, 183, 197]}
+								{if: =scale.large, then: [582, 672, 184, 197]}
 							]}
 			}
 		}, else: {
@@ -91,8 +91,8 @@
 								
 			},
 			#ad_background:		{ frame: {$switch: [
-									{if: =widescreen, then: [833, 385, 183, 197]},
-									{if: =scale.large, then: [809, 385, 183, 197]}
+									{if: =widescreen, then: [833, 385, 184, 197]},
+									{if: =scale.large, then: [809, 385, 184, 197]}
 								]}
 			}
 		}

@@ -15,7 +15,7 @@
 	<box id="b1" embed="article" module="IMAGE-only_module.xml" />
 	<box id="h1" embed="article" module="HIGHLIGHTS_module.xml" />
 	<box id="h2" embed="article" module="HIGHLIGHTS_module.xml" />
-	<box id="ad_background_PV" class="ad_light">
+	<box id="ad_background_PV">
 		<box id="highlight_ad" class="ad-rectangle" embed="advertisement" />
 	</box>
 	

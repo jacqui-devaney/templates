@@ -8,7 +8,7 @@
 						{if: =widescreen, then: [0, 10, 768, 253]},
 						{if: =scale.large, then: [0, 10, 768, 188]}
 					]},
-					options:{large_headline:true, hide_image:{if: =scale.small, then:true, else:false}, two_columns:{if: =widescreen, then:true, else:false}} 
+					options:{large_headline:true, hide_image:{if: =widescreen, then:true, else:false}, two_columns:{if: =widescreen, then:true, else:false}} 
 			},
 			#b2:	{ 
 						frame: {$switch: [

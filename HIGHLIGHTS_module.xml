@@ -3,7 +3,7 @@
 	<style src="GLOBAL-stylesheet.ejs" />
     <style>{
 		jpml: {
-				background-color:#efefef,
+				background-color:{if: =options.white_highlight, then:#ffffff, else:#efefef},
 				padding: [10, 8, 10, 8],
 				border-width: { if: =options.single, then:[0, {if: =portrait, then: 0, else: 1}, {if: =landscape, then: 0, else: 1}, 0], else:[0, {if: =portrait, then: 1, else: 0}, {if: =landscape, then: 1, else: 0}, 0]},
 				border-color:#b1aca1

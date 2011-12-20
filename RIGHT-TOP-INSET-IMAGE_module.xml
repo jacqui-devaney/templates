@@ -2,7 +2,7 @@
 	<style src="GLOBAL_MODULES-stylesheet.ejs" />
 	<style src="GLOBAL-stylesheet.ejs" />
 	<style>{
-        jpml: {padding:[10, 0, {if: =options.bottom, then:15, else:10}, 8]
+        jpml: {padding:[10, 0, {if: =options.bottom, then:15, else:10}, 0]
 		},
 		#body: { 
             column-count: { if: =options.one_column, then:1, else:2},

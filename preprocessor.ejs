@@ -72,7 +72,10 @@
 						},
 			ad: {
 				prefix: { $join: [
-					{ $switch: [ =issue.edition, "us"] },
+					{ $switch: [ =issue.edition, 
+						{ if: =article.headline, ends-with: "\u200a", then: "asia" },
+						{ if: =article.headline, ends-with: "\u2009", then: "europe" },
+					"us"] },
 					".",
 					{ $switch: [
 						{ if: =device.platform, equals: iOS, then: ipad },

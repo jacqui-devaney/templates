@@ -18,7 +18,12 @@
     
     <!-- TODO: paid/free flag -->
 
-    <p id="headline"><xsl:call-template name="headline"/></p>
+    <p id="headline"><xsl:call-template name="headline"/><xsl:choose
+        ><xsl:when 
+            test="$region=&quot;ASIA&quot;"><xsl:value-of select="'&amp;#8202;'" disable-output-escaping="yes"/></xsl:when
+        ><xsl:when 
+            test="$region=&quot;EUROPE&quot;"><xsl:value-of select="'&amp;#8201;'" disable-output-escaping="yes"/></xsl:when
+    ></xsl:choose></p>
     <p id="subhed"><xsl:value-of select="article/article-body/headline/deck"/></p>
     <p id="byline"><xsl:value-of select="article/article-body/byline"/></p>
     <p id="summary"><xsl:value-of select="summary/summary-body/p"/></p>

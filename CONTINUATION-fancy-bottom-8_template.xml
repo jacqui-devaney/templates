@@ -5,54 +5,54 @@
         if: =portrait, then: {
             #b1 : { 
 					frame: {$switch: [
-						{if: =scale.small, then: [0, 0, 256, 528]},
+						{if: =widescreen, then: [0, 0, 256, 528]},
 						{if: =scale.large, then: [0, 0, 256, 464]}
 					]}
 			},
             #b2 : { 
 					frame: {$switch: [
-						{if: =scale.small, then: [0, 528, 256, 345]},
+						{if: =widescreen, then: [0, 528, 256, 345]},
 						{if: =scale.large, then: [0, 479, 256, 396]}
 					]},
 					options: {hide_strap: {if:=articles.b2.subsection, equals:=articles.b1.subsection}} 
 			},
             #b3 : { 
 					frame: {$switch: [
-						{if: =scale.small, then: [256, 0, 256, 264]},
+						{if: =widescreen, then: [256, 0, 256, 264]},
 						{if: =scale.large, then: [0, 677, 256, 197]}
 					]},
 					options: {hide_strap: {if:=articles.b3.subsection, equals:=articles.b2.subsection}} 
 			},
             #b4 : { 
 					frame: {$switch: [
-						{if: =scale.small, then: [256, 264, 256, 264]},
+						{if: =widescreen, then: [256, 264, 256, 264]},
 						{if: =scale.large, then: [256, 0, 256, 231]}
 					]},
 					options: {hide_strap: {if:=articles.b4.subsection, equals:=articles.b3.subsection}} 
 			},
             #b5 : { 
 					frame: {$switch: [
-						{if: =scale.small, then: [512, 0, 256, 176]},
+						{if: =widescreen, then: [512, 0, 256, 176]},
 						{if: =scale.large, then: [256, 231, 256, 231]}
 					]},
 					options: {hide_strap: {if:=articles.b5.subsection, equals:=articles.b4.subsection}} 
 			},
             #b6 : { 
 					frame: {$switch: [
-						{if: =scale.small, then: [512, 176, 256, 176]},
+						{if: =widescreen, then: [512, 176, 256, 176]},
 						{if: =scale.large, then: [512, 0, 256, 231]}
 					]},
 					options: {hide_strap: {if:=articles.b6.subsection, equals:=articles.b5.subsection}} 
 			},
             #b7 : { 
 					frame: {$switch: [
-						{if: =scale.small, then: [512, 352, 256, 176]},
+						{if: =widescreen, then: [512, 352, 256, 176]},
 						{if: =scale.large, then: [512, 231, 256, 231]}
 					]},
 					options: {hide_strap: {if:=articles.b7.subsection, equals:=articles.b6.subsection}} 
 			},
             #deco : { frame: {$switch: [
-				{if: =scale.small, then: [264, 529, 491, 345]},
+				{if: =widescreen, then: [264, 529, 491, 345]},
 				{if: =scale.large, then: [264, 479, 491, 395]}
 			]},
 			options: {normal_headline:true} 

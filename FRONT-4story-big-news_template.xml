@@ -57,7 +57,7 @@
 						{if: =widescreen, then: [11, 34, 1002, 333]},
 						{if: =scale.large, then: [11, 34, 1002, 333]}
 					]},
-					options:{bignews_huge_headline:true, no_border:true, bottom:true, byline:{if: =scale.small, then:true, else:false}} 
+					options:{bignews_huge_headline:true, no_border:true, bottom:true, byline:{if: =scale.small, then:true, else:false}, two_columns:true} 
 			},
 			#b2:	{ 
 						frame: {$switch: [
@@ -104,7 +104,7 @@
 	<box id="ad_background" class="front_ad">
 		<box id="ad" class="ad-rectangle" embed="advertisement" />
 	</box>
-	<box id="b1" embed="article" module="LEFT-IMAGE_module.xml" />
+	<box id="b1" embed="article" module="LEFT-BIG-IMAGE_module.xml" />
 	<box id="b2" embed="article" module="FRONT-NO-IMAGE_module.xml" />
 	<box id="b3" embed="article" module="FRONT-NO-IMAGE_module.xml" />
 	<box id="b4" embed="article" module="AHED_module.xml" />

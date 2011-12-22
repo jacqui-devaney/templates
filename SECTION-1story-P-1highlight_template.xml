@@ -6,11 +6,17 @@
 		if: =portrait, then: {
 			#b1:	{ 
 			    frame: [10, 0, 749, 620], 
-			    options:{P_image:true} 
-			},
+				options:{P_image:true}
+						},
 			#h3: {options:{single:true}}
 		}, else: {
-			#b1:	{ frame: [18, 0, 749, 620], options:{P_image:true} },
+			#b1:	{ 
+						frame: {$switch: [
+							{if: =widescreen, then: [18, 0, 749, 500]},
+							{if: =scale.large, then: [18, 0, 749, 620]}
+						]},
+						options:{F_image:{if: =widescreen, then:true, else:false}, P_image:{if: =widescreen, then:false, else:true}} 
+				},
 			#h3: {
 			        options:{single:true}
 			    }

@@ -4,15 +4,17 @@
 	<style>{
 		image: {
             pixels-per-point-x:1,
-            pixels-per-point-y:{if: =scale.small, then:.9, else: 1},
+            pixels-per-point-y:1,
 			options: {
-				match: {
-					if: =options.P_image, 
-                    then: { width:749, height:499, min-height:499 }
-				}
+				$switch: [
+					{ if: =options.G_image, then: {match: { width:553, height:369, min-height:369 } } },
+					{ if: =options.F_image, then: {match: { width:571, height:226, min-height:226 } } },
+					{ if: =options.P_image, then: {match: { width:749, height:499, min-height:499 } } }
+				]
 			},
+			
             anchor-y:bottom,
-			image-scale: {$max:[1,{$divide:[=view.width, 749]}]}
+			image-scale: {$max:[1,{$divide:[=view.width, 499]}]}
 
             
 		},

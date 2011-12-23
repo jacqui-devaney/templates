@@ -5,7 +5,7 @@
 		if: =portrait, then: {
 			#b1:	{ 
 						frame: {$switch: [
-						{if: =widescreen, then: [0, 0, 489, 295]},
+						{if: =widescreen, then: [11, 0, 489, 295]},
 						{if: =scale.large, then: [11, 0, 556, 296]}
 					]},
 					options:{large_headline:true, hide_image:{if: =widescreen, then:true, else:false}, one_column:{if: =widescreen, then:true, else:false}} 
@@ -34,7 +34,7 @@
 		}, else: {
 			#b1:	{ 
 						frame: {$switch: [
-						{if: =widescreen, then: [0, 0, 566, 326]},
+						{if: =widescreen, then: [11, 0, 566, 326]},
 						{if: =scale.large, then: [11, 0, 556, 296]}
 					]},
 					options:{large_headline:true, show_image:true} 

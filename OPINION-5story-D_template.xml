@@ -6,7 +6,7 @@
 			{	if: =portrait, then: {
 					#articles:	{ frame: [8, 10, 460, 610] },
 					#b1:	{ frame: [0, 0, 460, 220], options:{header:true} },
-					#b4:	{ frame: [486, 2, 280, 400], options:{small_headline:true, show_image:true, F_image:{if: =widescreen, then:true, else:false}, no_border:true, byline:{if: =scale.small, then:true, else:false}} },
+					#b4:	{ frame: [486, 2, 280, 400], options:{small_headline:true, show_image:true, F_image:{if: =scale.small, then:true, else:false}, no_border:true, byline:{if: =scale.small, then:true, else:false}} },
 					#b5:	{ frame: [486, 402, 280, 216], options:{small_headline:true, no_border:true, byline:{if: =scale.small, then:true, else:false}} },
 					#h1:	{options:{byline:true, hide_flashline:true}},
 					#h2:	{options:{byline:true, hide_flashline:true}}

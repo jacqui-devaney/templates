@@ -1,91 +1,101 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
-  <dict>
-    <key>SEITE_EINS</key>
-    <dict>
-      <key>FRONT-4story-E-top_template</key>
-      <dict />
-      <key>FRONT-4story-F-deco_template</key>
-      <dict />
-      <key>FRONT-4story-F_template</key>
-      <dict />
-      <key>FRONT-4story-Vertical-deco_template</key>
-      <dict />
-    </dict>
-    <key>DEUTSCHLAND</key>
-    <dict>
-      <key>SECTION-2story-G-C_template</key>
-      <dict>
-        <key>h1</key>
-        <array>
-          <string>Deutschland (Germany)</string>
-        </array>
-        <key>h2</key>
-        <array>
-          <string>Meinung (Comment)</string>
-          <string>Analyse (Analysis)</string>
-        </array>
-      </dict>
-      <key>SECTION-3story-G_template</key>
-      <dict>
-        <key>h1</key>
-        <array>
-          <string>Deutschland (Germany)</string>
-        </array>
-        <key>h2</key>
-        <array>
-          <string>Meinung (Comment)</string>
-          <string>Analyse (Analysis)</string>
-        </array>
-      </dict>
-    </dict>
-    <key>WIRTSCHAFT_AND_FINANZEN</key>
-    <dict>
-      <key>SECTION-3story-G_template</key>
-      <dict>
-        <key>h1</key>
-        <array>
-          <string>Technologie</string>
-          <string>Wirtschaft (Economy)</string>
-          <string>Energie</string>
-        </array>
-        <key>h2</key>
-        <array>
-          <string>Heard on the Street (Germany)</string>
-          <string>Markte (Markets)</string>
-        </array>
-      </dict>
-      <key>SECTION-4story-D-C_template</key>
-      <dict>
-        <key>h1</key>
-        <array>
-          <string>Technologie</string>
-          <string>Wirtschaft (Economy)</string>
-          <string>Energie</string>
-        </array>
-        <key>h2</key>
-        <array>
-          <string>Heard on the Street (Germany)</string>
-          <string>Markte (Markets)</string>
-        </array>
-      </dict>
-    </dict>
-    <key>ANALYSE</key>
-    <dict>
-      <key>SECTION-2story-G-C_template</key>
-      <dict>
-        <key>h1</key>
-        <array>
-          <string>Heard on the Street (Germany)</string>
-          <string>Analyse (Analysis)</string>
-        </array>
-        <key>h2</key>
-        <array>
-          <string>Meinung (Comment)</string>
-          <string>Analyse (Analysis)</string>
-        </array>
-      </dict>
-    </dict>
-  </dict>
+<dict>
+	<key>SEITE_EINS</key>
+	<dict>
+		<key>FRONT-4story-E-top_template</key>
+		<dict/>
+		<key>FRONT-4story-F-deco_template</key>
+		<dict>
+			<key>deco</key>
+			<array>
+				<string>Deco Summary Liondoor Germany</string>
+			</array>
+		</dict>
+		<key>FRONT-4story-F_template</key>
+		<dict/>
+		<key>FRONT-4story-Vertical-deco_template</key>
+		<dict>
+			<key>deco</key>
+			<array>
+				<string>Deco Summary Liondoor Germany</string>
+			</array>
+		</dict>
+	</dict>
+	<key>DEUTSCHLAND</key>
+	<dict>
+		<key>SECTION-2story-G-C_template</key>
+		<dict>
+			<key>h1</key>
+			<array>
+				<string>Deutschland (Germany)</string>
+			</array>
+			<key>h2</key>
+			<array>
+				<string>Meinung (Comment)</string>
+				<string>Analyse (Analysis)</string>
+			</array>
+		</dict>
+		<key>SECTION-3story-G_template</key>
+		<dict>
+			<key>h1</key>
+			<array>
+				<string>Deutschland (Germany)</string>
+			</array>
+			<key>h2</key>
+			<array>
+				<string>Meinung (Comment)</string>
+				<string>Analyse (Analysis)</string>
+			</array>
+		</dict>
+	</dict>
+	<key>WIRTSCHAFT_AND_FINANZEN</key>
+	<dict>
+		<key>SECTION-3story-G_template</key>
+		<dict>
+			<key>h1</key>
+			<array>
+				<string>Technologie</string>
+				<string>Wirtschaft (Economy)</string>
+				<string>Energie</string>
+			</array>
+			<key>h2</key>
+			<array>
+				<string>Heard on the Street (Germany)</string>
+				<string>Markte (Markets)</string>
+			</array>
+		</dict>
+		<key>SECTION-4story-D-C_template</key>
+		<dict>
+			<key>h1</key>
+			<array>
+				<string>Technologie</string>
+				<string>Wirtschaft (Economy)</string>
+				<string>Energie</string>
+			</array>
+			<key>h2</key>
+			<array>
+				<string>Heard on the Street (Germany)</string>
+				<string>Markte (Markets)</string>
+			</array>
+		</dict>
+	</dict>
+	<key>ANALYSE</key>
+	<dict>
+		<key>SECTION-2story-G-C_template</key>
+		<dict>
+			<key>h1</key>
+			<array>
+				<string>Heard on the Street (Germany)</string>
+				<string>Analyse (Analysis)</string>
+			</array>
+			<key>h2</key>
+			<array>
+				<string>Meinung (Comment)</string>
+				<string>Analyse (Analysis)</string>
+			</array>
+		</dict>
+	</dict>
+</dict>
 </plist>

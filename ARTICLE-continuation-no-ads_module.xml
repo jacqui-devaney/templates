@@ -11,9 +11,11 @@
             column-count: {$divide: [=view.width, {$multiply:[250, =scale.dpi]}]},
             column-gutter: 30,
 			column-height:balance,
-			min-height:200,
+			min-height:210,
 			layout-grid-line: {$multiply: [22, =view.zoomlevel]}
         }},
+
+
 		{#body_continuation: {
 			content: from-flow(article_body),
 			flow: article_body

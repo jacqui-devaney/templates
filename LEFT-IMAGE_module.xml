@@ -30,7 +30,7 @@
 				top:0,
 				bottom:0,
 				position:relative,
-				width: {$multiply: [=view.width, .65]},
+				width: {$multiply: [=view.width, .6]},
 				padding: [0, 15, 8, 0 ],
 				pixels-per-point-x:1,
 				pixels-per-point-y:1

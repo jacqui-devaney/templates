@@ -29,7 +29,7 @@
 			},
 			#b2:	{
 					frame: {$switch: [
-						{if: =widescreen, then: [205, 253, 565, 366]},
+						{if: =widescreen, then: [205, 243, 565, 366]},
 						{if: =scale.large, then: [205, 299, 565, 320]}
 					]},
 					options:{small_headline:true, left:true, bottom:true, no_indent:true} 

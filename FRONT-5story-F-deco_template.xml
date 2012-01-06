@@ -66,14 +66,14 @@
 								{if: =widescreen, then: [840, 28, 183, 223]},
 								{if: =scale.large, then: [787, 26, 237, 200]}
 							]},
-							options:{small_headline:true, no_border:true, no_indent:true} 
+							options:{small_headline:true, no_border:true, no_indent:true, left: {if: =widescreen, then:true, else:false}} 
 					},
 			#b5:	{ 
 						frame: {$switch: [
 							{if: =widescreen, then: [840, 250, 183, 370]},
 							{if: =scale.large, then: [787, 227, 237, 394]}
 						]},
-						options:{no_indent:true}
+						options:{no_indent:true, left: {if: =widescreen, then:true, else:false}}
 					}
 		}
 		

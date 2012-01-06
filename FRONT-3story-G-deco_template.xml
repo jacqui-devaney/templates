@@ -60,7 +60,7 @@
 							{if: =widescreen, then: [834, 38, 190, 580]},
 							{if: =scale.large, then: [787, 225, 238, 404]}
 						]},
-						options: {no_hr: {if: =widescreen, then:true, else:false}, no_indent:true}
+						options: {no_hr: {if: =widescreen, then:true, else:false}, no_indent:true, left: {if: =widescreen, then:true, else:false}}
 			}
 			
 		}

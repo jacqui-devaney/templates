@@ -360,6 +360,25 @@
 			title="6 stories - smallG deco 1 OV deco"
 			min="6"
 			usage="continuation"
+			section="SPECIAL_REPORT" 
+			deco="true"
+			page="2"
+		/>
+		<template 
+			name="CONTINUATION-fancy-3OV-7_template.xml" 
+			title="7 stories - 3 OV deco"
+			min="7"
+			usage="continuation"
+			section="SPECIAL_REPORT" 
+			deco="true"
+			page="3"
+		/>
+		
+		<template 
+			name="CONTINUATION-fancy-smallG-OV-6_template.xml" 
+			title="6 stories - smallG deco 1 OV deco"
+			min="6"
+			usage="continuation"
 			section="OFF_DUTY,SPECIAL_REPORT" 
 			deco="true"
 			page="3"

@@ -9,6 +9,16 @@
 		line-height:75,
 		text-scale: {if: =scale.small, then: .9, else: inherit}
 	},
+	#bignews_large_headline: {
+		font-name:DJ5EscrowCond-Bold,
+		font-size:{if-all: [
+            =scale.headlines,
+            {if: =extents.huge, more-than: 1.0, then: true, else: false}, 
+            {if: =extents.huge, less-than: 1.5, then: true, else: false}
+        ], then: 57, else: 67 },
+		line-height:67,
+		text-scale: {if: =scale.small, then: .9, else: inherit}
+	},
 	#bignews_big_headline: {
 		font-name:DJ5EscrowCond-Bold,
 		font-size:{if-all: [
@@ -17,6 +27,16 @@
             {if: =extents.big, less-than: 1.5, then: true, else: false}
         ], then: 47, else: 57},
 		line-height:61,
+		text-scale: {if: =scale.small, then: .9, else: inherit}
+	},
+	#bignews_small_headline: {
+		font-name:DJ5EscrowCond-Bold,
+		font-size:{if-all: [
+            =scale.headlines,
+            {if: =extents.big, more-than: 1.0, then: true, else: false}, 
+            {if: =extents.big, less-than: 1.5, then: true, else: false}
+        ], then: 39, else: 49},
+		line-height:49,
 		text-scale: {if: =scale.small, then: .9, else: inherit}
 	},
 	#large_headline: {
@@ -198,8 +218,8 @@
 		font-name:DJ5RetinaCd-Medium,
 		font-size:{if-all: [
             =scale.headlines,
-            {if: =extents.deco, more-than: 1.0, then: true, else: false}, 
-            {if: =extents.deco, less-than: 1.5, then: true, else: false}
+            {if: =extents.huge, more-than: 1.0, then: true, else: false}, 
+            {if: =extents.huge, less-than: 1.5, then: true, else: false}
         ], then: 20, else: 24 },
 		line-height:24,
 		color:#000,
@@ -243,7 +263,7 @@
 		font-size:17,
 		line-height:16,
 		padding: [ 0, 0, 6, 0 ],
-		text-scale: {if: =scale.small, then: 1.1, else: inherit}
+		text-scale: {if: =widescreen, then: 1.1, else: inherit}
 	},
 	.continuation_body: {
 		font-name:DJ5Exchange-Medium,

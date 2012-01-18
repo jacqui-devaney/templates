@@ -8,7 +8,7 @@
 			    frame: [10, 0, 749, 620], 
 				options:{P_image:true}
 						},
-			#h3: {options:{single:true}}
+			#h3: {options:{single:true, indent:true}}
 		}, else: {
 			#b1:	{ 
 						frame: {$switch: [
@@ -18,7 +18,7 @@
 						options:{F_image:{if: =widescreen, then:true, else:false}, P_image:{if: =widescreen, then:false, else:true}} 
 				},
 			#h3: {
-			        options:{single:true}
+			        options:{single:true, indent:true}
 			    }
 		}
 		

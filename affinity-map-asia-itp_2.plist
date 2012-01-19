@@ -11,9 +11,11 @@
 				<true/>
 			</array>
 			<key>h1</key>
-			<array/>
+			<array>				
+			</array>
 			<key>h2</key>
-			<array/>
+			<array>				
+			</array>
 		</dict>
 		<key>SECTION-4story-D-C_template</key>
 		<dict>
@@ -22,9 +24,11 @@
 				<true/>
 			</array>
 			<key>h1</key>
-			<array/>
+			<array>				
+			</array>
 			<key>h2</key>
-			<array/>
+			<array>				
+			</array>
 		</dict>
 	</dict>
 	<key>FRONT_SECTION</key>
@@ -88,6 +92,21 @@
 				<string>Deco Summary Liondoor Asia</string>
 			</array>
 		</dict>
+		<key>FRONT-4story-F-deco-top_template</key>
+		<dict>
+			<key>b1</key>
+			<array>
+				<true/>
+			</array>
+			<key>b4</key>
+			<array>
+				<string>A-hed</string>
+			</array>
+			<key>deco</key>
+			<array>
+				<string>Deco Summary Liondoor</string>
+			</array>
+		</dict>
 		<key>FRONT-4story-F_template</key>
 		<dict>
 			<key>b1</key>
@@ -117,6 +136,17 @@
 			<key>b4</key>
 			<array/>
 		</dict>
+		<key>FRONT-4story-big-news-small_template</key>
+		<dict>
+			<key>b1</key>
+			<array>
+				<true/>
+			</array>
+			<key>b4</key>
+			<array>
+				<string>A-hed</string>
+			</array>
+		</dict>
 		<key>FRONT-5story-F-deco_template</key>
 		<dict>
 			<key>b1</key>
@@ -134,68 +164,89 @@
 		<key>SECTION-1story-P-1highlight-white_template</key>
 		<dict>
 			<key>b1</key>
-			<array/>
+			<array>				
+			</array>
 			<key>h3</key>
-			<array/>
+			<array>				
+			</array>
 		</dict>
 		<key>SECTION-1story-P-1highlight_template</key>
 		<dict>
 			<key>b1</key>
-			<array/>
+			<array>				
+			</array>
 			<key>h3</key>
-			<array/>
+			<array>				
+			</array>
 		</dict>
 		<key>SECTION-1story-PV-1highlight_template</key>
 		<dict>
 			<key>b1</key>
-			<array/>
+			<array>				
+			</array>
 			<key>h3</key>
-			<array/>
+			<array>				
+			</array>
 		</dict>
 		<key>SECTION-1story-PV-white_template</key>
 		<dict>
 			<key>b1</key>
-			<array/>
+			<array>				
+			</array>
 			<key>h1</key>
-			<array/>
+			<array>				
+			</array>
 			<key>h2</key>
-			<array/>
+			<array>
+			</array>
 		</dict>
 		<key>SECTION-1story-PV_template</key>
 		<dict>
 			<key>b1</key>
-			<array/>
+			<array>			
+			</array>
 			<key>h1</key>
-			<array/>
+			<array>				
+			</array>
 			<key>h2</key>
-			<array/>
+			<array>				
+			</array>
 		</dict>
 		<key>SECTION-1story-P_template</key>
 		<dict>
 			<key>b1</key>
-			<array/>
+			<array>				
+			</array>
 			<key>h1</key>
-			<array/>
+			<array>				
+			</array>
 			<key>h2</key>
-			<array/>
+			<array>				
+			</array>
 		</dict>
 		<key>SECTION-2story-G-C_template</key>
 		<dict>
 			<key>b1</key>
-			<array/>
+			<array>				
+			</array>
 			<key>h1</key>
-			<array/>
+			<array>				
+			</array>
 			<key>h2</key>
-			<array/>
+			<array>				
+			</array>
 		</dict>
 		<key>SECTION-3story-G_template</key>
 		<dict>
 			<key>b1</key>
-			<array/>
+			<array>				
+			</array>
 			<key>h1</key>
-			<array/>
+			<array>				
+			</array>
 			<key>h2</key>
-			<array/>
+			<array>				
+			</array>
 		</dict>
 	</dict>
 	<key>OPINION</key>
@@ -700,59 +751,77 @@
 		<key>SECTION-1story-P-1highlight-white_template</key>
 		<dict>
 			<key>b1</key>
-			<array/>
+			<array>			
+			</array>
 			<key>h3</key>
-			<array/>
+			<array>				
+			</array>
 		</dict>
 		<key>SECTION-1story-P-1highlight_template</key>
 		<dict>
 			<key>b1</key>
-			<array/>
+			<array>				
+			</array>
 			<key>h3</key>
-			<array/>
+			<array>				
+			</array>
 		</dict>
 		<key>SECTION-1story-PV-1highlight_template</key>
 		<dict>
 			<key>b1</key>
-			<array/>
+			<array>				
+			</array>
 			<key>h3</key>
-			<array/>
+			<array>				
+			</array>
 		</dict>
 		<key>SECTION-1story-PV-white_template</key>
 		<dict>
 			<key>b1</key>
-			<array/>
+			<array>				
+			</array>
 			<key>h1</key>
-			<array/>
+			<array>				
+			</array>
 			<key>h2</key>
-			<array/>
+			<array>				
+			</array>
 		</dict>
 		<key>SECTION-1story-PV_template</key>
 		<dict>
 			<key>b1</key>
-			<array/>
+			<array>				
+			</array>
 			<key>h1</key>
-			<array/>
+			<array>				
+			</array>
 			<key>h2</key>
-			<array/>
+			<array>				
+			</array>
 		</dict>
 		<key>SECTION-1story-P_template</key>
 		<dict>
 			<key>b1</key>
-			<array/>
+			<array>				
+			</array>
 			<key>h1</key>
-			<array/>
+			<array>				
+			</array>
 			<key>h2</key>
-			<array/>
+			<array>				
+			</array>
 		</dict>
 		<key>SECTION-2story-G-C_template</key>
 		<dict>
 			<key>b1</key>
-			<array/>
+			<array>				
+			</array>
 			<key>h1</key>
-			<array/>
+			<array>				
+			</array>
 			<key>h2</key>
-			<array/>
+			<array>				
+			</array>
 		</dict>
 		<key>SECTION-3story-G-deco-C_template</key>
 		<dict>
@@ -782,59 +851,77 @@
 		<key>SECTION-1story-P-1highlight-white_template</key>
 		<dict>
 			<key>b1</key>
-			<array/>
+			<array>	
+			</array>
 			<key>h3</key>
-			<array/>
+			<array>				
+			</array>
 		</dict>
 		<key>SECTION-1story-P-1highlight_template</key>
 		<dict>
 			<key>b1</key>
-			<array/>
+			<array>				
+			</array>
 			<key>h3</key>
-			<array/>
+			<array>				
+			</array>
 		</dict>
 		<key>SECTION-1story-PV-1highlight_template</key>
 		<dict>
 			<key>b1</key>
-			<array/>
+			<array>				
+			</array>
 			<key>h3</key>
-			<array/>
+			<array>				
+			</array>
 		</dict>
 		<key>SECTION-1story-PV-white_template</key>
 		<dict>
 			<key>b1</key>
-			<array/>
+			<array>				
+			</array>
 			<key>h1</key>
-			<array/>
+			<array>				
+			</array>
 			<key>h2</key>
-			<array/>
+			<array>				
+			</array>
 		</dict>
 		<key>SECTION-1story-PV_template</key>
 		<dict>
 			<key>b1</key>
-			<array/>
+			<array>			
+			</array>
 			<key>h1</key>
-			<array/>
+			<array>
+			</array>
 			<key>h2</key>
-			<array/>
+			<array>
+			</array>
 		</dict>
 		<key>SECTION-1story-P_template</key>
 		<dict>
 			<key>b1</key>
-			<array/>
+			<array>
+			</array>
 			<key>h1</key>
-			<array/>
+			<array>
+			</array>
 			<key>h2</key>
-			<array/>
+			<array>
+			</array>
 		</dict>
 		<key>SECTION-2story-G-C_template</key>
 		<dict>
 			<key>b1</key>
-			<array/>
+			<array>
+			</array>
 			<key>h1</key>
-			<array/>
+			<array>
+			</array>
 			<key>h2</key>
-			<array/>
+			<array>
+			</array>
 		</dict>
 	</dict>
 	<key>WEEKEND_JOURNAL</key>
@@ -842,65 +929,86 @@
 		<key>SECTION-1story-P-1highlight-white_template</key>
 		<dict>
 			<key>b1</key>
-			<array/>
+			<array>
+			</array>
 			<key>h1</key>
-			<array/>
+			<array>
+			</array>
 			<key>h2</key>
-			<array/>
+			<array>
+			</array>
 		</dict>
 		<key>SECTION-1story-P-1highlight_template</key>
 		<dict>
 			<key>b1</key>
-			<array/>
+			<array>
+			</array>
 			<key>h1</key>
-			<array/>
+			<array>
+			</array>
 			<key>h2</key>
-			<array/>
+			<array>
+			</array>
 		</dict>
 		<key>SECTION-1story-PV-1highlight_template</key>
 		<dict>
 			<key>b1</key>
-			<array/>
+			<array>
+			</array>
 			<key>h1</key>
-			<array/>
+			<array>
+			</array>
 			<key>h2</key>
-			<array/>
+			<array>
+			</array>
 		</dict>
 		<key>SECTION-1story-PV-white_template</key>
 		<dict>
 			<key>b1</key>
-			<array/>
+			<array>
+			</array>
 			<key>h1</key>
-			<array/>
+			<array>
+			</array>
 			<key>h2</key>
-			<array/>
+			<array>
+			</array>
 		</dict>
 		<key>SECTION-1story-PV_template</key>
 		<dict>
 			<key>b1</key>
-			<array/>
+			<array>
+			</array>
 			<key>h1</key>
-			<array/>
+			<array>
+			</array>
 			<key>h2</key>
-			<array/>
+			<array>
+			</array>
 		</dict>
 		<key>SECTION-1story-P_template</key>
 		<dict>
 			<key>b1</key>
-			<array/>
+			<array>
+			</array>
 			<key>h1</key>
-			<array/>
+			<array>
+			</array>
 			<key>h2</key>
-			<array/>
+			<array>
+			</array>
 		</dict>
 		<key>SECTION-2story-G-C_template</key>
 		<dict>
 			<key>b1</key>
-			<array/>
+			<array>
+			</array>
 			<key>h1</key>
-			<array/>
+			<array>
+			</array>
 			<key>h2</key>
-			<array/>
+			<array>
+			</array>
 		</dict>
 	</dict>
 	<key>WSJ_MAGAZINE</key>

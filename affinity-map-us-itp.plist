@@ -558,6 +558,21 @@
 				<string>Deco Summary Liondoor</string>
 			</array>
 		</dict>
+		<key>FRONT-4story-F-deco-top_template</key>
+		<dict>
+			<key>b1</key>
+			<array>
+				<true/>
+			</array>
+			<key>b4</key>
+			<array>
+				<string>A-hed</string>
+			</array>
+			<key>deco</key>
+			<array>
+				<string>Deco Summary Liondoor</string>
+			</array>
+		</dict>	
 		<key>FRONT-4story-F_template</key>
 		<dict>
 			<key>b1</key>
@@ -585,6 +600,17 @@
 			</array>
 		</dict>
 		<key>FRONT-4story-big-news_template</key>
+		<dict>
+			<key>b1</key>
+			<array>
+				<true/>
+			</array>
+			<key>b4</key>
+			<array>
+				<string>A-hed</string>
+			</array>
+		</dict>
+		<key>FRONT-4story-big-news-small_template</key>
 		<dict>
 			<key>b1</key>
 			<array>
@@ -636,12 +662,17 @@
 				<string>Mobile Tablet Highlight1A</string>
 				<string>Mobile Tablet Highlight1B</string>
 				<string>Mobile App Blog</string>
-				<string>Business Technology</string>
 				<string>Tech Journal</string>
 				<string>Digits</string>
+				<string>Boss Talk</string>
+				<string>How I Built It</string>
+				<string>Management</string>
+				<string>Careers</string>
+				<string>Law</string>
 				<string>Telecommunications</string>
-				<string>Technology</string>
-				<string>Digits Blog</string>
+				<string>CFO Journal</string>
+				<string>Tech</string>
+				<string>Corporate Watch</string>
 			</array>
 			<key>h2</key>
 			<array>
@@ -653,6 +684,7 @@
 				<string>Small Business</string>
 				<string>Earnings</string>
 				<string>Media &amp;amp; Marketing</string>
+				<string>Autos</string>
 			</array>
 		</dict>
 		<key>SECTION-3story-G_template</key>
@@ -674,6 +706,9 @@
 				<string>Careers</string>
 				<string>Law</string>
 				<string>Telecommunications</string>
+				<string>CFO Journal</string>
+				<string>Tech</string>
+				<string>Corporate Watch</string>
 			</array>
 			<key>h2</key>
 			<array>
@@ -683,9 +718,9 @@
 				<string>Advertising</string>
 				<string>Theory</string>
 				<string>Small Business</string>
-				<string>Health</string>
 				<string>Earnings</string>
-				<string>Media &amp; Marketing</string>
+				<string>Media &amp;amp; Marketing</string>
+				<string>Autos</string>
 			</array>
 		</dict>
 		<key>SECTION-4story-2D-C_template</key>
@@ -707,6 +742,9 @@
 				<string>Careers</string>
 				<string>Law</string>
 				<string>Telecommunications</string>
+				<string>CFO Journal</string>
+				<string>Tech</string>
+				<string>Corporate Watch</string>
 			</array>
 			<key>h2</key>
 			<array>
@@ -716,9 +754,9 @@
 				<string>Advertising</string>
 				<string>Theory</string>
 				<string>Small Business</string>
-				<string>Health</string>
 				<string>Earnings</string>
-				<string>Media &amp; Marketing</string>
+				<string>Media &amp;amp; Marketing</string>
+				<string>Autos</string>
 			</array>
 		</dict>
 		<key>SECTION-4story-smallG-bottom_template</key>
@@ -740,6 +778,9 @@
 				<string>Careers</string>
 				<string>Law</string>
 				<string>Telecommunications</string>
+				<string>CFO Journal</string>
+				<string>Tech</string>
+				<string>Corporate Watch</string>
 			</array>
 			<key>h2</key>
 			<array>
@@ -749,9 +790,9 @@
 				<string>Advertising</string>
 				<string>Theory</string>
 				<string>Small Business</string>
-				<string>Health</string>
 				<string>Earnings</string>
-				<string>Media &amp; Marketing</string>
+				<string>Media &amp;amp; Marketing</string>
+				<string>Autos</string>
 			</array>
 		</dict>
 		<key>SECTION-4story-smallG-deco_template</key>
@@ -778,6 +819,9 @@
 				<string>Careers</string>
 				<string>Law</string>
 				<string>Telecommunications</string>
+				<string>CFO Journal</string>
+				<string>Tech</string>
+				<string>Corporate Watch</string>
 			</array>
 			<key>h2</key>
 			<array>
@@ -787,9 +831,9 @@
 				<string>Advertising</string>
 				<string>Theory</string>
 				<string>Small Business</string>
-				<string>Health</string>
 				<string>Earnings</string>
-				<string>Media &amp; Marketing</string>
+				<string>Media &amp;amp; Marketing</string>
+				<string>Autos</string>
 			</array>
 		</dict>
 		<key>SECTION-4story-smallG-top_template</key>
@@ -811,6 +855,9 @@
 				<string>Careers</string>
 				<string>Law</string>
 				<string>Telecommunications</string>
+				<string>CFO Journal</string>
+				<string>Tech</string>
+				<string>Corporate Watch</string>
 			</array>
 			<key>h2</key>
 			<array>
@@ -820,9 +867,9 @@
 				<string>Advertising</string>
 				<string>Theory</string>
 				<string>Small Business</string>
-				<string>Health</string>
 				<string>Earnings</string>
-				<string>Media &amp; Marketing</string>
+				<string>Media &amp;amp; Marketing</string>
+				<string>Autos</string>
 			</array>
 		</dict>
 	</dict>

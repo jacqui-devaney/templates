@@ -9,7 +9,7 @@
 			<key>b1</key>
 			<array>
 				<true/>
-			</array>
+			</array>						
 			<key>h1</key>
 			<array/>
 			<key>h2</key>
@@ -20,7 +20,7 @@
 			<key>b1</key>
 			<array>
 				<true/>
-			</array>
+			</array>			
 			<key>h1</key>
 			<array/>
 			<key>h2</key>
@@ -173,6 +173,21 @@
 				<string>Deco Summary Liondoor Europe</string>
 			</array>
 		</dict>
+		<key>FRONT-4story-F-deco-top_template</key>
+		<dict>
+			<key>b1</key>
+			<array>
+				<true/>
+			</array>
+			<key>b4</key>
+			<array>
+				<string>A-hed</string>
+			</array>
+			<key>deco</key>
+			<array>
+				<string>Deco Summary Liondoor</string>
+			</array>
+		</dict>
 		<key>FRONT-4story-F_template</key>
 		<dict>
 			<key>b1</key>
@@ -201,6 +216,17 @@
 			</array>
 			<key>b4</key>
 			<array/>
+		</dict>
+		<key>FRONT-4story-big-news-small_template</key>
+		<dict>
+			<key>b1</key>
+			<array>
+				<true/>
+			</array>
+			<key>b4</key>
+			<array>
+				<string>A-hed</string>
+			</array>
 		</dict>
 		<key>FRONT-5story-F-deco_template</key>
 		<dict>
@@ -1014,7 +1040,7 @@
 		<key>SECTION-1story-P-1highlight-white_template</key>
 		<dict>
 			<key>b1</key>
-			<array>
+		<array>
 				<true/>
 			</array>
 			<key>h1</key>
@@ -1058,7 +1084,7 @@
 		<key>SECTION-1story-PV_template</key>
 		<dict>
 			<key>b1</key>
-			<array>
+		<array>
 				<true/>
 			</array>
 			<key>h1</key>

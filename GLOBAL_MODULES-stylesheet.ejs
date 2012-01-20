@@ -216,11 +216,7 @@
 	},
 	#deco_headline: {
 		font-name:DJ5RetinaCd-Medium,
-		font-size:{if-all: [
-            =scale.headlines,
-            {if: =extents.huge, more-than: 1.0, then: true, else: false}, 
-            {if: =extents.huge, less-than: 1.5, then: true, else: false}
-        ], then: 20, else: 24 },
+		font-size:24,
 		line-height:24,
 		color:#000,
 		text-scale: {if: =scale.small, then: .8, else: inherit}

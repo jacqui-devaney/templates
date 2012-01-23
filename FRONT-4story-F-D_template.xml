@@ -1,0 +1,76 @@
+<jpml id="FRONT-4story-F_template">
+	<style src="GLOBAL-stylesheet.ejs" />
+	<style src="FRONT-stylesheet.ejs" />
+	<style>{
+		if: =portrait, then: {
+			#b1:	{ 
+						frame: {$switch: [
+							{if: =widescreen, then: [195, 28, 571, 380]},
+							{if: =scale.large, then: [195, 26, 571, 380]}
+						]},
+						options:{large_headline:true, show_image:true, two_columns:true, F_image:true, no_border:true, byline:{if: =scale.small, then:true, else:false}} 
+			},
+			#b2:	{ 
+						frame: {$switch: [
+							{if: =widescreen, then: [195, 408, 563, 224]},
+							{if: =scale.large, then: [195, 406, 563, 224]}
+						]},
+						options:{small_headline:true, no_indent:true} 
+			},
+			#b3:	{ 
+						frame: {$switch: [
+							{if: =widescreen, then: [195, 633, 280, 242]},
+							{if: =scale.large, then: [195, 630, 280, 245]}
+						]},
+						options:{small_headline:true, bottom:true, no_indent:true} 
+			},
+			#b4:	{ 
+						frame: {$switch: [
+							{if: =widescreen, then: [486, 633, 280, 242]},
+							{if: =scale.large, then: [486, 630, 280, 245]}
+						]},
+						options:{no_indent:true}
+			}
+		}, else: {
+			#b1:	{ 
+						frame: {$switch: [
+							{if: =widescreen, then: [205, 28, 377, 380]},
+							{if: =scale.large, then: [205, 26, 571, 380]}
+						]},
+						options:{large_headline:true, F_image:true, show_image:true, no_border:true, byline:{if: =scale.small, then:true, else:false}} 
+			},
+			#b2:	{ 
+						frame: {$switch: [
+							{if: =widescreen, then: [205, 408, 369, 214]},
+							{if: =scale.large, then: [205, 406, 563, 214]}
+						]},
+						options:{small_headline:true} 
+						
+					},
+			#b3:	{ 
+						frame: {$switch: [
+							{if: =widescreen, then: [592, 28, 238, 590]},
+							{if: =scale.large, then: [787, 26, 237, 201]}
+						]},
+						options:{small_headline:true, no_border:true, no_indent:true} 
+			},
+			#b4:	{ frame: {$switch: [
+							{if: =widescreen, then: [840, 36, 183, 582]},
+							{if: =scale.large, then: [787, 227, 237, 394]}
+					]},
+					options: {no_hr:{if: =widescreen, then:true, else:false}, no_indent:true, left: {if: =widescreen, then:true, else:false}}	
+			}
+		}
+				
+	}</style>
+	
+	<box id="marketstrap" embed="marketstrap" />
+	<box id="whatsnews" embed="whatsnews" />
+	<box id="ad_background" class="front_ad">
+		<box id="ad" class="ad-rectangle" embed="advertisement" />
+	</box>
+	<box id="b1" embed="article" module="HEADLINE-IMAGE_module.xml" />
+	<box id="b2" embed="article" module="LEFT-BIG-IMAGE_module.xml" />
+	<box id="b3" embed="article" module="FRONT-NO-IMAGE_module.xml" />
+	<box id="b4" embed="article" module="AHED_module.xml" />
+</jpml>

@@ -71,6 +71,14 @@
 			usage="front" 
 		/>
 		<template 
+			section="FRONT_SECTION" 
+			name="FRONT-2story-G-deco_template.xml" 
+			title="2 story - G liondoor"
+			min="2" 
+			deco="true" 
+			usage="front" 
+		/>
+		<template 
 			name="FRONT-4story-big-news_template.xml" 
 			title="4 story - HUGE news" 
 			section="FRONT_SECTION" 

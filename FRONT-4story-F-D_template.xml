@@ -61,7 +61,7 @@
 					options: {no_hr:{if: =widescreen, then:true, else:false}, no_indent:true, left: {if: =widescreen, then:true, else:false}}	
 			}
 		}
-				
+
 	}</style>
 	
 	<box id="marketstrap" embed="marketstrap" />

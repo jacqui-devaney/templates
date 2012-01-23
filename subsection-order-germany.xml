@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+  <dict>
+    <key>SEITE_EINS</key>
+    <array>
+      <string>DEUTSCHLAND</string>
+      <string>NACHRICHTEN</string>
+      <string>INTERNATIONAL</string>
+      <string>WIRTSCHAFT</string>
+      <string>UNTERNEHMEN</string>
+      <string>TECHNOLOGIE</string>
+      <string>MÄRKTE</string>
+      <string>ANALYSE</string>
+      <string>ENERGIE</string>
+      <string>MEHR</string>
+    </array>
+    <key>DEUTSCHLAND</key>
+    <array>
+      <string>DEUTSCHLAND</string>
+      <string>WIRTSCHAFT</string>
+      <string>UNTERNEHMEN</string>
+      <string>NACHRICHTEN</string>
+      <string>MÄRKTE</string>
+      <string>TECHNOLOGIE</string>
+      <string>ENERGIE</string>
+      <string>MOTOR</string>
+      <string>ANALYSE</string>
+      <string>MEINUNG</string>
+      <string>HEARD ON THE STREET</string>
+      <string>MEHR</string>
+    </array>
+    <key>WIRTSCHAFT_AND_FINANZEN</key>
+    <array>
+      <string>UNTERNEHMEN</string>
+      <string>WIRTSCHAFT</string>
+      <string>MÄRKTE</string>
+      <string>TECHNOLOGIE</string>
+      <string>ENERGIE</string>
+      <string>MOTOR</string>
+      <string>HEARD ON THE STREET</string>
+      <string>NACHRICHTEN</string>
+      <string>DEUTSCHLAND</string>
+      <string>ANALYSE</string>
+      <string>MEHR</string>
+    </array>
+    <key>ANALYSE</key>
+    <array>
+      <string>ANALYSE</string>
+      <string>HEARD ON THE STREET</string>
+      <string>MEINUNG</string>
+      <string>NACHTRICHTEN</string>
+      <string>MEHR</string>
+    </array>
+    <key>default</key>
+    <array>
+      <string>MEHR</string>
+    </array>
+  </dict>
+</plist>

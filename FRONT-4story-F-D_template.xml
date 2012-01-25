@@ -70,7 +70,7 @@
 		<box id="ad" class="ad-rectangle" embed="advertisement" />
 	</box>
 	<box id="b1" embed="article" module="HEADLINE-IMAGE_module.xml" />
-	<box id="b2" embed="article" module="LEFT-BIG-IMAGE_module.xml" />
+	<box id="b2" embed="article" module="LEFT-SMALL-IMAGE_module.xml" />
 	<box id="b3" embed="article" module="FRONT-NO-IMAGE_module.xml" />
 	<box id="b4" embed="article" module="AHED_module.xml" />
 </jpml>

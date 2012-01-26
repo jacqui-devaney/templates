@@ -36,9 +36,10 @@
 			}},
 			{image:{
 				options: {
-					match: {
-						if: =options.F_image, then: { width:571, height:226, min-height:226 }
-					}
+					$switch: [
+						{ if: =options.F_image, then: {match: { width:571, height:226, min-height:226 } } },
+						{ if: =options.PT_image, then: {match: { width:264, height:455, min-height:455 } } }
+					]
 				},
 				image-scale: {$max:[1,{$divide:[{$subtract:[=view.width, 18]}, 553]}]},
                 pixels-per-point-x:1,
@@ -53,7 +54,12 @@
 			{#deco_bottom_headline: { display: { if: =options.bottom_headline, then:inherit }}},
 			{#deco_small_headline: { display: { if: =options.small_headline, then:inherit }}},
 			{.deco_caption: {
-				max-height: { if: =options.fake_deco, then:35, else:55},
+				max-height: {
+					$switch: [
+						{if: =options.fake_deco, then:35},
+						{if: =options.vertical_deco, then:75},
+						{if: true, then:55}
+				]},
 				min-height: 25,
 				display: { if: =options.no_caption, then:none, else:inherit }
 			}}

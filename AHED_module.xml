@@ -1,61 +1,75 @@
 <jpml>
 <style src="GLOBAL_MODULES-stylesheet.ejs"/>
     <style>{
-        jpml: { padding: [0, 2, 0, 2] },
-        #top_container: {
-            border-image: url(ahed-border.png),
-            border-slice: [14],
-			border-width: [14],
-            text-align: center
-        },
-        #bottom_container: {
-            padding: [0, 16, 0, 16],
-            text-overflow: "\u00bb",
-            text-align: =justify
-        },
-        #image_container: { 
-			anchor-x: right, 
-			width: 90, 
-			display: { if: =options.no_image, then:none, else:inherit },
-			pixels-per-point-x:{if: =scale.small, then:.7, else:1},
-			pixels-per-point-y:{if: =scale.small, then:.7, else:1},
-			image-scale:{if: =scale.small, then:.7, else:1}
-		},
-		image: { 
-			padding: [0, 4, 8, 8],
-			options: { 
-				match: { 
-					width: 79, 
-					height: 79 
-				} 
-			} 
-		},
-		#stars: { padding: [5, 0, 10, 0] },
-		#regular_content: { 
-				border-width: {if: =options.no_hr, then:[0], else:[1, 0, 0, 0]},
-				border-color: #b1aca1,
-				padding: [ {if: =options.no_hr, then:2, else:10}, 8, 15, 8 ] 
-		},
-		#regular: {
-			display: { if: =article.type, equals: A-hed, then: none, else: inherit }
-		},
-		#ahed: {
-			display: { if: =article.type, equals: A-hed, then: inherit, else: none }
-		},
-		.ahed_byline: {display: {$switch: [
-			{if: =scale.small, then:{if: =options.byline, then:inherit, else:none}},
-			{if: =scale.large, then: inherit}
-		]}},
-		.byline: {display: {$switch: [
-			{if: =scale.small, then:{if: =options.byline, then:inherit, else:none}},
-			{if: =scale.large, then: inherit}
-		]}},
-		.body: {padding:{if: =options.byline, then:[0], else:[3, 0, 0, 0]}},
-		#body-first-p: {text-indent: {$switch: [
-			{if: =scale.small, then:{if: =options.no_indent, then:0, else:inherit}},
-			{if: =scale.large, then: inherit}
-		]}}
+				$join: [        
+					{jpml: { padding: [0, 2, 0, 2] }},
+			        {#top_container: {
+			            border-image: url(ahed-border.png),
+			            border-slice: [14],
+						border-width: [14],
+			            text-align: center
+			        }},
+			        {#bottom_container: {
+			            padding: [0, 16, 0, 16],
+			            text-overflow: "\u00bb",
+			            text-align: =justify
+			        }},
+			        {#image_container: { 
+						anchor-x: right, 
+						width: 90, 
+						display: { if: =options.no_image, then:none, else:inherit },
+						pixels-per-point-x:{if: =scale.small, then:.7, else:1},
+						pixels-per-point-y:{if: =scale.small, then:.7, else:1},
+						image-scale:{if: =scale.small, then:.7, else:1}
+					}},
+					{image: { 
+						padding: [0, 4, 8, 8],
+						options: { 
+							match: { 
+								width: 79, 
+								height: 79 
+							} 
+						} 
+					}},
+					{#stars: { padding: [5, 0, 10, 0] }},
+					{ $switch: [
+						{ if: =options.no_rule, then: {
+							#regular_content: {
+								border-width: [0, 0, 0, 0],
+								padding: [2, 8, 15, 8]
+							}
 
+						}},
+						{ if: true, then: {
+							#regular_content: {
+								border-width: [1, 0, 0, 0],
+								border-color: #b1aca1,
+								padding: [10, 8, 15, 8]
+							}
+							}}
+					]},
+	
+	
+					{#regular: {
+						display: { if: =article.type, equals: A-hed, then: none, else: inherit }
+					}},
+					{#ahed: {
+						display: { if: =article.type, equals: A-hed, then: inherit, else: none }
+					}},
+					{.ahed_byline: {display: {$switch: [
+						{if: =scale.small, then:{if: =options.byline, then:inherit, else:none}},
+						{if: =scale.large, then: inherit}
+					]}}},
+					{.byline: {display: {$switch: [
+						{if: =scale.small, then:{if: =options.byline, then:inherit, else:none}},
+						{if: =scale.large, then: inherit}
+					]}}},
+					{.body: {padding:{if: =options.byline, then:[0], else:[3, 0, 0, 0]}}},
+					{#body-first-p: {text-indent: {$switch: [
+						{if: =scale.small, then:{if: =options.no_indent, then:0, else:inherit}},
+						{if: =scale.large, then: inherit}
+					]}}}
+				]
 
     }</style>
     

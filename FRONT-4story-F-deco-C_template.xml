@@ -55,10 +55,10 @@
 				},
 		#b2:	{ 
 					frame: {$switch: [
-						{if: =widescreen, then: [592, 26, 238, 272]},
+						{if: =widescreen, then: [592, 32, 238, 264]},
 						{if: =scale.large, then: [205, 486, 563, 134]}
 					]},
-					options:{small_headline:true, bottom:true, no_indent:true, no_border:{if: =widescreen, then:true, else:false}} 
+					options:{small_headline:true, bottom:true, no_indent:true, no_border:{if: =widescreen, then:true, else:false}, hide_image:true} 
 				},
 		#b3:	{ 
 					frame: {$switch: [
@@ -69,11 +69,12 @@
 					
 		},
 		#b4:	{ frame: {$switch: [
-						{if: =widescreen, then: [840, 26, 183, 592]},
+						{if: =widescreen, then: [840, 33, 183, 584]},
 						{if: =scale.large, then: [787, 227, 237, 394]}
-				]}},
-				options:{no_indent:true, no_hr: {if: =widescreen, then:true, else:false}, left: {if: =widescreen, then:true, else:false}}
-        }
+				]},
+					options:{no_indent:true, no_rule: {if: =widescreen, then:true, else:false}, left: {if: =widescreen, then:true, else:false}}
+        		}
+		}
     }</style>
     <box id="marketstrap" embed="marketstrap" />
     <box id="whatsnews" embed="whatsnews" />

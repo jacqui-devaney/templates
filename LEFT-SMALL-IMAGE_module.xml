@@ -41,6 +41,7 @@
 			
 			{#image_container: { 
 				width: {$multiply: [=view.height, 1.1]}
+				
 			}},
 			{.invisible: { display:none }},
 			{#small_headline: { display: { if: =options.small_headline, then:inherit }}},

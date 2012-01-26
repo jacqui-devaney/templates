@@ -72,7 +72,7 @@
 						{if: =widescreen, then: [840, 26, 183, 592]},
 						{if: =scale.large, then: [787, 227, 237, 394]}
 				]}},
-				options:{no_indent:true, no_hr: {if: =widescreen, then:true, else:false}, left: {if: =widescreen, then:true, else:false}}
+				options:{no_indent:true, no_rule: {if: =widescreen, then:true, else:false}, left: {if: =widescreen, then:true, else:false}}
         }
     }</style>
     <box id="marketstrap" embed="marketstrap" />

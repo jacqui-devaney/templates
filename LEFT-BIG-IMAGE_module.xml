@@ -40,7 +40,8 @@
 			}},
 			
 			{#image_container: { 
-				width: {$multiply: [=view.height, .97]}
+				width: {$multiply: [=view.height, .97]},
+				display: {if: =options.hide_image, then:none, else:inherit}
 			}},
 			{.invisible: { display:none }},
 			{#small_headline: { display: { if: =options.small_headline, then:inherit }}},

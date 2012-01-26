@@ -58,7 +58,7 @@
 							{if: =widescreen, then: [840, 36, 183, 582]},
 							{if: =scale.large, then: [787, 227, 237, 394]}
 					]},
-					options: {no_hr:{if: =widescreen, then:true, else:false}, no_indent:true, left: {if: =widescreen, then:true, else:false}}	
+					options: {no_rule:{if: =widescreen, then:true, else:false}, no_indent:true, left: {if: =widescreen, then:true, else:false}}	
 			}
 		}
 

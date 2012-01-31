@@ -3,10 +3,10 @@
 	<style src="SECTION-stylesheet.ejs" />
 	<style>{ 
 		if: =portrait, then: {
-			#b1:	{ frame: [0, 0, 768, 620] },
+			#b1:	{ frame: [0, 0, 768, 620], options:{TH_image:{if: =scale.small, then:true, else:false}} },
 			#h4: {options:{single:true, indent:true}}
 		}, else: {
-			#b1:	{ frame: [0, 0, 768, 620] },
+			#b1:	{ frame: [0, 0, 768, 620], options:{TH-land_image:{if: =scale.small, then:true, else:false}} },
 			#h4: {options:{single:true, indent:true}}
 		}
 	}</style>

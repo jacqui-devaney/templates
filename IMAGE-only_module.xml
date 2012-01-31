@@ -1,16 +1,17 @@
 <jpml id="IMAGE-only_module">
 	<style>
 		{
-		image: { 
-			if: =widescreen, then: {
-					options: {
-						match: {
-							width:967
-						}
-					}
-				}
-				
+		$join: [{image:{
+			options: {
+				$switch: [
+					{ if: =options.TH_image, then: {match: { width:800, height:762 } } },
+					{ if: =options.TH-land_image, then: {match: { width:960, height:597 } } }
+				]
 			}
+            
+			
+			
+		}}]
 		}
 	</style>
 	<image embed="summary-image" />

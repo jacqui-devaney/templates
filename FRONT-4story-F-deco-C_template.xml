@@ -55,10 +55,10 @@
 				},
 		#b2:	{ 
 					frame: {$switch: [
-						{if: =widescreen, then: [592, 32, 238, 264]},
+						{if: =widescreen, then: [592, 32, 230, 264]},
 						{if: =scale.large, then: [205, 486, 563, 134]}
 					]},
-					options:{small_headline:true, bottom:true, no_indent:true, no_border:{if: =widescreen, then:true, else:false}, hide_image:true} 
+					options:{small_headline:true, bottom:true, no_indent:true, no_border:{if: =widescreen, then:true, else:false}, hide_image:{if: =widescreen, then:true, else:false}} 
 				},
 		#b3:	{ 
 					frame: {$switch: [

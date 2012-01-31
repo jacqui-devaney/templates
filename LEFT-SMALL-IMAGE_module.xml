@@ -40,7 +40,8 @@
 			}},
 			
 			{#image_container: { 
-				width: {$multiply: [=view.height, 1.1]}
+				width: {$multiply: [=view.height, 1.1]},
+				display: {if: =options.hide_image, then:none, else:inherit}
 				
 			}},
 			{.invisible: { display:none }},

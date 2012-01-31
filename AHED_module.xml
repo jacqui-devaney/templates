@@ -47,9 +47,7 @@
 								padding: [10, 8, 15, 8]
 							}
 							}}
-					]},
-	
-	
+					]},	
 					{#regular: {
 						display: { if: =article.type, equals: A-hed, then: none, else: inherit }
 					}},
@@ -58,7 +56,7 @@
 					}},
 					{.ahed_byline: {display: {$switch: [
 						{if: =scale.small, then:{if: =options.byline, then:inherit, else:none}},
-						{if: =scale.large, then: inherit}
+						{if: =scale.large, then: {if: =options.no_byline, then:none, else:inherit}}
 					]}}},
 					{.byline: {display: {$switch: [
 						{if: =scale.small, then:{if: =options.byline, then:inherit, else:none}},

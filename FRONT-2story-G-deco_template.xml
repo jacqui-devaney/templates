@@ -9,7 +9,7 @@
 						{if: =widescreen, then: [194, 28, 571, 200]},
 						{if: =scale.large, then: [194, 26, 571, 148]}
 					]},
-				options:{large_headline:true, no_border:true, byline:{if: =scale.small, then:true, else:false}} 
+				options:{large_headline:true, no_border:true, byline:true} 
 			},
 			#deco:	{ 
 					frame: {$switch: [
@@ -23,7 +23,7 @@
 						{if: =widescreen, then: [194, 581, 569, 295]},
 						{if: =scale.large, then: [194, 628, 569, 247]}
 					]},
-					options:{small_headline:true, byline:true, two_columns:true}
+					options:{small_headline:true, byline:true, two_columns:{if: =scale.small, then:false, else:true}}
 					
 			}
 		}, else: {
@@ -32,7 +32,7 @@
 							{if: =widescreen, then: [205, 28, 618, 235]},
 							{if: =scale.large, then: [205, 26, 571, 148]}
 						]},
-						options:{large_headline:true, no_border:true, byline:{if: =scale.small, then:true, else:false}, two_columns:{if: =widescreen, then:true, else:false}} 
+						options:{large_headline:true, no_border:true, byline:true, two_columns:{if: =widescreen, then:true, else:false}} 
 			},
 			#deco:	{ 
 						frame: {$switch: [
@@ -43,10 +43,10 @@
 			},
 			#b2:	{ 
 						frame: {$switch: [
-							{if: =widescreen, then: [834, 38, 190, 580]},
+							{if: =widescreen, then: [834, 26, 190, 580]},
 							{if: =scale.large, then: [787, 26, 237, 594]}
 						]},
-						options:{small_headline:true, byline:{if: =scale.small, then:true, else:false}, no_border:true}
+						options:{small_headline:true, byline:{if: =scale.small, then:false, else:true}, no_border:true, left:true, no_indent:true}
 			}
 			
 		}

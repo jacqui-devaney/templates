@@ -4,6 +4,13 @@
 <dict>
 	<key>BUSINESS_AND_FINANCE</key>
 	<dict>
+	<key>SECTION-1story-fullsize-deco_template</key>
+		<dict>
+			<key>deco</key>
+			<array>
+				<string>Deco Summary Liondoor Fullsize</string>
+			</array>
+		</dict>
 		<key>SECTION-3story-G-deco-C_template</key>
 		<dict>
 			<key>b1</key>
@@ -117,7 +124,7 @@
 				<string>Mobile Tablet Highlight2B</string>
 			</array>
 		</dict>
-		<key>SECTION-4story-smallG-top_template</key>
+			<key>SECTION-4story-smallG-top_template</key>
 		<dict>
 			<key>b1</key>
 			<array>
@@ -141,6 +148,13 @@
 	</dict>
 	<key>FRIDAY_JOURNAL</key>
 	<dict>
+		<key>SECTION-1story-fullsize-deco_template</key>
+		<dict>
+			<key>deco</key>
+			<array>
+				<string>Deco Summary Liondoor Fullsize</string>
+			</array>
+		</dict>
 		<key>CONTINUATION-fancy-6_template</key>
 		<dict>
 			<key>deco</key>
@@ -472,6 +486,13 @@
 	</dict>
 	<key>FRONT_SECTION</key>
 	<dict>
+		<key>SECTION-1story-fullsize-deco_template</key>
+		<dict>
+			<key>deco</key>
+			<array>
+				<string>Deco Summary Liondoor Fullsize</string>
+			</array>
+		</dict>
 		<key>CONTINUATION-fancy-6_template</key>
 		<dict>
 			<key>deco</key>
@@ -665,6 +686,13 @@
 	</dict>
 	<key>MARKETPLACE</key>
 	<dict>
+		<key>SECTION-1story-fullsize-deco_template</key>
+		<dict>
+			<key>deco</key>
+			<array>
+				<string>Deco Summary Liondoor Fullsize</string>
+			</array>
+		</dict>
 		<key>CONTINUATION-fancy-bottom-6_template</key>
 		<dict>
 			<key>deco</key>
@@ -901,6 +929,13 @@
 	</dict>
 	<key>MONEY_AND_INVESTING</key>
 	<dict>
+		<key>SECTION-1story-fullsize-deco_template</key>
+		<dict>
+			<key>deco</key>
+			<array>
+				<string>Deco Summary Liondoor Fullsize</string>
+			</array>
+		</dict>
 		<key>CONTINUATION-fancy-6_template</key>
 		<dict>
 			<key>deco</key>
@@ -924,7 +959,16 @@
 			<array>
 				<string>Mobile Tablet Highlight2A</string>
 				<string>Mobile Tablet Highlight2B</string>
-				<string>Weekend Investor</string>
+				<string>Heard on the Street</string>
+				<string>Real Estate</string>
+				<string>Deal of the Week</string>
+				<string>Commodities</string>
+				<string>Credit Markets</string>
+				<string>Foreign Exchange</string>
+				<string>Personal Finance</string>
+				<string>Business</string>
+				<string>Financial Briefing Book</string>
+				
 			</array>
 		</dict>
 		<key>SECTION-4story-D-C_template</key>
@@ -943,7 +987,15 @@
 			<array>
 				<string>Mobile Tablet Highlight2A</string>
 				<string>Mobile Tablet Highlight2B</string>
-				<string>Weekend Investor</string>
+				<string>Heard on the Street</string>
+				<string>Real Estate</string>
+				<string>Deal of the Week</string>
+				<string>Commodities</string>
+				<string>Credit Markets</string>
+				<string>Foreign Exchange</string>
+				<string>Personal Finance</string>
+				<string>Business</string>
+				<string>Financial Briefing Book</string>
 			</array>
 		</dict>
 		<key>SECTION-4story-smallG-bottom_template</key>
@@ -962,7 +1014,15 @@
 			<array>
 				<string>Mobile Tablet Highlight2A</string>
 				<string>Mobile Tablet Highlight2B</string>
-				<string>Weekend Investor</string>
+				<string>Heard on the Street</string>
+				<string>Real Estate</string>
+				<string>Deal of the Week</string>
+				<string>Commodities</string>
+				<string>Credit Markets</string>
+				<string>Foreign Exchange</string>
+				<string>Personal Finance</string>
+				<string>Business</string>
+				<string>Financial Briefing Book</string>
 			</array>
 		</dict>
 		<key>SECTION-4story-smallG-deco_template</key>
@@ -986,7 +1046,15 @@
 			<array>
 				<string>Mobile Tablet Highlight2A</string>
 				<string>Mobile Tablet Highlight2B</string>
-				<string>Weekend Investor</string>
+				<string>Heard on the Street</string>
+				<string>Real Estate</string>
+				<string>Deal of the Week</string>
+				<string>Commodities</string>
+				<string>Credit Markets</string>
+				<string>Foreign Exchange</string>
+				<string>Personal Finance</string>
+				<string>Business</string>
+				<string>Financial Briefing Book</string>
 			</array>
 		</dict>
 		<key>SECTION-4story-smallG-top_template</key>
@@ -1005,12 +1073,27 @@
 			<array>
 				<string>Mobile Tablet Highlight2A</string>
 				<string>Mobile Tablet Highlight2B</string>
-				<string>Weekend Investor</string>
+				<string>Heard on the Street</string>
+				<string>Real Estate</string>
+				<string>Deal of the Week</string>
+				<string>Commodities</string>
+				<string>Credit Markets</string>
+				<string>Foreign Exchange</string>
+				<string>Personal Finance</string>
+				<string>Business</string>
+				<string>Financial Briefing Book</string>
 			</array>
 		</dict>
 	</dict>
 	<key>NEW_YORK</key>
 	<dict>
+		<key>SECTION-1story-fullsize-deco_template</key>
+		<dict>
+			<key>deco</key>
+			<array>
+				<string>Deco Summary Liondoor Fullsize</string>
+			</array>
+		</dict>
 		<key>CONTINUATION-fancy-6_template</key>
 		<dict>
 			<key>deco</key>
@@ -1254,6 +1337,13 @@
 	</dict>
 	<key>OFF_DUTY</key>
 	<dict>
+		<key>SECTION-1story-fullsize-deco_template</key>
+		<dict>
+			<key>deco</key>
+			<array>
+				<string>Deco Summary Liondoor Fullsize</string>
+			</array>
+		</dict>
 		<key>CONTINUATION-fancy-3OV-7_template</key>
 		<dict>
 			<key>deco</key>
@@ -1510,6 +1600,13 @@
 	</dict>
 	<key>OPINION</key>
 	<dict>
+		<key>SECTION-1story-fullsize-deco_template</key>
+		<dict>
+			<key>deco</key>
+			<array>
+				<string>Deco Summary Liondoor Fullsize</string>
+			</array>
+		</dict>
 		<key>CONTINUATION-fancy-bottom-6_template</key>
 		<dict>
 			<key>deco</key>
@@ -2015,6 +2112,13 @@
 	</dict>
 	<key>PERSONAL_JOURNAL</key>
 	<dict>
+		<key>SECTION-1story-fullsize-deco_template</key>
+		<dict>
+			<key>deco</key>
+			<array>
+				<string>Deco Summary Liondoor Fullsize</string>
+			</array>
+		</dict>
 		<key>CONTINUATION-fancy-6_template</key>
 		<dict>
 			<key>deco</key>
@@ -2343,6 +2447,13 @@
 	</dict>
 	<key>REVIEW</key>
 	<dict>
+		<key>SECTION-1story-fullsize-deco_template</key>
+		<dict>
+			<key>deco</key>
+			<array>
+				<string>Deco Summary Liondoor Fullsize</string>
+			</array>
+		</dict>
 		<key>CONTINUATION-fancy-bottom-6_template</key>
 		<dict>
 			<key>deco</key>
@@ -2566,6 +2677,13 @@
 	</dict>
 	<key>SPECIAL_REPORT</key>
 	<dict>
+		<key>SECTION-1story-fullsize-deco_template</key>
+		<dict>
+			<key>deco</key>
+			<array>
+				<string>Deco Summary Liondoor Fullsize</string>
+			</array>
+		</dict>
 		<key>SECTION-3story-G-deco-C_template</key>
 		<array/>
 		<key>SECTION-3story-G_template</key>
@@ -3000,6 +3118,13 @@
 	</dict>
 	<key>WSJ_MAGAZINE</key>
 	<dict>	
+			<key>SECTION-1story-fullsize-deco_template</key>
+		<dict>
+			<key>deco</key>
+			<array>
+				<string>Deco Summary Liondoor Fullsize</string>
+			</array>
+		</dict>
 			<key>CONTINUATION-fancy-3OV-7_template</key>
 		<dict>
 			<key>deco</key>

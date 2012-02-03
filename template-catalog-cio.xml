@@ -1,34 +1,31 @@
 <catalog  preprocessor="preprocessor.ejs">
 	<templates>
-		<!-- FRONT SECTION -->
+		<!-- CIO -->
 		<template 
 			name="SECTION-CIO_template.xml" 
-			title="CIO" 
+			title="CIO Front" 
 			section="CIO" 
 			min="10" 
-			deco="true" 
 			usage="front" 
 		/>
 		
-		<!-- FANCY CONTINUATION -->
 		<template 
 			name="CONTINUATION-CIO_template.xml" 
-			min="6" 
-			title="6 story - small G liondoor" 
-			section="WSJ_MAGAZINE" 
+			min="18" 
+			title="CIO Continuation" 
+			section="CIO" 
 			usage="continuation" 
-			deco="true" 
 			page="2" 
 		/>
 		
-		<!-- END FANCY CONTINUATION -->
+		<!-- END  CIO-->
 		
 		
 	</templates>
 
 	<article-page-plans>
-		<article pages="ARTICLE-pages-cio.xml" />
-		<article pages="ARTICLE-pages-deloitte.xml" />
+		<article pages="ARTICLE-pages-cio.xml" section="CIO" />
+		<article pages="ARTICLE-pages-deloitte.xml" section="CIO" />
 	</article-page-plans>
 	
 	<display-properties>

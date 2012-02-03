@@ -548,7 +548,7 @@
 		/>
 		<!--  END GENERIC CONTINUATION -->
 		
-		<!-- WHATS NEW -->
+		<!-- WHATS NEWS -->
 		<template 
 			name="WHATSNEWS-dummy_template.xml"
 			usage="front" 
@@ -571,10 +571,32 @@
 			usage="ads"
 		/>
 		<!-- END FULL PAGE AD -->
+		<!-- CIO -->
+		<template 
+			name="SECTION-CIO_template.xml" 
+			title="CIO Front" 
+			section="CIO" 
+			min="10" 
+			usage="front" 
+		/>
+		
+		<template 
+			name="CONTINUATION-CIO_template.xml" 
+			min="18" 
+			title="CIO Continuation" 
+			section="CIO" 
+			usage="continuation" 
+			page="2" 
+		/>
+		
+		<!-- END  CIO-->
+		
 	</templates>
 
 	<article-page-plans>
 		<article pages="ARTICLE-pages.xml"/>
+		<article pages="ARTICLE-pages-cio.xml" section="CIO" />
+		<article pages="ARTICLE-pages-deloitte.xml" section="CIO" />
 		<article pages="ARTICLE-pages-hots.xml" type="Heard on the Street" />
 		<article pages="ARTICLE-pages-hots.xml" type="Overheard"/>
 		<article pages="ARTICLE-pages-hots.xml" type="Headrd on the Street Other"/>

@@ -1,0 +1,11 @@
+<jpml id="ARTICLE-continuation-deloitte-no-ads_template">
+    <style>{
+        if: =portrait, then: {
+            #view: { frame: [0, 0, 768, 899] }
+        }, else: {
+            #view : { frame: [0, 0, 1024, 646] }       
+        }
+    }</style>
+    <box id="view" embed="article" module="ARTICLE-continuation-deloitte-no-ads_module.xml" />
+    <box id="index" embed="index" />
+</jpml>

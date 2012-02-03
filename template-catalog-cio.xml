@@ -1,0 +1,40 @@
+<catalog  preprocessor="preprocessor.ejs">
+	<templates>
+		<!-- FRONT SECTION -->
+		<template 
+			name="SECTION-CIO_template.xml" 
+			title="CIO" 
+			section="CIO" 
+			min="10" 
+			deco="true" 
+			usage="front" 
+		/>
+		
+		<!-- FANCY CONTINUATION -->
+		<template 
+			name="CONTINUATION-CIO_template.xml" 
+			min="6" 
+			title="6 story - small G liondoor" 
+			section="WSJ_MAGAZINE" 
+			usage="continuation" 
+			deco="true" 
+			page="2" 
+		/>
+		
+		<!-- END FANCY CONTINUATION -->
+		
+		
+	</templates>
+
+	<article-page-plans>
+		<article pages="ARTICLE-pages-cio.xml" />
+		<article pages="ARTICLE-pages-deloitte.xml" />
+	</article-page-plans>
+	
+	<display-properties>
+		<ads value="2; 3; 3,5; 3,6; 3,6,8; 3,6,9; 3,6,9,11; 3,6,9,12; 3,6,9,12,14; 3,6,9,12,15" 
+		/>
+	</display-properties>
+	
+</catalog>
+

@@ -1,0 +1,122 @@
+<jpml id="CONTINUATION-CIO_template">
+	<style src="GLOBAL-stylesheet.ejs" />
+	<style src="GLOBAL_MODULES-stylesheet.ejs" />
+	<style>{
+		.rando_heading: {
+			font-size:18
+		},
+		.ahed_headline: {
+			font-size:16,
+			line-height:16,
+			font-name:DJ5EscrowCond-BoldItalic
+		},
+		#tech_strap: {
+			padding: [4, 0, 0, 8],
+			background-color:#e4e4e4,
+			frame: [512, 4, 256, 23] 
+        },
+		.strap: {
+			color:#000,
+			font-name:DJ5RetinaCd-Medium,
+			font-size:18
+		},
+        #b1 : { frame: [0, 0, 256, 203] },
+        #b2 : { frame: [0, 204, 256, 203], options: {hide_strap:true }},
+        #b3 : { frame: [0, 407, 256, 203], options: {hide_strap:true }},
+        #b4 : { frame: [256, 0, 256, 203], options: {hide_strap:true }},
+        #b5 : { frame: [256, 204, 256, 203], options: {hide_strap:true}},
+        #b6 : { frame: [256, 407, 256, 203], options: {hide_strap:true }},
+		#b7:	{ 
+			frame: [512, 30, 256, 65]
+		},
+		#b8:	{ 
+			frame: [512, 95, 256, 65]
+		},
+		#b9:	{ 
+			frame: [512, 160, 256, 65]
+		},
+		#b10:	{ 
+			frame: [512, 225, 256, 65]
+		},
+		#b11:	{ 
+			frame: [512, 290, 256, 65]
+		},
+		#b12:	{ 
+			frame: [512, 355, 256, 65]
+		},
+		#b13:	{ 
+			frame: [512, 420, 256, 65]
+		},
+		#b14:	{ 
+			frame: [512, 485, 256, 65]
+		},
+		#b15:	{ 
+			frame: [512, 550, 256, 61]
+		}
+	}</style>
+	<style>{
+		if: =portrait, then: {
+			#h5: {
+				frame:[1, 679, 256, 196],
+				options:{portrait:true}
+			},
+			#h6: {
+				frame:[257, 679, 256, 196],
+				options:{portrait:true}
+			},
+			#h7: {
+				frame:[513, 679, 256, 196],
+				options:{portrait:true}
+			},
+			#deloitte_header: {
+				frame: [0, 611, 768, 68]
+			}
+			
+		}, else: {
+			#h5: {
+				frame:[785, 80, 240, 180]
+			},
+			#h6: {
+				frame:[785, 260, 240, 180]
+			},
+			#h7: {
+				frame:[785, 440, 240, 180]
+			},
+			#deloitte_header: {
+				frame: [785, 0, 238, 64]
+			}
+			
+		}
+	}</style>
+    <box id="b1" embed="article" module="CONTINUATION-dynamic_module.xml" />    
+    <box id="b2" embed="article" module="CONTINUATION-dynamic_module.xml" />
+    <box id="b3" embed="article" module="CONTINUATION-dynamic_module.xml" />
+    <box id="b4" embed="article" module="CONTINUATION-dynamic_module.xml" />
+    <box id="b5" embed="article" module="CONTINUATION-dynamic_module.xml" />
+    <box id="b6" embed="article" module="CONTINUATION-dynamic_module.xml" />
+	<box id="tech_strap">
+		<panel>
+			<p class="strap" >Latest Technology News</p>
+		</panel>
+	</box>
+	<box id="b7" embed="article" module="FLASHLINE-HEADLINE_module.xml" />
+	<box id="b8" embed="article" module="FLASHLINE-HEADLINE_module.xml" />
+	<box id="b9" embed="article" module="FLASHLINE-HEADLINE_module.xml" />
+	<box id="b10" embed="article" module="FLASHLINE-HEADLINE_module.xml" />
+	<box id="b11" embed="article" module="FLASHLINE-HEADLINE_module.xml" />
+	<box id="b12" embed="article" module="FLASHLINE-HEADLINE_module.xml" />
+	<box id="b13" embed="article" module="FLASHLINE-HEADLINE_module.xml" />
+	<box id="b14" embed="article" module="FLASHLINE-HEADLINE_module.xml" />
+	<box id="b15" embed="article" module="FLASHLINE-HEADLINE_module.xml" />
+	<box id="deloitte_header">
+		<panel class="deloitte" />
+		<panel class="slug">
+			<p class="deloitte_slug" >CIO insight and analysis written and completed by Deloitte</p>
+		</panel>
+	</box>
+	<box id="h5" embed="article" module="HIGHLIGHTS-CIO_module.xml" />
+	<box id="h6" embed="article" module="HIGHLIGHTS-CIO_module.xml" />
+	<box id="h7" embed="article" module="HIGHLIGHTS-CIO_module.xml" />
+
+	
+</jpml>

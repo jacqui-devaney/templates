@@ -1,0 +1,23 @@
+<pages preprocessor="preprocessor.ejs" class="article">
+
+    <!-- This template will always be used to render the front page -->
+	<page template="ARTICLE-front-cio_template.xml" type="prefix">
+		<link id="view" module="ARTICLE-front-cio_module.xml"/>
+	</page>
+	
+    <!-- These pages will repeat as needed, hence the "repeat" type -->
+	<page template="ARTICLE-continuation-cio-no-ads_template.xml" type="repeat">
+		<link id="view" module="ARTICLE-continuation-cio-no-ads_module.xml"/>
+	</page>	
+	
+    <!-- The last page of every article uses column leveling with a background matte,
+     which is not supported in conjunction with the ads template. The "suffix" type
+     is used to render that last page. -->
+	<page template="ARTICLE-continuation-cio-no-ads_template.xml" type="suffix">
+		<link id="view" module="ARTICLE-continuation-cio-no-ads_module.xml"/>
+	</page>	
+	
+    <page template="GENERIC-fullpagead-template.xml" type="interstitial" />
+	
+	
+</pages>

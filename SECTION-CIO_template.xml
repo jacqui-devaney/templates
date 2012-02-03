@@ -1,0 +1,129 @@
+<jpml id="SECTION-CIO_template">
+	<style src="GLOBAL-stylesheet.ejs" />
+	<style src="GLOBAL_MODULES-stylesheet.ejs" />
+	<style src="SECTION-stylesheet.ejs" />
+	<style>{
+		.rando_heading: {
+			font-size:18
+		},
+		.ahed_headline: {
+			font-size:16,
+			line-height:16,
+			font-name:DJ5EscrowCond-BoldItalic
+		},
+		#b1:	{ 
+			frame: [8, 99, 362, 169],
+			options: {medium_headline:true, no_border:true}
+		},
+		#b2:	{ 
+			frame: [8, 268, 362, 169],
+			options: {medium_headline:true}
+		},
+		#b3:	{ 
+			frame: [8, 437, 362, 169],
+			options: {medium_headline:true}
+		},
+		#l1: {
+			frame: [384, 15, 1, 580],
+			background-color:#b1aca1
+		},
+		#b5:	{ 
+			frame: [394, 44, 362, 150],
+			options: {small_headline:true}
+		},
+		#b6:	{ 
+			frame: [394, 194, 362, 150],
+			options: {small_headline:true, border:true}
+		},
+		#b7:	{ 
+			frame: [394, 344, 362, 90],
+			options: {border:true, small_headline:true}
+		},
+		#b8:	{ 
+			frame: [394, 434, 362, 87],
+			options:{small_headline:true}
+		},
+		#b9:	{ 
+			frame: [394, 521, 362, 87],
+			options:{small_headline:true}
+		},
+		#cio_header: {
+			frame: [0, 10, 384, 99]
+		
+		},
+		#tech_header: {
+			frame: [394, 15, 362, 44]
+		},
+		#line: {
+			background-color:#b1aca1,
+			frame: [50, 23, 262, 1]
+		}
+		
+		
+	}</style>
+	<style>{
+		if: =portrait, then: {
+			#h5: {
+				frame:[1, 679, 256, 196],
+				options:{portrait:true}
+			},
+			#h6: {
+				frame:[257, 679, 256, 196],
+				options:{portrait:true}
+			},
+			#h7: {
+				frame:[513, 679, 256, 196],
+				options:{portrait:true}
+			},
+			#deloitte_header: {
+				frame: [0, 611, 768, 68]
+			}
+			
+		}, else: {
+			#h5: {
+				frame:[785, 80, 240, 180]
+			},
+			#h6: {
+				frame:[785, 260, 240, 180]
+			},
+			#h7: {
+				frame:[785, 440, 240, 180]
+			},
+			#deloitte_header: {
+				frame: [785, 0, 238, 64]
+			}
+			
+		}
+	}</style>
+	<box id="cio_header">
+		<panel class="cio_report">
+			<p class="cio_head">CIO Report –</p>
+	        <p class="ahed_headline">Exclusive Reporting &amp; Analysis</p>
+	        <p id="stars"><mark class="ahed_stars" /></p>
+		</panel>
+	</box>
+	<box id="b1" embed="article" module="FRONT-NO-IMAGE_module.xml" />
+	<box id="b2" embed="article" module="FRONT-NO-IMAGE_module.xml" />
+	<box id="b3" embed="article" module="FRONT-NO-IMAGE_module.xml" />
+	<box id="l1" />
+	<box id="tech_header">
+		<p class="rando_heading">Latest Technology News</p>
+		<box id="line" />
+	</box>
+	<box id="b5" embed="article" module="RIGHT-INSET-IMAGE_module.xml" />
+	<box id="b6" embed="article" module="RIGHT-INSET-IMAGE_module.xml" />
+	<box id="b7" embed="article" module="FLASHLINE-HEADLINE_module.xml" />
+	<box id="b8" embed="article" module="FLASHLINE-HEADLINE_module.xml" />
+	<box id="b9" embed="article" module="FLASHLINE-HEADLINE_module.xml" />
+	<box id="deloitte_header">
+		<panel class="deloitte" />
+		<panel class="slug">
+			<p class="deloitte_slug" >CIO insight and analysis written and completed by Deloitte</p>
+		</panel>
+	</box>
+	<box id="h5" embed="article" module="HIGHLIGHTS-CIO_module.xml" />
+	<box id="h6" embed="article" module="HIGHLIGHTS-CIO_module.xml" />
+	<box id="h7" embed="article" module="HIGHLIGHTS-CIO_module.xml" />
+
+	
+</jpml>

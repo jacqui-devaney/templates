@@ -313,6 +313,13 @@
 		text-scale:{if: =widescreen, then: 1.1, else: 1},
 		text-indent:{if: =options.indent, then:20, else: inherit}
 	},
+	.highlight_flashline_small: {
+		font-name:DJ5RetinaCd-Semibold,
+		font-size:15,
+		line-height:16,
+		color:#656565
+	},
+	
 	.magazine_highlight_body: {
 		font-name:DJ5Exchange-Medium,
 		font-size:13,
@@ -521,7 +528,70 @@
 	},
 	#mediabucket_container: {
 		display: {if: =page.mediabucket, then:inherit, else:none}
+	},
+	#deloitte_header: {
+		border-image:url(deloitte_background.png),
+		border-width: [16, 0, 0, 0],
+		border-slice: [16, 0, 0, 0],
+		background-color:#e6f5ff
+	},
+	#deloitte_article_header: {
+		border-image:url(deloitte_background-white.png),
+		border-width: [3, 0, 0, 0],
+		border-slice: [3, 0, 0, 0]
+	},
+	.deloitte: {
+		background-image:url(deloitte.png),
+		background-position:top,
+		width:95,
+		padding:[10, 0]
+	
+	},
+	.slug: {
+		padding: [2, 0, 0, 0]
+	},
+	.deloitte_slug: {
+		font-name:Georgia-Italic,
+		font-size:12,
+		text-align:center
+	},
+	.cio_head: {
+		font-size:45,
+		color:#88795c,
+		font-name:DJ5EscrowComp-Roman,
+		text-align:center,
+		line-height:48
+	},
+	.deloitte_article_headline: {
+		font-size:40,
+		color:#333,
+		font-name:HelveticaNeue-Medium,
+		text-align:left,
+		line-height:45,
+		padding:[0, 0, 8, 0],
+		border-width:[0, 0, 1, 0],
+		border-color:#ccc
+	
+	},
+	.deloitte_article_body: {
+		color:#333,
+		font-name:Helvetica,
+		text-align:left,
+		text-indent:20,
+		font-size:{$multiply: [15, =view.zoomlevel]},
+		line-height:{$multiply: [20, =view.zoomlevel]},
+        text-align: =justify
+	},
+	.legal: {
+		font-name:Helvetica,
+		text-align:left,
+		color:#767676,
+		font-size:11,
+		line-height:16
 	}
+	
+	
+	
 	
 }
 

@@ -1,0 +1,39 @@
+<jpml id="TOP-IMAGE_module">
+	<style src="GLOBAL_MODULES-stylesheet.ejs" />
+	<style src="GLOBAL-stylesheet.ejs" />
+	<style>{
+		$join: [
+			{ $switch: [
+				{ if: =options.border, then: {
+					#wrapper: {
+						border-width: [1, 0, 0, 0],
+						border-color: #b1aca1,
+						padding: [8, 8, 5, 8]
+					}
+			
+				}},
+				{ if: true, then: {
+					#wrapper: {
+						border-width: [0, 0, 0, 0],
+						padding: [5, 8, 5, 8]
+					}
+				}}
+			]},
+			{.link_out: {
+				background-image: url(link_out.png),
+				background-position:right
+			}},
+			{.invisible: { display:none }},
+			{#small_headline: { display: { if: =options.small_headline, then:inherit }}},
+			{.continuation_headline: { text-overflow:ellipsis}}
+		
+			]
+		}</style>
+	<box id="wrapper">
+		<p class="highlight_flashline_small" embed="flashline"><mark class="link_out" /></p>
+	    <panel id="headline">
+			<p id="small_headline" class="invisible"><span embed="headline" /></p>
+			<p class="continuation_headline"><span embed="headline" /></p>
+		</panel>
+	</box>
+</jpml>

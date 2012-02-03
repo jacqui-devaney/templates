@@ -237,6 +237,15 @@
 			min="5" 
 			usage="front" 
 		/>
+		<template 
+			name="SECTION-1story-fullsize-deco.xml" 
+			section="MARKETPLACE" 
+			title="Full size Deco"
+			min="1" 
+			deco="true"
+			usage="front" 
+		/>
+		
 		<!-- END MARKETPLACE -->
 		
 		<!-- BEGIN BUSINESS and FINANCE -->
@@ -285,6 +294,15 @@
 			min="5" 
 			usage="front" 
 		/>
+		<template 
+			name="SECTION-1story-fullsize-deco.xml" 
+			section="BUSINESS_AND_FINANCE" 
+			title="Full size Deco"
+			min="1" 
+			deco="true"
+			usage="front" 
+		/>
+		
 		<!-- END BUSINESS and FINANCE -->
 		
 		<!-- BEGIN MONEY AND INVESTING -->
@@ -322,6 +340,14 @@
 			section="MONEY_AND_INVESTING" 
 			title="3 story - G photo"
 			min="5" 
+			usage="front" 
+		/>
+		<template 
+			name="SECTION-1story-fullsize-deco.xml" 
+			section="MONEY_AND_INVESTING" 
+			title="Full size Deco"
+			min="1" 
+			deco="true"
 			usage="front" 
 		/>
 		<!-- END MONEY AND INVESTING -->
@@ -467,6 +493,14 @@
 			min="2" 
 			usage="front" 
 		/>
+		<template 
+			name="SECTION-1story-fullsize-deco.xml" 
+			section="OFF_DUTY" 
+			title="Full size Deco"
+			min="1" 
+			deco="true"
+			usage="front" 
+		/>
 		<!-- END OFF DUTY -->
 		
 		<!-- PERSONAL JOURNAL -->
@@ -542,6 +576,14 @@
 			min="2" 
 			usage="front" 
 		/>
+		<template 
+			name="SECTION-1story-fullsize-deco.xml" 
+			section="PERSONAL_JOURNAL" 
+			title="Full size Deco"
+			min="1" 
+			deco="true"
+			usage="front" 
+		/>
 		<!-- END PERSONAL JOURNAL -->
 		
 		<!-- REVIEW -->
@@ -599,6 +641,14 @@
 			section="REVIEW" 
 			title="PV 1 highlight"
 			min="2" 
+			usage="front" 
+		/>
+		<template 
+			name="SECTION-1story-fullsize-deco.xml" 
+			section="REVIEW" 
+			title="Full size Deco"
+			min="1" 
+			deco="true"
 			usage="front" 
 		/>
 		<!-- END REVIEW -->
@@ -660,6 +710,14 @@
 			min="2" 
 			usage="front" 
 		/>
+		<template 
+			name="SECTION-1story-fullsize-deco.xml" 
+			section="JOURNAL_REPORT" 
+			title="Full size Deco"
+			min="1" 
+			deco="true"
+			usage="front" 
+		/>
 		<!-- END JOURNAL REPORT -->
 		
 		<!-- FRIDAY JOURNAL -->
@@ -719,6 +777,14 @@
 			min="2" 
 			usage="front" 
 		/>
+		<template 
+			name="SECTION-1story-fullsize-deco.xml" 
+			section="FRIDAY_JOURNAL" 
+			title="Full size Deco"
+			min="1" 
+			deco="true"
+			usage="front" 
+		/>
 		<!-- END FRIDAY JOURNAL -->
 		
 		<!-- SPECIAL REPORT -->
@@ -752,6 +818,14 @@
 			section="WEEKEND_JOURNAL" 
 			title="P-photo"
 			min="3" 
+			usage="front" 
+		/>
+		<template 
+			name="SECTION-1story-fullsize-deco.xml" 
+			section="WEEKEND_JOURNAL" 
+			title="Full size Deco"
+			min="1" 
+			deco="true"
 			usage="front" 
 		/>
 		<!-- END WEEKEND JOURNAL -->
@@ -804,6 +878,14 @@
 			section="WSJ_MAGAZINE" 
 			title="PV - (White highlights)"
 			min="3" 
+			usage="front" 
+		/>
+		<template 
+			name="SECTION-1story-fullsize-deco.xml" 
+			section="WSJ_MAGAZINE" 
+			title="Full size Deco"
+			min="1" 
+			deco="true"
 			usage="front" 
 		/>
 		<!-- END WSJ MAGAZINE -->
@@ -891,6 +973,15 @@
 			usage="continuation" 
 			deco="true" 
 			page="4" 
+		/>
+		<template 
+			name="SECTION-1story-fullsize-deco.xml" 
+			section="MARKETPLACE,MONEY_AND_INVESTING,THE_JOURNAL_REPORT,REVIEW,WSJ_MAGAZINE,BUSINESS_AND_FINANCE,OFF_DUTY,FRONT_SECTION,NEW_YORK,FRIDAY_JOURNAL,PERSONAL_JOURNAL" 
+			title="Full size Deco"
+			min="1" 
+			deco="true"
+			usage="continuation"
+			page="2" 
 		/>
 
 		<!-- END FANCY CONTINUATION -->

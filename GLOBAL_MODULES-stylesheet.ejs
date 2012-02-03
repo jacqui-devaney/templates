@@ -538,7 +538,8 @@
 	#deloitte_article_header: {
 		border-image:url(deloitte_background-white.png),
 		border-width: [3, 0, 0, 0],
-		border-slice: [3, 0, 0, 0]
+		border-slice: [3, 0, 0, 0],
+		min-height:49
 	},
 	.deloitte: {
 		background-image:url(deloitte.png),
@@ -581,6 +582,19 @@
 		font-size:{$multiply: [15, =view.zoomlevel]},
 		line-height:{$multiply: [20, =view.zoomlevel]},
         text-align: =justify
+	},
+	.close_button: {
+		background-image:url(close.png),
+		width:60,
+		height:30,
+		left:0,
+		bottom:0
+	},
+	#close_button_box: {
+		top:0,
+		right:0,
+		width:70,
+		height:40
 	},
 	.legal: {
 		font-name:Helvetica,

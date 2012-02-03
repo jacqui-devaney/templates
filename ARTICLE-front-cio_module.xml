@@ -47,6 +47,9 @@
 		
 		]
     }</style>
+	<box id="close_button_box">
+		<box class="close_button" embed="close"/>
+	</box>
 	<box id="continues_label">
 		<p><mark id="continues" /></p>
 	</box>

@@ -45,9 +45,11 @@
 		]
     }</style>
 	<box id="deloitte_article_header">
+		<box id="close_button_box">
+			<box class="close_button" embed="close"/>
+		</box>
 		<panel class="deloitte_article">
 			<panel class="deloitte" />
-			<panel class="close_button"/>
 		</panel>
 		<panel class="slug">
 			<p class="deloitte_slug" >CIO insight and analysis written and completed by Deloitte</p>

@@ -54,6 +54,9 @@
 
 		]
     }</style>
+	<box id="close_button_box">
+		<box class="close_button" embed="close"/>
+	</box>
 	<panel id="body_container">
         <box id="continued_label">
 			<p><mark id="continued" /></p>

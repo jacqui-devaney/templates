@@ -3,9 +3,6 @@
 	<style src="GLOBAL-stylesheet.ejs" />
 	<style>{
 		$join: [
-		{#deloitte_article_header: {
-			frame: [0, 0, 1024, 53]
-		}},
 		{.deloitte:{
 			background-position: top-left
 		}},
@@ -15,12 +12,6 @@
 		{.deloitte_slug:{
 			text-align:left,
 			padding:[0, 0, 0, 15]
-		}},
-		{.close_button: {
-			background-image:url(close.png),
-			background-position:top-right,
-			width:60,
-			height:30
 		}},
 		{#header_top: { 
 			padding:[6, 10, 8, 15],
@@ -53,15 +44,17 @@
 		}}
 		]
     }</style>
-	<box id="deloitte_article_header">
+	<panel id="deloitte_article_header">
+		<box id="close_button_box">
+			<box class="close_button" embed="close"/>
+		</box>
 		<panel class="deloitte_article">
 			<panel class="deloitte" />
-			<panel class="close_button"/>
 		</panel>
 		<panel class="slug">
 			<p class="deloitte_slug" >CIO insight and analysis written and completed by Deloitte</p>
 		</panel>
-	</box>
+	</panel>
 	<box id="continues_label">
 		<p><mark id="continues" /></p>
 	</box>

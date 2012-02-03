@@ -20,7 +20,7 @@
 		<template 
 			section="FRONT_SECTION" 
 			name="FRONT-4story-F-deco-C_template.xml" 
-			title="4 story - Top F liondoor - second story C photo"
+			title="TEST 4 story - Top F liondoor - second story C photo"
 			min="4" 
 			deco="true" 
 			usage="front" 
@@ -102,7 +102,7 @@
 		<template 
 			section="FRONT_SECTION" 
 			name="FRONT-4story-F-deco-C_template.xml" 
-			title="4 story - F liondoor - C image"
+			title="TEST 4 story - F liondoor - C image"
 			min="4" 
 			deco="true" 
 			usage="front" 
@@ -399,6 +399,15 @@
 			min="2" 
 			usage="front" 
 		/>
+		<template 
+			name="SECTION-1story-fullsize-deco.xml" 
+			section="NEW_YORK" 
+			title="Full size Deco"
+			min="1" 
+			deco="true"
+			usage="front" 
+		/>
+		
 		<!-- END NEW YORK -->
 		
 		<!-- OFF DUTY -->
@@ -1001,7 +1010,9 @@
 		<article pages="ARTICLE-pages-letters.xml" type="Letters"/>
 		<article pages="ARTICLE-pages-off-duty.xml" type="Slow Food Fast"/>
 		<article pages="ARTICLE-pages-off-duty.xml" type="Mobile Special"/>
-		
+		<article pages="ARTICLE-pages-off-duty.xml" type="Outer Beauty"/>
+		<article pages="ARTICLE-pages-off-duty.xml" type="Geek Chic"/>
+
 	</article-page-plans>
 	
 	<display-properties>

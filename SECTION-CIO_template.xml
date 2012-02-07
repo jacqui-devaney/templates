@@ -57,6 +57,13 @@
 		#line: {
 			background-color:#b1aca1,
 			frame: [50, 23, 262, 1]
+		},
+		#strap: {
+			padding: [4, 4, 0, 8],
+			background-color:#e4e4e4,
+			text-align:center
+			
+		
 		}
 		
 		
@@ -107,8 +114,9 @@
 	<box id="b3" embed="article" module="FRONT-NO-IMAGE_module.xml" />
 	<box id="l1" />
 	<box id="tech_header">
-		<p class="rando_heading">Latest Technology News</p>
-		<box id="line" />
+		<panel id="strap">
+			<p class="subsection">LATEST TECHNOLOGY NEWS</p>
+		</panel>
 	</box>
 	<box id="b5" embed="article" module="RIGHT-INSET-IMAGE_module.xml" />
 	<box id="b6" embed="article" module="RIGHT-INSET-IMAGE_module.xml" />

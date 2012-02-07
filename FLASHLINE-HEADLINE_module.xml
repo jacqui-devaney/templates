@@ -19,21 +19,23 @@
 					}
 				}}
 			]},
-			{.link_out: {
+			{#link_out: {
 				background-image: url(link_out.png),
-				background-position:right
+				background-position:left,
+				padding:[2, 0, 0, 14]
 			}},
 			{.invisible: { display:none }},
+			{#invisible: { display:none }},
 			{#small_headline: { display: { if: =options.small_headline, then:inherit }}},
 			{.continuation_headline: { text-overflow:ellipsis}}
 		
 			]
 		}</style>
 	<box id="wrapper">
-		<p class="highlight_flashline_small" embed="flashline"><mark class="link_out" /></p>
+		<p class="highlight_flashline_small" id="link_out" embed="flashline"></p>
 	    <panel id="headline">
 			<p id="small_headline" class="invisible"><span embed="headline" /></p>
-			<p class="continuation_headline"><span embed="headline" /></p>
+			<p class="continuation_headline" id="invisible"><span embed="headline" /></p>
 		</panel>
 	</box>
 </jpml>

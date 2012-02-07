@@ -344,29 +344,6 @@
 			usage="front"
 		/>
 		<!-- END OPINION -->
-		<!-- CIO -->
-		<template 
-			name="SECTION-4story-D-C-marketdata_template.xml"
-			section="CIO" 
-			title="4 story Plain - Marketdata"
-			min="6"
-			usage="front"
-		/>
-		<template 
-			name="SECTION-4story-smallG-top-marketdata_template.xml"
-			section="CIO" 
-			title="4 story - G photo"
-			min="6"
-			usage="front"
-		/>
-		<template 
-			name="SECTION-3story-G-marketdata_template.xml"
-			section="CIO" 
-			title="3story - G photo marketdata"
-			min="5"
-			usage="front"
-		/>
-		<!-- END CIO -->
 		
 		<!-- FANCY CONTINUATION -->
 		<template 

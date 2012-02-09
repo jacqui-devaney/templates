@@ -37,7 +37,7 @@
 						{if: =widescreen, then: [11, 0, 566, 326]},
 						{if: =scale.large, then: [11, 0, 556, 296]}
 					]},
-					options:{large_headline:true, show_image:true} 
+					options:{large_headline:true, show_image:true, one_column:{if: =widescreen, then:true, else:false}} 
 			},
 			#b2:	{ 
 						frame: {$switch: [

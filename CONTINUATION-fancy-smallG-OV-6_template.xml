@@ -42,7 +42,7 @@
 							{if: =widescreen, then: [512, 0, 252, 348]},
 							{if: =scale.large, then: [512, 0, 252, 420]}
 						]},
-						options: {bottom_border:true, small_headline:true} 
+						options: {bottom_border:true, small_headline:true, OV_image:true} 
 			}
 	    }, else: {
 	        #b1 : { frame: [0, 0, 256, 619] },

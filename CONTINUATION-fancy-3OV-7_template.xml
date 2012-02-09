@@ -35,21 +35,21 @@
 							{if: =widescreen, then: [0, 0, 252, 348]},
 							{if: =scale.large, then: [0, 0, 252, 423]}
 						]},
-						options: {small_headline:true, bottom_border:true} 
+						options: {small_headline:true, bottom_border:true, OV_image:true} 
 			},
 	        #deco2 : { 
 						frame: {$switch: [
 							{if: =widescreen, then: [256, 0, 252, 348]},
 							{if: =scale.large, then: [256, 0, 252, 423]}
 						]},
-						options: {small_headline:true, bottom_border:true} 
+						options: {small_headline:true, bottom_border:true, OV_image:true} 
 			},
 	        #deco3 : { 
 						frame: {$switch: [
 							{if: =widescreen, then: [512, 0, 252, 348]},
 							{if: =scale.large, then: [512, 0, 252, 423]}
 						]},
-						options: {small_headline:true, bottom_border:true} 
+						options: {small_headline:true, bottom_border:true, OV_image:true} 
 			}
 	    }, else: {
 	        #b1 : { frame: [0, 0, 256, 619] },

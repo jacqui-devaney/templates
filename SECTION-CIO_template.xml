@@ -12,40 +12,38 @@
 			font-name:DJ5EscrowCond-BoldItalic
 		},
 		#b1:	{ 
-			frame: [8, 99, 362, 169],
+			frame: [8, 99, 362, 245],
 			options: {medium_headline:true, no_border:true}
 		},
 		#b2:	{ 
-			frame: [8, 268, 362, 169],
-			options: {medium_headline:true}
+			frame: [8, 344, 362, 135],
+			options: {small_headline:true}
 		},
 		#b3:	{ 
-			frame: [8, 437, 362, 169],
-			options: {medium_headline:true}
+			frame: [8, 479, 362, 131],
+			options: {small_headline:true}
 		},
 		#l1: {
 			frame: [384, 15, 1, 580],
 			background-color:#b1aca1
 		},
 		#b5:	{ 
-			frame: [394, 44, 362, 150],
+			frame: [394, 44, 362, 200],
 			options: {small_headline:true}
 		},
 		#b6:	{ 
-			frame: [394, 194, 362, 150],
+			frame: [394, 244, 362, 170],
 			options: {small_headline:true, border:true}
 		},
 		#b7:	{ 
-			frame: [394, 344, 362, 90],
-			options: {border:true, small_headline:true}
+			frame: [394, 414, 362, 66],
+			options: {border:true}
 		},
 		#b8:	{ 
-			frame: [394, 434, 362, 87],
-			options:{small_headline:true}
+			frame: [394, 480, 362, 66]
 		},
 		#b9:	{ 
-			frame: [394, 521, 362, 87],
-			options:{small_headline:true}
+			frame: [394, 546, 362, 64]
 		},
 		#cio_header: {
 			frame: [0, 10, 384, 99]
@@ -119,7 +117,7 @@
 		</panel>
 	</box>
 	<box id="b5" embed="article" module="RIGHT-INSET-IMAGE_module.xml" />
-	<box id="b6" embed="article" module="RIGHT-INSET-IMAGE_module.xml" />
+	<box id="b6" embed="article" module="FRONT-NO-IMAGE_module.xml" />
 	<box id="b7" embed="article" module="FLASHLINE-HEADLINE_module.xml" />
 	<box id="b8" embed="article" module="FLASHLINE-HEADLINE_module.xml" />
 	<box id="b9" embed="article" module="FLASHLINE-HEADLINE_module.xml" />

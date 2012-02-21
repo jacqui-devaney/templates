@@ -53,6 +53,12 @@
 								
 				headlines: { if: =device.size, less-than: 8.8, then: true, else: false }
 			},
+			show_message: { 
+				if: =device.platform, 
+				equals: "Android", 
+				then: true,
+				else: false
+			},
 			justify: { if-any: [
 						{if: =device.size, less-than: 8.8, then: true, else: false}, 
 						{if: =issue.edition, equals: "germany", then: true, else: false}

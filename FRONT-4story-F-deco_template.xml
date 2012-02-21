@@ -76,7 +76,13 @@
 				}
         }
     }</style>
-    <box id="marketstrap" embed="marketstrap" />
+    <box id="marketstrap">
+	<box id="marketstrap_view" embed="marketstrap" />
+	<box id="marketstrap_message">
+		<p>Your WSJ version is not supported. Please upgrade.</p>
+	</box>
+</box>
+
     <box id="whatsnews" embed="whatsnews" />
 	<box id="ad_background" class="front_ad">
 		<box id="ad" class="ad-rectangle" embed="advertisement" />

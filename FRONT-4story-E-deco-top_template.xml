@@ -1,0 +1,76 @@
+<jpml id="FRONT-4story-E-deco-top_template">
+	<style src="GLOBAL-stylesheet.ejs" />
+	<style src="FRONT-stylesheet.ejs" />
+	<style> {
+		if: =portrait, then: {
+			#deco:			{ 
+								frame: {$switch: [
+									{if: =widescreen, then: [194, 28, 328, 234]},
+									{if: =scale.large, then: [194, 26, 375, 344]}
+								]},
+								options:{normal_headline:true, no_border:true, F_image: {if: =widescreen, then:true, else:false}} 
+							},
+			#b1:			{ 
+								frame: {$switch: [
+									{if: =widescreen, then: [535, 28, 230, 548]},
+									{if: =scale.large, then: [582, 26, 183, 548]}
+								]},
+								options:{large_headline:true, no_border:true, left:true, no_indent:true} 
+							},
+			#b2:			{ 
+								frame: {$switch: [
+									{if: =widescreen, then: [194, 260, 328, 314]},
+									{if: =scale.large, then: [194, 370, 375, 203]}
+								]},
+								options:{small_headline:true, show_image:true, byline:{if: =scale.small, then:true, else:false}} 
+							},
+			#b3:			{ frame: [194, 575, 280, 298], options:{small_headline:true, bottom:true, no_indent:true} },
+			#b4:			{ frame: [486, 575, 280, 298], options:{no_indent:true} }
+		}, else: {
+			#deco:			{ 
+								frame: {$switch: [
+									{if: =widescreen, then: [205, 28, 375, 344]},
+									{if: =scale.large, then: [205, 26, 375, 344]}
+								]},
+								options:{normal_headline:true, no_border:true, F_image: {if: =widescreen, then:true, else:false}} 
+							},
+			#b1:			{ 
+								frame: {$switch: [
+									{if: =widescreen, then: [593, 28, 430, 344]},
+									{if: =scale.large, then: [593, 26, 430, 344]}
+								]},
+								options:{large_headline:true, show_image:true, no_border:true, bottom:true, byline:{if: =scale.small, then:true, else:false}}  
+							},
+			#b2:			{ 
+								frame: {$switch: [
+									{if: =widescreen, then: [205, 370, 280, 250]},
+									{if: =scale.large, then: [205, 370, 280, 250]}
+								]},
+								options:{small_headline:true, left:true, no_indent:true}  
+							},
+			#b3:			{ frame: [496, 370, 280, 250], options:{small_headline:true, no_indent:true} },
+			#b4:			{ frame: [787, 370, 236, 250], options:{no_indent:true} }
+		}
+		
+		
+		
+	} </style>
+	
+	<box id="marketstrap">
+	<box id="marketstrap_view" embed="marketstrap" />
+	<box id="marketstrap_message">
+		<p>Your WSJ version is not supported. Please upgrade.</p>
+	</box>
+</box>
+
+	<box id="whatsnews" embed="whatsnews" />
+	<box id="ad_background" class="front_ad">
+		<box id="ad" class="ad-rectangle" embed="advertisement" />
+	</box>
+	<box id="deco" embed="article" module="DECO_module.xml" />
+	<box id="b1" embed="article" module="FRONT-NO-IMAGE_module.xml" />
+	<box id="b2" embed="article" module="FRONT-NO-IMAGE_module.xml" />
+	<box id="b3" embed="article" module="FRONT-NO-IMAGE_module.xml" />
+	<box id="b4" embed="article" module="AHED_module.xml" />
+	
+</jpml>

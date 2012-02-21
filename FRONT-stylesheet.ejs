@@ -2,6 +2,25 @@
 	
 	$join: [
 	{.line: { background-color:#b1aca1}},
+	{#marketstrap_message: {
+		display: { if: =show_message, then: inherit, else: none },
+		color: #E36627,
+		font-size: 18,
+		font-name: DJ5RetinaCd-Bold,
+		text-align:center,
+		padding: [2, 0, 0, 0],
+		background-color:black,
+		text-scale:{if: =scale.small, then: .8},
+		text-transform:uppercase
+		
+	}},
+	{#marketstrap_view: {
+		display: { if: =show_message, then: none, else: inherit },
+		left:0,
+		top:0,
+		right:0,
+		bottom:0
+	}},
 	{if: =portrait, then: {
 			#marketstrap:	{ frame: [0, 0, 768, 26] },
 			#whatsnews:		{ frame: [3, 34, 183, 642], options: { expanded-frame: [

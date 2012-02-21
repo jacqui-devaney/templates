@@ -196,6 +196,21 @@
 	</dict>
 	<key>FRONT_SECTION</key>
 	<dict>
+		<key>FRONT-4story-E-deco-top_template</key>
+		<dict>
+			<key>b1</key>
+			<array>
+				<true/>
+			</array>
+			<key>b4</key>
+			<array>
+				<string>A-hed</string>
+			</array>
+			<key>deco</key>
+			<array>
+				<string>Deco Summary Liondoor</string>
+			</array>
+		</dict>
 		<key>SECTION-1story-fullsize-deco_template</key>
 		<dict>
 			<key>deco</key>

@@ -88,13 +88,6 @@
 	</dict>
 	<key>FRIDAY_JOURNAL</key>
 	<dict>
-		<key>SECTION-1story-fullsize-deco_template</key>
-		<dict>
-			<key>deco</key>
-			<array>
-				<string>Deco Summary Liondoor Fullsize</string>
-			</array>
-		</dict>
 		<key>CONTINUATION-fancy-6_template</key>
 		<dict>
 			<key>deco</key>
@@ -171,6 +164,13 @@
 			<key>h2</key>
 			<array/>
 		</dict>
+		<key>SECTION-1story-fullsize-deco_template</key>
+		<dict>
+			<key>deco</key>
+			<array>
+				<string>Deco Summary Liondoor Fullsize</string>
+			</array>
+		</dict>
 		<key>SECTION-2story-G-C_template</key>
 		<dict>
 			<key>b1</key>
@@ -196,28 +196,6 @@
 	</dict>
 	<key>FRONT_SECTION</key>
 	<dict>
-		<key>FRONT-4story-E-deco-top_template</key>
-		<dict>
-			<key>b1</key>
-			<array>
-				<true/>
-			</array>
-			<key>b4</key>
-			<array>
-				<string>A-hed</string>
-			</array>
-			<key>deco</key>
-			<array>
-				<string>Deco Summary Liondoor</string>
-			</array>
-		</dict>
-		<key>SECTION-1story-fullsize-deco_template</key>
-		<dict>
-			<key>deco</key>
-			<array>
-				<string>Deco Summary Liondoor Fullsize</string>
-			</array>
-		</dict>
 		<key>CONTINUATION-fancy-6_template</key>
 		<dict>
 			<key>deco</key>
@@ -234,6 +212,21 @@
 			</array>
 		</dict>
 		<key>FRONT-3story-G-deco_template</key>
+		<dict>
+			<key>b1</key>
+			<array>
+				<true/>
+			</array>
+			<key>b3</key>
+			<array>
+				<string>A-hed</string>
+			</array>
+			<key>deco</key>
+			<array>
+				<string>Deco Summary Liondoor</string>
+			</array>
+		</dict>
+		<key>FRONT-4story-E-deco-top_template</key>
 		<dict>
 			<key>b1</key>
 			<array>
@@ -289,7 +282,18 @@
 				<string>A-hed</string>
 			</array>
 		</dict>
-		<key>FRONT-4story-F-deco_template</key>
+		<key>FRONT-4story-F-D_template</key>
+		<dict>
+			<key>b1</key>
+			<array>
+				<true/>
+			</array>
+			<key>b4</key>
+			<array>
+				<string>A-hed</string>
+			</array>
+		</dict>
+		<key>FRONT-4story-F-deco-C_template</key>
 		<dict>
 			<key>b1</key>
 			<array>
@@ -318,30 +322,8 @@
 			<array>
 				<string>Deco Summary Liondoor</string>
 			</array>
-		</dict>	
-		<key>FRONT-4story-F_template</key>
-		<dict>
-			<key>b1</key>
-			<array>
-				<true/>
-			</array>
-			<key>b4</key>
-			<array>
-				<string>A-hed</string>
-			</array>
 		</dict>
-		<key>FRONT-4story-F-D_template</key>
-		<dict>
-			<key>b1</key>
-			<array>
-				<true/>
-			</array>
-			<key>b4</key>
-			<array>
-				<string>A-hed</string>
-			</array>
-		</dict>
-		<key>FRONT-4story-F-deco-C_template</key>
+		<key>FRONT-4story-F-deco_template</key>
 		<dict>
 			<key>b1</key>
 			<array>
@@ -354,6 +336,17 @@
 			<key>deco</key>
 			<array>
 				<string>Deco Summary Liondoor</string>
+			</array>
+		</dict>
+		<key>FRONT-4story-F_template</key>
+		<dict>
+			<key>b1</key>
+			<array>
+				<true/>
+			</array>
+			<key>b4</key>
+			<array>
+				<string>A-hed</string>
 			</array>
 		</dict>
 		<key>FRONT-4story-Vertical-deco_template</key>
@@ -371,7 +364,7 @@
 				<string>Deco Summary Liondoor</string>
 			</array>
 		</dict>
-		<key>FRONT-4story-big-news_template</key>
+		<key>FRONT-4story-big-news-small_template</key>
 		<dict>
 			<key>b1</key>
 			<array>
@@ -382,7 +375,7 @@
 				<string>A-hed</string>
 			</array>
 		</dict>
-		<key>FRONT-4story-big-news-small_template</key>
+		<key>FRONT-4story-big-news_template</key>
 		<dict>
 			<key>b1</key>
 			<array>
@@ -408,9 +401,6 @@
 				<string>Deco Summary Liondoor</string>
 			</array>
 		</dict>
-	</dict>
-	<key>MARKETPLACE</key>
-	<dict>
 		<key>SECTION-1story-fullsize-deco_template</key>
 		<dict>
 			<key>deco</key>
@@ -418,11 +408,21 @@
 				<string>Deco Summary Liondoor Fullsize</string>
 			</array>
 		</dict>
+	</dict>
+	<key>MARKETPLACE</key>
+	<dict>
 		<key>CONTINUATION-fancy-bottom-6_template</key>
 		<dict>
 			<key>deco</key>
 			<array>
 				<string>Deco Summary Liondoor MarketplaceCont1</string>
+			</array>
+		</dict>
+		<key>SECTION-1story-fullsize-deco_template</key>
+		<dict>
+			<key>deco</key>
+			<array>
+				<string>Deco Summary Liondoor Fullsize</string>
 			</array>
 		</dict>
 		<key>SECTION-3story-G-deco-C_template</key>
@@ -504,18 +504,18 @@
 	</dict>
 	<key>MONEY_AND_INVESTING</key>
 	<dict>
-		<key>SECTION-1story-fullsize-deco_template</key>
-		<dict>
-			<key>deco</key>
-			<array>
-				<string>Deco Summary Liondoor Fullsize</string>
-			</array>
-		</dict>
 		<key>CONTINUATION-fancy-6_template</key>
 		<dict>
 			<key>deco</key>
 			<array>
 				<string>Deco Summary Liondoor MoneyCont1</string>
+			</array>
+		</dict>
+		<key>SECTION-1story-fullsize-deco_template</key>
+		<dict>
+			<key>deco</key>
+			<array>
+				<string>Deco Summary Liondoor Fullsize</string>
 			</array>
 		</dict>
 		<key>SECTION-3story-G_template</key>
@@ -581,13 +581,6 @@
 	</dict>
 	<key>NEW_YORK</key>
 	<dict>
-		<key>SECTION-1story-fullsize-deco_template</key>
-		<dict>
-			<key>deco</key>
-			<array>
-				<string>Deco Summary Liondoor Fullsize</string>
-			</array>
-		</dict>
 		<key>CONTINUATION-fancy-6_template</key>
 		<dict>
 			<key>deco</key>
@@ -654,6 +647,13 @@
 			<array/>
 			<key>h2</key>
 			<array/>
+		</dict>
+		<key>SECTION-1story-fullsize-deco_template</key>
+		<dict>
+			<key>deco</key>
+			<array>
+				<string>Deco Summary Liondoor Fullsize</string>
+			</array>
 		</dict>
 		<key>SECTION-3story-G-deco-C_template</key>
 		<dict>
@@ -723,13 +723,6 @@
 	</dict>
 	<key>OFF_DUTY</key>
 	<dict>
-		<key>SECTION-1story-fullsize-deco_template</key>
-		<dict>
-			<key>deco</key>
-			<array>
-				<string>Deco Summary Liondoor Fullsize</string>
-			</array>
-		</dict>
 		<key>CONTINUATION-fancy-3OV-7_template</key>
 		<dict>
 			<key>deco</key>
@@ -839,6 +832,13 @@
 			<key>h2</key>
 			<array/>
 		</dict>
+		<key>SECTION-1story-fullsize-deco_template</key>
+		<dict>
+			<key>deco</key>
+			<array>
+				<string>Deco Summary Liondoor Fullsize</string>
+			</array>
+		</dict>
 		<key>SECTION-2story-G-C_template</key>
 		<dict>
 			<key>b1</key>
@@ -864,13 +864,6 @@
 	</dict>
 	<key>OPINION</key>
 	<dict>
-		<key>SECTION-1story-fullsize-deco_template</key>
-		<dict>
-			<key>deco</key>
-			<array>
-				<string>Deco Summary Liondoor Fullsize</string>
-			</array>
-		</dict>
 		<key>CONTINUATION-fancy-bottom-6_template</key>
 		<dict>
 			<key>deco</key>
@@ -1373,9 +1366,6 @@
 				<string>Bookshelf</string>
 			</array>
 		</dict>
-	</dict>
-	<key>PERSONAL_JOURNAL</key>
-	<dict>
 		<key>SECTION-1story-fullsize-deco_template</key>
 		<dict>
 			<key>deco</key>
@@ -1383,6 +1373,9 @@
 				<string>Deco Summary Liondoor Fullsize</string>
 			</array>
 		</dict>
+	</dict>
+	<key>PERSONAL_JOURNAL</key>
+	<dict>
 		<key>CONTINUATION-fancy-6_template</key>
 		<dict>
 			<key>deco</key>
@@ -1459,6 +1452,13 @@
 			<key>h2</key>
 			<array/>
 		</dict>
+		<key>SECTION-1story-fullsize-deco_template</key>
+		<dict>
+			<key>deco</key>
+			<array>
+				<string>Deco Summary Liondoor Fullsize</string>
+			</array>
+		</dict>
 		<key>SECTION-2story-G-C_template</key>
 		<dict>
 			<key>b1</key>
@@ -1505,13 +1505,6 @@
 	</dict>
 	<key>REVIEW</key>
 	<dict>
-		<key>SECTION-1story-fullsize-deco_template</key>
-		<dict>
-			<key>deco</key>
-			<array>
-				<string>Deco Summary Liondoor Fullsize</string>
-			</array>
-		</dict>
 		<key>CONTINUATION-fancy-bottom-6_template</key>
 		<dict>
 			<key>deco</key>
@@ -1587,6 +1580,13 @@
 			<array/>
 			<key>h2</key>
 			<array/>
+		</dict>
+		<key>SECTION-1story-fullsize-deco_template</key>
+		<dict>
+			<key>deco</key>
+			<array>
+				<string>Deco Summary Liondoor Fullsize</string>
+			</array>
 		</dict>
 		<key>SECTION-2story-G-C_template</key>
 		<dict>
@@ -1837,11 +1837,22 @@
 	</dict>
 	<key>WSJ_MAGAZINE</key>
 	<dict>
-		<key>SECTION-1story-fullsize-deco_template</key>
+		<key>CONTINUATION-fancy-3OV-7_template</key>
 		<dict>
 			<key>deco</key>
 			<array>
-				<string>Deco Summary Liondoor Fullsize</string>
+				<string></string>
+				<string></string>
+			</array>
+			<key>deco2</key>
+			<array>
+				<string></string>
+				<string></string>
+			</array>
+			<key>deco3</key>
+			<array>
+				<string></string>
+				<string></string>
 			</array>
 		</dict>
 		<key>CONTINUATION-fancy-6_template</key>
@@ -1857,6 +1868,19 @@
 			<array>
 				<string>Deco Summary Liondoor MagCont2</string>
 				<string>Deco Summary Liondoor MagCont3</string>
+			</array>
+		</dict>
+		<key>CONTINUATION-fancy-smallG-OV-6_template</key>
+		<dict>
+			<key>deco</key>
+			<array>
+				<string></string>
+				<string></string>
+			</array>
+			<key>deco2</key>
+			<array>
+				<string></string>
+				<string></string>
 			</array>
 		</dict>
 		<key>SECTION-1story-P-1highlight-white_template</key>
@@ -1927,6 +1951,13 @@
 			<array/>
 			<key>h2</key>
 			<array/>
+		</dict>
+		<key>SECTION-1story-fullsize-deco_template</key>
+		<dict>
+			<key>deco</key>
+			<array>
+				<string>Deco Summary Liondoor Fullsize</string>
+			</array>
 		</dict>
 		<key>SECTION-2story-G-C_template</key>
 		<dict>

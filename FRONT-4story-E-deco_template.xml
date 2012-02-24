@@ -5,21 +5,21 @@
         if: =portrait, then: {
             #b1: 	{ 
 						frame: {$switch: [
-						{if: =widescreen, then: [194, 26, 571, 232]},
+						{if: =widescreen, then: [194, 26, 571, 224]},
 						{if: =scale.large, then: [194, 26, 571, 203]}
 					]},
 					options:{large_headline:true, no_border:true, byline:{if: =scale.small, then:true, else:false}} 
 			},
             #deco: 	{ 
 						frame: {$switch: [
-						{if: =widescreen, then: [194, 259, 328, 290]},
+						{if: =widescreen, then: [194, 251, 328, 298]},
 						{if: =scale.large, then: [194, 229, 375, 321]}
 					]},	
-					options:{normal_headline:true} 
+					options:{normal_headline:true, long_deco:{if: =widescreen, then:true, else:false}} 
 			},
             #b2: 	{ 
 						frame: {$switch: [
-						{if: =widescreen, then: [536, 259, 230, 290]},
+						{if: =widescreen, then: [536, 251, 230, 298]},
 						{if: =scale.large, then: [583, 229, 183, 321]}
 					]},
 					options:{small_headline:true, left:true, no_indent:true} 
@@ -47,7 +47,7 @@
 						{if: =widescreen, then: [205, 248, 280, 370]},
 						{if: =scale.large, then: [205, 270, 375, 345]}
 					]},
-					options:{normal_headline:true} 
+					options:{normal_headline:true, F_image:{if: =scale.small, then:true, else:false}, long_deco:{if: =widescreen, then:true, else:false}} 
 			},
             #b2: 	{ 
 					frame: {$switch: [

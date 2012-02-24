@@ -59,6 +59,7 @@
 					$switch: [
 						{if: =options.fake_deco, then:35},
 						{if: =options.vertical_deco, then:75},
+						{if: =options.long_deco, then:90},
 						{if: true, then:55}
 				]},
 				min-height: 25,

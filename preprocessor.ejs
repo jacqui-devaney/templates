@@ -56,7 +56,13 @@
 			show_message: { 
 				if: =device.platform, 
 				equals: "Android", 
-				then: true,
+				then: {
+					if: {$min: [1.4, =app.version]}, 
+					less-than: 1.4,
+					then: false,
+					else: true
+					
+				},
 				else: false
 			},
 			justify: { if-any: [

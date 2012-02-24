@@ -51,6 +51,14 @@
 		/>
 		<template 
 			section="FRONT_SECTION" 
+			name="FRONT-4story-E-deco-top_template.xml" 
+			title="TEST - 4 story- Top E liondoor"
+			min="4" 
+			deco="true" 
+			usage="front" 
+		/>
+		<template 
+			section="FRONT_SECTION" 
 			name="FRONT-4story-E-top_template.xml" 
 			title="4 story: Top Story E photo"
 			min="4" 
@@ -97,14 +105,6 @@
 			name="FRONT-4story-big-news-small_template.xml" 
 			title="Top Story HUGE News -small headline"
 			min="4" 
-			usage="front" 
-		/>
-		<template 
-			section="FRONT_SECTION" 
-			name="FRONT-4story-F-deco-C_template.xml" 
-			title="TEST 4 story - F liondoor - C image"
-			min="4" 
-			deco="true" 
 			usage="front" 
 		/>
 		
@@ -977,7 +977,7 @@
 		<template 
 			name="SECTION-1story-fullsize-deco.xml" 
 			section="MARKETPLACE,MONEY_AND_INVESTING,THE_JOURNAL_REPORT,REVIEW,WSJ_MAGAZINE,BUSINESS_AND_FINANCE,OFF_DUTY,FRONT_SECTION,NEW_YORK,FRIDAY_JOURNAL,PERSONAL_JOURNAL" 
-			title="Full size Deco"
+			title="TEST - Full size Deco"
 			min="1" 
 			deco="true"
 			usage="continuation"
@@ -1101,7 +1101,6 @@
 		<article pages="ARTICLE-pages-letters.xml" type="Letters"/>
 		<article pages="ARTICLE-pages-off-duty.xml" type="Slow Food Fast"/>
 		<article pages="ARTICLE-pages-off-duty.xml" type="Mobile Special"/>
-		<article pages="ARTICLE-pages-off-duty.xml" type="Outer Beauty"/>
 		<article pages="ARTICLE-pages-off-duty.xml" type="Geek Chic"/>
 
 	</article-page-plans>

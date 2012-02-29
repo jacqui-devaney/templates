@@ -39,7 +39,7 @@
 							{if: =widescreen, then: [206, 235, 618, 385]},
 							{if: =scale.large, then: [206, 175, 569, 445]}
 						]},
-						options:{normal_headline:true, F_image:{if: =widescreen, then:true, else:false}, long_deco:{if: =widescreen, then:true, else:false}} 
+						options:{normal_headline:true, F_image:{if: =widescreen, then:true, else:false}, no_caption:{if: =scale.small, then:true, else:false}} 
 			},
 			#b2:	{ 
 						frame: {$switch: [

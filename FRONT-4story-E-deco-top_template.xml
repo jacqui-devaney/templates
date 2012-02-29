@@ -29,10 +29,10 @@
 		}, else: {
 			#deco:			{ 
 								frame: {$switch: [
-									{if: =widescreen, then: [205, 28, 375, 344]},
+									{if: =widescreen, then: [205, 28, 375, 330]},
 									{if: =scale.large, then: [205, 26, 375, 344]}
 								]},
-								options:{normal_headline:true, no_border:true, F_image: {if: =widescreen, then:true, else:false}} 
+								options:{normal_headline:true, no_border:true, F_image: {if: =widescreen, then:true, else:false}, no_caption:{if: =scale.small, then:true, else:false}} 
 							},
 			#b1:			{ 
 								frame: {$switch: [

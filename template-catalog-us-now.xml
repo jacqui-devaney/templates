@@ -573,8 +573,10 @@
 
 	<article-page-plans>
 		<article pages="ARTICLE-pages.xml"/>
+		<article pages="ARTICLE-pages-deloitte.xml" section="SPECIAL_REPORT" />
 		<article pages="ARTICLE-pages-cio.xml" section="CIO" />
-		<article pages="ARTICLE-pages-deloitte.xml" section="CIO" />
+		<article pages="ARTICLE-pages-cio.xml" type="Cio Blog" />
+		<article pages="ARTICLE-pages-deloitte.xml" type="Deloitte Cio Blog" />
 		<article pages="ARTICLE-pages-hots.xml" type="Heard on the Street" />
 		<article pages="ARTICLE-pages-hots.xml" type="Overheard"/>
 		<article pages="ARTICLE-pages-hots.xml" type="Headrd on the Street Other"/>

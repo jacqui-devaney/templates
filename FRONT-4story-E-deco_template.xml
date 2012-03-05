@@ -44,7 +44,7 @@
 			},
             #deco:	{ 
 					frame: {$switch: [
-						{if: =widescreen, then: [205, 248, 280, 290]},
+						{if: =widescreen, then: [205, 248, 280, 288]},
 						{if: =scale.large, then: [205, 270, 375, 345]}
 					]},
 					options:{normal_headline:true, no_caption:{if: =widescreen, then:true, else:false}} 

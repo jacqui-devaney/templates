@@ -28,40 +28,38 @@
 			background-color:#b1aca1
 		},
 		#b5:	{ 
-			frame: [394, 44, 362, 200],
+			frame: [394, 74, 362, 160],
 			options: {small_headline:true}
 		},
 		#b6:	{ 
-			frame: [394, 244, 362, 170],
+			frame: [394, 231, 362, 160],
 			options: {small_headline:true, border:true}
 		},
 		#b7:	{ 
-			frame: [394, 414, 362, 66],
-			options: {border:true}
+			frame: [394, 391, 362, 74],
+			options: {border:true, small:true}
 		},
 		#b8:	{ 
-			frame: [394, 480, 362, 66]
+			frame: [394, 465, 362, 74],
+			options: {small:true}
 		},
 		#b9:	{ 
-			frame: [394, 546, 362, 64]
+			frame: [394, 539, 362, 74],
+			options: {small:true}
+			
 		},
 		#cio_header: {
 			frame: [0, 10, 384, 99]
 		
 		},
 		#tech_header: {
-			frame: [394, 15, 362, 44]
+			frame: [449, 15, 251, 50],
+			border-width: [0, 0, 1, 0],
+			border-color: #ccc
 		},
 		#line: {
 			background-color:#b1aca1,
 			frame: [50, 23, 262, 1]
-		},
-		#strap: {
-			padding: [4, 4, 0, 8],
-			background-color:#e4e4e4,
-			text-align:center
-			
-		
 		}
 		
 		
@@ -112,12 +110,11 @@
 	<box id="b3" embed="article" module="FRONT-NO-IMAGE_module.xml" />
 	<box id="l1" />
 	<box id="tech_header">
-		<panel id="strap">
-			<p class="subsection">LATEST TECHNOLOGY NEWS</p>
-		</panel>
+		<p class="tech_section">Latest Technology News</p>
+		<p class="tagline">From WSJ and other top sources</p>
 	</box>
 	<box id="b5" embed="article" module="RIGHT-INSET-IMAGE_module.xml" />
-	<box id="b6" embed="article" module="FRONT-NO-IMAGE_module.xml" />
+	<box id="b6" embed="article" module="RIGHT-INSET-IMAGE_module.xml" />
 	<box id="b7" embed="article" module="FLASHLINE-HEADLINE_module.xml" />
 	<box id="b8" embed="article" module="FLASHLINE-HEADLINE_module.xml" />
 	<box id="b9" embed="article" module="FLASHLINE-HEADLINE_module.xml" />

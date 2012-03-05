@@ -29,7 +29,18 @@
 			layout-grid-line-offset: {$multiply: [18, =view.zoomlevel]}
 			
         }},
-
+		{.body-bug: {
+			display: none
+		}},
+		{#disclaimer: {
+			left: 1,
+			right: 0,
+			bottom: 0,
+			min-height: 0,
+			padding:[10]
+			
+		}},
+		
 		{#mediabucket: {
 			width:273,
 			height:185,
@@ -62,6 +73,11 @@
     <panel id="header_top">
         <p class="deloitte_article_headline"><span embed="headline"/><mark class="key"/></p>
 	</panel>
+	<box id="disclaimer">
+		<p class="legal">Disclaimer: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam non nisl orci. Curabitur molestie, nibh mattis tristique porttitor, purus lacus molestie dolor, ut mattis eros ipsum nec augue. Fusce nec mauris nulla, vel ultricies turpis. Integer scelerisque sem nec odio interdum id sodales augue vulputate. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce posuere sagittis metus, non iaculis leo convallis eget. Phasellus et tortor sit amet nisl pretium porta. Vestibulum ut sollicitudin nunc. Nullam nibh tellus, feugiat in ultrices non, interdum non ligula.</p>
+
+	
+	</box>
 	
 	<panel id="body_container">
 		<box id="mediabucket_container">
@@ -70,7 +86,6 @@
         <panel class="deloitte_article_body" embed="body"/>
 	    
 	</panel>
-	
 </jpml>
 
 

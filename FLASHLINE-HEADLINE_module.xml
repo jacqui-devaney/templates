@@ -24,16 +24,27 @@
 				background-position:left,
 				padding:[2, 0, 0, 14]
 			}},
-			{.continuation_headline: { 
-				text-overflow:ellipsis
+			{.invisible: { 
+				display:none
+			}},
+			{#continuation_headline: { 
+				text-overflow:ellipsis,
+				display: { if: =options.continuation, then:inherit, else:none }
+			}},
+			{#small_headline: { 
+				text-overflow:ellipsis,
+				display: {if: =options.small, then:inherit, else:none}
+				
 			}}
+			
 		
 			]
 		}</style>
 	<box id="wrapper">
 		<p class="highlight_flashline_small" id="link_out" embed="flashline"></p>
 	    <panel id="headline">
-			<p class="continuation_headline"><span embed="headline" /></p>
+			<p id="continuation_headline" class="invisible"><span embed="headline" /></p>
+			<p id="small_headline" class="invisible"><span embed="headline" /></p>
 		</panel>
 	</box>
 </jpml>

@@ -592,6 +592,10 @@
 	},
 	.close_button: {
 		background-image:url(close.png),
+		background-image: { $switch: [
+			{ if: =app.language, equals: en, then: url(close.png) },
+			{ if: =app.language, equals: de, then: url(close_de.png) }
+		] },
 		width:60,
 		height:30,
 		left:0,

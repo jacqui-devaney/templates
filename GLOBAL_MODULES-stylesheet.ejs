@@ -605,11 +605,11 @@
 	},
 	#close_button_box: {
 		top:0,
-		right: { $switch: [
-			{ if: =app.language, equals: en, then: 0 },
-			{ if: =app.language, equals: de, then: 15 }
+		right: 0,
+		width:{ $switch: [
+			{ if: =app.language, equals: en, then: 70 },
+			{ if: =app.language, equals: de, then: 85 }
 		] },
-		width:70,
 		height:40
 	},
 	.legal: {

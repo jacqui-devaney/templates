@@ -46,10 +46,10 @@
 									{if: =widescreen, then: [205, 370, 280, 250]},
 									{if: =scale.large, then: [205, 370, 280, 250]}
 								]},
-								options:{small_headline:true, left:true, no_indent:true}  
+								options:{small_headline:true, left:{if: =scale.small, then:true, else:false}, no_indent:true}  
 							},
 			#b3:			{ frame: [496, 370, 280, 250], options:{small_headline:true, no_indent:true} },
-			#b4:			{ frame: [787, 370, 236, 250], options:{no_indent:true} }
+			#b4:			{ frame: [787, 370, 236, 250], options:{no_indent:true, dek:{if: =scale.small, then:true, else:false}} }
 		}
 		
 		

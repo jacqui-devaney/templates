@@ -18,14 +18,9 @@
     
     <!-- TODO: paid/free flag -->
 
-    <p id="headline"><xsl:call-template name="headline"/><xsl:choose
-        ><xsl:when 
-            test="$region=&quot;ASIA&quot;"><xsl:value-of select="'&amp;#8202;'" disable-output-escaping="yes"/></xsl:when
-        ><xsl:when 
-            test="$region=&quot;EUROPE&quot;"><xsl:value-of select="'&amp;#8201;'" disable-output-escaping="yes"/></xsl:when
-    ></xsl:choose></p>
+    <p id="headline"><xsl:call-template name="headline"/></p>
     <p id="subhed"><xsl:value-of select="article/article-body/headline/deck"/></p>
-    <p id="byline"><xsl:value-of select="article/article-body/byline"/></p>
+    <p id="byline"><xsl:call-template name="byline"/></p>
     <p id="summary"><xsl:value-of select="summary/summary-body/p"/></p>
 
     <panel id="summary-image">
@@ -81,6 +76,10 @@
      <xsl:value-of select="article/article-body/headline/main-hed" />
   </xsl:otherwise>
 </xsl:choose>
+</xsl:template>
+
+<xsl:template name="byline">
+    <xsl:value-of select="article/article-body/byline"/>
 </xsl:template>
 
 <xsl:template match="p">
@@ -168,10 +167,27 @@
     <xsl:apply-templates select="*[self::summary-body or self::alt-summary-body]//image[@width &gt; 0 and @height &gt; 0]"/>
 </xsl:template>
 
+<xsl:template name="image_src_id">
+    <!-- this gets the last path component of a URL, or a filename if it's just a filename, recursively -->
+    <xsl:param name="srcid" />
+    <xsl:choose>
+        <xsl:when test="contains($srcid, '/')">
+            <xsl:call-template name="image_src_id">
+                <xsl:with-param name="srcid" select="substring-after($srcid, '/')" />
+            </xsl:call-template>
+        </xsl:when>
+        <xsl:otherwise>
+            <xsl:value-of select="$srcid" />            
+        </xsl:otherwise>
+    </xsl:choose>
+</xsl:template>
+
 <xsl:template match="image">
     <image>
         <xsl:attribute name="source">
-            <xsl:value-of select="@src-id"/>
+            <xsl:call-template name="image_src_id">
+                <xsl:with-param name="srcid" select="@src-id" />
+            </xsl:call-template>
         </xsl:attribute>
         <xsl:attribute name="width">
             <xsl:value-of select="@width"/>

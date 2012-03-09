@@ -573,9 +573,7 @@
 
 	<article-page-plans>
 		<article pages="ARTICLE-pages.xml"/>
-		<article pages="ARTICLE-pages-deloitte.xml" section="SPECIAL_REPORT" />
 		<article pages="ARTICLE-pages-cio.xml" section="CIO" />
-		<article pages="ARTICLE-pages-cio.xml" type="Cio Blog" />
 		<article pages="ARTICLE-pages-deloitte.xml" type="Deloitte Cio Blog" />
 		<article pages="ARTICLE-pages-hots.xml" type="Heard on the Street" />
 		<article pages="ARTICLE-pages-hots.xml" type="Overheard"/>
@@ -583,7 +581,8 @@
 		<article pages="ARTICLE-pages-letters.xml" type="Letters"/>
 		<article pages="ARTICLE-pages-off-duty.xml" type="Slow Food Fast"/>
 		<article pages="ARTICLE-pages-off-duty.xml" type="Mobile Special"/>
-		<article pages="ARTICLE-pages-off-duty.xml" type="Geek Chic"/>
+		<article pages="ARTICLE-pages-off-duty.xml" type="Traveler’s Tale"/>
+		<article pages="ARTICLE-pages-off-duty.xml" type="Consider This"/>
 	</article-page-plans>
 	
 	

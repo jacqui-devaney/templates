@@ -120,7 +120,7 @@
 	<box id="deloitte_header">
 		<panel class="deloitte" />
 		<panel class="slug">
-			<p class="deloitte_slug" >Business-led, Technology-enabled: Insight from Deloitte</p>
+			<p class="deloitte_slug" >Business-led, Technology-enabled:</p><p class="deloitte_slug" >Insight from Deloitte</p>
 		</panel>
 	</box>
 	<box id="h5" embed="article" module="HIGHLIGHTS-CIO_module.xml" />

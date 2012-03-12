@@ -31,7 +31,7 @@
 				text-overflow:ellipsis,
 				display: { if: =options.continuation, then:inherit, else:none }
 			}},
-			{#small_headline: { 
+			{#extra_small_headline: { 
 				text-overflow:ellipsis,
 				display: {if: =options.small, then:inherit, else:none}
 				
@@ -44,7 +44,7 @@
 		<p class="highlight_flashline_small" id="link_out" embed="flashline"></p>
 	    <panel id="headline">
 			<p id="continuation_headline" class="invisible"><span embed="headline" /></p>
-			<p id="small_headline" class="invisible"><span embed="headline" /></p>
+			<p id="extra_small_headline" class="invisible"><span embed="headline" /></p>
 		</panel>
 	</box>
 </jpml>

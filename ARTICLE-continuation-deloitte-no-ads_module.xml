@@ -46,7 +46,19 @@
 			anchor-y:bottom,
 			anchor-x:left,
 			width:647
+		}},
+		{#filler: {
+			position: relative,
+			top: 10,
+			left: 0,
+			right: 0,
+			bottom: 0,
+			min-height: 0,
+			border-image:url(articleBackground.png),
+			border-width: [16, 0, 0, 0],
+			border-slice: [16, 0, 0, 0]
 		}}
+		
 
 		]
     }</style>
@@ -68,6 +80,8 @@
 		<panel class="deloitte_article_body" id="body_continuation" embed="body"/>
 	    
 	</panel>
+	<box id="filler"/>
+	
 </jpml>
 
 

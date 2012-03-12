@@ -6,6 +6,7 @@
 	<array>
 		<string>U.S. NEWS</string>
 		<string>ELECTION 2012</string>
+		<string>CAMPAIGN JOURNAL</string>
 		<string>THE EURO CRISIS</string>
 		<string>U.S. WATCH</string>
 		<string>ECONOMY</string>
@@ -31,14 +32,14 @@
 	<key>MARKETPLACE</key>
 	<array>
 		<string>CORPORATE NEWS</string>
-		<string>MEDIA AND MARKETING</string>
-		<string>MEDIA &amp; MARKETING</string>
-		<string>EARNINGS</string>
-		<string>SMALL BUSINESS</string>
 		<string>TECHNOLOGY</string>
 		<string>TECHNOLOGY JOURNAL</string>
 		<string>DIGITS</string>
 		<string>BUSINESS TECHNOLOGY</string>
+		<string>MEDIA AND MARKETING</string>
+		<string>MEDIA &amp; MARKETING</string>
+		<string>EARNINGS</string>
+		<string>SMALL BUSINESS</string>
 		<string>MANAGING</string>
 		<string>EDUCATION FOR EXECUTIVES</string>
 		<string>PERSONAL FINANCE</string>
@@ -188,8 +189,6 @@
 		<string>FEATURES</string>
 		<string>MORE</string>
 	</array>
-	<key>CIO</key>
-	<array></array>
 	<key>default</key>
 	<array>
 		<string>U.S. NEWS</string>

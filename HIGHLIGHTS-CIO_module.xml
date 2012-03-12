@@ -41,6 +41,12 @@
 			display:{if: =options.hide_image, then:none}
 			
 		},
+		#body-first-p: {
+			font-name:Helvetica
+		},
+		em: {
+			font-name:Helvetica
+		},
 		image: {
 			width:76,
 			height:76,

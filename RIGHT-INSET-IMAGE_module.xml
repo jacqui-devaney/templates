@@ -28,16 +28,16 @@
 		}},
 		{#image_container: { 
 			anchor-x: right,
-			width: 86,
+			width: {if: =options.C_image, then:175, else:86},
 			pixels-per-point-x:{if: =scale.small, then:.7, else:1},
 			pixels-per-point-y:{if: =scale.small, then:.7, else:1},
 			image-scale:{if: =scale.small, then:.7, else:1}
 			
 		}},
 		{image: {
-			width:76,
-			height:76,
-			padding: [ 0, 0, 0, 10 ]
+			width:{if: =options.C_image, then:165, else:76},
+			height:{if: =options.C_image, then:109, else:76},
+			padding: [ 0, 0, {if: =options.C_image, then:10, else:0}, 10 ]
 			
 		}},
         {#headline: { padding: [ 0, 4, 0, 0 ] }},
@@ -59,7 +59,7 @@
 	}</style>
    	<box id="wrapper">
  		<box id="image_container">
-			<image embed="summary-image" class="A_size"/>
+			<image embed="summary-image" />
 		</box>
 		<panel id="headline">
 			<p id="small_headline" class=""><span embed="headline" /><mark class="key" /></p>

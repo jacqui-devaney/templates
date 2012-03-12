@@ -20,7 +20,7 @@
 
     <p id="headline"><xsl:call-template name="headline"/></p>
     <p id="subhed"><xsl:value-of select="article/article-body/headline/deck"/></p>
-    <p id="byline"><xsl:call-template name="byline"/></p>
+    <p id="byline"><xsl:call-template name="article-byline" /></p>
     <p id="summary"><xsl:value-of select="summary/summary-body/p"/></p>
 
     <panel id="summary-image">
@@ -57,6 +57,12 @@
     <panel id="body">
         <xsl:apply-templates select="article/article-body"/>
         <!-- We will insert a mark body bug in the last p or tagline element -->
+        <xsl:if test="@type=&quot;Deloitte Cio Blog&quot;">
+            <p class="deloitte-disclaimer">
+                <xsl:value-of select="//inset[@param1=&quot;DISCLAIMER&quot; and @style=&quot;OUTSET&quot;]" />
+            </p>
+        </xsl:if>
+
     </panel>
     
     <!-- Barron's will need external links, insets too. -->
@@ -78,8 +84,26 @@
 </xsl:choose>
 </xsl:template>
 
-<xsl:template name="byline">
-    <xsl:value-of select="article/article-body/byline"/>
+<!-- Bylines looks like this:
+    <byline type="SIGNED">By 
+        <phrase type="AUTHOR">Emily Chasan</phrase>
+        <credit>Senior Editor</credit>
+    </byline>
+-->
+<xsl:template name="article-byline">
+    <xsl:for-each select="article/article-body/byline/node()">
+        <xsl:choose>
+            <xsl:when test="self::phrase[@type = &quot;AUTHOR&quot;]">
+                <span class="byline-author"><xsl:value-of select="."/></span>
+            </xsl:when>
+            <xsl:when test="self::credit">
+                <span class="byline-credit"><xsl:value-of select="."/></span>
+            </xsl:when>
+            <xsl:otherwise>
+                <xsl:value-of select="."/>
+            </xsl:otherwise>
+        </xsl:choose>
+    </xsl:for-each>
 </xsl:template>
 
 <xsl:template match="p">
@@ -102,6 +126,7 @@
     </p>
 </xsl:template>
 
+<!-- We intentionally do not output the byline as part of the article body. -->
 <xsl:template match="byline">
 </xsl:template>
 
@@ -123,6 +148,7 @@
 <xsl:template match="highlight[@type='BOLD']">
     <strong><xsl:value-of select="."/></strong>
 </xsl:template>
+
 <xsl:template match="highlight[@type='ITALIC']">
     <em><xsl:value-of select="."/></em>
 </xsl:template>
@@ -136,6 +162,10 @@
 </xsl:template>
 
 <xsl:template match="media">
+</xsl:template>
+
+<xsl:template match="credit">
+    <span class="credit"><xsl:value-of select="."/></span>
 </xsl:template>
 
 <xsl:template match="break">

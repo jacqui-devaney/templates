@@ -1,0 +1,60 @@
+<jpml id="CONTINUATION-fancy-OZ_template">
+	<style src="CONTINUATION-stylesheet.ejs" /> 
+	<style src="GLOBAL-stylesheet.ejs" /> 
+	<style>{
+        if: =portrait, then: {
+            #b1 : { 
+					frame: {$switch: [
+						{if: =widescreen, then: [0, 0, 256, 349]},
+						{if: =scale.large, then: [0, 0, 256, 411]}
+					]}
+			},
+            #b2 : { 
+					frame: {$switch: [
+						{if: =widescreen, then: [0, 357, 256, 518]},
+						{if: =scale.large, then: [0, 419, 256, 456]}
+					]},
+					options: {hide_strap: {if:=articles.b2.subsection, equals:=articles.b1.subsection}} 
+			},
+            #b3 : { 
+					frame: {$switch: [
+						{if: =widescreen, then: [256, 483, 256, 392]},
+						{if: =scale.large, then: [256, 600, 256, 276]}
+					]},
+					options: {hide_strap: {if:=articles.b3.subsection, equals:=articles.b2.subsection}} 
+			},
+            #b4 : { 
+					frame: {$switch: [
+						{if: =widescreen, then: [512, 483, 256, 392]},
+						{if: =scale.large, then: [512, 600, 256, 276]}
+					]},
+					options: {hide_strap: {if:=articles.b4.subsection, equals:=articles.b3.subsection}} 
+			},
+            #deco : { 
+						frame: {$switch: [
+							{if: =widescreen, then: [264, 8, 500, 467]},
+							{if: =scale.large, then: [264, 8, 500, 590]}
+						]},
+						options: {bottom_headline:true, bottom_border:true, OZ_image:true} 
+			}
+        }, else: {
+	        #b1 : { frame: [500, 0, 256, 389] },
+	        #b2 : { frame: [500, 389, 256, 230], options: {hide_strap: {if:=articles.b2.subsection, equals:=articles.b1.subsection}} },
+	        #b3 : { frame: [756, 0, 256, 389], options: {hide_strap: {if:=articles.b3.subsection, equals:=articles.b2.subsection}} },
+	        #b4 : { frame: [756, 389, 256, 230], options: {hide_strap: {if:=articles.b4.subsection, equals:=articles.b3.subsection}} },
+	        #deco : { 
+				frame: {$switch: [
+					{if: =widescreen, then: [0, 0, 500, 598]},
+					{if: =scale.large, then: [0, 0, 500, 598]}
+				]},
+				options: {bottom_headline:true, no_border:true, OZ_image:{if: =scale.small, then:false, else:true}, G_image:{if: =scale.small, then:true, else:false}} }
+        }
+    }</style>
+    <box id="b1" embed="article" module="CONTINUATION-dynamic_module.xml" />    
+    <box id="b2" embed="article" module="CONTINUATION-dynamic_module.xml" />
+    <box id="b3" embed="article" module="CONTINUATION-dynamic_module.xml" />
+    <box id="b4" embed="article" module="CONTINUATION-dynamic_module.xml" />
+    <box id="deco" embed="article" module="DECO_module.xml" />
+
+</jpml>
+

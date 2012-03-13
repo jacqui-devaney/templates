@@ -17,10 +17,16 @@
 			padding:[0, 0, 0, 15]
 		}},
 		{.close_button: {
-			background-image:url(close.png),
-			background-position:top-right,
-			width:60,
-			height:30
+		background-image: { $switch: [
+			{ if: =app.language, equals: en, then: url(close.png) },
+			{ if: =app.language, equals: de, then: url(close_de.png) }
+		] },
+		background-position:top-right,
+		width: { $switch: [
+			{ if: =app.language, equals: en, then: 60 },
+			{ if: =app.language, equals: de, then: 73 }
+		] },
+		height:29
 		}},
 		{#body_continuation: {
 			content: from-flow(article_body),

@@ -1101,6 +1101,14 @@
 	</dict>
 	<key>NEW_YORK</key>
 	<dict>
+		
+		<key>CONTINUATION-fancy-OZ_template</key>
+		<dict>
+			<key>deco</key>
+			<array>
+				<string>Deco Summary Liondoor NewYork-OZ</string>
+			</array>
+		</dict>
 		<key>CONTINUATION-fancy-6_template</key>
 		<dict>
 			<key>deco</key>
@@ -1351,6 +1359,13 @@
 	</dict>
 	<key>OFF_DUTY</key>
 	<dict>
+		<key>CONTINUATION-fancy-OZ_template</key>
+		<dict>
+			<key>deco</key>
+			<array>
+				<string>Deco Summary Liondoor OffDuty-OZ</string>
+			</array>
+		</dict>
 		<key>CONTINUATION-fancy-3OV-7_template</key>
 		<dict>
 			<key>deco</key>

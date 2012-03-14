@@ -484,22 +484,6 @@
 		</dict>
 		<key>FRONT-4story-Video-deco_template</key>
 		<dict>
-			<key>b1</key>
-			<array>
-				<string></string>
-			</array>
-			<key>b2</key>
-			<array>
-				<string>Deco Summary Liondoor Now Front1</string>
-			</array>
-			<key>b3</key>
-			<array>
-				<string>Deco Summary Liondoor Now Front2</string>
-			</array>
-			<key>b4</key>
-			<array>
-				<string>Deco Summary Liondoor Now Front3</string>
-			</array>
 			<key>deco</key>
 			<array>
 				<string>Mobile Vid of the Day</string>
@@ -516,6 +500,22 @@
 				<string>Mobile Vid of the Day</string>
 			</array>
 		</dict>
+		<key>b1</key>
+		<array>
+			<string></string>
+		</array>
+		<key>b2</key>
+		<array>
+			<string>Deco Summary Liondoor Now Front1</string>
+		</array>
+		<key>b3</key>
+		<array>
+			<string>Deco Summary Liondoor Now Front2</string>
+		</array>
+		<key>b4</key>
+		<array>
+			<string>Deco Summary Liondoor Now Front3</string>
+		</array>
 	</dict>
 	<key>MARKETPLACE</key>
 	<dict>
@@ -804,6 +804,13 @@
 	</dict>
 	<key>NEW_YORK</key>
 	<dict>
+		<key>CONTINUATION-fancy-OZ_template</key>
+		<dict>
+			<key>deco</key>
+			<array>
+				<string>Deco Summary Liondoor NewYork-OZ</string>
+			</array>
+		</dict>
 		<key>CONTINUATION-fancy-6_template</key>
 		<dict>
 			<key>deco</key>

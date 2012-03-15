@@ -58,9 +58,11 @@
         <xsl:apply-templates select="article/article-body"/>
         <!-- We will insert a mark body bug in the last p or tagline element -->
         <xsl:if test="@type=&quot;Deloitte Cio Blog&quot;">
-            <p class="deloitte-disclaimer">
-                <xsl:value-of select="//inset[@param1=&quot;DISCLAIMER&quot; and @style=&quot;OUTSET&quot;]" />
-            </p>
+            <xsl:for-each select="//inset[@param1=&quot;DISCLAIMER&quot; and @style=&quot;OUTSET&quot;]/p">
+                <p class="deloitte-disclaimer">
+                    <xsl:value-of select="." />
+                </p>
+            </xsl:for-each>
         </xsl:if>
 
     </panel>

@@ -44,8 +44,7 @@
 			layout-grid-line: {$multiply: [22, =view.zoomlevel]},
 			layout-grid-line-offset: {$multiply: [18, =view.zoomlevel]},
 			border-width:[1, 0, 0, 0],
-			border-color:#e7e7e7,
-			max-height:{if: =portrait, then: 680, else:430}
+			border-color:#e7e7e7
         }},
 		{#deloitte_legal:{
 			padding:[0, 0, 20, 20],

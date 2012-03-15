@@ -7,6 +7,7 @@
 		<string>U.S. NEWS</string>
 		<string>ELECTION 2012</string>
 		<string>CAMPAIGN JOURNAL</string>
+		<string>WASHINGTON WIRE</string>
 		<string>THE EURO CRISIS</string>
 		<string>U.S. WATCH</string>
 		<string>ECONOMY</string>
@@ -14,7 +15,6 @@
 		<string>REAL TIME ECONOMICS</string>
 		<string>THE HEALTH-CARE DEBATE</string>
 		<string>THE HEALTH-CARE SHOWDOWN</string>
-		<string>WASHINGTON WIRE</string>
 		<string>CONFLICT IN THE KOREAS</string>
 		<string>MIDDLE EAST</string>
 		<string>WORLD NEWS</string>
@@ -23,23 +23,23 @@
 		<string>THIS WEEK</string>
 		<string>FRONT SECTION</string>
 		<string>PAGE ONE</string>
-		<string>CORRECTIONS AND AMPLIFICATIONS</string>
-		<string>CORRECTIONS &amp; AMPLIFICATIONS</string>
 		<string>NEW YORK NEWS</string>
 		<string>BAY AREA</string>
+		<string>CORRECTIONS AND AMPLIFICATIONS</string>
+		<string>CORRECTIONS &amp; AMPLIFICATIONS</string>
 		<string>MORE</string>
 	</array>
 	<key>MARKETPLACE</key>
 	<array>
 		<string>CORPORATE NEWS</string>
-		<string>MEDIA AND MARKETING</string>
-		<string>MEDIA &amp; MARKETING</string>
-		<string>EARNINGS</string>
-		<string>SMALL BUSINESS</string>
 		<string>TECHNOLOGY</string>
 		<string>TECHNOLOGY JOURNAL</string>
 		<string>DIGITS</string>
 		<string>BUSINESS TECHNOLOGY</string>
+		<string>MEDIA AND MARKETING</string>
+		<string>MEDIA &amp; MARKETING</string>
+		<string>EARNINGS</string>
+		<string>SMALL BUSINESS</string>
 		<string>MANAGING</string>
 		<string>EDUCATION FOR EXECUTIVES</string>
 		<string>PERSONAL FINANCE</string>
@@ -61,13 +61,14 @@
 	<array>
 		<string>HEARD ON THE STREET</string>
 		<string>OVERHEARD</string>
+		<string>DEALS AND DEAL MAKERS</string>
+		<string>DEALS &amp; DEAL MAKERS</string>
+		<string>DEAL JOURNAL</string>
+		<string>IN THE MARKETS</string>
 		<string>MOVING THE MARKET</string>
 		<string>INTERNATIONAL FINANCE</string>
 		<string>CURRENCY TRADING</string>
 		<string>THE BUZZ</string>
-		<string>DEALS AND DEAL MAKERS</string>
-		<string>DEALS &amp; DEAL MAKERS</string>
-		<string>DEAL JOURNAL</string>
 		<string>STOCKS IN THE NEWS</string>
 		<string>LARGE STOCK FOCUS</string>
 		<string>SMALL STOCK FOCUS</string>
@@ -76,7 +77,7 @@
 		<string>STOCKS</string>
 		<string>CREDIT MARKETS</string>
 		<string>COMMODITIES REPORT</string>
-		<string>IN THE MARKETS</string>
+		
 		<string>CORPORATE NEWS</string>
 		<string>WEEKEND INVESTOR</string>
 		<string>THE PROPERTY REPORT</string>
@@ -105,6 +106,7 @@
 		<string>REAL ESTATE</string>
 		<string>PROPERTY</string>
 		<string>CULTURE</string>
+		<string>LIFE &amp; CULTURE</string>
 		<string>ARTS &amp; ENTERTAINMENT</string>
 		<string>FOOD &amp; DRINK</string>
 		<string>HEARD &amp; SCENE</string>
@@ -118,6 +120,7 @@
 		<string>REVIEW AND OUTLOOK</string>
 		<string>OPINION</string>
 		<string>BOOKS</string>
+		<string>BOOKS &amp; IDEAS</string>
 		<string>TASTE</string>
 		<string>LETTERS TO THE EDITOR</string>
 		<string>MORE</string>
@@ -128,6 +131,7 @@
 		<string>GADGETS</string>
 		<string>HEALTH AND WELLNESS</string>
 		<string>HEALTH &amp; WELLNESS</string>
+		<string>LIFE &amp; CULTURE</string>
 		<string>HOME AND FAMILY</string>
 		<string>HOME &amp; FAMILY</string>
 		<string>CAREERS</string>
@@ -155,6 +159,7 @@
 		<string>ENTERTAINMENT AND CULTURE</string>
 		<string>MORGENSTERN ON FILM</string>
 		<string>FILM</string>
+		<string>LIFE &amp; CULTURE</string>
 		<string>ADVISER</string>
 		<string>THE HOME FRONT</string>
 		<string>TRAVEL</string>
@@ -189,8 +194,6 @@
 		<string>FEATURES</string>
 		<string>MORE</string>
 	</array>
-	<key>CIO</key>
-	<array></array>
 	<key>default</key>
 	<array>
 		<string>U.S. NEWS</string>

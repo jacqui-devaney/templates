@@ -975,6 +975,15 @@
 			page="4" 
 		/>
 		<template 
+			name="CONTINUATION-fancy-OZ_template.xml" 
+			title="TEST - 5 stories - OZ liondoor"
+			min="5" 
+			section="NEW_YORK" 
+			usage="continuation" 
+			deco="true" 
+			page="2" 
+		/>
+		<template 
 			name="SECTION-1story-fullsize-deco.xml" 
 			section="MARKETPLACE,MONEY_AND_INVESTING,THE_JOURNAL_REPORT,REVIEW,WSJ_MAGAZINE,BUSINESS_AND_FINANCE,OFF_DUTY,FRONT_SECTION,NEW_YORK,FRIDAY_JOURNAL,PERSONAL_JOURNAL" 
 			title="TEST - Full size Deco"
@@ -1102,7 +1111,6 @@
 		<article pages="ARTICLE-pages-off-duty.xml" type="Slow Food Fast"/>
 		<article pages="ARTICLE-pages-off-duty.xml" type="Mobile Special"/>
 		<article pages="ARTICLE-pages-off-duty.xml" type="Traveler’s Tale"/>
-		<article pages="ARTICLE-pages-off-duty.xml" type="Consider This"/>
 	</article-page-plans>
 	
 	<display-properties>

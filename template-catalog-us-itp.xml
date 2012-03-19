@@ -265,6 +265,13 @@
 			usage="front" 
 		/>
 		<template 
+			name="TEST-SECTION-4story-smallG-top-mirror_template.xml" 
+			section="BUSINESS_AND_FINANCE" 
+			title="TEST 4 story - G photo"
+			min="6" 
+			usage="front" 
+		/>
+		<template 
 			name="SECTION-4story-smallG-bottom_template.xml" 
 			section="BUSINESS_AND_FINANCE" 
 			title="4 story second story G photo"
@@ -282,6 +289,14 @@
 			name="SECTION-4story-smallG-deco_template.xml" 
 			section="BUSINESS_AND_FINANCE" 
 			title="4 story - small G Media liondoor"
+			min="6" 
+			deco="true" 
+			usage="front" 
+		/>
+		<template 
+			name="TEST-SECTION-4story-smallG-deco-mirror_template.xml" 
+			section="BUSINESS_AND_FINANCE" 
+			title="TEST 4 story - small G Media liondoor"
 			min="6" 
 			deco="true" 
 			usage="front" 
@@ -792,6 +807,13 @@
 			name="SECTION-3story-G_template.xml" 
 			section="SPECIAL_REPORT" 
 			title="3 story G photo"
+			min="5" 
+			usage="front" 
+		/>
+		<template 
+			name="TEST-SECTION-3story-G-mirror_template.xml" 
+			section="SPECIAL_REPORT" 
+			title="TEST 3 story G mirror photo"
 			min="5" 
 			usage="front" 
 		/>

@@ -66,7 +66,7 @@
 		/>
 		<template 
 			section="FRONT_SECTION" 
-			name="TEST-FRONT-5story-E-top_template.xml" 
+			name="FRONT-5story-E-top_template.xml" 
 			title="TEST 5 story - top story E photo"
 			min="4" 
 			usage="front" 
@@ -233,6 +233,13 @@
 			name="SECTION-4story-smallG-bottom_template.xml" 
 			section="MARKETPLACE" 
 			title="4 story second story G photo"
+			min="6" 
+			usage="front" 
+		/>
+		<template 
+			name="SECTION-4story-smallG-bottom-mirror_template.xml" 
+			section="MARKETPLACE" 
+			title="TEST - 4 story second story G photo - mirror"
 			min="6" 
 			usage="front" 
 		/>
@@ -1007,7 +1014,7 @@
 			name="CONTINUATION-fancy-OZ_template.xml" 
 			title="TEST - 5 stories - OZ liondoor"
 			min="5" 
-			section="NEW_YORK" 
+			section="NEW_YORK,FRONT_SECTION,PERSONAL_JOURNAL,OFF_DUTY,REVIEW,MARKETPLACE,BUSINESS_AND_FINANCE" 
 			usage="continuation" 
 			deco="true" 
 			page="2" 

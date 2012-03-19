@@ -1,0 +1,59 @@
+<jpml id="SECTION-4story-smallG-deco_template">
+	<style src="GLOBAL-stylesheet.ejs" />
+	<style src="SECTION-stylesheet.ejs" />
+	<style>{
+		if: =portrait, then: {
+			#b1:	{ 
+						frame: {$switch: [
+						{if: =widescreen, then: [291, 0, 475, 292]},
+						{if: =scale.large, then: [291, 0, 475, 211]}
+					]},
+					options:{large_headline:true, no_border:true, byline:{if: =scale.small, then:true, else:false}} 
+			},
+			#deco:	{ 
+						frame: {$switch: [
+						{if: =widescreen, then: [291, 292, 475, 328]},
+						{if: =scale.large, then: [291, 212, 475, 408]}
+					]},
+					options:{normal_headline:true} 
+			},
+			#b2:	{ frame: [0, 0, 280, 211], options:{small_headline:true, no_indent:true}},
+			#b3:	{ frame: [0, 212, 280, 204], options:{small_headline:true, border:true, no_indent:true}},
+			#b4:	{ frame: [0, 416, 280, 203], options:{small_headline:true, border:true, no_indent:true} }
+		}, else: {
+			#b1:	{ 
+						frame: {$switch: [
+						{if: =widescreen, then: [299, 0, 475, 242]},
+						{if: =scale.large, then: [299, 0, 475, 207]}
+					]},
+					options:{large_headline:true, no_border:true, byline:{if: =scale.small, then:true, else:false}} 
+			},
+			#deco:	{ 
+						frame: {$switch: [
+						{if: =widescreen, then: [299, 243, 475, 375]},
+						{if: =scale.large, then: [299, 207, 475, 405]}
+					]},
+					options:{normal_headline:true, F_image:{if: =widescreen, then:true, else:false}} 
+			},
+			#b2:	{ frame: [3, 0, 280, 207], options:{small_headline:true, no_indent:true} },
+			#b3:	{ frame: [3, 207, 280, 207], options:{small_headline:true, border:true, no_indent:true} },
+			#b4:	{ frame: [3, 412, 280, 207], options:{small_headline:true, border:true, no_indent:true} },
+			#h1: {options:{hide_image:{if: =scale.small, then:true, else:false}}},
+			#h2: {options:{hide_image:{if: =scale.small, then:true, else:false}}}
+		}
+	}</style>
+	
+	<box id="b1" embed="article" module="TOP-IMAGE_module.xml" />
+	<box id="deco" embed="article" module="DECO_module.xml" />
+	<box id="b2" embed="article" module="RIGHT-INSET-IMAGE_module.xml" />
+	<box id="b3" embed="article" module="RIGHT-INSET-IMAGE_module.xml" />
+	<box id="b4" embed="article" module="RIGHT-INSET-IMAGE_module.xml" />
+	<box id="h1" embed="article" module="HIGHLIGHTS_module.xml" />
+	<box id="h2" embed="article" module="HIGHLIGHTS_module.xml" />
+	<box id="ad_background" class="ad_light">
+		<box id="highlight_ad" class="ad-rectangle" embed="advertisement" />
+	</box>
+
+	
+</jpml>
+

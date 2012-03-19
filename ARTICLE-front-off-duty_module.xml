@@ -11,7 +11,7 @@
 			column-height:balance,
 			flow: article_body
         }},
-		{#mediabucket: {frame: [3, 3, 570, 612] }},
+		{#mediabucket: {frame: [2, 0, 570, 630] }},
 		{if: =portrait, then: {
             #mediabucket_container:	{ frame: [0, 0, 582, 623]  }
         }, else: {

@@ -1,0 +1,76 @@
+<jpml id="FRONT-4story-E-top_template">
+	<style src="GLOBAL-stylesheet.ejs" />
+	<style src="FRONT-stylesheet.ejs" />
+	<style> {
+		if: =portrait, then: {
+			#b1:			{ 
+								frame: {$switch: [
+									{if: =widescreen, then: [194, 28, 328, 548]},
+									{if: =scale.large, then: [194, 26, 375, 548]}
+								]},
+								options:{large_headline:true, show_image:true, no_border:true, byline:{if: =scale.small, then:true, else:false}} 
+							},
+			#b2:			{ 
+								frame: {$switch: [
+									{if: =widescreen, then: [535, 28, 230, 273]},
+									{if: =scale.large, then: [582, 26, 183, 274]}
+								]},
+								options:{small_headline:true, no-border:true, left:true, no_indent:true} 
+							},
+			#b3:			{ 
+								frame: {$switch: [
+									{if: =widescreen, then: [535, 302, 230, 274]},
+									{if: =scale.large, then: [582, 300, 183, 274]}
+								]},
+								options:{small_headline:true, no_border:true, left:true, no_indent:true} 
+							},
+			#b4:			{ frame: [194, 578, 280, 298], options:{small_headline:true, no_border:true, left:true, no_indent:true} },
+			#b5:			{ frame: [486, 578, 280, 298], options:{no_indent:true} }
+		}, else: {
+			#b1:			{ 
+								frame: {$switch: [
+									{if: =widescreen, then: [205, 28, 359, 596]},
+									{if: =scale.large, then: [205, 28, 375, 596]}
+								]},
+								options:{large_headline:true, show_image:true, no_border:true, bottom:true, byline:{if: =scale.small, then:true, else:false}}  
+							},
+			#b2:			{ 
+								frame: {$switch: [
+									{if: =widescreen, then: [577, 28, 199, 296]},
+									{if: =scale.large, then: [593, 28, 183, 297]}
+								]},
+								options:{small_headline:true, no_border:true, left:true, no_indent:true}  
+							},
+			#b3:			{ 
+								frame: {$switch: [
+									{if: =widescreen, then: [577, 324, 199, 296]},
+									{if: =scale.large, then: [593, 324, 183, 297]}
+								]},
+								options:{small_headline:true, no_border:true, left:true, no_indent:true}  
+							},
+			#b4:			{ frame: [787, 28, 238, 254], options:{small_headline:true, no_border:true, no_indent:true} },
+			#b5:			{ frame: [787, 280, 238, 340], options:{no_indent:true} }
+		}
+		
+		
+		
+	} </style>
+	
+	<box id="marketstrap">
+	<box id="marketstrap_view" embed="marketstrap" />
+	<box id="marketstrap_message">
+		<p>Your WSJ version is not supported. Please upgrade.</p>
+	</box>
+</box>
+
+	<box id="whatsnews" embed="whatsnews" />
+	<box id="ad_background" class="front_ad">
+		<box id="ad" class="ad-rectangle" embed="advertisement" />
+	</box>
+	<box id="b1" embed="article" module="TOP-IMAGE_module.xml" />
+	<box id="b2" embed="article" module="FRONT-NO-IMAGE_module.xml" />
+	<box id="b3" embed="article" module="FRONT-NO-IMAGE_module.xml" />
+	<box id="b4" embed="article" module="FRONT-NO-IMAGE_module.xml" />
+	<box id="b5" embed="article" module="AHED_module.xml" />
+	
+</jpml>

@@ -34,10 +34,10 @@
 			anchor-y:top
 		}},
 		{if: =portrait, then: {
-			#mediabucket_container:	{ frame: [379, 8, 350, 205]  }
+			#mediabucket_container:	{ frame: [379, 8, 350, 235]  }
 			
         }, else: {
-			#mediabucket_container:	{ frame: [676, 8, 310, 205]  }
+			#mediabucket_container:	{ frame: [676, 8, 310, 235]  }
 		}},
 		{#filler: {
 			position: relative,

@@ -28,15 +28,15 @@
 		}},
 		{#image_container: { 
 			anchor-x: right,
-			width: {if: =options.C_image, then:175, else:86},
+			width: {if: =options.C_image, then:177, else:86},
 			pixels-per-point-x:{if: =scale.small, then:.7, else:1},
 			pixels-per-point-y:{if: =scale.small, then:.7, else:1},
 			image-scale:{if: =scale.small, then:.7, else:1}
 			
 		}},
 		{image: {
-			width:{if: =options.C_image, then:165, else:76},
-			height:{if: =options.C_image, then:109, else:76},
+			width:{if: =options.C_image, then:167, else:76},
+			height:{if: =options.C_image, then:94, else:76},
 			padding: [ 0, 0, {if: =options.C_image, then:10, else:0}, 10 ]
 			
 		}},
@@ -62,7 +62,7 @@
 			<image embed="summary-image" />
 		</box>
 		<panel id="headline">
-			<p id="small_headline" class=""><span embed="headline" /><mark class="key" /></p>
+			<p id="small_headline" class="invisible"><span embed="headline" /><mark class="key" /></p>
 			<p id="medium_headline" class="invisible"><span embed="headline" /><mark class="key" /></p>
 			<p id="large_headline" class="invisible"><span embed="headline" /><mark class="key" /></p>
 		</panel>

@@ -3,7 +3,7 @@
 	<style src="GLOBAL-stylesheet.ejs" />
     <style>{
 		jpml: {
-				background-color:#e6f5ff,
+				background-color:#b9e4f3,
 				padding: [10, 8, 10, 8],
 				border-width: {if: =options.portrait, then: [0, 1, 0, 0], else: [1, 0, 0, 0]},
 				border-color:#b1aca1

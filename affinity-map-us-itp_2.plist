@@ -4,12 +4,18 @@
 <dict>
 	<key>BUSINESS_AND_FINANCE</key>
 	<dict>
+		<key>CONTINUATION-fancy-OZ_template</key>
 		<dict>
+			<key>deco</key>
+			<array>
+				<string>Deco Summary Liondoor BizFi-OZ</string>
+			</array>
+		</dict>
 		<key>CONTINUATION-fancy-6_template</key>
 		<dict>
 			<key>deco</key>
 			<array>
-				<string>Deco Summary Liondoor MoneyCont1</string>
+				<string>Deco Summary Liondoor BizFiCont1</string>
 			</array>
 		</dict>
 		<key>SECTION-1story-fullsize-deco_template</key>
@@ -35,6 +41,17 @@
 			<array/>
 		</dict>
 		<key>SECTION-3story-G_template</key>
+		<dict>
+			<key>b1</key>
+			<array>
+				<true/>
+			</array>
+			<key>h1</key>
+			<array/>
+			<key>h2</key>
+			<array/>
+		</dict>
+		<key>SECTION-3story-G-mirror_template</key>
 		<dict>
 			<key>b1</key>
 			<array>
@@ -71,7 +88,37 @@
 			<key>h2</key>
 			<array/>
 		</dict>
+		<key>SECTION-4story-smallG-bottom-mirror_template</key>
+		<dict>
+			<key>b1</key>
+			<array>
+				<true/>
+			</array>
+			<key>b2</key>
+			<array>
+				<true/>
+			</array>
+			<key>h1</key>
+			<array/>
+			<key>h2</key>
+			<array/>
+		</dict>
 		<key>SECTION-4story-smallG-deco_template</key>
+		<dict>
+			<key>b1</key>
+			<array>
+				<true/>
+			</array>
+			<key>deco</key>
+			<array>
+				<string>Deco Summary Liondoor Business Finance</string>
+			</array>
+			<key>h1</key>
+			<array/>
+			<key>h2</key>
+			<array/>
+		</dict>
+		<key>SECTION-4story-smallG-deco-mirror_template</key>
 		<dict>
 			<key>b1</key>
 			<array>
@@ -97,9 +144,27 @@
 			<key>h2</key>
 			<array/>
 		</dict>
+		<key>SECTION-4story-smallG-top-mirror_template</key>
+		<dict>
+			<key>b1</key>
+			<array>
+				<true/>
+			</array>
+			<key>h1</key>
+			<array/>
+			<key>h2</key>
+			<array/>
+		</dict>
 	</dict>
 	<key>FRIDAY_JOURNAL</key>
 	<dict>
+		<key>CONTINUATION-fancy-OZ_template</key>
+		<dict>
+			<key>deco</key>
+			<array>
+				<string>Deco Summary Liondoor FridayJourn-OZ</string>
+			</array>
+		</dict>
 		<key>CONTINUATION-fancy-6_template</key>
 		<dict>
 			<key>deco</key>
@@ -208,6 +273,13 @@
 	</dict>
 	<key>FRONT_SECTION</key>
 	<dict>
+		<key>CONTINUATION-fancy-OZ_template</key>
+		<dict>
+			<key>deco</key>
+			<array>
+				<string>Deco Summary Liondoor Front-OZ</string>
+			</array>
+		</dict>
 		<key>CONTINUATION-fancy-6_template</key>
 		<dict>
 			<key>deco</key>
@@ -275,6 +347,17 @@
 				<true/>
 			</array>
 			<key>b4</key>
+			<array>
+				<string>A-hed</string>
+			</array>
+		</dict>
+		<key>FRONT-5story-E-top_template</key>
+		<dict>
+			<key>b1</key>
+			<array>
+				<true/>
+			</array>
+			<key>b5</key>
 			<array>
 				<string>A-hed</string>
 			</array>
@@ -423,6 +506,13 @@
 	</dict>
 	<key>MARKETPLACE</key>
 	<dict>
+		<key>CONTINUATION-fancy-OZ_template</key>
+		<dict>
+			<key>deco</key>
+			<array>
+				<string>Deco Summary Liondoor Marketplace-OZ</string>
+			</array>
+		</dict>
 		<key>CONTINUATION-fancy-bottom-6_template</key>
 		<dict>
 			<key>deco</key>
@@ -464,6 +554,17 @@
 			<key>h2</key>
 			<array/>
 		</dict>
+		<key>SECTION-3story-G-mirror_template</key>
+		<dict>
+			<key>b1</key>
+			<array>
+				<true/>
+			</array>
+			<key>h1</key>
+			<array/>
+			<key>h2</key>
+			<array/>
+		</dict>
 		<key>SECTION-4story-2D-C_template</key>
 		<dict>
 			<key>b1</key>
@@ -476,6 +577,21 @@
 			<array/>
 		</dict>
 		<key>SECTION-4story-smallG-bottom_template</key>
+		<dict>
+			<key>b1</key>
+			<array>
+				<true/>
+			</array>
+			<key>b2</key>
+			<array>
+				<true/>
+			</array>
+			<key>h1</key>
+			<array/>
+			<key>h2</key>
+			<array/>
+		</dict>
+		<key>SECTION-4story-smallG-bottom-mirror_template</key>
 		<dict>
 			<key>b1</key>
 			<array>
@@ -506,7 +622,34 @@
 			<key>h2</key>
 			<array/>
 		</dict>
+		<key>SECTION-4story-smallG-deco-mirror_template</key>
+		<dict>
+			<key>b1</key>
+			<array>
+				<true/>
+			</array>
+			<key>deco</key>
+			<array>
+				<string>Deco Summary Liondoor Section 1</string>
+				<string>Deco Summary Liondoor Marketplace</string>
+			</array>
+			<key>h1</key>
+			<array/>
+			<key>h2</key>
+			<array/>
+		</dict>
 		<key>SECTION-4story-smallG-top_template</key>
+		<dict>
+			<key>b1</key>
+			<array>
+				<true/>
+			</array>
+			<key>h1</key>
+			<array/>
+			<key>h2</key>
+			<array/>
+		</dict>
+		<key>SECTION-4story-smallG-top-mirror_template</key>
 		<dict>
 			<key>b1</key>
 			<array>
@@ -545,6 +688,17 @@
 			<key>h2</key>
 			<array/>
 		</dict>
+		<key>SECTION-3story-G-mirror_template</key>
+		<dict>
+			<key>b1</key>
+			<array>
+				<true/>
+			</array>
+			<key>h1</key>
+			<array/>
+			<key>h2</key>
+			<array/>
+		</dict>
 		<key>SECTION-4story-D-C_template</key>
 		<dict>
 			<key>b1</key>
@@ -557,6 +711,21 @@
 			<array/>
 		</dict>
 		<key>SECTION-4story-smallG-bottom_template</key>
+		<dict>
+			<key>b1</key>
+			<array>
+				<true/>
+			</array>
+			<key>b2</key>
+			<array>
+				<true/>
+			</array>
+			<key>h1</key>
+			<array/>
+			<key>h2</key>
+			<array/>
+		</dict>
+		<key>SECTION-4story-smallG-bottom-mirror_template</key>
 		<dict>
 			<key>b1</key>
 			<array>
@@ -587,7 +756,34 @@
 			<key>h2</key>
 			<array/>
 		</dict>
+		<key>SECTION-4story-smallG-deco-mirror_template</key>
+		<dict>
+			<key>b1</key>
+			<array>
+				<true/>
+			</array>
+			<key>deco</key>
+			<array>
+				<string>Deco Summary Liondoor Section 1</string>
+				<string>Deco Summary Liondoor Money Investing</string>
+			</array>
+			<key>h1</key>
+			<array/>
+			<key>h2</key>
+			<array/>
+		</dict>
 		<key>SECTION-4story-smallG-top_template</key>
+		<dict>
+			<key>b1</key>
+			<array>
+				<true/>
+			</array>
+			<key>h1</key>
+			<array/>
+			<key>h2</key>
+			<array/>
+		</dict>
+		<key>SECTION-4story-smallG-top-mirror_template</key>
 		<dict>
 			<key>b1</key>
 			<array>
@@ -710,7 +906,33 @@
 			<key>h2</key>
 			<array/>
 		</dict>
+		<key>SECTION-3story-G-mirror_template</key>
+		<dict>
+			<key>b1</key>
+			<array>
+				<true/>
+			</array>
+			<key>h1</key>
+			<array/>
+			<key>h2</key>
+			<array/>
+		</dict>
 		<key>SECTION-4story-smallG-bottom_template</key>
+		<dict>
+			<key>b1</key>
+			<array>
+				<true/>
+			</array>
+			<key>b2</key>
+			<array>
+				<true/>
+			</array>
+			<key>h1</key>
+			<array/>
+			<key>h2</key>
+			<array/>
+		</dict>
+		<key>SECTION-4story-smallG-bottom-mirror_template</key>
 		<dict>
 			<key>b1</key>
 			<array>
@@ -741,7 +963,34 @@
 			<key>h2</key>
 			<array/>
 		</dict>
+		<key>SECTION-4story-smallG-deco-mirror_template</key>
+		<dict>
+			<key>b1</key>
+			<array>
+				<true/>
+			</array>
+			<key>deco</key>
+			<array>
+				<string>Deco Summary Liondoor Section 1</string>
+				<string>Deco Summary Liondoor New York</string>
+			</array>
+			<key>h1</key>
+			<array/>
+			<key>h2</key>
+			<array/>
+		</dict>
 		<key>SECTION-4story-smallG-top_template</key>
+		<dict>
+			<key>b1</key>
+			<array>
+				<true/>
+			</array>
+			<key>h1</key>
+			<array/>
+			<key>h2</key>
+			<array/>
+		</dict>
+		<key>SECTION-4story-smallG-top-mirror_template</key>
 		<dict>
 			<key>b1</key>
 			<array>
@@ -781,7 +1030,8 @@
 		<dict>
 			<key>deco</key>
 			<array>
-				<string>Deco Summary Liondoor OffDuty1</string>
+				<string>Deco Summary Liondoor OffDutyCont1</string>
+				<string>Deco Summary Liondoor OffDutyCont2</string>
 			</array>
 		</dict>
 		<key>CONTINUATION-fancy-8_template</key>
@@ -903,6 +1153,13 @@
 	</dict>
 	<key>OPINION</key>
 	<dict>
+		<key>CONTINUATION-fancy-OZ_template</key>
+		<dict>
+			<key>deco</key>
+			<array>
+				<string>Deco Summary Liondoor Opinion-OZ</string>
+			</array>
+		</dict>
 		<key>CONTINUATION-fancy-bottom-6_template</key>
 		<dict>
 			<key>deco</key>
@@ -1415,6 +1672,13 @@
 	</dict>
 	<key>PERSONAL_JOURNAL</key>
 	<dict>
+		<key>CONTINUATION-fancy-OZ_template</key>
+		<dict>
+			<key>deco</key>
+			<array>
+				<string>Deco Summary Liondoor PJ-OZ</string>
+			</array>
+		</dict>
 		<key>CONTINUATION-fancy-6_template</key>
 		<dict>
 			<key>deco</key>
@@ -1544,6 +1808,13 @@
 	</dict>
 	<key>REVIEW</key>
 	<dict>
+		<key>CONTINUATION-fancy-OZ_template</key>
+		<dict>
+			<key>deco</key>
+			<array>
+				<string>Deco Summary Liondoor Review-OZ</string>
+			</array>
+		</dict>
 		<key>CONTINUATION-fancy-bottom-6_template</key>
 		<dict>
 			<key>deco</key>

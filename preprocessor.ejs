@@ -57,11 +57,14 @@
 				if: =device.platform, 
 				equals: "Android", 
 				then: {
-					if: {$min: [1.4, =app.version]}, 
-					less-than: 1.4,
-					then: false,
-					else: true
-					
+					if: {$add: [0,
+                   				{$join: [
+				                        {$substr: [=app.version, 0, 1]},
+				                        {$substr: [=app.version, 2, 1]}
+			                ]}]}, 
+					less-than: 14,
+					then: true,
+					else: false					
 				},
 				else: false
 			},

@@ -327,7 +327,9 @@
 		font-name:DJ5RetinaCd-Semibold,
 		font-size:15,
 		line-height:16,
-		color:#656565
+		color:#656565,
+		text-overflow:ellipsis
+		
 	},
 	
 	.magazine_highlight_body: {
@@ -543,7 +545,7 @@
 		border-image:url(deloitte_background.png),
 		border-width: [16, 0, 0, 0],
 		border-slice: [16, 0, 0, 0],
-		background-color:#e6f5ff
+		background-color:#b9e4f3
 	},
 	#deloitte_article_header: {
 		border-image:url(deloitte_background-white.png),
@@ -615,17 +617,21 @@
 		] },
 		height:40
 	},
+	#deloitte-disclaimer-preamble-p: {
+	    padding: [16, 0, 0, 0],
+		text-indent:0
+	
+	},
+
 	.deloitte-disclaimer: {
 		font-name:Helvetica,
-		text-align:left,
+		padding: [16, 0, 0, 0],
+	    text-align:left,
 		color:#767676,
-		font-size:11,
-		line-height:16,
+		font-size:{$multiply: [11, =view.zoomlevel]},
+		line-height:{$multiply: [16, =view.zoomlevel]},
 		text-indent:0,
-		layout-grid-line: inherit
-	},
-	#deloitte-disclaimer-before-first-p: {
-	  content: "\u000ACOPYRIGHT\u000A"
+		layout-grid-line: 0
 	},
 	.tech_section: {
 		font-name:DJ5EscrowComp-Roman,

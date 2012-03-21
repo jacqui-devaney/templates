@@ -13,15 +13,15 @@
 		},
 		#b1:	{ 
 			frame: [8, 99, 362, 245],
-			options: {medium_headline:true, no_border:true}
+			options: {medium_headline:true}
 		},
 		#b2:	{ 
 			frame: [8, 344, 362, 135],
-			options: {small_headline:true}
+			options: {small_headline:true, border:true}
 		},
 		#b3:	{ 
 			frame: [8, 479, 362, 131],
-			options: {small_headline:true}
+			options: {small_headline:true, border:true}
 		},
 		#l1: {
 			frame: [384, 15, 1, 580],
@@ -105,9 +105,9 @@
 	        <p id="stars"><mark class="ahed_stars" /></p>
 		</panel>
 	</box>
-	<box id="b1" embed="article" module="FRONT-NO-IMAGE_module.xml" />
-	<box id="b2" embed="article" module="FRONT-NO-IMAGE_module.xml" />
-	<box id="b3" embed="article" module="FRONT-NO-IMAGE_module.xml" />
+	<box id="b1" embed="article" module="RIGHT-INSET-IMAGE_module.xml" />
+	<box id="b2" embed="article" module="RIGHT-INSET-IMAGE_module.xml" />
+	<box id="b3" embed="article" module="RIGHT-INSET-IMAGE_module.xml" />
 	<box id="l1" />
 	<box id="tech_header">
 		<p class="tech_section">Latest Technology News</p>

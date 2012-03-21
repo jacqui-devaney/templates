@@ -59,11 +59,10 @@
         <!-- We will insert a mark body bug in the last p or tagline element -->
         <xsl:if test="@type=&quot;Deloitte Cio Blog&quot;">
             <xsl:for-each select="//inset[@param1=&quot;DISCLAIMER&quot; and @style=&quot;OUTSET&quot;]/p">
+                <xsl:if test="not(preceding-sibling::p[position()=1])">
+                    <p id="deloitte-disclaimer-preamble-p"><mark id="deloitte-disclaimer-preamble-mark" /></p>
+                </xsl:if>
                 <p class="deloitte-disclaimer">
-                    <xsl:if test="not(preceding-sibling::p[position()=1])">
-                        <xsl:attribute name="id">deloitte-disclaimer-first-p</xsl:attribute>
-                        <mark id="deloitte-disclaimer-before-first-p" />
-                    </xsl:if>
                     <xsl:value-of select="." />
                 </p>
             </xsl:for-each>

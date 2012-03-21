@@ -22,10 +22,17 @@
 			{#link_out: {
 				background-image: url(link_out.png),
 				background-position:left,
-				padding:[2, 0, 0, 14]
+				padding:[2, 0, 0, 14],
+				display: {if: =article.type, equals: "Deco Summary Liondoor Cio Special 1", then: inherit, else: none}
+			}},
+			{#fromwsj: {
+			  display: {if: =article.type, equals: "Deco Summary Liondoor Cio Special 1", then: none, else: inherit}
 			}},
 			{.invisible: { 
 				display:none
+			}},
+			{#flashline: {
+				max-height:20
 			}},
 			{#continuation_headline: { 
 				text-overflow:ellipsis,
@@ -41,7 +48,10 @@
 			]
 		}</style>
 	<box id="wrapper">
-		<p class="highlight_flashline_small" id="link_out" embed="flashline"></p>
+		<panel id="flashline">
+			<p class="highlight_flashline_small" id="fromwsj">From WSJ</p>
+			<p class="highlight_flashline_small" id="link_out" embed="flashline"/>
+		</panel>
 	    <panel id="headline">
 			<p id="continuation_headline" class="invisible"><span embed="headline" /></p>
 			<p id="extra_small_headline" class="invisible"><span embed="headline" /></p>

@@ -9,19 +9,27 @@
 		.ahed_headline: {
 			font-size:16,
 			line-height:16,
-			font-name:DJ5EscrowCond-BoldItalic
+			font-name:DJ5EscrowCond-BoldItalic,
+			padding: [5, 0, 0, 0]
 		},
+		#stars: {
+			padding:[5, 0, 0, 0]
+		},
+		.ahed_stars: {
+			content: "*\u00a0\u00a0*\u00a0\u00a0*"
+		},
+		
 		#b1:	{ 
-			frame: [8, 99, 362, 245],
-			options: {medium_headline:true}
+			frame: [8, 103, 362, 245],
+			options: {medium_headline:true, no_border:true}
 		},
 		#b2:	{ 
 			frame: [8, 344, 362, 135],
-			options: {small_headline:true, border:true}
+			options: {small_headline:true}
 		},
 		#b3:	{ 
 			frame: [8, 479, 362, 131],
-			options: {small_headline:true, border:true}
+			options: {small_headline:true}
 		},
 		#l1: {
 			frame: [384, 15, 1, 580],
@@ -105,9 +113,9 @@
 	        <p id="stars"><mark class="ahed_stars" /></p>
 		</panel>
 	</box>
-	<box id="b1" embed="article" module="RIGHT-INSET-IMAGE_module.xml" />
-	<box id="b2" embed="article" module="RIGHT-INSET-IMAGE_module.xml" />
-	<box id="b3" embed="article" module="RIGHT-INSET-IMAGE_module.xml" />
+	<box id="b1" embed="article" module="FRONT-NO-IMAGE_module.xml" />
+	<box id="b2" embed="article" module="FRONT-NO-IMAGE_module.xml" />
+	<box id="b3" embed="article" module="FRONT-NO-IMAGE_module.xml" />
 	<box id="l1" />
 	<box id="tech_header">
 		<p class="tech_section">Latest Technology News</p>

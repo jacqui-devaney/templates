@@ -60,7 +60,7 @@
 		<template 
 			section="FRONT_SECTION" 
 			name="FRONT-4story-E-deco-top_template.xml" 
-			title="TEST - 4 story- Top E liondoor"
+			title="4 story: Top E liondoor"
 			min="4" 
 			deco="true" 
 			usage="front" 
@@ -75,7 +75,7 @@
 		<template 
 			section="FRONT_SECTION" 
 			name="FRONT-5story-E-top_template.xml" 
-			title="TEST 5 story - top story E photo"
+			title="5 story - top story E photo"
 			min="4" 
 			usage="front" 
 		/>
@@ -346,7 +346,7 @@
 			usage="front" 
 		/>
 		<template 
-			name="TEST-SECTION-4story-smallG-deco-mirror_template.xml" 
+			name="SECTION-4story-smallG-deco-mirror_template.xml" 
 			section="BUSINESS_AND_FINANCE" 
 			title="TEST 4 story - small G Media liondoor"
 			min="6" 
@@ -1149,9 +1149,9 @@
 		/>
 		<template 
 			name="CONTINUATION-fancy-OZ_template.xml" 
-			title="TEST - 5 stories - OZ liondoor"
+			title="5 stories - OZ liondoor"
 			min="5" 
-			section="NEW_YORK,FRONT_SECTION,PERSONAL_JOURNAL,OFF_DUTY,REVIEW,MARKETPLACE,BUSINESS_AND_FINANCE,OPINION,FRIDAY_JOURNAL" 
+			section="FRONT_SECTION,OPINION,MARKETPLACE,PERSONAL_JOURNAL,REVIEW,BUSINESS_AND_FINANCE,NEW_YORK,OFF_DUTY,WSJ_MAGAZINE" 
 			usage="continuation" 
 			deco="true" 
 			page="3" 
@@ -1281,7 +1281,8 @@
 		<article pages="ARTICLE-pages-hots.xml" type="Heard on the Street Other"/>
 		<article pages="ARTICLE-pages-hots.xml" type="Overheard"/>
 		<article pages="ARTICLE-pages-letters.xml" type="Letters"/>
-		<article pages="ARTICLE-pages-off-duty.xml" type="Well Spent"/>
+		<article pages="ARTICLE-pages-off-duty.xml" type="At Play"/>
+		<article pages="ARTICLE-pages-off-duty.xml" type="Half Full"/>
 		<article pages="ARTICLE-pages-off-duty.xml" type="Mobile Special"/>
 	</article-page-plans>
 	

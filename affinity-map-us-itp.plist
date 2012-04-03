@@ -1289,7 +1289,7 @@
 				<string>Financial Briefing Book</string>
 			</array>
 		</dict>
-		<key>SSECTION-4story-smallG-bottom-mirror_template</key>
+		<key>SECTION-4story-smallG-bottom-mirror_template</key>
 		<dict>
 			<key>b1</key>
 			<array>
@@ -3613,6 +3613,13 @@
 	</dict>
 	<key>WSJ_MAGAZINE</key>
 	<dict>
+		<key>CONTINUATION-fancy-OZ_template</key>
+		<dict>
+			<key>deco</key>
+			<array>
+				<string>Deco Summary Liondoor Magazine-OZ</string>
+			</array>
+		</dict>
 		<key>CONTINUATION-fancy-3OV-7_template</key>
 		<dict>
 			<key>deco</key>

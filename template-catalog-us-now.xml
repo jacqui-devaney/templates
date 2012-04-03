@@ -90,6 +90,30 @@
 			min="5"
 			usage="front"
 		/>
+		<template 
+			name="SECTION-3story-G-mirror_template.xml" 
+			section="MARKETPLACE" 
+			title="TEST 3 story - G photo mirror"
+			min="5" 
+			deco="true"
+			usage="front" 
+		/>
+		<template 
+			name="SECTION-4story-smallG-deco-mirror_template.xml" 
+			section="MARKETPLACE" 
+			title="TEST 4 story - small G Media liondoor - mirror"
+			min="6" 
+			deco="true" 
+			usage="front" 
+		/>
+		<template 
+			name="SECTION-4story-smallG-top-mirror_template.xml" 
+			section="MARKETPLACE" 
+			title="TEST 4 story - G photo - mirror"
+			min="6" 
+			usage="front" 
+		/>
+		
 		<!-- END MARKETPLACE -->
 
 		<!-- MONEY AND INVESTING -->
@@ -176,6 +200,30 @@
 			min="3"
 			usage="front"
 		/>
+		<template 
+			name="SECTION-3story-G-mirror_template.xml" 
+			section="NEW_YORK" 
+			title="TEST 3 story - G photo mirror"
+			min="5" 
+			deco="true"
+			usage="front" 
+		/>
+		<template 
+			name="SECTION-4story-smallG-deco-mirror_template.xml" 
+			section="NEW_YORK" 
+			title="TEST 4 story - small G Media liondoor - mirror"
+			min="6" 
+			deco="true" 
+			usage="front" 
+		/>
+		<template 
+			name="SECTION-4story-smallG-top-mirror_template.xml" 
+			section="NEW_YORK" 
+			title="TEST 4 story - G photo - mirror"
+			min="6" 
+			usage="front" 
+		/>
+		
 		<!-- END NEW YORK -->
 		
 		<!-- OFF DUTY -->
@@ -233,6 +281,14 @@
 			min="3"
 			usage="front"
 		/>
+		<template 
+			name="SECTION-4story-smallG-top-mirror_template.xml" 
+			section="PERSONAL_JOURNAL" 
+			title="TEST 4 story - G photo - mirror"
+			min="6" 
+			usage="front" 
+		/>
+		
 		<!-- END PERSONAL JOURNAL -->
 		
 		<!-- REVIEW -->
@@ -311,8 +367,42 @@
 			min="6" 
 			usage="front" 
 		/>
+		<template 
+			name="SECTION-3story-G-mirror_template.xml" 
+			section="SPECIAL_REPORT" 
+			title="TEST 3 story - G photo mirror"
+			min="5" 
+			deco="true"
+			usage="front" 
+		/>
+		<template 
+			name="SECTION-4story-smallG-deco-mirror_template.xml" 
+			section="SPECIAL_REPORT" 
+			title="TEST 4 story - small G Media liondoor - mirror"
+			min="6" 
+			deco="true" 
+			usage="front" 
+		/>
+		<template 
+			name="SECTION-4story-smallG-top-mirror_template.xml" 
+			section="SPECIAL_REPORT" 
+			title="TEST 4 story - G photo - mirror"
+			min="6" 
+			usage="front" 
+		/>
 		
 		<!-- END SPECIAL REPORT -->
+		
+		<!--  SPECIAL REPORT 2 -->
+		<template 
+			name="SECTION-3story-G-deco-C_template.xml" 
+			section="SPECIAL_REPORT_TWO" 
+			deco="true" 
+			title="3 story - G liondoor"
+			min="5" 
+			usage="front" 
+		/>
+		<!-- END SPECIAL REPORT 2 -->
 		
 		<!-- OPINION -->
 		<template 
@@ -581,8 +671,9 @@
 		<article pages="ARTICLE-pages-hots.xml" type="Overheard"/>
 		<article pages="ARTICLE-pages-hots.xml" type="Headrd on the Street Other"/>
 		<article pages="ARTICLE-pages-letters.xml" type="Letters"/>
+		<article pages="ARTICLE-pages-off-duty.xml" type="At Play"/>
+		<article pages="ARTICLE-pages-off-duty.xml" type="Half Full"/>
 		<article pages="ARTICLE-pages-off-duty.xml" type="Mobile Special"/>
-		<article pages="ARTICLE-pages-off-duty.xml" type="Well Spent"/>
 	</article-page-plans>
 	
 	

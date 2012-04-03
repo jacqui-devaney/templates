@@ -595,6 +595,38 @@
 				<string>Media &amp; Marketing</string>
 			</array>
 		</dict>
+		<key>SECTION-3story-G-mirror_template</key>
+		<dict>
+			<key>b1</key>
+			<array/>
+			<key>h1</key>
+			<array>
+				<string>Mobile Tablet Highlight1A</string>
+				<string>Mobile Tablet Highlight1B</string>
+				<string>Mobile App Blog</string>
+				<string>Tech Journal</string>
+				<string>Digits</string>
+				<string>Digits Blog</string>
+				<string>Boss Talk</string>
+				<string>How I Built It</string>
+				<string>Management</string>
+				<string>Careers</string>
+				<string>Law</string>
+				<string>Telecommunications</string>
+			</array>
+			<key>h2</key>
+			<array>
+				<string>Mobile Tablet Highlight2A</string>
+				<string>Mobile Tablet Highlight2B</string>
+				<string>Executive Education</string>
+				<string>Advertising</string>
+				<string>Theory</string>
+				<string>Small Business</string>
+				<string>Health</string>
+				<string>Earnings</string>
+				<string>Media &amp; Marketing</string>
+			</array>
+		</dict>
 		<key>SECTION-4story-2D-C_template</key>
 		<dict>
 			<key>b1</key>
@@ -664,7 +696,76 @@
 				<string>Media &amp; Marketing</string>
 			</array>
 		</dict>
+		<key>SECTION-4story-smallG-deco-mirror_template</key>
+		<dict>
+			<key>b1</key>
+			<array/>
+			<key>deco</key>
+			<array>
+				<string>Deco Summary Liondoor Section 1</string>
+				<string>Deco Summary Liondoor Marketplace</string>
+			</array>
+			<key>h1</key>
+			<array>
+				<string>Mobile Tablet Highlight1A</string>
+				<string>Mobile Tablet Highlight1B</string>
+				<string>Mobile App Blog</string>
+				<string>Tech Journal</string>
+				<string>Digits</string>
+				<string>Digits Blog</string>
+				<string>Boss Talk</string>
+				<string>How I Built It</string>
+				<string>Management</string>
+				<string>Careers</string>
+				<string>Law</string>
+				<string>Telecommunications</string>
+			</array>
+			<key>h2</key>
+			<array>
+				<string>Mobile Tablet Highlight2A</string>
+				<string>Mobile Tablet Highlight2B</string>
+				<string>Executive Education</string>
+				<string>Advertising</string>
+				<string>Theory</string>
+				<string>Small Business</string>
+				<string>Health</string>
+				<string>Earnings</string>
+				<string>Media &amp; Marketing</string>
+			</array>
+		</dict>
 		<key>SECTION-4story-smallG-top_template</key>
+		<dict>
+			<key>b1</key>
+			<array/>
+			<key>h1</key>
+			<array>
+				<string>Mobile Tablet Highlight1A</string>
+				<string>Mobile Tablet Highlight1B</string>
+				<string>Mobile App Blog</string>
+				<string>Tech Journal</string>
+				<string>Digits</string>
+				<string>Digits Blog</string>
+				<string>Boss Talk</string>
+				<string>How I Built It</string>
+				<string>Management</string>
+				<string>Careers</string>
+				<string>Law</string>
+				<string>Telecommunications</string>
+			</array>
+			<key>h2</key>
+			<array>
+				<string>Mobile Tablet Highlight2A</string>
+				<string>Mobile Tablet Highlight2B</string>
+				<string>Executive Education</string>
+				<string>Advertising</string>
+				<string>Theory</string>
+				<string>Small Business</string>
+				<string>Health</string>
+				<string>Earnings</string>
+				<string>Media &amp; Marketing</string>
+			</array>
+		</dict>
+		<key>SECTION-4story-smallG-top-mirror_template</key>
 		<dict>
 			<key>b1</key>
 			<array/>
@@ -1003,6 +1104,30 @@
 				<string>NY The Couch</string>
 			</array>
 		</dict>
+		<key>SECTION-3story-G-mirror_template</key>
+		<dict>
+			<key>b1</key>
+			<array/>
+			<key>h1</key>
+			<array>
+				<string>Mobile Tablet Highlight1A</string>
+				<string>Mobile Tablet Highlight1B</string>
+				<string>Metropolis</string>
+				<string>NY Page Two</string>
+				<string>Jason Gay</string>
+				<string>Urban Gardner</string>
+				<string>NY Transit</string>
+			</array>
+			<key>h2</key>
+			<array>
+				<string>Mobile Tablet Highlight2A</string>
+				<string>Mobile Tablet Highlight2B</string>
+				<string>NY Food</string>
+				<string>NY Heard &amp; Scene</string>
+				<string>NY Lunch Box</string>
+				<string>NY The Couch</string>
+			</array>
+		</dict>
 		<key>SECTION-4story-smallG-deco_template</key>
 		<dict>
 			<key>b1</key>
@@ -1032,7 +1157,60 @@
 				<string>NY The Couch</string>
 			</array>
 		</dict>
+		<key>SECTION-4story-smallG-deco-mirror_template</key>
+		<dict>
+			<key>b1</key>
+			<array/>
+			<key>deco</key>
+			<array>
+				<string>Deco Summary Liondoor Section 1</string>
+				<string>Deco Summary Liondoor New York</string>
+			</array>
+			<key>h1</key>
+			<array>
+				<string>Mobile Tablet Highlight1A</string>
+				<string>Mobile Tablet Highlight1B</string>
+				<string>Metropolis</string>
+				<string>NY Page Two</string>
+				<string>Jason Gay</string>
+				<string>Urban Gardner</string>
+				<string>NY Transit</string>
+			</array>
+			<key>h2</key>
+			<array>
+				<string>Mobile Tablet Highlight2A</string>
+				<string>Mobile Tablet Highlight2B</string>
+				<string>NY Food</string>
+				<string>NY Heard &amp; Scene</string>
+				<string>NY Lunch Box</string>
+				<string>NY The Couch</string>
+			</array>
+		</dict>
 		<key>SECTION-4story-smallG-top_template</key>
+		<dict>
+			<key>b1</key>
+			<array/>
+			<key>h1</key>
+			<array>
+				<string>Mobile Tablet Highlight1A</string>
+				<string>Mobile Tablet Highlight1B</string>
+				<string>Metropolis</string>
+				<string>NY Page Two</string>
+				<string>Jason Gay</string>
+				<string>Urban Gardner</string>
+				<string>NY Transit</string>
+			</array>
+			<key>h2</key>
+			<array>
+				<string>Mobile Tablet Highlight2A</string>
+				<string>Mobile Tablet Highlight2B</string>
+				<string>NY Food</string>
+				<string>NY Heard &amp; Scene</string>
+				<string>NY Lunch Box</string>
+				<string>NY The Couch</string>
+			</array>
+		</dict>
+		<key>SECTION-4story-smallG-top-mirror_template</key>
 		<dict>
 			<key>b1</key>
 			<array/>
@@ -1868,6 +2046,49 @@
 				<string>Off the Beaten Track</string>
 			</array>
 		</dict>
+		<key>SECTION-4story-smallG-top-mirror_template</key>
+		<dict>
+			<key>b1</key>
+			<array/>
+			<key>deco</key>
+			<array>
+				<string>Deco Summary Liondoor Section 1</string>
+				<string>Deco Summary Liondoor Personal Journal</string>
+			</array>
+			<key>h1</key>
+			<array>
+				<string>Mobile Tablet Highlight1A</string>
+				<string>Mobile Tablet Highlight1B</string>
+				<string>Mobile Photo Journal</string>
+				<string>The Couch</string>
+				<string>World Cup</string>
+				<string>The Middle Seat</string>
+				<string>Sports</string>
+				<string>Health Journal</string>
+				<string>Heart Beat</string>
+				<string>The Informed Patient</string>
+				<string>Lab Journal</string>
+				<string>Aches &amp; Claims</string>
+				<string>Research Report</string>
+				<string>Work &amp; Family</string>
+				<string>Cranky Consumer</string>
+			</array>
+			<key>h2</key>
+			<array>
+				<string>Mobile Tablet Highlight2A</string>
+				<string>Mobile Tablet Highlight2B</string>
+				<string>Mobile App Blog</string>
+				<string>The Mossberg Solution</string>
+				<string>Worth It</string>
+				<string>Personal Technology</string>
+				<string>Second Acts</string>
+				<string>Managing Your Career</string>
+				<string>Eyes on the Road</string>
+				<string>Pay Grade</string>
+				<string>Moving On</string>
+				<string>Off the Beaten Track</string>
+			</array>
+		</dict>
 	</dict>
 	<key>SPECIAL_REPORT</key>
 	<dict>
@@ -1983,6 +2204,21 @@
 				<string>Mobile Tablet Highlight2B</string>
 			</array>
 		</dict>
+		<key>SECTION-3story-G-mirror_template</key>
+		<dict>
+			<key>b1</key>
+			<array/>
+			<key>h1</key>
+			<array>
+				<string>Mobile Tablet Highlight1A</string>
+				<string>Mobile Tablet Highlight1B</string>
+			</array>
+			<key>h2</key>
+			<array>
+				<string>Mobile Tablet Highlight2A</string>
+				<string>Mobile Tablet Highlight2B</string>
+			</array>
+		</dict>
 		<key>SECTION-4story-smallG-deco_template</key>
 		<dict>
 			<key>b1</key>
@@ -2002,7 +2238,41 @@
 				<string>Mobile Tablet Highlight2B</string>
 			</array>
 		</dict>
+		<key>SECTION-4story-smallG-deco-mirror_template</key>
+		<dict>
+			<key>b1</key>
+			<array/>
+			<key>deco</key>
+			<array>
+				<string>Deco Summary Liondoor Special</string>
+			</array>
+			<key>h1</key>
+			<array>
+				<string>Mobile Tablet Highlight1A</string>
+				<string>Mobile Tablet Highlight1B</string>
+			</array>
+			<key>h2</key>
+			<array>
+				<string>Mobile Tablet Highlight2A</string>
+				<string>Mobile Tablet Highlight2B</string>
+			</array>
+		</dict>
 		<key>SECTION-4story-smallG-top_template</key>
+		<dict>
+			<key>b1</key>
+			<array/>
+			<key>h1</key>
+			<array>
+				<string>Mobile Tablet Highlight1A</string>
+				<string>Mobile Tablet Highlight1B</string>
+			</array>
+			<key>h2</key>
+			<array>
+				<string>Mobile Tablet Highlight2A</string>
+				<string>Mobile Tablet Highlight2B</string>
+			</array>
+		</dict>
+		<key>SECTION-4story-smallG-top-mirror_template</key>
 		<dict>
 			<key>b1</key>
 			<array/>

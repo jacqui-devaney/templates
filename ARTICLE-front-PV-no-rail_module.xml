@@ -1,0 +1,64 @@
+<jpml id="ARTICLE-front_module">
+	<style src="GLOBAL_MODULES-stylesheet.ejs" />
+	<style src="GLOBAL-stylesheet.ejs" />
+	<style>{
+		$join: [
+		{#header_top: { if: =portrait, then: { padding:[580, 0, 0, 10]}, else: { padding:[40, 0, 0, 690]}}},
+		{#body_container: { 
+			padding: [4, 5, 0, 10],
+            column-count:{if: =portrait, then:{$divide: [=view.width, {$multiply:[260, =scale.dpi]}]}, else: 1},
+            column-gutter: 20,
+			column-height:balance,
+			flow: article_body
+        }},
+		{#mediabucket: {frame: [0, 0, 684, 583], background-color:red }},
+		{if: =portrait, then: {
+            #mediabucket_container:	{frame: [10, 20, 684, 583], padding: [5, 60, 5, 15]}
+        }, else: {
+        	#mediabucket_container:	{ frame: [0, 40, 684, 583], padding: [0, 10, 0, 0]}
+        }},
+    	
+    	{.this_close_button: {
+		background-image: { $switch: [
+			{ if: =app.language, equals: en, then: url(close.png) },
+			{ if: =app.language, equals: de, then: url(close_de.png) }
+		] },
+		width: { $switch: [
+			{ if: =app.language, equals: en, then: 60 },
+			{ if: =app.language, equals: de, then: 73 }
+		] },
+		height:29,
+		left:0,
+		bottom:0
+		}},
+		
+		{#this_close_button_box: {
+		top:-17,
+		right: -14,
+		width:{ $switch: [
+			{ if: =app.language, equals: en, then: 70 },
+			{ if: =app.language, equals: de, then: 85 }
+		] },
+		height:40
+		}}
+
+		]
+    }</style>
+	<box id="this_close_button_box">
+		<box class="this_close_button" embed="close"/>
+	</box>
+	<box id="mediabucket_container">
+		<box id="mediabucket" embed="mediabucket" />
+	</box>
+	<panel id="header_top">
+        <p class="offduty_article_headline"><span embed="headline"/><mark class="key"/></p>
+		<h2 class="offduty_article_subhed" embed="subhed" />
+    </panel>
+	<panel id="body_container">
+	    <p class="article_byline" embed="byline"/>
+        <panel class="article_body" embed="body"/>
+    </panel>
+	
+</jpml>
+
+

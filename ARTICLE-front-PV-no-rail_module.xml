@@ -11,7 +11,7 @@
 			column-height:balance,
 			flow: article_body
         }},
-		{#mediabucket: {frame: [0, 0, 684, 583], background-color:red }},
+		{#mediabucket: {frame: [0, 0, 684, 583] }},
 		{if: =portrait, then: {
             #mediabucket_container:	{frame: [10, 20, 684, 583], padding: [5, 60, 5, 15]}
         }, else: {

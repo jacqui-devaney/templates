@@ -93,7 +93,7 @@
 		<template 
 			name="SECTION-3story-G-mirror_template.xml" 
 			section="MARKETPLACE" 
-			title="TEST 3 story - G photo mirror"
+			title="3 story - G photo mirror"
 			min="5" 
 			deco="true"
 			usage="front" 
@@ -101,7 +101,7 @@
 		<template 
 			name="SECTION-4story-smallG-deco-mirror_template.xml" 
 			section="MARKETPLACE" 
-			title="TEST 4 story - small G Media liondoor - mirror"
+			title="4 story - small G Media liondoor - mirror"
 			min="6" 
 			deco="true" 
 			usage="front" 
@@ -109,7 +109,7 @@
 		<template 
 			name="SECTION-4story-smallG-top-mirror_template.xml" 
 			section="MARKETPLACE" 
-			title="TEST 4 story - G photo - mirror"
+			title="4 story - G photo - mirror"
 			min="6" 
 			usage="front" 
 		/>
@@ -203,7 +203,7 @@
 		<template 
 			name="SECTION-3story-G-mirror_template.xml" 
 			section="NEW_YORK" 
-			title="TEST 3 story - G photo mirror"
+			title="3 story - G photo mirror"
 			min="5" 
 			deco="true"
 			usage="front" 
@@ -211,7 +211,7 @@
 		<template 
 			name="SECTION-4story-smallG-deco-mirror_template.xml" 
 			section="NEW_YORK" 
-			title="TEST 4 story - small G Media liondoor - mirror"
+			title="4 story - small G Media liondoor - mirror"
 			min="6" 
 			deco="true" 
 			usage="front" 
@@ -219,7 +219,7 @@
 		<template 
 			name="SECTION-4story-smallG-top-mirror_template.xml" 
 			section="NEW_YORK" 
-			title="TEST 4 story - G photo - mirror"
+			title="4 story - G photo - mirror"
 			min="6" 
 			usage="front" 
 		/>
@@ -284,7 +284,7 @@
 		<template 
 			name="SECTION-4story-smallG-top-mirror_template.xml" 
 			section="PERSONAL_JOURNAL" 
-			title="TEST 4 story - G photo - mirror"
+			title="4 story - G photo - mirror"
 			min="6" 
 			usage="front" 
 		/>
@@ -370,7 +370,7 @@
 		<template 
 			name="SECTION-3story-G-mirror_template.xml" 
 			section="SPECIAL_REPORT" 
-			title="TEST 3 story - G photo mirror"
+			title="3 story - G photo mirror"
 			min="5" 
 			deco="true"
 			usage="front" 
@@ -378,7 +378,7 @@
 		<template 
 			name="SECTION-4story-smallG-deco-mirror_template.xml" 
 			section="SPECIAL_REPORT" 
-			title="TEST 4 story - small G Media liondoor - mirror"
+			title="4 story - small G Media liondoor - mirror"
 			min="6" 
 			deco="true" 
 			usage="front" 
@@ -386,7 +386,7 @@
 		<template 
 			name="SECTION-4story-smallG-top-mirror_template.xml" 
 			section="SPECIAL_REPORT" 
-			title="TEST 4 story - G photo - mirror"
+			title="4 story - G photo - mirror"
 			min="6" 
 			usage="front" 
 		/>
@@ -667,12 +667,12 @@
 		<article pages="ARTICLE-pages.xml"/>
 		<article pages="ARTICLE-pages-cio.xml" section="CIO" />
 		<article pages="ARTICLE-pages-deloitte.xml" type="Deloitte Cio Blog" />
+		<article pages="ARTICLE-pages-deloitte.xml" type="Deloitte Cio Blog Video"/>
 		<article pages="ARTICLE-pages-hots.xml" type="Heard on the Street" />
 		<article pages="ARTICLE-pages-hots.xml" type="Overheard"/>
 		<article pages="ARTICLE-pages-hots.xml" type="Headrd on the Street Other"/>
 		<article pages="ARTICLE-pages-letters.xml" type="Letters"/>
 		<article pages="ARTICLE-pages-off-duty.xml" type="At Play"/>
-		<article pages="ARTICLE-pages-off-duty.xml" type="Half Full"/>
 		<article pages="ARTICLE-pages-off-duty.xml" type="Mobile Special"/>
 	</article-page-plans>
 	

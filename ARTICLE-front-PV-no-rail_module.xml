@@ -1,44 +1,34 @@
-<jpml id="ARTICLE-front_module">
+<jpml id="ARTICLE-front-PV-no-rail_module">
 	<style src="GLOBAL_MODULES-stylesheet.ejs" />
 	<style src="GLOBAL-stylesheet.ejs" />
 	<style>{
 		$join: [
-		{#header_top: { if: =portrait, then: { padding:[580, 0, 0, 10]}, else: { padding:[40, 0, 0, 690]}}},
+		{#header_top: { if: =portrait, then: { padding:[660, 0, 0, 7]}, else: { padding:[35, 0, 0, 740]}}},
 		{#body_container: { 
-			padding: [4, 5, 0, 10],
+			padding:{if: =portrait, then: [4, 15, 0, 7], else: [4, 15, 0, 22]},
             column-count:{if: =portrait, then:{$divide: [=view.width, {$multiply:[260, =scale.dpi]}]}, else: 1},
-            column-gutter: 20,
+            column-gutter: 30,
 			column-height:balance,
 			flow: article_body
         }},
-		{#mediabucket: {frame: [0, 0, 684, 583] }},
+		{#mediabucket: {frame: [0, 0, 720, 600] }},
 		{if: =portrait, then: {
-            #mediabucket_container:	{frame: [10, 20, 684, 583], padding: [5, 60, 5, 15]}
+            #mediabucket_container:	{frame: [15, 40, 718, 600]}
         }, else: {
-        	#mediabucket_container:	{ frame: [0, 40, 684, 583], padding: [0, 10, 0, 0]}
+        	#mediabucket_container:	{ frame: [0, 34, 718, 600]}
         }},
     	
     	{.this_close_button: {
-		background-image: { $switch: [
-			{ if: =app.language, equals: en, then: url(close.png) },
-			{ if: =app.language, equals: de, then: url(close_de.png) }
-		] },
-		width: { $switch: [
-			{ if: =app.language, equals: en, then: 60 },
-			{ if: =app.language, equals: de, then: 73 }
-		] },
+		background-image:url(close.png),
+		width: 60,
 		height:29,
-		left:0,
-		bottom:0
+		right:0
 		}},
 		
 		{#this_close_button_box: {
-		top:-17,
-		right: -14,
-		width:{ $switch: [
-			{ if: =app.language, equals: en, then: 70 },
-			{ if: =app.language, equals: de, then: 85 }
-		] },
+		top:0,
+		right: 0,
+		width:70,
 		height:40
 		}}
 

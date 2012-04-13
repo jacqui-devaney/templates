@@ -1,9 +1,9 @@
-<jpml id="ARTICLE-front_template">
+<jpml id="ARTICLE-front-PV-no-rail_template">
     <style>{
         if: =portrait, then: {
-            #view: { frame: [10, 10, 750, 890]}
+            #view: { frame: [10, 10, 748, 880]}
         }, else: {
-            #view : { frame: [10, 10, 990, 630] }        
+            #view : { frame: [10, 6, 1000, 624] }        
         }
     }</style>
 

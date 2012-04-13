@@ -2,7 +2,7 @@
 
     <!-- This template will always be used to render the front page -->
 	<page template="ARTICLE-front-PV-no-rail_template.xml" type="prefix">
-		<link id="view" module="ARTICLE-front-off-duty_module.xml"/>
+		<link id="view" module="ARTICLE-front-PV-no-rail_module.xml"/>
 	</page>
 	
     <!-- These pages will repeat as needed, hence the "repeat" type -->

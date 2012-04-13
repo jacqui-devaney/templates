@@ -15,18 +15,6 @@
 			layout-grid-line-offset: {$multiply: [24, =view.zoomlevel]}
 			
         }},
-		{.close_button: {
-			background-image: { $switch: [
-				{ if: =app.language, equals: en, then: url(close.png) },
-				{ if: =app.language, equals: de, then: url(close_de.png) }
-			] },
-			background-position:top-right,
-			width: { $switch: [
-				{ if: =app.language, equals: en, then: 60 },
-				{ if: =app.language, equals: de, then: 73 }
-			] },
-			height:30
-		}},
 		{#mediabucket: {
 			width:297,
 			height:218,
@@ -54,7 +42,7 @@
 		]
     }</style>
 	<box id="close_button_box">
-		<box class="close_button" embed="close"/>
+		<p id="close_button_p"><mark class="close" embed="close"></mark></p>
 	</box>
 	<box id="continues_label">
 		<p><mark id="continues" /></p>

@@ -3,19 +3,6 @@
 	<style src="GLOBAL-stylesheet.ejs" />
 	<style>{
 		$join: [
-		{.close_button: {
-			background-image: { $switch: [
-				{ if: =app.language, equals: en, then: url(close.png) },
-				{ if: =app.language, equals: de, then: url(close_de.png) }
-			] },
-			background-position:top-right,
-			width: { $switch: [
-				{ if: =app.language, equals: en, then: 60 },
-				{ if: =app.language, equals: de, then: 73 }
-			] },
-			height:30
-		}},
-
 		{#body_container: { 
             padding: [10, 20, 0, 20],
 			column-count: {$divide: [=view.width, {$multiply:[260, =scale.dpi]}]},
@@ -59,7 +46,7 @@
 		]
     }</style>
 	<box id="close_button_box">
-		<box class="close_button" embed="close"/>
+		<p id="close_button_p"><mark class="close" embed="close"></mark></p>
 	</box>
 	<panel id="body_container">
         <box id="continued_label">

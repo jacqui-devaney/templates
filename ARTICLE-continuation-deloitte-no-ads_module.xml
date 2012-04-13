@@ -16,18 +16,6 @@
 			text-align:left,
 			padding:[0, 0, 0, 15]
 		}},
-		{.close_button: {
-		background-image: { $switch: [
-			{ if: =app.language, equals: en, then: url(close.png) },
-			{ if: =app.language, equals: de, then: url(close_de.png) }
-		] },
-		background-position:top-right,
-		width: { $switch: [
-			{ if: =app.language, equals: en, then: 60 },
-			{ if: =app.language, equals: de, then: 73 }
-		] },
-		height:29
-		}},
 		{#body_continuation: {
 			content: from-flow(article_body),
 			flow: article_body
@@ -35,7 +23,18 @@
 		{.body-bug: {
 			display: none
 		}},
-
+		{#deloitte_close_wrap: {
+			top:0,
+			right:0,
+			padding:[5, 0, 0, 0],
+			width:60
+		}},
+		{#close_button_box: {
+			top:inherit,
+			right:inherit,
+			left:0,
+			bottom:0
+		}},
 		{#body_container: { 
 			padding: [10, 20, 0, 20],
 			column-count: {$divide: [=view.width, {$multiply:[260, =scale.dpi]}]},
@@ -68,8 +67,10 @@
 		]
     }</style>
 	<box id="deloitte_article_header">
-		<box id="close_button_box">
-			<box class="close_button" embed="close"/>
+		<box id="deloitte_close_wrap">
+			<box id="close_button_box">
+				<p id="close_button_p"><mark class="close" embed="close"></mark></p>
+			</box>
 		</box>
 		<panel class="deloitte_article">
 			<panel class="deloitte" />

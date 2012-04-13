@@ -32,6 +32,18 @@
 		{.body-bug: {
 			display: none
 		}},
+		{#deloitte_close_wrap: {
+			top:0,
+			right:0,
+			padding:[5, 0, 0, 0],
+			width:60
+		}},
+		{#close_button_box: {
+			top:inherit,
+			right:inherit,
+			left:0,
+			bottom:0
+		}},
 		
 		{#mediabucket: {
 			width:297,
@@ -60,8 +72,10 @@
 		]
     }</style>
 	<panel id="deloitte_article_header">
-		<box id="close_button_box">
-			<box class="close_button" embed="close"/>
+		<box id="deloitte_close_wrap">
+			<box id="close_button_box">
+				<p id="close_button_p"><mark class="close" embed="close"></mark></p>
+			</box>
 		</box>
 		<panel class="deloitte_article">
 			<panel class="deloitte" />

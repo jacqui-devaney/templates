@@ -42,7 +42,7 @@
 		]
     }</style>
 	<box id="close_button_box">
-		<p id="close_button_p"><mark class="close" embed="close"></mark></p>
+		<p id="close_button_p" embed="close"><mark class="close"></mark></p>
 	</box>
 	<box id="continues_label">
 		<p><mark id="continues" /></p>

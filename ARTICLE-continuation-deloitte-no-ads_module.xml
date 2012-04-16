@@ -45,6 +45,18 @@
 			border-width:[1, 0, 0, 0],
 			border-color:#e7e7e7
         }},
+		{#mediabucket: {
+			width:297,
+			height:218,
+			anchor-x:center,
+			anchor-y:top
+		}},
+		{if: =portrait, then: {
+			#mediabucket_container:	{ frame: [379, 0, 350, 205]  }
+			
+        }, else: {
+			#mediabucket_container:	{ frame: [676, 0, 310, 205]  }
+		}},
 		{#deloitte_legal:{
 			padding:[0, 0, 20, 20],
 			anchor-y:bottom,
@@ -82,6 +94,9 @@
 	<panel id="body_container">
         <box id="continued_label">
 			<p><mark id="continued" /></p>
+		</box>
+		<box id="mediabucket_container">
+			<box id="mediabucket" embed="mediabucket" />
 		</box>
 		<panel class="deloitte_article_body" id="body_continuation" embed="body"/>
 	    

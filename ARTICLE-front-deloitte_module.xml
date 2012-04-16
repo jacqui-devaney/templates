@@ -74,7 +74,7 @@
 	<panel id="deloitte_article_header">
 		<box id="deloitte_close_wrap">
 			<box id="close_button_box">
-				<p id="close_button_p"><mark class="close" embed="close"></mark></p>
+				<p id="close_button_p" embed="close"><mark class="close"></mark></p>
 			</box>
 		</box>
 		<panel class="deloitte_article">

@@ -259,6 +259,13 @@
 		
 		<!-- THE JOURNAL REPORT -->
 		<template 
+			name="SECTION-1story-P_template.xml" 
+			title="P photo" 
+			section="THE_JOURNAL_REPORT" 
+			min="3" 
+			usage="front" 
+		/>
+		<template 
 			name="SECTION-1story-PV-white_template.xml" 
 			title="PV (white highlights)" 
 			section="THE_JOURNAL_REPORT" 

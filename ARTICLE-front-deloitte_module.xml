@@ -36,7 +36,7 @@
 			top:0,
 			right:0,
 			padding:[5, 0, 0, 0],
-			width:60
+			width:70
 		}},
 		{#close_button_box: {
 			top:inherit,
@@ -46,16 +46,16 @@
 		}},
 		
 		{#mediabucket: {
-			width:297,
-			height:218,
+			width:448,
+			height:321,
 			anchor-x:center,
 			anchor-y:top
 		}},
 		{if: =portrait, then: {
-			#mediabucket_container:	{ frame: [379, 0, 350, 205]  }
+			#mediabucket_container:	{ frame: [248, 0, 448, 331],padding:[0, 0, 0, 32]  }
 			
         }, else: {
-			#mediabucket_container:	{ frame: [676, 0, 310, 205]  }
+			#mediabucket_container:	{ frame: [508, 0, 448, 331], padding:[0, 0, 0, 32] }
 		}},
 		{#filler: {
 			position: relative,
@@ -73,8 +73,8 @@
     }</style>
 	<panel id="deloitte_article_header">
 		<box id="deloitte_close_wrap">
-			<box id="close_button_box">
-				<p id="close_button_p" embed="close"><mark class="close"></mark></p>
+			<box id="close_button_box" embed="close">
+				<p id="close_button_p"><mark class="close"></mark></p>
 			</box>
 		</box>
 		<panel class="deloitte_article">

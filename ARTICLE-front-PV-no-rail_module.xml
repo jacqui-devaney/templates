@@ -37,8 +37,8 @@
 
 		]
     }</style>
-	<box id="this_close_button_box">
-		<p id="this_close_button_p" embed="close">Close</p>
+	<box id="this_close_button_box" embed="close">
+		<p id="this_close_button_p">Close</p>
 	</box>
 	<box id="mediabucket_container">
 		<box id="mediabucket" embed="mediabucket"></box>

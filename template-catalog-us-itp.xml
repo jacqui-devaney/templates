@@ -1114,7 +1114,7 @@
 			name="CONTINUATION-fancy-8_template.xml" 
 			title="8 stories - smallG liondoor"
 			min="8" 
-			section="FRONT_SECTION,OFF_DUTY" 
+			section="FRONT_SECTION,OFF_DUTY,WSJ_MAGAZINE" 
 			usage="continuation" 
 			deco="true" 
 			page="2" 
@@ -1281,10 +1281,7 @@
 		<article pages="ARTICLE-pages-hots.xml" type="Heard on the Street Other"/>
 		<article pages="ARTICLE-pages-hots.xml" type="Overheard"/>
 		<article pages="ARTICLE-pages-letters.xml" type="Letters"/>
-		<article pages="ARTICLE-pages-off-duty.xml" type="At Play"/>
 		<article pages="ARTICLE-pages-off-duty.xml" type="Mobile Special"/>
-		<article pages="ARTICLE-pages-PV-no-rail.xml" section="NEW_YORK"/>
-		<article pages="ARTICLE-pages-book-review.xml"/>
 	</article-page-plans>
 	
 	<display-properties>

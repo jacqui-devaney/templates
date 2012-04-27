@@ -875,13 +875,13 @@
 				<string>Mobile App Blog</string>
 				<string>Tech Journal</string>
 				<string>Boss Talk</string>
-				<string>Technology</string>
+				<string>CFO Journal</string>
 				<string>Law</string>
+				<string>Technology</string>
 				<string>Asia Technology</string>
 				<string>Europe Technology</string>
 				<string>Digits</string>
 				<string>Telecommunications</string>
-				<string>CFO Journal</string>
 				<string>Autos</string>
 				<string>Earnings</string>
 				<string>Corporate Watch</string>
@@ -892,10 +892,10 @@
 				<string>Mobile Tablet Highlight2B</string>
 				<string>Executive Education</string>
 				<string>Management</string>
+				<string>Small Business</string>
 				<string>Media &amp;amp; Marketing</string>
 				<string>Advertising</string>
 				<string>Theory</string>
-				<string>Small Business</string>
 				<string>How I Built It</string>
 				<string>Careers</string>
 			</array>
@@ -913,13 +913,13 @@
 				<string>Mobile App Blog</string>
 				<string>Tech Journal</string>
 				<string>Boss Talk</string>
-				<string>Technology</string>
+				<string>CFO Journal</string>
 				<string>Law</string>
+				<string>Technology</string>
 				<string>Asia Technology</string>
 				<string>Europe Technology</string>
 				<string>Digits</string>
 				<string>Telecommunications</string>
-				<string>CFO Journal</string>
 				<string>Autos</string>
 				<string>Earnings</string>
 				<string>Corporate Watch</string>
@@ -951,13 +951,13 @@
 				<string>Mobile App Blog</string>
 				<string>Tech Journal</string>
 				<string>Boss Talk</string>
-				<string>Technology</string>
+				<string>CFO Journal</string>
 				<string>Law</string>
+				<string>Technology</string>
 				<string>Asia Technology</string>
 				<string>Europe Technology</string>
 				<string>Digits</string>
 				<string>Telecommunications</string>
-				<string>CFO Journal</string>
 				<string>Autos</string>
 				<string>Earnings</string>
 				<string>Corporate Watch</string>
@@ -989,13 +989,13 @@
 				<string>Mobile App Blog</string>
 				<string>Tech Journal</string>
 				<string>Boss Talk</string>
-				<string>Technology</string>
+				<string>CFO Journal</string>
 				<string>Law</string>
+				<string>Technology</string>
 				<string>Asia Technology</string>
 				<string>Europe Technology</string>
 				<string>Digits</string>
 				<string>Telecommunications</string>
-				<string>CFO Journal</string>
 				<string>Autos</string>
 				<string>Earnings</string>
 				<string>Corporate Watch</string>
@@ -1031,13 +1031,13 @@
 				<string>Mobile App Blog</string>
 				<string>Tech Journal</string>
 				<string>Boss Talk</string>
-				<string>Technology</string>
+				<string>CFO Journal</string>
 				<string>Law</string>
+				<string>Technology</string>
 				<string>Asia Technology</string>
 				<string>Europe Technology</string>
 				<string>Digits</string>
 				<string>Telecommunications</string>
-				<string>CFO Journal</string>
 				<string>Autos</string>
 				<string>Earnings</string>
 				<string>Corporate Watch</string>
@@ -1075,13 +1075,13 @@
 				<string>Mobile App Blog</string>
 				<string>Tech Journal</string>
 				<string>Boss Talk</string>
-				<string>Technology</string>
+				<string>CFO Journal</string>
 				<string>Law</string>
+				<string>Technology</string>
 				<string>Asia Technology</string>
 				<string>Europe Technology</string>
 				<string>Digits</string>
 				<string>Telecommunications</string>
-				<string>CFO Journal</string>
 				<string>Autos</string>
 				<string>Earnings</string>
 				<string>Corporate Watch</string>
@@ -1113,13 +1113,13 @@
 				<string>Mobile App Blog</string>
 				<string>Tech Journal</string>
 				<string>Boss Talk</string>
-				<string>Technology</string>
+				<string>CFO Journal</string>
 				<string>Law</string>
+				<string>Technology</string>
 				<string>Asia Technology</string>
 				<string>Europe Technology</string>
 				<string>Digits</string>
 				<string>Telecommunications</string>
-				<string>CFO Journal</string>
 				<string>Autos</string>
 				<string>Earnings</string>
 				<string>Corporate Watch</string>
@@ -1151,13 +1151,13 @@
 				<string>Mobile App Blog</string>
 				<string>Tech Journal</string>
 				<string>Boss Talk</string>
-				<string>Technology</string>
+				<string>CFO Journal</string>
 				<string>Law</string>
+				<string>Technology</string>
 				<string>Asia Technology</string>
 				<string>Europe Technology</string>
 				<string>Digits</string>
 				<string>Telecommunications</string>
-				<string>CFO Journal</string>
 				<string>Autos</string>
 				<string>Earnings</string>
 				<string>Corporate Watch</string>
@@ -3651,6 +3651,24 @@
 	</dict>
 	<key>WSJ_MAGAZINE</key>
 	<dict>
+		<key>CONTINUATION-fancy-8_template</key>
+		<dict>
+			<key>deco</key>
+			<array>
+				<string>Deco Summary Liondoor MagCont1</string>
+			</array>
+		</dict>
+		<key>CONTINUATION-fancy-smallG-OV-6_template</key>
+		<dict>
+			<key>deco</key>
+			<array>
+				<string>Deco Summary Liondoor OffDuty-Cont1-SmallG_OV-G</string>
+			</array>
+			<key>deco2</key>
+			<array>
+				<string>Deco Summary Liondoor OffDuty-Cont1-SmallG_OV-OV</string>
+			</array>
+		</dict>
 		<key>CONTINUATION-fancy-OZ_template</key>
 		<dict>
 			<key>deco</key>

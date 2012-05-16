@@ -1,22 +1,22 @@
 <jpml id="IMAGE-only_module">
 	<style>
 		{
-		$join: [{image:{
-			options: {
-				$switch: [
-					{ if: =options.TH_image, then: {match: { width:800, height:762 } } },
-					{ if: =options.TH-land_image, then: {match: { width:960, height:597 } } },
-					{ if: =options.FULL-land_image, then: {match: { width:1024, height:620 } } },
-					{ if: =options.FULL-Wland_image, then: {match: { width:1280, height:597 } } },
-					{ if: =options.FULL-port_image, then: {match: { width:768, height:876 } } },
-					{ if: =options.FULL-Wport_image, then: {match: { width:800, height:1077 } } }
-				]
-			}
-            
-			
-			
-		}}]
-		}
+		$join: [
+			{image:{
+				options: {
+					$switch: [
+						{ if: =options.TH_image, then: {match: { width:800, height:762 } } },
+						{ if: =options.TH-land_image, then: {match: { width:960, height:597 } } },
+						{ if: =options.FULL-land_image, then: {match: { width:1024, height:620 } } },
+						{ if: =options.FULL-Wland_image, then: {match: { width:1280, height:597 } } },
+						{ if: =options.FULL-port_image, then: {match: { width:768, height:876 } } },
+						{ if: =options.FULL-Wport_image, then: {match: { width:800, height:1077 } } }
+					]
+				}
+			}},
+			{padding:[10]}
+		
+		]}
 	</style>
 	<image embed="summary-image" />
 </jpml>

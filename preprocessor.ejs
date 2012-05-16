@@ -34,19 +34,22 @@
 			scale: {
 				dpi: { $divide: [=device.dpi, 132] },
 				
-				pagex: {
+				pagex: { if: =view.width, more-than: 480, then: {
 					if: =view.width, 
 					less-than: =view.height,
 					then: { $divide: [=view.width, 768] },
 					else: { $divide: [=view.width, 1024] }
-				},	
+				}, else: 1},	
 						
-				pagey: {
+				pagey: { if: =view.width, more-than: 480, then: {
 					if: =view.width, 
 					less-than: =view.height,
 					then: { $divide: [=view.height, 876] },
 					else: { $divide: [=view.height, 620] }
-				},
+				}, else: 1},
+
+				phone:  { if: =view.width, at-most: 480 },
+				tablet: { if: =view.width, more-than: 480 }, 
 
 				small: { if: =device.size, less-than: 8.8 },
 				large: { if: =device.size, more-than: 8.8 },

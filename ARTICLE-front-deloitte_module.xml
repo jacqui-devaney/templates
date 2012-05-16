@@ -46,16 +46,16 @@
 		}},
 		
 		{#mediabucket: {
-			width:482,
-			height:361,
+			width:495,
+			height:351,
 			anchor-x:center,
 			anchor-y:top
 		}},
 		{if: =portrait, then: {
-			#mediabucket_container:	{ frame: [214, 0, 482, 371],padding:[0, 0, 0, 32]  }
+			#mediabucket_container:	{ frame: [204, 0, 495, 361],padding:[0, 0, 0, 32]  }
 			
         }, else: {
-			#mediabucket_container:	{ frame: [474, 0, 482, 371], padding:[0, 0, 0, 32] }
+			#mediabucket_container:	{ frame: [464, 0, 495, 361], padding:[0, 0, 0, 32] }
 		}},
 		{#filler: {
 			position: relative,

@@ -322,6 +322,14 @@
 		<!-- END WEEKEND JOURNAL -->
 
 		<!-- SPECIAL REPORT -->
+		<template 
+			name="SECTION-4story-D-C_template.xml"
+			section="SPECIAL_REPORT" 
+			title="4 story plain"
+			min="6" 
+			deco="true" 
+			usage="front" 
+		/>
 		
 		<template 
 			name="SECTION-3story-G-deco-C_template.xml"
@@ -455,6 +463,27 @@
 		/>
 
 		<!-- END  CIO-->
+		
+		<!-- CFO -->
+		<template 
+			name="SECTION-CIO_template.xml" 
+			title="CFO Front" 
+			section="CFO" 
+			min="10" 
+			usage="front" 
+			deco="true"
+		/>		
+		<template 
+			name="CONTINUATION-CIO_template.xml" 
+			min="18" 
+			title="CFO Continuation" 
+			section="CFO" 
+			usage="continuation" 
+			page="2" 
+			deco="true"
+		/>
+
+		<!-- END  CFO-->
 		
 		
 		<!-- FANCY CONTINUATION -->
@@ -666,6 +695,7 @@
 	<article-page-plans>
 		<article pages="ARTICLE-pages.xml"/>
 		<article pages="ARTICLE-pages-cio.xml" section="CIO" />
+		<article pages="ARTICLE-pages-cio.xml" section="CFO" />
 		<article pages="ARTICLE-pages-deloitte.xml" type="Deloitte Cio Blog" />
 		<article pages="ARTICLE-pages-deloitte.xml" type="Deloitte Cio Blog Video"/>
 		<article pages="ARTICLE-pages-hots.xml" type="Heard on the Street" />

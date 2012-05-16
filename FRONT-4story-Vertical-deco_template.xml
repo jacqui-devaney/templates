@@ -17,10 +17,11 @@
 			},
 			#deco:	{ 
 						frame: {$switch: [
-							{if: =widescreen, then: [486, 28, 280, 485]},
+							{if-all: [=widescreen, =scale.large], then: [486, 28, 280, 485]},
+							{if: =scale.small, then: [486, 28, 280, 542]},
 							{if: =scale.large, then: [486, 26, 280, 558]}
 						]},
-						options:{normal_headline:true, no_border:true, no_indent:true, PT_image:true, vertical_deco:true, no_caption:{if: =scale.small, then:true, else:inherit}} 
+						options:{normal_headline:true, no_border:true, no_indent:true, PT_image:true, vertical_deco:true} 
 			},
 			#b2:	{ 
 						frame: {$switch: [
@@ -38,7 +39,8 @@
 			},
 			#b3:	{ 
 						frame: {$switch: [
-							{if: =widescreen, then: [486, 516, 280, 360]},
+							{if-all: [=widescreen, =scale.large], then: [486, 516, 280, 360]},
+							{if: =scale.small, then: [486, 573, 280, 303]},
 							{if: =scale.large, then: [486, 583, 280, 295]}
 						]},
 						options:{small_headline:true, bottom:true, no_indent:true} 

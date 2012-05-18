@@ -1,24 +1,50 @@
 <jpml id="CONTINUATION-generic-5_template">
-	<style src="CONTINUATION-stylesheet.ejs" /> 
+	<style src="CONTINUATION-stylesheet.ejs" />
 	<style src="GLOBAL-stylesheet.ejs" />
+	<style src="PHONE-stylesheet.ejs" />
 	<style>{
-        if: =portrait, then: {
-            #b1 : { frame: [0, 0, 256, 874] },
-            #b2 : { frame: [256, 0, 256, 436], options: {hide_strap: {if:=articles.b2.subsection, equals:=articles.b1.subsection}} },
-            #b3 : { frame: [256, 437, 256, 436], options: {hide_strap: {if:=articles.b3.subsection, equals:=articles.b2.subsection}} },
-            #b4 : { frame: [512, 0, 256, 436], options: {hide_strap: {if:=articles.b4.subsection, equals:=articles.b3.subsection}} },
-            #b5 : { frame: [512, 437, 256, 436], options: {hide_strap: {if:=articles.b5.subsection, equals:=articles.b4.subsection}} }
-        }, else: {
-            #b1 : { frame: [0, 0, 256, 618] },
-            #b2 : { frame: [256, 0, 256, 618], options: {hide_strap: {if:=articles.b2.subsection, equals:=articles.b1.subsection}} },        
-            #b3 : { frame: [512, 0, 256, 618], options: {hide_strap: {if:=articles.b3.subsection, equals:=articles.b2.subsection}} },
-            #b4 : { frame: [768, 0, 256, 411], options: {hide_strap: {if:=articles.b4.subsection, equals:=articles.b3.subsection}} },
-            #b5 : { frame: [768, 412, 256, 204], options: {hide_strap: {if:=articles.b5.subsection, equals:=articles.b4.subsection}} }
-        }
+		#b2 : {options: {hide_strap: {if:=articles.b2.subsection, equals:=articles.b1.subsection}} },
+        #b3 : {options: {hide_strap: {if:=articles.b3.subsection, equals:=articles.b2.subsection}} },
+        #b4 : {options: {hide_strap: {if:=articles.b4.subsection, equals:=articles.b3.subsection}} },
+        #b5 : {options: {hide_strap: {if:=articles.b5.subsection, equals:=articles.b4.subsection}} }
+
+        
+	}</style>
+	<style>{
+		$switch: [
+			{if: =scale.phone, then: {
+		        #b2: {
+		                    height: {if:=articles.b2.subsection, equals:=articles.b1.subsection, then: 44} 
+		        },
+		        #b3: {
+		                    height: {if:=articles.b3.subsection, equals:=articles.b2.subsection, then: 44} 
+		        },
+		        #b4: {
+		                    height: {if:=articles.b4.subsection, equals:=articles.b3.subsection, then: 44} 
+		        },
+		        #b5: {
+		                    height: {if:=articles.b5.subsection, equals:=articles.b4.subsection, then: 44} 
+		        }
+	        }},
+	        {if: =portrait, then: {
+	            #b1 : { frame: [0, 0, 256, 874] },
+	            #b2 : { frame: [256, 0, 256, 874] },
+	            #b3 : { frame: [512, 0, 256, 436] },
+	            #b4 : { frame: [512, 437, 256, 436] },
+				#b5 : { frame: [512, 437, 256, 436]}
+	        }},
+			{if: =landscape, then: {
+	            #b1 : { frame: [0, 0, 256, 618] },
+	            #b2 : { frame: [256, 0, 256, 618] },        
+	            #b3 : { frame: [512, 0, 256, 618] },
+	            #b4 : { frame: [768, 0, 256, 618] },
+				#b5 : { frame: [768, 412, 256, 204] }
+	        }}
+		]
     }</style>
-    <box id="b1" embed="article" module="CONTINUATION-dynamic_module.xml" />    
-    <box id="b2" embed="article" module="CONTINUATION-dynamic_module.xml" />
-    <box id="b3" embed="article" module="CONTINUATION-dynamic_module.xml" />
-    <box id="b4" embed="article" module="CONTINUATION-dynamic_module.xml" />
-    <box id="b5" embed="article" module="CONTINUATION-dynamic_module.xml" />
+    <box id="b1" embed="article" class="maude unit_continuation_strap" module="CONTINUATION-dynamic_module.xml" />    
+    <box id="b2" embed="article" class="maude unit_continuation_strap" module="CONTINUATION-dynamic_module.xml" />
+    <box id="b3" embed="article" class="maude unit_continuation_strap" module="CONTINUATION-dynamic_module.xml" />
+    <box id="b4" embed="article" class="maude unit_continuation_strap" module="CONTINUATION-dynamic_module.xml" />
+    <box id="b5" embed="article" class="maude unit_continuation_strap" module="CONTINUATION-dynamic_module.xml" />
 </jpml>

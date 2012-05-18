@@ -15,29 +15,29 @@
         #b5: {
 					options: {hide_strap: {if:=articles.b5.subsection, equals:=articles.b4.subsection}} 
         },
-        #deco: {
-                    options: {if: =portrait, 
-                        then: {normal_headline:true, bottom_border:true},
-                        else: {normal_headline:true, bottom_border:true, F_image:{if: =widescreen, then:true, else:false}} 
-                    }
-        }
+		#deco: {options: { $switch: [
+				{if: =scale.phone, then: {bottom_headline:true, F_image:true, no_caption:true}},
+				{if: =portrait, then: {normal_headline:true, bottom_border:true}},
+				{if: =landscape, then: {normal_headline:true, bottom_border:true, F_image:{if: =widescreen, then:true, else:false}}}			
+			]}}
+
     }</style>
 	<style>{
     $switch: [ 
         {if: =scale.phone, then: {
-            #b2: {
-                        height: {if:=articles.b2.subsection, equals:=articles.b1.subsection, then: 100} 
-            },
-            #b3: {
-                        height: {if:=articles.b3.subsection, equals:=articles.b2.subsection, then: 100} 
-            },
-            #b4: {
-                        height: {if:=articles.b4.subsection, equals:=articles.b3.subsection, then: 100} 
-            },
-            #b5: {
-                        height: {if:=articles.b5.subsection, equals:=articles.b4.subsection, then: 100} 
-            }
-        }},
+	        #b2: {
+	                    height: {if:=articles.b2.subsection, equals:=articles.b1.subsection, then: 44} 
+	        },
+	        #b3: {
+	                    height: {if:=articles.b3.subsection, equals:=articles.b2.subsection, then: 44} 
+	        },
+	        #b4: {
+	                    height: {if:=articles.b4.subsection, equals:=articles.b3.subsection, then: 44} 
+	        },
+	        #b5: {
+	                    height: {if:=articles.b5.subsection, equals:=articles.b4.subsection, then: 44} 
+	        }
+       }},
         {if: =portrait, then: {
             #b1 : { 
 					frame: {$switch: [
@@ -85,12 +85,12 @@
 	        #deco : { frame: [521, 8, 491, 395] }
         }}
     ]}</style>
-    <box id="b1" class="mod 1us" embed="article" module="CONTINUATION-dynamic_module.xml" />    
-    <box id="b2" class="mod 1us" embed="article" module="CONTINUATION-dynamic_module.xml" />
-    <box id="b3" class="mod 1us" embed="article" module="CONTINUATION-dynamic_module.xml" />
-    <box id="b4" class="mod 1us" embed="article" module="CONTINUATION-dynamic_module.xml" />
-    <box id="b5" class="mod 1us" embed="article" module="CONTINUATION-dynamic_module.xml" />
-    <box id="deco" class="mod 3u" embed="article" module="DECO_module.xml" />
+    <box id="b1" class="maude unit_continuation_strap" embed="article" module="CONTINUATION-dynamic_module.xml" />    
+    <box id="b2" class="maude unit_continuation_strap" embed="article" module="CONTINUATION-dynamic_module.xml" />
+    <box id="b3" class="maude unit_continuation_strap" embed="article" module="CONTINUATION-dynamic_module.xml" />
+    <box id="b4" class="maude unit_continuation_strap" embed="article" module="CONTINUATION-dynamic_module.xml" />
+    <box id="b5" class="maude unit_continuation_strap" embed="article" module="CONTINUATION-dynamic_module.xml" />
+    <box id="deco" class="maude unit_7" embed="article" module="DECO_module.xml" />
 
 </jpml>
 

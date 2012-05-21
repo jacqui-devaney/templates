@@ -96,7 +96,8 @@
 					"us"] },
 					".",
 					{ $switch: [
-						{ if: =device.platform, equals: iOS, then: ipad },
+						{ if: =device.model, equals: iPad, then: ipad },
+						{ if: =device.model, equals: iPhone, then: iphone },
 						{ if: =device.platform, equals: Android, then: honeycomb },
 						"default"
 					] },

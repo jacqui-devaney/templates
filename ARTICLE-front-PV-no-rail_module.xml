@@ -3,7 +3,7 @@
 	<style src="GLOBAL-stylesheet.ejs" />
 	<style>{
 		$join: [
-		{#header_top: { if: =portrait, then: { padding:[660, 0, 0, 7]}, else: { padding:[35, 0, 0, 740]}}},
+		{#header_top: { if: =portrait, then: { padding:[640, 0, 0, 7]}, else: { padding:[35, 20, 0, 740]}}},
 		{#body_container: { 
 			padding:{if: =portrait, then: [4, 15, 0, 7], else: [4, 15, 0, 22]},
             column-count:{if: =portrait, then:{$divide: [=view.width, {$multiply:[260, =scale.dpi]}]}, else: 1},
@@ -11,13 +11,17 @@
 			column-height:balance,
 			flow: article_body
         }},
-		{#mediabucket: {frame: [0, 0, 720, 600] }},
 		{if: =portrait, then: {
-            #mediabucket_container:	{frame: [15, 40, 718, 600]}
+            #image_container:	{frame: [13, 40, 722, 584]}
         }, else: {
-        	#mediabucket_container:	{ frame: [0, 34, 718, 600]}
+        	#image_container:	{ frame: [0, 34, 722, 604]}
         }},
-    	
+    	{image: {
+			width:722,
+			height:584,
+			pixels-per-point-x:1,
+			pixels-per-point-y:1
+		}},
     	{#this_close_button_box: {
 	        border-image: url(close.png),
 	        border-slice: [6],
@@ -40,8 +44,8 @@
 	<box id="this_close_button_box" embed="close">
 		<p id="this_close_button_p">Close</p>
 	</box>
-	<box id="mediabucket_container">
-		<box id="mediabucket" embed="mediabucket"></box>
+	<box id="image_container">
+		<image embed="summary-image"/>
 	</box>
 	<panel id="header_top">
         <p class="offduty_article_headline"><span embed="headline"/><mark class="key"/></p>

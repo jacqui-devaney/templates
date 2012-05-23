@@ -20,6 +20,13 @@
 			font-name:DJ5RetinaCd-Medium,
 			font-size:18
 		},
+		#cio: {
+			display:{if: =page.section, equals: "CIO", then:inherit, else:none}
+		},
+		#cfo: {
+			display: {if: =page.section, equals: "CFO", then:inherit, else:none}
+		},
+		
         #b1 : { frame: [0, 0, 256, 203] },
         #b2 : { frame: [0, 204, 256, 203], options: {hide_strap:true }},
         #b3 : { frame: [0, 407, 256, 203], options: {hide_strap:true }},
@@ -120,7 +127,8 @@
 	<box id="deloitte_header">
 		<panel class="deloitte" />
 		<panel class="slug">
-			<p class="deloitte_slug" >Business-led, Technology-enabled:</p><p class="deloitte_slug" >Insight from Deloitte</p>
+			<p class="deloitte_slug" id="cio">Business-led, Technology-enabled:</p><p class="deloitte_slug" id="cio">Insight from Deloitte</p>
+			<p class="deloitte_slug" id="cfo">CFO insight and analysis written</p><p class="deloitte_slug" id="cfo"> and compiled by Deloitte</p>
 		</panel>
 	</box>
 	<box id="h5" embed="article" module="HIGHLIGHTS-CIO_module.xml" />

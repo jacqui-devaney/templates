@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<article-doc ads="ADS-ALLOWED" archive-storing="DO-NOT-ARCHIVE"
+    column="" copyright="Dow Jones &amp; Company, Inc."
+    date="2012-02-13 11:11" date-type="auto" display-name="[PUBLICATION]"
+    language="en-us" last-pub-date="2012-02-13 11:11" level="NORMAL"
+    major-revision-date="2012-02-13 11:11"
+	orig-pub-date="2011-08-02 14:04"
+    page="Mobile" product="WSJ.com"
+    publication="[PUBLICATION]"
+    revision-type="major"
+    section="Mobile" type="Deco Summary Liondoor Cfo Special 1" url="[THIRDPARTY_LINK]">
+    <meta-data>
+        <self-codes>
+        </self-codes>
+    </meta-data>
+    <summary id="TP">
+        <summary-header>
+            <nameloc id="TP">
+                <nmlist nametype="ENTITY"></nmlist>
+            </nameloc>
+        </summary-header>
+        <summary-body>
+            <headline>
+                <main-hed>[THIRDPARTY_HEADLINE]</main-hed>
+            </headline>
+            <p>
+                <link icon="none"
+                    linkend="TP" type="THIRDPARTY"></link>
+            </p>
+        </summary-body>
+    </summary>
+    <article>
+        <article-header>
+            <nameloc id="TP">
+                <nmlist nametype="ENTITY">[THIRDPARTY_LINK]</nmlist>
+            </nameloc>
+        </article-header>
+        <article-body>
+            <headline>
+                <main-hed>[THIRDPARTY_HEADLINE]</main-hed>
+            </headline>
+            <p>
+                <link icon="none"
+                    linkend="TP" type="THIRDPARTY"></link>
+            </p>
+        </article-body>
+    </article>
+</article-doc>

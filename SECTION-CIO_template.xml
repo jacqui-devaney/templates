@@ -60,6 +60,12 @@
 			frame: [0, 10, 384, 99]
 		
 		},
+		#cio: {
+			display:{if: =page.section, equals: "CIO", then:inherit, else:none}
+		},
+		#cfo: {
+			display: {if: =page.section, equals: "CFO", then:inherit, else:none}
+		},
 		#tech_header: {
 			frame: [449, 15, 251, 50],
 			border-width: [0, 0, 1, 0],
@@ -107,8 +113,13 @@
 		}
 	}</style>
 	<box id="cio_header">
-		<panel class="cio_report">
+		<panel class="cio_report" id="cio">
 			<p class="cio_head">CIO Report –</p>
+	        <p class="ahed_headline">Exclusive Reporting &amp; Analysis</p>
+	        <p id="stars"><mark class="ahed_stars" /></p>
+		</panel>
+		<panel class="cio_report" id="cfo">
+			<p class="cio_head">CFO Report –</p>
 	        <p class="ahed_headline">Exclusive Reporting &amp; Analysis</p>
 	        <p id="stars"><mark class="ahed_stars" /></p>
 		</panel>
@@ -118,7 +129,8 @@
 	<box id="b3" embed="article" module="FRONT-NO-IMAGE_module.xml" />
 	<box id="l1" />
 	<box id="tech_header">
-		<p class="tech_section">Latest Technology News</p>
+		<p class="tech_section" id="cio">Latest Technology News</p>
+		<p class="tech_section" id="cfo">Latest Finance News</p>
 		<p class="tagline">From WSJ and other top sources</p>
 	</box>
 	<box id="b5" embed="article" module="RIGHT-INSET-IMAGE_module.xml" />
@@ -129,7 +141,8 @@
 	<box id="deloitte_header">
 		<panel class="deloitte" />
 		<panel class="slug">
-			<p class="deloitte_slug" >Business-led, Technology-enabled:</p><p class="deloitte_slug" >Insight from Deloitte</p>
+			<p class="deloitte_slug" id="cio">Business-led, Technology-enabled:</p><p class="deloitte_slug" id="cio">Insight from Deloitte</p>
+			<p class="deloitte_slug" id="cfo">CFO insight and analysis written</p><p class="deloitte_slug" id="cfo"> and compiled by Deloitte</p>
 		</panel>
 	</box>
 	<box id="h5" embed="article" module="HIGHLIGHTS-CIO_module.xml" />

@@ -67,7 +67,14 @@
 			border-image:url(articleBackground.png),
 			border-width: [16, 0, 0, 0],
 			border-slice: [16, 0, 0, 0]
+		}},
+		{#cio: {
+			display:{if: =page.section, equals: "CIO", then:inherit, else:none}
+		}},
+		{#cfo: {
+			display: {if: =page.section, equals: "CFO", then:inherit, else:none}
 		}}
+		
 		
 		]
     }</style>
@@ -81,7 +88,8 @@
 			<panel class="deloitte" />
 		</panel>
 		<panel class="slug">
-			<p class="deloitte_slug" >Business-led, Technology-enabled: Insight from Deloitte</p>
+			<p class="deloitte_slug" id="cio">Business-led, Technology-enabled: Insight from Deloitte</p>
+			<p class="deloitte_slug" id="cfo">CFO insight and analysis written and compiled by Deloitte</p>
 		</panel>
 	</panel>
 	<box id="continues_label">

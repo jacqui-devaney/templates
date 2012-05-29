@@ -471,7 +471,7 @@
 			title="7 stories - 3 OV liondoor"
 			min="7" 
 			usage="continuation" 
-			section="WSJ_MAGAZINE" 
+			section="OFF_DUTY,WSJ_MAGAZINE" 
 			deco="true" 
 			page="2" 
 		/>
@@ -484,6 +484,16 @@
 			deco="true" 
 			page="3" 
 		/>
+		<template 
+			name="CONTINUATION-fancy-smallG-OV-6_template.xml" 
+			title="6 stories - smallG liondoor 1 OV liondoor"
+			min="6" 
+			usage="continuation" 
+			section="OFF_DUTY,WSJ_MAGAZINE" 
+			deco="true" 
+			page="2" 
+		/>
+		
 		<template 
 			name="CONTINUATION-fancy-8_template.xml" 
 			title="8 stories - smallG liondoor"
@@ -610,6 +620,8 @@
 		<article pages="ARTICLE-pages-hots.xml" type="Overheard"/>
 		<article pages="ARTICLE-pages-letters.xml" type="Letters" />
 		<article pages="ARTICLE-pages-off-duty.xml" type="Off Duty" />
+		<article pages="ARTICLE-pages-PV-no-rail.xml" type="Magazine - Open Secret"/>
+		<article pages="ARTICLE-pages-PV-no-rail.xml" type="Magazine - Partnership"/>
 	</article-page-plans>
 	
 	<display-properties>

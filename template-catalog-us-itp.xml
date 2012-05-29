@@ -1074,6 +1074,16 @@
 			page="2" 
 		/>
 		<template 
+			name="CONTINUATION-fancy-3OV-7_template.xml" 
+			title="7 stories - 3 OV deco"
+			min="7"
+			usage="continuation"
+			section="OFF_DUTY,WSJ_MAGAZINE" 
+			deco="true"
+			page="3"
+		/>
+		
+		<template 
 			name="CONTINUATION-fancy-smallG-OV-6_template.xml" 
 			title="6 stories - smallG liondoor 1 OV liondoor"
 			min="6" 
@@ -1081,6 +1091,15 @@
 			section="OFF_DUTY,WSJ_MAGAZINE" 
 			deco="true" 
 			page="3" 
+		/>
+		<template 
+			name="CONTINUATION-fancy-smallG-OV-6_template.xml" 
+			title="6 stories - smallG liondoor 1 OV liondoor"
+			min="6" 
+			usage="continuation" 
+			section="OFF_DUTY,WSJ_MAGAZINE" 
+			deco="true" 
+			page="2" 
 		/>
 
 		<template 
@@ -1282,9 +1301,9 @@
 		<article pages="ARTICLE-pages-hots.xml" type="Overheard"/>
 		<article pages="ARTICLE-pages-letters.xml" type="Letters"/>
 		<article pages="ARTICLE-pages-off-duty.xml" type="Mobile Special"/>
-		<article pages="ARTICLE-pages-off-duty.xml" type="Consider This"/>
-		<article pages="ARTICLE-pages-PV-no-rail.xml" section="NEW_YORK"/>
-		<article pages="ARTICLE-pages-die-welt.xml" type="Die Welt"/>
+		<article pages="ARTICLE-pages-off-duty.xml" type="Traveler's Tale"/>
+		<article pages="ARTICLE-pages-PV-no-rail.xml" type="Magazine - Open Secret"/>
+		<article pages="ARTICLE-pages-PV-no-rail.xml" type="Magazine - Partnership"/>
 	</article-page-plans>
 	
 	<display-properties>

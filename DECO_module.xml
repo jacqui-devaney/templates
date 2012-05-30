@@ -26,8 +26,9 @@
 					#wrapper: {
 						border-width: [1, 0, 0, 0],
 						border-color: #b1aca1,
-						padding: { if: =scale.small, then:[5, 0, 0, 0], else:[8, 0, 0, 0]}
-					}
+						padding: { if: =scale.small, then:[5, 0, 0, 0], else:[8, 0, 0, 0]},
+						background-color:#000
+}
 					}}
 			]},
 			{#deco_container: { 

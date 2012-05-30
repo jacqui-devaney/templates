@@ -19,6 +19,14 @@
 		/>
 		<template 
 			section="FRONT_SECTION" 
+			name="FRONT-4story-F-black-liondoor-2nd-story-C_template.xml" 
+			title="UPGRADE MESSAGE XAML ONLY"
+			min="4" 
+			deco="true" 
+			usage="front" 
+		/>
+		<template 
+			section="FRONT_SECTION" 
 			name="FRONT-4story-F-deco-top_template.xml" 
 			title="4 story - Top F liondoor"
 			min="4" 

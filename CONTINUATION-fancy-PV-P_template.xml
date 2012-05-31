@@ -3,54 +3,40 @@
 	<style src="GLOBAL-stylesheet.ejs" /> 
 	<style>{
         if: =portrait, then: {
+			#deco : { 
+				frame: {$switch: [
+					{if: =widescreen, then: [0, 0, 768, 620]},
+					{if: =scale.large, then: [0, 0, 768, 620]}
+				]},
+				options: {bottom_headline:true, bottom_border:true} 
+			},
             #b1 : { 
 					frame: {$switch: [
-						{if: =widescreen, then: [0, 0, 256, 349]},
-						{if: =scale.large, then: [0, 0, 256, 411]}
-					]}
+						{if: =widescreen, then: [0, 630, 256, 250]},
+						{if: =scale.large, then: [0, 630, 256, 250]}
+					]},
+					options: {hide_strap: true}
 			},
             #b2 : { 
 					frame: {$switch: [
-						{if: =widescreen, then: [0, 357, 256, 518]},
-						{if: =scale.large, then: [0, 419, 256, 456]}
+						{if: =widescreen, then: [260, 630, 256, 250]},
+						{if: =scale.large, then: [260, 630, 256, 250]}
 					]},
-					options: {hide_strap: {if:=articles.b2.subsection, equals:=articles.b1.subsection}} 
+					options: {hide_strap: true} 
 			},
             #b3 : { 
 					frame: {$switch: [
-						{if: =widescreen, then: [256, 357, 256, 518]},
-						{if: =scale.large, then: [256, 419, 256, 456]}
+						{if: =widescreen, then: [520, 630, 256, 250]},
+						{if: =scale.large, then: [520, 630, 256, 250]}
 					]},
-					options: {hide_strap: {if:=articles.b3.subsection, equals:=articles.b2.subsection}} 
-			},
-            #b4 : { 
-					frame: {$switch: [
-						{if: =widescreen, then: [512, 357, 256, 259]},
-						{if: =scale.large, then: [512, 419, 256, 230]}
-					]},
-					options: {hide_strap: {if:=articles.b4.subsection, equals:=articles.b3.subsection}} 
-			},
-            #b5 : { 
-					frame: {$switch: [
-						{if: =widescreen, then: [512, 616, 256, 259]},
-						{if: =scale.large, then: [512, 649, 256, 226]}
-					]},
-					options: {hide_strap: {if:=articles.b5.subsection, equals:=articles.b4.subsection}} 
-			},
-            #deco : { 
-						frame: {$switch: [
-							{if: =widescreen, then: [264, 8, 491, 345]},
-							{if: =scale.large, then: [264, 8, 491, 395]}
-						]},
-						options: {normal_headline:true, bottom_border:true} 
+					options: {hide_strap: true} 
 			}
+
         }, else: {
-	        #b1 : { frame: [0, 0, 256, 619] },
-	        #b2 : { frame: [256, 0, 256, 406], options: {hide_strap: {if:=articles.b2.subsection, equals:=articles.b1.subsection}} },
-	        #b3 : { frame: [256, 419, 256, 200], options: {hide_strap: {if:=articles.b3.subsection, equals:=articles.b2.subsection}} },
-	        #b4 : { frame: [519, 419, 256, 200], options: {hide_strap: {if:=articles.b4.subsection, equals:=articles.b3.subsection}} },
-	        #b5 : { frame: [775, 419, 256, 200], options: {hide_strap: {if:=articles.b5.subsection, equals:=articles.b4.subsection}} },
-	        #deco : { frame: [521, 8, 491, 395], options: {normal_headline:true, bottom_border:true, F_image:{if: =widescreen, then:true, else:false}} }
+	        #b1 : { frame: [770, 0, 256, 208], options: {hide_strap: true} },
+	        #b2 : { frame: [770, 205, 256, 208], options: {hide_strap: true} },
+	        #b3 : { frame: [770, 413, 256, 208], options: {hide_strap: true} },
+	        #deco : { frame: [0, 0, 768, 620], options: {bottom_headline:true, bottom_border:true, F_image:{if: =widescreen, then:true, else:false}} }
         }
     }</style>
     <box id="b1" embed="article" module="CONTINUATION-dynamic_module.xml" />    

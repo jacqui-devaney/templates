@@ -36,14 +36,12 @@
 	        #b1 : { frame: [770, 0, 256, 208], options: {hide_strap: true} },
 	        #b2 : { frame: [770, 205, 256, 208], options: {hide_strap: true} },
 	        #b3 : { frame: [770, 413, 256, 208], options: {hide_strap: true} },
-	        #deco : { frame: [0, 0, 768, 620], options: {bottom_headline:true, bottom_border:true, F_image:{if: =widescreen, then:true, else:false}} }
+	        #deco : { frame: [0, 0, 768, 620], options: {bottom_headline:true, bottom_border:true}
         }
     }</style>
     <box id="b1" embed="article" module="CONTINUATION-dynamic_module.xml" />    
     <box id="b2" embed="article" module="CONTINUATION-dynamic_module.xml" />
     <box id="b3" embed="article" module="CONTINUATION-dynamic_module.xml" />
-    <box id="b4" embed="article" module="CONTINUATION-dynamic_module.xml" />
-    <box id="b5" embed="article" module="CONTINUATION-dynamic_module.xml" />
     <box id="deco" embed="article" module="DECO_module.xml" />
 
 </jpml>

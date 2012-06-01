@@ -3,9 +3,6 @@
 	<style src="GLOBAL-stylesheet.ejs" />
 	<style>{
 		$join: [
-			{#bottom: {
-				anchor-y:bottom
-			}},
 			{ $switch: [
 				{ if: =options.no_border, then: {
 					#wrapper: {
@@ -26,8 +23,7 @@
 					#wrapper: {
 						border-width: [1, 0, 0, 0],
 						border-color: #b1aca1,
-						padding: { if: =scale.small, then:[5, 0, 0, 0], else:[8, 0, 0, 0]},
-						background-color:#000
+						padding: { if: =scale.small, then:[5, 0, 0, 0], else:[8, 0, 0, 0]}
 }
 					}}
 			]},
@@ -41,7 +37,8 @@
 						{ if: =options.F_image, then: {match: { width:571, height:226, min-height:226 } } },
 						{ if: =options.PT_image, then: {match: { width:264, height:455, min-height:455 } } },
 						{ if: =options.OV_image, then: {match: { width:239, height:340, min-height:340 } } },
-						{ if: =options.OZ_image, then: {match: { width:570, height:612, min-height:612 } } }
+						{ if: =options.OZ_image, then: {match: { width:570, height:612, min-height:612 } } },
+						{ if: =options.P_image, then: {match: { width:749, height:499, min-height:499 } } }
 
 					]
 				},
@@ -51,7 +48,9 @@
 				
 				
 			}},
-			
+			{#bottom: {
+				anchor-y:bottom
+			}},
 			{#content: { padding: [0, 8, 8, 8]}},
 			{.invisible: { display:none }},
 			{#deco_headline: { display: { if: =options.normal_headline, then:inherit }}},
@@ -80,6 +79,7 @@
 				<p id="deco_small_headline" class="invisible"><span embed="headline" /><mark class="key" /></p>			
 				<panel embed="body" class="deco_caption" />
 			</box>
+
 			<box id="deco_container" embed="deco-image">
 				<image embed="summary-image" />
 			</box>

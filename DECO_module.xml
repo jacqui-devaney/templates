@@ -49,7 +49,8 @@
 				
 			}},
 			{#bottom: {
-				anchor-y:bottom
+				anchor-y:bottom,
+				padding: [0, {if: =options.narrow_text, then:250, else:0}, 0, 0]
 			}},
 			{#content: { padding: [0, 8, 8, 8]}},
 			{.invisible: { display:none }},

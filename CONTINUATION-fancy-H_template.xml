@@ -17,8 +17,8 @@
         },
 		#deco: {options: { $switch: [
 				{if: =scale.phone, then: {bottom_headline:true, H_image:true, no_caption:true}},
-				{if: =portrait, then: {bottom_headline:true, bottom_border:true, H_image:true, H_deco:true}},
-				{if: =landscape, then: {bottom_headline:true, bottom_border:true, H_image:true, H_deco:true}}			
+				{if: =portrait, then: {bottom_headline:true, bottom_border:true, H_image:true, fake_deco:true}},
+				{if: =landscape, then: {bottom_headline:true, bottom_border:true, H_image:true, fake_deco:true}}			
 			]}}
 
     }</style>
@@ -42,40 +42,40 @@
             #b2 : { 
 					frame: {$switch: [
 						{if: =widescreen, then: [0, 0, 256, 518]},
-						{if: =scale.large, then: [0, 0, 220, 440]}
+						{if: =scale.large, then: [0, 0, 225, 450]}
 					]}
 			},
             #b3 : { 
 					frame: {$switch: [
 						{if: =widescreen, then: [0, 357, 256, 518]},
-						{if: =scale.large, then: [0, 453, 256, 425]}
+						{if: =scale.large, then: [0, 450, 225, 426]}
 					]}
 			},
             #b4 : { 
 					frame: {$switch: [
 						{if: =widescreen, then: [256, 357, 256, 518]},
-						{if: =scale.large, then: [256, 453, 256, 425]}
+						{if: =scale.large, then: [225, 450, 273, 426]}
 					]}
 			},
 			#b5 : { 
 					frame: {$switch: [
 						{if: =widescreen, then: [512, 357, 256, 518]},
-						{if: =scale.large, then: [512, 453, 256, 425]}
+						{if: =scale.large, then: [498, 450, 273, 426]}
 					]}
 			},
             #deco : { 
                     frame: {$switch: [
-                        {if: =widescreen, then: [264, 8, 491, 345]},
-                        {if: =scale.large, then: [221, 8, 542, 443]}
+                        {if: =widescreen, then: [265, 0, 491, 345]},
+                        {if: =scale.large, then: [225, 0, 545, 450]}
                     ]}
 			}
         }},
         {if: =landscape, then: {
-	        #b2 : { frame: [0, 0, 256, 615] },
-	        #b3 : { frame: [256, 0, 220, 615] },
-	        #b4 : { frame: [509, 419, 253, 200] },
-	        #b5 : { frame: [770, 419, 256, 200] },
-	        #deco : { frame: [475, 0, 543, 422] }
+	        #b2 : { frame: [0, 0, 238, 620] },
+	        #b3 : { frame: [238, 0, 238, 620] },
+	        #b4 : { frame: [475, 440, 275, 180] },
+	        #b5 : { frame: [750, 440, 275, 180] },
+	        #deco : { frame: [475, 0, 550, 445] }
         }}
     ]}</style>
     <box id="b1" class="maude unit_continuation_strap" embed="article" module="CONTINUATION-dynamic_module.xml" />    

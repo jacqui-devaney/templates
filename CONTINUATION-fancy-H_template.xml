@@ -16,9 +16,9 @@
 					options: {hide_strap: {if:=articles.b5.subsection, equals:=articles.b4.subsection}} 
         },
 		#deco: {options: { $switch: [
-				{if: =scale.phone, then: {bottom_headline:true, F_image:true, no_caption:true}},
-				{if: =portrait, then: {normal_headline:true, bottom_border:true}},
-				{if: =landscape, then: {normal_headline:true, bottom_border:true, F_image:{if: =widescreen, then:true, else:false}}}			
+				{if: =scale.phone, then: {bottom_headline:true, H_image:true, no_caption:true}},
+				{if: =portrait, then: {bottom_headline:true, bottom_border:true, H_image:true, H_deco:true}},
+				{if: =landscape, then: {bottom_headline:true, bottom_border:true, H_image:true, H_deco:true}}			
 			]}}
 
     }</style>
@@ -39,50 +39,43 @@
 	        }
        }},
         {if: =portrait, then: {
-            #b1 : { 
-					frame: {$switch: [
-						{if: =widescreen, then: [0, 0, 256, 349]},
-						{if: =scale.large, then: [0, 0, 256, 411]}
-					]}
-			},
             #b2 : { 
 					frame: {$switch: [
-						{if: =widescreen, then: [0, 357, 256, 518]},
-						{if: =scale.large, then: [0, 419, 256, 456]}
+						{if: =widescreen, then: [0, 0, 256, 518]},
+						{if: =scale.large, then: [0, 0, 220, 440]}
 					]}
 			},
             #b3 : { 
 					frame: {$switch: [
-						{if: =widescreen, then: [256, 357, 256, 518]},
-						{if: =scale.large, then: [256, 419, 256, 456]}
+						{if: =widescreen, then: [0, 357, 256, 518]},
+						{if: =scale.large, then: [0, 453, 256, 425]}
 					]}
 			},
             #b4 : { 
 					frame: {$switch: [
-						{if: =widescreen, then: [512, 357, 256, 259]},
-						{if: =scale.large, then: [512, 419, 256, 230]}
+						{if: =widescreen, then: [256, 357, 256, 518]},
+						{if: =scale.large, then: [256, 453, 256, 425]}
 					]}
 			},
-            #b5 : { 
+			#b5 : { 
 					frame: {$switch: [
-						{if: =widescreen, then: [512, 616, 256, 259]},
-						{if: =scale.large, then: [512, 649, 256, 226]}
+						{if: =widescreen, then: [512, 357, 256, 518]},
+						{if: =scale.large, then: [512, 453, 256, 425]}
 					]}
 			},
             #deco : { 
                     frame: {$switch: [
                         {if: =widescreen, then: [264, 8, 491, 345]},
-                        {if: =scale.large, then: [264, 8, 491, 395]}
+                        {if: =scale.large, then: [221, 8, 542, 443]}
                     ]}
 			}
         }},
         {if: =landscape, then: {
-	        #b1 : { frame: [0, 0, 256, 619] },
-	        #b2 : { frame: [256, 0, 256, 406] },
-	        #b3 : { frame: [256, 419, 256, 200] },
-	        #b4 : { frame: [519, 419, 256, 200] },
-	        #b5 : { frame: [775, 419, 256, 200] },
-	        #deco : { frame: [521, 8, 491, 395] }
+	        #b2 : { frame: [0, 0, 256, 615] },
+	        #b3 : { frame: [256, 0, 220, 615] },
+	        #b4 : { frame: [509, 419, 253, 200] },
+	        #b5 : { frame: [770, 419, 256, 200] },
+	        #deco : { frame: [475, 0, 543, 422] }
         }}
     ]}</style>
     <box id="b1" class="maude unit_continuation_strap" embed="article" module="CONTINUATION-dynamic_module.xml" />    

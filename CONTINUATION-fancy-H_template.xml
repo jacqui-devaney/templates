@@ -1,0 +1,96 @@
+<jpml id="CONTINUATION-fancy-H_template">
+	<style src="CONTINUATION-stylesheet.ejs" /> 
+	<style src="GLOBAL-stylesheet.ejs" /> 
+	<style src="PHONE-stylesheet.ejs" /> 
+    <style>{
+        #b2: {
+					options: {hide_strap: {if:=articles.b2.subsection, equals:=articles.b1.subsection}} 
+        },
+        #b3: {
+					options: {hide_strap: {if:=articles.b3.subsection, equals:=articles.b2.subsection}} 
+        },
+        #b4: {
+					options: {hide_strap: {if:=articles.b4.subsection, equals:=articles.b3.subsection}} 
+        },
+        #b5: {
+					options: {hide_strap: {if:=articles.b5.subsection, equals:=articles.b4.subsection}} 
+        },
+		#deco: {options: { $switch: [
+				{if: =scale.phone, then: {bottom_headline:true, F_image:true, no_caption:true}},
+				{if: =portrait, then: {normal_headline:true, bottom_border:true}},
+				{if: =landscape, then: {normal_headline:true, bottom_border:true, F_image:{if: =widescreen, then:true, else:false}}}			
+			]}}
+
+    }</style>
+	<style>{
+    $switch: [ 
+        {if: =scale.phone, then: {
+	        #b2: {
+	                    height: {if:=articles.b2.subsection, equals:=articles.b1.subsection, then: 44} 
+	        },
+	        #b3: {
+	                    height: {if:=articles.b3.subsection, equals:=articles.b2.subsection, then: 44} 
+	        },
+	        #b4: {
+	                    height: {if:=articles.b4.subsection, equals:=articles.b3.subsection, then: 44} 
+	        },
+	        #b5: {
+	                    height: {if:=articles.b5.subsection, equals:=articles.b4.subsection, then: 44} 
+	        }
+       }},
+        {if: =portrait, then: {
+            #b1 : { 
+					frame: {$switch: [
+						{if: =widescreen, then: [0, 0, 256, 349]},
+						{if: =scale.large, then: [0, 0, 256, 411]}
+					]}
+			},
+            #b2 : { 
+					frame: {$switch: [
+						{if: =widescreen, then: [0, 357, 256, 518]},
+						{if: =scale.large, then: [0, 419, 256, 456]}
+					]}
+			},
+            #b3 : { 
+					frame: {$switch: [
+						{if: =widescreen, then: [256, 357, 256, 518]},
+						{if: =scale.large, then: [256, 419, 256, 456]}
+					]}
+			},
+            #b4 : { 
+					frame: {$switch: [
+						{if: =widescreen, then: [512, 357, 256, 259]},
+						{if: =scale.large, then: [512, 419, 256, 230]}
+					]}
+			},
+            #b5 : { 
+					frame: {$switch: [
+						{if: =widescreen, then: [512, 616, 256, 259]},
+						{if: =scale.large, then: [512, 649, 256, 226]}
+					]}
+			},
+            #deco : { 
+                    frame: {$switch: [
+                        {if: =widescreen, then: [264, 8, 491, 345]},
+                        {if: =scale.large, then: [264, 8, 491, 395]}
+                    ]}
+			}
+        }},
+        {if: =landscape, then: {
+	        #b1 : { frame: [0, 0, 256, 619] },
+	        #b2 : { frame: [256, 0, 256, 406] },
+	        #b3 : { frame: [256, 419, 256, 200] },
+	        #b4 : { frame: [519, 419, 256, 200] },
+	        #b5 : { frame: [775, 419, 256, 200] },
+	        #deco : { frame: [521, 8, 491, 395] }
+        }}
+    ]}</style>
+    <box id="b1" class="maude unit_continuation_strap" embed="article" module="CONTINUATION-dynamic_module.xml" />    
+    <box id="b2" class="maude unit_continuation_strap" embed="article" module="CONTINUATION-dynamic_module.xml" />
+    <box id="b3" class="maude unit_continuation_strap" embed="article" module="CONTINUATION-dynamic_module.xml" />
+    <box id="b4" class="maude unit_continuation_strap" embed="article" module="CONTINUATION-dynamic_module.xml" />
+    <box id="b5" class="maude unit_continuation_strap" embed="article" module="CONTINUATION-dynamic_module.xml" />
+    <box id="deco" class="maude unit_7" embed="article" module="DECO_module.xml" />
+
+</jpml>
+

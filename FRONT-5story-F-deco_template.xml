@@ -31,7 +31,7 @@
 								options:{small_headline:true, no_indent:true} 
 							},
 			#b4:			{ frame: [194, 628, 280, 248], options:{small_headline:true, bottom:true, no_indent:true} },
-			#b5:			{ frame: [486, 628, 280, 248], options:{no_indent:true} }
+			#b5:			{ frame: [486, 628, 280, 248], options:{no_indent:true, no_byline:true} }
 		}, else: {
 			#b1:	{ 
 						frame: {$switch: [

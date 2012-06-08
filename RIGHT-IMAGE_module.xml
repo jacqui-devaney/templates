@@ -1,6 +1,7 @@
 <jpml id="RIGHT-IMAGE_module">
 	<style src="GLOBAL_MODULES-stylesheet.ejs" />
 	<style src="GLOBAL-stylesheet.ejs" />
+	<style src="PHONE-MODULES-stylesheet.ejs" />
 	<style>{
         jpml: {
 			padding: [0, 8, 8, 8]
@@ -29,6 +30,23 @@
 		#medium_headline: { display: { if: =options.medium_headline, then:inherit }},
 		#large_headline: { display: { if: =options.large_headline, then:inherit }}
 		
+	}</style>
+	<style>{
+		if: =scale.phone, then: {
+			#image_wrapper: { 
+				width: 76
+			},
+			image: { 
+				height: 76,
+				display:inherit,
+				padding: [0],
+                options:{},
+				image-scale: 1
+				
+			}
+			
+		}
+	
 	}</style>
 	<box id="image_wrapper">
 		<image embed="summary-image" />

@@ -1,9 +1,12 @@
 <jpml id="CONTINUATION-dynamic_module">
 	<style src="GLOBAL_MODULES-stylesheet.ejs" />
 	<style src="GLOBAL-stylesheet.ejs" />
+	<style src="PHONE-MODULES-stylesheet.ejs" />
     <style>{
 		jpml: { padding: [ 4, 8, 4, 0] },
-        #content: { padding: [4, 8, 0, 8] },
+		#content: { 
+			padding: [4, 8, 0, 8]
+		 },
 		#strap: {
             display: { if:=options.hide_strap, then:none, else:default },
 			padding: [4, 4, 0, 8],
@@ -27,15 +30,34 @@
 			text-indent:0
 		}
     }</style>
-    
-	<panel id="strap">
-		<p class="subsection" embed="subsection" />
-	</panel>
-	<panel id="content">
-	 	<box id="image_container">
-			<image embed="summary-image"/>
-		</box>
-		<p class="continuation_headline"><span embed="headline" /><mark class="key" /></p>
-		<panel embed="body" class="continuation_body"/>
-	</panel>
+    <style>{
+		if: =scale.phone, then: {
+			#strap: {
+				padding: [3, 0, 0, 6]
+			},
+			jpml: { 
+				padding: [ 0] 
+			},
+			#content: {
+				border-width: [{ if:=options.hide_strap, then:1, else:0 }, 0, 0, 0],
+				border-color: #b1aca1
+			},
+			.body: {
+				display:none
+			},
+			#image_container: {
+				display:none
+			}
+		}
+	}</style>
+		<panel id="strap">
+			<p class="subsection" embed="subsection" />
+		</panel>
+		<panel id="content">
+		 	<box id="image_container">
+				<image embed="summary-image"/>
+			</box>
+			<p class="continuation_headline"><span embed="headline" /> some more stuff<mark class="key" /></p>
+			<panel embed="body" class="continuation_body"/>
+		</panel>
 </jpml>

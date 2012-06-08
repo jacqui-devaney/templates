@@ -112,7 +112,8 @@
     <box id="b6" embed="article" module="CONTINUATION-dynamic_module.xml" />
 	<box id="tech_strap">
 		<panel>
-			<p class="strap" >Latest Technology News</p>
+			<p class="strap" id="cio">Latest Technology News</p>
+			<p class="strap" id="cfo">Latest Finance News</p>
 		</panel>
 	</box>
 	<box id="b7" embed="article" module="FLASHLINE-HEADLINE_module.xml" />

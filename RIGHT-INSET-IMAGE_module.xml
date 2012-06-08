@@ -1,6 +1,7 @@
 <jpml id="RIGHT-INSET-IMAGE_module">
 	<style src="GLOBAL_MODULES-stylesheet.ejs" />
 	<style src="GLOBAL-stylesheet.ejs" />
+	<style src="PHONE-MODULES-stylesheet.ejs" />
 	<style>{
         $join: [
 			{ $switch: [
@@ -57,6 +58,28 @@
 		
 		]
 	}</style>
+	<style>{
+		if: =scale.phone, then: {
+			#image_container: { 
+				pixels-per-point-x:1,
+				pixels-per-point-y:1,
+				image-scale:1
+			},
+			image: { 
+				image-scale: 1
+				
+			},
+			.body: {
+				display:none
+			},
+			#headline: {
+				padding:[10, 0, 0, 0]
+			}
+			
+		}
+	
+	}</style>
+	
    	<box id="wrapper">
  		<box id="image_container">
 			<image embed="summary-image" />

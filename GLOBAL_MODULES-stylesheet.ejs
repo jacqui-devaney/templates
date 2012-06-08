@@ -168,7 +168,7 @@
 		text-indent:20,
 		font-size:{$multiply: [16, =view.zoomlevel]},
 		line-height:{$multiply: [22, =view.zoomlevel]},
-        text-align: =justify
+        text-align: left
 	},
 	.body-bug: {
 		display: {if:=intent.article, then:default, else:none},
@@ -652,7 +652,12 @@
 		text-align:center
 	},
 	.byline-credit: {
-		display:{if: =page.section, equals: "CIO", then:none, else:inherit}
+		if-any: [
+			{if: =page.section, equals: "CIO"},
+			{if: =page.section, equals: "CFO"}
+		],
+		then: none,
+		else: inherit
 	}
 	
 	

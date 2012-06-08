@@ -1,6 +1,7 @@
 <jpml id="RIGHT-TOP-INSET-IMAGE_module">
 	<style src="GLOBAL_MODULES-stylesheet.ejs" />
 	<style src="GLOBAL-stylesheet.ejs" />
+	<style src="PHONE-MODULES-stylesheet.ejs" />
 	<style>{
         jpml: {padding:[10, 0, {if: =options.bottom, then:15, else:10}, 0]
 		},
@@ -27,6 +28,38 @@
 		#medium_headline: { display: { if: =options.medium_headline, then:inherit }},
 		#large_headline: { display: { if: =options.large_headline, then:inherit }}
 	}</style>
+	<style>{
+		if: =scale.phone, then: {
+			#image_container: { 
+				anchor-x:right,
+				position:relative,
+				width: 76,
+				padding:[0, 10, 0, 15],
+				pixels-per-point-x:1,
+				pixels-per-point-y:1,
+				image-scale:1
+
+			},
+			image: { 
+				height: 76,
+				display:inherit,
+				padding: [0],
+                options:{},
+				image-scale: 1
+				
+			},
+			.byline: {
+				display:none
+			},
+			.body: {
+				display:none
+			},
+			#headline: { padding: [0, 0, 0, 8]}
+			
+			
+		}
+	}</style>
+	
 	<box id="image_container">
 		<image embed="summary-image"/>
 	</box>

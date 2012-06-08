@@ -5,22 +5,31 @@
 	<style>{
 		#b1: {options: {if: =portrait,
 					then:{large_headline:true, hide_image:{if: =widescreen, then:true, else:false}, one_column:{if: =widescreen, then:true, else:false}},
-					else: {large_headline:true, show_image:true}
+					else: {large_headline:true, show_image:true, one_column:{if: =widescreen, then:true, else:false}}
 		}},
-		#b2: {options: {if: =portrait,
-					then:{medium_headline:true, bottom:true, no_indent:true},
-					else: {medium_headline:true, bottom:true, two_columns:true, no_indent:true}
-		}},
-		#b3: {options:{ if: =portrait,
-				then: {small_headline:true, no_border:true, left:true, no_indent:true, show_image:true},
-				else: {small_headline:true, no_border:true, left:true, no_indent:true, show_image:{if: =widescreen, then:false, else:true}}
-		}},
+		#b2: {options: {$switch: [
+			{if: =scale.phone, then: {large_headline:true, bottom_border:true}},
+			{if: =portrait, then:{medium_headline:true, bottom:true, no_indent:true}},
+			{if: =landscape, then: {medium_headline:true, bottom:true, two_columns:true, no_indent:true}}
+		]}},
+		#b3: {options: {$switch: [
+			{if: =scale.phone, then: {large_headline:true, bottom_border:true}},
+			{if: =portrait, then:{small_headline:true, no_border:true, left:true, no_indent:true, show_image:true}},
+			{if: =landscape, then: {small_headline:true, no_border:true, left:true, no_indent:true, show_image:{if: =widescreen, then:false, else:true}}}
+		]}},
+		
 		#b4: {options: {if: =portrait,
 					then:{small_headline:true, show_image:true, left:true, bottom:true, no_indent:true,  show_image:true},
 					else: {small_headline:true, show_image:{if: =widescreen, then:false, else:true}, left:true, bottom:true, no_indent:true}
 		}},
-		#h1: {options:{hide_image:{if: =scale.small, then:true, else:false}}},
-		#h2: {options:{hide_image:{if: =scale.small, then:true, else:false}}}
+		#h1: {options:{$switch: [
+					{if: =scale.phone, then: {hide_image:false}},
+					{if: =scale.small, then: {hide_image:true}}
+			]}},
+		#h2: {options:{$switch: [
+					{if: =scale.phone, then: {hide_image:false}},
+					{if: =scale.small, then: {hide_image:true}}
+			]}}
 		
 		
 	}</style>
@@ -83,15 +92,15 @@
 		]
 	}</style>
 	
-	<box id="b1" embed="article" class="maude unit_section_1" module="RIGHT-TOP-INSET-IMAGE_module.xml" />
+	<box id="b1" embed="article" class="maude unit_4" module="RIGHT-TOP-INSET-IMAGE_module.xml" />
 	<box id="b2" embed="article" class="maude unit_4" module="TOP-IMAGE_module.xml" />
 	<box id="b3" embed="article" class="maude unit_4" module="TOP-IMAGE_module.xml" />
+	<box id="b4" embed="article" class="maude unit_4" module="TOP-IMAGE_module.xml" />
 	<box id="ad_background" class="ad_light maude unit_2">
 		<box id="highlight_ad" class="ad-rectangle" embed="advertisement" />
 	</box>
-	<box id="b4" embed="article" class="maude unit_4" module="TOP-IMAGE_module.xml" />
-	<box id="h1" embed="article" class="maude unit_highlight" module="HIGHLIGHTS_module.xml" />
-	<box id="h2" embed="article" class="maude unit_highlight" module="HIGHLIGHTS_module.xml" />
+	<box id="h1" embed="article" class="maude unit_4" module="HIGHLIGHTS_module.xml" />
+	<box id="h2" embed="article" class="maude unit_4" module="HIGHLIGHTS_module.xml" />
 
 	
 </jpml>

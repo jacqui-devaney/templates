@@ -9,7 +9,7 @@
 		$switch: [
 	        {if: =scale.phone, then: {
 		        #b2: {
-		                    height: {if:=articles.b2.subsection, equals:=articles.b1.subsection, then: 44} 
+		                    height: {if:=articles.b2.subsection, equals:=articles.b1.subsection, then: 50} 
 		        }
 	        }},
 	        {if: =portrait, then: {

@@ -1,6 +1,7 @@
 <jpml id="DECO_module">
 	<style src="GLOBAL_MODULES-stylesheet.ejs" />
 	<style src="GLOBAL-stylesheet.ejs" />
+	<style src="PHONE-MODULES-stylesheet.ejs" />
 	<style>{
 		$join: [
 			{ $switch: [
@@ -34,6 +35,7 @@
 			{image:{
 				options: {
 					$switch: [
+						{ if: =options.G_image, then: {match: { width:553, height:369, min-height:369 } } },
 						{ if: =options.F_image, then: {match: { width:571, height:226, min-height:226 } } },
 						{ if: =options.PT_image, then: {match: { width:264, height:455, min-height:455 } } },
 						{ if: =options.OV_image, then: {match: { width:239, height:340, min-height:340 } } },

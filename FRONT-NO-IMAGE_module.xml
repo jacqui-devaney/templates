@@ -1,6 +1,7 @@
 <jpml id="FRONT-NO-IMAGE_module">
 	<style src="GLOBAL_MODULES-stylesheet.ejs" />
 	<style src="GLOBAL-stylesheet.ejs" />
+	<style src="PHONE-MODULES-stylesheet.ejs" />
 	<style>{
 		$join: [
 			{ $switch: [
@@ -38,6 +39,7 @@
 				{if: =scale.small, then:{if: =options.byline, then:inherit, else:none}},
 				{if: =scale.large, then: inherit}
 			]}}},
+			{#image_wrapper: {display:none}},
 			{.body: {padding:{if: =options.byline, then:[0], else:[3, 0, 0, 0]}}},
 			{#body-first-p: {text-indent: {$switch: [
 				{if: =scale.small, then:{if: =options.no_indent, then:0, else:inherit}},
@@ -46,7 +48,45 @@
 			
 			]
 		}</style>
+		<style>{
+			if: =scale.phone, then: {
+				#image_wrapper: { 
+					anchor-x:right,
+					position:relative,
+					width: 76,
+					padding:[0, 5, 0, 15],
+					pixels-per-point-x:1,
+					pixels-per-point-y:1,
+					image-scale:1,
+					display:inherit
+				},
+				image: { 
+					height: 76,
+					display:inherit,
+					padding: [0],
+	                options:{},
+					image-scale: 1
+					
+				},
+				.byline: {
+					display:none
+				},
+				#body: {
+					display:none
+				},
+				#wrapper: {
+					padding: [5, 0, 0, 0]
+				
+				}
+				
+				
+			}
+		}</style>
+		
 	<box id="wrapper">
+		<box id="image_wrapper">
+			<image embed="summary-image" />
+		</box>
 		<panel id="headline">
 			<p id="small_headline" class="invisible"><span embed="headline" /><mark class="key" /></p>
 			<p id="medium_headline" class="invisible"><span embed="headline" /><mark class="key" /></p>

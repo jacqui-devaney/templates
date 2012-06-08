@@ -11,10 +11,11 @@
 					else: {small_headline:true, no_border:{if: =widescreen, then:false, else:true}, no_indent:true}
 				}
 		},
-		#deco:	{options: {if: =portrait, then:{normal_headline:true, F_image:{if: =widescreen, then:true, else:false}},
-					else: {normal_headline:true, no_border:{if: =widescreen, then:true, else:false}, F_image:{if: =scale.small, then:true, else:false}}
-				}
-		},
+		#deco: {options: {$switch: [
+			{if: =scale.phone, then: {normal_headline:true, G_image:true}},
+			{if: =portrait, then:{normal_headline:true, F_image:{if: =widescreen, then:true, else:false}}},
+			{if: =landscape, then: {normal_headline:true, no_border:{if: =widescreen, then:true, else:false}, F_image:{if: =scale.small, then:true, else:false}}}
+		]}},
 		#b3:	{options: {if: =portrait,
 					then:{small_headline:true, left:true, no_indent:true},
 					else: {small_headline:true, no_border:{if: =widescreen, then:true, else:false}, no_indent:true}
@@ -98,17 +99,17 @@
 	} </style>
 	
 	<box class="maude" id="marketstrap" embed="marketstrap" />
-	<box class="maude unit_8" id="b1" embed="article" module="FRONT-NO-IMAGE_module.xml" />
-	<box class="maude unit_4" id="b2" embed="article" module="FRONT-NO-IMAGE_module.xml" />
+	<box class="maude unit_3half" id="b1" embed="article" module="FRONT-NO-IMAGE_module.xml" />
+	<box class="maude unit_3half" id="b2" embed="article" module="FRONT-NO-IMAGE_module.xml" />
 	<box id="whatsnews" embed="whatsnews" />
 	<box class="maude unit_2" id="whatsnews_wrapper">
 		<box id="whatsnews_phone" embed="whatsnews_button" />
 	</box>
+	<box class="maude unit_3half" id="b3" embed="article" module="FRONT-NO-IMAGE_module.xml" />
+	<box class="maude unit_3half" id="b4" embed="article" module="FRONT-NO-IMAGE_module.xml" />
 	<box class="maude unit_2 front_ad" id="ad_background">
 		<box id="ad" class="ad-rectangle" embed="advertisement" />
 	</box>
-	<box class="maude unit_4" id="b3" embed="article" module="FRONT-NO-IMAGE_module.xml" />
-	<box class="maude unit_4" id="b4" embed="article" module="FRONT-NO-IMAGE_module.xml" />
-	<box class="maude unit_13" id="deco" embed="article" module="DECO_module.xml" />
+	<box class="maude unit_11" id="deco" embed="article" module="DECO_module.xml" />
 	
 </jpml>

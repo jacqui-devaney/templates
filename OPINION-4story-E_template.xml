@@ -53,7 +53,17 @@
 					_comment: "no header",
 					#b2 : { frame: [0, 324, 362, 276] }
 					}}
-			]}
+			]},
+			{if: =scale.phone, then: {
+        	#articles: {frame: inherit},
+	        	#b1: {frame: inherit},
+				#b2: {frame: inherit},
+	        	#b3: {frame: inherit},
+	        	#b4: {frame: inherit}
+	        }}
+			
+			
+			
     	]}    
     </style>
     
@@ -67,11 +77,11 @@
 		<box id="highlight_ad" class="ad-rectangle" embed="advertisement" />
 	</box>
     <box id="b3" embed="article" class="maude unit_rando_second" module="TOP-IMAGE_module.xml" />
-    <box id="b4" embed="article" class="maude" module="TOP-IMAGE_module.xml" />
+    <box id="b4" embed="article" class="maude unit_4" module="TOP-IMAGE_module.xml" />
 
-    <box id="h1" embed="article" class="maude" module="HIGHLIGHTS_module.xml" />
+    <box id="h1" embed="article" class="maude unit_4" module="HIGHLIGHTS_module.xml" />
     <box id="l1" class="line" />
-    <box id="h2" embed="article" class="maude" module="HIGHLIGHTS_module.xml" />
+    <box id="h2" embed="article" class="maude unit_4" module="HIGHLIGHTS_module.xml" />
 
     
 </jpml>

@@ -1,6 +1,7 @@
 <jpml id="HIGHLIGHTS_module">
 	<style src="GLOBAL_MODULES-stylesheet.ejs" />
 	<style src="GLOBAL-stylesheet.ejs" />
+	<style src="PHONE-MODULES-stylesheet.ejs" />
     <style>{
 		jpml: {
 				background-color:{if: =options.white_highlight, then:#ffffff, else:#efefef},
@@ -36,11 +37,34 @@
 			{if: =scale.large, then: inherit}
 		]}}
     }</style>
+	<style>{
+		if: =scale.phone, then: {
+			#image_container: { 
+				pixels-per-point-x:1,
+				pixels-per-point-y:1,
+				image-scale:1
+			},
+			image: { 
+				image-scale: 1
+				
+			},
+			.highlight_body: {
+				display:none
+			},
+			jpml: {
+				padding: [8]
+				
+			}
+			
+		}
+	
+	}</style>
+
     <box id="image_container">
         <image class="A_size" embed="summary-image" />
     </box>
     <p class="highlight_flashline" embed="flashline" />
-    <p class="highlight_headline"><span embed="headline" /><mark class="key" /></p>
+    <p class="highlight_headline"><span embed="headline" /> <mark class="key" /></p>
    	<p class="highlight_byline" embed="byline" />
 	<panel embed="body" class="highlight_body"/>
 </jpml>

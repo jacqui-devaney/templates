@@ -69,7 +69,7 @@
 						{if: =options.long_deco, then:90},
 						{if: true, then:55}
 				]},
-				min-height: 25,
+				min-height: 5,
 				display: { if: =options.no_caption, then:none, else:inherit }
 			}}
 		]

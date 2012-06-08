@@ -270,7 +270,7 @@
 		<template 
 			name="SECTION-1story-fullsize-deco.xml" 
 			section="MARKETPLACE" 
-			title="TEST Full size Deco"
+			title="Full size Deco"
 			min="1" 
 			deco="true"
 			usage="front" 
@@ -1077,7 +1077,6 @@
 			title="7 stories - 3 OV liondoor"
 			min="7" 
 			usage="continuation" 
-			section="OFF_DUTY,WSJ_MAGAZINE" 
 			deco="true" 
 			page="2" 
 		/>
@@ -1086,9 +1085,16 @@
 			title="7 stories - 3 OV deco"
 			min="7"
 			usage="continuation"
-			section="OFF_DUTY,WSJ_MAGAZINE" 
 			deco="true"
 			page="3"
+		/>
+		<template 
+			name="CONTINUATION-fancy-3OV-7_template.xml" 
+			title="7 stories - 3 OV deco"
+			min="7"
+			usage="continuation"
+			deco="true"
+			page="4"
 		/>
 		
 		<template 
@@ -1096,7 +1102,14 @@
 			title="6 stories - smallG liondoor 1 OV liondoor"
 			min="6" 
 			usage="continuation" 
-			section="OFF_DUTY,WSJ_MAGAZINE" 
+			deco="true" 
+			page="2" 
+		/>
+		<template 
+			name="CONTINUATION-fancy-smallG-OV-6_template.xml" 
+			title="6 stories - smallG liondoor 1 OV liondoor"
+			min="6" 
+			usage="continuation" 
 			deco="true" 
 			page="3" 
 		/>
@@ -1105,54 +1118,107 @@
 			title="6 stories - smallG liondoor 1 OV liondoor"
 			min="6" 
 			usage="continuation" 
-			section="OFF_DUTY,WSJ_MAGAZINE" 
+			deco="true" 
+			page="4" 
+		/>
+		<template 
+			name="CONTINUATION-fancy-OZ_template.xml" 
+			title="5 stories - OZ liondoor"
+			min="5" 
+			usage="continuation" 
 			deco="true" 
 			page="2" 
 		/>
 		<template 
-			name="CONTINUATION-fancy-PV-P_template.xml" 
-			title="4 stories - P liondoor"
-			min="6" 
+			name="CONTINUATION-fancy-OZ_template.xml" 
+			title="5 stories - OZ liondoor"
+			min="5" 
 			usage="continuation" 
-			section="FRONT_SECTION,OFF_DUTY" 
-			deco="true" 
-			page="2" 
-		/>
-		<template 
-			name="CONTINUATION-fancy-PV-P_template.xml" 
-			title="4 stories - P liondoor"
-			min="6" 
-			usage="continuation" 
-			section="OFF_DUTY" 
 			deco="true" 
 			page="3" 
+		/>
+		<template 
+			name="CONTINUATION-fancy-OZ_template.xml" 
+			title="5 stories - OZ liondoor"
+			min="5" 
+			usage="continuation" 
+			deco="true" 
+			page="4" 
+		/>
+		
+		<template 
+			name="CONTINUATION-fancy-PV-P_template.xml" 
+			title="4 stories - P liondoor"
+			min="6" 
+			usage="continuation" 
+			deco="true" 
+			page="2" 
+		/>
+		<template 
+			name="CONTINUATION-fancy-PV-P_template.xml" 
+			title="4 stories - P liondoor"
+			min="6" 
+			usage="continuation" 
+			deco="true" 
+			page="3" 
+		/>
+		<template 
+			name="CONTINUATION-fancy-PV-P_template.xml" 
+			title="4 stories - P liondoor"
+			min="6" 
+			usage="continuation" 
+			deco="true" 
+			page="4" 
+		/>
+		<template 
+			name="SECTION-1story-fullsize-deco.xml" 
+			title="Full size Deco"
+			min="1" 
+			deco="true"
+			usage="continuation"
+			page="2" 
+		/>
+		<template 
+			name="SECTION-1story-fullsize-deco.xml"
+			title="Full size Deco"
+			min="1" 
+			deco="true"
+			usage="continuation"
+			page="3" 
+		/>
+		<template 
+			name="SECTION-1story-fullsize-deco.xml"
+			title="Full size Deco"
+			min="1" 
+			deco="true"
+			usage="continuation"
+			page="4" 
 		/>
 		<template 
 			name="CONTINUATION-fancy-6_template.xml" 
 			title="6 stories - smallG liondoor"
 			min="6" 
-			usage="continuation" 	section="FRIDAY_JOURNAL,FRONT_SECTION,MONEY_AND_INVESTING,NEW_YORK,OFF_DUTY,PERSONAL_JOURNAL,WSJ_MAGAZINE,BUSINESS_AND_FINANCE,MARKETPLACE" 
+			usage="continuation" 
 			deco="true" 
 			page="2" 
 		/>		
 		<template 
-			name="CONTINUATION-fancy-H_template.xml" 
+			name="CONTINUATION-fancy-6_template.xml" 
 			title="6 stories - smallG liondoor"
 			min="6" 
 			usage="continuation" 
-			section="FRIDAY_JOURNAL,FRONT_SECTION,MONEY_AND_INVESTING,NEW_YORK,OFF_DUTY,PERSONAL_JOURNAL,WSJ_MAGAZINE,BUSINESS_AND_FINANCE" 
 			deco="true" 
-			page="2" 
+			page="3" 
 		/>
 		<template 
 			name="CONTINUATION-fancy-6_template.xml" 
 			title="6 stories - smallG liondoor"
 			min="6" 
 			usage="continuation" 
-			section="FRONT_SECTION,MARKETPLACE" 
 			deco="true" 
-			page="3" 
+			page="4" 
 		/>
+		
 		<template 
 			name="CONTINUATION-fancy-bottom-6_template.xml" 
 			title="6 stories - smallG liondoor bottom"
@@ -1163,10 +1229,51 @@
 			page="2" 
 		/>
 		<template 
+			name="CONTINUATION-fancy-bottom-6_template.xml" 
+			title="6 stories - smallG liondoor bottom"
+			min="6" 
+			usage="continuation" 
+			deco="true" 
+			page="3" 
+		/>
+		<template 
+			name="CONTINUATION-fancy-bottom-6_template.xml" 
+			title="6 stories - smallG liondoor bottom"
+			min="6" 
+			usage="continuation" 
+			deco="true" 
+			page="4" 
+		/>
+		
+		<template 
 			name="CONTINUATION-fancy-8_template.xml" 
 			title="8 stories - smallG liondoor"
 			min="8" 
-			section="FRONT_SECTION,OFF_DUTY,WSJ_MAGAZINE" 
+			usage="continuation" 
+			deco="true" 
+			page="2" 
+		/>
+		<template 
+			name="CONTINUATION-fancy-8_template.xml" 
+			title="8 stories - smallG liondoor"
+			min="8" 
+			usage="continuation" 
+			deco="true" 
+			page="3" 
+		/>
+		<template 
+			name="CONTINUATION-fancy-8_template.xml" 
+			title="8 stories - smallG liondoor"
+			min="8" 
+			usage="continuation" 
+			deco="true" 
+			page="4" 
+		/>
+		<template 
+			name="CONTINUATION-fancy-bottom-8_template.xml" 
+			section="OPINION" 
+			title="8 stories - smallG liondoor bottom"
+			min="8" 
 			usage="continuation" 
 			deco="true" 
 			page="2" 
@@ -1178,52 +1285,24 @@
 			min="8" 
 			usage="continuation" 
 			deco="true" 
-			page="2" 
-		/>
-
-		<template 
-			name="CONTINUATION-fancy-bottom-6_template.xml" 
-			title="6 stories - smallG liondoor bottom"
-			min="6" 
-			section="WSJ_MAGAZINE,MARKETPLACE" 
-			usage="continuation" 
-			deco="true" 
 			page="3" 
 		/>
 		<template 
-			name="CONTINUATION-fancy-bottom-6_template.xml" 
-			title="6 stories - smallG liondoor bottom"
-			min="6" 
-			section="WSJ_MAGAZINE" 
+			name="CONTINUATION-fancy-bottom-8_template.xml" 
+			section="OPINION" 
+			title="8 stories - smallG liondoor bottom"
+			min="8" 
 			usage="continuation" 
 			deco="true" 
 			page="4" 
 		/>
+
 		<template 
-			name="CONTINUATION-fancy-OZ_template.xml" 
-			title="5 stories - OZ liondoor"
+			name="CONTINUATION-fancy-H_template.xml" 
+			title="TEST - 5 stories - H liondoor"
 			min="5" 
-			section="FRONT_SECTION,OPINION,MARKETPLACE,PERSONAL_JOURNAL,REVIEW,BUSINESS_AND_FINANCE,NEW_YORK,OFF_DUTY,WSJ_MAGAZINE" 
 			usage="continuation" 
 			deco="true" 
-			page="3" 
-		/>
-		<template 
-			name="CONTINUATION-fancy-OZ_template.xml" 
-			title="5 stories - OZ liondoor"
-			min="5" 
-			section="MARKETPLACE" 
-			usage="continuation" 
-			deco="true" 
-			page="2" 
-		/>
-		<template 
-			name="SECTION-1story-fullsize-deco.xml" 
-			section="MARKETPLACE,MONEY_AND_INVESTING,THE_JOURNAL_REPORT,REVIEW,WSJ_MAGAZINE,BUSINESS_AND_FINANCE,OFF_DUTY,FRONT_SECTION,NEW_YORK,FRIDAY_JOURNAL,PERSONAL_JOURNAL" 
-			title="TEST - Full size Deco"
-			min="1" 
-			deco="true"
-			usage="continuation"
 			page="2" 
 		/>
 
@@ -1342,10 +1421,11 @@
 		<article pages="ARTICLE-pages-hots.xml" type="Heard on the Street Other"/>
 		<article pages="ARTICLE-pages-hots.xml" type="Overheard"/>
 		<article pages="ARTICLE-pages-letters.xml" type="Letters"/>
+		<article pages="ARTICLE-pages-off-duty.xml" type="Fast Five"/>
 		<article pages="ARTICLE-pages-off-duty.xml" type="Mobile Special"/>
-		<article pages="ARTICLE-pages-off-duty.xml" type="Traveler's Tale"/>
-		<article pages="ARTICLE-pages-PV-no-rail.xml" type="Magazine - Open Secret"/>
-		<article pages="ARTICLE-pages-PV-no-rail.xml" type="Magazine - Partnership"/>
+		<article pages="ARTICLE-pages-off-duty.xml" type="On Wine"/>
+		<article pages="ARTICLE-pages-PV-no-rail.xml" type="Life and Style | Interior Design"/>
+		<article pages="ARTICLE-pages-PV-no-rail.xml" type="Mobile Special"/>
 	</article-page-plans>
 	
 	<display-properties>

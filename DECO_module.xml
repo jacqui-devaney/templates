@@ -70,7 +70,9 @@
 						{if: true, then:55}
 				]},
 				min-height: 5,
-				display: { if: =options.no_caption, then:none, else:inherit }
+				display: { if: =options.no_caption, then:none, else:inherit },
+				text-overflow:ellipsis
+				
 			}}
 		]
 	}</style>

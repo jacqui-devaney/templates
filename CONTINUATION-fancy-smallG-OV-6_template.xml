@@ -1,64 +1,88 @@
 <jpml id="CONTINUATION-fancy-smallG-OV-6_template">
 	<style src="CONTINUATION-stylesheet.ejs" /> 
 	<style src="GLOBAL-stylesheet.ejs" />
+	<style src="PHONE-stylesheet.ejs" /> 
 	<style>{
-        if: =portrait, then: {
-	        #b1 : { 
-					frame: {$switch: [
-						{if: =widescreen, then: [4, 356, 253, 520]},
-						{if: =scale.large, then: [4, 430, 253, 446]}
-					]}
-			},
-	        #b2 : { 
-					frame: {$switch: [
-						{if: =widescreen, then: [256, 356, 252, 520]},
-						{if: =scale.large, then: [256, 430, 250, 446]}
-					]},
-					options: {hide_strap: {if:=articles.b2.subsection, equals:=articles.b1.subsection}} 
-			},
-	        #b3 : { 
-					frame: {$switch: [
-						{if: =widescreen, then: [512, 356, 256, 260]},
-						{if: =scale.large, then: [512, 430, 256, 222]}
-					]},
-					options: {hide_strap: {if:=articles.b3.subsection, equals:=articles.b2.subsection}} 
-			},
-	        #b4 : { 
-					frame: {$switch: [
-						{if: =widescreen, then: [512, 616, 256, 260]},
-						{if: =scale.large, then: [512, 653, 256, 222]}
-					]},
-					options: {hide_strap: {if:=articles.b4.subsection, equals:=articles.b3.subsection}} 
-			},
-	        #deco : { 
+		#b2: {options: {hide_strap: {if:=articles.b2.subsection, equals:=articles.b1.subsection}}},
+		#b3: {options: {hide_strap: {if:=articles.b3.subsection, equals:=articles.b2.subsection}}},
+		#b4: {options: {hide_strap: {if:=articles.b4.subsection, equals:=articles.b3.subsection}}},
+		#deco: {options: { $switch: [
+				{if: =scale.phone, then: {bottom_headline:true, F_image:true, small_caption:true}},
+				{if: =portrait, then: {bottom_headline:true, bottom_border:true, F_image:{if: =widescreen, then:true, else:false}}},
+				{if: =landscape, then: {bottom_headline:true, bottom_border:true, F_image:{if: =widescreen, then:true, else:false}}}			
+			]}},
+		#deco2: {options: { $switch: [
+				{if: =scale.phone, then: {bottom_headline:true, F_image:true, small_caption:true}},
+				{if: =portrait, then: {bottom_border:true, small_headline:true, OV_image:true}},
+				{if: =landscape, then: {bottom_headline:true, bottom_border:true, OV_image:{if: =widescreen, then:true, else:false}}}			
+			]}}
+		
+	}</style>
+	<style>{$switch: [
+			{if: =scale.phone, then: {
+		        #b2: {
+		                    height: {if:=articles.b2.subsection, equals:=articles.b1.subsection, then: 50} 
+		        },
+		        #b3: {
+		                    height: {if:=articles.b3.subsection, equals:=articles.b2.subsection, then: 50} 
+		        },
+		        #b4: {
+		                    height: {if:=articles.b4.subsection, equals:=articles.b3.subsection, then: 50} 
+		        }
+	       }},
+	        {if: =portrait, then: {
+		        #b1 : { 
 						frame: {$switch: [
-							{if: =widescreen, then: [0, 0, 504, 348]},
-							{if: =scale.large, then: [0, 0, 504, 420]}
-						]},
-						options: {bottom_headline:true, bottom_border:true, F_image:{if: =widescreen, then:true, else:false}} 
-			},
-            #deco2 : { 
+							{if: =widescreen, then: [4, 356, 253, 520]},
+							{if: =scale.large, then: [4, 430, 253, 446]}
+						]}
+				},
+		        #b2 : { 
 						frame: {$switch: [
-							{if: =widescreen, then: [512, 0, 252, 348]},
-							{if: =scale.large, then: [512, 0, 252, 420]}
-						]},
-						options: {bottom_border:true, small_headline:true, OV_image:true} 
-			}
-	    }, else: {
-	        #b1 : { frame: [0, 0, 256, 619] },
-	        #b2 : { frame: [256, 430, 256, 190], options: {hide_strap: {if:=articles.b2.subsection, equals:=articles.b1.subsection}} },
-	        #b3 : { frame: [512, 430, 256, 190], options: {hide_strap: {if:=articles.b3.subsection, equals:=articles.b2.subsection}} },
-	        #b4 : { frame: [768, 430, 256, 190], options: {hide_strap: {if:=articles.b4.subsection, equals:=articles.b3.subsection}} },
-	        #deco : { frame: [256, 0, 504, 420], options: {bottom_headline:true, bottom_border:true, F_image:{if: =widescreen, then:true, else:false}} },
-	        #deco2 : { frame: [768, 0, 252, 420], options: {small_headline:true, bottom_border:true} }
-        }
-    }</style>
-    <box id="b1" embed="article" module="CONTINUATION-dynamic_module.xml" />    
-    <box id="b2" embed="article" module="CONTINUATION-dynamic_module.xml" />
-    <box id="b3" embed="article" module="CONTINUATION-dynamic_module.xml" />
-    <box id="b4" embed="article" module="CONTINUATION-dynamic_module.xml" />
-    <box id="deco" embed="article" module="DECO_module.xml" />
-    <box id="deco2" embed="article" module="DECO_module.xml" />
+							{if: =widescreen, then: [256, 356, 252, 520]},
+							{if: =scale.large, then: [256, 430, 250, 446]}
+						]} 
+				},
+		        #b3 : { 
+						frame: {$switch: [
+							{if: =widescreen, then: [512, 356, 256, 260]},
+							{if: =scale.large, then: [512, 430, 256, 222]}
+						]} 
+				},
+		        #b4 : { 
+						frame: {$switch: [
+							{if: =widescreen, then: [512, 616, 256, 260]},
+							{if: =scale.large, then: [512, 653, 256, 222]}
+						]} 
+				},
+		        #deco : { 
+							frame: {$switch: [
+								{if: =widescreen, then: [0, 0, 504, 348]},
+								{if: =scale.large, then: [0, 0, 504, 420]}
+							]} 
+				},
+	            #deco2 : { 
+							frame: {$switch: [
+								{if: =widescreen, then: [512, 0, 252, 348]},
+								{if: =scale.large, then: [512, 0, 252, 420]}
+							]} 
+				}
+		    }}, 
+			{if: =landscape, then: {
+		        #b1 : { frame: [0, 0, 256, 619] },
+		        #b2 : { frame: [256, 430, 256, 190]},
+		        #b3 : { frame: [512, 430, 256, 190]},
+		        #b4 : { frame: [768, 430, 256, 190]},
+		        #deco : { frame: [256, 0, 504, 420]},
+		        #deco2 : { frame: [768, 0, 252, 420]}
+	        }}
+    ]}</style>
+    <box id="b1" embed="article" class="maude unit_continuation_strap" module="CONTINUATION-dynamic_module.xml" />    
+    <box id="b2" embed="article" class="maude unit_continuation_strap" module="CONTINUATION-dynamic_module.xml" />
+    <box id="b3" embed="article" class="maude unit_continuation_strap" module="CONTINUATION-dynamic_module.xml" />
+    <box id="b4" embed="article" class="maude unit_continuation_strap" module="CONTINUATION-dynamic_module.xml" />
+    <box id="deco" embed="article" class="maude unit_medium_deco" module="DECO_module.xml" />
+    <box id="deco2" embed="article" class="maude unit_medium_deco" module="DECO_module.xml" />
 
 </jpml>
 

@@ -653,8 +653,8 @@
 	},
 	.byline-credit: {
 		if-any: [
-			{if: =page.section, equals: "CIO"},
-			{if: =page.section, equals: "CFO"}
+			{if: =page.section, equals: "CIO", then:true},
+			{if: =page.section, equals: "CFO", then:true}
 		],
 		then: none,
 		else: inherit

@@ -60,20 +60,28 @@
 	}</style>
 	<style>{
 		if: =scale.phone, then: {
+			#wrapper: {
+				border-width: [0, 0, {if: =options.no_border, then:0, else:1}, 0],
+				border-color: #b1aca1,
+				padding: [5, 8, 0, 8]
+			},
 			#image_container: { 
+				width:86,
 				pixels-per-point-x:1,
 				pixels-per-point-y:1,
 				image-scale:1
 			},
 			image: { 
-				image-scale: 1
-				
+				image-scale: 1,
+				pixels-per-point-x:1,
+				pixels-per-point-y:1,
+				height:76
 			},
 			.body: {
 				display:none
 			},
 			#headline: {
-				padding:[10, 0, 0, 0]
+				padding:[0, 0, 8, 0]
 			}
 			
 		}

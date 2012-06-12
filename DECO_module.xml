@@ -63,7 +63,7 @@
 			{.deco_caption: {
 				max-height: {
 					$switch: [
-						{if: =options.H_deco, then:15},
+						{if: =options.small_caption, then:30},
 						{if: =options.fake_deco, then:35},
 						{if: =options.vertical_deco, then:75},
 						{if: =options.long_deco, then:90},
@@ -75,6 +75,13 @@
 				
 			}}
 		]
+	}</style>
+	<style>{
+		if: =scale.phone, then: {
+			#wrapper: {
+				padding:[10, 0, 0, 0]
+			}
+		}
 	}</style>
 	<box id="wrapper">
 		<panel id="content">

@@ -1,0 +1,96 @@
+<jpml id="ARTICLE-front-AHED_module">
+	<style src="GLOBAL_MODULES-stylesheet.ejs" />
+	<style src="GLOBAL-stylesheet.ejs" />
+	<style>{
+		$join: [
+		{#header_top: { padding:[18, 10, 8, 15]}},
+		
+				{if: =portrait, then: {
+            #mediabucket_container:	{ frame: [0, 0, 760, 602],
+            							padding: [10, 0, 20, 0] },
+            #head:{ frame: [0, 520, 590, 160]},
+            #article_copy:{ frame: [0, 680, 590, 200]},
+            #body_container:{ column-count:2, column-gutter: 20,             
+				padding: [10, 0, 0, 20],
+				column-height:balance,
+				flow: article_body,
+				layout-grid-line: {$multiply: [22, =view.zoomlevel]},
+				layout-grid-line-offset: {$multiply: [20, =view.zoomlevel]}},
+			#this_continues_label: {
+				top: 865,
+				right: 175,
+				width:120,
+				padding: [0, 15, 8, 0],
+				display: { if: =page.count, equals:1, then:none, else:inherit}
+			},
+			#mediabucket: {
+				width:746,
+				height:500,
+			anchor-x:center}
+		
+		}, else: {
+        	#mediabucket_container:	{ frame: [10, 120, 746, 500]},
+        	#mediabucket: {
+				width:746,
+				height:500,
+				anchor-x:left,
+				position: [20, 0, 0, 10]
+			},
+        	#head:{ frame: [0, 0, 1010, 125]},
+        	#article_copy:{ frame: [770, 110, 253, 290]},
+        	#body_container:{ padding: [10, 15, 10, 5],
+				column-height:balance,
+				flow: article_body,
+				layout-grid-line: {$multiply: [22, =view.zoomlevel]},
+				layout-grid-line-offset: {$multiply: [20, =view.zoomlevel]}},
+			#this_continues_label: {
+				top: 377,
+				right: 0,
+				width:120,
+				padding: [0, 15, 8, 0],
+				display: { if: =page.count, equals:1, then:none, else:inherit}
+			}
+        }},
+		{#filler: {
+			position: relative,
+			top: 10,
+			left: 0,
+			right: 0,
+			bottom: 0,
+			min-height: 0,
+			border-image:url(articleBackground.png),
+			border-width: [16, 0, 0, 0],
+			border-slice: [16, 0, 0, 0]
+		}},
+		{#article_advertisement: {
+			min-height: 206,            
+			min-width: 555,            
+			anchor-x: center,            
+			anchor-y: middle        
+
+		}}
+		]
+    }</style>
+	<box id="this_continues_label">
+		<p><mark id="continues" /></p>
+	</box>
+	<box id="mediabucket_container">
+		<box id="mediabucket" embed="mediabucket" />
+	</box>
+	<box id="head">
+		<panel id="header_top">
+			<p class="article_headline"><span embed="headline"/><mark class="key"/></p>
+			<h2 class="article_subhed" embed="subhed" />
+		</panel>
+		<box class="hr"></box>
+	</box>
+	<box id="article_copy">
+		<panel id="body_container">
+			<p class="article_byline" embed="byline"/>
+			<panel class="article_body" embed="body"/>
+		</panel>
+	</box>
+	
+</jpml>
+
+

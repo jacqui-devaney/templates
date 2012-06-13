@@ -305,6 +305,42 @@
 			min="6" 
 			usage="front" 
 		/>
+		<template 
+			name="SECTION-1story-PV-white_template.xml" 
+			section="MARKETPLACE" 
+			title="PV (white)"
+			min="3" 
+			usage="front" 
+		/>
+		<template 
+			name="SECTION-1story-PV_template.xml" 
+			section="MARKETPLACE" 
+			title="PV (grey)"
+			min="3" 
+			usage="front" 
+		/>
+		<template 
+			name="SECTION-1story-PV-1highlight_template.xml" 
+			section="MARKETPLACE" 
+			title="PV - 1 highlight (grey)"
+			min="2" 
+			usage="front" 
+		/>
+		<template 
+			name="SECTION-1story-PV-1highlight-white_template.xml" 
+			section="MARKETPLACE" 
+			title="PV - 1 highlight (white)"
+			min="2" 
+			usage="front" 
+		/>
+		
+		<template 
+			name="SECTION-1story-P_template.xml" 
+			section="MARKETPLACE" 
+			title="P-photo"
+			min="3" 
+			usage="front" 
+		/>
 		
 		<!-- END MARKETPLACE -->
 		
@@ -483,6 +519,13 @@
 			section="MONEY_AND_INVESTING" 
 			title="4 story - 2nd story G photo - mirror"
 			min="6" 
+			usage="front" 
+		/>
+		<template 
+			name="SECTION-1story-P_template.xml" 
+			section="MONEY_AND_INVESTING" 
+			title="P-photo"
+			min="3" 
 			usage="front" 
 		/>
 		
@@ -1297,8 +1340,7 @@
 		<template 
 			name="CONTINUATION-fancy-bottom-6_template.xml" 
 			title="6 stories - smallG liondoor bottom"
-			min="6" 
-			section="THE_JOURNAL_REPORT,MARKETPLACE,OPINION,REVIEW" 
+			min="6"  
 			usage="continuation" 
 			deco="true" 
 			page="2" 
@@ -1380,6 +1422,31 @@
 			deco="true" 
 			page="2" 
 		/>
+		<template 
+			name="SECTION-2story-G-C_template.xml" 
+			section="MARKETPLACE" 
+			title="Continuation - 2 story-G"
+			min="4" 
+			usage="continuation"
+			page="2" 
+		/>
+		<template 
+			name="SECTION-3story-G_template.xml" 
+			section="MARKETPLACE" 
+			title="Continuation - 3 story-G"
+			min="5" 
+			usage="continuation"
+			page="2" 
+		/>
+		<template 
+			name="SECTION-3story-G-deco-C_template.xml" 
+			section="MARKETPLACE" 
+			deco="true" 
+			title="Continiation - 3 story - G liondoor"
+			min="5" 
+			usage="continuation" 
+			page="2"
+		/>
 
 		<!-- END FANCY CONTINUATION -->
 		
@@ -1427,7 +1494,6 @@
 		<article pages="ARTICLE-pages-off-duty.xml" type="On Wine"/>
 		<article pages="ARTICLE-pages-PV-no-rail.xml" type="Life and Style | Interior Design"/>
 		<article pages="ARTICLE-pages-PV-no-rail.xml" type="Mobile Special"/>
-		<article pages="ARTICLE-pages-AHED.xml" type="A-hed"/>
 	</article-page-plans>
 	
 	<display-properties>

@@ -486,6 +486,82 @@
 		<!-- END  CFO-->
 		
 		
+		
+		<!-- GENERIC CONTINUATION -->
+		<template 
+			name="CONTINUATION-generic-12_template.xml" 
+			title=""
+			min="12"
+			usage="continuation"
+		/>
+		<template 
+			name="CONTINUATION-generic-11_template.xml" 
+			title=""
+			min="11"
+			usage="continuation"
+		/>
+		<template 
+			name="CONTINUATION-generic-10_template.xml" 
+			title=""
+			min="10"
+			usage="continuation"
+		/>
+		<template 
+			name="CONTINUATION-generic-9_template.xml" 
+			title=""
+			min="9"
+			usage="continuation"
+		/>
+		<template 
+			name="CONTINUATION-generic-8_template.xml" 
+			title=""
+			min="8"
+			usage="continuation"
+		/>
+		<template 
+			name="CONTINUATION-generic-7_template.xml" 
+			title=""
+			min="7"
+			usage="continuation"
+		/>
+		<template 
+			name="CONTINUATION-generic-6_template.xml" 
+			title=""
+			min="6"
+			usage="continuation"
+		/>
+		<template 
+			name="CONTINUATION-generic-5_template.xml" 
+			title=""
+			min="5"
+			usage="continuation"
+		/>
+		<template 
+			name="CONTINUATION-generic-4_template.xml" 
+			title=""
+			min="4"
+			usage="continuation"
+		/>
+		<template 
+			name="CONTINUATION-generic-3_template.xml" 
+			title=""
+			min="3"
+			usage="continuation"
+		/>
+		<template 
+			name="CONTINUATION-generic-2_template.xml" 
+			title=""
+			min="2"
+			usage="continuation"
+		/>
+		<template 
+			name="CONTINUATION-generic-1_template.xml" 
+			title=""
+			min="1"
+			usage="continuation"
+		/>
+		<!--  END GENERIC CONTINUATION -->
+	
 		<!-- FANCY CONTINUATION -->
 		<template 
 			name="CONTINUATION-fancy-3OV-7_template.xml" 
@@ -722,81 +798,6 @@
 		/>
 
 		<!-- END FANCY CONTINUATION -->
-		
-		<!-- GENERIC CONTINUATION -->
-		<template 
-			name="CONTINUATION-generic-12_template.xml" 
-			title=""
-			min="12"
-			usage="continuation"
-		/>
-		<template 
-			name="CONTINUATION-generic-11_template.xml" 
-			title=""
-			min="11"
-			usage="continuation"
-		/>
-		<template 
-			name="CONTINUATION-generic-10_template.xml" 
-			title=""
-			min="10"
-			usage="continuation"
-		/>
-		<template 
-			name="CONTINUATION-generic-9_template.xml" 
-			title=""
-			min="9"
-			usage="continuation"
-		/>
-		<template 
-			name="CONTINUATION-generic-8_template.xml" 
-			title=""
-			min="8"
-			usage="continuation"
-		/>
-		<template 
-			name="CONTINUATION-generic-7_template.xml" 
-			title=""
-			min="7"
-			usage="continuation"
-		/>
-		<template 
-			name="CONTINUATION-generic-6_template.xml" 
-			title=""
-			min="6"
-			usage="continuation"
-		/>
-		<template 
-			name="CONTINUATION-generic-5_template.xml" 
-			title=""
-			min="5"
-			usage="continuation"
-		/>
-		<template 
-			name="CONTINUATION-generic-4_template.xml" 
-			title=""
-			min="4"
-			usage="continuation"
-		/>
-		<template 
-			name="CONTINUATION-generic-3_template.xml" 
-			title=""
-			min="3"
-			usage="continuation"
-		/>
-		<template 
-			name="CONTINUATION-generic-2_template.xml" 
-			title=""
-			min="2"
-			usage="continuation"
-		/>
-		<template 
-			name="CONTINUATION-generic-1_template.xml" 
-			title=""
-			min="1"
-			usage="continuation"
-		/>
-		<!--  END GENERIC CONTINUATION -->
 		
 		<!-- WHATS NEWS -->
 		<template 

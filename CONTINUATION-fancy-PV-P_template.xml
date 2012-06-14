@@ -14,28 +14,27 @@
 					frame: {$switch: [
 						{if: =widescreen, then: [0, 469, 256, 407]},
 						{if: =scale.large, then: [0, 612, 256, 264]}
-					]},
-					options: {hide_strap: true}
+					]}
 			},
             #b2 : { 
 					frame: {$switch: [
 						{if: =widescreen, then: [260, 469, 256, 407]},
 						{if: =scale.large, then: [260, 612, 256, 264]}
 					]},
-					options: {hide_strap: true} 
+					options: {hide_strap: {if:=articles.b2.subsection, equals:=articles.b1.subsection}} 
 			},
             #b3 : { 
 					frame: {$switch: [
 						{if: =widescreen, then: [520, 469, 256, 407]},
 						{if: =scale.large, then: [520, 612, 256, 264]}
 					]},
-					options: {hide_strap: true} 
+					options: {hide_strap: {if:=articles.b3.subsection, equals:=articles.b2.subsection}} 
 			}
 
         }, else: {
-	        #b1 : { frame: [767, 0, 256, 208], options: {hide_strap: true} },
-	        #b2 : { frame: [767, 205, 256, 208], options: {hide_strap: true} },
-	        #b3 : { frame: [767, 413, 256, 208], options: {hide_strap: true} },
+	        #b1 : { frame: [767, 0, 256, 208]},
+	        #b2 : { frame: [767, 205, 256, 208], options: {hide_strap: {if:=articles.b2.subsection, equals:=articles.b1.subsection}} },
+	        #b3 : { frame: [767, 413, 256, 208], options: {hide_strap: {if:=articles.b3.subsection, equals:=articles.b2.subsection}}},
 	        #deco : { frame: [0, 0, 765, 604], options: {bottom_headline:true, no_border:true, F_image:{if: =widescreen, then:true, else:false}, P_image:{if: =widescreen, then:false, else:true}, narrow_text:true}}
         }
     }</style>

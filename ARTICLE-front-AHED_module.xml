@@ -4,11 +4,10 @@
 	<style>{
 		$join: [
 		{#header_top: { padding:[18, 10, 8, 15]}},
-		{.article_headline: {font-size:40}},
-		{.article_subhed: {font-size:20}},
+		{.article_subhed: {font-size:18, line-height:21}},
 		{if: =portrait, then: {
             #mediabucket_container:	{ 
-				frame: [10, 10, 749, 528], background-color:blue
+				frame: [10, 10, 749, 528]
 			},
             #head:{ padding: [10, 180, 0, 0]},
         	#article_copy:{ padding: [0, 180, 0, 0], max-height:250},
@@ -29,16 +28,17 @@
 				width:749,
 				height:522,
 				anchor-x:center
-			}
+			},
+			.article_headline: {font-size:40,line-height:42}
 		
 		}, else: {
-        	#mediabucket_container:	{ frame: [10, 120, 749, 512]},
+        	#mediabucket_container:	{ frame: [10, 125, 749, 512]},
         	#mediabucket: {
 				width:749,
 				height:512,
 				anchor-x:middle
 			},
-        	#head:{ padding: [0, 0, 0, 0], max-height:100},
+        	#head:{ padding: [0, 0, 0, 0], max-height:130},
         	#article_copy:{ padding: [10, 0, 0, 770], max-height:275},
         	#body_container:{ padding: [10, 15, 10, 5],
 				column-height:balance,
@@ -52,7 +52,8 @@
 				width:120,
 				padding: [0, 15, 8, 0],
 				display: { if: =page.count, equals:1, then:none, else:inherit}
-			}
+			},
+			.article_headline: {font-size:36, line-height:38}
         }}
 	]
     }</style>
@@ -64,7 +65,7 @@
 	</box>
 	<panel id="head">
 		<panel id="header_top">
-			<p class="article_headline"><span embed="headline"/> <mark class="key"/></p>
+			<p class="article_headline"><span embed="headline"/><mark class="key"/></p>
 			<h2 class="article_subhed" embed="subhed" />
 		</panel>
 		<box class="hr"></box>

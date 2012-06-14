@@ -652,12 +652,12 @@
 		text-align:center
 	},
 	.byline-credit: {
-		if-any: [
+		display: {if-any: [
 			{if: =page.section, equals: "CIO", then:true},
 			{if: =page.section, equals: "CFO", then:true}
 		],
 		then: none,
-		else: inherit
+		else: inherit}
 	}
 	
 	

@@ -4,8 +4,8 @@
             #view: { frame: [0, 0, 766, 900] },
 			#index: { frame: [594, 535, 173, 365]}
         }, else: {
-            #view : { frame: [0, 0, 1020, 643] },
-			#index: { frame: [770, 400, 253, 242]}        
+            #view : { frame: [0, 0, 1024, 642] },
+			#index: { frame: [771, 91, 253, 242]}        
         }
     }</style>
     <box id="view" embed="article" module="ARTICLE-front-AHED_module.xml" />

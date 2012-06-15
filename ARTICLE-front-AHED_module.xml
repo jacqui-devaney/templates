@@ -32,14 +32,14 @@
 			.article_headline: {font-size:40,line-height:42}
 		
 		}, else: {
-        	#mediabucket_container:	{ frame: [10, 125, 749, 512]},
+        	#mediabucket_container:	{ frame: [10, 110, 749, 512]},
         	#mediabucket: {
 				width:749,
 				height:512,
 				anchor-x:middle
 			},
         	#head:{ padding: [0, 0, 0, 0], max-height:130},
-        	#article_copy:{ padding: [10, 0, 0, 770], max-height:275},
+        	#article_copy:{ padding: [250, 0, 0, 770], max-height:285},
         	#body_container:{ padding: [10, 15, 10, 5],
 				column-height:balance,
 				flow: article_body,
@@ -47,13 +47,16 @@
 				layout-grid-line-offset: {$multiply: [20, =view.zoomlevel]}
 			},
 			#this_continues_label: {
-				top: 377,
+				top: 620,
 				right: 0,
 				width:120,
 				padding: [0, 15, 8, 0],
 				display: { if: =page.count, equals:1, then:none, else:inherit}
 			},
-			.article_headline: {font-size:36, line-height:38}
+			.article_headline: {font-size:36, line-height:38},
+			.hr: {
+				right:0
+			}
         }}
 	]
     }</style>

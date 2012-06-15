@@ -1,9 +1,15 @@
 <jpml id="GENERIC-fullpagead-template">
     <style src="GLOBAL-stylesheet.ejs" />
-	<style>{
+<style>{
+        #fullpage_ad: { display: {
+            if: =scale.phone,
+            and: =intent.section,
+            then: none,
+            else: inherit
+        }}
     }</style>
-	<box id="fullpage_container">
-    	<box id="fullpage_ad" class="ad-fullpage" embed="fullpagead" />
-	</box>
+<box id="fullpage_container">
+    
+<box id="fullpage_ad" class="ad-fullpage" embed="fullpagead" />
+</box>
 </jpml>
-

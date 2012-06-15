@@ -46,16 +46,16 @@
 		}},
 		
 		{#mediabucket: {
-			width:495,
-			height:351,
+			width:314,
+			height:229,
 			anchor-x:center,
 			anchor-y:top
 		}},
 		{if: =portrait, then: {
-			#mediabucket_container:	{ frame: [204, 0, 495, 361],padding:[0, 0, 0, 32]  }
+			#mediabucket_container:	{ frame: [379, 0, 354, 249],padding:[0, 0, 0, 0]  }
 			
         }, else: {
-			#mediabucket_container:	{ frame: [464, 0, 495, 361], padding:[0, 0, 0, 32] }
+			#mediabucket_container:	{ frame: [676, 0, 314, 249], padding:[0, 0, 0, 0] }
 		}},
 		{#filler: {
 			position: relative,
@@ -73,7 +73,17 @@
 		}},
 		{#cfo: {
 			display: {if: =page.section, equals: "CFO", then:inherit, else:none}
+		}},
+		{em: {
+			font-name:Helvetica
+		}},
+		{strong: {
+			font-name:Helvetica
+		}},
+		{cite: {
+			font-name:Helvetica
 		}}
+		
 		
 		
 		]

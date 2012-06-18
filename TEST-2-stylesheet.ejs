@@ -45,5 +45,12 @@
                 ", issue.edition: ",    {$switch: [=issue.edition, "undefined"]},
                 " "
             ]}
+        },
+        #debug_page: { content: 
+            {$join: [
+                "  page.number: ",     {$switch: [=page.number, "undefined"]},
+                " "
+            ]}
         }     
+     
 }

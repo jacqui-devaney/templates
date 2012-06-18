@@ -9,6 +9,7 @@
     <p>Style template debug info 2 (view values): <mark id="debug_view"/></p>
     <p>Style template debug info 3 (device values): <mark id="debug_device"/></p>
     <p>Style template debug info 4 (issue values): <mark id="debug_issue"/></p>
-	<box id="b1" embed="article" module="TEST-2-parameters_module.xml"/>
+	<p>Style module debug info 5 (page number): <mark id="debug_page"/></p>
+    <box id="b1" embed="article" module="TEST-2-parameters_module.xml"/>
 </jpml>
 

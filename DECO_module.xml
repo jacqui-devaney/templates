@@ -81,7 +81,7 @@
 			#wrapper: {
 				padding:[10, 0, 0, 0]
 			}
-		}
+		}, else: {}
 	}</style>
 	<box id="wrapper">
 		<panel id="content">

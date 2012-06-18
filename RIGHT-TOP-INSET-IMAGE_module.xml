@@ -60,9 +60,7 @@
 				display:none
 			},
 			#headline: { padding: [0, 0, 0, 8]}
-			
-			
-		}
+		}, else:{}
 	}</style>
 		<box id="image_container">
 			<image embed="summary-image"/>

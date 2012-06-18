@@ -49,38 +49,36 @@
 			]
 		}</style>
 		<style>{
-			if: =scale.phone, then: {
-				#image_wrapper: { 
-					anchor-x:right,
-					position:relative,
-					width: 76,
-					padding:[0, 5, 0, 15],
-					pixels-per-point-x:1,
-					pixels-per-point-y:1,
-					image-scale:1,
-					display:inherit
-				},
-				image: { 
-					height: 76,
-					display:inherit,
-					padding: [0],
-	                options:{},
-					image-scale: 1
+				if: =scale.phone, then: {
+					#image_wrapper: { 
+						anchor-x:right,
+						position:relative,
+						width: 76,
+						padding:[0, 5, 0, 15],
+						pixels-per-point-x:1,
+						pixels-per-point-y:1,
+						image-scale:1,
+						display:inherit
+					},
+					image: { 
+						height: 76,
+						display:inherit,
+						padding: [0],
+		                options:{},
+						image-scale: 1
 					
-				},
-				.byline: {
-					display:none
-				},
-				#body: {
-					display:none
-				},
-				#wrapper: {
-					padding: [5, 0, 0, 0]
+					},
+					.byline: {
+						display:none
+					},
+					#body: {
+						display:none
+					},
+					#wrapper: {
+						padding: [5, 0, 0, 0]
 				
-				}
-				
-				
-			}
+					}
+				}, else:{}
 		}</style>
 		
 	<box id="wrapper">

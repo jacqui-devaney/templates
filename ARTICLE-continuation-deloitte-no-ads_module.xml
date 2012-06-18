@@ -3,9 +3,6 @@
 	<style src="GLOBAL-stylesheet.ejs" />
 	<style>{
 		$join: [
-		{#deloitte_article_header: {
-			frame: [0, 0, 1024, 53]
-		}},
 		{.deloitte:{
 			background-position: top-left
 		}},

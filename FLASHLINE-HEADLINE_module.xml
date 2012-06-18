@@ -1,4 +1,4 @@
-<jpml id="TOP-IMAGE_module">
+<jpml id="FLASHLINE-HEADLINE_module">
 	<style src="GLOBAL_MODULES-stylesheet.ejs" />
 	<style src="GLOBAL-stylesheet.ejs" />
 	<style>{
@@ -23,10 +23,22 @@
 				background-image: url(link_out.png),
 				background-position:left,
 				padding:[2, 0, 0, 14],
-				display: {if: =article.type, equals: "Deco Summary Liondoor Cio Special 1", then: inherit, else: none}
+				display: {if-any: [
+					{if: =article.type, equals: "Deco Summary Liondoor Cio Special 1", then:true},
+					{if: =article.type, equals: "Deco Summary Liondoor Cfo Special 1", then:true}
+				],
+				then: inherit,
+				else: none}
+				
 			}},
 			{#fromwsj: {
-			  display: {if: =article.type, equals: "Deco Summary Liondoor Cio Special 1", then: none, else: inherit}
+			  	display: {if-any: [
+					{if: =article.type, equals: "Deco Summary Liondoor Cio Special 1", then:true},
+					{if: =article.type, equals: "Deco Summary Liondoor Cfo Special 1", then:true}
+				],
+				then: none,
+				else: inherit}
+			
 			}},
 			{.invisible: { 
 				display:none

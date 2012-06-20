@@ -1,7 +1,6 @@
 <jpml id="SECTION-3story-G-deco-C_template">
 	<style src="GLOBAL-stylesheet.ejs" />
 	<style src="SECTION-stylesheet.ejs" />
-	<style src="PHONE-stylesheet.ejs" />
 	<style>{ 
 		if: =portrait, then: {
 			#b1:	{ 
@@ -32,14 +31,14 @@
 					]},
 					options:{small_headline:true, left:true, no_indent:true} 
 			},
-			#ad_background: {display:{if: =page.number, at-least:1, then:none, else:inherit}},
+			#ad_background: {display:{if: =page.number, at-least:2, then:none, else:inherit}},
 			#h1: {
-					frame:[1, 620, {if: =page.number, at-least:1, then:383, else:255}, 256]
+					frame:[1, 620, {if: =page.number, at-least:2, then:383, else:255}, 256]
 					
 			},
 			#h2: {
-					frame:[{if: =page.number, at-least:1, then:384, else:256}, 620, {if: =page.number, at-least:1, then:384, else:256}, 256],
-					border-width:[0, {if: =page.number, at-least:1, then:0, else:1}, 0, {if: =page.number, at-least:1, then:1, else:0}],
+					frame:[{if: =page.number, at-least:2, then:384, else:256}, 620, {if: =page.number, at-least:2, then:384, else:256}, 256],
+					border-width:[0, {if: =page.number, at-least:2, then:0, else:1}, 0, {if: =page.number, at-least:2, then:1, else:0}],
 					border-color:#b1aca1
 			}
 			
@@ -62,18 +61,18 @@
 			#b2:	{ frame: [594, 0, 183, 328], options:{small_headline:true, no_border:true, left:true, show_image: {if: =widescreen, then:false, else:true}, no_indent:true} },
 			#b3:	{ frame: [594, 328, 183, 291], options:{small_headline:true, left:true, bottom:true, no_indent:true} },
 			#h1: {
-					frame:[786, 0, 238, {if: =page.number, at-least:1, then:310, else:216}],
+					frame:[786, 0, 238, {if: =page.number, at-least:2, then:310, else:216}],
 					options:{hide_image:true}
 					
 			},
 			#h2: {
-					frame:[786, {if: =page.number, at-least:1, then:310, else:216}, 238, {if: =page.number, at-least:1, then:310, else:207}],
-					border-width:[{if: =page.number, at-least:1, then:1, else:0}, 0, 0, 0],
+					frame:[786, {if: =page.number, at-least:2, then:310, else:216}, 238, {if: =page.number, at-least:2, then:310, else:207}],
+					border-width:[{if: =page.number, at-least:2, then:1, else:0}, 0, 0, 0],
 					border-color:#b1aca1,
 					options:{hide_image:true}
 			},
 			
-			#ad_background: {display:{if: =page.number, at-least:1, then:none, else:inherit}}
+			#ad_background: {display:{if: =page.number, at-least:2, then:none, else:inherit}}
 			
 		}
 	}</style>

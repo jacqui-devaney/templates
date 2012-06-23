@@ -1,3 +1,4 @@
+
 <catalog  preprocessor="preprocessor.ejs">
 	<templates>
 		<!-- FRONT SECTION -->
@@ -441,6 +442,34 @@
 			section="BUSINESS_AND_FINANCE" 
 			title="4 story - 2nd story G photo - mirror"
 			min="6" 
+			usage="front" 
+		/>
+		<template 
+			name="SECTION-1story-PV-white_template.xml" 
+			section="BUSINESS_AND_FINANCE" 
+			title="PV (white)"
+			min="3" 
+			usage="front" 
+		/>
+		<template 
+			name="SECTION-1story-PV_template.xml" 
+			section="BUSINESS_AND_FINANCE" 
+			title="PV (grey)"
+			min="3" 
+			usage="front" 
+		/>
+		<template 
+			name="SECTION-1story-PV-1highlight_template.xml" 
+			section="BUSINESS_AND_FINANCE" 
+			title="PV - 1 highlight (grey)"
+			min="2" 
+			usage="front" 
+		/>
+		<template 
+			name="SECTION-1story-PV-1highlight-white_template.xml" 
+			section="BUSINESS_AND_FINANCE" 
+			title="PV - 1 highlight (white)"
+			min="2" 
 			usage="front" 
 		/>
 		
@@ -1480,14 +1509,11 @@
 		<article pages="ARTICLE-pages-hots.xml" type="Heard on the Street Other"/>
 		<article pages="ARTICLE-pages-hots.xml" type="Overheard"/>
 		<article pages="ARTICLE-pages-letters.xml" type="Letters"/>
-		<article pages="ARTICLE-pages-off-duty.xml" type="On Wine"/>
-		<article pages="ARTICLE-pages-off-duty.xml" type="Interior Design"/>
-		<article pages="ARTICLE-pages-off-duty.xml" type="Mobile Special1"/>
-		<article pages="ARTICLE-pages-PV-no-rail.xml" type="At Play"/>
+		<article pages="ARTICLE-pages-off-duty.xml" type="Flower School"/>
+		<article pages="ARTICLE-pages-off-duty.xml" type="Mobile Special 1"/>
 		<article pages="ARTICLE-pages-PV-no-rail.xml" type="Mobile Special"/>
 		<article pages="ARTICLE-pages-AHED.xml" type="A-hed"/>
 	</article-page-plans>
-
 	<display-properties>
 		<ads value="2; 3; 3,5; 3,6; 3,6,8; 3,6,9; 3,6,9,11; 3,6,9,12; 3,6,9,12,14; 3,6,9,12,15"/>
 	</display-properties>

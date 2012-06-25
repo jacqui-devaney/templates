@@ -131,6 +131,14 @@
 			min="4" 
 			usage="front" 
 		/>
+		<template 
+			section="FRONT_SECTION" 
+			name="FRONT-2story-G-deco_template.xml" 
+			title="2 story - G liondoor"
+			min="2" 
+			deco="true" 
+			usage="front" 
+		/>
 		
 		<!-- END FRONT SECTION -->
 		
@@ -213,6 +221,15 @@
 			min="4" 
 			usage="front" 
 		/>
+		<template 
+			name="SECTION-1story-fullsize-deco.xml" 
+			section="OPINION" 
+			title="Full size Deco"
+			min="1" 
+			deco="true"
+			usage="front" 
+		/>
+		
 		<!-- END OPINION -->
 		
 		<!-- BEGIN MARKETPLACE -->
@@ -550,6 +567,35 @@
 			min="6" 
 			usage="front" 
 		/>
+		<template 
+			name="SECTION-1story-PV-white_template.xml" 
+			section="MONEY_AND_INVESTING" 
+			title="PV (white)"
+			min="3" 
+			usage="front" 
+		/>
+		<template 
+			name="SECTION-1story-PV_template.xml" 
+			section="MONEY_AND_INVESTING" 
+			title="PV (grey)"
+			min="3" 
+			usage="front" 
+		/>
+		<template 
+			name="SECTION-1story-PV-1highlight_template.xml" 
+			section="MONEY_AND_INVESTING" 
+			title="PV - 1 highlight (grey)"
+			min="2" 
+			usage="front" 
+		/>
+		<template 
+			name="SECTION-1story-PV-1highlight-white_template.xml" 
+			section="MONEY_AND_INVESTING" 
+			title="PV - 1 highlight (white)"
+			min="2" 
+			usage="front" 
+		/>
+		
 		<template 
 			name="SECTION-1story-P_template.xml" 
 			section="MONEY_AND_INVESTING" 

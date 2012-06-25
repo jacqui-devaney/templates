@@ -33,6 +33,44 @@
 			min="5"
 			usage="front"
 		/>
+		<template 
+			name="SECTION-1story-fullsize-deco.xml" 
+			section="BUSINESS_AND_FINANCE" 
+			title="Full size Deco"
+			min="1" 
+			deco="true"
+			usage="front" 
+		/>
+		<template 
+			name="SECTION-1story-PV_template.xml" 
+			section="BUSINESS_AND_FINANCE" 
+			title="PV (grey)"
+			min="3" 
+			usage="front" 
+		/>
+		<template 
+			name="SECTION-1story-PV-1highlight_template.xml" 
+			section="BUSINESS_AND_FINANCE" 
+			title="PV - 1 highlight (grey)"
+			min="2" 
+			usage="front" 
+		/>
+		<template 
+			name="SECTION-1story-PV-1highlight-white_template.xml" 
+			section="BUSINESS_AND_FINANCE" 
+			title="PV - 1 highlight (white)"
+			min="2" 
+			usage="front" 
+		/>
+		
+		<template 
+			name="SECTION-1story-P_template.xml" 
+			section="BUSINESS_AND_FINANCE" 
+			title="P-photo"
+			min="3" 
+			usage="front" 
+		/>
+		
 		<!-- END BUSINESS AND FINANCE -->
 		
 		<!-- FRIDAY JOURNAL -->
@@ -50,6 +88,44 @@
 			min="5"
 			usage="front"
 		/>
+		<template 
+			name="SECTION-1story-fullsize-deco.xml" 
+			section="FRIDAY_JOURNAL" 
+			title="Full size Deco"
+			min="1" 
+			deco="true"
+			usage="front" 
+		/>
+		<template 
+			name="SECTION-1story-PV_template.xml" 
+			section="FRIDAY_JOURNAL" 
+			title="PV (grey)"
+			min="3" 
+			usage="front" 
+		/>
+		<template 
+			name="SECTION-1story-PV-1highlight_template.xml" 
+			section="FRIDAY_JOURNAL" 
+			title="PV - 1 highlight (grey)"
+			min="2" 
+			usage="front" 
+		/>
+		<template 
+			name="SECTION-1story-PV-1highlight-white_template.xml" 
+			section="FRIDAY_JOURNAL" 
+			title="PV - 1 highlight (white)"
+			min="2" 
+			usage="front" 
+		/>
+		
+		<template 
+			name="SECTION-1story-P_template.xml" 
+			section="FRIDAY_JOURNAL" 
+			title="P-photo"
+			min="3" 
+			usage="front" 
+		/>
+		
 		<!-- END FRIDAY JOURNAL -->
 		
 		<!-- MARKETPLACE -->
@@ -113,6 +189,43 @@
 			min="6" 
 			usage="front" 
 		/>
+		<template 
+			name="SECTION-1story-fullsize-deco.xml" 
+			section="MARKETPLACE" 
+			title="Full size Deco"
+			min="1" 
+			deco="true"
+			usage="front" 
+		/>
+		<template 
+			name="SECTION-1story-PV_template.xml" 
+			section="MARKETPLACE" 
+			title="PV (grey)"
+			min="3" 
+			usage="front" 
+		/>
+		<template 
+			name="SECTION-1story-PV-1highlight_template.xml" 
+			section="MARKETPLACE" 
+			title="PV - 1 highlight (grey)"
+			min="2" 
+			usage="front" 
+		/>
+		<template 
+			name="SECTION-1story-PV-1highlight-white_template.xml" 
+			section="MARKETPLACE" 
+			title="PV - 1 highlight (white)"
+			min="2" 
+			usage="front" 
+		/>
+		
+		<template 
+			name="SECTION-1story-P_template.xml" 
+			section="MARKETPLACE" 
+			title="P-photo"
+			min="3" 
+			usage="front" 
+		/>
 		
 		<!-- END MARKETPLACE -->
 
@@ -145,6 +258,43 @@
 			title="3story - G photo marketdata"
 			min="5"
 			usage="front"
+		/>
+		<template 
+			name="SECTION-1story-fullsize-deco.xml" 
+			section="MONEY_AND_INVESTING" 
+			title="Full size Deco"
+			min="1" 
+			deco="true"
+			usage="front" 
+		/>
+		<template 
+			name="SECTION-1story-PV_template.xml" 
+			section="MONEY_AND_INVESTING" 
+			title="PV (grey)"
+			min="3" 
+			usage="front" 
+		/>
+		<template 
+			name="SECTION-1story-PV-1highlight_template.xml" 
+			section="MONEY_AND_INVESTING" 
+			title="PV - 1 highlight (grey)"
+			min="2" 
+			usage="front" 
+		/>
+		<template 
+			name="SECTION-1story-PV-1highlight-white_template.xml" 
+			section="MONEY_AND_INVESTING" 
+			title="PV - 1 highlight (white)"
+			min="2" 
+			usage="front" 
+		/>
+		
+		<template 
+			name="SECTION-1story-P_template.xml" 
+			section="MONEY_AND_INVESTING" 
+			title="P-photo"
+			min="3" 
+			usage="front" 
 		/>
 		<!-- END MONEY AND INVESTING -->
 		
@@ -223,7 +373,14 @@
 			min="6" 
 			usage="front" 
 		/>
-		
+		<template 
+			name="SECTION-1story-fullsize-deco.xml" 
+			section="NEW_YORK" 
+			title="Full size Deco"
+			min="1" 
+			deco="true"
+			usage="front" 
+		/>
 		<!-- END NEW YORK -->
 		
 		<!-- OFF DUTY -->
@@ -233,6 +390,43 @@
 			title="2 story-G photo"
 			min="4"
 			usage="front"
+		/>
+		<template 
+			name="SECTION-1story-fullsize-deco.xml" 
+			section="OFF_DUTY" 
+			title="Full size Deco"
+			min="1" 
+			deco="true"
+			usage="front" 
+		/>
+		<template 
+			name="SECTION-1story-PV_template.xml" 
+			section="OFF_DUTY" 
+			title="PV (grey)"
+			min="3" 
+			usage="front" 
+		/>
+		<template 
+			name="SECTION-1story-PV-1highlight_template.xml" 
+			section="OFF_DUTY" 
+			title="PV - 1 highlight (grey)"
+			min="2" 
+			usage="front" 
+		/>
+		<template 
+			name="SECTION-1story-PV-1highlight-white_template.xml" 
+			section="OFF_DUTY" 
+			title="PV - 1 highlight (white)"
+			min="2" 
+			usage="front" 
+		/>
+		
+		<template 
+			name="SECTION-1story-P_template.xml" 
+			section="OFF_DUTY" 
+			title="P-photo"
+			min="3" 
+			usage="front" 
 		/>
 		<!-- END OFF DUTY -->
 		
@@ -288,6 +482,43 @@
 			min="6" 
 			usage="front" 
 		/>
+		<template 
+			name="SECTION-1story-fullsize-deco.xml" 
+			section="PERSONAL_JOURNAL" 
+			title="Full size Deco"
+			min="1" 
+			deco="true"
+			usage="front" 
+		/>
+		<template 
+			name="SECTION-1story-PV_template.xml" 
+			section="PERSONAL_JOURNAL" 
+			title="PV (grey)"
+			min="3" 
+			usage="front" 
+		/>
+		<template 
+			name="SECTION-1story-PV-1highlight_template.xml" 
+			section="PERSONAL_JOURNAL" 
+			title="PV - 1 highlight (grey)"
+			min="2" 
+			usage="front" 
+		/>
+		<template 
+			name="SECTION-1story-PV-1highlight-white_template.xml" 
+			section="PERSONAL_JOURNAL" 
+			title="PV - 1 highlight (white)"
+			min="2" 
+			usage="front" 
+		/>
+		
+		<template 
+			name="SECTION-1story-P_template.xml" 
+			section="PERSONAL_JOURNAL" 
+			title="P-photo"
+			min="3" 
+			usage="front" 
+		/>
 		
 		<!-- END PERSONAL JOURNAL -->
 		
@@ -299,6 +530,43 @@
 			min="5"
 			usage="front"
 		/>
+		<template 
+			name="SECTION-1story-fullsize-deco.xml" 
+			section="REVIEW" 
+			title="Full size Deco"
+			min="1" 
+			deco="true"
+			usage="front" 
+		/>
+		<template 
+			name="SECTION-1story-PV_template.xml" 
+			section="REVIEW" 
+			title="PV (grey)"
+			min="3" 
+			usage="front" 
+		/>
+		<template 
+			name="SECTION-1story-PV-1highlight_template.xml" 
+			section="REVIEW" 
+			title="PV - 1 highlight (grey)"
+			min="2" 
+			usage="front" 
+		/>
+		<template 
+			name="SECTION-1story-PV-1highlight-white_template.xml" 
+			section="REVIEW" 
+			title="PV - 1 highlight (white)"
+			min="2" 
+			usage="front" 
+		/>
+		
+		<template 
+			name="SECTION-1story-P_template.xml" 
+			section="REVIEW" 
+			title="P-photo"
+			min="3" 
+			usage="front" 
+		/>
 		<!-- END REVIEW -->
 		
 		<!-- JOURNAL REPORT -->
@@ -309,6 +577,43 @@
 			min="4"
 			usage="front"
 		/>
+		<template 
+			name="SECTION-1story-fullsize-deco.xml" 
+			section="THE_JOURNAL_REPORT" 
+			title="Full size Deco"
+			min="1" 
+			deco="true"
+			usage="front" 
+		/>
+		<template 
+			name="SECTION-1story-PV_template.xml" 
+			section="MARKETPLACE" 
+			title="PV (grey)"
+			min="3" 
+			usage="front" 
+		/>
+		<template 
+			name="SECTION-1story-PV-1highlight_template.xml" 
+			section="THE_JOURNAL_REPORT" 
+			title="PV - 1 highlight (grey)"
+			min="2" 
+			usage="front" 
+		/>
+		<template 
+			name="SECTION-1story-PV-1highlight-white_template.xml" 
+			section="THE_JOURNAL_REPORT" 
+			title="PV - 1 highlight (white)"
+			min="2" 
+			usage="front" 
+		/>
+		
+		<template 
+			name="SECTION-1story-P_template.xml" 
+			section="THE_JOURNAL_REPORT" 
+			title="P-photo"
+			min="3" 
+			usage="front" 
+		/>
 		<!-- END JOURNAL REPORT -->
 
 		<!-- WEEKEND JOURNAL -->
@@ -318,6 +623,43 @@
 			title="2 story-G photo"
 			min="4"
 			usage="front"
+		/>
+		<template 
+			name="SECTION-1story-fullsize-deco.xml" 
+			section="WEEKEND_JOURNAL" 
+			title="Full size Deco"
+			min="1" 
+			deco="true"
+			usage="front" 
+		/>
+		<template 
+			name="SECTION-1story-PV_template.xml" 
+			section="WEEKEND_JOURNAL" 
+			title="PV (grey)"
+			min="3" 
+			usage="front" 
+		/>
+		<template 
+			name="SECTION-1story-PV-1highlight_template.xml" 
+			section="WEEKEND_JOURNAL" 
+			title="PV - 1 highlight (grey)"
+			min="2" 
+			usage="front" 
+		/>
+		<template 
+			name="SECTION-1story-PV-1highlight-white_template.xml" 
+			section="WEEKEND_JOURNAL" 
+			title="PV - 1 highlight (white)"
+			min="2" 
+			usage="front" 
+		/>
+		
+		<template 
+			name="SECTION-1story-P_template.xml" 
+			section="WEEKEND_JOURNAL" 
+			title="P-photo"
+			min="3" 
+			usage="front" 
 		/>
 		<!-- END WEEKEND JOURNAL -->
 
@@ -398,18 +740,131 @@
 			min="6" 
 			usage="front" 
 		/>
-		
+		<template 
+			name="SECTION-1story-fullsize-deco.xml" 
+			section="SPECIAL_REPORT" 
+			title="Full size Deco"
+			min="1" 
+			deco="true"
+			usage="front" 
+		/>
+		<template 
+			name="SECTION-1story-PV-1highlight_template.xml" 
+			section="SPECIAL_REPORT" 
+			title="PV - 1 highlight (grey)"
+			min="2" 
+			usage="front" 
+		/>
+		<template 
+			name="SECTION-1story-PV-1highlight-white_template.xml" 
+			section="SPECIAL_REPORT" 
+			title="PV - 1 highlight (white)"
+			min="2" 
+			usage="front" 
+		/>
+				
 		<!-- END SPECIAL REPORT -->
 		
 		<!--  SPECIAL REPORT 2 -->
 		<template 
-			name="SECTION-3story-G-deco-C_template.xml" 
+			name="SECTION-4story-D-C_template.xml"
 			section="SPECIAL_REPORT_TWO" 
+			title="4 story plain"
+			min="6" 
 			deco="true" 
-			title="3 story - G liondoor"
-			min="5" 
 			usage="front" 
 		/>
+		
+		<template 
+			name="SECTION-3story-G-deco-C_template.xml"
+			section="SPECIAL_REPORT_TWO" 
+			deco="true" 
+			title="3 story - G Media Deco"
+			min="5"
+			usage="front"
+		/>
+		<template 
+			name="SECTION-4story-smallG-deco_template.xml"
+			section="SPECIAL_REPORT_TWO" 
+			title="4 story-Small G Media Deco"
+			min="6" 
+			deco="true"
+			usage="front"
+		/>
+		<template 
+			name="SECTION-1story-PV_template.xml"
+			section="SPECIAL_REPORT_TWO" 
+			title="PV photo - Grey highlights"
+			min="3"
+			usage="front"
+		/>
+		<template 
+			name="SECTION-1story-P_template.xml"
+			section="SPECIAL_REPORT_TWO" 
+			title="P photo - Grey highlights"
+			min="3"
+			usage="front"
+		/>
+		<template 
+			name="SECTION-3story-G_template.xml"
+			section="SPECIAL_REPORT_TWO" 
+			title="3 story - G photo"
+			min="5"
+			usage="front"
+		/>
+		<template 
+			name="SECTION-4story-smallG-top_template.xml" 
+			section="SPECIAL_REPORT_TWO" 
+			title="4 story - G photo"
+			min="6" 
+			usage="front" 
+		/>
+		<template 
+			name="SECTION-3story-G-mirror_template.xml" 
+			section="SPECIAL_REPORT_TWO" 
+			title="3 story - G photo mirror"
+			min="5" 
+			deco="true"
+			usage="front" 
+		/>
+		<template 
+			name="SECTION-4story-smallG-deco-mirror_template.xml" 
+			section="SPECIAL_REPORT_TWO" 
+			title="4 story - small G Media liondoor - mirror"
+			min="6" 
+			deco="true" 
+			usage="front" 
+		/>
+		<template 
+			name="SECTION-4story-smallG-top-mirror_template.xml" 
+			section="SPECIAL_REPORT_TWO" 
+			title="4 story - G photo - mirror"
+			min="6" 
+			usage="front" 
+		/>
+		<template 
+			name="SECTION-1story-fullsize-deco.xml" 
+			section="SPECIAL_REPORT_TWO" 
+			title="Full size Deco"
+			min="1" 
+			deco="true"
+			usage="front" 
+		/>
+		<template 
+			name="SECTION-1story-PV-1highlight_template.xml" 
+			section="SPECIAL_REPORT_TWO" 
+			title="PV - 1 highlight (grey)"
+			min="2" 
+			usage="front" 
+		/>
+		<template 
+			name="SECTION-1story-PV-1highlight-white_template.xml" 
+			section="SPECIAL_REPORT_TWO" 
+			title="PV - 1 highlight (white)"
+			min="2" 
+			usage="front" 
+		/>
+		
 		<!-- END SPECIAL REPORT 2 -->
 		
 		<!-- OPINION -->
@@ -440,6 +895,14 @@
 			title="4 story (1RandO-1CMTRY-2HLT)"
 			min="4"
 			usage="front"
+		/>
+		<template 
+			name="SECTION-1story-fullsize-deco.xml" 
+			section="OPINION" 
+			title="Full size Deco"
+			min="1" 
+			deco="true"
+			usage="front" 
 		/>
 		<!-- END OPINION -->
 		
@@ -852,10 +1315,8 @@
 		<article pages="ARTICLE-pages-hots.xml" type="Overheard"/>
 		<article pages="ARTICLE-pages-hots.xml" type="Headrd on the Street Other"/>
 		<article pages="ARTICLE-pages-letters.xml" type="Letters"/>
-		<article pages="ARTICLE-pages-off-duty.xml" type="On Wine"/>
-		<article pages="ARTICLE-pages-off-duty.xml" type="Interior Design"/>
-		<article pages="ARTICLE-pages-off-duty.xml" type="Mobile Special1"/>
-		<article pages="ARTICLE-pages-PV-no-rail.xml" type="At Play"/>
+		<article pages="ARTICLE-pages-off-duty.xml" type="Flower School"/>
+		<article pages="ARTICLE-pages-off-duty.xml" type="Mobile Special 1"/>
 		<article pages="ARTICLE-pages-PV-no-rail.xml" type="Mobile Special"/>
 		<article pages="ARTICLE-pages-AHED.xml" type="A-hed"/>
 	</article-page-plans>

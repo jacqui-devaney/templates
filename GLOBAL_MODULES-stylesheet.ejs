@@ -7,7 +7,7 @@
             {if: =extents.huge, less-than: 1.5, then: true, else: false}
         ], then: 65, else: 75 },
 		line-height:75,
-		text-scale: {if: =scale.small, then: .9, else: inherit}
+		text-scale: {if: =scale.small, then: {$multiply: [=scale.text, 0.9] }, else: inherit}
 	},
 	#bignews_large_headline: {
 		font-name:DJ5EscrowCond-Bold,
@@ -17,7 +17,7 @@
             {if: =extents.huge, less-than: 1.5, then: true, else: false}
         ], then: 57, else: 67 },
 		line-height:67,
-		text-scale: {if: =scale.small, then: .9, else: inherit}
+		text-scale: {if: =scale.small, then: {$multiply: [=scale.text, 0.9] }, else: inherit}
 	},
 	#bignews_big_headline: {
 		font-name:DJ5EscrowCond-Bold,
@@ -27,7 +27,7 @@
             {if: =extents.big, less-than: 1.5, then: true, else: false}
         ], then: 47, else: 57},
 		line-height:61,
-		text-scale: {if: =scale.small, then: .9, else: inherit}
+		text-scale: {if: =scale.small, then: {$multiply: [=scale.text, 0.9] }, else: inherit}
 	},
 	#bignews_small_headline: {
 		font-name:DJ5EscrowCond-Bold,
@@ -37,7 +37,7 @@
             {if: =extents.big, less-than: 1.5, then: true, else: false}
         ], then: 39, else: 49},
 		line-height:49,
-		text-scale: {if: =scale.small, then: .9, else: inherit}
+		text-scale: {if: =scale.small, then: {$multiply: [=scale.text, 0.9] }, else: inherit}
 	},
 	#large_headline: {
 		font-name:DJ5EscrowCond-Bold,
@@ -47,7 +47,7 @@
             {if: =extents.large, less-than: 1.5, then: true, else: false}
         ], then: 32, else: 40 },
 		line-height:42,
-		text-scale: {if: =scale.small, then: .9, else: inherit}
+		text-scale: {if: =scale.small, then: {$multiply: [=scale.text, 0.9] }, else: inherit}
 		
 		
 	},
@@ -59,7 +59,7 @@
             {if: =extents.medium, less-than: 1.5, then: true, else: false}
         ], then: 24, else: 32 },
 		line-height:36,
-		text-scale: {if: =scale.small, then: .9, else: inherit}
+		text-scale: {if: =scale.small, then: {$multiply: [=scale.text, 0.9] }, else: inherit}
 		
 		
 	},
@@ -67,14 +67,14 @@
 		font-name:DJ5EscrowCond-Bold,
 		font-size:24,
 		line-height:26,
-		text-scale: {if: =scale.small, then: .85, else: inherit}
+		text-scale: {if: =scale.small, then: {$multiply: [=scale.text, 0.85] }, else: inherit}
 		
 	},
 	#extra_small_headline: {
 		font-name:DJ5EscrowCond-Bold,
 		font-size:20,
 		line-height:22,
-		text-scale: {if: =scale.small, then: .85, else: inherit}
+		text-scale: {if: =scale.small, then: {$multiply: [=scale.text, 0.85] }, else: inherit}
 		
 	},
 	.article_headline: {
@@ -90,7 +90,7 @@
 		color:#333
 	},
 	.offduty_article_headline: {
-		font-name:ChronicleDisplay-Roman,
+		font-name:DJ5EscrowCond-Bold,
 		font-size:40,
 		line-height:44,
 		color:#333
@@ -104,11 +104,10 @@
 		padding: [0, 0, 5, 0]
 	},
 	.offduty_article_subhed: {
-		font-name:Stainless-Regular,
+		font-name:DJ5EscrowCond-BoldItalic,
 		font-size:16,
 		line-height:19,
-		color:#5e5e5e,
-		text-transform:uppercase
+		color:#5e5e5e
 	},
 	.article_flashline: {
 		font-name:DJ5RetinaCd-SemiBold,
@@ -156,7 +155,7 @@
 		line-height:{$multiply:18},
 		text-overflow: " \u00bb",
         text-align: { if: =options.left, then:left, else:=justify},
-		text-scale: {if: =widescreen, then: 1.2, else: inherit}
+		text-scale: {if: =widescreen, then: {$multiply: [=scale.text, 1.2] }, else: inherit}
 
 	},
 	h2: {
@@ -191,7 +190,7 @@
 		font-size:13,
 		line-height:18,
 		parargraph-padding: [ 0, 0, 3, 0 ],
-		text-scale: {if: =widescreen, then: 1.1, else: inherit}
+		text-scale: {if: =widescreen, then: {$multiply: [=scale.text, 1.1] }, else: inherit}
 		
 	},
 	.article_byline: {
@@ -226,7 +225,7 @@
 		font-size:24,
 		line-height:24,
 		color:#000,
-		text-scale: {if: =scale.small, then: .8, else: inherit}
+		text-scale: {if: =scale.small, then: {$multiply: [=scale.text, .8] }, else: inherit}
 		
 	},
 	#deco_bottom_headline: {
@@ -247,7 +246,7 @@
 		line-height:13,
 		color:#464646,
 		text-overflow: {if: =options.fake_deco, then:" \u00bb"},
-		text-scale: {if: =widescreen, then: 1.1, else: inherit}
+		text-scale: {if: =widescreen, then: {$multiply: [=scale.text, 1.1] }, else: inherit}
 		
 	},
 	.subhed: {
@@ -266,14 +265,14 @@
 		font-size:17,
 		line-height:16,
 		padding: [ 0, 0, 6, 0 ],
-		text-scale: {if: =widescreen, then: 1.1, else: inherit}
+		text-scale: {if: =widescreen, then: {$multiply: [=scale.text, 1.1] }, else: inherit}
 	},
 	#continuation_headline: {
 		font-name:DJ5Exchange-Bold,
 		font-size:17,
 		line-height:16,
 		padding: [ 0, 0, 6, 0 ],
-		text-scale: {if: =widescreen, then: 1.1, else: inherit}
+		text-scale: {if: =widescreen, then: {$multiply: [=scale.text, 1.1] }, else: inherit}
 	},
 	.continuation_body: {
 		font-name:DJ5Exchange-Medium,
@@ -282,7 +281,7 @@
 		text-overflow: " \u00bb",
         text-align: left,
 		text-indent:20,
-		text-scale:{if: =widescreen, then: 1.2, else: 1}
+		text-scale:{if: =widescreen, then: {$multiply: [=scale.text, 1.1] }, else: inherit}
 		
 	},
 	
@@ -307,7 +306,7 @@
 		line-height:17,
 		color:#000,
 		padding: [ 5, 0, 5, 0 ],
-		text-scale:{if: =widescreen, then: 1.1, else: 1}
+		text-scale:{if: =widescreen, then: {$multiply: [=scale.text, 1.1] }, else: inherit}
 		
 	},
 	.highlight_byline: {
@@ -315,7 +314,7 @@
 		font-size:12,
 		line-height:16,
 		paragraph-padding: [ 4, 0, 3, 0 ],
-		text-scale:{if: =widescreen, then: 1.1, else: 1}
+		text-scale:{if: =widescreen, then: {$multiply: [=scale.text, 1.1] }, else: inherit}
 		
 	},
 	.highlight_body: {
@@ -324,7 +323,7 @@
 		line-height:16,
 		text-align:left,
 		color:#000,
-		text-scale:{if: =widescreen, then: 1.1, else: 1},
+		text-scale:{if: =widescreen, then: {$multiply: [=scale.text, 1.1] }, else: inherit},
 		text-indent:{if: =options.indent, then:20, else: inherit}
 	},
 	.highlight_flashline_small: {
@@ -416,7 +415,7 @@
 		line-height:17,
 		paragraph-padding: [ 0, 0, 3, 0 ],
 		text-align:left,
-		text-scale: {if: =widescreen, then: 1.1, else: inherit}
+		text-scale: {if: =widescreen, then: {$multiply: [=scale.text, 1.1] }, else: inherit}
 		
 	},
 	.ahed_body: {
@@ -425,7 +424,7 @@
 		line-height:18,
 		padding: [ 0, 0, 8, 0 ],
 		text-align:left,
-		text-scale: {if: =widescreen, then: 1.1, else: inherit}
+		text-scale: {if: =widescreen, then: {$multiply: [=scale.text, 1.1] }, else: inherit}
 		
 	},
 	#rando_header: { 
@@ -489,7 +488,7 @@
 		font-size:30,
 		line-height:34,
 		text-align:center,
-		text-scale:{if: =scale.small, then: .9, else: 1}
+		text-scale:{if: =scale.small, then: {$multiply: [=scale.text, 0.9] }, else: inherit}
 		
 	},
 	.opinion_dek:{
@@ -498,7 +497,7 @@
 		line-height:24,
 		text-align:center,
 		color:#989898,
-		text-scale:{if: =scale.small, then: .9, else: 1}
+		text-scale:{if: =scale.small, then: {$multiply: [=scale.text, 0.9] }, else: inherit}
 		
 	},
 	.letters_headline: {
@@ -507,7 +506,7 @@
 		text-align:center,
 		line-height:30,
 		padding: [0, 0, 5, 0],
-		text-scale:{if: =scale.small, then: .9, else: 1}
+		text-scale:{if: =scale.small, then: {$multiply: [=scale.text, 0.9] }, else: inherit}
 		
 	},
 	#continued: {

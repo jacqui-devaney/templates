@@ -3,9 +3,9 @@
 	<style>{
 		#view: {
 			width:=view.width,
-			height:=view.height
+			height:{$subtract:[=view.height, 50]}
 		}
 	}</style>
     <box id="view" embed="article" class="maude" module="ARTICLE-continuation-phone-ads_module.xml" />
-    <box id="index" embed="index" />
+    <box id="ad article_ad" class="maude unit_ad" embed="advertisement" />
 </jpml>

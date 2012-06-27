@@ -1,0 +1,11 @@
+<jpml id="ARTICLE-continuation-phone-ads_template">
+	<style src="PHONE-stylesheet.ejs" />
+	<style>{
+		#view: {
+			width:=view.width,
+			height:=view.height
+		}
+	}</style>
+    <box id="view" embed="article" class="maude" module="ARTICLE-continuation-phone-ads_module.xml" />
+    <box id="index" embed="index" />
+</jpml>

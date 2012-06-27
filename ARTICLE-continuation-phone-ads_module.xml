@@ -1,0 +1,24 @@
+<jpml id="ARTICLE-continuation-phone-ads_module">
+	<style src="GLOBAL_MODULES-stylesheet.ejs" />
+	<style src="GLOBAL-stylesheet.ejs" />
+	<style src="PHONE-MODULES-stylesheet.ejs" />
+	<style>{
+		$join: [
+		{#body_container : { padding: [10]}},
+		{.article_body: { 
+			layout-grid-line: {$multiply: [22, =view.zoomlevel]}
+        }},
+		{#body_continuation: {
+			content: from-flow(article_body),
+			flow: article_body
+		}}
+		]
+    }</style>
+	
+	<panel id="body_container">
+        <box id="ad_container">
+			<box id="article_advertisement" class="ad-twocolumn" embed="advertisement" />
+		</box>
+    	<panel class="article_body" id="body_continuation" embed="body" />
+	</panel>
+</jpml>

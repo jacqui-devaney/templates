@@ -1275,14 +1275,14 @@
 		
 		<!-- WHATS NEWS -->
 		<template 
-			name="WHATSNEWS-dummy_template.xml"
+			name="WHATSNEWS-phone_template.xml"
 			usage="front" 
 			title=""
 			min="1"
 			section="WHATS_NEWS"
 		/>
 		<template 
-			name="WHATSNEWS-dummy_template.xml"
+			name="WHATSNEWS-phone_template.xml"
 			usage="continuation" 
 			title=""
 			min="1"

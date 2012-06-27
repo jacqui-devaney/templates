@@ -33,7 +33,11 @@
 
 			scale: {
 				dpi: { $divide: [=device.dpi, 132] },
-				
+				text: {if-all: [
+					{ if: =device.size, less-than: 8.8, then: true, else: false },
+					{ if: =device.platform, equals: Android, then: true, else: false },
+					{ if: =device.dpi, at-least: 210, then: true, else: false }
+				], then: 1.41, else: 1},
 				pagex: { if: =view.width, more-than: 480, then: {
 					if: =view.width, 
 					less-than: =view.height,

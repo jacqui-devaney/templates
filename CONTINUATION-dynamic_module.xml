@@ -60,7 +60,7 @@
 		 	<box id="image_container">
 				<image embed="summary-image"/>
 			</box>
-			<p class="continuation_headline"><span embed="headline" /> some more stuff<mark class="key" /></p>
+			<p class="continuation_headline"><span embed="headline" /><mark class="key" /></p>
 			<panel embed="body" class="continuation_body"/>
 		</panel>
 </jpml>

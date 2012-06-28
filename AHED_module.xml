@@ -2,7 +2,10 @@
 <style src="GLOBAL_MODULES-stylesheet.ejs"/>
     <style>{
 				$join: [        
-					{jpml: { padding: [0, 2, 0, 2] }},
+					{jpml: { 
+						padding: [0, 2, 0, 2],
+					 	text-scale: =scale.text
+					}},
 			        {#top_container: {
 			            border-image: url(ahed-border.png),
 			            border-slice: [14],

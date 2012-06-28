@@ -39,10 +39,17 @@
 			image: { 
 				height: 76,
 				display:inherit,
-				padding: [0],
+				padding: [8, 0, 0, 0],
                 options:{},
 				image-scale: 1
 				
+			},
+			#body_container: {
+				display:none
+			},
+			jpml: {
+				border-width:[0, 0, 1, 0],
+				border-color:#b1aca1
 			}
 			
 		}, else:{}

@@ -1,37 +1,61 @@
 <jpml id="SECTION-3story-G-deco-C_template">
 	<style src="GLOBAL-stylesheet.ejs" />
 	<style src="SECTION-stylesheet.ejs" />
+	<style src="PHONE-stylesheet.ejs" />
+	<style>{
+			#b1: {options:{large_headline:true, no_border:{if: =scale.phone, then:false}, two_columns:{if: =scale.phone, then:false, else:true}, byline:{if: =scale.small, then:true, else:false}}},
+
+			#b2: {options: { $switch: [
+					{if: =scale.phone, then: {small_headline:true, left:true, show_image:true, no_indent:true}},
+					{if: =portrait, then: {small_headline:true, no_border:true, left:true, show_image:true, no_indent:true}},
+					{if: =landscape, then: {small_headline:true, no_border:true, left:true, show_image: {if: =widescreen, then:false, else:true}, no_indent:true}}			
+				]}},
+			#b3: {options: { $switch: [
+					{if: =scale.phone, then: {small_headline:true, no_border:true}},
+					{if: =portrait, then: {small_headline:true, left:true, no_indent:true}},
+					{if: =landscape, then: {small_headline:true, left:true, bottom:true, no_indent:true}}			
+				]}},
+			#ad_background: {display:{if: =page.number, at-least:2, then:none, else:inherit}},
+			#h1: {options:{hide_image:{if-all: [=scale.small, =landscape], then:true, else:false}}},
+			#h2: {options:{hide_image:{if-all: [=scale.small, =landscape], then:true, else:false}}},
+			#deco: {options: { $switch: [
+					{if: =scale.phone, then: {normal_headline:true, bottom_border:true, G_image:true}},
+					{if: =portrait, then: {normal_headline:true}},
+					{if: =landscape, then: {normal_headline:true, F_image:{if: =widescreen, then:true, else:false}}}			
+				]}}
+			
+	}</style>
 	<style>{ 
-		if: =portrait, then: {
+		$switch: [
+		{if: =scale.phone, then:{
+		}},
+		{if: =portrait, then: {
 			#b1:	{ 
 						frame: {$switch: [
 						{if: =widescreen, then: [0, 0, 514, 257]},
 						{if: =scale.large, then: [0, 0, 571, 188]}
-					]},
-					options:{large_headline:true, no_border:true, two_columns:true, byline:{if: =scale.small, then:true, else:false}} 
+					]}
+					 
 			},
 			#deco:	{ 
 						frame: {$switch: [
 						{if: =widescreen, then: [0, 257, 514, 362]},
 						{if: =scale.large, then: [0, 188, 569, 432]}
-					]},
-					options:{normal_headline:true} 
+					]}
 			},
 			#b2:	{ 
 						frame: {$switch: [
 						{if: =widescreen, then: [526, 0, 240, 324]},
 						{if: =scale.large, then: [583, 0, 183, 324]}
-					]},
-					options:{small_headline:true, no_border:true, left:true, show_image:true, no_indent:true} 
+					]}
 			},
 			#b3:	{ 
 						frame: {$switch: [
 						{if: =widescreen, then: [526, 325, 240, 294]},
 						{if: =scale.large, then: [583, 325, 183, 294]}
-					]},
-					options:{small_headline:true, left:true, no_indent:true} 
+					]}
 			},
-			#ad_background: {display:{if: =page.number, at-least:2, then:none, else:inherit}},
+			
 			#h1: {
 					frame:[1, 620, {if: =page.number, at-least:2, then:383, else:255}, 256]
 					
@@ -43,49 +67,46 @@
 			}
 			
 			
-		}, else: {
+		}}, 
+		{if: =landscape, then: {
 			#b1:	{ 
 						frame: {$switch: [
 						{if: =widescreen, then: [11, 0, 571, 250]},
 						{if: =scale.large, then: [11, 0, 571, 188]}
-					]},
-					options:{large_headline:true, no_border:true, two_columns:true, byline:{if: =scale.small, then:true, else:false}} 
+					]} 
 			},
 			#deco:	{ 
 						frame: {$switch: [
-						{if: =widescreen, then: [11, 250, 571, 370]},
-						{if: =scale.large, then: [11, 188, 569, 432]}
-					]}, 
-						options:{normal_headline:true, F_image:{if: =widescreen, then:true, else:false}} 
+							{if: =widescreen, then: [11, 250, 571, 370]},
+							{if: =scale.large, then: [11, 188, 569, 432]}
+						]}
 					},
-			#b2:	{ frame: [594, 0, 183, 328], options:{small_headline:true, no_border:true, left:true, show_image: {if: =widescreen, then:false, else:true}, no_indent:true} },
-			#b3:	{ frame: [594, 328, 183, 291], options:{small_headline:true, left:true, bottom:true, no_indent:true} },
+			#b2:	{ frame: [594, 0, 183, 328]},
+			#b3:	{ frame: [594, 328, 183, 291]},
 			#h1: {
-					frame:[786, 0, 238, {if: =page.number, at-least:2, then:310, else:216}],
-					options:{hide_image:true}
+					frame:[786, 0, 238, {if: =page.number, at-least:2, then:310, else:216}]
 					
 			},
 			#h2: {
 					frame:[786, {if: =page.number, at-least:2, then:310, else:216}, 238, {if: =page.number, at-least:2, then:310, else:207}],
 					border-width:[{if: =page.number, at-least:2, then:1, else:0}, 0, 0, 0],
-					border-color:#b1aca1,
-					options:{hide_image:true}
+					border-color:#b1aca1
 			},
 			
 			#ad_background: {display:{if: =page.number, at-least:2, then:none, else:inherit}}
 			
-		}
-	}</style>
+		}}
+	]}</style>
 	
-	<box id="b1" embed="article" module="TOP-IMAGE_module.xml" />
-	<box id="deco" embed="article" module="DECO_module.xml" />
-	<box id="b2" embed="article" module="TOP-IMAGE_module.xml" />
-	<box id="b3" embed="article" module="TOP-IMAGE_module.xml" />
-	<box id="h1" embed="article" module="HIGHLIGHTS_module.xml" />
-	<box id="h2" embed="article" module="HIGHLIGHTS_module.xml" />
-	<box id="ad_background" class="ad_light">
+	<box id="b1" embed="article" class="maude unit_large_1" module="TOP-IMAGE_module.xml" />
+	<box id="b2" embed="article" class="maude unit_medium_1" module="TOP-IMAGE_module.xml" />
+	<box id="b3" embed="article" class="maude unit_medium_1" module="TOP-IMAGE_module.xml" />
+	<box id="ad_background" class="ad_light maude unit_ad">
 		<box id="highlight_ad" class="ad-rectangle" embed="advertisement" />
 	</box>
+	<box id="deco" embed="article" class="maude unit_deco" module="DECO_module.xml" />
+	<box id="h1" embed="article" class="maude unit_highlight" module="HIGHLIGHTS_module.xml" />
+	<box id="h2" embed="article" class="maude unit_highlight" module="HIGHLIGHTS_module.xml" />
 
 	
 </jpml>

@@ -90,15 +90,7 @@
 				},
 				.byline: {
 					display:none
-				},
-				#large_headline: {
-					if: =options.very_large_headline, then: 
-						{
-							font-size:33,
-							line-height:33
-						}, else:inherit
 				}
-				
 				
 			}, else:{}
 		}</style>

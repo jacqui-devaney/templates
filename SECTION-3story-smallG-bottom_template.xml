@@ -1,60 +1,75 @@
 <jpml id="SECTION-3story-smallG-bottom_template">
 	<style src="GLOBAL-stylesheet.ejs" />
 	<style src="SECTION-stylesheet.ejs" />
+	<style src="PHONE-stylesheet.ejs" />
+	<style>{
+		#b1: {options:{large_headline:true, no_border:{if: =scale.phone, then:false, else:true}, byline:{if: =scale.small, then:false, else:true}}},
+		#b2: {options: { $switch: [
+				{if: =scale.phone, then: {normal_headline:true, fake_deco:true, G_image:true, no_border:true}},
+				{if: =portrait, then: {normal_headline:true, fake_deco:true}},
+				{if: =landscape, then: {normal_headline:true, fake_deco:true, F_image:{if: =scale.small, then:true, else:false}}}			
+			]}},
+		#b3: {options:{small_headline:true, no_border:{if: =scale.phone, then:false, else:true}, left:true, no_indent:true}},
+		#h1: {options:{hide_image:{if-all: [=scale.small, =landscape], then:true, else:false}, no_border:{if: =scale.phone, then:true, else:false}}},
+		#h2: {options:{hide_image:{if-all: [=scale.small, =landscape], then:true, else:false}}}
+		
+		
+		
+		
+	}</style>
 	<style>{ 
-		if: =portrait, then: {
+		$switch: [
+		{if: =scale.phone, then: {
+		
+		}},
+		{if: =portrait, then: {
 			#b1:	{ 
 						frame: {$switch: [
 						{if: =widescreen, then: [0, 0, 504, 257]},
 						{if: =scale.large, then: [0, 0, 571, 188]}
-					]},
-					options:{large_headline:true, no_border:true, byline:{if: =scale.small, then:true, else:false}} 
+					]} 
 			},
 			#b2:	{ 
 						frame: {$switch: [
 						{if: =widescreen, then: [0, 257, 504, 362]},
 						{if: =scale.large, then: [0, 188, 569, 432]}
-					]},
-					options:{normal_headline:true, fake_deco:true} 
+					]} 
 			},
 			#b3:	{ 
 						frame: {$switch: [
 						{if: =widescreen, then: [526, 0, 240, 618]},
 						{if: =scale.large, then: [583, 0, 183, 618]}
-					]},
-					options:{small_headline:true, no_border:true, left:true, no_indent:true}
+					]}
+					
 			}
 			
-		}, else: {
+		}}, 
+		{if: =landscape, then: {
 			#b1:	{ 
 						frame: {$switch: [
 						{if: =widescreen, then: [11, 0, 571, 250]},
 						{if: =scale.large, then: [11, 0, 571, 188]}
-					]},
-					options:{large_headline:true, no_border:true, byline:{if: =scale.small, then:true, else:false}} 
+					]} 
 			},
 			#b2:	{ 
 						frame: {$switch: [
 						{if: =widescreen, then: [11, 250, 569, 370]},
 						{if: =scale.large, then: [11, 188, 569, 432]}
-					]}, 
-						options:{normal_headline:true, fake_deco:true, F_image:{if: =scale.small, then:true, else:false}} 
+					]} 
 					},
-			#b3:	{ frame: [594, 0, 183, 618], options:{small_headline:true, no_border:true, left:true, no_indent:true} },
-			#h1: {options:{hide_image:{if: =scale.small, then:true, else:false}}},
-			#h2: {options:{hide_image:{if: =scale.small, then:true, else:false}}}
+			#b3:	{ frame: [594, 0, 183, 618]}
 			
-		}
-	}</style>
+		}}
+	]}</style>
 	
-	<box id="b1" embed="article" module="TOP-IMAGE_module.xml" />
-	<box id="b2" embed="article" module="DECO_module.xml" />
-	<box id="b3" embed="article" module="TOP-IMAGE_module.xml" />
-	<box id="h1" embed="article" module="HIGHLIGHTS_module.xml" />
-	<box id="h2" embed="article" module="HIGHLIGHTS_module.xml" />
-	<box id="ad_background" class="ad_light">
+	<box id="b1" embed="article" class="maude unit_top" module="TOP-IMAGE_module.xml" />
+	<box id="b3" embed="article" class="maude unit_medium_1" module="TOP-IMAGE_module.xml" />
+	<box id="h1" embed="article" class="maude unit_highlight" module="HIGHLIGHTS_module.xml" />
+	<box id="ad_background" class="ad_light unit_ad maude">
 		<box id="highlight_ad" class="ad-rectangle" embed="advertisement" />
 	</box>
+	<box id="h2" embed="article" class="maude unit_highlight" module="HIGHLIGHTS_module.xml" />
+	<box id="b2" embed="article" class="maude unit_deco" module="DECO_module.xml" />
 
 	
 </jpml>

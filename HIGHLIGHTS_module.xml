@@ -39,7 +39,6 @@
     }</style>
 	<style>{
 		if: =scale.phone, then: {
-			border-width: [0, 0, {if: =options.no_border, then:0, else:1}, 0],
 			#image_container: { 
 				pixels-per-point-x:1,
 				pixels-per-point-y:1,
@@ -54,7 +53,8 @@
 			},
 			jpml: {
 				padding: [5, 8, 0, 8],
-				background-color:#ffffff
+				background-color:#ffffff,
+				border-width: [0, 0, {if: =options.no_border, then:0, else:1}, 0]
 				
 			}
 			

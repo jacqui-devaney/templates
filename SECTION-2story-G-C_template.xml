@@ -1,9 +1,10 @@
 <jpml id="SECTION-2story-G-C_template">
 	<style src="GLOBAL-stylesheet.ejs" />
 	<style src="SECTION-stylesheet.ejs" />
+	<style src="PHONE-stylesheet.ejs" />
 	<style>{
 			#b1: {options: { $switch: [
-					{if: =scale.phone, then: {very_large_headline:true, large_headline:true, show_image:true}},
+					{if: =scale.phone, then: {large_headline:true, show_image:true}},
 					{if: =portrait, then: {large_headline:true, show_image:true, no_border:true, bottom:true, byline:{if: =scale.small, then:true, else:false}}},
 					{if: =landscape, then: {large_headline:true, show_image:true, F_image:{if: =widescreen, then:true, else:false}, no_border:true, bottom:true, byline:{if: =scale.small, then:true, else:false}}}			
 				]}},
@@ -11,9 +12,10 @@
 					then:{small_headline:true, show_image:true},
 					else:{small_headline:true, show_image:true, no_border:true, left:true, bottom:true, no_indent:true}
 				}},
-			#h1: {options:{hide_image:{if: =scale.small, then:true, else:false}}},
-			#h2: {options:{hide_image:{if: =scale.small, then:true, else:false}}},
-			#ad_background: {display:{if: =page.number, equals:1, then:none, else:inherit}}
+			#h1: {options:{hide_image:{if-all: [=scale.small, =landscape], then:true, else:false}, no_border:{if: =scale.phone, then:true, else:false}}},
+			#h2: {options:{hide_image:{if-all: [=scale.small, =landscape], then:true, else:false}}},
+			#ad_background: {display:{if: =scale.phone, then:inherit, else:{if: =page.number, equals:1, then:none, else:inherit}}}
+			
 			
 				
 				
@@ -65,8 +67,8 @@
 		
 	}</style>
 	
-	<box id="b1" embed="article" class="maude unit_large_1" module="TOP-IMAGE_module.xml" />
-	<box id="b2" embed="article" class="maude unit_1" module="TOP-IMAGE_module.xml" />
+	<box id="b1" embed="article" class="maude unit_top" module="TOP-IMAGE_module.xml" />
+	<box id="b2" embed="article" class="maude unit_medium_1" module="TOP-IMAGE_module.xml" />
 	<box id="h1" embed="article" class="maude unit_highlight" module="HIGHLIGHTS_module.xml" />
 	<box id="ad_background" class="ad_light maude unit_ad">
 		<box id="highlight_ad" class="ad-rectangle" embed="advertisement" />

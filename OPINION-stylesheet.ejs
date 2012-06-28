@@ -1,7 +1,10 @@
 {
 	$join: [
-    {.line: { background-color:#b1aca1}},
-	
+	{#articles: {
+		border-width:[0, 1, 0, 0], 
+		border-color:#b1aca1, 
+		padding:[3, 11, 0, 0]
+	}},
 	{ if: =portrait, then: {
 		#h1: 	{ frame: [1, 620, 256, 257] },
 		#h2: 	{ frame: [257, 620, 256, 257] },

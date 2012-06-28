@@ -1,32 +1,9 @@
 <jpml id="WHATSNEWS-phone_template">
-    <style>{
-        .hidden: { display: none }
-    }</style>
-	<box id="whatsnews" embed="whatsnews" />
-    
-    <box id="b01" class="hidden" embed="article" module="CONTINUATION-dynamic_module.xml" />
-    <box id="b02" class="hidden" embed="article" module="CONTINUATION-dynamic_module.xml" />
-    <box id="b03" class="hidden" embed="article" module="CONTINUATION-dynamic_module.xml" />
-    <box id="b04" class="hidden" embed="article" module="CONTINUATION-dynamic_module.xml" />
-    <box id="b05" class="hidden" embed="article" module="CONTINUATION-dynamic_module.xml" />
-    <box id="b06" class="hidden" embed="article" module="CONTINUATION-dynamic_module.xml" />
-    <box id="b07" class="hidden" embed="article" module="CONTINUATION-dynamic_module.xml" />
-    <box id="b08" class="hidden" embed="article" module="CONTINUATION-dynamic_module.xml" />
-    <box id="b09" class="hidden" embed="article" module="CONTINUATION-dynamic_module.xml" />
-    <box id="b10" class="hidden" embed="article" module="CONTINUATION-dynamic_module.xml" />
-    <box id="b11" class="hidden" embed="article" module="CONTINUATION-dynamic_module.xml" />
-    <box id="b12" class="hidden" embed="article" module="CONTINUATION-dynamic_module.xml" />
-    <box id="b13" class="hidden" embed="article" module="CONTINUATION-dynamic_module.xml" />
-    <box id="b14" class="hidden" embed="article" module="CONTINUATION-dynamic_module.xml" />
-    <box id="b15" class="hidden" embed="article" module="CONTINUATION-dynamic_module.xml" />
-    <box id="b16" class="hidden" embed="article" module="CONTINUATION-dynamic_module.xml" />
-    <box id="b17" class="hidden" embed="article" module="CONTINUATION-dynamic_module.xml" />
-    <box id="b18" class="hidden" embed="article" module="CONTINUATION-dynamic_module.xml" />
-    <box id="b19" class="hidden" embed="article" module="CONTINUATION-dynamic_module.xml" />
-    <box id="b20" class="hidden" embed="article" module="CONTINUATION-dynamic_module.xml" />
-    <box id="b21" class="hidden" embed="article" module="CONTINUATION-dynamic_module.xml" />
-    <box id="b22" class="hidden" embed="article" module="CONTINUATION-dynamic_module.xml" />
-    <box id="b23" class="hidden" embed="article" module="CONTINUATION-dynamic_module.xml" />
-    <box id="b24" class="hidden" embed="article" module="CONTINUATION-dynamic_module.xml" />
-    <box id="b25" class="hidden" embed="article" module="CONTINUATION-dynamic_module.xml" />
+<style>{
+#whatsnews: { frame: [0, 0, =view.width, =view.height] }, 
+.hidden: { display: none }
+}
+</style>
+<box id="whatsnews" embed="whatsnews"/>
+<box id="b1" class="hidden" embed="article" module="CONTINUATION-dynamic_module.xml"/>
 </jpml>

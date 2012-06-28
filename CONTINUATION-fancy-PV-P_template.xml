@@ -4,7 +4,8 @@
 	<style src="PHONE-stylesheet.ejs" /> 
 	<style>{
 		#deco: {options: { $switch: [
-				{if: =portrait, then: {bottom_headline:true, G_image:true, no_caption:true}},
+				{if: =scale.phone, then: {bottom_headline:true, G_image:true, no_caption:true}},
+				{if: =portrait, then: {bottom_headline:true, bottom_border:true, P_image:true, long_deco:{if: =scale.small, then:true, else:false}, narrow_text:{if: =scale.small, then:false, else:true}}},
 				{if: =landscape, then: {bottom_headline:true, no_border:true, F_image:{if: =widescreen, then:true, else:false}, P_image:{if: =widescreen, then:false, else:true}, narrow_text:true}}			
 			]}},
 		#b2: {

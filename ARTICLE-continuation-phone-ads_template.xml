@@ -2,10 +2,19 @@
 	<style src="PHONE-stylesheet.ejs" />
 	<style>{
 		#view: {
-			width:=view.width,
-			height:{$subtract:[=view.height, 50]}
-		}
+			bottom: 0
+		},
+        #ad: {            
+            anchor-y: bottom,
+            options: { zone: {$join: [=ad.prefix, abanner]} },
+            display: { 
+                if: {$divide: [{$add:[=page.number, 3]}, 4]}, 
+                equals: {$floor: [{$divide: [{$add:[=page.number, 3]}, 4]}]},
+                then: inherit,
+                else: none
+            }
+        }
 	}</style>
+    <box id="ad" class="maude unit_ad" embed="advertisement"></box>
     <box id="view" embed="article" class="maude" module="ARTICLE-continuation-phone-ads_module.xml" />
-    <box id="ad article_ad" class="maude unit_ad" embed="advertisement" />
 </jpml>

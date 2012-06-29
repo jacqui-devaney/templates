@@ -12,8 +12,8 @@
 					then:{small_headline:true, show_image:true},
 					else:{small_headline:true, show_image:true, no_border:true, left:true, bottom:true, no_indent:true}
 				}},
-			#h1: {options:{hide_image:{if-all: [=scale.small, =landscape], then:true, else:false}, no_border:{if: =scale.phone, then:true, else:false}}},
-			#h2: {options:{hide_image:{if-all: [=scale.small, =landscape], then:true, else:false}}},
+			#h1: {options:{hide_image:{if-all: [=scale.small, =landscape], then:true, else:false}, no_border:{if: =scale.phone, then:true, else:false}, indent:{if: =page.number, equals:1, then:true, else:false}}},
+			#h2: {options:{hide_image:{if-all: [=scale.small, =landscape], then:true, else:false}, indent:{if: =page.number, equals:1, then:true, else:false}}},
 			#ad_background: {display:{if: =scale.phone, then:inherit, else:{if: =page.number, equals:1, then:none, else:inherit}}}
 			
 			

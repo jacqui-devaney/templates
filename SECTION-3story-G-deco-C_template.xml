@@ -16,8 +16,8 @@
 					{if: =landscape, then: {small_headline:true, left:true, bottom:true, no_indent:true}}			
 				]}},
 			#ad_background: {display:{if: =page.number, at-least:2, then:none, else:inherit}},
-			#h1: {options:{hide_image:{if-all: [=scale.small, =landscape], then:true, else:false}}},
-			#h2: {options:{hide_image:{if-all: [=scale.small, =landscape], then:true, else:false}}},
+			#h1: {options:{hide_image:{if-all: [=scale.small, =landscape], then:true, else:false}, indent:{if: =page.number, equals:1, then:true, else:false}}},
+			#h2: {options:{hide_image:{if-all: [=scale.small, =landscape], then:true, else:false}, indent:{if: =page.number, equals:1, then:true, else:false}}},
 			#deco: {options: { $switch: [
 					{if: =scale.phone, then: {normal_headline:true, bottom_border:true, G_image:true}},
 					{if: =portrait, then: {normal_headline:true}},

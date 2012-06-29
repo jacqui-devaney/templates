@@ -4,6 +4,7 @@
         #fullpage_ad: { display: {
             if: =scale.phone,
             and: =intent.section,
+			and: =page.number, equals:1,
             then: none,
             else: inherit
         }}

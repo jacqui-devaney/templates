@@ -12,8 +12,8 @@
 				{if: =portrait, then: {normal_headline:true}},
 				{if: =landscape, then: {normal_headline:true, F_image:{if: =widescreen, then:true, else:false}}}			
 			]}},
-		#h1: {options:{hide_image:{if: =scale.small, then:true, else:false}}},
-		#h2: {options:{hide_image:{if: =scale.small, then:true, else:false}}}
+		#h1: {options:{hide_image:{if-all: [=scale.small, =landscape], then:true, else:false}}},
+		#h2: {options:{hide_image:{if-all: [=scale.small, =landscape], then:true, else:false}}}
 		
 	}</style>
 	<style>{
@@ -57,13 +57,13 @@
 	]
 	}</style>
 	
-	<box id="b1" embed="article" class="maude unit_large_1" module="TOP-IMAGE_module.xml" />
-	<box id="b2" embed="article" class="maude unit_1" module="RIGHT-INSET-IMAGE_module.xml" />
-	<box id="b3" embed="article" class="maude unit_1" module="RIGHT-INSET-IMAGE_module.xml" />
+	<box id="b1" embed="article" class="maude unit_top" module="TOP-IMAGE_module.xml" />
+	<box id="b2" embed="article" class="maude unit_medium_1" module="RIGHT-INSET-IMAGE_module.xml" />
+	<box id="b3" embed="article" class="maude unit_medium_1" module="RIGHT-INSET-IMAGE_module.xml" />
 	<box id="ad_background" class="ad_light maude unit_ad">
 		<box id="highlight_ad" class="ad-rectangle" embed="advertisement" />
 	</box>
-	<box id="b4" embed="article" class="maude unit_1" module="RIGHT-INSET-IMAGE_module.xml" />
+	<box id="b4" embed="article" class="maude unit_medium_1" module="RIGHT-INSET-IMAGE_module.xml" />
 	<box id="deco" embed="article" class="maude unit_deco" module="DECO_module.xml" />
 	<box id="h1" embed="article" class="maude unit_highlight" module="HIGHLIGHTS_module.xml" />
 	<box id="h2" embed="article" class="maude unit_highlight" module="HIGHLIGHTS_module.xml" />

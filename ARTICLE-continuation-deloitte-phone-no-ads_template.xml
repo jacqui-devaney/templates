@@ -1,0 +1,10 @@
+<jpml id="ARTICLE-continuation-deloitte-phone-no-ads_template">
+	<style src="PHONE-stylesheet.ejs" />
+	<style>{
+		#view: {
+			width:=view.width,
+			height:=view.height
+		}
+	}</style>
+    <box id="view" embed="article" module="ARTICLE-continuation-deloitte-phone-no-ads_module.xml" />
+</jpml>

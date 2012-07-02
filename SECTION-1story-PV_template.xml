@@ -1,23 +1,49 @@
 <jpml id="SECTION-1story-PV_template">
 	<style src="GLOBAL-stylesheet.ejs" />
 	<style src="SECTION-stylesheet.ejs" />
+	<style src="PHONE-stylesheet.ejs" />
 	<style>{
-		if: =portrait, then: {
-			#b1:	{ frame: [0, 0, 768, 620], options:{TH_image:{if: =scale.small, then:true, else:false}} }
-		}, else: {
-			#b1:	{ frame: [0, 0, 768, 620], options: {TH-land_image:{if: =scale.small, then:true, else:false}} },
-			#h1: { frame: [768, 0, 256, 216], options:{hide_image:{if: =scale.small, then:true, else:false}} },
-			#h2: 	{ frame: [768, 216, 256, 207], options:{hide_image:{if: =scale.small, then:true, else:false}} }
+		#b1: {options: { $switch: [
+				{if: =scale.phone, then: {F_image:true, bottom_border:true, normal_headline:true}},
+				{if: =portrait, then: {TH_image:{if: =scale.small, then:true, else:false}}},
+				{if: =landscape, then: {TH-land_image:{if: =scale.small, then:true, else:false}}}			
+			]}},
+		#h1: {options: { $switch: [
+				{if: =scale.phone, then: {}},
+				{if: =portrait, then: {}},
+				{if: =landscape, then: {hide_image:{if: =scale.small, then:true, else:false}}}			
+			]}},
+		#h2: {options: { $switch: [
+				{if: =scale.phone, then: {no_border:true}},
+				{if: =portrait, then: {}},
+				{if: =landscape, then: {hide_image:{if: =scale.small, then:true, else:false}}}			
+			]}}
+				
+	}</style>
+	<style>{
+		$switch: [
+			{if: =scale.phone, then: {
+		
+			}},
+			{if: =portrait, then: {
+				#b1:	{ frame: [0, 0, 768, 620]}
+			}},
+			{if: =landscape, then: {
+				#b1:	{ frame: [0, 0, 768, 620]},
+				#h1: { frame: [768, 0, 256, 216]},
+				#h2: 	{ frame: [768, 216, 256, 207]}
 			
-		}
+			}}
+		]
 	}</style>
 	
-	<box id="b1" embed="article" module="IMAGE-only_module.xml" />
-	<box id="h1" embed="article" module="HIGHLIGHTS_module.xml" />
-	<box id="h2" embed="article" module="HIGHLIGHTS_module.xml" />
-	<box id="ad_background_PV" class="ad_light">
+	<box id="b1" embed="article" class="maude unit_medium_deco" module="IMAGE-only_module.xml" />
+	<box id="h1" embed="article" class="maude unit_highlight" module="HIGHLIGHTS_module.xml" />
+	<box id="h2" embed="article" class="maude unit_highlight" module="HIGHLIGHTS_module.xml" />
+	<box id="ad_background_PV" class="ad_light maude unit_ad">
 		<box id="highlight_ad" class="ad-rectangle" embed="advertisement" />
 	</box>
+	
 	
 
 	

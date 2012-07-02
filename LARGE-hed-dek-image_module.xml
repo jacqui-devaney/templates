@@ -1,6 +1,7 @@
 <jpml id="LARGE-hed-dek-image_module">
 	<style src="GLOBAL_MODULES-stylesheet.ejs" />
 	<style src="GLOBAL-stylesheet.ejs" />
+	<style src="PHONE-MODULES-stylesheet.ejs" />
 	<style>{
 		image: {
             pixels-per-point-x:1,
@@ -21,6 +22,18 @@
         
 		#text: {padding: [8, 0, 8, 0]}
 		
+	}</style>
+	<style>{
+		if: =scale.phone, then: {
+			.large_dek: {
+				display:none
+			},
+			jpml: {
+				padding:[0, 8, 8, 8],
+				border-width:[0, 0, 1, 0],
+				border-color:#b1aca1
+			}
+		}, else:{}
 	}</style>
 	<box id="text">
 		<p id="large_headline"><span embed="headline" /><mark class="key" /></p>

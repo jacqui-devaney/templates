@@ -1,21 +1,45 @@
 <jpml id="OPINION-3story-E_template">
 	<style src="GLOBAL-stylesheet.ejs" />
 	<style src="OPINION-stylesheet.ejs" />
-    <style>{ 
-		$join: [
+    <style src="PHONE-stylesheet.ejs" />
+	<style>{
+		#b1: {options:{header:true, border:{if: =scale.phone, then:true, else:false}}},
+		#b3: {options:{small_headline:true, show_image:true, no_border:{if: =scale.phone, then:false, else:true}, byline:{if: =scale.small, then:true, else:false}}},
+		#h1: {options:{hide_image:{if-all: [=scale.small, =landscape], then:true, else:false}, byline:{if: =scale.phone, then:false, else:true}, hide_flashline:true}},
+		#h2: {options:{hide_image:{if-all: [=scale.small, =landscape], then:true, else:false}, byline:{if: =scale.phone, then:false, else:true}, hide_flashline:true}}
+	}</style>
+	<style>{ 
+		$switch: [
+			{if: =scale.phone, then: {
+				$join: [
+				{#articles: {padding:[0], border-width:[0]}},
+				{ $switch: [
+					{ if: =articles.b1.type, equals: "Letters", then: {
+						_comment: "no header",
+						#b2 : {}
+	                }},
+					{ if: =articles.b2.type, equals: "Letters", then: {
+				 		_comment: "b2 has the header",
+						#b2 : { options: {header: true} }
+					}},
+					{ if: true, then: {
+						_comment: "no header",
+						#b2 : {}
+					}}
+			    ]}
+				]
+			}}, 
+		{if-any: [=scale.large, =scale.small], then: {
+			$join: [
 				{ if: =portrait, then: {
 					#articles:	{ frame: [8, 10, 362, 610] },
-					#b1:	{ frame: [0, 0, 362, 314], options:{header:true} },
-					#b3:	 { frame: [388, 2, 377, 615], options:{small_headline:true, show_image:true, no_border:true, byline:{if: =scale.small, then:true, else:false}} },
-					#h1:	{options:{byline:true, hide_flashline:true}},
-					#h2:	{options:{byline:true, hide_flashline:true}}
+					#b1:	{ frame: [0, 0, 362, 314]},
+					#b3:	 { frame: [388, 2, 377, 615]}
 					
 				}, else: {
 					#articles:	{ frame: [19, 10, 362, 610] },
-					#b1:	{ frame: [0, 0, 362, 314], options:{header:true} },
-					#b3:	{ frame: [399, 2, 377, 615], options:{small_headline:true, show_image:true, no_border:true, byline:{if: =scale.small, then:true, else:false}} },
-					#h2:	{options:{byline:true, hide_flashline:true, hide_image:{if: =scale.small, then:true, else:false}}},
-					#h1:	{options:{byline:true, hide_flashline:true, hide_image:{if: =scale.small, then:true, else:false}}}
+					#b1:	{ frame: [0, 0, 362, 314]},
+					#b3:	{ frame: [399, 2, 377, 615] }
 					
 				}	
 			},
@@ -34,19 +58,21 @@
 				}}
 		    ]}
 		]
+		}}
+	]
+	
     }</style>
     <box id="articles">
-	    <box id="b1" embed="article" module="OPINION-RANDO-LETTERS_module.xml" />
-	    <box id="b2" embed="article" module="OPINION-RANDO-LETTERS_module.xml" />
+	    <box id="b1" embed="article" class="maude unit_rando_top" module="OPINION-RANDO-LETTERS_module.xml" />
+	    <box id="b2" embed="article" class="maude unit_rando_second" module="OPINION-RANDO-LETTERS_module.xml" />
 	</box>
-    <box id="l4" class="line" />
-    <box id="b3" embed="article" module="TOP-IMAGE_module.xml" />
-
-    <box id="h1" embed="article" module="HIGHLIGHTS_module.xml" />
-    <box id="h2" embed="article" module="HIGHLIGHTS_module.xml" />
-    <box id="ad_background" class="ad_light">
+    <box id="ad_background" class="ad_light unit_ad maude">
 		<box id="highlight_ad" class="ad-rectangle" embed="advertisement" />
 	</box>
+	<box id="b3" embed="article" class="maude unit_medium_1" module="TOP-IMAGE_module.xml" />
+
+    <box id="h1" embed="article" class="maude unit_highlight" module="HIGHLIGHTS_module.xml" />
+    <box id="h2" embed="article" class="maude unit_highlight" module="HIGHLIGHTS_module.xml" />
 
     
 </jpml>

@@ -1,6 +1,7 @@
 <jpml id="OPINION-RANDO-LETTERS_module">
 	<style src="GLOBAL_MODULES-stylesheet.ejs" />
 	<style src="GLOBAL-stylesheet.ejs" />
+	<style src="PHONE-MODULES-stylesheet.ejs" />
 	<style>{
 		$join: [		
 			{ $switch: [
@@ -21,19 +22,38 @@
 	
 		
 	}</style>
-	<panel id="rando_header">
-	    <p class="rando_heading"><mark class="rando" /></p>
-		<box id="opinion_line" />
-	</panel>
-	<panel id="letters_header">
-	    <p class="letters_heading"><mark class="letters" /></p>
-		<box id="letters_line" />
-	</panel>
-	<panel id="articles">
-		<p class="opinion_headline"><span embed="headline" /><mark class="key" /></p>
-		<p class="letters_headline"><span embed="headline" /><mark class="key" /></p>
-		<h2 class="opinion_dek" embed="subhed" />
-		<panel class="body" embed="body" />
-	</panel>
-	
+	<style>{
+		if: =scale.phone, then:{
+			#wrapper: {
+				border-width:[0, 0, {if: =options.border, then:1, else:0}, 0],
+				border-color:#b1aca1,
+				padding: [10, 8, 10, 8]
+			},
+			.body: {
+				display:none
+			},
+			#rando_header:{
+				padding:[0, 0, 10, 0]
+			},
+			#letters_header:{
+				padding:[0, 0, 10, 0]
+			}
+		}, else: {}
+	}</style>
+	<box id="wrapper">
+		<panel id="rando_header">
+		    <p class="rando_heading"><mark class="rando" /></p>
+			<box id="opinion_line" />
+		</panel>
+		<panel id="letters_header">
+		    <p class="letters_heading"><mark class="letters" /></p>
+			<box id="letters_line" />
+		</panel>
+		<panel class="articles">
+			<p class="opinion_headline"><span embed="headline" /><mark class="key" /></p>
+			<p class="letters_headline"><span embed="headline" /><mark class="key" /></p>
+			<h2 class="opinion_dek" embed="subhed" />
+			<panel class="body" embed="body" />
+		</panel>
+	</box>
 </jpml>

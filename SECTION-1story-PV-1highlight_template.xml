@@ -4,7 +4,7 @@
 	<style src="PHONE-stylesheet.ejs" />
 	<style>{
 		#b1: {options: { $switch: [
-				{if: =scale.phone, then: {G_image:true, bottom_border:true, normal_headline:true}},
+				{if: =scale.phone, then: {F_image:true, bottom_border:true, normal_headline:true}},
 				{if: =portrait, then: {TH_image:{if: =scale.small, then:true, else:false}}},
 				{if: =landscape, then: {TH-land_image:{if: =scale.small, then:true, else:false}}}			
 			]}},
@@ -25,7 +25,7 @@
 		]
 	}</style>
 	
-	<box id="b1" embed="article" class="maude unit_deco" module="IMAGE-only_module.xml" />
+	<box id="b1" embed="article" class="maude unit_medium_deco" module="IMAGE-only_module.xml" />
 	<box id="h4" embed="article" class="maude unit_highlight" module="HIGHLIGHTS_module.xml" />
 	<box id="ad_background_PV" class="maude unit_ad ad_light">
 		<box id="highlight_ad" class="ad-rectangle" embed="advertisement" />

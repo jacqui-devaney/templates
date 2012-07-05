@@ -28,6 +28,9 @@
 		},
 		#body-first-p: {
 			text-indent:0
+		},
+		#vertical: {
+			display:none
 		}
     }</style>
     <style>{
@@ -36,22 +39,23 @@
 				padding: [3, 0, 0, 6]
 			},
 			jpml: { 
-				padding: [ 0] 
+				padding: [0] 
 			},
 			#content: {
 				border-width: [{ if:=options.hide_strap, then:1, else:0 }, 0, 0, 0],
-				border-color: #b1aca1,
-				padding: [7, 8, 0, 8]
+				border-color: #b1aca1
 				
 			},
-			.body: {
+			.continuation_body: {
 				display:none
 			},
 			#image_container: {
 				display:none
 			},
-			.continuation_headline: {
-				anchor-y:center			}
+			#vertical: {
+				anchor-y:middle,
+				display:inherit
+			}
 			
 		}, else:{}
 	}</style>
@@ -61,6 +65,9 @@
 		<panel id="content">
 		 	<box id="image_container">
 				<image embed="summary-image"/>
+			</box>
+			<box id="vertical">
+				<p class="continuation_headline"><span embed="headline" /><mark class="key" /></p>
 			</box>
 			<p class="continuation_headline"><span embed="headline" /><mark class="key" /></p>
 			<panel embed="body" class="continuation_body"/>

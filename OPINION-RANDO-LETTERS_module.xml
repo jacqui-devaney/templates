@@ -24,7 +24,7 @@
 	}</style>
 	<style>{
 		if: =scale.phone, then:{
-			#wrapper: {
+			jpml: {
 				border-width:[0, 0, {if: =options.border, then:1, else:0}, 0],
 				border-color:#b1aca1,
 				padding: [10, 8, 10, 8]
@@ -40,7 +40,6 @@
 			}
 		}, else: {}
 	}</style>
-	<box id="wrapper">
 		<panel id="rando_header">
 		    <p class="rando_heading"><mark class="rando" /></p>
 			<box id="opinion_line" />
@@ -55,5 +54,4 @@
 			<h2 class="opinion_dek" embed="subhed" />
 			<panel class="body" embed="body" />
 		</panel>
-	</box>
 </jpml>

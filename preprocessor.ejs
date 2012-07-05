@@ -57,15 +57,24 @@
 
 				small: { if: =device.size, less-than: 8.8 },
 				large: { if: =device.size, more-than: 8.8 },
+				headlines: { if-any: [
+							{if: =device.size, less-than: 8.8, then: true, else: false}, 
+							{if: =issue.type, equals: "NOW", then: true, else: false}
+						], then: true, else: false }
 								
-				headlines: { if: =device.size, less-than: 8.8, then: true, else: false }
 			},
+			
+			
 			justify: { if-any: [
 						{if: =device.size, less-than: 8.8, then: true, else: false}, 
 						{if: =issue.edition, equals: "germany", then: true, else: false}
 					], then: left, else: justify },
 			extents: {
-							if: =device.size, less-than: 8.8, then: {
+							if-any: [
+								{if: =device.size, less-than: 8.8, then: true, else: false}, 
+								{if: =issue.type, equals: "NOW", then: true, else: false}
+							],
+							 then: {
 								comment: "divide the headline em width by view em width,",
 								comment: "where on average, each character takes up 0.5 em.",
 								comment: "and the view em width is the view pixel width divided by headline pixel height.",

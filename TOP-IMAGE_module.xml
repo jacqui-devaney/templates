@@ -44,9 +44,7 @@
 					}
 				},
                 image-scale: {$max:[1,{$divide:[{$subtract:[=view.width, 18]}, 553]}]}
-            }},
-			
-			
+            }},			
 			{.invisible: { display:none }},
 			{#small_headline: { display: { if: =options.small_headline, then:inherit }}},
 			{#medium_headline: { display: { if: =options.medium_headline, then:inherit }}},
@@ -60,15 +58,20 @@
 				{if: =scale.small, then:{if: =options.no_indent, then:0, else:inherit}},
 				{if: =scale.large, then: inherit}
 			]}}}
+			
 		
 			]
 		}</style>
 		<style>{
 			if: =scale.phone, then: {
-				#wrapper: {
+				jpml: {
 					border-width: [0, 0, {if: =options.no_border, then:0, else:1}, 0],
 					border-color: #b1aca1,
-					padding: [5, 0, 0, 0]
+					anchor-y:middle,
+					padding:[0]
+				},
+				#wrapper: {
+					border-width:[0]
 				},
 				#image_wrapper: { 
 					anchor-x:right,
@@ -90,6 +93,9 @@
 				},
 				.byline: {
 					display:none
+				},
+				#body_container: {
+					display:{if: =options.show_body, then:inherit, else:none}
 				}
 				
 			}, else:{}

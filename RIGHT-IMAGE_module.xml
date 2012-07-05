@@ -33,8 +33,13 @@
 	}</style>
 	<style>{
 		if: =scale.phone, then: {
+			#wrapper: {
+				padding:[0],
+				anchor-y:middle
+			},
 			#image_wrapper: { 
-				width: 76
+				width: 76,
+				anchor-x:right
 			},
 			image: { 
 				height: 76,
@@ -55,19 +60,20 @@
 		}, else:{}
 	
 	}</style>
-	<box id="image_wrapper">
-		<image embed="summary-image" />
+	<box id="wrapper">
+		<box id="image_wrapper">
+			<image embed="summary-image" />
+		</box>
+		<panel id="headline">
+			<p id="small_headline" class="invisible"><span embed="headline" /><mark class="key" /></p>
+			<p id="medium_headline" class="invisible"><span embed="headline" /><mark class="key" /></p>
+			<p id="large_headline" class="invisible"><span embed="headline" /><mark class="key" /></p>
+		</panel>
+		<panel id="body_container">
+	        <panel id="body">
+	            <p class="byline" embed="byline"/>
+	            <panel class="body" embed="body"/>
+	        </panel>
+	    </panel>
 	</box>
-	<panel id="headline">
-		<p id="small_headline" class="invisible"><span embed="headline" /><mark class="key" /></p>
-		<p id="medium_headline" class="invisible"><span embed="headline" /><mark class="key" /></p>
-		<p id="large_headline" class="invisible"><span embed="headline" /><mark class="key" /></p>
-	</panel>
-	<panel id="body_container">
-        <panel id="body">
-            <p class="byline" embed="byline"/>
-            <panel class="body" embed="body"/>
-        </panel>
-    </panel>
-
 </jpml>

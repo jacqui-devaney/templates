@@ -52,21 +52,30 @@
 				display:none
 			},
 			jpml: {
-				padding: [5, 8, 0, 8],
+				padding: [0, 8],
 				background-color:#ffffff,
 				border-width: [0, 0, {if: =options.no_border, then:0, else:1}, 0]
-				
+			},
+			#wrapper: {
+				anchor-y:middle
+			},
+			.highlight_byline: {
+				display:none
+			},
+			.highlight_body: {
+				display:none
 			}
 			
 		}, else:{}
 	
 	}</style>
-
-    <box id="image_container">
-        <image class="A_size" embed="summary-image" />
-    </box>
-    <p class="highlight_flashline" embed="flashline" />
-    <p class="highlight_headline"><span embed="headline" /><mark class="key" /></p>
-   	<p class="highlight_byline" embed="byline" />
-	<panel embed="body" class="highlight_body"/>
+	<box id="wrapper">
+	    <box id="image_container">
+	        <image class="A_size" embed="summary-image" />
+	    </box>
+    	<p class="highlight_flashline" embed="flashline" />
+    	<p class="highlight_headline"><span embed="headline" /><mark class="key" /></p>
+		<p class="highlight_byline" embed="byline" />
+		<panel embed="body" class="highlight_body"/>
+	</box>
 </jpml>

@@ -79,14 +79,12 @@
 		pixels-per-point-x: 1,
 		pixels-per-point-y: 1,
 		width: {$switch: [
-			{if: =scale.phone, then:320},
 			{if-all: [=scale.small, =portrait], then:600},
 			{if-all: [=scale.large, =portrait], then:768},
 			{if-all: [=scale.small, =landscape], then:828},
 			{if-all: [=scale.large, =landscape], then:1024}
 		]},
 		height: {$switch: [
-			{if: =scale.phone, then:50},
 			{if-all: [=scale.small, =portrait], then:702},
 			{if-all: [=scale.large, =portrait], then:{if: =intent.section, then: 876, else: 899}},
 			{if-all: [=scale.small, =landscape], then:488},

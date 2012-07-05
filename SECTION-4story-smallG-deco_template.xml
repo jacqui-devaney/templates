@@ -3,7 +3,7 @@
 	<style src="SECTION-stylesheet.ejs" />
 	<style src="PHONE-stylesheet.ejs" />
 	<style>{
-		#b1: {options:{large_headline:true, no_border:{if: =scale.phone, then:false, else:true}, byline:{if: =scale.small, then:true, else:false}}},		
+		#b1: {options:{large_headline:true, no_border:{if: =scale.phone, then:false, else:true}, byline:{if: =scale.small, then:true, else:false}, show_body:true}},		
 		#b2: {options:{small_headline:true, no_indent:true}},		
 		#b3: {options:{small_headline:true, no_indent:true, no_border:{if: =scale.phone, then:true, else:false}}},		
 		#b4: {options:{small_headline:true, no_indent:true}},
@@ -12,7 +12,7 @@
 				{if: =portrait, then: {normal_headline:true}},
 				{if: =landscape, then: {normal_headline:true, F_image:{if: =widescreen, then:true, else:false}}}			
 			]}},
-		#h1: {options:{hide_image:{if-all: [=scale.small, =landscape], then:true, else:false}}},
+		#h1: {options:{hide_image:{if-all: [=scale.small, =landscape], then:true, else:false}}, display:{if: =issue.type, equals:"NOW", then:none, else:inherit}},
 		#h2: {options:{hide_image:{if-all: [=scale.small, =landscape], then:true, else:false}}}
 		
 	}</style>
@@ -57,7 +57,7 @@
 	]
 	}</style>
 	
-	<box id="b1" embed="article" class="maude unit_top" module="TOP-IMAGE_module.xml" />
+	<box id="b1" embed="article" class="maude unit_large_1" module="TOP-IMAGE_module.xml" />
 	<box id="b2" embed="article" class="maude unit_medium_1" module="RIGHT-INSET-IMAGE_module.xml" />
 	<box id="b3" embed="article" class="maude unit_medium_1" module="RIGHT-INSET-IMAGE_module.xml" />
 	<box id="ad_background" class="ad_light maude unit_ad">
@@ -65,6 +65,9 @@
 	</box>
 	<box id="b4" embed="article" class="maude unit_medium_1" module="RIGHT-INSET-IMAGE_module.xml" />
 	<box id="deco" embed="article" class="maude unit_deco" module="DECO_module.xml" />
+	<box id="marketdata_background" class="ad_light">
+		<box id="highlight_marketdata" embed="marketdata" />
+	</box>
 	<box id="h1" embed="article" class="maude unit_highlight" module="HIGHLIGHTS_module.xml" />
 	<box id="h2" embed="article" class="maude unit_highlight" module="HIGHLIGHTS_module.xml" />
 

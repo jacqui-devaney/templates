@@ -24,7 +24,7 @@
 			{if: =portrait, then:{small_headline:true, show_image:true, left:true, bottom:true, no_indent:true,  show_image:true}},
 			{if: =landscape, then: {small_headline:true, show_image:{if: =widescreen, then:false, else:true}, left:true, bottom:true, no_indent:true}}
 		]}},
-		#h1: {options:{hide_image:{if-all: [=scale.small, =landscape], then:true, else:false}}},
+		#h1: {options:{hide_image:{if-all: [=scale.small, =landscape], then:true, else:false}}, display:{if: =issue.type, equals:"NOW", then:none, else:inherit}},
 		#h2: {options:{hide_image:{if-all: [=scale.small, =landscape], then:true, else:false}}}
 		
 		
@@ -89,12 +89,15 @@
 		]
 	}</style>
 	
-	<box id="b1" embed="article" class="maude unit_1" module="RIGHT-TOP-INSET-IMAGE_module.xml" />
-	<box id="b2" embed="article" class="maude unit_1" module="TOP-IMAGE_module.xml" />
-	<box id="b3" embed="article" class="maude unit_1" module="TOP-IMAGE_module.xml" />
-	<box id="b4" embed="article" class="maude unit_1" module="TOP-IMAGE_module.xml" />
+	<box id="b1" embed="article" class="maude unit_small_1" module="RIGHT-TOP-INSET-IMAGE_module.xml" />
+	<box id="b2" embed="article" class="maude unit_small_1" module="TOP-IMAGE_module.xml" />
+	<box id="b3" embed="article" class="maude unit_small_1" module="TOP-IMAGE_module.xml" />
+	<box id="b4" embed="article" class="maude unit_small_1" module="TOP-IMAGE_module.xml" />
 	<box id="ad_background" class="ad_light maude unit_ad">
 		<box id="highlight_ad" class="ad-rectangle" embed="advertisement" />
+	</box>
+	<box id="marketdata_background" class="ad_light">
+		<box id="highlight_marketdata" embed="marketdata" />
 	</box>
 	<box id="h1" embed="article" class="maude unit_1" module="HIGHLIGHTS_module.xml" />
 	<box id="h2" embed="article" class="maude unit_1" module="HIGHLIGHTS_module.xml" />

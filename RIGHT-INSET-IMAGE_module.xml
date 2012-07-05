@@ -60,10 +60,15 @@
 	}</style>
 	<style>{
 		if: =scale.phone, then: {
-			#wrapper: {
+			jpml: {
+				
 				border-width: [0, 0, {if: =options.no_border, then:0, else:1}, 0],
 				border-color: #b1aca1,
-				padding: [5, 8, 0, 8]
+				padding: [0, 8, 0, 8]
+			},
+			#wrapper: {
+				padding:[0],
+				anchor-y:middle
 			},
 			#image_container: { 
 				width:86,

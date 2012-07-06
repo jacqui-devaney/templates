@@ -1,8 +1,8 @@
-<jpml id="SECTION-4story-smallG-top_template">
+<jpml id="SECTION-4story-smallG-top-marketdata_template">
 	<style src="GLOBAL-stylesheet.ejs" />
 	<style src="SECTION-stylesheet.ejs" />
-    <style src="PHONE-stylesheet.ejs" />
-    <style>{
+	<style src="PHONE-stylesheet.ejs" />
+	<style>{
 		#b1: {options: { $switch: [
 				{if: =scale.phone, then: {large_headline:true, show_body:true}},
 				{if: =portrait, then: {large_headline:true, show_image:true, no_border:{if: =scale.phone, then:false, else:true}, bottom:true, byline:{if: =scale.small, then:true, else:false}}},
@@ -11,27 +11,27 @@
         #b2:	{ options:{small_headline:true, no_border:{if: =scale.phone, then:false, else:true}, no_indent:true} },
         #b3:	{ options:{small_headline:true, no_indent:true,  no_border:{if: =scale.phone, then:true, else:false}}},
         #b4:	{ options:{small_headline:true, bottom:true, no_indent:true} },
-		#h1: {options:{hide_image:{if-all: [=scale.small, =landscape], then:true, else:false}}},
+		#h1: {options:{hide_image:{if-all: [=scale.small, =landscape], then:true, else:false}}, display:{if: =issue.type, equals:"NOW", then:none, else:inherit}},
 		#h2: {options:{hide_image:{if-all: [=scale.small, =landscape], then:true, else:false}}}
-    }</style>
+	}</style>
 	<style>{
-    $switch: [
-        {if: =scale.phone, then: {
-        }},
-        {if: =portrait, then: {
+	$switch: [
+	    {if: =scale.phone, then: {
+	    }},
+	    {if: =portrait, then: {
 			#b1:	{ frame: [0, 0, 475, 620] },
 			#b2:	{ frame: [486, 0, 280, 214] },
 			#b3:	{ frame: [486, 214, 280, 204] },
 			#b4:	{ frame: [486, 418, 280, 200] }
 		}},
-        {if: =landscape, then: {
+	    {if: =landscape, then: {
 			#b1:	{ frame: [3, 0, 475, 620] },
 			#b2:	{ frame: [494, 0, 280, 214] },
 			#b3:	{ frame: [494, 212, 280, 204] },
 			#b4:	{ frame: [494, 416, 280, 204] }
 		}}
-    ]}</style>
-	
+	]}</style>
+
 	<box id="b1" class="maude unit_large_1" embed="article" module="TOP-IMAGE_module.xml" />
 	<box id="b2" class="maude unit_medium_1" embed="article" module="TOP-IMAGE_module.xml" />
 	<box id="b3" class="maude unit_medium_1" embed="article" module="TOP-IMAGE_module.xml" />
@@ -42,7 +42,9 @@
 	<box id="marketdata_background" class="ad_light">
 		<box id="highlight_marketdata" embed="marketdata" />
 	</box>
-	<box id="h1" class="maude unit_highlight" embed="article" module="HIGHLIGHTS_module.xml" />
 	<box id="h2" class="maude unit_highlight" embed="article" module="HIGHLIGHTS_module.xml" />
 
+	
 </jpml>
+
+

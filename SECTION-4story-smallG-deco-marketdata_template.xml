@@ -1,4 +1,4 @@
-<jpml id="SECTION-4story-smallG-deco_template">
+<jpml id="SECTION-4story-smallG-deco-marketdata_template">
 	<style src="GLOBAL-stylesheet.ejs" />
 	<style src="SECTION-stylesheet.ejs" />
 	<style src="PHONE-stylesheet.ejs" />
@@ -12,9 +12,7 @@
 				{if: =portrait, then: {normal_headline:true}},
 				{if: =landscape, then: {normal_headline:true, F_image:{if: =widescreen, then:true, else:false}}}			
 			]}},
-		#h1: {options:{hide_image:{if-all: [=scale.small, =landscape], then:true, else:false}}},
-		#h2: {options:{hide_image:{if-all: [=scale.small, =landscape], then:true, else:false}}}
-		
+		#h1: {options:{hide_image:{if-all: [=scale.small, =landscape], then:true, else:false}}}
 	}</style>
 	<style>{
 		$switch: [
@@ -65,7 +63,9 @@
 	</box>
 	<box id="b4" embed="article" class="maude unit_medium_1" module="RIGHT-INSET-IMAGE_module.xml" />
 	<box id="deco" embed="article" class="maude unit_deco" module="DECO_module.xml" />
-	<box id="h1" embed="article" class="maude unit_highlight" module="HIGHLIGHTS_module.xml" />
+	<box id="marketdata_background" class="ad_light">
+		<box id="highlight_marketdata" embed="marketdata" />
+	</box>
 	<box id="h2" embed="article" class="maude unit_highlight" module="HIGHLIGHTS_module.xml" />
 
 	

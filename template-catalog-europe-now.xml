@@ -216,6 +216,13 @@
 		<!-- END SPECIAL REPORT -->
 		<!--  SPECIAL REPORT 2 -->
 		<template 
+			name="SECTION-3story-G_template.xml"
+			section="SPECIAL_REPORT_TWO" 
+			title="3 story - G photo"
+			min="5"
+			usage="front"
+		/>
+		<template 
 			name="SECTION-4story-D-C_template.xml"
 			section="SPECIAL_REPORT_TWO" 
 			title="4 story plain"
@@ -252,13 +259,6 @@
 			section="SPECIAL_REPORT_TWO" 
 			title="P photo - Grey highlights"
 			min="3"
-			usage="front"
-		/>
-		<template 
-			name="SECTION-3story-G_template.xml"
-			section="SPECIAL_REPORT_TWO" 
-			title="3 story - G photo"
-			min="5"
 			usage="front"
 		/>
 		<template 

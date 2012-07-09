@@ -15,14 +15,15 @@
 					{if: =portrait, then: {small_headline:true, left:true, no_indent:true}},
 					{if: =landscape, then: {small_headline:true, left:true, bottom:true, no_indent:true}}			
 				]}},
-			#ad_background: {display:{if: =page.number, at-least:2, then:none, else:inherit}},
+			#ad_background: {display:{if: =page.number, equals:1, then:none, else:inherit}},
 			#h1: {options:{hide_image:{if-all: [=scale.small, =landscape], then:true, else:false}, indent:{if: =page.number, equals:1, then:true, else:false}}},
 			#h2: {options:{hide_image:{if-all: [=scale.small, =landscape], then:true, else:false}, indent:{if: =page.number, equals:1, then:true, else:false}}},
 			#deco: {options: { $switch: [
 					{if: =scale.phone, then: {normal_headline:true, bottom_border:true, G_image:true}},
 					{if: =portrait, then: {normal_headline:true}},
 					{if: =landscape, then: {normal_headline:true, F_image:{if: =widescreen, then:true, else:false}}}			
-				]}}
+				]}}	,
+			#ad_background: {display:{if: =page.number, equals:1, then:none, else:inherit}}
 			
 	}</style>
 	<style>{ 
@@ -57,12 +58,12 @@
 			},
 			
 			#h1: {
-					frame:[1, 620, {if: =page.number, at-least:2, then:383, else:255}, 256]
+					frame:[1, 620, {if: =page.number, equals:1, then:383, else:255}, 256]
 					
 			},
 			#h2: {
-					frame:[{if: =page.number, at-least:2, then:384, else:256}, 620, {if: =page.number, at-least:2, then:384, else:256}, 256],
-					border-width:[0, {if: =page.number, at-least:2, then:0, else:1}, 0, {if: =page.number, at-least:2, then:1, else:0}],
+					frame:[{if: =page.number, equals:1, then:384, else:256}, 620, {if: =page.number, equals:1, then:384, else:256}, 256],
+					border-width:[0, {if: =page.number, equals:1, then:0, else:1}, 0, {if: =page.number, equals:1, then:1, else:0}],
 					border-color:#b1aca1
 			}
 			
@@ -84,16 +85,14 @@
 			#b2:	{ frame: [594, 0, 183, 328]},
 			#b3:	{ frame: [594, 328, 183, 291]},
 			#h1: {
-					frame:[786, 0, 238, {if: =page.number, at-least:2, then:310, else:216}]
+					frame:[786, 0, 238, {if: =page.number, equals:1, then:310, else:216}]
 					
 			},
 			#h2: {
-					frame:[786, {if: =page.number, at-least:2, then:310, else:216}, 238, {if: =page.number, at-least:2, then:310, else:207}],
-					border-width:[{if: =page.number, at-least:2, then:1, else:0}, 0, 0, 0],
+					frame:[786, {if: =page.number, equals:1, then:310, else:216}, 238, {if: =page.number, equals:1, then:310, else:207}],
+					border-width:[{if: =page.number, equals:1, then:1, else:0}, 0, 0, 0],
 					border-color:#b1aca1
-			},
-			
-			#ad_background: {display:{if: =page.number, at-least:2, then:none, else:inherit}}
+			}
 			
 		}}
 	]}</style>

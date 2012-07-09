@@ -1353,10 +1353,26 @@
 			page="2" 
 		/>
 		<template 
+			name="SECTION-3story-G-mirror_template.xml" 
+			deco="true" 
+			title="Continuation - 3 story - G photo mirror"
+			min="5" 
+			usage="continuation" 
+			page="2"
+		/>
+		<template 
 			name="SECTION-3story-G-deco-C_template.xml" 
 			deco="true" 
 			title="Continiation - 3 story - G liondoor"
 			min="5" 
+			usage="continuation" 
+			page="2"
+		/>
+		<template 
+			name="SECTION-4story-smallG-deco_template.xml" 
+			deco="true" 
+			title="Continiation - 4 story - G liondoor"
+			min="6" 
 			usage="continuation" 
 			page="2"
 		/>

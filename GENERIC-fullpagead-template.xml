@@ -2,22 +2,28 @@
     <style src="GLOBAL-stylesheet.ejs" />
     <style src="PHONE-stylesheet.ejs" />
 	<style>{
-	        #fullpage_container: { display: {
-	            if: =scale.phone,
-	            and: =intent.section,
-	            then: none,
-	            else: inherit
-	        }},
-	        #ad_background: { display: {
-	            if-all: [=scale.phone, =intent.section, {if: =page.number, equals:2}],
-	            then: inherit,
-	            else: none
-	        }}
+        if: =scale.phone, then: {
+            #fullpage_ad: {
+                width:=view.width,
+                height:=view.height
+            },
+            #fullpage_container: { 
+                display: { if: =intent.section, then: none, else: inherit },
+                width:=view.width,
+                height:=view.height
+            },
+            #ad_background: { display: {
+                if: =intent.section, 
+                and: {if: =page.number, equals:2},
+                then: inherit,
+                else: none
+            }}
+        }
     }</style>
-<box id="fullpage_container">
-	<box id="fullpage_ad" class="ad-fullpage" embed="fullpagead" />
-</box>
-<box id="ad_background" class="ad_light maude unit_ad">
-	<box id="highlight_ad" class="ad-rectangle" embed="advertisement" />
-</box>
+    <box id="fullpage_container">
+        <box id="fullpage_ad" class="ad-fullpage" embed="fullpagead" />
+    </box>
+    <box id="ad_background" class="ad_light maude unit_ad">
+        <box id="highlight_ad" class="ad-rectangle" embed="advertisement" />
+    </box>
 </jpml>

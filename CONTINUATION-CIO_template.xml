@@ -1,6 +1,8 @@
 <jpml id="CONTINUATION-CIO_template">
 	<style src="GLOBAL-stylesheet.ejs" />
 	<style src="GLOBAL_MODULES-stylesheet.ejs" />
+	<style src="PHONE-MODULES-stylesheet.ejs" />
+	<style src="PHONE-stylesheet.ejs" />
 	<style>{
 		.rando_heading: {
 			font-size:18
@@ -12,8 +14,7 @@
 		},
 		#tech_strap: {
 			padding: [4, 0, 0, 8],
-			background-color:#e4e4e4,
-			frame: [512, 4, 256, 23] 
+			background-color:#e4e4e4
         },
 		.strap: {
 			color:#000,
@@ -27,114 +28,177 @@
 			display: {if: =page.section, equals: "CFO", then:inherit, else:none}
 		},
 		
-        #b1 : { frame: [0, 0, 256, 203] },
-        #b2 : { frame: [0, 204, 256, 203], options: {hide_strap:true }},
-        #b3 : { frame: [0, 407, 256, 203], options: {hide_strap:true }},
-        #b4 : { frame: [256, 0, 256, 203], options: {hide_strap:true }},
-        #b5 : { frame: [256, 204, 256, 203], options: {hide_strap:true}},
-        #b6 : { frame: [256, 407, 256, 203], options: {hide_strap:true }},
-		#b7:	{ 
-			frame: [512, 33, 256, 67],
-			options:{continuation:true}
-		},
-		#b8:	{ 
-			frame: [512, 95, 256, 67],
-			options:{continuation:true}
-		},
-		#b9:	{ 
-			frame: [512, 160, 256, 67],
-			options:{continuation:true}
-		},
-		#b10:	{ 
-			frame: [512, 225, 256, 67],
-			options:{continuation:true}
-		},
-		#b11:	{ 
-			frame: [512, 290, 256, 67],
-			options:{continuation:true}
-		},
-		#b12:	{ 
-			frame: [512, 355, 256, 67],
-			options:{continuation:true}
-		},
-		#b13:	{ 
-			frame: [512, 420, 256, 67],
-			options:{continuation:true}
-		},
-		#b14:	{ 
-			frame: [512, 485, 256, 67],
-			options:{continuation:true}
-		},
-		#b15:	{ 
-			frame: [512, 550, 256, 61],
-			options:{continuation:true}
-		}
+        #b2: {options: {hide_strap:true }},
+        #b3: {options: {hide_strap:true }},
+        #b4: {options: {hide_strap:true }},
+        #b5: {options: {hide_strap:true}},
+        #b6: {options: {hide_strap:true }},
+		#b7: {options:{continuation:true}},
+		#b8: {options:{continuation:true}},
+		#b9: {options:{continuation:true}},
+		#b10: {options:{continuation:true}},
+		#b11: {options:{continuation:true}},
+		#b12: {options:{continuation:true}},
+		#b13: {options:{continuation:true}},
+		#b14: {options:{continuation:true}},
+		#b15: {options:{continuation:true}}
+		
 	}</style>
 	<style>{
-		if: =portrait, then: {
-			#h5: {
-				frame:[1, 679, 256, 196],
-				options:{portrait:true}
-			},
-			#h6: {
-				frame:[257, 679, 256, 196],
-				options:{portrait:true}
-			},
-			#h7: {
-				frame:[513, 679, 256, 196],
-				options:{portrait:true}
-			},
-			#deloitte_header: {
-				frame: [0, 611, 768, 68]
-			}
-			
-		}, else: {
-			#h5: {
-				frame:[785, 80, 240, 180]
-			},
-			#h6: {
-				frame:[785, 260, 240, 180]
-			},
-			#h7: {
-				frame:[785, 440, 240, 180]
-			},
-			#deloitte_header: {
-				frame: [785, 0, 238, 64]
-			}
-			
-		}
+		$switch: [
+			{if: =scale.phone, then:{
+				#deloitte_header: {display:none},
+				.strap: {
+					font-size:16,
+					text-scale: {$multiply: [=scale.text, 1] },
+					line-height:17,
+					text-transform:uppercase
+				},
+				#b2: {
+		                    height: {if:=articles.b2.subsection, equals:=articles.b1.subsection, then: 50} 
+		        },
+		        #b3: {
+		                    height: {if:=articles.b3.subsection, equals:=articles.b2.subsection, then: 50} 
+		        },
+		        #b4: {
+		                    height: {if:=articles.b4.subsection, equals:=articles.b3.subsection, then: 50} 
+		        },
+		        #b5: {
+		                    height: {if:=articles.b5.subsection, equals:=articles.b4.subsection, then: 50} 
+		        },
+		        #b6: {
+		                    height: {if:=articles.b6.subsection, equals:=articles.b5.subsection, then: 50} 
+		        },
+	        	#b7: {border-width:[0, 0, 1, 0], border-color:#ccc},
+	        	#b8: {border-width:[0, 0, 1, 0], border-color:#ccc},
+	        	#b9: {border-width:[0, 0, 1, 0], border-color:#ccc},
+	        	#b10: {border-width:[0, 0, 1, 0], border-color:#ccc},
+	        	#b11: {border-width:[0, 0, 1, 0], border-color:#ccc},
+	        	#b12: {border-width:[0, 0, 1, 0], border-color:#ccc},
+	        	#b13: {border-width:[0, 0, 1, 0], border-color:#ccc},
+	        	#b14: {border-width:[0, 0, 1, 0], border-color:#ccc},
+				#h5: {options:{hide_body:true, hide_image:true}},
+				#h6: {options:{hide_body:true, hide_image:true}},
+				#h7: {options:{hide_body:true, hide_image:true}}
+				
+								
+	        	
+			}},
+			{if: =scale.tablet, then:{
+				#tech_strap: {
+					frame: [512, 4, 256, 23] 
+		        },
+				#b1: { frame: [0, 0, 256, 203] },
+		        #b2: { frame: [0, 204, 256, 203]},
+		        #b3: { frame: [0, 407, 256, 203]},
+		        #b4: { frame: [256, 0, 256, 203]},
+		        #b5: { frame: [256, 204, 256, 203]},
+		        #b6: { frame: [256, 407, 256, 203]},
+				#b7:	{ 
+					frame: [512, 33, 256, 67]
+				},
+				#b8:	{ 
+					frame: [512, 95, 256, 67]
+				},
+				#b9:	{ 
+					frame: [512, 160, 256, 67]
+				},
+				#b10:	{ 
+					frame: [512, 225, 256, 67]
+				},
+				#b11:	{ 
+					frame: [512, 290, 256, 67]
+				},
+				#b12:	{ 
+					frame: [512, 355, 256, 67]
+				},
+				#b13:	{ 
+					frame: [512, 420, 256, 67]
+				},
+				#b14:	{ 
+					frame: [512, 485, 256, 67]
+				},
+				#b15:	{ 
+					frame: [512, 550, 256, 61]
+				}
+		        
+			}}
+		]
 	}</style>
-    <box id="b1" embed="article" module="CONTINUATION-dynamic_module.xml" />    
-    <box id="b2" embed="article" module="CONTINUATION-dynamic_module.xml" />
-    <box id="b3" embed="article" module="CONTINUATION-dynamic_module.xml" />
-    <box id="b4" embed="article" module="CONTINUATION-dynamic_module.xml" />
-    <box id="b5" embed="article" module="CONTINUATION-dynamic_module.xml" />
-    <box id="b6" embed="article" module="CONTINUATION-dynamic_module.xml" />
-	<box id="tech_strap">
+	<style>{
+		$switch: [
+			{if: =scale.phone, then:{
+			
+			}},
+			{if: =portrait, then: {
+				
+				#h5: {
+					frame:[1, 679, 256, 196],
+					options:{portrait:{if: =portrait, then:true}}
+				},
+				#h6: {
+					frame:[257, 679, 256, 196],
+					options:{portrait:{if: =portrait, then:true}}
+				},
+				#h7: {
+					frame:[513, 679, 256, 196],
+					options:{portrait:{if: =portrait, then:true}}
+				},
+				#deloitte_header: {
+					frame: [0, 611, 768, 68]
+				}
+				
+			}},
+			{if: =landscape, then: {
+				#h5: {
+					frame:[785, 80, 240, 180]
+				},
+				#h6: {
+					frame:[785, 260, 240, 180]
+				},
+				#h7: {
+					frame:[785, 440, 240, 180]
+				},
+				#deloitte_header: {
+					frame: [785, 0, 238, 64]
+				}
+				
+			}}
+			
+		]
+	}</style>
+	
+	<box id="h5" embed="article" class="maude unit_highlight" module="HIGHLIGHTS-CIO_module.xml" />
+	<box id="h6" embed="article" class="maude unit_highlight" module="HIGHLIGHTS-CIO_module.xml" />
+	<box id="h7" embed="article" class="maude unit_highlight" module="HIGHLIGHTS-CIO_module.xml" />
+	<box id="b1" embed="article" class="maude unit_continuation_strap" module="CONTINUATION-dynamic_module.xml" />    
+    <box id="b2" embed="article" class="maude unit_continuation_strap" module="CONTINUATION-dynamic_module.xml" />
+    <box id="b3" embed="article" class="maude unit_continuation_strap" module="CONTINUATION-dynamic_module.xml" />
+    <box id="b4" embed="article" class="maude unit_continuation_strap" module="CONTINUATION-dynamic_module.xml" />
+    <box id="b5" embed="article" class="maude unit_continuation_strap" module="CONTINUATION-dynamic_module.xml" />
+    <box id="b6" embed="article" class="maude unit_continuation_strap" module="CONTINUATION-dynamic_module.xml" />
+	<box id="tech_strap" class="maude">
 		<panel>
 			<p class="strap" id="cio">Latest Technology News</p>
 			<p class="strap" id="cfo">Latest Finance News</p>
 		</panel>
 	</box>
-	<box id="b7" embed="article" module="FLASHLINE-HEADLINE_module.xml" />
-	<box id="b8" embed="article" module="FLASHLINE-HEADLINE_module.xml" />
-	<box id="b9" embed="article" module="FLASHLINE-HEADLINE_module.xml" />
-	<box id="b10" embed="article" module="FLASHLINE-HEADLINE_module.xml" />
-	<box id="b11" embed="article" module="FLASHLINE-HEADLINE_module.xml" />
-	<box id="b12" embed="article" module="FLASHLINE-HEADLINE_module.xml" />
-	<box id="b13" embed="article" module="FLASHLINE-HEADLINE_module.xml" />
-	<box id="b14" embed="article" module="FLASHLINE-HEADLINE_module.xml" />
-	<box id="b15" embed="article" module="FLASHLINE-HEADLINE_module.xml" />
-	<box id="deloitte_header">
+	<box id="b7" embed="article" class="maude unit_continuation_strap" module="FLASHLINE-HEADLINE_module.xml" />
+	<box id="b8" embed="article" class="maude unit_continuation_strap" module="FLASHLINE-HEADLINE_module.xml" />
+	<box id="b9" embed="article" class="maude unit_continuation_strap" module="FLASHLINE-HEADLINE_module.xml" />
+	<box id="b10" embed="article" class="maude unit_continuation_strap" module="FLASHLINE-HEADLINE_module.xml" />
+	<box id="b11" embed="article" class="maude unit_continuation_strap" module="FLASHLINE-HEADLINE_module.xml" />
+	<box id="b12" embed="article" class="maude unit_continuation_strap" module="FLASHLINE-HEADLINE_module.xml" />
+	<box id="b13" embed="article" class="maude unit_continuation_strap" module="FLASHLINE-HEADLINE_module.xml" />
+	<box id="b14" embed="article" class="maude unit_continuation_strap" module="FLASHLINE-HEADLINE_module.xml" />
+	<box id="b15" embed="article" class="maude unit_continuation_strap" module="FLASHLINE-HEADLINE_module.xml" />
+    <box id="deloitte_header">
 		<panel class="deloitte" />
 		<panel class="slug">
 			<p class="deloitte_slug" id="cio">Business-led, Technology-enabled:</p><p class="deloitte_slug" id="cio">Insight from Deloitte</p>
 			<p class="deloitte_slug" id="cfo">CFO insight and analysis written</p><p class="deloitte_slug" id="cfo"> and compiled by Deloitte</p>
 		</panel>
 	</box>
-	<box id="h5" embed="article" module="HIGHLIGHTS-CIO_module.xml" />
-	<box id="h6" embed="article" module="HIGHLIGHTS-CIO_module.xml" />
-	<box id="h7" embed="article" module="HIGHLIGHTS-CIO_module.xml" />
 
 	
 </jpml>

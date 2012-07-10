@@ -1,9 +1,10 @@
 <jpml id="HIGHLIGHTS_module">
 	<style src="GLOBAL_MODULES-stylesheet.ejs" />
 	<style src="GLOBAL-stylesheet.ejs" />
+	<style src="PHONE-MODULES-stylesheet.ejs" />
     <style>{
 		jpml: {
-				background-color:#b9e4f3,
+				background-color:{if: =scale.phone, then: #fff, else: #b9e4f3},
 				padding: [10, 8, 10, 8],
 				border-width: {if: =options.portrait, then: [0, 1, 0, 0], else: [1, 0, 0, 0]},
 				border-color:#b1aca1
@@ -11,8 +12,8 @@
 		.cio_highlight_headline: {
 			color:#333,
 			font-name:Helvetica-Bold,
-			font-size:14,
-			line-height:15
+			font-size:{if: =scale.phone, then:18, else:14},
+			line-height:{if: =scale.phone, then:19, else:15}
 		},
 		.cio_highlight_byline: {
 			color:#333,
@@ -27,10 +28,11 @@
 		.cio_body: {
 			color:#333,
 			font-name:Helvetica,
-			font-size:13,
-			line-height:15,
+			font-size:{if: =scale.phone, then:16, else:13},
+			line-height:{if: =scale.phone, then:18, else:15},
 			text-overflow: "\u00bb",
-			padding: [4, 0, 0, 0]
+			padding: [4, 0, 0, 0],
+			display:{if: =options.hide_body, then:none, else:inherit}
 		},
 		#image_container: { 
 			anchor-x: right,

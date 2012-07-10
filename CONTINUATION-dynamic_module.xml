@@ -55,8 +55,8 @@
 			#vertical: {
 				anchor-y:middle,
 				display:inherit
-			}
-			
+			},
+			#tablet: {display:none}
 		}, else:{}
 	}</style>
 		<panel id="strap">
@@ -69,7 +69,7 @@
 			<box id="vertical">
 				<p class="continuation_headline"><span embed="headline" /><mark class="key" /></p>
 			</box>
-			<p class="continuation_headline"><span embed="headline" /><mark class="key" /></p>
+			<p class="continuation_headline" id="tablet"><span embed="headline" /><mark class="key" /></p>
 			<panel embed="body" class="continuation_body"/>
 		</panel>
 </jpml>

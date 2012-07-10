@@ -1,6 +1,7 @@
 <jpml id="FLASHLINE-HEADLINE_module">
 	<style src="GLOBAL_MODULES-stylesheet.ejs" />
 	<style src="GLOBAL-stylesheet.ejs" />
+	<style src="PHONE-MODULES-stylesheet.ejs" />
 	<style>{
 		$join: [
 			{ $switch: [

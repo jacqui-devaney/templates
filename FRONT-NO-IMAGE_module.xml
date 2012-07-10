@@ -58,7 +58,7 @@
 						pixels-per-point-x:1,
 						pixels-per-point-y:1,
 						image-scale:1,
-						display:inherit
+						display:{if: =options.hide_image, then:none, else:inherit}
 					},
 					image: { 
 						height: 76,
@@ -72,7 +72,7 @@
 						display:none
 					},
 					#body: {
-						display:none
+						display:{if: =options.show_body, then:inherit, else:none}
 					},
 					#wrapper: {
 						padding: [5, 0, 0, 0]

@@ -25,10 +25,22 @@
 		line-height:15
 	},
 	.continuation_headline: {
-		font-size:15,
-		line-height:14
+		font-size:18,
+		text-scale: {$multiply: [=scale.text, 1] },
+		line-height:19
+	},
+	#continuation_headline: {
+		font-size:18,
+		text-scale: {$multiply: [=scale.text, 1] },
+		line-height:19
 	},
 	.subsection: {
+		font-size:16,
+		text-scale: {$multiply: [=scale.text, 1] },
+		line-height:17,
+		text-transform:uppercase
+	},
+	.strap: {
 		font-size:16,
 		text-scale: {$multiply: [=scale.text, 1] },
 		line-height:17,
@@ -109,7 +121,16 @@
 	#letters_line: {
 		top:43,
 		width:198
+	},
+	.cio_head: {
+		font-size:22,
+		line-height:22
+	},
+	.tech_section: {
+		font-size:22,
+		line-height:23
+	},
+	.tagline: {
+		font-size:11
 	}
-	
-	
 }, else:{}}

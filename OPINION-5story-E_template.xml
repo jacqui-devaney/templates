@@ -33,7 +33,7 @@
 						{ if: =articles.b3.type, equals: "Letters", then: {
 							_comment: "b3 has the header",
 							#b2: {},
-							#b3: {options:{header:true} }
+							#b3: {options:{header:true, border:true} }
 						}}, 
 						{ if: true, then: {
 							_comment: "neither have the header",

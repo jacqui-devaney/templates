@@ -17,7 +17,8 @@
 				    #letters_header: { display: none },
                     #rando_header: { display: { if: =options.header, then: inherit, else: none } }
                 }}
-			]} 
+			]},
+			{#articles_phone: {display:none}} 
 	]			
 	
 		
@@ -37,6 +38,13 @@
 			},
 			#letters_header:{
 				padding:[0, 0, 10, 0]
+			},
+			.articles: {
+				display: { if: =options.header, then: inherit, else: none }
+			},
+			#articles_phone: {
+				display: { if: =options.header, then: none, else: inherit },
+				anchor-y:middle
 			}
 		}, else: {}
 	}</style>
@@ -54,4 +62,9 @@
 			<h2 class="opinion_dek" embed="subhed" />
 			<panel class="body" embed="body" />
 		</panel>
+		<box id="articles_phone">
+			<p class="opinion_headline"><span embed="headline" /><mark class="key" /></p>
+			<p class="letters_headline"><span embed="headline" /><mark class="key" /></p>
+			<h2 class="opinion_dek" embed="subhed" />
+		</box>
 </jpml>

@@ -4,7 +4,7 @@
     <style src="PHONE-stylesheet.ejs" />
 	<style>{
 		#b1: {options:{header:true, border:{if: =scale.phone, then:true, else:false}}},
-		#b2: {options:{small_headline:true, show_image:true, no_border:true, byline:{if: =scale.small, then:true, else:false}}},
+		#b2: {options:{small_headline:true, show_image:true, show_body:true, no_border:true, byline:{if: =scale.small, then:true, else:false}}},
 		#h1: {options:{hide_image:{if-all: [=scale.small, =landscape], then:true, else:false}, byline:{if: =scale.phone, then:false, else:true}, hide_flashline:true}},
 		#h2: {options:{hide_image:{if-all: [=scale.small, =landscape], then:true, else:false}, byline:{if: =scale.phone, then:false, else:true}, hide_flashline:true}}
 
@@ -31,7 +31,7 @@
     <box id="articles">
 		<box id="b1" embed="article" class="maude unit_rando_top" module="OPINION-RANDO-LETTERS_module.xml" />
     </box>
-    <box id="b2" embed="article" class="maude unit_medium_1" module="TOP-IMAGE_module.xml" />
+    <box id="b2" embed="article" class="maude unit_rando_second" module="TOP-IMAGE_module.xml" />
     <box id="ad_background" class="ad_light maude unit_ad">
 		<box id="highlight_ad" class="ad-rectangle" embed="advertisement" />
 	</box>

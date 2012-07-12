@@ -13,7 +13,8 @@
 			color:#333,
 			font-name:Helvetica-Bold,
 			font-size:{if: =scale.phone, then:18, else:14},
-			line-height:{if: =scale.phone, then:19, else:15}
+			line-height:{if: =scale.phone, then:19, else:15},
+			text-scale: {$multiply: [=scale.text, 1] }
 		},
 		.cio_highlight_byline: {
 			color:#333,

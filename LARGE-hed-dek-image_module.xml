@@ -20,26 +20,54 @@
             
 		},
         
-		#text: {padding: [8, 0, 8, 0]}
+		#text: {padding: [8, 0, 8, 0]},
+		#image_wrapper: {display:none},
+		#headline: {display:none}
 		
 	}</style>
 	<style>{
 		if: =scale.phone, then: {
-			.large_dek: {
-				display:none
+			#image_wrapper: { 
+				anchor-x:right,
+				position:relative,
+				width: 76,
+				padding:[0, 8, 0, 15],
+				pixels-per-point-x:1,
+				pixels-per-point-y:1,
+				image-scale:1,
+				display:inherit
+			},
+			image: { 
+				height: 76,
+				display:inherit,
+				padding: [0],
+                options:{},
+				image-scale: 1
+				
 			},
 			jpml: {
-				padding:[0, 8, 8, 8],
+				padding:[8, 8, 0, 8],
 				border-width:[0, 0, 1, 0],
 				border-color:#b1aca1
-			}
+			},
+			.large: {display:none},
+			#text: {display:none},
+			#headline: {display:inherit}
+			
 		}, else:{}
 	}</style>
 	<box id="text">
 		<p id="large_headline"><span embed="headline" /><mark class="key" /></p>
 		<h2 class="large_dek"><span embed="subhed" /></h2>
 	</box>
-    <image embed="summary-image" />
+    <image embed="summary-image" class="large" />
+	<box id="image_wrapper">
+		<image embed="summary-image" />
+	</box>
+	<panel id="headline">
+		<p id="large_headline" class="invisible"><span embed="headline" /><mark class="key" /></p>
+		<h2 class="large_dek"><span embed="subhed" /></h2>
+	</panel>
 
 
 

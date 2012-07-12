@@ -27,12 +27,12 @@
 	.continuation_headline: {
 		font-size:18,
 		text-scale: {$multiply: [=scale.text, 1] },
-		line-height:19
+		line-height:17
 	},
 	#continuation_headline: {
 		font-size:18,
 		text-scale: {$multiply: [=scale.text, 1] },
-		line-height:19
+		line-height:17
 	},
 	.subsection: {
 		font-size:16,
@@ -78,8 +78,8 @@
 		line-height:15
 	},
 	.article_body: {
-		font-size:16,
-		line-height:16
+		font-size:{$multiply: [16, =view.zoomlevel]},
+		line-height:{$multiply: [16, =view.zoomlevel]}
 	},
 	.deloitte_article_headline: {
 		font-size:25,
@@ -132,5 +132,15 @@
 	},
 	.tagline: {
 		font-size:11
+	},
+	.large_dek: {
+		font-name:DJ5Exchange-Medium,
+		text-indent:0,
+		font-size:{$multiply:15},
+		line-height:{$multiply:18},
+		text-overflow: " \u00bb",
+        text-align: left,
+		text-scale: {if: =widescreen, then: {$multiply: [=scale.text, 1.2] }, else: inherit},
+		color:#000
 	}
 }, else:{}}

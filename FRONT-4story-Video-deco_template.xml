@@ -101,14 +101,14 @@
 	} </style>
 	
 	<box class="maude" id="marketstrap" embed="marketstrap" />
-	<box class="maude unit_1" id="b1" embed="article" module="FRONT-NO-IMAGE_module.xml" />
-	<box class="maude unit_1" id="b2" embed="article" module="FRONT-NO-IMAGE_module.xml" />
+	<box class="maude unit_front_1" id="b1" embed="article" module="FRONT-NO-IMAGE_module.xml" />
+	<box class="maude unit_front_1" id="b2" embed="article" module="FRONT-NO-IMAGE_module.xml" />
 	<box id="whatsnews" embed="whatsnews" />
 	<box id="whatsnews_wrapper">
 		<box id="whatsnews_phone" embed="whatsnews_button" />
 	</box>
-	<box class="maude unit_1" id="b3" embed="article" module="FRONT-NO-IMAGE_module.xml" />
-	<box class="maude unit_1" id="b4" embed="article" module="FRONT-NO-IMAGE_module.xml" />
+	<box class="maude unit_front_1" id="b3" embed="article" module="FRONT-NO-IMAGE_module.xml" />
+	<box class="maude unit_front_1" id="b4" embed="article" module="FRONT-NO-IMAGE_module.xml" />
 	<box class="maude unit_ad front_ad" id="ad_background">
 		<box id="ad" class="ad-rectangle" embed="advertisement" />
 	</box>

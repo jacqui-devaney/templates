@@ -35,8 +35,8 @@
 		]
 	}</style>
 	
-	<box id="b1" embed="article" class="maude unit_medium_deco" module="LARGE-hed-dek-image_module.xml" />
-	<box id="h3" embed="article" class="maude unit_highlight" module="HIGHLIGHTS_module.xml" />
+	<box id="b1" embed="article" class="maude unit_p" module="LARGE-hed-dek-image_module.xml" />
+	<box id="h3" embed="article" class="maude unit_1" module="HIGHLIGHTS_module.xml" />
 	<box id="ad_background" class="ad_light maude unit_ad">
 		<box id="highlight_ad" class="ad-rectangle" embed="advertisement" />
 	</box>

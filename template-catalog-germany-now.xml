@@ -31,10 +31,15 @@
             <template name="CONTINUATION-generic-2_template.xml" title="" min="2" usage="continuation"/>
             <template name="CONTINUATION-generic-1_template.xml" title="" min="1" usage="continuation"/>
         <!-- END GENERIC CONTINUATION -->
-        <!-- WHATS NEWS -->
-            <template name="WHATSNEWS-dummy_template.xml" usage="front" title="Whats News" min="1" section="WHATS_NEWS"/>
-            <template name="WHATSNEWS-dummy_template.xml" usage="continuation" title="Whats news" min="1" section="WHATS_NEWS"/>
-        <!-- END WHATS NEWS -->
+		<!-- WHATS NEWS -->
+		<template 
+			name="WHATSNEWS-dummy_template.xml" 
+			usage="front" 
+			title="Whats News"
+			min="1" 
+			section="WHATS_NEWS" 
+		/>
+		<!-- END WHATS NEWS -->
         <!-- FULL PAGE AD -->
             <template name="GENERIC-fullpagead-template.xml" usage="ads"/>
         <!-- END FULL PAGE AD -->

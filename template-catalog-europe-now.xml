@@ -663,23 +663,15 @@
 			/>
 			<!-- END FANCY CONTINUATION -->
 		
-		<!-- WHATS NEWS -->
-		<template 
-			name="WHATSNEWS-dummy_template.xml" 
-			usage="front" 
-			title="Whats News"
-			min="1" 
-			section="WHATS_NEWS" 
-		/>
-		<template 
-			name="WHATSNEWS-dummy_template.xml" 
-			usage="continuation" 
-			title="Whats news"
-			min="1" 
-			section="WHATS_NEWS" 
-		/>
-		<!-- END WHATS NEWS -->
-		
+			<!-- WHATS NEWS -->
+			<template 
+				name="WHATSNEWS-dummy_template.xml" 
+				usage="front" 
+				title="Whats News"
+				min="1" 
+				section="WHATS_NEWS" 
+			/>
+			<!-- END WHATS NEWS -->		
 		<!-- FULL PAGE AD -->
 		<template 
 			name="GENERIC-fullpagead-template.xml" 

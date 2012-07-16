@@ -1,5 +1,6 @@
 <jpml>
 <style src="GLOBAL_MODULES-stylesheet.ejs"/>
+<style src="PHONE-MODULES-stylesheet.ejs"/>
     <style>{
 				$join: [        
 					{jpml: { 
@@ -37,23 +38,22 @@
 					{#stars: { padding: [5, 0, 10, 0] }},
 					{ $switch: [
 						{ if: =options.no_rule, then: {
-							#regular_content: {
+							#regular: {
 								border-width: [0, 0, 0, 0],
-								padding: [2, 8, 15, 8]
+								padding: [2, 8, 15, 8],
+								display: { if: =article.type, equals: A-hed, then: none, else: inherit }
 							}
 
 						}},
 						{ if: true, then: {
-							#regular_content: {
+							#regular: {
 								border-width: [1, 0, 0, 0],
 								border-color: #b1aca1,
-								padding: [10, 8, 15, 8]
+								padding: [10, 8, 15, 8],
+								display: { if: =article.type, equals: A-hed, then: none, else: inherit }
 							}
 							}}
 					]},	
-					{#regular: {
-						display: { if: =article.type, equals: A-hed, then: none, else: inherit }
-					}},
 					{#ahed: {
 						display: { if: =article.type, equals: A-hed, then: inherit, else: none }
 					}},
@@ -70,23 +70,58 @@
 					{#body-first-p: {text-indent: {$switch: [
 						{if: =scale.small, then:{if: =options.no_indent, then:0, else:inherit}},
 						{if: =scale.large, then: inherit}
-					]}}}
+					]}}},
+					{.phone: {display:none}}
 				]
 
     }</style>
+	<style>{
+		if: =scale.phone, then: {
+			jpml: {
+				padding:[0]
+			},
+			#regular: {
+				padding:[5, 8],
+				display:inherit
+			},
+			#ahed: {display:none},
+			#image_wrapper: { 
+				anchor-x:right,
+				position:relative,
+				width: 76,
+				padding:[0, 1, 0, 15],
+				pixels-per-point-x:1,
+				pixels-per-point-y:1,
+				image-scale:1,
+				display:inherit
+			},
+			image: { 
+				height: 76,
+				display:inherit,
+				padding: [0],
+	            options:{},
+				image-scale: 1
+			
+			},
+			#body_container: {display:none},
+			.phone: {display:inherit}
+		
+		}, else: {}
+	}</style>
     
 	<box id="regular">
-		<box id="regular_content">
-			<panel id="not_prominent">
-				<p id="small_headline"><span embed="headline" /><mark class="key" /></p>
-			</panel>
-			<panel id="body_container">
-		        <panel id="body">
-		            <p class="byline" embed="byline"/>
-		            <panel class="body" embed="body"/>
-		        </panel>
-		    </panel>
+		<box id="image_wrapper" class="phone">
+			<image embed="summary-image" class="phone" />
 		</box>
+		<panel id="not_prominent">
+			<p id="small_headline"><span embed="headline" /><mark class="key" /></p>
+	    </panel>
+	    <panel id="body_container">
+	        <panel id="body">
+		       <p class="byline" embed="byline"/>
+	            <panel class="body" embed="body"/>
+	        </panel>
+	    </panel>
 	</box>
 	
     <box id="ahed">

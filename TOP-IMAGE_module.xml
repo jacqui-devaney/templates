@@ -71,7 +71,8 @@
 					padding:[0]
 				},
 				#wrapper: {
-					border-width:[0]
+					border-width:[0],
+					padding:[{if: =options.small_pad, then:4, else:8}, 0, 0, 0]
 				},
 				#image_wrapper: { 
 					anchor-x:right,

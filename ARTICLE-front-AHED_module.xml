@@ -56,6 +56,14 @@
 			.article_headline: {font-size:36, line-height:38},
 			.hr: {
 				right:0
+			},
+			.hr1: {
+				border-width:[0, 0, 1, 0],
+				border-color:#baca1,
+				height:1,
+				width:253,
+				right:0,
+				bottom:309
 			}
         }}
 	]
@@ -73,6 +81,7 @@
 		</panel>
 		<box class="hr"></box>
 	</panel>
+	<box class="hr1"></box>
 	<panel id="article_copy">
 		<panel id="body_container">
 			<p class="article_byline" embed="byline"/>

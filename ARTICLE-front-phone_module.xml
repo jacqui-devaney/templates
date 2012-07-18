@@ -33,7 +33,9 @@
 	</panel>
 	
 	<panel id="body_container">
-		<box id="mediabucket" embed="mediabucket" />
+		<box id="mediabucket_container">
+			<box id="mediabucket" embed="mediabucket" />
+		</box>
 		<p class="article_byline" embed="byline"/>
         <panel class="article_body" embed="body"/>
 	    

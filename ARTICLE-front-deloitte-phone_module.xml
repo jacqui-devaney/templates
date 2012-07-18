@@ -100,7 +100,9 @@
 	</panel>
 	
 	<panel id="body_container">
-		<box id="mediabucket" embed="mediabucket" />
+		<box id="mediabucket_container">
+			<box id="mediabucket" embed="mediabucket" />
+		</box>
         <panel class="deloitte_article_body" embed="body"/>
 	    
 	</panel>

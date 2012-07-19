@@ -662,107 +662,6 @@
 			usage="front" 
 		/>
 		<!-- END WEEKEND JOURNAL -->
-		<!-- CAMPAIGN (REALLY ELECTION) -->
-		<template 
-			name="SECTION-4story-D-C_template.xml"
-			section="CAMPAIGN" 
-			title="4 story plain"
-			min="6" 
-			deco="true" 
-			usage="front" 
-		/>
-		
-		<template 
-			name="SECTION-3story-G-deco-C_template.xml"
-			section="CAMPAIGN" 
-			deco="true" 
-			title="3 story - G Media Deco"
-			min="5"
-			usage="front"
-		/>
-		<template 
-			name="SECTION-4story-smallG-deco_template.xml"
-			section="CAMPAIGN" 
-			title="4 story-Small G Media Deco"
-			min="6" 
-			deco="true"
-			usage="front"
-		/>
-		<template 
-			name="SECTION-1story-PV_template.xml"
-			section="CAMPAIGN" 
-			title="PV photo - Grey highlights"
-			min="3"
-			usage="front"
-		/>
-		<template 
-			name="SECTION-1story-P_template.xml"
-			section="CAMPAIGN" 
-			title="P photo - Grey highlights"
-			min="3"
-			usage="front"
-		/>
-		<template 
-			name="SECTION-3story-G_template.xml"
-			section="CAMPAIGN" 
-			title="3 story - G photo"
-			min="5"
-			usage="front"
-		/>
-		<template 
-			name="SECTION-4story-smallG-top_template.xml" 
-			section="CAMPAIGN" 
-			title="4 story - G photo"
-			min="6" 
-			usage="front" 
-		/>
-		<template 
-			name="SECTION-3story-G-mirror_template.xml" 
-			section="CAMPAIGN" 
-			title="3 story - G photo mirror"
-			min="5" 
-			deco="true"
-			usage="front" 
-		/>
-		<template 
-			name="SECTION-4story-smallG-deco-mirror_template.xml" 
-			section="CAMPAIGN" 
-			title="4 story - small G Media liondoor - mirror"
-			min="6" 
-			deco="true" 
-			usage="front" 
-		/>
-		<template 
-			name="SECTION-4story-smallG-top-mirror_template.xml" 
-			section="CAMPAIGN" 
-			title="4 story - G photo - mirror"
-			min="6" 
-			usage="front" 
-		/>
-		<template 
-			name="SECTION-1story-fullsize-deco.xml" 
-			section="CAMPAIGN" 
-			title="Full size Deco"
-			min="1" 
-			deco="true"
-			usage="front" 
-		/>
-		<template 
-			name="SECTION-1story-PV-1highlight_template.xml" 
-			section="CAMPAIGN" 
-			title="PV - 1 highlight (grey)"
-			min="2" 
-			usage="front" 
-		/>
-		<template 
-			name="SECTION-1story-PV-1highlight-white_template.xml" 
-			section="SPECIAL_REPORT" 
-			title="PV - 1 highlight (white)"
-			min="2" 
-			usage="front" 
-		/>
-				
-		<!-- END SPECIAL REPORT -->
 
 		<!-- SPECIAL REPORT -->
 		<template 
@@ -967,6 +866,108 @@
 		/>
 		
 		<!-- END SPECIAL REPORT 2 -->
+		
+		<!--  THE JOURNAL REPORT (REALLY OLYMPICS) -->
+		<template 
+			name="SECTION-3story-G_template.xml"
+			section="THE_JOURNAL_REPORT" 
+			title="OLYMPICS - 3 story - G photo"
+			min="5"
+			usage="front"
+		/>
+		<template 
+			name="SECTION-4story-D-C_template.xml"
+			section="THE_JOURNAL_REPORT" 
+			title="OLYMPICS - 4 story plain"
+			min="6" 
+			deco="true" 
+			usage="front" 
+		/>
+		
+		<template 
+			name="SECTION-3story-G-deco-C_template.xml"
+			section="THE_JOURNAL_REPORT" 
+			deco="true" 
+			title="OLYMPICS - 3 story - G Media Deco"
+			min="5"
+			usage="front"
+		/>
+		<template 
+			name="SECTION-4story-smallG-deco_template.xml"
+			section="THE_JOURNAL_REPORT" 
+			title="OLYMPICS - 4 story-Small G Media Deco"
+			min="6" 
+			deco="true"
+			usage="front"
+		/>
+		<template 
+			name="SECTION-1story-PV_template.xml"
+			section="THE_JOURNAL_REPORT" 
+			title="OLYMPICS - PV photo - Grey highlights"
+			min="3"
+			usage="front"
+		/>
+		<template 
+			name="SECTION-1story-P_template.xml"
+			section="THE_JOURNAL_REPORT" 
+			title="OLYMPICS - P photo - Grey highlights"
+			min="3"
+			usage="front"
+		/>
+		<template 
+			name="SECTION-4story-smallG-top_template.xml" 
+			section="THE_JOURNAL_REPORT" 
+			title="OLYMPICS - 4 story - G photo"
+			min="6" 
+			usage="front" 
+		/>
+		<template 
+			name="SECTION-3story-G-mirror_template.xml" 
+			section="THE_JOURNAL_REPORT" 
+			title="OLYMPICS - 3 story - G photo mirror"
+			min="5" 
+			deco="true"
+			usage="front" 
+		/>
+		<template 
+			name="SECTION-4story-smallG-deco-mirror_template.xml" 
+			section="THE_JOURNAL_REPORT" 
+			title="OLYMPICS - 4 story - small G Media liondoor - mirror"
+			min="6" 
+			deco="true" 
+			usage="front" 
+		/>
+		<template 
+			name="SECTION-4story-smallG-top-mirror_template.xml" 
+			section="THE_JOURNAL_REPORT" 
+			title="OLYMPICS - 4 story - G photo - mirror"
+			min="6" 
+			usage="front" 
+		/>
+		<template 
+			name="SECTION-1story-fullsize-deco.xml" 
+			section="THE_JOURNAL_REPORT" 
+			title="OLYMPICS - Full size Deco"
+			min="1" 
+			deco="true"
+			usage="front" 
+		/>
+		<template 
+			name="SECTION-1story-PV-1highlight_template.xml" 
+			section="THE_JOURNAL_REPORT" 
+			title="OLYMPICS - PV - 1 highlight (grey)"
+			min="2" 
+			usage="front" 
+		/>
+		<template 
+			name="SECTION-1story-PV-1highlight-white_template.xml" 
+			section="THE_JOURNAL_REPORT" 
+			title="OLYMPICS - PV - 1 highlight (white)"
+			min="2" 
+			usage="front" 
+		/>
+		
+		<!-- END OLYMPICS -->
 		
 		<!-- OPINION -->
 		<template 
@@ -1202,6 +1203,7 @@
 			min="4" 
 			usage="continuation"
 			page="2" 
+			section="OFF_DUTY, REVIEW, PERSONAL_JOURNAL, THE_JOURNAL_REPORT, WSJ_MAGAZINE"
 		/>
 		<template 
 			name="SECTION-3story-G_template.xml" 
@@ -1209,6 +1211,7 @@
 			min="5" 
 			usage="continuation"
 			page="2" 
+			section="OFF_DUTY, REVIEW, PERSONAL_JOURNAL, THE_JOURNAL_REPORT, WSJ_MAGAZINE"
 		/>
 		<template 
 			name="SECTION-3story-G-deco-C_template.xml" 
@@ -1217,6 +1220,7 @@
 			min="5" 
 			usage="continuation" 
 			page="2"
+			section="OFF_DUTY, REVIEW, PERSONAL_JOURNAL, THE_JOURNAL_REPORT, WSJ_MAGAZINE"
 		/>
 		<template 
 			name="CONTINUATION-fancy-8_template.xml" 
@@ -1390,6 +1394,14 @@
 			usage="ads"
 		/>
 		<!-- END FULL PAGE AD -->
+		
+		<template 
+			name="CONTINUATION-generic-7_template.xml" 
+			title="Test"
+			min="7"
+			usage="front"
+			section="CAMPAIGN"
+		/>
 		
 	</templates>
 

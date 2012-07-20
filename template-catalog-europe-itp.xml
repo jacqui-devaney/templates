@@ -616,7 +616,6 @@
 				min="4" 
 				usage="continuation"
 				page="2" 
-				section="OFF_DUTY, REVIEW, PERSONAL_JOURNAL, THE_JOURNAL_REPORT, WSJ_MAGAZINE"
 			/>
 			<template 
 				name="SECTION-3story-G_template.xml" 
@@ -624,34 +623,30 @@
 				min="5" 
 				usage="continuation"
 				page="2" 
-				section="OFF_DUTY, REVIEW, PERSONAL_JOURNAL, THE_JOURNAL_REPORT, WSJ_MAGAZINE"
 			/>
 			<template 
 				name="SECTION-3story-G-deco-C_template.xml" 
 				deco="true" 
-				title="Continiation - 3 story - G liondoor"
+				title="Continuation - 3 story - G liondoor"
 				min="5" 
 				usage="continuation" 
 				page="2"
-				section="OFF_DUTY, REVIEW, PERSONAL_JOURNAL, THE_JOURNAL_REPORT, WSJ_MAGAZINE"
 			/>
 			<template 
 				name="SECTION-3story-G-mirror_template.xml" 
 				deco="true" 
-				title="Continiation - 3 story - G Photo - mirror"
+				title="Continuation - 3 story - G Photo - mirror"
 				min="5" 
 				usage="continuation" 
 				page="2"
-				section="OFF_DUTY, REVIEW, PERSONAL_JOURNAL, THE_JOURNAL_REPORT, WSJ_MAGAZINE"
 			/>
 			<template 
 				name="SECTION-4story-smallG-deco_template.xml" 
 				deco="true" 
-				title="Continiation - 4 story - G liondoor"
+				title="Continuation - 4 story - G liondoor"
 				min="6" 
 				usage="continuation" 
 				page="2"
-				section="OFF_DUTY, REVIEW, PERSONAL_JOURNAL, THE_JOURNAL_REPORT, WSJ_MAGAZINE"
 			/>
 			<template 
 				name="CONTINUATION-fancy-8_template.xml" 

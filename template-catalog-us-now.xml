@@ -1395,6 +1395,7 @@
 		/>
 		<!-- END FULL PAGE AD -->
 		
+		<!-- Daniel Test -->
 		<template 
 			name="CONTINUATION-generic-7_template.xml" 
 			title="Test"
@@ -1402,6 +1403,7 @@
 			usage="front"
 			section="CAMPAIGN"
 		/>
+		<!-- End Daniel Test -->
 		
 	</templates>
 
@@ -1417,7 +1419,7 @@
 		<article pages="ARTICLE-pages-hots.xml" type="Overheard"/>
 		<article pages="ARTICLE-pages-hots.xml" type="Headrd on the Street Other"/>
 		<article pages="ARTICLE-pages-letters.xml" type="Letters"/>
-		<article pages="ARTICLE-pages-off-duty.xml" type="Consider This"/>
+		<article pages="ARTICLE-pages-off-duty.xml" type="Fast Five"/>
 		<article pages="ARTICLE-pages-off-duty.xml" type="Slow Food Fast"/>
 		<article pages="ARTICLE-pages-off-duty.xml" type="Mobile Special-OZ"/>
 		<article pages="ARTICLE-pages-PV-no-rail.xml" type="Mobile Special-PV"/>

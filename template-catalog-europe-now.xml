@@ -400,19 +400,19 @@
 		<!-- END SPECIAL REPORT 2 -->
 		<!--  THE JOURNAL REPORT (REALLY OLYMPICS) -->
 		<template 
-			name="SECTION-3story-G_template.xml"
-			section="THE_JOURNAL_REPORT" 
-			title="OLYMPICS - 3 story - G photo"
-			min="5"
-			usage="front"
-		/>
-		<template 
 			name="SECTION-4story-D-C_template.xml"
 			section="THE_JOURNAL_REPORT" 
 			title="OLYMPICS - 4 story plain"
 			min="6" 
 			deco="true" 
 			usage="front" 
+		/>
+		<template 
+			name="SECTION-3story-G_template.xml"
+			section="THE_JOURNAL_REPORT" 
+			title="OLYMPICS - 3 story - G photo"
+			min="5"
+			usage="front"
 		/>
 		
 		<template 

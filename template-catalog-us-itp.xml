@@ -1364,6 +1364,15 @@
 			section="OFF_DUTY, REVIEW, PERSONAL_JOURNAL, THE_JOURNAL_REPORT, WSJ_MAGAZINE"
 		/>
 		<template 
+			name="SECTION-3story-G-mirror_template.xml" 
+			deco="true" 
+			title="Continiation - 3 story - G Photo - mirror"
+			min="5" 
+			usage="continuation" 
+			page="2"
+			section="OFF_DUTY, REVIEW, PERSONAL_JOURNAL, THE_JOURNAL_REPORT, WSJ_MAGAZINE"
+		/>
+		<template 
 			name="SECTION-4story-smallG-deco_template.xml" 
 			deco="true" 
 			title="Continiation - 4 story - G liondoor"

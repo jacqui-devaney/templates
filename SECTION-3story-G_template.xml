@@ -21,11 +21,16 @@
 			#h1: {
 				options:{
 						hide_image:{if-all: [=scale.small, =landscape], then:true, else:false}, 
-						indent:{if: =page.number, equals:1, then:true, else:false}
+						indent:{if-all:[{if: =page.number, equals:1}, {if: =page.section, in: [OFF_DUTY, REVIEW, PERSONAL_JOURNAL, THE_JOURNAL_REPORT, WSJ_MAGAZINE], then:true, else:false }], then:true, else:false}
 					}},
 			
-			#h2: {options:{hide_image:{if-all: [=scale.small, =landscape], then:true, else:false}, indent:{if: =page.number, equals:1, then:true, else:false}}},
-			#ad_background: {display:{if: =scale.phone, then:inherit, else:{if: =page.number, equals:1, then:none, else:inherit}}}
+			#h2: {
+				options:{hide_image:{if-all: [=scale.small, =landscape], then:true, else:false}, 
+				indent:{if-all:[{if: =page.number, equals:1}, {if: =page.section, in: [OFF_DUTY, REVIEW, PERSONAL_JOURNAL, THE_JOURNAL_REPORT, WSJ_MAGAZINE], then:true, else:false }], then:true, else:false}}
+			},
+			#ad_background: {
+				display:{if: =scale.phone, then:inherit, else:{if-all:[{if: =page.number, equals:1}, {if: =page.section, in: [OFF_DUTY, REVIEW, PERSONAL_JOURNAL, THE_JOURNAL_REPORT, WSJ_MAGAZINE], then:false, else:true }], then:none, else:inherit}}
+			}
 			
 				
 	}</style>
@@ -53,12 +58,12 @@
 						]}
 				},
 				#h1: {
-						frame:[1, 620, {if: =page.number, equals:1, then:383, else:255}, 256]
+						frame:[1, 620,{if-all:[{if: =page.number, equals:1}, {if: =page.section, in: [OFF_DUTY, REVIEW, PERSONAL_JOURNAL, THE_JOURNAL_REPORT, WSJ_MAGAZINE], then:false, else:true }], then:383, else:255}, 256]
 						
 				},
 				#h2: {
-						frame:[{if: =page.number, equals:1, then:384, else:256}, 620, {if: =page.number, equals:1, then:384, else:257}, 256],
-						border-width:[0, {if-all:[{if: =page.number, equals:1}, {if: =page.section, in: [OFF_DUTY, REVIEW, PERSONAL_JOURNAL, THE_JOURNAL_REPORT, WSJ_MAGAZINE], then:false, else:true }], then:0, else:1}, 0, {if: =page.number, equals:1, then:1, else:0}],
+						frame:[{if-all:[{if: =page.number, equals:1}, {if: =page.section, in: [OFF_DUTY, REVIEW, PERSONAL_JOURNAL, THE_JOURNAL_REPORT, WSJ_MAGAZINE], then:false, else:true }], then:384, else:256}, 620, {if: =page.number, equals:1, then:384, else:257}, 256],
+						border-width:[0, {if-all:[{if: =page.number, equals:1}, {if: =page.section, in: [OFF_DUTY, REVIEW, PERSONAL_JOURNAL, THE_JOURNAL_REPORT, WSJ_MAGAZINE], then:false, else:true }], then:0, else:1}, 0, {if-all:[{if: =page.number, equals:1}, {if: =page.section, in: [OFF_DUTY, REVIEW, PERSONAL_JOURNAL, THE_JOURNAL_REPORT, WSJ_MAGAZINE], then:false, else:true }], then:1, else:0}],
 						border-color:#b1aca1
 				}
 				

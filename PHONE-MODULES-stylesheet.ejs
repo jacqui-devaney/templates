@@ -4,18 +4,22 @@
 		line-height:33,
 		text-scale: {$multiply: [=scale.text, 1] },
 		padding:[0, 0, 5, 0],
-		text-overflow:ellipsis
+		text-overflow:" \u00bb"
 		
 	},
 	.body: {
-		text-indent:0
+		text-indent:0,
+		font-size:16,
+		line-height:18,
+		text-scale: {$multiply: [=scale.text, 1] }
+		
 	},
 	#small_headline: {
 		font-size:25,
 		line-height:25,
 		text-scale: {$multiply: [=scale.text, 1] },
 		padding:[0, 0, 0, 0],
-		text-overflow:ellipsis
+		text-overflow:" \u00bb"
 	},
 	#deco_headline: {
 		text-scale: {$multiply: [=scale.text, .9] }
@@ -25,9 +29,10 @@
 		line-height:15
 	},
 	.continuation_headline: {
-		font-size:18,
+		font-size:14,
 		text-scale: {$multiply: [=scale.text, 1] },
-		line-height:17
+		line-height:18,
+		padding:[1, 0, 0, 0]
 	},
 	#continuation_headline: {
 		font-size:18,
@@ -56,7 +61,7 @@
 		font-size:18,
 		line-height:18,
 		padding:[0],
-		text-overflow:ellipsis
+		text-overflow:" \u00bb"
 	},
 	#deco_bottom_headline: {
 		font-size:20,
@@ -104,9 +109,10 @@
 		top:22
 	},
 	.opinion_dek: {
-		font-size:18,
-		line-height:18,
-		text-scale: {$multiply: [=scale.text, 1] }
+		font-size:21,
+		line-height:21,
+		text-scale: {$multiply: [=scale.text, 1] },
+		text-overflow:" \u00bb"
 	},
 	.letters_heading: {
 		font-size:22,
@@ -114,8 +120,8 @@
 		text-scale: {$multiply: [=scale.text, 1] }
 	},
 	.letters_headline: {
-		font-size:18,
-		line-height:19,
+		font-size:21,
+		line-height:21,
 		text-scale: {$multiply: [=scale.text, 1] }
 	},
 	#letters_line: {

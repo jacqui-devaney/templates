@@ -3,9 +3,9 @@
 	<style src="SECTION-stylesheet.ejs" />
 	<style src="PHONE-stylesheet.ejs" />
 	<style>{
-		#b1: {options:{large_headline:true, no_border:{if: =scale.phone, then:false, else:true}, byline:{if: =scale.small, then:true, else:false}, show_body:true}},		
+		#b1: {options:{small_headline:{if: =scale.phone, then:true, else:false}, large_headline:{if: =scale.phone, then:false, else:true}, no_border:{if: =scale.phone, then:false, else:true}, byline:{if: =scale.small, then:true, else:false}, show_body:true}},		
 		#b2: {options:{small_headline:true, no_indent:true}},		
-		#b3: {options:{small_headline:true, no_indent:true, no_border:{if-all: [=scale.phone, {if: =page.number, equals:0}], then:true, else:false}}},		
+		#b3: {options:{small_headline:true, no_indent:true, no_border:true}},		
 		#b4: {options:{small_headline:true, no_indent:true}},
 		#deco: {options: { $switch: [
 				{if: =scale.phone, then: {normal_headline:true, G_image:true, bottom_border:true}},

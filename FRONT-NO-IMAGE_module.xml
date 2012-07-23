@@ -83,7 +83,7 @@
 		
 	<box id="wrapper">
 		<box id="image_wrapper">
-			<image embed="summary-image" />
+			<image embed="summary-image" target-width="76" target-height="76" />
 		</box>
 		<panel id="headline">
 			<p id="small_headline" class="invisible"><span embed="headline" /><mark class="key" /></p>

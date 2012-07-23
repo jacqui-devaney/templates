@@ -31,7 +31,7 @@
 				padding: [10, 8, 10, 8]
 			},
 			.body: {
-				display:none
+				display:{if: =article.type, equals: "Letters", then: inherit, else:none}
 			},
 			#rando_header:{
 				padding:[0, 0, 10, 0]

@@ -7,12 +7,7 @@
         #ad: {            
             anchor-y: bottom,
             options: { zone: {$join: [=ad.prefix, abanner]} },
-            display: { 
-                if: {$divide: [{$add:[=page.number, 3]}, 4]}, 
-                equals: {$floor: [{$divide: [{$add:[=page.number, 3]}, 4]}]},
-                then: inherit,
-                else: none
-            }
+            display: { if: =page.number, equals: 3, then: inherit, else: none }
         }
 	}</style>
     <box id="ad" class="maude unit_ad" embed="advertisement"></box>

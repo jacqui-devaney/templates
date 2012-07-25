@@ -16,7 +16,7 @@
 					options: {hide_strap: {if:=articles.b5.subsection, equals:=articles.b4.subsection}} 
         },
 		#deco: {options: { $switch: [
-				{if: =scale.phone, then: {bottom_headline:true, F_image:true, no_caption:true}},
+				{if: =scale.phone, then: {normal_headline:true, G_image:true, small_caption:true}},
 				{if: =portrait, then: {normal_headline:true}},
 				{if: =landscape, then: {normal_headline:true, F_image:{if: =widescreen, then:true, else:false}}}			
 			]}}
@@ -91,6 +91,6 @@
     <box id="b3" class="maude unit_continuation_strap" embed="article" module="CONTINUATION-dynamic_module.xml" />
     <box id="b4" class="maude unit_continuation_strap" embed="article" module="CONTINUATION-dynamic_module.xml" />
     <box id="b5" class="maude unit_continuation_strap" embed="article" module="CONTINUATION-dynamic_module.xml" />
-    <box id="deco" class="maude unit_small_deco" embed="article" module="DECO_module.xml" />
+    <box id="deco" class="maude unit_deco" embed="article" module="DECO_module.xml" />
 
 </jpml>

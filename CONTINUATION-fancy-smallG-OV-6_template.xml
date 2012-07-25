@@ -7,12 +7,12 @@
 		#b3: {options: {hide_strap: {if:=articles.b3.subsection, equals:=articles.b2.subsection}}},
 		#b4: {options: {hide_strap: {if:=articles.b4.subsection, equals:=articles.b3.subsection}}},
 		#deco: {options: { $switch: [
-				{if: =scale.phone, then: {bottom_headline:true, F_image:true, small_caption:true}},
+				{if: =scale.phone, then: {normal_headline:true, G_image:true, small_caption:true}},
 				{if: =portrait, then: {bottom_headline:true, bottom_border:true, F_image:{if: =widescreen, then:true, else:false}}},
 				{if: =landscape, then: {bottom_headline:true, bottom_border:true, F_image:{if: =widescreen, then:true, else:false}}}			
 			]}},
 		#deco2: {options: { $switch: [
-				{if: =scale.phone, then: {bottom_headline:true, F_image:true, small_caption:true}},
+				{if: =scale.phone, then: {normal_headline:true, G_image:true, small_caption:true}},
 				{if: =portrait, then: {bottom_border:true, small_headline:true, OV_image:true}},
 				{if: =landscape, then: {bottom_headline:true, bottom_border:true, OV_image:{if: =widescreen, then:true, else:false}}}			
 			]}}
@@ -81,8 +81,8 @@
     <box id="b2" embed="article" class="maude unit_continuation_strap" module="CONTINUATION-dynamic_module.xml" />
     <box id="b3" embed="article" class="maude unit_continuation_strap" module="CONTINUATION-dynamic_module.xml" />
     <box id="b4" embed="article" class="maude unit_continuation_strap" module="CONTINUATION-dynamic_module.xml" />
-    <box id="deco" embed="article" class="maude unit_medium_deco" module="DECO_module.xml" />
-    <box id="deco2" embed="article" class="maude unit_medium_deco" module="DECO_module.xml" />
+    <box id="deco" embed="article" class="maude unit_deco" module="DECO_module.xml" />
+    <box id="deco2" embed="article" class="maude unit_deco" module="DECO_module.xml" />
 
 </jpml>
 

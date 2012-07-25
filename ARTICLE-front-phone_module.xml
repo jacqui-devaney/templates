@@ -22,7 +22,9 @@
     }</style>
 	<style>{
 		if: =scale.phone, then: {
-			#header_top: {padding:[5]}
+			#header_top: {padding:[5]},
+			.article_subhed: {
+				display:{if-any: [{if: =article.type, in: ["A-hed", "Review &amp; Outlook (Asia)", "Review &amp; Outlook (Europe)", "Review &amp; Outlook (U.S.)"]}], then:inherit, else:none }}
 		}, else: {}
 	}</style>
 	
@@ -33,9 +35,7 @@
 	</panel>
 	
 	<panel id="body_container">
-		<box id="mediabucket_container">
-			<box id="mediabucket" embed="mediabucket" />
-		</box>
+		<box id="mediabucket" embed="mediabucket" />
 		<p class="article_byline" embed="byline"/>
         <panel class="article_body" embed="body"/>
 	    

@@ -6,10 +6,10 @@
 		#b1: {options:{header:true, border:{if: =scale.phone, then:true, else:false}}},
 		.phone_ad: {display:{if: =scale.phone, then:inherit, else:none}},
 		.tablet_ad: {display:{if: =scale.phone, then:none, else:inherit}},
-		#b4: {options:{small_headline:true, show_image:true, no_border:{if: =scale.phone, then:false, else:true}, byline:{if: =scale.small, then:true, else:false}, F_image:{if-all: [=widescreen, =landscape], then:true, else:false}}},
-		#b5: {options:{small_headline:true, no_border:{if: =scale.phone, then:false, else:true}, byline:{if: =scale.small, then:true, else:false}}},
-		#h1: {options:{hide_image:{if-all: [=scale.small, =landscape], then:true, else:false}, byline:{if: =scale.phone, then:false, else:true}, hide_flashline:true}},
-		#h2: {options:{hide_image:{if-all: [=scale.small, =landscape], then:true, else:false}, byline:{if: =scale.phone, then:false, else:true}, hide_flashline:true}}
+		#b4: {options:{small_headline:true, show_image:true, no_border:{if: =scale.phone, then:false, else:true}, byline:{if-any: [=scale.phone, =scale.large], then:false, else:true}, F_image:{if-all: [=widescreen, =landscape], then:true, else:false}}},
+		#b5: {options:{small_headline:true, no_border:{if: =scale.phone, then:false, else:true}, byline:{if-any: [=scale.phone, =scale.large], then:false, else:true}}},
+		#h1: {options:{hide_image:{if-all: [=scale.small, =landscape], then:true, else:false}, byline:{if: =scale.phone, then:false, else:true}}},
+		#h2: {options:{hide_image:{if-all: [=scale.small, =landscape], then:true, else:false}, byline:{if: =scale.phone, then:false, else:true}}}
 	}</style>
     <style>{ 
 		$switch: [

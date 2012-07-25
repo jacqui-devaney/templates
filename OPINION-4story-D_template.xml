@@ -4,10 +4,10 @@
     <style src="PHONE-stylesheet.ejs" />
     <style>{
 		#b1: {options:{header:true, border:{if: =scale.phone, then:true, else:false}}},
-		#b3: {options:{small_headline:true, show_image:true, no_border:{if: =scale.phone, then:false, else:true}, byline:{if: =scale.small, then:true, else:false}, F_image:{if-all: [=widescreen, =landscape], then:true, else:false}}},
-		#b4: {options:{small_headline:true, show_image:true, no_border:{if: =scale.phone, then:false, else:true}, byline:{if: =scale.small, then:true, else:false}}},
-		#h1: {options:{hide_image:{if-all: [=scale.small, =landscape], then:true, else:false}, byline:{if: =scale.phone, then:false, else:true}, hide_flashline:true}},
-		#h2: {options:{hide_image:{if-all: [=scale.small, =landscape], then:true, else:false}, byline:{if: =scale.phone, then:false, else:true}, hide_flashline:true}}
+		#b3: {options:{small_headline:true, show_image:true, no_border:{if: =scale.phone, then:false, else:true}, byline:{if-any: [=scale.phone, =scale.large], then:false, else:true}, F_image:{if-all: [=widescreen, =landscape], then:true, else:false}}},
+		#b4: {options:{small_headline:true, show_image:true, no_border:{if: =scale.phone, then:false, else:true}, byline:{if-any: [=scale.phone, =scale.large], then:false, else:true}}},
+		#h1: {options:{hide_image:{if-all: [=scale.small, =landscape], then:true, else:false}, byline:{if: =scale.phone, then:false, else:true}}},
+		#h2: {options:{hide_image:{if-all: [=scale.small, =landscape], then:true, else:false}, byline:{if: =scale.phone, then:false, else:true}}}
 	}</style>
     <style>{ 
 		$switch: [
@@ -41,15 +41,15 @@
 						#b1:	{ frame: [0, 0, 460, 314]},
 						#b3:	{ frame: [486, 2, 280, 400]},
 						#b4:	{ frame: [486, 402, 280, 216], options:{small_headline:true, no_border:true, byline:{if: =scale.small, then:true, else:false}} },
-						#h1:	{options:{byline:true, hide_flashline:true}},
-						#h2:	{options:{byline:true, hide_flashline:true}}
+						#h1:	{options:{byline:true}},
+						#h2:	{options:{byline:true}}
 					}, else: {
 						#articles:	{ frame: [16, 10, 460, 610] },
 						#b1:	{ frame: [0, 0, 460, 314], options:{header:true} },
 						#b3:	{ frame: [496, 2, 280, 400], options:{small_headline:true, show_image:true, F_image:{if: =widescreen, then:true, else:false}, no_border:true, byline:{if: =scale.small, then:true, else:false}} },
 						#b4:	{ frame: [496, 402, 280, 216], options:{small_headline:true, no_border:true, byline:{if: =scale.small, then:true, else:false}} },
-						#h2:	{options:{byline:true, hide_flashline:true, hide_image:{if: =scale.small, then:true, else:false}}},
-						#h1:	{options:{byline:true, hide_flashline:true, hide_image:{if: =scale.small, then:true, else:false}}}
+						#h2:	{options:{byline:true, hide_image:{if: =scale.small, then:true, else:false}}},
+						#h1:	{options:{byline:true, hide_image:{if: =scale.small, then:true, else:false}}}
 					}
 				},
 				{ $switch: [

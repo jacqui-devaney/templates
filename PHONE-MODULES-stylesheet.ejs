@@ -22,16 +22,18 @@
 		text-overflow:" \u00bb"
 	},
 	#deco_headline: {
-		text-scale: {$multiply: [=scale.text, .9] }
+		text-scale: {$multiply: [=scale.text, 1] },
+		font-size:21,
+		line-height:21
 	},
 	.deco_caption: {
-		font-size:15,
-		line-height:15
+		font-size:14,
+		line-height:14
 	},
 	.continuation_headline: {
-		font-size:14,
+		font-size:16,
 		text-scale: {$multiply: [=scale.text, 1] },
-		line-height:18,
+		line-height:19,
 		padding:[1, 0, 0, 0]
 	},
 	#continuation_headline: {
@@ -148,5 +150,9 @@
         text-align: left,
 		text-scale: {if: =widescreen, then: {$multiply: [=scale.text, 1.2] }, else: inherit},
 		color:#000
+	},
+	#mediabucket: {
+		display: {if: =page.mediabucket, then:inherit, else:none}
 	}
+	
 }, else:{}}

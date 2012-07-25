@@ -13,17 +13,17 @@
 					options: {hide_strap: {if:=articles.b4.subsection, equals:=articles.b3.subsection}} 
         },
 		#deco: {options: { $switch: [
-				{if: =scale.phone, then: {bottom_headline:true, F_image:true, small_caption:true}},
+				{if: =scale.phone, then: {normal_headline:true, G_image:true, small_caption:true}},
 				{if: =portrait, then: {small_headline:true, bottom_border:true, OV_image:true}},
 				{if: =landscape, then: {small_headline:true, bottom_border:true}}			
 		]}},
 		#deco2: {options: { $switch: [
-				{if: =scale.phone, then: {bottom_headline:true, F_image:true, small_caption:true}},
+				{if: =scale.phone, then: {normal_headline:true, G_image:true, small_caption:true}},
 				{if: =portrait, then: {small_headline:true, bottom_border:true, OV_image:true}},
 				{if: =landscape, then: {small_headline:true, bottom_border:true}}			
 		]}},
 		#deco3: {options: { $switch: [
-				{if: =scale.phone, then: {bottom_headline:true, F_image:true, small_caption:true}},
+				{if: =scale.phone, then: {normal_headline:true, G_image:true, small_caption:true}},
 				{if: =portrait, then: {small_headline:true, bottom_border:true, OV_image:true}},
 				{if: =landscape, then: {small_headline:true, bottom_border:true}}			
 		]}}
@@ -133,8 +133,8 @@
     <box id="b2" embed="article" class="maude unit_continuation_strap" module="CONTINUATION-dynamic_module.xml" />
     <box id="b3" embed="article" class="maude unit_continuation_strap" module="CONTINUATION-dynamic_module.xml" />
     <box id="b4" embed="article" class="maude unit_continuation_strap" module="CONTINUATION-dynamic_module.xml" />
-    <box id="deco" embed="article" class="maude unit_medium_deco" module="DECO_module.xml" />
-    <box id="deco2" embed="article" class="maude unit_medium_deco" module="DECO_module.xml" />
-    <box id="deco3" embed="article" class="maude unit_medium_deco" module="DECO_module.xml" />
+    <box id="deco" embed="article" class="maude unit_deco" module="DECO_module.xml" />
+    <box id="deco2" embed="article" class="maude unit_deco" module="DECO_module.xml" />
+    <box id="deco3" embed="article" class="maude unit_deco" module="DECO_module.xml" />
 </jpml>
 

@@ -22,10 +22,10 @@
                     <link id="view" module="ARTICLE-front-phone_module.xml"/>
     </page>
     <page template="ARTICLE-continuation-phone-ads_template.xml" type="repeat" for="phone">
-                    <link id="view" module="ARTICLE-continuation-phone-ads_module.xml"/>
+                    <link id="view" module="ARTICLE-continuation-phone-no-ads_module.xml"/>
     </page>   
     <page template="ARTICLE-continuation-phone-ads_template.xml" type="suffix" for="phone">
-                    <link id="view" module="ARTICLE-continuation-phone-ads_module.xml"/>
+                    <link id="view" module="ARTICLE-continuation-phone-no-ads_module.xml"/>
     </page>   
     
 	

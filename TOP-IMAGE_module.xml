@@ -97,7 +97,8 @@
 				},
 				#body_container: {
 					display:{if-any: [=options.show_body, {if: =article.type, equals: "Commentary (U.S.)"}], then:inherit, else:none},
-					padding: [8, 8, 0, 8]
+					padding: [8, 8, 0, 8],
+					max-height:65
 				}
 				
 			}, else:{}

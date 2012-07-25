@@ -54,6 +54,9 @@
 
 		]
     }</style>
+	<box id="continues_label">
+		<p><mark id="continues" /></p>
+	</box>
 	<panel id="body_container">
 		<panel class="deloitte_article_body" id="body_continuation" embed="body"/>
 	    

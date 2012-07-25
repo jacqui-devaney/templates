@@ -112,6 +112,6 @@
 	<box class="maude unit_ad front_ad" id="ad_background">
 		<box id="ad" class="ad-rectangle" embed="advertisement" />
 	</box>
-	<box class="maude unit_deco" id="deco" embed="article" module="DECO_module.xml" />
+	<box class="maude unit_medium_deco" id="deco" embed="article" module="DECO_module.xml" />
 	
 </jpml>

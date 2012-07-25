@@ -62,7 +62,7 @@
 		<box id="highlight_ad" class="ad-rectangle" embed="advertisement" />
 	</box>
 	<box id="b4" embed="article" class="maude unit_medium_1" module="RIGHT-INSET-IMAGE_module.xml" />
-	<box id="deco" embed="article" class="maude unit_deco" module="DECO_module.xml" />
+	<box id="deco" embed="article" class="maude unit_medium_deco" module="DECO_module.xml" />
 	<box id="marketdata_background" class="ad_light">
 		<box id="highlight_marketdata" embed="marketdata" />
 	</box>

@@ -23,7 +23,7 @@
         },
 
 		#deco: {options: { $switch: [
-				{if: =scale.phone, then: {bottom_headline:true, F_image:true, small_caption:true}},
+				{if: =scale.phone, then: {normal_headline:true, F_image:true, small_caption:true}},
 				{if: =portrait, then: {normal_headline:true, bottom_border:true}},
 				{if: =landscape, then: {normal_headline:true, bottom_border:true, F_image:{if: =widescreen, then:true, else:false}}}			
 			]}}
@@ -124,7 +124,7 @@
     <box id="b5" embed="article" class="maude unit_continuation_strap" module="CONTINUATION-dynamic_module.xml" />
     <box id="b6" embed="article" class="maude unit_continuation_strap" module="CONTINUATION-dynamic_module.xml" />
     <box id="b7" embed="article" class="maude unit_continuation_strap" module="CONTINUATION-dynamic_module.xml" />
-    <box id="deco" embed="article" class="maude unit_deco" module="DECO_module.xml" />
+    <box id="deco" embed="article" class="maude unit_medium_deco" module="DECO_module.xml" />
 
 </jpml>
 

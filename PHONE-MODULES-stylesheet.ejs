@@ -153,6 +153,17 @@
 	},
 	#mediabucket: {
 		display: {if: =page.mediabucket, then:inherit, else:none}
-	}
+	},
+	#continues_label: {
+		padding: [0, 10, 3, 0],
+		display: { if: =page.count, equals:1, then:none, else:inherit}
+		
+	},
+	#continues: { content: { $switch: [
+		{ if: =app.language, equals: en, then: "Article Continues \u2192" },
+		{ if: =app.language, equals: de, then: "Mehr \u2192" }
+	] }}
+	
+	
 	
 }, else:{}}

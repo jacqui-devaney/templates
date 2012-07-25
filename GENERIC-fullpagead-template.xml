@@ -14,7 +14,6 @@
             },
 			#ad_background: { display: {
                 if: =intent.section, 
-                and: {if: =page.number, equals:2},
                 then: inherit,
                 else: none
             }}

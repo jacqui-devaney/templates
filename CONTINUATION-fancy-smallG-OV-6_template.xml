@@ -81,8 +81,8 @@
     <box id="b2" embed="article" class="maude unit_continuation_strap" module="CONTINUATION-dynamic_module.xml" />
     <box id="b3" embed="article" class="maude unit_continuation_strap" module="CONTINUATION-dynamic_module.xml" />
     <box id="b4" embed="article" class="maude unit_continuation_strap" module="CONTINUATION-dynamic_module.xml" />
-    <box id="deco" embed="article" class="maude unit_deco" module="DECO_module.xml" />
-    <box id="deco2" embed="article" class="maude unit_deco" module="DECO_module.xml" />
+    <box id="deco" embed="article" class="maude unit_medium_deco" module="DECO_module.xml" />
+    <box id="deco2" embed="article" class="maude unit_medium_deco" module="DECO_module.xml" />
 
 </jpml>
 

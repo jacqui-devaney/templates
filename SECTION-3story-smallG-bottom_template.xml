@@ -69,7 +69,7 @@
 		<box id="highlight_ad" class="ad-rectangle" embed="advertisement" />
 	</box>
 	<box id="h2" embed="article" class="maude unit_highlight" module="HIGHLIGHTS_module.xml" />
-	<box id="b2" embed="article" class="maude unit_deco" module="DECO_module.xml" />
+	<box id="b2" embed="article" class="maude unit_medium_deco" module="DECO_module.xml" />
 
 	
 </jpml>

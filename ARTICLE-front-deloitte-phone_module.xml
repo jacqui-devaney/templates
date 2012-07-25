@@ -32,12 +32,12 @@
 			right:0
 		}},
 		{#header_top: { 
-			padding:[6, 10, 8, 10],
+			padding:[6, 10, 0, 10],
 			border-width:[2, 0, 0, 0],
 			border-color:#e7e7e7
 		}},
 		{#body_container: { 
-            padding: [10, 10, 0, 10],
+            padding: [0, 10, 0, 10],
 			flow: article_body,
 			min-height: {if: =page.mediabucket, then:200, else:100},
 			layout-grid-line: {$multiply: [22, =view.zoomlevel]},
@@ -85,6 +85,9 @@
 		
 		]
     }</style>
+	<box id="continues_label">
+		<p><mark id="continues" /></p>
+	</box>
 	<panel id="deloitte_article_header">
 		<box class="deloitte_article">
 			<box class="deloitte" />

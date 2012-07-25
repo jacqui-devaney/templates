@@ -22,5 +22,20 @@
 	
     <page template="GENERIC-fullpagead-template.xml" type="interstitial" />
 	
+	           <!-- phone -->
+    <page template="ARTICLE-front-phone_template.xml" type="prefix" for="phone">
+                    <link id="view" module="ARTICLE-front-phone_module.xml"/>
+    </page>
+    <page template="ARTICLE-continuation-phone-ads_template.xml" type="repeat" for="phone">
+                    <link id="view" module="ARTICLE-continuation-phone-ads_module.xml"/>
+    </page>   
+    <page template="ARTICLE-continuation-phone-ads_template.xml" type="repeat" for="phone">
+                    <link id="view" module="ARTICLE-continuation-phone-ads_module.xml"/>
+    </page>   
+    <page template="ARTICLE-continuation-phone-ads_template.xml" type="suffix" for="phone">
+                    <link id="view" module="ARTICLE-continuation-phone-ads_module.xml"/>
+    </page>   
+    <page template="GENERIC-fullpagead-template.xml" type="interstitial" for="phone"/>
+	
 	
 </pages>

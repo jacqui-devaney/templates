@@ -80,7 +80,8 @@
 		if: =scale.phone, then: {
 			#wrapper: {
 				padding:[10, 0, 0, 0]
-			}
+			},
+			.deco_caption: {display:none}
 		}, else: {}
 	}</style>
 	<box id="wrapper">

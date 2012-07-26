@@ -6,7 +6,11 @@
             {if: =extents.huge, more-than: 1.0, then: true, else: false}, 
             {if: =extents.huge, less-than: 1.5, then: true, else: false}
         ], then: 65, else: 75 },
-		line-height:75,
+		line-height:{if-all: [
+            =scale.headlines,
+            {if: =extents.huge, more-than: 1.0, then: true, else: false}, 
+            {if: =extents.huge, less-than: 1.5, then: true, else: false}
+        ], then: 65, else: 75 },
 		text-scale: {if: =scale.small, then: {$multiply: [=scale.text, 0.9] }, else: inherit}
 	},
 	#bignews_large_headline: {
@@ -16,7 +20,11 @@
             {if: =extents.huge, more-than: 1.0, then: true, else: false}, 
             {if: =extents.huge, less-than: 1.5, then: true, else: false}
         ], then: 57, else: 67 },
-		line-height:67,
+		line-height:{if-all: [
+            =scale.headlines,
+            {if: =extents.huge, more-than: 1.0, then: true, else: false}, 
+            {if: =extents.huge, less-than: 1.5, then: true, else: false}
+        ], then: 57, else: 67 },
 		text-scale: {if: =scale.small, then: {$multiply: [=scale.text, 0.9] }, else: inherit}
 	},
 	#bignews_big_headline: {
@@ -26,7 +34,11 @@
             {if: =extents.big, more-than: 1.0, then: true, else: false}, 
             {if: =extents.big, less-than: 1.5, then: true, else: false}
         ], then: 47, else: 57},
-		line-height:61,
+		line-height:{if-all: [
+            =scale.headlines,
+            {if: =extents.big, more-than: 1.0, then: true, else: false}, 
+            {if: =extents.big, less-than: 1.5, then: true, else: false}
+        ], then: 51, else: 61},
 		text-scale: {if: =scale.small, then: {$multiply: [=scale.text, 0.9] }, else: inherit}
 	},
 	#bignews_small_headline: {
@@ -36,7 +48,11 @@
             {if: =extents.big, more-than: 1.0, then: true, else: false}, 
             {if: =extents.big, less-than: 1.5, then: true, else: false}
         ], then: 39, else: 49},
-		line-height:49,
+		line-height:{if-all: [
+            =scale.headlines,
+            {if: =extents.big, more-than: 1.0, then: true, else: false}, 
+            {if: =extents.big, less-than: 1.5, then: true, else: false}
+        ], then: 39, else: 49},
 		text-scale: {if: =scale.small, then: {$multiply: [=scale.text, 0.9] }, else: inherit}
 	},
 	#large_headline: {
@@ -46,7 +62,11 @@
             {if: =extents.large, more-than: 1.0, then: true, else: false}, 
             {if: =extents.large, less-than: 1.5, then: true, else: false}
         ], then: 32, else: 40 },
-		line-height:42,
+		line-height:{if-all: [
+            =scale.headlines,
+            {if: =extents.large, more-than: 1.0, then: true, else: false}, 
+            {if: =extents.large, less-than: 1.5, then: true, else: false}
+        ], then: 34, else: 42 },
 		text-scale: {if: =scale.small, then: {$multiply: [=scale.text, 0.9] }, else: inherit}
 		
 		
@@ -58,7 +78,11 @@
             {if: =extents.medium, more-than: 1.0, then: true, else: false}, 
             {if: =extents.medium, less-than: 1.5, then: true, else: false}
         ], then: 24, else: 32 },
-		line-height:36,
+		line-height:{if-all: [
+            =scale.headlines,
+            {if: =extents.medium, more-than: 1.0, then: true, else: false}, 
+            {if: =extents.medium, less-than: 1.5, then: true, else: false}
+        ], then: 28, else: 36 },
 		text-scale: {if: =scale.small, then: {$multiply: [=scale.text, 0.9] }, else: inherit}
 		
 		

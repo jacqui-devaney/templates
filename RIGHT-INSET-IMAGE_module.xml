@@ -88,7 +88,8 @@
 				display:none
 			},
 			#headline: {
-				padding:[0, 0, {if: =options.top_border, then:0, else:8}, 0]
+				padding:[0, 0, {if: =options.top_border, then:0, else:8}, 0],
+				vertical-align:middle
 			}
 			
 		}, else:{}

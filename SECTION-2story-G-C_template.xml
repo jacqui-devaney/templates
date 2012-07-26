@@ -15,12 +15,11 @@
 			#h1: {
 				options:{
 						hide_image:{if-all: [=scale.small, =landscape], then:true, else:false}, 
-						indent:{if-all:[{if: =page.number, equals:1}, {if: =page.section, in: [OFF_DUTY, REVIEW, PERSONAL_JOURNAL, THE_JOURNAL_REPORT, WSJ_MAGAZINE, FRIDAY_JOURNAL], then:true, else:false }], then:true, else:false},
-						no_border:{if: =scale.phone, then:true, else:false}
+						indent:{if-all:[{if: =page.number, equals:1}, {if: =page.section, in: [OFF_DUTY, REVIEW, PERSONAL_JOURNAL, THE_JOURNAL_REPORT, WSJ_MAGAZINE, FRIDAY_JOURNAL], then:true, else:false }], then:true, else:false}
 					}},
 
 			#h2: {
-				options:{hide_image:{if-all: [=scale.small, =landscape], then:true, else:false}, 
+				options:{no_border:{if: =scale.phone, then:true, else:false}, hide_image:{if-all: [=scale.small, =landscape], then:true, else:false}, 
 				indent:{if-all:[{if: =page.number, equals:1}, {if: =page.section, in: [OFF_DUTY, REVIEW, PERSONAL_JOURNAL, THE_JOURNAL_REPORT, WSJ_MAGAZINE, FRIDAY_JOURNAL], then:true, else:false }], then:true, else:false}}
 			},
 			#ad_background: {
@@ -83,13 +82,13 @@
 		
 	}</style>
 	
-	<box id="b1" embed="article" class="maude unit_top" module="TOP-IMAGE_module.xml" />
+	<box id="b1" embed="article" class="maude unit_deloitte_top" module="TOP-IMAGE_module.xml" />
 	<box id="b2" embed="article" class="maude unit_medium_1" module="TOP-IMAGE_module.xml" />
 	<box id="h1" embed="article" class="maude unit_highlight" module="HIGHLIGHTS_module.xml" />
+	<box id="h2" embed="article" class="maude unit_highlight" module="HIGHLIGHTS_module.xml" />
 	<box id="ad_background" class="ad_light maude unit_ad">
 		<box id="highlight_ad" class="ad-rectangle" embed="advertisement" />
 	</box>
-	<box id="h2" embed="article" class="maude unit_highlight" module="HIGHLIGHTS_module.xml" />
 
 	
 </jpml>

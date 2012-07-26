@@ -8,7 +8,7 @@
             padding: [0, 10, 0, 10],
 			flow: article_body,
 			layout-grid-line: {$multiply: [22, =view.zoomlevel]},
-			layout-grid-line-offset: {$multiply: [20, =view.zoomlevel]}
+			layout-grid-line-offset: {$multiply: [22, =view.zoomlevel]}
 			
         }},
 

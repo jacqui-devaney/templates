@@ -6,7 +6,7 @@
 		#b1: {options:{header:true, border:{if: =scale.phone, then:true, else:false}}},
 		#b3: {options:{small_headline:true, show_image:true, no_border:{if: =scale.phone, then:false, else:true}, byline:{if-any: [=scale.phone, =scale.large], then:false, else:true}}},
 		#h1: {options:{hide_image:{if-all: [=scale.small, =landscape], then:true, else:false}, byline:{if: =scale.phone, then:false, else:true}}},
-		#h2: {options:{hide_image:{if-all: [=scale.small, =landscape], then:true, else:false}, byline:{if: =scale.phone, then:false, else:true}}}
+		#h2: {options:{hide_image:{if-all: [=scale.small, =landscape], then:true, else:false}, byline:{if: =scale.phone, then:false, else:true}, no_border:{if: =scale.phone, then:true, else:false}}}
 	}</style>
 	<style>{ 
 		$switch: [

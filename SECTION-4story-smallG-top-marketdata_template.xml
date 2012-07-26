@@ -11,8 +11,7 @@
         #b2:	{ options:{small_headline:true, no_border:{if: =scale.phone, then:false, else:true}, no_indent:true} },
         #b3:	{ options:{small_headline:true, no_indent:true,  no_border:{if: =scale.phone, then:true, else:false}}},
         #b4:	{ options:{small_headline:true, bottom:true, no_indent:true} },
-		#h1: {options:{hide_image:{if-all: [=scale.small, =landscape], then:true, else:false}}, display:{if: =issue.type, equals:"NOW", then:none, else:inherit}},
-		#h2: {options:{hide_image:{if-all: [=scale.small, =landscape], then:true, else:false}}}
+		#h2: {options:{no_border:{if: =scale.phone, then:true, else:false}, hide_image:{if-all: [=scale.small, =landscape], then:true, else:false}}}
 	}</style>
 	<style>{
 	$switch: [

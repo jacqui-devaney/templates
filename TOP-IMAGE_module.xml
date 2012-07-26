@@ -72,13 +72,13 @@
 				},
 				#wrapper: {
 					border-width:[0],
-					padding:[{if: =options.small_pad, then:4, else:8}, 0, 0, 0]
+					padding:[8, 0, 0, 0]
 				},
 				#image_wrapper: { 
 					anchor-x:right,
 					position:relative,
 					width: 76,
-					padding:[0, 10, 0, 15],
+					padding:[0, 10, 8, 15],
 					pixels-per-point-x:1,
 					pixels-per-point-y:1,
 					image-scale:1
@@ -99,6 +99,9 @@
 					display:{if-any: [=options.show_body, {if: =article.type, equals: "Commentary (U.S.)"}], then:inherit, else:none},
 					padding: [8, 8, 0, 8],
 					max-height:65
+				},
+				#headline: {
+					vertical-align: middle
 				}
 				
 			}, else:{}

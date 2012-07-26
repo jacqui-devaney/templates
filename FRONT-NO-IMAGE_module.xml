@@ -77,6 +77,9 @@
 					#wrapper: {
 						padding: [5, 0, 0, 0]
 				
+					},
+					#headline: {
+						vertical-align: middle
 					}
 				}, else:{}
 		}</style>

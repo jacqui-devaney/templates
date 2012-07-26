@@ -20,7 +20,7 @@
 				{if: =landscape, then: {small_headline:true, show_image:{if: =widescreen, then:false, else:true}, left:true, bottom:true, no_indent:true}}			
 			]}},
 		#h1: {options:{hide_image:{if-all: [=scale.small, =landscape], then:true, else:false}}},
-		#h2: {options:{hide_image:{if-all: [=scale.small, =landscape], then:true, else:false}}}
+		#h2: {options:{no_border:{if: =scale.phone, then:true, else:false}, hide_image:{if-all: [=scale.small, =landscape], then:true, else:false}}}
 		
 	}</style>
 	<style>{

@@ -7,14 +7,7 @@
 				{if: =scale.phone, then: {normal_headline:true, G_image:true, small_caption:true}},
 				{if: =portrait, then: {bottom_headline:true, bottom_border:true, P_image:true, long_deco:{if: =scale.small, then:true, else:false}, narrow_text:{if: =scale.small, then:false, else:true}}},
 				{if: =landscape, then: {bottom_headline:true, no_border:true, F_image:{if: =widescreen, then:true, else:false}, P_image:{if: =widescreen, then:false, else:true}, narrow_text:true}}			
-			]}},
-		#b2: {
-			options: {hide_strap: {if:=articles.b2.subsection, equals:=articles.b1.subsection}} 
-		},
-		#b3: {
-			options: {hide_strap: {if:=articles.b3.subsection, equals:=articles.b2.subsection}}
-		}
-		
+			]}}		
 	}</style>
 	<style>{
 		$switch: [

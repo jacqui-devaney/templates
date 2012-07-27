@@ -3,9 +3,6 @@
 	<style src="GLOBAL-stylesheet.ejs" />
 	<style src="PHONE-stylesheet.ejs" /> 
 	<style>{
-		#b2: {options: {hide_strap: {if:=articles.b2.subsection, equals:=articles.b1.subsection}}},
-		#b3: {options: {hide_strap: {if:=articles.b3.subsection, equals:=articles.b2.subsection}}},
-		#b4: {options: {hide_strap: {if:=articles.b4.subsection, equals:=articles.b3.subsection}}},
 		#deco: {options: { $switch: [
 				{if: =scale.phone, then: {normal_headline:true, G_image:true, small_caption:true}},
 				{if: =portrait, then: {bottom_headline:true, bottom_border:true, F_image:{if: =widescreen, then:true, else:false}}},

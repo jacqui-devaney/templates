@@ -3,24 +3,6 @@
 	<style src="GLOBAL-stylesheet.ejs" />
 	<style src="PHONE-stylesheet.ejs" /> 
 	<style>{
-        #b2: {
-					options: {hide_strap: {if:=articles.b2.subsection, equals:=articles.b1.subsection}} 
-        },
-        #b3: {
-					options: {hide_strap: {if:=articles.b3.subsection, equals:=articles.b2.subsection}} 
-        },
-        #b4: {
-					options: {hide_strap: {if:=articles.b4.subsection, equals:=articles.b3.subsection}} 
-        },
-        #b5: {
-					options: {hide_strap: {if:=articles.b5.subsection, equals:=articles.b4.subsection}} 
-        },
-        #b6: {
-					options: {hide_strap: {if:=articles.b6.subsection, equals:=articles.b5.subsection}} 
-        },
-        #b7: {
-					options: {hide_strap: {if:=articles.b7.subsection, equals:=articles.b6.subsection}} 
-        },
 
 		#deco: {options: { $switch: [
 				{if: =scale.phone, then: {normal_headline:true, F_image:true, small_caption:true}},

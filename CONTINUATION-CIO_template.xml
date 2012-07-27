@@ -27,12 +27,12 @@
 		#cfo: {
 			display: {if: =page.section, equals: "CFO", then:inherit, else:none}
 		},
-		
-        #b2: {options: {hide_strap:true }},
-        #b3: {options: {hide_strap:true }},
-        #b4: {options: {hide_strap:true }},
-        #b5: {options: {hide_strap:true}},
-        #b6: {options: {hide_strap:true }},
+		#b1: {options:{large_headline:true}},
+        #b2: {options: {hide_strap:true, large_headline:true }},
+        #b3: {options: {hide_strap:true, large_headline:true }},
+        #b4: {options: {hide_strap:true, large_headline:true }},
+        #b5: {options: {hide_strap:true, large_headline:true}},
+        #b6: {options: {hide_strap:true, large_headline:true }},
 		#b7: {options:{continuation:true}},
 		#b8: {options:{continuation:true}},
 		#b9: {options:{continuation:true}},

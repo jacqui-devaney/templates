@@ -3,9 +3,6 @@
     <style src="GLOBAL-stylesheet.ejs" />
     <style src="PHONE-stylesheet.ejs" />
 	<style>{
-		#b2: {options: {hide_strap: {if:=articles.b2.subsection, equals:=articles.b1.subsection}}}
-	}</style>
-	<style>{
 		$switch: [
 	        {if: =scale.phone, then: {
 		        #b2: {

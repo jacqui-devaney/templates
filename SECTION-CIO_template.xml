@@ -31,7 +31,7 @@
 		
 		#b1:	{ 
 			options: {if: =scale.phone, then: 
-				{show_body:true, no_border:true, large_headline:true, show_image:false, hide_image:true}, else:
+				{show_body:true, no_border:true, small_headline:true, show_image:false, hide_image:true}, else:
 				{medium_headline:true, no_border:true}
 			}
 		},
@@ -94,13 +94,8 @@
 	<style>{
 		$switch: [
 			{if: =scale.phone, then:{
-				#cio_header: {
-					padding:[10, 0, 0, 0]
-				},
 				#tech_header: {
-					border-width: [1, 0, 0, 0],
-					border-color: #ccc,
-					padding:[10, 0, 0, 0]
+					display:none
 				},
 				#hr: {
 					border-width: [0, 0, 1, 0],
@@ -111,8 +106,7 @@
 					left:60
 				},
 				#h5: {
-					border-width: [1, 0, 0, 0],
-					border-color: #ccc
+					options:{hide_body:true, hide_image:true}
 				},				
 				#h6: {
 					options:{hide_body:true, hide_image:true}
@@ -134,7 +128,17 @@
 				.deloitte_slug: {
 					text-align:left,
 					font-size:13
-				}
+				},
+				.ahed_headline: {display:none},
+				#stars: {display:none},
+				#cio_header: {
+					display:none
+				},
+				#strap: {
+					padding: [4, 4, 0, 8],
+					background-color:#e4e4e4
+		        }
+				
 				
 							
 			}},
@@ -181,14 +185,14 @@
 				},
 				#deloitte_article_header: {
 					display:none
-				}
+				},
+				#strap: {display:none}
 			}}
 		]
 	}</style>
 	<style>{
 		$switch: [
 			{if: =scale.phone, then:{
-			
 			}},
 			{if: =portrait, then: {
 				
@@ -224,7 +228,11 @@
 			
 		]
 	}</style>
-	<box id="cio_header" class="maude unit_cio">
+	<panel id="strap">
+		<p class="subsection" id="cio">CIO Report</p>
+		<p class="subsection" id="cfo">CFO Report</p>
+	</panel>
+	<box id="cio_header">
 		<panel class="cio_report" id="cio">
 			<p class="cio_head">CIO Report –</p>
 	        <p class="ahed_headline">Exclusive Reporting &amp; Analysis</p>
@@ -239,6 +247,10 @@
 	<box id="b1" embed="article" class="maude unit_cio_top" module="FRONT-NO-IMAGE_module.xml" />
 	<box id="b2" embed="article" class="maude unit_medium_1" module="FRONT-NO-IMAGE_module.xml" />
 	<box id="b3" embed="article" class="maude unit_medium_1" module="FRONT-NO-IMAGE_module.xml" />
+	<panel id="strap">
+		<p class="subsection" id="cio">Latest Technology News</p>
+		<p class="subsection" id="cfo">Latest Finance News</p>
+</panel>
 	<box id="tech_header" class="maude unit_cio">
 		<p class="tech_section" id="cio">Latest Technology News</p>
 		<p class="tech_section" id="cfo">Latest Finance News</p>
@@ -266,7 +278,7 @@
 			<p class="deloitte_slug" id="cfo">CFO insight and analysis written</p><p class="deloitte_slug" id="cfo"> and compiled by Deloitte</p>
 		</panel>
 	</box>
-	<box id="h5" embed="article" class="maude unit_deloitte_top" module="HIGHLIGHTS-CIO_module.xml" />
+	<box id="h5" embed="article" class="maude unit_highlight" module="HIGHLIGHTS-CIO_module.xml" />
 	<box id="h6" embed="article" class="maude unit_highlight" module="HIGHLIGHTS-CIO_module.xml" />
 	<box id="h7" embed="article" class="maude unit_highlight" module="HIGHLIGHTS-CIO_module.xml" />
 

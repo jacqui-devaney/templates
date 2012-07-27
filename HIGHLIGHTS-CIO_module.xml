@@ -63,6 +63,14 @@
 			padding: [ 0, 0, 1, 10 ]
 		}
     }</style>
+	<style>{
+		if: =scale.phone, then: {
+			.cio_highlight_headline: {
+				vertical-align:middle
+			}
+		}, else:{}
+	}</style>
+	
     <box id="image_container">
         <image class="A_size" embed="summary-image" />
     </box>

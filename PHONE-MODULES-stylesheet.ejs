@@ -31,7 +31,7 @@
 		line-height:14
 	},
 	.continuation_headline: {
-		font-size:16,
+		font-size:{if: =options.large_headline, then:18, else:16},
 		text-scale: {$multiply: [=scale.text, 1] },
 		line-height:19,
 		padding:[1, 0, 0, 0]
@@ -132,8 +132,12 @@
 		width:198
 	},
 	.cio_head: {
-		font-size:22,
-		line-height:22
+		color:#000,
+		font-name:DJ5RetinaCd-Medium,
+		text-transform:uppercase,
+		text-align:left,
+		font-size:18,
+		text-scale: {$multiply: [=scale.text, 1] }
 	},
 	.tech_section: {
 		font-size:22,
@@ -163,7 +167,15 @@
 	#continues: { content: { $switch: [
 		{ if: =app.language, equals: en, then: "Article Continues \u2192" },
 		{ if: =app.language, equals: de, then: "Mehr \u2192" }
-	] }}
+	] }},
+	.highlight_flashline_small: {
+		font-size:17
+	},
+	#extra_small_headline: { 
+		font-size:24,
+		line-height:24,
+		padding:[2, 0, 0, 0]
+	}
 	
 	
 	

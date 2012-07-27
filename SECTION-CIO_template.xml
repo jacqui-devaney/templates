@@ -31,7 +31,7 @@
 		
 		#b1:	{ 
 			options: {if: =scale.phone, then: 
-				{show_body:true, no_border:true, small_headline:true, show_image:false, hide_image:true}, else:
+				{show_body:true, no_border:true, small_headline:true, show_image:false, hide_image:true, top_align:true}, else:
 				{medium_headline:true, no_border:true}
 			}
 		},
@@ -250,7 +250,7 @@
 	<panel id="strap">
 		<p class="subsection" id="cio">Latest Technology News</p>
 		<p class="subsection" id="cfo">Latest Finance News</p>
-</panel>
+	</panel>
 	<box id="tech_header" class="maude unit_cio">
 		<p class="tech_section" id="cio">Latest Technology News</p>
 		<p class="tech_section" id="cfo">Latest Finance News</p>

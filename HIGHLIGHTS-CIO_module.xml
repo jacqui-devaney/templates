@@ -65,7 +65,7 @@
     }</style>
 	<style>{
 		if: =scale.phone, then: {
-			.cio_highlight_headline: {
+			.headline: {
 				vertical-align:middle
 			}
 		}, else:{}
@@ -74,6 +74,8 @@
     <box id="image_container">
         <image class="A_size" embed="summary-image" />
     </box>
-    <p class="cio_highlight_headline"><span embed="headline" /></p>
+	<panel class="headline">
+    	<p class="cio_highlight_headline"><span embed="headline" /></p>
+	</panel>
 	<panel embed="body" class="cio_body"/>
 </jpml>

@@ -61,13 +61,15 @@
 			]
 		}</style>
 	<box id="wrapper">
-		<panel id="flashline">
-			<p class="highlight_flashline_small" id="fromwsj">From WSJ</p>
-			<p class="highlight_flashline_small" id="link_out" embed="flashline"/>
-		</panel>
-	    <panel id="headline">
-			<p id="continuation_headline" class="invisible"><span embed="headline" /></p>
-			<p id="extra_small_headline" class="invisible"><span embed="headline" /></p>
+		<panel class="vertical_center">
+			<panel id="flashline">
+				<p class="highlight_flashline_small" id="fromwsj">From WSJ</p>
+				<p class="highlight_flashline_small" id="link_out" embed="flashline"/>
+			</panel>
+		    <panel id="headline">
+				<p id="continuation_headline" class="invisible"><span embed="headline" /></p>
+				<p id="extra_small_headline" class="invisible"><span embed="headline" /></p>
+			</panel>
 		</panel>
 	</box>
 </jpml>

@@ -79,7 +79,7 @@
 				
 					},
 					#headline: {
-						vertical-align: middle
+						vertical-align: {if: =options.top_align, then: top, else:middle}
 					}
 				}, else:{}
 		}</style>

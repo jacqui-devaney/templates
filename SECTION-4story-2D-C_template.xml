@@ -85,7 +85,7 @@
 	<box id="b1" embed="article" class="maude unit_small_1" module="RIGHT-IMAGE_module.xml" />
 	<box id="b2" embed="article" class="maude unit_small_1" module="TOP-IMAGE_module.xml" />
 	<box id="b3" embed="article" class="maude unit_small_1" module="TOP-IMAGE_module.xml" />
-	<box id="b4" embed="article" class="maude unit_small_1" module="TOP-IMAGE_module.xml" />
+	<box id="b4" embed="article" class="maude unit_small_fixer" module="TOP-IMAGE_module.xml" />
 	<box id="ad_background" class="ad_light maude unit_ad">
 		<box id="highlight_ad" class="ad-rectangle" embed="advertisement" />
 	</box>

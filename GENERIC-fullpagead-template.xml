@@ -13,7 +13,7 @@
                 height:=view.height
             },
 			#ad_background: { display: {
-                if: =intent.section, 
+                if: =intent.section
                 then: inherit,
                 else: none
             }}

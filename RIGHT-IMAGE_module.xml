@@ -33,18 +33,20 @@
 	}</style>
 	<style>{
 		if: =scale.phone, then: {
+
 			#wrapper: {
-				padding:[0],
+				padding:[0, 0, 0, 0],
 				anchor-y:middle
 			},
 			#image_wrapper: { 
 				width: 76,
 				anchor-x:right
+				
 			},
 			image: { 
 				height: 76,
 				display:inherit,
-				padding: [8, 0, 0, 0],
+				padding: [0, 0, 0, 0],
                 options:{},
 				image-scale: 1
 				
@@ -54,7 +56,8 @@
 			},
 			jpml: {
 				border-width:[0, 0, 1, 0],
-				border-color:#b1aca1
+				border-color:#b1aca1,
+				padding: [0, 8, 0, 8]
 			}
 			
 		}, else:{}

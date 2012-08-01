@@ -18,7 +18,7 @@
 			left: 0,
 			right: 0,
 			bottom: 0,
-			min-height: 0,
+			min-height: 50,
 			border-image:url(articleBackground.png),
 			border-width: [16, 0, 0, 0],
 			border-slice: [16, 0, 0, 0]
@@ -38,6 +38,7 @@
     	<panel class="article_body" id="body_continuation" embed="body" />
 	</panel>
 	<box id="filler">
-		
+		<box id="highlight_ad" class="ad-rectangle" embed="advertisement" />
+        
 	</box>
 </jpml>

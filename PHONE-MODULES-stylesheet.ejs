@@ -15,8 +15,8 @@
 		
 	},
 	#small_headline: {
-		font-size:25,
-		line-height:25,
+		font-size:22,
+		line-height:22,
 		text-scale: {$multiply: [=scale.text, 1] },
 		padding:[0, 0, 0, 0],
 		text-overflow:" \u00bb"
@@ -54,13 +54,14 @@
 		text-transform:uppercase
 	},
 	.highlight_flashline: {
-		font-size:16,
-		padding: [ 3, 0, 0, 0 ],
-		line-height:16
+		font-size:17,
+		padding: [ 0, 0, 0, 0 ],
+		line-height:17
 		
 	},
 	.highlight_headline: {
-		font-size:16,
+		font-size:19,
+		color:#666,
 		text-scale: {$multiply: [=scale.text, 1] },
 		line-height:19,
 		padding:[0],
@@ -99,37 +100,65 @@
 		line-height:22
 	},
 	.opinion_headline: {
-		font-size:28,
+		font-size:25,
 		text-scale: {$multiply: [=scale.text, 1] },
-		line-height:28
+		line-height:25,
+		font-name:DJ5EscrowCond-Bold,
+		text-align:left,
+		display: {if: =options.small_headline, then:none, else:inherit}
 	},
 	.rando_heading: {
-		font-size:25,
-		text-scale: {$multiply: [=scale.text, 1] }
+			font-size:16,
+			text-scale: {$multiply: [=scale.text, 1] },
+			line-height:17,
+			text-transform:uppercase,
+			color:#000,
+			font-name:DJ5RetinaCd-Medium,
+			text-align:left
+	},
+	.opinion_headline_small: {
+		font-size:22,
+		text-scale: {$multiply: [=scale.text, 1] },
+		line-height:22,
+		font-name:DJ5EscrowCond-Bold,
+		text-align:left,
+		display: {if-all: [{if: =options.small_headline}, {if: =article.type, not equal to:"Letters"}], then:inherit, else:none}
 	},
 	#opinion_line: { 
 		width: 218,
 		top:22
 	},
 	.opinion_dek: {
-		font-size:21,
-		line-height:21,
+		font-size:17,
+		line-height:17,
+		text-align:left,
 		text-scale: {$multiply: [=scale.text, 1] },
 		text-overflow:" \u00bb"
 	},
 	.letters_heading: {
-		font-size:22,
-		padding:[0, 20],
-		text-scale: {$multiply: [=scale.text, 1] }
+		font-size:16,
+		text-scale: {$multiply: [=scale.text, 1] },
+		line-height:17,
+		text-transform:uppercase,
+		color:#000,
+		font-name:DJ5RetinaCd-Medium,
+		text-align:left
 	},
+	#rando_header: {
+		padding: [4, 4, 0, 8],
+		background-color:#e4e4e4
+
+	},
+	#letters_header:{
+		padding: [4, 4, 0, 8],
+		background-color:#e4e4e4
+	},
+	
 	.letters_headline: {
-		font-size:21,
-		line-height:21,
-		text-scale: {$multiply: [=scale.text, 1] }
-	},
-	#letters_line: {
-		top:43,
-		width:198
+		font-size:19,
+		line-height:19,
+		text-scale: {$multiply: [=scale.text, 1] },
+		text-align:left
 	},
 	.cio_head: {
 		color:#000,
@@ -175,6 +204,9 @@
 		font-size:24,
 		line-height:24,
 		padding:[2, 0, 0, 0]
+	},
+	.ad_light: {
+		background-color: #fff
 	}
 	
 	

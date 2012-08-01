@@ -6,7 +6,7 @@
 		#b1: {options:{header:true, border:{if: =scale.phone, then:true, else:false}}},
 		.phone_ad: {display:{if: =scale.phone, then:inherit, else:none}},
 		.tablet_ad: {display:{if: =scale.phone, then:none, else:inherit}},
-		#b4: {options:{small_headline:true, show_image:true, no_border:{if: =scale.phone, then:false, else:true}, byline:{if-any: [=scale.phone, =scale.large], then:false, else:true}}},
+		#b4: {options:{small_headline:true, show_image:true, no_image:true, no_border:{if: =scale.phone, then:false, else:true}, byline:{if-any: [=scale.phone, =scale.large], then:false, else:true}}},
 		#h1: {options:{hide_image:{if-all: [=scale.small, =landscape], then:true, else:false}, byline:{if: =scale.phone, then:false, else:true}}},
 		#h2: {options:{hide_image:{if-all: [=scale.small, =landscape], then:true, else:false}, byline:{if: =scale.phone, then:false, else:true}, no_border:{if: =scale.phone, then:true, else:false}}}
 	}</style>
@@ -21,23 +21,23 @@
 						{ $switch: [
 							{ if: =articles.b1.type, equals: "Letters", then: {
 								_comment: "neither have the header",
-								#b2: {},
+								#b2: {options:{small_headline:true}},
 								#b3: {options:{border:true}}
 			                }},
 							{ if: =articles.b2.type, equals: "Letters", then: {
 								_comment: "b2 has the header",
-								#b2: {options: {header: true} },
-								#b3: {options:{border:true}}
+								#b2: {options: {header: true, small_headline:true}, height:122 },
+								#b3: {options:{border:true}, height:102}
 							}},
 							{ if: =articles.b3.type, equals: "Letters", then: {
 								_comment: "b3 has the header",
-								#b2: {},
-								#b3: {options: {header: true} }
+								#b2: {options:{small_headline:true}},
+								#b3: {options: {header: true, border:true}, height:122 }
 							}}, 
 							{ if: true, then: {
 								_comment: "neither have the header",
-								#b2: {},
-								#b3: {options:{border:true}}
+								#b2: {options:{small_headline:true}},
+								#b3: {options:{border:true, small_headline:true}}
 							}}
 			        	]}
 						
@@ -95,7 +95,7 @@
     <box id="ad_background" class="ad_light unit_ad maude tablet_ad">
 		<box id="highlight_ad" class="ad-rectangle" embed="advertisement" />
 	</box>
-    <box id="b4" embed="article" class="maude unit_medium_1" module="TOP-IMAGE_module.xml" />
+    <box id="b4" embed="article" class="maude unit_50" module="TOP-IMAGE_module.xml" />
 
     <box id="h1" embed="article" class="maude unit_highlight" module="HIGHLIGHTS_module.xml" />
     <box id="h2" embed="article" class="maude unit_highlight" module="HIGHLIGHTS_module.xml" />

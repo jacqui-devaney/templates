@@ -19,21 +19,22 @@
 						padding:[0], 
 						border-width:[0]
 					}},
-					{$switch: [
+					{ $switch: [
 						{ if: =articles.b1.type, equals: "Letters", then: {
 							_comment: "neither have the header",
-							#b2: {},
-							#b3: {options:{border:true}}
+							#b1: {height:102},
+							#b2: {height:102},
+							#b3: {options:{border:true}, height:102}
 						}},
 						{ if: =articles.b2.type, equals: "Letters", then: {
 							_comment: "b2 has the header",
-							#b2: {options:{header:true} },
-							#b3: {options:{border:true}}
+							#b2: {options:{header:true}, height:122 },
+							#b3: {options:{border:true}, height:102}
 						}},
 						{ if: =articles.b3.type, equals: "Letters", then: {
 							_comment: "b3 has the header",
 							#b2: {},
-							#b3: {options:{header:true, border:true} }
+							#b3: {options:{header:true, border:true}, height:122 }
 						}}, 
 						{ if: true, then: {
 							_comment: "neither have the header",
@@ -96,8 +97,8 @@
     <box id="ad_background" class="ad_light maude unit_ad tablet_ad">
 		<box id="highlight_ad" class="ad-rectangle" embed="advertisement" />
 	</box>
-    <box id="b4" embed="article" class="maude unit_medium_1" module="TOP-IMAGE_module.xml" />
-    <box id="b5" embed="article" class="maude unit_medium_1" module="TOP-IMAGE_module.xml" />
+    <box id="b4" embed="article" class="maude unit_50" module="TOP-IMAGE_module.xml" />
+    <box id="b5" embed="article" class="maude unit_50" module="TOP-IMAGE_module.xml" />
 
     <box id="h1" embed="article" class="maude unit_highlight" module="HIGHLIGHTS_module.xml" />
     <box id="h2" embed="article" class="maude unit_highlight" module="HIGHLIGHTS_module.xml" />

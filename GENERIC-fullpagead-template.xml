@@ -4,19 +4,8 @@
 	<style>{
         if: =scale.phone, then: {
             #fullpage_container: { 
-                display: { if: =intent.section, then: none, else: inherit },
-                width:=view.width,
-                height:=view.height
-            },
-            #fullpage_ad: {
-                width:=view.width,
-                height:=view.height
-            },
-			#ad_background: { display: {
-                if: =intent.section
-                then: inherit,
-                else: none
-            }}
+                display: none
+            }
         }, else:{
             #fullpage_container: { 
                 display: inherit
@@ -29,8 +18,5 @@
     }</style>
     <box id="fullpage_container">
         <box id="fullpage_ad" class="ad-fullpage" embed="fullpagead" />
-    </box>
-    <box id="ad_background" class="ad_light maude unit_ad invisible">
-        <box id="highlight_ad" class="ad-rectangle" embed="advertisement" />
     </box>
 </jpml>

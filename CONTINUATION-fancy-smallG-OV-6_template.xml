@@ -80,6 +80,9 @@
     <box id="b4" embed="article" class="maude unit_continuation_strap" module="CONTINUATION-dynamic_module.xml" />
     <box id="deco" embed="article" class="maude unit_medium_deco" module="DECO_module.xml" />
     <box id="deco2" embed="article" class="maude unit_medium_deco" module="DECO_module.xml" />
+    <box id="ad_background" class="maude unit_ad hidden_tablet">
+        <box id="highlight_ad" class="ad-rectangle" embed="advertisement" />
+    </box>
 
 </jpml>
 

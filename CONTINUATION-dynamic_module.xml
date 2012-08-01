@@ -64,7 +64,7 @@
 		</panel>
 		<panel id="content">
 		 	<box id="image_container">
-				<image embed="summary-image"/>
+				<image embed="summary-image" target-width="76" target-height="76" />
 			</box>
 			<box id="vertical">
 				<p class="continuation_headline"><mark id="m_headline" /><mark class="key" /></p>

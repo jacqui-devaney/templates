@@ -94,14 +94,17 @@
 					
 				},
 				.byline: {
-					display:none
+					display:{if: =page.section, equals: "OPINION", then:inherit, else:none}
 				},
 				#body_container: {
-					display:{if: =options.show_body, then:inherit, else:none},
-					padding: [8, 8, 0, 8],
+					display:{if-any: [=options.show_body, {if: =page.section, equals: "OPINION"}], then:inherit, else:none},
+					padding: [{if: =page.section, equals: "OPINION", then:2, else:8}, 8, 0, 8],
 					max-height:65
 				},
-				#headline: {
+				.body: {
+					display:{if: =page.section, equals: "OPINION", then:none, else:inherit}
+				},
+				#vertical: {
 					vertical-align: {if: =options.top_align, then: top, else: middle}
 				}
 				
@@ -111,16 +114,18 @@
 		<box id="image_wrapper">
 			<image embed="summary-image" />
 		</box>
-		<panel id="headline">
-			<p id="small_headline" class="invisible"><span embed="headline" /><mark class="key" /></p>
-			<p id="medium_headline" class="invisible"><span embed="headline" /><mark class="key" /></p>
-			<p id="large_headline" class="invisible"><span embed="headline" /><mark class="key" /></p>
+		<panel id="vertical">
+			<panel id="headline">
+				<p id="small_headline" class="invisible"><span embed="headline" /><mark class="key" /></p>
+				<p id="medium_headline" class="invisible"><span embed="headline" /><mark class="key" /></p>
+				<p id="large_headline" class="invisible"><span embed="headline" /><mark class="key" /></p>
+			</panel>
+			<panel id="body_container">
+		        <panel id="body">
+		            <p class="byline" embed="byline"/>
+		            <panel class="body" embed="body"/>
+		        </panel>
+		    </panel>
 		</panel>
-		<panel id="body_container">
-	        <panel id="body">
-	            <p class="byline" embed="byline"/>
-	            <panel class="body" embed="body"/>
-	        </panel>
-	    </panel>
 	</box>
 </jpml>

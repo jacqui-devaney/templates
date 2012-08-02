@@ -1,17 +1,10 @@
 {if: =scale.phone, then: {
 	#large_headline: {
-		font-size:33,	
-		line-height:33,
+		font-size:25,	
+		line-height:25,
 		text-scale: {$multiply: [=scale.text, 1] },
 		padding:[0, 0, 5, 0],
 		text-overflow:" \u00bb"
-		
-	},
-	.body: {
-		text-indent:0,
-		font-size:16,
-		line-height:18,
-		text-scale: {$multiply: [=scale.text, 1] }
 		
 	},
 	#small_headline: {
@@ -21,8 +14,20 @@
 		padding:[0, 0, 0, 0],
 		text-overflow:" \u00bb"
 	},
+	
+	.body: {
+		text-indent:0,
+		font-size:18,
+		line-height:20,
+		text-scale: {$multiply: [=scale.text, 1] }
+		
+	},
 	#deco_headline: {
 		text-scale: {$multiply: [=scale.text, 1] },
+		font-size:21,
+		line-height:21
+	},
+	#deco_bottom_headline: {
 		font-size:21,
 		line-height:21
 	},
@@ -41,16 +46,17 @@
 		text-scale: {$multiply: [=scale.text, 1] },
 		line-height:17
 	},
+	
 	.subsection: {
-		font-size:16,
+		font-size:15,
 		text-scale: {$multiply: [=scale.text, 1] },
-		line-height:17,
+		line-height:16,
 		text-transform:uppercase
 	},
 	.strap: {
-		font-size:16,
+		font-size:15,
 		text-scale: {$multiply: [=scale.text, 1] },
-		line-height:17,
+		line-height:16,
 		text-transform:uppercase
 	},
 	.highlight_flashline: {
@@ -67,9 +73,11 @@
 		padding:[0],
 		text-overflow:" \u00bb"
 	},
-	#deco_bottom_headline: {
-		font-size:20,
-		line-height:20
+	.highlight_flashline_small: {
+		font-size:17
+	},
+	.ad_light: {
+		background-color: #fff
 	},
 	.article_flashline: {
 		font-size:16
@@ -90,15 +98,19 @@
 		font-size:{$multiply: [16, =view.zoomlevel]},
 		line-height:{$multiply: [16, =view.zoomlevel]}
 	},
-	.deloitte_article_headline: {
-		font-size:25,
-		line-height:25,
-		border-width:[0]
+	#continues_label: {
+		padding: [0, 10, 3, 0],
+		display: { if: =page.count, equals:1, then:none, else:inherit}
+		
 	},
-	.deloitte_article_body: {
-		font-size:18,
-		line-height:22
+	#continues: { content: { $switch: [
+		{ if: =app.language, equals: en, then: "Article Continues \u2192" },
+		{ if: =app.language, equals: de, then: "Mehr \u2192" }
+	] }},
+	#mediabucket: {
+		display: {if: =page.mediabucket, then:inherit, else:none}
 	},
+	
 	.opinion_headline: {
 		font-size:25,
 		text-scale: {$multiply: [=scale.text, 1] },
@@ -160,6 +172,15 @@
 		text-scale: {$multiply: [=scale.text, 1] },
 		text-align:left
 	},
+	.deloitte_article_headline: {
+		font-size:25,
+		line-height:25,
+		border-width:[0]
+	},
+	.deloitte_article_body: {
+		font-size:18,
+		line-height:22
+	},
 	.cio_head: {
 		color:#000,
 		font-name:DJ5RetinaCd-Medium,
@@ -175,40 +196,21 @@
 	.tagline: {
 		font-size:11
 	},
-	.large_dek: {
-		font-name:DJ5Exchange-Medium,
-		text-indent:0,
-		font-size:{$multiply:15},
-		line-height:{$multiply:18},
-		text-overflow: " \u00bb",
-        text-align: left,
-		text-scale: {if: =widescreen, then: {$multiply: [=scale.text, 1.2] }, else: inherit},
-		color:#000
-	},
-	#mediabucket: {
-		display: {if: =page.mediabucket, then:inherit, else:none}
-	},
-	#continues_label: {
-		padding: [0, 10, 3, 0],
-		display: { if: =page.count, equals:1, then:none, else:inherit}
-		
-	},
-	#continues: { content: { $switch: [
-		{ if: =app.language, equals: en, then: "Article Continues \u2192" },
-		{ if: =app.language, equals: de, then: "Mehr \u2192" }
-	] }},
-	.highlight_flashline_small: {
-		font-size:17
-	},
 	#extra_small_headline: { 
 		font-size:24,
 		line-height:24,
 		padding:[2, 0, 0, 0]
 	},
-	.ad_light: {
-		background-color: #fff
-	}
 	
-	
+	.large_dek: {
+		font-name:DJ5Exchange-Medium,
+		text-indent:0,
+		font-size:18,
+		line-height:20,
+		text-overflow: " \u00bb",
+        text-align: left,
+		text-scale: {$multiply: [=scale.text, 1] },
+		color:#000
+	}	
 	
 }, else:{}}

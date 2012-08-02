@@ -3,10 +3,10 @@
 	<style src="SECTION-stylesheet.ejs" />
 	<style src="PHONE-stylesheet.ejs" />
 	<style>{
-		#b1: {options:{small_headline:{if: =scale.phone, then:true, else:false}, large_headline:{if: =scale.phone, then:false, else:true}, no_border:{if: =scale.phone, then:false, else:true}, byline:{if: =scale.small, then:true, else:false}, show_body:true, top_align:true}},		
+		#b1: {options:{large_headline:true, no_border:{if: =scale.phone, then:false, else:true}, byline:{if: =scale.small, then:true, else:false}, show_body:true, top_align:true}},		
 		#b2: {options:{small_headline:true, no_indent:true}},		
-		#b3: {options:{small_headline:true, no_indent:true, no_border:true}},		
-		#b4: {options:{small_headline:true, no_indent:true}},
+		#b3: {options:{small_headline:true, no_indent:true}},		
+		#b4: {options:{small_headline:true, no_indent:true, no_border:true}},
 		#deco: {options: { $switch: [
 				{if: =scale.phone, then: {normal_headline:true, G_image:true, bottom_border:true}},
 				{if: =portrait, then: {normal_headline:true}},
@@ -93,14 +93,14 @@
 	]
 	}</style>
 	
-	<box id="b1" embed="article" class="maude unit_large_1" module="TOP-IMAGE_module.xml" />
-	<box id="b2" embed="article" class="maude unit_medium_1" module="RIGHT-INSET-IMAGE_module.xml" />
-	<box id="b3" embed="article" class="maude unit_medium_1" module="RIGHT-INSET-IMAGE_module.xml" />
+	<box id="b1" embed="article" class="maude unit_164" module="TOP-IMAGE_module.xml" />
+	<box id="b2" embed="article" class="maude unit_50" module="RIGHT-INSET-IMAGE_module.xml" />
+	<box id="b3" embed="article" class="maude unit_50" module="RIGHT-INSET-IMAGE_module.xml" />
+	<box id="b4" embed="article" class="maude unit_50" module="RIGHT-INSET-IMAGE_module.xml" />
 	<box id="ad_background" class="ad_light maude unit_ad">
 		<box id="highlight_ad" class="ad-rectangle" embed="advertisement" />
 	</box>
-	<box id="b4" embed="article" class="maude unit_medium_1" module="RIGHT-INSET-IMAGE_module.xml" />
-	<box id="deco" embed="article" class="maude unit_medium_deco" module="DECO_module.xml" />
+	<box id="deco" embed="article" class="maude unit_G_deco" module="DECO_module.xml" />
 	<box id="h1" embed="article" class="maude unit_highlight" module="HIGHLIGHTS_module.xml" />
 	<box id="h2" embed="article" class="maude unit_highlight" module="HIGHLIGHTS_module.xml" />
 

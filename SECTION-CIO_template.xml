@@ -31,7 +31,7 @@
 		
 		#b1:	{ 
 			options: {if: =scale.phone, then: 
-				{show_body:true, no_border:true, small_headline:true, show_image:false, hide_image:true, top_align:true}, else:
+				{show_body:true, no_border:true, large_headline:true, show_image:false, top_align:true}, else:
 				{medium_headline:true, no_border:true}
 			}
 		},
@@ -244,9 +244,9 @@
 	        <p id="stars"><mark class="ahed_stars" /></p>
 		</panel>
 	</box>
-	<box id="b1" embed="article" class="maude unit_cio_top" module="FRONT-NO-IMAGE_module.xml" />
-	<box id="b2" embed="article" class="maude unit_medium_1" module="FRONT-NO-IMAGE_module.xml" />
-	<box id="b3" embed="article" class="maude unit_medium_1" module="FRONT-NO-IMAGE_module.xml" />
+	<box id="b1" embed="article" class="maude unit_164" module="FRONT-NO-IMAGE_module.xml" />
+	<box id="b2" embed="article" class="maude unit_50" module="FRONT-NO-IMAGE_module.xml" />
+	<box id="b3" embed="article" class="maude unit_50" module="FRONT-NO-IMAGE_module.xml" />
 	<panel id="strap">
 		<p class="subsection" id="cio">Latest Technology News</p>
 		<p class="subsection" id="cfo">Latest Finance News</p>
@@ -257,8 +257,8 @@
 		<p class="tagline">From WSJ and other top sources</p>
 		<box id="hr" class="maude" />
 	</box>
-	<box id="b5" embed="article" class="maude unit_medium_1" module="RIGHT-INSET-IMAGE_module.xml" />
-	<box id="b6" embed="article" class="maude unit_medium_1" module="RIGHT-INSET-IMAGE_module.xml" />
+	<box id="b5" embed="article" class="maude unit_50" module="RIGHT-INSET-IMAGE_module.xml" />
+	<box id="b6" embed="article" class="maude unit_50" module="RIGHT-INSET-IMAGE_module.xml" />
 	<box id="b7" embed="article" class="maude unit_cio" module="FLASHLINE-HEADLINE_module.xml" />
 	<box id="b8" embed="article" class="maude unit_cio" module="FLASHLINE-HEADLINE_module.xml" />
 	<box id="b9" embed="article" class="maude unit_cio" module="FLASHLINE-HEADLINE_module.xml" />
@@ -278,9 +278,9 @@
 			<p class="deloitte_slug" id="cfo">CFO insight and analysis written</p><p class="deloitte_slug" id="cfo"> and compiled by Deloitte</p>
 		</panel>
 	</box>
-	<box id="h5" embed="article" class="maude unit_highlight" module="HIGHLIGHTS-CIO_module.xml" />
-	<box id="h6" embed="article" class="maude unit_highlight" module="HIGHLIGHTS-CIO_module.xml" />
-	<box id="h7" embed="article" class="maude unit_highlight" module="HIGHLIGHTS-CIO_module.xml" />
+	<box id="h5" embed="article" class="maude unit_50" module="HIGHLIGHTS-CIO_module.xml" />
+	<box id="h6" embed="article" class="maude unit_50" module="HIGHLIGHTS-CIO_module.xml" />
+	<box id="h7" embed="article" class="maude unit_50" module="HIGHLIGHTS-CIO_module.xml" />
 
 	
 </jpml>

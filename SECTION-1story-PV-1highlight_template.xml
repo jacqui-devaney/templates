@@ -25,7 +25,7 @@
 		]
 	}</style>
 	
-	<box id="b1" embed="article" class="maude unit_medium_deco" module="IMAGE-only_module.xml" />
+	<box id="b1" embed="article" class="maude unit_G_deco" module="IMAGE-only_module.xml" />
 	<box id="h4" embed="article" class="maude unit_highlight" module="HIGHLIGHTS_module.xml" />
 	<box id="ad_background_PV" class="maude unit_ad ad_light">
 		<box id="highlight_ad" class="ad-rectangle" embed="advertisement" />

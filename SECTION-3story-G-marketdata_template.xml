@@ -4,7 +4,7 @@
 	<style src="PHONE-stylesheet.ejs" />
 	<style>{
 			#b1: {options: { $switch: [
-					{if: =scale.phone, then: {small_headline:true, show_image:true, show_body:true, top_align:true}},
+					{if: =scale.phone, then: {large_headline:true, show_image:true, show_body:true, top_align:true}},
 					{if: =portrait, then: {large_headline:true, show_image:true, no_border:true, bottom:true, byline:{if: =scale.small, then:true, else:false}}},
 					{if: =landscape, then: {large_headline:true, show_image:true, F_image:{if: =widescreen, then:true, else:false}, no_border:true, bottom:true, byline:{if: =scale.small, then:true, else:false}}}			
 				]}},
@@ -68,13 +68,13 @@
 		]
 	}</style>
 	
-	<box id="b1" class="maude unit_large_1" embed="article" module="TOP-IMAGE_module.xml" />
-	<box id="b2" class="maude unit_medium_1" embed="article" module="TOP-IMAGE_module.xml" />
-	<box id="b3" class="maude unit_medium_1" embed="article" module="TOP-IMAGE_module.xml" />
+	<box id="b1" class="maude unit_164" embed="article" module="TOP-IMAGE_module.xml" />
+	<box id="b2" class="maude unit_50" embed="article" module="TOP-IMAGE_module.xml" />
+	<box id="b3" class="maude unit_50" embed="article" module="TOP-IMAGE_module.xml" />
 	<box id="ad_background" class="ad_light maude unit_ad">
 		<box id="highlight_ad" class="ad-rectangle" embed="advertisement" />
 	</box>
-	<box id="h2" class="maude unit_1" embed="article" module="HIGHLIGHTS_module.xml" />
+	<box id="h2" class="maude unit_highlight" embed="article" module="HIGHLIGHTS_module.xml" />
 	<box id="marketdata_background" class="ad_light">
 		<box id="highlight_marketdata" embed="marketdata" />
 	</box>

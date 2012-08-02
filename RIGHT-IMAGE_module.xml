@@ -35,7 +35,7 @@
 		if: =scale.phone, then: {
 
 			#wrapper: {
-				padding:[0, 0, 0, 0],
+				padding:[10, 0, 0, 0],
 				anchor-y:middle
 			},
 			#image_wrapper: { 
@@ -52,7 +52,7 @@
 				
 			},
 			#body_container: {
-				display:none
+				padding:[0, 0, 8, 0]
 			},
 			jpml: {
 				border-width:[0, 0, 1, 0],

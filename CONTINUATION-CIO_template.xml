@@ -168,9 +168,9 @@
 		]
 	}</style>
 	
-	<box id="h5" embed="article" class="maude unit_highlight" module="HIGHLIGHTS-CIO_module.xml" />
-	<box id="h6" embed="article" class="maude unit_highlight" module="HIGHLIGHTS-CIO_module.xml" />
-	<box id="h7" embed="article" class="maude unit_highlight" module="HIGHLIGHTS-CIO_module.xml" />
+	<box id="h5" embed="article" class="maude unit_50" module="HIGHLIGHTS-CIO_module.xml" />
+	<box id="h6" embed="article" class="maude unit_50" module="HIGHLIGHTS-CIO_module.xml" />
+	<box id="h7" embed="article" class="maude unit_50" module="HIGHLIGHTS-CIO_module.xml" />
 	<box id="b1" embed="article" class="maude unit_continuation_strap" module="CONTINUATION-dynamic_module.xml" />    
     <box id="b2" embed="article" class="maude unit_continuation_strap" module="CONTINUATION-dynamic_module.xml" />
     <box id="b3" embed="article" class="maude unit_continuation_strap" module="CONTINUATION-dynamic_module.xml" />
@@ -183,15 +183,15 @@
 			<p class="strap" id="cfo">Latest Finance News</p>
 		</panel>
 	</box>
-	<box id="b7" embed="article" class="maude unit_continuation_strap" module="FLASHLINE-HEADLINE_module.xml" />
-	<box id="b8" embed="article" class="maude unit_continuation_strap" module="FLASHLINE-HEADLINE_module.xml" />
-	<box id="b9" embed="article" class="maude unit_continuation_strap" module="FLASHLINE-HEADLINE_module.xml" />
-	<box id="b10" embed="article" class="maude unit_continuation_strap" module="FLASHLINE-HEADLINE_module.xml" />
-	<box id="b11" embed="article" class="maude unit_continuation_strap" module="FLASHLINE-HEADLINE_module.xml" />
-	<box id="b12" embed="article" class="maude unit_continuation_strap" module="FLASHLINE-HEADLINE_module.xml" />
-	<box id="b13" embed="article" class="maude unit_continuation_strap" module="FLASHLINE-HEADLINE_module.xml" />
-	<box id="b14" embed="article" class="maude unit_continuation_strap" module="FLASHLINE-HEADLINE_module.xml" />
-	<box id="b15" embed="article" class="maude unit_continuation_strap" module="FLASHLINE-HEADLINE_module.xml" />
+	<box id="b7" embed="article" class="maude unit_highlight" module="FLASHLINE-HEADLINE_module.xml" />
+	<box id="b8" embed="article" class="maude unit_highlight" module="FLASHLINE-HEADLINE_module.xml" />
+	<box id="b9" embed="article" class="maude unit_highlight" module="FLASHLINE-HEADLINE_module.xml" />
+	<box id="b10" embed="article" class="maude unit_highlight" module="FLASHLINE-HEADLINE_module.xml" />
+	<box id="b11" embed="article" class="maude unit_highlight" module="FLASHLINE-HEADLINE_module.xml" />
+	<box id="b12" embed="article" class="maude unit_highlight" module="FLASHLINE-HEADLINE_module.xml" />
+	<box id="b13" embed="article" class="maude unit_highlight" module="FLASHLINE-HEADLINE_module.xml" />
+	<box id="b14" embed="article" class="maude unit_highlight" module="FLASHLINE-HEADLINE_module.xml" />
+	<box id="b15" embed="article" class="maude unit_highlight" module="FLASHLINE-HEADLINE_module.xml" />
     <box id="deloitte_header">
 		<panel class="deloitte" />
 		<panel class="slug">

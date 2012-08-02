@@ -72,7 +72,7 @@
 				},
 				#wrapper: {
 					border-width:[0],
-					padding:[0, 0, 0, 0]
+					padding: [{if: =options.top_align, then: 10, else:0}, 0, 0, 0]
 				},
 				#image_wrapper: { 
 					anchor-x:right,

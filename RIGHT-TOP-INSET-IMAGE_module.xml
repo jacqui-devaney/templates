@@ -33,13 +33,13 @@
 			jpml: {
 				border-width: [0, 0, {if: =options.no_border, then:0, else:1}, 0],
 				border-color: #b1aca1,
-				padding: [5, 0, 0, 0]
+				padding: [10, 0, 0, 0]
 			},
 			#image_container: { 
 				anchor-x:right,
 				position:relative,
 				width: 76,
-				padding:[0, 10, 0, 15],
+				padding:[0, 10, 6, 15],
 				pixels-per-point-x:1,
 				pixels-per-point-y:1,
 				image-scale:1
@@ -57,7 +57,7 @@
 				display:none
 			},
 			.body: {
-				display:none
+				padding:[0, 8, 8, 8]
 			},
 			#headline: { padding: [0, 0, 0, 8]}
 		}, else:{}

@@ -4,7 +4,7 @@
 	<style src="PHONE-stylesheet.ejs" />
 	<style>{
 		#b1: {options: { $switch: [
-				{if: =scale.phone, then: {F_image:true}},
+				{if: =scale.phone, then: {}},
 				{if: =portrait, then: {P_image:true}},
 				{if: =landscape, then: {F_image:{if: =widescreen, then:true, else:false}, P_image:{if: =widescreen, then:false, else:true}}}			
 			]}},
@@ -35,8 +35,8 @@
 		]
 	}</style>
 	
-	<box id="b1" embed="article" class="maude unit_p" module="LARGE-hed-dek-image_module.xml" />
-	<box id="h3" embed="article" class="maude unit_1" module="HIGHLIGHTS_module.xml" />
+	<box id="b1" embed="article" class="maude unit_164" module="LARGE-hed-dek-image_module.xml" />
+	<box id="h3" embed="article" class="maude unit_highlight" module="HIGHLIGHTS_module.xml" />
 	<box id="ad_background" class="ad_light maude unit_ad">
 		<box id="highlight_ad" class="ad-rectangle" embed="advertisement" />
 	</box>

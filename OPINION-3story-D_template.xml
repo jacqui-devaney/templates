@@ -16,12 +16,12 @@
 				{ $switch: [
 					{ if: =articles.b1.type, equals: "Letters", then: {
 						_comment: "no header",
-						#b1 : {height:102},
-						#b2: {options:{small_headline:true}, height:122}
+						#b1 : {height:122},
+						#b2: {options:{small_headline:true}, height:102}
 	                }},
 					{ if: =articles.b2.type, equals: "Letters", then: {
 				 		_comment: "b2 has the header",
-						#b2 : { options: {header: true, small_headline:true}, height:122 }
+						#b2 : { options: {header:true, small_headline:true}, height:122 }
 					}},
 					{ if: true, then: {
 						_comment: "no header",
@@ -64,8 +64,8 @@
     }</style>
     
     <box id="articles">
-	    <box id="b1" embed="article" class="maude unit_rando_top" module="OPINION-RANDO-LETTERS_module.xml" />
-	    <box id="b2" embed="article" class="maude unit_rando_second" module="OPINION-RANDO-LETTERS_module.xml" />
+	    <box id="b1" embed="article" class="maude unit_95" module="OPINION-RANDO-LETTERS_module.xml" />
+	    <box id="b2" embed="article" class="maude unit_75" module="OPINION-RANDO-LETTERS_module.xml" />
 	</box>
     <box id="ad_background" class="ad_light unit_ad maude">
 		<box id="highlight_ad" class="ad-rectangle" embed="advertisement" />

@@ -25,7 +25,12 @@
 	<style>{
 		if: =scale.phone, then:{
 			jpml: {
-				border-width:[{if-any: [{if: =options.top_border}, {if: =article.type, not equal to: "Letters"}], then: 1, else:0}, 0, 0, 0],
+				border-width:[
+					{if-any: [
+						{if: =options.no_border, equals:true},
+						{if: =options.header, equals: true}
+					], then: 0, else:1}, 
+					0, 0, 0],
 				border-color:#b1aca1,
 				padding: [0, 0, 8, 0]
 			},

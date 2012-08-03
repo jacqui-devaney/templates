@@ -52,8 +52,8 @@
 					else: { $divide: [=view.height, 620] }
 				}, else: 1},
 
-				phone:  { if: {$min: [=device.height, =device.width] }, at-most: 480 },
-				tablet: { if: {$min: [=device.height, =device.width] }, more-than: 480 }, 
+				phone: { if: =app.idiom, equals: "phone" },
+				tablet: { if: =app.idiom, equals: "tablet" },
 
 				small: { if: =device.size, less-than: 8.8 },
 				large: { if: =device.size, more-than: 8.8 },

@@ -67,6 +67,15 @@
 		if: =scale.phone, then: {
 			.headline: {
 				vertical-align:middle
+			},
+			.body: {
+			 	display:none
+			},
+			#image_container: {
+				display:none
+			},
+			jpml: {
+				padding:[0, 8]
 			}
 		}, else:{}
 	}</style>

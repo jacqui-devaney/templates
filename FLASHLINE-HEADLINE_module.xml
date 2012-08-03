@@ -60,6 +60,11 @@
 		
 			]
 		}</style>
+	<style>{
+		if: =scale.phone, then: {
+			#wrapper: {padding:[0, 8]}
+		}, else:{}
+	}</style>
 	<box id="wrapper">
 		<panel class="vertical_center">
 			<panel id="flashline">

@@ -28,6 +28,8 @@
 				display:{if-any: [{if: =article.type, in: ["A-hed", "Review &amp; Outlook (Asia)", "Review &amp; Outlook (Europe)", "Review &amp; Outlook (U.S.)"]}], then:inherit, else:none }}
 		}, else: {}
 	}</style>
+	<box id="pagenext" embed="pagenext" />
+	<box id="pageback" embed="pageback" />
 	<box id="continues_label">
 		<p><mark id="continues" /></p>
 	</box>

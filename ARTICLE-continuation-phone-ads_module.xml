@@ -32,6 +32,8 @@
 		}}
 		]
     }</style>
+	<box id="pagenext" embed="pagenext" />
+	<box id="pageback" embed="pageback" />
 	<box id="continues_label">
 		<p><mark id="continues" /></p>
 	</box>

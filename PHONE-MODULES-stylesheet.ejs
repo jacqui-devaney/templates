@@ -110,7 +110,20 @@
 	#mediabucket: {
 		display: {if: =page.mediabucket, then:inherit, else:none}
 	},
-	
+	#pagenext: {
+		top: 0, 
+		right: 0, 
+		bottom: 0, 
+		width: 100,
+		position:absolute
+	},
+	#pageback: {
+		top: 0, 
+		left: 0, 
+		bottom: 0, 
+		width: 100,
+		position:absolute
+	},
 	.opinion_headline: {
 		font-size:25,
 		text-scale: {$multiply: [=scale.text, 1] },
@@ -196,6 +209,9 @@
 	.tagline: {
 		font-size:11
 	},
+	.cio_highlight_headline: {
+		text-overflow: " \u00bb"
+	},
 	#extra_small_headline: { 
 		font-size:24,
 		line-height:24,
@@ -211,6 +227,9 @@
         text-align: left,
 		text-scale: {$multiply: [=scale.text, 1] },
 		color:#000
+	},
+	.vertical_center: {
+		vertical-align:middle
 	}	
 	
 }, else:{}}

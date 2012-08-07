@@ -104,7 +104,10 @@
 			
 			},
 			#body_container: {display:none},
-			.phone: {display:inherit}
+			.phone: {display:inherit},
+			#not_prominent: {
+				vertical-align:middle
+			}
 		
 		}, else: {}
 	}</style>

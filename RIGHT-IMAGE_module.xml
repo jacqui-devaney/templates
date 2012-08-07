@@ -40,7 +40,8 @@
 			},
 			#image_wrapper: { 
 				width: 76,
-				anchor-x:right
+				anchor-x:right,
+				padding:[0, 0, 5, 10]
 				
 			},
 			image: { 
@@ -53,6 +54,9 @@
 			},
 			#body_container: {
 				padding:[0, 0, 8, 0]
+			},
+			.byline: {
+				display:none
 			},
 			jpml: {
 				border-width:[0, 0, 1, 0],

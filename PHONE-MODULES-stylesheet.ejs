@@ -8,8 +8,8 @@
 		
 	},
 	#small_headline: {
-		font-size:22,
-		line-height:22,
+		font-size:20,
+		line-height:20,
 		text-scale: {$multiply: [=scale.text, 1] },
 		padding:[0, 0, 0, 0],
 		text-overflow:" \u00bb"
@@ -147,7 +147,7 @@
 		line-height:22,
 		font-name:DJ5EscrowCond-Bold,
 		text-align:left,
-		display: {if-all: [{if: =options.small_headline}, {if: =article.type, not equal to:"Letters"}], then:inherit, else:none}
+		display: {if-all: [{if: =options.small_headline}, {if: =article.type, not-equal-to:"Letters"}], then:inherit, else:none}
 	},
 	#opinion_line: { 
 		width: 218,
@@ -191,8 +191,8 @@
 		border-width:[0]
 	},
 	.deloitte_article_body: {
-		font-size:18,
-		line-height:22
+		font-size:{$multiply: [18, =view.zoomlevel]},
+		line-height:{$multiply: [22, =view.zoomlevel]}
 	},
 	.cio_head: {
 		color:#000,

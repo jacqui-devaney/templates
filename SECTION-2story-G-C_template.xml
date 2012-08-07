@@ -4,7 +4,7 @@
 	<style src="PHONE-stylesheet.ejs" />
 	<style>{
 			#b1: {options: { $switch: [
-					{if: =scale.phone, then: {small_headline:true, show_image:true, show_body:true, top_align:true}},
+					{if: =scale.phone, then: {large_headline:true, show_image:true, show_body:true, top_align:true}},
 					{if: =portrait, then: {large_headline:true, show_image:true, no_border:true, bottom:true, byline:{if: =scale.small, then:true, else:false}}},
 					{if: =landscape, then: {large_headline:true, show_image:true, F_image:{if: =widescreen, then:true, else:false}, no_border:true, bottom:true, byline:{if: =scale.small, then:true, else:false}}}			
 				]}},
@@ -82,7 +82,7 @@
 		
 	}</style>
 	
-	<box id="b1" embed="article" class="maude unit_deloitte_top" module="TOP-IMAGE_module.xml" />
+	<box id="b1" embed="article" class="maude unit_164" module="TOP-IMAGE_module.xml" />
 	<box id="b2" embed="article" class="maude unit_50" module="TOP-IMAGE_module.xml" />
 	<box id="h1" embed="article" class="maude unit_highlight" module="HIGHLIGHTS_module.xml" />
 	<box id="h2" embed="article" class="maude unit_highlight" module="HIGHLIGHTS_module.xml" />

@@ -98,11 +98,11 @@
 				},
 				#body_container: {
 					display:{if-any: [=options.show_body, {if: =page.section, equals: "OPINION"}], then:inherit, else:none},
-					padding: [{if: =page.section, equals: "OPINION", then:2, else:8}, 8, 0, 8],
-					max-height:65
+					padding: [{if: =page.section, equals: "OPINION", then:2, else:0}, 8, 0, 8]
 				},
 				.body: {
-					display:{if: =page.section, equals: "OPINION", then:none, else:inherit}
+					display:{if: =page.section, equals: "OPINION", then:none, else:inherit},
+					padding:[0]
 				},
 				#vertical: {
 					vertical-align: {if: =options.top_align, then: top, else: middle}

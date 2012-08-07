@@ -54,7 +54,7 @@
 		}</style>
 		<style>{
 			if: =scale.phone, then: {
-				#body_container: {display:none},
+				#body_container: {padding:[0]},
 				#headline: {padding:[0]},
 				.tablet: {display:none},
 				.phone:{display:inherit},
@@ -63,28 +63,27 @@
 					anchor-x:right,
 					position:relative,
 					width: 76,
-					padding:[0, 0, 0, 0],
+					padding:[0, 10, 5, 15],
 					pixels-per-point-x:1,
 					pixels-per-point-y:1,
 					image-scale:1,
 					display:inherit,
-					options:{}
+					background-color:blue
 				},
 				image: { 
 					height: 76,
 					display:inherit,
 					padding: [0],
-		            options:{},
 					image-scale: 1
-
-				}
+				
+				},
 				
 			}, else:{}
 			
 		}</style>
 	<box id="wrapper">
 		<box id="image_wrapper" class="phone">
-			<image embed="summary-image" class="phone" />
+			<image embed="summary-image" class="phone" target-width="76" target-height="76" />
 		</box>
 		<panel id="headline">
 			<p id="small_headline" class="invisible"><span embed="headline" /><mark class="key" /></p>

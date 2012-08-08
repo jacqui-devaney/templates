@@ -100,7 +100,7 @@
 			if: =scale.phone, then: {
 				#wrapper: {border-color:#d6d6d6}
 			}, else:{}
-		}
+		}</style>
 		<box id="wrapper">
 			<panel id="content">
 				<panel id="top_headline">

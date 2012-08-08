@@ -96,6 +96,11 @@
 				{#bottom: {display:none}}
 		]}
 		}</style>
+		<style>{
+			if: =scale.phone, then: {
+				#wrapper: {border-color:#d6d6d6}
+			}, else:{}
+		}
 		<box id="wrapper">
 			<panel id="content">
 				<panel id="top_headline">

@@ -49,13 +49,13 @@
 		},
 		#b5:	{ 
 			options: {if: =scale.phone, then:
-				{small_headline:true, no_border:true}, else:
+				{small_headline:true, no_border:true, hide_image:true}, else:
 				{small_headline:true, C_image:true}
 			}
 		},
 		#b6:	{ 
 			options: {if: =scale.phone, then:
-				{small_headline:true, no_border:true, top_border:true}, else:
+				{small_headline:true, no_border:true, top_border:true, hide_image:true}, else:
 				{small_headline:true, border:true}
 			}
 		},

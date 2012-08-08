@@ -79,7 +79,8 @@
 	<style>{
 		if: =scale.phone, then: {
 			#wrapper: {
-				padding:[10, 0, 0, 0]
+				padding:[10, 0, 0, 0],
+				border-color:#d6d6d6
 			},
 			.deco_caption: {display:none}
 		}, else: {}

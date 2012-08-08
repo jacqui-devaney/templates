@@ -62,7 +62,7 @@
 		}</style>
 	<style>{
 		if: =scale.phone, then: {
-			#wrapper: {padding:[0, 8]}
+			#wrapper: {padding:[0, 8], border-color:#d6d6d6}
 		}, else:{}
 	}</style>
 	<box id="wrapper">

@@ -63,12 +63,13 @@
 			jpml: {
 				
 				border-width: [{if: =options.top_border, then:1, else:0}, 0, {if: =options.no_border, then:0, else:1}, 0],
-				border-color: #b1aca1,
+				border-color: #d6d6d6,
 				padding: [0, 8, 0, 8]
 			},
 			#wrapper: {
 				padding:[0],
-				anchor-y:middle
+				anchor-y:middle,
+				border-color:#d6d6d6
 			},
 			#image_container: { 
 				width:86,
@@ -88,7 +89,7 @@
 				display:none
 			},
 			#headline: {
-				padding:[0, 0, {if: =options.top_border, then:0, else:8}, 0],
+				padding:[0, 0, 0, 0],
 				vertical-align:middle
 			}
 			
@@ -101,7 +102,7 @@
 			<image embed="summary-image" />
 		</box>
 		<panel id="headline">
-			<p id="small_headline" class="invisible"><span embed="headline" /><mark class="key" /></p>
+			<p id="small_headline" class="invisible"><span embed="headline" />akshdf akdj f<mark class="key" /></p>
 			<p id="medium_headline" class="invisible"><span embed="headline" /><mark class="key" /></p>
 			<p id="large_headline" class="invisible"><span embed="headline" /><mark class="key" /></p>
 		</panel>

@@ -96,7 +96,10 @@
     <box id="ad_background" class="ad_light unit_ad maude tablet_ad">
 		<box id="highlight_ad" class="ad-rectangle" embed="advertisement" />
 	</box>
-    <box id="b4" embed="article" class="maude unit_75" module="TOP-IMAGE_module.xml" />
+    <panel id="strap" class="maude unit_strap">
+		<p class="subsection">Commentary</p>
+	</panel>
+	<box id="b4" embed="article" class="maude unit_75" module="TOP-IMAGE_module.xml" />
 
     <box id="h1" embed="article" class="maude unit_highlight" module="HIGHLIGHTS_module.xml" />
     <box id="h2" embed="article" class="maude unit_highlight" module="HIGHLIGHTS_module.xml" />

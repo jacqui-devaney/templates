@@ -66,13 +66,14 @@
 			if: =scale.phone, then: {
 				jpml: {
 					border-width: [{if: =options.top_border, then:1, else:0}, 0, {if: =options.no_border, then:0, else:1}, 0],
-					border-color: #b1aca1,
+					border-color: #d6d6d6,
 					anchor-y:middle,
 					padding:[0]
 				},
 				#wrapper: {
 					border-width:[0],
-					padding: [{if: =options.top_align, then: 10, else:0}, 0, 0, 0]
+					padding: [{if: =options.top_align, then: 10, else:0}, 0, 0, 0],
+					border-color:#d6d6d6
 				},
 				#image_wrapper: { 
 					anchor-x:right,

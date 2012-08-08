@@ -31,7 +31,7 @@
 						{if: =options.header, equals: true}
 					], then: 0, else:1}, 
 					0, 0, 0],
-				border-color:#b1aca1,
+				border-color:#d6d6d6,
 				padding: [0, 0, 8, 0]
 			},
 			.articles: {
@@ -61,7 +61,6 @@
 		</panel>
 		<panel class="articles">
 			<p class="opinion_headline"><span embed="headline" /><mark class="key" /></p>
-			<p class="opinion_headline_small"><span embed="headline" /><mark class="key" /></p>
 		    <p class="letters_headline"><span embed="headline" /><mark class="key" /></p>
 			<h2 class="opinion_dek" embed="subhed" ></h2>
 			<panel class="body" embed="body" />

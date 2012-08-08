@@ -5,6 +5,20 @@
 		border-color:#b1aca1, 
 		padding:[3, 11, 0, 0]
 	}},
+	{#strap: {
+		display: {if: =scale.phone, then:inherit, else:none},
+		padding: [4, 4, 0, 8],
+		background-color:#e4e4e4
+    }},
+
+	{.subsection: {
+		display: {if: =scale.phone, then:inherit, else:none},
+		font-size:15,
+		font-name:DJ5RetinaCd-Medium,
+		text-scale: {$multiply: [=scale.text, 1] },
+		line-height:16,
+		text-transform:uppercase
+	}},
 	{ if: =portrait, then: {
 		#h1: 	{ frame: [1, 620, 256, 257] },
 		#h2: 	{ frame: [257, 620, 256, 257] },

@@ -75,7 +75,8 @@
 						display:{if: =options.show_body, then:inherit, else:none}
 					},
 					#wrapper: {
-						padding: [{if: =options.top_align, then: 10, else:0}, 0, 0, 0]
+						padding: [{if: =options.top_align, then: 10, else:0}, 0, 0, 0],
+						border-color:#d6d6d6
 				
 					},
 					#headline: {

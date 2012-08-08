@@ -43,7 +43,7 @@
 			},
 			#content: {
 				border-width: [{ if:=options.hide_strap, then:1, else:0 }, 0, 0, 0],
-				border-color: #b1aca1
+				border-color: #d6d6d6
 				
 			},
 			.continuation_body: {

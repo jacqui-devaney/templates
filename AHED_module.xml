@@ -82,7 +82,8 @@
 			},
 			#regular: {
 				padding:[5, 8],
-				display:inherit
+				display:inherit,
+				border-color:#d6d6d6
 			},
 			#ahed: {display:none},
 			#image_wrapper: { 

@@ -54,7 +54,8 @@
 			jpml: {
 				padding: [0, 8],
 				background-color:#ffffff,
-				border-width: [0, 0, {if: =options.no_border, then:0, else:1}, 0]
+				border-width: [0, 0, {if: =options.no_border, then:0, else:1}, 0],
+				border-color:#d6d6d6
 			},
 			#wrapper: {
 				anchor-y:middle

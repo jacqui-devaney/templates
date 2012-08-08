@@ -23,27 +23,27 @@
 					{$switch: [
 						{ if: =articles.b1.type, equals: "Letters", then: {
 							_comment: "neither have the header",
-							#b1: {height:122},
-							#b2: {height:102},
-							#b3: {height:102},
-							#b4: {height:102}
+							#b1: {height:95},
+							#b2: {height:75},
+							#b3: {height:75},
+							#b4: {height:75}
 						}},
 						{ if: =articles.b2.type, equals: "Letters", then: {
 							_comment: "b2 has the header",
-							#b2: {options:{header:true}, height:122 },
-							#b3: {height:102},
-							#b4: {height:102}
+							#b2: {options:{header:true}, height:95 },
+							#b3: {height:75},
+							#b4: {height:75}
 						}},
 						{ if: =articles.b3.type, equals: "Letters", then: {
 							_comment: "b3 has the header",
-							#b3: {options:{header:true}, height:122 },
-							#b4: {height:102}
+							#b3: {options:{header:true}, height:95 },
+							#b4: {height:75}
 
 						}}, 
 						{ if: =articles.b4.type, equals: "Letters", then: {
 							_comment: "b4 has the header",
 							#b3: {options:{no_border:true}},
-							#b4: {options:{header:true}, height:122 }
+							#b4: {options:{header:true}, height:95 }
 
 						}}, 
 						{ if: true, then: {

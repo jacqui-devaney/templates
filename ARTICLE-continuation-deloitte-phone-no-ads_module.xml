@@ -47,7 +47,13 @@
 		}},
 		{cite: {
 			font-name:Helvetica
+		}},
+		{#continues_label: {
+			padding: [0, 10, 3, 0],
+			display: { if: =page.count, equals: {$add:[=page.number, 1]}, then:none, else:inherit}
+
 		}}
+		
 		
 		
 		

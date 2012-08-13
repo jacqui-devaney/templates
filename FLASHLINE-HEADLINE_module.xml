@@ -49,7 +49,10 @@
 			}},
 			{#continuation_headline: { 
 				text-overflow:" \u00bb",
-				display: { if: =options.continuation, then:inherit, else:none }
+				display: { if: =options.continuation, then:inherit, else:none },
+				font-size:16,
+				line-height:16,
+				padding:[0]
 			}},
 			{#extra_small_headline: { 
 				text-overflow:" \u00bb",

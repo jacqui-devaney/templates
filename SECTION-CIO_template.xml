@@ -92,8 +92,7 @@
 		
 	}</style>
 	<style>{
-		$switch: [
-			{if: =scale.phone, then:{
+			if: =scale.phone, then:{
 				#tech_header: {
 					display:none
 				},
@@ -141,8 +140,7 @@
 				
 				
 							
-			}},
-			{if: =scale.tablet, then: {
+			}, else:{
 				#tech_header: {
 					frame: [449, 15, 251, 50],
 					border-width: [0, 0, 1, 0],
@@ -187,8 +185,7 @@
 					display:none
 				},
 				#strap: {display:none}
-			}}
-		]
+			}
 	}</style>
 	<style>{
 		$switch: [

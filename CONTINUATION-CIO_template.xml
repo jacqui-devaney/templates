@@ -45,8 +45,7 @@
 		
 	}</style>
 	<style>{
-		$switch: [
-			{if: =scale.phone, then:{
+		if: =scale.phone, then:{
 				#deloitte_header: {display:none},
 				.strap: {
 					font-size:16,
@@ -83,8 +82,7 @@
 				
 								
 	        	
-			}},
-			{if: =scale.tablet, then:{
+			}, else:{
 				#tech_strap: {
 					frame: [512, 4, 256, 23] 
 		        },
@@ -122,8 +120,7 @@
 					frame: [512, 550, 256, 61]
 				}
 		        
-			}}
-		]
+			}
 	}</style>
 	<style>{
 		$switch: [

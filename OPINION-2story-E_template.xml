@@ -32,9 +32,6 @@
     <box id="articles">
 		<box id="b1" embed="article" class="maude unit_95" module="OPINION-RANDO-LETTERS_module.xml" />
     </box>
-	<panel id="strap" class="maude unit_strap">
-		<p class="subsection">Commentary</p>
-	</panel>
 
     <box id="b2" embed="article" class="maude unit_75" module="TOP-IMAGE_module.xml" />
     <box id="ad_background" class="ad_light maude unit_ad">

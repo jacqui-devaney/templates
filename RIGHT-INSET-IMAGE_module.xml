@@ -61,7 +61,6 @@
 	<style>{
 		if: =scale.phone, then: {
 			jpml: {
-				
 				border-width: [{if: =options.top_border, then:1, else:0}, 0, {if: =options.no_border, then:0, else:1}, 0],
 				border-color: #d6d6d6,
 				padding: [0, 8, 0, 8]
@@ -90,7 +89,7 @@
 			},
 			#headline: {
 				padding:[0, 0, 0, 0],
-				vertical-align:middle
+				vertical-align:top
 			}
 			
 		}, else:{}

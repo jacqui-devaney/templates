@@ -175,7 +175,7 @@
 	
 	.letters_headline: {
 		font-size:21,
-		line-height:21,
+		line-height:19,
 		text-scale: {$multiply: [=scale.text, 1] },
 		text-align:left
 	},
@@ -207,9 +207,10 @@
 		text-overflow: " \u00bb"
 	},
 	#extra_small_headline: { 
-		font-size:16,
-		line-height:16,
-		padding:[2, 0, 0, 0]
+		font-size:20,
+		line-height:20,
+		padding:[2, 0, 0, 0],
+		text-scale: {$multiply: [=scale.text, 1] }
 	},
 	
 	.large_dek: {
@@ -224,6 +225,9 @@
 	},
 	.vertical_center: {
 		vertical-align:middle
-	}	
+	},
+	.hidden_tablet: {
+		display: inherit
+	}
 	
 }, else:{}}

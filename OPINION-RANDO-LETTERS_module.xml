@@ -25,30 +25,36 @@
 	<style>{
 		if: =scale.phone, then:{
 			jpml: {
-				border-width:[
-					{if-any: [
-						{if: =options.no_border, equals:true},
-						{if: =options.header, equals: true}
-					], then: 0, else:1}, 
-					0, 0, 0],
+				border-width:[ 0, 0, {if: =options.no_border, then: 0, else:1}, 0],
 				border-color:#d6d6d6,
-				padding: [0, 0, 8, 0]
+				padding: [8, 8, 0, 8]
 			},
 			.articles: {
-				padding:[4, 8, 0, 8],
+				padding:[0],
 				vertical-align:middle
-			},
-			.body: {
-				display:none
 			},
 			#opinion_line: {
 				display:none
 			},
 			#letters_line: {
 				display:none
+			},
+			#rando_header: {
+				display:none
+			},
+			#letters_header: {
+				display:none
+			},
+			.body: {
+				padding:[0], 
+				line-height:18
 			}
 			
-		}, else: {}
+		}, else: {
+			.highlight_flashline: {
+				display:none
+			}
+		}
 	}</style>
 	
 		<panel id="rando_header">
@@ -60,7 +66,8 @@
 			<box id="letters_line" />
 		</panel>
 		<panel class="articles">
-			<p class="opinion_headline"><span embed="headline" /><mark class="key" /></p>
+			<p class="highlight_flashline" embed="flashline" />
+	    	<p class="opinion_headline"><span embed="headline" /><mark class="key" /></p>
 		    <p class="letters_headline"><span embed="headline" /><mark class="key" /></p>
 			<h2 class="opinion_dek" embed="subhed" ></h2>
 			<panel class="body" embed="body" />

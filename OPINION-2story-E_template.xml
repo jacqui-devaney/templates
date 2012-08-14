@@ -1,3 +1,4 @@
+
 <jpml id="OPINION-2story-E_template">
 	<style src="GLOBAL-stylesheet.ejs" />
 	<style src="OPINION-stylesheet.ejs" />
@@ -30,7 +31,7 @@
 		        
     }</style>
     <box id="articles">
-		<box id="b1" embed="article" class="maude unit_95" module="OPINION-RANDO-LETTERS_module.xml" />
+		<box id="b1" embed="article" class="maude unit_125" module="OPINION-RANDO-LETTERS_module.xml" />
     </box>
 
     <box id="b2" embed="article" class="maude unit_75" module="TOP-IMAGE_module.xml" />

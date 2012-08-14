@@ -107,9 +107,6 @@
 				},
 				#vertical: {
 					vertical-align: {if: =options.top_align, then: top, else: middle}
-				},
-				.highlight_flashline: {
-					display:{if: =page.section, equals: "OPINION", then:inherit, else:none}
 				}
 				
 			}, else:{}
@@ -120,7 +117,6 @@
 		</box>
 		<panel id="vertical">
 			<panel id="headline">
-				<p class="highlight_flashline" embed="flashline" />
 		    	<p id="small_headline" class="invisible"><span embed="headline" /><mark class="key" /></p>
 				<p id="medium_headline" class="invisible"><span embed="headline" /><mark class="key" /></p>
 				<p id="large_headline" class="invisible"><span embed="headline" /><mark class="key" /></p>

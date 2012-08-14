@@ -1,3 +1,4 @@
+
 <jpml id="OPINION-6story-D_template">
 	<style src="GLOBAL-stylesheet.ejs" />
 	<style src="OPINION-stylesheet.ejs" />
@@ -75,13 +76,13 @@
 		]
 	}</style>
     <box id="articles">
-		<box id="b1" embed="article" class="maude unit_95" module="OPINION-RANDO-LETTERS_module.xml" />
-    	<box id="b2" embed="article" class="maude unit_95" module="OPINION-RANDO-LETTERS_module.xml" />
+		<box id="b1" embed="article" class="maude unit_125" module="OPINION-RANDO-LETTERS_module.xml" />
+    	<box id="b2" embed="article" class="maude unit_125" module="OPINION-RANDO-LETTERS_module.xml" />
     	<box id="ad_background" class="ad_light unit_ad maude phone_ad">
 			<box id="highlight_ad" class="ad-rectangle" embed="advertisement" />
 		</box>
-	    <box id="b3" embed="article" class="maude unit_95" module="OPINION-RANDO-LETTERS_module.xml" />
-	    <box id="b4" embed="article" class="maude unit_95" module="OPINION-RANDO-LETTERS_module.xml" />
+	    <box id="b3" embed="article" class="maude unit_125" module="OPINION-RANDO-LETTERS_module.xml" />
+	    <box id="b4" embed="article" class="maude unit_125" module="OPINION-RANDO-LETTERS_module.xml" />
 	</box>
     <box id="ad_background" class="ad_light maude unit_ad tablet_ad">
 		<box id="highlight_ad" class="ad-rectangle" embed="advertisement" />

@@ -31,15 +31,29 @@
 		width: 320, 
 		height: 50 
 	},
-	.ad_light: {background-color: #ffffff},
-	.ad_light: {background-color: #ffffff},
-	.ad_white: {background-color: #ffffff},
+	.ad_light: {background-color: #ede3d0},
+	.ad_light: {background-color: #ede3d0},
+	.ad_white: {background-color: #ede3d0},
 	
 	#marketdata_background: { 
 		display:none
 	},
-	.fullpage_container : { 
-		display:none
+	#fullpage_container : { 
+		display:none,
+	    width:=view.width,
+        height:=view.height
+    },
+	#deco: { 
+		display: {if: =articles.deco.type, ends-with: "TabletOnly", then: none } 
+	},
+	#deco1: { 
+		display: {if: =articles.deco1.type, ends-with: "TabletOnly", then: none } 
+	},
+	#deco2: { 
+		display: {if: =articles.deco2.type, ends-with: "TabletOnly", then: none } 
+	},
+	#deco3: { 
+		display: {if: =articles.deco3.type, ends-with: "TabletOnly", then: none } 
 	},
 	.maude: {
 		position: relative,
@@ -91,8 +105,8 @@
 	.unit_fullsize_deco: {
 		height:416
 	},
-	.unit_125: {
-		height:125
+	.unit_95: {
+		height:95
 	},
 	.unit_75: {
 		height:75
@@ -100,8 +114,11 @@
 	.unit_50: {
 		height:50
 	},
-	.unit_164: {
-		height:164
+	.unit_100: {
+		height:100
+	},
+	.unit_166: {
+		height:166
 	}
 	
 }, else:{}}

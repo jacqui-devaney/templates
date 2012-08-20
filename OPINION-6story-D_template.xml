@@ -1,16 +1,17 @@
 
+
 <jpml id="OPINION-6story-D_template">
 	<style src="GLOBAL-stylesheet.ejs" />
 	<style src="OPINION-stylesheet.ejs" />
     <style src="PHONE-stylesheet.ejs" />
     <style>{
 		#b1: {options:{header:true, border:{if: =scale.phone, then:true, else:false}}},
-		#b2: {options: {small_headline:true, no_border:true}},
+		#b2: {options: {small_headline:true}},
 		#b3: {options: {small_headline:true}},
 		#b4: {options: {small_headline:true, no_border:true}},
 		.phone_ad: {display:{if: =scale.phone, then:inherit, else:none}},
 		.tablet_ad: {display:{if: =scale.phone, then:none, else:inherit}},
-		#b5: {options:{small_headline:true, show_image:true, top_border:true, no_border:{if: =scale.phone, then:false, else:true}, byline:{if-any: [=scale.phone, =scale.large], then:false, else:true}, F_image:{if-all: [=widescreen, =landscape], then:true, else:false}}},
+		#b5: {options:{small_headline:true, show_image:true, no_border:{if: =scale.phone, then:false, else:true}, byline:{if-any: [=scale.phone, =scale.large], then:false, else:true}, F_image:{if-all: [=widescreen, =landscape], then:true, else:false}}},
 		#b6: {options:{small_headline:true, no_border:{if: =scale.phone, then:false, else:true}, byline:{if-any: [=scale.phone, =scale.large], then:false, else:true}}},
 		#h1: {options:{hide_image:{if-all: [=scale.small, =landscape], then:true, else:false}, byline:{if: =scale.phone, then:false, else:true}}},
 		#h2: {options:{hide_image:{if-all: [=scale.small, =landscape], then:true, else:false}, byline:{if: =scale.phone, then:false, else:true}, no_border:{if: =scale.phone, then:true, else:false}}}
@@ -76,14 +77,14 @@
 		]
 	}</style>
     <box id="articles">
-		<box id="b1" embed="article" class="maude unit_125" module="OPINION-RANDO-LETTERS_module.xml" />
-    	<box id="b2" embed="article" class="maude unit_125" module="OPINION-RANDO-LETTERS_module.xml" />
-    	<box id="ad_background" class="ad_light unit_ad maude phone_ad">
+		<box id="b1" embed="article" class="maude unit_100" module="OPINION-RANDO-LETTERS_module.xml" />
+    	<box id="b2" embed="article" class="maude unit_100" module="OPINION-RANDO-LETTERS_module.xml" />
+	    <box id="b3" embed="article" class="maude unit_100" module="OPINION-RANDO-LETTERS_module.xml" />
+	    <box id="b4" embed="article" class="maude unit_100" module="OPINION-RANDO-LETTERS_module.xml" />
+		<box id="ad_background" class="ad_light unit_ad maude phone_ad">
 			<box id="highlight_ad" class="ad-rectangle" embed="advertisement" />
 		</box>
-	    <box id="b3" embed="article" class="maude unit_125" module="OPINION-RANDO-LETTERS_module.xml" />
-	    <box id="b4" embed="article" class="maude unit_125" module="OPINION-RANDO-LETTERS_module.xml" />
-	</box>
+    </box>
     <box id="ad_background" class="ad_light maude unit_ad tablet_ad">
 		<box id="highlight_ad" class="ad-rectangle" embed="advertisement" />
 	</box>

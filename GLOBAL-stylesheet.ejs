@@ -34,12 +34,9 @@
 	.front_ad: {
 		background-image:{
 			$switch: [
-				{if: =scale.phone, then: url(front-page-ad-phone.png)
-		        },
-				{if: =scale.small, then: url(front-page-ad-small.jpg)
-		        },
-				{if: =scale.large, then: url(front-page-ad.png)
-		        }
+				{if: =scale.phone, then: url(front-page-ad-phone.png)},
+				{if: =scale.small, then: url(front-page-ad-small.jpg)},
+				{if: =scale.large, then: url(front-page-ad.png)}
 			]
 		},
 		background-position:center
@@ -79,12 +76,14 @@
 		pixels-per-point-x: 1,
 		pixels-per-point-y: 1,
 		width: {$switch: [
+			{if-all: [=scale.phone, =portrait], then:320},
 			{if-all: [=scale.small, =portrait], then:600},
 			{if-all: [=scale.large, =portrait], then:768},
 			{if-all: [=scale.small, =landscape], then:828},
 			{if-all: [=scale.large, =landscape], then:1024}
 		]},
 		height: {$switch: [
+			{if-all: [=scale.phone, =portrait], then:416},
 			{if-all: [=scale.small, =portrait], then:702},
 			{if-all: [=scale.large, =portrait], then:{if: =intent.section, then: 876, else: 899}},
 			{if-all: [=scale.small, =landscape], then:488},

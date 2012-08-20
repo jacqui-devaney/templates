@@ -1,4 +1,5 @@
 
+
 <jpml id="OPINION-3story-E_template">
 	<style src="GLOBAL-stylesheet.ejs" />
 	<style src="OPINION-stylesheet.ejs" />
@@ -51,8 +52,8 @@
 	
     }</style>
     <box id="articles">
-	    <box id="b1" embed="article" class="maude unit_125" module="OPINION-RANDO-LETTERS_module.xml" />
-	    <box id="b2" embed="article" class="maude unit_125" module="OPINION-RANDO-LETTERS_module.xml" />
+	    <box id="b1" embed="article" class="maude unit_100" module="OPINION-RANDO-LETTERS_module.xml" />
+	    <box id="b2" embed="article" class="maude unit_100" module="OPINION-RANDO-LETTERS_module.xml" />
 	</box>
     <box id="ad_background" class="ad_light unit_ad maude">
 		<box id="highlight_ad" class="ad-rectangle" embed="advertisement" />

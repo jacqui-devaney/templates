@@ -42,7 +42,7 @@
 	
 	<panel id="body_container">
 		<box id="mediabucket" embed="mediabucket" />
-		<p class="article_byline" embed="byline"/>
+		<p class="article_byline" embed="byline"></p>
         <panel class="article_body" embed="body"/>
 	    
 	</panel>

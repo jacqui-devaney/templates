@@ -90,9 +90,9 @@
 			<image embed="summary-image" target-width="76" target-height="76" />
 		</box>
 		<panel id="headline">
-			<p id="small_headline" class="invisible"><span embed="headline" /><mark class="key" /></p>
-			<p id="medium_headline" class="invisible"><span embed="headline" /><mark class="key" /></p>
-			<p id="large_headline" class="invisible"><span embed="headline" /><mark class="key" /></p>
+			<p id="small_headline" class="invisible"><mark id="m_headline" /><mark class="key" /></p>
+			<p id="medium_headline" class="invisible"><mark id="m_headline" /><mark class="key" /></p>
+			<p id="large_headline" class="invisible"><mark id="m_headline" /><mark class="key" /></p>
 		</panel>
 		<panel id="body_container">
 	        <panel id="body">

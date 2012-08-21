@@ -8,10 +8,11 @@
 					else: {large_headline:true, no_border:true, byline:{if: =scale.small, then:true, else:false}}
 				}
 		},
-		#b2:	{options: {if: =portrait,
-					then:{small_headline:true, left:true, no_indent:true},
-					else: {small_headline:true, no_border:{if: =widescreen, then:false, else:true}, no_indent:true}
-				}
+		#b2:	{options: {$switch: [
+					{if: =portrait, then:{small_headline:true, left:true, no_indent:true}},
+					{if: =scale.phone, then: {small_headline:true, bind:none}},
+					{if: =landscape, then: {small_headline:true, no_border:{if: =widescreen, then:false, else:true}, no_indent:true}}
+				]}
 		},
 		#deco: {options: {$switch: [
 			{if: =scale.phone, then: {normal_headline:true, G_image:true, no_border:true}},
@@ -20,11 +21,11 @@
 		]}},
 		#b3:	{options: {if: =portrait,
 					then:{small_headline:true, left:true, no_indent:true},
-					else: {small_headline:true, no_border:{if: =widescreen, then:true, else:false}, no_indent:true}
+					else: {small_headline:true, no_border:{if: =widescreen, then:true, else:false}, no_indent:true, bind:none}
 				}
 		},
 		#b4:	{
-					options:{small_headline:true, left:true, no_indent:true} 
+					options:{small_headline:true, left:true, no_indent:true, bind:none} 
 		}
 	}</style>
 

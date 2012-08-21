@@ -20,6 +20,15 @@
 			image-scale:{if: =scale.small, then:.7, else:1}
 			
 		},
+		.key: {
+			font-name: {if: =device.platform, equals: Android, then: DJ5Utility, else: DJ5Utility-Regular },
+			font-size:16,
+			content: { if-all: [=issue.locked, =article.paid], then: "\u00a0K"},
+			display: { if:=article.paid, then:default, else:none },
+			padding: [0, 0, 0, 2],
+			color:#948464
+		},
+		
 		image: {
 			width:76,
 			height:76,

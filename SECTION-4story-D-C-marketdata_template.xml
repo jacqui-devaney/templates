@@ -92,13 +92,13 @@
 	<box id="b2" embed="article" class="maude unit_50" module="TOP-IMAGE_module.xml" />
 	<box id="b3" embed="article" class="maude unit_50" module="TOP-IMAGE_module.xml" />
 	<box id="b4" embed="article" class="maude unit_50" module="TOP-IMAGE_module.xml" />
+	<box id="marketdata_background" class="ad_light">
+		<box id="highlight_marketdata" embed="marketdata" />
+	</box>
 	<box id="ad_background" class="ad_light maude unit_ad">
 		<box id="highlight_ad" class="ad-rectangle" embed="advertisement" />
 	</box>
 	<box id="h2" embed="article" class="maude unit_highlight" module="HIGHLIGHTS_module.xml" />
-	<box id="marketdata_background" class="ad_light">
-		<box id="highlight_marketdata" embed="marketdata" />
-	</box>
 
 	
 </jpml>

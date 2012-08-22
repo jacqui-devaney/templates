@@ -52,7 +52,7 @@
 					else: { $divide: [=view.height, 620] }
 				}, else: 1},
 
-				phone: { if: =app.idiom, equals: "phone" },
+				phone: { if: =app.idiom, equals: "phone", then:true, else:false },
 				tablet: { if: =app.idiom, equals: "tablet" },
 
 				small: { if: =device.size, less-than: 8.8 },

@@ -7,7 +7,8 @@
         #ad: {            
             anchor-y: bottom,
             options: { zone: {$join: [=ad.prefix, abanner]} },
-            display: { if: =page.number, equals: 3, then: inherit, else: none }
+            display: { if: =page.number, equals: 3, then: inherit, else: none },
+			background-color:#fff
         }
 	}</style>
     <box id="ad" class="maude unit_ad" embed="advertisement"></box>

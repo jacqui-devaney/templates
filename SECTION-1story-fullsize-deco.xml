@@ -1,31 +1,16 @@
-<jpml id="SECTION-1story-fullsize-deco_template">
+<jpml id="	">
 	<style src="GLOBAL-stylesheet.ejs" />
 	<style src="SECTION-stylesheet.ejs" />
-	<style src="PHONE-stylesheet.ejs" />
 	<style>{
-		#deco: {options: { $switch: [
-				{if: =scale.phone, then: {FULL-port_image:true}},
-				{if: =portrait, then: {{FULL-port_image:{if: =widescreen, then:false, else:true}, FULL-Wport_image:{if: =widescreen, then:true, else:false}}},
-				{if: =landscape, then: {FULL-land_image:{if: =widescreen, then:false, else:true}, FULL-Wland_image:{if: =widescreen, then:true, else:false}}}			
-			]}}
-		
-	}</style>
-		
-	<style>{
-		$switch: [
-		{if: =scale.phone, then: {
-		
-		}},
-		{if: =portrait, then: {
-			#deco:	{ frame: [0, 0, 768, 876]}
-		}}, 
-		{if: =landscape, then: {
-			#deco:	{ frame: [0, 0, 1024, 620]}
+		if: =portrait, then: {
+			#deco:	{ frame: [0, 0, 768, 876], options:{FULL-port_image:{if: =widescreen, then:false, else:true}, FULL-Wport_image:{if: =widescreen, then:true, else:false}} }
+		}, else: {
+			#deco:	{ frame: [0, 0, 1024, 620], options: {FULL-land_image:{if: =widescreen, then:false, else:true}, FULL-Wland_image:{if: =widescreen, then:true, else:false}} }
 			
-		}}
-	]}</style>
+		}
+	}</style>
 	
-	<box id="deco" embed="article" class="maude unit_fullsize_deco" module="IMAGE-only_module.xml" />
+	<box id="deco" embed="article" module="IMAGE-only_module.xml" />
 	
 
 	

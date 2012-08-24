@@ -867,11 +867,10 @@
 
 	<article-page-plans>
 		<article pages="ARTICLE-pages.xml" />
-		<article pages="ARTICLE-pages-hots.xml" type="Heard on the Street" />
-		<article pages="ARTICLE-pages-hots.xml" type="Headrd on the Street Other"/>
-		<article pages="ARTICLE-pages-hots.xml" type="Overheard"/>
-		<article pages="ARTICLE-pages-letters.xml" type="Letters" />
-		<article pages="ARTICLE-pages-off-duty.xml" type="Off Duty" />
+		<article pages="ARTICLE-pages-hots.xml" />
+		<article pages="ARTICLE-pages-letters.xml" />
+		<article pages="ARTICLE-pages-off-duty.xml" />
+		<article pages="ARTICLE-pages-PV-no-rail.xml" />
 	</article-page-plans>
 	
 	<display-properties>

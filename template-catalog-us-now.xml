@@ -1422,22 +1422,13 @@
 
 	<article-page-plans>
 		<article pages="ARTICLE-pages.xml"/>
-		<article pages="ARTICLE-pages-cio.xml" section="CIO" />
-		<article pages="ARTICLE-pages-cio.xml" section="CFO" />
-		<article pages="ARTICLE-pages-deloitte.xml" type="Deloitte Cio Blog" />
-		<article pages="ARTICLE-pages-deloitte.xml" type="Deloitte Cio Blog Video"/>
-		<article pages="ARTICLE-pages-deloitte.xml" type="Deloitte Cfo Blog" />
-		<article pages="ARTICLE-pages-deloitte.xml" type="Deloitte Cfo Blog Video"/>
-		<article pages="ARTICLE-pages-hots.xml" type="Heard on the Street" />
-		<article pages="ARTICLE-pages-hots.xml" type="Overheard"/>
-		<article pages="ARTICLE-pages-hots.xml" type="Headrd on the Street Other"/>
-		<article pages="ARTICLE-pages-letters.xml" type="Letters"/>
-		<article pages="ARTICLE-pages-off-duty.xml" type="Half Full"/>
-		<article pages="ARTICLE-pages-off-duty.xml" type="Traveler's Tale"/>
-		<article pages="ARTICLE-pages-off-duty.xml" type="Slow Food Fast"/>
-		<article pages="ARTICLE-pages-off-duty.xml" type="Mobile Special-OZ"/>
-		<article pages="ARTICLE-pages-PV-no-rail.xml" type="Mobile Special-PV"/>
-		<article pages="ARTICLE-pages-AHED.xml" type="A-hed"/>
+		<article pages="ARTICLE-pages-cio.xml" />
+		<article pages="ARTICLE-pages-deloitte.xml" />
+		<article pages="ARTICLE-pages-hots.xml" />
+		<article pages="ARTICLE-pages-letters.xml" />
+		<article pages="ARTICLE-pages-off-duty.xml" />
+		<article pages="ARTICLE-pages-PV-no-rail.xml" />
+		<article pages="ARTICLE-pages-AHED.xml" />
 	</article-page-plans>
 	<display-properties>
 		<ads section="CIO" value=";;;" />

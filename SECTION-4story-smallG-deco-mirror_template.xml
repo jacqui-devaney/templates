@@ -8,7 +8,7 @@
 		#b3: {options:{small_headline:true, no_indent:true}},		
 		#b4: {options:{small_headline:true, no_indent:true, no_border:{if: =scale.phone, then:true, else:false}}},
 		#deco: {options: { $switch: [
-				{if: =scale.phone, then: {normal_headline:true, G_image:true, bottom_border:true}},
+				{if: =scale.phone, then: {normal_headline:true, G_image:true, both_border:true}},
 				{if: =portrait, then: {normal_headline:true}},
 				{if: =landscape, then: {normal_headline:true, F_image:{if: =widescreen, then:true, else:false}}}			
 			]}},

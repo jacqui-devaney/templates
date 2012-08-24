@@ -10,7 +10,7 @@
 		},
 		#b2:	{options: {$switch: [
 					{if: =portrait, then:{small_headline:true, left:true, no_indent:true}},
-					{if: =scale.phone, then: {small_headline:true, bind:none, reuse:front}},
+					{if: =scale.phone, then: {small_headline:true, bind:{if: =scale.phone, then:none}, reuse:front}},
 					{if: =landscape, then: {small_headline:true, no_border:{if: =widescreen, then:false, else:true}, no_indent:true}}
 				]}
 		},
@@ -21,11 +21,11 @@
 		]}},
 		#b3:	{options: {if: =portrait,
 					then:{small_headline:true, left:true, no_indent:true},
-					else: {small_headline:true, no_border:{if: =widescreen, then:true, else:false}, no_indent:true, bind:none, reuse:front}
+					else: {small_headline:true, no_border:{if: =widescreen, then:true, else:false}, no_indent:true, bind:{if: =scale.phone, then:none}, reuse:front}
 				}
 		},
 		#b4:	{
-					options:{small_headline:true, left:true, no_indent:true, bind:none, reuse:front} 
+					options:{small_headline:true, left:true, no_indent:true, bind:{if: =scale.phone, then:none}, reuse:front} 
 		}
 	}</style>
 

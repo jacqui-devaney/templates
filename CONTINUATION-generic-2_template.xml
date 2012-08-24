@@ -13,7 +13,7 @@
 	            #b1 : { frame: [0, 0, 256, 874] },
 	            #b2 : { frame: [256, 0, 256, 874] }
 	        }}, 
-			{if: =landmark, then: {
+			{if: =landscape, then: {
 	            #b1 : { frame: [0, 0, 256, 618] },
 	            #b2 : { frame: [256, 0, 256, 618] }        
 	        }}

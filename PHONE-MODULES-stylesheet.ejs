@@ -107,10 +107,13 @@
 		display: { if: =page.count, equals:1, then:none, else:inherit}
 		
 	},
-	#continues: { content: { $switch: [
-		{ if: =app.language, equals: en, then: "Article Continues \u2192" },
-		{ if: =app.language, equals: de, then: "Mehr \u2192" }
-	] }},
+	#continues: { 
+		content: { $switch: [
+			{ if: =app.language, equals: en, then: "Article Continues \u2192" },
+			{ if: =app.language, equals: de, then: "Mehr \u2192" }
+		]},
+		font-name:DJ5Exchange-SemiboldItalic
+	},
 	#mediabucket: {
 		display: {if: =page.mediabucket, then:inherit, else:none}
 	},

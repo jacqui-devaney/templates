@@ -15,7 +15,7 @@
 				]}
 		},
 		#deco: {options: {$switch: [
-			{if: =scale.phone, then: {normal_headline:true, G_image:true}},
+			{if: =scale.phone, then: {normal_headline:true, G_image:true, bottom_border:true}},
 			{if: =portrait, then:{normal_headline:true, F_image:{if: =widescreen, then:true, else:false}}},
 			{if: =landscape, then: {normal_headline:true, no_border:{if: =widescreen, then:true, else:false}, F_image:{if: =scale.small, then:true, else:false}}}
 		]}},

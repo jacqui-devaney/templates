@@ -20,14 +20,6 @@
 					}
 		
 				}},
-				{ if: =options.both_border, then: {
-					#wrapper: {
-					border-width: [1, 0, 1, 0],
-					border-color: #b1aca1,
-					padding: { if: =scale.small, then:[0], else:[0, 0, 10, 0]}
-					}
-		
-				}},
 				{ if: true, then: {
 					#wrapper: {
 						border-width: [1, 0, 0, 0],

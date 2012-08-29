@@ -1,3 +1,4 @@
+
 <jpml id="HIGHLIGHTS_module">
 	<style src="GLOBAL_MODULES-stylesheet.ejs" />
 	<style src="GLOBAL-stylesheet.ejs" />
@@ -66,8 +67,7 @@
 	<style>{
 		if: =scale.phone, then: {
 			.headline: {
-				vertical-align:middle,
-				max-height:30
+				vertical-align:middle
 			},
 			.body: {
 			 	display:none

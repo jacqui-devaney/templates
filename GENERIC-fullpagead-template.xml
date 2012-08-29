@@ -2,7 +2,7 @@
     <style src="GLOBAL-stylesheet.ejs" />
     <style src="PHONE-stylesheet.ejs" />
 	<style>{
-        if: =scale.phone, then: {
+        if: =scale.phone, and: =intent.section, then: {
             #fullpage_container: { 
                 display: none
             }

@@ -9,6 +9,11 @@
 			deco="true"
 			usage="front"
 		/>
+		<template name="FRONT-4story-E-top_template.xml" title="4 story - E Photo" section="FRONT_SECTION" min="4" usage="front"/>
+        <template name="FRONT-4story-F_template.xml" title="4 story - F Photo" section="FRONT_SECTION" min="4" usage="front"/>
+        <template name="FRONT-4story-F-deco_template.xml" title="4 story - F liondoor" section="FRONT_SECTION" min="4" usage="front"/>
+        <template name="FRONT-4story-Vertical-deco_template.xml" title="4 story - Vertical deco" section="FRONT_SECTION" min="4" deco="true" usage="front"/>
+        
 		<!-- END FRONT SECTION -->
 		
 		<!-- BUSINESS AND FINANCE -->

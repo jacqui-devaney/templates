@@ -1,0 +1,13 @@
+<jpml id="ARTICLE-front-H_template">
+    <style>{
+        if: =portrait, then: {
+            #view: { frame: [0, 0, 766, 900] },
+			#index: { frame: [538, 535, 230, 365]}
+        }, else: {
+            #view : { frame: [0, 0, 794, 642] },
+			#index: { frame: [794, 0, 230, 642]}        
+        }
+    }</style>
+    <box id="view" embed="article" module="ARTICLE-front-H_module.xml" />
+    <box id="index" embed="index" />
+</jpml>

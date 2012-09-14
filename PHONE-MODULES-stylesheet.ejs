@@ -109,12 +109,17 @@
 	},
 	#continues: { 
 		content: { $switch: [
-			{ if: =app.language, equals: en, then: "Article Continues \u2192" },
-			{ if: =app.language, equals: de, then: "Mehr \u2192" }
+			{ if: =app.language, equals: en, then: "Article Continues" },
+			{ if: =app.language, equals: de, then: "Mehr" }
 		]},
 		font-name:DJ5Exchange-SemiboldItalic,
 		color:#c74b15
 	},
+	#arrow: {
+		content: { if: =view.direction, equals: vertical, then: "\u2193", else: "\u2192" },
+		font-name:DJ5Exchange-SemiboldItalic,
+		color:#c74b15
+	},	
 	#mediabucket: {
 		display: {if: =page.mediabucket, then:inherit, else:none}
 	},
@@ -123,14 +128,17 @@
 		right: 0, 
 		bottom: 0, 
 		width: 100,
-		position:absolute
+		position:absolute,
+		display:{ if: =view.direction, equals: vertical, then: none, else: inherit }
 	},
 	#pageback: {
 		top: 0, 
 		left: 0, 
 		bottom: 0, 
 		width: 100,
-		position:absolute
+		position:absolute,
+		display:{ if: =view.direction, equals: vertical, then: none, else: inherit }
+		
 	},
 	.opinion_headline: {
 		font-size:25,

@@ -11,7 +11,7 @@
             #mediabucket_container:	{ 
 				frame: [10, 10, 749, 528]
 			},
-            #head:{ padding: [10, 180, 0, 0]},
+            #head:{ padding: [10, 240, 0, 0]},
         	#article_copy:{padding: [0, 243, 0, 0], max-height:290},
             #body_container:{           
 				padding: [10, 0, 0, 20],
@@ -26,7 +26,6 @@
 			.hr: {
 				width:520
 			}
-			
 		
 		}, else: {
         	#mediabucket_container:	{ frame: [28, 110, 749, 512]},

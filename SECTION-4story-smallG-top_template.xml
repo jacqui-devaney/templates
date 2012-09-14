@@ -39,9 +39,6 @@
 	<box id="ad_background" class="ad_light maude unit_ad">
 		<box id="highlight_ad" class="ad-rectangle" embed="advertisement" />
 	</box>
-	<box id="marketdata_background" class="ad_light">
-		<box id="highlight_marketdata" embed="marketdata" />
-	</box>
 	<box id="h1" class="maude unit_highlight" embed="article" module="HIGHLIGHTS_module.xml" />
 	<box id="h2" class="maude unit_highlight" embed="article" module="HIGHLIGHTS_module.xml" />
 

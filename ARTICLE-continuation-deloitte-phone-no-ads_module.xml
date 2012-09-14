@@ -63,7 +63,7 @@
 	<box id="pagenext" embed="pagenext" />
 	<box id="pageback" embed="pageback" />
 	<box id="continues_label">
-		<p><mark id="continues" /></p>
+		<p><mark id="continues" /><mark id="arrow" /></p>
 	</box>
 	<panel id="body_container">
 		<panel class="deloitte_article_body" id="body_continuation" embed="body"/>

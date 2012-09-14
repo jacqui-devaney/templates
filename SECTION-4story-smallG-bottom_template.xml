@@ -9,7 +9,7 @@
 		#b2: {options: { $switch: [
 				{if: =scale.phone, then: {normal_headline:true, fake_deco:true, G_image:true, bottom_border:true}},
 				{if: =portrait, then: {normal_headline:true, fake_deco:true}},
-				{if: =landscape, then: {normal_headline:true, fake_deco:true, F_image:{if: =scale.small, then:true, else:false}}}			
+				{if: =landscape, then: {normal_headline:true, fake_deco:true, F_image:{if: =scale.small, then:true, else:false}, G_image:{if: =scale.small, then:false, else:true}}}			
 			]}},
 		
 		#b3: {

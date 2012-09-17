@@ -35,8 +35,10 @@
 	}</style>
 	<box id="pagenext" embed="pagenext" />
 	<box id="pageback" embed="pageback" />
+	<box id="pagedown" embed="pagenext" />
+	<box id="pageup" embed="pageback" />
 	<box id="continues_label">
-		<p><mark id="continues" /><mark id="arrow" /></p>
+		<p><mark id="continues" /></p>
 	</box>
 	
     <panel id="header_top">

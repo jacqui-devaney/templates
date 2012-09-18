@@ -36,7 +36,7 @@
 			
 		},
 		#body-first-p: {
-			text-indent:0
+			text-indent:{if: =options.indent, then:20, else:0}
 		},
 		#vertical: {
 			display:none

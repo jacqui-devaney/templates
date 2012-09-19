@@ -93,7 +93,7 @@
 			<box id="bottom">
 				<p id="deco_bottom_headline" class="invisible"><span embed="headline" /><mark class="key" /></p>
 				<p id="deco_small_headline" class="invisible"><span embed="headline" /><mark class="key" /></p>			
-				<panel embed="body" class="deco_caption" />
+				<panel class="deco_caption"><p embed="body-first-p" /></panel>
 			</box>
 
 			<box id="deco_container" embed="deco-image">

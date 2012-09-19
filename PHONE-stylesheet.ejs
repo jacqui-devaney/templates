@@ -66,7 +66,7 @@
 	.hidden_tablet: {
 		display: inherit
 	},
-	#marketstrap:	{ frame: [0, 0, =view.width, 18] },
+	#marketstrap:	{ frame: [0, 0, =view.width, { if: =app.version, equals: "4.0.1", then: 22, else: 18}] },
 
 	#whatsnews:	{ display:none },
 	.line: {

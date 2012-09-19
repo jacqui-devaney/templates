@@ -788,6 +788,73 @@
 		/>
 		<!-- END OFF DUTY -->
 		
+		<!-- GATSBY -->
+		<template 
+			name="SECTION-1story-PV_template.xml" 
+			section="GATSBY" 
+			title="PV - (Grey highlights)"
+			min="3" 
+			usage="front" 
+		/>
+		<template 
+			name="SECTION-2story-G-C_template.xml" 
+			section="GATSBY" 
+			title="2 story-G"
+			min="4" 
+			usage="front" 
+		/>
+		<template 
+			name="SECTION-3story-G_template.xml" 
+			section="GATSBY" 
+			title="3 story-G"
+			min="5" 
+			usage="front" 
+		/>
+		<template 
+			name="SECTION-1story-P_template.xml" 
+			section="GATSBY" 
+			title="P-photo"
+			min="3" 
+			usage="front" 
+		/>
+		<template 
+			name="SECTION-1story-PV-white_template.xml" 
+			section="GATSBY" 
+			title="PV- White highlights"
+			min="3" 
+			usage="front" 
+		/>
+		<template 
+			name="SECTION-1story-P-1highlight_template.xml" 
+			section="GATSBY" 
+			title="1 story P - 1 highlight"
+			min="2" 
+			usage="front" 
+		/>
+		<template 
+			name="SECTION-1story-PV-1highlight_template.xml" 
+			section="GATSBY" 
+			title="PV - (1 Grey highlight)"
+			min="2" 
+			usage="front" 
+		/>
+		<template 
+			name="SECTION-1story-PV-1highlight-white_template.xml" 
+			section="GATSBY" 
+			title="PV - (1 White highlight)"
+			min="2" 
+			usage="front" 
+		/>
+		<template 
+			name="SECTION-1story-fullsize-deco.xml" 
+			section="GATSBY" 
+			title="Full size Deco"
+			min="1" 
+			deco="true"
+			usage="front" 
+		/>
+		<!-- END GATSBY -->
+		
 		<!-- PERSONAL JOURNAL -->
 		<template 
 			name="SECTION-1story-PV-white_template.xml" 

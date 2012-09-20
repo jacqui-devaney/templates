@@ -112,25 +112,27 @@
 </xsl:template>
 
 <xsl:template match="p">
-    <p>        
-        <xsl:if test="@type">
-            <xsl:attribute name="class">
-                <xsl:value-of select="@type"/>
-            </xsl:attribute>
+    <xsl:if test="string(.)">
+        <p>        
+            <xsl:if test="@type">
+                <xsl:attribute name="class">
+                    <xsl:value-of select="@type"/>
+                </xsl:attribute>
+            </xsl:if>
+            <xsl:choose>
+                <xsl:when test="not(preceding-sibling::p[string(.) and position()=1])">
+                    <xsl:attribute name="id">body-first-p</xsl:attribute>
+                </xsl:when>
+                <xsl:when test="not(following-sibling::p[position()=last()]) and not(following-sibling::tagline[position()=last()])">
+                    <xsl:attribute name="id">body-last-p</xsl:attribute>
+                </xsl:when>
+            </xsl:choose>
+        <xsl:apply-templates select="node()"/>
+        <xsl:if test="not(following-sibling::p[position()=last()]) and not(following-sibling::tagline[position()=last()])">
+            <mark class="body-bug"/>
         </xsl:if>
-        <xsl:choose>
-            <xsl:when test="not(preceding-sibling::p[position()=1])">
-                <xsl:attribute name="id">body-first-p</xsl:attribute>
-            </xsl:when>
-            <xsl:when test="not(following-sibling::p[position()=last()]) and not(following-sibling::tagline[position()=last()])">
-                <xsl:attribute name="id">body-last-p</xsl:attribute>
-            </xsl:when>
-        </xsl:choose>
-    <xsl:apply-templates select="node()"/>
-    <xsl:if test="not(following-sibling::p[position()=last()]) and not(following-sibling::tagline[position()=last()])">
-        <mark class="body-bug"/>
+        </p>
     </xsl:if>
-    </p>
 </xsl:template>
 
 <!-- We intentionally do not output the byline as part of the article body. -->

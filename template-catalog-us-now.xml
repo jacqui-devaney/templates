@@ -81,21 +81,21 @@
 		<!-- FRIDAY JOURNAL -->
 		<template 
 			name="SECTION-2story-G-C_template.xml"
-			section="HOME" 
+			section="ARENA" 
 			title="2 story-G photo"
 			min="4"
 			usage="front"
 		/>
 		<template 
 			name="SECTION-3story-G_template.xml"
-			section="HOME" 
+			section="ARENA" 
 			title="3 story - G photo"
 			min="5"
 			usage="front"
 		/>
 		<template 
 			name="SECTION-1story-fullsize-deco.xml" 
-			section="HOME" 
+			section="ARENA" 
 			title="Full size Deco"
 			min="1" 
 			deco="true"
@@ -103,21 +103,21 @@
 		/>
 		<template 
 			name="SECTION-1story-PV_template.xml" 
-			section="HOME" 
+			section="ARENA" 
 			title="PV (grey)"
 			min="3" 
 			usage="front" 
 		/>
 		<template 
 			name="SECTION-1story-PV-1highlight_template.xml" 
-			section="HOME" 
+			section="ARENA" 
 			title="PV - 1 highlight (grey)"
 			min="2" 
 			usage="front" 
 		/>
 		<template 
 			name="SECTION-1story-PV-1highlight-white_template.xml" 
-			section="HOME" 
+			section="ARENA" 
 			title="PV - 1 highlight (white)"
 			min="2" 
 			usage="front" 
@@ -125,7 +125,7 @@
 		
 		<template 
 			name="SECTION-1story-P_template.xml" 
-			section="HOME" 
+			section="ARENA" 
 			title="P-photo"
 			min="3" 
 			usage="front" 

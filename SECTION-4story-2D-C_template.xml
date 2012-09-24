@@ -13,7 +13,7 @@
 				{if: =portrait, then: {small_headline:true, show_image:true, bottom:true, no_indent:true}},
 				{if: =landscape, then: {small_headline:true, show_image:{if: =widescreen, then:false, else:true}, bottom:true, no_indent:true}}			
 			]}},
-		#b3: {options: {small_headline:true, show_image:true, bottom:true, no_indent:true}},
+		#b3: {options: {small_headline:true, bottom:true, no_indent:true}},
 		#b4: {options: { $switch: [
 				{if: =scale.phone, then: {small_headline:true, no_border:true}},
 				{if: =portrait, then: {small_headline:true, show_image:true, left:true, bottom:true, no_indent:true}},

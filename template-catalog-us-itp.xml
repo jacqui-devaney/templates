@@ -147,6 +147,29 @@
 			deco="true"
 			usage="front"
 		/>
+        <template 
+			name="FRONT-3story-big-news-G-deco_template.xml"
+			section="FRONT_SECTION" 
+			title="Big News - 3 story with deco"
+			min="4" 
+			deco="true"
+			usage="front"
+		/>
+        <template 
+			name="FRONT-2story-largeG-deco_template.xml"
+			section="FRONT_SECTION" 
+			title="2 story - Large G liondoor"
+			min="2" 
+			deco="true"
+			usage="front"
+		/>
+		<template 
+			name="SECTION-1story-fullsize-deco.xml" 
+			title="Full size Deco"
+			min="1" 
+			deco="true"
+			usage="front"
+		/>
 		
 		<!-- END FRONT SECTION -->
 		
@@ -367,6 +390,14 @@
 			min="3" 
 			usage="front" 
 		/>
+		<template 
+			name="SECTION-1story-P-white_template.xml" 
+			section="MARKETPLACE" 
+			title="P-photo - white highlights"
+			min="3" 
+			usage="front" 
+		/>
+		
 		
 		<!-- END MARKETPLACE -->
 		
@@ -611,6 +642,13 @@
 			min="3" 
 			usage="front" 
 		/>
+		<template 
+			name="SECTION-1story-P-white_template.xml" 
+			section="MONEY_AND_INVESTING" 
+			title="P-photo - white highlights"
+			min="3" 
+			usage="front" 
+		/>
 		
 		<!-- END MONEY AND INVESTING -->
 		
@@ -673,6 +711,14 @@
 			min="2" 
 			usage="front" 
 		/>
+		<template 
+			name="SECTION-1story-P-1highlight-white_template.xml" 
+			section="NEW_YORK" 
+			title="P 1 highlight - white"
+			min="2" 
+			usage="front" 
+		/>
+		
 		<template 
 			name="SECTION-1story-PV-1highlight_template.xml" 
 			section="NEW_YORK" 
@@ -752,6 +798,14 @@
 			usage="front" 
 		/>
 		<template 
+			name="SECTION-1story-P-white_template.xml" 
+			section="OFF_DUTY" 
+			title="P - White Highlights"
+			min="2" 
+			usage="front" 
+		/>
+		
+		<template 
 			name="SECTION-1story-P_template.xml" 
 			section="OFF_DUTY" 
 			title="P-photo"
@@ -772,6 +826,14 @@
 			min="2" 
 			usage="front" 
 		/>
+		<template 
+			name="SECTION-1story-P-1highlight-white_template.xml" 
+			section="OFF_DUTY" 
+			title="1 story P - 1 highlight white"
+			min="2" 
+			usage="front" 
+		/>
+		
 		<template 
 			name="SECTION-1story-PV-1highlight_template.xml" 
 			section="OFF_DUTY" 
@@ -826,6 +888,13 @@
 			usage="front" 
 		/>
 		<template 
+			name="SECTION-1story-P-white_template.xml" 
+			section="MANSION" 
+			title="P - White Highlights"
+			min="2" 
+			usage="front" 
+		
+		<template 
 			name="SECTION-1story-PV-white_template.xml" 
 			section="MANSION" 
 			title="PV- White highlights"
@@ -839,6 +908,14 @@
 			min="2" 
 			usage="front" 
 		/>
+		<template 
+			name="SECTION-1story-P-1highlight-white_template.xml" 
+			section="MANSION" 
+			title="P 1 highlight - white"
+			min="2" 
+			usage="front" 
+		/>
+		
 		<template 
 			name="SECTION-1story-PV-1highlight_template.xml" 
 			section="MANSION" 
@@ -893,6 +970,13 @@
 			usage="front" 
 		/>
 		<template 
+			name="SECTION-1story-P-white_template.xml" 
+			section="PERSONAL_JOURNAL" 
+			title="P-photo - white highlight"
+			min="3" 
+			usage="front" 
+		/>
+		<template 
 			name="SECTION-4story-smallG-deco_template.xml" 
 			section="PERSONAL_JOURNAL" 
 			title="4 story - small G Media liondoor"
@@ -922,6 +1006,13 @@
 			min="2" 
 			usage="front" 
 		/>
+		<template 
+			name="SECTION-1story-P-1highlight-white_template.xml" 
+			section="PERSONAL_JOURNAL" 
+			title="P - 1 Highlight white"
+			min="2" 
+			usage="front" 
+		
 		<template 
 			name="SECTION-1story-PV-1highlight_template.xml" 
 			section="PERSONAL_JOURNAL" 
@@ -983,6 +1074,13 @@
 			usage="front" 
 		/>
 		<template 
+			name="SECTION-1story-P-white_template.xml" 
+			section="REVIEW" 
+			title="P-photo - white highlights"
+			min="3" 
+			usage="front" 
+		/>
+		<template 
 			name="SECTION-1story-PV-white_template.xml" 
 			section="REVIEW" 
 			title="PV - White highlights"
@@ -993,6 +1091,13 @@
 			name="SECTION-1story-P-1highlight_template.xml" 
 			section="REVIEW" 
 			title="P 1 highlight"
+			min="2" 
+			usage="front" 
+		/>
+		<template 
+			name="SECTION-1story-P-1highlight-white_template.xml" 
+			section="REVIEW" 
+			title="P 1 highlight white"
 			min="2" 
 			usage="front" 
 		/>
@@ -1050,6 +1155,13 @@
 			usage="front" 
 		/>
 		<template 
+			name="SECTION-1story-P-white_template.xml" 
+			section="THE_JOURNAL_REPORT" 
+			title="P-photo - white highlight"
+			min="3" 
+			usage="front" 
+		/>
+		<template 
 			name="SECTION-1story-PV_template.xml" 
 			section="THE_JOURNAL_REPORT" 
 			title="PV - Grey highlights"
@@ -1060,6 +1172,13 @@
 			name="SECTION-1story-P-1highlight_template.xml" 
 			section="THE_JOURNAL_REPORT" 
 			title="P 1 highlight"
+			min="2" 
+			usage="front" 
+		/>
+		<template 
+			name="SECTION-1story-P-1highlight-white_template.xml" 
+			section="THE_JOURNAL_REPORT" 
+			title="P 1 highlight white"
 			min="2" 
 			usage="front" 
 		/>
@@ -1116,6 +1235,13 @@
 			usage="front" 
 		/>
 		<template 
+			name="SECTION-1story-P-white_template.xml" 
+			section="FRIDAY_JOURNAL" 
+			title="P-photo - white highlight"
+			min="3" 
+			usage="front" 
+		/>
+		<template 
 			name="SECTION-1story-PV_template.xml" 
 			section="FRIDAY_JOURNAL" 
 			title="PV - Grey highlights"
@@ -1126,6 +1252,13 @@
 			name="SECTION-1story-P-1highlight_template.xml" 
 			section="FRIDAY_JOURNAL" 
 			title="P 1 highlight"
+			min="2" 
+			usage="front" 
+		/>
+		<template 
+			name="SECTION-1story-P-1highlight-white_template.xml" 
+			section="FRIDAY_JOURNAL" 
+			title="P 1 highlight white"
 			min="2" 
 			usage="front" 
 		/>
@@ -1183,6 +1316,13 @@
 			usage="front" 
 		/>
 		<template 
+			name="SECTION-1story-P-white_template.xml" 
+			section="ARENA" 
+			title="P-photo - white highlight"
+			min="3" 
+			usage="front" 
+		/>
+		<template 
 			name="SECTION-1story-PV_template.xml" 
 			section="ARENA" 
 			title="PV - Grey highlights"
@@ -1193,6 +1333,13 @@
 			name="SECTION-1story-P-1highlight_template.xml" 
 			section="ARENA" 
 			title="P 1 highlight"
+			min="2" 
+			usage="front" 
+		/>
+		<template 
+			name="SECTION-1story-P-1highlight-white_template.xml" 
+			section="ARENA" 
+			title="P 1 highlight - white"
 			min="2" 
 			usage="front" 
 		/>
@@ -1261,6 +1408,14 @@
 			usage="front" 
 		/>
 		<template 
+			name="SECTION-1story-P-white_template.xml" 
+			section="WEEKEND_JOURNAL" 
+			title="P-photo - white highlights"
+			min="3" 
+			usage="front" 
+		/>
+		
+		<template 
 			name="SECTION-1story-fullsize-deco.xml" 
 			section="WEEKEND_JOURNAL" 
 			title="Full size Deco"
@@ -1286,6 +1441,14 @@
 			usage="front" 
 		/>
 		<template 
+			name="SECTION-1story-P-white_template.xml" 
+			section="WSJ_MAGAZINE" 
+			title="P-photo - white highlights"
+			min="3" 
+			usage="front" 
+		/>
+		
+		<template 
 			name="SECTION-2story-G-C_template.xml" 
 			section="WSJ_MAGAZINE" 
 			title="2 story - G"
@@ -1296,6 +1459,13 @@
 			name="SECTION-1story-P-1highlight_template.xml" 
 			section="WSJ_MAGAZINE" 
 			title="P - 1 highlight"
+			min="2" 
+			usage="front" 
+		/>
+		<template 
+			name="SECTION-1story-P-1highlight-white_template.xml" 
+			section="WSJ_MAGAZINE" 
+			title="P 1 highlight"
 			min="2" 
 			usage="front" 
 		/>
@@ -1728,6 +1898,16 @@
 			usage="continuation" 
 			page="2"
 		/>
+		<template 
+			name="FRONT-2story-largeG-deco_template.xml"
+			section="FRONT_SECTION" 
+			title="2 story - Large G liondoor"
+			min="2" 
+			deco="true"
+			usage="continuation"
+			page="2"
+		/>
+        
 		
 		<!-- END FANCY CONTINUATION -->
 		

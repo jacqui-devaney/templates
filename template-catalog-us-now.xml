@@ -13,7 +13,15 @@
         <template name="FRONT-4story-F_template.xml" title="4 story - F Photo" section="FRONT_SECTION" min="4" usage="front"/>
         <template name="FRONT-4story-F-deco_template.xml" title="4 story - F liondoor" section="FRONT_SECTION" min="4" usage="front"/>
         <template name="FRONT-4story-Vertical-deco_template.xml" title="4 story - Vertical deco" section="FRONT_SECTION" min="4" deco="true" usage="front"/>
-        
+        <template 
+			name="FRONT-3story-big-news-G-deco_template.xml"
+			section="FRONT_SECTION" 
+			title="Big News - 3 story with deco"
+			min="4" 
+			deco="true"
+			usage="front"
+		/>
+		
 		<!-- END FRONT SECTION -->
 		
 		<!-- BUSINESS AND FINANCE -->
@@ -208,6 +216,13 @@
 			usage="front" 
 		/>
 		<template 
+			name="SECTION-1story-P-white_template.xml" 
+			section="FRIDAY_JOURNAL" 
+			title="P - White Highlights"
+			min="2" 
+			usage="front" 
+		
+		<template 
 			name="SECTION-1story-PV_template.xml" 
 			section="FRIDAY_JOURNAL" 
 			title="PV - Grey highlights"
@@ -221,6 +236,15 @@
 			min="2" 
 			usage="front" 
 		/>
+		<template 
+			name="SECTION-1story-P-1highlight-white_template.xml" 
+			section="FRIDAY_JOURNAL" 
+			title="P 1 highlight - white"
+			min="2" 
+			usage="front" 
+		/>
+		/>
+		
 		<template 
 			name="SECTION-1story-PV-1highlight_template.xml" 
 			section="FRIDAY_JOURNAL" 

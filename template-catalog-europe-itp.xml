@@ -301,6 +301,14 @@
 			usage="front" 
 		/>
 		<template 
+			name="SECTION-1story-P-1highlight-white_template.xml" 
+			section="THE_JOURNAL_REPORT" 
+			title="P 1 highlight - white"
+			min="2" 
+			usage="front" 
+		/>
+		
+		<template 
 			name="SECTION-1story-PV-1highlight_template.xml" 
 			section="THE_JOURNAL_REPORT" 
 			title="PV - (1 highlight Grey)"
@@ -368,6 +376,14 @@
 			usage="front" 
 		/>
 		<template 
+			name="SECTION-1story-P-1highlight-white_template.xml" 
+			section="LIFE_AND_STYLE" 
+			title="P 1 highlight - white"
+			min="2" 
+			usage="front" 
+		/>
+		
+		<template 
 			name="SECTION-1story-PV-1highlight_template.xml" 
 			title="PV photo - 1 highight (grey)" 
 			section="LIFE_AND_STYLE" 
@@ -430,6 +446,14 @@
 			min="2" 
 			usage="front" 
 		/>
+		<template 
+			name="SECTION-1story-P-1highlight-white_template.xml" 
+			section="WSJ_MAGAZINE" 
+			title="P 1 highlight - white"
+			min="2" 
+			usage="front" 
+		/>
+		
 		<template 
 			name="SECTION-1story-PV-1highlight_template.xml" 
 			section="WSJ_MAGAZINE" 

@@ -105,6 +105,14 @@
 			min="3" 
 			usage="front" 
 		/>
+		<template 
+			name="SECTION-1story-P-white_template.xml" 
+			section="BUSINESS_AND_FINANCE" 
+			title="P-photo - white highlights"
+			min="3" 
+			usage="front" 
+		/>
+		
 		<!-- END BUSINESS AND FINANCE -->
 		
 		<!-- FRIDAY JOURNAL -->
@@ -306,6 +314,14 @@
 			min="3" 
 			usage="front" 
 		/>
+		<template 
+			name="SECTION-1story-P-white_template.xml" 
+			section="LIFE_AND_STYLE" 
+			title="P-photo - white highlights"
+			min="3" 
+			usage="front" 
+		/>
+		
 		<!-- END LIFE AND STYLE -->
 
 		<!-- EUROPE SECTION -->
@@ -413,6 +429,14 @@
 			min="3" 
 			usage="front" 
 		/>
+		<template 
+			name="SECTION-1story-P-white_template.xml" 
+			section="EUROPE" 
+			title="P-photo - white highlights"
+			min="3" 
+			usage="front" 
+		/>
+		
 		<!-- END EUROPE SECTION -->
 		
 		<!-- REVIEW -->
@@ -479,6 +503,14 @@
 			min="3"
 			usage="front"
 		/>
+		<template 
+			name="SECTION-1story-P-white_template.xml" 
+			section="SPECIAL_REPORT" 
+			title="P-photo - white highlights"
+			min="3" 
+			usage="front" 
+		/>
+		
 		<template 
 			name="SECTION-4story-smallG-top_template.xml" 
 			section="SPECIAL_REPORT" 
@@ -580,6 +612,14 @@
 			usage="front"
 		/>
 		<template 
+			name="SECTION-1story-P-white_template.xml" 
+			section="SPECIAL_REPORT_TWO" 
+			title="P-photo - white highlights"
+			min="3" 
+			usage="front" 
+		/>
+		
+		<template 
 			name="SECTION-4story-smallG-top_template.xml" 
 			section="SPECIAL_REPORT_TWO" 
 			title="4 story - G photo"
@@ -680,6 +720,14 @@
 			min="3"
 			usage="front"
 		/>
+		<template 
+			name="SECTION-1story-P-white_template.xml" 
+			section="THE_JOURNAL_REPORT" 
+			title="OLYMPICS P-photo - white highlights"
+			min="3" 
+			usage="front" 
+		/>
+		
 		<template 
 			name="SECTION-4story-smallG-top_template.xml" 
 			section="THE_JOURNAL_REPORT" 

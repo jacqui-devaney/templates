@@ -1,0 +1,46 @@
+<jpml id="SECTION-1story-P-1highlight-white_template">
+	<style src="GLOBAL-stylesheet.ejs" />
+	<style src="SECTION-stylesheet.ejs" />
+	<style src="PHONE-stylesheet.ejs" />
+	<style>{
+		#b1: {options: { $switch: [
+				{if: =scale.phone, then: {}},
+				{if: =portrait, then: {P_image:true}},
+				{if: =landscape, then: {F_image:{if: =widescreen, then:true, else:false}, P_image:{if: =widescreen, then:false, else:true}}}			
+			]}},
+		#h3: {options:{single:true, indent:true, no_border:{if: =scale.phone, then:true, else:false}}}
+		
+	}</style>
+	<style>{
+		$switch: [
+			{if: =scale.phone, then: {
+			
+			}},
+			{if: =portrait, then: {
+				#b1:	{ 
+					frame: {$switch: [
+						{if: =widescreen, then: [10, 0, 749, 620]},
+						{if: =scale.large, then: [10, 0, 749, 620]}
+					]}
+				}
+			}}, 
+			{if: =landscape, then: {
+				#b1:	{ 
+					frame: {$switch: [
+						{if: =widescreen, then: [18, 0, 749, 500]},
+						{if: =scale.large, then: [18, 0, 749, 620]}
+					]}}
+			
+			}}
+		]
+	}</style>
+	
+	<box id="b1" embed="article" class="maude unit_166" module="LARGE-hed-dek-image_module.xml" />
+	<box id="h3" embed="article" class="maude unit_highlight highlight_white" module="HIGHLIGHTS_module.xml" />
+	<box id="ad_background" class="ad_light maude unit_ad">
+		<box id="highlight_ad" class="ad-rectangle" embed="advertisement" />
+	</box>
+	
+</jpml>
+
+

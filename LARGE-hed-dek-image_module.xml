@@ -16,13 +16,12 @@
 			
             anchor-y:bottom,
 			image-scale: {$max:[1,{$divide:[=view.width, 499]}]}
-
-            
 		},
         
 		#text: {padding: [8, 0, 8, 0]},
 		#image_wrapper: {display:none},
-		#headline: {display:none}
+		#headline: {display:none},
+		#body: {display:none}
 		
 	}</style>
 	<style>{
@@ -52,7 +51,9 @@
 			},
 			.large: {display:none},
 			#text: {display:none},
-			#headline: {display:inherit}
+			#headline: {display:inherit},
+			.large_dek: {display:none},
+			#body: {display:inherit}
 			
 		}, else:{}
 	}</style>
@@ -67,7 +68,10 @@
 	<panel id="headline">
 		<p id="large_headline" class="invisible"><span embed="headline" /><mark class="key" /></p>
 		<h2 class="large_dek"><span embed="subhed" /></h2>
-	</panel>
+        <panel id="body">
+            <panel class="body" embed="body"/>
+        </panel>
+    </panel>
 
 
 

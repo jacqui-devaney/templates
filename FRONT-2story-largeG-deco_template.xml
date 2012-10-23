@@ -1,0 +1,81 @@
+<jpml id="FRONT-2story-largeG-deco_template">
+	<style src="GLOBAL-stylesheet.ejs" />
+	<style src="FRONT-stylesheet.ejs" />
+	<style> {
+		
+		if: =portrait, then: {
+			#b1:	{ 
+					frame: {$switch: [
+						{if: =widescreen, then: [194, 395, 285, 480]},
+						{if: =scale.large, then: [190, 482, 285, 394]}
+					]},
+				options:{large_headline:true, byline:true} 
+			},
+			#deco:	{ 
+					frame: {$switch: [
+						{if: =widescreen, then: [195, 28, 569, 367]},
+						{if: =scale.large, then: [195, 26, 569, 457]}
+					]},
+					options:{normal_headline:true, no_caption:true, no_border:true} 
+			},
+			#b2:	{ 
+					frame: {$switch: [
+						{if: =widescreen, then: [481, 395, 285, 480]},
+						{if: =scale.large, then: [481, 482, 285, 394]}
+					]},
+					options:{small_headline:true, byline:true, two_columns:{if: =scale.small, then:false, else:true}}
+					
+			}
+		}, else: {
+			#whatsnews:		{ frame: [11, 34, 183, 585], options: { expanded-frame: [
+				{$multiply:[=scale.pagex, 3]}, 
+				{$multiply:[=scale.pagey, 34]}, 
+				{$multiply:[=scale.pagex, 550]}, 
+				{$multiply:[=scale.pagey, 585]}
+			] } },
+			#ad_background: { 
+					frame: {$switch: [
+						{if: =widescreen, then: [844, 422, 182, 195]},
+						{if: =scale.large, then: [807, 422, 182, 195]}
+					]}
+				},
+					
+			
+			#b1:	{ 
+						frame: {$switch: [
+							{if: =widescreen, then: [205, 411, 618, 207]},
+							{if: =scale.large, then: [205, 471, 571, 148]}
+						]},
+						options:{large_headline:true, byline:true, two_columns:{if: =widescreen, then:true, else:false}} 
+			},
+			#deco:	{ 
+						frame: {$switch: [
+							{if: =widescreen, then: [206, 26, 618, 385]},
+							{if: =scale.large, then: [206, 26, 569, 445]}
+						]},
+						options:{normal_headline:true, F_image:{if: =widescreen, then:true, else:false}, no_caption:true, no_border:true} 
+			},
+			#b2:	{ 
+						frame: {$switch: [
+							{if: =widescreen, then: [834, 32, 190, 390]},
+							{if: =scale.large, then: [787, 32, 237, 386]}
+						]},
+						options:{small_headline:true, byline:{if: =scale.small, then:false, else:true}, no_border:true, left:true, no_indent:true}
+			}
+			
+		}
+	
+	} </style>
+	
+	<box id="marketstrap" embed="marketstrap" />
+
+	<box id="whatsnews" embed="whatsnews" />
+	<box id="ad_background" class="front_ad">
+		<box id="ad" class="ad-rectangle" embed="advertisement" />
+	</box>
+	<box id="deco" embed="article" module="DECO_module.xml" options="G_size" />
+	<box id="b1" embed="article" module="FRONT-NO-IMAGE_module.xml" />
+	<box id="b2" embed="article" module="AHED_module.xml" />
+	
+</jpml>
+

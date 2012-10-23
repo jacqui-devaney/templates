@@ -1,0 +1,103 @@
+<jpml id="FRONT-3story-big-news-G-deco_template">
+	<style src="GLOBAL-stylesheet.ejs" />
+	<style src="FRONT-stylesheet.ejs" />
+	<style src="PHONE-stylesheet.ejs" />
+	<style>{
+		#b1: 	{options: {$switch:[
+					{if: =scale.phone, then: {large_headline:true, no_border:true, top_align:true, show_body:true}},
+					{if: =portrait, then:{bignews_big_headline:true, no_border:true, byline:{if: =scale.small, then:false, else:true}}},
+					{if: =landscape, then: {bignews_large_headline:{if: =scale.small, then:false, else:true}, bignews_small_headline:{if: =scale.small, then:true, else:false}, no_border:true, byline:{if: =scale.small, then:false, else:true}}}
+					
+		]}},
+		#b2:	{options: {$switch: [
+					{if: =scale.phone, then: {small_headline:true, bind:{if: =scale.phone, then:none}, reuse:front}},
+					{if: =portrait, then:{small_headline:true, left:true, no_indent:true}},
+					{if: =landscape, then: {small_headline:true, no_indent:true}}
+				]}
+		},
+		#deco: {options: {$switch: [
+			{if: =scale.phone, then: {normal_headline:true, G_image:true, bottom_border:true}},
+			{if: =portrait, then:{normal_headline:true, no_caption:true, G-tall_image:true}},
+			{if: =landscape, then: {normal_headline:true, no_border:{if: =widescreen, then:true, else:false}, no_caption:true, G-tall_image:{if: =scale.small, then:false, else:true},  F_image:{if: =scale.small, then:true, else:false}}}
+		]}},
+		#b3:	{options: {if: =portrait,
+					then:{small_headline:true, left:true, no_indent:true},
+					else: {small_headline:true, no_indent:true, bind:{if: =scale.phone, then:none}, reuse:front}
+				}
+		}
+	}</style>
+
+	<style> {
+		$switch: [
+			{if: =scale.phone, then: {
+	        }},
+	        {if: =portrait, then: {
+				#b1:	{ 
+							frame: {$switch: [
+								{if: =widescreen, then: [194, 26, 571, 234]},
+								{if: =scale.large, then: [194, 26, 571, 200]}
+						]}
+				},
+				#deco:	{ 
+							frame: {$switch: [
+								{if: =widescreen, then: [194, 261, 569, 367]},
+								{if: =scale.large, then: [195, 228, 569, 457]}
+						]}
+				},
+				#b2:	{ 
+							frame: {$switch: [
+								{if: =widescreen, then: [194, 628, 280, 248]},
+								{if: =scale.large, then: [194, 685, 280, 190]}
+						]}
+				},
+				#b3:	{ 
+							frame: {$switch: [
+								{if: =widescreen, then: [485, 628, 280, 248]},
+								{if: =scale.large, then: [485, 685, 280, 190]}
+							]}
+				}
+			
+			}},
+			{if: =landscape, then: {
+				#b1:	{ 
+							frame: {$switch: [
+								{if: =widescreen, then: [205, 28, 280, 590]},
+								{if: =scale.large, then: [205, 26, 820, 137]}
+							]}
+				},
+				#deco:	{
+				 			frame: {$switch: [
+								{if: =widescreen, then: [496, 28, 527, 358]},
+								{if: =scale.large, then: [205, 163, 569, 457]}
+							]}
+				},
+				#b2:	{ 
+							frame: {$switch: [
+								{if: =widescreen, then: [496, 386, 260, 235]},
+								{if: =scale.large, then: [787, 163, 237, 228]}
+							]}
+				},
+				#b3:	{ 
+							frame: {$switch: [
+								{if: =widescreen, then: [763, 386, 260, 235]},
+								{if: =scale.large, then: [787, 391, 237, 228]}
+							]} 
+				}
+			}}
+		]
+	} </style>
+	
+	<box class="maude" id="marketstrap" embed="marketstrap" />
+	<box class="maude unit_166" id="b1" embed="article" module="FRONT-NO-IMAGE_module.xml" />
+	<box class="maude unit_50" id="b2" embed="article" module="FRONT-NO-IMAGE_module.xml" />
+	<box id="whatsnews" embed="whatsnews" />
+	<box id="whatsnews_wrapper">
+		<box id="whatsnews_phone" embed="whatsnews_button" />
+	</box>
+	<box class="maude unit_50" id="b3" embed="article" module="FRONT-NO-IMAGE_module.xml" />
+	<box class="maude unit_ad front_ad" id="ad_background">
+		<box id="ad" class="ad-rectangle" embed="advertisement" />
+	</box>
+	<box class="maude unit_G_deco" id="deco" embed="article" module="DECO_module.xml" />
+	
+</jpml>

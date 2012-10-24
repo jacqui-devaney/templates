@@ -6,7 +6,7 @@
 		#b1: 	{options: {$switch:[
 					{if: =scale.phone, then: {large_headline:true, no_border:true, top_align:true, show_body:true}},
 					{if: =portrait, then:{bignews_big_headline:true, no_border:true, byline:{if: =scale.small, then:false, else:true}}},
-					{if: =landscape, then: {bignews_large_headline:{if: =scale.small, then:false, else:true}, bignews_small_headline:{if: =scale.small, then:true, else:false}, no_border:true, byline:{if: =scale.small, then:false, else:true}}}
+					{if: =landscape, then: {large_headline:true, no_border:true, byline:{if: =scale.small, then:false, else:true}}}
 					
 		]}},
 		#b2:	{options: {$switch: [

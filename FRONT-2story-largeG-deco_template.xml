@@ -9,7 +9,7 @@
 						{if: =widescreen, then: [194, 395, 285, 480]},
 						{if: =scale.large, then: [190, 482, 285, 394]}
 					]},
-				options:{large_headline:true, byline:true} 
+				options:{small_headline:true, byline:true} 
 			},
 			#deco:	{ 
 					frame: {$switch: [
@@ -46,12 +46,12 @@
 							{if: =widescreen, then: [205, 411, 618, 207]},
 							{if: =scale.large, then: [205, 471, 571, 148]}
 						]},
-						options:{large_headline:true, byline:true, two_columns:{if: =widescreen, then:true, else:false}} 
+						options:{small_headline:true, byline:true, two_columns:{if: =widescreen, then:true, else:false}} 
 			},
 			#deco:	{ 
 						frame: {$switch: [
 							{if: =widescreen, then: [206, 26, 618, 385]},
-							{if: =scale.large, then: [206, 26, 569, 445]}
+							{if: =scale.large, then: [206, 26, 569, 457]}
 						]},
 						options:{normal_headline:true, F_image:{if: =widescreen, then:true, else:false}, no_caption:true, no_border:true} 
 			},

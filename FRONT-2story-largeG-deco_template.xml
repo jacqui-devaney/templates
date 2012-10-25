@@ -46,7 +46,7 @@
 							{if: =widescreen, then: [205, 411, 618, 207]},
 							{if: =scale.large, then: [205, 471, 571, 148]}
 						]},
-						options:{small_headline:true, byline:true, two_columns:{if: =widescreen, then:true, else:false}} 
+						options:{small_headline:true, byline:true, hide_body:{if: =scale.small, then:true, else:false}, two_columns:{if: =widescreen, then:true, else:false}} 
 			},
 			#deco:	{ 
 						frame: {$switch: [

@@ -27,6 +27,7 @@
 					
 				]},
 	            column-gutter: 20,
+				display:{if: =options.hide_body, then:none, else:inherit},
 				padding: [0, 0, {if: =options.bottom, then:15, else:10}, 0]
 	        }},
 			{#body_container: { padding: [0, 8]}},

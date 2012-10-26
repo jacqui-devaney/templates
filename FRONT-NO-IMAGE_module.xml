@@ -23,7 +23,7 @@
 			{#body: { 
 	            column-count: {$switch: [
 					{if: =widescreen, then: { if: =options.two_columns, then:2, else:1 }},
-					{if: =scale.large, then: {$divide: [=view.width, {$multiply:[245, =scale.dpi]}]}}
+					{if: =scale.large, then: {if: =options.static_columns, then:2, else:{$divide: [=view.width, {$multiply:[245, =scale.dpi]}]}}}
 					
 				]},
 	            column-gutter: 20,

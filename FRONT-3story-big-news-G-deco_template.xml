@@ -6,7 +6,7 @@
 		#b1: 	{options: {$switch:[
 					{if: =scale.phone, then: {large_headline:true, no_border:true, top_align:true, show_body:true}},
 					{if: =portrait, then:{bignews_big_headline:true, no_border:true, byline:{if: =scale.small, then:false, else:true}}},
-					{if: =landscape, then: {large_headline:true, no_border:true, byline:{if: =scale.small, then:false, else:true}}}
+					{if: =landscape, then: {large_headline:true, no_border:true, byline:{if: =scale.small, then:false, else:true}, static_columns:true}}
 					
 		]}},
 		#b2:	{options: {$switch: [
@@ -17,8 +17,8 @@
 		},
 		#deco: {options: {$switch: [
 			{if: =scale.phone, then: {normal_headline:true, G_image:true, bottom_border:true}},
-			{if: =portrait, then:{normal_headline:true, no_caption:true, G-tall_image:true}},
-			{if: =landscape, then: {normal_headline:true, no_border:{if: =widescreen, then:true, else:false}, no_caption:true, G-tall_image:{if: =scale.small, then:false, else:true},  F_image:{if: =scale.small, then:true, else:false}}}
+			{if: =portrait, then:{no_caption:true, G-tall_image:true}},
+			{if: =landscape, then: {no_border:{if: =widescreen, then:true, else:false}, no_caption:true, G-tall_image:{if: =scale.small, then:false, else:true},  F_image:{if: =scale.small, then:true, else:false}}}
 		]}},
 		#b3:	{options: {if: =portrait,
 					then:{small_headline:true, left:true, no_indent:true},

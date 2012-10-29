@@ -88,7 +88,11 @@
 							{ if: =options.FULL-land_image, then: {match: { width:1024, height:620 } } },
 							{ if: =options.FULL-Wland_image, then: {match: { width:1280, height:597 } } },
 							{ if: =options.FULL-port_image, then: {match: { width:768, height:876 } } },
-							{ if: =options.FULL-Wport_image, then: {match: { width:800, height:1077 } } }
+							{ if: =options.FULL-Wport_image, then: {match: { width:800, height:1077 } } },
+							{ if: =options.F_image, then: {match: { width:571, height:226, min-height:226 } } },
+							{ if: =options.DV_image, then: {match: { width:262, height:394, min-height:394 } } },
+							{ if: =options.HV_image, then: {match: { width:293, height:439, min-height:439 } } }
+							
 						]
 					}
 				}},

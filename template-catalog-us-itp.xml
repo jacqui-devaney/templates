@@ -164,8 +164,17 @@
 			usage="front"
 		/>
 		<template 
+			name="SECTION-2story-fullsize-deco_template.xml" 
+			title="Full size Deco - Layered"
+			section="FRONT_SECTION" 
+			min="2" 
+			deco="true"
+			usage="front"
+		/>
+		<template 
 			name="SECTION-1story-fullsize-deco.xml" 
 			title="Full size Deco"
+			section="FRONT_SECTION" 
 			min="1" 
 			deco="true"
 			usage="front"

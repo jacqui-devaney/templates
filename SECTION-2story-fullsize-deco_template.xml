@@ -1,0 +1,66 @@
+<jpml id="SECTION-2story-fullsize-deco_template">
+	<style src="GLOBAL-stylesheet.ejs" />
+	<style src="SECTION-stylesheet.ejs" />
+	<style>{
+		if: =portrait, then: {
+			#deco:	{ 
+				frame: [0, 0, 768, 876], 
+				options:{FULL-port_image:{if: =widescreen, then:false, else:true}, FULL-Wport_image:{if: =widescreen, then:true, else:false}}
+			},
+			#deco2:	{ 
+				frame: [0, 0, 768, 876], 
+				options:{FULL-port_image:{if: =widescreen, then:false, else:true}, FULL-Wport_image:{if: =widescreen, then:true, else:false}}
+			} 
+		}, else: {
+			#deco:	{ 
+				frame: [0, -1, 1024, 620], 
+				options: {FULL-land_image:{if: =widescreen, then:false, else:true}, FULL-Wland_image:{if: =widescreen, then:true, else:false}}
+			},
+			#deco2:	{ 
+				frame: [0, 392, 571, 226], 
+				options: {F_image:true},
+				display:{if: =article.type, equals: "Deco Summary Liondoor F Bottom Left", then:inherit, else:none}
+			},
+			#deco3:	{ 
+				frame: [450, 392, 571, 226], 
+				options: {F_image:true},
+				display:{if: =article.type, equals: "Deco Summary Liondoor F Bottom Right", then:inherit, else:none}
+			},
+			#deco4:	{ 
+				frame: [0, 160, 262, 394], 
+				options: {DV_image:true},
+				display:{if: =article.type, equals: "Deco Summary Liondoor DV Left", then:inherit, else:none}
+			},
+			#deco5:	{ 
+				frame: [0, 155, 293, 439], 
+				options: {DV_image:true},
+				display:{if: =article.type, equals: "Deco Summary Liondoor HV Left", then:inherit, else:none}
+			},
+			#deco6:	{ 
+				frame: [760, 160, 262, 394], 
+				options: {DV_image:true},
+				display:{if: =article.type, equals: "Deco Summary Liondoor DV Right", then:none, else:inherit}
+			},
+			#deco7:	{ 
+				frame: [730, 155, 293, 439], 
+				options: {DV_image:true},
+				display:{if: =article.type, equals: "Deco Summary Liondoor HV Right", then:inherit, else:none}
+			}
+			
+			
+			
+			
+		}
+	}</style>
+	
+	<box id="deco" embed="article" module="IMAGE-only_module.xml" />
+	<box id="deco2" embed="article" module="IMAGE-only_module.xml" />
+	<box id="deco3" embed="article" module="IMAGE-only_module.xml" />
+	<box id="deco4" embed="article" module="IMAGE-only_module.xml" />
+	<box id="deco5" embed="article" module="IMAGE-only_module.xml" />
+	<box id="deco6" embed="article" module="IMAGE-only_module.xml" />
+	<box id="deco7" embed="article" module="IMAGE-only_module.xml" />
+	
+
+	
+</jpml>

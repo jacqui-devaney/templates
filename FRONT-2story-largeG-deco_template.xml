@@ -60,7 +60,7 @@
 							{if: =widescreen, then: [834, 32, 190, 390]},
 							{if: =scale.large, then: [787, 32, 237, 386]}
 						]},
-						options:{small_headline:true, byline:{if: =scale.small, then:false, else:true}, no_border:true, left:true, no_indent:true}
+						options:{small_headline:true, dek:{if: =scale.small, then:true, else:false}, byline:{if: =scale.small, then:false, else:true}, no_border:true, left:true, no_indent:true}
 			}
 			
 		}

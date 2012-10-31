@@ -10,32 +10,32 @@
 			#deco2:	{ 
 				frame: [0, 692, 571, 226], 
 				options: {F_image:true},
-				display:{if: =article.type, equals: "Deco Summary Liondoor F Bottom Left", then:inherit, else:none}
+				display:{if: =article.type, equals: "Deco Summary Liondoor FrontCont2", then:inherit, else:none}
 			},
 			#deco3:	{ 
 				frame: [307, 692, 571, 226], 
 				options: {F_image:true},
-				display:{if: =article.type, equals: "Deco Summary Liondoor F Bottom Right", then:inherit, else:none}
+				display:{if: =article.type, equals: "MobileDeco Layer F Right", then:inherit, else:none}
 			},
 			#deco4:	{ 
 				frame: [0, 160, 262, 394], 
 				options: {DV_image:true},
-				display:{if: =article.type, equals: "Deco Summary Liondoor DV Left", then:inherit, else:none}
+				display:{if: =article.type, equals: "MobileDeco Layer DV Left", then:inherit, else:none}
 			},
 			#deco5:	{ 
 				frame: [0, 218, 293, 439], 
 				options: {DV_image:true},
-				display:{if: =article.type, equals: "Deco Summary Liondoor HV Left", then:inherit, else:none}
+				display:{if: =article.type, equals: "Deco Summary Liondoor Friday Journal", then:inherit, else:none}
 			},
 			#deco6:	{ 
 				frame: [378, 240, 262, 394], 
 				options: {DV_image:true},
-				display:{if: =article.type, equals: "Deco Summary Liondoor DV Right", then:none, else:inherit}
+				display:{if: =article.type, equals: "MobileDeco Layer DV Right", then:none, else:inherit}
 			},
 			#deco7:	{ 
 				frame: [494, 218, 293, 439], 
 				options: {DV_image:true},
-				display:{if: =article.type, equals: "Deco Summary Liondoor HV Right", then:inherit, else:none}
+				display:{if: =article.type, equals: "MobileDeco Layer HV Right", then:inherit, else:none}
 			}
 		}, else: {
 			#deco:	{ 
@@ -45,22 +45,22 @@
 			#deco2:	{ 
 				frame: [0, 392, 571, 226], 
 				options: {F_image:true},
-				display:{if: =article.type, equals: "Deco Summary Liondoor F Bottom Left", then:inherit, else:none}
+				display:{if: =article.type, equals: "Deco Summary Liondoor FrontCont2", then:inherit, else:none}
 			},
 			#deco3:	{ 
 				frame: [450, 392, 571, 226], 
 				options: {F_image:true},
-				display:{if: =article.type, equals: "Deco Summary Liondoor F Bottom Right", then:inherit, else:none}
+				display:{if: =article.type, equals: "MobileDeco Layer F Right", then:inherit, else:none}
 			},
 			#deco4:	{ 
 				frame: [0, 160, 262, 394], 
 				options: {DV_image:true},
-				display:{if: =article.type, equals: "Deco Summary Liondoor DV Left", then:inherit, else:none}
+				display:{if: =article.type, equals: "MobileDeco Layer DV Left", then:inherit, else:none}
 			},
 			#deco5:	{ 
 				frame: [0, 155, 293, 439], 
 				options: {DV_image:true},
-				display:{if: =article.type, equals: "Deco Summary Liondoor HV Left", then:inherit, else:none}
+				display:{if: =article.type, equals: "Deco Summary Liondoor Friday Journal", then:inherit, else:none}
 			},
 			#deco6:	{ 
 				frame: [760, 160, 262, 394], 
@@ -70,7 +70,7 @@
 			#deco7:	{ 
 				frame: [730, 155, 293, 439], 
 				options: {DV_image:true},
-				display:{if: =article.type, equals: "Deco Summary Liondoor HV Right", then:inherit, else:none}
+				display:{if: =article.type, equals: "MobileDeco Layer HV Right", then:inherit, else:none}
 			}
 			
 			

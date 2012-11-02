@@ -30,7 +30,7 @@
 			#deco6:	{ 
 				frame: [378, 240, 262, 394], 
 				options: {DV_image:true},
-				display:{if: =article.type, equals: "MobileDeco Layer DV Right", then:none, else:inherit}
+				display:{if: =article.type, equals: "MobileDeco Layer DV Right", then:inherit, else:none}
 			},
 			#deco7:	{ 
 				frame: [494, 218, 293, 439], 
@@ -65,7 +65,7 @@
 			#deco6:	{ 
 				frame: [760, 160, 262, 394], 
 				options: {DV_image:true},
-				display:{if: =article.type, equals: "Deco Summary Liondoor DV Right", then:none, else:inherit}
+				display:{if: =article.type, equals: "Deco Summary Liondoor DV Right", then:inherit, else:none}
 			},
 			#deco7:	{ 
 				frame: [730, 155, 293, 439], 

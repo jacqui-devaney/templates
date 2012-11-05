@@ -4,36 +4,54 @@
 	<style>{
 		if: =portrait, then: {
 			#deco:	{ 
-				frame: [0, 0, 768, 876], 
+				frame: [0, -1, 768, 876], 
 				options:{FULL-port_image:{if: =widescreen, then:false, else:true}, FULL-Wport_image:{if: =widescreen, then:true, else:false}}
 			},
 			#deco2:	{ 
-				frame: [0, 692, 571, 226], 
+				anchor-x:left,
+				anchor-y:bottom,
+				width:571,
+				height:226, 
 				options: {F_image:true},
 				display:{if: =article.type, equals: "Deco Summary Liondoor FrontCont2", then:inherit, else:none}
 			},
 			#deco3:	{ 
-				frame: [307, 692, 571, 226], 
+				anchor-x:right,
+				anchor-y:bottom,
+				width:571,
+				height:226, 
 				options: {F_image:true},
 				display:{if: =article.type, equals: "MobileDeco Layer F Right", then:inherit, else:none}
 			},
 			#deco4:	{ 
-				frame: [0, 160, 262, 394], 
+				anchor-x:left,
+				top:240,
+				width:262,
+				height:394, 
 				options: {DV_image:true},
 				display:{if: =article.type, equals: "MobileDeco Layer DV Left", then:inherit, else:none}
 			},
 			#deco5:	{ 
-				frame: [0, 218, 293, 439], 
+				anchor-x:left,
+				top:218,
+				width:293,
+				height:439, 
 				options: {DV_image:true},
 				display:{if: =article.type, equals: "Deco Summary Liondoor Friday Journal", then:inherit, else:none}
 			},
 			#deco6:	{ 
-				frame: [378, 240, 262, 394], 
+				anchor-x:right,
+				top:240,
+				width:262,
+				height:394, 
 				options: {DV_image:true},
 				display:{if: =article.type, equals: "MobileDeco Layer DV Right", then:inherit, else:none}
 			},
 			#deco7:	{ 
-				frame: [494, 218, 293, 439], 
+				anchor-x:right,
+				top:218,
+				width:293,
+				height:439, 
 				options: {DV_image:true},
 				display:{if: =article.type, equals: "MobileDeco Layer HV Right", then:inherit, else:none}
 			}
@@ -43,32 +61,50 @@
 				options: {FULL-land_image:{if: =widescreen, then:false, else:true}, FULL-Wland_image:{if: =widescreen, then:true, else:false}}
 			},
 			#deco2:	{ 
-				frame: [0, 392, 571, 226], 
+				anchor-x:left,
+				anchor-y:bottom,
+				width:571,
+				height:226, 
 				options: {F_image:true},
 				display:{if: =article.type, equals: "Deco Summary Liondoor FrontCont2", then:inherit, else:none}
 			},
 			#deco3:	{ 
-				frame: [450, 392, 571, 226], 
+				anchor-x:right,
+				anchor-y:bottom,
+				width:571,
+				height:226, 
 				options: {F_image:true},
 				display:{if: =article.type, equals: "MobileDeco Layer F Right", then:inherit, else:none}
 			},
 			#deco4:	{ 
-				frame: [0, 160, 262, 394], 
+				anchor-x:left,
+				top:160,
+				width:262,
+				height:394, 
 				options: {DV_image:true},
 				display:{if: =article.type, equals: "MobileDeco Layer DV Left", then:inherit, else:none}
 			},
 			#deco5:	{ 
-				frame: [0, 155, 293, 439], 
+				anchor-x:left,
+				top:155,
+				width:293,
+				height:439, 
 				options: {DV_image:true},
 				display:{if: =article.type, equals: "Deco Summary Liondoor Friday Journal", then:inherit, else:none}
 			},
 			#deco6:	{ 
-				frame: [760, 160, 262, 394], 
+				anchor-x:right,
+				top:160,
+				width:262,
+				height:394, 
 				options: {DV_image:true},
 				display:{if: =article.type, equals: "Deco Summary Liondoor DV Right", then:inherit, else:none}
 			},
 			#deco7:	{ 
-				frame: [730, 155, 293, 439], 
+				anchor-x:right,
+				top:155,
+				width:293,
+				height:439, 
 				options: {DV_image:true},
 				display:{if: =article.type, equals: "MobileDeco Layer HV Right", then:inherit, else:none}
 			}

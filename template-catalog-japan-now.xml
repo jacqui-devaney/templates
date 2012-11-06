@@ -1,0 +1,52 @@
+<catalog preprocessor="preprocessor.ejs">
+    <templates>
+        <!-- FRONT SECTION  -->
+            <template name="FRONT-4story-E-top_template.xml" title="4 story - E Photo" section="SEITE_EINS" min="4" usage="front"/>
+            <template name="FRONT-4story-F_template.xml" title="4 story - F Photo" section="SEITE_EINS" min="4" usage="front"/>
+            <template name="FRONT-4story-F-deco_template.xml" title="4 story - F liondoor" section="SEITE_EINS" min="4" usage="front"/>
+            <template name="FRONT-4story-Vertical-deco_template.xml" title="4 story - Vertical deco" section="SEITE_EINS" min="4" deco="true" usage="front"/>
+        <!-- END FRONT SECTION -->
+        <!-- JAPAN -->
+            <template name="SECTION-2story-G-C_template.xml" title="2 story - G photo" section="JAPAN" min="4" usage="front"/>
+        <!-- END JAPAN -->
+        <!-- BUSINESS_AND_FINANCE -->
+            <template name="SECTION-2story-G-C_template.xml" title="2 story - G photo" section="BUSINESS_AND_FINANCE" min="4" usage="front"/>
+        <!-- END BUSINESS_AND_FINANCE -->
+        <!-- Lifestyle -->
+            <template name="SECTION-2story-G-C_template.xml" title="2 story - G photo" section="LIFESTYLE" min="4" usage="front"/>
+        <!-- END Lifestyle -->
+        <!-- GENERIC CONTINUATION -->
+            <template name="CONTINUATION-generic-12_template.xml" title="" min="12" usage="continuation"/>
+            <template name="CONTINUATION-generic-11_template.xml" title="" min="11" usage="continuation"/>
+            <template name="CONTINUATION-generic-10_template.xml" title="" min="10" usage="continuation"/>
+            <template name="CONTINUATION-generic-9_template.xml" title="" min="9" usage="continuation"/>
+            <template name="CONTINUATION-generic-8_template.xml" title="" min="8" usage="continuation"/>
+            <template name="CONTINUATION-generic-7_template.xml" title="" min="7" usage="continuation"/>
+            <template name="CONTINUATION-generic-6_template.xml" title="" min="6" usage="continuation"/>
+            <template name="CONTINUATION-generic-5_template.xml" title="" min="5" usage="continuation"/>
+            <template name="CONTINUATION-generic-4_template.xml" title="" min="4" usage="continuation"/>
+            <template name="CONTINUATION-generic-3_template.xml" title="" min="3" usage="continuation"/>
+            <template name="CONTINUATION-generic-2_template.xml" title="" min="2" usage="continuation"/>
+            <template name="CONTINUATION-generic-1_template.xml" title="" min="1" usage="continuation"/>
+        <!-- END GENERIC CONTINUATION -->
+		<!-- WHATS NEWS -->
+		<template 
+			name="WHATSNEWS-phone_template.xml"
+			usage="front" 
+			title="Whats News"
+			min="1" 
+			section="WHATS_NEWS" 
+		/>
+		<!-- END WHATS NEWS -->
+        <!-- FULL PAGE AD -->
+            <template name="GENERIC-fullpagead-template.xml" usage="ads"/>
+        <!-- END FULL PAGE AD -->
+    </templates>
+    <article-page-plans>
+        <article pages="ARTICLE-pages.xml"/>
+
+    </article-page-plans>
+    <display-properties>
+        <ads value="2; 3; 3,5; 3,6; 3,6,8; 3,6,9; 3,6,9,11; 3,6,9,12; 3,6,9,12,14; 3,6,9,12,15"/>
+    </display-properties>
+</catalog>

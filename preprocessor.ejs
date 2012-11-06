@@ -133,6 +133,10 @@
 						{ if: =page.section, equals: SEITE_EINS, then: 
 							{ if: =article.frompage, equals: 1, then: aufmacher, else: seiteeins }
 						},
+						{ if: =page.section, equals: JAPAN, then: japan },	
+						{ if: =page.section, equals: LIFESTYLE, then: lifestyle },	
+						{ if: =page.section, equals: WORLD, then: lifestyle },	
+						
 						"default"
 					] },
 					"/"					

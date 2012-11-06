@@ -5,8 +5,11 @@
 		if: =portrait, then: {
 			#deco:	{ frame: [0, 0, 768, 876], options:{FULL-port_image:{if: =widescreen, then:false, else:true}, FULL-Wport_image:{if: =widescreen, then:true, else:false}} }
 		}, else: {
-			#deco:	{ frame: [0, 0, 1024, 620], options: {FULL-land_image:{if: =widescreen, then:false, else:true}, FULL-Wland_image:{if: =widescreen, then:true, else:false}} }
-			
+			#deco:	{ 
+				frame: [0, 0, 1024, 620], 
+				max-height: 620,
+				pixels-per-point-y: {if: =device.model, starts-with: iPad, then: 1},
+				options: {FULL-land_image:{if: =widescreen, then:false, else:true}, FULL-Wland_image:{if: =widescreen, then:true, else:false}} }
 		}
 	}</style>
 	

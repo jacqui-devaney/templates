@@ -179,6 +179,35 @@
 			deco="true"
 			usage="front"
 		/>
+		<template 
+			name="SECTION-1story-P-1highlight_template.xml" 
+			section="FRONT_SECTION" 
+			title="P - 1 highlight"
+			min="2" 
+			usage="front" 
+		/>
+		<template 
+			name="SECTION-1story-P-1highlight-white_template.xml" 
+			section="FRONT_SECTION" 
+			title="P 1 highlight - white"
+			min="2" 
+			usage="front" 
+		/>
+		
+		<template 
+			name="SECTION-1story-PV-1highlight_template.xml" 
+			section="FRONT_SECTION" 
+			title="PV - 1 highlight (grey)"
+			min="2" 
+			usage="front" 
+		/>
+		<template 
+			name="SECTION-1story-PV-1highlight-white_template.xml" 
+			section="FRONT_SECTION" 
+			title="PV - 1 highlight (white)"
+			min="2" 
+			usage="front" 
+		/>
 		
 		<!-- END FRONT SECTION -->
 		

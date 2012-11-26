@@ -324,6 +324,14 @@
 		color:#656565,
 		paragraph-padding: [ 0, 0, 20, 0 ]
 	},
+	.highlight_large_headline: {
+		font-name:DJ5Exchange-Bold,
+		font-size:22,
+		line-height:25,
+		color:#000,
+		padding: [ 5, 0, 5, 0 ],
+		text-scale:{if: =widescreen, then: {$multiply: [=scale.text, 1.1] }, else: inherit}
+	},
 	.highlight_headline: {
 		font-name:DJ5Exchange-Bold,
 		font-size:14,

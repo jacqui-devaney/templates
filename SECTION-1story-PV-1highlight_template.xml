@@ -8,7 +8,12 @@
 				{if: =portrait, then: {TH_image:{if: =scale.small, then:true, else:false}}},
 				{if: =landscape, then: {TH-land_image:{if: =scale.small, then:true, else:false}}}			
 			]}},
-		#h4: { options: {single:true, indent:true, no_border:{if: =scale.phone, then:true, else:false}}}
+		#h4: { options: {$switch: [
+				{if: =scale.phone, then: {no_border:true}},
+				{if: =portrait, then: {single:true, D_image:true, indent:true, portrait:{if: =scale.small, then:false, else:true}}},
+				{if: =landscape, then: {single:true, D_image:true, indent:true, landscape:{if: =scale.small, then:false, else:true}}}	
+			]
+		}}
 		
 	}</style>
 	<style>{ 
@@ -26,7 +31,7 @@
 	}</style>
 	
 	<box id="b1" embed="article" class="maude unit_G_deco" module="IMAGE-only_module.xml" />
-	<box id="h4" embed="article" class="maude unit_highlight" module="HIGHLIGHTS_module.xml" />
+	<box id="h4" embed="article" class="maude unit_highlight" module="HIGHLIGHTS-D_module.xml" />
 	<box id="ad_background_PV" class="maude unit_ad ad_light">
 		<box id="highlight_ad" class="ad-rectangle" embed="advertisement" />
 	</box>

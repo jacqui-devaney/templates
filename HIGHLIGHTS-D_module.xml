@@ -1,0 +1,95 @@
+<jpml id="HIGHLIGHTS-D_module">
+	<style src="GLOBAL_MODULES-stylesheet.ejs" />
+	<style src="GLOBAL-stylesheet.ejs" />
+	<style src="PHONE-MODULES-stylesheet.ejs" />
+    <style>{
+		jpml: {
+				background-color:{if: =options.white_highlight, then:#ffffff, else:#efefef},
+				padding: [10, 8, 10, 8],
+				border-width: { if: =options.single, then:[0, {if: =portrait, then: 0, else: 1}, {if: =landscape, then: 0, else: 1}, 0], else:[0, {if: =portrait, then: 1, else: 0}, {if: =landscape, then: 1, else: 0}, 0]},
+				border-color:#b1aca1
+		},
+		
+		.highlight_byline: {display: {$switch: [
+			{if: =scale.small, then:{if: =options.byline, then:inherit, else:none}},
+			{if: =scale.large, then: inherit}
+		]}},
+		#image_container: {
+			width:241, 
+			height:160
+		},
+		image: {
+			options: {
+				$switch: [
+					{ if: =options.D_image, then: {match: { width:262, height:174, min-height:174 } } }
+				]
+			},
+			image-scale: 1
+		},
+		.portrait: {
+			display:{if: =options.portrait, then:inherit, else:none},
+			width:241, 
+			height:160,
+			anchor-x:right,
+			anchor-y:bottom,
+			padding:[0, 0, 0, 10]
+			
+		},
+		.landscape: {
+			display:{if: =options.landscape, then:inherit, else:none}
+		},
+		.highlight_body: {
+			text-overflow: "\u00bb",
+			padding: [4, 0, 0, 0]
+		},
+		.highlight_flashline: {display: {$switch: [
+			{if: =scale.small, then:{if: =options.hide_flashline, then:none, else:inherit}},
+			{if: =scale.large, then: inherit}
+		]}}
+    }</style>
+	<style>{
+		if: =scale.phone, then: {
+			#image_container: { 
+				display:none
+			},
+			.portrait: {
+				display:none
+			},
+			.highlight_body: {
+				display:none
+			},
+			jpml: {
+				padding: [0, 8],
+				background-color:#ffffff,
+				border-width: [0, 0, {if: =options.no_border, then:0, else:1}, 0],
+				border-color:#d6d6d6
+			},
+			#wrapper: {
+				anchor-y:middle
+			},
+			.highlight_byline: {
+				display:none
+			},
+			.highlight_body: {
+				display:none
+			}
+			
+		}, else:{}
+	
+	}</style>
+	<box id="wrapper">
+    	<box class="portrait">
+	        <image embed="summary-image" />
+	    </box>	 
+		<p class="highlight_flashline" embed="flashline" />
+    	<p class="highlight_large_headline"><span embed="headline" /><mark class="key" /></p>
+		<p class="highlight_byline" embed="byline" />
+		<panel class="landscape">
+			<box id="image_container">
+		        <image embed="summary-image" />
+		    </box>	 
+	   	</panel>
+	
+	    <panel embed="body" class="highlight_body"/>
+	</box>
+</jpml>

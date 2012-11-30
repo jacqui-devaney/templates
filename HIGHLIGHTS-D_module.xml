@@ -15,8 +15,7 @@
 			{if: =scale.large, then: inherit}
 		]}},
 		#image_container: {
-			width:241, 
-			height:160
+			width:241
 		},
 		image: {
 			options: {
@@ -24,19 +23,20 @@
 					{ if: =options.D_image, then: {match: { width:262, height:174, min-height:174 } } }
 				]
 			},
-			image-scale: 1
+			image-scale: 1,
+			height:160
 		},
 		.portrait: {
 			display:{if: =options.portrait, then:inherit, else:none},
 			width:241, 
-			height:160,
 			anchor-x:right,
 			anchor-y:bottom,
 			padding:[0, 0, 0, 10]
 			
 		},
 		.landscape: {
-			display:{if: =options.landscape, then:inherit, else:none}
+			display:{if: =options.landscape, then:inherit, else:none},
+			padding:[0, 0, 10, 0]
 		},
 		.highlight_body: {
 			text-overflow: "\u00bb",
@@ -83,12 +83,12 @@
 	    </box>	 
 		<p class="highlight_flashline" embed="flashline" />
     	<p class="highlight_large_headline"><span embed="headline" /><mark class="key" /></p>
-		<p class="highlight_byline" embed="byline" />
 		<panel class="landscape">
 			<box id="image_container">
 		        <image embed="summary-image" />
 		    </box>	 
 	   	</panel>
+		<p class="highlight_byline" embed="byline" />
 	
 	    <panel embed="body" class="highlight_body"/>
 	</box>

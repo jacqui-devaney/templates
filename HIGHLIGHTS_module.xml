@@ -35,7 +35,15 @@
 		.highlight_flashline: {display: {$switch: [
 			{if: =scale.small, then:{if: =options.hide_flashline, then:none, else:inherit}},
 			{if: =scale.large, then: inherit}
-		]}}
+		]}},
+		.highlight_large_headline: {
+			display:{if: =options.large_highlight, then:inherit, else:none}
+		},
+		.highlight_headline: {
+			display:{if: =options.large_highlight, then:none, else:inherit}
+		}
+		
+		
     }</style>
 	<style>{
 		if: =scale.phone, then: {
@@ -65,6 +73,9 @@
 			},
 			.highlight_body: {
 				display:none
+			},
+			.highlight_large_headline: {
+				display:none
 			}
 			
 		}, else:{}
@@ -76,6 +87,7 @@
 	    </box>
     	<p class="highlight_flashline" embed="flashline" />
     	<p class="highlight_headline"><span embed="headline" /><mark class="key" /></p>
+    	<p class="highlight_large_headline"><span embed="headline" /><mark class="key" /></p>
 		<p class="highlight_byline" embed="byline" />
 		<panel embed="body" class="highlight_body"/>
 	</box>

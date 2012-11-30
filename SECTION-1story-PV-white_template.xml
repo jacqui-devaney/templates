@@ -10,13 +10,13 @@
 			]}},
 		#h1: {options: { $switch: [
 				{if: =scale.phone, then: {no_border:true}},
-				{if: =portrait, then: {white_highlight:true}},
-				{if: =landscape, then: {hide_image:{if: =scale.small, then:true, else:false}, white_highlight:true}}			
+				{if: =portrait, then: {white_highlight:true, large_highlight:true}},
+				{if: =landscape, then: {hide_image:{if: =scale.small, then:true, else:false}, white_highlight:true, large_highlight:true}}			
 			]}},
 		#h2: {options: { $switch: [
 				{if: =scale.phone, then: {no_border:true}},
-				{if: =portrait, then: {white_highlight:true}},
-				{if: =landscape, then: {hide_image:{if: =scale.small, then:true, else:false}, white_highlight:true}}			
+				{if: =portrait, then: {white_highlight:true, large_highlight:true}},
+				{if: =landscape, then: {hide_image:{if: =scale.small, then:true, else:false}, white_highlight:true, large_highlight:true}}			
 			]}}
 				
 	}</style>

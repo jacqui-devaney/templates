@@ -111,7 +111,8 @@
 	
 	} </style>
 	
-	<box class="maude" id="marketstrap" embed="marketstrap" />
+	<box id="marketstrap" class="maude" embed="marketstrap"/>
+	<box class="maude" id="german_marketstrap"/>
 	<box class="maude unit_166" id="b1" embed="article" module="FRONT-NO-IMAGE_module.xml" />
 	<box class="maude unit_50" id="b2" embed="article" module="FRONT-NO-IMAGE_module.xml" />
 	<box id="whatsnews" embed="whatsnews" />

@@ -53,7 +53,8 @@
 		]
 	} </style>
 	
-	<box id="marketstrap" class="maude" embed="marketstrap" />
+	<box id="marketstrap" class="maude" embed="marketstrap"/>
+	<box class="maude" id="german_marketstrap"/>
 	<box id="whatsnews" embed="whatsnews" />
 	<box id="b1" class="maude unit_166" embed="article" module="TOP-IMAGE_module.xml" />
 	<box id="b2" class="maude unit_50" embed="article" module="FRONT-NO-IMAGE_module.xml" />

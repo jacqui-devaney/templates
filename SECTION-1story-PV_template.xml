@@ -18,6 +18,10 @@
 				{if: =portrait, then: {large_highlight:true}},
 				{if: =landscape, then: {hide_image:{if: =scale.small, then:true, else:false}, large_highlight:true}}			
 			]}}
+			
+			
+			
+			
 				
 	}</style>
 	<style>{

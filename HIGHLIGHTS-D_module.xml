@@ -26,6 +26,15 @@
 			image-scale: 1,
 			height:160
 		},
+		.portrait_D: {
+			options: {
+				$switch: [
+					{ if: =options.D_image, then: {match: { width:262, height:174, min-height:174 } } }
+				]
+			},
+			image-scale: .7,
+			height:160
+		},
 		.portrait: {
 			display:{if: =options.portrait, then:inherit, else:none},
 			width:241, 
@@ -79,7 +88,7 @@
 	}</style>
 	<box id="wrapper">
     	<box class="portrait">
-	        <image embed="summary-image" />
+	        <image class="portrait_D" embed="summary-image" />
 	    </box>	 
 		<p class="highlight_flashline" embed="flashline" />
     	<p class="highlight_large_headline"><span embed="headline" /><mark class="key" /></p>

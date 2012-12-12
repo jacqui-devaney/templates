@@ -326,8 +326,8 @@
 	},
 	.highlight_large_headline: {
 		font-name:DJ5Exchange-Bold,
-		font-size:22,
-		line-height:25,
+		font-size:{if: =scale.small, then: 14, else: 21},
+		line-height:{if: =scale.small, then: 17, else: 25},
 		color:#000,
 		padding: [ 5, 0, 5, 0 ],
 		text-scale:{if: =widescreen, then: {$multiply: [=scale.text, 1.1] }, else: inherit}

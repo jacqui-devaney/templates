@@ -4,13 +4,7 @@
 	{.line: { background-color:#b1aca1}},
 	{#whatsnews_wrapper:{display:none}},
 	{if: =portrait, then: {
-			#marketstrap:	{ frame: [0, 0, 768, 26], display:{if: =issue.edition, equals: "germany", then:none, else:inherit} },
-			#german_marketstrap: { 
-				frame: [0, 0, 768, 24], 
-				display:{if: =issue.edition, equals: "germany", then:inherit, else:none}, 
-				border-width:[1, 0, 1, 0], 
-				border-color:#000
-			},
+			#marketstrap:	{ frame: [0, 0, 768, 26]},
 			#whatsnews:		{ frame: [3, 34, 183, 642], options: { expanded-frame: [
 				{$multiply:[=scale.pagex, 3]}, 
 				{$multiply:[=scale.pagey, 34]}, 
@@ -19,13 +13,7 @@
 			] } },
 			#ad_background: { frame: [3, 677, 182, 195] }
 		}, else: {
-			#marketstrap:	{ frame: [0, 0, 1024, 26], display:{if: =issue.edition, equals: "germany", then:none, else:inherit} },
-			#german_marketstrap: { 
-				frame: [0, 0, 1024, 24], 
-				display:{if: =issue.edition, equals: "germany", then:inherit, else:none}, 
-				border-width:[1, 0, 1, 0], 
-				border-color:#000
-			},
+			#marketstrap:	{ frame: [0, 0, 1024, 26] },
 			#whatsnews:		{ frame: [11, 34, 183, 388], options: { expanded-frame: [
 				{$multiply:[=scale.pagex, 3]}, 
 				{$multiply:[=scale.pagey, 34]}, 

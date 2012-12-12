@@ -32,15 +32,14 @@
 					{ if: =options.D_image, then: {match: { width:262, height:174, min-height:174 } } }
 				]
 			},
-			image-scale: .7,
-			height:160
+			height:140
 		},
 		.portrait: {
 			display:{if: =options.portrait, then:inherit, else:none},
-			width:241, 
+			width:210, 
 			anchor-x:right,
 			anchor-y:bottom,
-			padding:[0, 0, 0, 10]
+			padding:[0, 0, 25, 10]
 			
 		},
 		.landscape: {

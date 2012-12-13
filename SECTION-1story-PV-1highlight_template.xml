@@ -13,11 +13,7 @@
 				{if: =portrait, then: {single:true, D_image:true, indent:true, portrait:{if: =scale.small, then:false, else:true}}},
 				{if: =landscape, then: {single:true, D_image:true, indent:true, landscape:{if: =scale.small, then:false, else:true}}}	
 			]
-		}},
-		#ad_background: {
-			display:{if: =scale.phone, then:inherit, else:{if-all:[{if: =page.number, equals:1}, {if: =page.section, in: [OFF_DUTY, REVIEW, PERSONAL_JOURNAL, THE_JOURNAL_REPORT, WSJ_MAGAZINE, FRIDAY_JOURNAL, MANSION, ARENA], then:false, else:true }], then:none, else:inherit}}
-		}
-		
+		}}
 		
 	}</style>
 	<style>{ 
@@ -26,16 +22,10 @@
 	
 			}},
 			{if: =portrait, then: {
-				#b1:	{ frame: [0, 0, 768, 620]},
-				
+				#b1:	{ frame: [0, 0, 768, 620]}
 			}}, 
 			{if: =landscape, then: {
-				#b1:	{ frame: [0, 0, 768, 620]},
-				#h4: {
-						frame:[1, 620,{if-all:[{if: =page.number, equals:1}, {if: =page.section, in: [OFF_DUTY, REVIEW, PERSONAL_JOURNAL, THE_JOURNAL_REPORT, WSJ_MAGAZINE, FRIDAY_JOURNAL, MANSION, ARENA], then:false, else:true }], then:383, else:255}, 256]
-
-				}
-				
+				#b1:	{ frame: [0, 0, 768, 620]}
 			}}
 		]
 	}</style>

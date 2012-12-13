@@ -20,14 +20,11 @@
 				]}},
 			#h1: {
 				options:{
-						hide_image:{if-all: [=scale.small, =landscape], then:true, else:false}, 
-						indent:{if-all:[{if: =page.number, equals:1}, {if: =page.section, in: [OFF_DUTY, REVIEW, PERSONAL_JOURNAL, THE_JOURNAL_REPORT, WSJ_MAGAZINE, FRIDAY_JOURNAL, MANSION, ARENA], then:true, else:false }], then:true, else:false},
-						no_border:{if: =scale.phone, then:true, else:false}
+						hide_image:{if-all: [=scale.small, =landscape], then:true, else:false}
 					}},
 			
 			#h2: {
-				options:{hide_image:{if-all: [=scale.small, =landscape], then:true, else:false}, 
-				indent:{if-all:[{if: =page.number, equals:1}, {if: =page.section, in: [OFF_DUTY, REVIEW, PERSONAL_JOURNAL, THE_JOURNAL_REPORT, WSJ_MAGAZINE, FRIDAY_JOURNAL, MANSION, ARENA], then:true, else:false }], then:true, else:false}}
+				options:{hide_image:{if-all: [=scale.small, =landscape], then:true, else:false}}
 			},
 			#ad_background: {
 				display:{if: =scale.phone, then:inherit, else:{if-all:[{if: =page.number, equals:1}, {if: =page.section, in: [OFF_DUTY, REVIEW, PERSONAL_JOURNAL, THE_JOURNAL_REPORT, WSJ_MAGAZINE, FRIDAY_JOURNAL, MANSION, ARENA], then:false, else:true }], then:none, else:inherit}}

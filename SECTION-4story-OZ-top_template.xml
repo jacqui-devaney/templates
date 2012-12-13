@@ -6,7 +6,7 @@
 		#b1: {options: { $switch: [
 				{if: =scale.phone, then: {large_headline:true, show_body:true, top_align:true}},
 				{if: =portrait, then: {medium_headline:true, show_image:true, OZ_image:true, no_border:{if: =scale.phone, then:false, else:true}, bottom:true, byline:{if: =scale.small, then:true, else:false}}},
-				{if: =landscape, then: {large_headline:true, show_image:true, F_image:{if: =scale.small, then:true, else:false}, OZ_image:{if: =scale.small, then:false, else:true}, no_border:true, bottom:true, byline:{if: =scale.small, then:true, else:false}}}			
+				{if: =landscape, then: {medium_headline:true, show_image:true, F_image:{if: =scale.small, then:true, else:false}, OZ_image:{if: =scale.small, then:false, else:true}, no_border:true, bottom:true, byline:{if: =scale.small, then:true, else:false}}}			
 			]}},
         #b2:	{ options:{small_headline:true, no_border:{if: =scale.phone, then:false, else:true}, no_indent:true} },
         #b3:	{ options:{small_headline:true, no_indent:true}},

@@ -56,13 +56,13 @@
 	}</style>
 	
 	<box id="b1" embed="article" class="maude unit_166" module="TOP-IMAGE_module.xml" />
-	<box id="deco" embed="article" class="maude unit_G_deco" module="DECO_module.xml" />
 	<box id="ad_background" class="ad_light maude unit_ad">
 		<box id="highlight_ad" class="ad-rectangle" embed="advertisement" />
 	</box>
 	<box id="b2" embed="article" class="maude unit_50" module="RIGHT-INSET-IMAGE_module.xml" />
 	<box id="b3" embed="article" class="maude unit_50" module="RIGHT-INSET-IMAGE_module.xml" />
 	<box id="b4" embed="article" class="maude unit_50" module="RIGHT-INSET-IMAGE_module.xml" />
+	<box id="deco" embed="article" class="maude unit_G_deco" module="DECO_module.xml" />
 	<box id="marketdata_background" class="ad_light">
 		<box id="highlight_marketdata" embed="marketdata" />
 	</box>

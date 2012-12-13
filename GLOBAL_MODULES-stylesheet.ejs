@@ -356,7 +356,7 @@
 		text-align:left,
 		color:#000,
 		text-scale:{if: =widescreen, then: {$multiply: [=scale.text, 1.1] }, else: inherit},
-		text-indent:{if: =options.indent, then:20, else: inherit}
+		text-indent:{if: =options.no_indent, then:inherit, else: 20}
 	},
 	.highlight_flashline_small: {
 		font-name:DJ5RetinaCd-Semibold,

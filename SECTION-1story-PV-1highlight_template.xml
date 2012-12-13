@@ -10,10 +10,8 @@
 			]}},
 		#h4: { options: {$switch: [
 				{if: =scale.phone, then: {no_border:true}},
-				{if: =portrait, then: {single:true, D_image:true, indent:true, portrait:{if: =scale.small, then:false, else:true}, indent:{if-all:[{if: =page.number, equals:1}, {if: =page.section, in: [OFF_DUTY, REVIEW, PERSONAL_JOURNAL, THE_JOURNAL_REPORT, WSJ_MAGAZINE, FRIDAY_JOURNAL, MANSION, ARENA], then:true, else:false }], then:true, else:false}
-				}},
-				{if: =landscape, then: {single:true, D_image:true, indent:true, landscape:{if: =scale.small, then:false, else:true}, indent:{if-all:[{if: =page.number, equals:1}, {if: =page.section, in: [OFF_DUTY, REVIEW, PERSONAL_JOURNAL, THE_JOURNAL_REPORT, WSJ_MAGAZINE, FRIDAY_JOURNAL, MANSION, ARENA], then:true, else:false }], then:true, else:false}
-				}}	
+				{if: =portrait, then: {single:true, D_image:true, indent:true, portrait:{if: =scale.small, then:false, else:true}}},
+				{if: =landscape, then: {single:true, D_image:true, indent:true, landscape:{if: =scale.small, then:false, else:true}}}	
 			]
 		}},
 		#ad_background: {

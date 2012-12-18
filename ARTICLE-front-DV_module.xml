@@ -18,14 +18,15 @@
 
 		{#mediabucket: {
 			width:270,
-			height:433,
+			height:420,
 			anchor-x:center,
 			anchor-y:center
 		}},
 		{if: =portrait, then: {
-            #mediabucket_container:	{ frame: [292, 0, 270, 433]  }
+            #mediabucket_container:	{ frame: [292, 0, 270, 430]
+			  }
         }, else: {
-        	#mediabucket_container:	{ frame: [580, 0, 270, 433] }
+        	#mediabucket_container:	{ frame: [580, 0, 270, 430] }
         }},
 		{#filler: {
 			position: relative,

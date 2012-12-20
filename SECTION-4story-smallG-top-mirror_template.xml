@@ -34,9 +34,9 @@
 	]}</style>
 
 	<box id="b1" class="maude unit_166" embed="article" module="TOP-IMAGE_module.xml" />
-	<box id="b2" class="maude unit_50" embed="article" module="TOP-IMAGE_module.xml" />
-	<box id="b3" class="maude unit_50" embed="article" module="TOP-IMAGE_module.xml" />
-	<box id="b4" class="maude unit_50" embed="article" module="TOP-IMAGE_module.xml" />
+	<box id="b2" class="maude unit_50" embed="article" module="RIGHT-INSET-IMAGE_module.xml" />
+	<box id="b3" class="maude unit_50" embed="article" module="RIGHT-INSET-IMAGE_module.xml" />
+	<box id="b4" class="maude unit_50" embed="article" module="RIGHT-INSET-IMAGE_module.xml" />
 	<box id="ad_background" class="ad_light maude unit_ad">
 		<box id="highlight_ad" class="ad-rectangle" embed="advertisement" />
 	</box>

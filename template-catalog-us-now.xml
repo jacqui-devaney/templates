@@ -184,6 +184,21 @@
 			min="3" 
 			usage="front" 
 		/>
+		<template 
+			name="SECTION-4story-OZ-top_template.xml" 
+			section="ARENA" 
+			title="4 story - OZ photo"
+			min="6" 
+			usage="front" 
+		/>
+		<template 
+			name="SECTION-4story-OZ-deco-mirror_template.xml" 
+			section="ARENA" 
+			title="4 story - OZ Media liondoor"
+			min="5" 
+			deco="true" 
+			usage="front" 
+		/>
 
 		<!-- END ARENA -->
 		<!-- FRIDAY JOURNAL -->
@@ -367,6 +382,21 @@
 			min="3" 
 			usage="front" 
 		/>
+		<template 
+			name="SECTION-4story-OZ-top_template.xml" 
+			section="MARKETPLACE" 
+			title="4 story - OZ photo"
+			min="6" 
+			usage="front" 
+		/>
+		<template 
+			name="SECTION-4story-OZ-deco-mirror_template.xml" 
+			section="MARKETPLACE" 
+			title="4 story - OZ Media liondoor"
+			min="5" 
+			deco="true" 
+			usage="front" 
+		/>
 		
 		<!-- END MARKETPLACE -->
 
@@ -522,6 +552,22 @@
 			deco="true"
 			usage="front" 
 		/>
+		<template 
+			name="SECTION-4story-OZ-top_template.xml" 
+			section="NEW_YORK" 
+			title="4 story - OZ photo"
+			min="6" 
+			usage="front" 
+		/>
+		<template 
+			name="SECTION-4story-OZ-deco-mirror_template.xml" 
+			section="NEW_YORK" 
+			title="4 story - OZ Media liondoor"
+			min="5" 
+			deco="true" 
+			usage="front" 
+		/>
+		
 		<!-- END NEW YORK -->
 		
 		<!-- OFF DUTY -->
@@ -668,6 +714,21 @@
 			min="3" 
 			usage="front" 
 		/>
+		<template 
+			name="SECTION-4story-OZ-top_template.xml" 
+			section="MANSION" 
+			title="4 story - OZ photo"
+			min="6" 
+			usage="front" 
+		/>
+		<template 
+			name="SECTION-4story-OZ-deco-mirror_template.xml" 
+			section="MANSION" 
+			title="4 story - OZ Media liondoor"
+			min="5" 
+			deco="true" 
+			usage="front" 
+		/>
 
 		<!-- END MANSION -->
 		
@@ -769,6 +830,21 @@
 			min="3" 
 			usage="front" 
 		/>
+		<template 
+			name="SECTION-4story-OZ-top_template.xml" 
+			section="PERSONAL_JOURNAL" 
+			title="4 story - OZ photo"
+			min="6" 
+			usage="front" 
+		/>
+		<template 
+			name="SECTION-4story-OZ-deco-mirror_template.xml" 
+			section="PERSONAL_JOURNAL" 
+			title="4 story - OZ Media liondoor"
+			min="5" 
+			deco="true" 
+			usage="front" 
+		/>
 
 		<!-- END PERSONAL_JOURNAL -->
 		
@@ -837,7 +913,7 @@
 		/>
 		<template 
 			name="SECTION-1story-PV_template.xml" 
-			section="MARKETPLACE" 
+			section="THE_JOURNAL_REPORT" 
 			title="PV (grey)"
 			min="3" 
 			usage="front" 
@@ -962,6 +1038,21 @@
 			section="WEEKEND_JOURNAL" 
 			title="P-photo"
 			min="3" 
+			usage="front" 
+		/>
+		<template 
+			name="SECTION-4story-OZ-top_template.xml" 
+			section="WEEKEND_JOURNAL" 
+			title="4 story - OZ photo"
+			min="6" 
+			usage="front" 
+		/>
+		<template 
+			name="SECTION-4story-OZ-deco-mirror_template.xml" 
+			section="WEEKEND_JOURNAL" 
+			title="4 story - OZ Media liondoor"
+			min="5" 
+			deco="true" 
 			usage="front" 
 		/>
 

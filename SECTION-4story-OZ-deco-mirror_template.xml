@@ -3,7 +3,7 @@
 	<style src="SECTION-stylesheet.ejs" />
 	<style src="PHONE-stylesheet.ejs" />
 	<style>{
-		#b2: {options:{small_headline:true, no_indent:true}},		
+		#b2: {options:{medium_headline:true, no_indent:true, no_border:true}},		
 		#b3: {options:{small_headline:true, no_indent:true}},		
 		#b4: {options:{small_headline:true, no_indent:true, no_border:{if: =scale.phone, then:true, else:false}}},
 		#deco: {options: { $switch: [
@@ -44,10 +44,10 @@
 	]
 	}</style>
 	
-	<box id="deco" embed="article" class="maude unit_G_deco" module="DECO_module.xml" />
-	<box id="b2" embed="article" class="maude unit_50" module="RIGHT-INSET-IMAGE_module.xml" />
+	<box id="b2" embed="article" class="maude unit_50" module="TOP-IMAGE_module.xml" />
 	<box id="b3" embed="article" class="maude unit_50" module="RIGHT-INSET-IMAGE_module.xml" />
 	<box id="b4" embed="article" class="maude unit_50" module="RIGHT-INSET-IMAGE_module.xml" />
+	<box id="deco" embed="article" class="maude unit_G_deco" module="DECO_module.xml" />
 	<box id="ad_background" class="ad_light maude unit_ad">
 		<box id="highlight_ad" class="ad-rectangle" embed="advertisement" />
 	</box>

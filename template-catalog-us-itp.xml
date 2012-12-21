@@ -208,6 +208,14 @@
 			min="2" 
 			usage="front" 
 		/>
+		<template 
+			section="FRONT_SECTION" 
+			name="FRONT-3story-G-deco-large-ad_template.xml" 
+			title="3 story - G liondoor Large Ad"
+			min="3" 
+			deco="true" 
+			usage="front" 
+		/>
 		
 		<!-- END FRONT SECTION -->
 		
@@ -326,13 +334,6 @@
 			usage="front" 
 		/>
 		<template 
-			name="SECTION-4story-OZ-top_template.xml" 
-			section="MARKETPLACE" 
-			title="4 story - OZ photo"
-			min="6" 
-			usage="front" 
-		/>
-		<template 
 			name="SECTION-3story-G_template.xml" 
 			section="MARKETPLACE" 
 			title="3 story - G photo"
@@ -375,14 +376,6 @@
 			title="3 story - G photo mirror"
 			min="5" 
 			deco="true"
-			usage="front" 
-		/>
-		<template 
-			name="SECTION-4story-OZ-deco-mirror_template.xml" 
-			section="MARKETPLACE" 
-			title="4 story - OZ Media liondoor"
-			min="5" 
-			deco="true" 
 			usage="front" 
 		/>
 		<template 

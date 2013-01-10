@@ -1,18 +1,15 @@
 <catalog preprocessor="preprocessor.ejs">
     <templates>
         <!-- FRONT SECTION  -->
-            <template name="FRONT-4story-E-top_template.xml" title="4 story - E Photo" section="SEITE_EINS" min="4" usage="front"/>
-            <template name="FRONT-4story-F_template.xml" title="4 story - F Photo" section="SEITE_EINS" min="4" usage="front"/>
-            <template name="FRONT-4story-F-deco_template.xml" title="4 story - F liondoor" section="SEITE_EINS" min="4" usage="front"/>
-            <template name="FRONT-4story-Vertical-deco_template.xml" title="4 story - Vertical deco" section="SEITE_EINS" min="4" deco="true" usage="front"/>
+            <template name="FRONT-4story-E-top_template.xml" title="4 story - E Photo" section="FRONT_SECTION" min="4" usage="front"/>
+            <template name="FRONT-4story-F_template.xml" title="4 story - F Photo" section="FRONT_SECTION" min="4" usage="front"/>
+            <template name="FRONT-4story-F-deco_template.xml" title="4 story - F liondoor" section="FRONT_SECTION" min="4" usage="front"/>
+            <template name="FRONT-4story-Vertical-deco_template.xml" title="4 story - Vertical deco" section="FRONT_SECTION" min="4" deco="true" usage="front"/>
         <!-- END FRONT SECTION -->
-        <!-- WORLD -->
-            <template name="SECTION-2story-G-C_template.xml" title="2 story - G photo" section="WORLD" min="4" usage="front"/>
-        <!-- END WORLD -->
-        <!-- BUSINESS_AND_FINANCE -->
-            <template name="SECTION-2story-G-C_template.xml" title="2 story - G photo" section="BUSINESS_AND_FINANCE" min="4" usage="front"/>
-        <!-- END BUSINESS_AND_FINANCE -->
-        <!-- LIFE_AND_STYLE -->
+        <!-- BUSINESS/MARKETS -->
+            <template name="SECTION-2story-G-C_template.xml" title="2 story - G photo" section="BUSINESS_MARKETS" min="4" usage="front"/>
+        <!-- END BUSINESS/MARKETS -->
+		<!-- LIFE_AND_STYLE -->
             <template name="SECTION-2story-G-C_template.xml" title="2 story - G photo" section="LIFE_AND_STYLE" min="4" usage="front"/>
         <!-- END LIFE_AND_STYLE -->
         <!-- GENERIC CONTINUATION -->

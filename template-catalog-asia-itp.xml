@@ -269,41 +269,41 @@
 		<template 
 			name="SECTION-1story-PV-white_template.xml" 
 			title="PV (white highlights)" 
-			section="THE_JOURNAL_REPORT" 
+			section="JOURNAL_REPORTS" 
 			min="3" 
 			usage="front" 
 		/>
 		<template 
 			name="SECTION-2story-G-C_template.xml" 
 			title="2 story - G photo" 
-			section="THE_JOURNAL_REPORT" 
+			section="JOURNAL_REPORTS" 
 			min="4" 
 			usage="front" 
 		/>
 		<template 
 			name="SECTION-1story-P_template.xml" 
 			title="P photo" 
-			section="THE_JOURNAL_REPORT" 
+			section="JOURNAL_REPORTS" 
 			min="3" 
 			usage="front" 
 		/>
 		<template 
 			name="SECTION-1story-PV_template.xml" 
 			title="PV (grey highlights)" 
-			section="THE_JOURNAL_REPORT" 
+			section="JOURNAL_REPORTS" 
 			min="3" 
 			usage="front" 
 		/>
 		<template 
 			name="SECTION-1story-P-1highlight_template.xml" 
 			title="P photo - 1 highight" 
-			section="THE_JOURNAL_REPORT" 
+			section="JOURNAL_REPORTS" 
 			min="2" 
 			usage="front" 
 		/>
 		<template 
 			name="SECTION-1story-P-1highlight-white_template.xml" 
-			section="THE_JOURNAL_REPORT" 
+			section="JOURNAL_REPORTS" 
 			title="P 1 highlight - white"
 			min="2" 
 			usage="front" 
@@ -312,14 +312,14 @@
 		<template 
 			name="SECTION-1story-PV-1highlight_template.xml" 
 			title="PV photo - 1 highight (grey)" 
-			section="THE_JOURNAL_REPORT" 
+			section="JOURNAL_REPORTS" 
 			min="2" 
 			usage="front" 
 		/>
 		<template 
 			name="SECTION-1story-PV-1highlight-white_template.xml" 
 			title="PV photo - 1 highight (white)" 
-			section="THE_JOURNAL_REPORT" 
+			section="JOURNAL_REPORTS" 
 			min="2" 
 			usage="front" 
 		/>

@@ -15,7 +15,7 @@
 									{if: =widescreen, then: [535, 28, 230, 273]},
 									{if: =scale.large, then: [582, 26, 183, 274]}
 								]},
-								options:{small_headline:true, no-border:true, left:true, no_indent:true} 
+								options:{small_headline:true, no_border:true, left:true, no_indent:true} 
 							},
 			#b3:			{ 
 								frame: {$switch: [
@@ -24,7 +24,7 @@
 								]},
 								options:{small_headline:true, no_border:true, left:true, no_indent:true} 
 							},
-			#b4:			{ frame: [194, 578, 280, 298], options:{small_headline:true, no_border:true, left:true, no_indent:true} },
+			#b4:			{ frame: [194, 578, 280, 298], options:{small_headline:true, left:true, no_indent:true} },
 			#b5:			{ frame: [486, 578, 280, 298], options:{no_indent:true} }
 		}, else: {
 			#b1:			{ 

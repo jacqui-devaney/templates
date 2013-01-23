@@ -26,7 +26,8 @@
 		.invisible: { display:none },
 		#small_headline: { display: { if: =options.small_headline, then:inherit }},
 		#medium_headline: { display: { if: =options.medium_headline, then:inherit }},
-		#large_headline: { display: { if: =options.large_headline, then:inherit }}
+		#large_headline: { display: { if: =options.large_headline, then:inherit }},
+		.body: {options:{text-align: { if: =options.justify, then:=justify, else:left}}}
 	}</style>
 	<style>{
 		if: =scale.phone, then: {

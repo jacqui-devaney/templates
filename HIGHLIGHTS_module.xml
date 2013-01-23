@@ -30,7 +30,8 @@
 		},
 		.highlight_body: {
 			text-overflow: "\u00bb",
-			padding: [4, 0, 0, 0]
+			text-align: { if: =options.justify, then:=justify, else:left},
+	        padding: [4, 0, 0, 0]
 		},
 		.highlight_flashline: {display: {$switch: [
 			{if: =scale.small, then:{if: =options.hide_flashline, then:none, else:inherit}},

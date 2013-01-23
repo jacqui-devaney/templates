@@ -5,14 +5,14 @@
 	<style>{
 		#b1: {options: {$switch: [
 			{if: =scale.phone, then: {large_headline:true, one_column:true}},
-			{if: =portrait, then:{large_headline:true, hide_image:{if: =widescreen, then:true, else:false}, one_column:{if: =widescreen, then:true, else:false}}},
-			{if: =landscape, then: {large_headline:true, show_image:true, one_column:{if: =widescreen, then:true, else:false}}}
+			{if: =portrait, then:{justify:true, large_headline:true, hide_image:{if: =widescreen, then:true, else:false}, one_column:{if: =widescreen, then:true, else:false}}},
+			{if: =landscape, then: {justify:true, large_headline:true, show_image:true, one_column:{if: =widescreen, then:true, else:false}}}
 			
 		]}},
 		#b2: {options: {$switch: [
 			{if: =scale.phone, then: {small_headline:true, bottom_border:true}},
-			{if: =portrait, then:{medium_headline:true, bottom:true, no_indent:true}},
-			{if: =landscape, then: {medium_headline:true, bottom:true, two_columns:true, no_indent:true}}
+			{if: =portrait, then:{justify:true, medium_headline:true, bottom:true, no_indent:true}},
+			{if: =landscape, then: {justify:true, medium_headline:true, bottom:true, two_columns:true, no_indent:true}}
 		]}},
 		#b3: {options: {$switch: [
 			{if: =scale.phone, then: {small_headline:true, bottom_border:true}},

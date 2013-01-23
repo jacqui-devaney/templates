@@ -8,7 +8,7 @@
 							{if: =widescreen, then: [195, 28, 571, 380]},
 							{if: =scale.large, then: [195, 26, 571, 380]}
 						]},
-						options:{large_headline:true, show_image:true, two_columns:true, F_image:true, no_border:true, byline:{if: =scale.small, then:true, else:false}} 
+						options:{large_headline:true, justify:true, show_image:true, two_columns:true, F_image:true, no_border:true, byline:{if: =scale.small, then:true, else:false}} 
 			},
 			#b2:	{ 
 						frame: {$switch: [
@@ -37,7 +37,7 @@
 							{if: =widescreen, then: [205, 28, 377, 380]},
 							{if: =scale.large, then: [205, 26, 571, 380]}
 						]},
-						options:{large_headline:true, F_image:true, show_image:true, no_border:true, byline:{if: =scale.small, then:true, else:false}} 
+						options:{large_headline:true, justify:true, F_image:true, show_image:true, no_border:true, byline:{if: =scale.small, then:true, else:false}} 
 			},
 			#b2:	{ 
 						frame: {$switch: [

@@ -9,7 +9,7 @@
 				{if: =portrait, then: {normal_headline:true, fake_deco:true}},
 				{if: =landscape, then: {normal_headline:true, fake_deco:true, F_image:{if: =scale.small, then:true, else:false}}}			
 			]}},
-		#b3: {options:{small_headline:true, no_border:{if: =scale.phone, then:false, else:true}, left:true, no_indent:true}},
+		#b3: {options:{small_headline:true, no_border:{if: =scale.phone, then:false, else:true}, no_indent:true}},
 		#h1: {options:{hide_image:{if-all: [=scale.small, =landscape], then:true, else:false}, no_border:{if: =scale.phone, then:true, else:false}}},
 		#h2: {options:{hide_image:{if-all: [=scale.small, =landscape], then:true, else:false}}}
 		

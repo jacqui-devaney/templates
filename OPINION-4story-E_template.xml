@@ -5,10 +5,10 @@
 	<style src="OPINION-stylesheet.ejs" />
     <style src="PHONE-stylesheet.ejs" />
     <style>{
-		#b1: {options:{header:true}},
-		#b2: {options: {small_headline:true, no_border:true}},
-		#b3: {options:{small_headline:true, show_image:true, hide_summary:true, no_image:true, no_border:{if: =scale.phone, then:false, else:true}, byline:{if: =scale.small, then:true, else:false}, F_image:{if: =scale.small, then:true, else:false}}},
-		#b4: {options:{small_headline:true, hide_summary:true, no_border:{if: =scale.phone, then:false, else:true}, byline:{if: =scale.small, then:true, else:false}}},
+		#b1: {options:{justify:true, header:true}},
+		#b2: {options: {justify:true, small_headline:true, no_border:true}},
+		#b3: {options:{justify:true, small_headline:true, show_image:true, hide_summary:true, no_image:true, no_border:{if: =scale.phone, then:false, else:true}, byline:{if: =scale.small, then:true, else:false}, F_image:{if: =scale.small, then:true, else:false}}},
+		#b4: {options:{justify:true, small_headline:true, hide_summary:true, no_border:{if: =scale.phone, then:false, else:true}, byline:{if: =scale.small, then:true, else:false}}},
 		#h1: {options:{hide_image:{if-all: [=scale.small, =landscape], then:true, else:false}, byline:{if: =scale.phone, then:false, else:true}}},
 		#h2: {options:{hide_image:{if-all: [=scale.small, =landscape], then:true, else:false}, byline:{if: =scale.phone, then:false, else:true}, no_border:{if: =scale.phone, then:true, else:false}}}
 	}</style>

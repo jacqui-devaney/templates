@@ -10,14 +10,14 @@
 				]}},
 			#b2: {options: { $switch: [
 					{if: =scale.phone, then: {small_headline:true, show_image:true, no_border:false}},
-					{if: =portrait, then: {small_headline:true, no_border:true, left:true, show_image:true, no_indent:true}},
-					{if: =landscape, then: {small_headline:true, no_border:true, left:true, show_image:{if: =widescreen, then:false, else:true}, no_indent:true}}			
+					{if: =portrait, then: {small_headline:true, no_border:true, show_image:true, no_indent:true}},
+					{if: =landscape, then: {small_headline:true, no_border:true, show_image:{if: =widescreen, then:false, else:true}, no_indent:true}}			
 				]}},
 			
 			#b3: {options: { $switch: [
 					{if: =scale.phone, then: {small_headline:true, show_image:true, no_border:true}},
-					{if: =portrait, then: {small_headline:true, left:true, no_indent:true}},
-					{if: =landscape, then: {small_headline:true, left:true, bottom:true, no_indent:true}}			
+					{if: =portrait, then: {small_headline:true, no_indent:true}},
+					{if: =landscape, then: {small_headline:true, bottom:true, no_indent:true}}			
 				]}},
 			#h2: {options:{hide_image:{if-all: [=scale.small, =landscape], then:true, else:false}, no_border:{if: =scale.phone, then:true, else:false}}}
 	}</style>

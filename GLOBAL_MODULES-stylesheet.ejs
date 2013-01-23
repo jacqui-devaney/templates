@@ -178,7 +178,7 @@
 		font-size:{$multiply:15},
 		line-height:{$multiply:18},
 		text-overflow: " \u00bb",
-        text-align: { if: =options.left, then:left, else:=justify},
+        text-align: { if: =options.justify, then:=justify, else:left},
 		text-scale: {if: =widescreen, then: {$multiply: [=scale.text, 1.2] }, else: inherit}
 
 	},

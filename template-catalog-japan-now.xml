@@ -5,15 +5,47 @@
             <template name="FRONT-4story-F_template.xml" title="4 story - F Photo" section="FRONT_SECTION" min="4" usage="front"/>
             <template name="FRONT-4story-F-deco_template.xml" title="4 story - F liondoor" section="FRONT_SECTION" min="4" usage="front"/>
             <template name="FRONT-4story-Vertical-deco_template.xml" title="4 story - Vertical deco" section="FRONT_SECTION" min="4" deco="true" usage="front"/>
-        <!-- END FRONT SECTION -->
+        	<template 
+				name="FRONT-4story-Video-deco_template.xml"
+				section="FRONT_SECTION" 
+				title="FRONT-4story-Video-deco"
+				min="4" 
+				deco="true"
+				usage="front"
+			/>
+		<!-- END FRONT SECTION -->
         <!-- JAPAN AND WORLD-->
             <template name="SECTION-2story-G-C_template.xml" title="2 story - G photo" section="JAPAN_AND_WORLD" min="4" usage="front"/>
+        	<template 
+				name="SECTION-3story-G-deco-C_template.xml" 
+				section="JAPAN_AND_WORLD" 
+				deco="true" 
+				title="3 story - G liondoor"
+				min="5" 
+				usage="front" 
+			/>
         <!-- END JAPAN AND WORLD -->
         <!-- BUSINESS_AND_MARKETS -->
             <template name="SECTION-2story-G-C_template.xml" title="2 story - G photo" section="BUSINESS_AND_MARKETS" min="4" usage="front"/>
+        	<template 
+				name="SECTION-3story-G-deco-C_template.xml" 
+				section="BUSINESS_AND_MARKETS" 
+				deco="true" 
+				title="3 story - G liondoor"
+				min="5" 
+				usage="front" 
+			/>
         <!-- END BUSINESS_AND_MARKETS -->
         <!-- Lifestyle -->
             <template name="SECTION-2story-G-C_template.xml" title="2 story - G photo" section="LIFESTYLE" min="4" usage="front"/>
+        	<template 
+				name="SECTION-3story-G-deco-C_template.xml" 
+				section="LIFESTYLE" 
+				deco="true" 
+				title="3 story - G liondoor"
+				min="5" 
+				usage="front" 
+			/>
         <!-- END Lifestyle -->
         <!-- GENERIC CONTINUATION -->
             <template name="CONTINUATION-generic-12_template.xml" title="" min="12" usage="continuation"/>

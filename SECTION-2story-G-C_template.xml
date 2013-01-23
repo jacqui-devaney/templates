@@ -10,7 +10,7 @@
 				]}},
 			#b2: {options: {if: =scale.phone,
 					then:{small_headline:true, show_image:true},
-					else:{small_headline:true, show_image:true, no_border:true, left:true, bottom:true, no_indent:true}
+					else:{small_headline:true, show_image:true, no_border:true, bottom:true, no_indent:true}
 				}},
 			#h1: {
 				options:{

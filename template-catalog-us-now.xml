@@ -1331,107 +1331,86 @@
 		
 		<!-- END SPECIAL REPORT 2 -->
 		
-		<!--  THE JOURNAL REPORT (REALLY OLYMPICS) -->
+		<!-- JOURNAL REPORT -->
 		<template 
-			name="SECTION-4story-D-C_template.xml"
-			section="JOURNAL_REPORTS" 
-			title="OLYMPICS - 4 story plain"
-			min="6" 
-			deco="true" 
+			name="SECTION-1story-PV-white_template.xml" 
+			section="JOURNAL_REPORT" 
+			title="PV - (White highlights)"
+			min="3" 
 			usage="front" 
 		/>
 		<template 
-			name="SECTION-3story-G_template.xml"
-			section="JOURNAL_REPORTS" 
-			title="OLYMPICS - 3 story - G photo"
-			min="5"
-			usage="front"
-		/>
-		
-		<template 
-			name="SECTION-3story-G-deco-C_template.xml"
-			section="JOURNAL_REPORTS" 
-			deco="true" 
-			title="OLYMPICS - 3 story - G Media Deco"
-			min="5"
-			usage="front"
-		/>
-		<template 
-			name="SECTION-4story-smallG-deco_template.xml"
-			section="JOURNAL_REPORTS" 
-			title="OLYMPICS - 4 story-Small G Media Deco"
-			min="6" 
-			deco="true"
-			usage="front"
-		/>
-		<template 
-			name="SECTION-1story-PV_template.xml"
-			section="JOURNAL_REPORTS" 
-			title="OLYMPICS - PV photo - Grey highlights"
-			min="3"
-			usage="front"
-		/>
-		<template 
-			name="SECTION-1story-P_template.xml"
-			section="JOURNAL_REPORTS" 
-			title="OLYMPICS - P photo - Grey highlights"
-			min="3"
-			usage="front"
-		/>
-		<template 
-			name="SECTION-4story-smallG-top_template.xml" 
-			section="JOURNAL_REPORTS" 
-			title="OLYMPICS - 4 story - G photo"
-			min="6" 
+			name="SECTION-2story-G-C_template.xml" 
+			section="JOURNAL_REPORT" 
+			title="2 story-G-photo"
+			min="4" 
 			usage="front" 
 		/>
 		<template 
-			name="SECTION-3story-G-mirror_template.xml" 
-			section="JOURNAL_REPORTS" 
-			title="OLYMPICS - 3 story - G photo mirror"
+			name="SECTION-3story-G_template.xml" 
+			section="JOURNAL_REPORT" 
+			title="3 story G photo"
 			min="5" 
-			deco="true"
 			usage="front" 
 		/>
 		<template 
-			name="SECTION-4story-smallG-deco-mirror_template.xml" 
-			section="JOURNAL_REPORTS" 
-			title="OLYMPICS - 4 story - small G Media liondoor - mirror"
-			min="6" 
-			deco="true" 
+			name="SECTION-1story-P_template.xml" 
+			section="JOURNAL_REPORT" 
+			title="P-photo"
+			min="3" 
 			usage="front" 
 		/>
 		<template 
-			name="SECTION-4story-smallG-top-mirror_template.xml" 
-			section="JOURNAL_REPORTS" 
-			title="OLYMPICS - 4 story - G photo - mirror"
-			min="6" 
+			name="SECTION-1story-P-white_template.xml" 
+			section="JOURNAL_REPORT" 
+			title="P-photo - white highlight"
+			min="3" 
 			usage="front" 
 		/>
 		<template 
-			name="SECTION-1story-fullsize-deco.xml" 
-			section="JOURNAL_REPORTS" 
-			title="OLYMPICS - Full size Deco"
-			min="1" 
-			deco="true"
+			name="SECTION-1story-PV_template.xml" 
+			section="JOURNAL_REPORT" 
+			title="PV - Grey highlights"
+			min="3" 
+			usage="front" 
+		/>
+		<template 
+			name="SECTION-1story-P-1highlight_template.xml" 
+			section="JOURNAL_REPORT" 
+			title="P 1 highlight"
+			min="2" 
+			usage="front" 
+		/>
+		<template 
+			name="SECTION-1story-P-1highlight-white_template.xml" 
+			section="JOURNAL_REPORT" 
+			title="P 1 highlight white"
+			min="2" 
 			usage="front" 
 		/>
 		<template 
 			name="SECTION-1story-PV-1highlight_template.xml" 
-			section="JOURNAL_REPORTS" 
-			title="OLYMPICS - PV - 1 highlight (grey)"
+			section="JOURNAL_REPORT" 
+			title="PV - (1 highlight Grey)"
 			min="2" 
 			usage="front" 
 		/>
 		<template 
 			name="SECTION-1story-PV-1highlight-white_template.xml" 
-			section="JOURNAL_REPORTS" 
-			title="OLYMPICS - PV - 1 highlight (white)"
+			section="JOURNAL_REPORT" 
+			title="PV - (1 highlight white)"
 			min="2" 
 			usage="front" 
 		/>
-		
-		<!-- END OLYMPICS -->
+		<template 
+			name="SECTION-1story-fullsize-deco.xml" 
+			section="JOURNAL_REPORT" 
+			title="Full size Deco"
+			min="1" 
+			deco="true"
+			usage="front" 
+		/>
+		<!-- END JOURNAL REPORT -->
 		
 		<!-- OPINION -->
 		<template 

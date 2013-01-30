@@ -111,7 +111,7 @@
 						{ if: =page.section, equals: FRIDAY_JOURNAL, then: fridayjournal },
 						{ if: =page.section, equals: ARENA, then: arena },
 						{ if: =page.section, equals: PERSONAL_JOURNAL, then: personaljournal },
-						{ if: =page.section, equals: THE_JOURNAL_REPORT, then: journalreport },
+						{ if: =page.section, equals: JOURNAL_REPORT, then: journalreport },
 						{ if: =page.section, equals: WHATS_NEWS, then: whatsnews },
 						{ if: =page.section, equals: NEW_YORK, then: greaterny },
 						{ if: =page.section, equals: BUSINESS_AND_FINANCE, then: businessfinance },
@@ -132,9 +132,10 @@
 						{ if: =page.section, equals: SEITE_EINS, then: 
 							{ if: =article.frompage, equals: 1, then: aufmacher, else: seiteeins }
 						},
-						{ if: =page.section, equals: JAPAN, then: japan },	
+						{ if: =page.section, equals: JAPAN_AND_WORLD, then: japan },	
 						{ if: =page.section, equals: LIFESTYLE, then: lifestyle },	
-						{ if: =page.section, equals: WORLD, then: lifestyle },	
+						{ if: =page.section, equals: BUSINESS_AND_MARKETS, then: businessmarkets },	
+						{ if: =page.section, equals: BUSINESS_AND_ECONOMY, then: businesseconomy },
 						
 						"default"
 					] },

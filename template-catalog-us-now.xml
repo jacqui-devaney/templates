@@ -1410,6 +1410,45 @@
 			deco="true"
 			usage="front" 
 		/>
+		<template 
+			name="SECTION-4story-smallG-deco_template.xml" 
+			section="JOURNAL_REPORT" 
+			deco="true" 
+			title="4 story - G liondoor"
+			min="6" 
+			usage="front" 
+		/>
+		<template 
+			name="SECTION-4story-smallG-deco-mirror_template.xml" 
+			section="JOURNAL_REPORT" 
+			title="4 story - small G Media liondoor - mirror"
+			min="6" 
+			deco="true" 
+			usage="front" 
+		/>
+		<template 
+			name="SECTION-3story-G-deco-C_template.xml"
+			section="JOURNAL_REPORT" 
+			deco="true" 
+			title="3 story - G Media Deco"
+			min="5"
+			usage="front"
+		/>
+		<template 
+			name="SECTION-4story-OZ-top_template.xml" 
+			section="JOURNAL_REPORT" 
+			title="4 story - OZ photo"
+			min="6" 
+			usage="front" 
+		/>
+		<template 
+			name="SECTION-4story-OZ-deco-mirror_template.xml" 
+			section="JOURNAL_REPORT" 
+			title="4 story - OZ Media liondoor"
+			min="5" 
+			deco="true" 
+			usage="front" 
+		/>
 		<!-- END JOURNAL REPORT -->
 		
 		<!-- OPINION -->

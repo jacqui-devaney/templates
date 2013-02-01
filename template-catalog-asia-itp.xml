@@ -265,65 +265,86 @@
 		/>
 		<!-- END REVIEW -->
 		
-		<!-- THE JOURNAL REPORT -->
+		<!-- JOURNAL REPORT -->
 		<template 
 			name="SECTION-1story-PV-white_template.xml" 
-			title="PV (white highlights)" 
 			section="JOURNAL_REPORT" 
+			title="PV - (White highlights)"
 			min="3" 
 			usage="front" 
 		/>
 		<template 
 			name="SECTION-2story-G-C_template.xml" 
-			title="2 story - G photo" 
 			section="JOURNAL_REPORT" 
+			title="2 story-G-photo"
 			min="4" 
 			usage="front" 
 		/>
 		<template 
-			name="SECTION-1story-P_template.xml" 
-			title="P photo" 
+			name="SECTION-3story-G_template.xml" 
 			section="JOURNAL_REPORT" 
+			title="3 story G photo"
+			min="5" 
+			usage="front" 
+		/>
+		<template 
+			name="SECTION-1story-P_template.xml" 
+			section="JOURNAL_REPORT" 
+			title="P-photo"
+			min="3" 
+			usage="front" 
+		/>
+		<template 
+			name="SECTION-1story-P-white_template.xml" 
+			section="JOURNAL_REPORT" 
+			title="P-photo - white highlight"
 			min="3" 
 			usage="front" 
 		/>
 		<template 
 			name="SECTION-1story-PV_template.xml" 
-			title="PV (grey highlights)" 
 			section="JOURNAL_REPORT" 
+			title="PV - Grey highlights"
 			min="3" 
 			usage="front" 
 		/>
 		<template 
 			name="SECTION-1story-P-1highlight_template.xml" 
-			title="P photo - 1 highight" 
 			section="JOURNAL_REPORT" 
+			title="P 1 highlight"
 			min="2" 
 			usage="front" 
 		/>
 		<template 
 			name="SECTION-1story-P-1highlight-white_template.xml" 
 			section="JOURNAL_REPORT" 
-			title="P 1 highlight - white"
+			title="P 1 highlight white"
 			min="2" 
 			usage="front" 
 		/>
-		
 		<template 
 			name="SECTION-1story-PV-1highlight_template.xml" 
-			title="PV photo - 1 highight (grey)" 
 			section="JOURNAL_REPORT" 
+			title="PV - (1 highlight Grey)"
 			min="2" 
 			usage="front" 
 		/>
 		<template 
 			name="SECTION-1story-PV-1highlight-white_template.xml" 
-			title="PV photo - 1 highight (white)" 
 			section="JOURNAL_REPORT" 
+			title="PV - (1 highlight white)"
 			min="2" 
 			usage="front" 
 		/>
-		<!-- END THE JOURNAL REPORT -->
+		<template 
+			name="SECTION-1story-fullsize-deco.xml" 
+			section="JOURNAL_REPORT" 
+			title="Full size Deco"
+			min="1" 
+			deco="true"
+			usage="front" 
+		/>
+		<!-- END JOURNAL REPORT -->
 
 		<!-- LIFE AND STYLE -->
 		<template 

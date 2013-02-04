@@ -117,7 +117,10 @@
 	#continues: { 
 		content: { $switch: [
 			{ if: =app.language, equals: en, then: "Article Continues \u2192" },
-			{ if: =app.language, equals: de, then: "Mehr  \u2192" }
+			{ if: =app.language, equals: de, then: "Mehr  \u2192" },
+			{ if: =app.language, equals: ja, then: "Japan Continues \u2192" },
+			{ if: =app.language, equals: ko, then: "Korea Continues \u2192" }
+			
 		]},
 		font-name:DJ5Exchange-SemiboldItalic,
 		color:#c74b15,

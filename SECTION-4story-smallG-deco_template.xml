@@ -21,7 +21,7 @@
 				options:{no_border:{if: =scale.phone, then:true, else:false}, hide_image:{if-all: [=scale.small, =landscape], then:true, else:false}}
 			},
 			#ad_background: {
-				display:{if: =scale.phone, then:inherit, else:{if-all:[{if: =page.number, equals:1}, {if: =page.section, in: [OFF_DUTY, REVIEW, PERSONAL_JOURNAL, JOURNAL_REPORTS, WSJ_MAGAZINE, FRIDAY_JOURNAL, MANSION, ARENA], then:false, else:true }], then:none, else:inherit}}
+				display:{if: =scale.phone, then:inherit, else:{if-all:[{if: =page.number, equals:1}, {if: =page.section, in: [OFF_DUTY, REVIEW, PERSONAL_JOURNAL, JOURNAL_REPORT, WSJ_MAGAZINE, FRIDAY_JOURNAL, MANSION, ARENA], then:false, else:true }], then:none, else:inherit}}
 			}
 		
 	}</style>
@@ -46,17 +46,17 @@
 			#b3:	{ frame: [486, 212, 280, 204]},
 			#b4:	{ frame: [486, 416, 280, 203]},
 			#h1: {
-					frame:[1, 620,{if-all:[{if: =page.number, equals:1}, {if: =page.section, in: [OFF_DUTY, REVIEW, PERSONAL_JOURNAL, JOURNAL_REPORTS, WSJ_MAGAZINE, FRIDAY_JOURNAL, MANSION, ARENA], then:false, else:true }], then:383, else:255}, 256]
+					frame:[1, 620,{if-all:[{if: =page.number, equals:1}, {if: =page.section, in: [OFF_DUTY, REVIEW, PERSONAL_JOURNAL, JOURNAL_REPORT, WSJ_MAGAZINE, FRIDAY_JOURNAL, MANSION, ARENA], then:false, else:true }], then:383, else:255}, 256]
 					
 			},
 			#h2: {
 					frame:[
-						{if-all:[{if: =page.number, equals:1}, {if: =page.section, in: [OFF_DUTY, REVIEW, PERSONAL_JOURNAL, JOURNAL_REPORTS, WSJ_MAGAZINE, FRIDAY_JOURNAL, MANSION, ARENA], then:false, else:true }], then:384, else:256}, 
+						{if-all:[{if: =page.number, equals:1}, {if: =page.section, in: [OFF_DUTY, REVIEW, PERSONAL_JOURNAL, JOURNAL_REPORT, WSJ_MAGAZINE, FRIDAY_JOURNAL, MANSION, ARENA], then:false, else:true }], then:384, else:256}, 
 						620, 
-						{if-all:[{if: =page.number, equals:1}, {if: =page.section, in: [OFF_DUTY, REVIEW, PERSONAL_JOURNAL, JOURNAL_REPORTS, WSJ_MAGAZINE, FRIDAY_JOURNAL, MANSION, ARENA], then:false, else:true }], then:384, else:257}, 
+						{if-all:[{if: =page.number, equals:1}, {if: =page.section, in: [OFF_DUTY, REVIEW, PERSONAL_JOURNAL, JOURNAL_REPORT, WSJ_MAGAZINE, FRIDAY_JOURNAL, MANSION, ARENA], then:false, else:true }], then:384, else:257}, 
 						 256
 					],
-					border-width:[0, {if-all:[{if: =page.number, equals:1}, {if: =page.section, in: [OFF_DUTY, REVIEW, PERSONAL_JOURNAL, JOURNAL_REPORTS, WSJ_MAGAZINE, FRIDAY_JOURNAL, MANSION, ARENA], then:false, else:true }], then:0, else:1}, 0, {if-all:[{if: =page.number, equals:1}, {if: =page.section, in: [OFF_DUTY, REVIEW, PERSONAL_JOURNAL, JOURNAL_REPORTS, WSJ_MAGAZINE, FRIDAY_JOURNAL, MANSION, ARENA], then:false, else:true }], then:1, else:0}],
+					border-width:[0, {if-all:[{if: =page.number, equals:1}, {if: =page.section, in: [OFF_DUTY, REVIEW, PERSONAL_JOURNAL, JOURNAL_REPORT, WSJ_MAGAZINE, FRIDAY_JOURNAL, MANSION, ARENA], then:false, else:true }], then:0, else:1}, 0, {if-all:[{if: =page.number, equals:1}, {if: =page.section, in: [OFF_DUTY, REVIEW, PERSONAL_JOURNAL, JOURNAL_REPORT, WSJ_MAGAZINE, FRIDAY_JOURNAL, MANSION, ARENA], then:false, else:true }], then:1, else:0}],
 					border-color:#b1aca1
 			}
 			
@@ -78,12 +78,12 @@
 			#b3:	{ frame: [494, 207, 280, 207]},
 			#b4:	{ frame: [494, 412, 280, 207]},
 			#h1: {
-					frame:[786, 0, 238, {if-all:[{if: =page.number, equals:1}, {if: =page.section, in: [OFF_DUTY, REVIEW, PERSONAL_JOURNAL, JOURNAL_REPORTS, WSJ_MAGAZINE, FRIDAY_JOURNAL, MANSION, ARENA], then:false, else:true }], then:310, else:216}]
+					frame:[786, 0, 238, {if-all:[{if: =page.number, equals:1}, {if: =page.section, in: [OFF_DUTY, REVIEW, PERSONAL_JOURNAL, JOURNAL_REPORT, WSJ_MAGAZINE, FRIDAY_JOURNAL, MANSION, ARENA], then:false, else:true }], then:310, else:216}]
 
 			},
 			#h2: {
-					frame:[786, {if-all:[{if: =page.number, equals:1}, {if: =page.section, in: [OFF_DUTY, REVIEW, PERSONAL_JOURNAL, JOURNAL_REPORTS, WSJ_MAGAZINE, FRIDAY_JOURNAL, MANSION, ARENA], then:false, else:true }], then:310, else:216}, 238, {if-all:[{if: =page.number, equals:1}, {if: =page.section, in: [OFF_DUTY, REVIEW, PERSONAL_JOURNAL, JOURNAL_REPORTS, WSJ_MAGAZINE, FRIDAY_JOURNAL, MANSION, ARENA], then:false, else:true }], then:310, else:207}],
-					border-width:[{if-all:[{if: =page.number, equals:1}, {if: =page.section, in: [OFF_DUTY, REVIEW, PERSONAL_JOURNAL, JOURNAL_REPORTS, WSJ_MAGAZINE, FRIDAY_JOURNAL, MANSION, ARENA], then:false, else:true }], then:1, else:0}, 0, 0, 0],
+					frame:[786, {if-all:[{if: =page.number, equals:1}, {if: =page.section, in: [OFF_DUTY, REVIEW, PERSONAL_JOURNAL, JOURNAL_REPORT, WSJ_MAGAZINE, FRIDAY_JOURNAL, MANSION, ARENA], then:false, else:true }], then:310, else:216}, 238, {if-all:[{if: =page.number, equals:1}, {if: =page.section, in: [OFF_DUTY, REVIEW, PERSONAL_JOURNAL, JOURNAL_REPORT, WSJ_MAGAZINE, FRIDAY_JOURNAL, MANSION, ARENA], then:false, else:true }], then:310, else:207}],
+					border-width:[{if-all:[{if: =page.number, equals:1}, {if: =page.section, in: [OFF_DUTY, REVIEW, PERSONAL_JOURNAL, JOURNAL_REPORT, WSJ_MAGAZINE, FRIDAY_JOURNAL, MANSION, ARENA], then:false, else:true }], then:1, else:0}, 0, 0, 0],
 					border-color:#b1aca1
 			}
 			

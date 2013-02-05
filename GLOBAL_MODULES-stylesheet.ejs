@@ -1,6 +1,11 @@
 {
 	#bignews_huge_headline: {
-		font-name: { if: =issue.edition, equals: "japan", then: HiraKakuProN-W6, else: DJ5EscrowCond-Bold },
+		font-name: { $switch: [
+				{if: =issue.edition, equals: "japan", then: HiraKakuProN-W6},
+				{if: =issue.edition, equals: "korea", then: AppleSDGothicNeo-Bold},
+				DJ5EscrowCond-Bold
+			]
+		},
 		font-size:{if-all: [
             =scale.headlines,
             {if: =extents.huge, more-than: 1.0, then: true, else: false}, 
@@ -14,7 +19,12 @@
 		text-scale: {if: =scale.small, then: {$multiply: [=scale.text, 0.9] }, else: inherit}
 	},
 	#bignews_large_headline: {
-		font-name: { if: =issue.edition, equals: "japan", then: HiraKakuProN-W6, else: DJ5EscrowCond-Bold },
+		font-name: { $switch: [
+				{if: =issue.edition, equals: "japan", then: HiraKakuProN-W6},
+				{if: =issue.edition, equals: "korea", then: AppleSDGothicNeo-Bold},
+				"DJ5EscrowCond-Bold"
+			]
+		},
 		font-size:{if-all: [
             =scale.headlines,
             {if: =extents.huge, more-than: 1.0, then: true, else: false}, 
@@ -28,7 +38,12 @@
 		text-scale: {if: =scale.small, then: {$multiply: [=scale.text, 0.9] }, else: inherit}
 	},
 	#bignews_big_headline: {
-		font-name: { if: =issue.edition, equals: "japan", then: HiraKakuProN-W6, else: DJ5EscrowCond-Bold },
+		font-name: { $switch: [
+				{if: =issue.edition, equals: "japan", then: HiraKakuProN-W6},
+				{if: =issue.edition, equals: "korea", then: AppleSDGothicNeo-Bold},
+				"DJ5EscrowCond-Bold"
+			]
+		},
 		font-size:{if-all: [
             =scale.headlines,
             {if: =extents.big, more-than: 1.0, then: true, else: false}, 
@@ -42,7 +57,12 @@
 		text-scale: {if: =scale.small, then: {$multiply: [=scale.text, 0.9] }, else: inherit}
 	},
 	#bignews_small_headline: {
-		font-name: { if: =issue.edition, equals: "japan", then: HiraKakuProN-W6, else: DJ5EscrowCond-Bold },
+		font-name: { $switch: [
+				{if: =issue.edition, equals: "japan", then: HiraKakuProN-W6},
+				{if: =issue.edition, equals: "korea", then: AppleSDGothicNeo-Bold},
+				"DJ5EscrowCond-Bold"
+			]
+		},
 		font-size:{if-all: [
             =scale.headlines,
             {if: =extents.big, more-than: 1.0, then: true, else: false}, 
@@ -56,7 +76,12 @@
 		text-scale: {if: =scale.small, then: {$multiply: [=scale.text, 0.9] }, else: inherit}
 	},
 	#large_headline: {
-		font-name: { if: =issue.edition, equals: "japan", then: HiraKakuProN-W6, else: DJ5EscrowCond-Bold },
+		font-name: { $switch: [
+				{if: =issue.edition, equals: "japan", then: HiraKakuProN-W6},
+				{if: =issue.edition, equals: "korea", then: AppleSDGothicNeo-Bold},
+				"DJ5EscrowCond-Bold"
+			]
+		},
 		font-size:{if-all: [
             =scale.headlines,
             {if: =extents.large, more-than: 1.0, then: true, else: false}, 
@@ -72,7 +97,12 @@
 		
 	},
 	#medium_headline: {
-		font-name: { if: =issue.edition, equals: "japan", then: HiraKakuProN-W6, else: DJ5EscrowCond-Bold },
+		font-name: { $switch: [
+				{if: =issue.edition, equals: "japan", then: HiraKakuProN-W6},
+				{if: =issue.edition, equals: "korea", then: AppleSDGothicNeo-Bold},
+				"DJ5EscrowCond-Bold"
+			]
+		},
 		font-size:{if-all: [
             =scale.headlines,
             {if: =extents.medium, more-than: 1.0, then: true, else: false}, 
@@ -88,21 +118,36 @@
 		
 	},
 	#small_headline: {
-		font-name: { if: =issue.edition, equals: "japan", then: HiraKakuProN-W6, else: DJ5EscrowCond-Bold },
+		font-name: { $switch: [
+				{if: =issue.edition, equals: "japan", then: HiraKakuProN-W6},
+				{if: =issue.edition, equals: "korea", then: AppleSDGothicNeo-Bold},
+				"DJ5EscrowCond-Bold"
+			]
+		},
 		font-size:24,
 		line-height:26,
 		text-scale: {if: =scale.small, then: {$multiply: [=scale.text, 0.85] }, else: inherit}
 		
 	},
 	#extra_small_headline: {
-		font-name: { if: =issue.edition, equals: "japan", then: HiraKakuProN-W6, else: DJ5EscrowCond-Bold },
+		font-name: { $switch: [
+				{if: =issue.edition, equals: "japan", then: HiraKakuProN-W6},
+				{if: =issue.edition, equals: "korea", then: AppleSDGothicNeo-Bold},
+				"DJ5EscrowCond-Bold"
+			]
+		},
 		font-size:20,
 		line-height:22,
 		text-scale: {if: =scale.small, then: {$multiply: [=scale.text, 0.85] }, else: inherit}
 		
 	},
 	.article_headline: {
-		font-name: { if: =issue.edition, equals: "japan", then: HiraKakuProN-W6, else: DJ5EscrowCond-Bold },
+		font-name: { $switch: [
+				{if: =issue.edition, equals: "japan", then: HiraKakuProN-W6},
+				{if: =issue.edition, equals: "korea", then: AppleSDGothicNeo-Bold},
+				"DJ5EscrowCond-Bold"
+			]
+		},
 		font-size:48,
 		line-height:50,
 		color:#333
@@ -120,7 +165,12 @@
 		color:#333
 	},
 	.article_subhed: {
-		font-name: { if: =issue.edition, equals: "japan", then: HiraKakuProN-W6, else: DJ5EscrowCond-BoldItalic },
+		font-name: { $switch: [
+				{if: =issue.edition, equals: "japan", then: HiraKakuProN-W6},
+				{if: =issue.edition, equals: "korea", then: AppleSDGothicNeo-Bold},
+				"DJ5EscrowCond-BoldItalic"
+			]
+		},
 		text-align:left,
 		font-size:20,
 		line-height:25,
@@ -134,7 +184,12 @@
 		color:#5e5e5e
 	},
 	.article_flashline: {
-		font-name: { if: =issue.edition, equals: "japan", then: HiraKakuProN-W6, else: DJ5RetinaCd-Semibold },
+		font-name: { $switch: [
+				{if: =issue.edition, equals: "japan", then: HiraKakuProN-W6},
+				{if: =issue.edition, equals: "korea", then: AppleSDGothicNeo-Bold},
+				"DJ5RetinaCd-Semibold"
+			]
+		},
 		text-align:left,
 		font-size:20,
 		color:#656565
@@ -173,7 +228,12 @@
 		color:#948464
 	},
 	.body: {
-		font-name: { if: =issue.edition, equals: "japan", then: HiraKakuProN-W3, else: DJ5Exchange-Medium },
+		font-name: { $switch: [
+				{if: =issue.edition, equals: "japan", then: HiraKakuProN-W3},
+				{if: =issue.edition, equals: "korea", then: AppleSDGothicNeo-Medium},
+				"DJ5Exchange-Medium"
+			]
+		},
 		text-indent:20,
 		font-size:{$multiply:15},
 		line-height:{$multiply:18},
@@ -187,7 +247,12 @@
 		text-indent:0
 	},
 	.article_body: {
-		font-name: { if: =issue.edition, equals: "japan", then: HiraKakuProN-W3, else: DJ5Exchange-Medium },
+		font-name: { $switch: [
+				{if: =issue.edition, equals: "japan", then: HiraKakuProN-W3},
+				{if: =issue.edition, equals: "korea", then: AppleSDGothicNeo-Medium},
+				"DJ5Exchange-Medium"
+			]
+		},
 		text-indent:20,
 		font-size:{$multiply: [16, =view.zoomlevel]},
 		line-height:{$multiply: [22, =view.zoomlevel]},
@@ -225,7 +290,12 @@
 		parargraph-padding: [ 0, 0, 3, 0 ]
 	},
 	.large_dek: {
-		font-name: { if: =issue.edition, equals: "japan", then: HiraKakuProN-W6, else: DJ5EscrowCond-BoldItalic },
+		font-name: { $switch: [
+				{if: =issue.edition, equals: "japan", then: HiraKakuProN-W6},
+				{if: =issue.edition, equals: "korea", then: AppleSDGothicNeo-Bold},
+				"DJ5EscrowCond-BoldItalic"
+			]
+		},
 		font-size:24,
 		line-height:30,
 		text-align:=justify,
@@ -246,7 +316,12 @@
 		
 	},
 	#deco_headline: {
-		font-name: { if: =issue.edition, equals: "japan", then: HiraKakuProN-W6, else: DJ5RetinaCd-Medium },
+		font-name: { $switch: [
+				{if: =issue.edition, equals: "japan", then: HiraKakuProN-W6},
+				{if: =issue.edition, equals: "korea", then: AppleSDGothicNeo-Bold},
+				"DJ5RetinaCd-Medium"
+			]
+		},
 		font-size:24,
 		line-height:24,
 		color:#000,
@@ -254,19 +329,34 @@
 		
 	},
 	#deco_bottom_headline: {
-		font-name: { if: =issue.edition, equals: "japan", then: HiraKakuProN-W6, else: DJ5RetinaCd-Medium },
+		font-name: { $switch: [
+				{if: =issue.edition, equals: "japan", then: HiraKakuProN-W6},
+				{if: =issue.edition, equals: "korea", then: AppleSDGothicNeo-Bold},
+				"DJ5RetinaCd-Medium"
+			]
+		},
 		font-size:24,
 		line-height:24,
 		color:#000
 	},
 	#deco_small_headline: {
-		font-name: { if: =issue.edition, equals: "japan", then: HiraKakuProN-W6, else: DJ5RetinaCd-Medium },
+		font-name: { $switch: [
+				{if: =issue.edition, equals: "japan", then: HiraKakuProN-W6},
+				{if: =issue.edition, equals: "korea", then: AppleSDGothicNeo-Bold},
+				"DJ5RetinaCd-Medium"
+			]
+		},
 		font-size:18,
 		line-height:24,
 		color:#000
 	},
 	.deco_caption: {
-		font-name: { if: =issue.edition, equals: "japan", then: HiraKakuProN-W3, else: DJ5RetinaCd-Medium },
+		font-name: { $switch: [
+				{if: =issue.edition, equals: "japan", then: HiraKakuProN-W6},
+				{if: =issue.edition, equals: "korea", then: AppleSDGothicNeo-Bold},
+				"DJ5RetinaCd-Medium"
+			]
+		},
 		font-size:12,
 		line-height:13,
 		color:#464646,
@@ -275,32 +365,57 @@
 		
 	},
 	.subhed: {
-		font-name: { if: =issue.edition, equals: "japan", then: HiraKakuProN-W6, else: DJ5Exchange-Bold },
+		font-name: { $switch: [
+				{if: =issue.edition, equals: "japan", then: HiraKakuProN-W6},
+				{if: =issue.edition, equals: "korea", then: AppleSDGothicNeo-Bold},
+				"DJ5Exchange-Bold"
+			]
+		},
 		font-size:15,
 		line-height:15,
 		text-align:=justify
 	},
 	.subsection: {
 		color:#000,
-		font-name: { if: =issue.edition, equals: "japan", then: HiraKakuProN-W6, else: DJ5RetinaCd-Medium },
+		font-name: { $switch: [
+				{if: =issue.edition, equals: "japan", then: HiraKakuProN-W6},
+				{if: =issue.edition, equals: "korea", then: AppleSDGothicNeo-Bold},
+				"DJ5RetinaCd-Medium"
+			]
+		},
 		font-size:18
 	},
 	.continuation_headline: {
-		font-name: { if: =issue.edition, equals: "japan", then: HiraKakuProN-W6, else: DJ5Exchange-Bold },
+		font-name: { $switch: [
+				{if: =issue.edition, equals: "japan", then: HiraKakuProN-W6},
+				{if: =issue.edition, equals: "korea", then: AppleSDGothicNeo-Bold},
+				"DJ5Exchange-Bold"
+			]
+		},
 		font-size:17,
 		line-height:16,
 		padding: [ 0, 0, 6, 0 ],
 		text-scale: {if: =widescreen, then: {$multiply: [=scale.text, 1.1] }, else: inherit}
 	},
 	#continuation_headline: {
-		font-name: { if: =issue.edition, equals: "japan", then: HiraKakuProN-W6, else: DJ5Exchange-Bold },
+		font-name: { $switch: [
+				{if: =issue.edition, equals: "japan", then: HiraKakuProN-W6},
+				{if: =issue.edition, equals: "korea", then: AppleSDGothicNeo-Bold},
+				"DJ5Exchange-Bold"
+			]
+		},
 		font-size:17,
 		line-height:16,
 		padding: [ 0, 0, 6, 0 ],
 		text-scale: {if: =widescreen, then: {$multiply: [=scale.text, 1.1] }, else: inherit}
 	},
 	.continuation_body: {
-		font-name: { if: =issue.edition, equals: "japan", then: HiraKakuProN-W3, else: DJ5Exchange-Medium },
+		font-name: { $switch: [
+				{if: =issue.edition, equals: "japan", then: HiraKakuProN-W3},
+				{if: =issue.edition, equals: "korea", then: AppleSDGothicNeo-Medium},
+				"DJ5Exchange-Medium"
+			]
+		},
 		font-size:15,
 		line-height:17,
 		text-overflow: " \u00bb",
@@ -326,7 +441,12 @@
 		paragraph-padding: [ 0, 0, 20, 0 ]
 	},
 	.highlight_large_headline: {
-		font-name: { if: =issue.edition, equals: "japan", then: HiraKakuProN-W6, else: DJ5Exchange-Bold },
+		font-name: { $switch: [
+				{if: =issue.edition, equals: "japan", then: HiraKakuProN-W6},
+				{if: =issue.edition, equals: "korea", then: AppleSDGothicNeo-Bold},
+				"DJ5Exchange-Bold"
+			]
+		},
 		font-size:{if: =scale.small, then: 14, else: 21},
 		line-height:{if: =scale.small, then: 17, else: 25},
 		color:#000,
@@ -334,7 +454,12 @@
 		text-scale:{if: =widescreen, then: {$multiply: [=scale.text, 1.1] }, else: inherit}
 	},
 	.highlight_headline: {
-		font-name: { if: =issue.edition, equals: "japan", then: HiraKakuProN-W6, else: DJ5Exchange-Bold },
+		font-name: { $switch: [
+				{if: =issue.edition, equals: "japan", then: HiraKakuProN-W6},
+				{if: =issue.edition, equals: "korea", then: AppleSDGothicNeo-Bold},
+				"DJ5Exchange-Bold"
+			]
+		},
 		font-size:18,
 		line-height:20,
 		color:#000,

@@ -672,8 +672,8 @@
 		content: { $switch: [
 			{ if: =app.language, equals: en, then: "Continued" },
 			{ if: =app.language, equals: de, then: "\u00a0" },
-			{ if: =app.language, equals: ja, then: "Japan Continues..." },
-			{ if: =app.language, equals: ko, then: "Korea Continues..." }
+			{ if: =app.language, equals: ja, then: "\u00a0" },
+			{ if: =app.language, equals: ko, then: "\u00a0" }
 		] },		
 		font-name: { if: =issue.edition, equals: "japan", then: HiraKakuProN-W6, else: DJ5EscrowCond-BoldItalic},
 		font-size:13,
@@ -683,8 +683,8 @@
 	#continues: { content: { $switch: [
 		{ if: =app.language, equals: en, then: "Article Continues..." },
 		{ if: =app.language, equals: de, then: "Mehr..." },
-		{ if: =app.language, equals: ja, then: "Japan Continues..." },
-		{ if: =app.language, equals: ko, then: "Korea Continues..." }
+		{ if: =app.language, equals: ja, then: "続く… " },
+		{ if: =app.language, equals: ko, then: "기사가 계속됩니다." }
 	] },
 	font-name: { if: =issue.edition, equals: "japan", then: HiraKakuProN-W6, else: DJ5EscrowCond-BoldItalic},
 	font-size:13,

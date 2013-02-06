@@ -54,7 +54,13 @@
 	.subsection: {
 		font-size:15,
 		text-scale: {$multiply: [=scale.text, 1] },
-		line-height:16,
+		line-height:{if-any: [
+				{if: =issue.edition, equals: "japan", then:true},
+				{if: =article.type, equals: "korea", then:true}
+			],
+			then: 20,
+			else: 16
+		},
 		text-transform:uppercase
 	},
 	.strap: {

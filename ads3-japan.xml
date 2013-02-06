@@ -1,3 +1,7 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
-<ads edition="korea">
+<ads edition="japan">
+	<ad section="FRONT_SECTION" premium-site="frontpage" site="front" sponsor="false" article="true"/>
+	<ad section="JAPAN_AND_WORLD" site="lifeandstyle" sponsor="false" article="true"/>
+	<ad section="LIFESTYLE" site="lifestyle" sponsor="false" article="true"/>
+	<ad section="BUSINESS_AND_MARKETS" site="businessmarkets" sponsor="false" article="true"/>
 </ads>

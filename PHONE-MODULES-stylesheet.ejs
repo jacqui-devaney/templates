@@ -1,15 +1,35 @@
 {if: =scale.phone, then: {
 	#large_headline: {
-		font-size:25,	
-		line-height:25,
+		font-size:{ $switch: [
+				{if: =issue.edition, equals: "japan", then: 23},
+				{if: =issue.edition, equals: "korea", then: 23},
+				"25"
+			]
+		},	
+		line-height:{ $switch: [
+				{if: =issue.edition, equals: "japan", then: 23},
+				{if: =issue.edition, equals: "korea", then: 23},
+				"25"
+			]
+		},
 		text-scale: {$multiply: [=scale.text, 1] },
 		padding:[0, 0, 5, 0],
 		text-overflow:" \u00bb"
 		
 	},
 	#small_headline: {
-		font-size:20,
-		line-height:20,
+		font-size:{ $switch: [
+				{if: =issue.edition, equals: "japan", then: 18},
+				{if: =issue.edition, equals: "korea", then: 18},
+				"20"
+			]
+		},	
+		line-height:{ $switch: [
+				{if: =issue.edition, equals: "japan", then: 18},
+				{if: =issue.edition, equals: "korea", then: 18},
+				"20"
+			]
+		},
 		text-scale: {$multiply: [=scale.text, 1] },
 		padding:[0, 0, 0, 0],
 		text-overflow:" \u00bb"

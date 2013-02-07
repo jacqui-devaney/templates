@@ -87,11 +87,25 @@
             {if: =extents.large, more-than: 1.0, then: true, else: false}, 
             {if: =extents.large, less-than: 1.5, then: true, else: false}
         ], then: 32, else: 40 },
-		line-height:{if-all: [
-            =scale.headlines,
-            {if: =extents.large, more-than: 1.0, then: true, else: false}, 
-            {if: =extents.large, less-than: 1.5, then: true, else: false}
-        ], then: 34, else: 42 },
+		line-height:{ $switch: [
+				{if: =issue.edition, equals: "japan", then: {if-all: [
+				    =scale.headlines,
+				    {if: =extents.large, more-than: 1.0, then: true, else: false}, 
+				    {if: =extents.large, less-than: 1.5, then: true, else: false}
+				], then: 36, else: 44 }
+				},
+				{if: =issue.edition, equals: "korea", then: {if-all: [
+				    =scale.headlines,
+				    {if: =extents.large, more-than: 1.0, then: true, else: false}, 
+				    {if: =extents.large, less-than: 1.5, then: true, else: false}
+				], then: 36, else: 44 }},
+				{if-all: [
+				    =scale.headlines,
+				    {if: =extents.large, more-than: 1.0, then: true, else: false}, 
+				    {if: =extents.large, less-than: 1.5, then: true, else: false}
+				], then: 34, else: 42 }
+			]
+		},
 		text-scale: {if: =scale.small, then: {$multiply: [=scale.text, 0.9] }, else: inherit}
 		
 		
@@ -108,11 +122,25 @@
             {if: =extents.medium, more-than: 1.0, then: true, else: false}, 
             {if: =extents.medium, less-than: 1.5, then: true, else: false}
         ], then: 24, else: 32 },
-		line-height:{if-all: [
-            =scale.headlines,
-            {if: =extents.medium, more-than: 1.0, then: true, else: false}, 
-            {if: =extents.medium, less-than: 1.5, then: true, else: false}
-        ], then: 28, else: 36 },
+		line-height:{ $switch: [
+				{if: =issue.edition, equals: "japan", then: {if-all: [
+				    =scale.headlines,
+				    {if: =extents.large, more-than: 1.0, then: true, else: false}, 
+				    {if: =extents.large, less-than: 1.5, then: true, else: false}
+				], then: 30, else: 38 }
+				},
+				{if: =issue.edition, equals: "korea", then: {if-all: [
+				    =scale.headlines,
+				    {if: =extents.large, more-than: 1.0, then: true, else: false}, 
+				    {if: =extents.large, less-than: 1.5, then: true, else: false}
+				], then: 30, else: 38 }},
+				{if-all: [
+				    =scale.headlines,
+				    {if: =extents.large, more-than: 1.0, then: true, else: false}, 
+				    {if: =extents.large, less-than: 1.5, then: true, else: false}
+				], then: 28, else: 36 }
+			]
+		},
 		text-scale: {if: =scale.small, then: {$multiply: [=scale.text, 0.9] }, else: inherit}
 		
 		
@@ -125,7 +153,12 @@
 			]
 		},
 		font-size:24,
-		line-height:26,
+		line-height:{ $switch: [
+				{if: =issue.edition, equals: "japan", then: 28},
+				{if: =issue.edition, equals: "korea", then: 28},
+				"26"
+			]
+		},
 		text-scale: {if: =scale.small, then: {$multiply: [=scale.text, 0.85] }, else: inherit}
 		
 	},

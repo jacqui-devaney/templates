@@ -1971,7 +1971,7 @@
 			usage="continuation"
 			page="2"
 		/>
-        <template 
+		<template 
 			name="SECTION-1story-PV-1highlight_template.xml" 
 			title="PV - 1 highlight (grey)"
 			min="2" 
@@ -1981,6 +1981,49 @@
 		<template 
 			name="SECTION-1story-PV-1highlight-white_template.xml" 
 			title="PV - 1 highlight (white)"
+			min="2" 
+			usage="continuation" 
+			page="2"
+		/>
+		<template 
+			name="SECTION-1story-PV_template.xml" 
+			title="PV -  2 highlights (grey)"
+			min="3" 
+			usage="continuation" 
+			page="2"
+		/>
+		<template 
+			name="SECTION-1story-PV-white_template.xml" 
+			title="PV - 2 highlights (white)"
+			min="3" 
+			usage="continuation" 
+			page="2"
+		/>
+
+		<template 
+			name="SECTION-1story-P_template.xml" 
+			title="P-photo - grey 2 highlights "
+			min="3" 
+			usage="continuation" 
+			page="2"
+		/>
+		<template 
+			name="SECTION-1story-P-white_template.xml" 
+			title="P-photo - white 2 highlights "
+			min="3" 
+			usage="continuation" 
+			page="2"
+		/>
+		<template 
+			name="SECTION-1story-P-1highlight_template.xml" 
+			title="P-photo - 1highlight"
+			min="2" 
+			usage="continuation" 
+			page="2"
+		/>
+		<template 
+			name="SECTION-1story-P-1highlight-white_template.xml" 
+			title="P-photo - white 1highlight"
 			min="2" 
 			usage="continuation" 
 			page="2"

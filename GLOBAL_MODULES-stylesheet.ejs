@@ -320,8 +320,8 @@
 		font-name:DJ5Exchange-Semibold,
 		font-size:{$multiply: [16, =view.zoomlevel]},
 		line-height:{$multiply: [20, =view.zoomlevel]},
-		parargraph-padding: [ 0, 0, 3, 0 ],
-		text-transform:capitalize
+		text-transform:capitalize,
+		parargraph-padding: [ 0, 0, 3, 0 ]
 	},
 	.large_dek: {
 		font-name: { $switch: [
@@ -427,7 +427,12 @@
 			]
 		},
 		font-size:17,
-		line-height:16,
+		line-height:{ $switch: [
+				{if: =issue.edition, equals: "japan", then: 18},
+				{if: =issue.edition, equals: "korea", then: 18},
+				"16"
+			]
+		},
 		padding: [ 0, 0, 6, 0 ],
 		text-scale: {if: =widescreen, then: {$multiply: [=scale.text, 1.1] }, else: inherit}
 	},
@@ -439,7 +444,12 @@
 			]
 		},
 		font-size:17,
-		line-height:16,
+		line-height:{ $switch: [
+				{if: =issue.edition, equals: "japan", then: 18},
+				{if: =issue.edition, equals: "korea", then: 18},
+				"16"
+			]
+		},
 		padding: [ 0, 0, 6, 0 ],
 		text-scale: {if: =widescreen, then: {$multiply: [=scale.text, 1.1] }, else: inherit}
 	},

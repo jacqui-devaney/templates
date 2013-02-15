@@ -6,11 +6,11 @@
 		#b1: {options: { $switch: [
 				{if: =scale.phone, then: {G_image:true, bottom_border:true, normal_headline:true, no_caption:true}},
 				{if: =portrait, then: {TH_image:{if: =scale.small, then:true, else:false}}},
-				{if: =landscape, then: {TH-land_image:{if: =scale.small, then:true, else:false}}}			
+				{if: =landscape, then: {justify:true, TH-land_image:{if: =scale.small, then:true, else:false}}}			
 			]}},
 		#h4: { options: {$switch: [
 				{if: =scale.phone, then: {no_border:true}},
-				{if: =portrait, then: {single:true, white_highlight:true, D_image:true, indent:true, portrait:{if: =scale.small, then:false, else:true}}},
+				{if: =portrait, then: {single:true, justify:true, white_highlight:true, D_image:true, indent:true, portrait:{if: =scale.small, then:false, else:true}}},
 				{if: =landscape, then: {single:true, white_highlight:true, D_image:true, indent:true, landscape:{if: =scale.small, then:false, else:true}}}	
 			]
 		}}

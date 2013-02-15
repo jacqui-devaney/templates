@@ -8,7 +8,7 @@
 						{if: =widescreen, then: [8, 34, 752, 250]},
 						{if: =scale.large, then: [8, 34, 752, 330]}
 					]},
-					options:{bignews_small_headline:true, no_border:true, byline:true} 
+					options:{bignews_small_headline:true, justify:true, no_border:true, byline:true} 
 			},
 			#b2:	{ 
 						frame: {$switch: [
@@ -57,7 +57,7 @@
 						{if: =widescreen, then: [11, 34, 1002, 333]},
 						{if: =scale.large, then: [11, 34, 1002, 333]}
 					]},
-					options:{bignews_small_headline:true, no_border:true, bottom:true, byline:true, two_columns:true} 
+					options:{bignews_small_headline:true, no_border:true, justify:true, bottom:true, byline:true, two_columns:true} 
 			},
 			#b2:	{ 
 						frame: {$switch: [

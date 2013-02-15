@@ -8,7 +8,7 @@
 				{if: =portrait, then: {P_image:true}},
 				{if: =landscape, then: {F_image:{if: =widescreen, then:true, else:false}, P_image:{if: =widescreen, then:false, else:true}}}			
 			]}},
-		#h3: {options:{single:true, justify:true, indent:true, no_border:{if: =scale.phone, then:true, else:false}, white_highlight:true}}
+		#h3: {options:{single:true, indent:true, justify:{if: =portrait, then:true, else:false}, no_border:{if: =scale.phone, then:true, else:false}, white_highlight:true}}
 		
 	}</style>
 	<style>{

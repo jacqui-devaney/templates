@@ -5,7 +5,7 @@
 	<style>{
 		#b1: {options: {$switch: [
 			{if: =scale.phone, then: {large_headline:true, one_column:true}},
-			{if: =portrait, then:{justify:true, large_headline:true, hide_image:{if: =widescreen, then:true, else:false}, one_column:{if: =widescreen, then:true, else:false}}},
+			{if: =portrait, then:{large_headline:true, justify:true, hide_image:{if: =widescreen, then:true, else:false}, one_column:{if: =widescreen, then:true, else:false}}},
 			{if: =landscape, then: {justify:true, large_headline:true, show_image:true, one_column:{if: =widescreen, then:true, else:false}}}
 			
 		]}},

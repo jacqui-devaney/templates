@@ -17,7 +17,7 @@
 		}},
 		#b2: {options:{if: =portrait, 
 				then:{small_headline:true, no_indent:true},
-				else: {small_headline:true, bottom:true, no_indent:true, no_border:{if: =widescreen, then:true, else:false}}
+				else: {small_headline:true, justify:true, bottom:true, no_indent:true, no_border:{if: =widescreen, then:true, else:false}}
 			}},
 		#deco: {options: {if: =scale.phone, 
 				then: {G_image:true, no_border:true, normal_headline:true},

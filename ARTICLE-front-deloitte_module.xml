@@ -29,12 +29,6 @@
 			layout-grid-line-offset: {$multiply: [18, =view.zoomlevel]}
 			
         }},
-		{strong: {
-			font-name:Helvetica-Bold
-		}},
-		{em: {
-			font-name:Helvetica-Oblique
-		}},
 
 		{.body-bug: {
 			display: none
@@ -82,10 +76,13 @@
 			display: {if: =page.section, equals: "CFO", then:inherit, else:none}
 		}},
 		{em: {
-			font-name:Helvetica
+			font-name:Helvetica-Oblique
 		}},
 		{strong: {
-			font-name:Helvetica
+			font-name:Helvetica-Bold
+		}},
+		{p: {
+			padding:[0, 0, 10, 0]
 		}},
 		{cite: {
 			font-name:Helvetica

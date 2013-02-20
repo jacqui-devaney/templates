@@ -824,8 +824,10 @@
 		color:#333,
 		font-name:Arial-BoldMT,
 		content: { $switch: [
-			{ if: =app.language, equals: en, then: "Close" },
-			{ if: =app.language, equals: de, then: "Schließen" }
+			{ if: =app.language, equals: ja, then: "閉じる" },
+			{ if: =app.language, equals: de, then: "Schließen" },
+			{ if: =app.language, equals: ko, then: "닫기" },
+			"Close"
 		] }
 	},
 

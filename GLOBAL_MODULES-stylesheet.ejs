@@ -720,8 +720,8 @@
 			{ if: =app.language, equals: ko, then: "\u00a0" }
 		] },		
 		font-name: { $switch: [
-				{if: =issue.edition, equals: "japan", then: HiraKakuProN-W6},
-				{if: =issue.edition, equals: "korea", then: AppleSDGothicNeo-Bold},
+				{if:  =app.language, equals: "japan", then: HiraKakuProN-W6},
+				{if:  =app.language, equals: "korea", then: AppleSDGothicNeo-Bold},
 				DJ5Exchange-SemiboldItalic
 			]
 		},
@@ -736,8 +736,8 @@
 		{ if: =app.language, equals: ko, then: "기사가 계속됩니다." }
 	] },
 	font-name: { $switch: [
-			{if: =issue.edition, equals: "japan", then: HiraKakuProN-W6},
-			{if: =issue.edition, equals: "korea", then: AppleSDGothicNeo-Bold},
+			{if:  =app.language, equals: "japan", then: HiraKakuProN-W6},
+			{if:  =app.language, equals: "korea", then: AppleSDGothicNeo-Bold},
 			DJ5Exchange-SemiboldItalic
 		]
 	},

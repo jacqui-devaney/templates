@@ -73,10 +73,10 @@
 			display: {if: =page.section, equals: "CFO", then:inherit, else:none}
 		}},
 		{em: {
-			font-name:Helvetica-Bold
+			font-name:Helvetica-Oblique
 		}},
 		{strong: {
-			font-name:Helvetica-Oblique
+			font-name:Helvetica-Bold
 		}},
 		{cite: {
 			font-name:Helvetica

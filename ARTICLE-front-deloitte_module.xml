@@ -29,6 +29,13 @@
 			layout-grid-line-offset: {$multiply: [18, =view.zoomlevel]}
 			
         }},
+		{strong: {
+			font-name:Helvetica-Bold
+		}},
+		{em: {
+			font-name:Helvetica-Oblique
+		}},
+
 		{.body-bug: {
 			display: none
 		}},

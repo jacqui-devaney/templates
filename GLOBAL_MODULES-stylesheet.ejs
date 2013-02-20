@@ -719,7 +719,12 @@
 			{ if: =app.language, equals: ja, then: "\u00a0" },
 			{ if: =app.language, equals: ko, then: "\u00a0" }
 		] },		
-		font-name: { if: =issue.edition, equals: "japan", then: HiraKakuProN-W6, else: DJ5EscrowCond-BoldItalic},
+		font-name: { $switch: [
+				{if: =issue.edition, equals: "japan", then: HiraKakuProN-W6},
+				{if: =issue.edition, equals: "korea", then: AppleSDGothicNeo-Bold},
+				DJ5Exchange-SemiboldItalic
+			]
+		},
 		font-size:13,
 		color:#989898,
 		text-align:left
@@ -730,7 +735,12 @@
 		{ if: =app.language, equals: ja, then: "続く… " },
 		{ if: =app.language, equals: ko, then: "기사가 계속됩니다." }
 	] },
-	font-name: { if: =issue.edition, equals: "japan", then: HiraKakuProN-W6, else: DJ5EscrowCond-BoldItalic},
+	font-name: { $switch: [
+			{if: =issue.edition, equals: "japan", then: HiraKakuProN-W6},
+			{if: =issue.edition, equals: "korea", then: AppleSDGothicNeo-Bold},
+			DJ5Exchange-SemiboldItalic
+		]
+	},
 	font-size:13,
 	color:#989898,
 	text-align:right
@@ -800,10 +810,12 @@
 		color:#333,
 		font-name:Helvetica,
 		text-align:left,
-		text-indent:20,
+		text-indent:0,
 		font-size:{$multiply: [15, =view.zoomlevel]},
 		line-height:{$multiply: [20, =view.zoomlevel]},
-        text-align: =justify
+        text-align: =justify,
+		paragraph-padding: [ 0, 0, 20, 0 ]
+
 	},
 	#close_button_p: {
 		padding:[8, 0, 0, 0]

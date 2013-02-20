@@ -148,7 +148,12 @@
 			{ if: =app.language, equals: ko, then: "기사가 계속됩니다." }
 			
 		]},
-		font-name:DJ5Exchange-SemiboldItalic,
+		font-name: { $switch: [
+				{if: =issue.edition, equals: "japan", then: HiraKakuProN-W6},
+				{if: =issue.edition, equals: "korea", then: AppleSDGothicNeo-Bold},
+				DJ5Exchange-SemiboldItalic
+			]
+		},
 		color:#c74b15,
 		display: { if: =view.direction, equals: vertical, then: none, else: inherit },
 		font-name:DJ5Exchange-SemiboldItalic,

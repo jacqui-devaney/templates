@@ -181,7 +181,12 @@
 				"DJ5EscrowCond-Bold"
 			]
 		},
-		font-size:48,
+		font-size:{ $switch: [
+				{if: =issue.edition, equals: "japan", then: 43},
+				{if: =issue.edition, equals: "korea", then: 43},
+				"48"
+			]
+		},
 		line-height:50,
 		color:#333
 	},

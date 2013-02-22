@@ -1563,6 +1563,125 @@
 			usage="front" 
 		/>
 		<!-- END WSJ MAGAZINE -->
+		<!-- WSJ_MONEY -->
+		<template 
+			name="SECTION-1story-PV_template.xml" 
+			section="WSJ_MONEY" 
+			title="PV - (Grey highlights)"
+			min="3" 
+			usage="front" 
+		/>
+		<template 
+			name="SECTION-1story-PV-white_template.xml" 
+			section="WSJ_MONEY" 
+			title="PV - White highlights"
+			min="3" 
+			usage="front" 
+		/>
+		<template 
+			name="SECTION-1story-PV-1highlight-white_template.xml" 
+			section="WSJ_MONEY" 
+			title="PV 1 highlight - white"
+			min="2" 
+			usage="front" 
+		/>
+		<template 
+			name="SECTION-1story-PV-1highlight_template.xml" 
+			section="WSJ_MONEY" 
+			title="PV 1 highlight"
+			min="2" 
+			usage="front" 
+		/>
+		<template 
+			name="SECTION-1story-P-white_template.xml" 
+			section="WSJ_MONEY" 
+			title="P-photo - white highlights"
+			min="3" 
+			usage="front" 
+		/>
+		<template 
+			name="SECTION-1story-P-1highlight_template.xml" 
+			section="WSJ_MONEY" 
+			title="P 1 highlight"
+			min="2" 
+			usage="front" 
+		/>
+		<template 
+			name="SECTION-1story-P-1highlight-white_template.xml" 
+			section="WSJ_MONEY" 
+			title="P 1 highlight white"
+			min="2" 
+			usage="front" 
+		/>
+		<template 
+			name="SECTION-1story-fullsize-deco.xml" 
+			section="WSJ_MONEY" 
+			title="Full size Deco"
+			min="1" 
+			deco="true"
+			usage="front" 
+		/>
+		<template 
+			name="SECTION-2story-G-C_template.xml" 
+			section="WSJ_MONEY" 
+			title="2 story -G"
+			min="4" 
+			usage="front" 
+		/>
+		<template 
+			name="SECTION-3story-G-deco-C_template.xml" 
+			section="WSJ_MONEY" 
+			deco="true" 
+			title="3 story - G liondoor"
+			min="5" 
+			usage="front" 
+		/>
+
+		<template 
+			name="SECTION-3story-G_template.xml" 
+			section="WSJ_MONEY" 
+			title="3 story-G"
+			min="5" 
+			usage="front" 
+		/>
+		<template 
+			name="SECTION-4story-2D-C_template.xml" 
+			section="WSJ_MONEY" 
+			title="4 story plain"
+			min="6" 
+			deco="true" 
+			usage="front" 
+		/>
+		<template 
+			name="SECTION-4story-smallG-bottom_template.xml" 
+			section="WSJ_MONEY" 
+			title="4 story second story G photo"
+			min="6" 
+			usage="front" 
+		/>
+		<template 
+			name="SECTION-4story-smallG-bottom-mirror_template.xml" 
+			section="WSJ_MONEY" 
+			title="4 story second story G photo - mirror"
+			min="6" 
+			usage="front" 
+		/>
+		<template 
+			name="SECTION-4story-smallG-deco_template.xml" 
+			section="WSJ_MONEY" 
+			title="4 story - small G Media liondoor"
+			min="6" 
+			deco="true" 
+			usage="front" 
+		/>
+		<template 
+			name="SECTION-4story-OZ-top_template.xml" 
+			section="WSJ_MONEY" 
+			title="4 story - OZ photo"
+			min="6" 
+			usage="front" 
+		/>
+		<!-- END WSJ_MONEY -->
 		
 		
 		<!-- GENERIC CONTINUATION -->

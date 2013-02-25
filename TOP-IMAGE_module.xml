@@ -36,6 +36,7 @@
 				height: {$multiply: [{$subtract:[=view.width, 18]}, {$switch: [
 						{if: =options.F_image, then:0.39},
 						{if: =options.OZ_image, then:1.07},
+						{if: =options.C_image, then:.56},
 						.66
 					]}
 				]}, 

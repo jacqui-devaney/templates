@@ -272,7 +272,7 @@
 				"DJ5Exchange-Medium"
 			]
 		},
-		text-indent:20,
+		text-indent:{if: =issue.edition, equals: "japan", then: 0, else:20},
 		font-size:{$multiply:15},
 		line-height:{$multiply:18},
 		text-overflow: " \u00bb",

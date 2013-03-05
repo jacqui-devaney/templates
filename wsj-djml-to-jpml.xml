@@ -135,6 +135,31 @@
     </xsl:if>
 </xsl:template>
 
+<xsl:template match="list[@type = &quot;UNORDERED&quot;]">
+    <panel class="unordered-list">
+        <xsl:apply-templates select="*"/>
+    </panel>
+</xsl:template>
+
+<xsl:template match="list[@type = &quot;ORDERED&quot;]">
+    <panel class="ordered-list">
+        <xsl:apply-templates select="*"/>
+    </panel>
+</xsl:template>
+
+<xsl:template match="list-item">
+    <p class="list-item"><mark><xsl:choose>
+        <xsl:when test="../@type = &quot;UNORDERED&quot;">
+            <xsl:attribute name="class">list-item-bullet</xsl:attribute>
+        </xsl:when>
+        <xsl:when test="../@type = &quot;ORDERED&quot;">
+            <xsl:attribute name="class">list-item-number</xsl:attribute>
+            <xsl:value-of select="position()"/>
+            <xsl:text>.</xsl:text>
+        </xsl:when>
+    </xsl:choose></mark><xsl:text> </xsl:text><xsl:value-of select="."/></p>
+</xsl:template>
+
 <!-- We intentionally do not output the byline as part of the article body. -->
 <xsl:template match="byline">
 </xsl:template>

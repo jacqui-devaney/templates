@@ -883,7 +883,14 @@
 		else: inherit}
 	},
 	#m_subsection: { content: =article.subsection },
-	#m_headline: { content: =article.headline }
+	#m_headline: { content: =article.headline },
+	.list-item: { 
+		    text-indent: -16,
+		    padding: [0, 0, 0, 16]
+	  },
+	  .list-item-bullet: {
+	    content: "\u00a0\u2022 "
+	  }
 	
 	
 	

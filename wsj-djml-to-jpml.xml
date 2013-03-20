@@ -111,7 +111,13 @@
     </xsl:for-each>
 </xsl:template>
 
-<xsl:template match="p">
+<xsl:template match="p[@type = &quot;CODA&quot;]" priority="1">
+    <xsl:if test="string(.)">
+        <!--panel class="blockquote"--><p class="blockquote-p"><xsl:apply-templates select="node()"/></p><!--/panel-->
+    </xsl:if>
+</xsl:template>
+
+<xsl:template match="p" priority="0">
     <xsl:if test="string(.)">
         <p>        
             <xsl:if test="@type">
@@ -136,15 +142,15 @@
 </xsl:template>
 
 <xsl:template match="list[@type = &quot;UNORDERED&quot;]">
-    <panel class="unordered-list">
+    <!--panel class="unordered-list"-->
         <xsl:apply-templates select="*"/>
-    </panel>
+    <!--/panel-->
 </xsl:template>
 
 <xsl:template match="list[@type = &quot;ORDERED&quot;]">
-    <panel class="ordered-list">
+    <!--panel class="ordered-list"-->
         <xsl:apply-templates select="*"/>
-    </panel>
+    <!--/panel-->
 </xsl:template>
 
 <xsl:template match="list-item">

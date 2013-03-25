@@ -1,0 +1,70 @@
+<jpml id="FRONT-4story-E-deco-top_v2_template">
+	<style src="GLOBAL-stylesheet.ejs" />
+	<style src="FRONT-stylesheet.ejs" />
+	<style> {
+		if: =portrait, then: {
+			#deco:			{ 
+								frame: {$switch: [
+									{if: =widescreen, then: [194, 28, 328, 234]},
+									{if: =scale.large, then: [194, 0, 375, 345]}
+								]},
+								options:{normal_headline:true, no_border:true, F_image: {if: =widescreen, then:true, else:false}} 
+							},
+			#b1:			{ 
+								frame: {$switch: [
+									{if: =widescreen, then: [535, 28, 230, 548]},
+									{if: =scale.large, then: [582, 0, 183, 525]}
+								]},
+								options:{medium_headline:true, no_border:true, no_indent:true} 
+							},
+			#b2:			{ 
+								frame: {$switch: [
+									{if: =widescreen, then: [194, 260, 328, 314]},
+									{if: =scale.large, then: [194, 345, 375, 180]}
+								]},
+								options:{small_headline:true, justify:true, show_image:true, byline:{if: =scale.small, then:true, else:false}} 
+							},
+			#b3:			{ frame: [194, 525, 280, 263], options:{small_headline:true, bottom:true, no_indent:true} },
+			#b4:			{ frame: [486, 525, 280, 263], options:{no_indent:true, no_image:true} }
+		}, else: {
+			#deco:			{ 
+								frame: {$switch: [
+									{if: =widescreen, then: [205, 28, 375, 330]},
+									{if: =scale.large, then: [205, 0, 375, 315]}
+								]},
+								options:{normal_headline:true, no_border:true, medium_deco:{if: =scale.large, then:true, else:false},F_image: {if: =widescreen, then:true, else:false}, no_caption:{if: =scale.small, then:true, else:false}} 
+							},
+			#b1:			{ 
+								frame: {$switch: [
+									{if: =widescreen, then: [593, 28, 430, 344]},
+									{if: =scale.large, then: [593, 0, 430, 315]}
+								]},
+								options:{medium_headline:true, justify:true, show_image:true, no_border:true, bottom:true, byline:{if: =scale.small, then:true, else:false}}  
+							},
+			#b2:			{ 
+								frame: {$switch: [
+									{if: =widescreen, then: [205, 370, 280, 250]},
+									{if: =scale.large, then: [205, 315, 280, 215]}
+								]},
+								options:{small_headline:true, left:{if: =scale.small, then:true, else:false}, no_indent:true}  
+							},
+			#b3:			{ frame: [496, 315, 280, 215], options:{small_headline:true, no_indent:true} },
+			#b4:			{ frame: [787, 315, 236, 215], options:{no_indent:true, dek:{if: =scale.small, then:true, else:false}, no_image:true} }
+		}
+		
+		
+		
+	} </style>
+	
+
+	<box id="whatsnews_itp" embed="whatsnews" />
+	<box class="maude unit_ad front_banner">
+		<box id="ad_banner" class="ad-banner" embed="advertisement" />
+	</box>
+	<box id="deco" embed="article" module="DECO_module.xml" />
+	<box id="b1" embed="article" module="FRONT-NO-IMAGE_module.xml" />
+	<box id="b2" embed="article" module="FRONT-NO-IMAGE_module.xml" />
+	<box id="b3" embed="article" module="FRONT-NO-IMAGE_module.xml" />
+	<box id="b4" embed="article" module="AHED_module.xml" />
+	
+</jpml>

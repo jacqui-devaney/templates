@@ -1,27 +1,48 @@
-{
-	
-	$join: [
-	{.line: { background-color:#b1aca1}},
-	{#whatsnews_wrapper:{display:none}},
-	{if: =portrait, then: {
-			#marketstrap:	{ frame: [0, 0, 768, 26]},
-			#whatsnews:		{ frame: [3, 34, 183, 642], options: { expanded-frame: [
-				{$multiply:[=scale.pagex, 3]}, 
-				{$multiply:[=scale.pagey, 34]}, 
-				{$multiply:[=scale.pagex, 550]}, 
-				{$multiply:[=scale.pagey, 642]}
-			] } },
-			#ad_background: { frame: [3, 677, 182, 195] }
-		}, else: {
-			#marketstrap:	{ frame: [0, 0, 1024, 26] },
-			#whatsnews:		{ frame: [11, 34, 183, 388], options: { expanded-frame: [
-				{$multiply:[=scale.pagex, 3]}, 
-				{$multiply:[=scale.pagey, 34]}, 
-				{$multiply:[=scale.pagex, 550]}, 
-				{$multiply:[=scale.pagey, 388]}
-			] } },
-			#ad_background: { frame: [11, 422, 182, 195] }
-	}}
-	
-	]
-}
+{$join: [
+{.line: { background-color:#b1aca1}},
+{#whatsnews_wrapper:{display:none}},
+{if: =portrait, then: {
+		#marketstrap:	{ frame: [0, 0, 768, 26]},
+		#whatsnews:		{ frame: [3, 34, 183, 642], options: { expanded-frame: [
+			{$multiply:[=scale.pagex, 3]}, 
+			{$multiply:[=scale.pagey, 34]}, 
+			{$multiply:[=scale.pagex, 550]}, 
+			{$multiply:[=scale.pagey, 642]}
+		] } },
+		#whatsnews_tall:		{ frame: [3, 34, 183, 750], options: { expanded-frame: [
+			{$multiply:[=scale.pagex, 3]}, 
+			{$multiply:[=scale.pagey, 34]}, 
+			{$multiply:[=scale.pagex, 550]}, 
+			{$multiply:[=scale.pagey, 750]}
+		] } },
+		#whatsnews_itp:		{ frame: [3, 0, 183, 780], options: { expanded-frame: [
+			{$multiply:[=scale.pagex, 3]}, 
+			{$multiply:[=scale.pagey, 0]}, 
+			{$multiply:[=scale.pagex, 550]}, 
+			{$multiply:[=scale.pagey, 780]}
+		] } },
+		#ad_background: { frame: [3, 677, 182, 195] }
+	}, else: {
+		#marketstrap:	{ frame: [0, 0, 1024, 26] },
+		#whatsnews:		{ frame: [11, 34, 183, 388], options: { expanded-frame: [
+			{$multiply:[=scale.pagex, 3]}, 
+			{$multiply:[=scale.pagey, 34]}, 
+			{$multiply:[=scale.pagex, 550]}, 
+			{$multiply:[=scale.pagey, 388]}
+		] } },
+		#whatsnews_tall:		{ frame: [11, 34, 183, 492], options: { expanded-frame: [
+			{$multiply:[=scale.pagex, 3]}, 
+			{$multiply:[=scale.pagey, 34]}, 
+			{$multiply:[=scale.pagex, 550]}, 
+			{$multiply:[=scale.pagey, 492]}
+		] } },
+		#whatsnews_itp:		{ frame: [11, 0, 183, 530], options: { expanded-frame: [
+			{$multiply:[=scale.pagex, 3]}, 
+			{$multiply:[=scale.pagey, 0]}, 
+			{$multiply:[=scale.pagex, 550]}, 
+			{$multiply:[=scale.pagey, 530]}
+		] } },
+		#ad_background: { frame: [11, 422, 182, 195] }
+}}
+
+]}

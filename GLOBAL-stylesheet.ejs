@@ -11,6 +11,7 @@
 	.ad-fullpage: { options: { zone: {$join: [=ad.prefix, fullpage]} } },
 	.ad-rectangle: { options: { zone: {$join: [=ad.prefix, {if: =scale.phone, then: sbanner, else: rectangle}]} } },
 	.ad-twocolumn: { options: { zone: {$join: [=ad.prefix, {if: =scale.phone, then: abanner, else: twocolumn}]} } },
+	.ad-banner: { options: { zone: {$join: [=ad.prefix, {if: =scale.phone, then: sbanner, else: frontbanner}]} } },
 
 	.ad_light: {background-color: #e4e4e4},
 	.ad_light: {background-color: #efefef},
@@ -55,6 +56,26 @@
 			{if: =scale.large, then: 175}
 		]}
 	},
+	#ad_banner: {
+		pixels-per-point-x: 1,
+		pixels-per-point-y: 1,
+		anchor-x: center,
+		anchor-y: middle,
+		height: {$switch: [
+			{if-all: [=scale.phone, =portrait], then:50},
+			{if-all: [=scale.small, =portrait], then:90},
+			{if-all: [=scale.large, =portrait], then:90},
+			{if-all: [=scale.small, =landscape], then:90},
+			{if-all: [=scale.large, =landscape], then:90}
+		]},
+		width: {$switch: [
+			{if-all: [=scale.phone, =portrait], then:320},
+			{if-all: [=scale.small, =portrait], then:600},
+			{if-all: [=scale.large, =portrait], then:768},
+			{if-all: [=scale.small, =landscape], then:828},
+			{if-all: [=scale.large, =landscape], then:1024}
+		]}
+	},
 	#article_advertisement: {
 		anchor-x:center,
 		anchor-y:bottom,
@@ -94,6 +115,12 @@
 		frame: {if: =portrait, 
 			then: [0, 629, 555, 218],
 			else: [285, 367, 569, 218]
+		}
+	},
+	.front_banner: {
+		frame: {if: =portrait, 
+			then: [0, 788, 768, 90],
+			else: [0, 530, 1024, 90]
 		}
 	}
 }

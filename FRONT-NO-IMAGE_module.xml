@@ -42,7 +42,7 @@
 			{#bignews_small_headline: { display: { if: =options.bignews_small_headline, then:inherit }}},
 			{.byline: {display: {$switch: [
 				{if: =scale.small, then:{if: =options.byline, then:inherit, else:none}},
-				{if: =scale.large, then: inherit}
+				{if: =scale.large, then: {if: =options.no_byline, then:none, else:inherit}}
 			]}}},
 			{#image_wrapper: {display:none}},
 			{.body: {padding:{if: =options.byline, then:[0], else:[3, 0, 0, 0]}}},

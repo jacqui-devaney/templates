@@ -310,8 +310,8 @@
 	},
 	.byline: {
 		font-name:DJ5Exchange-Semibold,
-		font-size:13,
-		line-height:18,
+		font-size:{$multiply: [13, =view.zoomlevel]},
+		line-height:{$multiply: [22, =view.zoomlevel]},
 		parargraph-padding: [ 0, 0, 3, 0 ],
 		text-scale: {if: =widescreen, then: {$multiply: [=scale.text, 1.1] }, else: inherit}
 		

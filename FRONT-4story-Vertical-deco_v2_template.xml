@@ -1,0 +1,124 @@
+<jpml id="FRONT-4story-Vertical-deco_template">
+	<style src="GLOBAL-stylesheet.ejs" />
+	<style src="FRONT-stylesheet.ejs" />
+	<style src="PHONE-stylesheet.ejs" />
+	<style> {
+		#b1: {options: {$switch: [
+			{if: =scale.phone, then: {large_headline:true, no_border:true, show_body:true, top_align:true}},
+			{if: =portrait, then: {
+					medium_headline:true, 
+					no_border:true,
+					byline:{if: =scale.small, then:true, else:false}
+				}},
+			{if: =landscape, then: {medium_headline:true, no_border:true, byline:{if: =scale.small, then:true, else:false}}}		
+		]}},
+		#b2: {options: {$switch: [
+			{if: =scale.phone, then: {small_headline:true}},
+			{if: =portrait, then: {small_headline:true, no_indent:true}},
+			{if: =landscape, then: {small_headline:true, bottom:true, no_indent:true, no_border: {if: =scale.small, then:true}}}		
+		]}},
+		#b3: {options: {$switch: [
+			{if: =scale.phone, then: {small_headline:true}},
+			{if: =portrait, then: {small_headline:true, bottom:true, no_indent:true}},
+			{if: =landscape, then: {small_headline:true, no_rule: {if: =scale.small, then:true}, no_border:true, no_indent:true}}		
+		]}},
+		#b4: {options: {small_headline:{if: =landscape, then:false, else:inherit}, no_image:true, no_indent:true}},
+		#deco: {options: {$switch: [
+			{if: =scale.phone, then: {normal_headline:true, no_border:true, G_image:true}},
+			{if: =portrait, then: {normal_headline:true, no_border:true, no_indent:true, OV_image:true, vertical_deco:true}},
+			{if: =landscape, then: {normal_headline:true, no_border:{if: =scale.small, then:false, else:true}, no_indent:true, OV_image:{if: =scale.small, then:false, else:true}, F_image:{if: =scale.small, then:true, else:false}, long_deco:true, no_caption:{if: =scale.small, then:true, else:inherit}}}		
+		]}}
+	}</style>
+	<style> {
+		$switch: [
+			{if: =scale.phone, then:{
+			
+			}},
+			{if: =portrait, then: {
+				#b1:	{ 
+							frame: {$switch: [
+								{if: =widescreen, then: [194, 28, 280, 333]},
+								{if: =scale.large, then: [194, 0, 280, 340]}
+							]}
+				},
+				#deco:	{ 
+							frame: {$switch: [
+								{if-all: [=widescreen, =scale.large], then: [486, 28, 280, 485]},
+								{if: =scale.small, then: [486, 28, 280, 542]},
+								{if: =scale.large, then: [498, 0, 255, 490]}
+							]} 
+				},
+				#b2:	{ 
+							frame: {$switch: [
+								{if: =widescreen, then: [194, 360, 280, 213]},
+								{if: =scale.large, then: [194, 340, 280, 225]}
+							]}
+				},
+				#b4:	{ 
+							frame: {$switch: [
+								{if: =widescreen, then: [194, 573, 280, 303]},
+								{if: =scale.large, then: [486, 490, 280, 300]}
+							]}
+				},
+				#b3:	{ 
+							frame: {$switch: [
+								{if-all: [=widescreen, =scale.large], then: [486, 516, 280, 360]},
+								{if: =scale.small, then: [486, 573, 280, 303]},
+								{if: =scale.large, then: [194, 565, 280, 225]}
+							]}
+				}
+			}},
+			{if: =landscape, then:{
+				#b1:	{ 
+							frame: {$switch: [
+								{if-all: [=widescreen, =scale.large], then: [205, 28, 350, 330]},
+								{if: =scale.small, then: [205, 28, 377, 272]},
+								{if: =scale.large, then: [205, 0, 280, 300]}
+							]} 
+				},
+				#deco:	{ 
+							frame: {$switch: [
+								{if-all: [=widescreen, =scale.large], then: [556, 28, 230, 590]},
+								{if: =scale.small, then: [205, 300, 377, 305]},
+								{if: =scale.large, then: [508, 0, 255, 498]}
+							]}
+				},
+				#b2:	{ 
+							frame: {$switch: [
+								{if-all: [=widescreen, =scale.large], then: [205, 357, 350, 263]},
+								{if: =scale.small, then: [592, 26, 238, 272]},
+								{if: =scale.large, then: [205, 300, 280, 230]}
+							]}
+				},
+				#b3:	{ 
+							frame: {$switch: [
+								{if-all: [=widescreen, =scale.large], then: [787, 28, 237, 214]},
+								{if: =scale.small, then: [840, 35, 183, 592]},
+								{if: =scale.large, then: [787, 0, 237, 200]}
+							]}
+				},
+				#b4:	{ 
+							frame: {$switch: [
+								{if-all: [=widescreen, =scale.large], then: [787, 243, 237, 377]},
+								{if: =scale.small, then: [592, 300, 238, 315]},
+								{if: =scale.large, then: [787, 200, 237, 330]}
+							]}
+				}
+				
+				
+			}}
+		]
+	
+	} </style>
+	
+	<box id="whatsnews_itp" embed="whatsnews" />
+	<box class="maude unit_166" id="b1" embed="article" module="FRONT-NO-IMAGE_module.xml" />
+	<box class="maude unit_50" id="b2" embed="article" module="FRONT-NO-IMAGE_module.xml" />
+	<box class="maude unit_50" id="b3" embed="article" module="FRONT-NO-IMAGE_module.xml" />
+	<box class="maude unit_50" id="b4" embed="article" module="AHED_module.xml" />
+	<box class="maude unit_ad front_banner">
+		<box id="ad_banner" class="ad-banner" embed="advertisement" />
+	</box>
+	<box class="maude unit_G_deco" id="deco" embed="article" module="DECO_module.xml" />
+	
+</jpml>

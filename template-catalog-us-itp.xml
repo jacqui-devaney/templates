@@ -12,22 +12,6 @@
 		/>
 		<template 
 			section="FRONT_SECTION" 
-			name="FRONT-4story-F-deco-UPGRADE_template.xml" 
-			title="UPGRADE MESSAGE XAML ONLY"
-			min="4" 
-			deco="true" 
-			usage="front" 
-		/>
-		<template 
-			section="FRONT_SECTION" 
-			name="FRONT-4story-F-black-liondoor-2nd-story-C_template.xml" 
-			title="UPGRADE MESSAGE XAML ONLY"
-			min="4" 
-			deco="true" 
-			usage="front" 
-		/>
-		<template 
-			section="FRONT_SECTION" 
 			name="FRONT-4story-F-deco-top_template.xml" 
 			title="4 story - Top F liondoor"
 			min="4" 
@@ -60,12 +44,30 @@
 		/>
 		<template 
 			section="FRONT_SECTION" 
+			name="FRONT-4story-Vertical-deco_v2_template.xml" 
+			title="4 story- vertical liondoor - Banner"
+			min="4" 
+			deco="true" 
+			usage="front" 
+		/>
+		
+		<template 
+			section="FRONT_SECTION" 
 			name="FRONT-4story-E-deco_template.xml" 
 			title="4 story-E liondoor"
 			min="4" 
 			deco="true" 
 			usage="front" 
 		/>
+		<template 
+			section="FRONT_SECTION" 
+			name="FRONT-4story-E-deco_v2_template.xml" 
+			title="4 story-E liondoor - Banner"
+			min="4" 
+			deco="true" 
+			usage="front" 
+		/>
+		
 		<template 
 			section="FRONT_SECTION" 
 			name="FRONT-4story-E-deco-top_template.xml" 
@@ -76,8 +78,23 @@
 		/>
 		<template 
 			section="FRONT_SECTION" 
+			name="FRONT-4story-E-deco-top_v2_template.xml" 
+			title="4 story: Top E liondoor - Banner"
+			min="4" 
+			deco="true" 
+			usage="front" 
+		/>
+		<template 
+			section="FRONT_SECTION" 
 			name="FRONT-4story-E-top_template.xml" 
 			title="4 story: Top Story E photo"
+			min="4" 
+			usage="front" 
+		/>
+		<template 
+			section="FRONT_SECTION" 
+			name="FRONT-4story-E-top_v2_template.xml" 
+			title="4 story: Top Story E photo - Banner"
 			min="4" 
 			usage="front" 
 		/>
@@ -92,6 +109,13 @@
 			section="FRONT_SECTION" 
 			name="FRONT-4story-E_template.xml" 
 			title="4 story - middle story E photo"
+			min="4" 
+			usage="front" 
+		/>
+		<template 
+			section="FRONT_SECTION" 
+			name="FRONT-4story-E_v2_template.xml" 
+			title="4 story - middle story E photo - Banner"
 			min="4" 
 			usage="front" 
 		/>

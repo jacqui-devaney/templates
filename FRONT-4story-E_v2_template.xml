@@ -1,0 +1,69 @@
+<jpml id="FRONT-4story-E_v2_template">
+	<style src="GLOBAL-stylesheet.ejs" />
+	<style src="FRONT-stylesheet.ejs" />
+	<style> {
+		if: =portrait, then: {
+			#b1:	{ 
+				frame: {$switch: [
+					{if: =widescreen, then: [194, 28, 571, 250]},
+					{if: =scale.large, then: [194, 0, 571, 220]}
+				]},
+				options:{medium_headline:true, justify:true, show_image:true, no_border:true, byline:{if: =scale.small, then:true, else:false}} 
+			},
+			#b2:	{ 
+						frame: {$switch: [
+							{if: =widescreen, then: [194, 280, 565, 264]},
+							{if: =scale.large, then: [194, 220, 565, 295]}
+						]},
+						options:{small_headline:true, no_indent:true} 
+			},
+			#b3:			{ frame: [194, 515, 280, 273], options:{small_headline:true, bottom:true, no_indent:true} },
+			#b4:			{ frame: [486, 515, 280, 273], options:{no_indent:true, no_image:true} }
+		}, else: {
+			#b1:	{
+					frame: {$switch: [
+						{if: =widescreen, then: [205, 28, 571, 220]},
+						{if: =scale.large, then: [205, 0, 571, 235]}
+					]},
+					options:{medium_headline:true, justify:true, show_image:true, no_border:true, two_columns:true, byline:{if: =scale.small, then:true, else:false}} 
+			},
+			#b2:	{
+					frame: {$switch: [
+						{if: =widescreen, then: [205, 243, 565, 366]},
+						{if: =scale.large, then: [205, 235, 565, 295]}
+					]},
+					options:{small_headline:true, bottom:true, no_indent:true} 
+			},
+			#b3:	{ 
+					frame: {$switch: [
+						{if: =widescreen, then: [787, 28, 238, 220]},
+						{if: =scale.large, then: [787, 0, 238, 235]}
+					]},
+					options:{small_headline:true, no_border:true, no_indent:true} 
+			},
+			#b4:	{ 
+					frame: {$switch: [
+						{if: =widescreen, then: [787, 253, 238, 366]},
+						{if: =scale.large, then: [787, 235, 238, 295]}
+					]},
+					options:{no_indent:true, no_image:true}
+			}
+		}
+
+	} </style>
+	
+
+
+	<box id="whatsnews_itp" embed="whatsnews" />
+	<box class="maude unit_ad front_banner">
+		<box id="ad_banner" class="ad-banner" embed="advertisement" />
+	</box>
+	<box id="b1" embed="article" module="FRONT-NO-IMAGE_module.xml" />
+	<box id="b2" embed="article" module="LEFT-IMAGE_module.xml" />
+	<box id="b3" embed="article" module="FRONT-NO-IMAGE_module.xml" />
+	<box id="b4" embed="article" module="AHED_module.xml" />
+	
+</jpml>
+
+
+

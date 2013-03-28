@@ -73,7 +73,7 @@
 					$switch: [
 						{if: =options.small_caption, then:30},
 						{if: =options.fake_deco, then:35},
-						{if: =options.medium_deco, then:45},
+						{if: =options.medium_caption, then:45},
 						{if: =options.vertical_deco, then:75},
 						{if: =options.long_deco, then:90},
 						{if: true, then:55}

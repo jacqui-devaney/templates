@@ -13,12 +13,12 @@
 			#b2:	{ 
 						frame: {$switch: [
 							{if: =widescreen, then: [194, 280, 565, 264]},
-							{if: =scale.large, then: [194, 220, 565, 295]}
+							{if: =scale.large, then: [194, 220, 565, 285]}
 						]},
 						options:{small_headline:true, no_indent:true} 
 			},
-			#b3:			{ frame: [194, 515, 280, 273], options:{small_headline:true, bottom:true, no_indent:true} },
-			#b4:			{ frame: [486, 515, 280, 273], options:{no_indent:true, no_image:true} }
+			#b3:			{ frame: [194, 505, 280, 283], options:{small_headline:true, bottom:true, no_indent:true} },
+			#b4:			{ frame: [486, 505, 280, 283], options:{no_indent:true, no_image:true} }
 		}, else: {
 			#b1:	{
 					frame: {$switch: [
@@ -30,7 +30,7 @@
 			#b2:	{
 					frame: {$switch: [
 						{if: =widescreen, then: [205, 243, 565, 366]},
-						{if: =scale.large, then: [205, 235, 565, 295]}
+						{if: =scale.large, then: [205, 235, 565, 285]}
 					]},
 					options:{small_headline:true, bottom:true, no_indent:true} 
 			},

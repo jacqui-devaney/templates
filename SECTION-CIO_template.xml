@@ -11,6 +11,9 @@
 		#cfo: {
 			display: {if: =page.section, equals: "CFO", then:inherit, else:none}
 		},
+		#risk: {
+			display: {if: =page.section, equals: "RISK_AND_COMPLIANCE", then:inherit, else:none}
+		},
 		.rando_heading: {
 			font-size:18
 		},
@@ -228,6 +231,7 @@
 	<panel id="strap">
 		<p class="subsection" id="cio">CIO Report</p>
 		<p class="subsection" id="cfo">CFO Report</p>
+		<p class="subsection" id="risk">Risk &amp; Compliance</p>
 	</panel>
 	<box id="cio_header">
 		<panel class="cio_report" id="cio">
@@ -240,6 +244,11 @@
 	        <p class="ahed_headline">Exclusive Reporting &amp; Analysis</p>
 	        <p id="stars"><mark class="ahed_stars" /></p>
 		</panel>
+		<panel class="cio_report" id="risk">
+			<p class="cio_head">Risk &amp; Comliance –</p>
+	        <p class="ahed_headline">Exclusive Reporting &amp; Analysis</p>
+	        <p id="stars"><mark class="ahed_stars" /></p>
+		</panel>
 	</box>
 	<box id="b1" embed="article" class="maude unit_166" module="FRONT-NO-IMAGE_module.xml" />
 	<box id="b2" embed="article" class="maude unit_50" module="FRONT-NO-IMAGE_module.xml" />
@@ -247,10 +256,12 @@
 	<panel id="strap">
 		<p class="subsection" id="cio">Latest Technology News</p>
 		<p class="subsection" id="cfo">Latest Finance News</p>
+		<p class="subsection" id="risk">Latest Finance News</p>
 	</panel>
 	<box id="tech_header" class="maude unit_cio">
 		<p class="tech_section" id="cio">Latest Technology News</p>
 		<p class="tech_section" id="cfo">Latest Finance News</p>
+		<p class="tech_section" id="risk">Latest Finance News</p>
 		<p class="tagline">From WSJ and other top sources</p>
 		<box id="hr" class="maude" />
 	</box>

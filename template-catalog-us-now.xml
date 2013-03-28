@@ -1531,6 +1531,24 @@
 
 		<!-- END  CFO-->
 		
+		<!-- RISK_AND_COMPLIANCE -->
+		<template 
+			name="SECTION-CIO_template.xml" 
+			title="RISK_AND_COMPLIANCE Front" 
+			section="RISK_AND_COMPLIANCE" 
+			min="10" 
+			usage="front" 
+		/>		
+		<template 
+			name="CONTINUATION-CIO_template.xml" 
+			min="18" 
+			title="RISK_AND_COMPLIANCE Continuation" 
+			section="RISK_AND_COMPLIANCE" 
+			usage="continuation" 
+			page="2" 
+		/>
+
+		<!-- END  RISK_AND_COMPLIANCE-->
 		
 		
 		<!-- GENERIC CONTINUATION -->

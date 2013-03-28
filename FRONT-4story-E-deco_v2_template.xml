@@ -3,12 +3,15 @@
     <style src="FRONT-stylesheet.ejs"/>
     <style>{
         if: =portrait, then: {
-            #b1: 	{ 
+            #marketstrap: {display:{if: =standard, then:none, else:inherit}},
+			#whatsnews: {display:{if: =standard, then:none, else:inherit}},
+			#whatsnews_itp: {display:{if: =standard, then:inherit, else:none}},
+			#b1: 	{ 
 						frame: {$switch: [
-						{if: =widescreen, then: [194, 0, 571, 224]},
+						{if: =widescreen, then: [194, 26, 571, 224]},
 						{if: =scale.large, then: [194, 0, 571, 195]}
 					]},
-					options:{medium_headline:true, justify:true, no_border:true, byline:{if: =scale.small, then:true, else:false}} 
+					options:{medium_headline:{if: =widescreen, then:false, else:true}, large_headline:{if: =widescreen, then:true, else:false}, justify:true, no_border:true, byline:{if: =scale.small, then:true, else:false}} 
 			},
             #deco: 	{ 
 						frame: {$switch: [
@@ -34,15 +37,18 @@
 							{if: =widescreen, then: [486, 551, 280, 323]},
 							{if: =scale.large, then: [486, 520, 280, 268]}
 						]},
-						options:{no_image:true}
+						options:{no_image:{if: =widescreen, then:false, else:true}}
 					}
         }, else: {
-            #b1:	{ 
+            #marketstrap: {display:{if: =standard, then:none, else:inherit}},
+			#whatsnews: {display:{if: =standard, then:none, else:inherit}},
+			#whatsnews_itp: {display:{if: =standard, then:inherit, else:none}},
+			#b1:	{ 
 						frame: {$switch: [
-						{if: =widescreen, then: [205, 0, 571, 220]},
+						{if: =widescreen, then: [205, 26, 571, 220]},
 						{if: =scale.large, then: [205, 0, 571, 195]}
 					]},
-					options:{medium_headline:true, justify:true, no_border:true, byline:{if: =scale.small, then:true, else:false}} 
+					options:{medium_headline:{if: =widescreen, then:false, else:true}, large_headline:{if: =widescreen, then:true, else:false}, justify:true, no_border:true, byline:{if: =scale.small, then:true, else:false}} 
 			},
             #deco:	{ 
 					frame: {$switch: [
@@ -59,7 +65,7 @@
 					options:{small_headline:true, bottom:true, no_indent:true} 
 			},
             #b3: 	{ frame: {$switch: [
-							{if: =widescreen, then: [787, 0, 238, 220]},
+							{if: =widescreen, then: [787, 26, 238, 220]},
 							{if: =scale.large, then: [787, 0, 238, 195]}
 						]},
 						options:{small_headline:true, no_border:true, no_indent:true} 
@@ -68,11 +74,14 @@
 							{if: =widescreen, then: [787, 248, 238, 370]},
 							{if: =scale.large, then: [787, 195, 238, 335]}
 						]},
-					options:{no_image:true, no_indent:true}
+					options:{no_image:{if: =widescreen, then:false, else:true}, no_indent:true}
 				}
         }
 
     }</style>
+	<box id="marketstrap" embed="marketstrap" />
+	
+	<box id="whatsnews" embed="whatsnews" />
 
     <box id="whatsnews_itp" embed="whatsnews" />
 	<box class="maude unit_ad front_banner">

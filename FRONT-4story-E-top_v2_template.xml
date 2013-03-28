@@ -15,41 +15,65 @@
 			
 			}},
 			{if: =portrait, then: {
+				#marketstrap: {display:{if: =standard, then:none, else:inherit}},
+				#whatsnews: {display:{if: =standard, then:none, else:inherit}},
+				#whatsnews_itp: {display:{if: =standard, then:inherit, else:none}},
 				#b1: { 
 					frame: {$switch: [
-						{if: =widescreen, then: [194, 0, 328, 490]},
+						{if: =widescreen, then: [194, 28, 328, 548]},
 						{if: =scale.large, then: [194, 0, 375, 490]}
 					]}
 				},
 				#b2: { 
 					frame: {$switch: [
-						{if: =widescreen, then: [535, 0, 230, 490]},
+						{if: =widescreen, then: [535, 28, 230, 548]},
 						{if: =scale.large, then: [582, 0, 183, 490]}
 					]}
 
 				},
-				#b3: { frame: [194, 490, 280, 298] },
-				#b4: { frame: [486, 490, 280, 298] }
+				#b3: { frame: {$switch: [
+					{if: =widescreen, then: [194, 575, 280, 298]},
+					{if: =scale.large, then: [194, 490, 280, 298]}
+				]}
+				},
+				#b4: { frame: {$switch: [
+					{if: =widescreen, then: [486, 575, 280, 298]},
+					{if: =scale.large, then: [486, 490, 280, 298]}
+					]}
+				}
 			}},
 			{if: =landscape, then: {
+				#marketstrap: {display:{if: =standard, then:none, else:inherit}},
+				#whatsnews: {display:{if: =standard, then:none, else:inherit}},
+				#whatsnews_itp: {display:{if: =standard, then:inherit, else:none}},
 				#b1: { 
 					frame: {$switch: [
-						{if: =widescreen, then: [205, 0, 359, 520]},
+						{if: =widescreen, then: [205, 28, 359, 596]},
 						{if: =scale.large, then: [205, 0, 375, 530]}
 					]}
 				},
 				#b2: { 
 					frame: {$switch: [
-						{if: =widescreen, then: [577, 0, 199, 520]},
+						{if: =widescreen, then: [577, 28, 199, 596]},
 						{if: =scale.large, then: [593, 0, 183, 530]}
 					]}  
 				},
-				#b3: { frame: [787, 0, 238, 234] },
-				#b4: { frame: [787, 234, 238, 297] }
+				#b3: { frame: {$switch: [
+					{if: =widescreen, then: [787, 26, 238, 254]},
+					{if: =scale.large, then: [787, 0, 238, 234]}
+				]}
+				},
+				#b4: { frame: {$switch: [
+					{if: =widescreen, then: [787, 280, 238, 340]},
+					{if: =scale.large, then: [787, 234, 238, 297]}
+					]}
+				}
 			}}
 		]
 	} </style>
 	
+	<box id="marketstrap" class="maude" embed="marketstrap"/>
+	<box id="whatsnews" embed="whatsnews" />
 	<box id="whatsnews_itp" embed="whatsnews" />
 	<box id="b1" class="maude unit_166" embed="article" module="TOP-IMAGE_module.xml" />
 	<box id="b2" class="maude unit_50" embed="article" module="FRONT-NO-IMAGE_module.xml" />

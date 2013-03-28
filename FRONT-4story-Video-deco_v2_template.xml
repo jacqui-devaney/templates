@@ -32,68 +32,73 @@
 	<style> {
 		$switch: [
 			{if: =scale.phone, then: {
-	        }},
+				
+			}},
 	        {if: =portrait, then: {
+				#whatsnews: {display:{if: =standard, then:none, else:inherit}},
+				#whatsnews_tall: {display:{if: =standard, then:inherit, else:none}},
 				#b1:	{ 
 							frame: {$switch: [
-								{if: =widescreen, then: [194, 26, 571, 204]},
+								{if: =widescreen, then: [194, 26, 571, 234]},
 								{if: =scale.large, then: [194, 26, 571, 200]}
 						]}
 				},
 				#deco:	{ 
 							frame: {$switch: [
-								{if: =widescreen, then: [194, 231, 571, 257]},
+								{if: =widescreen, then: [194, 261, 571, 257]},
 								{if: =scale.large, then: [195, 228, 569, 391]}
 						]}
 				},
 				#b2:	{ 
 							frame: {$switch: [
-								{if: =widescreen, then: [194, 490, 280, 296]},
+								{if: =widescreen, then: [194, 518, 280, 356]},
 								{if: =scale.large, then: [194, 622, 183, 163]}
 						]}
 				},
 				#b3:	{ 
 							frame: {$switch: [
-								{if: =widescreen, then: [486, 490, 280, 150]},
+								{if: =widescreen, then: [486, 518, 280, 178]},
 								{if: =scale.large, then: [388, 622, 183, 163]}
 							]}
 				},
 				#b4:	{ 
 							frame: {$switch: [
-								{if: =widescreen, then: [486, 640, 280, 150]},
+								{if: =widescreen, then: [486, 697, 280, 178]},
 								{if: =scale.large, then: [582, 622, 183, 163]}
 						]}
 				}
 			
 			}},
 			{if: =landscape, then: {
+				#whatsnews: {display:{if: =standard, then:none, else:inherit}},
+				#whatsnews_tall: {display:{if: =standard, then:inherit, else:none}},
 				#b1:	{ 
 							frame: {$switch: [
-								{if: =widescreen, then: [205, 28, 280, 487]},
+								{if: =widescreen, then: [205, 28, 280, 590]},
 								{if: =scale.large, then: [205, 26, 571, 144]}
 							]}
 				},
 				#deco:	{
 				 			frame: {$switch: [
-								{if: =widescreen, then: [496, 28, 322, 332]},
+								{if: =widescreen, then: [496, 28, 322, 358]},
 								{if: =scale.large, then: [205, 170, 569, 361]}
 							]}
 				},
 				#b2:	{ 
 							frame: {$switch: [
-								{if: =widescreen, then: [496, 360, 322, 160]},
+								{if: =widescreen, then: [496, 378, 322, 240]},
 								{if: =scale.large, then: [787, 26, 237, 168]}
 							]}
 				},
 				#b3:	{ 
 							frame: {$switch: [
-								{if: =widescreen, then: [830, 28, 193, 245]},
+								{if: =widescreen, then: [830, 28, 193, 294]},
 								{if: =scale.large, then: [787, 195, 237, 168]}
 							]} 
 				},
 				#b4:	{ 
 							frame: {$switch: [
-								{if: =widescreen, then: [830, 273, 193, 245]},
+								{if: =widescreen, then: [830, 322, 193, 294]},
 								{if: =scale.large, then: [787, 363, 237, 168]}
 							]}
 				}
@@ -101,13 +106,11 @@
 		]
 	} </style>
 	
+	<box id="whatsnews" embed="whatsnews" />
+	<box id="whatsnews_tall" embed="whatsnews" />
 	<box class="maude" id="marketstrap" embed="marketstrap" />
 	<box class="maude unit_166" id="b1" embed="article" module="FRONT-NO-IMAGE_module.xml" />
 	<box class="maude unit_50" id="b2" embed="article" module="FRONT-NO-IMAGE_module.xml" />
-	<box id="whatsnews_tall" embed="whatsnews" />
-	<box id="whatsnews_wrapper">
-		<box id="whatsnews_phone" embed="whatsnews_button" />
-	</box>
 	<box class="maude unit_50" id="b3" embed="article" module="FRONT-NO-IMAGE_module.xml" />
 	<box class="maude unit_50" id="b4" embed="article" module="FRONT-NO-IMAGE_module.xml" />
 	<box class="maude unit_ad front_banner">

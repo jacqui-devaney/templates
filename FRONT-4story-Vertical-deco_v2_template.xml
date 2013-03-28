@@ -25,7 +25,7 @@
 		#b4: {options: {small_headline:{if: =landscape, then:false, else:inherit}, no_image:true, no_indent:true}},
 		#deco: {options: {$switch: [
 			{if: =scale.phone, then: {normal_headline:true, no_border:true, G_image:true}},
-			{if: =portrait, then: {normal_headline:true, no_border:true, no_indent:true, OV_image:true, vertical_deco:true}},
+			{if: =portrait, then: {normal_headline:true, no_border:true, no_indent:true, OV_image:{if: =scale.small, then:false, else:true}, PT_image:{if: =scale.small, then:true, else:false}, vertical_deco:true}},
 			{if: =landscape, then: {normal_headline:true, no_border:{if: =scale.small, then:false, else:true}, no_indent:true, OV_image:{if: =scale.small, then:false, else:true}, F_image:{if: =scale.small, then:true, else:false}, long_deco:true, no_caption:{if: =scale.small, then:true, else:inherit}}}		
 		]}}
 	}</style>
@@ -35,6 +35,9 @@
 			
 			}},
 			{if: =portrait, then: {
+				#marketstrap: {display:{if: =standard, then:none, else:inherit}},
+				#whatsnews: {display:{if: =standard, then:none, else:inherit}},
+				#whatsnews_itp: {display:{if: =standard, then:inherit, else:none}},
 				#b1:	{ 
 							frame: {$switch: [
 								{if: =widescreen, then: [194, 28, 280, 333]},
@@ -69,6 +72,9 @@
 				}
 			}},
 			{if: =landscape, then:{
+				#marketstrap: {display:{if: =standard, then:none, else:inherit}},
+				#whatsnews: {display:{if: =standard, then:none, else:inherit}},
+				#whatsnews_itp: {display:{if: =standard, then:inherit, else:none}},
 				#b1:	{ 
 							frame: {$switch: [
 								{if-all: [=widescreen, =scale.large], then: [205, 28, 350, 330]},
@@ -111,6 +117,8 @@
 	
 	} </style>
 	
+	<box id="marketstrap" class="maude" embed="marketstrap"/>
+	<box id="whatsnews" embed="whatsnews" />
 	<box id="whatsnews_itp" embed="whatsnews" />
 	<box class="maude unit_166" id="b1" embed="article" module="FRONT-NO-IMAGE_module.xml" />
 	<box class="maude unit_50" id="b2" embed="article" module="FRONT-NO-IMAGE_module.xml" />

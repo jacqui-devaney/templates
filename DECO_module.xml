@@ -49,7 +49,8 @@
 						{ if: =options.OV_image, then: {match: { width:239, height:340, min-height:340 } } },
 						{ if: =options.OZ_image, then: {match: { width:570, height:612, min-height:612 } } },
 						{ if: =options.P_image, then: {match: { width:749, height:499, min-height:499 } } },
-						{ if: =options.H_image, then: {match: { width: 659, height:439, min-height:439 } } }
+						{ if: =options.H_image, then: {match: { width: 659, height:439, min-height:439 } } },
+						{ if: =options.DV_image, then: {match: { width: 262, height:394, min-height:394 } } }
 
 					]
 				},
@@ -97,7 +98,7 @@
 	<box id="wrapper">
 		<panel id="content">
 			<panel id="top_headline">
-				<p id="deco_headline" class="invisible"><span embed="headline" /><mark class="key" /></p>
+				<p id="deco_headline" class="invisible"><span embed="headline" />2 line headline<mark class="key" /></p>
 			</panel>
 			<box id="bottom">
 				<p id="deco_bottom_headline" class="invisible"><span embed="headline" /><mark class="key" /></p>

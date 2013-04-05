@@ -10,8 +10,8 @@
 			]}},
 		#b2: {options: { $switch: [
 				{if: =scale.phone, then: {small_headline:true, show_image:true, no_border:false}},
-				{if: =portrait, then: {small_headline:true, no_border:true, show_image:true, no_indent:true}},
-				{if: =landscape, then: {small_headline:true, no_border:true, show_image:{if: =widescreen, then:false, else:true}, no_indent:true}}			
+				{if: =portrait, then: {small_headline:true, no_border:true, no_indent:true}},
+				{if: =landscape, then: {small_headline:true, no_border:true, no_indent:true}}			
 			]}},
 		#b3: {options: { $switch: [
 				{if: =scale.phone, then: {small_headline:true, show_image:true}},

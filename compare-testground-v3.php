@@ -166,7 +166,11 @@
 		switch($mobileprodukt) {
 		
 		case "mobileconfig":
+<<<<<<< HEAD
 			$base_lists[] = "/var/www/html/de/livery/universal-wsj-app/"; 						//where to get the list of files to look for
+=======
+			$base_lists[] = "/var/www/html/de/livery/universal-app-wsj/"; 						//where to get the list of files to look for
+>>>>>>> refs/heads/master
 			$base_sources[] = "http://online.wsj.com/mobileConfig/wsj/3/{$source}/"; 				//first folder to compare
 			$base_comparisons[] = "http://online.wsj.com/mobileConfig/wsj/3/{$comparison}/"; 		//second folder to compare
 		break;
@@ -178,7 +182,11 @@
 		}	
 			
 	} else {
+<<<<<<< HEAD
 		$base_lists[] = '/var/www/html/de/livery/universal-wsj-app/'; 			//where to get the list of files to look for
+=======
+		$base_lists[] = '/var/www/html/de/livery/universal-app-wsj/'; 			//where to get the list of files to look for
+>>>>>>> refs/heads/master
 		$base_sources[] = 'http://online.wsj.com/mobileConfig/wsj/3/qa/'; 		//first folder to compaer
 		$base_comparisons[] = 'http://online.wsj.com/mobileConfig/wsj/3/prod/'; 	//second folder to compare		
 	}

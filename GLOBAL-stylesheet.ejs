@@ -14,7 +14,7 @@
 	.ad-banner: { options: { zone: {$join: [=ad.prefix,{$switch: [
 		{if: =scale.phone, then: sbanner},
 		{if: =widescreen, then: rectangle},
-		"frontbanner"
+		"ribbon"
 	]}
 	]} } },
 

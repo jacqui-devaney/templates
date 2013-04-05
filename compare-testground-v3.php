@@ -179,8 +179,8 @@
 			
 	} else {
 		$base_lists[] = '/var/www/html/de/livery/universal-wsj-app/'; 			//where to get the list of files to look for
-		$base_sources[] = 'http://online.wsj.com/mobileConfig/wsj/us/3/qa/'; 		//first folder to compaer
-		$base_comparisons[] = 'http://online.wsj.com/mobileConfig/wsj/us/3/prod/'; 	//second folder to compare		
+		$base_sources[] = 'http://online.wsj.com/mobileConfig/wsj/3/qa/'; 		//first folder to compaer
+		$base_comparisons[] = 'http://online.wsj.com/mobileConfig/wsj/3/prod/'; 	//second folder to compare		
 	}
 	
 	//list of filetype extensions to look for

@@ -312,7 +312,7 @@
 		font-name:DJ5Exchange-Semibold,
 		font-size:{$multiply: [13, =view.zoomlevel]},
 		line-height:{$multiply: [22, =view.zoomlevel]},
-		parargraph-padding: [ 0, 0, 3, 0 ],
+		parargraph-padding: [ 0, 0, 0, 0 ],
 		text-scale: {if: =widescreen, then: {$multiply: [=scale.text, 1.1] }, else: inherit}
 		
 	},
@@ -596,7 +596,7 @@
 	
 	.ahed_stars: {
 		font-name:DJ5EscrowCond-Italic,
-		font-size:24,
+		font-size:23,
 		line-height:18,
 		text-align:center,
 		content: "*\u00a0*\u00a0*"
@@ -610,7 +610,7 @@
 	.ahed_subhed: {
 		font-name:DJ5EscrowCond-Roman,
 		font-size: {if: =options.small_subhed, then:16, else:18},
-		line-height: {if: =options.small_subhed, then:20, else:24},
+		line-height: {if: =options.small_subhed, then:18, else:22},
 		text-align:center
 	},
 	.ahed_byline: {

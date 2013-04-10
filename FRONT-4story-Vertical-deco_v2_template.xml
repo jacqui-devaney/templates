@@ -3,6 +3,7 @@
 	<style src="FRONT-stylesheet.ejs" />
 	<style src="PHONE-stylesheet.ejs" />
 	<style> {
+		jpml: {border-width:[1, 0, 0, 0], border-color:black},
 		#b1: {options: {$switch: [
 			{if: =scale.phone, then: {large_headline:true, no_border:true, show_body:true, top_align:true}},
 			{if: =portrait, then: {
@@ -19,7 +20,7 @@
 		]}},
 		#b3: {options: {$switch: [
 			{if: =scale.phone, then: {small_headline:true}},
-			{if: =portrait, then: {small_headline:true, bottom:true, no_indent:true}},
+			{if: =portrait, then: {small_headline:true, bottom:{if: =scale.small, then:true}, no_indent:true}},
 			{if: =landscape, then: {small_headline:true, no_rule: {if: =scale.small, then:true}, no_border:true, no_indent:true}}		
 		]}},
 		#b4: {options: {small_headline:{if: =landscape, then:false, else:inherit}, no_image:true, no_indent:true}},
@@ -41,7 +42,7 @@
 				#b1:	{ 
 							frame: {$switch: [
 								{if: =widescreen, then: [194, 28, 280, 333]},
-								{if: =scale.large, then: [194, 0, 280, 340]}
+								{if: =scale.large, then: [194, 0, 280, 320]}
 							]}
 				},
 				#deco:	{ 
@@ -54,7 +55,7 @@
 				#b2:	{ 
 							frame: {$switch: [
 								{if: =widescreen, then: [194, 360, 280, 213]},
-								{if: =scale.large, then: [194, 340, 280, 225]}
+								{if: =scale.large, then: [194, 320, 280, 235]}
 							]}
 				},
 				#b4:	{ 
@@ -67,7 +68,7 @@
 							frame: {$switch: [
 								{if-all: [=widescreen, =scale.large], then: [486, 516, 280, 360]},
 								{if: =scale.small, then: [486, 573, 280, 303]},
-								{if: =scale.large, then: [194, 565, 280, 225]}
+								{if: =scale.large, then: [194, 555, 280, 235]}
 							]}
 				}
 			}},

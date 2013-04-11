@@ -40,31 +40,31 @@
 				#b1:	{ 
 							frame: {$switch: [
 								{if: =widescreen, then: [194, 26, 571, 234]},
-								{if: =scale.large, then: [194, 26, 571, 200]}
+								{if: =scale.large, then: [194, 26, 571, 170]}
 						]}
 				},
 				#deco:	{ 
 							frame: {$switch: [
 								{if: =widescreen, then: [194, 261, 571, 257]},
-								{if: =scale.large, then: [195, 228, 569, 391]}
+								{if: =scale.large, then: [195, 195, 569, 391]}
 						]}
 				},
 				#b2:	{ 
 							frame: {$switch: [
 								{if: =widescreen, then: [194, 518, 280, 356]},
-								{if: =scale.large, then: [194, 622, 183, 163]}
+								{if: =scale.large, then: [194, 586, 183, 203]}
 						]}
 				},
 				#b3:	{ 
 							frame: {$switch: [
 								{if: =widescreen, then: [486, 518, 280, 178]},
-								{if: =scale.large, then: [388, 622, 183, 163]}
+								{if: =scale.large, then: [388, 586, 183, 203]}
 							]}
 				},
 				#b4:	{ 
 							frame: {$switch: [
 								{if: =widescreen, then: [486, 697, 280, 178]},
-								{if: =scale.large, then: [582, 622, 183, 163]}
+								{if: =scale.large, then: [582, 586, 183, 203]}
 						]}
 				}
 			

@@ -66,7 +66,7 @@
 				},
 				#b4: { frame: {$switch: [
 					{if: =widescreen, then: [787, 280, 238, 340]},
-					{if: =scale.large, then: [787, 234, 238, 297]}
+					{if: =scale.large, then: [787, 234, 238, 296]}
 					]}
 				}
 			}}

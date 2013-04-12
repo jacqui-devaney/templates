@@ -45,7 +45,7 @@
 				{if: =scale.large, then: {if: =options.no_byline, then:none, else:inherit}}
 			]}}},
 			{#image_wrapper: {display:none}},
-			{.body: {padding:{if: =options.byline, then:[0], else:[3, 0, 0, 0]}}},
+			{.body: {padding:{if: =options.byline, then:[0], else:[0, 0, 0, 0]}}},
 			{#body-first-p: {text-indent: {$switch: [
 				{if: =scale.small, then:{if: =options.no_indent, then:0, else:inherit}},
 				{if: =scale.large, then: inherit}
@@ -106,7 +106,7 @@
 		</panel>
 		<panel id="body_container">
 	        <panel id="body">
-	            <p class="byline" embed="byline"/>
+	            <p class="byline" embed="byline" />
 	            <panel class="body" embed="body"/>
 	        </panel>
 	    </panel>

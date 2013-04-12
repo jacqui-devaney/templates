@@ -35,7 +35,7 @@
 							} 
 						} 
 					}},
-					{#stars: { padding: [5, 0, 10, 0] }},
+					{#stars: { padding: [5, 0, 0, 0] }},
 					{ $switch: [
 						{ if: =options.no_rule, then: {
 							#regular: {

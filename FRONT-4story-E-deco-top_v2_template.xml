@@ -24,7 +24,7 @@
 			#b2:			{ 
 								frame: {$switch: [
 									{if: =widescreen, then: [194, 260, 328, 314]},
-									{if: =scale.large, then: [194, 335, 375, 182]}
+									{if: =scale.large, then: [194, 335, 375, 181]}
 								]},
 								options:{small_headline:true, justify:true, show_image:true, byline:{if: =scale.small, then:true, else:false}} 
 							},
@@ -33,7 +33,7 @@
 									{if: =widescreen, then: [194, 575, 280, 298]},
 									{if: =scale.large, then: [194, 515, 280, 273]}
 								]},
-								options:{small_headline:true, bottom:true, no_indent:true} 
+								options:{small_headline:true, bottom:{if: =scale.small, then:true, else:false}, no_indent:true} 
 							},
 			#b4:			{ 
 								frame: {$switch: [
@@ -71,14 +71,14 @@
 			#b3:			{ 
 								frame: {$switch: [
 									{if: =widescreen, then: [496, 370, 280, 250]},
-									{if: =scale.large, then: [496, 305, 280, 225]}
+									{if: =scale.large, then: [496, 305, 236, 225]}
 								]},
 								options:{small_headline:true, no_indent:true} 
 							},
 			#b4:			{
 								frame: {$switch: [
 									{if: =widescreen, then: [787, 370, 236, 250]},
-									{if: =scale.large, then: [787, 305, 236, 225]}
+									{if: =scale.large, then: [743, 305, 280, 225]}
 								]},
 								options:{no_indent:true, dek:{if: =scale.small, then:true, else:false}, no_image:true} 
 							}

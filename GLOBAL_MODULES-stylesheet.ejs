@@ -155,7 +155,8 @@
 				"26"
 			]
 		},
-		text-scale: {if: =scale.small, then: {$multiply: [=scale.text, 0.85] }, else: inherit}
+		text-scale: {if: =scale.small, then: {$multiply: [=scale.text, 0.85] }, else: inherit},
+		padding:[0, 0, 3, 0]
 		
 	},
 	#extra_small_headline: {
@@ -310,9 +311,8 @@
 	},
 	.byline: {
 		font-name:DJ5Exchange-Semibold,
-		font-size:{$multiply: [13, =view.zoomlevel]},
-		line-height:{$multiply: [22, =view.zoomlevel]},
-		parargraph-padding: [ 0, 0, 0, 0 ],
+		font-size:13,
+		line-height:18,
 		text-scale: {if: =widescreen, then: {$multiply: [=scale.text, 1.1] }, else: inherit}
 		
 	},
@@ -381,6 +381,17 @@
 		},
 		font-size:21,
 		line-height:24,
+		color:#000
+	},
+	#deco_medium_headline: {
+		font-name: { $switch: [
+				{if: =issue.edition, equals: "japan", then: HiraKakuProN-W6},
+				{if: =issue.edition, equals: "korea", then: AppleSDGothicNeo-Bold},
+				"DJ5RetinaCd-Medium"
+			]
+		},
+		font-size:21,
+		line-height:21,
 		color:#000
 	},
 	.deco_caption: {
@@ -596,15 +607,15 @@
 	
 	.ahed_stars: {
 		font-name:DJ5EscrowCond-Italic,
-		font-size:23,
+		font-size:22,
 		line-height:18,
 		text-align:center,
 		content: "*\u00a0*\u00a0*"
 	},
 	.ahed_headline: {
 		font-name:DJ5EscrowCond-Italic,
-		font-size: {if: =options.small_ahed, then:20, else:24},
-		line-height: {if: =options.small_ahed, then:20, else:24},
+		font-size: {if: =options.small_ahed, then:20, else:23},
+		line-height: {if: =options.small_ahed, then:20, else:23},
 		text-align:center
 	},
 	.ahed_subhed: {

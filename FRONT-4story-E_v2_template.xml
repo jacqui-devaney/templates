@@ -10,14 +10,14 @@
 			#b1:	{ 
 				frame: {$switch: [
 					{if: =widescreen, then: [194, 28, 571, 250]},
-					{if: =scale.large, then: [194, 0, 571, 220]}
+					{if: =scale.large, then: [194, 0, 571, 223]}
 				]},
 				options:{medium_headline:{if: =widescreen, then:false, else:true}, large_headline:{if: =widescreen, then:true, else:false}, justify:true, show_image:true, no_border:true, byline:{if: =scale.small, then:true, else:false}} 
 			},
 			#b2:	{ 
 						frame: {$switch: [
 							{if: =widescreen, then: [194, 280, 565, 264]},
-							{if: =scale.large, then: [194, 220, 565, 285]}
+							{if: =scale.large, then: [194, 223, 565, 282]}
 						]},
 						options:{small_headline:true, no_indent:true} 
 			},
@@ -43,28 +43,28 @@
 			#b1:	{
 					frame: {$switch: [
 						{if: =widescreen, then: [205, 28, 571, 220]},
-						{if: =scale.large, then: [205, 0, 571, 235]}
+						{if: =scale.large, then: [205, 0, 571, 241]}
 					]},
 					options:{medium_headline:{if: =widescreen, then:false, else:true}, large_headline:{if: =widescreen, then:true, else:false}, justify:true, show_image:true, no_border:true, two_columns:true, byline:{if: =scale.small, then:true, else:false}} 
 			},
 			#b2:	{
 					frame: {$switch: [
 						{if: =widescreen, then: [205, 243, 565, 366]},
-						{if: =scale.large, then: [205, 235, 565, 285]}
+						{if: =scale.large, then: [205, 241, 565, 285]}
 					]},
-					options:{small_headline:true, bottom:true, no_indent:true} 
+					options:{small_headline:true, bottom:{if: =widescreen, then:true, else:false}, no_indent:true} 
 			},
 			#b3:	{ 
 					frame: {$switch: [
 						{if: =widescreen, then: [787, 28, 238, 220]},
-						{if: =scale.large, then: [787, 0, 238, 235]}
+						{if: =scale.large, then: [787, 0, 238, 241]}
 					]},
 					options:{small_headline:true, no_border:true, no_indent:true} 
 			},
 			#b4:	{ 
 					frame: {$switch: [
 						{if: =widescreen, then: [787, 253, 238, 366]},
-						{if: =scale.large, then: [787, 235, 238, 295]}
+						{if: =scale.large, then: [787, 241, 238, 289]}
 					]},
 					options:{no_indent:true, no_image:true}
 			}

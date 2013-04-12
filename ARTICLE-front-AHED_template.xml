@@ -1,11 +1,11 @@
 <jpml id="ARTICLE-front-AHED_template">
     <style>{
         if: =portrait, then: {
-            #view: { frame: [0, 0, 766, 900] },
-			#index: { frame: [594, 535, 173, 365]}
+            #view: { frame: [0, 0, 594, 899] },
+			#index: { frame: [594, 0, 173, 899]}
         }, else: {
-            #view : { frame: [0, 0, 1024, 642] },
-			#index: { frame: [771, 91, 253, 242]}        
+            #view : { frame: [0, 0, 884, 643] },
+			#index: { frame: [884, 0, 139, 643]}        
         }
     }</style>
     <box id="view" embed="article" module="ARTICLE-front-AHED_module.xml" />

@@ -26,7 +26,7 @@
 		}},
 		{#image_container: { 
 			anchor-x: {if: =portrait, then: center, else:left},
-			top:110,
+			top:{if: =portrait, then: 95, else:100},
 			width: {if: =portrait, then: 149, else:131},
 			pixels-per-point-x:1,
 			pixels-per-point-y:1,

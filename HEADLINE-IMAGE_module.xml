@@ -7,8 +7,8 @@
 			{ $switch: [
 				{ if: =options.no_border, then: {
 					#wrapper: {
-						border-width: [10, 0, {if: =options.bottom, then:20, else:10}, 0],
-						padding: [0]
+						padding: [10, 0, {if: =options.bottom, then:20, else:10}, 0],
+						border-width: [0]
 					}
 			
 				}},
@@ -31,7 +31,7 @@
 	        }},
 			{#body_container: { padding: [0, 8]}},
 			{#headline: { padding: [0, 8]}},
-			{image: {
+			{#tablet_image: {
 				width:{$subtract:[=view.width, 18]}, 
 				height:{$multiply: [{$subtract:[=view.width, 18]}, {if: =options.F_image, then:0.39, else:0.66}] },
 				display: { if: =options.show_image, then:inherit, else:none },
@@ -63,14 +63,13 @@
 					anchor-x:right,
 					position:relative,
 					width: 76,
-					padding:[0, 10, 5, 15],
+					padding:[0, 0, 5, 15],
 					pixels-per-point-x:1,
 					pixels-per-point-y:1,
 					image-scale:1,
-					display:inherit,
-					background-color:blue
+					display:inherit
 				},
-				image: { 
+				#phone_image: { 
 					height: 76,
 					display:inherit,
 					padding: [0],
@@ -83,14 +82,14 @@
 		}</style>
 	<box id="wrapper">
 		<box id="image_wrapper" class="phone">
-			<image embed="summary-image" class="phone" target-width="76" target-height="76" />
+			<image embed="summary-image" class="phone" id="phone_image" target-width="76" target-height="76" />
 		</box>
 		<panel id="headline">
 			<p id="small_headline" class="invisible"><span embed="headline" /><mark class="key" /></p>
 			<p id="medium_headline" class="invisible"><span embed="headline" /><mark class="key" /></p>
 			<p id="large_headline" class="invisible"><span embed="headline" /><mark class="key" /></p>
 		</panel>
-		<image class="tablet" embed="summary-image"/>
+		<image class="tablet" id="tablet_image" embed="summary-image"/>
 		
 		<panel id="body_container">
 	        <panel id="body">

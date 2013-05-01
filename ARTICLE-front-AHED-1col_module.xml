@@ -21,12 +21,12 @@
 		{image: {
 			width:113,
 			height:113,
-			padding: [ 8, 18, 8, 0 ]
+			padding: [ 4, 18, 8, 0 ]
 			
 		}},
 		{#image_container: { 
 			anchor-x: left,
-			top:100,
+			top:0,
 			width: 131,
 			pixels-per-point-x:1,
 			pixels-per-point-y:1,
@@ -38,23 +38,41 @@
 			width:546,
 			height:385,
 			anchor-x:center,
-			anchor-y:top
+			anchor-y:{if: =portrait, then:top, else:middle}
 		}},
 		{if: =portrait, then: {
-            #mediabucket_container:	{ 
+            .portrait_bucket:	{ 
 				top:10,
 				width:575,
 				height:402,
 				anchor-x:center
-				
- 			}
-        }, else: {
-        	#mediabucket_container:	{ 
-				bottom:40,
-				width:575,
-				height:430,
-				anchor-x:right
+ 			},
+			.landscape_bucket: {
+				display:none
+			},
+			.landscape_media: {
+				display:none
 			}
+
+
+        }, else: {
+        	.landscape_bucket:	{ 
+				anchor-y:middle,
+				width:575,
+				height:385,
+				anchor-x:right
+			},
+			.portrait_bucket: {
+				display:none
+			},
+			.portrait_media: {
+				display:none
+			},
+			#text: {
+				width:260
+			}
+			
+        	
         }},
 		{#filler: {
 			position: relative,
@@ -79,8 +97,8 @@
 	<box id="continues_label">
 		<p><mark id="continues" /></p>
 	</box>
-	<box id="mediabucket_container">
-		<box id="mediabucket" embed="mediabucket" />
+	<box id="mediabucket_container" class="portrait_bucket">
+		<box id="mediabucket" class="portrait_media" embed="mediabucket" />
 	</box>
 	
     <panel id="header_top">
@@ -91,12 +109,16 @@
 	<box class="hr"></box>
     
 	<panel id="body_container">
-		<box id="image_container">
-			<image embed="summary-image" target-width="113" target-height="113" />
+		<box id="mediabucket_container" class="landscape_bucket">
+			<box id="mediabucket" class="landscape_media" embed="mediabucket" />
 		</box>
-		<p class="article_byline" embed="byline"/>
-        <panel class="article_body" embed="body"/>
-	 	
+		<box id="text">
+			<box id="image_container">
+				<image embed="summary-image" target-width="113" target-height="113" />
+			</box>
+			<p class="article_byline" embed="byline"/>
+	        <panel class="article_body" embed="body"/>
+	 	</box>
 	</panel>
 	<box id="filler">
 		<box id="article_advertisement" class="ad-twocolumn" embed="advertisement"/>

@@ -21,12 +21,12 @@
 		{image: {
 			width:113,
 			height:113,
-			padding: [ 4, 18, 8, 0 ]
+			padding: [ 4, {if: =landscape, then:18, else:0}, 8, {if: =landscape, then:0, else:18} ]
 			
 		}},
 		{#image_container: { 
-			anchor-x: left,
-			top:0,
+			anchor-x: {if: =landscape, then:left, else:right},
+			top:{if: =landscape, then:100, else:0},
 			width: 131,
 			pixels-per-point-x:1,
 			pixels-per-point-y:1,
@@ -59,7 +59,7 @@
         	.landscape_bucket:	{ 
 				anchor-y:middle,
 				width:575,
-				height:385,
+				height:445,
 				anchor-x:right
 			},
 			.portrait_bucket: {
@@ -112,13 +112,11 @@
 		<box id="mediabucket_container" class="landscape_bucket">
 			<box id="mediabucket" class="landscape_media" embed="mediabucket" />
 		</box>
-		<box id="text">
-			<box id="image_container">
-				<image embed="summary-image" target-width="113" target-height="113" />
-			</box>
-			<p class="article_byline" embed="byline"/>
-	        <panel class="article_body" embed="body"/>
-	 	</box>
+		<box id="image_container">
+			<image embed="summary-image" target-width="113" target-height="113" />
+		</box>
+		<p class="article_byline" embed="byline"/>
+        <panel class="article_body" embed="body"/>
 	</panel>
 	<box id="filler">
 		<box id="article_advertisement" class="ad-twocolumn" embed="advertisement"/>

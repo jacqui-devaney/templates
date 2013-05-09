@@ -1,0 +1,88 @@
+<jpml id="CONTINUATION-AHED_template">
+	<style src="CONTINUATION-stylesheet.ejs" /> 
+	<style src="GLOBAL-stylesheet.ejs" />
+	<style src="PHONE-stylesheet.ejs" /> 
+    <style>{
+		#b1: {options: { $switch: [
+				{if: =scale.phone, then: {}},
+				{if: =portrait, then: {small_headline:true, bottom_border:true, two_columns:true, center_image:true}},
+				{if: =landscape, then: {small_headline:true, bottom_border:true}}			
+		]}},
+		#b2: {options: { $switch: [
+				{if: =scale.phone, then: {}},
+				{if: =portrait, then: {small_headline:true, no_byline:true, show_image:true, DV_image:true, left_border:true}},
+				{if: =landscape, then: {small_headline:true, no_byline:true, show_image:true, DV_image:true, left_border:true}}			
+		]}},
+		#b3: {options: { $switch: [
+				{if: =scale.phone, then: {}},
+				{if: =portrait, then: {E_image:true, white_highlight:true, top_border:true}},
+				{if: =landscape, then: {DW_image:true, white_highlight:true, top_border:false}}			
+		]}},
+		#b4: {options: { $switch: [
+			{if: =scale.phone, then: {}},
+			{if: =portrait, then: {E_image:true, white_highlight:true}},
+			{if: =landscape, then: {DW_image:true, white_highlight:true, top_border:true}}			
+		]}}
+		
+
+    }</style>
+	<style>{$switch: [
+        {if: =portrait, then: {
+            #b1 : { 
+					frame: {$switch: [
+						{if: =widescreen, then: [0, 8, 474, 551]},
+						{if: =scale.large, then: [0, 8, 474, 551]}
+					]}
+			},
+            #b2 : { 
+					frame: {$switch: [
+						{if: =widescreen, then: [485, 8, 280, 540]},
+						{if: =scale.large, then: [485, 8, 280, 540]}
+					]} 
+			},
+            #b3 : { 
+					frame: {$switch: [
+						{if: =widescreen, then: [0, 559, 377, 318]},
+						{if: =scale.large, then: [0, 559, 377, 318]}
+					]} 
+			},
+            #b4 : { 
+					frame: {$switch: [
+						{if: =widescreen, then: [388, 559, 377, 318]},
+						{if: =scale.large, then: [388, 559, 377, 318]}
+					]} 
+			}
+	    }}, 
+		{if: =landscape, then: {
+	        #b1 : { 
+					frame: {$switch: [
+						{if: =widescreen, then: [0, 0, 474, 559]},
+						{if: =scale.large, then: [0, 8, 474, 612]}
+					]}
+			},
+	        #b2 : { 
+					frame: {$switch: [
+						{if: =widescreen, then: [485, 0, 280, 559]},
+						{if: =scale.large, then: [485, 8, 280, 612]}
+					]} 
+			},
+	        #b3 : { 
+					frame: {$switch: [
+						{if: =widescreen, then: [778, 8, 245, 318]},
+						{if: =scale.large, then: [778, 8, 245, 306]}
+					]} 
+			},
+	        #b4 : { 
+					frame: {$switch: [
+						{if: =widescreen, then: [778, 559, 245, 318]},
+						{if: =scale.large, then: [778, 313, 245, 306]}
+					]} 
+			}
+        }}
+    ]}</style>
+    <box id="b1" embed="article" class="maude unit_continuation_strap" module="AHED_module.xml" />    
+    <box id="b2" embed="article" class="maude unit_continuation_strap" module="TOP-IMAGE_module.xml" />
+    <box id="b3" embed="article" class="maude unit_continuation_strap" module="HIGHLIGHTS-image_module.xml" />
+    <box id="b4" embed="article" class="maude unit_continuation_strap" module="HIGHLIGHTS-image_module.xml" />
+</jpml>
+

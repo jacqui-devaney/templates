@@ -1,4 +1,4 @@
-<jpml id="HIGHLIGHTS-image_module">
+<jpml id="SKYBOX_module">
 	<style src="GLOBAL_MODULES-stylesheet.ejs" />
 	<style src="GLOBAL-stylesheet.ejs" />
 	<style src="PHONE-MODULES-stylesheet.ejs" />
@@ -12,7 +12,8 @@
 		
 		#image_container: {
 			position:relative,
-			height:200
+			height:{if: =options.D_image, then:174, else:239},
+			padding:[8, 0, 0, 0]
 		},
 		image: {
 			pixels-per-point-x:1,
@@ -20,8 +21,7 @@
 			options: {
 				$switch: [
 					{ if: =options.D_image, then: {match: { width:262, height:174, min-height:174 } } },
-					{ if: =options.E_image, then: {match: { width:359, height:239, min-height:239 } } },
-					{ if: =options.DW_image, then: {match: { width:215, height:200, min-height:200 } } }
+					{ if: =options.E_image, then: {match: { width:359, height:239, min-height:239 } } }
 				]
 			},
 			image-scale: 1,

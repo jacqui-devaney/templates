@@ -5,8 +5,8 @@
     <style>{
 		#b1: {options: { $switch: [
 				{if: =scale.phone, then: {}},
-				{if: =portrait, then: {small_headline:true, bottom_border:true, two_columns:true, center_image:true}},
-				{if: =landscape, then: {small_headline:true, bottom_border:true}}			
+				{if: =portrait, then: {large_ahed:true, large_subhed:true, two_columns:true, center_image:true}},
+				{if: =landscape, then: {large_ahed:true, large_subhed:true, two_columns:true, center_image:true}}			
 		]}},
 		#b2: {options: { $switch: [
 				{if: =scale.phone, then: {}},

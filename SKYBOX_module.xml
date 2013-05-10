@@ -13,7 +13,7 @@
 		#image_container: {
 			position:relative,
 			height:{if: =options.D_image, then:174, else:239},
-			padding:[8, 0, 8, 0]
+			padding:[0, 0, 0, 0]
 		},
 		image: {
 			pixels-per-point-x:1,
@@ -21,6 +21,7 @@
 			options: {
 				$switch: [
 					{ if: =options.D_image, then: {match: { width:262, height:174, min-height:174 } } },
+					{ if: =options.C_image, then: {match: { width:167, height:94, min-height:94 } } },
 					{ if: =options.E_image, then: {match: { width:359, height:239, min-height:239 } } }
 				]
 			},

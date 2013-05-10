@@ -20,7 +20,7 @@
 		]}},
 		#b4: {options: { $switch: [
 			{if: =scale.phone, then: {}},
-			{if: =portrait, then: {E_image:true, white_highlight:true}},
+			{if: =portrait, then: {E_image:true, white_highlight:true, top_border:true}},
 			{if: =landscape, then: {D_image:true, white_highlight:true, top_border:true}}			
 		]}}
 		

@@ -13,7 +13,7 @@
 		#image_container: {
 			position:relative,
 			height:{if: =options.D_image, then:174, else:239},
-			padding:[8, 0, 0, 0]
+			padding:[8, 0, 8, 0]
 		},
 		image: {
 			pixels-per-point-x:1,
@@ -60,8 +60,9 @@
 	}</style>
 	<panel id="wrapper">
 		<panel>
-			<p class="retina_large_flashline" embed="flashline" />
-    		<p class="retina_large_headline"><span embed="headline" /><mark class="key" /></p>
+			<p class="skybox_large_headline"><span embed="headline" /><mark class="key" /></p>
+			<h2 class="skybox_large_dek"><span embed="subhed" /></h2>
+
 		</panel>
 			<box id="image_container">
 		        <image embed="summary-image" />

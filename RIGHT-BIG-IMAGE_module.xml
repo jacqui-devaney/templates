@@ -1,0 +1,88 @@
+<jpml id="RIGHT-BIG-IMAGE_module">
+	<style src="GLOBAL_MODULES-stylesheet.ejs" />
+	<style src="GLOBAL-stylesheet.ejs" />
+	<style>{
+        $join: [
+			{jpml: {
+				padding:[0, 0, 8, 8]
+			}},
+			{ $switch: [
+				{ if: =options.no_border, then: {
+					#wrapper: {
+						border-width: [0, 0, 0, 0],
+						padding: [0, 0, 8, 0]
+					}
+			
+				}},
+				{ if: true, then: {
+					#wrapper: {
+						border-width: [1, 0, 0, 0],
+						border-color: #b1aca1,
+						padding: [8, 0, 8, 0]
+					}
+					}}
+			]},
+			
+			{#headline: {padding:[2, 0, 0, 0]}
+			},
+			{#body: { 
+	            column-count: 2,
+	            column-gutter: 15
+	        }},
+			{#image_wrapper: { 
+				right:0,
+				top:0,
+				bottom:0,
+				position:relative,
+				height:239,
+				padding: [0, 8, 12, 15 ],
+				pixels-per-point-x:1,
+				pixels-per-point-y:1
+			}},
+			
+			{#image_container: { 
+				width: 359,
+				display: {if: =options.hide_image, then:none, else:inherit}
+			}},
+			{#headline: { padding:[0, 0, 12, 0] }},
+			{.invisible: { display:none }},
+			{#small_headline: { display: { if: =options.small_headline, then:inherit }}},
+			{#medium_headline: { display: { if: =options.medium_headline, then:inherit }}},
+			{#large_headline: { display: { if: =options.large_headline, then:inherit }}},
+			{#bignews_huge_headline: { display: { if: =options.bignews_huge_headline, then:inherit }}},
+			{#bignews_large_headline: { display: { if: =options.bignews_large_headline, then:inherit }}},
+			{#bignews_big_headline: { display: { if: =options.bignews_big_headline, then:inherit }}},
+			{#bignews_small_headline: { display: { if: =options.bignews_small_headline, then:inherit }}},
+			{.byline: {display: {$switch: [
+				{if: =scale.small, then:{if: =options.byline, then:inherit, else:none}},
+				{if: =scale.large, then: inherit}
+			]}}},
+			{#body-first-p: {text-indent: {$switch: [
+				{if: =scale.small, then:{if: =options.no_indent, then:0, else:inherit}},
+				{if: =scale.large, then: inherit}
+			]}}}
+				
+		]	
+		
+		}</style>
+	<box id="wrapper">
+		<panel id="headline">
+			<p id="small_headline" class="invisible"><span embed="headline" /><mark class="key" /></p>
+			<p id="medium_headline" class="invisible"><span embed="headline" /><mark class="key" /></p>
+			<p id="large_headline" class="invisible"><span embed="headline" /><mark class="key" /></p>
+			<p id="bignews_huge_headline" class="invisible"><span embed="headline" /></p>
+			<p id="bignews_large_headline" class="invisible"><span embed="headline" /></p>
+			<p id="bignews_big_headline" class="invisible"><span embed="headline" /></p>
+			<p id="bignews_small_headline" class="invisible"><span embed="headline" /></p>
+		</panel> 
+	</box>   
+	<box id="image_wrapper">
+		<box id="image_container">
+		    <image embed="summary-image" />
+		</box>
+	</box>
+	<panel id="body">
+		<p class="byline" embed="byline"/>
+		<panel class="body" embed="body"/>
+	</panel>
+</jpml>

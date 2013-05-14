@@ -157,6 +157,20 @@
 		/>
 		<template 
 			section="FRONT_SECTION" 
+			name="FRONT-4story-big-news-small_v2_template.xml" 
+			title="Top Story HUGE News small headline - Banner"
+			min="3" 
+			usage="front" 
+		/>
+		<template 
+			section="FRONT_SECTION" 
+			name="FRONT-4story-big-news_v2_template.xml" 
+			title="Top Story HUGE News small headline - Banner"
+			min="3" 
+			usage="front" 
+		/>
+		<template 
+			section="FRONT_SECTION" 
 			name="FRONT-2story-G-deco_template.xml" 
 			title="2 story - G liondoor"
 			min="2" 

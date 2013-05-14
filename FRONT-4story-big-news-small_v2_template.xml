@@ -1,0 +1,112 @@
+<jpml id="FRONT-4story-big-news-small_v2_template">
+	<style src="GLOBAL-stylesheet.ejs" />
+	<style src="FRONT-stylesheet.ejs" />
+	<style> {
+		if: =portrait, then: {
+			#marketstrap: {display:{if: =standard, then:none, else:inherit}},
+			#b1:	{ 
+						frame: {$switch: [
+						{if: =widescreen, then: [11, 34, 746, 330]},
+						{if: =scale.large, then: [11, 9, 746, 330]}
+					]},
+					options:{bignews_small_headline:true, justify:true, no_border:true, byline:true} 
+			},
+			#b2:	{ 
+						frame: {$switch: [
+						{if: =widescreen, then: [308, 376, 449, 219]},
+						{if: =scale.large, then: [308, 351, 449, 219]}
+					]},
+					options:{small_headline:true, no_indent:{if: =scale.small, then:true, else:false}, C_image:{if: =standard, then:true, else:false} } 
+					},
+			#b3:	{ 
+						frame: {$switch: [
+						{if: =widescreen, then: [308, 570, 449, 219]},
+						{if: =scale.large, then: [308, 570, 449, 219]}
+					]},
+					options:{small_headline:true, C_image:{if: =standard, then:true, else:false}, byline:{if: =scale.small, then:true, else:false}, no_indent:{if: =scale.small, then:true, else:false}} 
+			},
+			#whatsnews:		{ 
+							frame: [11, 376, 198, 438],
+							options: { expanded-frame: [
+								{$multiply:[=scale.pagex, 3]}, 
+								{$multiply:[=scale.pagey, 28]}, 
+								{$multiply:[=scale.pagex, 550]}, 
+								{$multiply:[=scale.pagey, 860]}
+							] },
+							display:{if: =standard, then:none, else:inherit}
+							
+							
+							
+			},
+			#whatsnews_itp:		{ 
+								frame: [11, 351, 286, 438],
+			 					options: { expanded-frame: [
+									{$multiply:[=scale.pagex, 3]}, 
+									{$multiply:[=scale.pagey, 28]}, 
+									{$multiply:[=scale.pagex, 550]}, 
+									{$multiply:[=scale.pagey, 593]}
+								] },
+								display:{if: =standard, then:inherit, else:none}
+								
+			}
+		}, else: {
+			#b1:	{
+			 			frame: {$switch: [
+						{if: =widescreen, then: [11, 34, 1002, 333]},
+						{if: =scale.large, then: [11, 9, 1000, 328]}
+					]},
+					options:{bignews_small_headline:true, no_border:true, justify:true, bottom:true, byline:true, two_columns:true} 
+			},
+			#b2:	{ 
+						frame: {$switch: [
+						{if: =widescreen, then: [205, 367, 199, 253]},
+						{if: =scale.large, then: [250, 337, 375, 193]}
+					]},
+					options:{small_headline:true, no_indent:{if: =scale.small, then:true, else:false}} 
+			},
+			#b3:	{ 
+						frame: {$switch: [
+						{if: =widescreen, then: [415, 367, 199, 253]},
+						{if: =scale.large, then: [636, 337, 375, 193]}
+					]},
+					options:{small_headline:true, no_indent:{if: =scale.small, then:true, else:false}} 
+			},
+			#marketstrap: {display:{if: =standard, then:none, else:inherit}},
+			#whatsnews:		{ 
+								frame: [11, 367, 183, 253],
+			 					options: { expanded-frame: [
+									{$multiply:[=scale.pagex, 3]}, 
+									{$multiply:[=scale.pagey, 28]}, 
+									{$multiply:[=scale.pagex, 550]}, 
+									{$multiply:[=scale.pagey, 593]}
+								] },
+								display:{if: =standard, then:none, else:inherit}
+								
+			},
+			#whatsnews_itp:		{ 
+								frame: [11, 337, 228, 193],
+			 					options: { expanded-frame: [
+									{$multiply:[=scale.pagex, 3]}, 
+									{$multiply:[=scale.pagey, 28]}, 
+									{$multiply:[=scale.pagex, 550]}, 
+									{$multiply:[=scale.pagey, 593]}
+								] },
+								display:{if: =standard, then:inherit, else:none}
+								
+			}
+		}
+
+	} </style>
+	
+	<box id="marketstrap" embed="marketstrap" />
+
+    <box id="whatsnews" embed="whatsnews" />
+    <box id="whatsnews_itp" embed="whatsnews" />
+	<box class="maude unit_ad front_banner">
+		<box id="ad_banner" class="ad-banner" embed="advertisement" />
+	</box>
+	<box id="b1" embed="article" module="RIGHT-BIG-IMAGE_module.xml" />
+	<box id="b2" embed="article" module="RIGHT-INSET-IMAGE_module.xml" />
+	<box id="b3" embed="article" module="RIGHT-INSET-IMAGE_module.xml" />
+	
+</jpml>

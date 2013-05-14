@@ -38,7 +38,7 @@
 		{image: {
 			width:{if: =options.C_image, then:167, else:76},
 			height:{if: =options.C_image, then:94, else:76},
-			padding: [ 0, 0, {if: =options.C_image, then:10, else:0}, 10 ]
+			padding: [ 0, 0, {if: =options.C_image, then:10, else:8}, 10 ]
 			
 		}},
         {#headline: { padding: [ 0, 4, 0, 0 ] }},

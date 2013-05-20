@@ -128,13 +128,6 @@
 		/>
 		<template 
 			section="FRONT_SECTION" 
-			name="FRONT-4story-F-D_template.xml" 
-			title="4 story - top story F photo - second story D photo"
-			min="4" 
-			usage="front" 
-		/>
-		<template 
-			section="FRONT_SECTION" 
 			name="FRONT-3story-G-deco_template.xml" 
 			title="3 story - G liondoor"
 			min="3" 
@@ -2237,6 +2230,13 @@
 			name="CONTINUATION-AHED_template.xml" 
 			title="Fancy A-hed Continuation"
 			min="4" 
+			usage="continuation" 
+			page="2"
+		/>
+		<template 
+			name="CONTINUATION-AHED-5story_template.xml" 
+			title="Fancy A-hed Continuation - 5 story"
+			min="5" 
 			usage="continuation" 
 			page="2"
 		/>

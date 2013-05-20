@@ -13,20 +13,20 @@
 			},
 			#b2:	{ 
 						frame: {$switch: [
-						{if: =widescreen, then: [308, 376, 449, 219]},
+						{if: =widescreen, then: [220, 376, 536, 251]},
 						{if: =scale.large, then: [308, 351, 449, 219]}
 					]},
-					options:{small_headline:true, no_indent:{if: =scale.small, then:true, else:false}, C_image:{if: =standard, then:true, else:false} } 
+					options:{small_headline:true, no_indent:{if: =scale.small, then:true, else:false}, border:true, C_image:{if: =scale.large, then:true, else:false} } 
 					},
 			#b3:	{ 
 						frame: {$switch: [
-						{if: =widescreen, then: [308, 570, 449, 219]},
+						{if: =widescreen, then: [220, 627, 536, 250]},
 						{if: =scale.large, then: [308, 570, 449, 219]}
 					]},
-					options:{small_headline:true, C_image:{if: =standard, then:true, else:false}, byline:{if: =scale.small, then:true, else:false}, no_indent:{if: =scale.small, then:true, else:false}} 
+					options:{small_headline:true, C_image:{if: =scale.large, then:true, else:false}, border:true, byline:{if: =scale.small, then:true, else:false}, no_indent:{if: =scale.small, then:true, else:false}} 
 			},
 			#whatsnews:		{ 
-							frame: [11, 376, 198, 438],
+							frame: [11, 376, 198, 350],
 							options: { expanded-frame: [
 								{$multiply:[=scale.pagex, 3]}, 
 								{$multiply:[=scale.pagey, 28]}, 
@@ -48,7 +48,29 @@
 								] },
 								display:{if: =standard, then:inherit, else:none}
 								
+			},
+			.front_banner: {
+				border-width:[{if: =standard, then: 1, else:0}, 0, 0, 0],
+				border-color:#ccc,
+				frame: {$switch: [
+						{if-all: [=scale.small, =portrait], then:[26, 735, 175, 130]},
+						{if-all: [=widescreen, =portrait], then:[26, 735, 167, 135]},
+						{if-all: [=scale.small, =landscape], then:[873, 410, 137, 172]},
+						{if-all: [=widescreen, =landscape], then:[873, 410, 139, 168]},
+						{if-all: [=scale.large, =landscape], then:[0, 530, 1024, 90]},
+						{if-all: [=scale.large, =portrait], then:[0, 788, 768, 90]}
+
+					]},
+				background-image: 	{$switch: [
+						{if: =scale.phone, then: url(front-page-ad-phone.png)},
+						{if-all: [=scale.small, =widescreen], then: url(front-page-ad-small.jpg)},
+						{if-all: [=scale.large, =widescreen], then: url(front-page-ad.png)},
+						{if: =standard, then: url(front-page-banner.png)}
+					]},
+				background-position:center
+
 			}
+			
 		}, else: {
 			#b1:	{
 			 			frame: {$switch: [
@@ -59,21 +81,21 @@
 			},
 			#b2:	{ 
 						frame: {$switch: [
-						{if: =widescreen, then: [205, 367, 199, 253]},
+						{if: =widescreen, then: [250, 367, 300, 253]},
 						{if: =scale.large, then: [250, 337, 375, 193]}
 					]},
-					options:{small_headline:true, no_indent:{if: =scale.small, then:true, else:false}} 
+					options:{small_headline:true, border:true, no_indent:{if: =scale.small, then:true, else:false}} 
 			},
 			#b3:	{ 
 						frame: {$switch: [
-						{if: =widescreen, then: [415, 367, 199, 253]},
+						{if: =widescreen, then: [561, 367, 300, 253]},
 						{if: =scale.large, then: [636, 337, 375, 193]}
 					]},
-					options:{small_headline:true, no_indent:{if: =scale.small, then:true, else:false}} 
+					options:{small_headline:true, border:true,no_indent:{if: =scale.small, then:true, else:false}} 
 			},
 			#marketstrap: {display:{if: =standard, then:none, else:inherit}},
 			#whatsnews:		{ 
-								frame: [11, 367, 183, 253],
+								frame: [11, 367, 228, 253],
 			 					options: { expanded-frame: [
 									{$multiply:[=scale.pagex, 3]}, 
 									{$multiply:[=scale.pagey, 28]}, 
@@ -93,6 +115,27 @@
 								] },
 								display:{if: =standard, then:inherit, else:none}
 								
+			},
+			.front_banner: {
+				border-width:[{if: =standard, then: 1, else:0}, 0, 0, 0],
+				border-color:#ccc,
+				frame: {$switch: [
+						{if-all: [=scale.small, =portrait], then:[8, 705, 175, 130]},
+						{if-all: [=widescreen, =portrait], then:[13, 705, 167, 135]},
+						{if-all: [=scale.small, =landscape], then:[873, 410, 137, 172]},
+						{if-all: [=widescreen, =landscape], then:[873, 410, 139, 168]},
+						{if-all: [=scale.large, =landscape], then:[0, 530, 1024, 90]},
+						{if-all: [=scale.large, =portrait], then:[0, 788, 768, 90]}
+
+					]},
+				background-image: 	{$switch: [
+						{if: =scale.phone, then: url(front-page-ad-phone.png)},
+						{if-all: [=scale.small, =widescreen], then: url(front-page-ad-small.jpg)},
+						{if-all: [=scale.large, =widescreen], then: url(front-page-ad.png)},
+						{if: =standard, then: url(front-page-banner.png)}
+					]},
+				background-position:center
+
 			}
 		}
 

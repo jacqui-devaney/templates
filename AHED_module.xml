@@ -16,7 +16,8 @@
 			        {#bottom_container: {
 			            padding: [0, 16, 0, 16],
 			            text-overflow: "\u00bb",
-			            text-align: =justify
+			            text-align: =justify,
+						display:{if: =options.hide_body, then:none, else:inherit}
 			        }},
 			        {#image_container: { 
 						anchor-x: {if: =options.left_image, then:left, else:right}, 
@@ -74,7 +75,9 @@
 						{if: =scale.large, then: inherit}
 					]}}},
 					{.ahed_subhed: {display:{if: =options.dek, then:none, else:inherit}}},
-					{.body: {padding:{if: =options.byline, then:[0], else:[3, 0, 0, 0]}}},
+					{.body: {
+						padding:{if: =options.byline, then:[0], else:[3, 0, 0, 0]}
+					}},
 					{.ahed_body: {
 						column-count: { if: =options.two_columns, then:2, else:1 },
 						column-gutter: 20,

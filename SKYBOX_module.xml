@@ -12,7 +12,6 @@
 		
 		#image_container: {
 			position:relative,
-			height:{if: =options.D_image, then:153, else:249},
 			padding:[0]
 		},
 		image: {
@@ -26,11 +25,10 @@
 				]
 			},
 			image-scale: 1,
-			anchor-x:center,
-			gravity:aspect-fit
+			anchor-x:center
 		},
 		.text: {
-			padding:{if: =options.large_padding, then:[10, 0, 25, 0], else:[0, 0, 5, 0]}
+			padding:{if: =options.large_padding, then:[10, 0, 15, 0], else:[0, 0, 5, 0]}
 		}
     }</style>
 	<style>{

@@ -5,8 +5,8 @@
     <style>{
 		#b1: {options: { $switch: [
 				{if: =scale.phone, then: {}},
-				{if: =portrait, then: {large_ahed:true, large_subhed:true, two_columns:true, center_image:true}},
-				{if: =landscape, then: {large_ahed:true, large_subhed:true, two_columns:true, center_image:true}}			
+				{if: =portrait, then: {large_ahed:true, large_subhed:true, two_columns:true, left_image:true, indent:true}},
+				{if: =landscape, then: {large_ahed:true, large_subhed:true, two_columns:true, left_image:true, indent:true}}			
 		]}},
 		#b2: {options: { $switch: [
 				{if: =scale.phone, then: {}},
@@ -42,13 +42,13 @@
             #b2 : { 
 					frame: {$switch: [
 						{if: =widescreen, then: [485, 8, 280, 540]},
-						{if: =scale.large, then: [485, 8, 280, 365]}
+						{if: =scale.large, then: [485, 8, 280, 363]}
 					]} 
 			},
             #b3 : { 
 					frame: {$switch: [
 						{if: =widescreen, then: [485, 8, 280, 540]},
-						{if: =scale.large, then: [485, 370, 280, 170]}
+						{if: =scale.large, then: [485, 369, 280, 185]}
 					]} 
 			},
             #b4 : { 
@@ -80,7 +80,7 @@
             #b3 : { 
 					frame: {$switch: [
 						{if: =widescreen, then: [485, 8, 280, 540]},
-						{if: =scale.large, then: [485, 393, 280, 215]}
+						{if: =scale.large, then: [485, 392, 280, 225]}
 					]} 
 			},
 	        #b4 : { 

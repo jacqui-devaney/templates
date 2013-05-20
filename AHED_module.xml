@@ -19,28 +19,28 @@
 			            text-align: =justify
 			        }},
 			        {#image_container: { 
-						anchor-x: {if: =options.center_image, then:center, else:right}, 
-						width: {if: =options.center_image, then:143, else:90},
+						anchor-x: {if: =options.left_image, then:left, else:right}, 
+						width: {if: =options.left_image, then:209, else:90},
 						display: { if: =options.no_image, then:none, else:inherit },
 						pixels-per-point-x:{if: =scale.small, then:.7, else:1},
 						pixels-per-point-y:{if: =scale.small, then:.7, else:1},
 						image-scale:{if: =scale.small, then:.7, else:1},
-						top: {if: =options.center_image, then:90, else:0}
+						top: {if: =options.left_image, then:90, else:0}
 						
 					}},
 					{image: { 
-						padding:{if: =options.center_image, then:[10, 15], else:[0, 4, 8, 8]},
+						padding:{if: =options.left_image, then:[20, 48], else:[0, 4, 8, 8]},
 						options: { 
 							match: { 
-								width: {if: =options.center_image, then:113, else:79}, 
-								height: {if: =options.center_image, then:113, else:79} 
+								width: {if: =options.left_image, then:113, else:79}, 
+								height: {if: =options.left_image, then:113, else:79} 
 							} 
-						} 
+						}
 						
 					}},
 					{.A_size:{
-						width: {if: =options.center_image, then:113, else:76}, 
-						height: {if: =options.center_image, then:113, else:76} 
+						width: {if: =options.left_image, then:113, else:76}, 
+						height: {if: =options.left_image, then:113, else:76} 
 						
 					}},
 					{#stars: { padding: [5, 0, 0, 0] }},
@@ -75,14 +75,16 @@
 					]}}},
 					{.ahed_subhed: {display:{if: =options.dek, then:none, else:inherit}}},
 					{.body: {padding:{if: =options.byline, then:[0], else:[3, 0, 0, 0]}}},
+					{.ahed_body: {
+						column-count: { if: =options.two_columns, then:2, else:1 },
+						column-gutter: 20,
+						text-indent:{if: =options.indent, then:20, else:0}
+					}},
 					{#body-first-p: {text-indent: {$switch: [
 						{if: =scale.small, then:{if: =options.no_indent, then:0, else:inherit}},
 						{if: =scale.large, then: inherit}
 					]}}},
-					{.ahed_body: {
-						column-count: { if: =options.two_columns, then:2, else:1 },
-						column-gutter: 20
-					}},
+					
 					{.phone: {display:none}}
 				]
 

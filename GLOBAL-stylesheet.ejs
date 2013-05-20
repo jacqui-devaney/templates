@@ -136,7 +136,14 @@
 				{if-all: [=scale.large, =portrait], then:[0, 788, 768, 90]}
 				
 			]},
-		background-image: url(front-page-banner.png),
+			background-image:{
+				$switch: [
+					{if: =scale.phone, then: url(front-page-ad-phone.png)},
+					{if: =scale.small, then: url(front-page-ad-small.jpg)},
+					{if-all: [=scale.large, =widescreen], then: url(front-page-ad.png)},
+					{if: =standard, then: url(front-page-banner.png)}
+				]
+			},
 		background-position:center
 		
 	}

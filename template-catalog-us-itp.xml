@@ -12,6 +12,14 @@
 		/>
 		<template 
 			section="FRONT_SECTION" 
+			name="FRONT-4story-F-deco_v2_template.xml" 
+			title="Default: 4 story, F liondoor - Banner"
+			min="4" 
+			deco="true" 
+			usage="front" 
+		/>
+		<template 
+			section="FRONT_SECTION" 
 			name="FRONT-4story-F-deco-top_template.xml" 
 			title="4 story - Top F liondoor"
 			min="4" 
@@ -20,8 +28,8 @@
 		/>
 		<template 
 			section="FRONT_SECTION" 
-			name="FRONT-4story-F-deco-C_template.xml" 
-			title="TEST 4 story - Top F liondoor - second story C photo"
+			name="FRONT-4story-F-deco-top_v2_template.xml" 
+			title="4 story, Top F liondoor - Banner"
 			min="4" 
 			deco="true" 
 			usage="front" 
@@ -123,6 +131,13 @@
 			section="FRONT_SECTION" 
 			name="FRONT-4story-F_template.xml" 
 			title="4 story - top story F photo"
+			min="4" 
+			usage="front" 
+		/>
+		<template 
+			section="FRONT_SECTION" 
+			name="FRONT-4story-F_v2_template.xml" 
+			title="4 story, top story F photo - Banner"
 			min="4" 
 			usage="front" 
 		/>

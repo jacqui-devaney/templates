@@ -1,4 +1,4 @@
-<jpml id="FRONT-4story-F-deco_template">
+<jpml id="FRONT-3story-F-deco_v2_template">
     <style src="GLOBAL-stylesheet.ejs"/>
     <style src="FRONT-stylesheet.ejs"/>
     <style src="PHONE-stylesheet.ejs"/>
@@ -26,15 +26,8 @@
 		#b3: {
 			options:{$switch:[
 				{if: =scale.phone, then: {small_headline:true, show_image:true}},
-				{if: =portrait, then: {small_headline:true, bottom:true, no_indent:true}},
+				{if: =portrait, then: {small_headline:true, no_indent:true}},
 				{if: =landscape, then: {small_headline:true, no_indent:true}}
-			]	
-		}},
-		#b4: {
-			options:{$switch:[
-				{if: =scale.phone, then: {}},
-				{if: =portrait, then: {no_indent:true, no_image: {if: =standard, then:true, else:false}}},
-				{if: =landscape, then: {no_indent:true, hide_body: {if: =standard, then:true, else:false}, no_rule: {if: =widescreen, then:true, else:false}, left: {if: =widescreen, then:true, else:false}}}
 			]	
 		}},
 		#marketstrap: {display:{if: =standard, then:none, else:inherit}},
@@ -53,33 +46,27 @@
 	            #b1: 	{ 
 							frame: {$switch: [
 								{if: =widescreen, then: [194, 28, 571, 234]},
-								{if: =scale.large, then: [194, 0, 571, 155]}
+								{if: =scale.large, then: [194, 0, 571, 190]}
 							]}
 				},
 	            #deco: 	{ 
 							frame: {$switch: [
 								{if: =widescreen, then: [194, 261, 571, 257]},
-								{if: =scale.large, then: [194, 155, 571, 305]}
+								{if: =scale.large, then: [194, 190, 571, 304]}
 							]}
 				},
 	            #b2: 	{ 
 							frame: {$switch: [
 								{if: =widescreen, then: [194, 518, 280, 178]},
-								{if: =scale.large, then: [194, 460, 280, 164]}
+								{if: =scale.large, then: [194, 493, 280, 296]}
 							]}							
 				},
 	            #b3: 	{ 
 							frame: {$switch: [
 								{if: =widescreen, then: [194, 697, 280, 178]},
-								{if: =scale.large, then: [194, 624, 280, 164]}
+								{if: =scale.large, then: [485, 493, 280, 296]}
 							]}
 							
-				},
-	            #b4: 	{
-							frame: {$switch: [
-								{if: =widescreen, then: [486, 518, 280, 356]},
-								{if: =scale.large, then: [486, 460, 280, 328]}
-						]}
 				}
 	        }},
 			{if: =landscape, then:{
@@ -98,21 +85,16 @@
 				#b2:	{ 
 							frame: {$switch: [
 								{if: =widescreen, then: [592, 26, 238, 272]},
-								{if: =scale.large, then: [787, 0, 237, 164]}
+								{if: =scale.large, then: [787, 0, 237, 266]}
 							]}
 						},
 				#b3:	{ 
 							frame: {$switch: [
 								{if: =widescreen, then: [592, 300, 238, 315]},
-								{if: =scale.large, then: [787, 164, 237, 164]}
+								{if: =scale.large, then: [787, 266, 237, 264]}
 							]}
 
-				},
-				#b4:	{ frame: {$switch: [
-								{if: =widescreen, then: [840, 35, 183, 592]},
-								{if: =scale.large, then: [787, 328, 237, 200]}
-						]}
-						}
+				}
 				
 			}}
 		]
@@ -128,6 +110,5 @@
     <box id="b1" embed="article" class="maude unit_166" module="FRONT-NO-IMAGE_module.xml" />    
     <box id="b2" embed="article" class="maude unit_50" module="FRONT-NO-IMAGE_module.xml" />
 	<box id="b3" embed="article" class="maude unit_50" module="FRONT-NO-IMAGE_module.xml" />
- 	<box id="b4" embed="article" class="maude unit_50" module="AHED_module.xml" />
 	<box id="deco" embed="article" class="maude unit_G_deco" module="DECO_module.xml" />
 </jpml>

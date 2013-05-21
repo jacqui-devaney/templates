@@ -124,7 +124,7 @@
 					left:10
 				},
 				.slug: {
-					top: 8,
+					top: 3,
 					left:115
 				},
 				.deloitte_slug: {
@@ -256,7 +256,7 @@
 	<panel id="strap">
 		<p class="subsection" id="cio">Latest Technology News</p>
 		<p class="subsection" id="cfo">Latest Finance News</p>
-		<p class="subsection" id="risk">Latest Finance News</p>
+		<p class="subsection" id="risk">Latest News</p>
 	</panel>
 	<box id="tech_header" class="maude unit_cio">
 		<p class="tech_section" id="cio">Latest Technology News</p>
@@ -277,7 +277,7 @@
 		<box class="slug">
 			<p class="deloitte_slug" id="cio">Business-led, Technology-enabled:</p><p class="deloitte_slug" id="cio">Insight from Deloitte</p>
 			<p class="deloitte_slug" id="cfo">CFO insight and analysis written</p><p class="deloitte_slug" id="cfo"> and compiled by Deloitte</p>
-			<p class="deloitte_slug" id="risk">Risk management, strategy and analysis written and compiled by Deloitte</p>
+			<p class="deloitte_slug" id="risk">Risk management, strategy and </p><p class="deloitte_slug" id="risk">analysis written and compiled </p><p class="deloitte_slug" id="risk">by Deloitte</p>
 		</box>
 	</box>
 	<box id="deloitte_header">
@@ -285,7 +285,7 @@
 		<panel class="slug">
 			<p class="deloitte_slug" id="cio">Business-led, Technology-enabled:</p><p class="deloitte_slug" id="cio">Insight from Deloitte</p>
 			<p class="deloitte_slug" id="cfo">CFO insight and analysis written</p><p class="deloitte_slug" id="cfo"> and compiled by Deloitte</p>
-			<p class="deloitte_slug" id="risk">Risk management, strategy and analysis written and compiled by Deloitte</p>
+			<p class="deloitte_slug" id="risk">Risk management, strategy and </p><p class="deloitte_slug" id="risk">analysis written and compiled by Deloitte</p>
 		</panel>
 	</box>
 	<box id="h5" embed="article" class="maude unit_50" module="HIGHLIGHTS-CIO_module.xml" />

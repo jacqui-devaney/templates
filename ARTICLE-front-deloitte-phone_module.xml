@@ -8,7 +8,7 @@
 			border-image:url(deloitte_background-white.png),
 			border-width: [3, 0, 0, 0],
 			border-slice: [3, 0, 0, 0],
-			max-height:38
+			max-height:44
 		}},
 		{.deloitte: {
 			background-image:url(deloitte.png),
@@ -99,6 +99,7 @@
 		<box class="slug">
 			<p class="deloitte_slug" id="cio">Business-led, Technology-enabled: Insight from Deloitte</p>
 			<p class="deloitte_slug" id="cfo">CFO insight and analysis written and compiled by Deloitte</p>
+			<p class="deloitte_slug" id="risk">Risk management, strategy and analysis written and compiled by Deloitte</p>
 		</box>
 	</panel>
 

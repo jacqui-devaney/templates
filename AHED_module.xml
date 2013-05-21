@@ -26,7 +26,7 @@
 						pixels-per-point-x:{if: =scale.small, then:.7, else:1},
 						pixels-per-point-y:{if: =scale.small, then:.7, else:1},
 						image-scale:{if: =scale.small, then:.7, else:1},
-						top: {if: =options.left_image, then:90, else:0}
+						top: {if: =options.left_image, then:130, else:0}
 						
 					}},
 					{image: { 

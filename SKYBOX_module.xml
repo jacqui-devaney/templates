@@ -28,7 +28,10 @@
 			anchor-x:center
 		},
 		.text: {
-			padding:{if: =options.large_padding, then:[10, 0, 15, 0], else:[0, 0, 5, 0]}
+			padding:{if: =options.large_padding, then:[8, 0, 8, 0], else:[0, 0, 5, 0]}
+		},
+		.skybox_large_dek: {
+			max-height:55
 		}
     }</style>
 	<style>{
@@ -64,7 +67,7 @@
 	<panel id="wrapper">
 		<panel class="text">
 			<p class="skybox_large_headline"><span embed="headline" /><mark class="key" /></p>
-			<h2 class="skybox_large_dek"><span embed="subhed" /></h2>
+			<panel class="skybox_large_dek" ><p embed="body-first-p" /></panel>
 
 		</panel>
 		<box id="image_container">

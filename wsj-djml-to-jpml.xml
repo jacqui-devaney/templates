@@ -1,3 +1,4 @@
+
 <?xml version="1.0" encoding="UTF-8"?>
 
 <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
@@ -67,7 +68,7 @@
                 </p>
             </xsl:for-each>
         </xsl:if>
-
+		<p>&#xa0;</p>
     </panel>
     
     <!-- Barron's will need external links, insets too. -->

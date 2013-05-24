@@ -1,4 +1,3 @@
-
 <?xml version="1.0" encoding="UTF-8"?>
 
 <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
@@ -11,6 +10,12 @@
 
 <xsl:template match="/article-doc">
 <jpml>
+    <xsl:attribute name="lang">
+        <xsl:choose>
+            <xsl:when test="@language = 'en-us'">en</xsl:when>
+            <xsl:otherwise><xsl:value-of select="@language"/></xsl:otherwise>
+        </xsl:choose>
+    </xsl:attribute>
     <p id="type"><xsl:value-of select="@type"/></p>
     <p id="flashline"><xsl:value-of select="@display-name"/></p>
     <p id="pubdate"><xsl:value-of select="@date"/></p>
@@ -58,7 +63,7 @@
     <panel id="body">
         <xsl:apply-templates select="article/article-body"/>
         <!-- We will insert a mark body bug in the last p or tagline element -->
-<xsl:if test="@type=&quot;Deloitte Cio Blog&quot; or @type=&quot;Deloitte Cfo Blog&quot; or @type=&quot;Deloitte Riskandcompliance Blog&quot;">
+<xsl:if test="@type=&quot;Deloitte Cio Blog&quot; or @type=&quot;Deloitte Cfo Blog&quot;">
 	            <xsl:for-each select="//inset[@param1=&quot;DISCLAIMER&quot; and @style=&quot;OUTSET&quot;]/p">
                 <xsl:if test="not(preceding-sibling::p[position()=1])">
                     <p id="deloitte-disclaimer-preamble-p"><mark id="deloitte-disclaimer-preamble-mark" /></p>

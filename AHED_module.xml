@@ -26,11 +26,16 @@
 						pixels-per-point-x:{if: =scale.small, then:.7, else:1},
 						pixels-per-point-y:{if: =scale.small, then:.7, else:1},
 						image-scale:{if: =scale.small, then:.7, else:1},
-						top: {if: =options.left_image, then:130, else:0}
+						top: {if: =options.left_image, then:130, else:0},
+						background-color:blue
 						
 					}},
 					{image: { 
-						padding:{if: =options.left_image, then:[20, 48], else:[0, 4, 8, 8]},
+						padding:{ $switch: [
+							{if: =options.left_image, then:[20, 48]},
+							{if: =options.wide_left, then:[20, 48, 20, 0]},
+							"[0, 4, 8, 8]"
+						]},
 						options: { 
 							match: { 
 								width: {if: =options.left_image, then:113, else:79}, 

@@ -21,20 +21,24 @@
 			        }},
 			        {#image_container: { 
 						anchor-x: {if: =options.left_image, then:left, else:right}, 
-						width: {if: =options.left_image, then:209, else:90},
+						width: { $switch: [
+							{if-all: [=options.left_image, =widescreen], then:130},
+							{if: =options.left_image, then:209},
+							90
+						]},
 						display: { if: =options.no_image, then:none, else:inherit },
 						pixels-per-point-x:{if: =scale.small, then:.7, else:1},
 						pixels-per-point-y:{if: =scale.small, then:.7, else:1},
 						image-scale:{if: =scale.small, then:.7, else:1},
-						top: {if: =options.left_image, then:130, else:0},
-						background-color:blue
+						top: {if: =options.left_image, then:130, else:0}
+						
 						
 					}},
 					{image: { 
-						padding:{ $switch: [
+						padding: { $switch: [
+							{if-all: [=options.left_image, =widescreen], then:[20, 0, 20, 0]},
 							{if: =options.left_image, then:[20, 48]},
-							{if: =options.wide_left, then:[20, 48, 20, 0]},
-							"[0, 4, 8, 8]"
+							[0, 4, 8, 8]
 						]},
 						options: { 
 							match: { 

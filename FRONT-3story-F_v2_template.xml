@@ -33,6 +33,7 @@
 			
 			}},
 			{if: =portrait, then: {
+				jpml: {border-width:[1, 0, 0, 0], border-color:black},
 				#b1:	{ 
 							frame: {$switch: [
 								{if: =widescreen, then: [195, 28, 571, 500]},
@@ -53,6 +54,7 @@
 				}
 			}},
 			{if: =landscape, then:{
+				jpml: {border-width:[1, 0, 0, 0], border-color:black},
 				#b1:	{ 
 							frame: {$switch: [
 								{if: =widescreen, then: [205, 28, 377, 593]},

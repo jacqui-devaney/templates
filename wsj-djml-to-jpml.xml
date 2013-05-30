@@ -23,8 +23,8 @@
     <p id="region"><xsl:value-of select="$region"/></p>
     
     <panel id="metadata">
-        <p id="article-manifest"><xsl:value-of select="$article-manifest"/></p>
-        <p id="media-bucket"><xsl:value-of select="$media-bucket"/></p>
+        <p id="article-manifest" />
+        <p id="media-bucket" />
     </panel>
 
     <!-- TODO: paid/free flag -->

@@ -19,9 +19,14 @@
     <p id="type"><xsl:value-of select="@type"/></p>
     <p id="flashline"><xsl:value-of select="@display-name"/></p>
     <p id="pubdate"><xsl:value-of select="@date"/></p>
-    <p id="subsection"><xsl:value-of select="$subsection"></xsl:value-of></p>
+    <p id="subsection"><xsl:value-of select="$subsection"/></p>
     <p id="region"><xsl:value-of select="$region"/></p>
     
+    <panel id="metadata">
+        <p id="article-manifest"><xsl:value-of select="$article-manifest"/></p>
+        <p id="media-bucket"><xsl:value-of select="$media-bucket"/></p>
+    </panel>
+
     <!-- TODO: paid/free flag -->
 
     <p id="headline"><xsl:call-template name="headline"/></p>
@@ -40,23 +45,6 @@
     <panel id="article-image">
         <xsl:apply-templates select="article/article-body//image[@width &gt; 0 and @height &gt; 0]"/>
     </panel>
-    
-    <!-- TODO: slideshows? media@type=FLASH and image@slug=slideshow -->
-    
-    <!-- TODO: images where slug=interactive, need to get media@thumbnail-src too -->
-    <panel id="article-graphic">
-        <xsl:apply-templates select="zzz"/>
-    </panel>
-    
-    <!-- TODO: media@type=VIDEO -->
-    <panel id="article-video">
-        <xsl:apply-templates select="zzz"/>
-    </panel>
-    
-    <panel id="article-link">
-        <xsl:apply-templates select="zzz"/>
-    </panel>
-    
         
     <!-- TODO: will we need to merge the SB2/3/4 text with the SB1 media? -->
     <!-- TODO: collapse empty p tags? ignore leading p tags too. -->

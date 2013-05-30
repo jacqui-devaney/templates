@@ -274,7 +274,8 @@
 		line-height:{$multiply:18},
 		text-overflow: " \u00bb",
         text-align: { if: =options.justify, then:=justify, else:left},
-		text-scale: {if: =widescreen, then: {$multiply: [=scale.text, 1.2] }, else: inherit}
+		text-scale: {if: =widescreen, then: {$multiply: [=scale.text, 1.2] }, else: inherit},
+		hyphens:auto
 
 	},
 	h2: {
@@ -291,7 +292,8 @@
 		text-indent:{if: =issue.edition, equals: "japan", then: 0, else:20},
 		font-size:{$multiply: [16, =view.zoomlevel]},
 		line-height:{$multiply: [22, =view.zoomlevel]},
-        text-align: left
+        text-align: left,
+		hyphens:auto
 	},
 	.body-bug: {
 		display: {if:=intent.article, then:default, else:none},
@@ -475,7 +477,8 @@
 		text-overflow: " \u00bb",
         text-align: left,
 		text-indent:{if: =issue.edition, equals: "japan", then: 0, else:20},
-		text-scale:{if: =widescreen, then: {$multiply: [=scale.text, 1.1] }, else: inherit}
+		text-scale:{if: =widescreen, then: {$multiply: [=scale.text, 1.1] }, else: inherit},
+		hyphens:auto
 		
 	},
 	
@@ -558,7 +561,8 @@
 			],
 			then:0,
 			else:20
-		}
+		},
+		hyphens:auto
 	},
 	.highlight_flashline_small: {
 		font-name: { if: =issue.edition, equals: "japan", then: HiraKakuProN-W3, else: DJ5RetinaCd-Semibold },
@@ -672,7 +676,8 @@
 		line-height:18,
 		padding: [ 0, 0, 8, 0 ],
 		text-align:left,
-		text-scale: {if: =widescreen, then: {$multiply: [=scale.text, 1.1] }, else: inherit}
+		text-scale: {if: =widescreen, then: {$multiply: [=scale.text, 1.1] }, else: inherit},
+		hyphens:auto
 		
 	},
 	#rando_header: { 
@@ -861,7 +866,8 @@
 		text-indent:0,
 		font-size:{$multiply: [15, =view.zoomlevel]},
 		line-height:{$multiply: [20, =view.zoomlevel]},
-        text-align: =justify
+        text-align: =justify,
+		hyphens:auto
 
 	},
 	#close_button_p: {

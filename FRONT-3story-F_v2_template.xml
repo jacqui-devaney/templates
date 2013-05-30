@@ -6,7 +6,7 @@
 		#b1: {options: {$switch: [
 				{if: =scale.phone, then:{large_headline:true, no_border:true, show_body:true, top_align:true}},
 				{if: =portrait, then:{large_headline:true, justify:true, show_image:true, two_columns:true, F_image:true, no_border:true, byline:{if: =scale.small, then:true, else:false}}},
-				{if: =landscape, then:{large_headline:true, justify:true, F_image:true, show_image:true, no_border:true, byline:{if: =scale.small, then:true, else:false}}}
+				{if: =landscape, then:{large_headline:true, justify:true, F_image:true, show_image:true, no_border:true, two_columns:{if: =widescreen, then:true, else:false}, byline:{if: =scale.small, then:true, else:false}}}
 			]}
 		
 		},
@@ -42,13 +42,13 @@
 				},
 				#b2:	{ 
 							frame: {$switch: [
-								{if: =widescreen, then: [195, 529, 280, 173]},
+								{if: =widescreen, then: [195, 529, 280, 345]},
 								{if: =scale.large, then: [194, 502, 280, 285]}
 							]} 
 				},
 				#b3:	{ 
 							frame: {$switch: [
-								{if: =widescreen, then: [195, 703, 280, 172]},
+								{if: =widescreen, then: [485, 529, 280, 345]},
 								{if: =scale.large, then: [485, 502, 280, 285]}
 							]}
 				}
@@ -57,19 +57,19 @@
 				jpml: {border-width:[1, 0, 0, 0], border-color:black},
 				#b1:	{ 
 							frame: {$switch: [
-								{if: =widescreen, then: [205, 28, 377, 593]},
+								{if: =widescreen, then: [205, 28, 571, 593]},
 								{if: =scale.large, then: [205, 0, 571, 530]}
 							]}
 				},
 				#b2:	{ 
 							frame: {$switch: [
-								{if: =widescreen, then: [592, 28, 238, 272]},
+								{if: =widescreen, then: [787, 28, 236, 297]},
 								{if: =scale.large, then: [787, 0, 237, 266]}
 							]}
 						},
 				#b3:	{ 
 							frame: {$switch: [
-								{if: =widescreen, then: [592, 300, 238, 315]},
+								{if: =widescreen, then: [787, 324, 236, 297]},
 								{if: =scale.large, then: [787, 266, 237, 264]}
 							]}
 				}

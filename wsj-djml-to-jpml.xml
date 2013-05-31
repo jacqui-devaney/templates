@@ -8,6 +8,9 @@
 <xsl:param name="region"></xsl:param>
 <xsl:param name="issuetype"></xsl:param>
 
+<xsl:variable name="smallcase" select="'abcdefghijklmnopqrstuvwxyz'" />
+<xsl:variable name="uppercase" select="'ABCDEFGHIJKLMNOPQRSTUVWXYZ'" />
+
 <xsl:template match="/article-doc">
 <jpml>
     <xsl:attribute name="lang">
@@ -188,7 +191,17 @@
 </xsl:template>
 
 <xsl:template match="link">
-    <xsl:value-of select="."/>
+    <link>
+        <xsl:attribute name="href">
+            <xsl:call-template name="tolower">
+                <xsl:with-param name="node" select="@type" />
+            </xsl:call-template>:<xsl:call-template name="nameloc_by_id">
+                <xsl:with-param name="id" select="@linkend" />
+            </xsl:call-template>
+        </xsl:attribute>
+        <xsl:apply-templates select="*|node()"/>
+    </link>
+
 </xsl:template>
 
 <xsl:template match="phrase">
@@ -246,6 +259,11 @@
     </xsl:choose>
 </xsl:template>
 
+<xsl:template name="nameloc_by_id">
+    <xsl:param name="id" />
+    <xsl:value-of select="//article//nameloc[@id = $id]/nmlist" />
+</xsl:template>
+
 <xsl:template match="image">
     <image>
         <xsl:attribute name="source">
@@ -266,6 +284,16 @@
   <xsl:copy>
     <xsl:apply-templates select="@*|node()"/>
   </xsl:copy>
+</xsl:template>
+
+<xsl:template name="toupper">
+  <xsl:param name="node" />
+  <xsl:value-of select="translate($node, $smallcase, $uppercase)" />
+</xsl:template>
+
+<xsl:template name="tolower">
+  <xsl:param name="node" />
+  <xsl:value-of select="translate($node, $uppercase, $smallcase)" />
 </xsl:template>
 
 </xsl:stylesheet>

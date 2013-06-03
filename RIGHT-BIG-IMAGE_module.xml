@@ -20,12 +20,21 @@
 				position:relative,
 				pixels-per-point-x:1,
 				pixels-per-point-y:1,
-				width: 359
+				width: {if: =options.F_image, then:571, else:359}
 			}},
 			
 			{#image_container: { 
 				padding: [0, 8, 12, 15 ],
 				display: {if: =options.hide_image, then:none, else:inherit}
+			}},
+			{image:{
+					options: {
+						$switch: [
+							{ if: =options.F_image, then: {match: { width:571, height:226, min-height:226 } } },
+							{ if: =options.E_image, then: {match: { width: 359, height:239, min-height:239 } } }
+
+						]
+					}
 			}},
 			{#headline: { padding:[0, 0, 12, 0] }},
 			{.invisible: { display:none }},

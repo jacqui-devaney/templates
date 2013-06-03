@@ -1,0 +1,157 @@
+<jpml id="FRONT-3story-big-news-F_v2_template">
+	<style src="GLOBAL-stylesheet.ejs" />
+	<style src="FRONT-stylesheet.ejs" />
+	<style> {
+		if: =portrait, then: {
+			jpml: {border-width:[1, 0, 0, 0], border-color:black},
+			#marketstrap: {display:{if: =standard, then:none, else:inherit}},
+			#b1:	{ 
+						frame: {$switch: [
+						{if: =widescreen, then: [11, 34, 746, 330]},
+						{if: =scale.large, then: [11, 9, 746, 330]}
+					]},
+					options:{bignews_large_headline:true, justify:true, no_border:true, byline:true} 
+			},
+			#b2:	{ 
+						frame: {$switch: [
+						{if: =widescreen, then: [220, 376, 536, 251]},
+						{if: =scale.large, then: [308, 351, 449, 219]}
+					]},
+					options:{small_headline:true, no_indent:{if: =scale.small, then:true, else:false}, border:true, C_image:{if: =scale.large, then:true, else:false} } 
+					},
+			#b3:	{ 
+						frame: {$switch: [
+						{if: =widescreen, then: [220, 627, 536, 250]},
+						{if: =scale.large, then: [308, 570, 449, 219]}
+					]},
+					options:{small_headline:true, C_image:{if: =scale.large, then:true, else:false}, border:true, byline:{if: =scale.small, then:true, else:false}, no_indent:{if: =scale.small, then:true, else:false}} 
+			},
+			#whatsnews:		{ 
+							frame: [11, 376, 198, 350],
+							options: { expanded-frame: [
+								{$multiply:[=scale.pagex, 3]}, 
+								{$multiply:[=scale.pagey, 28]}, 
+								{$multiply:[=scale.pagex, 550]}, 
+								{$multiply:[=scale.pagey, 860]}
+							] },
+							display:{if: =standard, then:none, else:inherit}
+							
+							
+							
+			},
+			#whatsnews_itp:		{ 
+								frame: [11, 351, 286, 438],
+			 					options: { expanded-frame: [
+									{$multiply:[=scale.pagex, 3]}, 
+									{$multiply:[=scale.pagey, 28]}, 
+									{$multiply:[=scale.pagex, 550]}, 
+									{$multiply:[=scale.pagey, 593]}
+								] },
+								display:{if: =standard, then:inherit, else:none}
+								
+			},
+			.front_banner: {
+				border-width:[{if: =standard, then: 1, else:0}, 0, 0, 0],
+				border-color:#ccc,
+				frame: {$switch: [
+						{if-all: [=scale.small, =portrait], then:[26, 735, 175, 130]},
+						{if-all: [=widescreen, =portrait], then:[26, 735, 167, 135]},
+						{if-all: [=scale.small, =landscape], then:[873, 410, 137, 172]},
+						{if-all: [=widescreen, =landscape], then:[873, 410, 139, 168]},
+						{if-all: [=scale.large, =landscape], then:[0, 530, 1024, 90]},
+						{if-all: [=scale.large, =portrait], then:[0, 788, 768, 90]}
+
+					]},
+				background-image: 	{$switch: [
+						{if: =scale.phone, then: url(front-page-ad-phone.png)},
+						{if-all: [=scale.small, =widescreen], then: url(front-page-ad-small.jpg)},
+						{if-all: [=scale.large, =widescreen], then: url(front-page-ad.png)},
+						{if: =standard, then: url(front-page-banner.png)}
+					]},
+				background-position:center
+
+			}
+			
+		}, else: {
+			jpml: {border-width:[1, 0, 0, 0], border-color:black},
+			#b1:	{
+			 			frame: {$switch: [
+						{if: =widescreen, then: [11, 34, 1002, 333]},
+						{if: =scale.large, then: [11, 9, 1000, 328]}
+					]},
+					options:{bignews_large_headline:true, no_border:true, justify:true, bottom:true, byline:true, two_columns:true, F_image:true} 
+			},
+			#b2:	{ 
+						frame: {$switch: [
+						{if: =widescreen, then: [250, 367, 300, 253]},
+						{if: =scale.large, then: [250, 337, 375, 193]}
+					]},
+					options:{small_headline:true, border:true, no_indent:{if: =scale.small, then:true, else:false}} 
+			},
+			#b3:	{ 
+						frame: {$switch: [
+						{if: =widescreen, then: [561, 367, 300, 253]},
+						{if: =scale.large, then: [636, 337, 375, 193]}
+					]},
+					options:{small_headline:true, border:true,no_indent:{if: =scale.small, then:true, else:false}} 
+			},
+			#marketstrap: {display:{if: =standard, then:none, else:inherit}},
+			#whatsnews:		{ 
+								frame: [11, 367, 228, 253],
+			 					options: { expanded-frame: [
+									{$multiply:[=scale.pagex, 3]}, 
+									{$multiply:[=scale.pagey, 28]}, 
+									{$multiply:[=scale.pagex, 550]}, 
+									{$multiply:[=scale.pagey, 593]}
+								] },
+								display:{if: =standard, then:none, else:inherit}
+								
+			},
+			#whatsnews_itp:		{ 
+								frame: [11, 337, 228, 193],
+			 					options: { expanded-frame: [
+									{$multiply:[=scale.pagex, 3]}, 
+									{$multiply:[=scale.pagey, 28]}, 
+									{$multiply:[=scale.pagex, 550]}, 
+									{$multiply:[=scale.pagey, 593]}
+								] },
+								display:{if: =standard, then:inherit, else:none}
+								
+			},
+			.front_banner: {
+				border-width:[{if: =standard, then: 1, else:0}, 0, 0, 0],
+				border-color:#ccc,
+				frame: {$switch: [
+						{if-all: [=scale.small, =portrait], then:[8, 705, 175, 130]},
+						{if-all: [=widescreen, =portrait], then:[13, 705, 167, 135]},
+						{if-all: [=scale.small, =landscape], then:[873, 410, 137, 172]},
+						{if-all: [=widescreen, =landscape], then:[873, 410, 139, 168]},
+						{if-all: [=scale.large, =landscape], then:[0, 530, 1024, 90]},
+						{if-all: [=scale.large, =portrait], then:[0, 788, 768, 90]}
+
+					]},
+				background-image: 	{$switch: [
+						{if: =scale.phone, then: url(front-page-ad-phone.png)},
+						{if-all: [=scale.small, =widescreen], then: url(front-page-ad-small.jpg)},
+						{if-all: [=scale.large, =widescreen], then: url(front-page-ad.png)},
+						{if: =standard, then: url(front-page-banner.png)}
+					]},
+				background-position:center
+
+			}
+		}
+
+	} </style>
+	
+	<box id="marketstrap" embed="marketstrap" />
+
+    <box id="whatsnews" embed="whatsnews" />
+    <box id="whatsnews_itp" embed="whatsnews" />
+	<box class="maude unit_ad front_banner">
+		<box id="ad_banner" class="ad-banner" embed="advertisement" />
+	</box>
+	<box id="b1" embed="article" module="RIGHT-BIG-IMAGE_module.xml" />
+	<box id="b2" embed="article" module="RIGHT-INSET-IMAGE_module.xml" />
+	<box id="b3" embed="article" module="RIGHT-INSET-IMAGE_module.xml" />
+	
+</jpml>

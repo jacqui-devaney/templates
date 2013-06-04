@@ -41,13 +41,13 @@
 			},
             #b2 : { 
 					frame: {$switch: [
-						{if: =widescreen, then: [485, 8, 280, 540]},
+						{if: =widescreen, then: [485, 8, 280, 363]},
 						{if: =scale.large, then: [485, 8, 280, 363]}
 					]} 
 			},
             #b3 : { 
 					frame: {$switch: [
-						{if: =widescreen, then: [485, 8, 280, 540]},
+						{if: =widescreen, then: [485, 369, 280, 185]},
 						{if: =scale.large, then: [485, 369, 280, 185]}
 					]} 
 			},
@@ -73,13 +73,13 @@
 			},
             #b2 : { 
 					frame: {$switch: [
-						{if: =widescreen, then: [485, 8, 280, 540]},
+						{if: =widescreen, then: [485, 8, 280, 385]},
 						{if: =scale.large, then: [485, 8, 280, 385]}
 					]} 
 			},
             #b3 : { 
 					frame: {$switch: [
-						{if: =widescreen, then: [485, 8, 280, 540]},
+						{if: =widescreen, then: [485, 392, 280, 225]},
 						{if: =scale.large, then: [485, 392, 280, 225]}
 					]} 
 			},

@@ -158,6 +158,14 @@
 		/>
 		<template 
 			section="FRONT_SECTION" 
+			name="FRONT-3story-big-news-F_v2_template.xml" 
+			title="Top Story HUGE News F - banner"
+			min="3" 
+			usage="front" 
+		/>
+		
+		<template 
+			section="FRONT_SECTION" 
 			name="FRONT-4story-big-news-small_template.xml" 
 			title="Top Story HUGE News -small headline"
 			min="4" 
@@ -165,14 +173,14 @@
 		/>
 		<template 
 			section="FRONT_SECTION" 
-			name="FRONT-4story-big-news-small_v2_template.xml" 
+			name="FRONT-3story-big-news-small_v2_template.xml" 
 			title="Top Story HUGE News small headline - Banner"
 			min="3" 
 			usage="front" 
 		/>
 		<template 
 			section="FRONT_SECTION" 
-			name="FRONT-4story-big-news_v2_template.xml" 
+			name="FRONT-3story-big-news_v2_template.xml" 
 			title="Top Story HUGE News large headline - Banner"
 			min="3" 
 			usage="front" 

@@ -244,6 +244,9 @@
     <xsl:apply-templates select="*[self::summary-body or self::alt-summary-body]//image[@width &gt; 0 and @height &gt; 0]"/>
 </xsl:template>
 
+<xsl:template match="temporary-info">
+</xsl:template> 
+
 <xsl:template name="image_src_id">
     <!-- this gets the last path component of a URL, or a filename if it's just a filename, recursively -->
     <xsl:param name="srcid" />

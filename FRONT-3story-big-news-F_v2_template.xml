@@ -1,4 +1,4 @@
-<jpml id="FRONT-4story-big-news-small_v2_template">
+<jpml id="FRONT-3story-big-news-F_v2_template">
 	<style src="GLOBAL-stylesheet.ejs" />
 	<style src="FRONT-stylesheet.ejs" />
 	<style> {
@@ -10,7 +10,7 @@
 						{if: =widescreen, then: [11, 34, 746, 330]},
 						{if: =scale.large, then: [11, 9, 746, 330]}
 					]},
-					options:{bignews_small_headline:true, justify:true, no_border:true, byline:true} 
+					options:{bignews_large_headline:true, justify:true, no_border:true, byline:true} 
 			},
 			#b2:	{ 
 						frame: {$switch: [
@@ -79,7 +79,7 @@
 						{if: =widescreen, then: [11, 34, 1002, 333]},
 						{if: =scale.large, then: [11, 9, 1000, 328]}
 					]},
-					options:{bignews_small_headline:true, no_border:true, justify:true, bottom:true, byline:true, two_columns:true} 
+					options:{bignews_large_headline:true, no_border:true, justify:true, bottom:true, byline:true, two_columns:true, F_image:true} 
 			},
 			#b2:	{ 
 						frame: {$switch: [

@@ -13,6 +13,11 @@
             layout-grid-line-offset: {$multiply: [20, =view.zoomlevel]}
              
         }},
+		{.article_body:{
+			text-align:justify,
+			hyphens:auto
+		}},
+
         {.article_headline:{
             font-size:40,
             line-height:42

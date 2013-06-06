@@ -14,6 +14,10 @@
 			layout-grid-line-offset: {$multiply: [20, =view.zoomlevel]}
 			
         }},
+		{.article_body:{
+			text-align:justify,
+			hyphens:auto
+		}},
 		{.article_headline:{
 			font-size:40,
 			line-height:42
@@ -26,7 +30,7 @@
 		}},
 		{#image_container: { 
 			anchor-x: {if: =portrait, then: center, else:left},
-			top:{if: =portrait, then: 95, else:100},
+			top:{if: =portrait, then: 82, else:100},
 			width: {if: =portrait, then: 149, else:131},
 			pixels-per-point-x:1,
 			pixels-per-point-y:1,

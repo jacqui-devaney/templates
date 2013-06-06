@@ -191,7 +191,7 @@
 </xsl:template>
 
 <xsl:template match="link">
-    <link>
+    <a>
         <xsl:attribute name="href">
             <xsl:call-template name="tolower">
                 <xsl:with-param name="node" select="@type" />
@@ -200,7 +200,7 @@
             </xsl:call-template>
         </xsl:attribute>
         <xsl:apply-templates select="*|node()"/>
-    </link>
+    </a>
 
 </xsl:template>
 

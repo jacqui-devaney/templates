@@ -44,6 +44,14 @@
 		/>
 		<template 
 			section="FRONT_SECTION" 
+			name="FRONT-5story-F-deco_v2_template.xml" 
+			title="5 story F liondoor - banner"
+			min="5" 
+			deco="true" 
+			usage="front" 
+		/>
+		<template 
+			section="FRONT_SECTION" 
 			name="FRONT-4story-Vertical-deco_template.xml" 
 			title="4 story- vertical liondoor"
 			min="4" 
@@ -194,6 +202,14 @@
 			usage="front" 
 		/>
 		<template 
+			section="FRONT_SECTION" 
+			name="FRONT-2story-G-deco_v2_template.xml" 
+			title="2 story G liondoor - banner"
+			min="2" 
+			deco="true" 
+			usage="front" 
+		/>
+		<template 
 			name="FRONT-4story-Video-deco_template.xml"
 			section="FRONT_SECTION" 
 			title="FRONT-4story-Video-deco"
@@ -213,6 +229,14 @@
 			name="FRONT-2story-largeG-deco_template.xml"
 			section="FRONT_SECTION" 
 			title="2 story - Large G liondoor"
+			min="2" 
+			deco="true"
+			usage="front"
+		/>
+		<template 
+			name="FRONT-2story-largeG-deco_v2_template.xml"
+			section="FRONT_SECTION" 
+			title="2 story Large G liondoor - banner"
 			min="2" 
 			deco="true"
 			usage="front"
@@ -264,8 +288,8 @@
 		/>
 		<template 
 			section="FRONT_SECTION" 
-			name="FRONT-3story-G-deco-large-ad_template.xml" 
-			title="3 story - G liondoor Large Ad"
+			name="FRONT-3story-G-deco_v2_template.xml" 
+			title="3 story G liondoor - Banner"
 			min="3" 
 			deco="true" 
 			usage="front" 

@@ -64,11 +64,7 @@
                 </p>
             </xsl:for-each>
         </xsl:if>
-<<<<<<< HEAD
-		<p>&#xa0;</p>
-=======
         <p>&#xa0;</p>
->>>>>>> d0820f1... Enable PDF links in JPML
     </panel>
     
     <!-- Barron's will need external links, insets too. -->
@@ -114,7 +110,7 @@
 
 <xsl:template match="p[@type = &quot;CODA&quot;]" priority="1">
     <xsl:if test="string(.)">
-        <p class="blockquote-p"><xsl:apply-templates select="node()"/></p>
+        <!--panel class="blockquote"--><p class="blockquote-p"><xsl:apply-templates select="node()"/></p><!--/panel-->
     </xsl:if>
 </xsl:template>
 

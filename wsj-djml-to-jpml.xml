@@ -55,7 +55,7 @@
         <xsl:apply-templates select="article/article-body"/>
         <!-- We will insert a mark body bug in the last p or tagline element -->
 <xsl:if test="@type=&quot;Deloitte Cio Blog&quot; or @type=&quot;Deloitte Cfo Blog&quot;">
-	            <xsl:for-each select="//inset[@param1=&quot;DISCLAIMER&quot; and @style=&quot;OUTSET&quot;]/p">
+                <xsl:for-each select="//inset[@param1=&quot;DISCLAIMER&quot; and @style=&quot;OUTSET&quot;]/p">
                 <xsl:if test="not(preceding-sibling::p[position()=1])">
                     <p id="deloitte-disclaimer-preamble-p"><mark id="deloitte-disclaimer-preamble-mark" /></p>
                 </xsl:if>
@@ -64,7 +64,7 @@
                 </p>
             </xsl:for-each>
         </xsl:if>
-		<p>&#xa0;</p>
+        <p>&#xa0;</p>
     </panel>
     
     <!-- Barron's will need external links, insets too. -->
@@ -192,12 +192,25 @@
 
 <xsl:template match="link">
     <a>
+        <xsl:attribute name="class">link-<xsl:value-of select="@icon"/></xsl:attribute>
         <xsl:attribute name="href">
-            <xsl:call-template name="tolower">
-                <xsl:with-param name="node" select="@type" />
-            </xsl:call-template>:<xsl:call-template name="nameloc_by_id">
-                <xsl:with-param name="id" select="@linkend" />
-            </xsl:call-template>
+            <xsl:choose>
+                <xsl:when test="@icon = 'pdf'">file:<xsl:call-template name="get_file_name">
+                        <xsl:with-param name="input">
+                            <xsl:call-template name="nameloc_by_id">
+                                <xsl:with-param name="id" select="@linkend" />
+                            </xsl:call-template>
+                        </xsl:with-param>
+                    </xsl:call-template>
+                </xsl:when>
+                <xsl:otherwise>
+                    <xsl:call-template name="tolower">
+                        <xsl:with-param name="node" select="@type" />
+                    </xsl:call-template>:<xsl:call-template name="nameloc_by_id">
+                        <xsl:with-param name="id" select="@linkend" />
+                    </xsl:call-template>
+                </xsl:otherwise>
+            </xsl:choose>
         </xsl:attribute>
         <xsl:apply-templates select="*|node()"/>
     </a>
@@ -265,6 +278,21 @@
 <xsl:template name="nameloc_by_id">
     <xsl:param name="id" />
     <xsl:value-of select="//article//nameloc[@id = $id]/nmlist" />
+</xsl:template>
+
+<xsl:template name="get_file_name">
+    <xsl:param name="input"/>
+    <xsl:choose>
+        <xsl:when test="contains($input, '/')">
+            <xsl:call-template name="get_file_name">
+                <xsl:with-param name="input" select="substring-after($input, '/')"/>
+            </xsl:call-template>
+        </xsl:when>
+        <xsl:otherwise>
+            <xsl:value-of select="$input"/>
+        </xsl:otherwise>
+    </xsl:choose>
+
 </xsl:template>
 
 <xsl:template match="image">

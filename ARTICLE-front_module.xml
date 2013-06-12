@@ -15,7 +15,7 @@
 			layout-grid-line-offset: {$multiply: [20, =view.zoomlevel]}
 			
         }},
-		{#article_body:{
+		{.article_body:{
 			column-min-height:50
 		}},
 		{#mediabucket: {
@@ -26,7 +26,7 @@
 		{if: =portrait, then: {
             #mediabucket_container:	{ frame: [0, 10, 565, 402]  }
         }, else: {
-        	#mediabucket_container:	{ frame: [290, 10, 565, 402] }
+        	#mediabucket_container:	{ frame: [302, 10, 565, 402]}
         }},
 		{#filler: {
 			position: relative,

@@ -41,12 +41,12 @@
 			{image: {
 				pixels-per-point-x:1,
 				pixels-per-point-y:1,
-				height: {$multiply: [{$subtract:[=view.width, 18]}, {$switch: [
+				height: {$multiply: [{$subtract:[=view.width, 16]}, {$switch: [
 						{if: =options.F_image, then:0.39},
 						{if: =options.OZ_image, then:1.07},
 						{if: =options.C_image, then:.56},
 						{if: =options.DV_image, then:1.5},
-						.66
+						.665
 					]}
 				]}, 
 
@@ -56,7 +56,8 @@
 					$switch: [
 						{if: =options.F_image, then: {match:{width:571, height:226, max-height:226}}},
 						{ if: =options.OZ_image, then: {match: { width:570, height:612, min-height:612 } } },
-						{ if: =options.DV_image, then: {match: { width:262, height:394, min-height:394 } } }
+						{ if: =options.DV_image, then: {match: { width:262, height:394, min-height:394 } } },
+						{ if: =options.G_image, then: {match: { width:553, height:369, min-height:369 } } }
 					]
 				},
                 image-scale: {$max:[1,{$divide:[{$subtract:[=view.width, 18]}, 553]}]}

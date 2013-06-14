@@ -41,7 +41,7 @@
 		
 		]
     }</style>
-	<box id="close_button_box" embed="close">
+	<box id="close_button_box" embed="">
 		<p id="close_button_p"><mark class="close"></mark></p>
 	</box>
 	<box id="continues_label">

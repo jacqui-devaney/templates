@@ -24,7 +24,7 @@
 			anchor-x:center
 		}},
 		{if: =portrait, then: {
-            #mediabucket_container:	{ frame: [0, 10, 565, 402]  }
+            #mediabucket_container:	{ frame: [14, 10, 565, 402]  }
         }, else: {
         	#mediabucket_container:	{ frame: [302, 10, 565, 402]}
         }},

@@ -39,6 +39,9 @@
 		{#cfo: {
 			display: {if: =page.section, equals: "CFO", then:inherit, else:none}
 		}},
+		{#risk: {
+			display: {if: =page.section, equals: "RISK_AND_COMPLIANCE", then:inherit, else:none}
+		}},
 		{em: {
 			font-name:Helvetica
 		}},

@@ -22,8 +22,8 @@
 		}},
 		{#deloitte_close_wrap: {
 			top:0,
-			right:5,
-			padding:[5, 0, 0, 0],
+			right:0,
+			padding:[5, 10, 0, 0],
 			width:70
 		}},
 		{strong: {
@@ -72,6 +72,9 @@
 		{#cfo: {
 			display: {if: =page.section, equals: "CFO", then:inherit, else:none}
 		}},
+		{#risk: {
+			display: {if: =page.section, equals: "RISK_AND_COMPLIANCE", then:inherit, else:none}
+		}},
 		{em: {
 			font-name:Helvetica-Oblique
 		}},
@@ -83,7 +86,13 @@
 		}},
 		{p: {
 			padding:[0, 0, 10, 0]
-		}}		
+		}},
+		{#continued_label: {
+			padding: [0, 100, 3, 0],
+			display: { if: =page.count, equals: {$add:[=page.number, 1]}, then:none, else:inherit}
+
+		}}
+				
 		
 		
 

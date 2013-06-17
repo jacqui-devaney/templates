@@ -35,8 +35,8 @@
 		}},
 		{#deloitte_close_wrap: {
 			top:0,
-			right:5,
-			padding:[5, 0, 0, 0],
+			right:0,
+			padding:[5, 10, 0, 0],
 			width:70
 		}},
 		{#close_button_box: {

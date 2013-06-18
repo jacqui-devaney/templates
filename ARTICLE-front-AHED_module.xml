@@ -6,60 +6,52 @@
 		{#header_top: { padding:[18, 10, 8, 15] }},
 		{#body_container: { 
             padding: [10, 20, 0, 20],
-			column-count: {if: =portrait, then: 2, else:1},
+			column-count: {$divide: [=view.width, {$multiply:[250, =scale.dpi]}]},
+            column-gutter: 30,
 			column-height:balance,
-			column-gutter: 30,
-            flow: article_body,
+			flow: article_body,
 			layout-grid-line: {$multiply: [22, =view.zoomlevel]},
 			layout-grid-line-offset: {$multiply: [20, =view.zoomlevel]}
 			
         }},
 		{.article_body:{
 			text-align:justify,
-			hyphens:auto
+			hyphens:auto,
+			column-min-height:50
 		}},
-		{.article_headline:{
-			font-size:40,
-			line-height:42
+		{#mediabucket: {
+			width:546,
+			height:385,
+			anchor-x:center
 		}},
+		{if: =portrait, then: {
+            .portrait_bucket:	{ frame: [14, 10, 565, 402], display:inherit },
+            .landscape_bucket:	{ display:none  },
+            .landscape_media:	{ display:none  }
+			
+
+        }, else: {
+        	.landscape_bucket:	{ frame: [302, 10, 565, 402], display:inherit},
+            .portrait_bucket:	{ display:none  },
+            .portrait_media:	{ display:none  }
+
+        }},
 		{image: {
 			width:113,
 			height:113,
 			padding: [ 8, 18, 8, {if: =portrait, then: 18, else:0} ]
-			
+
 		}},
 		{#image_container: { 
 			anchor-x: {if: =portrait, then: center, else:left},
-			top:{if: =portrait, then: 82, else:100},
+			top:{if: =portrait, then: 70, else:100},
 			width: {if: =portrait, then: 149, else:131},
 			pixels-per-point-x:1,
 			pixels-per-point-y:1,
 			image-scale:1
-			
+
 		}},
 
-		{#mediabucket: {
-			width:546,
-			height:385,
-			anchor-x:center,
-			anchor-y:top
-		}},
-		{if: =portrait, then: {
-            #mediabucket_container:	{ 
-				top:10,
-				width:575,
-				height:402,
-				anchor-x:center
-				
- 			}
-        }, else: {
-        	#mediabucket_container:	{ 
-				bottom:40,
-				width:575,
-				height:430,
-				anchor-x:right
-			}
-        }},
 		{#filler: {
 			position: relative,
 			top: 10,
@@ -83,24 +75,28 @@
 	<box id="continues_label">
 		<p><mark id="continues" /></p>
 	</box>
-	<box id="mediabucket_container">
-		<box id="mediabucket" embed="mediabucket" />
-	</box>
-	
+	<box id="mediabucket_container" class="portrait_bucket">
+        <box id="mediabucket" class="portrait_media" embed="mediabucket" />
+    </box>
+    
     <panel id="header_top">
         <p class="article_flashline" embed="flashline"/>
         <p class="article_headline"><span embed="headline"/><mark class="key"/></p>
 		<h2 class="article_subhed" embed="subhed" />
 	</panel>
 	<box class="hr"></box>
-    
-	<panel id="body_container">
-		<box id="image_container">
-			<image embed="summary-image" target-width="113" target-height="113" />
+	<panel>
+		<box id="mediabucket_container" class="landscape_bucket">
+			<box id="mediabucket" embed="mediabucket" class="landscape_media" />
 		</box>
-		<p class="article_byline" embed="byline"/>
-        <panel class="article_body" embed="body"/>
-	 	
+		<panel id="body_container">
+			<box id="image_container">
+				<image embed="summary-image" target-width="113" target-height="113" />
+			</box>
+			<p class="article_byline" embed="byline"/>
+	        <panel class="article_body" embed="body"/>
+	    
+		</panel>
 	</panel>
 	<box id="filler">
 		<box id="article_advertisement" class="ad-twocolumn" embed="advertisement"/>

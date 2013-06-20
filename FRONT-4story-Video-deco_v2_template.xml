@@ -116,5 +116,5 @@
 	<box class="maude unit_ad front_banner">
 		<box id="ad_banner" class="ad-banner" embed="advertisement" />
 	</box>
-	<box class="maude unit_G_deco" id="deco" embed="article" module="DECO_module.xml" /
+	<box class="maude unit_G_deco" id="deco" embed="article" module="DECO_module.xml" />
 </jpml>

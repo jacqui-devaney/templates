@@ -5,8 +5,8 @@
 	<style>{
 			#b1: {options: { $switch: [
 					{if: =scale.phone, then: {large_headline:true, show_image:true, show_body:true, top_align:true}},
-					{if: =portrait, then: {justify:true, large_headline:true, show_image:true, no_border:true, bottom:true, byline:{if: =scale.small, then:true, else:false}}},
-					{if: =landscape, then: {justify:true, large_headline:true, show_image:true, F_image:{if: =widescreen, then:true, else:false}, no_border:true, bottom:true, byline:{if: =scale.small, then:true, else:false}}}			
+					{if: =portrait, then: {justify:true, large_headline:true, show_image:true, G_image:true, no_border:true, bottom:true, byline:{if: =scale.small, then:true, else:false}}},
+					{if: =landscape, then: {justify:true, large_headline:true, show_image:true, F_image:{if: =widescreen, then:true, else:false}, G_image:{if: =widescreen, then:false, else:true}, no_border:true, bottom:true, byline:{if: =scale.small, then:true, else:false}}}			
 				]}},
 			#b2: {options: { $switch: [
 					{if: =scale.phone, then: {small_headline:true, show_image:true, no_border:false}},

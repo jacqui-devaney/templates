@@ -20,6 +20,15 @@
 		
 		<!-- END  CIO-->
 		
+		<!-- PYBAS TEST -->
+		
+		<template 
+			name="PYBAS-TEST_template.xml" 
+			min="5" 
+			title="Pybas Test" 
+			section="" 
+			usage="front" 
+		/>
 		
 	</templates>
 

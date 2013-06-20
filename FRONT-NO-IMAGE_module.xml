@@ -48,7 +48,7 @@
 			{.body: {padding:{if: =options.byline, then:[0], else:[0, 0, 0, 0]}}},
 			{#body-first-p: {text-indent: {$switch: [
 				{if: =scale.small, then:{if: =options.no_indent, then:0, else:inherit}},
-				{if: =scale.large, then: inherit}
+				{if: =scale.large, then: {if: =options.no_indent, then:0, else:20}}
 			]}}}
 			
 			]

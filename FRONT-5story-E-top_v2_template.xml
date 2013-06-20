@@ -1,0 +1,104 @@
+<jpml id="FRONT-5story-E-top_v2_template">
+	<style src="GLOBAL-stylesheet.ejs" />
+	<style src="FRONT-stylesheet.ejs" />
+	<style>{
+		jpml: {border-width:[1, 0, 0, 0], border-color:black},
+		#marketstrap: {display:{if: =standard, then:none, else:inherit}},
+		#whatsnews: {display:{if: =standard, then:none, else:inherit}},
+		#whatsnews_itp: {display:{if: =standard, then:inherit, else:none}}
+	}</style>
+	<style> {
+		if: =portrait, then: {
+			#b1:			{ 
+								frame: {$switch: [
+									{if: =widescreen, then: [194, 28, 328, 548]},
+									{if: =scale.large, then: [194, 0, 375, 500]}
+								]},
+								options:{large_headline:true, justify:true, show_image:true, no_border:true, byline:{if: =scale.small, then:true, else:false}} 
+							},
+			#b2:			{ 
+								frame: {$switch: [
+									{if: =widescreen, then: [535, 28, 230, 273]},
+									{if: =scale.large, then: [582, 0, 183, 250]}
+								]},
+								options:{small_headline:true, no_border:true, no_indent:true} 
+							},
+			#b3:			{ 
+								frame: {$switch: [
+									{if: =widescreen, then: [535, 302, 230, 274]},
+									{if: =scale.large, then: [582, 250, 183, 250]}
+								]},
+								options:{small_headline:true, no_border:{if: =scale.widescreen, then:true, else:false}, no_indent:true} 
+							},
+			#b4:			{ 
+								frame: {$switch: [
+									{if: =widescreen, then: [194, 578, 280, 298]},
+									{if: =scale.large, then: [194, 500, 280, 288]}
+								]},
+								options:{small_headline:true, no_indent:true} 
+							},
+			#b5:			{ 
+								frame: {$switch: [
+									{if: =widescreen, then: [486, 578, 280, 298]},
+									{if: =scale.large, then: [486, 500, 280, 288]}
+								]},
+								options:{no_indent:true} 
+							}
+		}, else: {
+			#b1:			{ 
+								frame: {$switch: [
+									{if: =widescreen, then: [205, 28, 359, 596]},
+									{if: =scale.large, then: [205, 0, 375, 530]}
+								]},
+								options:{large_headline:true, justify:true, show_image:true, no_border:true, byline:{if: =scale.small, then:true, else:false}}  
+							},
+			#b2:			{ 
+								frame: {$switch: [
+									{if: =widescreen, then: [577, 28, 199, 296]},
+									{if: =scale.large, then: [593, 0, 183, 265]}
+								]},
+								options:{small_headline:true, no_border:true, no_indent:true}  
+							},
+			#b3:			{ 
+								frame: {$switch: [
+									{if: =widescreen, then: [577, 324, 199, 296]},
+									{if: =scale.large, then: [593, 265, 183, 265]}
+								]},
+								options:{small_headline:true, no_border:{if: =scale.widescreen, then:true, else:false}, no_indent:true}  
+							},
+			#b4:			{ 
+								frame: {$switch: [
+									{if: =widescreen, then: [787, 28, 238, 254]},
+									{if: =scale.large, then: [787, 0, 238, 220]}
+								]},
+								options:{small_headline:true, no_border:true, no_indent:true} 
+							},
+			#b5:			{ 
+								frame: {$switch: [
+									{if: =widescreen, then: [787, 280, 238, 340]},
+									{if: =scale.large, then: [787, 220, 238, 310]}
+								]},
+								options:{no_indent:true, no_image:{if: =standard, then:true}} 
+							}
+			
+		}
+		
+		
+		
+	} </style>
+	
+	<box id="marketstrap" embed="marketstrap" />
+	
+	<box id="whatsnews" embed="whatsnews" />
+
+    <box id="whatsnews_itp" embed="whatsnews" />
+	<box class="maude unit_ad front_banner">
+		<box id="ad_banner" class="ad-banner" embed="advertisement" />
+	</box>
+	<box id="b1" embed="article" module="TOP-IMAGE_module.xml" />
+	<box id="b2" embed="article" module="FRONT-NO-IMAGE_module.xml" />
+	<box id="b3" embed="article" module="FRONT-NO-IMAGE_module.xml" />
+	<box id="b4" embed="article" module="FRONT-NO-IMAGE_module.xml" />
+	<box id="b5" embed="article" module="AHED_module.xml" />
+	
+</jpml>

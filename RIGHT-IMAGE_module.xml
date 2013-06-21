@@ -24,12 +24,7 @@
 		image: { 
 			height: {$subtract: [=view.height, 10]},
 			display: { if: =options.hide_image, then:none, else:inherit }
-		},
-		.invisible: { display:none },
-		#small_headline: { display: { if: =options.small_headline, then:inherit }},
-		#medium_headline: { display: { if: =options.medium_headline, then:inherit }},
-		#large_headline: { display: { if: =options.large_headline, then:inherit }}
-		
+		}		
 	}</style>
 	<style>{
 		if: =scale.phone, then: {
@@ -72,9 +67,7 @@
 			<image embed="summary-image" />
 		</box>
 		<panel id="headline">
-			<p id="small_headline" class="invisible"><span embed="headline" /><mark class="key" /></p>
-			<p id="medium_headline" class="invisible"><span embed="headline" /><mark class="key" /></p>
-			<p id="large_headline" class="invisible"><span embed="headline" /><mark class="key" /></p>
+			<p class="module_headline"><span embed="headline" /><mark class="key" /></p>
 		</panel>
 		<panel id="body_container">
 	        <panel id="body">

@@ -45,10 +45,6 @@
 				pixels-per-point-y:1,
                 image-scale: {$max:[1,{$divide:[{$subtract:[=view.width, 18]}, 553]}]}
 			}},
-			{.invisible: { display:none }},
-			{#small_headline: { display: { if: =options.small_headline, then:inherit }}},
-			{#medium_headline: { display: { if: =options.medium_headline, then:inherit }}},
-			{#large_headline: { display: { if: =options.large_headline, then:inherit }}},
 			{.phone:{display:none}}
 			]
 		}</style>
@@ -85,9 +81,7 @@
 			<image embed="summary-image" class="phone" id="phone_image" target-width="76" target-height="76" />
 		</box>
 		<panel id="headline">
-			<p id="small_headline" class="invisible"><span embed="headline" /><mark class="key" /></p>
-			<p id="medium_headline" class="invisible"><span embed="headline" /><mark class="key" /></p>
-			<p id="large_headline" class="invisible"><span embed="headline" /><mark class="key" /></p>
+			<p class="module_headline"><mark id="m_headline" /><mark class="key" /></p>
 		</panel>
 		<image class="tablet" id="tablet_image" embed="summary-image"/>
 		

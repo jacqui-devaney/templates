@@ -23,10 +23,6 @@
 			height:{$multiply: [{$subtract:[=view.width, {$multiply:[=scale.dpi,28]}]}, 0.33] },
 			display: { if: =options.hide_image, then:none, else:inherit }
 		},
-		.invisible: { display:none },
-		#small_headline: { display: { if: =options.small_headline, then:inherit }},
-		#medium_headline: { display: { if: =options.medium_headline, then:inherit }},
-		#large_headline: { display: { if: =options.large_headline, then:inherit }},
 		.body: {options:{text-align: { if: =options.justify, then:=justify, else:left}}}
 	}</style>
 	<style>{
@@ -67,9 +63,7 @@
 			<image embed="summary-image"/>
 		</box>
 	    <panel id="headline">
-			<p id="small_headline" class="invisible"><span embed="headline" /><mark class="key" /></p>
-			<p id="medium_headline" class="invisible"><span embed="headline" /><mark class="key" /></p>
-			<p id="large_headline" class="invisible"><span embed="headline" /><mark class="key" /></p>
+			<p class="module_headline"><mark id="m_headline" /><mark class="key" /></p>
 		</panel>
 		<panel id="body-container">
 			<panel id="body">

@@ -311,6 +311,17 @@
 	cite: {
 		font-name:{if: =intent.article, then:DJ5Exchange-MediumItalic, else:DJ5Exchange-Medium}
 	},
+	.link-pdf: {
+		if-all: [
+			=intent.article,
+			{ if: =app.version, equals: "5.2", then: true, else: false }
+		], then: {
+			font-name: DJ5Exchange-Bold,
+			text-decoration: underline,
+			color: cornflowerblue
+		}, else: {
+		}
+	},
 	.byline: {
 		font-name:DJ5Exchange-Semibold,
 		font-size:13,
@@ -938,9 +949,6 @@
 		    text-indent: -16,
 		    padding: [0, 0, 0, 16]
 	},
-	.list-item-bullet: {
-	  content: "\u00a0\u2022 "
-	},
 	.blockquote: {
 		padding: [0, 0, 10, 20]
 	},
@@ -948,9 +956,23 @@
 		padding: [0, 0, 0, 8],
 		border-width: [0, 0, 0, 1],
 		border-color: black
+	  },
+	  .list-item-bullet: {
+	    content: "\u00a0\u2022 "
+	  },
+	#hack: {
+		if-any: [
+			{if: =device.platform, not-equal-to: iOS, then: true, else: false},
+			{if: =app.version, equals: "5.1.2", then: true, else: false},
+			{if: =app.version, equals: "5.1.3", then: true, else: false},
+			{if: =scale.phone, then: true, else: false}
+		], then: {
+			display: inherit
+		}, else: {
+			display:none
+		}
 	}
-	
-	
+
 	
 	
 	

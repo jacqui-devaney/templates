@@ -8,8 +8,8 @@
 		}},
 		#b2: {options: { $switch: [
 				{if: =scale.phone, then: {normal_headline:true, fake_deco:true, G_image:true, bottom_border:true}},
-				{if: =portrait, then: {normal_headline:true, fake_deco:true}},
-				{if: =landscape, then: {normal_headline:true, fake_deco:true, F_image:{if: =scale.small, then:true, else:false}, G_image:{if: =scale.small, then:false, else:true}}}			
+				{if: =portrait, then: {normal_headline:true}},
+				{if: =landscape, then: {normal_headline:true, F_image:{if: =scale.small, then:true, else:false}, G_image:{if: =scale.small, then:false, else:true}}}			
 			]}},
 		
 		#b3: {
@@ -78,12 +78,12 @@
 	}</style>
 	
 	<box id="b1" embed="article" class="maude unit_166" module="TOP-IMAGE_module.xml" />
+	<box id="b2" embed="article" class="maude unit_G_deco" module="DECO_module.xml" />
 	<box id="b3" embed="article" class="maude unit_50" module="TOP-IMAGE_module.xml" />
 	<box id="b4" embed="article" class="maude unit_50" module="TOP-IMAGE_module.xml" />
 	<box id="ad_background" class="ad_light maude unit_ad">
 		<box id="highlight_ad" class="ad-rectangle" embed="advertisement" />
 	</box>
-	<box id="b2" embed="article" class="maude unit_G_deco" module="DECO_module.xml" />
 	<box id="h1" embed="article" class="maude unit_highlight" module="HIGHLIGHTS_module.xml" />
 	<box id="h2" embed="article" class="maude unit_highlight" module="HIGHLIGHTS_module.xml" />
 

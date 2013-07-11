@@ -1,0 +1,52 @@
+{
+	jpml: {
+		image-scale: 1,
+		text-scale: 1,
+		pixels-per-point-x: 1,
+		pixels-per-point-y: 1,
+		min-height: 0,
+		max-height: 10000,
+		background-color: #e7e2d8
+	},
+	.header: {
+		font-size: 18,
+		font-name: "DJ5EscrowCond-SemiboldItalic",
+		text-align: center
+	},
+	.stars: {
+		content: "* * *"
+	},
+	.main: {
+		column-width: 180,
+		column-height: balance
+	},
+	p: {
+		font-size: 14,
+		font-name: "DJ5Exchange-Medium",
+		padding: [4]
+	},
+	.item-title: {
+		font-size: 14,
+		font-name: "DJ5Exchange-Bold"
+	},
+	.item-before-description: {
+		font-size: 12,
+		content: "\u25a0\u00a0"
+	},
+	.item-after-description: {
+		content: "\u00a0\u00bb"
+	},
+	.item-paid: {
+		if: =issue.locked,
+		then: {
+			font-name: DJ5Utility-Regular,
+			font-size:16,
+			content: "\u00a0K",
+			padding: [0, 0, 0, 2],
+			color:#948464
+		},
+		else: {
+
+		}
+	}
+}

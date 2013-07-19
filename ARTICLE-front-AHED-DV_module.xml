@@ -6,14 +6,18 @@
 		{#header_top: { padding:[18, 10, 8, 15] }},
 		{#body_container: { 
             padding: [10, 20, 0, 20],
-			column-count: {if: =portrait, then:2, else:3},
+			column-count: {$divide: [=view.width, {$multiply:[250, =scale.dpi]}]},
 			column-height:balance,
 			column-gutter: 30,
             flow: article_body,
+			min-height: {if: =page.mediabucket, then:400, else:200},
 			layout-grid-line: {$multiply: [22, =view.zoomlevel]},
 			layout-grid-line-offset: {$multiply: [20, =view.zoomlevel]}
 			
         }},
+		{.article_body:{
+			column-min-height:80
+		}},
 		{.article_headline:{
 			font-size:40,
 			line-height:42
@@ -37,20 +41,20 @@
 		{#mediabucket: {
 			width:270,
 			height:430,
-			anchor-x:right,
+			anchor-x:center,
 			anchor-y:top
 		}},
 		{if: =portrait, then: {
             #mediabucket_container:	{ 
-				top:0,
-				width:270,
+				top:10,
+				width:295,
 				height:445,
 				anchor-x:right
 				
  			}
         }, else: {
         	#mediabucket_container:	{ 
-				top:0,
+				top:10,
 				width:290,
 				height:430,
 				anchor-x:right
@@ -86,18 +90,20 @@
 		<h2 class="article_subhed" embed="subhed" />
 	</panel>
 	<box class="hr"></box>
-    
-	<panel id="body_container">
-		<box id="image_container">
-			<image embed="summary-image" target-width="113" target-height="113" />
-		</box>
+    <panel>
 		<box id="mediabucket_container">
 			<box id="mediabucket" embed="mediabucket" />
 		</box>
-		<p class="article_byline" embed="byline"/>
-        <panel class="article_body" embed="body"/>
-	 	
+		<panel id="body_container">
+			<box id="image_container">
+				<image embed="summary-image" target-width="113" target-height="113" />
+			</box>
+			<p class="article_byline" embed="byline"/>
+	        <panel class="article_body" embed="body"/>
+	    
+		</panel>
 	</panel>
+	
 	<box id="filler">
 		<box id="article_advertisement" class="ad-twocolumn" embed="advertisement"/>
 	</box>

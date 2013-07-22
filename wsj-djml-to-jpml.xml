@@ -191,11 +191,11 @@
 </xsl:template>
 
 <xsl:template match="highlight[@type='BOLD']">
-    <strong><xsl:value-of select="."/></strong>
+    <strong><xsl:apply-templates select="*|node()"/></strong>
 </xsl:template>
 
 <xsl:template match="highlight[@type='ITALIC']">
-    <em><xsl:value-of select="."/></em>
+    <em><xsl:apply-templates select="*|node()"/></em>
 </xsl:template>
 
 <xsl:template match="link">

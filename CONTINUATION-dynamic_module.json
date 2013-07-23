@@ -1,0 +1,28 @@
+{
+  "influence": [
+    {
+      "key": "strap",
+      "title": "Subsection Strap",
+      "type": "toggle",
+      "options": [{
+        "label": "Show",
+        "values": { "hide_strap": false }
+      }, {
+        "label": "Hide",
+        "values": { "hide_strap": true }
+      }]
+    },
+    {
+      "key": "indent",
+      "title": "Indent First Paragraph",
+      "type": "toggle",
+      "options": [{
+        "label": "Yes",
+        "values": { "indent": true }
+      }, {
+        "label": "No",
+        "values": { "indent": false }
+      }]
+    }
+  ]
+}

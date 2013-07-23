@@ -1,0 +1,273 @@
+{
+  "influence": [{
+    "key": "border",
+    "title": "Border",
+    "type": "select",
+    "options": [{
+        "label": "Top",
+        "values": {
+          "bottom_border": false,
+          "no_border": false
+        }
+      }, {
+        "label": "Bottom",
+        "values": {
+          "bottom_border": true,
+          "no_border": false
+        }
+      }, {
+        "label": "None",
+        "values": {
+          "bottom_border": false,
+          "no_border": true
+        }
+      }]
+    },
+    
+    {
+      "key": "caption",
+      "title": "Caption",
+      "type": "toggle",
+      "options": [{
+        "label": "On",
+        "values": { "no_caption": false }
+      }, {
+        "label": "Off",
+        "values": { "no_caption": true }
+      }]
+    },
+    
+    {
+      "key": "caption_height",
+      "title": "Caption Height",
+      "type": "select",
+      "disabled": ["no_caption"],
+      "options": [{
+          "label": "30px",
+          "values": {
+            "small_caption": true,
+            "fake_deco": false,
+            "normal_caption": false,
+            "vertical_deco": false,
+            "long_deco": false
+          }
+        }, {
+          "label": "35px",
+          "values": {
+            "small_caption": false,
+            "fake_deco": true,
+            "normal_caption": false,
+            "vertical_deco": false,
+            "long_deco": false
+          }
+        }, {
+          "label": "55px",
+          "values": {
+            "small_caption": false,
+            "fake_deco": false,
+            "normal_caption": true,
+            "vertical_deco": false,
+            "long_deco": false
+          }
+        }, {
+          "label": "75px",
+          "values": {
+            "small_caption": false,
+            "fake_deco": false,
+            "normal_caption": false,
+            "vertical_deco": true,
+            "long_deco": false
+          }
+        }, {
+          "label": "90px",
+          "values": {
+            "small_caption": false,
+            "fake_deco": false,
+            "normal_caption": false,
+            "vertical_deco": false,
+            "long_deco": true
+          }
+        }]
+    },
+    {
+      "key": "caption_width",
+      "title": "Caption Width",
+      "type": "select",
+      "disabled": ["no_caption"],
+      "options": [{
+        "label": "Full",
+        "values": { "narrow_text": false }
+      }, {
+        "label": "250px",
+        "values": { "narrow_text": true }
+      }]
+    },
+    {
+      "key": "headline",
+      "title": "Headline Size/Position",
+      "type": "select",
+      "options": [
+        {
+          "label": "Top Medium",
+          "values": {
+            "small_headline": false,
+            "medium_headline": true,
+            "normal_headline": false,
+            "bottom_headline": false
+          }
+        },
+        {
+          "label": "Top Large",
+          "values": {
+            "small_headline": false,
+            "medium_headline": false,
+            "normal_headline": true,
+            "bottom_headline": false
+          }
+        },
+        {
+          "label": "Bottom",
+          "values": {
+            "small_headline": false,
+            "medium_headline": false,
+            "normal_headline": false,
+            "bottom_headline": true
+          }
+        },
+        {
+          "label": "Bottom Small",
+          "values": {
+            "small_headline": true,
+            "medium_headline": false,
+            "normal_headline": false,
+            "bottom_headline": false
+          }
+        }
+      ]
+    },
+    {
+      "key": "image_size",
+      "title": "Image Size",
+      "type": "select",
+      "options": [
+        {
+         "label": "Dynamic",
+         "values": {
+           "G_image": false,
+           "G-tall_image": false,
+           "F_image": false,
+           "PT_image": false,
+           "OV_image": false,
+           "OZ_image": false,
+           "P_image": false,
+           "H_image": false
+          }
+        },
+        {
+          "label": "G 553w 369h",
+          "values": {
+            "G_image": true,
+            "G-tall_image": false,
+            "F_image": false,
+            "PT_image": false,
+            "OV_image": false,
+            "OZ_image": false,
+            "P_image": false,
+            "H_image": false
+          }
+        },
+        {
+          "label": "G Tall 553w 400h",
+          "values": {
+            "G_image": false,
+            "G-tall_image": true,
+            "F_image": false,
+            "PT_image": false,
+            "OV_image": false,
+            "OZ_image": false,
+            "P_image": false,
+            "H_image": false
+          }
+        },
+        {
+          "label": "F 571w 226h",
+          "values": {
+            "G_image": false,
+            "G-tall_image": false,
+            "F_image": true,
+            "PT_image": false,
+            "OV_image": false,
+            "OZ_image": false,
+            "P_image": false,
+            "H_image": false
+          }
+        },
+        {
+          "label": "PT 264w 455h",
+          "values": {
+            "G_image": false,
+            "G-tall_image": false,
+            "F_image": false,
+            "PT_image": true,
+            "OV_image": false,
+            "OZ_image": false,
+            "P_image": false,
+            "H_image": false
+          }
+        },
+        {
+          "label": "OV 239w 340h",
+          "values": {
+            "G_image": false,
+            "G-tall_image": false,
+            "F_image": false,
+            "PT_image": false,
+            "OV_image": true,
+            "OZ_image": false,
+            "P_image": false,
+            "H_image": false
+          }
+        },
+        {
+          "label": "OZ 570w 612h",
+          "values": {
+            "G_image": false,
+            "G-tall_image": false,
+            "F_image": false,
+            "PT_image": false,
+            "OV_image": false,
+            "OZ_image": true,
+            "P_image": false,
+            "H_image": false
+          }
+        },
+        {
+          "label": "P 749w 499h",
+          "values": {
+            "G_image": false,
+            "G-tall_image": false,
+            "F_image": false,
+            "PT_image": false,
+            "OV_image": false,
+            "OZ_image": false,
+            "P_image": true,
+            "H_image": false
+          }
+        },
+        {
+          "label": "H 659w 439h",
+          "values": {
+            "G_image": false,
+            "G-tall_image": false,
+            "F_image": false,
+            "PT_image": false,
+            "OV_image": false,
+            "OZ_image": false,
+            "P_image": false,
+            "H_image": true
+          }
+        }
+      ]
+    }
+  ]
+}

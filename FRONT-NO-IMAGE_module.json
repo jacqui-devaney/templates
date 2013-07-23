@@ -1,0 +1,103 @@
+{
+  "influence": [
+    {
+      "key": "border",
+      "title": "Border",
+      "type": "multiselect",
+      "options": [
+        {
+          "label": "Top",
+          "values": {
+            "bottom_border": false,
+            "no_border": false
+          }
+        }, {
+          "label": "Bottom",
+          "values": {
+            "bottom_border": true,
+            "no_border": false
+          }
+        }, {
+          "label": "None",
+          "values": {
+            "bottom_border": false,
+            "no_border": true
+          }
+        }
+      ]
+    },
+    {
+      "key": "columns",
+      "title": "Columns",
+      "type": "select",
+      "options": [
+        {
+          "label": "1 column",
+          "values": {
+            "two_columns": false,
+            "static_columns": false
+          }
+        },
+        {
+          "label": "2 columns",
+          "values": {
+            "two_columns": true,
+            "static_columns": false
+          }
+        },
+        {
+          "label": "Dynamic",
+          "values": {
+            "two_columns": false,
+            "static_columns": false
+          }
+        }
+      ]
+    },
+    {
+      "key": "headline_size",
+      "title": "Headline Size",
+      "type": "select",
+      "options": [
+        {
+          "label": "Small",
+          "values": {
+            "large_headline": false,
+            "small_headline": true
+          }
+        },
+        {
+          "label": "Large",
+          "values": {
+            "large_headline": true,
+            "small_headline": false
+          }
+        }
+      ]
+    },
+    {
+      "key": "byline",
+      "title": "Byline",
+      "type": "toggle",
+      "options": [{
+        "label": "Show",
+        "values": { "no_byline": false }
+      }, {
+        "label": "Hide",
+        "values": { "no_byline": true }
+      }]
+    },
+    {
+      "key": "justify",
+      "title": "Justify",
+      "type": "toggle",
+      "options": [{
+        "label": "Yes",
+        "values": { "justify": true }
+      }, {
+        "label": "No",
+        "values": { "justify": false }
+      }]
+    }
+  ]
+}

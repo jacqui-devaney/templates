@@ -1815,6 +1815,13 @@
 		<!-- END GENERIC CONTINUATION -->
 		<!-- FANCY CONTINUATION -->
 		<template 
+			name="CONTINUATION-fancy-5_template.xml" 
+			title="5 stories - smallG liondoor"
+			min="5" 
+			usage="continuation" 
+			deco="true" 
+		/>		
+		<template 
 			name="CONTINUATION-fancy-6_template.xml" 
 			title="6 stories - smallG liondoor"
 			min="6" 
@@ -1838,7 +1845,13 @@
 			deco="true" 
 			page="4" 
 		/>
-		
+		<template 
+			name="CONTINUATION-fancy-7_template.xml" 
+			title="7 stories - smallG liondoor"
+			min="7" 
+			usage="continuation" 
+			deco="true" 
+		/>
 		<template 
 			name="CONTINUATION-fancy-PV-P_template.xml" 
 			title="4 stories - P liondoor"

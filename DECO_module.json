@@ -26,79 +26,28 @@
     
     {
       "key": "caption",
-      "title": "Caption",
+      "title": "Hide/Show Caption",
       "type": "toggle",
       "options": [{
-        "label": "On",
+        "label": "Show",
         "values": { "no_caption": false }
       }, {
-        "label": "Off",
+        "label": "Hide",
         "values": { "no_caption": true }
       }]
     },
     
     {
-      "key": "caption_height",
-      "title": "Caption Height",
-      "type": "select",
-      "disabled": ["no_caption"],
-      "options": [{
-          "label": "30px",
-          "values": {
-            "small_caption": true,
-            "fake_deco": false,
-            "normal_caption": false,
-            "vertical_deco": false,
-            "long_deco": false
-          }
-        }, {
-          "label": "35px",
-          "values": {
-            "small_caption": false,
-            "fake_deco": true,
-            "normal_caption": false,
-            "vertical_deco": false,
-            "long_deco": false
-          }
-        }, {
-          "label": "55px",
-          "values": {
-            "small_caption": false,
-            "fake_deco": false,
-            "normal_caption": true,
-            "vertical_deco": false,
-            "long_deco": false
-          }
-        }, {
-          "label": "75px",
-          "values": {
-            "small_caption": false,
-            "fake_deco": false,
-            "normal_caption": false,
-            "vertical_deco": true,
-            "long_deco": false
-          }
-        }, {
-          "label": "90px",
-          "values": {
-            "small_caption": false,
-            "fake_deco": false,
-            "normal_caption": false,
-            "vertical_deco": false,
-            "long_deco": true
-          }
-        }]
-    },
-    {
       "key": "caption_width",
       "title": "Caption Width",
+	"comment": "Use for deco images P size and larger"
       "type": "select",
       "disabled": ["no_caption"],
       "options": [{
-        "label": "Full",
+        "label": "Full Width",
         "values": { "narrow_text": false }
       }, {
-        "label": "250px",
+        "label": "Partial Width",
         "values": { "narrow_text": true }
       }]
     },
@@ -117,7 +66,7 @@
           }
         },
         {
-          "label": "Top Large",
+          "label": "Top Standard",
           "values": {
             "small_headline": false,
             "medium_headline": false,
@@ -126,21 +75,21 @@
           }
         },
         {
-          "label": "Bottom",
+          "label": "Top Small",
+          "values": {
+            "small_headline": false,
+            "medium_headline": false,
+            "normal_headline": true,
+            "bottom_headline": false
+          }
+        },
+        {
+          "label": "Bottom Standard",
           "values": {
             "small_headline": false,
             "medium_headline": false,
             "normal_headline": false,
             "bottom_headline": true
-          }
-        },
-        {
-          "label": "Bottom Small",
-          "values": {
-            "small_headline": true,
-            "medium_headline": false,
-            "normal_headline": false,
-            "bottom_headline": false
           }
         }
       ]

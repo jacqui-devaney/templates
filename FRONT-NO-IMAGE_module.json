@@ -3,24 +3,16 @@
     {
       "key": "border",
       "title": "Border",
-      "type": "multiselect",
+      "type": "toggle",
       "options": [
         {
           "label": "Top",
           "values": {
-            "bottom_border": false,
-            "no_border": false
-          }
-        }, {
-          "label": "Bottom",
-          "values": {
-            "bottom_border": true,
             "no_border": false
           }
         }, {
           "label": "None",
           "values": {
-            "bottom_border": false,
             "no_border": true
           }
         }
@@ -32,28 +24,38 @@
       "type": "select",
       "options": [
         {
-          "label": "1 column",
-          "values": {
-            "two_columns": false,
-            "static_columns": false
-          }
-        },
-        {
           "label": "2 columns",
           "values": {
-            "two_columns": true,
             "static_columns": false
           }
         },
         {
           "label": "Dynamic",
           "values": {
-            "two_columns": false,
             "static_columns": false
           }
         }
       ]
     },
+    {
+      "key": "body",
+      "title": "Hide/Show Body Text",
+      "type": "toggle",
+      "options": [
+        {
+          "label": "Hide",
+          "values": {
+            "hide_body": true
+          }
+        }, {
+          "label": "Show",
+          "values": {
+            "hide_body": false
+          }
+        }
+      ]
+    },
+
     {
       "key": "headline_size",
       "title": "Headline Size",
@@ -62,13 +64,23 @@
         {
           "label": "Small",
           "values": {
-            "large_headline": false,
+            "medium_headline":false,
+			"large_headline": false,
             "small_headline": true
+          }
+        },
+        {
+          "label": "Medium",
+          "values": {
+          	"medium_headline":true,
+            "large_headline": false,
+            "small_headline": false
           }
         },
         {
           "label": "Large",
           "values": {
+          	"medium_headline":false,
             "large_headline": true,
             "small_headline": false
           }
@@ -77,7 +89,7 @@
     },
     {
       "key": "byline",
-      "title": "Byline",
+      "title": "Hide/Show Byline",
       "type": "toggle",
       "options": [{
         "label": "Show",
@@ -89,7 +101,7 @@
     },
     {
       "key": "justify",
-      "title": "Justify",
+      "title": "Justify Body",
       "type": "toggle",
       "options": [{
         "label": "Yes",

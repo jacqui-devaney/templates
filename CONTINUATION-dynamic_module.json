@@ -3,6 +3,7 @@
     {
       "key": "strap",
       "title": "Subsection Strap",
+      "comment": "Note: hiding the strap disables the dynamic generation of the strap based on subsection mapping.",
       "type": "toggle",
       "options": [{
         "label": "Show",
@@ -22,6 +23,18 @@
       }, {
         "label": "No",
         "values": { "indent": false }
+      }]
+    },
+    {
+      "key": "columns",
+      "title": "Columns",
+      "type": "toggle",
+      "options": [{
+        "label": "2 Columns",
+        "values": { "two_columns": true }
+      }, {
+        "label": "1 Column",
+        "values": { "two_columns": false }
       }]
     }
   ]

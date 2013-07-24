@@ -1815,6 +1815,13 @@
 		<!-- END GENERIC CONTINUATION -->
 		<!-- FANCY CONTINUATION -->
 		<template 
+			name="CONTINUATION-fancy-5_template.xml" 
+			title="5 stories - smallG liondoor"
+			min="5" 
+			usage="continuation" 
+			deco="true" 
+		/>		
+		<template 
 			name="CONTINUATION-fancy-6_template.xml" 
 			title="6 stories - smallG liondoor"
 			min="6" 
@@ -1838,127 +1845,155 @@
 			deco="true" 
 			page="4" 
 		/>
+		<template 
+			name="CONTINUATION-fancy-7_template.xml" 
+			title="7 stories - smallG liondoor"
+			min="7" 
+			usage="continuation" 
+			deco="true" 
+		/>
+		<template 
+			name="CONTINUATION-fancy-9_template.xml" 
+			title="9 stories - smallG liondoor"
+			min="9" 
+			usage="continuation" 
+			deco="true" 
+		/>
+		<template 
+			name="CONTINUATION-fancy-PV-P_template.xml" 
+			title="4 stories - P liondoor"
+			min="6" 
+			usage="continuation" 
+			deco="true" 
+			page="2" 
+		/>
+		<template 
+			name="CONTINUATION-fancy-PV-P_template.xml" 
+			title="4 stories - P liondoor"
+			min="6" 
+			usage="continuation" 
+			deco="true" 
+			page="3" 
+		/>
+		<template 
+			name="CONTINUATION-fancy-PV-P_template.xml" 
+			title="4 stories - P liondoor"
+			min="6" 
+			usage="continuation" 
+			deco="true" 
+			page="4" 
+		/>
+		<template 
+			name="CONTINUATION-fancy-P_template.xml" 
+			title="1 story - P liondoor"
+			min="2" 
+			usage="continuation" 
+			deco="true" 
+		/>
+		<template 
+			name="CONTINUATION-fancy-PV-P-mirror_template.xml" 
+			title="4 stories - P liondoor Mirror"
+			min="6" 
+			usage="continuation" 
+			deco="true" 
+			page="2" 
+		/>
+		<template 
+			name="CONTINUATION-fancy-PV-P-mirror_template.xml" 
+			title="4 stories - P liondoor Mirror"
+			min="6" 
+			usage="continuation" 
+			deco="true" 
+			page="3" 
+		/>
+		<template 
+			name="CONTINUATION-fancy-PV-P-mirror_template.xml" 
+			title="4 stories - P liondoor Mirror"
+			min="6" 
+			usage="continuation" 
+			deco="true" 
+			page="4" 
+		/>
+		<template 
+			name="CONTINUATION-fancy-P-2_template.xml" 
+			title="3 stories - P liondoor"
+			min="4" 
+			usage="continuation" 
+			deco="true" 
+			page="2" 
+		/>
+		<template 
+			name="CONTINUATION-fancy-P-2_template.xml" 
+			title="3 stories - P liondoor"
+			min="4" 
+			usage="continuation" 
+			deco="true" 
+			page="3" 
+		/>
+		<template 
+			name="CONTINUATION-fancy-P-2_template.xml" 
+			title="3 stories - P liondoor"
+			min="4" 
+			usage="continuation" 
+			deco="true" 
+			page="4" 
+		/>
+		<template 
+			name="CONTINUATION-fancy-P-2-mirror_template.xml" 
+			title="3 stories - P liondoor Mirror"
+			min="5" 
+			usage="continuation" 
+			deco="true" 
+			page="2" 
+		/>
+		<template 
+			name="CONTINUATION-fancy-P-2-mirror_template.xml" 
+			title="3 stories - P liondoor Mirror"
+			min="5" 
+			usage="continuation" 
+			deco="true" 
+			page="3" 
+		/>
+		<template 
+			name="CONTINUATION-fancy-P-2-mirror_template.xml" 
+			title="3 stories - P liondoor Mirror"
+			min="5" 
+			usage="continuation" 
+			deco="true" 
+			page="4" 
+		/>
+		<template 
+			name="CONTINUATION-fancy-OZ_template.xml" 
+			title="5 stories - OZ liondoor"
+			min="5" 
+			usage="continuation" 
+			deco="true" 
+			page="2" 
+		/>
+		<template 
+			name="CONTINUATION-fancy-OZ_template.xml" 
+			title="5 stories - OZ liondoor"
+			min="5" 
+			usage="continuation" 
+			deco="true" 
+			page="3" 
+		/>
+		<template 
+			name="CONTINUATION-fancy-OZ_template.xml" 
+			title="5 stories - OZ liondoor"
+			min="5" 
+			usage="continuation" 
+			deco="true" 
+			page="4" 
+		/>
+		<template 
+			name="CONTINUATION-fancy-OZ-6_template.xml" 
+			title="7 stories - OZ liondoor"
+			min="7" 
+			usage="continuation" 
+			deco="true" 
+		/>
 		
-		<template 
-			name="CONTINUATION-fancy-PV-P_template.xml" 
-			title="4 stories - P liondoor"
-			min="6" 
-			usage="continuation" 
-			deco="true" 
-			page="2" 
-		/>
-		<template 
-			name="CONTINUATION-fancy-PV-P_template.xml" 
-			title="4 stories - P liondoor"
-			min="6" 
-			usage="continuation" 
-			deco="true" 
-			page="3" 
-		/>
-		<template 
-			name="CONTINUATION-fancy-PV-P_template.xml" 
-			title="4 stories - P liondoor"
-			min="6" 
-			usage="continuation" 
-			deco="true" 
-			page="4" 
-		/>
-		<template 
-			name="CONTINUATION-fancy-PV-P-mirror_template.xml" 
-			title="4 stories - P liondoor Mirror"
-			min="6" 
-			usage="continuation" 
-			deco="true" 
-			page="2" 
-		/>
-		<template 
-			name="CONTINUATION-fancy-PV-P-mirror_template.xml" 
-			title="4 stories - P liondoor Mirror"
-			min="6" 
-			usage="continuation" 
-			deco="true" 
-			page="3" 
-		/>
-		<template 
-			name="CONTINUATION-fancy-PV-P-mirror_template.xml" 
-			title="4 stories - P liondoor Mirror"
-			min="6" 
-			usage="continuation" 
-			deco="true" 
-			page="4" 
-		/>
-		<template 
-			name="CONTINUATION-fancy-P-2_template.xml" 
-			title="3 stories - P liondoor"
-			min="4" 
-			usage="continuation" 
-			deco="true" 
-			page="2" 
-		/>
-		<template 
-			name="CONTINUATION-fancy-P-2_template.xml" 
-			title="3 stories - P liondoor"
-			min="4" 
-			usage="continuation" 
-			deco="true" 
-			page="3" 
-		/>
-		<template 
-			name="CONTINUATION-fancy-P-2_template.xml" 
-			title="3 stories - P liondoor"
-			min="4" 
-			usage="continuation" 
-			deco="true" 
-			page="4" 
-		/>
-		<template 
-			name="CONTINUATION-fancy-P-2-mirror_template.xml" 
-			title="3 stories - P liondoor Mirror"
-			min="5" 
-			usage="continuation" 
-			deco="true" 
-			page="2" 
-		/>
-		<template 
-			name="CONTINUATION-fancy-P-2-mirror_template.xml" 
-			title="3 stories - P liondoor Mirror"
-			min="5" 
-			usage="continuation" 
-			deco="true" 
-			page="3" 
-		/>
-		<template 
-			name="CONTINUATION-fancy-P-2-mirror_template.xml" 
-			title="3 stories - P liondoor Mirror"
-			min="5" 
-			usage="continuation" 
-			deco="true" 
-			page="4" 
-		/>
-		<template 
-			name="CONTINUATION-fancy-OZ_template.xml" 
-			title="5 stories - OZ liondoor"
-			min="5" 
-			usage="continuation" 
-			deco="true" 
-			page="2" 
-		/>
-		<template 
-			name="CONTINUATION-fancy-OZ_template.xml" 
-			title="5 stories - OZ liondoor"
-			min="5" 
-			usage="continuation" 
-			deco="true" 
-			page="3" 
-		/>
-		<template 
-			name="CONTINUATION-fancy-OZ_template.xml" 
-			title="5 stories - OZ liondoor"
-			min="5" 
-			usage="continuation" 
-			deco="true" 
-			page="4" 
-		/>
 		<template 
 			name="CONTINUATION-fancy-OZ-3_template.xml" 
 			title="4 stories - OZ liondoor"

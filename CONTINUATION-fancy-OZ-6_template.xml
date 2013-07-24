@@ -1,0 +1,94 @@
+<jpml id="CONTINUATION-fancy-OZ-6_template">
+	<style src="CONTINUATION-stylesheet.ejs" /> 
+	<style src="GLOBAL-stylesheet.ejs" /> 
+	<style src="PHONE-stylesheet.ejs" /> 
+    <style>{
+		#deco: {options: { $switch: [
+				{if: =scale.phone, then: {normal_headline:true, G_image:true, small_caption:true}},
+				{if: =portrait, then: {bottom_headline:true, bottom_border:true, OZ_image:true}},
+				{if: =landscape, then: {bottom_headline:true, no_border:true, OZ_image:{if: =scale.small, then:false, else:true}, G_image:{if: =scale.small, then:true, else:false}}}			
+			]}}
+
+    }</style>
+	<style>{$switch: [
+        {if: =scale.phone, then: {
+	        #b2: {
+	                    height: {if:=articles.b2.subsection, equals:=articles.b1.subsection, then: 50} 
+	        },
+	        #b3: {
+	                    height: {if:=articles.b3.subsection, equals:=articles.b2.subsection, then: 50} 
+	        },
+	        #b4: {
+	                    height: {if:=articles.b4.subsection, equals:=articles.b3.subsection, then: 50} 
+	        }
+       }},
+        
+		{if: =portrait, then: {
+            #b1 : { 
+					frame: {$switch: [
+						{if: =widescreen, then: [0, 0, 256, 238]},
+						{if: =scale.large, then: [0, 0, 256, 199]}
+					]}
+			},
+            #b2 : { 
+					frame: {$switch: [
+						{if: =widescreen, then: [0, 238, 256, 238]},
+						{if: =scale.large, then: [0, 199, 256, 199]}
+					]} 
+			},
+            #b3 : { 
+					frame: {$switch: [
+						{if: =widescreen, then: [0, 483, 256, 196]},
+						{if: =scale.large, then: [0, 398, 256, 199]}
+					]} 
+			},
+            #b4 : { 
+					frame: {$switch: [
+						{if: =widescreen, then: [0, 679, 256, 196]},
+						{if: =scale.large, then: [0, 600, 256, 276]}
+					]} 
+			},
+            #b5 : { 
+					frame: {$switch: [
+						{if: =widescreen, then: [264, 483, 256, 392]},
+						{if: =scale.large, then: [264, 600, 256, 276]}
+					]} 
+			},
+            #b6 : { 
+					frame: {$switch: [
+						{if: =widescreen, then: [512, 483, 256, 392]},
+						{if: =scale.large, then: [512, 600, 256, 276]}
+					]} 
+			},
+            #deco : { 
+						frame: {$switch: [
+							{if: =widescreen, then: [264, 8, 500, 467]},
+							{if: =scale.large, then: [264, 8, 500, 590]}
+						]} 
+			}
+        }}, 
+		{if: =landscape, then: {
+	        #b1 : { frame: [500, 0, 256, 206] },
+	        #b2 : { frame: [500, 206, 256, 206]},
+	        #b3 : { frame: [500, 412, 256, 206]},
+	        #b4 : { frame: [756, 0, 256, 206]},
+	        #b5 : { frame: [756, 206, 256, 206]},
+	        #b6 : { frame: [756, 412, 256, 206]},
+	        #deco : { 
+				frame: {$switch: [
+					{if: =widescreen, then: [0, 0, 500, 598]},
+					{if: =scale.large, then: [0, 0, 500, 598]}
+				]}
+			}
+        }}
+    ]}</style>
+    <box id="b1" class="maude unit_continuation_strap" embed="article" module="CONTINUATION-dynamic_module.xml" />    
+    <box id="b2" class="maude unit_continuation_strap" embed="article" module="CONTINUATION-dynamic_module.xml" />
+    <box id="b3" class="maude unit_continuation_strap" embed="article" module="CONTINUATION-dynamic_module.xml" />
+    <box id="b4" class="maude unit_continuation_strap" embed="article" module="CONTINUATION-dynamic_module.xml" />
+    <box id="b5" class="maude unit_continuation_strap" embed="article" module="CONTINUATION-dynamic_module.xml" />
+    <box id="b6" class="maude unit_continuation_strap" embed="article" module="CONTINUATION-dynamic_module.xml" />
+    <box id="deco" class="maude unit_G_deco" embed="article" module="DECO_module.xml" />
+
+</jpml>
+

@@ -1,10 +1,10 @@
 <catalog preprocessor="preprocessor.ejs">
     <templates>
         <!-- FRONT SECTION - SEITE_EINS -->
-            <template name="FRONT-4story-E-top_template.xml" title="4 story - E Photo" section="SEITE_EINS" min="4" usage="front"/>
-            <template name="FRONT-4story-F_template.xml" title="4 story - F Photo" section="SEITE_EINS" min="4" usage="front"/>
-            <template name="FRONT-4story-F-deco_template.xml" title="4 story - F liondoor" section="SEITE_EINS" min="4" usage="front"/>
-            <template name="FRONT-4story-Vertical-deco_template.xml" title="4 story - Vertical deco" section="SEITE_EINS" min="4" deco="true" usage="front"/>
+            <template name="FRONT-4story-E-top_v2_template.xml" title="4 story - E Photo - Banner" section="SEITE_EINS" min="4" usage="front"/>
+            <template name="FRONT-4story-F_v2_template.xml" title="4 story - F Photo - Banner" section="SEITE_EINS" min="4" usage="front"/>
+            <template name="FRONT-4story-F-deco_v2_template.xml" title="4 story - F liondoor - Banner" section="SEITE_EINS" min="4" usage="front"/>
+            <template name="FRONT-4story-Vertical-deco_v2_template.xml" title="4 story - Vertical deco - Banner" section="SEITE_EINS" min="4" deco="true" usage="front"/>
         <!-- END FRONT SECTION - SEITE_EINS -->
         <!-- DEUTSCHLAND -->
         <!-- END DEUTSCHLAND -->

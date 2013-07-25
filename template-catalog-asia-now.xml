@@ -2,9 +2,9 @@
 	<templates>
 		<!-- FRONT SECTION -->
 		<template 
-			name="FRONT-4story-Video-deco_template.xml"
+			name="FRONT-4story-Video-deco_v2_template.xml"
 			section="FRONT_SECTION" 
-			title="FRONT-4story-Video-deco"
+			title="FRONT-4story-Video-deco - Banner"
 			min="4" 
 			deco="true"
 			usage="front"
@@ -854,6 +854,13 @@
 				usage="continuation" 
 				deco="true" 
 				page="4" 
+			/>
+			<template 
+				name="CONTINUATION-fancy-OZ-6_template.xml" 
+				title="7 stories - OZ liondoor"
+				min="7" 
+				usage="continuation" 
+				deco="true" 
 			/>
 			<template 
 				name="CONTINUATION-fancy-OZ_template.xml" 

@@ -33,11 +33,21 @@
 
 <xsl:template match="/article-doc">
 	<xsl:for-each select="article/article-body/p">
-		<item>
-			<title><xsl:value-of select="//article-doc/article/article-body/headline/main-hed"/></title>
-			<description><xsl:value-of select="."/></description>
-			<xsl:apply-templates select="link"/>
-		</item>
+	    <xsl:choose>
+	    	<xsl:when test="link">
+				<item>
+					<title><xsl:value-of select="//article-doc/article/article-body/headline/main-hed"/></title>
+					<description><xsl:value-of select="."/></description>
+					<xsl:apply-templates select="link"/>
+				</item>
+	    	</xsl:when>
+	    	<xsl:otherwise>
+	    		<stub>
+					<title><xsl:value-of select="//article-doc/article/article-body/headline/main-hed"/></title>
+					<description><xsl:value-of select="."/></description>
+	    		</stub>
+	    	</xsl:otherwise>
+	    </xsl:choose>
 	</xsl:for-each>
 </xsl:template>
 

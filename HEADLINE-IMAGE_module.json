@@ -1,0 +1,103 @@
+{
+  "influence": [
+    {
+      "key": "border",
+      "title": "Border",
+      "type": "toggle",
+      "options": [
+        {
+          "label": "Top Border",
+          "values": {
+            "no_border": false
+          }
+        }, {
+          "label": "No Border",
+          "values": {
+            "no_border": true
+          }
+        }
+      ]
+    },
+    {
+      "key": "columns",
+      "title": "Columns",
+      "type": "toggle",
+      "options": [{
+        "label": "2 Columns",
+        "values": { "two_columns": true }
+      }, {
+        "label": "1 Column",
+        "values": { "two_columns": false }
+      }]
+    },
+    {
+      "key": "image",
+      "title": "Hide/Show Image",
+      "type": "select",
+      "options": [
+        {
+          "label": "Hide",
+		  "values": {
+            "show_image": false
+          }
+        }, {
+          "label": "Show",
+          "values": {
+            "show_image": true
+          }
+        }
+      ]
+    },
+
+    {
+      "key": "headline_size",
+      "title": "Headline Size",
+      "type": "select",
+      "options": [
+        {
+          "label": "Small",
+          "values": {
+            "medium_headline":false,
+			"large_headline": false,
+            "small_headline": true
+          }
+        },
+        {
+          "label": "Medium",
+          "values": {
+          	"medium_headline":true,
+            "large_headline": false,
+            "small_headline": false
+          }
+        },
+        {
+          "label": "Large",
+          "values": {
+          	"medium_headline":false,
+            "large_headline": true,
+            "small_headline": false
+          }
+        }
+      ]
+    },
+    {
+      "key": "image_size",
+      "title": "Image Size",
+      "type": "select",
+      "options": [
+        {
+         "label": "Dynamic",
+         "values": {
+           "F_image": false
+          }
+        },
+        {
+          "label": "F",
+          "values": {
+            "F_image": true
+          }
+        }
+	]
+	}
+  ]
+}

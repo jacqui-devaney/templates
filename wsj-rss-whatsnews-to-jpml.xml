@@ -3,8 +3,8 @@
 	<xsl:variable name="smallcase" select="'abcdefghijklmnopqrstuvwxyz'"/>
 	<xsl:variable name="uppercase" select="'ABCDEFGHIJKLMNOPQRSTUVWXYZ'"/>
 
-	<xsl:key name="item_by_title" match="item" use="title" />
-
+	<xsl:key name="item_by_title" match="item|stub" use="title" />
+	
 	<xsl:variable name="type">
 		<xsl:choose>
 			<xsl:when test="contains(/rss/channel/title, 'ITP')">ITP</xsl:when>
@@ -29,15 +29,15 @@
 <xsl:template match="channel">
 	<xsl:choose>
 		<xsl:when test="$type = 'ITP'">
-			<xsl:apply-templates select="item[generate-id(.)=generate-id(key('item_by_title',title)[1])]" />
+			<xsl:apply-templates select="(item|stub)[generate-id(.)=generate-id(key('item_by_title',title)[1])]" />
 		</xsl:when>
 		<xsl:otherwise>
-			<xsl:apply-templates select="item"/>
+			<xsl:apply-templates select="item|stub"/>
 		</xsl:otherwise>
 	</xsl:choose>
 </xsl:template>
 
-<xsl:template match="item">
+<xsl:template match="item|stub">
 	<panel class="group">
 		<xsl:if test="$type = 'ITP'">
 			<p class="header"><span><xsl:value-of select="substring-after(title, ': ')"/></span><break/><mark class="stars" /></p>

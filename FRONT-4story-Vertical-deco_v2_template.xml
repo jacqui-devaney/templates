@@ -3,7 +3,6 @@
 	<style src="FRONT-stylesheet.ejs" />
 	<style src="PHONE-stylesheet.ejs" />
 	<style> {
-		jpml: {border-width:[1, 0, 0, 0], border-color:black},
 		#b1: {options: {$switch: [
 			{if: =scale.phone, then: {large_headline:true, no_border:true, show_body:true, top_align:true}},
 			{if: =portrait, then: {

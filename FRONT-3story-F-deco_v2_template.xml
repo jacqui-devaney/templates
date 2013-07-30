@@ -71,8 +71,7 @@
 				}
 	        }},
 			{if: =landscape, then:{
-				jpml: {border-width:[1, 0, 0, 0], border-color:black},
-				#b1:	{ 
+						#b1:	{ 
 							frame: {$switch: [
 								{if: =widescreen, then: [205, 26, 474, 273]},
 								{if: =scale.large, then: [205, 0, 571, 222]}

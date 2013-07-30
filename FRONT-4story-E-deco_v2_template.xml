@@ -3,7 +3,6 @@
     <style src="FRONT-stylesheet.ejs"/>
     <style>{
         if: =portrait, then: {
-            jpml: {border-width:[1, 0, 0, 0], border-color:black},
 			#marketstrap: {display:{if: =standard, then:none, else:inherit}},
 			#whatsnews: {display:{if: =standard, then:none, else:inherit}},
 			#whatsnews_itp: {display:{if: =standard, then:inherit, else:none}},

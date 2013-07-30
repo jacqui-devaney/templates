@@ -3,8 +3,7 @@
 	<style src="FRONT-stylesheet.ejs" />
 	<style> {
 		if: =portrait, then: {
-			jpml: {border-width:[1, 0, 0, 0], border-color:black},
-			#marketstrap: {display:{if: =standard, then:none, else:inherit}},
+				#marketstrap: {display:{if: =standard, then:none, else:inherit}},
 			#b1:	{ 
 						frame: {$switch: [
 						{if: =widescreen, then: [11, 34, 746, 330]},
@@ -73,8 +72,7 @@
 			}
 			
 		}, else: {
-			jpml: {border-width:[1, 0, 0, 0], border-color:black},
-			#b1:	{
+				#b1:	{
 			 			frame: {$switch: [
 						{if: =widescreen, then: [11, 34, 1002, 333]},
 						{if: =scale.large, then: [11, 9, 1000, 328]}

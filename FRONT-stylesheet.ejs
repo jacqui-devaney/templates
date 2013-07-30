@@ -1,6 +1,7 @@
 {$join: [
 {.line: { background-color:#b1aca1}},
 {#whatsnews_wrapper:{display:none}},
+{jpml: {border-width:[{if: =app.version, equals: 5.3, then: 0, else:1}, 0, 0, 0], border-color:black}},
 {if: =portrait, then: {
 		#marketstrap:	{ 
 				frame: [0, 0, 768, 26]

@@ -49,6 +49,7 @@
 	</box>
 	
     <panel id="header_top">
+        <p class="article_flashline" embed="flashline"/>
         <p class="article_headline"><span embed="headline"/><mark class="key"/></p>
 		<h2 class="article_subhed" embed="subhed" />
 		<panel class="close_button"/>

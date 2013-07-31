@@ -40,7 +40,7 @@
     {
       "key": "caption_width",
       "title": "Caption Width",
-	"comment": "Use for deco images P size and larger"
+	"comment": "Use for deco images P size and larger",
       "type": "select",
       "disabled": ["no_caption"],
       "options": [{

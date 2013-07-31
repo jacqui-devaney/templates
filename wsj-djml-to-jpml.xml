@@ -199,6 +199,7 @@
 </xsl:template>
 
 <xsl:template match="link">
+    <xsl:variable name="id" select="@linkend" />
     <a>
         <xsl:attribute name="class">link-<xsl:value-of select="@icon"/></xsl:attribute>
         <xsl:attribute name="href">
@@ -206,21 +207,24 @@
                 <xsl:when test="@icon = 'pdf-embedded-in-the-issue'">file:<xsl:call-template name="get_file_name">
                         <xsl:with-param name="input">
                             <xsl:call-template name="nameloc_by_id">
-                                <xsl:with-param name="id" select="@linkend" />
+                                <xsl:with-param name="id" select="$id" />
                             </xsl:call-template>
                         </xsl:with-param>
                     </xsl:call-template>
                 </xsl:when>
                 <xsl:when test="@icon = 'pdf'">
                     <xsl:call-template name="nameloc_by_id">
-                        <xsl:with-param name="id" select="@linkend" />
+                        <xsl:with-param name="id" select="$id" />
                     </xsl:call-template>
+                </xsl:when>
+                <xsl:when test="starts-with(//article//nameloc[@id = $id]/nmlist, 'wsj:')">
+                    <xsl:value-of select="substring(//article//nameloc[@id = $id]/nmlist, 5)" />
                 </xsl:when>
                 <xsl:otherwise>
                     <xsl:call-template name="tolower">
                         <xsl:with-param name="node" select="@type" />
                     </xsl:call-template>:<xsl:call-template name="nameloc_by_id">
-                        <xsl:with-param name="id" select="@linkend" />
+                        <xsl:with-param name="id" select="$id" />
                     </xsl:call-template>
                 </xsl:otherwise>
             </xsl:choose>

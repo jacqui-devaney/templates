@@ -39,11 +39,11 @@
 			{#headline: { padding:[0, 0, 12, 0] }},
 			{.byline: {display: {$switch: [
 				{if: =scale.small, then:{if: =options.byline, then:inherit, else:none}},
-				{if: =scale.large, then: inherit}
+				{if: =scale.large, then: {if: =options.no_byline, then:none, else:inherit}}
 			]}}},
 			{#body-first-p: {text-indent: {$switch: [
 				{if: =scale.small, then:{if: =options.no_indent, then:0, else:inherit}},
-				{if: =scale.large, then: inherit}
+				{if: =scale.large, then: {if: =options.no_indent, then:0, else:inherit}}
 			]}}}
 				
 		]	

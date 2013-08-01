@@ -24,7 +24,13 @@
 		image: { 
 			height: {$subtract: [=view.height, 10]},
 			display: { if: =options.hide_image, then:none, else:inherit }
-		}		
+		},
+		.byline: {display: {$switch: [
+			{if: =scale.small, then:{if: =options.byline, then:inherit, else:none}},
+			{if: =scale.large, then: {if: =options.no_byline, then:none, else:inherit}}
+		]}},
+		#body-first-p: {text-indent: {if: =options.no_indent, then:0, else:inherit}}
+				
 	}</style>
 	<style>{
 		if: =scale.phone, then: {

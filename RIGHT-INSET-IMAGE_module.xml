@@ -44,13 +44,10 @@
         {#headline: { padding: [ 0, 4, 0, 0 ] }},
 		{.byline: {display: {$switch: [
 			{if: =scale.small, then:{if: =options.byline, then:inherit, else:none}},
-			{if: =scale.large, then: inherit}
+			{if: =scale.large, then: {if: =options.no_byline, then:none, else:inherit}}
 		]}}},
 		{.body: {padding:{if: =options.byline, then:[0], else:[3, 0, 0, 0]}}},
-		{#body-first-p: {text-indent: {$switch: [
-			{if: =scale.small, then:{if: =options.no_indent, then:0, else:inherit}},
-			{if: =scale.large, then: inherit}
-		]}}}
+		{#body-first-p: {text-indent: {if: =options.no_indent, then:0, else:inherit}}}
 		
 		]
 	}</style>

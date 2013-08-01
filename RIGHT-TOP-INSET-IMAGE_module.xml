@@ -3,7 +3,8 @@
 	<style src="GLOBAL-stylesheet.ejs" />
 	<style src="PHONE-MODULES-stylesheet.ejs" />
 	<style>{
-        jpml: {padding:[10, 0, {if: =options.bottom, then:15, else:10}, 0]
+        jpml: {
+			padding:[10, 0, {if: =options.bottom, then:15, else:10}, 0]
 		},
 		#body: { 
             column-count: { if: =options.one_column, then:1, else:2},
@@ -23,7 +24,10 @@
 			height:{$multiply: [{$subtract:[=view.width, {$multiply:[=scale.dpi,28]}]}, 0.33] },
 			display: { if: =options.hide_image, then:none, else:inherit }
 		},
-		.body: {options:{text-align: { if: =options.justify, then:=justify, else:left}}}
+		.body: {options:{text-align: { if: =options.justify, then:=justify, else:left}}},
+		.byline: {display: {if: =options.no_byline, then:none, else:inherit}},
+		#body-first-p: {text-indent: {if: =options.no_indent, then:0, else:inherit}}
+		
 	}</style>
 	<style>{
 		if: =scale.phone, then: {

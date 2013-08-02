@@ -1,18 +1,43 @@
 <catalog preprocessor="preprocessor.ejs">
     <templates>
         <!-- FRONT SECTION  -->
-            <template name="FRONT-4story-E-top_v2_template.xml" title="4 story - E Photo - Banner" section="FRONT_SECTION" min="4" usage="front"/>
-            <template name="FRONT-4story-F_template_v2.xml" title="4 story - F Photo - Banner" section="FRONT_SECTION" min="4" usage="front"/>
-            <template name="FRONT-3story-F-deco_v2_template.xml" title="3 story - F liondoor - Banner" section="FRONT_SECTION" min="4" usage="front"/>
-            <template name="FRONT-4story-Vertical-deco_v2_template.xml" title="4 story - Vertical deco - Banner" section="FRONT_SECTION" min="4" deco="true" usage="front"/>
-        	<template 
-				name="FRONT-4story-Video-deco_v2_template.xml"
-				section="FRONT_SECTION" 
-				title="FRONT-4story-Video-deco - Banner"
-				min="4" 
-				deco="true"
-				usage="front"
-			/>
+		<template 
+			name="FRONT-4story-E-top_v2_template.xml" 
+			title="4 story - E Photo Banner" 
+			section="FRONT_SECTION" 
+			min="4" 
+			usage="front"
+		/>
+        <template 
+			name="FRONT-3story-F_v2_template.xml" 
+			title="4 story - F Photo Banner" 
+			section="FRONT_SECTION" 
+			min="4" 
+			usage="front"/>
+        <template 
+			name="FRONT-3story-F-deco_v2_template.xml" 
+			title="3 story - F liondoor Banner" 
+			section="FRONT_SECTION" 
+			min="4" 
+			usage="front"
+		/>
+        <template 
+			name="FRONT-4story-Vertical-deco_v2_template.xml" 
+			title="4 story - Vertical deco Banner" 
+			section="FRONT_SECTION" 
+			min="4" 
+			deco="true" 
+			usage="front"
+		/>
+		<template 
+			name="FRONT-4story-Video-deco_v2_template.xml"
+			section="FRONT_SECTION" 
+			title="FRONT-4story-Video-deco - Banner"
+			min="4" 
+			deco="true"
+			usage="front"
+		/>
+		
 		<!-- END FRONT SECTION -->
         <!-- JAPAN AND WORLD-->
             <template name="SECTION-2story-G-C_template.xml" title="2 story - G photo" section="JAPAN_AND_WORLD" min="4" usage="front"/>

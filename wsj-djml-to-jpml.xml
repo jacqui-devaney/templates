@@ -72,7 +72,6 @@
                 </p>
             </xsl:for-each>
         </xsl:if>
-        <p id="hack">&#xa0;</p>
     </panel>
     
     <!-- Barron's will need external links, insets too. -->

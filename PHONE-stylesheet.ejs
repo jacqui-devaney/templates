@@ -71,8 +71,10 @@
 		display: inherit
 	},
 	#marketstrap:	{ 
-		frame: [0, 0, =view.width, { if: =app.version, equals: "4.0.1", then: 22, else: 18}],
-		display:{if: =issue.edition, equals: "germany", then:none, else:inherit}
+		frame: [0, 0, =view.width, 18],
+		display:{if: =issue.edition, equals: "germany", then:none, else:inherit},
+		border-width:{if: =issue.edition, equals: "germany", then:[0], else:[0, 0, 1, 0]},
+		border-color:black
 	},
 	
 

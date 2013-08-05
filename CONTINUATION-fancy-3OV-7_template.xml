@@ -5,18 +5,18 @@
     <style>{
 		#deco: {options: { $switch: [
 				{if: =scale.phone, then: {normal_headline:true, G_image:true, small_caption:true}},
-				{if: =portrait, then: {small_headline:true, bottom_border:true, OV_image:true}},
-				{if: =landscape, then: {small_headline:true, bottom_border:true}}			
+				{if: =portrait, then: {small_bottom_headline:true, bottom_border:true, OV_image:true}},
+				{if: =landscape, then: {small_bottom_headline:true, bottom_border:true}}			
 		]}},
 		#deco2: {options: { $switch: [
 				{if: =scale.phone, then: {normal_headline:true, G_image:true, small_caption:true}},
-				{if: =portrait, then: {small_headline:true, bottom_border:true, OV_image:true}},
-				{if: =landscape, then: {small_headline:true, bottom_border:true}}			
+				{if: =portrait, then: {small_bottom_headline:true, bottom_border:true, OV_image:true}},
+				{if: =landscape, then: {small_bottom_headline:true, bottom_border:true}}			
 		]}},
 		#deco3: {options: { $switch: [
 				{if: =scale.phone, then: {normal_headline:true, G_image:true, small_caption:true}},
-				{if: =portrait, then: {small_headline:true, bottom_border:true, OV_image:true}},
-				{if: =landscape, then: {small_headline:true, bottom_border:true}}			
+				{if: =portrait, then: {small_bottom_headline:true, bottom_border:true, OV_image:true}},
+				{if: =landscape, then: {small_bottom_headline:true, bottom_border:true}}			
 		]}}
 		
 

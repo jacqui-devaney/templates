@@ -5,13 +5,13 @@
 	<style>{
 		#deco: {options: { $switch: [
 				{if: =scale.phone, then: {normal_headline:true, G_image:true, small_caption:true}},
-				{if: =portrait, then: {small_headline:true, bottom_border:true, F_image:{if: =widescreen, then:true, else:false}}},
-				{if: =landscape, then: {small_headline:true, bottom_border:true, F_image:{if: =widescreen, then:true, else:false}}}			
+				{if: =portrait, then: {small_bottom_headline:true, bottom_border:true, F_image:{if: =widescreen, then:true, else:false}}},
+				{if: =landscape, then: {small_bottom_headline:true, bottom_border:true, F_image:{if: =widescreen, then:true, else:false}}}			
 			]}},
 		#deco2: {options: { $switch: [
 				{if: =scale.phone, then: {normal_headline:true, G_image:true, small_caption:true}},
-				{if: =portrait, then: {bottom_border:true, small_headline:true, OV_image:true}},
-				{if: =landscape, then: {bottom_border:true, small_headline:true, OV_image:{if: =widescreen, then:true, else:false}}}			
+				{if: =portrait, then: {bottom_border:true, small_bottom_headline:true, OV_image:true}},
+				{if: =landscape, then: {bottom_border:true, small_bottom_headline:true, OV_image:{if: =widescreen, then:true, else:false}}}			
 			]}}
 		
 	}</style>

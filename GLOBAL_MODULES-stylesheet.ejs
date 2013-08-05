@@ -347,8 +347,7 @@
 					]
 				},
 				color:#000,
-				text-scale: {if: =scale.small, then: {$multiply: [=scale.text, .8] }, else: inherit},
-				padding:[8, 0, 0, 0]
+				text-scale: {if: =scale.small, then: {$multiply: [=scale.text, .8] }, else: inherit}
 			},
 			{
 				$switch: [
@@ -393,8 +392,14 @@
 		},
 		color:#000,
 		text-scale: {if: =scale.small, then: {$multiply: [=scale.text, .8] }, else: inherit},
-		display:{if: =options.bottom_headline, then: inherit, else:none},
-		font-size:24,
+		display:{if-any: [
+				{if: =options.bottom_headline, then:true}, 
+				{if: =options.small_bottom_headline, then:true}
+			], 
+			then: inherit, 
+			else:none
+		},
+		font-size:{if: =options.small_bottom_headline, then: 21, else:24},
 		line-height:24
 	},
 	

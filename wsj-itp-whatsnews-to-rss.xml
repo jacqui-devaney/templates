@@ -33,17 +33,23 @@
 
 <xsl:template match="/article-doc">
 	<xsl:for-each select="article/article-body/p">
+		<xsl:variable name="title">
+			<xsl:choose>
+				<xsl:when test="(preceding-sibling::subhed)[position() = last()]">What's News: <xsl:value-of select="(preceding-sibling::subhed)[position() = last()]"/></xsl:when>
+				<xsl:otherwise><xsl:value-of select="//article-doc/article/article-body/headline/main-hed"/></xsl:otherwise>
+			</xsl:choose>
+		</xsl:variable>
 	    <xsl:choose>
 	    	<xsl:when test="link">
 				<item>
-					<title><xsl:value-of select="//article-doc/article/article-body/headline/main-hed"/></title>
+					<title><xsl:value-of select="$title"/></title>
 					<description><xsl:value-of select="."/></description>
 					<xsl:apply-templates select="link"/>
 				</item>
 	    	</xsl:when>
 	    	<xsl:otherwise>
-	    		<stub>
-					<title><xsl:value-of select="//article-doc/article/article-body/headline/main-hed"/></title>
+	    		<stub>	
+					<title><xsl:value-of select="$title"/></title>
 					<description><xsl:value-of select="."/></description>
 	    		</stub>
 	    	</xsl:otherwise>

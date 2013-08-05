@@ -44,14 +44,18 @@
 		</xsl:if>
 		<xsl:for-each select="key('item_by_title', title)">
 			<p class="item">
-				<xsl:if test="$type = 'NOW'">
-					<span class="item-title"><xsl:call-template name="linked_text">
-						<xsl:with-param name="link"><xsl:value-of select="link"/></xsl:with-param>
-						<xsl:with-param name="text"><xsl:value-of select="title"/></xsl:with-param>
-					</xsl:call-template></span>
-					<break/>
-					<mark class="item-before-description"/>
-				</xsl:if>
+				<xsl:choose>
+					<xsl:when test="$type = 'NOW'">
+						<span class="item-title"><xsl:call-template name="linked_text">
+							<xsl:with-param name="link"><xsl:value-of select="link"/></xsl:with-param>
+							<xsl:with-param name="text"><xsl:value-of select="title"/></xsl:with-param>
+						</xsl:call-template></span>
+						<break/>
+					</xsl:when>
+					<xsl:when test="$type = 'ITP'">
+						<mark class="item-before-description"/>
+					</xsl:when>
+				</xsl:choose>
 				<span class="item-description"><xsl:call-template name="linked_text">
 					<xsl:with-param name="link"><xsl:value-of select="link"/></xsl:with-param>
 					<xsl:with-param name="text"><xsl:value-of select="description"/></xsl:with-param>

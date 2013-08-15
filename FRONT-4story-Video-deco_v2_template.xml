@@ -32,12 +32,13 @@
 	<style> {
 		$switch: [
 			{if: =scale.phone, then: {
-				
+				jpml: {border-width:[0, 0, 0, 0]}
 			}},
 	        {if: =portrait, then: {
+				jpml: {border-width:[0, 0, 0, 0]},
 				#whatsnews: {display:{if: =standard, then:none, else:inherit}},
 				#whatsnews_tall: {display:{if: =standard, then:inherit, else:none}},
-				#marketstrap: {border-width:[{if: =app.version, equals: "5.3", then: 0, else:1}, 0, {if: =app.version, equals: "5.3", then: 1, else:0}, 0], border-color:black},
+				#marketstrap: {border-width:[0, 0, {if: =app.version, equals: "5.3", then: 1, else:0}, 0], border-color:black},
 				#b1:	{ 
 							frame: {$switch: [
 								{if: =widescreen, then: [194, 28, 571, 234]},
@@ -71,9 +72,10 @@
 			
 			}},
 			{if: =landscape, then: {
+				jpml: {border-width:[0, 0, 0, 0]},
 				#whatsnews: {display:{if: =standard, then:none, else:inherit}},
 				#whatsnews_tall: {display:{if: =standard, then:inherit, else:none}},
-				#marketstrap: {border-width:[{if: =app.version, equals: "5.3", then: 0, else:1}, 0, {if: =app.version, equals: "5.3", then: 1, else:0}, 0], border-color:black},
+				#marketstrap: {border-width:[0, 0, {if: =app.version, equals: "5.3", then: 1, else:0}, 0], border-color:black},
 				#b1:	{ 
 							frame: {$switch: [
 								{if: =widescreen, then: [205, 28, 280, 590]},

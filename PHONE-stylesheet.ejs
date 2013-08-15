@@ -73,10 +73,9 @@
 	#marketstrap:	{ 
 		frame: [0, 0, =view.width, 18],
 		display:{if: =issue.edition, equals: "germany", then:none, else:inherit},
-		border-width:{if: =issue.edition, equals: "germany", then:[0], else:[0, 0, 1, 0]},
+		border-width:{if: =issue.edition, equals: "germany", then:[0], else:[0, 0, {if: =app.version, equals: "5.3", then: 1, else:0}, 0]},
 		border-color:black
 	},
-	
 
 	#whatsnews:	{ display:none },
 	#whatsnews_tall:	{ display:none },

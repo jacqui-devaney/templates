@@ -32,11 +32,7 @@
 	<style> {
 		$switch: [
 			{if: =scale.phone, then: {
-				jpml: {
-					border-width:{[0]}
-
-				}
-				
+				jpml: {border-width:[0, 0, 0, 0]}
 			}},
 	        {if: =portrait, then: {
 				jpml: {border-width:[0, 0, 0, 0]},

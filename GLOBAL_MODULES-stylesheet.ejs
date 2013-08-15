@@ -310,11 +310,11 @@
 		font-name:{if: =intent.article, then:DJ5Exchange-MediumItalic, else:DJ5Exchange-Medium}
 	},
 	.link-pdf: {
-		if: {=intent.article, then: {
+		if: =intent.article, then: {
 			text-decoration: underline,
 			color: cornflowerblue
-			
-		}, else: {}}
+		}, else: {
+		}
 	},
 	.byline: {
 		font-name:DJ5Exchange-Semibold,

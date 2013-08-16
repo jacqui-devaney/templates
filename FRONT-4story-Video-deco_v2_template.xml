@@ -38,7 +38,6 @@
 				jpml: {border-width:[0, 0, 0, 0]},
 				#whatsnews: {display:{if: =standard, then:none, else:inherit}},
 				#whatsnews_tall: {display:{if: =standard, then:inherit, else:none}},
-				#marketstrap: {border-width:[0, 0, {if-any: [{if: =app.version, equals: "5.3", then: true, else: false}, {if: =app.version, equals: "5.3.1", then: true, else: false}], then: 1, else:0}, 0], border-color:black},
 				#b1:	{ 
 							frame: {$switch: [
 								{if: =widescreen, then: [194, 28, 571, 234]},
@@ -75,7 +74,6 @@
 				jpml: {border-width:[0, 0, 0, 0]},
 				#whatsnews: {display:{if: =standard, then:none, else:inherit}},
 				#whatsnews_tall: {display:{if: =standard, then:inherit, else:none}},
-				#marketstrap: {border-width:[0, 0, {if-any: [{if: =app.version, equals: "5.3", then: true, else: false}, {if: =app.version, equals: "5.3.1", then: true, else: false}], then: 1, else:0}, 0], border-color:black},
 				#b1:	{ 
 							frame: {$switch: [
 								{if: =widescreen, then: [205, 28, 280, 590]},

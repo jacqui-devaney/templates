@@ -1,10 +1,15 @@
 {$join: [
 {.line: { background-color:#b1aca1}},
 {#whatsnews_wrapper:{display:none}},
-{jpml: {border-width:[{if-any: [{if: =app.version, equals: "5.3", then: true, else: false}, {if: =app.version, equals: "5.3.1", then: true, else: false}], then: 0, else:1}, 0, 0, 0], border-color:black}},
+{jpml: {
+	border-width:[{if: =app.version, starts-with: "5.3", then: 0, else:1}, 0, 0, 0], 
+	border-color:black
+}},
 {if: =portrait, then: {
 		#marketstrap:	{ 
-				frame: [0, 0, 768, 26]
+				frame: [0, 0, 768, 25],
+				border-width:[0, 0, {if: =app.version, starts-with: "5.3", then: 1, else:0}, 0], 
+				border-color:black
 			},
 		#whatsnews:		{ frame: [3, 34, 183, 642], 
 			options: { expanded-frame: [
@@ -33,7 +38,9 @@
 		#ad_background: { frame: [3, 677, 182, 195] }
 	}, else: {
 		#marketstrap:	{ 
-				frame: [0, 0, 1024, 26]
+				frame: [0, 0, 1024, 25],
+				border-width:[0, 0, {if: =app.version, starts-with: "5.3", then: 1, else:0}, 0], 
+				border-color:black
 				
 			},
 		#whatsnews:		{ frame: [11, 34, 183, 388], 

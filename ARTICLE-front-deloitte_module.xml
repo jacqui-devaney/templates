@@ -29,9 +29,7 @@
 			layout-grid-line-offset: {$multiply: [18, =view.zoomlevel]}
 			
         }},
-		{#close_button_box:{
-			border-color:transparent
-		}},
+
 		{.body-bug: {
 			display: none
 		}},

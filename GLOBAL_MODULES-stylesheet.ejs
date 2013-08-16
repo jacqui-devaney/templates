@@ -484,7 +484,7 @@
         text-align: left,
 		text-indent:{if: =issue.edition, equals: "japan", then: 0, else:20},
 		text-scale:{if: =widescreen, then: {$multiply: [=scale.text, 1.1] }, else: inherit},
-		a:auto
+		hyphens:auto
 		
 	},
 	
@@ -872,7 +872,7 @@
 		text-indent:0,
 		font-size:{$multiply: [15, =view.zoomlevel]},
 		line-height:{$multiply: [20, =view.zoomlevel]},
-        text-align: =justify,
+        text-align: justify,
 		hyphens:auto
 
 	},

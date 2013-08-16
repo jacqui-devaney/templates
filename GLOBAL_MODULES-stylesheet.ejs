@@ -292,8 +292,7 @@
 		text-indent:{if: =issue.edition, equals: "japan", then: 0, else:20},
 		font-size:{$multiply: [16, =view.zoomlevel]},
 		line-height:{$multiply: [22, =view.zoomlevel]},
-        text-align: left,
-		hyphens:auto
+        text-align: left
 	},
 	.body-bug: {
 		display: {if:=intent.article, then:default, else:none},
@@ -312,12 +311,18 @@
 		font-name:{if: =intent.article, then:DJ5Exchange-MediumItalic, else:DJ5Exchange-Medium}
 	},
 	.link-pdf: {
-		if: =intent.article, then: {
+		if-all: [
+			=intent.article,
+			{ if: =app.version, starts-with: "5.2", then: true, else: false },
+			{ if: =app.version, starts-with: "5.3", then: true, else: false }
+		], then: {
 			text-decoration: underline,
 			color: cornflowerblue
 		}, else: {
 		}
 	},
+		
+	
 	.byline: {
 		font-name:DJ5Exchange-Semibold,
 		font-size:13,
@@ -485,7 +490,7 @@
         text-align: left,
 		text-indent:{if: =issue.edition, equals: "japan", then: 0, else:20},
 		text-scale:{if: =widescreen, then: {$multiply: [=scale.text, 1.1] }, else: inherit},
-		hyphens:auto
+		a:auto
 		
 	},
 	

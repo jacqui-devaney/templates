@@ -16,7 +16,9 @@
 			
         }},
 		{.article_body:{
-			column-min-height:80
+			column-min-height:80,
+			hyphens:auto,
+			text-align:justify
 		}},
 		{.article_headline:{
 			font-size:40,

@@ -311,18 +311,12 @@
 		font-name:{if: =intent.article, then:DJ5Exchange-MediumItalic, else:DJ5Exchange-Medium}
 	},
 	.link-pdf: {
-		if-all: [
-			=intent.article,
-			{ if: =app.version, starts-with: "5.2", then: true, else: false },
-			{ if: =app.version, starts-with: "5.3", then: true, else: false }
-		], then: {
+		if: =intent.article, then: {
 			text-decoration: underline,
 			color: cornflowerblue
 		}, else: {
 		}
 	},
-		
-	
 	.byline: {
 		font-name:DJ5Exchange-Semibold,
 		font-size:13,

@@ -43,7 +43,7 @@
 			
 			}},
 			{if: =portrait, then: {
-	            jpml: {border-width:[1, 0, 0, 0], border-color:black},
+	            
 				#b1: 	{ 
 							frame: {$switch: [
 								{if: =widescreen, then: [194, 28, 571, 235]},

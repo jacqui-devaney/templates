@@ -23,21 +23,21 @@
 						anchor-x: {if: =options.center_image, then:center, else:right}, 
 						width: { $switch: [
 							{if-all: [=options.center_image, =widescreen], then:130},
-							{if: =options.center_image, then:209},
+							{if: =options.center_image, then:153},
 							90
 						]},
 						display: { if: =options.no_image, then:none, else:inherit },
 						pixels-per-point-x:{if: =scale.small, then:.7, else:1},
 						pixels-per-point-y:{if: =scale.small, then:.7, else:1},
 						image-scale:{if: =scale.small, then:.7, else:1},
-						top: {if: =options.center_image, then:130, else:0}
+						top: {if: =options.center_image, then:125, else:0}
 						
 						
 					}},
 					{image: { 
 						padding: { $switch: [
 							{if-all: [=options.center_image, =widescreen], then:[20, 0, 20, 0]},
-							{if: =options.center_image, then:[20, 48]},
+							{if: =options.center_image, then:[10, 20]},
 							[0, 4, 8, 8]
 						]},
 						options: { 

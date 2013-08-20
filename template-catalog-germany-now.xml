@@ -4,27 +4,27 @@
 		<template 
 			name="FRONT-4story-E-top_v2_template.xml" 
 			title="4 story - E Photo Banner" 
-			section="FRONT_SECTION" 
+			section="SEITE_EINS" 
 			min="4" 
 			usage="front"
 		/>
         <template 
 			name="FRONT-3story-F_v2_template.xml" 
 			title="4 story - F Photo Banner" 
-			section="FRONT_SECTION" 
+			section="SEITE_EINS" 
 			min="4" 
 			usage="front"/>
         <template 
 			name="FRONT-3story-F-deco_v2_template.xml" 
 			title="3 story - F liondoor Banner" 
-			section="FRONT_SECTION" 
+			section="SEITE_EINS" 
 			min="4" 
 			usage="front"
 		/>
         <template 
 			name="FRONT-4story-Vertical-deco_v2_template.xml" 
 			title="4 story - Vertical deco Banner" 
-			section="FRONT_SECTION" 
+			section="SEITE_EINS" 
 			min="4" 
 			deco="true" 
 			usage="front"
@@ -46,7 +46,7 @@
 		<!-- AVAILABLE FOR ALL SECTIONS -->
 		<template 
 			name="SECTION-1story-fullsize-deco.xml" 
-			section="" 
+			section="DEUTSCHLAND,WIRTSCHAFT_AND_FINANZEN,ANALYSE,UNTERNEHMEN,INTERNATIONAL,TECHNOLOGIE" 
 			title="Full size Deco"
 			min="1" 
 			deco="true"
@@ -54,21 +54,21 @@
 		/>
 		<template 
 			name="SECTION-1story-PV_template.xml" 
-			section="" 
+			section="DEUTSCHLAND,WIRTSCHAFT_AND_FINANZEN,ANALYSE,UNTERNEHMEN,INTERNATIONAL,TECHNOLOGIE" 
 			title="PV (grey)"
 			min="3" 
 			usage="front" 
 		/>
 		<template 
 			name="SECTION-1story-PV-1highlight_template.xml" 
-			section="" 
+			section="DEUTSCHLAND,WIRTSCHAFT_AND_FINANZEN,ANALYSE,UNTERNEHMEN,INTERNATIONAL,TECHNOLOGIE" 
 			title="PV - 1 highlight (grey)"
 			min="2" 
 			usage="front" 
 		/>
 		<template 
 			name="SECTION-1story-PV-1highlight-white_template.xml" 
-			section="" 
+			section="DEUTSCHLAND,WIRTSCHAFT_AND_FINANZEN,ANALYSE,UNTERNEHMEN,INTERNATIONAL,TECHNOLOGIE" 
 			title="PV - 1 highlight (white)"
 			min="2" 
 			usage="front" 
@@ -76,7 +76,7 @@
 
 		<template 
 			name="SECTION-1story-P_template.xml" 
-			section="" 
+			section="DEUTSCHLAND,WIRTSCHAFT_AND_FINANZEN,ANALYSE,UNTERNEHMEN,INTERNATIONAL,TECHNOLOGIE" 
 			title="P-photo"
 			min="3" 
 			usage="front" 
@@ -84,28 +84,28 @@
 
 		<template 
 			name="SECTION-4story-2D-C_template.xml"
-			section="" 
+			section="DEUTSCHLAND,WIRTSCHAFT_AND_FINANZEN,ANALYSE,UNTERNEHMEN,INTERNATIONAL,TECHNOLOGIE" 
 			title="4 story Plain"
 			min="6"
 			usage="front"
 		/>
 		<template 
 			name="SECTION-4story-smallG-top_template.xml"
-			section="" 
+			section="DEUTSCHLAND,WIRTSCHAFT_AND_FINANZEN,ANALYSE,UNTERNEHMEN,INTERNATIONAL,TECHNOLOGIE" 
 			title="4 story - G photo"
 			min="6"
 			usage="front"
 		/>
 		<template 
 			name="SECTION-3story-G_template.xml"
-			section="" 
+			section="DEUTSCHLAND,WIRTSCHAFT_AND_FINANZEN,ANALYSE,UNTERNEHMEN,INTERNATIONAL,TECHNOLOGIE" 
 			title="3 story - G photo"
 			min="5"
 			usage="front"
 		/>
 		<template 
 			name="SECTION-4story-smallG-deco_template.xml"
-			section="" 
+			section="DEUTSCHLAND,WIRTSCHAFT_AND_FINANZEN,ANALYSE,UNTERNEHMEN,INTERNATIONAL,TECHNOLOGIE" 
 			title="4 story-Small G Media Deco"
 			min="6" 
 			deco="true"
@@ -113,7 +113,7 @@
 		/>
 		<template 
 			name="SECTION-3story-G-deco-C_template.xml"
-			section="" 
+			section="DEUTSCHLAND,WIRTSCHAFT_AND_FINANZEN,ANALYSE,UNTERNEHMEN,INTERNATIONAL,TECHNOLOGIE" 
 			deco="true" 
 			title="3 story - G Media Deco"
 			min="5"
@@ -121,7 +121,7 @@
 		/>
 		<template 
 			name="SECTION-3story-G-mirror_template.xml" 
-			section="" 
+			section="DEUTSCHLAND,WIRTSCHAFT_AND_FINANZEN,ANALYSE,UNTERNEHMEN,INTERNATIONAL,TECHNOLOGIE" 
 			title="3 story - G photo mirror"
 			min="5" 
 			deco="true"
@@ -129,7 +129,7 @@
 		/>
 		<template 
 			name="SECTION-4story-smallG-deco-mirror_template.xml" 
-			section="" 
+			section="DEUTSCHLAND,WIRTSCHAFT_AND_FINANZEN,ANALYSE,UNTERNEHMEN,INTERNATIONAL,TECHNOLOGIE" 
 			title="4 story - small G Media liondoor - mirror"
 			min="6" 
 			deco="true" 
@@ -137,21 +137,21 @@
 		/>
 		<template 
 			name="SECTION-4story-smallG-top-mirror_template.xml" 
-			section="" 
+			section="DEUTSCHLAND,WIRTSCHAFT_AND_FINANZEN,ANALYSE,UNTERNEHMEN,INTERNATIONAL,TECHNOLOGIE" 
 			title="4 story - G photo - mirror"
 			min="6" 
 			usage="front" 
 		/>
 		<template 
 			name="SECTION-4story-OZ-top_template.xml" 
-			section="" 
+			section="DEUTSCHLAND,WIRTSCHAFT_AND_FINANZEN,ANALYSE,UNTERNEHMEN,INTERNATIONAL,TECHNOLOGIE" 
 			title="4 story - OZ photo"
 			min="6" 
 			usage="front" 
 		/>
 		<template 
 			name="SECTION-4story-OZ-deco-mirror_template.xml" 
-			section="" 
+			section="DEUTSCHLAND,WIRTSCHAFT_AND_FINANZEN,ANALYSE,UNTERNEHMEN,INTERNATIONAL,TECHNOLOGIE" 
 			title="4 story - OZ Media liondoor"
 			min="5" 
 			deco="true" 
@@ -160,35 +160,35 @@
 
 		<template 
 			name="SECTION-2story-G-C_template.xml" 
-			section="" 
+			section="DEUTSCHLAND,WIRTSCHAFT_AND_FINANZEN,ANALYSE,UNTERNEHMEN,INTERNATIONAL,TECHNOLOGIE" 
 			title="2 story-G-photo"
 			min="4" 
 			usage="front" 
 		/>
 		<template 
 			name="SECTION-4story-2D-C_template.xml"
-			section="" 
+			section="DEUTSCHLAND,WIRTSCHAFT_AND_FINANZEN,ANALYSE,UNTERNEHMEN,INTERNATIONAL,TECHNOLOGIE" 
 			title="4 story Plain"
 			min="6"
 			usage="front"
 		/>
 		<template 
 			name="SECTION-4story-smallG-top_template.xml"
-			section="" 
+			section="DEUTSCHLAND,WIRTSCHAFT_AND_FINANZEN,ANALYSE,UNTERNEHMEN,INTERNATIONAL,TECHNOLOGIE" 
 			title="4 story - G photo"
 			min="6"
 			usage="front"
 		/>
 		<template 
 			name="SECTION-3story-G_template.xml"
-			section="" 
+			section="DEUTSCHLAND,WIRTSCHAFT_AND_FINANZEN,ANALYSE,UNTERNEHMEN,INTERNATIONAL,TECHNOLOGIE" 
 			title="3 story - G photo"
 			min="5"
 			usage="front"
 		/>
 		<template 
 			name="SECTION-4story-smallG-deco_template.xml"
-			section="" 
+			section="DEUTSCHLAND,WIRTSCHAFT_AND_FINANZEN,ANALYSE,UNTERNEHMEN,INTERNATIONAL,TECHNOLOGIE" 
 			title="4 story-Small G Media Deco"
 			min="6" 
 			deco="true"
@@ -196,7 +196,7 @@
 		/>
 		<template 
 			name="SECTION-3story-G-deco-C_template.xml"
-			section="" 
+			section="DEUTSCHLAND,WIRTSCHAFT_AND_FINANZEN,ANALYSE,UNTERNEHMEN,INTERNATIONAL,TECHNOLOGIE" 
 			deco="true" 
 			title="3 story - G Media Deco"
 			min="5"
@@ -204,7 +204,7 @@
 		/>
 		<template 
 			name="SECTION-3story-G-mirror_template.xml" 
-			section="" 
+			section="DEUTSCHLAND,WIRTSCHAFT_AND_FINANZEN,ANALYSE,UNTERNEHMEN,INTERNATIONAL,TECHNOLOGIE" 
 			title="3 story - G photo mirror"
 			min="5" 
 			deco="true"
@@ -212,7 +212,7 @@
 		/>
 		<template 
 			name="SECTION-4story-smallG-deco-mirror_template.xml" 
-			section="" 
+			section="DEUTSCHLAND,WIRTSCHAFT_AND_FINANZEN,ANALYSE,UNTERNEHMEN,INTERNATIONAL,TECHNOLOGIE" 
 			title="4 story - small G Media liondoor - mirror"
 			min="6" 
 			deco="true" 
@@ -220,7 +220,7 @@
 		/>
 		<template 
 			name="SECTION-4story-smallG-top-mirror_template.xml" 
-			section="" 
+			section="DEUTSCHLAND,WIRTSCHAFT_AND_FINANZEN,ANALYSE,UNTERNEHMEN,INTERNATIONAL,TECHNOLOGIE" 
 			title="4 story - G photo - mirror"
 			min="6" 
 			usage="front" 
@@ -228,7 +228,7 @@
 
 		<template 
 			name="SECTION-4story-OZ-deco-mirror_template.xml" 
-			section="" 
+			section="DEUTSCHLAND,WIRTSCHAFT_AND_FINANZEN,ANALYSE,UNTERNEHMEN,INTERNATIONAL,TECHNOLOGIE" 
 			title="4 story - OZ Media liondoor"
 			min="5" 
 			deco="true" 

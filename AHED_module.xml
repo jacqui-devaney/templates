@@ -20,24 +20,28 @@
 						display:{if: =options.hide_body, then:none, else:inherit}
 			        }},
 			        {#image_container: { 
-						anchor-x: {if: =options.center_image, then:center, else:right}, 
+						anchor-x: { $switch: [
+							{if-all: [=options.center_image, =widescreen], then:center},
+							{if: =options.center_image, then:center},
+							right
+						]}, 
 						width: { $switch: [
-							{if-all: [=options.center_image, =widescreen], then:130},
-							{if: =options.center_image, then:153},
+							{if-all: [=options.center_image, =widescreen], then:133},
+							{if: =options.center_image, then:133},
 							90
 						]},
 						display: { if: =options.no_image, then:none, else:inherit },
 						pixels-per-point-x:{if: =scale.small, then:.7, else:1},
 						pixels-per-point-y:{if: =scale.small, then:.7, else:1},
 						image-scale:{if: =scale.small, then:.7, else:1},
-						top: {if: =options.center_image, then:125, else:0}
+						top: {if: =options.center_image, then:118, else:0}
 						
 						
 					}},
 					{image: { 
 						padding: { $switch: [
-							{if-all: [=options.center_image, =widescreen], then:[20, 0, 20, 0]},
-							{if: =options.center_image, then:[10, 20]},
+							{if-all: [=options.center_image, =widescreen], then:[5, 10]},
+							{if: =options.center_image, then:[5, 10]},
 							[0, 4, 8, 8]
 						]},
 						options: { 

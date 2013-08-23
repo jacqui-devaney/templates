@@ -29,10 +29,7 @@
 				{if: =portrait, then: {small_headline:true, no_indent:true}},
 				{if: =landscape, then: {small_headline:true, no_indent:true}}
 			]	
-		}},
-		#marketstrap: {display:{if: =standard, then:none, else:inherit}},
-		#whatsnews: {display:{if: =standard, then:none, else:inherit}},
-		#whatsnews_itp: {display:{if: =standard, then:inherit, else:none}}
+		}}
 		
 		
 		
@@ -43,7 +40,10 @@
 			
 			}},
 			{if: =portrait, then: {
-	            
+	            #marketstrap: {display:{if: =standard, then:none, else:inherit}},
+				#whatsnews: {display:{if: =standard, then:none, else:inherit}},
+				#whatsnews_itp: {display:{if: =standard, then:inherit, else:none}},
+				
 				#b1: 	{ 
 							frame: {$switch: [
 								{if: =widescreen, then: [194, 28, 571, 235]},
@@ -71,6 +71,9 @@
 				}
 	        }},
 			{if: =landscape, then:{
+				#marketstrap: {display:{if: =standard, then:none, else:inherit}},
+				#whatsnews: {display:{if: =standard, then:none, else:inherit}},
+				#whatsnews_itp: {display:{if: =standard, then:inherit, else:none}},
 						#b1:	{ 
 							frame: {$switch: [
 								{if: =widescreen, then: [205, 26, 474, 273]},
@@ -105,11 +108,11 @@
 	<box id="whatsnews" embed="whatsnews" />
 
     <box id="whatsnews_itp" embed="whatsnews" />
-	<box class="maude unit_ad front_banner">
-		<box id="ad_banner" class="ad-banner" embed="advertisement" />
-	</box>
     <box id="b1" embed="article" class="maude unit_166" module="FRONT-NO-IMAGE_module.xml" />    
     <box id="b2" embed="article" class="maude unit_50" module="FRONT-NO-IMAGE_module.xml" />
 	<box id="b3" embed="article" class="maude unit_50" module="FRONT-NO-IMAGE_module.xml" />
+	<box class="maude unit_ad front_banner">
+		<box id="ad_banner" class="ad-banner" embed="advertisement" />
+	</box>
 	<box id="deco" embed="article" class="maude unit_G_deco" module="DECO_module.xml" />
 </jpml>

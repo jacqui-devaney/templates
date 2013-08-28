@@ -46,6 +46,7 @@
 			section="OPINION" 
 			min="7" 
 			usage="front" 
+			storyorder="feed"
 		/>
 		<template 
 			name="OPINION-4story-E_template.xml" 
@@ -53,6 +54,7 @@
 			section="OPINION" 
 			min="6" 
 			usage="front" 
+			storyorder="feed"
 		/>
 		<template 
 			name="OPINION-3story-E_template.xml" 
@@ -60,6 +62,7 @@
 			section="OPINION" 
 			min="5" 
 			usage="front" 
+			storyorder="feed"
 		/>
 		<template 
 			name="OPINION-2story-E_template.xml" 
@@ -67,6 +70,7 @@
 			section="OPINION" 
 			min="4" 
 			usage="front" 
+			storyorder="feed"
 		/>
 		<!-- END OPINION -->
 		
@@ -99,6 +103,7 @@
 			min="1" 
 			deco="true"
 			usage="front" 
+			storyorder="feed"
 		/>
 		<template 
 			name="SECTION-1story-PV_template.xml" 
@@ -106,6 +111,7 @@
 			title="PV (grey)"
 			min="3" 
 			usage="front" 
+			storyorder="feed"
 		/>
 		<template 
 			name="SECTION-1story-PV-1highlight_template.xml" 
@@ -113,6 +119,7 @@
 			title="PV - 1 highlight (grey)"
 			min="2" 
 			usage="front" 
+			storyorder="feed"
 		/>
 		<template 
 			name="SECTION-1story-PV-1highlight-white_template.xml" 
@@ -120,6 +127,7 @@
 			title="PV - 1 highlight (white)"
 			min="2" 
 			usage="front" 
+			storyorder="feed"
 		/>
 		
 		<template 
@@ -128,6 +136,7 @@
 			title="P-photo"
 			min="3" 
 			usage="front" 
+			storyorder="feed"
 		/>
 		<template 
 			name="SECTION-1story-P-white_template.xml" 
@@ -135,6 +144,7 @@
 			title="P-photo - white highlights"
 			min="3" 
 			usage="front" 
+			storyorder="feed"
 		/>
 		
 		<!-- END BUSINESS AND FINANCE -->
@@ -146,6 +156,7 @@
 			section="FRIDAY_JOURNAL" 
 			min="4" 
 			usage="front" 
+			storyorder="feed"
 		/>
 		<template 
 			name="SECTION-3story-G_template.xml" 
@@ -153,6 +164,7 @@
 			section="FRIDAY_JOURNAL" 
 			min="5" 
 			usage="front" 
+			storyorder="feed"
 		/>
 		<!-- END FRIDAY JOURNAL -->
 		
@@ -203,6 +215,7 @@
 			section="MONEY_AND_INVESTING" 
 			min="5" 
 			usage="front" 
+			storyorder="feed"
 		/>
 		<!-- END MONEY AND INVESTING -->
 		
@@ -213,6 +226,7 @@
 			section="OFF_DUTY" 
 			min="4" 
 			usage="front" 
+			storyorder="feed"
 		/>
 		<template 
 			name="SECTION-3story-G_template.xml" 
@@ -220,6 +234,7 @@
 			section="OFF_DUTY" 
 			min="5" 
 			usage="front" 
+			storyorder="feed"
 		/>
 		<!-- END OFF DUTY -->
 		
@@ -230,6 +245,7 @@
 			section="PERSONAL_JOURNAL" 
 			min="4" 
 			usage="front" 
+			storyorder="feed"
 		/>
 		<!-- END PERSONAL JOURNAL -->
 		
@@ -240,6 +256,7 @@
 			section="LIFE_AND_STYLE" 
 			min="4" 
 			usage="front" 
+			storyorder="feed"
 		/>
 		<template 
 			name="SECTION-4story-2D-C_template.xml"
@@ -285,6 +302,7 @@
 			min="5" 
 			deco="true"
 			usage="front" 
+			storyorder="feed"
 		/>
 		<template 
 			name="SECTION-4story-smallG-deco-mirror_template.xml" 
@@ -293,6 +311,7 @@
 			min="6" 
 			deco="true" 
 			usage="front" 
+			storyorder="feed"
 		/>
 		<template 
 			name="SECTION-4story-smallG-top-mirror_template.xml" 
@@ -300,6 +319,7 @@
 			title="4 story - G photo - mirror"
 			min="6" 
 			usage="front" 
+			storyorder="feed"
 		/>
 		<template 
 			name="SECTION-1story-fullsize-deco.xml" 
@@ -308,6 +328,7 @@
 			min="1" 
 			deco="true"
 			usage="front" 
+			storyorder="feed"
 		/>
 		<template 
 			name="SECTION-1story-PV_template.xml" 
@@ -315,6 +336,7 @@
 			title="PV (grey)"
 			min="3" 
 			usage="front" 
+			storyorder="feed"
 		/>
 		<template 
 			name="SECTION-1story-PV-1highlight_template.xml" 
@@ -322,6 +344,7 @@
 			title="PV - 1 highlight (grey)"
 			min="2" 
 			usage="front" 
+			storyorder="feed"
 		/>
 		<template 
 			name="SECTION-1story-PV-1highlight-white_template.xml" 
@@ -329,6 +352,7 @@
 			title="PV - 1 highlight (white)"
 			min="2" 
 			usage="front" 
+			storyorder="feed"
 		/>
 
 		<template 
@@ -337,6 +361,7 @@
 			title="P-photo"
 			min="3" 
 			usage="front" 
+			storyorder="feed"
 		/>
 		<template 
 			name="SECTION-1story-P-white_template.xml" 
@@ -344,6 +369,7 @@
 			title="P-photo - white highlights"
 			min="3" 
 			usage="front" 
+			storyorder="feed"
 		/>
 		
 		<!-- END LIFE AND STYLE -->
@@ -355,6 +381,7 @@
 			section="EUROPE" 
 			min="4" 
 			usage="front" 
+			storyorder="feed"
 		/>
 		<template 
 			name="SECTION-4story-2D-C_template.xml"
@@ -400,6 +427,7 @@
 			min="5" 
 			deco="true"
 			usage="front" 
+			storyorder="feed"
 		/>
 		<template 
 			name="SECTION-4story-smallG-deco-mirror_template.xml" 
@@ -408,6 +436,7 @@
 			min="6" 
 			deco="true" 
 			usage="front" 
+			storyorder="feed"
 		/>
 		<template 
 			name="SECTION-4story-smallG-top-mirror_template.xml" 
@@ -415,6 +444,7 @@
 			title="4 story - G photo - mirror"
 			min="6" 
 			usage="front" 
+			storyorder="feed"
 		/>
 		<template 
 			name="SECTION-1story-fullsize-deco.xml" 
@@ -423,6 +453,7 @@
 			min="1" 
 			deco="true"
 			usage="front" 
+			storyorder="feed"
 		/>
 		<template 
 			name="SECTION-1story-PV_template.xml" 
@@ -430,6 +461,7 @@
 			title="PV (grey)"
 			min="3" 
 			usage="front" 
+			storyorder="feed"
 		/>
 		<template 
 			name="SECTION-1story-PV-1highlight_template.xml" 
@@ -437,6 +469,7 @@
 			title="PV - 1 highlight (grey)"
 			min="2" 
 			usage="front" 
+			storyorder="feed"
 		/>
 		<template 
 			name="SECTION-1story-PV-1highlight-white_template.xml" 
@@ -444,6 +477,7 @@
 			title="PV - 1 highlight (white)"
 			min="2" 
 			usage="front" 
+			storyorder="feed"
 		/>
 
 		<template 
@@ -452,6 +486,7 @@
 			title="P-photo"
 			min="3" 
 			usage="front" 
+			storyorder="feed"
 		/>
 		<template 
 			name="SECTION-1story-P-white_template.xml" 
@@ -459,6 +494,7 @@
 			title="P-photo - white highlights"
 			min="3" 
 			usage="front" 
+			storyorder="feed"
 		/>
 		
 		<!-- END EUROPE SECTION -->
@@ -470,6 +506,7 @@
 			section="REVIEW" 
 			min="5" 
 			usage="front" 
+			storyorder="feed"
 		/>
 		<template 
 			name="SECTION-2story-G-C_template.xml" 
@@ -477,6 +514,7 @@
 			section="REVIEW" 
 			min="4" 
 			usage="front" 
+			storyorder="feed"
 		/>
 		<!-- END REVIEW -->
 		
@@ -495,6 +533,7 @@
 			min="6" 
 			deco="true" 
 			usage="front" 
+			storyorder="feed"
 		/>
 		
 		<template 
@@ -533,6 +572,7 @@
 			title="P-photo - white highlights"
 			min="3" 
 			usage="front" 
+			storyorder="feed"
 		/>
 		
 		<template 
@@ -541,6 +581,7 @@
 			title="4 story - G photo"
 			min="6" 
 			usage="front" 
+			storyorder="feed"
 		/>
 		<template 
 			name="SECTION-3story-G-mirror_template.xml" 
@@ -549,6 +590,7 @@
 			min="5" 
 			deco="true"
 			usage="front" 
+			storyorder="feed"
 		/>
 		<template 
 			name="SECTION-4story-smallG-deco-mirror_template.xml" 
@@ -557,6 +599,7 @@
 			min="6" 
 			deco="true" 
 			usage="front" 
+			storyorder="feed"
 		/>
 		<template 
 			name="SECTION-4story-smallG-top-mirror_template.xml" 
@@ -564,6 +607,7 @@
 			title="4 story - G photo - mirror"
 			min="6" 
 			usage="front" 
+			storyorder="feed"
 		/>
 		<template 
 			name="SECTION-1story-fullsize-deco.xml" 
@@ -572,6 +616,7 @@
 			min="1" 
 			deco="true"
 			usage="front" 
+			storyorder="feed"
 		/>
 		<template 
 			name="SECTION-1story-PV-1highlight_template.xml" 
@@ -579,6 +624,7 @@
 			title="PV - 1 highlight (grey)"
 			min="2" 
 			usage="front" 
+			storyorder="feed"
 		/>
 		<template 
 			name="SECTION-1story-PV-1highlight-white_template.xml" 
@@ -586,6 +632,7 @@
 			title="PV - 1 highlight (white)"
 			min="2" 
 			usage="front" 
+			storyorder="feed"
 		/>
 		<!-- END SPECIAL REPORT -->
 		<!--  SPECIAL REPORT 2 -->
@@ -603,6 +650,7 @@
 			min="6" 
 			deco="true" 
 			usage="front" 
+			storyorder="feed"
 		/>
 		
 		<template 
@@ -641,6 +689,7 @@
 			title="P-photo - white highlights"
 			min="3" 
 			usage="front" 
+			storyorder="feed"
 		/>
 		
 		<template 
@@ -649,6 +698,7 @@
 			title="4 story - G photo"
 			min="6" 
 			usage="front" 
+			storyorder="feed"
 		/>
 		<template 
 			name="SECTION-3story-G-mirror_template.xml" 
@@ -657,6 +707,7 @@
 			min="5" 
 			deco="true"
 			usage="front" 
+			storyorder="feed"
 		/>
 		<template 
 			name="SECTION-4story-smallG-deco-mirror_template.xml" 
@@ -665,6 +716,7 @@
 			min="6" 
 			deco="true" 
 			usage="front" 
+			storyorder="feed"
 		/>
 		<template 
 			name="SECTION-4story-smallG-top-mirror_template.xml" 
@@ -672,6 +724,7 @@
 			title="4 story - G photo - mirror"
 			min="6" 
 			usage="front" 
+			storyorder="feed"
 		/>
 		<template 
 			name="SECTION-1story-fullsize-deco.xml" 
@@ -680,6 +733,7 @@
 			min="1" 
 			deco="true"
 			usage="front" 
+			storyorder="feed"
 		/>
 		<template 
 			name="SECTION-1story-PV-1highlight_template.xml" 
@@ -687,6 +741,7 @@
 			title="PV - 1 highlight (grey)"
 			min="2" 
 			usage="front" 
+			storyorder="feed"
 		/>
 		<template 
 			name="SECTION-1story-PV-1highlight-white_template.xml" 
@@ -694,6 +749,7 @@
 			title="PV - 1 highlight (white)"
 			min="2" 
 			usage="front" 
+			storyorder="feed"
 		/>
 		
 		<!-- END SPECIAL REPORT 2 -->
@@ -742,6 +798,7 @@
 			min="5" 
 			deco="true"
 			usage="front" 
+			storyorder="feed"
 		/>
 		<template 
 			name="SECTION-4story-smallG-deco-mirror_template.xml" 
@@ -750,6 +807,7 @@
 			min="6" 
 			deco="true" 
 			usage="front" 
+			storyorder="feed"
 		/>
 		<template 
 			name="SECTION-4story-smallG-top-mirror_template.xml" 
@@ -757,6 +815,7 @@
 			title="4 story - G photo - mirror"
 			min="6" 
 			usage="front" 
+			storyorder="feed"
 		/>
 		<template 
 			name="SECTION-1story-fullsize-deco.xml" 
@@ -765,6 +824,7 @@
 			min="1" 
 			deco="true"
 			usage="front" 
+			storyorder="feed"
 		/>
 		<template 
 			name="SECTION-1story-PV_template.xml" 
@@ -772,6 +832,7 @@
 			title="PV (grey)"
 			min="3" 
 			usage="front" 
+			storyorder="feed"
 		/>
 		<template 
 			name="SECTION-1story-PV-1highlight_template.xml" 
@@ -779,6 +840,7 @@
 			title="PV - 1 highlight (grey)"
 			min="2" 
 			usage="front" 
+			storyorder="feed"
 		/>
 		<template 
 			name="SECTION-1story-PV-1highlight-white_template.xml" 
@@ -786,6 +848,7 @@
 			title="PV - 1 highlight (white)"
 			min="2" 
 			usage="front" 
+			storyorder="feed"
 		/>
 
 		<template 
@@ -794,6 +857,7 @@
 			title="P-photo"
 			min="3" 
 			usage="front" 
+			storyorder="feed"
 		/>
 		<template 
 			name="SECTION-4story-OZ-top_template.xml" 
@@ -801,6 +865,7 @@
 			title="4 story - OZ photo"
 			min="6" 
 			usage="front" 
+			storyorder="feed"
 		/>
 		<template 
 			name="SECTION-4story-OZ-deco-mirror_template.xml" 
@@ -809,6 +874,7 @@
 			min="5" 
 			deco="true" 
 			usage="front" 
+			storyorder="feed"
 		/>
 
 		<!-- END JOURNAL_REPORT -->
@@ -820,6 +886,7 @@
 			section="WEEKEND_JOURNAL" 
 			min="4" 
 			usage="front" 
+			storyorder="feed"
 		/>
 		<!-- END WEEKEND_JOURNAL -->
 
@@ -868,6 +935,7 @@
 			min="5" 
 			deco="true"
 			usage="front" 
+			storyorder="feed"
 		/>
 		<template 
 			name="SECTION-4story-smallG-deco-mirror_template.xml" 
@@ -876,6 +944,7 @@
 			min="6" 
 			deco="true" 
 			usage="front" 
+			storyorder="feed"
 		/>
 		<template 
 			name="SECTION-4story-smallG-top-mirror_template.xml" 
@@ -883,6 +952,7 @@
 			title="4 story - G photo - mirror"
 			min="6" 
 			usage="front" 
+			storyorder="feed"
 		/>
 		<template 
 			name="SECTION-1story-fullsize-deco.xml" 
@@ -891,6 +961,7 @@
 			min="1" 
 			deco="true"
 			usage="front" 
+			storyorder="feed"
 		/>
 		<template 
 			name="SECTION-1story-PV_template.xml" 
@@ -898,6 +969,7 @@
 			title="PV (grey)"
 			min="3" 
 			usage="front" 
+			storyorder="feed"
 		/>
 		<template 
 			name="SECTION-1story-PV-1highlight_template.xml" 
@@ -905,6 +977,7 @@
 			title="PV - 1 highlight (grey)"
 			min="2" 
 			usage="front" 
+			storyorder="feed"
 		/>
 		<template 
 			name="SECTION-1story-PV-1highlight-white_template.xml" 
@@ -912,6 +985,7 @@
 			title="PV - 1 highlight (white)"
 			min="2" 
 			usage="front" 
+			storyorder="feed"
 		/>
 
 		<template 
@@ -920,6 +994,7 @@
 			title="P-photo"
 			min="3" 
 			usage="front" 
+			storyorder="feed"
 		/>
 		<template 
 			name="SECTION-4story-OZ-top_template.xml" 
@@ -927,6 +1002,7 @@
 			title="4 story - OZ photo"
 			min="6" 
 			usage="front" 
+			storyorder="feed"
 		/>
 		<template 
 			name="SECTION-4story-OZ-deco-mirror_template.xml" 
@@ -935,6 +1011,7 @@
 			min="5" 
 			deco="true" 
 			usage="front" 
+			storyorder="feed"
 		/>
 
 		<!-- END MANSION -->
@@ -945,72 +1022,84 @@
 			title=""
 			min="12" 
 			usage="continuation" 
+			storyorder="feed"
 		/>
 		<template 
 			name="CONTINUATION-generic-11_template.xml" 
 			title=""
 			min="11" 
 			usage="continuation" 
+			storyorder="feed"
 		/>
 		<template 
 			name="CONTINUATION-generic-10_template.xml" 
 			title=""
 			min="10" 
 			usage="continuation" 
+			storyorder="feed"
 		/>
 		<template 
 			name="CONTINUATION-generic-9_template.xml" 
 			title=""
 			min="9" 
 			usage="continuation" 
+			storyorder="feed"
 		/>
 		<template 
 			name="CONTINUATION-generic-8_template.xml" 
 			title=""
 			min="8" 
 			usage="continuation" 
+			storyorder="feed"
 		/>
 		<template 
 			name="CONTINUATION-generic-7_template.xml" 
 			title=""
 			min="7" 
 			usage="continuation" 
+			storyorder="feed"
 		/>
 		<template 
 			name="CONTINUATION-generic-6_template.xml" 
 			title=""
 			min="6" 
 			usage="continuation" 
+			storyorder="feed"
 		/>
 		<template 
 			name="CONTINUATION-generic-5_template.xml" 
 			title=""
 			min="5" 
 			usage="continuation" 
+			storyorder="feed"
 		/>
 		<template 
 			name="CONTINUATION-generic-4_template.xml" 
 			title=""
 			min="4" 
 			usage="continuation" 
+			storyorder="feed"
 		/>
 		<template 
 			name="CONTINUATION-generic-3_template.xml" 
 			title=""
 			min="3" 
 			usage="continuation" 
+			storyorder="feed"
 		/>
 		<template 
 			name="CONTINUATION-generic-2_template.xml" 
 			title=""
 			min="2" 
 			usage="continuation" 
+			storyorder="feed"
 		/>
 		<template 
 			name="CONTINUATION-generic-1_template.xml" 
 			title=""
 			min="1" 
 			usage="continuation" 
+			storyorder="feed"
 		/>
 		<!-- END GENERIC CONTINUATION -->
 		<!-- FANCY CONTINUATION -->
@@ -1019,6 +1108,7 @@
 			title="5 stories - smallG liondoor"
 			min="5" 
 			usage="continuation" 
+			storyorder="feed"
 			deco="true" 
 			page="2" 
 		/>		
@@ -1027,6 +1117,7 @@
 			title="5 stories - smallG liondoor"
 			min="5" 
 			usage="continuation" 
+			storyorder="feed"
 			deco="true" 
 			page="3" 
 		/>
@@ -1035,6 +1126,7 @@
 			title="5 stories - smallG liondoor"
 			min="5" 
 			usage="continuation" 
+			storyorder="feed"
 			deco="true" 
 			page="4" 
 		/>
@@ -1043,6 +1135,7 @@
 			title="6 stories - smallG liondoor"
 			min="6" 
 			usage="continuation" 
+			storyorder="feed"
 			deco="true" 
 			page="2" 
 		/>		
@@ -1051,6 +1144,7 @@
 			title="6 stories - smallG liondoor"
 			min="6" 
 			usage="continuation" 
+			storyorder="feed"
 			deco="true" 
 			page="3" 
 		/>
@@ -1059,6 +1153,7 @@
 			title="6 stories - smallG liondoor"
 			min="6" 
 			usage="continuation" 
+			storyorder="feed"
 			deco="true" 
 			page="4" 
 		/>
@@ -1067,6 +1162,7 @@
 			title="7 stories - smallG liondoor"
 			min="7" 
 			usage="continuation" 
+			storyorder="feed"
 			deco="true" 
 			page="2" 
 		/>		
@@ -1075,6 +1171,7 @@
 			title="7 stories - smallG liondoor"
 			min="7" 
 			usage="continuation" 
+			storyorder="feed"
 			deco="true" 
 			page="3" 
 		/>
@@ -1083,6 +1180,7 @@
 			title="7 stories - smallG liondoor"
 			min="7" 
 			usage="continuation" 
+			storyorder="feed"
 			deco="true" 
 			page="4" 
 		/>
@@ -1092,6 +1190,7 @@
 			title="8 stories - smallG liondoor"
 			min="8" 
 			usage="continuation" 
+			storyorder="feed"
 			deco="true" 
 			page="2" 
 		/>
@@ -1100,6 +1199,7 @@
 			title="8 stories - smallG liondoor"
 			min="8" 
 			usage="continuation" 
+			storyorder="feed"
 			deco="true" 
 			page="3" 
 		/>
@@ -1108,6 +1208,7 @@
 			title="9 stories - smallG liondoor"
 			min="9" 
 			usage="continuation" 
+			storyorder="feed"
 			deco="true" 
 			page="4" 
 		/>
@@ -1116,6 +1217,7 @@
 			title="9 stories - smallG liondoor"
 			min="9" 
 			usage="continuation" 
+			storyorder="feed"
 			deco="true" 
 			page="2" 
 		/>
@@ -1124,6 +1226,7 @@
 			title="9 stories - smallG liondoor"
 			min="9" 
 			usage="continuation" 
+			storyorder="feed"
 			deco="true" 
 			page="3" 
 		/>
@@ -1132,6 +1235,7 @@
 			title="9 stories - smallG liondoor"
 			min="9" 
 			usage="continuation" 
+			storyorder="feed"
 			deco="true" 
 			page="4" 
 		/>
@@ -1140,6 +1244,7 @@
 			title="2 stories - P liondoor"
 			min="2" 
 			usage="continuation" 
+			storyorder="feed"
 			deco="true" 
 			page="2" 
 		/>
@@ -1148,6 +1253,7 @@
 			title="2 stories - P liondoor"
 			min="2" 
 			usage="continuation" 
+			storyorder="feed"
 			deco="true" 
 			page="3" 
 		/>
@@ -1156,6 +1262,7 @@
 			title="2 stories - P liondoor"
 			min="2" 
 			usage="continuation" 
+			storyorder="feed"
 			deco="true" 
 			page="4" 
 		/>
@@ -1164,6 +1271,7 @@
 			title="3 stories - P liondoor"
 			min="3" 
 			usage="continuation" 
+			storyorder="feed"
 			deco="true" 
 			page="2" 
 		/>
@@ -1172,6 +1280,7 @@
 			title="3 stories - P liondoor"
 			min="3" 
 			usage="continuation" 
+			storyorder="feed"
 			deco="true" 
 			page="3" 
 		/>
@@ -1180,6 +1289,7 @@
 			title="3 stories - P liondoor"
 			min="3" 
 			usage="continuation" 
+			storyorder="feed"
 			deco="true" 
 			page="4" 
 		/>
@@ -1188,6 +1298,7 @@
 			title="3 stories - P liondoor Mirror"
 			min="3" 
 			usage="continuation" 
+			storyorder="feed"
 			deco="true" 
 			page="2" 
 		/>
@@ -1196,6 +1307,7 @@
 			title="3 stories - P liondoor Mirror"
 			min="3" 
 			usage="continuation" 
+			storyorder="feed"
 			deco="true" 
 			page="3" 
 		/>
@@ -1204,6 +1316,7 @@
 			title="3 stories - P liondoor Mirror"
 			min="3" 
 			usage="continuation" 
+			storyorder="feed"
 			deco="true" 
 			page="4" 
 		/>
@@ -1212,6 +1325,7 @@
 			title="4 stories - P liondoor"
 			min="4" 
 			usage="continuation" 
+			storyorder="feed"
 			deco="true" 
 			page="2" 
 		/>
@@ -1220,6 +1334,7 @@
 			title="4 stories - P liondoor"
 			min="4" 
 			usage="continuation" 
+			storyorder="feed"
 			deco="true" 
 			page="3" 
 		/>
@@ -1228,6 +1343,7 @@
 			title="4 stories - P liondoor"
 			min="4" 
 			usage="continuation" 
+			storyorder="feed"
 			deco="true" 
 			page="4" 
 		/>
@@ -1236,6 +1352,7 @@
 			title="4 stories - P liondoor Mirror"
 			min="4" 
 			usage="continuation" 
+			storyorder="feed"
 			deco="true" 
 			page="2" 
 		/>
@@ -1244,6 +1361,7 @@
 			title="4 stories - P liondoor Mirror"
 			min="4" 
 			usage="continuation" 
+			storyorder="feed"
 			deco="true" 
 			page="3" 
 		/>
@@ -1252,6 +1370,7 @@
 			title="4 stories - P liondoor Mirror"
 			min="4" 
 			usage="continuation" 
+			storyorder="feed"
 			deco="true" 
 			page="4" 
 		/>
@@ -1260,6 +1379,7 @@
 			title="4 stories - OZ liondoor"
 			min="4" 
 			usage="continuation" 
+			storyorder="feed"
 			deco="true" 
 			page="2" 
 		/>
@@ -1268,6 +1388,7 @@
 			title="4 stories - OZ liondoor"
 			min="4" 
 			usage="continuation" 
+			storyorder="feed"
 			deco="true" 
 			page="3" 
 		/>
@@ -1276,6 +1397,7 @@
 			title="4 stories - OZ liondoor"
 			min="4" 
 			usage="continuation" 
+			storyorder="feed"
 			deco="true" 
 			page="4" 
 		/>
@@ -1284,6 +1406,7 @@
 			title="5 stories - OZ liondoor"
 			min="5" 
 			usage="continuation" 
+			storyorder="feed"
 			deco="true" 
 			page="2" 
 		/>
@@ -1292,6 +1415,7 @@
 			title="5 stories - OZ liondoor"
 			min="5" 
 			usage="continuation" 
+			storyorder="feed"
 			deco="true" 
 			page="3" 
 		/>
@@ -1300,6 +1424,7 @@
 			title="5 stories - OZ liondoor"
 			min="5" 
 			usage="continuation" 
+			storyorder="feed"
 			deco="true" 
 			page="4" 
 		/>
@@ -1308,6 +1433,7 @@
 			title="7 stories - OZ liondoor"
 			min="7" 
 			usage="continuation" 
+			storyorder="feed"
 			deco="true" 
 			page="2"
 		/>
@@ -1316,6 +1442,7 @@
 			title="7 stories - OZ liondoor"
 			min="7" 
 			usage="continuation" 
+			storyorder="feed"
 			deco="true" 
 			page="3"
 		/>
@@ -1324,6 +1451,7 @@
 			title="7 stories - OZ liondoor"
 			min="7" 
 			usage="continuation" 
+			storyorder="feed"
 			deco="true" 
 			page="4"
 		/>
@@ -1332,6 +1460,7 @@
 			title="6 stories - smallG liondoor bottom"
 			min="6"  
 			usage="continuation" 
+			storyorder="feed"
 			deco="true" 
 			page="2" 
 		/>
@@ -1340,6 +1469,7 @@
 			title="6 stories - smallG liondoor bottom"
 			min="6" 
 			usage="continuation" 
+			storyorder="feed"
 			deco="true" 
 			page="3" 
 		/>
@@ -1348,6 +1478,7 @@
 			title="6 stories - smallG liondoor bottom"
 			min="6" 
 			usage="continuation" 
+			storyorder="feed"
 			deco="true" 
 			page="4" 
 		/>
@@ -1357,6 +1488,7 @@
 			title="8 stories - smallG liondoor bottom"
 			min="8" 
 			usage="continuation" 
+			storyorder="feed"
 			deco="true" 
 			page="2" 
 		/>
@@ -1365,6 +1497,7 @@
 			title="8 stories - smallG liondoor bottom"
 			min="8" 
 			usage="continuation" 
+			storyorder="feed"
 			deco="true" 
 			page="3" 
 		/>
@@ -1373,6 +1506,7 @@
 			title="8 stories - smallG liondoor bottom"
 			min="8" 
 			usage="continuation" 
+			storyorder="feed"
 			deco="true" 
 			page="4" 
 		/>
@@ -1381,6 +1515,7 @@
 			title="7 stories - 3 OV liondoor"
 			min="7" 
 			usage="continuation" 
+			storyorder="feed"
 			deco="true" 
 			page="2" 
 		/>
@@ -1405,6 +1540,7 @@
 			title="6 stories - smallG liondoor 1 OV liondoor"
 			min="6" 
 			usage="continuation" 
+			storyorder="feed"
 			deco="true" 
 			page="2" 
 		/>
@@ -1413,6 +1549,7 @@
 			title="6 stories - smallG liondoor 1 OV liondoor"
 			min="6" 
 			usage="continuation" 
+			storyorder="feed"
 			deco="true" 
 			page="3" 
 		/>
@@ -1421,6 +1558,7 @@
 			title="6 stories - smallG liondoor 1 OV liondoor"
 			min="6" 
 			usage="continuation" 
+			storyorder="feed"
 			deco="true" 
 			page="4" 
 		/>
@@ -1449,6 +1587,7 @@
 			title="Continuation - 3 story - G liondoor"
 			min="5" 
 			usage="continuation" 
+			storyorder="feed"
 			page="2"
 		/>
 		<template 
@@ -1457,6 +1596,7 @@
 			title="Continuation - 3 story - G Photo - mirror"
 			min="5" 
 			usage="continuation" 
+			storyorder="feed"
 			page="2"
 		/>
 		<template 
@@ -1465,6 +1605,7 @@
 			title="Continuation - 4 story - G liondoor"
 			min="6" 
 			usage="continuation" 
+			storyorder="feed"
 			page="2"
 		/>
 		<template 
@@ -1472,6 +1613,7 @@
 			title="Continuation - PV - 1 highlight (grey)"
 			min="2" 
 			usage="continuation" 
+			storyorder="feed"
 			page="2"
 		/>
 		<template 
@@ -1479,6 +1621,7 @@
 			title="Continuation - PV - 1 highlight (white)"
 			min="2" 
 			usage="continuation" 
+			storyorder="feed"
 			page="2"
 		/>
 		<template 
@@ -1486,6 +1629,7 @@
 			title="Continuation - PV -  2 highlights (grey)"
 			min="3" 
 			usage="continuation" 
+			storyorder="feed"
 			page="2"
 		/>
 		<template 
@@ -1493,6 +1637,7 @@
 			title="Continuation - PV - 2 highlights (white)"
 			min="3" 
 			usage="continuation" 
+			storyorder="feed"
 			page="2"
 		/>
 
@@ -1501,6 +1646,7 @@
 			title="Continuation - P-photo - grey 2 highlights "
 			min="3" 
 			usage="continuation" 
+			storyorder="feed"
 			page="2"
 		/>
 		<template 
@@ -1508,6 +1654,7 @@
 			title="Continuation - P-photo - white 2 highlights "
 			min="3" 
 			usage="continuation" 
+			storyorder="feed"
 			page="2"
 		/>
 		<template 
@@ -1515,6 +1662,7 @@
 			title="Continuation - P-photo - 1highlight"
 			min="2" 
 			usage="continuation" 
+			storyorder="feed"
 			page="2"
 		/>
 		<template 
@@ -1522,6 +1670,7 @@
 			title="Continuation - P-photo - white 1highlight"
 			min="2" 
 			usage="continuation" 
+			storyorder="feed"
 			page="2"
 		/>
 		<template 
@@ -1555,6 +1704,7 @@
 			<template 
 				name="WHATSNEWS-phone_template.xml"
 				usage="front" 
+			storyorder="feed"
 				title="Whats News"
 				min="1" 
 				section="WHATS_NEWS" 

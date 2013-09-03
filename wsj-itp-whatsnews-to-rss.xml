@@ -40,11 +40,11 @@
 			</xsl:choose>
 		</xsl:variable>
 	    <xsl:choose>
-	    	<xsl:when test="link">
+	    	<xsl:when test="link[boolean(text())]">
 				<item>
 					<title><xsl:value-of select="$title"/></title>
 					<description><xsl:value-of select="."/></description>
-					<xsl:apply-templates select="link"/>
+					<xsl:apply-templates select="link[boolean(text())][position() = 1]"/>
 				</item>
 	    	</xsl:when>
 	    	<xsl:otherwise>

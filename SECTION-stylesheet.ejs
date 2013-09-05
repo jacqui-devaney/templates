@@ -2,8 +2,8 @@
 	$join: [
 	{ .line_black: { background-color:#000 }},
 	{ if: =portrait, then: {
-		#h1: 	{ frame: [1, 620, 217, 257] },
-		#h2: 	{ frame: [257, 620, 256, 257] },
+		#h1: 	{ frame: [1, 620, 220, 257] },
+		#h2: 	{ frame: [221, 620, 220, 257] },
 		#marketdata_background: 	{ 
 			frame: [0, 620, 256, 257],
 			border-width: [ 0, 1, 0, 0],
@@ -15,17 +15,16 @@
 				width:239,
 				height:239
 		},
-		#ad_background: { frame: [0, 786, 768, 90], padding: [0, 1, 1, 0] },
+		#ad_background: { frame: [441, 620, 330, 255], padding: [0, 1, 1, 0] },
 		#ad_background_PV: { frame: [510, 620, 258, 255], padding: [0, 0, 1, 0]},
 		#h3: 	{ frame: [0, 620, 513, 256] },
-		#h4: 	{ frame: [0, 620, 513, 256] },
-		#highlight_ad: { width:768, height:90 }
+		#h4: 	{ frame: [0, 620, 513, 256] }
 		
 		
 		
 	}, else: {
-		#h1: 	{ frame: [807, 0, 217, 265] },
-		#h2: 	{ frame: [807, 265, 217, 265] },
+		#h1: 	{ frame: [807, 0, 217, 216] },
+		#h2: 	{ frame: [807, 216, 217, 207] },
 		#marketdata_background: 	{ 
 			frame: [786, 0, 238, 215], 
 			border-width: [0, 0, 1, 0],
@@ -38,11 +37,10 @@
 				width:222,
 				height:199
 		},
-		#ad_background: { frame: [0, 530, 1024, 90], padding: [0, 0, 1, 0]  },
+		#ad_background: { frame: [807, 423, 217, 199], padding: [0, 0, 1, 0]  },
 		#h3: 	{ frame: [786, 0, 238, 423] },
 		#h4: 	{ frame: [768, 0, 256, 423] },
-		#ad_background_PV: { frame: [768, 423, 256, 199], padding: [0, 0, 1, 0]},
-		#highlight_ad: { width:1024, height:90 }
+		#ad_background_PV: { frame: [768, 423, 256, 199], padding: [0, 0, 1, 0]}
 		
 	}}
 	]

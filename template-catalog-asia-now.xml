@@ -18,9 +18,9 @@
 		/>
         <template 
 			name="FRONT-3story-F_v2_template.xml" 
-			title="4 story - F Photo Banner" 
+			title="3 story - F Photo Banner" 
 			section="FRONT_SECTION" 
-			min="4" 
+			min="3" 
 			usage="front"/>
         <template 
 			name="FRONT-3story-F-deco_v2_template.xml" 
@@ -918,14 +918,6 @@
 			usage="continuation" 
 			deco="true" 
 			page="3" 
-		/>
-		<template 
-			name="CONTINUATION-fancy-8_template.xml" 
-			title="9 stories - smallG liondoor"
-			min="9" 
-			usage="continuation" 
-			deco="true" 
-			page="4" 
 		/>
 		<template 
 			name="CONTINUATION-fancy-9_template.xml" 

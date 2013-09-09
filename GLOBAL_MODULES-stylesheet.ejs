@@ -289,10 +289,7 @@
 		font-name:{if: =intent.article, then:DJ5Exchange-MediumItalic, else:DJ5Exchange-Medium}
 	},
 	.link-pdf: {
-		if-all: [
-			=intent.article,
-			{ if: =app.version, equals: "5.2", then: true, else: false }
-		], then: {
+		if: =intent.article, then: {
 			text-decoration: underline,
 			color: cornflowerblue
 		}, else: {

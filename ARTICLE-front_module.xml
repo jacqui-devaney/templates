@@ -6,8 +6,8 @@
 		{#header_top: { padding:[18, 9, 8, 9] }},
 		{#body_container: { 
             padding: [10, 0, 0, 0],
-			column-count: {$divide: [=view.width, {$multiply:[250, =scale.dpi]}]},
-            column-gutter: 20,
+			column-count:{if: =portrait, then:2, else:3},
+            column-gutter: 10,
 			column-height:balance,
 			flow: article_body,
 			min-height: {if: =page.mediabucket, then:400, else:200},
@@ -15,21 +15,15 @@
 			layout-grid-line-offset: {$multiply: [20, =view.zoomlevel]}
 			
         }},
-		{.article_byline:{
-			padding:[0, 9]
-		}},
-		{.article_body:{
-			padding:[0, 9]
-		}},
 		{if: =portrait, then: {
-            #mediabucket_container:	{ frame: [0, 0, 530, 400]  },
+            #mediabucket_container:	{ frame: [0, 0, 502, 379]},
 			#mediabucket: {
-				width:530,
-				height:385,
+				width:500,
+				height:363,
 				anchor-x:center
 			}
         }, else: {
-        	#mediabucket_container:	{ frame: [277, 0, 500, 378] },
+        	#mediabucket_container:	{ frame: [256, 0, 502, 379] },
 			#mediabucket: {
 				width:500,
 				height:363,

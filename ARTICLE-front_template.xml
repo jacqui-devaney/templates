@@ -1,11 +1,11 @@
 <jpml id="ARTICLE-front_template">
     <style>{
         if: =portrait, then: {
-            #view: { frame: [9, 0, 530, 899] },
-			#index: { frame: [559, 0, 200, 899]}
+            #view: { frame: [5, 0, 502, 899] },
+			#index: { frame: [517, 0, 251, 899]}
         }, else: {
-            #view : { frame: [9, 0, 778, 643] },
-			#index: { frame: [807, 0, 208, 643]}        
+            #view : { frame: [5, 0, 758, 643] },
+			#index: { frame: [778, 0, 251, 643]}        
         }
     }</style>
     <box id="view" embed="article" module="ARTICLE-front_module.xml" />

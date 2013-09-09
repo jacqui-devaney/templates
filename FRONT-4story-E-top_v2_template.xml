@@ -6,7 +6,7 @@
 		#b1: {options:{small_pad:{if: =scale.phone, then:true, else:false}, large_headline:true, bottom:{if: =landscape, then:true, else:false}, show_image:true, justify:true, no_border:{if: =scale.phone, then:false, else:true}, byline:{if: =scale.small, then:true, else:false}, top_align:{if: =scale.phone, then:true, else:false}, show_body:{if: =scale.phone, then:true, else:false}}
 			},
 		#b2: {options:{small_headline:true, no_border:true, no_indent:true}},
-		#b3: {options:{small_headline:true, bottom:{if: =scale.portrait, then:true, else:false}, no_indent:true, no_border:{if: =landscape, then:true, else:false}}},
+		#b3: {options:{small_headline:true,no_indent:true}},
 		#b4: {options:{no_indent:true, no_image:{if: =widescreen, then:false, else:true}}}
 	}</style>
 	<style> {
@@ -21,24 +21,24 @@
 				#b1: { 
 					frame: {$switch: [
 						{if: =widescreen, then: [194, 28, 328, 548]},
-						{if: =scale.large, then: [229, 0, 310, 490]}
+						{if: =scale.large, then: [261, 0, 502, 467]}
 					]}
 				},
 				#b2: { 
 					frame: {$switch: [
 						{if: =widescreen, then: [535, 28, 230, 548]},
-						{if: =scale.large, then: [559, 0, 200, 394]}
+						{if: =scale.large, then: [261, 467, 502, 123]}
 					]}
 
 				},
 				#b3: { frame: {$switch: [
 					{if: =widescreen, then: [194, 575, 280, 298]},
-					{if: =scale.large, then: [229, 490, 310, 298]}
+					{if: =scale.large, then: [261, 590, 246, 198]}
 				]}
 				},
 				#b4: { frame: {$switch: [
 					{if: =widescreen, then: [486, 575, 280, 298]},
-					{if: =scale.large, then: [559, 394, 200, 394]}
+					{if: =scale.large, then: [517, 590, 246, 198]}
 					]}
 				}
 			}},
@@ -49,23 +49,23 @@
 				#b1: { 
 					frame: {$switch: [
 						{if: =widescreen, then: [205, 28, 359, 596]},
-						{if: =scale.large, then: [237, 0, 322, 530]}
+						{if: =scale.large, then: [261, 0, 374, 530]}
 					]}
 				},
 				#b2: { 
 					frame: {$switch: [
 						{if: =widescreen, then: [577, 28, 199, 596]},
-						{if: =scale.large, then: [579, 0, 208, 530]}
+						{if: =scale.large, then: [645, 0, 374, 140]}
 					]}  
 				},
 				#b3: { frame: {$switch: [
 					{if: =widescreen, then: [787, 26, 238, 254]},
-					{if: =scale.large, then: [807, 0, 208, 234]}
+					{if: =scale.large, then: [645, 140, 374, 141]}
 				]}
 				},
 				#b4: { frame: {$switch: [
 					{if: =widescreen, then: [787, 280, 238, 340]},
-					{if: =scale.large, then: [807, 234, 208, 296]}
+					{if: =scale.large, then: [645, 281, 374, 249]}
 					]}
 				}
 			}}

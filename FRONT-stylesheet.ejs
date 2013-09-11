@@ -7,7 +7,7 @@
 }},
 {if: =portrait, then: {
 		#marketstrap:	{ 
-				frame: [0, 0, 768, 25],
+				frame: [0, 0, 768, 44],
 				border-width:[0, 0, {if: =app.version, starts-with: "5.3", then: 1, else:0}, 0], 
 				border-color:black
 			},
@@ -27,7 +27,7 @@
 				{$multiply:[=scale.pagey, 750]}
 			] }
 		},
-		#whatsnews_itp:		{ frame: [5, 1, 246, 780], 
+		#whatsnews_itp:		{ frame: [5, 44, 246, 817], 
 			options: { expanded-frame: [
 				{$multiply:[=scale.pagex, 3]}, 
 				{$multiply:[=scale.pagey, 0]}, 
@@ -38,7 +38,7 @@
 		#ad_background: { frame: [3, 677, 182, 195] }
 	}, else: {
 		#marketstrap:	{ 
-				frame: [0, 0, 1024, 25],
+				frame: [0, 0, 1024, 44],
 				border-width:[0, 0, {if: =app.version, starts-with: "5.3", then: 1, else:0}, 0], 
 				border-color:black
 				
@@ -59,7 +59,7 @@
 				{$multiply:[=scale.pagey, 492]}
 			] }
 		},
-		#whatsnews_itp:		{ frame: [5, 1, 246, 520], 
+		#whatsnews_itp:		{ frame: [5, 44, 246, 566], 
 			options: { expanded-frame: [
 				{$multiply:[=scale.pagex, 3]}, 
 				{$multiply:[=scale.pagey, 0]}, 

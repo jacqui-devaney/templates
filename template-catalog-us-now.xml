@@ -8,7 +8,6 @@
 			min="4" 
 			deco="true"
 			usage="front"
-			storyorder="feed"
 		/>
 		<template 
 			name="FRONT-4story-E-top_v2_template.xml" 
@@ -16,7 +15,6 @@
 			section="FRONT_SECTION" 
 			min="4" 
 			usage="front"
-			storyorder="feed"
 		/>
         <template 
 			name="FRONT-3story-F_v2_template.xml" 
@@ -24,7 +22,6 @@
 			section="FRONT_SECTION" 
 			min="4" 
 			usage="front"
-			storyorder="feed"
 		/>
         <template 
 			name="FRONT-3story-F-deco_v2_template.xml" 
@@ -32,7 +29,6 @@
 			section="FRONT_SECTION" 
 			min="4" 
 			usage="front"
-			storyorder="feed"
 		/>
         <template 
 			name="FRONT-4story-Vertical-deco_v2_template.xml" 
@@ -41,7 +37,6 @@
 			min="4" 
 			deco="true" 
 			usage="front"
-			storyorder="feed"
 		/>
         <template 
 			name="FRONT-3story-big-news-G-deco_template.xml"
@@ -50,7 +45,6 @@
 			min="4" 
 			deco="true"
 			usage="front"
-			storyorder="feed"
 		/>
 		
 		
@@ -63,7 +57,6 @@
 			title="4 story Plain - Marketdata"
 			min="6"
 			usage="front"
-			storyorder="feed"
 		/>
 		<template 
 			name="SECTION-4story-smallG-top-marketdata_template.xml"
@@ -71,7 +64,6 @@
 			title="4 story - G photo"
 			min="6"
 			usage="front"
-			storyorder="feed"
 		/>
 		<template 
 			name="SECTION-3story-G-marketdata_template.xml"
@@ -79,7 +71,6 @@
 			title="3story - G photo marketdata"
 			min="5"
 			usage="front"
-			storyorder="feed"
 		/>
 		<template 
 			name="SECTION-1story-fullsize-deco.xml" 
@@ -88,7 +79,6 @@
 			min="1" 
 			deco="true"
 			usage="front"
-			storyorder="feed"
 		/>
 		<template 
 			name="SECTION-1story-PV_template.xml" 
@@ -96,7 +86,6 @@
 			title="PV (grey)"
 			min="3" 
 			usage="front"
-			storyorder="feed"
 		/>
 		<template 
 			name="SECTION-1story-PV-1highlight_template.xml" 
@@ -104,7 +93,6 @@
 			title="PV - 1 highlight (grey)"
 			min="2" 
 			usage="front"
-			storyorder="feed"
 		/>
 		<template 
 			name="SECTION-1story-PV-1highlight-white_template.xml" 
@@ -112,7 +100,6 @@
 			title="PV - 1 highlight (white)"
 			min="2" 
 			usage="front"
-			storyorder="feed"
 		/>
 		
 		<template 
@@ -121,7 +108,6 @@
 			title="P-photo"
 			min="3" 
 			usage="front"
-			storyorder="feed"
 		/>
 		
 		<!-- END BUSINESS AND FINANCE -->
@@ -133,7 +119,6 @@
 			title="4 story Plain"
 			min="6"
 			usage="front"
-			storyorder="feed"
 		/>
 		<template 
 			name="SECTION-4story-smallG-top_template.xml"
@@ -141,7 +126,6 @@
 			title="4 story - G photo"
 			min="6"
 			usage="front"
-			storyorder="feed"
 		/>
 		<template 
 			name="SECTION-3story-G_template.xml"
@@ -149,7 +133,6 @@
 			title="3 story - G photo"
 			min="5"
 			usage="front"
-			storyorder="feed"
 		/>
 		<template 
 			name="SECTION-4story-smallG-deco_template.xml"
@@ -158,7 +141,6 @@
 			min="6" 
 			deco="true"
 			usage="front"
-			storyorder="feed"
 		/>
 		<template 
 			name="SECTION-3story-G-deco-C_template.xml"
@@ -167,7 +149,6 @@
 			title="3 story - G Media Deco"
 			min="5"
 			usage="front"
-			storyorder="feed"
 		/>
 		<template 
 			name="SECTION-3story-G-mirror_template.xml" 
@@ -176,7 +157,6 @@
 			min="5" 
 			deco="true"
 			usage="front"
-			storyorder="feed"
 		/>
 		<template 
 			name="SECTION-4story-smallG-deco-mirror_template.xml" 
@@ -185,7 +165,6 @@
 			min="6" 
 			deco="true" 
 			usage="front"
-			storyorder="feed"
 		/>
 		<template 
 			name="SECTION-4story-smallG-top-mirror_template.xml" 
@@ -193,7 +172,6 @@
 			title="4 story - G photo - mirror"
 			min="6" 
 			usage="front"
-			storyorder="feed"
 		/>
 		<template 
 			name="SECTION-1story-fullsize-deco.xml" 
@@ -202,7 +180,6 @@
 			min="1" 
 			deco="true"
 			usage="front"
-			storyorder="feed"
 		/>
 		<template 
 			name="SECTION-1story-PV_template.xml" 
@@ -210,7 +187,6 @@
 			title="PV (grey)"
 			min="3" 
 			usage="front"
-			storyorder="feed"
 		/>
 		<template 
 			name="SECTION-1story-PV-1highlight_template.xml" 
@@ -218,7 +194,6 @@
 			title="PV - 1 highlight (grey)"
 			min="2" 
 			usage="front"
-			storyorder="feed"
 		/>
 		<template 
 			name="SECTION-1story-PV-1highlight-white_template.xml" 
@@ -226,7 +201,6 @@
 			title="PV - 1 highlight (white)"
 			min="2" 
 			usage="front"
-			storyorder="feed"
 		/>
 
 		<template 
@@ -235,7 +209,6 @@
 			title="P-photo"
 			min="3" 
 			usage="front"
-			storyorder="feed"
 		/>
 		<template 
 			name="SECTION-4story-OZ-top_template.xml" 
@@ -243,7 +216,6 @@
 			title="4 story - OZ photo"
 			min="6" 
 			usage="front"
-			storyorder="feed"
 		/>
 		<template 
 			name="SECTION-4story-OZ-deco-mirror_template.xml" 
@@ -252,7 +224,6 @@
 			min="5" 
 			deco="true" 
 			usage="front"
-			storyorder="feed"
 		/>
 
 		<!-- END ARENA -->
@@ -263,7 +234,6 @@
 			title="PV - (White highlights)"
 			min="3" 
 			usage="front"
-			storyorder="feed"
 		/>
 		<template 
 			name="SECTION-3story-G_template.xml" 
@@ -271,7 +241,6 @@
 			title="3 story G photo"
 			min="5" 
 			usage="front"
-			storyorder="feed"
 		/>
 		<template 
 			name="SECTION-2story-G-C_template.xml" 
@@ -279,7 +248,6 @@
 			title="2 story-G-photo"
 			min="4" 
 			usage="front"
-			storyorder="feed"
 		/>
 		<template 
 			name="SECTION-1story-P_template.xml" 
@@ -287,7 +255,6 @@
 			title="P-photo"
 			min="3" 
 			usage="front"
-			storyorder="feed"
 		/>
 		<template 
 			name="SECTION-1story-P-white_template.xml" 
@@ -295,7 +262,6 @@
 			title="P - White Highlights"
 			min="2" 
 			usage="front"
-			storyorder="feed"
 		/>
 		<template 
 			name="SECTION-1story-PV_template.xml" 
@@ -303,7 +269,6 @@
 			title="PV - Grey highlights"
 			min="3" 
 			usage="front"
-			storyorder="feed"
 		/>
 		<template 
 			name="SECTION-1story-P-1highlight_template.xml" 
@@ -311,7 +276,6 @@
 			title="P 1 highlight"
 			min="2" 
 			usage="front"
-			storyorder="feed"
 		/>
 		<template 
 			name="SECTION-1story-P-1highlight-white_template.xml" 
@@ -319,7 +283,6 @@
 			title="P 1 highlight - white"
 			min="2" 
 			usage="front"
-			storyorder="feed"
 		/>
 		/>
 		
@@ -329,7 +292,6 @@
 			title="PV - (1 highlight Grey)"
 			min="2" 
 			usage="front"
-			storyorder="feed"
 		/>
 		<template 
 			name="SECTION-1story-PV-1highlight-white_template.xml" 
@@ -337,7 +299,6 @@
 			title="PV - (1 highlight white)"
 			min="2" 
 			usage="front"
-			storyorder="feed"
 		/>
 		<template 
 			name="SECTION-1story-fullsize-deco.xml" 
@@ -346,7 +307,6 @@
 			min="1" 
 			deco="true"
 			usage="front"
-			storyorder="feed"
 		/>
 		<!-- END FRIDAY JOURNAL -->
 		
@@ -357,7 +317,6 @@
 			title="4 story Plain"
 			min="6"
 			usage="front"
-			storyorder="feed"
 		/>
 		<template 
 			name="SECTION-4story-smallG-top_template.xml"
@@ -365,7 +324,6 @@
 			title="4 story - G photo"
 			min="6"
 			usage="front"
-			storyorder="feed"
 		/>
 		<template 
 			name="SECTION-3story-G_template.xml"
@@ -373,7 +331,6 @@
 			title="3 story - G photo"
 			min="5"
 			usage="front"
-			storyorder="feed"
 		/>
 		<template 
 			name="SECTION-4story-smallG-deco_template.xml"
@@ -382,7 +339,6 @@
 			min="6" 
 			deco="true"
 			usage="front"
-			storyorder="feed"
 		/>
 		<template 
 			name="SECTION-3story-G-deco-C_template.xml"
@@ -391,7 +347,6 @@
 			title="3 story - G Media Deco"
 			min="5"
 			usage="front"
-			storyorder="feed"
 		/>
 		<template 
 			name="SECTION-3story-G-mirror_template.xml" 
@@ -400,7 +355,6 @@
 			min="5" 
 			deco="true"
 			usage="front"
-			storyorder="feed"
 		/>
 		<template 
 			name="SECTION-4story-smallG-deco-mirror_template.xml" 
@@ -409,7 +363,6 @@
 			min="6" 
 			deco="true" 
 			usage="front"
-			storyorder="feed"
 		/>
 		<template 
 			name="SECTION-4story-smallG-top-mirror_template.xml" 
@@ -417,7 +370,6 @@
 			title="4 story - G photo - mirror"
 			min="6" 
 			usage="front"
-			storyorder="feed"
 		/>
 		<template 
 			name="SECTION-1story-fullsize-deco.xml" 
@@ -426,7 +378,6 @@
 			min="1" 
 			deco="true"
 			usage="front"
-			storyorder="feed"
 		/>
 		<template 
 			name="SECTION-1story-PV_template.xml" 
@@ -434,7 +385,6 @@
 			title="PV (grey)"
 			min="3" 
 			usage="front"
-			storyorder="feed"
 		/>
 		<template 
 			name="SECTION-1story-PV-1highlight_template.xml" 
@@ -442,7 +392,6 @@
 			title="PV - 1 highlight (grey)"
 			min="2" 
 			usage="front"
-			storyorder="feed"
 		/>
 		<template 
 			name="SECTION-1story-PV-1highlight-white_template.xml" 
@@ -450,7 +399,6 @@
 			title="PV - 1 highlight (white)"
 			min="2" 
 			usage="front"
-			storyorder="feed"
 		/>
 		
 		<template 
@@ -459,7 +407,6 @@
 			title="P-photo"
 			min="3" 
 			usage="front"
-			storyorder="feed"
 		/>
 		<template 
 			name="SECTION-4story-OZ-top_template.xml" 
@@ -467,7 +414,6 @@
 			title="4 story - OZ photo"
 			min="6" 
 			usage="front"
-			storyorder="feed"
 		/>
 		<template 
 			name="SECTION-4story-OZ-deco-mirror_template.xml" 
@@ -476,7 +422,6 @@
 			min="5" 
 			deco="true" 
 			usage="front"
-			storyorder="feed"
 		/>
 		
 		<!-- END MARKETPLACE -->
@@ -488,7 +433,6 @@
 			title="4 story Plain - Marketdata"
 			min="6"
 			usage="front"
-			storyorder="feed"
 		/>
 		<template 
 			name="SECTION-4story-smallG-deco-marketdata_template.xml"
@@ -497,7 +441,6 @@
 			min="6" 
 			deco="true"
 			usage="front"
-			storyorder="feed"
 		/>
 		<template 
 			name="SECTION-4story-smallG-top-marketdata_template.xml"
@@ -505,7 +448,6 @@
 			title="4 story - G photo"
 			min="6"
 			usage="front"
-			storyorder="feed"
 		/>
 		<template 
 			name="SECTION-3story-G-marketdata_template.xml"
@@ -513,7 +455,6 @@
 			title="3story - G photo marketdata"
 			min="5"
 			usage="front"
-			storyorder="feed"
 		/>
 		<template 
 			name="SECTION-1story-fullsize-deco.xml" 
@@ -522,7 +463,6 @@
 			min="1" 
 			deco="true"
 			usage="front"
-			storyorder="feed"
 		/>
 		<template 
 			name="SECTION-1story-PV_template.xml" 
@@ -530,7 +470,6 @@
 			title="PV (grey)"
 			min="3" 
 			usage="front"
-			storyorder="feed"
 		/>
 		<template 
 			name="SECTION-1story-PV-1highlight_template.xml" 
@@ -538,7 +477,6 @@
 			title="PV - 1 highlight (grey)"
 			min="2" 
 			usage="front"
-			storyorder="feed"
 		/>
 		<template 
 			name="SECTION-1story-PV-1highlight-white_template.xml" 
@@ -546,7 +484,6 @@
 			title="PV - 1 highlight (white)"
 			min="2" 
 			usage="front"
-			storyorder="feed"
 		/>
 		
 		<template 
@@ -555,7 +492,6 @@
 			title="P-photo"
 			min="3" 
 			usage="front"
-			storyorder="feed"
 		/>
 		<!-- END MONEY AND INVESTING -->
 		
@@ -566,7 +502,6 @@
 			title="3 story - G photo"
 			min="5"
 			usage="front"
-			storyorder="feed"
 		/>
 		<template 
 			name="SECTION-4story-smallG-deco_template.xml"
@@ -575,7 +510,6 @@
 			min="6" 
 			deco="true"
 			usage="front"
-			storyorder="feed"
 		/>
 		<template 
 			name="SECTION-3story-G-deco-C_template.xml"
@@ -584,7 +518,6 @@
 			title="3 story - G Media Deco"
 			min="5"
 			usage="front"
-			storyorder="feed"
 		/>
 		<template 
 			name="SECTION-1story-PV_template.xml"
@@ -592,7 +525,6 @@
 			title="PV photo"
 			min="3"
 			usage="front"
-			storyorder="feed"
 		/>
 		<template 
 			name="SECTION-1story-PV-white_template.xml"
@@ -600,7 +532,6 @@
 			title="PV photo - White highlights"
 			min="3"
 			usage="front"
-			storyorder="feed"
 		/>
 		<template 
 			name="SECTION-1story-PV-1highlight_template.xml"
@@ -608,7 +539,6 @@
 			title="PV photo - 1 highlight"
 			min="3"
 			usage="front"
-			storyorder="feed"
 		/>
 		<template 
 			name="SECTION-1story-PV-1highlight-white_template.xml"
@@ -616,7 +546,6 @@
 			title="PV photo - 1 highlight (White highlights)"
 			min="3"
 			usage="front"
-			storyorder="feed"
 		/>
 		<template 
 			name="SECTION-3story-G-mirror_template.xml" 
@@ -625,7 +554,6 @@
 			min="5" 
 			deco="true"
 			usage="front"
-			storyorder="feed"
 		/>
 		<template 
 			name="SECTION-4story-smallG-deco-mirror_template.xml" 
@@ -634,7 +562,6 @@
 			min="6" 
 			deco="true" 
 			usage="front"
-			storyorder="feed"
 		/>
 		<template 
 			name="SECTION-4story-smallG-top-mirror_template.xml" 
@@ -642,7 +569,6 @@
 			title="4 story - G photo - mirror"
 			min="6" 
 			usage="front"
-			storyorder="feed"
 		/>
 		<template 
 			name="SECTION-1story-fullsize-deco.xml" 
@@ -651,7 +577,6 @@
 			min="1" 
 			deco="true"
 			usage="front"
-			storyorder="feed"
 		/>
 		<template 
 			name="SECTION-4story-OZ-top_template.xml" 
@@ -659,7 +584,6 @@
 			title="4 story - OZ photo"
 			min="6" 
 			usage="front"
-			storyorder="feed"
 		/>
 		<template 
 			name="SECTION-4story-OZ-deco-mirror_template.xml" 
@@ -668,7 +592,6 @@
 			min="5" 
 			deco="true" 
 			usage="front"
-			storyorder="feed"
 		/>
 		
 		<!-- END NEW YORK -->
@@ -680,7 +603,6 @@
 			title="2 story-G photo"
 			min="4"
 			usage="front"
-			storyorder="feed"
 		/>
 		<template 
 			name="SECTION-1story-fullsize-deco.xml" 
@@ -689,7 +611,6 @@
 			min="1" 
 			deco="true"
 			usage="front"
-			storyorder="feed"
 		/>
 		<template 
 			name="SECTION-1story-PV_template.xml" 
@@ -697,7 +618,6 @@
 			title="PV (grey)"
 			min="3" 
 			usage="front"
-			storyorder="feed"
 		/>
 		<template 
 			name="SECTION-1story-PV-1highlight_template.xml" 
@@ -705,7 +625,6 @@
 			title="PV - 1 highlight (grey)"
 			min="2" 
 			usage="front"
-			storyorder="feed"
 		/>
 		<template 
 			name="SECTION-1story-PV-1highlight-white_template.xml" 
@@ -713,7 +632,6 @@
 			title="PV - 1 highlight (white)"
 			min="2" 
 			usage="front"
-			storyorder="feed"
 		/>
 		
 		<template 
@@ -722,7 +640,6 @@
 			title="P-photo"
 			min="3" 
 			usage="front"
-			storyorder="feed"
 		/>
 		<!-- END OFF DUTY -->
 		<!-- MANSION -->
@@ -732,7 +649,6 @@
 			title="4 story Plain"
 			min="6"
 			usage="front"
-			storyorder="feed"
 		/>
 		<template 
 			name="SECTION-4story-smallG-top_template.xml"
@@ -740,7 +656,6 @@
 			title="4 story - G photo"
 			min="6"
 			usage="front"
-			storyorder="feed"
 		/>
 		<template 
 			name="SECTION-3story-G_template.xml"
@@ -748,7 +663,6 @@
 			title="3 story - G photo"
 			min="5"
 			usage="front"
-			storyorder="feed"
 		/>
 		<template 
 			name="SECTION-4story-smallG-deco_template.xml"
@@ -757,7 +671,6 @@
 			min="6" 
 			deco="true"
 			usage="front"
-			storyorder="feed"
 		/>
 		<template 
 			name="SECTION-3story-G-deco-C_template.xml"
@@ -766,7 +679,6 @@
 			title="3 story - G Media Deco"
 			min="5"
 			usage="front"
-			storyorder="feed"
 		/>
 		<template 
 			name="SECTION-3story-G-mirror_template.xml" 
@@ -775,7 +687,6 @@
 			min="5" 
 			deco="true"
 			usage="front"
-			storyorder="feed"
 		/>
 		<template 
 			name="SECTION-4story-smallG-deco-mirror_template.xml" 
@@ -784,7 +695,6 @@
 			min="6" 
 			deco="true" 
 			usage="front"
-			storyorder="feed"
 		/>
 		<template 
 			name="SECTION-4story-smallG-top-mirror_template.xml" 
@@ -792,7 +702,6 @@
 			title="4 story - G photo - mirror"
 			min="6" 
 			usage="front"
-			storyorder="feed"
 		/>
 		<template 
 			name="SECTION-1story-fullsize-deco.xml" 
@@ -801,7 +710,6 @@
 			min="1" 
 			deco="true"
 			usage="front"
-			storyorder="feed"
 		/>
 		<template 
 			name="SECTION-1story-PV_template.xml" 
@@ -809,7 +717,6 @@
 			title="PV (grey)"
 			min="3" 
 			usage="front"
-			storyorder="feed"
 		/>
 		<template 
 			name="SECTION-1story-PV-1highlight_template.xml" 
@@ -817,7 +724,6 @@
 			title="PV - 1 highlight (grey)"
 			min="2" 
 			usage="front"
-			storyorder="feed"
 		/>
 		<template 
 			name="SECTION-1story-PV-1highlight-white_template.xml" 
@@ -825,7 +731,6 @@
 			title="PV - 1 highlight (white)"
 			min="2" 
 			usage="front"
-			storyorder="feed"
 		/>
 
 		<template 
@@ -834,7 +739,6 @@
 			title="P-photo"
 			min="3" 
 			usage="front"
-			storyorder="feed"
 		/>
 		<template 
 			name="SECTION-4story-OZ-top_template.xml" 
@@ -842,7 +746,6 @@
 			title="4 story - OZ photo"
 			min="6" 
 			usage="front"
-			storyorder="feed"
 		/>
 		<template 
 			name="SECTION-4story-OZ-deco-mirror_template.xml" 
@@ -851,7 +754,6 @@
 			min="5" 
 			deco="true" 
 			usage="front"
-			storyorder="feed"
 		/>
 
 		<!-- END MANSION -->
@@ -863,7 +765,6 @@
 			title="4 story Plain"
 			min="6"
 			usage="front"
-			storyorder="feed"
 		/>
 		<template 
 			name="SECTION-4story-smallG-top_template.xml"
@@ -871,7 +772,6 @@
 			title="4 story - G photo"
 			min="6"
 			usage="front"
-			storyorder="feed"
 		/>
 		<template 
 			name="SECTION-3story-G_template.xml"
@@ -879,7 +779,6 @@
 			title="3 story - G photo"
 			min="5"
 			usage="front"
-			storyorder="feed"
 		/>
 		<template 
 			name="SECTION-4story-smallG-deco_template.xml"
@@ -888,7 +787,6 @@
 			min="6" 
 			deco="true"
 			usage="front"
-			storyorder="feed"
 		/>
 		<template 
 			name="SECTION-3story-G-deco-C_template.xml"
@@ -897,7 +795,6 @@
 			title="3 story - G Media Deco"
 			min="5"
 			usage="front"
-			storyorder="feed"
 		/>
 		<template 
 			name="SECTION-3story-G-mirror_template.xml" 
@@ -906,7 +803,6 @@
 			min="5" 
 			deco="true"
 			usage="front"
-			storyorder="feed"
 		/>
 		<template 
 			name="SECTION-4story-smallG-deco-mirror_template.xml" 
@@ -915,7 +811,6 @@
 			min="6" 
 			deco="true" 
 			usage="front"
-			storyorder="feed"
 		/>
 		<template 
 			name="SECTION-4story-smallG-top-mirror_template.xml" 
@@ -923,7 +818,6 @@
 			title="4 story - G photo - mirror"
 			min="6" 
 			usage="front"
-			storyorder="feed"
 		/>
 		<template 
 			name="SECTION-1story-fullsize-deco.xml" 
@@ -932,7 +826,6 @@
 			min="1" 
 			deco="true"
 			usage="front"
-			storyorder="feed"
 		/>
 		<template 
 			name="SECTION-1story-PV_template.xml" 
@@ -940,7 +833,6 @@
 			title="PV (grey)"
 			min="3" 
 			usage="front"
-			storyorder="feed"
 		/>
 		<template 
 			name="SECTION-1story-PV-1highlight_template.xml" 
@@ -948,7 +840,6 @@
 			title="PV - 1 highlight (grey)"
 			min="2" 
 			usage="front"
-			storyorder="feed"
 		/>
 		<template 
 			name="SECTION-1story-PV-1highlight-white_template.xml" 
@@ -956,7 +847,6 @@
 			title="PV - 1 highlight (white)"
 			min="2" 
 			usage="front"
-			storyorder="feed"
 		/>
 
 		<template 
@@ -965,7 +855,6 @@
 			title="P-photo"
 			min="3" 
 			usage="front"
-			storyorder="feed"
 		/>
 		<template 
 			name="SECTION-4story-OZ-top_template.xml" 
@@ -973,7 +862,6 @@
 			title="4 story - OZ photo"
 			min="6" 
 			usage="front"
-			storyorder="feed"
 		/>
 		<template 
 			name="SECTION-4story-OZ-deco-mirror_template.xml" 
@@ -982,7 +870,6 @@
 			min="5" 
 			deco="true" 
 			usage="front"
-			storyorder="feed"
 		/>
 
 		<!-- END PERSONAL_JOURNAL -->
@@ -994,7 +881,6 @@
 			title="3 story - G photo"
 			min="5"
 			usage="front"
-			storyorder="feed"
 		/>
 		<template 
 			name="SECTION-1story-fullsize-deco.xml" 
@@ -1003,7 +889,6 @@
 			min="1" 
 			deco="true"
 			usage="front"
-			storyorder="feed"
 		/>
 		<template 
 			name="SECTION-1story-PV_template.xml" 
@@ -1011,7 +896,6 @@
 			title="PV (grey)"
 			min="3" 
 			usage="front"
-			storyorder="feed"
 		/>
 		<template 
 			name="SECTION-1story-PV-1highlight_template.xml" 
@@ -1019,7 +903,6 @@
 			title="PV - 1 highlight (grey)"
 			min="2" 
 			usage="front"
-			storyorder="feed"
 		/>
 		<template 
 			name="SECTION-1story-PV-1highlight-white_template.xml" 
@@ -1027,7 +910,6 @@
 			title="PV - 1 highlight (white)"
 			min="2" 
 			usage="front"
-			storyorder="feed"
 		/>
 		
 		<template 
@@ -1036,7 +918,6 @@
 			title="P-photo"
 			min="3" 
 			usage="front"
-			storyorder="feed"
 		/>
 		<!-- END REVIEW -->
 		
@@ -1047,7 +928,6 @@
 			title="4 story Plain"
 			min="6"
 			usage="front"
-			storyorder="feed"
 		/>
 		<template 
 			name="SECTION-4story-smallG-top_template.xml"
@@ -1055,7 +935,6 @@
 			title="4 story - G photo"
 			min="6"
 			usage="front"
-			storyorder="feed"
 		/>
 		<template 
 			name="SECTION-3story-G_template.xml"
@@ -1063,7 +942,6 @@
 			title="3 story - G photo"
 			min="5"
 			usage="front"
-			storyorder="feed"
 		/>
 		<template 
 			name="SECTION-4story-smallG-deco_template.xml"
@@ -1072,7 +950,6 @@
 			min="6" 
 			deco="true"
 			usage="front"
-			storyorder="feed"
 		/>
 		<template 
 			name="SECTION-3story-G-deco-C_template.xml"
@@ -1081,7 +958,6 @@
 			title="3 story - G Media Deco"
 			min="5"
 			usage="front"
-			storyorder="feed"
 		/>
 		<template 
 			name="SECTION-3story-G-mirror_template.xml" 
@@ -1090,7 +966,6 @@
 			min="5" 
 			deco="true"
 			usage="front"
-			storyorder="feed"
 		/>
 		<template 
 			name="SECTION-4story-smallG-deco-mirror_template.xml" 
@@ -1099,7 +974,6 @@
 			min="6" 
 			deco="true" 
 			usage="front"
-			storyorder="feed"
 		/>
 		<template 
 			name="SECTION-4story-smallG-top-mirror_template.xml" 
@@ -1107,7 +981,6 @@
 			title="4 story - G photo - mirror"
 			min="6" 
 			usage="front"
-			storyorder="feed"
 		/>
 		<template 
 			name="SECTION-1story-fullsize-deco.xml" 
@@ -1116,7 +989,6 @@
 			min="1" 
 			deco="true"
 			usage="front"
-			storyorder="feed"
 		/>
 		<template 
 			name="SECTION-1story-PV_template.xml" 
@@ -1124,7 +996,6 @@
 			title="PV (grey)"
 			min="3" 
 			usage="front"
-			storyorder="feed"
 		/>
 		<template 
 			name="SECTION-1story-PV-1highlight_template.xml" 
@@ -1132,7 +1003,6 @@
 			title="PV - 1 highlight (grey)"
 			min="2" 
 			usage="front"
-			storyorder="feed"
 		/>
 		<template 
 			name="SECTION-1story-PV-1highlight-white_template.xml" 
@@ -1140,7 +1010,6 @@
 			title="PV - 1 highlight (white)"
 			min="2" 
 			usage="front"
-			storyorder="feed"
 		/>
 
 		<template 
@@ -1149,7 +1018,6 @@
 			title="P-photo"
 			min="3" 
 			usage="front"
-			storyorder="feed"
 		/>
 		<template 
 			name="SECTION-4story-OZ-top_template.xml" 
@@ -1157,7 +1025,6 @@
 			title="4 story - OZ photo"
 			min="6" 
 			usage="front"
-			storyorder="feed"
 		/>
 		<template 
 			name="SECTION-4story-OZ-deco-mirror_template.xml" 
@@ -1166,7 +1033,6 @@
 			min="5" 
 			deco="true" 
 			usage="front"
-			storyorder="feed"
 		/>
 		
 		<!-- END JOURNAL REPORT -->
@@ -1178,7 +1044,6 @@
 			title="4 story Plain"
 			min="6"
 			usage="front"
-			storyorder="feed"
 		/>
 		<template 
 			name="SECTION-4story-smallG-top_template.xml"
@@ -1186,7 +1051,6 @@
 			title="4 story - G photo"
 			min="6"
 			usage="front"
-			storyorder="feed"
 		/>
 		<template 
 			name="SECTION-3story-G_template.xml"
@@ -1194,7 +1058,6 @@
 			title="3 story - G photo"
 			min="5"
 			usage="front"
-			storyorder="feed"
 		/>
 		<template 
 			name="SECTION-4story-smallG-deco_template.xml"
@@ -1203,7 +1066,6 @@
 			min="6" 
 			deco="true"
 			usage="front"
-			storyorder="feed"
 		/>
 		<template 
 			name="SECTION-3story-G-deco-C_template.xml"
@@ -1212,7 +1074,6 @@
 			title="3 story - G Media Deco"
 			min="5"
 			usage="front"
-			storyorder="feed"
 		/>
 		<template 
 			name="SECTION-3story-G-mirror_template.xml" 
@@ -1221,7 +1082,6 @@
 			min="5" 
 			deco="true"
 			usage="front"
-			storyorder="feed"
 		/>
 		<template 
 			name="SECTION-4story-smallG-deco-mirror_template.xml" 
@@ -1230,7 +1090,6 @@
 			min="6" 
 			deco="true" 
 			usage="front"
-			storyorder="feed"
 		/>
 		<template 
 			name="SECTION-4story-smallG-top-mirror_template.xml" 
@@ -1238,7 +1097,6 @@
 			title="4 story - G photo - mirror"
 			min="6" 
 			usage="front"
-			storyorder="feed"
 		/>
 		<template 
 			name="SECTION-1story-fullsize-deco.xml" 
@@ -1247,7 +1105,6 @@
 			min="1" 
 			deco="true"
 			usage="front"
-			storyorder="feed"
 		/>
 		<template 
 			name="SECTION-1story-PV_template.xml" 
@@ -1255,7 +1112,6 @@
 			title="PV (grey)"
 			min="3" 
 			usage="front"
-			storyorder="feed"
 		/>
 		<template 
 			name="SECTION-1story-PV-1highlight_template.xml" 
@@ -1263,7 +1119,6 @@
 			title="PV - 1 highlight (grey)"
 			min="2" 
 			usage="front"
-			storyorder="feed"
 		/>
 		<template 
 			name="SECTION-1story-PV-1highlight-white_template.xml" 
@@ -1271,7 +1126,6 @@
 			title="PV - 1 highlight (white)"
 			min="2" 
 			usage="front"
-			storyorder="feed"
 		/>
 
 		<template 
@@ -1280,7 +1134,6 @@
 			title="P-photo"
 			min="3" 
 			usage="front"
-			storyorder="feed"
 		/>
 		<template 
 			name="SECTION-4story-OZ-top_template.xml" 
@@ -1288,7 +1141,6 @@
 			title="4 story - OZ photo"
 			min="6" 
 			usage="front"
-			storyorder="feed"
 		/>
 		<template 
 			name="SECTION-4story-OZ-deco-mirror_template.xml" 
@@ -1297,7 +1149,6 @@
 			min="5" 
 			deco="true" 
 			usage="front"
-			storyorder="feed"
 		/>
 
 		<!-- END WEEKEND_JOURNAL -->
@@ -1310,7 +1161,6 @@
 			min="6" 
 			deco="true" 
 			usage="front"
-			storyorder="feed"
 		/>
 		
 		<template 
@@ -1320,7 +1170,6 @@
 			title="3 story - G Media Deco"
 			min="5"
 			usage="front"
-			storyorder="feed"
 		/>
 		<template 
 			name="SECTION-4story-smallG-deco_template.xml"
@@ -1329,7 +1178,6 @@
 			min="6" 
 			deco="true"
 			usage="front"
-			storyorder="feed"
 		/>
 		<template 
 			name="SECTION-1story-PV_template.xml"
@@ -1337,7 +1185,6 @@
 			title="PV photo - Grey highlights"
 			min="3"
 			usage="front"
-			storyorder="feed"
 		/>
 		<template 
 			name="SECTION-1story-P_template.xml"
@@ -1345,7 +1192,6 @@
 			title="P photo - Grey highlights"
 			min="3"
 			usage="front"
-			storyorder="feed"
 		/>
 		<template 
 			name="SECTION-3story-G_template.xml"
@@ -1353,7 +1199,6 @@
 			title="3 story - G photo"
 			min="5"
 			usage="front"
-			storyorder="feed"
 		/>
 		<template 
 			name="SECTION-4story-smallG-top_template.xml" 
@@ -1361,7 +1206,6 @@
 			title="4 story - G photo"
 			min="6" 
 			usage="front"
-			storyorder="feed"
 		/>
 		<template 
 			name="SECTION-3story-G-mirror_template.xml" 
@@ -1370,7 +1214,6 @@
 			min="5" 
 			deco="true"
 			usage="front"
-			storyorder="feed"
 		/>
 		<template 
 			name="SECTION-4story-smallG-deco-mirror_template.xml" 
@@ -1379,7 +1222,6 @@
 			min="6" 
 			deco="true" 
 			usage="front"
-			storyorder="feed"
 		/>
 		<template 
 			name="SECTION-4story-smallG-top-mirror_template.xml" 
@@ -1387,7 +1229,6 @@
 			title="4 story - G photo - mirror"
 			min="6" 
 			usage="front"
-			storyorder="feed"
 		/>
 		<template 
 			name="SECTION-1story-fullsize-deco.xml" 
@@ -1396,7 +1237,6 @@
 			min="1" 
 			deco="true"
 			usage="front"
-			storyorder="feed"
 		/>
 		<template 
 			name="SECTION-1story-PV-1highlight_template.xml" 
@@ -1404,7 +1244,6 @@
 			title="PV - 1 highlight (grey)"
 			min="2" 
 			usage="front"
-			storyorder="feed"
 		/>
 		<template 
 			name="SECTION-1story-PV-1highlight-white_template.xml" 
@@ -1412,7 +1251,6 @@
 			title="PV - 1 highlight (white)"
 			min="2" 
 			usage="front"
-			storyorder="feed"
 		/>
 				
 		<!-- END SPECIAL REPORT -->
@@ -1424,7 +1262,6 @@
 			title="3 story - G photo"
 			min="5"
 			usage="front"
-			storyorder="feed"
 		/>
 		<template 
 			name="SECTION-4story-D-C_template.xml"
@@ -1433,7 +1270,6 @@
 			min="6" 
 			deco="true" 
 			usage="front"
-			storyorder="feed"
 		/>
 		
 		<template 
@@ -1443,7 +1279,6 @@
 			title="3 story - G Media Deco"
 			min="5"
 			usage="front"
-			storyorder="feed"
 		/>
 		<template 
 			name="SECTION-4story-smallG-deco_template.xml"
@@ -1452,7 +1287,6 @@
 			min="6" 
 			deco="true"
 			usage="front"
-			storyorder="feed"
 		/>
 		<template 
 			name="SECTION-1story-PV_template.xml"
@@ -1460,7 +1294,6 @@
 			title="PV photo - Grey highlights"
 			min="3"
 			usage="front"
-			storyorder="feed"
 		/>
 		<template 
 			name="SECTION-1story-P_template.xml"
@@ -1468,7 +1301,6 @@
 			title="P photo - Grey highlights"
 			min="3"
 			usage="front"
-			storyorder="feed"
 		/>
 		<template 
 			name="SECTION-4story-smallG-top_template.xml" 
@@ -1476,7 +1308,6 @@
 			title="4 story - G photo"
 			min="6" 
 			usage="front"
-			storyorder="feed"
 		/>
 		<template 
 			name="SECTION-3story-G-mirror_template.xml" 
@@ -1485,7 +1316,6 @@
 			min="5" 
 			deco="true"
 			usage="front"
-			storyorder="feed"
 		/>
 		<template 
 			name="SECTION-4story-smallG-deco-mirror_template.xml" 
@@ -1494,7 +1324,6 @@
 			min="6" 
 			deco="true" 
 			usage="front"
-			storyorder="feed"
 		/>
 		<template 
 			name="SECTION-4story-smallG-top-mirror_template.xml" 
@@ -1502,7 +1331,6 @@
 			title="4 story - G photo - mirror"
 			min="6" 
 			usage="front"
-			storyorder="feed"
 		/>
 		<template 
 			name="SECTION-1story-fullsize-deco.xml" 
@@ -1511,7 +1339,6 @@
 			min="1" 
 			deco="true"
 			usage="front"
-			storyorder="feed"
 		/>
 		<template 
 			name="SECTION-1story-PV-1highlight_template.xml" 
@@ -1519,7 +1346,6 @@
 			title="PV - 1 highlight (grey)"
 			min="2" 
 			usage="front"
-			storyorder="feed"
 		/>
 		<template 
 			name="SECTION-1story-PV-1highlight-white_template.xml" 
@@ -1527,7 +1353,6 @@
 			title="PV - 1 highlight (white)"
 			min="2" 
 			usage="front"
-			storyorder="feed"
 		/>
 		
 		<!-- END SPECIAL REPORT 2 -->
@@ -1539,7 +1364,6 @@
 			title="4 story Plain"
 			min="6"
 			usage="front"
-			storyorder="feed"
 		/>
 		<template 
 			name="SECTION-4story-smallG-top_template.xml"
@@ -1547,7 +1371,6 @@
 			title="4 story - G photo"
 			min="6"
 			usage="front"
-			storyorder="feed"
 		/>
 		<template 
 			name="SECTION-3story-G_template.xml"
@@ -1555,7 +1378,6 @@
 			title="3 story - G photo"
 			min="5"
 			usage="front"
-			storyorder="feed"
 		/>
 		<template 
 			name="SECTION-4story-smallG-deco_template.xml"
@@ -1564,7 +1386,6 @@
 			min="6" 
 			deco="true"
 			usage="front"
-			storyorder="feed"
 		/>
 		<template 
 			name="SECTION-3story-G-deco-C_template.xml"
@@ -1573,7 +1394,6 @@
 			title="3 story - G Media Deco"
 			min="5"
 			usage="front"
-			storyorder="feed"
 		/>
 		<template 
 			name="SECTION-3story-G-mirror_template.xml" 
@@ -1582,7 +1402,6 @@
 			min="5" 
 			deco="true"
 			usage="front"
-			storyorder="feed"
 		/>
 		<template 
 			name="SECTION-4story-smallG-deco-mirror_template.xml" 
@@ -1591,7 +1410,6 @@
 			min="6" 
 			deco="true" 
 			usage="front"
-			storyorder="feed"
 		/>
 		<template 
 			name="SECTION-4story-smallG-top-mirror_template.xml" 
@@ -1599,7 +1417,6 @@
 			title="4 story - G photo - mirror"
 			min="6" 
 			usage="front"
-			storyorder="feed"
 		/>
 		<template 
 			name="SECTION-1story-fullsize-deco.xml" 
@@ -1608,7 +1425,6 @@
 			min="1" 
 			deco="true"
 			usage="front"
-			storyorder="feed"
 		/>
 		<template 
 			name="SECTION-1story-PV_template.xml" 
@@ -1616,7 +1432,6 @@
 			title="PV (grey)"
 			min="3" 
 			usage="front"
-			storyorder="feed"
 		/>
 		<template 
 			name="SECTION-1story-PV-1highlight_template.xml" 
@@ -1624,7 +1439,6 @@
 			title="PV - 1 highlight (grey)"
 			min="2" 
 			usage="front"
-			storyorder="feed"
 		/>
 		<template 
 			name="SECTION-1story-PV-1highlight-white_template.xml" 
@@ -1632,7 +1446,6 @@
 			title="PV - 1 highlight (white)"
 			min="2" 
 			usage="front"
-			storyorder="feed"
 		/>
 
 		<template 
@@ -1641,7 +1454,6 @@
 			title="P-photo"
 			min="3" 
 			usage="front"
-			storyorder="feed"
 		/>
 		<template 
 			name="SECTION-4story-OZ-top_template.xml" 
@@ -1649,7 +1461,6 @@
 			title="4 story - OZ photo"
 			min="6" 
 			usage="front"
-			storyorder="feed"
 		/>
 		<template 
 			name="SECTION-4story-OZ-deco-mirror_template.xml" 
@@ -1658,7 +1469,6 @@
 			min="5" 
 			deco="true" 
 			usage="front"
-			storyorder="feed"
 		/>
 
 		<!-- END JOURNAL_REPORT -->
@@ -1670,7 +1480,6 @@
 			title="7 story (3RandO-2CMTRY-2HLT)"
 			min="7"
 			usage="front"
-			storyorder="feed"
 		/>
 		<template 
 			name="OPINION-5story-E-alternate_template.xml"
@@ -1678,7 +1487,6 @@
 			title="Default - iPhone Alternate"
 			min="7"
 			usage="front"
-			storyorder="feed"
 		/>
 		<template 
 			name="OPINION-4story-E_template.xml"
@@ -1686,7 +1494,6 @@
 			title="6 story (2RandO-2CMTRY-2HLT)"
 			min="6"
 			usage="front"
-			storyorder="feed"
 		/>
 		<template 
 			name="OPINION-3story-E_template.xml"
@@ -1694,7 +1501,6 @@
 			title="5 story (2RandO-1CMTRY-2HLT)"
 			min="5"
 			usage="front"
-			storyorder="feed"
 		/>
 		<template 
 			name="OPINION-2story-E_template.xml"
@@ -1702,7 +1508,6 @@
 			title="4 story (1RandO-1CMTRY-2HLT)"
 			min="4"
 			usage="front"
-			storyorder="feed"
 		/>
 		<template 
 			name="SECTION-1story-fullsize-deco.xml" 
@@ -1711,7 +1516,6 @@
 			min="1" 
 			deco="true"
 			usage="front"
-			storyorder="feed"
 		/>
 		<!-- END OPINION -->
 		

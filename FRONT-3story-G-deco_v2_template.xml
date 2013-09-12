@@ -12,28 +12,28 @@
 			#b1:	{ 
 					frame: {$switch: [
 						{if: =widescreen, then: [194, 28, 571, 200]},
-						{if: =scale.large, then: [194, 0, 571, 130]}
+						{if: =scale.large, then: [194, 0, 571, 166]}
 					]},
 					options:{large_headline:{if: =standard, then:false, else:true},medium_headline:{if: =standard, then:true, else:false}, justify:true, no_border:true, byline:{if: =scale.small, then:true, else:false}} 
 			},
 			#deco:	{ 
 					frame: {$switch: [
 						{if: =widescreen, then: [195, 228, 569, 351]},
-						{if: =scale.large, then: [195, 130, 569, 450]}
+						{if: =scale.large, then: [195, 166, 569, 450]}
 					]},
 					options:{normal_headline:true} 
 			},
 			#b2:	{ 
 					frame: {$switch: [
 						{if: =widescreen, then: [194, 581, 280, 295]},
-						{if: =scale.large, then: [194, 580, 280, 208]}
+						{if: =scale.large, then: [194, 616, 280, 172]}
 					]},
 					options:{small_headline:true, bottom:true, no_indent:true} 
 			},
 			#b3:	{ 
 					frame: {$switch: [
 						{if: =widescreen, then: [486, 581, 280, 295]},
-						{if: =scale.large, then: [486, 580, 280, 208]}
+						{if: =scale.large, then: [486, 616, 280, 172]}
 					]},
 					options:{no_indent:true}
 					

@@ -32,6 +32,7 @@
     <p id="pubdate"><xsl:value-of select="@date"/></p>
     <p id="subsection"><xsl:value-of select="$subsection"/></p>
     <p id="region"><xsl:value-of select="$region"/></p>
+    <p id="share-link"><xsl:value-of select="@url"/></p>
     
     <panel id="metadata">
         <p id="article-manifest" />

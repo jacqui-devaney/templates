@@ -1,117 +1,113 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
-    <xsl:output method="xml" encoding="UTF-8" indent="yes"/>
+<xsl:output method="xml" encoding="UTF-8" indent="yes"/>
+
+<xsl:key name="srcid" match="image" use="@src-id" />
+<xsl:param name="subsection"></xsl:param>
+<xsl:param name="region"></xsl:param>
+<xsl:param name="issuetype"></xsl:param>
+
+<xsl:variable name="smallcase" select="'abcdefghijklmnopqrstuvwxyz'" />
+<xsl:variable name="uppercase" select="'ABCDEFGHIJKLMNOPQRSTUVWXYZ'" />
+
+<xsl:template match="/article-doc">
+<jpml>
+    <xsl:attribute name="lang">
+        <xsl:choose>
+            <xsl:when test="@language = 'en-us'">en</xsl:when>
+            <xsl:otherwise><xsl:value-of select="@language"/></xsl:otherwise>
+        </xsl:choose>
+    </xsl:attribute>
+    <p id="identifier"><xsl:choose>
+        <xsl:when test="contains(@id, '.')">
+            <xsl:value-of select="substring-before(@id, '.')"/>
+        </xsl:when>
+        <xsl:otherwise>
+            <xsl:value-of select="@id"/>
+        </xsl:otherwise>
+    </xsl:choose></p>
+    <p id="type"><xsl:value-of select="@type"/></p>
+    <p id="flashline"><xsl:value-of select="@display-name"/></p>
+    <p id="pubdate"><xsl:value-of select="@date"/></p>
+    <p id="subsection"><xsl:value-of select="$subsection"/></p>
+    <p id="region"><xsl:value-of select="$region"/></p>
+    <p id="share-link"><xsl:value-of select="@url"/></p>
     
-    <xsl:key name="srcid" match="image" use="@src-id" />
-    <xsl:param name="subsection"></xsl:param>
-    <xsl:param name="region"></xsl:param>
-    <xsl:param name="issuetype"></xsl:param>
+    <panel id="metadata">
+        <p id="article-manifest" />
+        <p id="media-bucket" />
+    </panel>
+
+    <!-- TODO: paid/free flag -->
+
+    <p id="headline"><xsl:call-template name="headline"/></p>
+    <p id="subhed"><xsl:value-of select="article/article-body/headline/deck"/></p>
+    <p id="byline"><xsl:call-template name="article-byline" /></p>
+    <p id="summary"><xsl:value-of select="summary/summary-body/p"/></p>
+
+    <panel id="summary-image">
+        <xsl:apply-templates select="summary"/>
+    </panel>
     
-    <xsl:variable name="smallcase" select="'abcdefghijklmnopqrstuvwxyz'" />
-    <xsl:variable name="uppercase" select="'ABCDEFGHIJKLMNOPQRSTUVWXYZ'" />
-    
-    <xsl:template match="/article-doc">
-        <jpml>
-            <xsl:attribute name="lang">
-                <xsl:choose>
-                    <xsl:when test="@language = 'en-us'">en</xsl:when>
-                    <xsl:otherwise><xsl:value-of select="@language"/></xsl:otherwise>
-                </xsl:choose>
-            </xsl:attribute>
-            <p id="identifier"><xsl:choose>
-                <xsl:when test="contains(@id, '.')">
-                    <xsl:value-of select="substring-before(@id, '.')"/>
-                </xsl:when>
-                <xsl:otherwise>
-                    <xsl:value-of select="@id"/>
-                </xsl:otherwise>
-            </xsl:choose></p>
-            <p id="type"><xsl:value-of select="@type"/></p>
-            <p id="flashline"><xsl:value-of select="@display-name"/></p>
-            <p id="pubdate"><xsl:value-of select="@date"/></p>
-            <p id="subsection"><xsl:value-of select="$subsection"/></p>
-            <p id="region"><xsl:value-of select="$region"/></p>
-            
-            <panel id="metadata">
-                <p id="article-manifest" />
-                <p id="media-bucket" />
-            </panel>
-            
-            <!-- TODO: paid/free flag -->
-             
-             <p id="headline"><xsl:call-template name="headline"/></p>
-             <p id="subhed"><xsl:value-of select="article/article-body/headline/deck"/></p>
-             <p id="byline"><xsl:call-template name="article-byline" /></p>
-             <p id="summary"><xsl:value-of select="summary/summary-body/p"/></p>
-             
-             <panel id="summary-image">
-             <xsl:apply-templates select="summary"/>
-             </panel>
-             
-             <!-- TODO: grab largest summary image if there are no article images? -->
-             <!-- TODO: exclude images referenced in insets? -->
-             <!-- TODO: exclude images wrapped in media@type=FLASH -->
-             <!-- REDO: generate-id(.) = generate-id(key('srcid', @src-id)) and -->
-            <panel id="article-image">
-                <xsl:apply-templates select="article/article-body//image[@width &gt; 0 and @height &gt; 0]"/>
-            </panel>
-            
-            <!-- TODO: will we need to merge the SB2/3/4 text with the SB1 media? -->
-             <!-- TODO: collapse empty p tags? ignore leading p tags too. -->
-             
-             <panel id="body">
-             <xsl:apply-templates select="article/article-body"/>
-             <!-- We will insert a mark body bug in the last p or tagline element -->
-            <xsl:if test="@type=&quot;Deloitte Cio Blog&quot; or @type=&quot;Deloitte Cfo Blog&quot; or @type=&quot;Deloitte Riskandcompliance Blog&quot;">
+    <!-- TODO: grab largest summary image if there are no article images? -->
+    <!-- TODO: exclude images referenced in insets? -->
+    <!-- TODO: exclude images wrapped in media@type=FLASH -->
+    <!-- REDO: generate-id(.) = generate-id(key('srcid', @src-id)) and -->
+    <panel id="article-image">
+        <xsl:apply-templates select="article/article-body//image[@width &gt; 0 and @height &gt; 0]"/>
+    </panel>
+        
+    <!-- TODO: will we need to merge the SB2/3/4 text with the SB1 media? -->
+    <!-- TODO: collapse empty p tags? ignore leading p tags too. -->
+    <panel id="body">
+        <xsl:apply-templates select="article/article-body"/>
+        <!-- We will insert a mark body bug in the last p or tagline element -->
+<xsl:if test="@type=&quot;Deloitte Cio Blog&quot; or @type=&quot;Deloitte Cfo Blog&quot; or @type=&quot;Deloitte Riskandcompliance Blog&quot;">
                 <xsl:for-each select="//inset[@param1=&quot;DISCLAIMER&quot; and @style=&quot;OUTSET&quot;]/p">
-                    <xsl:if test="not(preceding-sibling::p[position()=1])">
-                        <p id="deloitte-disclaimer-preamble-p"><mark id="deloitte-disclaimer-preamble-mark" /></p>
-                    </xsl:if>
-                    <p class="deloitte-disclaimer">
-                        <xsl:value-of select="." />
-                    </p>
-                </xsl:for-each>
-            </xsl:if>
-        </panel>
-        
-        <!-- Barron's will need external links, insets too. -->
-        
-    </jpml>
+                <xsl:if test="not(preceding-sibling::p[position()=1])">
+                    <p id="deloitte-disclaimer-preamble-p"><mark id="deloitte-disclaimer-preamble-mark" /></p>
+                </xsl:if>
+                <p class="deloitte-disclaimer">
+                    <xsl:value-of select="." />
+                </p>
+            </xsl:for-each>
+        </xsl:if>
+    </panel>
+    
+    <!-- Barron's will need external links, insets too. -->
+    
+</jpml>
 </xsl:template>
 
 <xsl:template name="headline">
-    <xsl:choose>
-        <xsl:when test="($region=&quot;US&quot; or $region=&quot;XAMLUS&quot; or $region=&quot;GERMANY&quot;) and summary/alt-summary-body[@destination-type=&quot;THIS-ART&quot; and starts-with(@page,&quot;|Mobile|&quot;)]/headline/main-hed">
-            <xsl:value-of select="summary/alt-summary-body[@destination-type=&quot;THIS-ART&quot; and starts-with(@page,&quot;|Mobile|&quot;)]/headline/main-hed" />
-        </xsl:when>
-        <xsl:when test="($region=&quot;US&quot; or $region=&quot;XAMLUS&quot; or $region=&quot;GERMANY&quot; or $issuetype=&quot;NOW&quot;) and summary/summary-body/headline/main-hed">
-            <xsl:value-of select="summary/summary-body/headline/main-hed" />
-        </xsl:when>
-        <xsl:otherwise>
-            <xsl:value-of select="article/article-body/headline/main-hed" />
-        </xsl:otherwise>
-    </xsl:choose>
+<xsl:choose>
+  <xsl:when test="($region=&quot;US&quot; or $region=&quot;XAMLUS&quot; or $region=&quot;GERMANY&quot;) and summary/alt-summary-body[@destination-type=&quot;THIS-ART&quot; and starts-with(@page,&quot;|Mobile|&quot;)]/headline/main-hed">
+    <xsl:value-of select="summary/alt-summary-body[@destination-type=&quot;THIS-ART&quot; and starts-with(@page,&quot;|Mobile|&quot;)]/headline/main-hed" />
+  </xsl:when>
+  <xsl:when test="($region=&quot;US&quot; or $region=&quot;XAMLUS&quot; or $region=&quot;GERMANY&quot; or $issuetype=&quot;NOW&quot;) and summary/summary-body/headline/main-hed">
+     <xsl:value-of select="summary/summary-body/headline/main-hed" />
+  </xsl:when>
+  <xsl:otherwise>
+     <xsl:value-of select="article/article-body/headline/main-hed" />
+  </xsl:otherwise>
+</xsl:choose>
 </xsl:template>
 
 <!-- Bylines looks like this:
- <byline type="SIGNED">By
- <phrase type="AUTHOR">Emily Chasan</phrase>
- <credit>Senior Editor</credit>
- </byline>
- -->
+    <byline type="SIGNED">By 
+        <phrase type="AUTHOR">Emily Chasan</phrase>
+        <credit>Senior Editor</credit>
+    </byline>
+-->
 <xsl:template name="article-byline">
     <xsl:for-each select="article/article-body/byline/node()">
         <xsl:choose>
             <xsl:when test="self::phrase[@type = &quot;AUTHOR&quot;]">
-                <a>
-                    <xsl:attribute name="class">byline-author</xsl:attribute>
-                    <xsl:attribute name="href">person:<xsl:value-of select="@topicid"/></xsl:attribute>
-                    <xsl:value-of select="."/>
-                </a>
+                <span class="byline-author"><xsl:value-of select="."/></span>
             </xsl:when>
             <xsl:when test="self::credit">
-                <span class=""><xsl:value-of select="."/></span>
+                <span class="byline-credit"><xsl:value-of select="."/></span>
             </xsl:when>
             <xsl:otherwise>
                 <xsl:value-of select="."/>
@@ -128,7 +124,7 @@
 
 <xsl:template match="p" priority="0">
     <xsl:if test="string(.)">
-        <p>
+        <p>        
             <xsl:if test="@type">
                 <xsl:attribute name="class">
                     <xsl:value-of select="@type"/>
@@ -142,23 +138,23 @@
                     <xsl:attribute name="id">body-last-p</xsl:attribute>
                 </xsl:when>
             </xsl:choose>
-            <xsl:apply-templates select="node()"/>
-            <xsl:if test="not(following-sibling::p[position()=last()]) and not(following-sibling::tagline[position()=last()])">
-                <mark class="body-bug"/>
-            </xsl:if>
+        <xsl:apply-templates select="node()"/>
+        <xsl:if test="not(following-sibling::p[position()=last()]) and not(following-sibling::tagline[position()=last()])">
+            <mark class="body-bug"/>
+        </xsl:if>
         </p>
     </xsl:if>
 </xsl:template>
 
 <xsl:template match="list[@type = &quot;UNORDERED&quot;]">
     <!--panel class="unordered-list"-->
-    <xsl:apply-templates select="*"/>
+        <xsl:apply-templates select="*"/>
     <!--/panel-->
 </xsl:template>
 
 <xsl:template match="list[@type = &quot;ORDERED&quot;]">
     <!--panel class="ordered-list"-->
-    <xsl:apply-templates select="*"/>
+        <xsl:apply-templates select="*"/>
     <!--/panel-->
 </xsl:template>
 
@@ -188,74 +184,58 @@
 
 <!-- Ignore all insets, unless they are "body continuation" insets -->
 <!-- TODO: we should still grab article images from insets? -->
- <xsl:template match="inset">
- <xsl:if test="@param1 = 'CONTINUATION'">
- <xsl:apply-templates/>
- </xsl:if>
- </xsl:template>
- 
- <xsl:template match="highlight[@type='BOLD']">
- <strong><xsl:apply-templates select="*|node()"/></strong>
- </xsl:template>
- 
- <xsl:template match="highlight[@type='ITALIC']">
- <em><xsl:apply-templates select="*|node()"/></em>
- </xsl:template>
- 
- <xsl:template match="link">
- <xsl:variable name="id" select="@linkend" />
- <a>
- <xsl:attribute name="class">link-<xsl:value-of select="@icon"/></xsl:attribute>
- <xsl:attribute name="href">
- <xsl:choose>
- <xsl:when test="@icon = 'pdf-embedded-in-the-issue'">file:<xsl:call-template name="get_file_name">
- <xsl:with-param name="input">
- <xsl:call-template name="nameloc_by_id">
- <xsl:with-param name="id" select="$id" />
- </xsl:call-template>
- </xsl:with-param>
- </xsl:call-template>
- </xsl:when>
- <xsl:when test="@icon = 'pdf'">
- <xsl:call-template name="nameloc_by_id">
- <xsl:with-param name="id" select="$id" />
- </xsl:call-template>
- </xsl:when>
- <xsl:when test="starts-with(//article//nameloc[@id = $id]/nmlist, 'wsj:')">
- <xsl:value-of select="substring(//article//nameloc[@id = $id]/nmlist, 5)" />
- </xsl:when>
- <xsl:otherwise>
- <xsl:call-template name="tolower">
- <xsl:with-param name="node" select="@type" />
- </xsl:call-template>:<xsl:call-template name="nameloc_by_id">
- <xsl:with-param name="id" select="$id" />
- </xsl:call-template>
- </xsl:otherwise>
- </xsl:choose>
- </xsl:attribute>
- <xsl:apply-templates select="*|node()"/>
- </a>
- 
- </xsl:template>
- 
- <xsl:template match="phrase">
- <!-- Person Links-->
-<xsl:if test="@type = &quot;PERSON&quot;">
-    <a>
-        <xsl:attribute name="class">link-person</xsl:attribute>
-        <xsl:attribute name="href">person:<xsl:value-of select="@topicid"/></xsl:attribute>
-        <xsl:value-of select="."/>
-    </a>
-</xsl:if>
-<!-- Company Links-->
-<xsl:if test="@type = &quot;COMPANY&quot;">
-    <a>
-        <xsl:attribute name="class">link-company</xsl:attribute>
-        <xsl:attribute name="href">quote:<xsl:value-of select="substring-after(@vrtysux, '|')" /></xsl:attribute>
-        <xsl:value-of select="."/>
-    </a>
-</xsl:if>
+<xsl:template match="inset">
+    <xsl:if test="@param1 = 'CONTINUATION'">
+        <xsl:apply-templates/>
+    </xsl:if>
+</xsl:template>
 
+<xsl:template match="highlight[@type='BOLD']">
+    <strong><xsl:apply-templates select="*|node()"/></strong>
+</xsl:template>
+
+<xsl:template match="highlight[@type='ITALIC']">
+    <em><xsl:apply-templates select="*|node()"/></em>
+</xsl:template>
+
+<xsl:template match="link">
+    <xsl:variable name="id" select="@linkend" />
+    <a>
+        <xsl:attribute name="class">link-<xsl:value-of select="@icon"/></xsl:attribute>
+        <xsl:attribute name="href">
+            <xsl:choose>
+                <xsl:when test="@icon = 'pdf-embedded-in-the-issue'">file:<xsl:call-template name="get_file_name">
+                        <xsl:with-param name="input">
+                            <xsl:call-template name="nameloc_by_id">
+                                <xsl:with-param name="id" select="$id" />
+                            </xsl:call-template>
+                        </xsl:with-param>
+                    </xsl:call-template>
+                </xsl:when>
+                <xsl:when test="@icon = 'pdf'">
+                    <xsl:call-template name="nameloc_by_id">
+                        <xsl:with-param name="id" select="$id" />
+                    </xsl:call-template>
+                </xsl:when>
+                <xsl:when test="starts-with(//article//nameloc[@id = $id]/nmlist, 'wsj:')">
+                    <xsl:value-of select="substring(//article//nameloc[@id = $id]/nmlist, 5)" />
+                </xsl:when>
+                <xsl:otherwise>
+                    <xsl:call-template name="tolower">
+                        <xsl:with-param name="node" select="@type" />
+                    </xsl:call-template>:<xsl:call-template name="nameloc_by_id">
+                        <xsl:with-param name="id" select="$id" />
+                    </xsl:call-template>
+                </xsl:otherwise>
+            </xsl:choose>
+        </xsl:attribute>
+        <xsl:apply-templates select="*|node()"/>
+    </a>
+
+</xsl:template>
+
+<xsl:template match="phrase">
+    <xsl:value-of select="."/>
 </xsl:template>
 
 <xsl:template match="media">
@@ -271,11 +251,11 @@
 
 <xsl:template match="subhed">
     <h2><xsl:value-of select="."/></h2>
-</xsl:template>
+</xsl:template> 
 
 <xsl:template match="small-hed">
     <h3><xsl:value-of select="."/></h3>
-</xsl:template>
+</xsl:template> 
 
 <xsl:template match="tagline">
     <p>
@@ -287,7 +267,7 @@
             <mark class="body-bug"/>
         </xsl:if>
     </p>
-</xsl:template>
+</xsl:template> 
 
 <xsl:template match="summary">
     <!-- TODO/REDO: generate-id(.) = generate-id(key('srcid', @src-id)) and -->
@@ -295,7 +275,7 @@
 </xsl:template>
 
 <xsl:template match="temporary-info">
-</xsl:template>
+</xsl:template> 
 
 <xsl:template name="image_src_id">
     <!-- this gets the last path component of a URL, or a filename if it's just a filename, recursively -->
@@ -307,7 +287,7 @@
             </xsl:call-template>
         </xsl:when>
         <xsl:otherwise>
-            <xsl:value-of select="$srcid" />
+            <xsl:value-of select="$srcid" />            
         </xsl:otherwise>
     </xsl:choose>
 </xsl:template>
@@ -329,7 +309,7 @@
             <xsl:value-of select="$input"/>
         </xsl:otherwise>
     </xsl:choose>
-    
+
 </xsl:template>
 
 <xsl:template match="image">
@@ -349,19 +329,19 @@
 </xsl:template>
 
 <xsl:template match="@*|node()">
-    <xsl:copy>
-        <xsl:apply-templates select="@*|node()"/>
-    </xsl:copy>
+  <xsl:copy>
+    <xsl:apply-templates select="@*|node()"/>
+  </xsl:copy>
 </xsl:template>
 
 <xsl:template name="toupper">
-    <xsl:param name="node" />
-    <xsl:value-of select="translate($node, $smallcase, $uppercase)" />
+  <xsl:param name="node" />
+  <xsl:value-of select="translate($node, $smallcase, $uppercase)" />
 </xsl:template>
 
 <xsl:template name="tolower">
-    <xsl:param name="node" />
-    <xsl:value-of select="translate($node, $uppercase, $smallcase)" />
+  <xsl:param name="node" />
+  <xsl:value-of select="translate($node, $uppercase, $smallcase)" />
 </xsl:template>
 
 </xsl:stylesheet>

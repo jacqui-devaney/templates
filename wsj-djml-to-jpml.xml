@@ -100,11 +100,15 @@
         <credit>Senior Editor</credit>
     </byline>
 -->
+
 <xsl:template name="article-byline">
     <xsl:for-each select="article/article-body/byline/node()">
         <xsl:choose>
             <xsl:when test="self::phrase[@type = &quot;AUTHOR&quot;]">
-                <span class="byline-author"><xsl:value-of select="."/></span>
+                <a class="byline-author">
+                    <xsl:attribute name="href">person:<xsl:value-of select="@topicid"/></xsl:attribute>
+                    <xsl:value-of select="."/>
+                </a>
             </xsl:when>
             <xsl:when test="self::credit">
                 <span class="byline-credit"><xsl:value-of select="."/></span>
@@ -236,6 +240,22 @@
 
 <xsl:template match="phrase">
     <xsl:value-of select="."/>
+</xsl:template>
+
+<!-- Person Links-->
+<xsl:template match="phrase[@type = &quot;PERSON&quot;]">
+    <a class="link-person">
+        <xsl:attribute name="href">person:<xsl:value-of select="@topicid"/></xsl:attribute>
+        <xsl:value-of select="."/>
+    </a>
+</xsl:template>
+
+<!-- Company Links-->
+<xsl:template match="phrase[@type = &quot;COMPANY&quot;]">
+    <a class="link-company">
+        <xsl:attribute name="href">quote:<xsl:value-of select="substring-after(@vrtysux, '|')" /></xsl:attribute>
+        <xsl:value-of select="."/>
+    </a>
 </xsl:template>
 
 <xsl:template match="media">

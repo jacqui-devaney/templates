@@ -316,6 +316,13 @@
 		}, else: {
 		}
 	},
+	a: {
+		if-all:[ =intent.article, {if: =app.version, starts-with:"5.4"}], then: {
+			text-decoration: underline,
+			color: cornflowerblue
+		}, else: {
+		}
+	},
 	.byline: {
 		font-name:DJ5Exchange-Semibold,
 		font-size:13,

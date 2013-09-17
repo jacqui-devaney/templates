@@ -11,7 +11,7 @@
 		#deco2: {options: { $switch: [
 				{if: =scale.phone, then: {normal_headline:true, G_image:true, small_caption:true}},
 				{if: =portrait, then: {bottom_border:true, small_headline:true, OV_image:true}},
-				{if: =landscape, then: {bottom_border:true, small_headline:true, OV_image:{if: =widescreen, then:true, else:false}}}			
+				{if: =landscape, then: {bottom_border:true, small_headline:true, OV_image:true}}			
 			]}}
 		
 	}</style>

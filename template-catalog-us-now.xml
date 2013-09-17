@@ -18,11 +18,10 @@
 		/>
         <template 
 			name="FRONT-3story-F_v2_template.xml" 
-			title="4 story - F Photo Banner" 
+			title="3 story - F Photo Banner" 
 			section="FRONT_SECTION" 
-			min="4" 
-			usage="front"
-		/>
+			min="3" 
+			usage="front"/>
         <template 
 			name="FRONT-3story-F-deco_v2_template.xml" 
 			title="3 story - F liondoor Banner" 
@@ -78,28 +77,28 @@
 			title="Full size Deco"
 			min="1" 
 			deco="true"
-			usage="front"
+			usage="front" 
 		/>
 		<template 
 			name="SECTION-1story-PV_template.xml" 
 			section="BUSINESS_AND_FINANCE" 
 			title="PV (grey)"
 			min="3" 
-			usage="front"
+			usage="front" 
 		/>
 		<template 
 			name="SECTION-1story-PV-1highlight_template.xml" 
 			section="BUSINESS_AND_FINANCE" 
 			title="PV - 1 highlight (grey)"
 			min="2" 
-			usage="front"
+			usage="front" 
 		/>
 		<template 
 			name="SECTION-1story-PV-1highlight-white_template.xml" 
 			section="BUSINESS_AND_FINANCE" 
 			title="PV - 1 highlight (white)"
 			min="2" 
-			usage="front"
+			usage="front" 
 		/>
 		
 		<template 
@@ -107,7 +106,7 @@
 			section="BUSINESS_AND_FINANCE" 
 			title="P-photo"
 			min="3" 
-			usage="front"
+			usage="front" 
 		/>
 		
 		<!-- END BUSINESS AND FINANCE -->
@@ -156,7 +155,7 @@
 			title="3 story - G photo mirror"
 			min="5" 
 			deco="true"
-			usage="front"
+			usage="front" 
 		/>
 		<template 
 			name="SECTION-4story-smallG-deco-mirror_template.xml" 
@@ -164,14 +163,14 @@
 			title="4 story - small G Media liondoor - mirror"
 			min="6" 
 			deco="true" 
-			usage="front"
+			usage="front" 
 		/>
 		<template 
 			name="SECTION-4story-smallG-top-mirror_template.xml" 
 			section="ARENA" 
 			title="4 story - G photo - mirror"
 			min="6" 
-			usage="front"
+			usage="front" 
 		/>
 		<template 
 			name="SECTION-1story-fullsize-deco.xml" 
@@ -179,28 +178,28 @@
 			title="Full size Deco"
 			min="1" 
 			deco="true"
-			usage="front"
+			usage="front" 
 		/>
 		<template 
 			name="SECTION-1story-PV_template.xml" 
 			section="ARENA" 
 			title="PV (grey)"
 			min="3" 
-			usage="front"
+			usage="front" 
 		/>
 		<template 
 			name="SECTION-1story-PV-1highlight_template.xml" 
 			section="ARENA" 
 			title="PV - 1 highlight (grey)"
 			min="2" 
-			usage="front"
+			usage="front" 
 		/>
 		<template 
 			name="SECTION-1story-PV-1highlight-white_template.xml" 
 			section="ARENA" 
 			title="PV - 1 highlight (white)"
 			min="2" 
-			usage="front"
+			usage="front" 
 		/>
 
 		<template 
@@ -208,14 +207,14 @@
 			section="ARENA" 
 			title="P-photo"
 			min="3" 
-			usage="front"
+			usage="front" 
 		/>
 		<template 
 			name="SECTION-4story-OZ-top_template.xml" 
 			section="ARENA" 
 			title="4 story - OZ photo"
 			min="6" 
-			usage="front"
+			usage="front" 
 		/>
 		<template 
 			name="SECTION-4story-OZ-deco-mirror_template.xml" 
@@ -223,7 +222,7 @@
 			title="4 story - OZ Media liondoor"
 			min="5" 
 			deco="true" 
-			usage="front"
+			usage="front" 
 		/>
 
 		<!-- END ARENA -->
@@ -233,56 +232,56 @@
 			section="FRIDAY_JOURNAL" 
 			title="PV - (White highlights)"
 			min="3" 
-			usage="front"
+			usage="front" 
 		/>
 		<template 
 			name="SECTION-3story-G_template.xml" 
 			section="FRIDAY_JOURNAL" 
 			title="3 story G photo"
 			min="5" 
-			usage="front"
+			usage="front" 
 		/>
 		<template 
 			name="SECTION-2story-G-C_template.xml" 
 			section="FRIDAY_JOURNAL" 
 			title="2 story-G-photo"
 			min="4" 
-			usage="front"
+			usage="front" 
 		/>
 		<template 
 			name="SECTION-1story-P_template.xml" 
 			section="FRIDAY_JOURNAL" 
 			title="P-photo"
 			min="3" 
-			usage="front"
+			usage="front" 
 		/>
 		<template 
 			name="SECTION-1story-P-white_template.xml" 
 			section="FRIDAY_JOURNAL" 
 			title="P - White Highlights"
 			min="2" 
-			usage="front"
+			usage="front" 
 		/>
 		<template 
 			name="SECTION-1story-PV_template.xml" 
 			section="FRIDAY_JOURNAL" 
 			title="PV - Grey highlights"
 			min="3" 
-			usage="front"
+			usage="front" 
 		/>
 		<template 
 			name="SECTION-1story-P-1highlight_template.xml" 
 			section="FRIDAY_JOURNAL" 
 			title="P 1 highlight"
 			min="2" 
-			usage="front"
+			usage="front" 
 		/>
 		<template 
 			name="SECTION-1story-P-1highlight-white_template.xml" 
 			section="FRIDAY_JOURNAL" 
 			title="P 1 highlight - white"
 			min="2" 
-			usage="front"
+			usage="front" 
 		/>
 		/>
 		
@@ -291,14 +290,14 @@
 			section="FRIDAY_JOURNAL" 
 			title="PV - (1 highlight Grey)"
 			min="2" 
-			usage="front"
+			usage="front" 
 		/>
 		<template 
 			name="SECTION-1story-PV-1highlight-white_template.xml" 
 			section="FRIDAY_JOURNAL" 
 			title="PV - (1 highlight white)"
 			min="2" 
-			usage="front"
+			usage="front" 
 		/>
 		<template 
 			name="SECTION-1story-fullsize-deco.xml" 
@@ -306,7 +305,7 @@
 			title="Full size Deco"
 			min="1" 
 			deco="true"
-			usage="front"
+			usage="front" 
 		/>
 		<!-- END FRIDAY JOURNAL -->
 		
@@ -354,7 +353,7 @@
 			title="3 story - G photo mirror"
 			min="5" 
 			deco="true"
-			usage="front"
+			usage="front" 
 		/>
 		<template 
 			name="SECTION-4story-smallG-deco-mirror_template.xml" 
@@ -362,14 +361,14 @@
 			title="4 story - small G Media liondoor - mirror"
 			min="6" 
 			deco="true" 
-			usage="front"
+			usage="front" 
 		/>
 		<template 
 			name="SECTION-4story-smallG-top-mirror_template.xml" 
 			section="MARKETPLACE" 
 			title="4 story - G photo - mirror"
 			min="6" 
-			usage="front"
+			usage="front" 
 		/>
 		<template 
 			name="SECTION-1story-fullsize-deco.xml" 
@@ -377,28 +376,28 @@
 			title="Full size Deco"
 			min="1" 
 			deco="true"
-			usage="front"
+			usage="front" 
 		/>
 		<template 
 			name="SECTION-1story-PV_template.xml" 
 			section="MARKETPLACE" 
 			title="PV (grey)"
 			min="3" 
-			usage="front"
+			usage="front" 
 		/>
 		<template 
 			name="SECTION-1story-PV-1highlight_template.xml" 
 			section="MARKETPLACE" 
 			title="PV - 1 highlight (grey)"
 			min="2" 
-			usage="front"
+			usage="front" 
 		/>
 		<template 
 			name="SECTION-1story-PV-1highlight-white_template.xml" 
 			section="MARKETPLACE" 
 			title="PV - 1 highlight (white)"
 			min="2" 
-			usage="front"
+			usage="front" 
 		/>
 		
 		<template 
@@ -406,14 +405,14 @@
 			section="MARKETPLACE" 
 			title="P-photo"
 			min="3" 
-			usage="front"
+			usage="front" 
 		/>
 		<template 
 			name="SECTION-4story-OZ-top_template.xml" 
 			section="MARKETPLACE" 
 			title="4 story - OZ photo"
 			min="6" 
-			usage="front"
+			usage="front" 
 		/>
 		<template 
 			name="SECTION-4story-OZ-deco-mirror_template.xml" 
@@ -421,7 +420,7 @@
 			title="4 story - OZ Media liondoor"
 			min="5" 
 			deco="true" 
-			usage="front"
+			usage="front" 
 		/>
 		
 		<!-- END MARKETPLACE -->
@@ -462,28 +461,28 @@
 			title="Full size Deco"
 			min="1" 
 			deco="true"
-			usage="front"
+			usage="front" 
 		/>
 		<template 
 			name="SECTION-1story-PV_template.xml" 
 			section="MONEY_AND_INVESTING" 
 			title="PV (grey)"
 			min="3" 
-			usage="front"
+			usage="front" 
 		/>
 		<template 
 			name="SECTION-1story-PV-1highlight_template.xml" 
 			section="MONEY_AND_INVESTING" 
 			title="PV - 1 highlight (grey)"
 			min="2" 
-			usage="front"
+			usage="front" 
 		/>
 		<template 
 			name="SECTION-1story-PV-1highlight-white_template.xml" 
 			section="MONEY_AND_INVESTING" 
 			title="PV - 1 highlight (white)"
 			min="2" 
-			usage="front"
+			usage="front" 
 		/>
 		
 		<template 
@@ -491,7 +490,7 @@
 			section="MONEY_AND_INVESTING" 
 			title="P-photo"
 			min="3" 
-			usage="front"
+			usage="front" 
 		/>
 		<!-- END MONEY AND INVESTING -->
 		
@@ -553,7 +552,7 @@
 			title="3 story - G photo mirror"
 			min="5" 
 			deco="true"
-			usage="front"
+			usage="front" 
 		/>
 		<template 
 			name="SECTION-4story-smallG-deco-mirror_template.xml" 
@@ -561,14 +560,14 @@
 			title="4 story - small G Media liondoor - mirror"
 			min="6" 
 			deco="true" 
-			usage="front"
+			usage="front" 
 		/>
 		<template 
 			name="SECTION-4story-smallG-top-mirror_template.xml" 
 			section="NEW_YORK" 
 			title="4 story - G photo - mirror"
 			min="6" 
-			usage="front"
+			usage="front" 
 		/>
 		<template 
 			name="SECTION-1story-fullsize-deco.xml" 
@@ -576,14 +575,14 @@
 			title="Full size Deco"
 			min="1" 
 			deco="true"
-			usage="front"
+			usage="front" 
 		/>
 		<template 
 			name="SECTION-4story-OZ-top_template.xml" 
 			section="NEW_YORK" 
 			title="4 story - OZ photo"
 			min="6" 
-			usage="front"
+			usage="front" 
 		/>
 		<template 
 			name="SECTION-4story-OZ-deco-mirror_template.xml" 
@@ -591,7 +590,7 @@
 			title="4 story - OZ Media liondoor"
 			min="5" 
 			deco="true" 
-			usage="front"
+			usage="front" 
 		/>
 		
 		<!-- END NEW YORK -->
@@ -610,28 +609,28 @@
 			title="Full size Deco"
 			min="1" 
 			deco="true"
-			usage="front"
+			usage="front" 
 		/>
 		<template 
 			name="SECTION-1story-PV_template.xml" 
 			section="OFF_DUTY" 
 			title="PV (grey)"
 			min="3" 
-			usage="front"
+			usage="front" 
 		/>
 		<template 
 			name="SECTION-1story-PV-1highlight_template.xml" 
 			section="OFF_DUTY" 
 			title="PV - 1 highlight (grey)"
 			min="2" 
-			usage="front"
+			usage="front" 
 		/>
 		<template 
 			name="SECTION-1story-PV-1highlight-white_template.xml" 
 			section="OFF_DUTY" 
 			title="PV - 1 highlight (white)"
 			min="2" 
-			usage="front"
+			usage="front" 
 		/>
 		
 		<template 
@@ -639,7 +638,7 @@
 			section="OFF_DUTY" 
 			title="P-photo"
 			min="3" 
-			usage="front"
+			usage="front" 
 		/>
 		<!-- END OFF DUTY -->
 		<!-- MANSION -->
@@ -686,7 +685,7 @@
 			title="3 story - G photo mirror"
 			min="5" 
 			deco="true"
-			usage="front"
+			usage="front" 
 		/>
 		<template 
 			name="SECTION-4story-smallG-deco-mirror_template.xml" 
@@ -694,14 +693,14 @@
 			title="4 story - small G Media liondoor - mirror"
 			min="6" 
 			deco="true" 
-			usage="front"
+			usage="front" 
 		/>
 		<template 
 			name="SECTION-4story-smallG-top-mirror_template.xml" 
 			section="MANSION" 
 			title="4 story - G photo - mirror"
 			min="6" 
-			usage="front"
+			usage="front" 
 		/>
 		<template 
 			name="SECTION-1story-fullsize-deco.xml" 
@@ -709,28 +708,28 @@
 			title="Full size Deco"
 			min="1" 
 			deco="true"
-			usage="front"
+			usage="front" 
 		/>
 		<template 
 			name="SECTION-1story-PV_template.xml" 
 			section="MANSION" 
 			title="PV (grey)"
 			min="3" 
-			usage="front"
+			usage="front" 
 		/>
 		<template 
 			name="SECTION-1story-PV-1highlight_template.xml" 
 			section="MANSION" 
 			title="PV - 1 highlight (grey)"
 			min="2" 
-			usage="front"
+			usage="front" 
 		/>
 		<template 
 			name="SECTION-1story-PV-1highlight-white_template.xml" 
 			section="MANSION" 
 			title="PV - 1 highlight (white)"
 			min="2" 
-			usage="front"
+			usage="front" 
 		/>
 
 		<template 
@@ -738,14 +737,14 @@
 			section="MANSION" 
 			title="P-photo"
 			min="3" 
-			usage="front"
+			usage="front" 
 		/>
 		<template 
 			name="SECTION-4story-OZ-top_template.xml" 
 			section="MANSION" 
 			title="4 story - OZ photo"
 			min="6" 
-			usage="front"
+			usage="front" 
 		/>
 		<template 
 			name="SECTION-4story-OZ-deco-mirror_template.xml" 
@@ -753,7 +752,7 @@
 			title="4 story - OZ Media liondoor"
 			min="5" 
 			deco="true" 
-			usage="front"
+			usage="front" 
 		/>
 
 		<!-- END MANSION -->
@@ -802,7 +801,7 @@
 			title="3 story - G photo mirror"
 			min="5" 
 			deco="true"
-			usage="front"
+			usage="front" 
 		/>
 		<template 
 			name="SECTION-4story-smallG-deco-mirror_template.xml" 
@@ -810,14 +809,14 @@
 			title="4 story - small G Media liondoor - mirror"
 			min="6" 
 			deco="true" 
-			usage="front"
+			usage="front" 
 		/>
 		<template 
 			name="SECTION-4story-smallG-top-mirror_template.xml" 
 			section="PERSONAL_JOURNAL" 
 			title="4 story - G photo - mirror"
 			min="6" 
-			usage="front"
+			usage="front" 
 		/>
 		<template 
 			name="SECTION-1story-fullsize-deco.xml" 
@@ -825,28 +824,28 @@
 			title="Full size Deco"
 			min="1" 
 			deco="true"
-			usage="front"
+			usage="front" 
 		/>
 		<template 
 			name="SECTION-1story-PV_template.xml" 
 			section="PERSONAL_JOURNAL" 
 			title="PV (grey)"
 			min="3" 
-			usage="front"
+			usage="front" 
 		/>
 		<template 
 			name="SECTION-1story-PV-1highlight_template.xml" 
 			section="PERSONAL_JOURNAL" 
 			title="PV - 1 highlight (grey)"
 			min="2" 
-			usage="front"
+			usage="front" 
 		/>
 		<template 
 			name="SECTION-1story-PV-1highlight-white_template.xml" 
 			section="PERSONAL_JOURNAL" 
 			title="PV - 1 highlight (white)"
 			min="2" 
-			usage="front"
+			usage="front" 
 		/>
 
 		<template 
@@ -854,14 +853,14 @@
 			section="PERSONAL_JOURNAL" 
 			title="P-photo"
 			min="3" 
-			usage="front"
+			usage="front" 
 		/>
 		<template 
 			name="SECTION-4story-OZ-top_template.xml" 
 			section="PERSONAL_JOURNAL" 
 			title="4 story - OZ photo"
 			min="6" 
-			usage="front"
+			usage="front" 
 		/>
 		<template 
 			name="SECTION-4story-OZ-deco-mirror_template.xml" 
@@ -869,7 +868,7 @@
 			title="4 story - OZ Media liondoor"
 			min="5" 
 			deco="true" 
-			usage="front"
+			usage="front" 
 		/>
 
 		<!-- END PERSONAL_JOURNAL -->
@@ -888,28 +887,28 @@
 			title="Full size Deco"
 			min="1" 
 			deco="true"
-			usage="front"
+			usage="front" 
 		/>
 		<template 
 			name="SECTION-1story-PV_template.xml" 
 			section="REVIEW" 
 			title="PV (grey)"
 			min="3" 
-			usage="front"
+			usage="front" 
 		/>
 		<template 
 			name="SECTION-1story-PV-1highlight_template.xml" 
 			section="REVIEW" 
 			title="PV - 1 highlight (grey)"
 			min="2" 
-			usage="front"
+			usage="front" 
 		/>
 		<template 
 			name="SECTION-1story-PV-1highlight-white_template.xml" 
 			section="REVIEW" 
 			title="PV - 1 highlight (white)"
 			min="2" 
-			usage="front"
+			usage="front" 
 		/>
 		
 		<template 
@@ -917,7 +916,7 @@
 			section="REVIEW" 
 			title="P-photo"
 			min="3" 
-			usage="front"
+			usage="front" 
 		/>
 		<!-- END REVIEW -->
 		
@@ -965,7 +964,7 @@
 			title="3 story - G photo mirror"
 			min="5" 
 			deco="true"
-			usage="front"
+			usage="front" 
 		/>
 		<template 
 			name="SECTION-4story-smallG-deco-mirror_template.xml" 
@@ -973,14 +972,14 @@
 			title="4 story - small G Media liondoor - mirror"
 			min="6" 
 			deco="true" 
-			usage="front"
+			usage="front" 
 		/>
 		<template 
 			name="SECTION-4story-smallG-top-mirror_template.xml" 
 			section="PERSONAL_JOURNAL" 
 			title="4 story - G photo - mirror"
 			min="6" 
-			usage="front"
+			usage="front" 
 		/>
 		<template 
 			name="SECTION-1story-fullsize-deco.xml" 
@@ -988,28 +987,28 @@
 			title="Full size Deco"
 			min="1" 
 			deco="true"
-			usage="front"
+			usage="front" 
 		/>
 		<template 
 			name="SECTION-1story-PV_template.xml" 
 			section="PERSONAL_JOURNAL" 
 			title="PV (grey)"
 			min="3" 
-			usage="front"
+			usage="front" 
 		/>
 		<template 
 			name="SECTION-1story-PV-1highlight_template.xml" 
 			section="PERSONAL_JOURNAL" 
 			title="PV - 1 highlight (grey)"
 			min="2" 
-			usage="front"
+			usage="front" 
 		/>
 		<template 
 			name="SECTION-1story-PV-1highlight-white_template.xml" 
 			section="PERSONAL_JOURNAL" 
 			title="PV - 1 highlight (white)"
 			min="2" 
-			usage="front"
+			usage="front" 
 		/>
 
 		<template 
@@ -1017,14 +1016,14 @@
 			section="PERSONAL_JOURNAL" 
 			title="P-photo"
 			min="3" 
-			usage="front"
+			usage="front" 
 		/>
 		<template 
 			name="SECTION-4story-OZ-top_template.xml" 
 			section="PERSONAL_JOURNAL" 
 			title="4 story - OZ photo"
 			min="6" 
-			usage="front"
+			usage="front" 
 		/>
 		<template 
 			name="SECTION-4story-OZ-deco-mirror_template.xml" 
@@ -1032,7 +1031,7 @@
 			title="4 story - OZ Media liondoor"
 			min="5" 
 			deco="true" 
-			usage="front"
+			usage="front" 
 		/>
 		
 		<!-- END JOURNAL REPORT -->
@@ -1081,7 +1080,7 @@
 			title="3 story - G photo mirror"
 			min="5" 
 			deco="true"
-			usage="front"
+			usage="front" 
 		/>
 		<template 
 			name="SECTION-4story-smallG-deco-mirror_template.xml" 
@@ -1089,14 +1088,14 @@
 			title="4 story - small G Media liondoor - mirror"
 			min="6" 
 			deco="true" 
-			usage="front"
+			usage="front" 
 		/>
 		<template 
 			name="SECTION-4story-smallG-top-mirror_template.xml" 
 			section="WEEKEND_JOURNAL" 
 			title="4 story - G photo - mirror"
 			min="6" 
-			usage="front"
+			usage="front" 
 		/>
 		<template 
 			name="SECTION-1story-fullsize-deco.xml" 
@@ -1104,28 +1103,28 @@
 			title="Full size Deco"
 			min="1" 
 			deco="true"
-			usage="front"
+			usage="front" 
 		/>
 		<template 
 			name="SECTION-1story-PV_template.xml" 
 			section="WEEKEND_JOURNAL" 
 			title="PV (grey)"
 			min="3" 
-			usage="front"
+			usage="front" 
 		/>
 		<template 
 			name="SECTION-1story-PV-1highlight_template.xml" 
 			section="WEEKEND_JOURNAL" 
 			title="PV - 1 highlight (grey)"
 			min="2" 
-			usage="front"
+			usage="front" 
 		/>
 		<template 
 			name="SECTION-1story-PV-1highlight-white_template.xml" 
 			section="WEEKEND_JOURNAL" 
 			title="PV - 1 highlight (white)"
 			min="2" 
-			usage="front"
+			usage="front" 
 		/>
 
 		<template 
@@ -1133,14 +1132,14 @@
 			section="WEEKEND_JOURNAL" 
 			title="P-photo"
 			min="3" 
-			usage="front"
+			usage="front" 
 		/>
 		<template 
 			name="SECTION-4story-OZ-top_template.xml" 
 			section="WEEKEND_JOURNAL" 
 			title="4 story - OZ photo"
 			min="6" 
-			usage="front"
+			usage="front" 
 		/>
 		<template 
 			name="SECTION-4story-OZ-deco-mirror_template.xml" 
@@ -1148,7 +1147,7 @@
 			title="4 story - OZ Media liondoor"
 			min="5" 
 			deco="true" 
-			usage="front"
+			usage="front" 
 		/>
 
 		<!-- END WEEKEND_JOURNAL -->
@@ -1160,7 +1159,7 @@
 			title="4 story plain"
 			min="6" 
 			deco="true" 
-			usage="front"
+			usage="front" 
 		/>
 		
 		<template 
@@ -1205,7 +1204,7 @@
 			section="SPECIAL_REPORT" 
 			title="4 story - G photo"
 			min="6" 
-			usage="front"
+			usage="front" 
 		/>
 		<template 
 			name="SECTION-3story-G-mirror_template.xml" 
@@ -1213,7 +1212,7 @@
 			title="3 story - G photo mirror"
 			min="5" 
 			deco="true"
-			usage="front"
+			usage="front" 
 		/>
 		<template 
 			name="SECTION-4story-smallG-deco-mirror_template.xml" 
@@ -1221,14 +1220,14 @@
 			title="4 story - small G Media liondoor - mirror"
 			min="6" 
 			deco="true" 
-			usage="front"
+			usage="front" 
 		/>
 		<template 
 			name="SECTION-4story-smallG-top-mirror_template.xml" 
 			section="SPECIAL_REPORT" 
 			title="4 story - G photo - mirror"
 			min="6" 
-			usage="front"
+			usage="front" 
 		/>
 		<template 
 			name="SECTION-1story-fullsize-deco.xml" 
@@ -1236,21 +1235,21 @@
 			title="Full size Deco"
 			min="1" 
 			deco="true"
-			usage="front"
+			usage="front" 
 		/>
 		<template 
 			name="SECTION-1story-PV-1highlight_template.xml" 
 			section="SPECIAL_REPORT" 
 			title="PV - 1 highlight (grey)"
 			min="2" 
-			usage="front"
+			usage="front" 
 		/>
 		<template 
 			name="SECTION-1story-PV-1highlight-white_template.xml" 
 			section="SPECIAL_REPORT" 
 			title="PV - 1 highlight (white)"
 			min="2" 
-			usage="front"
+			usage="front" 
 		/>
 				
 		<!-- END SPECIAL REPORT -->
@@ -1269,7 +1268,7 @@
 			title="4 story plain"
 			min="6" 
 			deco="true" 
-			usage="front"
+			usage="front" 
 		/>
 		
 		<template 
@@ -1307,7 +1306,7 @@
 			section="SPECIAL_REPORT_TWO" 
 			title="4 story - G photo"
 			min="6" 
-			usage="front"
+			usage="front" 
 		/>
 		<template 
 			name="SECTION-3story-G-mirror_template.xml" 
@@ -1315,7 +1314,7 @@
 			title="3 story - G photo mirror"
 			min="5" 
 			deco="true"
-			usage="front"
+			usage="front" 
 		/>
 		<template 
 			name="SECTION-4story-smallG-deco-mirror_template.xml" 
@@ -1323,14 +1322,14 @@
 			title="4 story - small G Media liondoor - mirror"
 			min="6" 
 			deco="true" 
-			usage="front"
+			usage="front" 
 		/>
 		<template 
 			name="SECTION-4story-smallG-top-mirror_template.xml" 
 			section="SPECIAL_REPORT_TWO" 
 			title="4 story - G photo - mirror"
 			min="6" 
-			usage="front"
+			usage="front" 
 		/>
 		<template 
 			name="SECTION-1story-fullsize-deco.xml" 
@@ -1338,21 +1337,21 @@
 			title="Full size Deco"
 			min="1" 
 			deco="true"
-			usage="front"
+			usage="front" 
 		/>
 		<template 
 			name="SECTION-1story-PV-1highlight_template.xml" 
 			section="SPECIAL_REPORT_TWO" 
 			title="PV - 1 highlight (grey)"
 			min="2" 
-			usage="front"
+			usage="front" 
 		/>
 		<template 
 			name="SECTION-1story-PV-1highlight-white_template.xml" 
 			section="SPECIAL_REPORT_TWO" 
 			title="PV - 1 highlight (white)"
 			min="2" 
-			usage="front"
+			usage="front" 
 		/>
 		
 		<!-- END SPECIAL REPORT 2 -->
@@ -1401,7 +1400,7 @@
 			title="3 story - G photo mirror"
 			min="5" 
 			deco="true"
-			usage="front"
+			usage="front" 
 		/>
 		<template 
 			name="SECTION-4story-smallG-deco-mirror_template.xml" 
@@ -1409,14 +1408,14 @@
 			title="4 story - small G Media liondoor - mirror"
 			min="6" 
 			deco="true" 
-			usage="front"
+			usage="front" 
 		/>
 		<template 
 			name="SECTION-4story-smallG-top-mirror_template.xml" 
 			section="JOURNAL_REPORT" 
 			title="4 story - G photo - mirror"
 			min="6" 
-			usage="front"
+			usage="front" 
 		/>
 		<template 
 			name="SECTION-1story-fullsize-deco.xml" 
@@ -1424,28 +1423,28 @@
 			title="Full size Deco"
 			min="1" 
 			deco="true"
-			usage="front"
+			usage="front" 
 		/>
 		<template 
 			name="SECTION-1story-PV_template.xml" 
 			section="JOURNAL_REPORT" 
 			title="PV (grey)"
 			min="3" 
-			usage="front"
+			usage="front" 
 		/>
 		<template 
 			name="SECTION-1story-PV-1highlight_template.xml" 
 			section="JOURNAL_REPORT" 
 			title="PV - 1 highlight (grey)"
 			min="2" 
-			usage="front"
+			usage="front" 
 		/>
 		<template 
 			name="SECTION-1story-PV-1highlight-white_template.xml" 
 			section="JOURNAL_REPORT" 
 			title="PV - 1 highlight (white)"
 			min="2" 
-			usage="front"
+			usage="front" 
 		/>
 
 		<template 
@@ -1453,14 +1452,14 @@
 			section="JOURNAL_REPORT" 
 			title="P-photo"
 			min="3" 
-			usage="front"
+			usage="front" 
 		/>
 		<template 
 			name="SECTION-4story-OZ-top_template.xml" 
 			section="JOURNAL_REPORT" 
 			title="4 story - OZ photo"
 			min="6" 
-			usage="front"
+			usage="front" 
 		/>
 		<template 
 			name="SECTION-4story-OZ-deco-mirror_template.xml" 
@@ -1468,7 +1467,7 @@
 			title="4 story - OZ Media liondoor"
 			min="5" 
 			deco="true" 
-			usage="front"
+			usage="front" 
 		/>
 
 		<!-- END JOURNAL_REPORT -->
@@ -1515,7 +1514,7 @@
 			title="Full size Deco"
 			min="1" 
 			deco="true"
-			usage="front"
+			usage="front" 
 		/>
 		<!-- END OPINION -->
 		
@@ -2072,7 +2071,6 @@
 				title="Continuation - 2 story-G"
 				min="4" 
 				usage="continuation"
-				storyorder="feed"
 				page="2" 
 			/>
 			<template 
@@ -2080,7 +2078,6 @@
 				title="Continuation - 3 story-G"
 				min="5" 
 				usage="continuation"
-				storyorder="feed"
 				page="2" 
 			/>
 			<template 
@@ -2089,7 +2086,6 @@
 				title="Continuation - 3 story - G liondoor"
 				min="5" 
 				usage="continuation" 
-				storyorder="feed"
 				page="2"
 			/>
 			<template 
@@ -2098,7 +2094,6 @@
 				title="Continuation - 3 story - G Photo - mirror"
 				min="5" 
 				usage="continuation" 
-				storyorder="feed"
 				page="2"
 			/>
 			<template 
@@ -2107,7 +2102,6 @@
 				title="Continuation - 4 story - G liondoor"
 				min="6" 
 				usage="continuation" 
-				storyorder="feed"
 				page="2"
 			/>
 			<template 
@@ -2115,7 +2109,6 @@
 				title="Continuation - PV - 1 highlight (grey)"
 				min="2" 
 				usage="continuation" 
-				storyorder="feed"
 				page="2"
 			/>
 			<template 
@@ -2123,7 +2116,6 @@
 				title="Continuation - PV - 1 highlight (white)"
 				min="2" 
 				usage="continuation" 
-				storyorder="feed"
 				page="2"
 			/>
 			<template 
@@ -2131,7 +2123,6 @@
 				title="Continuation - PV -  2 highlights (grey)"
 				min="3" 
 				usage="continuation" 
-				storyorder="feed"
 				page="2"
 			/>
 			<template 
@@ -2139,7 +2130,6 @@
 				title="Continuation - PV - 2 highlights (white)"
 				min="3" 
 				usage="continuation" 
-				storyorder="feed"
 				page="2"
 			/>
 
@@ -2148,7 +2138,6 @@
 				title="Continuation - P-photo - grey 2 highlights "
 				min="3" 
 				usage="continuation" 
-				storyorder="feed"
 				page="2"
 			/>
 			<template 
@@ -2156,7 +2145,6 @@
 				title="Continuation - P-photo - white 2 highlights "
 				min="3" 
 				usage="continuation" 
-				storyorder="feed"
 				page="2"
 			/>
 			<template 
@@ -2164,7 +2152,6 @@
 				title="Continuation - P-photo - 1highlight"
 				min="2" 
 				usage="continuation" 
-				storyorder="feed"
 				page="2"
 			/>
 			<template 
@@ -2172,7 +2159,6 @@
 				title="Continuation - P-photo - white 1highlight"
 				min="2" 
 				usage="continuation" 
-				storyorder="feed"
 				page="2"
 			/>
 			<template 
@@ -2181,7 +2167,6 @@
 				min="1" 
 				deco="true"
 				usage="continuation"
-				storyorder="feed"
 				page="2" 
 			/>
 			<template 
@@ -2190,7 +2175,6 @@
 				min="1" 
 				deco="true"
 				usage="continuation"
-				storyorder="feed"
 				page="3" 
 			/>
 			<template 
@@ -2199,7 +2183,6 @@
 				min="1" 
 				deco="true"
 				usage="continuation"
-				storyorder="feed"
 				page="4" 
 			/>
 
@@ -2221,6 +2204,7 @@
 			usage="ads"
 		/>
 		<!-- END FULL PAGE AD -->
+		
 		
 	</templates>
 

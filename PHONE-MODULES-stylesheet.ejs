@@ -139,21 +139,10 @@
 		display: {if: =page.mediabucket, then:inherit, else:none}
 	},
 	#pagenext: {
-		top: 0, 
-		right: 0, 
-		bottom: 0, 
-		width: 100,
-		position:absolute,
-		display:{ if: =view.direction, equals: vertical, then: none, else: inherit }
+		display: none
 	},
 	#pageback: {
-		top: 0, 
-		left: 0, 
-		bottom: 0, 
-		width: 100,
-		position:absolute,
-		display:{ if: =view.direction, equals: vertical, then: none, else: inherit }
-		
+		display: none
 	},
 	#pagedown: {
 		right: 0, 
@@ -161,7 +150,7 @@
 		width: 320,
 		height:150,
 		position:absolute,
-		display:{ if: =view.direction, equals: vertical, then: inherit, else: none }
+		display:{ if: =app.version, at-least: 5.4, then: none, else: inherit }
 	},
 	#pageup: {
 		top: 0, 
@@ -169,7 +158,7 @@
 		height:150,
 		width: 320,
 		position:absolute,
-		display:{ if: =view.direction, equals: vertical, then: inherit, else: none }
+		display:{ if: =app.version, at-least: 5.4, then: none, else: inherit }
 
 	},
 	

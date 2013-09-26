@@ -2,13 +2,13 @@
 {.line: { background-color:#b1aca1}},
 {#whatsnews_wrapper:{display:none}},
 {jpml: {
-	border-width:[{if: =app.version, starts-with: "5.3", then: 0, else:1}, 0, 0, 0], 
+	border-width:[{if-any: [{if: =app.version, starts-with: "5.3", then: true, else: false}, {if: =app.version, starts-with: "5.4", then: true, else: false}], then: 0, else:1}, 0, 0, 0], 
 	border-color:black
 }},
 {if: =portrait, then: {
 		#marketstrap:	{ 
 				frame: [0, 0, 768, 25],
-				border-width:[0, 0, {if: =app.version, starts-with: "5.3", then: 1, else:0}, 0], 
+				border-width:[0, 0, {if-any: [{if: =app.version, starts-with: "5.3", then: true, else: false}, {if: =app.version, starts-with: "5.4", then: true, else: false}], then: 1, else:0}, 0], 
 				border-color:black
 			},
 		#whatsnews:		{ frame: [3, 34, 183, 642], 
@@ -39,7 +39,7 @@
 	}, else: {
 		#marketstrap:	{ 
 				frame: [0, 0, 1024, 25],
-				border-width:[0, 0, {if: =app.version, starts-with: "5.3", then: 1, else:0}, 0], 
+				border-width:[0, 0, {if-any: [{if: =app.version, starts-with: "5.3", then: true, else: false}, {if: =app.version, starts-with: "5.4", then: true, else: false}], then: 1, else:0}, 0], 
 				border-color:black
 				
 			},

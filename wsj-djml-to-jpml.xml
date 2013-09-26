@@ -253,7 +253,7 @@
 -->
 
 <!-- Company Links-->
-<xsl:template match="phrase[@type = &quot;COMPANY&quot;]">
+<xsl:template match="phrase[@type = &quot;COMPANY&quot; and not(contains(@vrtysux, '.'))]">
     <a class="link-company">
         <xsl:attribute name="href">quote://<xsl:value-of select="substring-after(@vrtysux, '.')"/>/<xsl:value-of select="@name"/></xsl:attribute>
         <xsl:value-of select="."/>

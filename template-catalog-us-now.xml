@@ -1614,6 +1614,7 @@
 			title=""
 			min="7"
 			usage="continuation"
+			storyorder="feed"
 		/>
 		<template 
 			name="CONTINUATION-generic-6_template.xml" 
@@ -2111,6 +2112,16 @@
 				storyorder="feed"
 				page="2"
 			/>
+			<template 
+				name="SECTION-4story-2D-C_template.xml"
+				section="ARENA" 
+				title="4 story Plain"
+				min="6"
+				usage="continuation" 
+				storyorder="feed"
+				page="2"
+			/>
+			
 			<template 
 				name="SECTION-1story-PV-1highlight_template.xml" 
 				title="Continuation - PV - 1 highlight (grey)"

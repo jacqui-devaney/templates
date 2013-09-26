@@ -50,22 +50,10 @@
 		}},
 		{cite: {
 			font-name:Helvetica
-		}},
-		{#continues_label: {
-			padding: [0, 10, 3, 0],
-			display: { if: =page.count, equals: {$add:[=page.number, 1]}, then:none, else:inherit}
-
 		}}
-		
-		
-		
-		
 
 		]
     }</style>
-	<box id="continues_label">
-		<p><mark id="continues" /></p>
-	</box>
 	<panel id="body_container">
 		<panel class="deloitte_article_body" id="body_continuation" embed="body"/>
 	    

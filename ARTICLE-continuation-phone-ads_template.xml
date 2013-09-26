@@ -7,7 +7,14 @@
         #ad: {            
             anchor-y: bottom,
             options: { zone: {$join: [=ad.prefix, abanner]} },
-            display: { if: =page.number, equals: 3, then: inherit, else: none }
+            display: { 
+                if-all: [
+                    {if: =page.number, equals: 3},
+                    {if: =app.version, less-than: 5.4}                    
+                ],
+                then: inherit,
+                else: none
+            }
         }
 	}</style>
     <box id="ad" class="maude unit_ad" embed="advertisement"></box>

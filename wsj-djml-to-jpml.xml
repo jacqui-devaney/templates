@@ -203,6 +203,11 @@
     <em><xsl:apply-templates select="*|node()"/></em>
 </xsl:template>
 
+<!-- Suppress article links for now -->
+<xsl:template match="link[@type='ARTICLE']">
+    <xsl:apply-templates/>
+</xsl:template>
+
 <xsl:template match="link">
     <xsl:variable name="id" select="@linkend" />
     <a>

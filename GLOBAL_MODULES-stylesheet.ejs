@@ -312,17 +312,19 @@
 	},
 	.link-pdf: {
 		if: =intent.article, then: {
-			text-decoration: underline,
-			color: cornflowerblue
+			color: #007fe0
 		}, else: {
 		}
 	},
 	a: {
 		if-all:[ =intent.article, {if: =app.version, starts-with:"5.4"}], then: {
-			text-decoration: underline,
-			color: cornflowerblue
+			color: #007fe0
 		}, else: {
 		}
+	},
+	.link-article: {
+		text-decoration: none,
+		color: #000
 	},
 	.byline: {
 		font-name:DJ5Exchange-Semibold,

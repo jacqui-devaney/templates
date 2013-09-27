@@ -286,6 +286,29 @@
 	.hidden_tablet: {
 		display: inherit
 	},
+
+	#ad_inline_inner: {
+		anchor-x: center,
+		anchor-y: middle,
+		options: { zone: {$join: [=ad.prefix, abanner]} },
+		width: 320,
+		height: 50,
+		background-color: #e7e2d8
+	},
+
+	#ad_inline_outer: {
+		pixels-per-point-x: 1,
+		pixels-per-point-y: 1,
+		padding: [10, 0],
+		text-align: right,
+		position: relative,
+		height: 50,
+		left: -12,
+		top: 0,
+		right: -12,
+		display:{ if: =app.version, at-least: 5.4, then: inherit, else: none }
+	},
+
 	image: {
 		background-color:#e4e4e4
 	}

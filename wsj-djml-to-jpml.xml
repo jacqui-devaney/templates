@@ -148,6 +148,10 @@
             <mark class="body-bug"/>
         </xsl:if>
         </p>
+        <!-- Insert banner ads on iPhone after the fourth paragraph -->
+        <xsl:if test="count(preceding-sibling::p) = 3">
+            <box id="ad_inline_outer" class="hidden_tablet"><box id="ad_inline_inner" embed="advertisement"></box></box>
+        </xsl:if>
     </xsl:if>
 </xsl:template>
 

@@ -1,4 +1,26 @@
 {if: =scale.phone, then: {
+
+	jpml: {
+		if-all: [
+			=intent.article,
+			=intent.module,
+			{if: =app.version, at-least: 5.4}
+		],
+		then: {
+			min-height: 0
+		}
+	},	
+	#filler: {
+		if-all: [
+			=intent.article,
+			{if: =app.version, at-least: 5.4},
+			{if: =page.number, more-than: 0}
+		],
+		then: {
+			display: none
+		}
+	},	
+
 	#large_headline: {
 		font-size:{ $switch: [
 				{if: =issue.edition, equals: "japan", then: 23},
@@ -135,49 +157,14 @@
 		font-size:{$multiply: [16, =view.zoomlevel]},
 		line-height:{$multiply: [16, =view.zoomlevel]}
 	},
-	#continues_label: {
-		padding: [0, 10, 3, 0],
-		display: { if: =page.count, equals:1, then:none, else:inherit}
-		
-	},
-	#continues: { 
-		content: { $switch: [
-			{ if: =app.language, equals: en, then: "Article Continues \u2192" },
-			{ if: =app.language, equals: de, then: "Mehr  \u2192" },
-			{ if: =app.language, equals: ja, then: "続く… " },
-			{ if: =app.language, equals: ko, then: "기사가 계속됩니다." }
-			
-		]},
-		font-name: { $switch: [
-				{if: =app.language, equals: "japan", then: HiraKakuProN-W6},
-				{if: =app.language, equals: "korea", then: AppleSDGothicNeo-Bold},
-				DJ5Exchange-SemiboldItalic
-			]
-		},
-		color:#c74b15,
-		display: { if: =view.direction, equals: vertical, then: none, else: inherit },
-		font-name:DJ5Exchange-SemiboldItalic,
-		color:#c74b15
-	},	
 	#mediabucket: {
 		display: {if: =page.mediabucket, then:inherit, else:none}
 	},
 	#pagenext: {
-		top: 0, 
-		right: 0, 
-		bottom: 0, 
-		width: 100,
-		position:absolute,
-		display:{ if: =view.direction, equals: vertical, then: none, else: inherit }
+		display: none
 	},
 	#pageback: {
-		top: 0, 
-		left: 0, 
-		bottom: 0, 
-		width: 100,
-		position:absolute,
-		display:{ if: =view.direction, equals: vertical, then: none, else: inherit }
-		
+		display: none
 	},
 	#pagedown: {
 		right: 0, 
@@ -185,7 +172,7 @@
 		width: 320,
 		height:150,
 		position:absolute,
-		display:{ if: =view.direction, equals: vertical, then: inherit, else: none }
+		display:{ if: =app.version, at-least: 5.4, then: none, else: inherit }
 	},
 	#pageup: {
 		top: 0, 
@@ -193,7 +180,7 @@
 		height:150,
 		width: 320,
 		position:absolute,
-		display:{ if: =view.direction, equals: vertical, then: inherit, else: none }
+		display:{ if: =app.version, at-least: 5.4, then: none, else: inherit }
 
 	},
 	
@@ -299,6 +286,29 @@
 	.hidden_tablet: {
 		display: inherit
 	},
+
+	#ad_inline_inner: {
+		anchor-x: center,
+		anchor-y: middle,
+		options: { zone: {$join: [=ad.prefix, abanner]} },
+		width: 320,
+		height: 50,
+		background-color: #e7e2d8
+	},
+
+	#ad_inline_outer: {
+		pixels-per-point-x: 1,
+		pixels-per-point-y: 1,
+		padding: [10, 0],
+		text-align: right,
+		position: relative,
+		height: 50,
+		left: -12,
+		top: 0,
+		right: -12,
+		display:{ if: =app.version, at-least: 5.4, then: inherit, else: none }
+	},
+
 	image: {
 		background-color:#e4e4e4
 	}

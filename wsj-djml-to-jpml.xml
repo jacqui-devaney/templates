@@ -100,10 +100,15 @@
         <credit>Senior Editor</credit>
     </byline>
 -->
+
 <xsl:template name="article-byline">
     <xsl:for-each select="article/article-body/byline/node()">
         <xsl:choose>
             <xsl:when test="self::phrase[@type = &quot;AUTHOR&quot;]">
+                <!--<a class="byline-author">
+                    <xsl:attribute name="href">person:<xsl:value-of select="@topicid"/></xsl:attribute>
+                    <xsl:value-of select="."/>
+                </a>-->
                 <span class="byline-author"><xsl:value-of select="."/></span>
             </xsl:when>
             <xsl:when test="self::credit">
@@ -143,6 +148,10 @@
             <mark class="body-bug"/>
         </xsl:if>
         </p>
+        <!-- Insert banner ads on iPhone after the fourth paragraph -->
+        <xsl:if test="count(preceding-sibling::p) = 3">
+            <box id="ad_inline_outer" class="hidden_tablet"><box id="ad_inline_inner" embed="advertisement"></box></box>
+        </xsl:if>
     </xsl:if>
 </xsl:template>
 
@@ -201,7 +210,13 @@
 <xsl:template match="link">
     <xsl:variable name="id" select="@linkend" />
     <a>
-        <xsl:attribute name="class">link-<xsl:value-of select="@icon"/></xsl:attribute>
+        <xsl:attribute name="class">
+            <xsl:choose>
+                <xsl:when test="@type='ARTICLE'">link-article</xsl:when>
+                <xsl:when test="@type='EXTERNAL'">link-external</xsl:when>
+                <xsl:otherwise>link-<xsl:value-of select="@icon"/></xsl:otherwise>
+            </xsl:choose>
+        </xsl:attribute>
         <xsl:attribute name="href">
             <xsl:choose>
                 <xsl:when test="@icon = 'pdf-embedded-in-the-issue'">file:<xsl:call-template name="get_file_name">
@@ -236,6 +251,23 @@
 
 <xsl:template match="phrase">
     <xsl:value-of select="."/>
+</xsl:template>
+
+<!-- Person Links
+<xsl:template match="phrase[@type = &quot;PERSON&quot;]">
+    <a class="link-person">
+        <xsl:attribute name="href">person:<xsl:value-of select="@topicid"/></xsl:attribute>
+        <xsl:value-of select="."/>
+    </a>
+</xsl:template>
+-->
+
+<!-- Company Links-->
+<xsl:template match="phrase[@type = &quot;COMPANY&quot; and not(contains(@vrtysux, '.'))]">
+    <a class="link-company">
+        <xsl:attribute name="href">quote://<xsl:value-of select="substring-after(@vrtysux, '.')"/>/<xsl:value-of select="@name"/></xsl:attribute>
+        <xsl:value-of select="."/>
+    </a>
 </xsl:template>
 
 <xsl:template match="media">

@@ -279,18 +279,6 @@
 		color:#cfc8bb,
 		content: " Y"
 	},
-	#filler: {
-		display: { 
-			if-all: [
-				=intent.article,
-				{if: =scale.phone, then: true, else: false},
-				{if: =app.version, at-least: 5.4},
-				{if: page.number, more-than: 0}
-			],
-			then: none,
-			else: default
-		}
-	},
 	strong: {
 		font-name:{if: =intent.article, then:DJ5Exchange-Bold, else:DJ5Exchange-Medium}
 	},
@@ -302,17 +290,19 @@
 	},
 	.link-pdf: {
 		if: =intent.article, then: {
-			text-decoration: underline,
-			color: cornflowerblue
+			color: #007fe0
 		}, else: {
 		}
 	},
 	a: {
 		if-all:[ =intent.article, {if: =app.version, starts-with:"5.4"}], then: {
-			text-decoration: underline,
-			color: cornflowerblue
+			color: #007fe0
 		}, else: {
 		}
+	},
+	.link-article: {
+		text-decoration: none,
+		color: #000
 	},
 	.byline: {
 		font-name:DJ5Exchange-Semibold,

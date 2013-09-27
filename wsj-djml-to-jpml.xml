@@ -203,15 +203,16 @@
     <em><xsl:apply-templates select="*|node()"/></em>
 </xsl:template>
 
-<!-- Suppress article links for now -->
-<xsl:template match="link[@type='ARTICLE']">
-    <xsl:apply-templates/>
-</xsl:template>
-
 <xsl:template match="link">
     <xsl:variable name="id" select="@linkend" />
     <a>
-        <xsl:attribute name="class">link-<xsl:value-of select="@icon"/></xsl:attribute>
+        <xsl:attribute name="class">
+            <xsl:choose>
+                <xsl:when test="@type='ARTICLE'">link-article</xsl:when>
+                <xsl:when test="@type='EXTERNAL'">link-external</xsl:when>
+                <xsl:otherwise>link-<xsl:value-of select="@icon"/></xsl:otherwise>
+            </xsl:choose>
+        </xsl:attribute>
         <xsl:attribute name="href">
             <xsl:choose>
                 <xsl:when test="@icon = 'pdf-embedded-in-the-issue'">file:<xsl:call-template name="get_file_name">

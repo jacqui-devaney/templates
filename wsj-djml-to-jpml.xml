@@ -207,6 +207,11 @@
     <em><xsl:apply-templates select="*|node()"/></em>
 </xsl:template>
 
+<!-- Suppress external links for now -->
+<xsl:template match="link[@type='EXTERNAL']">
+    <xsl:apply-templates/>
+</xsl:template>
+
 <xsl:template match="link">
     <xsl:variable name="id" select="@linkend" />
     <a>

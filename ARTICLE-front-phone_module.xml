@@ -9,14 +9,12 @@
 			flow: article_body
 			
         }},
-
 		{#mediabucket: {
 			width:248,
 			height:180,
 			padding:[0, 10, 0, 10],
 			anchor-x:center
 		}}
-				
 		]
     }</style>
 	<style>{

@@ -213,7 +213,7 @@
 </xsl:template>
 
 <!-- Suppress external links for now -->
-<xsl:template match="link[@type='EXTERNAL']">
+<xsl:template match="link[@type='EXTERNAL' and @icon != 'pdf']">
     <xsl:apply-templates/>
 </xsl:template>
 

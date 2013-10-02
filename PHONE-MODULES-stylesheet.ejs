@@ -151,7 +151,7 @@
 	},
 	.article_byline: {
 		font-size:15,
-		line-height:13
+		line-height:20
 	},
 	.article_body: {
 		font-size:{$multiply: [16, =view.zoomlevel]},
@@ -315,7 +315,8 @@
 		pixels-per-point-x: 1,
 		pixels-per-point-y: 1,
 		padding: [10, 0],
-		min-height: 50
+		min-height: 50,
+		display:{ if: =app.version, at-least: 5.4, then: inherit, else: none }
 	},
 
 	image: {

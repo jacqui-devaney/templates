@@ -7,7 +7,6 @@
 		{#body_container: { 
             padding: [0, 10, 0, 10],
 			flow: article_body
-			
         }},
 		{#mediabucket: {
 			width:248,
@@ -47,7 +46,6 @@
 		<box id="mediabucket" embed="mediabucket" />
 		<p class="article_byline" embed="byline"></p>
         <panel class="article_body" embed="body"/>
-	    
 	</panel>
 	
 </jpml>

@@ -2,13 +2,13 @@
 {.line: { background-color:#b1aca1}},
 {#whatsnews_wrapper:{display:none}},
 {jpml: {
-	border-width:[{if: =app.version, starts-with: "5.3", then: 0, else:1}, 0, 0, 0], 
+	border-width:[{if-any: [{if: =app.version, starts-with: "5.3", then: true, else: false}, {if: =app.version, starts-with: "5.4", then: true, else: false}], then: 0, else:1}, 0, 0, 0], 
 	border-color:black
 }},
 {if: =portrait, then: {
 		#marketstrap:	{ 
-				frame: [0, 0, 768, 44],
-				border-width:[0, 0, {if: =app.version, starts-with: "5.3", then: 1, else:0}, 0], 
+				frame: [0, 0, 768, 25],
+				border-width:[0, 0, {if-any: [{if: =app.version, starts-with: "5.3", then: true, else: false}, {if: =app.version, starts-with: "5.4", then: true, else: false}], then: 1, else:0}, 0], 
 				border-color:black
 			},
 		#whatsnews:		{ frame: [3, 34, 183, 642], 
@@ -27,7 +27,7 @@
 				{$multiply:[=scale.pagey, 750]}
 			] }
 		},
-		#whatsnews_itp:		{ frame: [5, 44, 246, 817], 
+		#whatsnews_itp:		{ frame: [3, 1, 183, 780], 
 			options: { expanded-frame: [
 				{$multiply:[=scale.pagex, 3]}, 
 				{$multiply:[=scale.pagey, 0]}, 
@@ -38,8 +38,8 @@
 		#ad_background: { frame: [3, 677, 182, 195] }
 	}, else: {
 		#marketstrap:	{ 
-				frame: [0, 0, 1024, 44],
-				border-width:[0, 0, {if: =app.version, starts-with: "5.3", then: 1, else:0}, 0], 
+				frame: [0, 0, 1024, 25],
+				border-width:[0, 0, {if-any: [{if: =app.version, starts-with: "5.3", then: true, else: false}, {if: =app.version, starts-with: "5.4", then: true, else: false}], then: 1, else:0}, 0], 
 				border-color:black
 				
 			},
@@ -59,7 +59,7 @@
 				{$multiply:[=scale.pagey, 492]}
 			] }
 		},
-		#whatsnews_itp:		{ frame: [5, 44, 246, 566], 
+		#whatsnews_itp:		{ frame: [11, 1, 183, 520], 
 			options: { expanded-frame: [
 				{$multiply:[=scale.pagex, 3]}, 
 				{$multiply:[=scale.pagey, 0]}, 

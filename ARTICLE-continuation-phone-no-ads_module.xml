@@ -4,9 +4,9 @@
 	<style src="PHONE-MODULES-stylesheet.ejs" />
 	<style>{
 		$join: [
-		{#body_container : { padding: [10, 10, 0, 10]}},
+		{#body_container : { padding: [0, 10, 0, 10]}},
 		{.article_body: { 
-			layout-grid-line: {$multiply: [22, =view.zoomlevel]}
+			line-height: {$multiply: [22, =view.zoomlevel]}
         }},
 		{#body_continuation: {
 			content: from-flow(article_body),
@@ -22,11 +22,6 @@
 			border-image:url(articleBackground.png),
 			border-width: [16, 0, 0, 0],
 			border-slice: [16, 0, 0, 0]
-		}},
-		{#continues_label: {
-			padding: [0, 10, 3, 0],
-			display: { if: =page.count, equals: {$add:[=page.number, 1]}, then:none, else:inherit}
-
 		}}
 		]
     }</style>
@@ -34,9 +29,6 @@
 	<box id="pageback" embed="pageback" />
 	<box id="pagedown" embed="pagenext" />
 	<box id="pageup" embed="pageback" />
-	<box id="continues_label">
-		<p><mark id="continues" /></p>
-	</box>
 	
 	<panel id="body_container">
     	<panel class="article_body" id="body_continuation" embed="body" />

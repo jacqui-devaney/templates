@@ -123,7 +123,7 @@
 
 <xsl:template match="p[@type = &quot;CODA&quot;]" priority="1">
     <xsl:if test="string(.)">
-        <!--panel class="blockquote"--><p class="blockquote-p"><xsl:apply-templates select="node()"/></p><!--/panel-->
+        <panel class="blockquote"><p class="blockquote-p"><xsl:apply-templates select="node()"/></p></panel>
     </xsl:if>
 </xsl:template>
 

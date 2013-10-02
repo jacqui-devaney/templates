@@ -13,8 +13,7 @@
 			layout-grid-line: {$multiply: [22, =view.zoomlevel]}
         }},
 		{.article_body: {
-			min-height:200
-			
+			column-min-height:50
 		}},
 		{#mediabucket: {
 			width:546,
@@ -22,9 +21,9 @@
 			anchor-x:center
 		}},
 		{if: =portrait, then: {
-            #mediabucket_container:	{ frame: [0, 0, 565, 402]  }
+            #mediabucket_container:	{ frame: [14, 10, 565, 402]  }
         }, else: {
-        	#mediabucket_container:	{ frame: [290, 0, 565, 402] }
+        	#mediabucket_container:	{ frame: [302, 10, 565, 402] }
         }},
 		{#filler: {
 			position: relative,
@@ -57,13 +56,16 @@
     </panel>
 	<box class="hr"></box>
 
-	<panel id="body_container">
+	<panel>
 		<box id="mediabucket_container">
 			<box id="mediabucket" embed="mediabucket" />
 		</box>
-	    <p class="article_byline" embed="byline"/>
-        <panel class="article_body" embed="body"/>
-    </panel>
+		<panel id="body_container">
+			<p class="article_byline" embed="byline"/>
+	        <panel class="article_body" embed="body"/>
+	    
+		</panel>
+	</panel>
     <box id="filler">
 		<box id="article_advertisement" class="ad-twocolumn" embed="advertisement"/>
 	</box>

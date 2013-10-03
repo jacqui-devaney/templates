@@ -1,3 +1,4 @@
+
 <catalog  preprocessor="preprocessor.ejs">
 	<templates>
 		<!-- FRONT SECTION -->
@@ -18,9 +19,9 @@
 		/>
         <template 
 			name="FRONT-3story-F_v2_template.xml" 
-			title="3 story - F Photo Banner" 
+			title="4 story - F Photo Banner" 
 			section="FRONT_SECTION" 
-			min="3" 
+			min="4" 
 			usage="front"/>
         <template 
 			name="FRONT-3story-F-deco_v2_template.xml" 
@@ -1104,6 +1105,14 @@
 			page="3" 
 		/>
 		<template 
+			name="CONTINUATION-fancy-8_template.xml" 
+			title="9 stories - smallG liondoor"
+			min="9" 
+			usage="continuation" 
+			deco="true" 
+			page="4" 
+		/>
+		<template 
 			name="CONTINUATION-fancy-9_template.xml" 
 			title="9 stories - smallG liondoor"
 			min="9" 
@@ -1427,6 +1436,7 @@
 			min="4" 
 			usage="continuation"
 			page="2" 
+			storyorder="feed"
 		/>
 		<template 
 			name="SECTION-3story-G_template.xml" 
@@ -1434,6 +1444,7 @@
 			min="5" 
 			usage="continuation"
 			page="2" 
+			storyorder="feed"
 		/>
 		<template 
 			name="SECTION-3story-G-deco-C_template.xml" 
@@ -1442,6 +1453,7 @@
 			min="5" 
 			usage="continuation" 
 			page="2"
+			storyorder="feed"
 		/>
 		<template 
 			name="SECTION-3story-G-mirror_template.xml" 
@@ -1450,6 +1462,7 @@
 			min="5" 
 			usage="continuation" 
 			page="2"
+			storyorder="feed"
 		/>
 		<template 
 			name="SECTION-4story-smallG-deco_template.xml" 
@@ -1458,6 +1471,7 @@
 			min="6" 
 			usage="continuation" 
 			page="2"
+			storyorder="feed"
 		/>
 		<template 
 			name="SECTION-1story-PV-1highlight_template.xml" 
@@ -1465,6 +1479,7 @@
 			min="2" 
 			usage="continuation" 
 			page="2"
+			storyorder="feed"
 		/>
 		<template 
 			name="SECTION-1story-PV-1highlight-white_template.xml" 
@@ -1472,6 +1487,7 @@
 			min="2" 
 			usage="continuation" 
 			page="2"
+			storyorder="feed"
 		/>
 		<template 
 			name="SECTION-1story-PV_template.xml" 
@@ -1479,6 +1495,7 @@
 			min="3" 
 			usage="continuation" 
 			page="2"
+			storyorder="feed"
 		/>
 		<template 
 			name="SECTION-1story-PV-white_template.xml" 
@@ -1486,6 +1503,7 @@
 			min="3" 
 			usage="continuation" 
 			page="2"
+			storyorder="feed"
 		/>
 
 		<template 
@@ -1494,6 +1512,7 @@
 			min="3" 
 			usage="continuation" 
 			page="2"
+			storyorder="feed"
 		/>
 		<template 
 			name="SECTION-1story-P-white_template.xml" 
@@ -1501,6 +1520,7 @@
 			min="3" 
 			usage="continuation" 
 			page="2"
+			storyorder="feed"
 		/>
 		<template 
 			name="SECTION-1story-P-1highlight_template.xml" 
@@ -1508,6 +1528,7 @@
 			min="2" 
 			usage="continuation" 
 			page="2"
+			storyorder="feed"
 		/>
 		<template 
 			name="SECTION-1story-P-1highlight-white_template.xml" 
@@ -1515,6 +1536,7 @@
 			min="2" 
 			usage="continuation" 
 			page="2"
+			storyorder="feed"
 		/>
 		<template 
 			name="SECTION-1story-fullsize-deco.xml" 
@@ -1523,6 +1545,7 @@
 			deco="true"
 			usage="continuation"
 			page="2" 
+			storyorder="feed"
 		/>
 		<template 
 			name="SECTION-1story-fullsize-deco.xml"
@@ -1531,6 +1554,7 @@
 			deco="true"
 			usage="continuation"
 			page="3" 
+			storyorder="feed"
 		/>
 		<template 
 			name="SECTION-1story-fullsize-deco.xml"
@@ -1539,6 +1563,7 @@
 			deco="true"
 			usage="continuation"
 			page="4" 
+			storyorder="feed"
 		/>
 
 		<!-- END DOUBLE SECTION FRONTS -->

@@ -35,6 +35,7 @@
 	<style>{
 		$switch: [
 		 {if: =scale.phone, then: {
+			#b1: {height: {if: =page.number, equals:1, then:50, else:166 }}
 		 }},
 		 {if: =portrait, then: {
 			#b1:	{ 

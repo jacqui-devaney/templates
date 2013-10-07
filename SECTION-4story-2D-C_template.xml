@@ -4,8 +4,8 @@
 	<style src="PHONE-stylesheet.ejs" />
 	<style>{
 		#b1: {options: { $switch: [
-				{if: =scale.phone, then: {large_headline:true, show_image:true}},
-				{if: =portrait, then: {justify:true, large_headline:true, hide_image:{if: =widescreen, then:true, else:false}, two_columns:{if: =widescreen, then:true, else:false}}},
+				{if: =scale.phone, then: {large_headline:{if: =page.number, equals:0, then:true, else:false }, show_image:true}},
+				{if: =portrait, then: {justify:true, large_headline:true, hide_image:{if: =widescreen, then:true, else:false}}},
 				{if: =landscape, then: {justify:true, large_headline:true}}			
 			]}},
 		#b2: {options: { $switch: [

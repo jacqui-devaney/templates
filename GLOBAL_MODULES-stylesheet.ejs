@@ -253,7 +253,8 @@
 		line-height:{$multiply:18},
 		text-overflow: " \u00bb",
         text-align: { if: =options.justify, then:=justify, else:left},
-		text-scale: {if: =widescreen, then: {$multiply: [=scale.text, 1.2] }, else: inherit}
+		text-scale: {if: =widescreen, then: {$multiply: [=scale.text, 1.2] }, else: inherit},
+		hyphens:auto
 
 	},
 	h2: {
@@ -490,7 +491,8 @@
 		text-overflow: " \u00bb",
         text-align: left,
 		text-indent:{if: =issue.edition, equals: "japan", then: 0, else:20},
-		text-scale:{if: =widescreen, then: {$multiply: [=scale.text, 1.1] }, else: inherit}
+		text-scale:{if: =widescreen, then: {$multiply: [=scale.text, 1.1] }, else: inherit},
+		hyphens:auto
 		
 	},
 	
@@ -573,7 +575,8 @@
 			],
 			then:0,
 			else:20
-		}
+		},
+		hyphens:auto
 	},
 	.highlight_flashline_small: {
 		font-name: { if: =issue.edition, equals: "japan", then: HiraKakuProN-W3, else: DJ5RetinaCd-Semibold },
@@ -687,7 +690,8 @@
 		line-height:18,
 		padding: [ 0, 0, 8, 0 ],
 		text-align:left,
-		text-scale: {if: =widescreen, then: {$multiply: [=scale.text, 1.1] }, else: inherit}
+		text-scale: {if: =widescreen, then: {$multiply: [=scale.text, 1.1] }, else: inherit},
+		hyphens:auto
 		
 	},
 	#rando_header: { 
@@ -876,7 +880,8 @@
 		text-indent:0,
 		font-size:{$multiply: [15, =view.zoomlevel]},
 		line-height:{$multiply: [20, =view.zoomlevel]},
-        text-align: =justify
+        text-align: =justify,
+		hyphens:auto
 
 	},
 	#close_button_p: {
@@ -944,12 +949,20 @@
 	#m_subsection: { content: =article.subsection },
 	#m_headline: { content: =article.headline },
 	.list-item: { 
-		    text-indent: -16,
-		    padding: [0, 0, 0, 16]
-	  },
-	  .list-item-bullet: {
-	    content: "\u00a0\u2022 "
+		text-indent: -16,
+		padding: [0, 0, 0, 16]
 	},
+	.list-item-bullet: {
+		content: "\u00a0\u2022 "
+	},
+	.blockquote: {
+		padding: [0, 0, 10, 20]
+	},
+	.blockquote-p: {
+		padding: [0, 0, 0, 8],
+		border-width: [0, 0, 0, 1],
+		border-color: black
+	  },
 	#hack: {
 		if-any: [
 			{if: =device.platform, not-equal-to: iOS, then: true, else: false},

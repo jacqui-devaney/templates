@@ -14,7 +14,7 @@
 		{.article_body:{
 			column-min-height:50
 		}},
-		{#mediabucket: {frame: [2, 0, 570, 630] }},
+		{#mediabucket: {frame: [0, 0, 553, 553], anchor-x:center}},
 		{if: =portrait, then: {
             #mediabucket_container:	{ frame: [0, 0, 582, 623]  }
         }, else: {

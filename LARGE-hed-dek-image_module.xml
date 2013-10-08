@@ -14,7 +14,6 @@
 				]
 			},
 			
-            anchor-y:bottom,
 			image-scale: {$max:[1,{$divide:[=view.width, 499]}]}
 		},
         

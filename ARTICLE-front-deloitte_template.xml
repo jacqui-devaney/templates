@@ -3,7 +3,7 @@
         if: =portrait, then: {
             #view: { frame: [0, 0, 768, 899] }
         }, else: {
-            #view : { frame: [0, 0, 1024, 646] }       
+            #view : { frame: [0, 0, 1024, 643] }       
         }
     }</style>
     <box id="view" embed="article" module="ARTICLE-front-deloitte_module.xml" />

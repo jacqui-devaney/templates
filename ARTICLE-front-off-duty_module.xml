@@ -1,4 +1,4 @@
-<jpml id="ARTICLE-front_module">
+<jpml id="ARTICLE-front-off-duty_module">
 	<style src="GLOBAL_MODULES-stylesheet.ejs" />
 	<style src="GLOBAL-stylesheet.ejs" />
 	<style>{
@@ -14,11 +14,12 @@
 		{.article_body:{
 			column-min-height:50
 		}},
-		{#mediabucket: {frame: [0, 0, 553, 553], anchor-x:center}},
 		{if: =portrait, then: {
-            #mediabucket_container:	{ frame: [0, 0, 582, 623]  }
+            #mediabucket_container:	{ frame: [0, 0, 571, 591]},
+			#mediabucket: {frame: [0, 0, 571, 571], anchor-x:left}
         }, else: {
-        	#mediabucket_container:	{ frame: [0, 0, 582, 623]  }
+        	#mediabucket_container:	{ frame: [0, 0, 618, 608]},
+			#mediabucket: {frame: [0, 0, 608, 608], anchor-x:left}
         }}
 		
 

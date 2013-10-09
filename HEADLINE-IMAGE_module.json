@@ -3,17 +3,25 @@
     {
       "key": "border",
       "title": "Border",
-      "type": "toggle",
+      "type": "select",
       "options": [
         {
           "label": "Top Border",
           "values": {
-            "no_border": false
+            "no_border": false,
+            "right_border": false
           }
         }, {
           "label": "No Border",
           "values": {
-            "no_border": true
+            "no_border": true,
+            "right_border": false
+          }
+        }, {
+          "label": "Right Border",
+          "values": {
+            "no_border": true,
+            "right_border": true
           }
         }
       ]
@@ -33,7 +41,7 @@
     {
       "key": "image",
       "title": "Hide/Show Image",
-      "type": "select",
+      "type": "toggle",
       "options": [
         {
           "label": "Hide",
@@ -44,6 +52,24 @@
           "label": "Show",
           "values": {
             "show_image": true
+          }
+        }
+      ]
+    },
+    {
+      "key": "image",
+      "title": "Hide/Show Flashline",
+      "type": "toggle",
+      "options": [
+        {
+          "label": "Hide",
+		  "values": {
+            "show_flashline": false
+          }
+        }, {
+          "label": "Show",
+          "values": {
+            "show_flashline": true
           }
         }
       ]

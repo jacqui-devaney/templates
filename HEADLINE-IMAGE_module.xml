@@ -13,6 +13,14 @@
 					}
 			
 				}},
+				{ if: =options.right_border, then: {
+					#wrapper: {
+						padding: [10, 0, 10, 0],
+						border-width: [0, 1, 0, 0],
+						border-color:black
+					}
+			
+				}},
 				{ if: true, then: {
 					#wrapper: {
 						border-width: [1, 0, 0, 0],
@@ -21,7 +29,6 @@
 					}
 					}}
 			]},
-			{#padding: [20, 8] },
 			{#body: { 
 	            column-count: {$switch: [
 					{if: =widescreen, then: { if: =options.two_columns, then:2, else:1 }},
@@ -33,8 +40,8 @@
 			{#body_container: { padding: [0, 8]}},
 			{#headline: { padding: [0, 8]}},
 			{#tablet_image: {
-				width:{$subtract:[=view.width, 18]}, 
-				height:{$multiply: [{$subtract:[=view.width, 18]}, {if: =options.F_image, then:0.39, else:0.66}] },
+				width:{$subtract:[=view.width, {if: =options.right_border, then:19, else:18}]}, 
+				height:{$multiply: [{$subtract:[=view.width, {if: =options.right_border, then:19, else:18}]}, {if: =options.F_image, then:0.39, else:0.66}] },
 				display: { if: =options.show_image, then:inherit, else:none },
 				padding: [0, 9, 8, 9],
 				options: {
@@ -46,16 +53,25 @@
 				pixels-per-point-y:1,
                 image-scale: {$max:[1,{$divide:[{$subtract:[=view.width, 18]}, 553]}]}
 			}},
-			{.phone:{display:none}}
+			{.phone:{display:none}},
+			{.highlight_flashline: {display: {if: =options.show_flashline, then:inherit, else:none}}}
 			]
 		}</style>
 		<style>{
 			if: =scale.phone, then: {
-				#body_container: {padding:[0]},
+				jpml: {
+					border-color:#d6d6d6, 
+					border-width:[0, 0, {if: =options.bottom_border, then:1, else:0}, 0]
+				},
 				#headline: {padding:[0]},
 				.tablet: {display:none},
 				.phone:{display:inherit},
-				#wrapper: {padding:[4, 8], border-color:#d6d6d6},
+				#wrapper: {
+					padding:[4, 8],
+					anchor-y:middle,
+					display:inherit,
+					border-width:[0]
+				},
 				#image_wrapper: { 
 					anchor-x:right,
 					position:relative,
@@ -72,6 +88,10 @@
 					padding: [0],
 					image-scale: 1
 				
+				},
+				#body_container: {
+					display: {if:=options.hide_content, then:none, else:inherit},
+					padding:[0]
 				}
 				
 			}, else:{}
@@ -82,7 +102,8 @@
 			<image embed="summary-image" class="phone" id="phone_image" target-width="76" target-height="76" />
 		</box>
 		<panel id="headline">
-			<p class="module_headline"><mark id="m_headline" /><mark class="key" /></p>
+			<p class="highlight_flashline" embed="flashline" />
+	    	<p class="module_headline"><mark id="m_headline" /><mark class="key" /></p>
 		</panel>
 		<image class="tablet" id="tablet_image" embed="summary-image"/>
 		

@@ -37,34 +37,20 @@
 					}
 			}},
 			{#headline: { padding:[0, 0, 12, 0] }},
-			{.invisible: { display:none }},
-			{#small_headline: { display: { if: =options.small_headline, then:inherit }}},
-			{#medium_headline: { display: { if: =options.medium_headline, then:inherit }}},
-			{#large_headline: { display: { if: =options.large_headline, then:inherit }}},
-			{#bignews_huge_headline: { display: { if: =options.bignews_huge_headline, then:inherit }}},
-			{#bignews_large_headline: { display: { if: =options.bignews_large_headline, then:inherit }}},
-			{#bignews_big_headline: { display: { if: =options.bignews_big_headline, then:inherit }}},
-			{#bignews_small_headline: { display: { if: =options.bignews_small_headline, then:inherit }}},
 			{.byline: {display: {$switch: [
 				{if: =scale.small, then:{if: =options.byline, then:inherit, else:none}},
-				{if: =scale.large, then: inherit}
+				{if: =scale.large, then: {if: =options.no_byline, then:none, else:inherit}}
 			]}}},
 			{#body-first-p: {text-indent: {$switch: [
 				{if: =scale.small, then:{if: =options.no_indent, then:0, else:inherit}},
-				{if: =scale.large, then: inherit}
+				{if: =scale.large, then: {if: =options.no_indent, then:0, else:inherit}}
 			]}}}
 				
 		]	
 		
 		}</style>
 		<panel id="headline">
-			<p id="small_headline" class="invisible"><span embed="headline" /><mark class="key" /></p>
-			<p id="medium_headline" class="invisible"><span embed="headline" /><mark class="key" /></p>
-			<p id="large_headline" class="invisible"><span embed="headline" /><mark class="key" /></p>
-			<p id="bignews_huge_headline" class="invisible"><span embed="headline" /></p>
-			<p id="bignews_large_headline" class="invisible"><span embed="headline" /></p>
-			<p id="bignews_big_headline" class="invisible"><span embed="headline" /></p>
-			<p id="bignews_small_headline" class="invisible"><span embed="headline" /></p>
+			<p class="module_headline"><span embed="headline" /><mark class="key" /></p>
 		</panel> 
 		<box id="image_wrapper">
 			<box id="image_container">

@@ -1,0 +1,43 @@
+{
+  "influence": [
+  {
+    "key": "image_size",
+    "title": "Image Size",
+    "type": "select",
+    "options": [
+      {
+       "label": "Dynamic",
+       "values": {
+         "G_image": false,
+         "F_image": false,
+         "P_image": false
+        }
+      },
+      {
+        "label": "G 553w 369h",
+        "values": {
+        	"G_image": true,
+        	"F_image": false,
+        	"P_image": false
+        }
+      },
+      {
+        "label": "F 571w 226h",
+        "values": {
+	        "G_image": false,
+	        "F_image": true,
+	        "P_image": false
+        }
+      },
+      {
+        "label": "P 749w 499h",
+        "values": {
+	        "G_image": false,
+	        "F_image": false,
+	        "P_image": true
+        }
+      }
+  ]
+}
+]
+}

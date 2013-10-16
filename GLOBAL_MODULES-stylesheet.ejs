@@ -1,175 +1,154 @@
 {
-	#bignews_huge_headline: {
-		font-name: { $switch: [
-				{if: =issue.edition, equals: "japan", then: HiraKakuProN-W6},
-				{if: =issue.edition, equals: "korea", then: AppleSDGothicNeo-Bold},
-				DJ5EscrowCond-Bold
-			]
-		},
-		font-size:{if-all: [
-            =scale.headlines,
-            {if: =extents.huge, more-than: 1.0, then: true, else: false}, 
-            {if: =extents.huge, less-than: 1.5, then: true, else: false}
-        ], then: 65, else: 75 },
-		line-height:{if-all: [
-            =scale.headlines,
-            {if: =extents.huge, more-than: 1.0, then: true, else: false}, 
-            {if: =extents.huge, less-than: 1.5, then: true, else: false}
-        ], then: 65, else: 75 },
-		text-scale: {if: =scale.small, then: {$multiply: [=scale.text, 0.9] }, else: inherit}
+	#invisible: {
+		display:none
 	},
-	#bignews_large_headline: {
-		font-name: { $switch: [
-				{if: =issue.edition, equals: "japan", then: HiraKakuProN-W6},
-				{if: =issue.edition, equals: "korea", then: AppleSDGothicNeo-Bold},
-				"DJ5EscrowCond-Bold"
-			]
-		},
-		font-size:{if-all: [
-            =scale.headlines,
-            {if: =extents.huge, more-than: 1.0, then: true, else: false}, 
-            {if: =extents.huge, less-than: 1.5, then: true, else: false}
-        ], then: 57, else: 67 },
-		line-height:{if-all: [
-            =scale.headlines,
-            {if: =extents.huge, more-than: 1.0, then: true, else: false}, 
-            {if: =extents.huge, less-than: 1.5, then: true, else: false}
-        ], then: 57, else: 67 },
-		text-scale: {if: =scale.small, then: {$multiply: [=scale.text, 0.9] }, else: inherit}
-	},
-	#bignews_big_headline: {
-		font-name: { $switch: [
-				{if: =issue.edition, equals: "japan", then: HiraKakuProN-W6},
-				{if: =issue.edition, equals: "korea", then: AppleSDGothicNeo-Bold},
-				"DJ5EscrowCond-Bold"
-			]
-		},
-		font-size:{if-all: [
-            =scale.headlines,
-            {if: =extents.big, more-than: 1.0, then: true, else: false}, 
-            {if: =extents.big, less-than: 1.5, then: true, else: false}
-        ], then: 47, else: 57},
-		line-height:{if-all: [
-            =scale.headlines,
-            {if: =extents.big, more-than: 1.0, then: true, else: false}, 
-            {if: =extents.big, less-than: 1.5, then: true, else: false}
-        ], then: 51, else: 61},
-		text-scale: {if: =scale.small, then: {$multiply: [=scale.text, 0.9] }, else: inherit}
-	},
-	#bignews_small_headline: {
-		font-name: { $switch: [
-				{if: =issue.edition, equals: "japan", then: HiraKakuProN-W6},
-				{if: =issue.edition, equals: "korea", then: AppleSDGothicNeo-Bold},
-				"DJ5EscrowCond-Bold"
-			]
-		},
-		font-size:{if-all: [
-            =scale.headlines,
-            {if: =extents.big, more-than: 1.0, then: true, else: false}, 
-            {if: =extents.big, less-than: 1.5, then: true, else: false}
-        ], then: 39, else: 49},
-		line-height:{if-all: [
-            =scale.headlines,
-            {if: =extents.big, more-than: 1.0, then: true, else: false}, 
-            {if: =extents.big, less-than: 1.5, then: true, else: false}
-        ], then: 39, else: 49},
-		text-scale: {if: =scale.small, then: {$multiply: [=scale.text, 0.9] }, else: inherit}
-	},
-	#large_headline: {
-		font-name: { $switch: [
-				{if: =issue.edition, equals: "japan", then: HiraKakuProN-W6},
-				{if: =issue.edition, equals: "korea", then: AppleSDGothicNeo-Bold},
-				"DJ5EscrowCond-Bold"
-			]
-		},
-		font-size:{if-all: [
-            =scale.headlines,
-            {if: =extents.large, more-than: 1.0, then: true, else: false}, 
-            {if: =extents.large, less-than: 1.5, then: true, else: false}
-        ], then: 32, else: 40 },
-		line-height:{ $switch: [
-				{if: =issue.edition, equals: "japan", then: {if-all: [
-				    =scale.headlines,
-				    {if: =extents.large, more-than: 1.0, then: true, else: false}, 
-				    {if: =extents.large, less-than: 1.5, then: true, else: false}
-				], then: 36, else: 44 }
+	.module_headline: {
+		$join: [
+			{
+				font-name: { $switch: [
+						{if: =issue.edition, equals: "japan", then: HiraKakuProN-W6},
+						{if: =issue.edition, equals: "korea", then: AppleSDGothicNeo-Bold},
+						DJ5EscrowCond-Bold
+					]
 				},
-				{if: =issue.edition, equals: "korea", then: {if-all: [
-				    =scale.headlines,
-				    {if: =extents.large, more-than: 1.0, then: true, else: false}, 
-				    {if: =extents.large, less-than: 1.5, then: true, else: false}
-				], then: 36, else: 44 }},
-				{if-all: [
-				    =scale.headlines,
-				    {if: =extents.large, more-than: 1.0, then: true, else: false}, 
-				    {if: =extents.large, less-than: 1.5, then: true, else: false}
-				], then: 34, else: 42 }
-			]
-		},
-		text-scale: {if: =scale.small, then: {$multiply: [=scale.text, 0.9] }, else: inherit}
-		
-		
-	},
-	#medium_headline: {
-		font-name: { $switch: [
-				{if: =issue.edition, equals: "japan", then: HiraKakuProN-W6},
-				{if: =issue.edition, equals: "korea", then: AppleSDGothicNeo-Bold},
-				"DJ5EscrowCond-Bold"
-			]
-		},
-		font-size:{if-all: [
-            =scale.headlines,
-            {if: =extents.medium, more-than: 1.0, then: true, else: false}, 
-            {if: =extents.medium, less-than: 1.5, then: true, else: false}
-        ], then: 24, else: 32 },
-		line-height:{ $switch: [
-				{if: =issue.edition, equals: "japan", then: {if-all: [
-				    =scale.headlines,
-				    {if: =extents.large, more-than: 1.0, then: true, else: false}, 
-				    {if: =extents.large, less-than: 1.5, then: true, else: false}
-				], then: 30, else: 38 }
-				},
-				{if: =issue.edition, equals: "korea", then: {if-all: [
-				    =scale.headlines,
-				    {if: =extents.large, more-than: 1.0, then: true, else: false}, 
-				    {if: =extents.large, less-than: 1.5, then: true, else: false}
-				], then: 30, else: 38 }},
-				"36"
-			]
-		},
-		text-scale: {if: =scale.small, then: {$multiply: [=scale.text, 0.9] }, else: inherit}
-		
-		
-	},
-	#small_headline: {
-		font-name: { $switch: [
-				{if: =issue.edition, equals: "japan", then: HiraKakuProN-W6},
-				{if: =issue.edition, equals: "korea", then: AppleSDGothicNeo-Bold},
-				"DJ5EscrowCond-Bold"
-			]
-		},
-		font-size:24,
-		line-height:{ $switch: [
-				{if: =issue.edition, equals: "japan", then: 28},
-				{if: =issue.edition, equals: "korea", then: 28},
-				"26"
-			]
-		},
-		text-scale: {if: =scale.small, then: {$multiply: [=scale.text, 0.85] }, else: inherit},
-		padding:[0, 0, 3, 0]
-		
-	},
-	#extra_small_headline: {
-		font-name: { $switch: [
-				{if: =issue.edition, equals: "japan", then: HiraKakuProN-W6},
-				{if: =issue.edition, equals: "korea", then: AppleSDGothicNeo-Bold},
-				"DJ5EscrowCond-Bold"
-			]
-		},
-		font-size:20,
-		line-height:22,
-		text-scale: {if: =scale.small, then: {$multiply: [=scale.text, 0.85] }, else: inherit}
-		
+				text-scale: {if: =scale.small, then: {$multiply: [=scale.text, 0.9] }, else: inherit}
+				
+			},
+			{
+				$switch:[
+					{if: =options.small_headline, then:{
+						font-size:24,
+						line-height:{ $switch: [
+								{if: =issue.edition, equals: "japan", then: 28},
+								{if: =issue.edition, equals: "korea", then: 28},
+								"26"
+							]
+						}
+						}
+					},
+					{if: =options.medium_headline, then:{
+							font-size:{if-all: [
+						        =scale.headlines,
+						        {if: =extents.medium, more-than: 1.0, then: true, else: false}, 
+						        {if: =extents.medium, less-than: 1.5, then: true, else: false}
+						    ], then: 24, else: 32 },
+							line-height:{ $switch: [
+									{if: =issue.edition, equals: "japan", then: {if-all: [
+									    =scale.headlines,
+									    {if: =extents.large, more-than: 1.0, then: true, else: false}, 
+									    {if: =extents.large, less-than: 1.5, then: true, else: false}
+									], then: 30, else: 38 }
+									},
+									{if: =issue.edition, equals: "korea", then: {if-all: [
+									    =scale.headlines,
+									    {if: =extents.large, more-than: 1.0, then: true, else: false}, 
+									    {if: =extents.large, less-than: 1.5, then: true, else: false}
+									], then: 30, else: 38 }},
+									"36"
+								]
+							}
+						}
+					},
+					{if: =options.large_headline, then: {
+							font-size:{if-all: [
+						        =scale.headlines,
+						        {if: =extents.large, more-than: 1.0, then: true, else: false}, 
+						        {if: =extents.large, less-than: 1.5, then: true, else: false}
+						    ], then: 32, else: 40 },
+							line-height:{ $switch: [
+									{if: =issue.edition, equals: "japan", then: {if-all: [
+									    =scale.headlines,
+									    {if: =extents.large, more-than: 1.0, then: true, else: false}, 
+									    {if: =extents.large, less-than: 1.5, then: true, else: false}
+									], then: 36, else: 44 }
+									},
+									{if: =issue.edition, equals: "korea", then: {if-all: [
+									    =scale.headlines,
+									    {if: =extents.large, more-than: 1.0, then: true, else: false}, 
+									    {if: =extents.large, less-than: 1.5, then: true, else: false}
+									], then: 36, else: 44 }},
+									{if-all: [
+									    =scale.headlines,
+									    {if: =extents.large, more-than: 1.0, then: true, else: false}, 
+									    {if: =extents.large, less-than: 1.5, then: true, else: false}
+									], then: 34, else: 42 }
+								]
+							}
+						}
+					},
+					{if: =options.bignews_small_headline, then: {
+							font-size:{if-all: [
+						        =scale.headlines,
+						        {if: =extents.big, more-than: 1.0, then: true, else: false}, 
+						        {if: =extents.big, less-than: 1.5, then: true, else: false}
+						    ], then: 39, else: 49},
+							line-height:{if-all: [
+						        =scale.headlines,
+						        {if: =extents.big, more-than: 1.0, then: true, else: false}, 
+						        {if: =extents.big, less-than: 1.5, then: true, else: false}
+						    ], then: 39, else: 49}
+						}
+					},
+					{if: =options.bignews_big_headline, then: {
+							font-size:{if-all: [
+					            =scale.headlines,
+					            {if: =extents.big, more-than: 1.0, then: true, else: false}, 
+					            {if: =extents.big, less-than: 1.5, then: true, else: false}
+					        ], then: 47, else: 57},
+							line-height:{if-all: [
+					            =scale.headlines,
+					            {if: =extents.big, more-than: 1.0, then: true, else: false}, 
+					            {if: =extents.big, less-than: 1.5, then: true, else: false}
+					        ], then: 51, else: 61}
+
+						}
+					},
+					{if: =options.bignews_large_headline, then: {
+							font-size:{if-all: [
+						        =scale.headlines,
+						        {if: =extents.huge, more-than: 1.0, then: true, else: false}, 
+						        {if: =extents.huge, less-than: 1.5, then: true, else: false}
+						    ], then: 57, else: 67 },
+							line-height:{if-all: [
+						        =scale.headlines,
+						        {if: =extents.huge, more-than: 1.0, then: true, else: false}, 
+						        {if: =extents.huge, less-than: 1.5, then: true, else: false}
+						    ], then: 57, else: 67 }
+						}
+					},
+					{if: =options.bignews_huge_headline, then: {
+							font-size:{if-all: [
+						        =scale.headlines,
+						        {if: =extents.huge, more-than: 1.0, then: true, else: false}, 
+						        {if: =extents.huge, less-than: 1.5, then: true, else: false}
+						    ], then: 65, else: 75 },
+							line-height:{if-all: [
+						        =scale.headlines,
+						        {if: =extents.huge, more-than: 1.0, then: true, else: false}, 
+						        {if: =extents.huge, less-than: 1.5, then: true, else: false}
+						    ], then: 65, else: 75 }
+						}
+					},
+					{if: =options.extra_small_headline, then: {
+							font-size:20,
+							line-height:22
+						}
+					},
+					{if: true, then: {
+							font-size:24,
+							line-height:{ $switch: [
+									{if: =issue.edition, equals: "japan", then: 28},
+									{if: =issue.edition, equals: "korea", then: 28},
+									"26"
+								]
+							}
+						}
+					}
+					
+				]
+				
+			}
+		]
 	},
 	.article_headline: {
 		font-name: { $switch: [
@@ -365,52 +344,72 @@
 		padding: [ 0, 0, 10, 0 ]
 		
 	},
-	#deco_headline: {
+	.deco_headline: {
+		$join: [
+			{
+				font-name: { $switch: [
+						{if: =issue.edition, equals: "japan", then: HiraKakuProN-W6},
+						{if: =issue.edition, equals: "korea", then: AppleSDGothicNeo-Bold},
+						"DJ5RetinaCd-Medium"
+					]
+				},
+				color:#000,
+				text-scale: {if: =scale.small, then: {$multiply: [=scale.text, .8] }, else: inherit}
+			},
+			{
+				$switch: [
+					{if: =options.normal_headline, then: {
+							font-size:24,
+							line-height:24,
+							display:inherit
+						}
+						
+					},
+					{if: =options.small_headline, then: {
+							font-size:21,
+							line-height:24,
+							display:inherit
+						}
+						
+					},
+					{if: =options.medium_headline, then: {
+							font-size:21,
+							line-height:21,
+							display:inherit
+						}
+						
+					},
+					{if: true, then: {
+							display:none
+						}
+						
+					}				
+					
+					
+				]
+			}
+		]
+	},
+	.deco_bottom_headline:{
 		font-name: { $switch: [
 				{if: =issue.edition, equals: "japan", then: HiraKakuProN-W6},
 				{if: =issue.edition, equals: "korea", then: AppleSDGothicNeo-Bold},
 				"DJ5RetinaCd-Medium"
 			]
 		},
-		font-size:24,
-		line-height:24,
 		color:#000,
-		text-scale: {if: =scale.small, then: {$multiply: [=scale.text, .8] }, else: inherit}
-		
-	},
-	#deco_bottom_headline: {
-		font-name: { $switch: [
-				{if: =issue.edition, equals: "japan", then: HiraKakuProN-W6},
-				{if: =issue.edition, equals: "korea", then: AppleSDGothicNeo-Bold},
-				"DJ5RetinaCd-Medium"
-			]
+		text-scale: {if: =scale.small, then: {$multiply: [=scale.text, .8] }, else: inherit},
+		display:{if-any: [
+				{if: =options.bottom_headline, then:true}, 
+				{if: =options.small_bottom_headline, then:true}
+			], 
+			then: inherit, 
+			else:none
 		},
-		font-size:24,
-		line-height:24,
-		color:#000
+		font-size:{if: =options.small_bottom_headline, then: 21, else:24},
+		line-height:24
 	},
-	#deco_small_headline: {
-		font-name: { $switch: [
-				{if: =issue.edition, equals: "japan", then: HiraKakuProN-W6},
-				{if: =issue.edition, equals: "korea", then: AppleSDGothicNeo-Bold},
-				"DJ5RetinaCd-Medium"
-			]
-		},
-		font-size:21,
-		line-height:24,
-		color:#000
-	},
-	#deco_medium_headline: {
-		font-name: { $switch: [
-				{if: =issue.edition, equals: "japan", then: HiraKakuProN-W6},
-				{if: =issue.edition, equals: "korea", then: AppleSDGothicNeo-Bold},
-				"DJ5RetinaCd-Medium"
-			]
-		},
-		font-size:21,
-		line-height:21,
-		color:#000
-	},
+	
 	.deco_caption: {
 		font-name: { $switch: [
 				{if: =issue.edition, equals: "japan", then: HiraKakuProN-W6},
@@ -950,8 +949,11 @@
 	#m_subsection: { content: =article.subsection },
 	#m_headline: { content: =article.headline },
 	.list-item: { 
-		    text-indent: -16,
-		    padding: [0, 0, 0, 16]
+		text-indent: -16,
+		padding: [0, 0, 0, 16]
+	},
+	.list-item-bullet: {
+		content: "\u00a0\u2022 "
 	},
 	.blockquote: {
 		padding: [0, 0, 10, 20]
@@ -960,9 +962,6 @@
 		padding: [0, 0, 0, 8],
 		border-width: [0, 0, 0, 1],
 		border-color: black
-	  },
-	  .list-item-bullet: {
-	    content: "\u00a0\u2022 "
 	  },
 	#hack: {
 		if-any: [
@@ -976,8 +975,6 @@
 			display:none
 		}
 	}
-
-	
 	
 	
 }

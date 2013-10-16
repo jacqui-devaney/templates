@@ -1,0 +1,41 @@
+{
+  "influence": [
+    {
+      "key": "strap",
+      "title": "Subsection Strap",
+      "comment": "Note: hiding the strap disables the dynamic generation of the strap based on subsection mapping.",
+      "type": "toggle",
+      "options": [{
+        "label": "Show",
+        "values": { "hide_strap": false }
+      }, {
+        "label": "Hide",
+        "values": { "hide_strap": true }
+      }]
+    },
+    {
+      "key": "indent",
+      "title": "Indent First Paragraph",
+      "type": "toggle",
+      "options": [{
+        "label": "Yes",
+        "values": { "indent": true }
+      }, {
+        "label": "No",
+        "values": { "indent": false }
+      }]
+    },
+    {
+      "key": "columns",
+      "title": "Columns",
+      "type": "toggle",
+      "options": [{
+        "label": "2 Columns",
+        "values": { "two_columns": true }
+      }, {
+        "label": "1 Column",
+        "values": { "two_columns": false }
+      }]
+    }
+  ]
+}

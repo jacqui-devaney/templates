@@ -1656,6 +1656,54 @@
 	
 			<!-- FANCY CONTINUATION -->
 			<template 
+				name="CONTINUATION-fancy-3story-G_template.xml" 
+				title="3 stories - G"
+				min="3" 
+				usage="continuation" 
+				deco="true" 
+				page="2" 
+			/>		
+			<template 
+				name="CONTINUATION-fancy-3story-G_template.xml" 
+				title="3 stories - G"
+				min="3" 
+				usage="continuation" 
+				deco="true" 
+				page="3" 
+			/>
+			<template 
+				name="CONTINUATION-fancy-3story-G_template.xml" 
+				title="3 stories - G"
+				min="3" 
+				usage="continuation" 
+				deco="true" 
+				page="4" 
+			/>
+			<template 
+				name="CONTINUATION-fancy-4story-G_template.xml" 
+				title="4 stories - G"
+				min="4" 
+				usage="continuation" 
+				deco="true" 
+				page="2" 
+			/>		
+			<template 
+				name="CONTINUATION-fancy-4story-G_template.xml" 
+				title="4 stories - G"
+				min="4" 
+				usage="continuation" 
+				deco="true" 
+				page="3" 
+			/>
+			<template 
+				name="CONTINUATION-fancy-4story-G_template.xml" 
+				title="4 stories - G"
+				min="4" 
+				usage="continuation" 
+				deco="true" 
+				page="4" 
+			/>
+			<template 
 				name="CONTINUATION-fancy-5_template.xml" 
 				title="5 stories - smallG liondoor"
 				min="5" 
@@ -2256,7 +2304,7 @@
 		<ads section="RISK_AND_COMPLIANCE" value=";;;" />
 		<ads value="2; 3; 3,5; 3,6; 3,6,8; 3,6,9; 3,6,9,11; 3,6,9,12; 3,6,9,12,14; 3,6,9,12,15"
 		/>
-		<continuation-counts value="4; 5; 6; 7; 8; 4, 5; 5, 5; 5, 6; 5, 5, 6, 7, 7, 7, 7; 5, 6, 6, 7, 7, 7"/>
+		<continuation-counts value="4; 5; 6; 7; 8; 4, 5; 5, 5; 5, 6; 5, 7; 6, 7; 4, 5, 5; 4, 5, 6; 5, 5, 6; 5, 6, 6; 5, 6, 7; 5, 7, 7; 4, 5, 5, 6; 5, 5, 5, 6; 5, 5, 6, 6; 5, 6, 6, 6; 5, 6, 6, 7; 5, 6, 7, 7; 6, 6, 7, 7; 6, 7, 7, 7; 5, 5, 6, 6, 6; 5, 6, 6, 6, 6; 5, 6, 6, 6, 7; 5, 6, 6, 7, 7; 5, 6, 7, 7, 7; 6, 6, 7, 7, 7; 6, 7, 7, 7, 7; 5, 5, 6, 6, 6, 7; 5, 5, 6, 6, 7, 7; 5, 5, 6, 7, 7, 7; 5, 6, 6, 7, 7, 7; 5, 6, 7, 7, 7, 7; 6, 6, 7, 7, 7, 7"/>
 	</display-properties>
 	
 </catalog>

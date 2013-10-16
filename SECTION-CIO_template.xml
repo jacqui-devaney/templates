@@ -63,18 +63,21 @@
 			}
 		},
 		#b7:	{ 
-			options: {small:true, border:true}
+			options: {if: =scale.phone, then:
+				{small:true, border:true, small_headline:true}, else:
+				{small:true, extra_small_headline:true}
+			}
 		},
 		#b8:	{ 
 			options: {if: =scale.phone, then:
-				{small:true, border:true}, else:
-				{small:true}
+				{small:true, border:true, small_headline:true}, else:
+				{small:true, extra_small_headline:true}
 			}
 		},
 		#b9:	{ 
 			options: {if: =scale.phone, then:
-				{small:true, border:true}, else:
-				{small:true}
+				{small:true, border:true, small_headline:true}, else:
+				{small:true, extra_small_headline:true}
 			}
 		},
 		#h5: {

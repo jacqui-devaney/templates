@@ -23,8 +23,6 @@
 			{if: =portrait, then: {E_image:true, white_highlight:true, top_border:true}},
 			{if: =landscape, then: {D_image:true, white_highlight:true, top_border:true, large_padding:true}}			
 		]}}
-		
-
     }</style>
 	<style>{$switch: [
         {if: =portrait, then: {

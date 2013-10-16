@@ -1,10 +1,12 @@
-<jpml id="RIGHT-TOP-INSET-IMAGE_module">
+<jpml id="RIGHT-MIDDLE-INSET-IMAGE_module">
 	<style src="GLOBAL_MODULES-stylesheet.ejs" />
 	<style src="GLOBAL-stylesheet.ejs" />
 	<style src="PHONE-MODULES-stylesheet.ejs" />
 	<style>{
         jpml: {
-			padding:[10, 0, {if: =options.bottom, then:15, else:10}, 0]
+			padding:[10, {if: =options.right_border, then:0, else:8}, 10, 8],
+			border-width:[{if: =options.top_border, then:1, else:0}, 0, 0, 0],
+			border-color:#b1aca1
 		},
 		#body: { 
             column-count: { if: =options.one_column, then:1, else:2},
@@ -12,7 +14,7 @@
         },
         #image_container: { 
 			comment: "14 represents half of 28, which is 20 gutter + 8 jpml left padding",
-			width:{$divide: [{$subtract: [=view.width, {$multiply:[=scale.dpi,28]}]}, 2]},
+			width:{if: =options.one_column, then: {$subtract:[=view.width, 18]}, else:{$divide: [{$subtract: [=view.width, {$multiply:[=scale.dpi,28]}]}, 2]}},
 			padding: [0, 0, 8, 20],
 			anchor-x:right,
 			anchor-y:top,
@@ -20,13 +22,20 @@
 			pixels-per-point-y:1,
 			image-scale:1		
 		},		
+		#wrapper: {
+			border-width:[0, {if: =options.right_border, then:1, else:0}, 0, 0],
+			border-color:#b1aca1,
+			padding:[4, {if: =options.right_border, then:8, else:0}, 0, 0]
+			
+		},
 		image: {
-			height:{$multiply: [{$subtract:[=view.width, {$multiply:[=scale.dpi,28]}]}, 0.33] },
+			height:{if: =options.one_column, then:{$multiply:[{$subtract:[=view.width, 18]}, 0.66]}, else:{$multiply: [{$subtract:[=view.width, {$multiply:[=scale.dpi, 28]}]}, 0.31] }},
 			display: { if: =options.hide_image, then:none, else:inherit }
 		},
 		.body: {options:{text-align: { if: =options.justify, then:=justify, else:left}}},
 		.byline: {display: {if: =options.no_byline, then:none, else:inherit}},
-		#body-first-p: {text-indent: {if: =options.no_indent, then:0, else:inherit}}
+		#body-first-p: {text-indent: {if: =options.no_indent, then:0, else:inherit}},
+		.highlight_flashline: {display: {if: =options.show_flashline, then:inherit, else:none}}
 		
 	}</style>
 	<style>{
@@ -34,7 +43,7 @@
 			jpml: {
 				border-width: [0, 0, {if: =options.no_border, then:0, else:1}, 0],
 				border-color: #d6d6d6,
-				padding: [10, 0, 0, 0]
+				padding: [0]
 			},
 			#image_container: { 
 				anchor-x:right,
@@ -60,19 +69,32 @@
 			.body: {
 				padding:[0, 8, 0, 8]
 			},
-			#headline: { padding: [0, 0, 0, 8]}
+			#wrapper: { 
+				padding: [0, 8, 0, 8],
+				anchor-y:middle,
+				display:inherit,
+				border-width:[0]
+			},
+			#body_container: {
+				display: {if:=options.hide_content, then:none, else:inherit},
+				padding:[0]
+			}
+			
 		}, else:{}
 	}</style>
-		<box id="image_container">
-			<image embed="summary-image"/>
-		</box>
-	    <panel id="headline">
-			<p class="module_headline"><mark id="m_headline" /><mark class="key" /></p>
+	<box id="wrapper"> 
+	  <panel id="headline">
+			<p class="highlight_flashline" embed="flashline" />
+	    	<p class="module_headline"><mark id="m_headline" /><mark class="key" /></p>
 		</panel>
-		<panel id="body-container">
+		<panel id="body_container">
+			<box id="image_container">
+				<image embed="summary-image"/>
+			</box>
 			<panel id="body">
 	            <p class="byline" embed="byline"/>
 	            <panel class="body" embed="body"/>
 	        </panel>
 	    </panel>
+	</box>
 </jpml>

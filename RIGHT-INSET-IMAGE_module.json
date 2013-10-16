@@ -1,0 +1,91 @@
+{
+  "influence": [
+    {
+      "key": "border",
+      "title": "Border",
+      "type": "toggle",
+      "options": [{
+        "label": "No Border",
+        "values": { "no_border": true }
+      }, {
+        "label": "Top Border",
+        "values": { "no_border": false }
+      }]
+    },
+    {
+      "key": "headline_size",
+      "title": "Headline Size",
+      "type": "select",
+      "options": [
+        {
+          "label": "Small",
+          "values": {
+            "medium_headline":false,
+			"large_headline": false,
+            "small_headline": true
+          }
+        },
+        {
+          "label": "Medium",
+          "values": {
+          	"medium_headline":true,
+            "large_headline": false,
+            "small_headline": false
+          }
+        },
+        {
+          "label": "Large",
+          "values": {
+          	"medium_headline":false,
+            "large_headline": true,
+            "small_headline": false
+          }
+        }
+      ]
+    },
+    {
+      "key": "byline",
+      "title": "Hide/Show Byline",
+      "type": "toggle",
+      "options": [{
+        "label": "Show",
+        "values": { "no_byline": false }
+      }, {
+        "label": "Hide",
+        "values": { "no_byline": true }
+      }]
+    },
+    {
+      "key": "image_size",
+      "title": "Image Size",
+	"type": "select",
+      "options": [
+        {
+          "label": "C 167w 94h",
+          "values": {
+            "C_image": true
+          }
+        },
+        {
+          "label": "A 76w 76w",
+          "values": {
+          "C_image": false
+          }
+        }
+      ]
+    },
+    {
+      "key": "indent",
+      "title": "First Paragraph Indent",
+      "type": "toggle",
+      "options": [{
+        "label": "Indent",
+        "values": { "indent": true }
+      }, {
+        "label": "No Indent",
+        "values": { "indent": false }
+      }]
+    }
+
+  ]
+}

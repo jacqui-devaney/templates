@@ -62,10 +62,6 @@
 				},
                 image-scale: {$max:[1,{$divide:[{$subtract:[=view.width, 18]}, 553]}]}
             }},			
-			{.invisible: { display:none }},
-			{#small_headline: { display: { if: =options.small_headline, then:inherit }}},
-			{#medium_headline: { display: { if: =options.medium_headline, then:inherit }}},
-			{#large_headline: { display: { if: =options.large_headline, then:inherit }}},
 			{.byline: {display: {$switch: [
 				{if: =scale.small, then:{if: =options.byline, then:inherit, else:none}},
 				{if: =scale.large, then: {if: =options.no_byline, then:none, else:inherit}}
@@ -135,9 +131,7 @@
 		</box>
 		<panel id="vertical">
 			<panel id="headline">
-		    	<p id="small_headline" class="invisible"><span embed="headline" /><mark class="key" /></p>
-				<p id="medium_headline" class="invisible"><span embed="headline" /><mark class="key" /></p>
-				<p id="large_headline" class="invisible"><span embed="headline" /><mark class="key" /></p>
+				<p class="module_headline"><span embed="headline" /><mark class="key" /></p>
 			</panel>
 			<panel id="body_container">
 		        <panel id="body">

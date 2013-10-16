@@ -150,7 +150,7 @@
 			<image embed="summary-image" class="phone" />
 		</box>
 		<panel id="not_prominent">
-			<p id="small_headline"><span embed="headline" /><mark class="key" /></p>
+			<p class="module_headline"><span embed="headline" /><mark class="key" /></p>
 	    </panel>
 	    <panel id="body_container">
 	        <panel id="body">

@@ -16,10 +16,10 @@
 		}},
 		{if: =portrait, then: {
             #mediabucket_container:	{ frame: [0, 0, 571, 591]},
-			#mediabucket: {frame: [0, 0, 571, 571], anchor-x:left}
+			#mediabucket: {frame: [0, 0, 571, 589], anchor-x:left}
         }, else: {
-        	#mediabucket_container:	{ frame: [0, 0, 618, 608]},
-			#mediabucket: {frame: [0, 0, 608, 608], anchor-x:left}
+        	#mediabucket_container:	{ frame: [0, 0, 612, 622]},
+			#mediabucket: {frame: [0, 0, 602, 620], anchor-x:left}
         }}
 		
 

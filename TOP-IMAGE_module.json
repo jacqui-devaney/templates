@@ -1,0 +1,171 @@
+{
+  "influence": [
+    {
+      "key": "border",
+      "title": "Border",
+      "type": "select",
+      "options": [
+        {
+          "label": "Top",
+          "values": {
+            "left_border": false,
+            "no_border": false
+          }
+        }, {
+          "label": "None",
+          "values": {
+            "left_border": false,
+            "no_border": true
+          }
+        }, {
+          "label": "Left",
+          "values": {
+            "left_border": true,
+            "no_border": false
+          }
+        }
+      ]
+    },
+    {
+      "key": "image",
+      "title": "Hide/Show Image",
+		"comment":"Checking 'Show' will only show an image ONLY if an appropriately sized image can be found.",
+      "type": "toggle",
+      "options": [
+        {
+          "label": "Hide",
+          "values": {
+            "show_image": false
+          }
+        }, {
+          "label": "Show",
+          "values": {
+            "show_image": true
+          }
+        }
+      ]
+    },
+    {
+      "key": "image_size",
+      "title": "Image Size",
+      "type": "select",
+      "options": [
+        {
+         "label": "Dynamic",
+         "values": {
+           "F_image": false,
+           "OZ_image": false,
+           "C_image": false,
+           "DV_image": false,
+           "G_image": false
+          }
+        },
+        {
+          "label": "G 553w 369h",
+          "values": {
+	          "F_image": false,
+	          "OZ_image": false,
+	          "C_image": false,
+	          "DV_image": false,
+	          "G_image": true
+          }
+        },
+        {
+          "label": "F 571w 226h",
+          "values": {
+            "G_image": false,
+            "G-tall_image": false,
+            "F_image": true,
+            "PT_image": false,
+            "OV_image": false,
+            "OZ_image": false,
+            "P_image": false,
+            "H_image": false
+          }
+        },
+        {
+          "label": "DV 262w 394h",
+          "values": {
+            "G_image": false,
+            "G-tall_image": false,
+            "F_image": true,
+            "PT_image": false,
+            "OV_image": false,
+            "OZ_image": false,
+            "P_image": false,
+            "H_image": false
+          }
+        },
+        {
+          "label": "OZ 570w 612h",
+          "values": {
+            "G_image": false,
+            "G-tall_image": false,
+            "F_image": false,
+            "PT_image": false,
+            "OV_image": false,
+            "OZ_image": true,
+            "P_image": false,
+            "H_image": false
+          }
+        }
+      ]
+    },
+
+    {
+      "key": "headline_size",
+      "title": "Headline Size",
+      "type": "select",
+      "options": [
+        {
+          "label": "Small",
+          "values": {
+            "medium_headline":false,
+			"large_headline": false,
+            "small_headline": true
+          }
+        },
+        {
+          "label": "Medium",
+          "values": {
+          	"medium_headline":true,
+            "large_headline": false,
+            "small_headline": false
+          }
+        },
+        {
+          "label": "Large",
+          "values": {
+          	"medium_headline":false,
+            "large_headline": true,
+            "small_headline": false
+          }
+        }
+      ]
+    },
+    {
+      "key": "byline",
+      "title": "Hide/Show Byline",
+      "type": "toggle",
+      "options": [{
+        "label": "Show",
+        "values": { "no_byline": false }
+      }, {
+        "label": "Hide",
+        "values": { "no_byline": true }
+      }]
+    },
+    {
+      "key": "justify",
+      "title": "Justify Body",
+      "type": "toggle",
+      "options": [{
+        "label": "Yes",
+        "values": { "justify": true }
+      }, {
+        "label": "No",
+        "values": { "justify": false }
+      }]
+    }
+  ]
+}

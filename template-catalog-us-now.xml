@@ -1656,6 +1656,54 @@
 	
 			<!-- FANCY CONTINUATION -->
 			<template 
+				name="CONTINUATION-fancy-3story-G_template.xml" 
+				title="3 stories - G"
+				min="3" 
+				usage="continuation" 
+				deco="true" 
+				page="2" 
+			/>		
+			<template 
+				name="CONTINUATION-fancy-3story-G_template.xml" 
+				title="3 stories - G"
+				min="3" 
+				usage="continuation" 
+				deco="true" 
+				page="3" 
+			/>
+			<template 
+				name="CONTINUATION-fancy-3story-G_template.xml" 
+				title="3 stories - G"
+				min="3" 
+				usage="continuation" 
+				deco="true" 
+				page="4" 
+			/>
+			<template 
+				name="CONTINUATION-fancy-4story-G_template.xml" 
+				title="4 stories - G"
+				min="4" 
+				usage="continuation" 
+				deco="true" 
+				page="2" 
+			/>		
+			<template 
+				name="CONTINUATION-fancy-4story-G_template.xml" 
+				title="4 stories - G"
+				min="4" 
+				usage="continuation" 
+				deco="true" 
+				page="3" 
+			/>
+			<template 
+				name="CONTINUATION-fancy-4story-G_template.xml" 
+				title="4 stories - G"
+				min="4" 
+				usage="continuation" 
+				deco="true" 
+				page="4" 
+			/>
+			<template 
 				name="CONTINUATION-fancy-5_template.xml" 
 				title="5 stories - smallG liondoor"
 				min="5" 

@@ -57,7 +57,7 @@
 		}, else:{}
 	}</style>
 	<box id="text">
-		<p id="large_headline"><span embed="headline" /><mark class="key" /></p>
+		<p class="module_headline"><span embed="headline" /><mark class="key" /></p>
 		<h2 class="large_dek"><span embed="subhed" /></h2>
 	</box>
     <image embed="summary-image" class="large" />
@@ -65,7 +65,7 @@
 		<image embed="summary-image" />
 	</box>
 	<panel id="headline">
-		<p id="large_headline" class="invisible"><span embed="headline" /><mark class="key" /></p>
+		<p class="module_headline"><span embed="headline" /><mark class="key" /></p>
 		<h2 class="large_dek"><span embed="subhed" /></h2>
         <panel id="body">
             <panel class="body" embed="body"/>

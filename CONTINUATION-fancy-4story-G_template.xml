@@ -9,18 +9,18 @@
 		]}},
 		#b2: {options: { $switch: [
 				{if: =scale.phone, then: {hide_content:true}},
-				{if: =portrait, then: {medium_headline:true, show_flashline:true, one_column:true, right_border:true}},
-				{if: =landscape, then: {medium_headline:true, show_flashline:true, one_column:true, right_border:true}}			
+				{if: =portrait, then: {small_headline:true, show_flashline:true, one_column:true, right_border:true}},
+				{if: =landscape, then: {small_headline:true, show_flashline:true, one_column:true, right_border:true}}			
 		]}},
 		#b3: {options: { $switch: [
 				{if: =scale.phone, then: {hide_content:true}},
-				{if: =portrait, then: {medium_headline:true, show_flashline:true, right_border:true, top_border:true}},
-				{if: =landscape, then: {medium_headline:true, show_flashline:true, one_column:true}}			
+				{if: =portrait, then: {small_headline:true, show_flashline:true, right_border:true, top_border:true}},
+				{if: =landscape, then: {small_headline:true, show_flashline:true, one_column:true}}			
 		]}},
 		#b4: {options: { $switch: [
 				{if: =scale.phone, then: {hide_content:true}},
-				{if: =portrait, then: {medium_headline:true, show_flashline:true, top_border:true}},
-				{if: =landscape, then: {medium_headline:true, show_flashline:true, top_border:true}}			
+				{if: =portrait, then: {small_headline:true, show_flashline:true, top_border:true}},
+				{if: =landscape, then: {small_headline:true, show_flashline:true, top_border:true}}			
 		]}}
 
     }</style>

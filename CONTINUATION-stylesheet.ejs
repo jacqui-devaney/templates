@@ -1,6 +1,6 @@
 {
 	#b1 : {
-		options: {bind: {if:=scale.phone,then:none}} 
+		options: {hide_strap: {if:=articles.b1.show_subsection, then: false, else: {if: =scale.phone, then:true, else:false}}, bind: {if:=scale.phone,then:none}, reuse:{if:=scale.phone,then:continuation}} 
 	},
 	#b2 : {
 		options: {hide_strap: {if:=articles.b2.show_subsection, then: false, else: true}, bind: {if:=scale.phone,then:none}, reuse:{if:=scale.phone,then:continuation}} 

@@ -22,21 +22,26 @@
 		        }
 	        }},
 	        {if: =portrait, then: {
-	            #b1 : { frame: [0, 0, 256, 874] },
-	            #b2 : { frame: [256, 0, 256, 581] },
-	            #b3 : { frame: [256, 581, 256, 291] },
-	            #b4 : { frame: [512, 0, 256, 291] },
-				#b5 : { frame: [512, 291, 256, 291] },
-				#b6 : { frame: [512, 582, 256, 291] }
+	            #b1 : { frame: [5, 0, 246, 320] },
+	            #b2 : { frame: [5, 320, 246, 320] },        
+	            #b3 : { frame: [5, 640, 246, 320] },
+	            #b4 : { frame: [261, 0, 246, 320] },
+				#b5 : { frame: [261, 320, 246, 320] },
+				#b6 : { frame: [261, 640, 246, 320] },
+				#ad_background: {frame: [517, 0, 246, 961]},
+				#highlight_ad:{frame: [517, 0, 246, 961], background-color:cornflowerblue}
+				
 	            
 	        }},
 			{if: =landscape, then: {
-	            #b1 : { frame: [0, 0, 256, 618] },
-	            #b2 : { frame: [256, 0, 256, 618] },        
-	            #b3 : { frame: [512, 0, 256, 618] },
-	            #b4 : { frame: [768, 0, 256, 204] },
-				#b5 : { frame: [768, 204, 256, 204] },
-				#b6 : { frame: [768, 410, 256, 204] }
+	            #b1 : { frame: [5, 0, 246, 353] },
+	            #b2 : { frame: [5, 353, 246, 353] },        
+	            #b3 : { frame: [261, 0, 246, 353] },
+	            #b4 : { frame: [261, 353, 246, 353] },
+				#b5 : { frame: [517, 0, 246, 353] },
+				#b6 : { frame: [517, 353, 246, 353] },
+				#ad_background: {frame: [773, 0, 246, 706]},
+				#highlight_ad:{frame: [773, 0, 246, 706], background-color:cornflowerblue}
 	        }}
 		]
     }</style>
@@ -46,7 +51,7 @@
     <box id="b4" embed="article" class="maude unit_continuation_strap" module="CONTINUATION-dynamic_module.xml" />
     <box id="b5" embed="article" class="maude unit_continuation_strap" module="CONTINUATION-dynamic_module.xml" />
     <box id="b6" embed="article" class="maude unit_continuation_strap" module="CONTINUATION-dynamic_module.xml" />
-    <box id="ad_background" class="maude unit_ad hidden_tablet">
+    <box id="ad_background" class="maude unit_ad">
         <box id="highlight_ad" class="ad-rectangle" embed="advertisement" />
     </box>
 </jpml>

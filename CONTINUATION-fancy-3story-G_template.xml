@@ -26,20 +26,20 @@
         {if: =portrait, then: {
             #b1 : { 
 					frame: {$switch: [
-						{if: =widescreen, then: [0, 5, 512, 537]},
-						{if: =scale.large, then: [0, 5, 512, 537]}
+						{if: =widescreen, then: [0, 5, 512, 547]},
+						{if: =scale.large, then: [0, 5, 512, 547]}
 					]}
 			},
             #b2 : { 
 					frame: {$switch: [
-						{if: =widescreen, then: [512, 5, 256, 537]},
-						{if: =scale.large, then: [512, 5, 256, 537]}
+						{if: =widescreen, then: [512, 5, 256, 547]},
+						{if: =scale.large, then: [512, 5, 256, 547]}
 					]}
 			},
             #b3 : { 
 					frame: {$switch: [
-						{if: =widescreen, then: [4, 550, 760, 325]},
-						{if: =scale.large, then: [4, 550, 760, 325]}
+						{if: =widescreen, then: [4, 560, 760, 315]},
+						{if: =scale.large, then: [4, 560, 760, 315]}
 					]}
 			}
         }},

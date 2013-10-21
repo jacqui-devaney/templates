@@ -19,7 +19,6 @@
 	<style>{ 
 		$switch: [
 			{if: =scale.phone, then: {
-	
 			}},
 			{if: =portrait, then: {
 				#b1:	{ frame: [0, 0, 768, 620]}

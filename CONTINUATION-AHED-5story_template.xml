@@ -4,7 +4,7 @@
 	<style src="PHONE-stylesheet.ejs" /> 
     <style>{
 		#b1: {options: { $switch: [
-				{if: =scale.phone, then: {}},
+				{if: =scale.phone, then: {bottom_border:true}},
 				{if: =portrait, then: {large_ahed:true, large_subhed:true, two_columns:true, center_image:true, indent:true, justify:true}},
 				{if: =landscape, then: {large_ahed:true, large_subhed:true, two_columns:true, center_image:true, indent:true, justify:true}}			
 		]}},
@@ -32,7 +32,11 @@
 
     }</style>
 	<style>{$switch: [
-        {if: =portrait, then: {
+        {if: =scale.phone, then: {
+			#b4: {height:50},
+			#b5: {height:50}
+		}},
+		{if: =portrait, then: {
             #b1 : { 
 					frame: {$switch: [
 						{if: =widescreen, then: [0, 8, 474, 549]},

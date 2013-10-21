@@ -24,7 +24,10 @@
         {if: =scale.phone, then: {
        }},
         {if: =portrait, then: {
-            #b1 : { 
+            #b1: {
+						height: {if:=articles.b1.show_subsection, then:inherit, else:50}
+			},
+	        #b1 : { 
 					frame: {$switch: [
 						{if: =widescreen, then: [0, 5, 512, 547]},
 						{if: =scale.large, then: [0, 5, 512, 547]}

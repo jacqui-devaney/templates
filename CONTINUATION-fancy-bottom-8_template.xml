@@ -13,6 +13,9 @@
     }</style>
 	<style>{$switch: [
         {if: =scale.phone, then: {
+	        #b1: {
+						height: {if:=articles.b1.show_subsection, then:inherit, else:50}
+			},
 	        #b2: {
 	                    height: {if:=articles.b2.subsection, equals:=articles.b1.subsection, then: 50} 
 	        },

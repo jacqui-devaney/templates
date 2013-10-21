@@ -212,8 +212,8 @@
     <em><xsl:apply-templates select="*|node()"/></em>
 </xsl:template>
 
-<!-- Suppress external links for now -->
-<xsl:template match="link[@type='EXTERNAL' and not(@icon = 'pdf')]">
+    <!-- Suppress external links for now -->
+    <xsl:template match="link[@type='EXTERNAL' and not(@icon = 'pdf') and not(starts-with(//article//nameloc/nmlist, 'wsj:'))]">
     <xsl:apply-templates/>
 </xsl:template>
 

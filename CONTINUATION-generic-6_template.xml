@@ -25,11 +25,11 @@
 	            #b1 : { frame: [5, 0, 246, 320] },
 	            #b2 : { frame: [5, 320, 246, 320] },        
 	            #b3 : { frame: [5, 640, 246, 320] },
-	            #b4 : { frame: [261, 0, 246, 320] },
-				#b5 : { frame: [261, 320, 246, 320] },
-				#b6 : { frame: [261, 640, 246, 320] },
-				#ad_background: {frame: [517, 0, 246, 961]},
-				#highlight_ad:{frame: [517, 0, 246, 961], background-color:cornflowerblue}
+	            #b4 : { frame: [261, 0, 246, 476] },
+				#b5 : { frame: [261, 476, 246, 476] },
+				#b6 : { frame: [517, 640, 246, 320] },
+				#ad_background: {frame: [560, 10, 160, 600]},
+				#highlight_ad:{frame: [560, 10, 160, 600], background-color:cornflowerblue}
 				
 	            
 	        }},
@@ -40,8 +40,8 @@
 	            #b4 : { frame: [261, 353, 246, 353] },
 				#b5 : { frame: [517, 0, 246, 353] },
 				#b6 : { frame: [517, 353, 246, 353] },
-				#ad_background: {frame: [773, 0, 246, 706]},
-				#highlight_ad:{frame: [773, 0, 246, 706], background-color:cornflowerblue}
+				#ad_background: {frame: [816, 53, 160, 600]},
+				#highlight_ad:{frame: [816, 53, 160, 600], background-color:cornflowerblue}
 	        }}
 		]
     }</style>

@@ -42,7 +42,7 @@
             #b3 : { 
 					frame: {$switch: [
 						{if: =widescreen, then: [4, 560, 760, 315]},
-						{if: =scale.large, then: [4, 560, 760, 315]}
+						{if: =scale.large, then: [4, 560, 760, 305]}
 					]}
 			}
         }},

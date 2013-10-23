@@ -5,18 +5,21 @@
 	<style>{
 		#deco: {options: { $switch: [
 				{if: =scale.phone, then: {normal_headline:true, G_image:true, small_caption:true}},
-				{if: =portrait, then: {small_headline:true, bottom_border:true, F_image:{if: =widescreen, then:true, else:false}}},
-				{if: =landscape, then: {small_headline:true, bottom_border:true, F_image:{if: =widescreen, then:true, else:false}}}			
+				{if: =portrait, then: {small_bottom_headline:true, bottom_border:true, F_image:{if: =widescreen, then:true, else:false}}},
+				{if: =landscape, then: {small_bottom_headline:true, bottom_border:true, F_image:{if: =widescreen, then:true, else:false}}}			
 			]}},
 		#deco2: {options: { $switch: [
 				{if: =scale.phone, then: {normal_headline:true, G_image:true, small_caption:true}},
-				{if: =portrait, then: {bottom_border:true, small_headline:true, OV_image:true}},
-				{if: =landscape, then: {bottom_border:true, small_headline:true, OV_image:true}}			
+				{if: =portrait, then: {bottom_border:true, small_bottom_headline:true, OV_image:true}},
+				{if: =landscape, then: {bottom_border:true, small_bottom_headline:true, OV_image:true}}			
 			]}}
 		
 	}</style>
 	<style>{$switch: [
 			{if: =scale.phone, then: {
+		        #b1: {
+							height: {if:=articles.b1.show_subsection, then:inherit, else:50}
+				},
 		        #b2: {
 		                    height: {if:=articles.b2.subsection, equals:=articles.b1.subsection, then: 50} 
 		        },

@@ -39,37 +39,31 @@
 			#image_container: { 
 				display:none
 			},
-			.portrait: {
-				display:none
-			},
-			.highlight_body: {
-				display:none
-			},
 			jpml: {
-				padding: [0, 8],
+				padding: [4, 8],
 				background-color:#ffffff,
 				border-width: [0, 0, {if: =options.no_border, then:0, else:1}, 0],
 				border-color:#d6d6d6
 			},
-			#wrapper: {
-				anchor-y:middle
+			#vertical: {
+				anchor-y:middle,
+				display:inherit
 			},
-			.highlight_byline: {
-				display:none
-			},
-			.highlight_body: {
-				display:none
+			.text: {
+				padding:[0]
 			}
 			
 		}, else:{}
 	
 	}</style>
 	<panel id="wrapper">
-		<panel class="text">
-			<p class="skybox_large_headline"><span embed="headline" /><mark class="key" /></p>
-			<panel class="skybox_large_dek" ><p embed="body-first-p" /></panel>
+		<box id="vertical">
+			<panel class="text">
+				<p class="skybox_large_headline"><span embed="headline" /><mark class="key" /></p>
+				<panel class="skybox_large_dek" ><p embed="body-first-p" /></panel>
 
-		</panel>
+			</panel>
+		</box>
 		<box id="image_container">
 	        <image embed="summary-image" />
 	    </box>	 

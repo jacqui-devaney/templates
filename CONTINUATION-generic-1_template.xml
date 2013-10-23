@@ -5,6 +5,9 @@
  	<style>{
 		$switch:[
 	        {if: =scale.phone, then: {
+		        #b1: {
+							height: {if:=articles.b1.show_subsection, then:inherit, else:50}
+				}
 	        }},
 			{if: =portrait, then: {
 	            #b1 : { frame: [0, 0, 256, 874] }

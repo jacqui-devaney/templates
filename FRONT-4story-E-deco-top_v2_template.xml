@@ -1,8 +1,22 @@
 <jpml id="FRONT-4story-E-deco-top_v2_template">
 	<style src="GLOBAL-stylesheet.ejs" />
 	<style src="FRONT-stylesheet.ejs" />
+	<style src="PHONE-stylesheet.ejs"/>
+	<style>{
+		#deco: {
+			options:{$switch:[
+				{if: =scale.phone, then: {normal_headline:true}},
+				{if: =portrait, then: {normal_headline:true, medium_caption:{if: =widescreen, then:false, else:true}, no_border:true, F_image: {if: =widescreen, then:true, else:false}}},
+				{if: =landscape, then: {normal_headline:true, medium_caption:true, no_caption:{if: =widescreen, then:true, else:false}}}
+			]	
+		}}
+		
+	}</style>
 	<style> {
-		if: =portrait, then: {
+		$switch: [{if: =scale.phone, then:{
+		
+		}},
+		{if: =portrait, then: {
 				#marketstrap: {display:{if: =standard, then:none, else:inherit}},
 			#whatsnews: {display:{if: =standard, then:none, else:inherit}},
 			#whatsnews_itp: {display:{if: =standard, then:inherit, else:none}},
@@ -10,8 +24,7 @@
 								frame: {$switch: [
 									{if: =widescreen, then: [194, 28, 328, 234]},
 									{if: =scale.large, then: [194, 0, 375, 335]}
-								]},
-								options:{normal_headline:true, medium_caption:{if: =widescreen, then:false, else:true}, no_border:true, F_image: {if: =widescreen, then:true, else:false}} 
+								]}
 							},
 			#b1:			{ 
 								frame: {$switch: [
@@ -41,8 +54,9 @@
 								]},
 								options:{no_indent:true, no_image:{if: =widescreen, then:false, else:true}}
 							}
-		}, else: {
-				#marketstrap: {display:{if: =standard, then:none, else:inherit}},
+		}}, 
+		{if: =landscape, then: {
+			#marketstrap: {display:{if: =standard, then:none, else:inherit}},
 			#whatsnews: {display:{if: =standard, then:none, else:inherit}},
 			#whatsnews_itp: {display:{if: =standard, then:inherit, else:none}},
 			#b1:	{ 
@@ -56,8 +70,7 @@
 					frame: {$switch: [
 						{if: =widescreen, then: [205, 248, 280, 288]},
 						{if: =scale.large, then: [205, 195, 375, 335]}
-					]},
-					options:{normal_headline:true, medium_caption:true, no_caption:{if: =widescreen, then:true, else:false}} 
+					]} 
 			},
             #b2: 	{ 
 					frame: {$switch: [
@@ -78,7 +91,7 @@
 						]},
 					options:{no_image:{if: =widescreen, then:false, else:true}, no_indent:true}
 				}
-		}
+		}}]
 		
 		
 		
@@ -87,13 +100,13 @@
 	<box id="marketstrap" embed="marketstrap" />
 		<box id="whatsnews" embed="whatsnews" />
 	<box id="whatsnews_itp" embed="whatsnews" />
+	<box id="deco" embed="article" class="maude unit_G_deco" module="DECO_module.xml" />
+	<box id="b1" embed="article" class="maude unit_50" module="FRONT-NO-IMAGE_module.xml" />
+	<box id="b2" embed="article" class="maude unit_50" module="FRONT-NO-IMAGE_module.xml" />
+	<box id="b3" embed="article" class="maude unit_50" module="FRONT-NO-IMAGE_module.xml" />
+	<box id="b4" embed="article" class="maude unit_50" module="AHED_module.xml" />
 	<box class="maude unit_ad front_banner">
 		<box id="ad_banner" class="ad-banner" embed="advertisement" />
 	</box>
-	<box id="deco" embed="article" module="DECO_module.xml" />
-	<box id="b1" embed="article" module="FRONT-NO-IMAGE_module.xml" />
-	<box id="b2" embed="article" module="FRONT-NO-IMAGE_module.xml" />
-	<box id="b3" embed="article" module="FRONT-NO-IMAGE_module.xml" />
-	<box id="b4" embed="article" module="AHED_module.xml" />
 	
 </jpml>

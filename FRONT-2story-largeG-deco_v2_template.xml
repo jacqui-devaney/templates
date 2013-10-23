@@ -1,16 +1,22 @@
 <jpml id="FRONT-2story-largeG-deco_v2_template">
 	<style src="GLOBAL-stylesheet.ejs" />
 	<style src="FRONT-stylesheet.ejs" />
+	<style src="PHONE-stylesheet.ejs" />
 	<style>{
-		#marketstrap: {display:{if: =standard, then:none, else:inherit}},
-		#whatsnews: {display:{if: =standard, then:none, else:inherit}},
-		#whatsnews_itp: {display:{if: =standard, then:inherit, else:none}},
-		.front_banner: {display: {if: =standard, then:inherit, else:none}},
-		#ad_background: {display:{if: =standard, then:none, else:inherit}}
+			#deco: {options: { $switch: [
+					{if: =scale.phone, then: {normal_headline:true}},
+					{if: =portrait, then: {normal_headline:true, no_caption:{if: =widescreen, then:true, else:false}, no_border:true, H_image:true}},
+					{if: =landscape, then: {normal_headline:true, F_image:{if: =widescreen, then:true, else:false}, H_image:{if: =standard, then:true, else:false}, no_caption:{if: =widescreen, then:true, else:false}, no_border:true}}			
+				]}}
+			
 	}</style>
 	<style> {
-		
-		if: =portrait, then: {
+		$switch: [
+		{if: =scale.phone, then:{
+			#ad_background: {display:none}
+			
+		}},
+		{if: =portrait, then: {
 			#b1:	{ 
 					frame: {$switch: [
 						{if: =widescreen, then: [194, 395, 285, 480]},
@@ -22,8 +28,7 @@
 					frame: {$switch: [
 						{if: =widescreen, then: [195, 28, 569, 367]},
 						{if: =scale.large, then: [195, 0, 569, 479]}
-					]},
-					options:{normal_headline:true, no_caption:{if: =widescreen, then:true, else:false}, no_border:true, H_image:true} 
+					]}
 			},
 			#b2:	{ 
 					frame: {$switch: [
@@ -32,19 +37,31 @@
 					]},
 					options:{small_headline:true, byline:true, no_image:true}
 					
-			}
-		}, else: {
-			#whatsnews:		{ frame: [11, 34, 183, 585], options: { expanded-frame: [
-				{$multiply:[=scale.pagex, 3]}, 
-				{$multiply:[=scale.pagey, 34]}, 
-				{$multiply:[=scale.pagex, 550]}, 
-				{$multiply:[=scale.pagey, 585]}
+			},
+			#marketstrap: {display:{if: =standard, then:none, else:inherit}},
+			#whatsnews: {display:{if: =standard, then:none, else:inherit}},
+			#whatsnews_itp: {display:{if: =standard, then:inherit, else:none}},
+			.front_banner: {display: {if: =standard, then:inherit, else:none}},
+			#ad_background: {display:{if: =standard, then:none, else:inherit}}
+			
+		}}, 
+		{if: =landscape, then: {
+			#marketstrap: {display:{if: =standard, then:none, else:inherit}},
+			#whatsnews_itp: {display:{if: =standard, then:inherit, else:none}},
+			.front_banner: {display: {if: =standard, then:inherit, else:none}},
+			#whatsnews: { display:{if: =standard, then:none, else:inherit},
+				frame: [11, 34, 183, 585], options: { expanded-frame: [
+					{$multiply:[=scale.pagex, 3]}, 
+					{$multiply:[=scale.pagey, 34]}, 
+					{$multiply:[=scale.pagex, 550]}, 
+					{$multiply:[=scale.pagey, 585]}
 			] } },
 			#ad_background: { 
 					frame: {$switch: [
 						{if: =widescreen, then: [844, 422, 182, 195]},
 						{if: =scale.large, then: [807, 422, 182, 195]}
-					]}
+					]},
+					display:{if: =standard, then:none, else:inherit}
 				},
 			
 			
@@ -59,8 +76,7 @@
 						frame: {$switch: [
 							{if: =widescreen, then: [206, 26, 618, 385]},
 							{if: =scale.large, then: [206, 0, 569, 530]}
-						]},
-						options:{normal_headline:true, F_image:{if: =widescreen, then:true, else:false}, H_image:{if: =standard, then:true, else:false}, no_caption:{if: =widescreen, then:true, else:false}, no_border:true} 
+						]}
 			},
 			#b2:	{ 
 						frame: {$switch: [
@@ -70,25 +86,22 @@
 						options:{small_headline:true, no_image:true, dek:{if: =scale.small, then:true, else:false}, byline:{if: =scale.small, then:false, else:true}, no_rule:{if: =widescreen, then:true, else:false}, no_indent:true}
 			}
 			
-		}
-	
+		}}
+		]
 	} </style>
 	
 	<box id="marketstrap" embed="marketstrap" />
-	
 	<box id="whatsnews" embed="whatsnews" />
-
     <box id="whatsnews_itp" embed="whatsnews" />
-	<box class="maude unit_ad front_banner">
-		<box id="ad_banner" class="ad-banner" embed="advertisement" />
-	</box>
 	<box id="ad_background" class="front_ad">
 		<box id="ad" class="ad-rectangle" embed="advertisement" />
 	</box>
-	
-	<box id="deco" embed="article" module="DECO_module.xml" options="G_size" />
-	<box id="b1" embed="article" module="FRONT-NO-IMAGE_module.xml" />
-	<box id="b2" embed="article" module="AHED_module.xml" />
+	<box id="deco" embed="article" class="maude unit_G_deco" module="DECO_module.xml" options="G_size" />
+	<box id="b1" embed="article" class="maude unit_50" module="FRONT-NO-IMAGE_module.xml" />
+	<box id="b2" embed="article" class="maude unit_50" module="AHED_module.xml" />
+	<box class="maude unit_ad front_banner">
+		<box id="ad_banner" class="ad-banner" embed="advertisement" />
+	</box>
 	
 </jpml>
 

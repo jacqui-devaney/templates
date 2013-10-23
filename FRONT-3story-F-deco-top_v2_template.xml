@@ -1,83 +1,106 @@
 <jpml id="FRONT-3story-F-deco-top_v2_template">
     <style src="GLOBAL-stylesheet.ejs"/>
     <style src="FRONT-stylesheet.ejs"/>
+    <style src="PHONE-stylesheet.ejs"/>
     <style>{
-		#marketstrap: {display:{if: =standard, then:none, else:inherit}},
-		#whatsnews: {display:{if: =standard, then:none, else:inherit}},
-		#whatsnews_itp: {display:{if: =standard, then:inherit, else:none}}
+		#b1: {
+			options:{$switch:[
+				{if: =scale.phone, then: {large_headline:true, show_body:true, top_align:true}},
+				{if: =portrait, then: {large_headline:true, justify:true, byline:{if: =scale.small, then:true, else:false}, two_columns:true}},
+				{if: =landscape, then: {large_headline:{if: =standard, then:false, else:true}, medium_headline:{if: =standard, then:true, else:false}, justify:true, byline:{if: =scale.small, then:true, else:false}, two_columns:{if-all:[{if: =scale.large}, {if:=widescreen}], then:true, else:false}}}
+			]	
+		}},
+		#deco: {
+			options:{$switch:[
+				{if: =scale.phone, then: {normal_headline:true}},
+				{if: =portrait, then: {normal_headline:true, F_image:true, no_border:true}},
+				{if: =landscape, then: {normal_headline:true, F_image:true, no_border:true}}
+			]	
+		}}
+		
 	}</style>
 	<style>{
-        if: =portrait, then: {
-            #b1: 	{ 
-						frame: {$switch: [
-							{if: =widescreen, then: [194, 333, 571, 250]},
-							{if: =scale.large, then: [194, 305, 571, 190]}
-						]},
-						options:{large_headline:true, justify:true, byline:{if: =scale.small, then:true, else:false}, two_columns:true} 
-			},
-            #deco: 	{ 
-						frame: {$switch: [
-							{if: =widescreen, then: [194, 28, 571, 305]},
-							{if: =scale.large, then: [194, 0, 571, 305]}
-						]},
-						options:{normal_headline:true, F_image:true, no_border:true} 
-			},
-            #b2: 	{ 
-						frame: {$switch: [
-							{if: =widescreen, then: [194, 583, 280, 293]},
-							{if: =scale.large, then: [194, 494, 280, 294]}
-						]},
-						options:{small_headline:true, no_indent:true} 
-			},
-            #b3: 	{ 
-						frame: {$switch: [
-							{if: =widescreen, then: [485, 583, 280, 293]},
-							{if: =scale.large, then: [485, 494, 280, 294]}
-						]},
-						options:{small_headline:true, bottom:true, no_indent:true}  
-			}
-        }, else: {
-		#b1:	{ 
-					frame: {$switch: [
-						{if: =widescreen, then: [205, 378, 474, 242]},
-						{if: =scale.large, then: [205, 307, 571, 222]}
-					]},
-					options:{large_headline:{if: =standard, then:false, else:true}, medium_headline:{if: =standard, then:true, else:false}, justify:true, byline:{if: =scale.small, then:true, else:false}, two_columns:{if-all:[{if: =scale.large}, {if:=widescreen}], then:true, else:false}}
-			},
-		#deco:	{ 
-					frame: {$switch: [
-						{if: =widescreen, then: [205, 28, 474, 350]},
-						{if: =scale.large, then: [205, 0, 571, 307]}
-					]},
-					options: {normal_headline:true, F_image:true, no_border:true}
+        $switch: [
+			{if: =scale.phone, then:{
+			
+			}},
+			{if: =portrait, then: {
+	            #b1: 	{ 
+							frame: {$switch: [
+								{if: =widescreen, then: [194, 333, 571, 250]},
+								{if: =scale.large, then: [194, 305, 571, 190]}
+							]}
 				},
-		#b2:	{ 
-					frame: {$switch: [
-						{if: =widescreen, then: [689, 26, 333, 295]},
-						{if: =scale.large, then: [787, 0, 237, 266]}
-					]},
-					options:{small_headline:true, no_indent:true, no_border:true} 
+	            #deco: 	{ 
+							frame: {$switch: [
+								{if: =widescreen, then: [194, 28, 571, 305]},
+								{if: =scale.large, then: [194, 0, 571, 305]}
+							]}
 				},
-		#b3:	{ 
-					frame: {$switch: [
-						{if: =widescreen, then: [689, 321, 333, 295]},
-						{if: =scale.large, then: [787, 266, 237, 264]}
-					]},
-					options:{small_headline:true, no_indent:true} 
+	            #b2: 	{ 
+							frame: {$switch: [
+								{if: =widescreen, then: [194, 583, 280, 293]},
+								{if: =scale.large, then: [194, 494, 280, 294]}
+							]},
+							options:{small_headline:true, no_indent:true} 
+				},
+	            #b3: 	{ 
+							frame: {$switch: [
+								{if: =widescreen, then: [485, 583, 280, 293]},
+								{if: =scale.large, then: [485, 494, 280, 294]}
+							]},
+							options:{small_headline:true, bottom:true, no_indent:true}  
+				},
+				#marketstrap: {display:{if: =standard, then:none, else:inherit}},
+				#whatsnews: {display:{if: =standard, then:none, else:inherit}},
+				#whatsnews_itp: {display:{if: =standard, then:inherit, else:none}}
+				
+	        }}, 
+			{if: =landscape, then: {
+				#b1:	{ 
+							frame: {$switch: [
+								{if: =widescreen, then: [205, 378, 474, 242]},
+								{if: =scale.large, then: [205, 307, 571, 222]}
+							]}
+					},
+				#deco:	{ 
+							frame: {$switch: [
+								{if: =widescreen, then: [205, 28, 474, 350]},
+								{if: =scale.large, then: [205, 0, 571, 307]}
+							]}
+						},
+				#b2:	{ 
+							frame: {$switch: [
+								{if: =widescreen, then: [689, 26, 333, 295]},
+								{if: =scale.large, then: [787, 0, 237, 266]}
+							]},
+							options:{small_headline:true, no_indent:true, no_border:true} 
+						},
+				#b3:	{ 
+							frame: {$switch: [
+								{if: =widescreen, then: [689, 321, 333, 295]},
+								{if: =scale.large, then: [787, 266, 237, 264]}
+							]},
+							options:{small_headline:true, no_indent:true} 
 					
-					}
-        }
+						},
+				#marketstrap: {display:{if: =standard, then:none, else:inherit}},
+				#whatsnews: {display:{if: =standard, then:none, else:inherit}},
+				#whatsnews_itp: {display:{if: =standard, then:inherit, else:none}}
+		
+	        }}
+		]
     }</style>
 	<box id="marketstrap" embed="marketstrap" />
 	
 	<box id="whatsnews" embed="whatsnews" />
 
     <box id="whatsnews_itp" embed="whatsnews" />
+    <box id="b1" embed="article" class="maude unit_166" module="FRONT-NO-IMAGE_module.xml" />    
+    <box id="deco" embed="article" class="maude unit_G_deco" module="DECO_module.xml" />
+    <box id="b2" embed="article" class="maude unit_50" module="FRONT-NO-IMAGE_module.xml" />
+	<box id="b3" embed="article" class="maude unit_50" module="FRONT-NO-IMAGE_module.xml" />
 	<box class="maude unit_ad front_banner">
 		<box id="ad_banner" class="ad-banner" embed="advertisement" />
 	</box>
-    <box id="b1" embed="article" module="FRONT-NO-IMAGE_module.xml" />    
-    <box id="deco" embed="article" module="DECO_module.xml" />
-    <box id="b2" embed="article" module="FRONT-NO-IMAGE_module.xml" />
-	<box id="b3" embed="article" module="FRONT-NO-IMAGE_module.xml" />
 </jpml>

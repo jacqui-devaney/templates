@@ -1,47 +1,65 @@
 <jpml id="CONTINUATION-generic-5_template">
+	<style src="GRID-stylesheet.ejs" />
 	<style src="CONTINUATION-stylesheet.ejs" />
 	<style src="GLOBAL-stylesheet.ejs" />
 	<style src="PHONE-stylesheet.ejs" />
 	<style>{
 		$switch: [
 			{if: =scale.phone, then: {
-		        #b1: {
-							height: {if:=articles.b1.show_subsection, then:inherit, else:50}
-				},
-		        #b2: {
-		                    height: {if:=articles.b2.subsection, equals:=articles.b1.subsection, then: 50} 
-		        },
-		        #b3: {
-		                    height: {if:=articles.b3.subsection, equals:=articles.b2.subsection, then: 50} 
-		        },
-		        #b4: {
-		                    height: {if:=articles.b4.subsection, equals:=articles.b3.subsection, then: 50} 
-		        },
-		        #b5: {
-		                    height: {if:=articles.b5.subsection, equals:=articles.b4.subsection, then: 50} 
-		        }
 	        }},
 	        {if: =portrait, then: {
-	            #b1 : { frame: [0, 0, 256, 874] },
-	            #b2 : { frame: [256, 0, 256, 436] },
-	            #b3 : { frame: [256, 436, 256, 436] },
-	            #b4 : { frame: [512, 0, 256, 436] },
-				#b5 : { frame: [512, 436, 256, 436]}
+				#b1 : { 
+	 				height:960,
+					top:0
+				},
+				#b2 : { 
+	 				height:480,
+					top:0
+				},
+				#b3 : { 
+	 				height:480,
+					top:480
+				},
+				#b4 : { 
+	 				height:480,
+					top:0
+				},
+				#b5 : { 
+	 				height:480,
+					top:480
+				}
+		        
 	        }},
 			{if: =landscape, then: {
-	            #b1 : { frame: [0, 0, 256, 618] },
-	            #b2 : { frame: [256, 0, 256, 618] },        
-	            #b3 : { frame: [512, 0, 256, 618] },
-	            #b4 : { frame: [768, 0, 256, 412] },
-				#b5 : { frame: [768, 412, 256, 204] }
+				#b1 : { 
+	 				height:706,
+					top:0
+				},
+				#b2 : { 
+	 				height:706,
+					top:0
+				},
+				#b3 : { 
+	 				height:706,
+					top:0
+				},
+				#b4 : { 
+	 				height:353,
+					top:0
+				},
+				#b5 : { 
+	 				height:353,
+					top:353
+				}
+				
 	        }}
 		]
     }</style>
-    <box id="b1" embed="article" class="maude unit_continuation_strap" module="CONTINUATION-dynamic_module.xml" />    
-    <box id="b2" embed="article" class="maude unit_continuation_strap" module="CONTINUATION-dynamic_module.xml" />
-    <box id="b3" embed="article" class="maude unit_continuation_strap" module="CONTINUATION-dynamic_module.xml" />
-    <box id="b4" embed="article" class="maude unit_continuation_strap" module="CONTINUATION-dynamic_module.xml" />
-    <box id="b5" embed="article" class="maude unit_continuation_strap" module="CONTINUATION-dynamic_module.xml" />
+    <box id="b1" embed="article" class="column2 positionx1 maude unit_continuation_strap" module="CONTINUATION-dynamic_module.xml" />    
+    <box id="b2" embed="article" class="column2 positionx3 maude unit_continuation_strap" module="CONTINUATION-dynamic_module.xml" />
+    <box id="b3" embed="article" class="column2 positionx5-3 maude unit_continuation_strap" module="CONTINUATION-dynamic_module.xml" />
+    <box id="b4" embed="article" class="column2 positionx7-5 maude unit_continuation_strap" module="CONTINUATION-dynamic_module.xml" />
+    <box id="b5" embed="article" class="column2 positionx7-5 maude unit_continuation_strap" module="CONTINUATION-dynamic_module.xml" />
     <box id="ad_background" class="maude unit_ad hidden_tablet">
         <box id="highlight_ad" class="ad-rectangle" embed="advertisement" />
     </box>

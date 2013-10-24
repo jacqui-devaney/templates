@@ -1,41 +1,54 @@
 <jpml id="CONTINUATION-generic-4_template">
+	<style src="GRID-stylesheet.ejs" />
 	<style src="CONTINUATION-stylesheet.ejs" />
 	<style src="GLOBAL-stylesheet.ejs" />
 	<style src="PHONE-stylesheet.ejs" />
 	<style>{
 		$switch: [
 			{if: =scale.phone, then: {
-		        #b1: {
-							height: {if:=articles.b1.show_subsection, then:inherit, else:50}
-				},
-		        #b2: {
-		                    height: {if:=articles.b2.subsection, equals:=articles.b1.subsection, then: 50} 
-		        },
-		        #b3: {
-		                    height: {if:=articles.b3.subsection, equals:=articles.b2.subsection, then: 50} 
-		        },
-		        #b4: {
-		                    height: {if:=articles.b4.subsection, equals:=articles.b3.subsection, then: 50} 
-		        }
 	        }},
 	        {if: =portrait, then: {
-	            #b1 : { frame: [0, 0, 256, 874] },
-	            #b2 : { frame: [256, 0, 256, 874] },
-	            #b3 : { frame: [512, 0, 256, 436] },
-	            #b4 : { frame: [512, 437, 256, 436] }
-	        }},
+		        #b1 : { 
+	 				height:960,
+					top:0
+				},
+				#b2 : { 
+	 				height:960,
+					top:0
+				},
+				#b3 : { 
+	 				height:480,
+					top:0
+				},
+				#b4 : { 
+	 				height:480,
+					top:480
+				}
+			}},
 			{if: =landscape, then: {
-	            #b1 : { frame: [0, 0, 256, 618] },
-	            #b2 : { frame: [256, 0, 256, 618] },        
-	            #b3 : { frame: [512, 0, 256, 618] },
-	            #b4 : { frame: [768, 0, 256, 618] }
-	        }}
+	        	#b1 : { 
+	 				height:706,
+					top:0
+				},
+				#b2 : { 
+	 				height:706,
+					top:0
+				},
+				#b3 : { 
+	 				height:706,
+					top:0
+				},
+				#b4 : { 
+	 				height:706,
+					top:0
+				}
+			}}
 		]
     }</style>
-    <box id="b1" embed="article" class="maude unit_continuation_strap" module="CONTINUATION-dynamic_module.xml" />    
-    <box id="b2" embed="article" class="maude unit_continuation_strap" module="CONTINUATION-dynamic_module.xml" />
-    <box id="b3" embed="article" class="maude unit_continuation_strap" module="CONTINUATION-dynamic_module.xml" />
-    <box id="b4" embed="article" class="maude unit_continuation_strap" module="CONTINUATION-dynamic_module.xml" />
+    <box id="b1" embed="article" class="maude unit_continuation_strap column2 positionx1" module="CONTINUATION-dynamic_module.xml" />    
+    <box id="b2" embed="article" class="maude unit_continuation_strap column2 positionx3" module="CONTINUATION-dynamic_module.xml" />
+    <box id="b3" embed="article" class="maude unit_continuation_strap column2 positionx5" module="CONTINUATION-dynamic_module.xml" />
+    <box id="b4" embed="article" class="maude unit_continuation_strap column2 positionx7-5" module="CONTINUATION-dynamic_module.xml" />
     <box id="ad_background" class="maude unit_ad hidden_tablet">
         <box id="highlight_ad" class="ad-rectangle" embed="advertisement" />
     </box>

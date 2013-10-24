@@ -1,39 +1,52 @@
 {
 	#b1 : {
-		options: {hide_strap: {if:=articles.b1.show_subsection, then: false, else: {if: =scale.phone, then:true, else:false}}, bind: {if:=scale.phone,then:none}, reuse:{if:=scale.phone,then:continuation}} 
+		options: {hide_strap: {if:=articles.b1.show_subsection, then: false, else: {if: =scale.phone, then:true, else:false}}, bind: {if:=scale.phone,then:none}, reuse:{if:=scale.phone,then:continuation}},
+		height: {if-all:[{if: =scale.phone},{if: =articles.b1.show_subsection}], then:inherit, else:50}
 	},
 	#b2 : {
-		options: {hide_strap: {if:=articles.b2.show_subsection, then: false, else: true}, bind: {if:=scale.phone,then:none}, reuse:{if:=scale.phone,then:continuation}} 
+		options: {hide_strap: {if:=articles.b2.show_subsection, then: false, else: true}, bind: {if:=scale.phone,then:none}, reuse:{if:=scale.phone,then:continuation}},
+		height: {if-all:[{if: =scale.phone},{if:=articles.b2.subsection, equals:=articles.b1.subsection}], then:inherit, else:50}
+		
 	},
     #b3 : {
-		options: {hide_strap: {if:=articles.b3.show_subsection, then: false, else: true}, bind: {if:=scale.phone,then:none}, reuse:{if:=scale.phone,then:continuation}} 
+		options: {hide_strap: {if:=articles.b3.show_subsection, then: false, else: true}, bind: {if:=scale.phone,then:none}, reuse:{if:=scale.phone,then:continuation}},
+		height: {if-all:[{if: =scale.phone},{if:=articles.b3.subsection, equals:=articles.b2.subsection}], then:inherit, else:50} 
 	},
     #b4 : {
-		options: {hide_strap: {if:=articles.b4.show_subsection, then: false, else: true}, bind: {if:=scale.phone,then:none}, reuse:{if:=scale.phone,then:continuation}} 
+		options: {hide_strap: {if:=articles.b4.show_subsection, then: false, else: true}, bind: {if:=scale.phone,then:none}, reuse:{if:=scale.phone,then:continuation}},
+		height: {if-all:[{if: =scale.phone},{if:=articles.b4.subsection, equals:=articles.b3.subsection}], then:inherit, else:50} 
 	},
     #b5 : {
-		options: {hide_strap: {if:=articles.b5.show_subsection, then: false, else: true}, bind: {if:=scale.phone,then:none}, reuse:{if:=scale.phone,then:continuation}} 
+		options: {hide_strap: {if:=articles.b5.show_subsection, then: false, else: true}, bind: {if:=scale.phone,then:none}, reuse:{if:=scale.phone,then:continuation}},
+		height: {if-all:[{if: =scale.phone},{if:=articles.b5.subsection, equals:=articles.b4.subsection}], then:inherit, else:50} 
 	},
 	#b6 : {
-		options: {hide_strap: {if:=articles.b6.show_subsection, then: false, else: true}, bind: {if:=scale.phone,then:none}, reuse:{if:=scale.phone,then:continuation}} 
+		options: {hide_strap: {if:=articles.b6.show_subsection, then: false, else: true}, bind: {if:=scale.phone,then:none}, reuse:{if:=scale.phone,then:continuation}},
+		height: {if-all:[{if: =scale.phone},{if:=articles.b6.subsection, equals:=articles.b5.subsection}], then:inherit, else:50} 
 	},
 	#b7 : {
-		options: {hide_strap: {if:=articles.b7.show_subsection, then: false, else: true}, bind: {if:=scale.phone,then:none}, reuse:{if:=scale.phone,then:continuation}} 
+		options: {hide_strap: {if:=articles.b7.show_subsection, then: false, else: true}, bind: {if:=scale.phone,then:none}, reuse:{if:=scale.phone,then:continuation}},
+		height: {if-all:[{if: =scale.phone},{if:=articles.b7.subsection, equals:=articles.b6.subsection}], then:inherit, else:50} 
 	},
     #b8 : {
-		options: {hide_strap: {if:=articles.b8.show_subsection, then: false, else: true}, bind: {if:=scale.phone,then:none}, reuse:{if:=scale.phone,then:continuation}} 
+		options: {hide_strap: {if:=articles.b8.show_subsection, then: false, else: true}, bind: {if:=scale.phone,then:none}, reuse:{if:=scale.phone,then:continuation}},
+		height: {if-all:[{if: =scale.phone},{if:=articles.b8.subsection, equals:=articles.b7.subsection}], then:inherit, else:50} 
 	},
     #b9 : {
-		options: {hide_strap: {if:=articles.b9.show_subsection, then: false, else: true}, bind: {if:=scale.phone,then:none}, reuse:{if:=scale.phone,then:continuation}} 
+		options: {hide_strap: {if:=articles.b9.show_subsection, then: false, else: true}, bind: {if:=scale.phone,then:none}, reuse:{if:=scale.phone,then:continuation}},
+		height: {if-all:[{if: =scale.phone},{if:=articles.b8.subsection, equals:=articles.b9.subsection}], then:inherit, else:50} 
 	},
     #b10: {
-		options: {hide_strap: {if:=articles.b10.show_subsection, then: false, else: true}, bind: {if:=scale.phone,then:none}, reuse:{if:=scale.phone,then:continuation}} 
+		options: {hide_strap: {if:=articles.b10.show_subsection, then: false, else: true}, bind: {if:=scale.phone,then:none}, reuse:{if:=scale.phone,then:continuation}},
+		height: {if-all:[{if: =scale.phone},{if:=articles.b10.subsection, equals:=articles.b9.subsection}], then:inherit, else:50} 
 	},
     #b11: {
-		options: {hide_strap: {if:=articles.b11.show_subsection, then: false, else: true}, bind: {if:=scale.phone,then:none}, reuse:{if:=scale.phone,then:continuation}} 
+		options: {hide_strap: {if:=articles.b11.show_subsection, then: false, else: true}, bind: {if:=scale.phone,then:none}, reuse:{if:=scale.phone,then:continuation}},
+		height: {if-all:[{if: =scale.phone},{if:=articles.b11.subsection, equals:=articles.b10.subsection}], then:inherit, else:50} 
 	},
     #b12: {
-		options: {hide_strap: {if:=articles.b12.show_subsection, then: false, else: true}, bind: {if:=scale.phone,then:none}, reuse:{if:=scale.phone,then:continuation}} 
+		options: {hide_strap: {if:=articles.b12.show_subsection, then: false, else: true}, bind: {if:=scale.phone,then:none}, reuse:{if:=scale.phone,then:continuation}},
+		height: {if-all:[{if: =scale.phone},{if:=articles.b12.subsection, equals:=articles.b11.subsection}], then:inherit, else:50} 
 		}
 
 }

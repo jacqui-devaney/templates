@@ -60,8 +60,7 @@
 		<box id="vertical">
 			<panel class="text">
 				<p class="skybox_large_headline"><span embed="headline" /><mark class="key" /></p>
-				<panel class="skybox_large_dek" ><p embed="body-first-p" /></panel>
-
+				<panel class="skybox_large_dek"><p embed="body-first-p" /></panel>
 			</panel>
 		</box>
 		<box id="image_container">

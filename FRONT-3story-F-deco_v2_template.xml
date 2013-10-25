@@ -1,14 +1,25 @@
 <jpml id="FRONT-3story-F-deco_v2_template">
-    <style src="GLOBAL-stylesheet.ejs"/>
-    <style src="FRONT-stylesheet.ejs"/>
+	<style src="GLOBAL-stylesheet.ejs"/>
+    <style src="GRID-stylesheet.ejs"/>
+    <style src="ADVERTISING-stylesheet.ejs"/>
     <style src="PHONE-stylesheet.ejs"/>
     <style>{
+		#b1: {
+			options:{$switch:[
+				{if: =scale.phone, then: {large_headline:true, small_pad:true, top_align:true, show_body:true}},
+				{if: =portrait, then: {medium_headline:true, justify:true, no_border:true}},
+				{if: =landscape, then: {large_headline:true, justify:true, no_border:true}}
+			]	
+		}},
+		
+		
+		
 		#b1: {options:{
 			small_pad:{if: =scale.phone, then:true, else:false}, 
 			large_headline:true, 
 			no_border:true, 
 			byline:{if: =scale.small, then:true, else:false}, 
-			two_columns:{if-any:[{if: =scale.phone}, {if:=scale.small}], then:false, else:true}, 
+			static_columns:true, 
 			top_align:{if: =scale.phone, then:true, else:false}, 
 			show_body:{if: =scale.phone, then:true, else:false},
 			justify:true
@@ -17,7 +28,7 @@
 		}},
 		#b2: {options:{if: =portrait, 
 				then:{small_headline:true, no_indent:true},
-				else: {small_headline:true, justify:true, bottom:true, no_indent:true, no_border:true}
+				else: {small_headline:true, justify:true, no_indent:true}
 			}},
 		#deco: {options: {if: =scale.phone, 
 				then: {G_image:true, no_border:true, normal_headline:true},
@@ -27,7 +38,7 @@
 			options:{$switch:[
 				{if: =scale.phone, then: {small_headline:true, show_image:true}},
 				{if: =portrait, then: {small_headline:true, no_indent:true}},
-				{if: =landscape, then: {small_headline:true, no_indent:true}}
+				{if: =landscape, then: {justify:true, small_headline:true}}
 			]	
 		}}
 		
@@ -71,48 +82,38 @@
 				}
 	        }},
 			{if: =landscape, then:{
-				#marketstrap: {display:{if: =standard, then:none, else:inherit}},
-				#whatsnews: {display:{if: =standard, then:none, else:inherit}},
-				#whatsnews_itp: {display:{if: =standard, then:inherit, else:none}},
-						#b1:	{ 
-							frame: {$switch: [
-								{if: =widescreen, then: [205, 26, 474, 273]},
-								{if: =scale.large, then: [205, 0, 571, 222]}
-							]} 
-					},
+				#whatsnews: {
+					height:706,
+					top:0
+				},
+				#b1:	{ 
+					height:200,
+					top:0
+					
+				},
 				#deco:	{ 
-							frame: {$switch: [
-								{if: =widescreen, then: [205, 300, 474, 320]},
-								{if: =scale.large, then: [205, 222, 571, 307]}
-							]}
-						},
+					height:307,
+					top:200
+				},
 				#b2:	{ 
-							frame: {$switch: [
-								{if: =widescreen, then: [689, 26, 333, 273]},
-								{if: =scale.large, then: [787, 0, 237, 266]}
-							]}
-						},
+					height:307,
+					top:200
+				},
 				#b3:	{ 
-							frame: {$switch: [
-								{if: =widescreen, then: [689, 300, 333, 320]},
-								{if: =scale.large, then: [787, 266, 237, 264]}
-							]}
-
+					height:199,
+					top:507
 				}
 				
 			}}
 		]
     }</style>
-	<box id="marketstrap" embed="marketstrap" />
 	
-	<box id="whatsnews" embed="whatsnews" />
-
-    <box id="whatsnews_itp" embed="whatsnews" />
-    <box id="b1" embed="article" class="maude unit_166" module="FRONT-NO-IMAGE_module.xml" />    
-    <box id="b2" embed="article" class="maude unit_50" module="FRONT-NO-IMAGE_module.xml" />
-	<box id="b3" embed="article" class="maude unit_50" module="FRONT-NO-IMAGE_module.xml" />
-	<box class="maude unit_ad front_banner">
-		<box id="ad_banner" class="ad-banner" embed="advertisement" />
+	<box id="whatsnews" class="column2 positionx1" embed="whatsnews" />
+    <box id="b1" embed="article" class="column6 positionx3 maude unit_166" module="FRONT-NO-IMAGE_module.xml" />    
+    <box id="b2" embed="article" class="column2 positionx7 maude unit_50" module="FRONT-NO-IMAGE_module.xml" />
+	<box id="b3" embed="article" class="column4 positionx3 maude unit_50" module="FRONT-NO-IMAGE_module.xml" />
+	<box id="front_page" class="positionx7-5 column2">
+		<box id="cube_ad" class="ad-banner front_ad" embed="advertisement" />
 	</box>
-	<box id="deco" embed="article" class="maude unit_G_deco" module="DECO_module.xml" />
+	<box id="deco" embed="article" class="column4 positionx3 maude unit_G_deco" module="DECO_module.xml" />
 </jpml>

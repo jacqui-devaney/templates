@@ -1,75 +1,30 @@
 {$join: [
-{.line: { background-color:#b1aca1}},
-{#whatsnews_wrapper:{display:none}},
-{jpml: {
-	border-width:[{if-any: [{if: =app.version, starts-with: "5.3", then: true, else: false}, {if: =app.version, starts-with: "5.4", then: true, else: false}], then: 0, else:1}, 0, 0, 0], 
-	border-color:black
-}},
+	{jpml: {
+		border-width:[1, 0, 0, 0], 
+		border-color:black
+	}},
 {if: =portrait, then: {
-		#marketstrap:	{ 
-				frame: [0, 0, 768, 25],
-				border-width:[0, 0, {if-any: [{if: =app.version, starts-with: "5.3", then: true, else: false}, {if: =app.version, starts-with: "5.4", then: true, else: false}], then: 1, else:0}, 0], 
-				border-color:black
-			},
-		#whatsnews:		{ frame: [3, 34, 183, 642], 
+		#whatsnews: { 
+			height:960,
+			top:0, 
 			options: { expanded-frame: [
 				{$multiply:[=scale.pagex, 3]}, 
-				{$multiply:[=scale.pagey, 34]}, 
+				{$multiply:[=scale.pagey, 5]}, 
 				{$multiply:[=scale.pagex, 550]}, 
-				{$multiply:[=scale.pagey, 642]}
+				{$multiply:[=scale.pagey, 960]}
 			] }
-		},
-		#whatsnews_tall:		{ frame: [3, 34, 183, 750], 
-			options: { expanded-frame: [
-				{$multiply:[=scale.pagex, 3]}, 
-				{$multiply:[=scale.pagey, 34]}, 
-				{$multiply:[=scale.pagex, 550]}, 
-				{$multiply:[=scale.pagey, 750]}
-			] }
-		},
-		#whatsnews_itp:		{ frame: [3, 1, 183, 780], 
-			options: { expanded-frame: [
-				{$multiply:[=scale.pagex, 3]}, 
-				{$multiply:[=scale.pagey, 0]}, 
-				{$multiply:[=scale.pagex, 550]}, 
-				{$multiply:[=scale.pagey, 780]}
-			] }
-		},
-		#ad_background: { frame: [3, 677, 182, 195] }
+		}
 	}, else: {
-		#marketstrap:	{ 
-				frame: [0, 0, 1024, 25],
-				border-width:[0, 0, {if-any: [{if: =app.version, starts-with: "5.3", then: true, else: false}, {if: =app.version, starts-with: "5.4", then: true, else: false}], then: 1, else:0}, 0], 
-				border-color:black
-				
-			},
-		#whatsnews:		{ frame: [11, 34, 183, 388], 
+		#whatsnews:		{ 
+			height:706,
+			top:0, 
 			options: { expanded-frame: [
 				{$multiply:[=scale.pagex, 3]}, 
-				{$multiply:[=scale.pagey, 34]}, 
+				{$multiply:[=scale.pagey, 5]}, 
 				{$multiply:[=scale.pagex, 550]}, 
-				{$multiply:[=scale.pagey, 388]}
+				{$multiply:[=scale.pagey, 706]}
 			] }
-		},
-		#whatsnews_tall:		{ frame: [11, 34, 183, 492], 
-			options: { expanded-frame: [
-				{$multiply:[=scale.pagex, 3]}, 
-				{$multiply:[=scale.pagey, 34]}, 
-				{$multiply:[=scale.pagex, 550]}, 
-				{$multiply:[=scale.pagey, 492]}
-			] }
-		},
-		#whatsnews_itp:		{ frame: [11, 1, 183, 520], 
-			options: { expanded-frame: [
-				{$multiply:[=scale.pagex, 3]}, 
-				{$multiply:[=scale.pagey, 0]}, 
-				{$multiply:[=scale.pagex, 550]}, 
-				{$multiply:[=scale.pagey, 520]}
-			] }
-			 
-		},
-		#ad_background: { frame: [11, 422, 182, 195] },
-		.upgrade_advertisement: {display:none}
+		}
 }}
 
 ]}

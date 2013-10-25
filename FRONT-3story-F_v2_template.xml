@@ -1,7 +1,9 @@
 <jpml id="FRONT-3story-F_v2_template">
-	<style src="GLOBAL-stylesheet.ejs" />
-	<style src="FRONT-stylesheet.ejs" />
-	<style src="PHONE-stylesheet.ejs" />
+	<style src="GLOBAL-stylesheet.ejs"/>
+    <style src="GRID-stylesheet.ejs"/>
+    <style src="ADVERTISING-stylesheet.ejs"/>
+    <style src="FRONT-stylesheet.ejs"/>
+    <style src="PHONE-stylesheet.ejs"/>
 	<style>{
 		#b1: {options: {$switch: [
 				{if: =scale.phone, then:{large_headline:true, no_border:true, show_body:true, top_align:true}},
@@ -12,14 +14,14 @@
 		},
 		#b2: {
 			options: {if: =portrait, 
-				then: {small_headline:true, no_indent:true},
-				else: {small_headline:true, justify:true, no_border:true, no_indent:true}
+				then: {small_headline:true, justify:true},
+				else: {small_headline:true, justify:true}
 			}
 		},
 		#b3: {
 			options: {if: =portrait, 
 				then: {small_headline:true, no_indent:true},
-				else: {small_headline:true, no_indent:true}
+				else: {small_headline:true, no_indent:true, no_border:true}
 			}
 		}
 		
@@ -27,67 +29,45 @@
 	<style>{
 		$switch: [
 			{if: =scale.phone, then:{
-			
+				
 			}},
 			{if: =portrait, then: {
-				#marketstrap: {display:{if: =standard, then:none, else:inherit}},
-				#whatsnews: {display:{if: =standard, then:none, else:inherit}},
-				#whatsnews_itp: {display:{if: =standard, then:inherit, else:none}},
-				
 				#b1:	{ 
-							frame: {$switch: [
-								{if: =widescreen, then: [195, 28, 571, 500]},
-								{if: =scale.large, then: [195, 0, 571, 502]}
-							]}
+					height:500,
+					top:0
 				},
 				#b2:	{ 
-							frame: {$switch: [
-								{if: =widescreen, then: [195, 529, 280, 345]},
-								{if: =scale.large, then: [194, 502, 280, 285]}
-							]} 
+					height:280,
+					top:500
 				},
 				#b3:	{ 
-							frame: {$switch: [
-								{if: =widescreen, then: [485, 529, 280, 345]},
-								{if: =scale.large, then: [485, 502, 280, 285]}
-							]}
+					top:780,
+					height:180
 				}
+				
 			}},
 			{if: =landscape, then:{
-			#marketstrap: {display:{if: =standard, then:none, else:inherit}},
-			#whatsnews: {display:{if: =standard, then:none, else:inherit}},
-			#whatsnews_itp: {display:{if: =standard, then:inherit, else:none}},
 				#b1:	{ 
-					frame: {$switch: [
-						{if: =widescreen, then: [205, 28, 571, 593]},
-						{if: =scale.large, then: [205, 0, 571, 530]}
-					]}
+					height:500,
+					top:0
 				},
 				#b2:	{ 
-							frame: {$switch: [
-								{if: =widescreen, then: [787, 28, 236, 297]},
-								{if: =scale.large, then: [787, 0, 237, 266]}
-							]}
-						},
+					height:205,
+					top:500
+				},
 				#b3:	{ 
-							frame: {$switch: [
-								{if: =widescreen, then: [787, 324, 236, 297]},
-								{if: =scale.large, then: [787, 266, 237, 264]}
-							]}
+					top:0,
+					height:500
 				}
 				
 			}}
 		]
 	}</style>
-	<box id="marketstrap" embed="marketstrap" />
-	
-	<box id="whatsnews" embed="whatsnews" />
-
-    <box id="whatsnews_itp" embed="whatsnews" />
-	<box id="b1" embed="article" class="maude unit_166" module="HEADLINE-IMAGE_module.xml" />
-    <box id="b2" embed="article" class="maude unit_50" module="FRONT-NO-IMAGE_module.xml" />
-	<box id="b3" embed="article" class="maude unit_50" module="FRONT-NO-IMAGE_module.xml" />
-	<box class="maude unit_ad front_banner">
-		<box id="ad_banner" class="ad-banner" embed="advertisement" />
+	<box id="whatsnews" class="column2 positionx1" embed="whatsnews" />
+	<box id="b1" embed="article" class="column4 positionx3 maude unit_166" module="HEADLINE-IMAGE_module.xml" />
+    <box id="b2" embed="article" class="column4 positionx3 maude unit_50" module="FRONT-NO-IMAGE_module.xml" />
+	<box id="b3" embed="article" class="column2 positionx7-3 maude unit_50" module="FRONT-NO-IMAGE_module.xml" />
+	<box id="front_page" class="positionx7-5 column2">
+		<box id="cube_ad" class="ad-banner front_ad" embed="advertisement" />
 	</box>
 </jpml>

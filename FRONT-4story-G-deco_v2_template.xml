@@ -2,6 +2,7 @@
 	<style src="GLOBAL-stylesheet.ejs"/>
     <style src="GRID-stylesheet.ejs"/>
     <style src="ADVERTISING-stylesheet.ejs"/>
+    <style src="FRONT-stylesheet.ejs"/>
     <style src="PHONE-stylesheet.ejs"/>
 	<style>{
 		#b1: {
@@ -46,10 +47,6 @@
 
 		}},
 		{if: =portrait, then: {
-			#whatsnews: {
-				height:960, 
-				top:0
-			},
 			#b1: 	{ 
 				height:140,
 				top:0
@@ -72,10 +69,6 @@
 			}
         }}, 
 		{if: =landscape, then: {
-			#whatsnews: {
-				height:706, 
-				top:0
-			},
 			#b1:	{ 
 						height:174,
 						top:0

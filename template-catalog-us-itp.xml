@@ -14,7 +14,7 @@
 		<template 
 			section="FRONT_SECTION" 
 			name="FRONT-4story-Vertical-deco_v2_template.xml" 
-			title="4 story- vertical liondoor - Banner"
+			title="4 story- vertical liondoor"
 			min="4" 
 			deco="true" 
 			usage="front"
@@ -31,8 +31,8 @@
 		/>
 		<template 
 			section="FRONT_SECTION" 
-			name="FRONT-4story-E-top_v2_template.xml" 
-			title="4 story - Top Story E photo - Banner"
+			name="FRONT-4story-G-top_v2_template.xml" 
+			title="4 story - Top Story G photo"
 			min="4" 
 			usage="front"
 			storyorder="feed"
@@ -40,7 +40,7 @@
 		<template 
 			section="FRONT_SECTION" 
 			name="FRONT-4story-E_v2_template.xml" 
-			title="4 story - middle story E photo - Banner"
+			title="4 story - middle story E photo"
 			min="4" 
 			usage="front"
 			storyorder="feed"
@@ -48,7 +48,7 @@
 		<template 
 			section="FRONT_SECTION" 
 			name="FRONT-3story-F_v2_template.xml" 
-			title="3 story top story F photo - Banner"
+			title="3 story top story F photo"
 			min="3" 
 			usage="front"
 			storyorder="feed"
@@ -56,25 +56,16 @@
 		<template 
 			section="FRONT_SECTION" 
 			name="FRONT-2story-G-deco_v2_template.xml" 
-			title="2 story G liondoor - banner"
+			title="2 story G liondoor"
 			min="2" 
 			deco="true" 
-			usage="front"
-			storyorder="feed"
-		/>
-		<template 
-			name="FRONT-2story-largeG-deco_v2_template.xml"
-			section="FRONT_SECTION" 
-			title="2 story Large G liondoor - banner"
-			min="2" 
-			deco="true"
 			usage="front"
 			storyorder="feed"
 		/>
 		<template 
 			section="FRONT_SECTION" 
 			name="FRONT-3story-G-deco_v2_template.xml" 
-			title="3 story G liondoor - Banner"
+			title="3 story G liondoor"
 			min="3" 
 			deco="true" 
 			usage="front"
@@ -82,24 +73,8 @@
 		/>
 		<template 
 			section="FRONT_SECTION" 
-			name="FRONT-3story-big-news-F_v2_template.xml" 
-			title="Top Story HUGE News F - banner"
-			min="3" 
-			usage="front"
-			storyorder="feed"
-		/>
-		<template 
-			section="FRONT_SECTION" 
-			name="FRONT-3story-big-news-small_v2_template.xml" 
-			title="Top Story HUGE News small headline - Banner"
-			min="3" 
-			usage="front"
-			storyorder="feed"
-		/>
-		<template 
-			section="FRONT_SECTION" 
 			name="FRONT-3story-big-news_v2_template.xml" 
-			title="Top Story HUGE News large headline - Banner"
+			title="Top Story HUGE News large headline"
 			min="3" 
 			usage="front"
 			storyorder="feed"

@@ -21,7 +21,7 @@
 					}}
 			]},
 		{#body: { 
-            column-count: {$divide: [=view.width, {$multiply:[250, =scale.dpi]}]},
+            column-count: {if: =options.no_columns, then:1, else:{$divide: [=view.width, {$multiply:[250, =scale.dpi]}]}},
             column-gutter: 20
         }},
 		{#body_container: {

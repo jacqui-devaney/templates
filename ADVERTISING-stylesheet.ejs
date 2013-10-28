@@ -137,5 +137,24 @@
 			},
 		background-position:center
 		
+	},
+	#section_ad: {
+		top:{if: =landscape, then:470, else:706},
+		height:{if: =landscape, then:235, else:254},
+		width:251
+	},
+	#highlight_ad: {
+		pixels-per-point-x: 1,
+		pixels-per-point-y: 1,
+		anchor-x:center,
+		anchor-y:middle,
+		width: {$switch: [
+			{if: =scale.small, then: 151},
+			{if: =scale.large, then: 210}
+		]},
+		height: {$switch: [
+			{if: =scale.small, then: 125},
+			{if: =scale.large, then: 175}
+		]}
 	}
 }

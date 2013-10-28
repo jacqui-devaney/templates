@@ -1,9 +1,30 @@
 {
 	$join: [
-	{#articles: {
+	{#border: {
 		border-width:[0, 1, 0, 0], 
 		border-color:#b1aca1, 
-		padding:[3, 11, 0, 0]
+		width:1,
+		height:692,
+		left:513,
+		top:8
+	}},
+	{#background_color: {
+		background-color:#efefef, 
+		width:768,
+		height:256,
+		left:0,
+		top:706,
+		display: {if: =landscape, then:none, else:inherit}
+	}},
+	{#h1: {
+		top: {if: =landscape, then:0, else:706},
+		height: {if: =landscape, then:235, else:256},
+		width:251
+	}},
+	{#h2: {
+		top: {if: =landscape, then:235, else:706},
+		height: {if: =landscape, then:235, else:256},
+		width:251
 	}},
 	{#strap: {
 		display: {if: =scale.phone, then:inherit, else:none},
@@ -18,16 +39,6 @@
 		text-scale: {$multiply: [=scale.text, 1] },
 		line-height:16,
 		text-transform:uppercase
-	}},
-	{ if: =portrait, then: {
-		#h1: 	{ frame: [1, 620, 256, 257] },
-		#h2: 	{ frame: [257, 620, 256, 257] },
-		#ad_background: { frame: [513, 620, 254, 255], padding: [0, 1, 1, 0]}
-		
-	}, else: {
-		#h1: 	{ frame: [782, 0, 242, 209] },
-		#h2: 	{ frame: [782, 209, 242, 209] },
-		#ad_background: { frame: [782, 418, 242, 199], padding: [0, 0, 1, 0] }
 	}}
 	
 	]

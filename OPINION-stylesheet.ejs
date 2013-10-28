@@ -6,7 +6,17 @@
 		width:1,
 		height:692,
 		left:513,
-		top:8
+		top:8,
+		display:{if: =scale.phone, then:none, else:inherit}
+	}},
+	{#border2: {
+		border-width:[0, 1, 0, 0], 
+		border-color:#b1aca1, 
+		width:1,
+		height:692,
+		left:385,
+		top:8,
+		display:{if: =scale.phone, then:none, else:inherit}
 	}},
 	{#background_color: {
 		background-color:#efefef, 
@@ -14,7 +24,7 @@
 		height:256,
 		left:0,
 		top:706,
-		display: {if: =landscape, then:none, else:inherit}
+		display: {if-any: [=landscape, =scale.phone], then:none, else:inherit}
 	}},
 	{#h1: {
 		top: {if: =landscape, then:0, else:706},

@@ -1,73 +1,79 @@
-
-
 <jpml id="OPINION-4story-E_template">
 	<style src="GLOBAL-stylesheet.ejs" />
+	<style src="GRID-stylesheet.ejs"/>
+    <style src="ADVERTISING-stylesheet.ejs"/>
 	<style src="OPINION-stylesheet.ejs" />
     <style src="PHONE-stylesheet.ejs" />
     <style>{
-		#b1: {options:{justify:true, header:true}},
-		#b2: {options: {justify:true, small_headline:true, no_border:true}},
-		#b3: {options:{justify:true, small_headline:true, show_image:true, hide_summary:true, no_image:true, no_border:{if: =scale.phone, then:false, else:true}, byline:{if: =scale.small, then:true, else:false}, F_image:{if: =scale.small, then:true, else:false}}},
-		#b4: {options:{justify:true, small_headline:true, hide_summary:true, no_border:{if: =scale.phone, then:false, else:true}, byline:{if: =scale.small, then:true, else:false}}},
-		#h1: {options:{hide_image:{if-all: [=scale.small, =landscape], then:true, else:false}, byline:{if: =scale.phone, then:false, else:true}}},
-		#h2: {options:{hide_image:{if-all: [=scale.small, =landscape], then:true, else:false}, byline:{if: =scale.phone, then:false, else:true}, no_border:{if: =scale.phone, then:true, else:false}}}
+		#b1: {options:{
+			justify:true, 
+			header:true
+		}},
+		#b2: {
+			options: {
+				justify:true, 
+				header: {if: =articles.b1.type, equals: "Letters", then:false, else:true}
+		}},
+		#b3: {
+			options:{
+				justify:true, 
+				small_headline:true, 
+				show_image:true, 
+				hide_summary:true, 
+				no_image:true, 
+				no_border:{if: =scale.phone, then:false, else:true}, 
+				byline:{if: =scale.small, then:true, else:false}, 
+				F_image:{if: =scale.small, then:true, else:false}
+		}},
+		#b4: {
+			options:{
+				small_headline:true, 
+				justify:true, 
+				hide_summary:true, 
+				no_image:true, 
+				no_border:{if: =scale.phone, then:false, else:true}, 
+				byline:{if-any: [=scale.phone, =scale.large], then:false, else:true}
+		}},
+		#h2: {options:{no_border:{if: =scale.phone, then:true, else:false}}}
 	}</style>
     <style>{ 
-		$switch: [
-			{if: =scale.phone, then: {
-					#articles: {
-						padding:[0], 
-						border-width:[0]
-					}
-			}},
-			{if-any: [=scale.large, =scale.small], then: {
-				$join: [
-					{if: =portrait, then: {
-							#articles:	{ frame: [8, 10, 362, 610] },
-							#b1:	{ frame: [0, 0, 362, 314]},
-							#b3:	{ frame: [388, 2, 377, 420] },
-							#b4:	{ frame: [388, 422, 377, 196] }
-						}, else: {
-							#articles:	{ frame: [15, 10, 362, 610] },
-							#b1:	{ frame: [0, 0, 362, 314] },
-							#b3:	{ frame: [399, 2, 377, 420] },
-							#b4:	{ frame: [399, 422, 377, 196] }
-
-						}
-					},
-					{ $switch: [
-						{ if: =articles.b1.type, equals: "Letters", then: {
-		                	_comment: "no header",
-							#b2 : { frame: [0, 324, 362, 276] }
-
-						}},
-						{ if: =articles.b2.type, equals: "Letters", then: {
-							_comment: "b2 has the header",
-							#b2: { frame: [0, 314, 362, 286], options:{header:true} }
-						}},
-						{ if: true, then: {
-							_comment: "no header",
-							#b2 : { frame: [0, 324, 362, 276] }
-						}}
-					]} 
-				]
-			}}
-		]
+			if: =scale.phone, then: {
+			}, else: {
+				#b1:	{ 
+					top:8,
+					height:341
+				},
+				#b2: { 
+					top:357,
+					height:341
+				},
+				#b3: { 
+					top:0,
+					height:470
+				},
+				#b4:	 { 
+					top:470,
+					height:235
+				}	
+				
+			}
 	
 	}</style>
     
-    <box id="articles">
-		<box id="b1" embed="article" class="maude unit_100" module="OPINION-RANDO-LETTERS_module.xml" />
-    	<box id="b2" embed="article" class="maude unit_100" module="OPINION-RANDO-LETTERS_module.xml" />
-	</box>
-    <box id="ad_background" class="ad_light maude unit_ad">
+    <box id="border" />
+    <box id="border2" />
+	<!-- WE NEED TEMPLATE OPTIONS BECAUSE THIS IS JANKY -->
+    <box id="b1" embed="article" class="column3 positionx1 maude unit_100" module="OPINION-RANDO-LETTERS_module.xml" />
+    <box id="b2" embed="article" class="column3 positionx1 maude unit_100" module="OPINION-RANDO-LETTERS_module.xml" />
+    <box id="section_ad" class="column2 positionx7-5 ad_light maude unit_ad">
 		<box id="highlight_ad" class="ad-rectangle" embed="advertisement" />
 	</box>
-	<box id="b3" embed="article" class="maude unit_75" module="TOP-IMAGE_module.xml" />
-    <box id="b4" embed="article" class="maude unit_75" module="TOP-IMAGE_module.xml" />
+	<box id="b3" embed="article" class="column3 positionx4 maude unit_75" module="TOP-IMAGE_module.xml" />
+	<box id="b4" embed="article" class="column3 positionx4 maude unit_75" module="TOP-IMAGE_module.xml" />
 
-    <box id="h1" embed="article" class="maude unit_highlight" module="HIGHLIGHTS_module.xml" />
-    <box id="h2" embed="article" class="maude unit_highlight" module="HIGHLIGHTS_module.xml" />
+    <box id="h1" embed="article" class="column2 positionx7-1 maude unit_highlight" module="HIGHLIGHTS_module.xml" />
+    <box id="h2" embed="article" class="column2 positionx7-3 maude unit_highlight"  module="HIGHLIGHTS_module.xml" />
+    <box id="background_color" />
 
     
 </jpml>

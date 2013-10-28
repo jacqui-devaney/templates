@@ -6,16 +6,25 @@
 	<style src="PHONE-stylesheet.ejs" />
 	<style>{
 		#b1: {options:{justify:true, header:true}},
-		#b2: {options: {justify:true, small_headline:true, no_border:true}},
-		#b3: {options:{small_headline:true, hide_summary:true, show_image:true, no_image:true, no_border:{if: =scale.phone, then:false, else:true}, byline:{if-any: [=scale.phone, =scale.large], then:false, else:true}, F_image:{if-all: [=widescreen, =landscape], then:true, else:false}}},
-		#h1: {options:{hide_image:{if-all: [=scale.small, =landscape], then:true, else:false}, byline:{if: =scale.phone, then:false, else:true}}},
-		#h2: {options:{hide_image:{if-all: [=scale.small, =landscape], then:true, else:false}, byline:{if: =scale.phone, then:false, else:true}, no_border:{if: =scale.phone, then:true, else:false}}}
+		#b2: {
+			options: {
+				justify:true, 
+				header: {if: =articles.b1.type, equals: "Letters", then:false, else:true}
+		}},
+		
+		#b3: {options:{
+			small_headline:true, 
+			hide_summary:true, 
+			show_image:true, 
+			no_border:{if: =scale.phone, then:false, else:true}, 
+			byline:{if-any: [=scale.phone, =scale.large], then:false, else:true}, 
+			F_image:{if-all: [=widescreen, =landscape], then:true, else:false}
+		}},
+		#h2: {options:{no_border:{if: =scale.phone, then:true, else:false}}}
 	}</style>
     <style>{ 
 		$switch: [
 			{if: =scale.phone, then: {
-				#border: {display:none},
-				#background_color: {display:none}
 			}},
 			{if-any: [=scale.large, =scale.small], then: {
 				$join: [
@@ -61,6 +70,8 @@
     }</style>
     
     <box id="border" />
+    <box id="border2" />
+	<!-- WE NEED TEMPLATE OPTIONS BECAUSE THIS IS JANKY -->
     <box id="b1" embed="article" class="column4 positionx1 maude unit_100" module="OPINION-RANDO-LETTERS_module.xml" />
     <box id="b2" embed="article" class="column4 positionx1 maude unit_100" module="OPINION-RANDO-LETTERS_module.xml" />
     <box id="section_ad" class="column2 positionx7-5 ad_light maude unit_ad">

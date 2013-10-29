@@ -117,22 +117,6 @@
 			storyorder="feed"
 		/>
 		<template 
-			section="OPINION" 
-			name="OPINION-3story-E_template.xml" 
-			title="5 story (2RandO-1CMTY)"
-			min="5" 
-			usage="front"
-			storyorder="feed"
-		/>
-		<template 
-			name="OPINION-2story-E_template.xml" 
-			section="OPINION" 
-			title="4 story (1RandO-1CMTY)"
-			min="4" 
-			usage="front"
-			storyorder="feed"
-		/>
-		<template 
 			name="OPINION-6story-D_template.xml" 
 			section="OPINION" 
 			title="8 story (4 rando-2CMTY-D photo)"
@@ -149,14 +133,6 @@
 			storyorder="feed"
 		/>
 
-		<template 
-			name="OPINION-5story-D_template.xml" 
-			section="OPINION" 
-			title="7 story (3RandO-2CMTY D photo)"
-			min="7" 
-			usage="front"
-			storyorder="feed"
-		/>
 		<template 
 			name="OPINION-4story-D_template.xml" 
 			section="OPINION" 

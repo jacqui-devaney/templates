@@ -661,15 +661,6 @@
 			storyorder="feed"
 		/>
 		<template 
-			name="SECTION-1story-P-1highlight-white_template.xml" 
-			section="NEW_YORK" 
-			title="P 1 highlight - white"
-			min="2" 
-			usage="front"
-			storyorder="feed"
-		/>
-		
-		<template 
 			name="SECTION-1story-PV-1highlight_template.xml" 
 			section="NEW_YORK" 
 			title="PV - 1 highlight (grey)"
@@ -790,14 +781,6 @@
 			usage="front"
 			storyorder="feed"
 		/>
-		<template 
-			name="SECTION-1story-P-1highlight-white_template.xml" 
-			section="OFF_DUTY" 
-			title="1 story P - 1 highlight white"
-			min="2" 
-			usage="front"
-			storyorder="feed"
-		/>
 		
 		<template 
 			name="SECTION-1story-PV-1highlight_template.xml" 
@@ -879,14 +862,6 @@
 			name="SECTION-1story-P-1highlight_template.xml" 
 			section="MANSION" 
 			title="1 story P - 1 highlight"
-			min="2" 
-			usage="front"
-			storyorder="feed"
-		/>
-		<template 
-			name="SECTION-1story-P-1highlight-white_template.xml" 
-			section="MANSION" 
-			title="P 1 highlight - white"
 			min="2" 
 			usage="front"
 			storyorder="feed"
@@ -995,14 +970,6 @@
 			storyorder="feed"
 		/>
 		<template 
-			name="SECTION-1story-P-1highlight-white_template.xml" 
-			section="PERSONAL_JOURNAL" 
-			title="P - 1 Highlight white"
-			min="2" 
-			usage="front"
-			storyorder="feed"
-		/>
-		<template 
 			name="SECTION-1story-PV-1highlight_template.xml" 
 			section="PERSONAL_JOURNAL" 
 			title="PV - 1 highlight (grey)"
@@ -1105,14 +1072,6 @@
 			storyorder="feed"
 		/>
 		<template 
-			name="SECTION-1story-P-1highlight-white_template.xml" 
-			section="REVIEW" 
-			title="P 1 highlight white"
-			min="2" 
-			usage="front"
-			storyorder="feed"
-		/>
-		<template 
 			name="SECTION-1story-PV-1highlight_template.xml" 
 			section="REVIEW" 
 			title="PV 1 highlight"
@@ -1192,14 +1151,6 @@
 			name="SECTION-1story-P-1highlight_template.xml" 
 			section="JOURNAL_REPORT" 
 			title="P 1 highlight"
-			min="2" 
-			usage="front"
-			storyorder="feed"
-		/>
-		<template 
-			name="SECTION-1story-P-1highlight-white_template.xml" 
-			section="JOURNAL_REPORT" 
-			title="P 1 highlight white"
 			min="2" 
 			usage="front"
 			storyorder="feed"
@@ -1288,14 +1239,6 @@
 			storyorder="feed"
 		/>
 		<template 
-			name="SECTION-1story-P-1highlight-white_template.xml" 
-			section="FRIDAY_JOURNAL" 
-			title="P 1 highlight white"
-			min="2" 
-			usage="front"
-			storyorder="feed"
-		/>
-		<template 
 			name="SECTION-1story-PV-1highlight_template.xml" 
 			section="FRIDAY_JOURNAL" 
 			title="PV - (1 highlight Grey)"
@@ -1375,14 +1318,6 @@
 			name="SECTION-1story-P-1highlight_template.xml" 
 			section="ARENA" 
 			title="P 1 highlight"
-			min="2" 
-			usage="front"
-			storyorder="feed"
-		/>
-		<template 
-			name="SECTION-1story-P-1highlight-white_template.xml" 
-			section="ARENA" 
-			title="P 1 highlight - white"
 			min="2" 
 			usage="front"
 			storyorder="feed"
@@ -1532,14 +1467,6 @@
 			storyorder="feed"
 		/>
 		<template 
-			name="SECTION-1story-P-1highlight-white_template.xml" 
-			section="WSJ_MAGAZINE" 
-			title="P 1 highlight"
-			min="2" 
-			usage="front"
-			storyorder="feed"
-		/>
-		<template 
 			name="SECTION-1story-PV-1highlight_template.xml" 
 			section="WSJ_MAGAZINE" 
 			title="PV - 1 highlight"
@@ -1618,14 +1545,6 @@
 			name="SECTION-1story-P-1highlight_template.xml" 
 			section="WSJ_MONEY" 
 			title="P 1 highlight"
-			min="2" 
-			usage="front"
-			storyorder="feed"
-		/>
-		<template 
-			name="SECTION-1story-P-1highlight-white_template.xml" 
-			section="WSJ_MONEY" 
-			title="P 1 highlight white"
 			min="2" 
 			usage="front"
 			storyorder="feed"
@@ -2328,13 +2247,6 @@
 		<template 
 			name="SECTION-1story-P-1highlight_template.xml" 
 			title="Continuation - P-photo - 1highlight"
-			min="2" 
-			usage="continuation" 
-			page="2"
-		/>
-		<template 
-			name="SECTION-1story-P-1highlight-white_template.xml" 
-			title="Continuation - P-photo - white 1highlight"
 			min="2" 
 			usage="continuation" 
 			page="2"

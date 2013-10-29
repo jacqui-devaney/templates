@@ -1,47 +1,37 @@
 {
-	$join: [
-	{ .line_black: { background-color:#000 }},
-	{ if: =portrait, then: {
-		#h1: 	{ frame: [0, 620, 261, 257] },
-		#h2: 	{ frame: [261, 620, 256, 257] },
-		#marketdata_background: 	{ 
-			frame: [0, 620, 256, 257],
-			border-width: [ 0, 1, 0, 0],
-			border-color:#b1aca1
-		},
-		#highlight_marketdata: 	{ 
-				anchor-x:center,
-				anchor-y:middle,
-				width:239,
-				height:239
-		},
-		#ad_background: { frame: [517, 620, 251, 255], padding: [0, 1, 1, 0] },
-		#ad_background_PV: { frame: [510, 620, 258, 255], padding: [0, 0, 1, 0]},
-		#h3: 	{ frame: [0, 620, 513, 256] },
-		#h4: 	{ frame: [0, 620, 513, 256] }
-		
-		
-		
-	}, else: {
-		#h1: 	{ frame: [773, 0, 251, 216] },
-		#h2: 	{ frame: [773, 216, 251, 207] },
-		#marketdata_background: 	{ 
-			frame: [786, 0, 238, 215], 
-			border-width: [0, 0, 1, 0],
-			border-color:#b1aca1
-			
-		},
-		#highlight_marketdata: 	{ 
-				anchor-x:center,
-				anchor-y:middle,
-				width:222,
-				height:199
-		},
-		#ad_background: { frame: [773, 423, 251, 199], padding: [0, 0, 1, 0]  },
-		#h3: 	{ frame: [786, 0, 238, 423] },
-		#h4: 	{ frame: [768, 0, 256, 423] },
-		#ad_background_PV: { frame: [768, 423, 256, 199], padding: [0, 0, 1, 0]}
-		
-	}}
-	]
+	#h1: {
+		top: {if: =landscape, then:0, else:706},
+		height: {if: =landscape, then:235, else:256},
+		width:251
+	},
+	#h2: {
+		top: {if: =landscape, then:235, else:706},
+		height: {if: =landscape, then:235, else:256},
+		width:251
+	},
+	#h3: {
+		top:{if: =landscape, then:0, else:706},
+		height: {if: =landscape, then:471, else:256},
+		width:{if: =landscape, then:251, else:517}
+	},
+	#background_color: {
+		background-color:#efefef, 
+		width:{if: =landscape, then:251, else:768},
+		height:{if: =landscape, then:706, else:256},
+		left:{if: =landscape, then:771, else:0},
+		top:{if: =landscape, then:0, else:706},
+		display: {if-any: [=scale.phone, {if: =options.white_highlight, equals:true}], then:none, else:inherit}
+	},
+	#marketdata_background: 	{ 
+		frame: [0, 620, 256, 257],
+		border-width: [ 0, 1, 0, 0],
+		border-color:#b1aca1
+	},
+	#highlight_marketdata: 	{ 
+			anchor-x:center,
+			anchor-y:middle,
+			width:239,
+			height:239
+	}
+	
 }

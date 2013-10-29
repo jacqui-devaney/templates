@@ -39,7 +39,7 @@
 	}, else: {
 		#marketstrap:	{ 
 				frame: [0, 0, 1024, 25],
-				border-width:[0, 0, {if-any: [{if: =app.version, starts-with: "5.3", then: true, else: false}, {if: =app.version, starts-with: "5.4", then: true, else: false}], then: 1, else:0}, 0], 
+				border-width:[0, 0, {if-any: [{if: =app.version, starts-with: "5.3", then: true, else: false}, {if: =app.version, starts-with: "5.4", then: true, else: false}, {if: =app.version, starts-with: "5.5", then: true, else: false}], then: 1, else:0}, 0], 
 				border-color:black
 				
 			},

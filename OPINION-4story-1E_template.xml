@@ -11,13 +11,11 @@
 		}},
 		#b2: {
 			options: {
-				justify:true, 
-				header: {if: =articles.b1.type, equals: "Letters", then:false, else:true}
+				justify:true
 		}},
 		#b3: {
 			options: {
-				justify:true, 
-				header: {if: =articles.b2.type, equals: "Letters", then:false, else:true}
+				justify:true
 		}},
 		#b4: {
 			options:{
@@ -32,27 +30,55 @@
 		#h2: {options:{no_border:{if: =scale.phone, then:true, else:false}}}
 	}</style>
 	<style>{ 
-			if: =scale.phone, then: {
-			}, else: {
-				#b1:	{ 
-					top:8,
-					height:230
-				},
-				#b2: { 
-					top:246,
-					height:222
-				},
-				#b3: { 
-					top:476,
-					height:222
-				},
-				#b4:	 { 
-					top:0,
-					height:706
-				}	
+		$switch: [
+			{if: =scale.phone, then: {
+			}},
+			{if: true, then: {
+				$join: [
+					{ 
+						#b1:	{ 
+							top:8,
+							height:230
+						},
+						#b3:	 { 
+							top:476,
+							height:222
+						},	
+						#b4:	 { 
+							top:0,
+							height:706
+						}	
+					},
+					{ $switch: [
+						{ if: =articles.b1.type, equals: "Letters", then: {
+							_comment: "no header",
+							#b2 : { 
+								top:246,
+								height:222
+								
+							}
+		                }},
+						{ if: =articles.b2.type, equals: "Letters", then: {
+					 		_comment: "b2 has the header",
+							#b2 : { 
+								top:246,
+								height:222,
+								options: {header: true} 
+							}
+						}},
+						{ if: true, then: {
+							_comment: "no header",
+							#b2 : { 
+								top:246,
+								height:222
+							}
+						}}
+				    ]}
+				]
 				
-			}
-	}</style>
+			}}
+		]
+    }</style>
 
     <box id="border" />
     <box id="border2" />

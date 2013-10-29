@@ -8,8 +8,7 @@
 		#b1: {options:{justify:true, header:true}},
 		#b2: {
 			options: {
-				justify:true, 
-				header: {if: =articles.b1.type, equals: "Letters", then:false, else:true}
+				justify:true
 		}},
 		
 		#b3: {options:{
@@ -26,7 +25,7 @@
 		$switch: [
 			{if: =scale.phone, then: {
 			}},
-			{if-any: [=scale.large, =scale.small], then: {
+			{if:true, then: {
 				$join: [
 					{ 
 							#b1:	{ 

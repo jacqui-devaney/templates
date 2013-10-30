@@ -21,7 +21,7 @@
 					}}
 			]},
 		{#body: { 
-            column-count: {$divide: [=view.width, {$multiply:[250, =scale.dpi]}]},
+            column-count: {if: =options.two_columns, then:2, else:{$divide: [=view.width, {$multiply:[250, =scale.dpi]}]}},
             column-gutter: 20
         }},
 		{#body_container: {
@@ -47,7 +47,8 @@
 			{if: =scale.large, then: {if: =options.no_byline, then:none, else:inherit}}
 		]}}},
 		{.body: {padding:{if: =options.byline, then:[0], else:[3, 0, 0, 0]}}},
-		{#body-first-p: {text-indent: {if: =options.no_indent, then:0, else:inherit}}}
+		{#body-first-p: {text-indent: {if: =options.no_indent, then:0, else:inherit}}},
+		{.highlight_flashline: {display:{if:=options.show_flashline, then:inherit, else:none}}}
 		
 		]
 	}</style>
@@ -94,6 +95,7 @@
 			<image embed="summary-image" />
 		</box>
 		<panel id="headline">
+			<p class="highlight_flashline" embed="flashline" />
 			<p class="module_headline"><span embed="headline" /><mark class="key" /></p>
 		</panel>
 		<panel id="body_container">

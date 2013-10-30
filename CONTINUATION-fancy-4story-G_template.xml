@@ -9,18 +9,18 @@
 		]}},
 		#b2: {options: { $switch: [
 				{if: =scale.phone, then: {hide_content:true}},
-				{if: =portrait, then: {small_headline:true, show_flashline:true, one_column:true, no_image:true, right_border:true}},
+				{if: =portrait, then: {small_headline:true, show_flashline:true, one_column:true, no_image:true}},
 				{if: =landscape, then: {small_headline:true, show_flashline:true, one_column:true, no_image:true, right_border:true}}			
 		]}},
 		#b3: {options: { $switch: [
 				{if: =scale.phone, then: {hide_content:true}},
-				{if: =portrait, then: {small_headline:true, show_flashline:true, no_image:true, right_border:true, one_column:true, top_border:true}},
+				{if: =portrait, then: {small_headline:true, show_flashline:true, no_image:true, right_border:true, one_column:true, border:true}},
 				{if: =landscape, then: {small_headline:true, show_flashline:true, one_column:true}}			
 		]}},
 		#b4: {options: { $switch: [
 				{if: =scale.phone, then: {hide_content:true}},
-				{if: =portrait, then: {small_headline:true, show_flashline:true, top_border:true}},
-				{if: =landscape, then: {small_headline:true, show_flashline:true, top_border:true}}			
+				{if: =portrait, then: {small_headline:true, show_flashline:true, border:true}},
+				{if: =landscape, then: {small_headline:true, show_flashline:true, border:true, two_columns:true}}			
 		]}}
 
     }</style>
@@ -51,8 +51,8 @@
     ]}</style>
     <box id="b1" class="maude unit_continuation_strap" embed="article" module="HEADLINE-IMAGE_module.xml" />    
     <box id="b2" class="maude unit_continuation_strap" embed="article" module="RIGHT-MIDDLE-INSET-IMAGE_module.xml" />
-    <box id="b3" class="maude unit_continuation_strap" embed="article" module="RIGHT-MIDDLE-INSET-IMAGE_module.xml" />
-    <box id="b4" class="maude unit_continuation_strap" embed="article" module="RIGHT-MIDDLE-INSET-IMAGE_module.xml" />
+    <box id="b3" class="maude unit_continuation_strap" embed="article" module="RIGHT-INSET-IMAGE_module.xml" />
+    <box id="b4" class="maude unit_continuation_strap" embed="article" module="RIGHT-INSET-IMAGE_module.xml" />
 
 </jpml>
 

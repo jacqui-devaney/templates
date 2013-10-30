@@ -1,20 +1,27 @@
 <jpml id="SECTION-1story-fullsize-deco_template">
 	<style src="GLOBAL-stylesheet.ejs" />
 	<style src="SECTION-stylesheet.ejs" />
+	<style src="PHONE-stylesheet.ejs" />
 	<style>{
-		if: =portrait, then: {
+		$switch:[
+		{if: =scale.phone, then:{
+			#deco: {
+				options: {G_image:true, bottom_border:true, normal_headline:true, no_caption:true}
+			}
+		}},
+		{if: =portrait, then: {
 			#deco:	{ frame: [0, 0, 768, 876], options:{FULL-port_image:{if: =widescreen, then:false, else:true}, FULL-Wport_image:{if: =widescreen, then:true, else:false}} }
-		}, else: {
+		}}, 
+		{if: =landscape, then: {
 			#deco:	{ 
 				frame: [0, 0, 1024, 620], 
 				max-height: 620,
 				pixels-per-point-y: {if: =device.model, starts-with: iPad, then: 1},
 				options: {FULL-land_image:{if: =widescreen, then:false, else:true}, FULL-Wland_image:{if: =widescreen, then:true, else:false}} }
-		}
+		}}]
 	}</style>
 	
-	<box id="deco" embed="article" module="IMAGE-only_module.xml" />
-	
+	<box id="deco" embed="article" class="maude unit_G_deco" module="IMAGE-only_module.xml" />
 
 	
 </jpml>

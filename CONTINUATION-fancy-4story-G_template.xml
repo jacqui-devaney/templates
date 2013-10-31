@@ -14,7 +14,7 @@
 		]}},
 		#b3: {options: { $switch: [
 				{if: =scale.phone, then: {hide_content:true}},
-				{if: =portrait, then: {small_headline:true, show_flashline:true, no_image:true, right_border:true, one_column:true, border:true}},
+				{if: =portrait, then: {small_headline:true, show_flashline:true, no_image:true, right_top_border:true, one_column:true}},
 				{if: =landscape, then: {small_headline:true, show_flashline:true, one_column:true}}			
 		]}},
 		#b4: {options: { $switch: [

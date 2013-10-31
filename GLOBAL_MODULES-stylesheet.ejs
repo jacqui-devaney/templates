@@ -44,7 +44,12 @@
 									    {if: =extents.large, more-than: 1.0, then: true, else: false}, 
 									    {if: =extents.large, less-than: 1.5, then: true, else: false}
 									], then: 30, else: 38 }},
-									"36"
+									{if-all: [
+									    =scale.headlines,
+									    {if: =extents.large, more-than: 1.0, then: true, else: false}, 
+									    {if: =extents.large, less-than: 1.5, then: true, else: false}
+									], then: 26, else: 36 }
+									
 								]
 							}
 						}

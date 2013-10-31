@@ -13,6 +13,22 @@
 					}
 			
 				}},
+				{ if: =options.right_border, then: {
+					#wrapper: {
+						border-width: [0, 1, 0, 0],
+						border-color: #b1aca1,
+						padding: [8, 8, 0, 8]
+					}
+			
+				}},
+				{ if: =options.right_top_border, then: {
+					#wrapper: {
+						border-width: [1, 1, 0, 0],
+						border-color: #b1aca1,
+						padding: [8, 8, 0, 8]
+					}
+			
+				}},
 				{ if: true, then: {
 					#wrapper: {
 					border-width: [0],
@@ -42,10 +58,12 @@
 			
 		}},
         {#headline: { padding: [ 0, 4, 0, 0 ] }},
-		{.byline: {display: {$switch: [
+		{.byline: {
+		display: {$switch: [
 			{if: =scale.small, then:{if: =options.byline, then:inherit, else:none}},
 			{if: =scale.large, then: {if: =options.no_byline, then:none, else:inherit}}
-		]}}},
+		]}
+		}},
 		{.body: {padding:{if: =options.byline, then:[0], else:[3, 0, 0, 0]}}},
 		{#body-first-p: {text-indent: {if: =options.no_indent, then:0, else:inherit}}},
 		{.highlight_flashline: {display:{if:=options.show_flashline, then:inherit, else:none}}}
@@ -96,7 +114,7 @@
 		</box>
 		<panel id="headline">
 			<p class="highlight_flashline" embed="flashline" />
-			<p class="module_headline"><span embed="headline" /><mark class="key" /></p>
+			<p class="module_headline"><span embed="headline" />kashf <mark class="key" /></p>
 		</panel>
 		<panel id="body_container">
 			<panel id="body">

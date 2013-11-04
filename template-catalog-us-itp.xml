@@ -297,14 +297,6 @@
 			usage="front"
 			storyorder="feed"
 		/>
-		<template 
-			name="SECTION-1story-P-white_template.xml" 
-			section="MARKETPLACE" 
-			title="P-photo - white highlights"
-			min="3" 
-			usage="front"
-			storyorder="feed"
-		/>
 		
 		
 		<!-- END MARKETPLACE -->
@@ -582,14 +574,6 @@
 			usage="front"
 			storyorder="feed"
 		/>
-		<template 
-			name="SECTION-1story-P-white_template.xml" 
-			section="MONEY_AND_INVESTING" 
-			title="P-photo - white highlights"
-			min="3" 
-			usage="front"
-			storyorder="feed"
-		/>
 		
 		<!-- END MONEY AND INVESTING -->
 		
@@ -748,14 +732,6 @@
 			usage="front"
 			storyorder="feed"
 		/>
-		<template 
-			name="SECTION-1story-P-white_template.xml" 
-			section="OFF_DUTY" 
-			title="P - White Highlights"
-			min="2" 
-			usage="front"
-			storyorder="feed"
-		/>
 		
 		<template 
 			name="SECTION-1story-P_template.xml" 
@@ -843,14 +819,6 @@
 			storyorder="feed"
 		/>
 		<template 
-			name="SECTION-1story-P-white_template.xml" 
-			section="MANSION" 
-			title="P - White Highlights"
-			min="2" 
-			usage="front"
-			storyorder="feed"
-		/>
-		<template 
 			name="SECTION-1story-PV-white_template.xml" 
 			section="MANSION" 
 			title="PV- White highlights"
@@ -923,14 +891,6 @@
 			name="SECTION-1story-P_template.xml" 
 			section="PERSONAL_JOURNAL" 
 			title="P-photo"
-			min="3" 
-			usage="front"
-			storyorder="feed"
-		/>
-		<template 
-			name="SECTION-1story-P-white_template.xml" 
-			section="PERSONAL_JOURNAL" 
-			title="P-photo - white highlight"
 			min="3" 
 			usage="front"
 			storyorder="feed"
@@ -1048,14 +1008,6 @@
 			storyorder="feed"
 		/>
 		<template 
-			name="SECTION-1story-P-white_template.xml" 
-			section="REVIEW" 
-			title="P-photo - white highlights"
-			min="3" 
-			usage="front"
-			storyorder="feed"
-		/>
-		<template 
 			name="SECTION-1story-PV-white_template.xml" 
 			section="REVIEW" 
 			title="PV - White highlights"
@@ -1127,14 +1079,6 @@
 			name="SECTION-1story-P_template.xml" 
 			section="JOURNAL_REPORT" 
 			title="P-photo"
-			min="3" 
-			usage="front"
-			storyorder="feed"
-		/>
-		<template 
-			name="SECTION-1story-P-white_template.xml" 
-			section="JOURNAL_REPORT" 
-			title="P-photo - white highlight"
 			min="3" 
 			usage="front"
 			storyorder="feed"
@@ -1215,14 +1159,6 @@
 			storyorder="feed"
 		/>
 		<template 
-			name="SECTION-1story-P-white_template.xml" 
-			section="FRIDAY_JOURNAL" 
-			title="P-photo - white highlight"
-			min="3" 
-			usage="front"
-			storyorder="feed"
-		/>
-		<template 
 			name="SECTION-1story-PV_template.xml" 
 			section="FRIDAY_JOURNAL" 
 			title="PV - Grey highlights"
@@ -1294,14 +1230,6 @@
 			name="SECTION-1story-P_template.xml" 
 			section="ARENA" 
 			title="P-photo"
-			min="3" 
-			usage="front"
-			storyorder="feed"
-		/>
-		<template 
-			name="SECTION-1story-P-white_template.xml" 
-			section="ARENA" 
-			title="P-photo - white highlight"
 			min="3" 
 			usage="front"
 			storyorder="feed"
@@ -1405,15 +1333,6 @@
 			storyorder="feed"
 		/>
 		<template 
-			name="SECTION-1story-P-white_template.xml" 
-			section="WEEKEND_JOURNAL" 
-			title="P-photo - white highlights"
-			min="3" 
-			usage="front"
-			storyorder="feed"
-		/>
-		
-		<template 
 			name="SECTION-1story-fullsize-deco.xml" 
 			section="WEEKEND_JOURNAL" 
 			title="Full size Deco"
@@ -1441,15 +1360,6 @@
 			usage="front"
 			storyorder="feed"
 		/>
-		<template 
-			name="SECTION-1story-P-white_template.xml" 
-			section="WSJ_MAGAZINE" 
-			title="P-photo - white highlights"
-			min="3" 
-			usage="front"
-			storyorder="feed"
-		/>
-		
 		<template 
 			name="SECTION-2story-G-C_template.xml" 
 			section="WSJ_MAGAZINE" 
@@ -1530,14 +1440,6 @@
 			section="WSJ_MONEY" 
 			title="PV 1 highlight"
 			min="2" 
-			usage="front"
-			storyorder="feed"
-		/>
-		<template 
-			name="SECTION-1story-P-white_template.xml" 
-			section="WSJ_MONEY" 
-			title="P-photo - white highlights"
-			min="3" 
 			usage="front"
 			storyorder="feed"
 		/>
@@ -2233,13 +2135,6 @@
 		<template 
 			name="SECTION-1story-P_template.xml" 
 			title="Continuation - P-photo - grey 2 highlights "
-			min="3" 
-			usage="continuation" 
-			page="2"
-		/>
-		<template 
-			name="SECTION-1story-P-white_template.xml" 
-			title="Continuation - P-photo - white 2 highlights "
 			min="3" 
 			usage="continuation" 
 			page="2"

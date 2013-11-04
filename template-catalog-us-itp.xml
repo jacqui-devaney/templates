@@ -223,15 +223,6 @@
 			storyorder="feed"
 		/>
 		<template 
-			name="SECTION-3story-G-mirror_template.xml" 
-			section="MARKETPLACE" 
-			title="3 story - G photo mirror"
-			min="5" 
-			deco="true"
-			usage="front"
-			storyorder="feed"
-		/>
-		<template 
 			name="SECTION-4story-smallG-deco-mirror_template.xml" 
 			section="MARKETPLACE" 
 			title="4 story - small G Media liondoor - mirror"
@@ -257,14 +248,6 @@
 			storyorder="feed"
 		/>
 		<template 
-			name="SECTION-1story-PV-white_template.xml" 
-			section="MARKETPLACE" 
-			title="PV (white)"
-			min="3" 
-			usage="front"
-			storyorder="feed"
-		/>
-		<template 
 			name="SECTION-1story-PV_template.xml" 
 			section="MARKETPLACE" 
 			title="PV (grey)"
@@ -280,15 +263,6 @@
 			usage="front"
 			storyorder="feed"
 		/>
-		<template 
-			name="SECTION-1story-PV-1highlight-white_template.xml" 
-			section="MARKETPLACE" 
-			title="PV - 1 highlight (white)"
-			min="2" 
-			usage="front"
-			storyorder="feed"
-		/>
-		
 		<template 
 			name="SECTION-1story-P_template.xml" 
 			section="MARKETPLACE" 
@@ -380,15 +354,6 @@
 			storyorder="feed"
 		/>
 		<template 
-			name="SECTION-3story-G-mirror_template.xml" 
-			section="BUSINESS_AND_FINANCE" 
-			title="3 story - G photo mirror"
-			min="5" 
-			deco="true"
-			usage="front"
-			storyorder="feed"
-		/>
-		<template 
 			name="SECTION-4story-smallG-deco-mirror_template.xml" 
 			section="BUSINESS_AND_FINANCE" 
 			title="4 story - small G Media liondoor - mirror"
@@ -414,14 +379,6 @@
 			storyorder="feed"
 		/>
 		<template 
-			name="SECTION-1story-PV-white_template.xml" 
-			section="BUSINESS_AND_FINANCE" 
-			title="PV (white)"
-			min="3" 
-			usage="front"
-			storyorder="feed"
-		/>
-		<template 
 			name="SECTION-1story-PV_template.xml" 
 			section="BUSINESS_AND_FINANCE" 
 			title="PV (grey)"
@@ -433,14 +390,6 @@
 			name="SECTION-1story-PV-1highlight_template.xml" 
 			section="BUSINESS_AND_FINANCE" 
 			title="PV - 1 highlight (grey)"
-			min="2" 
-			usage="front"
-			storyorder="feed"
-		/>
-		<template 
-			name="SECTION-1story-PV-1highlight-white_template.xml" 
-			section="BUSINESS_AND_FINANCE" 
-			title="PV - 1 highlight (white)"
 			min="2" 
 			usage="front"
 			storyorder="feed"
@@ -500,15 +449,6 @@
 			storyorder="feed"
 		/>
 		<template 
-			name="SECTION-3story-G-mirror_template.xml" 
-			section="MONEY_AND_INVESTING" 
-			title="3 story - G photo mirror"
-			min="5" 
-			deco="true"
-			usage="front"
-			storyorder="feed"
-		/>
-		<template 
 			name="SECTION-4story-smallG-deco-mirror_template.xml" 
 			section="MONEY_AND_INVESTING" 
 			title="4 story - small G Media liondoor - mirror"
@@ -534,14 +474,6 @@
 			storyorder="feed"
 		/>
 		<template 
-			name="SECTION-1story-PV-white_template.xml" 
-			section="MONEY_AND_INVESTING" 
-			title="PV (white)"
-			min="3" 
-			usage="front"
-			storyorder="feed"
-		/>
-		<template 
 			name="SECTION-1story-PV_template.xml" 
 			section="MONEY_AND_INVESTING" 
 			title="PV (grey)"
@@ -553,14 +485,6 @@
 			name="SECTION-1story-PV-1highlight_template.xml" 
 			section="MONEY_AND_INVESTING" 
 			title="PV - 1 highlight (grey)"
-			min="2" 
-			usage="front"
-			storyorder="feed"
-		/>
-		<template 
-			name="SECTION-1story-PV-1highlight-white_template.xml" 
-			section="MONEY_AND_INVESTING" 
-			title="PV - 1 highlight (white)"
 			min="2" 
 			usage="front"
 			storyorder="feed"
@@ -621,14 +545,6 @@
 			storyorder="feed"
 		/>
 		<template 
-			name="SECTION-1story-PV-white_template.xml" 
-			section="NEW_YORK" 
-			title="PV (white)"
-			min="3" 
-			usage="front"
-			storyorder="feed"
-		/>
-		<template 
 			name="SECTION-1story-PV_template.xml" 
 			section="NEW_YORK" 
 			title="PV (grey)"
@@ -653,27 +569,10 @@
 			storyorder="feed"
 		/>
 		<template 
-			name="SECTION-1story-PV-1highlight-white_template.xml" 
-			section="NEW_YORK" 
-			title="PV - 1 highlight (white)"
-			min="2" 
-			usage="front"
-			storyorder="feed"
-		/>
-		<template 
 			name="SECTION-1story-fullsize-deco.xml" 
 			section="NEW_YORK" 
 			title="Full size Deco"
 			min="1" 
-			deco="true"
-			usage="front"
-			storyorder="feed"
-		/>
-		<template 
-			name="SECTION-3story-G-mirror_template.xml" 
-			section="NEW_YORK" 
-			title="3 story - G photo mirror"
-			min="5" 
 			deco="true"
 			usage="front"
 			storyorder="feed"
@@ -742,14 +641,6 @@
 			storyorder="feed"
 		/>
 		<template 
-			name="SECTION-1story-PV-white_template.xml" 
-			section="OFF_DUTY" 
-			title="PV- White highlights"
-			min="3" 
-			usage="front"
-			storyorder="feed"
-		/>
-		<template 
 			name="SECTION-1story-P-1highlight_template.xml" 
 			section="OFF_DUTY" 
 			title="1 story P - 1 highlight"
@@ -762,14 +653,6 @@
 			name="SECTION-1story-PV-1highlight_template.xml" 
 			section="OFF_DUTY" 
 			title="PV - (1 Grey highlight)"
-			min="2" 
-			usage="front"
-			storyorder="feed"
-		/>
-		<template 
-			name="SECTION-1story-PV-1highlight-white_template.xml" 
-			section="OFF_DUTY" 
-			title="PV - (1 White highlight)"
 			min="2" 
 			usage="front"
 			storyorder="feed"
@@ -819,14 +702,6 @@
 			storyorder="feed"
 		/>
 		<template 
-			name="SECTION-1story-PV-white_template.xml" 
-			section="MANSION" 
-			title="PV- White highlights"
-			min="3" 
-			usage="front"
-			storyorder="feed"
-		/>
-		<template 
 			name="SECTION-1story-P-1highlight_template.xml" 
 			section="MANSION" 
 			title="1 story P - 1 highlight"
@@ -844,14 +719,6 @@
 			storyorder="feed"
 		/>
 		<template 
-			name="SECTION-1story-PV-1highlight-white_template.xml" 
-			section="MANSION" 
-			title="PV - (1 White highlight)"
-			min="2" 
-			usage="front"
-			storyorder="feed"
-		/>
-		<template 
 			name="SECTION-1story-fullsize-deco.xml" 
 			section="MANSION" 
 			title="Full size Deco"
@@ -863,14 +730,6 @@
 		<!-- END MANSION -->
 		
 		<!-- PERSONAL JOURNAL -->
-		<template 
-			name="SECTION-1story-PV-white_template.xml" 
-			section="PERSONAL_JOURNAL" 
-			title="PV - (White highlights)"
-			min="3" 
-			usage="front"
-			storyorder="feed"
-		/>
 		<template 
 			name="SECTION-2story-G-C_template.xml" 
 			section="PERSONAL_JOURNAL" 
@@ -938,27 +797,10 @@
 			storyorder="feed"
 		/>
 		<template 
-			name="SECTION-1story-PV-1highlight-white_template.xml" 
-			section="PERSONAL_JOURNAL" 
-			title="PV 1 highlight (white)"
-			min="2" 
-			usage="front"
-			storyorder="feed"
-		/>
-		<template 
 			name="SECTION-1story-fullsize-deco.xml" 
 			section="PERSONAL_JOURNAL" 
 			title="Full size Deco"
 			min="1" 
-			deco="true"
-			usage="front"
-			storyorder="feed"
-		/>
-		<template 
-			name="SECTION-2story-fullsize-deco_template.xml" 
-			title="Full size Deco - Layered"
-			section="PERSONAL_JOURNAL" 
-			min="2" 
 			deco="true"
 			usage="front"
 			storyorder="feed"
@@ -1008,14 +850,6 @@
 			storyorder="feed"
 		/>
 		<template 
-			name="SECTION-1story-PV-white_template.xml" 
-			section="REVIEW" 
-			title="PV - White highlights"
-			min="3" 
-			usage="front"
-			storyorder="feed"
-		/>
-		<template 
 			name="SECTION-1story-P-1highlight_template.xml" 
 			section="REVIEW" 
 			title="P 1 highlight"
@@ -1025,14 +859,6 @@
 		/>
 		<template 
 			name="SECTION-1story-PV-1highlight_template.xml" 
-			section="REVIEW" 
-			title="PV 1 highlight"
-			min="2" 
-			usage="front"
-			storyorder="feed"
-		/>
-		<template 
-			name="SECTION-1story-PV-1highlight-white_template.xml" 
 			section="REVIEW" 
 			title="PV 1 highlight"
 			min="2" 
@@ -1052,14 +878,6 @@
 		
 		<!-- JOURNAL REPORT -->
 		<template 
-			name="SECTION-1story-PV-white_template.xml" 
-			section="JOURNAL_REPORT" 
-			title="PV - (White highlights)"
-			min="3" 
-			usage="front"
-			storyorder="feed"
-		/>
-		<template 
 			name="SECTION-2story-G-C_template.xml" 
 			section="JOURNAL_REPORT" 
 			title="2 story-G-photo"
@@ -1103,14 +921,6 @@
 			name="SECTION-1story-PV-1highlight_template.xml" 
 			section="JOURNAL_REPORT" 
 			title="PV - (1 highlight Grey)"
-			min="2" 
-			usage="front"
-			storyorder="feed"
-		/>
-		<template 
-			name="SECTION-1story-PV-1highlight-white_template.xml" 
-			section="JOURNAL_REPORT" 
-			title="PV - (1 highlight white)"
 			min="2" 
 			usage="front"
 			storyorder="feed"
@@ -1127,14 +937,6 @@
 		<!-- END JOURNAL REPORT -->
 		<!-- FRIDAY JOURNAL -->
 		<template 
-			name="SECTION-1story-PV-white_template.xml" 
-			section="FRIDAY_JOURNAL" 
-			title="PV - (White highlights)"
-			min="3" 
-			usage="front"
-			storyorder="feed"
-		/>
-		<template 
 			name="SECTION-3story-G_template.xml" 
 			section="FRIDAY_JOURNAL" 
 			title="3 story G photo"
@@ -1178,14 +980,6 @@
 			name="SECTION-1story-PV-1highlight_template.xml" 
 			section="FRIDAY_JOURNAL" 
 			title="PV - (1 highlight Grey)"
-			min="2" 
-			usage="front"
-			storyorder="feed"
-		/>
-		<template 
-			name="SECTION-1story-PV-1highlight-white_template.xml" 
-			section="FRIDAY_JOURNAL" 
-			title="PV - (1 highlight white)"
 			min="2" 
 			usage="front"
 			storyorder="feed"
@@ -1203,14 +997,6 @@
 		
 		<!-- FRIDAY JOURNAL -->
 		<template 
-			name="SECTION-1story-PV-white_template.xml" 
-			section="ARENA" 
-			title="PV - (White highlights)"
-			min="3" 
-			usage="front"
-			storyorder="feed"
-		/>
-		<template 
 			name="SECTION-3story-G_template.xml" 
 			section="ARENA" 
 			title="3 story G photo"
@@ -1259,27 +1045,10 @@
 			storyorder="feed"
 		/>
 		<template 
-			name="SECTION-1story-PV-1highlight-white_template.xml" 
-			section="ARENA" 
-			title="PV - (1 highlight white)"
-			min="2" 
-			usage="front"
-			storyorder="feed"
-		/>
-		<template 
 			name="SECTION-1story-fullsize-deco.xml" 
 			section="ARENA" 
 			title="Full size Deco"
 			min="1" 
-			deco="true"
-			usage="front"
-			storyorder="feed"
-		/>
-		<template 
-			name="SECTION-2story-fullsize-deco_template.xml" 
-			title="Full size Deco - Layered"
-			section="ARENA" 
-			min="2" 
 			deco="true"
 			usage="front"
 			storyorder="feed"
@@ -1292,14 +1061,6 @@
 			name="SECTION-3story-G_template.xml" 
 			section="SPECIAL_REPORT" 
 			title="3 story G photo"
-			min="5" 
-			usage="front"
-			storyorder="feed"
-		/>
-		<template 
-			name="SECTION-3story-G-mirror_template.xml" 
-			section="SPECIAL_REPORT" 
-			title="3 story G mirror photo"
 			min="5" 
 			usage="front"
 			storyorder="feed"
@@ -1385,22 +1146,6 @@
 			storyorder="feed"
 		/>
 		<template 
-			name="SECTION-1story-PV-1highlight-white_template.xml" 
-			section="WSJ_MAGAZINE" 
-			title="PV - 1 highlight (White)"
-			min="2" 
-			usage="front"
-			storyorder="feed"
-		/>
-		<template
-			name="SECTION-1story-PV-white_template.xml" 
-			section="WSJ_MAGAZINE" 
-			title="PV - (White highlights)"
-			min="3" 
-			usage="front"
-			storyorder="feed"
-		/>
-		<template 
 			name="SECTION-1story-fullsize-deco.xml" 
 			section="WSJ_MAGAZINE" 
 			title="Full size Deco"
@@ -1416,22 +1161,6 @@
 			section="WSJ_MONEY" 
 			title="PV - (Grey highlights)"
 			min="3" 
-			usage="front"
-			storyorder="feed"
-		/>
-		<template 
-			name="SECTION-1story-PV-white_template.xml" 
-			section="WSJ_MONEY" 
-			title="PV - White highlights"
-			min="3" 
-			usage="front"
-			storyorder="feed"
-		/>
-		<template 
-			name="SECTION-1story-PV-1highlight-white_template.xml" 
-			section="WSJ_MONEY" 
-			title="PV 1 highlight - white"
-			min="2" 
 			usage="front"
 			storyorder="feed"
 		/>
@@ -2088,14 +1817,6 @@
 			page="2"
 		/>
 		<template 
-			name="SECTION-3story-G-mirror_template.xml" 
-			deco="true" 
-			title="Continuation - 3 story - G Photo - mirror"
-			min="5" 
-			usage="continuation" 
-			page="2"
-		/>
-		<template 
 			name="SECTION-4story-smallG-deco_template.xml" 
 			deco="true" 
 			title="Continuation - 4 story - G liondoor"
@@ -2111,27 +1832,12 @@
 			page="2"
 		/>
 		<template 
-			name="SECTION-1story-PV-1highlight-white_template.xml" 
-			title="Continuation - PV - 1 highlight (white)"
-			min="2" 
-			usage="continuation" 
-			page="2"
-		/>
-		<template 
 			name="SECTION-1story-PV_template.xml" 
 			title="Continuation - PV -  2 highlights (grey)"
 			min="3" 
 			usage="continuation" 
 			page="2"
 		/>
-		<template 
-			name="SECTION-1story-PV-white_template.xml" 
-			title="Continuation - PV - 2 highlights (white)"
-			min="3" 
-			usage="continuation" 
-			page="2"
-		/>
-
 		<template 
 			name="SECTION-1story-P_template.xml" 
 			title="Continuation - P-photo - grey 2 highlights "

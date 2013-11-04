@@ -1,5 +1,7 @@
 <jpml id="SECTION-1story-PV_template">
 	<style src="GLOBAL-stylesheet.ejs" />
+	<style src="GRID-stylesheet.ejs"/>
+    <style src="ADVERTISING-stylesheet.ejs"/>
 	<style src="SECTION-stylesheet.ejs" />
 	<style src="PHONE-stylesheet.ejs" />
 	<style>{
@@ -27,27 +29,25 @@
 	<style>{
 		$switch: [
 			{if: =scale.phone, then: {
-		
-			}},
-			{if: =portrait, then: {
-				#b1:	{ frame: [0, 0, 768, 620]}
-			}},
-			{if: =landscape, then: {
-				#b1:	{ frame: [0, 0, 768, 620]},
-				#h1: { frame: [768, 0, 256, 216]},
-				#h2: 	{ frame: [768, 216, 256, 207]}
 			
+			}},
+			{if: true, then: {
+				#b1:	{ 
+					top:0,
+					height:706
+				}
 			}}
 		]
 	}</style>
 	
-	<box id="b1" embed="article" class="maude unit_G_deco" module="IMAGE-only_module.xml" />
-	<box id="h1" embed="article" class="maude unit_highlight" module="HIGHLIGHTS_module.xml" />
-	<box id="ad_background_PV" class="ad_light maude unit_ad">
+	<box id="b1" embed="article" class="column_PV position_full maude unit_G_deco" module="IMAGE-only_module.xml" />
+	<box id="h1" embed="article" class="column2 positionx7-1 maude unit_highlight" module="HIGHLIGHTS_module.xml" />
+	<box id="h2" embed="article" class="maude column2 positionx7-3 unit_highlight" module="HIGHLIGHTS_module.xml" />
+	<box id="section_ad" class="column2 positionx7-5 maude unit_ad">
 		<box id="highlight_ad" class="ad-rectangle" embed="advertisement" />
 	</box>
-	<box id="h2" embed="article" class="maude unit_highlight" module="HIGHLIGHTS_module.xml" />
-	
+	<box id="background_color" />
+    
 	
 
 	

@@ -1,13 +1,39 @@
 {
 	#h1: {
 		top: {if: =landscape, then:0, else:706},
-		height: {if: =landscape, then:235, else:256},
-		width:251
+		height: {$switch:[
+			{if-all:[{if: =landscape}, {if: =page.number, equals:0, then:true}], then:235},
+			{if: =portrait, then: 256},
+			{if-all:[{if: =landscape}, {if: =page.number, equals:1, then:true}], then:353}
+		]},
+		width:{$switch:[
+			{if-all:[=portrait, {if: =page.number, equals:1}], then:374},
+			{if: =landscape, then:251},
+			"246"
+		]}
 	},
 	#h2: {
-		top: {if: =landscape, then:235, else:706},
-		height: {if: =landscape, then:235, else:256},
-		width:251
+		top: {$switch:[
+			{if-all:[{if: =landscape}, {if: =page.number, equals:0, then:true}], then:235},
+			{if: =portrait, then: 706},
+			{if-all:[{if: =landscape}, {if: =page.number, equals:1, then:true}], then:353}
+		]},
+
+		height: {$switch:[
+			{if-all:[{if: =landscape}, {if: =page.number, equals:0, then:true}], then:233},
+			{if: =portrait, then: 256},
+			{if-all:[{if: =landscape}, {if: =page.number, equals:1, then:true}], then:353}
+		]},
+		width:{$switch:[
+			{if-all:[=portrait, {if: =page.number, equals:1}], then:374},
+			{if: =landscape, then:251},
+			"246"
+		]},
+		left:{$switch:[
+			{if-all:[=portrait, {if: =page.number, equals:0}], then:261},
+			{if-all:[=portrait, {if: =page.number, equals:1}], then:389},
+			"773"
+		]}
 	},
 	#h3: {
 		top:{if: =landscape, then:0, else:706},

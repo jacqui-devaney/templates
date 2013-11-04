@@ -6,5 +6,10 @@
 		pixels-per-point-y: { if: =intent.template, then: =scale.pagey, else: =scale.dpi },
 		min-height: {if: =intent.template, and: =scale.phone, then: 0},
 		max-height: {if: =intent.template, and: =scale.phone, then: 10000}
+	},
+	#marketstrap: {
+		top:0,
+		height:45,
+		display:{if: =issue.type, equals:"ITP", then:none, else:inherit}
 	}
 }

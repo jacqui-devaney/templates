@@ -5,8 +5,8 @@
 	}},
 {if: =portrait, then: {
 		#whatsnews: { 
-			height:960,
-			top:0, 
+			height:{if: =issue.type, equals:"ITP", then:960, else:915},
+			top:{if: =issue.type, equals:"ITP", then:0, else:45}, 
 			options: { expanded-frame: [
 				{$multiply:[=scale.pagex, 3]}, 
 				{$multiply:[=scale.pagey, 5]}, 
@@ -16,8 +16,8 @@
 		}
 	}, else: {
 		#whatsnews:		{ 
-			height:706,
-			top:0, 
+			height:{if: =issue.type, equals:"ITP", then:706, else:661},
+			top:{if: =issue.type, equals:"ITP", then:0, else:45}, 
 			options: { expanded-frame: [
 				{$multiply:[=scale.pagex, 3]}, 
 				{$multiply:[=scale.pagey, 5]}, 

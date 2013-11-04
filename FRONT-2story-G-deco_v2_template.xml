@@ -65,7 +65,45 @@
 			}}
 		]
 	} </style>
+	<style> {if: =issue.type, equals:NOW, then: {
+		$switch: [
+			{if: =scale.phone, then:{
+		
+			}},
+		
+			{if: =portrait, then: {
+				#b1:	{ 
+					height:260,
+					top:45
+				},
+				#deco:	{ 
+					height:400,
+					top:305
+				}
+			}}, 
+			{if: =landscape, then: {
+				#b1:	{ 
+					height:260,
+					top:45
+				},
+				#deco:	{ 
+					height:400,
+					top:305
+				},
+				#b2:	{ 
+					height:475,
+					top:45
+				}
+			
+			}}
+		]
+		
+	}, else: {
 	
+	}
+	} </style>
+    
+	<box id="marketstrap" class="column_full positionx_full" embed="marketstrap" />
 	<box id="whatsnews" class="column2 positionx1" embed="whatsnews" />
 	<box id="b1" embed="article"  class="column4 positionx3 maude unit_166" module="FRONT-NO-IMAGE_module.xml" />
 	<box id="deco" embed="article" class="column4 positionx3 maude unit_G_deco" module="DECO_module.xml" options="G_size" />

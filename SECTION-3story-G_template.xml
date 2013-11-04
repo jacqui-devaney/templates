@@ -1,5 +1,7 @@
 <jpml id="SECTION-3story-G_template">
 	<style src="GLOBAL-stylesheet.ejs" />
+	<style src="GRID-stylesheet.ejs"/>
+    <style src="ADVERTISING-stylesheet.ejs"/>
 	<style src="SECTION-stylesheet.ejs" />
 	<style src="PHONE-stylesheet.ejs" />
 	<style>{
@@ -25,10 +27,8 @@
 			
 			#h2: {
 				options:{hide_image:{if-all: [=scale.small, =landscape], then:true, else:false}}
-			},
-			#ad_background: {
-				display:{if: =scale.phone, then:inherit, else:{if-all:[{if: =page.number, equals:1}, {if: =page.section, in: [OFF_DUTY, REVIEW, PERSONAL_JOURNAL, JOURNAL_REPORT, WSJ_MAGAZINE, WSJ_MONEY, FRIDAY_JOURNAL, MANSION, ARENA], then:false, else:true }], then:none, else:inherit}}
 			}
+			
 			
 				
 	}</style>
@@ -38,79 +38,49 @@
 	        }},
 			{ if: =portrait, then: {
 				#b1:	{ 
-							frame: {$switch: [
-								{if: =widescreen, then: [0, 0, 504, 620]},
-								{if: =scale.large, then: [0, 0, 571, 620]}
-							]}
+					top:0,
+					height:706
 				},
 				#b2:	{ 
-							frame: {$switch: [
-							{if: =widescreen, then: [516, 0, 250, 324]},
-							{if: =scale.large, then: [583, 0, 183, 324]}
-						]}
+					top:0,
+					height:353	
+				
 				},
 				#b3:	{ 
-							frame: {$switch: [
-							{if: =widescreen, then: [516, 325, 250, 294]},
-							{if: =scale.large, then: [583, 325, 183, 294]}
-						]}
-				},
-				#h1: {
-						frame:[1, 620,{if-all:[{if: =page.number, equals:1}, {if: =page.section, in: [OFF_DUTY, REVIEW, PERSONAL_JOURNAL, JOURNAL_REPORT, WSJ_MAGAZINE, WSJ_MONEY, FRIDAY_JOURNAL, MANSION, ARENA], then:false, else:true }], then:383, else:255}, 256]
-						
-				},
-				#h2: {
-						frame:[
-							{if-all:[{if: =page.number, equals:1}, {if: =page.section, in: [OFF_DUTY, REVIEW, PERSONAL_JOURNAL, JOURNAL_REPORT, WSJ_MAGAZINE, WSJ_MONEY, FRIDAY_JOURNAL, MANSION, ARENA], then:false, else:true }], then:384, else:256}, 
-							620, 
-							{if-all:[{if: =page.number, equals:1}, {if: =page.section, in: [OFF_DUTY, REVIEW, PERSONAL_JOURNAL, JOURNAL_REPORT, WSJ_MAGAZINE, WSJ_MONEY, FRIDAY_JOURNAL, MANSION, ARENA], then:false, else:true }], then:384, else:257}, 
-							 256
-						],
-						border-width:[0, {if-all:[{if: =page.number, equals:1}, {if: =page.section, in: [OFF_DUTY, REVIEW, PERSONAL_JOURNAL, JOURNAL_REPORT, WSJ_MAGAZINE, WSJ_MONEY, FRIDAY_JOURNAL, MANSION, ARENA], then:false, else:true }], then:0, else:1}, 0, {if-all:[{if: =page.number, equals:1}, {if: =page.section, in: [OFF_DUTY, REVIEW, PERSONAL_JOURNAL, JOURNAL_REPORT, WSJ_MAGAZINE, WSJ_MONEY, FRIDAY_JOURNAL, MANSION, ARENA], then:false, else:true }], then:1, else:0}],
-						border-color:#b1aca1
+					top:353,
+					height:353	
+				
 				}
 				
 			}},
 			{ if: =landscape, then: {
 				#b1:	{ 
-							frame: {$switch: [
-							{if: =widescreen, then: [11, 0, 557, 618]},
-							{if: =scale.large, then: [11, 0, 571, 618]}
-						]}
+					top:0,
+					height:706
 				},
 				#b2:	{ 
-							frame: {$switch: [
-							{if: =widescreen, then: [580, 0, 197, 320]},
-							{if: =scale.large, then: [594, 0, 183, 320]}
-						]}
+					top:0,
+					height:353	
+					
 				},
 				#b3:	{ 
-							frame: {$switch: [
-							{if: =widescreen, then: [580, 320, 197, 298]},
-							{if: =scale.large, then: [594, 320, 183, 298]}
-						]}
-				},
-				#h1: {
-						frame:[786, 0, 238, {if-all:[{if: =page.number, equals:1}, {if: =page.section, in: [OFF_DUTY, REVIEW, PERSONAL_JOURNAL, JOURNAL_REPORT, WSJ_MAGAZINE, WSJ_MONEY, FRIDAY_JOURNAL, MANSION, ARENA], then:false, else:true }], then:310, else:216}]
-
-				},
-				#h2: {
-						frame:[786, {if-all:[{if: =page.number, equals:1}, {if: =page.section, in: [OFF_DUTY, REVIEW, PERSONAL_JOURNAL, JOURNAL_REPORT, WSJ_MAGAZINE, WSJ_MONEY, FRIDAY_JOURNAL, MANSION, ARENA], then:false, else:true }], then:310, else:216}, 238, {if-all:[{if: =page.number, equals:1}, {if: =page.section, in: [OFF_DUTY, REVIEW, PERSONAL_JOURNAL, JOURNAL_REPORT, WSJ_MAGAZINE, WSJ_MONEY, FRIDAY_JOURNAL, MANSION, ARENA], then:false, else:true }], then:310, else:207}],
-						border-width:[{if-all:[{if: =page.number, equals:1}, {if: =page.section, in: [OFF_DUTY, REVIEW, PERSONAL_JOURNAL, JOURNAL_REPORT, WSJ_MAGAZINE, WSJ_MONEY, FRIDAY_JOURNAL, MANSION, ARENA], then:false, else:true }], then:1, else:0}, 0, 0, 0],
-						border-color:#b1aca1
+					top:353,
+					height:353	
+					
 				}
 			}}
 		]
 	}</style>
 	
-	<box id="b1" class="maude unit_166" embed="article" module="TOP-IMAGE_module.xml" />
-	<box id="b2" class="maude unit_50" embed="article" module="TOP-IMAGE_module.xml" />
-	<box id="b3" class="maude unit_50" embed="article" module="TOP-IMAGE_module.xml" />
-	<box id="h1" class="maude unit_highlight" embed="article" module="HIGHLIGHTS_module.xml" />
-	<box id="ad_background" class="ad_light maude unit_ad">
+	<box id="b1" class="column4 positionx1 maude unit_166" embed="article" module="TOP-IMAGE_module.xml" />
+	<box id="b2" class="column2 positionx5 maude unit_50" embed="article" module="TOP-IMAGE_module.xml" />
+	<box id="b3" class="column2 positionx5 maude unit_50" embed="article" module="TOP-IMAGE_module.xml" />
+	<box id="section_ad" class="column2 positionx7-5 maude unit_ad">
 		<box id="highlight_ad" class="ad-rectangle" embed="advertisement" />
 	</box>
-	<box id="h2" class="maude unit_highlight" embed="article" module="HIGHLIGHTS_module.xml" />
+	<box id="h1" embed="article" class="column2 positionx7-1 maude unit_highlight" module="HIGHLIGHTS_module.xml" />
+	<box id="h2" embed="article" class="column2 positionx7-3 maude unit_highlight" module="HIGHLIGHTS_module.xml" />
+	<box id="background_color" />
 
 	
 </jpml>

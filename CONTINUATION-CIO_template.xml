@@ -35,15 +35,15 @@
         #b4: {options: {hide_strap:true}},
         #b5: {options: {hide_strap:true}},
         #b6: {options: {hide_strap:true}},
-		#b7: {options:{continuation:true}},
-		#b8: {options:{continuation:true}},
-		#b9: {options:{continuation:true}},
-		#b10: {options:{continuation:true}},
-		#b11: {options:{continuation:true}},
-		#b12: {options:{continuation:true}},
-		#b13: {options:{continuation:true}},
-		#b14: {options:{continuation:true}},
-		#b15: {options:{continuation:true}}
+		#b7: {options:{continuation:true, extra_small_headline:true}},
+		#b8: {options:{continuation:true, extra_small_headline:true}},
+		#b9: {options:{continuation:true, extra_small_headline:true}},
+		#b10: {options:{continuation:true, extra_small_headline:true}},
+		#b11: {options:{continuation:true, extra_small_headline:true}},
+		#b12: {options:{continuation:true, extra_small_headline:true}},
+		#b13: {options:{continuation:true, extra_small_headline:true}},
+		#b14: {options:{continuation:true, extra_small_headline:true}},
+		#b15: {options:{continuation:true, extra_small_headline:true}}
 		
 	}</style>
 	<style>{

@@ -47,18 +47,8 @@
 			{#flashline: {
 				max-height:20
 			}},
-			{#continuation_headline: { 
-				text-overflow:" \u00bb",
-				display: { if: =options.continuation, then:inherit, else:none },
-				font-size:16,
-				line-height:15,
-				padding:[0]
-			}},
-			{#extra_small_headline: { 
-				text-overflow:" \u00bb",
-				display: {if: =options.small, then:inherit, else:none},
-				padding:[0]
-				
+			{.module_headline: { 
+				text-overflow:"..."
 			}}
 			]
 		}</style>

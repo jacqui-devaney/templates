@@ -10,7 +10,7 @@
 		#b2: {options: { $switch: [
 				{if: =scale.phone, then: {hide_content:true}},
 				{if: =portrait, then: {medium_headline:true, show_flashline:true, one_column:true}},
-				{if: =landscape, then: {medium_headline:true, show_flashline:true}}			
+				{if: =landscape, then: {small_headline:true, show_flashline:true}}			
 		]}},
 		#b3: {options: { $switch: [
 				{if: =scale.phone, then: {hide_content:true}},

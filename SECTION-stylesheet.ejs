@@ -1,7 +1,12 @@
 {
 	#h1: {
-		top: {if: =landscape, then:0, else:706},
+		top: {$switch: [
+			{if-all: [{if: =issue.type, equals:NOW}, {if: =page.section, equals:MONEY_AND_INVESTING}, {if: =landscape}, {if: =page.number, equals:0, then:true}], then:45},
+			{if: =landscape, then:0},
+			"706"
+		]},
 		height: {$switch:[
+			{if-all: [{if: =issue.type, equals:NOW}, {if: =page.section, equals:MONEY_AND_INVESTING}, {if: =landscape}, {if: =page.number, equals:0, then:true}], then:220},
 			{if-all:[{if: =landscape}, {if: =page.number, equals:0, then:true}], then:235},
 			{if: =portrait, then: 256},
 			{if-all:[{if: =landscape}, {if: =page.number, equals:1, then:true}], then:353}
@@ -14,12 +19,15 @@
 	},
 	#h2: {
 		top: {$switch:[
+			{if-all: [{if: =issue.type, equals:NOW}, {if: =page.section, equals:MONEY_AND_INVESTING}, {if: =landscape}, {if: =page.number, equals:0, then:true}], then:265},
 			{if-all:[{if: =landscape}, {if: =page.number, equals:0, then:true}], then:235},
 			{if: =portrait, then: 706},
 			{if-all:[{if: =landscape}, {if: =page.number, equals:1, then:true}], then:353}
+			
 		]},
 
 		height: {$switch:[
+			{if-all: [{if: =issue.type, equals:NOW}, {if: =page.section, equals:MONEY_AND_INVESTING}, {if: =landscape}, {if: =page.number, equals:0, then:true}], then:220},
 			{if-all:[{if: =landscape}, {if: =page.number, equals:0, then:true}], then:233},
 			{if: =portrait, then: 256},
 			{if-all:[{if: =landscape}, {if: =page.number, equals:1, then:true}], then:353}
@@ -46,17 +54,5 @@
 		height:{if: =landscape, then:706, else:256},
 		left:{if: =landscape, then:771, else:0},
 		top:{if: =landscape, then:0, else:706}
-	},
-	#marketdata_background: 	{ 
-		frame: [0, 620, 256, 257],
-		border-width: [ 0, 1, 0, 0],
-		border-color:#b1aca1
-	},
-	#highlight_marketdata: 	{ 
-			anchor-x:center,
-			anchor-y:middle,
-			width:239,
-			height:239
-	}
-	
+	}	
 }

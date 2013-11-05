@@ -1,4 +1,5 @@
 <jpml id="CONTINUATION-fancy-PV-P_template">
+	<style src="GRID-stylesheet.ejs" /> 
 	<style src="CONTINUATION-stylesheet.ejs" /> 
 	<style src="GLOBAL-stylesheet.ejs" /> 
 	<style src="PHONE-stylesheet.ejs" /> 
@@ -12,56 +13,49 @@
 	<style>{
 		$switch: [
 	        {if: =scale.phone, then: {
-				#b1: {
-							height: {if:=articles.b1.show_subsection, then:inherit, else:50}
-				},
-		        #b2: {
-		                    height: {if:=articles.b2.subsection, equals:=articles.b1.subsection, then: 50} 
-		        },
-		        #b3: {
-		                    height: {if:=articles.b3.subsection, equals:=articles.b2.subsection, then: 50} 
-		        }
-		        
 			}},
 			{if: =portrait, then: {
-				#deco : { 
-					frame: {$switch: [
-						{if: =widescreen, then: [10, 0, 749, 461]},
-						{if: =scale.large, then: [0, 0, 765, 604]}
-					]}
+				#b1 : { 
+					top:580,
+					height:380
 				},
-	            #b1 : { 
-						frame: {$switch: [
-							{if: =widescreen, then: [0, 469, 256, 407]},
-							{if: =scale.large, then: [0, 612, 256, 264]}
-						]}
+		        #b2 : { 
+					top:580,
+					height:380
 				},
-	            #b2 : { 
-						frame: {$switch: [
-							{if: =widescreen, then: [260, 469, 256, 407]},
-							{if: =scale.large, then: [260, 612, 256, 264]}
-						]}
+		        #b3 : { 
+					top:580,
+					height:380
 				},
-	            #b3 : { 
-						frame: {$switch: [
-							{if: =widescreen, then: [520, 469, 256, 407]},
-							{if: =scale.large, then: [520, 612, 256, 264]}
-						]}
-					 
+		        #deco : { 
+					top:0,
+					height:580
 				}
-
+		        
 	        }},
 	 		{if: =landscape, then: {
-		        #b1 : { frame: [767, 0, 256, 208]},
-		        #b2 : { frame: [767, 205, 256, 208]},
-		        #b3 : { frame: [767, 413, 256, 208]},
-		        #deco : { frame: [0, 0, 765, 604]}
+		        #b1 : { 
+					top:0,
+					height:235
+				},
+		        #b2 : { 
+					top:235,
+					height:235
+				},
+		        #b3 : { 
+					top:470,
+					height:235
+				},
+		        #deco : { 
+					top:0,
+					height:580
+				}
 	        }}
     ]}</style>
-    <box id="b1" embed="article" class="maude unit_continuation_strap" module="CONTINUATION-dynamic_module.xml" />    
-    <box id="b2" embed="article" class="maude unit_continuation_strap" module="CONTINUATION-dynamic_module.xml" />
-    <box id="b3" embed="article" class="maude unit_continuation_strap" module="CONTINUATION-dynamic_module.xml" />
-    <box id="deco" embed="article" class="maude unit_G_deco" module="DECO_module.xml" />
+    <box id="b1" embed="article" class="column2 positionx7-1 maude unit_continuation_strap" module="CONTINUATION-dynamic_module.xml" />    
+    <box id="b2" embed="article" class="column2 positionx7-3 maude unit_continuation_strap" module="CONTINUATION-dynamic_module.xml" />
+    <box id="b3" embed="article" class="column2 positionx7-5 maude unit_continuation_strap" module="CONTINUATION-dynamic_module.xml" />
+    <box id="deco" embed="article" class="column6 positionx1 maude unit_G_deco" module="DECO_module.xml" />
 
 </jpml>
 

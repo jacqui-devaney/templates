@@ -10,6 +10,6 @@
 	#marketstrap: {
 		top:0,
 		height:45,
-		display:{if: =issue.type, equals:"ITP", then:none, else:inherit}
+		display:{if-all: [{if: =issue.type, equals:NOW}, {if: =page.section, equals:MONEY_AND_INVESTING}, {if: =page.number, equals:0, then:true}], then:inherit, else:none}
 	}
 }

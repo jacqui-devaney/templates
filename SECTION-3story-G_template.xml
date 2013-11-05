@@ -71,6 +71,49 @@
 			}}
 		]
 	}</style>
+	<style> {if-all: [{if: =issue.type, equals:NOW}, {if: =page.section, equals:MONEY_AND_INVESTING}, {if: =page.number, equals:0, then:true}], then: {
+		$switch: [
+			{if: =scale.phone, then:{
+		
+			}},
+		
+			{if: =portrait, then: {
+				#b1:	{ 
+					height:661,
+					top:45
+				},
+				#b2:	{ 
+					height:330,
+					top:45
+				},
+				#b3:	{ 
+					height:330,
+					top:375
+				}
+			}}, 
+			{if: =landscape, then: {
+				#b1:	{ 
+					height:661,
+					top:45
+				},
+				#b2:	{ 
+					height:330,
+					top:45
+				},
+				#b3:	{ 
+					height:330,
+					top:375
+				}
+			
+			}}
+		]
+		
+	}, else: {
+	
+	}
+	} </style>
+	
+	<box id="marketstrap" class="column_full positionx_full" embed="marketstrap" />
 	
 	<box id="b1" class="column4 positionx1 maude unit_166" embed="article" module="TOP-IMAGE_module.xml" />
 	<box id="b2" class="column2 positionx5 maude unit_50" embed="article" module="TOP-IMAGE_module.xml" />

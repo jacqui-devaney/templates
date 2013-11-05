@@ -134,8 +134,16 @@
 		
 	},
 	#section_ad: {
-		top:{if: =landscape, then:470, else:706},
-		height:{if: =landscape, then:235, else:254},
+		top: {$switch: [
+			{if-all: [{if: =issue.type, equals:NOW}, {if: =page.section, equals:MONEY_AND_INVESTING}, {if: =landscape}, {if: =page.number, equals:0, then:true}], then:485},
+			{if: =landscape, then:470},
+			"706"
+		]},
+		height: {$switch: [
+			{if-all: [{if: =issue.type, equals:NOW}, {if: =page.section, equals:MONEY_AND_INVESTING}, {if: =landscape}, {if: =page.number, equals:0, then:true}], then:220},
+			{if: =landscape, then:235},
+			"254"
+		]},
 		width:251,
 		display:{if: =scale.phone, then:inherit, else:{if: =page.number, equals:1, then:none, else:inherit}}
 	},

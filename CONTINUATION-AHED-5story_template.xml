@@ -11,13 +11,13 @@
 		]}},
 		#b2: {options: { $switch: [
 				{if: =scale.phone, then: {}},
-				{if: =portrait, then: {small_headline:true, no_byline:true, show_image:true, left_border:true}},
-				{if: =landscape, then: {small_headline:true, no_byline:true, show_image:true, left_border:true}}			
+				{if: =portrait, then: {small_headline:true, no_byline:true, show_image:true, no_border:true}},
+				{if: =landscape, then: {small_headline:true, no_byline:true, show_image:true, no_border:true}}			
 		]}},
 		#b3: {options: { $switch: [
 			{if: =scale.phone, then: {}},
-			{if: =portrait, then: {small_headline:true, no_byline:true, DV_image:true, left_border:true}},
-			{if: =landscape, then: {small_headline:true, no_byline:true, DV_image:{if: =widescreen, then:false, else:true}, left_border:true}}			
+			{if: =portrait, then: {small_headline:true, no_byline:true, DV_image:true, no_border:true}},
+			{if: =landscape, then: {small_headline:true, no_byline:true, DV_image:{if: =widescreen, then:false, else:true}, no_border:true}}			
 		]}},
 		#b4: {options: { $switch: [
 			{if: =scale.phone, then: {}},
@@ -84,7 +84,8 @@
 			}
         }}
     ]}</style>
-    <box id="b1" embed="article" class="column4 positionx1 maude unit_continuation_strap" module="AHED_module.xml" />    
+    <box id="border" />
+	<box id="b1" embed="article" class="column4 positionx1 maude unit_continuation_strap" module="AHED_module.xml" />    
     <box id="b2" embed="article" class="column2 positionx5 maude unit_continuation_strap" module="TOP-IMAGE_module.xml" />
     <box id="b3" embed="article" class="column2 positionx5 maude unit_continuation_strap" module="TOP-IMAGE_module.xml" />
     <box id="b4" embed="article" class="column2-3 positionx7-1 maude unit_continuation_strap" module="SKYBOX_module.xml" />

@@ -1,75 +1,38 @@
 <jpml id="CONTINUATION-CIO_template">
+	<style src="GRID-stylesheet.ejs" /> 
 	<style src="GLOBAL-stylesheet.ejs" />
 	<style src="GLOBAL_MODULES-stylesheet.ejs" />
+	<style src="CIO-stylesheet.ejs" />
 	<style src="PHONE-MODULES-stylesheet.ejs" />
 	<style src="PHONE-stylesheet.ejs" />
 	<style>{
-		.rando_heading: {
-			font-size:18
-		},
-		.ahed_headline: {
-			font-size:16,
-			line-height:16,
-			font-name:DJ5EscrowCond-BoldItalic
-		},
-		#tech_strap: {
-			padding: [4, 0, 0, 8],
-			background-color:#e4e4e4
-        },
-		.strap: {
-			color:#000,
-			font-name:DJ5RetinaCd-Medium,
-			font-size:18
-		},
-		#cio: {
-			display:{if: =page.section, equals: "CIO", then:inherit, else:none}
-		},
-		#cfo: {
-			display: {if: =page.section, equals: "CFO", then:inherit, else:none}
-		},
-		#risk: {
-			display: {if: =page.section, equals: "RISK_AND_COMPLIANCE", then:inherit, else:none}
-		},
         #b2: {options: {hide_strap:true}},
         #b3: {options: {hide_strap:true}},
         #b4: {options: {hide_strap:true}},
         #b5: {options: {hide_strap:true}},
         #b6: {options: {hide_strap:true}},
-		#b7: {options:{continuation:true, extra_small_headline:true}},
-		#b8: {options:{continuation:true, extra_small_headline:true}},
-		#b9: {options:{continuation:true, extra_small_headline:true}},
-		#b10: {options:{continuation:true, extra_small_headline:true}},
-		#b11: {options:{continuation:true, extra_small_headline:true}},
-		#b12: {options:{continuation:true, extra_small_headline:true}},
-		#b13: {options:{continuation:true, extra_small_headline:true}},
-		#b14: {options:{continuation:true, extra_small_headline:true}},
-		#b15: {options:{continuation:true, extra_small_headline:true}}
+		#b7: {options:{extra_small_headline:true}},
+		#b8: {options:{extra_small_headline:true}},
+		#b9: {options:{extra_small_headline:true}},
+		#b10: {options:{extra_small_headline:true}},
+		#b11: {options:{extra_small_headline:true}},
+		#b12: {options:{extra_small_headline:true}},
+		#b13: {options:{extra_small_headline:true}},
+		#b14: {options:{extra_small_headline:true}},
+		#b15: {options:{extra_small_headline:true}},
+		#h5: {options:{right_border:{if: =portrait, then:true}, left_padding:{if: =landscape, then:true}}},
+		#h6: {options:{right_border:{if: =portrait, then:true}, left_padding:{if: =landscape, then:true}}},
+		#h7: {options:{no_border:{if: =portrait, then:true}, left_padding:{if: =landscape, then:true}}}
 		
 	}</style>
 	<style>{
 		if: =scale.phone, then:{
-				#deloitte_header: {display:none},
 				.strap: {
 					font-size:16,
 					text-scale: {$multiply: [=scale.text, 1] },
 					line-height:17,
 					text-transform:uppercase
 				},
-				#b2: {
-		                    height: {if:=articles.b2.subsection, equals:=articles.b1.subsection, then: 50} 
-		        },
-		        #b3: {
-		                    height: {if:=articles.b3.subsection, equals:=articles.b2.subsection, then: 50} 
-		        },
-		        #b4: {
-		                    height: {if:=articles.b4.subsection, equals:=articles.b3.subsection, then: 50} 
-		        },
-		        #b5: {
-		                    height: {if:=articles.b5.subsection, equals:=articles.b4.subsection, then: 50} 
-		        },
-		        #b6: {
-		                    height: {if:=articles.b6.subsection, equals:=articles.b5.subsection, then: 50} 
-		        },
 	        	#b7: {border-width:[0, 0, 1, 0], border-color:#ccc},
 	        	#b8: {border-width:[0, 0, 1, 0], border-color:#ccc},
 	        	#b9: {border-width:[0, 0, 1, 0], border-color:#ccc},
@@ -85,114 +48,97 @@
 								
 	        	
 			}, else:{
-				#tech_strap: {
-					frame: [512, 4, 256, 23] 
-		        },
-				#b1: { frame: [0, 0, 256, 203] },
-		        #b2: { frame: [0, 204, 256, 203]},
-		        #b3: { frame: [0, 407, 256, 203]},
-		        #b4: { frame: [256, 0, 256, 203]},
-		        #b5: { frame: [256, 204, 256, 203]},
-		        #b6: { frame: [256, 407, 256, 203]},
+				#b1: { 
+					top:0,
+					height:235
+				},
+		        #b2: {
+					top:235,
+					height:235
+				},
+		        #b3: { 
+					top:470,
+					height:235
+				},
+				#b4: { 
+					top:0,
+					height:235
+				},
+		        #b5: {
+					top:235,
+					height:235
+				},
+		        #b6: { 
+					top:470,
+					height:235
+				},
 				#b7:	{ 
-					frame: [512, 33, 256, 67]
+					top:36,
+					height:75
 				},
 				#b8:	{ 
-					frame: [512, 95, 256, 67]
+					top:111,
+					height:75
 				},
 				#b9:	{ 
-					frame: [512, 160, 256, 67]
+					top:186,
+					height:75
 				},
 				#b10:	{ 
-					frame: [512, 225, 256, 67]
+					top:261,
+					height:75
 				},
 				#b11:	{ 
-					frame: [512, 290, 256, 67]
+					top:336,
+					height:75
 				},
 				#b12:	{ 
-					frame: [512, 355, 256, 67]
+					top:411,
+					height:75
 				},
 				#b13:	{ 
-					frame: [512, 420, 256, 67]
+					top:486,
+					height:75
 				},
 				#b14:	{ 
-					frame: [512, 485, 256, 67]
+					top:561,
+					height:75
 				},
 				#b15:	{ 
-					frame: [512, 550, 256, 61]
+					top:636,
+					height:69
 				}
 		        
 			}
 	}</style>
-	<style>{
-		$switch: [
-			{if: =scale.phone, then:{
-			
-			}},
-			{if: =portrait, then: {
-				
-				#h5: {
-					frame:[1, 679, 256, 196],
-					options:{portrait:{if: =portrait, then:true}}
-				},
-				#h6: {
-					frame:[257, 679, 256, 196],
-					options:{portrait:{if: =portrait, then:true}}
-				},
-				#h7: {
-					frame:[513, 679, 256, 196],
-					options:{portrait:{if: =portrait, then:true}}
-				},
-				#deloitte_header: {
-					frame: [0, 611, 768, 68]
-				}
-				
-			}},
-			{if: =landscape, then: {
-				#h5: {
-					frame:[785, 80, 240, 180]
-				},
-				#h6: {
-					frame:[785, 260, 240, 180]
-				},
-				#h7: {
-					frame:[785, 440, 240, 180]
-				},
-				#deloitte_header: {
-					frame: [785, 0, 238, 64]
-				}
-				
-			}}
-			
-		]
-	}</style>
 	
-	<box id="h5" embed="article" class="maude unit_50" module="HIGHLIGHTS-CIO_module.xml" />
-	<box id="h6" embed="article" class="maude unit_50" module="HIGHLIGHTS-CIO_module.xml" />
-	<box id="h7" embed="article" class="maude unit_50" module="HIGHLIGHTS-CIO_module.xml" />
-	<box id="b1" embed="article" class="maude unit_continuation_strap" module="CONTINUATION-dynamic_module.xml" />    
-    <box id="b2" embed="article" class="maude unit_continuation_strap" module="CONTINUATION-dynamic_module.xml" />
-    <box id="b3" embed="article" class="maude unit_continuation_strap" module="CONTINUATION-dynamic_module.xml" />
-    <box id="b4" embed="article" class="maude unit_continuation_strap" module="CONTINUATION-dynamic_module.xml" />
-    <box id="b5" embed="article" class="maude unit_continuation_strap" module="CONTINUATION-dynamic_module.xml" />
-    <box id="b6" embed="article" class="maude unit_continuation_strap" module="CONTINUATION-dynamic_module.xml" />
-	<box id="tech_strap" class="maude">
+	<box id="h5" embed="article" class="column2 positionx7-1 maude unit_50" module="HIGHLIGHTS-CIO_module.xml" />
+	<box id="h6" embed="article" class="column2 positionx7-3 maude unit_50" module="HIGHLIGHTS-CIO_module.xml" />
+	<box id="h7" embed="article" class="column2 positionx7-5 maude unit_50" module="HIGHLIGHTS-CIO_module.xml" />
+	<box id="b1" embed="article" class="column2 positionx1 maude unit_continuation_strap" module="CONTINUATION-dynamic_module.xml" />    
+    <box id="b2" embed="article" class="column2 positionx1 maude unit_continuation_strap" module="CONTINUATION-dynamic_module.xml" />
+    <box id="b3" embed="article" class="column2 positionx1 maude unit_continuation_strap" module="CONTINUATION-dynamic_module.xml" />
+    <box id="b4" embed="article" class="column2 positionx3 maude unit_continuation_strap" module="CONTINUATION-dynamic_module.xml" />
+    <box id="b5" embed="article" class="column2 positionx3 maude unit_continuation_strap" module="CONTINUATION-dynamic_module.xml" />
+    <box id="b6" embed="article" class="column2 positionx3 maude unit_continuation_strap" module="CONTINUATION-dynamic_module.xml" />
+	<box id="tech_strap" class="column2 positionx5 maude">
 		<panel>
 			<p class="strap" id="cio">Latest Technology News</p>
 			<p class="strap" id="cfo">Latest Finance News</p>
 			<p class="strap" id="risk">Latest News</p>
 		</panel>
 	</box>
-	<box id="b7" embed="article" class="maude unit_highlight" module="FLASHLINE-HEADLINE_module.xml" />
-	<box id="b8" embed="article" class="maude unit_highlight" module="FLASHLINE-HEADLINE_module.xml" />
-	<box id="b9" embed="article" class="maude unit_highlight" module="FLASHLINE-HEADLINE_module.xml" />
-	<box id="b10" embed="article" class="maude unit_highlight" module="FLASHLINE-HEADLINE_module.xml" />
-	<box id="b11" embed="article" class="maude unit_highlight" module="FLASHLINE-HEADLINE_module.xml" />
-	<box id="b12" embed="article" class="maude unit_highlight" module="FLASHLINE-HEADLINE_module.xml" />
-	<box id="b13" embed="article" class="maude unit_highlight" module="FLASHLINE-HEADLINE_module.xml" />
-	<box id="b14" embed="article" class="maude unit_highlight" module="FLASHLINE-HEADLINE_module.xml" />
-	<box id="b15" embed="article" class="maude unit_highlight" module="FLASHLINE-HEADLINE_module.xml" />
-    <box id="deloitte_header">
+	<box id="b7" embed="article" class="column2 positionx5 maude unit_highlight" module="FLASHLINE-HEADLINE_module.xml" />
+	<box id="b8" embed="article" class="column2 positionx5 maude unit_highlight" module="FLASHLINE-HEADLINE_module.xml" />
+	<box id="b9" embed="article" class="column2 positionx5 maude unit_highlight" module="FLASHLINE-HEADLINE_module.xml" />
+	<box id="b10" embed="article" class="column2 positionx5 maude unit_highlight" module="FLASHLINE-HEADLINE_module.xml" />
+	<box id="b11" embed="article" class="column2 positionx5 maude unit_highlight" module="FLASHLINE-HEADLINE_module.xml" />
+	<box id="b12" embed="article" class="column2 positionx5 maude unit_highlight" module="FLASHLINE-HEADLINE_module.xml" />
+	<box id="b13" embed="article" class="column2 positionx5 maude unit_highlight" module="FLASHLINE-HEADLINE_module.xml" />
+	<box id="b14" embed="article" class="column2 positionx5 maude unit_highlight" module="FLASHLINE-HEADLINE_module.xml" />
+	<box id="b15" embed="article" class="column2 positionx5 maude unit_highlight" module="FLASHLINE-HEADLINE_module.xml" />
+    <box id="background_color" />
+	<box id="deloitte_header" class="column_2-full positionx7-1">
 		<panel class="deloitte" />
 		<panel class="slug">
 			<p class="deloitte_slug" id="cio">Business-led, Technology-enabled:</p><p class="deloitte_slug" id="cio">Insight from Deloitte</p>

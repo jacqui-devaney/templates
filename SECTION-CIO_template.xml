@@ -1,36 +1,11 @@
 <jpml id="SECTION-CIO_template">
+	<style src="GRID-stylesheet.ejs" /> 
 	<style src="GLOBAL-stylesheet.ejs" />
 	<style src="GLOBAL_MODULES-stylesheet.ejs" />
-	<style src="SECTION-stylesheet.ejs" />
-	<style src="PHONE-stylesheet.ejs" />
+	<style src="CIO-stylesheet.ejs" />
 	<style src="PHONE-MODULES-stylesheet.ejs" />
+	<style src="PHONE-stylesheet.ejs" />
 	<style>{
-		#cio: {
-			display:{if: =page.section, equals: "CIO", then:inherit, else:none}
-		},
-		#cfo: {
-			display: {if: =page.section, equals: "CFO", then:inherit, else:none}
-		},
-		#risk: {
-			display: {if: =page.section, equals: "RISK_AND_COMPLIANCE", then:inherit, else:none}
-		},
-		.rando_heading: {
-			font-size:18
-		},
-		.ahed_headline: {
-			font-size:{if: =scale.phone, then: 10, else:16},
-			line-height:{if: =scale.phone, then: 10, else:16},
-			font-name:DJ5EscrowCond-BoldItalic,
-			padding: [5, 0, 0, 0]
-		},
-		#stars: {
-			padding:[5, 0, 0, 0]
-			
-		},
-		.ahed_stars: {
-			content: "*\u00a0\u00a0*\u00a0\u00a0*",
-			font-size:{if: =scale.phone, then: 10, else:16}
-		},
 		
 		#b1:	{ 
 			options: {if: =scale.phone, then: 
@@ -65,63 +40,27 @@
 		#b7:	{ 
 			options: {if: =scale.phone, then:
 				{small:true, border:true, small_headline:true}, else:
-				{small:true, extra_small_headline:true}
+				{small:true, small_headline:true}
 			}
 		},
 		#b8:	{ 
 			options: {if: =scale.phone, then:
 				{small:true, border:true, small_headline:true}, else:
-				{small:true, extra_small_headline:true}
+				{small:true, small_headline:true}
 			}
 		},
 		#b9:	{ 
 			options: {if: =scale.phone, then:
 				{small:true, border:true, small_headline:true}, else:
-				{small:true, extra_small_headline:true}
+				{small:true, small_headline:true}
 			}
 		},
-		#h5: {
-			options:{portrait:{if: =portrait, then:true}}
-		},
-		#h6: {
-			options:{portrait:{if: =portrait, then:true}}
-		},
-		#h7: {
-			options:{portrait:{if: =portrait, then:true}}
-		},
-		
-		#line: {
-			background-color:#b1aca1,
-			frame: [50, 23, 262, 1]
-		}
-		
-		
+		#h5: {options:{right_border:{if: =portrait, then:true}, left_padding:{if: =landscape, then:true}}},
+		#h6: {options:{right_border:{if: =portrait, then:true}, left_padding:{if: =landscape, then:true}}},
+		#h7: {options:{no_border:{if: =portrait, then:true}, left_padding:{if: =landscape, then:true}}}
 	}</style>
 	<style>{
 			if: =scale.phone, then:{
-				#tech_header: {
-					display:none
-				},
-				#hr: {
-					border-width: [0, 0, 1, 0],
-					border-color: #ccc,
-					padding:[0, 0, 7, 0],
-					height:1,
-					width:200,
-					left:60
-				},
-				#h5: {
-					options:{hide_body:true, hide_image:true}
-				},				
-				#h6: {
-					options:{hide_body:true, hide_image:true}
-				},
-				#h7: {
-					options:{hide_body:true, hide_image:true}
-				},
-				#deloitte_header: {
-					display:none
-				},
 				.deloitte: {
 					top:14,
 					left:10
@@ -133,146 +72,82 @@
 				.deloitte_slug: {
 					text-align:left,
 					font-size:13
-				},
-				.ahed_headline: {display:none},
-				#stars: {display:none},
-				#cio_header: {
-					display:none
-				},
-				#strap: {
-					padding: [4, 4, 0, 8],
-					background-color:#e4e4e4
-		        }
+				}
 				
 				
 							
 			}, else:{
-				#tech_header: {
-					frame: [449, 15, 251, 50],
-					border-width: [0, 0, 1, 0],
-					border-color: #ccc
-				},
 				#b1: {
-					frame: [8, 103, 362, 245]
+					top:103,
+					height:300
 					
 				},
 				#b2: {
-					frame: [8, 344, 362, 135]
+					top:403,
+					height:150
 				},
 				#b3: {
-					frame: [8, 479, 362, 131]
+					top:553,
+					height:150
 				},
 				#l1: {
 					frame: [394, 74, 362, 160]
 				},
 				#b5: {
-					frame: [394, 74, 362, 160]
+					top:103,
+					height:150
 				},
 				#b6: {
-					frame: [394, 231, 362, 160]
+					top:253,
+					height:150
 				},
 				#b7: {
-					frame: [394, 391, 362, 74]
+					top:403,
+					height:100
 				},
 				#b8: {
-					frame: [394, 465, 362, 74]
+					top:503,
+					height:100
 				},
 				#b9: {
-					frame: [394, 539, 362, 71]
-				},
-				#cio_header: {
-					frame: [0, 10, 384, 99]
-
-				},
-				#line: {
-					frame: [50, 23, 262, 1]
-				},
-				#deloitte_article_header: {
-					display:none
-				},
-				#strap: {display:none}
+					top:603,
+					height:100
+				}
 			}
-	}</style>
-	<style>{
-		$switch: [
-			{if: =scale.phone, then:{
-			}},
-			{if: =portrait, then: {
-				
-				#h5: {
-					frame:[1, 679, 256, 196]
-				},
-				#h6: {
-					frame:[257, 679, 256, 196]
-				},
-				#h7: {
-					frame:[513, 679, 256, 196]
-				},
-				#deloitte_header: {
-					frame: [0, 611, 768, 68]
-				}
-
-			}},
-			{if: =landscape, then: {
-				#h5: {
-					frame:[785, 80, 240, 180]
-				},
-				#h6: {
-					frame:[785, 260, 240, 180]
-				},
-				#h7: {
-					frame:[785, 440, 240, 180]
-				},
-				#deloitte_header: {
-					frame: [785, 0, 238, 64]
-				}
-				
-			}}
-			
-		]
 	}</style>
 	<panel id="strap">
 		<p class="subsection" id="cio">CIO Report</p>
 		<p class="subsection" id="cfo">CFO Report</p>
 		<p class="subsection" id="risk">Risk &amp; Compliance</p>
 	</panel>
-	<box id="cio_header">
-		<panel class="cio_report" id="cio">
-			<p class="cio_head">CIO Report –</p>
-	        <p class="ahed_headline">Exclusive Reporting &amp; Analysis</p>
-	        <p id="stars"><mark class="ahed_stars" /></p>
-		</panel>
-		<panel class="cio_report" id="cfo">
-			<p class="cio_head">CFO Report –</p>
-	        <p class="ahed_headline">Exclusive Reporting &amp; Analysis</p>
-	        <p id="stars"><mark class="ahed_stars" /></p>
-		</panel>
-		<panel class="cio_report" id="risk">
-			<p class="cio_head">Risk &amp; Compliance –</p>
+	<box id="cio_header" class="column3 positionx1">
+		<panel class="cio_report">
+			<p class="cio_head" id="cio">CIO Report –</p>
+			<p class="cio_head" id="cfo">CFO Report –</p>
+			<p class="cio_head" id="risk">Risk &amp; Compliance –</p>
 	        <p class="ahed_headline">Exclusive Reporting &amp; Analysis</p>
 	        <p id="stars"><mark class="ahed_stars" /></p>
 		</panel>
 	</box>
-	<box id="b1" embed="article" class="maude unit_166" module="FRONT-NO-IMAGE_module.xml" />
-	<box id="b2" embed="article" class="maude unit_50" module="FRONT-NO-IMAGE_module.xml" />
-	<box id="b3" embed="article" class="maude unit_50" module="FRONT-NO-IMAGE_module.xml" />
+	<box id="b1" embed="article" class="column3 positionx1 maude unit_166" module="FRONT-NO-IMAGE_module.xml" />
+	<box id="b2" embed="article" class="column3 positionx1 maude unit_50" module="FRONT-NO-IMAGE_module.xml" />
+	<box id="b3" embed="article" class="column3 positionx1 maude unit_50" module="FRONT-NO-IMAGE_module.xml" />
 	<panel id="strap">
 		<p class="subsection" id="cio">Latest Technology News</p>
 		<p class="subsection" id="cfo">Latest Finance News</p>
 		<p class="subsection" id="risk">Latest News</p>
 	</panel>
-	<box id="tech_header" class="maude unit_cio">
+	<box id="tech_header" class="column2 maude unit_cio">
 		<p class="tech_section" id="cio">Latest Technology News</p>
 		<p class="tech_section" id="cfo">Latest Finance News</p>
 		<p class="tech_section" id="risk">Latest News</p>
 		<p class="tagline">From WSJ and other top sources</p>
-		<box id="hr" class="maude" />
 	</box>
-	<box id="b5" embed="article" class="maude unit_50" module="RIGHT-INSET-IMAGE_module.xml" />
-	<box id="b6" embed="article" class="maude unit_50" module="RIGHT-INSET-IMAGE_module.xml" />
-	<box id="b7" embed="article" class="maude unit_cio" module="FLASHLINE-HEADLINE_module.xml" />
-	<box id="b8" embed="article" class="maude unit_cio" module="FLASHLINE-HEADLINE_module.xml" />
-	<box id="b9" embed="article" class="maude unit_cio" module="FLASHLINE-HEADLINE_module.xml" />
+	<box id="b5" embed="article" class="column3 positionx4 maude unit_50" module="RIGHT-INSET-IMAGE_module.xml" />
+	<box id="b6" embed="article" class="column3 positionx4 maude unit_50" module="RIGHT-INSET-IMAGE_module.xml" />
+	<box id="b7" embed="article" class="column3 positionx4 maude unit_cio" module="FLASHLINE-HEADLINE_module.xml" />
+	<box id="b8" embed="article" class="column3 positionx4 maude unit_cio" module="FLASHLINE-HEADLINE_module.xml" />
+	<box id="b9" embed="article" class="column3 positionx4 maude unit_cio" module="FLASHLINE-HEADLINE_module.xml" />
 	<box id="deloitte_article_header" class="maude">
 		<box class="deloitte_article">
 			<box class="deloitte" />
@@ -283,7 +158,11 @@
 			<p class="deloitte_slug" id="risk">Risk management, strategy and </p><p class="deloitte_slug" id="risk">analysis written and compiled </p><p class="deloitte_slug" id="risk">by Deloitte</p>
 		</box>
 	</box>
-	<box id="deloitte_header">
+    <box id="background_color" />
+	<box id="h5" embed="article" class="column2 positionx7-1 maude unit_50" module="HIGHLIGHTS-CIO_module.xml" />
+	<box id="h6" embed="article" class="column2 positionx7-3 maude unit_50" module="HIGHLIGHTS-CIO_module.xml" />
+	<box id="h7" embed="article" class="column2 positionx7-5 maude unit_50" module="HIGHLIGHTS-CIO_module.xml" />
+	<box id="deloitte_header" class="column_2-full positionx7-1">
 		<panel class="deloitte" />
 		<panel class="slug">
 			<p class="deloitte_slug" id="cio">Business-led, Technology-enabled:</p><p class="deloitte_slug" id="cio">Insight from Deloitte</p>
@@ -291,9 +170,6 @@
 			<p class="deloitte_slug" id="risk">Risk management, strategy and </p><p class="deloitte_slug" id="risk">analysis written and compiled by Deloitte</p>
 		</panel>
 	</box>
-	<box id="h5" embed="article" class="maude unit_50" module="HIGHLIGHTS-CIO_module.xml" />
-	<box id="h6" embed="article" class="maude unit_50" module="HIGHLIGHTS-CIO_module.xml" />
-	<box id="h7" embed="article" class="maude unit_50" module="HIGHLIGHTS-CIO_module.xml" />
 
 	
 </jpml>

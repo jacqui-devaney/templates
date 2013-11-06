@@ -1,0 +1,177 @@
+{
+	#cio: {
+		display:{if: =page.section, equals: "CIO", then:inherit, else:none}
+	},
+	#cfo: {
+		display: {if: =page.section, equals: "CFO", then:inherit, else:none}
+	},
+	#risk: {
+		display: {if: =page.section, equals: "RISK_AND_COMPLIANCE", then:inherit, else:none}
+	},
+	#tech_strap: {
+		padding: [4, 0, 0, 8],
+		background-color:#e4e4e4,
+		top:4,
+		height:25
+		
+    },
+	#tech_header: {
+		top:25,
+		height:50,
+		left:450,
+		border-width: [0, 0, 1, 0],
+		border-color: #ccc,
+		display: {if: =scale.phone, then:none, else:inherit}
+		
+	},
+	.ahed_headline: {
+		font-size:{if: =scale.phone, then: 10, else:16},
+		line-height:{if: =scale.phone, then: 10, else:16},
+		font-name:DJ5EscrowCond-BoldItalic,
+		padding: [5, 0, 0, 0],
+		display:{if: =scale.phone, then:none, else:inherit}
+	},
+	#stars: {
+		padding:[5, 0, 0, 0],
+		display:{if: =scale.phone, then:none, else:inherit}	
+	},
+	.ahed_stars: {
+		content: "*\u00a0\u00a0*\u00a0\u00a0*",
+		font-size:{if: =scale.phone, then: 10, else:16}
+	},
+
+	.strap: {
+		color:#000,
+		font-name:DJ5RetinaCd-Medium,
+		font-size:18
+	},
+	#h5: {
+		top:{if: =landscape, then:78, else: 766},
+		height:210,
+		width:{if: =landscape, then:251, else: 246}
+	},
+	#h6: {
+		top:{if: =landscape, then:287, else: 766},
+		height:210,
+		width:{if: =landscape, then:251, else: 246}
+	},
+	#h7: {
+		top:{if: =landscape, then:496, else: 766},
+		height:211,
+		width:{if: =landscape, then:251, else: 246}
+	},
+	#deloitte_header: {
+		top:{if: =landscape, then:0, else: 706},
+		height:{if: =landscape, then:63, else: 46},
+		border-image:url(deloitte_background.png),
+		border-width: [16, 0, 0, 0],
+		border-slice: [16, 0, 0, 0],
+		background-color:#b9e4f3,
+		width:{if: =landscape, then:251, else: 768},
+		display: {if: =scale.phone, then:none, else:inherit}
+	},
+	#background_color: {
+		background-color:#b9e4f3, 
+		width:{if: =landscape, then:251, else:768},
+		height:{if: =landscape, then:706, else:256},
+		left:{if: =landscape, then:773, else:0},
+		top:{if: =landscape, then:0, else:706}
+	},
+	#deloitte_article_header: {
+		border-image:url(deloitte_background-white.png),
+		border-width: [3, 0, 0, 0],
+		border-slice: [3, 0, 0, 0],
+		min-height:49,
+		display:{if: =scale.phone, then:inherit, else:none}
+	},
+	#strap: {
+		display:{if: =scale.phone, then:inherit, else:none},
+		padding: [4, 4, 0, 8],
+		background-color:#e4e4e4
+		
+	},
+	#cio_header: {
+		top:8,
+		height:95,
+		display:{if: =scale.phone, then:none, else:inherit}
+
+	},
+	.deloitte: {
+		background-image:url(deloitte.png),
+		background-position:top,
+		width:95,
+		padding:[10, 0],
+		height:18
+	},
+	.deloitte_slug: {
+		font-name:Georgia-Italic,
+		font-size:12,
+		text-align:center
+	},
+	.cio_head: {
+		font-size:45,
+		color:#88795c,
+		font-name:DJ5EscrowComp-Roman,
+		text-align:center,
+		line-height:48
+	},
+	.slug: {
+		padding: [2, 0, 0, 0]
+	},
+	.deloitte_article_headline: {
+		font-size:40,
+		color:#333,
+		font-name:HelveticaNeue-Medium,
+		text-align:left,
+		line-height:45,
+		padding:[0, 0, 8, 0],
+		border-width:[0, 0, 1, 0],
+		border-color:#ccc
+
+	},
+	.deloitte_article_body: {
+		color:#333,
+		font-name:Helvetica,
+		text-align:left,
+		text-indent:0,
+		font-size:{$multiply: [15, =view.zoomlevel]},
+		line-height:{$multiply: [20, =view.zoomlevel]},
+	    text-align: =justify,
+		hyphens:auto
+
+	},
+	#deloitte-disclaimer-preamble-p: {
+	    padding: [16, 0, 0, 0],
+		text-indent:0
+
+	},
+
+	.deloitte-disclaimer: {
+		font-name:Helvetica,
+		padding: [16, 0, 0, 0],
+	    text-align:left,
+		color:#767676,
+		font-size:{$multiply: [11, =view.zoomlevel]},
+		line-height:{$multiply: [16, =view.zoomlevel]},
+		text-indent:0,
+		layout-grid-line: 0
+	},
+	.tech_section: {
+		font-name:DJ5EscrowComp-Roman,
+		color:#333,
+		font-size:24,
+		text-align:center
+	},
+	.tagline: {
+		font-name:Georgia-Italic,
+		color:#333,
+		font-size:12,
+		text-align:center
+	}
+		
+	
+	
+	
+	
+	
+}

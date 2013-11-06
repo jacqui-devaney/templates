@@ -6,8 +6,12 @@
     <style>{
 		jpml: {
 				background-color:{if: =scale.phone, then: #fff, else: #b9e4f3},
-				padding: [10, 8, 10, 8],
-				border-width: {if: =options.portrait, then: [0, 1, 0, 0], else: [1, 0, 0, 0]},
+				padding: [10, 10, 10, {if: =options.left_padding, then:10, else:0}],
+				border-width: {$switch: [
+					{if: =options.right_border, then: [0, 1, 0, 0]},
+					{if: =options.no_border, then: [0, 0, 0, 0]},
+					[1, 0, 0, 0]
+				]},
 				border-color:#b1aca1
 		},
 		.cio_highlight_headline: {
@@ -23,7 +27,7 @@
 			font-size:11,
 			line-height:12,
 			display: {$switch: [
-				{if: =scale.small, then:{if: =options.byline, then:inherit, else:none}},
+				{if: =scale.small, then:{if: =options.byline, then:inherit}},
 				{if: =scale.large, then: inherit}
 			]}
 		},

@@ -15,7 +15,8 @@
 			{if: =scale.large, then: inherit}
 		]}},
 		#image_container: {
-			width:241
+			width:241,
+			display: {if: =options.no_image, then:none, else:inherit}
 		},
 		image: {
 			options: {
@@ -24,7 +25,8 @@
 				]
 			},
 			image-scale: 1,
-			height:160
+			height:160,
+			display: {if: =options.no_image, then:none, else:inherit}
 		},
 		.portrait_D: {
 			options: {

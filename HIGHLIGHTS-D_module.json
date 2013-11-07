@@ -43,6 +43,18 @@
       }]
     },
     {
+      "key": "image",
+      "title": "Hide/Show Image",
+      "type": "toggle",
+      "options": [{
+        "label": "Show",
+        "values": { "no_image": false}
+      }, {
+        "label": "Hide",
+        "values": { "no_image": true }
+      }]
+    },
+    {
       "key": "justify",
       "title": "Justify Body",
       "type": "toggle",

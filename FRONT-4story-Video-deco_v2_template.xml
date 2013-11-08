@@ -17,7 +17,7 @@
 		#deco: {options: {$switch: [
 			{if: =scale.phone, then: {normal_headline:true, G_image:true, bottom_border:true}},
 			{if: =portrait, then:{normal_headline:true, no_caption:true, F_image:{if: =widescreen, then:true, else:false}}},
-			{if: =landscape, then: {medium_headline:{if: =widescreen, then:false, else:true}, normal_headline:{if: =widescreen, then:true, else:false}, no_caption:true, F_image:{if: =scale.small, then:true, else:false}, small_margin_no_border:{if: =scale.small, then:true, else:false}}}
+			{if: =landscape, then: {medium_headline:{if: =widescreen, then:false, else:true}, normal_headline:{if: =widescreen, then:true, else:false}, no_caption:true, small_margin_no_border:{if: =widescreen, then:true, else:false}}}
 		]}},
 		#b3:	{options: {if: =portrait,
 					then:{small_headline:true, no_byline:true, no_indent:true},
@@ -47,7 +47,7 @@
 				},
 				#deco:	{ 
 							frame: {$switch: [
-								{if: =widescreen, then: [194, 281, 571, 257]},
+								{if: =widescreen, then: [194, 261, 571, 257]},
 								{if: =scale.large, then: [195, 193, 569, 380]}
 						]}
 				},
@@ -84,13 +84,13 @@
 				},
 				#deco:	{
 				 			frame: {$switch: [
-								{if: =widescreen, then: [496, 28, 322, 358]},
+								{if: =widescreen, then: [496, 28, 322, 333]},
 								{if: =scale.large, then: [205, 194, 569, 336]}
 							]}
 				},
 				#b2:	{ 
 							frame: {$switch: [
-								{if: =widescreen, then: [496, 378, 322, 240]},
+								{if: =widescreen, then: [496, 360, 322, 260]},
 								{if: =scale.large, then: [787, 28, 237, 168]}
 							]}
 				},

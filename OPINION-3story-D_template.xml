@@ -5,21 +5,18 @@
 	<style src="OPINION-stylesheet.ejs" />
 	<style src="PHONE-stylesheet.ejs" />
 	<style>{
-		#b1: {options:{justify:true, header:true}},
-		#b2: {
-			options: {
-				justify:true
-		}},
-		
-		#b3: {options:{
-			small_headline:true, 
-			hide_summary:true, 
-			show_image:true, 
-			no_border:{if: =scale.phone, then:false, else:true}, 
-			byline:{if-any: [=scale.phone, =scale.large], then:false, else:true}, 
-			F_image:{if-all: [=widescreen, =landscape], then:true, else:false}
-		}},
-		#h2: {options:{no_border:{if: =scale.phone, then:true, else:false}}}
+		#b1: {options:{header:true}},
+		#b2: {options: { $switch: [
+				{if: =scale.phone, then: {no_border:true}},
+				{if: =portrait, then: {}},
+				{if: =landscape, then: {}}			
+		]}},		
+		#b3: {options: { $switch: [
+				{if: =scale.phone, then: {small_headline:true}},
+				{if: =portrait, then: {small_headline:true, show_image:true, no_border:true}},
+				{if: =landscape, then: {small_headline:true, show_image:true, no_border:true}}			
+		]}}		
+	
 	}</style>
     <style>{ 
 		$switch: [

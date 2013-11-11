@@ -4,6 +4,9 @@
 	<style src="PHONE-MODULES-stylesheet.ejs" />
 	<style>{
 		$join: [		
+			{.body: {
+				text-align:justify
+			}},
 			{ $switch: [
 				{ if: =article.type, equals: "Letters", then: {
 					.opinion_headline: { display: none},

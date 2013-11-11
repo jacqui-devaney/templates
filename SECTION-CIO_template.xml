@@ -10,19 +10,19 @@
 		#b1:	{ 
 			options: {if: =scale.phone, then: 
 				{show_body:true, no_border:true, large_headline:true, show_image:false, top_align:true}, else:
-				{medium_headline:true, no_border:true}
+				{medium_headline:true, no_border:true, no_byline: {if: =page.section, equals:RISK_AND_COMPLIANCE, then:true}}
 			}
 		},
 		#b2:	{ 
 			options: {if: =scale.phone, then:
 				{small_headline:true, hide_image:true}, else:
-				{small_headline:true}
+				{small_headline:true, no_byline: {if: =page.section, equals:RISK_AND_COMPLIANCE, then:true}}
 			}
 		},
 		#b3:	{ 
 			options: {if: =scale.phone, then:
 				{small_headline:true, hide_image:true}, else:
-				{small_headline:true}
+				{small_headline:true, no_byline: {if: =page.section, equals:RISK_AND_COMPLIANCE, then:true}}
 			}
 		},
 		#b5:	{ 

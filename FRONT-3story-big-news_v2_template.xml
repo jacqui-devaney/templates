@@ -15,15 +15,15 @@
 		#b2: {
 			options:{$switch:[
 				{if: =scale.phone, then: {}},
-				{if: =portrait, then: {medium_headline:true, no_columns:true, no_indent:{if: =scale.small, then:true, else:false}, border:true, C_image:{if: =scale.large, then:true, else:false}}},
-				{if: =landscape, then: {medium_headline:true, border:true, no_indent:{if: =scale.small, then:true, else:false}}}
+				{if: =portrait, then: {medium_headline:true, no_columns:true, C_image:true, border:true}},
+				{if: =landscape, then: {medium_headline:true, border:true}}
 			]	
 		}},
 		#b3: {
 			options:{$switch:[
 				{if: =scale.phone, then: {}},
-				{if: =portrait, then: {medium_headline:true, no_columns:true, no_indent:{if: =scale.small, then:true, else:false}, border:true, C_image:true}},
-				{if: =landscape, then: {medium_headline:true, no_columns:true, border:true, byline:{if: =scale.small, then:true, else:false}, no_indent:{if: =scale.small, then:true, else:false}}}
+				{if: =portrait, then: {medium_headline:true, border:true, no_columns:true, C_image:true}},
+				{if: =landscape, then: {medium_headline:true, no_columns:true, border:true}}
 			]	
 		}}
 		
@@ -39,7 +39,7 @@
 				height:320
 			},
 			#b2:	{ 
-				top:320,
+				top:321,
 				height:320
 			},
 			#b3:	{ 

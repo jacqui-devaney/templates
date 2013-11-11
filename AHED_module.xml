@@ -1,10 +1,11 @@
 <jpml id="AHED_module">
 <style src="GLOBAL_MODULES-stylesheet.ejs"/>
+<style src="AHED-stylesheet.ejs"/>
 <style src="PHONE-MODULES-stylesheet.ejs"/>
     <style>{
 				$join: [        
 					{jpml: { 
-						padding: [0, 2, 0, 2],
+						padding: [0],
 					 	text-scale: =scale.text
 					}},
 			        {#top_container: {
@@ -16,7 +17,6 @@
 			        {#bottom_container: {
 			            padding: [0, 16, 0, 16],
 			            text-overflow: "\u00bb",
-			            text-align: =justify,
 						display:{if: =options.hide_body, then:none, else:inherit}
 			        }},
 			        {#image_container: { 
@@ -44,25 +44,16 @@
 							{if: =options.center_image, then:[5, 10]},
 							[0, 4, 8, 8]
 						]},
-						options: { 
-							match: { 
-								width: {if: =options.center_image, then:113, else:79}, 
-								height: {if: =options.center_image, then:113, else:79} 
-							} 
-						}
-						
-					}},
-					{.A_size:{
 						width: {if: =options.center_image, then:113, else:76}, 
 						height: {if: =options.center_image, then:113, else:76} 
 						
 					}},
 					{#stars: { padding: [5, 0, 0, 0] }},
 					{ $switch: [
-						{ if: =options.no_rule, then: {
+						{ if: =options.no_border, then: {
 							#regular: {
 								border-width: [0, 0, 0, 0],
-								padding: [2, 8, 15, 8],
+								padding: [0, 8, 8, 8],
 								display: { if: =article.type, equals: A-hed, then: none, else: inherit }
 							}
 
@@ -71,7 +62,7 @@
 							#regular: {
 								border-width: [1, 0, 0, 0],
 								border-color: #b1aca1,
-								padding: [10, 8, 15, 8],
+								padding: [8, 8, 8, 8],
 								display: { if: =article.type, equals: A-hed, then: none, else: inherit }
 							}
 							}}
@@ -85,22 +76,22 @@
 					]}}},
 					{.byline: {display: {$switch: [
 						{if: =scale.small, then:{if: =options.byline, then:inherit, else:none}},
-						{if: =scale.large, then: inherit}
+						{if: =scale.large, then: {if: =options.no_byline, then:none, else:inherit}}
 					]}}},
-					{.ahed_subhed: {display:{if: =options.dek, then:none, else:inherit}}},
+					{.ahed_subhed: {display:{if: =options.no_subhed, then:none, else:inherit}}},
 					{.body: {
-						padding:{if: =options.byline, then:[0], else:[3, 0, 0, 0]}
+						padding:[3, 0, 0, 0]
 					}},
 					{.ahed_body: {
 						column-count: { if: =options.two_columns, then:2, else:1 },
 						column-gutter: 20,
 						text-indent:{if: =options.indent, then:20, else:0},
-						text-align: {if: =options.justify, then:justify, else:left},
+						text-align: justify,
 						hyphens: {if: =options.justify, then:auto, else:none}
 					}},
 					{#body-first-p: {text-indent: {$switch: [
-						{if: =scale.small, then:{if: =options.no_indent, then:0, else:inherit}},
-						{if: =scale.large, then: inherit}
+						{if: =scale.small, then:{if: =options.no_indent, then:0, else:20}},
+						{if: =scale.large, then:{if: =options.no_indent, then:0, else:20}}
 					]}}},
 					
 					{.phone: {display:none}}
@@ -170,7 +161,7 @@
 	        <h2 class="ahed_subhed" embed="subhed"/>
 	    </panel>
 	    <panel id="bottom_container">
-	        <box id="image_container"><image class="A_size" target-width="79" target-height="79" embed="summary-image"/></box>
+	        <box id="image_container"><image target-width="79" target-height="79" embed="summary-image"/></box>
 	        <p class="ahed_byline" embed="byline"/>
 	        <panel class="ahed_body" embed="body" />
 	    </panel>

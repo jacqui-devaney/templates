@@ -7,12 +7,7 @@
 	<style> {
 		#b1: {options: {$switch: [
 			{if: =scale.phone, then: {large_headline:true, no_border:true, show_body:true, top_align:true}},
-			{if: =portrait, then: {
-					medium_headline:true, 
-					no_border:true,
-					byline:{if: =scale.small, then:true, else:false},
-					no_indent:true
-				}},
+			{if: =portrait, then: {large_headline:true, no_border:true, no_indent:true}},
 			{if: =landscape, then: {large_headline:true, no_border:true, no_indent:true}}		
 		]}},
 		#b2: {options: {$switch: [
@@ -22,18 +17,18 @@
 		]}},
 		#b3: {options: {$switch: [
 			{if: =scale.phone, then: {small_headline:true}},
-			{if: =portrait, then: {small_headline:true, bottom:{if: =scale.small, then:true}, no_indent:true}},
-			{if: =landscape, then: {small_headline:true, no_rule: {if: =scale.small, then:true}, no_indent:true}}		
+			{if: =portrait, then: {small_headline:true, no_indent:true}},
+			{if: =landscape, then: {small_headline:true, no_indent:true}}		
 		]}},
 		#b4: {options: {$switch: [
 			{if: =scale.phone, then: {small_headline:true}},
 			{if: =portrait, then: {small_headline:true, no_image:true, no_indent:true}},
-			{if: =landscape, then: {small_headline:true, no_indent:true, no_rule:true}}		
+			{if: =landscape, then: {small_headline:true, no_indent:true, no_border:true}}		
 		]}},
 		#deco: {options: {$switch: [
 			{if: =scale.phone, then: {normal_headline:true, no_border:true, G_image:true}},
 			{if: =portrait, then: {normal_headline:true, no_border:true, DV_image:true, vertical_deco:true}},
-			{if: =landscape, then: {normal_headline:true, no_border:{if: =scale.small, then:false, else:true}, no_indent:true, DV_image:{if: =scale.small, then:false, else:true}, F_image:{if: =scale.small, then:true, else:false}, vertical_deco:true, no_caption:{if: =scale.small, then:true, else:inherit}}}		
+			{if: =landscape, then: {normal_headline:true, no_border:true, no_indent:true, DV_image:true, vertical_deco:true}}		
 		]}}
 	}</style>
 	<style> {
@@ -98,7 +93,7 @@
 	<box class="column2 positionx3 maude unit_50" id="b2" embed="article" module="FRONT-NO-IMAGE_module.xml" />
 	<box class="column2 positionx5-3 maude unit_50" id="b3" embed="article" module="FRONT-NO-IMAGE_module.xml" />
 	<box class="column2 positionx7-5 maude unit_50" id="b4" embed="article" module="AHED_module.xml" />
-	<box id="front_page" class="positionx7-5 column2">
+	<box id="front_page" class="positionx7-5 column2 maude unit_ad">
 		<box id="cube_ad" class="ad-banner front_ad" embed="advertisement" />
 	</box>
 	<box class="column2 positionx5 maude unit_G_deco" id="deco" embed="article" module="DECO_module.xml" />

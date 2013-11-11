@@ -1,16 +1,14 @@
 {if: =scale.phone, then: {
 	
-	#ad_background: { 
-		frame: inherit, 
-		padding: inherit  
+	.maude: {
+		position: relative,
+		top: 0,
+		left: 0,		
+		right: 0,
+		width:inherit
 	},
-	.front_banner: { 
-		frame: inherit, 
-		padding: inherit  
-	},
-	#ad_background_PV: { 
-		frame: inherit, 
-		padding: inherit 
+	#front_page: { 
+		top: 0
 	},
 	#highlight_ad: 	{ 
 		width: 320, 
@@ -22,9 +20,11 @@
 		height: 50,
 		background-color: #e7e2d8
 	},
-	.ad_light: {background-color: #e7e2d8},
-	.ad_light: {background-color: #e7e2d8},
-	.ad_white: {background-color: #e7e2d8},
+	#cube_ad:{ 
+		width: 320, 
+		height: 50,
+		background-color: #e7e2d8
+	},
 	
 	#marketdata_background: { 
 		display:none
@@ -46,13 +46,6 @@
 	#deco3: { 
 		display: {if: =articles.deco3.type, ends-with: "TabletOnly", then: none } 
 	},
-	.maude: {
-		position: relative,
-		top: 0,
-		left: 0,		
-		right: 0,
-		width:inherit
-	},
 	.hidden_tablet: {
 		display: inherit
 	},
@@ -60,7 +53,9 @@
 		display: none
 	},
 	#marketstrap:	{ 
-		frame: [0, 0, =view.width, 18],
+		top:0,
+		height:18,
+		width:=view.width,
 		display:{if: =issue.edition, equals: "germany", then:none, else:inherit},
 		border-width:[0, 0, 1, 0],
 		border-color:black
@@ -68,12 +63,6 @@
 	
 
 	#whatsnews:	{ display:none },
-	#whatsnews_tall:	{ display:none },
-	#whatsnews_itp:	{ display:none },
-	.line: {
-		display:none
-	},
-	
 	.unit_cio: {
 		height:65
 	},
@@ -104,9 +93,6 @@
 	},
 	.unit_p: {
 		height:190
-	},
-	.unit_fullsize_deco: {
-		height:416
 	},
 	.unit_95: {
 		height:95

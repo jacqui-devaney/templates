@@ -14,9 +14,9 @@
 		}},
 		#b2: {
 			options:{$switch:[
-				{if: =scale.phone, then: {}},
+				{if: =scale.phone, then: {no_border:true}},
 				{if: =portrait, then: {small_headline:true, no_indent:true}},
-				{if: =landscape, then: {small_headline:true, no_indent:true}}
+				{if: =landscape, then: {small_headline:true, no_indent:true, no_border:true}}
 			]	
 		}},
 		#b3: {
@@ -37,7 +37,7 @@
 			options:{$switch:[
 				{if: =scale.phone, then: {normal_headline:true}},
 				{if: =portrait, then: {normal_headline:true}},
-				{if: =landscape, then: {normal_headline:true, medium_caption:true}}
+				{if: =landscape, then: {normal_headline:true}}
 			]	
 		}}
 		
@@ -95,10 +95,10 @@
 	<box id="whatsnews" class="column2 positionx1" embed="whatsnews" />
     <box id="b1" embed="article" class="column4 positionx3 maude unit_166" module="FRONT-NO-IMAGE_module.xml" />    
     <box id="deco" embed="article" class="column4 positionx3 maude unit_G_deco" module="DECO_module.xml" />
-    <box id="b2" embed="article" class="column2 positionx7-3 maude unit_50" module="FRONT-NO-IMAGE_module.xml" />
-    <box id="b3" embed="article" class="column2 positionx7-5 maude unit_50" module="AHED_module.xml" />
- 	<box id="b4" embed="article" class="column4-2 positionx3 maude unit_50" module="FRONT-NO-IMAGE_module.xml" />
-	<box id="front_page" class="positionx7-5 column2">
+    <box id="front_page" class="positionx7-5 column2 maude unit_ad">
 		<box id="cube_ad" class="ad-banner front_ad" embed="advertisement" />
 	</box>
+	<box id="b2" embed="article" class="column2 positionx7-3 maude unit_50" module="FRONT-NO-IMAGE_module.xml" />
+    <box id="b3" embed="article" class="column2 positionx7-5 maude unit_50" module="AHED_module.xml" />
+ 	<box id="b4" embed="article" class="column4-2 positionx3 maude unit_50" module="FRONT-NO-IMAGE_module.xml" />
 </jpml>

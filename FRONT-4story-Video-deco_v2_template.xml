@@ -87,12 +87,11 @@
 	
 	<box id="marketstrap" class="column_full position_full" embed="marketstrap" />
 	<box id="whatsnews" class="column2 positionx1" embed="whatsnews" />
-	<box class="maude" id="marketstrap" embed="marketstrap" />
 	<box class="column4 positionx3 maude unit_166" id="b1" embed="article" module="FRONT-NO-IMAGE_module.xml" />
 	<box class="column2 positionx7-3 maude unit_50" id="b2" embed="article" module="FRONT-NO-IMAGE_module.xml" />
 	<box class="column2 positionx7-5 maude unit_50" id="b3" embed="article" module="FRONT-NO-IMAGE_module.xml" />
 	<box class="column2 positionx7-3 maude unit_50" id="b4" embed="article" module="FRONT-NO-IMAGE_module.xml" />
-	<box id="front_page" class="positionx7-5 column2">
+	<box id="front_page" class="positionx7-5 column2 maude unit_ad">
 		<box id="cube_ad" class="ad-banner front_ad" embed="advertisement" />
 	</box>
 	<box class="column4 positionx3 maude unit_G_deco" id="deco" embed="article" module="DECO_module.xml" />

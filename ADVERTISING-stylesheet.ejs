@@ -15,7 +15,7 @@
 	.hidden_phone: {display:inherit},
 	#front_page: {
 		top: {if: =landscape, then:525, else:783},
-		height: 175
+		height: {if: =scale.phone, then:50, else:175}
 	},
 	#cube_ad: 	{ 
 		pixels-per-point-x: 1,
@@ -48,25 +48,6 @@
 		height: {$switch: [
 			{if: =scale.small, then: 137},
 			{if: =scale.large, then: 175}
-		]}
-	},
-	#ad_banner: {
-		pixels-per-point-x: 1,
-		pixels-per-point-y: 1,
-		anchor-x: center,
-		anchor-y: middle,
-		height: {$switch: [
-			{if: =scale.phone, then:50},
-			{if: =scale.small, then:134},
-			{if: =widescreen, then:170},
-			"90"
-		]},
-		width: {$switch: [
-			{if: =scale.phone, then:320},
-			{if: =scale.small, then:137},
-			{if: =widescreen, then:175},
-			{if-all: [=scale.large, =portrait], then:768},
-			"1024"
 		]}
 	},
 	#article_advertisement: {
@@ -109,29 +90,6 @@
 			then: [0, 629, 555, 218],
 			else: [285, 367, 569, 218]
 		}
-	},
-	.front_banner: {
-		border-width:[1, 0, 0, 0],
-		border-color:#ccc,
-		frame: {$switch: [
-				{if-all: [=scale.small, =portrait], then:[8, 705, 175, 130]},
-				{if-all: [=widescreen, =portrait], then:[13, 705, 167, 135]},
-				{if-all: [=scale.small, =landscape], then:[35, 435, 137, 172]},
-				{if-all: [=widescreen, =landscape], then:[35, 435, 139, 168]},
-				{if-all: [=scale.large, =landscape], then:[0, 614, 1024, 90]},
-				{if-all: [=scale.large, =portrait], then:[0, 869, 768, 90]}
-				
-			]},
-			background-image:{
-				$switch: [
-					{if: =scale.phone, then: url(front-page-ad-phone.png)},
-					{if: =scale.small, then: url(front-page-ad-small.jpg)},
-					{if-all: [=scale.large, =widescreen], then: url(front-page-ad.png)},
-					{if: =standard, then: url(front-page-banner.png)}
-				]
-			},
-		background-position:center
-		
 	},
 	#section_ad: {
 		top: {$switch: [

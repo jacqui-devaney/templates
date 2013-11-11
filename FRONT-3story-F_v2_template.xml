@@ -20,7 +20,7 @@
 		},
 		#b3: {
 			options: {if: =portrait, 
-				then: {small_headline:true, no_indent:true},
+				then: {small_headline:true, no_indent:true, no_image:true},
 				else: {small_headline:true, no_indent:true, no_border:true}
 			}
 		}
@@ -33,16 +33,19 @@
 			}},
 			{if: =portrait, then: {
 				#b1:	{ 
-					height:500,
+					height:450,
 					top:0
 				},
 				#b2:	{ 
-					height:280,
-					top:500
+					height:230,
+					top:450
 				},
 				#b3:	{ 
-					top:780,
-					height:180
+					top:680,
+					height:280
+				},
+				#front_page: {
+					top:735
 				}
 				
 			}},
@@ -56,8 +59,8 @@
 					top:500
 				},
 				#b3:	{ 
-					top:0,
-					height:500
+					top:8,
+					height:492
 				}
 				
 			}}
@@ -66,8 +69,8 @@
 	<box id="whatsnews" class="column2 positionx1" embed="whatsnews" />
 	<box id="b1" embed="article" class="column4 positionx3 maude unit_166" module="HEADLINE-IMAGE_module.xml" />
     <box id="b2" embed="article" class="column4 positionx3 maude unit_50" module="FRONT-NO-IMAGE_module.xml" />
-	<box id="b3" embed="article" class="column2 positionx7-3 maude unit_50" module="FRONT-NO-IMAGE_module.xml" />
-	<box id="front_page" class="positionx7-5 column2">
+	<box id="b3" embed="article" class="column2 positionx7-3 maude unit_50" module="AHED_module.xml" />
+	<box id="front_page" class="positionx7-5 column2 maude unit_ad">
 		<box id="cube_ad" class="ad-banner front_ad" embed="advertisement" />
 	</box>
 </jpml>

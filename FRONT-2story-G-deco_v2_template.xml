@@ -19,8 +19,8 @@
 			]}},
 			#b2: {options: {$switch: [
 				{if: =scale.phone, then: {}},
-				{if: =portrait, then:{small_headline:true, justify:true, byline:true}},
-				{if: =landscape, then: {small_headline:true, justify:true, no_indent:true, no_border:true}}
+				{if: =portrait, then:{small_headline:true, no_indent:true}},
+				{if: =landscape, then: {small_headline:true, no_border:true, no_indent:true}}
 
 			]}}
 			
@@ -33,33 +33,33 @@
 		
 			{if: =portrait, then: {
 				#b1:	{ 
-					height:305,
+					height:205,
 					top:0
 				},
 				#deco:	{ 
-					height:400,
-					top:305
+					height:408,
+					top:205
 				},
 				#b2:	{ 
-					height:255,
-					top:705
+					height:350,
+					top:613
 				},
 				#front_page: {
-					top:745
+					top:700
 				}
 			}}, 
 			{if: =landscape, then: {
 				#b1:	{ 
-					height:305,
+					height:298,
 					top:0
 				},
 				#deco:	{ 
-					height:400,
-					top:305
+					height:408,
+					top:298
 				},
 				#b2:	{ 
-					height:520,
-					top:0
+					height:518,
+					top:8
 				}
 			
 			}}
@@ -107,8 +107,8 @@
 	<box id="whatsnews" class="column2 positionx1" embed="whatsnews" />
 	<box id="b1" embed="article"  class="column4 positionx3 maude unit_166" module="FRONT-NO-IMAGE_module.xml" />
 	<box id="deco" embed="article" class="column4 positionx3 maude unit_G_deco" module="DECO_module.xml" options="G_size" />
-	<box id="b2" embed="article" class="column2 positionx7-3 maude unit_50" module="FRONT-NO-IMAGE_module.xml" />
-	<box id="front_page" class="positionx7-5 column2">
+	<box id="b2" embed="article" class="column2 positionx7-3 maude unit_50" module="AHED_module.xml" />
+	<box id="front_page" class="positionx7-5 column2 maude unit_ad">
 		<box id="cube_ad" class="ad-banner front_ad" embed="advertisement" />
 	</box>
 	

@@ -14,16 +14,23 @@
 		}},
 		#b2: {
 			options:{$switch:[
-				{if: =scale.phone, then: {large_headline:true, top_align:true, show_body:true}},
+				{if: =scale.phone, then: {}},
 				{if: =portrait, then: {medium_headline:true, justify:true, no_indent:true}},
 				{if: =landscape, then: {medium_headline:true, justify:true, no_indent:true }}
 			]	
 		}},
 		#b3: {
 			options:{$switch:[
-				{if: =scale.phone, then: {large_headline:true, top_align:true, show_body:true}},
+				{if: =scale.phone, then: {}},
 				{if: =portrait, then: {small_headline:true, justify:true, no_indent:true}},
 				{if: =landscape, then: {small_headline:true, justify:true, no_indent:true }}
+			]	
+		}},
+		#b4: {
+			options:{$switch:[
+				{if: =scale.phone, then: {}},
+				{if: =portrait, then: {justify:true}},
+				{if: =landscape, then: {no_border:true}}
 			]	
 		}}
 		
@@ -78,7 +85,7 @@
 	<box id="b2" embed="article" class="column4 positionx3 maude unit_50" module="LEFT-IMAGE_module.xml" />
 	<box id="b3" embed="article" class="column4-2 positionx3-5 maude unit_50" module="FRONT-NO-IMAGE_module.xml" />
 	<box id="b4" embed="article" class="column2 positionx7-3 maude unit_50" module="AHED_module.xml" />
-	<box id="front_page" class="positionx7-5 column2">
+	<box id="front_page" class="positionx7-5 column2 maude unit_ad">
 		<box id="cube_ad" class="ad-banner front_ad" embed="advertisement" />
 	</box>
 	

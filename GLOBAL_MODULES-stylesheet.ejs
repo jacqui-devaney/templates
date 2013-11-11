@@ -645,61 +645,6 @@
 		padding: [0, 0, 5, 0]
 	},
 	
-	.ahed_stars: {
-		font-name:DJ5EscrowCond-Italic,
-		font-size:22,
-		line-height:18,
-		text-align:center,
-		content: "*\u00a0*\u00a0*"
-	},
-	.ahed_headline: {
-		font-name:DJ5EscrowCond-Italic,
-		font-size: {$switch: [
-			{if: =options.small_ahed, then:20},
-			{if: =options.large_ahed, then:32},
-			"23"
-		]},
-		line-height: {$switch: [
-			{if: =options.small_ahed, then:20},
-			{if: =options.large_ahed, then:32},
-			"23"
-		]},
-		text-align:center
-	},
-	.ahed_subhed: {
-		font-name:DJ5EscrowCond-Roman,
-		font-size: {$switch: [
-			{if: =options.small_subhed, then:16},
-			{if: =options.large_subhed, then:22},
-			"18"
-		]},
-		line-height: {$switch: [
-			{if: =options.small_subhed, then:18},
-			{if: =options.large_subhed, then:24},
-			"22"
-		]},
-		text-align:center,
-		color: {if: =options.large_subhed, then: #999999, else:black}
-	},
-	.ahed_byline: {
-		font-name:DJ5Exchange-Semibold,
-		font-size:13,
-		line-height:17,
-		paragraph-padding: [ 0, 0, 3, 0 ],
-		text-align:left,
-		text-scale: {if: =widescreen, then: {$multiply: [=scale.text, 1.1] }, else: inherit}
-		
-	},
-	.ahed_body: {
-		font-name:DJ5Exchange-Medium,
-		font-size:15,
-		line-height:18,
-		padding: [ 0, 0, 8, 0 ],
-		text-align:left,
-		text-scale: {if: =widescreen, then: {$multiply: [=scale.text, 1.1] }, else: inherit},
-		hyphens:auto
-		
-	},
 	#rando_header: { 
 		padding:[ 0, 0, 16, 0 ]
 	},

@@ -1,16 +1,17 @@
 <jpml id="LEFT-IMAGE_module">
 	<style src="GLOBAL_MODULES-stylesheet.ejs" />
+	<style src="PHONE_MODULES-stylesheet.ejs" />
 	<style src="GLOBAL-stylesheet.ejs" />
 	<style>{
         $join: [
 			{jpml: {
-				padding:[0, 0, 8, 8]
+				padding:[0, 8, 0, 8]
 			}},
 			{ $switch: [
 				{ if: =options.no_border, then: {
 					#wrapper: {
 						border-width: [0, 0, 0, 0],
-						padding: [0, 0, 8, 0]
+						padding: [8, 0, 0, 0]
 					}
 			
 				}},
@@ -18,7 +19,7 @@
 					#wrapper: {
 						border-width: [1, 0, 0, 0],
 						border-color: #b1aca1,
-						padding: [8, 0, 8, 0]
+						padding: [8, 0, 0, 0]
 					}
 					}}
 			]},
@@ -47,6 +48,44 @@
 				
 		]	
 		
+		}</style>
+		<style>{if: =scale.phone, then: {
+				jpml: {
+					padding:[0, 0, 0, 8]
+				},
+				#image_wrapper: { 
+					anchor-x:right,
+					position:relative,
+					width: 76,
+					padding:[0, 10, 5, 15],
+					pixels-per-point-x:1,
+					pixels-per-point-y:1,
+					image-scale:1,
+					display:{if: =options.show_image, then:inherit, else:none}
+				},
+				image: { 
+					height: 76,
+					display:inherit,
+					padding: [0],
+	                options:{},
+					image-scale: 1
+			
+				},
+				.byline: {
+					display:none
+				},
+				#body: {
+					display:none
+				},
+				#wrapper: {
+					padding: [{if: =options.top_align, then: 8, else:0}, 0, 0, 0],
+					border-color:#d6d6d6
+		
+				},
+				#headline: {
+					vertical-align: {if: =options.top_align, then: top, else:middle}
+				}
+			}, else:{}
 		}</style>
 	<box id="wrapper">
 		<panel id="headline">

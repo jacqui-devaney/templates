@@ -82,6 +82,18 @@
       }]
     },
     {
+      "key": "subhed",
+      "title": "Hide/Show Subhed",
+      "type": "toggle",
+      "options": [{
+        "label": "Show",
+        "values": { "no_subhed": false }
+      }, {
+        "label": "Hide",
+        "values": { "no_subhed": true }
+      }]
+    },
+    {
       "key": "body",
       "title": "Hide/Show Body",
       "type": "toggle",

@@ -9,7 +9,7 @@
 			height: {$switch:[
 				{if-all: [{if: =issue.type, equals:NOW}, {if: =page.section, equals:MONEY_AND_INVESTING}, {if: =landscape}, {if: =page.number, equals:0, then:true}], then:220},
 				{if-all:[{if: =landscape}, {if: =page.number, equals:0, then:true}], then:235},
-				{if: =portrait, then: 256},
+				{if: =portrait, then: 263},
 				{if-all:[{if: =landscape}, {if: =page.number, equals:1, then:true}], then:353}
 			]},
 			width:{$switch:[
@@ -30,7 +30,7 @@
 			height: {$switch:[
 				{if-all: [{if: =issue.type, equals:NOW}, {if: =page.section, equals:MONEY_AND_INVESTING}, {if: =landscape}, {if: =page.number, equals:0, then:true}], then:220},
 				{if-all:[{if: =landscape}, {if: =page.number, equals:0, then:true}], then:233},
-				{if: =portrait, then: 256},
+				{if: =portrait, then: 263},
 				{if-all:[{if: =landscape}, {if: =page.number, equals:1, then:true}], then:353}
 			]},
 			width:{$switch:[
@@ -50,7 +50,7 @@
 			width:{if: =landscape, then:251, else:517}
 		},
 		#background_color: {
-			background-color:{if: =options.white_highlights, then:#fff, else:cornflowerblue}, 
+			background-color:{if: =options.white_highlights, then:#fff, else:#efefef}, 
 			width:{if: =landscape, then:251, else:768},
 			height:{if: =landscape, then:706, else:256},
 			left:{if: =landscape, then:771, else:0},

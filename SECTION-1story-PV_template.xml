@@ -11,7 +11,7 @@
 				{if: =landscape, then: {TH-land_image:{if: =scale.small, then:true, else:false}}}			
 			]}},
 		#h1: {options: { $switch: [
-				{if: =scale.phone, then: {no_border:true}},
+				{if: =scale.phone, then: {}},
 				{if: =portrait, then: {large_highlight:true}},
 				{if: =landscape, then: {hide_image:{if: =scale.small, then:true, else:false}, large_highlight:true}}			
 			]}},
@@ -42,7 +42,7 @@
 	
 	<box id="b1" embed="article" class="column_PV position_full maude unit_G_deco" module="IMAGE-only_module.xml" />
 	<box id="h1" embed="article" class="column2 positionx7-1 maude unit_highlight" module="HIGHLIGHTS_module.xml" />
-	<box id="h2" embed="article" class="maude column2 positionx7-3 unit_highlight" module="HIGHLIGHTS_module.xml" />
+	<box id="h2" embed="article" class="column2 positionx7-3 maude unit_highlight" module="HIGHLIGHTS_module.xml" />
 	<box id="section_ad" class="column2 positionx7-5 maude unit_ad">
 		<box id="highlight_ad" class="ad-rectangle" embed="advertisement" />
 	</box>

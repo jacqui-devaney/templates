@@ -36,7 +36,7 @@
 				]},
 	            column-gutter: 20
 	        }},
-			{#body_container: { padding: [0, 8, {if: =options.bottom, then:15, else:8}, 8]}},
+			{#body_container: { padding: [0, 8, 8, 8]}},
 			{#headline: { padding: [0, 8]}},
 			{image: {
 				pixels-per-point-x:1,
@@ -67,17 +67,18 @@
 				{if: =scale.large, then: {if: =options.no_byline, then:none, else:inherit}}
 			]}}},
 			{.body: {padding:{if: =options.byline, then:[0], else:[3, 0, 0, 0]}}},
-			{#body-first-p: {text-indent: {$switch: [
-				{if: =scale.small, then:{if: =options.no_indent, then:0, else:inherit}},
-				{if: =scale.large, then: inherit},
-				{if: =options.no_indent, then:0}
-			]}}}
+			{#body-first-p: {
+				text-indent: {if: =options.no_indent, then:0, else:20}
+			}}
 			
 		
 			]
 		}</style>
 		<style>{
 			if: =scale.phone, then: {
+				#body-first-p: {
+					text-indent: 0
+				},
 				jpml: {
 					border-width: [{if: =options.top_border, then:1, else:0}, 0, {if: =options.no_border, then:0, else:1}, 0],
 					border-color: #d6d6d6,
@@ -112,12 +113,8 @@
 					display:{if: =page.section, equals: "OPINION", then:inherit, else:none}
 				},
 				#body_container: {
-					display:{if-any: [=options.show_body, {if: =page.section, equals: "OPINION"}], then:inherit, else:none},
-					padding: [{if: =page.section, equals: "OPINION", then:2, else:0}, 8, 0, 8]
-				},
-				.body: {
-					display:{if: =options.show_summary,then:inherit, else:none},
-					padding:[0]
+					display:{if-any: [{if: =options.show_body}, {if: =page.section, equals: "OPINION"}], then:inherit, else:none},
+					padding:[0, 8, 0, 8]
 				},
 				#vertical: {
 					vertical-align: {if: =options.top_align, then: top, else: middle}

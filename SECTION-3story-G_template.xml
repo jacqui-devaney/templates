@@ -7,16 +7,16 @@
 	<style>{
 			#b1: {options: { $switch: [
 					{if: =scale.phone, then: {large_headline:true, show_image:true, show_body:true, top_align:true}},
-					{if: =portrait, then: {large_headline:true, justify:true, show_image:true, no_border:true, G_image:true, bottom:true, byline:{if: =scale.small, then:true, else:false}}},
-					{if: =landscape, then: {large_headline:true, justify:true, show_image:true, G_image:{if: =widescreen, then:false, else:true},F_image:{if: =widescreen, then:true, else:false}, no_border:true, bottom:true, byline:{if: =scale.small, then:true, else:false}}}			
+					{if: =portrait, then: {large_headline:true, justify:true, show_image:true, no_border:true, G_image:true}},
+					{if: =landscape, then: {large_headline:true, justify:true, show_image:true, G_image:true, no_border:true}}			
 				]}},
 			#b2: {options: { $switch: [
-					{if: =scale.phone, then: {small_headline:true, show_image:true, no_border:false}},
+					{if: =scale.phone, then: {small_headline:true}},
 					{if: =portrait, then: {small_headline:true, no_border:true, no_indent:true}},
 					{if: =landscape, then: {small_headline:true, no_border:true, no_indent:true}}			
 				]}},
 			#b3: {options: { $switch: [
-					{if: =scale.phone, then: {small_headline:true, show_image:true}},
+					{if: =scale.phone, then: {small_headline:true, no_border:true}},
 					{if: =portrait, then: {small_headline:true, no_indent:true}},
 					{if: =landscape, then: {small_headline:true, bottom:true, no_indent:true}}			
 				]}},
@@ -35,7 +35,8 @@
 	<style>{
 		$switch: [
 			{if: =scale.phone, then: {
-	        }},
+	        	#marketstrap: {display:none}
+			}},
 			{ if: =portrait, then: {
 				#b1:	{ 
 					top:0,
@@ -71,46 +72,48 @@
 			}}
 		]
 	}</style>
-	<style> {if-all: [{if: =issue.type, equals:NOW}, {if: =page.section, equals:MONEY_AND_INVESTING}, {if: =page.number, equals:0, then:true}], then: {
-		$switch: [
-			{if: =scale.phone, then:{
+	<style> {if-all: [
+				{if: =issue.type, equals:NOW}, 
+				{if: =page.section, equals:MONEY_AND_INVESTING}, 
+				{if: =page.number, equals:0, then:true}
+			], then: {$switch: [
+				{if: =scale.phone, then:{
+				
+				}},
 		
-			}},
-		
-			{if: =portrait, then: {
-				#b1:	{ 
-					height:661,
-					top:45
-				},
-				#b2:	{ 
-					height:330,
-					top:45
-				},
-				#b3:	{ 
-					height:330,
-					top:375
-				}
-			}}, 
-			{if: =landscape, then: {
-				#b1:	{ 
-					height:661,
-					top:45
-				},
-				#b2:	{ 
-					height:330,
-					top:45
-				},
-				#b3:	{ 
-					height:330,
-					top:375
-				}
+				{if: =portrait, then: {
+					#b1:	{ 
+						height:661,
+						top:45
+					},
+					#b2:	{ 
+						height:330,
+						top:45
+					},
+					#b3:	{ 
+						height:330,
+						top:375
+					}
+				}}, 
+				{if: =landscape, then: {
+					#b1:	{ 
+						height:661,
+						top:45
+					},
+					#b2:	{ 
+						height:330,
+						top:45
+					},
+					#b3:	{ 
+						height:330,
+						top:375
+					}
 			
-			}}
+				}}
 		]
 		
-	}, else: {
-	
-	}
+		}, else: {
+		}
 	} </style>
 	
 	<box id="marketstrap" class="column_full positionx_full" embed="marketstrap" />

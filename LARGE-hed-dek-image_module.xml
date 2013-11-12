@@ -19,7 +19,7 @@
         
 		#text: {padding: [8, 0, 8, 0]},
 		#image_wrapper: {display:none},
-		#headline: {display:none},
+		#phone: {display:none},
 		#body: {display:none}
 		
 	}</style>
@@ -50,9 +50,10 @@
 			},
 			.large: {display:none},
 			#text: {display:none},
-			#headline: {display:inherit},
+			#phone: {display:inherit},
 			.large_dek: {display:none},
-			#body: {display:inherit}
+			#body: {display:{if: =options.show_body, then:inherit, else:none}},
+			.byline: {display:{if: =options.show_byline, then:inherit, else:none}}
 			
 		}, else:{}
 	}</style>
@@ -64,10 +65,11 @@
 	<box id="image_wrapper">
 		<image embed="summary-image" />
 	</box>
-	<panel id="headline">
+	<panel id="phone">
 		<p class="module_headline"><span embed="headline" /><mark class="key" /></p>
 		<h2 class="large_dek"><span embed="subhed" /></h2>
         <panel id="body">
+            <p class="byline" embed="byline"/>
             <panel class="body" embed="body"/>
         </panel>
     </panel>

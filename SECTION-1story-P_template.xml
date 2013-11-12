@@ -6,13 +6,15 @@
 	<style src="PHONE-stylesheet.ejs" />
 	<style>{
 		#b1: {options: { $switch: [
-				{if: =scale.phone, then: {}},
+			{if: =scale.phone, then: {large_headline:true, show_byline:true, show_body:true}},
 				{if: =portrait, then: {P_image:true, large_headline:true}},
-				{if: =landscape, then: {F_image:{if: =widescreen, then:true, else:false}, P_image:{if: =widescreen, then:false, else:true}, large_headline:true}}			
+				{if: =landscape, then: {P_image:true, large_headline:true}}			
 			]}},
-		#h1: {options:{hide_image:{if-all: [=scale.small, =landscape], then:true, else:false}}},
-		#h2: {options:{hide_image:{if-all: [=scale.small, =landscape], then:true, else:false}, no_border:{if: =scale.phone, then:true, else:false}}}
-		
+		#h2: {options: { $switch: [
+				{if: =scale.phone, then: {no_border:true}},
+				{if: =portrait, then: {}},
+				{if: =landscape, then: {}}			
+			]}}
 	}</style>
 	<style>{
 		$switch: [
@@ -29,8 +31,8 @@
 	}</style>
 	
 	<box id="b1" embed="article" class="column6 positionx1 maude unit_166" module="LARGE-hed-dek-image_module.xml" />
-	<box id="h1" embed="article" class="maude column2 positionx7-1 unit_50" module="HIGHLIGHTS_module.xml" />
-	<box id="h2" embed="article" class="maude column2 positionx7-3 unit_50"  module="HIGHLIGHTS_module.xml" />
+	<box id="h1" embed="article" class="column2 positionx7-1 maude unit_50" module="HIGHLIGHTS_module.xml" />
+	<box id="h2" embed="article" class="column2 positionx7-3 maude unit_50"  module="HIGHLIGHTS_module.xml" />
     <box id="section_ad" class="column2 positionx7-5 maude unit_ad">
 		<box id="highlight_ad" class="ad-rectangle" embed="advertisement" />
 	</box>

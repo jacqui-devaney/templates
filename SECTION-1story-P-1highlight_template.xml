@@ -6,14 +6,16 @@
 	<style src="PHONE-stylesheet.ejs" />
 	<style>{
 		#b1: {options: { $switch: [
-				{if: =scale.phone, then: {}},
+				{if: =scale.phone, then: {large_headline:true, show_byline:true, show_body:true}},
 				{if: =portrait, then: {P_image:true, large_headline:true}},
-				{if: =landscape, then: {F_image:{if: =widescreen, then:true, else:false},  P_image:{if: =widescreen, then:false, else:true}, large_headline:true}}			
-			]}},
-		#h3: {
-			options:{single:true, indent:true, justify:{if: =portrait, then:true, else:false}, 
-			no_border:{if: =scale.phone, then:true, else:false}
-		}}
+				{if: =landscape, then: {P_image:true, large_headline:true}}			
+		]}},
+		#h3: {options: { $switch: [
+				{if: =scale.phone, then: {no_border:true}},
+				{if: =portrait, then: {justify:true, right_border:true}},
+				{if: =landscape, then: {bottom_border:true}}			
+		]}}
+		
 		
 	}</style>
 	<style>{

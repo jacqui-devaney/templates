@@ -21,7 +21,7 @@
 		}},
 		#b3: {
 			options:{$switch:[
-				{if: =scale.phone, then: {}},
+				{if: =scale.phone, then: {no_border:true}},
 				{if: =portrait, then: {medium_headline:true, border:true, no_columns:true, C_image:true}},
 				{if: =landscape, then: {medium_headline:true, no_columns:true, border:true}}
 			]	
@@ -80,7 +80,7 @@
 	<box id="b1" embed="article" class="column8-6 positionx1 maude unit_166" module="RIGHT-BIG-IMAGE_module.xml" />
 	<box id="b2" embed="article" class="column3-4 positionx3 maude unit_50" module="RIGHT-INSET-IMAGE_module.xml" />
 	<box id="b3" embed="article" class="column3-4 positionx6-3 maude unit_50" module="RIGHT-INSET-IMAGE_module.xml" />
-	<box id="front_page" class="positionx1 column2">
+	<box id="front_page" class="positionx1 column2 maude unit_50">
 		<box id="cube_ad" class="ad-banner front_ad" embed="advertisement" />
 	</box>
 	

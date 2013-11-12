@@ -8,18 +8,18 @@
 
 			#b1: {options: { $switch: [
 					{if: =scale.phone, then: {large_headline:true, show_image:true, top_align:true, show_body:true}},
-					{if: =portrait, then: {large_headline:true, no_border:true, justify:true}},
-					{if: =landscape, then: {large_headline:true, no_border:true, justify:true}}			
+					{if: =portrait, then: {large_headline:true, no_border:true}},
+					{if: =landscape, then: {large_headline:true, no_border:true}}			
 				]}},
 			#b2: {options: { $switch: [
 					{if: =scale.phone, then: {small_headline:true, show_image:true}},
-					{if: =portrait, then: {small_headline:true, no_border:true, no_indent:true}},
-					{if: =landscape, then: {small_headline:true, no_border:true, no_indent:true}}			
+					{if: =portrait, then: {small_headline:true, no_border:true}},
+					{if: =landscape, then: {small_headline:true, no_border:true}}			
 				]}},
 			#b3: {options: { $switch: [
 					{if: =scale.phone, then: {small_headline:true, no_border:true}},
-					{if: =portrait, then: {small_headline:true, no_indent:true}},
-					{if: =landscape, then: {small_headline:true, bottom:true, no_indent:true}}			
+					{if: =portrait, then: {small_headline:true}},
+					{if: =landscape, then: {small_headline:true, bottom:true}}			
 				]}},
 			#deco: {options: { $switch: [
 					{if: =scale.phone, then: {normal_headline:true, bottom_border:true, G_image:true}},

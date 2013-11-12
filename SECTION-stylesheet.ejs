@@ -8,11 +8,13 @@
 			]},
 			height: {$switch:[
 				{if-all: [{if: =issue.type, equals:NOW}, {if: =page.section, equals:MONEY_AND_INVESTING}, {if: =landscape}, {if: =page.number, equals:0, then:true}], then:220},
+				{if-all:[{if: =landscape}, {if: =options.hide_ad, then:true}], then:353},
 				{if-all:[{if: =landscape}, {if: =page.number, equals:0, then:true}], then:235},
-				{if: =portrait, then: 263},
-				{if-all:[{if: =landscape}, {if: =page.number, equals:1, then:true}], then:353}
+				{if-all:[{if: =landscape}, {if: =page.number, equals:1, then:true}], then:353},
+				{if: =portrait, then: 263}
 			]},
 			width:{$switch:[
+				{if-all:[{if: =portrait}, {if: =options.hide_ad, then:true}], then:374},
 				{if-all:[=portrait, {if: =page.number, equals:1}], then:374},
 				{if: =landscape, then:251},
 				"246"
@@ -21,6 +23,7 @@
 		#h2: {
 			top: {$switch:[
 				{if-all: [{if: =issue.type, equals:NOW}, {if: =page.section, equals:MONEY_AND_INVESTING}, {if: =landscape}, {if: =page.number, equals:0, then:true}], then:265},
+				{if-all:[{if: =landscape}, {if: =options.hide_ad, then:true}], then:353},
 				{if-all:[{if: =landscape}, {if: =page.number, equals:0, then:true}], then:235},
 				{if: =portrait, then: 706},
 				{if-all:[{if: =landscape}, {if: =page.number, equals:1, then:true}], then:353}
@@ -29,16 +32,19 @@
 
 			height: {$switch:[
 				{if-all: [{if: =issue.type, equals:NOW}, {if: =page.section, equals:MONEY_AND_INVESTING}, {if: =landscape}, {if: =page.number, equals:0, then:true}], then:220},
+				{if-all:[{if: =landscape}, {if: =options.hide_ad, then:true}], then:353},
 				{if-all:[{if: =landscape}, {if: =page.number, equals:0, then:true}], then:233},
 				{if: =portrait, then: 263},
 				{if-all:[{if: =landscape}, {if: =page.number, equals:1, then:true}], then:353}
 			]},
 			width:{$switch:[
+				{if-all:[{if: =portrait}, {if: =options.hide_ad, then:true}], then:374},
 				{if-all:[=portrait, {if: =page.number, equals:1}], then:374},
 				{if: =landscape, then:251},
 				"246"
 			]},
 			left:{$switch:[
+				{if-all:[{if: =portrait}, {if: =options.hide_ad, then:true}], then:389},
 				{if-all:[=portrait, {if: =page.number, equals:0}], then:261},
 				{if-all:[=portrait, {if: =page.number, equals:1}], then:389},
 				"773"

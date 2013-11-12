@@ -12,7 +12,7 @@
 		]}},
 		#h3: {options: { $switch: [
 				{if: =scale.phone, then: {no_border:true}},
-				{if: =portrait, then: {justify:true, right_border:true}},
+				{if: =portrait, then: {right_border:true}},
 				{if: =landscape, then: {bottom_border:true}}			
 		]}}
 		

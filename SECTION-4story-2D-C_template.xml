@@ -6,37 +6,29 @@
 	<style src="PHONE-stylesheet.ejs" />
 	<style>{
 		#b1: {options: { $switch: [
-				{if: =scale.phone, then: {large_headline:{if: =page.number, equals:0, then:true, else:false }, show_image:true}},
-				{if: =portrait, then: {justify:true, large_headline:true, hide_image:{if: =widescreen, then:true, else:false}}},
-				{if: =landscape, then: {justify:true, large_headline:true}}			
-			]}},
+				{if-all: [=scale.phone, {if: =page.number, equals:0}], then:{
+					large_headline:true, show_image:true, show_body:true, top_align:true
+				}},
+				{if: =scale.phone, then: {small_headline:true}},
+				{if: =portrait, then: {large_headline:true, no_border:true}},
+				{if: =landscape, then: {large_headline:true, no_border:true}}			
+		]}},
 		#b2: {options: { $switch: [
 				{if: =scale.phone, then: {small_headline:true}},
-				{if: =portrait, then: {small_headline:true, show_image:true, no_indent:true}},
-				{if: =landscape, then: {small_headline:true, show_image:{if: =widescreen, then:false, else:true}, no_indent:true}}			
-			]}},
-		#b3: {options: {small_headline:true, no_indent:true}},
+				{if: =portrait, then: {small_headline:true, show_image:true}},
+				{if: =landscape, then: {small_headline:true, show_image:true}}			
+		]}},
+		#b3: {options: { $switch: [
+				{if: =scale.phone, then: {small_headline:true}},
+				{if: =portrait, then: {small_headline:true}},
+				{if: =landscape, then: {small_headline:true}}			
+		]}},
 		#b4: {options: { $switch: [
 				{if: =scale.phone, then: {small_headline:true, no_border:true}},
-				{if: =portrait, then: {small_headline:true, show_image:true, no_indent:true}},
-				{if: =landscape, then: {small_headline:true, show_image:{if: =widescreen, then:false, else:true}, no_indent:true}}			
-			]}},
-			#h1: {
-				options:{
-					hide_image:{if-all: [=scale.small, =landscape], then:true, else:false},
-					hide_flashline:{if: =page.number, equals:1, then:true, else:false}
-				}
-			},
-			
-			#h2: {
-				options:{hide_image:{if-all: [=scale.small, =landscape], then:true, else:false},
-				hide_flashline:{if: =page.number, equals:1, then:true, else:false}
-				}
-			},
-			
-			#section_ad: {
-				display:{if: =scale.phone, then:inherit, else:{if: =page.number, equals:1, then:none, else:inherit}}
-			}
+				{if: =portrait, then: {small_headline:true, show_image:true}},
+				{if: =landscape, then: {small_headline:true, show_image:true}}			
+		]}}
+		
 		
 	}</style>
 	<style>{
@@ -46,46 +38,46 @@
 		 }},
 		 {if: =portrait, then: {
 			#b1:	{ 
-				top:8,
-				height:200
+				top:0,
+				height:308
 			},
 			#b2:	{ 
-				top:208,
-				height:498
+				top:308,
+				height:398
 			},
 			#b3:	{ 
-				top:208,
-				height:498
+				top:308,
+				height:398
 			},
 			#b4:	{ 
-				top:208,
-				height:498
+				top:308,
+				height:398
 			}
 			
 			
 		}}, 
 		{if: =landscape, then: {
 			#b1:	{ 
-				top:8,
-				height:200
+				top:0,
+				height:308
 			},
 			#b2:	{ 
-				top:208,
-				height:498
+				top:308,
+				height:398
 			},
 			#b3:	{ 
-				top:208,
-				height:498
+				top:308,
+				height:398
 			},
 			#b4:	{ 
-				top:208,
-				height:498
+				top:308,
+				height:398
 			}
 			
 		}}
 	]}</style>
 	
-	<box id="b1" embed="article" class="column6 positionx1 maude unit_166" module="RIGHT-IMAGE_module.xml" />
+	<box id="b1" embed="article" class="column6 positionx1 maude unit_166" module="LEFT-IMAGE_module.xml" />
 	<box id="b2" embed="article" class="column2 positionx1 maude unit_50" module="TOP-IMAGE_module.xml" />
 	<box id="b3" embed="article" class="column2 positionx3 maude unit_50" module="TOP-IMAGE_module.xml" />
 	<box id="b4" embed="article" class="column2 positionx5 maude unit_50" module="TOP-IMAGE_module.xml" />

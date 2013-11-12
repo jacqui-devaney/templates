@@ -7,11 +7,11 @@
 	<style>{
 		#b2: {options: { $switch: [
 				{if: =scale.phone, then: {large_headline:true, show_image:true, show_body:true, top_align:true}},
-				{if: =portrait, then: {medium_headline:true, no_indent:true, no_border:true}},
-				{if: =landscape, then: {medium_headline:true, no_indent:true, no_border:true}}			
+				{if: =portrait, then: {medium_headline:true, no_border:true}},
+				{if: =landscape, then: {medium_headline:true, no_border:true}}			
 			]}},
-		#b3: {options:{small_headline:true, no_indent:true}},		
-		#b4: {options:{small_headline:true, no_indent:true, no_border:{if: =scale.phone, then:true, else:false}}},
+		#b3: {options:{small_headline:true}},		
+		#b4: {options:{small_headline:true, no_border:{if: =scale.phone, then:true, else:false}}},
 		#deco: {options: { $switch: [
 				{if: =scale.phone, then: {normal_headline:true, G_image:true, bottom_border:true}},
 				{if: =portrait, then: {normal_headline:true, OZ_image:{if: =widescreen, then:false, else:true}, PT_image:{if: =widescreen, then:true, else:false}, no_border:true}},

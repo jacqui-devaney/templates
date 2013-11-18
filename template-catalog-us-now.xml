@@ -1686,6 +1686,7 @@
 				usage="continuation" 
 				deco="true" 
 				page="2" 
+				storyorder="feed"
 			/>		
 			<template 
 				name="CONTINUATION-fancy-4story-G_template.xml" 
@@ -1694,6 +1695,7 @@
 				usage="continuation" 
 				deco="true" 
 				page="3" 
+				storyorder="feed"
 			/>
 			<template 
 				name="CONTINUATION-fancy-4story-G_template.xml" 
@@ -1702,6 +1704,7 @@
 				usage="continuation" 
 				deco="true" 
 				page="4" 
+				storyorder="feed"
 			/>
 			<template 
 				name="CONTINUATION-fancy-5_template.xml" 

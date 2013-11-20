@@ -6,9 +6,19 @@
     <style>{
 		#deco: {options: { $switch: [
 				{if: =scale.phone, then: {normal_headline:true, G_image:true, small_caption:true}},
-				{if: =portrait, then: {bottom_headline:true, bottom_border:true, OZ_image:true}},
+				{if: =portrait, then: {bottom_headline:true, OZ_image:true}},
 				{if: =landscape, then: {bottom_headline:true, no_border:true, OZ_image:{if: =scale.small, then:false, else:true}, G_image:{if: =scale.small, then:true, else:false}}}			
-			]}}
+			]}},
+		#b1: {options: {$switch: [
+			{if: =portrait, then: {}},
+			{if: =landscape, then: {no_border:true, show_image:true}}
+			]
+		}},
+		#b2: {options: {$switch: [
+			{if: =portrait, then: {}},
+			{if: =landscape, then: {show_image:true}}
+			]
+		}}
 
     }</style>
 	<style>{$switch: [
@@ -17,47 +27,48 @@
         
 		{if: =portrait, then: {
 			#b1 : { 
-	 			top:0,
-				height:960
+	 			top:605,
+				height:271
 			},
 	        #b2 : { 
 				top:605,
-				height:355
-			},
-	        #b3 : { 
-				top:605,
-				height:355
+				height:271
 			},
 	        #deco : { 
  				top:0,
 				height:605
+			},
+			#tall_ad: {
+				top:56,
+				height:492,
+				background-color:blue
 			}
 			
         }}, 
 		{if: =landscape, then: {
 			#b1 : { 
 	 			top:0,
-				height:706
+				height:310
 			},
 	        #b2 : { 
-	 			top:0,
-				height:353
-			},
-	        #b3 : { 
-				top:353,
-				height:353
+	 			top:310,
+				height:310
 			},
 	        #deco : { 
  				top:0,
 				height:605
+			},
+			#tall_ad: {
+				top:64,
+				height:492,
+				background-color:blue
 			}
 	        
         }}
     ]}</style>
-    <box id="b1" class="column2 positionx5-1 maude unit_continuation_strap" embed="article" module="CONTINUATION-dynamic_module.xml" />    
-    <box id="b2" class="column2 positionx7-3 maude unit_continuation_strap" embed="article" module="CONTINUATION-dynamic_module.xml" />
-    <box id="b3" class="column2 positionx7-5 maude unit_continuation_strap" embed="article" module="CONTINUATION-dynamic_module.xml" />
-    <box id="deco" class="column4 positionx1-3 maude unit_G_deco" embed="article" module="DECO_module.xml" />
-
+    <box id="b1" class="column2-3 positionx5-1 maude unit_continuation_strap" embed="article" module="TOP-IMAGE_module.xml" />    
+    <box id="b2" class="column2-3 positionx5-4 maude unit_continuation_strap" embed="article" module="TOP-IMAGE_module.xml" />
+    <box id="deco" class="column4 positionx1 maude unit_G_deco" embed="article" module="DECO_module.xml" />
+	<box id="tall_ad" class="column2 positionx7-5" embed="advertisement"></box>
 </jpml>
 

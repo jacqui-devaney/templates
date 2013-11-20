@@ -35,28 +35,35 @@
 		
 			}},
 	        {if: =portrait, then: {
-	            #b1 : { frame: [0, 0, 256, 436] },
-	            #b2 : { frame: [0, 436, 256, 436] },
-	            #b3 : { frame: [256, 0, 256, 436] },
-	            #b4 : { frame: [256, 436, 256, 218] },
-				#b5 : { frame: [256, 654, 256, 218] },
-				#b6 : { frame: [512, 0, 256, 218] },
-				#b7 : { frame: [512, 218, 256, 218] },
-				#b8 : { frame: [512, 436, 256, 218] },
-				#b9 : { frame: [512, 654, 256, 218] }
+	            #b1 : { frame: [0, 0, 256, 291] },
+	            #b2 : { frame: [0, 291, 256, 291] },
+	            #b3 : { frame: [0, 582, 256, 291] },
+	            #b4 : { frame: [256, 0, 256, 291] },
+				#b5 : { frame: [256, 291, 256, 291] },
+				#b6 : { frame: [256, 582, 256, 291] },
+				#b7 : { frame: [512, 0, 256, 291] },
+				#b8 : { frame: [512, 291, 256, 291] },
+				#b9 : { frame: [512, 582, 256, 291] }
 	            
 
 	        }},
 			{if: =landscape, then: {
-	            #b1 : { frame: [0, 0, 256, 618] },
-	            #b2 : { frame: [256, 0, 256, 412] },        
-	            #b3 : { frame: [256, 412, 256, 206] },
-	            #b4 : { frame: [512, 0, 256, 206] },
-				#b5 : { frame: [512, 206, 256, 206] },
-				#b6 : { frame: [512, 412, 256, 206] },
-				#b7 : { frame: [768, 0, 256, 206] },
-	            #b8 : { frame: [768, 206, 256, 206] },
-	            #b9 : { frame: [768, 412, 256, 206] }
+	            #b1 : { frame: [0, 0, 256, 310] },
+	            #b2 : { frame: [0, 310, 256, 310] },        
+	            #b3 : { frame: [256, 0, 256, 310] },
+	            #b4 : { frame: [256, 310, 256, 310] },
+				#b5 : { frame: [512, 0, 256, 310] },
+				#b6 : { frame: [512, 310, 256, 310] },
+				#b7 : { frame: [768, 0, 256, 206],
+				 	options: {hide_image:true, hide_strap: {if:=articles.b7.show_subsection, then: false, else: true}, bind: {if:=scale.phone,then:none}, reuse:{if:=scale.phone,then:continuation}}
+				},
+	            #b8 : { frame: [768, 206, 256, 206],
+	 					options:{hide_image:true, hide_strap: {if:=articles.b8.show_subsection, then: false, else: true}, bind: {if:=scale.phone,then:none}, reuse:{if:=scale.phone,then:continuation}}
+				},
+	            #b9 : { frame: [768, 412, 256, 206],
+						options: {hide_image:true, hide_strap: {if:=articles.b9.show_subsection, then: false, else: true}, bind: {if:=scale.phone,then:none}, reuse:{if:=scale.phone,then:continuation}} 
+						
+				}
 	
 	        }}
 		]

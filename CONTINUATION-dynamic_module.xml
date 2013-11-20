@@ -13,11 +13,11 @@
 			background-color:#e4e4e4
         },
 		#image_container: { 
-			anchor-x: right,
-			width: 84,
+			width: {$subtract:[=view.width, 16]},
 			pixels-per-point-x:{if: =scale.small, then:.7, else:1},
 			pixels-per-point-y:{if: =scale.small, then:.7, else:1},
-			image-scale:{if: =scale.small, then:.7, else:1}
+			image-scale:{if: =scale.small, then:.7, else:1},
+			display: {if-any: [{if: =view.height, less-than:260}, {if: =view.width, more-than:256}], then:none, else:inherit}
 			
 		},
 		.key: {
@@ -30,9 +30,8 @@
 		},
 		
 		image: {
-			width:76,
-			height:76,
-			padding: [ 0, 0, 4, 8 ]
+			height:{$multiply: [{$subtract:[=view.width, 16]}, .66]},
+			padding: [ 0, 0, 4, 0 ]
 			
 		},
 		#body-first-p: {
@@ -83,7 +82,7 @@
 			<box id="vertical">
 				<p class="continuation_headline"><mark id="m_headline" /><mark class="key" /></p>
 			</box>
-			<p class="continuation_headline" id="tablet"><mark id="m_headline" /><mark class="key" /></p>
+			<p class="module_headline" id="tablet"><mark id="m_headline" /><mark class="key" /></p>
 			<panel embed="body" class="continuation_body"/>
 		</panel>
 </jpml>

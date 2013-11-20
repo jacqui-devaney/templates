@@ -33,13 +33,13 @@
             #b2 : { 
 					frame: {$switch: [
 						{if: =widescreen, then: [256, 483, 256, 392]},
-						{if: =scale.large, then: [256, 600, 256, 276]}
+						{if: =scale.large, then: [256, 600, 256, 270]}
 					]} 
 			},
             #b3 : { 
 					frame: {$switch: [
 						{if: =widescreen, then: [512, 483, 256, 392]},
-						{if: =scale.large, then: [512, 600, 256, 276]}
+						{if: =scale.large, then: [512, 600, 256, 270]}
 					]} 
 			},
             #deco : { 
@@ -51,8 +51,8 @@
         }}, 
 		{if: =landscape, then: {
 	        #b1 : { frame: [500, 0, 256, 619] },
-	        #b2 : { frame: [756, 0, 256, 389]},
-	        #b3 : { frame: [756, 389, 256, 230]},
+	        #b2 : { frame: [756, 0, 256, 310]},
+	        #b3 : { frame: [756, 310, 256, 310]},
 	        #deco : { 
 				frame: {$switch: [
 					{if: =widescreen, then: [0, 0, 500, 598]},

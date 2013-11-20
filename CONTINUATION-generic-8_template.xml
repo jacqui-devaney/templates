@@ -18,7 +18,7 @@
 		                    height: {if:=articles.b4.subsection, equals:=articles.b3.subsection, then: 50} 
 		        },
 		        #b5: {
-		                    height: {if:=articles.b5.subsection, equals:=articles.b4.subsection, then: 50} 
+		                    height: {if:=articles.b5.subsection, equals:=articles.b4.subsection, then: 50}
 		        },
 		        #b6: {
 		                    height: {if:=articles.b6.subsection, equals:=articles.b5.subsection, then: 50} 
@@ -33,23 +33,23 @@
 	        {if: =portrait, then: {
 	            #b1 : { frame: [0, 0, 256, 436] },
 	            #b2 : { frame: [0, 436, 256, 436] },
-	            #b3 : { frame: [256, 0, 256, 436] },
-	            #b4 : { frame: [256, 436, 256, 436] },
-				#b5 : { frame: [512, 0, 256, 217] },
-				#b6 : { frame: [512, 217, 256, 217] },
-				#b7 : { frame: [512, 436, 256, 217] },
-				#b8 : { frame: [512, 655, 256, 217] }
+	            #b3 : { frame: [256, 0, 256, 291] },
+	            #b4 : { frame: [256, 291, 256, 291] },
+				#b5 : { frame: [256, 582, 256, 291] },
+				#b6 : { frame: [512, 0, 256, 291] },
+				#b7 : { frame: [512, 291, 256, 291] },
+				#b8 : { frame: [512, 582, 256, 291] }
 
 	        }},
 			{if: =landscape, then: {
-	            #b1 : { frame: [0, 0, 256, 618] },
-	            #b2 : { frame: [256, 0, 256, 618] },        
-	            #b3 : { frame: [512, 0, 256, 207] },
-	            #b4 : { frame: [512, 207, 256, 207] },
-				#b5 : { frame: [512, 414, 256, 207] },
-				#b6 : { frame: [768, 0, 256, 207] },
-				#b7 : { frame: [768, 207, 256, 207] },
-	            #b8 : { frame: [768, 414, 256, 207] }
+	            #b1 : { frame: [0, 0, 256, 310] },
+	            #b2 : { frame: [0, 310, 256, 310] },        
+	            #b3 : { frame: [256, 0, 256, 310] },
+	            #b4 : { frame: [256, 310, 256, 310] },
+				#b5 : { frame: [512, 0, 256, 310] },
+				#b6 : { frame: [512, 310, 256, 310] },
+				#b7 : { frame: [768, 0, 256, 310] },
+	            #b8 : { frame: [768, 310, 256, 310] }
 	        }}
 		]
     }</style>

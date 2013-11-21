@@ -7,8 +7,17 @@
 				{if: =scale.phone, then: {normal_headline:true, G_image:true, small_caption:true}},
 				{if: =portrait, then: {bottom_headline:true, bottom_border:true, OZ_image:true}},
 				{if: =landscape, then: {bottom_headline:true, no_border:true, OZ_image:{if: =scale.small, then:false, else:true}, G_image:{if: =scale.small, then:true, else:false}}}			
-			]}}
-
+		]}},
+		#b4 : {
+			options: {hide_image:{if: =portrait, then:true}, hide_strap: {if:=articles.b4.show_subsection, then: false, else: true}, bind: {if:=scale.phone,then:none}, reuse:{if:=scale.phone,then:continuation}} 
+		},
+		#b5 : {
+			options: {hide_image:{if: =portrait, then:true}, hide_strap: {if:=articles.b5.show_subsection, then: false, else: true}, bind: {if:=scale.phone,then:none}, reuse:{if:=scale.phone,then:continuation}} 
+		},
+		#b6 : {
+			options: {hide_image:{if: =portrait, then:true}, hide_strap: {if:=articles.b6.show_subsection, then: false, else: true}, bind: {if:=scale.phone,then:none}, reuse:{if:=scale.phone,then:continuation}} 
+		}
+		
     }</style>
 	<style>{$switch: [
         {if: =scale.phone, then: {

@@ -7,7 +7,8 @@
 				{if: =scale.phone, then: {normal_headline:true, G_image:true, small_caption:true}},
 				{if: =portrait, then: {normal_headline:true, bottom_border:true}},
 				{if: =landscape, then: {normal_headline:true, bottom_border:true, F_image:{if: =widescreen, then:true, else:false}}}			
-			]}}
+		]}}
+		
 
     }</style>
     <style>{ $switch: [

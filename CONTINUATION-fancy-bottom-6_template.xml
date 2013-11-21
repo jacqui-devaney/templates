@@ -9,7 +9,7 @@
 				{if: =landscape, then: {normal_headline:true, F_image:{if: =widescreen, then:true, else:false}}}			
 		]}},
 		#b3 : {
-			options: {hide_image:{if: =landscape, then:true}, hide_strap: {if:=articles.b3.show_subsection, then: false, else: true}, bind: {if:=scale.phone,then:none}, reuse:{if:=scale.phone,then:continuation}} 
+			options: {hide_image:true, hide_strap: {if:=articles.b3.show_subsection, then: false, else: true}, bind: {if:=scale.phone,then:none}, reuse:{if:=scale.phone,then:continuation}} 
 		},
 	    #b2 : {
 			options: {hide_image:{if: =landscape, then:true}, hide_strap: {if:=articles.b2.show_subsection, then: false, else: true}, bind: {if:=scale.phone,then:none}, reuse:{if:=scale.phone,then:continuation}} 

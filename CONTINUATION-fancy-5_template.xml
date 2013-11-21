@@ -8,9 +8,19 @@
 				{if: =portrait, then: {normal_headline:true, bottom_border:true}},
 				{if: =landscape, then: {normal_headline:true, bottom_border:true, F_image:{if: =widescreen, then:true, else:false}}}			
 			]}},
+			#b1 : {
+				options: {hide_image:{if: =portrait, then:true}, hide_strap: {if:=articles.b1.show_subsection, then: false, else: {if: =scale.phone, then:true, else:false}}, bind: {if:=scale.phone,then:none}, reuse:{if:=scale.phone,then:continuation}} 
+			},
 			#b2 : {
 				options: {hide_image:{if: =landscape, then:true}, hide_strap: {if:=articles.b2.show_subsection, then: false, else: true}, bind: {if:=scale.phone,then:none}, reuse:{if:=scale.phone,then:continuation}} 
+			},
+			#b3 : {
+				options: {hide_image:{if: =portrait, then:true}, hide_strap: {if:=articles.b3.show_subsection, then: false, else: true}, bind: {if:=scale.phone,then:none}, reuse:{if:=scale.phone,then:continuation}} 
+			},
+			#b4 : {
+				options: {hide_image:{if: =portrait, then:true}, hide_strap: {if:=articles.b4.show_subsection, then: false, else: true}, bind: {if:=scale.phone,then:none}, reuse:{if:=scale.phone,then:continuation}} 
 			}
+			
 		
 
     }</style>

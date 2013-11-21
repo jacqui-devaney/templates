@@ -3,6 +3,15 @@
 	<style src="GLOBAL-stylesheet.ejs" />
 	<style src="PHONE-stylesheet.ejs" />
 	<style>{
+		#b3 : {
+			options: {hide_image:true, hide_strap: {if:=articles.b3.show_subsection, then: false, else: true}, bind: {if:=scale.phone,then:none}, reuse:{if:=scale.phone,then:continuation}} 
+		},
+		#b6 : {
+			options: {hide_image:true, hide_strap: {if:=articles.b6.show_subsection, then: false, else: true}, bind: {if:=scale.phone,then:none}, reuse:{if:=scale.phone,then:continuation}} 
+		}
+	
+	</style>
+	<style>{
 		$switch: [
 			{if: =scale.phone, then: {
 		        #b1: {

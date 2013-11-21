@@ -13,11 +13,12 @@
 			background-color:#e4e4e4
         },
 		#image_container: { 
-			width: {$subtract:[=view.width, 16]},
+			width: {if: =widescreen, then:84, else: {$subtract:[=view.width, 16]}},
 			pixels-per-point-x:{if: =scale.small, then:.7, else:1},
 			pixels-per-point-y:{if: =scale.small, then:.7, else:1},
 			image-scale:{if: =scale.small, then:.7, else:1},
-			display: {if-any: [{if: =view.height, less-than:260}, {if: =view.width, more-than:256}, {if: =options.hide_image}], then:none, else:inherit}
+			display: {if-any: [{if: =view.height, less-than:260}, {if: =view.width, more-than:256}, {if: =options.hide_image}], then:none, else:inherit},
+			anchor-x:{if: =widescreen, then:right, else:center}
 			
 		},
 		.key: {
@@ -31,8 +32,8 @@
 		.byline: {display: {if: =options.show_byline, then:inherit, else:none}},
 		.highlight_flashline: {display: {if: =options.show_flashline, then:inherit, else:none}},
 		image: {
-			height:{$multiply: [{$subtract:[=view.width, 16]}, .66]},
-			padding: [ 0, 0, 4, 0 ]
+			height:{if: =widescreen, then:76, else:{$multiply: [{$subtract:[=view.width, 16]}, .66]}},
+			padding: [ 0, 0, 4, {if: =widescreen, then:8, else:0} ]
 			
 		},
 		#body-first-p: {

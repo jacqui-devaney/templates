@@ -29,8 +29,8 @@
 			padding: [0, 0, 0, 2],
 			color:#948464
 		},
-		.byline: {display: {if: =options.show_byline, then:inherit, else:none}},
 		.highlight_flashline: {display: {if: =options.show_flashline, then:inherit, else:none}},
+		.byline: {display: {if: =options.show_byline, then:inherit, else:none}},
 		image: {
 			height:{if: =widescreen, then:76, else:{$multiply: [{$subtract:[=view.width, 16]}, .66]}},
 			padding: [ 0, 0, 4, {if: =widescreen, then:8, else:0} ]
@@ -73,6 +73,7 @@
 			#image_container: {
 				display:none
 			},
+			display: { if:=options.hide_strap, then:none, else:default },
 			#vertical: {
 				anchor-y:middle,
 				display:inherit

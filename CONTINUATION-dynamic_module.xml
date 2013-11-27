@@ -17,7 +17,7 @@
 			pixels-per-point-x:{if: =scale.small, then:.7, else:1},
 			pixels-per-point-y:{if: =scale.small, then:.7, else:1},
 			image-scale:{if: =scale.small, then:.7, else:1},
-			display: {if-any: [{if: =view.height, less-than:260}, {if: =view.width, more-than:256}, {if: =options.hide_image}], then:none, else:inherit},
+			display: {if-any: [{if: =view.height, less-than:260}, {if: =view.width, more-than:260}, {if: =options.hide_image}], then:none, else:inherit},
 			anchor-x:{if: =widescreen, then:right, else:center}
 			
 		},

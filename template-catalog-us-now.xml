@@ -1,56 +1,82 @@
 
 <catalog preprocessor="preprocessor.ejs">
 	<templates>
-		<!-- FRONT SECTION -->
+		<!-- TOP NEWS -->
 		<template 
 			name="FRONT-4story-Video-deco_v2_template.xml"
-			section="FRONT_SECTION" 
+			section="TOP_NEWS" 
 			title="FRONT-4story-Video-deco - Banner"
 			min="4" 
 			deco="true"
 			usage="front"
 		/>
+		
+		<!-- END TOP NEWS -->
+		<!-- WORLD -->
 		<template 
-			name="FRONT-4story-E-top_v2_template.xml" 
-			title="4 story - E Photo Banner" 
-			section="FRONT_SECTION" 
-			min="4" 
+			name="SECTION-3story-G_template.xml"
+			section="WORLD" 
+			title="3 story - G photo"
+			min="5"
 			usage="front"
 		/>
-        <template 
-			name="FRONT-3story-F_v2_template.xml" 
-			title="4 story - F Photo Banner" 
-			section="FRONT_SECTION" 
-			min="4" 
+		<!-- END WORLD -->
+		<!-- US -->
+		<template 
+			name="SECTION-3story-G_template.xml"
+			section="US" 
+			title="3 story - G photo"
+			min="5"
 			usage="front"
 		/>
-        <template 
-			name="FRONT-3story-F-deco_v2_template.xml" 
-			title="3 story - F liondoor Banner" 
-			section="FRONT_SECTION" 
-			min="4" 
-			usage="front"
-		/>
-        <template 
-			name="FRONT-4story-Vertical-deco_v2_template.xml" 
-			title="4 story - Vertical deco Banner" 
-			section="FRONT_SECTION" 
-			min="4" 
-			deco="true" 
-			usage="front"
-		/>
-        <template 
-			name="FRONT-3story-big-news-G-deco_template.xml"
-			section="FRONT_SECTION" 
-			title="Big News - 3 story with deco"
-			min="4" 
+		<!-- END US -->
+		<!-- BUSINESS -->
+		<template 
+			name="SECTION-4story-smallG-deco_template.xml"
+			section="BUSINESS" 
+			title="4 story-Small G Media Deco"
+			min="6" 
 			deco="true"
 			usage="front"
 		/>
-		
-		
-		<!-- END FRONT SECTION -->
-		
+		<!-- END BUSINESS -->
+		<!-- TECH -->
+		<template 
+			name="SECTION-4story-smallG-deco_template.xml"
+			section="TECH" 
+			title="4 story-Small G Media Deco"
+			min="6" 
+			deco="true"
+			usage="front"
+		/>
+		<!-- END TECH -->
+		<!-- MARKETS -->
+		<template 
+			name="SECTION-4story-D-C-marketdata_template.xml"
+			section="MARKETS" 
+			title="4 story Plain - Marketdata"
+			min="6"
+			usage="front"
+		/>
+		<!-- END MARKETS -->
+		<!-- OPINION -->
+		<template 
+			name="OPINION-5story-E_template.xml"
+			section="OPINION" 
+			title="7 story (3RandO-2CMTRY-2HLT)"
+			min="7"
+			usage="front"
+		/>
+		<!-- END OPINION -->
+		<!-- LIFE_AND_CULTURE -->
+		<template 
+			name="SECTION-3story-G_template.xml"
+			section="LIFE_AND_CULTURE" 
+			title="3 story - G photo"
+			min="5"
+			usage="front"
+		/>
+		<!-- END LIFE_AND_CULTURE -->
 		<!-- BUSINESS AND FINANCE -->
 		<template 
 			name="SECTION-4story-D-C-marketdata_template.xml"

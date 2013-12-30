@@ -2176,8 +2176,40 @@
 		<template 
 			name="CONTINUATION-generic-6_template.xml" 
 			title=""
+			min="6" 
+			page="2"
+			storyorder="feed"
+			usage="continuation" 
+		/>
+		<template 
+			name="CONTINUATION-generic-6_template.xml" 
+			title=""
+			min="6" 
+			page="3"
+			storyorder="feed"
+			usage="continuation" 
+		/>
+		<template 
+			name="CONTINUATION-generic-6_template.xml" 
+			title=""
 			min="6"
 			usage="continuation"
+		/>
+		<template 
+			name="CONTINUATION-generic-5_template.xml" 
+			title=""
+			min="5"
+			storyorder="feed"
+			page="2" 
+			usage="continuation" 
+		/>
+		<template 
+			name="CONTINUATION-generic-5_template.xml" 
+			title=""
+			min="5"
+			storyorder="feed"
+			page="3" 
+			usage="continuation" 
 		/>
 		<template 
 			name="CONTINUATION-generic-5_template.xml" 
@@ -2287,6 +2319,24 @@
 				deco="true" 
 				page="4" 
 			/>
+			<template 
+				name="CONTINUATION-fancy-6_template.xml" 
+				title="6 stories - smallG liondoor"
+				min="6" 
+				usage="continuation" 
+				deco="true"
+				storyorder="feed" 
+				page="2" 
+			/>		
+			<template 
+				name="CONTINUATION-fancy-6_template.xml" 
+				title="6 stories - smallG liondoor"
+				min="6" 
+				usage="continuation" 
+				deco="true"
+				storyorder="feed" 
+				page="3" 
+			/>		
 			<template 
 				name="CONTINUATION-fancy-6_template.xml" 
 				title="6 stories - smallG liondoor"

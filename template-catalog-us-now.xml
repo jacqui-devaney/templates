@@ -1,81 +1,81 @@
 
 <catalog preprocessor="preprocessor.ejs">
 	<templates>
-		<!-- FRONT SECTION -->
+		<!-- TOP NEWS -->
 		<template 
 			name="FRONT-4story-Video-deco_v2_template.xml"
-			section="FRONT_SECTION" 
+			section="TOP_NEWS" 
 			title="FRONT-4story-Video-deco - Banner"
 			min="4" 
 			deco="true"
 			usage="front"
 		/>
+		
+		<!-- END TOP NEWS -->
+		<!-- WORLD -->
 		<template 
-			name="FRONT-4story-E-top_v2_template.xml" 
-			title="4 story - E Photo Banner" 
-			section="FRONT_SECTION" 
-			min="4" 
+			name="SECTION-3story-G_template.xml"
+			section="WORLD" 
+			title="3 story - G photo"
+			min="5"
 			usage="front"
 		/>
-        <template 
-			name="FRONT-3story-F_v2_template.xml" 
-			title="4 story - F Photo Banner" 
-			section="FRONT_SECTION" 
-			min="4" 
-			usage="front"
-		/>
-        <template 
-			name="FRONT-3story-F-deco_v2_template.xml" 
-			title="3 story - F liondoor Banner" 
-			section="FRONT_SECTION" 
-			min="4" 
-			usage="front"
-		/>
-        <template 
-			name="FRONT-4story-Vertical-deco_v2_template.xml" 
-			title="4 story - Vertical deco Banner" 
-			section="FRONT_SECTION" 
-			min="4" 
-			deco="true" 
-			usage="front"
-		/>
-        <template 
-			name="FRONT-3story-big-news-G-deco_template.xml"
-			section="FRONT_SECTION" 
-			title="Big News - 3 story with deco"
-			min="4" 
-			deco="true"
-			usage="front"
-		/>
-		
-		
-		<!-- END FRONT SECTION -->
-		
-		<!-- BUSINESS AND FINANCE -->
 		<template 
-			name="SECTION-4story-D-C-marketdata_template.xml"
-			section="BUSINESS_AND_FINANCE" 
-			title="4 story Plain - Marketdata"
+			name="SECTION-4story-2D-C_template.xml"
+			section="WORLD" 
+			title="4 story Plain"
 			min="6"
 			usage="front"
 		/>
 		<template 
-			name="SECTION-4story-smallG-top-marketdata_template.xml"
-			section="BUSINESS_AND_FINANCE" 
+			name="SECTION-4story-smallG-top_template.xml"
+			section="WORLD" 
 			title="4 story - G photo"
 			min="6"
 			usage="front"
 		/>
 		<template 
-			name="SECTION-3story-G-marketdata_template.xml"
-			section="BUSINESS_AND_FINANCE" 
-			title="3story - G photo marketdata"
+			name="SECTION-4story-smallG-deco_template.xml"
+			section="WORLD" 
+			title="4 story-Small G Media Deco"
+			min="6" 
+			deco="true"
+			usage="front"
+		/>
+		<template 
+			name="SECTION-3story-G-deco-C_template.xml"
+			section="WORLD" 
+			deco="true" 
+			title="3 story - G Media Deco"
 			min="5"
 			usage="front"
 		/>
 		<template 
+			name="SECTION-3story-G-mirror_template.xml" 
+			section="WORLD" 
+			title="3 story - G photo mirror"
+			min="5" 
+			deco="true"
+			usage="front"
+		/>
+		<template 
+			name="SECTION-4story-smallG-deco-mirror_template.xml" 
+			section="WORLD" 
+			title="4 story - small G Media liondoor - mirror"
+			min="6" 
+			deco="true" 
+			usage="front"
+		/>
+		<template 
+			name="SECTION-4story-smallG-top-mirror_template.xml" 
+			section="WORLD" 
+			title="4 story - G photo - mirror"
+			min="6" 
+			usage="front"
+		/>
+		<template 
 			name="SECTION-1story-fullsize-deco.xml" 
-			section="BUSINESS_AND_FINANCE" 
+			section="WORLD" 
 			title="Full size Deco"
 			min="1" 
 			deco="true"
@@ -83,21 +83,211 @@
 		/>
 		<template 
 			name="SECTION-1story-PV_template.xml" 
-			section="BUSINESS_AND_FINANCE" 
+			section="WORLD" 
 			title="PV (grey)"
 			min="3" 
 			usage="front"
 		/>
 		<template 
 			name="SECTION-1story-PV-1highlight_template.xml" 
-			section="BUSINESS_AND_FINANCE" 
+			section="WORLD" 
 			title="PV - 1 highlight (grey)"
 			min="2" 
 			usage="front"
 		/>
 		<template 
 			name="SECTION-1story-PV-1highlight-white_template.xml" 
-			section="BUSINESS_AND_FINANCE" 
+			section="WORLD" 
+			title="PV - 1 highlight (white)"
+			min="2" 
+			usage="front"
+		/>
+
+		<template 
+			name="SECTION-1story-P_template.xml" 
+			section="WORLD" 
+			title="P-photo"
+			min="3" 
+			usage="front"
+		/>
+		<template 
+			name="SECTION-4story-OZ-top_template.xml" 
+			section="WORLD" 
+			title="4 story - OZ photo"
+			min="6" 
+			usage="front"
+		/>
+		<template 
+			name="SECTION-4story-OZ-deco-mirror_template.xml" 
+			section="WORLD" 
+			title="4 story - OZ Media liondoor"
+			min="5" 
+			deco="true" 
+			usage="front"
+		/>
+		<!-- END WORLD -->
+		<!-- US -->
+		<template 
+			name="SECTION-3story-G_template.xml"
+			section="US" 
+			title="3 story - G photo"
+			min="5"
+			usage="front"
+		/>
+		<template 
+			name="SECTION-4story-2D-C_template.xml"
+			section="US" 
+			title="4 story Plain"
+			min="6"
+			usage="front"
+		/>
+		<template 
+			name="SECTION-4story-smallG-top_template.xml"
+			section="US" 
+			title="4 story - G photo"
+			min="6"
+			usage="front"
+		/>
+		<template 
+			name="SECTION-4story-smallG-deco_template.xml"
+			section="US" 
+			title="4 story-Small G Media Deco"
+			min="6" 
+			deco="true"
+			usage="front"
+		/>
+		<template 
+			name="SECTION-3story-G-deco-C_template.xml"
+			section="US" 
+			deco="true" 
+			title="3 story - G Media Deco"
+			min="5"
+			usage="front"
+		/>
+		<template 
+			name="SECTION-3story-G-mirror_template.xml" 
+			section="US" 
+			title="3 story - G photo mirror"
+			min="5" 
+			deco="true"
+			usage="front"
+		/>
+		<template 
+			name="SECTION-4story-smallG-deco-mirror_template.xml" 
+			section="US" 
+			title="4 story - small G Media liondoor - mirror"
+			min="6" 
+			deco="true" 
+			usage="front"
+		/>
+		<template 
+			name="SECTION-4story-smallG-top-mirror_template.xml" 
+			section="US" 
+			title="4 story - G photo - mirror"
+			min="6" 
+			usage="front"
+		/>
+		<template 
+			name="SECTION-1story-fullsize-deco.xml" 
+			section="US" 
+			title="Full size Deco"
+			min="1" 
+			deco="true"
+			usage="front"
+		/>
+		<template 
+			name="SECTION-1story-PV_template.xml" 
+			section="US" 
+			title="PV (grey)"
+			min="3" 
+			usage="front"
+		/>
+		<template 
+			name="SECTION-1story-PV-1highlight_template.xml" 
+			section="US" 
+			title="PV - 1 highlight (grey)"
+			min="2" 
+			usage="front"
+		/>
+		<template 
+			name="SECTION-1story-PV-1highlight-white_template.xml" 
+			section="US" 
+			title="PV - 1 highlight (white)"
+			min="2" 
+			usage="front"
+		/>
+
+		<template 
+			name="SECTION-1story-P_template.xml" 
+			section="US" 
+			title="P-photo"
+			min="3" 
+			usage="front"
+		/>
+		<template 
+			name="SECTION-4story-OZ-top_template.xml" 
+			section="US" 
+			title="4 story - OZ photo"
+			min="6" 
+			usage="front"
+		/>
+		<template 
+			name="SECTION-4story-OZ-deco-mirror_template.xml" 
+			section="US" 
+			title="4 story - OZ Media liondoor"
+			min="5" 
+			deco="true" 
+			usage="front"
+		/>
+		<!-- END US -->
+		<!-- BUSINESS -->
+		<template 
+			name="SECTION-4story-smallG-deco_template.xml"
+			section="BUSINESS" 
+			title="4 story-Small G Media Deco"
+			min="6" 
+			deco="true"
+			usage="front"
+		/>
+		<template 
+			name="SECTION-4story-smallG-top-marketdata_template.xml"
+			section="BUSINESS" 
+			title="4 story - G photo"
+			min="6"
+			usage="front"
+		/>
+		<template 
+			name="SECTION-3story-G-marketdata_template.xml"
+			section="BUSINESS" 
+			title="3story - G photo marketdata"
+			min="5"
+			usage="front"
+		/>
+		<template 
+			name="SECTION-1story-fullsize-deco.xml" 
+			section="BUSINESS" 
+			title="Full size Deco"
+			min="1" 
+			deco="true"
+			usage="front"
+		/>
+		<template 
+			name="SECTION-1story-PV_template.xml" 
+			section="BUSINESS" 
+			title="PV (grey)"
+			min="3" 
+			usage="front"
+		/>
+		<template 
+			name="SECTION-1story-PV-1highlight_template.xml" 
+			section="BUSINESS" 
+			title="PV - 1 highlight (grey)"
+			min="2" 
+			usage="front"
+		/>
+		<template 
+			name="SECTION-1story-PV-1highlight-white_template.xml" 
+			section="BUSINESS" 
 			title="PV - 1 highlight (white)"
 			min="2" 
 			usage="front"
@@ -105,13 +295,540 @@
 		
 		<template 
 			name="SECTION-1story-P_template.xml" 
-			section="BUSINESS_AND_FINANCE" 
+			section="BUSINESS" 
 			title="P-photo"
 			min="3" 
 			usage="front"
 		/>
 		
-		<!-- END BUSINESS AND FINANCE -->
+		<!-- END BUSINESS -->
+		<!-- TECH -->
+		<template 
+			name="SECTION-4story-smallG-deco_template.xml"
+			section="TECH" 
+			title="4 story-Small G Media Deco"
+			min="6" 
+			deco="true"
+			usage="front"
+		/>
+		<template 
+			name="SECTION-3story-G_template.xml"
+			section="TECH" 
+			title="3 story - G photo"
+			min="5"
+			usage="front"
+		/>
+		<template 
+			name="SECTION-4story-2D-C_template.xml"
+			section="TECH" 
+			title="4 story Plain"
+			min="6"
+			usage="front"
+		/>
+		<template 
+			name="SECTION-4story-smallG-top_template.xml"
+			section="TECH" 
+			title="4 story - G photo"
+			min="6"
+			usage="front"
+		/>
+		<template 
+			name="SECTION-3story-G-deco-C_template.xml"
+			section="TECH" 
+			deco="true" 
+			title="3 story - G Media Deco"
+			min="5"
+			usage="front"
+		/>
+		<template 
+			name="SECTION-3story-G-mirror_template.xml" 
+			section="TECH" 
+			title="3 story - G photo mirror"
+			min="5" 
+			deco="true"
+			usage="front"
+		/>
+		<template 
+			name="SECTION-4story-smallG-deco-mirror_template.xml" 
+			section="TECH" 
+			title="4 story - small G Media liondoor - mirror"
+			min="6" 
+			deco="true" 
+			usage="front"
+		/>
+		<template 
+			name="SECTION-4story-smallG-top-mirror_template.xml" 
+			section="TECH" 
+			title="4 story - G photo - mirror"
+			min="6" 
+			usage="front"
+		/>
+		<template 
+			name="SECTION-1story-fullsize-deco.xml" 
+			section="TECH" 
+			title="Full size Deco"
+			min="1" 
+			deco="true"
+			usage="front"
+		/>
+		<template 
+			name="SECTION-1story-PV_template.xml" 
+			section="TECH" 
+			title="PV (grey)"
+			min="3" 
+			usage="front"
+		/>
+		<template 
+			name="SECTION-1story-PV-1highlight_template.xml" 
+			section="TECH" 
+			title="PV - 1 highlight (grey)"
+			min="2" 
+			usage="front"
+		/>
+		<template 
+			name="SECTION-1story-PV-1highlight-white_template.xml" 
+			section="TECH" 
+			title="PV - 1 highlight (white)"
+			min="2" 
+			usage="front"
+		/>
+
+		<template 
+			name="SECTION-1story-P_template.xml" 
+			section="TECH" 
+			title="P-photo"
+			min="3" 
+			usage="front"
+		/>
+		<template 
+			name="SECTION-4story-OZ-top_template.xml" 
+			section="TECH" 
+			title="4 story - OZ photo"
+			min="6" 
+			usage="front"
+		/>
+		<template 
+			name="SECTION-4story-OZ-deco-mirror_template.xml" 
+			section="TECH" 
+			title="4 story - OZ Media liondoor"
+			min="5" 
+			deco="true" 
+			usage="front"
+		/>
+		<!-- END TECH -->
+		<!-- MARKETS -->
+		<template 
+			name="SECTION-4story-D-C-marketdata_template.xml"
+			section="MARKETS" 
+			title="4 story Plain - Marketdata"
+			min="6"
+			usage="front"
+		/>
+		<template 
+			name="SECTION-4story-2D-C_template.xml"
+			section="MARKETS" 
+			title="4 story Plain"
+			min="6"
+			usage="front"
+		/>
+		<template 
+			name="SECTION-4story-smallG-top_template.xml"
+			section="MARKETS" 
+			title="4 story - G photo"
+			min="6"
+			usage="front"
+		/>
+		<template 
+			name="SECTION-3story-G_template.xml"
+			section="MARKETS" 
+			title="3 story - G photo"
+			min="5"
+			usage="front"
+		/>
+		<template 
+			name="SECTION-4story-smallG-deco_template.xml"
+			section="MARKETS" 
+			title="4 story-Small G Media Deco"
+			min="6" 
+			deco="true"
+			usage="front"
+		/>
+		<template 
+			name="SECTION-3story-G-deco-C_template.xml"
+			section="MARKETS" 
+			deco="true" 
+			title="3 story - G Media Deco"
+			min="5"
+			usage="front"
+		/>
+		<template 
+			name="SECTION-3story-G-mirror_template.xml" 
+			section="MARKETS" 
+			title="3 story - G photo mirror"
+			min="5" 
+			deco="true"
+			usage="front"
+		/>
+		<template 
+			name="SECTION-4story-smallG-deco-mirror_template.xml" 
+			section="MARKETS" 
+			title="4 story - small G Media liondoor - mirror"
+			min="6" 
+			deco="true" 
+			usage="front"
+		/>
+		<template 
+			name="SECTION-4story-smallG-top-mirror_template.xml" 
+			section="MARKETS" 
+			title="4 story - G photo - mirror"
+			min="6" 
+			usage="front"
+		/>
+		<template 
+			name="SECTION-1story-fullsize-deco.xml" 
+			section="MARKETS" 
+			title="Full size Deco"
+			min="1" 
+			deco="true"
+			usage="front"
+		/>
+		<template 
+			name="SECTION-1story-PV_template.xml" 
+			section="MARKETS" 
+			title="PV (grey)"
+			min="3" 
+			usage="front"
+		/>
+		<template 
+			name="SECTION-1story-PV-1highlight_template.xml" 
+			section="MARKETS" 
+			title="PV - 1 highlight (grey)"
+			min="2" 
+			usage="front"
+		/>
+		<template 
+			name="SECTION-1story-PV-1highlight-white_template.xml" 
+			section="MARKETS" 
+			title="PV - 1 highlight (white)"
+			min="2" 
+			usage="front"
+		/>
+
+		<template 
+			name="SECTION-1story-P_template.xml" 
+			section="MARKETS" 
+			title="P-photo"
+			min="3" 
+			usage="front"
+		/>
+		<template 
+			name="SECTION-4story-OZ-top_template.xml" 
+			section="MARKETS" 
+			title="4 story - OZ photo"
+			min="6" 
+			usage="front"
+		/>
+		<template 
+			name="SECTION-4story-OZ-deco-mirror_template.xml" 
+			section="MARKETS" 
+			title="4 story - OZ Media liondoor"
+			min="5" 
+			deco="true" 
+			usage="front"
+		/>
+
+		<!-- END MARKETS -->
+		
+		<!-- FRONT SECTION -->
+		<template name="FRONT-4story-Video-deco_v2_template.xml" section="FRONT_SECTION" title="FRONT-4story-Video-deco - Banner" min="4" deco="true" usage="front"/>
+		<template name="FRONT-4story-E-top_v2_template.xml" title="4 story - E Photo Banner" section="FRONT_SECTION" min="4" usage="front"/>
+		<template name="FRONT-3story-F_v2_template.xml" title="4 story - F Photo Banner" section="FRONT_SECTION" min="4" usage="front"/>
+		<template name="FRONT-3story-F-deco_v2_template.xml" title="3 story - F liondoor Banner" section="FRONT_SECTION" min="4" usage="front"/>
+		<template name="FRONT-4story-Vertical-deco_v2_template.xml" title="4 story - Vertical deco Banner" section="FRONT_SECTION" min="4" deco="true" usage="front"/>
+		<template name="FRONT-3story-big-news-G-deco_template.xml" section="FRONT_SECTION" title="Big News - 3 story with deco" min="4" deco="true" usage="front"/>
+		<!-- END FRONT SECTION -->
+		<!-- MARKETPLACE -->
+		<template 
+			name="SECTION-4story-D-C-marketdata_template.xml"
+			section="MARKETPLACE" 
+			title="4 story Plain - Marketdata"
+			min="6"
+			usage="front"
+		/>
+		<template 
+			name="SECTION-4story-2D-C_template.xml"
+			section="MARKETPLACE" 
+			title="4 story Plain"
+			min="6"
+			usage="front"
+		/>
+		<template 
+			name="SECTION-4story-smallG-top_template.xml"
+			section="MARKETPLACE" 
+			title="4 story - G photo"
+			min="6"
+			usage="front"
+		/>
+		<template 
+			name="SECTION-3story-G_template.xml"
+			section="MARKETPLACE" 
+			title="3 story - G photo"
+			min="5"
+			usage="front"
+		/>
+		<template 
+			name="SECTION-4story-smallG-deco_template.xml"
+			section="MARKETPLACE" 
+			title="4 story-Small G Media Deco"
+			min="6" 
+			deco="true"
+			usage="front"
+		/>
+		<template 
+			name="SECTION-3story-G-deco-C_template.xml"
+			section="MARKETPLACE" 
+			deco="true" 
+			title="3 story - G Media Deco"
+			min="5"
+			usage="front"
+		/>
+		<template 
+			name="SECTION-3story-G-mirror_template.xml" 
+			section="MARKETPLACE" 
+			title="3 story - G photo mirror"
+			min="5" 
+			deco="true"
+			usage="front"
+		/>
+		<template 
+			name="SECTION-4story-smallG-deco-mirror_template.xml" 
+			section="MARKETPLACE" 
+			title="4 story - small G Media liondoor - mirror"
+			min="6" 
+			deco="true" 
+			usage="front"
+		/>
+		<template 
+			name="SECTION-4story-smallG-top-mirror_template.xml" 
+			section="MARKETPLACE" 
+			title="4 story - G photo - mirror"
+			min="6" 
+			usage="front"
+		/>
+		<template 
+			name="SECTION-1story-fullsize-deco.xml" 
+			section="MARKETPLACE" 
+			title="Full size Deco"
+			min="1" 
+			deco="true"
+			usage="front"
+		/>
+		<template 
+			name="SECTION-1story-PV_template.xml" 
+			section="MARKETPLACE" 
+			title="PV (grey)"
+			min="3" 
+			usage="front"
+		/>
+		<template 
+			name="SECTION-1story-PV-1highlight_template.xml" 
+			section="MARKETPLACE" 
+			title="PV - 1 highlight (grey)"
+			min="2" 
+			usage="front"
+		/>
+		<template 
+			name="SECTION-1story-PV-1highlight-white_template.xml" 
+			section="MARKETPLACE" 
+			title="PV - 1 highlight (white)"
+			min="2" 
+			usage="front"
+		/>
+		
+		<template 
+			name="SECTION-1story-P_template.xml" 
+			section="MARKETPLACE" 
+			title="P-photo"
+			min="3" 
+			usage="front"
+		/>
+		<template 
+			name="SECTION-4story-OZ-top_template.xml" 
+			section="MARKETPLACE" 
+			title="4 story - OZ photo"
+			min="6" 
+			usage="front"
+		/>
+		<template 
+			name="SECTION-4story-OZ-deco-mirror_template.xml" 
+			section="MARKETPLACE" 
+			title="4 story - OZ Media liondoor"
+			min="5" 
+			deco="true" 
+			usage="front"
+		/>
+		
+		<!-- END MARKETPLACE -->
+		<!-- OPINION -->
+		<template 
+			name="OPINION-5story-E_template.xml"
+			section="OPINION" 
+			title="7 story (3RandO-2CMTRY-2HLT)"
+			min="7"
+			usage="front"
+		/>
+		<template 
+			name="OPINION-5story-E-alternate_template.xml"
+			section="OPINION" 
+			title="Default - iPhone Alternate"
+			min="7"
+			usage="front"
+		/>
+		<template 
+			name="OPINION-4story-E_template.xml"
+			section="OPINION" 
+			title="6 story (2RandO-2CMTRY-2HLT)"
+			min="6"
+			usage="front"
+		/>
+		<template 
+			name="OPINION-3story-E_template.xml"
+			section="OPINION" 
+			title="5 story (2RandO-1CMTRY-2HLT)"
+			min="5"
+			usage="front"
+		/>
+		<template 
+			name="OPINION-2story-E_template.xml"
+			section="OPINION" 
+			title="4 story (1RandO-1CMTRY-2HLT)"
+			min="4"
+			usage="front"
+		/>
+		<template 
+			name="SECTION-1story-fullsize-deco.xml" 
+			section="OPINION" 
+			title="Full size Deco"
+			min="1" 
+			deco="true"
+			usage="front"
+		/>
+		
+		<!-- END OPINION -->
+		<!-- LIFE_AND_CULTURE -->
+		<template 
+			name="SECTION-3story-G_template.xml"
+			section="LIFE_AND_CULTURE" 
+			title="3 story - G photo"
+			min="5"
+			usage="front"
+		/>
+		<template 
+			name="SECTION-4story-2D-C_template.xml"
+			section="LIFE_AND_CULTURE" 
+			title="4 story Plain"
+			min="6"
+			usage="front"
+		/>
+		<template 
+			name="SECTION-4story-smallG-top_template.xml"
+			section="LIFE_AND_CULTURE" 
+			title="4 story - G photo"
+			min="6"
+			usage="front"
+		/>
+		<template 
+			name="SECTION-4story-smallG-deco_template.xml"
+			section="LIFE_AND_CULTURE" 
+			title="4 story-Small G Media Deco"
+			min="6" 
+			deco="true"
+			usage="front"
+		/>
+		<template 
+			name="SECTION-3story-G-deco-C_template.xml"
+			section="LIFE_AND_CULTURE" 
+			deco="true" 
+			title="3 story - G Media Deco"
+			min="5"
+			usage="front"
+		/>
+		<template 
+			name="SECTION-3story-G-mirror_template.xml" 
+			section="LIFE_AND_CULTURE" 
+			title="3 story - G photo mirror"
+			min="5" 
+			deco="true"
+			usage="front"
+		/>
+		<template 
+			name="SECTION-4story-smallG-deco-mirror_template.xml" 
+			section="LIFE_AND_CULTURE" 
+			title="4 story - small G Media liondoor - mirror"
+			min="6" 
+			deco="true" 
+			usage="front"
+		/>
+		<template 
+			name="SECTION-4story-smallG-top-mirror_template.xml" 
+			section="LIFE_AND_CULTURE" 
+			title="4 story - G photo - mirror"
+			min="6" 
+			usage="front"
+		/>
+		<template 
+			name="SECTION-1story-fullsize-deco.xml" 
+			section="LIFE_AND_CULTURE" 
+			title="Full size Deco"
+			min="1" 
+			deco="true"
+			usage="front"
+		/>
+		<template 
+			name="SECTION-1story-PV_template.xml" 
+			section="LIFE_AND_CULTURE" 
+			title="PV (grey)"
+			min="3" 
+			usage="front"
+		/>
+		<template 
+			name="SECTION-1story-PV-1highlight_template.xml" 
+			section="LIFE_AND_CULTURE" 
+			title="PV - 1 highlight (grey)"
+			min="2" 
+			usage="front"
+		/>
+		<template 
+			name="SECTION-1story-PV-1highlight-white_template.xml" 
+			section="LIFE_AND_CULTURE" 
+			title="PV - 1 highlight (white)"
+			min="2" 
+			usage="front"
+		/>
+
+		<template 
+			name="SECTION-1story-P_template.xml" 
+			section="LIFE_AND_CULTURE" 
+			title="P-photo"
+			min="3" 
+			usage="front"
+		/>
+		<template 
+			name="SECTION-4story-OZ-top_template.xml" 
+			section="LIFE_AND_CULTURE" 
+			title="4 story - OZ photo"
+			min="6" 
+			usage="front"
+		/>
+		<template 
+			name="SECTION-4story-OZ-deco-mirror_template.xml" 
+			section="LIFE_AND_CULTURE" 
+			title="4 story - OZ Media liondoor"
+			min="5" 
+			deco="true" 
+			usage="front"
+		/>
+		<!-- END LIFE_AND_CULTURE -->
 		
 		<!-- ARENA -->
 		<template 
@@ -311,121 +1028,6 @@
 		/>
 		<!-- END FRIDAY JOURNAL -->
 		
-		<!-- MARKETPLACE -->
-		<template 
-			name="SECTION-4story-2D-C_template.xml"
-			section="MARKETPLACE" 
-			title="4 story Plain"
-			min="6"
-			usage="front"
-		/>
-		<template 
-			name="SECTION-4story-smallG-top_template.xml"
-			section="MARKETPLACE" 
-			title="4 story - G photo"
-			min="6"
-			usage="front"
-		/>
-		<template 
-			name="SECTION-3story-G_template.xml"
-			section="MARKETPLACE" 
-			title="3 story - G photo"
-			min="5"
-			usage="front"
-		/>
-		<template 
-			name="SECTION-4story-smallG-deco_template.xml"
-			section="MARKETPLACE" 
-			title="4 story-Small G Media Deco"
-			min="6" 
-			deco="true"
-			usage="front"
-		/>
-		<template 
-			name="SECTION-3story-G-deco-C_template.xml"
-			section="MARKETPLACE" 
-			deco="true" 
-			title="3 story - G Media Deco"
-			min="5"
-			usage="front"
-		/>
-		<template 
-			name="SECTION-3story-G-mirror_template.xml" 
-			section="MARKETPLACE" 
-			title="3 story - G photo mirror"
-			min="5" 
-			deco="true"
-			usage="front"
-		/>
-		<template 
-			name="SECTION-4story-smallG-deco-mirror_template.xml" 
-			section="MARKETPLACE" 
-			title="4 story - small G Media liondoor - mirror"
-			min="6" 
-			deco="true" 
-			usage="front"
-		/>
-		<template 
-			name="SECTION-4story-smallG-top-mirror_template.xml" 
-			section="MARKETPLACE" 
-			title="4 story - G photo - mirror"
-			min="6" 
-			usage="front"
-		/>
-		<template 
-			name="SECTION-1story-fullsize-deco.xml" 
-			section="MARKETPLACE" 
-			title="Full size Deco"
-			min="1" 
-			deco="true"
-			usage="front"
-		/>
-		<template 
-			name="SECTION-1story-PV_template.xml" 
-			section="MARKETPLACE" 
-			title="PV (grey)"
-			min="3" 
-			usage="front"
-		/>
-		<template 
-			name="SECTION-1story-PV-1highlight_template.xml" 
-			section="MARKETPLACE" 
-			title="PV - 1 highlight (grey)"
-			min="2" 
-			usage="front"
-		/>
-		<template 
-			name="SECTION-1story-PV-1highlight-white_template.xml" 
-			section="MARKETPLACE" 
-			title="PV - 1 highlight (white)"
-			min="2" 
-			usage="front"
-		/>
-		
-		<template 
-			name="SECTION-1story-P_template.xml" 
-			section="MARKETPLACE" 
-			title="P-photo"
-			min="3" 
-			usage="front"
-		/>
-		<template 
-			name="SECTION-4story-OZ-top_template.xml" 
-			section="MARKETPLACE" 
-			title="4 story - OZ photo"
-			min="6" 
-			usage="front"
-		/>
-		<template 
-			name="SECTION-4story-OZ-deco-mirror_template.xml" 
-			section="MARKETPLACE" 
-			title="4 story - OZ Media liondoor"
-			min="5" 
-			deco="true" 
-			usage="front"
-		/>
-		
-		<!-- END MARKETPLACE -->
 
 		<!-- MONEY AND INVESTING -->
 		<template 
@@ -1474,51 +2076,6 @@
 
 		<!-- END JOURNAL_REPORT -->
 		
-		<!-- OPINION -->
-		<template 
-			name="OPINION-5story-E_template.xml"
-			section="OPINION" 
-			title="7 story (3RandO-2CMTRY-2HLT)"
-			min="7"
-			usage="front"
-		/>
-		<template 
-			name="OPINION-5story-E-alternate_template.xml"
-			section="OPINION" 
-			title="Default - iPhone Alternate"
-			min="7"
-			usage="front"
-		/>
-		<template 
-			name="OPINION-4story-E_template.xml"
-			section="OPINION" 
-			title="6 story (2RandO-2CMTRY-2HLT)"
-			min="6"
-			usage="front"
-		/>
-		<template 
-			name="OPINION-3story-E_template.xml"
-			section="OPINION" 
-			title="5 story (2RandO-1CMTRY-2HLT)"
-			min="5"
-			usage="front"
-		/>
-		<template 
-			name="OPINION-2story-E_template.xml"
-			section="OPINION" 
-			title="4 story (1RandO-1CMTRY-2HLT)"
-			min="4"
-			usage="front"
-		/>
-		<template 
-			name="SECTION-1story-fullsize-deco.xml" 
-			section="OPINION" 
-			title="Full size Deco"
-			min="1" 
-			deco="true"
-			usage="front"
-		/>
-		<!-- END OPINION -->
 		
 		<!-- CIO -->
 		<template 
@@ -1614,7 +2171,6 @@
 			title=""
 			min="7"
 			usage="continuation"
-			storyorder="feed"
 		/>
 		<template 
 			name="CONTINUATION-generic-6_template.xml" 
@@ -1730,6 +2286,24 @@
 				deco="true" 
 				page="4" 
 			/>
+			<template 
+				name="CONTINUATION-fancy-6_template.xml" 
+				title="6 stories - smallG liondoor"
+				min="6" 
+				usage="continuation" 
+				deco="true"
+				storyorder="feed" 
+				page="2" 
+			/>		
+			<template 
+				name="CONTINUATION-fancy-6_template.xml" 
+				title="6 stories - smallG liondoor"
+				min="6" 
+				usage="continuation" 
+				deco="true"
+				storyorder="feed" 
+				page="3" 
+			/>		
 			<template 
 				name="CONTINUATION-fancy-6_template.xml" 
 				title="6 stories - smallG liondoor"

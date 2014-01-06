@@ -4,7 +4,10 @@
 	<page template="ARTICLE-front-AHED-1col_template.xml" type="prefix" for="tablet">
 		<link id="view" module="ARTICLE-front-AHED-1col_module.xml"/>
 	</page>
-	
+	<page template="ARTICLE-continuation-large-bucket-no-ads_template.xml" type="prefix" for="tablet">
+                    <link id="view" module="ARTICLE-continuation-large-bucket-no-ads_module.xml"/>
+    </page>
+    
     <!-- These pages will repeat as needed, hence the "repeat" type -->
 	<page template="ARTICLE-continuation-ads_template.xml" type="repeat" for="tablet">
 		<link id="view" module="ARTICLE-continuation-ads_module.xml"/>

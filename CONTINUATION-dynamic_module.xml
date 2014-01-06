@@ -13,11 +13,12 @@
 			background-color:#e4e4e4
         },
 		#image_container: { 
-			anchor-x: right,
-			width: 84,
+			width: {if: =widescreen, then:84, else: {$subtract:[=view.width, 16]}},
 			pixels-per-point-x:{if: =scale.small, then:.7, else:1},
 			pixels-per-point-y:{if: =scale.small, then:.7, else:1},
-			image-scale:{if: =scale.small, then:.7, else:1}
+			image-scale:{if: =scale.small, then:.7, else:1},
+			display: {if-any: [{if: =view.height, less-than:260}, {if: =view.width, more-than:260}, {if: =options.hide_image}], then:none, else:inherit},
+			anchor-x:{if: =widescreen, then:right, else:center}
 			
 		},
 		.key: {
@@ -28,11 +29,11 @@
 			padding: [0, 0, 0, 2],
 			color:#948464
 		},
-		
+		.highlight_flashline: {display: {if: =options.show_flashline, then:inherit, else:none}},
+		.byline: {display: {if: =options.show_byline, then:inherit, else:none}},
 		image: {
-			width:76,
-			height:76,
-			padding: [ 0, 0, 4, 8 ]
+			height:{if: =widescreen, then:76, else:{$multiply: [{$subtract:[=view.width, 16]}, .66]}},
+			padding: [ 0, 0, 4, {if: =widescreen, then:8, else:0} ]
 			
 		},
 		#body-first-p: {
@@ -63,9 +64,16 @@
 			.continuation_body: {
 				display:none
 			},
+			.byline: {
+				display:none
+			},
+			.highlight_flashline: {
+				display:none
+			},
 			#image_container: {
 				display:none
 			},
+			display: { if:=options.hide_strap, then:none, else:default },
 			#vertical: {
 				anchor-y:middle,
 				display:inherit
@@ -83,7 +91,9 @@
 			<box id="vertical">
 				<p class="continuation_headline"><mark id="m_headline" /><mark class="key" /></p>
 			</box>
-			<p class="continuation_headline" id="tablet"><mark id="m_headline" /><mark class="key" /></p>
-			<panel embed="body" class="continuation_body"/>
+			<p class="highlight_flashline" embed="flashline" />
+	    	<p class="module_headline" id="tablet"><mark id="m_headline" /><mark class="key" /></p>
+			<p class="byline" embed="byline"/>
+            <panel embed="body" class="continuation_body"/>
 		</panel>
 </jpml>

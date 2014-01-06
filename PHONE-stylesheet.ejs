@@ -1,5 +1,15 @@
 {if: =scale.phone, then: {
-	
+	jpml: {
+		if-all: [
+			=intent.article,
+			=intent.module,
+			{if: =app.version, at-least: 5.4}
+		],
+		then: {
+			min-height: 0
+		},
+		padding:[0]
+	},	
 	.maude: {
 		position: relative,
 		top: 0,
@@ -25,11 +35,6 @@
 		
 	},
 	#highlight_ad: 	{ 
-		width: 320, 
-		height: 50,
-		background-color: #e7e2d8
-	},
-	#ad:{ 
 		width: 320, 
 		height: 50,
 		background-color: #e7e2d8
@@ -100,10 +105,13 @@
 		height:50
 	},
 	.unit_ad: {
-		height:50
+		width: 320, 
+		height: 50,
+		background-color: #e7e2d8
+		
 	},
 	.unit_G_deco: {
-		height:255
+		height:214
 	},
 	.unit_p: {
 		height:190

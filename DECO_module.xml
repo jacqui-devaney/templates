@@ -3,107 +3,30 @@
 	<style src="GLOBAL-stylesheet.ejs" />
 	<style src="PHONE-MODULES-stylesheet.ejs" />
 	<style>{
-		$join: [
-			{ $switch: [
-				{ if: =options.no_border, then: {
-					#wrapper: {
-						border-width: [0, 0, 0, 0],
-						padding: [10, 0, 0, 0]
-					}
-		
-				}},
-				{ if: =options.bottom_border, then: {
-						#wrapper: {
-							border-width: [0, 0, 1, 0],
-							border-color: #b1aca1,
-							padding: { if: =scale.small, then:[0], else:[0, 0, 10, 0]}
-						}
-		
-				}},
-				{ if: =options.small_margin_no_border, then: {
-					#wrapper: {
-					border-width: [0, 0, 0, 0],
-					padding: [10, 0, 0, 0]
-					}
-		
-				}},
-				{ if: true, then: {
-					#wrapper: {
-						border-width: [1, 0, 0, 0],
-						border-color: #b1aca1,
-						padding: { if: =scale.small, then:[5, 0, 0, 0], else:[8, 0, 0, 0]}
-						}
-					}}
-			]},
-			{#deco_container: { 
-				padding: { if: =scale.small, then:[5, 0, 5, 0], else:[8, 0, { if: =options.no_caption, then:2, else:8}, 0]},
-				position:relative
-			}},
-			{image:{
-				options: {
-					$switch: [
-						{ if: =options.G_image, then: {match: { width:553, height:369, min-height:369 } } },
-						{ if: =options.G-tall_image, then: {match: { width:553, height:400, min-height:400 } } },
-						{ if: =options.F_image, then: {match: { width:571, height:226, min-height:226 } } },
-						{ if: =options.PT_image, then: {match: { width:264, height:455, min-height:455 } } },
-						{ if: =options.OV_image, then: {match: { width:239, height:340, min-height:340 } } },
-						{ if: =options.OZ_image, then: {match: { width:570, height:612, min-height:612 } } },
-						{ if: =options.P_image, then: {match: { width:749, height:499, min-height:499 } } },
-						{ if: =options.H_image, then: {match: { width: 659, height:439, min-height:439 } } },
-						{ if: =options.DV_image, then: {match: { width: 262, height:394, min-height:394 } } }
-
-					]
-				},
-				image-scale: {$max:[1,{$divide:[{$subtract:[=view.width, 18]}, 553]}]},
-                pixels-per-point-x:1,
-				pixels-per-point-y:1
+			image:{
+				width:=view.width,
+				height: {$subtract:[=view.height, 1]},
+				image-scale: {if: =options.full_screen, then:.9, else:1}
 				
-				
-			}},
-			{#bottom: {
-				anchor-y:bottom,
-				padding: [0, {if: =options.narrow_text, then:250, else:0}, 0, 0]
-			}},
-			{#content: { padding: [0, 8, 8, 8]}},
-			{.deco_caption: {
-				max-height: {
-					$switch: [
-						{if: =options.small_caption, then:30},
-						{if: =options.fake_deco, then:35},
-						{if: =options.medium_caption, then:45},
-						{if: =options.vertical_deco, then:75},
-						{if: =options.long_deco, then:90},
-						{if: true, then:55}
-				]},
-				min-height: 5,
-				display: { if: =options.no_caption, then:none, else:inherit },
-				text-overflow:ellipsis
-				
-			}}
-		]
-	}</style>
-	<style>{
-		if: =scale.phone, then: {
-			#wrapper: {
-				padding:[10, 0, 0, 0],
-				border-color:#d6d6d6
 			},
-			.deco_caption: {display:none}
-		}, else: {}
+			#deco_caption_container: {
+				bottom:0,
+				background-color:"rgba(0, 0, 0, .5)",
+				padding:[10, 0]
+				
+			},
+			.deco_caption: {
+				display:{if: =options.show_caption, then:inherit, else:none}
+			}
 	}</style>
-	<box id="wrapper">
-		<panel id="content">
-			<panel id="top_headline">
-				<p class="deco_headline"><span embed="headline" /><mark class="key" /></p>
-			</panel>
-			<box id="bottom">
-				<p class="deco_bottom_headline"><span embed="headline" /><mark class="key" /></p>
-				<panel class="deco_caption"><p embed="body-first-p" /></panel>
-			</box>
-
 			<box id="deco_container" embed="deco-image">
 				<image embed="summary-image" />
+				<box id="deco_caption_container">
+					<p class="deco_headline"><span embed="headline" /><mark class="key" /></p>
+					<panel class="deco_caption">
+						<p embed="body-first-p" />
+					</panel>
+				</box>
 			</box>
-		</panel>
-	</box>
+			
 </jpml>

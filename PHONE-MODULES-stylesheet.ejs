@@ -1,15 +1,5 @@
 {if: =scale.phone, then: {
 
-	jpml: {
-		if-all: [
-			=intent.article,
-			=intent.module,
-			{if: =app.version, at-least: 5.4}
-		],
-		then: {
-			min-height: 0
-		}
-	},	
 	#filler: {
 		if-all: [
 			=intent.article,
@@ -78,6 +68,23 @@
 		text-scale: {$multiply: [=scale.text, 1] }
 		
 	},
+	.ahed_headline:{
+		font-size:20,	
+		line-height:20,
+		text-scale: {$multiply: [=scale.text, 1] },
+		padding:[0, 0, 0, 0],
+		text-overflow:" \u00bb",
+		font-name:DJ5EscrowCond-Bold
+		
+	},
+	.highlight_flashline: {
+		font-name:DJ5RetinaCd-Semibold,
+		font-size:16,
+		line-height:18,
+		color:#656565,
+		paragraph-padding: [ 0, 0, 20, 0 ]
+	},
+	
 	#deco_headline: {
 		text-scale: {$multiply: [=scale.text, 1] },
 		font-size:18,

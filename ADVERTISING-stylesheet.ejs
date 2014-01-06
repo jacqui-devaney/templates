@@ -14,8 +14,17 @@
 	.hidden_tablet: {display:none},
 	.hidden_phone: {display:inherit},
 	#front_page: {
-		top: {if: =landscape, then:525, else:783},
-		height: {if: =scale.phone, then:50, else:175}
+		top: {if: =landscape, then:596, else:854},
+		height: {if: =scale.phone, then:50, else:90}
+	},
+	#banner_ad: 	{ 
+		pixels-per-point-x: 1,
+		pixels-per-point-y: 1,
+		anchor-x:center,
+		anchor-y:middle,
+		width:{if: =scale.phone, then:320, else:1024},
+		height: {if: =scale.phone, then:50, else:90}
+		
 	},
 	#cube_ad: 	{ 
 		pixels-per-point-x: 1,
@@ -31,24 +40,6 @@
 			{if: =scale.large, then: 175}
 		]}
 
-	},
-	.front_ad: {
-		background-color:#f7f6f3,
-		background-position:center
-	},
-	#ad: {
-		pixels-per-point-x: 1,
-		pixels-per-point-y: 1,
-		anchor-x: center,
-		anchor-y: middle,
-		width: {$switch: [
-			{if: =scale.small, then: 134},
-			{if: =scale.large, then: 170}
-		]},
-		height: {$switch: [
-			{if: =scale.small, then: 137},
-			{if: =scale.large, then: 175}
-		]}
 	},
 	#article_advertisement: {
 		anchor-x:center,

@@ -4,89 +4,11 @@
 		<!-- FRONT SECTION -->
 		<template 
 			section="FRONT_SECTION" 
-			name="FRONT-3story-F-deco_v2_template.xml" 
-			title="Default: 3 story F liondoor"
-			min="3" 
+			name="FRONT-5story-deco_template.xml" 
+			title="Default: 5 story G Liondoor"
+			min="5" 
 			deco="true" 
 			usage="front"
-			storyorder="feed"
-		/>
-		<template 
-			section="FRONT_SECTION" 
-			name="FRONT-4story-Vertical-deco_v2_template.xml" 
-			title="4 story- vertical liondoor"
-			min="4" 
-			deco="true" 
-			usage="front"
-			storyorder="feed"
-		/>
-		<template 
-			section="FRONT_SECTION" 
-			name="FRONT-4story-G-deco_v2_template.xml" 
-			title="4 story - G liondoor"
-			min="4" 
-			deco="true" 
-			usage="front"
-			storyorder="feed"
-		/>
-		<template 
-			section="FRONT_SECTION" 
-			name="FRONT-4story-G-top_v2_template.xml" 
-			title="4 story - Top Story G photo"
-			min="4" 
-			usage="front"
-			storyorder="feed"
-		/>
-		<template 
-			section="FRONT_SECTION" 
-			name="FRONT-4story-E_v2_template.xml" 
-			title="4 story - middle story E photo"
-			min="4" 
-			usage="front"
-			storyorder="feed"
-		/>
-		<template 
-			section="FRONT_SECTION" 
-			name="FRONT-3story-F_v2_template.xml" 
-			title="3 story top story F photo"
-			min="3" 
-			usage="front"
-			storyorder="feed"
-		/>
-		<template 
-			section="FRONT_SECTION" 
-			name="FRONT-2story-G-deco_v2_template.xml" 
-			title="2 story G liondoor"
-			min="2" 
-			deco="true" 
-			usage="front"
-			storyorder="feed"
-		/>
-		<template 
-			section="FRONT_SECTION" 
-			name="FRONT-3story-G-deco_v2_template.xml" 
-			title="3 story G liondoor"
-			min="3" 
-			deco="true" 
-			usage="front"
-			storyorder="feed"
-		/>
-		<template 
-			section="FRONT_SECTION" 
-			name="FRONT-3story-big-news_v2_template.xml" 
-			title="Top Story HUGE News large headline"
-			min="3" 
-			usage="front"
-			storyorder="feed"
-		/>
-		<template 
-			name="SECTION-1story-fullsize-deco.xml" 
-			title="Full size Deco"
-			section="FRONT_SECTION" 
-			min="1" 
-			deco="true"
-			usage="front"
-			storyorder="feed"
 		/>
 		
 		<!-- END FRONT SECTION -->

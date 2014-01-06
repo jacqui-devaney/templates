@@ -1,30 +1,10 @@
-{$join: [
-	{jpml: {
-		border-width:[1, 0, 0, 0], 
-		border-color:black
-	}},
-{if: =portrait, then: {
-		#whatsnews: { 
-			height:{if: =issue.type, equals:"ITP", then:960, else:915},
-			top:{if: =issue.type, equals:"ITP", then:0, else:45}, 
-			options: { expanded-frame: [
-				{$multiply:[=scale.pagex, 3]}, 
-				{$multiply:[=scale.pagey, 5]}, 
-				{$multiply:[=scale.pagex, 550]}, 
-				{$multiply:[=scale.pagey, 960]}
-			] }
+{
+	jpml: {
+		padding: [82, 0, 0, 0]
+	},
+	#whatsnews:		{ 
+			height:{if: =landscape, then:578, else: 832},
+			top:0
 		}
-	}, else: {
-		#whatsnews:		{ 
-			height:{if: =issue.type, equals:"ITP", then:706, else:661},
-			top:{if: =issue.type, equals:"ITP", then:0, else:45}, 
-			options: { expanded-frame: [
-				{$multiply:[=scale.pagex, 3]}, 
-				{$multiply:[=scale.pagey, 5]}, 
-				{$multiply:[=scale.pagex, 550]}, 
-				{$multiply:[=scale.pagey, 706]}
-			] }
-		}
-}}
-
-]}
+	
+}

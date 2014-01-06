@@ -1,141 +1,132 @@
 <jpml id="TOP-IMAGE_module">
 	<style src="GLOBAL_MODULES-stylesheet.ejs" />
-	<style src="GLOBAL-stylesheet.ejs" />
 	<style src="PHONE-MODULES-stylesheet.ejs" />
 	<style>{
 		$join: [
 			{ $switch: [
-				{ if: =options.no_border, then: {
-					#wrapper: {
-						border-width: [0, 0, 0, 0],
-						padding: [8, 0, 0, 0]
+				{ if: =options.top_border, then: {
+					jpml: {
+						border-width: [1, 0, 0, 0],
+						padding: [10, 10, 0, 0],
+						border-color: #cfcfcf
 					}
 			
 				}},
 				{ if: =options.left_border, then: {
-					#wrapper: {
+					jpml: {
 						border-width: [0, 0, 0, 1],
-						border-color: #b1aca1,
-						padding: [0, 0, 0, 0]
+						border-color: #cfcfcf,
+						padding: [0, 0, 0, 10]
+					}
+			
+				}},
+				{ if: =options.right_border, then: {
+					jpml: {
+						border-width: [0, 1, 0, 0],
+						border-color: #cfcfcf,
+						padding: [0, 10, 0, 0]
 					}
 			
 				}},
 				{ if: true, then: {
-					#wrapper: {
-						border-width: [1, 0, 0, 0],
-						border-color: #b1aca1,
-						padding: [8, 0, 0, 0]
+					jpml: {
+						border-width: [0, 0, 0, 0],
+						padding: [0, 0, 0, 0]
 					}
-					}}
+				}}
 			]},
-			{#body: { 
-	            column-count: {$switch: [
-					{if: =widescreen, then: { if: =options.two_columns, then:2, else:1 }},
-					{if: =scale.large, then: {$divide: [=view.width, {$multiply:[250, =scale.dpi]}]}}
-					
-				]},
-	            column-gutter: 20
-	        }},
-			{#body_container: { padding: [0, 8, 8, 8]}},
-			{#headline: { padding: [0, 8]}},
-			{image: {
-				pixels-per-point-x:1,
-				pixels-per-point-y:1,
-				height: {$multiply: [{$subtract:[=view.width, 16]}, {$switch: [
-						{if: =options.F_image, then:0.39},
-						{if: =options.OZ_image, then:1.07},
-						{if: =options.C_image, then:.56},
-						{if: =options.DV_image, then:1.5},
-						.66
-					]}
-				]}, 
-
-                display: { if: =options.show_image, then:inherit, else:none },
-				padding: [0, 9, 8, 9],
-				options: {
-					$switch: [
-						{if: =options.F_image, then: {match:{width:571, height:226, max-height:226}}},
-						{ if: =options.OZ_image, then: {match: { width:570, height:612, min-height:612 } } },
-						{ if: =options.DV_image, then: {match: { width:262, height:394, min-height:394 } } },
-						{ if: =options.G_image, then: {match: { width:553, height:369, min-height:369 } } }
-					]
-				},
-                image-scale: {$max:[1,{$divide:[{$subtract:[=view.width, 18]}, 553]}]}
-            }},			
-			{.byline: {display: {$switch: [
-				{if: =scale.small, then:{if: =options.byline, then:inherit, else:none}},
-				{if: =scale.large, then: {if: =options.no_byline, then:none, else:inherit}}
-			]}}},
-			{.body: {padding:{if: =options.byline, then:[0], else:[3, 0, 0, 0]}}},
-			{#body-first-p: {
-				text-indent: {if: =options.no_indent, then:0, else:20}
-			}}
-			
-		
-			]
-		}</style>
-		<style>{
-			if: =scale.phone, then: {
-				#body-first-p: {
-					text-indent: 0
-				},
-				jpml: {
-					border-width: [{if: =options.top_border, then:1, else:0}, 0, {if: =options.no_border, then:0, else:1}, 0],
-					border-color: #d6d6d6,
-					anchor-y:middle,
-					padding:[0]
-				},
-				#wrapper: {
-					border-width:[0],
-					padding: [{if: =options.top_align, then: 10, else:0}, 0, 0, 0],
-					border-color:#d6d6d6
-				},
-				#image_wrapper: { 
-					anchor-x:right,
-					position:relative,
-					width: 76,
-					padding:[0, 10, 6, 15],
+			{
+				#body: { 
+		            column-count: {
+						if: =options.one_column, then:1, else:{$divide: [=view.width, {$multiply:[300, =scale.dpi]}]}
+					},
+		            column-gutter: 20,
+					display: {if: =options.hide_body, then:none, else:inherit}
+		        },
+				image: {
 					pixels-per-point-x:1,
 					pixels-per-point-y:1,
-					image-scale:1,
-					display:{if: =options.no_image, then: none, else:inherit}
-
-				},
-				image: { 
-					height: 76,
-					display:inherit,
-					padding: [0],
-	                options:{},
-					image-scale: 1
-					
-				},
+					width: =view.width,
+					height: {$multiply: [=view.width, .66 ]}, 
+	                display: { if: =options.show_image, then:inherit, else:none },
+					padding: [0, 0, 8, 0],
+					options: {
+						$switch: [
+							{if: =options.F_image, then: {match:{width:571, height:226, max-height:226}}},
+							{ if: =options.OZ_image, then: {match: { width:570, height:612, min-height:612 } } },
+							{ if: =options.DV_image, then: {match: { width:262, height:394, min-height:394 } } },
+							{ if: =options.G_image, then: {match: { width:553, height:369, min-height:369 } } }
+						]
+					},
+	                image-scale: {if: =options.scale_down_large, then:1.4, else:1.2}
+	            },
 				.byline: {
-					display:{if: =page.section, equals: "OPINION", then:inherit, else:none}
+					display: {$switch:[
+						{if: =page.section, equals:"OPINION", then:inherit},
+						{if: =options.show_byline, then:inherit},
+						none
+					]}
 				},
-				#body_container: {
-					display:{if-any: [{if: =options.show_body}, {if: =page.section, equals: "OPINION"}], then:inherit, else:none},
-					padding:[0, 8, 0, 8]
+				#body-first-p: {
+					text-indent: {if: =options.indent, then:20, else:0}
 				},
-				#vertical: {
-					vertical-align: {if: =options.top_align, then: top, else: middle}
+				.teaser_sectionname: {
+					display: {if: =article.type, equals:"Letters", then:inherit, else:none},
+					color: #d6a90c
 				}
+			}
+		]
+	}</style>
+	<style>{
+		if: =scale.phone, then: {
+			jpml: {
+				padding:[0],
+				border-width: [{if: =options.top_border, then:1, else:0}, 0, {if: =options.no_border, then:0, else:1}, 0],
+				border-color: #d6d6d6,
+				anchor-y:middle				
+			},
+			#image_wrapper: { 
+				anchor-x:right,
+				position:relative,
+				width: 76,
+				padding:[8, 8, 0, 10],
+				display:{if: =options.show_image, then:inherit, else:none}
+
+			},
+			#headline: {
+				padding: [{if: =options.top_align, then:8, else:0}, 8, 0, 8]
+			},
+			image: { 
+				height: 76,
+				width:76,
+				display:inherit,
+				padding: [0]
 				
-			}, else:{}
-		}</style>
-	<box id="wrapper">
-		<box id="image_wrapper">
-			<image embed="summary-image" />
-		</box>
-		<panel id="vertical">
-			<panel id="headline">
-				<p class="module_headline"><span embed="headline" /><mark class="key" /></p>
-			</panel>
-			<panel id="body_container">
-		        <panel id="body">
-		            <p class="byline" embed="byline"/>
-		            <panel class="body" embed="body"/>
-		        </panel>
-		    </panel>
-		</panel>
+			},
+			#vertical: {
+				vertical-align: {if: =options.top_align, then: top, else: middle}
+			},
+			.byline: {
+				display:{if: =page.section, equals: "OPINION", then:inherit, else:none}
+			},
+			#body: {
+				display:{if-any: [=options.show_body, {if: =page.section, equals: "OPINION"}], then:inherit, else:none},
+				padding: [{if: =page.section, equals: "OPINION", then:2, else:0}, 8, 0, 8]
+			}
+			
+		}, else:{}
+	}</style>
+	<box id="image_wrapper">
+		<image id="deco-image" embed="summary-image" />
 	</box>
+	<panel id="vertical">
+		<panel id="headline">
+			<p class="teaser_sectionname"><span embed="flashline" /></p>
+			<p class="module_headline"><span embed="headline" /><mark class="key" /></p>
+		</panel>
+		<panel id="body">
+			<p class="byline" embed="byline"/>
+			<panel class="body" embed="body"/>
+		</panel>
+	</panel>
 </jpml>

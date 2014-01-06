@@ -1,169 +1,129 @@
 <jpml id="AHED_module">
-<style src="GLOBAL_MODULES-stylesheet.ejs"/>
-<style src="AHED-stylesheet.ejs"/>
-<style src="PHONE-MODULES-stylesheet.ejs"/>
-    <style>{
-				$join: [        
-					{jpml: { 
-						padding: [0],
-					 	text-scale: =scale.text
-					}},
-			        {#top_container: {
-			            border-image: url(ahed-border.png),
-			            border-slice: [14],
-						border-width: [14],
-			            text-align: center
-			        }},
-			        {#bottom_container: {
-			            padding: [0, 16, 0, 16],
-			            text-overflow: "\u00bb",
-						display:{if: =options.hide_body, then:none, else:inherit}
-			        }},
-			        {#image_container: { 
-						anchor-x: { $switch: [
-							{if-all: [=options.center_image, =widescreen], then:center},
-							{if: =options.center_image, then:center},
-							right
-						]}, 
-						width: { $switch: [
-							{if-all: [=options.center_image, =widescreen], then:133},
-							{if: =options.center_image, then:133},
-							90
-						]},
-						display: { if: =options.no_image, then:none, else:inherit },
-						pixels-per-point-x:{if: =scale.small, then:.7, else:1},
-						pixels-per-point-y:{if: =scale.small, then:.7, else:1},
-						image-scale:{if: =scale.small, then:.7, else:1},
-						top: {if: =options.center_image, then:118, else:0}
-						
-						
-					}},
-					{image: { 
-						padding: { $switch: [
-							{if-all: [=options.center_image, =widescreen], then:[5, 10]},
-							{if: =options.center_image, then:[5, 10]},
-							[0, 4, 8, 8]
-						]},
-						width: {if: =options.center_image, then:113, else:76}, 
-						height: {if: =options.center_image, then:113, else:76} 
-						
-					}},
-					{#stars: { padding: [5, 0, 0, 0] }},
-					{ $switch: [
-						{ if: =options.no_border, then: {
-							#regular: {
-								border-width: [0, 0, 0, 0],
-								padding: [0, 8, 8, 8],
-								display: { if: =article.type, equals: A-hed, then: none, else: inherit }
-							}
-
-						}},
-						{ if: true, then: {
-							#regular: {
-								border-width: [1, 0, 0, 0],
-								border-color: #b1aca1,
-								padding: [8, 8, 8, 8],
-								display: { if: =article.type, equals: A-hed, then: none, else: inherit }
-							}
-							}}
-					]},	
-					{#ahed: {
-						display: { if: =article.type, equals: A-hed, then: inherit, else: none }
-					}},
-					{.ahed_byline: {display: {$switch: [
-						{if: =scale.small, then:{if: =options.byline, then:inherit, else:none}},
-						{if: =scale.large, then: {if: =options.no_byline, then:none, else:inherit}}
-					]}}},
-					{.byline: {display: {$switch: [
-						{if: =scale.small, then:{if: =options.byline, then:inherit, else:none}},
-						{if: =scale.large, then: {if: =options.no_byline, then:none, else:inherit}}
-					]}}},
-					{.ahed_subhed: {display:{if: =options.no_subhed, then:none, else:inherit}}},
-					{.body: {
-						padding:[3, 0, 0, 0]
-					}},
-					{.ahed_body: {
-						column-count: { if: =options.two_columns, then:2, else:1 },
-						column-gutter: 20,
-						text-indent:{if: =options.indent, then:20, else:0},
-						text-align: justify,
-						hyphens: {if: =options.justify, then:auto, else:none}
-					}},
-					{#body-first-p: {text-indent: {$switch: [
-						{if: =scale.small, then:{if: =options.no_indent, then:0, else:20}},
-						{if: =scale.large, then:{if: =options.no_indent, then:0, else:20}}
-					]}}},
-					
-					{.phone: {display:none}}
-				]
-
-    }</style>
+	<style src="GLOBAL_MODULES-stylesheet.ejs" />
+	<style src="AHED-stylesheet.ejs" />
+	<style src="PHONE-MODULES-stylesheet.ejs" />
 	<style>{
-		if: =scale.phone, then: {
-			jpml: {
-				padding:[0],
-				border-color:#d6d6d6,
-				border-width:[0, 0, {if: =options.bottom_border, then:1, else:0}, 0]
-				
-			},
-			#regular: {
-				padding:[5, 8],
-				display:inherit,
-				border-color:#d6d6d6
-			},
-			#ahed: {display:none},
-			#image_wrapper: { 
-				anchor-x:right,
-				position:relative,
-				width: 76,
-				padding:[0, 1, 0, 15],
-				pixels-per-point-x:1,
-				pixels-per-point-y:1,
-				image-scale:1,
-				display:inherit
-			},
-			image: { 
-				height: 76,
-				display:inherit,
-				padding: [0],
-	            options:{},
-				image-scale: 1
+		$join: [
+			{ $switch: [
+				{ if: =article.type, equals:"A-hed", then: {
+					jpml: {
+						border-width: [0, 0, 0, 0],
+						padding: [0]
+					}
 			
-			},
-			#body_container: {display:none},
-			.phone: {display:inherit},
-			#not_prominent: {
-				vertical-align:middle
+				}},
+				{ if: =options.top_border, then: {
+					jpml: {
+						border-width: [1, 0, 0, 0],
+						padding: [10, 10, 0, 0],
+						border-color: #cfcfcf
+					}
+			
+				}},
+				{ if: =options.left_border, then: {
+					jpml: {
+						border-width: [0, 0, 0, 1],
+						border-color: #cfcfcf,
+						padding: [0, 0, 0, 10]
+					}
+			
+				}},
+				{ if: =options.right_border, then: {
+					jpml: {
+						border-width: [0, 1, 0, 0],
+						border-color: #cfcfcf,
+						padding: [0, 10, 0, 0]
+					}
+			
+				}},
+				{ if: true, then: {
+					jpml: {
+						border-width: [0, 0, 0, 0],
+						padding: [0, 10, 0, 0]
+					}
+				}}
+			]},
+			{
+				#body: { 
+		            column-count: {$switch: [
+						{if: =widescreen, then: { if: =options.two_columns, then:2, else:1 }},
+						{if: =scale.large, then: {$divide: [=view.width, {$multiply:[250, =scale.dpi]}]}}
+					
+					]},
+		            column-gutter: 20
+		        },
+				#image_wrapper: {
+					width:88,
+					anchor-x:right,
+					anchor-y:top
+	            },
+				image: {
+					pixels-per-point-x:1,
+					pixels-per-point-y:1,
+					height: 79, 
+					padding: [0, 0, 0, 9],
+					display:{if: =article.type, equals:"A-hed", then: inherit, else:none}
+	            },
+				.byline: {
+					display: {if: =options.show_byline, then:inherit, else:none}
+
+				},
+				#body-first-p: {
+					text-indent: {if: =options.indent, then:20, else:0}
+				},
+				.module_headline:{
+					display:{if: =article.type, equals:"A-hed", then: none, else:inherit}
+				},
+				#ahed_content:{
+					display:{if: =article.type, equals:"A-hed", then: inherit, else:none}
+				}
 			}
 		
-		}, else: {}
-	}</style>
-    
-	<box id="regular">
-		<box id="image_wrapper" class="phone">
-			<image embed="summary-image" class="phone" />
+			]
+		}</style>
+		<style>{
+			if: =scale.phone, then: {
+				jpml: {
+					padding:[0],
+					border-width: [{if: =options.top_border, then:1, else:0}, 0, {if: =options.no_border, then:0, else:1}, 0],
+					border-color: #d6d6d6,
+					anchor-y:middle				
+				},
+				#image_wrapper: { display:none },
+				#headline: {
+					padding: [{if: =options.top_align, then:8, else:0}, 8, 0, 8]
+				},
+				#vertical: {
+					vertical-align: {if: =options.top_align, then: top, else: middle}
+				},
+				.byline: {
+					display:none
+				},
+				#body: {
+					display:none
+				},
+				.ahed_subhed: {
+					display:none
+				}
+
+			}, else:{}
+		}</style>
+		
+        <box id="image_wrapper">
+			<image target-width="79" target-height="79" embed="summary-image"/>
 		</box>
-		<panel id="not_prominent">
-			<p class="module_headline"><span embed="headline" /><mark class="key" /></p>
-	    </panel>
-	    <panel id="body_container">
-	        <panel id="body">
-		       <p class="byline" embed="byline"/>
+		<panel id="vertical">
+			<panel id="headline">
+				<p class="module_headline"><span embed="headline" /><mark class="key" /></p>
+		        <panel id="ahed_content">
+					<p class="ahed_headline"><span embed="headline"/><mark class="key"/></p>
+		        	<h2 class="ahed_subhed" embed="subhed"/>
+				</panel>
+			</panel>
+			<panel id="body">
+	            <p class="byline" embed="byline"/>
 	            <panel class="body" embed="body"/>
 	        </panel>
-	    </panel>
-	</box>
-	
-    <box id="ahed">
-	    <panel id="top_container">
-	        <p class="ahed_headline"><span embed="headline"/><mark class="key"/></p>
-	        <p id="stars"><mark class="ahed_stars" /></p>
-	        <h2 class="ahed_subhed" embed="subhed"/>
-	    </panel>
-	    <panel id="bottom_container">
-	        <box id="image_container"><image target-width="79" target-height="79" embed="summary-image"/></box>
-	        <p class="ahed_byline" embed="byline"/>
-	        <panel class="ahed_body" embed="body" />
-	    </panel>
-	</box>
+		</panel>
+
 </jpml>

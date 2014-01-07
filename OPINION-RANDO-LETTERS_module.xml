@@ -1,80 +1,19 @@
 <jpml id="OPINION-RANDO-LETTERS_module">
 	<style src="GLOBAL_MODULES-stylesheet.ejs" />
-	<style src="GLOBAL-stylesheet.ejs" />
-	<style src="PHONE-MODULES-stylesheet.ejs" />
+	<style src="OPINION-stylesheet.ejs" />
 	<style>{
-		$join: [		
-			{.body: {
-				text-align:justify
-			}},
-			{ $switch: [
-				{ if: =article.type, equals: "Letters", then: {
-					.opinion_headline: { display: none},
-					.opinion_dek: { display: none},
-				    #rando_header: { display: none },
-                    #letters_header: { display: { if: =options.header, then: inherit, else: none } }
-                
-				}},
-				{ if: true, then: {
-					.letters_headline: { display: none},
-				    #letters_header: { display: none },
-                    #rando_header: { display: { if: =options.header, then: inherit, else: none } }
-                }}
-			]}
-	]			
-	
+		.body: {
+			display:none,
+			text-align:justify
+		},
+		#rando_header: {display: {if: =options.rando_header, then:inherit, else:none}}
 		
-	}</style>
-	<style>{
-		if: =scale.phone, then:{
-			jpml: {
-				border-width:[ 0, 0, {if: =options.no_border, then: 0, else:1}, 0],
-				border-color:#d6d6d6,
-				padding: [6, 8, 6, 8]
-			},
-			.articles: {
-				padding:[0],
-				vertical-align:middle
-			},
-			#opinion_line: {
-				display:none
-			},
-			#letters_line: {
-				display:none
-			},
-			#rando_header: {
-				display:none
-			},
-			#letters_header: {
-				display:none
-			},
-			.body: {
-				display:none
-			},
-			.opinion_dek: {
-				display: {if: =options.hide_dek, then:none, else:inherit}
-			}
-			
-		}, else: {
-			.highlight_flashline: {
-				display:none
-			}
-		}
 	}</style>
 	
 		<panel id="rando_header">
 		    <p class="rando_heading"><mark class="rando" /></p>
-			<box id="opinion_line" />
 		</panel>
-		<panel id="letters_header">
-		    <p class="letters_heading"><mark class="letters" /></p>
-			<box id="letters_line" />
-		</panel>
-		<panel class="articles">
-			<p class="highlight_flashline" embed="flashline" />
-	    	<p class="opinion_headline"><span embed="headline" /><mark class="key" /></p>
-		    <p class="letters_headline"><span embed="headline" /><mark class="key" /></p>
-			<h2 class="opinion_dek" embed="subhed" ></h2>
-			<panel class="body" embed="body" />
-		</panel>
+    	<p class="opinion_headline"><span embed="headline" /><mark class="key" /></p>
+		<h2 class="opinion_dek" embed="subhed" ></h2>
+		<panel class="body" embed="body" />
 </jpml>

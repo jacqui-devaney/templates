@@ -46,10 +46,10 @@
 				image: {
 					pixels-per-point-x:1,
 					pixels-per-point-y:1,
-					width: =view.width,
+					width: {$subtract: [=view.width, 6]},
 					height: {$multiply: [=view.width, .66 ]}, 
 	                display: { if: =options.show_image, then:inherit, else:none },
-					padding: [0, 0, 8, 0],
+					padding: [0, 0, 18, 0],
 					options: {
 						$switch: [
 							{if: =options.F_image, then: {match:{width:571, height:226, max-height:226}}},
@@ -58,20 +58,17 @@
 							{ if: =options.G_image, then: {match: { width:553, height:369, min-height:369 } } }
 						]
 					},
-	                image-scale: {if: =options.scale_down_large, then:1.4, else:1.2}
+	                image-scale: 1
 	            },
 				.byline: {
-					display: {$switch:[
-						{if: =page.section, equals:"OPINION", then:inherit},
-						{if: =options.show_byline, then:inherit},
-						none
-					]}
+					display:{if: =options.show_byline, then:inherit, else:none}
+					
 				},
 				#body-first-p: {
 					text-indent: {if: =options.indent, then:20, else:0}
 				},
-				.teaser_sectionname: {
-					display: {if: =article.type, equals:"Letters", then:inherit, else:none},
+				.module_flashline: {
+					display: {if-any: [{if: =article.type, equals:"Letters"}, {if: =options.show_flashline}], then:inherit, else:none},
 					color: #d6a90c
 				}
 			}
@@ -107,11 +104,11 @@
 				vertical-align: {if: =options.top_align, then: top, else: middle}
 			},
 			.byline: {
-				display:{if: =page.section, equals: "OPINION", then:inherit, else:none}
+				display:{if: =options.show_byline, then:inherit, else:none}
 			},
 			#body: {
 				display:{if-any: [=options.show_body, {if: =page.section, equals: "OPINION"}], then:inherit, else:none},
-				padding: [{if: =page.section, equals: "OPINION", then:2, else:0}, 8, 0, 8]
+				padding: [0, 8, 0, 8]
 			}
 			
 		}, else:{}
@@ -121,7 +118,7 @@
 	</box>
 	<panel id="vertical">
 		<panel id="headline">
-			<p class="teaser_sectionname"><span embed="flashline" /></p>
+			<p class="module_flashline"><span embed="flashline" /></p>
 			<p class="module_headline"><span embed="headline" /><mark class="key" /></p>
 		</panel>
 		<panel id="body">

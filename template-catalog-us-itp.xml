@@ -16,61 +16,10 @@
 		<!-- OPINION -->
 		<template 
 			section="OPINION" 
-			name="OPINION-5story-E_template.xml" 
+			name="OPINION-7story-E_template.xml" 
 			title="Default: 7 story (3RandO-2CMTY)"
 			min="7" 
 			usage="front"
-			storyorder="feed"
-		/>
-		<template 
-			section="OPINION" 
-			name="OPINION-4story-E_template.xml" 
-			title="6 story (2RandO-2CMTY)"
-			min="6" 
-			usage="front"
-			storyorder="feed"
-		/>
-		<template 
-			section="OPINION" 
-			name="OPINION-4story-1E_template.xml" 
-			title="6 story (3RandO-1CMTY)"
-			min="6" 
-			usage="front"
-			storyorder="feed"
-		/>
-		<template 
-			name="OPINION-6story-D_template.xml" 
-			section="OPINION" 
-			title="8 story (4 rando-2CMTY-D photo)"
-			min="8" 
-			usage="front"
-			storyorder="feed"
-		/>
-
-		<template 
-			name="OPINION-3story-D_template.xml" 
-			section="OPINION" 
-			title="5 story (2RandO-1CMTY D photo)"
-			min="5" 
-			usage="front"
-			storyorder="feed"
-		/>
-		<template 
-			name="OPINION-2story-D_template.xml" 
-			section="OPINION" 
-			title="4 story (1RandO-1CMTY D photo)"
-			min="4" 
-			usage="front"
-			storyorder="feed"
-		/>
-		<template 
-			name="SECTION-1story-fullsize-deco.xml" 
-			section="OPINION" 
-			title="Full size Deco"
-			min="1" 
-			deco="true"
-			usage="front"
-			storyorder="feed"
 		/>
 		
 		<!-- END OPINION -->
@@ -80,6 +29,15 @@
 			title="6 story - G photo"
 			min="6"
 			usage="front"
+		/>
+		<template 
+			name="SECTION-1story-fullsize-deco.xml" 
+			section="OPINION" 
+			title="Full size Deco"
+			min="1" 
+			deco="true"
+			usage="front"
+			storyorder="feed"
 		/>
 		<!-- END SECTIONS -->
 		

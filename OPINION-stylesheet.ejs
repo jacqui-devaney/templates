@@ -1,55 +1,43 @@
 {
-	$join: [
-	{#border: {
-		border-width:[0, 1, 0, 0], 
-		border-color:#b1aca1, 
-		width:1,
-		height:692,
-		left:513,
-		top:8,
-		display:{if: =scale.phone, then:none, else:inherit}
-	}},
-	{#border2: {
-		border-width:[0, 1, 0, 0], 
-		border-color:#b1aca1, 
-		width:1,
-		height:692,
-		left:385,
-		top:8,
-		display:{if: =scale.phone, then:none, else:inherit}
-	}},
-	{#background_color: {
-		background-color:#efefef, 
-		width:768,
-		height:256,
-		left:0,
-		top:706,
-		display: {if-any: [=landscape, =scale.phone], then:none, else:inherit}
-	}},
-	{#h1: {
-		top: {if: =landscape, then:0, else:706},
-		height: {if: =landscape, then:235, else:263},
-		width:251
-	}},
-	{#h2: {
-		top: {if: =landscape, then:235, else:706},
-		height: {if: =landscape, then:235, else:263},
-		width:251
-	}},
-	{#strap: {
-		display: {if: =scale.phone, then:inherit, else:none},
-		padding: [4, 4, 0, 8],
-		background-color:#e4e4e4
-    }},
-
-	{.subsection: {
-		display: {if: =scale.phone, then:inherit, else:none},
-		font-size:15,
-		font-name:DJ5RetinaCd-Medium,
-		text-scale: {$multiply: [=scale.text, 1] },
-		line-height:16,
+	.rando_subhed: {
+		font-name:DJ5Exchange-SemiboldItalic,
+		font-size:14,
+		line-height:17,
+		color:#666,
+		text-align:center,
+		padding: [0, 25, 5, 25]
+	},
+	.rando_heading: {
+		font-name:DJ5EscrowOutline-Roman,
+		font-size:20,
+		color:#333,
+		text-align:center,
 		text-transform:uppercase
-	}}
-	
-	]
+	},
+	.rando: {
+		content: "Review\u00a0\u0026\u00a0Outlook"
+	},
+	.opinion_headline: {
+		font-name:DJ5EscrowCond-Bold,
+		font-size:36,
+		line-height:34,
+		text-align:center,
+		text-scale:{if: =scale.small, then: {$multiply: [=scale.text, 0.9] }, else: inherit}
+
+	},
+	.opinion_dek:{
+		font-name:DJ5EscrowCond-BoldItalic,
+		font-size:28,
+		line-height:34,
+		text-align:center,
+		color:#989898,
+		text-scale:{if: =scale.small, then: {$multiply: [=scale.text, 0.9] }, else: inherit}
+
+	},
+	#rando_header: { 
+		padding:[ 0, 0, 30, 0 ]
+	},
+	.teaser_sectionname: {
+		color: #d6a90c
+	}
 }

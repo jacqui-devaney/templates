@@ -20,14 +20,31 @@
 				display:{if: =options.show_caption, then:inherit, else:none}
 			}
 	}</style>
-			<box id="container">
-				<image embed="summary-image" />
-				<box id="text_container">
-					<p class="module_headline"><span embed="headline" /><mark class="key" /></p>
-					<panel class="body">
-						<p embed="body-first-p" />
-					</panel>
-				</box>
-			</box>
+	<style>{
+		if: =scale.phone, then: {
+			jpml: {
+				padding:[0],
+				border-width: [{if: =options.top_border, then:1, else:0}, 0, {if: =options.no_border, then:0, else:1}, 0],
+				border-color: #d6d6d6,
+				anchor-y:middle				
+			},
+			#text_container: {
+				top:0,
+				background-color:transparent,
+				padding:[8, 8, 8, 8]
+				
+			}
+			
+		}, else: {}
+	}</style>
+	<box id="container">
+		<image embed="summary-image" />
+		<box id="text_container">
+			<p class="module_headline"><span embed="headline" /><mark class="key" /></p>
+			<panel class="body">
+				<p embed="body-first-p" />
+			</panel>
+		</box>
+	</box>
 			
 </jpml>

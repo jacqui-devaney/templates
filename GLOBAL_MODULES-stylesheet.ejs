@@ -19,7 +19,7 @@
 			{
 				$switch:[
 					{if: =options.small_headline, then:{
-						padding:[0, 0, 10, 0],
+						padding:[0, 0, {if: =options.show_byline, then:6, else:14}, 0],
 						font-size:26,
 						line-height:{ $switch: [
 								{if: =issue.edition, equals: "japan", then: 28},
@@ -30,7 +30,7 @@
 						}
 					},
 					{if: =options.extra_small_headline, then:{
-						padding:[0, 0, 0, 0],
+						padding:[0, 0, {if: =options.show_byline, then:6, else:14}, 0],
 						font-size:24,
 						line-height:{ $switch: [
 								{if: =issue.edition, equals: "japan", then: 28},
@@ -46,11 +46,7 @@
 						        {if: =extents.medium, more-than: 1.0, then: true, else: false}, 
 						        {if: =extents.medium, less-than: 1.5, then: true, else: false}
 						    ], then: 24, else: 30 },
-							padding:{if-all: [
-						        =scale.headlines,
-						        {if: =extents.large, more-than: 1.0, then: true, else: false}, 
-						        {if: =extents.large, less-than: 1.5, then: true, else: false}
-						    ], then: [0, 0, 15, 0], else: [0, 0, {if: =options.show_byline, then:0, else:17}, 0] },
+							padding:[0, 0, {if: =options.show_byline, then:6, else:14}, 0],
 							line-height:{ $switch: [
 									{if: =issue.edition, equals: "japan", then: {if-all: [
 									    =scale.headlines,
@@ -80,11 +76,7 @@
 						        {if: =extents.large, more-than: 1.0, then: true, else: false}, 
 						        {if: =extents.large, less-than: 1.5, then: true, else: false}
 						    ], then: 32, else: 45 },
-							padding:{if-all: [
-						        =scale.headlines,
-						        {if: =extents.large, more-than: 1.0, then: true, else: false}, 
-						        {if: =extents.large, less-than: 1.5, then: true, else: false}
-						    ], then: [0, 0, 8, 0], else: [0, 0, 8, 0] },
+							padding:[0, 0, {if: =options.show_byline, then:6, else:14}, 0],
 							line-height: {if-all: [
 							    =scale.headlines,
 							    {if: =extents.large, more-than: 1.0, then: true, else: false}, 
@@ -98,11 +90,7 @@
 						        {if: =extents.large, more-than: 1.0, then: true, else: false}, 
 						        {if: =extents.large, less-than: 1.5, then: true, else: false}
 						    ], then: 32, else: 56 },
-							padding:{if-all: [
-						        =scale.headlines,
-						        {if: =extents.large, more-than: 1.0, then: true, else: false}, 
-						        {if: =extents.large, less-than: 1.5, then: true, else: false}
-						    ], then: [0, 0, 8, 0], else: [0, 0, 8, 0] },
+							padding:[0, 0, {if: =options.show_byline, then:6, else:14}, 0],
 							line-height: {if-all: [
 							    =scale.headlines,
 							    {if: =extents.large, more-than: 1.0, then: true, else: false}, 
@@ -111,7 +99,7 @@
 						}
 					},
 					{if: true, then: {
-							padding:[0, 0, 10, 0],
+							padding:[0, 0, {if: =options.show_byline, then:6, else:14}, 0],
 							font-size:26,
 							line-height:{ $switch: [
 									{if: =issue.edition, equals: "japan", then: 28},
@@ -136,7 +124,7 @@
 		},
 		text-indent:0,
 		font-size:{$multiply:{if: =options.large_body, then:20, else:16}},
-		line-height:{$multiply:{if: =options.large_body, then:26, else:22}},
+		line-height:{$multiply:{if: =options.large_body, then:26, else:20}},
 		text-overflow: " \u00bb",
         text-align: { if: =options.justify, then:=justify, else:left},
 		text-scale: {if: =widescreen, then: {$multiply: [=scale.text, 1.2] }, else: inherit},
@@ -159,6 +147,14 @@
 		padding:[0, 10, 0, 10],
 		font-size:{if: =options.large_headline, then:45, else:22},
 		line-height:{if: =options.large_headline, then:45, else:22}
+	},
+	.module_flashline: {
+		font-name:{if: =article.type, equals:"Letters", then:DJ5EscrowCond-Bold, else: DJ5RetinaCd-Semibold},
+		font-size:14,
+		line-height:20,
+		color:{if: =article.type, equals:"Letters", then:#b08900, else: #656565},
+		text-transform:{if: =article.type, equals:"Letters", then:uppercase, else: none},
+		paragraph-padding: [ 0, 0, 20, 0 ]
 	},
 	.highlight_flashline: {
 		font-name:DJ5RetinaCd-Semibold,
@@ -214,9 +210,8 @@
 	},
 	.byline: {
 		font-name:DJ5Exchange-Semibold,
-		font-size:16,
-		line-height:22,
-		text-scale: {if: =widescreen, then: {$multiply: [=scale.text, 1.1] }, else: inherit}
+		font-size:14,
+		line-height:17
 
 	},
 	.hidden_tablet: {

@@ -58,7 +58,4 @@
     <box id="b2" embed="article" class="maude unit_continuation_strap column2 positionx3" module="CONTINUATION-dynamic_module.xml" />
     <box id="b3" embed="article" class="maude unit_continuation_strap column2 positionx5" module="CONTINUATION-dynamic_module.xml" />
     <box id="b4" embed="article" class="maude unit_continuation_strap column2 positionx7-5" module="CONTINUATION-dynamic_module.xml" />
-    <box id="ad_background" class="maude unit_ad hidden_tablet">
-        <box id="highlight_ad" class="ad-rectangle" embed="advertisement" />
-    </box>
 </jpml>

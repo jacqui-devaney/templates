@@ -1,0 +1,119 @@
+<jpml id="SECTION-6story_template">
+	<style src="GLOBAL_MODULES-stylesheet.ejs"/>
+    <style src="GRID-stylesheet.ejs"/>
+    <style src="PHONE-stylesheet.ejs"/>
+    <style>{
+	
+		#b1: {
+			options:{$switch:[
+				{if: =portrait, then: {large_headline:true, white_text:true}},
+				{if: =landscape, then: {large_headline:true, show_image:true, scale_down_large:true, white_text:true}}
+			]	
+		}},
+		#b2: {
+			options:{$switch:[
+				{if: =portrait, then: {small_headline:true}},
+				{if: =landscape, then: {small_headline:true, one_column:true}}
+			]	
+		}},
+		#b3: {
+			options:{$switch:[
+				{if: =scale.phone, then: {}},
+				{if: =portrait, then: {small_headline:true, hide_image:true, show_body:true}},
+				{if: =landscape, then: {small_headline:true, show_body:true}}
+			]	
+		}},
+		#b4: {
+			options:{$switch:[
+				{if: =portrait, then: {small_headline:true, hide_image:true, show_body:true}},
+				{if: =landscape, then: {small_headline:true, show_body:true}}
+			]	
+		}},
+		#b5: {
+			options:{$switch:[
+				{if: =portrait, then: {small_headline:true, hide_image:true, show_body:true}},
+				{if: =landscape, then: {small_headline:true, show_body:true}}
+			]	
+		}},
+		#b6: {
+			options:{$switch:[
+				{if: =portrait, then: {small_headline:true}},
+				{if: =landscape, then: {small_headline:true}}
+			]	
+		}}
+		
+	}</style>
+	<style> {
+		$switch: [
+			{if: =scale.phone, then: {
+			
+			}},
+			{if: =portrait, then: {
+				#b1:	{ 
+						top:0,
+						height:506
+				},
+				#b2:	{ 
+					top:531,
+					height:200
+				},
+				#b3:	{ 
+						top:531,
+						height:200
+				},
+				#b4:	{ 
+					top:756,
+					height:170
+					
+				},
+				#b5:	{ 
+					top:756,
+					height:170
+					
+				},
+				#b6:	{ 
+					top:756,
+					height:170
+					
+				}
+				
+			
+			}}, 
+			{if: =landscape, then: {
+				#b1:	{ 
+					top:0,
+					height:420
+				},
+				#b2:	{ 
+					top:460,
+					height:215
+				},
+				#b3:	{ 
+					top:0,
+					height:130
+				},
+				#b4:	{ 
+					top:148,
+					height:130
+				},
+				#b5:	{ 
+					top:298,
+					height:130
+				},
+				#b6:	{ 
+					top:460,
+					height:215
+				}
+
+			}}
+		]
+	} </style>
+	<box id="b1" embed="article" class="column5-6 positionx1" module="IMAGE-OVERLAY_module.xml" />
+	<box id="b2" embed="article" class="column5-4 positionx1" module="TOP-IMAGE_module.xml" />
+	<box id="b3" embed="article" class="column3-2 positionx6-5" module="RIGHT-IMAGE_module.xml" />
+	<box id="b4" embed="article" class="column3-2 positionx6-1" module="RIGHT-IMAGE_module.xml" />
+	<box id="b5" embed="article" class="column3-2 positionx6-3" module="RIGHT-IMAGE_module.xml" />
+	<box id="b6" embed="article" class="column3-2 positionx6-5" module="TOP-IMAGE_module.xml" />
+	
+</jpml>
+

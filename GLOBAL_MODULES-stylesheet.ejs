@@ -12,8 +12,9 @@
 						DJ5EscrowCond-Bold
 					]
 				},
-				text-scale: {if: =scale.small, then: {$multiply: [=scale.text, 0.9] }, else: inherit}
-				
+				text-scale: {if: =scale.small, then: {$multiply: [=scale.text, 0.9] }, else: inherit},
+				color:{if: =options.white_text, then:#fff, else:#333}
+			
 			},
 			{
 				$switch:[
@@ -139,23 +140,10 @@
 		text-overflow: " \u00bb",
         text-align: { if: =options.justify, then:=justify, else:left},
 		text-scale: {if: =widescreen, then: {$multiply: [=scale.text, 1.2] }, else: inherit},
-		hyphens:auto
+		hyphens:auto,
+		color:{if: =options.white_text, then:#fff, else:#333}
+		
 
-	},
-	.escrow_caps_grey: {
-		font-name:DJ5Escrow-BoldItalic,
-		color:#7f7f7f,
-		font-size:17,
-		line-height:17,
-		text-transform:uppercase
-	},
-	.teaser_sectionname: {
-		font-name:DJ5Escrow-Semibold,
-		color:#d0822e,
-		font-size:11,
-		line-height:9,
-		text-transform:uppercase,
-		padding: [0, 0, 4, 0]
 	},
 	.deco_caption: {
 		font-name: DJ5RetinaCd-Semibold,

@@ -4,23 +4,25 @@
 			#image_wrapper: {
 				anchor-x:right,
 				width: {$switch:[
-					{if: =options.A_image, then:100},
+					{if: =options.A_image, then:110},
 					{if: =options.small_A_image, then:90},
 					110
-				]}
+				]},
+				anchor-y:bottom,
+				display:{if: =options.hide_image, then:none, else:inherit}
 				
 			},
 			image: {
 				pixels-per-point-x:1,
 				pixels-per-point-y:1,
 				height: {$switch:[
-					{if: =options.A_image, then:90},
+					{if: =options.A_image, then:100},
 					{if: =options.small_A_image, then:80},
 					100
 				]},		
-				padding: [0, 0, 0, 10],
+				padding: [0, 0, 15, 10],
 				width: {$switch:[
-					{if: =options.A_image, then:90},
+					{if: =options.A_image, then:100},
 					{if: =options.small_A_image, then:80},
 					100
 				]},
@@ -37,6 +39,9 @@
 			},
 			#body-first-p: {
 				text-indent: {if: =options.indent, then:20, else:0}
+			},
+			jpml: {
+				padding:[0, 3]
 			}
 			
 		

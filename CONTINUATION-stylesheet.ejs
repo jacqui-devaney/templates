@@ -47,15 +47,6 @@
     #b12: {
 		options: {hide_strap: {if:=articles.b12.show_subsection, then: false, else: true}, bind: {if:=scale.phone,then:none}, reuse:{if:=scale.phone,then:continuation}},
 		height: {if-all:[{if: =scale.phone},{if:=articles.b12.subsection, equals:=articles.b11.subsection}], then:inherit, else:50} 
-		},
-	#border: {
-		border-width:[0, 1, 0, 0], 
-		border-color:#b1aca1, 
-		width:1,
-		height:{if: =portrait, then:545, else:692},
-		left:513,
-		top:8,
-		display:{if: =scale.phone, then:none, else:inherit}
-	}
+		}
 
 }

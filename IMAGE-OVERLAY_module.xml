@@ -1,0 +1,33 @@
+<jpml id="IMAGE-OVERLA_module">
+	<style src="GLOBAL_MODULES-stylesheet.ejs" />
+	<style src="GLOBAL-stylesheet.ejs" />
+	<style src="PHONE-MODULES-stylesheet.ejs" />
+	<style>{
+			image:{
+				width:=view.width,
+				height: {$subtract:[=view.height, 1]},
+				image-scale: {if: =options.full_screen, then:.9, else:1}
+				
+			},
+			#text_container: {
+				bottom:0,
+				background-color:"rgba(0, 0, 0, .5)",
+				padding:[20, 10],
+				height:120
+				
+			},
+			.deco_caption: {
+				display:{if: =options.show_caption, then:inherit, else:none}
+			}
+	}</style>
+			<box id="container">
+				<image embed="summary-image" />
+				<box id="text_container">
+					<p class="module_headline"><span embed="headline" /><mark class="key" /></p>
+					<panel class="body">
+						<p embed="body-first-p" />
+					</panel>
+				</box>
+			</box>
+			
+</jpml>

@@ -27,7 +27,7 @@
 		}},
 		#b4: {
 			options:{$switch:[
-				{if: =portrait, then: {small_headline:true}},
+				{if: =portrait, then: {small_headline:true, right_border:true}},
 				{if: =landscape, then: {small_headline:true, right_border:true}}
 			]	
 		}},
@@ -54,28 +54,28 @@
 			{if: =portrait, then: {
 				#b1:	{ 
 						top:0,
-						height:205
+						height:285
 				},
 				#deco:	{ 
-					top:232,
-					height:249
+					top:295,
+					height:400
 				},
 				#b2:	{ 
 						top:0,
-						height:205
+						height:130
 				},
 				#b3:	{ 
-					top:508,
-					height:148
+					top:153,
+					height:130
 					
 				},
 				#b4: {
-					top:683,
-					height:148
+					top:715,
+					height:130
 				},
 				#b5: {
-					top:508,
-					height:318
+					top:715,
+					height:130
 				}
 			
 			}}, 
@@ -112,9 +112,9 @@
 	<box id="b1" embed="article" class="column2-3 positionx2 maude unit_166" module="TOP-IMAGE_module.xml" />
 	<box id="deco" embed="article" class="column5 positionx4-2 maude unit_G_deco" module="DECO_module.xml" options="G_size" />
 	<box id="b2" embed="article" class="column2 positionx2-5 maude unit_50" module="TOP-IMAGE_module.xml" />
-	<box id="b3" embed="article" class="column2-3 positionx2 maude unit_50" module="TOP-IMAGE_module.xml" />
-	<box id="b4" embed="article" class="column2-3 positionx4-2 maude unit_50" module="TOP-IMAGE_module.xml" />
-	<box id="b5" embed="article" class="column3-2 positionx6-5 maude unit_50" module="AHED_module.xml" />
+	<box id="b3" embed="article" class="column2 positionx2-5 maude unit_50" module="TOP-IMAGE_module.xml" />
+	<box id="b4" embed="article" class="column2 positionx4-2 maude unit_50" module="TOP-IMAGE_module.xml" />
+	<box id="b5" embed="article" class="column3 positionx6-4 maude unit_50" module="AHED_module.xml" />
 	<box id="front_page" class="positionx_full column_full maude unit_ad">
 		<box id="banner_ad" class="ad-banner front_ad" embed="advertisement" />
 	</box>

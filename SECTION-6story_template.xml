@@ -19,25 +19,28 @@
 		}},
 		#b3: {
 			options:{$switch:[
-				{if: =scale.phone, then: {}},
+				{if: =scale.phone, then: {small_headline:true}},
 				{if: =portrait, then: {small_headline:true, hide_image:true, show_body:true}},
 				{if: =landscape, then: {small_headline:true, show_body:true}}
 			]	
 		}},
 		#b4: {
 			options:{$switch:[
+				{if: =scale.phone, then: {small_headline:true}},
 				{if: =portrait, then: {small_headline:true, hide_image:true, show_body:true}},
 				{if: =landscape, then: {small_headline:true, show_body:true}}
 			]	
 		}},
 		#b5: {
 			options:{$switch:[
+				{if: =scale.phone, then: {small_headline:true}},
 				{if: =portrait, then: {small_headline:true, hide_image:true, show_body:true}},
 				{if: =landscape, then: {small_headline:true, show_body:true}}
 			]	
 		}},
 		#b6: {
 			options:{$switch:[
+				{if: =scale.phone, then: {small_headline:true}},
 				{if: =portrait, then: {small_headline:true}},
 				{if: =landscape, then: {small_headline:true}}
 			]	

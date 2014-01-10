@@ -1,5 +1,6 @@
 <jpml id="RIGHT-IMAGE_module">
 	<style src="GLOBAL_MODULES-stylesheet.ejs" />
+	<style src="PHONE-MODULES-stylesheet.ejs" />
 	<style>{
 			#image_wrapper: {
 				anchor-x:right,
@@ -46,13 +47,31 @@
 			
 		
 		}</style>
-		<box id="image_wrapper">
+		<style>{
+			if: =scale.phone, then:{
+				jpml:{
+					padding:[0, 8],
+					border-width: [{if: =options.top_border, then:1, else:0}, 0, {if: =options.no_border, then:0, else:1}, 0],
+					border-color: #d6d6d6
+				},
+				#image_wrapper: {
+					display:none
+				},
+				#body: {
+					display:none
+				},
+				#headline: {
+					vertical-align:middle				
+				}
+			}, else:{}
+		}</style>
+		<box id="image_wrapper" class="hidden_phone">
 			<image embed="summary-image" />
 		</box>
 		<panel id="headline">
 			<p class="module_headline"><span embed="headline" /><mark class="key" /></p>
 		</panel>
-		<panel id="body">
+		<panel id="body" class="hidden_phone">
             <p class="byline" embed="byline"/>
             <panel class="body" embed="body"/>
         </panel>

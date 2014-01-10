@@ -1,18 +1,23 @@
 <jpml id="OPINION-7story-E_template">
 	<style src="GRID-stylesheet.ejs"/>
+	<style src="PHONE-stylesheet.ejs"/>
 	<style>{
 		#b1: {
 			options:{rando_header:true}
 		},
 		
-		#b4: {options: {medium_headline:true, show_image:true, show_byline:true, one_column:true}},		
-		#b5: {options: {medium_headline:true, show_byline:true}},			
+		#b4: {options: {medium_headline:true, show_image:true, show_byline:true, one_column:true, small_headline:{if: =scale.phone, then:true}}},		
+		#b5: {options: {medium_headline:true, show_byline:true, small_headline:{if: =scale.phone, then:true}}},			
 		#b6: {options: {small_headline:true}},			
 		#b7: {options: {small_headline:true}}			
 	
 	}</style>
     <style>{ 
-			if: =portrait, then: {
+		$switch:[
+			{if: =scale.phone, then: {
+			
+			}},
+			{if: =portrait, then: {
 				#b1: {
 					top:45,
 					height:225
@@ -41,7 +46,8 @@
 					top:702,
 					height:230
 				}
-			}, else: {
+			}}, 
+			{if: =landscape, then: {
 				#b1: {
 					top:0,
 					height:157
@@ -71,19 +77,17 @@
 					height:190
 				}
 				
-			}
+			}}
+		]
     }</style>
     
-    <box id="border" />
-    <box id="border2" />
-	<!-- WE NEED TEMPLATE OPTIONS BECAUSE THIS IS JANKY -->
-    <box id="b1" embed="article" class="column4-3 positionx1" module="OPINION-RANDO-LETTERS_module.xml" />
-    <box id="b2" embed="article" class="column4-3 positionx1" module="OPINION-RANDO-LETTERS_module.xml" />
-    <box id="b3" embed="article" class="column4-3 positionx1" module="OPINION-RANDO-LETTERS_module.xml" />
-	<box id="b4" embed="article" class="column4-3 positionx5-4" module="TOP-IMAGE_module.xml" />
-	<box id="b5" embed="article" class="column4-3 positionx5-4" module="TOP-IMAGE_module.xml" />
-	<box id="b6" embed="article" class="column2-3 positionx1" module="TOP-IMAGE_module.xml" />
-	<box id="b7" embed="article" class="column2-3 positionx3-4" module="TOP-IMAGE_module.xml" />
+    <box id="b1" embed="article" class="column4-3 positionx1 maude unit_100" module="OPINION-RANDO-LETTERS_module.xml" />
+    <box id="b2" embed="article" class="column4-3 positionx1 maude unit_100" module="OPINION-RANDO-LETTERS_module.xml" />
+    <box id="b3" embed="article" class="column4-3 positionx1 maude unit_100" module="OPINION-RANDO-LETTERS_module.xml" />
+	<box id="b4" embed="article" class="column4-3 positionx5-4 maude unit_50" module="TOP-IMAGE_module.xml" />
+	<box id="b5" embed="article" class="column4-3 positionx5-4 maude unit_50" module="TOP-IMAGE_module.xml" />
+	<box id="b6" embed="article" class="column2-3 positionx1 maude unit_50" module="TOP-IMAGE_module.xml" />
+	<box id="b7" embed="article" class="column2-3 positionx3-4 maude unit_50" module="TOP-IMAGE_module.xml" />
 
     
 

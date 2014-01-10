@@ -28,16 +28,38 @@
 				border-color: #d6d6d6,
 				anchor-y:middle				
 			},
-			#text_container: {
-				top:0,
-				background-color:transparent,
-				padding:[8, 8, 8, 8]
-				
+			#image_wrapper: { 
+				anchor-x:right,
+				position:relative,
+				width: 76,
+				padding:[8, 8, 0, 10],
+				display:{if: =options.show_image, then:inherit, else:none}
+
+			},
+			#headline: {
+				padding: [{if: =options.top_align, then:8, else:0}, 8, 0, 8]
+			},
+			image: { 
+				height: 76,
+				width:76,
+				display:inherit,
+				padding: [0]
+			
+			},
+			#vertical: {
+				vertical-align: {if: =options.top_align, then: top, else: middle}
+			},
+			.byline: {
+				display:{if: =options.show_byline, then:inherit, else:none}
+			},
+			#body: {
+				display:{if-any: [=options.show_body, {if: =page.section, equals: "OPINION"}], then:inherit, else:none},
+				padding: [0, 8, 0, 8]
 			}
 			
 		}, else: {}
 	}</style>
-	<box id="container">
+	<box id="container" class="hidden_phone">
 		<image embed="summary-image" />
 		<box id="text_container">
 			<p class="module_headline"><span embed="headline" /><mark class="key" /></p>
@@ -45,6 +67,20 @@
 				<p embed="body-first-p" />
 			</panel>
 		</box>
+	</box>
+	<box id="container" class="hidden_tablet">
+		<box id="image_wrapper">
+			<image id="deco-image" embed="summary-image" />
+		</box>
+		<panel id="vertical">
+			<panel id="headline">
+				<p class="module_headline"><span embed="headline" /><mark class="key" /></p>
+			</panel>
+			<panel id="body">
+				<panel class="body" embed="body"/>
+			</panel>
+		</panel>
+		
 	</box>
 			
 </jpml>

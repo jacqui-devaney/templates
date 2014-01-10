@@ -8,14 +8,14 @@
 				{ if: =article.type, equals:"A-hed", then: {
 					jpml: {
 						border-width: [0, 0, 0, 0],
-						padding: [0]
+						padding: [0, 3]
 					}
 			
 				}},
 				{ if: =options.top_border, then: {
 					jpml: {
 						border-width: [1, 0, 0, 0],
-						padding: [10, 10, 0, 0],
+						padding: [10, 10, 0, 3],
 						border-color: #cfcfcf
 					}
 			
@@ -24,7 +24,7 @@
 					jpml: {
 						border-width: [0, 0, 0, 1],
 						border-color: #cfcfcf,
-						padding: [0, 0, 0, 10]
+						padding: [0, 3, 0, 10]
 					}
 			
 				}},
@@ -32,14 +32,14 @@
 					jpml: {
 						border-width: [0, 1, 0, 0],
 						border-color: #cfcfcf,
-						padding: [0, 10, 0, 0]
+						padding: [0, 10, 0, 3]
 					}
 			
 				}},
 				{ if: true, then: {
 					jpml: {
 						border-width: [0, 0, 0, 0],
-						padding: [0, 10, 0, 0]
+						padding: [0, 10, 0, 3]
 					}
 				}}
 			]},
@@ -89,27 +89,17 @@
 					border-color: #d6d6d6,
 					anchor-y:middle				
 				},
-				#image_wrapper: { display:none },
 				#headline: {
 					padding: [{if: =options.top_align, then:8, else:0}, 8, 0, 8]
 				},
 				#vertical: {
 					vertical-align: {if: =options.top_align, then: top, else: middle}
-				},
-				.byline: {
-					display:none
-				},
-				#body: {
-					display:none
-				},
-				.ahed_subhed: {
-					display:none
 				}
 
 			}, else:{}
 		}</style>
 		
-        <box id="image_wrapper">
+        <box id="image_wrapper" class="hidden_phone">
 			<image target-width="79" target-height="79" embed="summary-image"/>
 		</box>
 		<panel id="vertical">
@@ -117,12 +107,12 @@
 				<p class="module_headline"><span embed="headline" /><mark class="key" /></p>
 		        <panel id="ahed_content">
 					<p class="ahed_headline"><span embed="headline"/><mark class="key"/></p>
-		        	<h2 class="ahed_subhed" embed="subhed"/>
+		        	<h2 class="ahed_subhed hidden_phone" embed="subhed"/>
 				</panel>
 			</panel>
 			<panel id="body">
-	            <p class="byline" embed="byline"/>
-	            <panel class="body" embed="body"/>
+	            <p class="byline hidden_phone" embed="byline"/>
+	            <panel class="body hidden_phone" embed="body"/>
 	        </panel>
 		</panel>
 

@@ -1,6 +1,7 @@
 <jpml id="OPINION-RANDO-LETTERS_module">
 	<style src="GLOBAL_MODULES-stylesheet.ejs" />
 	<style src="OPINION-stylesheet.ejs" />
+	<style src="PHONE-MODULES-stylesheet.ejs" />
 	<style>{
 		.body: {
 			display:none,
@@ -9,11 +10,28 @@
 		#rando_header: {display: {if: =options.rando_header, then:inherit, else:none}}
 		
 	}</style>
-	
-		<panel id="rando_header">
-		    <p class="rando_heading"><mark class="rando" /></p>
-		</panel>
-    	<p class="opinion_headline"><span embed="headline" /><mark class="key" /></p>
+	<style>{
+		if: =scale.phone, then: {
+			jpml: {
+				border-width:[ 0, 0, {if: =options.no_border, then: 0, else:1}, 0],
+				border-color:#d6d6d6,
+				padding: [6, 8, 6, 8]
+			},
+			#rando_header: {
+				display:none
+			},
+			#vertical: {
+				vertical-align:middle
+			}
+			
+		}, else:{}
+	}</style>
+	<panel id="rando_header">
+	    <p class="rando_heading"><mark class="rando" /></p>
+	</panel>
+	<panel id="vertical">
+	   	<p class="highlight_flashline hidden_tablet" embed="flashline" />
+		<p class="opinion_headline"><span embed="headline" /><mark class="key" /></p>
 		<h2 class="opinion_dek" embed="subhed" ></h2>
-		<panel class="body" embed="body" />
+	</panel>
 </jpml>

@@ -1,4 +1,5 @@
 <jpml id="ARTICLE-continuation-no-ads_module">
+	<style src="GRID-stylesheet.ejs" />
 	<style src="ARTICLE-stylesheet.ejs" />
 	<style>{
 		$join: [
@@ -6,41 +7,47 @@
 			min-height:200
 		}},
 		{.article_body: { 
-            column-count: {$divide: [=view.width, {$multiply:[250, =scale.dpi]}]},
+            column-count: 4,
             column-gutter: 10,
 			column-height:{ if: =page.count, equals: {$add:[=page.number, 1]}, then:inherit, else:balance},
 			min-height:210,
 			layout-grid-line: {$multiply: [24, =view.zoomlevel]}
         }},
 
-
 		{#body_continuation: {
 			content: from-flow(article_body),
 			flow: article_body
 		}},
 
+		{#mediabucket: {
+			width:246,
+			height:392
+		}},
 		{if: =portrait, then: {
-            #mediabucket_container:	{ frame: [0, 0, 502, 379]},
-			#mediabucket: {
-				width:500,
-				height:363,
-				anchor-x:center
-			}
+            #mediabucket_container:	{ 
+				width:246,
+				height:371,
+				anchor-x:right
+				
+ 			}
         }, else: {
-        	#mediabucket_container:	{ frame: [256, 0, 502, 379] },
-			#mediabucket: {
-				width:500,
-				height:363,
-				anchor-x:center
+        	#mediabucket_container:	{ 
+				top:0,
+				height:402,
+				left:256
 			}
-        }}		
+        }}
 		]
     }</style>
 	
 	<panel id="body_container">
-        <box id="mediabucket_container">
+        <box id="mediabucket_container" class="column2">
 			<box id="mediabucket" embed="mediabucket" />
 		</box>
 		<panel class="article_body" id="body_continuation" embed="body"/>
     </panel>
+	<box id="article_advertisement" class="positionx7 column2">
+		<box id="skyscraper_ad" class="ad-skyscraper article_ad" embed="advertisement" />
+	</box>
+
 </jpml>

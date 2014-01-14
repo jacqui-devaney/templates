@@ -1,4 +1,4 @@
-<jpml id="ARTICLE-continuation-ads_template">
+<jpml id="ARTICLE-continuation-ads-DV_template">
 	<style src="GRID-stylesheet.ejs"/>
 	<style src="ADVERTISING-stylesheet.ejs"/>
     <style>{
@@ -6,10 +6,10 @@
             #view: { frame: [5, 0, 502, 899] }
         }, else: {
             #view : {
-			top:82,
-			height:686
-			}    
+				top:74,
+				height:694
+			}  
         }
     }</style>
-    <box id="view" embed="article" class="positionx1 column8" module="ARTICLE-continuation-ads_module.xml" />
+    <box id="view" embed="article" class="positionx1 column8" module="ARTICLE-continuation-ads-DV_module.xml" />
 </jpml>

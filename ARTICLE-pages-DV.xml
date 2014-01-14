@@ -1,41 +1,28 @@
 <pages preprocessor="preprocessor.ejs" class="article">
-
-    <!-- This template will always be used to render the front page -->
-	<page template="ARTICLE-front-DV_template.xml" type="prefix" for="tablet">
-		<link id="view" module="ARTICLE-front-DV_module.xml"/>
-	</page>
-	
-	
+ 
+                <page template="ARTICLE-front_template.xml" type="prefix" for="tablet">
+                                <link id="view" module="ARTICLE-front_module.xml"/>
+                </page>
+               
     <!-- These pages will repeat as needed, hence the "repeat" type -->
-                <page template="ARTICLE-continuation-ads_template.xml" type="repeat" for="tablet">
-                                <link id="view" module="ARTICLE-continuation-ads_module.xml"/>
-                </page>   
-                <page template="ARTICLE-continuation-no-ads_template.xml" type="repeat" for="tablet">
-                                <link id="view" module="ARTICLE-continuation-no-ads_module.xml"/>
-                </page>   
+    <!-- <page template="ARTICLE-continuation-no-ads_template.xml" type="repeat" for="tablet">
+                    <link id="view" module="ARTICLE-continuation-no-ads_module.xml"/>
+    </page>   -->
+    <page template="ARTICLE-continuation-ads_template.xml" type="repeat" for="tablet">
+                    <link id="view" module="ARTICLE-continuation-ads_module.xml"/>
+    </page>   
+    <page template="ARTICLE-continuation-no-ads_template.xml" type="repeat" for="tablet">
+                    <link id="view" module="ARTICLE-continuation-no-ads_module.xml"/>
+    </page>   
                
     <!-- The last page of every article uses column leveling with a background matte,
      which is not supported in conjunction with the ads template. The "suffix" type
      is used to render that last page. -->
-                <page template="ARTICLE-continuation-no-ads_template.xml" type="suffix" for="tablet">
-                                <link id="view" module="ARTICLE-continuation-no-ads_module.xml"/>
+                <page template="ARTICLE-continuation-no-ads-DV_template.xml" type="suffix" for="tablet">
+                                <link id="view" module="ARTICLE-continuation-no-ads-DV_module.xml"/>
                 </page>   
                
 			    <page template="GENERIC-fullpagead-template.xml" type="interstitial" for="tablet"/>
 			               <!-- phone -->
-			    <page template="ARTICLE-front-phone_template.xml" type="prefix" for="phone">
-			                    <link id="view" module="ARTICLE-front-phone_module.xml"/>
-			    </page>
-			    <page template="ARTICLE-continuation-phone-ads_template.xml" type="repeat" for="phone">
-			                    <link id="view" module="ARTICLE-continuation-phone-ads_module.xml"/>
-			    </page>   
-			    <page template="ARTICLE-continuation-phone-ads_template.xml" type="repeat" for="phone">
-			                    <link id="view" module="ARTICLE-continuation-phone-ads_module.xml"/>
-			    </page>   
-			    <page template="ARTICLE-continuation-phone-ads_template.xml" type="suffix" for="phone">
-			                    <link id="view" module="ARTICLE-continuation-phone-ads_module.xml"/>
-			    </page>   
-			    <page template="GENERIC-fullpagead-template.xml" type="interstitial" for="phone"/>
-	
-	
+
 </pages>

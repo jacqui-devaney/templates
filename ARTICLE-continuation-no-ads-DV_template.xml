@@ -1,4 +1,4 @@
-<jpml id="ARTICLE-continuation-no-ads_template">
+<jpml id="ARTICLE-continuation-no-ads-DV_template">
 	<style src="GRID-stylesheet.ejs"/>
     <style>{
         if: =portrait, then: {
@@ -10,5 +10,5 @@
 			}       
         }
     }</style>
-    <box id="view" embed="article" class="column8 positionx1" module="ARTICLE-continuation-no-ads_module.xml" />
+    <box id="view" embed="article" class="column8 positionx1" module="ARTICLE-continuation-no-ads-DV_module.xml" />
 </jpml>

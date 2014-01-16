@@ -1,15 +1,14 @@
 <jpml id="ARTICLE-continuation-no-ads_module">
 	<style src="ARTICLE-stylesheet.ejs" />
 	<style>{
+
 		$join: [
 		{#body_container : { 
 			min-height:200
 		}},
 		{.article_body: { 
-            column-count: {$divide: [=view.width, {$multiply:[250, =scale.dpi]}]},
+            column-count: { if: =portrait, then: 3, else: 4},
             column-gutter: 10,
-			column-height:{ if: =page.count, equals: {$add:[=page.number, 1]}, then:inherit, else:balance},
-			min-height:210,
 			layout-grid-line: {$multiply: [24, =view.zoomlevel]}
         }},
 

@@ -3,13 +3,16 @@
 	<style src="ADVERTISING-stylesheet.ejs"/>
     <style>{
         if: =portrait, then: {
-            #view: { frame: [5, 0, 502, 899] }
+            #view: { 
+                top:5,
+                height:932
+             }
         }, else: {
             #view : {
-			top:82,
-			height:686
-			}    
+                top:5,
+                height:676
+            }       
         }
     }</style>
-    <box id="view" embed="article" class="positionx1 column8" module="ARTICLE-continuation-ads_module.xml" />
+    <box id="view" embed="article" class="positionx1 column8-6" module="ARTICLE-continuation-ads_module.xml" />
 </jpml>

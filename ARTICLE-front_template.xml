@@ -2,13 +2,16 @@
     <style src="GRID-stylesheet.ejs"/>
 	<style>{
         if: =portrait, then: {
-            #view: { frame: [5, 0, 502, 899] }
+            #view: { 
+                top:0,
+                height:942
+             }
         }, else: {
             #view : {
-				top:82,
+				top:0,
 				height:686
 			}       
         }
     }</style>
-    <box id="view" embed="article" class="column8 positionx1" module="ARTICLE-front_module.xml" />
+    <box id="view" embed="article" class="column8-6 positionx1" module="ARTICLE-front_module.xml" />
 </jpml>

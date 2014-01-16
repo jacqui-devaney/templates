@@ -42,19 +42,19 @@
 
 	},
 	#article_advertisement: {
-		anchor-x:center,
-		anchor-y:bottom,
+		anchor-y:middle,
+		anchor-x:right,
 		pixels-per-point-x: 1,
 		pixels-per-point-y: 1,
-		width: {$switch: [
-			{if: =scale.small, then: 434},
-			{if: =scale.large, then: 555}
-		]},
-		height: {$switch: [
-			{if: =scale.small, then: 161},
-			{if: =scale.large, then: 206}
-		]}
-		
+		width:246,
+		height:{if: =portrait, then:1024, else:768 }
+	},
+	#skyscraper_ad:{
+		width:246,
+		height:492,
+		anchor-y:middle,
+		anchor-x:center,
+		background-color:blue
 	},
 	#fullpage_ad: {
 		anchor-x:center,

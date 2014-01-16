@@ -3,19 +3,19 @@
 	<style>{
 		$join: [
 		{#body_container: { 
-            column-count: 4,
+            column-count: { if: =portrait, then: 3, else: 4},
             column-gutter: 10,
 			column-height:{ if: =page.count, equals: {$add:[=page.number, 1]}, then:inherit, else:balance},
 			flow: article_body,
-			min-height: {if: =page.mediabucket, then:400, else:200},
+			min-height: {if: =page.mediabucket, then:400, else:300},
 			layout-grid-line: {$multiply: [24, =view.zoomlevel]},
 			layout-grid-line-offset: {$multiply: [24, =view.zoomlevel]},
 			padding:[12, 0, 0, 0]
         }},
 		{if: =portrait, then: {
-            #mediabucket_container:	{ frame: [0, 0, 502, 379]},
+            #mediabucket_container:	{ frame: [254, 0, 510, 379]},
 			#mediabucket: {
-				width:500,
+				width:502,
 				height:363
 			}
         }, else: {

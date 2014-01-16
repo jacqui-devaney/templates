@@ -5,7 +5,7 @@
 	<style>{
 		$join:[
 		{.article_body: { 
-            column-count: 3,
+            column-count: {if: =landscape, then:3, else:2},
             column-gutter: 10,
 			column-height:{ if: =page.count, equals: {$add:[=page.number, 1]}, then:inherit, else:balance},
 			layout-grid-line: {$multiply: [24, =view.zoomlevel]},
@@ -39,8 +39,8 @@
     }</style>
 	
 	<panel id="body_container">
-    	<box id="article_ad" class="positionx7 column2">
-			<box id="skyscraper_ad" class="ad-skyscraper" />
+    	<box id="article_advertisement" class="column2">
+			<box id="skyscraper_ad" class="ad-skyscraper" embed="advertisement" />
 		</box>
 		<box id="mediabucket_container">
 			<box id="mediabucket" embed="mediabucket" />

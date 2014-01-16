@@ -1,18 +1,15 @@
 <jpml id="ARTICLE-continuation-no-ads_module">
-	<style src="GLOBAL_MODULES-stylesheet.ejs" />
-	<style src="GLOBAL-stylesheet.ejs" />
+	<style src="ARTICLE-stylesheet.ejs" />
 	<style>{
+
 		$join: [
 		{#body_container : { 
-			padding: [5, 20, 5, 20], 
 			min-height:200
 		}},
 		{.article_body: { 
-            column-count: {$divide: [=view.width, {$multiply:[250, =scale.dpi]}]},
-            column-gutter: 30,
-			column-height:balance,
-			min-height:210,
-			layout-grid-line: {$multiply: [22, =view.zoomlevel]}
+            column-count: { if: =portrait, then: 3, else: 4},
+            column-gutter: 10,
+			layout-grid-line: {$multiply: [24, =view.zoomlevel]}
         }},
 
 
@@ -21,52 +18,28 @@
 			flow: article_body
 		}},
 
-		{#mediabucket: {
-			width:260,
-			height:203,
-			anchor-x:center,
-			anchor-y:top
-		}},
 		{if: =portrait, then: {
-			#mediabucket_container:	{ frame: [285, 0, 275, 207]  }
+            #mediabucket_container:	{ frame: [0, 0, 502, 379]},
+			#mediabucket: {
+				width:500,
+				height:363,
+				anchor-x:center
+			}
         }, else: {
-			#mediabucket_container:	{ frame: [575, 0, 275, 207]  }
-		}},
-		{#filler: {
-			position: relative,
-			top: 10,
-			left: 0,
-			right: 0,
-			bottom: 0,
-			min-height: 0,
-			border-image:url(articleBackground.png),
-			border-width: [16, 0, 0, 0],
-			border-slice: [16, 0, 0, 0]
-		}},
-		{#article_advertisement: {
-			min-height: 206,            
-			min-width: 555,            
-			anchor-x: center,            
-			anchor-y: middle        
-
-		}},
-		{#continued_label: {
-			padding: [0, 0, 0, 15]
-		}}
-		
+        	#mediabucket_container:	{ frame: [256, 0, 502, 379] },
+			#mediabucket: {
+				width:500,
+				height:363,
+				anchor-x:center
+			}
+        }}		
 		]
     }</style>
 	
-	<box id="continued_label">
-		<p><mark id="continued" /></p>
-	</box>
 	<panel id="body_container">
         <box id="mediabucket_container">
 			<box id="mediabucket" embed="mediabucket" />
 		</box>
 		<panel class="article_body" id="body_continuation" embed="body"/>
     </panel>
-	<box id="filler">
-		<box id="article_advertisement" class="ad-twocolumn" embed="advertisement"/>
-	</box>
 </jpml>

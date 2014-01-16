@@ -1,44 +1,51 @@
 <jpml id="ARTICLE-continuation-ads_module">
-	<style src="GLOBAL_MODULES-stylesheet.ejs" />
-	<style src="GLOBAL-stylesheet.ejs" />
+	<style src="GRID-stylesheet.ejs" />
+	<style src="ADVERTISING-stylesheet.ejs" />
+	<style src="ARTICLE-stylesheet.ejs" />
 	<style>{
-		$join: [
-		{#header_top: { padding:[0, 0, 8, 5] }},
-		{#body_container : { padding: [5, 5, 5, 5]}},
+		$join:[
 		{.article_body: { 
-            column-count: {$divide: [=view.width, {$multiply:[250, =scale.dpi]}]},
-            column-gutter: 30,
-			column-height:balance,
-			layout-grid-line: {$multiply: [22, =view.zoomlevel]}
+            column-count: {if: =landscape, then:3, else:2},
+            column-gutter: 10,
+			column-height:{ if: =page.count, equals: {$add:[=page.number, 1]}, then:inherit, else:balance},
+			layout-grid-line: {$multiply: [24, =view.zoomlevel]},
+			padding:[0, 10, 0, 0]
         }},
 		{#body_continuation: {
 			content: from-flow(article_body),
 			flow: article_body
 		}},
-		{#mediabucket: {
-			width:260,
-			height:203,
-			anchor-x:center,
-			anchor-y:top
+		{#article_ad: {
+			top:0,
+			height:704,
+			left:768
 		}},
 		{if: =portrait, then: {
-			#mediabucket_container:	{ frame: [285, 0, 275, 207]  }
+            #mediabucket_container:	{ frame: [0, 0, 502, 379]},
+			#mediabucket: {
+				width:500,
+				height:363,
+				anchor-x:center
+			}
         }, else: {
-			#mediabucket_container:	{ frame: [575, 0, 275, 207]  }
-		}}
+        	#mediabucket_container:	{ frame: [256, 0, 508, 379] },
+			#mediabucket: {
+				width:500,
+				height:363,
+				anchor-x:center
+			}
+        }}
 		]
     }</style>
 	
-	<box id="continued_label">
-		<p><mark id="continued" /></p>
-	</box>
 	<panel id="body_container">
+    	<box id="article_advertisement" class="column2">
+			<box id="skyscraper_ad" class="ad-skyscraper" embed="advertisement" />
+		</box>
 		<box id="mediabucket_container">
 			<box id="mediabucket" embed="mediabucket" />
 		</box>
-        <box id="ad_container">
-			<box id="article_advertisement" class="ad-twocolumn" embed="advertisement" />
-		</box>
-    	<panel class="article_body" id="body_continuation" embed="body" />
+        <panel class="article_body" id="body_continuation" embed="body" />
 	</panel>
+	
 </jpml>

@@ -1,14 +1,18 @@
 <jpml id="ARTICLE-continuation-ads_template">
+	<style src="GRID-stylesheet.ejs"/>
+	<style src="ADVERTISING-stylesheet.ejs"/>
     <style>{
         if: =portrait, then: {
-            #view: { frame: [15, 10, 563, 879] },
-			#index: { frame: [594, 0, 173, 899]}
-			
+            #view: { 
+                top:5,
+                height:932
+             }
         }, else: {
-            #view : { frame: [15, 10, 855, 623] },
-			#index: { frame: [884, 0, 139, 643]}  
+            #view : {
+                top:5,
+                height:676
+            }       
         }
     }</style>
-    <box id="view" embed="article" module="ARTICLE-continuation-ads_module.xml" />
-    <box id="index" embed="index" />
+    <box id="view" embed="article" class="positionx1 column8-6" module="ARTICLE-continuation-ads_module.xml" />
 </jpml>

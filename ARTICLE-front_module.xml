@@ -1,77 +1,46 @@
 <jpml id="ARTICLE-front_module">
-	<style src="GLOBAL_MODULES-stylesheet.ejs" />
-	<style src="GLOBAL-stylesheet.ejs" />
+	<style src="ARTICLE-stylesheet.ejs" />
 	<style>{
 		$join: [
-		{#header_top: { padding:[18, 10, 8, 15] }},
 		{#body_container: { 
-            padding: [10, 20, 0, 20],
-			column-width: 250,
-            column-gutter: 30,
-			column-height:balance,
+            column-count: { if: =portrait, then: 3, else: 4},
+            column-gutter: 10,
+			column-height:{ if: =page.count, equals: {$add:[=page.number, 1]}, then:inherit, else:balance},
 			flow: article_body,
-			min-height: {if: =page.mediabucket, then:400, else:200},
-			layout-grid-line: {$multiply: [22, =view.zoomlevel]},
-			layout-grid-line-offset: {$multiply: [20, =view.zoomlevel]}
-			
+			min-height: {if: =page.mediabucket, then:400, else:300},
+			layout-grid-line: {$multiply: [24, =view.zoomlevel]},
+			layout-grid-line-offset: {$multiply: [24, =view.zoomlevel]},
+			padding:[12, 0, 0, 0]
         }},
-		{.article_body:{
-			column-min-height:50
-		}},
-		{#mediabucket: {
-			width:546,
-			height:385,
-			anchor-x:center
-		}},
 		{if: =portrait, then: {
-            #mediabucket_container:	{ frame: [14, 10, 565, 402]  }
+            #mediabucket_container:	{ frame: [254, 0, 510, 379]},
+			#mediabucket: {
+				width:502,
+				height:363
+			}
         }, else: {
-        	#mediabucket_container:	{ frame: [302, 10, 565, 402]}
-        }},
-		{#filler: {
-			position: relative,
-			top: 10,
-			left: 0,
-			right: 0,
-			bottom: 0,
-			min-height: 0,
-			border-image:url(articleBackground.png),
-			border-width: [16, 0, 0, 0],
-			border-slice: [16, 0, 0, 0]
-		}},
-		{#article_advertisement: {
-			min-height: 206,            
-			min-width: 555,            
-			anchor-x: center,            
-			anchor-y: middle        
-
-		}}
+        	#mediabucket_container:	{ frame: [256, 0, 502, 379] },
+			#mediabucket: {
+				width:500,
+				height:363
+			}
+        }}
 		]
     }</style>
-	<box id="continues_label">
-		<p><mark id="continues" /></p>
-	</box>
 	
     <panel id="header_top">
         <p class="article_flashline" embed="flashline"/>
         <p class="article_headline"><span embed="headline"/><mark class="key"/></p>
 		<h2 class="article_subhed" embed="subhed" />
 	</panel>
-	<box class="hr"></box>
-	<panel>
+	
+	<panel id="body_container">
 		<box id="mediabucket_container">
 			<box id="mediabucket" embed="mediabucket" />
 		</box>
-		<panel id="body_container">
-			<p class="article_byline" embed="byline"/>
-	        <panel class="article_body" embed="body"/>
+		<p class="article_byline" embed="byline"/>
+        <panel class="article_body" embed="body"/>
 	    
-		</panel>
 	</panel>
-	<box id="filler">
-		<box id="article_advertisement" class="ad-twocolumn" embed="advertisement"/>
-	</box>
 	
 </jpml>
-
-

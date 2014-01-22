@@ -20,7 +20,7 @@
 		</style>
 
 		<panel class="main">
-			<p id="main-header" class="header"><mark id="main-header-mark"/><break/><mark class="stars" /></p>
+			<p id="main-header" class="header"><mark id="main-header-mark"/></p>
 			<xsl:apply-templates select="channel"/>
 		</panel>
 	</jpml>
@@ -40,7 +40,7 @@
 <xsl:template match="item|stub">
 	<panel class="group">
 		<xsl:if test="$type = 'ITP'">
-			<p class="header"><span><xsl:value-of select="substring-after(title, ': ')"/></span><break/><mark class="stars" /></p>
+			<p class="header"><span><xsl:value-of select="substring-after(title, ': ')"/></span></p>
 		</xsl:if>
 		<xsl:for-each select="key('item_by_title', title)">
 			<p class="item">
@@ -52,22 +52,11 @@
 						</xsl:call-template></span>
 						<break/>
 					</xsl:when>
-					<xsl:when test="$type = 'ITP'">
-						<mark class="item-before-description"/>
-					</xsl:when>
 				</xsl:choose>
 				<span class="item-description"><xsl:call-template name="linked_text">
 					<xsl:with-param name="link"><xsl:value-of select="link"/></xsl:with-param>
 					<xsl:with-param name="text"><xsl:value-of select="description"/></xsl:with-param>
 				</xsl:call-template></span>
-				<xsl:if test="string-length(link) > 0">
-					<mark>
-						<xsl:attribute name="class">item-after-description <xsl:choose>
-							<xsl:when test="category = 'FREE'">item-free</xsl:when>
-							<xsl:otherwise>item-paid</xsl:otherwise>
-						</xsl:choose></xsl:attribute>
-					</mark>
-				</xsl:if>
 			</p>
 		</xsl:for-each>
 	</panel>

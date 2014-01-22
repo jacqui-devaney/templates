@@ -6,7 +6,13 @@
 		pixels-per-point-y: 1,
 		min-height: 0,
 		max-height: 10000,
-		background-color: { if: =app.idiom, equals: "phone", then: #fff, else: #e7e2d8 }
+		background-color: { if: =app.idiom, equals: "phone", then: #fff, else: #e7e2d8 },
+		padding:[0, 9]
+	},
+	.group: {
+		padding:[0, 0, 23, 0],
+		border-width:[2, 0, 0, 0],
+		border-color:#000
 	},
 	.header: {
 		if-any: [
@@ -16,26 +22,13 @@
 		], then: {
 			display: none
 		}, else: {
-			font-size: 15,
-			font-name: "DJ5EscrowCond-SemiboldItalic",
+			font-size: 18,
+			font-name: "DJ5EscrowComp-SemiboldItalic",
 			text-align: center,
-			padding: [8, 0, 0, 0]
+			padding: [2, 0, 3, 0],
+			border-width:[0, 0, 1, 0],
+			border-color:#9a9487
 		}
-	},
-	.stars: {
-		if-any: [
-			{ if: =app.idiom, equals: "phone" },
-			{ if: =issue.edition, equals: japan },
-			{ if: =issue.edition, equals: korea }
-		], then: {
-			display: none
-		}, else: {
-			content: "*\u00a0\u00a0*\u00a0\u00a0*"
-		}
-	},
-	.main: {
-		column-width: 250,
-		column-height: balance
 	},
 	p: {
 		font-name: {
@@ -46,9 +39,11 @@
 			]
 		},
 		hyphens:auto,
-		font-size: 13,
+		font-size: 12,
+		line-height:16,
 		break-inside: avoid-column,
-		padding: [8, 6]
+		text-align:center,
+		padding: [12, 6, 0, 6]
 	},
 	.item-title: {
 		font-name: {
@@ -58,26 +53,8 @@
 				"DJ5Exchange-Bold"
 			]
 		},
-		font-size: 14
-	},
-	.item-before-description: {
 		font-size: 12,
-		content: "\u25a0\u00a0"
-	},
-	.item-after-description: {
-		content: "\u00a0\u00bb"
-	},
-	.item-paid: {
-		if: =issue.locked,
-		then: {
-			font-name: DJ5Utility-Regular,
-			font-size:16,
-			content: "\u00a0K",
-			padding: [0, 0, 0, 2],
-			color:#948464
-		},
-		else: {
-
-		}
+		line-height:16,
+		hyphens:auto
 	}
 }

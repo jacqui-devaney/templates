@@ -7,7 +7,7 @@
 				{ if: =options.top_border, then: {
 					jpml: {
 						border-width: [1, 0, 0, 0],
-						padding: [10, 10, 0, 3],
+						padding: [10, 10, 0, 0],
 						border-color: #cfcfcf
 					}
 			
@@ -16,7 +16,7 @@
 					jpml: {
 						border-width: [0, 0, 0, 1],
 						border-color: #cfcfcf,
-						padding: [0, 3, 0, 10]
+						padding: [0, 0, 0, 10]
 					}
 			
 				}},
@@ -24,14 +24,14 @@
 					jpml: {
 						border-width: [0, 1, 0, 0],
 						border-color: #cfcfcf,
-						padding: [0, 10, 0, 3]
+						padding: [0, 10, 0, 0]
 					}
 			
 				}},
 				{ if: true, then: {
 					jpml: {
 						border-width: [0, 0, 0, 0],
-						padding: [0, 3, 0, 3]
+						padding: [0, 0, 0, 0]
 					}
 				}}
 			]},

@@ -66,18 +66,18 @@
 						height:200
 				},
 				#b4:	{ 
-					top:756,
-					height:170
+					top:750,
+					height:160
 					
 				},
 				#b5:	{ 
-					top:756,
-					height:170
+					top:750,
+					height:160
 					
 				},
 				#b6:	{ 
-					top:756,
-					height:170
+					top:750,
+					height:160
 					
 				}
 				
@@ -89,8 +89,8 @@
 					height:420
 				},
 				#b2:	{ 
-					top:460,
-					height:215
+					top:450,
+					height:200
 				},
 				#b3:	{ 
 					top:0,
@@ -105,19 +105,19 @@
 					height:130
 				},
 				#b6:	{ 
-					top:460,
-					height:215
+					top:450,
+					height:200
 				}
 
 			}}
 		]
 	} </style>
-	<box id="b1" embed="article" class="column5-6 positionx1 maude unit_166" module="IMAGE-OVERLAY_module.xml" />
-	<box id="b2" embed="article" class="column5-4 positionx1 maude unit_50" module="TOP-IMAGE_module.xml" />
-	<box id="b3" embed="article" class="column3-2 positionx6-5 maude unit_50" module="RIGHT-IMAGE_module.xml" />
-	<box id="b4" embed="article" class="column3-2 positionx6-1 maude unit_50" module="RIGHT-IMAGE_module.xml" />
-	<box id="b5" embed="article" class="column3-2 positionx6-3 maude unit_50" module="RIGHT-IMAGE_module.xml" />
-	<box id="b6" embed="article" class="column3-2 positionx6-5 maude unit_50" module="TOP-IMAGE_module.xml" />
+	<box id="b1" embed="article" class="column10-12 positionx1 maude unit_166" module="IMAGE-OVERLAY_module.xml" />
+	<box id="b2" embed="article" class="column10-8 positionx1 maude unit_50" module="TOP-IMAGE_module.xml" />
+	<box id="b3" embed="article" class="column6-4 positionx11-9 maude unit_50" module="RIGHT-IMAGE_module.xml" />
+	<box id="b4" embed="article" class="column6-4 positionx11-1 maude unit_50" module="RIGHT-IMAGE_module.xml" />
+	<box id="b5" embed="article" class="column6-4 positionx11-5 maude unit_50" module="RIGHT-IMAGE_module.xml" />
+	<box id="b6" embed="article" class="column6-4 positionx11-9 maude unit_50" module="TOP-IMAGE_module.xml" />
 	
 </jpml>
 

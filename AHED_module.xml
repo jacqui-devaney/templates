@@ -8,14 +8,14 @@
 				{ if: =article.type, equals:"A-hed", then: {
 					jpml: {
 						border-width: [0, 0, 0, 0],
-						padding: [0, 3]
+						padding: [0]
 					}
 			
 				}},
 				{ if: =options.top_border, then: {
 					jpml: {
 						border-width: [1, 0, 0, 0],
-						padding: [10, 10, 0, 3],
+						padding: [10, 10, 0, 0],
 						border-color: #cfcfcf
 					}
 			
@@ -24,7 +24,7 @@
 					jpml: {
 						border-width: [0, 0, 0, 1],
 						border-color: #cfcfcf,
-						padding: [0, 3, 0, 10]
+						padding: [0, 0, 0, 10]
 					}
 			
 				}},
@@ -32,41 +32,35 @@
 					jpml: {
 						border-width: [0, 1, 0, 0],
 						border-color: #cfcfcf,
-						padding: [0, 10, 0, 3]
+						padding: [0, 10, 0, 0]
 					}
 			
 				}},
 				{ if: true, then: {
 					jpml: {
 						border-width: [0, 0, 0, 0],
-						padding: [0, 10, 0, 3]
+						padding: [0, 10, 0, 0]
 					}
 				}}
 			]},
 			{
-				#body: { 
-		            column-count: {$switch: [
-						{if: =widescreen, then: { if: =options.two_columns, then:2, else:1 }},
-						{if: =scale.large, then: {$divide: [=view.width, {$multiply:[250, =scale.dpi]}]}}
-					
-					]},
-		            column-gutter: 20
-		        },
 				#image_wrapper: {
-					width:88,
+					width:72,
 					anchor-x:right,
-					anchor-y:top
+					anchor-y:bottom
 	            },
 				image: {
 					pixels-per-point-x:1,
 					pixels-per-point-y:1,
-					height: 79, 
-					padding: [0, 0, 0, 9],
+					height: 62, 
+					padding: [0, 0, 13, 9],
 					display:{if: =article.type, equals:"A-hed", then: inherit, else:none}
 	            },
 				.byline: {
-					display: {if: =options.show_byline, then:inherit, else:none}
-
+					display: {if-all:[{if: =options.show_byline}, {if: =scale.tablet}], then:inherit, else:none}
+				},
+				.ahed_subhed: {
+					display: {if-all:[{if: =options.show_subhed}, {if: =scale.tablet}], then:inherit, else:none}
 				},
 				#body-first-p: {
 					text-indent: {if: =options.indent, then:20, else:0}
@@ -107,11 +101,11 @@
 				<p class="module_headline"><span embed="headline" /><mark class="key" /></p>
 		        <panel id="ahed_content">
 					<p class="ahed_headline"><span embed="headline"/><mark class="key"/></p>
-		        	<h2 class="ahed_subhed hidden_phone" embed="subhed"/>
+		        	<h2 class="ahed_subhed" embed="subhed"/>
 				</panel>
 			</panel>
 			<panel id="body">
-	            <p class="byline hidden_phone" embed="byline"/>
+	            <p class="byline" embed="byline"/>
 	            <panel class="body hidden_phone" embed="body"/>
 	        </panel>
 		</panel>

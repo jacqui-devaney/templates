@@ -12,11 +12,12 @@
 			#deco_caption_container: {
 				bottom:0,
 				background-color:"rgba(0, 0, 0, .5)",
-				padding:[10, 0]
+				padding:[18, 16, 10, 16],
+				height:80
 				
 			},
 			.deco_caption: {
-				display:{if: =options.show_caption, then:inherit, else:none}
+				display:{if: =options.hide_caption, then:none, else:inherit}
 			}
 	}</style>
 			<box id="deco_container" embed="deco-image">

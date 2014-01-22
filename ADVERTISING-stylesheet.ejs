@@ -6,7 +6,7 @@
 	.ad-banner: { options: { zone: {$join: [=ad.prefix,{$switch: [
 		{if: =scale.phone, then: sbanner},
 		{if: =widescreen, then: rectangle},
-		"cube"
+		"ribbon"
 	]}
 	]} } },
 	.ad_light: {background-color: #efefef},
@@ -14,7 +14,7 @@
 	.hidden_tablet: {display:none},
 	.hidden_phone: {display:inherit},
 	#front_page: {
-		top: {if: =landscape, then:596, else:854},
+		top: {if: =landscape, then:568, else:824},
 		height: {if: =scale.phone, then:50, else:90}
 	},
 	#banner_ad: 	{ 
@@ -25,21 +25,6 @@
 		width:{if: =scale.phone, then:320, else:1024},
 		height: {if: =scale.phone, then:50, else:90}
 		
-	},
-	#cube_ad: 	{ 
-		pixels-per-point-x: 1,
-		pixels-per-point-y: 1,
-		anchor-x:center,
-		anchor-y:middle,
-		width: {$switch: [
-			{if: =scale.small, then: 151},
-			{if: =scale.large, then: 210}
-		]},
-		height: {$switch: [
-			{if: =scale.small, then: 125},
-			{if: =scale.large, then: 175}
-		]}
-
 	},
 	#article_advertisement: {
 		anchor-y:middle,
@@ -74,41 +59,6 @@
 			{if-all: [=scale.large, =portrait], then:{if: =intent.section, then: 876, else: 899}},
 			{if-all: [=scale.small, =landscape], then:488},
 			{if-all: [=scale.large, =landscape], then:{if: =intent.section, then: 620, else: 643}}
-		]}
-	},		
-	#ad_container: {
-		frame: {if: =portrait, 
-			then: [0, 629, 555, 218],
-			else: [285, 367, 569, 218]
-		}
-	},
-	#section_ad: {
-		top: {$switch: [
-			{if-all: [{if: =issue.type, equals:NOW}, {if: =page.section, equals:MONEY_AND_INVESTING}, {if: =landscape}, {if: =page.number, equals:0, then:true}], then:485},
-			{if: =landscape, then:470},
-			"706"
-		]},
-		height: {$switch: [
-			{if-all: [{if: =issue.type, equals:NOW}, {if: =page.section, equals:MONEY_AND_INVESTING}, {if: =landscape}, {if: =page.number, equals:0, then:true}], then:220},
-			{if: =landscape, then:235},
-			{if: =scale.phone, then:50},
-			"254"
-		]},
-		width:{if: =scale.phone, then:320, else:251},
-		display:{if: =scale.phone, then:inherit, else:{if: =page.number, equals:1, then:none, else:inherit}}
-	},
-	#highlight_ad: {
-		pixels-per-point-x: 1,
-		pixels-per-point-y: 1,
-		anchor-x:center,
-		anchor-y:middle,
-		width: {$switch: [
-			{if: =scale.small, then: 151},
-			{if: =scale.large, then: 210}
-		]},
-		height: {$switch: [
-			{if: =scale.small, then: 125},
-			{if: =scale.large, then: 175}
 		]}
 	}
 }

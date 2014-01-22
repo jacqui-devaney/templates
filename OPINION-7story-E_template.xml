@@ -36,14 +36,14 @@
 				},
 				#b5: {
 					top:484,
-					height:161
+					height:170
 				},
 				#b6: {
-					top:702,
+					top:680,
 					height:230
 				},
 				#b7: {
-					top:702,
+					top:680,
 					height:230
 				}
 			}}, 
@@ -62,18 +62,18 @@
 				},
 				#b4: {
 					top:0,
-					height:495
+					height:480
 				},
 				#b5: {
-					top:515,
+					top:500,
 					height:151
 				},
 				#b6: {
-					top:472,
+					top:462,
 					height:190
 				},
 				#b7: {
-					top:472,
+					top:462,
 					height:190
 				}
 				
@@ -81,13 +81,13 @@
 		]
     }</style>
     
-    <box id="b1" embed="article" class="column4-3 positionx1 maude unit_100" module="OPINION-RANDO-LETTERS_module.xml" />
-    <box id="b2" embed="article" class="column4-3 positionx1 maude unit_100" module="OPINION-RANDO-LETTERS_module.xml" />
-    <box id="b3" embed="article" class="column4-3 positionx1 maude unit_100" module="OPINION-RANDO-LETTERS_module.xml" />
-	<box id="b4" embed="article" class="column4-3 positionx5-4 maude unit_50" module="TOP-IMAGE_module.xml" />
-	<box id="b5" embed="article" class="column4-3 positionx5-4 maude unit_50" module="TOP-IMAGE_module.xml" />
-	<box id="b6" embed="article" class="column2-3 positionx1 maude unit_50" module="TOP-IMAGE_module.xml" />
-	<box id="b7" embed="article" class="column2-3 positionx3-4 maude unit_50" module="TOP-IMAGE_module.xml" />
+    <box id="b1" embed="article" class="column8-6 positionx1 maude unit_100" module="OPINION-RANDO-LETTERS_module.xml" />
+    <box id="b2" embed="article" class="column8-6 positionx1 maude unit_100" module="OPINION-RANDO-LETTERS_module.xml" />
+    <box id="b3" embed="article" class="column8-6 positionx1 maude unit_100" module="OPINION-RANDO-LETTERS_module.xml" />
+	<box id="b4" embed="article" class="column8-6 positionx9-7 maude unit_50" module="TOP-IMAGE_module.xml" />
+	<box id="b5" embed="article" class="column8-6 positionx9-7 maude unit_50" module="TOP-IMAGE_module.xml" />
+	<box id="b6" embed="article" class="column4-6 positionx1 maude unit_50" module="TOP-IMAGE_module.xml" />
+	<box id="b7" embed="article" class="column4-6 positionx5-7 maude unit_50" module="TOP-IMAGE_module.xml" />
 
     
 

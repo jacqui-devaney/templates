@@ -19,18 +19,19 @@
 			{
 				$switch:[
 					{if: =options.small_headline, then:{
-						padding:[0, 0, {if: =options.show_byline, then:6, else:14}, 0],
+						padding:[0, 0, {if: =options.show_byline, then:6, else:11}, 0],
 						font-size:26,
+						font-name: DJ5EscrowCond-Semibold,
 						line-height:{ $switch: [
 								{if: =issue.edition, equals: "japan", then: 28},
 								{if: =issue.edition, equals: "korea", then: 28},
-								"26"
+								"24"
 							]
 						}
 						}
 					},
 					{if: =options.extra_small_headline, then:{
-						padding:[0, 0, {if: =options.show_byline, then:6, else:14}, 0],
+						padding:[0, 0, {if: =options.show_byline, then:6, else:11}, 0],
 						font-size:24,
 						line-height:{ $switch: [
 								{if: =issue.edition, equals: "japan", then: 28},
@@ -46,7 +47,7 @@
 						        {if: =extents.medium, more-than: 1.0, then: true, else: false}, 
 						        {if: =extents.medium, less-than: 1.5, then: true, else: false}
 						    ], then: 24, else: 30 },
-							padding:[0, 0, {if: =options.show_byline, then:6, else:14}, 0],
+							padding:[0, 0, {if: =options.show_byline, then:6, else:12}, 0],
 							line-height:{ $switch: [
 									{if: =issue.edition, equals: "japan", then: {if-all: [
 									    =scale.headlines,
@@ -75,13 +76,13 @@
 						        =scale.headlines,
 						        {if: =extents.large, more-than: 1.0, then: true, else: false}, 
 						        {if: =extents.large, less-than: 1.5, then: true, else: false}
-						    ], then: 32, else: 45 },
-							padding:[0, 0, {if: =options.show_byline, then:6, else:14}, 0],
+						    ], then: 32, else: 44 },
+							padding:[0, 0, {if: =options.show_byline, then:6, else:6}, 0],
 							line-height: {if-all: [
 							    =scale.headlines,
 							    {if: =extents.large, more-than: 1.0, then: true, else: false}, 
 							    {if: =extents.large, less-than: 1.5, then: true, else: false}
-							], then: 34, else: 43 }
+							], then: 34, else: 46 }
 						}
 					},
 					{if: =options.very_large_headline, then: {
@@ -90,7 +91,7 @@
 						        {if: =extents.large, more-than: 1.0, then: true, else: false}, 
 						        {if: =extents.large, less-than: 1.5, then: true, else: false}
 						    ], then: 32, else: 56 },
-							padding:[0, 0, {if: =options.show_byline, then:6, else:14}, 0],
+							padding:[0, 0, {if: =options.show_byline, then:6, else:12}, 0],
 							line-height: {if-all: [
 							    =scale.headlines,
 							    {if: =extents.large, more-than: 1.0, then: true, else: false}, 
@@ -99,7 +100,7 @@
 						}
 					},
 					{if: true, then: {
-							padding:[0, 0, {if: =options.show_byline, then:6, else:14}, 0],
+							padding:[0, 0, {if: =options.show_byline, then:6, else:12}, 0],
 							font-size:26,
 							line-height:{ $switch: [
 									{if: =issue.edition, equals: "japan", then: 28},
@@ -123,7 +124,7 @@
 			]
 		},
 		text-indent:0,
-		font-size:{$multiply:{if: =options.large_body, then:20, else:16}},
+		font-size:{$multiply:{if: =options.large_body, then:20, else:14}},
 		line-height:{$multiply:{if: =options.large_body, then:26, else:20}},
 		text-overflow: " \u00bb",
         text-align: { if: =options.justify, then:=justify, else:left},
@@ -134,19 +135,18 @@
 
 	},
 	.deco_caption: {
-		font-name: DJ5RetinaCd-Semibold,
+		font-name: DJ5Exchange-Medium,
 		font-size:14,
-		line-height:16,
-		color:#fefefe,
-		padding: [0, 10, 0, 10]
+		line-height:20,
+		color:#fff
 		
 	},
 	.deco_headline:{
-		font-name: DJ5RetinaCd-Medium,
+		font-name: DJ5EscrowCond-Semibold,
 		color:#fff,
-		padding:[0, 10, 0, 10],
-		font-size:{if: =options.large_headline, then:45, else:22},
-		line-height:{if: =options.large_headline, then:45, else:22}
+		padding:[0, 0, 9, 0],
+		font-size:{if: =options.large_headline, then:45, else:26},
+		line-height:{if: =options.large_headline, then:45, else:28}
 	},
 	.module_flashline: {
 		font-name:{if: =article.type, equals:"Letters", then:DJ5EscrowCond-Bold, else: DJ5RetinaCd-Semibold},

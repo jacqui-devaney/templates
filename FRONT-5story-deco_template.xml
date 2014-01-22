@@ -8,7 +8,7 @@
 	
 		#b1: {
 			options:{$switch:[
-				{if: =scale.phone, then: {large_headline:true, top_align:true, show_body:true, no_border:true, show_image:true}},
+				{if: =scale.phone, then: {large_headline:true, top_align:true, show_body:true, show_image:true}},
 				{if: =portrait, then: {large_headline:true}},
 				{if: =landscape, then: {large_headline:true}}
 			]	
@@ -22,13 +22,13 @@
 		#b3: {
 			options:{$switch:[
 				{if: =portrait, then: {small_headline:true}},
-				{if: =landscape, then: {small_headline:true, right_border:true}}
+				{if: =landscape, then: {small_headline:true}}
 			]	
 		}},
 		#b4: {
 			options:{$switch:[
-				{if: =portrait, then: {small_headline:true, right_border:true}},
-				{if: =landscape, then: {small_headline:true, right_border:true}}
+				{if: =portrait, then: {small_headline:true}},
+				{if: =landscape, then: {small_headline:true}}
 			]	
 		}},
 		#b5: {
@@ -53,68 +53,68 @@
 			}},
 			{if: =portrait, then: {
 				#b1:	{ 
-						top:0,
-						height:285
+						top:383,
+						height:153
 				},
 				#deco:	{ 
-					top:295,
-					height:400
+					top:0,
+					height:366
 				},
 				#b2:	{ 
-						top:0,
-						height:130
+						top:553,
+						height:144
 				},
 				#b3:	{ 
-					top:153,
-					height:130
+					top:553,
+					height:144
 					
 				},
 				#b4: {
-					top:715,
-					height:130
+					top:553,
+					height:144
 				},
 				#b5: {
-					top:715,
-					height:130
+					top:716,
+					height:108
 				}
 			
 			}}, 
 			{if: =landscape, then: {
 				#b1:	{ 
 					top:0,
-					height:248
+					height:266
 				},
 				#deco:	{ 
 					top:0,
-					height:400
+					height:366
 				},
 				#b2:	{ 
-					top:275,
-					height:130
+					top:274,
+					height:102
 				},
 				#b3:	{ 
-					top:425,
-					height:153
+					top:393,
+					height:160
 				},
 				#b4:	{ 
-					top:425,
-					height:153
+					top:393,
+					height:160
 				},
 				#b5:	{ 
-					top:425,
-					height:155
+					top:393,
+					height:165
 				}
 			}}
 		]
 	} </style>
-	<box id="whatsnews" class="column1 positionx1" embed="whatsnews">
+	<box id="whatsnews" class="column3 positionx14-10" embed="whatsnews">
 	</box>
-	<box id="b1" embed="article" class="column2-3 positionx2 maude unit_166" module="TOP-IMAGE_module.xml" />
-	<box id="deco" embed="article" class="column5 positionx4-2 maude unit_G_deco" module="DECO_module.xml" options="G_size" />
-	<box id="b2" embed="article" class="column2 positionx2-5 maude unit_50" module="TOP-IMAGE_module.xml" />
-	<box id="b3" embed="article" class="column2 positionx2-5 maude unit_50" module="TOP-IMAGE_module.xml" />
-	<box id="b4" embed="article" class="column2 positionx4-2 maude unit_50" module="TOP-IMAGE_module.xml" />
-	<box id="b5" embed="article" class="column3 positionx6-4 maude unit_50" module="AHED_module.xml" />
+	<box id="b1" embed="article" class="column4-9 positionx1 maude unit_166" module="TOP-IMAGE_module.xml" />
+	<box id="deco" embed="article" class="column9 positionx5-1 maude unit_G_deco" module="DECO_module.xml" options="G_size" />
+	<box id="b2" embed="article" class="column4-3 positionx1 maude unit_50" module="TOP-IMAGE_module.xml" />
+	<box id="b3" embed="article" class="column4-3 positionx1-4 maude unit_50" module="TOP-IMAGE_module.xml" />
+	<box id="b4" embed="article" class="column4-3 positionx5-7 maude unit_50" module="TOP-IMAGE_module.xml" />
+	<box id="b5" embed="article" class="column5-9 positionx9-1 maude unit_50" module="AHED_module.xml" />
 	<box id="front_page" class="positionx_full column_full maude unit_ad">
 		<box id="banner_ad" class="ad-banner front_ad" embed="advertisement" />
 	</box>

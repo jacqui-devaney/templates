@@ -5,7 +5,6 @@
 		{#body_container: { 
             column-count: { if: =portrait, then: 3, else: 4},
             column-gutter: 10,
-			column-height:{ if: =page.count, equals: {$add:[=page.number, 1]}, then:inherit, else:balance},
 			flow: article_body,
 			min-height: {if: =page.mediabucket, then:400, else:300},
 			layout-grid-line: {$multiply: [24, =view.zoomlevel]},

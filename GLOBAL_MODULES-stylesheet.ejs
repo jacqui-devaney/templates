@@ -13,7 +13,7 @@
 					]
 				},
 				text-scale: {if: =scale.small, then: {$multiply: [=scale.text, 0.9] }, else: inherit},
-				color:{if: =options.white_text, then:#fff, else:#333}
+				color:{if: =options.white_text, then:#fff, else:#000}
 			
 			},
 			{
@@ -130,7 +130,7 @@
         text-align: { if: =options.justify, then:=justify, else:left},
 		text-scale: {if: =widescreen, then: {$multiply: [=scale.text, 1.2] }, else: inherit},
 		hyphens:auto,
-		color:{if: =options.white_text, then:#fff, else:#333}
+		color:{if: =options.white_text, then:#fff, else:#000}
 		
 
 	},

@@ -20,23 +20,12 @@
 				$switch:[
 					{if: =options.small_headline, then:{
 						padding:[0, 0, {if: =options.show_byline, then:6, else:11}, 0],
-						font-size:26,
+						font-size:24,
 						font-name: DJ5EscrowCond-Semibold,
 						line-height:{ $switch: [
 								{if: =issue.edition, equals: "japan", then: 28},
 								{if: =issue.edition, equals: "korea", then: 28},
 								"24"
-							]
-						}
-						}
-					},
-					{if: =options.extra_small_headline, then:{
-						padding:[0, 0, {if: =options.show_byline, then:6, else:11}, 0],
-						font-size:24,
-						line-height:{ $switch: [
-								{if: =issue.edition, equals: "japan", then: 28},
-								{if: =issue.edition, equals: "korea", then: 28},
-								"25"
 							]
 						}
 						}

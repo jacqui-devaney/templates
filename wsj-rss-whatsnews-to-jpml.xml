@@ -13,7 +13,7 @@
 	</xsl:variable>
 
 <xsl:template match="/rss">
-	<jpml>
+	<jpml lang="en">
 		<style src="WHATS_NEWS_COMMON-stylesheet.ejs"/>
 		<style>
 			<xsl:attribute name="src">WHATS_NEWS_<xsl:value-of select="$type"/>-stylesheet.ejs</xsl:attribute>

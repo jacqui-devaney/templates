@@ -7,7 +7,6 @@
 		{.article_body: { 
             column-count: {if: =landscape, then:3, else:2},
             column-gutter: 10,
-			column-height:{ if: =page.count, equals: {$add:[=page.number, 1]}, then:inherit, else:balance},
 			layout-grid-line: {$multiply: [24, =view.zoomlevel]},
 			padding:[0, 10, 0, 0]
         }},

@@ -1,6 +1,7 @@
 {
 
 	.ad-fullpage: { options: { zone: {$join: [=ad.prefix, fullpage]} } },
+	.ad-skyscraper: { options: { zone: {$join: [=ad.prefix, skyscraper]} } },
 	.ad-rectangle: { options: { zone: {$join: [=ad.prefix, {if: =scale.phone, then: sbanner, else: rectangle}]} } },
 	.ad-twocolumn: { options: { zone: {$join: [=ad.prefix, {if: =scale.phone, then: abanner, else: twocolumn}]} } },
 	.ad-banner: { options: { zone: {$join: [=ad.prefix,{$switch: [

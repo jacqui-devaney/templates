@@ -23,7 +23,12 @@
 		pixels-per-point-y: 1,
 		anchor-x:center,
 		anchor-y:middle,
-		width:{if: =scale.phone, then:320, else:1024},
+		width:{$switch: [
+					{if: =scale.phone, then:320},
+					{if: =widescreen, then:175},
+					{if-all: [=scale.large, =portrait], then:768},
+					"1024"
+		]},
 		height: {if: =scale.phone, then:50, else:90}
 		
 	},

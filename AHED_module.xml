@@ -45,16 +45,17 @@
 			]},
 			{
 				#image_wrapper: {
-					width:72,
+					width:85,
 					anchor-x:right,
 					anchor-y:bottom
 	            },
 				image: {
 					pixels-per-point-x:1,
 					pixels-per-point-y:1,
-					height: 62, 
-					padding: [0, 0, 13, 9],
-					display:{if: =article.type, equals:"A-hed", then: inherit, else:none}
+					height: 76, 
+					padding: [0, 0, 0, 9],
+					display:{if: =article.type, equals:"A-hed", then: inherit, else:none},
+					image-scale:.9
 	            },
 				.byline: {
 					display: {if-all:[{if: =options.show_byline}, {if: =scale.tablet}], then:inherit, else:none}

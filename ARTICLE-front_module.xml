@@ -12,16 +12,16 @@
 			padding:[12, 0, 0, 0]
         }},
 		{if: =portrait, then: {
-            #mediabucket_container:	{ frame: [254, 0, 510, 379]},
+            #mediabucket_container:	{ frame: [240, 0, 510, 364]},
 			#mediabucket: {
-				width:502,
-				height:363
+				width:490,
+				height:354
 			}
         }, else: {
-        	#mediabucket_container:	{ frame: [256, 0, 502, 379] },
+        	#mediabucket_container:	{ frame: [245, 0, 502, 351] },
 			#mediabucket: {
-				width:500,
-				height:363
+				width:470,
+				height:341
 			}
         }}
 		]

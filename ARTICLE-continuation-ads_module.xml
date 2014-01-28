@@ -4,6 +4,9 @@
 	<style src="ARTICLE-stylesheet.ejs" />
 	<style>{
 		$join:[
+		{jpml: {
+			padding:[0]
+		}},
 		{.article_body: { 
             column-count: {if: =landscape, then:3, else:2},
             column-gutter: 10,
@@ -20,31 +23,29 @@
 			left:768
 		}},
 		{if: =portrait, then: {
-            #mediabucket_container:	{ frame: [0, 0, 502, 379]},
+            #mediabucket_container:	{ frame: [0, 0, 480, 364]},
 			#mediabucket: {
-				width:500,
-				height:363,
-				anchor-x:center
+				width:480,
+				height:354
 			}
         }, else: {
-        	#mediabucket_container:	{ frame: [256, 0, 508, 379] },
+	    	#mediabucket_container:	{ frame: [245, 0, 502, 351] },
 			#mediabucket: {
-				width:500,
-				height:363,
-				anchor-x:center
+				width:470,
+				height:341
 			}
         }}
 		]
     }</style>
 	
 	<panel id="body_container">
-    	<box id="article_advertisement" class="column2">
-			<box id="skyscraper_ad" class="ad-skyscraper" embed="advertisement" />
-		</box>
 		<box id="mediabucket_container">
 			<box id="mediabucket" embed="mediabucket" />
 		</box>
-        <panel class="article_body" id="body_continuation" embed="body" />
-	</panel>
+        <box id="article_advertisement" class="column2">
+			<box id="skyscraper_ad" class="ad-skyscraper" embed="advertisement" />
+		</box>
+		<panel class="article_body" id="body_continuation" embed="body" />
+    </panel>
 	
 </jpml>

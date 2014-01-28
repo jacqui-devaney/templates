@@ -19,18 +19,16 @@
 		}},
 
 		{if: =portrait, then: {
-            #mediabucket_container:	{ frame: [0, 0, 502, 379]},
+	        #mediabucket_container:	{ frame: [0, 0, 485, 364]},
 			#mediabucket: {
-				width:500,
-				height:363,
-				anchor-x:center
+				width:480,
+				height:354
 			}
         }, else: {
-        	#mediabucket_container:	{ frame: [256, 0, 502, 379] },
+	    	#mediabucket_container:	{ frame: [245, 0, 502, 351] },
 			#mediabucket: {
-				width:500,
-				height:363,
-				anchor-x:center
+				width:470,
+				height:341
 			}
         }}		
 		]

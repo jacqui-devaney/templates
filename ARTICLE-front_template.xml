@@ -1,12 +1,18 @@
 <jpml id="ARTICLE-front_template">
     <style src="GRID-stylesheet.ejs"/>
 	<style>{
-        if: =portrait, then: {
-            #view: { 
+		if: =portrait, then: {
+            jpml: {
+				padding:[10, 0, 0, 0]
+			},
+			#view: { 
                 top:0,
                 height:942
              }
         }, else: {
+            jpml: {
+				padding:[10, 0, 0, 0]
+			},
             #view : {
 				top:0,
 				height:686

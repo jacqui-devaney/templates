@@ -3,13 +3,19 @@
 	<style src="ADVERTISING-stylesheet.ejs"/>
     <style>{
         if: =portrait, then: {
-            #view: { 
-                top:5,
+            jpml: {
+				padding:[10, 0, 0, 0]
+			},
+			#view: { 
+                top:0,
                 height:932
              }
         }, else: {
+            jpml: {
+				padding:[10, 0, 0, 0]
+			},
             #view : {
-                top:5,
+                top:0,
                 height:676
             }       
         }

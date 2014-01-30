@@ -1,15 +1,17 @@
 <jpml id="OPINION-7story-E_template">
 	<style src="GRID-stylesheet.ejs"/>
+	<style src="ADVERTISING-stylesheet.ejs"/>
 	<style src="PHONE-stylesheet.ejs"/>
 	<style>{
 		#b1: {
 			options:{rando_header:true}
 		},
 		
-		#b4: {options: {medium_headline:true, show_image:true, show_byline:true, one_column:true, small_headline:{if: =scale.phone, then:true}}},		
-		#b5: {options: {medium_headline:true, show_byline:true, small_headline:{if: =scale.phone, then:true}}},			
-		#b6: {options: {small_headline:true}},			
-		#b7: {options: {small_headline:true}}			
+		#b4: {options: {small_headline:true, show_byline:true, show_flashline:true}},		
+		#b5: {options: {small_headline:true, show_byline:true, show_flashline:true}},			
+		#b6: {options: {small_headline:true, show_byline:true, show_flashline:true}},			
+		#b7: {options: {small_headline:true, show_byline:true, show_flashline:true}},			
+		#b8: {options: {small_headline:true, show_byline:true, show_flashline:true}}			
 	
 	}</style>
     <style>{ 
@@ -19,75 +21,87 @@
 			}},
 			{if: =portrait, then: {
 				#b1: {
-					top:45,
-					height:225
+					top:0,
+					height:169
 				},
 				#b2: {
-					top:292,
-					height:171
+					top:179,
+					height:127
 				},
 				#b3: {
-					top:484,
-					height:171
+					top:316,
+					height:127
 				},
 				#b4: {
-					top:0,
-					height:457
+					top:463,
+					height:335
 				},
 				#b5: {
-					top:484,
-					height:170
+					top:0,
+					height:188
 				},
 				#b6: {
-					top:680,
-					height:230
+					top:204,
+					height:188
 				},
 				#b7: {
-					top:680,
-					height:230
+					top:408,
+					height:188
+				},
+				#b8: {
+					top:612,
+					height:188
 				}
 			}}, 
 			{if: =landscape, then: {
 				#b1: {
 					top:0,
-					height:157
+					height:129
 				},
 				#b2: {
-					top:185,
-					height:103
+					top:139,
+					height:87
 				},
 				#b3: {
-					top:318,
-					height:103
+					top:236,
+					height:87
 				},
 				#b4: {
 					top:0,
-					height:480
+					height:335
 				},
 				#b5: {
-					top:500,
-					height:151
+					top:362,
+					height:204
 				},
 				#b6: {
-					top:462,
-					height:190
+					top:362,
+					height:204
 				},
 				#b7: {
-					top:462,
-					height:190
+					top:362,
+					height:204
+				},
+				#b8: {
+					top:362,
+					height:204
 				}
 				
 			}}
 		]
     }</style>
     
-    <box id="b1" embed="article" class="column8-6 positionx1 maude unit_100" module="OPINION-RANDO-LETTERS_module.xml" />
-    <box id="b2" embed="article" class="column8-6 positionx1 maude unit_100" module="OPINION-RANDO-LETTERS_module.xml" />
-    <box id="b3" embed="article" class="column8-6 positionx1 maude unit_100" module="OPINION-RANDO-LETTERS_module.xml" />
-	<box id="b4" embed="article" class="column8-6 positionx9-7 maude unit_50" module="TOP-IMAGE_module.xml" />
-	<box id="b5" embed="article" class="column8-6 positionx9-7 maude unit_50" module="TOP-IMAGE_module.xml" />
-	<box id="b6" embed="article" class="column4-6 positionx1 maude unit_50" module="TOP-IMAGE_module.xml" />
-	<box id="b7" embed="article" class="column4-6 positionx5-7 maude unit_50" module="TOP-IMAGE_module.xml" />
+    <box id="b1" embed="article" class="column8 positionx1 maude unit_100" module="OPINION-RANDO-LETTERS_module.xml" />
+    <box id="b2" embed="article" class="column8 positionx1 maude unit_100" module="OPINION-RANDO-LETTERS_module.xml" />
+    <box id="b3" embed="article" class="column8 positionx1 maude unit_100" module="OPINION-RANDO-LETTERS_module.xml" />
+	<box id="b4" embed="article" class="column8 positionx9-1 maude unit_50" module="DECO_module.xml" />
+	<box id="b5" embed="article" class="column4 positionx1-9 maude unit_50" module="TOP-IMAGE_module.xml" />
+	<box id="b6" embed="article" class="column4 positionx5-9 maude unit_50" module="TOP-IMAGE_module.xml" />
+	<box id="b7" embed="article" class="column4 positionx9 maude unit_50" module="TOP-IMAGE_module.xml" />
+	<box id="b8" embed="article" class="column4 positionx13-9 maude unit_50" module="TOP-IMAGE_module.xml" />
+	<box id="front_page" class="positionx_full column_full maude unit_ad">
+		<box id="banner_ad" class="ad-banner front_ad" embed="advertisement" />
+	</box>
 
     
 

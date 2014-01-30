@@ -138,56 +138,11 @@
 		line-height:{if: =options.large_headline, then:45, else:28}
 	},
 	.module_flashline: {
-		font-name:{if: =article.type, equals:"Letters", then:DJ5EscrowCond-Bold, else: DJ5RetinaCd-Semibold},
-		font-size:14,
-		line-height:20,
-		color:{if: =article.type, equals:"Letters", then:#b08900, else: #656565},
-		text-transform:{if: =article.type, equals:"Letters", then:uppercase, else: none},
-		paragraph-padding: [ 0, 0, 20, 0 ]
-	},
-	.highlight_flashline: {
-		font-name:DJ5RetinaCd-Semibold,
-		font-size:16,
-		line-height:18,
-		color:#656565,
-		paragraph-padding: [ 0, 0, 20, 0 ]
-	},
-	.highlight_headline: {
-		font-name: { $switch: [
-				{if: =issue.edition, equals: "japan", then: HiraKakuProN-W6},
-				{if: =issue.edition, equals: "korea", then: AppleSDGothicNeo-Bold},
-				"DJ5Exchange-Bold"
-			]
-		},
-		font-size:18,
-		line-height:20,
-		color:#000,
-		padding: [ 5, 0, 5, 0 ],
-		text-scale:{if: =widescreen, then: {$multiply: [=scale.text, 1.1] }, else: inherit}
-		
-	},
-	.highlight_byline: {
-		font-name:DJ5Exchange-Bold,
-		font-size:12,
-		line-height:16,
-		paragraph-padding: [ 4, 0, 3, 0 ],
-		text-scale:{if: =widescreen, then: {$multiply: [=scale.text, 1.1] }, else: inherit}
-		
-	},
-	.highlight_body: {
-		font-name: { if: =issue.edition, equals: "japan", then: HiraKakuProN-W3, else: DJ5Exchange-Medium },
-		font-size:14,
-		line-height:16,
-        text-align: { if: =options.justify, then:=justify, else:left},
-		color:#000,
-		text-scale:{if: =widescreen, then: {$multiply: [=scale.text, 1.1] }, else: inherit},
-		text-indent:{if-any: [
-				{if: =issue.edition, equals: "japan", then:true},
-				{if: =options.no_indent, then:true}
-			],
-			then:0,
-			else:20
-		}
+		font-name:DJ5EscrowCond-Light,
+		font-size:11,
+		line-height:13,
+		color:#9d8e33,
+		text-transform:uppercase
 	},
 	.key: {
 		font-name: {if: =device.platform, equals: Android, then: DJ5Utility, else: DJ5Utility-Regular },
@@ -198,9 +153,10 @@
 		color:#948464
 	},
 	.byline: {
-		font-name:DJ5Exchange-Semibold,
+		font-name:DJ5Exchange-Medium,
 		font-size:14,
-		line-height:17
+		line-height:20,
+		color:#9b9b9b
 
 	},
 	.hidden_tablet: {

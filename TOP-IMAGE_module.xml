@@ -68,8 +68,7 @@
 					text-indent: {if: =options.indent, then:20, else:0}
 				},
 				.module_flashline: {
-					display: {if-any: [{if: =article.type, equals:"Letters"}, {if: =options.show_flashline}], then:inherit, else:none},
-					color: #d6a90c
+					display: {if: =options.show_flashline, then:inherit, else:none}
 				}
 			}
 		]

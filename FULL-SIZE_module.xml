@@ -1,0 +1,43 @@
+<jpml id="FULL-SIZE_module">
+	<style src="GLOBAL_MODULES-stylesheet.ejs" />
+	<style src="GLOBAL-stylesheet.ejs" />
+	<style src="PHONE-MODULES-stylesheet.ejs" />
+	<style>{
+			image:{
+				width:=view.width,
+				height: {$subtract:[=view.height, 1]},
+				image-scale: {if: =options.full_screen, then:.9, else:1}
+				
+			},
+			#deco_caption_container: {
+				bottom:40,
+				background-color:"rgba(0, 0, 0, .5)",
+				padding:[25, 8],
+				width:774
+				
+			},
+			.module_headline: {
+				color:#fff
+			},
+			.body: {
+				color:#fff
+			},
+			#gradient: {
+				background-image:url(white_gradient.png),
+				top:0,
+				height:148,
+				width:1024
+			}
+	}</style>
+			<box id="deco_container" embed="deco-image">
+				<image embed="summary-image" />
+				<box id="gradient" />
+				<box id="deco_caption_container">
+					<p class="module_headline"><span embed="headline" /><mark class="key" /></p>
+					<panel class="body">
+						<p embed="body-first-p" />
+					</panel>
+				</box>
+			</box>
+			
+</jpml>

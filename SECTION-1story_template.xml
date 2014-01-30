@@ -1,0 +1,40 @@
+<jpml id="SECTION-1story_template">
+	<style src="GLOBAL_MODULES-stylesheet.ejs"/>
+    <style src="GRID-stylesheet.ejs"/>
+    <style>{
+	
+		#deco: {
+			options:{$switch:[
+				{if: =portrait, then: {large_headline:true}},
+				{if: =landscape, then: {very_large_headline:true, full_screen:true, large_body:true}}
+			]	
+		}}
+		
+	}</style>
+	<style> {
+		$switch: [
+			{if: =scale.phone, then: {
+			
+			}},
+			{if: =portrait, then: {
+				jpml: {padding:[0]},
+				#deco:	{ 
+						top:0,
+						height:1024
+				}
+			
+			}}, 
+			{if: =landscape, then: {
+				jpml: {padding:[0]},
+				#deco:	{ 
+					top:0,
+					height:768
+				}
+
+			}}
+		]
+	} </style>
+	<box id="deco" embed="article" class="column_full positionx_full" module="FULL-SIZE_module.xml" />
+	
+</jpml>
+

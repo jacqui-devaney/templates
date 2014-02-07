@@ -34,7 +34,7 @@
 		#b5: {
 			options:{$switch:[
 				{if: =scale.phone, then: {no_border:true}},
-				{if: =portrait, then: {small_headline:true}},
+				{if: =portrait, then: {small_headline:true, bottom_align:true}},
 				{if: =landscape, then: {small_headline:true}}
 			]	
 		}},
@@ -61,21 +61,21 @@
 					height:366
 				},
 				#b2:	{ 
-						top:553,
+						top:550,
 						height:144
 				},
 				#b3:	{ 
-					top:553,
+					top:550,
 					height:144
 					
 				},
 				#b4: {
-					top:553,
+					top:550,
 					height:144
 				},
 				#b5: {
-					top:716,
-					height:108
+					top:703,
+					height:117
 				}
 			
 			}}, 

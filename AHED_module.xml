@@ -53,7 +53,7 @@
 					pixels-per-point-x:1,
 					pixels-per-point-y:1,
 					height: 76, 
-					padding: [0, 0, 0, 9],
+					padding: [0, 0, {if: =options.bottom_align, then:0, else:20}, 9],
 					display:{if: =article.type, equals:"A-hed", then: inherit, else:none},
 					image-scale:.9
 	            },

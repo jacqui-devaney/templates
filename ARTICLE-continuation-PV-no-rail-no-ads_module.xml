@@ -20,10 +20,13 @@
 			content: from-flow(article_body),
 			flow: article_body
 		}},
-		{#mediabucket: {
+		{#media: {
 			width:546,
 			height:385,
-			anchor-x:center
+			anchor-x:center,
+			options: {
+				id: =page.number
+			}
 		}},
 
 		{if: =portrait, then: {
@@ -61,7 +64,7 @@
 			<p><mark id="continued" /></p>
 		</box>
 		<box id="mediabucket_container">
-			<box id="mediabucket" embed="mediabucket" />
+			<box id="media" embed="media" />
 		</box>
 		<panel class="article_body" id="body_continuation" embed="body"/>
     </panel>

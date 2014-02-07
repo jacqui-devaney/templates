@@ -36,11 +36,14 @@
 			border-width:[3, 0, 0, 0],
 			border-color:#10507f
 		}},
-		{#mediabucket: {
+		{#media: {
 			width:546,
 			height:385,
 			anchor-x:center,
-			padding: [0, 0, 0, 8]
+			padding: [0, 0, 0, 8],
+			options: {
+				id: =page.number
+			}
 		}},
 		{if: =portrait, then: {
             #mediabucket_container:	{ frame: [0, 0, 565, 402]  }
@@ -78,7 +81,7 @@
 	
 	<panel id="body_container">
 		<box id="mediabucket_container">
-			<box id="mediabucket" embed="mediabucket" />
+			<box id="media" embed="media" />
 		</box>
 		<p class="article_byline" embed="byline"/>
         <panel class="article_body" embed="body"/>

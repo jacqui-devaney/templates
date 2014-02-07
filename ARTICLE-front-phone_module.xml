@@ -8,11 +8,14 @@
             padding: [0, 10, 0, 10],
 			flow: article_body
         }},
-		{#mediabucket: {
+		{#media: {
 			width:248,
 			height:180,
 			padding:[0, 10, 0, 10],
-			anchor-x:center
+			anchor-x:center,
+			options: {
+				id: =page.number
+			}
 		}}
 		]
     }</style>
@@ -43,7 +46,7 @@
 	</panel>
 	
 	<panel id="body_container">
-		<box id="mediabucket" embed="mediabucket" />
+		<box id="media" embed="media" />
 		<p class="article_byline" embed="byline"></p>
         <panel class="article_body" embed="body"/>
 	</panel>

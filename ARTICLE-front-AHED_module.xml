@@ -19,10 +19,13 @@
 			hyphens:auto,
 			column-min-height:50
 		}},
-		{#mediabucket: {
+		{#media: {
 			width:546,
 			height:385,
-			anchor-x:center
+			anchor-x:center,
+			options: {
+				id: =page.number
+			}
 		}},
 		{if: =portrait, then: {
             .portrait_bucket:	{ frame: [14, 10, 565, 402], display:inherit },
@@ -76,7 +79,7 @@
 		<p><mark id="continues" /></p>
 	</box>
 	<box id="mediabucket_container" class="portrait_bucket">
-        <box id="mediabucket" class="portrait_media" embed="mediabucket" />
+        <box id="media" class="portrait_media" embed="media" />
     </box>
     
     <panel id="header_top">
@@ -87,7 +90,7 @@
 	<box class="hr"></box>
 	<panel>
 		<box id="mediabucket_container" class="landscape_bucket">
-			<box id="mediabucket" embed="mediabucket" class="landscape_media" />
+			<box id="media" embed="media" class="landscape_media" />
 		</box>
 		<panel id="body_container">
 			<box id="image_container">

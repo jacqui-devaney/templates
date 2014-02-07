@@ -18,10 +18,13 @@
 		{.article_body:{
 			column-min-height:50
 		}},
-		{#mediabucket: {
+		{#media: {
 			width:546,
 			height:385,
-			anchor-x:center
+			anchor-x:center,
+			options: {
+				id: =page.number
+			}
 		}},
 		{if: =portrait, then: {
             #mediabucket_container:	{ frame: [14, 10, 565, 402]  }
@@ -60,7 +63,7 @@
 	<box class="hr"></box>
 	<panel>
 		<box id="mediabucket_container">
-			<box id="mediabucket" embed="mediabucket" />
+			<box id="media" embed="media" />
 		</box>
 		<panel id="body_container">
 			<p class="article_byline" embed="byline"/>

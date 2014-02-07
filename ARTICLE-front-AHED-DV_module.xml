@@ -40,11 +40,14 @@
 			
 		}},
 
-		{#mediabucket: {
+		{#media: {
 			width:270,
 			height:430,
 			anchor-x:center,
-			anchor-y:top
+			anchor-y:top,
+			options: {
+				id: =page.number
+			}
 		}},
 		{if: =portrait, then: {
             #mediabucket_container:	{ 
@@ -94,7 +97,7 @@
 	<box class="hr"></box>
     <panel>
 		<box id="mediabucket_container">
-			<box id="mediabucket" embed="mediabucket" />
+			<box id="media" embed="media" />
 		</box>
 		<panel id="body_container">
 			<box id="image_container">

@@ -17,11 +17,14 @@
 			flow: article_body
 		}},
 		
-		{#mediabucket: {
+		{#media: {
 			width:297,
 			height:218,
 			anchor-x:center,
-			anchor-y:top
+			anchor-y:top,
+			options: {
+				id: =page.number
+			}
 		}},
 		{if: =portrait, then: {
 			#mediabucket_container:	{ frame: [379, 36, 350, 235]  }
@@ -53,7 +56,7 @@
 			<p><mark id="continued" /></p>
 		</box>
 		<box id="mediabucket_container">
-			<box id="mediabucket" embed="mediabucket" />
+			<box id="media" embed="media" />
 		</box>
 		<panel class="article_body" id="body_continuation" embed="body"/>
 	    

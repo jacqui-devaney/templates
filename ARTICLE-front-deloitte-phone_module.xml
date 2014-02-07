@@ -48,11 +48,14 @@
 			display: none
 		}},
 		
-		{#mediabucket: {
+		{#media: {
 			width:248,
 			height:180,
 			padding:[0, 10, 0, 10],
-			anchor-x:center
+			anchor-x:center,
+			options: {
+				id: =page.number
+			}
 		}},	
 		{#filler: {
 			position: relative,
@@ -106,7 +109,7 @@
 	
 	<panel id="body_container">
 		<box id="mediabucket_container">
-			<box id="mediabucket" embed="mediabucket" />
+			<box id="media" embed="media" />
 		</box>
         <panel class="deloitte_article_body" embed="body"/>
 	    

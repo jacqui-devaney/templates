@@ -16,10 +16,22 @@
 		}},
 		{if: =portrait, then: {
             #mediabucket_container:	{ frame: [0, 0, 571, 591]},
-			#mediabucket: {frame: [0, 0, 571, 589], anchor-x:left}
+			#media: {
+				frame: [0, 0, 571, 589], 
+				anchor-x:left,
+				options: {
+					id: =page.number
+				}
+			}
         }, else: {
         	#mediabucket_container:	{ frame: [0, 0, 612, 622]},
-			#mediabucket: {frame: [0, 0, 602, 620], anchor-x:left}
+			#media: {
+				frame: [0, 0, 602, 620], 
+				anchor-x:left,
+				options: {
+					id: =page.number
+				}
+			}
         }}
 		
 
@@ -27,7 +39,7 @@
     }</style>
 	
 	<box id="mediabucket_container">
-		<box id="mediabucket" embed="mediabucket" />
+		<box id="media" embed="media" />
 	</box>
 	<panel id="header_top">
         <p class="offduty_article_headline"><span embed="headline"/><mark class="key"/></p>

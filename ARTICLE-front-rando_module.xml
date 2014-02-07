@@ -15,10 +15,13 @@
 			column-height:balance,
 			flow: article_body
         }},
-		{#mediabucket: {
+		{#media: {
 			width:546,
 			height:385,
-			anchor-x:center
+			anchor-x:center,
+			options: {
+				id: =page.number
+			}
 		}},
 	
 		{if: =portrait, then: {
@@ -86,7 +89,7 @@
 	<box class="hr"></box>
 	<panel id="body_container">
 		<box id="mediabucket_container">
-			<box id="mediabucket" embed="mediabucket" />
+			<box id="media" embed="media" />
 		</box>
         <box id="rando_padding">
 			<box id="rando_container">

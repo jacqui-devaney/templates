@@ -19,9 +19,12 @@
 			flow: article_body
 		}},
 
-		{#mediabucket: {
+		{#media: {
 			width:246,
-			height:392
+			height:392,
+			options: {
+				id: =page.number
+			}
 		}},
 		{if: =portrait, then: {
             #mediabucket_container:	{ 
@@ -42,7 +45,7 @@
 	
 	<panel id="body_container">
         <box id="mediabucket_container" class="column2">
-			<box id="mediabucket" embed="mediabucket" />
+			<box id="media" embed="media" />
 		</box>
 		<panel class="article_body" id="body_continuation" embed="body"/>
     </panel>

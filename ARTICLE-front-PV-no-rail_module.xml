@@ -11,7 +11,12 @@
 			column-height:balance,
 			flow: article_body
         }},
-		{#mediabucket: {frame: [0, 0, 720, 600] }},
+		{#media: {
+			frame: [0, 0, 720, 600],
+			options: {
+				id: =page.number
+			}
+		}},
 		{if: =portrait, then: {
             #mediabucket_container:	{frame: [15, 40, 718, 600]}
         }, else: {
@@ -42,7 +47,7 @@
 		<p id="this_close_button_p">Close</p>
 	</box>
 	<box id="mediabucket_container">
-		<box id="mediabucket" embed="mediabucket"></box>
+		<box id="media" embed="media"></box>
 	</box>
 	<panel id="header_top">
         <p class="offduty_article_headline"><span embed="headline"/><mark class="key"/></p>

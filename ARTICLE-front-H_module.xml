@@ -17,10 +17,13 @@
 				padding: [10, 0, 0, 20],
 				layout-grid-line: {$multiply: [22, =view.zoomlevel]},
 				layout-grid-line-offset: {$multiply: [34, =view.zoomlevel]}},
-			#mediabucket: {
+			#media: {
 				width:740,
 				height:503,
-				anchor-x:center
+				anchor-x:center,
+				options: {
+					id: =page.number
+				}
 			},
 			.hr: {
 				width:520
@@ -28,10 +31,13 @@
 		
 		}, else: {
         	#mediabucket_container:	{ frame: [28, 110, 749, 512]},
-        	#mediabucket: {
+        	#media: {
 				width:740,
 				height:503,
-				anchor-x:middle
+				anchor-x:middle,
+				options: {
+					id: =page.number
+				}
 			},
         	#header_top: { padding:[10, 10, 8, 15]},
 			#head:{ padding: [0, 0, 0, 0], max-height:130},
@@ -46,7 +52,7 @@
 	]
     }</style>
 	<box id="mediabucket_container">
-		<box id="mediabucket" embed="mediabucket" />
+		<box id="media" embed="media" />
 	</box>
 	<panel id="head">
 		<panel id="header_top">

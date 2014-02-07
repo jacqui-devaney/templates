@@ -15,10 +15,13 @@
 			content: from-flow(article_body),
 			flow: article_body
 		}},
-		{#mediabucket: {
+		{#media: {
 			width:546,
 			height:385,
-			anchor-x:center
+			anchor-x:center,
+			options: {
+				id: =page.number
+			}
 		}},
 		{if: =portrait, then: {
             #mediabucket_container:	{ frame: [0, 25, 565, 402]  },
@@ -35,7 +38,7 @@
 			<p><mark id="continued" /></p>
 		</box>
 		<box id="mediabucket_container">
-			<box id="mediabucket" embed="mediabucket" />
+			<box id="media" embed="media" />
 		</box>
         <box id="ad_container">
 			<box id="article_advertisement" class="ad-twocolumn" embed="advertisement" />

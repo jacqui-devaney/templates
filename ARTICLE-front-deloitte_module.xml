@@ -46,11 +46,14 @@
 			bottom:0
 		}},
 		
-		{#mediabucket: {
+		{#media: {
 			width:314,
 			height:229,
 			anchor-x:center,
-			anchor-y:top
+			anchor-y:top,
+			options: {
+				id: =page.number
+			}
 		}},
 		{if: =portrait, then: {
 			#mediabucket_container:	{ frame: [379, 0, 354, 249],padding:[0, 0, 0, 0]  }
@@ -120,7 +123,7 @@
 	
 	<panel id="body_container">
 		<box id="mediabucket_container">
-			<box id="mediabucket" embed="mediabucket" />
+			<box id="media" embed="media" />
 		</box>
         <panel class="deloitte_article_body" embed="body"/>
 	    

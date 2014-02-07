@@ -2,17 +2,11 @@
 	<style src="GRID-stylesheet.ejs"/>
     <style>{
         if: =portrait, then: {
-            jpml: {
-				padding:[10, 0, 0, 0]
-			},
             #view: { 
                 top:5,
                 height:932
              }
         }, else: {
-            jpml: {
-				padding:[10, 0, 0, 0]
-			},
             #view : {
                 top:5,
                 height:676

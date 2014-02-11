@@ -8,7 +8,7 @@
 		}},
 		{.article_body: { 
             column-count: { if: =portrait, then: 3, else: 4},
-            column-gutter: 10,
+            column-gutter: 12,
 			layout-grid-line: {$multiply: [24, =view.zoomlevel]}
         }},
 
@@ -19,19 +19,37 @@
 		}},
 
 		{if: =portrait, then: {
-	        #mediabucket_container:	{ frame: [0, 0, 485, 364]},
 			#media: {
-				width:480,
-				height:354,
+				top: 0,
+				left:{if: =media.width, less-than: 360, then: 0, else: {if: =media.width, more-than: 484, then: 0, else: 124}},
+				width: {$switch: [
+					{if: =media.width, less-than: 360, then: 236},
+					{if: =media.width, more-than: 484, then: 484},
+					360
+				]},
+				height: {$min: [{$max: [{$switch: [
+					{if: =media.width, less-than: 360, then: {$divide: [236, =media.aspect]}},
+					{if: =media.width, more-than: 484, then: {$divide: [484, =media.aspect]}},
+					{$divide: [360, =media.aspect]}
+				]}, {$multiply: [.25, =view.height]}]}, {$multiply: [.75, =view.height]}]},
 				options: {
 					id: =page.number
 				}
 			}
         }, else: {
-	    	#mediabucket_container:	{ frame: [245, 0, 502, 351] },
 			#media: {
-				width:470,
-				height:341,
+				top: 0,
+				left:{if: =media.width, less-than: 360, then: 248, else: {if: =media.width, more-than: 484, then: 248, else: 372}},
+				width: {$switch: [
+					{if: =media.width, less-than: 360, then: 236},
+					{if: =media.width, more-than: 484, then: 484},
+					360
+				]},
+				height: {$min: [{$max: [{$switch: [
+					{if: =media.width, less-than: 360, then: {$divide: [236, =media.aspect]}},
+					{if: =media.width, more-than: 484, then: {$divide: [484, =media.aspect]}},
+					{$divide: [360, =media.aspect]}
+				]}, {$multiply: [.25, =view.height]}]}, {$multiply: [.75, =view.height]}]},
 				options: {
 					id: =page.number
 				}
@@ -41,9 +59,7 @@
     }</style>
 	
 	<panel id="body_container">
-        <box id="mediabucket_container">
-			<box id="media" embed="media" />
-		</box>
+		<box id="media" embed="media" />
 		<panel class="article_body" id="body_continuation" embed="body"/>
     </panel>
 </jpml>

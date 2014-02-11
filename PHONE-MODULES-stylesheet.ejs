@@ -176,7 +176,7 @@
 		line-height:{$multiply: [16, =view.zoomlevel]}
 	},
 	#media: {
-		display: {if: =page.mediabucket, then:inherit, else:none}
+		display: {if: =page.hasmedia, then:inherit, else:none}
 	},
 	#pagenext: {
 		display: none

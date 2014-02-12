@@ -5,12 +5,12 @@
         if: =portrait, then: {
 			#view: { 
                 top:0,
-                height:932
+                height:910
              }
         }, else: {
             #view : {
                 top:0,
-                height:676
+                height:654
             }       
         }
     }</style>

@@ -145,7 +145,15 @@
 			usage="ads" 
 		/>
 		<!-- END FULL PAGE AD -->
+		<!-- TEST TEMPLATE -->
+		<template 
+			name="TEST-4-grid_template.xml" 
+			usage="front" 
+			title="Grid Overlay"
+			min="1" 
+		/>
 		
+		<!-- END TEST TEMPLATE -->
 		
 	</templates>
 

@@ -1,4 +1,4 @@
-<jpml id="TOP-IMAGE_module">
+<jpml id="IMAGE-HEADLINE_module">
 	<style src="GLOBAL_MODULES-stylesheet.ejs" />
 	<style src="PHONE-MODULES-stylesheet.ejs" />
 	<style>{
@@ -7,7 +7,7 @@
 				{ if: =options.top_border, then: {
 					jpml: {
 						border-width: [1, 0, 0, 0],
-						padding: [8, 10, 0, 0],
+						padding: [8, 0, 0, 0],
 						border-color: #d8d8d8
 					}
 			
@@ -35,44 +35,36 @@
 					}
 				}}
 			]},
-			{
-				#body: { 
-		            column-count: {
-						if: =options.one_column, then:1, else:{$divide: [=view.width, {$multiply:[300, =scale.dpi]}]}
-					},
-		            column-gutter: 20,
-					display: {if: =options.hide_body, then:none, else:inherit}
-		        },
-				image: {
-					pixels-per-point-x:1,
-					pixels-per-point-y:1,
-					width: {$subtract: [=view.width]},
-					height: {$multiply: [=view.width, .66 ]}, 
-	                display: { if: =options.show_image, then:inherit, else:none },
-					padding: [0, 0, 0, 0],
-					options: {
-						$switch: [
-							{if: =options.F_image, then: {match:{width:571, height:226, max-height:226}}},
-							{ if: =options.OZ_image, then: {match: { width:570, height:612, min-height:612 } } },
-							{ if: =options.DV_image, then: {match: { width:262, height:394, min-height:394 } } },
-							{ if: =options.G_image, then: {match: { width:553, height:369, min-height:369 } } }
+		{
+			#body: { 
+	            column-count: {
+					if: =options.one_column, then:1, else:{$divide: [=view.width, {$multiply:[300, =scale.dpi]}]}
+				},
+	            column-gutter: 20,
+				display: {if: =options.hide_body, then:none, else:inherit}
+	        },
+			image: {
+				pixels-per-point-x:1,
+				pixels-per-point-y:1,
+				width: {$subtract: [=view.width]},
+				height: {$multiply: [=view.width, .66 ]}, 
+	               display: { if: =options.show_image, then:inherit, else:none },
+				padding: [0, 0, 10, 0],
+				options: {
+					$switch: [
+						{if: =options.F_image, then: {match:{width:571, height:226, max-height:226}}},
+						{ if: =options.OZ_image, then: {match: { width:570, height:612, min-height:612 } } },
+						{ if: =options.DV_image, then: {match: { width:262, height:394, min-height:394 } } },
+						{ if: =options.G_image, then: {match: { width:553, height:369, min-height:369 } } }
 						]
 					},
-	                image-scale: 1
-	            },
-				.byline: {
-					display:{if: =options.show_byline, then:inherit, else:none}
-					
-				},
-				#body-first-p: {
-					text-indent: {if: =options.indent, then:20, else:0}
-				},
-				.module_flashline: {
-					display: {if: =options.show_flashline, then:inherit, else:none}
-				}
+				image-scale: 1
+			},
+			.module_headline: {
+				padding:[0]
 			}
-		]
-	}</style>
+		}
+	]}</style>
 	<style>{
 		if: =scale.phone, then: {
 			jpml: {
@@ -116,14 +108,8 @@
 		<image id="deco-image" embed="summary-image" />
 	</box>
 	<panel id="vertical">
-		<p class="module_caption">This is a photo caption.  <em>Photo credit</em></p>
 		<panel id="headline">
-			<p class="module_flashline"><span embed="flashline" /></p>
 			<p class="module_headline"><span embed="headline" /><mark class="key" /></p>
-		</panel>
-		<panel id="body">
-			<p class="byline" embed="byline"/>
-			<panel class="body" embed="body"/>
 		</panel>
 	</panel>
 </jpml>

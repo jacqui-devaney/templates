@@ -45,8 +45,18 @@
 			storyorder="feed"
 		/>
 		<!-- END SECTIONS -->
+		<template 
+			name="SECTION-6story-scroll_template.xml" 
+			title="6 Stories - Scrollable Rail"
+			min="6" 
+			deco="true"
+			usage="continuation"
+			page="2"
+		/>
 		
-		
+		<!-- SECTION CONTINUATION -->
+			
+		<!-- END SECTION CONTINUATION -->
 		<!-- GENERIC CONTINUATION -->
 		<template 
 			name="CONTINUATION-generic-12_template.xml" 

@@ -1,0 +1,110 @@
+<xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="1.0" xmlns:media="http://search.yahoo.com/mrss">
+	<xsl:output method="xml" encoding="UTF-8" indent="yes"/>
+	<xsl:variable name="smallcase" select="'abcdefghijklmnopqrstuvwxyz'"/>
+	<xsl:variable name="uppercase" select="'ABCDEFGHIJKLMNOPQRSTUVWXYZ'"/>
+
+<xsl:template match="/rss">
+	<jpml>
+		<style src="GLOBAL_MODULES-stylesheet.ejs"/>
+		<style src="RIGHT_RAIL-stylesheet.ejs"/>
+		
+		<panel class="main">
+			<xsl:apply-templates select="channel"/>
+		</panel>
+	</jpml>
+</xsl:template>
+
+<xsl:template match="channel">
+	<xsl:apply-templates select="item"/>
+</xsl:template>
+
+<xsl:template match="item">
+	<xsl:choose>
+    	<xsl:when test="position() != last()">
+			<box class="item">
+				<xsl:if test="media:content">
+					<box class="image_container">
+						<image>
+							<xsl:attribute name="embed"><xsl:call-template name="get_file_name">
+								<xsl:with-param name="input">
+									<xsl:value-of select="media:content/@url"/>
+								</xsl:with-param>
+							</xsl:call-template></xsl:attribute>
+						</image>
+					</box>
+				</xsl:if>
+				<p>
+					<a class="item-link">
+						<xsl:attribute name="href">
+							<xsl:call-template name="get_jpml_file">
+								<xsl:with-param name="input">
+									<xsl:value-of select="link"/>
+								</xsl:with-param>
+							</xsl:call-template>
+						</xsl:attribute>
+						<span class="module_flashline">
+							<xsl:value-of select="@display-name"/>
+						</span>
+						<break/>
+		              	<span class="item-title">				
+							<xsl:value-of select="title"/>
+						</span>
+						<break/>
+		              	<break/>
+						<mark class="item-before-description"/>
+						<span class="item-description">
+							<xsl:value-of select="description"/>
+						</span>
+						<mark class="item-after-description"/>
+					</a>
+				</p>
+			</box>
+		</xsl:when>
+	</xsl:choose>
+</xsl:template>
+
+<xsl:template name="get_jpml_file">
+	<xsl:param name="input"/>
+	<xsl:call-template name="replace_file_extension">
+		<xsl:with-param name="input">
+			<xsl:call-template name="get_file_name">
+				<xsl:with-param name="input">
+					<xsl:value-of select="$input"/>
+				</xsl:with-param>
+			</xsl:call-template>
+		</xsl:with-param>
+		<xsl:with-param name="ext" select="'jpml'"/>
+	</xsl:call-template>
+</xsl:template>
+
+<xsl:template name="get_file_name">
+    <xsl:param name="input"/>
+    <xsl:choose>
+        <xsl:when test="contains($input, '/')">
+            <xsl:call-template name="get_file_name">
+                <xsl:with-param name="input" select="substring-after($input, '/')"/>
+            </xsl:call-template>
+        </xsl:when>
+        <xsl:otherwise>
+            <xsl:value-of select="$input"/>
+        </xsl:otherwise>
+    </xsl:choose>
+</xsl:template>
+
+<xsl:template name="replace_file_extension">
+    <xsl:param name="input"/>
+    <xsl:param name="ext"/>
+    <xsl:choose>
+        <xsl:when test="contains($input, '.')">
+            <xsl:value-of select="substring-before($input, '.')"/>.<xsl:call-template name="replace_file_extension">
+                <xsl:with-param name="input" select="substring-after($input, '.')"/>
+                <xsl:with-param name="ext" select="$ext"/>
+            </xsl:call-template>
+        </xsl:when>
+        <xsl:otherwise>
+            <xsl:value-of select="$ext"/>
+        </xsl:otherwise>
+    </xsl:choose>
+</xsl:template>
+
+</xsl:stylesheet>

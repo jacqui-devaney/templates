@@ -46,7 +46,7 @@
 			]	
 		}},
 		#rail_content: {
-			options: { filename: { $concat: [=section.name, "_RIGHT_RAIL.jpml"] } }
+			options: { filename: { $concat: [=section.name, "-article_list.jpml"] } }
 		}
 		
 	}</style>

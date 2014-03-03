@@ -44,7 +44,10 @@
 				{if: =portrait, then: {small_headline:true}},
 				{if: =landscape, then: {small_headline:true, top_border:true}}
 			]	
-		}}
+		}},
+		#rail_content: {
+			options: { filename: { $concat: [=section.name, "_RIGHT_RAIL.jpml"] } }
+		}
 		
 	}</style>
 	<style> {

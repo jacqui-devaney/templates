@@ -50,6 +50,13 @@
 			title="6 Stories - Scrollable Rail"
 			min="6" 
 			deco="true"
+			usage="front"
+		/>
+		<template 
+			name="SECTION-6story-scroll_template.xml" 
+			title="6 Stories - Scrollable Rail"
+			min="6" 
+			deco="true"
 			usage="continuation"
 			page="2"
 		/>

@@ -29,7 +29,7 @@
                <xsl:value-of select="metadata/item[@key = 'type']" />
             </span>
             <span class="paid">
-               <xsl:value-of select="metadata/item[@key = 'paid']" />
+               <xsl:if test="metadata/item[@key = 'paid'] = 'true'">K</xsl:if>
             </span>
             <break />
             <break />

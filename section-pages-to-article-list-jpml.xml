@@ -22,17 +22,13 @@
                   <xsl:value-of select="./@href" />
                </xsl:attribute>
             </a>
-            <span class="item-title">
-               <xsl:value-of select="metadata/item[@key = 'headline']" />
-            </span>
             <span class="module_flashline">
                <xsl:value-of select="metadata/item[@key = 'type']" />
             </span>
-            <span class="paid">
-               <xsl:if test="metadata/item[@key = 'paid'] = 'true'">K</xsl:if>
+            <break />
+            <span class="item-title">
+               <xsl:value-of select="metadata/item[@key = 'headline']" />
             </span>
-            <break />
-            <break />
          </p>
       </box>
    </xsl:template>

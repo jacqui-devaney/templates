@@ -15,21 +15,24 @@
       </jpml>
    </xsl:template>
    <xsl:template match="link">
-      <box class="item">
-         <p>
-            <a class="item-link">
-               <xsl:attribute name="href">
-                  <xsl:value-of select="./@href" />
-               </xsl:attribute>
-	            <span class="module_flashline">
-	               <xsl:value-of select="metadata/item[@key = 'type']" />
-	            </span>
-	            <break />
-	            <span class="item-title">
-	               <xsl:value-of select="metadata/item[@key = 'headline']" />
-	            </span>
-        	</a>
-         </p>
-      </box>
+      <!--  <xsl:if test="not(./@class)"> -->
+      <xsl:if test="not( ./@class ='inline-deco' or ./@class ='deco' )">
+	      <box class="item">
+	         <p>
+	            <a class="item-link">
+	               <xsl:attribute name="href">
+	                  <xsl:value-of select="./@href" />
+	               </xsl:attribute>
+		            <span class="module_flashline">
+		               <xsl:value-of select="metadata/item[@key = 'type']" />
+		            </span>
+		            <break />
+		            <span class="item-title">
+		               <xsl:value-of select="metadata/item[@key = 'headline']" />
+		            </span>
+	        	</a>
+	         </p>
+	      </box>
+      </xsl:if>
    </xsl:template>
 </xsl:stylesheet>

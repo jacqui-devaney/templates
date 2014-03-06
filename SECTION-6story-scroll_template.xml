@@ -3,7 +3,9 @@
     <style src="GRID-stylesheet.ejs"/>
     <style src="PHONE-stylesheet.ejs"/>
     <style>{
-	
+		jpml: {
+			padding:[70, 0, 0, 0]
+		},
 		#b1: {
 			options:{$switch:[
 				{if: =scale.phone, then: {large_headline:true, show_image:true}},
@@ -46,7 +48,10 @@
 			]	
 		}},
 		#rail_content: {
-			options: { filename: { $join: [=page.section, "-article_list.jpml"] } }
+			options: { 
+				filename: { $join: [=page.section, "-article_list.jpml"] },
+				bottom_gradient: #fff
+			}
 		}
 		
 	}</style>

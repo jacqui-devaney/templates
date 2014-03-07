@@ -63,7 +63,7 @@
 			{if: =portrait, then: {
 				#b1:	{ 
 						top:15,
-						height:446
+						height:431
 				},
 				#b2:	{ 
 					top:453,
@@ -94,7 +94,7 @@
 			{if: =landscape, then: {
 				#b1:	{ 
 					top:15,
-					height:446
+					height:431
 				},
 				#b2:	{ 
 					top:453,
@@ -106,7 +106,7 @@
 				},
 				#b4:	{ 
 					top:15,
-					height:209
+					height:194
 				},
 				#b5:	{ 
 					top:223,

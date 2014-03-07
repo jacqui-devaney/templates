@@ -4,7 +4,7 @@
     <style src="PHONE-stylesheet.ejs"/>
     <style>{
 		jpml: {
-			padding:[70, 0, 0, 0]
+			padding:[60, 0, 0, 0]
 		},
 		#b1: {
 			options:{$switch:[
@@ -62,7 +62,7 @@
 			}},
 			{if: =portrait, then: {
 				#b1:	{ 
-						top:0,
+						top:15,
 						height:446
 				},
 				#b2:	{ 
@@ -93,7 +93,7 @@
 			}}, 
 			{if: =landscape, then: {
 				#b1:	{ 
-					top:0,
+					top:15,
 					height:446
 				},
 				#b2:	{ 
@@ -105,7 +105,7 @@
 					height:218
 				},
 				#b4:	{ 
-					top:0,
+					top:15,
 					height:209
 				},
 				#b5:	{ 

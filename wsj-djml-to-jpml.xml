@@ -212,11 +212,6 @@
     <em><xsl:apply-templates select="*|node()"/></em>
 </xsl:template>
 
-    <!-- Suppress external links for now -->
-    <xsl:template match="link[@type='EXTERNAL' and not(@icon = 'pdf') and not(starts-with(//article//nameloc/nmlist, 'wsj:'))]">
-    <xsl:apply-templates/>
-</xsl:template>
-
 <xsl:template match="link">
     <xsl:variable name="id" select="@linkend" />
     <a>
@@ -229,6 +224,7 @@
         </xsl:attribute>
         <xsl:attribute name="href">
             <xsl:choose>
+                <!-- Old style linking to a file in the issue, here for historical purposes -->
                 <xsl:when test="@icon = 'pdf-embedded-in-the-issue'">file:<xsl:call-template name="get_file_name">
                         <xsl:with-param name="input">
                             <xsl:call-template name="nameloc_by_id">
@@ -237,18 +233,17 @@
                         </xsl:with-param>
                     </xsl:call-template>
                 </xsl:when>
-                <xsl:when test="@icon = 'pdf'">
-                    <xsl:call-template name="nameloc_by_id">
-                        <xsl:with-param name="id" select="$id" />
-                    </xsl:call-template>
-                </xsl:when>
+                <!-- Mobile editorial curated section deco links in the form "wsj:/SECTION_NAME" should produce "/SECTION_NAME" -->
                 <xsl:when test="starts-with(//article//nameloc[@id = $id]/nmlist, 'wsj:')">
                     <xsl:value-of select="substring(//article//nameloc[@id = $id]/nmlist, 5)" />
                 </xsl:when>
+                <!-- Otherwise, just use the link itself -->
                 <xsl:otherwise>
-                    <xsl:call-template name="tolower">
-                        <xsl:with-param name="node" select="@type" />
-                    </xsl:call-template>:<xsl:call-template name="nameloc_by_id">
+                    <xsl:choose>
+                        <!-- For articles, the link is a raw article identifier, e.g. SB123, so prepend "article" scheme -->
+                        <xsl:when test="@type = 'ARTICLE'">article:</xsl:when>
+                        <xsl:otherwise/>
+                    </xsl:choose><xsl:call-template name="nameloc_by_id">
                         <xsl:with-param name="id" select="$id" />
                     </xsl:call-template>
                 </xsl:otherwise>

@@ -5,17 +5,10 @@
 	<style>{
 		$join: [
 			{ $switch: [
-				{ if: =article.type, equals:"A-hed", then: {
-					jpml: {
-						border-width: [0, 0, 0, 0],
-						padding: [0]
-					}
-			
-				}},
 				{ if: =options.top_border, then: {
 					jpml: {
 						border-width: [1, 0, 0, 0],
-						padding: [10, 10, 0, 0],
+						padding: [12, 0, 0, 0],
 						border-color: #cfcfcf
 					}
 			
@@ -45,17 +38,17 @@
 			]},
 			{
 				#image_wrapper: {
-					width:85,
+					width:110,
 					anchor-x:right,
-					anchor-y:bottom
+					top:5
 	            },
 				image: {
 					pixels-per-point-x:1,
 					pixels-per-point-y:1,
-					height: 76, 
-					padding: [0, 0, {if: =options.bottom_align, then:0, else:20}, 9],
+					height: 80, 
+					padding: [0, 0, 1, 30],
 					display:{if: =article.type, equals:"A-hed", then: inherit, else:none},
-					image-scale:.9
+					image-scale:1.2
 	            },
 				.byline: {
 					display: {if-all:[{if: =options.show_byline}, {if: =scale.tablet}], then:inherit, else:none}
@@ -94,19 +87,18 @@
 			}, else:{}
 		}</style>
 		
-        <box id="image_wrapper" class="hidden_phone">
-			<image target-width="79" target-height="79" embed="summary-image"/>
-		</box>
 		<panel id="vertical">
 			<panel id="headline">
 				<p class="module_headline"><span embed="headline" /><mark class="key" /></p>
-		        <panel id="ahed_content">
-					<p class="ahed_headline"><span embed="headline"/><mark class="key"/></p>
-		        	<h2 class="ahed_subhed" embed="subhed"/>
-				</panel>
+				<p class="ahed_headline"><span embed="headline"/><mark class="key"/></p>
+	        	<h2 class="ahed_subhed" embed="subhed"/>
 			</panel>
+	        
 			<panel id="body">
-	            <p class="byline" embed="byline"/>
+				<box id="image_wrapper" class="hidden_phone">
+					<image target-width="79" target-height="79" embed="summary-image"/>
+				</box>
+		        <p class="byline" embed="byline"/>
 	            <panel class="body hidden_phone" embed="body"/>
 	        </panel>
 		</panel>

@@ -19,7 +19,7 @@
 			{
 				$switch:[
 					{if: =options.extra_small_headline, then:{
-						padding:[0, 0, 20, 0],
+						padding:[0, 0, 10, 0],
 						font-size:15,
 						font-name: DJ5EscrowCond-Semibold,
 						line-height:{ $switch: [
@@ -31,7 +31,7 @@
 						}
 					},
 					{if: =options.small_headline, then:{
-						padding:[0, 0, 20, 0],
+						padding:[0, 0, 11, 0],
 						font-size:24,
 						font-name: DJ5EscrowCond-Semibold,
 						line-height:{ $switch: [
@@ -43,30 +43,31 @@
 						}
 					},
 					{if: =options.medium_headline, then:{
+							font-name: DJ5EscrowCond-Semibold,
 							font-size:{if-all: [
 						        =scale.headlines,
 						        {if: =extents.medium, more-than: 1.0, then: true, else: false}, 
 						        {if: =extents.medium, less-than: 1.5, then: true, else: false}
-						    ], then: 24, else: 26 },
-							padding:[0, 0, 12, 0],
+						    ], then: 19, else: 24 },
+							padding:[0, 0, 9, 0],
 							line-height:{ $switch: [
 									{if: =issue.edition, equals: "japan", then: {if-all: [
 									    =scale.headlines,
 									    {if: =extents.medium, more-than: 1.0, then: true, else: false}, 
 									    {if: =extents.medium, less-than: 1.5, then: true, else: false}
-									], then: 30, else: 32 }
+									], then: 30, else: 26 }
 									},
 									{if: =issue.edition, equals: "korea", then: {if-all: [
 									    =scale.headlines,
 									    {if: =extents.medium, more-than: 1.0, then: true, else: false}, 
 									    {if: =extents.medium, less-than: 1.5, then: true, else: false}
-									], then: 30, else: 32 }},
+									], then: 30, else: 26 }},
 									{if-all: [
 									    =scale.headlines,
 									    {if: =extents.medium, more-than: 1.0, then: true, else: false}, 
 									    {if: =extents.medium, less-than: 1.5, then: true, else: false}
-									], then: 26, else: 32 },
-									"36"
+									], then: 26, else: 26 },
+									"26"
 									
 								]
 							}
@@ -77,13 +78,13 @@
 						        =scale.headlines,
 						        {if: =extents.large, more-than: 1.0, then: true, else: false}, 
 						        {if: =extents.large, less-than: 1.5, then: true, else: false}
-						    ], then: 32, else: 44 },
-							padding:[0, 0, 20, 0],
+						    ], then: 32, else: 36 },
+							padding:[0, 0, 5, 0],
 							line-height: {if-all: [
 							    =scale.headlines,
 							    {if: =extents.large, more-than: 1.0, then: true, else: false}, 
 							    {if: =extents.large, less-than: 1.5, then: true, else: false}
-							], then: 34, else: 46 }
+							], then: 34, else: 39 }
 						}
 					},
 					{if: =options.very_large_headline, then: {

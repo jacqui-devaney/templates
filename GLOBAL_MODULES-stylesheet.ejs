@@ -155,11 +155,7 @@
 		font-name:DJ5Exchange-Bold,
 		font-size:12,
 		line-height:12,
-		color: {$switch: [
-			{if: =page.section, equals: "OPINION", then:#9d8e33},
-			{if: =page.section, equals: "MARKETPLACE", then:#a72e56},
-			"#a5a5a5"
-		]},
+		color: =page.tint,
 		text-transform:uppercase,
 		padding:[0, 0, 6, 0]
 	},

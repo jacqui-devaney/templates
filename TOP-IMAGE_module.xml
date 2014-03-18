@@ -49,7 +49,7 @@
 					width: {$subtract: [=view.width]},
 					height: {$multiply: [=view.width, .66 ]}, 
 	                display: { if: =options.show_image, then:inherit, else:none },
-					padding: [0, 0, 0, 0],
+					padding: [0, 0, 17, 0],
 					options: {
 						$switch: [
 							{if: =options.F_image, then: {match:{width:571, height:226, max-height:226}}},
@@ -117,10 +117,10 @@
 	</box>
 	<panel id="vertical">
 		<panel id="headline">
-			<p class="module_flashline"><span embed="flashline" /></p>
 			<p class="module_headline"><span embed="headline" /><mark class="key" /></p>
 		</panel>
 		<panel id="body">
+			<p class="module_flashline"><span embed="flashline" /></p>
 			<p class="byline" embed="byline"/>
 			<panel class="body" embed="body"/>
 		</panel>

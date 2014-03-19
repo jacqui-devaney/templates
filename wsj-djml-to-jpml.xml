@@ -216,7 +216,7 @@
     Suppress tesla-style article links. Note: keep support for Methode style article links for decos.
     Example: http://online.wsj.com/news/articles/SB10001424052702303546204579442361298095276 
 -->
-<xsl:template match="link[@type='EXTERNAL' and not(starts-with(//article//nameloc[@id = @linkend]/nmlist, 'http://online.wsj.com/news/articles/'))]">
+<xsl:template match="link[@type='EXTERNAL' and starts-with(//article//nameloc[@id = current()/@linkend]/nmlist, 'http://online.wsj.com/news/articles/')]">
     <xsl:apply-templates/>
 </xsl:template>
 
@@ -224,7 +224,7 @@
     Suppress "speaking URLs" aka SEO links.
     Example: http://online.wsj.com/articles/heard-on-the-street-weibos-worth-is-hard-to-pin-down-1395060811
 -->
-<xsl:template match="link[@type='EXTERNAL' and not(starts-with(//article//nameloc[@id = @linkend]/nmlist, 'http://online.wsj.com/articles/'))]">
+<xsl:template match="link[@type='EXTERNAL' and starts-with(//article//nameloc[@id = current()/@linkend]/nmlist, 'http://online.wsj.com/articles/')]">
     <xsl:apply-templates/>
 </xsl:template>
 
@@ -232,7 +232,7 @@
     Suppress blog links.
     Example: http://blogs.wsj.com/moneybeat/2014/03/16/old-bull-is-showing-its-age/
 -->
-<xsl:template match="link[@type='EXTERNAL' and not(starts-with(//article//nameloc[@id = @linkend]/nmlist, 'http://blogs.wsj.com/'))]">
+<xsl:template match="link[@type='EXTERNAL' and starts-with(//article//nameloc[@id = current()/@linkend]/nmlist, 'http://blogs.wsj.com/')]">
     <xsl:apply-templates/>
 </xsl:template>
 
@@ -278,7 +278,6 @@
         </xsl:attribute>
         <xsl:apply-templates select="*|node()"/>
     </a>
-
 </xsl:template>
 
 <xsl:template match="phrase">

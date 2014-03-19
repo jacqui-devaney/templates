@@ -1,4 +1,4 @@
-<jpml id="RIGHT-IMAGE_module">
+<jpml id="RIGHT-INSET-IMAGE_module">
 	<style src="GLOBAL_MODULES-stylesheet.ejs" />
 	<style src="PHONE-MODULES-stylesheet.ejs" />
 	<style>{
@@ -7,7 +7,7 @@
 				{ if: =options.top_border, then: {
 					jpml: {
 						border-width: [1, 0, 0, 0],
-						padding: [12, 10, 0, 0],
+						padding: [12, 0, 0, 0],
 						border-color: #d8d8d8
 					}
 
@@ -42,6 +42,7 @@
 					width: {$switch:[
 						{if: =options.A_image, then:110},
 						{if: =options.small_image, then:121},
+						{if: =options.square_image, then:182},
 						242
 					]},
 					anchor-y:{if: =options.A_image, then:bottom, else:top},
@@ -51,11 +52,16 @@
 				image: {
 					pixels-per-point-x:1,
 					pixels-per-point-y:1,
-					height: 92,		
+					height: {$switch:[
+						{if: =options.small_image, then:92},
+						{if: =options.square_image, then:150},
+						92
+					]},		
 					padding: [0, 0, 0, 8],
 					width: {$switch:[
 						{if: =options.A_image, then:100},
 						{if: =options.small_image, then:113},
+						{if: =options.square_image, then:174},
 						236
 					]},
 					image-scale: 1
@@ -97,13 +103,11 @@
 		<panel id="headline">
 			<p class="module_headline"><span embed="headline" /><mark class="key" /></p>
 		</panel>
-		<panel>
-			<p class="module_flashline"><span embed="flashline" /></p>
-		</panel>
     	<panel>
             <box id="image_wrapper" class="hidden_phone">
 				<image embed="summary-image" />
 			</box>
+			<p class="module_flashline"><span embed="flashline" /></p>
 			<p class="byline" embed="byline"/>
             <panel class="body" embed="body"/>
 		</panel>

@@ -47,7 +47,7 @@
 					pixels-per-point-x:1,
 					pixels-per-point-y:1,
 					width: =view.width,
-					height: {$multiply: [=view.width, .66 ]}, 
+					height: {$multiply: [=view.width, .62 ]}, 
 	                display: { if: =options.show_image, then:inherit, else:none },
 					padding: [0, 0, 17, 0],
 					options: {

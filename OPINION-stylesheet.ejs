@@ -8,20 +8,27 @@
 	},
 	.rando_heading: {
 		font-name:DJ5EscrowOutline-Roman,
-		font-size:20,
-		color:#9d8e33,
+		font-size:18,
+		color:=page.tint,
 		text-align:center,
 		text-transform:uppercase
+	},
+	.rando_border: {
+		height:1,
+		background-color:=page.tint,
+		width:123,
+		top:23,
+		left:176
 	},
 	.rando: {
 		content: "Review\u00a0\u0026\u00a0Outlook"
 	},
 	.opinion_headline: {
-		font-name:DJ5EscrowCond-Bold,
-		font-size:24,
-		line-height:26,
+		font-name:DJ5EscrowCond-Semibold,
+		font-size:36,
+		line-height:38,
 		text-align:center,
-		text-scale:{if: =scale.small, then: {$multiply: [=scale.text, 0.9] }, else: inherit}
+		padding:[0, 0, 7, 0]
 
 	},
 	.opinion_dek:{
@@ -29,12 +36,11 @@
 		font-size:14,
 		line-height:20,
 		text-align:center,
-		color:#9b9b9b,
-		text-scale:{if: =scale.small, then: {$multiply: [=scale.text, 0.9] }, else: inherit}
+		color:#9b9b9b
 
 	},
 	#rando_header: { 
-		padding:[ 0, 0, 18, 0 ]
+		padding:[ 0, 0, 14, 0 ]
 	},
 	.teaser_sectionname: {
 		color: #d6a90c

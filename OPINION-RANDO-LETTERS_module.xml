@@ -3,7 +3,44 @@
 	<style src="OPINION-stylesheet.ejs" />
 	<style src="PHONE-MODULES-stylesheet.ejs" />
 	<style>{
-		#rando_header: {display: {if: =options.rando_header, then:inherit, else:none}}
+		$join: [
+			{ $switch: [
+				{ if: =options.top_border, then: {
+					jpml: {
+						border-width: [1, 0, 0, 0],
+						padding: [12, 10, 0, 0],
+						border-color: #d8d8d8
+					}
+			
+				}},
+				{ if: =options.left_border, then: {
+					jpml: {
+						border-width: [0, 0, 0, 1],
+						border-color: #d8d8d8,
+						padding: [0, 0, 0, 10]
+					}
+			
+				}},
+				{ if: =options.right_border, then: {
+					jpml: {
+						border-width: [0, 1, 0, 0],
+						border-color: #d8d8d8,
+						padding: [0, 10, 0, 0]
+					}
+			
+				}},
+				{ if: true, then: {
+					jpml: {
+						border-width: [0, 0, 0, 0],
+						padding: [0, 0, 0, 0]
+					}
+				}}
+			]},
+		
+			{#rando_header: {
+				display: {if: =options.rando_header, then:inherit, else:none}
+			}}
+		]
 		
 	}</style>
 	<style>{
@@ -24,6 +61,7 @@
 	}</style>
 	<panel id="rando_header">
 	    <p class="rando_heading"><mark class="rando" /></p>
+		<box class="rando_border"> </box>
 	</panel>
 	<panel id="vertical">
 	   	<p class="highlight_flashline hidden_tablet" embed="flashline" />

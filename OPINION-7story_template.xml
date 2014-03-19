@@ -1,17 +1,23 @@
-<jpml id="OPINION-7story-E_template">
+<jpml id="OPINION-7story_template">
 	<style src="GRID-stylesheet.ejs"/>
 	<style src="ADVERTISING-stylesheet.ejs"/>
 	<style src="PHONE-stylesheet.ejs"/>
 	<style>{
 		#b1: {
-			options:{rando_header:true}
+			options:{rando_header:true, top_border:{if: =portrait, then:true}}
+		},
+		#b2: {
+			options:{top_border:true}
+		},
+		#b3: {
+			options:{top_border:true}
 		},
 		
 		#b4: {options: {small_headline:true, show_byline:true, show_flashline:true}},		
-		#b5: {options: {small_headline:true, show_byline:true, show_flashline:true}},			
-		#b6: {options: {small_headline:true, show_byline:true, show_flashline:true}},			
-		#b7: {options: {small_headline:true, show_byline:true, show_flashline:true}},			
-		#b8: {options: {small_headline:true, show_byline:true, show_flashline:true}}			
+		#b5: {options: {small_headline:true, show_byline:true, show_flashline:true, top_border:{if: =landscape, then:true}}},			
+		#b6: {options: {small_headline:true, show_byline:true, show_flashline:true, top_border:true}},			
+		#b7: {options: {small_headline:true, show_byline:true, show_flashline:true, top_border:true}},			
+		#b8: {options: {small_headline:true, show_byline:true, show_flashline:true, top_border:true}}			
 	
 	}</style>
     <style>{ 
@@ -21,70 +27,70 @@
 			}},
 			{if: =portrait, then: {
 				#b1: {
-					top:0,
-					height:169
+					top:383,
+					height:158
 				},
 				#b2: {
-					top:179,
-					height:127
+					top:545,
+					height:119
 				},
 				#b3: {
-					top:316,
-					height:127
+					top:668,
+					height:119
 				},
 				#b4: {
-					top:463,
-					height:335
+					top:0,
+					height:363
 				},
 				#b5: {
 					top:0,
 					height:188
 				},
 				#b6: {
-					top:204,
-					height:188
+					top:188,
+					height:198
 				},
 				#b7: {
-					top:408,
-					height:188
+					top:386,
+					height:198
 				},
 				#b8: {
-					top:612,
-					height:188
+					top:584,
+					height:212
 				}
 			}}, 
 			{if: =landscape, then: {
 				#b1: {
 					top:0,
-					height:129
+					height:144
 				},
 				#b2: {
-					top:139,
-					height:87
+					top:147,
+					height:119
 				},
 				#b3: {
-					top:236,
-					height:87
+					top:268,
+					height:119
 				},
 				#b4: {
 					top:0,
-					height:335
+					height:363
 				},
 				#b5: {
-					top:362,
-					height:204
+					top:392,
+					height:176
 				},
 				#b6: {
-					top:362,
-					height:204
+					top:392,
+					height:176
 				},
 				#b7: {
-					top:362,
-					height:204
+					top:392,
+					height:176
 				},
 				#b8: {
-					top:362,
-					height:204
+					top:392,
+					height:176
 				}
 				
 			}}

@@ -37,6 +37,14 @@
 			usage="front"
 		/>
 		<template 
+			name="SECTION-3story_template.xml" 
+			title="3 story - Large Photo"
+			min="3" 
+			deco="true"
+			usage="front"
+			storyorder="feed"
+		/>
+		<template 
 			name="SECTION-1story_template.xml" 
 			title="Full size Deco"
 			min="1" 

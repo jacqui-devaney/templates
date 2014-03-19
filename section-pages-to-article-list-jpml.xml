@@ -23,12 +23,12 @@
 	               <xsl:attribute name="href">
 	                  <xsl:value-of select="./@href" />
 	               </xsl:attribute>
-		            <span class="module_flashline">
-		               <xsl:value-of select="metadata/item[@key = 'type']" />
-		            </span>
-		            <break />
-		            <span class="item-title">
+					<span class="break"><break/><break/></span>
+		            <span class="item-title module_headline">
 		               <xsl:value-of select="metadata/item[@key = 'headline']" />
+		            </span>
+		            <span class="item-summary body">
+		               <xsl:value-of select="metadata/item[@key = 'summary']" />
 		            </span>
 	        	</a>
 	         </p>

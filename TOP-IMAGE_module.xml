@@ -46,7 +46,7 @@
 				image: {
 					pixels-per-point-x:1,
 					pixels-per-point-y:1,
-					width: {$subtract: [=view.width]},
+					width: =view.width,
 					height: {$multiply: [=view.width, .66 ]}, 
 	                display: { if: =options.show_image, then:inherit, else:none },
 					padding: [0, 0, 17, 0],
@@ -112,8 +112,8 @@
 			
 		}, else:{}
 	}</style>
-	<box id="image_wrapper">
-		<image id="deco-image" embed="summary-image" />
+	<box id="deco_container" embed="deco-image">
+		<image embed="summary-image" />
 	</box>
 	<panel id="vertical">
 		<panel id="headline">

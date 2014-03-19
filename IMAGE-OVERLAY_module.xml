@@ -64,7 +64,7 @@
 		<box id="text_container">
 			<p class="module_headline"><span embed="headline" /><mark class="key" /></p>
 			<panel class="body">
-				<p embed="body-first-p" />
+				<p embed="subhed" />
 			</panel>
 		</box>
 	</box>

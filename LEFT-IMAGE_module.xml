@@ -37,34 +37,47 @@
 				
 			]},
 			{
-				#deco_container: 
-					{if: =options.top_image, then:{
-						width:=view.width,
-						padding: [0, 0, 17, 0],
-						height: {$multiply: [=view.width, .62 ]}
-					}, else: {
-						anchor-x:left,
-						anchor-y:{if: =options.A_image, then:bottom, else:top},
-						width: {$switch:[
-							{if: =options.large_image, then:501},
-							{if: =options.small_image, then:119},
-							242
-						]}
-					}},
+				#deco_container: {
+					$switch: [
+						{if: =options.top_image, then:{
+							width:=view.width,
+							padding: [0, 0, 10, 0],
+							height: {$multiply: [=view.width, .62 ]}
+						}},
+						{if: =options.tall_image, then:{
+							width:=view.width,
+							padding: [0, 0, 10, 0],
+							height: 362
+						}},
+						{if: true, then: {
+							anchor-x:left,
+							anchor-y:{if: =options.A_image, then:bottom, else:top},
+							width: {$switch:[
+								{if: =options.large_image, then:501},
+								{if: =options.small_image, then:119},
+								{if: =options.tall_image, then:=view.width},
+								242
+							]}
+						}}
+						
+					]
+				},
 			
 				image: {
 					pixels-per-point-x:1,
 					pixels-per-point-y:1,
-					height: {if: =options.top_image, then:{
-						$multiply: [=view.width, .62 ]
-					}, else: {
-						$subtract:[=view.height, {if: =options.top_border, then:24, else:12}]
-					}},
-					padding: [0, {if: =options.top_image, then:0, else:15}, 0, 0],
+					height: {
+						$switch: [
+							{if: =options.tall_image, then:362},
+							{if: =options.top_image, then:{$multiply: [=view.width, .62 ]}},
+							{$subtract:[=view.height, {if: =options.top_border, then:24, else:12}]}
+						]
+					},
 					width: {$switch:[
 						{if: =options.large_image, then:486},
 						{if: =options.small_image, then:92},
 						{if: =options.top_image, then:=view.width},
+						{if: =options.tall_image, then:=view.width},
 						236
 					]},
 					image-scale: 0

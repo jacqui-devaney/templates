@@ -42,6 +42,7 @@
 					width: {$switch:[
 						{if: =options.A_image, then:110},
 						{if: =options.small_image, then:119},
+						{if: =options.square_image, then:179},
 						242
 					]},
 					anchor-y:{if: =options.A_image, then:bottom, else:top},
@@ -56,6 +57,7 @@
 					width: {$switch:[
 						{if: =options.A_image, then:100},
 						{if: =options.small_image, then:92},
+						{if: =options.square_image, then:173},
 						236
 					]},
 					image-scale: 1

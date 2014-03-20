@@ -5,8 +5,8 @@
 	
 		#deco: {
 			options:{$switch:[
-				{if: =portrait, then: {large_headline:true}},
-				{if: =landscape, then: {very_large_headline:true, full_screen:true, large_body:true}}
+				{if: =portrait, then: {very_large_caps_headline:true, white_text:true, full_screen:true, large_body:true}},
+				{if: =landscape, then: {very_large_caps_headline:true, white_text:true, full_screen:true, large_body:true}}
 			]	
 		}}
 		

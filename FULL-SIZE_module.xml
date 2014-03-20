@@ -3,6 +3,10 @@
 	<style src="GLOBAL-stylesheet.ejs" />
 	<style src="PHONE-MODULES-stylesheet.ejs" />
 	<style>{
+			#deco_container: {
+				width: =view.width,
+				height: =view.height
+			},
 			image:{
 				width:=view.width,
 				height: {$subtract:[=view.height, 1]},
@@ -10,22 +14,28 @@
 				
 			},
 			#deco_caption_container: {
-				bottom:40,
-				background-color:"rgba(0, 0, 0, .5)",
-				padding:[25, 8],
-				width:774
-				
+				top:128,
+				background-color:"rgba(0, 0, 0, .6)",
+				padding:[20, 14],
+				width:372,
+				left:68
 			},
 			.module_headline: {
-				color:#fff
+				padding:[0, 0, 4, 0]
 			},
 			.body: {
-				color:#fff
+				padding:[18, 0, 0, 0]
+				
+			},
+			#border: {
+				background-color:#fff,
+				height:1,
+				width:238
 			},
 			#gradient: {
-				background-image:url(white_gradient.png),
+				background-image:url(black_gradient.png),
 				top:0,
-				height:148,
+				height:200,
 				width:1024
 			}
 	}</style>
@@ -33,9 +43,14 @@
 				<image embed="summary-image" />
 				<box id="gradient" />
 				<box id="deco_caption_container">
-					<p class="module_headline"><span embed="headline" /><mark class="key" /></p>
+					<panel class="headline">
+						<p class="module_headline "><span embed="headline" /><mark class="key" /></p>
+					</panel>
+					<panel class="border">
+						<box id="border" />
+					</panel>
 					<panel class="body">
-						<p embed="body-first-p" />
+						<p class="escrow_body" embed="subhed" />
 					</panel>
 				</box>
 			</box>

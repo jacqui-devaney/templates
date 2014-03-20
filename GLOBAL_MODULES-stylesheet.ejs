@@ -87,7 +87,7 @@
 							], then: 34, else: 39 }
 						}
 					},
-					{if: =options.very_large_headline, then: {
+					{if: =options.very_large_caps_headline, then: {
 							font-size:{if-all: [
 						        =scale.headlines,
 						        {if: =extents.large, more-than: 1.0, then: true, else: false}, 
@@ -98,7 +98,9 @@
 							    =scale.headlines,
 							    {if: =extents.large, more-than: 1.0, then: true, else: false}, 
 							    {if: =extents.large, less-than: 1.5, then: true, else: false}
-							], then: 34, else: 60 }
+							], then: 34, else: 60 },
+							text-transform:uppercase,
+							font-name:DJ5Escrow-Roman
 						}
 					},
 					{if: true, then: {
@@ -133,6 +135,16 @@
         text-align: { if: =options.justify, then:=justify, else:left},
 		text-scale: {if: =widescreen, then: {$multiply: [=scale.text, 1.2] }, else: inherit},
 		hyphens:auto,
+		color:{if: =options.white_text, then:#fff, else:#222221}
+		
+
+	},
+	.escrow_body: {
+		font-name: DJ5Escrow-Roman,
+		text-indent:0,
+		font-size:24,
+		line-height:26,
+        text-align: { if: =options.justify, then:=justify, else:left},
 		color:{if: =options.white_text, then:#fff, else:#222221}
 		
 

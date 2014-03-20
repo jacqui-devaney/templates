@@ -1,3 +1,4 @@
+
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="1.0">
 	<xsl:output method="xml" encoding="UTF-8" indent="yes"/>
 	<xsl:variable name="smallcase" select="'abcdefghijklmnopqrstuvwxyz'"/>
@@ -47,14 +48,14 @@
 				<xsl:choose>
 					<xsl:when test="$type = 'NOW'">
 						<span class="item-title"><xsl:call-template name="linked_text">
-							<xsl:with-param name="link"><xsl:value-of select="link"/></xsl:with-param>
+							<xsl:with-param name="link"><xsl:value-of select="guid"/></xsl:with-param>
 							<xsl:with-param name="text"><xsl:value-of select="title"/></xsl:with-param>
 						</xsl:call-template></span>
 						<break/>
 					</xsl:when>
 				</xsl:choose>
 				<span class="item-description"><xsl:call-template name="linked_text">
-					<xsl:with-param name="link"><xsl:value-of select="link"/></xsl:with-param>
+					<xsl:with-param name="link"><xsl:value-of select="guid"/></xsl:with-param>
 					<xsl:with-param name="text"><xsl:value-of select="description"/></xsl:with-param>
 				</xsl:call-template></span>
 			</p>
@@ -117,13 +118,13 @@
     <xsl:param name="ext"/>
     <xsl:choose>
         <xsl:when test="contains($input, '.')">
-            <xsl:value-of select="substring-before($input, '.')"/>.<xsl:call-template name="replace_file_extension">
-                <xsl:with-param name="input" select="substring-after($input, '.')"/>
+            <xsl:call-template name="replace_file_extension">
+                <xsl:with-param name="input" select="substring-before($input, '.')"/>
                 <xsl:with-param name="ext" select="$ext"/>
             </xsl:call-template>
         </xsl:when>
         <xsl:otherwise>
-            <xsl:value-of select="$ext"/>
+            <xsl:value-of select="$input"/>.<xsl:value-of select="$ext"/>
         </xsl:otherwise>
     </xsl:choose>
 </xsl:template>

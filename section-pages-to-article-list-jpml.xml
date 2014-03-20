@@ -8,39 +8,35 @@
          <style src="GLOBAL_MODULES-stylesheet.ejs" />
          <style src="RIGHT_RAIL-stylesheet.ejs" />
          <panel class="main">
-            <xsl:for-each select="page">
-               <xsl:apply-templates select="link" />
-            </xsl:for-each>
+            <xsl:apply-templates />
          </panel>
       </jpml>
    </xsl:template>
-   <xsl:template match="link">
-      <!--  <xsl:if test="not(./@class)"> -->
-      <xsl:if test="not( ./@class ='inline-deco' or ./@class ='deco' )">
-	      <box class="item">
-	         <p>
-	            <a class="item-link">
-	               <xsl:attribute name="href">
-	                  <xsl:value-of select="./@href" />
-	               </xsl:attribute>
-		            <span class="item-title module_headline">
-		               <xsl:value-of select="metadata/item[@key = 'headline']" />
-		            </span>
-		            <span class="break"><break/><break/></span>
-			         <span class="item-summary body">
-                     <xsl:variable name="summary" select="metadata/item[@key = 'summary']" />
-                     <xsl:variable name="trimmed" select="substring($summary, 1, 100)" />
-                     <xsl:call-template name="substring-before-last">
-                        <xsl:with-param name="list" select="$trimmed"/>
-                        <xsl:with-param name="delimiter" select="' '"/>
-                     </xsl:call-template>
-		            </span>
-	        	</a>
-	         </p>
-	      </box>
-      </xsl:if>
-   </xsl:template>
 
+   <xsl:template match="page[position() &gt; 2]/link[not(@class ='inline-deco' or @class ='deco')]">
+      <box class="item">
+         <p>
+            <a class="item-link">
+               <xsl:attribute name="href">
+                  <xsl:value-of select="./@href" />
+               </xsl:attribute>
+	            <span class="item-title module_headline">
+	               <xsl:value-of select="metadata/item[@key = 'headline']" />
+	            </span>
+	            <span class="break"><break/><break/></span>
+		         <span class="item-summary body">
+                  <xsl:variable name="summary" select="metadata/item[@key = 'summary']" />
+                  <xsl:variable name="trimmed" select="substring($summary, 1, 200)" />
+                  <xsl:call-template name="substring-before-last">
+                     <xsl:with-param name="list" select="$trimmed"/>
+                     <xsl:with-param name="delimiter" select="' '"/>
+                  </xsl:call-template>
+	            </span>
+        	   </a>
+         </p>
+      </box>
+   </xsl:template>
+   <xsl:template match="link"/>
 
    <!--############################################################-->
    <!--## Template to determine Substring before last occurence  ##-->

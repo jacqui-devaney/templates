@@ -205,14 +205,14 @@
 		font-name:DJ5Exchange-MediumItalic
 	},
 	.link-pdf: {
-		if: =intent.article, then:{color: =page.tint}
+		color:{if: =intent.article, then:=page.tint}
 	},
 	a: {
-		if: =intent.article, then:{color: =page.tint}
+		color:{if: =intent.article, then:=page.tint}
 	},
 	.link-article: {
 		text-decoration: none,
-		if: =intent.article, then:{color: =page.tint}
+		color:{if: =intent.article, then:=page.tint}
 	}
 
 }

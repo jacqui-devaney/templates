@@ -27,12 +27,45 @@
 		               <xsl:value-of select="metadata/item[@key = 'headline']" />
 		            </span>
 		            <span class="break"><break/><break/></span>
-					<span class="item-summary body">
-		               <xsl:value-of select="metadata/item[@key = 'summary']" />
+			         <span class="item-summary body">
+                     <xsl:variable name="summary" select="metadata/item[@key = 'summary']" />
+                     <xsl:variable name="trimmed" select="substring($summary, 1, 100)" />
+                     <xsl:call-template name="substring-before-last">
+                        <xsl:with-param name="list" select="$trimmed"/>
+                        <xsl:with-param name="delimiter" select="' '"/>
+                     </xsl:call-template>
 		            </span>
 	        	</a>
 	         </p>
 	      </box>
       </xsl:if>
    </xsl:template>
+
+
+   <!--############################################################-->
+   <!--## Template to determine Substring before last occurence  ##-->
+   <!--## of a specific delemiter                                ##-->
+   <!--############################################################-->
+   <xsl:template name="substring-before-last">
+   <!--passed template parameter -->
+        <xsl:param name="list"/>
+        <xsl:param name="delimiter"/>
+        <xsl:choose>
+            <xsl:when test="contains($list, $delimiter)">
+      <!-- get everything in front of the first delimiter -->
+                <xsl:value-of select="substring-before($list,$delimiter)"/>
+                <xsl:choose>
+                    <xsl:when test="contains(substring-after($list,$delimiter),$delimiter)">
+                        <xsl:value-of select="$delimiter"/>
+                    </xsl:when>
+                </xsl:choose>
+                <xsl:call-template name="substring-before-last">
+                    <!-- store anything left in another variable -->
+                    <xsl:with-param name="list" select="substring-after($list,$delimiter)"/>
+                    <xsl:with-param name="delimiter" select="$delimiter"/>
+                </xsl:call-template>
+            </xsl:when>
+        </xsl:choose>
+    </xsl:template>
+
 </xsl:stylesheet>

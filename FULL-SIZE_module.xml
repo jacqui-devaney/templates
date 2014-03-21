@@ -3,6 +3,9 @@
 	<style src="GLOBAL-stylesheet.ejs" />
 	<style src="PHONE-MODULES-stylesheet.ejs" />
 	<style>{
+			jpml: {
+				background-color:#000
+			},
 			#deco_container: {
 				width: =view.width,
 				height: =view.height
@@ -10,7 +13,11 @@
 			image:{
 				width:=view.width,
 				height: {$subtract:[=view.height, 1]},
-				image-scale: {if: =options.full_screen, then:.9, else:1}
+				image-scale: 1,
+				gravity:aspect-fill,
+				options: { 
+					if: =options.full_screen, then: {match: { width:1280, height:853, min-height:853 } } 
+				}
 				
 			},
 			#deco_caption_container: {

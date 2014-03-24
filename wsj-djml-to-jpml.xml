@@ -236,6 +236,14 @@
     <xsl:apply-templates/>
 </xsl:template>
 
+<!--
+    Suppress video links until 5.5.7 is out which fixes an issue with shebangs
+    Example: http://live.wsj.com/#!272852E5-A606-4192-A4E1-95E4A9FEE29E
+-->
+<xsl:template match="link[@type='EXTERNAL' and starts-with(//article//nameloc[@id = current()/@linkend]/nmlist, 'http://live.wsj.com/')]">
+    <xsl:apply-templates/>
+</xsl:template>
+
 
 
 

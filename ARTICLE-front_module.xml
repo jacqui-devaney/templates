@@ -1,4 +1,5 @@
 <jpml id="ARTICLE-front_module">
+	<style src="GLOBAL_MODULES-stylesheet.ejs" />
 	<style src="ARTICLE-stylesheet.ejs" />
 	<style>{
 		$join: [
@@ -7,9 +8,9 @@
             column-gutter: 12,
 			flow: article_body,
 			min-height: {if: =page.hasmedia, then:400, else:300},
-			layout-grid-line: {$multiply: [24, =view.zoomlevel]},
-			layout-grid-line-offset: {$multiply: [24, =view.zoomlevel]},
-			padding:[12, 0, 0, 0]
+			layout-grid-line: {$multiply: [20, =view.zoomlevel]},
+			layout-grid-line-offset: {$multiply: [20, =view.zoomlevel]},
+			padding:[10, 0, 0, 0]
         }},
 		{if: =portrait, then: {
 			#media: {
@@ -50,18 +51,22 @@
         }}
 		]
     }</style>
-	
     <panel id="header_top">
-        <p class="article_flashline" embed="flashline"/>
         <p class="article_headline"><span embed="headline"/><mark class="key"/></p>
 		<h2 class="article_subhed" embed="subhed" />
 	</panel>
 	
 	<panel id="body_container">
 		<box id="media" embed="media" />
-		<p class="article_byline" embed="byline"/>
-        <panel class="article_body" embed="body"/>
-	    
+		<panel class="flash_by">
+			<p class="module_flashline" embed="flashline"/>
+     		<p class="byline" embed="byline"/>
+    	</panel>
+		<panel>
+			<panel>
+				<box id="border" />
+			</panel>
+			<panel class="article_body" embed="body"/>
+		</panel>
 	</panel>
-	
 </jpml>

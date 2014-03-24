@@ -9,34 +9,38 @@
 		font-size:{ $switch: [
 				{if: =issue.edition, equals: "japan", then: 43},
 				{if: =issue.edition, equals: "korea", then: 43},
-				"50"
+				"48"
 			]
 		},
 		line-height:50,
-		color:#333,
+		color:#000,
 		padding:[0, 0, 6, 0]
 	},
 	.article_subhed: {
-		font-name:DJ5EscrowCond-BoldItalic,
+		font-name:DJ5EscrowCond-SemiboldItalic,
 		text-align:left,
-		font-size:20,
-		line-height:24,
-		color:#999999,
-		padding: [0, 0, 5, 0]
+		font-size:25,
+		line-height:30,
+		color:#5d5d5d
 	},
-	.article_flashline: {
-		font-name: Helvetica,
-		text-align:left,
-		font-size:12,
-		line-height:12,
-		padding: [0, 0, 8, 0],
-		text-transform:uppercase,
-		color:#333
+	.module_flashline: {
+		padding:[0, 0, 5, 0],
+		font-size:{$multiply: [12, =view.zoomlevel]},
+		line-height:{$multiply: [13, =view.zoomlevel]}
 	},
-	.article_byline: {
+	.byline: {
 		font-name:DJ5Exchange-Semibold,
-		font-size:{$multiply: [13, =view.zoomlevel]},
-		line-height:{$multiply: [24, =view.zoomlevel]}
+		font-size:{$multiply: [14, =view.zoomlevel]},
+		line-height:{$multiply: [20, =view.zoomlevel]},
+		color:#000
+	},
+	#border: {
+		background-color:#e1e0df,
+		height:4,
+		width:113
+	},
+	.byline-author: {
+		text-transform:uppercase
 	},
 	h2: {
 		font-name:{if: =intent.article, then:DJ5Exchange-Bold, else:DJ5Exchange-Medium},
@@ -49,16 +53,17 @@
 				"DJ5Exchange-Medium"
 			]
 		},
-		text-indent:{if: =issue.edition, equals: "japan", then: 0, else:20},
-		font-size:{$multiply: [15, =view.zoomlevel]},
-		line-height:{$multiply: [24, =view.zoomlevel]},
-	    text-align: left
+		font-size:{$multiply: [14, =view.zoomlevel]},
+		line-height:{$multiply: [20, =view.zoomlevel]},
+	    text-align: left,
+		color:#222221,
+		padding:[5, 0, 0, 0]
 	},
 	.body-bug: {
 		display: {if:=intent.article, then:default, else:none},
 		font-name: {if: =device.platform, equals: Android, then: DJ5Utility, else: DJ5Utility-Regular },
 		font-size:{$multiply: [15, =view.zoomlevel]},
-		color:#cfc8bb,
+		color:=page.tint,
 		content: " Y"
 	},
 	strong: {
@@ -69,35 +74,6 @@
 	},
 	cite: {
 		font-name:{if: =intent.article, then:DJ5Exchange-MediumItalic, else:DJ5Exchange-Medium}
-	},
-	.link-pdf: {
-		if: =intent.article, then: {
-			color: #007fe0
-		}, else: {
-		}
-	},
-	a: {
-		color: {$switch: [
-	{if: =page.section, equals: "FRONT_SECTION", then: #007fe0},
-	{if: =page.section, equals: "OPINION", then: #D6A90C},
-	{if: =page.section, equals: "MARKETPLACE", then: #D91919},
-	{if: =page.section, equals: "MONEY_AND_INVESTING", then: #46A84B},
-	{if: =page.section, equals: "ARENA", then: #F26522},
-	{if: =page.section, equals: "MANSION", then: #9F7E09},
-	{if: =page.section, equals: "NEW_YORK", then: #3D9EBA},
-	{if: =page.section, equals: "BUSINESS_AND_FINANCE", then: #3D9EBA},
-	{if: =page.section, equals: "REVIEW", then: #3D9EBA},
-	{if: =page.section, equals: "OFF_DUTY", then: #3D9EBA},
-	{if: =page.section, equals: "PERSONAL_JOURNAL", then: #f26522},
-	{if: =page.section, equals: "JOURNAL_REPORTS", then: #3D9EBA},
-	{if: =page.section, equals: "WHATS_NEWS", then: #5290DC},
-	{if: =page.section, equals: "WSJ_MAGAZINE", then: #993399},
-	#007fe0
-	]}
-	},
-	.link-article: {
-		text-decoration: none,
-		color: #000
 	},
 	#mediabucket_container: {
 		display: {if: =page.mediabucket, then:inherit, else:none}

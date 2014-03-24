@@ -1,0 +1,17 @@
+<jpml id="ARTICLE-continuation-narrow-no-ads_template">
+	<style src="GRID-stylesheet.ejs"/>
+    <style>{
+        if: =portrait, then: {
+            #view: { 
+                top:5,
+                height:910
+             }
+        }, else: {
+            #view : {
+                top:5,
+                height:654
+            }       
+        }
+    }</style>
+    <box id="view" embed="article" class="column16-12 positionx1" module="ARTICLE-continuation-narrow-no-ads_module.xml" />
+</jpml>

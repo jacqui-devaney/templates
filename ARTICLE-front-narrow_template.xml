@@ -1,0 +1,17 @@
+<jpml id="ARTICLE-front-narrow_template">
+    <style src="GRID-stylesheet.ejs"/>
+	<style>{
+		if: =portrait, then: {
+			#view: { 
+                top:0,
+                height:916
+             }
+        }, else: {
+            #view : {
+				top:0,
+				height:662
+			}       
+        }
+    }</style>
+    <box id="view" embed="article" class="column16-12 positionx1" module="ARTICLE-front-narrow_module.xml" />
+</jpml>

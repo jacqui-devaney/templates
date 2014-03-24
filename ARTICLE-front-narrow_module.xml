@@ -1,0 +1,69 @@
+<jpml id="ARTICLE-front-narrow_module">
+	<style src="GLOBAL_MODULES-stylesheet.ejs" />
+	<style src="ARTICLE-stylesheet.ejs" />
+	<style>{
+		$join: [
+		{.article_subhed: {
+			padding: [0, 0, 10, 0]
+		}},
+		{#body_container: { 
+            column-count: { if: =portrait, then: 3, else: 4},
+            column-gutter: 12,
+			flow: article_body,
+			min-height: {if: =page.hasmedia, then:400, else:300},
+			layout-grid-line: {$multiply: [10, =view.zoomlevel]},
+			layout-grid-line-offset: {$multiply: [10, =view.zoomlevel]}
+        }},
+		{if: =portrait, then: {
+			#media: {
+				top: 0,
+				left: {if: =media.width, less-than: 360, then: 248, else: {if: =media.width, more-than: 484, then: 248, else: 328}},
+				width: {$switch: [
+					{if: =media.width, less-than: 360, then: 237},
+					{if: =media.width, more-than: 484, then: 485},
+					361
+				]},
+				height: {$min: [{$max: [{$switch: [
+					{if: =media.width, less-than: 360, then: {$divide: [236, =media.aspect]}},
+					{if: =media.width, more-than: 484, then: {$divide: [484, =media.aspect]}},
+					{$divide: [360, =media.aspect]}
+				]}, {$multiply: [.25, =view.height]}]}, {$multiply: [.75, =view.height]}]},
+				options: {
+					id: =page.number
+				}
+			}
+        }, else: {
+			#media: {
+				top: 0,
+				left: {if: =media.width, less-than: 360, then: 248, else: {if: =media.width, more-than: 484, then: 248, else: 307}},
+				width: {$switch: [
+					{if: =media.width, less-than: 360, then: 236},
+					{if: =media.width, more-than: 484, then: 484},
+					360
+				]},
+				height: {$min: [{$max: [{$switch: [
+					{if: =media.width, less-than: 360, then: {$divide: [236, =media.aspect]}},
+					{if: =media.width, more-than: 484, then: {$divide: [484, =media.aspect]}},
+					{$divide: [360, =media.aspect]}
+				]}, {$multiply: [.25, =view.height]}]}, {$multiply: [.75, =view.height]}]},
+				options: {
+					id: =page.number
+				}
+			}
+        }}
+		]
+    }</style>
+	<panel id="body_container">
+		<box id="media" embed="media" />
+		<panel class="flash_by">
+			<p class="article_headline"><span embed="headline"/><mark class="key"/></p>
+			<h2 class="article_subhed" embed="subhed" />
+	        <p class="module_flashline" embed="flashline"/>
+     		<p class="byline" embed="byline"/>
+    	</panel>
+		<panel>
+			<box id="border" />
+		</panel>
+		<panel class="article_body" embed="body"/>
+	</panel>
+</jpml>

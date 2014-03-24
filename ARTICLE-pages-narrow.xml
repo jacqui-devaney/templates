@@ -5,21 +5,21 @@
                 </page>
                
     <!-- These pages will repeat as needed, hence the "repeat" type -->
-                 <!-- <page template="ARTICLE-continuation-narrow-no-ads_template.xml" type="repeat" for="tablet">
-                                <link id="view" module="ARTICLE-continuation-narrow-no-ads_module.xml"/>
+                 <!-- <page template="ARTICLE-continuation-no-ads_template.xml" type="repeat" for="tablet">
+                                <link id="view" module="ARTICLE-continuation-no-ads_module.xml"/>
                 </page>   -->
-                <page template="ARTICLE-continuation-narrow-ads_template.xml" type="repeat" for="tablet">
-                                <link id="view" module="ARTICLE-continuation-narrow-ads_module.xml"/>
+                <page template="ARTICLE-continuation-ads_template.xml" type="repeat" for="tablet">
+                                <link id="view" module="ARTICLE-continuation-ads_module.xml"/>
                 </page>   
-                <page template="ARTICLE-continuation-narrow-no-ads_template.xml" type="repeat" for="tablet">
-                                <link id="view" module="ARTICLE-continuation-narrow-no-ads_module.xml"/>
+                <page template="ARTICLE-continuation-no-ads_template.xml" type="repeat" for="tablet">
+                                <link id="view" module="ARTICLE-continuation-no-ads_module.xml"/>
                 </page>   
                
     <!-- The last page of every article uses column leveling with a background matte,
      which is not supported in conjunction with the ads template. The "suffix" type
      is used to render that last page. -->
-                <page template="ARTICLE-continuation-narrow-no-ads_template.xml" type="suffix" for="tablet">
-                                <link id="view" module="ARTICLE-continuation-narrow-no-ads_module.xml"/>
+                <page template="ARTICLE-continuation-no-ads_template.xml" type="suffix" for="tablet">
+                                <link id="view" module="ARTICLE-continuation-no-ads_module.xml"/>
                 </page>   
                
 			    <page template="GENERIC-fullpagead-template.xml" type="interstitial" for="tablet"/>

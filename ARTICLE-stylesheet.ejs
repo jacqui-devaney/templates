@@ -1,4 +1,7 @@
 {
+	jpml: {
+		padding:[0]
+	},
 	.article_headline: {
 		font-name: { $switch: [
 				{if: =issue.edition, equals: "japan", then: HiraKakuProN-W6},
@@ -14,7 +17,7 @@
 		},
 		line-height:50,
 		color:#000,
-		padding:[0, 0, 6, 0]
+		padding:[0, 0, 5, 0]
 	},
 	.article_subhed: {
 		font-name:DJ5EscrowCond-SemiboldItalic,
@@ -26,13 +29,18 @@
 	.module_flashline: {
 		padding:[0, 0, 5, 0],
 		font-size:{$multiply: [12, =view.zoomlevel]},
-		line-height:{$multiply: [13, =view.zoomlevel]}
+		line-height:{$multiply: [20, =view.zoomlevel]}
 	},
 	.byline: {
 		font-name:DJ5Exchange-Semibold,
 		font-size:{$multiply: [14, =view.zoomlevel]},
 		line-height:{$multiply: [20, =view.zoomlevel]},
 		color:#000
+	},
+	#border_box: {
+		padding:[4, 0, 0, 0],
+		width:236,
+		height:9
 	},
 	#border: {
 		background-color:#e1e0df,
@@ -56,8 +64,7 @@
 		font-size:{$multiply: [14, =view.zoomlevel]},
 		line-height:{$multiply: [20, =view.zoomlevel]},
 	    text-align: left,
-		color:#222221,
-		padding:[5, 0, 0, 0]
+		color:#222221
 	},
 	.body-bug: {
 		display: {if:=intent.article, then:default, else:none},
@@ -110,9 +117,6 @@
 		line-height:20,
 		color:#898b8e,
 		text-align:left
-	},
-	#continued_label:{
-		padding: [10, 0, 0, 0]
 	}
 	
 		

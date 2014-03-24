@@ -8,9 +8,10 @@
             column-gutter: 12,
 			flow: article_body,
 			min-height: {if: =page.hasmedia, then:400, else:300},
+			padding:[10, 0, 0, 0],
 			layout-grid-line: {$multiply: [20, =view.zoomlevel]},
-			layout-grid-line-offset: {$multiply: [20, =view.zoomlevel]},
-			padding:[10, 0, 0, 0]
+			layout-grid-line-offset: {$multiply: [20, =view.zoomlevel]}
+			
         }},
 		{if: =portrait, then: {
 			#media: {
@@ -28,7 +29,8 @@
 				]}, {$multiply: [.25, =view.height]}]}, {$multiply: [.75, =view.height]}]},
 				options: {
 					id: =page.number
-				}
+				},
+				padding:[0, 0, {if: =page.hasmedia, then:30, else:0}, 0]
 			}
         }, else: {
 			#media: {
@@ -46,7 +48,9 @@
 				]}, {$multiply: [.25, =view.height]}]}, {$multiply: [.75, =view.height]}]},
 				options: {
 					id: =page.number
-				}
+				},
+				padding:[0, 0, {if: =page.hasmedia, then:30, else:0}, 0]
+				
 			}
         }}
 		]
@@ -62,11 +66,11 @@
 			<p class="module_flashline" embed="flashline"/>
      		<p class="byline" embed="byline"/>
     	</panel>
-		<panel>
-			<panel>
-				<box id="border" />
+			<panel class="border">
+				<box id="border_box">
+					<box id="border" />
+				</box>
 			</panel>
 			<panel class="article_body" embed="body"/>
-		</panel>
 	</panel>
 </jpml>

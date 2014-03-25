@@ -66,11 +66,11 @@
 			<p class="module_flashline" embed="flashline"/>
      		<p class="byline" embed="byline"/>
     	</panel>
-			<panel class="border">
-				<box id="border_box">
-					<box id="border" />
-				</box>
-			</panel>
-			<panel class="article_body" embed="body"/>
+		<panel class="border">
+			<box id="border_box">
+				<box id="border" />
+			</box>
+		</panel>
+		<panel class="article_body" embed="body"/>
 	</panel>
 </jpml>

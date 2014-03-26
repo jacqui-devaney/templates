@@ -18,7 +18,12 @@
 			layout-grid-line-offset: {$multiply: [20, =view.zoomlevel]}
 			
 		}},
-		
+		{.border-p:{
+			layout-grid-line: 0,
+			layout-grid-line-offset: 0,
+			border-width:[2, 123, 0, 0]
+			
+		}},
 		{#body_container: { 
             column-count: { if: =portrait, then: 3, else: 4},
             column-gutter: 12,
@@ -70,17 +75,11 @@
     }</style>
 	<panel id="body_container">
 		<box id="media" embed="media" />
-		<panel class="flash_by">
-			<p class="article_headline"><span embed="headline"/><mark class="key"/></p>
-			<h2 class="article_subhed" embed="subhed" />
-	        <p class="module_flashline" embed="flashline"/>
-     		<p class="byline" embed="byline"/>
-    	</panel>
-		<panel class="border">
-			<box id="border_box">
-				<box id="border" />
-			</box>
-		</panel>
+		<p class="article_headline"><span embed="headline"/><mark class="key"/></p>
+		<h2 class="article_subhed" embed="subhed" />
+        <p class="module_flashline" embed="flashline"/>
+    		<p class="byline" embed="byline"/>
+   		<p class="border-p"><mark class="border-mark"/></p>
 		<panel class="article_body" embed="body"/>
 	</panel>
 </jpml>

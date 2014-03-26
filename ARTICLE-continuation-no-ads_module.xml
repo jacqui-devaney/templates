@@ -65,7 +65,6 @@
     <panel id="body_container">
 		<box id="media" embed="media" />
 		<panel class="article_body">
-			<p class="continued_p"><mark id="continued" /></p>
 			<panel id="body_continuation" embed="body"/>
 		</panel>
     </panel>

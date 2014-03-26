@@ -52,9 +52,6 @@
 		<p id="close_button_p"><mark class="close"></mark></p>
 	</box>
 	<panel id="body_container">
-        <box id="continued_label">
-			<p><mark id="continued" /></p>
-		</box>
 		<box id="mediabucket_container">
 			<box id="media" embed="media" />
 		</box>

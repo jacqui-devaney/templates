@@ -36,15 +36,17 @@
 		line-height:{$multiply: [20, =view.zoomlevel]},
 		color:#000
 	},
-	#border_box: {
-		padding:[4, 0, 0, 0],
-		width:236,
-		height:9
+	.border-p:{
+		border-width:[4, 123, 0, 0],
+		background-color: #e1e0df,
+		border-color:white
 	},
-	#border: {
-		background-color:#e1e0df,
-		height:4,
-		width:113
+	.border-mark: {
+		font-size: 4,
+		line-height:4,
+		color: transparent,
+		content: "unfortunate"
+		
 	},
 	.byline-author: {
 		text-transform:uppercase
@@ -63,7 +65,8 @@
 		font-size:{$multiply: [14, =view.zoomlevel]},
 		line-height:{$multiply: [20, =view.zoomlevel]},
 	    text-align: left,
-		color:#222221
+		color:#222221,
+		text-indent:20
 	},
 	.body-bug: {
 		display: {if:=intent.article, then:default, else:none},
@@ -108,15 +111,6 @@
 		padding: [0, 0, 0, 8],
 		border-width: [0, 0, 0, 1],
 		border-color: black
-	  },
-	#continued: {
-		content: "Continued",		
-		font-name: DJ5Exchange-SemiboldItalic,
-		font-size:11,
-		line-height:20,
-		color:#898b8e,
-		text-align:left
-	}
-	
+	  }
 		
 }

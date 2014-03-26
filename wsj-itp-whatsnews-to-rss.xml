@@ -72,6 +72,7 @@
 	<link><xsl:call-template name="html_link_for_id">
 		<xsl:with-param name="id" select="$link"/>
 	</xsl:call-template></link>
+	<guid><xsl:value-of select="$link"/></guid>
 	<!-- Look for paid/free flag in the linked DJML:
 		<article-doc>
     		<meta-data>

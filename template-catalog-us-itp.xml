@@ -56,7 +56,7 @@
 		
 		<!-- SECTION CONTINUATION -->
 		<template 
-			name="SECTION-5story-scroll_template.xml" 
+			name="CONTINUATION-5story-scroll_template.xml" 
 			title="5 Stories - Scrollable Rail"
 			min="5" 
 			deco="true"
@@ -64,7 +64,7 @@
 			page="2"
 		/>
 		<template 
-			name="SECTION-6story-scroll_template.xml" 
+			name="CONTINUATION-6story-scroll_template.xml" 
 			title="6 Stories - Scrollable Rail"
 			min="6" 
 			deco="true"
@@ -72,7 +72,7 @@
 			page="2"
 		/>
 		<template 
-			name="SECTION-3story-scroll_template.xml" 
+			name="CONTINUATION-3story-scroll_template.xml" 
 			title="3Stories - Scrollable Rail"
 			min="3" 
 			deco="true"

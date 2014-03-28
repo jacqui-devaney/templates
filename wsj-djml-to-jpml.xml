@@ -182,7 +182,7 @@
             <xsl:value-of select="position()"/>
             <xsl:text>.</xsl:text>
         </xsl:when>
-    </xsl:choose></mark><xsl:text> </xsl:text><xsl:apply-templates select="*"/></p>
+    </xsl:choose></mark><xsl:text> </xsl:text><xsl:apply-templates select="node()|@*"/></p>
 </xsl:template>
 
 <!-- We intentionally do not output the byline as part of the article body. -->

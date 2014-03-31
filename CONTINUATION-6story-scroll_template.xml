@@ -46,7 +46,7 @@
 		}},
 		#rail_content: {
 			options: { 
-				filename: { $join: [=page.CONTINUATION, "-article_list.jpml"] },
+				filename: { $join: [=page.section, "-article_list.jpml"] },
 				bottom_gradient: #fff
 			}
 		}

@@ -15,13 +15,13 @@
 			 }
 		}</style>
 	<panel id="not_prominent">
-		<p class="small_headline"><span embed="headline" /><mark class="key" /></p>
+		<p class="small_headline"><mark class="m_headline" /><mark class="key" /></p>
 	</panel>
 	<panel id="medium">
-		<p class="medium_headline"><span embed="headline" /><mark class="key" /></p>
+		<p class="medium_headline"><mark class="m_headline" /><mark class="key" /></p>
 	</panel>
 	<panel id="prominent">
-		<p class="large_headline"><span embed="headline" /><mark class="key" /></p>
+		<p class="large_headline"><mark class="m_headline" /><mark class="key" /></p>
 	</panel>
 	<box id="image_container">
 		<image embed="summary-image"/>

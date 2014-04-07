@@ -104,10 +104,10 @@
 		<box id="wrapper">
 			<panel id="content">
 				<panel id="top_headline">
-					<p class="deco_headline"><span embed="headline" /><mark class="key" /></p>
+					<p class="deco_headline"><mark class="m_headline" /><mark class="key" /></p>
 				</panel>
 				<box id="bottom">
-					<p class="deco_bottom_headline"><span embed="headline" /><mark class="key" /></p>
+					<p class="deco_bottom_headline"><mark class="m_headline" /><mark class="key" /></p>
 					<panel embed="body" class="deco_caption" />
 				</box>
 

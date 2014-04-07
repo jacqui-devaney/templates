@@ -65,7 +65,7 @@
 	</panel>
 	<panel id="vertical">
 	   	<p class="highlight_flashline hidden_tablet" embed="flashline" />
-		<p class="opinion_headline"><span embed="headline" /><mark class="key" /></p>
+		<p class="opinion_headline"><mark class="m_headline" /><mark class="key" /></p>
 		<h2 class="opinion_dek" embed="subhed" ></h2>
 		<panel class="body" embed="body"/>
 		

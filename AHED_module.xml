@@ -89,7 +89,7 @@
 		
 		<panel id="vertical">
 			<panel id="headline">
-				<p class="module_headline"><span embed="headline" /><mark class="key" /></p>
+				<p class="module_headline"><mark class="m_headline" /><mark class="key" /></p>
 				<p class="ahed_headline"><span embed="headline"/><mark class="key"/></p>
 	        	<h2 class="ahed_subhed" embed="subhed"/>
 			</panel>

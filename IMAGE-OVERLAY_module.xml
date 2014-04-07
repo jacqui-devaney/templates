@@ -62,7 +62,7 @@
 	<box id="container" class="hidden_phone">
 		<image embed="summary-image" />
 		<box id="text_container">
-			<p class="module_headline"><span embed="headline" /><mark class="key" /></p>
+			<p class="module_headline"><mark class="m_headline" /><mark class="key" /></p>
 			<panel class="body">
 				<p embed="subhed" />
 			</panel>
@@ -74,7 +74,7 @@
 		</box>
 		<panel id="vertical">
 			<panel id="headline">
-				<p class="module_headline"><span embed="headline" /><mark class="key" /></p>
+				<p class="module_headline"><mark class="m_headline" /><mark class="key" /></p>
 			</panel>
 			<panel id="body">
 				<panel class="body" embed="body"/>

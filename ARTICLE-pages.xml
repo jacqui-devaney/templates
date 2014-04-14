@@ -5,14 +5,8 @@
                 </page>
                
     <!-- These pages will repeat as needed, hence the "repeat" type -->
-                 <!-- <page template="ARTICLE-continuation-no-ads_template.xml" type="repeat" for="tablet">
-                                <link id="view" module="ARTICLE-continuation-no-ads_module.xml"/>
-                </page>   -->
-                <page template="ARTICLE-continuation-ads_template.xml" type="repeat" for="tablet">
-                                <link id="view" module="ARTICLE-continuation-ads_module.xml"/>
-                </page>   
-                <page template="ARTICLE-continuation-no-ads_template.xml" type="repeat" for="tablet">
-                                <link id="view" module="ARTICLE-continuation-no-ads_module.xml"/>
+                <page template="ARTICLE-continuation_template.xml" type="repeat" for="tablet">
+                                <link id="view" module="ARTICLE-continuation_module.xml"/>
                 </page>   
                
     <!-- The last page of every article uses column leveling with a background matte,

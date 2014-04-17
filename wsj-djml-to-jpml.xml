@@ -301,12 +301,40 @@
 </xsl:template>
 -->
 
-<!-- Company Links-->
+<!-- Company Links - US Only for now.
+    US: <phrase name="MSFT" type="COMPANY" vrtysux="COMPANY|MSFT">Microsoft</phrase>
+    JP: <phrase name="6758.TO" type="COMPANY" vrtysux="COMPANY|6758.TO">Sony</phrase>
+    International companies are ignored because there's no mapping of "TO" -> "JP" here.
+-->
+
+<!-- Old way: tappable links
 <xsl:template match="phrase[@type = &quot;COMPANY&quot; and not(contains(@vrtysux, '.'))]">
     <a class="link-company">
         <xsl:attribute name="href">quote://<xsl:value-of select="substring-after(@vrtysux, '.')"/>/<xsl:value-of select="@name"/></xsl:attribute>
         <xsl:value-of select="."/>
     </a>
+</xsl:template>
+ -->
+
+<!-- New way: ticker spans. We include some dummy text so the span occupies space onscreen. 
+    The "MMMM" prefix and suffix are to ensure a certain amount of em-widths are accomodated
+    for in the span width layout calculations, with the @name playing a part in the overall 
+    length of it too.
+-->
+<xsl:template match="phrase[@type = &quot;COMPANY&quot; and not(contains(@vrtysux, '.'))]">
+    <xsl:value-of select="."/>
+    <xsl:value-of select="' '"/>
+    <span embed="ticker" class="ticker">
+        <xsl:attribute name="id">ticker-<xsl:choose>
+            <xsl:when test="contains(@vrtysux, '.')">
+                <xsl:value-of select="substring-after(@vrtysux, '.')"/>
+            </xsl:when>
+            <xsl:otherwise>
+                <xsl:value-of select="'US'"/>
+            </xsl:otherwise>
+        </xsl:choose>-<xsl:value-of select="@name"/></xsl:attribute>
+        <xsl:value-of select="concat('MMM', @name, 'MMM')"/>
+    </span>
 </xsl:template>
 
 <xsl:template match="media">

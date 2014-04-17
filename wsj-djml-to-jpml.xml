@@ -323,6 +323,9 @@
 -->
 <xsl:template match="phrase[@type = &quot;COMPANY&quot; and not(contains(@vrtysux, '.'))]">
     <xsl:value-of select="."/>
+    <xsl:if test="following-sibling::node()/self::text()">
+        <xsl:value-of select="substring-before(following-sibling::node(), ' ')" />
+    </xsl:if>
     <xsl:value-of select="' '"/>
     <span embed="ticker" class="ticker">
         <xsl:attribute name="id">ticker-<xsl:choose>
@@ -333,9 +336,15 @@
                 <xsl:value-of select="'US'"/>
             </xsl:otherwise>
         </xsl:choose>-<xsl:value-of select="@name"/></xsl:attribute>
-        <xsl:value-of select="concat('MMM', @name, 'MMM')"/>
+        <xsl:value-of select="concat('MM', @name, 'MM')"/>
     </span>
+    <xsl:value-of select="' '"/>
 </xsl:template>
+
+<xsl:template match="text()[local-name(preceding-sibling::node()[1]) = 'phrase' and preceding-sibling::node()[1][@type = &quot;COMPANY&quot;]]">
+    <xsl:value-of select="substring-after(., ' ')" />
+</xsl:template>
+
 
 <xsl:template match="media">
 </xsl:template>

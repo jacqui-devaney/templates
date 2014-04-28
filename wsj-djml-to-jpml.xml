@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+<xsl:stylesheet 
+    xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
+    xmlns:dj="http://dowjones.com/2014/dummy"
+    version="1.0">
+    
 <xsl:output method="xml" encoding="UTF-8" indent="yes"/>
 
 <xsl:key name="srcid" match="image" use="@src-id" />
@@ -301,13 +305,69 @@
 </xsl:template>
 -->
 
-<!-- Company Links-->
+<!-- Company Links - US Only for now.
+    US: <phrase name="MSFT" type="COMPANY" vrtysux="COMPANY|MSFT">Microsoft</phrase>
+    JP: <phrase name="6758.TO" type="COMPANY" vrtysux="COMPANY|6758.TO">Sony</phrase>
+    International companies are ignored because there's no mapping of "TO" -> "JP" here.
+-->
+
+<!-- Old way: tappable links
 <xsl:template match="phrase[@type = &quot;COMPANY&quot; and not(contains(@vrtysux, '.'))]">
     <a class="link-company">
         <xsl:attribute name="href">quote://<xsl:value-of select="substring-after(@vrtysux, '.')"/>/<xsl:value-of select="@name"/></xsl:attribute>
         <xsl:value-of select="."/>
     </a>
 </xsl:template>
+ -->
+
+<!-- New way: ticker spans. We include some dummy text so the span occupies space onscreen. 
+    The "MMMM" prefix and suffix are to ensure a certain amount of em-widths are accomodated
+    for in the span width layout calculations, with the @name playing a part in the overall 
+    length of it too.
+-->
+
+<!--
+    Additional fun ensues because Methode doesn't include the company type in the markup. For example:
+    Today <phrase>Microsoft</phrase> Corp. announced their earnings, which were lower than <phrase>Apple</phrase>'s.
+    We want the ticker to go after the 'Corp.' and the apostrophe-s text. 
+
+    Mainsite does this via giant regex:
+
+    https://github.dowjones.net/wsjdn-tesla/resp.svc.article/blob/93d577f6554721c687cfc6a666098c1d10405eaa/lib/article_html_formatter.js#L69
+
+    We call a template giving it the next text
+-->
+
+<xsl:template match="phrase[@type = &quot;COMPANY&quot; and not(contains(@vrtysux, '.'))]">
+    <xsl:value-of select="."/>
+    <xsl:if test="following-sibling::node()/self::text()">
+        <xsl:call-template name="split_company_extension">
+            <xsl:with-param name="mode" select="'before'"/>
+            <xsl:with-param name="text" select="following-sibling::node()" />
+        </xsl:call-template>
+    </xsl:if>
+    <xsl:value-of select="' '"/>
+    <span embed="ticker" class="ticker">
+        <xsl:attribute name="id">ticker-<xsl:choose>
+            <xsl:when test="contains(@vrtysux, '.')">
+                <xsl:value-of select="substring-after(@vrtysux, '.')"/>
+            </xsl:when>
+            <xsl:otherwise>
+                <xsl:value-of select="'US'"/>
+            </xsl:otherwise>
+        </xsl:choose>-<xsl:value-of select="@name"/></xsl:attribute>
+        <xsl:value-of select="concat('MM', @name, 'MM')"/>
+    </span>
+    <xsl:value-of select="' '"/>
+</xsl:template>
+
+<xsl:template match="text()[local-name(preceding-sibling::node()[1]) = 'phrase' and preceding-sibling::node()[1][@type = &quot;COMPANY&quot;]]">
+    <xsl:call-template name="split_company_extension">
+        <xsl:with-param name="mode" select="'after'"/>
+        <xsl:with-param name="text" select="." />
+    </xsl:call-template>
+</xsl:template>
+
 
 <xsl:template match="media">
 </xsl:template>
@@ -404,6 +464,75 @@
     <xsl:apply-templates select="@*|node()"/>
   </xsl:copy>
 </xsl:template>
+
+
+<xsl:template name="split_company_extension">
+    <xsl:param name="text"/>
+    <xsl:param name="mode"/>
+    <xsl:variable name="length">
+        <xsl:call-template name="company_extension_length">
+            <xsl:with-param name="text" select="$text"/>
+        </xsl:call-template>
+    </xsl:variable>
+    <xsl:choose>
+        <xsl:when test="$mode = 'before'">
+            <xsl:value-of select="substring($text, 1, $length)"/>
+        </xsl:when>
+        <xsl:when test="$mode = 'after'">
+            <xsl:value-of select="substring($text, 1 + $length)"/>
+        </xsl:when>
+    </xsl:choose>
+</xsl:template>
+    
+<!-- 
+    Find the first item in the extensions list that matches the start of $text and return the length of that item.
+    Otherwise return zero. 
+-->
+
+<xsl:template name="company_extension_length">
+    <xsl:param name="text"/>
+    <xsl:for-each select="document('')//dj:extensions/ext[. = substring($text, 1, string-length(.))]">
+        <xsl:if test="position() = 1">
+            <xsl:value-of select="string-length(.)" />
+        </xsl:if>
+    </xsl:for-each>
+    <xsl:if test="not(document('')//dj:extensions/ext[. = substring($text, 1, string-length(.))])">0</xsl:if>
+</xsl:template>
+
+<!-- this list is derived from
+    https://github.dowjones.net/wsjdn-tesla/resp.svc.article/blob/93d577f6554721c687cfc6a666098c1d10405eaa/lib/article_html_formatter.js#L69
+-->
+<dj:extensions>
+    <ext>,</ext>
+    <ext>.</ext>
+    <ext>'S</ext>
+    <ext>'s</ext>
+    <ext> &amp; Co.</ext>
+    <ext> Co.</ext>
+    <ext> PCL,</ext>
+    <ext> SA,</ext>
+    <ext> SA</ext>
+    <ext> S.A.,</ext>
+    <ext> S.A.</ext>
+    <ext> AS,</ext>
+    <ext> AS</ext>
+    <ext> A.S.,</ext>
+    <ext> A.S.</ext>
+    <ext> AG</ext>
+    <ext> Corp.'s</ext>
+    <ext> Corp.</ext>
+    <ext> Corp's</ext>
+    <ext> Corp</ext>
+    <ext> Inc.,</ext>
+    <ext> Inc.'s</ext>
+    <ext> Inc.</ext>
+    <ext> Inc's</ext>
+    <ext> Inc</ext>
+    <ext> Ltd.'s</ext>
+    <ext> Ltd.</ext>
+    <ext> Ltd's</ext>
+    <ext> Ltd</ext>
+</dj:extensions>
 
 <xsl:template name="toupper">
   <xsl:param name="node" />

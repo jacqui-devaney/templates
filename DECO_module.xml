@@ -23,7 +23,7 @@
 			<box id="deco_container" embed="deco-image">
 				<image embed="summary-image" />
 				<box id="deco_caption_container">
-					<p class="deco_headline"><span embed="headline" /><mark class="key" /></p>
+					<p class="deco_headline"><mark class="m_headline" /><mark class="key" /></p>
 					<panel class="deco_caption">
 						<p embed="subhed" />
 					</panel>

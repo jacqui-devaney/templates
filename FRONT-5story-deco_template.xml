@@ -5,7 +5,6 @@
     <style src="FRONT-stylesheet.ejs"/>
     <style src="PHONE-stylesheet.ejs"/>
     <style>{
-	
 		#b1: {
 			options:{$switch:[
 				{if: =scale.phone, then: {large_headline:true, top_align:true, show_body:true, show_image:true}},
@@ -57,8 +56,8 @@
 						height:150
 				},
 				#deco:	{ 
-					top:0,
-					height:341
+					top:20,
+					height:321
 				},
 				#b2:	{ 
 						top:508,
@@ -81,32 +80,33 @@
 			}}, 
 			{if: =landscape, then: {
 				#b1:	{ 
-					top:0,
+					top:20,
 					height:341
 				},
 				#deco:	{ 
-					top:0,
+					top:20,
 					height:341
 				},
 				#b2:	{ 
-					top:360,
-					height:198
+					top:380,
+					height:178
 				},
 				#b3:	{ 
-					top:360,
-					height:198
+					top:380,
+					height:178
 				},
 				#b4:	{ 
-					top:360,
-					height:198
+					top:380,
+					height:178
 				},
 				#b5:	{ 
-					top:360,
-					height:200
+					top:380,
+					height:180
 				}
 			}}
 		]
 	} </style>
+	<box id="marketstrap" class="position_full column_full" embed="marketstrap" />
 	<box id="whatsnews" class="column3 positionx1" embed="whatsnews">
 	</box>
 	<box id="b1" embed="article" class="column4-9 positionx13-4 maude unit_166" module="TOP-IMAGE_module.xml" />

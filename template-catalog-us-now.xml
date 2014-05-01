@@ -99,6 +99,15 @@
 
 		<!-- END  RISK_AND_COMPLIANCE-->
 		
+		<!-- CMO -->
+		<template 
+			name="SECTION-CMO_template.xml" 
+			title="CMO Front" 
+			section="CMO" 
+			min="8" 
+			usage="front" 
+		/>		
+		<!--  END CMO -->
 		
 		<!-- GENERIC CONTINUATION -->
 		<template 

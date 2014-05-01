@@ -93,8 +93,8 @@
 				padding: [{if: =options.top_align, then:8, else:0}, 8, 0, 8]
 			},
 			image: { 
-				height: 320,
-				width:320,
+				height: {$multiply: [=view.width, .62 ]},
+				width:=view.width,
 				display:inherit,
 				padding: [0]
 				

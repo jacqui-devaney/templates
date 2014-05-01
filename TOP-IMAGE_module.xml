@@ -93,8 +93,8 @@
 				padding: [{if: =options.top_align, then:8, else:0}, 8, 0, 8]
 			},
 			image: { 
-				height: 76,
-				width:76,
+				height: 320,
+				width:320,
 				display:inherit,
 				padding: [0]
 				

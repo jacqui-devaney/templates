@@ -15,6 +15,18 @@
 	<style>{
 		$switch: [
 			{if: =scale.phone, then: {
+		        #b1: {
+							height: {if:=articles.b1.show_subsection, then: 68, else:50}
+				},
+		        #b2: {
+		                    height: {if:=articles.b2.subsection, equals:=articles.b1.subsection, then: 50} 
+		        },
+		        #b3: {
+		                    height: {if:=articles.b3.subsection, equals:=articles.b2.subsection, then: 50} 
+		        },
+		        #b4: {
+		                    height: {if:=articles.b4.subsection, equals:=articles.b3.subsection, then: 50} 
+		        }
 	        }},
 	        {if: =portrait, then: {
 		        #b1 : { 
@@ -54,8 +66,8 @@
 			}}
 		]
     }</style>
-    <box id="b1" embed="article" class="maude unit_continuation_strap column2 positionx1" module="CONTINUATION-dynamic_module.xml" />    
-    <box id="b2" embed="article" class="maude unit_continuation_strap column2 positionx3" module="CONTINUATION-dynamic_module.xml" />
-    <box id="b3" embed="article" class="maude unit_continuation_strap column2 positionx5" module="CONTINUATION-dynamic_module.xml" />
-    <box id="b4" embed="article" class="maude unit_continuation_strap column2 positionx7-5" module="CONTINUATION-dynamic_module.xml" />
+    <box id="b1" embed="article" class="column2 positionx1 maude unit_continuation_strap" module="CONTINUATION-dynamic_module.xml" />    
+    <box id="b2" embed="article" class="column2 positionx3 maude unit_continuation_strap" module="CONTINUATION-dynamic_module.xml" />
+    <box id="b3" embed="article" class="column2 positionx5 maude unit_continuation_strap" module="CONTINUATION-dynamic_module.xml" />
+    <box id="b4" embed="article" class="column2 positionx7-5 maude unit_continuation_strap" module="CONTINUATION-dynamic_module.xml" />
 </jpml>

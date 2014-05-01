@@ -7,7 +7,7 @@
 		$switch: [
 			{if: =scale.phone, then: {
 		        #b1: {
-							height: {if:=articles.b1.show_subsection, then:inherit, else:50}
+							height: {if:=articles.b1.show_subsection, then: 68, else:50}
 				},
 		        #b2: {
 		                    height: {if:=articles.b2.subsection, equals:=articles.b1.subsection, then: 50} 
@@ -97,11 +97,11 @@
 	        }}
 		]
     }</style>
-    <box id="b1" embed="article" class="maude unit_continuation_strap column2 positionx1" module="CONTINUATION-dynamic_module.xml" />    
-    <box id="b2" embed="article" class="maude unit_continuation_strap column2 positionx3-1" module="CONTINUATION-dynamic_module.xml" />
-    <box id="b3" embed="article" class="maude unit_continuation_strap column2 positionx5-3" module="CONTINUATION-dynamic_module.xml" />
-    <box id="b4" embed="article" class="maude unit_continuation_strap column2 positionx5-3" module="CONTINUATION-dynamic_module.xml" />
-    <box id="b5" embed="article" class="maude unit_continuation_strap column2 positionx7-5" module="CONTINUATION-dynamic_module.xml" />
-    <box id="b6" embed="article" class="maude unit_continuation_strap column2 positionx7-5" module="CONTINUATION-dynamic_module.xml" />
+    <box id="b1" embed="article" class="column2 positionx1 maude unit_continuation_strap" module="CONTINUATION-dynamic_module.xml" />    
+    <box id="b2" embed="article" class="column2 positionx3-1 maude unit_continuation_strap" module="CONTINUATION-dynamic_module.xml" />
+    <box id="b3" embed="article" class="column2 positionx5-3 maude unit_continuation_strap" module="CONTINUATION-dynamic_module.xml" />
+    <box id="b4" embed="article" class="column2 positionx5-3 maude unit_continuation_strap" module="CONTINUATION-dynamic_module.xml" />
+    <box id="b5" embed="article" class="column2 positionx7-5 maude unit_continuation_strap" module="CONTINUATION-dynamic_module.xml" />
+    <box id="b6" embed="article" class="column2 positionx7-5 maude unit_continuation_strap" module="CONTINUATION-dynamic_module.xml" />
 
 </jpml>

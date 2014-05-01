@@ -6,6 +6,27 @@
 	<style>{
 		$switch: [
 			{if: =scale.phone, then: {
+		        #b1: {
+							height: {if:=articles.b1.show_subsection, then: 68, else:50}
+				},
+		        #b2: {
+		                    height: {if:=articles.b2.subsection, equals:=articles.b1.subsection, then: 50} 
+		        },
+		        #b3: {
+		                    height: {if:=articles.b3.subsection, equals:=articles.b2.subsection, then: 50} 
+		        },
+		        #b4: {
+		                    height: {if:=articles.b4.subsection, equals:=articles.b3.subsection, then: 50} 
+		        },
+		        #b5: {
+		                    height: {if:=articles.b5.subsection, equals:=articles.b4.subsection, then: 50} 
+		        },
+		        #b6: {
+		                    height: {if:=articles.b6.subsection, equals:=articles.b5.subsection, then: 50} 
+		        },
+				#b7: {
+		                    height: {if:=articles.b7.subsection, equals:=articles.b6.subsection, then: 50} 
+		        }
 	        }},
 	        {if: =portrait, then: {
 				#b1 : { 
@@ -73,9 +94,9 @@
     }</style>
     <box id="b1" embed="article" class="column2 positionx1 maude unit_continuation_strap" module="CONTINUATION-dynamic_module.xml" />    
     <box id="b2" embed="article" class="column2 positionx3-1 maude unit_continuation_strap" module="CONTINUATION-dynamic_module.xml" />
-    <box id="b3" embed="article" class="column2 maude positionx5-3 unit_continuation_strap" module="CONTINUATION-dynamic_module.xml" />
-    <box id="b4" embed="article" class="column2 maude positionx5-3 unit_continuation_strap" module="CONTINUATION-dynamic_module.xml" />
-    <box id="b5" embed="article" class="column2 maude positionx7-5 unit_continuation_strap" module="CONTINUATION-dynamic_module.xml" />
-    <box id="b6" embed="article" class="column2 maude positionx7-5 unit_continuation_strap" module="CONTINUATION-dynamic_module.xml" />
-    <box id="b7" embed="article" class="column2 maude positionx7-5 unit_continuation_strap" module="CONTINUATION-dynamic_module.xml" />
+    <box id="b3" embed="article" class="column2 positionx5-3 maude unit_continuation_strap" module="CONTINUATION-dynamic_module.xml" />
+    <box id="b4" embed="article" class="column2 positionx5-3 maude unit_continuation_strap" module="CONTINUATION-dynamic_module.xml" />
+    <box id="b5" embed="article" class="column2 positionx7-5 maude unit_continuation_strap" module="CONTINUATION-dynamic_module.xml" />
+    <box id="b6" embed="article" class="column2 positionx7-5 maude unit_continuation_strap" module="CONTINUATION-dynamic_module.xml" />
+    <box id="b7" embed="article" class="column2 positionx7-5 maude unit_continuation_strap" module="CONTINUATION-dynamic_module.xml" />
 </jpml>

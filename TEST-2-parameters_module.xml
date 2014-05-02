@@ -1,5 +1,7 @@
 <jpml id="TEST-2-parameters_module">
     <style src="TEST-2-stylesheet.ejs"/>
+	<style src="GLOBAL-stylesheet.ejs" />
+	<style src="GLOBAL_MODULES-stylesheet.ejs" />
 
     <p>Test 2 module</p>
     <p>Style module debug info 1 (computed values): <mark id="debug_computed"/></p>

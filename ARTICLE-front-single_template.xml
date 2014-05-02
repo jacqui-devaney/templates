@@ -1,4 +1,5 @@
 <jpml id="ARTICLE-front-single_template">
+	<style src="GLOBAL-stylesheet.ejs"/>
     <style>{
         if: =portrait, then: {
             #view: { frame: [0, 0, 768, 899] }

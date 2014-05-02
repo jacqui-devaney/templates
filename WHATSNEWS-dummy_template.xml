@@ -1,4 +1,5 @@
 <jpml id="WHATSNEWS-dummy_template">
+	<style src="GLOBAL-stylesheet.ejs" />
 	<style src="CONTINUATION-stylesheet.ejs" />
     <style>{
         if: =portrait, then: {

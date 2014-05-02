@@ -1,6 +1,6 @@
 <jpml id="TEST-3-borders_module">
-	<style src="GLOBAL_MODULES-stylesheet.ejs" />
 	<style src="GLOBAL-stylesheet.ejs" />
+	<style src="GLOBAL_MODULES-stylesheet.ejs" />
 	<style>
     {
         box: { background-color: #eee },

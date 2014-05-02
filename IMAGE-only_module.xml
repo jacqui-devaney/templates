@@ -1,6 +1,6 @@
 <jpml id="IMAGE-only_module">
-	<style src="GLOBAL_MODULES-stylesheet.ejs" />
 	<style src="GLOBAL-stylesheet.ejs" />
+	<style src="GLOBAL_MODULES-stylesheet.ejs" />
 	<style src="PHONE-MODULES-stylesheet.ejs" />
 	<style>{
 		if: =scale.phone, then: {

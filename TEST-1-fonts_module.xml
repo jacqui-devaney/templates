@@ -1,4 +1,6 @@
 <jpml id="TEST-1-fonts_module">
+	<style src="GLOBAL-stylesheet.ejs" />
+	<style src="GLOBAL_MODULES-stylesheet.ejs" />
 	<style>{
 		p:	{font-size:20, padding:[0, 0, 20, 0]},
 		#p1: { font-name: DJ5EscrowCond-Bold},

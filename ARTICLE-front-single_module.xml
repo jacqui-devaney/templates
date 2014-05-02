@@ -1,6 +1,6 @@
 <jpml id="ARTICLE-front-single_module">
-	<style src="GLOBAL_MODULES-stylesheet.ejs" />
 	<style src="GLOBAL-stylesheet.ejs" />
+	<style src="GLOBAL_MODULES-stylesheet.ejs" />
 	<style>{
 		$join: [
 		{#header_top: { padding:[18, 10, 8, 15] }},

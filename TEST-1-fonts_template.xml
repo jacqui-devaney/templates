@@ -1,4 +1,5 @@
 <jpml id="TEST-1-fonts_template">
+	<style src="GLOBAL-stylesheet.ejs" />
 	<style>{
 		if: =portrait, then: {
 			#b1: {frame:[0, 0, 768, 1024]}

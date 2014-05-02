@@ -1,4 +1,5 @@
 <jpml id="WHATSNEWS-phone_template">
+<style src="GLOBAL-stylesheet.ejs" />
 <style>{
 #whatsnews: { frame: [0, 0, =view.width, =view.height] }, 
 .hidden: { display: none }

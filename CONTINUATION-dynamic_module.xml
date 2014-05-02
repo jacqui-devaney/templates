@@ -1,6 +1,6 @@
 <jpml id="CONTINUATION-dynamic_module">
-	<style src="GLOBAL_MODULES-stylesheet.ejs" />
 	<style src="GLOBAL-stylesheet.ejs" />
+	<style src="GLOBAL_MODULES-stylesheet.ejs" />
 	<style src="PHONE-MODULES-stylesheet.ejs" />
     <style>{
 		jpml: { padding: [ 4, 8, 4, 0] },

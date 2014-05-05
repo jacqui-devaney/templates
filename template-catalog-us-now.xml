@@ -44,15 +44,15 @@
 		
 		<!-- CIO -->
 		<template 
-			name="SECTION-6story_template.xml"
-			title="6 story - G photo"
-			min="6"
-			usage="front"
+			name="SECTION-CIO_template.xml" 
+			title="CIO Front" 
 			section="CIO" 
+			min="10" 
+			usage="front" 
 		/>		
 		<template 
-			name="CONTINUATION-generic-11_template.xml" 
-			min="11"
+			name="CONTINUATION-CIO_template.xml" 
+			min="18" 
 			title="CIO Continuation" 
 			section="CIO" 
 			usage="continuation" 
@@ -63,15 +63,15 @@
 		
 		<!-- CFO -->
 		<template 
-			name="SECTION-6story_template.xml"
-			title="6 story - G photo"
-			min="6"
-			usage="front"
+			name="SECTION-CIO_template.xml" 
+			title="CFO Front" 
 			section="CFO" 
+			min="10" 
+			usage="front" 
 		/>		
 		<template 
-			name="CONTINUATION-generic-11_template.xml" 
-			min="11"
+			name="CONTINUATION-CIO_template.xml" 
+			min="18" 
 			title="CFO Continuation" 
 			section="CFO" 
 			usage="continuation" 
@@ -82,15 +82,15 @@
 		
 		<!-- RISK_AND_COMPLIANCE -->
 		<template 
-			name="SECTION-6story_template.xml"
-			title="6 story - G photo"
-			min="6"
-			usage="front"
+			name="SECTION-CIO_template.xml" 
+			title="RISK_AND_COMPLIANCE Front" 
 			section="RISK_AND_COMPLIANCE" 
+			min="10" 
+			usage="front" 
 		/>		
 		<template 
-			name="CONTINUATION-generic-11_template.xml" 
-			min="11"
+			name="CONTINUATION-CIO_template.xml" 
+			min="18" 
 			title="RISK_AND_COMPLIANCE Continuation" 
 			section="RISK_AND_COMPLIANCE" 
 			usage="continuation" 
@@ -101,14 +101,13 @@
 		
 		<!-- CMO -->
 		<template 
-			name="SECTION-6story_template.xml"
-			title="6 story - G photo"
+			name="SECTION-CMO_template.xml" 
+			title="CMO Front" 
 			section="CMO" 
-			min="6" 
+			min="8" 
 			usage="front" 
 		/>		
 		<!--  END CMO -->
-
 		
 		<!-- GENERIC CONTINUATION -->
 		<template 

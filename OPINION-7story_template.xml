@@ -24,7 +24,10 @@
     <style>{ 
 		$switch:[
 			{if: =scale.phone, then: {
-			
+                #front_page :{
+                    display:none
+                }
+
 			}},
 			{if: =portrait, then: {
 				#b1: {
@@ -101,7 +104,7 @@
     <box id="b1" embed="article" class="column8 positionx1 maude unit_100" module="OPINION-RANDO-LETTERS_module.xml" />
     <box id="b2" embed="article" class="column8 positionx1 maude unit_100" module="OPINION-RANDO-LETTERS_module.xml" />
     <box id="b3" embed="article" class="column8 positionx1 maude unit_100" module="OPINION-RANDO-LETTERS_module.xml" />
-	<box id="b4" embed="article" class="column8 positionx9-1 maude unit_50" module="DECO_module.xml" />
+	<box id="b4" embed="article" class="column8 positionx9-1 maude unit_75" module="DECO_module.xml" />
 	<box id="b5" embed="article" class="column4 positionx1-9 maude unit_50" module="TOP-IMAGE_module.xml" />
 	<box id="b6" embed="article" class="column4 positionx5-9 maude unit_50" module="TOP-IMAGE_module.xml" />
 	<box id="b7" embed="article" class="column4 positionx9 maude unit_50" module="TOP-IMAGE_module.xml" />

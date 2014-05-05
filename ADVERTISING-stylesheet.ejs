@@ -11,6 +11,8 @@
 	.hidden_tablet: {display:none},
 	.hidden_phone: {display:inherit},
 	#front_page: {
+		display:{if: =scale.phone, then:none, else:inherit},
+		position:{if: =scale.phone, then:absolute, else:inherit},
 		top: {if: =landscape, then:568, else:824},
 		height: {if: =scale.phone, then:50, else:90}
 	},

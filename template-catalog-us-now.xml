@@ -41,6 +41,74 @@
 		
 		<!-- END SECTIONS -->
 		
+		
+		<!-- CIO -->
+		<template 
+			name="SECTION-6story_template.xml"
+			title="6 story - G photo"
+			min="6"
+			usage="front"
+			section="CIO" 
+		/>		
+		<template 
+			name="CONTINUATION-generic-12_template.xml" 
+			min="12"
+			title="CIO Continuation" 
+			section="CIO" 
+			usage="continuation" 
+			page="2" 
+		/>
+
+		<!-- END  CIO-->
+		
+		<!-- CFO -->
+		<template 
+			name="SECTION-6story_template.xml"
+			title="6 story - G photo"
+			min="6"
+			usage="front"
+			section="CFO" 
+		/>		
+		<template 
+			name="CONTINUATION-generic-12_template.xml" 
+			min="12"
+			title="CFO Continuation" 
+			section="CFO" 
+			usage="continuation" 
+			page="2" 
+		/>
+
+		<!-- END  CFO-->
+		
+		<!-- RISK_AND_COMPLIANCE -->
+		<template 
+			name="SECTION-6story_template.xml"
+			title="6 story - G photo"
+			min="6"
+			usage="front"
+			section="RISK_AND_COMPLIANCE" 
+		/>		
+		<template 
+			name="CONTINUATION-generic-12_template.xml" 
+			min="12"
+			title="RISK_AND_COMPLIANCE Continuation" 
+			section="RISK_AND_COMPLIANCE" 
+			usage="continuation" 
+			page="2" 
+		/>
+
+		<!-- END  RISK_AND_COMPLIANCE-->
+		
+		<!-- CMO -->
+		<template 
+			name="SECTION-6story_template.xml"
+			title="6 story - G photo"
+			section="CMO" 
+			min="6" 
+			usage="front" 
+		/>		
+		<!--  END CMO -->
+		
 		<!-- GENERIC CONTINUATION -->
 		<template 
 			name="CONTINUATION-generic-12_template.xml" 

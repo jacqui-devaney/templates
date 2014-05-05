@@ -107,7 +107,7 @@
 				display:{if: =options.show_byline, then:inherit, else:none}
 			},
 			#body: {
-				display:{if-any: [=options.show_body, {if: =page.section, equals: "OPINION"}], then:inherit, else:none},
+				display:{if-any: [=options.show_body, {if: =page.section, equals: "OPINION"},=options.show_image], then:inherit, else:none},
 				padding: [0, 8, 0, 8]
 			}
 			

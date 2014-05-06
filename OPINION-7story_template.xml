@@ -14,7 +14,7 @@
 			options:{top_border:true}
 		},
 		
-		#b4: {options: {medium_headline:true, show_byline:true, show_flashline:true}},		
+		#b4: {options: {show_byline:true, show_flashline:true}},
 		#b5: {options: {medium_headline:true, show_byline:true, show_flashline:true, top_border:{if: =landscape, then:true}}},			
 		#b6: {options: {medium_headline:true, show_byline:true, show_flashline:true, top_border:true}},			
 		#b7: {options: {medium_headline:true, show_byline:true, show_flashline:true, top_border:true}},			

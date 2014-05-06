@@ -18,7 +18,11 @@
 			},
 			.deco_caption: {
 				display:{if: =options.hide_caption, then:none, else:inherit}
+			},
+            .deco_headline: {
+            font-size:18
 			}
+
 	}</style>
 			<box id="deco_container" embed="deco-image">
 				<image embed="summary-image" />

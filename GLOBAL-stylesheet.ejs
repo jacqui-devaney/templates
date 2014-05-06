@@ -1,9 +1,5 @@
 {
 	jpml: {
-		image-scale: { if: =intent.template, then: {$max:[=scale.pagex,=scale.pagey]}, else: =scale.dpi },
-		text-scale: {$multiply: [=scale.text, 1] },
-		pixels-per-point-x: { if: =intent.template, then: =scale.pagex, else: =scale.dpi },
-		pixels-per-point-y: { if: =intent.template, then: =scale.pagey, else: =scale.dpi },
 		min-height: {if-all: [=intent.template, =intent.section, =scale.phone], then: 0},
 		max-height: {if-all: [=intent.template, =intent.section, =scale.phone], then: 10000}
 	}

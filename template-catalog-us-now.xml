@@ -16,7 +16,7 @@
 		<!-- OPINION -->
 		<template 
 			section="OPINION" 
-			name="OPINION-7story-E_template.xml" 
+			name="OPINION-7story_template.xml" 
 			title="Default: 7 story (3RandO-2CMTY)"
 			min="7" 
 			usage="front"
@@ -44,15 +44,15 @@
 		
 		<!-- CIO -->
 		<template 
-			name="SECTION-CIO_template.xml" 
-			title="CIO Front" 
+			name="SECTION-6story_template.xml"
+			title="6 story - G photo"
+			min="6"
+			usage="front"
 			section="CIO" 
-			min="10" 
-			usage="front" 
 		/>		
 		<template 
-			name="CONTINUATION-CIO_template.xml" 
-			min="18" 
+			name="CONTINUATION-generic-11_template.xml" 
+			min="11"
 			title="CIO Continuation" 
 			section="CIO" 
 			usage="continuation" 
@@ -63,15 +63,15 @@
 		
 		<!-- CFO -->
 		<template 
-			name="SECTION-CIO_template.xml" 
-			title="CFO Front" 
+			name="SECTION-6story_template.xml"
+			title="6 story - G photo"
+			min="6"
+			usage="front"
 			section="CFO" 
-			min="10" 
-			usage="front" 
 		/>		
 		<template 
-			name="CONTINUATION-CIO_template.xml" 
-			min="18" 
+			name="CONTINUATION-generic-11_template.xml" 
+			min="11"
 			title="CFO Continuation" 
 			section="CFO" 
 			usage="continuation" 
@@ -82,15 +82,15 @@
 		
 		<!-- RISK_AND_COMPLIANCE -->
 		<template 
-			name="SECTION-CIO_template.xml" 
-			title="RISK_AND_COMPLIANCE Front" 
+			name="SECTION-6story_template.xml"
+			title="6 story - G photo"
+			min="6"
+			usage="front"
 			section="RISK_AND_COMPLIANCE" 
-			min="10" 
-			usage="front" 
 		/>		
 		<template 
-			name="CONTINUATION-CIO_template.xml" 
-			min="18" 
+			name="CONTINUATION-generic-11_template.xml" 
+			min="11"
 			title="RISK_AND_COMPLIANCE Continuation" 
 			section="RISK_AND_COMPLIANCE" 
 			usage="continuation" 
@@ -101,13 +101,14 @@
 		
 		<!-- CMO -->
 		<template 
-			name="SECTION-CMO_template.xml" 
-			title="CMO Front" 
+			name="SECTION-6story_template.xml"
+			title="6 story - G photo"
 			section="CMO" 
-			min="8" 
+			min="6" 
 			usage="front" 
 		/>		
 		<!--  END CMO -->
+
 		
 		<!-- GENERIC CONTINUATION -->
 		<template 

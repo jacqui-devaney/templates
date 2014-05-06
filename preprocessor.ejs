@@ -47,8 +47,8 @@
 				pagey: { if: =view.width, more-than: 480, then: {
 					if: =view.width, 
 					less-than: =view.height,
-					then: { $divide: [=view.height, 876] },
-					else: { $divide: [=view.height, 620] }
+					then: { $divide: [=view.height, 1024] },
+					else: { $divide: [=view.height, 768] }
 				}, else: 1},
 
 				phone: { if: =app.idiom, equals: "phone", then:true, else:false },

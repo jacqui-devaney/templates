@@ -9,7 +9,7 @@
 			flow: article_body
         }},
 		{#media: {
-			width:248,
+			width:= view.width,
 			height:180,
 			padding:[0, 10, 0, 10],
 			anchor-x:center,

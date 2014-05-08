@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<xsl:stylesheet 
+<xsl:stylesheet
     xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
     xmlns:dj="http://dowjones.com/2014/dummy"
     version="1.0">
-    
+
 <xsl:output method="xml" encoding="UTF-8" indent="yes"/>
 
 <xsl:key name="srcid" match="image" use="@src-id" />
@@ -33,11 +33,18 @@
     </xsl:choose></p>
     <p id="type"><xsl:value-of select="@type"/></p>
     <p id="flashline"><xsl:value-of select="@display-name"/></p>
-    <p id="pubdate"><xsl:value-of select="@date"/></p>
+
+    <p id="pubdate-string">
+            <xsl:call-template name="formatDate">
+              <xsl:with-param name="yyyy-mm-dd_HH_MM" select="@last-pub-date"/>
+            </xsl:call-template>
+    </p>
+
+    <p id="pubdate"><xsl:value-of select="@last-pub-date"/></p>
     <p id="subsection"><xsl:value-of select="$subsection"/></p>
     <p id="region"><xsl:value-of select="$region"/></p>
     <p id="share-link"><xsl:value-of select="@url"/></p>
-    
+
     <panel id="metadata">
         <p id="article-manifest" />
         <p id="media-bucket" />
@@ -53,7 +60,7 @@
     <panel id="summary-image">
         <xsl:apply-templates select="summary"/>
     </panel>
-    
+
     <!-- TODO: grab largest summary image if there are no article images? -->
     <!-- TODO: exclude images referenced in insets? -->
     <!-- TODO: exclude images wrapped in media@type=FLASH -->
@@ -61,7 +68,7 @@
     <panel id="article-image">
         <xsl:apply-templates select="article/article-body//image[@width &gt; 0 and @height &gt; 0]"/>
     </panel>
-        
+
     <!-- TODO: will we need to merge the SB2/3/4 text with the SB1 media? -->
     <!-- TODO: collapse empty p tags? ignore leading p tags too. -->
     <panel id="body">
@@ -78,9 +85,9 @@
             </xsl:for-each>
         </xsl:if>
     </panel>
-    
+
     <!-- Barron's will need external links, insets too. -->
-    
+
 </jpml>
 </xsl:template>
 
@@ -99,7 +106,7 @@
 </xsl:template>
 
 <!-- Bylines looks like this:
-    <byline type="SIGNED">By 
+    <byline type="SIGNED">By
         <phrase type="AUTHOR">Emily Chasan</phrase>
         <credit>Senior Editor</credit>
     </byline>
@@ -133,7 +140,7 @@
 
 <xsl:template match="p" priority="0">
     <xsl:if test="string(.)">
-        <p>        
+        <p>
             <xsl:if test="@type">
                 <xsl:attribute name="class">
                     <xsl:value-of select="@type"/>
@@ -218,7 +225,7 @@
 
 <!--
     Suppress tesla-style article links. Note: keep support for Methode style article links for decos.
-    Example: http://online.wsj.com/news/articles/SB10001424052702303546204579442361298095276 
+    Example: http://online.wsj.com/news/articles/SB10001424052702303546204579442361298095276
 -->
 <xsl:template match="link[@type='EXTERNAL' and starts-with(//article//nameloc[@id = current()/@linkend]/nmlist, 'http://online.wsj.com/news/articles/')]">
     <xsl:apply-templates/>
@@ -320,16 +327,16 @@
 </xsl:template>
  -->
 
-<!-- New way: ticker spans. We include some dummy text so the span occupies space onscreen. 
+<!-- New way: ticker spans. We include some dummy text so the span occupies space onscreen.
     The "MMMM" prefix and suffix are to ensure a certain amount of em-widths are accomodated
-    for in the span width layout calculations, with the @name playing a part in the overall 
+    for in the span width layout calculations, with the @name playing a part in the overall
     length of it too.
 -->
 
 <!--
     Additional fun ensues because Methode doesn't include the company type in the markup. For example:
     Today <phrase>Microsoft</phrase> Corp. announced their earnings, which were lower than <phrase>Apple</phrase>'s.
-    We want the ticker to go after the 'Corp.' and the apostrophe-s text. 
+    We want the ticker to go after the 'Corp.' and the apostrophe-s text.
 
     Mainsite does this via giant regex:
 
@@ -382,11 +389,11 @@
 
 <xsl:template match="subhed">
     <h2><xsl:value-of select="."/></h2>
-</xsl:template> 
+</xsl:template>
 
 <xsl:template match="small-hed">
     <h3><xsl:value-of select="."/></h3>
-</xsl:template> 
+</xsl:template>
 
 <xsl:template match="tagline">
     <p>
@@ -398,7 +405,7 @@
             <mark class="body-bug"/>
         </xsl:if>
     </p>
-</xsl:template> 
+</xsl:template>
 
 <xsl:template match="summary">
     <!-- TODO/REDO: generate-id(.) = generate-id(key('srcid', @src-id)) and -->
@@ -406,7 +413,7 @@
 </xsl:template>
 
 <xsl:template match="temporary-info">
-</xsl:template> 
+</xsl:template>
 
 <xsl:template name="image_src_id">
     <!-- this gets the last path component of a URL, or a filename if it's just a filename, recursively -->
@@ -418,7 +425,7 @@
             </xsl:call-template>
         </xsl:when>
         <xsl:otherwise>
-            <xsl:value-of select="$srcid" />            
+            <xsl:value-of select="$srcid" />
         </xsl:otherwise>
     </xsl:choose>
 </xsl:template>
@@ -483,10 +490,10 @@
         </xsl:when>
     </xsl:choose>
 </xsl:template>
-    
-<!-- 
+
+<!--
     Find the first item in the extensions list that matches the start of $text and return the length of that item.
-    Otherwise return zero. 
+    Otherwise return zero.
 -->
 
 <xsl:template name="company_extension_length">
@@ -543,5 +550,58 @@
   <xsl:param name="node" />
   <xsl:value-of select="translate($node, $uppercase, $smallcase)" />
 </xsl:template>
+
+<!--Don't mind the variable names here- They don't entirely match the input format.  The comments show
+     what the proper format actually is-->
+<xsl:template name="formatDate">
+    <xsl:param name="yyyy-mm-dd_HH_MM"/> <!--yyyy-mm-dd HH:MM -->
+    <xsl:variable name="yyyy" select="substring-before($yyyy-mm-dd_HH_MM, '-')"/>
+    <xsl:variable name="mm-dd_HH_MM" select="substring-after($yyyy-mm-dd_HH_MM, '-')"/> <!--mm-dd HH:MM -->
+    <xsl:variable name="mm" select="substring-before($mm-dd_HH_MM, '-')"/>
+    <xsl:variable name="dd_HH_MM" select="substring-after($mm-dd_HH_MM, '-')"/> <!--dd HH:MM -->
+    <xsl:variable name="dd" select="substring-before($dd_HH_MM, ' ')"/>
+    <xsl:variable name="HH_MM" select="substring-after($dd_HH_MM, ' ')"/> <!--HH:MM -->
+    <xsl:variable name="HH" select="substring-before($HH_MM, ':')"/>
+    <xsl:variable name="MM" select="substring-after($HH_MM, ':')"/> <!--MM -->
+    <xsl:choose>
+      <xsl:when test="$mm = '01'">January</xsl:when>
+      <xsl:when test="$mm = '02'">February</xsl:when>
+      <xsl:when test="$mm = '03'">March</xsl:when>
+      <xsl:when test="$mm = '04'">April</xsl:when>
+      <xsl:when test="$mm = '05'">May</xsl:when>
+      <xsl:when test="$mm = '06'">June</xsl:when>
+      <xsl:when test="$mm = '07'">July</xsl:when>
+      <xsl:when test="$mm = '08'">August</xsl:when>
+      <xsl:when test="$mm = '09'">September</xsl:when>
+      <xsl:when test="$mm = '10'">October</xsl:when>
+      <xsl:when test="$mm = '11'">November</xsl:when>
+      <xsl:when test="$mm = '12'">December</xsl:when>
+    </xsl:choose>
+    <xsl:value-of select="' '"/>
+    <xsl:value-of select="$dd"/>
+    <xsl:value-of select="', '"/>
+    <xsl:value-of select="$yyyy"/>
+    <xsl:value-of select="' '"/>
+    <xsl:choose>
+        <xsl:when test="$HH &gt; 12">
+            <xsl:value-of select="$HH - 12"/>
+        </xsl:when>
+        <xsl:otherwise>
+            <xsl:value-of select="$HH"/>
+        </xsl:otherwise>
+    </xsl:choose>
+    <xsl:value-of select="':'"/>
+    <xsl:value-of select="$MM"/>
+    <xsl:value-of select="' '"/>
+    <xsl:choose>
+        <xsl:when test="$HH &gt; 12">
+            <xsl:value-of select="'p.m.'"/>
+        </xsl:when>
+        <xsl:otherwise>
+            <xsl:value-of select="'a.m.'"/>
+        </xsl:otherwise>
+    </xsl:choose>
+    <xsl:value-of select="' ET'"/>
+  </xsl:template>
 
 </xsl:stylesheet>

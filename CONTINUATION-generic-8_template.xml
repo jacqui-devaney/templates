@@ -5,32 +5,6 @@
 	<style src="PHONE-stylesheet.ejs" />
 	<style>{
 		$switch: [
-			{if: =scale.phone, then: {
-	        	#b1: {
-							height: {if:=articles.b1.show_subsection, then: 68, else:50}
-				},
-		        #b2: {
-		                    height: {if:=articles.b2.subsection, equals:=articles.b1.subsection, then: 50} 
-		        },
-		        #b3: {
-		                    height: {if:=articles.b3.subsection, equals:=articles.b2.subsection, then: 50} 
-		        },
-		        #b4: {
-		                    height: {if:=articles.b4.subsection, equals:=articles.b3.subsection, then: 50} 
-		        },
-		        #b5: {
-		                    height: {if:=articles.b5.subsection, equals:=articles.b4.subsection, then: 50}
-		        },
-		        #b6: {
-		                    height: {if:=articles.b6.subsection, equals:=articles.b5.subsection, then: 50} 
-		        },
-				#b7: {
-		                    height: {if:=articles.b7.subsection, equals:=articles.b6.subsection, then: 50} 
-		        },
-				#b8: {
-		                    height: {if:=articles.b8.subsection, equals:=articles.b7.subsection, then: 50} 
-		        }
-		    }},
 	        {if: =portrait, then: {
 				#b1 : { 
 	 				height:480,

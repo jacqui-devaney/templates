@@ -17,13 +17,13 @@
 				padding: [16, 8, 0, 8]
 			},
 			else: {
-				padding: [0.5, 0, 0, 0],
+				padding: [{if: =options.show_body, then: 16.5, else: 0.5}, 0, 0, 0],
 				border-width: [0.5, 0, 0, 0],
 				border-color: #d8d8d8
 			}
 		},
 		#vertical: { 
-			if: =options.show_strap, 
+			if: =options.show_body, 
 			then: {
 			},
 			else: {
@@ -31,7 +31,7 @@
 			}
 		},
 		.continuation_headline: { 
-			if: =options.show_strap, 
+			if: =options.show_body, 
 			then: {
 			},
 			else: {
@@ -39,7 +39,6 @@
 			}
 		},
 		#image_container: { 
-			background-color: red,
 			width: 111,
 			padding: [0, 0, 0, 8],
 			image-scale: 1.5,
@@ -49,11 +48,21 @@
 			height: 111
 		},
 		.key: {
+			display: { if: =options.show_body, then: none }
+		},
+		.body: {
+			display: { if: =options.show_body, else: none }
+		},
+		#body-key: {
+			display: { if: =options.show_body, then: inherit, else: none },
 			content: { if-all: [=issue.locked, =article.paid], then: "K\u00a0"}
 		},
 		#body-first-p: {
 			text-indent:{if: =options.indent, then:20, else:0}
-		}
+		},
+		.red: { background-color: red},
+		.green: { background-color: green},
+		.blue: { background-color: blue}
     }</style>
 	<panel id="strap">
 		<p class="subsection"><mark id="m_subsection"/></p>
@@ -63,10 +72,10 @@
 			<image embed="summary-image" target-width="76" target-height="76" />
 		</box>
 		<panel id="vertical">
-			<p class="continuation_headline"><mark class="m_headline" /></p>
+			<p class="continuation_headline"><mark class="m_headline" /><mark class="key" /></p>
 		</panel>
         <panel class="body">
-        	<p><mark class="key" /><mark class="article_summary" />Foo bar baz loren ipsum. Foo bar baz loren ipsum. Foo bar baz loren ipsum. Foo bar baz loren ipsum. Foo bar baz loren ipsum. Foo bar baz loren ipsum. Foo bar baz loren ipsum. Foo bar baz loren ipsum. Foo bar baz loren ipsum. Foo bar baz loren ipsum. Foo bar baz loren ipsum. Foo bar baz loren ipsum. Foo bar baz loren ipsum. Foo bar baz loren ipsum. Foo bar baz loren ipsum. Foo bar baz loren ipsum. Foo bar baz loren ipsum. Foo bar baz loren ipsum. Foo bar baz loren ipsum. Foo bar baz loren ipsum. Foo bar baz loren ipsum. Foo bar baz loren ipsum. Foo bar baz loren ipsum. Foo bar baz loren ipsum. Foo bar baz loren ipsum. Foo bar baz loren ipsum. Foo bar baz loren ipsum. Foo bar baz loren ipsum. Foo bar baz loren ipsum. </p>
+        	<p><mark id="body-key" class="key" /><mark class="article_summary" />Foo bar baz loren ipsum. Foo bar baz loren ipsum. Foo bar baz loren ipsum. Foo bar baz loren ipsum. Foo bar baz loren ipsum. Foo bar baz loren ipsum. Foo bar baz loren ipsum. Foo bar baz loren ipsum. Foo bar baz loren ipsum. Foo bar baz loren ipsum. Foo bar baz loren ipsum. Foo bar baz loren ipsum. Foo bar baz loren ipsum. Foo bar baz loren ipsum. Foo bar baz loren ipsum. Foo bar baz loren ipsum. Foo bar baz loren ipsum. Foo bar baz loren ipsum. Foo bar baz loren ipsum. Foo bar baz loren ipsum. Foo bar baz loren ipsum. Foo bar baz loren ipsum. Foo bar baz loren ipsum. Foo bar baz loren ipsum. Foo bar baz loren ipsum. Foo bar baz loren ipsum. Foo bar baz loren ipsum. Foo bar baz loren ipsum. Foo bar baz loren ipsum. </p>
         </panel>
 	</panel>
 </jpml>

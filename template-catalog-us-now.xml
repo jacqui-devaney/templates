@@ -1,28 +1,7 @@
 
 <catalog preprocessor="preprocessor.ejs">
 	<templates>
-		<!-- FRONT SECTION -->
-		<template 
-			section="FRONT_SECTION" 
-			name="FRONT-5story-deco_template.xml" 
-			title="Default: 5 story G Liondoor"
-			min="5" 
-			deco="true" 
-			usage="front"
-		/>
-		
-		<!-- END FRONT SECTION -->
-		
-		<!-- OPINION -->
-		<template 
-			section="OPINION" 
-			name="OPINION-7story_template.xml" 
-			title="Default: 7 story (3RandO-2CMTY)"
-			min="7" 
-			usage="front"
-		/>
-		
-		<!-- END OPINION -->
+
 		<!-- SECTIONS -->
 		<template 
 			name="SECTION-6story_template.xml"
@@ -30,84 +9,7 @@
 			min="6"
 			usage="front"
 		/>
-		<template 
-			name="SECTION-1story_template.xml" 
-			title="Full size Deco"
-			min="1" 
-			deco="true"
-			usage="front"
-			storyorder="feed"
-		/>
-		
-		<!-- END SECTIONS -->
-		
-		
-		<!-- CIO -->
-		<template 
-			name="SECTION-CIO_template.xml" 
-			title="CIO Front" 
-			section="CIO" 
-			min="10" 
-			usage="front" 
-		/>		
-		<template 
-			name="CONTINUATION-CIO_template.xml" 
-			min="18" 
-			title="CIO Continuation" 
-			section="CIO" 
-			usage="continuation" 
-			page="2" 
-		/>
-
-		<!-- END  CIO-->
-		
-		<!-- CFO -->
-		<template 
-			name="SECTION-CIO_template.xml" 
-			title="CFO Front" 
-			section="CFO" 
-			min="10" 
-			usage="front" 
-		/>		
-		<template 
-			name="CONTINUATION-CIO_template.xml" 
-			min="18" 
-			title="CFO Continuation" 
-			section="CFO" 
-			usage="continuation" 
-			page="2" 
-		/>
-
-		<!-- END  CFO-->
-		
-		<!-- RISK_AND_COMPLIANCE -->
-		<template 
-			name="SECTION-CIO_template.xml" 
-			title="RISK_AND_COMPLIANCE Front" 
-			section="RISK_AND_COMPLIANCE" 
-			min="10" 
-			usage="front" 
-		/>		
-		<template 
-			name="CONTINUATION-CIO_template.xml" 
-			min="18" 
-			title="RISK_AND_COMPLIANCE Continuation" 
-			section="RISK_AND_COMPLIANCE" 
-			usage="continuation" 
-			page="2" 
-		/>
-
-		<!-- END  RISK_AND_COMPLIANCE-->
-		
-		<!-- CMO -->
-		<template 
-			name="SECTION-CMO_template.xml" 
-			title="CMO Front" 
-			section="CMO" 
-			min="8" 
-			usage="front" 
-		/>		
-		<!--  END CMO -->
+		<!-- END SECTIONS -->		
 		
 		<!-- GENERIC CONTINUATION -->
 		<template 
@@ -209,11 +111,7 @@
 		<article pages="ARTICLE-pages.xml"/>
 	</article-page-plans>
 	<display-properties>
-		<ads section="CIO" value=";;;" />
-		<ads section="CFO" value=";;;" />
-		<ads section="RISK_AND_COMPLIANCE" value=";;;" />
-		<ads value=";;;"
-		/>
+		<ads value=";;;" />
 		<continuation-counts value="4; 5; 6; 7; 8; 4, 5; 5, 5; 5, 6; 5, 7; 6, 7; 4, 5, 5; 4, 5, 6; 5, 5, 6; 5, 6, 6; 5, 6, 7; 5, 7, 7; 4, 5, 5, 6; 5, 5, 5, 6; 5, 5, 6, 6; 5, 6, 6, 6; 5, 6, 6, 7; 5, 6, 7, 7; 6, 6, 7, 7; 6, 7, 7, 7; 5, 5, 6, 6, 6; 5, 6, 6, 6, 6; 5, 6, 6, 6, 7; 5, 6, 6, 7, 7; 5, 6, 7, 7, 7; 6, 6, 7, 7, 7; 6, 7, 7, 7, 7; 5, 5, 6, 6, 6, 7; 5, 5, 6, 6, 7, 7; 5, 5, 6, 7, 7, 7; 5, 6, 6, 7, 7, 7; 5, 6, 7, 7, 7, 7; 6, 6, 7, 7, 7, 7; 6, 7, 7, 7, 7, 7; 6, 7, 7, 7, 7, 8; 6, 7, 7, 7, 8, 8; 6, 7, 7, 8, 8, 8; 6, 7, 7, 8, 8, 9; 6, 7, 7, 8, 9, 9; 6, 7, 8, 8, 9, 9; 6, 7, 8, 9, 9, 9; 7, 7, 8, 9, 9, 9; 7, 8, 8, 9, 9, 9"/>
 	</display-properties>
 	

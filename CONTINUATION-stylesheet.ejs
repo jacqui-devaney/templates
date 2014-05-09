@@ -1,50 +1,146 @@
-{
+{ if: =scale.phone, then: {
 	#b1 : {
-		options: {hide_strap: {if:=articles.b1.show_subsection, then: false, else: {if: =scale.phone, then:true, else:false}}, bind: {if:=scale.phone,then:none}, reuse:{if:=scale.phone,then:continuation}},
-		height: {if-all:[{if: =scale.phone},{if: =articles.b1.show_subsection}], then:=size.phone_continuation_strap, else:=size.phone_continuation_height}
+		options: {
+			show_strap: =articles.b1.show_subsection,
+			bind: none, 
+			reuse: continuation
+		},
+		height: {
+			if: =articles.b1.show_subsection, 
+			then: =size.continuation_height_strap, 
+			else: =size.continuation_height_normal
+		}
 	},
 	#b2 : {
-		options: {hide_strap: {if:=articles.b2.show_subsection, then: false, else: true}, bind: {if:=scale.phone,then:none}, reuse:{if:=scale.phone,then:continuation}},
-		height: {if-all:[{if: =scale.phone},{if:=articles.b2.subsection, equals:=articles.b1.subsection}], then:=size.phone_continuation_strap, else:=size.phone_continuation_height}
+		options: {
+			show_strap: =articles.b2.show_subsection,
+			bind: none, 
+			reuse: continuation
+		},
+		height: {
+			if: =articles.b2.show_subsection, 
+			then: =size.continuation_height_strap, 
+			else: =size.continuation_height_normal
+		}
 	},
-    #b3 : {
-		options: {hide_strap: {if:=articles.b3.show_subsection, then: false, else: true}, bind: {if:=scale.phone,then:none}, reuse:{if:=scale.phone,then:continuation}},
-		height: {if-all:[{if: =scale.phone},{if:=articles.b3.subsection, equals:=articles.b2.subsection}], then:=size.phone_continuation_strap, else:=size.phone_continuation_height} 
+	#b3 : {
+		options: {
+			show_strap: =articles.b3.show_subsection,
+			bind: none, 
+			reuse: continuation
+		},
+		height: {
+			if: =articles.b3.show_subsection, 
+			then: =size.continuation_height_strap, 
+			else: =size.continuation_height_normal
+		}
 	},
-    #b4 : {
-		options: {hide_strap: {if:=articles.b4.show_subsection, then: false, else: true}, bind: {if:=scale.phone,then:none}, reuse:{if:=scale.phone,then:continuation}},
-		height: {if-all:[{if: =scale.phone},{if:=articles.b4.subsection, equals:=articles.b3.subsection}], then:=size.phone_continuation_strap, else:=size.phone_continuation_height} 
+	#b4 : {
+		options: {
+			show_strap: =articles.b4.show_subsection,
+			bind: none, 
+			reuse: continuation
+		},
+		height: {
+			if: =articles.b4.show_subsection, 
+			then: =size.continuation_height_strap, 
+			else: =size.continuation_height_normal
+		}
 	},
-    #b5 : {
-		options: {hide_strap: {if:=articles.b5.show_subsection, then: false, else: true}, bind: {if:=scale.phone,then:none}, reuse:{if:=scale.phone,then:continuation}},
-		height: {if-all:[{if: =scale.phone},{if:=articles.b5.subsection, equals:=articles.b4.subsection}], then:=size.phone_continuation_strap, else:=size.phone_continuation_height} 
+	#b5 : {
+		options: {
+			show_strap: =articles.b5.show_subsection,
+			bind: none, 
+			reuse: continuation
+		},
+		height: {
+			if: =articles.b5.show_subsection, 
+			then: =size.continuation_height_strap, 
+			else: =size.continuation_height_normal
+		}
 	},
 	#b6 : {
-		options: {hide_strap: {if:=articles.b6.show_subsection, then: false, else: true}, bind: {if:=scale.phone,then:none}, reuse:{if:=scale.phone,then:continuation}},
-		height: {if-all:[{if: =scale.phone},{if:=articles.b6.subsection, equals:=articles.b5.subsection}], then:=size.phone_continuation_strap, else:=size.phone_continuation_height} 
+		options: {
+			show_strap: =articles.b6.show_subsection,
+			bind: none, 
+			reuse: continuation
+		},
+		height: {
+			if: =articles.b6.show_subsection, 
+			then: =size.continuation_height_strap, 
+			else: =size.continuation_height_normal
+		}
 	},
 	#b7 : {
-		options: {hide_strap: {if:=articles.b7.show_subsection, then: false, else: true}, bind: {if:=scale.phone,then:none}, reuse:{if:=scale.phone,then:continuation}},
-		height: {if-all:[{if: =scale.phone},{if:=articles.b7.subsection, equals:=articles.b6.subsection}], then:=size.phone_continuation_strap, else:=size.phone_continuation_height} 
+		options: {
+			show_strap: =articles.b7.show_subsection,
+			bind: none, 
+			reuse: continuation
+		},
+		height: {
+			if: =articles.b7.show_subsection, 
+			then: =size.continuation_height_strap, 
+			else: =size.continuation_height_normal
+		}
 	},
-    #b8 : {
-		options: {hide_strap: {if:=articles.b8.show_subsection, then: false, else: true}, bind: {if:=scale.phone,then:none}, reuse:{if:=scale.phone,then:continuation}},
-		height: {if-all:[{if: =scale.phone},{if:=articles.b8.subsection, equals:=articles.b7.subsection}], then:=size.phone_continuation_strap, else:=size.phone_continuation_height} 
+	#b8 : {
+		options: {
+			show_strap: =articles.b8.show_subsection,
+			bind: none, 
+			reuse: continuation
+		},
+		height: {
+			if: =articles.b8.show_subsection, 
+			then: =size.continuation_height_strap, 
+			else: =size.continuation_height_normal
+		}
 	},
-    #b9 : {
-		options: {hide_strap: {if:=articles.b9.show_subsection, then: false, else: true}, bind: {if:=scale.phone,then:none}, reuse:{if:=scale.phone,then:continuation}},
-		height: {if-all:[{if: =scale.phone},{if:=articles.b8.subsection, equals:=articles.b9.subsection}], then:=size.phone_continuation_strap, else:=size.phone_continuation_height} 
+	#b9 : {
+		options: {
+			show_strap: =articles.b9.show_subsection,
+			bind: none, 
+			reuse: continuation
+		},
+		height: {
+			if: =articles.b9.show_subsection, 
+			then: =size.continuation_height_strap, 
+			else: =size.continuation_height_normal
+		}
 	},
-    #b10: {
-		options: {hide_strap: {if:=articles.b10.show_subsection, then: false, else: true}, bind: {if:=scale.phone,then:none}, reuse:{if:=scale.phone,then:continuation}},
-		height: {if-all:[{if: =scale.phone},{if:=articles.b10.subsection, equals:=articles.b9.subsection}], then:=size.phone_continuation_strap, else:=size.phone_continuation_height} 
+	#b10 : {
+		options: {
+			show_strap: =articles.b10.show_subsection,
+			bind: none, 
+			reuse: continuation
+		},
+		height: {
+			if: =articles.b10.show_subsection, 
+			then: =size.continuation_height_strap, 
+			else: =size.continuation_height_normal
+		}
 	},
-    #b11: {
-		options: {hide_strap: {if:=articles.b11.show_subsection, then: false, else: true}, bind: {if:=scale.phone,then:none}, reuse:{if:=scale.phone,then:continuation}},
-		height: {if-all:[{if: =scale.phone},{if:=articles.b11.subsection, equals:=articles.b10.subsection}], then:=size.phone_continuation_strap, else:=size.phone_continuation_height} 
+	#b11 : {
+		options: {
+			show_strap: =articles.b11.show_subsection,
+			bind: none, 
+			reuse: continuation
+		},
+		height: {
+			if: =articles.b11.show_subsection, 
+			then: =size.continuation_height_strap, 
+			else: =size.continuation_height_normal
+		}
 	},
-    #b12: {
-		options: {hide_strap: {if:=articles.b12.show_subsection, then: false, else: true}, bind: {if:=scale.phone,then:none}, reuse:{if:=scale.phone,then:continuation}},
-		height: {if-all:[{if: =scale.phone},{if:=articles.b12.subsection, equals:=articles.b11.subsection}], then:=size.phone_continuation_strap, else:=size.phone_continuation_height} 
+	#b12 : {
+		options: {
+			show_strap: =articles.b12.show_subsection,
+			bind: none, 
+			reuse: continuation
+		},
+		height: {
+			if: =articles.b12.show_subsection, 
+			then: =size.continuation_height_strap, 
+			else: =size.continuation_height_normal
+		}
 	}
-}
+}}

@@ -5,6 +5,8 @@
    	<style src="PHONE-stylesheet.ejs" />
  	<style>{
 		$switch:[
+	        {if: =scale.phone, then: {
+	        }},
 			{if: =portrait, then: {
 	            #b1 : { 
 	 				height:960,

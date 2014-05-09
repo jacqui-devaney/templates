@@ -93,9 +93,29 @@
 
 			},
 
-			size: {
-				phone_continuation_height: 62,
-				phone_continuation_strap: 176
+			size: { 
+				if: =app.idiom, 
+				equals: "phone", 
+				then: {
+					continuation_height_normal: 62,
+					continuation_height_strap: 176
+				},
+				else: {
+
+				} 
+			},
+
+			begin: temporary_stuff_for_testing_continuation_pages,
+			articles: {
+				b1: {
+					show_subsection: true
+				},
+				b2: {
+					show_subsection: false
+				},
+				b3: {
+					show_subsection: true
+				}
 			},
 
 			ad: {

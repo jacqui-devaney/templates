@@ -16,15 +16,19 @@
 			options: { show_body: true }
 		},
 		#b4 : {
+			bind: none, 
 			height: =size.continuation_height_normal
 		},
 		#b5 : {
+			bind: none, 
 			height: =size.continuation_height_normal
 		},
 		#b6 : {
+			bind: none, 
 			height: =size.continuation_height_normal
 		},
 		#b7 : {
+			bind: none, 
 			height: =size.continuation_height_normal
 		}
 	}</style>

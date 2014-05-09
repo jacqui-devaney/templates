@@ -4,6 +4,9 @@
 	<style src="ADVERTISING-stylesheet.ejs"/>
     <style src="PHONE-stylesheet.ejs"/>
     <style>{
+    	#marketstrap: {
+    		display: {if: =page.section, equals: "TOP_NEWS", else: none}
+    	},
 		#b2 : {
 			height: =size.continuation_height_large,
 			options: { show_body: true }
@@ -25,6 +28,7 @@
 			height: =size.continuation_height_normal
 		}
 	}</style>
+	<box id="marketstrap" embed="marketstrap" />
 	<box id="b1" embed="article" class="maude unit_386" module="TOP-IMAGE_module.xml" />
 	<box id="b2" embed="article" class="maude unit_166" module="CONTINUATION-dynamic_module.xml" />
 	<box id="b3" embed="article" class="maude unit_166" module="CONTINUATION-dynamic_module.xml" />

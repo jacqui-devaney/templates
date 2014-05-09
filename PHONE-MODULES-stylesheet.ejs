@@ -26,56 +26,12 @@
 		}
 	},
 
-	.module_headline: {$switch: [
-			{if: =options.small_headline, then:{
-				font-size:{ $switch: [
-						{if: =issue.edition, equals: "japan", then: 18},
-						{if: =issue.edition, equals: "korea", then: 18},
-						"20"
-					]
-				},
-				line-height:{ $switch: [
-						{if: =issue.edition, equals: "japan", then: 18},
-						{if: =issue.edition, equals: "korea", then: 18},
-						"20"
-					]
-				},
-				text-scale: {$multiply: [=scale.text, 1] },
-				padding:[0, 0, 0, 0],
-				text-overflow:=text.overflow
-				}
-			},
-			{if: =options.large_headline, then:{
-				font-size:{ $switch: [
-						{if: =issue.edition, equals: "japan", then: 23},
-						{if: =issue.edition, equals: "korea", then: 23},
-						"25"
-					]
-				},
-				line-height:{ $switch: [
-						{if: =issue.edition, equals: "japan", then: 23},
-						{if: =issue.edition, equals: "korea", then: 23},
-						"25"
-					]
-				},
-				text-scale: {$multiply: [=scale.text, 1] },
-				padding:[0, 0, 5, 0],
-				text-overflow:=text.overflow
-				}
-			},
-			{if: true, then: {
-					font-size:18,
-					line-height:{ $switch: [
-							{if: =issue.edition, equals: "japan", then: 28},
-							{if: =issue.edition, equals: "korea", then: 28},
-							"26"
-						]
-					}
-				}
-			}
-
-		]
-	},
+	.module_headline: {
+		padding: [0, 0, 8, 0],
+		font-name: "DJ5Exchange-Semibold",
+		font-size: 26,
+		line-height: 36
+	},	
 	.body: {
 		text-indent:0,
 		font-size:16,

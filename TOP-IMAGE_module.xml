@@ -77,41 +77,46 @@
 	<style>{
 		if: =scale.phone, then: {
 			jpml: {
-				padding:[0],
-				border-width: [{if: =options.top_border, then:1, else:0}, 0, {if: =options.no_border, then:0, else:1}, 0],
-				border-color: #d6d6d6,
-				anchor-y:middle				
-			},
-			#image_wrapper: { 
-				anchor-x:right,
-				position:relative,
-				width: 76,
-				padding:[8, 8, 0, 10],
-				display:{if: =options.show_image, then:inherit, else:none}
-
+				padding:[0]
 			},
 			#headline: {
-				padding: [{if: =options.top_align, then:8, else:0}, 8, 0, 8]
+				padding: [8, 8, 0, 8]
 			},
 			image: { 
-				height: {$multiply: [=view.width, .62 ]},
+				height: {$multiply: [=view.width, .58 ]},
 				width:=view.width,
 				display:inherit,
 				padding: [0]
 				
 			},
-			#vertical: {
-				vertical-align: {if: =options.top_align, then: top, else: middle}
-			},
 			.byline: {
-				display:{if: =options.show_byline, then:inherit, else:none}
+				display: none
+			},
+			.key: {
+				display: none
+			},
+			#body-key: {
+				display: inherit,
+				content: { if-all: [=issue.locked, =article.paid], then: "K\u00a0"}
 			},
 			#body: {
-				display:{if-any: [=options.show_body, {if: =page.section, equals: "OPINION"},=options.show_image], then:inherit, else:none},
 				padding: [0, 8, 0, 8]
+			},
+			.body: {
+				display: none
+			},
+			#summary: {
+				display: inherit
 			}
 			
-		}, else:{}
+		}, else: {
+			#body-key: {
+				display: none
+			},
+			#summary: {
+				display: none
+			}
+		}
 	}</style>
 	<box id="deco_container" embed="deco-image">
 		<image embed="summary-image" />
@@ -123,6 +128,7 @@
 		<panel id="body">
 			<p class="module_flashline"><span embed="flashline" /></p>
 			<p class="byline" embed="byline"/>
+			<p id="summary" class="body"><mark id="body-key" class="key" /><mark class="article_summary" /></p>
 			<panel class="body" embed="body"/>
 		</panel>
 	</panel>

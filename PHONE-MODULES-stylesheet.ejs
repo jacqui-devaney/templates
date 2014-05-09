@@ -9,7 +9,7 @@
 		then: {
 			display: none
 		}
-	},	
+	},
 
 	.module_headline: {$switch: [
 			{if: =options.small_headline, then:{
@@ -18,7 +18,7 @@
 						{if: =issue.edition, equals: "korea", then: 18},
 						"20"
 					]
-				},	
+				},
 				line-height:{ $switch: [
 						{if: =issue.edition, equals: "japan", then: 18},
 						{if: =issue.edition, equals: "korea", then: 18},
@@ -36,7 +36,7 @@
 						{if: =issue.edition, equals: "korea", then: 23},
 						"25"
 					]
-				},	
+				},
 				line-height:{ $switch: [
 						{if: =issue.edition, equals: "japan", then: 23},
 						{if: =issue.edition, equals: "korea", then: 23},
@@ -60,23 +60,23 @@
 			}
 
 		]
-	},	
+	},
 	.body: {
 		text-indent:0,
 		font-size:16,
 		line-height:20,
 		text-scale: {$multiply: [=scale.text, 1] }
-		
+
 	},
 	.ahed_headline:{
-		font-size:20,	
+		font-size:20,
 		line-height:20,
 		text-scale: {$multiply: [=scale.text, 1] },
 		padding:[0, 0, 0, 0],
 		text-overflow:" \u00bb",
 		font-name:DJ5EscrowCond-Bold,
 		color:#333
-		
+
 	},
 	.highlight_flashline: {
 		font-name:DJ5RetinaCd-Semibold,
@@ -85,7 +85,7 @@
 		color:#656565,
 		paragraph-padding: [ 0, 0, 20, 0 ]
 	},
-	
+
 	#deco_headline: {
 		text-scale: {$multiply: [=scale.text, 1] },
 		font-size:18,
@@ -114,7 +114,7 @@
 		padding: [4, 4, 0, 8],
 		background-color:#e4e4e4
     },
-	
+
 	.subsection: {
 		font-size:15,
 		text-scale: {$multiply: [=scale.text, 1] },
@@ -157,23 +157,48 @@
 		line-height:14
 	},
 	.article_flashline: {
-		font-size:16
+		font-size:15,
+		text-align: center,
+		font-name: "DJ5Exchange-Medium",
+		text-transform:uppercase,
+		padding: [10,0,0,0]
 	},
 	.article_headline: {
-		font-size:27,
-		line-height:27
+		font-size:21,
+		line-height:24,
+		font-name: "DJ5Exchange-SemiBold",
+		padding: [10,0,10,0]
 	},
 	.article_subhed: {
-		font-size:18,
-		line-height:18
+		font-size:14,
+		line-height:18,
+		font-name: "DJ5Exchange-MediumItalic",
+		color: #5D5D5D
 	},
 	.article_byline: {
 		font-size:15,
 		line-height:20
 	},
+	.article_pubdate: {
+		font-name: "DJ5Exchange-Medium",
+		font-size:11,
+		line-height: 15
+	},
 	.article_body: {
-		font-size:{$multiply: [16, =view.zoomlevel]},
-		line-height:{$multiply: [16, =view.zoomlevel]}
+		font-size:{$multiply: [14, =view.zoomlevel]},
+		line-height:{$multiply: [19, =view.zoomlevel]},
+		font-name:"DJ5Exchange-Medium",
+		text-indent: 13
+	},
+	.border-mark: {
+		line-height: 4,
+		color: transparent,
+		content: "unfortunate"
+	},
+	.border-p:{
+		border-width:[10, 180, 10, 0],
+		background-color: #e1e0df,
+		border-color:white
 	},
 	#media: {
 		display: {if: =page.hasmedia, then:inherit, else:none}
@@ -185,23 +210,23 @@
 		display: none
 	},
 	#pagedown: {
-		right: 0, 
-		bottom: 0, 
+		right: 0,
+		bottom: 0,
 		width: 320,
 		height:150,
 		position:absolute,
 		display:{ if: =app.version, at-least: 5.4, then: none, else: inherit }
 	},
 	#pageup: {
-		top: 0, 
-		left: 0, 
+		top: 0,
+		left: 0,
 		height:150,
 		width: 320,
 		position:absolute,
 		display:{ if: =app.version, at-least: 5.4, then: none, else: inherit }
 
 	},
-	
+
 	.opinion_headline: {
 		font-size:18,
 		text-scale: {$multiply: [=scale.text, 1] },
@@ -243,13 +268,13 @@
 	.cio_highlight_headline: {
 		text-overflow: " \u00bb"
 	},
-	#extra_small_headline: { 
+	#extra_small_headline: {
 		font-size:20,
 		line-height:20,
 		padding:[2, 0, 0, 0],
 		text-scale: {$multiply: [=scale.text, 1] }
 	},
-	
+
 	.large_dek: {
 		font-name:DJ5Exchange-Medium,
 		text-indent:0,
@@ -305,5 +330,5 @@
 	image: {
 		background-color:#e4e4e4
 	}
-	
+
 }, else:{}}

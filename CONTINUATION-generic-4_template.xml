@@ -4,29 +4,8 @@
 	<style src="CONTINUATION-stylesheet.ejs" />
 	<style src="PHONE-stylesheet.ejs" />
 	<style>{
-		#b2 : {
-			options: {hide_image:true, hide_strap: {if:=articles.b2.show_subsection, then: false, else: true}, bind: {if:=scale.phone,then:none}, reuse:{if:=scale.phone,then:continuation}} 
-		},
-		#b4 : {
-			options: {hide_image:{if: =landscape, then:true}, hide_strap: {if:=articles.b4.show_subsection, then: false, else: true}, bind: {if:=scale.phone,then:none}, reuse:{if:=scale.phone,then:continuation}} 
-		}
-		
-	}</style>
-	<style>{
 		$switch: [
-			{if: =scale.phone, then: {
-		        #b1: {
-							height: {if:=articles.b1.show_subsection, then: 68, else:50}
-				},
-		        #b2: {
-		                    height: {if:=articles.b2.subsection, equals:=articles.b1.subsection, then: 50} 
-		        },
-		        #b3: {
-		                    height: {if:=articles.b3.subsection, equals:=articles.b2.subsection, then: 50} 
-		        },
-		        #b4: {
-		                    height: {if:=articles.b4.subsection, equals:=articles.b3.subsection, then: 50} 
-		        }
+	        {if: =scale.phone, then: {
 	        }},
 	        {if: =portrait, then: {
 		        #b1 : { 

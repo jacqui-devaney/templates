@@ -3,94 +3,70 @@
 	<style src="GLOBAL_MODULES-stylesheet.ejs" />
 	<style src="PHONE-MODULES-stylesheet.ejs" />
     <style>{
-		jpml: { padding: [ 4, 8, 4, 0] },
+		jpml: { 
+			if: =options.show_strap, 
+			then: {
+			},
+			else: {
+				padding: [0, 8]
+			}
+		},
 		#content: { 
-			padding: [4, 8, 0, 8]
-		 },
-		#strap: {
-            display: { if:=options.hide_strap, then:none, else:default },
-			padding: [4, 4, 0, 8],
-			background-color:#e4e4e4
-        },
+			if: =options.show_strap, 
+			then: {
+				padding: [16, 8, 0, 8]
+			},
+			else: {
+				padding: [0.5, 0, 0, 0],
+				border-width: [0.5, 0, 0, 0],
+				border-color: #d8d8d8
+			}
+		},
+		#vertical: { 
+			if: =options.show_strap, 
+			then: {
+			},
+			else: {
+				vertical-align: middle
+			}
+		},
+		.continuation_headline: { 
+			if: =options.show_strap, 
+			then: {
+			},
+			else: {
+				padding: [8, 0, 0, 0]
+			}
+		},
 		#image_container: { 
-			width: {if: =widescreen, then:84, else: {$subtract:[=view.width, 16]}},
-			pixels-per-point-x:{if: =scale.small, then:.7, else:1},
-			pixels-per-point-y:{if: =scale.small, then:.7, else:1},
-			image-scale:{if: =scale.small, then:.7, else:1},
-			display: {if-any: [{if: =view.height, less-than:260}, {if: =view.width, more-than:260}, {if: =options.hide_image}], then:none, else:inherit},
-			anchor-x:{if: =widescreen, then:right, else:center}
-			
+			background-color: red,
+			width: 111,
+			padding: [0, 0, 0, 8],
+			image-scale: 1.5,
+			anchor-x: right
+		},
+		image: {
+			height: 111
 		},
 		.key: {
-			font-name: {if: =device.platform, equals: Android, then: DJ5Utility, else: DJ5Utility-Regular },
-			font-size:16,
-			content: { if-all: [=issue.locked, =article.paid], then: "\u00a0K"},
-			display: { if:=article.paid, then:default, else:none },
-			padding: [0, 0, 0, 2],
-			color:#948464
-		},
-		.highlight_flashline: {display: {if: =options.show_flashline, then:inherit, else:none}},
-		.byline: {display: {if: =options.show_byline, then:inherit, else:none}},
-		image: {
-			height:{if: =widescreen, then:76, else:{$multiply: [{$subtract:[=view.width, 16]}, .66]}},
-			padding: [ 0, 0, 4, {if: =widescreen, then:8, else:0} ]
-			
+			content: { if-all: [=issue.locked, =article.paid], then: "K\u00a0"}
 		},
 		#body-first-p: {
 			text-indent:{if: =options.indent, then:20, else:0}
-		},
-		.body: {
-			column-count: { if: =options.two_columns, then:2, else:1 },
-	        column-gutter: 20
-        
 		}
     }</style>
-    <style>{
-		if: =scale.phone, then: {
-			#strap: {
-				padding: [4, 0, 0, 6]
-			},
-			jpml: { 
-				padding: [0] 
-			},
-			#content: {
-				border-width: [{ if:=options.hide_strap, then:1, else:0 }, 0, 0, 0],
-				border-color: #d6d6d6
-				
-			},
-			.body: {
-				display:none
-			},
-			.byline: {
-				display:none
-			},
-			.highlight_flashline: {
-				display:none
-			},
-			#image_container: {
-				display:none
-			},
-			#vertical: {
-				vertical-align: {if: =options.top_align, then: top, else: middle}
-			},
-			.module_headline: {
-				padding:[0]
-			},
-			#tablet: {display:none}
-		}, else:{}
-	}</style>
-		<panel id="strap">
-			<p class="subsection"><mark id="m_subsection"/></p>
+	<panel id="strap">
+		<p class="subsection"><mark id="m_subsection"/></p>
+	</panel>
+	<panel id="content">
+	 	<box id="image_container">
+			<image embed="summary-image" target-width="76" target-height="76" />
+		</box>
+		<panel id="vertical">
+			<p class="continuation_headline"><mark class="m_headline" /></p>
 		</panel>
-		<panel id="content">
-		 	<box id="image_container">
-				<image embed="summary-image" target-width="76" target-height="76" />
-			</box>
-			<p class="highlight_flashline" embed="flashline" />
-			<panel id="vertical">
-				<p class="module_headline"><mark class="m_headline" /><mark class="key" /></p>
-			</panel>
-			<p class="byline" embed="byline"/>
-            <panel embed="body" class="body"/>
-		</panel>
+        <panel class="body">
+        	<p><mark class="key" /><mark class="article_summary" />Foo bar baz loren ipsum. Foo bar baz loren ipsum. Foo bar baz loren ipsum. Foo bar baz loren ipsum. Foo bar baz loren ipsum. Foo bar baz loren ipsum. Foo bar baz loren ipsum. Foo bar baz loren ipsum. Foo bar baz loren ipsum. Foo bar baz loren ipsum. Foo bar baz loren ipsum. Foo bar baz loren ipsum. Foo bar baz loren ipsum. Foo bar baz loren ipsum. Foo bar baz loren ipsum. Foo bar baz loren ipsum. Foo bar baz loren ipsum. Foo bar baz loren ipsum. Foo bar baz loren ipsum. Foo bar baz loren ipsum. Foo bar baz loren ipsum. Foo bar baz loren ipsum. Foo bar baz loren ipsum. Foo bar baz loren ipsum. Foo bar baz loren ipsum. Foo bar baz loren ipsum. Foo bar baz loren ipsum. Foo bar baz loren ipsum. Foo bar baz loren ipsum. </p>
+        </panel>
+	</panel>
 </jpml>

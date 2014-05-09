@@ -7,10 +7,10 @@
       "type": "toggle",
       "options": [{
         "label": "Show",
-        "values": { "hide_strap": false }
+        "values": { "show_strap": true }
       }, {
         "label": "Hide",
-        "values": { "hide_strap": true }
+        "values": { "show_strap": false }
       }]
     },
     {

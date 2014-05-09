@@ -6,9 +6,6 @@
  	<style>{
 		$switch:[
 	        {if: =scale.phone, then: {
-		        #b1: {
-							height: {if:=articles.b1.show_subsection, then: 68, else:50}
-				}
 	        }},
 			{if: =portrait, then: {
 	            #b1 : { 

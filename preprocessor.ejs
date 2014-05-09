@@ -93,6 +93,22 @@
 
 			},
 
+			text: {
+				overflow: " ..."
+			},
+
+			size: { 
+				if: =app.idiom, 
+				equals: "phone", 
+				then: {
+					continuation_height_normal: 62,
+					continuation_height_strap: 176
+				},
+				else: {
+
+				} 
+			},
+
 			ad: {
 				prefix: { $join: [
 					{ $switch: [ =issue.edition, 

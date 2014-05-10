@@ -1,6 +1,6 @@
 wsj-ipad-app
 ========
- 
+  
 This project was an import of the following path on the Dow Jones Subversion server:
 
 https://svnsb.win.dowjones.net/WSJDMobile/mobileConfig/wsj/3

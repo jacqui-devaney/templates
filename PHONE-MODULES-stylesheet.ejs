@@ -1,20 +1,5 @@
 {if: =scale.phone, then: {
 
-	.key: {
-		font-name: {if: =device.platform, equals: Android, then: DJ5Utility, else: DJ5Utility-Regular },
-		font-size:16,
-		content: { if-all: [=issue.locked, =article.paid], then: "\u00a0K"},
-		display: { if:=article.paid, then:default, else:none },
-		color:#948464
-	},
-
-	.article_summary: {
-		font-name: DJ5Exchange-Medium,
-		font-size: 16,
-		content: =article.summary,
-		color:#948464
-	},
-	
 	#filler: {
 		if-all: [
 			=intent.article,
@@ -26,16 +11,60 @@
 		}
 	},
 
-	.module_headline: {
-		padding: [0, 0, 8, 0],
-		font-name: "DJ5Exchange-Semibold",
-		font-size: 26,
-		line-height: 36
-	},	
+	.module_headline: {$switch: [
+			{if: =options.small_headline, then:{
+				font-size:{ $switch: [
+						{if: =issue.edition, equals: "japan", then: 18},
+						{if: =issue.edition, equals: "korea", then: 18},
+						"20"
+					]
+				},
+				line-height:{ $switch: [
+						{if: =issue.edition, equals: "japan", then: 18},
+						{if: =issue.edition, equals: "korea", then: 18},
+						"20"
+					]
+				},
+				text-scale: {$multiply: [=scale.text, 1] },
+				padding:[0, 0, 0, 0],
+				text-overflow:" \u00bb"
+				}
+			},
+			{if: =options.large_headline, then:{
+				font-size:{ $switch: [
+						{if: =issue.edition, equals: "japan", then: 23},
+						{if: =issue.edition, equals: "korea", then: 23},
+						"25"
+					]
+				},
+				line-height:{ $switch: [
+						{if: =issue.edition, equals: "japan", then: 23},
+						{if: =issue.edition, equals: "korea", then: 23},
+						"25"
+					]
+				},
+				text-scale: {$multiply: [=scale.text, 1] },
+				padding:[0, 0, 5, 0],
+				text-overflow:" \u00bb"
+				}
+			},
+			{if: true, then: {
+					font-size:18,
+					line-height:{ $switch: [
+							{if: =issue.edition, equals: "japan", then: 28},
+							{if: =issue.edition, equals: "korea", then: 28},
+							"26"
+						]
+					}
+				}
+			}
+
+		]
+	},
 	.body: {
 		text-indent:0,
 		font-size:16,
-		line-height:24,
+		line-height:20,
 		text-scale: {$multiply: [=scale.text, 1] }
 
 	},
@@ -44,7 +73,7 @@
 		line-height:20,
 		text-scale: {$multiply: [=scale.text, 1] },
 		padding:[0, 0, 0, 0],
-		text-overflow:=text.overflow,
+		text-overflow:" \u00bb",
 		font-name:DJ5EscrowCond-Bold,
 		color:#333
 
@@ -71,24 +100,32 @@
 		line-height:14
 	},
 	.continuation_headline: {
-		font-name: "DJ5Exchange-Semibold",
-		font-size: 18,
+		font-size:{if: =options.large_headline, then:18, else:16},
 		text-scale: {$multiply: [=scale.text, 1] },
-		line-height: 25
+		line-height:19,
+		padding:[1, 0, 0, 0]
+	},
+	#continuation_headline: {
+		font-size:18,
+		text-scale: {$multiply: [=scale.text, 1] },
+		line-height:17
 	},
 	#strap: {
-        display: { if:=options.show_strap, then:default, else:none },
-		padding: [8.5, 8, 8.5, 8],
-		border-width: [0.5, 0, 0.5, 0],
-		border-color: black
+		padding: [4, 4, 0, 8],
+		background-color:#e4e4e4
     },
+
 	.subsection: {
-		font-name: "DJ5Exchange-Bold",
-		font-size: 17,
+		font-size:15,
 		text-scale: {$multiply: [=scale.text, 1] },
-		line-height: 16,
-		color: =page.tint,
-		text-transform: uppercase
+		line-height:{if-any: [
+				{if: =issue.edition, equals: "japan", then:true},
+				{if: =article.type, equals: "korea", then:true}
+			],
+			then: 20,
+			else: 16
+		},
+		text-transform:uppercase
 	},
 	.strap: {
 		font-size:15,
@@ -106,14 +143,14 @@
 		text-scale: {$multiply: [=scale.text, 1] },
 		line-height:16,
 		padding:[0],
-		text-overflow:=text.overflow
+		text-overflow:" \u00bb"
 	},
 	.highlight_large_headline: {
 		font-size:16,
 		text-scale: {$multiply: [=scale.text, 1] },
 		line-height:16,
 		padding:[0],
-		text-overflow:=text.overflow
+		text-overflow:" \u00bb"
 	},
 	.highlight_flashline_small: {
 		font-size:14,
@@ -122,34 +159,35 @@
 	.article_flashline: {
 		font-size:15,
 		text-align: center,
-		font-name: "DJ5Exchange-Medium",
+		font-name: "DJ5Exchange-Bold",
 		text-transform:uppercase,
 		padding: [10,0,0,0]
 	},
 	.article_headline: {
-		font-size:21,
-		line-height:24,
+		font-size:23,
+		line-height:26,
 		font-name: "DJ5Exchange-SemiBold",
 		padding: [10,0,10,0]
 	},
 	.article_subhed: {
-		font-size:14,
-		line-height:18,
-		font-name: "DJ5Exchange-MediumItalic",
+		font-size:15,
+		line-height:19,
+		font-name: "DJ5Exchange-BoldItalic",
 		color: #5D5D5D
 	},
 	.article_byline: {
+		font-name: "DJ5Exchange-Bold",
 		font-size:15,
 		line-height:20
 	},
 	.article_pubdate: {
 		font-name: "DJ5Exchange-Medium",
-		font-size:11,
+		font-size:15,
 		line-height: 15
 	},
 	.article_body: {
-		font-size:{$multiply: [14, =view.zoomlevel]},
-		line-height:{$multiply: [19, =view.zoomlevel]},
+		font-size:{$multiply: [15, =view.zoomlevel]},
+		line-height:{$multiply: [20, =view.zoomlevel]},
 		font-name:"DJ5Exchange-Medium",
 		text-indent: 13
 	},
@@ -202,7 +240,7 @@
 		line-height:17,
 		text-align:left,
 		text-scale: {$multiply: [=scale.text, 1] },
-		text-overflow:=text.overflow
+		text-overflow:" \u00bb"
 	},
 	.deloitte_article_headline: {
 		font-size:25,
@@ -229,7 +267,7 @@
 		font-size:11
 	},
 	.cio_highlight_headline: {
-		text-overflow: =text.overflow
+		text-overflow: " \u00bb"
 	},
 	#extra_small_headline: {
 		font-size:20,
@@ -243,7 +281,7 @@
 		text-indent:0,
 		font-size:18,
 		line-height:20,
-		text-overflow: =text.overflow,
+		text-overflow: " \u00bb",
         text-align: left,
 		text-scale: {$multiply: [=scale.text, 1] },
 		color:#000

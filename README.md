@@ -1,4 +1,4 @@
-wsj-ipad-app
+wsj-ipad-appDev
 ========
   
 This project was an import of the following path on the Dow Jones Subversion server:

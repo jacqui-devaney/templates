@@ -1,19 +1,20 @@
 <jpml id="GENERIC-fullpagead-template">
     <style src="GLOBAL-stylesheet.ejs" />
     <style src="PHONE-stylesheet.ejs" />
+    <style src="ADVERTISING-stylesheet.ejs" />
 	<style>{
         if: =scale.phone, and: =intent.section, then: {
-            #fullpage_container: { 
+            #fullpage_container: {
                 display: none
             }
         }, else:{
-            #fullpage_container: { 
+            #fullpage_container: {
                 display: inherit
             },
 			#ad_background: {
 				display:none
 			}
-            
+
 		}
     }</style>
     <box id="fullpage_container">

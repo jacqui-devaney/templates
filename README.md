@@ -1,4 +1,4 @@
-wsj-ipad-app- THis is dev
+wsj-ipad-app- This is dev to be published to QA3
 ========
   
 This project was an import of the following path on the Dow Jones Subversion server:

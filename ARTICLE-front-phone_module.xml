@@ -4,11 +4,11 @@
 	<style src="PHONE-MODULES-stylesheet.ejs" />
 	<style>{
 		$join: [
-        {jpml: { min-height: 0 }},
+		{jpml: { min-height: 0 }},
 		{#body_container: {
-            padding: [0, 10, 0, 10],
+			padding: [0, 10, 0, 10],
 			flow: article_body
-        }},
+		}},
 		{
 			#media: {
 				top: 0,
@@ -21,7 +21,7 @@
 			}
 		}
 		]
-    }</style>
+	}</style>
 	<style>{
 		if: =scale.phone, then: {
 			#header_top: {padding:[5]},
@@ -30,10 +30,25 @@
 			}
 		}, else: {}
 	}</style>
+	<style>{
+
+		.border-flashline-mark: {
+			line-height: 0.5,
+			color: transparent,
+			content: "unfortunate"
+		},
+		.border-flashline:{
+			border-width:[0, 0, 0, 0],
+			background-color: #e1e0df,
+			border-color:white
+		}
+	}</style>
+
 	<p class="article_flashline" embed="flashline"/>
-    <panel id="header_top">
+	<panel id="header_top">
+		<p class="border-flashline"><mark class="border-flashline-mark"/></p>
 		<box id="media" embed="media" />
-        <p class="article_headline"><span embed="headline"/><mark class="key"/></p>
+		<p class="article_headline"><span embed="headline"/><mark class="key"/></p>
 		<h2 class="article_subhed" embed="subhed" />
 	</panel>
 
@@ -43,7 +58,7 @@
 			<span  embed="pubdate-string"/>
 		</p>
 		<p class="border-p"><mark class="border-mark"/></p>
-        <panel class="article_body" embed="body"/>
+		<panel class="article_body" embed="body"/>
 	</panel>
 
 </jpml>

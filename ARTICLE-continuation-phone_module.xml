@@ -1,11 +1,12 @@
-<jpml id="ARTICLE-continuation-phone-no-ads_module">
+<jpml id="ARTICLE-continuation-phone_module">
 	<style src="GLOBAL-stylesheet.ejs" />
 	<style src="GLOBAL_MODULES-stylesheet.ejs" />
 	<style src="PHONE-MODULES-stylesheet.ejs" />
 	<style>{
 		$join: [
+		{jpml: { min-height: 0 }},
 		{#body_container : { padding: [0, 10, 0, 10]}},
-		{.article_body: { 
+		{.article_body: {
 			line-height: {$multiply: [22, =view.zoomlevel]}
         }},
 		{#body_continuation: {
@@ -29,11 +30,10 @@
 	<box id="pageback" embed="pageback" />
 	<box id="pagedown" embed="pagenext" />
 	<box id="pageup" embed="pageback" />
-	
+
 	<panel id="body_container">
     	<panel class="article_body" id="body_continuation" embed="body" />
 	</panel>
 	<box id="filler">
-        
 	</box>
 </jpml>

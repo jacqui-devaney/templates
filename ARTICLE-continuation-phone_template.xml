@@ -1,4 +1,4 @@
-<jpml id="ARTICLE-continuation-phone-ads_template">
+<jpml id="ARTICLE-continuation-phone_template">
 	<!-- GLOBAL not included -->
 	<style src="PHONE-stylesheet.ejs" />
 	<style>{
@@ -19,5 +19,5 @@
         }
 	}</style>
     <box id="ad" class="maude unit_ad" embed="advertisement"></box>
-    <box id="view" embed="article" class="maude" module="ARTICLE-continuation-phone-ads_module.xml" />
+    <box id="view" embed="article" class="maude" module="ARTICLE-continuation-phone_module.xml" />
 </jpml>

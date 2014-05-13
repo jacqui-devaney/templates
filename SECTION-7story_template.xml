@@ -4,8 +4,13 @@
 	<style src="ADVERTISING-stylesheet.ejs"/>
     <style src="PHONE-stylesheet.ejs"/>
     <style>{
+    	#ad_placeholder: {
+			display: inherit,
+			frame: [0, 0, 10, 10]
+		},
     	#marketstrap: {
-    		display: {if: =page.section, equals: "TOP_NEWS", else: none}
+    		display: {if: =page.section, equals: "TOP_NEWS", else: none},
+    		position: relative
     	},
 		#b2 : {
 			height: =size.continuation_height_large,
@@ -32,6 +37,7 @@
 			height: =size.continuation_height_normal
 		}
 	}</style>
+	<box id="ad_placeholder" class="ad-banner" embed="adzoneplaceholder" />
 	<box id="marketstrap" embed="marketstrap" />
 	<box id="b1" embed="article" class="maude unit_386" module="TOP-IMAGE_module.xml" />
 	<box id="b2" embed="article" class="maude unit_166" module="CONTINUATION-dynamic_module.xml" />
@@ -40,9 +46,5 @@
 	<box id="b5" embed="article" class="maude unit_50" module="CONTINUATION-dynamic_module.xml" />
 	<box id="b6" embed="article" class="maude unit_50" module="CONTINUATION-dynamic_module.xml" />
 	<box id="b7" embed="article" class="maude unit_50" module="CONTINUATION-dynamic_module.xml" />
-	<box id="front_page" class="positionx_full column_full maude unit_ad">
-		<box id="banner_ad" class="ad-banner front_ad" embed="advertisement" />
-	</box>
-	
 </jpml>
 

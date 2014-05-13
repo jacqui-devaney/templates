@@ -1,5 +1,5 @@
 <jpml id="ARTICLE-front-phone_template">
-	<style src="GLOBAL-stylesheet.ejs"/>
+	<!-- GLOBAL not included -->
 	<style src="PHONE-stylesheet.ejs" />
 	<style>{
 		#view: {

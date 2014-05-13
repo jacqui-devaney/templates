@@ -16,7 +16,7 @@
 		top: {if: =landscape, then:568, else:824},
 		height: {if: =scale.phone, then:50, else:90}
 	},
-	#banner_ad: 	{ 
+	#banner_ad: 	{
 		pixels-per-point-x: 1,
 		pixels-per-point-y: 1,
 		anchor-x:center,
@@ -28,7 +28,7 @@
 					"1024"
 		]},
 		height: {if: =scale.phone, then:50, else:90}
-		
+
 	},
 	#article_advertisement: {
 		anchor-y:middle,
@@ -46,6 +46,9 @@
 		left:{if: =portrait, then:101, else:103},
 		anchor-y:middle,
 		background-color:blue
+	},
+	#fullpage_container: {
+		height: {if: =scale.phone, then:270}
 	},
 	#fullpage_ad: {
 		anchor-x:center,

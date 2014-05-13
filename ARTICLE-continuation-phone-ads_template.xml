@@ -1,17 +1,17 @@
 <jpml id="ARTICLE-continuation-phone-ads_template">
-	<style src="GLOBAL-stylesheet.ejs"/>
+	<!-- GLOBAL not included -->
 	<style src="PHONE-stylesheet.ejs" />
 	<style>{
 		#view: {
 			bottom: 0
 		},
-        #ad: {            
+        #ad: {
             anchor-y: bottom,
             options: { zone: {$join: [=ad.prefix, abanner]} },
-            display: { 
+            display: {
                 if-all: [
                     {if: =page.number, equals: 3},
-                    {if: =app.version, less-than: 5.4}                    
+                    {if: =app.version, less-than: 5.4}
                 ],
                 then: inherit,
                 else: none

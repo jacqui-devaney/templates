@@ -14,7 +14,7 @@
 				top: 0,
 				left: -5,
 				width: 320,
-				height: {$divide: [320, =media.aspect]},
+				height: {$min: [320, {$divide: [320, =media.aspect]}]},
 				options: {
 					id: =page.number
 				}

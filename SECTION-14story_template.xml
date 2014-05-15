@@ -5,7 +5,7 @@
 	<style src="PHONE-stylesheet.ejs"/>
 	<style>{
 		jpml: {
-			background-color: {if: =page.section, equals: "FRONT_SECTION", then:#ffeded, else:inherit}
+			background-color: #ffeded
 		},
 		#b1: {
 			options: {

@@ -4,61 +4,61 @@
 	<style src="ADVERTISING-stylesheet.ejs"/>
     <style src="PHONE-stylesheet.ejs"/>
     <style>{
-	
+
 		#deco: {
 			options:{$switch:[
 				{if: =scale.phone, then: {medium_headline:true, show_image:true}},
 				{if: =portrait, then: {medium_headline:true, show_image:true, one_line_caption:true}},
 				{if: =landscape, then: {medium_headline:true, show_image:true, one_line_caption:true}}
-			]	
+			]
 		}},
 		#b1: {
 			options:{$switch:[
 				{if: =portrait, then: {medium_headline:true, show_body:true, show_flashline:true, small_image:true}},
 				{if: =landscape, then: {medium_headline:true, show_body:true, show_flashline:true, small_image:true}}
-			]	
+			]
 		}},
 		#b2: {
 			options:{$switch:[
 				{if: =scale.phone, then: {medium_headline:true}},
 				{if: =portrait, then: {medium_headline:true, show_body:true, how_flashline:true, small_image:true}},
 				{if: =landscape, then: {medium_headline:true, show_body:true, show_flashline:true, small_image:true}}
-			]	
+			]
 		}}
-		
+
 	}</style>
 	<style> {
 		$switch: [
 			{if: =scale.phone, then: {
-			
+
 			}},
 			{if: =portrait, then: {
-				#deco:	{ 
+				#deco:	{
 						top:0,
 						height:545
 				},
-				#b1:	{ 
+				#b1:	{
 					top:559,
 					height:260
 				},
-				#b2:	{ 
+				#b2:	{
 						top:559,
 						height:260
 				}
-				
-				
-			
-			}}, 
+
+
+
+			}},
 			{if: =landscape, then: {
-				#deco:	{ 
+				#deco:	{
 					top:0,
 					height:545
 				},
-				#b1:	{ 
+				#b1:	{
 					top:0,
 					height:280
 				},
-				#b2:	{ 
+				#b2:	{
 					top:295,
 					height:240
 				}
@@ -72,6 +72,5 @@
 	<box id="front_page" class="positionx_full column_full maude unit_ad">
 		<box id="banner_ad" class="ad-banner front_ad" embed="advertisement" />
 	</box>
-	
-</jpml>
 
+</jpml>

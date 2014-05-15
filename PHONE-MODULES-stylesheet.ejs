@@ -299,9 +299,9 @@
 
 	image: {
 		background-color:#e4e4e4
-	}
+	},
 	.ticker: {
-		display: inherit,
+		display: {if: =intent.article, then: inherit, else: none},
 		color: transparent
 	}
 

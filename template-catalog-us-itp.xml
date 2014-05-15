@@ -2,78 +2,84 @@
 <catalog  preprocessor="preprocessor.ejs">
 	<templates>
 		<!-- FRONT SECTION -->
-		<template 
-			section="FRONT_SECTION" 
-			name="FRONT-5story-deco_template.xml" 
+		<template
+			section="FRONT_SECTION"
+			name="FRONT-5story-deco_template.xml"
 			title="Default: 5 story G Liondoor"
-			min="5" 
-			deco="true" 
+			min="5"
+			deco="true"
 			usage="front"
 		/>
-		
+
 		<!-- END FRONT SECTION -->
-		
+
 		<!-- OPINION -->
-		<template 
-			section="OPINION" 
-			name="OPINION-7story_template.xml" 
+		<template
+			section="OPINION"
+			name="OPINION-7story_template.xml"
 			title="Default: 7 story (3RandO-2CMTY)"
-			min="7" 
+			min="7"
 			usage="front"
 		/>
-		
+
 		<!-- END OPINION -->
 		<!-- SECTIONS -->
-		<template 
+		<template
+			name="SECTION-14story_template.xml"
+			title="14 story - G photo"
+			min="14"
+			usage="front"
+		/>
+		<template
 			name="SECTION-6story_template.xml"
 			title="6 story - G photo"
 			min="6"
 			usage="front"
 		/>
-		<template 
-			name="SECTION-3story_template.xml" 
+		<template
+			name="SECTION-3story_template.xml"
 			title="3 story - Large Photo"
-			min="3" 
+			min="3"
 			deco="true"
 			usage="front"
 			storyorder="feed"
 		/>
-		<template 
-			name="SECTION-1story_template.xml" 
+		<template
+			name="SECTION-1story_template.xml"
 			title="Full size Deco"
-			min="1" 
+			min="1"
 			deco="true"
 			usage="front"
 			storyorder="feed"
 		/>
 		<!-- END SECTIONS -->
-		
+
 		<!-- SECTION CONTINUATION -->
-		<template 
-			name="CONTINUATION-5story-scroll_template.xml" 
+		<template
+			name="CONTINUATION-5story-scroll_template.xml"
 			title="5 Stories - Scrollable Rail"
-			min="5" 
+			min="5"
 			deco="true"
 			usage="continuation"
 			page="2"
 		/>
-		<template 
-			name="CONTINUATION-6story-scroll_template.xml" 
+		<template
+			name="CONTINUATION-6story-scroll_template.xml"
 			title="6 Stories - Scrollable Rail"
-			min="6" 
+			min="6"
 			deco="true"
 			usage="continuation"
 			page="2"
 		/>
-		<template 
-			name="CONTINUATION-3story-scroll_template.xml" 
+		<template
+			name="CONTINUATION-3story-scroll_template.xml"
 			title="3Stories - Scrollable Rail"
-			min="3" 
+			min="3"
 			deco="true"
 			usage="continuation"
 			page="2"
 		/>
-			
+
 		<!-- END SECTION CONTINUATION -->
 		<!-- GENERIC CONTINUATION -->
 		<template name="CONTINUATION-generic-12_template.xml" title="" min="12" usage="continuation" storyorder="feed"/>
@@ -89,33 +95,33 @@
 		<template name="CONTINUATION-generic-2_template.xml" title="" min="2" usage="continuation" storyorder="feed"/>
 		<template name="CONTINUATION-generic-1_template.xml" title="" min="1" usage="continuation" storyorder="feed"/>
 		<!-- END GENERIC CONTINUATION -->
-		
+
 		<!-- WHATS NEWS -->
-		<template 
-			name="WHATSNEWS-dummy_template.xml" 
-			usage="front" 
+		<template
+			name="WHATSNEWS-dummy_template.xml"
+			usage="front"
 			title="Whats News"
-			min="1" 
-			section="WHATS_NEWS" 
+			min="1"
+			section="WHATS_NEWS"
 		/>
 		<!-- END WHATS NEWS -->
-		
+
 		<!-- FULL PAGE AD -->
-		<template 
-			name="GENERIC-fullpagead-template.xml" 
-			usage="ads" 
+		<template
+			name="GENERIC-fullpagead-template.xml"
+			usage="ads"
 		/>
 		<!-- END FULL PAGE AD -->
 		<!-- TEST TEMPLATE -->
-		<template 
-			name="TEST-4-grid_template.xml" 
-			usage="front" 
+		<template
+			name="TEST-4-grid_template.xml"
+			usage="front"
 			title="Grid Overlay"
-			min="1" 
+			min="1"
 		/>
-		
+
 		<!-- END TEST TEMPLATE -->
-		
+
 	</templates>
 
 	<article-page-plans>
@@ -126,5 +132,5 @@
 		<ads value=";;;"/>
 		<continuation-counts value="4; 5; 6; 7; 8; 4, 5; 5, 5; 5, 6; 5, 7; 6, 7; 4, 5, 5; 4, 5, 6; 5, 5, 6; 5, 6, 6; 5, 6, 7; 5, 7, 7; 4, 5, 5, 6; 5, 5, 5, 6; 5, 5, 6, 6; 5, 6, 6, 6; 5, 6, 6, 7; 5, 6, 7, 7; 6, 6, 7, 7; 6, 7, 7, 7; 5, 5, 6, 6, 6; 5, 6, 6, 6, 6; 5, 6, 6, 6, 7; 5, 6, 6, 7, 7; 5, 6, 7, 7, 7; 6, 6, 7, 7, 7; 6, 7, 7, 7, 7; 5, 5, 6, 6, 6, 7; 5, 5, 6, 6, 7, 7; 5, 5, 6, 7, 7, 7; 5, 6, 6, 7, 7, 7; 5, 6, 7, 7, 7, 7; 6, 6, 7, 7, 7, 7; 6, 7, 7, 7, 7, 7; 6, 7, 7, 7, 7, 8; 6, 7, 7, 7, 8, 8; 6, 7, 7, 8, 8, 8; 6, 7, 7, 8, 8, 9; 6, 7, 7, 8, 9, 9; 6, 7, 8, 8, 9, 9; 6, 7, 8, 9, 9, 9; 7, 7, 8, 9, 9, 9; 7, 8, 8, 9, 9, 9"/>
 	</display-properties>
-	
+
 </catalog>

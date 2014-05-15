@@ -3,108 +3,114 @@
 	<templates>
 
 		<!-- SECTIONS -->
-		<template 
+		<template section="LATEST_NEWS"
+			name="SECTION-14story_template.xml"
+			title="14 story - G photo"
+			min="14"
+			usage="front"
+		/>
+		<template
 			name="SECTION-7story_template.xml"
 			title="7 story - G photo"
 			min="7"
 			usage="front"
 		/>
-		<!-- END SECTIONS -->		
-		
+		<!-- END SECTIONS -->
+
 		<!-- GENERIC CONTINUATION -->
-		<template 
-			name="CONTINUATION-generic-12_template.xml" 
+		<template
+			name="CONTINUATION-generic-12_template.xml"
 			title=""
 			min="12"
 			usage="continuation"
 		/>
-		<template 
-			name="CONTINUATION-generic-11_template.xml" 
+		<template
+			name="CONTINUATION-generic-11_template.xml"
 			title=""
 			min="11"
 			usage="continuation"
 		/>
-		<template 
-			name="CONTINUATION-generic-10_template.xml" 
+		<template
+			name="CONTINUATION-generic-10_template.xml"
 			title=""
 			min="10"
 			usage="continuation"
 		/>
-		<template 
-			name="CONTINUATION-generic-9_template.xml" 
+		<template
+			name="CONTINUATION-generic-9_template.xml"
 			title=""
 			min="9"
 			usage="continuation"
 		/>
-		<template 
-			name="CONTINUATION-generic-8_template.xml" 
+		<template
+			name="CONTINUATION-generic-8_template.xml"
 			title=""
 			min="8"
 			usage="continuation"
 		/>
-		<template 
-			name="CONTINUATION-generic-7_template.xml" 
+		<template
+			name="CONTINUATION-generic-7_template.xml"
 			title=""
 			min="7"
 			usage="continuation"
 		/>
-		<template 
-			name="CONTINUATION-generic-6_template.xml" 
+		<template
+			name="CONTINUATION-generic-6_template.xml"
 			title=""
 			min="6"
 			usage="continuation"
 		/>
-		<template 
-			name="CONTINUATION-generic-5_template.xml" 
+		<template
+			name="CONTINUATION-generic-5_template.xml"
 			title=""
 			min="5"
 			usage="continuation"
 		/>
-		<template 
-			name="CONTINUATION-generic-4_template.xml" 
+		<template
+			name="CONTINUATION-generic-4_template.xml"
 			title=""
 			min="4"
 			usage="continuation"
 		/>
-		<template 
-			name="CONTINUATION-generic-3_template.xml" 
+		<template
+			name="CONTINUATION-generic-3_template.xml"
 			title=""
 			min="3"
 			usage="continuation"
 		/>
-		<template 
-			name="CONTINUATION-generic-2_template.xml" 
+		<template
+			name="CONTINUATION-generic-2_template.xml"
 			title=""
 			min="2"
 			usage="continuation"
 		/>
-		<template 
-			name="CONTINUATION-generic-1_template.xml" 
+		<template
+			name="CONTINUATION-generic-1_template.xml"
 			title=""
 			min="1"
 			usage="continuation"
 		/>
 		<!--  END GENERIC CONTINUATION -->
-	
 
-		
+
+
 		<!-- WHATS NEWS -->
-		<template 
+		<template
 			name="WHATSNEWS-phone_template.xml"
-			usage="front" 
+			usage="front"
 			title=""
 			min="1"
 			section="WHATS_NEWS"
 		/>
 		<!-- END WHATS NEWS -->
-		
+
 		<!-- FULL PAGE AD -->
-		<template 
+		<template
 			name="GENERIC-fullpagead-template.xml"
 			usage="ads"
 		/>
 		<!-- END FULL PAGE AD -->
-		
+
 	</templates>
 
 	<article-page-plans>
@@ -114,5 +120,5 @@
 		<ads value=";;;" />
 		<continuation-counts value="4; 5; 6; 7; 8; 4, 5; 5, 5; 5, 6; 5, 7; 6, 7; 4, 5, 5; 4, 5, 6; 5, 5, 6; 5, 6, 6; 5, 6, 7; 5, 7, 7; 4, 5, 5, 6; 5, 5, 5, 6; 5, 5, 6, 6; 5, 6, 6, 6; 5, 6, 6, 7; 5, 6, 7, 7; 6, 6, 7, 7; 6, 7, 7, 7; 5, 5, 6, 6, 6; 5, 6, 6, 6, 6; 5, 6, 6, 6, 7; 5, 6, 6, 7, 7; 5, 6, 7, 7, 7; 6, 6, 7, 7, 7; 6, 7, 7, 7, 7; 5, 5, 6, 6, 6, 7; 5, 5, 6, 6, 7, 7; 5, 5, 6, 7, 7, 7; 5, 6, 6, 7, 7, 7; 5, 6, 7, 7, 7, 7; 6, 6, 7, 7, 7, 7; 6, 7, 7, 7, 7, 7; 6, 7, 7, 7, 7, 8; 6, 7, 7, 7, 8, 8; 6, 7, 7, 8, 8, 8; 6, 7, 7, 8, 8, 9; 6, 7, 7, 8, 9, 9; 6, 7, 8, 8, 9, 9; 6, 7, 8, 9, 9, 9; 7, 7, 8, 9, 9, 9; 7, 8, 8, 9, 9, 9"/>
 	</display-properties>
-	
+
 </catalog>

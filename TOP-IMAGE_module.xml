@@ -2,32 +2,36 @@
 	<style src="GLOBAL-stylesheet.ejs" />
 	<style src="GLOBAL_MODULES-stylesheet.ejs" />
 	<style src="PHONE-MODULES-stylesheet.ejs" />
+
+	<style>{
+		jpml: {
+			background-color: =options.background_color,
+			border-color: #d8d8d8
+		}
+	}</style>
 	<style>{
 		$join: [
 			{ $switch: [
 				{ if: =options.top_border, then: {
 					jpml: {
 						border-width: [1, 0, 0, 0],
-						padding: [12, 10, 0, 0],
-						border-color: #d8d8d8
+						padding: [12, 10, 0, 0]
 					}
-			
+
 				}},
 				{ if: =options.left_border, then: {
 					jpml: {
 						border-width: [0, 0, 0, 1],
-						border-color: #d8d8d8,
 						padding: [0, 0, 0, 10]
 					}
-			
+
 				}},
 				{ if: =options.right_border, then: {
 					jpml: {
 						border-width: [0, 1, 0, 0],
-						border-color: #d8d8d8,
 						padding: [0, 10, 0, 0]
 					}
-			
+
 				}},
 				{ if: true, then: {
 					jpml: {
@@ -37,7 +41,7 @@
 				}}
 			]},
 			{
-				#body: { 
+				#body: {
 		            column-count: {
 						if: =options.one_column, then:1, else:{$divide: [=view.width, {$multiply:[300, =scale.dpi]}]}
 					},
@@ -48,7 +52,7 @@
 					pixels-per-point-x:1,
 					pixels-per-point-y:1,
 					width: =view.width,
-					height: {$multiply: [=view.width, .62 ]}, 
+					height: {$multiply: [=view.width, .62 ]},
 	                display: { if: =options.show_image, then:inherit, else:none },
 					padding: [0, 0, 17, 0],
 					options: {
@@ -63,7 +67,7 @@
 	            },
 				.byline: {
 					display:{if: =options.show_byline, then:inherit, else:none}
-					
+
 				},
 				#body-first-p: {
 					text-indent: {if: =options.indent, then:20, else:0}
@@ -82,12 +86,12 @@
 			#headline: {
 				padding: [8, 8, 0, 8]
 			},
-			image: { 
+			image: {
 				height: {$multiply: [=view.width, .58 ]},
 				width:=view.width,
 				display:inherit,
 				padding: [0]
-				
+
 			},
 			.byline: {
 				display: none
@@ -108,7 +112,7 @@
 			#summary: {
 				display: inherit
 			}
-			
+
 		}, else: {
 			#body-key: {
 				display: none

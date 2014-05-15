@@ -4,91 +4,109 @@
 	<style src="ADVERTISING-stylesheet.ejs"/>
 	<style src="PHONE-stylesheet.ejs"/>
 	<style>{
-
+		jpml: {
+			background-color: {if: =page.section, equals: "FRONT_SECTION", then:#ffeded, else:inherit}
+		},
 		#b1: {
-			options:{$switch:[
-				{if: =portrait, then: {large_headline:true, show_image:true}},
-				{if: =landscape, then: {large_headline:true, show_image:true}}
-			]
-		}},
+			options: {
+				large_headline:true,
+				show_image:true,
+				background_color:#ffeded
+			}
+		},
 		#b2: {
-			options:{$switch:[
-				{if: =portrait, then: {medium_headline:true, show_flashline:false, show_body:true, top_border:true, small_image:true}},
-				{if: =landscape, then: {medium_headline:true, show_flashline:false, show_body:true, top_border:true, small_image:true}}
-			]
-		}},
+			options: {
+				medium_headline:true,
+				show_flashline:false,
+				show_body:true,
+				top_border:true,
+				small_image:true,
+				background_color:#ffeded
+			}
+		},
 		#b3: {
-			options:{$switch:[
-				{if: =portrait, then: {medium_headline:true, show_body:true, top_border:true, small_image:true}},
-				{if: =landscape, then: {medium_headline:true, show_body:true, top_border:true, small_image:true}}
-			]
-		}},
+			options: {
+				medium_headline:true,
+				show_body:true,
+				top_border:true,
+				background_color:#ffeded,
+				small_image:true
+			}
+		},
 		#b4: {
 			options:{$switch:[
-				{if: =portrait, then: {small_headline:true, top_border:true}},
-				{if: =landscape, then: {small_headline:true, top_border:false}}
+				{if: =portrait, then: {small_headline:true, top_border:true, background_color:#ffeded}},
+				{if: =landscape, then: {small_headline:true, top_border:false, background_color:#ffeded}}
 			]
 		}},
 		#b5: {
-			options:{$switch:[
-				{if: =portrait, then: {small_headline:true, top_border:true}},
-				{if: =landscape, then: {small_headline:true, top_border:true}}
-			]
-		}},
+			options: {
+				small_headline:true,
+				top_border:true,
+				background_color:#ffeded
+			}
+		},
 		#b6: {
-			options:{$switch:[
-				{if: =portrait, then: {small_headline:true, top_border:true}},
-				{if: =landscape, then: {small_headline:true, top_border:true}}
-			]
-		}},
+			options: {
+				small_headline:true,
+				top_border:true,
+				background_color:#ffeded
+			}
+		},
 		#b7: {
-			options:{$switch:[
-				{if: =portrait, then: {small_headline:true, top_border:true}},
-				{if: =landscape, then: {small_headline:true, top_border:true}}
-			]
-		}},
+			options: {
+				small_headline:true,
+				top_border:true,
+				background_color:#ffeded
+			}
+		},
 		#b8: {
 			options:{$switch:[
-				{if: =portrait, then: {small_headline:true, top_border:false}},
-				{if: =landscape, then: {small_headline:true, top_border:true}}
+				{if: =portrait, then: {small_headline:true, top_border:false, background_color:#ffeded}},
+				{if: =landscape, then: {small_headline:true, top_border:true, background_color:#ffeded}}
 			]
 		}},
 		#b9: {
 			options:{$switch:[
-				{if: =portrait, then: {small_headline:true, top_border:true}},
-				{if: =landscape, then: {small_headline:true, top_border:false}}
+				{if: =portrait, then: {small_headline:true, top_border:true, background_color:#ffeded}},
+				{if: =landscape, then: {small_headline:true, top_border:false, background_color:#ffeded}}
 			]
 		}},
 		#b10: {
-			options:{$switch:[
-				{if: =portrait, then: {small_headline:true, top_border:true}},
-				{if: =landscape, then: {small_headline:true, top_border:true}}
-			]
-		}},
+			options: {
+				small_headline:true,
+				top_border:true,
+				background_color:#ffeded
+			}
+		},
 		#b11: {
-			options:{$switch:[
-				{if: =portrait, then: {small_headline:true, top_border:true}},
-				{if: =landscape, then: {small_headline:true, top_border:true}}
-			]
-		}},
+			options: {
+				small_headline:true,
+				top_border:true,
+				background_color:#ffeded
+			}
+		},
 		#b12: {
-			options:{$switch:[
-				{if: =portrait, then: {small_headline:true, top_border:true}},
-				{if: =landscape, then: {small_headline:true, top_border:true}}
-			]
-		}},
+			options: {
+				small_headline:true,
+				top_border:true,
+				background_color:#ffeded
+			}
+		},
 		#b13: {
-			options:{$switch:[
-				{if: =portrait, then: {small_headline:true, top_border:true}},
-				{if: =landscape, then: {small_headline:true, top_border:true}}
-			]
-		}},
+			options: {
+				small_headline:true,
+				top_border:true,
+				background_color:#ffeded
+			}
+		},
 		#b14: {
-			options:{$switch:[
-				{if: =portrait, then: {small_headline:true, top_border:true}},
-				{if: =landscape, then: {small_headline:true, top_border:true}}
-			]
-		}}
+			options: {
+				small_headline:true,
+				top_border:true,
+				background_color:#ffeded
+			}
+		}
 
 	}</style>
 	<style> {

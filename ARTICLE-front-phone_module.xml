@@ -14,7 +14,7 @@
 				top: 0,
 				left: -5,
 				width: 320,
-				height: {$min: [320, {$divide: [320, =media.aspect]}]},
+				height: {$divide: [320, =media.aspect]},
 				options: {
 					id: =page.number
 				}
@@ -24,7 +24,7 @@
 	}</style>
 	<style>{
 		if: =scale.phone, then: {
-			#header_top: {padding:[5]},
+			#header_top: {padding:[5,10,5,10]},
 			.article_body: {
 				line-height: {$multiply: [22, =view.zoomlevel]}
 			}

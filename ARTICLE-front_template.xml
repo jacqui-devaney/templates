@@ -17,7 +17,7 @@
 	<style>{
 		#view: {
 			options: {
-				background_color: #ffeded
+				background_color: {if: =page.section, equals: "LATEST_NEWS", then: #ffeded, else:white}
 			}
 		},
 		jpml: {

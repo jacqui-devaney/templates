@@ -21,7 +21,7 @@
 			}
 		},
 		jpml: {
-			background-color: #ffeded
+			background-color: {if: =page.section, equals: "LATEST_NEWS", then: #ffeded, else:white}
 		}
 	}</style>
     <box id="view" embed="article" class="column16-12 positionx1" module="ARTICLE-front_module.xml" />

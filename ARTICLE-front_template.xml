@@ -3,7 +3,7 @@
     <style src="GRID-stylesheet.ejs"/>
 	<style>{
 		if: =portrait, then: {
-			#view: { 
+			#view: {
                 top:0,
                 height:916
              }
@@ -11,8 +11,18 @@
             #view : {
 				top:0,
 				height:662
-			}       
+			}
         }
     }</style>
+	<style>{
+		#view: {
+			options: {
+				background_color: #ffeded
+			}
+		},
+		jpml: {
+			background-color: #ffeded
+		}
+	}</style>
     <box id="view" embed="article" class="column16-12 positionx1" module="ARTICLE-front_module.xml" />
 </jpml>

@@ -3,6 +3,11 @@
 	<style src="GLOBAL_MODULES-stylesheet.ejs" />
 	<style src="PHONE-MODULES-stylesheet.ejs" />
 	<style>{
+		jpml: {
+			background-color: =options.background_color
+		}
+	}</style>
+	<style>{
 		$join: [
 		{jpml: { min-height: 0 }},
 		{#body_container: {

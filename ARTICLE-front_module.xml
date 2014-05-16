@@ -3,8 +3,13 @@
 	<style src="GLOBAL_MODULES-stylesheet.ejs" />
 	<style src="ARTICLE-stylesheet.ejs" />
 	<style>{
+		jpml: {
+			background-color: =options.background_color
+		}
+	}</style>
+	<style>{
 		$join: [
-		{#body_container: { 
+		{#body_container: {
             column-count: { if: =portrait, then: 3, else: 4},
             column-gutter: 12,
 			flow: article_body,
@@ -12,12 +17,13 @@
 			padding:[10, 0, 0, 0],
 			layout-grid-line: {$multiply: [20, =view.zoomlevel]},
 			layout-grid-line-offset: {$multiply: [20, =view.zoomlevel]}
-			
+
         }},
 		{.border-p:{
 			layout-grid-line: 0,
-			layout-grid-line-offset: 0
-		
+			layout-grid-line-offset: 0,
+			border-color: {if: =page.section, equals: "LATEST_NEWS", then: #ffeded, else:white}
+
 		}},
 		{if: =portrait, then: {
 			#media: {
@@ -56,7 +62,7 @@
 					id: =page.number
 				},
 				padding:[0, 0, {if: =page.hasmedia, then:30, else:0}, 0]
-				
+
 			}
         }}
 		]
@@ -65,7 +71,7 @@
         <p class="article_headline"><span embed="headline"/><mark class="key"/></p>
 		<h2 class="article_subhed" embed="subhed" />
 	</panel>
-	
+
 	<panel id="body_container">
 		<box id="media" embed="media" />
 		<p class="module_flashline" embed="flashline"/>

@@ -17,11 +17,11 @@
 	<style>{
 		#view: {
 			options: {
-				background_color: {if: =page.section, equals: "LATEST_NEWS", then: #ffeded, else:white}
+				background_color: {if: =page.section, equals: "LATEST_NEWS", then: #ffeded}
 			}
 		},
 		jpml: {
-			background-color: {if: =page.section, equals: "LATEST_NEWS", then: #ffeded, else:white}
+			background-color: {if: =page.section, equals: "LATEST_NEWS", then: #ffeded}
 		}
 	}</style>
     <box id="view" embed="article" class="column16-12 positionx1" module="ARTICLE-front_module.xml" />

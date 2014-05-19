@@ -130,7 +130,7 @@ PDF:
         </nameloc>
     </article-header>
     <article-body>
-        <p>Deloitte's latest <link icon="pdf" linkend="i1" type="EXTERNAL">report</link>(PDF).</p>
+        <p>Here's the latest <link icon="pdf" linkend="i1" type="EXTERNAL">report</link>(PDF).</p>
 -->
 
 <xsl:template match="link[@icon = 'pdf' or @type = 'ARTICLE']">

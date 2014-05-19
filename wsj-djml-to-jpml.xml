@@ -74,16 +74,6 @@
     <panel id="body">
         <xsl:apply-templates select="article/article-body"/>
         <!-- We will insert a mark body bug in the last p or tagline element -->
-<xsl:if test="@type=&quot;Deloitte Cio Blog&quot; or @type=&quot;Deloitte Cfo Blog&quot; or @type=&quot;Deloitte Riskandcompliance Blog&quot;">
-                <xsl:for-each select="//inset[@param1=&quot;DISCLAIMER&quot; and @style=&quot;OUTSET&quot;]/p">
-                <xsl:if test="not(preceding-sibling::p[position()=1])">
-                    <p id="deloitte-disclaimer-preamble-p"><mark id="deloitte-disclaimer-preamble-mark" /></p>
-                </xsl:if>
-                <p class="deloitte-disclaimer">
-                    <xsl:value-of select="." />
-                </p>
-            </xsl:for-each>
-        </xsl:if>
     </panel>
 
     <!-- Barron's will need external links, insets too. -->

@@ -29,19 +29,7 @@
 			
         }, else: {
 			#mediabucket_container:	{ frame: [676, 8, 310, 235]  }
-		}},
-		{#filler: {
-			position: relative,
-			top: 10,
-			left: 0,
-			right: 0,
-			bottom: 0,
-			min-height: 0,
-			border-image:url(articleBackground.png),
-			border-width: [16, 0, 0, 0],
-			border-slice: [16, 0, 0, 0]
-		}}		
-		
+		}}	
 		]
     }</style>
 	<box id="close_button_box" embed="close">
@@ -67,8 +55,6 @@
         <panel class="article_body" embed="body"/>
 	    
 	</panel>
-	<box id="filler"/>
-
 </jpml>
 
 

@@ -12,16 +12,6 @@
 		font-size: 16,
 		content: =article.summary
 	},
-	#filler: {
-		if-all: [
-			=intent.article,
-			{if: =app.version, at-least: 5.4},
-			{if: =page.number, more-than: 0}
-		],
-		then: {
-			display: none
-		}
-	},
 	.module_headline: {
 		padding: [0, 0, 8, 0],
 		font-name: "DJ5Exchange-Semibold",

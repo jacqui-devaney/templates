@@ -505,7 +505,11 @@
     <ext>'S</ext>
     <ext>'s</ext>
     <ext> &amp; Co.</ext>
+
+    <ext> Co.'s</ext>
+    <ext> Co.,</ext>
     <ext> Co.</ext>
+
     <ext> PCL,</ext>
     <ext> SA,</ext>
     <ext> SA</ext>
@@ -516,18 +520,26 @@
     <ext> A.S.,</ext>
     <ext> A.S.</ext>
     <ext> AG</ext>
+
     <ext> Corp.'s</ext>
+    <ext> Corp.,</ext>
     <ext> Corp.</ext>
     <ext> Corp's</ext>
+    <ext> Corp,</ext>
     <ext> Corp</ext>
-    <ext> Inc.,</ext>
+
     <ext> Inc.'s</ext>
+    <ext> Inc.,</ext>
     <ext> Inc.</ext>
     <ext> Inc's</ext>
+    <ext> Inc,</ext>
     <ext> Inc</ext>
+    
     <ext> Ltd.'s</ext>
+    <ext> Ltd,</ext>
     <ext> Ltd.</ext>
     <ext> Ltd's</ext>
+    <ext> Ltd,</ext>
     <ext> Ltd</ext>
 </dj:extensions>
 

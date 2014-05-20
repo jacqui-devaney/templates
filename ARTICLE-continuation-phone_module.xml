@@ -12,17 +12,6 @@
 		{#body_continuation: {
 			content: from-flow(article_body),
 			flow: article_body
-		}},
-		{#filler: {
-			position: relative,
-			top: 10,
-			left: 0,
-			right: 0,
-			bottom: 0,
-			min-height: 50,
-			border-image:url(articleBackground.png),
-			border-width: [16, 0, 0, 0],
-			border-slice: [16, 0, 0, 0]
 		}}
 		]
     }</style>
@@ -34,6 +23,4 @@
 	<panel id="body_container">
     	<panel class="article_body" id="body_continuation" embed="body" />
 	</panel>
-	<box id="filler">
-	</box>
 </jpml>

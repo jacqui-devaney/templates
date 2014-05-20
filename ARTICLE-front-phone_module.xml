@@ -8,51 +8,35 @@
 		}
 	}</style>
 	<style>{
-		$join: [
-		{jpml: { min-height: 0 }},
-		{#body_container: {
+		jpml: { min-height: 0 },
+		#body_container: {
 			padding: [0, 10, 0, 10],
 			flow: article_body
-		}},
-		{
-			#media: {
-				top: 0,
-				left: -5,
-				width: 320,
-				height: {$divide: [320, =media.aspect]},
-				options: {
-					id: =page.number
-				}
-			}
-		}
-		]
-	}</style>
-	<style>{
-		if: =scale.phone, then: {
-			#header_top: {padding:[5,10,5,10]},
-			.article_body: {
-				line-height: {$multiply: [22, =view.zoomlevel]}
-			}
-		}, else: {}
-	}</style>
-	<style>{
-
-		.border-flashline-mark: {
-			line-height: 0.5,
-			color: transparent,
-			content: "unfortunate"
 		},
-		.border-flashline:{
-			border-width:[0, 0, 0, 0],
-			background-color: #e1e0df,
-			border-color:white
+		#media: {
+			top: 0,
+			left: 0,
+			right: 0,
+			position: relative,
+			height: {$divide: [320, =media.aspect]},
+			options: {
+				id: =page.number
+			}
+		},
+		#header_top: {padding:[5,10,5,10]},
+		.article_body: {
+			line-height: {$multiply: [22, =view.zoomlevel]}
+		},
+		.article_flashline: {
+			padding: [14, 0, 8.5, 0],
+			border-width: [0, 0, 0.5, 0],
+			border-color: #e1e0df
 		}
 	}</style>
 
 	<p class="article_flashline" embed="flashline"/>
+	<box id="media" embed="media" />
 	<panel id="header_top">
-		<p class="border-flashline"><mark class="border-flashline-mark"/></p>
-		<box id="media" embed="media" />
 		<p class="article_headline"><span embed="headline"/><mark class="key"/></p>
 		<h2 class="article_subhed" embed="subhed" />
 	</panel>

@@ -4,6 +4,12 @@
 <xsl:variable name="uppercase" select="'ABCDEFGHIJKLMNOPQRSTUVWXYZ'"/>
 
 <!-- 
+This is the SEO-enabled version of wsj-itp-whatsnews-to-rss.xml. The main difference appears
+to be that it allows the raw SEO URLs to go through to the XSLT, which means the XSLT URL resolver
+must trap those calls and resolve them to the right DJML URLs.
+-->
+
+<!-- 
 ITP What's News is an RSS containing a link to one or two DJML HTMLs. The DJML that represents
 those HTMLs, in turn, contain a series of paragraphs. The paragraphs may link to other articles.
 We convert this into an RSS feed. We require that all the DJML has been downloaded already,

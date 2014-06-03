@@ -23,7 +23,7 @@
 	        		left: 0,
 	        		top: -110,
 	        		right: 0,
-	        		height: 90
+	        		height: 85
 	        	},
 	        	#tomorrow: {
 	        		background-color: #404040,
@@ -86,14 +86,14 @@
 	        		left: 0,
 	        		top: -110,
 	        		right: 0,
-	        		height: 90
+	        		height: 85
 	        	},
 	        	#tomorrow: {
 	        		background-color: #404040,
 	        		right: 0,
-	        		top: -20,
+	        		top: -25,
 	        		width: 258,
-	        		height: 580
+	        		height: 585
 	        	},
 	            #b1 : { 
 					height:280,

@@ -25,6 +25,7 @@
 			padding: [0, 10]
 		},
 		.flashline: {
+			color: =options.flashline_color,
 			text-transform: uppercase,
 			text-align: center,
 			font-size: 15,

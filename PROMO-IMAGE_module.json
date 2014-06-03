@@ -1,0 +1,29 @@
+{
+  "influence": [{
+    "key": "flashline_color",
+    "title": "Flashline Color",
+    "type": "select",
+    "options": [{
+        "label": "Red",
+        "values": {
+          "flashline_color": "#ff0000"
+        }
+      }, {
+        "label": "Green",
+        "values": {
+          "flashline_color": "#00ff00"
+        }
+      }, {
+        "label": "Yellow",
+        "values": {
+          "flashline_color": "yellow"
+        }
+      }, {
+        "label": "Blue",
+        "values": {
+          "flashline_color": "#0000ff"
+        }
+      }]
+    }
+  ]
+}

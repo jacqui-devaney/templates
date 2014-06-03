@@ -6,134 +6,15 @@
 	<style>{
 		jpml: {
 			background-color: =options.background_color,
-			border-color: #d8d8d8
+			padding: [0, 35]
+		},
+		.hed: {
+			text-align: center,
+			color: #818181,
+			padding: [5, 0, 0, 0],
+			font-size: 19,
+			font-name: DJ5EscrowCond-Bold
 		}
 	}</style>
-	<style>{
-		$join: [
-			{ $switch: [
-				{ if: =options.top_border, then: {
-					jpml: {
-						border-width: [1, 0, 0, 0],
-						padding: [12, 10, 0, 0]
-					}
-
-				}},
-				{ if: =options.left_border, then: {
-					jpml: {
-						border-width: [0, 0, 0, 1],
-						padding: [0, 0, 0, 10]
-					}
-
-				}},
-				{ if: =options.right_border, then: {
-					jpml: {
-						border-width: [0, 1, 0, 0],
-						padding: [0, 10, 0, 0]
-					}
-
-				}},
-				{ if: true, then: {
-					jpml: {
-						border-width: [0, 0, 0, 0],
-						padding: [0, 0, 0, 0]
-					}
-				}}
-			]},
-			{
-				#body: {
-		            column-count: {
-						if: =options.one_column, then:1, else:{$divide: [=view.width, {$multiply:[300, =scale.dpi]}]}
-					},
-		            column-gutter: 20,
-					display: {if: =options.hide_body, then:none, else:inherit}
-		        },
-				image: {
-					pixels-per-point-x:1,
-					pixels-per-point-y:1,
-					width: =view.width,
-					height: {$multiply: [=view.width, .62 ]},
-	                display: { if: =options.show_image, then:inherit, else:none },
-					padding: [0, 0, 17, 0],
-					options: {
-						$switch: [
-							{if: =options.F_image, then: {match:{width:571, height:226, max-height:226}}},
-							{ if: =options.OZ_image, then: {match: { width:570, height:612, min-height:612 } } },
-							{ if: =options.DV_image, then: {match: { width:262, height:394, min-height:394 } } },
-							{ if: =options.G_image, then: {match: { width:553, height:369, min-height:369 } } }
-						]
-					},
-	                image-scale: 1
-	            },
-				.byline: {
-					display:{if: =options.show_byline, then:inherit, else:none}
-
-				},
-				#body-first-p: {
-					text-indent: {if: =options.indent, then:20, else:0}
-				},
-				.module_flashline: {
-					display: {if: =options.show_flashline, then:inherit, else:none}
-				}
-			}
-		]
-	}</style>
-	<style>{
-		if: =scale.phone, then: {
-			jpml: {
-				padding:[0]
-			},
-			#headline: {
-				padding: [8, 8, 0, 8]
-			},
-			image: {
-				height: {$multiply: [=view.width, .58 ]},
-				width:=view.width,
-				display:inherit,
-				padding: [0]
-
-			},
-			.byline: {
-				display: none
-			},
-			.key: {
-				display: none
-			},
-			#body-key: {
-				display: inherit,
-				content: { if-all: [=issue.locked, =article.paid], then: "K\u00a0"}
-			},
-			#body: {
-				padding: [0, 8, 0, 8]
-			},
-			.body: {
-				display: none
-			},
-			#summary: {
-				display: inherit
-			}
-
-		}, else: {
-			#body-key: {
-				display: none
-			},
-			#summary: {
-				display: none
-			}
-		}
-	}</style>
-	<box id="deco_container" embed="deco-image">
-		<image embed="summary-image" />
-	</box>
-	<panel id="vertical">
-		<panel id="headline">
-			<p class="module_headline"><mark class="m_headline" /><mark class="key" /></p>
-		</panel>
-		<panel id="body">
-			<p class="module_flashline"><span embed="flashline" /></p>
-			<p class="byline" embed="byline"/>
-			<p id="summary" class="body"><mark id="body-key" class="key" /><mark class="module_summary" /></p>
-			<panel class="body" embed="body"/>
-		</panel>
-	</panel>
+	<p class="hed"><mark class="m_headline" /></p>
 </jpml>

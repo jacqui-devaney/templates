@@ -4,18 +4,36 @@
 	<style src="PHONE-MODULES-stylesheet.ejs" />
 
 	<style>{
-		jpml: {
-			background-color: =options.background_color,
-			padding: [0, 30]
-		},
-		#deco_container: {
-			top: 0,
-			bottom: 100
-		},
-		#text_container: {
-			position: relative,
-			padding: [20, 0, 0, 0]
-		},
+		if: =options.right_image, then: {
+			jpml: {
+				background-color: =options.background_color
+			},
+			#deco_container: {
+				top: 0,
+				bottom: 0,
+				right: 0,
+				width: 150
+			},
+			#text_container: {
+				position: relative,
+				padding: [0, 8]
+			}
+		}, else: {
+			jpml: {
+				background-color: =options.background_color,
+				padding: [0, 30]
+			},
+			#deco_container: {
+				top: 0,
+				bottom: 100
+			},
+			#text_container: {
+				position: relative,
+				padding: [20, 0, 0, 0]
+			}
+		}
+	}</style>
+	<style>{
 		.hed: {
 			color: =options.hed_color,
 			text-align: center,

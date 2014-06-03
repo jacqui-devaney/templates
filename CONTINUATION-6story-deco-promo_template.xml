@@ -65,7 +65,8 @@
 					top:700,
 					options: {
 						background_color: #404040,
-						hed_color: #fff
+						hed_color: #fff,
+						right_image: true
 					}
 				}
 	        }},

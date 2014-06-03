@@ -80,7 +80,7 @@
 	        	#header: {
 	        		border-width: [0, 0, 5, 0],
 	        		border-image: url(promo-top-border.png),
-	        		border-image-hidpi: url(promo-top-border@2x.png),
+	        		border-image-hidpi: "url(promo-top-border@2x.png)",
 	        		border-slice: [0, 0, 5, 0],
 	        		left: 0,
 	        		top: -110,

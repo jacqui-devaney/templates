@@ -18,7 +18,7 @@
 	        	#header: {
 	        		border-width: [1, 0, 5, 0],
 	        		border-image: url(promo-top-border.png),
-	        		border-image-hidpi: url(promo-top-border@2x.png),
+	        		border-image-hidpi: "url(promo-top-border@2x.png)",
 	        		border-slice: [1, 0, 5, 0],
 	        		left: 0,
 	        		top: -110,
@@ -30,7 +30,7 @@
 	        		border-color: white,
 	        		border-width: [5, 0, 1, 0],
 	        		border-image: url(promo-bottom-border.png),
-	        		border-image-hidpi: url(promo-bottom-border@2x.png),
+	        		border-image-hidpi: "url(promo-bottom-border@2x.png)",
 	        		border-slice: [5, 0, 1, 0],
 	        		left: 0,
 	        		top: 660,

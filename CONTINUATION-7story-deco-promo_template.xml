@@ -1,90 +1,162 @@
 <jpml id="CONTINUATION-generic-6_template">
 	<style src="GLOBAL-stylesheet.ejs" />
 	<style src="GRID-stylesheet.ejs" />
-	<style src="CONTINUATION-stylesheet.ejs" />
+	<style src="ADVERTISING-stylesheet.ejs"/>
 	<style src="PHONE-stylesheet.ejs" />
 	<style>{
 		$switch: [
 	        {if: =scale.phone, then: {
 	        }},
 	        {if: =portrait, then: {
+	        	#header_inner: {
+	        		background-color: #232323,
+	        		left: 0,
+	        		top: 0,
+	        		right: 0,
+	        		bottom: 0	        		
+	        	},
+	        	#header: {
+	        		border-width: [1, 0, 5, 0],
+	        		border-image: url(promo-top-border.png),
+	        		border-image-hidpi: url(promo-top-border@2x.png),
+	        		border-slice: [1, 0, 5, 0],
+	        		left: 0,
+	        		top: -110,
+	        		right: 0,
+	        		height: 90
+	        	},
+	        	#tomorrow: {
+	        		background-color: #404040,
+	        		border-color: white,
+	        		border-width: [5, 0, 1, 0],
+	        		border-image: url(promo-bottom-border.png),
+	        		border-image-hidpi: url(promo-bottom-border@2x.png),
+	        		border-slice: [5, 0, 1, 0],
+	        		left: 0,
+	        		top: 660,
+	        		right: 0,
+	        		height: 160
+	        	},
 	            #b1 : { 
-					height:480,
+					height:320,
 					top:0
 				},
 	            #b2 : { 
-					height:480,
-					top:480
+					height:320,
+					top:0
 				},        
 	            #b3 : { 
-					height:480,
-					top:0
+					height:320,
+					top:320
 				}, 
 				#b4 : { 
-					height:480,
-					top:480
+					height:320,
+					top:320
 				},        
 				#b5 : { 
-					height:480,
-					top:0
+					height:35,
+					top:665,
+					options: {
+						background_color: #404040
+					}
 				},
 				#b6 : { 
-					height:480,
-					top:480
+					height:100,
+					top:700,
+					options: {
+						background_color: #404040,
+						hed_color: #fff
+					}
 				},
 				#b7 : { 
-					height:480,
-					top:0
-				},
-				#b8 : { 
-					height:480,
-					top:480
+					height:100,
+					top:700,
+					options: {
+						background_color: #404040,
+						hed_color: #fff
+					}
 				}
-				
-	            
 	        }},
 			{if: =landscape, then: {
+	        	#header_inner: {
+	        		background-color: #232323,
+	        		left: 0,
+	        		top: 0,
+	        		right: 0,
+	        		bottom: 0	        		
+	        	},
+	        	#header: {
+	        		border-width: [0, 0, 5, 0],
+	        		border-image: url(promo-top-border.png),
+	        		border-image-hidpi: url(promo-top-border@2x.png),
+	        		border-slice: [0, 0, 5, 0],
+	        		left: 0,
+	        		top: -110,
+	        		right: 0,
+	        		height: 90
+	        	},
+	        	#tomorrow: {
+	        		background-color: #404040,
+	        		right: 0,
+	        		top: -20,
+	        		width: 258,
+	        		height: 580
+	        	},
 	            #b1 : { 
-					height:706,
+					height:280,
 					top:0
 				},
 	            #b2 : { 
-					height:706,
+					height:280,
 					top:0
 				},        
 	            #b3 : { 
-					height:353,
-					top:0
+					height:280,
+					top:280
 				}, 
 				#b4 : { 
-					height:353,
-					top:353
+					height:280,
+					top:280
 				},        
 				#b5 : { 
-					height:353,
-					top:0
+	        		width: 258,
+					height: 65,
+					top: 0,
+					options: {
+						background_color: #404040
+					}
 				},
 				#b6 : { 
-					height:353,
-					top:353
+	        		width: 258,
+					height:220,
+					top:80,
+					options: {
+						background_color: #404040,
+						hed_color: #fff
+					}
 				},
 				#b7 : { 
-					height:353,
-					top:0
-				},
-				#b8 : { 
-					height:353,
-					top:353
+	        		width: 258,
+					height:220,
+					top:320,
+					options: {
+						background_color: #404040,
+						hed_color: #fff
+					}
 				}
 	        }}
 		]
     }</style>
-    <box id="b1" embed="article" class="column2 positionx1" module="PROMO-IMAGE_module.xml" />    
-    <box id="b2" embed="article" class="column2 positionx3-1" module="PROMO-IMAGE_module.xml" />
-    <box id="b3" embed="article" class="column2 positionx5-3" module="PROMO-IMAGE_module.xml" />
-    <box id="b4" embed="article" class="column2 positionx5-3" module="PROMO-IMAGE_module.xml" />
-    <box id="b5" embed="article" class="column2 positionx7-5" module="PROMO-HED_module.xml" />
-    <box id="b6" embed="article" class="column2 positionx7-5" module="PROMO-IMAGE_module.xml" />
-    <box id="b7" embed="article" class="column2 positionx7-5" module="PROMO-IMAGE_module.xml" />
-
+    <box id="tomorrow" />
+    <box id="header"><box id="header_inner"/></box>
+    <box id="b1" embed="article" class="column6 positionx1" module="PROMO-IMAGE_module.xml" />    
+    <box id="b2" embed="article" class="column6 positionx7" module="PROMO-IMAGE_module.xml" />
+    <box id="b3" embed="article" class="column6 positionx1" module="PROMO-IMAGE_module.xml" />
+    <box id="b4" embed="article" class="column6 positionx7" module="PROMO-IMAGE_module.xml" />
+    <box id="b5" embed="article" class="column4-12 positionx13-1" module="PROMO-HED_module.xml" />
+    <box id="b6" embed="article" class="column4-6 positionx13-1" module="PROMO-IMAGE_module.xml" />
+    <box id="b7" embed="article" class="column4-6 positionx13-7" module="PROMO-IMAGE_module.xml" />
+	<box id="front_page" class="positionx_full column_full maude unit_ad">
+		<box id="banner_ad" class="ad-banner front_ad" embed="advertisement" />
+	</box>
 </jpml>

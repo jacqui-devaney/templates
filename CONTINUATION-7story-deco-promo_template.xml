@@ -79,12 +79,12 @@
 	        }}
 		]
     }</style>
-    <box id="b1" embed="article" class="column2 positionx1" module="CONTINUATION-dynamic_module.xml" />    
-    <box id="b2" embed="article" class="column2 positionx3-1" module="CONTINUATION-dynamic_module.xml" />
-    <box id="b3" embed="article" class="column2 positionx5-3" module="CONTINUATION-dynamic_module.xml" />
-    <box id="b4" embed="article" class="column2 positionx5-3" module="CONTINUATION-dynamic_module.xml" />
-    <box id="b5" embed="article" class="column2 positionx7-5" module="CONTINUATION-dynamic_module.xml" />
-    <box id="b6" embed="article" class="column2 positionx7-5" module="CONTINUATION-dynamic_module.xml" />
-    <box id="b7" embed="article" class="column2 positionx7-5" module="CONTINUATION-dynamic_module.xml" />
+    <box id="b1" embed="article" class="column2 positionx1" module="PROMO-IMAGE_module.xml" />    
+    <box id="b2" embed="article" class="column2 positionx3-1" module="PROMO-IMAGE_module.xml" />
+    <box id="b3" embed="article" class="column2 positionx5-3" module="PROMO-IMAGE_module.xml" />
+    <box id="b4" embed="article" class="column2 positionx5-3" module="PROMO-IMAGE_module.xml" />
+    <box id="b5" embed="article" class="column2 positionx7-5" module="PROMO-HED_module.xml" />
+    <box id="b6" embed="article" class="column2 positionx7-5" module="PROMO-IMAGE_module.xml" />
+    <box id="b7" embed="article" class="column2 positionx7-5" module="PROMO-IMAGE_module.xml" />
 
 </jpml>

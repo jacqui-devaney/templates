@@ -8,40 +8,31 @@
 	        {if: =scale.phone, then: {
 	        }},
 	        {if: =portrait, then: {
+	        	jpml: { padding: [0] },
 	            #b1 : { 
-					height:480,
-					top:0
+					height:300,
+					top:110
 				},
 	            #b2 : { 
-					height:480,
-					top:480
+					height:300,
+					top:110
 				},        
 	            #b3 : { 
-					height:480,
-					top:0
+					height:300,
+					top:430
 				}, 
 				#b4 : { 
-					height:480,
-					top:480
+					height:300,
+					top:430
 				},        
 				#b5 : { 
-					height:480,
-					top:0
+					height:25,
+					top:775
 				},
 				#b6 : { 
-					height:480,
-					top:480
-				},
-				#b7 : { 
-					height:480,
-					top:0
-				},
-				#b8 : { 
-					height:480,
-					top:480
+					height:120,
+					top:810
 				}
-				
-	            
 	        }},
 			{if: =landscape, then: {
 	            #b1 : { 
@@ -79,11 +70,11 @@
 	        }}
 		]
     }</style>
-    <box id="b1" embed="article" class="column2 positionx1" module="CONTINUATION-dynamic_module.xml" />    
-    <box id="b2" embed="article" class="column2 positionx3-1" module="CONTINUATION-dynamic_module.xml" />
-    <box id="b3" embed="article" class="column2 positionx5-3" module="CONTINUATION-dynamic_module.xml" />
-    <box id="b4" embed="article" class="column2 positionx5-3" module="CONTINUATION-dynamic_module.xml" />
-    <box id="b5" embed="article" class="column2 positionx7-5" module="CONTINUATION-dynamic_module.xml" />
-    <box id="b6" embed="article" class="column2 positionx7-5" module="CONTINUATION-dynamic_module.xml" />
+    <box id="b1" embed="article" class="column6 positionx1" module="PROMO-IMAGE_module.xml" />    
+    <box id="b2" embed="article" class="column6 positionx7" module="PROMO-IMAGE_module.xml" />
+    <box id="b3" embed="article" class="column6 positionx1" module="PROMO-IMAGE_module.xml" />
+    <box id="b4" embed="article" class="column6 positionx7" module="PROMO-IMAGE_module.xml" />
+    <box id="b5" embed="article" class="column12 positionx1" module="PROMO-HED_module.xml" />
+    <box id="b6" embed="article" class="column6 positionx4" module="PROMO-IMAGE_module.xml" />
 
 </jpml>

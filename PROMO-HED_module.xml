@@ -11,9 +11,10 @@
 		.hed: {
 			text-align: center,
 			color: #818181,
-			padding: [5, 0, 0, 0],
+			padding: [7, 0, 0, 0],
 			font-size: 19,
-			font-name: DJ5EscrowCond-Bold
+			font-name: DJ5EscrowCond-Bold,
+			text-transform: uppercase
 		}
 	}</style>
 	<p class="hed"><mark class="m_headline" /></p>

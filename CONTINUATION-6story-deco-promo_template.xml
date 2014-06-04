@@ -10,7 +10,8 @@
 			options: {
 				title: "In Today's WSJ",
 				tintColor: white,
-				tintTitle: true
+				tintTitle: true,
+				hideHeaderBorder: true
 			}
 		}
 	}</style>

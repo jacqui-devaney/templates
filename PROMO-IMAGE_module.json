@@ -4,24 +4,59 @@
     "title": "Flashline Color",
     "type": "select",
     "options": [{
-        "label": "Red",
+        "label": "Default Blue",
         "values": {
-          "flashline_color": "#ff0000"
+          "flashline_color": "#2E73AA"
         }
       }, {
-        "label": "Green",
+        "label": "OPINION",
         "values": {
-          "flashline_color": "#00ff00"
+          "flashline_color": "#9D8E33"
         }
       }, {
-        "label": "Yellow",
+        "label": "MARKETPLACE",
         "values": {
-          "flashline_color": "yellow"
+          "flashline_color": "#A72E56"
         }
       }, {
-        "label": "Blue",
+        "label": "US",
         "values": {
-          "flashline_color": "#0000ff"
+          "flashline_color": "#66544B"
+        }
+      }, {
+        "label": "MONEY_AND_INVESTING",
+        "values": {
+          "flashline_color": "#266141"
+        }
+      }, {
+        "label": "PERSONAL_JOURNAL",
+        "values": {
+          "flashline_color": "#E0592B"
+        }
+      }, {
+        "label": "NEW_YORK",
+        "values": {
+          "flashline_color": "#66544B"
+        }
+      }, {
+        "label": "WSJ_MAGAZINE",
+        "values": {
+          "flashline_color": "#7E3DBA"
+        }
+      }, {
+        "label": "LATEST_NEWS",
+        "values": {
+          "flashline_color": "#DE1E47"
+        }
+      }, {
+        "label": "TECH",
+        "values": {
+          "flashline_color": "#26698C"
+        }
+      }, {
+        "label": "WORLD",
+        "values": {
+          "flashline_color": "#223FF2"
         }
       }]
     }

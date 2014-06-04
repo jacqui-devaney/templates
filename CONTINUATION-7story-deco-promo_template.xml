@@ -9,7 +9,8 @@
 			frame: [0, 0, 10, 10],
 			options: {
 				title: "In Today's WSJ",
-				tintColor: white
+				tintColor: white,
+				tintTitle: true
 			}
 		}
 	}</style>

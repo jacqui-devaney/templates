@@ -28,7 +28,6 @@
 			deco="true"
 			usage="continuation"
 		/>
-
 		<!-- END FRONT SECTION -->
 
 		<!-- OPINION -->
@@ -39,8 +38,19 @@
 			min="7"
 			usage="front"
 		/>
-
 		<!-- END OPINION -->
+
+		<!-- WSJ MAGAZINE -->
+		<template
+			section="FRONT_SECTION"
+			name="CONTINUATION-6story-magazine-promo_template.xml"
+			title="6 story - WSJ Magazine"
+			min="6"
+			deco="true"
+			usage="continuation"
+		/>
+		<!-- END WSJ MAGAZINE -->
+
 		<!-- SECTIONS -->
 		<template
 			name="SECTION-6story_template.xml"
@@ -91,8 +101,8 @@
 			usage="continuation"
 			page="2"
 		/>
-
 		<!-- END SECTION CONTINUATION -->
+
 		<!-- GENERIC CONTINUATION -->
 		<template name="CONTINUATION-generic-8_template.xml" title="" min="8" usage="continuation" storyorder="feed"/>
 		<template name="CONTINUATION-generic-4_template.xml" title="" min="4" usage="continuation" storyorder="feed"/>
@@ -116,6 +126,7 @@
 			usage="ads"
 		/>
 		<!-- END FULL PAGE AD -->
+
 		<!-- TEST TEMPLATE -->
 		<template
 			name="TEST-4-grid_template.xml"
@@ -123,7 +134,6 @@
 			title="Grid Overlay"
 			min="1"
 		/>
-
 		<!-- END TEST TEMPLATE -->
 
 	</templates>

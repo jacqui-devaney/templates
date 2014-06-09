@@ -14,11 +14,8 @@
 				width:=view.width,
 				height: {$subtract:[=view.height, 1]},
 				image-scale: 1,
-				gravity:aspect-fill,
-				options: { 
-					if: =options.full_screen, then: {match: { width:1280, height:853, min-height:853 } } 
-				}
-				
+				gravity:aspect-fill
+
 			},
 			#deco_caption_container: {
 				top:128,
@@ -32,7 +29,7 @@
 			},
 			.body: {
 				padding:[18, 0, 0, 0]
-				
+
 			},
 			#border: {
 				background-color:#fff,
@@ -61,5 +58,5 @@
 					</panel>
 				</box>
 			</box>
-			
+
 </jpml>

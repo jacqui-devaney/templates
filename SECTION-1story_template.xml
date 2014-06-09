@@ -10,6 +10,8 @@
 				tintTitle: true,
 				title: "WSJ."
 			}
+		}, else: {
+			display: none
 		}
 	}}</style>
     <style>{

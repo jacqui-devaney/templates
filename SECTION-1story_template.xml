@@ -6,6 +6,8 @@
 			display: inherit,
 			frame: [0, 0, 10, 10],
 			options: {
+				tintColor: white,
+				tintTitle: true,
 				title: "WSJ."
 			}
 		}

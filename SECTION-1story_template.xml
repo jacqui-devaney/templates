@@ -1,6 +1,15 @@
 <jpml id="SECTION-1story_template">
 	<style src="GLOBAL-stylesheet.ejs" />
     <style src="GRID-stylesheet.ejs"/>
+    <style>{ if: =page.section, equals: "WSJ_MAGAZINE", then: {
+    	#page_details: {
+			display: inherit,
+			frame: [0, 0, 10, 10],
+			options: {
+				title: "WSJ."
+			}
+		}
+	}}</style>
     <style>{
 	
 		#deco: {
@@ -34,6 +43,7 @@
 			}}
 		]
 	} </style>
+    <box id="page_details" embed="pagedescription" />
 	<box id="deco" embed="article" class="column_full positionx_full" module="FULL-SIZE_module.xml" />
 	
 </jpml>

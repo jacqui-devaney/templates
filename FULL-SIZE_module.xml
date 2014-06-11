@@ -22,7 +22,8 @@
 				background-color:"rgba(0, 0, 0, .6)",
 				padding:[20, 14],
 				width:372,
-				left:68
+				left:68,
+				display: {if: =options.show_caption_container, then: inherit, else: none}
 			},
 			.module_headline: {
 				padding:[0, 0, 4, 0]

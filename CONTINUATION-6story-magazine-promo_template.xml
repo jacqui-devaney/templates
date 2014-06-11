@@ -38,7 +38,7 @@
 					}
 				}, 
 	            #b3 : { 
-					height:200,
+					height:190,
 					top:420,
 					options: {
 						top_border: true,
@@ -48,7 +48,7 @@
 					}
 				},   
 				#b4 : { 
-					height:200,
+					height:190,
 					top:420,
 					options: {
 						top_border: true,
@@ -58,7 +58,7 @@
 					}
 				},
 				#b5 : { 
-					height:200,
+					height:190,
 					top:620,
 					options: {
 						top_border: true,
@@ -68,7 +68,7 @@
 					}
 				},  
 				#b6 : { 
-					height:200,
+					height:190,
 					top:620,
 					options: {
 						top_border: true,
@@ -80,7 +80,7 @@
 	        }},
 			{if: =landscape, then: {
 	            #b1 : { 
-					height:280,
+					height:260,
 					top:0,
 					options: {
 						large_headline: true,
@@ -89,8 +89,8 @@
 					}
 				},      
 	            #b2 : { 
-					height:280,
-					top:280,
+					height:270,
+					top:270,
 					options: {
 						large_headline: true,
 						top_border: true,
@@ -99,7 +99,7 @@
 					}
 				}, 
 	            #b3 : { 
-					height:280,
+					height:260,
 					top:0,
 					options: {
 						top_image: true,
@@ -108,7 +108,7 @@
 					}
 				},   
 				#b4 : { 
-					height:280,
+					height:260,
 					top:0,
 					options: {
 						top_image: true,
@@ -117,8 +117,8 @@
 					}
 				},
 				#b5 : { 
-					height:280,
-					top:280,
+					height:270,
+					top:270,
 					options: {
 						top_image: true,
 						top_border: true,
@@ -127,8 +127,8 @@
 					}
 				}, 
 				#b6 : { 
-					height:280,
-					top:280,
+					height:270,
+					top:270,
 					options: {
 						top_image: true,
 						top_border: true,

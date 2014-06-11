@@ -16,14 +16,16 @@
 		padding: [0, 0, 8, 0],
 		font-name: "DJ5Exchange-Semibold",
 		font-size: 26,
-		line-height: 36
+		line-height: 36,
+		color:{if: =article.read, then: #b8b8ba}
 	},
 
 	.body: {
 		text-indent:0,
 		font-size:16,
 		line-height:24,
-		text-scale: {$multiply: [=scale.text, 1] }
+		text-scale: {$multiply: [=scale.text, 1] },
+		color:{if: =article.read, then: #b8b8ba}
 
 	},
 	.ahed_headline:{
@@ -61,7 +63,8 @@
 		font-name: "DJ5Exchange-Semibold",
 		font-size: 18,
 		text-scale: {$multiply: [=scale.text, 1] },
-		line-height: 25
+		line-height: 25,
+		color:{if: =article.read, then: #b8b8ba}
 	},
 	#strap: {
 		display: { if:=options.show_strap, then:default, else:none },

@@ -1,0 +1,114 @@
+<jpml id="OPINION-7story_template">
+	<style src="GLOBAL-stylesheet.ejs" />
+	<style src="GRID-stylesheet.ejs"/>
+	<style src="ADVERTISING-stylesheet.ejs"/>
+	<style src="PHONE-stylesheet.ejs"/>
+	<style>{
+		#b1: {
+			options:{rando_header:true, top_border:{if: =portrait, then:true}}
+		},
+		#b2: {
+			options:{top_border:true}
+		},
+		#b3: {
+			options:{top_border:true}
+		},
+		
+		#b4: {options: {show_byline:true, show_flashline:true}},
+		#b5: {options: {medium_headline:true, show_byline:true, show_flashline:true, top_border:{if: =landscape, then:true}}},			
+		#b6: {options: {medium_headline:true, show_byline:true, show_flashline:true, top_border:true}},			
+		#b7: {options: {medium_headline:true, show_byline:true, show_flashline:true, top_border:true}},			
+		#b8: {options: {medium_headline:true, show_byline:true, show_flashline:true, top_border:true}}			
+	
+	}</style>
+    <style>{ 
+		$switch:[
+			{if: =scale.phone, then: {
+                #front_page :{
+                    display:none
+                }
+
+			}},
+			{if: =portrait, then: {
+				#b1: {
+					top:383,
+					height:158
+				},
+				#b2: {
+					top:545,
+					height:119
+				},
+				#b3: {
+					top:668,
+					height:119
+				},
+				#b4: {
+					top:0,
+					height:363
+				},
+				#b5: {
+					top:0,
+					height:188
+				},
+				#b6: {
+					top:188,
+					height:198
+				},
+				#b7: {
+					top:386,
+					height:198
+				},
+				#b8: {
+					top:584,
+					height:212
+				}
+			}}, 
+			{if: =landscape, then: {
+				#b1: {
+					top:0,
+					height:144
+				},
+				#b2: {
+					top:147,
+					height:119
+				},
+				#b3: {
+					top:268,
+					height:119
+				},
+				#b4: {
+					top:0,
+					height:363
+				},
+				#b5: {
+					top:392,
+					height:176
+				},
+				#b6: {
+					top:392,
+					height:176
+				},
+				#b7: {
+					top:392,
+					height:176
+				},
+				#b8: {
+					top:392,
+					height:176
+				}
+				
+			}}
+		]
+    }</style>
+    
+    <box id="b1" embed="article" class="column8 positionx1 maude unit_100" module="OPINION-RANDO-LETTERS_module.xml" />
+    <box id="b2" embed="article" class="column8 positionx1 maude unit_100" module="OPINION-RANDO-LETTERS_module.xml" />
+    <box id="b3" embed="article" class="column8 positionx1 maude unit_100" module="OPINION-RANDO-LETTERS_module.xml" />
+	<box id="front_page" class="positionx_full column_full maude unit_ad">
+		<box id="banner_ad" class="ad-banner front_ad" embed="advertisement" />
+	</box>
+
+    
+
+    
+</jpml>

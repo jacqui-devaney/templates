@@ -14,8 +14,8 @@
 				width:=view.width,
 				height: {$subtract:[=view.height, 1]},
 				image-scale: 1,
-				gravity:aspect-fill
-
+				gravity:aspect-fill,
+				options: { match: { prefer: aspect-ratio } }
 			},
 			#deco_caption_container: {
 				top:128,

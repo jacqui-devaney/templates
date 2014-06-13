@@ -62,7 +62,7 @@
 			content: { if-all: [=issue.locked, =article.paid], then: "K\u00a0"}
 		},
 		#body-first-p: {
-			text-indent:{if: =options.indent, then:20, else:0}
+			text-indent: {if: =options.indent, then: =text.indent, else: inherit}
 		},
 		.red: { background-color: red},
 		.green: { background-color: green},

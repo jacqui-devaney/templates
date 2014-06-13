@@ -81,7 +81,7 @@
 
 				},
 				#body-first-p: {
-					text-indent: {if: =options.indent, then:20, else:inherit}
+					text-indent: {if: =options.indent, then: =text.indent, else:inherit}
 				}
 			}
 		]

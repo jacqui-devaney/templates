@@ -58,7 +58,7 @@
 					display: {if-all:[{if: =options.show_subhed}, {if: =scale.tablet}], then:inherit, else:none}
 				},
 				#body-first-p: {
-					text-indent: {if: =options.indent, then:20, else:inherit}
+					text-indent: {if: =options.indent, then: =text.indent, else:inherit}
 				},
 				.module_headline:{
 					display:{if: =article.type, equals:"A-hed", then: none, else:inherit}

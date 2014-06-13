@@ -105,7 +105,7 @@
 
 				},
 				#body-first-p: {
-					text-indent: {if: =options.indent, then:20, else:inherit}
+					text-indent: {if: =options.indent, then: =text.indent, else:inherit}
 				},
 				#top_flashline: {
 					display: {if: =options.show_top_flashline, then:inherit, else:none}

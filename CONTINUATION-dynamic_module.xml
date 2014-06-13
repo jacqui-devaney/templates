@@ -48,7 +48,11 @@
 			height: 111
 		},
 		.key: {
-			display: { if: =options.show_body, then: none }
+			display: { 
+				if-all: [=issue.locked, =article.paid], 
+				then: { if: =options.show_body, then: none, else: default }, 
+				else: none 
+			}
 		},
 		.body: {
 			display: { if: =options.show_body, else: none }

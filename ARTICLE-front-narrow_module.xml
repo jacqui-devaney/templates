@@ -76,7 +76,7 @@
     }</style>
 	<panel id="body_container">
 		<box id="media" embed="media" />
-		<p class="article_headline"><span embed="headline"/><mark class="key"/></p>
+		<p class="article_headline"><span embed="headline"/></p>
 		<h2 class="article_subhed" embed="subhed" />
         <p class="module_flashline" embed="flashline"/>
     		<p class="byline" embed="byline"/>

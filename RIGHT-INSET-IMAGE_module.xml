@@ -108,7 +108,7 @@
 			}, else:{}
 		}</style>
 		<panel id="headline">
-			<p class="module_headline"><mark class="m_headline" /><mark class="key" /></p>
+			<p class="module_headline"><mark class="m_headline" /></p>
 		</panel>
     	<panel>
             <box id="image_wrapper" class="hidden_phone">

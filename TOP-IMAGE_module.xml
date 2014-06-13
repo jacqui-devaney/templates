@@ -96,13 +96,6 @@
 			.byline: {
 				display: none
 			},
-			.key: {
-				display: none
-			},
-			#body-key: {
-				display: inherit,
-				content: { if-all: [=issue.locked, =article.paid], then: "K\u00a0"}
-			},
 			#body: {
 				padding: [0, 8, 0, 8]
 			},
@@ -114,9 +107,6 @@
 			}
 
 		}, else: {
-			#body-key: {
-				display: none
-			},
 			#summary: {
 				display: none
 			}
@@ -127,12 +117,12 @@
 	</box>
 	<panel id="vertical">
 		<panel id="headline">
-			<p class="module_headline"><mark class="m_headline" /><mark class="key" /></p>
+			<p class="module_headline"><mark class="m_headline" /></p>
 		</panel>
 		<panel id="body">
 			<p class="module_flashline"><span embed="flashline" /></p>
 			<p class="byline" embed="byline"/>
-			<p id="summary" class="body"><mark id="body-key" class="key" /><mark class="module_summary" /></p>
+			<p id="summary" class="body"><mark class="key" /><mark class="module_summary" /></p>
 			<panel class="body" embed="body"/>
 		</panel>
 	</panel>

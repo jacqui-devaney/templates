@@ -57,7 +57,7 @@
 		<panel id="text">
 			<p class="flashline"><mark class="m_headline" /></p>
 			<panel id="headline">
-				<p class="hed"><span embed="summary" /><!-- <mark class="key" /> --></p>
+				<p class="hed"><mark class="key" /><span embed="summary" /></p>
 			</panel>
 		</panel>
 	</box>

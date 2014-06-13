@@ -25,7 +25,7 @@
 	        		left: 0,
 	        		top: 0,
 	        		right: 0,
-	        		bottom: 0	        		
+	        		bottom: 0
 	        	},
 	        	#header: {
 	        		border-width: [1, 0, 5, 0],
@@ -49,30 +49,30 @@
 	        		right: 0,
 	        		height: 160
 	        	},
-	            #b1 : { 
+	            #b1 : {
 					height:320,
 					top:0
 				},
-	            #b2 : { 
+	            #b2 : {
 					height:320,
 					top:0
-				},        
-	            #b3 : { 
+				},
+	            #b3 : {
 					height:320,
 					top:320
-				}, 
-				#b4 : { 
+				},
+				#b4 : {
 					height:320,
 					top:320
-				},        
-				#b5 : { 
+				},
+				#b5 : {
 					height:35,
 					top:665,
 					options: {
 						background_color: #404040
 					}
 				},
-				#b6 : { 
+				#b6 : {
 					height:100,
 					top:700,
 					options: {
@@ -81,7 +81,7 @@
 						right_image: true
 					}
 				},
-				#b7 : { 
+				#b7 : {
 					height:100,
 					top:700,
 					options: {
@@ -97,7 +97,7 @@
 	        		left: 0,
 	        		top: 0,
 	        		right: 0,
-	        		bottom: 0	        		
+	        		bottom: 0
 	        	},
 	        	#header: {
 	        		border-width: [0, 0, 5, 0],
@@ -116,23 +116,23 @@
 	        		width: 258,
 	        		height: 585
 	        	},
-	            #b1 : { 
+	            #b1 : {
 					height:280,
 					top:0
 				},
-	            #b2 : { 
+	            #b2 : {
 					height:280,
 					top:0
-				},        
-	            #b3 : { 
+				},
+	            #b3 : {
 					height:280,
 					top:280
-				}, 
-				#b4 : { 
+				},
+				#b4 : {
 					height:280,
 					top:280
-				},        
-				#b5 : { 
+				},
+				#b5 : {
 	        		width: 258,
 					height: 65,
 					top: 0,
@@ -140,7 +140,7 @@
 						background_color: #404040
 					}
 				},
-				#b6 : { 
+				#b6 : {
 	        		width: 258,
 					height:220,
 					top:80,
@@ -149,7 +149,7 @@
 						hed_color: #fff
 					}
 				},
-				#b7 : { 
+				#b7 : {
 	        		width: 258,
 					height:220,
 					top:320,
@@ -164,7 +164,7 @@
     <box id="page_details" embed="pagedescription" />
     <box id="tomorrow" />
     <box id="header"><box id="header_inner"/></box>
-    <box id="b1" embed="article" class="column6 positionx1" module="PROMO-IMAGE_module.xml" />    
+    <box id="b1" embed="article" class="column6 positionx1" module="PROMO-IMAGE_module.xml" />
     <box id="b2" embed="article" class="column6 positionx7" module="PROMO-IMAGE_module.xml" />
     <box id="b3" embed="article" class="column6 positionx1" module="PROMO-IMAGE_module.xml" />
     <box id="b4" embed="article" class="column6 positionx7" module="PROMO-IMAGE_module.xml" />

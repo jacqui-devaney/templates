@@ -14,7 +14,7 @@
 				},
 				text-scale: {if: =scale.small, then: {$multiply: [=scale.text, 0.9] }, else: inherit},
 				color:{if: =options.white_text, then:#fff, else:#000}
-			
+
 			},
 			{
 				$switch:[
@@ -46,29 +46,29 @@
 							font-name: DJ5EscrowCond-Semibold,
 							font-size:{if-all: [
 						        =scale.headlines,
-						        {if: =extents.medium, more-than: 1.0, then: true, else: false}, 
+						        {if: =extents.medium, more-than: 1.0, then: true, else: false},
 						        {if: =extents.medium, less-than: 1.5, then: true, else: false}
 						    ], then: 19, else: 24 },
 							padding:[0, 0, 9, 0],
 							line-height:{ $switch: [
 									{if: =issue.edition, equals: "japan", then: {if-all: [
 									    =scale.headlines,
-									    {if: =extents.medium, more-than: 1.0, then: true, else: false}, 
+									    {if: =extents.medium, more-than: 1.0, then: true, else: false},
 									    {if: =extents.medium, less-than: 1.5, then: true, else: false}
 									], then: 30, else: 26 }
 									},
 									{if: =issue.edition, equals: "korea", then: {if-all: [
 									    =scale.headlines,
-									    {if: =extents.medium, more-than: 1.0, then: true, else: false}, 
+									    {if: =extents.medium, more-than: 1.0, then: true, else: false},
 									    {if: =extents.medium, less-than: 1.5, then: true, else: false}
 									], then: 30, else: 26 }},
 									{if-all: [
 									    =scale.headlines,
-									    {if: =extents.medium, more-than: 1.0, then: true, else: false}, 
+									    {if: =extents.medium, more-than: 1.0, then: true, else: false},
 									    {if: =extents.medium, less-than: 1.5, then: true, else: false}
 									], then: 26, else: 26 },
 									"26"
-									
+
 								]
 							}
 						}
@@ -76,13 +76,13 @@
 					{if: =options.large_headline, then: {
 							font-size:{if-all: [
 						        =scale.headlines,
-						        {if: =extents.large, more-than: 1.0, then: true, else: false}, 
+						        {if: =extents.large, more-than: 1.0, then: true, else: false},
 						        {if: =extents.large, less-than: 1.5, then: true, else: false}
 						    ], then: 32, else: 36 },
 							padding:[0, 0, 5, 0],
 							line-height: {if-all: [
 							    =scale.headlines,
-							    {if: =extents.large, more-than: 1.0, then: true, else: false}, 
+							    {if: =extents.large, more-than: 1.0, then: true, else: false},
 							    {if: =extents.large, less-than: 1.5, then: true, else: false}
 							], then: 34, else: 39 }
 						}
@@ -90,13 +90,13 @@
 					{if: =options.very_large_caps_headline, then: {
 							font-size:{if-all: [
 						        =scale.headlines,
-						        {if: =extents.large, more-than: 1.0, then: true, else: false}, 
+						        {if: =extents.large, more-than: 1.0, then: true, else: false},
 						        {if: =extents.large, less-than: 1.5, then: true, else: false}
 						    ], then: 32, else: 56 },
 							padding:[0, 0, 20, 0],
 							line-height: {if-all: [
 							    =scale.headlines,
-							    {if: =extents.large, more-than: 1.0, then: true, else: false}, 
+							    {if: =extents.large, more-than: 1.0, then: true, else: false},
 							    {if: =extents.large, less-than: 1.5, then: true, else: false}
 							], then: 34, else: 60 },
 							text-transform:uppercase,
@@ -115,9 +115,9 @@
 							}
 						}
 					}
-					
+
 				]
-				
+
 			}
 		]
 	},
@@ -128,7 +128,7 @@
 				"DJ5Exchange-Medium"
 			]
 		},
-		text-indent:0,
+		text-indent:20,
 		font-size:{$multiply:{if: =options.large_body, then:20, else:14}},
 		line-height:{$multiply:{if: =options.large_body, then:26, else:20}},
 		text-overflow: =text.overflow,
@@ -136,7 +136,7 @@
 		text-scale: {if: =widescreen, then: {$multiply: [=scale.text, 1.2] }, else: inherit},
 		hyphens:auto,
 		color:{if: =options.white_text, then:#fff, else:#222221}
-		
+
 
 	},
 	.escrow_body: {
@@ -146,7 +146,7 @@
 		line-height:26,
         text-align: { if: =options.justify, then:=justify, else:left},
 		color:{if: =options.white_text, then:#fff, else:#222221}
-		
+
 
 	},
 	.deco_caption: {
@@ -154,7 +154,7 @@
 		font-size:14,
 		line-height:20,
 		color:#fff
-		
+
 	},
 	.deco_headline:{
 		font-name: DJ5EscrowCond-Semibold,
@@ -221,4 +221,3 @@
 		display: none
 	}
 }
-

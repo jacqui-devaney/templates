@@ -41,7 +41,7 @@
 						padding: [0, 0, 0, 0]
 					}
 				}}
-				
+
 			]},
 			{
 				#deco_container: {
@@ -71,10 +71,10 @@
 								248
 							]}
 						}}
-						
+
 					]
 				},
-			
+
 				image: {
 					pixels-per-point-x:1,
 					pixels-per-point-y:1,
@@ -98,21 +98,21 @@
 
 				.byline: {
 					display: {if: =options.show_byline, then:inherit, else:none}
-			
+
 				},
 				.body: {
 					display: {if: =options.show_body, then:inherit, else:none}
-			
+
 				},
 				#body-first-p: {
-					text-indent: {if: =options.indent, then:20, else:0}
+					text-indent: {if: =options.indent, then:20, else:inherit}
 				},
 				#top_flashline: {
 					display: {if: =options.show_top_flashline, then:inherit, else:none}
 				}
 			}
 		]
-		
+
 		}</style>
 		<style>{
 			if: =scale.phone, then:{
@@ -128,7 +128,7 @@
 					display:none
 				},
 				#headline: {
-					vertical-align:middle				
+					vertical-align:middle
 				}
 			}, else:{}
 		}</style>
@@ -159,5 +159,5 @@
             <p class="byline" embed="byline"/>
             <panel class="body" embed="body"/>
         </panel>
-        
+
 </jpml>

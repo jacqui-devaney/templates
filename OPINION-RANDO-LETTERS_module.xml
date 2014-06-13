@@ -12,7 +12,7 @@
 						padding: [12, 10, 0, 0],
 						border-color: #d8d8d8
 					}
-			
+
 				}},
 				{ if: =options.left_border, then: {
 					jpml: {
@@ -20,7 +20,7 @@
 						border-color: #d8d8d8,
 						padding: [0, 0, 0, 10]
 					}
-			
+
 				}},
 				{ if: =options.right_border, then: {
 					jpml: {
@@ -28,7 +28,7 @@
 						border-color: #d8d8d8,
 						padding: [0, 10, 0, 0]
 					}
-			
+
 				}},
 				{ if: true, then: {
 					jpml: {
@@ -37,12 +37,12 @@
 					}
 				}}
 			]},
-		
+
 			{#rando_header: {
 				display: {if: =options.rando_header, then:inherit, else:none}
 			}}
 		]
-		
+
 	}</style>
 	<style>{
 		if: =scale.phone, then: {
@@ -57,7 +57,7 @@
 			#vertical: {
 				vertical-align:middle
 			}
-			
+
 		}, else:{}
 	}</style>
 	<panel id="rando_header">
@@ -69,6 +69,6 @@
 		<p class="opinion_headline"><mark class="m_headline" /><mark class="key" /></p>
 		<h2 class="opinion_dek" embed="subhed" ></h2>
 		<panel class="body" embed="body"/>
-		
+
 	</panel>
 </jpml>

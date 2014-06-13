@@ -3,8 +3,8 @@
 	.key: {
 		font-name: {if: =device.platform, equals: Android, then: DJ5Utility, else: DJ5Utility-Regular },
 		font-size:16,
-		content: { if-all: [=issue.locked, =article.paid], then: "\u00a0K"},
-		display: { if:=article.paid, then:default, else:none },
+		content: "\u00a0K",
+		display: { if-all: [=issue.locked, =article.paid], then: default, else: none },
 		color:#948464
 	},
 	.module_summary: {

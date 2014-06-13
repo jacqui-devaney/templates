@@ -180,18 +180,23 @@
 	},
 	.key: {
 		font-name: {if: =device.platform, equals: Android, then: DJ5Utility, else: DJ5Utility-Regular },
-		font-size:16,
-		content: { if-all: [=issue.locked, =article.paid], then: "\u00a0K"},
-		display: { if:=article.paid, then:default, else:none },
-		padding: [0, 0, 0, 2],
-		color:#948464
+		font-size: 16,
+		content: "\u00a0K",
+		display: { if-all: [=issue.locked, =article.paid], then: default, else: none },
+		color: #948464
+	},	
+	.body-first-p-mark: {
+		font-name: {if: =device.platform, equals: Android, then: DJ5Utility, else: DJ5Utility-Regular },
+		font-size: 16,
+		content: "K\u00a0",
+		display: { if-all: [=issue.locked, =article.paid], then: default, else: none },
+		color: #948464
 	},
 	.byline: {
 		font-name:DJ5Exchange-Medium,
 		font-size:14,
 		line-height:20,
 		color:#9b9b9b
-
 	},
 	.hidden_tablet: {
 		display: none

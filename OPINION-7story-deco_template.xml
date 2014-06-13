@@ -5,13 +5,13 @@
 	<style src="PHONE-stylesheet.ejs"/>
 	<style>{
 		#b1: {
-			options:{indent:true, rando_header:true, top_border:{if: =portrait, then:true}}
+			options:{rando_header:true, top_border:{if: =portrait, then:true}}
 		},
 		#b2: {
-			options:{indent:true, top_border:true}
+			options:{top_border:true}
 		},
 		#b3: {
-			options:{indent:true, top_border:true}
+			options:{top_border:true}
 		},
 
 

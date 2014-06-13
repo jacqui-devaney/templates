@@ -185,6 +185,9 @@
 		display: { if-all: [=issue.locked, =article.paid], then: default, else: none },
 		color: #948464
 	},	
+	#body-first-p: {
+		text-indent: {if: =options.indent, then: =text.indent, else: 0}
+	},
 	.body-first-p-mark: {
 		font-name: {if: =device.platform, equals: Android, then: DJ5Utility, else: DJ5Utility-Regular },
 		font-size: 16,

@@ -17,7 +17,8 @@
 	<style>{
 		#view: {
 			options: {
-				background_color: {if: =page.section, equals: "LATEST_NEWS", then: #ffeded}
+				background_color: {if: =page.section, equals: "LATEST_NEWS", then: #ffeded},
+				indent: true
 			}
 		},
 		jpml: {

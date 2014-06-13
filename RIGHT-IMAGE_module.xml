@@ -78,10 +78,6 @@
 				},
 				.body: {
 					display: {if: =options.show_body, then:inherit, else:none}
-
-				},
-				#body-first-p: {
-					text-indent: {if: =options.indent, then: =text.indent, else:inherit}
 				}
 			}
 		]

@@ -4,109 +4,114 @@
 	<style src="ADVERTISING-stylesheet.ejs"/>
     <style src="PHONE-stylesheet.ejs"/>
     <style>{
-	
+
 		#b1: {
 			options:{$switch:[
 				{if: =scale.phone, then: {medium_headline:true, show_image:true}},
 				{if: =portrait, then: {large_headline:true, show_image:true}},
 				{if: =landscape, then: {large_headline:true, show_image:true}}
-			]	
+			]
 		}},
 		#b2: {
 			options:{$switch:[
 				{if: =portrait, then: {medium_headline:true, show_body:true, top_border:true}},
-				{if: =landscape, then: {medium_headline:true, show_body:true}}
-			]	
+				{if: =landscape, then: {medium_headline:true, bottom_border:true, show_body:true}}
+			]
 		}},
 		#b3: {
 			options:{$switch:[
 				{if: =scale.phone, then: {medium_headline:true}},
 				{if: =portrait, then: {medium_headline:true}},
-				{if: =landscape, then: {medium_headline:true, top_border:true}}
-			]	
+				{if: =landscape, then: {medium_headline:true, top_border:false}}
+			]
 		}},
 		#b4: {
 			options:{$switch:[
 				{if: =scale.phone, then: {medium_headline:true}},
 				{if: =portrait, then: {medium_headline:true, top_border:true}},
 				{if: =landscape, then: {medium_headline:true, top_border:true}}
-			]	
+			]
 		}},
 		#b5: {
 			options:{$switch:[
 				{if: =scale.phone, then: {medium_headline:true}},
 				{if: =portrait, then: {medium_headline:true, top_border:true, show_flashline:true}},
-				{if: =landscape, then: {medium_headline:true, top_border:true, show_flashline:true}}
-			]	
+				{if: =landscape, then: {medium_headline:true, top_border:false, show_flashline:true}}
+			]
 		}},
 		#b6: {
 			options:{$switch:[
 				{if: =scale.phone, then: {medium_headline:true}},
 				{if: =portrait, then: {medium_headline:true, top_border:true, show_flashline:true}},
 				{if: =landscape, then: {medium_headline:true, top_border:true, show_flashline:true}}
-			]	
-		}}
-		
+			]
+		}},
+		#filler_line: {
+			options: {
+				top_border:true
+			}
+		}
+
 	}</style>
 	<style> {
 		$switch: [
 			{if: =scale.phone, then: {
-            
+
 			}},
 			{if: =portrait, then: {
-				#b1:	{ 
+				#b1:	{
 						top:0,
 						height:582
 				},
-				#b2:	{ 
+				#b2:	{
 					top:586,
-					height:219
+					height:219,
+					background-color:blue
 				},
-				#b3:	{ 
+				#b3:	{
 						top:0,
 						height:188
 				},
-				#b4:	{ 
+				#b4:	{
 					top:187,
 					height:196
-					
+
 				},
-				#b5:	{ 
+				#b5:	{
 					top:386,
 					height:196
-					
+
 				},
-				#b6:	{ 
+				#b6:	{
 					top:586,
 					height:219
-					
+
 				}
-				
-				
-			
-			}}, 
+
+
+			}},
 			{if: =landscape, then: {
-				#b1:	{ 
+				#b1:	{
 					top:0,
 					height:563
 				},
-				#b2:	{ 
+				#b2:	{
 					top:0,
 					height:165
 				},
-				#b3:	{ 
-					top:165,
+				#b3:	{
+					top:175,
 					height:175
 				},
-				#b4:	{ 
+				#b4:	{
 					top:345,
 					height:220
 				},
-				#b5:	{ 
-					top:165,
+				#b5:	{
+					top:175,
 					height:175
 				},
-				#b6:	{ 
+				#b6:	{
 					top:345,
 					height:220
 				}
@@ -114,8 +119,10 @@
 			}}
 		]
 	} </style>
+
 	<box id="b1" embed="article" class="column8 positionx1 maude unit_255" module="TOP-IMAGE_module.xml" />
 	<box id="b2" embed="article" class="column8 positionx9-1 maude unit_50" module="RIGHT-IMAGE_module.xml" />
+
 	<box id="b3" embed="article" class="column4 positionx9 maude unit_50" module="TOP-IMAGE_module.xml" />
 	<box id="b4" embed="article" class="column4 positionx9 maude unit_50" module="TOP-IMAGE_module.xml" />
 	<box id="b5" embed="article" class="column4 positionx13-9 maude unit_50" module="TOP-IMAGE_module.xml" />
@@ -123,6 +130,5 @@
 	<box id="front_page" class="positionx_full column_full maude unit_ad">
 		<box id="banner_ad" class="ad-banner front_ad" embed="advertisement" />
 	</box>
-	
-</jpml>
 
+</jpml>

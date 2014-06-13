@@ -13,15 +13,16 @@
 		#b3: {
 			options:{top_border:true}
 		},
-		
+
+
 		#deco: {options: {show_byline:true, show_flashline:true}},
-		#b4: {options: {medium_headline:true, show_byline:true, show_flashline:true, top_border:{if: =landscape, then:true}}},			
-		#b5: {options: {medium_headline:true, show_byline:true, show_flashline:true, top_border:true}},			
-		#b6: {options: {medium_headline:true, show_byline:true, show_flashline:true, top_border:true}},			
-		#b7: {options: {medium_headline:true, show_byline:true, show_flashline:true, top_border:true}}			
-	
+		#b4: {options: {medium_headline:true, show_byline:true, show_flashline:true, top_border:{if: =landscape, then:true}}},
+		#b5: {options: {medium_headline:true, show_byline:true, show_flashline:true, top_border:true}},
+		#b6: {options: {medium_headline:true, show_byline:true, show_flashline:true, top_border:true}},
+		#b7: {options: {medium_headline:true, show_byline:true, show_flashline:true, top_border:true}}
+
 	}</style>
-    <style>{ 
+    <style>{
 		$switch:[
 			{if: =scale.phone, then: {
                 #front_page :{
@@ -62,7 +63,7 @@
 					top:584,
 					height:212
 				}
-			}}, 
+			}},
 			{if: =landscape, then: {
 				#b1: {
 					top:0,
@@ -96,11 +97,11 @@
 					top:392,
 					height:176
 				}
-				
+
 			}}
 		]
     }</style>
-    
+
     <box id="b1" embed="article" class="column8 positionx1 maude unit_100" module="OPINION-RANDO-LETTERS_module.xml" />
     <box id="b2" embed="article" class="column8 positionx1 maude unit_100" module="OPINION-RANDO-LETTERS_module.xml" />
     <box id="b3" embed="article" class="column8 positionx1 maude unit_100" module="OPINION-RANDO-LETTERS_module.xml" />
@@ -113,7 +114,7 @@
 		<box id="banner_ad" class="ad-banner front_ad" embed="advertisement" />
 	</box>
 
-    
 
-    
+
+
 </jpml>

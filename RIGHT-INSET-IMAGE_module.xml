@@ -80,7 +80,7 @@
 
 				},
 				#body-first-p: {
-					text-indent: {if: =options.indent, then:20, else:0}
+					text-indent: {if: =options.indent, then:20, else:inherit}
 				},
 				.module_flashline: {
 					display: {if: =options.show_flashline, then:inherit, else:none}

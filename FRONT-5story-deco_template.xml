@@ -1,10 +1,10 @@
 <jpml id="FRONT-5story-deco_template">
 	<style src="GLOBAL-stylesheet.ejs" />
-    <style src="GRID-stylesheet.ejs"/>
-    <style src="ADVERTISING-stylesheet.ejs"/>
-    <style src="FRONT-stylesheet.ejs"/>
-    <style src="PHONE-stylesheet.ejs"/>
-    <style>{
+	<style src="GRID-stylesheet.ejs"/>
+	<style src="ADVERTISING-stylesheet.ejs"/>
+	<style src="FRONT-stylesheet.ejs"/>
+	<style src="PHONE-stylesheet.ejs"/>
+	<style>{
 		#b1: {
 			options:{$switch:[
 				{if: =scale.phone, then: {large_headline:true, top_align:true, show_body:true, show_image:true}},
@@ -33,8 +33,8 @@
 		#b5: {
 			options:{$switch:[
 				{if: =scale.phone, then: {no_border:true}},
-				{if: =portrait, then: {medium_headline:true, bottom_align:true, show_byline:true, top_border:true}},
-				{if: =landscape, then: {medium_headline:true, top_border:true, show_byline:true}}
+				{if: =portrait, then: {medium_headline:true, bottom_align:true, show_byline:false, top_border:true}},
+				{if: =landscape, then: {medium_headline:true, top_border:true, show_byline:false}}
 			]
 		}},
 		#deco: {

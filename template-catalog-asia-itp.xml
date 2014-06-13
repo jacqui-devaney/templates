@@ -1,1272 +1,157 @@
+
 <catalog  preprocessor="preprocessor.ejs">
 	<templates>
 		<!-- FRONT SECTION -->
-		<template 
-			name="FRONT-3story-F-deco_v2_template.xml" 
-			title="3 story - F liondoor - Banner" 
-			section="FRONT_SECTION" 
-			min="4" 
-			deco="true" 
-			usage="front" 
-		/>
-		<template 
-			section="FRONT_SECTION" 
-			name="FRONT-3story-F-deco-top_v2_template.xml" 
-			title="3 story - Top F liondoor - Banner"
-			min="4" 
-			deco="true" 
-			usage="front" 
-		/>
-		<template 
-			name="FRONT-4story-Vertical-deco_v2_template.xml" 
-			title="4 story - vertical liondoor - Banner" 
-			section="FRONT_SECTION" 
-			min="4" 
-			deco="true" 
-			usage="front" 
-		/>
-		<template 
-			name="FRONT-4story-E-deco_v2_template.xml" 
-			title="4 story - E liondoor - Banner" 
-			section="FRONT_SECTION" 
-			min="4" 
-			deco="true" 
-			usage="front" 
-		/>
-		<template 
-			name="FRONT-4story-E-top_v2_template.xml" 
-			title="4 story - top story E photo - Banner" 
-			section="FRONT_SECTION" 
-			min="4" 
-			usage="front" 
-		/>
-		<template 
-			name="FRONT-4story-E_v2_template.xml" 
-			title="4 story - middle story E photo - Banner" 
-			section="FRONT_SECTION" 
-			min="4" 
-			usage="front" 
-		/>
-		<template 
-			name="FRONT-3story-F_v2_template.xml" 
-			title="4 story - top story F photo - Banner" 
-			section="FRONT_SECTION" 
-			min="4" 
-			usage="front" 
-		/>
-		<template 
-			name="FRONT-3story-G-deco_v2_template.xml" 
-			title="3 story - G liondoor - Banner" 
-			section="FRONT_SECTION" 
-			min="3" 
-			deco="true" 
-			usage="front" 
-		/>
-		<template 
-			section="FRONT_SECTION" 
-			name="FRONT-2story-G-deco_v2_template.xml" 
-			title="2 story - G liondoor - Banner"
-			min="2" 
-			deco="true" 
-			usage="front" 
-		/>
-		<template 
-			name="FRONT-3story-big-news_v2_template.xml" 
-			title="3 story - HUGE news - Banner" 
-			section="FRONT_SECTION" 
-			min="4" 
-			usage="front" 
-		/>
-		<template 
-			name="FRONT-3story-big-news-small_v2_template.xml" 
-			title="Top story - HUGE news small headline - Banner" 
-			section="FRONT_SECTION" 
-			min="3" 
-			usage="front" 
-		/>
-		<template 
-			name="FRONT-2story-largeG-deco_v2_template.xml"
-			section="FRONT_SECTION" 
-			title="2 story Large G liondoor - banner"
-			min="2" 
+		<template
+			section="FRONT_SECTION"
+			name="FRONT-5story-deco_template.xml"
+			title="Default: 5 story G Liondoor"
+			min="5"
 			deco="true"
 			usage="front"
 		/>
-		
+
+		<template
+			section="FRONT_SECTION"
+			name="CONTINUATION-7story-deco-promo_template.xml"
+			title="6 story plus 1 deco label - In Todays WSJ"
+			min="7"
+			deco="true"
+			usage="continuation"
+		/>
+
+		<template
+			section="FRONT_SECTION"
+			name="CONTINUATION-6story-deco-promo_template.xml"
+			title="5 story plus 1 deco label - In Todays WSJ"
+			min="6"
+			deco="true"
+			usage="continuation"
+		/>
 		<!-- END FRONT SECTION -->
 
-		<!-- ASIA SECTION -->
-		<template 
-			name="SECTION-2story-G-C_template.xml" 
-			title="2 story - G photo - C photo" 
-			section="ASIA" 
-			min="4" 
-			usage="front" 
-		/>
-		<!-- END ASIA SECTION -->
-		
 		<!-- OPINION -->
-		<template 
-			name="OPINION-2story-E_template.xml" 
-			title="4 story (1RandO-1CMTY-2HLT)" 
-			section="OPINION" 
-			min="4" 
-			usage="front" 
-		/>
-		<template 
-			name="OPINION-5story-E_template.xml" 
-			title="7 story (3RandO-2CMTY-2HLT)" 
-			section="OPINION" 
-			min="7" 
-			usage="front" 
-		/>
-		<template 
-			name="OPINION-4story-E_template.xml" 
-			title="6 story (2RandO-2CMTY-2HLT)" 
-			section="OPINION" 
-			min="6" 
-			usage="front" 
-		/>
-		<template 
-			name="OPINION-4story-1E_template.xml" 
-			title="6 story (3RandO-1CMTY-2HLT)" 
-			section="OPINION" 
-			min="6" 
-			usage="front" 
-		/>
-		<template 
-			name="OPINION-4story-D_template.xml" 
-			title="6 story (2RandO-2CMTY-2HLT) - D photo" 
-			section="OPINION" 
-			min="6" 
-			usage="front" 
-		/>
-		<template 
-			name="OPINION-3story-E_template.xml" 
-			title="5 story (2RandO-1CMTY-2HLT)" 
-			section="OPINION" 
-			min="5" 
-			usage="front" 
-		/>
-		<!-- END OPINION -->
-		
-		<!-- BUSINESS AND FINANCE -->
-		<template 
-			name="SECTION-4story-D-C_template.xml" 
-			title="4 story - Plain" 
-			section="BUSINESS_AND_FINANCE" 
-			min="6" 
-			usage="front" 
-		/>
-		<template 
-			name="SECTION-3story-G_template.xml" 
-			title="3 story - G photo" 
-			section="BUSINESS_AND_FINANCE" 
-			min="5" 
-			usage="front" 
-		/>
-		<!-- END BUSINESS AND FINANCE -->
-		
-		<!-- FRIDAY JOURNAL -->
-		<template 
-			name="SECTION-2story-G-C_template.xml" 
-			title="2 story - G photo" 
-			section="FRIDAY_JOURNAL" 
-			min="4" 
-			usage="front" 
-		/>
-		<template 
-			name="SECTION-3story-G_template.xml" 
-			title="3 story - G photo" 
-			section="FRIDAY_JOURNAL" 
-			min="5" 
-			usage="front" 
-		/>
-		<template 
-			name="SECTION-1story-P_template.xml" 
-			title="P photo" 
-			section="FRIDAY_JOURNAL" 
-			min="3" 
-			usage="front" 
-		/>
-		<!-- END FRIDAY JOURNAL -->
-		
-		<!-- MARKETPLACE -->
-		<template 
-			name="SECTION-4story-D-C_template.xml" 
-			title="4 story - Plain" 
-			section="MARKETPLACE" 
-			min="6" 
-			usage="front" 
-		/>
-		<!-- END MARKETPLACE -->
-		
-		<!-- MONEY AND INVESTING -->
-		<template 
-			name="SECTION-4story-D-C_template.xml" 
-			title="4 story - Plain" 
-			section="MONEY_AND_INVESTING" 
-			min="6" 
-			usage="front" 
-		/>
-		<!-- END MONEY AND INVESTING -->
-		
-		<!-- OFF DUTY -->
-		<template 
-			name="SECTION-1story-PV_template.xml" 
-			section="OFF_DUTY" 
-			title="PV - (Grey highlights)"
-			min="3" 
-			usage="front" 
-		/>
-		<template 
-			name="SECTION-2story-G-C_template.xml" 
-			section="OFF_DUTY" 
-			title="2 story-G"
-			min="4" 
-			usage="front" 
-		/>
-		<template 
-			name="SECTION-3story-G_template.xml" 
-			section="OFF_DUTY" 
-			title="3 story-G"
-			min="5" 
-			usage="front" 
-		/>
-		<template 
-			name="SECTION-1story-P-white_template.xml" 
-			section="OFF_DUTY" 
-			title="P - White Highlights"
-			min="2" 
-			usage="front" 
-		/>
-		
-		<template 
-			name="SECTION-1story-P_template.xml" 
-			section="OFF_DUTY" 
-			title="P-photo"
-			min="3" 
-			usage="front" 
-		/>
-		<template 
-			name="SECTION-1story-PV-white_template.xml" 
-			section="OFF_DUTY" 
-			title="PV- White highlights"
-			min="3" 
-			usage="front" 
-		/>
-		<template 
-			name="SECTION-1story-P-1highlight_template.xml" 
-			section="OFF_DUTY" 
-			title="1 story P - 1 highlight"
-			min="2" 
-			usage="front" 
-		/>
-		<template 
-			name="SECTION-1story-P-1highlight-white_template.xml" 
-			section="OFF_DUTY" 
-			title="1 story P - 1 highlight white"
-			min="2" 
-			usage="front" 
-		/>
-		
-		<template 
-			name="SECTION-1story-PV-1highlight_template.xml" 
-			section="OFF_DUTY" 
-			title="PV - (1 Grey highlight)"
-			min="2" 
-			usage="front" 
-		/>
-		<template 
-			name="SECTION-1story-PV-1highlight-white_template.xml" 
-			section="OFF_DUTY" 
-			title="PV - (1 White highlight)"
-			min="2" 
-			usage="front" 
-		/>
-		<template 
-			name="SECTION-1story-fullsize-deco.xml" 
-			section="OFF_DUTY" 
-			title="Full size Deco"
-			min="1" 
-			deco="true"
-			usage="front" 
-		/>
-		<!-- END OFF DUTY -->
-		
-
-		<!-- PERSONAL JOURNAL -->
-		<template 
-			name="SECTION-2story-G-C_template.xml" 
-			title="2 story - G photo" 
-			section="PERSONAL_JOURNAL" 
-			min="4" 
-			usage="front" 
-		/>
-		<!-- END PERSONAL JOURNAL -->
-
-		<!-- WEEKEND_JOURNAL -->
-		<template 
-			name="SECTION-2story-G-C_template.xml" 
-			title="2 story - G photo" 
-			section="WEEKEND_JOURNAL" 
-			min="4" 
-			usage="front" 
-		/>
-		<!-- WEEKEND_JOURNAL -->
-		
-		<!-- REVIEW -->
-		<template 
-			name="SECTION-3story-G_template.xml" 
-			title="3 story - G photo" 
-			section="REVIEW" 
-			min="5" 
-			usage="front" 
-		/>
-		<template 
-			name="SECTION-2story-G-C_template.xml" 
-			title="2 story - G photo" 
-			section="REVIEW" 
-			min="4" 
-			usage="front" 
-		/>
-		<!-- END REVIEW -->
-		
-		<!-- JOURNAL REPORT -->
-		<template 
-			name="SECTION-1story-PV-white_template.xml" 
-			section="JOURNAL_REPORT" 
-			title="PV - (White highlights)"
-			min="3" 
-			usage="front" 
-		/>
-		<template 
-			name="SECTION-2story-G-C_template.xml" 
-			section="JOURNAL_REPORT" 
-			title="2 story-G-photo"
-			min="4" 
-			usage="front" 
-		/>
-		<template 
-			name="SECTION-3story-G_template.xml" 
-			section="JOURNAL_REPORT" 
-			title="3 story G photo"
-			min="5" 
-			usage="front" 
-		/>
-		<template 
-			name="SECTION-1story-P_template.xml" 
-			section="JOURNAL_REPORT" 
-			title="P-photo"
-			min="3" 
-			usage="front" 
-		/>
-		<template 
-			name="SECTION-1story-P-white_template.xml" 
-			section="JOURNAL_REPORT" 
-			title="P-photo - white highlight"
-			min="3" 
-			usage="front" 
-		/>
-		<template 
-			name="SECTION-1story-PV_template.xml" 
-			section="JOURNAL_REPORT" 
-			title="PV - Grey highlights"
-			min="3" 
-			usage="front" 
-		/>
-		<template 
-			name="SECTION-1story-P-1highlight_template.xml" 
-			section="JOURNAL_REPORT" 
-			title="P 1 highlight"
-			min="2" 
-			usage="front" 
-		/>
-		<template 
-			name="SECTION-1story-P-1highlight-white_template.xml" 
-			section="JOURNAL_REPORT" 
-			title="P 1 highlight white"
-			min="2" 
-			usage="front" 
-		/>
-		<template 
-			name="SECTION-1story-PV-1highlight_template.xml" 
-			section="JOURNAL_REPORT" 
-			title="PV - (1 highlight Grey)"
-			min="2" 
-			usage="front" 
-		/>
-		<template 
-			name="SECTION-1story-PV-1highlight-white_template.xml" 
-			section="JOURNAL_REPORT" 
-			title="PV - (1 highlight white)"
-			min="2" 
-			usage="front" 
-		/>
-		<template 
-			name="SECTION-1story-fullsize-deco.xml" 
-			section="JOURNAL_REPORT" 
-			title="Full size Deco"
-			min="1" 
-			deco="true"
-			usage="front" 
-		/>
-		<!-- END JOURNAL REPORT -->
-
-		<!-- LIFE AND STYLE -->
-		<template 
-			name="SECTION-1story-P_template.xml" 
-			title="P photo" 
-			section="LIFE_AND_STYLE" 
-			min="3" 
-			usage="front" 
-		/>
-		<template 
-			name="SECTION-2story-G-C_template.xml" 
-			title="2 story - G photo" 
-			section="LIFE_AND_STYLE" 
-			min="4" 
-			usage="front" 
-		/>
-		<template 
-			name="SECTION-3story-G_template.xml" 
-			title="5 story - G photo" 
-			section="LIFE_AND_STYLE" 
-			min="5" 
-			usage="front" 
-		/>
-		<template 
-			name="SECTION-1story-PV-white_template.xml" 
-			title="PV (white highlights)" 
-			section="LIFE_AND_STYLE" 
-			min="3" 
-			usage="front" 
-		/>
-		<template 
-			name="SECTION-1story-PV_template.xml" 
-			title="PV (grey highlights)" 
-			section="LIFE_AND_STYLE" 
-			min="3" 
-			usage="front" 
-		/>
-		<template 
-			name="SECTION-1story-P-1highlight_template.xml" 
-			title="P photo - 1 highight" 
-			section="LIFE_AND_STYLE" 
-			min="2" 
-			usage="front" 
-		/>
-		<template 
-			name="SECTION-1story-P-1highlight-white_template.xml" 
-			section="LIFE_AND_STYLE" 
-			title="P 1 highlight - white"
-			min="2" 
-			usage="front" 
-		/>
-		
-		<template 
-			name="SECTION-1story-PV-1highlight_template.xml" 
-			title="PV photo - 1 highight (grey)" 
-			section="LIFE_AND_STYLE" 
-			min="2" 
-			usage="front" 
-		/>
-		<template 
-			name="SECTION-1story-PV-1highlight-white_template.xml" 
-			title="PV photo - 1 highight (white)" 
-			section="LIFE_AND_STYLE" 
-			min="2" 
-			usage="front" 
-		/>
-		<!-- END LIFE AND STYLE -->
-		
-		<!-- SPECIAL REPORT -->
-		<template 
-			name="SECTION-3story-G_template.xml" 
-			section="SPECIAL_REPORT" 
-			title="3 story G photo"
-			min="5" 
-			usage="front" 
-		/>
-		<template 
-			name="SECTION-3story-G-deco-C_template.xml" 
-			section="SPECIAL_REPORT" 
-			deco="true" 
-			title="3 story - G liondoor"
-			min="5" 
-			usage="front" 
-		/>
-		<!-- END SPECIAL REPORT -->
-		
-		<!-- WSJ MAGAZINE -->
-		<template 
-			name="SECTION-1story-PV_template.xml" 
-			section="WSJ_MAGAZINE" 
-			title="PV - (Grey highlights)"
-			min="3" 
-			usage="front" 
-		/>
-		<template 
-			name="SECTION-1story-P_template.xml" 
-			section="WSJ_MAGAZINE" 
-			title="P-photo"
-			min="3" 
-			usage="front" 
-		/>
-		<template 
-			name="SECTION-2story-G-C_template.xml" 
-			section="WSJ_MAGAZINE" 
-			title="2 story - G"
-			min="4" 
-			usage="front" 
-		/>
-		<template 
-			name="SECTION-1story-P-1highlight_template.xml" 
-			section="WSJ_MAGAZINE" 
-			title="P - 1 highlight"
-			min="2" 
-			usage="front" 
-		/>
-		<template 
-			name="SECTION-1story-P-1highlight-white_template.xml" 
-			section="WSJ_MAGAZINE" 
-			title="P 1 highlight - white"
-			min="2" 
-			usage="front" 
-		/>
-		
-		<template 
-			name="SECTION-1story-PV-1highlight_template.xml" 
-			section="WSJ_MAGAZINE" 
-			title="PV - 1 highlight"
-			min="2" 
-			usage="front" 
-		/>
-		<template 
-			name="SECTION-1story-PV-1highlight-white_template.xml" 
-			section="WSJ_MAGAZINE" 
-			title="PV - 1 highlight (White)"
-			min="2" 
-			usage="front" 
+		<template
+			section="OPINION"
+			name="OPINION-7story-deco_template.xml"
+			title="Default: 7 story plus deco (3RandO-4CMTY)"
+			min="8"
+			usage="front"
 		/>
 		<template
-			name="SECTION-1story-PV-white_template.xml" 
-			section="WSJ_MAGAZINE" 
-			title="PV - (White highlights)"
-			min="3" 
-			usage="front" 
+			section="OPINION"
+			name="OPINION-3story_template.xml"
+			title="3 story (3RandO)"
+			min="3"
+			usage="front"
 		/>
-		<template 
-			name="SECTION-1story-fullsize-deco.xml" 
-			section="WSJ_MAGAZINE" 
-			title="Full size Deco"
-			min="1" 
+		<!-- END OPINION -->
+
+		<!-- WSJ MAGAZINE -->
+		<template
+			section="WSJ_MAGAZINE"
+			name="CONTINUATION-6story-magazine-promo_template.xml"
+			title="6 story - WSJ Magazine"
+			min="6"
 			deco="true"
-			usage="front" 
+			usage="continuation"
 		/>
 		<!-- END WSJ MAGAZINE -->
-		
-		
+
+		<!-- SECTIONS -->
+		<template
+			name="SECTION-6story_template.xml"
+			title="6 story - G photo"
+			min="6"
+			usage="front"
+		/>
+		<template
+			name="SECTION-3story_template.xml"
+			title="3 story - Large Photo"
+			min="3"
+			deco="true"
+			usage="front"
+			storyorder="feed"
+		/>
+		<template
+			name="SECTION-1story_template.xml"
+			title="Full size Deco"
+			min="1"
+			deco="true"
+			usage="front"
+			storyorder="feed"
+		/>
+		<!-- END SECTIONS -->
+
+		<!-- SECTION CONTINUATION -->
+		<template
+			name="CONTINUATION-5story-scroll_template.xml"
+			title="5 Stories - Scrollable Rail"
+			min="5"
+			deco="true"
+			usage="continuation"
+			page="2"
+		/>
+		<template
+			name="CONTINUATION-6story-scroll_template.xml"
+			title="6 Stories - Scrollable Rail"
+			min="6"
+			deco="true"
+			usage="continuation"
+			page="2"
+		/>
+		<template
+			name="CONTINUATION-3story-scroll_template.xml"
+			title="3Stories - Scrollable Rail"
+			min="3"
+			deco="true"
+			usage="continuation"
+			page="2"
+		/>
+		<!-- END SECTION CONTINUATION -->
+
 		<!-- GENERIC CONTINUATION -->
-		<template 
-			name="CONTINUATION-generic-12_template.xml" 
-			title=""
-			min="12" 
-			usage="continuation" 
-		/>
-		<template 
-			name="CONTINUATION-generic-11_template.xml" 
-			title=""
-			min="11" 
-			usage="continuation" 
-		/>
-		<template 
-			name="CONTINUATION-generic-10_template.xml" 
-			title=""
-			min="10" 
-			usage="continuation" 
-		/>
-		<template 
-			name="CONTINUATION-generic-9_template.xml" 
-			title=""
-			min="9" 
-			usage="continuation" 
-		/>
-		<template 
-			name="CONTINUATION-generic-8_template.xml" 
-			title=""
-			min="8" 
-			usage="continuation" 
-		/>
-		<template 
-			name="CONTINUATION-generic-7_template.xml" 
-			title=""
-			min="7" 
-			usage="continuation" 
-		/>
-		<template 
-			name="CONTINUATION-generic-6_template.xml" 
-			title=""
-			min="6" 
-			usage="continuation" 
-		/>
-		<template 
-			name="CONTINUATION-generic-5_template.xml" 
-			title=""
-			min="5" 
-			usage="continuation" 
-		/>
-		<template 
-			name="CONTINUATION-generic-4_template.xml" 
-			title=""
-			min="4" 
-			usage="continuation" 
-		/>
-		<template 
-			name="CONTINUATION-generic-3_template.xml" 
-			title=""
-			min="3" 
-			usage="continuation" 
-		/>
-		<template 
-			name="CONTINUATION-generic-2_template.xml" 
-			title=""
-			min="2" 
-			usage="continuation" 
-		/>
-		<template 
-			name="CONTINUATION-generic-1_template.xml" 
-			title=""
-			min="1" 
-			usage="continuation" 
-		/>
+		<template name="CONTINUATION-generic-8_template.xml" title="" min="8" usage="continuation" storyorder="feed"/>
+		<template name="CONTINUATION-generic-4_template.xml" title="" min="4" usage="continuation" storyorder="feed"/>
+		<template name="CONTINUATION-generic-2_template.xml" title="" min="2" usage="continuation" storyorder="feed"/>
+		<template name="CONTINUATION-generic-1_template.xml" title="" min="1" usage="continuation" storyorder="feed"/>
 		<!-- END GENERIC CONTINUATION -->
-		<!-- FANCY CONTINUATION -->
-		<template 
-			name="CONTINUATION-fancy-3story-G_template.xml" 
-			title="3 stories - G"
-			min="3" 
-			usage="continuation" 
-			deco="true" 
-			page="2" 
-		/>		
-		<template 
-			name="CONTINUATION-fancy-3story-G_template.xml" 
-			title="3 stories - G"
-			min="3" 
-			usage="continuation" 
-			deco="true" 
-			page="3" 
-		/>
-		<template 
-			name="CONTINUATION-fancy-3story-G_template.xml" 
-			title="3 stories - G"
-			min="3" 
-			usage="continuation" 
-			deco="true" 
-			page="4" 
-		/>
-		<template 
-			name="CONTINUATION-fancy-4story-G_template.xml" 
-			title="4 stories - G"
-			min="4" 
-			usage="continuation" 
-			deco="true" 
-			page="2" 
-		/>		
-		<template 
-			name="CONTINUATION-fancy-4story-G_template.xml" 
-			title="4 stories - G"
-			min="4" 
-			usage="continuation" 
-			deco="true" 
-			page="3" 
-		/>
-		<template 
-			name="CONTINUATION-fancy-4story-G_template.xml" 
-			title="4 stories - G"
-			min="4" 
-			usage="continuation" 
-			deco="true" 
-			page="4" 
-		/>
-		<template 
-			name="CONTINUATION-fancy-5_template.xml" 
-			title="5 stories - smallG liondoor"
-			min="5" 
-			usage="continuation" 
-			deco="true" 
-			page="2" 
-		/>		
-		<template 
-			name="CONTINUATION-fancy-5_template.xml" 
-			title="5 stories - smallG liondoor"
-			min="5" 
-			usage="continuation" 
-			deco="true" 
-			page="3" 
-		/>
-		<template 
-			name="CONTINUATION-fancy-5_template.xml" 
-			title="5 stories - smallG liondoor"
-			min="5" 
-			usage="continuation" 
-			deco="true" 
-			page="4" 
-		/>
-		<template 
-			name="CONTINUATION-fancy-6_template.xml" 
-			title="6 stories - smallG liondoor"
-			min="6" 
-			usage="continuation" 
-			deco="true" 
-			page="2" 
-		/>		
-		<template 
-			name="CONTINUATION-fancy-6_template.xml" 
-			title="6 stories - smallG liondoor"
-			min="6" 
-			usage="continuation" 
-			deco="true" 
-			page="3" 
-		/>
-		<template 
-			name="CONTINUATION-fancy-6_template.xml" 
-			title="6 stories - smallG liondoor"
-			min="6" 
-			usage="continuation" 
-			deco="true" 
-			page="4" 
-		/>
-		<template 
-			name="CONTINUATION-fancy-7_template.xml" 
-			title="7 stories - smallG liondoor"
-			min="7" 
-			usage="continuation" 
-			deco="true" 
-			page="2" 
-		/>		
-		<template 
-			name="CONTINUATION-fancy-7_template.xml" 
-			title="7 stories - smallG liondoor"
-			min="7" 
-			usage="continuation" 
-			deco="true" 
-			page="3" 
-		/>
-		<template 
-			name="CONTINUATION-fancy-7_template.xml" 
-			title="7 stories - smallG liondoor"
-			min="7" 
-			usage="continuation" 
-			deco="true" 
-			page="4" 
-		/>
-		
-		<template 
-			name="CONTINUATION-fancy-8_template.xml" 
-			title="8 stories - smallG liondoor"
-			min="8" 
-			usage="continuation" 
-			deco="true" 
-			page="2" 
-		/>
-		<template 
-			name="CONTINUATION-fancy-8_template.xml" 
-			title="8 stories - smallG liondoor"
-			min="8" 
-			usage="continuation" 
-			deco="true" 
-			page="3" 
-		/>
-		<template 
-			name="CONTINUATION-fancy-8_template.xml" 
-			title="9 stories - smallG liondoor"
-			min="9" 
-			usage="continuation" 
-			deco="true" 
-			page="4" 
-		/>
-		<template 
-			name="CONTINUATION-fancy-9_template.xml" 
-			title="9 stories - smallG liondoor"
-			min="9" 
-			usage="continuation" 
-			deco="true" 
-			page="2" 
-		/>
-		<template 
-			name="CONTINUATION-fancy-9_template.xml" 
-			title="9 stories - smallG liondoor"
-			min="9" 
-			usage="continuation" 
-			deco="true" 
-			page="3" 
-		/>
-		<template 
-			name="CONTINUATION-fancy-9_template.xml" 
-			title="9 stories - smallG liondoor"
-			min="9" 
-			usage="continuation" 
-			deco="true" 
-			page="4" 
-		/>
-		<template 
-			name="CONTINUATION-fancy-P_template.xml" 
-			title="2 stories - P liondoor"
-			min="2" 
-			usage="continuation" 
-			deco="true" 
-			page="2" 
-		/>
-		<template 
-			name="CONTINUATION-fancy-P_template.xml" 
-			title="2 stories - P liondoor"
-			min="2" 
-			usage="continuation" 
-			deco="true" 
-			page="3" 
-		/>
-		<template 
-			name="CONTINUATION-fancy-P_template.xml" 
-			title="2 stories - P liondoor"
-			min="2" 
-			usage="continuation" 
-			deco="true" 
-			page="4" 
-		/>
-		<template 
-			name="CONTINUATION-fancy-P-2_template.xml" 
-			title="3 stories - P liondoor"
-			min="3" 
-			usage="continuation" 
-			deco="true" 
-			page="2" 
-		/>
-		<template 
-			name="CONTINUATION-fancy-P-2_template.xml" 
-			title="3 stories - P liondoor"
-			min="3" 
-			usage="continuation" 
-			deco="true" 
-			page="3" 
-		/>
-		<template 
-			name="CONTINUATION-fancy-P-2_template.xml" 
-			title="3 stories - P liondoor"
-			min="3" 
-			usage="continuation" 
-			deco="true" 
-			page="4" 
-		/>
-		<template 
-			name="CONTINUATION-fancy-P-2-mirror_template.xml" 
-			title="3 stories - P liondoor Mirror"
-			min="3" 
-			usage="continuation" 
-			deco="true" 
-			page="2" 
-		/>
-		<template 
-			name="CONTINUATION-fancy-P-2-mirror_template.xml" 
-			title="3 stories - P liondoor Mirror"
-			min="3" 
-			usage="continuation" 
-			deco="true" 
-			page="3" 
-		/>
-		<template 
-			name="CONTINUATION-fancy-P-2-mirror_template.xml" 
-			title="3 stories - P liondoor Mirror"
-			min="3" 
-			usage="continuation" 
-			deco="true" 
-			page="4" 
-		/>
-		<template 
-			name="CONTINUATION-fancy-PV-P_template.xml" 
-			title="4 stories - P liondoor"
-			min="4" 
-			usage="continuation" 
-			deco="true" 
-			page="2" 
-		/>
-		<template 
-			name="CONTINUATION-fancy-PV-P_template.xml" 
-			title="4 stories - P liondoor"
-			min="4" 
-			usage="continuation" 
-			deco="true" 
-			page="3" 
-		/>
-		<template 
-			name="CONTINUATION-fancy-PV-P_template.xml" 
-			title="4 stories - P liondoor"
-			min="4" 
-			usage="continuation" 
-			deco="true" 
-			page="4" 
-		/>
-		<template 
-			name="CONTINUATION-fancy-PV-P-mirror_template.xml" 
-			title="4 stories - P liondoor Mirror"
-			min="4" 
-			usage="continuation" 
-			deco="true" 
-			page="2" 
-		/>
-		<template 
-			name="CONTINUATION-fancy-PV-P-mirror_template.xml" 
-			title="4 stories - P liondoor Mirror"
-			min="4" 
-			usage="continuation" 
-			deco="true" 
-			page="3" 
-		/>
-		<template 
-			name="CONTINUATION-fancy-PV-P-mirror_template.xml" 
-			title="4 stories - P liondoor Mirror"
-			min="4" 
-			usage="continuation" 
-			deco="true" 
-			page="4" 
-		/>
-		<template 
-			name="CONTINUATION-fancy-OZ-3_template.xml" 
-			title="4 stories - OZ liondoor"
-			min="4" 
-			usage="continuation" 
-			deco="true" 
-			page="2" 
-		/>
-		<template 
-			name="CONTINUATION-fancy-OZ-3_template.xml" 
-			title="4 stories - OZ liondoor"
-			min="4" 
-			usage="continuation" 
-			deco="true" 
-			page="3" 
-		/>
-		<template 
-			name="CONTINUATION-fancy-OZ-3_template.xml" 
-			title="4 stories - OZ liondoor"
-			min="4" 
-			usage="continuation" 
-			deco="true" 
-			page="4" 
-		/>
-		<template 
-			name="CONTINUATION-fancy-OZ_template.xml" 
-			title="5 stories - OZ liondoor"
-			min="5" 
-			usage="continuation" 
-			deco="true" 
-			page="2" 
-		/>
-		<template 
-			name="CONTINUATION-fancy-OZ_template.xml" 
-			title="5 stories - OZ liondoor"
-			min="5" 
-			usage="continuation" 
-			deco="true" 
-			page="3" 
-		/>
-		<template 
-			name="CONTINUATION-fancy-OZ_template.xml" 
-			title="5 stories - OZ liondoor"
-			min="5" 
-			usage="continuation" 
-			deco="true" 
-			page="4" 
-		/>
-		<template 
-			name="CONTINUATION-fancy-OZ-6_template.xml" 
-			title="7 stories - OZ liondoor"
-			min="7" 
-			usage="continuation" 
-			deco="true" 
-			page="2"
-		/>
-		<template 
-			name="CONTINUATION-fancy-OZ-6_template.xml" 
-			title="7 stories - OZ liondoor"
-			min="7" 
-			usage="continuation" 
-			deco="true" 
-			page="3"
-		/>
-		<template 
-			name="CONTINUATION-fancy-OZ-6_template.xml" 
-			title="7 stories - OZ liondoor"
-			min="7" 
-			usage="continuation" 
-			deco="true" 
-			page="4"
-		/>
-		<template 
-			name="CONTINUATION-fancy-bottom-6_template.xml" 
-			title="6 stories - smallG liondoor bottom"
-			min="6"  
-			usage="continuation" 
-			deco="true" 
-			page="2" 
-		/>
-		<template 
-			name="CONTINUATION-fancy-bottom-6_template.xml" 
-			title="6 stories - smallG liondoor bottom"
-			min="6" 
-			usage="continuation" 
-			deco="true" 
-			page="3" 
-		/>
-		<template 
-			name="CONTINUATION-fancy-bottom-6_template.xml" 
-			title="6 stories - smallG liondoor bottom"
-			min="6" 
-			usage="continuation" 
-			deco="true" 
-			page="4" 
-		/>
 
-		<template 
-			name="CONTINUATION-fancy-bottom-8_template.xml" 
-			title="8 stories - smallG liondoor bottom"
-			min="8" 
-			usage="continuation" 
-			deco="true" 
-			page="2" 
-		/>
-		<template 
-			name="CONTINUATION-fancy-bottom-8_template.xml" 
-			title="8 stories - smallG liondoor bottom"
-			min="8" 
-			usage="continuation" 
-			deco="true" 
-			page="3" 
-		/>
-		<template 
-			name="CONTINUATION-fancy-bottom-8_template.xml" 
-			title="8 stories - smallG liondoor bottom"
-			min="8" 
-			usage="continuation" 
-			deco="true" 
-			page="4" 
-		/>
-	<template 
-			name="CONTINUATION-fancy-3OV-7_template.xml" 
-			title="7 stories - 3 OV liondoor"
-			min="7" 
-			usage="continuation" 
-			deco="true" 
-			page="2" 
-		/>
-		<template 
-			name="CONTINUATION-fancy-3OV-7_template.xml" 
-			title="7 stories - 3 OV deco"
-			min="7"
-			usage="continuation"
-			deco="true"
-			page="3"
-		/>
-		<template 
-			name="CONTINUATION-fancy-3OV-7_template.xml" 
-			title="7 stories - 3 OV deco"
-			min="7"
-			usage="continuation"
-			deco="true"
-			page="4"
-		/>		
-		<template 
-			name="CONTINUATION-fancy-smallG-OV-6_template.xml" 
-			title="6 stories - smallG liondoor 1 OV liondoor"
-			min="6" 
-			usage="continuation" 
-			deco="true" 
-			page="2" 
-		/>
-		<template 
-			name="CONTINUATION-fancy-smallG-OV-6_template.xml" 
-			title="6 stories - smallG liondoor 1 OV liondoor"
-			min="6" 
-			usage="continuation" 
-			deco="true" 
-			page="3" 
-		/>
-		<template 
-			name="CONTINUATION-fancy-smallG-OV-6_template.xml" 
-			title="6 stories - smallG liondoor 1 OV liondoor"
-			min="6" 
-			usage="continuation" 
-			deco="true" 
-			page="4" 
-		/>
-		
-        
-		<!-- END FANCY CONTINUATION -->
-		
-		<!-- DOUBLE SECTION FRONTS -->
-		<template 
-			name="SECTION-2story-G-C_template.xml" 
-			title="Continuation - 2 story-G"
-			min="4" 
-			usage="continuation"
-			page="2" 
-		/>
-		<template 
-			name="SECTION-3story-G_template.xml" 
-			title="Continuation - 3 story-G"
-			min="5" 
-			usage="continuation"
-			page="2" 
-		/>
-		<template 
-			name="SECTION-3story-G-deco-C_template.xml" 
-			deco="true" 
-			title="Continuation - 3 story - G liondoor"
-			min="5" 
-			usage="continuation" 
-			page="2"
-		/>
-		<template 
-			name="SECTION-3story-G-mirror_template.xml" 
-			deco="true" 
-			title="Continuation - 3 story - G Photo - mirror"
-			min="5" 
-			usage="continuation" 
-			page="2"
-		/>
-		<template 
-			name="SECTION-4story-smallG-deco_template.xml" 
-			deco="true" 
-			title="Continuation - 4 story - G liondoor"
-			min="6" 
-			usage="continuation" 
-			page="2"
-		/>
-		<template 
-			name="SECTION-1story-PV-1highlight_template.xml" 
-			title="Continuation - PV - 1 highlight (grey)"
-			min="2" 
-			usage="continuation" 
-			page="2"
-		/>
-		<template 
-			name="SECTION-1story-PV-1highlight-white_template.xml" 
-			title="Continuation - PV - 1 highlight (white)"
-			min="2" 
-			usage="continuation" 
-			page="2"
-		/>
-		<template 
-			name="SECTION-1story-PV_template.xml" 
-			title="Continuation - PV -  2 highlights (grey)"
-			min="3" 
-			usage="continuation" 
-			page="2"
-		/>
-		<template 
-			name="SECTION-1story-PV-white_template.xml" 
-			title="Continuation - PV - 2 highlights (white)"
-			min="3" 
-			usage="continuation" 
-			page="2"
-		/>
-
-		<template 
-			name="SECTION-1story-P_template.xml" 
-			title="Continuation - P-photo - grey 2 highlights "
-			min="3" 
-			usage="continuation" 
-			page="2"
-		/>
-		<template 
-			name="SECTION-1story-P-white_template.xml" 
-			title="Continuation - P-photo - white 2 highlights "
-			min="3" 
-			usage="continuation" 
-			page="2"
-		/>
-		<template 
-			name="SECTION-1story-P-1highlight_template.xml" 
-			title="Continuation - P-photo - 1highlight"
-			min="2" 
-			usage="continuation" 
-			page="2"
-		/>
-		<template 
-			name="SECTION-1story-P-1highlight-white_template.xml" 
-			title="Continuation - P-photo - white 1highlight"
-			min="2" 
-			usage="continuation" 
-			page="2"
-		/>
-		<template 
-			name="SECTION-1story-fullsize-deco.xml" 
-			title="Continuation - Full size Deco"
-			min="1" 
-			deco="true"
-			usage="continuation"
-			page="2" 
-		/>
-		<template 
-			name="SECTION-1story-fullsize-deco.xml"
-			title="Continuation - Full size Deco"
-			min="1" 
-			deco="true"
-			usage="continuation"
-			page="3" 
-		/>
-		<template 
-			name="SECTION-1story-fullsize-deco.xml"
-			title="Continuation - Full size Deco"
-			min="1" 
-			deco="true"
-			usage="continuation"
-			page="4" 
-		/>
-		
-		<!-- END DOUBLE SECTION FRONTS -->
-			
-		
 		<!-- WHATS NEWS -->
-		<template 
-			name="WHATSNEWS-dummy_template.xml" 
-			usage="front" 
+		<template
+			name="WHATSNEWS-dummy_template.xml"
+			usage="front"
 			title="Whats News"
-			min="1" 
-			section="WHATS_NEWS" 
+			min="1"
+			section="WHATS_NEWS"
 		/>
-		<!-- END WHATS NEWS -->		
+		<!-- END WHATS NEWS -->
+
 		<!-- FULL PAGE AD -->
-		<template 
-			name="GENERIC-fullpagead-template.xml" 
-			usage="ads" 
+		<template
+			name="GENERIC-fullpagead-template.xml"
+			usage="ads"
 		/>
 		<!-- END FULL PAGE AD -->
-		
-		<!-- DEV TESTING  -->
-		<template name="TEST-1-fonts_template.xml" max="999" section="OPINION" usage="front" />
-		<template name="TEST-2-parameters_template.xml" max="999" section="BUSINESS_AND_FINANCE" usage="front" />
-		<template name="TEST-3-borders_template.xml" max="999" section="WEEKEND_JOURNAL" usage="front" />
-		<!-- END DEV TESTING -->
-		
+
+		<!-- TEST TEMPLATE -->
+		<template
+			name="TEST-4-grid_template.xml"
+			usage="front"
+			title="Grid Overlay"
+			min="1"
+		/>
+		<!-- END TEST TEMPLATE -->
+
 	</templates>
 
 	<article-page-plans>
 		<article pages="ARTICLE-pages.xml"/>
-		<article pages="ARTICLE-pages-hots.xml" />
-		<article pages="ARTICLE-pages-letters.xml" />
-		<article pages="ARTICLE-pages-off-duty.xml" />
-		<article pages="ARTICLE-pages-PV-no-rail.xml" />
-		<article pages="ARTICLE-pages-AHED.xml" />
-		<article pages="ARTICLE-pages-DV.xml" />
-		<article pages="ARTICLE-pages-H.xml" />
+		<article pages="ARTICLE-pages-narrow.xml"/>
 	</article-page-plans>
-	
 	<display-properties>
-		<ads value=";;;" />
+		<ads value=";;;"/>
 		<continuation-counts value="4; 5; 6; 7; 8; 4, 5; 5, 5; 5, 6; 5, 7; 6, 7; 4, 5, 5; 4, 5, 6; 5, 5, 6; 5, 6, 6; 5, 6, 7; 5, 7, 7; 4, 5, 5, 6; 5, 5, 5, 6; 5, 5, 6, 6; 5, 6, 6, 6; 5, 6, 6, 7; 5, 6, 7, 7; 6, 6, 7, 7; 6, 7, 7, 7; 5, 5, 6, 6, 6; 5, 6, 6, 6, 6; 5, 6, 6, 6, 7; 5, 6, 6, 7, 7; 5, 6, 7, 7, 7; 6, 6, 7, 7, 7; 6, 7, 7, 7, 7; 5, 5, 6, 6, 6, 7; 5, 5, 6, 6, 7, 7; 5, 5, 6, 7, 7, 7; 5, 6, 6, 7, 7, 7; 5, 6, 7, 7, 7, 7; 6, 6, 7, 7, 7, 7; 6, 7, 7, 7, 7, 7; 6, 7, 7, 7, 7, 8; 6, 7, 7, 7, 8, 8; 6, 7, 7, 8, 8, 8; 6, 7, 7, 8, 8, 9; 6, 7, 7, 8, 9, 9; 6, 7, 8, 8, 9, 9; 6, 7, 8, 9, 9, 9; 7, 7, 8, 9, 9, 9; 7, 8, 8, 9, 9, 9"/>
 	</display-properties>
-	
-</catalog>
 
+</catalog>

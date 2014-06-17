@@ -15,7 +15,7 @@ those HTMLs, in turn, contain a series of paragraphs. The paragraphs may link to
 We convert this into an RSS feed. We require that all the DJML has been downloaded already,
 including the linked-to articles, in order to process the PAID/FREE flags.
 -->
-<xsl:strip-space elements="p span a mark item stub description item" />
+<xsl:strip-space elements="p span a mark item stub description panel" />
 <xsl:template match="/rss">
     <rss version="2.0">
         <channel>

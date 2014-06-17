@@ -1,11 +1,12 @@
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="1.0">
-	<xsl:output method="xml" encoding="UTF-8" indent="yes"/>
+
+	<xsl:output method="xml" encoding="UTF-8" indent="no"/>
 	<xsl:variable name="smallcase" select="'abcdefghijklmnopqrstuvwxyz'"/>
 	<xsl:variable name="uppercase" select="'ABCDEFGHIJKLMNOPQRSTUVWXYZ'"/>
 
 	<xsl:key name="item_by_title" match="item|stub" use="title" />
 
-	
+
 	<xsl:variable name="type">
 		<xsl:choose>
 			<xsl:when test="contains(/rss/channel/title, 'ITP')">ITP</xsl:when>

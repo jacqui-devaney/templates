@@ -16,3 +16,18 @@ And some magic
 ~/dev/build-tools/buildProcessUtility --config ~/dev/build-tools/buildConfigs/app.wsj.dev.build.json --files \
 `git -C ~/dev/universal-app-wsj diff --name-only 255324b HEAD | tr '\n' ,  | sed 's/\(.*\),/\1/'`
 ```
+
+
+##Testing whats news transformations
+Test data has been added to /testData.  Topic specific test data should exist under sub directories from /testData.  Testing transformations should not require extensive knowledge of where gelcap will pull files from.  That said, test files can be stored locally in order to verify transformations work.  Example time:
+
+
+Take the ITP whats news feed and preformat it
+```
+xsltproc --path "testData/whatsnews/" wsj-itp-whatsnews-to-rss2.xml 3_8175.xml > formatted.xml
+```
+
+Take the output from the previous step and generate the Whats_news.jpml file:
+```
+xsltproc --path "testData/whatsnews/" wsj-rss-whatsnews-to-jpml.xml formatted.xml WHATS_NEWS.jpml
+```

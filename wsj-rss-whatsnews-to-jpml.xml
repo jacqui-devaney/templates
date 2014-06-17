@@ -4,7 +4,7 @@
 	<xsl:variable name="uppercase" select="'ABCDEFGHIJKLMNOPQRSTUVWXYZ'"/>
 
 	<xsl:key name="item_by_title" match="item|stub" use="title" />
-	
+
 	<xsl:variable name="type">
 		<xsl:choose>
 			<xsl:when test="contains(/rss/channel/title, 'ITP')">ITP</xsl:when>
@@ -57,6 +57,14 @@
 					<xsl:with-param name="link"><xsl:value-of select="guid"/></xsl:with-param>
 					<xsl:with-param name="text"><xsl:value-of select="description"/></xsl:with-param>
 				</xsl:call-template></span>
+				<xsl:if test="string-length(link) > 0">
+					<mark>
+						<xsl:attribute name="class">item-after-description <xsl:choose>
+							<xsl:when test="category = 'FREE'">item-free</xsl:when>
+							<xsl:otherwise>item-paid</xsl:otherwise>
+						</xsl:choose></xsl:attribute>
+					</mark>
+				</xsl:if>
 			</p>
 		</xsl:for-each>
 	</panel>

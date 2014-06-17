@@ -5,6 +5,13 @@
 	<style src="FRONT-stylesheet.ejs"/>
 	<style src="PHONE-stylesheet.ejs"/>
 	<style>{
+		#page_details: {
+			options: {
+				hideHeaderBorder: true
+			}
+		}
+	}</style>
+	<style>{
 		#b1: {
 			options:{$switch:[
 				{if: =scale.phone, then: {large_headline:true, top_align:true, show_body:true, show_image:true}},

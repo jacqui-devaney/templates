@@ -44,6 +44,7 @@
 			height: =size.continuation_height_normal
 		}
 	}</style>
+	<box id="page_details" embed="pagedescription" />
 	<box id="ad_placeholder" class="ad-banner" embed="pagedescription" />
 	<box id="marketstrap" embed="marketstrap" />
 	<box id="b1" embed="article" class="maude unit_386" module="TOP-IMAGE_module.xml" />

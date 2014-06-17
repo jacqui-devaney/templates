@@ -232,6 +232,7 @@
 			}}
 		]
 	} </style>
+	<box id="page_details" embed="pagedescription" />
 	<box id="b1" embed="article" class="column8 positionx1" module="TOP-IMAGE_module.xml" />
 	<box id="b2" embed="article" class="column4 positionx1" module="RIGHT-INSET-IMAGE_module.xml" />
 	<box id="b3" embed="article" class="column4 positionx5" module="RIGHT-INSET-IMAGE_module.xml" />

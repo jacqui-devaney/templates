@@ -28,5 +28,6 @@
 	        }}
 		]
     }</style>
+    <box id="page_details" embed="pagedescription" />
     <box id="b1" embed="article" class="column2 positionx1 maude unit_continuation_strap" module="CONTINUATION-dynamic_module.xml" />
 </jpml>

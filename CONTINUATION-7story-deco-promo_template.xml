@@ -161,7 +161,7 @@
 	        }}
 		]
     }</style>
-    <box id="page_details" embed="pagedescription" />
+	<box id="page_details" embed="pagedescription" />
     <box id="tomorrow" />
     <box id="header"><box id="header_inner"/></box>
     <box id="b1" embed="article" class="column6 positionx1" module="PROMO-IMAGE_module.xml" />

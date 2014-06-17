@@ -85,6 +85,7 @@
 	        }}
 		]
     }</style>
+	<box id="page_details" embed="pagedescription" />
     <box id="b1" embed="article" class="column2 positionx1 maude unit_continuation_strap" module="CONTINUATION-dynamic_module.xml" />
     <box id="b2" embed="article" class="column2 positionx3-1 maude unit_continuation_strap" module="CONTINUATION-dynamic_module.xml" />
     <box id="b3" embed="article" class="column2 positionx5-3 maude unit_continuation_strap" module="CONTINUATION-dynamic_module.xml" />

@@ -73,6 +73,7 @@
 			}}
 		]
 	} </style>
+    <box id="page_details" embed="pagedescription" />
 	<box id="deco" embed="article" class="column12 positionx1 maude unit_166" module="DECO_module.xml" />
 	<box id="b1" embed="article" class="column4-6 positionx13-1 maude unit_50" module="RIGHT-INSET-IMAGE_module.xml" />
 	<box id="b2" embed="article" class="column4-6 positionx13-7 maude unit_50" module="RIGHT-INSET-IMAGE_module.xml" />

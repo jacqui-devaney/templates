@@ -126,6 +126,7 @@
 			}}
 		]
 	} </style>
+	<box id="page_details" embed="pagedescription" />
 
 	<box id="b1" embed="article" class="column8 positionx1 maude unit_255" module="TOP-IMAGE_module.xml" />
 	<box id="b2" embed="article" class="column8 positionx9-1 maude unit_50" module="RIGHT-IMAGE_module.xml" />

@@ -1,6 +1,6 @@
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="1.0">
 
-	<xsl:output method="xml" encoding="UTF-8" indent="no"/>
+	<xsl:output method="xml" encoding="UTF-8" indent="yes"/>
 	<xsl:variable name="smallcase" select="'abcdefghijklmnopqrstuvwxyz'"/>
 	<xsl:variable name="uppercase" select="'ABCDEFGHIJKLMNOPQRSTUVWXYZ'"/>
 
@@ -58,7 +58,7 @@
 					<span class="item-description"><xsl:call-template name="linked_text">
 						<xsl:with-param name="link"><xsl:value-of select="guid"/></xsl:with-param>
 						<xsl:with-param name="text"><xsl:value-of select="description"/></xsl:with-param>
-					</xsl:call-template></span>
+					</xsl:call-template>
 					<xsl:if test="string-length(link) > 0">
 						<mark>
 							<xsl:attribute name="class">item-after-description <xsl:choose>
@@ -66,7 +66,7 @@
 								<xsl:otherwise>item-paid</xsl:otherwise>
 							</xsl:choose></xsl:attribute>
 						</mark>
-					</xsl:if>
+					</xsl:if></span>
 				</p>
 			</xsl:for-each>
 		</panel>

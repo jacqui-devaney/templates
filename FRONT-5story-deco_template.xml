@@ -9,9 +9,7 @@
 			options: {
 				hideHeaderBorder: true
 			}
-		}
-	}</style>
-	<style>{
+		},
 		#b1: {
 			options:{$switch:[
 				{if: =scale.phone, then: {large_headline:true, top_align:true, show_body:true, show_image:true}},
@@ -118,7 +116,15 @@
 				<a href="//NOW/LATEST_NEWS">LATEST NEWS</a>
 			</p>
 	</box>
-	<box id="marketstrap" class="" embed="marketstrap" />
+	<box id="marketstrap" embed="marketstrap">
+		<box id="marketstrapinner">
+			<panel id="marketstrappanel">
+				<p id="marketstrapp1"><strong class="marketstrapstrong">DJIA</strong> 31337.42 +89.01 <mark class="marketstraparrow"/> 2.34%</p>
+				<p id="marketstrapp2"><strong class="marketstrapstrong">NASDAQ</strong> 5678.90 +12.34 <mark class="marketstraparrow"/> 5.67%</p>
+				<p id="marketstrapp3"><strong class="marketstrapstrong">S&amp;P 500</strong> 1234.56 +7.89 <mark class="marketstraparrow"/> 0.12%</p>
+			</panel>
+		</box>
+	</box>
 	<box id="whatsnewsheader" class="column3 positionx1"><p><mark id="whatsnewsheadertext"/></p></box>
 	<box id="whatsnews" class="column3 positionx1" embed="list">
 	</box>

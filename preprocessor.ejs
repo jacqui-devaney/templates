@@ -4,7 +4,7 @@
 		{
 			portrait: { if: =view.width, less-than: =view.height },
 			landscape: { if: =view.width, more-than: =view.height },
-			
+
 			aspect: {
 				$divide: [
 					{$max: [=device.height, =device.width] },
@@ -12,23 +12,23 @@
 				]
 			},
 
-			standard: { 
-				if: { 
+			standard: {
+				if: {
 					$divide: [
 						{$max: [=device.height, =device.width] },
 						{$min: [=device.height, =device.width] }
-					]					
+					]
 				},
-				at-most: 1.4 
+				at-most: 1.4
 			},
-			widescreen: { 
-				if: { 
+			widescreen: {
+				if: {
 					$divide: [
 						{$max: [=device.height, =device.width] },
 						{$min: [=device.height, =device.width] }
-					]					
+					]
 				},
-				at-least: 1.4 
+				at-least: 1.4
 			},
 
 			scale: {
@@ -38,14 +38,14 @@
 					{ if: =device.dpi, at-least: 170, then: true, else: false }
 				], then: { $divide: [=device.dpi, 153] }, else: 1},
 				pagex: { if: =view.width, more-than: 480, then: {
-					if: =view.width, 
+					if: =view.width,
 					less-than: =view.height,
 					then: { $divide: [=view.width, 768] },
 					else: { $divide: [=view.width, 1024] }
-				}, else: 1},	
-						
+				}, else: 1},
+
 				pagey: { if: =view.width, more-than: 480, then: {
-					if: =view.width, 
+					if: =view.width,
 					less-than: =view.height,
 					then: { $divide: [=view.height, 1024] },
 					else: { $divide: [=view.height, 768] }
@@ -57,20 +57,20 @@
 				small: { if: =device.size, less-than: 8.8 },
 				large: { if: =device.size, more-than: 8.8 },
 				headlines: { if-any: [
-							{if: =device.size, less-than: 8.8, then: true, else: false}, 
+							{if: =device.size, less-than: 8.8, then: true, else: false},
 							{if: =issue.type, equals: "NOW", then: true, else: false}
 						], then: true, else: false }
-								
+
 			},
-			
-			
+
+
 			justify: { if-any: [
-						{if: =device.size, less-than: 8.8, then: true, else: false}, 
+						{if: =device.size, less-than: 8.8, then: true, else: false},
 						{if: =issue.edition, equals: "germany", then: true, else: false}
 					], then: left, else: justify },
 			extents: {
 							if-any: [
-								{if: =device.size, less-than: 8.8, then: true, else: false}, 
+								{if: =device.size, less-than: 8.8, then: true, else: false},
 								{if: =issue.type, equals: "NOW", then: true, else: false}
 							],
 							 then: {
@@ -86,9 +86,9 @@
 							}
 						},
 
-			media: { 
-				width: {if: =page.hasmedia, then: =article.media[page.number].width, else:0} , 
-				height: {if: =page.hasmedia, then: =article.media[page.number].height, else:0} , 
+			media: {
+				width: {if: =page.hasmedia, then: =article.media[page.number].width, else:0} ,
+				height: {if: =page.hasmedia, then: =article.media[page.number].height, else:0} ,
 				aspect: {if: =page.hasmedia, then: {$divide:[=article.media[page.number].width, =article.media[page.number].height]}, else:0}
 
 			},
@@ -98,9 +98,9 @@
 				overflow: "..."
 			},
 
-			size: { 
-				if: =app.idiom, 
-				equals: "phone", 
+			size: {
+				if: =app.idiom,
+				equals: "phone",
 				then: {
 					continuation_height_normal: 62,
 					continuation_height_large: 160,
@@ -108,16 +108,11 @@
 				},
 				else: {
 
-				} 
+				}
 			},
 
 			ad: {
 				prefix: { $join: [
-					{ $switch: [ =issue.edition, 
-						{ if: =article.headline, ends-with: "\u200a", then: "asia" },
-						{ if: =article.headline, ends-with: "\u2009", then: "europe" },
-					"us"] },
-					".",
 					{ $switch: [
 						{ if: =device.model, starts-with: iPad, then: ipad },
 						{ if: =device.model, starts-with: iPhone, then: iphone },
@@ -125,9 +120,14 @@
 						{ if: =device.platform, equals: Android, then: honeycomb },
 						"default"
 					] },
-					".wsj.com/",
+                    ".",
+                    { $switch: [ =issue.edition,
+                      { if: =article.headline, ends-with: "\u200a", then: "asia" },
+                      { if: =article.headline, ends-with: "\u2009", then: "europe" },
+                    "us"] },
+                    ".wsj.app/",
 					{ $switch: [
-						{ if: =page.section, equals: FRONT_SECTION, then: 
+						{ if: =page.section, equals: FRONT_SECTION, then:
 							{ if: =article.frompage, equals: 1, then: frontpage, else: front }
 						},
 						{ if: =page.section, equals: OPINION, then: opinion },
@@ -145,25 +145,25 @@
 						{ if: =page.section, equals: OFF_DUTY, then: offduty },
 						{ if: =page.section, equals: CAMPAIGN, then: campaign },
 						{ if: =page.section, equals: WSJ_MAGAZINE, then: magazine },
-						{ if: =page.section, equals: SPECIAL_REPORT, then: specialreport },	
-						{ if: =page.section, equals: SPECIAL_REPORT_TWO, then: specialreporttwo },	
-						{ if: =page.section, equals: EUROPE, then: europe },	
-						{ if: =page.section, equals: ASIA, then: asia },	
-						{ if: =page.section, equals: LIFE_AND_STYLE, then: lifeandstyle },	
-						{ if: =page.section, equals: MANSION, then: realestate },	
-						{ if: =page.section, equals: HONG_KONG, then: hongkong },	
-						{ if: =page.section, equals: DEUTSCHLAND, then: deutschland },	
-						{ if: =page.section, equals: ANALYSE, then: analyse },	
-						{ if: =page.section, equals: WIRTSCHAFT_AND_FINANZEN, then: wirtschaft },	
-						{ if: =page.section, equals: UNTERNEHMEN, then: unternehmen },	
-						{ if: =page.section, equals: INTERNATIONAL, then: international },	
-						{ if: =page.section, equals: TECHNOLOGIE, then: technologie },	
-						{ if: =page.section, equals: SEITE_EINS, then: 
+						{ if: =page.section, equals: SPECIAL_REPORT, then: specialreport },
+						{ if: =page.section, equals: SPECIAL_REPORT_TWO, then: specialreporttwo },
+						{ if: =page.section, equals: EUROPE, then: europe },
+						{ if: =page.section, equals: ASIA, then: asia },
+						{ if: =page.section, equals: LIFE_AND_STYLE, then: lifeandstyle },
+						{ if: =page.section, equals: MANSION, then: realestate },
+						{ if: =page.section, equals: HONG_KONG, then: hongkong },
+						{ if: =page.section, equals: DEUTSCHLAND, then: deutschland },
+						{ if: =page.section, equals: ANALYSE, then: analyse },
+						{ if: =page.section, equals: WIRTSCHAFT_AND_FINANZEN, then: wirtschaft },
+						{ if: =page.section, equals: UNTERNEHMEN, then: unternehmen },
+						{ if: =page.section, equals: INTERNATIONAL, then: international },
+						{ if: =page.section, equals: TECHNOLOGIE, then: technologie },
+						{ if: =page.section, equals: SEITE_EINS, then:
 							{ if: =article.frompage, equals: 1, then: aufmacher, else: seiteeins }
 						},
-						{ if: =page.section, equals: JAPAN_AND_WORLD, then: japan },	
-						{ if: =page.section, equals: LIFESTYLE, then: lifestyle },	
-						{ if: =page.section, equals: BUSINESS_AND_MARKETS, then: businessmarkets },	
+						{ if: =page.section, equals: JAPAN_AND_WORLD, then: japan },
+						{ if: =page.section, equals: LIFESTYLE, then: lifestyle },
+						{ if: =page.section, equals: BUSINESS_AND_MARKETS, then: businessmarkets },
 						{ if: =page.section, equals: BUSINESS_AND_ECONOMY, then: businesseconomy },
 						{ if: =page.section, equals: WSJ_MONEY, then: wsjmoney },
 						{ if: =page.section, equals: SAVED, then: saved },
@@ -175,13 +175,12 @@
 						{ if: =page.section, equals: MARKETS, then: markets },
 						{ if: =page.section, equals: LIFE_AND_CULTURE, then: lifeandculture },
 						{ if: =page.section, equals: US, then: us },
-						
+
 						"default"
-					] },
-					"/"					
+					] }
 				] }
-			}			
+			}
 		}
-	]	
+	]
 
 }

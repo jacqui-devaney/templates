@@ -1,7 +1,25 @@
 {
+	#whatsnewsheader: {
+		background-color: #e8e0ca,
+		top: 20,
+		height: 68,
+		padding: [20, 0, 0, 0]
+	},
+	#whatsnewsheadertext: {
+		content: "What's News",
+		text-align: center,
+		font-size: 24,
+		font-name: "DJ5Escrow-Roman"
+	},
 	#whatsnews: {
-		height:{if: =landscape, then:536, else:787},
-    	top: 20
+		background-color: #e8e0ca,
+		height:{if: =landscape, then:468, else:719},
+    	top: 88,
+		options: { 
+			filename: "WHATS_NEWS.jpml",
+			shadow_height: 40,
+			shadow_color: "rgba(.2, .2, .2, 1.0)"
+		}    	
 	},
 	#marketstrap: {
 		top:-20,

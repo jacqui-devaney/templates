@@ -1,7 +1,6 @@
 <jpml id="DECO_module">
 	<style src="GLOBAL-stylesheet.ejs" />
 	<style src="GLOBAL_MODULES-stylesheet.ejs" />
-	<style src="PHONE-MODULES-stylesheet.ejs" />
 	<style>{
 			image:{
 				width:=view.width,
@@ -20,7 +19,7 @@
 				display:{if: =options.hide_caption, then:none, else:inherit}
 			},
             .deco_headline: {
-            font-size:18
+            	font-size:18
 			}
 
 	}</style>

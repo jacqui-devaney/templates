@@ -48,7 +48,11 @@
 			height: 111
 		},
 		.key: {
-			display: { if: =options.show_body, then: none }
+			display: { 
+				if-all: [=issue.locked, =article.paid], 
+				then: { if: =options.show_body, then: none, else: default }, 
+				else: none 
+			}
 		},
 		.body: {
 			display: { if: =options.show_body, else: none }
@@ -56,9 +60,6 @@
 		#body-key: {
 			display: { if: =options.show_body, then: inherit, else: none },
 			content: { if-all: [=issue.locked, =article.paid], then: "K\u00a0"}
-		},
-		#body-first-p: {
-			text-indent:{if: =options.indent, then:20, else:0}
 		},
 		.red: { background-color: red},
 		.green: { background-color: green},

@@ -112,7 +112,8 @@
 			</p>
 	</box>
 	<box id="marketstrap" class="" embed="marketstrap" />
-	<box id="whatsnews" class="column3 positionx1" embed="whatsnews">
+	<box id="whatsnewsheader" class="column3 positionx1"><p><mark id="whatsnewsheadertext"/></p></box>
+	<box id="whatsnews" class="column3 positionx1" embed="list">
 	</box>
 	<box id="b1" embed="article" class="column4-9 positionx13-4 maude unit_166" module="TOP-IMAGE_module.xml" />
 	<box id="deco" embed="article" class="column9 positionx4 maude unit_G_deco" module="DECO_module.xml" options="G_size" />

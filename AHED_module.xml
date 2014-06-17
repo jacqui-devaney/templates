@@ -57,9 +57,6 @@
 				.ahed_subhed: {
 					display: {if-all:[{if: =options.show_subhed}, {if: =scale.tablet}], then:inherit, else:none}
 				},
-				#body-first-p: {
-					text-indent: {if: =options.indent, then:20, else:inherit}
-				},
 				.module_headline:{
 					display:{if: =article.type, equals:"A-hed", then: none, else:inherit}
 				},
@@ -90,8 +87,8 @@
 
 		<panel id="vertical">
 			<panel id="headline">
-				<p class="module_headline"><mark class="m_headline" /><mark class="key" /></p>
-				<p class="ahed_headline"><span embed="headline"/><mark class="key"/></p>
+				<p class="module_headline"><mark class="m_headline" /></p>
+				<p class="ahed_headline"><span embed="headline"/></p>
 	        	<h2 class="ahed_subhed" embed="subhed"/>
 			</panel>
 

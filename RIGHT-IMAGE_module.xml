@@ -78,10 +78,6 @@
 				},
 				.body: {
 					display: {if: =options.show_body, then:inherit, else:none}
-
-				},
-				#body-first-p: {
-					text-indent: {if: =options.indent, then:20, else:inherit}
 				}
 			}
 		]
@@ -109,7 +105,7 @@
 			<image embed="summary-image" />
 		</box>
 		<panel id="headline">
-			<p class="module_headline"><mark class="m_headline" /><mark class="key" /></p>
+			<p class="module_headline"><mark class="m_headline" /></p>
             <p class="byline" embed="byline"/>
             <panel class="body" embed="body"/>
         </panel>

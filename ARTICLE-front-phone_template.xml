@@ -4,7 +4,10 @@
 	<style>{
 		#view: {
 			width:=view.width,
-			height:=view.height
+			height:=view.height,
+			options: {
+				indent: true
+			}
 		}
 	}</style>
     <box id="view" embed="article" class="maude" module="ARTICLE-front-phone_module.xml" />

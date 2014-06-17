@@ -79,9 +79,6 @@
 					display: {if: =options.show_body, then:inherit, else:none}
 
 				},
-				#body-first-p: {
-					text-indent: {if: =options.indent, then:20, else:inherit}
-				},
 				.module_flashline: {
 					display: {if: =options.show_flashline, then:inherit, else:none}
 				}
@@ -108,7 +105,7 @@
 			}, else:{}
 		}</style>
 		<panel id="headline">
-			<p class="module_headline"><mark class="m_headline" /><mark class="key" /></p>
+			<p class="module_headline"><mark class="m_headline" /></p>
 		</panel>
     	<panel>
             <box id="image_wrapper" class="hidden_phone">

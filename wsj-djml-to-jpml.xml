@@ -35,9 +35,9 @@
     <p id="flashline"><xsl:value-of select="@display-name"/></p>
 
     <p id="pubdate-string">
-            <xsl:call-template name="formatDate">
-              <xsl:with-param name="yyyy-mm-dd_HH_MM" select="@last-pub-date"/>
-            </xsl:call-template>
+        <xsl:call-template name="formatDate">
+          <xsl:with-param name="yyyy-mm-dd_HH_MM" select="@last-pub-date"/>
+        </xsl:call-template>
     </p>
 
     <p id="pubdate"><xsl:value-of select="@last-pub-date"/></p>
@@ -144,10 +144,13 @@
                     <xsl:attribute name="id">body-last-p</xsl:attribute>
                 </xsl:when>
             </xsl:choose>
-        <xsl:apply-templates select="node()"/>
-        <xsl:if test="not(following-sibling::p[position()=last()]) and not(following-sibling::tagline[position()=last()])">
-            <mark class="body-bug"/>
-        </xsl:if>
+            <xsl:if test="not(preceding-sibling::p[string(.) and position()=1])">
+                <mark class="body-first-p-mark"/>
+            </xsl:if>
+            <xsl:apply-templates select="node()"/>
+            <xsl:if test="not(following-sibling::p[position()=last()]) and not(following-sibling::tagline[position()=last()])">
+                <mark class="body-last-p-mark"/>
+            </xsl:if>
         </p>
         <!-- Insert banner ads on iPhone after the fourth paragraph. The panel reserves space so the box isn't cropped by the viewport. -->
         <xsl:if test="count(preceding-sibling::p) = 3">
@@ -392,7 +395,7 @@
         </xsl:if>
         <cite><xsl:value-of select="."/></cite>
         <xsl:if test="not(following-sibling::p[position()=last()]) and not(following-sibling::tagline[position()=last()])">
-            <mark class="body-bug"/>
+            <mark class="body-last-p-mark"/>
         </xsl:if>
     </p>
 </xsl:template>

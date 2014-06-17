@@ -2,17 +2,24 @@
 	<style src="GLOBAL-stylesheet.ejs" />
 	<style src="GLOBAL_MODULES-stylesheet.ejs" />
 	<style src="PHONE-MODULES-stylesheet.ejs" />
+	<style>{
+		#page_details: {
+			options: {
+				tintTitle: true
+			}
+		}
+	}</style>
     <style>{
-		jpml: { 
-			if: =options.show_strap, 
+		jpml: {
+			if: =options.show_strap,
 			then: {
 			},
 			else: {
 				padding: [0, 8]
 			}
 		},
-		#content: { 
-			if: =options.show_strap, 
+		#content: {
+			if: =options.show_strap,
 			then: {
 				padding: [16, 8, 0, 8]
 			},
@@ -22,23 +29,23 @@
 				border-color: #d8d8d8
 			}
 		},
-		#vertical: { 
-			if: =options.show_body, 
+		#vertical: {
+			if: =options.show_body,
 			then: {
 			},
 			else: {
 				vertical-align: middle
 			}
 		},
-		.continuation_headline: { 
-			if: =options.show_body, 
+		.continuation_headline: {
+			if: =options.show_body,
 			then: {
 			},
 			else: {
 				padding: [8, 0, 0, 0]
 			}
 		},
-		#image_container: { 
+		#image_container: {
 			width: 111,
 			padding: [0, 0, 0, 8],
 			image-scale: 1.5,
@@ -48,10 +55,10 @@
 			height: 111
 		},
 		.key: {
-			display: { 
-				if-all: [=issue.locked, =article.paid], 
-				then: { if: =options.show_body, then: none, else: default }, 
-				else: none 
+			display: {
+				if-all: [=issue.locked, =article.paid],
+				then: { if: =options.show_body, then: none, else: default },
+				else: none
 			}
 		},
 		.body: {

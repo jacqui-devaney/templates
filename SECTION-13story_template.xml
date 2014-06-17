@@ -4,6 +4,13 @@
 	<style src="ADVERTISING-stylesheet.ejs"/>
 	<style src="PHONE-stylesheet.ejs"/>
 	<style>{
+		#page_details: {
+			options: {
+				tintTitle: true
+			}
+		}
+	}</style>
+	<style>{
 		jpml: {
 			background-color: #ffeded
 		},

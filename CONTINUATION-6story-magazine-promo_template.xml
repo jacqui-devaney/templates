@@ -8,7 +8,8 @@
 			display: inherit,
 			frame: [0, 0, 10, 10],
 			options: {
-				title: "Inside WSJ."
+				title: "Inside WSJ.",
+				tintTitle: true
 			}
 		}
 	}</style>
@@ -17,7 +18,7 @@
 	        {if: =scale.phone, then: {
 	        }},
 	        {if: =portrait, then: {
-	            #b1 : { 
+	            #b1 : {
 					height:420,
 					top:0,
 					options: {
@@ -26,8 +27,8 @@
 						show_top_flashline: true,
 						show_body: true
 					}
-				},      
-	            #b2 : { 
+				},
+	            #b2 : {
 					height:420,
 					top:0,
 					options: {
@@ -36,18 +37,8 @@
 						show_top_flashline: true,
 						show_body: true
 					}
-				}, 
-	            #b3 : { 
-					height:190,
-					top:420,
-					options: {
-						top_border: true,
-						squarish_image: true,
-						show_top_flashline: true,
-						show_body: true
-					}
-				},   
-				#b4 : { 
+				},
+	            #b3 : {
 					height:190,
 					top:420,
 					options: {
@@ -57,7 +48,17 @@
 						show_body: true
 					}
 				},
-				#b5 : { 
+				#b4 : {
+					height:190,
+					top:420,
+					options: {
+						top_border: true,
+						squarish_image: true,
+						show_top_flashline: true,
+						show_body: true
+					}
+				},
+				#b5 : {
 					height:190,
 					top:620,
 					options: {
@@ -66,8 +67,8 @@
 						show_top_flashline: true,
 						show_body: true
 					}
-				},  
-				#b6 : { 
+				},
+				#b6 : {
 					height:190,
 					top:620,
 					options: {
@@ -79,7 +80,7 @@
 				}
 	        }},
 			{if: =landscape, then: {
-	            #b1 : { 
+	            #b1 : {
 					height:260,
 					top:0,
 					options: {
@@ -87,8 +88,8 @@
 						show_top_flashline: true,
 						show_body: true
 					}
-				},      
-	            #b2 : { 
+				},
+	            #b2 : {
 					height:270,
 					top:270,
 					options: {
@@ -97,17 +98,8 @@
 						show_top_flashline: true,
 						show_body: true
 					}
-				}, 
-	            #b3 : { 
-					height:260,
-					top:0,
-					options: {
-						top_image: true,
-						show_top_flashline: true,
-						show_body: true
-					}
-				},   
-				#b4 : { 
+				},
+	            #b3 : {
 					height:260,
 					top:0,
 					options: {
@@ -116,7 +108,16 @@
 						show_body: true
 					}
 				},
-				#b5 : { 
+				#b4 : {
+					height:260,
+					top:0,
+					options: {
+						top_image: true,
+						show_top_flashline: true,
+						show_body: true
+					}
+				},
+				#b5 : {
 					height:270,
 					top:270,
 					options: {
@@ -125,8 +126,8 @@
 						show_top_flashline: true,
 						show_body: true
 					}
-				}, 
-				#b6 : { 
+				},
+				#b6 : {
 					height:270,
 					top:270,
 					options: {
@@ -140,7 +141,7 @@
 		]
     }</style>
     <box id="page_details" embed="pagedescription" />
-    <box id="b1" embed="article" class="column8-6 positionx1" module="LEFT-IMAGE_module.xml" />    
+    <box id="b1" embed="article" class="column8-6 positionx1" module="LEFT-IMAGE_module.xml" />
     <box id="b2" embed="article" class="column8-6 positionx1-7" module="LEFT-IMAGE_module.xml" />
     <box id="b3" embed="article" class="column4-6 positionx9-1" module="LEFT-IMAGE_module.xml" />
     <box id="b4" embed="article" class="column4-6 positionx13-7" module="LEFT-IMAGE_module.xml" />

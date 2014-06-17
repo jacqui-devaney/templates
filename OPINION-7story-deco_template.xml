@@ -4,6 +4,13 @@
 	<style src="ADVERTISING-stylesheet.ejs"/>
 	<style src="PHONE-stylesheet.ejs"/>
 	<style>{
+		#page_details: {
+			options: {
+				tintTitle: true
+			}
+		}
+	}</style>
+	<style>{
 		#b1: {
 			options:{rando_header:true, top_border:{if: =portrait, then:true}}
 		},

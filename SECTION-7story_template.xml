@@ -3,6 +3,13 @@
     <style src="GRID-stylesheet.ejs"/>
 	<style src="ADVERTISING-stylesheet.ejs"/>
     <style src="PHONE-stylesheet.ejs"/>
+	<style>{
+		#page_details: {
+			options: {
+				tintTitle: true
+			}
+		}
+	}</style>
     <style>{
     	#ad_placeholder: {
 			display: inherit,
@@ -21,19 +28,19 @@
 			options: { show_body: true }
 		},
 		#b4 : {
-			bind: none, 
+			bind: none,
 			height: =size.continuation_height_normal
 		},
 		#b5 : {
-			bind: none, 
+			bind: none,
 			height: =size.continuation_height_normal
 		},
 		#b6 : {
-			bind: none, 
+			bind: none,
 			height: =size.continuation_height_normal
 		},
 		#b7 : {
-			bind: none, 
+			bind: none,
 			height: =size.continuation_height_normal
 		}
 	}</style>
@@ -47,4 +54,3 @@
 	<box id="b6" embed="article" class="maude unit_50" module="CONTINUATION-dynamic_module.xml" />
 	<box id="b7" embed="article" class="maude unit_50" module="CONTINUATION-dynamic_module.xml" />
 </jpml>
-

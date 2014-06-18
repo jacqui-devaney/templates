@@ -1,0 +1,1725 @@
+<?xml version="1.0" encoding="ASCII"?>
+
+<article-doc ads="ADS-NOT-ALLOWED" column=""
+    copyright="Dow Jones &amp; Company, Inc." date="2014-06-17 18:05"
+    date-type="auto" display-name="Economy" embargo=""
+    guid="ad923380-f617-11e3-8433-01212803fad6"
+    id="SB10001424052702303384304579629992912039808.djml"
+    language="en-us" last-pub-date="2014-06-17 21:20" level="NORMAL"
+    major-revision-date="2014-06-17 18:05"
+    orig-obj-ref="ba6afd54-f61b-11e3-8433-00212803fad6"
+    orig-obj-src="Methode" orig-pub-date="2014-06-17 08:35"
+    page="Economy" product="WSJ.com"
+    publication="The Wall Street Journal Interactive Edition"
+    revision-type="minor"
+    root-id="SB00001424052702303384304579629992912039808"
+    section="Economy"
+    seo-id="consumer-prices-jump-0-4-in-may-1403008509"
+    seo-url="http://online.wsj.com/articles/consumer-prices-jump-0-4-in-may-1403008509"
+    type="Economy"
+    url="http://online.wsj.com/articles/consumer-prices-jump-0-4-in-may-1403008509" version="9">
+    <meta-data>
+        <self-codes>
+            <code seoname="Josh Mitchell" symbol="Josh Mitchell"
+                type="AUTHOR" vrtysux="AUTHOR|Josh Mitchell">Josh Mitchell</code>
+            <code seoname="CPI" symbol="compop" type="DJII-COMPANY" vrtysux="DJII-COMPANY|compop">CPI</code>
+            <code seoname="Federal Reserve" symbol="fed"
+                type="DJII-COMPANY" vrtysux="DJII-COMPANY|fed">Federal Reserve</code>
+            <code seoname="The Fed" symbol="frbny" type="DJII-COMPANY" vrtysux="DJII-COMPANY|frbny">The Fed</code>
+            <code seoname="Labor Department" symbol="labdcu"
+                type="DJII-COMPANY" vrtysux="DJII-COMPANY|labdcu">Labor Department</code>
+            <code seoname="RDQ Economics" symbol="RDQ Economics"
+                type="DJII-COMPANY" vrtysux="DJII-COMPANY|RDQ Economics">RDQ Economics</code>
+            <code symbol="usdlab" type="DJII-COMPANY" vrtysux="DJII-COMPANY|usdlab"/>
+            <code seoname="Energy" symbol="i1" type="DJII-INDUSTRY" vrtysux="DJII-INDUSTRY|i1">Energy</code>
+            <code seoname="John Ryding" symbol="John Ryding"
+                type="DJII-PERSON" vrtysux="DJII-PERSON|John Ryding">John Ryding</code>
+            <code seoname="North America" symbol="namz"
+                type="DJII-REGION" vrtysux="DJII-REGION|namz">North America</code>
+            <code seoname="United States" symbol="USA"
+                type="DJII-REGION" vrtysux="DJII-REGION|USA">United States</code>
+            <code seoname="Economic Performance/Indicators" symbol="E11"
+                type="DJII-SUBJECT" vrtysux="DJII-SUBJECT|E11">Economic Performance/Indicators</code>
+            <code seoname="Inflation/Prices" symbol="E1103"
+                type="DJII-SUBJECT" vrtysux="DJII-SUBJECT|E1103">Inflation/Prices</code>
+            <code seoname="Economic News" symbol="ecat"
+                type="DJII-SUBJECT" vrtysux="DJII-SUBJECT|ecat">Economic News</code>
+            <code seoname="Consumer Price Index" symbol="ECPIN"
+                type="DJII-SUBJECT" vrtysux="DJII-SUBJECT|ECPIN">Consumer Price Index</code>
+            <code seoname="Political/General News" symbol="gcat"
+                type="DJII-SUBJECT" vrtysux="DJII-SUBJECT|gcat">Political/General News</code>
+            <code seoname="Politics/International Relations"
+                symbol="gpir" type="DJII-SUBJECT" vrtysux="DJII-SUBJECT|gpir">Politics/International Relations</code>
+            <code seoname="Domestic Politics" symbol="gpol"
+                type="DJII-SUBJECT" vrtysux="DJII-SUBJECT|gpol">Domestic Politics</code>
+            <code seoname="Government Bodies" symbol="gvbod"
+                type="DJII-SUBJECT" vrtysux="DJII-SUBJECT|gvbod">Government Bodies</code>
+            <code seoname="Executive Branch" symbol="gvexe"
+                type="DJII-SUBJECT" vrtysux="DJII-SUBJECT|gvexe">Executive Branch</code>
+            <code seoname="Labor Department" symbol="GVLBR"
+                type="DJII-SUBJECT" vrtysux="DJII-SUBJECT|GVLBR">Labor Department</code>
+            <code symbol="" type="DJN" vrtysux="DJN|"/>
+            <code seoname="N/DJN" symbol="N/DJN" type="DJN" vrtysux="DJN|N/DJN">N/DJN</code>
+            <code seoname="N/ENTR" symbol="N/WER" type="DJN" vrtysux="DJN|N/WER">N/ENTR</code>
+            <code seoname="P/METH" symbol="P/METH" type="DJN" vrtysux="DJN|P/METH">P/METH</code>
+            <code symbol="Consumer Prices Jump 0.4% in May"
+                type="FIRST_PUBLISH_HEADLINE" vrtysux="FIRST_PUBLISH_HEADLINE|Consumer Prices Jump 0.4% in May"/>
+            <code seoname="WSJ" symbol="WSJ" type="FLOW" vrtysux="FLOW|WSJ">WSJ</code>
+            <code seoname="WSJ.com" symbol="WSJ.com" type="FLOW" vrtysux="FLOW|WSJ.com">WSJ.com</code>
+            <code seoname="WSJAsia" symbol="WSJAsia" type="FLOW" vrtysux="FLOW|WSJAsia">WSJAsia</code>
+            <code seoname="WSJEurope" symbol="WSJEurope" type="FLOW" vrtysux="FLOW|WSJEurope">WSJEurope</code>
+            <code seoname="WSJ Japanese" symbol="WSJ Japanese"
+                type="FLOW" vrtysux="FLOW|WSJ Japanese">WSJ Japanese</code>
+            <code seoname="WSJSunday" symbol="WSJSunday" type="FLOW" vrtysux="FLOW|WSJSunday">WSJSunday</code>
+            <code symbol="Uptick in Inflation Could Pressure Fed"
+                type="HEADLINE" vrtysux="HEADLINE|Uptick in Inflation Could Pressure Fed"/>
+            <code seoname="0500" symbol="0500" type="INDUSTRY" vrtysux="INDUSTRY|0500">0500</code>
+            <code seoname="DEN" symbol="DEN" type="INDUSTRY" vrtysux="INDUSTRY|DEN">DEN</code>
+            <code seoname="ECN" symbol="ECN" type="JCODE" vrtysux="JCODE|ECN">ECN</code>
+            <code seoname="CONSUMER_PRICE_INDEX"
+                symbol="CONSUMER_PRICE_INDEX" type="KEYWORD" vrtysux="KEYWORD|CONSUMER_PRICE_INDEX">CONSUMER_PRICE_INDEX</code>
+            <code seoname="CONSUMER_PRICES" symbol="CONSUMER_PRICES"
+                type="KEYWORD" vrtysux="KEYWORD|CONSUMER_PRICES">CONSUMER_PRICES</code>
+            <code seoname="CONSUMER PRICE INDEX"
+                symbol="CONSUMER PRICE INDEX" type="KEYWORD" vrtysux="KEYWORD|CONSUMER PRICE INDEX">CONSUMER PRICE INDEX</code>
+            <code seoname="CONSUMER PRICES" symbol="CONSUMER PRICES"
+                type="KEYWORD" vrtysux="KEYWORD|CONSUMER PRICES">CONSUMER PRICES</code>
+            <code seoname="CORE_PRICES" symbol="CORE_PRICES"
+                type="KEYWORD" vrtysux="KEYWORD|CORE_PRICES">CORE_PRICES</code>
+            <code seoname="CORE PRICES" symbol="CORE PRICES"
+                type="KEYWORD" vrtysux="KEYWORD|CORE PRICES">CORE PRICES</code>
+            <code seoname="CPI" symbol="CPI" type="KEYWORD" vrtysux="KEYWORD|CPI">CPI</code>
+            <code seoname="FOOD_PRICES" symbol="FOOD_PRICES"
+                type="KEYWORD" vrtysux="KEYWORD|FOOD_PRICES">FOOD_PRICES</code>
+            <code seoname="FOOD PRICES" symbol="FOOD PRICES"
+                type="KEYWORD" vrtysux="KEYWORD|FOOD PRICES">FOOD PRICES</code>
+            <code seoname="INFLATION" symbol="INFLATION" type="KEYWORD" vrtysux="KEYWORD|INFLATION">INFLATION</code>
+            <code seoname="MAY" symbol="MAY" type="KEYWORD" vrtysux="KEYWORD|MAY">MAY</code>
+            <code seoname="RETAIL_INFLATION" symbol="RETAIL_INFLATION"
+                type="KEYWORD" vrtysux="KEYWORD|RETAIL_INFLATION">RETAIL_INFLATION</code>
+            <code seoname="RETAIL INFLATION" symbol="RETAIL INFLATION"
+                type="KEYWORD" vrtysux="KEYWORD|RETAIL INFLATION">RETAIL INFLATION</code>
+            <code seoname="US_ECONOMIC_GROWTH"
+                symbol="US_ECONOMIC_GROWTH" type="KEYWORD" vrtysux="KEYWORD|US_ECONOMIC_GROWTH">US_ECONOMIC_GROWTH</code>
+            <code seoname="US_ECONOMY" symbol="US_ECONOMY"
+                type="KEYWORD" vrtysux="KEYWORD|US_ECONOMY">US_ECONOMY</code>
+            <code seoname="US ECONOMIC GROWTH"
+                symbol="US ECONOMIC GROWTH" type="KEYWORD" vrtysux="KEYWORD|US ECONOMIC GROWTH">US ECONOMIC GROWTH</code>
+            <code seoname="US ECONOMY" symbol="US ECONOMY"
+                type="KEYWORD" vrtysux="KEYWORD|US ECONOMY">US ECONOMY</code>
+            <code seoname="NP/PMDA" symbol="NP/PMDA" type="NDJN" vrtysux="NDJN|NP/PMDA">NP/PMDA</code>
+            <code symbol="SB100014240527023033843045796299929120398083"
+                type="NWCHAIN" vrtysux="NWCHAIN|SB100014240527023033843045796299929120398083"/>
+            <code symbol="SYND" type="RELAY" vrtysux="RELAY|SYND"/>
+            <code seoname="CODES_REVIEWED" symbol="CODES_REVIEWED"
+                type="STATISTIC" vrtysux="STATISTIC|CODES_REVIEWED">CODES_REVIEWED</code>
+            <code seoname="Economy" symbol="OECN" type="SUBJECT" vrtysux="SUBJECT|OECN">Economy</code>
+            <code seoname="ONEW" symbol="ONEW" type="SUBJECT" vrtysux="SUBJECT|ONEW">ONEW</code>
+            <code seoname="Politics &amp; Policy" symbol="OPOL"
+                type="SUBJECT" vrtysux="SUBJECT|OPOL">Politics &amp; Policy</code>
+            <properties>
+                <property>
+                    <type>author</type>
+                    <value>Josh Mitchell</value>
+                    <itemid>author|Josh Mitchell</itemid>
+                    <properties>
+                        <property>
+                            <type>extractedtext</type>
+                            <value>Josh Mitchell</value>
+                        </property>
+                        <property>
+                            <type>name</type>
+                            <value>Josh Mitchell</value>
+                        </property>
+                        <property>
+                            <type>rank</type>
+                            <value>1</value>
+                        </property>
+                        <property>
+                            <type>topicid</type>
+                            <value>7543</value>
+                        </property>
+                        <property>
+                            <type>author</type>
+                            <value>Josh Mitchell</value>
+                        </property>
+                        <property>
+                            <type>id</type>
+                            <value>Josh Mitchell</value>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>co</type>
+                    <value>fed</value>
+                    <itemid>co|fed</itemid>
+                    <properties>
+                        <property>
+                            <type>confidence</type>
+                            <value>93</value>
+                        </property>
+                        <property>
+                            <type>confidencerange</type>
+                            <value>high</value>
+                        </property>
+                        <property>
+                            <type>displayname</type>
+                            <value>Federal Reserve</value>
+                        </property>
+                        <property>
+                            <type>extractedtext</type>
+                            <value>Federal Reserve</value>
+                        </property>
+                        <property>
+                            <type>fcode</type>
+                            <value>fed</value>
+                        </property>
+                        <property>
+                            <type>name</type>
+                            <value>Federal Reserve</value>
+                        </property>
+                        <property>
+                            <type>occurs</type>
+                            <value>true</value>
+                        </property>
+                        <property>
+                            <type>onlinesignificance</type>
+                            <value>prominent</value>
+                        </property>
+                        <property>
+                            <type>relevance</type>
+                            <value>82</value>
+                        </property>
+                        <property>
+                            <type>relevancerange</type>
+                            <value>high</value>
+                        </property>
+                        <property>
+                            <type>significance</type>
+                            <value>prominent</value>
+                        </property>
+                        <property>
+                            <type>source</type>
+                            <value>FACTIVA</value>
+                        </property>
+                        <property>
+                            <type>subcat</type>
+                            <value>org</value>
+                        </property>
+                        <property>
+                            <type>why</type>
+                            <value>about</value>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>co</type>
+                    <value>usdlab</value>
+                    <itemid>co|usdlab</itemid>
+                    <properties>
+                        <property>
+                            <type>fcode</type>
+                            <value>usdlab</value>
+                        </property>
+                        <property>
+                            <type>onlinesignificance</type>
+                            <value>prominent</value>
+                        </property>
+                        <property>
+                            <type>significance</type>
+                            <value>prominent</value>
+                        </property>
+                        <property>
+                            <type>source</type>
+                            <value>FACTIVA</value>
+                        </property>
+                        <property>
+                            <type>subcat</type>
+                            <value>org</value>
+                        </property>
+                        <property>
+                            <type>why</type>
+                            <value>about</value>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>co</type>
+                    <value>frbny</value>
+                    <itemid>co|frbny</itemid>
+                    <properties>
+                        <property>
+                            <type>_overridden</type>
+                            <value>true</value>
+                        </property>
+                        <property>
+                            <type>confidence</type>
+                            <value>94</value>
+                        </property>
+                        <property>
+                            <type>confidencerange</type>
+                            <value>high</value>
+                        </property>
+                        <property>
+                            <type>extractedtext</type>
+                            <value>The Fed</value>
+                        </property>
+                        <property>
+                            <type>fcode</type>
+                            <value>frbny</value>
+                        </property>
+                        <property>
+                            <type>name</type>
+                            <value>The Fed</value>
+                        </property>
+                        <property>
+                            <type>onlinesignificance</type>
+                            <value>passing-mention</value>
+                        </property>
+                        <property>
+                            <type>relevance</type>
+                            <value>81</value>
+                        </property>
+                        <property>
+                            <type>relevancerange</type>
+                            <value>high</value>
+                        </property>
+                        <property>
+                            <type>significance</type>
+                            <value>passing</value>
+                        </property>
+                        <property>
+                            <type>source</type>
+                            <value>FACTIVA</value>
+                        </property>
+                        <property>
+                            <type>subcat</type>
+                            <value>org</value>
+                        </property>
+                        <property>
+                            <type>why</type>
+                            <value>occur</value>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>co</type>
+                    <value>compop</value>
+                    <itemid>co|compop</itemid>
+                    <properties>
+                        <property>
+                            <type>_overridden</type>
+                            <value>true</value>
+                        </property>
+                        <property>
+                            <type>confidence</type>
+                            <value>93</value>
+                        </property>
+                        <property>
+                            <type>confidencerange</type>
+                            <value>high</value>
+                        </property>
+                        <property>
+                            <type>extractedtext</type>
+                            <value>CPI</value>
+                        </property>
+                        <property>
+                            <type>fcode</type>
+                            <value>compop</value>
+                        </property>
+                        <property>
+                            <type>name</type>
+                            <value>CPI</value>
+                        </property>
+                        <property>
+                            <type>relevance</type>
+                            <value>1</value>
+                        </property>
+                        <property>
+                            <type>relevancerange</type>
+                            <value>verylow</value>
+                        </property>
+                        <property>
+                            <type>source</type>
+                            <value>FACTIVA</value>
+                        </property>
+                        <property>
+                            <type>subcat</type>
+                            <value>com</value>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>co</type>
+                    <value>labdcu</value>
+                    <itemid>co|labdcu</itemid>
+                    <properties>
+                        <property>
+                            <type>_overridden</type>
+                            <value>true</value>
+                        </property>
+                        <property>
+                            <type>confidence</type>
+                            <value>91</value>
+                        </property>
+                        <property>
+                            <type>confidencerange</type>
+                            <value>high</value>
+                        </property>
+                        <property>
+                            <type>extractedtext</type>
+                            <value>Labor Department</value>
+                        </property>
+                        <property>
+                            <type>fcode</type>
+                            <value>labdcu</value>
+                        </property>
+                        <property>
+                            <type>name</type>
+                            <value>Labor Department</value>
+                        </property>
+                        <property>
+                            <type>relevance</type>
+                            <value>12</value>
+                        </property>
+                        <property>
+                            <type>relevancerange</type>
+                            <value>verylow</value>
+                        </property>
+                        <property>
+                            <type>source</type>
+                            <value>FACTIVA</value>
+                        </property>
+                        <property>
+                            <type>subcat</type>
+                            <value>com</value>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>co</type>
+                    <value>RDQ Economics</value>
+                    <itemid>co|RDQ Economics</itemid>
+                    <properties>
+                        <property>
+                            <type>displayname</type>
+                            <value>RDQ Economics</value>
+                        </property>
+                        <property>
+                            <type>extractedtext</type>
+                            <value>RDQ Economics</value>
+                        </property>
+                        <property>
+                            <type>name</type>
+                            <value>RDQ Economics</value>
+                        </property>
+                        <property>
+                            <type>source</type>
+                            <value>FACTIVA</value>
+                        </property>
+                        <property>
+                            <type>subcat</type>
+                            <value>com</value>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>djn</type>
+                    <value>N/DJN</value>
+                    <itemid>djn|N/DJN</itemid>
+                    <properties>
+                        <property>
+                            <type>codetype</type>
+                            <value>djnCode</value>
+                        </property>
+                        <property>
+                            <type>name</type>
+                            <value>N/DJN</value>
+                        </property>
+                        <property>
+                            <type>source</type>
+                            <value>MANUAL</value>
+                        </property>
+                        <property>
+                            <type>status</type>
+                            <value>modified</value>
+                        </property>
+                        <property>
+                            <type>value</type>
+                            <value>N/DJN</value>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>djn</type>
+                    <value>N/WER</value>
+                    <itemid>djn|N/WER</itemid>
+                    <properties>
+                        <property>
+                            <type>codetype</type>
+                            <value>djnCode</value>
+                        </property>
+                        <property>
+                            <type>name</type>
+                            <value>N/ENTR</value>
+                        </property>
+                        <property>
+                            <type>source</type>
+                            <value>MANUAL</value>
+                        </property>
+                        <property>
+                            <type>status</type>
+                            <value>modified</value>
+                        </property>
+                        <property>
+                            <type>value</type>
+                            <value>N/WER</value>
+                        </property>
+                        <property>
+                            <type>seoname</type>
+                            <value>N/ENTR</value>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>djn</type>
+                    <value>P/METH</value>
+                    <itemid>djn|P/METH</itemid>
+                    <properties>
+                        <property>
+                            <type>codetype</type>
+                            <value>djnCode</value>
+                        </property>
+                        <property>
+                            <type>name</type>
+                            <value>P/METH</value>
+                        </property>
+                        <property>
+                            <type>source</type>
+                            <value>MANUAL</value>
+                        </property>
+                        <property>
+                            <type>status</type>
+                            <value>modified</value>
+                        </property>
+                        <property>
+                            <type>value</type>
+                            <value>P/METH</value>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>djn</type>
+                    <value/>
+                    <itemid>djn|</itemid>
+                </property>
+                <property>
+                    <type>first_publish_headline</type>
+                    <value>Consumer Prices Jump 0.4% in May</value>
+                    <itemid>first_publish_headline|Consumer Prices Jump 0.4% in May</itemid>
+                </property>
+                <property>
+                    <type>flow</type>
+                    <value>WSJ.com</value>
+                    <itemid>flow|WSJ.com</itemid>
+                    <properties>
+                        <property>
+                            <type>name</type>
+                            <value>WSJ.com</value>
+                        </property>
+                        <property>
+                            <type>status</type>
+                            <value>modified</value>
+                        </property>
+                        <property>
+                            <type>title</type>
+                            <value>Product</value>
+                        </property>
+                        <property>
+                            <type>value</type>
+                            <value>WSJ.com</value>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>flow</type>
+                    <value>WSJ</value>
+                    <itemid>flow|WSJ</itemid>
+                    <properties>
+                        <property>
+                            <type>name</type>
+                            <value>WSJ</value>
+                        </property>
+                        <property>
+                            <type>status</type>
+                            <value>modified</value>
+                        </property>
+                        <property>
+                            <type>title</type>
+                            <value>Product</value>
+                        </property>
+                        <property>
+                            <type>value</type>
+                            <value>WSJ</value>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>flow</type>
+                    <value>WSJAsia</value>
+                    <itemid>flow|WSJAsia</itemid>
+                    <properties>
+                        <property>
+                            <type>name</type>
+                            <value>WSJAsia</value>
+                        </property>
+                        <property>
+                            <type>status</type>
+                            <value>modified</value>
+                        </property>
+                        <property>
+                            <type>title</type>
+                            <value>Product</value>
+                        </property>
+                        <property>
+                            <type>value</type>
+                            <value>WSJAsia</value>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>flow</type>
+                    <value>WSJEurope</value>
+                    <itemid>flow|WSJEurope</itemid>
+                    <properties>
+                        <property>
+                            <type>name</type>
+                            <value>WSJEurope</value>
+                        </property>
+                        <property>
+                            <type>status</type>
+                            <value>modified</value>
+                        </property>
+                        <property>
+                            <type>title</type>
+                            <value>Product</value>
+                        </property>
+                        <property>
+                            <type>value</type>
+                            <value>WSJEurope</value>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>flow</type>
+                    <value>WSJSunday</value>
+                    <itemid>flow|WSJSunday</itemid>
+                    <properties>
+                        <property>
+                            <type>name</type>
+                            <value>WSJSunday</value>
+                        </property>
+                        <property>
+                            <type>status</type>
+                            <value>modified</value>
+                        </property>
+                        <property>
+                            <type>title</type>
+                            <value>Product</value>
+                        </property>
+                        <property>
+                            <type>value</type>
+                            <value>WSJSunday</value>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>flow</type>
+                    <value>WSJ Japanese</value>
+                    <itemid>flow|WSJ Japanese</itemid>
+                    <properties>
+                        <property>
+                            <type>name</type>
+                            <value>WSJ Japanese</value>
+                        </property>
+                        <property>
+                            <type>status</type>
+                            <value>modified</value>
+                        </property>
+                        <property>
+                            <type>title</type>
+                            <value>Product</value>
+                        </property>
+                        <property>
+                            <type>value</type>
+                            <value>WSJ Japanese</value>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>headline</type>
+                    <value>Uptick in Inflation Could Pressure Fed</value>
+                    <itemid>headline|Uptick in Inflation Could Pressure Fed</itemid>
+                </property>
+                <property>
+                    <type>icbindustry</type>
+                    <value>0500</value>
+                    <itemid>icbindustry|0500</itemid>
+                    <properties>
+                        <property>
+                            <type>comments</type>
+                            <value>Keyword:DJII-INDUSTRY i1</value>
+                        </property>
+                        <property>
+                            <type>description</type>
+                            <value>03|Industries|Energy</value>
+                        </property>
+                        <property>
+                            <type>name</type>
+                            <value>0500</value>
+                        </property>
+                        <property>
+                            <type>source</type>
+                            <value>EXPANDER</value>
+                        </property>
+                        <property>
+                            <type>value</type>
+                            <value>0500</value>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>icbindustry</type>
+                    <value>DEN</value>
+                    <itemid>icbindustry|DEN</itemid>
+                    <properties>
+                        <property>
+                            <type>comments</type>
+                            <value>Keyword:DJII-INDUSTRY i1</value>
+                        </property>
+                        <property>
+                            <type>description</type>
+                            <value>Energy</value>
+                        </property>
+                        <property>
+                            <type>name</type>
+                            <value>DEN</value>
+                        </property>
+                        <property>
+                            <type>source</type>
+                            <value>EXPANDER</value>
+                        </property>
+                        <property>
+                            <type>value</type>
+                            <value>DEN</value>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>in</type>
+                    <value>i1</value>
+                    <itemid>in|i1</itemid>
+                    <properties>
+                        <property>
+                            <type>fcode</type>
+                            <value>i1</value>
+                        </property>
+                        <property>
+                            <type>name</type>
+                            <value>Energy</value>
+                        </property>
+                        <property>
+                            <type>onlinesignificance</type>
+                            <value>prominent</value>
+                        </property>
+                        <property>
+                            <type>significance</type>
+                            <value>prominent</value>
+                        </property>
+                        <property>
+                            <type>source</type>
+                            <value>FACTIVA</value>
+                        </property>
+                        <property>
+                            <type>why</type>
+                            <value>about</value>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>industry</type>
+                    <value>0500</value>
+                    <itemid>industry|0500</itemid>
+                    <properties>
+                        <property>
+                            <type>name</type>
+                            <value>0500</value>
+                        </property>
+                        <property>
+                            <type>source</type>
+                            <value>EXPANDER</value>
+                        </property>
+                        <property>
+                            <type>value</type>
+                            <value>0500</value>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>industry</type>
+                    <value>DEN</value>
+                    <itemid>industry|DEN</itemid>
+                    <properties>
+                        <property>
+                            <type>name</type>
+                            <value>DEN</value>
+                        </property>
+                        <property>
+                            <type>source</type>
+                            <value>EXPANDER</value>
+                        </property>
+                        <property>
+                            <type>value</type>
+                            <value>DEN</value>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>inset</type>
+                    <value>inset-1</value>
+                    <itemid>inset|inset-1</itemid>
+                </property>
+                <property>
+                    <type>jcode</type>
+                    <value>ECN</value>
+                    <itemid>jcode|ECN</itemid>
+                    <properties>
+                        <property>
+                            <type>comments</type>
+                            <value>Mapping:ARTICLETYPE=Economy</value>
+                        </property>
+                        <property>
+                            <type>description</type>
+                            <value>The Economy</value>
+                        </property>
+                        <property>
+                            <type>name</type>
+                            <value>ECN</value>
+                        </property>
+                        <property>
+                            <type>source</type>
+                            <value>EXPANDER</value>
+                        </property>
+                        <property>
+                            <type>value</type>
+                            <value>ECN</value>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>keyword</type>
+                    <value>RETAIL_INFLATION</value>
+                    <itemid>keyword|RETAIL_INFLATION</itemid>
+                    <properties>
+                        <property>
+                            <type>name</type>
+                            <value>RETAIL_INFLATION</value>
+                        </property>
+                        <property>
+                            <type>source</type>
+                            <value>EXPANDER</value>
+                        </property>
+                        <property>
+                            <type>value</type>
+                            <value>RETAIL_INFLATION</value>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>keyword</type>
+                    <value>CPI</value>
+                    <itemid>keyword|CPI</itemid>
+                    <properties>
+                        <property>
+                            <type>name</type>
+                            <value>CPI</value>
+                        </property>
+                        <property>
+                            <type>source</type>
+                            <value>EXPANDER</value>
+                        </property>
+                        <property>
+                            <type>value</type>
+                            <value>CPI</value>
+                        </property>
+                        <property>
+                            <type>status</type>
+                            <value>added</value>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>keyword</type>
+                    <value>MAY</value>
+                    <itemid>keyword|MAY</itemid>
+                    <properties>
+                        <property>
+                            <type>name</type>
+                            <value>MAY</value>
+                        </property>
+                        <property>
+                            <type>source</type>
+                            <value>EXPANDER</value>
+                        </property>
+                        <property>
+                            <type>value</type>
+                            <value>MAY</value>
+                        </property>
+                        <property>
+                            <type>status</type>
+                            <value>added</value>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>keyword</type>
+                    <value>US_ECONOMIC_GROWTH</value>
+                    <itemid>keyword|US_ECONOMIC_GROWTH</itemid>
+                    <properties>
+                        <property>
+                            <type>name</type>
+                            <value>US_ECONOMIC_GROWTH</value>
+                        </property>
+                        <property>
+                            <type>source</type>
+                            <value>EXPANDER</value>
+                        </property>
+                        <property>
+                            <type>value</type>
+                            <value>US_ECONOMIC_GROWTH</value>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>keyword</type>
+                    <value>US_ECONOMY</value>
+                    <itemid>keyword|US_ECONOMY</itemid>
+                    <properties>
+                        <property>
+                            <type>name</type>
+                            <value>US_ECONOMY</value>
+                        </property>
+                        <property>
+                            <type>source</type>
+                            <value>EXPANDER</value>
+                        </property>
+                        <property>
+                            <type>value</type>
+                            <value>US_ECONOMY</value>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>keyword</type>
+                    <value>CONSUMER_PRICES</value>
+                    <itemid>keyword|CONSUMER_PRICES</itemid>
+                    <properties>
+                        <property>
+                            <type>name</type>
+                            <value>CONSUMER_PRICES</value>
+                        </property>
+                        <property>
+                            <type>source</type>
+                            <value>EXPANDER</value>
+                        </property>
+                        <property>
+                            <type>value</type>
+                            <value>CONSUMER_PRICES</value>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>keyword</type>
+                    <value>FOOD_PRICES</value>
+                    <itemid>keyword|FOOD_PRICES</itemid>
+                    <properties>
+                        <property>
+                            <type>name</type>
+                            <value>FOOD_PRICES</value>
+                        </property>
+                        <property>
+                            <type>source</type>
+                            <value>EXPANDER</value>
+                        </property>
+                        <property>
+                            <type>value</type>
+                            <value>FOOD_PRICES</value>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>keyword</type>
+                    <value>CONSUMER_PRICE_INDEX</value>
+                    <itemid>keyword|CONSUMER_PRICE_INDEX</itemid>
+                    <properties>
+                        <property>
+                            <type>name</type>
+                            <value>CONSUMER_PRICE_INDEX</value>
+                        </property>
+                        <property>
+                            <type>source</type>
+                            <value>EXPANDER</value>
+                        </property>
+                        <property>
+                            <type>value</type>
+                            <value>CONSUMER_PRICE_INDEX</value>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>keyword</type>
+                    <value>CORE_PRICES</value>
+                    <itemid>keyword|CORE_PRICES</itemid>
+                    <properties>
+                        <property>
+                            <type>name</type>
+                            <value>CORE_PRICES</value>
+                        </property>
+                        <property>
+                            <type>source</type>
+                            <value>EXPANDER</value>
+                        </property>
+                        <property>
+                            <type>value</type>
+                            <value>CORE_PRICES</value>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>keyword</type>
+                    <value>INFLATION</value>
+                    <itemid>keyword|INFLATION</itemid>
+                    <properties>
+                        <property>
+                            <type>name</type>
+                            <value>INFLATION</value>
+                        </property>
+                        <property>
+                            <type>source</type>
+                            <value>EXPANDER</value>
+                        </property>
+                        <property>
+                            <type>value</type>
+                            <value>INFLATION</value>
+                        </property>
+                        <property>
+                            <type>status</type>
+                            <value>added</value>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>keyword</type>
+                    <value>CONSUMER PRICES</value>
+                    <itemid>keyword|CONSUMER PRICES</itemid>
+                    <properties>
+                        <property>
+                            <type>name</type>
+                            <value>CONSUMER PRICES</value>
+                        </property>
+                        <property>
+                            <type>status</type>
+                            <value>added</value>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>keyword</type>
+                    <value>RETAIL INFLATION</value>
+                    <itemid>keyword|RETAIL INFLATION</itemid>
+                    <properties>
+                        <property>
+                            <type>name</type>
+                            <value>RETAIL INFLATION</value>
+                        </property>
+                        <property>
+                            <type>status</type>
+                            <value>added</value>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>keyword</type>
+                    <value>US ECONOMIC GROWTH</value>
+                    <itemid>keyword|US ECONOMIC GROWTH</itemid>
+                    <properties>
+                        <property>
+                            <type>name</type>
+                            <value>US ECONOMIC GROWTH</value>
+                        </property>
+                        <property>
+                            <type>status</type>
+                            <value>added</value>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>keyword</type>
+                    <value>CORE PRICES</value>
+                    <itemid>keyword|CORE PRICES</itemid>
+                    <properties>
+                        <property>
+                            <type>name</type>
+                            <value>CORE PRICES</value>
+                        </property>
+                        <property>
+                            <type>status</type>
+                            <value>added</value>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>keyword</type>
+                    <value>FOOD PRICES</value>
+                    <itemid>keyword|FOOD PRICES</itemid>
+                    <properties>
+                        <property>
+                            <type>name</type>
+                            <value>FOOD PRICES</value>
+                        </property>
+                        <property>
+                            <type>status</type>
+                            <value>added</value>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>keyword</type>
+                    <value>CONSUMER PRICE INDEX</value>
+                    <itemid>keyword|CONSUMER PRICE INDEX</itemid>
+                    <properties>
+                        <property>
+                            <type>name</type>
+                            <value>CONSUMER PRICE INDEX</value>
+                        </property>
+                        <property>
+                            <type>status</type>
+                            <value>added</value>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>keyword</type>
+                    <value>US ECONOMY</value>
+                    <itemid>keyword|US ECONOMY</itemid>
+                    <properties>
+                        <property>
+                            <type>name</type>
+                            <value>US ECONOMY</value>
+                        </property>
+                        <property>
+                            <type>status</type>
+                            <value>added</value>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>media</type>
+                    <value>media-1</value>
+                    <itemid>media|media-1</itemid>
+                </property>
+                <property>
+                    <type>ndjn</type>
+                    <value>NP/PMDA</value>
+                    <itemid>ndjn|NP/PMDA</itemid>
+                    <properties>
+                        <property>
+                            <type>name</type>
+                            <value>NP/PMDA</value>
+                        </property>
+                        <property>
+                            <type>status</type>
+                            <value>modified</value>
+                        </property>
+                        <property>
+                            <type>title</type>
+                            <value>Publish to All At the Same Time</value>
+                        </property>
+                        <property>
+                            <type>value</type>
+                            <value>NP/PMDA</value>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>ns</type>
+                    <value>ecat</value>
+                    <itemid>ns|ecat</itemid>
+                    <properties>
+                        <property>
+                            <type>fcode</type>
+                            <value>ecat</value>
+                        </property>
+                        <property>
+                            <type>name</type>
+                            <value>Economic News</value>
+                        </property>
+                        <property>
+                            <type>onlinesignificance</type>
+                            <value>prominent</value>
+                        </property>
+                        <property>
+                            <type>significance</type>
+                            <value>prominent</value>
+                        </property>
+                        <property>
+                            <type>source</type>
+                            <value>FACTIVA</value>
+                        </property>
+                        <property>
+                            <type>why</type>
+                            <value>about</value>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>ns</type>
+                    <value>gcat</value>
+                    <itemid>ns|gcat</itemid>
+                    <properties>
+                        <property>
+                            <type>fcode</type>
+                            <value>gcat</value>
+                        </property>
+                        <property>
+                            <type>name</type>
+                            <value>Political/General News</value>
+                        </property>
+                        <property>
+                            <type>source</type>
+                            <value>FACTIVA</value>
+                        </property>
+                        <property>
+                            <type>why</type>
+                            <value>lineage</value>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>ns</type>
+                    <value>gpir</value>
+                    <itemid>ns|gpir</itemid>
+                    <properties>
+                        <property>
+                            <type>fcode</type>
+                            <value>gpir</value>
+                        </property>
+                        <property>
+                            <type>name</type>
+                            <value>Politics/International Relations</value>
+                        </property>
+                        <property>
+                            <type>source</type>
+                            <value>FACTIVA</value>
+                        </property>
+                        <property>
+                            <type>why</type>
+                            <value>lineage</value>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>ns</type>
+                    <value>gpol</value>
+                    <itemid>ns|gpol</itemid>
+                    <properties>
+                        <property>
+                            <type>fcode</type>
+                            <value>gpol</value>
+                        </property>
+                        <property>
+                            <type>name</type>
+                            <value>Domestic Politics</value>
+                        </property>
+                        <property>
+                            <type>source</type>
+                            <value>FACTIVA</value>
+                        </property>
+                        <property>
+                            <type>why</type>
+                            <value>lineage</value>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>ns</type>
+                    <value>gvbod</value>
+                    <itemid>ns|gvbod</itemid>
+                    <properties>
+                        <property>
+                            <type>fcode</type>
+                            <value>gvbod</value>
+                        </property>
+                        <property>
+                            <type>name</type>
+                            <value>Government Bodies</value>
+                        </property>
+                        <property>
+                            <type>source</type>
+                            <value>FACTIVA</value>
+                        </property>
+                        <property>
+                            <type>why</type>
+                            <value>lineage</value>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>ns</type>
+                    <value>gvexe</value>
+                    <itemid>ns|gvexe</itemid>
+                    <properties>
+                        <property>
+                            <type>fcode</type>
+                            <value>gvexe</value>
+                        </property>
+                        <property>
+                            <type>name</type>
+                            <value>Executive Branch</value>
+                        </property>
+                        <property>
+                            <type>source</type>
+                            <value>FACTIVA</value>
+                        </property>
+                        <property>
+                            <type>why</type>
+                            <value>lineage</value>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>ns</type>
+                    <value>E1103</value>
+                    <itemid>ns|E1103</itemid>
+                    <properties>
+                        <property>
+                            <type>fcode</type>
+                            <value>E1103</value>
+                        </property>
+                        <property>
+                            <type>name</type>
+                            <value>Inflation/Prices</value>
+                        </property>
+                        <property>
+                            <type>source</type>
+                            <value>MANUAL</value>
+                        </property>
+                        <property>
+                            <type>status</type>
+                            <value>added</value>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>ns</type>
+                    <value>ECPIN</value>
+                    <itemid>ns|ECPIN</itemid>
+                    <properties>
+                        <property>
+                            <type>fcode</type>
+                            <value>ECPIN</value>
+                        </property>
+                        <property>
+                            <type>name</type>
+                            <value>Consumer Price Index</value>
+                        </property>
+                        <property>
+                            <type>source</type>
+                            <value>MANUAL</value>
+                        </property>
+                        <property>
+                            <type>status</type>
+                            <value>added</value>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>ns</type>
+                    <value>GVLBR</value>
+                    <itemid>ns|GVLBR</itemid>
+                    <properties>
+                        <property>
+                            <type>fcode</type>
+                            <value>GVLBR</value>
+                        </property>
+                        <property>
+                            <type>name</type>
+                            <value>Labor Department</value>
+                        </property>
+                        <property>
+                            <type>source</type>
+                            <value>MANUAL</value>
+                        </property>
+                        <property>
+                            <type>status</type>
+                            <value>added</value>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>ns</type>
+                    <value>E11</value>
+                    <itemid>ns|E11</itemid>
+                    <properties>
+                        <property>
+                            <type>fcode</type>
+                            <value>E11</value>
+                        </property>
+                        <property>
+                            <type>name</type>
+                            <value>Economic Performance/Indicators</value>
+                        </property>
+                        <property>
+                            <type>source</type>
+                            <value>MANUAL</value>
+                        </property>
+                        <property>
+                            <type>status</type>
+                            <value>added</value>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>nwchain</type>
+                    <value>SB100014240527023033843045796299929120398083</value>
+                    <itemid>nwchain|SB100014240527023033843045796299929120398083</itemid>
+                </property>
+                <property>
+                    <type>pe</type>
+                    <value>John Ryding</value>
+                    <itemid>pe|John Ryding</itemid>
+                    <properties>
+                        <property>
+                            <type>displayname</type>
+                            <value>Ryding, John</value>
+                        </property>
+                        <property>
+                            <type>extractedtext</type>
+                            <value>John Ryding</value>
+                        </property>
+                        <property>
+                            <type>firstname</type>
+                            <value>John</value>
+                        </property>
+                        <property>
+                            <type>lastname</type>
+                            <value>Ryding</value>
+                        </property>
+                        <property>
+                            <type>name</type>
+                            <value>John Ryding</value>
+                        </property>
+                        <property>
+                            <type>source</type>
+                            <value>FACTIVA</value>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>re</type>
+                    <value>namz</value>
+                    <itemid>re|namz</itemid>
+                    <properties>
+                        <property>
+                            <type>fcode</type>
+                            <value>namz</value>
+                        </property>
+                        <property>
+                            <type>name</type>
+                            <value>North America</value>
+                        </property>
+                        <property>
+                            <type>source</type>
+                            <value>FACTIVA</value>
+                        </property>
+                        <property>
+                            <type>subcat</type>
+                            <value>snr</value>
+                        </property>
+                        <property>
+                            <type>why</type>
+                            <value>lineage</value>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>re</type>
+                    <value>USA</value>
+                    <itemid>re|USA</itemid>
+                    <properties>
+                        <property>
+                            <type>fcode</type>
+                            <value>USA</value>
+                        </property>
+                        <property>
+                            <type>name</type>
+                            <value>United States</value>
+                        </property>
+                        <property>
+                            <type>source</type>
+                            <value>MANUAL</value>
+                        </property>
+                        <property>
+                            <type>status</type>
+                            <value>added</value>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>relay</type>
+                    <value>SYND</value>
+                    <itemid>relay|SYND</itemid>
+                    <properties>
+                        <property>
+                            <type>name</type>
+                            <value>SYND</value>
+                        </property>
+                        <property>
+                            <type>source</type>
+                            <value>EXPANDER</value>
+                        </property>
+                        <property>
+                            <type>value</type>
+                            <value>SYND</value>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>statistic</type>
+                    <value>CODES_REVIEWED</value>
+                    <itemid>statistic|CODES_REVIEWED</itemid>
+                    <properties>
+                        <property>
+                            <type>name</type>
+                            <value>CODES_REVIEWED</value>
+                        </property>
+                        <property>
+                            <type>source</type>
+                            <value>EXPANDER</value>
+                        </property>
+                        <property>
+                            <type>value</type>
+                            <value>CODES_REVIEWED</value>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>subject</type>
+                    <value>ONEW</value>
+                    <itemid>subject|ONEW</itemid>
+                    <properties>
+                        <property>
+                            <type>comments</type>
+                            <value>Keyword:DJII-REGION usa,namz</value>
+                        </property>
+                        <property>
+                            <type>description</type>
+                            <value>01|US|US News</value>
+                        </property>
+                        <property>
+                            <type>name</type>
+                            <value>ONEW</value>
+                        </property>
+                        <property>
+                            <type>source</type>
+                            <value>EXPANDER</value>
+                        </property>
+                        <property>
+                            <type>value</type>
+                            <value>ONEW</value>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>subject</type>
+                    <value>OECN</value>
+                    <itemid>subject|OECN</itemid>
+                    <properties>
+                        <property>
+                            <type>comments</type>
+                            <value>Keyword:DJII-SUBJECT gvlbr,e1103,e1202,ecat,e11,gpol,ecpin</value>
+                        </property>
+                        <property>
+                            <type>description</type>
+                            <value>01|US|Economy</value>
+                        </property>
+                        <property>
+                            <type>name</type>
+                            <value>Economy</value>
+                        </property>
+                        <property>
+                            <type>source</type>
+                            <value>EXPANDER</value>
+                        </property>
+                        <property>
+                            <type>status</type>
+                            <value>modified</value>
+                        </property>
+                        <property>
+                            <type>value</type>
+                            <value>OECN</value>
+                        </property>
+                        <property>
+                            <type>seoname</type>
+                            <value>Economy</value>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>subject</type>
+                    <value>OPOL</value>
+                    <itemid>subject|OPOL</itemid>
+                    <properties>
+                        <property>
+                            <type>name</type>
+                            <value>Politics &amp; Policy</value>
+                        </property>
+                        <property>
+                            <type>status</type>
+                            <value>modified</value>
+                        </property>
+                        <property>
+                            <type>value</type>
+                            <value>OPOL</value>
+                        </property>
+                        <property>
+                            <type>seoname</type>
+                            <value>Politics &amp; Policy</value>
+                        </property>
+                    </properties>
+                </property>
+            </properties>
+        </self-codes>
+    </meta-data>
+    <summary id="S-SB10001424052702303384304579629992912039808.djml">
+        <summary-header/>
+        <alt-summary-body destination-type="THIS-ART" page="|SEO|">
+            <headline>
+                <main-hed>Uptick in Inflation Could Pressure Fed</main-hed>
+            </headline>
+            <p id="U15026471712dlF">A burst of higher inflation is fueling debate about whether the Federal Reserve should move sooner to reduce its support for the U.S. economy than currently anticipated.</p>
+        </alt-summary-body>
+        <alt-summary-body destination-type="THIS-ART" page="|Social|">
+            <headline>
+                <main-hed>Uptick in Inflation Could Pressure Fed</main-hed>
+            </headline>
+        </alt-summary-body>
+        <alt-summary-body destination-type="THIS-ART" page="|NW Alt Headline|">
+            <headline>
+                <main-hed>Uptick in Inflation Could Pressure Fed&#x2014;3rd Update</main-hed>
+            </headline>
+            <p/>
+        </alt-summary-body>
+        <summary-body>
+            <headline>
+                <main-hed>Uptick in Inflation Could Pressure Fed</main-hed>
+            </headline>
+            <p id="U15026471712wkF">A burst of higher inflation is fueling debate about whether the Federal Reserve should move sooner to reduce its support for the U.S. economy than currently anticipated.</p>
+        </summary-body>
+    </summary>
+    <article>
+        <article-header>
+            <nameloc id="i1-SB10001424052702303384304579629992912039808">
+                <nmlist nametype="ENTITY">http://online.wsj.com/public/page/news-politics-campaign.html</nmlist>
+            </nameloc>
+            <nameloc id="i2-SB10001424052702303384304579629992912039808">
+                <nmlist nametype="ENTITY">http://online.wsj.com/articles/imf-cuts-u-s-2014-growth-forecast-to-2-1402925865?KEYWORDS=International Monetary fund</nmlist>
+            </nameloc>
+            <nameloc id="i3-SB10001424052702303384304579629992912039808">
+                <nmlist nametype="ENTITY">http://online.wsj.com/articles/u-s-housing-starts-fall-6-5-in-may-1403008405</nmlist>
+            </nameloc>
+            <nameloc id="i4-SB10001424052702303384304579629992912039808">
+                <nmlist nametype="ENTITY">http://online.wsj.com/articles/u-s-producer-prices-fall-0-2-in-may-1402662745</nmlist>
+            </nameloc>
+            <nameloc id="i5-SB10001424052702303384304579629992912039808">
+                <nmlist nametype="ENTITY">http://blogs.wsj.com/washwire/2014/04/28/introducing-the-capital-journal-daybreak-newsletter/</nmlist>
+            </nameloc>
+            <nameloc id="i6-SB10001424052702303384304579629992912039808">
+                <nmlist nametype="ENTITY">mailto:joshua.mitchell@wsj.com</nmlist>
+            </nameloc>
+        </article-header>
+        <article-body>
+            <headline>
+                <main-hed>Uptick in Inflation Could Pressure Fed</main-hed>
+                <deck>Consumer Prices Post Fastest Increase Since February 2013</deck>
+            </headline>
+            <byline type="SIGNED">By <phrase topicid="7543" type="AUTHOR">Josh Mitchell</phrase>
+            </byline>
+            <media id="media-1" reuse-type="full" type="ILLUSTRATION">
+                <image alternate-text="image" height="344"
+                    slug="ECONOMY"
+                    src-id="NA-CB621_ECONOM_G_20140617170913.jpg" width="555"/>
+                <alt-image alternate-text="image" height="162"
+                    slug="ECONOMY"
+                    src-id="NA-CB621_ECONOM_D_20140617170913.jpg" width="262"/>
+            </media>
+            <p id="U15025531779BfE">A burst of higher inflation is fueling debate about whether the Federal Reserve should move sooner to reduce its support for the U.S. economy than currently anticipated.</p>
+            <p id="U15025531779XFD">Consumer prices rose 0.4% in May from a month earlier, the most in more than a year, the Labor Department said. That reflected higher household costs for everything from groceries and gasoline to rent and medical care. Core prices, which strip out volatile food and energy costs, climbed 0.3%, the most since August 2011.</p>
+            <p id="U150255317796uE">Tuesday's report showed the overall consumer-price index up 2.1% from a year earlier.</p>
+            <inset id="inset-1" param1="TABLETEXCLUDE"
+                style="3-UNIT-PLAIN" type="NORMAL">
+                <media id="media-2" reuse-type="full" type="ILLUSTRATION">
+                    <link icon="none"
+                        linkend="i1-SB10001424052702303384304579629992912039808" type="EXTERNAL">
+                        <image alternate-text="image" height="30"
+                            slug="2CAPJOURN0429"
+                            src-id="BN-CP013_2CAPJO_D_20140429201602.jpg" width="287"/>
+                    </link>
+                </media>
+                <list type="UNORDERED">
+                    <list-item>
+                        <link icon="none"
+                            linkend="i2-SB10001424052702303384304579629992912039808" type="EXTERNAL">
+                            <highlight type="BOLD">IMF Cuts U.S. 2014 Growth Forecast to 2%</highlight>
+                        </link>
+                    </list-item>
+                    <list-item>
+                        <link icon="none"
+                            linkend="i3-SB10001424052702303384304579629992912039808" type="EXTERNAL">
+                            <highlight type="BOLD">U.S. Housing Starts Fall 6.5% in May</highlight>
+                        </link>
+                    </list-item>
+                    <list-item>
+                        <link icon="none"
+                            linkend="i4-SB10001424052702303384304579629992912039808" type="EXTERNAL">
+                            <highlight type="BOLD">U.S. Producer Prices Fall 0.2% in May</highlight>
+                        </link>
+                    </list-item>
+                    <list-item>
+                        <link icon="none"
+                            linkend="i5-SB10001424052702303384304579629992912039808" type="EXTERNAL">
+                            <highlight type="BOLD">Capital Journal Daybreak</highlight>: Receive the Journal's morning rundown in your inbox</link>
+                    </list-item>
+                </list>
+            </inset>
+            <p id="U1502553177909G">The Fed targets annual inflation of 2%, a pace it views as healthy for price stability and economic growth. But the central bank prefers a separate measure&#x2014;the Commerce Department's price index for personal consumption expenditures&#x2014;that has shown less-dramatic price increases and inflation still running below its target, at 1.6% in April. </p>
+            <p id="U150255317795q">Still, both measures suggest inflation picked up in the spring after two years of sluggishness.</p>
+            <p id="U15025531779s1F">The stronger inflation reading, along with continued improvement in the labor market, could suggest the U.S. economy is performing better than Fed policy makers realize, economists said. The brightening picture is also likely to complicate debate within the Fed about when to raise short-term interest rates. The Fed has kept rates near zero since late 2008 and purchased trillions of dollars in bonds to lower borrowing costs and spur spending, investment and hiring. While the Fed has begun reducing the pace of its bond purchases, it has indicated it wouldn't raise rates until sometime in 2015.</p>
+            <p id="U150255317797GH">"We have an unemployment rate that's been falling faster than the Fed expected and now we've got an inflation rate that's been rising more than the Fed expected," said John Ryding, chief economist at RDQ Economics LLC. "It raises some interesting questions for those at the Fed who've argued that there's so much slack in the labor market. It really brings into question how much slack there is," along with how much more support the economy needs from the Fed.</p>
+            <p id="U150255317790nF">The Fed, which concludes a two-day policy meeting Wednesday, is expected to reduce its monthly bond purchases by another $10 billion to $35 billion a month, staying on track to wind down that program later this year.</p>
+            <p id="U15025531779KVG">Fed officials have been looking for higher inflation for reassurance the economy is stable as their bond-buying program ends. But if inflation continues to accelerate faster than the steady pace they have projected, officials could give stronger consideration to raising short-term interest rates sooner.</p>
+            <p id="U15025531779lzB">Fed officials are also set Wednesday to release updated forecasts for economic growth and inflation, which they use to steer their decision making.</p>
+            <p id="U150255317797cB">The central bank's preferred inflation gauge has run below target for two years, though it has picked up recently. In April, the PCE price index was up 1.6% from a year earlier, with core prices up 1.4%. </p>
+            <p id="U150255317798WD">In March, Fed officials projected inflation wouldn't hit its 2% target until next year.</p>
+            <p id="U15025531779t9F">The CPI has run at 2% or above for two straight months. The CPI and PCE price index typically run in tandem over time but often diverge month to month because they are calculated differently. Over the past 25 years, PCE inflation has been about 0.5 percentage point lower per year than the CPI.</p>
+            <p id="U15025531779azH">Tuesday's report on the Labor Department's consumer-price index showed prices rose across an array of items. Energy prices climbed 0.9%, though the Labor Department said that rise partly reflected semiannual adjustments to electricity bills in California. Food prices rose 0.5%. Shelter prices, reflecting home rent, increased 0.3%.</p>
+            <p id="U15025531779NdF">In a sign the labor market remains below full strength, Americans' inflation-adjusted average weekly earnings fell 0.1% in May from April. That reflected higher price increases that outpaced an increase in workers' pay. The average workweek held steady.</p>
+            <p>
+                <highlight
+                    type="BOLD">Write to </highlight>Josh Mitchell at <link
+                    linkend="i6-SB10001424052702303384304579629992912039808" type="EXTERNAL">joshua.mitchell@wsj.com</link>
+            </p>
+        </article-body>
+    </article>
+</article-doc>
+<!-- fastdynapage - sbkj2kwebappp10 - Tue 06/17/14 - 21:24:15 EDT -->

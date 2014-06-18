@@ -39,7 +39,10 @@ including the linked-to articles, in order to process the PAID/FREE flags.
             <xsl:when test="link">
                 <item>
                     <title><xsl:value-of select="//article-doc/article/article-body/headline/main-hed"/></title>
-                    <description><xsl:value-of select="."/></description>
+                    <description>
+                        <xsl:if test ="link/highlight"><b><xsl:apply-templates select="link/highlight"/></b></xsl:if><xsl:apply-templates select="link/text()"/>
+
+                    </description>
                     <xsl:apply-templates select="link"/>
                 </item>
             </xsl:when>

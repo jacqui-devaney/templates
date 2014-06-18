@@ -81,7 +81,7 @@
 						</xsl:call-template>
 					</xsl:attribute>
 					<xsl:if test="$boldText">
-						<b><xsl:value-of select="$boldText"/></b>
+						<strong><xsl:value-of select="$boldText"/></strong>
 					</xsl:if>
 
 					<xsl:value-of select="$text"/>

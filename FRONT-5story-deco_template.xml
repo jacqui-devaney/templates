@@ -57,56 +57,55 @@
 			}},
 			{if: =portrait, then: {
 				#b1:	{
-						top:358,
-						height:150
-				},
+						top:376,
+						height:125				},
 				#deco:	{
 					top:20,
-					height:321
+					height:340
 				},
 				#b2:	{
-						top:508,
-						height:155
+					top:509,
+					height:170
 				},
 				#b3:	{
-					top:508,
-					height:155
+					top:509,
+					height:170
 
 				},
 				#b4: {
-					top:508,
-					height:155
+					top:509,
+					height:170
 				},
 				#b5: {
-					top:671,
-					height:145
+					top:688,
+					height:117
 				}
 
 			}},
 			{if: =landscape, then: {
 				#b1:	{
 					top:20,
-					height:341
+					height:342
 				},
 				#deco:	{
 					top:20,
 					height:341
 				},
 				#b2:	{
-					top:380,
-					height:178
+					top:370,
+					height:187
 				},
 				#b3:	{
-					top:380,
-					height:178
+					top:370,
+					height:187
 				},
 				#b4:	{
-					top:380,
-					height:178
+					top:370,
+					height:187
 				},
 				#b5:	{
-					top:380,
-					height:180
+					top:370,
+					height:187
 				}
 			}}
 		]

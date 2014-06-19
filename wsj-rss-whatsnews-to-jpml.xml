@@ -57,7 +57,7 @@
 					</xsl:choose>
 					<span class="item-description"><xsl:call-template name="linked_text">
 						<xsl:with-param name="link"><xsl:value-of select="guid"/></xsl:with-param>
-						<xsl:with-param name="text"><xsl:value-of select="description/text()"/></xsl:with-param>
+						<xsl:with-param name="text"><xsl:value-of select="description/text()[normalize-space(.)]"/></xsl:with-param>
 						<xsl:with-param name="boldText"><xsl:value-of select="description/b"/></xsl:with-param>
 					</xsl:call-template>
 					</span>

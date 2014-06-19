@@ -1,0 +1,2237 @@
+<?xml version="1.0" encoding="ASCII"?>
+
+<article-doc ads="ADS-NOT-ALLOWED" column=""
+    copyright="Dow Jones &amp; Company, Inc." date="2014-06-18 23:33"
+    date-type="auto" display-name="Economy" embargo=""
+    guid="d23c0862-f709-11e3-af5b-01212803fad6"
+    id="SB10001424052702304489104579632413527149666.djml"
+    language="en-us" last-pub-date="2014-06-19 11:13" level="NORMAL"
+    major-revision-date="2014-06-18 23:33"
+    orig-obj-ref="998a3bd8-f713-11e3-af5b-00212803fad6"
+    orig-obj-src="Methode" orig-pub-date="2014-06-18 14:09" page="US"
+    product="WSJ.com"
+    publication="The Wall Street Journal Interactive Edition"
+    revision-type="minor"
+    root-id="SB00001424052702304489104579632413527149666"
+    section="Economy"
+    seo-id="fed-ups-projections-for-short-term-interest-rates-1403114981"
+    seo-url="http://online.wsj.com/articles/fed-ups-projections-for-short-term-interest-rates-1403114981"
+    type="Economy"
+    url="http://online.wsj.com/articles/fed-ups-projections-for-short-term-interest-rates-1403114981" version="37">
+    <meta-data>
+        <self-codes>
+            <code seoname="Jon Hilsenrath" symbol="Jon Hilsenrath"
+                type="AUTHOR" vrtysux="AUTHOR|Jon Hilsenrath">Jon Hilsenrath</code>
+            <code seoname="YES" symbol="YES" type="COLUMN" vrtysux="COLUMN|YES">YES</code>
+            <code seoname="0" symbol="0" type="DELAY" vrtysux="DELAY|0">0</code>
+            <code seoname="Federal Reserve" symbol="fed"
+                type="DJII-COMPANY" vrtysux="DJII-COMPANY|fed">Federal Reserve</code>
+            <code seoname="U.S. Treasury" symbol="usdtr"
+                type="DJII-COMPANY" vrtysux="DJII-COMPANY|usdtr">U.S. Treasury</code>
+            <code seoname="Janet Yellen" symbol="110608003"
+                type="DJII-PERSON" vrtysux="DJII-PERSON|110608003">Janet Yellen</code>
+            <code seoname="North America" symbol="namz"
+                type="DJII-REGION" vrtysux="DJII-REGION|namz">North America</code>
+            <code seoname="United States" symbol="usa"
+                type="DJII-REGION" vrtysux="DJII-REGION|usa">United States</code>
+            <code seoname="Economic Performance/Indicators" symbol="e11"
+                type="DJII-SUBJECT" vrtysux="DJII-SUBJECT|e11">Economic Performance/Indicators</code>
+            <code seoname="Employment/Unemployment" symbol="e1116"
+                type="DJII-SUBJECT" vrtysux="DJII-SUBJECT|e1116">Employment/Unemployment</code>
+            <code seoname="Economic/Monetary Policy" symbol="e12"
+                type="DJII-SUBJECT" vrtysux="DJII-SUBJECT|e12">Economic/Monetary Policy</code>
+            <code seoname="Interest Rates" symbol="e1202"
+                type="DJII-SUBJECT" vrtysux="DJII-SUBJECT|e1202">Interest Rates</code>
+            <code seoname="Economic News" symbol="ecat"
+                type="DJII-SUBJECT" vrtysux="DJII-SUBJECT|ecat">Economic News</code>
+            <code seoname="G/FED" symbol="G/FED" type="DJN" vrtysux="DJN|G/FED">G/FED</code>
+            <code seoname="N/BON" symbol="N/BON" type="DJN" vrtysux="DJN|N/BON">N/BON</code>
+            <code seoname="N/CBI" symbol="N/CBI" type="DJN" vrtysux="DJN|N/CBI">N/CBI</code>
+            <code seoname="n/djn" symbol="n/djn" type="DJN" vrtysux="DJN|n/djn">n/djn</code>
+            <code seoname="N/EMP" symbol="N/EMP" type="DJN" vrtysux="DJN|N/EMP">N/EMP</code>
+            <code seoname="N/FRP" symbol="N/FRP" type="DJN" vrtysux="DJN|N/FRP">N/FRP</code>
+            <code seoname="N/GENI" symbol="N/GENI" type="DJN" vrtysux="DJN|N/GENI">N/GENI</code>
+            <code seoname="N/IEN" symbol="N/IEN" type="DJN" vrtysux="DJN|N/IEN">N/IEN</code>
+            <code seoname="N/MKT" symbol="N/MKT" type="DJN" vrtysux="DJN|N/MKT">N/MKT</code>
+            <code seoname="N/SDT" symbol="N/SDT" type="DJN" vrtysux="DJN|N/SDT">N/SDT</code>
+            <code seoname="n/wer" symbol="n/wer" type="DJN" vrtysux="DJN|n/wer">n/wer</code>
+            <code seoname="P/HDL" symbol="P/HDL" type="DJN" vrtysux="DJN|P/HDL">P/HDL</code>
+            <code seoname="p/meth" symbol="p/meth" type="DJN" vrtysux="DJN|p/meth">p/meth</code>
+            <code seoname="R/NME" symbol="R/NME" type="DJN" vrtysux="DJN|R/NME">R/NME</code>
+            <code seoname="R/US" symbol="R/US" type="DJN" vrtysux="DJN|R/US">R/US</code>
+            <code
+                symbol="Fed Ups Projections for Short-Term Interest Rates"
+                type="FIRST_PUBLISH_HEADLINE" vrtysux="FIRST_PUBLISH_HEADLINE|Fed Ups Projections for Short-Term Interest Rates"/>
+            <code seoname="WSJ" symbol="WSJ" type="FLOW" vrtysux="FLOW|WSJ">WSJ</code>
+            <code seoname="WSJ.com" symbol="WSJ.com" type="FLOW" vrtysux="FLOW|WSJ.com">WSJ.com</code>
+            <code seoname="WSJAsia" symbol="WSJAsia" type="FLOW" vrtysux="FLOW|WSJAsia">WSJAsia</code>
+            <code seoname="WSJEurope" symbol="WSJEurope" type="FLOW" vrtysux="FLOW|WSJEurope">WSJEurope</code>
+            <code seoname="WSJ Japanese" symbol="WSJ Japanese"
+                type="FLOW" vrtysux="FLOW|WSJ Japanese">WSJ Japanese</code>
+            <code seoname="WSJSunday" symbol="WSJSunday" type="FLOW" vrtysux="FLOW|WSJSunday">WSJSunday</code>
+            <code seoname="0" symbol="0" type="GENERALDELAY" vrtysux="GENERALDELAY|0">0</code>
+            <code
+                symbol="Fed Keeps Rates Unchanged, Sees Eventual Rise in 2015, 2016"
+                type="HEADLINE" vrtysux="HEADLINE|Fed Keeps Rates Unchanged, Sees Eventual Rise in 2015, 2016"/>
+            <code seoname="CPL" symbol="CPL" type="JCODE" vrtysux="JCODE|CPL">CPL</code>
+            <code seoname="ECN" symbol="ECN" type="JCODE" vrtysux="JCODE|ECN">ECN</code>
+            <code seoname="ECONOMY" symbol="ECONOMY" type="KEYWORD" vrtysux="KEYWORD|ECONOMY">ECONOMY</code>
+            <code seoname="FED CHAIRWOMAN JANET YELLEN"
+                symbol="FED CHAIRWOMAN JANET YELLEN" type="KEYWORD" vrtysux="KEYWORD|FED CHAIRWOMAN JANET YELLEN">FED CHAIRWOMAN JANET YELLEN</code>
+            <code seoname="FED CHIEF" symbol="FED CHIEF" type="KEYWORD" vrtysux="KEYWORD|FED CHIEF">FED CHIEF</code>
+            <code seoname="FEDERAL RESERVE" symbol="FEDERAL RESERVE"
+                type="KEYWORD" vrtysux="KEYWORD|FEDERAL RESERVE">FEDERAL RESERVE</code>
+            <code seoname="FEDERAL RESERVE CHAIRMAN"
+                symbol="FEDERAL RESERVE CHAIRMAN" type="KEYWORD" vrtysux="KEYWORD|FEDERAL RESERVE CHAIRMAN">FEDERAL RESERVE CHAIRMAN</code>
+            <code seoname="INFLATION" symbol="INFLATION" type="KEYWORD" vrtysux="KEYWORD|INFLATION">INFLATION</code>
+            <code seoname="INTEREST RATES" symbol="INTEREST RATES"
+                type="KEYWORD" vrtysux="KEYWORD|INTEREST RATES">INTEREST RATES</code>
+            <code seoname="JANET YELLEN" symbol="JANET YELLEN"
+                type="KEYWORD" vrtysux="KEYWORD|JANET YELLEN">JANET YELLEN</code>
+            <code seoname="THE FED" symbol="THE FED" type="KEYWORD" vrtysux="KEYWORD|THE FED">THE FED</code>
+            <code seoname="UNEMPLOYMENT RATE" symbol="UNEMPLOYMENT RATE"
+                type="KEYWORD" vrtysux="KEYWORD|UNEMPLOYMENT RATE">UNEMPLOYMENT RATE</code>
+            <code seoname="YELLEN" symbol="YELLEN" type="KEYWORD" vrtysux="KEYWORD|YELLEN">YELLEN</code>
+            <code seoname="np/pmda" symbol="np/pmda" type="NDJN" vrtysux="NDJN|np/pmda">np/pmda</code>
+            <code seoname="SB10001424052702304489104579632413527149666"
+                symbol="SB10001424052702304489104579632413527149666"
+                type="NWCHAIN" vrtysux="NWCHAIN|SB10001424052702304489104579632413527149666">SB10001424052702304489104579632413527149666</code>
+            <code seoname="SB100014240527023044891045796324135271496662"
+                symbol="SB100014240527023044891045796324135271496662"
+                type="NWCHAIN" vrtysux="NWCHAIN|SB100014240527023044891045796324135271496662">SB100014240527023044891045796324135271496662</code>
+            <code seoname="SB100014240527023044891045796324135271496663"
+                symbol="SB100014240527023044891045796324135271496663"
+                type="NWCHAIN" vrtysux="NWCHAIN|SB100014240527023044891045796324135271496663">SB100014240527023044891045796324135271496663</code>
+            <code symbol="SB100014240527023044891045796324135271496664"
+                type="NWCHAIN" vrtysux="NWCHAIN|SB100014240527023044891045796324135271496664"/>
+            <code seoname="Yellen, Janet" symbol="Yellen, Janet"
+                type="PERSON" vrtysux="PERSON|Yellen, Janet">Yellen, Janet</code>
+            <code symbol="SYND" type="RELAY" vrtysux="RELAY|SYND"/>
+            <code seoname="CODES_REVIEWED" symbol="CODES_REVIEWED"
+                type="STATISTIC" vrtysux="STATISTIC|CODES_REVIEWED">CODES_REVIEWED</code>
+            <code seoname="Economy" symbol="OECN" type="SUBJECT" vrtysux="SUBJECT|OECN">Economy</code>
+            <code seoname="US News" symbol="ONEW" type="SUBJECT" vrtysux="SUBJECT|ONEW">US News</code>
+            <code seoname="wires" symbol="wires" type="WIREDISPLAY" vrtysux="WIREDISPLAY|wires">wires</code>
+            <properties>
+                <property>
+                    <type>author</type>
+                    <value>Jon Hilsenrath</value>
+                    <itemid>author|Jon Hilsenrath</itemid>
+                    <properties>
+                        <property>
+                            <type>name</type>
+                            <value>Jon Hilsenrath</value>
+                        </property>
+                        <property>
+                            <type>source</type>
+                            <value>EXPANDER</value>
+                        </property>
+                        <property>
+                            <type>value</type>
+                            <value>Jon Hilsenrath</value>
+                        </property>
+                        <property>
+                            <type>extractedtext</type>
+                            <value>Jon Hilsenrath</value>
+                        </property>
+                        <property>
+                            <type>rank</type>
+                            <value>1</value>
+                        </property>
+                        <property>
+                            <type>author</type>
+                            <value>Jon Hilsenrath</value>
+                        </property>
+                        <property>
+                            <type>id</type>
+                            <value>Jon Hilsenrath</value>
+                        </property>
+                        <property>
+                            <type>topicid</type>
+                            <value/>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>co</type>
+                    <value>fed</value>
+                    <itemid>co|fed</itemid>
+                    <properties>
+                        <property>
+                            <type>confidence</type>
+                            <value>93</value>
+                        </property>
+                        <property>
+                            <type>confidencerange</type>
+                            <value>high</value>
+                        </property>
+                        <property>
+                            <type>displayname</type>
+                            <value>Federal Reserve</value>
+                        </property>
+                        <property>
+                            <type>extractedtext</type>
+                            <value>Federal Reserve</value>
+                        </property>
+                        <property>
+                            <type>fcode</type>
+                            <value>fed</value>
+                        </property>
+                        <property>
+                            <type>name</type>
+                            <value>Federal Reserve</value>
+                        </property>
+                        <property>
+                            <type>occurs</type>
+                            <value>true</value>
+                        </property>
+                        <property>
+                            <type>onlinesignificance</type>
+                            <value>prominent</value>
+                        </property>
+                        <property>
+                            <type>relevance</type>
+                            <value>97</value>
+                        </property>
+                        <property>
+                            <type>relevancerange</type>
+                            <value>high</value>
+                        </property>
+                        <property>
+                            <type>significance</type>
+                            <value>passing</value>
+                        </property>
+                        <property>
+                            <type>source</type>
+                            <value>FACTIVA</value>
+                        </property>
+                        <property>
+                            <type>status</type>
+                            <value>modified</value>
+                        </property>
+                        <property>
+                            <type>subcat</type>
+                            <value>org</value>
+                        </property>
+                        <property>
+                            <type>why</type>
+                            <value>about</value>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>co</type>
+                    <value>usdtr</value>
+                    <itemid>co|usdtr</itemid>
+                    <properties>
+                        <property>
+                            <type>confidence</type>
+                            <value>100</value>
+                        </property>
+                        <property>
+                            <type>confidencerange</type>
+                            <value>high</value>
+                        </property>
+                        <property>
+                            <type>displayname</type>
+                            <value>U.S. Treasury</value>
+                        </property>
+                        <property>
+                            <type>extractedtext</type>
+                            <value>U.S. Treasury</value>
+                        </property>
+                        <property>
+                            <type>fcode</type>
+                            <value>usdtr</value>
+                        </property>
+                        <property>
+                            <type>name</type>
+                            <value>U.S. Treasury</value>
+                        </property>
+                        <property>
+                            <type>onlinesignificance</type>
+                            <value>passing-mention</value>
+                        </property>
+                        <property>
+                            <type>relevance</type>
+                            <value>1</value>
+                        </property>
+                        <property>
+                            <type>relevancerange</type>
+                            <value>verylow</value>
+                        </property>
+                        <property>
+                            <type>significance</type>
+                            <value>passing</value>
+                        </property>
+                        <property>
+                            <type>source</type>
+                            <value>FACTIVA</value>
+                        </property>
+                        <property>
+                            <type>status</type>
+                            <value>modified</value>
+                        </property>
+                        <property>
+                            <type>subcat</type>
+                            <value>org</value>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>column</type>
+                    <value>YES</value>
+                    <itemid>column|YES</itemid>
+                    <properties>
+                        <property>
+                            <type>name</type>
+                            <value>YES</value>
+                        </property>
+                        <property>
+                            <type>source</type>
+                            <value>EXPANDER</value>
+                        </property>
+                        <property>
+                            <type>value</type>
+                            <value>YES</value>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>delay</type>
+                    <value>0</value>
+                    <itemid>delay|0</itemid>
+                    <properties>
+                        <property>
+                            <type>name</type>
+                            <value>0</value>
+                        </property>
+                        <property>
+                            <type>source</type>
+                            <value>EXPANDER</value>
+                        </property>
+                        <property>
+                            <type>value</type>
+                            <value>0</value>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>djn</type>
+                    <value>G/FED</value>
+                    <itemid>djn|G/FED</itemid>
+                    <properties>
+                        <property>
+                            <type>fcode</type>
+                            <value>G/FED</value>
+                        </property>
+                        <property>
+                            <type>name</type>
+                            <value>G/FED</value>
+                        </property>
+                        <property>
+                            <type>occurs</type>
+                            <value>true</value>
+                        </property>
+                        <property>
+                            <type>onlinesignificance</type>
+                            <value>prominent</value>
+                        </property>
+                        <property>
+                            <type>significance</type>
+                            <value>prominent</value>
+                        </property>
+                        <property>
+                            <type>source</type>
+                            <value>FACTIVA</value>
+                        </property>
+                        <property>
+                            <type>why</type>
+                            <value>about</value>
+                        </property>
+                        <property>
+                            <type>source</type>
+                            <value>EXPANDER</value>
+                        </property>
+                        <property>
+                            <type>value</type>
+                            <value>G/FED</value>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>djn</type>
+                    <value>N/GENI</value>
+                    <itemid>djn|N/GENI</itemid>
+                    <properties>
+                        <property>
+                            <type>fcode</type>
+                            <value>N/GENI</value>
+                        </property>
+                        <property>
+                            <type>name</type>
+                            <value>N/GENI</value>
+                        </property>
+                        <property>
+                            <type>onlinesignificance</type>
+                            <value>prominent</value>
+                        </property>
+                        <property>
+                            <type>significance</type>
+                            <value>prominent</value>
+                        </property>
+                        <property>
+                            <type>source</type>
+                            <value>FACTIVA</value>
+                        </property>
+                        <property>
+                            <type>why</type>
+                            <value>about</value>
+                        </property>
+                        <property>
+                            <type>source</type>
+                            <value>EXPANDER</value>
+                        </property>
+                        <property>
+                            <type>value</type>
+                            <value>N/GENI</value>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>djn</type>
+                    <value>N/IEN</value>
+                    <itemid>djn|N/IEN</itemid>
+                    <properties>
+                        <property>
+                            <type>fcode</type>
+                            <value>N/IEN</value>
+                        </property>
+                        <property>
+                            <type>name</type>
+                            <value>N/IEN</value>
+                        </property>
+                        <property>
+                            <type>onlinesignificance</type>
+                            <value>prominent</value>
+                        </property>
+                        <property>
+                            <type>significance</type>
+                            <value>prominent</value>
+                        </property>
+                        <property>
+                            <type>source</type>
+                            <value>FACTIVA</value>
+                        </property>
+                        <property>
+                            <type>why</type>
+                            <value>about</value>
+                        </property>
+                        <property>
+                            <type>source</type>
+                            <value>EXPANDER</value>
+                        </property>
+                        <property>
+                            <type>value</type>
+                            <value>N/IEN</value>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>djn</type>
+                    <value>N/EMP</value>
+                    <itemid>djn|N/EMP</itemid>
+                    <properties>
+                        <property>
+                            <type>fcode</type>
+                            <value>N/EMP</value>
+                        </property>
+                        <property>
+                            <type>name</type>
+                            <value>N/EMP</value>
+                        </property>
+                        <property>
+                            <type>source</type>
+                            <value>FACTIVA</value>
+                        </property>
+                        <property>
+                            <type>why</type>
+                            <value>lineage</value>
+                        </property>
+                        <property>
+                            <type>source</type>
+                            <value>EXPANDER</value>
+                        </property>
+                        <property>
+                            <type>value</type>
+                            <value>N/EMP</value>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>djn</type>
+                    <value>R/US</value>
+                    <itemid>djn|R/US</itemid>
+                    <properties>
+                        <property>
+                            <type>fcode</type>
+                            <value>R/US</value>
+                        </property>
+                        <property>
+                            <type>name</type>
+                            <value>R/US</value>
+                        </property>
+                        <property>
+                            <type>onlinesignificance</type>
+                            <value>prominent</value>
+                        </property>
+                        <property>
+                            <type>significance</type>
+                            <value>prominent</value>
+                        </property>
+                        <property>
+                            <type>source</type>
+                            <value>FACTIVA</value>
+                        </property>
+                        <property>
+                            <type>why</type>
+                            <value>about</value>
+                        </property>
+                        <property>
+                            <type>source</type>
+                            <value>EXPANDER</value>
+                        </property>
+                        <property>
+                            <type>value</type>
+                            <value>R/US</value>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>djn</type>
+                    <value>R/NME</value>
+                    <itemid>djn|R/NME</itemid>
+                    <properties>
+                        <property>
+                            <type>fcode</type>
+                            <value>R/NME</value>
+                        </property>
+                        <property>
+                            <type>name</type>
+                            <value>R/NME</value>
+                        </property>
+                        <property>
+                            <type>source</type>
+                            <value>FACTIVA</value>
+                        </property>
+                        <property>
+                            <type>why</type>
+                            <value>lineage</value>
+                        </property>
+                        <property>
+                            <type>source</type>
+                            <value>EXPANDER</value>
+                        </property>
+                        <property>
+                            <type>value</type>
+                            <value>R/NME</value>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>djn</type>
+                    <value>n/djn</value>
+                    <itemid>djn|n/djn</itemid>
+                    <properties>
+                        <property>
+                            <type>codetype</type>
+                            <value>djnCode</value>
+                        </property>
+                        <property>
+                            <type>name</type>
+                            <value>N/DJN</value>
+                        </property>
+                        <property>
+                            <type>source</type>
+                            <value>MANUAL</value>
+                        </property>
+                        <property>
+                            <type>status</type>
+                            <value>modified</value>
+                        </property>
+                        <property>
+                            <type>title</type>
+                            <value>Equities Dominant</value>
+                        </property>
+                        <property>
+                            <type>value</type>
+                            <value>n/djn</value>
+                        </property>
+                        <property>
+                            <type>name</type>
+                            <value>n/djn</value>
+                        </property>
+                        <property>
+                            <type>source</type>
+                            <value>EXPANDER</value>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>djn</type>
+                    <value>n/wer</value>
+                    <itemid>djn|n/wer</itemid>
+                    <properties>
+                        <property>
+                            <type>codetype</type>
+                            <value>djnCode</value>
+                        </property>
+                        <property>
+                            <type>name</type>
+                            <value>N/ENTR</value>
+                        </property>
+                        <property>
+                            <type>source</type>
+                            <value>MANUAL</value>
+                        </property>
+                        <property>
+                            <type>status</type>
+                            <value>modified</value>
+                        </property>
+                        <property>
+                            <type>title</type>
+                            <value>Equities Dominant</value>
+                        </property>
+                        <property>
+                            <type>value</type>
+                            <value>n/wer</value>
+                        </property>
+                        <property>
+                            <type>name</type>
+                            <value>n/wer</value>
+                        </property>
+                        <property>
+                            <type>source</type>
+                            <value>EXPANDER</value>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>djn</type>
+                    <value>p/meth</value>
+                    <itemid>djn|p/meth</itemid>
+                    <properties>
+                        <property>
+                            <type>codetype</type>
+                            <value>djnCode</value>
+                        </property>
+                        <property>
+                            <type>name</type>
+                            <value>P/METH</value>
+                        </property>
+                        <property>
+                            <type>source</type>
+                            <value>MANUAL</value>
+                        </property>
+                        <property>
+                            <type>status</type>
+                            <value>modified</value>
+                        </property>
+                        <property>
+                            <type>value</type>
+                            <value>p/meth</value>
+                        </property>
+                        <property>
+                            <type>name</type>
+                            <value>p/meth</value>
+                        </property>
+                        <property>
+                            <type>source</type>
+                            <value>EXPANDER</value>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>djn</type>
+                    <value>N/BON</value>
+                    <itemid>djn|N/BON</itemid>
+                    <properties>
+                        <property>
+                            <type>name</type>
+                            <value>N/BON</value>
+                        </property>
+                        <property>
+                            <type>source</type>
+                            <value>EXPANDER</value>
+                        </property>
+                        <property>
+                            <type>value</type>
+                            <value>N/BON</value>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>djn</type>
+                    <value>N/CBI</value>
+                    <itemid>djn|N/CBI</itemid>
+                    <properties>
+                        <property>
+                            <type>name</type>
+                            <value>N/CBI</value>
+                        </property>
+                        <property>
+                            <type>source</type>
+                            <value>EXPANDER</value>
+                        </property>
+                        <property>
+                            <type>value</type>
+                            <value>N/CBI</value>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>djn</type>
+                    <value>N/FRP</value>
+                    <itemid>djn|N/FRP</itemid>
+                    <properties>
+                        <property>
+                            <type>name</type>
+                            <value>N/FRP</value>
+                        </property>
+                        <property>
+                            <type>source</type>
+                            <value>EXPANDER</value>
+                        </property>
+                        <property>
+                            <type>value</type>
+                            <value>N/FRP</value>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>djn</type>
+                    <value>P/HDL</value>
+                    <itemid>djn|P/HDL</itemid>
+                    <properties>
+                        <property>
+                            <type>name</type>
+                            <value>P/HDL</value>
+                        </property>
+                        <property>
+                            <type>source</type>
+                            <value>EXPANDER</value>
+                        </property>
+                        <property>
+                            <type>value</type>
+                            <value>P/HDL</value>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>djn</type>
+                    <value>N/MKT</value>
+                    <itemid>djn|N/MKT</itemid>
+                    <properties>
+                        <property>
+                            <type>name</type>
+                            <value>N/MKT</value>
+                        </property>
+                        <property>
+                            <type>source</type>
+                            <value>EXPANDER</value>
+                        </property>
+                        <property>
+                            <type>value</type>
+                            <value>N/MKT</value>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>djn</type>
+                    <value>N/SDT</value>
+                    <itemid>djn|N/SDT</itemid>
+                    <properties>
+                        <property>
+                            <type>name</type>
+                            <value>N/SDT</value>
+                        </property>
+                        <property>
+                            <type>source</type>
+                            <value>EXPANDER</value>
+                        </property>
+                        <property>
+                            <type>value</type>
+                            <value>N/SDT</value>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>first_publish_headline</type>
+                    <value>Fed Ups Projections for Short-Term Interest Rates</value>
+                    <itemid>first_publish_headline|Fed Ups Projections for Short-Term Interest Rates</itemid>
+                </property>
+                <property>
+                    <type>flow</type>
+                    <value>WSJ.com</value>
+                    <itemid>flow|WSJ.com</itemid>
+                    <properties>
+                        <property>
+                            <type>name</type>
+                            <value>WSJ.com</value>
+                        </property>
+                        <property>
+                            <type>status</type>
+                            <value>modified</value>
+                        </property>
+                        <property>
+                            <type>title</type>
+                            <value>Product</value>
+                        </property>
+                        <property>
+                            <type>value</type>
+                            <value>WSJ.com</value>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>flow</type>
+                    <value>WSJ</value>
+                    <itemid>flow|WSJ</itemid>
+                    <properties>
+                        <property>
+                            <type>name</type>
+                            <value>WSJ</value>
+                        </property>
+                        <property>
+                            <type>status</type>
+                            <value>modified</value>
+                        </property>
+                        <property>
+                            <type>title</type>
+                            <value>Product</value>
+                        </property>
+                        <property>
+                            <type>value</type>
+                            <value>WSJ</value>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>flow</type>
+                    <value>WSJAsia</value>
+                    <itemid>flow|WSJAsia</itemid>
+                    <properties>
+                        <property>
+                            <type>name</type>
+                            <value>WSJAsia</value>
+                        </property>
+                        <property>
+                            <type>status</type>
+                            <value>modified</value>
+                        </property>
+                        <property>
+                            <type>title</type>
+                            <value>Product</value>
+                        </property>
+                        <property>
+                            <type>value</type>
+                            <value>WSJAsia</value>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>flow</type>
+                    <value>WSJEurope</value>
+                    <itemid>flow|WSJEurope</itemid>
+                    <properties>
+                        <property>
+                            <type>name</type>
+                            <value>WSJEurope</value>
+                        </property>
+                        <property>
+                            <type>status</type>
+                            <value>modified</value>
+                        </property>
+                        <property>
+                            <type>title</type>
+                            <value>Product</value>
+                        </property>
+                        <property>
+                            <type>value</type>
+                            <value>WSJEurope</value>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>flow</type>
+                    <value>WSJSunday</value>
+                    <itemid>flow|WSJSunday</itemid>
+                    <properties>
+                        <property>
+                            <type>name</type>
+                            <value>WSJSunday</value>
+                        </property>
+                        <property>
+                            <type>status</type>
+                            <value>modified</value>
+                        </property>
+                        <property>
+                            <type>title</type>
+                            <value>Product</value>
+                        </property>
+                        <property>
+                            <type>value</type>
+                            <value>WSJSunday</value>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>flow</type>
+                    <value>WSJ Japanese</value>
+                    <itemid>flow|WSJ Japanese</itemid>
+                    <properties>
+                        <property>
+                            <type>name</type>
+                            <value>WSJ Japanese</value>
+                        </property>
+                        <property>
+                            <type>status</type>
+                            <value>modified</value>
+                        </property>
+                        <property>
+                            <type>title</type>
+                            <value>Product</value>
+                        </property>
+                        <property>
+                            <type>value</type>
+                            <value>WSJ Japanese</value>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>generaldelay</type>
+                    <value>0</value>
+                    <itemid>generaldelay|0</itemid>
+                    <properties>
+                        <property>
+                            <type>name</type>
+                            <value>0</value>
+                        </property>
+                        <property>
+                            <type>source</type>
+                            <value>EXPANDER</value>
+                        </property>
+                        <property>
+                            <type>value</type>
+                            <value>0</value>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>headline</type>
+                    <value>Fed Keeps Rates Unchanged, Sees Eventual Rise in 2015, 2016</value>
+                    <itemid>headline|Fed Keeps Rates Unchanged, Sees Eventual Rise in 2015, 2016</itemid>
+                </property>
+                <property>
+                    <type>inset</type>
+                    <value>inset-1</value>
+                    <itemid>inset|inset-1</itemid>
+                </property>
+                <property>
+                    <type>inset</type>
+                    <value>inset-2</value>
+                    <itemid>inset|inset-2</itemid>
+                </property>
+                <property>
+                    <type>jcode</type>
+                    <value>ECN</value>
+                    <itemid>jcode|ECN</itemid>
+                    <properties>
+                        <property>
+                            <type>comments</type>
+                            <value>Mapping:ARTICLETYPE=Economy</value>
+                        </property>
+                        <property>
+                            <type>description</type>
+                            <value>The Economy</value>
+                        </property>
+                        <property>
+                            <type>name</type>
+                            <value>ECN</value>
+                        </property>
+                        <property>
+                            <type>source</type>
+                            <value>EXPANDER</value>
+                        </property>
+                        <property>
+                            <type>value</type>
+                            <value>ECN</value>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>jcode</type>
+                    <value>CPL</value>
+                    <itemid>jcode|CPL</itemid>
+                    <properties>
+                        <property>
+                            <type>name</type>
+                            <value>CPL</value>
+                        </property>
+                        <property>
+                            <type>source</type>
+                            <value>EXPANDER</value>
+                        </property>
+                        <property>
+                            <type>value</type>
+                            <value>CPL</value>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>keyword</type>
+                    <value>THE FED</value>
+                    <itemid>keyword|THE FED</itemid>
+                    <properties>
+                        <property>
+                            <type>name</type>
+                            <value>THE FED</value>
+                        </property>
+                        <property>
+                            <type>source</type>
+                            <value>EXPANDER</value>
+                        </property>
+                        <property>
+                            <type>value</type>
+                            <value>THE FED</value>
+                        </property>
+                        <property>
+                            <type>status</type>
+                            <value>added</value>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>keyword</type>
+                    <value>JANET YELLEN</value>
+                    <itemid>keyword|JANET YELLEN</itemid>
+                    <properties>
+                        <property>
+                            <type>name</type>
+                            <value>JANET YELLEN</value>
+                        </property>
+                        <property>
+                            <type>source</type>
+                            <value>EXPANDER</value>
+                        </property>
+                        <property>
+                            <type>value</type>
+                            <value>JANET YELLEN</value>
+                        </property>
+                        <property>
+                            <type>status</type>
+                            <value>added</value>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>keyword</type>
+                    <value>FEDERAL RESERVE</value>
+                    <itemid>keyword|FEDERAL RESERVE</itemid>
+                    <properties>
+                        <property>
+                            <type>name</type>
+                            <value>FEDERAL RESERVE</value>
+                        </property>
+                        <property>
+                            <type>source</type>
+                            <value>EXPANDER</value>
+                        </property>
+                        <property>
+                            <type>value</type>
+                            <value>FEDERAL RESERVE</value>
+                        </property>
+                        <property>
+                            <type>status</type>
+                            <value>added</value>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>keyword</type>
+                    <value>INFLATION</value>
+                    <itemid>keyword|INFLATION</itemid>
+                    <properties>
+                        <property>
+                            <type>name</type>
+                            <value>INFLATION</value>
+                        </property>
+                        <property>
+                            <type>source</type>
+                            <value>EXPANDER</value>
+                        </property>
+                        <property>
+                            <type>value</type>
+                            <value>INFLATION</value>
+                        </property>
+                        <property>
+                            <type>status</type>
+                            <value>added</value>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>keyword</type>
+                    <value>UNEMPLOYMENT RATE</value>
+                    <itemid>keyword|UNEMPLOYMENT RATE</itemid>
+                    <properties>
+                        <property>
+                            <type>name</type>
+                            <value>UNEMPLOYMENT RATE</value>
+                        </property>
+                        <property>
+                            <type>source</type>
+                            <value>EXPANDER</value>
+                        </property>
+                        <property>
+                            <type>value</type>
+                            <value>UNEMPLOYMENT RATE</value>
+                        </property>
+                        <property>
+                            <type>status</type>
+                            <value>added</value>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>keyword</type>
+                    <value>FED CHAIRWOMAN JANET YELLEN</value>
+                    <itemid>keyword|FED CHAIRWOMAN JANET YELLEN</itemid>
+                    <properties>
+                        <property>
+                            <type>name</type>
+                            <value>FED CHAIRWOMAN JANET YELLEN</value>
+                        </property>
+                        <property>
+                            <type>source</type>
+                            <value>EXPANDER</value>
+                        </property>
+                        <property>
+                            <type>value</type>
+                            <value>FED CHAIRWOMAN JANET YELLEN</value>
+                        </property>
+                        <property>
+                            <type>status</type>
+                            <value>added</value>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>keyword</type>
+                    <value>FED CHIEF</value>
+                    <itemid>keyword|FED CHIEF</itemid>
+                    <properties>
+                        <property>
+                            <type>name</type>
+                            <value>FED CHIEF</value>
+                        </property>
+                        <property>
+                            <type>source</type>
+                            <value>EXPANDER</value>
+                        </property>
+                        <property>
+                            <type>value</type>
+                            <value>FED CHIEF</value>
+                        </property>
+                        <property>
+                            <type>status</type>
+                            <value>added</value>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>keyword</type>
+                    <value>FEDERAL RESERVE CHAIRMAN</value>
+                    <itemid>keyword|FEDERAL RESERVE CHAIRMAN</itemid>
+                    <properties>
+                        <property>
+                            <type>name</type>
+                            <value>FEDERAL RESERVE CHAIRMAN</value>
+                        </property>
+                        <property>
+                            <type>source</type>
+                            <value>EXPANDER</value>
+                        </property>
+                        <property>
+                            <type>value</type>
+                            <value>FEDERAL RESERVE CHAIRMAN</value>
+                        </property>
+                        <property>
+                            <type>status</type>
+                            <value>added</value>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>keyword</type>
+                    <value>INTEREST RATES</value>
+                    <itemid>keyword|INTEREST RATES</itemid>
+                    <properties>
+                        <property>
+                            <type>name</type>
+                            <value>INTEREST RATES</value>
+                        </property>
+                        <property>
+                            <type>source</type>
+                            <value>EXPANDER</value>
+                        </property>
+                        <property>
+                            <type>value</type>
+                            <value>INTEREST RATES</value>
+                        </property>
+                        <property>
+                            <type>status</type>
+                            <value>added</value>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>keyword</type>
+                    <value>ECONOMY</value>
+                    <itemid>keyword|ECONOMY</itemid>
+                    <properties>
+                        <property>
+                            <type>name</type>
+                            <value>ECONOMY</value>
+                        </property>
+                        <property>
+                            <type>source</type>
+                            <value>EXPANDER</value>
+                        </property>
+                        <property>
+                            <type>value</type>
+                            <value>ECONOMY</value>
+                        </property>
+                        <property>
+                            <type>status</type>
+                            <value>added</value>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>keyword</type>
+                    <value>YELLEN</value>
+                    <itemid>keyword|YELLEN</itemid>
+                    <properties>
+                        <property>
+                            <type>name</type>
+                            <value>YELLEN</value>
+                        </property>
+                        <property>
+                            <type>source</type>
+                            <value>EXPANDER</value>
+                        </property>
+                        <property>
+                            <type>value</type>
+                            <value>YELLEN</value>
+                        </property>
+                        <property>
+                            <type>status</type>
+                            <value>added</value>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>media</type>
+                    <value>media-14</value>
+                    <itemid>media|media-14</itemid>
+                </property>
+                <property>
+                    <type>media</type>
+                    <value>media-18</value>
+                    <itemid>media|media-18</itemid>
+                </property>
+                <property>
+                    <type>ndjn</type>
+                    <value>np/pmda</value>
+                    <itemid>ndjn|np/pmda</itemid>
+                    <properties>
+                        <property>
+                            <type>name</type>
+                            <value>np/pmda</value>
+                        </property>
+                        <property>
+                            <type>source</type>
+                            <value>EXPANDER</value>
+                        </property>
+                        <property>
+                            <type>value</type>
+                            <value>np/pmda</value>
+                        </property>
+                        <property>
+                            <type>source</type>
+                            <value>DJN-CONTROL</value>
+                        </property>
+                        <property>
+                            <type>status</type>
+                            <value>modified</value>
+                        </property>
+                        <property>
+                            <type>title</type>
+                            <value>Publish to All At the Same Time</value>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>ns</type>
+                    <value>e1202</value>
+                    <itemid>ns|e1202</itemid>
+                    <properties>
+                        <property>
+                            <type>fcode</type>
+                            <value>e1202</value>
+                        </property>
+                        <property>
+                            <type>name</type>
+                            <value>Interest Rates</value>
+                        </property>
+                        <property>
+                            <type>onlinesignificance</type>
+                            <value>prominent</value>
+                        </property>
+                        <property>
+                            <type>significance</type>
+                            <value>prominent</value>
+                        </property>
+                        <property>
+                            <type>source</type>
+                            <value>FACTIVA</value>
+                        </property>
+                        <property>
+                            <type>why</type>
+                            <value>about</value>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>ns</type>
+                    <value>e1116</value>
+                    <itemid>ns|e1116</itemid>
+                    <properties>
+                        <property>
+                            <type>fcode</type>
+                            <value>e1116</value>
+                        </property>
+                        <property>
+                            <type>name</type>
+                            <value>Employment/Unemployment</value>
+                        </property>
+                        <property>
+                            <type>onlinesignificance</type>
+                            <value>prominent</value>
+                        </property>
+                        <property>
+                            <type>significance</type>
+                            <value>prominent</value>
+                        </property>
+                        <property>
+                            <type>source</type>
+                            <value>FACTIVA</value>
+                        </property>
+                        <property>
+                            <type>why</type>
+                            <value>about</value>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>ns</type>
+                    <value>ecat</value>
+                    <itemid>ns|ecat</itemid>
+                    <properties>
+                        <property>
+                            <type>fcode</type>
+                            <value>ecat</value>
+                        </property>
+                        <property>
+                            <type>name</type>
+                            <value>Economic News</value>
+                        </property>
+                        <property>
+                            <type>onlinesignificance</type>
+                            <value>prominent</value>
+                        </property>
+                        <property>
+                            <type>significance</type>
+                            <value>prominent</value>
+                        </property>
+                        <property>
+                            <type>source</type>
+                            <value>FACTIVA</value>
+                        </property>
+                        <property>
+                            <type>why</type>
+                            <value>about</value>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>ns</type>
+                    <value>e11</value>
+                    <itemid>ns|e11</itemid>
+                    <properties>
+                        <property>
+                            <type>fcode</type>
+                            <value>e11</value>
+                        </property>
+                        <property>
+                            <type>name</type>
+                            <value>Economic Performance/Indicators</value>
+                        </property>
+                        <property>
+                            <type>source</type>
+                            <value>FACTIVA</value>
+                        </property>
+                        <property>
+                            <type>why</type>
+                            <value>lineage</value>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>ns</type>
+                    <value>e12</value>
+                    <itemid>ns|e12</itemid>
+                    <properties>
+                        <property>
+                            <type>fcode</type>
+                            <value>e12</value>
+                        </property>
+                        <property>
+                            <type>name</type>
+                            <value>Economic/Monetary Policy</value>
+                        </property>
+                        <property>
+                            <type>source</type>
+                            <value>FACTIVA</value>
+                        </property>
+                        <property>
+                            <type>why</type>
+                            <value>lineage</value>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>nwchain</type>
+                    <value>SB10001424052702304489104579632413527149666</value>
+                    <itemid>nwchain|SB10001424052702304489104579632413527149666</itemid>
+                    <properties>
+                        <property>
+                            <type>name</type>
+                            <value>SB10001424052702304489104579632413527149666</value>
+                        </property>
+                        <property>
+                            <type>source</type>
+                            <value>EXPANDER</value>
+                        </property>
+                        <property>
+                            <type>value</type>
+                            <value>SB10001424052702304489104579632413527149666</value>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>nwchain</type>
+                    <value>SB100014240527023044891045796324135271496664</value>
+                    <itemid>nwchain|SB100014240527023044891045796324135271496664</itemid>
+                    <properties>
+                        <property>
+                            <type>name</type>
+                            <value>SB100014240527023044891045796324135271496664</value>
+                        </property>
+                        <property>
+                            <type>source</type>
+                            <value>EXPANDER</value>
+                        </property>
+                        <property>
+                            <type>value</type>
+                            <value>SB100014240527023044891045796324135271496664</value>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>nwchain</type>
+                    <value>SB100014240527023044891045796324135271496662</value>
+                    <itemid>nwchain|SB100014240527023044891045796324135271496662</itemid>
+                    <properties>
+                        <property>
+                            <type>name</type>
+                            <value>SB100014240527023044891045796324135271496662</value>
+                        </property>
+                        <property>
+                            <type>source</type>
+                            <value>EXPANDER</value>
+                        </property>
+                        <property>
+                            <type>value</type>
+                            <value>SB100014240527023044891045796324135271496662</value>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>nwchain</type>
+                    <value>SB100014240527023044891045796324135271496663</value>
+                    <itemid>nwchain|SB100014240527023044891045796324135271496663</itemid>
+                    <properties>
+                        <property>
+                            <type>name</type>
+                            <value>SB100014240527023044891045796324135271496663</value>
+                        </property>
+                        <property>
+                            <type>source</type>
+                            <value>EXPANDER</value>
+                        </property>
+                        <property>
+                            <type>value</type>
+                            <value>SB100014240527023044891045796324135271496663</value>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>pe</type>
+                    <value>110608003</value>
+                    <itemid>pe|110608003</itemid>
+                    <properties>
+                        <property>
+                            <type>confidence</type>
+                            <value>96</value>
+                        </property>
+                        <property>
+                            <type>confidencerange</type>
+                            <value>high</value>
+                        </property>
+                        <property>
+                            <type>displayname</type>
+                            <value>Yellen, Janet</value>
+                        </property>
+                        <property>
+                            <type>extractedtext</type>
+                            <value>Janet Yellen</value>
+                        </property>
+                        <property>
+                            <type>fcode</type>
+                            <value>110608003</value>
+                        </property>
+                        <property>
+                            <type>firstname</type>
+                            <value>Janet</value>
+                        </property>
+                        <property>
+                            <type>lastname</type>
+                            <value>Yellen</value>
+                        </property>
+                        <property>
+                            <type>name</type>
+                            <value>Janet Yellen</value>
+                        </property>
+                        <property>
+                            <type>occurs</type>
+                            <value>true</value>
+                        </property>
+                        <property>
+                            <type>onlinesignificance</type>
+                            <value>prominent</value>
+                        </property>
+                        <property>
+                            <type>relevance</type>
+                            <value>75</value>
+                        </property>
+                        <property>
+                            <type>relevancerange</type>
+                            <value>high</value>
+                        </property>
+                        <property>
+                            <type>seoname</type>
+                            <value>janet-yellen</value>
+                        </property>
+                        <property>
+                            <type>significance</type>
+                            <value>passing</value>
+                        </property>
+                        <property>
+                            <type>source</type>
+                            <value>FACTIVA</value>
+                        </property>
+                        <property>
+                            <type>status</type>
+                            <value>modified</value>
+                        </property>
+                        <property>
+                            <type>title</type>
+                            <value>Chairwoman</value>
+                        </property>
+                        <property>
+                            <type>topicid</type>
+                            <value>5513</value>
+                        </property>
+                        <property>
+                            <type>topicname</type>
+                            <value>Janet Yellen</value>
+                        </property>
+                        <property>
+                            <type>visible</type>
+                            <value>1</value>
+                        </property>
+                        <property>
+                            <type>why</type>
+                            <value>about</value>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>person</type>
+                    <value>Yellen, Janet</value>
+                    <itemid>person|Yellen, Janet</itemid>
+                    <properties>
+                        <property>
+                            <type>name</type>
+                            <value>Janet Yellen</value>
+                        </property>
+                        <property>
+                            <type>significance</type>
+                            <value>PASSING-MENTION</value>
+                        </property>
+                        <property>
+                            <type>topicid</type>
+                            <value>5513</value>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>re</type>
+                    <value>usa</value>
+                    <itemid>re|usa</itemid>
+                    <properties>
+                        <property>
+                            <type>fcode</type>
+                            <value>usa</value>
+                        </property>
+                        <property>
+                            <type>name</type>
+                            <value>United States</value>
+                        </property>
+                        <property>
+                            <type>onlinesignificance</type>
+                            <value>prominent</value>
+                        </property>
+                        <property>
+                            <type>significance</type>
+                            <value>prominent</value>
+                        </property>
+                        <property>
+                            <type>source</type>
+                            <value>FACTIVA</value>
+                        </property>
+                        <property>
+                            <type>subcat</type>
+                            <value>cntry</value>
+                        </property>
+                        <property>
+                            <type>why</type>
+                            <value>about</value>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>re</type>
+                    <value>namz</value>
+                    <itemid>re|namz</itemid>
+                    <properties>
+                        <property>
+                            <type>fcode</type>
+                            <value>namz</value>
+                        </property>
+                        <property>
+                            <type>name</type>
+                            <value>North America</value>
+                        </property>
+                        <property>
+                            <type>source</type>
+                            <value>FACTIVA</value>
+                        </property>
+                        <property>
+                            <type>subcat</type>
+                            <value>snr</value>
+                        </property>
+                        <property>
+                            <type>why</type>
+                            <value>lineage</value>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>relay</type>
+                    <value>SYND</value>
+                    <itemid>relay|SYND</itemid>
+                    <properties>
+                        <property>
+                            <type>name</type>
+                            <value>SYND</value>
+                        </property>
+                        <property>
+                            <type>source</type>
+                            <value>EXPANDER</value>
+                        </property>
+                        <property>
+                            <type>value</type>
+                            <value>SYND</value>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>statistic</type>
+                    <value>CODES_REVIEWED</value>
+                    <itemid>statistic|CODES_REVIEWED</itemid>
+                    <properties>
+                        <property>
+                            <type>name</type>
+                            <value>CODES_REVIEWED</value>
+                        </property>
+                        <property>
+                            <type>value</type>
+                            <value>CODES_REVIEWED</value>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>subject</type>
+                    <value>ONEW</value>
+                    <itemid>subject|ONEW</itemid>
+                    <properties>
+                        <property>
+                            <type>comments</type>
+                            <value>Keyword:DJII-REGION usa,namz</value>
+                        </property>
+                        <property>
+                            <type>description</type>
+                            <value>01|US|US News</value>
+                        </property>
+                        <property>
+                            <type>name</type>
+                            <value>US News</value>
+                        </property>
+                        <property>
+                            <type>source</type>
+                            <value>EXPANDER</value>
+                        </property>
+                        <property>
+                            <type>status</type>
+                            <value>modified</value>
+                        </property>
+                        <property>
+                            <type>value</type>
+                            <value>ONEW</value>
+                        </property>
+                        <property>
+                            <type>seoname</type>
+                            <value>US News</value>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>subject</type>
+                    <value>OECN</value>
+                    <itemid>subject|OECN</itemid>
+                    <properties>
+                        <property>
+                            <type>comments</type>
+                            <value>Mapping:ARTICLETYPE=Capital</value>
+                        </property>
+                        <property>
+                            <type>description</type>
+                            <value>01|US|Economy</value>
+                        </property>
+                        <property>
+                            <type>name</type>
+                            <value>Economy</value>
+                        </property>
+                        <property>
+                            <type>source</type>
+                            <value>EXPANDER</value>
+                        </property>
+                        <property>
+                            <type>status</type>
+                            <value>modified</value>
+                        </property>
+                        <property>
+                            <type>value</type>
+                            <value>OECN</value>
+                        </property>
+                        <property>
+                            <type>seoname</type>
+                            <value>Economy</value>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>wiredisplay</type>
+                    <value>wires</value>
+                    <itemid>wiredisplay|wires</itemid>
+                    <properties>
+                        <property>
+                            <type>name</type>
+                            <value>wires</value>
+                        </property>
+                        <property>
+                            <type>source</type>
+                            <value>EXPANDER</value>
+                        </property>
+                        <property>
+                            <type>value</type>
+                            <value>wires</value>
+                        </property>
+                    </properties>
+                </property>
+            </properties>
+        </self-codes>
+    </meta-data>
+    <summary id="S-SB10001424052702304489104579632413527149666.djml">
+        <summary-header>
+            <nameloc id="i1-SB10001424052702304489104579632413527149666">
+                <nmlist nametype="ENTITY">http://online.wsj.com/articles/heard-on-the-street-fed-lowers-sights-raises-aim-1403127048</nmlist>
+            </nameloc>
+            <nameloc id="i2-SB10001424052702304489104579632413527149666">
+                <nmlist nametype="ENTITY">http://blogs.wsj.com/economics/2014/06/18/live-blog-follow-the-federal-reserve-decision-and-janet-yellens-press-conference/</nmlist>
+            </nameloc>
+            <nameloc id="i3-SB10001424052702304489104579632413527149666">
+                <nmlist nametype="ENTITY">http://blogs.wsj.com/economics/2014/06/18/parsing-the-fed-how-the-statement-changed-39/</nmlist>
+            </nameloc>
+            <nameloc id="i4-SB10001424052702304489104579632413527149666">
+                <nmlist nametype="ENTITY">http://blogs.wsj.com/briefly/2014/06/18/5-takeaways-from-fed-decision-yellen-news-conference/</nmlist>
+            </nameloc>
+            <nameloc id="i5-SB10001424052702304489104579632413527149666">
+                <nmlist nametype="ENTITY">http://online.wsj.com/articles/heard-on-the-street-fed-lowers-sights-raises-aim-1403127048</nmlist>
+            </nameloc>
+            <nameloc id="i6-SB10001424052702304489104579632413527149666">
+                <nmlist nametype="ENTITY">http://blogs.wsj.com/briefly/2014/06/18/5-takeaways-from-fed-decision-yellen-news-conference/</nmlist>
+            </nameloc>
+            <nameloc id="i7-SB10001424052702304489104579632413527149666">
+                <nmlist nametype="ENTITY">http://online.wsj.com/articles/heard-on-the-street-fed-lowers-sights-raises-aim-1403127048</nmlist>
+            </nameloc>
+            <nameloc id="i8-SB10001424052702304489104579632413527149666">
+                <nmlist nametype="ENTITY">http://blogs.wsj.com/briefly/2014/06/18/5-takeaways-from-fed-decision-yellen-news-conference/</nmlist>
+            </nameloc>
+            <nameloc id="i9-SB10001424052702304489104579632413527149666">
+                <nmlist nametype="ENTITY">http://online.wsj.com/articles/heard-on-the-street-fed-lowers-sights-raises-aim-1403127048</nmlist>
+            </nameloc>
+            <nameloc id="i10-SB10001424052702304489104579632413527149666">
+                <nmlist nametype="ENTITY">http://blogs.wsj.com/briefly/2014/06/18/5-takeaways-from-fed-decision-yellen-news-conference/</nmlist>
+            </nameloc>
+            <nameloc id="i11-SB10001424052702304489104579632413527149666">
+                <nmlist nametype="ENTITY">http://online.wsj.com/articles/heard-on-the-street-fed-lowers-sights-raises-aim-1403127048</nmlist>
+            </nameloc>
+            <nameloc id="i12-SB10001424052702304489104579632413527149666">
+                <nmlist nametype="ENTITY">http://blogs.wsj.com/briefly/2014/06/18/5-takeaways-from-fed-decision-yellen-news-conference/</nmlist>
+            </nameloc>
+        </summary-header>
+        <alt-summary-body destination-type="THIS-ART" page="Images">
+            <media alignment="LEFT" id="media-1"
+                reuse-expiration="2015-06-18" reuse-type="restricted" type="ILLUSTRATION">
+                <image alternate-text="image" height="400" slug="FED"
+                    src-id="NA-CB639_FED_OR_20140618181821.jpg" width="267"/>
+                <media-credit>European Pressphoto Agency</media-credit>
+            </media>
+            <media alignment="LEFT" id="media-2"
+                reuse-expiration="2015-06-18" reuse-type="restricted" type="ILLUSTRATION">
+                <image alternate-text="image" height="76" slug="FED"
+                    src-id="NA-CB639_FED_A_20140618181821.jpg" width="76"/>
+                <media-credit>European Pressphoto Agency</media-credit>
+            </media>
+            <media alignment="LEFT" id="media-3"
+                reuse-expiration="2015-06-18" reuse-type="restricted" type="ILLUSTRATION">
+                <image alternate-text="image" height="188" slug="FED"
+                    src-id="NA-CB639_FED_BR_20140618181821.jpg" width="282"/>
+                <media-credit>European Pressphoto Agency</media-credit>
+            </media>
+            <media alignment="LEFT" id="media-4"
+                reuse-expiration="2015-06-18" reuse-type="restricted" type="ILLUSTRATION">
+                <image alternate-text="image" height="94" slug="FED"
+                    src-id="NA-CB639_FED_C_20140618181821.jpg" width="167"/>
+                <media-credit>European Pressphoto Agency</media-credit>
+            </media>
+            <media alignment="LEFT" id="media-5"
+                reuse-expiration="2015-06-18" reuse-type="restricted" type="ILLUSTRATION">
+                <image alternate-text="image" height="174" slug="FED"
+                    src-id="NA-CB639_FED_D_20140618181821.jpg" width="262"/>
+                <media-credit>European Pressphoto Agency</media-credit>
+            </media>
+            <media alignment="LEFT" id="media-6"
+                reuse-expiration="2015-06-18" reuse-type="restricted" type="ILLUSTRATION">
+                <image alternate-text="image" height="394" slug="FED"
+                    src-id="NA-CB639_FED_DV_20140618181821.jpg" width="262"/>
+                <media-credit>European Pressphoto Agency</media-credit>
+            </media>
+            <media alignment="LEFT" id="media-7"
+                reuse-expiration="2015-06-18" reuse-type="restricted" type="ILLUSTRATION">
+                <image alternate-text="image" height="239" slug="FED"
+                    src-id="NA-CB639_FED_E_20140618181821.jpg" width="359"/>
+                <media-credit>European Pressphoto Agency</media-credit>
+            </media>
+            <media alignment="LEFT" id="media-8"
+                reuse-expiration="2015-06-18" reuse-type="restricted" type="ILLUSTRATION">
+                <image alternate-text="image" height="402" slug="FED"
+                    src-id="NA-CB639_FED_ER_20140618181821.jpg" width="602"/>
+                <media-credit>European Pressphoto Agency</media-credit>
+            </media>
+            <media alignment="LEFT" id="media-9"
+                reuse-expiration="2015-06-18" reuse-type="restricted" type="ILLUSTRATION">
+                <image alternate-text="image" height="226" slug="FED"
+                    src-id="NA-CB639_FED_F_20140618181821.jpg" width="571"/>
+                <media-credit>European Pressphoto Agency</media-credit>
+            </media>
+            <media alignment="LEFT" id="media-10"
+                reuse-expiration="2015-06-18" reuse-type="restricted" type="ILLUSTRATION">
+                <image alternate-text="image" height="810" slug="FED"
+                    src-id="NA-CB639_FED_FR_20140618181821.jpg" width="632"/>
+                <media-credit>European Pressphoto Agency</media-credit>
+            </media>
+            <media alignment="LEFT" id="media-11"
+                reuse-expiration="2015-06-18" reuse-type="restricted" type="ILLUSTRATION">
+                <image alternate-text="image" height="369" slug="FED"
+                    src-id="NA-CB639_FED_G_20140618181821.jpg" width="553"/>
+                <media-credit>European Pressphoto Agency</media-credit>
+            </media>
+            <media alignment="LEFT" id="media-12"
+                reuse-expiration="2015-06-18" reuse-type="restricted" type="ILLUSTRATION">
+                <image alternate-text="image" height="810" slug="FED"
+                    src-id="NA-CB639_FED_GR_20140618181821.jpg" width="1242"/>
+                <media-credit>European Pressphoto Agency</media-credit>
+            </media>
+        </alt-summary-body>
+        <alt-summary-body destination-type="THIS-ART" page="|SEO|">
+            <headline>
+                <main-hed>Fed Keeps Rates Unchanged, Sees Eventual Rise in 2015, 2016</main-hed>
+            </headline>
+            <p>With its bond-buying program winding down, officials are turning their attention to the question of when to start raising the federal funds rate from near zero&#x2014;where it is likely to remain through the year.</p>
+        </alt-summary-body>
+        <alt-summary-body destination-type="THIS-ART" page="|U.S. Home|Professional Edition Home Page|">
+            <headline>
+                <main-hed>Fed Refines Rate-Rise Signal</main-hed>
+            </headline>
+            <p>With its bond-buying program winding down, officials are turning their attention to the question of when to start raising the federal funds rate from near zero&#x2014;where it is likely to remain through the year. </p>
+            <list type="UNORDERED">
+                <list-item>
+                    <link icon="none"
+                        linkend="i5-SB10001424052702304489104579632413527149666" type="EXTERNAL">
+                        <highlight type="BOLD">Heard on the Street:</highlight> Lowers Sights, Raises Aim</link>
+                </list-item>
+                <list-item>
+                    <highlight type="BOLD">
+                        <link icon="none"
+                            linkend="i6-SB10001424052702304489104579632413527149666" type="EXTERNAL">5 Takeaways From Fed Conference</link>
+                    </highlight>
+                </list-item>
+            </list>
+        </alt-summary-body>
+        <alt-summary-body destination-type="THIS-ART" page="|Wall Street|No ImageBkt|">
+            <media id="media-13" reuse-expiration="2015-06-18"
+                reuse-type="restricted" type="ILLUSTRATION">
+                <image alternate-text="image" height="239" slug="FED"
+                    src-id="NA-CB639_FED_E_20140618181821.jpg" width="359"/>
+                <alt-image alternate-text="image" height="76" slug="FED"
+                    src-id="NA-CB639_FED_A_20140618181821.jpg" width="76"/>
+                <alt-image alternate-text="image" height="188"
+                    slug="FED"
+                    src-id="NA-CB639_FED_BR_20140618181821.jpg" width="282"/>
+                <alt-image alternate-text="image" height="94" slug="FED"
+                    src-id="NA-CB639_FED_C_20140618181821.jpg" width="167"/>
+                <alt-image alternate-text="image" height="174"
+                    slug="FED"
+                    src-id="NA-CB639_FED_D_20140618181821.jpg" width="262"/>
+                <alt-image alternate-text="image" height="394"
+                    slug="FED"
+                    src-id="NA-CB639_FED_DV_20140618181821.jpg" width="262"/>
+                <alt-image alternate-text="image" height="402"
+                    slug="FED"
+                    src-id="NA-CB639_FED_ER_20140618181821.jpg" width="602"/>
+                <alt-image alternate-text="image" height="226"
+                    slug="FED"
+                    src-id="NA-CB639_FED_F_20140618181821.jpg" width="571"/>
+                <alt-image alternate-text="image" height="810"
+                    slug="FED"
+                    src-id="NA-CB639_FED_FR_20140618181821.jpg" width="632"/>
+                <alt-image alternate-text="image" height="369"
+                    slug="FED"
+                    src-id="NA-CB639_FED_G_20140618181821.jpg" width="553"/>
+                <alt-image alternate-text="image" height="810"
+                    slug="FED"
+                    src-id="NA-CB639_FED_GR_20140618181821.jpg" width="1242"/>
+                <alt-image alternate-text="image" height="499"
+                    slug="FED"
+                    src-id="NA-CB639_FED_P_20140618181821.jpg" width="749"/>
+                <media-credit>European Pressphoto Agency</media-credit>
+            </media>
+            <headline>
+                <main-hed>Fed Keeps Rates Low, Sees Rise in '15, '16</main-hed>
+            </headline>
+            <p>With its bond-buying program winding down, officials are turning their attention to the question of when to start raising the federal funds rate from near zero&#x2014;where it is likely to remain through the year. </p>
+            <list type="UNORDERED">
+                <list-item>
+                    <link icon="none"
+                        linkend="i7-SB10001424052702304489104579632413527149666" type="EXTERNAL">
+                        <highlight type="BOLD">Heard on the Street:</highlight> Fed Lowers Sights, Raises Aim</link>
+                </list-item>
+                <list-item>
+                    <highlight type="BOLD">
+                        <link icon="none"
+                            linkend="i8-SB10001424052702304489104579632413527149666" type="EXTERNAL">5 Takeaways From Decision, Growth Downgrade</link>
+                    </highlight>
+                </list-item>
+            </list>
+        </alt-summary-body>
+        <alt-summary-body destination-type="THIS-ART" page="|Asia Home|India Home|">
+            <headline>
+                <main-hed>Fed Keeps Rates Low</main-hed>
+            </headline>
+            <p>With its bond-buying program winding down, officials are turning their attention to the question of when to start raising the federal funds rate from near zero&#x2014;where it is likely to remain through the year. </p>
+            <list type="UNORDERED">
+                <list-item>
+                    <link icon="none"
+                        linkend="i9-SB10001424052702304489104579632413527149666" type="EXTERNAL">
+                        <highlight type="BOLD">Heard:</highlight> Fed Lowers Sights, Raises Aim</link>
+                </list-item>
+                <list-item>
+                    <highlight type="BOLD">
+                        <link icon="none"
+                            linkend="i10-SB10001424052702304489104579632413527149666" type="EXTERNAL">5 Takeaways From Fed Decision</link>
+                    </highlight>
+                </list-item>
+            </list>
+        </alt-summary-body>
+        <alt-summary-body destination-type="THIS-ART" page="|Europe Home|">
+            <headline>
+                <main-hed>Fed Keeps Rates Low</main-hed>
+            </headline>
+            <p>With its bond-buying program winding down, officials are turning their attention to the question of when to start raising the federal funds rate from near zero&#x2014;where it is likely to remain through the year. </p>
+            <list type="UNORDERED">
+                <list-item>
+                    <link icon="none"
+                        linkend="i11-SB10001424052702304489104579632413527149666" type="EXTERNAL">
+                        <highlight type="BOLD">Heard:</highlight> Fed Lowers Sights, Raises Aim</link>
+                </list-item>
+                <list-item>
+                    <highlight type="BOLD">
+                        <link icon="none"
+                            linkend="i12-SB10001424052702304489104579632413527149666" type="EXTERNAL">5 Takeaways From Fed Decision</link>
+                    </highlight>
+                </list-item>
+            </list>
+        </alt-summary-body>
+        <alt-summary-body destination-type="THIS-ART" page="|Social|">
+            <headline>
+                <main-hed>Fed nudges up projections for interest rates</main-hed>
+            </headline>
+        </alt-summary-body>
+        <alt-summary-body destination-type="THIS-ART" page="|NW Alt Headline|">
+            <headline>
+                <main-hed>Fed Raises Projections for Rates in 2015, 2016--Update</main-hed>
+            </headline>
+            <p/>
+        </alt-summary-body>
+        <summary-body>
+            <headline>
+                <main-hed>Fed Keeps Rates Low, Sees Eventual Rise in '15, '16</main-hed>
+            </headline>
+            <p>With its bond-buying program winding down, officials are turning their attention to the question of when to start raising the federal funds rate from near zero&#x2014;where it is likely to remain through the year. </p>
+            <list type="UNORDERED">
+                <list-item>
+                    <link icon="none"
+                        linkend="i1-SB10001424052702304489104579632413527149666" type="EXTERNAL">
+                        <highlight type="BOLD">Heard on the Street:</highlight> Fed Lowers Sights, Raises Aim</link>
+                </list-item>
+                <list-item>
+                    <link icon="none"
+                        linkend="i2-SB10001424052702304489104579632413527149666" type="EXTERNAL">
+                        <highlight type="BOLD">Recap:</highlight> Fed Policy Statement</link>
+                </list-item>
+                <list-item>
+                    <highlight type="BOLD">
+                        <link icon="none"
+                            linkend="i3-SB10001424052702304489104579632413527149666" type="EXTERNAL"> How Statement Changed</link>
+                    </highlight>
+                </list-item>
+                <list-item>
+                    <highlight type="BOLD">
+                        <link icon="none"
+                            linkend="i4-SB10001424052702304489104579632413527149666" type="EXTERNAL">5 Takeaways From Decision, Growth Downgrade</link>
+                    </highlight>
+                </list-item>
+            </list>
+        </summary-body>
+    </summary>
+    <article>
+        <article-header>
+            <nameloc id="i13-SB10001424052702304489104579632413527149666">
+                <nmlist nametype="ENTITY">http://online.wsj.com/public/page/news-politics-campaign.html</nmlist>
+            </nameloc>
+            <nameloc id="i14-SB10001424052702304489104579632413527149666">
+                <nmlist nametype="ENTITY">http://blogs.wsj.com/moneybeat/2014/06/19/grading-yellen-she-deserves-a-solid-a/</nmlist>
+            </nameloc>
+            <nameloc id="i15-SB10001424052702304489104579632413527149666">
+                <nmlist nametype="ENTITY">http://online.wsj.com/articles/heard-on-the-street-fed-lowers-sights-raises-aim-1403127048</nmlist>
+            </nameloc>
+            <nameloc id="i16-SB10001424052702304489104579632413527149666">
+                <nmlist nametype="ENTITY">http://blogs.wsj.com/economics/2014/06/18/live-blog-follow-the-federal-reserve-decision-and-janet-yellens-press-conference/</nmlist>
+            </nameloc>
+            <nameloc id="i17-SB10001424052702304489104579632413527149666">
+                <nmlist nametype="ENTITY">http://blogs.wsj.com/economics/2014/06/18/fed-officials-downgrade-this-years-growth-outlook/</nmlist>
+            </nameloc>
+            <nameloc id="i18-SB10001424052702304489104579632413527149666">
+                <nmlist nametype="ENTITY">http://blogs.wsj.com/economics/2014/06/18/parsing-the-fed-how-the-statement-changed-39/</nmlist>
+            </nameloc>
+            <nameloc id="i19-SB10001424052702304489104579632413527149666">
+                <nmlist nametype="ENTITY">http://blogs.wsj.com/briefly/2014/06/18/5-takeaways-from-fed-decision-yellen-news-conference/</nmlist>
+            </nameloc>
+            <nameloc id="i20-SB10001424052702304489104579632413527149666">
+                <nmlist nametype="ENTITY">http://blogs.wsj.com/washwire/2014/04/28/introducing-the-capital-journal-daybreak-newsletter/</nmlist>
+            </nameloc>
+            <nameloc id="i21-SB10001424052702304489104579632413527149666">
+                <nmlist nametype="ENTITY">http://online.wsj.com/public/page/email-setup.html?sub=grand_central</nmlist>
+            </nameloc>
+            <nameloc id="i22-SB10001424052702304489104579632413527149666">
+                <nmlist nametype="ENTITY">http://online.wsj.com/public/page/email-setup.html?sub=grand_central</nmlist>
+            </nameloc>
+            <nameloc id="i23-SB10001424052702304489104579632413527149666">
+                <nmlist nametype="ENTITY">mailto:jon.hilsenrath@wsj.com</nmlist>
+            </nameloc>
+        </article-header>
+        <article-body>
+            <headline>
+                <main-hed>Fed Keeps Rates Unchanged, Sees Eventual Rise in 2015, 2016</main-hed>
+                <deck>Bond Purchases Are Reduced Again As Central Bankers See Signs of an Economy on the Mend</deck>
+            </headline>
+            <byline type="SIGNED">By <phrase topicid="" type="AUTHOR">Jon Hilsenrath</phrase>
+            </byline>
+            <media id="media-14" type="VIDEO">
+                <image alternate-text="player=F"
+                    slug="video-E65DC08E-BC48-45AB-99B3-4D53E227DC31" src-id="E65DC08E-BC48-45AB-99B3-4D53E227DC31"/>
+                <media-caption>Federal Reserve Chairwoman Janet Yellen announces the Fed is scaling back its bond-buying program to $35 billion a month from $45 billion at a press conference on Wednesday.</media-caption>
+            </media>
+            <p>Signaling their confidence that the economy is on track for growth strong enough to keep reducing unemployment, Federal Reserve officials nudged up their projections for short-term interest rates in 2015 and 2016, though they slightly reduced their outlook for rates in the longer-run.</p>
+
+            <p>In a statement released after the Fed's latest two-day policy meeting and a news conference by Chairwoman <phrase
+                    name="Yellen, Janet" seoname=""
+                    significance="PASSING-MENTION" topicid="5513"
+                    type="PERSON" vrtysux="PERSON|Yellen, Janet">Janet Yellen</phrase>, the central bank underlined the economy's rebound in the past few weeks after output shrank in the first quarter. </p>
+            <inset id="inset-1" style="3-UNIT-PLAIN" type="NORMAL">
+                <small-hed>Related Videos</small-hed>
+                <media id="media-15" type="VIDEO">
+                    <image
+                        slug="video-6FAAEA32-2912-4302-8D44-270AE22478FE" src-id="6FAAEA32-2912-4302-8D44-270AE22478FE"/>
+                    <media-caption>Federal Reserve Chairwoman Janet Yellen answers WSJ Chief Economics Correspondent Jon Hilsenrath's questions about the Fed's market outlook, and cautions not to over-interpret the Fed's long-term rate view. Photo: Getty</media-caption>
+                </media>
+                <media id="media-16" type="VIDEO">
+                    <image
+                        slug="video-66B910E6-153F-4510-A77F-C79B1E8C4304" src-id="66B910E6-153F-4510-A77F-C79B1E8C4304"/>
+                    <media-caption>The Federal Reserve took a more aggressive stance on its rate forecast, saying higher rates could come in 2015. Beth Ann Bovino, S&amp;P Ratings Services chief U.S. economist, deciphers the decision on the News Hub with Sara Murray. Photo: Getty</media-caption>
+                </media>
+                <media id="media-17" type="VIDEO">
+                    <image
+                        slug="video-60BEA03C-20F4-4180-AC87-30A597401F33" src-id="60BEA03C-20F4-4180-AC87-30A597401F33"/>
+                    <media-caption>WSJ Markets Editor Emma Moody and Wunderlich Securities Chief Market Strategist Art Hogan join Simon Constable to discuss the Fed's policy decision to scale-back its bond-buying program. Photo: Getty</media-caption>
+                </media>
+                <p/>
+            </inset>
+            <p>That contraction forced officials&#x2014;as part of their quarterly projections for growth, employment, inflation and interest rates&#x2014;to sharply lower their expectations for growth this year. But they stuck to an optimistic outlook for the next two years and projected a path of further declines in unemployment. </p>
+            <p>"Economic activity is rebounding in the current quarter and will continue to expand at a moderate pace thereafter," Ms. Yellen said. She added there are good reasons to expect faster growth in 2015 and 2016, including an improving labor market, the Fed's easy credit policies, reduced household debt, rising stock and home prices and less-restrictive government tax and spending policies. </p>
+            <p>The Fed also said it would reduce monthly purchases of mortgage and Treasury bonds by another $10 billion next month to $35 billion. Those purchases started in 2012 in an effort to hold down long-term interest rates and spur growth and hiring. </p>
+            <p>With the job market gradually improving, the Fed is taking away that support and slowly turning its attention to the timing and pace of short-term interest rate increases. It has kept short-term rates near zero since December 2008 and isn't planning to start raising them until next year. </p>
+            <p>Investors appeared cheered by that timing. The Dow Jones Industrial Average rose 98.13 points, or 0.58%, to 16906.62 after earlier being down 26 points, while the 10-year U.S. Treasury note rose 12/32 in price to push the yield down to 2.611%.</p>
+            <p>Against that market backdrop, the Fed faces a dilemma. The five-year recovery has continuously failed to live up to the Fed's growth forecasts and officials are lowering their expectations of how much the economy can expand in the long-run. Still, unemployment is coming down faster than expected and inflation shows signs of rising to the Fed's 2% goal. </p>
+            <p>If the Fed sets rates too low in response, it could spark inflation or financial instability, but if it raises them too quickly it could derail a fragile economy.</p>
+            <media id="media-18" reuse-type="full" type="ILLUSTRATION">
+                <image alternate-text="image" height="358" slug="FED"
+                    src-id="NA-CB638_FED_G_20140618184804.jpg" width="555"/>
+                <alt-image alternate-text="image" height="169"
+                    slug="FED"
+                    src-id="NA-CB638_FED_D_20140618184804.jpg" width="262"/>
+            </media>
+            <p>On average, Fed officials projected the benchmark federal funds rate would hit 1.2% by the end of 2015 and 2.5% by the end of 2016, up slightly from averages of 1.125% in 2015 and 2.4% in 2016 when the Fed last projected rates in March. Over the longer run, officials on average said the target interest rate could settle in at a lower-than-normal 3.75%, down from earlier forecasts of 4%.</p>
+            <p>Taken together, the Fed's new interest-rate forecasts imply slightly more aggressive credit-tightening plans taking shape in the next two years than previously thought, but less aggressive beyond 2016.</p>
+            <p>Officials also projected the jobless rate falling more than previously thought. They see it receding to 6% or 6.1% by year-end and then to the mid-5% range in 2015 and low-5% range in 2016. </p>
+            <inset id="inset-2" param1="TABLETEXCLUDE"
+                style="3-UNIT-PLAIN" type="NORMAL">
+                <media id="media-19" reuse-type="full" type="ILLUSTRATION">
+                    <link icon="none"
+                        linkend="i13-SB10001424052702304489104579632413527149666" type="EXTERNAL">
+                        <image alternate-text="image" height="30"
+                            slug="2CAPJOURN0429"
+                            src-id="BN-CP013_2CAPJO_D_20140429201602.jpg" width="287"/>
+                    </link>
+                </media>
+                <list type="UNORDERED">
+                    <list-item>
+                        <highlight type="BOLD">
+                            <link icon="none"
+                                linkend="i14-SB10001424052702304489104579632413527149666" type="EXTERNAL">Grading Yellen: She Deserves a 'Solid A'</link>
+                        </highlight>
+                    </list-item>
+                    <list-item>
+                        <link icon="none"
+                            linkend="i15-SB10001424052702304489104579632413527149666" type="EXTERNAL">
+                            <highlight type="BOLD">Heard on the Street:</highlight> Fed Lowers Sights, Raises Aim</link>
+                    </list-item>
+                    <list-item>
+                        <highlight type="BOLD">
+                            <link icon="none"
+                                linkend="i16-SB10001424052702304489104579632413527149666" type="EXTERNAL">Recap: Federal Reserve Decision and Yellen Press Conference</link>
+                        </highlight>
+                    </list-item>
+                    <list-item>
+                        <highlight type="BOLD">
+                            <link icon="none"
+                                linkend="i17-SB10001424052702304489104579632413527149666" type="EXTERNAL">Fed Officials Downgrade Year's Growth Outlook</link>
+                        </highlight>
+                    </list-item>
+                    <list-item>
+                        <highlight type="BOLD">
+                            <link icon="none"
+                                linkend="i18-SB10001424052702304489104579632413527149666" type="EXTERNAL">Parsing the Fed: How the Statement Changed</link>
+                        </highlight>
+                    </list-item>
+                    <list-item>
+                        <highlight type="BOLD">
+                            <link icon="none"
+                                linkend="i19-SB10001424052702304489104579632413527149666" type="EXTERNAL">5 Takeaways From Decision, Growth Downgrade</link>
+                        </highlight>
+                    </list-item>
+                    <list-item>
+                        <link icon="interactives"
+                            linkend="i20-SB10001424052702304489104579632413527149666" type="EXTERNAL">
+                            <highlight type="BOLD">Sign Up:</highlight> Receive the Capital Journal Daybreak newsletter in your inbox</link>
+                        <highlight type="BOLD">
+                            <link icon="none"
+                                linkend="i21-SB10001424052702304489104579632413527149666" type="EXTERNAL"/>
+                        </highlight>
+                    </list-item>
+                    <list-item>
+                        <link icon="interactives"
+                            linkend="i22-SB10001424052702304489104579632413527149666" type="EXTERNAL">
+                            <highlight type="BOLD">Sign Up:</highlight> Receive the Grand Central newsletter tracking central banks </link>
+                    </list-item>
+                </list>
+            </inset>
+            <p>The revisions from March suggest the Fed sees less slack in the economy than previously thought, which could lead to higher inflation and helps explain the slightly higher near-run interest rate projections. Ms. Yellen dismissed as "noisy" recent increases in inflation, though some market analysts said the Fed risks allowing inflation pressures to build as unemployment falls. </p>
+            <p>At the same time, however, the Fed is a little less optimistic about the long-term growth outlook. Officials said the economy's growth potential might be as low as 2.1% in the long-run, the latest in a string of downward revisions in recent years. That gloomier long-run growth outlook could help explain why the central bank is producing a lower long-run interest rate forecast of 3.75%.</p>
+            <p>Another challenge is that the Fed's assurances of low rates could make investors complacent about risk. Ms. Yellen repeatedly warned investors not to become overly confident the ultra-easy monetary policy will be around forever or that the Fed will stick to the plans it has laid out.</p>
+            <p>"There is uncertainty about what the path of interest rates, short-term rates, will be, and that's necessary because there's uncertainty about what the path of the economy will be," she said.</p>
+            <p>Underscoring that point, she noted there is a wide range of views even among Fed officials about where rates will be by 2016. Fed forecasts range between 0.5% and 4.25%.</p>
+            <p>
+                <highlight
+                    type="BOLD">Write to </highlight>Jon Hilsenrath at <link
+                    linkend="i23-SB10001424052702304489104579632413527149666" type="EXTERNAL">jon.hilsenrath@wsj.com</link>
+            </p>
+        </article-body>
+    </article>
+</article-doc>
+<!-- fastdynapage - sbkj2kwebappp09 - Thu 06/19/14 - 11:16:09 EDT -->

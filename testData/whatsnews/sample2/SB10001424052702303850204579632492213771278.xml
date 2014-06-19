@@ -1,0 +1,2464 @@
+<?xml version="1.0" encoding="ASCII"?>
+
+<article-doc ads="ADS-NOT-ALLOWED" column=""
+    copyright="Dow Jones &amp; Company, Inc." date="2014-06-18 18:40"
+    date-type="auto" display-name="Markets" embargo=""
+    guid="83f3780e-f711-11e3-9666-01212803fad6"
+    id="SB10001424052702303850204579632492213771278.djml"
+    language="en-us" last-pub-date="2014-06-19 06:31" level="NORMAL"
+    major-revision-date="2014-06-18 18:40"
+    orig-obj-ref="7140c6dc-f714-11e3-9d9c-00212803fad6"
+    orig-obj-src="Methode" orig-pub-date="2014-06-18 14:18" page="News"
+    product="WSJ.com"
+    publication="The Wall Street Journal Interactive Edition"
+    revision-type="minor"
+    root-id="SB00001424052702303850204579632492213771278"
+    section="Markets"
+    seo-id="irs-issues-new-rules-for-offshore-accounts-1403115491"
+    seo-url="http://online.wsj.com/articles/irs-issues-new-rules-for-offshore-accounts-1403115491"
+    type="Markets Main"
+    url="http://online.wsj.com/articles/irs-issues-new-rules-for-offshore-accounts-1403115491" version="15">
+    <meta-data>
+        <self-codes>
+            <code seoname="Laura Saunders" symbol="Laura Saunders"
+                type="AUTHOR" vrtysux="AUTHOR|Laura Saunders">Laura Saunders</code>
+            <code seoname="Liam Pleven" symbol="Liam Pleven"
+                type="AUTHOR" vrtysux="AUTHOR|Liam Pleven">Liam Pleven</code>
+            <code seoname="UBSN.VX" symbol="UBSN.VX" type="COMPANY" vrtysux="COMPANY|UBSN.VX">UBSN.VX</code>
+            <code seoname="0" symbol="0" type="DELAY" vrtysux="DELAY|0">0</code>
+            <code seoname="Greenberg Traurig" symbol="gthlrq"
+                type="DJII-COMPANY" vrtysux="DJII-COMPANY|gthlrq">Greenberg Traurig</code>
+            <code seoname="Internal Revenue Service" symbol="irevs"
+                type="DJII-COMPANY" vrtysux="DJII-COMPANY|irevs">Internal Revenue Service</code>
+            <code seoname="IRS" symbol="IRS" type="DJII-COMPANY" vrtysux="DJII-COMPANY|IRS">IRS</code>
+            <code seoname="Credit Suisse Group" symbol="sk"
+                type="DJII-COMPANY" vrtysux="DJII-COMPANY|sk">Credit Suisse Group</code>
+            <code seoname="UBS" symbol="ubs" type="DJII-COMPANY" vrtysux="DJII-COMPANY|ubs">UBS</code>
+            <code seoname="U.S. government" symbol="usagov"
+                type="DJII-COMPANY" vrtysux="DJII-COMPANY|usagov">U.S. government</code>
+            <code seoname="John Koskinen" symbol="40656775"
+                type="DJII-PERSON" vrtysux="DJII-PERSON|40656775">John Koskinen</code>
+            <code seoname="John Richardson" symbol="John Richardson"
+                type="DJII-PERSON" vrtysux="DJII-PERSON|John Richardson">John Richardson</code>
+            <code seoname="Nina Olson" symbol="Nina Olson"
+                type="DJII-PERSON" vrtysux="DJII-PERSON|Nina Olson">Nina Olson</code>
+            <code seoname="Seth Entin" symbol="Seth Entin"
+                type="DJII-PERSON" vrtysux="DJII-PERSON|Seth Entin">Seth Entin</code>
+            <code seoname="North America" symbol="namz"
+                type="DJII-REGION" vrtysux="DJII-REGION|namz">North America</code>
+            <code seoname="United States" symbol="usa"
+                type="DJII-REGION" vrtysux="DJII-REGION|usa">United States</code>
+            <code seoname="Regulation/Government Policy" symbol="C13"
+                type="DJII-SUBJECT" vrtysux="DJII-SUBJECT|C13">Regulation/Government Policy</code>
+            <code seoname="Corporate/Industrial News" symbol="ccat"
+                type="DJII-SUBJECT" vrtysux="DJII-SUBJECT|ccat">Corporate/Industrial News</code>
+            <code seoname="Government Finance" symbol="e21"
+                type="DJII-SUBJECT" vrtysux="DJII-SUBJECT|e21">Government Finance</code>
+            <code seoname="Government Taxation/Revenue" symbol="E211"
+                type="DJII-SUBJECT" vrtysux="DJII-SUBJECT|E211">Government Taxation/Revenue</code>
+            <code seoname="Economic News" symbol="ecat"
+                type="DJII-SUBJECT" vrtysux="DJII-SUBJECT|ecat">Economic News</code>
+            <code seoname="Political/General News" symbol="gcat"
+                type="DJII-SUBJECT" vrtysux="DJII-SUBJECT|gcat">Political/General News</code>
+            <code internal="true" seoname="Content Types" symbol="ncat"
+                type="DJII-SUBJECT" vrtysux="DJII-SUBJECT|ncat">Content Types</code>
+            <code internal="true" seoname="Factiva Filters"
+                symbol="nfact" type="DJII-SUBJECT" vrtysux="DJII-SUBJECT|nfact">Factiva Filters</code>
+            <code internal="true"
+                seoname="FC&amp;E Industry News Filter" symbol="nfcpin"
+                type="DJII-SUBJECT" vrtysux="DJII-SUBJECT|nfcpin">FC&amp;E Industry News Filter</code>
+            <code seoname="G/IRS" symbol="G/IRS" type="DJN" vrtysux="DJN|G/IRS">G/IRS</code>
+            <code seoname="N/CNW" symbol="N/CNW" type="DJN" vrtysux="DJN|N/CNW">N/CNW</code>
+            <code seoname="n/djn" symbol="n/djn" type="DJN" vrtysux="DJN|n/djn">n/djn</code>
+            <code seoname="N/ENTR" symbol="N/ENTR" type="DJN" vrtysux="DJN|N/ENTR">N/ENTR</code>
+            <code seoname="N/GEN" symbol="N/GEN" type="DJN" vrtysux="DJN|N/GEN">N/GEN</code>
+            <code seoname="N/GENI" symbol="N/GENI" type="DJN" vrtysux="DJN|N/GENI">N/GENI</code>
+            <code seoname="N/IEN" symbol="N/IEN" type="DJN" vrtysux="DJN|N/IEN">N/IEN</code>
+            <code seoname="N/TAX" symbol="N/TAX" type="DJN" vrtysux="DJN|N/TAX">N/TAX</code>
+            <code seoname="n/wer" symbol="n/wer" type="DJN" vrtysux="DJN|n/wer">n/wer</code>
+            <code seoname="p/meth" symbol="p/meth" type="DJN" vrtysux="DJN|p/meth">p/meth</code>
+            <code seoname="R/NME" symbol="R/NME" type="DJN" vrtysux="DJN|R/NME">R/NME</code>
+            <code seoname="R/US" symbol="R/US" type="DJN" vrtysux="DJN|R/US">R/US</code>
+            <code seoname="UBS" symbol="UBS" type="DJN" vrtysux="DJN|UBS">UBS</code>
+            <code seoname="UBSN.VX" symbol="UBSN.VX" type="DJN" vrtysux="DJN|UBSN.VX">UBSN.VX</code>
+            <code symbol="IRS Issues New Rules for Offshore Accounts"
+                type="FIRST_PUBLISH_HEADLINE" vrtysux="FIRST_PUBLISH_HEADLINE|IRS Issues New Rules for Offshore Accounts"/>
+            <code seoname="WSJ" symbol="WSJ" type="FLOW" vrtysux="FLOW|WSJ">WSJ</code>
+            <code seoname="WSJ.com" symbol="WSJ.com" type="FLOW" vrtysux="FLOW|WSJ.com">WSJ.com</code>
+            <code seoname="WSJAsia" symbol="WSJAsia" type="FLOW" vrtysux="FLOW|WSJAsia">WSJAsia</code>
+            <code seoname="WSJEurope" symbol="WSJEurope" type="FLOW" vrtysux="FLOW|WSJEurope">WSJEurope</code>
+            <code seoname="WSJ Japanese" symbol="WSJ Japanese"
+                type="FLOW" vrtysux="FLOW|WSJ Japanese">WSJ Japanese</code>
+            <code seoname="WSJSunday" symbol="WSJSunday" type="FLOW" vrtysux="FLOW|WSJSunday">WSJSunday</code>
+            <code seoname="0" symbol="0" type="GENERALDELAY" vrtysux="GENERALDELAY|0">0</code>
+            <code symbol="IRS Eases Up on Accidental Tax Cheats"
+                type="HEADLINE" vrtysux="HEADLINE|IRS Eases Up on Accidental Tax Cheats"/>
+            <code seoname="IRS" symbol="IRS" type="KEYWORD" vrtysux="KEYWORD|IRS">IRS</code>
+            <code seoname="OFFSHORE ACCOUNTS" symbol="OFFSHORE ACCOUNTS"
+                type="KEYWORD" vrtysux="KEYWORD|OFFSHORE ACCOUNTS">OFFSHORE ACCOUNTS</code>
+            <code seoname="OVERSEAS ACCOUNTS" symbol="OVERSEAS ACCOUNTS"
+                type="KEYWORD" vrtysux="KEYWORD|OVERSEAS ACCOUNTS">OVERSEAS ACCOUNTS</code>
+            <code seoname="TAXATION" symbol="TAXATION" type="KEYWORD" vrtysux="KEYWORD|TAXATION">TAXATION</code>
+            <code seoname="TAX CHEAT" symbol="TAX CHEAT" type="KEYWORD" vrtysux="KEYWORD|TAX CHEAT">TAX CHEAT</code>
+            <code seoname="TAX CHEATING" symbol="TAX CHEATING"
+                type="KEYWORD" vrtysux="KEYWORD|TAX CHEATING">TAX CHEATING</code>
+            <code seoname="TAX COMPLIANCE" symbol="TAX COMPLIANCE"
+                type="KEYWORD" vrtysux="KEYWORD|TAX COMPLIANCE">TAX COMPLIANCE</code>
+            <code seoname="TAX ENFORCEMENT" symbol="TAX ENFORCEMENT"
+                type="KEYWORD" vrtysux="KEYWORD|TAX ENFORCEMENT">TAX ENFORCEMENT</code>
+            <code seoname="TAXES" symbol="TAXES" type="KEYWORD" vrtysux="KEYWORD|TAXES">TAXES</code>
+            <code seoname="TAX PENALTIES" symbol="TAX PENALTIES"
+                type="KEYWORD" vrtysux="KEYWORD|TAX PENALTIES">TAX PENALTIES</code>
+            <code seoname="np/pmda" symbol="np/pmda" type="NDJN" vrtysux="NDJN|np/pmda">np/pmda</code>
+            <code seoname="SB10001424052702303850204579632492213771278"
+                symbol="SB10001424052702303850204579632492213771278"
+                type="NWCHAIN" vrtysux="NWCHAIN|SB10001424052702303850204579632492213771278">SB10001424052702303850204579632492213771278</code>
+            <code seoname="SB100014240527023038502045796324922137712781"
+                symbol="SB100014240527023038502045796324922137712781"
+                type="NWCHAIN" vrtysux="NWCHAIN|SB100014240527023038502045796324922137712781">SB100014240527023038502045796324922137712781</code>
+            <code symbol="SB100014240527023038502045796324922137712782"
+                type="NWCHAIN" vrtysux="NWCHAIN|SB100014240527023038502045796324922137712782"/>
+            <code seoname="Entin, Seth" symbol="Entin, Seth"
+                type="PERSON" vrtysux="PERSON|Entin, Seth">Entin, Seth</code>
+            <code seoname="Koskinen, John" symbol="Koskinen, John"
+                type="PERSON" vrtysux="PERSON|Koskinen, John">Koskinen, John</code>
+            <code symbol="SYND" type="RELAY" vrtysux="RELAY|SYND"/>
+            <code seoname="CODES_REVIEWED" symbol="CODES_REVIEWED"
+                type="STATISTIC" vrtysux="STATISTIC|CODES_REVIEWED">CODES_REVIEWED</code>
+            <code seoname="Markets" symbol="OMKM" type="SUBJECT" vrtysux="SUBJECT|OMKM">Markets</code>
+            <code seoname="Personal Finance" symbol="OMON"
+                type="SUBJECT" vrtysux="SUBJECT|OMON">Personal Finance</code>
+            <code seoname="US News" symbol="ONEW" type="SUBJECT" vrtysux="SUBJECT|ONEW">US News</code>
+            <code seoname="Politics &amp; Policy" symbol="OPOL"
+                type="SUBJECT" vrtysux="SUBJECT|OPOL">Politics &amp; Policy</code>
+            <code seoname="wires" symbol="wires" type="WIREDISPLAY" vrtysux="WIREDISPLAY|wires">wires</code>
+            <properties>
+                <property>
+                    <type>author</type>
+                    <value>Liam Pleven</value>
+                    <itemid>author|Liam Pleven</itemid>
+                    <properties>
+                        <property>
+                            <type>name</type>
+                            <value>Liam Pleven</value>
+                        </property>
+                        <property>
+                            <type>source</type>
+                            <value>EXPANDER</value>
+                        </property>
+                        <property>
+                            <type>value</type>
+                            <value>Liam Pleven</value>
+                        </property>
+                        <property>
+                            <type>extractedtext</type>
+                            <value>Liam Pleven</value>
+                        </property>
+                        <property>
+                            <type>rank</type>
+                            <value>1</value>
+                        </property>
+                        <property>
+                            <type>author</type>
+                            <value>Liam Pleven</value>
+                        </property>
+                        <property>
+                            <type>id</type>
+                            <value>Liam Pleven</value>
+                        </property>
+                        <property>
+                            <type>topicid</type>
+                            <value/>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>author</type>
+                    <value>Laura Saunders</value>
+                    <itemid>author|Laura Saunders</itemid>
+                    <properties>
+                        <property>
+                            <type>name</type>
+                            <value>Laura Saunders</value>
+                        </property>
+                        <property>
+                            <type>source</type>
+                            <value>EXPANDER</value>
+                        </property>
+                        <property>
+                            <type>value</type>
+                            <value>Laura Saunders</value>
+                        </property>
+                        <property>
+                            <type>extractedtext</type>
+                            <value>Laura Saunders</value>
+                        </property>
+                        <property>
+                            <type>rank</type>
+                            <value>2</value>
+                        </property>
+                        <property>
+                            <type>topicid</type>
+                            <value>6491</value>
+                        </property>
+                        <property>
+                            <type>author</type>
+                            <value>Laura Saunders</value>
+                        </property>
+                        <property>
+                            <type>id</type>
+                            <value>Laura Saunders</value>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>co</type>
+                    <value>irevs</value>
+                    <itemid>co|irevs</itemid>
+                    <properties>
+                        <property>
+                            <type>confidence</type>
+                            <value>100</value>
+                        </property>
+                        <property>
+                            <type>confidencerange</type>
+                            <value>high</value>
+                        </property>
+                        <property>
+                            <type>displayname</type>
+                            <value>Internal Revenue Service</value>
+                        </property>
+                        <property>
+                            <type>extractedtext</type>
+                            <value>Internal Revenue Service</value>
+                        </property>
+                        <property>
+                            <type>fcode</type>
+                            <value>irevs</value>
+                        </property>
+                        <property>
+                            <type>name</type>
+                            <value>Internal Revenue Service</value>
+                        </property>
+                        <property>
+                            <type>occurs</type>
+                            <value>true</value>
+                        </property>
+                        <property>
+                            <type>onlinesignificance</type>
+                            <value>prominent</value>
+                        </property>
+                        <property>
+                            <type>relevance</type>
+                            <value>89</value>
+                        </property>
+                        <property>
+                            <type>relevancerange</type>
+                            <value>high</value>
+                        </property>
+                        <property>
+                            <type>significance</type>
+                            <value>prominent</value>
+                        </property>
+                        <property>
+                            <type>source</type>
+                            <value>FACTIVA</value>
+                        </property>
+                        <property>
+                            <type>subcat</type>
+                            <value>org</value>
+                        </property>
+                        <property>
+                            <type>why</type>
+                            <value>about</value>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>co</type>
+                    <value>ubs</value>
+                    <itemid>co|ubs</itemid>
+                    <properties>
+                        <property>
+                            <type>confidence</type>
+                            <value>100</value>
+                        </property>
+                        <property>
+                            <type>confidencerange</type>
+                            <value>high</value>
+                        </property>
+                        <property>
+                            <type>countrycode</type>
+                            <value>US</value>
+                        </property>
+                        <property>
+                            <type>displayname</type>
+                            <value>UBS</value>
+                        </property>
+                        <property>
+                            <type>exchange</type>
+                            <value>NYSE</value>
+                        </property>
+                        <property>
+                            <type>extractedtext</type>
+                            <value>UBS</value>
+                        </property>
+                        <property>
+                            <type>fcode</type>
+                            <value>ubs</value>
+                        </property>
+                        <property>
+                            <type>name</type>
+                            <value>UBS</value>
+                        </property>
+                        <property>
+                            <type>onlinesignificance</type>
+                            <value>passing-mention</value>
+                        </property>
+                        <property>
+                            <type>relevance</type>
+                            <value>25</value>
+                        </property>
+                        <property>
+                            <type>relevancerange</type>
+                            <value>low</value>
+                        </property>
+                        <property>
+                            <type>seoname</type>
+                            <value>ubs</value>
+                        </property>
+                        <property>
+                            <type>significance</type>
+                            <value>passing</value>
+                        </property>
+                        <property>
+                            <type>source</type>
+                            <value>FACTIVA</value>
+                        </property>
+                        <property>
+                            <type>subcat</type>
+                            <value>com</value>
+                        </property>
+                        <property>
+                            <type>symbol</type>
+                            <value>UBSN.VX</value>
+                        </property>
+                        <property>
+                            <type>why</type>
+                            <value>occur</value>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>co</type>
+                    <value>sk</value>
+                    <itemid>co|sk</itemid>
+                    <properties>
+                        <property>
+                            <type>confidence</type>
+                            <value>100</value>
+                        </property>
+                        <property>
+                            <type>confidencerange</type>
+                            <value>high</value>
+                        </property>
+                        <property>
+                            <type>countrycode</type>
+                            <value>US</value>
+                        </property>
+                        <property>
+                            <type>displayname</type>
+                            <value>Credit Suisse Group</value>
+                        </property>
+                        <property>
+                            <type>exchange</type>
+                            <value>NYSE</value>
+                        </property>
+                        <property>
+                            <type>extractedtext</type>
+                            <value>Credit Suisse Group</value>
+                        </property>
+                        <property>
+                            <type>fcode</type>
+                            <value>sk</value>
+                        </property>
+                        <property>
+                            <type>name</type>
+                            <value>Credit Suisse Group</value>
+                        </property>
+                        <property>
+                            <type>relevance</type>
+                            <value>6</value>
+                        </property>
+                        <property>
+                            <type>relevancerange</type>
+                            <value>verylow</value>
+                        </property>
+                        <property>
+                            <type>seoname</type>
+                            <value>credit_suisse_group</value>
+                        </property>
+                        <property>
+                            <type>source</type>
+                            <value>FACTIVA</value>
+                        </property>
+                        <property>
+                            <type>subcat</type>
+                            <value>com</value>
+                        </property>
+                        <property>
+                            <type>symbol</type>
+                            <value>CSGN.VX</value>
+                        </property>
+                        <property>
+                            <type>ticker</type>
+                            <value>CSGN.VX</value>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>co</type>
+                    <value>usagov</value>
+                    <itemid>co|usagov</itemid>
+                    <properties>
+                        <property>
+                            <type>confidence</type>
+                            <value>100</value>
+                        </property>
+                        <property>
+                            <type>confidencerange</type>
+                            <value>high</value>
+                        </property>
+                        <property>
+                            <type>displayname</type>
+                            <value>U.S. government</value>
+                        </property>
+                        <property>
+                            <type>extractedtext</type>
+                            <value>U.S. government</value>
+                        </property>
+                        <property>
+                            <type>fcode</type>
+                            <value>usagov</value>
+                        </property>
+                        <property>
+                            <type>name</type>
+                            <value>U.S. government</value>
+                        </property>
+                        <property>
+                            <type>relevance</type>
+                            <value>14</value>
+                        </property>
+                        <property>
+                            <type>relevancerange</type>
+                            <value>verylow</value>
+                        </property>
+                        <property>
+                            <type>source</type>
+                            <value>FACTIVA</value>
+                        </property>
+                        <property>
+                            <type>subcat</type>
+                            <value>org</value>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>co</type>
+                    <value>gthlrq</value>
+                    <itemid>co|gthlrq</itemid>
+                    <properties>
+                        <property>
+                            <type>confidence</type>
+                            <value>100</value>
+                        </property>
+                        <property>
+                            <type>confidencerange</type>
+                            <value>high</value>
+                        </property>
+                        <property>
+                            <type>displayname</type>
+                            <value>Greenberg Traurig</value>
+                        </property>
+                        <property>
+                            <type>extractedtext</type>
+                            <value>Greenberg Traurig</value>
+                        </property>
+                        <property>
+                            <type>fcode</type>
+                            <value>gthlrq</value>
+                        </property>
+                        <property>
+                            <type>name</type>
+                            <value>Greenberg Traurig</value>
+                        </property>
+                        <property>
+                            <type>onlinesignificance</type>
+                            <value>passing-mention</value>
+                        </property>
+                        <property>
+                            <type>relevance</type>
+                            <value>5</value>
+                        </property>
+                        <property>
+                            <type>relevancerange</type>
+                            <value>verylow</value>
+                        </property>
+                        <property>
+                            <type>significance</type>
+                            <value>passing</value>
+                        </property>
+                        <property>
+                            <type>source</type>
+                            <value>FACTIVA</value>
+                        </property>
+                        <property>
+                            <type>status</type>
+                            <value>modified</value>
+                        </property>
+                        <property>
+                            <type>subcat</type>
+                            <value>com</value>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>co</type>
+                    <value>IRS</value>
+                    <itemid>co|IRS</itemid>
+                    <properties>
+                        <property>
+                            <type>displayname</type>
+                            <value>IRS</value>
+                        </property>
+                        <property>
+                            <type>extractedtext</type>
+                            <value>IRS</value>
+                        </property>
+                        <property>
+                            <type>name</type>
+                            <value>IRS</value>
+                        </property>
+                        <property>
+                            <type>onlinesignificance</type>
+                            <value>prominent</value>
+                        </property>
+                        <property>
+                            <type>significance</type>
+                            <value>prominent</value>
+                        </property>
+                        <property>
+                            <type>source</type>
+                            <value>FACTIVA</value>
+                        </property>
+                        <property>
+                            <type>status</type>
+                            <value>modified</value>
+                        </property>
+                        <property>
+                            <type>subcat</type>
+                            <value>gov</value>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>company</type>
+                    <value>UBSN.VX</value>
+                    <itemid>company|UBSN.VX</itemid>
+                    <properties>
+                        <property>
+                            <type>name</type>
+                            <value>UBS</value>
+                        </property>
+                        <property>
+                            <type>significance</type>
+                            <value>PASSING-MENTION</value>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>delay</type>
+                    <value>0</value>
+                    <itemid>delay|0</itemid>
+                    <properties>
+                        <property>
+                            <type>name</type>
+                            <value>0</value>
+                        </property>
+                        <property>
+                            <type>source</type>
+                            <value>EXPANDER</value>
+                        </property>
+                        <property>
+                            <type>value</type>
+                            <value>0</value>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>djn</type>
+                    <value>UBS</value>
+                    <itemid>djn|UBS</itemid>
+                    <properties>
+                        <property>
+                            <type>fcode</type>
+                            <value>UBS</value>
+                        </property>
+                        <property>
+                            <type>name</type>
+                            <value>UBS</value>
+                        </property>
+                        <property>
+                            <type>onlinesignificance</type>
+                            <value>passing-mention</value>
+                        </property>
+                        <property>
+                            <type>significance</type>
+                            <value>passing</value>
+                        </property>
+                        <property>
+                            <type>source</type>
+                            <value>FACTIVA</value>
+                        </property>
+                        <property>
+                            <type>why</type>
+                            <value>occur</value>
+                        </property>
+                        <property>
+                            <type>source</type>
+                            <value>EXPANDER</value>
+                        </property>
+                        <property>
+                            <type>value</type>
+                            <value>UBS</value>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>djn</type>
+                    <value>UBSN.VX</value>
+                    <itemid>djn|UBSN.VX</itemid>
+                    <properties>
+                        <property>
+                            <type>fcode</type>
+                            <value>UBSN.VX</value>
+                        </property>
+                        <property>
+                            <type>name</type>
+                            <value>UBSN.VX</value>
+                        </property>
+                        <property>
+                            <type>onlinesignificance</type>
+                            <value>passing-mention</value>
+                        </property>
+                        <property>
+                            <type>significance</type>
+                            <value>passing</value>
+                        </property>
+                        <property>
+                            <type>source</type>
+                            <value>FACTIVA</value>
+                        </property>
+                        <property>
+                            <type>why</type>
+                            <value>occur</value>
+                        </property>
+                        <property>
+                            <type>source</type>
+                            <value>EXPANDER</value>
+                        </property>
+                        <property>
+                            <type>value</type>
+                            <value>UBSN.VX</value>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>djn</type>
+                    <value>G/IRS</value>
+                    <itemid>djn|G/IRS</itemid>
+                    <properties>
+                        <property>
+                            <type>fcode</type>
+                            <value>G/IRS</value>
+                        </property>
+                        <property>
+                            <type>name</type>
+                            <value>G/IRS</value>
+                        </property>
+                        <property>
+                            <type>occurs</type>
+                            <value>true</value>
+                        </property>
+                        <property>
+                            <type>onlinesignificance</type>
+                            <value>prominent</value>
+                        </property>
+                        <property>
+                            <type>significance</type>
+                            <value>prominent</value>
+                        </property>
+                        <property>
+                            <type>source</type>
+                            <value>FACTIVA</value>
+                        </property>
+                        <property>
+                            <type>why</type>
+                            <value>about</value>
+                        </property>
+                        <property>
+                            <type>source</type>
+                            <value>EXPANDER</value>
+                        </property>
+                        <property>
+                            <type>value</type>
+                            <value>G/IRS</value>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>djn</type>
+                    <value>N/TAX</value>
+                    <itemid>djn|N/TAX</itemid>
+                    <properties>
+                        <property>
+                            <type>fcode</type>
+                            <value>N/TAX</value>
+                        </property>
+                        <property>
+                            <type>name</type>
+                            <value>N/TAX</value>
+                        </property>
+                        <property>
+                            <type>onlinesignificance</type>
+                            <value>prominent</value>
+                        </property>
+                        <property>
+                            <type>significance</type>
+                            <value>prominent</value>
+                        </property>
+                        <property>
+                            <type>source</type>
+                            <value>FACTIVA</value>
+                        </property>
+                        <property>
+                            <type>why</type>
+                            <value>about</value>
+                        </property>
+                        <property>
+                            <type>source</type>
+                            <value>EXPANDER</value>
+                        </property>
+                        <property>
+                            <type>value</type>
+                            <value>N/TAX</value>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>djn</type>
+                    <value>N/CNW</value>
+                    <itemid>djn|N/CNW</itemid>
+                    <properties>
+                        <property>
+                            <type>fcode</type>
+                            <value>N/CNW</value>
+                        </property>
+                        <property>
+                            <type>name</type>
+                            <value>N/CNW</value>
+                        </property>
+                        <property>
+                            <type>source</type>
+                            <value>FACTIVA</value>
+                        </property>
+                        <property>
+                            <type>why</type>
+                            <value>lineage</value>
+                        </property>
+                        <property>
+                            <type>source</type>
+                            <value>EXPANDER</value>
+                        </property>
+                        <property>
+                            <type>value</type>
+                            <value>N/CNW</value>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>djn</type>
+                    <value>N/ENTR</value>
+                    <itemid>djn|N/ENTR</itemid>
+                    <properties>
+                        <property>
+                            <type>fcode</type>
+                            <value>N/ENTR</value>
+                        </property>
+                        <property>
+                            <type>name</type>
+                            <value>N/ENTR</value>
+                        </property>
+                        <property>
+                            <type>source</type>
+                            <value>FACTIVA</value>
+                        </property>
+                        <property>
+                            <type>why</type>
+                            <value>lineage</value>
+                        </property>
+                        <property>
+                            <type>source</type>
+                            <value>EXPANDER</value>
+                        </property>
+                        <property>
+                            <type>value</type>
+                            <value>N/ENTR</value>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>djn</type>
+                    <value>N/GENI</value>
+                    <itemid>djn|N/GENI</itemid>
+                    <properties>
+                        <property>
+                            <type>fcode</type>
+                            <value>N/GENI</value>
+                        </property>
+                        <property>
+                            <type>name</type>
+                            <value>N/GENI</value>
+                        </property>
+                        <property>
+                            <type>source</type>
+                            <value>FACTIVA</value>
+                        </property>
+                        <property>
+                            <type>why</type>
+                            <value>lineage</value>
+                        </property>
+                        <property>
+                            <type>source</type>
+                            <value>EXPANDER</value>
+                        </property>
+                        <property>
+                            <type>value</type>
+                            <value>N/GENI</value>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>djn</type>
+                    <value>N/IEN</value>
+                    <itemid>djn|N/IEN</itemid>
+                    <properties>
+                        <property>
+                            <type>fcode</type>
+                            <value>N/IEN</value>
+                        </property>
+                        <property>
+                            <type>name</type>
+                            <value>N/IEN</value>
+                        </property>
+                        <property>
+                            <type>source</type>
+                            <value>FACTIVA</value>
+                        </property>
+                        <property>
+                            <type>why</type>
+                            <value>lineage</value>
+                        </property>
+                        <property>
+                            <type>source</type>
+                            <value>EXPANDER</value>
+                        </property>
+                        <property>
+                            <type>value</type>
+                            <value>N/IEN</value>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>djn</type>
+                    <value>R/US</value>
+                    <itemid>djn|R/US</itemid>
+                    <properties>
+                        <property>
+                            <type>fcode</type>
+                            <value>R/US</value>
+                        </property>
+                        <property>
+                            <type>name</type>
+                            <value>R/US</value>
+                        </property>
+                        <property>
+                            <type>onlinesignificance</type>
+                            <value>prominent</value>
+                        </property>
+                        <property>
+                            <type>significance</type>
+                            <value>prominent</value>
+                        </property>
+                        <property>
+                            <type>source</type>
+                            <value>FACTIVA</value>
+                        </property>
+                        <property>
+                            <type>why</type>
+                            <value>about</value>
+                        </property>
+                        <property>
+                            <type>source</type>
+                            <value>EXPANDER</value>
+                        </property>
+                        <property>
+                            <type>value</type>
+                            <value>R/US</value>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>djn</type>
+                    <value>R/NME</value>
+                    <itemid>djn|R/NME</itemid>
+                    <properties>
+                        <property>
+                            <type>fcode</type>
+                            <value>R/NME</value>
+                        </property>
+                        <property>
+                            <type>name</type>
+                            <value>R/NME</value>
+                        </property>
+                        <property>
+                            <type>source</type>
+                            <value>FACTIVA</value>
+                        </property>
+                        <property>
+                            <type>why</type>
+                            <value>lineage</value>
+                        </property>
+                        <property>
+                            <type>source</type>
+                            <value>EXPANDER</value>
+                        </property>
+                        <property>
+                            <type>value</type>
+                            <value>R/NME</value>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>djn</type>
+                    <value>n/wer</value>
+                    <itemid>djn|n/wer</itemid>
+                    <properties>
+                        <property>
+                            <type>codetype</type>
+                            <value>djnCode</value>
+                        </property>
+                        <property>
+                            <type>name</type>
+                            <value>N/ENTR</value>
+                        </property>
+                        <property>
+                            <type>source</type>
+                            <value>MANUAL</value>
+                        </property>
+                        <property>
+                            <type>status</type>
+                            <value>modified</value>
+                        </property>
+                        <property>
+                            <type>title</type>
+                            <value>Equities Dominant</value>
+                        </property>
+                        <property>
+                            <type>value</type>
+                            <value>n/wer</value>
+                        </property>
+                        <property>
+                            <type>name</type>
+                            <value>n/wer</value>
+                        </property>
+                        <property>
+                            <type>source</type>
+                            <value>EXPANDER</value>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>djn</type>
+                    <value>n/djn</value>
+                    <itemid>djn|n/djn</itemid>
+                    <properties>
+                        <property>
+                            <type>name</type>
+                            <value>n/djn</value>
+                        </property>
+                        <property>
+                            <type>source</type>
+                            <value>EXPANDER</value>
+                        </property>
+                        <property>
+                            <type>value</type>
+                            <value>n/djn</value>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>djn</type>
+                    <value>p/meth</value>
+                    <itemid>djn|p/meth</itemid>
+                    <properties>
+                        <property>
+                            <type>name</type>
+                            <value>p/meth</value>
+                        </property>
+                        <property>
+                            <type>source</type>
+                            <value>EXPANDER</value>
+                        </property>
+                        <property>
+                            <type>value</type>
+                            <value>p/meth</value>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>djn</type>
+                    <value>N/GEN</value>
+                    <itemid>djn|N/GEN</itemid>
+                    <properties>
+                        <property>
+                            <type>name</type>
+                            <value>N/GEN</value>
+                        </property>
+                        <property>
+                            <type>source</type>
+                            <value>EXPANDER</value>
+                        </property>
+                        <property>
+                            <type>value</type>
+                            <value>N/GEN</value>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>first_publish_headline</type>
+                    <value>IRS Issues New Rules for Offshore Accounts</value>
+                    <itemid>first_publish_headline|IRS Issues New Rules for Offshore Accounts</itemid>
+                </property>
+                <property>
+                    <type>flow</type>
+                    <value>WSJ.com</value>
+                    <itemid>flow|WSJ.com</itemid>
+                    <properties>
+                        <property>
+                            <type>name</type>
+                            <value>WSJ.com</value>
+                        </property>
+                        <property>
+                            <type>status</type>
+                            <value>modified</value>
+                        </property>
+                        <property>
+                            <type>title</type>
+                            <value>Product</value>
+                        </property>
+                        <property>
+                            <type>value</type>
+                            <value>WSJ.com</value>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>flow</type>
+                    <value>WSJ</value>
+                    <itemid>flow|WSJ</itemid>
+                    <properties>
+                        <property>
+                            <type>name</type>
+                            <value>WSJ</value>
+                        </property>
+                        <property>
+                            <type>status</type>
+                            <value>modified</value>
+                        </property>
+                        <property>
+                            <type>title</type>
+                            <value>Product</value>
+                        </property>
+                        <property>
+                            <type>value</type>
+                            <value>WSJ</value>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>flow</type>
+                    <value>WSJAsia</value>
+                    <itemid>flow|WSJAsia</itemid>
+                    <properties>
+                        <property>
+                            <type>name</type>
+                            <value>WSJAsia</value>
+                        </property>
+                        <property>
+                            <type>status</type>
+                            <value>modified</value>
+                        </property>
+                        <property>
+                            <type>title</type>
+                            <value>Product</value>
+                        </property>
+                        <property>
+                            <type>value</type>
+                            <value>WSJAsia</value>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>flow</type>
+                    <value>WSJEurope</value>
+                    <itemid>flow|WSJEurope</itemid>
+                    <properties>
+                        <property>
+                            <type>name</type>
+                            <value>WSJEurope</value>
+                        </property>
+                        <property>
+                            <type>status</type>
+                            <value>modified</value>
+                        </property>
+                        <property>
+                            <type>title</type>
+                            <value>Product</value>
+                        </property>
+                        <property>
+                            <type>value</type>
+                            <value>WSJEurope</value>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>flow</type>
+                    <value>WSJSunday</value>
+                    <itemid>flow|WSJSunday</itemid>
+                    <properties>
+                        <property>
+                            <type>name</type>
+                            <value>WSJSunday</value>
+                        </property>
+                        <property>
+                            <type>status</type>
+                            <value>modified</value>
+                        </property>
+                        <property>
+                            <type>title</type>
+                            <value>Product</value>
+                        </property>
+                        <property>
+                            <type>value</type>
+                            <value>WSJSunday</value>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>flow</type>
+                    <value>WSJ Japanese</value>
+                    <itemid>flow|WSJ Japanese</itemid>
+                    <properties>
+                        <property>
+                            <type>name</type>
+                            <value>WSJ Japanese</value>
+                        </property>
+                        <property>
+                            <type>status</type>
+                            <value>modified</value>
+                        </property>
+                        <property>
+                            <type>title</type>
+                            <value>Product</value>
+                        </property>
+                        <property>
+                            <type>value</type>
+                            <value>WSJ Japanese</value>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>generaldelay</type>
+                    <value>0</value>
+                    <itemid>generaldelay|0</itemid>
+                    <properties>
+                        <property>
+                            <type>name</type>
+                            <value>0</value>
+                        </property>
+                        <property>
+                            <type>source</type>
+                            <value>EXPANDER</value>
+                        </property>
+                        <property>
+                            <type>value</type>
+                            <value>0</value>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>headline</type>
+                    <value>IRS Eases Up on Accidental Tax Cheats</value>
+                    <itemid>headline|IRS Eases Up on Accidental Tax Cheats</itemid>
+                </property>
+                <property>
+                    <type>inset</type>
+                    <value>inset-1</value>
+                    <itemid>inset|inset-1</itemid>
+                </property>
+                <property>
+                    <type>keyword</type>
+                    <value>TAX COMPLIANCE</value>
+                    <itemid>keyword|TAX COMPLIANCE</itemid>
+                    <properties>
+                        <property>
+                            <type>name</type>
+                            <value>TAX COMPLIANCE</value>
+                        </property>
+                        <property>
+                            <type>source</type>
+                            <value>EXPANDER</value>
+                        </property>
+                        <property>
+                            <type>value</type>
+                            <value>TAX COMPLIANCE</value>
+                        </property>
+                        <property>
+                            <type>status</type>
+                            <value>added</value>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>keyword</type>
+                    <value>OFFSHORE ACCOUNTS</value>
+                    <itemid>keyword|OFFSHORE ACCOUNTS</itemid>
+                    <properties>
+                        <property>
+                            <type>name</type>
+                            <value>OFFSHORE ACCOUNTS</value>
+                        </property>
+                        <property>
+                            <type>source</type>
+                            <value>EXPANDER</value>
+                        </property>
+                        <property>
+                            <type>value</type>
+                            <value>OFFSHORE ACCOUNTS</value>
+                        </property>
+                        <property>
+                            <type>status</type>
+                            <value>added</value>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>keyword</type>
+                    <value>IRS</value>
+                    <itemid>keyword|IRS</itemid>
+                    <properties>
+                        <property>
+                            <type>name</type>
+                            <value>IRS</value>
+                        </property>
+                        <property>
+                            <type>source</type>
+                            <value>EXPANDER</value>
+                        </property>
+                        <property>
+                            <type>value</type>
+                            <value>IRS</value>
+                        </property>
+                        <property>
+                            <type>status</type>
+                            <value>added</value>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>keyword</type>
+                    <value>TAX ENFORCEMENT</value>
+                    <itemid>keyword|TAX ENFORCEMENT</itemid>
+                    <properties>
+                        <property>
+                            <type>name</type>
+                            <value>TAX ENFORCEMENT</value>
+                        </property>
+                        <property>
+                            <type>source</type>
+                            <value>EXPANDER</value>
+                        </property>
+                        <property>
+                            <type>value</type>
+                            <value>TAX ENFORCEMENT</value>
+                        </property>
+                        <property>
+                            <type>status</type>
+                            <value>added</value>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>keyword</type>
+                    <value>TAX PENALTIES</value>
+                    <itemid>keyword|TAX PENALTIES</itemid>
+                    <properties>
+                        <property>
+                            <type>name</type>
+                            <value>TAX PENALTIES</value>
+                        </property>
+                        <property>
+                            <type>source</type>
+                            <value>EXPANDER</value>
+                        </property>
+                        <property>
+                            <type>value</type>
+                            <value>TAX PENALTIES</value>
+                        </property>
+                        <property>
+                            <type>status</type>
+                            <value>added</value>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>keyword</type>
+                    <value>TAX CHEAT</value>
+                    <itemid>keyword|TAX CHEAT</itemid>
+                    <properties>
+                        <property>
+                            <type>name</type>
+                            <value>TAX CHEAT</value>
+                        </property>
+                        <property>
+                            <type>source</type>
+                            <value>EXPANDER</value>
+                        </property>
+                        <property>
+                            <type>value</type>
+                            <value>TAX CHEAT</value>
+                        </property>
+                        <property>
+                            <type>status</type>
+                            <value>added</value>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>keyword</type>
+                    <value>TAXATION</value>
+                    <itemid>keyword|TAXATION</itemid>
+                    <properties>
+                        <property>
+                            <type>name</type>
+                            <value>TAXATION</value>
+                        </property>
+                        <property>
+                            <type>source</type>
+                            <value>EXPANDER</value>
+                        </property>
+                        <property>
+                            <type>value</type>
+                            <value>TAXATION</value>
+                        </property>
+                        <property>
+                            <type>status</type>
+                            <value>added</value>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>keyword</type>
+                    <value>OVERSEAS ACCOUNTS</value>
+                    <itemid>keyword|OVERSEAS ACCOUNTS</itemid>
+                    <properties>
+                        <property>
+                            <type>name</type>
+                            <value>OVERSEAS ACCOUNTS</value>
+                        </property>
+                        <property>
+                            <type>source</type>
+                            <value>EXPANDER</value>
+                        </property>
+                        <property>
+                            <type>value</type>
+                            <value>OVERSEAS ACCOUNTS</value>
+                        </property>
+                        <property>
+                            <type>status</type>
+                            <value>added</value>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>keyword</type>
+                    <value>TAXES</value>
+                    <itemid>keyword|TAXES</itemid>
+                    <properties>
+                        <property>
+                            <type>name</type>
+                            <value>TAXES</value>
+                        </property>
+                        <property>
+                            <type>source</type>
+                            <value>EXPANDER</value>
+                        </property>
+                        <property>
+                            <type>value</type>
+                            <value>TAXES</value>
+                        </property>
+                        <property>
+                            <type>status</type>
+                            <value>added</value>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>keyword</type>
+                    <value>TAX CHEATING</value>
+                    <itemid>keyword|TAX CHEATING</itemid>
+                    <properties>
+                        <property>
+                            <type>name</type>
+                            <value>TAX CHEATING</value>
+                        </property>
+                        <property>
+                            <type>source</type>
+                            <value>EXPANDER</value>
+                        </property>
+                        <property>
+                            <type>value</type>
+                            <value>TAX CHEATING</value>
+                        </property>
+                        <property>
+                            <type>status</type>
+                            <value>added</value>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>media</type>
+                    <value>media-12</value>
+                    <itemid>media|media-12</itemid>
+                </property>
+                <property>
+                    <type>ndjn</type>
+                    <value>np/pmda</value>
+                    <itemid>ndjn|np/pmda</itemid>
+                    <properties>
+                        <property>
+                            <type>name</type>
+                            <value>np/pmda</value>
+                        </property>
+                        <property>
+                            <type>source</type>
+                            <value>EXPANDER</value>
+                        </property>
+                        <property>
+                            <type>value</type>
+                            <value>np/pmda</value>
+                        </property>
+                        <property>
+                            <type>source</type>
+                            <value>DJN-CONTROL</value>
+                        </property>
+                        <property>
+                            <type>status</type>
+                            <value>modified</value>
+                        </property>
+                        <property>
+                            <type>title</type>
+                            <value>Publish to All At the Same Time</value>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>ns</type>
+                    <value>ccat</value>
+                    <itemid>ns|ccat</itemid>
+                    <properties>
+                        <property>
+                            <type>fcode</type>
+                            <value>ccat</value>
+                        </property>
+                        <property>
+                            <type>name</type>
+                            <value>Corporate/Industrial News</value>
+                        </property>
+                        <property>
+                            <type>source</type>
+                            <value>FACTIVA</value>
+                        </property>
+                        <property>
+                            <type>why</type>
+                            <value>lineage</value>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>ns</type>
+                    <value>e21</value>
+                    <itemid>ns|e21</itemid>
+                    <properties>
+                        <property>
+                            <type>fcode</type>
+                            <value>e21</value>
+                        </property>
+                        <property>
+                            <type>name</type>
+                            <value>Government Finance</value>
+                        </property>
+                        <property>
+                            <type>source</type>
+                            <value>FACTIVA</value>
+                        </property>
+                        <property>
+                            <type>why</type>
+                            <value>lineage</value>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>ns</type>
+                    <value>ecat</value>
+                    <itemid>ns|ecat</itemid>
+                    <properties>
+                        <property>
+                            <type>fcode</type>
+                            <value>ecat</value>
+                        </property>
+                        <property>
+                            <type>name</type>
+                            <value>Economic News</value>
+                        </property>
+                        <property>
+                            <type>source</type>
+                            <value>FACTIVA</value>
+                        </property>
+                        <property>
+                            <type>why</type>
+                            <value>lineage</value>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>ns</type>
+                    <value>ncat</value>
+                    <itemid>ns|ncat</itemid>
+                    <properties>
+                        <property>
+                            <type>fcode</type>
+                            <value>ncat</value>
+                        </property>
+                        <property>
+                            <type>internalsymbol</type>
+                            <value>true</value>
+                        </property>
+                        <property>
+                            <type>name</type>
+                            <value>Content Types</value>
+                        </property>
+                        <property>
+                            <type>source</type>
+                            <value>FACTIVA</value>
+                        </property>
+                        <property>
+                            <type>why</type>
+                            <value>lineage</value>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>ns</type>
+                    <value>nfact</value>
+                    <itemid>ns|nfact</itemid>
+                    <properties>
+                        <property>
+                            <type>fcode</type>
+                            <value>nfact</value>
+                        </property>
+                        <property>
+                            <type>internalsymbol</type>
+                            <value>true</value>
+                        </property>
+                        <property>
+                            <type>name</type>
+                            <value>Factiva Filters</value>
+                        </property>
+                        <property>
+                            <type>source</type>
+                            <value>FACTIVA</value>
+                        </property>
+                        <property>
+                            <type>why</type>
+                            <value>lineage</value>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>ns</type>
+                    <value>nfcpin</value>
+                    <itemid>ns|nfcpin</itemid>
+                    <properties>
+                        <property>
+                            <type>fcode</type>
+                            <value>nfcpin</value>
+                        </property>
+                        <property>
+                            <type>internalsymbol</type>
+                            <value>true</value>
+                        </property>
+                        <property>
+                            <type>name</type>
+                            <value>FC&amp;E Industry News Filter</value>
+                        </property>
+                        <property>
+                            <type>source</type>
+                            <value>FACTIVA</value>
+                        </property>
+                        <property>
+                            <type>why</type>
+                            <value>lineage</value>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>ns</type>
+                    <value>gcat</value>
+                    <itemid>ns|gcat</itemid>
+                    <properties>
+                        <property>
+                            <type>fcode</type>
+                            <value>gcat</value>
+                        </property>
+                        <property>
+                            <type>name</type>
+                            <value>Political/General News</value>
+                        </property>
+                        <property>
+                            <type>onlinesignificance</type>
+                            <value>prominent</value>
+                        </property>
+                        <property>
+                            <type>significance</type>
+                            <value>prominent</value>
+                        </property>
+                        <property>
+                            <type>source</type>
+                            <value>FACTIVA</value>
+                        </property>
+                        <property>
+                            <type>status</type>
+                            <value>active</value>
+                        </property>
+                        <property>
+                            <type>why</type>
+                            <value>about</value>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>ns</type>
+                    <value>C13</value>
+                    <itemid>ns|C13</itemid>
+                    <properties>
+                        <property>
+                            <type>fcode</type>
+                            <value>C13</value>
+                        </property>
+                        <property>
+                            <type>name</type>
+                            <value>Regulation/Government Policy</value>
+                        </property>
+                        <property>
+                            <type>source</type>
+                            <value>MANUAL</value>
+                        </property>
+                        <property>
+                            <type>status</type>
+                            <value>added</value>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>ns</type>
+                    <value>E211</value>
+                    <itemid>ns|E211</itemid>
+                    <properties>
+                        <property>
+                            <type>fcode</type>
+                            <value>E211</value>
+                        </property>
+                        <property>
+                            <type>name</type>
+                            <value>Government Taxation/Revenue</value>
+                        </property>
+                        <property>
+                            <type>source</type>
+                            <value>MANUAL</value>
+                        </property>
+                        <property>
+                            <type>status</type>
+                            <value>added</value>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>nwchain</type>
+                    <value>SB100014240527023038502045796324922137712781</value>
+                    <itemid>nwchain|SB100014240527023038502045796324922137712781</itemid>
+                    <properties>
+                        <property>
+                            <type>name</type>
+                            <value>SB100014240527023038502045796324922137712781</value>
+                        </property>
+                        <property>
+                            <type>source</type>
+                            <value>EXPANDER</value>
+                        </property>
+                        <property>
+                            <type>value</type>
+                            <value>SB100014240527023038502045796324922137712781</value>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>nwchain</type>
+                    <value>SB100014240527023038502045796324922137712782</value>
+                    <itemid>nwchain|SB100014240527023038502045796324922137712782</itemid>
+                    <properties>
+                        <property>
+                            <type>name</type>
+                            <value>SB100014240527023038502045796324922137712782</value>
+                        </property>
+                        <property>
+                            <type>source</type>
+                            <value>EXPANDER</value>
+                        </property>
+                        <property>
+                            <type>value</type>
+                            <value>SB100014240527023038502045796324922137712782</value>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>nwchain</type>
+                    <value>SB10001424052702303850204579632492213771278</value>
+                    <itemid>nwchain|SB10001424052702303850204579632492213771278</itemid>
+                    <properties>
+                        <property>
+                            <type>name</type>
+                            <value>SB10001424052702303850204579632492213771278</value>
+                        </property>
+                        <property>
+                            <type>source</type>
+                            <value>EXPANDER</value>
+                        </property>
+                        <property>
+                            <type>value</type>
+                            <value>SB10001424052702303850204579632492213771278</value>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>pe</type>
+                    <value>40656775</value>
+                    <itemid>pe|40656775</itemid>
+                    <properties>
+                        <property>
+                            <type>confidence</type>
+                            <value>91</value>
+                        </property>
+                        <property>
+                            <type>confidencerange</type>
+                            <value>high</value>
+                        </property>
+                        <property>
+                            <type>displayname</type>
+                            <value>Koskinen, John</value>
+                        </property>
+                        <property>
+                            <type>extractedtext</type>
+                            <value>John Koskinen</value>
+                        </property>
+                        <property>
+                            <type>fcode</type>
+                            <value>40656775</value>
+                        </property>
+                        <property>
+                            <type>firstname</type>
+                            <value>John</value>
+                        </property>
+                        <property>
+                            <type>lastname</type>
+                            <value>Koskinen</value>
+                        </property>
+                        <property>
+                            <type>name</type>
+                            <value>John Koskinen</value>
+                        </property>
+                        <property>
+                            <type>onlinesignificance</type>
+                            <value>passing-mention</value>
+                        </property>
+                        <property>
+                            <type>relevance</type>
+                            <value>50</value>
+                        </property>
+                        <property>
+                            <type>relevancerange</type>
+                            <value>low</value>
+                        </property>
+                        <property>
+                            <type>seoname</type>
+                            <value>john-koskinen</value>
+                        </property>
+                        <property>
+                            <type>significance</type>
+                            <value>passing</value>
+                        </property>
+                        <property>
+                            <type>source</type>
+                            <value>FACTIVA</value>
+                        </property>
+                        <property>
+                            <type>title</type>
+                            <value>Interim chief executive officer</value>
+                        </property>
+                        <property>
+                            <type>topicid</type>
+                            <value>1061</value>
+                        </property>
+                        <property>
+                            <type>topicname</type>
+                            <value>John Koskinen</value>
+                        </property>
+                        <property>
+                            <type>visible</type>
+                            <value>1</value>
+                        </property>
+                        <property>
+                            <type>why</type>
+                            <value>occur</value>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>pe</type>
+                    <value>John Richardson</value>
+                    <itemid>pe|John Richardson</itemid>
+                    <properties>
+                        <property>
+                            <type>displayname</type>
+                            <value>Richardson, John</value>
+                        </property>
+                        <property>
+                            <type>extractedtext</type>
+                            <value>John Richardson</value>
+                        </property>
+                        <property>
+                            <type>firstname</type>
+                            <value>John</value>
+                        </property>
+                        <property>
+                            <type>lastname</type>
+                            <value>Richardson</value>
+                        </property>
+                        <property>
+                            <type>name</type>
+                            <value>John Richardson</value>
+                        </property>
+                        <property>
+                            <type>source</type>
+                            <value>FACTIVA</value>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>pe</type>
+                    <value>Nina Olson</value>
+                    <itemid>pe|Nina Olson</itemid>
+                    <properties>
+                        <property>
+                            <type>displayname</type>
+                            <value>Olson, Nina</value>
+                        </property>
+                        <property>
+                            <type>extractedtext</type>
+                            <value>Nina Olson</value>
+                        </property>
+                        <property>
+                            <type>firstname</type>
+                            <value>Nina</value>
+                        </property>
+                        <property>
+                            <type>lastname</type>
+                            <value>Olson</value>
+                        </property>
+                        <property>
+                            <type>name</type>
+                            <value>Nina Olson</value>
+                        </property>
+                        <property>
+                            <type>source</type>
+                            <value>FACTIVA</value>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>pe</type>
+                    <value>Seth Entin</value>
+                    <itemid>pe|Seth Entin</itemid>
+                    <properties>
+                        <property>
+                            <type>displayname</type>
+                            <value>Entin, Seth</value>
+                        </property>
+                        <property>
+                            <type>extractedtext</type>
+                            <value>Seth Entin</value>
+                        </property>
+                        <property>
+                            <type>firstname</type>
+                            <value>Seth</value>
+                        </property>
+                        <property>
+                            <type>lastname</type>
+                            <value>Entin</value>
+                        </property>
+                        <property>
+                            <type>name</type>
+                            <value>Seth Entin</value>
+                        </property>
+                        <property>
+                            <type>onlinesignificance</type>
+                            <value>passing-mention</value>
+                        </property>
+                        <property>
+                            <type>significance</type>
+                            <value>passing</value>
+                        </property>
+                        <property>
+                            <type>source</type>
+                            <value>FACTIVA</value>
+                        </property>
+                        <property>
+                            <type>status</type>
+                            <value>modified</value>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>person</type>
+                    <value>Koskinen, John</value>
+                    <itemid>person|Koskinen, John</itemid>
+                    <properties>
+                        <property>
+                            <type>name</type>
+                            <value>John Koskinen</value>
+                        </property>
+                        <property>
+                            <type>significance</type>
+                            <value>PASSING-MENTION</value>
+                        </property>
+                        <property>
+                            <type>topicid</type>
+                            <value>1061</value>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>person</type>
+                    <value>Entin, Seth</value>
+                    <itemid>person|Entin, Seth</itemid>
+                    <properties>
+                        <property>
+                            <type>name</type>
+                            <value>Seth Entin</value>
+                        </property>
+                        <property>
+                            <type>significance</type>
+                            <value>PASSING-MENTION</value>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>re</type>
+                    <value>usa</value>
+                    <itemid>re|usa</itemid>
+                    <properties>
+                        <property>
+                            <type>fcode</type>
+                            <value>usa</value>
+                        </property>
+                        <property>
+                            <type>name</type>
+                            <value>United States</value>
+                        </property>
+                        <property>
+                            <type>onlinesignificance</type>
+                            <value>prominent</value>
+                        </property>
+                        <property>
+                            <type>significance</type>
+                            <value>prominent</value>
+                        </property>
+                        <property>
+                            <type>source</type>
+                            <value>FACTIVA</value>
+                        </property>
+                        <property>
+                            <type>subcat</type>
+                            <value>cntry</value>
+                        </property>
+                        <property>
+                            <type>why</type>
+                            <value>about</value>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>re</type>
+                    <value>namz</value>
+                    <itemid>re|namz</itemid>
+                    <properties>
+                        <property>
+                            <type>fcode</type>
+                            <value>namz</value>
+                        </property>
+                        <property>
+                            <type>name</type>
+                            <value>North America</value>
+                        </property>
+                        <property>
+                            <type>source</type>
+                            <value>FACTIVA</value>
+                        </property>
+                        <property>
+                            <type>subcat</type>
+                            <value>snr</value>
+                        </property>
+                        <property>
+                            <type>why</type>
+                            <value>lineage</value>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>relay</type>
+                    <value>SYND</value>
+                    <itemid>relay|SYND</itemid>
+                    <properties>
+                        <property>
+                            <type>name</type>
+                            <value>SYND</value>
+                        </property>
+                        <property>
+                            <type>source</type>
+                            <value>EXPANDER</value>
+                        </property>
+                        <property>
+                            <type>value</type>
+                            <value>SYND</value>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>statistic</type>
+                    <value>CODES_REVIEWED</value>
+                    <itemid>statistic|CODES_REVIEWED</itemid>
+                    <properties>
+                        <property>
+                            <type>name</type>
+                            <value>CODES_REVIEWED</value>
+                        </property>
+                        <property>
+                            <type>value</type>
+                            <value>CODES_REVIEWED</value>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>subject</type>
+                    <value>ONEW</value>
+                    <itemid>subject|ONEW</itemid>
+                    <properties>
+                        <property>
+                            <type>comments</type>
+                            <value>Keyword:DJII-REGION usa,namz</value>
+                        </property>
+                        <property>
+                            <type>description</type>
+                            <value>01|US|US News</value>
+                        </property>
+                        <property>
+                            <type>name</type>
+                            <value>US News</value>
+                        </property>
+                        <property>
+                            <type>source</type>
+                            <value>EXPANDER</value>
+                        </property>
+                        <property>
+                            <type>status</type>
+                            <value>modified</value>
+                        </property>
+                        <property>
+                            <type>value</type>
+                            <value>ONEW</value>
+                        </property>
+                        <property>
+                            <type>seoname</type>
+                            <value>US News</value>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>subject</type>
+                    <value>OMKM</value>
+                    <itemid>subject|OMKM</itemid>
+                    <properties>
+                        <property>
+                            <type>name</type>
+                            <value>Markets</value>
+                        </property>
+                        <property>
+                            <type>status</type>
+                            <value>modified</value>
+                        </property>
+                        <property>
+                            <type>value</type>
+                            <value>OMKM</value>
+                        </property>
+                        <property>
+                            <type>seoname</type>
+                            <value>Markets</value>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>subject</type>
+                    <value>OPOL</value>
+                    <itemid>subject|OPOL</itemid>
+                    <properties>
+                        <property>
+                            <type>name</type>
+                            <value>Politics &amp; Policy</value>
+                        </property>
+                        <property>
+                            <type>status</type>
+                            <value>modified</value>
+                        </property>
+                        <property>
+                            <type>value</type>
+                            <value>OPOL</value>
+                        </property>
+                        <property>
+                            <type>seoname</type>
+                            <value>Politics &amp; Policy</value>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>subject</type>
+                    <value>OMON</value>
+                    <itemid>subject|OMON</itemid>
+                    <properties>
+                        <property>
+                            <type>name</type>
+                            <value>Personal Finance</value>
+                        </property>
+                        <property>
+                            <type>status</type>
+                            <value>modified</value>
+                        </property>
+                        <property>
+                            <type>value</type>
+                            <value>OMON</value>
+                        </property>
+                        <property>
+                            <type>seoname</type>
+                            <value>Personal Finance</value>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>wiredisplay</type>
+                    <value>wires</value>
+                    <itemid>wiredisplay|wires</itemid>
+                    <properties>
+                        <property>
+                            <type>name</type>
+                            <value>wires</value>
+                        </property>
+                        <property>
+                            <type>source</type>
+                            <value>EXPANDER</value>
+                        </property>
+                        <property>
+                            <type>value</type>
+                            <value>wires</value>
+                        </property>
+                    </properties>
+                </property>
+            </properties>
+        </self-codes>
+    </meta-data>
+    <summary id="S-SB10001424052702303850204579632492213771278.djml">
+        <summary-header>
+            <nameloc id="i1-SB10001424052702303850204579632492213771278">
+                <nmlist nametype="ENTITY">http://online.wsj.com/articles/more-expatriate-americans-break-up-with-uncle-sam-to-escape-tax-rules-1402972439</nmlist>
+            </nameloc>
+            <nameloc id="i2-SB10001424052702303850204579632492213771278">
+                <nmlist nametype="ENTITY">http://online.wsj.com/articles/more-expatriate-americans-break-up-with-uncle-sam-to-escape-tax-rules-1402972439</nmlist>
+            </nameloc>
+        </summary-header>
+        <alt-summary-body destination-type="THIS-ART" page="Images">
+            <media alignment="LEFT" id="media-1"
+                reuse-expiration="2015-06-18" reuse-type="restricted" type="ILLUSTRATION">
+                <image alternate-text="image" height="267"
+                    slug="OFFSHORE"
+                    src-id="MI-CD533_OFFSHO_OR_20140618170226.jpg" width="400"/>
+                <media-credit>Associated Press</media-credit>
+            </media>
+            <media alignment="LEFT" id="media-2"
+                reuse-expiration="2015-06-18" reuse-type="restricted" type="ILLUSTRATION">
+                <image alternate-text="image" height="76"
+                    slug="OFFSHORE"
+                    src-id="MI-CD533_OFFSHO_A_20140618170226.jpg" width="76"/>
+                <media-credit>Associated Press</media-credit>
+            </media>
+            <media alignment="LEFT" id="media-3"
+                reuse-expiration="2015-06-18" reuse-type="restricted" type="ILLUSTRATION">
+                <image alternate-text="image" height="188"
+                    slug="OFFSHORE"
+                    src-id="MI-CD533_OFFSHO_BR_20140618170226.jpg" width="282"/>
+                <media-credit>Associated Press</media-credit>
+            </media>
+            <media alignment="LEFT" id="media-4"
+                reuse-expiration="2015-06-18" reuse-type="restricted" type="ILLUSTRATION">
+                <image alternate-text="image" height="94"
+                    slug="OFFSHORE"
+                    src-id="MI-CD533_OFFSHO_C_20140618170226.jpg" width="167"/>
+                <media-credit>Associated Press</media-credit>
+            </media>
+            <media alignment="LEFT" id="media-5"
+                reuse-expiration="2015-06-18" reuse-type="restricted" type="ILLUSTRATION">
+                <image alternate-text="image" height="174"
+                    slug="OFFSHORE"
+                    src-id="MI-CD533_OFFSHO_D_20140618170226.jpg" width="262"/>
+                <media-credit>Associated Press</media-credit>
+            </media>
+            <media alignment="LEFT" id="media-6"
+                reuse-expiration="2015-06-18" reuse-type="restricted" type="ILLUSTRATION">
+                <image alternate-text="image" height="239"
+                    slug="OFFSHORE"
+                    src-id="MI-CD533_OFFSHO_E_20140618170226.jpg" width="359"/>
+                <media-credit>Associated Press</media-credit>
+            </media>
+            <media alignment="LEFT" id="media-7"
+                reuse-expiration="2015-06-18" reuse-type="restricted" type="ILLUSTRATION">
+                <image alternate-text="image" height="402"
+                    slug="OFFSHORE"
+                    src-id="MI-CD533_OFFSHO_ER_20140618170226.jpg" width="602"/>
+                <media-credit>Associated Press</media-credit>
+            </media>
+            <media alignment="LEFT" id="media-8"
+                reuse-expiration="2015-06-18" reuse-type="restricted" type="ILLUSTRATION">
+                <image alternate-text="image" height="226"
+                    slug="OFFSHORE"
+                    src-id="MI-CD533_OFFSHO_F_20140618170226.jpg" width="571"/>
+                <media-credit>Associated Press</media-credit>
+            </media>
+            <media alignment="LEFT" id="media-9"
+                reuse-expiration="2015-06-18" reuse-type="restricted" type="ILLUSTRATION">
+                <image alternate-text="image" height="810"
+                    slug="OFFSHORE"
+                    src-id="MI-CD533_OFFSHO_FR_20140618170226.jpg" width="632"/>
+                <media-credit>Associated Press</media-credit>
+            </media>
+            <media alignment="LEFT" id="media-10"
+                reuse-expiration="2015-06-18" reuse-type="restricted" type="ILLUSTRATION">
+                <image alternate-text="image" height="369"
+                    slug="OFFSHORE"
+                    src-id="MI-CD533_OFFSHO_G_20140618170226.jpg" width="553"/>
+                <media-credit>Associated Press</media-credit>
+            </media>
+            <media alignment="LEFT" id="media-11"
+                reuse-expiration="2015-06-18" reuse-type="restricted" type="ILLUSTRATION">
+                <image alternate-text="image" height="810"
+                    slug="OFFSHORE"
+                    src-id="MI-CD533_OFFSHO_GR_20140618170226.jpg" width="1242"/>
+                <media-credit>Associated Press</media-credit>
+            </media>
+        </alt-summary-body>
+        <alt-summary-body destination-type="THIS-ART" page="|SEO|">
+            <headline>
+                <main-hed>IRS Issues New Rules for Offshore Accounts</main-hed>
+            </headline>
+            <p>The Internal Revenue Service is making it easier for U.S. taxpayers who inadvertently failed to comply with laws on reporting income or assets abroad to avoid penalties. But it is also sharply raising the potential fines on tax cheats who don't come forward to the agency.</p>
+        </alt-summary-body>
+        <alt-summary-body destination-type="THIS-ART" page="|U.S. Home|Professional Edition Home Page|">
+            <headline>
+                <main-hed>IRS Easier on Accidental Cheats</main-hed>
+            </headline>
+            <p>The Internal Revenue Service is making it easier for U.S. taxpayers who failed to comply with laws on reporting income or assets abroad to avoid penalties. But it is also raising the potential fines on tax cheats who don't come forward.</p>
+            <list type="UNORDERED">
+                <list-item>
+                    <link icon="none"
+                        linkend="i2-SB10001424052702303850204579632492213771278" type="EXTERNAL">
+                        <highlight type="BOLD">Earlier</highlight>: Americans Renounce U.S. to Escape Taxes</link>
+                </list-item>
+            </list>
+            <p/>
+        </alt-summary-body>
+        <alt-summary-body destination-type="THIS-ART" page="|Social|">
+            <headline>
+                <main-hed>The Internal Revenue Service is making it easier for accidental tax cheats to avoid penalties. </main-hed>
+            </headline>
+        </alt-summary-body>
+        <alt-summary-body destination-type="THIS-ART" page="|NW Alt Headline|">
+            <headline>
+                <main-hed>IRS Issues New Rules for Offshore Accounts -- Update</main-hed>
+            </headline>
+            <p/>
+        </alt-summary-body>
+        <summary-body>
+            <headline>
+                <main-hed>IRS Eases Rules on Accidental Tax Cheats</main-hed>
+            </headline>
+            <p>The Internal Revenue Service is making it easier for U.S. taxpayers who failed to comply with laws on reporting income or assets abroad to avoid penalties. But it is also raising the potential fines on tax cheats who don't come forward.</p>
+            <list type="UNORDERED">
+                <list-item>
+                    <link icon="none"
+                        linkend="i1-SB10001424052702303850204579632492213771278" type="EXTERNAL">
+                        <highlight type="BOLD">Earlier</highlight>: Americans Renounce U.S. to Escape Tax Rules</link>
+                </list-item>
+            </list>
+            <p/>
+        </summary-body>
+    </summary>
+    <article>
+        <article-header>
+            <nameloc id="i3-SB10001424052702303850204579632492213771278">
+                <nmlist nametype="ENTITY">http://online.wsj.com/articles/more-expatriate-americans-break-up-with-uncle-sam-to-escape-tax-rules-1402972439</nmlist>
+            </nameloc>
+            <nameloc id="i4-SB10001424052702303850204579632492213771278">
+                <nmlist nametype="ENTITY">http://online.wsj.com/articles/more-expatriate-americans-break-up-with-uncle-sam-to-escape-tax-rules-1402972439</nmlist>
+            </nameloc>
+            <nameloc id="i5-SB10001424052702303850204579632492213771278">
+                <nmlist nametype="ENTITY">mailto:liam.pleven@wsj.com</nmlist>
+            </nameloc>
+            <nameloc id="i6-SB10001424052702303850204579632492213771278">
+                <nmlist nametype="ENTITY">mailto:laura.saunders@wsj.com</nmlist>
+            </nameloc>
+        </article-header>
+        <article-body>
+            <headline>
+                <main-hed>IRS Eases Up on Accidental Tax Cheats</main-hed>
+                <deck>Agency Lowers Some Offshore-Account Penalties, Raises Others</deck>
+            </headline>
+            <byline type="SIGNED">By <phrase topicid=""
+                    type="AUTHOR">Liam Pleven</phrase> and <phrase
+                    topicid="6491" type="AUTHOR">Laura Saunders</phrase>
+            </byline>
+            <media id="media-12" reuse-expiration="2015-06-18"
+                reuse-type="restricted" type="ILLUSTRATION">
+                <image alternate-text="image" height="369"
+                    slug="OFFSHORE"
+                    src-id="MI-CD533_OFFSHO_G_20140618170226.jpg" width="553"/>
+                <alt-image alternate-text="image" height="76"
+                    slug="OFFSHORE"
+                    src-id="MI-CD533_OFFSHO_A_20140618170226.jpg" width="76"/>
+                <alt-image alternate-text="image" height="188"
+                    slug="OFFSHORE"
+                    src-id="MI-CD533_OFFSHO_BR_20140618170226.jpg" width="282"/>
+                <alt-image alternate-text="image" height="94"
+                    slug="OFFSHORE"
+                    src-id="MI-CD533_OFFSHO_C_20140618170226.jpg" width="167"/>
+                <alt-image alternate-text="image" height="174"
+                    slug="OFFSHORE"
+                    src-id="MI-CD533_OFFSHO_D_20140618170226.jpg" width="262"/>
+                <alt-image alternate-text="image" height="239"
+                    slug="OFFSHORE"
+                    src-id="MI-CD533_OFFSHO_E_20140618170226.jpg" width="359"/>
+                <alt-image alternate-text="image" height="402"
+                    slug="OFFSHORE"
+                    src-id="MI-CD533_OFFSHO_ER_20140618170226.jpg" width="602"/>
+                <alt-image alternate-text="image" height="226"
+                    slug="OFFSHORE"
+                    src-id="MI-CD533_OFFSHO_F_20140618170226.jpg" width="571"/>
+                <alt-image alternate-text="image" height="810"
+                    slug="OFFSHORE"
+                    src-id="MI-CD533_OFFSHO_FR_20140618170226.jpg" width="632"/>
+                <alt-image alternate-text="image" height="810"
+                    slug="OFFSHORE"
+                    src-id="MI-CD533_OFFSHO_GR_20140618170226.jpg" width="1242"/>
+                <alt-image alternate-text="image" height="499"
+                    slug="OFFSHORE"
+                    src-id="MI-CD533_OFFSHO_P_20140618170226.jpg" width="749"/>
+                <media-credit>Associated Press</media-credit>
+                <media-caption>A five-year campaign has helped the IRS collect $6.5 billion.</media-caption>
+            </media>
+            <p>The Internal Revenue Service is sharply increasing the penalties on U.S. taxpayers who hide assets abroad, while lowering or eliminating fines on taxpayers if their failure to disclose offshore accounts was unintentional, the agency said Wednesday.</p>
+            <p>The changes mark the latest stage in a five-year-old U.S. government campaign to force millions of U.S. taxpayers who live abroad or have accounts in other countries to disclose accounts and pay what they owe. It also includes a new law that pressures foreign banks to share information about U.S. account holders starting July 1.</p>
+            <p>The campaign, which was the <link icon="none"
+                    linkend="i3-SB10001424052702303850204579632492213771278" type="EXTERNAL">focus of a page-one article</link> in The Wall Street Journal on Tuesday, has helped the IRS collect some $6.5 billion in taxes, interest and penalties from more than 45,000 taxpayers who have come forward voluntarily, the agency said. Federal prosecutors have filed more than 100 criminal indictments since the campaign began in 2009.</p>
+            <p>Yet record numbers of U.S. taxpayers are cutting official ties with the U.S. amid the campaign, by renouncing their citizenship or turning in their green cards. Experts say the spike is a response to tougher enforcement and stiff penalties that can equal half the balance of a foreign account for each year a required disclosure form isn't filed&#x2014;even if no tax is owed.</p>
+            <p>The IRS has been accused of coming down disproportionately hard on taxpayers with small accounts, and unfairly burdening people who didn't understand the filing requirements.</p>
+            <inset id="inset-1" style="3-UNIT-PLAIN" type="NORMAL">
+                <small-hed>Earlier</small-hed>
+                <list type="UNORDERED">
+                    <list-item>
+                        <highlight type="BOLD">
+                            <link icon="none"
+                                linkend="i4-SB10001424052702303850204579632492213771278" type="EXTERNAL">Expatriate Americans Break Up With Uncle Sam to Escape Tax Rules</link>
+                        </highlight>
+                    </list-item>
+                </list>
+            </inset>
+
+            <p>The agency acknowledged the issue Wednesday. "Our aim is to get people to disclose their accounts, pay the tax they owe and get right with the government," IRS Commissioner <phrase
+                    name="Koskinen, John" seoname=""
+                    significance="PASSING-MENTION" topicid="1061"
+                    type="PERSON" vrtysux="PERSON|Koskinen, John">John Koskinen</phrase> said in a statement, adding that "a compliance regime that is too harsh won't net the desired result."</p>
+            <p>Experts said the new rules could make it easier for taxpayers to approach the IRS if they weren't violating the law willfully.</p>
+
+            <p>"The changes will help many people both in the U.S. and abroad who didn't mean to cheat on their taxes by having offshore accounts," said <phrase
+                    name="Entin, Seth" significance="PASSING-MENTION"
+                    type="PERSON" vrtysux="PERSON|Entin, Seth">Seth Entin</phrase>, a lawyer at Greenberg Traurig LLP in Miami who has handled hundreds of taxpayer confessions. "But it pushes people who have been trying to hide money abroad to come forward to the IRS sooner."</p>
+            <p>Yet some lawyers cautioned that the IRS would have the final say on whether a taxpayer's failure to comply with the law was unintentional.</p>
+            <p>Taxpayers who decide to stay in the shadows could face far stiffer penalties under the new rules. The IRS said it will increase penalties to 50% of the balance in an account, up from 27.5%, for taxpayers who apply to enter its limited-amnesty program after it becomes public knowledge that the financial institution where the account is held is under investigation by U.S. authorities.</p>
+            <p>About a dozen Swiss banks are being investigated by the U.S., and scores of others currently are negotiating penalties with U.S. authorities.</p>
+            <p>The U.S. launched the campaign in the wake of <phrase
+                    background-info="BRIEFING-BOOK" name="UBSN.VX"
+                    significance="PASSING-MENTION" type="COMPANY" vrtysux="COMPANY|UBSN.VX">UBS</phrase> AG's 2009 admission that it helped American taxpayers hide money abroad. The Swiss banking giant paid $780 million to the U.S. and turned over information on more than 4,400 accounts. </p>
+            <p>The case marked the beginning of the end for Swiss-bank secrecy. For decades, wealthy taxpayers were able to hide assets in well-known tax havens such as Switzerland, the Cayman Islands and Panama.</p>
+            <p>U.S. authorities used information from UBS to pursue tax cheats and pressure their advisers. Credit Suisse Group pleaded guilty to similar charges in May and agreed to pay $2.6 billion. </p>
+            <p>The new rules will allow a far wider range of taxpayers to qualify for lower penalties, or none. Previously, the IRS allowed only those who owed $1,500 or less in tax to qualify, a stringent limit that many couldn't meet. Now it is eliminating that requirement and others for taxpayers who say their violations were unintentional.</p>
+            <p>If the IRS accepts their claims, U.S. taxpayers who live in other countries will face no penalties for failing to disclose income or assets abroad. Instead, they will be liable for taxes they owe for the previous three years. U.S. taxpayers who reside in the U.S. and have undeclared foreign accounts could face penalties capped at 5%, on top of taxes owed.</p>
+            <p>"While these modifications don't address all our concerns, I believe they are a significant step in the right direction," Nina Olson, the national taxpayer advocate, an official IRS ombudsman, said in a statement.</p>
+            <p>One potential drawback: Taxpayers who come forward in the future may end up faring better than those who heard about the U.S. campaign in the past and presented their case to the IRS then. For example, experts said, taxpayers from the latter group who owed more than $1,500 in taxes could have paid a penalty as high as 27.5%.</p>
+            <p id="U15049322973S0E">In addition, taxpayers abroad face the risk of double taxation, said John Richardson, a Toronto lawyer who works with U.S. taxpayers living in Canada. "The problem is that, penalties aside, the U.S. tax laws are very punitive for U.S. citizens abroad," he said.</p>
+            <p>
+                <highlight
+                    type="BOLD">Write to </highlight>Liam Pleven at <link
+                    linkend="i5-SB10001424052702303850204579632492213771278"
+                    type="EXTERNAL">liam.pleven@wsj.com</link> and Laura Saunders at <link
+                    linkend="i6-SB10001424052702303850204579632492213771278" type="EXTERNAL">laura.saunders@wsj.com</link>
+            </p>
+        </article-body>
+    </article>
+</article-doc>
+<!-- fastdynapage - sbkj2kwebappp11 - Thu 06/19/14 - 06:32:49 EDT -->

@@ -1,0 +1,980 @@
+<?xml version="1.0" encoding="ASCII"?>
+
+<article-doc ads="ADS-NOT-ALLOWED" column=""
+    copyright="Dow Jones &amp; Company, Inc." date="2014-06-19 00:01"
+    date-type="custom" display-name="Whats News World Wide" embargo=""
+    guid="330d3716-f77c-11e3-8bdd-01212803fad6"
+    id="SB10001424052702303580504579633560856504086.djml"
+    language="en-us" last-pub-date="2014-06-19 10:21" level="NORMAL"
+    major-revision-date="2014-06-19 00:01"
+    orig-obj-ref="426bec0c-f77c-11e3-8bdd-00212803fad6"
+    orig-obj-src="Methode" orig-pub-date="2014-06-19 02:45"
+    page="Page One" product="WSJ.com"
+    publication="The Wall Street Journal Interactive Edition"
+    revision-type="minor"
+    root-id="SB00001424052702303580504579633560856504086"
+    section="Page One" seo-id="whats-news-world-wide-1403160313"
+    seo-url="http://online.wsj.com/articles/whats-news-world-wide-1403160313"
+    type="Whats News World Wide"
+    url="http://online.wsj.com/articles/whats-news-world-wide-1403160313" version="3">
+    <meta-data>
+        <self-codes>
+            <code seoname="FERC" symbol="FERC" type="DJII-COMPANY" vrtysux="DJII-COMPANY|FERC">FERC</code>
+            <code seoname="Hamas" symbol="hrktms" type="DJII-COMPANY" vrtysux="DJII-COMPANY|hrktms">Hamas</code>
+            <code seoname="Senate" symbol="usasnt" type="DJII-COMPANY" vrtysux="DJII-COMPANY|usasnt">Senate</code>
+            <code seoname="North America" symbol="namz"
+                type="DJII-REGION" vrtysux="DJII-REGION|namz">North America</code>
+            <code seoname="United States" symbol="usa"
+                type="DJII-REGION" vrtysux="DJII-REGION|usa">United States</code>
+            <code internal="true" seoname="Content Types" symbol="ncat"
+                type="DJII-SUBJECT" vrtysux="DJII-SUBJECT|ncat">Content Types</code>
+            <code internal="true" seoname="Factiva Filters"
+                symbol="nfact" type="DJII-SUBJECT" vrtysux="DJII-SUBJECT|nfact">Factiva Filters</code>
+            <code internal="true" seoname="FC&amp;E Exclusion Filter"
+                symbol="nfce" type="DJII-SUBJECT" vrtysux="DJII-SUBJECT|nfce">FC&amp;E Exclusion Filter</code>
+            <code internal="true" seoname="IWE Filter" symbol="niwe"
+                type="DJII-SUBJECT" vrtysux="DJII-SUBJECT|niwe">IWE Filter</code>
+            <code seoname="Page-One Stories" symbol="npag"
+                type="DJII-SUBJECT" vrtysux="DJII-SUBJECT|npag">Page-One Stories</code>
+            <code seoname="News Digests" symbol="nsum"
+                type="DJII-SUBJECT" vrtysux="DJII-SUBJECT|nsum">News Digests</code>
+            <code seoname="N/HOH" symbol="N/HOH" type="DJN" vrtysux="DJN|N/HOH">N/HOH</code>
+            <code seoname="N/PAG" symbol="N/PAG" type="DJN" vrtysux="DJN|N/PAG">N/PAG</code>
+            <code seoname="N/SUM" symbol="N/SUM" type="DJN" vrtysux="DJN|N/SUM">N/SUM</code>
+            <code seoname="R/NME" symbol="R/NME" type="DJN" vrtysux="DJN|R/NME">R/NME</code>
+            <code seoname="R/US" symbol="R/US" type="DJN" vrtysux="DJN|R/US">R/US</code>
+            <code symbol="What&#x2019;s News: World-Wide"
+                type="FIRST_PUBLISH_HEADLINE" vrtysux="FIRST_PUBLISH_HEADLINE|What&#x2019;s News: World-Wide"/>
+            <code seoname="WSJ" symbol="WSJ" type="FLOW" vrtysux="FLOW|WSJ">WSJ</code>
+            <code seoname="WSJ.com" symbol="WSJ.com" type="FLOW" vrtysux="FLOW|WSJ.com">WSJ.com</code>
+            <code seoname="WSJAsia" symbol="WSJAsia" type="FLOW" vrtysux="FLOW|WSJAsia">WSJAsia</code>
+            <code seoname="WSJEurope" symbol="WSJEurope" type="FLOW" vrtysux="FLOW|WSJEurope">WSJEurope</code>
+            <code seoname="WSJ Japanese" symbol="WSJ Japanese"
+                type="FLOW" vrtysux="FLOW|WSJ Japanese">WSJ Japanese</code>
+            <code seoname="WSJSunday" symbol="WSJSunday" type="FLOW" vrtysux="FLOW|WSJSunday">WSJSunday</code>
+            <code symbol="What&#x2019;s News: World-Wide"
+                type="HEADLINE" vrtysux="HEADLINE|What&#x2019;s News: World-Wide"/>
+            <code symbol="SB10001424052702303580504579633560856504086"
+                type="NWCHAIN" vrtysux="NWCHAIN|SB10001424052702303580504579633560856504086"/>
+            <code symbol="SYND" type="RELAY" vrtysux="RELAY|SYND"/>
+            <code seoname="CODES_REVIEWED" symbol="CODES_REVIEWED"
+                type="STATISTIC" vrtysux="STATISTIC|CODES_REVIEWED">CODES_REVIEWED</code>
+            <code seoname="Free All" symbol="FREE" type="STATISTIC" vrtysux="STATISTIC|FREE">Free All</code>
+            <code seoname="ONEW" symbol="ONEW" type="SUBJECT" vrtysux="SUBJECT|ONEW">ONEW</code>
+            <properties>
+                <property>
+                    <type>co</type>
+                    <value>hrktms</value>
+                    <itemid>co|hrktms</itemid>
+                    <properties>
+                        <property>
+                            <type>confidence</type>
+                            <value>100</value>
+                        </property>
+                        <property>
+                            <type>confidencerange</type>
+                            <value>high</value>
+                        </property>
+                        <property>
+                            <type>displayname</type>
+                            <value>Hamas</value>
+                        </property>
+                        <property>
+                            <type>extractedtext</type>
+                            <value>Hamas</value>
+                        </property>
+                        <property>
+                            <type>fcode</type>
+                            <value>hrktms</value>
+                        </property>
+                        <property>
+                            <type>name</type>
+                            <value>Hamas</value>
+                        </property>
+                        <property>
+                            <type>relevance</type>
+                            <value>1</value>
+                        </property>
+                        <property>
+                            <type>relevancerange</type>
+                            <value>verylow</value>
+                        </property>
+                        <property>
+                            <type>source</type>
+                            <value>FACTIVA</value>
+                        </property>
+                        <property>
+                            <type>subcat</type>
+                            <value>org</value>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>co</type>
+                    <value>usasnt</value>
+                    <itemid>co|usasnt</itemid>
+                    <properties>
+                        <property>
+                            <type>confidence</type>
+                            <value>90</value>
+                        </property>
+                        <property>
+                            <type>confidencerange</type>
+                            <value>high</value>
+                        </property>
+                        <property>
+                            <type>displayname</type>
+                            <value>Senate</value>
+                        </property>
+                        <property>
+                            <type>extractedtext</type>
+                            <value>Senate</value>
+                        </property>
+                        <property>
+                            <type>fcode</type>
+                            <value>usasnt</value>
+                        </property>
+                        <property>
+                            <type>name</type>
+                            <value>Senate</value>
+                        </property>
+                        <property>
+                            <type>relevance</type>
+                            <value>1</value>
+                        </property>
+                        <property>
+                            <type>relevancerange</type>
+                            <value>verylow</value>
+                        </property>
+                        <property>
+                            <type>source</type>
+                            <value>FACTIVA</value>
+                        </property>
+                        <property>
+                            <type>subcat</type>
+                            <value>org</value>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>co</type>
+                    <value>FERC</value>
+                    <itemid>co|FERC</itemid>
+                    <properties>
+                        <property>
+                            <type>displayname</type>
+                            <value>FERC</value>
+                        </property>
+                        <property>
+                            <type>extractedtext</type>
+                            <value>FERC</value>
+                        </property>
+                        <property>
+                            <type>name</type>
+                            <value>FERC</value>
+                        </property>
+                        <property>
+                            <type>source</type>
+                            <value>FACTIVA</value>
+                        </property>
+                        <property>
+                            <type>subcat</type>
+                            <value>gov</value>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>djn</type>
+                    <value>N/PAG</value>
+                    <itemid>djn|N/PAG</itemid>
+                    <properties>
+                        <property>
+                            <type>fcode</type>
+                            <value>N/PAG</value>
+                        </property>
+                        <property>
+                            <type>name</type>
+                            <value>N/PAG</value>
+                        </property>
+                        <property>
+                            <type>onlinesignificance</type>
+                            <value>prominent</value>
+                        </property>
+                        <property>
+                            <type>significance</type>
+                            <value>prominent</value>
+                        </property>
+                        <property>
+                            <type>source</type>
+                            <value>FACTIVA</value>
+                        </property>
+                        <property>
+                            <type>why</type>
+                            <value>about</value>
+                        </property>
+                        <property>
+                            <type>source</type>
+                            <value>EXPANDER</value>
+                        </property>
+                        <property>
+                            <type>value</type>
+                            <value>N/PAG</value>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>djn</type>
+                    <value>N/HOH</value>
+                    <itemid>djn|N/HOH</itemid>
+                    <properties>
+                        <property>
+                            <type>fcode</type>
+                            <value>N/HOH</value>
+                        </property>
+                        <property>
+                            <type>name</type>
+                            <value>N/HOH</value>
+                        </property>
+                        <property>
+                            <type>onlinesignificance</type>
+                            <value>prominent</value>
+                        </property>
+                        <property>
+                            <type>significance</type>
+                            <value>prominent</value>
+                        </property>
+                        <property>
+                            <type>source</type>
+                            <value>FACTIVA</value>
+                        </property>
+                        <property>
+                            <type>why</type>
+                            <value>about</value>
+                        </property>
+                        <property>
+                            <type>source</type>
+                            <value>EXPANDER</value>
+                        </property>
+                        <property>
+                            <type>value</type>
+                            <value>N/HOH</value>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>djn</type>
+                    <value>N/SUM</value>
+                    <itemid>djn|N/SUM</itemid>
+                    <properties>
+                        <property>
+                            <type>fcode</type>
+                            <value>N/SUM</value>
+                        </property>
+                        <property>
+                            <type>name</type>
+                            <value>N/SUM</value>
+                        </property>
+                        <property>
+                            <type>onlinesignificance</type>
+                            <value>prominent</value>
+                        </property>
+                        <property>
+                            <type>significance</type>
+                            <value>prominent</value>
+                        </property>
+                        <property>
+                            <type>source</type>
+                            <value>FACTIVA</value>
+                        </property>
+                        <property>
+                            <type>why</type>
+                            <value>about</value>
+                        </property>
+                        <property>
+                            <type>source</type>
+                            <value>EXPANDER</value>
+                        </property>
+                        <property>
+                            <type>value</type>
+                            <value>N/SUM</value>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>djn</type>
+                    <value>R/US</value>
+                    <itemid>djn|R/US</itemid>
+                    <properties>
+                        <property>
+                            <type>fcode</type>
+                            <value>R/US</value>
+                        </property>
+                        <property>
+                            <type>name</type>
+                            <value>R/US</value>
+                        </property>
+                        <property>
+                            <type>onlinesignificance</type>
+                            <value>prominent</value>
+                        </property>
+                        <property>
+                            <type>significance</type>
+                            <value>prominent</value>
+                        </property>
+                        <property>
+                            <type>source</type>
+                            <value>FACTIVA</value>
+                        </property>
+                        <property>
+                            <type>why</type>
+                            <value>about</value>
+                        </property>
+                        <property>
+                            <type>source</type>
+                            <value>EXPANDER</value>
+                        </property>
+                        <property>
+                            <type>value</type>
+                            <value>R/US</value>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>djn</type>
+                    <value>R/NME</value>
+                    <itemid>djn|R/NME</itemid>
+                    <properties>
+                        <property>
+                            <type>fcode</type>
+                            <value>R/NME</value>
+                        </property>
+                        <property>
+                            <type>name</type>
+                            <value>R/NME</value>
+                        </property>
+                        <property>
+                            <type>source</type>
+                            <value>FACTIVA</value>
+                        </property>
+                        <property>
+                            <type>why</type>
+                            <value>lineage</value>
+                        </property>
+                        <property>
+                            <type>source</type>
+                            <value>EXPANDER</value>
+                        </property>
+                        <property>
+                            <type>value</type>
+                            <value>R/NME</value>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>first_publish_headline</type>
+                    <value>What's News: World-Wide</value>
+                    <itemid>first_publish_headline|What's News: World-Wide</itemid>
+                </property>
+                <property>
+                    <type>flow</type>
+                    <value>WSJ.com</value>
+                    <itemid>flow|WSJ.com</itemid>
+                    <properties>
+                        <property>
+                            <type>name</type>
+                            <value>WSJ.com</value>
+                        </property>
+                        <property>
+                            <type>status</type>
+                            <value>modified</value>
+                        </property>
+                        <property>
+                            <type>title</type>
+                            <value>Product</value>
+                        </property>
+                        <property>
+                            <type>value</type>
+                            <value>WSJ.com</value>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>flow</type>
+                    <value>WSJ</value>
+                    <itemid>flow|WSJ</itemid>
+                    <properties>
+                        <property>
+                            <type>name</type>
+                            <value>WSJ</value>
+                        </property>
+                        <property>
+                            <type>status</type>
+                            <value>modified</value>
+                        </property>
+                        <property>
+                            <type>title</type>
+                            <value>Product</value>
+                        </property>
+                        <property>
+                            <type>value</type>
+                            <value>WSJ</value>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>flow</type>
+                    <value>WSJAsia</value>
+                    <itemid>flow|WSJAsia</itemid>
+                    <properties>
+                        <property>
+                            <type>name</type>
+                            <value>WSJAsia</value>
+                        </property>
+                        <property>
+                            <type>status</type>
+                            <value>modified</value>
+                        </property>
+                        <property>
+                            <type>title</type>
+                            <value>Product</value>
+                        </property>
+                        <property>
+                            <type>value</type>
+                            <value>WSJAsia</value>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>flow</type>
+                    <value>WSJEurope</value>
+                    <itemid>flow|WSJEurope</itemid>
+                    <properties>
+                        <property>
+                            <type>name</type>
+                            <value>WSJEurope</value>
+                        </property>
+                        <property>
+                            <type>status</type>
+                            <value>modified</value>
+                        </property>
+                        <property>
+                            <type>title</type>
+                            <value>Product</value>
+                        </property>
+                        <property>
+                            <type>value</type>
+                            <value>WSJEurope</value>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>flow</type>
+                    <value>WSJSunday</value>
+                    <itemid>flow|WSJSunday</itemid>
+                    <properties>
+                        <property>
+                            <type>name</type>
+                            <value>WSJSunday</value>
+                        </property>
+                        <property>
+                            <type>status</type>
+                            <value>modified</value>
+                        </property>
+                        <property>
+                            <type>title</type>
+                            <value>Product</value>
+                        </property>
+                        <property>
+                            <type>value</type>
+                            <value>WSJSunday</value>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>flow</type>
+                    <value>WSJ Japanese</value>
+                    <itemid>flow|WSJ Japanese</itemid>
+                    <properties>
+                        <property>
+                            <type>name</type>
+                            <value>WSJ Japanese</value>
+                        </property>
+                        <property>
+                            <type>status</type>
+                            <value>modified</value>
+                        </property>
+                        <property>
+                            <type>title</type>
+                            <value>Product</value>
+                        </property>
+                        <property>
+                            <type>value</type>
+                            <value>WSJ Japanese</value>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>headline</type>
+                    <value>What's News: World-Wide</value>
+                    <itemid>headline|What's News: World-Wide</itemid>
+                </property>
+                <property>
+                    <type>ns</type>
+                    <value>npag</value>
+                    <itemid>ns|npag</itemid>
+                    <properties>
+                        <property>
+                            <type>fcode</type>
+                            <value>npag</value>
+                        </property>
+                        <property>
+                            <type>name</type>
+                            <value>Page-One Stories</value>
+                        </property>
+                        <property>
+                            <type>onlinesignificance</type>
+                            <value>prominent</value>
+                        </property>
+                        <property>
+                            <type>significance</type>
+                            <value>prominent</value>
+                        </property>
+                        <property>
+                            <type>source</type>
+                            <value>FACTIVA</value>
+                        </property>
+                        <property>
+                            <type>why</type>
+                            <value>about</value>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>ns</type>
+                    <value>nsum</value>
+                    <itemid>ns|nsum</itemid>
+                    <properties>
+                        <property>
+                            <type>fcode</type>
+                            <value>nsum</value>
+                        </property>
+                        <property>
+                            <type>name</type>
+                            <value>News Digests</value>
+                        </property>
+                        <property>
+                            <type>onlinesignificance</type>
+                            <value>prominent</value>
+                        </property>
+                        <property>
+                            <type>significance</type>
+                            <value>prominent</value>
+                        </property>
+                        <property>
+                            <type>source</type>
+                            <value>FACTIVA</value>
+                        </property>
+                        <property>
+                            <type>why</type>
+                            <value>about</value>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>ns</type>
+                    <value>ncat</value>
+                    <itemid>ns|ncat</itemid>
+                    <properties>
+                        <property>
+                            <type>fcode</type>
+                            <value>ncat</value>
+                        </property>
+                        <property>
+                            <type>internalsymbol</type>
+                            <value>true</value>
+                        </property>
+                        <property>
+                            <type>name</type>
+                            <value>Content Types</value>
+                        </property>
+                        <property>
+                            <type>source</type>
+                            <value>FACTIVA</value>
+                        </property>
+                        <property>
+                            <type>why</type>
+                            <value>lineage</value>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>ns</type>
+                    <value>nfact</value>
+                    <itemid>ns|nfact</itemid>
+                    <properties>
+                        <property>
+                            <type>fcode</type>
+                            <value>nfact</value>
+                        </property>
+                        <property>
+                            <type>internalsymbol</type>
+                            <value>true</value>
+                        </property>
+                        <property>
+                            <type>name</type>
+                            <value>Factiva Filters</value>
+                        </property>
+                        <property>
+                            <type>source</type>
+                            <value>FACTIVA</value>
+                        </property>
+                        <property>
+                            <type>why</type>
+                            <value>lineage</value>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>ns</type>
+                    <value>nfce</value>
+                    <itemid>ns|nfce</itemid>
+                    <properties>
+                        <property>
+                            <type>fcode</type>
+                            <value>nfce</value>
+                        </property>
+                        <property>
+                            <type>internalsymbol</type>
+                            <value>true</value>
+                        </property>
+                        <property>
+                            <type>name</type>
+                            <value>FC&amp;E Exclusion Filter</value>
+                        </property>
+                        <property>
+                            <type>source</type>
+                            <value>FACTIVA</value>
+                        </property>
+                        <property>
+                            <type>why</type>
+                            <value>lineage</value>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>ns</type>
+                    <value>niwe</value>
+                    <itemid>ns|niwe</itemid>
+                    <properties>
+                        <property>
+                            <type>fcode</type>
+                            <value>niwe</value>
+                        </property>
+                        <property>
+                            <type>internalsymbol</type>
+                            <value>true</value>
+                        </property>
+                        <property>
+                            <type>name</type>
+                            <value>IWE Filter</value>
+                        </property>
+                        <property>
+                            <type>source</type>
+                            <value>FACTIVA</value>
+                        </property>
+                        <property>
+                            <type>why</type>
+                            <value>lineage</value>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>nwchain</type>
+                    <value>SB10001424052702303580504579633560856504086</value>
+                    <itemid>nwchain|SB10001424052702303580504579633560856504086</itemid>
+                    <properties>
+                        <property>
+                            <type>name</type>
+                            <value>SB10001424052702303580504579633560856504086</value>
+                        </property>
+                        <property>
+                            <type>source</type>
+                            <value>EXPANDER</value>
+                        </property>
+                        <property>
+                            <type>value</type>
+                            <value>SB10001424052702303580504579633560856504086</value>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>re</type>
+                    <value>usa</value>
+                    <itemid>re|usa</itemid>
+                    <properties>
+                        <property>
+                            <type>fcode</type>
+                            <value>usa</value>
+                        </property>
+                        <property>
+                            <type>name</type>
+                            <value>United States</value>
+                        </property>
+                        <property>
+                            <type>onlinesignificance</type>
+                            <value>prominent</value>
+                        </property>
+                        <property>
+                            <type>significance</type>
+                            <value>prominent</value>
+                        </property>
+                        <property>
+                            <type>source</type>
+                            <value>FACTIVA</value>
+                        </property>
+                        <property>
+                            <type>subcat</type>
+                            <value>cntry</value>
+                        </property>
+                        <property>
+                            <type>why</type>
+                            <value>about</value>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>re</type>
+                    <value>namz</value>
+                    <itemid>re|namz</itemid>
+                    <properties>
+                        <property>
+                            <type>fcode</type>
+                            <value>namz</value>
+                        </property>
+                        <property>
+                            <type>name</type>
+                            <value>North America</value>
+                        </property>
+                        <property>
+                            <type>source</type>
+                            <value>FACTIVA</value>
+                        </property>
+                        <property>
+                            <type>subcat</type>
+                            <value>snr</value>
+                        </property>
+                        <property>
+                            <type>why</type>
+                            <value>lineage</value>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>relay</type>
+                    <value>SYND</value>
+                    <itemid>relay|SYND</itemid>
+                    <properties>
+                        <property>
+                            <type>name</type>
+                            <value>SYND</value>
+                        </property>
+                        <property>
+                            <type>source</type>
+                            <value>EXPANDER</value>
+                        </property>
+                        <property>
+                            <type>value</type>
+                            <value>SYND</value>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>statistic</type>
+                    <value>CODES_REVIEWED</value>
+                    <itemid>statistic|CODES_REVIEWED</itemid>
+                    <properties>
+                        <property>
+                            <type>name</type>
+                            <value>CODES_REVIEWED</value>
+                        </property>
+                        <property>
+                            <type>value</type>
+                            <value>CODES_REVIEWED</value>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>statistic</type>
+                    <value>FREE</value>
+                    <itemid>statistic|FREE</itemid>
+                    <properties>
+                        <property>
+                            <type>name</type>
+                            <value>Free All</value>
+                        </property>
+                        <property>
+                            <type>status</type>
+                            <value>modified</value>
+                        </property>
+                        <property>
+                            <type>value</type>
+                            <value>FREE</value>
+                        </property>
+                        <property>
+                            <type>seoname</type>
+                            <value>Free All</value>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>subject</type>
+                    <value>ONEW</value>
+                    <itemid>subject|ONEW</itemid>
+                    <properties>
+                        <property>
+                            <type>comments</type>
+                            <value>Keyword:DJII-REGION usa,namz</value>
+                        </property>
+                        <property>
+                            <type>description</type>
+                            <value>01|US|US News</value>
+                        </property>
+                        <property>
+                            <type>name</type>
+                            <value>ONEW</value>
+                        </property>
+                        <property>
+                            <type>source</type>
+                            <value>EXPANDER</value>
+                        </property>
+                        <property>
+                            <type>value</type>
+                            <value>ONEW</value>
+                        </property>
+                    </properties>
+                </property>
+            </properties>
+        </self-codes>
+    </meta-data>
+    <summary id="S-SB10001424052702303580504579633560856504086.djml">
+        <summary-header/>
+        <alt-summary-body destination-type="THIS-ART" page="|SEO|">
+            <headline>
+                <main-hed>What's News: World-Wide</main-hed>
+            </headline>
+            <p>What's News: World-Wide</p>
+        </alt-summary-body>
+        <summary-body>
+            <headline>
+                <main-hed>What's News: World-Wide</main-hed>
+            </headline>
+            <p>What's News: World-Wide</p>
+        </summary-body>
+    </summary>
+    <article>
+        <article-header>
+            <nameloc id="i1-SB10001424052702303580504579633560856504086">
+                <nmlist nametype="ENTITY">SB10001424052702303850204579632823793432390.xml</nmlist>
+            </nameloc>
+            <nameloc id="i2-SB10001424052702303580504579633560856504086">
+                <nmlist nametype="ENTITY">SB10001424052702303850204579631620679793260.xml</nmlist>
+            </nameloc>
+            <nameloc id="i3-SB10001424052702303580504579633560856504086">
+                <nmlist nametype="ENTITY">SB10001424052702304489104579632672406463930.xml</nmlist>
+            </nameloc>
+            <nameloc id="i4-SB10001424052702303580504579633560856504086">
+                <nmlist nametype="ENTITY">SB10001424052702303850204579631873936134030.xml</nmlist>
+            </nameloc>
+            <nameloc id="i5-SB10001424052702303580504579633560856504086">
+                <nmlist nametype="ENTITY">SB10001424052702303580504579631740843791128.xml</nmlist>
+            </nameloc>
+            <nameloc id="i6-SB10001424052702303580504579633560856504086">
+                <nmlist nametype="ENTITY">SB10001424052702303850204579631562620395956.xml</nmlist>
+            </nameloc>
+            <nameloc id="i7-SB10001424052702303580504579633560856504086">
+                <nmlist nametype="ENTITY">SB10001424052702303850204579632771017555540.xml</nmlist>
+            </nameloc>
+            <nameloc id="i8-SB10001424052702303580504579633560856504086">
+                <nmlist nametype="ENTITY">SB10001424052702303850204579632803840886592.xml</nmlist>
+            </nameloc>
+            <nameloc id="i9-SB10001424052702303580504579633560856504086">
+                <nmlist nametype="ENTITY">SB10001424052702303850204579632612222947086.xml</nmlist>
+            </nameloc>
+            <nameloc id="i10-SB10001424052702303580504579633560856504086">
+                <nmlist nametype="ENTITY">SB10001424052702304292904579630290657623738.xml</nmlist>
+            </nameloc>
+            <nameloc id="i11-SB10001424052702303580504579633560856504086">
+                <nmlist nametype="ENTITY">SB10001424052702303850204579632512157728456.xml</nmlist>
+            </nameloc>
+            <nameloc id="i12-SB10001424052702303580504579633560856504086">
+                <nmlist nametype="ENTITY">SB10001424052702303850204579632602862705922.xml</nmlist>
+            </nameloc>
+        </article-header>
+        <article-body>
+            <headline>
+                <main-hed>What's News: World-Wide</main-hed>
+            </headline>
+            <p>
+                <link icon="none"
+                    linkend="i1-SB10001424052702303580504579633560856504086" type="EXTERNAL">
+                    <highlight type="BOLD">The U.S. is signaling</highlight> that it wants a new Iraqi government without Maliki, convinced the Shiite prime minister is unable to reconcile with the Sunnis.</link>
+            </p>
+            <p>
+                <link icon="none"
+                    linkend="i2-SB10001424052702303580504579633560856504086" type="EXTERNAL">
+                    <highlight type="BOLD">Iraqi forces battled</highlight> insurgents for control of the country's main oil refinery and intensified efforts to halt the Sunni militants' offensive.</link>
+            </p>
+            <p>
+                <link icon="none"
+                    linkend="i3-SB10001424052702303580504579633560856504086" type="EXTERNAL">
+                    <highlight type="BOLD">Large health plans</highlight> are proposing higher premiums next year for policies purchased under the Affordable Care Act.</link>
+            </p>
+            <p>
+                <link icon="none"
+                    linkend="i4-SB10001424052702303580504579633560856504086" type="EXTERNAL">
+                    <highlight type="BOLD">An Afghan candidate</highlight> said he is boycotting the presidential vote count for the runoff because of alleged fraud.</link>
+            </p>
+            <p>
+                <link icon="none"
+                    linkend="i5-SB10001424052702303580504579633560856504086" type="EXTERNAL">
+                    <highlight type="BOLD">A U.S. drone strike</highlight> in Pakistan's North Waziristan killed at least five militants.</link>
+            </p>
+            <p>
+                <link icon="none"
+                    linkend="i6-SB10001424052702303580504579633560856504086" type="EXTERNAL">
+                    <highlight type="BOLD">Ukraine offered</highlight> to declare a temporary, unilateral cease-fire in the east after Kiev regains full control of its border.</link>
+            </p>
+            <p>
+                <link icon="none"
+                    linkend="i7-SB10001424052702303580504579633560856504086" type="EXTERNAL">
+                    <highlight type="BOLD">Detroit said</highlight> it would create a hybrid pension system that workers pay into as it aims to reduce a funding shortfall.</link>
+            </p>
+            <p>
+                <link icon="none"
+                    linkend="i8-SB10001424052702303580504579633560856504086" type="EXTERNAL">
+                    <highlight type="BOLD">Senators voiced concern</highlight> over White House plans for monitoring individuals who hold security clearances.</link>
+            </p>
+            <p>
+                <link icon="none"
+                    linkend="i9-SB10001424052702303580504579633560856504086" type="EXTERNAL">
+                    <highlight type="BOLD">A Senate panel voted</highlight> to confirm two FERC nominees and separately approved the Keystone XL pipeline.</link>
+            </p>
+            <p>
+                <link icon="none"
+                    linkend="i10-SB10001424052702303580504579633560856504086" type="EXTERNAL">
+                    <highlight type="BOLD">Israel widened</highlight> its crackdown on Hamas, detaining 72 suspects and striking at the group's financial network.</link>
+            </p>
+            <p>
+                <link icon="none"
+                    linkend="i11-SB10001424052702303580504579633560856504086" type="EXTERNAL">
+                    <highlight type="BOLD">An 89-year-old man</highlight> was ordered held for his alleged role as a Nazi camp guard.</link>
+            </p>
+            <p>
+                <link icon="none"
+                    linkend="i12-SB10001424052702303580504579633560856504086" type="EXTERNAL">
+                    <highlight type="BOLD">Americans slept</highlight> a little more and worked a little less on average last year.</link>
+            </p>
+        </article-body>
+    </article>
+</article-doc>
+<!-- fastdynapage - sbkj2kwebappp09 - Thu 06/19/14 - 10:24:07 EDT -->

@@ -12,7 +12,7 @@
 				background-color:"rgba(0, 0, 0, .5)",
 				padding:[12, 14, 5, 14],
 				height:{if: =options.one_line_caption, then:60, else:80},
-				anchor-y: { if: =options.caption_top, then: bottom, else: top }
+				anchor-y: { if: =options.caption_top, then: top, else: bottom }
 			},
 			.deco_caption: {
 				display:{if: =options.no_caption, then:none, else:inherit}

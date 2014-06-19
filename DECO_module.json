@@ -43,11 +43,12 @@
       "type": "toggle",
       "disabled": ["no_caption"],
       "options": [{
-        "label": "Top",
-        "values": { "caption_top": true }
-      }, {
         "label": "Bottom",
         "values": { "caption_top": false }
+      },
+      {
+        "label": "Top",
+        "values": { "caption_top": true }
       }]
     },
 

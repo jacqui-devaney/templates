@@ -27,6 +27,7 @@
     {
       "key": "caption",
       "title": "Hide/Show Caption",
+      "disabled": ["no_caption"],
       "type": "toggle",
       "options": [{
         "label": "Show",

@@ -9,7 +9,6 @@
 
 			},
 			#deco_caption_container: {
-				bottom:0,
 				background-color:"rgba(0, 0, 0, .5)",
 				padding:[12, 14, 5, 14],
 				height:{if: =options.one_line_caption, then:60, else:80},

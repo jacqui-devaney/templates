@@ -27,7 +27,6 @@
     {
       "key": "caption",
       "title": "Hide/Show Caption",
-      "disabled": ["no_caption"],
       "type": "toggle",
       "options": [{
         "label": "Show",
@@ -42,6 +41,7 @@
       "key": "caption_position",
       "title": "Caption Position",
       "type": "toggle",
+      "disabled": ["no_caption"],
       "options": [{
         "label": "Top",
         "values": { "caption_top": true }

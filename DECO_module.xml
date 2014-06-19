@@ -6,17 +6,18 @@
 				width:=view.width,
 				height: {$subtract:[=view.height, 1]},
 				image-scale: {if: =options.full_screen, then:.9, else:1}
-				
+
 			},
 			#deco_caption_container: {
 				bottom:0,
 				background-color:"rgba(0, 0, 0, .5)",
 				padding:[12, 14, 5, 14],
-				height:{if: =options.one_line_caption, then:60, else:80}
-				
+				height:{if: =options.one_line_caption, then:60, else:80},
+				top: {if: =options.caption_top, then: 0},
+				bottom: {if: =options.caption_top, else: 0}
 			},
 			.deco_caption: {
-				display:{if: =options.hide_caption, then:none, else:inherit}
+				display:{if: =options.no_caption, then:none, else:inherit}
 			},
             .deco_headline: {
             	font-size:18
@@ -32,5 +33,5 @@
 					</panel>
 				</box>
 			</box>
-			
+
 </jpml>

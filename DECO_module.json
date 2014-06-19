@@ -23,7 +23,7 @@
         }
       }]
     },
-    
+
     {
       "key": "caption",
       "title": "Hide/Show Caption",
@@ -36,7 +36,20 @@
         "values": { "no_caption": true }
       }]
     },
-    
+
+    {
+      "key": "caption_position",
+      "title": "Caption Position",
+      "type": "toggle",
+      "options": [{
+        "label": "Top",
+        "values": { "caption_top": true }
+      }, {
+        "label": "Bottom",
+        "values": { "caption_top": false }
+      }]
+    },
+
     {
       "key": "caption_width",
       "title": "Caption Width",

@@ -40,7 +40,7 @@ including the linked-to articles, in order to process the PAID/FREE flags.
                 <item>
                     <title><xsl:value-of select="//article-doc/article/article-body/headline/main-hed"/></title>
                     <description>
-                        <xsl:if test ="link/highlight"><b><xsl:apply-templates select="link/highlight"/></b></xsl:if><xsl:apply-templates select="link/text()"/>
+                        <xsl:if test ="link/highlight"><b><xsl:apply-templates select="link/highlight"/></b></xsl:if><xsl:apply-templates select="node()/node()[not(name()='highlight')][normalize-space(.)]"/>
 
                     </description>
                     <xsl:apply-templates select="link"/>

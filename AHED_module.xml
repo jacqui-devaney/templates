@@ -5,100 +5,84 @@
 	<style src="PHONE-MODULES-stylesheet.ejs" />
 	<style>{
 		$join: [
-			{ $switch: [
-				{ if: =options.top_border, then: {
-					jpml: {
-						border-width: [1, 0, 0, 0],
-						padding: [4, 0, 0, 0],
-						border-color: #cfcfcf
-					}
-
-				}},
-				{ if: =options.left_border, then: {
-					jpml: {
-						border-width: [0, 0, 0, 1],
-						border-color: #cfcfcf,
-						padding: [0, 0, 0, 10]
-					}
-
-				}},
-				{ if: =options.right_border, then: {
-					jpml: {
-						border-width: [0, 1, 0, 0],
-						border-color: #cfcfcf,
-						padding: [0, 10, 0, 0]
-					}
-
-				}},
-				{ if: true, then: {
-					jpml: {
-						border-width: [0, 0, 0, 0],
-						padding: [0, 10, 0, 0]
-					}
-				}}
-			]},
-			{
-				#image_wrapper: {
-					width:110,
-					anchor-x:right,
-					top:5
-	            },
-				image: {
-					pixels-per-point-x:1,
-					pixels-per-point-y:1,
-					height: 80,
-					padding: [0, 0, 1, 30],
-					display:{if: =article.type, equals:"A-hed", then: inherit, else:none},
-					image-scale:.8
-	            },
-				.byline: {
-					display: {if: =options.show_byline, then:inherit, else:none}
-				},
-				.ahed_subhed: {
-					display: {if-all:[{if: =options.show_subhed}, {if: =scale.tablet}], then:inherit, else:none}
-				},
-				.module_headline:{
-					display:{if: =article.type, equals:"A-hed", then: none, else:inherit}
-				},
-				#ahed_content:{
-					display:{if: =article.type, equals:"A-hed", then: inherit, else:none}
-				}
-			}
-
-			]
+            { $switch: [
+                { if: =options.top_border, then: {
+                    jpml: {
+                        border-width: [1, 0, 0, 0],
+                        padding: [10, 0, 0, 0],
+                        border-color: #cfcfcf
+                    }
+        
+                }},
+                { if: =options.left_border, then: {
+                    jpml: {
+                        border-width: [0, 0, 0, 1],
+                        border-color: #cfcfcf,
+                        padding: [0, 0, 0, 10]
+                    }
+        
+                }},
+                { if: =options.right_border, then: {
+                    jpml: {
+                        border-width: [0, 1, 0, 0],
+                        border-color: #cfcfcf,
+                        padding: [0, 10, 0, 0]
+                    }
+        
+                }},
+                { if: true, then: {
+                    jpml: {
+                        border-width: [0, 0, 0, 0],
+                        padding: [0, 10, 0, 0]
+                    }
+                }}
+            ]},
+            {
+                #image_wrapper: {
+                    width: 90,
+                    height: 80,
+                    anchor-x: right,
+                    bottom: 10
+                },
+                image: {
+                    padding: [0, 0, 0, 10]
+                },
+                .ahed_subhed: {
+                    color: #898b8e,
+                    font-size: 16,
+                    line-height: 20,
+                    font-name: "DJ5Exchange-Medium",
+                    padding: [0, 0, 3, 0]
+                },
+                #stars: {
+                    font-size: 22,
+                    line-height: 16,
+                    content: "*\u00a0\u00a0\u00a0*\u00a0\u00a0\u00a0*",
+                    text-align: center,
+                    color: #898b8e
+                },
+                .ahed_headline: {
+                    font-name: "DJ5EscrowCond-BoldItalic",
+                    font-size: 22,
+                    line-height: 26
+                }
+            }
+        ]
 		}</style>
-		<style>{
-			if: =scale.phone, then: {
-				jpml: {
-					padding:[0],
-					border-width: [{if: =options.top_border, then:1, else:0}, 0, {if: =options.no_border, then:0, else:1}, 0],
-					border-color: #d6d6d6,
-					anchor-y:middle
-				},
-				#headline: {
-					padding: [{if: =options.top_align, then:8, else:0}, 8, 0, 8]
-				},
-				#vertical: {
-					vertical-align: {if: =options.top_align, then: top, else: middle}
-				}
-
-			}, else:{}
-		}</style>
-
-		<panel id="vertical">
-			<panel id="headline">
-				<p class="module_headline"><mark class="m_headline" /></p>
-				<p class="ahed_headline"><span embed="headline"/></p>
-	        	<h2 class="ahed_subhed" embed="subhed"/>
-			</panel>
-
-			<panel id="body">
-				<box id="image_wrapper" class="hidden_phone">
-					<image target-width="79" target-height="79" embed="summary-image"/>
-				</box>
-		        <p class="byline" embed="byline"/>
-	            <panel class="body hidden_phone" embed="body"/>
-	        </panel>
-		</panel>
-
+    
+    <panel>
+        <panel>
+            <p class="ahed_headline"><span embed="headline"/></p>
+        </panel>
+        
+        <box id="image_wrapper">
+            <image target-width="80" target-height="80" embed="summary-image"/>
+        </box>
+        
+        <panel>
+            <p><mark id="stars"/></p>
+            <p class="ahed_subhed" embed="subhed"/>
+            <panel class="body" embed="body"/>
+        </panel>
+    </panel>
 </jpml>

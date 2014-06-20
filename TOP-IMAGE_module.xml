@@ -15,7 +15,7 @@
 				{ if: =options.top_border, then: {
 					jpml: {
 						border-width: [1, 0, 0, 0],
-						padding: [6, 10, 0, 0]
+						padding: [7, 10, 0, 0]
 					}
 
 				}},

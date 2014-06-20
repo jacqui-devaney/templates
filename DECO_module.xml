@@ -15,10 +15,9 @@
 				anchor-y: { if: =options.caption_top, then: top, else: bottom },
 				display:{if: =options.no_caption, then:none, else:inherit}
 			},
-            .deco_headline: {
-            	font-size:18
+            .deco_headline: { 
+				font-size: {if: =options.medium_headline, then:24, else:18}
 			}
-
 	}</style>
 			<box id="deco_container" embed="deco-image">
 				<image embed="summary-image" />

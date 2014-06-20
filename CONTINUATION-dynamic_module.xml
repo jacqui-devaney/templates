@@ -77,7 +77,7 @@
 		<p class="subsection"><mark id="m_subsection"/></p>
 	</panel>
 	<panel id="content">
-	 	<box id="image_container">
+	 	<box id="image_container" embed="deco-image">
 			<image embed="summary-image" target-width="76" target-height="76" />
 		</box>
 		<panel id="vertical">

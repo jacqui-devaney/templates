@@ -9,7 +9,7 @@
 				{ if: =options.top_border, then: {
 					jpml: {
 						border-width: [1, 0, 0, 0],
-						padding: [12, 0, 0, 0],
+						padding: [4, 0, 0, 0],
 						border-color: #cfcfcf
 					}
 

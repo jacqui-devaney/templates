@@ -55,9 +55,9 @@
 	</box>
 	<box id="text_container">
 		<panel id="text">
-			<p class="flashline"><mark class="m_headline" /></p>
+			<p class="flashline"><span embed="summary" /></p>
 			<panel id="headline">
-				<p class="hed"><mark class="key" /><span embed="summary" /></p>
+				<p class="hed"><mark class="m_headline" /><mark class="key" /></p>
 			</panel>
 		</panel>
 	</box>

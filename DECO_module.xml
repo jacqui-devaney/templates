@@ -9,14 +9,10 @@
 
 			},
 			#deco_caption_container: {
-				bottom:0,
 				background-color:"rgba(0, 0, 0, .5)",
 				padding:[12, 14, 5, 14],
 				height:{if: =options.one_line_caption, then:60, else:80},
-				top: {if: =options.caption_top, then: 0},
-				bottom: {if: =options.caption_top, else: 0}
-			},
-			.deco_caption: {
+				anchor-y: { if: =options.caption_top, then: top, else: bottom },
 				display:{if: =options.no_caption, then:none, else:inherit}
 			},
             .deco_headline: {

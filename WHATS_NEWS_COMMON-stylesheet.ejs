@@ -25,6 +25,15 @@
 			border-color:#9a9487
 		}
 	},
+	strong: {
+		font-name: {
+			$switch: [
+				{ if: =issue.edition, equals: japan, then: "HiraKakuProN-W3" },
+				{ if: =issue.edition, equals: korea, then: "AppleSDGothicNeo-Medium" },
+				"DJ5Exchange-Bold"
+			]
+		}
+	},
 	p: {
 		font-name: {
 			$switch: [

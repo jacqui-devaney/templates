@@ -5,84 +5,82 @@
 	<style src="PHONE-MODULES-stylesheet.ejs" />
 	<style>{
 		$join: [
-            { $switch: [
-                { if: =options.top_border, then: {
-                    jpml: {
-                        border-width: [1, 0, 0, 0],
-                        padding: [10, 0, 0, 0],
-                        border-color: #cfcfcf
-                    }
+        { $switch: [
+        { if: =options.top_border, then: {
+        jpml: {
+        border-width: [1, 0, 0, 0],
+        padding: [10, 0, 0, 0],
+        border-color: #cfcfcf
+        }
         
-                }},
-                { if: =options.left_border, then: {
-                    jpml: {
-                        border-width: [0, 0, 0, 1],
-                        border-color: #cfcfcf,
-                        padding: [0, 0, 0, 10]
-                    }
+        }},
+        { if: =options.left_border, then: {
+        jpml: {
+        border-width: [0, 0, 0, 1],
+        border-color: #cfcfcf,
+        padding: [0, 0, 0, 10]
+        }
         
-                }},
-                { if: =options.right_border, then: {
-                    jpml: {
-                        border-width: [0, 1, 0, 0],
-                        border-color: #cfcfcf,
-                        padding: [0, 10, 0, 0]
-                    }
+        }},
+        { if: =options.right_border, then: {
+        jpml: {
+        border-width: [0, 1, 0, 0],
+        border-color: #cfcfcf,
+        padding: [0, 10, 0, 0]
+        }
         
-                }},
-                { if: true, then: {
-                    jpml: {
-                        border-width: [0, 0, 0, 0],
-                        padding: [0, 10, 0, 0]
-                    }
-                }}
-            ]},
-            {
-                #image_wrapper: {
-                    width: 90,
-                    height: 80,
-                    anchor-x: right,
-                    bottom: 10
-                },
-                image: {
-                    padding: [0, 0, 0, 10]
-                },
-                .ahed_subhed: {
-                    color: #898b8e,
-                    font-size: 16,
-                    line-height: 20,
-                    font-name: "DJ5Exchange-Medium",
-                    padding: [0, 0, 3, 0]
-                },
-                #stars: {
-                    font-size: 22,
-                    line-height: 16,
-                    content: "*\u00a0\u00a0\u00a0*\u00a0\u00a0\u00a0*",
-                    text-align: center,
-                    color: #898b8e
-                },
-                .ahed_headline: {
-                    font-name: "DJ5EscrowCond-BoldItalic",
-                    font-size: 22,
-                    line-height: 26
-                }
-            }
+        }},
+        { if: true, then: {
+        jpml: {
+        border-width: [0, 0, 0, 0],
+        padding: [0, 10, 0, 0]
+        }
+        }}
+        ]},
+        {
+        #image_wrapper: {
+        width: 90,
+        height: 80,
+        anchor-x: right,
+        bottom: 8
+        },
+        image: {
+        padding: [0, 0, 0, 10]
+        },
+        .ahed_subhed: {
+        color: #898b8e,
+        font-size: 16,
+        line-height: 20,
+        font-name: "DJ5Exchange-Medium",
+        padding: [10, 0, 3, 0]
+        },
+        #stars: {
+        font-size: 22,
+        line-height: 10,
+        content: "*\u00a0\u00a0\u00a0*\u00a0\u00a0\u00a0*",
+        text-align: center,
+        color: #898b8e
+        },
+        .ahed_headline: {
+        font-name: "DJ5EscrowCond-BoldItalic",
+        font-size: 22,
+        line-height: 22
+        }
+        }
+        
         ]
 		}</style>
     
+    
+    
+    <box id="image_wrapper">
+        <image target-width="80" target-height="80" embed="summary-image"/>
+    </box>
+    
     <panel>
-        <panel>
-            <p class="ahed_headline"><span embed="headline"/></p>
-        </panel>
-        
-        <box id="image_wrapper">
-            <image target-width="80" target-height="80" embed="summary-image"/>
-        </box>
-        
-        <panel>
-            <p><mark id="stars"/></p>
-            <p class="ahed_subhed" embed="subhed"/>
-            <panel class="body" embed="body"/>
-        </panel>
+        <p class="ahed_headline"><span embed="headline"/></p>
+        <p><mark id="stars"/></p>
+        <p class="ahed_subhed" embed="subhed"/>
+        <panel class="body" embed="body"/>
     </panel>
 </jpml>

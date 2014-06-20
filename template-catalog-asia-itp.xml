@@ -10,7 +10,7 @@
 			deco="true"
 			usage="front"
 		/>
-        
+
         <template
             section="FRONT_SECTION"
             name="FRONT-6story-Vimage-deco_template.xml"
@@ -49,11 +49,18 @@
 		/>
 		<template
 			section="OPINION"
-			name="OPINION-3story_template.xml"
-			title="3 story (3RandO)"
+			name="OPINION-6story-deco_template.xml"
+			title="6 story"
 			min="3"
 			usage="front"
 		/>
+		<template
+			section="OPINION"
+			name="OPINION-3story_template.xml"
+			title="3 story (3RandO)"
+			min="3"
+			usage="front"		/>
+
 		<!-- END OPINION -->
 
 		<!-- WSJ MAGAZINE -->

@@ -66,7 +66,7 @@
 		},
 		#body-key: {
 			display: { if: =options.show_body, then: inherit, else: none },
-			content: { if-all: [=issue.locked, =article.paid], then: "K\u00a0"}
+			content: { if-all: [=issue.locked, =article.paid], then: "K\u00a0", else: ""}
 		},
 		.red: { background-color: red},
 		.green: { background-color: green},

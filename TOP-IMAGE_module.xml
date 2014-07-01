@@ -119,7 +119,7 @@
 		<panel id="body">
 			<p class="module_flashline"><span embed="flashline" /></p>
 			<p class="byline" embed="byline"/>
-			<p id="summary" class="body"><mark class="key" /><mark class="module_summary" /></p>
+			<p id="summary" class="body"><mark class="body-first-p-mark" /><mark class="module_summary" /></p>
 			<panel class="body" embed="body"/>
 		</panel>
 	</panel>

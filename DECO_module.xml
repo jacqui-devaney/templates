@@ -11,21 +11,25 @@
 			#deco_caption_container: {
 				background-color:"rgba(0, 0, 0, .5)",
 				padding:[12, 14, 5, 14],
-				height:{if: =options.one_line_caption, then:60, else:80},
 				anchor-y: { if: =options.caption_top, then: top, else: bottom },
 				display:{if: =options.no_caption, then:none, else:inherit}
 			},
             .deco_headline: { 
-				font-size: {if: =options.medium_headline, then:24, else:18}
+				font-size: {$switch: [
+					{if: =options.large_headline, then:36},
+					{if: =options.medium_headline, then:24},
+					18
+				]}
+			},
+			.deco_caption: {
+				line-clamp: {if: =options.one_line_caption, then:1}
 			}
 	}</style>
 			<box id="deco_container" embed="deco-image">
 				<image embed="summary-image" />
 				<box id="deco_caption_container">
 					<p class="deco_headline"><mark class="m_headline" /><mark class="key" /></p>
-					<panel class="deco_caption">
-						<p embed="subhed" />
-					</panel>
+					<p class="deco_caption" embed="subhed" />
 				</box>
 			</box>
 

@@ -9,7 +9,7 @@
           "label": "Small",
           "values": {
             "medium_headline":false,
-			"large_headline": false,
+            "large_headline": false,
             "small_headline": true
           }
         },
@@ -32,18 +32,6 @@
       ]
     },
     {
-      "key": "byline",
-      "title": "Hide/Show Byline",
-      "type": "toggle",
-      "options": [{
-        "label": "Show",
-        "values": { "no_byline": false }
-      }, {
-        "label": "Hide",
-        "values": { "no_byline": true }
-      }]
-    },
-    {
       "key": "image",
       "title": "Hide/Show Image",
       "type": "toggle",
@@ -60,31 +48,6 @@
           }
         }
       ]
-    },
-    {
-      "key": "columns",
-      "title": "Columns",
-      "type": "toggle",
-      "options": [{
-        "label": "2 Columns",
-        "values": { "two_columns": true }
-      }, {
-        "label": "1 Column",
-        "values": { "two_columns": false }
-      }]
-    },
-    {
-      "key": "indent",
-      "title": "First Paragraph Indent",
-      "type": "toggle",
-      "options": [{
-        "label": "Indent",
-        "values": { "indent": true }
-      }, {
-        "label": "No Indent",
-        "values": { "indent": false }
-      }]
     }
-
   ]
 }

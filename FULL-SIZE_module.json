@@ -1,3 +1,16 @@
 {
-  "influence": []
+  "influence": [
+    {
+      "key": "caption",
+      "title": "Hide/Show Caption",
+      "type": "toggle",
+      "options": [{
+        "label": "Hide",
+        "values": { "show_caption_container": false }
+      }, {
+        "label": "Show",
+        "values": { "show_caption_container": true }
+      }]
+    }
+  ]
 }

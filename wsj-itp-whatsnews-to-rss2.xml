@@ -36,7 +36,7 @@ including the linked-to articles, in order to process the PAID/FREE flags.
 <xsl:template match="/article-doc">
     <xsl:for-each select="article/article-body/p">
         <xsl:choose>
-            <xsl:when test="link and substring-before(document( $link )/article-doc/@id, '.')">
+            <xsl:when test="link and substring-before(document( //article//nameloc[@id = link[@linkend]]/nmlist )/article-doc/@id, '.')">
                 <item>
                     <title><xsl:value-of select="//article-doc/article/article-body/headline/main-hed"/></title>
                     <description>

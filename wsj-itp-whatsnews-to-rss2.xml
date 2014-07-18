@@ -69,19 +69,20 @@ including the linked-to articles, in order to process the PAID/FREE flags.
 </xsl:template>
 
 
-
-
-
-
-
-
 <xsl:template name="process_link">
     <xsl:param name="link"/>
     <link>
         <xsl:value-of select="$link" />
     </link>
     <guid>
-        <xsl:value-of select="substring-before(document( $link )/article-doc/@id, '.')" />
+        <xsl:choose>
+            <xsl:when test="starts-with($link, 'SB')">
+                <xsl:value-of select="$link" />
+            </xsl:when>
+            <xsl:otherwise>
+                <xsl:value-of select="substring-before(document( $link )/article-doc/@id, '.')" />
+            </xsl:otherwise>
+        </xsl:choose>
     </guid>
 
 

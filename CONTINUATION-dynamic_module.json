@@ -12,66 +12,6 @@
         "label": "Hide",
         "values": { "show_strap": false }
       }]
-    },
-    {
-      "key": "indent",
-      "title": "Indent First Paragraph",
-      "type": "toggle",
-      "options": [{
-        "label": "Yes",
-        "values": { "indent": true }
-      }, {
-        "label": "No",
-        "values": { "indent": false }
-      }]
-    },
-    {
-      "key": "byline",
-      "title": "Show Byline",
-      "type": "toggle",
-      "options": [{
-        "label": "Yes",
-        "values": { "show_byline": true }
-      }, {
-        "label": "No",
-        "values": { "show_byline": false }
-      }]
-    },
-    {
-      "key": "flashline",
-      "title": "Show flashline",
-      "type": "toggle",
-      "options": [{
-        "label": "Yes",
-        "values": { "show_flashline": true }
-      }, {
-        "label": "No",
-        "values": { "show_flashline": false }
-      }]
-    },
-    {
-      "key": "image",
-      "title": "Hide Image",
-      "type": "toggle",
-      "options": [{
-        "label": "Yes",
-        "values": { "hide_image": true }
-      }, {
-        "label": "No",
-        "values": { "hide_image": false }
-      }]
-    },
-    {
-      "key": "columns",
-      "title": "Columns",
-      "type": "toggle",
-      "options": [{
-        "label": "2 Columns",
-        "values": { "two_columns": true }
-      }, {
-        "label": "1 Column",
-        "values": { "two_columns": false }
-      }]
     }
   ]
 }

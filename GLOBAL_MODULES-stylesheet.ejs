@@ -35,17 +35,6 @@
 						    ], then: 19, else: 24 },
 							padding:[0, 0, 7, 0],
 							line-height:{ $switch: [
-									{if: =issue.edition, equals: "japan", then: {if-all: [
-									    =scale.headlines,
-									    {if: =extents.medium, more-than: 1.0, then: true, else: false},
-									    {if: =extents.medium, less-than: 1.5, then: true, else: false}
-									], then: 30, else: 26 }
-									},
-									{if: =issue.edition, equals: "korea", then: {if-all: [
-									    =scale.headlines,
-									    {if: =extents.medium, more-than: 1.0, then: true, else: false},
-									    {if: =extents.medium, less-than: 1.5, then: true, else: false}
-									], then: 30, else: 26 }},
 									{if-all: [
 									    =scale.headlines,
 									    {if: =extents.medium, more-than: 1.0, then: true, else: false},

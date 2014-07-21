@@ -11,9 +11,7 @@
 	},
 	.header: {
 		if-any: [
-			{ if: =app.idiom, equals: "phone" },
-			{ if: =issue.edition, equals: japan },
-			{ if: =issue.edition, equals: korea }
+			{ if: =app.idiom, equals: "phone" }
 		], then: {
 			display: none
 		}, else: {

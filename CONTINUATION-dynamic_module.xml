@@ -29,9 +29,11 @@
 				padding: [16, 8, 0, 8]
 			},
 			else: {
-				padding: [{if: =options.show_body, then: 16.5, else: 0.5}, 0, 0, 0],
-				border-width: [0.5, 0, 0, 0],
-				border-color: #d8d8d8
+				if: =options.hide_border, else: {
+					padding: [{if: =options.show_body, then: 9.5, else: 0.5}, 0, 0, 0],
+					border-width: [0.5, 0, 0, 0],
+					border-color: #d8d8d8
+				}
 			}
 		},
 		#vertical: {
@@ -40,14 +42,6 @@
 			},
 			else: {
 				vertical-align: middle
-			}
-		},
-		.continuation_headline: {
-			if: =options.show_body,
-			then: {
-			},
-			else: {
-				padding: [8, 0, 0, 0]
 			}
 		},
 		#image_container: {
@@ -71,25 +65,20 @@
 		},
 		.red: { background-color: red},
 		.green: { background-color: green},
-		.blue: { background-color: blue}
+		.blue: { background-color: blue},
+		.module_headline: {
+			font-name: "DJ5Exchange-Semibold",
+			font-size: 18,
+			text-scale: {$multiply: [=scale.text, 1] },
+			line-height: 25
+		}
     }</style>
     <style>{
     	if: =scale.phone, then: {
 			.module_headline: {
-				font-name: "DJ5Exchange-Semibold",
-				font-size: 18,
-				text-scale: {$multiply: [=scale.text, 1] },
-				line-height: 25,
 				color:{if: =article.read, then: #b8b8ba}
 			}
     	}, else: {
-    		.module_headline: {
-				font-name: "DJ5Exchange-Semibold",
-				font-size: 18,
-				text-scale: {$multiply: [=scale.text, 1] },
-				line-height: 25,
-				color:{if: =article.read, then: #b8b8ba}
-			},
     		#strap: {
     			display: none
     		},

@@ -36,61 +36,60 @@
 		},
 		#b1: {
 			options: {
-				large_headline:true,
+				medium_headline:true,
 				show_image:true,
 				background_color: =color.tint
 			}
 		},
 		#b2: {
-
-			options:{$switch:[
-				{if: =portrait, then: {show_body:true, show_image:true, medium_headline:true, top_border:true, background_color: =color.tint}},
-				{if: =landscape, then: {show_body:true, small_headline:true, top_border:true, background_color: =color.tint}}
-			]
-		}},
+			options: {
+				show_body: true,
+				show_image: true,
+				medium_headline: true,
+				background_color: =color.tint
+			}
+		},
 		#b3: {
-			options:{$switch:[
-				{if: =portrait, then: {show_body:true, show_image:true, medium_headline:true, top_border:true, background_color: =color.tint}},
-				{if: =landscape, then: {show_body:true, small_headline:true, top_border:true, background_color: =color.tint}}
-			]
-		}},
+			options: {
+				show_body: true,
+				show_image: true,
+				medium_headline: true,
+				background_color: =color.tint
+			}
+		},
 		#b4: {
-			options:{$switch:[
-				{if: =portrait, then: {small_headline:true, top_border:false, background_color: =color.tint}},
-				{if: =landscape, then: {show_image:true, medium_headline:true, top_border:false, background_color: =color.tint}}
-			]
-		}},
+			options: {
+				show_body: true,
+				background_color: =color.tint
+			}
+		},
 		#b5: {
-			options:{$switch:[
-				{if: =portrait, then: {small_headline:true, top_border:true, background_color: =color.tint}},
-				{if: =landscape, then: {show_image:true, medium_headline:true, top_border:false, background_color: =color.tint}}
-			]
-		}},
+			options: {
+				show_body: true,
+				background_color: =color.tint
+			}
+		},
 		#b6: {
 			options: {
-				small_headline:true,
-				top_border:true,
+				show_body: true,
 				background_color: =color.tint
 			}
 		},
 		#b7: {
 			options: {
-				small_headline:true,
-				top_border:true,
+				show_body: true,
 				background_color: =color.tint
 			}
 		},
 		#b8: {
 			options: {
-				small_headline:true,
-				top_border:true,
+				show_body: true,
 				background_color: =color.tint
 			}
 		},
 		#b9: {
 			options: {
-				small_headline:true,
-				top_border:true,
+				show_body: true,
 				background_color: =color.tint
 			}
 		}
@@ -117,27 +116,33 @@
 				},
 				#b4 : {
 					bind: none,
-					height: =size.continuation_height_normal
+					height: =size.continuation_height_normal,
+					options: { show_body: false }
 				},
 				#b5 : {
 					bind: none,
-					height: =size.continuation_height_normal
+					height: =size.continuation_height_normal,
+					options: { show_body: false }
 				},
 				#b6 : {
 					bind: none,
-					height: =size.continuation_height_normal
+					height: =size.continuation_height_normal,
+					options: { show_body: false }
 				},
 				#b7 : {
 					bind: none,
-					height: =size.continuation_height_normal
+					height: =size.continuation_height_normal,
+					options: { show_body: false }
 				},
 				#b8 : {
 					bind: none,
-					height: =size.continuation_height_normal
+					height: =size.continuation_height_normal,
+					options: { show_body: false }
 				},
 				#b9 : {
 					bind: none,
-					height: =size.continuation_height_normal
+					height: =size.continuation_height_normal,
+					options: { show_body: false }
 				}
 			}},
 			{if: =portrait, then: {
@@ -199,14 +204,6 @@
 					top:30,
 					height:465
 				},
-				#b4:	{
-					top:495,
-					height:145
-				},
-				#b5:{
-					top:495,
-					height:145
-				},
 				#b2:	{
 					top:30,
 					height:320
@@ -214,6 +211,14 @@
 				#b3:	{
 					top:30,
 					height:320
+				},
+				#b4:	{
+					top:495,
+					height:145
+				},
+				#b5:{
+					top:495,
+					height:145
 				},
 				#b6:	{
 					top:350,

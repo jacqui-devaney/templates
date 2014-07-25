@@ -57,9 +57,9 @@
 					padding: [0, 0, 17, 0],
 					options: {
 						$switch: [
-							{if: =options.F_image, then: {match:{width:571, height:226, max-height:226}}},
-							{ if: =options.OZ_image, then: {match: { width:570, height:612, min-height:612 } } },
-							{ if: =options.DV_image, then: {match: { width:262, height:394, min-height:394 } } },
+							{ if: =options.F_image, then: {match: { width:571, height:226, max-height:226 } } },
+							{ if: =options.OZ_image,then: {match: { width:570, height:612, min-height:612 } } },
+							{ if: =options.DV_image,then: {match: { width:262, height:394, min-height:394 } } },
 							{ if: =options.G_image, then: {match: { width:553, height:369, min-height:369 } } }
 						]
 					},

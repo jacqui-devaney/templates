@@ -2,7 +2,12 @@
 	<style src="GLOBAL-stylesheet.ejs" />
 	<style src="GLOBAL_MODULES-stylesheet.ejs" />
 	<style src="PHONE-MODULES-stylesheet.ejs" />
+
 	<style>{
+		jpml: {
+			background-color: =options.background_color,
+			border-color: #d8d8d8
+		},
 		#page_details: {
 			options: {
 				tintTitle: true
@@ -68,6 +73,31 @@
 		.green: { background-color: green},
 		.blue: { background-color: blue}
     }</style>
+    <style>{
+    	if: =scale.phone, then: {
+			.module_headline: {
+				font-name: "DJ5Exchange-Semibold",
+				font-size: 18,
+				text-scale: {$multiply: [=scale.text, 1] },
+				line-height: 25,
+				color:{if: =article.read, then: #b8b8ba}
+			}
+    	}, else: {
+    		.module_headline: {
+				font-name: "DJ5Exchange-Semibold",
+				font-size: 18,
+				text-scale: {$multiply: [=scale.text, 1] },
+				line-height: 25,
+				color:{if: =article.read, then: #b8b8ba}
+			},
+    		#strap: {
+    			display: none
+    		},
+    		#image_container: {
+    			display: none
+    		}
+    	}
+    }</style>
 	<box id="page_details" embed="pagedescription" />
 	<panel id="strap">
 		<p class="subsection"><mark id="m_subsection"/></p>
@@ -77,9 +107,9 @@
 			<image embed="summary-image" target-width="76" target-height="76" />
 		</box>
 		<panel id="vertical">
-			<p class="continuation_headline"><mark class="m_headline" /><mark class="key" /></p>
+			<p class="module_headline"><mark class="m_headline" /><mark class="key" /></p>
 		</panel>
-        <panel class="body">
+        <panel class="body" embed="body">
         	<p><mark class="body-first-p-mark" /><mark class="module_summary" /></p>
         </panel>
 	</panel>

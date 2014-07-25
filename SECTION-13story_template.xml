@@ -43,37 +43,30 @@
 			}
 		},
 		#b2: {
-			options: {
-				medium_headline:true,
-				show_flashline:false,
-				show_body:true,
-				top_border:true,
-				show_image:true,
-				background_color:#E9F5FE
-			}
-		},
+
+			options:{$switch:[
+				{if: =portrait, then: {show_body:true, show_image:true, medium_headline:true, top_border:true, background_color:#E9F5FE}},
+				{if: =landscape, then: {show_body:true, small_headline:true, top_border:true, background_color:#E9F5FE}}
+			]
+		}},
 		#b3: {
-			options: {
-				medium_headline:true,
-				show_body:true,
-				top_border:true,
-				background_color:#E9F5FE,
-				show_image:true
-			}
-		},
+			options:{$switch:[
+				{if: =portrait, then: {show_body:true, show_image:true, medium_headline:true, top_border:true, background_color:#E9F5FE}},
+				{if: =landscape, then: {show_body:true, small_headline:true, top_border:true, background_color:#E9F5FE}}
+			]
+		}},
 		#b4: {
 			options:{$switch:[
-				{if: =portrait, then: {small_headline:true, top_border:true, background_color:#E9F5FE}},
-				{if: =landscape, then: {small_headline:true, top_border:false, background_color:#E9F5FE}}
+				{if: =portrait, then: {small_headline:true, top_border:false, background_color:#E9F5FE}},
+				{if: =landscape, then: {show_image:true, medium_headline:true, top_border:false, background_color:#E9F5FE}}
 			]
 		}},
 		#b5: {
-			options: {
-				small_headline:true,
-				top_border:true,
-				background_color:#E9F5FE
-			}
-		},
+			options:{$switch:[
+				{if: =portrait, then: {small_headline:true, top_border:true, background_color:#E9F5FE}},
+				{if: =landscape, then: {show_image:true, medium_headline:true, top_border:false, background_color:#E9F5FE}}
+			]
+		}},
 		#b6: {
 			options: {
 				small_headline:true,
@@ -89,39 +82,14 @@
 			}
 		},
 		#b8: {
-			options:{$switch:[
-				{if: =portrait, then: {small_headline:true, top_border:false, background_color:#E9F5FE}},
-				{if: =landscape, then: {small_headline:true, top_border:true, background_color:#E9F5FE}}
-			]
-		}},
+			options: {
+				small_headline:true,
+				top_border:true,
+				background_color:#E9F5FE,
+				show_body:true
+			}
+		},
 		#b9: {
-			options:{$switch:[
-				{if: =portrait, then: {small_headline:true, top_border:true, background_color:#E9F5FE}},
-				{if: =landscape, then: {small_headline:true, top_border:false, background_color:#E9F5FE}}
-			]
-		}},
-		#b10: {
-			options: {
-				small_headline:true,
-				top_border:true,
-				background_color:#E9F5FE
-			}
-		},
-		#b11: {
-			options: {
-				small_headline:true,
-				top_border:true,
-				background_color:#E9F5FE
-			}
-		},
-		#b12: {
-			options: {
-				small_headline:true,
-				top_border:true,
-				background_color:#E9F5FE
-			}
-		},
-		#b13: {
 			options: {
 				small_headline:true,
 				top_border:true,
@@ -139,124 +107,93 @@
 			{if: =portrait, then: {
 
 				#tabbar-container:	{
-						top:-20,
-						height:28
+					top:-20,
+					height:30
 				},
 				#b1:	{
-						top:28,
-						height:510
+					top:30,
+					height:520
 				},
 				#b2:	{
-					top:538,
-					height:375
+					top:570,
+					height:340
 				},
 				#b3:{
-					top:538,
-					height:375
+					top:570,
+					height:340
 				},
 				#b4:	{
-					top:653,
-					height:130
+					top:30,
+					height:145
 
 				},
 				#b5:	{
-					top:653,
-					height:130
+					top:165,
+					height:145
 
 				},
 				#b6:	{
-					top:783,
-					height:130
+					top:310,
+					height:145
 
 				},
 				#b7:	{
-					top:783,
-					height:130
+					top:455,
+					height:145
 
 				},
 				#b8:	{
-					top:28,
-					height:150
+					top:600,
+					height:145
 
 				},
 				#b9:	{
-					top:152,
-					height:152
-
-				},
-				#b10:	{
-					top:304,
-					height:152
-
-				},
-				#b11:	{
-					top:456,
-					height:152
-
-				},
-				#b12:	{
-					top:608,
-					height:152
-
-				},
-				#b13:	{
-					top:760,
-					height:153
+					top:745,
+					height:165
 
 				}
 			}},
 			{if: =landscape, then: {
+
+				#tabbar-container:	{
+					top:-20,
+					height:30
+				},
 				#b1:	{
-					top:0,
-					height:458
+					top:30,
+					height:475
 				},
 				#b2:	{
-					top:458,
-					height:195
+					top:495,
+					height:145
 				},
 				#b3:{
-					top:458,
-					height:195
+					top:495,
+					height:145
 				},
 				#b4:	{
-					top:0,
-					height:130
+					top:30,
+					height:320
 				},
 				#b5:	{
-					top:130,
-					height:130
+					top:30,
+					height:320
 				},
 				#b6:	{
-					top:260,
-					height:130
+					top:350,
+					height:145
 				},
 				#b7:	{
-					top:390,
-					height:130
+					top:350,
+					height:145
 				},
 				#b8:	{
-					top:520,
-					height:130
+					top:495,
+					height:145
 				},
 				#b9:	{
-					top:0,
-					height:130
-				},
-				#b10:	{
-					top:130,
-					height:130
-				},
-				#b11:	{
-					top:260,
-					height:130
-				},
-				#b12:	{
-					top:390,
-					height:130
-				},
-				#b13:	{
-					top:520,
-					height:130
+					top:495,
+					height:145
 				}
 
 			}}
@@ -386,7 +323,7 @@
 
 	}</style>
 	<box id="page_details" embed="pagedescription" />
-	<box id="tabbar-container" class="column12 positionx1" >
+	<box id="tabbar-container" class="column16-12 positionx1" >
 		<box class="center-me">
 			<p id="tabbar-us" class="tabbar-p">
 				<a class="tabbar-link top-news-link" href="//NOW/LATEST_NEWS/TOP_NEWS">TOP STORIES</a><mark class="space"/>
@@ -424,11 +361,11 @@
 	<box id="b1" embed="article" class="column8 positionx1" module="TOP-IMAGE_module.xml" />
 	<box id="b2" embed="article" class="column4 positionx1" module="TOP-IMAGE_module.xml" />
 	<box id="b3" embed="article" class="column4 positionx5" module="TOP-IMAGE_module.xml" />
+	<box id="b4" embed="article" class="column4 positionx9" module="TOP-IMAGE_module.xml" />
+	<box id="b5" embed="article" class="column4 positionx13-9" module="TOP-IMAGE_module.xml" />
+	<box id="b6" embed="article" class="column4 positionx9" module="TOP-IMAGE_module.xml" />
+	<box id="b7" embed="article" class="column4 positionx13-9" module="TOP-IMAGE_module.xml" />
 	<box id="b8" embed="article" class="column4 positionx9" module="TOP-IMAGE_module.xml" />
 	<box id="b9" embed="article" class="column4 positionx13-9" module="TOP-IMAGE_module.xml" />
-	<box id="b10" embed="article" class="column4 positionx13-9" module="TOP-IMAGE_module.xml" />
-	<box id="b11" embed="article" class="column4 positionx13-9" module="TOP-IMAGE_module.xml" />
-	<box id="b12" embed="article" class="column4 positionx13-9" module="TOP-IMAGE_module.xml" />
-	<box id="b13" embed="article" class="column4 positionx13-9" module="TOP-IMAGE_module.xml" />
 
 </jpml>

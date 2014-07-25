@@ -11,7 +11,9 @@
 		}
 	}</style>
 	<style>{
-
+		jpml: {
+			background-color: =color.tint
+		},
 		#tabbar-container: {
 			border-width:[0, 0, 1, 0],
 			border-color:#E1E1E1
@@ -31,9 +33,6 @@
 		},
 		.center-me: {
 			text-align:center
-		},
-		jpml: {
-			background-color: =color.tint
 		},
 		#b1: {
 			options: {
@@ -95,15 +94,53 @@
 				top_border:true,
 				background_color: =color.tint
 			}
-		},
-		.blah: {
-			color: red
 		}
-
-
 	}</style>
 	<style> {
 		$switch: [
+			{if: =scale.phone, then: {
+				#page_details: {
+					display: none
+				},
+				#tabbar-container: {
+					display: none
+				},
+				#b1 : {
+					options: { show_body: true }
+				},
+				#b2 : {
+					height: =size.continuation_height_large,
+					options: { show_body: true }
+				},
+				#b3 : {
+					height: =size.continuation_height_large,
+					options: { show_body: true }
+				},
+				#b4 : {
+					bind: none,
+					height: =size.continuation_height_normal
+				},
+				#b5 : {
+					bind: none,
+					height: =size.continuation_height_normal
+				},
+				#b6 : {
+					bind: none,
+					height: =size.continuation_height_normal
+				},
+				#b7 : {
+					bind: none,
+					height: =size.continuation_height_normal
+				},
+				#b8 : {
+					bind: none,
+					height: =size.continuation_height_normal
+				},
+				#b9 : {
+					bind: none,
+					height: =size.continuation_height_normal
+				}
+			}},
 			{if: =portrait, then: {
 
 				#tabbar-container:	{
@@ -196,35 +233,6 @@
 					height:145
 				}
 
-			}},
-			{if: =scale.phone, then: {
-				#tabbar-container: {
-					display: none
-				},
-				#b2 : {
-					height: =size.continuation_height_large,
-					options: { show_body: true }
-				},
-				#b3 : {
-					height: =size.continuation_height_large,
-					options: { show_body: true }
-				},
-				#b4 : {
-					bind: none,
-					height: =size.continuation_height_normal
-				},
-				#b5 : {
-					bind: none,
-					height: =size.continuation_height_normal
-				},
-				#b6 : {
-					bind: none,
-					height: =size.continuation_height_normal
-				},
-				#b7 : {
-					bind: none,
-					height: =size.continuation_height_normal
-				}
 			}}
 		]
 	} </style>

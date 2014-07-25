@@ -59,6 +59,7 @@
 		},
 		#b4: {
 			options: {
+				hide_border: =portrait,
 				show_body: true,
 				background_color: =color.tint
 			}
@@ -165,33 +166,27 @@
 				},
 				#b4:	{
 					top:30,
-					height:145
-
+					height:135
 				},
 				#b5:	{
-					top:165,
-					height:145
-
+					top:175,
+					height:135
 				},
 				#b6:	{
-					top:310,
-					height:145
-
+					top:320,
+					height:135
 				},
 				#b7:	{
-					top:455,
-					height:145
-
+					top:465,
+					height:135
 				},
 				#b8:	{
-					top:600,
-					height:145
-
+					top:610,
+					height:135
 				},
 				#b9:	{
-					top:745,
-					height:165
-
+					top:755,
+					height:155
 				}
 			}},
 			{if: =landscape, then: {
@@ -206,18 +201,18 @@
 				},
 				#b2:	{
 					top:30,
-					height:320
+					height:310
 				},
 				#b3:	{
 					top:30,
-					height:320
+					height:310
 				},
 				#b4:	{
-					top:495,
+					top:505,
 					height:145
 				},
 				#b5:{
-					top:495,
+					top:505,
 					height:145
 				},
 				#b6:	{
@@ -229,11 +224,11 @@
 					height:145
 				},
 				#b8:	{
-					top:495,
+					top:505,
 					height:145
 				},
 				#b9:	{
-					top:495,
+					top:505,
 					height:145
 				}
 

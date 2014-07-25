@@ -84,8 +84,7 @@
 			options: {
 				small_headline:true,
 				top_border:true,
-				background_color: =color.tint,
-				show_body:true
+				background_color: =color.tint
 			}
 		},
 		#b9: {
@@ -200,19 +199,19 @@
 					top:30,
 					height:465
 				},
-				#b2:	{
-					top:495,
-					height:145
-				},
-				#b3:{
-					top:495,
-					height:145
-				},
 				#b4:	{
+					top:495,
+					height:145
+				},
+				#b5:{
+					top:495,
+					height:145
+				},
+				#b2:	{
 					top:30,
 					height:320
 				},
-				#b5:	{
+				#b3:	{
 					top:30,
 					height:320
 				},
@@ -380,7 +379,6 @@
 				<a class="tabbar-link opinion-link" href="/OPINION">OPINION</a><mark class="space"/>
 				<a class="tabbar-link business-and-finance-link" href="/BUSINESS">BUSINESS &amp; FINANCE</a><mark class="space"/>
 				<a class="tabbar-link life-and-style-link" href="/LIFE_AND_STYLE">LIFE &amp; STYLE</a>
-
 			</p>
 			<p id="tabbar-asia" class="tabbar-p">
 				<a class="tabbar-link top-news-link" href="/TOP_NEWS">TOP STORIES</a><mark class="space"/>
@@ -398,13 +396,13 @@
 		</box>
 	</box>
 	<box id="b1" embed="article" class="column8 positionx1 maude unit_386" module="TOP-IMAGE_module.xml" />
-	<box id="b2" embed="article" class="column4 positionx1 maude unit_166" module="TOP-IMAGE_module.xml" />
-	<box id="b3" embed="article" class="column4 positionx5 maude unit_166" module="TOP-IMAGE_module.xml" />
-	<box id="b4" embed="article" class="column4 positionx9 maude unit_50" module="TOP-IMAGE_module.xml" />
-	<box id="b5" embed="article" class="column4 positionx13-9 maude unit_50" module="TOP-IMAGE_module.xml" />
-	<box id="b6" embed="article" class="column4 positionx9 maude unit_50" module="TOP-IMAGE_module.xml" />
-	<box id="b7" embed="article" class="column4 positionx13-9 maude unit_50" module="TOP-IMAGE_module.xml" />
-	<box id="b8" embed="article" class="column4 positionx9 maude unit_50" module="TOP-IMAGE_module.xml" />
-	<box id="b9" embed="article" class="column4 positionx13-9 maude unit_50" module="TOP-IMAGE_module.xml" />
+	<box id="b2" embed="article" class="column4 positionx9-1  maude unit_166" module="TOP-IMAGE_module.xml" />
+	<box id="b3" embed="article" class="column4 positionx13-5 maude unit_166" module="TOP-IMAGE_module.xml" />
+	<box id="b4" embed="article" class="column4 positionx1-9  maude unit_50" module="CONTINUATION-dynamic_module.xml" />
+	<box id="b5" embed="article" class="column4 positionx5-9  maude unit_50" module="CONTINUATION-dynamic_module.xml" />
+	<box id="b6" embed="article" class="column4 positionx9    maude unit_50" module="CONTINUATION-dynamic_module.xml" />
+	<box id="b7" embed="article" class="column4 positionx13-9 maude unit_50" module="CONTINUATION-dynamic_module.xml" />
+	<box id="b8" embed="article" class="column4 positionx9    maude unit_50" module="CONTINUATION-dynamic_module.xml" />
+	<box id="b9" embed="article" class="column4 positionx13-9 maude unit_50" module="CONTINUATION-dynamic_module.xml" />
 
 </jpml>

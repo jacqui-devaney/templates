@@ -312,7 +312,10 @@
 					border-color:#0037A2
 				}
 			}}
-		],
+		]
+
+		}</style>
+		<style>{
 		#tabbar-us: {
 			display:{if: =issue.edition, equals: "us", then: inherit, else: none}
 		},

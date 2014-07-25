@@ -16,11 +16,11 @@
     }</style>
 	<style>{
 		jpml: {
-			background-color: {if: =page.section, equals: "LATEST_NEWS", then: #ffeded}
+			background-color: {if: =page.section, equals: "LATEST_NEWS", then: #E9F5FE}
 		},
 		#view: {
 			options: {
-				background_color:{if: =page.section, equals: "LATEST_NEWS", then: #ffeded}
+				background_color:{if: =page.section, equals: "LATEST_NEWS", then: #E9F5FE}
 			}
 		}
 	}</style>

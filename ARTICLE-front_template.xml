@@ -17,12 +17,12 @@
 	<style>{
 		#view: {
 			options: {
-				background_color: {if: =page.section, equals: "LATEST_NEWS", then: #ffeded},
+				background_color: {if: =page.section, equals: "LATEST_NEWS", then: #E9F5FE},
 				indent: true
 			}
 		},
 		jpml: {
-			background-color: {if: =page.section, equals: "LATEST_NEWS", then: #ffeded}
+			background-color: {if: =page.section, equals: "LATEST_NEWS", then: #E9F5FE}
 		}
 	}</style>
     <box id="view" embed="article" class="column16-12 positionx1" module="ARTICLE-front_module.xml" />

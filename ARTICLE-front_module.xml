@@ -22,7 +22,7 @@
 		{.border-p:{
 			layout-grid-line: 0,
 			layout-grid-line-offset: 0,
-			border-color: {if: =page.section, equals: "LATEST_NEWS", then: #ffeded, else:white}
+			border-color: {if: =page.section, equals: "LATEST_NEWS", then: #E9F5FE, else:white}
 
 		}},
 		{if: =portrait, then: {

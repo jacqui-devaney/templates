@@ -334,35 +334,35 @@
 	<box id="tabbar-container" class="column16-12 positionx1" >
 		<box class="center-me">
 			<p id="tabbar-us" class="tabbar-p">
-				<a class="tabbar-link top-news-link" href="//NOW/TOP_NEWS">TOP STORIES</a><mark class="space"/>
-				<a class="tabbar-link world-link" href="//NOW/WORLD">WORLD</a><mark class="space"/>
-				<a class="tabbar-link us-link" href="//NOW/US">U.S.</a><mark class="space"/>
-				<a class="tabbar-link business-link" href="//NOW/BUSINESS">BUSINESS</a><mark class="space"/>
-				<a class="tabbar-link tech-link" href="//NOW/TECH">TECH</a><mark class="space"/>
-				<a class="tabbar-link markets-link" href="//NOW/MARKETS">MARKETS</a><mark class="space"/>
-				<a class="tabbar-link opinion-link" href="//NOW/OPINION">OPINION</a><mark class="space"/>
-				<a class="tabbar-link life-and-culture-link" href="//NOW/LIFE_AND_CULTURE">LIFE &amp; CULTURE</a>
+				<a class="tabbar-link top-news-link" href="/TOP_NEWS">TOP STORIES</a><mark class="space"/>
+				<a class="tabbar-link world-link" href="/WORLD">WORLD</a><mark class="space"/>
+				<a class="tabbar-link us-link" href="/US">U.S.</a><mark class="space"/>
+				<a class="tabbar-link business-link" href="/BUSINESS">BUSINESS</a><mark class="space"/>
+				<a class="tabbar-link tech-link" href="/TECH">TECH</a><mark class="space"/>
+				<a class="tabbar-link markets-link" href="/MARKETS">MARKETS</a><mark class="space"/>
+				<a class="tabbar-link opinion-link" href="/OPINION">OPINION</a><mark class="space"/>
+				<a class="tabbar-link life-and-culture-link" href="/LIFE_AND_CULTURE">LIFE &amp; CULTURE</a>
 			</p>
 			<p id="tabbar-europe" class="tabbar-p">
-				<a class="tabbar-link top-news-link" href="//NOW/TOP_NEWS">TOP STORIES</a><mark class="space"/>
-				<a class="tabbar-link europe-link" href="//NOW/EUROPE">EUROPE</a><mark class="space"/>
-				<a class="tabbar-link opinion-link" href="//NOW/OPINION">OPINION</a><mark class="space"/>
-				<a class="tabbar-link business-and-finance-link" href="//NOW/BUSINESS">BUSINESS &amp; FINANCE</a><mark class="space"/>
-				<a class="tabbar-link life-and-style-link" href="//NOW/LIFE_AND_STYLE">LIFE &amp; STYLE</a>
+				<a class="tabbar-link top-news-link" href="/TOP_NEWS">TOP STORIES</a><mark class="space"/>
+				<a class="tabbar-link europe-link" href="/EUROPE">EUROPE</a><mark class="space"/>
+				<a class="tabbar-link opinion-link" href="/OPINION">OPINION</a><mark class="space"/>
+				<a class="tabbar-link business-and-finance-link" href="/BUSINESS">BUSINESS &amp; FINANCE</a><mark class="space"/>
+				<a class="tabbar-link life-and-style-link" href="/LIFE_AND_STYLE">LIFE &amp; STYLE</a>
 
 			</p>
 			<p id="tabbar-asia" class="tabbar-p">
-				<a class="tabbar-link top-news-link" href="//NOW/TOP_NEWS">TOP STORIES</a><mark class="space"/>
-				<a class="tabbar-link asia-link" href="//NOW/ASIA">ASIA</a><mark class="space"/>
-				<a class="tabbar-link opinion-link" href="//NOW/OPINION">OPINION</a><mark class="space"/>
-				<a class="tabbar-link business-and-finance-link" href="//NOW/BUSINESS_AND_FINANCE">BUSINESS &amp; FINANCE</a><mark class="space"/>
-				<a class="tabbar-link life-and-style-link" href="//NOW/LIFE_AND_STYLE">LIFE &amp; STYLE</a>
+				<a class="tabbar-link top-news-link" href="/TOP_NEWS">TOP STORIES</a><mark class="space"/>
+				<a class="tabbar-link asia-link" href="/ASIA">ASIA</a><mark class="space"/>
+				<a class="tabbar-link opinion-link" href="/OPINION">OPINION</a><mark class="space"/>
+				<a class="tabbar-link business-and-finance-link" href="/BUSINESS_AND_FINANCE">BUSINESS &amp; FINANCE</a><mark class="space"/>
+				<a class="tabbar-link life-and-style-link" href="/LIFE_AND_STYLE">LIFE &amp; STYLE</a>
 			</p>
 			<p id="tabbar-japan" class="tabbar-p">
-				<a class="tabbar-link top-news-link" href="//NOW/TOP_NEWS">TOP STORIES</a><mark class="space"/>
-				<a class="tabbar-link business-and-markets-link" href="//NOW/TEST_NEWS/BUSINESS_AND_MARKETS">BUSINESS &amp; MARKETS</a><mark class="space"/>
-				<a class="tabbar-link japan-and-world-link" href="//NOW/JAPAN_AND_WORLD">JAPAN &amp; WORLD</a><mark class="space"/>
-				<a class="tabbar-link lifestyle-link" href="//NOW/LIFESTYLE">LIFESTYLE</a>
+				<a class="tabbar-link top-news-link" href="/TOP_NEWS">TOP STORIES</a><mark class="space"/>
+				<a class="tabbar-link business-and-markets-link" href="/TEST_NEWS/BUSINESS_AND_MARKETS">BUSINESS &amp; MARKETS</a><mark class="space"/>
+				<a class="tabbar-link japan-and-world-link" href="/JAPAN_AND_WORLD">JAPAN &amp; WORLD</a><mark class="space"/>
+				<a class="tabbar-link lifestyle-link" href="/LIFESTYLE">LIFESTYLE</a>
 			</p>
 		</box>
 	</box>

@@ -5,13 +5,7 @@
 	.module_headline: {
 		$join: [
 			{
-				font-name: { $switch: [
-						{if: =issue.edition, equals: "japan", then: HiraKakuProN-W6},
-						{if: =issue.edition, equals: "korea", then: AppleSDGothicNeo-Bold},
-						{if: =options.small_semibold_headline, then: DJ5EscrowCond-Semibold},
-						DJ5EscrowCond-Bold
-					]
-				},
+				font-name: "DJ5EscrowCond-Bold",
 				text-scale: {if: =scale.small, then: {$multiply: [=scale.text, 0.9] }, else: inherit},
 				color:{if: =options.white_text, then:#fff, else:#000}
 
@@ -22,24 +16,14 @@
 						padding:[0, 0, 10, 0],
 						font-size:15,
 						font-name: DJ5EscrowCond-Semibold,
-						line-height:{ $switch: [
-								{if: =issue.edition, equals: "japan", then: 15},
-								{if: =issue.edition, equals: "korea", then: 15},
-								"19"
-							]
-						}
+						line-height: 19
 						}
 					},
 					{if: =options.small_headline, then:{
 						padding:[0, 0, 11, 0],
 						font-size:19,
 						font-name: DJ5EscrowCond-Semibold,
-						line-height:{ $switch: [
-								{if: =issue.edition, equals: "japan", then: 28},
-								{if: =issue.edition, equals: "korea", then: 28},
-								"23"
-							]
-						}
+						line-height: 23
 						}
 					},
 					{if: =options.medium_headline, then:{
@@ -51,17 +35,6 @@
 						    ], then: 19, else: 24 },
 							padding:[0, 0, 7, 0],
 							line-height:{ $switch: [
-									{if: =issue.edition, equals: "japan", then: {if-all: [
-									    =scale.headlines,
-									    {if: =extents.medium, more-than: 1.0, then: true, else: false},
-									    {if: =extents.medium, less-than: 1.5, then: true, else: false}
-									], then: 30, else: 26 }
-									},
-									{if: =issue.edition, equals: "korea", then: {if-all: [
-									    =scale.headlines,
-									    {if: =extents.medium, more-than: 1.0, then: true, else: false},
-									    {if: =extents.medium, less-than: 1.5, then: true, else: false}
-									], then: 30, else: 26 }},
 									{if-all: [
 									    =scale.headlines,
 									    {if: =extents.medium, more-than: 1.0, then: true, else: false},
@@ -107,12 +80,7 @@
 							font-name: DJ5EscrowCond-Semibold,
 							padding:[0, 0, 20, 0],
 							font-size:19,
-							line-height:{ $switch: [
-									{if: =issue.edition, equals: "japan", then: 28},
-									{if: =issue.edition, equals: "korea", then: 28},
-									"23"
-								]
-							}
+							line-height: 23
 						}
 					}
 
@@ -122,12 +90,7 @@
 		]
 	},
 	.body: {
-		font-name: { $switch: [
-				{if: =issue.edition, equals: "japan", then: HiraKakuProN-W3},
-				{if: =issue.edition, equals: "korea", then: AppleSDGothicNeo-Medium},
-				"DJ5Exchange-Medium"
-			]
-		},
+		font-name: "DJ5Exchange-Medium",
 		text-indent: =text.indent,
 		font-size:{$multiply:{if: =options.large_body, then:20, else:14}},
 		line-height:{$multiply:{if: =options.large_body, then:26, else:20}},
@@ -190,7 +153,6 @@
 	},
 	.body-first-p-mark: {
 		font-name: {if: =device.platform, equals: Android, then: DJ5Utility, else: DJ5Utility-Regular },
-		font-size: 16,
 		content: "K\u00a0",
 		display: { if-all: [=issue.locked, =article.paid], then: default, else: none },
 		color: #948464
@@ -199,7 +161,7 @@
 		font-name:DJ5Exchange-Medium,
 		font-size:14,
 		line-height:20,
-		color:#9b9b9b
+		color:#5D5D5D
 	},
 	.hidden_tablet: {
 		display: none

@@ -1,29 +1,5 @@
 {
-  "influence": [{
-    "key": "border",
-    "title": "Border",
-    "type": "select",
-    "options": [{
-        "label": "Top",
-        "values": {
-          "bottom_border": false,
-          "no_border": false
-        }
-      }, {
-        "label": "Bottom",
-        "values": {
-          "bottom_border": true,
-          "no_border": false
-        }
-      }, {
-        "label": "None",
-        "values": {
-          "bottom_border": false,
-          "no_border": true
-        }
-      }]
-    },
-
+  "influence": [
     {
       "key": "caption",
       "title": "Hide/Show Caption",
@@ -49,21 +25,6 @@
       {
         "label": "Top",
         "values": { "caption_top": true }
-      }]
-    },
-
-    {
-      "key": "caption_width",
-      "title": "Caption Width",
-	"comment": "Use for deco images P size and larger",
-      "type": "select",
-      "disabled": ["no_caption"],
-      "options": [{
-        "label": "Full Width",
-        "values": { "narrow_text": false }
-      }, {
-        "label": "Partial Width",
-        "values": { "narrow_text": true }
       }]
     },
     {

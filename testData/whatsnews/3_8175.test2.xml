@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0"  xmlns:atom="http://www.w3.org/2005/Atom" >
+  <channel>
+    <title>WSJ.com: ITP Whats News</title>
+    <link>http://online.wsj.com/</link> 
+	  <description>ITP Whats News</description> 
+	  <language>en-us</language> 
+	  <copyright>copyright  &#169; 2014 Dow Jones &amp; Company, Inc.</copyright> 
+	  <lastBuildDate>Tue, 01 Jul 2014 15:40:14 EDT</lastBuildDate>
+	  <image>
+      <title>WSJ.com: ITP Whats News</title>
+      <url>http://online.wsj.com/img/wsj_sm_logo.gif</url>
+      <link>http://online.wsj.com/</link> 
+    </image>
+    <atom:link href="http://online.wsj.com/" rel="self" type="application/rss+xml" />
+<!--Item 1 of Whats News Business Finance -->
+<item>
+      <title>What's News: Business &amp; Finance</title>
+      <guid isPermaLink="false">SB10001424052702303390404580001452653119846</guid>
+      <link>SB10001424052702303390404580001452653119846.xml</link>
+<!--       <link>http://online.wsj.com/articles/whats-news-business-finance-1404185697?mod=rss_itp_whats_news</link>
+ -->      <description>What's News: Business &amp; Finance</description>
+      
+      <category>FREE</category>
+    <pubDate>Tue, 01 Jul 2014 08:43:15 EDT</pubDate>
+    </item>
+<!--Item 1 of Whats News World Wide -->
+<item>
+      <title>What's News: World-Wide</title>
+      <guid isPermaLink="false">SB10001424052702303390404580001454282757006</guid>
+      <link>SB10001424052702303390404580001454282757006.xml</link>
+<!--       <link>http://online.wsj.com/articles/whats-news-world-wide-1404186398?mod=rss_itp_whats_news</link>
+ -->      <description>What's News: World-Wide</description>
+      
+      <category>FREE</category>
+    <pubDate>Tue, 01 Jul 2014 08:44:53 EDT</pubDate>
+    </item>
+</channel>
+</rss>

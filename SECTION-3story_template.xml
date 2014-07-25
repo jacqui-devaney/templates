@@ -15,8 +15,8 @@
 		#deco: {
 			options:{$switch:[
 				{if: =scale.phone, then: {medium_headline:true, show_image:true}},
-				{if: =portrait, then: {medium_headline:true, show_image:true, one_line_caption:true}},
-				{if: =landscape, then: {medium_headline:true, show_image:true, one_line_caption:true}}
+				{if: =portrait, then: {large_headline:true, show_image:true, one_line_caption:true}},
+				{if: =landscape, then: {large_headline:true, show_image:true, one_line_caption:true}}
 			]
 		}},
 		#b1: {

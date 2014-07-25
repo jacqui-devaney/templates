@@ -31,16 +31,16 @@
 		{if: =portrait, then: {
 			#media: {
 				top: 0,
-				left:{if: =media.width, less-than: 360, then: 0, else: {if: =media.width, more-than: 484, then: 0, else: 124}},
+				left:{if: =media.width, less-than: 360, then: 0, else: {if: =media.width, more-than: 484, then: 0, else: 0}},
 				width: {$switch: [
 					{if: =media.width, less-than: 360, then: 236},
 					{if: =media.width, more-than: 484, then: 484},
-					360
+					236
 				]},
 				height: {$min: [{$max: [{$switch: [
 					{if: =media.width, less-than: 360, then: {$divide: [236, =media.aspect]}},
 					{if: =media.width, more-than: 484, then: {$divide: [484, =media.aspect]}},
-					{$divide: [360, =media.aspect]}
+					{$divide: [236, =media.aspect]}
 				]}, {$multiply: [.25, =view.height]}]}, {$multiply: [.75, =view.height]}]},
 				options: {
 					id: =page.number
@@ -50,16 +50,16 @@
         }, else: {
 			#media: {
 				top: 0,
-				left:{if: =media.width, less-than: 360, then: 248, else: {if: =media.width, more-than: 484, then: 248, else: 372}},
+				left:{if: =media.width, less-than: 360, then: 248, else: {if: =media.width, more-than: 484, then: 248, else: 248}},
 				width: {$switch: [
 					{if: =media.width, less-than: 360, then: 236},
 					{if: =media.width, more-than: 484, then: 484},
-					360
+					236
 				]},
 				height: {$min: [{$max: [{$switch: [
 					{if: =media.width, less-than: 360, then: {$divide: [236, =media.aspect]}},
 					{if: =media.width, more-than: 484, then: {$divide: [484, =media.aspect]}},
-					{$divide: [360, =media.aspect]}
+					{$divide: [236, =media.aspect]}
 				]}, {$multiply: [.25, =view.height]}]}, {$multiply: [.75, =view.height]}]},
 				options: {
 					id: =page.number

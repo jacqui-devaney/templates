@@ -1,0 +1,112 @@
+<jpml id="OPINION-7story_template">
+	<style src="GLOBAL-stylesheet.ejs" />
+	<style src="GRID-stylesheet.ejs"/>
+	<style src="ADVERTISING-stylesheet.ejs"/>
+	<style src="PHONE-stylesheet.ejs"/>
+	<style>{
+		#page_details: {
+			options: {
+				tintTitle: true
+			}
+		}
+	}</style>
+	<style>{
+		#b1: {
+			options:{rando_header:true, top_border:{if: =portrait, then:true}}
+		},
+		#b2: {
+			options:{top_border:true}
+		},
+		#deco: {options: {show_byline:true, show_flashline:true}},
+		#b3: {options: {medium_headline:true, show_byline:true, show_flashline:true, top_border:{if: =landscape, then:true}}},
+		#b4: {options: {medium_headline:true, show_byline:true, show_flashline:true, top_border:true}},
+		#b5: {options: {medium_headline:true, show_byline:true, show_flashline:true, top_border:true}},
+		#b6: {options: {medium_headline:true, show_byline:true, show_flashline:true, top_border:true}}
+
+	}</style>
+    <style>{
+		$switch:[
+			{if: =scale.phone, then: {
+                #front_page :{
+                    display:none
+                }
+
+			}},
+			{if: =portrait, then: {
+				#b1: {
+					top:383,
+					height:235
+				},
+				#b2: {
+					top:618,
+					height:189
+				},
+				#deco: {
+					top:0,
+					height:363
+				},
+				#b3: {
+					top:0,
+					height:188
+				},
+				#b4: {
+					top:188,
+					height:198
+				},
+				#b5: {
+					top:386,
+					height:198
+				},
+				#b6: {
+					top:584,
+					height:212
+				}
+			}},
+			{if: =landscape, then: {
+				#b1: {
+					top:0,
+					height:210
+				},
+				#b2: {
+					top:210,
+					height:177
+				},
+				#deco: {
+					top:0,
+					height:363
+				},
+				#b3: {
+					top:392,
+					height:176
+				},
+				#b4: {
+					top:392,
+					height:176
+				},
+				#b5: {
+					top:392,
+					height:176
+				},
+				#b6: {
+					top:392,
+					height:176
+				}
+			}}
+		]
+    }</style>
+	<box id="page_details" embed="pagedescription" />
+    <box id="b1" embed="article" class="column8 positionx1 maude unit_100" module="OPINION-RANDO-LETTERS_module.xml" />
+    <box id="b2" embed="article" class="column8 positionx1 maude unit_100" module="OPINION-RANDO-LETTERS_module.xml" />
+	<box id="deco" embed="article" class="column8 positionx9-1 maude unit_75" module="DECO_module.xml" />
+	<box id="b3" embed="article" class="column4 positionx1-9 maude unit_50" module="TOP-IMAGE_module.xml" />
+	<box id="b4" embed="article" class="column4 positionx5-9 maude unit_50" module="TOP-IMAGE_module.xml" />
+	<box id="b5" embed="article" class="column4 positionx9 maude unit_50" module="TOP-IMAGE_module.xml" />
+	<box id="b6" embed="article" class="column4 positionx13-9 maude unit_50" module="TOP-IMAGE_module.xml" />
+	<box id="front_page" class="positionx_full column_full maude unit_ad">
+		<box id="banner_ad" class="ad-banner front_ad" embed="advertisement" />
+	</box>
+
+
+
+
+</jpml>

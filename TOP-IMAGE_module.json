@@ -1,32 +1,6 @@
 {
   "influence": [
     {
-      "key": "border",
-      "title": "Border",
-      "type": "select",
-      "options": [
-        {
-          "label": "Top",
-          "values": {
-            "left_border": false,
-            "no_border": false
-          }
-        }, {
-          "label": "None",
-          "values": {
-            "left_border": false,
-            "no_border": true
-          }
-        }, {
-          "label": "Left",
-          "values": {
-            "left_border": true,
-            "no_border": false
-          }
-        }
-      ]
-    },
-    {
       "key": "image",
       "title": "Hide/Show Image",
 		"comment":"Checking 'Show' will only show an image ONLY if an appropriately sized image can be found.",
@@ -121,7 +95,7 @@
           "label": "Small",
           "values": {
             "medium_headline":false,
-			"large_headline": false,
+            "large_headline": false,
             "small_headline": true
           }
         },
@@ -142,30 +116,6 @@
           }
         }
       ]
-    },
-    {
-      "key": "byline",
-      "title": "Hide/Show Byline",
-      "type": "toggle",
-      "options": [{
-        "label": "Show",
-        "values": { "no_byline": false }
-      }, {
-        "label": "Hide",
-        "values": { "no_byline": true }
-      }]
-    },
-    {
-      "key": "justify",
-      "title": "Justify Body",
-      "type": "toggle",
-      "options": [{
-        "label": "Yes",
-        "values": { "justify": true }
-      }, {
-        "label": "No",
-        "values": { "justify": false }
-      }]
     }
   ]
 }

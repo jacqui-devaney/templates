@@ -6,7 +6,7 @@
     "options": [{
         "label": "Default Blue",
         "values": {
-          "flashline_color": "#2E73AA"
+          "flashline_color": "#004990"
         }
       }, {
         "label": "OPINION",
@@ -32,6 +32,11 @@
         "label": "PERSONAL_JOURNAL",
         "values": {
           "flashline_color": "#E0592B"
+        }
+      }, {
+        "label": "JOURNAL_REPORT",
+        "values": {
+          "flashline_color": "#2E73AA"
         }
       }, {
         "label": "NEW_YORK",

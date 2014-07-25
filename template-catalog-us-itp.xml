@@ -10,7 +10,7 @@
 			deco="true"
 			usage="front"
 		/>
-        
+
         <template
             section="FRONT_SECTION"
             name="FRONT-6story-Vimage-deco_template.xml"
@@ -45,6 +45,13 @@
 			name="OPINION-7story-deco_template.xml"
 			title="Default: 7 story plus deco (3RandO-4CMTY)"
 			min="8"
+			usage="front"
+		/>
+		<template
+			section="OPINION"
+			name="OPINION-6story-deco_template.xml"
+			title="6 story"
+			min="3"
 			usage="front"
 		/>
 		<template

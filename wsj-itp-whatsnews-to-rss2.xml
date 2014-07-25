@@ -41,7 +41,6 @@ including the linked-to articles, in order to process the PAID/FREE flags.
                     <title><xsl:value-of select="//article-doc/article/article-body/headline/main-hed"/></title>
                     <description>
                         <xsl:if test ="link/highlight"><b><xsl:apply-templates select="link/highlight"/></b></xsl:if><xsl:apply-templates select="node()/node()[not(name()='highlight')][normalize-space(.)]"/>
-
                     </description>
                     <xsl:apply-templates select="link"/>
                 </item>
@@ -49,7 +48,9 @@ including the linked-to articles, in order to process the PAID/FREE flags.
             <xsl:otherwise>
                 <stub>
                     <title><xsl:value-of select="//article-doc/article/article-body/headline/main-hed"/></title>
-                    <description><xsl:value-of select="."/></description>
+                    <description>
+                        <xsl:if test ="highlight"><b><xsl:apply-templates select="highlight"/></b></xsl:if><xsl:apply-templates select="node()[not(name()='highlight')][normalize-space(.)]"/>
+                    </description>
                 </stub>
             </xsl:otherwise>
         </xsl:choose>

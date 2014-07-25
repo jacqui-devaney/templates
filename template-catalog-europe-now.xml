@@ -3,12 +3,12 @@
 	<templates>
 
 		<!-- SECTIONS -->
-		<template section="LATEST_NEWS"
-			name="SECTION-9story_template.xml"
-			title="9 story - G photo"
-			min="9"
-			usage="front"
-		/>
+		<template
+            name="SECTION-9story_template.xml"
+            title="9 story - G photo"
+            min="9"
+            usage="front"
+        />
 		<template
 			name="SECTION-7story_template.xml"
 			title="7 story - G photo"

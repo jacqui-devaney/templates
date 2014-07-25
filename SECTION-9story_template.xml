@@ -112,7 +112,7 @@
 				},
 				#b1:	{
 					top:30,
-					height:520
+					height:530
 				},
 				#b2:	{
 					top:570,
@@ -161,7 +161,7 @@
 				},
 				#b1:	{
 					top:30,
-					height:475
+					height:465
 				},
 				#b2:	{
 					top:495,
@@ -200,6 +200,30 @@
 			{if: =scale.phone, then: {
 				#tabbar-container: {
 					display: none
+				},
+				#b2 : {
+					height: =size.continuation_height_large,
+					options: { show_body: true }
+				},
+				#b3 : {
+					height: =size.continuation_height_large,
+					options: { show_body: true }
+				},
+				#b4 : {
+					bind: none,
+					height: =size.continuation_height_normal
+				},
+				#b5 : {
+					bind: none,
+					height: =size.continuation_height_normal
+				},
+				#b6 : {
+					bind: none,
+					height: =size.continuation_height_normal
+				},
+				#b7 : {
+					bind: none,
+					height: =size.continuation_height_normal
 				}
 			}}
 		]
@@ -313,9 +337,8 @@
 				}
 			}}
 		]
-
-		}</style>
-		<style>{
+	}</style>
+	<style>{
 		#tabbar-us: {
 			display:{if: =issue.edition, equals: "us", then: inherit, else: none}
 		},

@@ -16,11 +16,11 @@
     }</style>
 	<style>{
 		jpml: {
-			background-color: {if: =issue.type, equals: "NOW", then: #E9F5FE}
+			background-color: =color.tint
 		},
 		#view: {
 			options: {
-				background_color:{if: =issue.type, equals: "NOW", then: #E9F5FE}
+				background_color: =color.tint
 			}
 		}
 	}</style>

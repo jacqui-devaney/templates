@@ -98,6 +98,13 @@
 				overflow: "..."
 			},
 
+			color: {
+				tint: { if-all: [
+					{ if: =app.idiom, equals: "tablet" },
+					{ if: =issue.type, equals: "NOW" }
+				], then: "#E9F5FE" }
+			},
+
 			size: {
 				if: =app.idiom,
 				equals: "phone",

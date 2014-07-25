@@ -22,7 +22,7 @@
 		{.border-p:{
 			layout-grid-line: 0,
 			layout-grid-line-offset: 0,
-			border-color: {if: =issue.type, equals: "NOW", then: #E9F5FE, else:white}
+			border-color: =color.tint
 
 		}},
 		{if: =portrait, then: {

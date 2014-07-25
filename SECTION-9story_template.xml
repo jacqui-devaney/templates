@@ -33,59 +33,59 @@
 			text-align:center
 		},
 		jpml: {
-			background-color: #E9F5FE
+			background-color: =color.tint
 		},
 		#b1: {
 			options: {
 				large_headline:true,
 				show_image:true,
-				background_color:#E9F5FE
+				background_color: =color.tint
 			}
 		},
 		#b2: {
 
 			options:{$switch:[
-				{if: =portrait, then: {show_body:true, show_image:true, medium_headline:true, top_border:true, background_color:#E9F5FE}},
-				{if: =landscape, then: {show_body:true, small_headline:true, top_border:true, background_color:#E9F5FE}}
+				{if: =portrait, then: {show_body:true, show_image:true, medium_headline:true, top_border:true, background_color: =color.tint}},
+				{if: =landscape, then: {show_body:true, small_headline:true, top_border:true, background_color: =color.tint}}
 			]
 		}},
 		#b3: {
 			options:{$switch:[
-				{if: =portrait, then: {show_body:true, show_image:true, medium_headline:true, top_border:true, background_color:#E9F5FE}},
-				{if: =landscape, then: {show_body:true, small_headline:true, top_border:true, background_color:#E9F5FE}}
+				{if: =portrait, then: {show_body:true, show_image:true, medium_headline:true, top_border:true, background_color: =color.tint}},
+				{if: =landscape, then: {show_body:true, small_headline:true, top_border:true, background_color: =color.tint}}
 			]
 		}},
 		#b4: {
 			options:{$switch:[
-				{if: =portrait, then: {small_headline:true, top_border:false, background_color:#E9F5FE}},
-				{if: =landscape, then: {show_image:true, medium_headline:true, top_border:false, background_color:#E9F5FE}}
+				{if: =portrait, then: {small_headline:true, top_border:false, background_color: =color.tint}},
+				{if: =landscape, then: {show_image:true, medium_headline:true, top_border:false, background_color: =color.tint}}
 			]
 		}},
 		#b5: {
 			options:{$switch:[
-				{if: =portrait, then: {small_headline:true, top_border:true, background_color:#E9F5FE}},
-				{if: =landscape, then: {show_image:true, medium_headline:true, top_border:false, background_color:#E9F5FE}}
+				{if: =portrait, then: {small_headline:true, top_border:true, background_color: =color.tint}},
+				{if: =landscape, then: {show_image:true, medium_headline:true, top_border:false, background_color: =color.tint}}
 			]
 		}},
 		#b6: {
 			options: {
 				small_headline:true,
 				top_border:true,
-				background_color:#E9F5FE
+				background_color: =color.tint
 			}
 		},
 		#b7: {
 			options: {
 				small_headline:true,
 				top_border:true,
-				background_color:#E9F5FE
+				background_color: =color.tint
 			}
 		},
 		#b8: {
 			options: {
 				small_headline:true,
 				top_border:true,
-				background_color:#E9F5FE,
+				background_color: =color.tint,
 				show_body:true
 			}
 		},
@@ -93,7 +93,7 @@
 			options: {
 				small_headline:true,
 				top_border:true,
-				background_color:#E9F5FE
+				background_color: =color.tint
 			}
 		},
 		.blah: {

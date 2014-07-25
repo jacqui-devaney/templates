@@ -17,12 +17,12 @@
 	<style>{
 		#view: {
 			options: {
-				background_color: {if: =issue.type, equals: "NOW", then: #E9F5FE},
+				background_color: =color.tint,
 				indent: true
 			}
 		},
 		jpml: {
-			background-color: {if: =issue.type, equals: "NOW", then: #E9F5FE}
+			background-color: =color.tint
 		}
 	}</style>
     <box id="view" embed="article" class="column16-12 positionx1" module="ARTICLE-front_module.xml" />

@@ -196,6 +196,11 @@
 					height:145
 				}
 
+			}},
+			{if: =scale.phone, then: {
+				#tabbar-container: {
+					display: none
+				}
 			}}
 		]
 	} </style>
@@ -358,14 +363,14 @@
 			</p>
 		</box>
 	</box>
-	<box id="b1" embed="article" class="column8 positionx1" module="TOP-IMAGE_module.xml" />
-	<box id="b2" embed="article" class="column4 positionx1" module="TOP-IMAGE_module.xml" />
-	<box id="b3" embed="article" class="column4 positionx5" module="TOP-IMAGE_module.xml" />
-	<box id="b4" embed="article" class="column4 positionx9" module="TOP-IMAGE_module.xml" />
-	<box id="b5" embed="article" class="column4 positionx13-9" module="TOP-IMAGE_module.xml" />
-	<box id="b6" embed="article" class="column4 positionx9" module="TOP-IMAGE_module.xml" />
-	<box id="b7" embed="article" class="column4 positionx13-9" module="TOP-IMAGE_module.xml" />
-	<box id="b8" embed="article" class="column4 positionx9" module="TOP-IMAGE_module.xml" />
-	<box id="b9" embed="article" class="column4 positionx13-9" module="TOP-IMAGE_module.xml" />
+	<box id="b1" embed="article" class="column8 positionx1 maude unit_386" module="TOP-IMAGE_module.xml" />
+	<box id="b2" embed="article" class="column4 positionx1 maude unit_166" module="TOP-IMAGE_module.xml" />
+	<box id="b3" embed="article" class="column4 positionx5 maude unit_166" module="TOP-IMAGE_module.xml" />
+	<box id="b4" embed="article" class="column4 positionx9 maude unit_50" module="TOP-IMAGE_module.xml" />
+	<box id="b5" embed="article" class="column4 positionx13-9 maude unit_50" module="TOP-IMAGE_module.xml" />
+	<box id="b6" embed="article" class="column4 positionx9 maude unit_50" module="TOP-IMAGE_module.xml" />
+	<box id="b7" embed="article" class="column4 positionx13-9 maude unit_50" module="TOP-IMAGE_module.xml" />
+	<box id="b8" embed="article" class="column4 positionx9 maude unit_50" module="TOP-IMAGE_module.xml" />
+	<box id="b9" embed="article" class="column4 positionx13-9 maude unit_50" module="TOP-IMAGE_module.xml" />
 
 </jpml>

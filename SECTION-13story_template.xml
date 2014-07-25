@@ -11,14 +11,32 @@
 		}
 	}</style>
 	<style>{
+
+		#tabbar-container: {
+			border-width:[0, 0, 1, 0],
+			border-color:#E1E1E1
+		},
+		#tabbar-p: {
+			padding:[10,0,0,0],
+			font-name:DJ5Exchange-Bold,
+			color:#343434,
+			font-size:12
+		},
+		.space: {
+			font-size: 6,
+			line-height:4,
+			color: transparent,
+			content: "unfortunate"
+
+		},
 		jpml: {
-			background-color: #ffeded
+			background-color: #E9F5FE
 		},
 		#b1: {
 			options: {
 				large_headline:true,
 				show_image:true,
-				background_color:#ffeded
+				background_color:#E9F5FE
 			}
 		},
 		#b2: {
@@ -27,8 +45,8 @@
 				show_flashline:false,
 				show_body:true,
 				top_border:true,
-				small_image:true,
-				background_color:#ffeded
+				show_image:true,
+				background_color:#E9F5FE
 			}
 		},
 		#b3: {
@@ -36,93 +54,102 @@
 				medium_headline:true,
 				show_body:true,
 				top_border:true,
-				background_color:#ffeded,
-				small_image:true
+				background_color:#E9F5FE,
+				show_image:true
 			}
 		},
 		#b4: {
 			options:{$switch:[
-				{if: =portrait, then: {small_headline:true, top_border:true, background_color:#ffeded}},
-				{if: =landscape, then: {small_headline:true, top_border:false, background_color:#ffeded}}
+				{if: =portrait, then: {small_headline:true, top_border:true, background_color:#E9F5FE}},
+				{if: =landscape, then: {small_headline:true, top_border:false, background_color:#E9F5FE}}
 			]
 		}},
 		#b5: {
 			options: {
 				small_headline:true,
 				top_border:true,
-				background_color:#ffeded
+				background_color:#E9F5FE
 			}
 		},
 		#b6: {
 			options: {
 				small_headline:true,
 				top_border:true,
-				background_color:#ffeded
+				background_color:#E9F5FE
 			}
 		},
 		#b7: {
 			options: {
 				small_headline:true,
 				top_border:true,
-				background_color:#ffeded
+				background_color:#E9F5FE
 			}
 		},
 		#b8: {
 			options:{$switch:[
-				{if: =portrait, then: {small_headline:true, top_border:false, background_color:#ffeded}},
-				{if: =landscape, then: {small_headline:true, top_border:true, background_color:#ffeded}}
+				{if: =portrait, then: {small_headline:true, top_border:false, background_color:#E9F5FE}},
+				{if: =landscape, then: {small_headline:true, top_border:true, background_color:#E9F5FE}}
 			]
 		}},
 		#b9: {
 			options:{$switch:[
-				{if: =portrait, then: {small_headline:true, top_border:true, background_color:#ffeded}},
-				{if: =landscape, then: {small_headline:true, top_border:false, background_color:#ffeded}}
+				{if: =portrait, then: {small_headline:true, top_border:true, background_color:#E9F5FE}},
+				{if: =landscape, then: {small_headline:true, top_border:false, background_color:#E9F5FE}}
 			]
 		}},
 		#b10: {
 			options: {
 				small_headline:true,
 				top_border:true,
-				background_color:#ffeded
+				background_color:#E9F5FE
 			}
 		},
 		#b11: {
 			options: {
 				small_headline:true,
 				top_border:true,
-				background_color:#ffeded
+				background_color:#E9F5FE
 			}
 		},
 		#b12: {
 			options: {
 				small_headline:true,
 				top_border:true,
-				background_color:#ffeded
+				background_color:#E9F5FE
 			}
 		},
 		#b13: {
 			options: {
 				small_headline:true,
 				top_border:true,
-				background_color:#ffeded
+				background_color:#E9F5FE
 			}
+		},
+		.blah: {
+			color: red
 		}
+
 
 	}</style>
 	<style> {
 		$switch: [
 			{if: =portrait, then: {
+
+				#tabbar-container:	{
+						top:-20,
+						height:28
+				},
 				#b1:	{
-						top:0,
-						height:458
+						top:28,
+						height:510
 				},
 				#b2:	{
-					top:458,
-					height:195
+					top:538,
+					height:375
 				},
 				#b3:{
-					top:458,
-					height:195
+					top:538,
+					height:375
 				},
 				#b4:	{
 					top:653,
@@ -145,8 +172,8 @@
 
 				},
 				#b8:	{
-					top:0,
-					height:152
+					top:28,
+					height:150
 
 				},
 				#b9:	{
@@ -232,14 +259,30 @@
 			}}
 		]
 	} </style>
+	<style>{
+		.top-news-link: {
+			color: #004990,
+			border-width:[0, 0, 3, 0],
+			border-color:#0037A2
+		}
+
+	}</style>
 	<box id="page_details" embed="pagedescription" />
+	<box id="tabbar-container" class="column12 positionx1" >
+		<p id="tabbar-p">
+			<a class="tabbar-link top-news-link" href="//NOW/LATEST_NEWS/TOP_NEWS">TOP STORIES</a><mark class="space"/>
+			<a class="tabbar-link world-link" href="//NOW/LATEST_NEWS/WORLD">WORLD</a><mark class="space"/>
+			<a class="tabbar-link us-link" href="//NOW/LATEST_NEWS/US">U.S.</a><mark class="space"/>
+			<a class="tabbar-link business-link" href="//NOW/LATEST_NEWS/BUSINESS">BUSINESS</a><mark class="space"/>
+			<a class="tabbar-link tech-link" href="//NOW/LATEST_NEWS/TECH">TECH</a><mark class="space"/>
+			<a class="tabbar-link markets-link" href="//NOW/LATEST_NEWS/MARKETS">MARKETS</a><mark class="space"/>
+			<a class="tabbar-link opinion-link" href="//NOW/LATEST_NEWS/OPINION">OPINION</a><mark class="space"/>
+			<a class="tabbar-link life-and-culture-link" href="//NOW/LATEST_NEWS/LIFE_AND_CULTURE">LIFE &amp; CULTURE</a>
+		</p>
+	</box>
 	<box id="b1" embed="article" class="column8 positionx1" module="TOP-IMAGE_module.xml" />
-	<box id="b2" embed="article" class="column4 positionx1" module="RIGHT-INSET-IMAGE_module.xml" />
-	<box id="b3" embed="article" class="column4 positionx5" module="RIGHT-INSET-IMAGE_module.xml" />
-	<box id="b4" embed="article" class="column4 positionx9-1" module="TOP-IMAGE_module.xml" />
-	<box id="b5" embed="article" class="column4 positionx9-5" module="TOP-IMAGE_module.xml" />
-	<box id="b6" embed="article" class="column4 positionx9-1" module="TOP-IMAGE_module.xml" />
-	<box id="b7" embed="article" class="column4 positionx9-5" module="TOP-IMAGE_module.xml" />
+	<box id="b2" embed="article" class="column4 positionx1" module="TOP-IMAGE_module.xml" />
+	<box id="b3" embed="article" class="column4 positionx5" module="TOP-IMAGE_module.xml" />
 	<box id="b8" embed="article" class="column4 positionx9" module="TOP-IMAGE_module.xml" />
 	<box id="b9" embed="article" class="column4 positionx13-9" module="TOP-IMAGE_module.xml" />
 	<box id="b10" embed="article" class="column4 positionx13-9" module="TOP-IMAGE_module.xml" />

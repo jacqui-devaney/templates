@@ -29,6 +29,9 @@
 			content: "unfortunate"
 
 		},
+		.center-me: {
+			text-align:center
+		},
 		jpml: {
 			background-color: #E9F5FE
 		},
@@ -384,37 +387,39 @@
 	}</style>
 	<box id="page_details" embed="pagedescription" />
 	<box id="tabbar-container" class="column12 positionx1" >
-		<p id="tabbar-us" class="tabbar-p">
-			<a class="tabbar-link top-news-link" href="//NOW/LATEST_NEWS/TOP_NEWS">TOP STORIES</a><mark class="space"/>
-			<a class="tabbar-link world-link" href="//NOW/LATEST_NEWS/WORLD">WORLD</a><mark class="space"/>
-			<a class="tabbar-link us-link" href="//NOW/LATEST_NEWS/US">U.S.</a><mark class="space"/>
-			<a class="tabbar-link business-link" href="//NOW/LATEST_NEWS/BUSINESS">BUSINESS</a><mark class="space"/>
-			<a class="tabbar-link tech-link" href="//NOW/LATEST_NEWS/TECH">TECH</a><mark class="space"/>
-			<a class="tabbar-link markets-link" href="//NOW/LATEST_NEWS/MARKETS">MARKETS</a><mark class="space"/>
-			<a class="tabbar-link opinion-link" href="//NOW/LATEST_NEWS/OPINION">OPINION</a><mark class="space"/>
-			<a class="tabbar-link life-and-culture-link" href="//NOW/LATEST_NEWS/LIFE_AND_CULTURE">LIFE &amp; CULTURE</a>
-		</p>
-		<p id="tabbar-europe" class="tabbar-p">
-			<a class="tabbar-link top-news-link" href="//NOW/LATEST_NEWS/TOP_NEWS">TOP STORIES</a><mark class="space"/>
-			<a class="tabbar-link europe-link" href="//NOW/LATEST_NEWS/EUROPE">EUROPE</a><mark class="space"/>
-			<a class="tabbar-link opinion-link" href="//NOW/LATEST_NEWS/OPINION">OPINION</a><mark class="space"/>
-			<a class="tabbar-link business-and-finance-link" href="//NOW/LATEST_NEWS/BUSINESS">BUSINESS &amp; FINANCE</a><mark class="space"/>
-			<a class="tabbar-link life-and-style-link" href="//NOW/LATEST_NEWS/LIFE_AND_STYLE">LIFE &amp; STYLE</a>
+		<box class="center-me">
+			<p id="tabbar-us" class="tabbar-p">
+				<a class="tabbar-link top-news-link" href="//NOW/LATEST_NEWS/TOP_NEWS">TOP STORIES</a><mark class="space"/>
+				<a class="tabbar-link world-link" href="//NOW/LATEST_NEWS/WORLD">WORLD</a><mark class="space"/>
+				<a class="tabbar-link us-link" href="//NOW/LATEST_NEWS/US">U.S.</a><mark class="space"/>
+				<a class="tabbar-link business-link" href="//NOW/LATEST_NEWS/BUSINESS">BUSINESS</a><mark class="space"/>
+				<a class="tabbar-link tech-link" href="//NOW/LATEST_NEWS/TECH">TECH</a><mark class="space"/>
+				<a class="tabbar-link markets-link" href="//NOW/LATEST_NEWS/MARKETS">MARKETS</a><mark class="space"/>
+				<a class="tabbar-link opinion-link" href="//NOW/LATEST_NEWS/OPINION">OPINION</a><mark class="space"/>
+				<a class="tabbar-link life-and-culture-link" href="//NOW/LATEST_NEWS/LIFE_AND_CULTURE">LIFE &amp; CULTURE</a>
+			</p>
+			<p id="tabbar-europe" class="tabbar-p">
+				<a class="tabbar-link top-news-link" href="//NOW/LATEST_NEWS/TOP_NEWS">TOP STORIES</a><mark class="space"/>
+				<a class="tabbar-link europe-link" href="//NOW/LATEST_NEWS/EUROPE">EUROPE</a><mark class="space"/>
+				<a class="tabbar-link opinion-link" href="//NOW/LATEST_NEWS/OPINION">OPINION</a><mark class="space"/>
+				<a class="tabbar-link business-and-finance-link" href="//NOW/LATEST_NEWS/BUSINESS">BUSINESS &amp; FINANCE</a><mark class="space"/>
+				<a class="tabbar-link life-and-style-link" href="//NOW/LATEST_NEWS/LIFE_AND_STYLE">LIFE &amp; STYLE</a>
 
-		</p>
-		<p id="tabbar-asia" class="tabbar-p">
-			<a class="tabbar-link top-news-link" href="//NOW/LATEST_NEWS/TOP_NEWS">TOP STORIES</a><mark class="space"/>
-			<a class="tabbar-link asia-link" href="//NOW/LATEST_NEWS/ASIA">ASIA</a><mark class="space"/>
-			<a class="tabbar-link opinion-link" href="//NOW/LATEST_NEWS/OPINION">OPINION</a><mark class="space"/>
-			<a class="tabbar-link business-and-finance-link" href="//NOW/LATEST_NEWS/BUSINESS_AND_FINANCE">BUSINESS &amp; FINANCE</a><mark class="space"/>
-			<a class="tabbar-link life-and-style-link" href="//NOW/LATEST_NEWS/LIFE_AND_STYLE">LIFE &amp; STYLE</a>
-		</p>
-		<p id="tabbar-japan" class="tabbar-p">
-			<a class="tabbar-link top-news-link" href="//NOW/LATEST_NEWS/TOP_NEWS">TOP STORIES</a><mark class="space"/>
-			<a class="tabbar-link business-and-markets-link" href="//NOW/LATEST_NEWS/BUSINESS_AND_MARKETS">BUSINESS &amp; MARKETS</a><mark class="space"/>
-			<a class="tabbar-link japan-and-world-link" href="//NOW/LATEST_NEWS/JAPAN_AND_WORLD">JAPAN &amp; WORLD</a><mark class="space"/>
-			<a class="tabbar-link lifestyle-link" href="//NOW/LATEST_NEWS/LIFESTYLE">LIFESTYLE</a>
-		</p>
+			</p>
+			<p id="tabbar-asia" class="tabbar-p">
+				<a class="tabbar-link top-news-link" href="//NOW/LATEST_NEWS/TOP_NEWS">TOP STORIES</a><mark class="space"/>
+				<a class="tabbar-link asia-link" href="//NOW/LATEST_NEWS/ASIA">ASIA</a><mark class="space"/>
+				<a class="tabbar-link opinion-link" href="//NOW/LATEST_NEWS/OPINION">OPINION</a><mark class="space"/>
+				<a class="tabbar-link business-and-finance-link" href="//NOW/LATEST_NEWS/BUSINESS_AND_FINANCE">BUSINESS &amp; FINANCE</a><mark class="space"/>
+				<a class="tabbar-link life-and-style-link" href="//NOW/LATEST_NEWS/LIFE_AND_STYLE">LIFE &amp; STYLE</a>
+			</p>
+			<p id="tabbar-japan" class="tabbar-p">
+				<a class="tabbar-link top-news-link" href="//NOW/LATEST_NEWS/TOP_NEWS">TOP STORIES</a><mark class="space"/>
+				<a class="tabbar-link business-and-markets-link" href="//NOW/LATEST_NEWS/BUSINESS_AND_MARKETS">BUSINESS &amp; MARKETS</a><mark class="space"/>
+				<a class="tabbar-link japan-and-world-link" href="//NOW/LATEST_NEWS/JAPAN_AND_WORLD">JAPAN &amp; WORLD</a><mark class="space"/>
+				<a class="tabbar-link lifestyle-link" href="//NOW/LATEST_NEWS/LIFESTYLE">LIFESTYLE</a>
+			</p>
+		</box>
 	</box>
 	<box id="b1" embed="article" class="column8 positionx1" module="TOP-IMAGE_module.xml" />
 	<box id="b2" embed="article" class="column4 positionx1" module="TOP-IMAGE_module.xml" />

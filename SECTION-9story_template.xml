@@ -109,41 +109,41 @@
 				},
 				#b2 : {
 					height: =size.continuation_height_large,
-					options: { show_body: true }
+					options: { show_body: true, show_image: true, float_image: right, small_headline: true }
 				},
 				#b3 : {
 					height: =size.continuation_height_large,
-					options: { show_body: true }
+					options: { show_body: true, show_image: true, float_image: right, small_headline: true }
 				},
 				#b4 : {
 					bind: none,
 					height: =size.continuation_height_normal,
-					options: { show_body: false }
+					options: { show_body: false, small_headline: true }
 				},
 				#b5 : {
 					bind: none,
 					height: =size.continuation_height_normal,
-					options: { show_body: false }
+					options: { show_body: false, small_headline: true }
 				},
 				#b6 : {
 					bind: none,
 					height: =size.continuation_height_normal,
-					options: { show_body: false }
+					options: { show_body: false, small_headline: true }
 				},
 				#b7 : {
 					bind: none,
 					height: =size.continuation_height_normal,
-					options: { show_body: false }
+					options: { show_body: false, small_headline: true }
 				},
 				#b8 : {
 					bind: none,
-					height: =size.continuation_height_normal,
-					options: { show_body: false }
+					height: =size.continuation_height_large,
+					options: { show_body: true, small_headline: true }
 				},
 				#b9 : {
 					bind: none,
 					height: =size.continuation_height_normal,
-					options: { show_body: false }
+					options: { show_body: false, small_headline: true }
 				}
 			}},
 			{if: =portrait, then: {

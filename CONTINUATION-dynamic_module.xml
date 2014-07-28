@@ -65,13 +65,7 @@
 		},
 		.red: { background-color: red},
 		.green: { background-color: green},
-		.blue: { background-color: blue},
-		.module_headline: {
-			font-name: "DJ5Exchange-Semibold",
-			font-size: 18,
-			text-scale: {$multiply: [=scale.text, 1] },
-			line-height: 25
-		}
+		.blue: { background-color: blue}
     }</style>
     <style>{
     	if: =scale.phone, then: {

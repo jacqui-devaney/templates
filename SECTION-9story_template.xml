@@ -49,7 +49,7 @@
 			options: {
 				show_body: true,
 				show_image: true,
-				medium_headline: true,
+				smedium_headline: true,
 				background_color: =color.tint
 			}
 		},
@@ -57,7 +57,7 @@
 			options: {
 				show_body: true,
 				show_image: true,
-				medium_headline: true,
+				smedium_headline: true,
 				background_color: =color.tint
 			}
 		},
@@ -65,36 +65,42 @@
 			options: {
 				hide_border: =portrait,
 				show_body: true,
+				small_headline: true,
 				background_color: =color.tint
 			}
 		},
 		#b5: {
 			options: {
 				show_body: true,
+				small_headline: true,
 				background_color: =color.tint
 			}
 		},
 		#b6: {
 			options: {
 				show_body: true,
+				small_headline: true,
 				background_color: =color.tint
 			}
 		},
 		#b7: {
 			options: {
 				show_body: true,
+				small_headline: true,
 				background_color: =color.tint
 			}
 		},
 		#b8: {
 			options: {
 				show_body: true,
+				small_headline: true,
 				background_color: =color.tint
 			}
 		},
 		#b9: {
 			options: {
 				show_body: true,
+				small_headline: true,
 				background_color: =color.tint
 			}
 		}

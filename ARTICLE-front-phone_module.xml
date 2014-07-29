@@ -18,7 +18,7 @@
 			left: 0,
 			right: 0,
 			position: relative,
-			height: {$min: [{$divide: [320, =media.aspect]}, { if: =device.height, less-than: 568, then: 275, else: 350}]},
+			height: {$min: [{$divide: [320, =media.aspect]}, { if: =view.height, less-than: 568, then: 275, else: 350}]},
 			options: {
 				id: =page.number
 			}

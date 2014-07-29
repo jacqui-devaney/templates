@@ -1,7 +1,7 @@
 {if: =scale.phone, then: {
 
 	.key: {
-		font-name: {if: =device.platform, equals: Android, then: DJ5Utility, else: DJ5Utility-Regular },
+		font-name: "DJ5Utility-Regular",
 		font-size:16,
 		content: "\u00a0K",
 		display: { if-all: [=issue.locked, =article.paid], then: default, else: none },

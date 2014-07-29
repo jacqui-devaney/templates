@@ -147,7 +147,7 @@
 		display: {if: =options.show_image, then:inherit, else:none}
 	},
 	.key: {
-		font-name: {if: =device.platform, equals: Android, then: DJ5Utility, else: DJ5Utility-Regular },
+		font-name: "DJ5Utility-Regular",
 		font-size: 16,
 		content: "\u00a0K",
 		display: { if-all: [=issue.locked, =article.paid], then: default, else: none },
@@ -157,7 +157,7 @@
 		text-indent: {if: =options.indent, then: =text.indent, else: 0}
 	},
 	.body-first-p-mark: {
-		font-name: {if: =device.platform, equals: Android, then: DJ5Utility, else: DJ5Utility-Regular },
+		font-name: "DJ5Utility-Regular",
 		content: "K\u00a0",
 		display: { if-all: [=issue.locked, =article.paid], then: default, else: none },
 		color: #948464

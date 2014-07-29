@@ -5,32 +5,6 @@
 			portrait: { if: =view.width, less-than: =view.height },
 			landscape: { if: =view.width, more-than: =view.height },
 
-			aspect: {
-				$divide: [
-					{$max: [=device.height, =device.width] },
-					{$min: [=device.height, =device.width] }
-				]
-			},
-
-			standard: {
-				if: {
-					$divide: [
-						{$max: [=device.height, =device.width] },
-						{$min: [=device.height, =device.width] }
-					]
-				},
-				at-most: 1.4
-			},
-			widescreen: {
-				if: {
-					$divide: [
-						{$max: [=device.height, =device.width] },
-						{$min: [=device.height, =device.width] }
-					]
-				},
-				at-least: 1.4
-			},
-
 			scale: {
 				dpi: { $divide: [=device.dpi, 132] },
 				text: { if-all: [

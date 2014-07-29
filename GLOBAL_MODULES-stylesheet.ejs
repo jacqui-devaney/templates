@@ -102,7 +102,6 @@
 		line-height:{$multiply:{if: =options.large_body, then:26, else:20}},
 		text-overflow: =text.overflow,
         text-align: { if: =options.justify, then:=justify, else:left},
-		text-scale: {if: =widescreen, then: {$multiply: [=scale.text, 1.2] }, else: inherit},
 		hyphens:auto,
 		color:{if: =options.white_text, then:#fff, else:#222221}
 

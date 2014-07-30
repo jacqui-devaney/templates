@@ -42,23 +42,6 @@
 						{if: =device.size, less-than: 8.8, then: true, else: false},
 						{if: =issue.edition, equals: "germany", then: true, else: false}
 					], then: left, else: justify },
-			extents: {
-							if-any: [
-								{if: =device.size, less-than: 8.8, then: true, else: false},
-								{if: =issue.type, equals: "NOW", then: true, else: false}
-							],
-							 then: {
-								comment: "divide the headline em width by view em width,",
-								comment: "where on average, each character takes up 0.5 em.",
-								comment: "and the view em width is the view pixel width divided by headline pixel height.",
-								comment: "the magic numbers here are half the font size.",
-								huge :  {$divide:[{$multiply:[{$count:[=article.headline]}, 34]}, =view.width]},
-								big :   {$divide:[{$multiply:[{$count:[=article.headline]}, 26]}, =view.width]},
-								large:  {$divide:[{$multiply:[{$count:[=article.headline]}, 18]}, =view.width]},
-								medium:  {$divide:[{$multiply:[{$count:[=article.headline]}, 15]}, =view.width]},
-								deco:  {$divide:[{$multiply:[{$count:[=article.headline]}, 11]}, =view.width]}
-							}
-						},
 
 			media: {
 				width: {if: =page.hasmedia, then: =article.media[page.number].width, else:0} ,

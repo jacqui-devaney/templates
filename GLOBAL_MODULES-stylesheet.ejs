@@ -5,90 +5,55 @@
 	.module_headline: {
 		$join: [
 			{
-				font-name: "DJ5EscrowCond-Bold",
+				font-name: {
+					$switch: [
+						{if: =issue.type, equals: "NOW", then: "DJ5Exchange-Semibold"},
+						{if: =options.small_headline, then: "DJ5EscrowCond-Semibold"},
+						{if: =options.smedium_headline, then: "DJ5EscrowCond-Semibold"},
+						{if: =options.medium_headline, then: "DJ5EscrowCond-Semibold"},
+						{if: =options.very_large_caps_headline, then: "DJ5Escrow-Roman"},
+						"DJ5EscrowCond-Semibold"
+					]
+				}
+			},
+			{
 				text-scale: {if: =scale.small, then: {$multiply: [=scale.text, 0.9] }, else: inherit},
 				color:{if: =options.white_text, then:#fff, else:#000}
-
 			},
 			{
 				$switch:[
 					{if: =options.small_headline, then:{
 						padding:[0, 0, 2, 0],
 						font-size: 16,
-						font-name: DJ5EscrowCond-Semibold,
 						line-height: 21
-						}
-					},
+					}},
 					{if: =options.smedium_headline, then:{
 						padding:[0, 0, 2, 0],
 						font-size: 20,
-						font-name: DJ5EscrowCond-Semibold,
 						line-height: 24
-						}
-					},
+					}},
 					{if: =options.medium_headline, then:{
-							font-name: DJ5EscrowCond-Semibold,
-							font-size:{if-all: [
-						        =scale.headlines,
-						        {if: =extents.medium, more-than: 1.0, then: true, else: false},
-						        {if: =extents.medium, less-than: 1.5, then: true, else: false}
-						    ], then: 19, else: 24 },
-							padding:[0, 0, 7, 0],
-							line-height:{ $switch: [
-									{if-all: [
-									    =scale.headlines,
-									    {if: =extents.medium, more-than: 1.0, then: true, else: false},
-									    {if: =extents.medium, less-than: 1.5, then: true, else: false}
-									], then: 26, else: 26 },
-									"26"
-
-								]
-							}
-						}
-					},
+						padding:[0, 0, 7, 0],
+						font-size: 24,
+						line-height: 26
+					}},
 					{if: =options.large_headline, then: {
-							font-size:{if-all: [
-						        =scale.headlines,
-						        {if: =extents.large, more-than: 1.0, then: true, else: false},
-						        {if: =extents.large, less-than: 1.5, then: true, else: false}
-						    ], then: 32, else: 36 },
-							padding:[0, 0, 4, 0],
-							line-height: {if-all: [
-							    =scale.headlines,
-							    {if: =extents.large, more-than: 1.0, then: true, else: false},
-							    {if: =extents.large, less-than: 1.5, then: true, else: false}
-							], then: 34, else: 39 }
-						}
-					},
+						padding:[0, 0, 4, 0],
+						font-size: 36,
+						line-height: 39
+					}},
 					{if: =options.very_large_caps_headline, then: {
-							font-size:{if-all: [
-						        =scale.headlines,
-						        {if: =extents.large, more-than: 1.0, then: true, else: false},
-						        {if: =extents.large, less-than: 1.5, then: true, else: false}
-						    ], then: 32, else: 56 },
-							padding:[0, 0, 20, 0],
-							line-height: {if-all: [
-							    =scale.headlines,
-							    {if: =extents.large, more-than: 1.0, then: true, else: false},
-							    {if: =extents.large, less-than: 1.5, then: true, else: false}
-							], then: 34, else: 60 },
-							text-transform:uppercase,
-							font-name:DJ5Escrow-Roman
-						}
-					},
+						padding:[0, 0, 20, 0],
+						font-size: 56,
+						line-height: 60,
+						text-transform:uppercase
+					}},
 					{if: true, then: {
-							font-name: DJ5EscrowCond-Semibold,
-							padding:[0, 0, 20, 0],
-							font-size:19,
-							line-height: 23
-						}
-					}
-
+						padding:[0, 0, 20, 0],
+						font-size:19,
+						line-height: 23
+					}}
 				]
-
-			},
-			{
-				font-name: { if: =issue.type, equals: "NOW", then: "DJ5Exchange-Semibold" }
 			}
 		]
 	},

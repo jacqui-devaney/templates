@@ -173,30 +173,6 @@
 	#media: {
 		display: {if: =page.hasmedia, then:inherit, else:none}
 	},
-	#pagenext: {
-		display: none
-	},
-	#pageback: {
-		display: none
-	},
-	#pagedown: {
-		right: 0,
-		bottom: 0,
-		width: 320,
-		height:150,
-		position:absolute,
-		display:{ if: =app.version, at-least: 5.4, then: none, else: inherit }
-	},
-	#pageup: {
-		top: 0,
-		left: 0,
-		height:150,
-		width: 320,
-		position:absolute,
-		display:{ if: =app.version, at-least: 5.4, then: none, else: inherit }
-
-	},
-
 	.opinion_headline: {
 		font-size:18,
 		text-scale: {$multiply: [=scale.text, 1] },

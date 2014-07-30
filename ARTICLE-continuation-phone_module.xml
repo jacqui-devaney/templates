@@ -15,10 +15,6 @@
 		}}
 		]
     }</style>
-	<box id="pagenext" embed="pagenext" />
-	<box id="pageback" embed="pageback" />
-	<box id="pagedown" embed="pagenext" />
-	<box id="pageup" embed="pageback" />
 
 	<panel id="body_container">
     	<panel class="article_body" id="body_continuation" embed="body" />

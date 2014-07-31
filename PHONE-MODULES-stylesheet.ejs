@@ -23,7 +23,6 @@
 					{if: =options.small_headline, then: {
 						font-name: "DJ5Exchange-Semibold",
 						font-size: 18,
-						text-scale: {$multiply: [=scale.text, 1] },
 						line-height: 25
 					}},
 					{
@@ -38,14 +37,11 @@
 		text-indent:0,
 		font-size:16,
 		line-height:24,
-		text-scale: {$multiply: [=scale.text, 1] },
 		color:{if: =article.read, then: #b8b8ba}
-
 	},
 	.ahed_headline:{
 		font-size:20,
 		line-height:20,
-		text-scale: {$multiply: [=scale.text, 1] },
 		padding:[0, 0, 0, 0],
 		text-overflow: =text.overflow,
 		font-name:DJ5EscrowCond-Bold,
@@ -61,7 +57,6 @@
 	},
 
 	#deco_headline: {
-		text-scale: {$multiply: [=scale.text, 1] },
 		font-size:18,
 		line-height:18
 	},
@@ -88,7 +83,6 @@
 	},
 	.strap: {
 		font-size:15,
-		text-scale: {$multiply: [=scale.text, 1] },
 		line-height:16,
 		text-transform:uppercase
 	},
@@ -99,14 +93,12 @@
 	},
 	.highlight_headline: {
 		font-size:16,
-		text-scale: {$multiply: [=scale.text, 1] },
 		line-height:16,
 		padding:[0],
 		text-overflow: =text.overflow
 	},
 	.highlight_large_headline: {
 		font-size:16,
-		text-scale: {$multiply: [=scale.text, 1] },
 		line-height:16,
 		padding:[0],
 		text-overflow: =text.overflow
@@ -175,7 +167,6 @@
 	},
 	.opinion_headline: {
 		font-size:18,
-		text-scale: {$multiply: [=scale.text, 1] },
 		line-height:25,
 		font-name:DJ5EscrowCond-Bold,
 		text-align:left
@@ -184,16 +175,7 @@
 		font-size:14,
 		line-height:17,
 		text-align:left,
-		text-scale: {$multiply: [=scale.text, 1] },
 		text-overflow: =text.overflow
-	},
-	.cio_head: {
-		color:#000,
-		font-name:DJ5RetinaCd-Medium,
-		text-transform:uppercase,
-		text-align:left,
-		font-size:18,
-		text-scale: {$multiply: [=scale.text, 1] }
 	},
 	.tech_section: {
 		font-size:22,
@@ -202,16 +184,11 @@
 	.tagline: {
 		font-size:11
 	},
-	.cio_highlight_headline: {
-		text-overflow: =text.overflow
-	},
 	#extra_small_headline: {
 		font-size:20,
 		line-height:20,
-		padding:[2, 0, 0, 0],
-		text-scale: {$multiply: [=scale.text, 1] }
+		padding:[2, 0, 0, 0]
 	},
-
 	.large_dek: {
 		font-name:DJ5Exchange-Medium,
 		text-indent:0,
@@ -219,7 +196,6 @@
 		line-height:20,
 		text-overflow: =text.overflow,
         text-align: left,
-		text-scale: {$multiply: [=scale.text, 1] },
 		color:#000
 	},
 	.vertical_center: {

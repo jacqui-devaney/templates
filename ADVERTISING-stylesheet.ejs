@@ -16,13 +16,8 @@
 		pixels-per-point-y: 1,
 		anchor-x:center,
 		anchor-y:middle,
-		width:{$switch: [
-					{if: =scale.phone, then:320},
-					{if-all: [=scale.large, =portrait], then:768},
-					"1024"
-		]},
+		width: =view.width,
 		height: {if: =scale.phone, then:50, else:90}
-
 	},
 	#article_advertisement: {
 		anchor-y:middle,

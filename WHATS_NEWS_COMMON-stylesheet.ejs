@@ -6,22 +6,16 @@
 		pixels-per-point-y: 1,
 		min-height: 0,
 		max-height: 10000,
-		background-color: { if: =app.idiom, equals: "phone", then: #fff, else: #e8e0ca },
+		background-color: #e8e0ca,
 		padding:[0, 9]
 	},
 	.header: {
-		if-any: [
-			{ if: =app.idiom, equals: "phone" }
-		], then: {
-			display: none
-		}, else: {
-			font-size: 18,
-			font-name: "DJ5EscrowComp-SemiboldItalic",
-			text-align: center,
-			padding: [2, 0, 3, 0],
-			border-width:[0, 0, 1, 0],
-			border-color:#9a9487
-		}
+		font-size: 18,
+		font-name: "DJ5EscrowComp-SemiboldItalic",
+		text-align: center,
+		padding: [2, 0, 3, 0],
+		border-width:[0, 0, 1, 0],
+		border-color:#9a9487
 	},
 	strong: {
 		font-name: "DJ5Exchange-Bold"

@@ -42,10 +42,6 @@
 			]},
 			{
 				#body: {
-		            column-count: {
-						if: =options.one_column, then:1, else:{$divide: [=view.width, {$multiply:[300, =scale.dpi]}]}
-					},
-		            column-gutter: 20,
 					display: {if: =options.hide_body, then:none, else:inherit}
 		        },
 		        #deco_container: {

@@ -25,10 +25,7 @@
 			},
 
 
-			justify: { if-any: [
-						{if: =device.size, less-than: 8.8, then: true, else: false},
-						{if: =issue.edition, equals: "germany", then: true, else: false}
-					], then: left, else: justify },
+			justify: "left",
 
 			media: {
 				width: {if: =page.hasmedia, then: =article.media[page.number].width, else:0} ,

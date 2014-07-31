@@ -27,8 +27,6 @@
 				phone: { if: =app.idiom, equals: "phone", then:true, else:false },
 				tablet: { if: =app.idiom, equals: "tablet" },
 
-				small: { if: =device.size, less-than: 8.8 },
-				large: { if: =device.size, more-than: 8.8 },
 				headlines: { if-any: [
 							{if: =device.size, less-than: 8.8, then: true, else: false},
 							{if: =issue.type, equals: "NOW", then: true, else: false}

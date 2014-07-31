@@ -6,7 +6,6 @@
 			landscape: { if: =view.width, more-than: =view.height },
 
 			scale: {
-				dpi: { $divide: [=device.dpi, 132] },
 				text: { if-all: [
 					{ if: =device.platform, equals: Android, then: true, else: false },
 					{ if: =device.dpi, at-least: 170, then: true, else: false }

@@ -23,8 +23,16 @@
 					}, else: 1}
 				},
 
-				phone: { if: =app.idiom, equals: "phone", then:true, else:false },
-				tablet: { if: =app.idiom, equals: "tablet" }
+				phone: { if-any: [=display.width.compact, =display.width.regular], then: =display.width.compact, else:
+					{ if: =app.idiom, equals: "phone", then: true, else: false }
+				},
+
+				tablet: { if-any: [=display.width.compact, =display.width.regular], then: =display.width.regular, else:
+					{ if: =app.idiom, equals: "tablet", then: true, else: false }
+				},
+
+				old_phone: { if: =app.idiom, equals: "phone", then:true, else:false },
+				old_tablet: { if: =app.idiom, equals: "tablet" }
 			},
 
 
@@ -35,7 +43,7 @@
 				height: {if: =page.hasmedia, then: =article.media[page.number].height, else:0} ,
 				aspect: {if: =page.hasmedia, then: {$divide:[=article.media[page.number].width, =article.media[page.number].height]}, else:0}
 			},
-			
+
 			text: {
 				indent: 14,
 				overflow: "..."

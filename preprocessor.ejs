@@ -7,9 +7,6 @@
 
 			scale: {
 				width: {
-					compact: { if: =view.width, at-most: 320 },
-					regular: { if: =view.width, greater-than: 320 },
-
 					stretch: { if: =view.width, more-than: 480, then: {
 						if: =view.width,
 						less-than: =view.height,
@@ -18,9 +15,6 @@
 					}, else: 1}
 				},
 				height: {
-					compact: { if: =view.height, at-most: 568 },
-					regular: { if: =view.height, greater-than: 568 },
-
 					stretch: { if: =view.width, more-than: 480, then: {
 						if: =view.width,
 						less-than: =view.height,
@@ -28,9 +22,6 @@
 						else: { $divide: [=view.height, 768] }
 					}, else: 1}
 				},
-
-
-				
 
 				phone: { if: =app.idiom, equals: "phone", then:true, else:false },
 				tablet: { if: =app.idiom, equals: "tablet" }
@@ -44,7 +35,7 @@
 				height: {if: =page.hasmedia, then: =article.media[page.number].height, else:0} ,
 				aspect: {if: =page.hasmedia, then: {$divide:[=article.media[page.number].width, =article.media[page.number].height]}, else:0}
 			},
-
+			
 			text: {
 				indent: 14,
 				overflow: "..."
@@ -58,16 +49,9 @@
 			},
 
 			size: {
-				if: =app.idiom,
-				equals: "phone",
-				then: {
-					continuation_height_normal: 62,
-					continuation_height_large: 160,
-					continuation_height_strap: 176
-				},
-				else: {
-
-				}
+				continuation_height_normal: 62,
+				continuation_height_large: 160,
+				continuation_height_strap: 176
 			},
 
 			ad: {

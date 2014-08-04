@@ -78,7 +78,7 @@
     </box>
     
     <panel>
-        <p class="ahed_headline"><span embed="headline"/></p>
+        <p id="headline" class="ahed_headline"><mark class="m_headline" /></p>
         <p><mark id="stars"/></p>
         <p class="ahed_subhed" embed="subhed"/>
         <panel class="body" embed="body"/>

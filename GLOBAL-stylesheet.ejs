@@ -1,8 +1,8 @@
 {
 	jpml: {
-		image-scale: { if: =intent.template, then: {$max:[=scale.width.stretch,=scale.height.stretch]}, else: 1 },
-		pixels-per-point-x: { if: =intent.template, then: =scale.width.stretch, else: 1 },
-		pixels-per-point-y: { if: =intent.template, then: =scale.height.stretch, else: 1 },
+		image-scale: { if: =intent.template, then: {$max:[=scale.width,=scale.height]}, else: 1 },
+		pixels-per-point-x: { if: =intent.template, then: =scale.width, else: 1 },
+		pixels-per-point-y: { if: =intent.template, then: =scale.height, else: 1 },
 
 		min-height: {if-all: [=intent.template, =intent.section, =scale.phone], then: 0},
 		max-height: {if-all: [=intent.template, =intent.section, =scale.phone], then: 10000}

@@ -362,7 +362,7 @@
 			}},
 			{if: =page.section, equals: "LIFESTYLE", then: {
 				.lifestyle-link: {
-					color: #004990,
+					color: #0037A2,
 					border-width:[0, 0, 3, 0],
 					border-color:#0037A2
 				}

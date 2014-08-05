@@ -67,17 +67,16 @@
 			}},
 			{if: =portrait, then: {
 				#b1:	{
-						top:0,
-						height:582
+					top:0,
+					height:582
 				},
 				#b2:	{
 					top:586,
-					height:219,
-					background-color:blue
+					height:219
 				},
 				#b3:	{
-						top:0,
-						height:188
+					top:0,
+					height:188
 				},
 				#b4:	{
 					top:187,
@@ -92,10 +91,7 @@
 				#b6:	{
 					top:586,
 					height:219
-
 				}
-
-
 			}},
 			{if: =landscape, then: {
 				#b1:	{

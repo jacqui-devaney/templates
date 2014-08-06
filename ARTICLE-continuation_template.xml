@@ -2,6 +2,13 @@
 	<style src="GLOBAL-stylesheet.ejs"/>
 	<style src="GRID-stylesheet.ejs"/>
     <style>{
+        #page_details: {
+            options: {
+                tintTitle: true
+            }
+        }
+    }</style>
+    <style>{
         if: =portrait, then: {
             #view: {
                 top:5,
@@ -24,5 +31,6 @@
 			}
 		}
 	}</style>
+    <box id="page_details" embed="pagedescription" />
     <box id="view" embed="article" class="column16-12 positionx1" module="ARTICLE-continuation_module.xml" />
 </jpml>

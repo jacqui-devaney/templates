@@ -18,45 +18,59 @@
 				options: { match: { prefer: aspect-ratio } }
 			},
 			#deco_caption_container: {
-				top:128,
 				background-color:"rgba(0, 0, 0, .6)",
 				padding:[20, 14],
-				width:372,
-				left:68,
-				display: {if: =options.show_caption_container, then: inherit, else: none}
+				width:372
 			},
 			.module_headline: {
 				padding:[0, 0, 4, 0]
 			},
-			.body: {
+			.escrow_body: {
 				padding:[18, 0, 0, 0]
-
 			},
 			#border: {
 				background-color:#fff,
 				height:1,
 				width:238
-			},
-			#gradient: {
-				background-image:url(black_gradient.png),
-				top:0,
-				height:200,
-				width:1024
 			}
+	}</style>
+	<!-- If the caption container isn't visible, still display it, transparently, so accessibility works -->
+	<style>{
+		if: =options.show_caption_container, then: {
+			#deco_caption_container: {
+				left: 68,
+				top: 128
+			}
+		}, else: {
+			#deco_caption_container: {
+				background-color: transparent,
+				left: 0,
+				top: 0
+			},
+			#border: {
+				background-color: transparent
+			},
+			.module_headline: {
+				color: transparent
+			},
+			.key: {
+				color: transparent
+			},
+			.escrow_body: {
+				color: transparent
+			}
+		}
 	}</style>
 			<box id="deco_container" embed="deco-image">
 				<image embed="summary-image" />
-				<box id="gradient" />
 				<box id="deco_caption_container">
-					<panel class="headline">
-						<p class="module_headline "><mark class="m_headline" /><mark class="key" /></p>
+					<panel id="headline">
+						<p class="module_headline"><mark class="m_headline" /><mark class="key" /></p>
 					</panel>
 					<panel class="border">
 						<box id="border" />
 					</panel>
-					<panel class="body">
-						<p class="escrow_body" embed="subhed" />
-					</panel>
+					<p class="escrow_body" embed="subhed" />
 				</box>
 			</box>
 

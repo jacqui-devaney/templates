@@ -17,7 +17,7 @@
 		#b2: {
 			options:{top_border:true}
 		},
-		#deco: {options: {show_byline:true, show_flashline:true}},
+		#deco: {options: {medium_headline:true, show_byline:true, show_flashline:true}},
 		#b3: {options: {medium_headline:true, show_byline:true, show_flashline:true, top_border:{if: =landscape, then:true}}},
 		#b4: {options: {medium_headline:true, show_byline:true, show_flashline:true, top_border:true}},
 		#b5: {options: {medium_headline:true, show_byline:true, show_flashline:true, top_border:true}},

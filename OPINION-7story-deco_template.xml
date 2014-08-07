@@ -22,7 +22,7 @@
 		},
 
 
-		#deco: {options: {show_byline:true, show_flashline:true}},
+		#deco: {options: {medium_headline:true, show_byline:true, show_flashline:true}},
 		#b4: {options: {medium_headline:true, show_byline:true, show_flashline:true, top_border:{if: =landscape, then:true}}},
 		#b5: {options: {medium_headline:true, show_byline:true, show_flashline:true, top_border:true}},
 		#b6: {options: {medium_headline:true, show_byline:true, show_flashline:true, top_border:true}},

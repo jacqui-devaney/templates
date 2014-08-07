@@ -346,6 +346,13 @@
 					border-color:#0037A2
 				}
 			}},
+			{if: =page.section, equals: "FRONT_SECTION", then: {
+				.front-section-link: {
+					color: #004990,
+					border-width:[0, 0, 3, 0],
+					border-color:#0037A2
+				}
+			}},
 			{if: =page.section, equals: "BUSINESS_AND_MARKETS", then: {
 				.business-and-markets-link: {
 					color: #004990,
@@ -414,7 +421,7 @@
 				<a class="tabbar-link life-and-style-link" href="/LIFE_AND_STYLE">LIFE &amp; STYLE</a>
 			</p>
 			<p id="tabbar-japan" class="tabbar-p">
-				<a class="tabbar-link top-news-link" href="/FRONT_SECTION">TOP STORIES</a><mark class="space"/>
+				<a class="tabbar-link front-section-link" href="/FRONT_SECTION">TOP STORIES</a><mark class="space"/>
 				<a class="tabbar-link business-and-markets-link" href="/BUSINESS_AND_MARKETS">BUSINESS &amp; MARKETS</a><mark class="space"/>
 				<a class="tabbar-link japan-and-world-link" href="/JAPAN_AND_WORLD">JAPAN &amp; WORLD</a><mark class="space"/>
 				<a class="tabbar-link lifestyle-link" href="/LIFESTYLE">LIFESTYLE</a>

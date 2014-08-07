@@ -21,22 +21,22 @@
 		}},
 		#b2: {
 			options:{$switch:[
-				{if: =portrait, then: {medium_headline:true, show_body:true, top_border:true}},
-				{if: =landscape, then: {medium_headline:true, bottom_border:true, show_body:true}}
+				{if: =portrait, then: {medium_headline:true, show_body:true, top_border:true, show_flashline:true}},
+				{if: =landscape, then: {medium_headline:true, bottom_border:true, show_body:true, show_flashline:true}}
 			]
 		}},
 		#b3: {
 			options:{$switch:[
 				{if: =scale.phone, then: {medium_headline:true}},
-				{if: =portrait, then: {medium_headline:true}},
-				{if: =landscape, then: {medium_headline:true, top_border:false}}
+				{if: =portrait, then: {medium_headline:true, show_flashline:true}},
+				{if: =landscape, then: {medium_headline:true, top_border:false, show_flashline:true}}
 			]
 		}},
 		#b4: {
 			options:{$switch:[
 				{if: =scale.phone, then: {medium_headline:true}},
-				{if: =portrait, then: {medium_headline:true, top_border:true}},
-				{if: =landscape, then: {medium_headline:true, top_border:true}}
+				{if: =portrait, then: {medium_headline:true, top_border:true, show_flashline:true}},
+				{if: =landscape, then: {medium_headline:true, top_border:true, show_flashline:true}}
 			]
 		}},
 		#b5: {

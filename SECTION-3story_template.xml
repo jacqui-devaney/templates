@@ -28,7 +28,7 @@
 		#b2: {
 			options:{$switch:[
 				{if: =scale.phone, then: {medium_headline:true}},
-				{if: =portrait, then: {medium_headline:true, show_body:true, how_flashline:true, small_image:true}},
+				{if: =portrait, then: {medium_headline:true, show_body:true, show_flashline:true, small_image:true}},
 				{if: =landscape, then: {medium_headline:true, show_body:true, show_flashline:true, small_image:true}}
 			]
 		}}

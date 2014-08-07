@@ -9,16 +9,9 @@
         }
     }</style>
     <style>{
-        if: =portrait, then: {
-            #view: {
-                top:5,
-                height:910
-             }
-        }, else: {
-            #view : {
-                top:5,
-                height:654
-            }
+        #view: {
+            top:0,
+            bottom:44
         }
     }</style>
 	<style>{

@@ -346,6 +346,13 @@
 					border-color:#0037A2
 				}
 			}},
+			{if: =page.section, equals: "FRONT_SECTION", then: {
+				.front-section-link: {
+					color: #004990,
+					border-width:[0, 0, 3, 0],
+					border-color:#0037A2
+				}
+			}},
 			{if: =page.section, equals: "BUSINESS_AND_MARKETS", then: {
 				.business-and-markets-link: {
 					color: #004990,
@@ -400,10 +407,10 @@
 				<a class="tabbar-link life-and-culture-link" href="/LIFE_AND_CULTURE">LIFE &amp; CULTURE</a>
 			</p>
 			<p id="tabbar-europe" class="tabbar-p">
-				<a class="tabbar-link top-news-link" href="/TOP_NEWS">TOP STORIES</a><mark class="space"/>
+				<a class="tabbar-link front-section-link" href="/FRONT_SECTION">TOP STORIES</a><mark class="space"/>
 				<a class="tabbar-link europe-link" href="/EUROPE">EUROPE</a><mark class="space"/>
 				<a class="tabbar-link opinion-link" href="/OPINION">OPINION</a><mark class="space"/>
-				<a class="tabbar-link business-and-finance-link" href="/BUSINESS">BUSINESS &amp; FINANCE</a><mark class="space"/>
+				<a class="tabbar-link business-and-finance-link" href="/BUSINESS_AND_FINANCE">BUSINESS &amp; FINANCE</a><mark class="space"/>
 				<a class="tabbar-link life-and-style-link" href="/LIFE_AND_STYLE">LIFE &amp; STYLE</a>
 			</p>
 			<p id="tabbar-asia" class="tabbar-p">
@@ -414,8 +421,8 @@
 				<a class="tabbar-link life-and-style-link" href="/LIFE_AND_STYLE">LIFE &amp; STYLE</a>
 			</p>
 			<p id="tabbar-japan" class="tabbar-p">
-				<a class="tabbar-link top-news-link" href="/TOP_NEWS">TOP STORIES</a><mark class="space"/>
-				<a class="tabbar-link business-and-markets-link" href="/TEST_NEWS/BUSINESS_AND_MARKETS">BUSINESS &amp; MARKETS</a><mark class="space"/>
+				<a class="tabbar-link front-section-link" href="/FRONT_SECTION">TOP STORIES</a><mark class="space"/>
+				<a class="tabbar-link business-and-markets-link" href="/BUSINESS_AND_MARKETS">BUSINESS &amp; MARKETS</a><mark class="space"/>
 				<a class="tabbar-link japan-and-world-link" href="/JAPAN_AND_WORLD">JAPAN &amp; WORLD</a><mark class="space"/>
 				<a class="tabbar-link lifestyle-link" href="/LIFESTYLE">LIFESTYLE</a>
 			</p>

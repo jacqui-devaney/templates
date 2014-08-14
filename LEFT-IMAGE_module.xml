@@ -58,8 +58,7 @@
 						{if: =options.squarish_image, then:{
 							anchor-x:left,
 							anchor-y:top,
-							width: 184,
-							padding: [0, 0, 10, 0]
+							width: 184
 						}},
 						{if: true, then: {
 							anchor-x:left,
@@ -93,7 +92,7 @@
 						{if: =options.tall_image, then:=view.width},
 						236
 					]},
-					image-scale: 0
+					image-scale: 1
 	            },
 
 				.byline: {
@@ -152,7 +151,7 @@
 		</box>
 		<panel id="headline">
 			<p class="module_flashline" id="top_flashline"><span embed="flashline" /></p>
-			<p class="module_headline"><mark class="m_headline" /></p>
+			<p id="headline" class="module_headline"><mark class="m_headline" /></p>
             <p class="byline" embed="byline"/>
             <panel class="body" embed="body"/>
         </panel>

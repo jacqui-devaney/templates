@@ -16,7 +16,7 @@
 			{
 				padding: [0, 0, 8, 0],
 				font-name: "DJ5Exchange-Semibold",
-				color:{if: =article.read, then: #b8b8ba}
+				color:{if: =article.read, then: color.articleReadColor}
 			},
 			{
 				$switch: [
@@ -37,7 +37,7 @@
 		text-indent:0,
 		font-size:16,
 		line-height:24,
-		color:{if: =article.read, then: #b8b8ba}
+		color:{if: =article.read, then: color.articleReadColor}
 	},
 	.ahed_headline:{
 		font-size:20,

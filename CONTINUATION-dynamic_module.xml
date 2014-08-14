@@ -71,7 +71,7 @@
     	if: =scale.phone, then: {
 			.module_headline: {
 				padding: { if: =options.show_body, else: [4, 0, 0, 0] },
-				color:{if: =article.read, then: #b8b8ba}
+				color:{if: =article.read, then: color.articleReadColor}
 			}
     	}, else: {
     		#strap: {

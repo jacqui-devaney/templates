@@ -37,7 +37,8 @@
 			media: {
 				width: {if: =page.hasmedia, then: =article.media[page.number].width, else:0} ,
 				height: {if: =page.hasmedia, then: =article.media[page.number].height, else:0} ,
-				aspect: {if: =page.hasmedia, then: {$divide:[=article.media[page.number].width, =article.media[page.number].height]}, else:0}
+				aspect: {if: =page.hasmedia, then: {$divide:[=article.media[page.number].width, =article.media[page.number].height]}, else:0},
+				caption: {if: =page.hasmedia, then: =article.media[page.number].caption, else:""}
 			},
 
 			text: {

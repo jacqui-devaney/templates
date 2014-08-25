@@ -1,6 +1,13 @@
 <jpml id="ARTICLE-front-narrow_template">
 	<style src="GLOBAL-stylesheet.ejs"/>
     <style src="GRID-stylesheet.ejs"/>
+    <style>{
+        #page_details: {
+            options: {
+                tintTitle: {if: =page.section, equals: FRONT_SECTION, then: false, else: true}
+            }
+        }
+    }</style>
 	<style>{
 		if: =portrait, then: {
 			#view: { 
@@ -20,5 +27,6 @@
 			}       
         }
     }</style>
+    <box id="page_details" embed="pagedescription" />
     <box id="view" embed="article" class="column16-12 positionx1" module="ARTICLE-front-narrow_module.xml" />
 </jpml>

@@ -2,7 +2,12 @@
 	<style src="GLOBAL-stylesheet.ejs" />
 	<style src="GLOBAL_MODULES-stylesheet.ejs" />
 	<style src="PHONE-MODULES-stylesheet.ejs" />
+
 	<style>{
+		jpml: {
+			background-color: =options.background_color,
+			border-color: #d8d8d8
+		},
 		#page_details: {
 			options: {
 				tintTitle: true
@@ -15,18 +20,20 @@
 			then: {
 			},
 			else: {
-				padding: [0, 8]
+				padding: {if: =scale.phone, then: [0, 8]}
 			}
 		},
 		#content: {
 			if: =options.show_strap,
 			then: {
-				padding: [16, 8, 0, 8]
+				padding: {if: =scale.phone, then: [16, 8, 0, 8]}
 			},
 			else: {
-				padding: [{if: =options.show_body, then: 16.5, else: 0.5}, 0, 0, 0],
-				border-width: [0.5, 0, 0, 0],
-				border-color: #d8d8d8
+				if: =options.hide_border, else: {
+					padding: [{if: =options.show_body, then: 9.5, else: 0.5}, 0, 0, 0],
+					border-width: [0.5, 0, 0, 0],
+					border-color: #d8d8d8
+				}
 			}
 		},
 		#vertical: {
@@ -35,14 +42,6 @@
 			},
 			else: {
 				vertical-align: middle
-			}
-		},
-		.continuation_headline: {
-			if: =options.show_body,
-			then: {
-			},
-			else: {
-				padding: [8, 0, 0, 0]
 			}
 		},
 		#image_container: {
@@ -68,6 +67,21 @@
 		.green: { background-color: green},
 		.blue: { background-color: blue}
     }</style>
+    <style>{
+    	if: =scale.phone, then: {
+			.module_headline: {
+				padding: { if: =options.show_body, else: [4, 0, 0, 0] },
+				color:{if: =article.read, then: color.articleReadColor}
+			}
+    	}, else: {
+    		#strap: {
+    			display: none
+    		},
+    		#image_container: {
+    			display: none
+    		}
+    	}
+    }</style>
 	<box id="page_details" embed="pagedescription" />
 	<panel id="strap">
 		<p class="subsection"><mark id="m_subsection"/></p>
@@ -77,10 +91,10 @@
 			<image embed="summary-image" target-width="76" target-height="76" />
 		</box>
 		<panel id="vertical">
-			<p class="continuation_headline"><mark class="m_headline" /><mark class="key" /></p>
+			<p id="headline" class="module_headline"><mark class="m_headline" /><mark class="key" /></p>
 		</panel>
         <panel class="body">
-        	<p><mark class="body-first-p-mark" /><mark class="module_summary" /></p>
+        	<p id="body-first-p"><mark class="body-first-p-mark" /><mark class="module_summary" /></p>
         </panel>
 	</panel>
 </jpml>

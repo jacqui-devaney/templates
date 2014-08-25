@@ -1,0 +1,441 @@
+<jpml id="SECTION-9story_template">
+	<style src="GLOBAL-stylesheet.ejs"/>
+	<style src="GRID-stylesheet.ejs"/>
+	<style src="ADVERTISING-stylesheet.ejs"/>
+	<style src="PHONE-stylesheet.ejs"/>
+	<style>{
+		#page_details: {
+			options: {
+				tintTitle: true
+			}
+		}
+	}</style>
+	<style>{
+		jpml: {
+			background-color: =color.tint
+		},
+    	#ad_placeholder: {
+    		display: none
+    	},
+    	#marketstrap: {
+    		display: none
+    	},
+		#tabbar-container: {
+			border-width:[0, 0, 1, 0],
+			border-color:#E1E1E1
+		},
+		.tabbar-p: {
+			font-name:DJ5Exchange-Bold,
+			color:#343434,
+			font-size:12,
+			line-height:12
+		},
+		.space: {
+			font-size: 6,
+			line-height:4,
+			color: transparent,
+			content: "unfortunate"
+
+		},
+		.center-me: {
+			text-align:center,
+			anchor-y: middle
+		},
+		a: {
+			padding: [3, 0]
+		},
+		#b1: {
+			options: {
+				medium_headline:true,
+				show_image:true,
+				background_color: =color.tint
+			}
+		},
+		#b2: {
+			options: {
+				show_body: true,
+				show_image: true,
+				smedium_headline: true,
+				background_color: =color.tint
+			}
+		},
+		#b3: {
+			options: {
+				show_body: true,
+				show_image: true,
+				smedium_headline: true,
+				background_color: =color.tint
+			}
+		},
+		#b4: {
+			options: {
+				hide_border: =portrait,
+				show_body: true,
+				small_headline: true,
+				background_color: =color.tint
+			}
+		},
+		#b5: {
+			options: {
+				show_body: true,
+				small_headline: true,
+				background_color: =color.tint
+			}
+		},
+		#b6: {
+			options: {
+				show_body: true,
+				small_headline: true,
+				background_color: =color.tint
+			}
+		},
+		#b7: {
+			options: {
+				show_body: true,
+				small_headline: true,
+				background_color: =color.tint
+			}
+		},
+		#b8: {
+			options: {
+				show_body: true,
+				small_headline: true,
+				background_color: =color.tint
+			}
+		},
+		#b9: {
+			options: {
+				show_body: true,
+				small_headline: true,
+				background_color: =color.tint
+			}
+		}
+	}</style>
+	<style> {
+		$switch: [
+			{if: =scale.phone, then: {
+				#page_details: {
+					display: none
+				},
+		    	#ad_placeholder: {
+					display: inherit,
+					frame: [0, 0, 10, 10]
+				},
+		    	#marketstrap: {
+		    		display: {if: =page.section, equals: "TOP_NEWS", else: none},
+		    		position: relative
+		    	},
+				#tabbar-container: {
+					display: none
+				},
+				#b1 : {
+					options: { show_body: true, medium_headline: true }
+				},
+				#b2 : {
+					height: =size.continuation_height_large,
+					options: { show_body: true, show_image: true, float_image: right, small_headline: true }
+				},
+				#b3 : {
+					height: =size.continuation_height_large,
+					options: { show_body: true, show_image: true, float_image: right, small_headline: true }
+				},
+				#b4 : {
+					bind: none,
+					height: =size.continuation_height_normal,
+					options: { show_body: false, small_headline: true }
+				},
+				#b5 : {
+					bind: none,
+					height: =size.continuation_height_normal,
+					options: { show_body: false, small_headline: true }
+				},
+				#b6 : {
+					bind: none,
+					height: =size.continuation_height_normal,
+					options: { show_body: false, small_headline: true }
+				},
+				#b7 : {
+					bind: none,
+					height: =size.continuation_height_normal,
+					options: { show_body: false, small_headline: true }
+				},
+				#b8 : {
+					bind: none,
+					height: =size.continuation_height_large,
+					options: { show_body: true, small_headline: true }
+				},
+				#b9 : {
+					bind: none,
+					height: =size.continuation_height_normal,
+					options: { show_body: false, small_headline: true }
+				}
+			}},
+			{if: =portrait, then: {
+
+				#tabbar-container:	{
+					top:-20,
+					height:30
+				},
+				#b1:	{
+					top:30,
+					height:530
+				},
+				#b2:	{
+					top:570,
+					height:340
+				},
+				#b3:{
+					top:570,
+					height:340
+				},
+				#b4:	{
+					top:30,
+					height:135
+				},
+				#b5:	{
+					top:175,
+					height:135
+				},
+				#b6:	{
+					top:320,
+					height:135
+				},
+				#b7:	{
+					top:465,
+					height:135
+				},
+				#b8:	{
+					top:610,
+					height:135
+				},
+				#b9:	{
+					top:755,
+					height:155
+				}
+			}},
+			{if: =landscape, then: {
+
+				#tabbar-container:	{
+					top:-20,
+					height:30
+				},
+				#b1:	{
+					top:30,
+					height:465
+				},
+				#b2:	{
+					top:30,
+					height:310
+				},
+				#b3:	{
+					top:30,
+					height:310
+				},
+				#b4:	{
+					top:505,
+					height:145
+				},
+				#b5:{
+					top:505,
+					height:145
+				},
+				#b6:	{
+					top:350,
+					height:145
+				},
+				#b7:	{
+					top:350,
+					height:145
+				},
+				#b8:	{
+					top:505,
+					height:145
+				},
+				#b9:	{
+					top:505,
+					height:145
+				}
+
+			}}
+		]
+	} </style>
+	<style>{
+
+		$switch: [
+			{if: =page.section, equals: "TOP_NEWS", then: {
+				.top-news-link: {
+					color: #004990,
+					border-width:[0, 0, 3, 0],
+					border-color:#0037A2
+				}
+			}},
+			{if: =page.section, equals: "WORLD", then: {
+				.world-link: {
+					color: #004990,
+					border-width:[0, 0, 3, 0],
+					border-color:#0037A2
+				}
+			}},
+			{if: =page.section, equals: "US", then: {
+				.us-link: {
+					color: #004990,
+					border-width:[0, 0, 3, 0],
+					border-color:#0037A2
+				}
+			}},
+			{if: =page.section, equals: "BUSINESS", then: {
+				.business-link: {
+					color: #004990,
+					border-width:[0, 0, 3, 0],
+					border-color:#0037A2
+				}
+			}},
+			{if: =page.section, equals: "TECH", then: {
+				.tech-link: {
+					color: #004990,
+					border-width:[0, 0, 3, 0],
+					border-color:#0037A2
+				}
+			}},
+			{if: =page.section, equals: "MARKETS", then: {
+				.markets-link: {
+					color: #004990,
+					border-width:[0, 0, 3, 0],
+					border-color:#0037A2
+				}
+			}},
+			{if: =page.section, equals: "OPINION", then: {
+				.opinion-link: {
+					color: #004990,
+					border-width:[0, 0, 3, 0],
+					border-color:#0037A2
+				}
+			}},
+			{if: =page.section, equals: "LIFE_AND_CULTURE", then: {
+				.life-and-culture-link: {
+					color: #004990,
+					border-width:[0, 0, 3, 0],
+					border-color:#0037A2
+				}
+			}},
+			{if: =page.section, equals: "EUROPE", then: {
+				.europe-link: {
+					color: #004990,
+					border-width:[0, 0, 3, 0],
+					border-color:#0037A2
+				}
+			}},
+			{if: =page.section, equals: "LIFE_AND_STYLE", then: {
+				.life-and-style-link: {
+					color: #004990,
+					border-width:[0, 0, 3, 0],
+					border-color:#0037A2
+				}
+			}},
+			{if: =page.section, equals: "ASIA", then: {
+				.asia-link: {
+					color: #004990,
+					border-width:[0, 0, 3, 0],
+					border-color:#0037A2
+				}
+			}},
+			{if: =page.section, equals: "BUSINESS_AND_FINANCE", then: {
+				.business-and-finance-link: {
+					color: #004990,
+					border-width:[0, 0, 3, 0],
+					border-color:#0037A2
+				}
+			}},
+			{if: =page.section, equals: "FRONT_SECTION", then: {
+				.front-section-link: {
+					color: #004990,
+					border-width:[0, 0, 3, 0],
+					border-color:#0037A2
+				}
+			}},
+			{if: =page.section, equals: "BUSINESS_AND_MARKETS", then: {
+				.business-and-markets-link: {
+					color: #004990,
+					border-width:[0, 0, 3, 0],
+					border-color:#0037A2
+				}
+			}},
+			{if: =page.section, equals: "JAPAN_AND_WORLD", then: {
+				.japan-and-world-link: {
+					color: #004990,
+					border-width:[0, 0, 3, 0],
+					border-color:#0037A2
+				}
+			}},
+			{if: =page.section, equals: "LIFESTYLE", then: {
+				.lifestyle-link: {
+					color: #0037A2,
+					border-width:[0, 0, 3, 0],
+					border-color:#0037A2
+				}
+			}}
+		]
+	}</style>
+	<style>{
+		#tabbar-us: {
+			display:{if: =issue.edition, equals: "us", then: inherit, else: none}
+		},
+		#tabbar-europe: {
+			display:{if: =issue.edition, equals: "europe", then: inherit, else: none}
+		},
+		#tabbar-asia: {
+			display:{if: =issue.edition, equals: "asia", then: inherit, else: none}
+		},
+		#tabbar-japan: {
+			display:{if: =issue.edition, equals: "japan", then: inherit, else: none}
+		}
+
+	}</style>
+	<box id="page_details" embed="pagedescription" />
+	<box id="ad_placeholder" class="ad-banner" embed="pagedescription" />
+	<box id="marketstrap" embed="marketstrap" />
+	<box id="tabbar-container" class="column16-12 positionx1" >
+		<box class="center-me">
+			<p id="tabbar-us" class="tabbar-p">
+				<a class="tabbar-link top-news-link" href="/TOP_NEWS">TOP STORIES</a><mark class="space"/>
+				<a class="tabbar-link world-link" href="/WORLD">WORLD</a><mark class="space"/>
+				<a class="tabbar-link us-link" href="/US">U.S.</a><mark class="space"/>
+				<a class="tabbar-link business-link" href="/BUSINESS">BUSINESS</a><mark class="space"/>
+				<a class="tabbar-link tech-link" href="/TECH">TECH</a><mark class="space"/>
+				<a class="tabbar-link markets-link" href="/MARKETS">MARKETS</a><mark class="space"/>
+				<a class="tabbar-link opinion-link" href="/OPINION">OPINION</a><mark class="space"/>
+				<a class="tabbar-link life-and-culture-link" href="/LIFE_AND_CULTURE">LIFE &amp; CULTURE</a>
+			</p>
+			<p id="tabbar-europe" class="tabbar-p">
+				<a class="tabbar-link front-section-link" href="/FRONT_SECTION">TOP STORIES</a><mark class="space"/>
+				<a class="tabbar-link europe-link" href="/EUROPE">EUROPE</a><mark class="space"/>
+				<a class="tabbar-link opinion-link" href="/OPINION">OPINION</a><mark class="space"/>
+				<a class="tabbar-link business-and-finance-link" href="/BUSINESS_AND_FINANCE">BUSINESS &amp; FINANCE</a><mark class="space"/>
+				<a class="tabbar-link life-and-style-link" href="/LIFE_AND_STYLE">LIFE &amp; STYLE</a>
+			</p>
+			<p id="tabbar-asia" class="tabbar-p">
+				<a class="tabbar-link top-news-link" href="/TOP_NEWS">TOP STORIES</a><mark class="space"/>
+				<a class="tabbar-link asia-link" href="/ASIA">ASIA</a><mark class="space"/>
+				<a class="tabbar-link opinion-link" href="/OPINION">OPINION</a><mark class="space"/>
+				<a class="tabbar-link business-and-finance-link" href="/BUSINESS_AND_FINANCE">BUSINESS &amp; FINANCE</a><mark class="space"/>
+				<a class="tabbar-link life-and-style-link" href="/LIFE_AND_STYLE">LIFE &amp; STYLE</a>
+			</p>
+			<p id="tabbar-japan" class="tabbar-p">
+				<a class="tabbar-link front-section-link" href="/FRONT_SECTION">TOP STORIES</a><mark class="space"/>
+				<a class="tabbar-link business-and-markets-link" href="/BUSINESS_AND_MARKETS">BUSINESS &amp; MARKETS</a><mark class="space"/>
+				<a class="tabbar-link japan-and-world-link" href="/JAPAN_AND_WORLD">JAPAN &amp; WORLD</a><mark class="space"/>
+				<a class="tabbar-link lifestyle-link" href="/LIFESTYLE">LIFESTYLE</a>
+			</p>
+		</box>
+	</box>
+	<box id="b1" embed="article" class="column8 positionx1 maude unit_386" module="TOP-IMAGE_module.xml" />
+	<box id="b2" embed="article" class="column4 positionx9-1  maude unit_166" module="TOP-IMAGE_module.xml" />
+	<box id="b3" embed="article" class="column4 positionx13-5 maude unit_166" module="TOP-IMAGE_module.xml" />
+	<box id="b4" embed="article" class="column4 positionx1-9  maude unit_50" module="CONTINUATION-dynamic_module.xml" />
+	<box id="b5" embed="article" class="column4 positionx5-9  maude unit_50" module="CONTINUATION-dynamic_module.xml" />
+	<box id="b6" embed="article" class="column4 positionx9    maude unit_50" module="CONTINUATION-dynamic_module.xml" />
+	<box id="b7" embed="article" class="column4 positionx13-9 maude unit_50" module="CONTINUATION-dynamic_module.xml" />
+	<box id="b8" embed="article" class="column4 positionx9    maude unit_50" module="CONTINUATION-dynamic_module.xml" />
+	<box id="b9" embed="article" class="column4 positionx13-9 maude unit_50" module="CONTINUATION-dynamic_module.xml" />
+
+</jpml>

@@ -36,16 +36,7 @@
 					{if: =media.width, less-than: 360, then: 236},
 					{if: =media.width, more-than: 484, then: 484},
 					236
-				]},
-				height: {$min: [{$max: [{$switch: [
-					{if: =media.width, less-than: 360, then: {$divide: [236, =media.aspect]}},
-					{if: =media.width, more-than: 484, then: {$divide: [484, =media.aspect]}},
-					{$divide: [236, =media.aspect]}
-				]}, {$multiply: [.25, =view.height]}]}, {$multiply: [.75, =view.height]}]},
-				options: {
-					id: =page.number
-				},
-				padding:[0, 0, {if: =page.hasmedia, then:30, else:0}, 0]
+				]}
 			}
         }, else: {
 			#media: {
@@ -55,16 +46,7 @@
 					{if: =media.width, less-than: 360, then: 236},
 					{if: =media.width, more-than: 484, then: 484},
 					236
-				]},
-				height: {$min: [{$max: [{$switch: [
-					{if: =media.width, less-than: 360, then: {$divide: [236, =media.aspect]}},
-					{if: =media.width, more-than: 484, then: {$divide: [484, =media.aspect]}},
-					{$divide: [236, =media.aspect]}
-				]}, {$multiply: [.25, =view.height]}]}, {$multiply: [.75, =view.height]}]},
-				options: {
-					id: =page.number
-				},
-				padding:[0, 0, {if: =page.hasmedia, then:30, else:0}, 0]
+				]}
 			}
         }}
 		]
@@ -90,7 +72,10 @@
 		<box id="article_advertisement">
 			<box id="skyscraper_ad" class="ad-skyscraper" embed="advertisement" />
 		</box>
-		<box id="media" embed="media" />
+		<box id="media">
+			<box id="media_asset" embed="media"/>
+			<p id="media_caption"><mark id="mark_caption" /></p>
+		</box>
 		<panel class="article_body">
 			<panel id="body_continuation" embed="body"/>
 		</panel>

@@ -19,6 +19,11 @@
 					{if: =options.large_headline, then:36},
 					{if: =options.medium_headline, then:24},
 					18
+				]},
+				line-height: {$switch: [
+					{if: =options.large_headline, then:36},
+					{if: =options.medium_headline, then:24},
+					18
 				]}
 			},
 			.deco_caption: {
@@ -28,7 +33,7 @@
 			<box id="deco_container" embed="deco-image">
 				<image embed="summary-image" />
 				<box id="deco_caption_container">
-					<p class="deco_headline"><mark class="m_headline" /><mark class="key" /></p>
+					<p id="headline" class="deco_headline"><mark class="m_headline" /><mark class="key" /></p>
 					<p class="deco_caption" embed="subhed" />
 				</box>
 			</box>

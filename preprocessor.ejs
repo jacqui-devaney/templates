@@ -5,92 +5,40 @@
 			portrait: { if: =view.width, less-than: =view.height },
 			landscape: { if: =view.width, more-than: =view.height },
 
-			aspect: {
-				$divide: [
-					{$max: [=device.height, =device.width] },
-					{$min: [=device.height, =device.width] }
-				]
-			},
-
-			standard: {
-				if: {
-					$divide: [
-						{$max: [=device.height, =device.width] },
-						{$min: [=device.height, =device.width] }
-					]
-				},
-				at-most: 1.4
-			},
-			widescreen: {
-				if: {
-					$divide: [
-						{$max: [=device.height, =device.width] },
-						{$min: [=device.height, =device.width] }
-					]
-				},
-				at-least: 1.4
-			},
-
 			scale: {
-				dpi: { $divide: [=device.dpi, 132] },
-				text: { if-all: [
-					{ if: =device.platform, equals: Android, then: true, else: false },
-					{ if: =device.dpi, at-least: 170, then: true, else: false }
-				], then: { $divide: [=device.dpi, 153] }, else: 1},
-				pagex: { if: =view.width, more-than: 480, then: {
+				width: { if: =view.width, more-than: 480, then: {
 					if: =view.width,
 					less-than: =view.height,
 					then: { $divide: [=view.width, 768] },
 					else: { $divide: [=view.width, 1024] }
 				}, else: 1},
-
-				pagey: { if: =view.width, more-than: 480, then: {
+				height: { if: =view.width, more-than: 480, then: {
 					if: =view.width,
 					less-than: =view.height,
 					then: { $divide: [=view.height, 1024] },
 					else: { $divide: [=view.height, 768] }
 				}, else: 1},
 
-				phone: { if: =app.idiom, equals: "phone", then:true, else:false },
-				tablet: { if: =app.idiom, equals: "tablet" },
+				phone: { if-any: [=display.width.compact, =display.width.regular], then: =display.width.compact, else:
+					{ if: =app.idiom, equals: "phone", then: true, else: false }
+				},
 
-				small: { if: =device.size, less-than: 8.8 },
-				large: { if: =device.size, more-than: 8.8 },
-				headlines: { if-any: [
-							{if: =device.size, less-than: 8.8, then: true, else: false},
-							{if: =issue.type, equals: "NOW", then: true, else: false}
-						], then: true, else: false }
+				tablet: { if-any: [=display.width.compact, =display.width.regular], then: =display.width.regular, else:
+					{ if: =app.idiom, equals: "tablet", then: true, else: false }
+				},
 
+				old_phone: { if: =app.idiom, equals: "phone", then:true, else:false },
+				old_tablet: { if: =app.idiom, equals: "tablet" }
 			},
 
 
-			justify: { if-any: [
-						{if: =device.size, less-than: 8.8, then: true, else: false},
-						{if: =issue.edition, equals: "germany", then: true, else: false}
-					], then: left, else: justify },
-			extents: {
-							if-any: [
-								{if: =device.size, less-than: 8.8, then: true, else: false},
-								{if: =issue.type, equals: "NOW", then: true, else: false}
-							],
-							 then: {
-								comment: "divide the headline em width by view em width,",
-								comment: "where on average, each character takes up 0.5 em.",
-								comment: "and the view em width is the view pixel width divided by headline pixel height.",
-								comment: "the magic numbers here are half the font size.",
-								huge :  {$divide:[{$multiply:[{$count:[=article.headline]}, 34]}, =view.width]},
-								big :   {$divide:[{$multiply:[{$count:[=article.headline]}, 26]}, =view.width]},
-								large:  {$divide:[{$multiply:[{$count:[=article.headline]}, 18]}, =view.width]},
-								medium:  {$divide:[{$multiply:[{$count:[=article.headline]}, 15]}, =view.width]},
-								deco:  {$divide:[{$multiply:[{$count:[=article.headline]}, 11]}, =view.width]}
-							}
-						},
+			justify: "left",
 
 			media: {
 				width: {if: =page.hasmedia, then: =article.media[page.number].width, else:0} ,
 				height: {if: =page.hasmedia, then: =article.media[page.number].height, else:0} ,
-				aspect: {if: =page.hasmedia, then: {$divide:[=article.media[page.number].width, =article.media[page.number].height]}, else:0}
-
+				aspect: {if: =page.hasmedia, then: {$divide:[=article.media[page.number].width, =article.media[page.number].height]}, else:0},
+				caption: {if: =page.hasmedia, then: =article.media[page.number].caption, else:""}
 			},
 
 			text: {
@@ -98,17 +46,18 @@
 				overflow: "..."
 			},
 
-			size: {
-				if: =app.idiom,
-				equals: "phone",
-				then: {
-					continuation_height_normal: 62,
-					continuation_height_large: 160,
-					continuation_height_strap: 176
-				},
-				else: {
+			color: {
+				tint: { if-all: [
+					{ if: =app.idiom, equals: "tablet" },
+					{ if: =issue.type, equals: "NOW" }
+				], then: "#E9F5FE" },
+                articleReadColor: #777777
+			},
 
-				}
+			size: {
+				continuation_height_normal: 62,
+				continuation_height_large: 160,
+				continuation_height_strap: 176
 			},
 
 			ad: {

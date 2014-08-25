@@ -42,28 +42,30 @@
 			]},
 			{
 				#body: {
-		            column-count: {
-						if: =options.one_column, then:1, else:{$divide: [=view.width, {$multiply:[300, =scale.dpi]}]}
-					},
-		            column-gutter: 20,
 					display: {if: =options.hide_body, then:none, else:inherit}
+		        },
+		        #deco_container: {
+		        	if: =options.float_image, equals: right, then: {
+		        		anchor-x: right,
+		        		padding: [8],
+		        		width: 111
+		        	}
 		        },
 				image: {
 					pixels-per-point-x:1,
 					pixels-per-point-y:1,
-					width: =view.width,
-					height: {$multiply: [=view.width, .62 ]},
+	                image-scale: 1,
 	                display: { if: =options.show_image, then:inherit, else:none },
+					height: {$multiply: [=view.width, .62 ]},
 					padding: [0, 0, 17, 0],
 					options: {
 						$switch: [
-							{if: =options.F_image, then: {match:{width:571, height:226, max-height:226}}},
-							{ if: =options.OZ_image, then: {match: { width:570, height:612, min-height:612 } } },
-							{ if: =options.DV_image, then: {match: { width:262, height:394, min-height:394 } } },
+							{ if: =options.F_image, then: {match: { width:571, height:226, max-height:226 } } },
+							{ if: =options.OZ_image,then: {match: { width:570, height:612, min-height:612 } } },
+							{ if: =options.DV_image,then: {match: { width:262, height:394, min-height:394 } } },
 							{ if: =options.G_image, then: {match: { width:553, height:369, min-height:369 } } }
 						]
-					},
-	                image-scale: 1
+					}
 	            },
 				.byline: {
 					display:{if: =options.show_byline, then:inherit, else:none}
@@ -106,6 +108,16 @@
 		}, else: {
 			#summary: {
 				display: none
+			}
+		}
+	}</style>
+	<style>{
+		if: =options.float_image, equals: right, then: {
+			image: {
+				width: 111,
+				height: 111,
+				padding: [0],
+				image-scale: 1.5
 			}
 		}
 	}</style>

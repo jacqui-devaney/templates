@@ -4,20 +4,7 @@
 	<style>{
 		#view: {
 			bottom: 0
-		},
-        #ad: {
-            anchor-y: bottom,
-            options: { zone: {$join: [=ad.prefix, abanner]} },
-            display: {
-                if-all: [
-                    {if: =page.number, equals: 3},
-                    {if: =app.version, less-than: 5.4}
-                ],
-                then: inherit,
-                else: none
-            }
-        }
+		}
 	}</style>
-    <box id="ad" class="maude unit_ad" embed="advertisement"></box>
     <box id="view" embed="article" class="maude" module="ARTICLE-continuation-phone_module.xml" />
 </jpml>

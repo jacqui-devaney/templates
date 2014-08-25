@@ -45,8 +45,8 @@
 		}},
 		#deco: {
         options:{$switch:[
-        {if: =portrait, then: {normal_headline:true}},
-        {if: =landscape, then: {normal_headline:true}}
+        {if: =portrait, then: {medium_headline:true}},
+        {if: =landscape, then: {medium_headline:true}}
         ]
 		}}
         

@@ -4,8 +4,7 @@
     <style>{
         #page_details: {
             options: {
-                tintTitle: true,
-                title: {if: =page.section, equals: FRONT_SECTION, then: "Page One"}
+                tintTitle: true
             }
         }
     }</style>

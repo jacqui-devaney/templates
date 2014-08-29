@@ -220,7 +220,7 @@
     Suppress tesla-style article links. Note: keep support for Methode style article links for decos.
     Example: http://online.wsj.com/news/articles/SB10001424052702303546204579442361298095276
 -->
-<xsl:template match="link[@type='EXTERNAL' and starts-with(//article//nameloc[@id = current()/@linkend]/nmlist, 'http://online.wsj.com/news/articles/')]">
+<xsl:template match="link[@type='EXTERNAL']">
     <xsl:apply-templates/>
 </xsl:template>
 

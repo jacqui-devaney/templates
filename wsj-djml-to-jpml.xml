@@ -220,16 +220,14 @@
     Suppress tesla-style article links. Note: keep support for Methode style article links for decos.
     Example: http://online.wsj.com/news/articles/SB10001424052702303546204579442361298095276
 -->
-<!-- <xsl:template match="link[@type='EXTERNAL' and starts-with(//article//nameloc[@id = current()/@linkend]/nmlist, 'http://online.wsj.com/news/articles/')]">
+<xsl:template match="link[@type='EXTERNAL' and starts-with(//article//nameloc[@id = current()/@linkend]/nmlist, 'http://online.wsj.com/news/articles/')]">
     <xsl:apply-templates/>
-</xsl:template> -->
+</xsl:template>
 
 <!--
     Suppress "speaking URLs" aka SEO links.
     Example: http://online.wsj.com/articles/heard-on-the-street-weibos-worth-is-hard-to-pin-down-1395060811
 -->
-
-<!-- SO FAR THIS BREAKS NEW GELCAP -->
 <!-- <xsl:template match="link[@type='EXTERNAL' and starts-with(//article//nameloc[@id = current()/@linkend]/nmlist, 'http://online.wsj.com/articles/')]">
     <xsl:apply-templates/>
 </xsl:template> -->
@@ -238,9 +236,9 @@
     Suppress blog links.
     Example: http://blogs.wsj.com/moneybeat/2014/03/16/old-bull-is-showing-its-age/
 -->
-<xsl:template match="link[@type='EXTERNAL' and starts-with(//article//nameloc[@id = current()/@linkend]/nmlist, 'http://blogs.wsj.com/')]">
+<!-- <xsl:template match="link[@type='EXTERNAL' and starts-with(//article//nameloc[@id = current()/@linkend]/nmlist, 'http://blogs.wsj.com/')]">
     <xsl:apply-templates/>
-</xsl:template>
+</xsl:template> -->
 
 <!--
     Suppress video links until 5.5.7 is out which fixes an issue with shebangs
@@ -253,7 +251,7 @@
 
 
 
-<xsl:template match="link">
+<!-- <xsl:template match="link">
     <xsl:variable name="id" select="@linkend" />
     <a>
         <xsl:attribute name="class">
@@ -266,23 +264,23 @@
         <xsl:attribute name="href">
             <xsl:choose> -->
                 <!-- Old style linking to a file in the issue, here for historical purposes -->
-                <xsl:when test="@icon = 'pdf-embedded-in-the-issue'">file:<xsl:call-template name="get_file_name">
+                <!-- <xsl:when test="@icon = 'pdf-embedded-in-the-issue'">file:<xsl:call-template name="get_file_name">
                         <xsl:with-param name="input">
                             <xsl:call-template name="nameloc_by_id">
                                 <xsl:with-param name="id" select="$id" />
                             </xsl:call-template>
                         </xsl:with-param>
                     </xsl:call-template>
-                </xsl:when>
+                </xsl:when> -->
                 <!-- Mobile editorial curated section deco links in the form "wsj:/SECTION_NAME" should produce "/SECTION_NAME" -->
-                <xsl:when test="starts-with(//article//nameloc[@id = $id]/nmlist, 'wsj:')">
+                <!-- <xsl:when test="starts-with(//article//nameloc[@id = $id]/nmlist, 'wsj:')">
                     <xsl:value-of select="substring(//article//nameloc[@id = $id]/nmlist, 5)" />
-                </xsl:when>
+                </xsl:when> -->
                 <!-- Otherwise, just use the link itself -->
-                <xsl:otherwise>
-                    <xsl:choose>
+                <!-- <xsl:otherwise>
+                    <xsl:choose> -->
                         <!-- For articles, the link is a raw article identifier, e.g. SB123, so prepend "article" scheme -->
-                        <xsl:when test="@type = 'ARTICLE'">article:</xsl:when>
+                        <!-- <xsl:when test="@type = 'ARTICLE'">article:</xsl:when>
                         <xsl:otherwise/>
                     </xsl:choose><xsl:call-template name="nameloc_by_id">
                         <xsl:with-param name="id" select="$id" />
@@ -292,7 +290,7 @@
         </xsl:attribute>
         <xsl:apply-templates select="*|node()"/>
     </a>
-</xsl:template>
+</xsl:template> -->
 
 <xsl:template match="phrase">
     <xsl:value-of select="."/>

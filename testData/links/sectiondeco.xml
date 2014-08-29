@@ -1,0 +1,450 @@
+<?xml version="1.0" encoding="ASCII"?>
+
+<article-doc ads="ADS-ALLOWED" archive-storing="DO-NOT-ARCHIVE"
+    column="" copyright="Dow Jones &amp; Company, Inc."
+    date="2014-08-13 19:49" date-type="auto" display-name="Mobile"
+    embargo="" guid="b35bed42-f8f6-11e3-af5b-01212803fad6"
+    id="SB10001424052702304489104579637343009146178.djml"
+    language="en-us" last-pub-date="2014-08-28 16:49" level="NORMAL"
+    major-revision-date="2014-08-13 19:49"
+    orig-obj-ref="b35bed42-f8f6-11e3-af5b-00212803fad6"
+    orig-obj-src="Methode" orig-pub-date="2014-06-20 23:50"
+    page="Mobile" product="WSJ.com"
+    publication="The Wall Street Journal Interactive Edition"
+    revision-type="minor"
+    root-id="SB00001424052702304489104579637343009146178"
+    section="Mobile" seo-id="off-duty-1403322606"
+    seo-url="http://online.wsj.com/articles/off-duty-1403322606"
+    type="Deco Summary Liondoor Section 1"
+    url="http://online.wsj.com/articles/off-duty-1403322606" version="76">
+    <meta-data>
+        <self-codes>
+            <code internal="true" seoname="Content Types" symbol="ncat"
+                type="DJII-SUBJECT" vrtysux="DJII-SUBJECT|ncat">Content Types</code>
+            <code internal="true" seoname="Headline-Only Content"
+                symbol="nhoc" type="DJII-SUBJECT" vrtysux="DJII-SUBJECT|nhoc">Headline-Only Content</code>
+            <code seoname="P/HDL" symbol="P/HDL" type="DJN" vrtysux="DJN|P/HDL">P/HDL</code>
+            <code symbol="Off Duty" type="FIRST_PUBLISH_HEADLINE" vrtysux="FIRST_PUBLISH_HEADLINE|Off Duty"/>
+            <code seoname="WSJ" symbol="WSJ" type="FLOW" vrtysux="FLOW|WSJ">WSJ</code>
+            <code seoname="WSJ.com" symbol="WSJ.com" type="FLOW" vrtysux="FLOW|WSJ.com">WSJ.com</code>
+            <code seoname="WSJAsia" symbol="WSJAsia" type="FLOW" vrtysux="FLOW|WSJAsia">WSJAsia</code>
+            <code seoname="WSJEurope" symbol="WSJEurope" type="FLOW" vrtysux="FLOW|WSJEurope">WSJEurope</code>
+            <code seoname="WSJ Japanese" symbol="WSJ Japanese"
+                type="FLOW" vrtysux="FLOW|WSJ Japanese">WSJ Japanese</code>
+            <code seoname="WSJSunday" symbol="WSJSunday" type="FLOW" vrtysux="FLOW|WSJSunday">WSJSunday</code>
+            <code symbol="Mansion" type="HEADLINE" vrtysux="HEADLINE|Mansion"/>
+            <code symbol="SB10001424052702304489104579637343009146178"
+                type="NWCHAIN" vrtysux="NWCHAIN|SB10001424052702304489104579637343009146178"/>
+            <code symbol="SYND" type="RELAY" vrtysux="RELAY|SYND"/>
+            <code seoname="CODES_REVIEWED" symbol="CODES_REVIEWED"
+                type="STATISTIC" vrtysux="STATISTIC|CODES_REVIEWED">CODES_REVIEWED</code>
+            <code seoname="Free All" symbol="FREE" type="STATISTIC" vrtysux="STATISTIC|FREE">Free All</code>
+            <properties>
+                <property>
+                    <type>djn</type>
+                    <value>P/HDL</value>
+                    <itemid>djn|P/HDL</itemid>
+                    <properties>
+                        <property>
+                            <type>fcode</type>
+                            <value>P/HDL</value>
+                        </property>
+                        <property>
+                            <type>name</type>
+                            <value>P/HDL</value>
+                        </property>
+                        <property>
+                            <type>onlinesignificance</type>
+                            <value>prominent</value>
+                        </property>
+                        <property>
+                            <type>significance</type>
+                            <value>prominent</value>
+                        </property>
+                        <property>
+                            <type>source</type>
+                            <value>FACTIVA</value>
+                        </property>
+                        <property>
+                            <type>why</type>
+                            <value>about</value>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>first_publish_headline</type>
+                    <value>Off Duty</value>
+                    <itemid>first_publish_headline|Off Duty</itemid>
+                </property>
+                <property>
+                    <type>flow</type>
+                    <value>WSJ.com</value>
+                    <itemid>flow|WSJ.com</itemid>
+                    <properties>
+                        <property>
+                            <type>name</type>
+                            <value>WSJ.com</value>
+                        </property>
+                        <property>
+                            <type>status</type>
+                            <value>modified</value>
+                        </property>
+                        <property>
+                            <type>title</type>
+                            <value>Product</value>
+                        </property>
+                        <property>
+                            <type>value</type>
+                            <value>WSJ.com</value>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>flow</type>
+                    <value>WSJ</value>
+                    <itemid>flow|WSJ</itemid>
+                    <properties>
+                        <property>
+                            <type>name</type>
+                            <value>WSJ</value>
+                        </property>
+                        <property>
+                            <type>status</type>
+                            <value>modified</value>
+                        </property>
+                        <property>
+                            <type>title</type>
+                            <value>Product</value>
+                        </property>
+                        <property>
+                            <type>value</type>
+                            <value>WSJ</value>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>flow</type>
+                    <value>WSJAsia</value>
+                    <itemid>flow|WSJAsia</itemid>
+                    <properties>
+                        <property>
+                            <type>name</type>
+                            <value>WSJAsia</value>
+                        </property>
+                        <property>
+                            <type>status</type>
+                            <value>modified</value>
+                        </property>
+                        <property>
+                            <type>title</type>
+                            <value>Product</value>
+                        </property>
+                        <property>
+                            <type>value</type>
+                            <value>WSJAsia</value>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>flow</type>
+                    <value>WSJEurope</value>
+                    <itemid>flow|WSJEurope</itemid>
+                    <properties>
+                        <property>
+                            <type>name</type>
+                            <value>WSJEurope</value>
+                        </property>
+                        <property>
+                            <type>status</type>
+                            <value>modified</value>
+                        </property>
+                        <property>
+                            <type>title</type>
+                            <value>Product</value>
+                        </property>
+                        <property>
+                            <type>value</type>
+                            <value>WSJEurope</value>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>flow</type>
+                    <value>WSJSunday</value>
+                    <itemid>flow|WSJSunday</itemid>
+                    <properties>
+                        <property>
+                            <type>name</type>
+                            <value>WSJSunday</value>
+                        </property>
+                        <property>
+                            <type>status</type>
+                            <value>modified</value>
+                        </property>
+                        <property>
+                            <type>title</type>
+                            <value>Product</value>
+                        </property>
+                        <property>
+                            <type>value</type>
+                            <value>WSJSunday</value>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>flow</type>
+                    <value>WSJ Japanese</value>
+                    <itemid>flow|WSJ Japanese</itemid>
+                    <properties>
+                        <property>
+                            <type>name</type>
+                            <value>WSJ Japanese</value>
+                        </property>
+                        <property>
+                            <type>status</type>
+                            <value>modified</value>
+                        </property>
+                        <property>
+                            <type>title</type>
+                            <value>Product</value>
+                        </property>
+                        <property>
+                            <type>value</type>
+                            <value>WSJ Japanese</value>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>headline</type>
+                    <value>Mansion</value>
+                    <itemid>headline|Mansion</itemid>
+                </property>
+                <property>
+                    <type>ns</type>
+                    <value>nhoc</value>
+                    <itemid>ns|nhoc</itemid>
+                    <properties>
+                        <property>
+                            <type>fcode</type>
+                            <value>nhoc</value>
+                        </property>
+                        <property>
+                            <type>internalsymbol</type>
+                            <value>true</value>
+                        </property>
+                        <property>
+                            <type>name</type>
+                            <value>Headline-Only Content</value>
+                        </property>
+                        <property>
+                            <type>onlinesignificance</type>
+                            <value>prominent</value>
+                        </property>
+                        <property>
+                            <type>significance</type>
+                            <value>prominent</value>
+                        </property>
+                        <property>
+                            <type>source</type>
+                            <value>FACTIVA</value>
+                        </property>
+                        <property>
+                            <type>why</type>
+                            <value>about</value>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>ns</type>
+                    <value>ncat</value>
+                    <itemid>ns|ncat</itemid>
+                    <properties>
+                        <property>
+                            <type>fcode</type>
+                            <value>ncat</value>
+                        </property>
+                        <property>
+                            <type>internalsymbol</type>
+                            <value>true</value>
+                        </property>
+                        <property>
+                            <type>name</type>
+                            <value>Content Types</value>
+                        </property>
+                        <property>
+                            <type>source</type>
+                            <value>FACTIVA</value>
+                        </property>
+                        <property>
+                            <type>why</type>
+                            <value>lineage</value>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>nwchain</type>
+                    <value>SB10001424052702304489104579637343009146178</value>
+                    <itemid>nwchain|SB10001424052702304489104579637343009146178</itemid>
+                </property>
+                <property>
+                    <type>relay</type>
+                    <value>SYND</value>
+                    <itemid>relay|SYND</itemid>
+                    <properties>
+                        <property>
+                            <type>name</type>
+                            <value>SYND</value>
+                        </property>
+                        <property>
+                            <type>source</type>
+                            <value>EXPANDER</value>
+                        </property>
+                        <property>
+                            <type>value</type>
+                            <value>SYND</value>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>statistic</type>
+                    <value>CODES_REVIEWED</value>
+                    <itemid>statistic|CODES_REVIEWED</itemid>
+                    <properties>
+                        <property>
+                            <type>name</type>
+                            <value>CODES_REVIEWED</value>
+                        </property>
+                        <property>
+                            <type>value</type>
+                            <value>CODES_REVIEWED</value>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>statistic</type>
+                    <value>FREE</value>
+                    <itemid>statistic|FREE</itemid>
+                    <properties>
+                        <property>
+                            <type>name</type>
+                            <value>Free All</value>
+                        </property>
+                        <property>
+                            <type>status</type>
+                            <value>modified</value>
+                        </property>
+                        <property>
+                            <type>value</type>
+                            <value>FREE</value>
+                        </property>
+                        <property>
+                            <type>seoname</type>
+                            <value>Free All</value>
+                        </property>
+                    </properties>
+                </property>
+            </properties>
+        </self-codes>
+    </meta-data>
+    <summary id="S-SB10001424052702304489104579637343009146178.djml">
+        <summary-header>
+            <nameloc id="i1-SB10001424052702304489104579637343009146178">
+                <nmlist nametype="ENTITY">wsj:/MANSION</nmlist>
+            </nameloc>
+        </summary-header>
+        <alt-summary-body destination-type="THIS-ART" page="Images">
+            <media alignment="LEFT" id="media-1" reuse-type="full" type="ILLUSTRATION">
+                <image alternate-text="image" height="267"
+                    slug="0828peebles_2"
+                    src-id="BN-EG782_0828pe_OR_20140826155102.jpg" width="400"/>
+                <media-credit>Erica Gannett for The Wall Stree</media-credit>
+            </media>
+            <media alignment="LEFT" id="media-2" reuse-type="full" type="ILLUSTRATION">
+                <image alternate-text="image" height="76"
+                    slug="0828peebles_2"
+                    src-id="BN-EG782_0828pe_A_20140826155102.jpg" width="76"/>
+                <media-credit>Erica Gannett for The Wall Stree</media-credit>
+            </media>
+            <media alignment="LEFT" id="media-3" reuse-type="full" type="ILLUSTRATION">
+                <image alternate-text="image" height="94"
+                    slug="0828peebles_2"
+                    src-id="BN-EG782_0828pe_C_20140826155102.jpg" width="167"/>
+                <media-credit>Erica Gannett for The Wall Stree</media-credit>
+            </media>
+            <media alignment="LEFT" id="media-4" reuse-type="full" type="ILLUSTRATION">
+                <image alternate-text="image" height="174"
+                    slug="0828peebles_2"
+                    src-id="BN-EG782_0828pe_D_20140826155102.jpg" width="262"/>
+                <media-credit>Erica Gannett for The Wall Stree</media-credit>
+            </media>
+            <media alignment="LEFT" id="media-5" reuse-type="full" type="ILLUSTRATION">
+                <image alternate-text="image" height="239"
+                    slug="0828peebles_2"
+                    src-id="BN-EG782_0828pe_E_20140826155102.jpg" width="359"/>
+                <media-credit>Erica Gannett for The Wall Stree</media-credit>
+            </media>
+            <media alignment="LEFT" id="media-6" reuse-type="full" type="ILLUSTRATION">
+                <image alternate-text="image" height="315"
+                    slug="0828peebles_2"
+                    src-id="BN-EG782_0828pe_EA_20140826155102.jpg" width="458"/>
+                <media-credit>Erica Gannett for The Wall Stree</media-credit>
+            </media>
+            <media alignment="LEFT" id="media-7" reuse-type="full" type="ILLUSTRATION">
+                <image alternate-text="image" height="226"
+                    slug="0828peebles_2"
+                    src-id="BN-EG782_0828pe_F_20140826155102.jpg" width="571"/>
+                <media-credit>Erica Gannett for The Wall Stree</media-credit>
+            </media>
+            <media alignment="LEFT" id="media-8" reuse-type="full" type="ILLUSTRATION">
+                <image alternate-text="image" height="369"
+                    slug="0828peebles_2"
+                    src-id="BN-EG782_0828pe_G_20140826155102.jpg" width="553"/>
+                <media-credit>Erica Gannett for The Wall Stree</media-credit>
+            </media>
+            <media alignment="LEFT" id="media-9" reuse-type="full" type="ILLUSTRATION">
+                <image alternate-text="image" height="640"
+                    slug="0828peebles_2"
+                    src-id="BN-EG782_0828pe_HD_20140826155102.jpg" width="1024"/>
+                <media-credit>Erica Gannett for The Wall Stree</media-credit>
+            </media>
+            <media alignment="LEFT" id="media-10" reuse-type="full" type="ILLUSTRATION">
+                <image alternate-text="image" height="853"
+                    slug="0828peebles_2"
+                    src-id="BN-EG782_0828pe_M_20140826155102.jpg" width="1280"/>
+                <media-credit>Erica Gannett for The Wall Stree</media-credit>
+            </media>
+        </alt-summary-body>
+        <alt-summary-body destination-type="THIS-ART" page="|SEO|">
+            <headline>
+                <main-hed>Mansion</main-hed>
+            </headline>
+            <p/>
+        </alt-summary-body>
+        <summary-body>
+            <headline>
+                <main-hed>Mansion</main-hed>
+            </headline>
+            <p>
+                <link icon="none"
+                    linkend="i1-SB10001424052702304489104579637343009146178" type="EXTERNAL">Real Estate's Self-Made Mogul &#xbb;</link>
+            </p>
+        </summary-body>
+    </summary>
+    <article>
+        <article-header>
+            <nameloc id="i2-SB10001424052702304489104579637343009146178">
+                <nmlist nametype="ENTITY">wsj:/MANSION</nmlist>
+            </nameloc>
+        </article-header>
+        <article-body>
+            <headline>
+                <main-hed>Mansion</main-hed>
+            </headline>
+            <p>
+                <link icon="none"
+                    linkend="i2-SB10001424052702304489104579637343009146178" type="EXTERNAL">Real Estate's Self-Made Mogul &#xbb;</link>
+            </p>
+        </article-body>
+    </article>
+</article-doc>
+<!-- fastdynapage - secj2kwebappp10 - Fri 08/29/14 - 04:26:35 EDT -->

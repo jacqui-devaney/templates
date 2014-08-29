@@ -1,0 +1,2286 @@
+<?xml version="1.0" encoding="ASCII"?>
+
+<article-doc ads="ADS-NOT-ALLOWED" column=""
+    copyright="Dow Jones &amp; Company, Inc." date="2014-08-28 03:00"
+    date-type="auto" display-name="Markets" embargo=""
+    guid="301256d6-2e7c-11e4-8d84-01212804637c"
+    id="SB10001424052970203622804580119000806508246.djml"
+    language="en-us" last-pub-date="2014-08-28 18:29" level="NORMAL"
+    major-revision-date="2014-08-28 03:00"
+    orig-obj-ref="46ddf818-2e7f-11e4-8d84-00212804637c"
+    orig-obj-src="Methode" orig-pub-date="2014-08-28 03:00"
+    page="Markets" product="WSJ.com"
+    publication="The Wall Street Journal Interactive Edition"
+    revision-type="minor"
+    root-id="SB00001424052970203622804580119000806508246"
+    section="Markets"
+    seo-id="heard-on-the-street-alibaba-margin-squeeze-overshadows-mobile-success-1409209202"
+    seo-url="http://online.wsj.com/articles/heard-on-the-street-alibaba-margin-squeeze-overshadows-mobile-success-1409209202"
+    type="Heard on the Street"
+    url="http://online.wsj.com/articles/heard-on-the-street-alibaba-margin-squeeze-overshadows-mobile-success-1409209202" version="4">
+    <meta-data>
+        <self-codes>
+            <code seoname="Aaron Back" symbol="Aaron Back" type="AUTHOR" vrtysux="AUTHOR|Aaron Back">Aaron Back</code>
+            <code seoname="Alibaba" symbol="Alibaba" type="DJII-COMPANY" vrtysux="DJII-COMPANY|Alibaba">Alibaba</code>
+            <code seoname="Alibaba Group Holding"
+                symbol="Alibaba Group Holding" type="DJII-COMPANY" vrtysux="DJII-COMPANY|Alibaba Group Holding">Alibaba Group Holding</code>
+            <code seoname="Consumer Services" symbol="5000"
+                type="DJII-ICB" vrtysux="DJII-ICB|5000">Consumer Services</code>
+            <code seoname="Retail" symbol="5300" type="DJII-ICB" vrtysux="DJII-ICB|5300">Retail</code>
+            <code seoname="General Retailers" symbol="5370"
+                type="DJII-ICB" vrtysux="DJII-ICB|5370">General Retailers</code>
+            <code seoname="Broadline Retailers" symbol="5373"
+                type="DJII-ICB" vrtysux="DJII-ICB|5373">Broadline Retailers</code>
+            <code seoname="B2B e-commerce" symbol="iebus"
+                type="DJII-INDUSTRY" vrtysux="DJII-INDUSTRY|iebus">B2B e-commerce</code>
+            <code seoname="E-commerce" symbol="iecom"
+                type="DJII-INDUSTRY" vrtysux="DJII-INDUSTRY|iecom">E-commerce</code>
+            <code seoname="Internet/Online" symbol="IINT"
+                type="DJII-INDUSTRY" vrtysux="DJII-INDUSTRY|IINT">Internet/Online</code>
+            <code seoname="Technology" symbol="itech"
+                type="DJII-INDUSTRY" vrtysux="DJII-INDUSTRY|itech">Technology</code>
+            <code seoname="Asia Pacific" symbol="apacz"
+                type="DJII-REGION" vrtysux="DJII-REGION|apacz">Asia Pacific</code>
+            <code seoname="Asia" symbol="asiaz" type="DJII-REGION" vrtysux="DJII-REGION|asiaz">Asia</code>
+            <code seoname="BRIC Countries" symbol="bric"
+                type="DJII-REGION" vrtysux="DJII-REGION|bric">BRIC Countries</code>
+            <code seoname="China" symbol="CHINA" type="DJII-REGION" vrtysux="DJII-REGION|CHINA">China</code>
+            <code seoname="Greater China" symbol="chinaz"
+                type="DJII-REGION" vrtysux="DJII-REGION|chinaz">Greater China</code>
+            <code seoname="Emerging Market Countries" symbol="devgcoz"
+                type="DJII-REGION" vrtysux="DJII-REGION|devgcoz">Emerging Market Countries</code>
+            <code seoname="Developing Economies" symbol="dvpcoz"
+                type="DJII-REGION" vrtysux="DJII-REGION|dvpcoz">Developing Economies</code>
+            <code seoname="Eastern Asia" symbol="easiaz"
+                type="DJII-REGION" vrtysux="DJII-REGION|easiaz">Eastern Asia</code>
+            <code seoname="North America" symbol="namz"
+                type="DJII-REGION" vrtysux="DJII-REGION|namz">North America</code>
+            <code seoname="United States" symbol="USA"
+                type="DJII-REGION" vrtysux="DJII-REGION|USA">United States</code>
+            <code seoname="Corporate Changes" symbol="c02"
+                type="DJII-SUBJECT" vrtysux="DJII-SUBJECT|c02">Corporate Changes</code>
+            <code seoname="Stock Listings" symbol="c14"
+                type="DJII-SUBJECT" vrtysux="DJII-SUBJECT|c14">Stock Listings</code>
+            <code seoname="Funding/Capital" symbol="c17"
+                type="DJII-SUBJECT" vrtysux="DJII-SUBJECT|c17">Funding/Capital</code>
+            <code seoname="Share Capital" symbol="c171"
+                type="DJII-SUBJECT" vrtysux="DJII-SUBJECT|c171">Share Capital</code>
+            <code seoname="Initial Public Offerings" symbol="c1711"
+                type="DJII-SUBJECT" vrtysux="DJII-SUBJECT|c1711">Initial Public Offerings</code>
+            <code seoname="Corporate Actions" symbol="cactio"
+                type="DJII-SUBJECT" vrtysux="DJII-SUBJECT|cactio">Corporate Actions</code>
+            <code seoname="Corporate/Industrial News" symbol="ccat"
+                type="DJII-SUBJECT" vrtysux="DJII-SUBJECT|ccat">Corporate/Industrial News</code>
+            <code internal="true" seoname="Content Types" symbol="ncat"
+                type="DJII-SUBJECT" vrtysux="DJII-SUBJECT|ncat">Content Types</code>
+            <code internal="true" seoname="Factiva Filters"
+                symbol="nfact" type="DJII-SUBJECT" vrtysux="DJII-SUBJECT|nfact">Factiva Filters</code>
+            <code internal="true"
+                seoname="FC&amp;E Industry News Filter" symbol="nfcpin"
+                type="DJII-SUBJECT" vrtysux="DJII-SUBJECT|nfcpin">FC&amp;E Industry News Filter</code>
+            <code seoname="ALIBABA.YY" symbol="ALIBABA.YY" type="DJN" vrtysux="DJN|ALIBABA.YY">ALIBABA.YY</code>
+            <code seoname="I/RTB" symbol="I/RTB" type="DJN" vrtysux="DJN|I/RTB">I/RTB</code>
+            <code seoname="I/RTS" symbol="I/RTS" type="DJN" vrtysux="DJN|I/RTS">I/RTS</code>
+            <code seoname="M/CYC" symbol="M/CYC" type="DJN" vrtysux="DJN|M/CYC">M/CYC</code>
+            <code seoname="N/CAC" symbol="N/CAC" type="DJN" vrtysux="DJN|N/CAC">N/CAC</code>
+            <code seoname="N/CHG" symbol="N/CHG" type="DJN" vrtysux="DJN|N/CHG">N/CHG</code>
+            <code seoname="N/CNW" symbol="N/CNW" type="DJN" vrtysux="DJN|N/CNW">N/CNW</code>
+            <code seoname="N/DJN" symbol="n/djn" type="DJN" vrtysux="DJN|n/djn">N/DJN</code>
+            <code seoname="N/ENTR" symbol="N/ENTR" type="DJN" vrtysux="DJN|N/ENTR">N/ENTR</code>
+            <code seoname="n/hrd" symbol="n/hrd" type="DJN" vrtysux="DJN|n/hrd">n/hrd</code>
+            <code seoname="Heard on the Street" symbol="N/HRD"
+                type="DJN" vrtysux="DJN|N/HRD">Heard on the Street</code>
+            <code seoname="N/INI" symbol="N/INI" type="DJN" vrtysux="DJN|N/INI">N/INI</code>
+            <code seoname="N/SHC" symbol="N/SHC" type="DJN" vrtysux="DJN|N/SHC">N/SHC</code>
+            <code seoname="N/WER" symbol="n/wer" type="DJN" vrtysux="DJN|n/wer">N/WER</code>
+            <code seoname="P/METH" symbol="p/meth" type="DJN" vrtysux="DJN|p/meth">P/METH</code>
+            <code seoname="R/ASI" symbol="R/ASI" type="DJN" vrtysux="DJN|R/ASI">R/ASI</code>
+            <code seoname="R/CH" symbol="R/CH" type="DJN" vrtysux="DJN|R/CH">R/CH</code>
+            <code seoname="R/FEO" symbol="R/FEO" type="DJN" vrtysux="DJN|R/FEO">R/FEO</code>
+            <code seoname="R/NME" symbol="R/NME" type="DJN" vrtysux="DJN|R/NME">R/NME</code>
+            <code seoname="R/US" symbol="R/US" type="DJN" vrtysux="DJN|R/US">R/US</code>
+            <code
+                symbol="Alibaba Margin Squeeze Overshadows Mobile Success"
+                type="FIRST_PUBLISH_HEADLINE" vrtysux="FIRST_PUBLISH_HEADLINE|Alibaba Margin Squeeze Overshadows Mobile Success"/>
+            <code seoname="WSJ" symbol="WSJ" type="FLOW" vrtysux="FLOW|WSJ">WSJ</code>
+            <code seoname="WSJ.com" symbol="WSJ.com" type="FLOW" vrtysux="FLOW|WSJ.com">WSJ.com</code>
+            <code seoname="WSJAsia" symbol="WSJAsia" type="FLOW" vrtysux="FLOW|WSJAsia">WSJAsia</code>
+            <code seoname="WSJEurope" symbol="WSJEurope" type="FLOW" vrtysux="FLOW|WSJEurope">WSJEurope</code>
+            <code seoname="WSJ Japanese" symbol="WSJ Japanese"
+                type="FLOW" vrtysux="FLOW|WSJ Japanese">WSJ Japanese</code>
+            <code seoname="WSJSunday" symbol="WSJSunday" type="FLOW" vrtysux="FLOW|WSJSunday">WSJSunday</code>
+            <code
+                symbol="Alibaba Margin Squeeze Overshadows Mobile Success"
+                type="HEADLINE" vrtysux="HEADLINE|Alibaba Margin Squeeze Overshadows Mobile Success"/>
+            <code seoname="9535" symbol="9535" type="INDUSTRY" vrtysux="INDUSTRY|9535">9535</code>
+            <code seoname="HST" symbol="HST" type="JCODE" vrtysux="JCODE|HST">HST</code>
+            <code seoname="ALIBABA" symbol="ALIBABA" type="KEYWORD" vrtysux="KEYWORD|ALIBABA">ALIBABA</code>
+            <code seoname="ALIBABA EARNINGS" symbol="ALIBABA EARNINGS"
+                type="KEYWORD" vrtysux="KEYWORD|ALIBABA EARNINGS">ALIBABA EARNINGS</code>
+            <code seoname="ALIBABA IPO" symbol="ALIBABA IPO"
+                type="KEYWORD" vrtysux="KEYWORD|ALIBABA IPO">ALIBABA IPO</code>
+            <code seoname="ALIBABA MARGIN" symbol="ALIBABA MARGIN"
+                type="KEYWORD" vrtysux="KEYWORD|ALIBABA MARGIN">ALIBABA MARGIN</code>
+            <code seoname="ALIBABA MARGINS" symbol="ALIBABA MARGINS"
+                type="KEYWORD" vrtysux="KEYWORD|ALIBABA MARGINS">ALIBABA MARGINS</code>
+            <code seoname="ALIBABA RESULTS" symbol="ALIBABA RESULTS"
+                type="KEYWORD" vrtysux="KEYWORD|ALIBABA RESULTS">ALIBABA RESULTS</code>
+            <code seoname="CHINA ALIBABA" symbol="CHINA ALIBABA"
+                type="KEYWORD" vrtysux="KEYWORD|CHINA ALIBABA">CHINA ALIBABA</code>
+            <code seoname="HEARD ON THE STREET"
+                symbol="HEARD ON THE STREET" type="KEYWORD" vrtysux="KEYWORD|HEARD ON THE STREET">HEARD ON THE STREET</code>
+            <code symbol="SB100014240529702036228045801190008065082461"
+                type="NWCHAIN" vrtysux="NWCHAIN|SB100014240529702036228045801190008065082461"/>
+            <code symbol="SYND" type="RELAY" vrtysux="RELAY|SYND"/>
+            <code seoname="CODES_REVIEWED" symbol="CODES_REVIEWED"
+                type="STATISTIC" vrtysux="STATISTIC|CODES_REVIEWED">CODES_REVIEWED</code>
+            <code seoname="OASN" symbol="OASN" type="SUBJECT" vrtysux="SUBJECT|OASN">OASN</code>
+            <code seoname="OCHN" symbol="OCHN" type="SUBJECT" vrtysux="SUBJECT|OCHN">OCHN</code>
+            <code seoname="Markets" symbol="OMKM" type="SUBJECT" vrtysux="SUBJECT|OMKM">Markets</code>
+            <code seoname="US News" symbol="ONEW" type="SUBJECT" vrtysux="SUBJECT|ONEW">US News</code>
+            <code seoname="OPIO" symbol="OPIO" type="SUBJECT" vrtysux="SUBJECT|OPIO">OPIO</code>
+            <code seoname="OTEC" symbol="OTEC" type="SUBJECT" vrtysux="SUBJECT|OTEC">OTEC</code>
+            <properties>
+                <property>
+                    <type>author</type>
+                    <value>Aaron Back</value>
+                    <itemid>author|Aaron Back</itemid>
+                    <properties>
+                        <property>
+                            <type>extractedtext</type>
+                            <value>Aaron Back</value>
+                        </property>
+                        <property>
+                            <type>name</type>
+                            <value>Aaron Back</value>
+                        </property>
+                        <property>
+                            <type>rank</type>
+                            <value>1</value>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>author</type>
+                    <value>Aaron Back </value>
+                    <itemid>author|Aaron Back </itemid>
+                    <properties>
+                        <property>
+                            <type>author</type>
+                            <value>Aaron Back </value>
+                        </property>
+                        <property>
+                            <type>id</type>
+                            <value>Aaron Back </value>
+                        </property>
+                        <property>
+                            <type>name</type>
+                            <value>Aaron Back </value>
+                        </property>
+                        <property>
+                            <type>topicid</type>
+                            <value/>
+                        </property>
+                        <property>
+                            <type>rank</type>
+                            <value>1</value>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>co</type>
+                    <value>Alibaba</value>
+                    <itemid>co|Alibaba</itemid>
+                    <properties>
+                        <property>
+                            <type>displayname</type>
+                            <value>Alibaba.com</value>
+                        </property>
+                        <property>
+                            <type>extractedtext</type>
+                            <value>Alibaba</value>
+                        </property>
+                        <property>
+                            <type>name</type>
+                            <value>Alibaba</value>
+                        </property>
+                        <property>
+                            <type>onlinesignificance</type>
+                            <value>passing-mention</value>
+                        </property>
+                        <property>
+                            <type>significance</type>
+                            <value>prominent</value>
+                        </property>
+                        <property>
+                            <type>source</type>
+                            <value>MANUAL</value>
+                        </property>
+                        <property>
+                            <type>status</type>
+                            <value>modified</value>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>co</type>
+                    <value>Alibaba Group Holding</value>
+                    <itemid>co|Alibaba Group Holding</itemid>
+                    <properties>
+                        <property>
+                            <type>displayname</type>
+                            <value>Alibaba%20Group%20Holding</value>
+                        </property>
+                        <property>
+                            <type>extractedtext</type>
+                            <value>Alibaba Group Holding</value>
+                        </property>
+                        <property>
+                            <type>name</type>
+                            <value>Alibaba Group Holding</value>
+                        </property>
+                        <property>
+                            <type>onlinesignificance</type>
+                            <value>passing-mention</value>
+                        </property>
+                        <property>
+                            <type>significance</type>
+                            <value>prominent</value>
+                        </property>
+                        <property>
+                            <type>source</type>
+                            <value>MANUAL</value>
+                        </property>
+                        <property>
+                            <type>status</type>
+                            <value>added</value>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>djn</type>
+                    <value>ALIBABA.YY</value>
+                    <itemid>djn|ALIBABA.YY</itemid>
+                    <properties>
+                        <property>
+                            <type>fcode</type>
+                            <value>ALIBABA.YY</value>
+                        </property>
+                        <property>
+                            <type>name</type>
+                            <value>ALIBABA.YY</value>
+                        </property>
+                        <property>
+                            <type>onlinesignificance</type>
+                            <value>prominent</value>
+                        </property>
+                        <property>
+                            <type>significance</type>
+                            <value>prominent</value>
+                        </property>
+                        <property>
+                            <type>source</type>
+                            <value>FACTIVA</value>
+                        </property>
+                        <property>
+                            <type>why</type>
+                            <value>about</value>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>djn</type>
+                    <value>N/INI</value>
+                    <itemid>djn|N/INI</itemid>
+                    <properties>
+                        <property>
+                            <type>fcode</type>
+                            <value>N/INI</value>
+                        </property>
+                        <property>
+                            <type>name</type>
+                            <value>N/INI</value>
+                        </property>
+                        <property>
+                            <type>onlinesignificance</type>
+                            <value>prominent</value>
+                        </property>
+                        <property>
+                            <type>significance</type>
+                            <value>prominent</value>
+                        </property>
+                        <property>
+                            <type>source</type>
+                            <value>FACTIVA</value>
+                        </property>
+                        <property>
+                            <type>why</type>
+                            <value>about</value>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>djn</type>
+                    <value>N/CHG</value>
+                    <itemid>djn|N/CHG</itemid>
+                    <properties>
+                        <property>
+                            <type>fcode</type>
+                            <value>N/CHG</value>
+                        </property>
+                        <property>
+                            <type>name</type>
+                            <value>N/CHG</value>
+                        </property>
+                        <property>
+                            <type>source</type>
+                            <value>FACTIVA</value>
+                        </property>
+                        <property>
+                            <type>why</type>
+                            <value>lineage</value>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>djn</type>
+                    <value>N/SHC</value>
+                    <itemid>djn|N/SHC</itemid>
+                    <properties>
+                        <property>
+                            <type>fcode</type>
+                            <value>N/SHC</value>
+                        </property>
+                        <property>
+                            <type>name</type>
+                            <value>N/SHC</value>
+                        </property>
+                        <property>
+                            <type>source</type>
+                            <value>FACTIVA</value>
+                        </property>
+                        <property>
+                            <type>why</type>
+                            <value>lineage</value>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>djn</type>
+                    <value>N/CAC</value>
+                    <itemid>djn|N/CAC</itemid>
+                    <properties>
+                        <property>
+                            <type>fcode</type>
+                            <value>N/CAC</value>
+                        </property>
+                        <property>
+                            <type>name</type>
+                            <value>N/CAC</value>
+                        </property>
+                        <property>
+                            <type>source</type>
+                            <value>FACTIVA</value>
+                        </property>
+                        <property>
+                            <type>why</type>
+                            <value>lineage</value>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>djn</type>
+                    <value>N/CNW</value>
+                    <itemid>djn|N/CNW</itemid>
+                    <properties>
+                        <property>
+                            <type>fcode</type>
+                            <value>N/CNW</value>
+                        </property>
+                        <property>
+                            <type>name</type>
+                            <value>N/CNW</value>
+                        </property>
+                        <property>
+                            <type>source</type>
+                            <value>FACTIVA</value>
+                        </property>
+                        <property>
+                            <type>why</type>
+                            <value>lineage</value>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>djn</type>
+                    <value>N/ENTR</value>
+                    <itemid>djn|N/ENTR</itemid>
+                    <properties>
+                        <property>
+                            <type>fcode</type>
+                            <value>N/ENTR</value>
+                        </property>
+                        <property>
+                            <type>name</type>
+                            <value>N/ENTR</value>
+                        </property>
+                        <property>
+                            <type>source</type>
+                            <value>FACTIVA</value>
+                        </property>
+                        <property>
+                            <type>why</type>
+                            <value>lineage</value>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>djn</type>
+                    <value>R/CH</value>
+                    <itemid>djn|R/CH</itemid>
+                    <properties>
+                        <property>
+                            <type>fcode</type>
+                            <value>R/CH</value>
+                        </property>
+                        <property>
+                            <type>name</type>
+                            <value>R/CH</value>
+                        </property>
+                        <property>
+                            <type>onlinesignificance</type>
+                            <value>prominent</value>
+                        </property>
+                        <property>
+                            <type>significance</type>
+                            <value>prominent</value>
+                        </property>
+                        <property>
+                            <type>source</type>
+                            <value>FACTIVA</value>
+                        </property>
+                        <property>
+                            <type>why</type>
+                            <value>about</value>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>djn</type>
+                    <value>R/US</value>
+                    <itemid>djn|R/US</itemid>
+                    <properties>
+                        <property>
+                            <type>fcode</type>
+                            <value>R/US</value>
+                        </property>
+                        <property>
+                            <type>name</type>
+                            <value>R/US</value>
+                        </property>
+                        <property>
+                            <type>onlinesignificance</type>
+                            <value>prominent</value>
+                        </property>
+                        <property>
+                            <type>significance</type>
+                            <value>prominent</value>
+                        </property>
+                        <property>
+                            <type>source</type>
+                            <value>FACTIVA</value>
+                        </property>
+                        <property>
+                            <type>why</type>
+                            <value>about</value>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>djn</type>
+                    <value>R/ASI</value>
+                    <itemid>djn|R/ASI</itemid>
+                    <properties>
+                        <property>
+                            <type>fcode</type>
+                            <value>R/ASI</value>
+                        </property>
+                        <property>
+                            <type>name</type>
+                            <value>R/ASI</value>
+                        </property>
+                        <property>
+                            <type>source</type>
+                            <value>FACTIVA</value>
+                        </property>
+                        <property>
+                            <type>why</type>
+                            <value>lineage</value>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>djn</type>
+                    <value>R/FEO</value>
+                    <itemid>djn|R/FEO</itemid>
+                    <properties>
+                        <property>
+                            <type>fcode</type>
+                            <value>R/FEO</value>
+                        </property>
+                        <property>
+                            <type>name</type>
+                            <value>R/FEO</value>
+                        </property>
+                        <property>
+                            <type>source</type>
+                            <value>FACTIVA</value>
+                        </property>
+                        <property>
+                            <type>why</type>
+                            <value>lineage</value>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>djn</type>
+                    <value>R/NME</value>
+                    <itemid>djn|R/NME</itemid>
+                    <properties>
+                        <property>
+                            <type>fcode</type>
+                            <value>R/NME</value>
+                        </property>
+                        <property>
+                            <type>name</type>
+                            <value>R/NME</value>
+                        </property>
+                        <property>
+                            <type>source</type>
+                            <value>FACTIVA</value>
+                        </property>
+                        <property>
+                            <type>why</type>
+                            <value>lineage</value>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>djn</type>
+                    <value>M/CYC</value>
+                    <itemid>djn|M/CYC</itemid>
+                    <properties>
+                        <property>
+                            <type>fcode</type>
+                            <value>M/CYC</value>
+                        </property>
+                        <property>
+                            <type>name</type>
+                            <value>M/CYC</value>
+                        </property>
+                        <property>
+                            <type>source</type>
+                            <value>FACTIVA</value>
+                        </property>
+                        <property>
+                            <type>why</type>
+                            <value>lineage</value>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>djn</type>
+                    <value>I/RTS</value>
+                    <itemid>djn|I/RTS</itemid>
+                    <properties>
+                        <property>
+                            <type>fcode</type>
+                            <value>I/RTS</value>
+                        </property>
+                        <property>
+                            <type>name</type>
+                            <value>I/RTS</value>
+                        </property>
+                        <property>
+                            <type>source</type>
+                            <value>FACTIVA</value>
+                        </property>
+                        <property>
+                            <type>why</type>
+                            <value>lineage</value>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>djn</type>
+                    <value>I/RTB</value>
+                    <itemid>djn|I/RTB</itemid>
+                    <properties>
+                        <property>
+                            <type>fcode</type>
+                            <value>I/RTB</value>
+                        </property>
+                        <property>
+                            <type>name</type>
+                            <value>I/RTB</value>
+                        </property>
+                        <property>
+                            <type>source</type>
+                            <value>FACTIVA</value>
+                        </property>
+                        <property>
+                            <type>why</type>
+                            <value>association</value>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>djn</type>
+                    <value>n/djn</value>
+                    <itemid>djn|n/djn</itemid>
+                    <properties>
+                        <property>
+                            <type>codetype</type>
+                            <value>djnCode</value>
+                        </property>
+                        <property>
+                            <type>name</type>
+                            <value>N/DJN</value>
+                        </property>
+                        <property>
+                            <type>source</type>
+                            <value>MANUAL</value>
+                        </property>
+                        <property>
+                            <type>status</type>
+                            <value>modified</value>
+                        </property>
+                        <property>
+                            <type>value</type>
+                            <value>n/djn</value>
+                        </property>
+                        <property>
+                            <type>seoname</type>
+                            <value>N/DJN</value>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>djn</type>
+                    <value>n/wer</value>
+                    <itemid>djn|n/wer</itemid>
+                    <properties>
+                        <property>
+                            <type>codetype</type>
+                            <value>djnCode</value>
+                        </property>
+                        <property>
+                            <type>name</type>
+                            <value>N/WER</value>
+                        </property>
+                        <property>
+                            <type>source</type>
+                            <value>MANUAL</value>
+                        </property>
+                        <property>
+                            <type>status</type>
+                            <value>modified</value>
+                        </property>
+                        <property>
+                            <type>value</type>
+                            <value>n/wer</value>
+                        </property>
+                        <property>
+                            <type>seoname</type>
+                            <value>N/WER</value>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>djn</type>
+                    <value>p/meth</value>
+                    <itemid>djn|p/meth</itemid>
+                    <properties>
+                        <property>
+                            <type>codetype</type>
+                            <value>djnCode</value>
+                        </property>
+                        <property>
+                            <type>name</type>
+                            <value>P/METH</value>
+                        </property>
+                        <property>
+                            <type>source</type>
+                            <value>MANUAL</value>
+                        </property>
+                        <property>
+                            <type>status</type>
+                            <value>modified</value>
+                        </property>
+                        <property>
+                            <type>value</type>
+                            <value>p/meth</value>
+                        </property>
+                        <property>
+                            <type>seoname</type>
+                            <value>P/METH</value>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>djn</type>
+                    <value>n/hrd</value>
+                    <itemid>djn|n/hrd</itemid>
+                    <properties>
+                        <property>
+                            <type>codetype</type>
+                            <value>djnCode</value>
+                        </property>
+                        <property>
+                            <type>name</type>
+                            <value>n/hrd</value>
+                        </property>
+                        <property>
+                            <type>source</type>
+                            <value>MANUAL</value>
+                        </property>
+                        <property>
+                            <type>status</type>
+                            <value>added</value>
+                        </property>
+                        <property>
+                            <type>value</type>
+                            <value>n/hrd</value>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>djn</type>
+                    <value>N/HRD</value>
+                    <itemid>djn|N/HRD</itemid>
+                    <properties>
+                        <property>
+                            <type>comments</type>
+                            <value>Mapping:ARTICLETYPE=Heard on the Street</value>
+                        </property>
+                        <property>
+                            <type>description</type>
+                            <value>01|Heard|Heard on the Street</value>
+                        </property>
+                        <property>
+                            <type>name</type>
+                            <value>Heard on the Street</value>
+                        </property>
+                        <property>
+                            <type>source</type>
+                            <value>EXPANDER</value>
+                        </property>
+                        <property>
+                            <type>status</type>
+                            <value>modified</value>
+                        </property>
+                        <property>
+                            <type>value</type>
+                            <value>N/HRD</value>
+                        </property>
+                        <property>
+                            <type>seoname</type>
+                            <value>Heard on the Street</value>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>first_publish_headline</type>
+                    <value>Alibaba Margin Squeeze Overshadows Mobile Success</value>
+                    <itemid>first_publish_headline|Alibaba Margin Squeeze Overshadows Mobile Success</itemid>
+                </property>
+                <property>
+                    <type>flow</type>
+                    <value>WSJ.com</value>
+                    <itemid>flow|WSJ.com</itemid>
+                    <properties>
+                        <property>
+                            <type>name</type>
+                            <value>WSJ.com</value>
+                        </property>
+                        <property>
+                            <type>status</type>
+                            <value>modified</value>
+                        </property>
+                        <property>
+                            <type>title</type>
+                            <value>Product</value>
+                        </property>
+                        <property>
+                            <type>value</type>
+                            <value>WSJ.com</value>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>flow</type>
+                    <value>WSJ</value>
+                    <itemid>flow|WSJ</itemid>
+                    <properties>
+                        <property>
+                            <type>name</type>
+                            <value>WSJ</value>
+                        </property>
+                        <property>
+                            <type>status</type>
+                            <value>modified</value>
+                        </property>
+                        <property>
+                            <type>title</type>
+                            <value>Product</value>
+                        </property>
+                        <property>
+                            <type>value</type>
+                            <value>WSJ</value>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>flow</type>
+                    <value>WSJAsia</value>
+                    <itemid>flow|WSJAsia</itemid>
+                    <properties>
+                        <property>
+                            <type>name</type>
+                            <value>WSJAsia</value>
+                        </property>
+                        <property>
+                            <type>status</type>
+                            <value>modified</value>
+                        </property>
+                        <property>
+                            <type>title</type>
+                            <value>Product</value>
+                        </property>
+                        <property>
+                            <type>value</type>
+                            <value>WSJAsia</value>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>flow</type>
+                    <value>WSJEurope</value>
+                    <itemid>flow|WSJEurope</itemid>
+                    <properties>
+                        <property>
+                            <type>name</type>
+                            <value>WSJEurope</value>
+                        </property>
+                        <property>
+                            <type>status</type>
+                            <value>modified</value>
+                        </property>
+                        <property>
+                            <type>title</type>
+                            <value>Product</value>
+                        </property>
+                        <property>
+                            <type>value</type>
+                            <value>WSJEurope</value>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>flow</type>
+                    <value>WSJSunday</value>
+                    <itemid>flow|WSJSunday</itemid>
+                    <properties>
+                        <property>
+                            <type>name</type>
+                            <value>WSJSunday</value>
+                        </property>
+                        <property>
+                            <type>status</type>
+                            <value>modified</value>
+                        </property>
+                        <property>
+                            <type>title</type>
+                            <value>Product</value>
+                        </property>
+                        <property>
+                            <type>value</type>
+                            <value>WSJSunday</value>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>flow</type>
+                    <value>WSJ Japanese</value>
+                    <itemid>flow|WSJ Japanese</itemid>
+                    <properties>
+                        <property>
+                            <type>name</type>
+                            <value>WSJ Japanese</value>
+                        </property>
+                        <property>
+                            <type>status</type>
+                            <value>modified</value>
+                        </property>
+                        <property>
+                            <type>title</type>
+                            <value>Product</value>
+                        </property>
+                        <property>
+                            <type>value</type>
+                            <value>WSJ Japanese</value>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>headline</type>
+                    <value>Alibaba Margin Squeeze Overshadows Mobile Success</value>
+                    <itemid>headline|Alibaba Margin Squeeze Overshadows Mobile Success</itemid>
+                </property>
+                <property>
+                    <type>icb</type>
+                    <value>5000</value>
+                    <itemid>icb|5000</itemid>
+                    <properties>
+                        <property>
+                            <type>fcode</type>
+                            <value>5000</value>
+                        </property>
+                        <property>
+                            <type>name</type>
+                            <value>Consumer Services</value>
+                        </property>
+                        <property>
+                            <type>source</type>
+                            <value>FACTIVA</value>
+                        </property>
+                        <property>
+                            <type>why</type>
+                            <value>lineage</value>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>icb</type>
+                    <value>5300</value>
+                    <itemid>icb|5300</itemid>
+                    <properties>
+                        <property>
+                            <type>fcode</type>
+                            <value>5300</value>
+                        </property>
+                        <property>
+                            <type>name</type>
+                            <value>Retail</value>
+                        </property>
+                        <property>
+                            <type>source</type>
+                            <value>FACTIVA</value>
+                        </property>
+                        <property>
+                            <type>why</type>
+                            <value>lineage</value>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>icb</type>
+                    <value>5370</value>
+                    <itemid>icb|5370</itemid>
+                    <properties>
+                        <property>
+                            <type>fcode</type>
+                            <value>5370</value>
+                        </property>
+                        <property>
+                            <type>name</type>
+                            <value>General Retailers</value>
+                        </property>
+                        <property>
+                            <type>source</type>
+                            <value>FACTIVA</value>
+                        </property>
+                        <property>
+                            <type>why</type>
+                            <value>lineage</value>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>icb</type>
+                    <value>5373</value>
+                    <itemid>icb|5373</itemid>
+                    <properties>
+                        <property>
+                            <type>fcode</type>
+                            <value>5373</value>
+                        </property>
+                        <property>
+                            <type>name</type>
+                            <value>Broadline Retailers</value>
+                        </property>
+                        <property>
+                            <type>source</type>
+                            <value>FACTIVA</value>
+                        </property>
+                        <property>
+                            <type>why</type>
+                            <value>association</value>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>icbindustry</type>
+                    <value>9535</value>
+                    <itemid>icbindustry|9535</itemid>
+                    <properties>
+                        <property>
+                            <type>comments</type>
+                            <value>Keyword:DJII-INDUSTRY itech,iecom,iint</value>
+                        </property>
+                        <property>
+                            <type>description</type>
+                            <value>05|Tech|Internet</value>
+                        </property>
+                        <property>
+                            <type>name</type>
+                            <value>9535</value>
+                        </property>
+                        <property>
+                            <type>source</type>
+                            <value>EXPANDER</value>
+                        </property>
+                        <property>
+                            <type>value</type>
+                            <value>9535</value>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>in</type>
+                    <value>itech</value>
+                    <itemid>in|itech</itemid>
+                    <properties>
+                        <property>
+                            <type>fcode</type>
+                            <value>itech</value>
+                        </property>
+                        <property>
+                            <type>name</type>
+                            <value>Technology</value>
+                        </property>
+                        <property>
+                            <type>source</type>
+                            <value>FACTIVA</value>
+                        </property>
+                        <property>
+                            <type>why</type>
+                            <value>lineage</value>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>in</type>
+                    <value>iebus</value>
+                    <itemid>in|iebus</itemid>
+                    <properties>
+                        <property>
+                            <type>fcode</type>
+                            <value>iebus</value>
+                        </property>
+                        <property>
+                            <type>name</type>
+                            <value>B2B e-commerce</value>
+                        </property>
+                        <property>
+                            <type>source</type>
+                            <value>FACTIVA</value>
+                        </property>
+                        <property>
+                            <type>why</type>
+                            <value>association</value>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>in</type>
+                    <value>iecom</value>
+                    <itemid>in|iecom</itemid>
+                    <properties>
+                        <property>
+                            <type>fcode</type>
+                            <value>iecom</value>
+                        </property>
+                        <property>
+                            <type>name</type>
+                            <value>E-commerce</value>
+                        </property>
+                        <property>
+                            <type>source</type>
+                            <value>FACTIVA</value>
+                        </property>
+                        <property>
+                            <type>why</type>
+                            <value>lineage</value>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>in</type>
+                    <value>IINT</value>
+                    <itemid>in|IINT</itemid>
+                    <properties>
+                        <property>
+                            <type>fcode</type>
+                            <value>IINT</value>
+                        </property>
+                        <property>
+                            <type>name</type>
+                            <value>Internet/Online</value>
+                        </property>
+                        <property>
+                            <type>source</type>
+                            <value>MANUAL</value>
+                        </property>
+                        <property>
+                            <type>status</type>
+                            <value>added</value>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>inset</type>
+                    <value>inset-1</value>
+                    <itemid>inset|inset-1</itemid>
+                </property>
+                <property>
+                    <type>jcode</type>
+                    <value>HST</value>
+                    <itemid>jcode|HST</itemid>
+                    <properties>
+                        <property>
+                            <type>comments</type>
+                            <value>Mapping:ARTICLETYPE=Heard on the Street</value>
+                        </property>
+                        <property>
+                            <type>description</type>
+                            <value>Heard on the Street</value>
+                        </property>
+                        <property>
+                            <type>name</type>
+                            <value>HST</value>
+                        </property>
+                        <property>
+                            <type>source</type>
+                            <value>EXPANDER</value>
+                        </property>
+                        <property>
+                            <type>value</type>
+                            <value>HST</value>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>keyword</type>
+                    <value>ALIBABA</value>
+                    <itemid>keyword|ALIBABA</itemid>
+                    <properties>
+                        <property>
+                            <type>name</type>
+                            <value>ALIBABA</value>
+                        </property>
+                        <property>
+                            <type>status</type>
+                            <value>added</value>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>keyword</type>
+                    <value>ALIBABA IPO</value>
+                    <itemid>keyword|ALIBABA IPO</itemid>
+                    <properties>
+                        <property>
+                            <type>name</type>
+                            <value>ALIBABA IPO</value>
+                        </property>
+                        <property>
+                            <type>status</type>
+                            <value>added</value>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>keyword</type>
+                    <value>ALIBABA RESULTS</value>
+                    <itemid>keyword|ALIBABA RESULTS</itemid>
+                    <properties>
+                        <property>
+                            <type>name</type>
+                            <value>ALIBABA RESULTS</value>
+                        </property>
+                        <property>
+                            <type>status</type>
+                            <value>added</value>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>keyword</type>
+                    <value>ALIBABA EARNINGS</value>
+                    <itemid>keyword|ALIBABA EARNINGS</itemid>
+                    <properties>
+                        <property>
+                            <type>name</type>
+                            <value>ALIBABA EARNINGS</value>
+                        </property>
+                        <property>
+                            <type>status</type>
+                            <value>added</value>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>keyword</type>
+                    <value>HEARD ON THE STREET</value>
+                    <itemid>keyword|HEARD ON THE STREET</itemid>
+                    <properties>
+                        <property>
+                            <type>name</type>
+                            <value>HEARD ON THE STREET</value>
+                        </property>
+                        <property>
+                            <type>status</type>
+                            <value>added</value>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>keyword</type>
+                    <value>ALIBABA MARGIN</value>
+                    <itemid>keyword|ALIBABA MARGIN</itemid>
+                    <properties>
+                        <property>
+                            <type>name</type>
+                            <value>ALIBABA MARGIN</value>
+                        </property>
+                        <property>
+                            <type>status</type>
+                            <value>added</value>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>keyword</type>
+                    <value>ALIBABA MARGINS</value>
+                    <itemid>keyword|ALIBABA MARGINS</itemid>
+                    <properties>
+                        <property>
+                            <type>name</type>
+                            <value>ALIBABA MARGINS</value>
+                        </property>
+                        <property>
+                            <type>status</type>
+                            <value>added</value>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>keyword</type>
+                    <value>CHINA ALIBABA</value>
+                    <itemid>keyword|CHINA ALIBABA</itemid>
+                    <properties>
+                        <property>
+                            <type>name</type>
+                            <value>CHINA ALIBABA</value>
+                        </property>
+                        <property>
+                            <type>status</type>
+                            <value>added</value>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>media</type>
+                    <value>media-13</value>
+                    <itemid>media|media-13</itemid>
+                </property>
+                <property>
+                    <type>media</type>
+                    <value>media-14</value>
+                    <itemid>media|media-14</itemid>
+                </property>
+                <property>
+                    <type>media</type>
+                    <value>media-15</value>
+                    <itemid>media|media-15</itemid>
+                </property>
+                <property>
+                    <type>ns</type>
+                    <value>c1711</value>
+                    <itemid>ns|c1711</itemid>
+                    <properties>
+                        <property>
+                            <type>fcode</type>
+                            <value>c1711</value>
+                        </property>
+                        <property>
+                            <type>name</type>
+                            <value>Initial Public Offerings</value>
+                        </property>
+                        <property>
+                            <type>onlinesignificance</type>
+                            <value>prominent</value>
+                        </property>
+                        <property>
+                            <type>significance</type>
+                            <value>prominent</value>
+                        </property>
+                        <property>
+                            <type>source</type>
+                            <value>FACTIVA</value>
+                        </property>
+                        <property>
+                            <type>why</type>
+                            <value>about</value>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>ns</type>
+                    <value>c02</value>
+                    <itemid>ns|c02</itemid>
+                    <properties>
+                        <property>
+                            <type>fcode</type>
+                            <value>c02</value>
+                        </property>
+                        <property>
+                            <type>name</type>
+                            <value>Corporate Changes</value>
+                        </property>
+                        <property>
+                            <type>source</type>
+                            <value>FACTIVA</value>
+                        </property>
+                        <property>
+                            <type>why</type>
+                            <value>lineage</value>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>ns</type>
+                    <value>c14</value>
+                    <itemid>ns|c14</itemid>
+                    <properties>
+                        <property>
+                            <type>fcode</type>
+                            <value>c14</value>
+                        </property>
+                        <property>
+                            <type>name</type>
+                            <value>Stock Listings</value>
+                        </property>
+                        <property>
+                            <type>source</type>
+                            <value>FACTIVA</value>
+                        </property>
+                        <property>
+                            <type>why</type>
+                            <value>lineage</value>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>ns</type>
+                    <value>c17</value>
+                    <itemid>ns|c17</itemid>
+                    <properties>
+                        <property>
+                            <type>fcode</type>
+                            <value>c17</value>
+                        </property>
+                        <property>
+                            <type>name</type>
+                            <value>Funding/Capital</value>
+                        </property>
+                        <property>
+                            <type>source</type>
+                            <value>FACTIVA</value>
+                        </property>
+                        <property>
+                            <type>why</type>
+                            <value>lineage</value>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>ns</type>
+                    <value>c171</value>
+                    <itemid>ns|c171</itemid>
+                    <properties>
+                        <property>
+                            <type>fcode</type>
+                            <value>c171</value>
+                        </property>
+                        <property>
+                            <type>name</type>
+                            <value>Share Capital</value>
+                        </property>
+                        <property>
+                            <type>source</type>
+                            <value>FACTIVA</value>
+                        </property>
+                        <property>
+                            <type>why</type>
+                            <value>lineage</value>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>ns</type>
+                    <value>cactio</value>
+                    <itemid>ns|cactio</itemid>
+                    <properties>
+                        <property>
+                            <type>fcode</type>
+                            <value>cactio</value>
+                        </property>
+                        <property>
+                            <type>name</type>
+                            <value>Corporate Actions</value>
+                        </property>
+                        <property>
+                            <type>source</type>
+                            <value>FACTIVA</value>
+                        </property>
+                        <property>
+                            <type>why</type>
+                            <value>lineage</value>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>ns</type>
+                    <value>ccat</value>
+                    <itemid>ns|ccat</itemid>
+                    <properties>
+                        <property>
+                            <type>fcode</type>
+                            <value>ccat</value>
+                        </property>
+                        <property>
+                            <type>name</type>
+                            <value>Corporate/Industrial News</value>
+                        </property>
+                        <property>
+                            <type>source</type>
+                            <value>FACTIVA</value>
+                        </property>
+                        <property>
+                            <type>why</type>
+                            <value>lineage</value>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>ns</type>
+                    <value>ncat</value>
+                    <itemid>ns|ncat</itemid>
+                    <properties>
+                        <property>
+                            <type>fcode</type>
+                            <value>ncat</value>
+                        </property>
+                        <property>
+                            <type>internalsymbol</type>
+                            <value>true</value>
+                        </property>
+                        <property>
+                            <type>name</type>
+                            <value>Content Types</value>
+                        </property>
+                        <property>
+                            <type>source</type>
+                            <value>FACTIVA</value>
+                        </property>
+                        <property>
+                            <type>why</type>
+                            <value>lineage</value>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>ns</type>
+                    <value>nfact</value>
+                    <itemid>ns|nfact</itemid>
+                    <properties>
+                        <property>
+                            <type>fcode</type>
+                            <value>nfact</value>
+                        </property>
+                        <property>
+                            <type>internalsymbol</type>
+                            <value>true</value>
+                        </property>
+                        <property>
+                            <type>name</type>
+                            <value>Factiva Filters</value>
+                        </property>
+                        <property>
+                            <type>source</type>
+                            <value>FACTIVA</value>
+                        </property>
+                        <property>
+                            <type>why</type>
+                            <value>lineage</value>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>ns</type>
+                    <value>nfcpin</value>
+                    <itemid>ns|nfcpin</itemid>
+                    <properties>
+                        <property>
+                            <type>fcode</type>
+                            <value>nfcpin</value>
+                        </property>
+                        <property>
+                            <type>internalsymbol</type>
+                            <value>true</value>
+                        </property>
+                        <property>
+                            <type>name</type>
+                            <value>FC&amp;E Industry News Filter</value>
+                        </property>
+                        <property>
+                            <type>source</type>
+                            <value>FACTIVA</value>
+                        </property>
+                        <property>
+                            <type>why</type>
+                            <value>lineage</value>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>nwchain</type>
+                    <value>SB100014240529702036228045801190008065082461</value>
+                    <itemid>nwchain|SB100014240529702036228045801190008065082461</itemid>
+                </property>
+                <property>
+                    <type>re</type>
+                    <value>apacz</value>
+                    <itemid>re|apacz</itemid>
+                    <properties>
+                        <property>
+                            <type>fcode</type>
+                            <value>apacz</value>
+                        </property>
+                        <property>
+                            <type>name</type>
+                            <value>Asia Pacific</value>
+                        </property>
+                        <property>
+                            <type>source</type>
+                            <value>FACTIVA</value>
+                        </property>
+                        <property>
+                            <type>subcat</type>
+                            <value>snr</value>
+                        </property>
+                        <property>
+                            <type>why</type>
+                            <value>lineage</value>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>re</type>
+                    <value>asiaz</value>
+                    <itemid>re|asiaz</itemid>
+                    <properties>
+                        <property>
+                            <type>fcode</type>
+                            <value>asiaz</value>
+                        </property>
+                        <property>
+                            <type>name</type>
+                            <value>Asia</value>
+                        </property>
+                        <property>
+                            <type>source</type>
+                            <value>FACTIVA</value>
+                        </property>
+                        <property>
+                            <type>subcat</type>
+                            <value>snr</value>
+                        </property>
+                        <property>
+                            <type>why</type>
+                            <value>lineage</value>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>re</type>
+                    <value>bric</value>
+                    <itemid>re|bric</itemid>
+                    <properties>
+                        <property>
+                            <type>fcode</type>
+                            <value>bric</value>
+                        </property>
+                        <property>
+                            <type>name</type>
+                            <value>BRIC Countries</value>
+                        </property>
+                        <property>
+                            <type>source</type>
+                            <value>FACTIVA</value>
+                        </property>
+                        <property>
+                            <type>subcat</type>
+                            <value>eco</value>
+                        </property>
+                        <property>
+                            <type>why</type>
+                            <value>lineage</value>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>re</type>
+                    <value>chinaz</value>
+                    <itemid>re|chinaz</itemid>
+                    <properties>
+                        <property>
+                            <type>fcode</type>
+                            <value>chinaz</value>
+                        </property>
+                        <property>
+                            <type>name</type>
+                            <value>Greater China</value>
+                        </property>
+                        <property>
+                            <type>source</type>
+                            <value>FACTIVA</value>
+                        </property>
+                        <property>
+                            <type>subcat</type>
+                            <value>sc</value>
+                        </property>
+                        <property>
+                            <type>why</type>
+                            <value>lineage</value>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>re</type>
+                    <value>devgcoz</value>
+                    <itemid>re|devgcoz</itemid>
+                    <properties>
+                        <property>
+                            <type>fcode</type>
+                            <value>devgcoz</value>
+                        </property>
+                        <property>
+                            <type>name</type>
+                            <value>Emerging Market Countries</value>
+                        </property>
+                        <property>
+                            <type>source</type>
+                            <value>FACTIVA</value>
+                        </property>
+                        <property>
+                            <type>subcat</type>
+                            <value>eco</value>
+                        </property>
+                        <property>
+                            <type>why</type>
+                            <value>lineage</value>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>re</type>
+                    <value>dvpcoz</value>
+                    <itemid>re|dvpcoz</itemid>
+                    <properties>
+                        <property>
+                            <type>fcode</type>
+                            <value>dvpcoz</value>
+                        </property>
+                        <property>
+                            <type>name</type>
+                            <value>Developing Economies</value>
+                        </property>
+                        <property>
+                            <type>source</type>
+                            <value>FACTIVA</value>
+                        </property>
+                        <property>
+                            <type>subcat</type>
+                            <value>eco</value>
+                        </property>
+                        <property>
+                            <type>why</type>
+                            <value>lineage</value>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>re</type>
+                    <value>easiaz</value>
+                    <itemid>re|easiaz</itemid>
+                    <properties>
+                        <property>
+                            <type>fcode</type>
+                            <value>easiaz</value>
+                        </property>
+                        <property>
+                            <type>name</type>
+                            <value>Eastern Asia</value>
+                        </property>
+                        <property>
+                            <type>source</type>
+                            <value>FACTIVA</value>
+                        </property>
+                        <property>
+                            <type>subcat</type>
+                            <value>sc</value>
+                        </property>
+                        <property>
+                            <type>why</type>
+                            <value>lineage</value>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>re</type>
+                    <value>namz</value>
+                    <itemid>re|namz</itemid>
+                    <properties>
+                        <property>
+                            <type>fcode</type>
+                            <value>namz</value>
+                        </property>
+                        <property>
+                            <type>name</type>
+                            <value>North America</value>
+                        </property>
+                        <property>
+                            <type>source</type>
+                            <value>FACTIVA</value>
+                        </property>
+                        <property>
+                            <type>subcat</type>
+                            <value>snr</value>
+                        </property>
+                        <property>
+                            <type>why</type>
+                            <value>lineage</value>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>re</type>
+                    <value>CHINA</value>
+                    <itemid>re|CHINA</itemid>
+                    <properties>
+                        <property>
+                            <type>fcode</type>
+                            <value>CHINA</value>
+                        </property>
+                        <property>
+                            <type>name</type>
+                            <value>China</value>
+                        </property>
+                        <property>
+                            <type>source</type>
+                            <value>MANUAL</value>
+                        </property>
+                        <property>
+                            <type>status</type>
+                            <value>added</value>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>re</type>
+                    <value>USA</value>
+                    <itemid>re|USA</itemid>
+                    <properties>
+                        <property>
+                            <type>fcode</type>
+                            <value>USA</value>
+                        </property>
+                        <property>
+                            <type>name</type>
+                            <value>United States</value>
+                        </property>
+                        <property>
+                            <type>source</type>
+                            <value>MANUAL</value>
+                        </property>
+                        <property>
+                            <type>status</type>
+                            <value>added</value>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>relay</type>
+                    <value>SYND</value>
+                    <itemid>relay|SYND</itemid>
+                    <properties>
+                        <property>
+                            <type>name</type>
+                            <value>SYND</value>
+                        </property>
+                        <property>
+                            <type>source</type>
+                            <value>EXPANDER</value>
+                        </property>
+                        <property>
+                            <type>value</type>
+                            <value>SYND</value>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>statistic</type>
+                    <value>CODES_REVIEWED</value>
+                    <itemid>statistic|CODES_REVIEWED</itemid>
+                    <properties>
+                        <property>
+                            <type>name</type>
+                            <value>CODES_REVIEWED</value>
+                        </property>
+                        <property>
+                            <type>value</type>
+                            <value>CODES_REVIEWED</value>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>subject</type>
+                    <value>OCHN</value>
+                    <itemid>subject|OCHN</itemid>
+                    <properties>
+                        <property>
+                            <type>comments</type>
+                            <value>Keyword:DJII-REGION chinaz,dvpcoz,easiaz,asiaz,bric,usa,apacz,devgcoz,namz,china</value>
+                        </property>
+                        <property>
+                            <type>description</type>
+                            <value>01|World|China News</value>
+                        </property>
+                        <property>
+                            <type>name</type>
+                            <value>OCHN</value>
+                        </property>
+                        <property>
+                            <type>source</type>
+                            <value>EXPANDER</value>
+                        </property>
+                        <property>
+                            <type>value</type>
+                            <value>OCHN</value>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>subject</type>
+                    <value>OPIO</value>
+                    <itemid>subject|OPIO</itemid>
+                    <properties>
+                        <property>
+                            <type>comments</type>
+                            <value>Keyword:DJII-SUBJECT c1711</value>
+                        </property>
+                        <property>
+                            <type>description</type>
+                            <value>04|Markets|IPOs/Equity Markets</value>
+                        </property>
+                        <property>
+                            <type>name</type>
+                            <value>OPIO</value>
+                        </property>
+                        <property>
+                            <type>source</type>
+                            <value>EXPANDER</value>
+                        </property>
+                        <property>
+                            <type>value</type>
+                            <value>OPIO</value>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>subject</type>
+                    <value>OASN</value>
+                    <itemid>subject|OASN</itemid>
+                    <properties>
+                        <property>
+                            <type>comments</type>
+                            <value>Keyword:DJII-REGION chinaz,dvpcoz,easiaz,asiaz,bric,usa,apacz,devgcoz,namz,china</value>
+                        </property>
+                        <property>
+                            <type>description</type>
+                            <value>01|World|Asia News</value>
+                        </property>
+                        <property>
+                            <type>name</type>
+                            <value>OASN</value>
+                        </property>
+                        <property>
+                            <type>source</type>
+                            <value>EXPANDER</value>
+                        </property>
+                        <property>
+                            <type>value</type>
+                            <value>OASN</value>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>subject</type>
+                    <value>OTEC</value>
+                    <itemid>subject|OTEC</itemid>
+                    <properties>
+                        <property>
+                            <type>comments</type>
+                            <value>Keyword:DJII-INDUSTRY itech,iecom,iint</value>
+                        </property>
+                        <property>
+                            <type>description</type>
+                            <value>05|Tech|Tech</value>
+                        </property>
+                        <property>
+                            <type>name</type>
+                            <value>OTEC</value>
+                        </property>
+                        <property>
+                            <type>source</type>
+                            <value>EXPANDER</value>
+                        </property>
+                        <property>
+                            <type>value</type>
+                            <value>OTEC</value>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>subject</type>
+                    <value>ONEW</value>
+                    <itemid>subject|ONEW</itemid>
+                    <properties>
+                        <property>
+                            <type>comments</type>
+                            <value>Keyword:DJII-REGION chinaz,dvpcoz,easiaz,asiaz,bric,usa,apacz,devgcoz,namz,china</value>
+                        </property>
+                        <property>
+                            <type>description</type>
+                            <value>01|US|US News</value>
+                        </property>
+                        <property>
+                            <type>name</type>
+                            <value>US News</value>
+                        </property>
+                        <property>
+                            <type>source</type>
+                            <value>EXPANDER</value>
+                        </property>
+                        <property>
+                            <type>status</type>
+                            <value>modified</value>
+                        </property>
+                        <property>
+                            <type>value</type>
+                            <value>ONEW</value>
+                        </property>
+                        <property>
+                            <type>seoname</type>
+                            <value>US News</value>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>subject</type>
+                    <value>OMKM</value>
+                    <itemid>subject|OMKM</itemid>
+                    <properties>
+                        <property>
+                            <type>comments</type>
+                            <value>Mapping:ARTICLETYPE=Heard on the Street</value>
+                        </property>
+                        <property>
+                            <type>description</type>
+                            <value>04|Markets|Markets</value>
+                        </property>
+                        <property>
+                            <type>name</type>
+                            <value>Markets</value>
+                        </property>
+                        <property>
+                            <type>source</type>
+                            <value>EXPANDER</value>
+                        </property>
+                        <property>
+                            <type>status</type>
+                            <value>modified</value>
+                        </property>
+                        <property>
+                            <type>value</type>
+                            <value>OMKM</value>
+                        </property>
+                        <property>
+                            <type>seoname</type>
+                            <value>Markets</value>
+                        </property>
+                    </properties>
+                </property>
+            </properties>
+        </self-codes>
+    </meta-data>
+    <summary id="S-SB10001424052970203622804580119000806508246.djml">
+        <summary-header>
+            <nameloc id="i1-SB10001424052970203622804580119000806508246">
+                <nmlist nametype="ENTITY">http://live.wsj.com/video/alibabas-pre-ipo-report-card/250BEE9A-02EE-4E3D-9780-BA337C87D98D.html#!250BEE9A-02EE-4E3D-9780-BA337C87D98D</nmlist>
+            </nameloc>
+        </summary-header>
+        <alt-summary-body destination-type="THIS-ART" page="Images">
+            <media alignment="LEFT" id="media-1" reuse-type="full" type="ILLUSTRATION">
+                <image alternate-text="image" height="267"
+                    slug="alibaba"
+                    src-id="BN-EH430_alibab_OR_20140828024242.jpg" width="400"/>
+                <media-credit>Agence France-Presse/Getty Images</media-credit>
+            </media>
+            <media alignment="LEFT" id="media-2" reuse-type="full" type="ILLUSTRATION">
+                <image alternate-text="image" height="76" slug="alibaba"
+                    src-id="BN-EH430_alibab_A_20140828024242.jpg" width="76"/>
+                <media-credit>Agence France-Presse/Getty Images</media-credit>
+            </media>
+            <media alignment="LEFT" id="media-3" reuse-type="full" type="ILLUSTRATION">
+                <image alternate-text="image" height="220"
+                    slug="alibaba"
+                    src-id="BN-EH430_alibab_AM_20140828024242.jpg" width="220"/>
+                <media-credit>Agence France-Presse/Getty Images</media-credit>
+            </media>
+            <media alignment="LEFT" id="media-4" reuse-type="full" type="ILLUSTRATION">
+                <image alternate-text="image" height="188"
+                    slug="alibaba"
+                    src-id="BN-EH430_alibab_BR_20140828024242.jpg" width="282"/>
+                <media-credit>Agence France-Presse/Getty Images</media-credit>
+            </media>
+            <media alignment="LEFT" id="media-5" reuse-type="full" type="ILLUSTRATION">
+                <image alternate-text="image" height="94" slug="alibaba"
+                    src-id="BN-EH430_alibab_C_20140828024242.jpg" width="167"/>
+                <media-credit>Agence France-Presse/Getty Images</media-credit>
+            </media>
+            <media alignment="LEFT" id="media-6" reuse-type="full" type="ILLUSTRATION">
+                <image alternate-text="image" height="174"
+                    slug="alibaba"
+                    src-id="BN-EH430_alibab_D_20140828024242.jpg" width="262"/>
+                <media-credit>Agence France-Presse/Getty Images</media-credit>
+            </media>
+            <media alignment="LEFT" id="media-7" reuse-type="full" type="ILLUSTRATION">
+                <image alternate-text="image" height="239"
+                    slug="alibaba"
+                    src-id="BN-EH430_alibab_E_20140828024242.jpg" width="359"/>
+                <media-credit>Agence France-Presse/Getty Images</media-credit>
+            </media>
+            <media alignment="LEFT" id="media-8" reuse-type="full" type="ILLUSTRATION">
+                <image alternate-text="image" height="402"
+                    slug="alibaba"
+                    src-id="BN-EH430_alibab_ER_20140828024242.jpg" width="602"/>
+                <media-credit>Agence France-Presse/Getty Images</media-credit>
+            </media>
+            <media alignment="LEFT" id="media-9" reuse-type="full" type="ILLUSTRATION">
+                <image alternate-text="image" height="226"
+                    slug="alibaba"
+                    src-id="BN-EH430_alibab_F_20140828024242.jpg" width="571"/>
+                <media-credit>Agence France-Presse/Getty Images</media-credit>
+            </media>
+            <media alignment="LEFT" id="media-10" reuse-type="full" type="ILLUSTRATION">
+                <image alternate-text="image" height="810"
+                    slug="alibaba"
+                    src-id="BN-EH430_alibab_FR_20140828024242.jpg" width="632"/>
+                <media-credit>Agence France-Presse/Getty Images</media-credit>
+            </media>
+            <media alignment="LEFT" id="media-11" reuse-type="full" type="ILLUSTRATION">
+                <image alternate-text="image" height="369"
+                    slug="alibaba"
+                    src-id="BN-EH430_alibab_G_20140828024242.jpg" width="553"/>
+                <media-credit>Agence France-Presse/Getty Images</media-credit>
+            </media>
+            <media alignment="LEFT" id="media-12" reuse-type="full" type="ILLUSTRATION">
+                <image alternate-text="image" height="810"
+                    slug="alibaba"
+                    src-id="BN-EH430_alibab_GR_20140828024242.jpg" width="1242"/>
+                <media-credit>Agence France-Presse/Getty Images</media-credit>
+            </media>
+        </alt-summary-body>
+        <alt-summary-body destination-type="THIS-ART" page="|SEO|">
+            <headline>
+                <main-hed>Heard on the Street: Alibaba Margin Squeeze Overshadows Mobile Success</main-hed>
+            </headline>
+            <p>Alibaba's strong mobile sales growth should please investors. But falling margins don't bode well for a maximum IPO valuation.</p>
+        </alt-summary-body>
+        <alt-summary-body destination-type="THIS-ART" page="|Mobile|">
+            <headline>
+                <main-hed>Heard: Alibaba Margin Squeeze Overshadows Mobile Success</main-hed>
+            </headline>
+            <p>Alibaba's strong mobile sales growth should please investors. But falling margins don't bode well for a maximum IPO valuation.</p>
+        </alt-summary-body>
+        <alt-summary-body destination-type="THIS-ART" page="|Social|">
+            <headline>
+                <main-hed>Alibaba margin squeeze overshadows mobile success &#x2013; Heard on the Street</main-hed>
+            </headline>
+        </alt-summary-body>
+        <alt-summary-body destination-type="THIS-ART" page="|NW Alt Headline|">
+            <headline>
+                <main-hed>Alibaba Margin Squeeze Overshadows Mobile Success -- Heard on the Street</main-hed>
+            </headline>
+            <p/>
+        </alt-summary-body>
+        <summary-body>
+            <headline>
+                <main-hed>Alibaba Margin Squeeze Overshadows Mobile Success</main-hed>
+            </headline>
+            <p>Alibaba's strong mobile sales growth should please investors. But falling margins don't bode well for a maximum IPO valuation.</p>
+            <list type="UNORDERED">
+                <list-item>
+                    <link icon="video"
+                        linkend="i1-SB10001424052970203622804580119000806508246" type="EXTERNAL">
+                        <highlight type="BOLD">Video: </highlight>Alibaba's Pre-IPO Report Card</link>
+                </list-item>
+            </list>
+        </summary-body>
+    </summary>
+    <article>
+        <article-header>
+            <nameloc id="i2-SB10001424052970203622804580119000806508246">
+                <nmlist nametype="ENTITY">http://online.wsj.com/articles/alibaba-ipo-has-unusual-challenges-for-bankers-1407769942</nmlist>
+            </nameloc>
+            <nameloc id="i3-SB10001424052970203622804580119000806508246">
+                <nmlist nametype="ENTITY">http://online.wsj.com/articles/alibabas-results-improve-in-june-quarter-1409145617</nmlist>
+            </nameloc>
+            <nameloc id="i4-SB10001424052970203622804580119000806508246">
+                <nmlist nametype="ENTITY">http://online.wsj.com/articles/heard-on-the-street-alibabas-unsettling-book-of-revelation-1402936767</nmlist>
+            </nameloc>
+            <nameloc id="i5-SB10001424052970203622804580119000806508246">
+                <nmlist nametype="ENTITY">http://online.wsj.com/articles/youku-streams-problems-alibabas-way-heard-on-the-street-1408520227</nmlist>
+            </nameloc>
+            <nameloc id="i6-SB10001424052970203622804580119000806508246">
+                <nmlist nametype="ENTITY">http://online.wsj.com/articles/alibaba-flops-in-accounting-for-acquisition-binge-heard-on-the-street-1408082616</nmlist>
+            </nameloc>
+            <nameloc id="i7-SB10001424052970203622804580119000806508246">
+                <nmlist nametype="ENTITY">http://wsj.com/email/outset_subscribe?checklist=5</nmlist>
+            </nameloc>
+            <nameloc id="i8-SB10001424052970203622804580119000806508246">
+                <nmlist nametype="ENTITY">http://wsj.com/email/outset_subscribe?checklist=203</nmlist>
+            </nameloc>
+        </article-header>
+        <article-body>
+            <headline>
+                <main-hed>Alibaba Margin Squeeze Overshadows Mobile Success</main-hed>
+            </headline>
+            <byline type="SIGNED">By <phrase type="AUTHOR">Aaron Back </phrase>
+            </byline>
+            <media id="media-13" type="VIDEO">
+                <image alternate-text="player=F"
+                    slug="video-250BEE9A-02EE-4E3D-9780-BA337C87D98D" src-id="250BEE9A-02EE-4E3D-9780-BA337C87D98D"/>
+                <media-caption>Alibaba's second quarter results showed Chinese online shoppers were migrating to mobile devices in droves, as the company prepares for what could be the biggest IPO in U.S. history. But an operating margin squeeze could keep Alibaba's valuation in check. Heard on the Street columnists Aaron Back, Alex Frangos and Abheek Bhattacharya chat about what's next for China's e-commerce giant.</media-caption>
+            </media>
+
+            <p>Alibaba's core e-commerce business is powering ahead. Too bad that's not all investors will get in its <link
+                    icon="none"
+                    linkend="i2-SB10001424052970203622804580119000806508246" type="EXTERNAL">initial public offering</link>.</p>
+
+            <p>In the last batch of quarterly results that investors are likely to see before its initial public offering, Alibaba posted a 46% on-year <link
+                    icon="none"
+                    linkend="i3-SB10001424052970203622804580119000806508246" type="EXTERNAL">rise in revenue for the three months to June</link>. Also encouraging was its rapid progress migrating to mobile devices. Mobile accounted for 33% of gross merchandise volume, up from 27% the previous quarter. </p>
+            <p>Less encouraging for those banking on a big Alibaba valuation is that profitability is still being squeezed. While net profit nearly tripled from a year earlier to $2 billion, this was largely due to a one-off revaluation gain on previously acquired assets, which contributed $1 billion to the bottom line.</p>
+            <media height="355" id="media-14" reuse-type="full"
+                thumbnail-src="AM-BE945_CHINAH_D_20140828004505.jpg"
+                type="ILLUSTRATION" width="262">
+                <image alternate-text="image" height="749"
+                    slug="CHINAHERD"
+                    src-id="AM-BE945_CHINAH_G_20140828004505.jpg" width="553"/>
+            </media>
+            <p>More important, operating margins fell to 43% from 45% the previous quarter and 50% a year earlier. Sanford C. Bernstein, whose estimate for Alibaba's valuation has already come down to $205 billion from $230 billion in June, still projects operating margins of 50% or higher for the next three fiscal years, even though they are already well below that level. </p>
+            <p>Last quarter, optimistic analysts argued the margin squeeze was largely due to higher share-based compensation, not underlying costs. That's not the case this quarter. Even after taking out share-based compensation, operating margins still fell by almost four percentage points from a year earlier. Sales and marketing expenses rose 70% from a year earlier, while product development costs soared 92%.</p>
+            <media id="media-15" reuse-type="full" type="ILLUSTRATION">
+                <image alternate-text="image" height="369"
+                    slug="alibaba"
+                    src-id="BN-EH430_alibab_G_20140828024242.jpg" width="553"/>
+                <alt-image alternate-text="image" height="76"
+                    slug="alibaba"
+                    src-id="BN-EH430_alibab_A_20140828024242.jpg" width="76"/>
+                <alt-image alternate-text="image" height="220"
+                    slug="alibaba"
+                    src-id="BN-EH430_alibab_AM_20140828024242.jpg" width="220"/>
+                <alt-image alternate-text="image" height="188"
+                    slug="alibaba"
+                    src-id="BN-EH430_alibab_BR_20140828024242.jpg" width="282"/>
+                <alt-image alternate-text="image" height="94"
+                    slug="alibaba"
+                    src-id="BN-EH430_alibab_C_20140828024242.jpg" width="167"/>
+                <alt-image alternate-text="image" height="174"
+                    slug="alibaba"
+                    src-id="BN-EH430_alibab_D_20140828024242.jpg" width="262"/>
+                <alt-image alternate-text="image" height="239"
+                    slug="alibaba"
+                    src-id="BN-EH430_alibab_E_20140828024242.jpg" width="359"/>
+                <alt-image alternate-text="image" height="402"
+                    slug="alibaba"
+                    src-id="BN-EH430_alibab_ER_20140828024242.jpg" width="602"/>
+                <alt-image alternate-text="image" height="226"
+                    slug="alibaba"
+                    src-id="BN-EH430_alibab_F_20140828024242.jpg" width="571"/>
+                <alt-image alternate-text="image" height="810"
+                    slug="alibaba"
+                    src-id="BN-EH430_alibab_FR_20140828024242.jpg" width="632"/>
+                <alt-image alternate-text="image" height="810"
+                    slug="alibaba"
+                    src-id="BN-EH430_alibab_GR_20140828024242.jpg" width="1242"/>
+                <alt-image alternate-text="image" height="499"
+                    slug="alibaba"
+                    src-id="BN-EH430_alibab_P_20140828024242.jpg" width="749"/>
+                <media-credit>Agence France-Presse/Getty Images</media-credit>
+                <media-caption>Alibaba's margin squeeze overshadows its strong mobile sales growth.</media-caption>
+            </media>
+            <p>If all that spending is to <link icon="none"
+                    linkend="i4-SB10001424052970203622804580119000806508246"
+                    type="EXTERNAL">invest in mobile</link>, investors might understand the need to spend on this crucial transition. But a part of the spending is likely for expansion into new areas like <link
+                    icon="none"
+                    linkend="i5-SB10001424052970203622804580119000806508246"
+                    type="EXTERNAL">online video</link>, where Alibaba has little expertise and the ultimate payoff is less certain. The company has warned that more <link
+                    icon="none"
+                    linkend="i6-SB10001424052970203622804580119000806508246" type="EXTERNAL">acquisitions in new areas could further erode margins</link>. </p>
+            <p>Alibaba's core e-commerce business in China is fast growing and market dominating--something of a slam-dunk. It's a pity, then, that it has allowed other factors to distract investors from the main attraction.</p>
+            <inset id="inset-1" param1="TABLETEXCLUDE"
+                style="6-UNIT-PLAIN" type="NORMAL">
+                <small-hed>Want Heard on the Street live?</small-hed>
+                <p>
+                    <highlight type="ITALIC">Sign up for <highlight type="BOLD">
+                            <link icon="none"
+                                linkend="i7-SB10001424052970203622804580119000806508246" type="EXTERNAL">individual email alerts</link>
+
+                        </highlight> as soon as each column is published, or a <highlight type="BOLD">
+                            <link icon="none"
+                                linkend="i8-SB10001424052970203622804580119000806508246" type="EXTERNAL">daily newsletter</link>
+                        </highlight> with all of the day's Heards.</highlight>
+                </p>
+            </inset>
+            <p>
+                <highlight type="BOLD">Write to </highlight>Aaron Back  at aaron.back@wsj.com</p>
+        </article-body>
+    </article>
+</article-doc>
+<!-- fastdynapage - secj2kwebappp12 - Fri 08/29/14 - 00:48:00 EDT -->

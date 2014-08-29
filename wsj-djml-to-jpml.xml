@@ -220,9 +220,9 @@
     Suppress tesla-style article links. Note: keep support for Methode style article links for decos.
     Example: http://online.wsj.com/news/articles/SB10001424052702303546204579442361298095276
 -->
-<xsl:template match="link[@type='EXTERNAL' and starts-with('poop', 'http://online.wsj.com/news/articles/')]">
+<!-- <xsl:template match="link[@type='EXTERNAL' and starts-with(//article//nameloc[@id = current()/@linkend]/nmlist, 'http://online.wsj.com/news/articles/')]">
     <xsl:apply-templates/>
-</xsl:template>
+</xsl:template> -->
 
 <!--
     Suppress "speaking URLs" aka SEO links.
@@ -253,43 +253,48 @@
 
 <xsl:template match="link">
     <xsl:variable name="id" select="@linkend" />
-    <a>
-        <xsl:attribute name="class">
-            <xsl:choose>
-                <xsl:when test="@type='ARTICLE'">link-article</xsl:when>
-                <xsl:when test="@type='EXTERNAL'">link-external</xsl:when>
-                <xsl:otherwise>link-<xsl:value-of select="@icon"/></xsl:otherwise>
-            </xsl:choose>
-        </xsl:attribute>
-        <xsl:attribute name="href">
-            <xsl:choose>
-                <!-- Old style linking to a file in the issue, here for historical purposes -->
-                <xsl:when test="@icon = 'pdf-embedded-in-the-issue'">file:<xsl:call-template name="get_file_name">
-                        <xsl:with-param name="input">
-                            <xsl:call-template name="nameloc_by_id">
-                                <xsl:with-param name="id" select="$id" />
-                            </xsl:call-template>
-                        </xsl:with-param>
-                    </xsl:call-template>
-                </xsl:when>
-                <!-- Mobile editorial curated section deco links in the form "wsj:/SECTION_NAME" should produce "/SECTION_NAME" -->
-                <xsl:when test="starts-with(//article//nameloc[@id = $id]/nmlist, 'wsj:')">
-                    <xsl:value-of select="substring(//article//nameloc[@id = $id]/nmlist, 5)" />
-                </xsl:when>
-                <!-- Otherwise, just use the link itself -->
-                <xsl:otherwise>
+    <xsl:variable name="url" select="//article//nameloc[@id = $id]/nmlist" />
+    <xsl:choose>
+        <xsl:when test="@type = 'ARTICLE'">
+            <xsl:apply-templates/>
+        </xsl:when>
+        <xsl:when test="starts-with($url, 'http://online.wsj.com/news/articles/')">
+            <xsl:apply-templates/>
+        </xsl:when>
+        <xsl:when test="starts-with($url, 'http://online.wsj.com/articles/')">
+            <xsl:apply-templates/>
+        </xsl:when>
+        <xsl:when test="starts-with($url, 'http://blogs.wsj.com/')">
+            <xsl:apply-templates/>
+        </xsl:when>
+        <xsl:when test="starts-with($url, 'http://live.wsj.com/')">
+            <xsl:apply-templates/>
+        </xsl:when>
+        <xsl:otherwise>
+            <a>
+                <xsl:attribute name="class">
                     <xsl:choose>
-                        <!-- For articles, the link is a raw article identifier, e.g. SB123, so prepend "article" scheme -->
-                        <xsl:when test="@type = 'ARTICLE'">article:</xsl:when>
-                        <xsl:otherwise/>
-                    </xsl:choose><xsl:call-template name="nameloc_by_id">
-                        <xsl:with-param name="id" select="$id" />
-                    </xsl:call-template>
-                </xsl:otherwise>
-            </xsl:choose>
-        </xsl:attribute>
-        <xsl:apply-templates select="*|node()"/>
-    </a>
+                        <xsl:when test="@type='ARTICLE'">link-article</xsl:when>
+                        <xsl:when test="@type='EXTERNAL'">link-external</xsl:when>
+                        <xsl:otherwise>link-<xsl:value-of select="@icon"/></xsl:otherwise>
+                    </xsl:choose>
+                </xsl:attribute>
+                <xsl:attribute name="href">
+                    <xsl:choose>
+                        <!-- Mobile editorial curated section deco links in the form "wsj:/SECTION_NAME" should produce "/SECTION_NAME" -->
+                        <xsl:when test="starts-with($url, 'wsj:')">
+                            <xsl:value-of select="substring($url, 5)" />
+                        </xsl:when>
+                        <!-- Otherwise, just use the link itself -->
+                        <xsl:otherwise>
+                            <xsl:value-of select="$url" />
+                        </xsl:otherwise>
+                    </xsl:choose>
+                </xsl:attribute>
+                <xsl:apply-templates select="*|node()"/>
+            </a>
+        </xsl:otherwise>
+    </xsl:choose>
 </xsl:template>
 
 <xsl:template match="phrase">
@@ -421,11 +426,6 @@
             <xsl:value-of select="$srcid" />
         </xsl:otherwise>
     </xsl:choose>
-</xsl:template>
-
-<xsl:template name="nameloc_by_id">
-    <xsl:param name="id" />
-    <xsl:value-of select="//article//nameloc[@id = $id]/nmlist" />
 </xsl:template>
 
 <xsl:template name="get_file_name">

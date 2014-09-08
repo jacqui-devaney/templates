@@ -16,11 +16,11 @@
     }</style>
 	<style>{
 		jpml: {
-			background-color: =color.tint
+			background-color: =color.background
 		},
 		#view: {
 			options: {
-				background_color: =color.tint
+				background_color: =color.background
 			}
 		}
 	}</style>

@@ -17,12 +17,12 @@
 	<style>{
 		#view: {
 			options: {
-				background_color: =color.tint,
+				background_color: =color.background,
 				indent: true
 			}
 		},
 		jpml: {
-			background-color: =color.tint
+			background-color: =color.background
 		}
 	}</style>
     <box id="page_details" embed="pagedescription" />

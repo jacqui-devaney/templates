@@ -22,7 +22,7 @@
 		{.border-p:{
 			layout-grid-line: 0,
 			layout-grid-line-offset: 0,
-			border-color: =color.tint
+			border-color: =color.background
 
 		}},
 		{if: =portrait, then: {

@@ -21,7 +21,7 @@
 			position: relative
 		},
 		#media_asset: {
-			height: {$min: [{$divide: [320, =media.aspect]}, {$subtract:[=view.height, 220]}]}
+			height: {$min: [{$divide: [=view.width, =media.aspect]}, {$subtract:[=view.height, 220]}]}
 		},
 		#media_caption: {
 			padding: [0, 10]

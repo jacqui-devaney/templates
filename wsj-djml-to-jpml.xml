@@ -254,8 +254,9 @@
 <xsl:template match="link">
     <xsl:variable name="id" select="@linkend" />
     <xsl:variable name="url" select="//article//nameloc[@id = $id]/nmlist" />
+    <xsl:variable name="articletype" select="/article-doc/@type"/>
     <xsl:choose>
-        <xsl:when test="@type = 'ARTICLE'">
+        <xsl:when test="@type = 'ARTICLE' and not(contains($articletype, 'Deco'))">
             <xsl:apply-templates/>
         </xsl:when>
         <xsl:when test="starts-with($url, 'http://online.wsj.com/news/articles/')">

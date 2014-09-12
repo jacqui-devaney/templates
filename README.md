@@ -10,7 +10,7 @@ It was imported on February 1st, 2013 at 8:13AM and then modified to support the
 This hopefully will become the new templates pulled into the QA3.  
 
 
-And some magic...
+And some magic.
 
 ```
 ~/dev/build-tools/buildProcessUtility --config ~/dev/build-tools/buildConfigs/app.wsj.dev.build.json --files \

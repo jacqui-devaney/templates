@@ -28,7 +28,9 @@
 		},
 		#header_top: {padding:[5,10,5,10]},
 		.article_body: {
-			line-height: {$multiply: [22, =view.zoomlevel]}
+			line-height: {$multiply: [22, =view.zoomlevel]},
+			text-align: justify,
+			hyphens: auto
 		},
 		.article_flashline: {
 			padding: [14, 0, 8.5, 0],

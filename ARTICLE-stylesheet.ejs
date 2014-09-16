@@ -127,7 +127,7 @@
 			{if: =media.width, less-than: 360, then: {$divide: [236, =media.aspect]}},
 			{if: =media.width, more-than: 484, then: {$divide: [484, =media.aspect]}},
 			{$divide: [236, =media.aspect]}
-		]}, {$multiply: [.25, =view.height]}]}, {$multiply: [.75, =view.height]}]},
+		]}, {$multiply: [.25, =view.height]}]}, {$multiply: [.69, =view.height]}]},
 		options: {
 			id: =page.number,
 			hideCaption: true

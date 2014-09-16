@@ -13,6 +13,15 @@
 
 		<template
 			section="FRONT_SECTION"
+			name="FRONT-5story_template.xml"
+			title="5 story G Liondoor"
+			min="5"
+			deco="true"
+			usage="front"
+		/>
+
+		<template
+			section="FRONT_SECTION"
 			name="FRONT-4story-deco_template.xml"
 			title="4 story G Liondoor"
 			min="4"

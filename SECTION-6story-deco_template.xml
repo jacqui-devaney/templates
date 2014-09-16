@@ -1,4 +1,4 @@
-<jpml id="SECTION-6story_template">
+<jpml id="SECTION-6story-deco_template">
 	<style src="GLOBAL-stylesheet.ejs"/>
     <style src="GRID-stylesheet.ejs"/>
 	<style src="ADVERTISING-stylesheet.ejs"/>
@@ -109,7 +109,7 @@
 				},
 				#b1:	{
 					top:386,
-					height:160
+					height:170
 				},
 				#b2:	{
 					top:0,
@@ -137,7 +137,7 @@
 	<box id="page_details" embed="pagedescription" />
 
 	<box id="deco" embed="article" class="column8 positionx1 maude unit_255" module="DECO_module.xml" options="G_size" />
-	<box id="b1" embed="article" class="column8 positionx1 maude unit_50" module="RIGHT-IMAGE_module.xml" />
+	<box id="b1" embed="article" class="column8 positionx1 maude unit_50" module="TOP-IMAGE_module.xml" />
 	<box id="b2" embed="article" class="column8 positionx9-1 maude unit_50" module="RIGHT-IMAGE_module.xml" />
 
 	<box id="b3" embed="article" class="column4 positionx9 maude unit_50" module="TOP-IMAGE_module.xml" />

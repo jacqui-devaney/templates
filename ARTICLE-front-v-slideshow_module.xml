@@ -7,7 +7,7 @@
 			top: 0,
 			left: 0,
 			bottom: 0,
-			width: { if: =portrait, then: 546, else: 794 },
+			width: { if: =portrait, then: 484, else: 732 },
 			options: {
 				id: =page.number,
 				hideCaption: true
@@ -50,7 +50,7 @@
 	<box id="caption_box">
 		<p id="media_caption"><mark id="mark_caption" /></p>
 	</box>
-	<panel class="column3 positionx14-10" id="body_container">
+	<panel class="column4 positionx13-9" id="body_container">
         <p class="module_flashline" embed="flashline"/>
 		<p class="article_headline"><span embed="headline"/></p>
 		<panel class="article_body" embed="body"/>

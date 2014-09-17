@@ -1,6 +1,6 @@
 <pages preprocessor="preprocessor.ejs" class="article">
-                <page template="ARTICLE-front-slideshow_template.xml" type="prefix" for="tablet">
-                                <link id="view" module="ARTICLE-front-slideshow_module.xml"/>
+                <page template="ARTICLE-front-h-slideshow_template.xml" type="prefix" for="tablet">
+                                <link id="view" module="ARTICLE-front-h-slideshow_module.xml"/>
                 </page>
 
     <!-- These pages will repeat as needed, hence the "repeat" type -->

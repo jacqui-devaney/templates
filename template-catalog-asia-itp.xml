@@ -11,6 +11,24 @@
 			usage="front"
 		/>
 
+		<template
+			section="FRONT_SECTION"
+			name="FRONT-5story_template.xml"
+			title="5 story G"
+			min="5"
+			deco="true"
+			usage="front"
+		/>
+
+		<template
+			section="FRONT_SECTION"
+			name="FRONT-4story-deco_template.xml"
+			title="4 story G Liondoor"
+			min="4"
+			deco="true"
+			usage="front"
+		/>
+
         <template
             section="FRONT_SECTION"
             name="FRONT-6story-Vimage-deco_template.xml"
@@ -72,6 +90,12 @@
 			name="SECTION-6story_template.xml"
 			title="6 story - G photo"
 			min="6"
+			usage="front"
+		/>
+		<template
+			name="SECTION-6story-deco_template.xml"
+			title="6 story plus deco"
+			min="7"
 			usage="front"
 		/>
 		<template

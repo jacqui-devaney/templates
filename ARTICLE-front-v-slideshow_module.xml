@@ -1,0 +1,58 @@
+<jpml id="ARTICLE-front-v-slideshow_module">
+	<style src="GLOBAL-stylesheet.ejs"/>
+	<style src="GLOBAL_MODULES-stylesheet.ejs" />
+	<style src="ARTICLE-stylesheet.ejs" />
+	<style>{
+		#large_media: {
+			top: 0,
+			left: 0,
+			bottom: 0,
+			width: { if: =portrait, then: 484, else: 732 },
+			options: {
+				id: =page.number,
+				hideCaption: true
+			}			
+		},
+		.module_flashline: {
+			font-name: "HelveticaNeue-Light",
+			font-size: 10,
+			line-height: 14,
+			color:#212121
+		},
+		.article_headline: {
+			font-name: "DJ5EscrowCond-Light",
+			font-size: 38,
+			line-height: 40,
+			color: #212121,
+			text-transform: uppercase
+		},
+		#caption_box: {
+			background-color: black,
+			position: relative,
+			left: 0,
+			right: 0,
+			bottom: 0
+		},
+		#media_caption: {
+			font-name: "DJ5Exchange-Medium",
+			font-size: 11,
+			line-height: 16,
+			color: white,
+			padding: [12]
+		},
+		#body_container: {
+			padding: [0, 0, 0, 12]
+		},
+		.article_body: {
+		}
+	}</style>
+	<box id="large_media" embed="media"/>
+	<box id="caption_box">
+		<p id="media_caption"><mark id="mark_caption" /></p>
+	</box>
+	<panel class="column4 positionx13-9" id="body_container">
+        <p class="module_flashline" embed="flashline"/>
+		<p class="article_headline"><span embed="headline"/></p>
+		<panel class="article_body" embed="body"/>
+	</panel>
+</jpml>

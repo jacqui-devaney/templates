@@ -104,8 +104,15 @@
 			#summary: {
 				display: inherit
 			}
-
 		}, else: {
+			.opinion_dek:{
+				padding:[0, 0, 8, 0],
+				font-name:DJ5Exchange-MediumItalic,
+				font-size:14,
+				line-height:20,
+				color:#5D5D5D,
+				display: none
+			},
 			#summary: {
 				display: none
 			}
@@ -119,6 +126,11 @@
 				padding: [0],
 				image-scale: 0.5
 			}
+		},
+		if: =options.show_opinion_dek, equals: true, then: {
+			.opinion_dek: {
+				display: inherit
+			}
 		}
 	}</style>
 	<box id="deco_container" embed="deco-image">
@@ -127,6 +139,7 @@
 	<panel id="vertical">
 		<panel id="headline">
 			<p class="module_headline"><mark class="m_headline" /></p>
+			<h2 class="opinion_dek" embed="subhed" ></h2>
 		</panel>
 		<panel id="body">
 			<p class="module_flashline"><span embed="flashline" /></p>

@@ -128,6 +128,18 @@
         "label": "Hide",
         "values": { "show_flashline": false }
       }]
+    },
+    {
+      "key": "opinion_dek",
+      "title": "Hide/Show Opinion Dek",
+      "type": "toggle",
+      "options": [{
+        "label": "Show",
+        "values": { "show_opinion_dek": true }
+      }, {
+        "label": "Hide",
+        "values": { "show_opinion_dek": false }
+      }]
     }
   ]
 }

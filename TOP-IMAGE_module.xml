@@ -103,6 +103,9 @@
 			},
 			#summary: {
 				display: inherit
+			},
+			.opinion_dek: { 
+				display: none
 			}
 		}, else: {
 			.opinion_dek:{

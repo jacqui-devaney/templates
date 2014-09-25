@@ -129,7 +129,12 @@
 			{$divide: [236, =media.aspect]}
 		]}, {$multiply: [.25, =view.height]}]}, {$multiply: [.69, =view.height]}]},
 		options: {
-			id: =page.number,
+			id: { 
+				if: =page.mediaindex,
+				at-least: 0,
+				then: =page.mediaindex,
+				else: =page.number
+			}, 
 			hideCaption: true
 		},
 		padding: [0, 0, 8, 0]

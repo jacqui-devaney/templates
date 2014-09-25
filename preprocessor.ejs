@@ -34,12 +34,22 @@
 
 			justify: "left",
 
-			media: {
-				width: {if: =page.hasmedia, then: =article.media[page.number].width, else:0} ,
-				height: {if: =page.hasmedia, then: =article.media[page.number].height, else:0} ,
-				aspect: {if: =page.hasmedia, then: {$divide:[=article.media[page.number].width, =article.media[page.number].height]}, else:0},
-				caption: {if: =page.hasmedia, then: =article.media[page.number].caption, else:""}
-			},
+			media: { 
+				if: =page.mediaindex,
+				at-least: 0,
+				then: {
+					width: {if: =page.hasmedia, then: =article.media[page.mediaindex].width, else:0} ,
+					height: {if: =page.hasmedia, then: =article.media[page.mediaindex].height, else:0} ,
+					aspect: {if: =page.hasmedia, then: {$divide:[=article.media[page.mediaindex].width, =article.media[page.mediaindex].height]}, else:0},
+					caption: {if: =page.hasmedia, then: =article.media[page.mediaindex].caption, else:""}
+				},
+				else: {
+					width: {if: =page.hasmedia, then: =article.media[page.number].width, else:0} ,
+					height: {if: =page.hasmedia, then: =article.media[page.number].height, else:0} ,
+					aspect: {if: =page.hasmedia, then: {$divide:[=article.media[page.number].width, =article.media[page.number].height]}, else:0},
+					caption: {if: =page.hasmedia, then: =article.media[page.number].caption, else:""}
+				}
+			}, 
 
 			text: {
 				indent: 14,

@@ -129,13 +129,17 @@
 				padding: [0],
 				image-scale: 0.5
 			}
-		},
+		}
+	}</style>
+	<style>{
 		if: =options.show_opinion_dek, equals: true, then: {
 			.opinion_dek: {
 				display: inherit
 			}
 		}
-	}</style>
+	}
+	</style>
+	
 	<box id="deco_container" embed="deco-image">
 		<image embed="summary-image" />
 	</box>

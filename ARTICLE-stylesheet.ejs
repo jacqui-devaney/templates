@@ -102,6 +102,23 @@
 		color: transparent,
 		hyphens: none
 	},
+	.tweet: {
+		display: {if: =app.version, equals: "6.1", then: inherit, else: none},
+		layout-grid-line: 0,
+		layout-grid-line-offset: 0,
+		padding: [0],
+		break-inside: avoid-column,
+		text-align: justify,
+		text-indent: 0,
+		line-height: 90
+	},
+	.tweet-mark: {
+		font-name: "Helvetica Neue",
+		font-size: 60,
+	    hyphens: none,
+	    color: transparent,
+		content: "TWTR-TWTR-"
+	},
 	#media: {
 		display: {if: =page.hasmedia, then: inherit, else: none},
 		padding: [0, 0, 5, 0]

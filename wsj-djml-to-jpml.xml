@@ -152,7 +152,7 @@
                 <mark class="body-last-p-mark"/>
             </xsl:if>
         </p>
-        <!-- Insert banner ads on iPhone after the fourth paragraph. The panel reserves space so the box isn't cropped by the viewport. -->
+        <!-- Insert banner ads on iPhone after the fourth paragraph. The panel reserves space so the box isn't cropped by the viewport.
         <xsl:if test="count(preceding-sibling::p) = 3">
             <panel class="hidden_tablet" id="ad_inline_panel">
                 <p></p>
@@ -160,7 +160,7 @@
             <box id="ad_inline_outer" class="hidden_tablet">
                 <box id="ad_inline_inner" embed="advertisement"></box>
             </box>
-        </xsl:if>
+        </xsl:if> -->
     </xsl:if>
 </xsl:template>
 
@@ -200,12 +200,31 @@
     <xsl:apply-templates select="*"/>
 </xsl:template>
 
-<!-- Ignore all insets, unless they are "body continuation" insets -->
+<!-- Handle "body continuation" or "tweet" insets -->
+
+<xsl:template match="inset[@param1='CONTINUATION']">
+    <xsl:apply-templates/>
+</xsl:template>
+
+<xsl:template match="inset[@type='TWEET']">
+    <xsl:variable name="id" select=".//link/@linkend" />
+    <xsl:variable name="url" select="//article//nameloc[@id = $id]/nmlist" />
+    <panel class="tweet">
+        <p class="tweet-p">
+            <span class="tweet-span" embed="tweet">
+                <xsl:attribute name="id">tweet-<xsl:call-template name="substring-after-last">
+                    <xsl:with-param name="string" select="$url" />
+                    <xsl:with-param name="delimiter" select="'/'" />
+                </xsl:call-template></xsl:attribute>
+                <mark class="tweet-mark"/>
+            </span>
+        </p>
+    </panel>
+</xsl:template>
+
+<!-- Ignore all other insets -->
 <!-- TODO: we should still grab article images from insets? -->
 <xsl:template match="inset">
-    <xsl:if test="@param1 = 'CONTINUATION'">
-        <xsl:apply-templates/>
-    </xsl:if>
 </xsl:template>
 
 <xsl:template match="highlight[@type='BOLD']">
@@ -555,6 +574,20 @@
 <xsl:template name="tolower">
   <xsl:param name="node" />
   <xsl:value-of select="translate($node, $uppercase, $smallcase)" />
+</xsl:template>
+
+<xsl:template name="substring-after-last">
+    <xsl:param name="string" />
+    <xsl:param name="delimiter" />
+    <xsl:choose>
+        <xsl:when test="contains($string, $delimiter)">
+            <xsl:call-template name="substring-after-last">
+                <xsl:with-param name="string" select="substring-after($string, $delimiter)" />
+                <xsl:with-param name="delimiter" select="$delimiter" />
+            </xsl:call-template>
+        </xsl:when>
+        <xsl:otherwise><xsl:value-of select="$string" /></xsl:otherwise>
+    </xsl:choose>
 </xsl:template>
 
 <!--Don't mind the variable names here- They don't entirely match the input format.  The comments show

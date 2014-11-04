@@ -15,6 +15,7 @@
 			}			
 		},
 		.module_flashline: {
+			display: { if: =page.section, equals: WSJ_MAGAZINE, else: none },
 			font-name: { if: =page.section, equals: WSJ_MAGAZINE, then: "HelveticaNeue-Light" },
 			font-size: 10,
 			line-height: 14,

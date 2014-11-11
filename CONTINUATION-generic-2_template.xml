@@ -38,7 +38,7 @@
 	        }}
 		]
     }</style>
-	<box id="page_details" embed="pagedescription" />
-    <box id="b1" embed="article" class="column2 positionx1 maude unit_continuation_strap" module="CONTINUATION-dynamic_module.xml" />
-    <box id="b2" embed="article" class="column2 positionx3 maude unit_continuation_strap" module="CONTINUATION-dynamic_module.xml" />
+	<box id="page_details" class="tablet_only" embed="pagedescription" />
+    <box id="b1" embed="article" class="column8-6 positionx1 positionx1 maude unit_continuation_strap" module="CONTINUATION-dynamic_module.xml" />
+    <box id="b2" embed="article" class="column8-6 positionx9-7 maude unit_continuation_strap" module="CONTINUATION-dynamic_module.xml" />
 </jpml>

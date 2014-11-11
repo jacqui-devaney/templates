@@ -123,33 +123,6 @@
 		/>
 		<!-- END SECTIONS -->
 
-		<!-- SECTION CONTINUATION -->
-		<template
-			name="CONTINUATION-5story-scroll_template.xml"
-			title="5 Stories - Scrollable Rail"
-			min="5"
-			deco="true"
-			usage="continuation"
-			page="2"
-		/>
-		<template
-			name="CONTINUATION-6story-scroll_template.xml"
-			title="6 Stories - Scrollable Rail"
-			min="6"
-			deco="true"
-			usage="continuation"
-			page="2"
-		/>
-		<template
-			name="CONTINUATION-3story-scroll_template.xml"
-			title="3Stories - Scrollable Rail"
-			min="3"
-			deco="true"
-			usage="continuation"
-			page="2"
-		/>
-		<!-- END SECTION CONTINUATION -->
-
 		<!-- GENERIC CONTINUATION -->
 		<template name="CONTINUATION-generic-8_template.xml" title="" min="8" usage="continuation" storyorder="feed"/>
 		<template name="CONTINUATION-generic-4_template.xml" title="" min="4" usage="continuation" storyorder="feed"/>

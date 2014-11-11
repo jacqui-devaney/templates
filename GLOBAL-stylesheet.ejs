@@ -6,5 +6,13 @@
 
 		min-height: {if-all: [=intent.template, =intent.section, =scale.phone], then: 0},
 		max-height: {if-all: [=intent.template, =intent.section, =scale.phone], then: 10000}
+	},
+
+	.tablet_only: {
+		display: { if: =scale.tablet: inherit, else: none }
+	},
+
+	.phone_only: {
+		display: { if: =scale.phone: inherit, else: none }
 	}
 }

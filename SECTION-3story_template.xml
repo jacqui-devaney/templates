@@ -37,7 +37,15 @@
 	<style> {
 		$switch: [
 			{if: =scale.phone, then: {
-
+				#deco:	{
+					options: { show_body: true, medium_headline: true }
+				},
+				#b1:	{
+					options: { show_body: true, medium_headline: true }
+				},
+				#b2:	{
+					options: { show_body: true, medium_headline: true }
+				}
 			}},
 			{if: =portrait, then: {
 				#deco:	{
@@ -73,11 +81,11 @@
 			}}
 		]
 	} </style>
-    <box id="page_details" embed="pagedescription" />
+    <box id="page_details" class="tablet_only" embed="pagedescription" />
 	<box id="deco" embed="article" class="column12 positionx1 maude unit_166" module="DECO_module.xml" />
-	<box id="b1" embed="article" class="column4-6 positionx13-1 maude unit_50" module="RIGHT-INSET-IMAGE_module.xml" />
-	<box id="b2" embed="article" class="column4-6 positionx13-7 maude unit_50" module="RIGHT-INSET-IMAGE_module.xml" />
-	<box id="front_page" class="positionx_full column_full maude unit_ad">
+	<box id="b1" embed="article" class="column4-6 positionx13-1 maude unit_166" module="RIGHT-INSET-IMAGE_module.xml" />
+	<box id="b2" embed="article" class="column4-6 positionx13-7 maude unit_166" module="RIGHT-INSET-IMAGE_module.xml" />
+	<box id="front_page" class="tablet_only positionx_full column_full maude unit_ad">
 		<box id="banner_ad" class="ad-banner front_ad" embed="advertisement" />
 	</box>
 

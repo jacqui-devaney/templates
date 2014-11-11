@@ -37,24 +37,6 @@
             deco="true"
             usage="front"
 		/>
-
-		<template
-			section="FRONT_SECTION"
-			name="CONTINUATION-7story-deco-promo_template.xml"
-			title="6 story plus 1 deco label - In Todays WSJ"
-			min="7"
-			deco="true"
-			usage="continuation"
-		/>
-
-		<template
-			section="FRONT_SECTION"
-			name="CONTINUATION-6story-deco-promo_template.xml"
-			title="5 story plus 1 deco label - In Todays WSJ"
-			min="6"
-			deco="true"
-			usage="continuation"
-		/>
 		<!-- END FRONT SECTION -->
 
 		<!-- OPINION -->

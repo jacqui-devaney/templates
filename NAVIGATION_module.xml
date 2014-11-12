@@ -1,0 +1,70 @@
+<jpml id="NAVIGATION_module">
+	<style src="GLOBAL-stylesheet.ejs" />
+	<style src="GLOBAL_MODULES-stylesheet.ejs" />
+	<style src="PHONE-MODULES-stylesheet.ejs" />
+	<style>{
+		jpml: {
+			background-color: =options.background_color,
+			border-color: #d8d8d8
+		}
+	}</style>
+	<style>{
+
+		#deco_container: {
+			
+			anchor-x:left,
+			anchor-y:left,
+			width: 175
+		},
+		image: {
+			height: 115,
+			width: 160,
+    		padding:[5, 0, 0, 0]
+        },
+
+		.byline: {
+			display: {if: =options.show_byline, then:inherit, else:none}
+
+		},
+		.article_subhed: {
+			display: {if: =options.show_subhed, then:inherit, else:none}
+		},
+		.body: {
+			display: inherit
+		}
+	
+
+	}</style>
+	<style>{
+		.article_subhed: {
+			font-name: DJ5Exchange-MediumItalic,
+			font-size:14,
+			line-height:17,
+			color: #666666
+		},
+		.module_headline: {
+			font-name: DJ5Exchange-SemiBold,
+			font-size: 18,
+			line-height:19
+		},
+		#module_text: {
+			padding:[5,0,10,0]
+		},
+		.body: {
+			font-name: DJ5Exchange-Medium,
+			font-size:13,
+			line-height:16
+		}
+	}</style>
+
+	<box id="deco_container" embed="deco-image">
+		<image embed="summary-image" />
+	</box>
+	<panel id="module_text">
+		<p id="headline" class="module_headline"><mark class="m_headline" /></p>
+		<p class="article_subhed" embed="subhed" />
+        <p class="byline" embed="byline"/>
+        <panel class="body" embed="body"/>
+    </panel>
+
+</jpml>

@@ -27,6 +27,12 @@
 					{ if: =app.idiom, equals: "tablet", then: true, else: false }
 				},
 
+				rail: { if-all: [
+					{ if: =app.idiom, equals: "tablet", then: true, else: false },
+					=display.width.compact,
+					=display.height.regular
+				], then: true, else: false},
+
 				old_phone: { if: =app.idiom, equals: "phone", then:true, else:false },
 				old_tablet: { if: =app.idiom, equals: "tablet" }
 			},

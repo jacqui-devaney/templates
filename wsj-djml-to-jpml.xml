@@ -149,7 +149,7 @@
             </xsl:if>
             <xsl:apply-templates select="node()"/>
             <xsl:if test="not(following-sibling::p[position()=last()]) and not(following-sibling::tagline[position()=last()])">
-                <mark class="body-last-p-mark"/>
+                <span embed="sentinel"><mark class="body-last-p-mark"/></span>
             </xsl:if>
         </p>
         <!-- Insert banner ads on iPhone after the fourth paragraph. The panel reserves space so the box isn't cropped by the viewport.

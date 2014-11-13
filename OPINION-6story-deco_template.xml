@@ -11,20 +11,6 @@
 			}
 		}
 	}</style>
-	<style>{
-		#b1: {
-			options:{rando_header:true, top_border:{if: =portrait, then:true}}
-		},
-		#b2: {
-			options:{top_border:true}
-		},
-		#deco: {options: {medium_headline:true, show_byline:true, show_flashline:true}},
-		#b3: {options: {medium_headline:true, show_byline:true, show_flashline:true, top_border:{if: =landscape, then:true}}},
-		#b4: {options: {medium_headline:true, show_byline:true, show_flashline:true, top_border:true}},
-		#b5: {options: {medium_headline:true, show_byline:true, show_flashline:true, top_border:true}},
-		#b6: {options: {medium_headline:true, show_byline:true, show_flashline:true, top_border:true}}
-
-	}</style>
     <style>{
 		$switch:[
 			{if: =scale.rail, then: {
@@ -32,61 +18,75 @@
 			{if: =portrait, then: {
 				#b1: {
 					top:383,
-					height:235
+					height:235,
+					options:{rando_header:true, top_border:true}
 				},
 				#b2: {
 					top:618,
-					height:189
+					height:189,
+					options:{top_border:true}
 				},
 				#deco: {
 					top:0,
-					height:363
+					height:363,
+					options:{medium_headline:true, show_byline:true, show_flashline:true}
 				},
 				#b3: {
 					top:0,
-					height:188
+					height:188,
+					options:{medium_headline:true, show_byline:true, show_flashline:true}
 				},
 				#b4: {
 					top:188,
-					height:198
+					height:198,
+					options:{medium_headline:true, show_byline:true, show_flashline:true, top_border:true}
 				},
 				#b5: {
 					top:386,
-					height:198
+					height:198,
+					options:{medium_headline:true, show_byline:true, show_flashline:true, top_border:true}
 				},
 				#b6: {
 					top:584,
-					height:212
+					height:212,
+					options:{medium_headline:true, show_byline:true, show_flashline:true, top_border:true}
 				}
 			}},
 			{if: =landscape, then: {
 				#b1: {
 					top:0,
-					height:210
+					height:210,
+					options:{rando_header:true}
 				},
 				#b2: {
 					top:210,
-					height:177
+					height:177,
+					options:{top_border:true}
 				},
 				#deco: {
 					top:0,
-					height:363
+					height:363,
+					options:{medium_headline:true, show_byline:true, show_flashline:true}
 				},
 				#b3: {
 					top:392,
-					height:176
+					height:176,
+					options:{medium_headline:true, show_byline:true, show_flashline:true, top_border:true}
 				},
 				#b4: {
 					top:392,
-					height:176
+					height:176,
+					options:{medium_headline:true, show_byline:true, show_flashline:true, top_border:true}
 				},
 				#b5: {
 					top:392,
-					height:176
+					height:176,
+					options:{medium_headline:true, show_byline:true, show_flashline:true, top_border:true}
 				},
 				#b6: {
 					top:392,
-					height:176
+					height:176,
+					options:{medium_headline:true, show_byline:true, show_flashline:true, top_border:true}
 				}
 			}}
 		]

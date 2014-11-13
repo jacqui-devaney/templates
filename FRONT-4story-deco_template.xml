@@ -10,40 +10,7 @@
 			options: {
 				hideHeaderBorder: true
 			}
-		},
-		#b1: {
-			options:{$switch:[
-				{if: =scale.phone, then: {large_headline:true, top_align:true, show_body:true, show_image:true}},
-				{if: =portrait, then: {large_headline:true}},
-				{if: =landscape, then: {large_headline:true}}
-			]
-		}},
-		#b2: {
-			options:{$switch:[
-				{if: =portrait, then: {medium_headline:true, top_border:true}},
-				{if: =landscape, then: {medium_headline:true, top_border:true}}
-			]
-		}},
-		#b3: {
-			options:{$switch:[
-				{if: =portrait, then: {medium_headline:true, top_border:true}},
-				{if: =landscape, then: {medium_headline:true, top_border:true}}
-			]
-		}},
-		#b4: {
-			options:{$switch:[
-				{if: =scale.phone, then: {no_border:true}},
-				{if: =portrait, then: {medium_headline:true, bottom_align:true, show_byline:false, top_border:true}},
-				{if: =landscape, then: {medium_headline:true, top_border:true, show_byline:false}}
-			]
-		}},
-		#deco: {
-			options:{$switch:[
-				{if: =portrait, then: {medium_headline:true}},
-				{if: =landscape, then: {medium_headline:true}}
-			]
-		}}
-
+		}
 	}</style>
 	<style> {
 		$switch: [
@@ -52,52 +19,63 @@
 			}},
 			{if: =portrait, then: {
 				#b1:	{
-						top:377,
-						height:125				},
+					top:377,
+					height:125,
+					options:{large_headline:true}			
+				},
 				#deco:	{
 					top:20,
-					height:340
+					height:340,
+					options:{medium_headline:true}
 				},
 				#b2:	{
 					width:267,
 					top:509,
-					height:175
+					height:175,
+					options:{medium_headline:true, top_border:true}
 				},
 				#b3:	{
 					left:483,
 					width:267,
 					top:509,
-					height:175
+					height:175,
+					options:{medium_headline:true, top_border:true}
 				},
 				#b4: {
 					top:691,
-					height:122
+					height:122,
+					options:{medium_headline:true, bottom_align:true, show_byline:false, top_border:true}
 				}
 
 			}},
 			{if: =landscape, then: {
 				#b1:	{
 					top:20,
-					height:342
+					height:342,
+					options:{large_headline:true}
 				},
 				#deco:	{
 					top:20,
-					height:341
+					height:341,
+					options:{medium_headline:true}
 				},
 				#b2:	{
 					width:267,
 					top:370,
-					height:194
+					height:194,
+					options:{medium_headline:true, top_border:true}
 				},
 				#b3:	{
 					left:487,
 					width:267,
 					top:370,
-					height:194
+					height:194,
+					options:{medium_headline:true, top_border:true}
 				},
 				#b4:	{
 					top:370,
-					height:187
+					height:187,
+					options:{medium_headline:true, top_border:true, show_byline:false}
 				}
 			}}
 		]

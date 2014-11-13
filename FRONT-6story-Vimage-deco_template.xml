@@ -7,110 +7,81 @@
     <style src="RAIL-stylesheet.ejs" />    
 	<style>{
 		#page_details: {
-        options: {
-        hideHeaderBorder: true
+            options: {
+            hideHeaderBorder: true
         }
-		},
-		#b1: {
-        options:{$switch:[
-        {if: =scale.phone, then: {large_headline:true, top_align:true, show_body:true, show_image:true}},
-        {if: =portrait, then: {large_headline:true}},
-        {if: =landscape, then: {large_headline:true}}
-        ]
-		}},
-		#b2: {
-        options:{$switch:[
-        {if: =portrait, then: {medium_headline:true, top_border:true}},
-        {if: =landscape, then: {medium_headline:true}}
-        ]
-		}},
-		#b3: {
-        options:{$switch:[
-        {if: =portrait, then: {medium_headline:true, top_border:true}},
-        {if: =landscape, then: {medium_headline:true, top_border:true}}
-        ]
-		}},
-		#b4: {
-        options:{$switch:[
-        {if: =portrait, then: {medium_headline:true, top_border:true}},
-        {if: =landscape, then: {medium_headline:true, top_border:true}}
-        ]
-		}},
-		#b5: {
-        options:{$switch:[
-        {if: =scale.phone, then: {no_border:true}},
-        {if: =portrait, then: {medium_headline:true, bottom_align:true, show_byline:false, top_border:true}},
-        {if: =landscape, then: {medium_headline:true, top_border:true, show_byline:false}}
-        ]
-		}},
-		#deco: {
-        options:{$switch:[
-        {if: =portrait, then: {medium_headline:true}},
-        {if: =landscape, then: {medium_headline:true}}
-        ]
-		}}
-        
-        }</style>
+    }</style>
 	<style> {
 		$switch: [
-        {if: =scale.phone, then: {
+            {if: =scale.phone, then: {
         
-        }},
-        {if: =portrait, then: {
-        #b1:	{
-        top:20,
-        height:400
-        },
-        #deco:	{
-        top:20,
-        height:400
-        },
-        #b2:	{
-        top:430,
-        height:254
-        },
-        #b3:	{
-        top:430,
-        height:254        
-        },
-        #b4: {
-        top:430,
-        height:254
-        },
-        #b5: {
-        top:690,
-        height:125
-        }
-        
-        }},
-        {if: =landscape, then: {
-        #b1:	{
-        top:20,
-        height:350
-        },
-        #deco:	{
-        top:20,
-        height:400
-        },
-        #b2:	{
-        top:20,
-        height:260
-        },
-        #b3:	{
-        top:290,
-        height:270
-        },
-        #b4:	{
-        top:440,
-        height:120
-        },
-        #b5:	{
-        top:380,
-        height:185
-        }
-        }}
+            }},
+            {if: =portrait, then: {
+                #b1:	{
+                    top:20,
+                    height:400,
+                    options:{large_headline:true}
+                },
+                #deco:	{
+                    top:20,
+                    height:400,
+                    options:{medium_headline:true}
+                },
+                #b2:	{
+                    top:430,
+                    height:254,
+                    options:{medium_headline:true, top_border:true}
+                },
+                #b3:	{
+                    top:430,
+                    height:254,
+                    options:{medium_headline:true, top_border:true}
+                },
+                #b4: {
+                    top:430,
+                    height:254,
+                    options:{medium_headline:true, top_border:true}
+                },
+                #b5: {
+                    top:690,
+                    height:125,
+                    options:{medium_headline:true, bottom_align:true, show_byline:false, top_border:true}
+                }
+            }},
+            {if: =landscape, then: {
+                #b1:	{
+                    top:20,
+                    height:350,
+                    options:{large_headline:true}
+                },
+                #deco:	{
+                    top:20,
+                    height:400,
+                    options:{medium_headline:true}
+                },
+                #b2:	{
+                    top:20,
+                    height:260,
+                    options:{medium_headline:true}
+                },
+                #b3:	{
+                    top:290,
+                    height:270,
+                    options:{medium_headline:true, top_border:true}
+                },
+                #b4:	{
+                    top:440,
+                    height:120,
+                    options:{medium_headline:true, top_border:true}
+                },
+                #b5:	{
+                    top:380,
+                    height:185,
+                    options:{medium_headline:true, top_border:true, show_byline:false}
+                }
+            }}
 		]
-        } </style>
+    } </style>
     <box id="page_details" class="tablet_only" embed="pagedescription" />
 	<box class="tablet_only latest_news_box positionx1">
         <p class="latest_news">

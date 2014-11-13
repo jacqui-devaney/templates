@@ -13,16 +13,6 @@
 			}
 		}
 	}</style>
-    <style>{
-
-		#deco: {
-			options:{$switch:[
-				{if: =portrait, then: {very_large_caps_headline:true, white_text:true, full_screen:true, large_body:true}},
-				{if: =landscape, then: {very_large_caps_headline:true, white_text:true, full_screen:true, large_body:true}}
-			]
-		}}
-
-	}</style>
 	<style> {
 		$switch: [
 			{if: =scale.phone, then: {
@@ -31,8 +21,9 @@
 			{if: =portrait, then: {
 				jpml: {padding:[0]},
 				#deco:	{
-						top:0,
-						height:1024
+					top:0,
+					height:1024,
+					options:{very_large_caps_headline:true, white_text:true, full_screen:true, large_body:true}
 				}
 
 			}},
@@ -40,9 +31,9 @@
 				jpml: {padding:[0]},
 				#deco:	{
 					top:0,
-					height:768
+					height:768,
+					options:{very_large_caps_headline:true, white_text:true, full_screen:true, large_body:true}
 				}
-
 			}}
 		]
 	} </style>

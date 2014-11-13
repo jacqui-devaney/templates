@@ -50,76 +50,12 @@
 		},
 		span: {
 			padding: [3, 0]
-		},
-		#b1: {
-			options: {
-				medium_headline:true,
-				show_image:true,
-				background_color: =color.background
-			}
-		},
-		#b2: {
-			options: {
-				show_body: true,
-				show_image: true,
-				smedium_headline: true,
-				background_color: =color.background
-			}
-		},
-		#b3: {
-			options: {
-				show_body: true,
-				show_image: true,
-				smedium_headline: true,
-				background_color: =color.background
-			}
-		},
-		#b4: {
-			options: {
-				hide_border: =portrait,
-				show_body: true,
-				small_headline: true,
-				background_color: =color.background
-			}
-		},
-		#b5: {
-			options: {
-				show_body: true,
-				small_headline: true,
-				background_color: =color.background
-			}
-		},
-		#b6: {
-			options: {
-				show_body: true,
-				small_headline: true,
-				background_color: =color.background
-			}
-		},
-		#b7: {
-			options: {
-				show_body: true,
-				small_headline: true,
-				background_color: =color.background
-			}
-		},
-		#b8: {
-			options: {
-				show_body: true,
-				small_headline: true,
-				background_color: =color.background
-			}
-		},
-		#b9: {
-			options: {
-				show_body: true,
-				small_headline: true,
-				background_color: =color.background
-			}
 		}
 	}</style>
 	<style> {
 		$switch: [
+			{if: =scale.rail, then: {
+			}},
 			{if: =scale.phone, then: {
 		    	#ad_placeholder: {
 					display: inherit,
@@ -253,6 +189,80 @@
 			}}
 		]
 	} </style>
+	<style>{
+		if: =scale.phone, 
+		then: {
+
+		},
+		else: {
+			#b1: {
+				options: {
+					medium_headline:true,
+					show_image:true,
+					background_color: =color.background
+				}
+			},
+			#b2: {
+				options: {
+					show_body: true,
+					show_image: true,
+					smedium_headline: true,
+					background_color: =color.background
+				}
+			},
+			#b3: {
+				options: {
+					show_body: true,
+					show_image: true,
+					smedium_headline: true,
+					background_color: =color.background
+				}
+			},
+			#b4: {
+				options: {
+					hide_border: =portrait,
+					show_body: true,
+					small_headline: true,
+					background_color: =color.background
+				}
+			},
+			#b5: {
+				options: {
+					show_body: true,
+					small_headline: true,
+					background_color: =color.background
+				}
+			},
+			#b6: {
+				options: {
+					show_body: true,
+					small_headline: true,
+					background_color: =color.background
+				}
+			},
+			#b7: {
+				options: {
+					show_body: true,
+					small_headline: true,
+					background_color: =color.background
+				}
+			},
+			#b8: {
+				options: {
+					show_body: true,
+					small_headline: true,
+					background_color: =color.background
+				}
+			},
+			#b9: {
+				options: {
+					show_body: true,
+					small_headline: true,
+					background_color: =color.background
+				}
+			}
+		}
+	}</style>
 	<style>{
 
 		$switch: [
@@ -422,14 +432,14 @@
 			</p>
 		</box>
 	</box>
-	<box id="b1" embed="article" class="column8 positionx1 maude unit_386" module="TOP-IMAGE_module.xml" />
-	<box id="b2" embed="article" class="column4 positionx9-1  maude unit_166" module="TOP-IMAGE_module.xml" />
-	<box id="b3" embed="article" class="column4 positionx13-5 maude unit_166" module="TOP-IMAGE_module.xml" />
-	<box id="b4" embed="article" class="column4 positionx1-9  maude unit_50" module="CONTINUATION-dynamic_module.xml" />
-	<box id="b5" embed="article" class="column4 positionx5-9  maude unit_50" module="CONTINUATION-dynamic_module.xml" />
-	<box id="b6" embed="article" class="column4 positionx9    maude unit_50" module="CONTINUATION-dynamic_module.xml" />
-	<box id="b7" embed="article" class="column4 positionx13-9 maude unit_50" module="CONTINUATION-dynamic_module.xml" />
-	<box id="b8" embed="article" class="column4 positionx9    maude unit_50" module="CONTINUATION-dynamic_module.xml" />
-	<box id="b9" embed="article" class="column4 positionx13-9 maude unit_50" module="CONTINUATION-dynamic_module.xml" />
+	<box id="b1" embed="article" class="column8 positionx1 maude unit_plain unit_386" module="TOP-IMAGE_module.xml" />
+	<box id="b2" embed="article" class="column4 positionx9-1  maude unit_plain unit_166" module="TOP-IMAGE_module.xml" />
+	<box id="b3" embed="article" class="column4 positionx13-5 maude unit_plain unit_166" module="TOP-IMAGE_module.xml" />
+	<box id="b4" embed="article" class="column4 positionx1-9  maude unit_plain unit_50" module="CONTINUATION-dynamic_module.xml" />
+	<box id="b5" embed="article" class="column4 positionx5-9  maude unit_plain unit_50" module="CONTINUATION-dynamic_module.xml" />
+	<box id="b6" embed="article" class="column4 positionx9    maude unit_plain unit_50" module="CONTINUATION-dynamic_module.xml" />
+	<box id="b7" embed="article" class="column4 positionx13-9 maude unit_plain unit_50" module="CONTINUATION-dynamic_module.xml" />
+	<box id="b8" embed="article" class="column4 positionx9    maude unit_plain unit_50" module="CONTINUATION-dynamic_module.xml" />
+	<box id="b9" embed="article" class="column4 positionx13-9 maude unit_plain unit_50" module="CONTINUATION-dynamic_module.xml" />
 
 </jpml>

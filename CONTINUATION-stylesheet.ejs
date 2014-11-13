@@ -1,14 +1,4 @@
-{ if: =scale.rail, then: {
-	.unit_continuation_strap: {
-		options: {
-			module: TOP-IMAGE_module.xml,
-			medium_headline: true,
-			show_body: true
-		},
-		height: 166
-	}
-},
-else: { if: =scale.phone, then: {
+{ if: =scale.phone, then: {
 	#b1 : {
 		options: {
 			small_headline: true,
@@ -177,4 +167,4 @@ else: { if: =scale.phone, then: {
 			else: =size.continuation_height_normal
 		}
 	}
-}}}
+}}

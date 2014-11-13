@@ -79,9 +79,9 @@
 		]
 	} </style>
 	<box id="page_details" embed="pagedescription" />
-	<box id="b1" embed="article" class="column12-8 positionx1 maude unit_166" module="LEFT-IMAGE_module.xml" />
-	<box id="b2" embed="article" class="column6-8 positionx1 maude unit_50" module="RIGHT-IMAGE_module.xml" />
-	<box id="b3" embed="article" class="column6-8 positionx7-1 maude unit_50" module="RIGHT-IMAGE_module.xml" />
+	<box id="b1" embed="article" class="column12-8 positionx1 maude unit_plain" module="LEFT-IMAGE_module.xml" />
+	<box id="b2" embed="article" class="column6-8 positionx1 maude unit_plain" module="RIGHT-IMAGE_module.xml" />
+	<box id="b3" embed="article" class="column6-8 positionx7-1 maude unit_plain" module="RIGHT-IMAGE_module.xml" />
 	<box id="rail_content" class="column4 positionx13-9" embed="list" />
 	<box id="front_page" class="positionx_full column_full maude unit_ad">
 		<box id="banner_ad" class="ad-banner front_ad" embed="advertisement" />

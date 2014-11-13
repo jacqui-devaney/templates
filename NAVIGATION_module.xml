@@ -19,7 +19,8 @@
 		image: {
 			height: 115,
 			width: 160,
-    		padding:[5, 0, 0, 0]
+    		padding:[5, 0, 0, 0],
+    		background-color: inherit
         },
 
 		.byline: {

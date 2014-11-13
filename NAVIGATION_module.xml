@@ -5,13 +5,13 @@
 	<style>{
 		jpml: {
 			background-color: =options.background_color,
-			border-color: #d8d8d8
+			padding:[2,25,0, 25]
 		}
 	}</style>
 	<style>{
 
 		#deco_container: {
-			
+
 			anchor-x:left,
 			anchor-y:left,
 			width: 175
@@ -33,7 +33,7 @@
 		.body: {
 			display: inherit
 		}
-	
+
 
 	}</style>
 	<style>{

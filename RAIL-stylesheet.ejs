@@ -11,7 +11,9 @@
 			medium_headline: true,
 			show_body: true,
 			show_byline: { if: =page.section, equals: OPINION }
-		}
+		},
+		border-width: [0, 0, 1, 0],
+        border-color: #DDDDDD
 	},
 	.unit_rando: {
 		options: {
@@ -19,123 +21,129 @@
 			medium_headline: true,
 			show_body: true,
 			show_subhed: true
-		}
+		},
+		border-width: [0, 0, 1, 0],
+        border-color: #DDDDDD
 	},
 	.unit_deco: {
 		options: {
 			module: url(NAVIGATION_module.xml),
 			medium_headline: true,
 			show_body: true
-		}
+		},
+		border-width: [0, 0, 1, 0],
+        border-color: #DDDDDD
 	},
 	.unit_full: {
 		options: {
 			module: url(NAVIGATION_module.xml),
 			medium_headline: true,
 			show_body: true
-		}
+		},
+		border-width: [0, 0, 1, 0],
+        border-color: #DDDDDD
 	},
 	#b1: {
 		height: {
-			if: {$count:[=articles.b1.thumbnail]}, 
+			if: {$count:[=articles.b1.thumbnail]},
 			more-than: 0,
-			then: =size.rail_height_with_image, 
+			then: =size.rail_height_with_image,
 			else: =size.rail_height_without_image
 		}
 	},
 	#b2: {
 		height: {
-			if: {$count:[=articles.b2.thumbnail]}, 
+			if: {$count:[=articles.b2.thumbnail]},
 			more-than: 0,
-			then: =size.rail_height_with_image, 
+			then: =size.rail_height_with_image,
 			else: =size.rail_height_without_image
 		}
 	},
 	#b3: {
 		height: {
-			if: {$count:[=articles.b3.thumbnail]}, 
+			if: {$count:[=articles.b3.thumbnail]},
 			more-than: 0,
-			then: =size.rail_height_with_image, 
+			then: =size.rail_height_with_image,
 			else: =size.rail_height_without_image
 		}
 	},
 	#b4: {
 		height: {
-			if: {$count:[=articles.b4.thumbnail]}, 
+			if: {$count:[=articles.b4.thumbnail]},
 			more-than: 0,
-			then: =size.rail_height_with_image, 
+			then: =size.rail_height_with_image,
 			else: =size.rail_height_without_image
 		}
 	},
 	#b5: {
 		height: {
-			if: {$count:[=articles.b5.thumbnail]}, 
+			if: {$count:[=articles.b5.thumbnail]},
 			more-than: 0,
-			then: =size.rail_height_with_image, 
+			then: =size.rail_height_with_image,
 			else: =size.rail_height_without_image
 		}
 	},
 	#b6: {
 		height: {
-			if: {$count:[=articles.b6.thumbnail]}, 
+			if: {$count:[=articles.b6.thumbnail]},
 			more-than: 0,
-			then: =size.rail_height_with_image, 
+			then: =size.rail_height_with_image,
 			else: =size.rail_height_without_image
 		}
 	},
 	#b7: {
 		height: {
-			if: {$count:[=articles.b7.thumbnail]}, 
+			if: {$count:[=articles.b7.thumbnail]},
 			more-than: 0,
-			then: =size.rail_height_with_image, 
+			then: =size.rail_height_with_image,
 			else: =size.rail_height_without_image
 		}
 	},
 	#b8: {
 		height: {
-			if: {$count:[=articles.b8.thumbnail]}, 
+			if: {$count:[=articles.b8.thumbnail]},
 			more-than: 0,
-			then: =size.rail_height_with_image, 
+			then: =size.rail_height_with_image,
 			else: =size.rail_height_without_image
 		}
 	},
 	#b9: {
 		height: {
-			if: {$count:[=articles.b9.thumbnail]}, 
+			if: {$count:[=articles.b9.thumbnail]},
 			more-than: 0,
-			then: =size.rail_height_with_image, 
+			then: =size.rail_height_with_image,
 			else: =size.rail_height_without_image
 		}
 	},
 	#b10: {
 		height: {
-			if: {$count:[=articles.b10.thumbnail]}, 
+			if: {$count:[=articles.b10.thumbnail]},
 			more-than: 0,
-			then: =size.rail_height_with_image, 
+			then: =size.rail_height_with_image,
 			else: =size.rail_height_without_image
 		}
 	},
 	#b11: {
 		height: {
-			if: {$count:[=articles.b11.thumbnail]}, 
+			if: {$count:[=articles.b11.thumbnail]},
 			more-than: 0,
-			then: =size.rail_height_with_image, 
+			then: =size.rail_height_with_image,
 			else: =size.rail_height_without_image
 		}
 	},
 	#b12: {
 		height: {
-			if: {$count:[=articles.b12.thumbnail]}, 
+			if: {$count:[=articles.b12.thumbnail]},
 			more-than: 0,
-			then: =size.rail_height_with_image, 
+			then: =size.rail_height_with_image,
 			else: =size.rail_height_without_image
 		}
 	},
 	#deco: {
 		height: {
-			if: {$count:[=articles.deco.thumbnail]}, 
+			if: {$count:[=articles.deco.thumbnail]},
 			more-than: 0,
-			then: =size.rail_height_with_image, 
+			then: =size.rail_height_with_image,
 			else: =size.rail_height_without_image
 		}
 	}

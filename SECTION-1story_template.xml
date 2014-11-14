@@ -15,8 +15,10 @@
 	}</style>
 	<style> {
 		$switch: [
-			{if: =scale.phone, then: {
-
+			{if: =scale.rail, then: {
+				#deco: {
+					width: =view.width
+				}
 			}},
 			{if: =portrait, then: {
 				jpml: {padding:[0]},

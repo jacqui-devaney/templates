@@ -5,70 +5,63 @@
 	<style>{
 		jpml: {
 			background-color: =options.background_color,
-			padding:[2,25,0, 25]
-		},
+			padding:[3,25,2, 25],
+			height:130
+		}
+	}</style>
+	<style>{
 
 		#deco_container: {
-			display: {
-				if: {$count:[=article.thumbnail]},
-				more-than: 0,
-				then: inherit,
-				else: none
-			},
+
 			anchor-x:left,
 			anchor-y:left,
+			padding:[5, 0, 0, 0],
 			width: 175
 		},
+		image: {
+			height: 115,
+			width: 160,
+			background-color:inherit
+        },
 
 		.byline: {
 			display: {if: =options.show_byline, then:inherit, else:none}
-		},
 
-		.m_byline: {
-			content: =article.byline
 		},
-
 		.article_subhed: {
-			display: {if: =options.show_subhed, then:inherit, else:none},
+			display: {if: =options.show_subhed, then:inherit, else:none}
+		},
+		.body: {
+			display: inherit
+		}
+
+
+	}</style>
+	<style>{
+		.article_subhed: {
 			font-name: DJ5Exchange-MediumItalic,
 			font-size:14,
 			line-height:17,
 			color: #666666
 		},
-
-		.m_subhed: {
-			content: =article.deckline
-		},
-
 		.module_headline: {
 			font-name: DJ5Exchange-SemiBold,
 			font-size: 18,
 			line-height:19
 		},
-
 		#module_text: {
 			padding:[5,0,10,0]
 		},
-
 		.body: {
-			display: inherit,
 			font-name: DJ5Exchange-Medium,
 			font-size:13,
 			line-height:16
 		},
-		
-		.m_summary: {
-			content: =article.summary
-		},
-
-		image: {
-			height: 115,
-			width: 160,
-    		padding:[5, 0, 0, 0],
-    		background-color: inherit,
-			options: {
-				source: {$join: ["url(", =article.thumbnail, ")"]}
-			}
+		.byline: {
+			font-size:14,
+			line-height:16,
+			text-transform:uppercase,
+			padding:[-5,0,4,0]
 		}
 	}</style>
 
@@ -77,9 +70,9 @@
 	</box>
 	<panel id="module_text">
 		<p id="headline" class="module_headline"><mark class="m_headline" /></p>
-		<p class="article_subhed"><mark class="m_subhed"/></p>
-        <p class="byline"><mark class="m_byline"/></p>
-        <p class="body"><mark class="m_summary"/></p>
+		<p class="article_subhed" embed="subhed" />
+        <p class="byline" embed="byline"/>
+        <panel class="body" embed="body"/>
     </panel>
 
 </jpml>

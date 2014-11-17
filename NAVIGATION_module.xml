@@ -1,18 +1,18 @@
 <jpml id="NAVIGATION_module">
+	<!-- This module has a bunch of gross negative padding.  Lets not do this -->
 	<style src="GLOBAL-stylesheet.ejs" />
 	<style src="GLOBAL_MODULES-stylesheet.ejs" />
 	<style src="PHONE-MODULES-stylesheet.ejs" />
 	<style>{
 		jpml: {
 			background-color: =options.background_color,
-			padding:[3,25,2, 25],
+			padding:[{if: =view.height, less-than: =size.rail_height_with_image, then: 8, else: 3},25,{if: =view.height, less-than: =size.rail_height_with_image, then: -10, else: -2}, 25],
 			height:130
 		}
 	}</style>
 	<style>{
 
 		#deco_container: {
-
 			anchor-x:left,
 			anchor-y:left,
 			padding:[5, 0, 0, 0],
@@ -22,7 +22,7 @@
 			height: 115,
 			width: 160,
 			background-color:inherit
-        },
+		},
 
 		.byline: {
 			display: {if: =options.show_byline, then:inherit, else:none}
@@ -42,26 +42,30 @@
 			font-name: DJ5Exchange-MediumItalic,
 			font-size:14,
 			line-height:17,
-			color: #666666
+			color: #666666,
+			padding:[-2,0,0,0]
 		},
 		.module_headline: {
 			font-name: DJ5Exchange-SemiBold,
 			font-size: 18,
-			line-height:19
+			line-height:21
 		},
 		#module_text: {
 			padding:[5,0,10,0]
 		},
 		.body: {
 			font-name: DJ5Exchange-Medium,
-			font-size:13,
-			line-height:16
+			font-size:14,
+			line-height:17,
+			padding:[{if: =options.show_subhed, then:2, else:-4},0,0,0]
 		},
 		.byline: {
 			font-size:14,
+			font-name: DJ5Exchange-Medium,
 			line-height:16,
 			text-transform:uppercase,
-			padding:[-5,0,4,0]
+			padding:[-4,0,4,0],
+			color: #666666
 		}
 	}</style>
 
@@ -71,8 +75,8 @@
 	<panel id="module_text">
 		<p id="headline" class="module_headline"><mark class="m_headline" /></p>
 		<p class="article_subhed" embed="subhed" />
-        <p class="byline" embed="byline"/>
-        <panel class="body" embed="body"/>
-    </panel>
+		<p class="byline" embed="byline"/>
+		<panel class="body" embed="body"/>
+	</panel>
 
 </jpml>

@@ -1,0 +1,2169 @@
+<?xml version="1.0" encoding="ASCII"?>
+
+<article-doc ads="ADS-NOT-ALLOWED" column=""
+    copyright="Dow Jones &amp; Company, Inc." date="2014-11-24 11:14"
+    date-type="auto" display-name="Tech" embargo=""
+    guid="f2dcbcec-7337-11e4-a549-01bf082f8e09"
+    id="SB10909804295654494231304580294954074552556.djml"
+    language="en-us" last-pub-date="2014-11-24 11:43" level="NORMAL"
+    major-revision-date="2014-11-24 11:14"
+    orig-obj-ref="41257b94-737b-11e4-a5f8-39b9aa2fb6e8"
+    orig-obj-src="Methode" orig-pub-date="2014-11-23 20:51" page="News"
+    product="WSJ.com"
+    publication="The Wall Street Journal Interactive Edition"
+    revision-type="minor"
+    root-id="SB00909804295654494231304580294954074552556" section="Tech"
+    seo-id="drone-flights-face-faa-hit-1416793905"
+    seo-url="http://online.wsj.com/articles/drone-flights-face-faa-hit-1416793905"
+    type="Technology"
+    url="http://online.wsj.com/articles/drone-flights-face-faa-hit-1416793905" version="9">
+    <meta-data>
+        <self-codes>
+            <code seoname="Andy Pasztor" symbol="Andy Pasztor"
+                type="AUTHOR" vrtysux="AUTHOR|Andy Pasztor">Andy Pasztor</code>
+            <code seoname="Jack Nicas" symbol="Jack Nicas" type="AUTHOR" vrtysux="AUTHOR|Jack Nicas">Jack Nicas</code>
+            <code seoname="AMZN" symbol="AMZN" type="COMPANY" vrtysux="COMPANY|AMZN">AMZN</code>
+            <code seoname="BA" symbol="BA" type="COMPANY" vrtysux="COMPANY|BA">BA</code>
+            <code seoname="COP" symbol="COP" type="COMPANY" vrtysux="COMPANY|COP">COP</code>
+            <code seoname="GOOGL" symbol="GOOGL" type="COMPANY" vrtysux="COMPANY|GOOGL">GOOGL</code>
+            <code seoname="Amazon.com" symbol="amzcom"
+                type="DJII-COMPANY" vrtysux="DJII-COMPANY|amzcom">Amazon.com</code>
+            <code
+                seoname="Association for Unmanned Vehicle Systems International"
+                symbol="aumvhs" type="DJII-COMPANY" vrtysux="DJII-COMPANY|aumvhs">Association for Unmanned Vehicle Systems International</code>
+            <code seoname="Boeing" symbol="boeing" type="DJII-COMPANY" vrtysux="DJII-COMPANY|boeing">Boeing</code>
+            <code seoname="Current FAA" symbol="Current FAA"
+                type="DJII-COMPANY" vrtysux="DJII-COMPANY|Current FAA">Current FAA</code>
+            <code seoname="FAA" symbol="fedaa" type="DJII-COMPANY" vrtysux="DJII-COMPANY|fedaa">FAA</code>
+            <code seoname="Google" symbol="goog" type="DJII-COMPANY" vrtysux="DJII-COMPANY|goog">Google</code>
+            <code seoname="Hogan Lovells US" symbol="hoha"
+                type="DJII-COMPANY" vrtysux="DJII-COMPANY|hoha">Hogan Lovells US</code>
+            <code seoname="Pentagon" symbol="Pentagon"
+                type="DJII-COMPANY" vrtysux="DJII-COMPANY|Pentagon">Pentagon</code>
+            <code seoname="ConocoPhillips" symbol="philp"
+                type="DJII-COMPANY" vrtysux="DJII-COMPANY|philp">ConocoPhillips</code>
+            <code seoname="Pillsbury Winthrop Shaw Pittman"
+                symbol="pilmad" type="DJII-COMPANY" vrtysux="DJII-COMPANY|pilmad">Pillsbury Winthrop Shaw Pittman</code>
+            <code seoname="SZ DJI Technology" symbol="SZ DJI Technology"
+                type="DJII-COMPANY" vrtysux="DJII-COMPANY|SZ DJI Technology">SZ DJI Technology</code>
+            <code seoname="White House Office of Management and Budget"
+                symbol="White House Office of Management and Budget"
+                type="DJII-COMPANY" vrtysux="DJII-COMPANY|White House Office of Management and Budget">White House Office of Management and Budget</code>
+            <code seoname="Aerospace Products/Parts" symbol="i364"
+                type="DJII-INDUSTRY" vrtysux="DJII-INDUSTRY|i364">Aerospace Products/Parts</code>
+            <code seoname="Aerospace/Defense" symbol="iaer"
+                type="DJII-INDUSTRY" vrtysux="DJII-INDUSTRY|iaer">Aerospace/Defense</code>
+            <code seoname="Industrial Goods" symbol="iindstrls"
+                type="DJII-INDUSTRY" vrtysux="DJII-INDUSTRY|iindstrls">Industrial Goods</code>
+            <code seoname="Drones" symbol="iuav" type="DJII-INDUSTRY" vrtysux="DJII-INDUSTRY|iuav">Drones</code>
+            <code seoname="Michael Drobac" symbol="111787078"
+                type="DJII-PERSON" vrtysux="DJII-PERSON|111787078">Michael Drobac</code>
+            <code seoname="Kenneth Quinn" symbol="117967695"
+                type="DJII-PERSON" vrtysux="DJII-PERSON|117967695">Kenneth Quinn</code>
+            <code seoname="Gretchen West" symbol="Gretchen West"
+                type="DJII-PERSON" vrtysux="DJII-PERSON|Gretchen West">Gretchen West</code>
+            <code seoname="Jesse Kallman" symbol="Jesse Kallman"
+                type="DJII-PERSON" vrtysux="DJII-PERSON|Jesse Kallman">Jesse Kallman</code>
+            <code seoname="Ted Ellett" symbol="Ted Ellett"
+                type="DJII-PERSON" vrtysux="DJII-PERSON|Ted Ellett">Ted Ellett</code>
+            <code seoname="North America" symbol="namz"
+                type="DJII-REGION" vrtysux="DJII-REGION|namz">North America</code>
+            <code seoname="United States" symbol="usa"
+                type="DJII-REGION" vrtysux="DJII-REGION|usa">United States</code>
+            <code seoname="I/ARO" symbol="I/ARO" type="DJN" vrtysux="DJN|I/ARO">I/ARO</code>
+            <code seoname="I/ASP" symbol="I/ASP" type="DJN" vrtysux="DJN|I/ASP">I/ASP</code>
+            <code seoname="I/IDD" symbol="I/IDD" type="DJN" vrtysux="DJN|I/IDD">I/IDD</code>
+            <code seoname="M/IDU" symbol="M/IDU" type="DJN" vrtysux="DJN|M/IDU">M/IDU</code>
+            <code seoname="N/DJN" symbol="n/djn" type="DJN" vrtysux="DJN|n/djn">N/DJN</code>
+            <code seoname="N/WER" symbol="n/wer" type="DJN" vrtysux="DJN|n/wer">N/WER</code>
+            <code seoname="P/METH" symbol="p/meth" type="DJN" vrtysux="DJN|p/meth">P/METH</code>
+            <code seoname="R/NME" symbol="R/NME" type="DJN" vrtysux="DJN|R/NME">R/NME</code>
+            <code seoname="R/US" symbol="R/US" type="DJN" vrtysux="DJN|R/US">R/US</code>
+            <code symbol="Drone Flights Face FAA Hit"
+                type="FIRST_PUBLISH_HEADLINE" vrtysux="FIRST_PUBLISH_HEADLINE|Drone Flights Face FAA Hit"/>
+            <code seoname="WSJ" symbol="WSJ" type="FLOW" vrtysux="FLOW|WSJ">WSJ</code>
+            <code seoname="WSJ.com" symbol="WSJ.com" type="FLOW" vrtysux="FLOW|WSJ.com">WSJ.com</code>
+            <code seoname="WSJAsia" symbol="WSJAsia" type="FLOW" vrtysux="FLOW|WSJAsia">WSJAsia</code>
+            <code seoname="WSJEurope" symbol="WSJEurope" type="FLOW" vrtysux="FLOW|WSJEurope">WSJEurope</code>
+            <code seoname="WSJ Japanese" symbol="WSJ Japanese"
+                type="FLOW" vrtysux="FLOW|WSJ Japanese">WSJ Japanese</code>
+            <code seoname="WSJSunday" symbol="WSJSunday" type="FLOW" vrtysux="FLOW|WSJSunday">WSJSunday</code>
+            <code symbol="Drone Flights Face FAA Hit" type="HEADLINE" vrtysux="HEADLINE|Drone Flights Face FAA Hit"/>
+            <code seoname="2710" symbol="2710" type="INDUSTRY" vrtysux="INDUSTRY|2710">2710</code>
+            <code seoname="COMMERCIAL DRONES" symbol="COMMERCIAL DRONES"
+                type="KEYWORD" vrtysux="KEYWORD|COMMERCIAL DRONES">COMMERCIAL DRONES</code>
+            <code seoname="DRONE INDUSTRY" symbol="DRONE INDUSTRY"
+                type="KEYWORD" vrtysux="KEYWORD|DRONE INDUSTRY">DRONE INDUSTRY</code>
+            <code seoname="DRONE RULES" symbol="DRONE RULES"
+                type="KEYWORD" vrtysux="KEYWORD|DRONE RULES">DRONE RULES</code>
+            <code seoname="DRONES" symbol="DRONES" type="KEYWORD" vrtysux="KEYWORD|DRONES">DRONES</code>
+            <code symbol="SB109098042956544942313045802949540745525561"
+                type="NWCHAIN" vrtysux="NWCHAIN|SB109098042956544942313045802949540745525561"/>
+            <code seoname="Drobac, Michael" symbol="Drobac, Michael"
+                type="PERSON" vrtysux="PERSON|Drobac, Michael">Drobac, Michael</code>
+            <code seoname="Quinn, Kenneth" symbol="Quinn, Kenneth"
+                type="PERSON" vrtysux="PERSON|Quinn, Kenneth">Quinn, Kenneth</code>
+            <code symbol="SYND" type="RELAY" vrtysux="RELAY|SYND"/>
+            <code seoname="Yes" symbol="BETA" type="STATISTIC" vrtysux="STATISTIC|BETA">Yes</code>
+            <code seoname="CODES_REVIEWED" symbol="CODES_REVIEWED"
+                type="STATISTIC" vrtysux="STATISTIC|CODES_REVIEWED">CODES_REVIEWED</code>
+            <code seoname="US News" symbol="ONEW" type="SUBJECT" vrtysux="SUBJECT|ONEW">US News</code>
+            <code seoname="Tech" symbol="OTEC" type="SUBJECT" vrtysux="SUBJECT|OTEC">Tech</code>
+            <properties>
+                <property>
+                    <type>author</type>
+                    <value>Jack Nicas</value>
+                    <itemid>author|Jack Nicas</itemid>
+                    <properties>
+                        <property>
+                            <type>extractedtext</type>
+                            <value>Jack Nicas</value>
+                        </property>
+                        <property>
+                            <type>name</type>
+                            <value>Jack Nicas</value>
+                        </property>
+                        <property>
+                            <type>rank</type>
+                            <value>1</value>
+                        </property>
+                        <property>
+                            <type>topicid</type>
+                            <value>7259</value>
+                        </property>
+                        <property>
+                            <type>author</type>
+                            <value>Jack Nicas</value>
+                        </property>
+                        <property>
+                            <type>id</type>
+                            <value>Jack Nicas</value>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>author</type>
+                    <value>Andy Pasztor</value>
+                    <itemid>author|Andy Pasztor</itemid>
+                    <properties>
+                        <property>
+                            <type>extractedtext</type>
+                            <value>Andy Pasztor</value>
+                        </property>
+                        <property>
+                            <type>name</type>
+                            <value>Andy Pasztor</value>
+                        </property>
+                        <property>
+                            <type>rank</type>
+                            <value>2</value>
+                        </property>
+                        <property>
+                            <type>topicid</type>
+                            <value>1472</value>
+                        </property>
+                        <property>
+                            <type>author</type>
+                            <value>Andy Pasztor</value>
+                        </property>
+                        <property>
+                            <type>id</type>
+                            <value>Andy Pasztor</value>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>co</type>
+                    <value>fedaa</value>
+                    <itemid>co|fedaa</itemid>
+                    <properties>
+                        <property>
+                            <type>confidence</type>
+                            <value>96</value>
+                        </property>
+                        <property>
+                            <type>confidencerange</type>
+                            <value>high</value>
+                        </property>
+                        <property>
+                            <type>displayname</type>
+                            <value>FAA</value>
+                        </property>
+                        <property>
+                            <type>extractedtext</type>
+                            <value>FAA</value>
+                        </property>
+                        <property>
+                            <type>fcode</type>
+                            <value>fedaa</value>
+                        </property>
+                        <property>
+                            <type>name</type>
+                            <value>FAA</value>
+                        </property>
+                        <property>
+                            <type>occurs</type>
+                            <value>true</value>
+                        </property>
+                        <property>
+                            <type>onlinesignificance</type>
+                            <value>prominent</value>
+                        </property>
+                        <property>
+                            <type>relevance</type>
+                            <value>78</value>
+                        </property>
+                        <property>
+                            <type>relevancerange</type>
+                            <value>high</value>
+                        </property>
+                        <property>
+                            <type>significance</type>
+                            <value>prominent</value>
+                        </property>
+                        <property>
+                            <type>source</type>
+                            <value>FACTIVA</value>
+                        </property>
+                        <property>
+                            <type>subcat</type>
+                            <value>org</value>
+                        </property>
+                        <property>
+                            <type>why</type>
+                            <value>about</value>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>co</type>
+                    <value>aumvhs</value>
+                    <itemid>co|aumvhs</itemid>
+                    <properties>
+                        <property>
+                            <type>confidence</type>
+                            <value>100</value>
+                        </property>
+                        <property>
+                            <type>confidencerange</type>
+                            <value>high</value>
+                        </property>
+                        <property>
+                            <type>displayname</type>
+                            <value>Association for Unmanned Vehicle Systems International</value>
+                        </property>
+                        <property>
+                            <type>extractedtext</type>
+                            <value>Association for Unmanned Vehicle Systems International</value>
+                        </property>
+                        <property>
+                            <type>fcode</type>
+                            <value>aumvhs</value>
+                        </property>
+                        <property>
+                            <type>name</type>
+                            <value>Association for Unmanned Vehicle Systems International</value>
+                        </property>
+                        <property>
+                            <type>relevance</type>
+                            <value>1</value>
+                        </property>
+                        <property>
+                            <type>relevancerange</type>
+                            <value>verylow</value>
+                        </property>
+                        <property>
+                            <type>source</type>
+                            <value>FACTIVA</value>
+                        </property>
+                        <property>
+                            <type>subcat</type>
+                            <value>org</value>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>co</type>
+                    <value>pilmad</value>
+                    <itemid>co|pilmad</itemid>
+                    <properties>
+                        <property>
+                            <type>confidence</type>
+                            <value>100</value>
+                        </property>
+                        <property>
+                            <type>confidencerange</type>
+                            <value>high</value>
+                        </property>
+                        <property>
+                            <type>displayname</type>
+                            <value>Pillsbury Winthrop Shaw Pittman</value>
+                        </property>
+                        <property>
+                            <type>extractedtext</type>
+                            <value>Pillsbury Winthrop Shaw Pittman</value>
+                        </property>
+                        <property>
+                            <type>fcode</type>
+                            <value>pilmad</value>
+                        </property>
+                        <property>
+                            <type>name</type>
+                            <value>Pillsbury Winthrop Shaw Pittman</value>
+                        </property>
+                        <property>
+                            <type>relevance</type>
+                            <value>10</value>
+                        </property>
+                        <property>
+                            <type>relevancerange</type>
+                            <value>verylow</value>
+                        </property>
+                        <property>
+                            <type>source</type>
+                            <value>FACTIVA</value>
+                        </property>
+                        <property>
+                            <type>subcat</type>
+                            <value>com</value>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>co</type>
+                    <value>Current FAA</value>
+                    <itemid>co|Current FAA</itemid>
+                    <properties>
+                        <property>
+                            <type>displayname</type>
+                            <value>Current FAA</value>
+                        </property>
+                        <property>
+                            <type>extractedtext</type>
+                            <value>Current FAA</value>
+                        </property>
+                        <property>
+                            <type>name</type>
+                            <value>Current FAA</value>
+                        </property>
+                        <property>
+                            <type>source</type>
+                            <value>FACTIVA</value>
+                        </property>
+                        <property>
+                            <type>subcat</type>
+                            <value>gov</value>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>co</type>
+                    <value>Pentagon</value>
+                    <itemid>co|Pentagon</itemid>
+                    <properties>
+                        <property>
+                            <type>displayname</type>
+                            <value>Pentagon</value>
+                        </property>
+                        <property>
+                            <type>extractedtext</type>
+                            <value>Pentagon</value>
+                        </property>
+                        <property>
+                            <type>name</type>
+                            <value>Pentagon</value>
+                        </property>
+                        <property>
+                            <type>source</type>
+                            <value>FACTIVA</value>
+                        </property>
+                        <property>
+                            <type>subcat</type>
+                            <value>gov</value>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>co</type>
+                    <value>White House Office of Management and Budget</value>
+                    <itemid>co|White House Office of Management and Budget</itemid>
+                    <properties>
+                        <property>
+                            <type>displayname</type>
+                            <value>Office of Management and Budget</value>
+                        </property>
+                        <property>
+                            <type>extractedtext</type>
+                            <value>White House Office of Management and Budget</value>
+                        </property>
+                        <property>
+                            <type>name</type>
+                            <value>White House Office of Management and Budget</value>
+                        </property>
+                        <property>
+                            <type>source</type>
+                            <value>FACTIVA</value>
+                        </property>
+                        <property>
+                            <type>subcat</type>
+                            <value>gov</value>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>co</type>
+                    <value>boeing</value>
+                    <itemid>co|boeing</itemid>
+                    <properties>
+                        <property>
+                            <type>confidence</type>
+                            <value>100</value>
+                        </property>
+                        <property>
+                            <type>confidencerange</type>
+                            <value>high</value>
+                        </property>
+                        <property>
+                            <type>displayname</type>
+                            <value>Boeing</value>
+                        </property>
+                        <property>
+                            <type>extractedtext</type>
+                            <value>Boeing</value>
+                        </property>
+                        <property>
+                            <type>fcode</type>
+                            <value>boeing</value>
+                        </property>
+                        <property>
+                            <type>name</type>
+                            <value>Boeing</value>
+                        </property>
+                        <property>
+                            <type>onlinesignificance</type>
+                            <value>passing-mention</value>
+                        </property>
+                        <property>
+                            <type>relevance</type>
+                            <value>25</value>
+                        </property>
+                        <property>
+                            <type>relevancerange</type>
+                            <value>low</value>
+                        </property>
+                        <property>
+                            <type>seoname</type>
+                            <value>boeing</value>
+                        </property>
+                        <property>
+                            <type>significance</type>
+                            <value>prominent</value>
+                        </property>
+                        <property>
+                            <type>source</type>
+                            <value>FACTIVA</value>
+                        </property>
+                        <property>
+                            <type>status</type>
+                            <value>modified</value>
+                        </property>
+                        <property>
+                            <type>subcat</type>
+                            <value>com</value>
+                        </property>
+                        <property>
+                            <type>symbol</type>
+                            <value>BA</value>
+                        </property>
+                        <property>
+                            <type>why</type>
+                            <value>occur</value>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>co</type>
+                    <value>amzcom</value>
+                    <itemid>co|amzcom</itemid>
+                    <properties>
+                        <property>
+                            <type>confidence</type>
+                            <value>100</value>
+                        </property>
+                        <property>
+                            <type>confidencerange</type>
+                            <value>high</value>
+                        </property>
+                        <property>
+                            <type>displayname</type>
+                            <value>Amazon.com</value>
+                        </property>
+                        <property>
+                            <type>extractedtext</type>
+                            <value>Amazon.com</value>
+                        </property>
+                        <property>
+                            <type>fcode</type>
+                            <value>amzcom</value>
+                        </property>
+                        <property>
+                            <type>name</type>
+                            <value>Amazon.com</value>
+                        </property>
+                        <property>
+                            <type>onlinesignificance</type>
+                            <value>passing-mention</value>
+                        </property>
+                        <property>
+                            <type>relevance</type>
+                            <value>20</value>
+                        </property>
+                        <property>
+                            <type>relevancerange</type>
+                            <value>verylow</value>
+                        </property>
+                        <property>
+                            <type>seoname</type>
+                            <value>amazon_com</value>
+                        </property>
+                        <property>
+                            <type>significance</type>
+                            <value>prominent</value>
+                        </property>
+                        <property>
+                            <type>source</type>
+                            <value>FACTIVA</value>
+                        </property>
+                        <property>
+                            <type>status</type>
+                            <value>modified</value>
+                        </property>
+                        <property>
+                            <type>subcat</type>
+                            <value>com</value>
+                        </property>
+                        <property>
+                            <type>symbol</type>
+                            <value>AMZN</value>
+                        </property>
+                        <property>
+                            <type>ticker</type>
+                            <value>AMZN</value>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>co</type>
+                    <value>goog</value>
+                    <itemid>co|goog</itemid>
+                    <properties>
+                        <property>
+                            <type>confidence</type>
+                            <value>100</value>
+                        </property>
+                        <property>
+                            <type>confidencerange</type>
+                            <value>high</value>
+                        </property>
+                        <property>
+                            <type>countrycode</type>
+                            <value>US</value>
+                        </property>
+                        <property>
+                            <type>displayname</type>
+                            <value>Google</value>
+                        </property>
+                        <property>
+                            <type>exchange</type>
+                            <value>Nasdaq</value>
+                        </property>
+                        <property>
+                            <type>extractedtext</type>
+                            <value>Google</value>
+                        </property>
+                        <property>
+                            <type>fcode</type>
+                            <value>goog</value>
+                        </property>
+                        <property>
+                            <type>name</type>
+                            <value>Google</value>
+                        </property>
+                        <property>
+                            <type>onlinesignificance</type>
+                            <value>passing-mention</value>
+                        </property>
+                        <property>
+                            <type>relevance</type>
+                            <value>1</value>
+                        </property>
+                        <property>
+                            <type>relevancerange</type>
+                            <value>verylow</value>
+                        </property>
+                        <property>
+                            <type>seoname</type>
+                            <value>google</value>
+                        </property>
+                        <property>
+                            <type>significance</type>
+                            <value>prominent</value>
+                        </property>
+                        <property>
+                            <type>source</type>
+                            <value>FACTIVA</value>
+                        </property>
+                        <property>
+                            <type>status</type>
+                            <value>modified</value>
+                        </property>
+                        <property>
+                            <type>subcat</type>
+                            <value>com</value>
+                        </property>
+                        <property>
+                            <type>symbol</type>
+                            <value>GOOGL</value>
+                        </property>
+                        <property>
+                            <type>ticker</type>
+                            <value>GOOGL</value>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>co</type>
+                    <value>hoha</value>
+                    <itemid>co|hoha</itemid>
+                    <properties>
+                        <property>
+                            <type>confidence</type>
+                            <value>100</value>
+                        </property>
+                        <property>
+                            <type>confidencerange</type>
+                            <value>high</value>
+                        </property>
+                        <property>
+                            <type>displayname</type>
+                            <value>Hogan Lovells US</value>
+                        </property>
+                        <property>
+                            <type>extractedtext</type>
+                            <value>Hogan Lovells US</value>
+                        </property>
+                        <property>
+                            <type>fcode</type>
+                            <value>hoha</value>
+                        </property>
+                        <property>
+                            <type>name</type>
+                            <value>Hogan Lovells US</value>
+                        </property>
+                        <property>
+                            <type>onlinesignificance</type>
+                            <value>passing-mention</value>
+                        </property>
+                        <property>
+                            <type>relevance</type>
+                            <value>20</value>
+                        </property>
+                        <property>
+                            <type>relevancerange</type>
+                            <value>verylow</value>
+                        </property>
+                        <property>
+                            <type>significance</type>
+                            <value>prominent</value>
+                        </property>
+                        <property>
+                            <type>source</type>
+                            <value>FACTIVA</value>
+                        </property>
+                        <property>
+                            <type>status</type>
+                            <value>modified</value>
+                        </property>
+                        <property>
+                            <type>subcat</type>
+                            <value>com</value>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>co</type>
+                    <value>philp</value>
+                    <itemid>co|philp</itemid>
+                    <properties>
+                        <property>
+                            <type>confidence</type>
+                            <value>100</value>
+                        </property>
+                        <property>
+                            <type>confidencerange</type>
+                            <value>high</value>
+                        </property>
+                        <property>
+                            <type>displayname</type>
+                            <value>ConocoPhillips</value>
+                        </property>
+                        <property>
+                            <type>extractedtext</type>
+                            <value>ConocoPhillips</value>
+                        </property>
+                        <property>
+                            <type>fcode</type>
+                            <value>philp</value>
+                        </property>
+                        <property>
+                            <type>name</type>
+                            <value>ConocoPhillips</value>
+                        </property>
+                        <property>
+                            <type>onlinesignificance</type>
+                            <value>passing-mention</value>
+                        </property>
+                        <property>
+                            <type>relevance</type>
+                            <value>19</value>
+                        </property>
+                        <property>
+                            <type>relevancerange</type>
+                            <value>verylow</value>
+                        </property>
+                        <property>
+                            <type>seoname</type>
+                            <value>conocophillips</value>
+                        </property>
+                        <property>
+                            <type>significance</type>
+                            <value>prominent</value>
+                        </property>
+                        <property>
+                            <type>source</type>
+                            <value>FACTIVA</value>
+                        </property>
+                        <property>
+                            <type>status</type>
+                            <value>modified</value>
+                        </property>
+                        <property>
+                            <type>subcat</type>
+                            <value>com</value>
+                        </property>
+                        <property>
+                            <type>symbol</type>
+                            <value>COP</value>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>co</type>
+                    <value>SZ DJI Technology</value>
+                    <itemid>co|SZ DJI Technology</itemid>
+                    <properties>
+                        <property>
+                            <type>displayname</type>
+                            <value>SZ DJI Technology</value>
+                        </property>
+                        <property>
+                            <type>extractedtext</type>
+                            <value>SZ DJI Technology</value>
+                        </property>
+                        <property>
+                            <type>name</type>
+                            <value>SZ DJI Technology</value>
+                        </property>
+                        <property>
+                            <type>onlinesignificance</type>
+                            <value>passing-mention</value>
+                        </property>
+                        <property>
+                            <type>significance</type>
+                            <value>prominent</value>
+                        </property>
+                        <property>
+                            <type>source</type>
+                            <value>FACTIVA</value>
+                        </property>
+                        <property>
+                            <type>status</type>
+                            <value>modified</value>
+                        </property>
+                        <property>
+                            <type>subcat</type>
+                            <value>com</value>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>company</type>
+                    <value>BA</value>
+                    <itemid>company|BA</itemid>
+                    <properties>
+                        <property>
+                            <type>name</type>
+                            <value>Boeing</value>
+                        </property>
+                        <property>
+                            <type>significance</type>
+                            <value>PASSING-MENTION</value>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>company</type>
+                    <value>COP</value>
+                    <itemid>company|COP</itemid>
+                    <properties>
+                        <property>
+                            <type>name</type>
+                            <value>ConocoPhillips</value>
+                        </property>
+                        <property>
+                            <type>significance</type>
+                            <value>PASSING-MENTION</value>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>company</type>
+                    <value>GOOGL</value>
+                    <itemid>company|GOOGL</itemid>
+                    <properties>
+                        <property>
+                            <type>name</type>
+                            <value>Google</value>
+                        </property>
+                        <property>
+                            <type>significance</type>
+                            <value>PASSING-MENTION</value>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>company</type>
+                    <value>AMZN</value>
+                    <itemid>company|AMZN</itemid>
+                    <properties>
+                        <property>
+                            <type>name</type>
+                            <value>Amazon.com</value>
+                        </property>
+                        <property>
+                            <type>significance</type>
+                            <value>PASSING-MENTION</value>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>djn</type>
+                    <value>I/ARO</value>
+                    <itemid>djn|I/ARO</itemid>
+                    <properties>
+                        <property>
+                            <type>fcode</type>
+                            <value>I/ARO</value>
+                        </property>
+                        <property>
+                            <type>name</type>
+                            <value>I/ARO</value>
+                        </property>
+                        <property>
+                            <type>onlinesignificance</type>
+                            <value>prominent</value>
+                        </property>
+                        <property>
+                            <type>significance</type>
+                            <value>prominent</value>
+                        </property>
+                        <property>
+                            <type>source</type>
+                            <value>FACTIVA</value>
+                        </property>
+                        <property>
+                            <type>why</type>
+                            <value>about</value>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>djn</type>
+                    <value>I/ASP</value>
+                    <itemid>djn|I/ASP</itemid>
+                    <properties>
+                        <property>
+                            <type>fcode</type>
+                            <value>I/ASP</value>
+                        </property>
+                        <property>
+                            <type>name</type>
+                            <value>I/ASP</value>
+                        </property>
+                        <property>
+                            <type>source</type>
+                            <value>FACTIVA</value>
+                        </property>
+                        <property>
+                            <type>why</type>
+                            <value>lineage</value>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>djn</type>
+                    <value>I/IDD</value>
+                    <itemid>djn|I/IDD</itemid>
+                    <properties>
+                        <property>
+                            <type>fcode</type>
+                            <value>I/IDD</value>
+                        </property>
+                        <property>
+                            <type>name</type>
+                            <value>I/IDD</value>
+                        </property>
+                        <property>
+                            <type>source</type>
+                            <value>FACTIVA</value>
+                        </property>
+                        <property>
+                            <type>why</type>
+                            <value>lineage</value>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>djn</type>
+                    <value>M/IDU</value>
+                    <itemid>djn|M/IDU</itemid>
+                    <properties>
+                        <property>
+                            <type>fcode</type>
+                            <value>M/IDU</value>
+                        </property>
+                        <property>
+                            <type>name</type>
+                            <value>M/IDU</value>
+                        </property>
+                        <property>
+                            <type>source</type>
+                            <value>FACTIVA</value>
+                        </property>
+                        <property>
+                            <type>why</type>
+                            <value>lineage</value>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>djn</type>
+                    <value>R/US</value>
+                    <itemid>djn|R/US</itemid>
+                    <properties>
+                        <property>
+                            <type>fcode</type>
+                            <value>R/US</value>
+                        </property>
+                        <property>
+                            <type>name</type>
+                            <value>R/US</value>
+                        </property>
+                        <property>
+                            <type>onlinesignificance</type>
+                            <value>prominent</value>
+                        </property>
+                        <property>
+                            <type>significance</type>
+                            <value>prominent</value>
+                        </property>
+                        <property>
+                            <type>source</type>
+                            <value>FACTIVA</value>
+                        </property>
+                        <property>
+                            <type>why</type>
+                            <value>about</value>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>djn</type>
+                    <value>R/NME</value>
+                    <itemid>djn|R/NME</itemid>
+                    <properties>
+                        <property>
+                            <type>fcode</type>
+                            <value>R/NME</value>
+                        </property>
+                        <property>
+                            <type>name</type>
+                            <value>R/NME</value>
+                        </property>
+                        <property>
+                            <type>source</type>
+                            <value>FACTIVA</value>
+                        </property>
+                        <property>
+                            <type>why</type>
+                            <value>lineage</value>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>djn</type>
+                    <value>n/djn</value>
+                    <itemid>djn|n/djn</itemid>
+                    <properties>
+                        <property>
+                            <type>codetype</type>
+                            <value>djnCode</value>
+                        </property>
+                        <property>
+                            <type>name</type>
+                            <value>N/DJN</value>
+                        </property>
+                        <property>
+                            <type>source</type>
+                            <value>MANUAL</value>
+                        </property>
+                        <property>
+                            <type>status</type>
+                            <value>modified</value>
+                        </property>
+                        <property>
+                            <type>value</type>
+                            <value>n/djn</value>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>djn</type>
+                    <value>n/wer</value>
+                    <itemid>djn|n/wer</itemid>
+                    <properties>
+                        <property>
+                            <type>codetype</type>
+                            <value>djnCode</value>
+                        </property>
+                        <property>
+                            <type>name</type>
+                            <value>N/WER</value>
+                        </property>
+                        <property>
+                            <type>source</type>
+                            <value>MANUAL</value>
+                        </property>
+                        <property>
+                            <type>status</type>
+                            <value>modified</value>
+                        </property>
+                        <property>
+                            <type>value</type>
+                            <value>n/wer</value>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>djn</type>
+                    <value>p/meth</value>
+                    <itemid>djn|p/meth</itemid>
+                    <properties>
+                        <property>
+                            <type>codetype</type>
+                            <value>djnCode</value>
+                        </property>
+                        <property>
+                            <type>name</type>
+                            <value>P/METH</value>
+                        </property>
+                        <property>
+                            <type>source</type>
+                            <value>MANUAL</value>
+                        </property>
+                        <property>
+                            <type>status</type>
+                            <value>modified</value>
+                        </property>
+                        <property>
+                            <type>value</type>
+                            <value>p/meth</value>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>first_publish_headline</type>
+                    <value>Drone Flights Face FAA Hit</value>
+                    <itemid>first_publish_headline|Drone Flights Face FAA Hit</itemid>
+                </property>
+                <property>
+                    <type>flow</type>
+                    <value>WSJ.com</value>
+                    <itemid>flow|WSJ.com</itemid>
+                    <properties>
+                        <property>
+                            <type>name</type>
+                            <value>WSJ.com</value>
+                        </property>
+                        <property>
+                            <type>status</type>
+                            <value>modified</value>
+                        </property>
+                        <property>
+                            <type>title</type>
+                            <value>Product</value>
+                        </property>
+                        <property>
+                            <type>value</type>
+                            <value>WSJ.com</value>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>flow</type>
+                    <value>WSJ</value>
+                    <itemid>flow|WSJ</itemid>
+                    <properties>
+                        <property>
+                            <type>name</type>
+                            <value>WSJ</value>
+                        </property>
+                        <property>
+                            <type>status</type>
+                            <value>modified</value>
+                        </property>
+                        <property>
+                            <type>title</type>
+                            <value>Product</value>
+                        </property>
+                        <property>
+                            <type>value</type>
+                            <value>WSJ</value>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>flow</type>
+                    <value>WSJAsia</value>
+                    <itemid>flow|WSJAsia</itemid>
+                    <properties>
+                        <property>
+                            <type>name</type>
+                            <value>WSJAsia</value>
+                        </property>
+                        <property>
+                            <type>status</type>
+                            <value>modified</value>
+                        </property>
+                        <property>
+                            <type>title</type>
+                            <value>Product</value>
+                        </property>
+                        <property>
+                            <type>value</type>
+                            <value>WSJAsia</value>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>flow</type>
+                    <value>WSJEurope</value>
+                    <itemid>flow|WSJEurope</itemid>
+                    <properties>
+                        <property>
+                            <type>name</type>
+                            <value>WSJEurope</value>
+                        </property>
+                        <property>
+                            <type>status</type>
+                            <value>modified</value>
+                        </property>
+                        <property>
+                            <type>title</type>
+                            <value>Product</value>
+                        </property>
+                        <property>
+                            <type>value</type>
+                            <value>WSJEurope</value>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>flow</type>
+                    <value>WSJSunday</value>
+                    <itemid>flow|WSJSunday</itemid>
+                    <properties>
+                        <property>
+                            <type>name</type>
+                            <value>WSJSunday</value>
+                        </property>
+                        <property>
+                            <type>status</type>
+                            <value>modified</value>
+                        </property>
+                        <property>
+                            <type>title</type>
+                            <value>Product</value>
+                        </property>
+                        <property>
+                            <type>value</type>
+                            <value>WSJSunday</value>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>flow</type>
+                    <value>WSJ Japanese</value>
+                    <itemid>flow|WSJ Japanese</itemid>
+                    <properties>
+                        <property>
+                            <type>name</type>
+                            <value>WSJ Japanese</value>
+                        </property>
+                        <property>
+                            <type>status</type>
+                            <value>modified</value>
+                        </property>
+                        <property>
+                            <type>title</type>
+                            <value>Product</value>
+                        </property>
+                        <property>
+                            <type>value</type>
+                            <value>WSJ Japanese</value>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>headline</type>
+                    <value>Drone Flights Face FAA Hit</value>
+                    <itemid>headline|Drone Flights Face FAA Hit</itemid>
+                </property>
+                <property>
+                    <type>icbindustry</type>
+                    <value>2710</value>
+                    <itemid>icbindustry|2710</itemid>
+                    <properties>
+                        <property>
+                            <type>comments</type>
+                            <value>Keyword:DJII-INDUSTRY i364,iindstrls,iuav,iaer</value>
+                        </property>
+                        <property>
+                            <type>description</type>
+                            <value>03|Industries|Defense/Aero</value>
+                        </property>
+                        <property>
+                            <type>name</type>
+                            <value>2710</value>
+                        </property>
+                        <property>
+                            <type>source</type>
+                            <value>EXPANDER</value>
+                        </property>
+                        <property>
+                            <type>value</type>
+                            <value>2710</value>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>in</type>
+                    <value>iuav</value>
+                    <itemid>in|iuav</itemid>
+                    <properties>
+                        <property>
+                            <type>fcode</type>
+                            <value>iuav</value>
+                        </property>
+                        <property>
+                            <type>name</type>
+                            <value>Drones</value>
+                        </property>
+                        <property>
+                            <type>onlinesignificance</type>
+                            <value>prominent</value>
+                        </property>
+                        <property>
+                            <type>significance</type>
+                            <value>prominent</value>
+                        </property>
+                        <property>
+                            <type>source</type>
+                            <value>FACTIVA</value>
+                        </property>
+                        <property>
+                            <type>why</type>
+                            <value>about</value>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>in</type>
+                    <value>iaer</value>
+                    <itemid>in|iaer</itemid>
+                    <properties>
+                        <property>
+                            <type>fcode</type>
+                            <value>iaer</value>
+                        </property>
+                        <property>
+                            <type>name</type>
+                            <value>Aerospace/Defense</value>
+                        </property>
+                        <property>
+                            <type>onlinesignificance</type>
+                            <value>prominent</value>
+                        </property>
+                        <property>
+                            <type>significance</type>
+                            <value>prominent</value>
+                        </property>
+                        <property>
+                            <type>source</type>
+                            <value>FACTIVA</value>
+                        </property>
+                        <property>
+                            <type>why</type>
+                            <value>about</value>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>in</type>
+                    <value>i364</value>
+                    <itemid>in|i364</itemid>
+                    <properties>
+                        <property>
+                            <type>fcode</type>
+                            <value>i364</value>
+                        </property>
+                        <property>
+                            <type>name</type>
+                            <value>Aerospace Products/Parts</value>
+                        </property>
+                        <property>
+                            <type>source</type>
+                            <value>FACTIVA</value>
+                        </property>
+                        <property>
+                            <type>why</type>
+                            <value>lineage</value>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>in</type>
+                    <value>iindstrls</value>
+                    <itemid>in|iindstrls</itemid>
+                    <properties>
+                        <property>
+                            <type>fcode</type>
+                            <value>iindstrls</value>
+                        </property>
+                        <property>
+                            <type>name</type>
+                            <value>Industrial Goods</value>
+                        </property>
+                        <property>
+                            <type>source</type>
+                            <value>FACTIVA</value>
+                        </property>
+                        <property>
+                            <type>why</type>
+                            <value>lineage</value>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>inset</type>
+                    <value>inset-1</value>
+                    <itemid>inset|inset-1</itemid>
+                    <properties>
+                        <property>
+                            <type>responsive</type>
+                            <properties>
+                                <property>
+                                    <type>layout</type>
+                                    <value>inline</value>
+                                </property>
+                            </properties>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>keyword</type>
+                    <value>COMMERCIAL DRONES</value>
+                    <itemid>keyword|COMMERCIAL DRONES</itemid>
+                    <properties>
+                        <property>
+                            <type>name</type>
+                            <value>COMMERCIAL DRONES</value>
+                        </property>
+                        <property>
+                            <type>status</type>
+                            <value>added</value>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>keyword</type>
+                    <value>DRONE RULES</value>
+                    <itemid>keyword|DRONE RULES</itemid>
+                    <properties>
+                        <property>
+                            <type>name</type>
+                            <value>DRONE RULES</value>
+                        </property>
+                        <property>
+                            <type>status</type>
+                            <value>added</value>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>keyword</type>
+                    <value>DRONES</value>
+                    <itemid>keyword|DRONES</itemid>
+                    <properties>
+                        <property>
+                            <type>name</type>
+                            <value>DRONES</value>
+                        </property>
+                        <property>
+                            <type>status</type>
+                            <value>added</value>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>keyword</type>
+                    <value>DRONE INDUSTRY</value>
+                    <itemid>keyword|DRONE INDUSTRY</itemid>
+                    <properties>
+                        <property>
+                            <type>name</type>
+                            <value>DRONE INDUSTRY</value>
+                        </property>
+                        <property>
+                            <type>status</type>
+                            <value>added</value>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>media</type>
+                    <value>media-14</value>
+                    <itemid>media|media-14</itemid>
+                    <properties>
+                        <property>
+                            <type>responsive</type>
+                            <properties>
+                                <property>
+                                    <type>layout</type>
+                                    <value>header</value>
+                                </property>
+                            </properties>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>media</type>
+                    <value>media-15</value>
+                    <itemid>media|media-15</itemid>
+                </property>
+                <property>
+                    <type>media</type>
+                    <value>media-16</value>
+                    <itemid>media|media-16</itemid>
+                    <properties>
+                        <property>
+                            <type>responsive</type>
+                            <properties>
+                                <property>
+                                    <type>layout</type>
+                                    <value>inline</value>
+                                </property>
+                            </properties>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>nwchain</type>
+                    <value>SB109098042956544942313045802949540745525561</value>
+                    <itemid>nwchain|SB109098042956544942313045802949540745525561</itemid>
+                </property>
+                <property>
+                    <type>pe</type>
+                    <value>111787078</value>
+                    <itemid>pe|111787078</itemid>
+                    <properties>
+                        <property>
+                            <type>confidence</type>
+                            <value>96</value>
+                        </property>
+                        <property>
+                            <type>confidencerange</type>
+                            <value>high</value>
+                        </property>
+                        <property>
+                            <type>displayname</type>
+                            <value>Drobac, Michael</value>
+                        </property>
+                        <property>
+                            <type>extractedtext</type>
+                            <value>Michael Drobac</value>
+                        </property>
+                        <property>
+                            <type>fcode</type>
+                            <value>111787078</value>
+                        </property>
+                        <property>
+                            <type>firstname</type>
+                            <value>Michael</value>
+                        </property>
+                        <property>
+                            <type>lastname</type>
+                            <value>Drobac</value>
+                        </property>
+                        <property>
+                            <type>name</type>
+                            <value>Michael Drobac</value>
+                        </property>
+                        <property>
+                            <type>onlinesignificance</type>
+                            <value>passing-mention</value>
+                        </property>
+                        <property>
+                            <type>relevance</type>
+                            <value>50</value>
+                        </property>
+                        <property>
+                            <type>relevancerange</type>
+                            <value>low</value>
+                        </property>
+                        <property>
+                            <type>significance</type>
+                            <value>passing</value>
+                        </property>
+                        <property>
+                            <type>source</type>
+                            <value>FACTIVA</value>
+                        </property>
+                        <property>
+                            <type>why</type>
+                            <value>occur</value>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>pe</type>
+                    <value>117967695</value>
+                    <itemid>pe|117967695</itemid>
+                    <properties>
+                        <property>
+                            <type>confidence</type>
+                            <value>92</value>
+                        </property>
+                        <property>
+                            <type>confidencerange</type>
+                            <value>high</value>
+                        </property>
+                        <property>
+                            <type>displayname</type>
+                            <value>Quinn, Kenneth</value>
+                        </property>
+                        <property>
+                            <type>extractedtext</type>
+                            <value>Kenneth Quinn</value>
+                        </property>
+                        <property>
+                            <type>fcode</type>
+                            <value>117967695</value>
+                        </property>
+                        <property>
+                            <type>firstname</type>
+                            <value>Kenneth</value>
+                        </property>
+                        <property>
+                            <type>lastname</type>
+                            <value>Quinn</value>
+                        </property>
+                        <property>
+                            <type>name</type>
+                            <value>Kenneth Quinn</value>
+                        </property>
+                        <property>
+                            <type>onlinesignificance</type>
+                            <value>passing-mention</value>
+                        </property>
+                        <property>
+                            <type>relevance</type>
+                            <value>43</value>
+                        </property>
+                        <property>
+                            <type>relevancerange</type>
+                            <value>low</value>
+                        </property>
+                        <property>
+                            <type>significance</type>
+                            <value>passing</value>
+                        </property>
+                        <property>
+                            <type>source</type>
+                            <value>FACTIVA</value>
+                        </property>
+                        <property>
+                            <type>why</type>
+                            <value>occur</value>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>pe</type>
+                    <value>Gretchen West</value>
+                    <itemid>pe|Gretchen West</itemid>
+                    <properties>
+                        <property>
+                            <type>displayname</type>
+                            <value>West, Gretchen</value>
+                        </property>
+                        <property>
+                            <type>extractedtext</type>
+                            <value>Gretchen West</value>
+                        </property>
+                        <property>
+                            <type>firstname</type>
+                            <value>Gretchen</value>
+                        </property>
+                        <property>
+                            <type>lastname</type>
+                            <value>West</value>
+                        </property>
+                        <property>
+                            <type>name</type>
+                            <value>Gretchen West</value>
+                        </property>
+                        <property>
+                            <type>source</type>
+                            <value>FACTIVA</value>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>pe</type>
+                    <value>Jesse Kallman</value>
+                    <itemid>pe|Jesse Kallman</itemid>
+                    <properties>
+                        <property>
+                            <type>displayname</type>
+                            <value>Kallman, Jesse</value>
+                        </property>
+                        <property>
+                            <type>extractedtext</type>
+                            <value>Jesse Kallman</value>
+                        </property>
+                        <property>
+                            <type>firstname</type>
+                            <value>Jesse</value>
+                        </property>
+                        <property>
+                            <type>lastname</type>
+                            <value>Kallman</value>
+                        </property>
+                        <property>
+                            <type>name</type>
+                            <value>Jesse Kallman</value>
+                        </property>
+                        <property>
+                            <type>source</type>
+                            <value>FACTIVA</value>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>pe</type>
+                    <value>Ted Ellett</value>
+                    <itemid>pe|Ted Ellett</itemid>
+                    <properties>
+                        <property>
+                            <type>displayname</type>
+                            <value>Ellett, Ted</value>
+                        </property>
+                        <property>
+                            <type>extractedtext</type>
+                            <value>Ted Ellett</value>
+                        </property>
+                        <property>
+                            <type>firstname</type>
+                            <value>Ted</value>
+                        </property>
+                        <property>
+                            <type>lastname</type>
+                            <value>Ellett</value>
+                        </property>
+                        <property>
+                            <type>name</type>
+                            <value>Ted Ellett</value>
+                        </property>
+                        <property>
+                            <type>source</type>
+                            <value>FACTIVA</value>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>person</type>
+                    <value>Drobac, Michael</value>
+                    <itemid>person|Drobac, Michael</itemid>
+                    <properties>
+                        <property>
+                            <type>name</type>
+                            <value>Michael Drobac</value>
+                        </property>
+                        <property>
+                            <type>significance</type>
+                            <value>PASSING-MENTION</value>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>person</type>
+                    <value>Quinn, Kenneth</value>
+                    <itemid>person|Quinn, Kenneth</itemid>
+                    <properties>
+                        <property>
+                            <type>name</type>
+                            <value>Kenneth Quinn</value>
+                        </property>
+                        <property>
+                            <type>significance</type>
+                            <value>PASSING-MENTION</value>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>re</type>
+                    <value>usa</value>
+                    <itemid>re|usa</itemid>
+                    <properties>
+                        <property>
+                            <type>fcode</type>
+                            <value>usa</value>
+                        </property>
+                        <property>
+                            <type>name</type>
+                            <value>United States</value>
+                        </property>
+                        <property>
+                            <type>onlinesignificance</type>
+                            <value>prominent</value>
+                        </property>
+                        <property>
+                            <type>significance</type>
+                            <value>prominent</value>
+                        </property>
+                        <property>
+                            <type>source</type>
+                            <value>FACTIVA</value>
+                        </property>
+                        <property>
+                            <type>subcat</type>
+                            <value>cntry</value>
+                        </property>
+                        <property>
+                            <type>why</type>
+                            <value>about</value>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>re</type>
+                    <value>namz</value>
+                    <itemid>re|namz</itemid>
+                    <properties>
+                        <property>
+                            <type>fcode</type>
+                            <value>namz</value>
+                        </property>
+                        <property>
+                            <type>name</type>
+                            <value>North America</value>
+                        </property>
+                        <property>
+                            <type>source</type>
+                            <value>FACTIVA</value>
+                        </property>
+                        <property>
+                            <type>subcat</type>
+                            <value>snr</value>
+                        </property>
+                        <property>
+                            <type>why</type>
+                            <value>lineage</value>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>relay</type>
+                    <value>SYND</value>
+                    <itemid>relay|SYND</itemid>
+                    <properties>
+                        <property>
+                            <type>name</type>
+                            <value>SYND</value>
+                        </property>
+                        <property>
+                            <type>source</type>
+                            <value>EXPANDER</value>
+                        </property>
+                        <property>
+                            <type>value</type>
+                            <value>SYND</value>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>statistic</type>
+                    <value>CODES_REVIEWED</value>
+                    <itemid>statistic|CODES_REVIEWED</itemid>
+                    <properties>
+                        <property>
+                            <type>name</type>
+                            <value>CODES_REVIEWED</value>
+                        </property>
+                        <property>
+                            <type>value</type>
+                            <value>CODES_REVIEWED</value>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>statistic</type>
+                    <value>BETA</value>
+                    <itemid>statistic|BETA</itemid>
+                    <properties>
+                        <property>
+                            <type>name</type>
+                            <value>Yes</value>
+                        </property>
+                        <property>
+                            <type>status</type>
+                            <value>modified</value>
+                        </property>
+                        <property>
+                            <type>value</type>
+                            <value>BETA</value>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>subject</type>
+                    <value>ONEW</value>
+                    <itemid>subject|ONEW</itemid>
+                    <properties>
+                        <property>
+                            <type>comments</type>
+                            <value>Keyword:DJII-REGION usa,namz</value>
+                        </property>
+                        <property>
+                            <type>description</type>
+                            <value>01|US|US News</value>
+                        </property>
+                        <property>
+                            <type>name</type>
+                            <value>US News</value>
+                        </property>
+                        <property>
+                            <type>source</type>
+                            <value>EXPANDER</value>
+                        </property>
+                        <property>
+                            <type>status</type>
+                            <value>modified</value>
+                        </property>
+                        <property>
+                            <type>value</type>
+                            <value>ONEW</value>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>subject</type>
+                    <value>OTEC</value>
+                    <itemid>subject|OTEC</itemid>
+                    <properties>
+                        <property>
+                            <type>name</type>
+                            <value>Tech</value>
+                        </property>
+                        <property>
+                            <type>status</type>
+                            <value>modified</value>
+                        </property>
+                        <property>
+                            <type>value</type>
+                            <value>OTEC</value>
+                        </property>
+                    </properties>
+                </property>
+            </properties>
+        </self-codes>
+    </meta-data>
+    <summary id="S-SB10909804295654494231304580294954074552556.djml">
+        <summary-header/>
+        <alt-summary-body destination-type="THIS-ART" page="Images">
+            <media alignment="LEFT" id="media-1" reuse-type="full" type="ILLUSTRATION">
+                <image alternate-text="image" height="267"
+                    slug="1123DRONEjpg"
+                    src-id="BN-FR849_1123DR_OR_20141123214927.jpg" width="400"/>
+                <media-credit>Reuters</media-credit>
+            </media>
+            <media alignment="LEFT" id="media-2" reuse-type="full" type="ILLUSTRATION">
+                <image alternate-text="image" height="76"
+                    slug="1123DRONEjpg"
+                    src-id="BN-FR849_1123DR_A_20141123214927.jpg" width="76"/>
+                <media-credit>Reuters</media-credit>
+            </media>
+            <media alignment="LEFT" id="media-3" reuse-type="full" type="ILLUSTRATION">
+                <image alternate-text="image" height="220"
+                    slug="1123DRONEjpg"
+                    src-id="BN-FR849_1123DR_AM_20141123214927.jpg" width="220"/>
+                <media-credit>Reuters</media-credit>
+            </media>
+            <media alignment="LEFT" id="media-4" reuse-type="full" type="ILLUSTRATION">
+                <image alternate-text="image" height="188"
+                    slug="1123DRONEjpg"
+                    src-id="BN-FR849_1123DR_BR_20141123214927.jpg" width="282"/>
+                <media-credit>Reuters</media-credit>
+            </media>
+            <media alignment="LEFT" id="media-5" reuse-type="full" type="ILLUSTRATION">
+                <image alternate-text="image" height="94"
+                    slug="1123DRONEjpg"
+                    src-id="BN-FR849_1123DR_C_20141123214927.jpg" width="167"/>
+                <media-credit>Reuters</media-credit>
+            </media>
+            <media alignment="LEFT" id="media-6" reuse-type="full" type="ILLUSTRATION">
+                <image alternate-text="image" height="174"
+                    slug="1123DRONEjpg"
+                    src-id="BN-FR849_1123DR_D_20141123214927.jpg" width="262"/>
+                <media-credit>Reuters</media-credit>
+            </media>
+            <media alignment="LEFT" id="media-7" reuse-type="full" type="ILLUSTRATION">
+                <image alternate-text="image" height="239"
+                    slug="1123DRONEjpg"
+                    src-id="BN-FR849_1123DR_E_20141123214927.jpg" width="359"/>
+                <media-credit>Reuters</media-credit>
+            </media>
+            <media alignment="LEFT" id="media-8" reuse-type="full" type="ILLUSTRATION">
+                <image alternate-text="image" height="402"
+                    slug="1123DRONEjpg"
+                    src-id="BN-FR849_1123DR_ER_20141123214927.jpg" width="602"/>
+                <media-credit>Reuters</media-credit>
+            </media>
+            <media alignment="LEFT" id="media-9" reuse-type="full" type="ILLUSTRATION">
+                <image alternate-text="image" height="226"
+                    slug="1123DRONEjpg"
+                    src-id="BN-FR849_1123DR_F_20141123214927.jpg" width="571"/>
+                <media-credit>Reuters</media-credit>
+            </media>
+            <media alignment="LEFT" id="media-10" reuse-type="full" type="ILLUSTRATION">
+                <image alternate-text="image" height="810"
+                    slug="1123DRONEjpg"
+                    src-id="BN-FR849_1123DR_FR_20141123214927.jpg" width="632"/>
+                <media-credit>Reuters</media-credit>
+            </media>
+            <media alignment="LEFT" id="media-11" reuse-type="full" type="ILLUSTRATION">
+                <image alternate-text="image" height="369"
+                    slug="1123DRONEjpg"
+                    src-id="BN-FR849_1123DR_G_20141123214927.jpg" width="553"/>
+                <media-credit>Reuters</media-credit>
+            </media>
+            <media alignment="LEFT" id="media-12" reuse-type="full" type="ILLUSTRATION">
+                <image alternate-text="image" height="810"
+                    slug="1123DRONEjpg"
+                    src-id="BN-FR849_1123DR_GR_20141123214927.jpg" width="1242"/>
+                <media-credit>Reuters</media-credit>
+            </media>
+            <media alignment="LEFT" id="media-13" reuse-type="full" type="ILLUSTRATION">
+                <image alternate-text="image" height="853"
+                    slug="1123DRONEjpg"
+                    src-id="BN-FR849_1123DR_M_20141123214927.jpg" width="1280"/>
+                <media-credit>Reuters</media-credit>
+            </media>
+        </alt-summary-body>
+        <alt-summary-body destination-type="THIS-ART" page="|SEO|">
+            <headline>
+                <main-hed>Drone Flights Face FAA Hit</main-hed>
+            </headline>
+            <p>Highly anticipated federal rules on commercial drones are expected to require operators to have a license and limit flights to daylight hours, below 400 feet and within sight of the person at the controls.</p>
+        </alt-summary-body>
+        <alt-summary-body destination-type="THIS-ART" page="|Tech|">
+            <headline>
+                <main-hed>Drones Are About to Fly Into an FAA Wall</main-hed>
+            </headline>
+            <p>Highly anticipated federal rules on commercial drones are expected to require operators to have a license and limit flights to daylight hours, below 400 feet and within sight of the person at the controls.</p>
+        </alt-summary-body>
+        <alt-summary-body destination-type="THIS-ART" page="|Social|">
+            <headline>
+                <main-hed>Drone flights face FAA hit</main-hed>
+            </headline>
+        </alt-summary-body>
+        <summary-body>
+            <headline>
+                <main-hed>Drone Flights Face FAA Hit</main-hed>
+            </headline>
+            <p>Highly anticipated federal rules on commercial drones are expected to require operators to have a license and limit flights to daylight hours, below 400 feet and within sight of the person at the controls.</p>
+        </summary-body>
+    </summary>
+    <article>
+        <article-header>
+            <nameloc id="i1-SB10909804295654494231304580294954074552556">
+                <nmlist nametype="ENTITY">mailto:jack.nicas@wsj.com</nmlist>
+            </nameloc>
+            <nameloc id="i2-SB10909804295654494231304580294954074552556">
+                <nmlist nametype="ENTITY">mailto:andy.pasztor@wsj.com</nmlist>
+            </nameloc>
+        </article-header>
+        <article-body>
+            <headline>
+                <main-hed>Drone Flights Face FAA Hit</main-hed>
+                <deck>Looming Rule Proposal Would Restrict Commercial Uses, Require Pilot License </deck>
+            </headline>
+            <byline type="SIGNED">By <phrase topicid="7259"
+                    type="AUTHOR">Jack Nicas</phrase> and <phrase
+                    topicid="1472" type="AUTHOR">Andy Pasztor</phrase>
+            </byline>
+            <media id="media-14" reuse-type="full" type="ILLUSTRATION">
+                <image alternate-text="image" height="386"
+                    slug="DRONERULE"
+                    src-id="P1-BS011A_DRONE_G_20141123213021.jpg" width="553"/>
+                <alt-image alternate-text="image" height="893"
+                    slug="DRONERULE"
+                    src-id="P1-BS011A_DRONE_16U_20141123213021.jpg" width="1280"/>
+                <alt-image alternate-text="image" height="600"
+                    slug="DRONERULE"
+                    src-id="P1-BS011A_DRONE_11U_20141123213021.jpg" width="860"/>
+                <alt-image alternate-text="image" height="265"
+                    slug="DRONERULE"
+                    src-id="P1-BS011A_DRONE_5U_20141123213021.jpg" width="380"/>
+                <alt-image alternate-text="image" height="488"
+                    slug="DRONERULE"
+                    src-id="P1-BS011A_DRONE_9U_20141123213021.jpg" width="700"/>
+                <alt-image alternate-text="image" height="183"
+                    slug="DRONERULE"
+                    src-id="P1-BS011A_DRONE_D_20141123213021.jpg" width="262"/>
+                <alt-image alternate-text="image" height="669"
+                    slug="DRONERULE"
+                    src-id="P1-BS011A_DRONE_J_20141123213021.jpg" width="959"/>
+            </media>
+            <p>Highly anticipated federal rules on commercial drones are expected to require operators to have a license and limit flights to daylight hours, below 400 feet and within sight of the person at the controls, according to people familiar with the rule-making process.</p>
+            <p>The drone industry has awaited commercial rules for about six years, hoping the rules would pave the way for widespread drone use in industries such as farming, filmmaking and construction. Current FAA policy allows recreational drone flights in the U.S. but essentially bars drones from commercial use.</p>
+            <media id="media-15" reuse-type="full" type="FLASH">
+                <image slug="interactive" src-id="AUDIO_tech112414_D_"/>
+            </media>
+            <p>While the FAA wants to open the skies to unmanned commercial flights, the expected rules are more restrictive than drone supporters sought and wouldn&#x2019;t address privacy concerns over the use of drones, people familiar with the matter said.</p>
+            <p>The agency also plans to group all drones weighing less than 55 pounds under one set of rules. That would dash hopes for looser rules on the smallest drones, such as the 2.8-pound Phantom line of camera-equipped, four-rotor helicopters made by China&#x2019;s SZ DJI Technology Co. Similar-sized devices are seen as the most commercially viable drones and have surged in popularity in the last two years.</p>
+
+            <p>Small-drone supporters say such models are less risky to people and structures than heavier drones like <phrase
+                    background-info="BRIEFING-BOOK" name="BA"
+                    significance="PASSING-MENTION" type="COMPANY"
+                    vrtysux="COMPANY|BA">Boeing</phrase> Co.&#x2019;s ScanEagle, a gas-powered, 40-pound aircraft with a 10-foot wingspan that can stay aloft for more than 24 hours. <phrase
+                    background-info="BRIEFING-BOOK" name="COP"
+                    significance="PASSING-MENTION" type="COMPANY" vrtysux="COMPANY|COP">ConocoPhillips</phrase> Co. uses the ScanEagle to gather data on Arctic ice pack and whale migrations.</p>
+            <p>In addition, pilot certifications likely to be proposed by the FAA would typically require dozens of hours flying manned aircraft, according to people familiar with the rule-making discussions. Drone proponents have resisted requiring traditional pilot training for drone operators.</p>
+            <p>FAA officials expect to announce proposed rules by year-end. The proposal will kick off a public comment period that is likely to flood the agency with feedback. It could take one or two years to issue final rules.</p>
+            <inset id="inset-1" type="SLIDESHOWEMBED">
+                <p>SB10877712750594503597504580266952712320866</p>
+            </inset>
+            <p>In a statement, the FAA said it is working to &#x201c;integrate unmanned aircraft into the busiest, most complex airspace system in the world&#x2014;and to do so while we maintain our mission&#x2014;protecting the safety of the American people in the air and on the ground. That is why we are taking a staged approach to the integration of these new airspace users.&#x201d;</p>
+            <p>The White House Office of Management and Budget is reviewing the current FAA proposal and seeking comments from other parts of the government, including the Pentagon and law-enforcement agencies. Last-minute objections could change some specifics and delay release of the proposed rules.</p>
+            <p>The agency has said it is moving carefully on drone rules out of concern for potential collisions with other aircraft and injury to people and structures on the ground.</p>
+            <p>Airline pilots and aircraft owners have supported the cautious approach. But some drone-industry officials predict a loud backlash to the proposal.</p>
+
+            <p>&#x201c;I feel like there&#x2019;s a colossal mess coming,&#x201d; said <phrase
+                    name="Drobac, Michael"
+                    significance="PASSING-MENTION" type="PERSON"
+                    vrtysux="PERSON|Drobac, Michael">Michael Drobac</phrase>, executive director of the Small UAV Coalition, an advocacy group for drone makers and innovators, including <phrase
+                    background-info="BRIEFING-BOOK" name="GOOGL"
+                    significance="PASSING-MENTION" type="COMPANY"
+                    vrtysux="COMPANY|GOOGL">Google</phrase> Inc. and <phrase
+                    background-info="BRIEFING-BOOK" name="AMZN"
+                    significance="PASSING-MENTION" type="COMPANY" vrtysux="COMPANY|AMZN">Amazon.com</phrase> Inc. The rule is going to be &#x201c;so divorced from the technology and the aspirations of this industry&#x2026;that we&#x2019;re going to see a loud rejection.&#x201d;</p>
+            <p>Unmanned aircraft have proliferated in U.S. skies as technology makes them smaller, cheaper, more powerful and easier to fly. While the FAA has helped build unparalleled safety into passenger air-travel with strict manufacturing and operating rules, the system didn&#x2019;t foresee thousands of small aircraft buzzing around at low altitude.</p>
+            <p>The FAA&#x2019;s current policy allows commercial drone flights only with case-by-case approval. Officials have authorized just a handful of companies so far.</p>
+            <p>Still, thousands of entrepreneurs are believed to be flying the devices without FAA clearance, making it hard for those operators to get insurance.</p>
+            <p id="U2109919018301PF">Some government and aviation-industry officials are worried about surging use without meaningful oversight. Pilots are increasingly reporting midair drone sightings, including three near John F. Kennedy International Airport in New York last week.</p>
+            <p>Drone proponents say the U.S.&#x2019;s regulatory approach is less accommodating than in other countries. This month, Canada plans to issue blanket approval for all commercial operations that use drones weighing less than 4.4 pounds as long as they comply with certain safety standards, such as altitude limits and no-fly zones around airports.</p>
+            <p>The FAA must &#x201c;properly balance regulatory restrictions and the safety risks posed by&#x201d; various sizes of unmanned aircraft, said Ted Ellett, a former FAA chief counsel who now is a partner at law firm Hogan Lovells US LLP. Mr. Ellett said a &#x201c;one-size-fits-all&#x201d; approach &#x201c;will create yet another unnecessary and costly impediment.&#x201d;</p>
+            <media id="media-16" reuse-type="full" type="ILLUSTRATION">
+                <image alternate-text="image" height="369"
+                    slug="1123DRONEjpg"
+                    src-id="BN-FR849_1123DR_G_20141123214927.jpg" width="553"/>
+                <alt-image alternate-text="image" height="76"
+                    slug="1123DRONEjpg"
+                    src-id="BN-FR849_1123DR_A_20141123214927.jpg" width="76"/>
+                <alt-image alternate-text="image" height="220"
+                    slug="1123DRONEjpg"
+                    src-id="BN-FR849_1123DR_AM_20141123214927.jpg" width="220"/>
+                <alt-image alternate-text="image" height="188"
+                    slug="1123DRONEjpg"
+                    src-id="BN-FR849_1123DR_BR_20141123214927.jpg" width="282"/>
+                <alt-image alternate-text="image" height="94"
+                    slug="1123DRONEjpg"
+                    src-id="BN-FR849_1123DR_C_20141123214927.jpg" width="167"/>
+                <alt-image alternate-text="image" height="174"
+                    slug="1123DRONEjpg"
+                    src-id="BN-FR849_1123DR_D_20141123214927.jpg" width="262"/>
+                <alt-image alternate-text="image" height="239"
+                    slug="1123DRONEjpg"
+                    src-id="BN-FR849_1123DR_E_20141123214927.jpg" width="359"/>
+                <alt-image alternate-text="image" height="402"
+                    slug="1123DRONEjpg"
+                    src-id="BN-FR849_1123DR_ER_20141123214927.jpg" width="602"/>
+                <alt-image alternate-text="image" height="226"
+                    slug="1123DRONEjpg"
+                    src-id="BN-FR849_1123DR_F_20141123214927.jpg" width="571"/>
+                <alt-image alternate-text="image" height="810"
+                    slug="1123DRONEjpg"
+                    src-id="BN-FR849_1123DR_FR_20141123214927.jpg" width="632"/>
+                <alt-image alternate-text="image" height="810"
+                    slug="1123DRONEjpg"
+                    src-id="BN-FR849_1123DR_GR_20141123214927.jpg" width="1242"/>
+                <alt-image alternate-text="image" height="639"
+                    slug="1123DRONEjpg"
+                    src-id="BN-FR849_1123DR_J_20141123214927.jpg" width="959"/>
+                <alt-image alternate-text="image" height="853"
+                    slug="1123DRONEjpg"
+                    src-id="BN-FR849_1123DR_M_20141123214927.jpg" width="1280"/>
+                <alt-image alternate-text="image" height="499"
+                    slug="1123DRONEjpg"
+                    src-id="BN-FR849_1123DR_P_20141123214927.jpg" width="749"/>
+                <media-credit>Reuters</media-credit>
+                <media-caption>The FAA plans to group all drones weighing less than 55 pounds under one set of rules. Above, a Phantom drone by China&#x2019;s SZ DJI Technology Co.</media-caption>
+            </media>
+            <p>Gretchen West, former executive vice president of the Association for Unmanned Vehicle Systems International, the nation&#x2019;s biggest drone-lobbying group, said large, powerful drones like those used by the military got more attention when the FAA began working on the rules.</p>
+            <p>Since then, much of the growth has shifted to smaller drones. The expected rules are &#x201c;going to be very restrictive for small systems,&#x201d; she added.</p>
+            <p>Jesse Kallman, head of regulatory affairs for drone-software firm Airware, said requiring commercial drone pilots to have cockpit training &#x201c;will end up excluding someone who has hundreds of hours of experience on an unmanned aircraft in favor of a pilot who understands how to operate a Cessna but not an unmanned aircraft.&#x201d;</p>
+            <p>In exemptions granted to six filmmaking companies to use drones on film sets earlier this year, the FAA required operators to have private-pilot licenses.</p>
+            <p>The FAA&#x2019;s draft rule is expected to require lower-level pilot certifications requiring fewer flight hours, according to people familiar with the matter.</p>
+
+            <p>But with roughly 150 exemption requests pending, some experts predict the agency may end up establishing important legal precedents long before the formal regulatory effort ends. The FAA &#x201c;is now embarking on an unprecedented use of rule-making by exemption, yet Congress invited it and everyone knows the final rule is over a year away,&#x201d; said <phrase
+                    name="Quinn, Kenneth" significance="PASSING-MENTION"
+                    type="PERSON" vrtysux="PERSON|Quinn, Kenneth">Kenneth Quinn</phrase>, another former FAA chief counsel who heads the aviation and unmanned aircraft practice at the law firm of Pillsbury Winthrop Shaw Pittman LLP in Washington.</p>
+            <p>One former FAA official said the agency is concerned that statutes bar it from authorizing commercial aircraft operations that don&#x2019;t have a certified pilot.</p>
+            <p id="U210991901830jMC">The agency is drafting language asking Congress for greater flexibility, this person said.</p>
+            <p>The planned 400-foot flying limit within the operator&#x2019;s sight largely follows the FAA&#x2019;s current rules for recreational uses of drones. Those rules are based partly on voluntary guidelines for model aircraft published by the agency in 1981.</p>
+            <p>Drone proponents say the FAA is relying on decades-old regulations that don&#x2019;t account for advancements in technology. Many drone pilots use &#x201c;first-person view&#x201d; technology allowing them to rely on real-time footage from a drone&#x2019;s camera broadcast to their controller or headwear that resembles virtual-reality visors. Users can add infrared and other sensors for night or low-visibility missions.</p>
+            <p>The FAA&#x2019;s expected requirement for daylight flights within the operator&#x2019;s sight would essentially prohibit many commercial applications, such as pipeline inspections and crop monitoring on large farms.</p>
+            <p>The FAA is awaiting data from a number of test sites before proposing regulations affecting drones that weigh more than 55 pounds. That process is expected to take at least several years. Until then, many states and local governments are likely to establish their own standards.</p>
+            <p>
+                <highlight
+                    type="BOLD">Write to </highlight>Jack Nicas at <link
+                    linkend="i1-SB10909804295654494231304580294954074552556"
+                    type="EXTERNAL">jack.nicas@wsj.com</link> and Andy Pasztor at <link
+                    linkend="i2-SB10909804295654494231304580294954074552556" type="EXTERNAL">andy.pasztor@wsj.com</link>
+            </p>
+        </article-body>
+    </article>
+</article-doc>
+<!-- fastdynapage - sbkj2kwebappp10 - Mon 11/24/14 - 11:45:22 EST -->

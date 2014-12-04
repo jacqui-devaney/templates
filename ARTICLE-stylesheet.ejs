@@ -36,7 +36,7 @@
 		line-height:4,
 		color: transparent,
 		content: "unfortunate"
-		
+
 	},
 	.byline-author: {
 		text-transform:uppercase
@@ -82,7 +82,7 @@
 	},
 	#m_subsection: { content: =article.subsection },
 	#m_headline: { content: =article.headline },
-	.list-item: { 
+	.list-item: {
 		text-indent: -16,
 		padding: [0, 0, 0, 16]
 	},
@@ -144,16 +144,16 @@
 			{if: =media.width, less-than: 360, then: {$divide: [236, =media.aspect]}},
 			{if: =media.width, more-than: 484, then: {$divide: [484, =media.aspect]}},
 			{$divide: [236, =media.aspect]}
-		]}, {$multiply: [.25, =view.height]}]}, {$multiply: [.69, =view.height]}]},
+		]}, {$multiply: [.1, =view.height]}]}, {$multiply: [.69, =view.height]}]},
 		options: {
-			id: { 
+			id: {
 				if: =page.mediaindex,
 				at-least: 0,
 				then: =page.mediaindex,
 				else: =page.number
-			}, 
+			},
 			hideCaption: true
 		},
 		padding: [0, 0, 8, 0]
-	}	
+	}
 }

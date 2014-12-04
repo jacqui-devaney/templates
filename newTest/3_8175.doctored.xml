@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0"  xmlns:atom="http://www.w3.org/2005/Atom" >
+  <channel>
+    <title>WSJ.com: ITP Whats News</title>
+    <link>http://online.wsj.com/</link>
+    <description>ITP Whats News</description>
+    <language>en-us</language>
+    <copyright>copyright  &#169; 2014 Dow Jones &amp; Company, Inc.</copyright>
+    <lastBuildDate>Mon, 24 Nov 2014 02:51:55 EST</lastBuildDate>
+    <image>
+      <title>WSJ.com: ITP Whats News</title>
+      <url>http://online.wsj.com/img/wsj_sm_logo.gif</url>
+      <link>http://online.wsj.com/</link>
+    </image>
+    <atom:link href="http://online.wsj.com/" rel="self" type="application/rss+xml" />
+    <!--Item 1 of Whats News Business Finance -->
+    <item>
+      <title>What's News: Business &amp; Finance</title>
+      <guid isPermaLink="false">SB12244055389135323551804580295761059871540</guid>
+      <link>SB12244055389135323551804580295761059871540.xml</link>
+      <description>What&#8217;s News: Business &amp; Finance</description>
+      <category>FREE</category>
+      <pubDate>Mon, 24 Nov 2014 00:46:33 EST</pubDate>
+    </item>
+    <!--Item 1 of Whats News World Wide -->
+    <item>
+      <title>What's News: World-Wide</title>
+      <guid isPermaLink="false">SB12244055389135323551804580295780421005478</guid>
+      <link>SB12244055389135323551804580295780421005478.xml</link>
+      <description>What&#8217;s News: World-Wide</description>
+      <category>FREE</category>
+      <pubDate>Mon, 24 Nov 2014 00:46:26 EST</pubDate>
+    </item>
+  </channel>
+</rss>
+<!-- fastdynapage - sbkj2kwebappp11 - Mon 11/24/14 - 02:51:55 EST -->

@@ -1,0 +1,3410 @@
+<?xml version="1.0" encoding="ASCII"?>
+
+<article-doc ads="ADS-NOT-ALLOWED" column=""
+    copyright="Dow Jones &amp; Company, Inc." date="2014-11-23 18:55"
+    date-type="auto" display-name="Business" embargo=""
+    guid="6e099ae4-71d4-11e4-958c-01bf9d830bf9"
+    id="SB11008785394923453828404580291401846123236.djml"
+    language="en-us" last-pub-date="2014-11-24 11:31" level="NORMAL"
+    major-revision-date="2014-11-23 18:55"
+    orig-obj-ref="156d3bb6-7369-11e4-8abe-cc187c6ebcfc"
+    orig-obj-src="Methode" orig-pub-date="2014-11-23 18:55" page="News"
+    product="WSJ.com"
+    publication="The Wall Street Journal Interactive Edition"
+    revision-type="minor"
+    root-id="SB01008785394923453828404580291401846123236"
+    section="Business"
+    seo-id="utilities-press-railroad-to-speed-coal-deliveries-1416786948"
+    seo-url="http://online.wsj.com/articles/utilities-press-railroad-to-speed-coal-deliveries-1416786948"
+    type="Business"
+    url="http://online.wsj.com/articles/utilities-press-railroad-to-speed-coal-deliveries-1416786948" version="4">
+    <meta-data>
+        <self-codes>
+            <code seoname="Cassandra Sweet" symbol="Cassandra Sweet"
+                type="AUTHOR" vrtysux="AUTHOR|Cassandra Sweet">Cassandra Sweet</code>
+            <code seoname="John W. Miller" symbol="John W. Miller"
+                type="AUTHOR" vrtysux="AUTHOR|John W. Miller">John W. Miller</code>
+            <code seoname="ALE" symbol="ALE" type="COMPANY" vrtysux="COMPANY|ALE">ALE</code>
+            <code seoname="BRKB" symbol="BRKB" type="COMPANY" vrtysux="COMPANY|BRKB">BRKB</code>
+            <code seoname="BTU" symbol="BTU" type="COMPANY" vrtysux="COMPANY|BTU">BTU</code>
+            <code seoname="UNP" symbol="UNP" type="COMPANY" vrtysux="COMPANY|UNP">UNP</code>
+            <code seoname="XEL" symbol="XEL" type="COMPANY" vrtysux="COMPANY|XEL">XEL</code>
+            <code seoname="Berkshire Hathaway" symbol="bkht"
+                type="DJII-COMPANY" vrtysux="DJII-COMPANY|bkht">Berkshire Hathaway</code>
+            <code seoname="BNSF Railway" symbol="bnsfrc"
+                type="DJII-COMPANY" vrtysux="DJII-COMPANY|bnsfrc">BNSF Railway</code>
+            <code symbol="brlngt" type="DJII-COMPANY" vrtysux="DJII-COMPANY|brlngt"/>
+            <code seoname="Lower Colorado River Authority"
+                symbol="lowcra" type="DJII-COMPANY" vrtysux="DJII-COMPANY|lowcra">Lower Colorado River Authority</code>
+            <code seoname="Allete" symbol="MPL" type="DJII-COMPANY" vrtysux="DJII-COMPANY|MPL">Allete</code>
+            <code seoname="Xcel Energy" symbol="norspw"
+                type="DJII-COMPANY" vrtysux="DJII-COMPANY|norspw">Xcel Energy</code>
+            <code seoname="Peabody Energy" symbol="pbdy"
+                type="DJII-COMPANY" vrtysux="DJII-COMPANY|pbdy">Peabody Energy</code>
+            <code seoname="Union Pacific" symbol="unpacf"
+                type="DJII-COMPANY" vrtysux="DJII-COMPANY|unpacf">Union Pacific</code>
+            <code seoname="U.S. Department of Energy" symbol="usddoe"
+                type="DJII-COMPANY" vrtysux="DJII-COMPANY|usddoe">U.S. Department of Energy</code>
+            <code seoname="U.S. Energy Information Administration"
+                symbol="useia" type="DJII-COMPANY" vrtysux="DJII-COMPANY|useia">U.S. Energy Information Administration</code>
+            <code seoname="Surface Transportation Board" symbol="usstbd"
+                type="DJII-COMPANY" vrtysux="DJII-COMPANY|usstbd">Surface Transportation Board</code>
+            <code seoname="Western Coal Traffic League"
+                symbol="Western Coal Traffic League" type="DJII-COMPANY" vrtysux="DJII-COMPANY|Western Coal Traffic League">Western Coal Traffic League</code>
+            <code seoname="Utilities" symbol="7000" type="DJII-ICB" vrtysux="DJII-ICB|7000">Utilities</code>
+            <code seoname="Utilities" symbol="7500" type="DJII-ICB" vrtysux="DJII-ICB|7500">Utilities</code>
+            <code seoname="Electricity" symbol="7530" type="DJII-ICB" vrtysux="DJII-ICB|7530">Electricity</code>
+            <code seoname="Conventional Electricity" symbol="7535"
+                type="DJII-ICB" vrtysux="DJII-ICB|7535">Conventional Electricity</code>
+            <code seoname="Financials" symbol="8000" type="DJII-ICB" vrtysux="DJII-ICB|8000">Financials</code>
+            <code seoname="Insurance" symbol="8500" type="DJII-ICB" vrtysux="DJII-ICB|8500">Insurance</code>
+            <code seoname="Nonlife Insurance" symbol="8530"
+                type="DJII-ICB" vrtysux="DJII-ICB|8530">Nonlife Insurance</code>
+            <code seoname="Reinsurance" symbol="8538" type="DJII-ICB" vrtysux="DJII-ICB|8538">Reinsurance</code>
+            <code seoname="Electricity/Gas Utilities" symbol="i16"
+                type="DJII-INDUSTRY" vrtysux="DJII-INDUSTRY|i16">Electricity/Gas Utilities</code>
+            <code seoname="Railroads" symbol="i71" type="DJII-INDUSTRY" vrtysux="DJII-INDUSTRY|i71">Railroads</code>
+            <code seoname="Diversified Holding Companies" symbol="i8396"
+                type="DJII-INDUSTRY" vrtysux="DJII-INDUSTRY|i8396">Diversified Holding Companies</code>
+            <code seoname="Business/Consumer Services" symbol="ibcs"
+                type="DJII-INDUSTRY" vrtysux="DJII-INDUSTRY|ibcs">Business/Consumer Services</code>
+            <code seoname="Freight/Cargo Transport" symbol="icargo"
+                type="DJII-INDUSTRY" vrtysux="DJII-INDUSTRY|icargo">Freight/Cargo Transport</code>
+            <code seoname="Road/Rail Transport" symbol="irailtr"
+                type="DJII-INDUSTRY" vrtysux="DJII-INDUSTRY|irailtr">Road/Rail Transport</code>
+            <code seoname="Railroad Freight" symbol="irfrght"
+                type="DJII-INDUSTRY" vrtysux="DJII-INDUSTRY|irfrght">Railroad Freight</code>
+            <code seoname="Transportation/Shipping" symbol="itsp"
+                type="DJII-INDUSTRY" vrtysux="DJII-INDUSTRY|itsp">Transportation/Shipping</code>
+            <code seoname="Utilities" symbol="iutil"
+                type="DJII-INDUSTRY" vrtysux="DJII-INDUSTRY|iutil">Utilities</code>
+            <code seoname="David McMillan" symbol="28133"
+                type="DJII-PERSON" vrtysux="DJII-PERSON|28133">David McMillan</code>
+            <code seoname="Warren Buffett" symbol="38060996"
+                type="DJII-PERSON" vrtysux="DJII-PERSON|38060996">Warren Buffett</code>
+            <code seoname="Bette Whalen" symbol="Bette Whalen"
+                type="DJII-PERSON" vrtysux="DJII-PERSON|Bette Whalen">Bette Whalen</code>
+            <code seoname="Beverly Jones Heydinger"
+                symbol="Beverly Jones Heydinger" type="DJII-PERSON" vrtysux="DJII-PERSON|Beverly Jones Heydinger">Beverly Jones Heydinger</code>
+            <code seoname="Michael Trevino" symbol="Michael Trevino"
+                type="DJII-PERSON" vrtysux="DJII-PERSON|Michael Trevino">Michael Trevino</code>
+            <code seoname="Tom Imbler" symbol="Tom Imbler"
+                type="DJII-PERSON" vrtysux="DJII-PERSON|Tom Imbler">Tom Imbler</code>
+            <code seoname="Warren Buffet" symbol="Warren Buffet"
+                type="DJII-PERSON" vrtysux="DJII-PERSON|Warren Buffet">Warren Buffet</code>
+            <code seoname="North America" symbol="namz"
+                type="DJII-REGION" vrtysux="DJII-REGION|namz">North America</code>
+            <code seoname="United States" symbol="usa"
+                type="DJII-REGION" vrtysux="DJII-REGION|usa">United States</code>
+            <code seoname="Midwest U.S." symbol="usc" type="DJII-REGION" vrtysux="DJII-REGION|usc">Midwest U.S.</code>
+            <code seoname="Minnesota" symbol="usmn" type="DJII-REGION" vrtysux="DJII-REGION|usmn">Minnesota</code>
+            <code seoname="Regulation/Government Policy" symbol="c13"
+                type="DJII-SUBJECT" vrtysux="DJII-SUBJECT|c13">Regulation/Government Policy</code>
+            <code seoname="Regulatory Bodies" symbol="c131"
+                type="DJII-SUBJECT" vrtysux="DJII-SUBJECT|c131">Regulatory Bodies</code>
+            <code seoname="Corporate/Industrial News" symbol="ccat"
+                type="DJII-SUBJECT" vrtysux="DJII-SUBJECT|ccat">Corporate/Industrial News</code>
+            <code internal="true" seoname="Content Types" symbol="ncat"
+                type="DJII-SUBJECT" vrtysux="DJII-SUBJECT|ncat">Content Types</code>
+            <code internal="true" seoname="Factiva Filters"
+                symbol="nfact" type="DJII-SUBJECT" vrtysux="DJII-SUBJECT|nfact">Factiva Filters</code>
+            <code internal="true" seoname="C&amp;E Industry News Filter"
+                symbol="nfcpin" type="DJII-SUBJECT" vrtysux="DJII-SUBJECT|nfcpin">C&amp;E Industry News Filter</code>
+            <code seoname="ALE" symbol="ALE" type="DJN" vrtysux="DJN|ALE">ALE</code>
+            <code seoname="BRKA" symbol="BRKA" type="DJN" vrtysux="DJN|BRKA">BRKA</code>
+            <code seoname="BRKB" symbol="BRKB" type="DJN" vrtysux="DJN|BRKB">BRKB</code>
+            <code seoname="BTU" symbol="BTU" type="DJN" vrtysux="DJN|BTU">BTU</code>
+            <code seoname="I/ELC" symbol="I/ELC" type="DJN" vrtysux="DJN|I/ELC">I/ELC</code>
+            <code seoname="I/INS" symbol="I/INS" type="DJN" vrtysux="DJN|I/INS">I/INS</code>
+            <code seoname="I/INU" symbol="I/INU" type="DJN" vrtysux="DJN|I/INU">I/INU</code>
+            <code seoname="I/RAI" symbol="I/RAI" type="DJN" vrtysux="DJN|I/RAI">I/RAI</code>
+            <code seoname="I/SVC" symbol="I/SVC" type="DJN" vrtysux="DJN|I/SVC">I/SVC</code>
+            <code seoname="M/CYC" symbol="M/CYC" type="DJN" vrtysux="DJN|M/CYC">M/CYC</code>
+            <code seoname="M/FCL" symbol="M/FCL" type="DJN" vrtysux="DJN|M/FCL">M/FCL</code>
+            <code seoname="M/UTI" symbol="M/UTI" type="DJN" vrtysux="DJN|M/UTI">M/UTI</code>
+            <code seoname="N/CNW" symbol="N/CNW" type="DJN" vrtysux="DJN|N/CNW">N/CNW</code>
+            <code seoname="N/ENTR" symbol="N/ENTR" type="DJN" vrtysux="DJN|N/ENTR">N/ENTR</code>
+            <code seoname="R/MN" symbol="R/MN" type="DJN" vrtysux="DJN|R/MN">R/MN</code>
+            <code seoname="R/NME" symbol="R/NME" type="DJN" vrtysux="DJN|R/NME">R/NME</code>
+            <code seoname="R/US" symbol="R/US" type="DJN" vrtysux="DJN|R/US">R/US</code>
+            <code seoname="R/USC" symbol="R/USC" type="DJN" vrtysux="DJN|R/USC">R/USC</code>
+            <code seoname="N/DJN" symbol="n/djn" type="DJNCODE" vrtysux="DJNCODE|n/djn">N/DJN</code>
+            <code seoname="N/WER" symbol="n/wer" type="DJNCODE" vrtysux="DJNCODE|n/wer">N/WER</code>
+            <code seoname="P/METH" symbol="p/meth" type="DJNCODE" vrtysux="DJNCODE|p/meth">P/METH</code>
+            <code
+                symbol="Utilities Press Railroad to Speed Coal Deliveries "
+                type="FIRST_PUBLISH_HEADLINE" vrtysux="FIRST_PUBLISH_HEADLINE|Utilities Press Railroad to Speed Coal Deliveries "/>
+            <code seoname="WSJ" symbol="WSJ" type="FLOW" vrtysux="FLOW|WSJ">WSJ</code>
+            <code seoname="WSJ.com" symbol="WSJ.com" type="FLOW" vrtysux="FLOW|WSJ.com">WSJ.com</code>
+            <code seoname="WSJAsia" symbol="WSJAsia" type="FLOW" vrtysux="FLOW|WSJAsia">WSJAsia</code>
+            <code seoname="WSJEurope" symbol="WSJEurope" type="FLOW" vrtysux="FLOW|WSJEurope">WSJEurope</code>
+            <code seoname="WSJ Japanese" symbol="WSJ Japanese"
+                type="FLOW" vrtysux="FLOW|WSJ Japanese">WSJ Japanese</code>
+            <code seoname="WSJSunday" symbol="WSJSunday" type="FLOW" vrtysux="FLOW|WSJSunday">WSJSunday</code>
+            <code
+                symbol="Utilities Press Railroad to Speed Coal Deliveries"
+                type="HEADLINE" vrtysux="HEADLINE|Utilities Press Railroad to Speed Coal Deliveries"/>
+            <code seoname="2770" symbol="2770" type="INDUSTRY" vrtysux="INDUSTRY|2770">2770</code>
+            <code seoname="Marketing/Strtgy" symbol="5555"
+                type="INDUSTRY" vrtysux="INDUSTRY|5555">Marketing/Strtgy</code>
+            <code seoname="7500" symbol="7500" type="INDUSTRY" vrtysux="INDUSTRY|7500">7500</code>
+            <code seoname="COAL" symbol="COAL" type="KEYWORD" vrtysux="KEYWORD|COAL">COAL</code>
+            <code seoname="RAIL CONGESTIONS" symbol="RAIL CONGESTIONS"
+                type="KEYWORD" vrtysux="KEYWORD|RAIL CONGESTIONS">RAIL CONGESTIONS</code>
+            <code seoname="UTILITIES" symbol="UTILITIES" type="KEYWORD" vrtysux="KEYWORD|UTILITIES">UTILITIES</code>
+            <code symbol="SB110087853949234538284045802914018461232361"
+                type="NWCHAIN" vrtysux="NWCHAIN|SB110087853949234538284045802914018461232361"/>
+            <code seoname="Buffett, Warren" symbol="Buffett, Warren"
+                type="PERSON" vrtysux="PERSON|Buffett, Warren">Buffett, Warren</code>
+            <code seoname="Heydinger, Beverly Jones"
+                symbol="Heydinger, Beverly Jones" type="PERSON" vrtysux="PERSON|Heydinger, Beverly Jones">Heydinger, Beverly Jones</code>
+            <code seoname="Imbler, Tom" symbol="Imbler, Tom"
+                type="PERSON" vrtysux="PERSON|Imbler, Tom">Imbler, Tom</code>
+            <code seoname="McMillan, David" symbol="McMillan, David"
+                type="PERSON" vrtysux="PERSON|McMillan, David">McMillan, David</code>
+            <code seoname="Trevino, Michael" symbol="Trevino, Michael"
+                type="PERSON" vrtysux="PERSON|Trevino, Michael">Trevino, Michael</code>
+            <code seoname="Whalen, Bette" symbol="Whalen, Bette"
+                type="PERSON" vrtysux="PERSON|Whalen, Bette">Whalen, Bette</code>
+            <code symbol="SYND" type="RELAY" vrtysux="RELAY|SYND"/>
+            <code seoname="Yes" symbol="BETA" type="STATISTIC" vrtysux="STATISTIC|BETA">Yes</code>
+            <code seoname="CODES_REVIEWED" symbol="CODES_REVIEWED"
+                type="STATISTIC" vrtysux="STATISTIC|CODES_REVIEWED">CODES_REVIEWED</code>
+            <code seoname="ONEW" symbol="ONEW" type="SUBJECT" vrtysux="SUBJECT|ONEW">ONEW</code>
+            <code seoname="Business in US" symbol="OUSB" type="SUBJECT" vrtysux="SUBJECT|OUSB">Business in US</code>
+            <properties>
+                <property>
+                    <type/>
+                    <value>NWREGULAR</value>
+                    <itemid>|NWREGULAR</itemid>
+                    <properties>
+                        <property>
+                            <type>name</type>
+                            <value>NWREGULAR</value>
+                        </property>
+                        <property>
+                            <type>status</type>
+                            <value>modified</value>
+                        </property>
+                        <property>
+                            <type>title</type>
+                            <value>Wires/DJX - Not Dominant</value>
+                        </property>
+                        <property>
+                            <type>value</type>
+                            <value>NWREGULAR</value>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type/>
+                    <value>np/pmda</value>
+                    <itemid>|np/pmda</itemid>
+                    <properties>
+                        <property>
+                            <type>name</type>
+                            <value>np/pmda</value>
+                        </property>
+                        <property>
+                            <type>source</type>
+                            <value>DJN-CONTROL</value>
+                        </property>
+                        <property>
+                            <type>status</type>
+                            <value>modified</value>
+                        </property>
+                        <property>
+                            <type>title</type>
+                            <value>Publish to All At the Same Time</value>
+                        </property>
+                        <property>
+                            <type>value</type>
+                            <value>np/pmda</value>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>author</type>
+                    <value>Cassandra Sweet</value>
+                    <itemid>author|Cassandra Sweet</itemid>
+                    <properties>
+                        <property>
+                            <type>extractedtext</type>
+                            <value>Cassandra Sweet</value>
+                        </property>
+                        <property>
+                            <type>name</type>
+                            <value>Cassandra Sweet</value>
+                        </property>
+                        <property>
+                            <type>rank</type>
+                            <value>1</value>
+                        </property>
+                        <property>
+                            <type>topicid</type>
+                            <value>7459</value>
+                        </property>
+                        <property>
+                            <type>author</type>
+                            <value>Cassandra Sweet</value>
+                        </property>
+                        <property>
+                            <type>id</type>
+                            <value>Cassandra Sweet</value>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>author</type>
+                    <value>John W. Miller</value>
+                    <itemid>author|John W. Miller</itemid>
+                    <properties>
+                        <property>
+                            <type>extractedtext</type>
+                            <value>John W. Miller</value>
+                        </property>
+                        <property>
+                            <type>name</type>
+                            <value>John W. Miller</value>
+                        </property>
+                        <property>
+                            <type>rank</type>
+                            <value>2</value>
+                        </property>
+                        <property>
+                            <type>topicid</type>
+                            <value>1446</value>
+                        </property>
+                        <property>
+                            <type>author</type>
+                            <value>John W. Miller</value>
+                        </property>
+                        <property>
+                            <type>id</type>
+                            <value>John W. Miller</value>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>co</type>
+                    <value>bnsfrc</value>
+                    <itemid>co|bnsfrc</itemid>
+                    <properties>
+                        <property>
+                            <type>confidence</type>
+                            <value>100</value>
+                        </property>
+                        <property>
+                            <type>confidencerange</type>
+                            <value>high</value>
+                        </property>
+                        <property>
+                            <type>displayname</type>
+                            <value>BNSF Railway</value>
+                        </property>
+                        <property>
+                            <type>extractedtext</type>
+                            <value>BNSF Railway</value>
+                        </property>
+                        <property>
+                            <type>fcode</type>
+                            <value>bnsfrc</value>
+                        </property>
+                        <property>
+                            <type>name</type>
+                            <value>BNSF Railway</value>
+                        </property>
+                        <property>
+                            <type>occurs</type>
+                            <value>true</value>
+                        </property>
+                        <property>
+                            <type>onlinesignificance</type>
+                            <value>prominent</value>
+                        </property>
+                        <property>
+                            <type>relevance</type>
+                            <value>51</value>
+                        </property>
+                        <property>
+                            <type>relevancerange</type>
+                            <value>medium</value>
+                        </property>
+                        <property>
+                            <type>significance</type>
+                            <value>prominent</value>
+                        </property>
+                        <property>
+                            <type>source</type>
+                            <value>FACTIVA</value>
+                        </property>
+                        <property>
+                            <type>subcat</type>
+                            <value>com</value>
+                        </property>
+                        <property>
+                            <type>why</type>
+                            <value>about</value>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>co</type>
+                    <value>brlngt</value>
+                    <itemid>co|brlngt</itemid>
+                    <properties>
+                        <property>
+                            <type>fcode</type>
+                            <value>brlngt</value>
+                        </property>
+                        <property>
+                            <type>source</type>
+                            <value>FACTIVA</value>
+                        </property>
+                        <property>
+                            <type>subcat</type>
+                            <value>com</value>
+                        </property>
+                        <property>
+                            <type>why</type>
+                            <value>lineage</value>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>co</type>
+                    <value>lowcra</value>
+                    <itemid>co|lowcra</itemid>
+                    <properties>
+                        <property>
+                            <type>confidence</type>
+                            <value>100</value>
+                        </property>
+                        <property>
+                            <type>confidencerange</type>
+                            <value>high</value>
+                        </property>
+                        <property>
+                            <type>displayname</type>
+                            <value>Lower Colorado River Authority</value>
+                        </property>
+                        <property>
+                            <type>extractedtext</type>
+                            <value>Lower Colorado River Authority</value>
+                        </property>
+                        <property>
+                            <type>fcode</type>
+                            <value>lowcra</value>
+                        </property>
+                        <property>
+                            <type>name</type>
+                            <value>Lower Colorado River Authority</value>
+                        </property>
+                        <property>
+                            <type>relevance</type>
+                            <value>15</value>
+                        </property>
+                        <property>
+                            <type>relevancerange</type>
+                            <value>verylow</value>
+                        </property>
+                        <property>
+                            <type>source</type>
+                            <value>FACTIVA</value>
+                        </property>
+                        <property>
+                            <type>subcat</type>
+                            <value>com</value>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>co</type>
+                    <value>usddoe</value>
+                    <itemid>co|usddoe</itemid>
+                    <properties>
+                        <property>
+                            <type>confidence</type>
+                            <value>100</value>
+                        </property>
+                        <property>
+                            <type>confidencerange</type>
+                            <value>high</value>
+                        </property>
+                        <property>
+                            <type>displayname</type>
+                            <value>U.S. Department of Energy</value>
+                        </property>
+                        <property>
+                            <type>extractedtext</type>
+                            <value>U.S. Department of Energy</value>
+                        </property>
+                        <property>
+                            <type>fcode</type>
+                            <value>usddoe</value>
+                        </property>
+                        <property>
+                            <type>name</type>
+                            <value>U.S. Department of Energy</value>
+                        </property>
+                        <property>
+                            <type>relevance</type>
+                            <value>1</value>
+                        </property>
+                        <property>
+                            <type>relevancerange</type>
+                            <value>verylow</value>
+                        </property>
+                        <property>
+                            <type>source</type>
+                            <value>FACTIVA</value>
+                        </property>
+                        <property>
+                            <type>subcat</type>
+                            <value>org</value>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>co</type>
+                    <value>useia</value>
+                    <itemid>co|useia</itemid>
+                    <properties>
+                        <property>
+                            <type>confidence</type>
+                            <value>100</value>
+                        </property>
+                        <property>
+                            <type>confidencerange</type>
+                            <value>high</value>
+                        </property>
+                        <property>
+                            <type>displayname</type>
+                            <value>U.S. Energy Information Administration</value>
+                        </property>
+                        <property>
+                            <type>extractedtext</type>
+                            <value>U.S. Energy Information Administration</value>
+                        </property>
+                        <property>
+                            <type>fcode</type>
+                            <value>useia</value>
+                        </property>
+                        <property>
+                            <type>name</type>
+                            <value>U.S. Energy Information Administration</value>
+                        </property>
+                        <property>
+                            <type>relevance</type>
+                            <value>1</value>
+                        </property>
+                        <property>
+                            <type>relevancerange</type>
+                            <value>verylow</value>
+                        </property>
+                        <property>
+                            <type>source</type>
+                            <value>FACTIVA</value>
+                        </property>
+                        <property>
+                            <type>subcat</type>
+                            <value>org</value>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>co</type>
+                    <value>usstbd</value>
+                    <itemid>co|usstbd</itemid>
+                    <properties>
+                        <property>
+                            <type>confidence</type>
+                            <value>100</value>
+                        </property>
+                        <property>
+                            <type>confidencerange</type>
+                            <value>high</value>
+                        </property>
+                        <property>
+                            <type>displayname</type>
+                            <value>Surface Transportation Board</value>
+                        </property>
+                        <property>
+                            <type>extractedtext</type>
+                            <value>Surface Transportation Board</value>
+                        </property>
+                        <property>
+                            <type>fcode</type>
+                            <value>usstbd</value>
+                        </property>
+                        <property>
+                            <type>name</type>
+                            <value>Surface Transportation Board</value>
+                        </property>
+                        <property>
+                            <type>relevance</type>
+                            <value>1</value>
+                        </property>
+                        <property>
+                            <type>relevancerange</type>
+                            <value>verylow</value>
+                        </property>
+                        <property>
+                            <type>source</type>
+                            <value>FACTIVA</value>
+                        </property>
+                        <property>
+                            <type>subcat</type>
+                            <value>org</value>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>co</type>
+                    <value>Western Coal Traffic League</value>
+                    <itemid>co|Western Coal Traffic League</itemid>
+                    <properties>
+                        <property>
+                            <type>displayname</type>
+                            <value>Western Coal Traffic League</value>
+                        </property>
+                        <property>
+                            <type>extractedtext</type>
+                            <value>Western Coal Traffic League</value>
+                        </property>
+                        <property>
+                            <type>name</type>
+                            <value>Western Coal Traffic League</value>
+                        </property>
+                        <property>
+                            <type>source</type>
+                            <value>FACTIVA</value>
+                        </property>
+                        <property>
+                            <type>subcat</type>
+                            <value>none</value>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>co</type>
+                    <value>MPL</value>
+                    <itemid>co|MPL</itemid>
+                    <properties>
+                        <property>
+                            <type>displayname</type>
+                            <value>Allete</value>
+                        </property>
+                        <property>
+                            <type>extractedtext</type>
+                            <value>Allete</value>
+                        </property>
+                        <property>
+                            <type>fcode</type>
+                            <value>MPL</value>
+                        </property>
+                        <property>
+                            <type>name</type>
+                            <value>Allete</value>
+                        </property>
+                        <property>
+                            <type>onlinesignificance</type>
+                            <value>passing-mention</value>
+                        </property>
+                        <property>
+                            <type>significance</type>
+                            <value>prominent</value>
+                        </property>
+                        <property>
+                            <type>source</type>
+                            <value>MANUAL</value>
+                        </property>
+                        <property>
+                            <type>status</type>
+                            <value>added</value>
+                        </property>
+                        <property>
+                            <type>symbol</type>
+                            <value>ALE</value>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>co</type>
+                    <value>bkht</value>
+                    <itemid>co|bkht</itemid>
+                    <properties>
+                        <property>
+                            <type>confidence</type>
+                            <value>100</value>
+                        </property>
+                        <property>
+                            <type>confidencerange</type>
+                            <value>high</value>
+                        </property>
+                        <property>
+                            <type>countrycode</type>
+                            <value>US</value>
+                        </property>
+                        <property>
+                            <type>displayname</type>
+                            <value>Berkshire Hathaway</value>
+                        </property>
+                        <property>
+                            <type>exchange</type>
+                            <value>NYSE</value>
+                        </property>
+                        <property>
+                            <type>extractedtext</type>
+                            <value>Berkshire Hathaway</value>
+                        </property>
+                        <property>
+                            <type>fcode</type>
+                            <value>bkht</value>
+                        </property>
+                        <property>
+                            <type>name</type>
+                            <value>Berkshire Hathaway</value>
+                        </property>
+                        <property>
+                            <type>onlinesignificance</type>
+                            <value>passing-mention</value>
+                        </property>
+                        <property>
+                            <type>relevance</type>
+                            <value>1</value>
+                        </property>
+                        <property>
+                            <type>relevancerange</type>
+                            <value>verylow</value>
+                        </property>
+                        <property>
+                            <type>seoname</type>
+                            <value>berkshire_hathaway</value>
+                        </property>
+                        <property>
+                            <type>significance</type>
+                            <value>prominent</value>
+                        </property>
+                        <property>
+                            <type>source</type>
+                            <value>FACTIVA</value>
+                        </property>
+                        <property>
+                            <type>status</type>
+                            <value>modified</value>
+                        </property>
+                        <property>
+                            <type>subcat</type>
+                            <value>com</value>
+                        </property>
+                        <property>
+                            <type>symbol</type>
+                            <value>BRKB</value>
+                        </property>
+                        <property>
+                            <type>ticker</type>
+                            <value>BRKB</value>
+                        </property>
+                        <property>
+                            <type>why</type>
+                            <value>lineage</value>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>co</type>
+                    <value>norspw</value>
+                    <itemid>co|norspw</itemid>
+                    <properties>
+                        <property>
+                            <type>confidence</type>
+                            <value>100</value>
+                        </property>
+                        <property>
+                            <type>confidencerange</type>
+                            <value>high</value>
+                        </property>
+                        <property>
+                            <type>countrycode</type>
+                            <value>US</value>
+                        </property>
+                        <property>
+                            <type>displayname</type>
+                            <value>Xcel Energy</value>
+                        </property>
+                        <property>
+                            <type>exchange</type>
+                            <value>NYSE</value>
+                        </property>
+                        <property>
+                            <type>extractedtext</type>
+                            <value>Xcel Energy</value>
+                        </property>
+                        <property>
+                            <type>fcode</type>
+                            <value>norspw</value>
+                        </property>
+                        <property>
+                            <type>name</type>
+                            <value>Xcel Energy</value>
+                        </property>
+                        <property>
+                            <type>onlinesignificance</type>
+                            <value>passing-mention</value>
+                        </property>
+                        <property>
+                            <type>relevance</type>
+                            <value>25</value>
+                        </property>
+                        <property>
+                            <type>relevancerange</type>
+                            <value>low</value>
+                        </property>
+                        <property>
+                            <type>seoname</type>
+                            <value>xcel_energy</value>
+                        </property>
+                        <property>
+                            <type>significance</type>
+                            <value>prominent</value>
+                        </property>
+                        <property>
+                            <type>source</type>
+                            <value>FACTIVA</value>
+                        </property>
+                        <property>
+                            <type>status</type>
+                            <value>modified</value>
+                        </property>
+                        <property>
+                            <type>subcat</type>
+                            <value>com</value>
+                        </property>
+                        <property>
+                            <type>symbol</type>
+                            <value>XEL</value>
+                        </property>
+                        <property>
+                            <type>why</type>
+                            <value>occur</value>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>co</type>
+                    <value>pbdy</value>
+                    <itemid>co|pbdy</itemid>
+                    <properties>
+                        <property>
+                            <type>confidence</type>
+                            <value>100</value>
+                        </property>
+                        <property>
+                            <type>confidencerange</type>
+                            <value>high</value>
+                        </property>
+                        <property>
+                            <type>countrycode</type>
+                            <value>US</value>
+                        </property>
+                        <property>
+                            <type>displayname</type>
+                            <value>Peabody Energy</value>
+                        </property>
+                        <property>
+                            <type>exchange</type>
+                            <value>NYSE</value>
+                        </property>
+                        <property>
+                            <type>extractedtext</type>
+                            <value>Peabody Energy</value>
+                        </property>
+                        <property>
+                            <type>fcode</type>
+                            <value>pbdy</value>
+                        </property>
+                        <property>
+                            <type>name</type>
+                            <value>Peabody Energy</value>
+                        </property>
+                        <property>
+                            <type>onlinesignificance</type>
+                            <value>passing-mention</value>
+                        </property>
+                        <property>
+                            <type>relevance</type>
+                            <value>26</value>
+                        </property>
+                        <property>
+                            <type>relevancerange</type>
+                            <value>low</value>
+                        </property>
+                        <property>
+                            <type>seoname</type>
+                            <value>peabody_energy</value>
+                        </property>
+                        <property>
+                            <type>significance</type>
+                            <value>prominent</value>
+                        </property>
+                        <property>
+                            <type>source</type>
+                            <value>FACTIVA</value>
+                        </property>
+                        <property>
+                            <type>status</type>
+                            <value>modified</value>
+                        </property>
+                        <property>
+                            <type>subcat</type>
+                            <value>com</value>
+                        </property>
+                        <property>
+                            <type>symbol</type>
+                            <value>BTU</value>
+                        </property>
+                        <property>
+                            <type>why</type>
+                            <value>occur</value>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>co</type>
+                    <value>unpacf</value>
+                    <itemid>co|unpacf</itemid>
+                    <properties>
+                        <property>
+                            <type>confidence</type>
+                            <value>92</value>
+                        </property>
+                        <property>
+                            <type>confidencerange</type>
+                            <value>high</value>
+                        </property>
+                        <property>
+                            <type>countrycode</type>
+                            <value>US</value>
+                        </property>
+                        <property>
+                            <type>displayname</type>
+                            <value>Union Pacific</value>
+                        </property>
+                        <property>
+                            <type>exchange</type>
+                            <value>NYSE</value>
+                        </property>
+                        <property>
+                            <type>extractedtext</type>
+                            <value>Union Pacific</value>
+                        </property>
+                        <property>
+                            <type>fcode</type>
+                            <value>unpacf</value>
+                        </property>
+                        <property>
+                            <type>name</type>
+                            <value>Union Pacific</value>
+                        </property>
+                        <property>
+                            <type>onlinesignificance</type>
+                            <value>passing-mention</value>
+                        </property>
+                        <property>
+                            <type>relevance</type>
+                            <value>17</value>
+                        </property>
+                        <property>
+                            <type>relevancerange</type>
+                            <value>verylow</value>
+                        </property>
+                        <property>
+                            <type>seoname</type>
+                            <value>union_pacific</value>
+                        </property>
+                        <property>
+                            <type>significance</type>
+                            <value>prominent</value>
+                        </property>
+                        <property>
+                            <type>source</type>
+                            <value>FACTIVA</value>
+                        </property>
+                        <property>
+                            <type>status</type>
+                            <value>modified</value>
+                        </property>
+                        <property>
+                            <type>subcat</type>
+                            <value>com</value>
+                        </property>
+                        <property>
+                            <type>symbol</type>
+                            <value>UNP</value>
+                        </property>
+                        <property>
+                            <type>ticker</type>
+                            <value>UNP</value>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>company</type>
+                    <value>BRKB</value>
+                    <itemid>company|BRKB</itemid>
+                    <properties>
+                        <property>
+                            <type>name</type>
+                            <value>Berkshire Hathaway</value>
+                        </property>
+                        <property>
+                            <type>significance</type>
+                            <value>PASSING-MENTION</value>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>company</type>
+                    <value>UNP</value>
+                    <itemid>company|UNP</itemid>
+                    <properties>
+                        <property>
+                            <type>name</type>
+                            <value>Union Pacific</value>
+                        </property>
+                        <property>
+                            <type>significance</type>
+                            <value>PASSING-MENTION</value>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>company</type>
+                    <value>ALE</value>
+                    <itemid>company|ALE</itemid>
+                    <properties>
+                        <property>
+                            <type>name</type>
+                            <value>Allete</value>
+                        </property>
+                        <property>
+                            <type>significance</type>
+                            <value>PASSING-MENTION</value>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>company</type>
+                    <value>XEL</value>
+                    <itemid>company|XEL</itemid>
+                    <properties>
+                        <property>
+                            <type>name</type>
+                            <value>Xcel Energy</value>
+                        </property>
+                        <property>
+                            <type>significance</type>
+                            <value>PASSING-MENTION</value>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>company</type>
+                    <value>BTU</value>
+                    <itemid>company|BTU</itemid>
+                    <properties>
+                        <property>
+                            <type>name</type>
+                            <value>Peabody Energy</value>
+                        </property>
+                        <property>
+                            <type>significance</type>
+                            <value>PASSING-MENTION</value>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>djn</type>
+                    <value>ALE</value>
+                    <itemid>djn|ALE</itemid>
+                    <properties>
+                        <property>
+                            <type>fcode</type>
+                            <value>ALE</value>
+                        </property>
+                        <property>
+                            <type>name</type>
+                            <value>ALE</value>
+                        </property>
+                        <property>
+                            <type>onlinesignificance</type>
+                            <value>prominent</value>
+                        </property>
+                        <property>
+                            <type>significance</type>
+                            <value>prominent</value>
+                        </property>
+                        <property>
+                            <type>source</type>
+                            <value>FACTIVA</value>
+                        </property>
+                        <property>
+                            <type>why</type>
+                            <value>about</value>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>djn</type>
+                    <value>BRKA</value>
+                    <itemid>djn|BRKA</itemid>
+                    <properties>
+                        <property>
+                            <type>fcode</type>
+                            <value>BRKA</value>
+                        </property>
+                        <property>
+                            <type>name</type>
+                            <value>BRKA</value>
+                        </property>
+                        <property>
+                            <type>onlinesignificance</type>
+                            <value>prominent</value>
+                        </property>
+                        <property>
+                            <type>significance</type>
+                            <value>prominent</value>
+                        </property>
+                        <property>
+                            <type>source</type>
+                            <value>FACTIVA</value>
+                        </property>
+                        <property>
+                            <type>why</type>
+                            <value>about</value>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>djn</type>
+                    <value>BRKB</value>
+                    <itemid>djn|BRKB</itemid>
+                    <properties>
+                        <property>
+                            <type>fcode</type>
+                            <value>BRKB</value>
+                        </property>
+                        <property>
+                            <type>name</type>
+                            <value>BRKB</value>
+                        </property>
+                        <property>
+                            <type>onlinesignificance</type>
+                            <value>prominent</value>
+                        </property>
+                        <property>
+                            <type>significance</type>
+                            <value>prominent</value>
+                        </property>
+                        <property>
+                            <type>source</type>
+                            <value>FACTIVA</value>
+                        </property>
+                        <property>
+                            <type>why</type>
+                            <value>about</value>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>djn</type>
+                    <value>BTU</value>
+                    <itemid>djn|BTU</itemid>
+                    <properties>
+                        <property>
+                            <type>fcode</type>
+                            <value>BTU</value>
+                        </property>
+                        <property>
+                            <type>name</type>
+                            <value>BTU</value>
+                        </property>
+                        <property>
+                            <type>onlinesignificance</type>
+                            <value>passing-mention</value>
+                        </property>
+                        <property>
+                            <type>significance</type>
+                            <value>passing</value>
+                        </property>
+                        <property>
+                            <type>source</type>
+                            <value>FACTIVA</value>
+                        </property>
+                        <property>
+                            <type>why</type>
+                            <value>occur</value>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>djn</type>
+                    <value>M/UTI</value>
+                    <itemid>djn|M/UTI</itemid>
+                    <properties>
+                        <property>
+                            <type>fcode</type>
+                            <value>M/UTI</value>
+                        </property>
+                        <property>
+                            <type>name</type>
+                            <value>M/UTI</value>
+                        </property>
+                        <property>
+                            <type>source</type>
+                            <value>FACTIVA</value>
+                        </property>
+                        <property>
+                            <type>why</type>
+                            <value>lineage</value>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>djn</type>
+                    <value>I/RAI</value>
+                    <itemid>djn|I/RAI</itemid>
+                    <properties>
+                        <property>
+                            <type>fcode</type>
+                            <value>I/RAI</value>
+                        </property>
+                        <property>
+                            <type>name</type>
+                            <value>I/RAI</value>
+                        </property>
+                        <property>
+                            <type>source</type>
+                            <value>FACTIVA</value>
+                        </property>
+                        <property>
+                            <type>why</type>
+                            <value>lineage</value>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>djn</type>
+                    <value>I/SVC</value>
+                    <itemid>djn|I/SVC</itemid>
+                    <properties>
+                        <property>
+                            <type>fcode</type>
+                            <value>I/SVC</value>
+                        </property>
+                        <property>
+                            <type>name</type>
+                            <value>I/SVC</value>
+                        </property>
+                        <property>
+                            <type>source</type>
+                            <value>FACTIVA</value>
+                        </property>
+                        <property>
+                            <type>why</type>
+                            <value>lineage</value>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>djn</type>
+                    <value>M/CYC</value>
+                    <itemid>djn|M/CYC</itemid>
+                    <properties>
+                        <property>
+                            <type>fcode</type>
+                            <value>M/CYC</value>
+                        </property>
+                        <property>
+                            <type>name</type>
+                            <value>M/CYC</value>
+                        </property>
+                        <property>
+                            <type>source</type>
+                            <value>FACTIVA</value>
+                        </property>
+                        <property>
+                            <type>why</type>
+                            <value>lineage</value>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>djn</type>
+                    <value>N/CNW</value>
+                    <itemid>djn|N/CNW</itemid>
+                    <properties>
+                        <property>
+                            <type>fcode</type>
+                            <value>N/CNW</value>
+                        </property>
+                        <property>
+                            <type>name</type>
+                            <value>N/CNW</value>
+                        </property>
+                        <property>
+                            <type>onlinesignificance</type>
+                            <value>prominent</value>
+                        </property>
+                        <property>
+                            <type>significance</type>
+                            <value>prominent</value>
+                        </property>
+                        <property>
+                            <type>source</type>
+                            <value>FACTIVA</value>
+                        </property>
+                        <property>
+                            <type>why</type>
+                            <value>about</value>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>djn</type>
+                    <value>N/ENTR</value>
+                    <itemid>djn|N/ENTR</itemid>
+                    <properties>
+                        <property>
+                            <type>fcode</type>
+                            <value>N/ENTR</value>
+                        </property>
+                        <property>
+                            <type>name</type>
+                            <value>N/ENTR</value>
+                        </property>
+                        <property>
+                            <type>onlinesignificance</type>
+                            <value>prominent</value>
+                        </property>
+                        <property>
+                            <type>significance</type>
+                            <value>prominent</value>
+                        </property>
+                        <property>
+                            <type>source</type>
+                            <value>FACTIVA</value>
+                        </property>
+                        <property>
+                            <type>why</type>
+                            <value>about</value>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>djn</type>
+                    <value>R/US</value>
+                    <itemid>djn|R/US</itemid>
+                    <properties>
+                        <property>
+                            <type>fcode</type>
+                            <value>R/US</value>
+                        </property>
+                        <property>
+                            <type>name</type>
+                            <value>R/US</value>
+                        </property>
+                        <property>
+                            <type>onlinesignificance</type>
+                            <value>prominent</value>
+                        </property>
+                        <property>
+                            <type>significance</type>
+                            <value>prominent</value>
+                        </property>
+                        <property>
+                            <type>source</type>
+                            <value>FACTIVA</value>
+                        </property>
+                        <property>
+                            <type>why</type>
+                            <value>about</value>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>djn</type>
+                    <value>R/MN</value>
+                    <itemid>djn|R/MN</itemid>
+                    <properties>
+                        <property>
+                            <type>fcode</type>
+                            <value>R/MN</value>
+                        </property>
+                        <property>
+                            <type>name</type>
+                            <value>R/MN</value>
+                        </property>
+                        <property>
+                            <type>onlinesignificance</type>
+                            <value>prominent</value>
+                        </property>
+                        <property>
+                            <type>significance</type>
+                            <value>prominent</value>
+                        </property>
+                        <property>
+                            <type>source</type>
+                            <value>FACTIVA</value>
+                        </property>
+                        <property>
+                            <type>why</type>
+                            <value>about</value>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>djn</type>
+                    <value>R/NME</value>
+                    <itemid>djn|R/NME</itemid>
+                    <properties>
+                        <property>
+                            <type>fcode</type>
+                            <value>R/NME</value>
+                        </property>
+                        <property>
+                            <type>name</type>
+                            <value>R/NME</value>
+                        </property>
+                        <property>
+                            <type>source</type>
+                            <value>FACTIVA</value>
+                        </property>
+                        <property>
+                            <type>why</type>
+                            <value>lineage</value>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>djn</type>
+                    <value>R/USC</value>
+                    <itemid>djn|R/USC</itemid>
+                    <properties>
+                        <property>
+                            <type>fcode</type>
+                            <value>R/USC</value>
+                        </property>
+                        <property>
+                            <type>name</type>
+                            <value>R/USC</value>
+                        </property>
+                        <property>
+                            <type>source</type>
+                            <value>FACTIVA</value>
+                        </property>
+                        <property>
+                            <type>why</type>
+                            <value>lineage</value>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>djn</type>
+                    <value>I/ELC</value>
+                    <itemid>djn|I/ELC</itemid>
+                    <properties>
+                        <property>
+                            <type>fcode</type>
+                            <value>I/ELC</value>
+                        </property>
+                        <property>
+                            <type>name</type>
+                            <value>I/ELC</value>
+                        </property>
+                        <property>
+                            <type>source</type>
+                            <value>FACTIVA</value>
+                        </property>
+                        <property>
+                            <type>why</type>
+                            <value>association</value>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>djn</type>
+                    <value>M/FCL</value>
+                    <itemid>djn|M/FCL</itemid>
+                    <properties>
+                        <property>
+                            <type>fcode</type>
+                            <value>M/FCL</value>
+                        </property>
+                        <property>
+                            <type>name</type>
+                            <value>M/FCL</value>
+                        </property>
+                        <property>
+                            <type>source</type>
+                            <value>FACTIVA</value>
+                        </property>
+                        <property>
+                            <type>why</type>
+                            <value>lineage</value>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>djn</type>
+                    <value>I/INS</value>
+                    <itemid>djn|I/INS</itemid>
+                    <properties>
+                        <property>
+                            <type>fcode</type>
+                            <value>I/INS</value>
+                        </property>
+                        <property>
+                            <type>name</type>
+                            <value>I/INS</value>
+                        </property>
+                        <property>
+                            <type>source</type>
+                            <value>FACTIVA</value>
+                        </property>
+                        <property>
+                            <type>why</type>
+                            <value>lineage</value>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>djn</type>
+                    <value>I/INU</value>
+                    <itemid>djn|I/INU</itemid>
+                    <properties>
+                        <property>
+                            <type>fcode</type>
+                            <value>I/INU</value>
+                        </property>
+                        <property>
+                            <type>name</type>
+                            <value>I/INU</value>
+                        </property>
+                        <property>
+                            <type>source</type>
+                            <value>FACTIVA</value>
+                        </property>
+                        <property>
+                            <type>why</type>
+                            <value>association</value>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>djncode</type>
+                    <value>n/djn</value>
+                    <itemid>djncode|n/djn</itemid>
+                    <properties>
+                        <property>
+                            <type>codetype</type>
+                            <value>djnCode</value>
+                        </property>
+                        <property>
+                            <type>name</type>
+                            <value>N/DJN</value>
+                        </property>
+                        <property>
+                            <type>source</type>
+                            <value>MANUAL</value>
+                        </property>
+                        <property>
+                            <type>status</type>
+                            <value>modified</value>
+                        </property>
+                        <property>
+                            <type>value</type>
+                            <value>n/djn</value>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>djncode</type>
+                    <value>n/wer</value>
+                    <itemid>djncode|n/wer</itemid>
+                    <properties>
+                        <property>
+                            <type>codetype</type>
+                            <value>djnCode</value>
+                        </property>
+                        <property>
+                            <type>name</type>
+                            <value>N/WER</value>
+                        </property>
+                        <property>
+                            <type>source</type>
+                            <value>MANUAL</value>
+                        </property>
+                        <property>
+                            <type>status</type>
+                            <value>modified</value>
+                        </property>
+                        <property>
+                            <type>value</type>
+                            <value>n/wer</value>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>djncode</type>
+                    <value>p/meth</value>
+                    <itemid>djncode|p/meth</itemid>
+                    <properties>
+                        <property>
+                            <type>codetype</type>
+                            <value>djnCode</value>
+                        </property>
+                        <property>
+                            <type>name</type>
+                            <value>P/METH</value>
+                        </property>
+                        <property>
+                            <type>source</type>
+                            <value>MANUAL</value>
+                        </property>
+                        <property>
+                            <type>status</type>
+                            <value>modified</value>
+                        </property>
+                        <property>
+                            <type>value</type>
+                            <value>p/meth</value>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>first_publish_headline</type>
+                    <value>Utilities Press Railroad to Speed Coal Deliveries </value>
+                    <itemid>first_publish_headline|Utilities Press Railroad to Speed Coal Deliveries </itemid>
+                </property>
+                <property>
+                    <type>flow</type>
+                    <value>WSJ.com</value>
+                    <itemid>flow|WSJ.com</itemid>
+                    <properties>
+                        <property>
+                            <type>name</type>
+                            <value>WSJ.com</value>
+                        </property>
+                        <property>
+                            <type>status</type>
+                            <value>modified</value>
+                        </property>
+                        <property>
+                            <type>title</type>
+                            <value>Product</value>
+                        </property>
+                        <property>
+                            <type>value</type>
+                            <value>WSJ.com</value>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>flow</type>
+                    <value>WSJ</value>
+                    <itemid>flow|WSJ</itemid>
+                    <properties>
+                        <property>
+                            <type>name</type>
+                            <value>WSJ</value>
+                        </property>
+                        <property>
+                            <type>status</type>
+                            <value>modified</value>
+                        </property>
+                        <property>
+                            <type>title</type>
+                            <value>Product</value>
+                        </property>
+                        <property>
+                            <type>value</type>
+                            <value>WSJ</value>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>flow</type>
+                    <value>WSJAsia</value>
+                    <itemid>flow|WSJAsia</itemid>
+                    <properties>
+                        <property>
+                            <type>name</type>
+                            <value>WSJAsia</value>
+                        </property>
+                        <property>
+                            <type>status</type>
+                            <value>modified</value>
+                        </property>
+                        <property>
+                            <type>title</type>
+                            <value>Product</value>
+                        </property>
+                        <property>
+                            <type>value</type>
+                            <value>WSJAsia</value>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>flow</type>
+                    <value>WSJEurope</value>
+                    <itemid>flow|WSJEurope</itemid>
+                    <properties>
+                        <property>
+                            <type>name</type>
+                            <value>WSJEurope</value>
+                        </property>
+                        <property>
+                            <type>status</type>
+                            <value>modified</value>
+                        </property>
+                        <property>
+                            <type>title</type>
+                            <value>Product</value>
+                        </property>
+                        <property>
+                            <type>value</type>
+                            <value>WSJEurope</value>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>flow</type>
+                    <value>WSJSunday</value>
+                    <itemid>flow|WSJSunday</itemid>
+                    <properties>
+                        <property>
+                            <type>name</type>
+                            <value>WSJSunday</value>
+                        </property>
+                        <property>
+                            <type>status</type>
+                            <value>modified</value>
+                        </property>
+                        <property>
+                            <type>title</type>
+                            <value>Product</value>
+                        </property>
+                        <property>
+                            <type>value</type>
+                            <value>WSJSunday</value>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>flow</type>
+                    <value>WSJ Japanese</value>
+                    <itemid>flow|WSJ Japanese</itemid>
+                    <properties>
+                        <property>
+                            <type>name</type>
+                            <value>WSJ Japanese</value>
+                        </property>
+                        <property>
+                            <type>status</type>
+                            <value>modified</value>
+                        </property>
+                        <property>
+                            <type>title</type>
+                            <value>Product</value>
+                        </property>
+                        <property>
+                            <type>value</type>
+                            <value>WSJ Japanese</value>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>headline</type>
+                    <value>Utilities Press Railroad to Speed Coal Deliveries</value>
+                    <itemid>headline|Utilities Press Railroad to Speed Coal Deliveries</itemid>
+                </property>
+                <property>
+                    <type>icb</type>
+                    <value>7000</value>
+                    <itemid>icb|7000</itemid>
+                    <properties>
+                        <property>
+                            <type>fcode</type>
+                            <value>7000</value>
+                        </property>
+                        <property>
+                            <type>name</type>
+                            <value>Utilities</value>
+                        </property>
+                        <property>
+                            <type>source</type>
+                            <value>FACTIVA</value>
+                        </property>
+                        <property>
+                            <type>why</type>
+                            <value>lineage</value>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>icb</type>
+                    <value>7500</value>
+                    <itemid>icb|7500</itemid>
+                    <properties>
+                        <property>
+                            <type>fcode</type>
+                            <value>7500</value>
+                        </property>
+                        <property>
+                            <type>name</type>
+                            <value>Utilities</value>
+                        </property>
+                        <property>
+                            <type>source</type>
+                            <value>FACTIVA</value>
+                        </property>
+                        <property>
+                            <type>why</type>
+                            <value>lineage</value>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>icb</type>
+                    <value>7530</value>
+                    <itemid>icb|7530</itemid>
+                    <properties>
+                        <property>
+                            <type>fcode</type>
+                            <value>7530</value>
+                        </property>
+                        <property>
+                            <type>name</type>
+                            <value>Electricity</value>
+                        </property>
+                        <property>
+                            <type>source</type>
+                            <value>FACTIVA</value>
+                        </property>
+                        <property>
+                            <type>why</type>
+                            <value>lineage</value>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>icb</type>
+                    <value>7535</value>
+                    <itemid>icb|7535</itemid>
+                    <properties>
+                        <property>
+                            <type>fcode</type>
+                            <value>7535</value>
+                        </property>
+                        <property>
+                            <type>name</type>
+                            <value>Conventional Electricity</value>
+                        </property>
+                        <property>
+                            <type>source</type>
+                            <value>FACTIVA</value>
+                        </property>
+                        <property>
+                            <type>why</type>
+                            <value>association</value>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>icb</type>
+                    <value>8000</value>
+                    <itemid>icb|8000</itemid>
+                    <properties>
+                        <property>
+                            <type>fcode</type>
+                            <value>8000</value>
+                        </property>
+                        <property>
+                            <type>name</type>
+                            <value>Financials</value>
+                        </property>
+                        <property>
+                            <type>source</type>
+                            <value>FACTIVA</value>
+                        </property>
+                        <property>
+                            <type>why</type>
+                            <value>lineage</value>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>icb</type>
+                    <value>8500</value>
+                    <itemid>icb|8500</itemid>
+                    <properties>
+                        <property>
+                            <type>fcode</type>
+                            <value>8500</value>
+                        </property>
+                        <property>
+                            <type>name</type>
+                            <value>Insurance</value>
+                        </property>
+                        <property>
+                            <type>source</type>
+                            <value>FACTIVA</value>
+                        </property>
+                        <property>
+                            <type>why</type>
+                            <value>lineage</value>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>icb</type>
+                    <value>8530</value>
+                    <itemid>icb|8530</itemid>
+                    <properties>
+                        <property>
+                            <type>fcode</type>
+                            <value>8530</value>
+                        </property>
+                        <property>
+                            <type>name</type>
+                            <value>Nonlife Insurance</value>
+                        </property>
+                        <property>
+                            <type>source</type>
+                            <value>FACTIVA</value>
+                        </property>
+                        <property>
+                            <type>why</type>
+                            <value>lineage</value>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>icb</type>
+                    <value>8538</value>
+                    <itemid>icb|8538</itemid>
+                    <properties>
+                        <property>
+                            <type>fcode</type>
+                            <value>8538</value>
+                        </property>
+                        <property>
+                            <type>name</type>
+                            <value>Reinsurance</value>
+                        </property>
+                        <property>
+                            <type>source</type>
+                            <value>FACTIVA</value>
+                        </property>
+                        <property>
+                            <type>why</type>
+                            <value>association</value>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>icbindustry</type>
+                    <value>2770</value>
+                    <itemid>icbindustry|2770</itemid>
+                    <properties>
+                        <property>
+                            <type>comments</type>
+                            <value>Keyword:DJII-INDUSTRY iutil,i16,ibcs,icargo,i71,irailtr,itsp</value>
+                        </property>
+                        <property>
+                            <type>description</type>
+                            <value>03|Industries|Transportation</value>
+                        </property>
+                        <property>
+                            <type>name</type>
+                            <value>2770</value>
+                        </property>
+                        <property>
+                            <type>source</type>
+                            <value>EXPANDER</value>
+                        </property>
+                        <property>
+                            <type>value</type>
+                            <value>2770</value>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>icbindustry</type>
+                    <value>7500</value>
+                    <itemid>icbindustry|7500</itemid>
+                    <properties>
+                        <property>
+                            <type>comments</type>
+                            <value>Keyword:DJII-INDUSTRY iutil,i16,ibcs,icargo,i71,irailtr,itsp</value>
+                        </property>
+                        <property>
+                            <type>description</type>
+                            <value>03|Industries|Utilities</value>
+                        </property>
+                        <property>
+                            <type>name</type>
+                            <value>7500</value>
+                        </property>
+                        <property>
+                            <type>source</type>
+                            <value>EXPANDER</value>
+                        </property>
+                        <property>
+                            <type>value</type>
+                            <value>7500</value>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>icbindustry</type>
+                    <value>5555</value>
+                    <itemid>icbindustry|5555</itemid>
+                    <properties>
+                        <property>
+                            <type>name</type>
+                            <value>Marketing/Strtgy</value>
+                        </property>
+                        <property>
+                            <type>status</type>
+                            <value>modified</value>
+                        </property>
+                        <property>
+                            <type>value</type>
+                            <value>5555</value>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>in</type>
+                    <value>i16</value>
+                    <itemid>in|i16</itemid>
+                    <properties>
+                        <property>
+                            <type>fcode</type>
+                            <value>i16</value>
+                        </property>
+                        <property>
+                            <type>name</type>
+                            <value>Electricity/Gas Utilities</value>
+                        </property>
+                        <property>
+                            <type>onlinesignificance</type>
+                            <value>prominent</value>
+                        </property>
+                        <property>
+                            <type>significance</type>
+                            <value>prominent</value>
+                        </property>
+                        <property>
+                            <type>source</type>
+                            <value>FACTIVA</value>
+                        </property>
+                        <property>
+                            <type>why</type>
+                            <value>about</value>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>in</type>
+                    <value>iutil</value>
+                    <itemid>in|iutil</itemid>
+                    <properties>
+                        <property>
+                            <type>fcode</type>
+                            <value>iutil</value>
+                        </property>
+                        <property>
+                            <type>name</type>
+                            <value>Utilities</value>
+                        </property>
+                        <property>
+                            <type>source</type>
+                            <value>FACTIVA</value>
+                        </property>
+                        <property>
+                            <type>why</type>
+                            <value>lineage</value>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>in</type>
+                    <value>i71</value>
+                    <itemid>in|i71</itemid>
+                    <properties>
+                        <property>
+                            <type>fcode</type>
+                            <value>i71</value>
+                        </property>
+                        <property>
+                            <type>name</type>
+                            <value>Railroads</value>
+                        </property>
+                        <property>
+                            <type>source</type>
+                            <value>FACTIVA</value>
+                        </property>
+                        <property>
+                            <type>why</type>
+                            <value>lineage</value>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>in</type>
+                    <value>i8396</value>
+                    <itemid>in|i8396</itemid>
+                    <properties>
+                        <property>
+                            <type>fcode</type>
+                            <value>i8396</value>
+                        </property>
+                        <property>
+                            <type>name</type>
+                            <value>Diversified Holding Companies</value>
+                        </property>
+                        <property>
+                            <type>source</type>
+                            <value>FACTIVA</value>
+                        </property>
+                        <property>
+                            <type>why</type>
+                            <value>association</value>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>in</type>
+                    <value>ibcs</value>
+                    <itemid>in|ibcs</itemid>
+                    <properties>
+                        <property>
+                            <type>fcode</type>
+                            <value>ibcs</value>
+                        </property>
+                        <property>
+                            <type>name</type>
+                            <value>Business/Consumer Services</value>
+                        </property>
+                        <property>
+                            <type>source</type>
+                            <value>FACTIVA</value>
+                        </property>
+                        <property>
+                            <type>why</type>
+                            <value>lineage</value>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>in</type>
+                    <value>icargo</value>
+                    <itemid>in|icargo</itemid>
+                    <properties>
+                        <property>
+                            <type>fcode</type>
+                            <value>icargo</value>
+                        </property>
+                        <property>
+                            <type>name</type>
+                            <value>Freight/Cargo Transport</value>
+                        </property>
+                        <property>
+                            <type>source</type>
+                            <value>FACTIVA</value>
+                        </property>
+                        <property>
+                            <type>why</type>
+                            <value>lineage</value>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>in</type>
+                    <value>irailtr</value>
+                    <itemid>in|irailtr</itemid>
+                    <properties>
+                        <property>
+                            <type>fcode</type>
+                            <value>irailtr</value>
+                        </property>
+                        <property>
+                            <type>name</type>
+                            <value>Road/Rail Transport</value>
+                        </property>
+                        <property>
+                            <type>source</type>
+                            <value>FACTIVA</value>
+                        </property>
+                        <property>
+                            <type>why</type>
+                            <value>lineage</value>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>in</type>
+                    <value>irfrght</value>
+                    <itemid>in|irfrght</itemid>
+                    <properties>
+                        <property>
+                            <type>fcode</type>
+                            <value>irfrght</value>
+                        </property>
+                        <property>
+                            <type>name</type>
+                            <value>Railroad Freight</value>
+                        </property>
+                        <property>
+                            <type>source</type>
+                            <value>FACTIVA</value>
+                        </property>
+                        <property>
+                            <type>why</type>
+                            <value>association</value>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>in</type>
+                    <value>itsp</value>
+                    <itemid>in|itsp</itemid>
+                    <properties>
+                        <property>
+                            <type>fcode</type>
+                            <value>itsp</value>
+                        </property>
+                        <property>
+                            <type>name</type>
+                            <value>Transportation/Shipping</value>
+                        </property>
+                        <property>
+                            <type>source</type>
+                            <value>FACTIVA</value>
+                        </property>
+                        <property>
+                            <type>why</type>
+                            <value>lineage</value>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>keyword</type>
+                    <value>RAIL CONGESTIONS</value>
+                    <itemid>keyword|RAIL CONGESTIONS</itemid>
+                    <properties>
+                        <property>
+                            <type>name</type>
+                            <value>RAIL CONGESTIONS</value>
+                        </property>
+                        <property>
+                            <type>status</type>
+                            <value>added</value>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>keyword</type>
+                    <value>COAL</value>
+                    <itemid>keyword|COAL</itemid>
+                    <properties>
+                        <property>
+                            <type>name</type>
+                            <value>COAL</value>
+                        </property>
+                        <property>
+                            <type>status</type>
+                            <value>added</value>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>keyword</type>
+                    <value>UTILITIES</value>
+                    <itemid>keyword|UTILITIES</itemid>
+                    <properties>
+                        <property>
+                            <type>name</type>
+                            <value>UTILITIES</value>
+                        </property>
+                        <property>
+                            <type>status</type>
+                            <value>added</value>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>media</type>
+                    <value>media-14</value>
+                    <itemid>media|media-14</itemid>
+                    <properties>
+                        <property>
+                            <type>responsive</type>
+                            <properties>
+                                <property>
+                                    <type>layout</type>
+                                    <value>header</value>
+                                </property>
+                            </properties>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>media</type>
+                    <value>media-15</value>
+                    <itemid>media|media-15</itemid>
+                    <properties>
+                        <property>
+                            <type>responsive</type>
+                            <properties>
+                                <property>
+                                    <type>layout</type>
+                                    <value>inline</value>
+                                </property>
+                            </properties>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>ns</type>
+                    <value>c131</value>
+                    <itemid>ns|c131</itemid>
+                    <properties>
+                        <property>
+                            <type>fcode</type>
+                            <value>c131</value>
+                        </property>
+                        <property>
+                            <type>name</type>
+                            <value>Regulatory Bodies</value>
+                        </property>
+                        <property>
+                            <type>onlinesignificance</type>
+                            <value>prominent</value>
+                        </property>
+                        <property>
+                            <type>significance</type>
+                            <value>prominent</value>
+                        </property>
+                        <property>
+                            <type>source</type>
+                            <value>FACTIVA</value>
+                        </property>
+                        <property>
+                            <type>why</type>
+                            <value>about</value>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>ns</type>
+                    <value>ccat</value>
+                    <itemid>ns|ccat</itemid>
+                    <properties>
+                        <property>
+                            <type>fcode</type>
+                            <value>ccat</value>
+                        </property>
+                        <property>
+                            <type>name</type>
+                            <value>Corporate/Industrial News</value>
+                        </property>
+                        <property>
+                            <type>onlinesignificance</type>
+                            <value>prominent</value>
+                        </property>
+                        <property>
+                            <type>significance</type>
+                            <value>prominent</value>
+                        </property>
+                        <property>
+                            <type>source</type>
+                            <value>FACTIVA</value>
+                        </property>
+                        <property>
+                            <type>why</type>
+                            <value>about</value>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>ns</type>
+                    <value>c13</value>
+                    <itemid>ns|c13</itemid>
+                    <properties>
+                        <property>
+                            <type>fcode</type>
+                            <value>c13</value>
+                        </property>
+                        <property>
+                            <type>name</type>
+                            <value>Regulation/Government Policy</value>
+                        </property>
+                        <property>
+                            <type>source</type>
+                            <value>FACTIVA</value>
+                        </property>
+                        <property>
+                            <type>why</type>
+                            <value>lineage</value>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>ns</type>
+                    <value>ncat</value>
+                    <itemid>ns|ncat</itemid>
+                    <properties>
+                        <property>
+                            <type>fcode</type>
+                            <value>ncat</value>
+                        </property>
+                        <property>
+                            <type>internalsymbol</type>
+                            <value>true</value>
+                        </property>
+                        <property>
+                            <type>name</type>
+                            <value>Content Types</value>
+                        </property>
+                        <property>
+                            <type>source</type>
+                            <value>FACTIVA</value>
+                        </property>
+                        <property>
+                            <type>why</type>
+                            <value>lineage</value>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>ns</type>
+                    <value>nfact</value>
+                    <itemid>ns|nfact</itemid>
+                    <properties>
+                        <property>
+                            <type>fcode</type>
+                            <value>nfact</value>
+                        </property>
+                        <property>
+                            <type>internalsymbol</type>
+                            <value>true</value>
+                        </property>
+                        <property>
+                            <type>name</type>
+                            <value>Factiva Filters</value>
+                        </property>
+                        <property>
+                            <type>source</type>
+                            <value>FACTIVA</value>
+                        </property>
+                        <property>
+                            <type>why</type>
+                            <value>lineage</value>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>ns</type>
+                    <value>nfcpin</value>
+                    <itemid>ns|nfcpin</itemid>
+                    <properties>
+                        <property>
+                            <type>fcode</type>
+                            <value>nfcpin</value>
+                        </property>
+                        <property>
+                            <type>internalsymbol</type>
+                            <value>true</value>
+                        </property>
+                        <property>
+                            <type>name</type>
+                            <value>C&amp;E Industry News Filter</value>
+                        </property>
+                        <property>
+                            <type>source</type>
+                            <value>FACTIVA</value>
+                        </property>
+                        <property>
+                            <type>why</type>
+                            <value>lineage</value>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>nwchain</type>
+                    <value>SB110087853949234538284045802914018461232361</value>
+                    <itemid>nwchain|SB110087853949234538284045802914018461232361</itemid>
+                </property>
+                <property>
+                    <type>pe</type>
+                    <value>38060996</value>
+                    <itemid>pe|38060996</itemid>
+                    <properties>
+                        <property>
+                            <type>confidence</type>
+                            <value>100</value>
+                        </property>
+                        <property>
+                            <type>confidencerange</type>
+                            <value>high</value>
+                        </property>
+                        <property>
+                            <type>displayname</type>
+                            <value>Buffett, Warren</value>
+                        </property>
+                        <property>
+                            <type>extractedtext</type>
+                            <value>Warren Buffett</value>
+                        </property>
+                        <property>
+                            <type>fcode</type>
+                            <value>38060996</value>
+                        </property>
+                        <property>
+                            <type>firstname</type>
+                            <value>Warren</value>
+                        </property>
+                        <property>
+                            <type>lastname</type>
+                            <value>Buffett</value>
+                        </property>
+                        <property>
+                            <type>name</type>
+                            <value>Warren Buffett</value>
+                        </property>
+                        <property>
+                            <type>onlinesignificance</type>
+                            <value>passing-mention</value>
+                        </property>
+                        <property>
+                            <type>relevance</type>
+                            <value>50</value>
+                        </property>
+                        <property>
+                            <type>relevancerange</type>
+                            <value>low</value>
+                        </property>
+                        <property>
+                            <type>seoname</type>
+                            <value>warren-buffett</value>
+                        </property>
+                        <property>
+                            <type>significance</type>
+                            <value>passing</value>
+                        </property>
+                        <property>
+                            <type>source</type>
+                            <value>FACTIVA</value>
+                        </property>
+                        <property>
+                            <type>title</type>
+                            <value>Chairman and chief executive officer</value>
+                        </property>
+                        <property>
+                            <type>topicid</type>
+                            <value>641</value>
+                        </property>
+                        <property>
+                            <type>topicname</type>
+                            <value>Warren Buffett</value>
+                        </property>
+                        <property>
+                            <type>visible</type>
+                            <value>1</value>
+                        </property>
+                        <property>
+                            <type>why</type>
+                            <value>occur</value>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>pe</type>
+                    <value>28133</value>
+                    <itemid>pe|28133</itemid>
+                    <properties>
+                        <property>
+                            <type>confidence</type>
+                            <value>93</value>
+                        </property>
+                        <property>
+                            <type>confidencerange</type>
+                            <value>high</value>
+                        </property>
+                        <property>
+                            <type>displayname</type>
+                            <value>McMillan, David</value>
+                        </property>
+                        <property>
+                            <type>extractedtext</type>
+                            <value>David McMillan</value>
+                        </property>
+                        <property>
+                            <type>fcode</type>
+                            <value>28133</value>
+                        </property>
+                        <property>
+                            <type>firstname</type>
+                            <value>David</value>
+                        </property>
+                        <property>
+                            <type>lastname</type>
+                            <value>McMillan</value>
+                        </property>
+                        <property>
+                            <type>name</type>
+                            <value>David McMillan</value>
+                        </property>
+                        <property>
+                            <type>onlinesignificance</type>
+                            <value>passing-mention</value>
+                        </property>
+                        <property>
+                            <type>relevance</type>
+                            <value>50</value>
+                        </property>
+                        <property>
+                            <type>relevancerange</type>
+                            <value>low</value>
+                        </property>
+                        <property>
+                            <type>significance</type>
+                            <value>prominent</value>
+                        </property>
+                        <property>
+                            <type>source</type>
+                            <value>FACTIVA</value>
+                        </property>
+                        <property>
+                            <type>status</type>
+                            <value>modified</value>
+                        </property>
+                        <property>
+                            <type>why</type>
+                            <value>occur</value>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>pe</type>
+                    <value>Bette Whalen</value>
+                    <itemid>pe|Bette Whalen</itemid>
+                    <properties>
+                        <property>
+                            <type>displayname</type>
+                            <value>Whalen, Bette</value>
+                        </property>
+                        <property>
+                            <type>extractedtext</type>
+                            <value>Bette Whalen</value>
+                        </property>
+                        <property>
+                            <type>firstname</type>
+                            <value>Bette</value>
+                        </property>
+                        <property>
+                            <type>lastname</type>
+                            <value>Whalen</value>
+                        </property>
+                        <property>
+                            <type>name</type>
+                            <value>Bette Whalen</value>
+                        </property>
+                        <property>
+                            <type>onlinesignificance</type>
+                            <value>passing-mention</value>
+                        </property>
+                        <property>
+                            <type>significance</type>
+                            <value>prominent</value>
+                        </property>
+                        <property>
+                            <type>source</type>
+                            <value>FACTIVA</value>
+                        </property>
+                        <property>
+                            <type>status</type>
+                            <value>modified</value>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>pe</type>
+                    <value>Beverly Jones Heydinger</value>
+                    <itemid>pe|Beverly Jones Heydinger</itemid>
+                    <properties>
+                        <property>
+                            <type>displayname</type>
+                            <value>Heydinger, Beverly Jones</value>
+                        </property>
+                        <property>
+                            <type>extractedtext</type>
+                            <value>Beverly Jones Heydinger</value>
+                        </property>
+                        <property>
+                            <type>firstname</type>
+                            <value>Beverly Jones</value>
+                        </property>
+                        <property>
+                            <type>lastname</type>
+                            <value>Heydinger</value>
+                        </property>
+                        <property>
+                            <type>name</type>
+                            <value>Beverly Jones Heydinger</value>
+                        </property>
+                        <property>
+                            <type>onlinesignificance</type>
+                            <value>passing-mention</value>
+                        </property>
+                        <property>
+                            <type>significance</type>
+                            <value>prominent</value>
+                        </property>
+                        <property>
+                            <type>source</type>
+                            <value>FACTIVA</value>
+                        </property>
+                        <property>
+                            <type>status</type>
+                            <value>modified</value>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>pe</type>
+                    <value>Michael Trevino</value>
+                    <itemid>pe|Michael Trevino</itemid>
+                    <properties>
+                        <property>
+                            <type>displayname</type>
+                            <value>Trevino, Michael</value>
+                        </property>
+                        <property>
+                            <type>extractedtext</type>
+                            <value>Michael Trevino</value>
+                        </property>
+                        <property>
+                            <type>firstname</type>
+                            <value>Michael</value>
+                        </property>
+                        <property>
+                            <type>lastname</type>
+                            <value>Trevino</value>
+                        </property>
+                        <property>
+                            <type>name</type>
+                            <value>Michael Trevino</value>
+                        </property>
+                        <property>
+                            <type>onlinesignificance</type>
+                            <value>passing-mention</value>
+                        </property>
+                        <property>
+                            <type>significance</type>
+                            <value>prominent</value>
+                        </property>
+                        <property>
+                            <type>source</type>
+                            <value>FACTIVA</value>
+                        </property>
+                        <property>
+                            <type>status</type>
+                            <value>modified</value>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>pe</type>
+                    <value>Tom Imbler</value>
+                    <itemid>pe|Tom Imbler</itemid>
+                    <properties>
+                        <property>
+                            <type>displayname</type>
+                            <value>Imbler, Tom</value>
+                        </property>
+                        <property>
+                            <type>extractedtext</type>
+                            <value>Tom Imbler</value>
+                        </property>
+                        <property>
+                            <type>firstname</type>
+                            <value>Tom</value>
+                        </property>
+                        <property>
+                            <type>lastname</type>
+                            <value>Imbler</value>
+                        </property>
+                        <property>
+                            <type>name</type>
+                            <value>Tom Imbler</value>
+                        </property>
+                        <property>
+                            <type>onlinesignificance</type>
+                            <value>passing-mention</value>
+                        </property>
+                        <property>
+                            <type>significance</type>
+                            <value>prominent</value>
+                        </property>
+                        <property>
+                            <type>source</type>
+                            <value>FACTIVA</value>
+                        </property>
+                        <property>
+                            <type>status</type>
+                            <value>modified</value>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>pe</type>
+                    <value>Warren Buffet</value>
+                    <itemid>pe|Warren Buffet</itemid>
+                    <properties>
+                        <property>
+                            <type>displayname</type>
+                            <value>Buffett, Warren</value>
+                        </property>
+                        <property>
+                            <type>extractedtext</type>
+                            <value>Warren Buffet</value>
+                        </property>
+                        <property>
+                            <type>firstname</type>
+                            <value>Warren</value>
+                        </property>
+                        <property>
+                            <type>lastname</type>
+                            <value>Buffet</value>
+                        </property>
+                        <property>
+                            <type>name</type>
+                            <value>Warren Buffet</value>
+                        </property>
+                        <property>
+                            <type>onlinesignificance</type>
+                            <value>prominent</value>
+                        </property>
+                        <property>
+                            <type>significance</type>
+                            <value>prominent</value>
+                        </property>
+                        <property>
+                            <type>source</type>
+                            <value>FACTIVA</value>
+                        </property>
+                        <property>
+                            <type>status</type>
+                            <value>modified</value>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>person</type>
+                    <value>Buffett, Warren</value>
+                    <itemid>person|Buffett, Warren</itemid>
+                    <properties>
+                        <property>
+                            <type>name</type>
+                            <value>Warren Buffett</value>
+                        </property>
+                        <property>
+                            <type>significance</type>
+                            <value>PASSING-MENTION</value>
+                        </property>
+                        <property>
+                            <type>topicid</type>
+                            <value>641</value>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>person</type>
+                    <value>Trevino, Michael</value>
+                    <itemid>person|Trevino, Michael</itemid>
+                    <properties>
+                        <property>
+                            <type>name</type>
+                            <value>Michael Trevino</value>
+                        </property>
+                        <property>
+                            <type>significance</type>
+                            <value>PROMINENT</value>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>person</type>
+                    <value>Whalen, Bette</value>
+                    <itemid>person|Whalen, Bette</itemid>
+                    <properties>
+                        <property>
+                            <type>name</type>
+                            <value>Bette Whalen</value>
+                        </property>
+                        <property>
+                            <type>significance</type>
+                            <value>PROMINENT</value>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>person</type>
+                    <value>McMillan, David</value>
+                    <itemid>person|McMillan, David</itemid>
+                    <properties>
+                        <property>
+                            <type>name</type>
+                            <value>David McMillan</value>
+                        </property>
+                        <property>
+                            <type>significance</type>
+                            <value>PROMINENT</value>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>person</type>
+                    <value>Heydinger, Beverly Jones</value>
+                    <itemid>person|Heydinger, Beverly Jones</itemid>
+                    <properties>
+                        <property>
+                            <type>name</type>
+                            <value>Beverly Jones Heydinger</value>
+                        </property>
+                        <property>
+                            <type>significance</type>
+                            <value>PROMINENT</value>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>person</type>
+                    <value>Imbler, Tom</value>
+                    <itemid>person|Imbler, Tom</itemid>
+                    <properties>
+                        <property>
+                            <type>name</type>
+                            <value>Tom Imbler</value>
+                        </property>
+                        <property>
+                            <type>significance</type>
+                            <value>PROMINENT</value>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>re</type>
+                    <value>usa</value>
+                    <itemid>re|usa</itemid>
+                    <properties>
+                        <property>
+                            <type>fcode</type>
+                            <value>usa</value>
+                        </property>
+                        <property>
+                            <type>name</type>
+                            <value>United States</value>
+                        </property>
+                        <property>
+                            <type>onlinesignificance</type>
+                            <value>prominent</value>
+                        </property>
+                        <property>
+                            <type>significance</type>
+                            <value>prominent</value>
+                        </property>
+                        <property>
+                            <type>source</type>
+                            <value>FACTIVA</value>
+                        </property>
+                        <property>
+                            <type>subcat</type>
+                            <value>cntry</value>
+                        </property>
+                        <property>
+                            <type>why</type>
+                            <value>about</value>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>re</type>
+                    <value>usmn</value>
+                    <itemid>re|usmn</itemid>
+                    <properties>
+                        <property>
+                            <type>fcode</type>
+                            <value>usmn</value>
+                        </property>
+                        <property>
+                            <type>name</type>
+                            <value>Minnesota</value>
+                        </property>
+                        <property>
+                            <type>onlinesignificance</type>
+                            <value>prominent</value>
+                        </property>
+                        <property>
+                            <type>significance</type>
+                            <value>prominent</value>
+                        </property>
+                        <property>
+                            <type>source</type>
+                            <value>FACTIVA</value>
+                        </property>
+                        <property>
+                            <type>subcat</type>
+                            <value>sp</value>
+                        </property>
+                        <property>
+                            <type>why</type>
+                            <value>about</value>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>re</type>
+                    <value>namz</value>
+                    <itemid>re|namz</itemid>
+                    <properties>
+                        <property>
+                            <type>fcode</type>
+                            <value>namz</value>
+                        </property>
+                        <property>
+                            <type>name</type>
+                            <value>North America</value>
+                        </property>
+                        <property>
+                            <type>source</type>
+                            <value>FACTIVA</value>
+                        </property>
+                        <property>
+                            <type>subcat</type>
+                            <value>snr</value>
+                        </property>
+                        <property>
+                            <type>why</type>
+                            <value>lineage</value>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>re</type>
+                    <value>usc</value>
+                    <itemid>re|usc</itemid>
+                    <properties>
+                        <property>
+                            <type>fcode</type>
+                            <value>usc</value>
+                        </property>
+                        <property>
+                            <type>name</type>
+                            <value>Midwest U.S.</value>
+                        </property>
+                        <property>
+                            <type>source</type>
+                            <value>FACTIVA</value>
+                        </property>
+                        <property>
+                            <type>subcat</type>
+                            <value>sr</value>
+                        </property>
+                        <property>
+                            <type>why</type>
+                            <value>lineage</value>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>relay</type>
+                    <value>SYND</value>
+                    <itemid>relay|SYND</itemid>
+                    <properties>
+                        <property>
+                            <type>name</type>
+                            <value>SYND</value>
+                        </property>
+                        <property>
+                            <type>source</type>
+                            <value>EXPANDER</value>
+                        </property>
+                        <property>
+                            <type>value</type>
+                            <value>SYND</value>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>statistic</type>
+                    <value>CODES_REVIEWED</value>
+                    <itemid>statistic|CODES_REVIEWED</itemid>
+                    <properties>
+                        <property>
+                            <type>name</type>
+                            <value>CODES_REVIEWED</value>
+                        </property>
+                        <property>
+                            <type>value</type>
+                            <value>CODES_REVIEWED</value>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>statistic</type>
+                    <value>BETA</value>
+                    <itemid>statistic|BETA</itemid>
+                    <properties>
+                        <property>
+                            <type>name</type>
+                            <value>Yes</value>
+                        </property>
+                        <property>
+                            <type>status</type>
+                            <value>modified</value>
+                        </property>
+                        <property>
+                            <type>value</type>
+                            <value>BETA</value>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>subject</type>
+                    <value>ONEW</value>
+                    <itemid>subject|ONEW</itemid>
+                    <properties>
+                        <property>
+                            <type>comments</type>
+                            <value>Keyword:DJII-REGION usmn,usc,usa,namz</value>
+                        </property>
+                        <property>
+                            <type>description</type>
+                            <value>01|US|US News</value>
+                        </property>
+                        <property>
+                            <type>name</type>
+                            <value>ONEW</value>
+                        </property>
+                        <property>
+                            <type>source</type>
+                            <value>EXPANDER</value>
+                        </property>
+                        <property>
+                            <type>value</type>
+                            <value>ONEW</value>
+                        </property>
+                    </properties>
+                </property>
+                <property>
+                    <type>subject</type>
+                    <value>OUSB</value>
+                    <itemid>subject|OUSB</itemid>
+                    <properties>
+                        <property>
+                            <type>name</type>
+                            <value>Business in US</value>
+                        </property>
+                        <property>
+                            <type>status</type>
+                            <value>modified</value>
+                        </property>
+                        <property>
+                            <type>value</type>
+                            <value>OUSB</value>
+                        </property>
+                    </properties>
+                </property>
+            </properties>
+        </self-codes>
+    </meta-data>
+    <summary id="S-SB11008785394923453828404580291401846123236.djml">
+        <summary-header/>
+        <alt-summary-body destination-type="THIS-ART" page="Images">
+            <media alignment="LEFT" id="media-1"
+                reuse-expiration="2015-11-23" reuse-type="restricted" type="ILLUSTRATION">
+                <image alternate-text="image" height="236"
+                    slug="COALRAIL"
+                    src-id="MK-CQ962_COALRA_OR_20141123165334.jpg" width="400"/>
+                <media-credit>Minneapolis Star Tribune/Zuma Press</media-credit>
+            </media>
+            <media alignment="LEFT" id="media-2"
+                reuse-expiration="2015-11-23" reuse-type="restricted" type="ILLUSTRATION">
+                <image alternate-text="image" height="76"
+                    slug="COALRAIL"
+                    src-id="MK-CQ962_COALRA_A_20141123165334.jpg" width="76"/>
+                <media-credit>Minneapolis Star Tribune/Zuma Press</media-credit>
+            </media>
+            <media alignment="LEFT" id="media-3"
+                reuse-expiration="2015-11-23" reuse-type="restricted" type="ILLUSTRATION">
+                <image alternate-text="image" height="220"
+                    slug="COALRAIL"
+                    src-id="MK-CQ962_COALRA_AM_20141123165334.jpg" width="220"/>
+                <media-credit>Minneapolis Star Tribune/Zuma Press</media-credit>
+            </media>
+            <media alignment="LEFT" id="media-4"
+                reuse-expiration="2015-11-23" reuse-type="restricted" type="ILLUSTRATION">
+                <image alternate-text="image" height="188"
+                    slug="COALRAIL"
+                    src-id="MK-CQ962_COALRA_BR_20141123165334.jpg" width="282"/>
+                <media-credit>Minneapolis Star Tribune/Zuma Press</media-credit>
+            </media>
+            <media alignment="LEFT" id="media-5"
+                reuse-expiration="2015-11-23" reuse-type="restricted" type="ILLUSTRATION">
+                <image alternate-text="image" height="94"
+                    slug="COALRAIL"
+                    src-id="MK-CQ962_COALRA_C_20141123165334.jpg" width="167"/>
+                <media-credit>Minneapolis Star Tribune/Zuma Press</media-credit>
+            </media>
+            <media alignment="LEFT" id="media-6"
+                reuse-expiration="2015-11-23" reuse-type="restricted" type="ILLUSTRATION">
+                <image alternate-text="image" height="174"
+                    slug="COALRAIL"
+                    src-id="MK-CQ962_COALRA_D_20141123165334.jpg" width="262"/>
+                <media-credit>Minneapolis Star Tribune/Zuma Press</media-credit>
+            </media>
+            <media alignment="LEFT" id="media-7"
+                reuse-expiration="2015-11-23" reuse-type="restricted" type="ILLUSTRATION">
+                <image alternate-text="image" height="239"
+                    slug="COALRAIL"
+                    src-id="MK-CQ962_COALRA_E_20141123165334.jpg" width="359"/>
+                <media-credit>Minneapolis Star Tribune/Zuma Press</media-credit>
+            </media>
+            <media alignment="LEFT" id="media-8"
+                reuse-expiration="2015-11-23" reuse-type="restricted" type="ILLUSTRATION">
+                <image alternate-text="image" height="402"
+                    slug="COALRAIL"
+                    src-id="MK-CQ962_COALRA_ER_20141123165334.jpg" width="602"/>
+                <media-credit>Minneapolis Star Tribune/Zuma Press</media-credit>
+            </media>
+            <media alignment="LEFT" id="media-9"
+                reuse-expiration="2015-11-23" reuse-type="restricted" type="ILLUSTRATION">
+                <image alternate-text="image" height="226"
+                    slug="COALRAIL"
+                    src-id="MK-CQ962_COALRA_F_20141123165334.jpg" width="571"/>
+                <media-credit>Minneapolis Star Tribune/Zuma Press</media-credit>
+            </media>
+            <media alignment="LEFT" id="media-10"
+                reuse-expiration="2015-11-23" reuse-type="restricted" type="ILLUSTRATION">
+                <image alternate-text="image" height="810"
+                    slug="COALRAIL"
+                    src-id="MK-CQ962_COALRA_FR_20141123165334.jpg" width="632"/>
+                <media-credit>Minneapolis Star Tribune/Zuma Press</media-credit>
+            </media>
+            <media alignment="LEFT" id="media-11"
+                reuse-expiration="2015-11-23" reuse-type="restricted" type="ILLUSTRATION">
+                <image alternate-text="image" height="369"
+                    slug="COALRAIL"
+                    src-id="MK-CQ962_COALRA_G_20141123165334.jpg" width="553"/>
+                <media-credit>Minneapolis Star Tribune/Zuma Press</media-credit>
+            </media>
+            <media alignment="LEFT" id="media-12"
+                reuse-expiration="2015-11-23" reuse-type="restricted" type="ILLUSTRATION">
+                <image alternate-text="image" height="810"
+                    slug="COALRAIL"
+                    src-id="MK-CQ962_COALRA_GR_20141123165334.jpg" width="1242"/>
+                <media-credit>Minneapolis Star Tribune/Zuma Press</media-credit>
+            </media>
+            <media alignment="LEFT" id="media-13"
+                reuse-expiration="2015-11-23" reuse-type="restricted" type="ILLUSTRATION">
+                <image alternate-text="image" height="853"
+                    slug="COALRAIL"
+                    src-id="MK-CQ962_COALRA_M_20141123165334.jpg" width="1280"/>
+                <media-credit>Minneapolis Star Tribune/Zuma Press</media-credit>
+            </media>
+        </alt-summary-body>
+        <alt-summary-body destination-type="THIS-ART" page="|SEO|">
+            <headline>
+                <main-hed>Utilities Press Railroad to Speed Coal Deliveries</main-hed>
+            </headline>
+            <p>Saying they are running short on coal, electric utilities from Minnesota to Texas are trying to pressure Warren Buffett&#x2019;s BNSF Railway Co. to speed up deliveries on its congested tracks before the worst of the winter weather hits.</p>
+        </alt-summary-body>
+        <alt-summary-body destination-type="THIS-ART" page="|U.S. Home|Professional Edition Home Page|">
+            <headline>
+                <main-hed>Utilities Press BNSF on Coal Deliveries</main-hed>
+            </headline>
+            <p>Saying they are running short on coal, electric utilities are trying to pressure Warren Buffett&#x2019;s BNSF Railway to speed up deliveries on its congested tracks before the worst of the winter weather hits.</p>
+        </alt-summary-body>
+        <alt-summary-body destination-type="THIS-ART" page="|Social|">
+            <headline>
+                <main-hed>Utilities press railroad for faster coal deliveries</main-hed>
+            </headline>
+        </alt-summary-body>
+        <alt-summary-body destination-type="THIS-ART" page="|NW Alt Headline|">
+            <headline>
+                <main-hed>Utilities Press Railroad Operator for Faster Coal Deliveries</main-hed>
+            </headline>
+            <p/>
+        </alt-summary-body>
+        <summary-body>
+            <headline>
+                <main-hed>Utilities Press Railroad to Speed Coal Deliveries</main-hed>
+            </headline>
+            <p>Saying they are running short on coal, electric utilities are trying to pressure Warren Buffett&#x2019;s BNSF Railway Co. to speed up deliveries on its congested tracks before the worst of the winter weather hits.</p>
+        </summary-body>
+    </summary>
+    <article>
+        <article-header>
+            <nameloc id="i1-SB11008785394923453828404580291401846123236">
+                <nmlist nametype="ENTITY">http://online.wsj.com/articles/pain-in-trains-falls-mainly-on-grain-1414972402</nmlist>
+            </nameloc>
+            <nameloc id="i2-SB11008785394923453828404580291401846123236">
+                <nmlist nametype="ENTITY">mailto:cassandra.sweet@wsj.com</nmlist>
+            </nameloc>
+            <nameloc id="i3-SB11008785394923453828404580291401846123236">
+                <nmlist nametype="ENTITY">mailto:john.miller@wsj.com</nmlist>
+            </nameloc>
+        </article-header>
+        <article-body>
+            <headline>
+                <main-hed>Utilities Press Railroad to Speed Coal Deliveries</main-hed>
+                <deck>Group Asks Regulator to Impose Timetable on BNSF for Steps to Relieve Track Congestion</deck>
+            </headline>
+            <byline type="SIGNED">By <phrase topicid="7459"
+                    type="AUTHOR">Cassandra Sweet</phrase> and <phrase
+                    topicid="1446" type="AUTHOR">John W. Miller</phrase>
+            </byline>
+            <media id="media-14" reuse-expiration="2015-11-23"
+                reuse-type="restricted" type="ILLUSTRATION">
+                <image alternate-text="image" height="369"
+                    slug="COALRAIL"
+                    src-id="MK-CQ962_COALRA_G_20141123165334.jpg" width="553"/>
+                <alt-image alternate-text="image" height="76"
+                    slug="COALRAIL"
+                    src-id="MK-CQ962_COALRA_A_20141123165334.jpg" width="76"/>
+                <alt-image alternate-text="image" height="220"
+                    slug="COALRAIL"
+                    src-id="MK-CQ962_COALRA_AM_20141123165334.jpg" width="220"/>
+                <alt-image alternate-text="image" height="188"
+                    slug="COALRAIL"
+                    src-id="MK-CQ962_COALRA_BR_20141123165334.jpg" width="282"/>
+                <alt-image alternate-text="image" height="94"
+                    slug="COALRAIL"
+                    src-id="MK-CQ962_COALRA_C_20141123165334.jpg" width="167"/>
+                <alt-image alternate-text="image" height="174"
+                    slug="COALRAIL"
+                    src-id="MK-CQ962_COALRA_D_20141123165334.jpg" width="262"/>
+                <alt-image alternate-text="image" height="239"
+                    slug="COALRAIL"
+                    src-id="MK-CQ962_COALRA_E_20141123165334.jpg" width="359"/>
+                <alt-image alternate-text="image" height="402"
+                    slug="COALRAIL"
+                    src-id="MK-CQ962_COALRA_ER_20141123165334.jpg" width="602"/>
+                <alt-image alternate-text="image" height="226"
+                    slug="COALRAIL"
+                    src-id="MK-CQ962_COALRA_F_20141123165334.jpg" width="571"/>
+                <alt-image alternate-text="image" height="810"
+                    slug="COALRAIL"
+                    src-id="MK-CQ962_COALRA_FR_20141123165334.jpg" width="632"/>
+                <alt-image alternate-text="image" height="810"
+                    slug="COALRAIL"
+                    src-id="MK-CQ962_COALRA_GR_20141123165334.jpg" width="1242"/>
+                <alt-image alternate-text="image" height="639"
+                    slug="COALRAIL"
+                    src-id="MK-CQ962_COALRA_J_20141123165334.jpg" width="959"/>
+                <alt-image alternate-text="image" height="853"
+                    slug="COALRAIL"
+                    src-id="MK-CQ962_COALRA_M_20141123165334.jpg" width="1280"/>
+                <alt-image alternate-text="image" height="499"
+                    slug="COALRAIL"
+                    src-id="MK-CQ962_COALRA_P_20141123165334.jpg" width="749"/>
+                <media-credit>Minneapolis Star Tribune/Zuma Press</media-credit>
+                <media-caption>A BNSF train waits on the tracks near a Becker, Minn., power plant. Rail congestion has slowed deliveries.</media-caption>
+            </media>
+
+            <p>Saying they are running short on coal, electric utilities from Minnesota to Texas are trying to pressure <phrase
+                    name="Buffett, Warren" seoname=""
+                    significance="PASSING-MENTION" topicid="641"
+                    type="PERSON" vrtysux="PERSON|Buffett, Warren">Warren Buffett</phrase>&#x2019;s BNSF Railway Co. to speed up deliveries on its congested tracks before the worst of the winter weather hits.</p>
+            <p>One group of utilities has petitioned federal regulators to impose a timetable on BNSF to add workers and improve tracks leading east from coal fields in Wyoming. Utilities also are negotiating directly with BNSF.</p>
+            <p>In Minnesota, politicians and regulators warn that consumers could pay millions of dollars in extra charges if utilities have to buy high-cost backup power because they can&#x2019;t operate their coal-fired power plants.</p>
+            <p>BNSF, which is owned by <phrase
+                    background-info="BRIEFING-BOOK" name="BRKB"
+                    significance="PASSING-MENTION" type="COMPANY"
+                    vrtysux="COMPANY|BRKB">Berkshire Hathaway</phrase> Inc., says it is working to fix delivery problems while also meeting growing demand from shippers of coal, <link
+                    icon="none"
+                    linkend="i1-SB11008785394923453828404580291401846123236" type="EXTERNAL">grain</link> and oil. The railroad says it has invested $5.5 billion in its system this year, added 500 locomotives to a fleet of 7,000, hired 6,000 new employees and added 5,000 railcars.</p>
+
+            <p>The company plans to spend $6 billion more in 2015.  &#x201c;It will take some time to build up enough infrastructure to absorb all the demand,&#x201d; said BNSF spokesman <phrase
+                    name="Trevino, Michael" significance="PROMINENT"
+                    type="PERSON" vrtysux="PERSON|Trevino, Michael">Michael Trevino</phrase>.</p>
+            <media id="media-15" reuse-type="full" type="ILLUSTRATION">
+                <image alternate-text="image" height="479"
+                    slug="COALRAIL"
+                    src-id="MK-CQ950A_COALR_G_20141123171807.jpg" width="553"/>
+                <alt-image alternate-text="image" height="1109"
+                    slug="COALRAIL"
+                    src-id="MK-CQ950A_COALR_16U_20141123171807.jpg" width="1280"/>
+                <alt-image alternate-text="image" height="329"
+                    slug="COALRAIL"
+                    src-id="MK-CQ950A_COALR_5U_20141123171807.jpg" width="380"/>
+                <alt-image alternate-text="image" height="607"
+                    slug="COALRAIL"
+                    src-id="MK-CQ950A_COALR_9U_20141123171807.jpg" width="700"/>
+                <alt-image alternate-text="image" height="227"
+                    slug="COALRAIL"
+                    src-id="MK-CQ950A_COALR_D_20141123171807.jpg" width="262"/>
+            </media>
+            <p>The company is fighting the proposal by a utilities group called the Western Coal Traffic League for a federally imposed timetable for upgrades, calling it unnecessary. Last month the group asked the Surface Transportation Board to ensure that BNSF improves its service. </p>
+
+            <p>The group says it isn&#x2019;t asking for special treatment for coal shipments. Rather, it wants rail executives &#x201c;to tell us a plan, put some milestones in there and have some accountability,&#x201d; said <phrase
+                    name="Whalen, Bette" significance="PROMINENT"
+                    type="PERSON" vrtysux="PERSON|Whalen, Bette">Bette Whalen</phrase>, the group&#x2019;s president. Ms. Whalen is coal and rail specialist principal at the Lower Colorado River Authority, which operates power plants in Texas.</p>
+
+            <p>Some of the group&#x2019;s utilities depend on BNSF, one of the largest shippers of coal from the West, for their coal supply, and don&#x2019;t have an alternative, Ms. Whalen said. Other members also get coal shipments from <phrase
+                    background-info="BRIEFING-BOOK" name="UNP"
+                    significance="PASSING-MENTION" type="COMPANY" vrtysux="COMPANY|UNP">Union Pacific</phrase> Corp., which she said has done a better job serving coal customers.</p>
+            <p>The board is still considering the group&#x2019;s request, a spokesman for the regulator said.</p>
+            <p>Utilities prefer to have at least a 30-day supply of coal on hand so that they can keep generators operating if bad weather or equipment problems prevent deliveries. But this year nearly a quarter of U.S. coal plants had less than 30 days&#x2019; worth of coal, up from 13% at this time last year, according to the U.S. Department of Energy.</p>
+            <p>Demand for coal to generate electric power has been rising since 2012.</p>
+            <p>
+                <phrase background-info="BRIEFING-BOOK" name="ALE"
+                    significance="PASSING-MENTION" type="COMPANY"
+                    vrtysux="COMPANY|ALE">Allete</phrase> Inc.&#x2019;s Minnesota Power temporarily shut two smaller coal plants in September to conserve coal for the company&#x2019;s large coal plant in Cohasset, Minn., said <phrase
+                    name="McMillan, David" significance="PROMINENT"
+                    type="PERSON" vrtysux="PERSON|McMillan, David">David McMillan</phrase>, the utility&#x2019;s executive vice president. The plants are designed to run exclusively on coal from the Powder River Basin in Wyoming and Montana. Because of shortages, the utility has spent about $24 million since last December buying power from other companies, he said, adding that such charges are passed on to customers. The company restarted one of the plants this week.</p>
+            <p>&#x201c;We got dangerously low last winter, and we don&#x2019;t want to see that repeat,&#x201d; Mr. McMillan said. &#x201c;We&#x2019;re going to be in a period of concern until they get this congestion problem solved.&#x201d;</p>
+            <p>U.S. rail shipments of oil and other petroleum products jumped 13% this year through October compared with year-ago levels, while coal shipments inched up less than 1%, according to the U.S. Energy Information Administration. Rail shipments of grain rose 15% because of an above-average harvest.</p>
+
+            <p>&#x201c;We&#x2019;re trying to move oil, we&#x2019;re trying to move grain, and we&#x2019;re trying to move coal; competition for train tracks is up,&#x201d; says <phrase
+                    name="Heydinger, Beverly Jones"
+                    significance="PROMINENT" type="PERSON" vrtysux="PERSON|Heydinger, Beverly Jones">Beverly Jones Heydinger</phrase>, chairwoman of the Minnesota Public Utilities Commission.</p>
+            <p>Minneapolis-based <phrase background-info="BRIEFING-BOOK"
+                    name="XEL" significance="PASSING-MENTION"
+                    type="COMPANY"
+                    vrtysux="COMPANY|XEL">Xcel Energy</phrase> Inc., which owns utilities in eight states, said all its coal plants that are served by BNSF have less than 30 days&#x2019; worth of coal. &#x201c;That is not a good place to be,&#x201d; said <phrase
+                    name="Imbler, Tom" significance="PROMINENT"
+                    type="PERSON" vrtysux="PERSON|Imbler, Tom">Tom Imbler</phrase>, the company&#x2019;s vice president of commercial operations, adding that plants that are served by rival Union Pacific Railway have adequate supplies. Xcel isn&#x2019;t a member of the group that petitioned the regulator.</p>
+
+            <p>Coal producers also are chafing from the rail-service problems. St. Louis-based <phrase
+                    background-info="BRIEFING-BOOK" name="BTU"
+                    significance="PASSING-MENTION" type="COMPANY" vrtysux="COMPANY|BTU">Peabody Energy</phrase> Corp., the biggest producer in the Powder River Basin, says coal shipments from its Western operations, including Wyoming mines that supply power plants in Minnesota,  fell 2% in the third quarter because customers couldn&#x2019;t find enough rail capacity. </p>
+            <p>
+                <highlight
+                    type="BOLD">Write to </highlight>Cassandra Sweet at <link
+                    linkend="i2-SB11008785394923453828404580291401846123236"
+                    type="EXTERNAL">cassandra.sweet@wsj.com</link> and John W. Miller at <link
+                    linkend="i3-SB11008785394923453828404580291401846123236" type="EXTERNAL">john.miller@wsj.com</link>
+            </p>
+        </article-body>
+    </article>
+</article-doc>
+<!-- fastdynapage - sbkj2kwebappp12 - Mon 11/24/14 - 11:32:11 EST -->

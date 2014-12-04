@@ -17,15 +17,15 @@
 		{.article_body: {
 			layout-grid-line: {$multiply: [20, =view.zoomlevel]},
 			layout-grid-line-offset: {$multiply: [20, =view.zoomlevel]}
-			
+
 		}},
 		{.border-p:{
 			layout-grid-line: 0,
 			layout-grid-line-offset: 0,
 			border-width:[2, 123, 0, 0]
-			
+
 		}},
-		{#body_container: { 
+		{#body_container: {
             column-count: { if: =portrait, then: 3, else: 4},
             column-gutter: 12,
 			flow: article_body,
@@ -44,12 +44,12 @@
 					{if: =media.width, less-than: 360, then: {$divide: [236, =media.aspect]}},
 					{if: =media.width, more-than: 484, then: {$divide: [484, =media.aspect]}},
 					{$divide: [236, =media.aspect]}
-				]}, {$multiply: [.25, =view.height]}]}, {$multiply: [.75, =view.height]}]},
+				]}, {$multiply: [.10, =view.height]}]}, {$multiply: [.75, =view.height]}]},
 				options: {
 					id: =page.number
 				},
 				padding:[0, 0, {if: =page.hasmedia, then:30, else:0}, 0]
-				
+
 			}
         }, else: {
 			#media: {
@@ -64,12 +64,12 @@
 					{if: =media.width, less-than: 360, then: {$divide: [236, =media.aspect]}},
 					{if: =media.width, more-than: 484, then: {$divide: [484, =media.aspect]}},
 					{$divide: [236, =media.aspect]}
-				]}, {$multiply: [.25, =view.height]}]}, {$multiply: [.75, =view.height]}]},
+				]}, {$multiply: [.10, =view.height]}]}, {$multiply: [.75, =view.height]}]},
 				options: {
 					id: =page.number
 				},
 				padding:[0, 0, {if: =page.hasmedia, then:30, else:0}, 0]
-				
+
 			}
         }}
 		]

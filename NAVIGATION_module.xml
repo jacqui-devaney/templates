@@ -21,6 +21,11 @@
 		image: {
 			height: 115,
 			width: 160,
+			options: {
+				match: {
+					max-width: 553
+				}
+			},
 			background-color:inherit
 		},
 

@@ -1,122 +1,30 @@
 
-<catalog  preprocessor="preprocessor.ejs">
+<catalog preprocessor="preprocessor.ejs">
 	<templates>
-		<!-- FRONT SECTION -->
-		<template
-			section="FRONT_SECTION"
-			name="FRONT-5story-deco_template.xml"
-			title="Default: 5 story G Liondoor"
-			min="5"
-			deco="true"
-			usage="front"
-		/>
-
-		<template
-			section="FRONT_SECTION"
-			name="FRONT-5story_template.xml"
-			title="5 story G"
-			min="5"
-			deco="true"
-			usage="front"
-		/>
-
-		<template
-			section="FRONT_SECTION"
-			name="FRONT-4story-deco_template.xml"
-			title="4 story G Liondoor"
-			min="4"
-			deco="true"
-			usage="front"
-		/>
-
-        <template
-            section="FRONT_SECTION"
-            name="FRONT-6story-Vimage-deco_template.xml"
-            title="5 Story plus 1 image deco"
-            min="5"
-            deco="true"
-            usage="front"
-		/>
-		<!-- END FRONT SECTION -->
-
-		<!-- OPINION -->
-		<template
-			section="OPINION"
-			name="OPINION-7story-deco_template.xml"
-			title="Default: 7 story plus deco (3RandO-4CMTY)"
-			min="8"
-			usage="front"
-		/>
-		<template
-			section="OPINION"
-			name="OPINION-6story-deco_template.xml"
-			title="6 story plus deco"
-			min="7"
-			usage="front"
-		/>
-		<template
-			section="OPINION"
-			name="OPINION-2story-deco_template.xml"
-			title="2 story plus deco"
-			min="3"
-			usage="front"
-		/>
-		<!-- END OPINION -->
-
-		<!-- WSJ MAGAZINE -->
-		<template
-			section="WSJ_MAGAZINE"
-			name="CONTINUATION-6story-magazine-promo_template.xml"
-			title="6 story - WSJ Magazine"
-			min="6"
-			deco="true"
-			usage="continuation"
-		/>
-		<!-- END WSJ MAGAZINE -->
 
 		<!-- SECTIONS -->
 		<template
-			name="SECTION-6story_template.xml"
-			title="6 story - G photo"
-			min="6"
-			usage="front"
-		/>
-		<template
-			name="SECTION-6story-deco_template.xml"
-			title="6 story plus deco"
-			min="7"
-			usage="front"
-		/>
-		<template
-			name="SECTION-3story_template.xml"
-			title="3 story - Large Photo"
-			min="3"
-			deco="true"
-			usage="front"
-			storyorder="feed"
-		/>
-		<template
-			name="SECTION-1story_template.xml"
-			title="Full size Deco"
-			min="1"
-			deco="true"
-			usage="front"
-			storyorder="feed"
-		/>
+            name="SECTION-9story_template.xml"
+            title="9 story - G photo"
+            min="9"
+            usage="front"
+        />
 		<!-- END SECTIONS -->
 
 		<!-- GENERIC CONTINUATION -->
-		<template name="CONTINUATION-generic-8_template.xml" title="" min="8" usage="continuation" storyorder="feed"/>
-		<template name="CONTINUATION-generic-4_template.xml" title="" min="4" usage="continuation" storyorder="feed"/>
-		<template name="CONTINUATION-generic-2_template.xml" title="" min="2" usage="continuation" storyorder="feed"/>
-		<template name="CONTINUATION-generic-1_template.xml" title="" min="1" usage="continuation" storyorder="feed"/>
-		<!-- END GENERIC CONTINUATION -->
+		<template name="CONTINUATION-generic-8_template.xml" title="" min="8" usage="continuation"/>
+		<template name="CONTINUATION-generic-4_template.xml" title="" min="4" usage="continuation"/>
+		<template name="CONTINUATION-generic-2_template.xml" title="" min="2" usage="continuation"/>
+		<template name="CONTINUATION-generic-1_template.xml" title="" min="1" usage="continuation"/>
+		<!--  END GENERIC CONTINUATION -->
+
+
 
 		<!-- WHATS NEWS -->
 		<template
-			name="WHATSNEWS-dummy_template.xml"
+			name="WHATSNEWS-phone_template.xml"
 			usage="front"
-			title="Whats News"
+			title=""
 			min="1"
 			section="WHATS_NEWS"
 		/>
@@ -129,25 +37,15 @@
 		/>
 		<!-- END FULL PAGE AD -->
 
-		<!-- TEST TEMPLATE -->
-		<template
-			name="TEST-4-grid_template.xml"
-			usage="front"
-			title="Grid Overlay"
-			min="1"
-		/>
-		<!-- END TEST TEMPLATE -->
-
 	</templates>
 
 	<article-page-plans>
 		<article pages="ARTICLE-pages.xml"/>
-		<article pages="ARTICLE-pages-narrow.xml"/>
 		<article pages="ARTICLE-pages-h-slideshow.xml"/>
 		<article pages="ARTICLE-pages-v-slideshow.xml"/>
 	</article-page-plans>
 	<display-properties>
-		<ads value=";;;"/>
+		<ads value=";;;" />
 		<continuation-counts value="4; 5; 6; 7; 8; 4, 5; 5, 5; 5, 6; 5, 7; 6, 7; 4, 5, 5; 4, 5, 6; 5, 5, 6; 5, 6, 6; 5, 6, 7; 5, 7, 7; 4, 5, 5, 6; 5, 5, 5, 6; 5, 5, 6, 6; 5, 6, 6, 6; 5, 6, 6, 7; 5, 6, 7, 7; 6, 6, 7, 7; 6, 7, 7, 7; 5, 5, 6, 6, 6; 5, 6, 6, 6, 6; 5, 6, 6, 6, 7; 5, 6, 6, 7, 7; 5, 6, 7, 7, 7; 6, 6, 7, 7, 7; 6, 7, 7, 7, 7; 5, 5, 6, 6, 6, 7; 5, 5, 6, 6, 7, 7; 5, 5, 6, 7, 7, 7; 5, 6, 6, 7, 7, 7; 5, 6, 7, 7, 7, 7; 6, 6, 7, 7, 7, 7; 6, 7, 7, 7, 7, 7; 6, 7, 7, 7, 7, 8; 6, 7, 7, 7, 8, 8; 6, 7, 7, 8, 8, 8; 6, 7, 7, 8, 8, 9; 6, 7, 7, 8, 9, 9; 6, 7, 8, 8, 9, 9; 6, 7, 8, 9, 9, 9; 7, 7, 8, 9, 9, 9; 7, 8, 8, 9, 9, 9"/>
 	</display-properties>
 

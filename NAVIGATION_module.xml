@@ -12,18 +12,21 @@
 	}</style>
 	<style>{
 
-		#deco_container: {
+		#image_container: {
 			anchor-x:left,
 			anchor-y:left,
-			padding:[5, 0, 0, 0],
-			width: 175
+			padding:[5, 15, 0, 0],
+			width: 160,
+			height: 115
 		},
 		image: {
-			height: 115,
-			width: 160,
+			options: {
+				match: {
+					max-width: 553
+				}
+			},
 			background-color:inherit
 		},
-
 		.byline: {
 			display: {if: =options.show_byline, then:inherit, else:none}
 
@@ -57,7 +60,8 @@
 			font-name: DJ5Exchange-Medium,
 			font-size:14,
 			line-height:17,
-			padding:[{if: =options.show_subhed, then:2, else:-4},0,0,0]
+			padding:[{if: =options.show_subhed, then:2, else:-4},0,0,0],
+			color: #555555
 		},
 		.byline: {
 			font-size:14,
@@ -69,8 +73,8 @@
 		}
 	}</style>
 
-	<box id="deco_container" embed="deco-image">
-		<image embed="summary-image" />
+	<box id="image_container">
+		<box id="deco_container" embed="deco-image"><image embed="summary-image" /></box>
 	</box>
 	<panel id="module_text">
 		<p id="headline" class="module_headline"><mark class="m_headline" /></p>

@@ -60,7 +60,8 @@
 			font-name: DJ5Exchange-Medium,
 			font-size:14,
 			line-height:17,
-			padding:[{if: =options.show_subhed, then:2, else:-4},0,0,0]
+			padding:[{if: =options.show_subhed, then:2, else:-4},0,0,0],
+			color: #555555
 		},
 		.byline: {
 			font-size:14,

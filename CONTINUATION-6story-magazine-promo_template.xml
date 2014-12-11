@@ -18,6 +18,8 @@
 		$switch: [
 	        {if: =scale.phone, then: {
 	        }},
+	        {if: =scale.rail, then: {
+	        }},
 	        {if: =portrait, then: {
 	            #b1 : {
 					height:420,

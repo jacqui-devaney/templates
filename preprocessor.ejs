@@ -40,7 +40,7 @@
 
 			justify: "left",
 
-			media: { 
+			media: {
 				if: =page.mediaindex,
 				at-least: 0,
 				then: {
@@ -55,7 +55,7 @@
 					aspect: {if: =page.hasmedia, then: {$divide:["=article.media[page.number].width", "=article.media[page.number].height"]}, else:0},
 					caption: {if: =page.hasmedia, then: "=article.media[page.number].caption", else:""}
 				}
-			}, 
+			},
 
 			text: {
 				indent: 14,
@@ -71,8 +71,8 @@
 			},
 
 			size: {
-				rail_height_with_image: 130,
-				rail_height_without_image: 100,
+				rail_height_with_image: 134,
+				rail_height_without_image: 104,
 				continuation_height_normal: 62,
 				continuation_height_large: 160,
 				continuation_height_strap: 176

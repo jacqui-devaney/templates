@@ -2,7 +2,8 @@
 	<style src="GLOBAL-stylesheet.ejs" />
 	<style src="GRID-stylesheet.ejs" />
 	<style src="ADVERTISING-stylesheet.ejs"/>
-	<style src="PHONE-stylesheet.ejs" />
+<style src="PHONE-stylesheet.ejs" />
+<style src="RAIL-stylesheet.ejs" />
 	<style>{
     	#page_details: {
 			display: inherit,
@@ -15,8 +16,11 @@
 	}</style>
 	<style>{
 		$switch: [
-	        {if: =scale.phone, then: {
-	        }},
+{if: =scale.rail, then: {
+	#foo: {}
+}},
+{if: =scale.phone, then: {
+}},
 	        {if: =portrait, then: {
 	            #b1 : {
 					height:420,
@@ -141,12 +145,12 @@
 		]
     }</style>
     <box id="page_details" class="tablet_only" embed="pagedescription" />
-    <box id="b1" embed="article" class="column8-6 positionx1" module="LEFT-IMAGE_module.xml" />
-    <box id="b2" embed="article" class="column8-6 positionx1-7" module="LEFT-IMAGE_module.xml" />
-    <box id="b3" embed="article" class="column4-6 positionx9-1" module="LEFT-IMAGE_module.xml" />
-    <box id="b4" embed="article" class="column4-6 positionx13-7" module="LEFT-IMAGE_module.xml" />
-    <box id="b5" embed="article" class="column4-6 positionx9-1" module="LEFT-IMAGE_module.xml" />
-    <box id="b6" embed="article" class="column4-6 positionx13-7" module="LEFT-IMAGE_module.xml" />
+    <box id="b1" embed="article" class="column8-6 positionx1 maude unit_plain" module="LEFT-IMAGE_module.xml" />
+    <box id="b2" embed="article" class="column8-6 positionx1-7 maude unit_plain" module="LEFT-IMAGE_module.xml" />
+    <box id="b3" embed="article" class="column4-6 positionx9-1 maude unit_plain" module="LEFT-IMAGE_module.xml" />
+    <box id="b4" embed="article" class="column4-6 positionx13-7 maude unit_plain" module="LEFT-IMAGE_module.xml" />
+    <box id="b5" embed="article" class="column4-6 positionx9-1 maude unit_plain" module="LEFT-IMAGE_module.xml" />
+    <box id="b6" embed="article" class="column4-6 positionx13-7 maude unit_plain" module="LEFT-IMAGE_module.xml" />
 	<box id="front_page" class="tablet_only positionx_full column_full maude unit_ad">
 		<box id="banner_ad" class="ad-banner front_ad" embed="advertisement" />
 	</box>

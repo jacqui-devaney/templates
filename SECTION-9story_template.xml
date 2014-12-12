@@ -57,6 +57,9 @@
 			{if: =scale.rail, then: {
 			}},
 			{if: =scale.phone, then: {
+				#page_details: {
+					display: none
+				},
 		    	#ad_placeholder: {
 					display: inherit,
 					frame: [0, 0, 10, 10]

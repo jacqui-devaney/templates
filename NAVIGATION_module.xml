@@ -13,6 +13,7 @@
 	<style>{
 
 		#image_container: {
+			display: { if: {$count:[=article.thumbnail]}, more-than: 0, then: inherit, else: none},
 			anchor-x:left,
 			anchor-y:left,
 			padding:[5, 15, 0, 0],

@@ -92,8 +92,8 @@
 		]
     }</style>
 	<box id="page_details" class="tablet_only" embed="pagedescription" />
-    <box id="b1" embed="article" class="column8 positionx1 maude unit_rando" module="OPINION-RANDO-LETTERS_module.xml" />
-    <box id="b2" embed="article" class="column8 positionx1 maude unit_rando" module="OPINION-RANDO-LETTERS_module.xml" />
+	<box id="b1" embed="article" class="column8 positionx1 maude unit_rando" module="OPINION-RANDO-LETTERS_module.xml" />
+	<box id="b2" embed="article" class="column8 positionx1 maude unit_rando" module="OPINION-RANDO-LETTERS_module.xml" />
 	<box id="deco" embed="article" class="column8 positionx9-1 maude unit_deco" module="DECO_module.xml" />
 	<box id="b3" embed="article" class="column4 positionx1-9 maude unit_plain" module="TOP-IMAGE_module.xml" />
 	<box id="b4" embed="article" class="column4 positionx5-9 maude unit_plain" module="TOP-IMAGE_module.xml" />

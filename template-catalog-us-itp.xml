@@ -114,31 +114,12 @@
 		<template name="CONTINUATION-generic-1_template.xml" title="" min="1" usage="continuation" storyorder="feed"/>
 		<!-- END GENERIC CONTINUATION -->
 
-		<!-- WHATS NEWS -->
-		<template
-			name="WHATSNEWS-dummy_template.xml"
-			usage="front"
-			title="Whats News"
-			min="1"
-			section="WHATS_NEWS"
-		/>
-		<!-- END WHATS NEWS -->
-
 		<!-- FULL PAGE AD -->
 		<template
 			name="GENERIC-fullpagead-template.xml"
 			usage="ads"
 		/>
 		<!-- END FULL PAGE AD -->
-
-		<!-- TEST TEMPLATE -->
-		<template
-			name="TEST-4-grid_template.xml"
-			usage="front"
-			title="Grid Overlay"
-			min="1"
-		/>
-		<!-- END TEST TEMPLATE -->
 
 	</templates>
 

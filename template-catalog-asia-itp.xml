@@ -106,6 +106,7 @@
 		<!-- END SECTIONS -->
 
 		<!-- GENERIC CONTINUATION -->
+		<template name="CONTINUATION-generic-32_template.xml" title="" min="32" usage="continuation" storyorder="feed"/>
 		<template name="CONTINUATION-generic-16_template.xml" title="" min="16" usage="continuation" storyorder="feed"/>
 		<template name="CONTINUATION-generic-8_template.xml" title="" min="8" usage="continuation" storyorder="feed"/>
 		<template name="CONTINUATION-generic-4_template.xml" title="" min="4" usage="continuation" storyorder="feed"/>

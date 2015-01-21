@@ -94,8 +94,8 @@
 	} </style>
 	<box id="page_details" class="tablet_only" embed="pagedescription" />
 
-	<box id="deco" embed="article" class="column8 positionx1 maude unit_deco" module="DECO_module.xml" options="G_size" />
 	<box id="b1" embed="article" class="column8 positionx1 maude unit_plain" module="TOP-IMAGE_module.xml" />
+	<box id="deco" embed="article" class="column8 positionx1 maude unit_deco" module="DECO_module.xml" options="G_size" />
 	<box id="b2" embed="article" class="column8 positionx9-1 maude unit_plain" module="RIGHT-IMAGE_module.xml" />
 
 	<box id="b3" embed="article" class="column4 positionx9 maude unit_plain" module="TOP-IMAGE_module.xml" />

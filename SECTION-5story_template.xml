@@ -155,6 +155,7 @@
 			},
 			#b2: {
 				options: {
+					top_border: =portrait,
 					show_body: true,
 					show_image: true,
 					smedium_headline: true,

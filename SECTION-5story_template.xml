@@ -105,15 +105,15 @@
 				},
 				#b3:{
 					top:30,
-					height:275
+					height:290
 				},
 				#b4:	{
 					top:325,
-					height:275
+					height:290
 				},
 				#b5:	{
 					top:620,
-					height:275
+					height:290
 				}
 			}},
 			{if: =landscape, then: {
@@ -123,19 +123,19 @@
 				},
 				#b2:	{
 					top:30,
-					height:140
+					height:155
 				},
 				#b3:	{
 					top:190,
-					height:140
+					height:155
 				},
 				#b4:	{
 					top:350,
-					height:140
+					height:155
 				},
 				#b5:{
 					top:510,
-					height:140
+					height:155
 				}
 			}}
 		]
@@ -171,7 +171,6 @@
 			},
 			#b4: {
 				options: {
-					hide_border: =portrait,
 					show_body: true,
 					small_headline: true,
 					background_color: =color.background
@@ -356,7 +355,7 @@
 		</box>
 	</box>
 	<box id="b1" embed="article" class="column8 positionx1 maude unit_plain unit_386" module="TOP-IMAGE_module.xml" />
-	<box id="b2" embed="article" class="column8 positionx9-1  maude unit_plain unit_166" module="TOP-IMAGE_module.xml" />
+	<box id="b2" embed="article" class="column8 positionx9-1  maude unit_plain unit_166" module="RIGHT-IMAGE_module.xml" />
 	<box id="b3" embed="article" class="column8-4 positionx9  maude unit_plain unit_50" module="CONTINUATION-dynamic_module.xml" />
 	<box id="b4" embed="article" class="column8-4 positionx9  maude unit_plain unit_50" module="CONTINUATION-dynamic_module.xml" />
 	<box id="b5" embed="article" class="column8-4 positionx9  maude unit_plain unit_50" module="CONTINUATION-dynamic_module.xml" />

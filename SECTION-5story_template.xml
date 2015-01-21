@@ -1,0 +1,364 @@
+<jpml id="SECTION-9story_template">
+	<style src="GLOBAL-stylesheet.ejs"/>
+	<style src="GRID-stylesheet.ejs"/>
+	<style src="ADVERTISING-stylesheet.ejs"/>
+	<style src="PHONE-stylesheet.ejs"/>
+	<style src="RAIL-stylesheet.ejs" />
+	<style>{
+		#page_details: {
+			options: {
+		        hideHeaderBorder: true,
+				tintTitle: true
+			}
+		}
+	}</style>
+	<style>{
+		jpml: {
+			background-color: =color.background
+		},
+    	#ad_placeholder: {
+    		display: none
+    	},
+    	#marketstrap: {
+    		display: none
+    	},
+		#tabbar-container: {
+			top:-20,
+			height:32
+		},
+		.tabbar-p: {
+			font-name:DJ5Exchange-Bold,
+			color:#343434,
+			padding: [9, 0],
+			font-size:12,
+			line-height:12,
+			border-width:[1, 0],
+			border-color:#E1E1E1
+		},
+		.space: {
+			font-size: 6,
+			line-height:4,
+			color: transparent,
+			content: "unfortunate"
+		},
+		.center-me: {
+			text-align:center,
+			anchor-y: middle
+		},
+		a: {
+			padding: [8, 0]
+		},
+		span: {
+			padding: [3, 0]
+		}
+	}</style>
+	<style> {
+		$switch: [
+			{if: =scale.rail, then: {
+			}},
+			{if: =scale.phone, then: {
+				#page_details: {
+					display: none
+				},
+		    	#ad_placeholder: {
+					display: inherit,
+					frame: [0, 0, 10, 10]
+				},
+		    	#marketstrap: {
+		    		display: {if: =page.section, equals: "TOP_NEWS", else: none},
+		    		position: relative
+		    	},
+				#tabbar-container: {
+					display: none
+				},
+				#b1 : {
+					options: { show_body: true, medium_headline: true }
+				},
+				#b2 : {
+					height: =size.continuation_height_large,
+					options: { show_body: true, show_image: true, float_image: right, small_headline: true }
+				},
+				#b3 : {
+					bind: none,
+					height: =size.continuation_height_normal,
+					options: { show_body: false, small_headline: true }
+				},
+				#b4 : {
+					bind: none,
+					height: =size.continuation_height_normal,
+					options: { show_body: false, small_headline: true }
+				},
+				#b5 : {
+					bind: none,
+					height: =size.continuation_height_normal,
+					options: { show_body: false, small_headline: true }
+				}
+			}},
+			{if: =portrait, then: {
+				#b1:	{
+					top:30,
+					height:645
+				},
+				#b2:	{
+					top:695,
+					height:200
+				},
+				#b3:{
+					top:30,
+					height:275
+				},
+				#b4:	{
+					top:325,
+					height:275
+				},
+				#b5:	{
+					top:620,
+					height:275
+				}
+			}},
+			{if: =landscape, then: {
+				#b1:	{
+					top:30,
+					height:615
+				},
+				#b2:	{
+					top:30,
+					height:140
+				},
+				#b3:	{
+					top:190,
+					height:140
+				},
+				#b4:	{
+					top:350,
+					height:140
+				},
+				#b5:{
+					top:510,
+					height:140
+				}
+			}}
+		]
+	} </style>
+	<style>{
+		if: =scale.phone, 
+		then: {
+
+		},
+		else: {
+			#b1: {
+				options: {
+					medium_headline:true,
+					show_image:true,
+					background_color: =color.background
+				}
+			},
+			#b2: {
+				options: {
+					show_body: true,
+					show_image: true,
+					smedium_headline: true,
+					background_color: =color.background
+				}
+			},
+			#b3: {
+				options: {
+					hide_border: =portrait,
+					show_body: true,
+					small_headline: true,
+					background_color: =color.background
+				}
+			},
+			#b4: {
+				options: {
+					hide_border: =portrait,
+					show_body: true,
+					small_headline: true,
+					background_color: =color.background
+				}
+			},
+			#b5: {
+				options: {
+					show_body: true,
+					small_headline: true,
+					background_color: =color.background
+				}
+			}
+		}
+	}</style>
+	<style>{
+
+		$switch: [
+			{if: =page.section, equals: "TOP_NEWS", then: {
+				.top-news-link: {
+					color: #004990,
+					border-width:[0, 0, 3, 0],
+					border-color:#0037A2
+				}
+			}},
+			{if: =page.section, equals: "WORLD", then: {
+				.world-link: {
+					color: #004990,
+					border-width:[0, 0, 3, 0],
+					border-color:#0037A2
+				}
+			}},
+			{if: =page.section, equals: "US", then: {
+				.us-link: {
+					color: #004990,
+					border-width:[0, 0, 3, 0],
+					border-color:#0037A2
+				}
+			}},
+			{if: =page.section, equals: "BUSINESS", then: {
+				.business-link: {
+					color: #004990,
+					border-width:[0, 0, 3, 0],
+					border-color:#0037A2
+				}
+			}},
+			{if: =page.section, equals: "TECH", then: {
+				.tech-link: {
+					color: #004990,
+					border-width:[0, 0, 3, 0],
+					border-color:#0037A2
+				}
+			}},
+			{if: =page.section, equals: "MARKETS", then: {
+				.markets-link: {
+					color: #004990,
+					border-width:[0, 0, 3, 0],
+					border-color:#0037A2
+				}
+			}},
+			{if: =page.section, equals: "OPINION", then: {
+				.opinion-link: {
+					color: #004990,
+					border-width:[0, 0, 3, 0],
+					border-color:#0037A2
+				}
+			}},
+			{if: =page.section, equals: "LIFE_AND_CULTURE", then: {
+				.life-and-culture-link: {
+					color: #004990,
+					border-width:[0, 0, 3, 0],
+					border-color:#0037A2
+				}
+			}},
+			{if: =page.section, equals: "EUROPE", then: {
+				.europe-link: {
+					color: #004990,
+					border-width:[0, 0, 3, 0],
+					border-color:#0037A2
+				}
+			}},
+			{if: =page.section, equals: "LIFE_AND_STYLE", then: {
+				.life-and-style-link: {
+					color: #004990,
+					border-width:[0, 0, 3, 0],
+					border-color:#0037A2
+				}
+			}},
+			{if: =page.section, equals: "ASIA", then: {
+				.asia-link: {
+					color: #004990,
+					border-width:[0, 0, 3, 0],
+					border-color:#0037A2
+				}
+			}},
+			{if: =page.section, equals: "BUSINESS_AND_FINANCE", then: {
+				.business-and-finance-link: {
+					color: #004990,
+					border-width:[0, 0, 3, 0],
+					border-color:#0037A2
+				}
+			}},
+			{if: =page.section, equals: "FRONT_SECTION", then: {
+				.front-section-link: {
+					color: #004990,
+					border-width:[0, 0, 3, 0],
+					border-color:#0037A2
+				}
+			}},
+			{if: =page.section, equals: "BUSINESS_AND_MARKETS", then: {
+				.business-and-markets-link: {
+					color: #004990,
+					border-width:[0, 0, 3, 0],
+					border-color:#0037A2
+				}
+			}},
+			{if: =page.section, equals: "JAPAN_AND_WORLD", then: {
+				.japan-and-world-link: {
+					color: #004990,
+					border-width:[0, 0, 3, 0],
+					border-color:#0037A2
+				}
+			}},
+			{if: =page.section, equals: "LIFESTYLE", then: {
+				.lifestyle-link: {
+					color: #0037A2,
+					border-width:[0, 0, 3, 0],
+					border-color:#0037A2
+				}
+			}}
+		]
+	}</style>
+	<style>{
+		#tabbar-us: {
+			display:{if: =issue.edition, equals: "us", then: inherit, else: none}
+		},
+		#tabbar-europe: {
+			display:{if: =issue.edition, equals: "europe", then: inherit, else: none}
+		},
+		#tabbar-asia: {
+			display:{if: =issue.edition, equals: "asia", then: inherit, else: none}
+		},
+		#tabbar-japan: {
+			display:{if: =issue.edition, equals: "japan", then: inherit, else: none}
+		}
+
+	}</style>
+	<box id="page_details" embed="pagedescription" />
+	<box id="ad_placeholder" class="ad-banner" embed="pagedescription" />
+	<box id="marketstrap" embed="marketstrap" />
+	<box id="tabbar-container" class="column16-12 positionx1" >
+		<box class="center-me">
+			<p id="tabbar-us" class="tabbar-p">
+				<a class="tabbar-link" href="/TOP_NEWS"><span class="top-news-link">TOP STORIES</span><mark class="space"/></a>
+				<a class="tabbar-link" href="/WORLD"><span class="world-link">WORLD</span><mark class="space"/></a>
+				<a class="tabbar-link" href="/US"><span class="us-link">U.S.</span><mark class="space"/></a>
+				<a class="tabbar-link" href="/BUSINESS"><span class="business-link">BUSINESS</span><mark class="space"/></a>
+				<a class="tabbar-link" href="/TECH"><span class="tech-link">TECH</span><mark class="space"/></a>
+				<a class="tabbar-link" href="/MARKETS"><span class="markets-link">MARKETS</span><mark class="space"/></a>
+				<a class="tabbar-link" href="/OPINION"><span class="opinion-link">OPINION</span><mark class="space"/></a>
+				<a class="tabbar-link" href="/LIFE_AND_CULTURE"><span class="life-and-culture-link">LIFE &amp; CULTURE</span></a>
+			</p>
+			<p id="tabbar-europe" class="tabbar-p">
+				<a class="tabbar-link" href="/FRONT_SECTION"><span class="front-section-link">TOP STORIES</span><mark class="space"/></a>
+				<a class="tabbar-link" href="/EUROPE"><span class="europe-link">EUROPE</span><mark class="space"/></a>
+				<a class="tabbar-link" href="/OPINION"><span class="opinion-link">OPINION</span><mark class="space"/></a>
+				<a class="tabbar-link" href="/BUSINESS_AND_FINANCE"><span class="business-and-finance-link">BUSINESS &amp; FINANCE</span><mark class="space"/></a>
+				<a class="tabbar-link" href="/LIFE_AND_STYLE"><span class="life-and-style-link">LIFE &amp; STYLE</span></a>
+			</p>
+			<p id="tabbar-asia" class="tabbar-p">
+				<a class="tabbar-link" href="/FRONT_SECTION"><span class="front-section-link">TOP STORIES</span><mark class="space"/></a>
+				<a class="tabbar-link" href="/ASIA"><span class="asia-link">ASIA</span><mark class="space"/></a>
+				<a class="tabbar-link" href="/OPINION"><span class="opinion-link">OPINION</span><mark class="space"/></a>
+				<a class="tabbar-link" href="/BUSINESS_AND_FINANCE"><span class="business-and-finance-link">BUSINESS &amp; FINANCE</span><mark class="space"/></a>
+				<a class="tabbar-link" href="/LIFE_AND_STYLE"><span class="life-and-style-link">LIFE &amp; STYLE</span></a>
+			</p>
+			<p id="tabbar-japan" class="tabbar-p">
+				<a class="tabbar-link" href="/FRONT_SECTION"><span class="front-section-link">TOP STORIES</span><mark class="space"/></a>
+				<a class="tabbar-link" href="/BUSINESS_AND_MARKETS"><span class="business-and-markets-link">BUSINESS &amp; MARKETS</span><mark class="space"/></a>
+				<a class="tabbar-link" href="/JAPAN_AND_WORLD"><span class="japan-and-world-link">JAPAN &amp; WORLD</span><mark class="space"/></a>
+				<a class="tabbar-link" href="/LIFESTYLE"><span class="lifestyle-link">LIFESTYLE</span></a>
+			</p>
+		</box>
+	</box>
+	<box id="b1" embed="article" class="column8 positionx1 maude unit_plain unit_386" module="TOP-IMAGE_module.xml" />
+	<box id="b2" embed="article" class="column8 positionx9-1  maude unit_plain unit_166" module="TOP-IMAGE_module.xml" />
+	<box id="b3" embed="article" class="column8-4 positionx9  maude unit_plain unit_50" module="CONTINUATION-dynamic_module.xml" />
+	<box id="b4" embed="article" class="column8-4 positionx9  maude unit_plain unit_50" module="CONTINUATION-dynamic_module.xml" />
+	<box id="b5" embed="article" class="column8-4 positionx9  maude unit_plain unit_50" module="CONTINUATION-dynamic_module.xml" />
+	<p><mark id="size"/></p>
+</jpml>

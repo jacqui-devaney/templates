@@ -113,7 +113,7 @@
 				},
 				#b5:	{
 					top:620,
-					height:290
+					height:280
 				}
 			}},
 			{if: =landscape, then: {
@@ -135,7 +135,7 @@
 				},
 				#b5:{
 					top:510,
-					height:155
+					height:140
 				}
 			}}
 		]

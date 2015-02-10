@@ -11,7 +11,6 @@
 		}
 	}</style>
 	<style>{
-
 		#image_container: {
 			display: { if: {$count:[=article.thumbnail]}, more-than: 0, then: inherit, else: none},
 			anchor-x:left,
@@ -24,7 +23,8 @@
 			options: {
 				match: {
 					max-width: 553
-				}
+				},
+				source: { if: {$count:[=article.thumbnail_image]}, more-than: 0, then: =article.thumbnail_image, else: none}
 			},
 			background-color:inherit
 		},

@@ -1,0 +1,102 @@
+<jpml id="ARTICLE-front_module">
+	<style src="GLOBAL-stylesheet.ejs"/>
+	<style src="GLOBAL_MODULES-stylesheet.ejs" />
+	<style src="ARTICLE-stylesheet.ejs" />
+	<style src="DELOITTE-stylesheet.ejs" />
+	<style>{
+		jpml: {
+			background-color: =options.background_color
+		}
+	}</style>
+	<style>{
+		$join: [
+		{#body_container: {
+            column-count: { if: =portrait, then: 3, else: 4},
+            column-gutter: 12,
+			flow: article_body,
+			min-height: {if: =page.hasmedia, then:400, else:300},
+			padding:[10, 0, 0, 0],
+			layout-grid-line: {$multiply: [20, =view.zoomlevel]},
+			layout-grid-line-offset: {$multiply: [20, =view.zoomlevel]}
+        }},
+		{.border-p:{
+			layout-grid-line: 0,
+			layout-grid-line-offset: 0,
+			border-color: =color.background
+		}},
+		{.article_headline:{
+			font-name: "Whitney-Semibold",
+			font-size: 48,
+			color: #262626,
+			padding:[20, 0, 0, 0]
+		}},
+		{.article_subhed:{
+			font-name: "Whitney-MediumItalic",
+			font-size: 25,
+			color: #5D5D5D
+		}},
+		{.module_flashline:{
+			font-name: "Whitney-Semibold",
+			font-size: 12,
+			color: #004990
+		}},
+		{.article_body:{
+			font-name: "Whitney-Medium",
+			font-size: 14,
+			color: #222222
+		}},
+		{.byline:{
+			font-name: "Whitney-Medium",
+			font-size: 14,
+			color: #222222
+		}},
+		{#media_caption:{
+			font-name: "Whitney-Medium",
+			font-size: 12,
+			color: #666666
+		}},
+		{if: =portrait, then: {
+			#media: {
+				top: 0,
+				left: {if: =media.width, less-than: 360, then: 248, else: {if: =media.width, more-than: 484, then: 248, else: 248}},
+				width: {$switch: [
+					{if: =media.width, less-than: 360, then: 237},
+					{if: =media.width, more-than: 484, then: 485},
+					237
+				]}
+			}
+        }, else: {
+			#media: {
+				top: 0,
+				left: {if: =media.width, less-than: 360, then: 248, else: {if: =media.width, more-than: 484, then: 248, else: 248}},
+				width: {$switch: [
+					{if: =media.width, less-than: 360, then: 236},
+					{if: =media.width, more-than: 484, then: 484},
+					236
+				]}
+			}
+        }}
+		]
+    }</style>
+
+	<panel id="deloitte_strap">
+		<box class="deloitte_strap_image"/>
+    	<p id="deloitte_strap_p"><mark id="deloitte_strap_mark"/></p>
+    </panel>
+
+    <panel id="header_top">
+        <p class="article_headline"><span embed="headline"/></p>
+		<h2 class="article_subhed" embed="subhed" />
+	</panel>
+
+	<panel id="body_container">
+		<box id="media">
+			<box id="media_asset" embed="media"/>
+			<p id="media_caption"><mark id="mark_caption" /></p>
+		</box>
+		<p class="module_flashline" embed="flashline"/>
+    	<p class="byline" embed="byline"/>
+		<p class="border-p"><mark class="border-mark"/></p>
+		<panel class="article_body" embed="body"/>
+	</panel>
+</jpml>

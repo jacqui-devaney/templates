@@ -14,27 +14,36 @@
             column-gutter: 12,
 			flow: article_body,
 			min-height: {if: =page.hasmedia, then:400, else:300},
-			padding:[10, 0, 0, 0],
+			padding:[40, 0, 0, 0],
 			layout-grid-line: {$multiply: [20, =view.zoomlevel]},
 			layout-grid-line-offset: {$multiply: [20, =view.zoomlevel]}
         }},
 		{.border-p:{
+			border-width:[16, 0, 9, 0],
 			layout-grid-line: 0,
 			layout-grid-line-offset: 0,
+			background-color: #CACACA,
 			border-color: =color.background
 		}},
+		{.border-mark: {
+			font-size: 1,
+			line-height: 1,
+			color: transparent,
+			content: "deloitte"
+		}},
 		{.article_headline:{
-			font-name: "Whitney-Semibold",
-			font-size: 40,
-			line-height:42,
+			font-name: "Whitney-Medium",
+			font-size: 36,
+			line-height:36,
 			color: #262626,
-			padding:[20, 0, 0, 0]
+			padding:[16, 0, 0, 0]
 		}},
 		{.article_subhed:{
-			font-name: "Whitney-MediumItalic",
-			font-size: 25,
+			font-name: "Whitney-BookItalic",
+			font-size: 22,
+			line-height: 23,
 			color: #5D5D5D,
-			padding: [4, 0, 0, 0]
+			padding: [10, 0, 0, 0]
 		}},
 		{.module_flashline:{
 			font-name: "Whitney-Semibold",

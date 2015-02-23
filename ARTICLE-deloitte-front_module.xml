@@ -2,7 +2,6 @@
 	<style src="GLOBAL-stylesheet.ejs"/>
 	<style src="GLOBAL_MODULES-stylesheet.ejs" />
 	<style src="ARTICLE-stylesheet.ejs" />
-	<style src="DELOITTE-stylesheet.ejs" />
 	<style>{
 		jpml: {
 			background-color: =options.background_color
@@ -26,28 +25,27 @@
 		}},
 		{.article_headline:{
 			font-name: "Whitney-Semibold",
-			font-size: 48,
+			font-size: 40,
+			line-height:42,
 			color: #262626,
 			padding:[20, 0, 0, 0]
 		}},
 		{.article_subhed:{
 			font-name: "Whitney-MediumItalic",
 			font-size: 25,
-			color: #5D5D5D
+			color: #5D5D5D,
+			padding: [4, 0, 0, 0]
 		}},
 		{.module_flashline:{
 			font-name: "Whitney-Semibold",
-			font-size: 12,
 			color: #004990
 		}},
 		{.article_body:{
 			font-name: "Whitney-Medium",
-			font-size: 14,
 			color: #222222
 		}},
 		{.byline:{
 			font-name: "Whitney-Medium",
-			font-size: 14,
 			color: #222222
 		}},
 		{#media_caption:{
@@ -78,11 +76,6 @@
         }}
 		]
     }</style>
-
-	<panel id="deloitte_strap">
-		<box class="deloitte_strap_image"/>
-    	<p id="deloitte_strap_p"><mark id="deloitte_strap_mark"/></p>
-    </panel>
 
     <panel id="header_top">
         <p class="article_headline"><span embed="headline"/></p>

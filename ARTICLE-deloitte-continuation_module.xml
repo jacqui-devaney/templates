@@ -4,7 +4,6 @@
 	<style src="GRID-stylesheet.ejs" />
 	<style src="ADVERTISING-stylesheet.ejs" />
 	<style src="ARTICLE-stylesheet.ejs" />
-	<style src="DELOITTE-stylesheet.ejs" />
 	<style>{
 		jpml:{
 			background-color: =options.background_color
@@ -23,7 +22,6 @@
 			layout-grid-line: {$multiply: [20, =view.zoomlevel]},
 			layout-grid-line-offset: {$multiply: [20, =view.zoomlevel]},
 			font-name: "Whitney-Medium",
-			font-size: 14,
 			color: #222222
         }},
 
@@ -87,11 +85,6 @@
 			}
 	    }
 	}</style>
-
-	<panel id="deloitte_strap">
-		<box class="deloitte_strap_image"/>
-    	<p id="deloitte_strap_p"><mark id="deloitte_strap_mark"/></p>
-    </panel>
 
     <panel id="body_container">
 		<box id="article_advertisement">

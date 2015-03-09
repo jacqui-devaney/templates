@@ -1,0 +1,26 @@
+<jpml id="ARTICLE-continuation-phone_module">
+	<style src="GLOBAL-stylesheet.ejs" />
+	<style src="GLOBAL_MODULES-stylesheet.ejs" />
+	<style src="ARTICLE-stylesheet.ejs" />
+	<style src="PHONE-MODULES-stylesheet.ejs" />
+	<style>{
+		$join: [
+		{jpml: { min-height: 0 }},
+		{#body_container : { padding: [0, 10, 0, 10]}},
+		{.article_body: {
+			line-height: {$multiply: [22, =view.zoomlevel]},
+			text-align: justify,
+			hyphens: auto,
+			font-name: "Whitney-Medium"
+        }},
+		{#body_continuation: {
+			content: from-flow(article_body),
+			flow: article_body
+		}}
+		]
+    }</style>
+
+	<panel id="body_container">
+    	<panel class="article_body" id="body_continuation" embed="body" />
+	</panel>
+</jpml>

@@ -9,6 +9,9 @@
 			options: {
 				indent: true
 			}
+		},
+		#deloitte_strap:{
+			padding: [0, 12, 0, 12]
 		}
 	}</style>
     <panel id="deloitte_strap">

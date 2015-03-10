@@ -24,7 +24,7 @@
 			height: {$min: [{$divide: [=view.width, =media.aspect]}, {$subtract:[=view.height, 220]}]}
 		},
 		#media_caption: {
-			padding: [0, 10],
+			padding: [0, 10, 3, 10],
 			font-name: "Whitney-Medium",
 			font-size: 11,
 			color: #666666

@@ -1,0 +1,104 @@
+<jpml id="ARTICLE-front_module">
+	<style src="GLOBAL-stylesheet.ejs"/>
+	<style src="GLOBAL_MODULES-stylesheet.ejs" />
+	<style src="ARTICLE-stylesheet.ejs" />
+	<style>{
+		jpml: {
+			background-color: =options.background_color
+		}
+	}</style>
+	<style>{
+		$join: [
+		{#body_container: {
+            column-count: { if: =portrait, then: 3, else: 4},
+            column-gutter: 12,
+			flow: article_body,
+			min-height: {if: =page.hasmedia, then:400, else:300},
+			padding:[36, 0, 0, 0],
+			layout-grid-line: {$multiply: [20, =view.zoomlevel]},
+			layout-grid-line-offset: {$multiply: [20, =view.zoomlevel]}
+        }},
+		{.border-p:{
+			border-width:[8, 0, 5, 0],
+			layout-grid-line: 0,
+			layout-grid-line-offset: 0,
+			background-color: #CACACA,
+			border-color: =color.background
+		}},
+		{.border-mark: {
+			font-size: 1,
+			line-height: 1,
+			color: transparent,
+			content: "deloitte"
+		}},
+		{.article_headline:{
+			font-name: "Whitney-Medium",
+			font-size: 36,
+			line-height:42,
+			color: #262626,
+			padding:[16, 0, 0, 0]
+		}},
+		{.article_subhed:{
+			font-name: "Whitney-BookItalic",
+			font-size: 22,
+			line-height: 28,
+			color: #5D5D5D,
+			padding: [6, 0, 0, 0]
+		}},
+		{.module_flashline:{
+			font-name: "Whitney-Semibold",
+			color: #004990
+		}},
+		{.article_body:{
+			font-name: "Whitney-Medium",
+			color: #222222
+		}},
+		{.byline:{
+			font-name: "Whitney-Medium",
+			color: #222222
+		}},
+		{#media_caption:{
+			font-name: "Whitney-Medium",
+			font-size: 12,
+			color: #666666
+		}},
+		{if: =portrait, then: {
+			#media: {
+				top: 0,
+				left: {if: =media.width, less-than: 360, then: 248, else: {if: =media.width, more-than: 484, then: 248, else: 248}},
+				width: {$switch: [
+					{if: =media.width, less-than: 360, then: 237},
+					{if: =media.width, more-than: 484, then: 485},
+					237
+				]}
+			}
+        }, else: {
+			#media: {
+				top: 0,
+				left: {if: =media.width, less-than: 360, then: 248, else: {if: =media.width, more-than: 484, then: 248, else: 248}},
+				width: {$switch: [
+					{if: =media.width, less-than: 360, then: 236},
+					{if: =media.width, more-than: 484, then: 484},
+					236
+				]}
+			}
+        }}
+		]
+    }</style>
+
+    <panel id="header_top">
+        <p class="article_headline"><span embed="headline"/></p>
+		<h2 class="article_subhed" embed="subhed" />
+	</panel>
+
+	<panel id="body_container">
+		<box id="media">
+			<box id="media_asset" embed="media"/>
+			<p id="media_caption"><mark id="mark_caption" /></p>
+		</box>
+		<p class="module_flashline" embed="flashline"/>
+    	<p class="byline" embed="byline"/>
+		<p class="border-p"><mark class="border-mark"/></p>
+		<panel class="article_body" embed="body"/>
+	</panel>
+</jpml>

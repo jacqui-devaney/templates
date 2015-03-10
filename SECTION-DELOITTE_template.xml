@@ -1,0 +1,326 @@
+<jpml id="SECTION-DELOITTE_template">
+	<style src="GLOBAL-stylesheet.ejs"/>
+	<style src="GRID-stylesheet.ejs"/>
+	<style src="ADVERTISING-stylesheet.ejs"/>
+	<style src="PHONE-stylesheet.ejs"/>
+	<style src="RAIL-stylesheet.ejs" />
+	<style>{
+		#page_details: {
+			options: {
+		        hideHeaderBorder: true,
+				tintTitle: true
+			}
+		}
+	}</style>
+	<style>{
+		jpml: {
+			background-color: =color.background
+		}
+	}</style>
+	<style> {
+		$switch: [
+			{if: =scale.rail, then: {
+			}},
+			{if: =scale.phone, then: {
+				#page_details: {
+					display: none
+				},
+		    	#ad_placeholder: {
+					display: inherit,
+					frame: [0, 0, 10, 10]
+				},
+		    	#marketstrap: {
+		    		display: {if: =page.section, equals: "TOP_NEWS", else: none},
+		    		position: relative
+		    	},
+				#tabbar-container: {
+					display: none
+				},
+				#b1 : {
+					options: { show_body: true, medium_headline: true }
+				},
+				#b2 : {
+					height: =size.continuation_height_large,
+					options: { show_body: true, show_image: true, float_image: right, small_headline: true }
+				},
+				#b3 : {
+					height: =size.continuation_height_large,
+					options: { show_body: true, show_image: true, float_image: right, small_headline: true }
+				},
+				#b4 : {
+					bind: none,
+					height: =size.continuation_height_normal,
+					options: { show_body: false, small_headline: true }
+				},
+				#b5 : {
+					bind: none,
+					height: =size.continuation_height_normal,
+					options: { show_body: false, small_headline: true }
+				},
+				#b6 : {
+					bind: none,
+					height: =size.continuation_height_normal,
+					options: { show_body: false, small_headline: true }
+				},
+				#b7 : {
+					bind: none,
+					height: =size.continuation_height_normal,
+					options: { show_body: false, small_headline: true }
+				},
+				#b8 : {
+					bind: none,
+					height: =size.continuation_height_large,
+					options: { show_body: true, small_headline: true }
+				},
+				#b9 : {
+					bind: none,
+					height: =size.continuation_height_normal,
+					options: { show_body: false, small_headline: true }
+				}
+			}},
+			{if: =portrait, then: {
+				.maude: {
+					border-color:#d8d8d8
+				},
+				#b1:	{
+					top:0,
+					height:180,
+					background-color:white
+				},
+				#b2:	{
+					top:175,
+					height:180,
+					border-width: [1,0,0,0],
+					padding:[5,0,0,0],
+					background-color:white
+				},
+				#b3:{
+					top:360,
+					height:180,
+					border-width: [1,0,0,0],
+					padding:[5,0,0,0]
+				},
+				#b4:{
+					top:545,
+					height:180,
+					border-width: [1,0,0,0],
+					padding:[5,0,0,0]
+				},
+				#b5:{
+					top:730,
+					height:180,
+					border-width: [1,0,0,0],
+					padding:[5,0,0,0]
+				},
+				#b6:	{
+					top:0,
+					height:180,
+					background-color:white
+				},
+				#b7:	{
+					top:175,
+					height:180,
+					border-width: [1,0,0,0],
+					padding:[5,0,0,0],
+					background-color:white
+				},
+				#b8:{
+					top:360,
+					height:180,
+					border-width: [1,0,0,0],
+					padding:[5,0,0,0]
+				},
+				#b9:{
+					top:545,
+					height:180,
+					border-width: [1,0,0,0],
+					padding:[5,0,0,0]
+				},
+				#b10:{
+					top:730,
+					height:180,
+					border-width: [1,0,0,0],
+					padding:[5,0,0,0]
+				}
+			}},
+			{if: =landscape, then: {
+				#b1:	{
+					top:30,
+					height:465
+				},
+				#b2:	{
+					top:30,
+					height:310
+				},
+				#b3:	{
+					top:30,
+					height:310
+				},
+				#b4:	{
+					top:505,
+					height:145
+				},
+				#b5:{
+					top:505,
+					height:145
+				},
+				#b6:	{
+					top:350,
+					height:145
+				},
+				#b7:	{
+					top:350,
+					height:145
+				},
+				#b8:	{
+					top:505,
+					height:145
+				},
+				#b9:	{
+					top:505,
+					height:145
+				}
+
+			}}
+		]
+	} </style>
+	<style>{
+		if: =scale.phone,
+		then: {
+
+		},
+		else: {
+			#b1: {
+				options: {
+					medium_headline:true,
+					show_body: true,
+					background_color: =color.background
+				}
+			},
+			#b2: {
+				options: {
+					show_body: true,
+					medium_headline: true,
+					background_color: =color.background
+				}
+			},
+			#b3: {
+				options: {
+					show_body: true,
+					medium_headline: true,
+					background_color: =color.background
+				}
+			},
+			#b4: {
+				options: {
+					hide_border: =portrait,
+					show_body: true,
+					medium_headline: true,
+					background_color: =color.background
+				}
+			},
+			#b5: {
+				options: {
+					show_body: true,
+					medium_headline: true,
+					background_color: =color.background
+				}
+			},
+			#b6: {
+				options: {
+					show_body: true,
+					medium_headline: true,
+					background_color: =color.background
+				}
+			},
+			#b7: {
+				options: {
+					show_body: true,
+					medium_headline: true,
+					background_color: =color.background
+				}
+			},
+			#b8: {
+				options: {
+					show_body: true,
+					medium_headline: true,
+					background_color: =color.background
+				}
+			},
+			#b9: {
+				options: {
+					show_body: true,
+					medium_headline: true,
+					background_color: =color.background
+				}
+			},
+			#b10: {
+				options: {
+					show_body: true,
+					medium_headline: true,
+					background_color: =color.background
+				}
+			}
+		}
+	}</style>
+	<style>{
+		#deloitteheader: {
+			background-color: #e8eeee,
+			top: 0,
+			height: 68,
+			background-image: "url(deloitte@2x.png)",
+			background-position: aspect-fit,
+			padding: [20, 0, 0, 0]
+		},
+		#deloitteheadertext1: {
+			content: "Deloitte",
+			text-align: center,
+			font-size: 24,
+			font-name: "DJ5Escrow-Roman"
+		},
+		#deloitteheadertext2: {
+			content: "Deloitte",
+			text-align: center,
+			font-size: 24,
+			font-name: "DJ5Escrow-Roman"
+		},
+		#deloitte: {
+			background-color: #e8eeee,
+			height:{if: =landscape, then:472, else:820},
+			top: 88,
+			options: {
+				filename: "DELOITTE.jpml",
+				shadow_height: 40,
+				shadow_color: "rgba(.2, .2, .2, 0.5)"
+			}
+		}
+
+	}</style>
+	<box id="page_details" embed="pagedescription" />
+
+	<box id="b1" embed="article" class="column4 positionx1 maude unit_plain unit_386" module="TOP-IMAGE_module.xml" />
+	<box id="b2" embed="article" class="column4 positionx1  maude unit_plain unit_166" module="TOP-IMAGE_module.xml" />
+	<box id="b3" embed="article" class="column4 positionx1 maude unit_plain unit_166" module="TOP-IMAGE_module.xml" />
+	<box id="b4" embed="article" class="column4 positionx1  maude unit_plain unit_50" module="TOP-IMAGE_module.xml" />
+	<box id="b5" embed="article" class="column4 positionx1  maude unit_plain unit_50" module="TOP-IMAGE_module.xml" />
+	<box id="b6" embed="article" class="column4 positionx5 maude unit_plain unit_386" module="TOP-IMAGE_module.xml" />
+	<box id="b7" embed="article" class="column4 positionx5  maude unit_plain unit_166" module="TOP-IMAGE_module.xml" />
+	<box id="b8" embed="article" class="column4 positionx5 maude unit_plain unit_166" module="TOP-IMAGE_module.xml" />
+	<box id="b9" embed="article" class="column4 positionx5  maude unit_plain unit_50" module="TOP-IMAGE_module.xml" />
+	<box id="b10" embed="article" class="column4 positionx5  maude unit_plain unit_50" module="TOP-IMAGE_module.xml" />
+
+	<box id="deloitteheader" class="tablet_only column4 positionx9"/>
+	<box id="deloitte" class="tablet_only column4 positionx9" embed="list">
+	</box>
+
+
+	<!-- <box id="b6" embed="article" class="column4 positionx9    maude unit_plain unit_50" module="CONTINUATION-dynamic_module.xml" />
+	<box id="b7" embed="article" class="column4 positionx13-9 maude unit_plain unit_50" module="CONTINUATION-dynamic_module.xml" />
+	<box id="b8" embed="article" class="column4 positionx9    maude unit_plain unit_50" module="CONTINUATION-dynamic_module.xml" />
+	<box id="b9" embed="article" class="column4 positionx13-9 maude unit_plain unit_50" module="CONTINUATION-dynamic_module.xml" />
+	<box id="b10" embed="article" class="column4 positionx13-9 maude unit_plain unit_50" module="CONTINUATION-dynamic_module.xml" />
+	<box id="b11" embed="article" class="column4 positionx13-9 maude unit_plain unit_50" module="CONTINUATION-dynamic_module.xml" />
+	<box id="b12" embed="article" class="column4 positionx13-9 maude unit_plain unit_50" module="CONTINUATION-dynamic_module.xml" />
+	<box id="b13" embed="article" class="column4 positionx13-9 maude unit_plain unit_50" module="CONTINUATION-dynamic_module.xml" /> -->
+
+</jpml>

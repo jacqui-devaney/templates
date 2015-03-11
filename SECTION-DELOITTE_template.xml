@@ -84,15 +84,14 @@
 				},
 				#b1:	{
 					top:0,
-					height:180,
-					background-color:white
+					height:180
 				},
 				#b2:	{
 					top:175,
 					height:180,
 					border-width: [1,0,0,0],
 					padding:[5,0,0,0],
-					background-color:white
+					show_image:true
 				},
 				#b3:{
 					top:360,

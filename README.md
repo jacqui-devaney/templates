@@ -32,4 +32,4 @@ Take the output from the previous step and generate the Whats_news.jpml file:
 xsltproc --path "testData/whatsnews/" wsj-rss-whatsnews-to-jpml.xml formatted.xml WHATS_NEWS.jpml
 ```
 
-An important note to make: The fault article djml for whats news has embedded links for accessing articles.  The transformation assumes these will be DJML filenames and fails if they are links..
+An important note to make: The fault article djml for whats news has embedded links for accessing articles.  The transformation assumes these will be DJML filenames and fails if they are links.

@@ -36,37 +36,42 @@
 					height:220
 				},
 				#b2:	{
-					top:230,
-					height:78,
+					top:236,
+					height:80,
 					border-width: [1,0,0,0],
-					padding:[6,0,0,0]
+					padding:[5,0,0,0],
+					top_border: true
 				},
 				#b3:{
-					top:320,
-					height:78,
+					top:326,
+					height:80,
 					border-width: [1,0,0,0],
-					padding:[6,0,0,0]
+					padding:[5,0,0,0],
+					top_border: true
 				},
 				#b4:{
-					top:410,
-					height:78,
+					top:416,
+					height:80,
 					border-width: [1,0,0,0],
-					padding:[6,0,0,0]
+					padding:[5,0,0,0],
+					top_border: true
 				},
 				#b5:{
-					top:500,
-					height:78,
+					top:506,
+					height:80,
 					border-width: [1,0,0,0],
-					padding:[6,0,0,0]
+					padding:[5,0,0,0],
+					top_border: true
 				},
 				#b6:	{
-					top:590,
-					height:78,
+					top:600,
+					height:80,
 					border-width: [1,0,0,0],
-					padding:[6,0,0,0]
+					padding:[10,0,0,0],
+					top_border: true
 				},
 				#latestTechnologyNews: {
-					top:690,
+					top:696,
 					height:40,
 					border-width: [3,0,0,0],
 					border-color:#444444,
@@ -74,15 +79,15 @@
 
 				},
 				#b7:	{
-					top:720,
-					height:78,
-					padding:[6,0,0,0]
+					top:726,
+					height:80,
+					padding:[5,0,0,0]
 				},
 				#b8:{
-					top:810,
-					height:78,
+					top:816,
+					height:80,
 					border-width: [1,0,0,0],
-					padding:[6,0,0,0]
+					padding:[5,0,0,0]
 				}
 			}},
 			{if: =landscape, then: {
@@ -170,7 +175,8 @@
 					show_body: true,
 					small_headline: true,
 					background_color: =color.background,
-					small_wide_image: true
+					small_wide_image: true,
+					middle_align_text: true
 				}
 			},
 			#b3: {
@@ -178,7 +184,8 @@
 					show_body: true,
 					small_headline: true,
 					background_color: blue,
-					small_wide_image: true
+					small_wide_image: true,
+					middle_align_text: true
 				}
 			},
 			#b4: {
@@ -186,7 +193,8 @@
 					show_body: true,
 					small_headline: true,
 					background_color: =color.background,
-					small_wide_image: true
+					small_wide_image: true,
+					middle_align_text: true
 				}
 			},
 			#b5: {
@@ -194,7 +202,8 @@
 					show_body: true,
 					small_headline: true,
 					background_color: =color.background,
-					small_wide_image: true
+					small_wide_image: true,
+					middle_align_text: true
 				}
 			},
 			#b6: {
@@ -202,7 +211,8 @@
 					show_body: true,
 					small_headline: true,
 					background_color: =color.background,
-					small_wide_image: true
+					small_wide_image: true,
+					middle_align_text: true
 				}
 			},
 			#b7: {
@@ -210,7 +220,8 @@
 					show_body: true,
 					small_headline: true,
 					background_color: =color.background,
-					small_wide_image: true
+					small_wide_image: true,
+					middle_align_text: true
 				}
 			},
 			#b8: {
@@ -218,7 +229,8 @@
 					show_body: true,
 					small_headline: true,
 					background_color: =color.background,
-					small_wide_image: true
+					small_wide_image: true,
+					middle_align_text: true
 				}
 			}
 		}
@@ -288,5 +300,16 @@
 		<p id="cfo-insight">CFO insight and analysis written and compiled by Deloitte</p>
 	</box>
 	<box id="deloitte" class="tablet_only column4 positionx13-9" embed="list"/>
+
+
+
+	<!-- <box id="b6" embed="article" class="column4 positionx9    maude unit_plain unit_50" module="CONTINUATION-dynamic_module.xml" />
+	<box id="b7" embed="article" class="column4 positionx13-9 maude unit_plain unit_50" module="CONTINUATION-dynamic_module.xml" />
+	<box id="b8" embed="article" class="column4 positionx9    maude unit_plain unit_50" module="CONTINUATION-dynamic_module.xml" />
+	<box id="b9" embed="article" class="column4 positionx13-9 maude unit_plain unit_50" module="CONTINUATION-dynamic_module.xml" />
+	<box id="b10" embed="article" class="column4 positionx13-9 maude unit_plain unit_50" module="CONTINUATION-dynamic_module.xml" />
+	<box id="b11" embed="article" class="column4 positionx13-9 maude unit_plain unit_50" module="CONTINUATION-dynamic_module.xml" />
+	<box id="b12" embed="article" class="column4 positionx13-9 maude unit_plain unit_50" module="CONTINUATION-dynamic_module.xml" />
+	<box id="b13" embed="article" class="column4 positionx13-9 maude unit_plain unit_50" module="CONTINUATION-dynamic_module.xml" /> -->
 
 </jpml>

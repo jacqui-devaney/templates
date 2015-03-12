@@ -52,6 +52,8 @@
 						{if: =options.A_image, then:110},
 						{if: =options.small_image, then:119},
 						{if: =options.square_image, then:179},
+						{if: =options.wide_image, then:304},
+						{if: =options.small_wide_image, then:112},
 						242
 					]},
 					anchor-y:{if: =options.A_image, then:bottom, else:top},
@@ -67,6 +69,8 @@
 						{if: =options.A_image, then:100},
 						{if: =options.small_image, then:92},
 						{if: =options.square_image, then:173},
+						{if: =options.wide_image, then:298},
+						{if: =options.small_wide_image, then:106},
 						236
 					]},
 					image-scale: 1

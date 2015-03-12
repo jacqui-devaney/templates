@@ -24,54 +24,8 @@
 			{if: =scale.phone, then: {
 				#page_details: {
 					display: none
-				},
-		    	#ad_placeholder: {
-					display: inherit,
-					frame: [0, 0, 10, 10]
-				},
-		    	#marketstrap: {
-		    		display: {if: =page.section, equals: "TOP_NEWS", else: none},
-		    		position: relative
-		    	},
-				#tabbar-container: {
-					display: none
-				},
-				#b1 : {
-					options: { show_body: true, medium_headline: true }
-				},
-				#b2 : {
-					height: =size.continuation_height_large,
-					options: { show_body: true, show_image: true, float_image: right, small_headline: true }
-				},
-				#b3 : {
-					height: =size.continuation_height_large,
-					options: { show_body: true, show_image: true, float_image: right, small_headline: true }
-				},
-				#b4 : {
-					bind: none,
-					height: =size.continuation_height_normal,
-					options: { show_body: false, small_headline: true }
-				},
-				#b5 : {
-					bind: none,
-					height: =size.continuation_height_normal,
-					options: { show_body: false, small_headline: true }
-				},
-				#b6 : {
-					bind: none,
-					height: =size.continuation_height_normal,
-					options: { show_body: false, small_headline: true }
-				},
-				#b7 : {
-					bind: none,
-					height: =size.continuation_height_normal,
-					options: { show_body: false, small_headline: true }
-				},
-				#b8 : {
-					bind: none,
-					height: =size.continuation_height_large,
-					options: { show_body: true, small_headline: true }
 				}
+
 			}},
 			{if: =portrait, then: {
 				.maude: {
@@ -83,38 +37,37 @@
 				},
 				#b2:	{
 					top:230,
-					height:85,
+					height:78,
 					border-width: [1,0,0,0],
-					padding:[12,0,0,0],
-					background-color:white
+					padding:[6,0,0,0]
 				},
 				#b3:{
 					top:320,
-					height:85,
+					height:78,
 					border-width: [1,0,0,0],
-					padding:[12,0,0,0]
+					padding:[6,0,0,0]
 				},
 				#b4:{
 					top:410,
-					height:85,
+					height:78,
 					border-width: [1,0,0,0],
-					padding:[12,0,0,0]
+					padding:[6,0,0,0]
 				},
 				#b5:{
 					top:500,
-					height:85,
+					height:78,
 					border-width: [1,0,0,0],
-					padding:[12,0,0,0]
+					padding:[6,0,0,0]
 				},
 				#b6:	{
 					top:590,
-					height:85,
+					height:78,
 					border-width: [1,0,0,0],
-					padding:[12,0,0,0]
+					padding:[6,0,0,0]
 				},
 				#latestTechnologyNews: {
 					top:690,
-					height:85,
+					height:40,
 					border-width: [3,0,0,0],
 					border-color:#444444,
 					padding:[5,0,0,0]
@@ -122,15 +75,14 @@
 				},
 				#b7:	{
 					top:720,
-					height:85,
-					padding:[12,0,0,0],
-					background-color:white
+					height:78,
+					padding:[6,0,0,0]
 				},
 				#b8:{
 					top:810,
-					height:85,
+					height:78,
 					border-width: [1,0,0,0],
-					padding:[17,0,0,0]
+					padding:[6,0,0,0]
 				}
 			}},
 			{if: =landscape, then: {
@@ -196,7 +148,7 @@
 				options: {
 					show_body: true,
 					smedium_headline: true,
-					background_color: =color.background,
+					background_color: blue,
 					small_wide_image: true
 				}
 			},
@@ -247,32 +199,32 @@
 		#deloitteheader: {
 			background-color: #e8eeee,
 			top: 0,
-			height: 68,
+			height: 140,
+			padding: [20, 0, 0, 0],
+			text-align:center
+		},
+		#deloitteimage: {
 			background-image: "url(deloitte@2x.png)",
+			position: relative,
 			background-position: aspect-fit,
-			padding: [20, 0, 0, 0]
-		},
-		#deloitteheadertext1: {
-			content: "Deloitte",
-			text-align: center,
-			font-size: 24,
-			font-name: "DJ5Escrow-Roman"
-		},
-		#deloitteheadertext2: {
-			content: "Deloitte",
-			text-align: center,
-			font-size: 24,
-			font-name: "DJ5Escrow-Roman"
+			left: 0,
+			right: 0,
+			height: 20,
+			width: 103,
+			anchor-x: center
 		},
 		#deloitte: {
-			background-color: #e8eeee,
+			background-color: red,
 			height:{if: =landscape, then:472, else:820},
-			top: 88,
+			top: 140,
 			options: {
 				filename: "DELOITTE.jpml",
 				shadow_height: 40,
 				shadow_color: "rgba(.2, .2, .2, 0.5)"
 			}
+		},
+		#deloitteimage-panel: {
+
 		},
 		#latestTechnologyNews: {
 			font-name: "DJ5Exchange-Medium",
@@ -294,9 +246,13 @@
 	<box id="b7" embed="article" class="column8 positionx1  maude unit_plain unit_166" module="RIGHT-IMAGE_module.xml" />
 	<box id="b8" embed="article" class="column8 positionx1 maude unit_plain unit_166" module="RIGHT-IMAGE_module.xml" />
 
-	<box id="deloitteheader" class="tablet_only column4 positionx9"/>
-	<box id="deloitte" class="tablet_only column4 positionx9" embed="list">
+	<box id="deloitteheader" class="tablet_only column4 positionx9">
+		<p>SPONSORED CONTENT</p>
+		<panel id="deloitteimage-panel"><box id="deloitteimage"/></panel>
+		<p>CFO insight and analysis written and compiled by Deloitte</p>
 	</box>
+	<box id="deloitte" class="tablet_only column4 positionx9" embed="list"/>
+
 
 
 	<!-- <box id="b6" embed="article" class="column4 positionx9    maude unit_plain unit_50" module="CONTINUATION-dynamic_module.xml" />

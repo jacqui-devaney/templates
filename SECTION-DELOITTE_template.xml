@@ -71,11 +71,6 @@
 					bind: none,
 					height: =size.continuation_height_large,
 					options: { show_body: true, small_headline: true }
-				},
-				#b9 : {
-					bind: none,
-					height: =size.continuation_height_normal,
-					options: { show_body: false, small_headline: true }
 				}
 			}},
 			{if: =portrait, then: {
@@ -84,63 +79,58 @@
 				},
 				#b1:	{
 					top:0,
-					height:180,
-					background-color:white
+					height:220
 				},
 				#b2:	{
-					top:175,
-					height:180,
+					top:230,
+					height:85,
 					border-width: [1,0,0,0],
-					padding:[5,0,0,0],
+					padding:[12,0,0,0],
 					background-color:white
 				},
 				#b3:{
-					top:360,
-					height:180,
+					top:320,
+					height:85,
 					border-width: [1,0,0,0],
-					padding:[5,0,0,0]
+					padding:[12,0,0,0]
 				},
 				#b4:{
-					top:545,
-					height:180,
+					top:410,
+					height:85,
 					border-width: [1,0,0,0],
-					padding:[5,0,0,0]
+					padding:[12,0,0,0]
 				},
 				#b5:{
-					top:730,
-					height:180,
+					top:500,
+					height:85,
 					border-width: [1,0,0,0],
-					padding:[5,0,0,0]
+					padding:[12,0,0,0]
 				},
 				#b6:	{
-					top:0,
-					height:180,
-					background-color:white
+					top:590,
+					height:85,
+					border-width: [1,0,0,0],
+					padding:[12,0,0,0]
+				},
+				#latestTechnologyNews: {
+					top:690,
+					height:85,
+					border-width: [3,0,0,0],
+					border-color:#444444,
+					padding:[5,0,0,0]
+
 				},
 				#b7:	{
-					top:175,
-					height:180,
-					border-width: [1,0,0,0],
-					padding:[5,0,0,0],
+					top:720,
+					height:85,
+					padding:[12,0,0,0],
 					background-color:white
 				},
 				#b8:{
-					top:360,
-					height:180,
+					top:810,
+					height:85,
 					border-width: [1,0,0,0],
-					padding:[5,0,0,0]
-				},
-				#b9:{
-					top:545,
-					height:180,
-					border-width: [1,0,0,0],
-					padding:[5,0,0,0]
-				},
-				#b10:{
-					top:730,
-					height:180,
-					border-width: [1,0,0,0],
-					padding:[5,0,0,0]
+					padding:[17,0,0,0]
 				}
 			}},
 			{if: =landscape, then: {
@@ -175,10 +165,6 @@
 				#b8:	{
 					top:505,
 					height:145
-				},
-				#b9:	{
-					top:505,
-					height:145
 				}
 
 			}}
@@ -194,71 +180,65 @@
 				options: {
 					medium_headline:true,
 					show_body: true,
-					background_color: =color.background
+					background_color: =color.background,
+					wide_image: true
 				}
 			},
 			#b2: {
 				options: {
 					show_body: true,
-					medium_headline: true,
-					background_color: =color.background
+					smedium_headline: true,
+					background_color: =color.background,
+					small_wide_image: true
 				}
 			},
 			#b3: {
 				options: {
 					show_body: true,
-					medium_headline: true,
-					background_color: =color.background
+					smedium_headline: true,
+					background_color: =color.background,
+					small_wide_image: true
 				}
 			},
 			#b4: {
 				options: {
 					hide_border: =portrait,
 					show_body: true,
-					medium_headline: true,
-					background_color: =color.background
+					smedium_headline: true,
+					background_color: =color.background,
+					small_wide_image: true
 				}
 			},
 			#b5: {
 				options: {
 					show_body: true,
-					medium_headline: true,
-					background_color: =color.background
+					smedium_headline: true,
+					background_color: =color.background,
+					small_wide_image: true
 				}
 			},
 			#b6: {
 				options: {
 					show_body: true,
-					medium_headline: true,
-					background_color: =color.background
+					smedium_headline: true,
+					background_color: =color.background,
+					small_wide_image: true
 				}
 			},
 			#b7: {
 				options: {
 					show_body: true,
-					medium_headline: true,
-					background_color: =color.background
+					smedium_headline: true,
+					background_color: =color.background,
+					small_wide_image: true
 				}
 			},
 			#b8: {
 				options: {
 					show_body: true,
-					medium_headline: true,
-					background_color: =color.background
-				}
-			},
-			#b9: {
-				options: {
-					show_body: true,
-					medium_headline: true,
-					background_color: =color.background
-				}
-			},
-			#b10: {
-				options: {
-					show_body: true,
-					medium_headline: true,
-					background_color: =color.background
+					smedium_headline: true,
+					background_color: =color.background,
+					small_wide_image: true
 				}
 			}
 		}
@@ -293,21 +273,26 @@
 				shadow_height: 40,
 				shadow_color: "rgba(.2, .2, .2, 0.5)"
 			}
+		},
+		#latestTechnologyNews: {
+			font-name: "DJ5Exchange-Medium",
+			font-size: 14
 		}
 
 	}</style>
 	<box id="page_details" embed="pagedescription" />
 
-	<box id="b1" embed="article" class="column4 positionx1 maude unit_plain unit_386" module="TOP-IMAGE_module.xml" />
-	<box id="b2" embed="article" class="column4 positionx1  maude unit_plain unit_166" module="TOP-IMAGE_module.xml" />
-	<box id="b3" embed="article" class="column4 positionx1 maude unit_plain unit_166" module="TOP-IMAGE_module.xml" />
-	<box id="b4" embed="article" class="column4 positionx1  maude unit_plain unit_50" module="TOP-IMAGE_module.xml" />
-	<box id="b5" embed="article" class="column4 positionx1  maude unit_plain unit_50" module="TOP-IMAGE_module.xml" />
-	<box id="b6" embed="article" class="column4 positionx5 maude unit_plain unit_386" module="TOP-IMAGE_module.xml" />
-	<box id="b7" embed="article" class="column4 positionx5  maude unit_plain unit_166" module="TOP-IMAGE_module.xml" />
-	<box id="b8" embed="article" class="column4 positionx5 maude unit_plain unit_166" module="TOP-IMAGE_module.xml" />
-	<box id="b9" embed="article" class="column4 positionx5  maude unit_plain unit_50" module="TOP-IMAGE_module.xml" />
-	<box id="b10" embed="article" class="column4 positionx5  maude unit_plain unit_50" module="TOP-IMAGE_module.xml" />
+	<box id="b1" embed="article" class="column8 positionx1 maude unit_plain unit_386" module="RIGHT-IMAGE_module.xml" />
+	<box id="b2" embed="article" class="column8 positionx1  maude unit_plain unit_166" module="RIGHT-IMAGE_module.xml" />
+	<box id="b3" embed="article" class="column8 positionx1 maude unit_plain unit_166" module="RIGHT-IMAGE_module.xml" />
+	<box id="b4" embed="article" class="column8 positionx1  maude unit_plain unit_50" module="RIGHT-IMAGE_module.xml" />
+	<box id="b5" embed="article" class="column8 positionx1  maude unit_plain unit_50" module="RIGHT-IMAGE_module.xml" />
+	<box id="b6" embed="article" class="column8 positionx1 maude unit_plain unit_386" module="RIGHT-IMAGE_module.xml" />
+	<box id="latestTechnologyNews" class="column8 positionx1 maude unit_plain">
+		<p>LATEST TECHNOLOGY NEWS</p>
+	</box>
+	<box id="b7" embed="article" class="column8 positionx1  maude unit_plain unit_166" module="RIGHT-IMAGE_module.xml" />
+	<box id="b8" embed="article" class="column8 positionx1 maude unit_plain unit_166" module="RIGHT-IMAGE_module.xml" />
 
 	<box id="deloitteheader" class="tablet_only column4 positionx9"/>
 	<box id="deloitte" class="tablet_only column4 positionx9" embed="list">

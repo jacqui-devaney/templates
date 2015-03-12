@@ -13,20 +13,15 @@
                 <page template="ARTICLE-deloitte-continuation_template.xml" type="suffix" for="tablet">
                                 <link id="view" module="ARTICLE-deloitte-continuation_module.xml"/>
                 </page>
-                <page template="GENERIC-fullpagead-template.xml" type="interstitial" for="tablet"/>
 
                 <!-- phone -->
-			    <page template="ARTICLE-front-phone_template.xml" type="prefix" for="phone">
-			                    <link id="view" module="ARTICLE-front-phone_module.xml"/>
+			    <page template="ARTICLE-deloitte-front-phone_template.xml" type="prefix" for="phone">
+			                    <link id="view" module="ARTICLE-deloitte-front-phone_module.xml"/>
 			    </page>
-			    <page template="ARTICLE-continuation-phone_template.xml" type="repeat" for="phone">
-			                    <link id="view" module="ARTICLE-continuation-phone_module.xml"/>
+			    <page template="ARTICLE-deloitte-continuation-phone_template.xml" type="repeat" for="phone">
+			                    <link id="view" module="ARTICLE-deloitte-continuation-phone_module.xml"/>
 			    </page>
-			    <page template="ARTICLE-continuation-phone_template.xml" type="repeat" for="phone">
-			                    <link id="view" module="ARTICLE-continuation-phone_module.xml"/>
+			    <page template="ARTICLE-deloitte-continuation-phone_template.xml" type="suffix" for="phone">
+			                    <link id="view" module="ARTICLE-deloitte-continuation-phone_module.xml"/>
 			    </page>
-			    <page template="ARTICLE-continuation-phone_template.xml" type="suffix" for="phone">
-			                    <link id="view" module="ARTICLE-continuation-phone_module.xml"/>
-			    </page>
-                <page template="GENERIC-fullpagead-template.xml" type="interstitial" for="phone"/>
 </pages>

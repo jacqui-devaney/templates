@@ -1,0 +1,22 @@
+<jpml id="ARTICLE-deloitte-front-phone_template">
+	<!-- GLOBAL not included -->
+	<style src="PHONE-stylesheet.ejs" />
+    <style src="DELOITTE-stylesheet.ejs" />
+	<style>{
+		#view: {
+			width:=view.width,
+			height:{$multiply: [2, =view.height]},
+			options: {
+				indent: true
+			}
+		},
+		#deloitte_strap:{
+			padding: [0, 12, 0, 12]
+		}
+	}</style>
+    <panel id="deloitte_strap">
+        <box class="deloitte_strap_image"/>
+        <p id="deloitte_strap_p"><mark id="deloitte_strap_mark"/></p>
+    </panel>
+    <box id="view" embed="article" class="maude" module="ARTICLE-deloitte-front-phone_module.xml" />
+</jpml>

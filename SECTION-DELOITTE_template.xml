@@ -139,7 +139,7 @@
 			#b2: {
 				options: {
 					show_body: true,
-					smedium_headline: true,
+					small_headline: true,
 					background_color: =color.background,
 					small_wide_image: true
 				}
@@ -147,7 +147,7 @@
 			#b3: {
 				options: {
 					show_body: true,
-					smedium_headline: true,
+					small_headline: true,
 					background_color: blue,
 					small_wide_image: true
 				}
@@ -156,7 +156,7 @@
 				options: {
 					hide_border: =portrait,
 					show_body: true,
-					smedium_headline: true,
+					small_headline: true,
 					background_color: =color.background,
 					small_wide_image: true
 				}
@@ -164,7 +164,7 @@
 			#b5: {
 				options: {
 					show_body: true,
-					smedium_headline: true,
+					small_headline: true,
 					background_color: =color.background,
 					small_wide_image: true
 				}
@@ -172,7 +172,7 @@
 			#b6: {
 				options: {
 					show_body: true,
-					smedium_headline: true,
+					small_headline: true,
 					background_color: =color.background,
 					small_wide_image: true
 				}
@@ -180,7 +180,7 @@
 			#b7: {
 				options: {
 					show_body: true,
-					smedium_headline: true,
+					small_headline: true,
 					background_color: =color.background,
 					small_wide_image: true
 				}
@@ -188,7 +188,7 @@
 			#b8: {
 				options: {
 					show_body: true,
-					smedium_headline: true,
+					small_headline: true,
 					background_color: =color.background,
 					small_wide_image: true
 				}
@@ -199,9 +199,10 @@
 		#deloitteheader: {
 			background-color: #e8eeee,
 			top: 0,
-			height: 140,
-			padding: [20, 0, 0, 0],
-			text-align:center
+			height: 120,
+			text-align:center,
+			color: #333333,
+			font-size:14
 		},
 		#deloitteimage: {
 			background-image: "url(deloitte@2x.png)",
@@ -214,21 +215,28 @@
 			anchor-x: center
 		},
 		#deloitte: {
-			background-color: red,
-			height:{if: =landscape, then:472, else:820},
-			top: 140,
+			background-color: #e8eeee,
+			height:{if: =landscape, then:472, else:780},
+			top: 120,
 			options: {
 				filename: "DELOITTE.jpml",
 				shadow_height: 40,
 				shadow_color: "rgba(.2, .2, .2, 0.5)"
 			}
 		},
-		#deloitteimage-panel: {
-
+		#sponsored-content: {
+			font-name: "Whitney-Semibold",
+			padding: [12,0,12,0]
+		},
+		#cfo-insight: {
+			font-name: "Whitney-Medium",
+			padding: [12,0,0,0],
+			line-height:18
 		},
 		#latestTechnologyNews: {
 			font-name: "DJ5Exchange-Medium",
-			font-size: 14
+			font-size: 14,
+			color: #444444
 		}
 
 	}</style>
@@ -247,9 +255,9 @@
 	<box id="b8" embed="article" class="column8 positionx1 maude unit_plain unit_166" module="RIGHT-IMAGE_module.xml" />
 
 	<box id="deloitteheader" class="tablet_only column4 positionx9">
-		<p>SPONSORED CONTENT</p>
+		<p id="sponsored-content">SPONSORED CONTENT</p>
 		<panel id="deloitteimage-panel"><box id="deloitteimage"/></panel>
-		<p>CFO insight and analysis written and compiled by Deloitte</p>
+		<p id="cfo-insight">CFO insight and analysis written and compiled by Deloitte</p>
 	</box>
 	<box id="deloitte" class="tablet_only column4 positionx9" embed="list"/>
 

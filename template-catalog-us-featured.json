@@ -1,8 +1,8 @@
 {
     "section": [
         {
-            "filename": "SECTION-DELOITTE_template",
-            "title": "Deloitte Section Template",
+            "filename": "SECTION-6story_template.xml",
+            "title": "6 story - G photo",
             "usage": "front",
             "boxes": [
                 "b1",
@@ -10,9 +10,39 @@
                 "b3",
                 "b4",
                 "b5",
-                "b6",
-                "b7",
-                "b8"
+                "b6"
+            ]
+        },
+        {
+            "filename": "SECTION-6story-deco_template.xml",
+            "title": "6 story plus deco",
+            "usage": "front",
+            "boxes": [
+                "b1",
+                "deco",
+                "b2",
+                "b3",
+                "b4",
+                "b5",
+                "b6"
+            ]
+        },
+        {
+            "filename": "SECTION-3story_template.xml",
+            "title": "3 story - Large Photo",
+            "usage": "front",
+            "boxes": [
+                "b1",
+                "deco",
+                "b2"
+            ]
+        },
+        {
+            "filename": "SECTION-1story_template.xml",
+            "title": "Full size Deco",
+            "usage": "front",
+            "boxes": [
+                "deco"
             ]
         },
         {

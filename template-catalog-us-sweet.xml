@@ -1,42 +1,25 @@
-
-<catalog preprocessor="preprocessor.ejs">
+<catalog  preprocessor="preprocessor.ejs">
 	<templates>
 
-		<!-- SECTIONS -->
 		<template
-            name="SECTION-9story_template.xml"
-            title="9 story - G photo"
-            min="9"
-            usage="front"
-        />
-		<template
-            name="SECTION-5story_template.xml"
-            title="5 story - G photo"
-            min="5"
-            usage="front"
-        />
+			name="SECTION-DELOITTE_template"
+			title="Deloitte Section Template"
+			min="8"
+			deco="false"
+			usage="front"
+			storyorder="feed"
+		/>
 		<!-- END SECTIONS -->
 
+
 		<!-- GENERIC CONTINUATION -->
-		<template name="CONTINUATION-generic-32_template.xml" title="" min="32" usage="continuation"/>
-		<template name="CONTINUATION-generic-16_template.xml" title="" min="16" usage="continuation"/>
-		<template name="CONTINUATION-generic-8_template.xml" title="" min="8" usage="continuation"/>
-		<template name="CONTINUATION-generic-4_template.xml" title="" min="4" usage="continuation"/>
-		<template name="CONTINUATION-generic-2_template.xml" title="" min="2" usage="continuation"/>
-		<template name="CONTINUATION-generic-1_template.xml" title="" min="1" usage="continuation"/>
-		<!--  END GENERIC CONTINUATION -->
-
-
-
-		<!-- WHATS NEWS -->
-		<template
-			name="WHATSNEWS-phone_template.xml"
-			usage="front"
-			title=""
-			min="1"
-			section="WHATS_NEWS"
-		/>
-		<!-- END WHATS NEWS -->
+		<template name="CONTINUATION-generic-32_template.xml" title="" min="32" usage="continuation" storyorder="feed"/>
+		<template name="CONTINUATION-generic-16_template.xml" title="" min="16" usage="continuation" storyorder="feed"/>
+		<template name="CONTINUATION-generic-8_template.xml" title="" min="8" usage="continuation" storyorder="feed"/>
+		<template name="CONTINUATION-generic-4_template.xml" title="" min="4" usage="continuation" storyorder="feed"/>
+		<template name="CONTINUATION-generic-2_template.xml" title="" min="2" usage="continuation" storyorder="feed"/>
+		<template name="CONTINUATION-generic-1_template.xml" title="" min="1" usage="continuation" storyorder="feed"/>
+		<!-- END GENERIC CONTINUATION -->
 
 		<!-- FULL PAGE AD -->
 		<template
@@ -45,15 +28,17 @@
 		/>
 		<!-- END FULL PAGE AD -->
 
+
 	</templates>
 
 	<article-page-plans>
 		<article pages="ARTICLE-pages.xml"/>
+		<article pages="ARTICLE-pages-narrow.xml"/>
 		<article pages="ARTICLE-pages-h-slideshow.xml"/>
 		<article pages="ARTICLE-pages-v-slideshow.xml"/>
 	</article-page-plans>
 	<display-properties>
-		<ads value=";;;" />
+		<ads value=";;;"/>
 		<continuation-counts value="4; 5; 6; 7; 8; 4, 5; 5, 5; 5, 6; 5, 7; 6, 7; 4, 5, 5; 4, 5, 6; 5, 5, 6; 5, 6, 6; 5, 6, 7; 5, 7, 7; 4, 5, 5, 6; 5, 5, 5, 6; 5, 5, 6, 6; 5, 6, 6, 6; 5, 6, 6, 7; 5, 6, 7, 7; 6, 6, 7, 7; 6, 7, 7, 7; 5, 5, 6, 6, 6; 5, 6, 6, 6, 6; 5, 6, 6, 6, 7; 5, 6, 6, 7, 7; 5, 6, 7, 7, 7; 6, 6, 7, 7, 7; 6, 7, 7, 7, 7; 5, 5, 6, 6, 6, 7; 5, 5, 6, 6, 7, 7; 5, 5, 6, 7, 7, 7; 5, 6, 6, 7, 7, 7; 5, 6, 7, 7, 7, 7; 6, 6, 7, 7, 7, 7; 6, 7, 7, 7, 7, 7; 6, 7, 7, 7, 7, 8; 6, 7, 7, 7, 8, 8; 6, 7, 7, 8, 8, 8; 6, 7, 7, 8, 8, 9; 6, 7, 7, 8, 9, 9; 6, 7, 8, 8, 9, 9; 6, 7, 8, 9, 9, 9; 7, 7, 8, 9, 9, 9; 7, 8, 8, 9, 9, 9"/>
 	</display-properties>
 

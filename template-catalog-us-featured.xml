@@ -1,10 +1,44 @@
 <catalog  preprocessor="preprocessor.ejs">
 	<templates>
 
+		<!-- WSJ MAGAZINE -->
+		<template
+			section="WSJ_MAGAZINE"
+			name="CONTINUATION-6story-magazine-promo_template.xml"
+			title="6 story - WSJ Magazine"
+			min="6"
+			deco="true"
+			usage="continuation"
+		/>
+		<!-- END WSJ MAGAZINE -->
+
+		<!-- SECTIONS -->
+		<template
+			name="SECTION-6story_template.xml"
+			title="6 story - G photo"
+			min="6"
+			usage="front"
+		/>
+		<template
+			name="SECTION-3story_template.xml"
+			title="3 story - Large Photo"
+			min="3"
+			deco="true"
+			usage="front"
+			storyorder="feed"
+		/>
+		<template
+			name="SECTION-1story_template.xml"
+			title="Full size Deco"
+			min="1"
+			deco="true"
+			usage="front"
+			storyorder="feed"
+		/>
 		<template
 			name="SECTION-DELOITTE_template"
 			title="Deloitte Section Template"
-			min="8"
+			min="10"
 			deco="false"
 			usage="front"
 			storyorder="feed"

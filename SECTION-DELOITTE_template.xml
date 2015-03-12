@@ -254,12 +254,11 @@
 			width: 103,
 			anchor-x: center
 		},
-		#deloitte: {
+		#deloitte_list: {
 			background-color: #e8eeee,
 			height:{if: =landscape, then:530, else:780},
 			top: 120,
 			options: {
-				filename: "DELOITTE.jpml",
 				shadow_height: 40,
 				shadow_color: "rgba(.2, .2, .2, 0.5)"
 			}
@@ -277,6 +276,9 @@
 			font-name: "DJ5Exchange-Medium",
 			font-size: 14,
 			color: #444444
+		},
+		#deloitte_inner: {
+			display: none
 		}
 
 	}</style>
@@ -299,7 +301,36 @@
 		<panel id="deloitteimage-panel"><box id="deloitteimage"/></panel>
 		<p id="cfo-insight">CFO insight and analysis written and compiled by Deloitte</p>
 	</box>
-	<box id="deloitte" class="tablet_only column4 positionx13-9" embed="list"/>
+	<box id="deloitte_list" class="tablet_only column4 positionx13-9" embed="list">
+		<style src="DELOITTE-stylesheet.ejs"/>
+		<panel id="deloitte_inner">
+			<panel id="deloitte_item_1" class="deloitte_item deloitte_item_first">
+				<p class="deloitte_headline"><mark id="deloitte_headline_1"/></p>
+				<p class="deloitte_summary"><mark id="deloitte_summary_1"/></p>
+			</panel>
+			<panel id="deloitte_item_2" class="deloitte_item">
+				<p class="deloitte_headline"><mark id="deloitte_headline_2"/></p>
+				<p class="deloitte_summary"><mark id="deloitte_summary_2"/></p>
+			</panel>
+			<panel id="deloitte_item_3" class="deloitte_item">
+				<p class="deloitte_headline"><mark id="deloitte_headline_3"/></p>
+				<p class="deloitte_summary"><mark id="deloitte_summary_3"/></p>
+			</panel>
+			<panel id="deloitte_item_4" class="deloitte_item">
+				<p class="deloitte_headline"><mark id="deloitte_headline_4"/></p>
+				<p class="deloitte_summary"><mark id="deloitte_summary_4"/></p>
+			</panel>
+			<panel id="deloitte_item_5" class="deloitte_item">
+				<p class="deloitte_headline"><mark id="deloitte_headline_5"/></p>
+				<p class="deloitte_summary"><mark id="deloitte_summary_5"/></p>
+			</panel>
+			<panel id="deloitte_item_6" class="deloitte_item deloitte_item_last">
+				<p class="deloitte_headline"><mark id="deloitte_headline_6"/></p>
+				<p class="deloitte_summary"><mark id="deloitte_summary_6"/></p>
+			</panel>
+		</panel>
+	</box>
+
 
 
 

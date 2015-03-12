@@ -53,7 +53,7 @@
 						{if: =options.small_image, then:119},
 						{if: =options.square_image, then:179},
 						{if: =options.wide_image, then:304},
-						{if: =options.small_wide_image, then:112},
+						{if: =options.small_wide_image, then:{$add: [{$multiply: [1.25, =view.height]}, 6]}},
 						242
 					]},
 					anchor-y:{if: =options.A_image, then:bottom, else:top},
@@ -70,7 +70,7 @@
 						{if: =options.small_image, then:92},
 						{if: =options.square_image, then:173},
 						{if: =options.wide_image, then:298},
-						{if: =options.small_wide_image, then:106},
+						{if: =options.small_wide_image, then:{$multiply: [1.25, =view.height]}},
 						236
 					]},
 					image-scale: 1

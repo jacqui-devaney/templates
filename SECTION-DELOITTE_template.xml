@@ -86,37 +86,59 @@
 				}
 			}},
 			{if: =landscape, then: {
+				.maude: {
+					border-color:#d8d8d8
+				},
 				#b1:	{
-					top:30,
-					height:465
+					top:0,
+					height:400
 				},
 				#b2:	{
-					top:30,
-					height:310
+					top:410,
+					height:110,
+					border-width: [1,0,0,0],
+					padding:[6,0,0,0]
 				},
-				#b3:	{
-					top:30,
-					height:310
+				#b3:{
+					top:530,
+					height:110,
+					border-width: [1,0,0,0],
+					padding:[6,0,0,0]
 				},
-				#b4:	{
-					top:505,
-					height:145
+				#b4:{
+					top:0,
+					height:110
 				},
 				#b5:{
-					top:505,
-					height:145
+					top:120,
+					height:110,
+					border-width: [1,0,0,0],
+					padding:[6,0,0,0]
 				},
 				#b6:	{
-					top:350,
-					height:145
+					top:240,
+					height:110,
+					border-width: [1,0,0,0],
+					padding:[6,0,0,0]
+				},
+				#latestTechnologyNews: {
+					top:370,
+					height:40,
+					border-width: [3,0,0,0],
+					border-color:#444444,
+					padding:[5,0,0,0]
+
 				},
 				#b7:	{
-					top:350,
-					height:145
+					top:410,
+					height:110,
+					padding:[6,0,0,0]
 				},
-				#b8:	{
-					top:505,
-					height:145
+				#b8:{
+					top:530,
+					height:110,
+					border-width: [1,0,0,0],
+					padding:[6,0,0,0]
 				}
 
 			}}
@@ -130,10 +152,17 @@
 		else: {
 			#b1: {
 				options: {
-					medium_headline:true,
-					show_body: true,
-					background_color: =color.background,
-					wide_image: true
+					if:=portrait, then: {
+						medium_headline:true,
+						show_body: true,
+						background_color: =color.background,
+						wide_image: true
+					}, else: {
+						medium_headline:true,
+						show_image: true,
+						background_color: =color.background,
+						module: url(TOP-IMAGE_module.xml)
+					}
 				}
 			},
 			#b2: {
@@ -154,7 +183,6 @@
 			},
 			#b4: {
 				options: {
-					hide_border: =portrait,
 					show_body: true,
 					small_headline: true,
 					background_color: =color.background,
@@ -216,7 +244,7 @@
 		},
 		#deloitte: {
 			background-color: #e8eeee,
-			height:{if: =landscape, then:472, else:780},
+			height:{if: =landscape, then:530, else:780},
 			top: 120,
 			options: {
 				filename: "DELOITTE.jpml",
@@ -242,34 +270,23 @@
 	}</style>
 	<box id="page_details" embed="pagedescription" />
 
-	<box id="b1" embed="article" class="column8 positionx1 maude unit_plain unit_386" module="RIGHT-IMAGE_module.xml" />
-	<box id="b2" embed="article" class="column8 positionx1  maude unit_plain unit_166" module="RIGHT-IMAGE_module.xml" />
-	<box id="b3" embed="article" class="column8 positionx1 maude unit_plain unit_166" module="RIGHT-IMAGE_module.xml" />
-	<box id="b4" embed="article" class="column8 positionx1  maude unit_plain unit_50" module="RIGHT-IMAGE_module.xml" />
-	<box id="b5" embed="article" class="column8 positionx1  maude unit_plain unit_50" module="RIGHT-IMAGE_module.xml" />
-	<box id="b6" embed="article" class="column8 positionx1 maude unit_plain unit_386" module="RIGHT-IMAGE_module.xml" />
-	<box id="latestTechnologyNews" class="column8 positionx1 maude unit_plain">
+	<box id="b1" embed="article" class="column6-8 positionx1 maude unit_plain unit_386" module="RIGHT-IMAGE_module.xml" />
+	<box id="b2" embed="article" class="column6-8 positionx1  maude unit_plain unit_166" module="RIGHT-IMAGE_module.xml" />
+	<box id="b3" embed="article" class="column6-8 positionx1 maude unit_plain unit_166" module="RIGHT-IMAGE_module.xml" />
+	<box id="b4" embed="article" class="column6-8 positionx7-1  maude unit_plain unit_50" module="RIGHT-IMAGE_module.xml" />
+	<box id="b5" embed="article" class="column6-8 positionx7-1  maude unit_plain unit_50" module="RIGHT-IMAGE_module.xml" />
+	<box id="b6" embed="article" class="column6-8 positionx7-1 maude unit_plain unit_386" module="RIGHT-IMAGE_module.xml" />
+	<box id="latestTechnologyNews" class="column6-8 positionx7-1 maude unit_plain">
 		<p>LATEST TECHNOLOGY NEWS</p>
 	</box>
-	<box id="b7" embed="article" class="column8 positionx1  maude unit_plain unit_166" module="RIGHT-IMAGE_module.xml" />
-	<box id="b8" embed="article" class="column8 positionx1 maude unit_plain unit_166" module="RIGHT-IMAGE_module.xml" />
+	<box id="b7" embed="article" class="column6-8 positionx7-1  maude unit_plain unit_166" module="RIGHT-IMAGE_module.xml" />
+	<box id="b8" embed="article" class="column6-8 positionx7-1 maude unit_plain unit_166" module="RIGHT-IMAGE_module.xml" />
 
-	<box id="deloitteheader" class="tablet_only column4 positionx9">
+	<box id="deloitteheader" class="tablet_only column4 positionx13-9">
 		<p id="sponsored-content">SPONSORED CONTENT</p>
 		<panel id="deloitteimage-panel"><box id="deloitteimage"/></panel>
 		<p id="cfo-insight">CFO insight and analysis written and compiled by Deloitte</p>
 	</box>
-	<box id="deloitte" class="tablet_only column4 positionx9" embed="list"/>
-
-
-
-	<!-- <box id="b6" embed="article" class="column4 positionx9    maude unit_plain unit_50" module="CONTINUATION-dynamic_module.xml" />
-	<box id="b7" embed="article" class="column4 positionx13-9 maude unit_plain unit_50" module="CONTINUATION-dynamic_module.xml" />
-	<box id="b8" embed="article" class="column4 positionx9    maude unit_plain unit_50" module="CONTINUATION-dynamic_module.xml" />
-	<box id="b9" embed="article" class="column4 positionx13-9 maude unit_plain unit_50" module="CONTINUATION-dynamic_module.xml" />
-	<box id="b10" embed="article" class="column4 positionx13-9 maude unit_plain unit_50" module="CONTINUATION-dynamic_module.xml" />
-	<box id="b11" embed="article" class="column4 positionx13-9 maude unit_plain unit_50" module="CONTINUATION-dynamic_module.xml" />
-	<box id="b12" embed="article" class="column4 positionx13-9 maude unit_plain unit_50" module="CONTINUATION-dynamic_module.xml" />
-	<box id="b13" embed="article" class="column4 positionx13-9 maude unit_plain unit_50" module="CONTINUATION-dynamic_module.xml" /> -->
+	<box id="deloitte" class="tablet_only column4 positionx13-9" embed="list"/>
 
 </jpml>

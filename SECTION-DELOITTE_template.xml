@@ -152,7 +152,98 @@
 	<style>{
 		if: =scale.phone,
 		then: {
+			#b1: {
+				options: {
+					module: url(TOP-IMAGE_module.xml),
+					show_body: true, 
+					medium_headline: true
+				}
+			},
 
+			#b2: {
+				height: =size.continuation_height_large,
+				options: {
+					module: url(TOP-IMAGE_module.xml),
+					show_body: true,
+					show_image: true,
+					float_image: right,
+					small_headline: true
+				}
+			},
+
+			#b3: {
+				height: =size.continuation_height_large,
+				options: {
+					module: url(TOP-IMAGE_module.xml),
+					show_body: true,
+					show_image: true,
+					float_image: right,
+					small_headline: true
+				}
+			},
+
+			#b4: {
+				bind: none,
+				height: =size.continuation_height_normal,
+				options: {
+					module: url(CONTINUATION-dynamic_module.xml),
+					show_body: false,
+					small_headline: true
+				}
+			},
+
+			#b5: {
+				bind: none,
+				height: =size.continuation_height_normal,
+				options: {
+					module: url(CONTINUATION-dynamic_module.xml),
+					show_body: false,
+					small_headline: true
+				}
+			},
+
+			#b6: {
+				bind: none,
+				height: =size.continuation_height_normal,
+				options: {
+					module: url(CONTINUATION-dynamic_module.xml),
+					show_body: false,
+					small_headline: true
+				}
+			},
+
+			#b7: {
+				bind: none,
+				height: =size.continuation_height_normal,
+				options: {
+					module: url(CONTINUATION-dynamic_module.xml),
+					show_body: false,
+					small_headline: true
+				}
+			},
+
+			#b8: {
+				bind: none,
+				height: =size.continuation_height_normal,
+				options: {
+					module: url(CONTINUATION-dynamic_module.xml),
+					show_body: false,
+					small_headline: true
+				}
+			},
+
+			#latestTechnologyNews: {
+				text-align: center
+			},
+			#sponsored-content: {
+				font-name: "Whitney-Semibold",
+				padding: [12,0,4,0]
+			},
+			#cfo-insight: {
+				font-name: "Whitney-Medium",
+				padding: [8,0,10,0],
+				line-height:18
+			}
 		},
 		else: {
 			#b1: {
@@ -232,14 +323,25 @@
 					small_wide_image: true,
 					middle_align_text: true
 				}
+			},
+			#deloitteheader: {
+				top: 0,
+				height: 120
+			},
+			#sponsored-content: {
+				font-name: "Whitney-Semibold",
+				padding: [12,0,12,0]
+			},
+			#cfo-insight: {
+				font-name: "Whitney-Medium",
+				padding: [12,0,0,0],
+				line-height:18
 			}
 		}
 	}</style>
 	<style>{
 		#deloitteheader: {
 			background-color: #e8eeee,
-			top: 0,
-			height: 120,
 			text-align:center,
 			color: #333333,
 			font-size:14
@@ -263,15 +365,6 @@
 				shadow_color: "rgba(.2, .2, .2, 0.5)"
 			}
 		},
-		#sponsored-content: {
-			font-name: "Whitney-Semibold",
-			padding: [12,0,12,0]
-		},
-		#cfo-insight: {
-			font-name: "Whitney-Medium",
-			padding: [12,0,0,0],
-			line-height:18
-		},
 		#latestTechnologyNews: {
 			font-name: "DJ5Exchange-Medium",
 			font-size: 14,
@@ -285,18 +378,18 @@
 	<box id="page_details" embed="pagedescription" />
 
 	<box id="b1" embed="article" class="column6-8 positionx1 maude unit_plain unit_386" module="RIGHT-IMAGE_module.xml" />
-	<box id="b2" embed="article" class="column6-8 positionx1  maude unit_plain unit_166" module="RIGHT-IMAGE_module.xml" />
+	<box id="b2" embed="article" class="column6-8 positionx1 maude unit_plain unit_166" module="RIGHT-IMAGE_module.xml" />
 	<box id="b3" embed="article" class="column6-8 positionx1 maude unit_plain unit_166" module="RIGHT-IMAGE_module.xml" />
-	<box id="b4" embed="article" class="column6-8 positionx7-1  maude unit_plain unit_50" module="RIGHT-IMAGE_module.xml" />
-	<box id="b5" embed="article" class="column6-8 positionx7-1  maude unit_plain unit_50" module="RIGHT-IMAGE_module.xml" />
-	<box id="b6" embed="article" class="column6-8 positionx7-1 maude unit_plain unit_386" module="RIGHT-IMAGE_module.xml" />
+	<box id="b4" embed="article" class="column6-8 positionx7-1 maude unit_plain unit_50" module="RIGHT-IMAGE_module.xml" />
+	<box id="b5" embed="article" class="column6-8 positionx7-1 maude unit_plain unit_50" module="RIGHT-IMAGE_module.xml" />
+	<box id="b6" embed="article" class="column6-8 positionx7-1 maude unit_plain unit_50" module="RIGHT-IMAGE_module.xml" />
 	<box id="latestTechnologyNews" class="column6-8 positionx7-1 maude unit_plain">
 		<p>LATEST TECHNOLOGY NEWS</p>
 	</box>
-	<box id="b7" embed="article" class="column6-8 positionx7-1  maude unit_plain unit_166" module="RIGHT-IMAGE_module.xml" />
-	<box id="b8" embed="article" class="column6-8 positionx7-1 maude unit_plain unit_166" module="RIGHT-IMAGE_module.xml" />
+	<box id="b7" embed="article" class="column6-8 positionx7-1 maude unit_plain unit_50" module="RIGHT-IMAGE_module.xml" />
+	<box id="b8" embed="article" class="column6-8 positionx7-1 maude unit_plain unit_50" module="RIGHT-IMAGE_module.xml" />
 
-	<box id="deloitteheader" class="tablet_only column4 positionx13-9">
+	<box id="deloitteheader" class="column4 positionx13-9 maude unit_plain">
 		<p id="sponsored-content">SPONSORED CONTENT</p>
 		<panel id="deloitteimage-panel"><box id="deloitteimage"/></panel>
 		<p id="cfo-insight">CFO insight and analysis written and compiled by Deloitte</p>
@@ -330,7 +423,33 @@
 			</panel>
 		</panel>
 	</box>
-
+	<panel id="deloitte_phone" class="phone_only">
+		<style src="DELOITTE-stylesheet.ejs"/>
+		<panel id="deloitte_item_1" class="deloitte_item deloitte_item_first">
+			<p class="deloitte_headline"><mark id="deloitte_headline_1"/></p>
+			<p class="deloitte_summary"><mark id="deloitte_summary_1"/></p>
+		</panel>
+		<panel id="deloitte_item_2" class="deloitte_item">
+			<p class="deloitte_headline"><mark id="deloitte_headline_2"/></p>
+			<p class="deloitte_summary"><mark id="deloitte_summary_2"/></p>
+		</panel>
+		<panel id="deloitte_item_3" class="deloitte_item">
+			<p class="deloitte_headline"><mark id="deloitte_headline_3"/></p>
+			<p class="deloitte_summary"><mark id="deloitte_summary_3"/></p>
+		</panel>
+		<panel id="deloitte_item_4" class="deloitte_item">
+			<p class="deloitte_headline"><mark id="deloitte_headline_4"/></p>
+			<p class="deloitte_summary"><mark id="deloitte_summary_4"/></p>
+		</panel>
+		<panel id="deloitte_item_5" class="deloitte_item">
+			<p class="deloitte_headline"><mark id="deloitte_headline_5"/></p>
+			<p class="deloitte_summary"><mark id="deloitte_summary_5"/></p>
+		</panel>
+		<panel id="deloitte_item_6" class="deloitte_item deloitte_item_last">
+			<p class="deloitte_headline"><mark id="deloitte_headline_6"/></p>
+			<p class="deloitte_summary"><mark id="deloitte_summary_6"/></p>
+		</panel>
+	</panel>
 
 
 

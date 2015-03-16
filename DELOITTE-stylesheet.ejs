@@ -34,18 +34,29 @@
 		padding: [0, 15]
 	},
 
+	#deloitte_phone: {
+		background-color: #e8eeee,
+		padding: [0, 10]
+	},
+
 	.deloitte_item: {
-		padding: [20, 0, 19.5, 0],
+		padding: { if: =scale.phone, then: [15, 0, 14.5, 0], else: [20, 0, 19.5, 0] },
 		border-width: [0, 0, 0.5, 0],
 		border-color: #979797
 	},
 
 	.deloitte_item_first: {
-		padding: [15, 0, 19.5, 0]
+		if: =scale.phone, then: {
+			padding: [14.5, 0, 14.5, 0],
+			border-width: [0.5, 0, 0.5, 0],
+			border-color: #979797
+		}, else: {
+			padding: [15, 0, 19.5, 0]
+		}
 	},
 	
 	.deloitte_item_last: {
-		padding: [20, 0, 20, 0],
+		padding: { if: =scale.phone, then: [15, 0, 15, 0], else: [20, 0, 20, 0] },
 		border-width: [0]
 	},
 

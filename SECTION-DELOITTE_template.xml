@@ -78,12 +78,12 @@
 					padding:[5,0,0,0]
 
 				},
-				#b7:	{
+				#b11:	{
 					top:726,
 					height:80,
 					padding:[5,0,0,0]
 				},
-				#b8:{
+				#b12:{
 					top:816,
 					height:80,
 					border-width: [1,0,0,0],
@@ -134,12 +134,12 @@
 					padding:[5,0,0,0]
 
 				},
-				#b7:	{
+				#b11:	{
 					top:410,
 					height:110,
 					padding:[6,0,0,0]
 				},
-				#b8:{
+				#b12:{
 					top:530,
 					height:110,
 					border-width: [1,0,0,0],
@@ -212,7 +212,7 @@
 				}
 			},
 
-			#b7: {
+			#b11: {
 				bind: none,
 				height: =size.continuation_height_normal,
 				options: {
@@ -222,7 +222,7 @@
 				}
 			},
 
-			#b8: {
+			#b12: {
 				bind: none,
 				height: =size.continuation_height_normal,
 				options: {
@@ -306,7 +306,7 @@
 					middle_align_text: true
 				}
 			},
-			#b7: {
+			#b11: {
 				options: {
 					show_body: true,
 					small_headline: true,
@@ -315,7 +315,7 @@
 					middle_align_text: true
 				}
 			},
-			#b8: {
+			#b12: {
 				options: {
 					show_body: true,
 					small_headline: true,
@@ -397,15 +397,6 @@
 
 	<box id="b1" embed="article" class="column6-8 positionx1 maude unit_plain unit_386" module="RIGHT-IMAGE_module.xml" />
 	<box id="b2" embed="article" class="column6-8 positionx1 maude unit_plain unit_166" module="RIGHT-IMAGE_module.xml" />
-	<box id="b3" embed="article" class="column6-8 positionx1 maude unit_plain unit_166" module="RIGHT-IMAGE_module.xml" />
-	<box id="b4" embed="article" class="column6-8 positionx7-1 maude unit_plain unit_50" module="RIGHT-IMAGE_module.xml" />
-	<box id="b5" embed="article" class="column6-8 positionx7-1 maude unit_plain unit_50" module="RIGHT-IMAGE_module.xml" />
-	<box id="b6" embed="article" class="column6-8 positionx7-1 maude unit_plain unit_50" module="RIGHT-IMAGE_module.xml" />
-	<box id="latest_news_header" class="column6-8 positionx7-1 maude unit_plain">
-		<p><mark id="latest_news_mark" /></p>
-	</box>
-	<box id="b7" embed="article" class="column6-8 positionx7-1 maude unit_plain unit_50" module="RIGHT-IMAGE_module.xml" />
-	<box id="b8" embed="article" class="column6-8 positionx7-1 maude unit_plain unit_50" module="RIGHT-IMAGE_module.xml" />
 
 	<box id="deloitteheader" class="column4 positionx13-9 maude unit_plain">
 		<p id="sponsored-content">SPONSORED CONTENT</p>
@@ -469,15 +460,26 @@
 		</panel>
 	</panel>
 
+	<box id="d1" embed="article" class="rail_only maude unit_plain" module="CONTINUATION-dynamic_module.xml" />
+	<box id="d2" embed="article" class="rail_only maude unit_plain" module="CONTINUATION-dynamic_module.xml" />
+	<box id="d3" embed="article" class="rail_only maude unit_plain" module="CONTINUATION-dynamic_module.xml" />
+	<box id="d4" embed="article" class="rail_only maude unit_plain" module="CONTINUATION-dynamic_module.xml" />
+	<box id="d5" embed="article" class="rail_only maude unit_plain" module="CONTINUATION-dynamic_module.xml" />
+	<box id="d6" embed="article" class="rail_only maude unit_plain" module="CONTINUATION-dynamic_module.xml" />
 
+	<box id="b3" embed="article" class="column6-8 positionx1 maude unit_plain unit_166" module="RIGHT-IMAGE_module.xml" />
+	<box id="b4" embed="article" class="column6-8 positionx7-1 maude unit_plain unit_50" module="RIGHT-IMAGE_module.xml" />
+	<box id="b5" embed="article" class="column6-8 positionx7-1 maude unit_plain unit_50" module="RIGHT-IMAGE_module.xml" />
+	<box id="b6" embed="article" class="column6-8 positionx7-1 maude unit_plain unit_50" module="RIGHT-IMAGE_module.xml" />
 
-	<!-- <box id="b6" embed="article" class="column4 positionx9    maude unit_plain unit_50" module="CONTINUATION-dynamic_module.xml" />
-	<box id="b7" embed="article" class="column4 positionx13-9 maude unit_plain unit_50" module="CONTINUATION-dynamic_module.xml" />
-	<box id="b8" embed="article" class="column4 positionx9    maude unit_plain unit_50" module="CONTINUATION-dynamic_module.xml" />
-	<box id="b9" embed="article" class="column4 positionx13-9 maude unit_plain unit_50" module="CONTINUATION-dynamic_module.xml" />
-	<box id="b10" embed="article" class="column4 positionx13-9 maude unit_plain unit_50" module="CONTINUATION-dynamic_module.xml" />
-	<box id="b11" embed="article" class="column4 positionx13-9 maude unit_plain unit_50" module="CONTINUATION-dynamic_module.xml" />
-	<box id="b12" embed="article" class="column4 positionx13-9 maude unit_plain unit_50" module="CONTINUATION-dynamic_module.xml" />
-	<box id="b13" embed="article" class="column4 positionx13-9 maude unit_plain unit_50" module="CONTINUATION-dynamic_module.xml" /> -->
+	<box id="b7" embed="article"  class="phone_only rail_only maude unit_plain unit_50" module="RIGHT-IMAGE_module.xml" />
+	<box id="b8" embed="article"  class="phone_only rail_only maude unit_plain unit_50" module="RIGHT-IMAGE_module.xml" />
+	<box id="b9" embed="article"  class="phone_only rail_only maude unit_plain unit_50" module="RIGHT-IMAGE_module.xml" />
+	<box id="b10" embed="article" class="phone_only rail_only maude unit_plain unit_50" module="RIGHT-IMAGE_module.xml" />
 
+	<box id="latest_news_header" class="column6-8 positionx7-1 maude unit_plain">
+		<p><mark id="latest_news_mark" /></p>
+	</box>
+	<box id="b11" embed="article" class="column6-8 positionx7-1 maude unit_plain unit_50" module="RIGHT-IMAGE_module.xml" />
+	<box id="b12" embed="article" class="column6-8 positionx7-1 maude unit_plain unit_50" module="RIGHT-IMAGE_module.xml" />
 </jpml>

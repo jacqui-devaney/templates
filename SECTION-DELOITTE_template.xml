@@ -7,7 +7,6 @@
 	<style>{
 		#page_details: {
 			options: {
-		        hideHeaderBorder: true,
 				tintTitle: true
 			}
 		}
@@ -24,54 +23,8 @@
 			{if: =scale.phone, then: {
 				#page_details: {
 					display: none
-				},
-		    	#ad_placeholder: {
-					display: inherit,
-					frame: [0, 0, 10, 10]
-				},
-		    	#marketstrap: {
-		    		display: {if: =page.section, equals: "TOP_NEWS", else: none},
-		    		position: relative
-		    	},
-				#tabbar-container: {
-					display: none
-				},
-				#b1 : {
-					options: { show_body: true, medium_headline: true }
-				},
-				#b2 : {
-					height: =size.continuation_height_large,
-					options: { show_body: true, show_image: true, float_image: right, small_headline: true }
-				},
-				#b3 : {
-					height: =size.continuation_height_large,
-					options: { show_body: true, show_image: true, float_image: right, small_headline: true }
-				},
-				#b4 : {
-					bind: none,
-					height: =size.continuation_height_normal,
-					options: { show_body: false, small_headline: true }
-				},
-				#b5 : {
-					bind: none,
-					height: =size.continuation_height_normal,
-					options: { show_body: false, small_headline: true }
-				},
-				#b6 : {
-					bind: none,
-					height: =size.continuation_height_normal,
-					options: { show_body: false, small_headline: true }
-				},
-				#b7 : {
-					bind: none,
-					height: =size.continuation_height_normal,
-					options: { show_body: false, small_headline: true }
-				},
-				#b8 : {
-					bind: none,
-					height: =size.continuation_height_large,
-					options: { show_body: true, small_headline: true }
 				}
+
 			}},
 			{if: =portrait, then: {
 				.maude: {
@@ -82,89 +35,116 @@
 					height:220
 				},
 				#b2:	{
-					top:230,
-					height:85,
+					top:236,
+					height:80,
 					border-width: [1,0,0,0],
-					padding:[12,0,0,0],
-					background-color:white
+					padding:[5,0,0,0],
+					top_border: true
 				},
 				#b3:{
-					top:320,
-					height:85,
+					top:326,
+					height:80,
 					border-width: [1,0,0,0],
-					padding:[12,0,0,0]
+					padding:[5,0,0,0],
+					top_border: true
 				},
 				#b4:{
-					top:410,
-					height:85,
+					top:416,
+					height:80,
 					border-width: [1,0,0,0],
-					padding:[12,0,0,0]
+					padding:[5,0,0,0],
+					top_border: true
 				},
 				#b5:{
-					top:500,
-					height:85,
+					top:506,
+					height:80,
 					border-width: [1,0,0,0],
-					padding:[12,0,0,0]
+					padding:[5,0,0,0],
+					top_border: true
 				},
 				#b6:	{
-					top:590,
-					height:85,
+					top:600,
+					height:80,
 					border-width: [1,0,0,0],
-					padding:[12,0,0,0]
+					padding:[10,0,0,0],
+					top_border: true
 				},
-				#latestTechnologyNews: {
-					top:690,
-					height:85,
+				#latest_news_header: {
+					top:696,
+					height:40,
 					border-width: [3,0,0,0],
 					border-color:#444444,
 					padding:[5,0,0,0]
 
 				},
-				#b7:	{
-					top:720,
-					height:85,
-					padding:[12,0,0,0],
-					background-color:white
-				},
-				#b8:{
-					top:810,
-					height:85,
+				#b11:	{
+					top:726,
+					height:80,
 					border-width: [1,0,0,0],
-					padding:[17,0,0,0]
+					padding:[5,0,0,0]
+				},
+				#b12:{
+					top:816,
+					height:80,
+					border-width: [1,0,0,0],
+					padding:[5,0,0,0]
 				}
 			}},
 			{if: =landscape, then: {
+				.maude: {
+					border-color:#d8d8d8
+				},
 				#b1:	{
-					top:30,
-					height:465
+					top:0,
+					height:400
 				},
 				#b2:	{
-					top:30,
-					height:310
+					top:410,
+					height:110,
+					border-width: [1,0,0,0],
+					padding:[6,0,0,0]
 				},
-				#b3:	{
-					top:30,
-					height:310
+				#b3:{
+					top:530,
+					height:110,
+					border-width: [1,0,0,0],
+					padding:[6,0,0,0]
 				},
-				#b4:	{
-					top:505,
-					height:145
+				#b4:{
+					top:0,
+					height:110
 				},
 				#b5:{
-					top:505,
-					height:145
+					top:120,
+					height:110,
+					border-width: [1,0,0,0],
+					padding:[6,0,0,0]
 				},
 				#b6:	{
-					top:350,
-					height:145
+					top:240,
+					height:110,
+					border-width: [1,0,0,0],
+					padding:[6,0,0,0]
 				},
-				#b7:	{
-					top:350,
-					height:145
+				#latest_news_header: {
+					top:374,
+					height:40,
+					border-width: [3,0,0,0],
+					border-color:#444444,
+					padding:[10,0,0,0]
+
 				},
-				#b8:	{
-					top:505,
-					height:145
+				#b11:	{
+					top:410,
+					height:110,
+					border-width: [1,0,0,0],
+					padding:[6,0,0,0]
+				},
+				#b12:{
+					top:530,
+					height:110,
+					border-width: [1,0,0,0],
+					padding:[6,0,0,0]
 				}
 
 			}}
@@ -173,139 +153,334 @@
 	<style>{
 		if: =scale.phone,
 		then: {
+			#b1: {
+				options: {
+					module: url(TOP-IMAGE_module.xml),
+					show_body: true,
+					medium_headline: true
+				}
+			},
 
+			#b2: {
+				height: =size.continuation_height_large,
+				options: {
+					module: url(TOP-IMAGE_module.xml),
+					show_body: true,
+					show_image: true,
+					float_image: right,
+					small_headline: true
+				}
+			},
+
+			#b3: {
+				height: =size.continuation_height_large,
+				options: {
+					module: url(TOP-IMAGE_module.xml),
+					show_body: true,
+					show_image: true,
+					float_image: right,
+					small_headline: true
+				}
+			},
+
+			#b4: {
+				bind: none,
+				height: =size.continuation_height_normal,
+				options: {
+					module: url(CONTINUATION-dynamic_module.xml),
+					show_body: false,
+					small_headline: true
+				}
+			},
+
+			#b5: {
+				bind: none,
+				height: =size.continuation_height_normal,
+				options: {
+					module: url(CONTINUATION-dynamic_module.xml),
+					show_body: false,
+					small_headline: true
+				}
+			},
+
+			#b6: {
+				bind: none,
+				height: =size.continuation_height_normal,
+				options: {
+					module: url(CONTINUATION-dynamic_module.xml),
+					show_body: false,
+					small_headline: true
+				}
+			},
+
+			#b11: {
+				bind: none,
+				height: =size.continuation_height_normal,
+				options: {
+					module: url(CONTINUATION-dynamic_module.xml),
+					show_body: false,
+					small_headline: true
+				}
+			},
+
+			#b12: {
+				bind: none,
+				height: =size.continuation_height_normal,
+				options: {
+					module: url(CONTINUATION-dynamic_module.xml),
+					show_body: false,
+					small_headline: true
+				}
+			},
+
+			#latest_news_header: {
+				text-align: center
+			},
+			#sponsored-content: {
+				font-name: "Whitney-Semibold",
+				padding: [12,0,4,0]
+			},
+			#deloitte_subhed: {
+				font-name: "Whitney-Medium",
+				padding: [8,10,10,10],
+				line-height:18
+			}
 		},
 		else: {
 			#b1: {
 				options: {
-					medium_headline:true,
-					show_body: true,
-					background_color: =color.background,
-					wide_image: true
+					if:=portrait, then: {
+						medium_headline:true,
+						show_body: true,
+						background_color: =color.background,
+						wide_image: true
+					}, else: {
+						medium_headline:true,
+						show_image: true,
+						background_color: =color.background,
+						module: url(TOP-IMAGE_module.xml)
+					}
 				}
 			},
 			#b2: {
 				options: {
 					show_body: true,
-					smedium_headline: true,
+					small_headline: true,
 					background_color: =color.background,
-					small_wide_image: true
+					small_wide_image: true,
+					middle_align_text: true
 				}
 			},
 			#b3: {
 				options: {
 					show_body: true,
-					smedium_headline: true,
-					background_color: =color.background,
-					small_wide_image: true
+					small_headline: true,
+					background_color: blue,
+					small_wide_image: true,
+					middle_align_text: true
 				}
 			},
 			#b4: {
 				options: {
-					hide_border: =portrait,
 					show_body: true,
-					smedium_headline: true,
+					small_headline: true,
 					background_color: =color.background,
-					small_wide_image: true
+					small_wide_image: true,
+					middle_align_text: true
 				}
 			},
 			#b5: {
 				options: {
 					show_body: true,
-					smedium_headline: true,
+					small_headline: true,
 					background_color: =color.background,
-					small_wide_image: true
+					small_wide_image: true,
+					middle_align_text: true
 				}
 			},
 			#b6: {
 				options: {
 					show_body: true,
-					smedium_headline: true,
+					small_headline: true,
 					background_color: =color.background,
-					small_wide_image: true
+					small_wide_image: true,
+					middle_align_text: true
 				}
 			},
-			#b7: {
+			#b11: {
 				options: {
 					show_body: true,
-					smedium_headline: true,
+					small_headline: true,
 					background_color: =color.background,
-					small_wide_image: true
+					small_wide_image: true,
+					middle_align_text: true
 				}
 			},
-			#b8: {
+			#b12: {
 				options: {
 					show_body: true,
-					smedium_headline: true,
+					small_headline: true,
 					background_color: =color.background,
-					small_wide_image: true
+					small_wide_image: true,
+					middle_align_text: true
 				}
+			},
+			#deloitteheader: {
+				top: 0,
+				height: 130
+			},
+			#sponsored-content: {
+				font-name: "Whitney-Semibold",
+				padding: [12,0,12,0]
+			},
+			#deloitte_subhed: {
+				font-name: "Whitney-Medium",
+				padding: [12,12,0,12],
+				line-height:18
 			}
 		}
 	}</style>
 	<style>{
 		#deloitteheader: {
 			background-color: #e8eeee,
-			top: 0,
-			height: 68,
+			text-align:center,
+			color: #333333,
+			font-size:14
+		},
+		#deloitte_subhed_mark: {
+			content: {
+				$switch: [
+					{ if: =page.section, equals: CIO, then: "Business-led, Technology-enabled: Insight written and compiled by Deloitte" },
+					{ if: =page.section, equals: CFO, then: "CFO insight and analysis written and compiled by Deloitte" },
+					{ if: =page.section, equals: RISK_AND_COMPLIANCE, then: "Risk management, strategy and analysis written and compiled by Deloitte" }
+				]
+			}
+		},
+		#deloitteimage: {
 			background-image: "url(deloitte@2x.png)",
+			position: relative,
 			background-position: aspect-fit,
-			padding: [20, 0, 0, 0]
+			left: 0,
+			right: 0,
+			height: 20,
+			width: 103,
+			anchor-x: center
 		},
-		#deloitteheadertext1: {
-			content: "Deloitte",
-			text-align: center,
-			font-size: 24,
-			font-name: "DJ5Escrow-Roman"
-		},
-		#deloitteheadertext2: {
-			content: "Deloitte",
-			text-align: center,
-			font-size: 24,
-			font-name: "DJ5Escrow-Roman"
-		},
-		#deloitte: {
+		#deloitte_list: {
 			background-color: #e8eeee,
-			height:{if: =landscape, then:472, else:820},
-			top: 88,
+			height:{if: =landscape, then:520, else:770},
+			top: 130,
 			options: {
-				filename: "DELOITTE.jpml",
 				shadow_height: 40,
 				shadow_color: "rgba(.2, .2, .2, 0.5)"
 			}
 		},
-		#latestTechnologyNews: {
+		#latest_news_header: {
 			font-name: "DJ5Exchange-Medium",
-			font-size: 14
+			font-size: 14,
+			color: #444444
+		},
+		#latest_news_mark: {
+			content: {
+				$switch: [
+					{ if: =page.section, equals: CIO, then: "LATEST TECHNOLOGY NEWS" },
+					{ if: =page.section, equals: CFO, then: "LATEST FINANCE NEWS" },
+					{ if: =page.section, equals: RISK_AND_COMPLIANCE, then: "LATEST NEWS" }
+				]
+			}
+		},
+		#deloitte_inner: {
+			display: none
 		}
 
 	}</style>
 	<box id="page_details" embed="pagedescription" />
 
-	<box id="b1" embed="article" class="column8 positionx1 maude unit_plain unit_386" module="RIGHT-IMAGE_module.xml" />
-	<box id="b2" embed="article" class="column8 positionx1  maude unit_plain unit_166" module="RIGHT-IMAGE_module.xml" />
-	<box id="b3" embed="article" class="column8 positionx1 maude unit_plain unit_166" module="RIGHT-IMAGE_module.xml" />
-	<box id="b4" embed="article" class="column8 positionx1  maude unit_plain unit_50" module="RIGHT-IMAGE_module.xml" />
-	<box id="b5" embed="article" class="column8 positionx1  maude unit_plain unit_50" module="RIGHT-IMAGE_module.xml" />
-	<box id="b6" embed="article" class="column8 positionx1 maude unit_plain unit_386" module="RIGHT-IMAGE_module.xml" />
-	<box id="latestTechnologyNews" class="column8 positionx1 maude unit_plain">
-		<p>LATEST TECHNOLOGY NEWS</p>
+	<box id="b1" embed="article" class="column6-8 positionx1 maude unit_plain unit_386" module="RIGHT-IMAGE_module.xml" />
+	<box id="b2" embed="article" class="column6-8 positionx1 maude unit_plain unit_166" module="RIGHT-IMAGE_module.xml" />
+
+	<box id="deloitteheader" class="column4 positionx13-9 maude unit_plain">
+		<p id="sponsored-content">SPONSORED CONTENT</p>
+		<panel id="deloitteimage-panel"><box id="deloitteimage" /></panel>
+		<p id="deloitte_subhed"><mark id="deloitte_subhed_mark" /></p>
 	</box>
-	<box id="b7" embed="article" class="column8 positionx1  maude unit_plain unit_166" module="RIGHT-IMAGE_module.xml" />
-	<box id="b8" embed="article" class="column8 positionx1 maude unit_plain unit_166" module="RIGHT-IMAGE_module.xml" />
-
-	<box id="deloitteheader" class="tablet_only column4 positionx9"/>
-	<box id="deloitte" class="tablet_only column4 positionx9" embed="list">
+	<box id="deloitte_list" class="tablet_only column4 positionx13-9" embed="list">
+		<style src="DELOITTE-stylesheet.ejs"/>
+		<panel id="deloitte_inner">
+			<panel id="deloitte_item_1" class="deloitte_item deloitte_item_first">
+				<p class="deloitte_headline"><mark id="deloitte_headline_1"/></p>
+				<p class="deloitte_summary"><mark id="deloitte_summary_1"/></p>
+			</panel>
+			<panel id="deloitte_item_2" class="deloitte_item">
+				<p class="deloitte_headline"><mark id="deloitte_headline_2"/></p>
+				<p class="deloitte_summary"><mark id="deloitte_summary_2"/></p>
+			</panel>
+			<panel id="deloitte_item_3" class="deloitte_item">
+				<p class="deloitte_headline"><mark id="deloitte_headline_3"/></p>
+				<p class="deloitte_summary"><mark id="deloitte_summary_3"/></p>
+			</panel>
+			<panel id="deloitte_item_4" class="deloitte_item">
+				<p class="deloitte_headline"><mark id="deloitte_headline_4"/></p>
+				<p class="deloitte_summary"><mark id="deloitte_summary_4"/></p>
+			</panel>
+			<panel id="deloitte_item_5" class="deloitte_item">
+				<p class="deloitte_headline"><mark id="deloitte_headline_5"/></p>
+				<p class="deloitte_summary"><mark id="deloitte_summary_5"/></p>
+			</panel>
+			<panel id="deloitte_item_6" class="deloitte_item deloitte_item_last">
+				<p class="deloitte_headline"><mark id="deloitte_headline_6"/></p>
+				<p class="deloitte_summary"><mark id="deloitte_summary_6"/></p>
+			</panel>
+		</panel>
 	</box>
+	<panel id="deloitte_phone" class="phone_only">
+		<style src="DELOITTE-stylesheet.ejs"/>
+		<panel id="deloitte_item_1" class="deloitte_item deloitte_item_first">
+			<p class="deloitte_headline"><mark id="deloitte_headline_1"/></p>
+			<p class="deloitte_summary"><mark id="deloitte_summary_1"/></p>
+		</panel>
+		<panel id="deloitte_item_2" class="deloitte_item">
+			<p class="deloitte_headline"><mark id="deloitte_headline_2"/></p>
+			<p class="deloitte_summary"><mark id="deloitte_summary_2"/></p>
+		</panel>
+		<panel id="deloitte_item_3" class="deloitte_item">
+			<p class="deloitte_headline"><mark id="deloitte_headline_3"/></p>
+			<p class="deloitte_summary"><mark id="deloitte_summary_3"/></p>
+		</panel>
+		<panel id="deloitte_item_4" class="deloitte_item">
+			<p class="deloitte_headline"><mark id="deloitte_headline_4"/></p>
+			<p class="deloitte_summary"><mark id="deloitte_summary_4"/></p>
+		</panel>
+		<panel id="deloitte_item_5" class="deloitte_item">
+			<p class="deloitte_headline"><mark id="deloitte_headline_5"/></p>
+			<p class="deloitte_summary"><mark id="deloitte_summary_5"/></p>
+		</panel>
+		<panel id="deloitte_item_6" class="deloitte_item deloitte_item_last">
+			<p class="deloitte_headline"><mark id="deloitte_headline_6"/></p>
+			<p class="deloitte_summary"><mark id="deloitte_summary_6"/></p>
+		</panel>
+	</panel>
 
+	<box id="d1" embed="article" class="rail_only maude unit_plain" module="CONTINUATION-dynamic_module.xml" />
+	<box id="d2" embed="article" class="rail_only maude unit_plain" module="CONTINUATION-dynamic_module.xml" />
+	<box id="d3" embed="article" class="rail_only maude unit_plain" module="CONTINUATION-dynamic_module.xml" />
+	<box id="d4" embed="article" class="rail_only maude unit_plain" module="CONTINUATION-dynamic_module.xml" />
+	<box id="d5" embed="article" class="rail_only maude unit_plain" module="CONTINUATION-dynamic_module.xml" />
+	<box id="d6" embed="article" class="rail_only maude unit_plain" module="CONTINUATION-dynamic_module.xml" />
 
-	<!-- <box id="b6" embed="article" class="column4 positionx9    maude unit_plain unit_50" module="CONTINUATION-dynamic_module.xml" />
-	<box id="b7" embed="article" class="column4 positionx13-9 maude unit_plain unit_50" module="CONTINUATION-dynamic_module.xml" />
-	<box id="b8" embed="article" class="column4 positionx9    maude unit_plain unit_50" module="CONTINUATION-dynamic_module.xml" />
-	<box id="b9" embed="article" class="column4 positionx13-9 maude unit_plain unit_50" module="CONTINUATION-dynamic_module.xml" />
-	<box id="b10" embed="article" class="column4 positionx13-9 maude unit_plain unit_50" module="CONTINUATION-dynamic_module.xml" />
-	<box id="b11" embed="article" class="column4 positionx13-9 maude unit_plain unit_50" module="CONTINUATION-dynamic_module.xml" />
-	<box id="b12" embed="article" class="column4 positionx13-9 maude unit_plain unit_50" module="CONTINUATION-dynamic_module.xml" />
-	<box id="b13" embed="article" class="column4 positionx13-9 maude unit_plain unit_50" module="CONTINUATION-dynamic_module.xml" /> -->
+	<box id="b3" embed="article" class="column6-8 positionx1 maude unit_plain unit_166" module="RIGHT-IMAGE_module.xml" />
+	<box id="b4" embed="article" class="column6-8 positionx7-1 maude unit_plain unit_50" module="RIGHT-IMAGE_module.xml" />
+	<box id="b5" embed="article" class="column6-8 positionx7-1 maude unit_plain unit_50" module="RIGHT-IMAGE_module.xml" />
+	<box id="b6" embed="article" class="column6-8 positionx7-1 maude unit_plain unit_50" module="RIGHT-IMAGE_module.xml" />
 
+	<box id="b7" embed="article"  class="phone_only rail_only maude unit_plain unit_50" module="RIGHT-IMAGE_module.xml" />
+	<box id="b8" embed="article"  class="phone_only rail_only maude unit_plain unit_50" module="RIGHT-IMAGE_module.xml" />
+	<box id="b9" embed="article"  class="phone_only rail_only maude unit_plain unit_50" module="RIGHT-IMAGE_module.xml" />
+	<box id="b10" embed="article" class="phone_only rail_only maude unit_plain unit_50" module="RIGHT-IMAGE_module.xml" />
+
+	<box id="latest_news_header" class="column6-8 positionx7-1 maude unit_plain">
+		<p><mark id="latest_news_mark" /></p>
+	</box>
+	<box id="b11" embed="article" class="column6-8 positionx7-1 maude unit_plain unit_50" module="RIGHT-IMAGE_module.xml" />
+	<box id="b12" embed="article" class="column6-8 positionx7-1 maude unit_plain unit_50" module="RIGHT-IMAGE_module.xml" />
 </jpml>

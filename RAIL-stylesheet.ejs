@@ -307,6 +307,54 @@
 			then: =size.rail_height_with_image,
 			else: =size.rail_height_without_image
 		}
+	},
+	#d1: {
+		height: {
+			if: {$count:[=articles.d1.thumbnail]},
+			more-than: 0,
+			then: =size.rail_height_with_image,
+			else: =size.rail_height_without_image
+		}
+	},
+	#d2: {
+		height: {
+			if: {$count:[=articles.d2.thumbnail]},
+			more-than: 0,
+			then: =size.rail_height_with_image,
+			else: =size.rail_height_without_image
+		}
+	},
+	#d3: {
+		height: {
+			if: {$count:[=articles.d3.thumbnail]},
+			more-than: 0,
+			then: =size.rail_height_with_image,
+			else: =size.rail_height_without_image
+		}
+	},
+	#d4: {
+		height: {
+			if: {$count:[=articles.d4.thumbnail]},
+			more-than: 0,
+			then: =size.rail_height_with_image,
+			else: =size.rail_height_without_image
+		}
+	},
+	#d5: {
+		height: {
+			if: {$count:[=articles.d5.thumbnail]},
+			more-than: 0,
+			then: =size.rail_height_with_image,
+			else: =size.rail_height_without_image
+		}
+	},
+	#d6: {
+		height: {
+			if: {$count:[=articles.d6.thumbnail]},
+			more-than: 0,
+			then: =size.rail_height_with_image,
+			else: =size.rail_height_without_image
+		}
 	}
 }}
 

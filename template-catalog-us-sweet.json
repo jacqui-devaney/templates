@@ -1,24 +1,9 @@
 {
-    "article": [
-        {
-            "filename": "ARTICLE-pages.xml",
-            "title": "ARTICLE-pages"
-        },
-        {
-            "filename": "ARTICLE-pages-narrow.xml",
-            "title": "ARTICLE-pages-narrow"
-        },
-        {
-            "filename": "ARTICLE-pages-h-slideshow.xml",
-            "title": "ARTICLE-pages-h-slideshow"
-        },
-        {
-            "filename": "ARTICLE-pages-v-slideshow.xml",
-            "title": "ARTICLE-pages-v-slideshow"
-        }
-    ],
     "section": [
         {
+            "filename": "SECTION-DELOITTE_template.xml",
+            "title": "Deloitte Section Template",
+            "usage": "front",
             "boxes": [
                 "b1",
                 "b2",
@@ -37,17 +22,12 @@
                 "b9",
                 "b10",
                 "b11",
-                "b12",
-                "b13",
-                "b14",
-                "b15",
-                "b16"
-            ],
-            "filename": "SECTION-DELOITTE_template.xml",
-            "title": "Deloitte Section Template",
-            "usage": "front"
+                "b12"
+            ]
         },
         {
+            "filename": "CONTINUATION-generic-32_template.xml",
+            "usage": "continuation",
             "boxes": [
                 "b1",
                 "b2",
@@ -81,11 +61,11 @@
                 "b30",
                 "b31",
                 "b32"
-            ],
-            "filename": "CONTINUATION-generic-32_template.xml",
-            "usage": "continuation"
+            ]
         },
         {
+            "filename": "CONTINUATION-generic-16_template.xml",
+            "usage": "continuation",
             "boxes": [
                 "b1",
                 "b2",
@@ -103,11 +83,11 @@
                 "b14",
                 "b15",
                 "b16"
-            ],
-            "filename": "CONTINUATION-generic-16_template.xml",
-            "usage": "continuation"
+            ]
         },
         {
+            "filename": "CONTINUATION-generic-8_template.xml",
+            "usage": "continuation",
             "boxes": [
                 "b1",
                 "b2",
@@ -117,39 +97,56 @@
                 "b6",
                 "b7",
                 "b8"
-            ],
-            "filename": "CONTINUATION-generic-8_template.xml",
-            "usage": "continuation"
+            ]
         },
         {
+            "filename": "CONTINUATION-generic-4_template.xml",
+            "usage": "continuation",
             "boxes": [
                 "b1",
                 "b2",
                 "b3",
                 "b4"
-            ],
-            "filename": "CONTINUATION-generic-4_template.xml",
-            "usage": "continuation"
+            ]
         },
         {
+            "filename": "CONTINUATION-generic-2_template.xml",
+            "usage": "continuation",
             "boxes": [
                 "b1",
                 "b2"
-            ],
-            "filename": "CONTINUATION-generic-2_template.xml",
-            "usage": "continuation"
+            ]
         },
         {
+            "filename": "CONTINUATION-generic-1_template.xml",
+            "usage": "continuation",
             "boxes": [
                 "b1"
-            ],
-            "filename": "CONTINUATION-generic-1_template.xml",
-            "usage": "continuation"
+            ]
         },
         {
-            "boxes": [],
             "filename": "GENERIC-fullpagead-template.xml",
-            "usage": "ads"
+            "usage": "ads",
+            "boxes": []
+        }
+
+    ],
+    "article": [
+        {
+            "filename": "ARTICLE-pages.xml",
+            "title": "ARTICLE-pages"
+        },
+        {
+            "filename": "ARTICLE-pages-narrow.xml",
+            "title": "ARTICLE-pages-narrow"
+        },
+        {
+            "filename": "ARTICLE-pages-h-slideshow.xml",
+            "title": "ARTICLE-pages-h-slideshow"
+        },
+        {
+            "filename": "ARTICLE-pages-v-slideshow.xml",
+            "title": "ARTICLE-pages-v-slideshow"
         }
     ]
 }

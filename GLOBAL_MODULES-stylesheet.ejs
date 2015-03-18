@@ -8,6 +8,7 @@
 				font-name: {
 					$switch: [
 						{if: =issue.type, equals: "NOW", then: "DJ5Exchange-Semibold"},
+						{if: =issue.type, equals: "CSUITE", then: "DJ5Exchange-Semibold"},
 						{if: =options.small_headline, then: "DJ5EscrowCond-Semibold"},
 						{if: =options.smedium_headline, then: "DJ5EscrowCond-Semibold"},
 						{if: =options.medium_headline, then: "DJ5EscrowCond-Semibold"},
@@ -114,7 +115,7 @@
 		content: "\u00a0K",
 		display: { if-all: [=issue.locked, =article.paid], then: default, else: none },
 		color: #948464
-	},	
+	},
 	#body-first-p: {
 		text-indent: {if: =options.indent, then: =text.indent, else: 0}
 	},

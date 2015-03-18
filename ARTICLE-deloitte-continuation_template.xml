@@ -1,4 +1,4 @@
-<jpml id="ARTICLE-continuation_template">
+<jpml id="ARTICLE-deloitte-continuation_template">
     <style src="GLOBAL-stylesheet.ejs"/>
     <style src="GRID-stylesheet.ejs"/>
     <style src="DELOITTE-stylesheet.ejs" />
@@ -33,5 +33,5 @@
         <box class="deloitte_strap_image"/>
         <p id="deloitte_strap_p"><mark id="deloitte_strap_mark"/></p>
     </panel>
-    <box id="view" embed="article" class="column16-12 positionx1" module="ARTICLE-continuation_module.xml" />
+    <box id="view" embed="article" class="column16-12 positionx1" module="ARTICLE-deloitte-continuation_module.xml" />
 </jpml>

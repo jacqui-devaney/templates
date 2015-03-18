@@ -1,0 +1,10 @@
+<jpml id="ARTICLE-deloitte-continuation-phone_template">
+	<!-- GLOBAL not included -->
+	<style src="PHONE-stylesheet.ejs" />
+	<style>{
+		#view: {
+			bottom: 0
+		}
+	}</style>
+    <box id="view" embed="article" class="maude" module="ARTICLE-deloitte-continuation-phone_module.xml" />
+</jpml>

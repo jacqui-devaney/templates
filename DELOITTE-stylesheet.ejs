@@ -22,5 +22,79 @@
 		left: 0,
 		width: 103,
 		height: 20
-	}
+	},
+
+	#deloitte_list: {
+		min-height: 0,
+		max-height: 10000,
+		background-color: #e8eeee
+	},
+
+	#deloitte_inner: {
+		padding: [0, 15]
+	},
+
+	#deloitte_phone: {
+		background-color: #e8eeee,
+		padding: [0, 10]
+	},
+
+	.deloitte_item: {
+		padding: { if: =scale.phone, then: [15, 0, 14.5, 0], else: [20, 0, 19.5, 0] },
+		border-width: [0, 0, 0.5, 0],
+		border-color: #979797
+	},
+
+	.deloitte_item_first: {
+		if: =scale.phone, then: {
+			padding: [14.5, 0, 14.5, 0],
+			border-width: [0.5, 0, 0.5, 0],
+			border-color: #979797
+		}, else: {
+			padding: [14.5, 0, 19.5, 0],
+			border-width: [0.5, 0, 0.5, 0],
+			border-color: #979797
+		}
+	},
+	
+	.deloitte_item_last: {
+		padding: { if: =scale.phone, then: [15, 0, 15, 0], else: [20, 0, 20, 0] },
+		border-width: [0]
+	},
+
+	.deloitte_headline: {
+		font-name: "Whitney-Medium",
+		font-size: 20,
+		line-height: 25,
+		color: #10427E
+	},
+
+	.deloitte_summary: {
+		font-name: "Whitney-Book",
+		font-size: 14,
+		line-height: 18,
+		color: #333333
+	},
+
+	#deloitte_item_1: { if: true, then: { options: { reference: =articles.d1.id } } },
+	#deloitte_item_2: { if: true, then: { options: { reference: =articles.d2.id } } },
+	#deloitte_item_3: { if: true, then: { options: { reference: =articles.d3.id } } },
+	#deloitte_item_4: { if: true, then: { options: { reference: =articles.d4.id } } },
+	#deloitte_item_5: { if: true, then: { options: { reference: =articles.d5.id } } },
+	#deloitte_item_6: { if: true, then: { options: { reference: =articles.d6.id } } },
+
+	#deloitte_headline_1: { content: =articles.d1.headline },
+	#deloitte_headline_2: { content: =articles.d2.headline },
+	#deloitte_headline_3: { content: =articles.d3.headline },
+	#deloitte_headline_4: { content: =articles.d4.headline },
+	#deloitte_headline_5: { content: =articles.d5.headline },
+	#deloitte_headline_6: { content: =articles.d6.headline },
+
+	#deloitte_summary_1: { content: =articles.d1.summary },
+	#deloitte_summary_2: { content: =articles.d2.summary },
+	#deloitte_summary_3: { content: =articles.d3.summary },
+	#deloitte_summary_4: { content: =articles.d4.summary },
+	#deloitte_summary_5: { content: =articles.d5.summary },
+	#deloitte_summary_6: { content: =articles.d6.summary }
+
 }

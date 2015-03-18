@@ -1,0 +1,105 @@
+<jpml id="ARTICLE-deloitte-front-phone_module">
+	<style src="GLOBAL-stylesheet.ejs" />
+	<style src="GLOBAL_MODULES-stylesheet.ejs" />
+	<style src="ARTICLE-stylesheet.ejs" />
+	<style src="PHONE-MODULES-stylesheet.ejs" />
+	<style>{
+		jpml: {
+			background-color: =options.background_color
+		}
+	}</style>
+	<style>{
+		jpml: { min-height: 0 },
+		#body_container: {
+			padding: [0, 10, 0, 10],
+			flow: article_body
+		},
+		#media: {
+			top: 0,
+			left: 0,
+			right: 0,
+			position: relative
+		},
+		#media_asset: {
+			height: {$min: [{$divide: [=view.width, =media.aspect]}, {$subtract:[=view.height, 220]}]}
+		},
+		#media_caption: {
+			padding: [0, 10, 3, 10],
+			font-name: "Whitney-Medium",
+			font-size: 11,
+			color: #666666
+		},
+		#header_top: {
+			padding:[14,10,0,10]
+		},
+		.article_body: {
+			line-height: {$multiply: [22, =view.zoomlevel]},
+			text-align: justify,
+			hyphens: auto,
+			font-name: "Whitney-Medium",
+			padding: [16, 0, 0, 0]
+		},
+		.article_flashline: {
+			padding: [14, 0, 8.5, 0],
+			border-width: [0, 0, 0.5, 0],
+			border-color: #e1e0df
+		},
+		.article_headline: {
+			font-name: "Whitney-Medium",
+			font-size: 30,
+			line-height:36,
+			color: #262626,
+			padding:[0, 0, 0, 0]
+		},
+		.article_subhed:{
+			font-name: "Whitney-BookItalic",
+			font-size: 20,
+			line-height: 27,
+			color: #6D6D5D,
+			padding: [12, 0, 0, 0]
+		},
+		.module_flashline: {
+			font-size: 16,
+			font-name: "Whitney-Semibold",
+			color: #004990,
+			padding: [16, 0, 0, 0]
+		},
+		.border-p: {
+			border-width:[16, 0, 0, 0],
+			layout-grid-line: 0,
+			layout-grid-line-offset: 0,
+			background-color: #CACACA,
+			border-color: =color.background
+		},
+		.article_pubdate: {
+			font-name: "Whitney-Medium",
+			font-size: 16,
+			color: #222222,
+			padding: [10, 0, 0, 0]
+		},
+		.border-mark: {
+			line-height: 1,
+			color: transparent,
+			content: "deloitte"
+		}
+	}</style>
+	<box id="media">
+		<box id="media_asset" embed="media"/>
+		<p id="media_caption"><mark id="mark_caption" /></p>
+	</box>
+
+	<panel id="header_top">
+		<p class="article_headline"><span embed="headline"/></p>
+		<h2 class="article_subhed" embed="subhed" />
+	</panel>
+
+	<panel id="body_container">
+		<p class="module_flashline">CONTENT FROM OUR SPONSOR</p>
+		<p class="article_pubdate">Updated
+			<span  embed="pubdate-string"/>
+		</p>
+		<p class="border-p"><mark class="border-mark"/></p>
+		<panel class="article_body" embed="body"/>
+	</panel>
+
+</jpml>

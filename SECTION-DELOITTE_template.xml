@@ -23,8 +23,102 @@
 			{if: =scale.phone, then: {
 				#page_details: {
 					display: none
-				}
+				},
 
+				#b1: {
+					options: {
+						module: url(TOP-IMAGE_module.xml),
+						show_body: true, 
+						medium_headline: true
+					}
+				},
+
+				#b2: {
+					height: =size.continuation_height_large,
+					options: {
+						module: url(TOP-IMAGE_module.xml),
+						show_body: true,
+						show_image: true,
+						float_image: right,
+						small_headline: true
+					}
+				},
+
+				#b3: {
+					height: =size.continuation_height_large,
+					options: {
+						module: url(TOP-IMAGE_module.xml),
+						show_body: true,
+						show_image: true,
+						float_image: right,
+						small_headline: true
+					}
+				},
+
+				#b4: {
+					bind: none,
+					height: =size.continuation_height_normal,
+					options: {
+						module: url(CONTINUATION-dynamic_module.xml),
+						show_body: false,
+						small_headline: true
+					}
+				},
+
+				#b5: {
+					bind: none,
+					height: =size.continuation_height_normal,
+					options: {
+						module: url(CONTINUATION-dynamic_module.xml),
+						show_body: false,
+						small_headline: true
+					}
+				},
+
+				#b6: {
+					bind: none,
+					height: =size.continuation_height_normal,
+					options: {
+						module: url(CONTINUATION-dynamic_module.xml),
+						show_body: false,
+						small_headline: true
+					}
+				},
+
+				#b11: {
+					bind: none,
+					height: =size.continuation_height_normal,
+					options: {
+						module: url(CONTINUATION-dynamic_module.xml),
+						show_body: false,
+						small_headline: true
+					}
+				},
+
+				#b12: {
+					bind: none,
+					height: =size.continuation_height_normal,
+					options: {
+						module: url(CONTINUATION-dynamic_module.xml),
+						show_body: false,
+						small_headline: true
+					}
+				},
+
+				#latest_news_header: {
+					text-align: center
+				},
+
+				#sponsored-content: {
+					font-name: "Whitney-Semibold",
+					padding: [12,0,4,0]
+				},
+
+				#deloitte_subhed: {
+					font-name: "Whitney-Medium",
+					padding: [8,10,10,10],
+					line-height:18
+				}
 			}},
 			{if: =portrait, then: {
 				.maude: {
@@ -149,102 +243,8 @@
 		]
 	} </style>
 	<style>{
-		if: =scale.phone,
+		if: =scale.tablet,
 		then: {
-			#b1: {
-				options: {
-					module: url(TOP-IMAGE_module.xml),
-					show_body: true, 
-					medium_headline: true
-				}
-			},
-
-			#b2: {
-				height: =size.continuation_height_large,
-				options: {
-					module: url(TOP-IMAGE_module.xml),
-					show_body: true,
-					show_image: true,
-					float_image: right,
-					small_headline: true
-				}
-			},
-
-			#b3: {
-				height: =size.continuation_height_large,
-				options: {
-					module: url(TOP-IMAGE_module.xml),
-					show_body: true,
-					show_image: true,
-					float_image: right,
-					small_headline: true
-				}
-			},
-
-			#b4: {
-				bind: none,
-				height: =size.continuation_height_normal,
-				options: {
-					module: url(CONTINUATION-dynamic_module.xml),
-					show_body: false,
-					small_headline: true
-				}
-			},
-
-			#b5: {
-				bind: none,
-				height: =size.continuation_height_normal,
-				options: {
-					module: url(CONTINUATION-dynamic_module.xml),
-					show_body: false,
-					small_headline: true
-				}
-			},
-
-			#b6: {
-				bind: none,
-				height: =size.continuation_height_normal,
-				options: {
-					module: url(CONTINUATION-dynamic_module.xml),
-					show_body: false,
-					small_headline: true
-				}
-			},
-
-			#b11: {
-				bind: none,
-				height: =size.continuation_height_normal,
-				options: {
-					module: url(CONTINUATION-dynamic_module.xml),
-					show_body: false,
-					small_headline: true
-				}
-			},
-
-			#b12: {
-				bind: none,
-				height: =size.continuation_height_normal,
-				options: {
-					module: url(CONTINUATION-dynamic_module.xml),
-					show_body: false,
-					small_headline: true
-				}
-			},
-
-			#latest_news_header: {
-				text-align: center
-			},
-			#sponsored-content: {
-				font-name: "Whitney-Semibold",
-				padding: [12,0,4,0]
-			},
-			#deloitte_subhed: {
-				font-name: "Whitney-Medium",
-				padding: [8,10,10,10],
-				line-height:18
-			}
-		},
-		else: {
 			#b1: {
 				options: {
 					if:=portrait, then: {
@@ -459,12 +459,12 @@
 		</panel>
 	</panel>
 
-	<box id="d1" embed="article" class="rail_only maude unit_plain" module="CONTINUATION-dynamic_module.xml" />
-	<box id="d2" embed="article" class="rail_only maude unit_plain" module="CONTINUATION-dynamic_module.xml" />
-	<box id="d3" embed="article" class="rail_only maude unit_plain" module="CONTINUATION-dynamic_module.xml" />
-	<box id="d4" embed="article" class="rail_only maude unit_plain" module="CONTINUATION-dynamic_module.xml" />
-	<box id="d5" embed="article" class="rail_only maude unit_plain" module="CONTINUATION-dynamic_module.xml" />
-	<box id="d6" embed="article" class="rail_only maude unit_plain" module="CONTINUATION-dynamic_module.xml" />
+	<box id="d1" embed="article" class="rail_only maude unit_deloitte" module="CONTINUATION-dynamic_module.xml" />
+	<box id="d2" embed="article" class="rail_only maude unit_deloitte" module="CONTINUATION-dynamic_module.xml" />
+	<box id="d3" embed="article" class="rail_only maude unit_deloitte" module="CONTINUATION-dynamic_module.xml" />
+	<box id="d4" embed="article" class="rail_only maude unit_deloitte" module="CONTINUATION-dynamic_module.xml" />
+	<box id="d5" embed="article" class="rail_only maude unit_deloitte" module="CONTINUATION-dynamic_module.xml" />
+	<box id="d6" embed="article" class="rail_only maude unit_deloitte" module="CONTINUATION-dynamic_module.xml" />
 
 	<box id="b3" embed="article" class="column6-8 positionx1 maude unit_plain unit_166" module="RIGHT-IMAGE_module.xml" />
 	<box id="b4" embed="article" class="column6-8 positionx7-1 maude unit_plain unit_50" module="RIGHT-IMAGE_module.xml" />

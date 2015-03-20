@@ -44,6 +44,15 @@
 		border-width: [0, 0, 1, 0],
         border-color: #DDDDDD
 	},
+	.unit_deloitte: {
+		options: {
+			module: url(Deloitte_NAVIGATION_module.xml),
+			medium_headline: true,
+			show_body: true
+		},
+		border-width: [0, 0, 1, 0],
+        border-color: #DDDDDD
+	},
 	#b1: {
 		height: {
 			if: {$count:[=articles.b1.thumbnail]},
@@ -309,52 +318,22 @@
 		}
 	},
 	#d1: {
-		height: {
-			if: {$count:[=articles.d1.thumbnail]},
-			more-than: 0,
-			then: =size.rail_height_with_image,
-			else: =size.rail_height_without_image
-		}
+		height: 100
 	},
 	#d2: {
-		height: {
-			if: {$count:[=articles.d2.thumbnail]},
-			more-than: 0,
-			then: =size.rail_height_with_image,
-			else: =size.rail_height_without_image
-		}
+		height: 100
 	},
 	#d3: {
-		height: {
-			if: {$count:[=articles.d3.thumbnail]},
-			more-than: 0,
-			then: =size.rail_height_with_image,
-			else: =size.rail_height_without_image
-		}
+		height: 100
 	},
 	#d4: {
-		height: {
-			if: {$count:[=articles.d4.thumbnail]},
-			more-than: 0,
-			then: =size.rail_height_with_image,
-			else: =size.rail_height_without_image
-		}
+		height: 100
 	},
 	#d5: {
-		height: {
-			if: {$count:[=articles.d5.thumbnail]},
-			more-than: 0,
-			then: =size.rail_height_with_image,
-			else: =size.rail_height_without_image
-		}
+		height: 100
 	},
 	#d6: {
-		height: {
-			if: {$count:[=articles.d6.thumbnail]},
-			more-than: 0,
-			then: =size.rail_height_with_image,
-			else: =size.rail_height_without_image
-		}
+		height: 100
 	}
 }}
 

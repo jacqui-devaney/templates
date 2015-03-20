@@ -1,0 +1,39 @@
+<jpml id="NAVIGATION_module">
+	<!-- This module has some use of gross negative padding.  Lets not do this -->
+	<style src="GLOBAL-stylesheet.ejs" />
+	<style src="GLOBAL_MODULES-stylesheet.ejs" />
+	<style src="PHONE-MODULES-stylesheet.ejs" />
+	<style>{
+		jpml: {
+			background-color: =options.background_color,
+			padding:[0, 25, 0, 25],
+			height:100
+		}
+	}</style>
+	<style>{
+		.body: {
+			display: inherit
+		},
+		.module_headline: {
+			font-name: Whitney-Medium,
+			font-size: 20,
+			line-height:24,
+			color: #10427E,
+			padding: [10, 0, 0, 0]
+		},
+		#module_text: {
+			padding:[0,0,0,0]
+		},
+		.body: {
+			font-name: Whitney-Book,
+			font-size:14,
+			line-height:20,
+			color: #555555,
+			padding:[-2,0,0,0]
+		}
+	}</style>
+	<panel id="module_text">
+		<p id="headline" class="module_headline"><mark class="m_headline" /></p>
+		<panel class="body" embed="body"/>
+	</panel>
+</jpml>

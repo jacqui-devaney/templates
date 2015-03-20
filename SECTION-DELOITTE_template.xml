@@ -28,7 +28,7 @@
 				#b1: {
 					options: {
 						module: url(TOP-IMAGE_module.xml),
-						show_body: true, 
+						show_body: true,
 						medium_headline: true
 					}
 				},
@@ -108,12 +108,10 @@
 				#latest_news_header: {
 					text-align: center
 				},
-
 				#sponsored-content: {
 					font-name: "Whitney-Semibold",
 					padding: [12,0,4,0]
 				},
-
 				#deloitte_subhed: {
 					font-name: "Whitney-Medium",
 					padding: [8,10,10,10],
@@ -174,6 +172,7 @@
 				#b11:	{
 					top:726,
 					height:80,
+					border-width: [1,0,0,0],
 					padding:[5,0,0,0]
 				},
 				#b12:{
@@ -220,16 +219,17 @@
 					padding:[6,0,0,0]
 				},
 				#latest_news_header: {
-					top:370,
+					top:374,
 					height:40,
 					border-width: [3,0,0,0],
 					border-color:#444444,
-					padding:[5,0,0,0]
+					padding:[10,0,0,0]
 
 				},
 				#b11:	{
 					top:410,
 					height:110,
+					border-width: [1,0,0,0],
 					padding:[6,0,0,0]
 				},
 				#b12:{
@@ -352,8 +352,8 @@
 					{ if: =page.section, equals: CFO, then: "CFO insight and analysis written and compiled by Deloitte" },
 					{ if: =page.section, equals: RISK_AND_COMPLIANCE, then: "Risk management, strategy and analysis written and compiled by Deloitte" }
 				]
-			}		
-		},			
+			}
+		},
 		#deloitteimage: {
 			background-image: "url(deloitte@2x.png)",
 			position: relative,

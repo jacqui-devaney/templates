@@ -11,9 +11,6 @@
 		}
 	}</style>
 	<style>{
-		.body: {
-			display: inherit
-		},
 		.module_headline: {
 			font-name: Whitney-Medium,
 			font-size: 20,
@@ -30,10 +27,13 @@
 			line-height:20,
 			color: #555555,
 			padding:[-2,0,0,0]
+		},
+		.websummary: {
+			content: =article.websummary
 		}
 	}</style>
 	<panel id="module_text">
 		<p id="headline" class="module_headline"><mark class="m_headline" /></p>
-		<panel class="body" embed="body"/>
+		<panel class="body"><p><mark class="m_websummary"/></p></panel>
 	</panel>
 </jpml>

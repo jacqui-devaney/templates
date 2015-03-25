@@ -39,6 +39,8 @@ An important note to make: The fault article djml for whats news has embedded li
 CIO, CFO, and Risk & Compliance all require affinity and article templates to be set, triggered by the Deloitte article types.
 
 ```
+export API=http://pubcrawlhost/api/v1
+
 curl -X PUT -H "Content-Type: application/json" -d '{"map":[{"box_id":"d1","key":"type","value":"Deloitte Cio Blog"},{"box_id":"d2","key":"type","value":"Deloitte Cio Blog"},{"box_id":"d3","key":"type","value":"Deloitte Cio Blog"},{"box_id":"d4","key":"type","value":"Deloitte Cio Blog"},{"box_id":"d5","key":"type","value":"Deloitte Cio Blog"},{"box_id":"d6","key":"type","value":"Deloitte Cio Blog"}]}' $API/publications/wsj/regions/us/mastheads/SWEET/affinity/CIO/0/SECTION-DELOITTE_template.xml
 
 curl -X PUT -H "Content-Type: application/json" -d '{"map":[{"box_id":"d1","key":"type","value":"Deloitte Cfo Blog"},{"box_id":"d2","key":"type","value":"Deloitte Cfo Blog"},{"box_id":"d3","key":"type","value":"Deloitte Cfo Blog"},{"box_id":"d4","key":"type","value":"Deloitte Cfo Blog"},{"box_id":"d5","key":"type","value":"Deloitte Cfo Blog"},{"box_id":"d6","key":"type","value":"Deloitte Cfo Blog"}]}' $API/publications/wsj/regions/us/mastheads/SWEET/affinity/CFO/0/SECTION-DELOITTE_template.xml

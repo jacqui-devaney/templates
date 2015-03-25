@@ -111,12 +111,14 @@
 				#sponsored-content: {
 					font-name: "Whitney-Semibold",
 					font-size: 14,
-					line-height: 14
+					line-height: 14,
+					padding: [0,0,10,0]
 				},
 				#deloitte_subhed: {
 					font-name: "Whitney-Medium",
-					font-size:14,
-					line-height:14
+					font-size:12,
+					line-height:12,
+					padding: [10,0,0,0]
 				},
 				#deloitte_item_4: {
 					display: none
@@ -126,6 +128,9 @@
 				},
 				#deloitte_item_6: {
 					display: none
+				},
+				#deloitteheader: {
+					padding: [15,0,15,0]
 				}
 			}},
 			{if: =portrait, then: {
@@ -248,7 +253,6 @@
 					border-width: [1,0,0,0],
 					padding:[6,0,0,0]
 				}
-
 			}}
 		]
 	} </style>

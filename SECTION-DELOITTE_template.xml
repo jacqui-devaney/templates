@@ -104,10 +104,6 @@
 						small_headline: true
 					}
 				},
-
-				#latest_news_header: {
-					text-align: center
-				},
 				#sponsored-content: {
 					font-name: "Whitney-Semibold",
 					font-size: 14,
@@ -140,6 +136,14 @@
 							{ if: =page.section, equals: RISK_AND_COMPLIANCE, then: "Latest News" }
 						]
 					}
+				},
+				#latest_news_header: {
+					font-name: "DJ5Exchange-Bold",
+					font-size: 18,
+					color: #444444,
+					border-width: [1,0,0,0],
+					padding: [6,10,0,10],
+					border-color: #d8d8d8
 				}
 			}},
 			{if: =portrait, then: {
@@ -191,7 +195,6 @@
 					border-width: [3,0,0,0],
 					border-color:#444444,
 					padding:[5,0,0,0]
-
 				},
 				#b11:	{
 					top:726,
@@ -359,6 +362,11 @@
 				padding: [12,12,0,12],
 				line-height:18
 			},
+			#latest_news_header: {
+				font-name: "DJ5Exchange-Medium",
+				font-size: 14,
+				color: #444444
+			},
 			#latest_news_mark: {
 				content: {
 					$switch: [
@@ -404,11 +412,6 @@
 				shadow_height: 40,
 				shadow_color: "rgba(.2, .2, .2, 0.5)"
 			}
-		},
-		#latest_news_header: {
-			font-name: "DJ5Exchange-Medium",
-			font-size: 14,
-			color: #444444
 		},
 		#deloitte_inner: {
 			display: none

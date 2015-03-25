@@ -131,6 +131,15 @@
 				},
 				#deloitteheader: {
 					padding: [15,0,15,0]
+				},
+				#latest_news_mark: {
+					content: {
+						$switch: [
+							{ if: =page.section, equals: CIO, then: "Latest Technology News" },
+							{ if: =page.section, equals: CFO, then: "Latest Finance News" },
+							{ if: =page.section, equals: RISK_AND_COMPLIANCE, then: "Latest News" }
+						]
+					}
 				}
 			}},
 			{if: =portrait, then: {
@@ -349,6 +358,15 @@
 				font-name: "Whitney-Medium",
 				padding: [12,12,0,12],
 				line-height:18
+			},
+			#latest_news_mark: {
+				content: {
+					$switch: [
+						{ if: =page.section, equals: CIO, then: "LATEST TECHNOLOGY NEWS" },
+						{ if: =page.section, equals: CFO, then: "LATEST FINANCE NEWS" },
+						{ if: =page.section, equals: RISK_AND_COMPLIANCE, then: "LATEST NEWS" }
+					]
+				}
 			}
 		}
 	}</style>
@@ -391,15 +409,6 @@
 			font-name: "DJ5Exchange-Medium",
 			font-size: 14,
 			color: #444444
-		},
-		#latest_news_mark: {
-			content: {
-				$switch: [
-					{ if: =page.section, equals: CIO, then: "LATEST TECHNOLOGY NEWS" },
-					{ if: =page.section, equals: CFO, then: "LATEST FINANCE NEWS" },
-					{ if: =page.section, equals: RISK_AND_COMPLIANCE, then: "LATEST NEWS" }
-				]
-			}
 		},
 		#deloitte_inner: {
 			display: none

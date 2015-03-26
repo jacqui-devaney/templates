@@ -91,7 +91,8 @@
 					options: {
 						module: url(CONTINUATION-dynamic_module.xml),
 						show_body: false,
-						small_headline: true
+						small_headline: true,
+						hide_border: true						
 					}
 				},
 
@@ -137,13 +138,16 @@
 						]
 					}
 				},
+				#latest_news_header_wrapper: {
+					padding: [15,0,15,0]
+				},
 				#latest_news_header: {
 					font-name: "DJ5Exchange-Bold",
 					font-size: 18,
 					color: #444444,
-					border-width: [1,0,0,0],
-					padding: [6,10,0,10],
-					border-color: #d8d8d8
+					border-width: [0.5,0,0.5,0],
+					padding: [6,8,0,8],
+					border-color: #030303
 				}
 			}},
 			{if: =portrait, then: {
@@ -502,9 +506,13 @@
 	<box id="b9" embed="article"  class="phone_only rail_only maude unit_plain unit_50" module="RIGHT-IMAGE_module.xml" />
 	<box id="b10" embed="article" class="phone_only rail_only maude unit_plain unit_50" module="RIGHT-IMAGE_module.xml" />
 
-	<box id="latest_news_header" class="column6-8 positionx7-1 maude unit_plain">
-		<p><mark id="latest_news_mark" /></p>
+
+	<box id="latest_news_header_wrapper" class="maude unit_plain">
+		<box id="latest_news_header" class="column6-8 positionx7-1 maude unit_plain">
+			<p><mark id="latest_news_mark" /></p>
+		</box>
 	</box>
+
 	<box id="b11" embed="article" class="column6-8 positionx7-1 maude unit_plain unit_50" module="RIGHT-IMAGE_module.xml" />
 	<box id="b12" embed="article" class="column6-8 positionx7-1 maude unit_plain unit_50" module="RIGHT-IMAGE_module.xml" />
 </jpml>

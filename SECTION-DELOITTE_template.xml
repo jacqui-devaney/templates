@@ -274,12 +274,12 @@
 			#b1: {
 				options: {
 					if:=portrait, then: {
-						medium_headline:true,
+						smedium_headline:true,
 						show_body: true,
 						background_color: =color.background,
 						wide_image: true
 					}, else: {
-						medium_headline:true,
+						smedium_headline:true,
 						show_image: true,
 						background_color: =color.background,
 						module: url(TOP-IMAGE_module.xml)

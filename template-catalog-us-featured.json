@@ -1,9 +1,10 @@
 {
     "section": [
         {
-            "filename": "SECTION-6story_template.xml",
-            "title": "6 story - G photo",
-            "usage": "front",
+            "section": "WSJ_MAGAZINE",
+            "filename": "CONTINUATION-6story-magazine-promo_template.xml",
+            "title": "6 story - WSJ Magazine",
+            "usage": "continuation",
             "boxes": [
                 "b1",
                 "b2",
@@ -14,12 +15,11 @@
             ]
         },
         {
-            "filename": "SECTION-6story-deco_template.xml",
-            "title": "6 story plus deco",
+            "filename": "SECTION-6story_template.xml",
+            "title": "6 story - G photo",
             "usage": "front",
             "boxes": [
                 "b1",
-                "deco",
                 "b2",
                 "b3",
                 "b4",

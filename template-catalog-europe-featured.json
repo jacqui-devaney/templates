@@ -1,0 +1,172 @@
+{
+    "section": [
+        {
+            "section": "WSJ_MAGAZINE",
+            "filename": "CONTINUATION-6story-magazine-promo_template.xml",
+            "title": "6 story - WSJ Magazine",
+            "usage": "continuation",
+            "boxes": [
+                "b1",
+                "b2",
+                "b3",
+                "b4",
+                "b5",
+                "b6"
+            ]
+        },
+        {
+            "filename": "SECTION-6story_template.xml",
+            "title": "6 story - G photo",
+            "usage": "front",
+            "boxes": [
+                "b1",
+                "b2",
+                "b3",
+                "b4",
+                "b5",
+                "b6"
+            ]
+        },
+        {
+            "filename": "SECTION-3story_template.xml",
+            "title": "3 story - Large Photo",
+            "usage": "front",
+            "boxes": [
+                "b1",
+                "deco",
+                "b2"
+            ]
+        },
+        {
+            "filename": "SECTION-1story_template.xml",
+            "title": "Full size Deco",
+            "usage": "front",
+            "boxes": [
+                "deco"
+            ]
+        },
+        {
+            "filename": "CONTINUATION-generic-32_template.xml",
+            "usage": "continuation",
+            "boxes": [
+                "b1",
+                "b2",
+                "b3",
+                "b4",
+                "b5",
+                "b6",
+                "b7",
+                "b8",
+                "b9",
+                "b10",
+                "b11",
+                "b12",
+                "b13",
+                "b14",
+                "b15",
+                "b16",
+                "b17",
+                "b18",
+                "b19",
+                "b20",
+                "b21",
+                "b22",
+                "b23",
+                "b24",
+                "b25",
+                "b26",
+                "b27",
+                "b28",
+                "b29",
+                "b30",
+                "b31",
+                "b32"
+            ]
+        },
+        {
+            "filename": "CONTINUATION-generic-16_template.xml",
+            "usage": "continuation",
+            "boxes": [
+                "b1",
+                "b2",
+                "b3",
+                "b4",
+                "b5",
+                "b6",
+                "b7",
+                "b8",
+                "b9",
+                "b10",
+                "b11",
+                "b12",
+                "b13",
+                "b14",
+                "b15",
+                "b16"
+            ]
+        },
+        {
+            "filename": "CONTINUATION-generic-8_template.xml",
+            "usage": "continuation",
+            "boxes": [
+                "b1",
+                "b2",
+                "b3",
+                "b4",
+                "b5",
+                "b6",
+                "b7",
+                "b8"
+            ]
+        },
+        {
+            "filename": "CONTINUATION-generic-4_template.xml",
+            "usage": "continuation",
+            "boxes": [
+                "b1",
+                "b2",
+                "b3",
+                "b4"
+            ]
+        },
+        {
+            "filename": "CONTINUATION-generic-2_template.xml",
+            "usage": "continuation",
+            "boxes": [
+                "b1",
+                "b2"
+            ]
+        },
+        {
+            "filename": "CONTINUATION-generic-1_template.xml",
+            "usage": "continuation",
+            "boxes": [
+                "b1"
+            ]
+        },
+        {
+            "filename": "GENERIC-fullpagead-template.xml",
+            "usage": "ads",
+            "boxes": []
+        }
+
+    ],
+    "article": [
+        {
+            "filename": "ARTICLE-pages.xml",
+            "title": "ARTICLE-pages"
+        },
+        {
+            "filename": "ARTICLE-pages-narrow.xml",
+            "title": "ARTICLE-pages-narrow"
+        },
+        {
+            "filename": "ARTICLE-pages-h-slideshow.xml",
+            "title": "ARTICLE-pages-h-slideshow"
+        },
+        {
+            "filename": "ARTICLE-pages-v-slideshow.xml",
+            "title": "ARTICLE-pages-v-slideshow"
+        }
+    ]
+}

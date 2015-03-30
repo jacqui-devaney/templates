@@ -143,17 +143,17 @@
 		font-name:DJ5Exchange-MediumItalic
 	},
 	.link-pdf: {
-		color:{if: =intent.article, then:=page.tint}
+		color:{if: =intent.article, then:{if: =page.tint, equals: "rgba(0.000000, 0.000000, 0.000000, 1.000000)", then: #004990, else: =page.tint}}
 	},
 	.link-external: {
-		color:{if: =intent.article, then:=page.tint}
+		color:{if: =intent.article, then:{if: =page.tint, equals: "rgba(0.000000, 0.000000, 0.000000, 1.000000)", then: #004990, else: =page.tint}}
 	},
 	a: {
-		color:{if: =intent.article, then:=page.tint}
+		color:{if: =intent.article, then:{if: =page.tint, equals: "rgba(0.000000, 0.000000, 0.000000, 1.000000)", then: #004990, else: =page.tint}}
 	},
 	.link-article: {
 		text-decoration: none,
-		color:{if: =intent.article, then:=page.tint}
+		color:{if: =intent.article, then:{if: =page.tint, equals: "rgba(0.000000, 0.000000, 0.000000, 1.000000)", then: #004990, else: =page.tint}}
 	},
 	.ticker: {
 		display: none

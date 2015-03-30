@@ -20,7 +20,7 @@
 			layout-grid-line-offset: {$multiply: [20, =view.zoomlevel]}
         }},
 		{.border-p:{
-			border-width:[8, 0, 5, 0],
+			border-width:[6, 0, 5, 0],
 			layout-grid-line: 0,
 			layout-grid-line-offset: 0,
 			background-color: #CACACA,
@@ -51,10 +51,6 @@
 			color: #004990
 		}},
 		{.article_body:{
-			font-name: "Whitney-Medium",
-			color: #222222
-		}},
-		{.byline:{
 			font-name: "Whitney-Medium",
 			color: #222222
 		}},
@@ -98,7 +94,6 @@
 			<p id="media_caption"><mark id="mark_caption" /></p>
 		</box>
 		<p class="module_flashline" embed="flashline"/>
-    	<p class="byline" embed="byline"/>
 		<p class="border-p"><mark class="border-mark"/></p>
 		<panel class="article_body" embed="body"/>
 	</panel>

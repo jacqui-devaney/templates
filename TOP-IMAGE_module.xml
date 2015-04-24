@@ -86,7 +86,7 @@
 				padding: [8, 8, 0, 8]
 			},
 			image: {
-				height: {$multiply: [=view.width, .58 ]},
+				height: {$multiply: [=view.width, .665 ]},
 				width:=view.width,
 				display:inherit,
 				padding: [0]

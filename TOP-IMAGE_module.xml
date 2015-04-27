@@ -56,7 +56,7 @@
 					pixels-per-point-y:1,
 	                image-scale: 1,
 	                display: { if: =options.show_image, then:inherit, else:none },
-					height: {$multiply: [=view.width, .62 ]},
+					height: {$multiply: [=view.width, .665 ]},
 					padding: [0, 0, 17, 0],
 					options: {
 						$switch: [

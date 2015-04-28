@@ -3,7 +3,8 @@
 	<style src="PHONE-stylesheet.ejs" />
 	<style>{
 		#view: {
-			bottom: 0
+			width:=view.width,
+			height:{$multiply: [2, =view.height]}
 		}
 	}</style>
     <box id="view" embed="article" class="maude" module="ARTICLE-continuation-phone_module.xml" />

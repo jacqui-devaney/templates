@@ -47,10 +47,10 @@ curl -X PUT -H "Content-Type: application/json" -d '{"map":[{"box_id":"d1","key"
 
 curl -X PUT -H "Content-Type: application/json" -d '{"map":[{"box_id":"d1","key":"type","value":"Deloitte Riskandcompliance Blog"},{"box_id":"d2","key":"type","value":"Deloitte Riskandcompliance Blog"},{"box_id":"d3","key":"type","value":"Deloitte Riskandcompliance Blog"},{"box_id":"d4","key":"type","value":"Deloitte Riskandcompliance Blog"},{"box_id":"d5","key":"type","value":"Deloitte Riskandcompliance Blog"},{"box_id":"d6","key":"type","value":"Deloitte Riskandcompliance Blog"}]}' $API/publications/wsj/regions/us/mastheads/SWEET/affinity/RISK_AND_COMPLIANCE/0/SECTION-DELOITTE_template.xml
 
-curl -X PUT -H "Content-Type: application/json" -d '{"template":"ARTICLE-deloitte-pages.xml"}' $API/publications/wsj/regions/us/mastheads/SWEET/layout/articles/type/Deloitte%20Cio%20Blog
+curl -X PUT -H "Content-Type: application/json" -d '{"template":"ARTICLE-deloitte_template.xml"}' $API/publications/wsj/regions/us/mastheads/SWEET/layout/articles/type/Deloitte%20Cio%20Blog
 
-curl -X PUT -H "Content-Type: application/json" -d '{"template":"ARTICLE-deloitte-pages.xml"}' $API/publications/wsj/regions/us/mastheads/SWEET/layout/articles/type/Deloitte%20Cfo%20Blog
+curl -X PUT -H "Content-Type: application/json" -d '{"template":"ARTICLE-deloitte_template.xml"}' $API/publications/wsj/regions/us/mastheads/SWEET/layout/articles/type/Deloitte%20Cfo%20Blog
 
-curl -X PUT -H "Content-Type: application/json" -d '{"template":"ARTICLE-deloitte-pages.xml"}' $API/publications/wsj/regions/us/mastheads/SWEET/layout/articles/type/Deloitte%20Riskandcompliance%20Blog
+curl -X PUT -H "Content-Type: application/json" -d '{"template":"ARTICLE-deloitte_template.xml"}' $API/publications/wsj/regions/us/mastheads/SWEET/layout/articles/type/Deloitte%20Riskandcompliance%20Blog
 ```
 

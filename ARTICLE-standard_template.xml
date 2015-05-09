@@ -2,6 +2,7 @@
 	<style src="GLOBAL-stylesheet.ejs"/>
   <style src="GRID-stylesheet.ejs"/>
   <style src="PHONE-stylesheet.ejs" />
+  <style src="ADVERTISING-stylesheet.ejs" />
   <style>{
     jpml: {
       background-color: =color.background
@@ -42,6 +43,30 @@
       }
 		]
 	}</style>
+  <style>{
+    if: =intent.ad, then: {
+      jpml: {
+          min-height:0,
+          padding: [0,0,0,0]
+      },
+      #fullpage_container: {
+        display: inherit
+      },
+      #view: {
+        display: none
+      },
+      #page_details: {
+        display: none
+      }
+    }, else: {
+      #fullpage_container: {
+        display: none
+      }
+    }
+  }</style>
+  <box id="fullpage_container">
+      <box id="fullpage_ad" class="ad-fullpage" embed="fullpagead" />
+  </box>
   <box id="page_details" embed="pagedescription" />
   <box id="view" embed="article" class="column16-12 positionx1 maude" />
 </jpml>

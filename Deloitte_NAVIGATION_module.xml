@@ -29,7 +29,7 @@
 			padding:[-2,0,0,0]
 		},
 		.m_websummary: {
-			content: =article.websummary
+			content: { $switch: [=article.websummary, =article.summary] }
 		}
 	}</style>
 	<panel id="module_text">

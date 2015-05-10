@@ -24,7 +24,16 @@
 				match: {
 					max-width: 553
 				},
-				source: { if: {$count:[=article.thumbnail_image]}, more-than: 0, then: =article.thumbnail_image, else: none}
+				source: { 
+					if: {$count:[=article.thumbnail]}, 
+					more-than: 0, 
+					then: { $join: [
+						"url",
+						"(",
+						=article.thumbnail,
+						")"
+					] }
+				}
 			},
 			background-color:inherit
 		},

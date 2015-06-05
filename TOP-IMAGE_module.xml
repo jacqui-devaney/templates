@@ -83,7 +83,7 @@
 				padding:[0]
 			},
 			#headline: {
-				padding: [8, 8, 0, 8]
+				padding: [8, 0, 0, 0]
 			},
 			image: {
 				height: {$multiply: [=view.width, .665 ]},
@@ -96,7 +96,7 @@
 				display: none
 			},
 			#body: {
-				padding: [0, 8, 0, 8]
+				padding: [0, 0, 0, 0]
 			},
 			.body: {
 				display: none
@@ -106,6 +106,12 @@
 			},
 			.opinion_dek: { 
 				display: none
+			},
+			#vertical: {
+				padding: [0, 24, 0, 24]
+			},
+			#deco_container: {
+				padding: {if: =view.height, less-than: 200, then: [0, 24, 0, 0], else: [0]}
 			}
 		}, else: {
 			.opinion_dek:{

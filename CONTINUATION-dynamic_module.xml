@@ -15,22 +15,14 @@
 		}
 	}</style>
     <style>{
-		jpml: {
-			if: =options.show_strap,
-			then: {
-			},
-			else: {
-				padding: {if: =scale.phone, then: [0, 8]}
-			}
-		},
 		#content: {
 			if: =options.show_strap,
 			then: {
-				padding: {if: =scale.phone, then: [16, 8, 0, 8]}
+				padding: {if: =scale.phone, then: [16, 24, 0, 24]}
 			},
 			else: {
 				if: =options.hide_border, else: {
-					padding: [{if: =options.show_body, then: 9.5, else: 0.5}, 0, 0, 0],
+					padding: [{if: =options.show_body, then: 9.5, else: 0.5}, {if: =scale.phone, then: 24, else: 0}, 0, {if: =scale.phone, then: 24, else: 0}],
 					border-width: [0.5, 0, 0, 0],
 					border-color: #d8d8d8
 				}

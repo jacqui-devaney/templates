@@ -108,10 +108,18 @@
 				display: none
 			},
 			#vertical: {
-				padding: [0, 24, 0, 24]
+				padding: [0, 24, 0, 0]
 			},
 			#deco_container: {
 				padding: {if: =view.height, less-than: 200, then: [0, 24, 0, 0], else: [0]}
+			},
+			#article_status: {
+				position: relative,
+				top: 0,
+				bottom: 0,
+				left: 0,
+				width: 16,
+				padding: [{if: =options.medium_headline, then: 12, else: 8}, 4, 0, 4]
 			}
 		}, else: {
 			.opinion_dek:{
@@ -150,6 +158,7 @@
 		<image embed="summary-image" />
 	</box>
 	<panel id="vertical">
+		<box id="article_status" embed="article-status"></box>
 		<panel id="headline">
 			<p class="module_headline"><mark class="m_headline" /></p>
 			<h2 class="opinion_dek" embed="subhed" ></h2>

@@ -76,11 +76,11 @@
 				},
 				#b2 : {
 					height: =size.continuation_height_large,
-					options: { show_body: true, show_image: true, float_image: right, small_headline: true }
+					options: { show_body: true, small_headline: true, module: url(CONTINUATION-dynamic_module.xml) }
 				},
 				#b3 : {
 					height: =size.continuation_height_large,
-					options: { show_body: true, show_image: true, float_image: right, small_headline: true }
+					options: { show_body: true, small_headline: true, module: url(CONTINUATION-dynamic_module.xml) }
 				},
 				#b4 : {
 					bind: none,

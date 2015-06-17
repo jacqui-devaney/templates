@@ -69,15 +69,19 @@
 				padding: { if: =options.show_body, else: [4, 0, 0, 0] },
 				color:{if: =article.read, then: color.articleReadColor}
 			},
+			#vertical: {
+				padding: [0, 0, 0, 24]
+			},
+			.body: {
+				padding: [0, 0, 0, 24]
+			},
 			#article_status: {
 				position: relative,
-				top: 0.5,
-				bottom: 0,
-				left: 0,
+				padding: [{if: =options.show_body, then: 1, else: 5}, 4, 0, 4],
+				top: 0,
+				left: -24,
 				width: 16,
-				padding: [8.5, 4, 0, 4],
-				border-width: [0.5, 0, 0, 0],
-				border-color: #d8d8d8,
+				height: 16,
 				options: {
 					identifier: =article.id
 				}
@@ -98,12 +102,12 @@
 	<panel id="strap">
 		<p class="subsection"><mark id="m_subsection"/></p>
 	</panel>
-	<box id="article_status" embed="article-status"></box>
 	<panel id="content">
 	 	<box id="image_container" embed="deco-image">
 			<image embed="summary-image" target-width="76" target-height="76" />
 		</box>
 		<panel id="vertical">
+			<box id="article_status" embed="article-status"></box>
 			<p id="headline" class="module_headline"><mark class="m_headline" /><mark class="key" /></p>
 		</panel>
         <panel class="body">

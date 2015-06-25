@@ -385,9 +385,9 @@
 		#deloitte_subhed_mark: {
 			content: {
 				$switch: [
-					{ if: =page.section, equals: CIO, then: "Business-led, Technology-enabled: Insight written and compiled by Deloitte" },
-					{ if: =page.section, equals: CFO, then: "CFO insight and analysis written and compiled by Deloitte" },
-					{ if: =page.section, equals: RISK_AND_COMPLIANCE, then: "Risk management, strategy and analysis written and compiled by Deloitte" }
+					{ if: =page.section, equals: CIO, then: "CIO Insights and Analysis from Deloitte" },
+					{ if: =page.section, equals: CFO, then: "CFO Insights and Analysis from Deloitte" },
+					{ if: =page.section, equals: RISK_AND_COMPLIANCE, then: "Risk Management, Strategy and Analysis from Deloitte" }
 				]
 			}
 		},

@@ -43,7 +43,7 @@
         #view: {
           options: {
             background_color: =color.background,
-            indent: true,
+            indent: false,
             module: {if: =page.number, equals: 0, then: url(ARTICLE-deloitte-front_module.xml), else: url(ARTICLE-deloitte-continuation_module.xml)}
           }
         }

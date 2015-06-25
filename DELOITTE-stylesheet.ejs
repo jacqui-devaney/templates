@@ -85,7 +85,7 @@
 			border-color: #979797
 		}
 	},
-	
+
 	.deloitte_item_last: {
 		padding: { if: =scale.phone, then: [15, 0, 15, 0], else: [20, 0, 20, 0] },
 		border-width: [0]
@@ -108,10 +108,26 @@
 	.body-last-p-mark: {
 			display: none
 	},
-
-	h3: {
-        text-indent: 0,
-        text-align: center
+	.article_body: {
+		if: =scale.tablet, then: {
+			text-align:left,
+			text-indent:0
+		}
+	},
+	h2: {
+		if: =scale.tablet, then: {
+			text-indent:0
+		}
+	},
+	p: {
+		if: =scale.tablet, then: {
+			padding:[0,0,20,0]
+		}
+	},
+	#body-first-p: {
+		if: =scale.tablet, then: {
+			padding:[0,0,20,0]
+		}
 	},
 
 	#deloitte_item_1: { if: true, then: { options: { reference: =articles.d1.id } } },

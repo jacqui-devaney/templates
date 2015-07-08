@@ -24,35 +24,6 @@
 		height: 20
 	},
 
-	.deloitte-divider-p: {
-		padding: [6, 0, 0, 0],
-		border-width: [1, 0, 0, 0],
-		layout-grid-line: 0,
-		layout-grid-line-offset: 0,
-		background-color: transparent,
-		border-color: #D8D8D8
-	},
-
-	.deloitte-divider-mark: {
-		font-size: 1,
-		line-height: 1,
-		color: transparent,
-		content: "divider"
-	},
-
-	.deloitte-disclaimer: {
-		font-name: "Whitney-Medium",
-		font-size: { if: =scale.phone, then: 14, else: 11 },
-		line-height: { if: =scale.phone, then: 18, else: 15 },
-		layout-grid-line: 0,
-		layout-grid-line-offset: 0,
-		color: #222222
-	},
-
-	.deloitte-questions: {
-		padding: [0, 0, 1, 0]
-	},
-
 	#deloitte_list: {
 		min-height: 0,
 		max-height: 10000,
@@ -119,15 +90,85 @@
 			text-indent:0
 		}
 	},
+	
 	p: {
 		if: =scale.tablet, then: {
 			padding:[0,0,20,0]
 		}
 	},
+
 	#body-first-p: {
 		if: =scale.tablet, then: {
 			padding:[0,0,20,0]
 		}
+	},
+
+	#body-last-p: {
+		padding: [0, 0, 8, 0]
+	},
+
+	#inset-DELOITTEFOOTNOTES-p: {
+		padding: [13, 0, 10, 0]
+	},
+
+	#inset-DELOITTERELATEDCONTENT-p: {
+		padding: [12, 0, 0, 0]
+	},
+
+	#inset-DELOITTEQUESTIONS-p: {
+		padding: [10, 0, 8, 0]
+	},
+
+	#inset-DELOITTEDISCLAMER-p: {
+		padding: [13, 0, 0, 0]
+	},
+
+	.deloitte-divider-p: {
+		padding: [0, 0, 0, 0],
+		border-width: [1, 0, 0, 0],
+		layout-grid-line: 0,
+		layout-grid-line-offset: 0,
+		background-color: transparent,
+		border-color: #D8D8D8
+	},
+
+	.deloitte-divider-mark: {
+		font-size: 1,
+		line-height: 1,
+		color: transparent,
+		content: "divider"
+	},
+
+	.deloitte-footnotes: {
+		font-name: "Whitney-Medium",
+		font-size: { if: =scale.phone, then: 14, else: 11 },
+		line-height: { if: =scale.phone, then: 19, else: 15 },
+		layout-grid-line: 0,
+		layout-grid-line-offset: 0,
+		color: #898B8E
+	},
+
+	.deloitte-related-content: {
+		layout-grid-line: 0,
+		layout-grid-line-offset: 0,
+		font-name: "Whitney-Medium",
+		color: #222222
+	},
+
+	.deloitte-questions: {
+		layout-grid-line: 0,
+		layout-grid-line-offset: 0,
+		font-name: "Whitney-Medium",
+		color: #222222
+	},
+
+	.deloitte-disclaimer: {
+		font-name: "Whitney-Medium",
+		font-size: { if: =scale.phone, then: 14, else: 11 },
+		line-height: { if: =scale.phone, then: 18, else: 15 },
+		layout-grid-line: 0,
+		layout-grid-line-offset: 0,
+		color: #222222
 	},
 
 	#deloitte_item_1: { if: true, then: { options: { reference: =articles.d1.id } } },

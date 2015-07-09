@@ -1,826 +1,826 @@
 {
-  "default-images": [
-    {
-      "width": 172,
-      "height": 115
-    }
-  ],
-  "section": [
-    {
-      "section": "FRONT_SECTION",
-      "filename": "FRONT-5story-deco_template.xml",
-      "title": "Default: 5 story G Liondoor",
-      "usage": "front",
-      "boxes": [
-        {
-          "id": "b1",
-          "images": []
-        },
-        {
-          "id": "deco",
-          "images": [
-            {
-              "width:": 546,
-              "height": 356
-            }
-          ]
-        },
-        {
-          "id": "b2",
-          "images": []
-        },
-        {
-          "id": "b3",
-          "images": []
-        },
-        {
-          "id": "b4",
-          "images": []
-        },
-        {
-          "id": "b5",
-          "images": [
-            {
-              "width": 80,
-              "height": 80
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "section": "FRONT_SECTION",
-      "filename": "FRONT-5story_template.xml",
-      "title": "5 story G",
-      "usage": "front",
-      "boxes": [
-        {
-          "id": "b1",
-          "images": [
-            {
-              "width": 546,
-              "height": 356
-            },
-            {
-              "width": 512,
-              "height": 342
-            }
-          ]
-        },
-        {
-          "id": "b2",
-          "images": []
-        },
-        {
-          "id": "b3",
-          "images": []
-        },
-        {
-          "id": "b4",
-          "images": []
-        },
-        {
-          "id": "b5",
-          "images": [
-            {
-              "width": 80,
-              "height": 80
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "section": "FRONT_SECTION",
-      "filename": "FRONT-4story-deco_template.xml",
-      "title": "4 story G Liondoor",
-      "usage": "front",
-      "boxes": [
-        {
-          "id": "b1",
-          "images": []
-        },
-        {
-          "id": "deco",
-          "images": [
-            {
-              "width": 546,
-              "height": 356
-            }
-          ]
-        },
-        {
-          "id": "b2",
-          "images": []
-        },
-        {
-          "id": "b3",
-          "images": []
-        },
-        {
-          "id": "b4",
-          "images": [
-            {
-              "width": 80,
-              "height": 80
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "section": "FRONT_SECTION",
-      "filename": "FRONT-6story-Vimage-deco_template.xml",
-      "title": "5 Story plus 1 image deco",
-      "usage": "front",
-      "boxes": [
-        {
-          "id": "b1",
-          "images": []
-        },
-        {
-          "id": "deco",
-          "images": [
-            {
-              "width": 360,
-              "height": 3461
-            }
-          ]
-        },
-        {
-          "id": "b2",
-          "images": []
-        },
-        {
-          "id": "b3",
-          "images": []
-        },
-        {
-          "id": "b4",
-          "images": []
-        },
-        {
-          "id": "b5",
-          "images": [
-            {
-              "width": 80,
-              "height": 80
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "section": "OPINION",
-      "filename": "OPINION-7story-deco_template.xml",
-      "title": "Default: 7 story plus deco (3RandO-4CMTY)",
-      "usage": "front",
-      "boxes": [
-        {
-          "id": "b1",
-          "images": []
-        },
-        {
-          "id": "b2",
-          "images": []
-        },
-        {
-          "id": "b3",
-          "images": []
-        },
-        {
-          "id": "deco",
-          "images": [
-            {
-              "width": 542,
-              "height": 362
-            }
-          ]
-        },
-        {
-          "id": "b4",
-          "images": []
-        },
-        {
-          "id": "b5",
-          "images": []
-        },
-        {
-          "id": "b6",
-          "images": []
-        },
-        {
-          "id": "b7",
-          "images": []
-        }
-      ]
-    },
-    {
-      "section": "OPINION",
-      "filename": "OPINION-6story-deco_template.xml",
-      "title": "6 story plus deco",
-      "usage": "front",
-      "boxes": [
-        {
-          "id": "b1",
-          "images": []
-        },
-        {
-          "id": "b2",
-          "images": []
-        },
-        {
-          "id": "b3",
-          "images": []
-        },
-        {
-          "id": "deco",
-          "images": [
-            {
-              "width": 542,
-              "height": 362
-            }
-          ]
-        },
-        {
-          "id": "b4",
-          "images": []
-        },
-        {
-          "id": "b5",
-          "images": []
-        },
-        {
-          "id": "b6",
-          "images": []
-        }
-      ]
-    },
-    {
-      "section": "OPINION",
-      "filename": "OPINION-2story-deco_template.xml",
-      "title": "2 story plus deco",
-      "usage": "front",
-      "boxes": [
-        {
-          "id": "deco",
-          "images": [
-            {
-              "width": 816,
-              "height": 544
-            }
-          ]
-        },
-        {
-          "id": "b1",
-          "images": []
-        },
-        {
-          "id": "b2",
-          "images": []
-        }
-      ]
-    },
-    {
-      "section": "WSJ_MAGAZINE",
-      "filename": "CONTINUATION-6story-magazine-promo_template.xml",
-      "title": "6 story - WSJ Magazine",
-      "usage": "continuation",
-      "boxes": [
-        {
-          "id": "b1",
-          "images": [
-            {
-              "width": 236,
-              "height": 274
-            },
-            {
-              "width": 360,
-              "height": 240
-            }
-          ]
-        },
-        {
-          "id": "b2",
-          "images": [
-            {
-              "width": 236,
-              "height": 287
-            },
-            {
-              "width": 360,
-              "height": 240
-            }
-          ]
-        },
-        {
-          "id": "b3",
-          "images": [
-            {
-              "width": 236,
-              "height": 153
-            },
-            {
-              "width": 178,
-              "height": 178
-            }
-          ]
-        },
-        {
-          "id": "b4",
-          "images": [
-            {
-              "width": 236,
-              "height": 153
-            },
-            {
-              "width": 178,
-              "height": 178
-            }
-          ]
-        },
-        {
-          "id": "b5",
-          "images": [
-            {
-              "width": 236,
-              "height": 153
-            },
-            {
-              "width": 178,
-              "height": 178
-            }
-          ]
-        },
-        {
-          "id": "b6",
-          "images": [
-            {
-              "width": 236,
-              "height": 153
-            },
-            {
-              "width": 178,
-              "height": 178
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "filename": "SECTION-6story_template.xml",
-      "title": "6 story - G photo",
-      "usage": "front",
-      "boxes": [
-        {
-          "id": "b1",
-          "images": [
-            {
-              "width": 484,
-              "height": 322
-            }
-          ]
-        },
-        {
-          "id": "b2",
-          "images": [
-            {
-              "width": 236,
-              "height": 153
-            },
-            {
-              "width": 292,
-              "height": 195
-            }
-          ]
-        },
-        {
-          "id": "b3",
-          "images": []
-        },
-        {
-          "id": "b4",
-          "images": []
-        },
-        {
-          "id": "b5",
-          "images": []
-        },
-        {
-          "id": "b6",
-          "images": []
-        }
-      ]
-    },
-    {
-      "filename": "SECTION-6story-deco_template.xml",
-      "title": "6 story plus deco",
-      "usage": "front",
-      "boxes": [
-        {
-          "id": "b1",
-          "images": []
-        },
-        {
-          "id": "deco",
-          "images": [
-            {
-              "width": 567,
-              "height": 379
-            }
-          ]
-        },
-        {
-          "id": "b2",
-          "images": [
-            {
-              "width": 292,
-              "height": 195
-            },
-            {
-              "width": 236,
-              "height": 153
-            }
-          ]
-        },
-        {
-          "id": "b3",
-          "images": []
-        },
-        {
-          "id": "b4",
-          "images": []
-        },
-        {
-          "id": "b5",
-          "images": []
-        },
-        {
-          "id": "b6",
-          "images": []
-        }
-      ]
-    },
-    {
-      "filename": "SECTION-3story_template.xml",
-      "title": "3 story - Large Photo",
-      "usage": "front",
-      "boxes": [
-        {
-          "id": "deco",
-          "images": [
-            {
-              "width": 834,
-              "height": 544
-            }
-          ]
-        },
-        {
-          "id": "b1",
-          "images": [
-            {
-              "width": 113,
-              "height": 113
-            }
-          ]
-        },
-        {
-          "id": "b2",
-          "images": [
-            {
-              "width": 113,
-              "height": 113
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "filename": "SECTION-1story_template.xml",
-      "title": "Full size Deco",
-      "usage": "front",
-      "boxes": [
-        {
-          "id": "deco",
-          "images": [
-            {
-              "width": 768,
-              "height": 1024
-            },
-            {
-              "width": 1024,
-              "height": 768
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "filename": "CONTINUATION-generic-32_template.xml",
-      "usage": "continuation",
-      "boxes": [
-        {
-          "id": "b1",
-          "images": []
-        },
-        {
-          "id": "b2",
-          "images": []
-        },
-        {
-          "id": "b3",
-          "images": []
-        },
-        {
-          "id": "b4",
-          "images": []
-        },
-        {
-          "id": "b5",
-          "images": []
-        },
-        {
-          "id": "b6",
-          "images": []
-        },
-        {
-          "id": "b7",
-          "images": []
-        },
-        {
-          "id": "b8",
-          "images": []
-        },
-        {
-          "id": "b9",
-          "images": []
-        },
-        {
-          "id": "b10",
-          "images": []
-        },
-        {
-          "id": "b11",
-          "images": []
-        },
-        {
-          "id": "b12",
-          "images": []
-        },
-        {
-          "id": "b13",
-          "images": []
-        },
-        {
-          "id": "b14",
-          "images": []
-        },
-        {
-          "id": "b15",
-          "images": []
-        },
-        {
-          "id": "b16",
-          "images": []
-        },
-        {
-          "id": "b17",
-          "images": []
-        },
-        {
-          "id": "b18",
-          "images": []
-        },
-        {
-          "id": "b19",
-          "images": []
-        },
-        {
-          "id": "b20",
-          "images": []
-        },
-        {
-          "id": "b21",
-          "images": []
-        },
-        {
-          "id": "b22",
-          "images": []
-        },
-        {
-          "id": "b23",
-          "images": []
-        },
-        {
-          "id": "b24",
-          "images": []
-        },
-        {
-          "id": "b25",
-          "images": []
-        },
-        {
-          "id": "b26",
-          "images": []
-        },
-        {
-          "id": "b27",
-          "images": []
-        },
-        {
-          "id": "b28",
-          "images": []
-        },
-        {
-          "id": "b29",
-          "images": []
-        },
-        {
-          "id": "b30",
-          "images": []
-        },
-        {
-          "id": "b31",
-          "images": []
-        },
-        {
-          "id": "b32",
-          "images": []
-        }
-      ]
-    },
-    {
-      "filename": "CONTINUATION-generic-16_template.xml",
-      "usage": "continuation",
-      "boxes": [
-        {
-          "id": "b1",
-          "images": []
-        },
-        {
-          "id": "b2",
-          "images": []
-        },
-        {
-          "id": "b3",
-          "images": []
-        },
-        {
-          "id": "b4",
-          "images": []
-        },
-        {
-          "id": "b5",
-          "images": []
-        },
-        {
-          "id": "b6",
-          "images": []
-        },
-        {
-          "id": "b7",
-          "images": []
-        },
-        {
-          "id": "b8",
-          "images": []
-        },
-        {
-          "id": "b9",
-          "images": []
-        },
-        {
-          "id": "b10",
-          "images": []
-        },
-        {
-          "id": "b11",
-          "images": []
-        },
-        {
-          "id": "b12",
-          "images": []
-        },
-        {
-          "id": "b13",
-          "images": []
-        },
-        {
-          "id": "b14",
-          "images": []
-        },
-        {
-          "id": "b15",
-          "images": []
-        },
-        {
-          "id": "b16",
-          "images": []
-        }
-      ]
-    },
-    {
-      "filename": "CONTINUATION-generic-8_template.xml",
-      "usage": "continuation",
-      "boxes": [
-        {
-          "id": "b1",
-          "images": []
-        },
-        {
-          "id": "b2",
-          "images": []
-        },
-        {
-          "id": "b3",
-          "images": []
-        },
-        {
-          "id": "b4",
-          "images": []
-        },
-        {
-          "id": "b5",
-          "images": []
-        },
-        {
-          "id": "b6",
-          "images": []
-        },
-        {
-          "id": "b7",
-          "images": []
-        },
-        {
-          "id": "b8",
-          "images": []
-        }
-      ]
-    },
-    {
-      "filename": "CONTINUATION-generic-4_template.xml",
-      "usage": "continuation",
-      "boxes": [
-        {
-          "id": "b1",
-          "images": []
-        },
-        {
-          "id": "b2",
-          "images": []
-        },
-        {
-          "id": "b3",
-          "images": []
-        },
-        {
-          "id": "b4",
-          "images": []
-        }
-      ]
-    },
-    {
-      "filename": "CONTINUATION-generic-2_template.xml",
-      "usage": "continuation",
-      "boxes": [
-        {
-          "id": "b1",
-          "images": []
-        },
-        {
-          "id": "b2",
-          "images": []
-        }
-      ]
-    },
-    {
-      "filename": "CONTINUATION-generic-1_template.xml",
-      "usage": "continuation",
-      "boxes": [
-        {
-          "id": "b1",
-          "images": []
-        }
-      ]
-    },
-    {
-      "filename": "GENERIC-fullpagead-template.xml",
-      "usage": "ads",
-      "boxes": []
-    }
-  ],
-  "article": [
-    {
-      "filename": "ARTICLE-standard_template.xml",
-      "title": "Standard Article Template"
-    },
-    {
-      "filename": "ARTICLE-h-slideshow_template.xml",
-      "title": "Slideshow Article Template"
-    },
-    {
-      "filename": "ARTICLE-v-slideshow_template.xml",
-      "title": "Slideshow Article Template (Vertical)"
-    }
-  ]
+  "default-images": [
+    {
+      "width": 172,
+      "height": 115
+    }
+  ],
+  "section": [
+    {
+      "section": "FRONT_SECTION",
+      "filename": "FRONT-5story-deco_template.xml",
+      "title": "Default: 5 story G Liondoor",
+      "usage": "front",
+      "boxes": [
+        {
+          "id": "b1",
+          "images": []
+        },
+        {
+          "id": "deco",
+          "images": [
+            {
+              "width:": 546,
+              "height": 356
+            }
+          ]
+        },
+        {
+          "id": "b2",
+          "images": []
+        },
+        {
+          "id": "b3",
+          "images": []
+        },
+        {
+          "id": "b4",
+          "images": []
+        },
+        {
+          "id": "b5",
+          "images": [
+            {
+              "width": 80,
+              "height": 80
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "section": "FRONT_SECTION",
+      "filename": "FRONT-5story_template.xml",
+      "title": "5 story G",
+      "usage": "front",
+      "boxes": [
+        {
+          "id": "b1",
+          "images": [
+            {
+              "width": 546,
+              "height": 356
+            },
+            {
+              "width": 512,
+              "height": 342
+            }
+          ]
+        },
+        {
+          "id": "b2",
+          "images": []
+        },
+        {
+          "id": "b3",
+          "images": []
+        },
+        {
+          "id": "b4",
+          "images": []
+        },
+        {
+          "id": "b5",
+          "images": [
+            {
+              "width": 80,
+              "height": 80
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "section": "FRONT_SECTION",
+      "filename": "FRONT-4story-deco_template.xml",
+      "title": "4 story G Liondoor",
+      "usage": "front",
+      "boxes": [
+        {
+          "id": "b1",
+          "images": []
+        },
+        {
+          "id": "deco",
+          "images": [
+            {
+              "width": 546,
+              "height": 356
+            }
+          ]
+        },
+        {
+          "id": "b2",
+          "images": []
+        },
+        {
+          "id": "b3",
+          "images": []
+        },
+        {
+          "id": "b4",
+          "images": [
+            {
+              "width": 80,
+              "height": 80
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "section": "FRONT_SECTION",
+      "filename": "FRONT-6story-Vimage-deco_template.xml",
+      "title": "5 Story plus 1 image deco",
+      "usage": "front",
+      "boxes": [
+        {
+          "id": "b1",
+          "images": []
+        },
+        {
+          "id": "deco",
+          "images": [
+            {
+              "width": 360,
+              "height": 3461
+            }
+          ]
+        },
+        {
+          "id": "b2",
+          "images": []
+        },
+        {
+          "id": "b3",
+          "images": []
+        },
+        {
+          "id": "b4",
+          "images": []
+        },
+        {
+          "id": "b5",
+          "images": [
+            {
+              "width": 80,
+              "height": 80
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "section": "OPINION",
+      "filename": "OPINION-7story-deco_template.xml",
+      "title": "Default: 7 story plus deco (3RandO-4CMTY)",
+      "usage": "front",
+      "boxes": [
+        {
+          "id": "b1",
+          "images": []
+        },
+        {
+          "id": "b2",
+          "images": []
+        },
+        {
+          "id": "b3",
+          "images": []
+        },
+        {
+          "id": "deco",
+          "images": [
+            {
+              "width": 542,
+              "height": 362
+            }
+          ]
+        },
+        {
+          "id": "b4",
+          "images": []
+        },
+        {
+          "id": "b5",
+          "images": []
+        },
+        {
+          "id": "b6",
+          "images": []
+        },
+        {
+          "id": "b7",
+          "images": []
+        }
+      ]
+    },
+    {
+      "section": "OPINION",
+      "filename": "OPINION-6story-deco_template.xml",
+      "title": "6 story plus deco",
+      "usage": "front",
+      "boxes": [
+        {
+          "id": "b1",
+          "images": []
+        },
+        {
+          "id": "b2",
+          "images": []
+        },
+        {
+          "id": "b3",
+          "images": []
+        },
+        {
+          "id": "deco",
+          "images": [
+            {
+              "width": 542,
+              "height": 362
+            }
+          ]
+        },
+        {
+          "id": "b4",
+          "images": []
+        },
+        {
+          "id": "b5",
+          "images": []
+        },
+        {
+          "id": "b6",
+          "images": []
+        }
+      ]
+    },
+    {
+      "section": "OPINION",
+      "filename": "OPINION-2story-deco_template.xml",
+      "title": "2 story plus deco",
+      "usage": "front",
+      "boxes": [
+        {
+          "id": "deco",
+          "images": [
+            {
+              "width": 816,
+              "height": 544
+            }
+          ]
+        },
+        {
+          "id": "b1",
+          "images": []
+        },
+        {
+          "id": "b2",
+          "images": []
+        }
+      ]
+    },
+    {
+      "section": "WSJ_MAGAZINE",
+      "filename": "CONTINUATION-6story-magazine-promo_template.xml",
+      "title": "6 story - WSJ Magazine",
+      "usage": "continuation",
+      "boxes": [
+        {
+          "id": "b1",
+          "images": [
+            {
+              "width": 236,
+              "height": 274
+            },
+            {
+              "width": 360,
+              "height": 240
+            }
+          ]
+        },
+        {
+          "id": "b2",
+          "images": [
+            {
+              "width": 236,
+              "height": 287
+            },
+            {
+              "width": 360,
+              "height": 240
+            }
+          ]
+        },
+        {
+          "id": "b3",
+          "images": [
+            {
+              "width": 236,
+              "height": 153
+            },
+            {
+              "width": 178,
+              "height": 178
+            }
+          ]
+        },
+        {
+          "id": "b4",
+          "images": [
+            {
+              "width": 236,
+              "height": 153
+            },
+            {
+              "width": 178,
+              "height": 178
+            }
+          ]
+        },
+        {
+          "id": "b5",
+          "images": [
+            {
+              "width": 236,
+              "height": 153
+            },
+            {
+              "width": 178,
+              "height": 178
+            }
+          ]
+        },
+        {
+          "id": "b6",
+          "images": [
+            {
+              "width": 236,
+              "height": 153
+            },
+            {
+              "width": 178,
+              "height": 178
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "filename": "SECTION-6story_template.xml",
+      "title": "6 story - G photo",
+      "usage": "front",
+      "boxes": [
+        {
+          "id": "b1",
+          "images": [
+            {
+              "width": 484,
+              "height": 322
+            }
+          ]
+        },
+        {
+          "id": "b2",
+          "images": [
+            {
+              "width": 236,
+              "height": 153
+            },
+            {
+              "width": 292,
+              "height": 195
+            }
+          ]
+        },
+        {
+          "id": "b3",
+          "images": []
+        },
+        {
+          "id": "b4",
+          "images": []
+        },
+        {
+          "id": "b5",
+          "images": []
+        },
+        {
+          "id": "b6",
+          "images": []
+        }
+      ]
+    },
+    {
+      "filename": "SECTION-6story-deco_template.xml",
+      "title": "6 story plus deco",
+      "usage": "front",
+      "boxes": [
+        {
+          "id": "b1",
+          "images": []
+        },
+        {
+          "id": "deco",
+          "images": [
+            {
+              "width": 567,
+              "height": 379
+            }
+          ]
+        },
+        {
+          "id": "b2",
+          "images": [
+            {
+              "width": 292,
+              "height": 195
+            },
+            {
+              "width": 236,
+              "height": 153
+            }
+          ]
+        },
+        {
+          "id": "b3",
+          "images": []
+        },
+        {
+          "id": "b4",
+          "images": []
+        },
+        {
+          "id": "b5",
+          "images": []
+        },
+        {
+          "id": "b6",
+          "images": []
+        }
+      ]
+    },
+    {
+      "filename": "SECTION-3story_template.xml",
+      "title": "3 story - Large Photo",
+      "usage": "front",
+      "boxes": [
+        {
+          "id": "deco",
+          "images": [
+            {
+              "width": 834,
+              "height": 544
+            }
+          ]
+        },
+        {
+          "id": "b1",
+          "images": [
+            {
+              "width": 113,
+              "height": 113
+            }
+          ]
+        },
+        {
+          "id": "b2",
+          "images": [
+            {
+              "width": 113,
+              "height": 113
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "filename": "SECTION-1story_template.xml",
+      "title": "Full size Deco",
+      "usage": "front",
+      "boxes": [
+        {
+          "id": "deco",
+          "images": [
+            {
+              "width": 768,
+              "height": 1024
+            },
+            {
+              "width": 1024,
+              "height": 768
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "filename": "CONTINUATION-generic-32_template.xml",
+      "usage": "continuation",
+      "boxes": [
+        {
+          "id": "b1",
+          "images": []
+        },
+        {
+          "id": "b2",
+          "images": []
+        },
+        {
+          "id": "b3",
+          "images": []
+        },
+        {
+          "id": "b4",
+          "images": []
+        },
+        {
+          "id": "b5",
+          "images": []
+        },
+        {
+          "id": "b6",
+          "images": []
+        },
+        {
+          "id": "b7",
+          "images": []
+        },
+        {
+          "id": "b8",
+          "images": []
+        },
+        {
+          "id": "b9",
+          "images": []
+        },
+        {
+          "id": "b10",
+          "images": []
+        },
+        {
+          "id": "b11",
+          "images": []
+        },
+        {
+          "id": "b12",
+          "images": []
+        },
+        {
+          "id": "b13",
+          "images": []
+        },
+        {
+          "id": "b14",
+          "images": []
+        },
+        {
+          "id": "b15",
+          "images": []
+        },
+        {
+          "id": "b16",
+          "images": []
+        },
+        {
+          "id": "b17",
+          "images": []
+        },
+        {
+          "id": "b18",
+          "images": []
+        },
+        {
+          "id": "b19",
+          "images": []
+        },
+        {
+          "id": "b20",
+          "images": []
+        },
+        {
+          "id": "b21",
+          "images": []
+        },
+        {
+          "id": "b22",
+          "images": []
+        },
+        {
+          "id": "b23",
+          "images": []
+        },
+        {
+          "id": "b24",
+          "images": []
+        },
+        {
+          "id": "b25",
+          "images": []
+        },
+        {
+          "id": "b26",
+          "images": []
+        },
+        {
+          "id": "b27",
+          "images": []
+        },
+        {
+          "id": "b28",
+          "images": []
+        },
+        {
+          "id": "b29",
+          "images": []
+        },
+        {
+          "id": "b30",
+          "images": []
+        },
+        {
+          "id": "b31",
+          "images": []
+        },
+        {
+          "id": "b32",
+          "images": []
+        }
+      ]
+    },
+    {
+      "filename": "CONTINUATION-generic-16_template.xml",
+      "usage": "continuation",
+      "boxes": [
+        {
+          "id": "b1",
+          "images": []
+        },
+        {
+          "id": "b2",
+          "images": []
+        },
+        {
+          "id": "b3",
+          "images": []
+        },
+        {
+          "id": "b4",
+          "images": []
+        },
+        {
+          "id": "b5",
+          "images": []
+        },
+        {
+          "id": "b6",
+          "images": []
+        },
+        {
+          "id": "b7",
+          "images": []
+        },
+        {
+          "id": "b8",
+          "images": []
+        },
+        {
+          "id": "b9",
+          "images": []
+        },
+        {
+          "id": "b10",
+          "images": []
+        },
+        {
+          "id": "b11",
+          "images": []
+        },
+        {
+          "id": "b12",
+          "images": []
+        },
+        {
+          "id": "b13",
+          "images": []
+        },
+        {
+          "id": "b14",
+          "images": []
+        },
+        {
+          "id": "b15",
+          "images": []
+        },
+        {
+          "id": "b16",
+          "images": []
+        }
+      ]
+    },
+    {
+      "filename": "CONTINUATION-generic-8_template.xml",
+      "usage": "continuation",
+      "boxes": [
+        {
+          "id": "b1",
+          "images": []
+        },
+        {
+          "id": "b2",
+          "images": []
+        },
+        {
+          "id": "b3",
+          "images": []
+        },
+        {
+          "id": "b4",
+          "images": []
+        },
+        {
+          "id": "b5",
+          "images": []
+        },
+        {
+          "id": "b6",
+          "images": []
+        },
+        {
+          "id": "b7",
+          "images": []
+        },
+        {
+          "id": "b8",
+          "images": []
+        }
+      ]
+    },
+    {
+      "filename": "CONTINUATION-generic-4_template.xml",
+      "usage": "continuation",
+      "boxes": [
+        {
+          "id": "b1",
+          "images": []
+        },
+        {
+          "id": "b2",
+          "images": []
+        },
+        {
+          "id": "b3",
+          "images": []
+        },
+        {
+          "id": "b4",
+          "images": []
+        }
+      ]
+    },
+    {
+      "filename": "CONTINUATION-generic-2_template.xml",
+      "usage": "continuation",
+      "boxes": [
+        {
+          "id": "b1",
+          "images": []
+        },
+        {
+          "id": "b2",
+          "images": []
+        }
+      ]
+    },
+    {
+      "filename": "CONTINUATION-generic-1_template.xml",
+      "usage": "continuation",
+      "boxes": [
+        {
+          "id": "b1",
+          "images": []
+        }
+      ]
+    },
+    {
+      "filename": "GENERIC-fullpagead-template.xml",
+      "usage": "ads",
+      "boxes": []
+    }
+  ],
+  "article": [
+    {
+      "filename": "ARTICLE-standard_template.xml",
+      "title": "Standard Article Template"
+    },
+    {
+      "filename": "ARTICLE-h-slideshow_template.xml",
+      "title": "Slideshow Article Template"
+    },
+    {
+      "filename": "ARTICLE-v-slideshow_template.xml",
+      "title": "Slideshow Article Template (Vertical)"
+    }
+  ]
 }

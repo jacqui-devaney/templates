@@ -811,18 +811,20 @@
       }
     ]
   },
-  "article": [
-    {
-      "filename": "ARTICLE-standard_template.xml",
-      "title": "Standard Article Template"
-    },
-    {
-      "filename": "ARTICLE-h-slideshow_template.xml",
-      "title": "Slideshow Article Template"
-    },
-    {
-      "filename": "ARTICLE-v-slideshow_template.xml",
-      "title": "Slideshow Article Template (Vertical)"
-    }
-  ]
+  "article": {
+    "templates": [
+      {
+        "filename": "ARTICLE-standard_template.xml",
+        "title": "Standard Article Template"
+      },
+      {
+        "filename": "ARTICLE-h-slideshow_template.xml",
+        "title": "Slideshow Article Template"
+      },
+      {
+        "filename": "ARTICLE-v-slideshow_template.xml",
+        "title": "Slideshow Article Template (Vertical)"
+      }
+    ]
+  }
 }

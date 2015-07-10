@@ -537,14 +537,16 @@
       }
     ]
   },
-  "article": [
-    {
-      "filename": "ARTICLE-standard_template.xml",
-      "title": "Standard Article Template"
-    },
-    {
-      "filename": "ARTICLE-deloitte_template.xml",
-      "title": "Deloitte Article Template"
-    }
-  ]
+  "article": {
+    "templates": [
+      {
+        "filename": "ARTICLE-standard_template.xml",
+        "title": "Standard Article Template"
+      },
+      {
+        "filename": "ARTICLE-deloitte_template.xml",
+        "title": "Deloitte Article Template"
+      }
+    ]
+  }
 }

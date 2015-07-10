@@ -79,47 +79,41 @@
 	.body-last-p-mark: {
 			display: none
 	},
+
 	.article_body: {
-		if: =scale.tablet, then: {
-			text-align:left,
-			text-indent:0
-		}
+		text-align:left,
+		text-indent:0
 	},
+
 	h2: {
-		if: =scale.tablet, then: {
-			text-indent:0
-		}
+		text-indent:0
 	},
 	
 	p: {
-		if: =scale.tablet, then: {
-			padding:[0,0,20,0]
-		}
+		padding:[0,0,20,0]
 	},
 
 	#body-first-p: {
-		if: =scale.tablet, then: {
-			padding:[0,0,20,0]
-		}
+		padding:[0,0,20,0]
 	},
 
 	#body-last-p: {
 		padding: [0, 0, 8, 0]
 	},
 
-	#inset-DELOITTEFOOTNOTES-p: {
+	.DELOITTEFOOTNOTES: {
 		padding: [13, 0, 10, 0]
 	},
 
-	#inset-DELOITTERELATEDCONTENT-p: {
+	.DELOITTERELATEDCONTENT: {
 		padding: [12, 0, 0, 0]
 	},
 
-	#inset-DELOITTEQUESTIONS-p: {
+	.DELOITTEQUESTIONS: {
 		padding: [10, 0, 8, 0]
 	},
 
-	#inset-DELOITTEDISCLAMER-p: {
+	.DELOITTEDISCLAMER: {
 		padding: [13, 0, 0, 0]
 	},
 
@@ -141,8 +135,8 @@
 
 	.deloitte-footnotes: {
 		font-name: "Whitney-Medium",
-		font-size: { if: =scale.phone, then: 14, else: 11 },
-		line-height: { if: =scale.phone, then: 19, else: 15 },
+		font-size: { if: =scale.phone, then: {$multiply: [14, =view.zoomlevel]}, else: {$multiply: [11, =view.zoomlevel]} },
+		line-height: { if: =scale.phone, then: {$multiply: [18, =view.zoomlevel]}, else: {$multiply: [15, =view.zoomlevel]} },
 		layout-grid-line: 0,
 		layout-grid-line-offset: 0,
 		color: #898B8E
@@ -164,8 +158,8 @@
 
 	.deloitte-disclaimer: {
 		font-name: "Whitney-Medium",
-		font-size: { if: =scale.phone, then: 14, else: 11 },
-		line-height: { if: =scale.phone, then: 18, else: 15 },
+		font-size: { if: =scale.phone, then: {$multiply: [14, =view.zoomlevel]}, else: {$multiply: [11, =view.zoomlevel]} },
+		line-height: { if: =scale.phone, then: {$multiply: [18, =view.zoomlevel]}, else: {$multiply: [15, =view.zoomlevel]} },
 		layout-grid-line: 0,
 		layout-grid-line-offset: 0,
 		color: #222222

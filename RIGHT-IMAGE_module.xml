@@ -125,9 +125,11 @@
 		</box>
 		<panel id="headline">
 			<p class="module_headline"><mark class="m_headline" /></p>
-			<p class="module_flashline"><span embed="flashline" /></p>
-            <p class="byline" embed="byline"/>
-            <panel class="body" embed="body"/>
+			<p class="module_flashline"><mark class="flashline-mark" /></p>
+            <p class="byline"><mark class="byline-mark"/></p>
+            <panel class="body">
+            	<p><mark class="body-mark"/></p>
+            </panel>
         </panel>
 
 </jpml>

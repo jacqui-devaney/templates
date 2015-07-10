@@ -164,13 +164,15 @@
 		<box id="article_status" embed="article-status"></box>
 		<panel id="headline">
 			<p class="module_headline"><mark class="m_headline" /></p>
-			<h2 class="opinion_dek" embed="subhed" ></h2>
+			<h2 class="opinion_dek"><mark class="subhed-mark" /></h2>
 		</panel>
 		<panel id="body">
-			<p class="module_flashline"><span embed="flashline" /></p>
-			<p class="byline" embed="byline"/>
+			<p class="module_flashline"><mark class="flashline-mark" /></p>
+			<p class="byline"><mark class="byline-mark"/></p>
 			<p id="summary" class="body"><mark class="body-first-p-mark" /><mark class="module_summary" /></p>
-			<panel class="body" embed="body"/>
+			<panel class="body">
+				<p><mark class="body-mark"/></p>
+			</panel>
 		</panel>
 	</panel>
 </jpml>

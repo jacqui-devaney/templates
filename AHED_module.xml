@@ -80,7 +80,9 @@
     <panel>
         <p id="headline" class="ahed_headline"><mark class="m_headline" /></p>
         <p><mark id="stars"/></p>
-        <p class="ahed_subhed" embed="subhed"/>
-        <panel class="body" embed="body"/>
+        <p class="ahed_subhed"><mark class="subhed-mark"/></p>
+        <panel class="body">
+            <p><mark class="body-mark"/></p>
+        </panel>
     </panel>
 </jpml>

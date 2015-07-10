@@ -65,9 +65,11 @@
 		<box class="rando_border"> </box>
 	</panel>
 	<panel id="vertical">
-	   	<p class="highlight_flashline hidden_tablet" embed="flashline" />
+	   	<p class="highlight_flashline hidden_tablet"><mark class="flashline-mark" /></p>
 		<p id="headline" class="opinion_headline"><mark class="m_headline" /></p>
-		<h2 class="opinion_dek" embed="subhed" ></h2>
-		<panel class="body" embed="body"/>
+		<h2 class="opinion_dek"><mark class="subhed-mark" /></h2>
+		<panel class="body">
+			<p><mark class="body-mark"/></p>
+		</panel>
 	</panel>
 </jpml>

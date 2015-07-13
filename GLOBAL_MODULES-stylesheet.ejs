@@ -139,7 +139,9 @@
 	},
 	#m_subsection: { content: =article.subsection },
 	.m_headline: { content: =article.headline },
-	.body-mark: { content: =article.body_extract },
+	.body-mark: { content: =article.body_extract,
+		text-indent: {if: =options.indent, then: =text.indent, else: 0}
+	},
 	.byline-mark: {	content: =article.byline },
 	.flashline-mark: { content: =article.flashline },
 	.subhed-mark: {	content: =article.deckline},

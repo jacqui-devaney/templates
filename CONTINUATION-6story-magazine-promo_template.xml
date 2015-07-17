@@ -25,6 +25,7 @@
 					height:420,
 					top:0,
 					options: {
+						bind: none,
 						large_headline: true,
 						top_image: true,
 						show_top_flashline: true,
@@ -35,6 +36,7 @@
 					height:420,
 					top:0,
 					options: {
+						bind: none,
 						large_headline: true,
 						top_image: true,
 						show_top_flashline: true,
@@ -45,6 +47,7 @@
 					height:190,
 					top:420,
 					options: {
+						bind: none,
 						top_border: true,
 						squarish_image: true,
 						show_top_flashline: true,
@@ -55,6 +58,7 @@
 					height:190,
 					top:420,
 					options: {
+						bind: none,
 						top_border: true,
 						squarish_image: true,
 						show_top_flashline: true,
@@ -65,6 +69,7 @@
 					height:190,
 					top:620,
 					options: {
+						bind: none,
 						top_border: true,
 						squarish_image: true,
 						show_top_flashline: true,
@@ -75,6 +80,7 @@
 					height:190,
 					top:620,
 					options: {
+						bind: none,
 						top_border: true,
 						squarish_image: true,
 						show_top_flashline: true,
@@ -87,6 +93,7 @@
 					height:260,
 					top:0,
 					options: {
+						bind: none,
 						large_headline: true,
 						show_top_flashline: true,
 						show_body: true
@@ -96,6 +103,7 @@
 					height:270,
 					top:270,
 					options: {
+						bind: none,
 						large_headline: true,
 						top_border: true,
 						show_top_flashline: true,
@@ -106,6 +114,7 @@
 					height:260,
 					top:0,
 					options: {
+						bind: none,
 						top_image: true,
 						show_top_flashline: true,
 						show_body: true
@@ -115,6 +124,7 @@
 					height:260,
 					top:0,
 					options: {
+						bind: none,
 						top_image: true,
 						show_top_flashline: true,
 						show_body: true
@@ -124,6 +134,7 @@
 					height:270,
 					top:270,
 					options: {
+						bind: none,
 						top_image: true,
 						top_border: true,
 						show_top_flashline: true,
@@ -134,6 +145,7 @@
 					height:270,
 					top:270,
 					options: {
+						bind: none,
 						top_image: true,
 						top_border: true,
 						show_top_flashline: true,

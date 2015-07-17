@@ -27,6 +27,7 @@
 
 				#b1: {
 					options: {
+						bind: none,
 						module: url(TOP-IMAGE_module.xml),
 						show_body: true,
 						medium_headline: true
@@ -36,6 +37,7 @@
 				#b2: {
 					height: =size.continuation_height_large,
 					options: {
+						bind: none,
 						module: url(TOP-IMAGE_module.xml),
 						top_border: true,
 						show_body: true,
@@ -49,6 +51,7 @@
 					height: =size.continuation_height_large,
 					padding: [22,0,0,0],
 					options: {
+						bind: none,
 						module: url(TOP-IMAGE_module.xml),
 						show_body: true,
 						show_image: true,
@@ -61,6 +64,7 @@
 					bind: none,
 					height: =size.continuation_height_normal,
 					options: {
+						bind: none,
 						module: url(CONTINUATION-dynamic_module.xml),
 						show_body: false,
 						small_headline: true
@@ -71,6 +75,7 @@
 					bind: none,
 					height: =size.continuation_height_normal,
 					options: {
+						bind: none,
 						module: url(CONTINUATION-dynamic_module.xml),
 						show_body: false,
 						small_headline: true
@@ -81,6 +86,7 @@
 					bind: none,
 					height: =size.continuation_height_normal,
 					options: {
+						bind: none,
 						module: url(CONTINUATION-dynamic_module.xml),
 						show_body: false,
 						small_headline: true
@@ -91,6 +97,7 @@
 					bind: none,
 					height: =size.continuation_height_normal,
 					options: {
+						bind: none,
 						module: url(CONTINUATION-dynamic_module.xml),
 						show_body: false,
 						small_headline: true,
@@ -102,6 +109,7 @@
 					bind: none,
 					height: =size.continuation_height_normal,
 					options: {
+						bind: none,
 						module: url(CONTINUATION-dynamic_module.xml),
 						show_body: false,
 						small_headline: true
@@ -271,11 +279,13 @@
 			#b1: {
 				options: {
 					if:=portrait, then: {
+						bind: none,
 						smedium_headline:true,
 						show_body: true,
 						background_color: =color.background,
 						wide_image: true
 					}, else: {
+						bind: none,
 						smedium_headline:true,
 						show_image: true,
 						background_color: =color.background,
@@ -285,6 +295,7 @@
 			},
 			#b2: {
 				options: {
+					bind: none,
 					show_body: true,
 					small_headline: true,
 					background_color: =color.background,
@@ -294,6 +305,7 @@
 			},
 			#b3: {
 				options: {
+					bind: none,
 					show_body: true,
 					small_headline: true,
 					background_color: blue,
@@ -303,6 +315,7 @@
 			},
 			#b4: {
 				options: {
+					bind: none,
 					show_body: true,
 					small_headline: true,
 					background_color: =color.background,
@@ -312,6 +325,7 @@
 			},
 			#b5: {
 				options: {
+					bind: none,
 					show_body: true,
 					small_headline: true,
 					background_color: =color.background,
@@ -321,6 +335,7 @@
 			},
 			#b6: {
 				options: {
+					bind: none,
 					show_body: true,
 					small_headline: true,
 					background_color: =color.background,
@@ -330,6 +345,7 @@
 			},
 			#b11: {
 				options: {
+					bind: none,
 					show_body: true,
 					small_headline: true,
 					background_color: =color.background,
@@ -339,6 +355,7 @@
 			},
 			#b12: {
 				options: {
+					bind: none,
 					show_body: true,
 					small_headline: true,
 					background_color: =color.background,

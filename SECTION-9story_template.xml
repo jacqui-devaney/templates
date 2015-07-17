@@ -72,45 +72,45 @@
 					display: none
 				},
 				#b1 : {
-					options: { show_body: true, medium_headline: true }
+					options: { bind: none, show_body: true, medium_headline: true }
 				},
 				#b2 : {
 					height: =size.continuation_height_large,
-					options: { show_body: true, small_headline: true, module: url(CONTINUATION-dynamic_module.xml) }
+					options: { bind: none, show_body: true, small_headline: true, module: url(CONTINUATION-dynamic_module.xml) }
 				},
 				#b3 : {
 					height: =size.continuation_height_large,
-					options: { show_body: true, small_headline: true, module: url(CONTINUATION-dynamic_module.xml) }
+					options: { bind: none, show_body: true, small_headline: true, module: url(CONTINUATION-dynamic_module.xml) }
 				},
 				#b4 : {
 					bind: none,
 					height: =size.continuation_height_normal,
-					options: { show_body: false, small_headline: true }
+					options: { bind: none, show_body: false, small_headline: true }
 				},
 				#b5 : {
 					bind: none,
 					height: =size.continuation_height_normal,
-					options: { show_body: false, small_headline: true }
+					options: { bind: none, show_body: false, small_headline: true }
 				},
 				#b6 : {
 					bind: none,
 					height: =size.continuation_height_normal,
-					options: { show_body: false, small_headline: true }
+					options: { bind: none, show_body: false, small_headline: true }
 				},
 				#b7 : {
 					bind: none,
 					height: =size.continuation_height_normal,
-					options: { show_body: false, small_headline: true }
+					options: { bind: none, show_body: false, small_headline: true }
 				},
 				#b8 : {
 					bind: none,
 					height: =size.continuation_height_large,
-					options: { show_body: true, small_headline: true }
+					options: { bind: none, show_body: true, small_headline: true }
 				},
 				#b9 : {
 					bind: none,
 					height: =size.continuation_height_normal,
-					options: { show_body: false, small_headline: true }
+					options: { bind: none, show_body: false, small_headline: true }
 				}
 			}},
 			{if: =portrait, then: {
@@ -200,6 +200,7 @@
 		else: {
 			#b1: {
 				options: {
+					bind: none, 
 					medium_headline:true,
 					show_image:true,
 					background_color: =color.background
@@ -207,6 +208,7 @@
 			},
 			#b2: {
 				options: {
+					bind: none, 
 					show_body: true,
 					show_image: true,
 					smedium_headline: true,
@@ -215,6 +217,7 @@
 			},
 			#b3: {
 				options: {
+					bind: none, 
 					show_body: true,
 					show_image: true,
 					smedium_headline: true,
@@ -223,6 +226,7 @@
 			},
 			#b4: {
 				options: {
+					bind: none, 
 					hide_border: =portrait,
 					show_body: true,
 					small_headline: true,
@@ -231,6 +235,7 @@
 			},
 			#b5: {
 				options: {
+					bind: none, 
 					show_body: true,
 					small_headline: true,
 					background_color: =color.background
@@ -238,6 +243,7 @@
 			},
 			#b6: {
 				options: {
+					bind: none, 
 					show_body: true,
 					small_headline: true,
 					background_color: =color.background
@@ -245,6 +251,7 @@
 			},
 			#b7: {
 				options: {
+					bind: none, 
 					show_body: true,
 					small_headline: true,
 					background_color: =color.background
@@ -252,6 +259,7 @@
 			},
 			#b8: {
 				options: {
+					bind: none, 
 					show_body: true,
 					small_headline: true,
 					background_color: =color.background
@@ -259,6 +267,7 @@
 			},
 			#b9: {
 				options: {
+					bind: none, 
 					show_body: true,
 					small_headline: true,
 					background_color: =color.background

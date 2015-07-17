@@ -22,11 +22,11 @@
     	},
 		#b2 : {
 			height: =size.continuation_height_large,
-			options: { show_body: true }
+			options: { bind: none, show_body: true }
 		},
 		#b3 : {
 			height: =size.continuation_height_large,
-			options: { show_body: true }
+			options: { bind: none, show_body: true }
 		},
 		#b4 : {
 			bind: none,

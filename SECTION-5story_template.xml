@@ -55,6 +55,21 @@
 	<style> {
 		$switch: [
 			{if: =scale.rail, then: {
+				#b1:	{
+					options: { bind: none }
+				},
+				#b2:	{
+					options: { bind: none }
+				},
+				#b3:	{
+					options: { bind: none }
+				},
+				#b4:	{
+					options: { bind: none }
+				},
+				#b5:{
+					options: { bind: none }
+				}
 			}},
 			{if: =scale.phone, then: {
 				#page_details: {
@@ -72,70 +87,77 @@
 					display: none
 				},
 				#b1 : {
-					options: { show_body: true, medium_headline: true }
+					options: { bind: none, show_body: true, medium_headline: true }
 				},
 				#b2 : {
 					height: =size.continuation_height_large,
-					options: { show_body: true, small_headline: true, module: url(CONTINUATION-dynamic_module.xml) }
+					options: { bind: none, show_body: true, small_headline: true, module: url(CONTINUATION-dynamic_module.xml) }
 				},
 				#b3 : {
-					bind: none,
 					height: =size.continuation_height_normal,
-					options: { show_body: false, small_headline: true }
+					options: { bind: none, show_body: false, small_headline: true }
 				},
 				#b4 : {
-					bind: none,
 					height: =size.continuation_height_normal,
-					options: { show_body: false, small_headline: true }
+					options: { bind: none, show_body: false, small_headline: true }
 				},
 				#b5 : {
-					bind: none,
 					height: =size.continuation_height_normal,
-					options: { show_body: false, small_headline: true }
+					options: { bind: none, show_body: false, small_headline: true }
 				}
 			}},
 			{if: =portrait, then: {
 				#b1:	{
 					top:30,
-					height:645
+					height:645,
+					options: { bind: none }
 				},
 				#b2:	{
 					top:695,
-					height:200
+					height:200,
+					options: { bind: none }
 				},
 				#b3:{
 					top:30,
-					height:290
+					height:290,
+					options: { bind: none }
 				},
 				#b4:	{
 					top:325,
-					height:290
+					height:290,
+					options: { bind: none }
 				},
 				#b5:	{
 					top:620,
-					height:280
+					height:280,
+					options: { bind: none }
 				}
 			}},
 			{if: =landscape, then: {
 				#b1:	{
 					top:30,
-					height:615
+					height:615,
+					options: { bind: none }
 				},
 				#b2:	{
 					top:30,
-					height:155
+					height:155,
+					options: { bind: none }
 				},
 				#b3:	{
 					top:190,
-					height:155
+					height:155,
+					options: { bind: none }
 				},
 				#b4:	{
 					top:350,
-					height:155
+					height:155,
+					options: { bind: none }
 				},
 				#b5:{
 					top:510,
-					height:140
+					height:140,
+					options: { bind: none }
 				}
 			}}
 		]
@@ -143,14 +165,29 @@
 	<style>{
 		if: =scale.phone,
 		then: {
-
+				#b1:	{
+					options: { bind: none }
+				},
+				#b2:	{
+					options: { bind: none }
+				},
+				#b3:	{
+					options: { bind: none }
+				},
+				#b4:	{
+					options: { bind: none }
+				},
+				#b5:{
+					options: { bind: none }
+				}
 		},
 		else: {
 			#b1: {
 				options: {
 					medium_headline:true,
 					show_image:true,
-					background_color: =color.background
+					background_color: =color.background,
+					bind:none
 				}
 			},
 			#b2: {
@@ -159,7 +196,8 @@
 					show_body: true,
 					show_image: true,
 					smedium_headline: true,
-					background_color: =color.background
+					background_color: =color.background,
+					bind:none
 				}
 			},
 			#b3: {
@@ -167,21 +205,24 @@
 					hide_border: =portrait,
 					show_body: true,
 					small_headline: true,
-					background_color: =color.background
+					background_color: =color.background,
+					bind:none
 				}
 			},
 			#b4: {
 				options: {
 					show_body: true,
 					small_headline: true,
-					background_color: =color.background
+					background_color: =color.background,
+					bind:none
 				}
 			},
 			#b5: {
 				options: {
 					show_body: true,
 					small_headline: true,
-					background_color: =color.background
+					background_color: =color.background,
+					bind:none
 				}
 			}
 		}

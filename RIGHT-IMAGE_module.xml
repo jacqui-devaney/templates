@@ -59,22 +59,22 @@
 				#deco_container: {
 					anchor-x:right,
 					width: {$switch:[
-						{if: =options.A_image, then:110},
-						{if: =options.small_image, then:119},
-						{if: =options.square_image, then:179},
-						{if: =options.wide_image, then:304},
-						{if: =options.small_wide_image, then:{$add: [{$multiply: [1.25, =view.height]}, 6]}},
-						242
+						{if: =options.A_image, then:100},
+						{if: =options.small_image, then:92},
+						{if: =options.square_image, then:173},
+						{if: =options.wide_image, then:298},
+						{if: =options.small_wide_image, then:{$multiply: [1.25, =view.height]}},
+						236
 					]},
 					anchor-y:{if: =options.A_image, then:bottom, else:top},
-					display:{if: =options.hide_image, then:none, else:inherit}
+					display:{if: =options.hide_image, then:none, else:inherit},
+					padding: [0, 0, 0, 6]
 
 				},
 				image: {
 					pixels-per-point-x:1,
 					pixels-per-point-y:1,
 					height: {if: =options.small_wide_image, then: inherit, else: {$subtract:[=view.height, {if: =options.top_border, then:24, else:12}]}},
-					padding: [0, 0, 0, 6],
 					width: {$switch:[
 						{if: =options.A_image, then:100},
 						{if: =options.small_image, then:92},

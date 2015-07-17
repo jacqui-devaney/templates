@@ -34,8 +34,7 @@
 						")"
 					] }
 				}
-			},
-			background-color:inherit
+			}
 		},
 		.byline: {
 			display: {if: =options.show_byline, then:inherit, else:none}

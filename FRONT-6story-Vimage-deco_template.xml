@@ -15,70 +15,88 @@
 	<style> {
 		$switch: [
             {if: =scale.phone, then: {
+                #b1:    {
+                    options:{bind:none}
+                },
+                #deco:  {
+                    options:{bind:none}
+                },
+                #b2:    {
+                    options:{bind:none}
+                },
+                #b3:    {
+                    options:{bind:none}
+                },
+                #b4: {
+                    options:{bind:none}
+                },
+                #b5: {
+                    options:{bind:none}
+                }
         
             }},
             {if: =portrait, then: {
                 #b1:	{
                     top:20,
                     height:400,
-                    options:{large_headline:true}
+                    options:{bind:none, large_headline:true}
                 },
                 #deco:	{
                     top:20,
                     height:400,
-                    options:{medium_headline:true}
+                    options:{bind:none, medium_headline:true}
                 },
                 #b2:	{
                     top:430,
                     height:254,
-                    options:{medium_headline:true, top_border:true}
+                    options:{bind:none, medium_headline:true, top_border:true}
                 },
                 #b3:	{
                     top:430,
                     height:254,
-                    options:{medium_headline:true, top_border:true}
+                    options:{bind:none, medium_headline:true, top_border:true}
                 },
                 #b4: {
                     top:430,
                     height:254,
-                    options:{medium_headline:true, top_border:true}
+                    options:{bind:none, medium_headline:true, top_border:true}
                 },
                 #b5: {
                     top:690,
                     height:125,
-                    options:{medium_headline:true, bottom_align:true, show_byline:false, top_border:true}
+                    options:{bind:none, medium_headline:true, bottom_align:true, show_byline:false, top_border:true}
                 }
             }},
             {if: =landscape, then: {
                 #b1:	{
                     top:20,
                     height:350,
-                    options:{large_headline:true}
+                    options:{bind:none, large_headline:true}
                 },
                 #deco:	{
                     top:20,
                     height:400,
-                    options:{medium_headline:true}
+                    options:{bind:none, medium_headline:true}
                 },
                 #b2:	{
                     top:20,
                     height:260,
-                    options:{medium_headline:true}
+                    options:{bind:none, medium_headline:true}
                 },
                 #b3:	{
                     top:290,
                     height:270,
-                    options:{medium_headline:true, top_border:true}
+                    options:{bind:none, medium_headline:true, top_border:true}
                 },
                 #b4:	{
                     top:440,
                     height:120,
-                    options:{medium_headline:true, top_border:true}
+                    options:{bind:none, medium_headline:true, top_border:true}
                 },
                 #b5:	{
                     top:380,
                     height:185,
-                    options:{medium_headline:true, top_border:true, show_byline:false}
+                    options:{bind:none, medium_headline:true, top_border:true, show_byline:false}
                 }
             }}
 		]

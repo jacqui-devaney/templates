@@ -7,41 +7,61 @@
 	<style>{
 		$switch: [
 	        {if: =scale.phone, then: {
+	        	#b1 : { 
+					options: { bind: none }
+				},
+				#b2 : { 
+					options: { bind: none }
+				},
+				#b3 : {  
+					options: { bind: none }
+				},
+				#b4 : { 
+					options: { bind: none }
+				}
 	        }},
 	        {if: =portrait, then: {
 		        #b1 : { 
 	 				height:480,
-					top:0
+					top:0, 
+					options: { bind: none }
 				},
 				#b2 : { 
 	 				height:480,
-					top:0
+					top:0, 
+					options: { bind: none }
 				},
 				#b3 : { 
 	 				height:480,
-					top:480
+					top:480, 
+					options: { bind: none }
 				},
 				#b4 : { 
 	 				height:480,
-					top:480
+					top:480, 
+					options: { bind: none }
 				}
 			}},
 			{if: =landscape, then: {
 	        	#b1 : { 
 	 				height:353,
-					top:0
+					top:0, 
+					options: { bind: none }
 				},
 				#b2 : { 
 	 				height:353,
-					top:0
+					top:0, 
+					options: { bind: none }
 				},
 				#b3 : { 
 	 				height:353,
-					top:353
+					top:353, 
+					options: { bind: none }
 				},
 				#b4 : { 
 	 				height:353,
-					top:353
+					top:353, 
+					options: { bind: none }
 				}
 			}}
 		]

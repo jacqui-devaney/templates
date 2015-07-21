@@ -14,138 +14,218 @@
 	<style>{
 		$switch: [
 	        {if: =scale.phone, then: {
+				#b1 : {
+					options: { bind: none }
+				},
+				#b2 : {
+					options: { bind: none }
+				},
+				#b3 : { 
+					options: { bind: none }
+				},
+				#b4 : {
+					options: { bind: none }
+				},
+				#b5 : {
+					options: { bind: none }
+				},
+				#b6 : {
+					options: { bind: none }
+				},
+				#b7 : {
+					options: { bind: none }
+				},
+				#b8 : {
+					options: { bind: none }
+				},
+				#b9 : {
+					options: { bind: none }
+				},
+				#b10 : {
+					options: { bind: none }
+				},
+				#b11 : { 
+					options: { bind: none }
+				},
+				#b12 : {
+					options: { bind: none }
+				},
+				#b13 : {
+					options: { bind: none }
+				},
+				#b14 : {
+					options: { bind: none }
+				},
+				#b15 : {
+					options: { bind: none }
+				},
+				#b16 : {
+					options: { bind: none }
+				}
 	        }},
 	        {if: =portrait, then: {
 				#b1 : {
 	 				height:240,
-					top:0
+					top:0, 
+					options: { bind: none }
 				},
 				#b2 : {
 	 				height:240,
-					top:0
+					top:0, 
+					options: { bind: none }
 				},
 				#b3 : {
 	 				height:240,
-					top:0
+					top:0, 
+					options: { bind: none }
 				},
 				#b4 : {
 	 				height:240,
-					top:0
+					top:0, 
+					options: { bind: none }
 				},
 				#b5 : {
 	 				height:240,
-					top:240
+					top:240, 
+					options: { bind: none }
 				},
 				#b6 : {
 	 				height:240,
-					top:240
+					top:240, 
+					options: { bind: none }
 				},
 				#b7 : {
 	 				height:240,
-					top:240
+					top:240, 
+					options: { bind: none }
 				},
 				#b8 : {
 	 				height:240,
-					top:240
+					top:240, 
+					options: { bind: none }
 				},
 				#b9 : {
 	 				height:240,
-					top:480
+					top:480, 
+					options: { bind: none }
 				},
 				#b10 : {
 	 				height:240,
-					top:480
+					top:480, 
+					options: { bind: none }
 				},
 				#b11 : {
 	 				height:240,
-					top:480
+					top:480, 
+					options: { bind: none }
 				},
 				#b12 : {
 	 				height:240,
-					top:480
+					top:480, 
+					options: { bind: none }
 				},
 				#b13 : {
 	 				height:240,
-					top:720
+					top:720, 
+					options: { bind: none }
 				},
 				#b14 : {
 	 				height:240,
-					top:720
+					top:720, 
+					options: { bind: none }
 				},
 				#b15 : {
 	 				height:240,
-					top:720
+					top:720, 
+					options: { bind: none }
 				},
 				#b16 : {
 	 				height:240,
-					top:720
+					top:720, 
+					options: { bind: none }
 				}
 
         	}},
 			{if: =landscape, then: {
 				#b1 : {
 	 				height:235,
-					top:0
+					top:0, 
+					options: { bind: none }
 				},
 				#b2 : {
 	 				height:235,
-					top:0
+					top:0, 
+					options: { bind: none }
 				},
 				#b3 : {
 	 				height:235,
-					top:0
+					top:0, 
+					options: { bind: none }
 				},
 				#b4 : {
 	 				height:235,
-					top:0
+					top:0, 
+					options: { bind: none }
 				},
 				#b5 : {
 	 				height:235,
-					top:0
+					top:0, 
+					options: { bind: none }
 				},
 				#b6 : {
 	 				height:235,
-					top:0
+					top:0, 
+					options: { bind: none }
 				},
 				#b7 : {
 	 				height:235,
-					top:0
+					top:0, 
+					options: { bind: none }
 				},
 				#b8 : {
 	 				height:235,
-					top:0
+					top:0, 
+					options: { bind: none }
 				},
 				#b9 : {
 	 				height:235,
-					top:235
+					top:235, 
+					options: { bind: none }
 				},
 				#b10 : {
 	 				height:235,
-					top:235
+					top:235, 
+					options: { bind: none }
 				},
 				#b11 : {
 	 				height:235,
-					top:235
+					top:235, 
+					options: { bind: none }
 				},
 				#b12 : {
 	 				height:235,
-					top:235
+					top:235, 
+					options: { bind: none }
 				},
 				#b13 : {
 	 				height:235,
-					top:235
+					top:235, 
+					options: { bind: none }
 				},
 				#b14 : {
 	 				height:235,
-					top:235
+					top:235, 
+					options: { bind: none }
 				},
 				#b15 : {
 	 				height:235,
-					top:235
+					top:235, 
+					options: { bind: none }
 				},
 				#b16 : {
 	 				height:235,
-					top:235
+					top:235, 
+					options: { bind: none }
 				}
 	        }}
 		]

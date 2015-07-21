@@ -13,28 +13,29 @@
     <style>{
 		#b1: {
 			options:{$switch:[
-				{if: =scale.phone, then: {large_headline:true, show_image:true}},
-				{if: =portrait, then: {medium_headline:true, show_body:true, tall_image:true}},
-				{if: =landscape, then: {medium_headline:true, show_body:true, large_image:true}}
+				{if: =scale.phone, then: { bind: none,large_headline:true, show_image:true}},
+				{if: =portrait, then: { bind: none, medium_headline:true, show_body:true, tall_image:true}},
+				{if: =landscape, then: { bind: none, medium_headline:true, show_body:true, large_image:true}}
 			]
 		}},
 		#b2: {
 			options:{$switch:[
-				{if: =portrait, then: {medium_headline:true, top_border:true, show_body:true}},
-				{if: =landscape, then: {medium_headline:true, top_border:true, show_body:true, square_image:true}}
+				{if: =portrait, then: { bind: none, medium_headline:true, top_border:true, show_body:true}},
+				{if: =landscape, then: { bind: none, medium_headline:true, top_border:true, show_body:true, square_image:true}}
 			]
 		}},
 		#b3: {
 			options:{$switch:[
-				{if: =scale.phone, then: {small_headline:true}},
-				{if: =portrait, then: {medium_headline:true, top_border:true, show_body:true}},
-				{if: =landscape, then: {medium_headline:true, top_border:true, square_image:true, show_body:true}}
+				{if: =scale.phone, then: { bind: none, small_headline:true}},
+				{if: =portrait, then: { bind: none, medium_headline:true, top_border:true, show_body:true}},
+				{if: =landscape, then: { bind: none, medium_headline:true, top_border:true, square_image:true, show_body:true}}
 			]
 		}},
 		#rail_content: {
 			options: {
 				filename: { $join: [=page.section, "-article_list.jpml"] },
-				bottom_gradient: #fff
+				bottom_gradient: #fff,
+				bind: none
 			},
 			height:{if: =landscape, then:569, else:964}
 		}
@@ -46,17 +47,17 @@
 
 			}},
 			{if: =portrait, then: {
-				#b1:	{
-						top:0,
-						height:490
+				#b1: {
+					top:0,
+					height:490
 				},
-				#b2:	{
+				#b2: {
 					top:495,
 					height:156
 				},
-				#b3:	{
-						top:652,
-						height:155
+				#b3: {
+					top:652,
+					height:155
 				}
 
 

@@ -14,268 +14,429 @@
 	<style>{
 		$switch: [
 	        {if: =scale.phone, then: {
+	        	#b1 : {
+					options : { bind: none }
+				},
+				#b2 : {
+					options : { bind: none }
+				},
+				#b3 : {
+					options : { bind: none }
+				},
+				#b4 : {
+					options : { bind: none }
+				},
+				#b5 : {
+					options : { bind: none }
+				},
+				#b6 : {
+					options : { bind: none }
+				},
+				#b7 : {
+					options : { bind: none }
+				},
+				#b8 : {
+					options : { bind: none }
+				},
+				#b9 : {
+					options : { bind: none }
+				},
+				#b10 : {
+					options : { bind: none }
+				},
+				#b11 : {
+					options : { bind: none }
+				},
+				#b12 : {
+					options : { bind: none }
+				},
+				#b13 : {
+					options : { bind: none }
+				},
+				#b14 : {
+					options : { bind: none }
+				},
+				#b15 : {
+					options : { bind: none }
+				},
+				#b16 : {
+					options : { bind: none }
+				},
+
+				#b17 : {
+					options : { bind: none }
+				},
+				#b18 : {
+					options : { bind: none }
+				},
+				#b19 : {
+					options : { bind: none }
+				},
+				#b20 : {
+					options : { bind: none }
+				},
+				#b21 : {
+					options : { bind: none }
+				},
+				#b22 : {
+					options : { bind: none }
+				},
+				#b23 : {
+					options : { bind: none }
+				},
+				#b24 : {
+					options : { bind: none }
+				},
+				#b25 : {
+					options : { bind: none }
+				},
+				#b26 : {
+					options : { bind: none }
+				},
+				#b27 : {
+					options : { bind: none }
+				},
+				#b28 : {
+					options : { bind: none }
+				},
+				#b29 : {
+					options : { bind: none }
+				},
+				#b30 : {
+					options : { bind: none }
+				},
+				#b31 : {
+					options : { bind: none }
+				},
+				#b32 : {
+					options : { bind: none }
+				}
 	        }},
 	        {if: =portrait, then: {
 				#b1 : {
 	 				height:120,
-					top:0
+					top:0,
+					options : { bind: none }
 				},
 				#b2 : {
 	 				height:120,
-					top:0
+					top:0,
+					options : { bind: none }
 				},
 				#b3 : {
 	 				height:120,
-					top:0
+					top:0,
+					options : { bind: none }
 				},
 				#b4 : {
 	 				height:120,
-					top:0
+					top:0,
+					options : { bind: none }
 				},
 				#b5 : {
 	 				height:120,
-					top:120
+					top:120,
+					options : { bind: none }
 				},
 				#b6 : {
 	 				height:120,
-					top:120
+					top:120,
+					options : { bind: none }
 				},
 				#b7 : {
 	 				height:120,
-					top:120
+					top:120,
+					options : { bind: none }
 				},
 				#b8 : {
 	 				height:120,
-					top:120
+					top:120,
+					options : { bind: none }
 				},
 				#b9 : {
 	 				height:120,
-					top:240
+					top:240,
+					options : { bind: none }
 				},
 				#b10 : {
 	 				height:120,
-					top:240
+					top:240,
+					options : { bind: none }
 				},
 				#b11 : {
 	 				height:120,
-					top:240
+					top:240,
+					options : { bind: none }
 				},
 				#b12 : {
 	 				height:120,
-					top:240
+					top:240,
+					options : { bind: none }
 				},
 				#b13 : {
 	 				height:120,
-					top:360
+					top:360,
+					options : { bind: none }
 				},
 				#b14 : {
 	 				height:120,
-					top:360
+					top:360,
+					options : { bind: none }
 				},
 				#b15 : {
 	 				height:120,
-					top:360
+					top:360,
+					options : { bind: none }
 				},
 				#b16 : {
 	 				height:120,
-					top:360
+					top:360,
+					options : { bind: none }
 				},
 
 				#b17 : {
 	 				height:120,
-					top:480
+					top:480,
+					options : { bind: none }
 				},
 				#b18 : {
 	 				height:120,
-					top:480
+					top:480,
+					options : { bind: none }
 				},
 				#b19 : {
 	 				height:120,
-					top:480
+					top:480,
+					options : { bind: none }
 				},
 				#b20 : {
 	 				height:120,
-					top:480
+					top:480,
+					options : { bind: none }
 				},
 				#b21 : {
 	 				height:120,
-					top:600
+					top:600,
+					options : { bind: none }
 				},
 				#b22 : {
 	 				height:120,
-					top:600
+					top:600,
+					options : { bind: none }
 				},
 				#b23 : {
 	 				height:120,
-					top:600
+					top:600,
+					options : { bind: none }
 				},
 				#b24 : {
 	 				height:120,
-					top:600
+					top:600,
+					options : { bind: none }
 				},
 				#b25 : {
 	 				height:120,
-					top:720
+					top:720,
+					options : { bind: none }
 				},
 				#b26 : {
 	 				height:120,
-					top:720
+					top:720,
+					options : { bind: none }
 				},
 				#b27 : {
 	 				height:120,
-					top:720
+					top:720,
+					options : { bind: none }
 				},
 				#b28 : {
 	 				height:120,
-					top:720
+					top:720,
+					options : { bind: none }
 				},
 				#b29 : {
 	 				height:120,
-					top:840
+					top:840,
+					options : { bind: none }
 				},
 				#b30 : {
 	 				height:120,
-					top:840
+					top:840,
+					options : { bind: none }
 				},
 				#b31 : {
 	 				height:120,
-					top:840
+					top:840,
+					options : { bind: none }
 				},
 				#b32 : {
 	 				height:120,
-					top:840
+					top:840,
+					options : { bind: none }
 				}
 
         	}},
 			{if: =landscape, then: {
 				#b1 : {
 	 				height:60,
-					top:0
+					top:0,
+					options : { bind: none }
 				},
 				#b2 : {
 	 				height:60,
-					top:0
+					top:0,
+					options : { bind: none }
 				},
 				#b3 : {
 	 				height:60,
-					top:0
+					top:0,
+					options : { bind: none }
 				},
 				#b4 : {
 	 				height:60,
-					top:0
+					top:0,
+					options : { bind: none }
 				},
 				#b5 : {
 	 				height:60,
-					top:0
+					top:0,
+					options : { bind: none }
 				},
 				#b6 : {
 	 				height:60,
-					top:0
+					top:0,
+					options : { bind: none }
 				},
 				#b7 : {
 	 				height:60,
-					top:0
+					top:0,
+					options : { bind: none }
 				},
 				#b8 : {
 	 				height:60,
-					top:0
+					top:0,
+					options : { bind: none }
 				},
 				#b9 : {
 	 				height:60,
-					top:60
+					top:60,
+					options : { bind: none }
 				},
 				#b10 : {
 	 				height:60,
-					top:60
+					top:60,
+					options : { bind: none }
 				},
 				#b11 : {
 	 				height:60,
-					top:60
+					top:60,
+					options : { bind: none }
 				},
 				#b12 : {
 	 				height:60,
-					top:60
+					top:60,
+					options : { bind: none }
 				},
 				#b13 : {
 	 				height:60,
-					top:60
+					top:60,
+					options : { bind: none }
 				},
 				#b14 : {
 	 				height:60,
-					top:60
+					top:60,
+					options : { bind: none }
 				},
 				#b15 : {
 	 				height:60,
-					top:60
+					top:60,
+					options : { bind: none }
 				},
 				#b16 : {
 	 				height:60,
-					top:60
+					top:60,
+					options : { bind: none }
 				},
 
 				#b17 : {
 	 				height:60,
-					top:120
+					top:120,
+					options : { bind: none }
 				},
 				#b18 : {
 	 				height:60,
-					top:120
+					top:120,
+					options : { bind: none }
 				},
 				#b19 : {
 	 				height:60,
-					top:120
+					top:120,
+					options : { bind: none }
 				},
 				#b20 : {
 	 				height:60,
-					top:120
+					top:120,
+					options : { bind: none }
 				},
 				#b21 : {
 	 				height:60,
-					top:120
+					top:120,
+					options : { bind: none }
 				},
 				#b22 : {
 	 				height:60,
-					top:120
+					top:120,
+					options : { bind: none }
 				},
 				#b23 : {
 	 				height:60,
-					top:120
+					top:120,
+					options : { bind: none }
 				},
 				#b24 : {
 	 				height:60,
-					top:120
+					top:120,
+					options : { bind: none }
 				},
 				#b25 : {
 	 				height:60,
-					top:180
+					top:180,
+					options : { bind: none }
 				},
 				#b26 : {
 	 				height:60,
-					top:180
+					top:180,
+					options : { bind: none }
 				},
 				#b27 : {
 	 				height:60,
-					top:180
+					top:180,
+					options : { bind: none }
 				},
 				#b28 : {
 	 				height:60,
-					top:180
+					top:180,
+					options : { bind: none }
 				},
 				#b29 : {
 	 				height:60,
-					top:180
+					top:180,
+					options : { bind: none }
 				},
 				#b30 : {
 	 				height:60,
-					top:180
+					top:180,
+					options : { bind: none }
 				},
 				#b31 : {
 	 				height:60,
-					top:180
+					top:180,
+					options : { bind: none }
 				},
 				#b32 : {
 	 				height:60,
-					top:180
+					top:180,
+					options : { bind: none }
 				}
 	        }}
 		]

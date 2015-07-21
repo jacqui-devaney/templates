@@ -116,77 +116,95 @@
 			{if: =portrait, then: {
 				#b1:	{
 					top:30,
-					height:530
+					height:530,
+					options: { bind: none }
 				},
 				#b2:	{
 					top:570,
-					height:340
+					height:340,
+					options: { bind: none }
 				},
 				#b3:{
 					top:570,
-					height:340
+					height:340,
+					options: { bind: none }
 				},
 				#b4:	{
 					top:30,
-					height:135
+					height:135,
+					options: { bind: none }
 				},
 				#b5:	{
 					top:175,
-					height:135
+					height:135,
+					options: { bind: none }
 				},
 				#b6:	{
 					top:320,
-					height:135
+					height:135,
+					options: { bind: none }
 				},
 				#b7:	{
 					top:465,
-					height:135
+					height:135,
+					options: { bind: none }
 				},
 				#b8:	{
 					top:610,
-					height:135
+					height:135,
+					options: { bind: none }
 				},
 				#b9:	{
 					top:755,
-					height:155
+					height:155,
+					options: { bind: none }
 				}
 			}},
 			{if: =landscape, then: {
 				#b1:	{
 					top:30,
-					height:465
+					height:465,
+					options: { bind: none }
 				},
 				#b2:	{
 					top:30,
-					height:310
+					height:310,
+					options: { bind: none }
 				},
 				#b3:	{
 					top:30,
-					height:310
+					height:310,
+					options: { bind: none }
 				},
 				#b4:	{
 					top:505,
-					height:145
+					height:145,
+					options: { bind: none }
 				},
 				#b5:{
 					top:505,
-					height:145
+					height:145,
+					options: { bind: none }
 				},
 				#b6:	{
 					top:350,
-					height:145
+					height:145,
+					options: { bind: none }
 				},
 				#b7:	{
 					top:350,
-					height:145
+					height:145,
+					options: { bind: none }
 				},
 				#b8:	{
 					top:505,
-					height:145
+					height:145,
+					options: { bind: none }
 				},
 				#b9:	{
 					top:505,
-					height:145
+					height:145,
+					options: { bind: none }
 				}
 
 			}}
@@ -195,7 +213,33 @@
 	<style>{
 		if: =scale.phone,
 		then: {
-
+			#b1 : {
+				options: { bind: none }
+			},
+			#b2 : {
+				options: { bind: none }
+			},
+			#b3 : {
+				options: { bind: none }
+			},
+			#b4 : {
+				bind: none
+			},
+			#b5 : {
+				bind: none
+			},
+			#b6 : {
+				bind: none
+			},
+			#b7 : {
+				bind: none
+			},
+			#b8 : {
+				bind: none
+			},
+			#b9 : {
+				bind: none
+			}
 		},
 		else: {
 			#b1: {

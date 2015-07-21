@@ -14,40 +14,39 @@
 	<style> {
 		$switch: [
 			{if: =scale.rail, then: {
-
 			}},
 			{if: =portrait, then: {
 				#deco: {
 					top:0,
 					height:545,
-					options:{large_headline:true, show_image:true, one_line_caption:true}
+					options:{bind:none, large_headline:true, show_image:true, one_line_caption:true}
 				},
 				#b1: {
 					top:559,
 					height:260,
-					options:{medium_headline:true, show_body:true, show_flashline:true, small_image:true, show_opinion_dek:true}
+					options:{bind:none, medium_headline:true, show_body:true, show_flashline:true, small_image:true, show_opinion_dek:true}
 				},
 				#b2: {
 					top:559,
 					height:260,
-					options:{medium_headline:true, show_body:true, show_flashline:true, small_image:true, show_opinion_dek:true}
+					options:{bind:none, medium_headline:true, show_body:true, show_flashline:true, small_image:true, show_opinion_dek:true}
 				}
 			}},
 			{if: =landscape, then: {
 				#deco: {
 					top:0,
 					height:545,
-					options:{large_headline:true, show_image:true, one_line_caption:true}
+					options:{bind:none, large_headline:true, show_image:true, one_line_caption:true}
 				},
 				#b1: {
 					top:0,
 					height:280,
-					options:{medium_headline:true, show_body:true, show_flashline:true, small_image:true, show_opinion_dek:true}
+					options:{bind:none, medium_headline:true, show_body:true, show_flashline:true, small_image:true, show_opinion_dek:true}
 				},
 				#b2: {
 					top:295,
 					height:240,
-					options:{medium_headline:true, show_body:true, show_flashline:true, small_image:true, show_opinion_dek:true}
+					options:{bind:none, medium_headline:true, show_body:true, show_flashline:true, small_image:true, show_opinion_dek:true}
 				}
 			}}
 		]

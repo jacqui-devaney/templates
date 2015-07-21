@@ -55,21 +55,6 @@
 	<style> {
 		$switch: [
 			{if: =scale.rail, then: {
-				#b1:	{
-					options: { bind: none }
-				},
-				#b2:	{
-					options: { bind: none }
-				},
-				#b3:	{
-					options: { bind: none }
-				},
-				#b4:	{
-					options: { bind: none }
-				},
-				#b5:{
-					options: { bind: none }
-				}
 			}},
 			{if: =scale.phone, then: {
 				#page_details: {

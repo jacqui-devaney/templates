@@ -19,75 +19,75 @@
 				#deco:	{
 					top:0,
 					height:380,
-					options:{medium_headline:true, show_image:true}
+					options:{bind: none, medium_headline:true, show_image:true}
 				},
 				#b1:	{
 					top: 386,
 					height: 196,
-					options:{large_headline:true, show_body:true, top_border:true, show_flashline:false}
+					options:{bind: none, large_headline:true, show_body:true, top_border:true, show_flashline:false}
 				},
 				#b2:	{
 					top:586,
 					height:219,
-					options:{medium_headline:true, show_body:true, top_border:true, show_flashline:true}
+					options:{bind: none, medium_headline:true, show_body:true, top_border:true, show_flashline:true}
 				},
 				#b3:	{
 					top:0,
 					height:188,
-					options:{medium_headline:true, show_flashline:true}
+					options:{bind: none, medium_headline:true, show_flashline:true}
 				},
 				#b4:	{
 					top:187,
 					height:196,
-					options:{medium_headline:true, top_border:true, show_flashline:true}
+					options:{bind: none, medium_headline:true, top_border:true, show_flashline:true}
 				},
 				#b5:	{
 					top:386,
 					height:196,
-					options:{medium_headline:true, top_border:true, show_flashline:true}
+					options:{bind: none, medium_headline:true, top_border:true, show_flashline:true}
 
 				},
 				#b6:	{
 					top:586,
 					height:219,
-					options:{medium_headline:true, top_border:true, show_flashline:true}
+					options:{bind: none, medium_headline:true, top_border:true, show_flashline:true}
 				}
 			}},
 			{if: =landscape, then: {
 				#deco:	{
 					top:0,
 					height:380,
-					options:{medium_headline:true, show_image:true}
+					options:{bind: none, medium_headline:true, show_image:true}
 				},
 				#b1:	{
 					top:386,
 					height:170,
-					options:{large_headline:true, show_body:true, top_border:true, show_flashline:false}
+					options:{bind: none, large_headline:true, show_body:true, top_border:true, show_flashline:false}
 				},
 				#b2:	{
 					top:0,
 					height:165,
-					options:{medium_headline:true, bottom_border:true, show_body:true, show_flashline:true}
+					options:{bind: none, medium_headline:true, bottom_border:true, show_body:true, show_flashline:true}
 				},
 				#b3:	{
 					top:175,
 					height:175,
-					options:{medium_headline:true, top_border:false, show_flashline:true}
+					options:{bind: none, medium_headline:true, top_border:false, show_flashline:true}
 				},
 				#b4:	{
 					top:345,
 					height:220,
-					options:{medium_headline:true, top_border:true, show_flashline:true}
+					options:{bind: none, medium_headline:true, top_border:true, show_flashline:true}
 				},
 				#b5:	{
 					top:175,
 					height:175,
-					options:{medium_headline:true, top_border:false, show_flashline:true}
+					options:{bind: none, medium_headline:true, top_border:false, show_flashline:true}
 				},
 				#b6:	{
 					top:345,
 					height:220,
-					options:{medium_headline:true, top_border:true, show_flashline:true}
+					options:{bind: none, medium_headline:true, top_border:true, show_flashline:true}
 				}
 			}}
 		]

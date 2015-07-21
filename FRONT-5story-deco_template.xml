@@ -15,71 +15,88 @@
 	<style> {
 		$switch: [
 			{if: =scale.phone, then: {
-
+				#b1:	{
+					options:{ bind: none}
+				},
+				#deco:	{
+					options:{ bind: none}
+				},
+				#b2:	{
+					options:{ bind: none}
+				},
+				#b3:	{
+					options:{ bind: none}
+				},
+				#b4: {
+					options:{ bind: none}
+				},
+				#b5: {
+					options:{ bind: none}
+				}
 			}},
 			{if: =portrait, then: {
 				#b1:	{
 					top:377,
 					height:125,
-					options:{large_headline:true}
+					options:{ bind: none, large_headline:true}
 				},
 				#deco:	{
 					top:20,
 					height:340,
-					options:{medium_headline:true}
+					options:{ bind: none, medium_headline:true}
 				},
 				#b2:	{
 					top:509,
 					height:175,
-					options:{medium_headline:true, top_border:true}
+					options:{ bind: none, medium_headline:true, top_border:true}
 				},
 				#b3:	{
 					top:509,
 					height:175,
-					options:{medium_headline:true, top_border:true}
+					options:{ bind: none, medium_headline:true, top_border:true}
 
 				},
 				#b4: {
 					top:509,
 					height:175,
-					options:{medium_headline:true, top_border:true}
+					options:{ bind: none, medium_headline:true, top_border:true}
 				},
 				#b5: {
 					top:691,
 					height:122,
-					options:{medium_headline:true, bottom_align:true, show_byline:false, top_border:true}
+					options:{ bind: none, medium_headline:true, bottom_align:true, show_byline:false, top_border:true}
 				}
 			}},
 			{if: =landscape, then: {
 				#b1:	{
 					top:20,
 					height:342,
-					options:{large_headline:true}
+					options:{ bind: none, large_headline:true}
 				},
 				#deco:	{
 					top:20,
 					height:341,
-					options:{medium_headline:true}
+					options:{ bind: none, medium_headline:true}
 				},
 				#b2:	{
 					top:370,
 					height:194,
-					options:{medium_headline:true, top_border:true}
+					options:{ bind: none, medium_headline:true, top_border:true}
 				},
 				#b3:	{
 					top:370,
 					height:194,
-					options:{medium_headline:true, top_border:true}
+					options:{ bind: none, medium_headline:true, top_border:true}
 				},
 				#b4:	{
 					top:370,
 					height:194,
-					options:{medium_headline:true, top_border:true}
+					options:{ bind: none, medium_headline:true, top_border:true}
 				},
 				#b5:	{
 					top:370,
 					height:187,
-					options:{medium_headline:true, top_border:true, show_byline:false}
+					options:{ bind: none, medium_headline:true, top_border:true, show_byline:false}
 				}
 			}}
 		]

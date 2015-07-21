@@ -12,36 +12,36 @@
     <style>{
 		#b1: {
 			options:{$switch:[
-				{if: =scale.phone, then: {large_headline:true, show_image:true}},
-				{if: =portrait, then: {medium_headline:true, show_image:true}},
-				{if: =landscape, then: {medium_headline:true, show_image:true}}
+				{if: =scale.phone, then: { bind: none, large_headline:true, show_image:true}},
+				{if: =portrait, then: { bind: none, medium_headline:true, show_image:true}},
+				{if: =landscape, then: { bind: none, medium_headline:true, show_image:true}}
 			]
 		}},
 		#b2: {
 			options:{$switch:[
-				{if: =portrait, then: {medium_headline:true, top_border:true}},
-				{if: =landscape, then: {medium_headline:true}}
+				{if: =portrait, then: { bind: none, medium_headline:true, top_border:true}},
+				{if: =landscape, then: { bind: none, medium_headline:true}}
 			]
 		}},
 		#b3: {
 			options:{$switch:[
-				{if: =scale.phone, then: {small_headline:true}},
-				{if: =portrait, then: {medium_headline:true, top_border:true}},
-				{if: =landscape, then: {medium_headline:true, top_border:true}}
+				{if: =scale.phone, then: { bind: none, small_headline:true}},
+				{if: =portrait, then: { bind: none, medium_headline:true, top_border:true}},
+				{if: =landscape, then: { bind: none, medium_headline:true, top_border:true}}
 			]
 		}},
 		#b4: {
 			options:{$switch:[
-				{if: =scale.phone, then: {small_headline:true}},
-				{if: =portrait, then: {medium_headline:true, top_border:true, show_body:true, small_image:true}},
-				{if: =landscape, then: {medium_headline:true, top_border:true, show_body:true, square_image:true}}
+				{if: =scale.phone, then: { bind: none, small_headline:true}},
+				{if: =portrait, then: { bind: none, medium_headline:true, top_border:true, show_body:true, small_image:true}},
+				{if: =landscape, then: { bind: none, medium_headline:true, top_border:true, show_body:true, square_image:true}}
 			]
 		}},
 		#b5: {
 			options:{$switch:[
-				{if: =scale.phone, then: {small_headline:true}},
-				{if: =portrait, then: {medium_headline:true, top_border:true, show_body:true, small_image:true}},
-				{if: =landscape, then: {medium_headline:true, top_border:true, show_body:true, square_image:true}}
+				{if: =scale.phone, then: { bind: none, small_headline:true}},
+				{if: =portrait, then: { bind: none, medium_headline:true, top_border:true, show_body:true, small_image:true}},
+				{if: =landscape, then: { bind: none, medium_headline:true, top_border:true, show_body:true, square_image:true}}
 			]
 		}},
 		#rail_content: {

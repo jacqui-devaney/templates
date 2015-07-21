@@ -84,13 +84,15 @@
 	}</style>
 
 	<box id="image_container">
-		<box id="deco_container" embed="deco-image"><image embed="summary-image" /></box>
+		<box id="deco_container" embed="deco-image"><image/></box>
 	</box>
 	<panel id="module_text">
 		<p id="headline" class="module_headline"><mark class="m_headline" /></p>
-		<p class="article_subhed" embed="subhed" />
-		<p class="byline" embed="byline"/>
-		<panel class="body" embed="body"/>
+		<p class="article_subhed"><mark class="subhed-mark" /></p>
+		<p class="byline"><mark class="byline-mark" /></p>
+		<panel class="body">
+			<p><mark class="body-mark" /></p>
+		</panel>
 	</panel>
 
 </jpml>

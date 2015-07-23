@@ -102,12 +102,19 @@
           },
           {
             "id": "b2",
-            "images": {
+            "comment": "Portrait and landscape want a different size image but collapsing",
+            "actual-image-sizes":  {
               "landscape": {
                 "width": 236,
                 "height": 151
               },
               "portrait": {
+                "width": 264,
+                "height": 176
+              }
+            },
+            "images": {
+              "tablet": {
                 "width": 264,
                 "height": 176
               },

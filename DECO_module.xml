@@ -5,7 +5,29 @@
 			image:{
 				width:=view.width,
 				height: {$subtract:[=view.height, 1]},
-				image-scale: {if: =options.full_screen, then:.9, else:1}
+				image-scale: {if: =options.full_screen, then:.9, else:1},
+				options: {
+					source: {
+						if: {$count:[=article.thumbnail]},
+						more-than: 0,
+						then: {
+							$switch: [
+								{if: =scale.phone, then:
+									{$join: ["url(", =article.id, "_", "phone", ".jpg)"]}
+								},
+								{if: =portrait, then:
+									{$join: ["url(", =article.id, "_", "tablet", ".jpg)"]}
+								},
+								{if: =landscape, then:
+									{$join: ["url(", =article.id, "_", "tablet", ".jpg)"]}
+								},
+								{if: =rail, then:
+									{$join: ["url(", =article.id, "_", "rail", ".jpg)"]}
+								}
+							]
+						}
+					}
+				}
 
 			},
 			#deco_caption_container: {
@@ -14,7 +36,7 @@
 				anchor-y: { if: =options.caption_top, then: top, else: bottom },
 				display:{if: =options.no_caption, then:none, else:inherit}
 			},
-            .deco_headline: { 
+      .deco_headline: {
 				font-size: {$switch: [
 					{if: =options.large_headline, then:36},
 					{if: =options.medium_headline, then:24},
@@ -31,7 +53,7 @@
 			}
 	}</style>
 			<box id="deco_container" embed="deco-image">
-				<image embed="summary-image" />
+				<box><image/></box>
 				<box id="deco_caption_container">
 					<p id="headline" class="deco_headline"><mark class="m_headline" /><mark class="key" /></p>
 					<p class="deco_caption"><mark class="subhed-mark" /></p>

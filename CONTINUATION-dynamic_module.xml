@@ -21,15 +21,15 @@
 				padding: {if: =scale.phone, then: [16, 24, 0, 0]}
 			},
 			else: {
-				if: =options.hide_border, 
+				if: =options.hide_border,
 				then: {
 					padding: {if: =scale.phone, then: [0, 24, 0, 0]}
 				},
 				else: {
 					padding: [
-						{if: =options.show_body, then: {if: =scale.phone, then: 24.5, else: 9.5}, else: 0.5}, 
-						{if: =scale.phone, then: {if: =options.show_body, then: 9, else: 24}, else: 0}, 
-						{if: =options.show_body, then: {if: =scale.phone, then: 8, else: 0}, else: 0}, 
+						{if: =options.show_body, then: {if: =scale.phone, then: 24.5, else: 9.5}, else: 0.5},
+						{if: =scale.phone, then: {if: =options.show_body, then: 9, else: 24}, else: 0},
+						{if: =options.show_body, then: {if: =scale.phone, then: 8, else: 0}, else: 0},
 						{if: =scale.phone, then: 0, else: 0}
 					],
 					border-width: [0.5, 0, 0, 0],
@@ -52,7 +52,29 @@
 			anchor-x: right
 		},
 		image: {
-			height: 111
+			height: 111,
+			options: {
+				source: {
+					if: {$count:[=article.thumbnail]},
+					more-than: 0,
+					then: {
+						$switch: [
+							{if: =scale.phone, then:
+								{$join: ["url(", =article.id, "_", "phone", ".jpg)"]}
+							},
+							{if: =portrait, then:
+								{$join: ["url(", =article.id, "_", "tablet", ".jpg)"]}
+							},
+							{if: =landscape, then:
+								{$join: ["url(", =article.id, "_", "tablet", ".jpg)"]}
+							},
+							{if: =rail, then:
+								{$join: ["url(", =article.id, "_", "rail", ".jpg)"]}
+							}
+						]
+					}
+				}
+			}
 		},
 		.key: {
 			display: {
@@ -109,7 +131,7 @@
 	</panel>
 	<panel id="content">
 	 	<box id="image_container" embed="deco-image">
-			<image embed="summary-image" target-width="76" target-height="76" />
+			<image target-width="76" target-height="76" />
 		</box>
 		<panel id="vertical">
 			<box id="article_status" embed="article-status"></box>

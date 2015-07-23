@@ -51,10 +51,6 @@
 				}}
 
 			]},
-
-
-
-
 			{
 				#deco_container: {
 					anchor-x:right,
@@ -83,8 +79,30 @@
 						{if: =options.small_wide_image, then:{$multiply: [1.25, =view.height]}},
 						236
 					]},
-					image-scale: 1
-	            },
+					image-scale: 1,
+					options: {
+						source: {
+							if: {$count:[=article.thumbnail]},
+							more-than: 0,
+							then: {
+								$switch: [
+									{if: =scale.phone, then:
+										{$join: ["url(", =article.id, "_", "phone", ".jpg)"]}
+									},
+									{if: =portrait, then:
+										{$join: ["url(", =article.id, "_", "tablet", ".jpg)"]}
+									},
+									{if: =landscape, then:
+										{$join: ["url(", =article.id, "_", "tablet", ".jpg)"]}
+									},
+									{if: =rail, then:
+										{$join: ["url(", =article.id, "_", "rail", ".jpg)"]}
+									}
+								]
+							}
+						}
+					}
+	      },
 
 				.byline: {
 					display: {if: =options.show_byline, then:inherit, else:none}
@@ -121,7 +139,7 @@
 			}
 		}</style>
 		<box id="deco_container" embed="deco-image">
-			<image embed="summary-image" />
+			<image/>
 		</box>
 		<panel id="headline">
 			<p class="module_headline"><mark class="m_headline" /></p>

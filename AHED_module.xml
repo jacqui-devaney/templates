@@ -4,6 +4,32 @@
 	<style src="AHED-stylesheet.ejs" />
 	<style src="PHONE-MODULES-stylesheet.ejs" />
 	<style>{
+			image: {
+				options: {
+					source: {
+						if: {$count:[=article.thumbnail]},
+						more-than: 0,
+						then: {
+							$switch: [
+								{if: =scale.phone, then:
+									{$join: ["url(", =article.id, "_", "phone", ".jpg)"]}
+								},
+								{if: =portrait, then:
+									{$join: ["url(", =article.id, "_", "tablet", ".jpg)"]}
+								},
+								{if: =landscape, then:
+									{$join: ["url(", =article.id, "_", "tablet", ".jpg)"]}
+								},
+								{if: =rail, then:
+									{$join: ["url(", =article.id, "_", "rail", ".jpg)"]}
+								}
+							]
+						}
+					}
+				}
+			}
+	}</style>
+	<style>{
 		$join: [
         { $switch: [
         { if: =options.top_border, then: {
@@ -12,7 +38,7 @@
         padding: [10, 0, 0, 0],
         border-color: #cfcfcf
         }
-        
+
         }},
         { if: =options.left_border, then: {
         jpml: {
@@ -20,7 +46,7 @@
         border-color: #cfcfcf,
         padding: [0, 0, 0, 10]
         }
-        
+
         }},
         { if: =options.right_border, then: {
         jpml: {
@@ -28,7 +54,7 @@
         border-color: #cfcfcf,
         padding: [0, 10, 0, 0]
         }
-        
+
         }},
         { if: true, then: {
         jpml: {
@@ -67,16 +93,16 @@
         line-height: 22
         }
         }
-        
+
         ]
 		}</style>
-    
-    
-    
+
+
+
     <box id="image_wrapper">
-        <image target-width="80" target-height="80" embed="summary-image"/>
+        <image target-width="80" target-height="80"/>
     </box>
-    
+
     <panel>
         <p id="headline" class="ahed_headline"><mark class="m_headline" /></p>
         <p><mark id="stars"/></p>

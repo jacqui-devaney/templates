@@ -24,15 +24,17 @@
 				match: {
 					max-width: 553
 				},
-				source: { 
-					if: {$count:[=article.thumbnail]}, 
-					more-than: 0, 
-					then: { $join: [
-						"url",
-						"(",
-						=article.thumbnail,
-						")"
-					] }
+				source: {
+					if: {$count:[=article.thumbnail]},
+					more-than: 0,
+					then: {
+						$join: [
+							"url(",
+							=article.id,
+							"_rail",
+							".jpg)"
+						]
+					}
 				}
 			},
 			background-color:inherit

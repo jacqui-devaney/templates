@@ -68,8 +68,30 @@
 						{if: =options.square_image, then:174},
 						236
 					]},
-					image-scale: 1
-	            },
+					image-scale: 1,
+					options: {
+						source: {
+							if: {$count:[=article.thumbnail]},
+							more-than: 0,
+							then: {
+								$switch: [
+									{if: =scale.phone, then:
+										{$join: ["url(", =article.id, "_", "phone", ".jpg)"]}
+									},
+									{if: =portrait, then:
+										{$join: ["url(", =article.id, "_", "tablet", ".jpg)"]}
+									},
+									{if: =landscape, then:
+										{$join: ["url(", =article.id, "_", "tablet", ".jpg)"]}
+									},
+									{if: =rail, then:
+										{$join: ["url(", =article.id, "_", "rail", ".jpg)"]}
+									}
+								]
+							}
+						}
+					}
+	      },
 
 				.byline: {
 					display: {if: =options.show_byline, then:inherit, else:none}
@@ -109,7 +131,7 @@
 		</panel>
     	<panel>
             <box id="image_wrapper" class="hidden_phone">
-				<image embed="summary-image" />
+				<image/>
 			</box>
 			<p class="module_flashline"><mark class="flashline-mark" /></p>
 			<p class="byline"><mark class="byline-mark"/></p>

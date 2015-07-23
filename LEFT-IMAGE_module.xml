@@ -92,8 +92,30 @@
 						{if: =options.tall_image, then:=view.width},
 						236
 					]},
-					image-scale: 1
-	            },
+					image-scale: 1,
+					options: {
+						source: {
+							if: {$count:[=article.thumbnail]},
+							more-than: 0,
+							then: {
+								$switch: [
+									{if: =scale.phone, then:
+										{$join: ["url(", =article.id, "_", "phone", ".jpg)"]}
+									},
+									{if: =portrait, then:
+										{$join: ["url(", =article.id, "_", "tablet", ".jpg)"]}
+									},
+									{if: =landscape, then:
+										{$join: ["url(", =article.id, "_", "tablet", ".jpg)"]}
+									},
+									{if: =rail, then:
+										{$join: ["url(", =article.id, "_", "rail", ".jpg)"]}
+									}
+								]
+							}
+						}
+					}
+	      },
 
 				.byline: {
 					display: {if: =options.show_byline, then:inherit, else:none}
@@ -147,7 +169,7 @@
 			}
 		}</style>
 		<box id="deco_container" embed="deco-image">
-			<image embed="summary-image" />
+			<image/>
 		</box>
 		<panel id="headline">
 			<p class="module_flashline" id="top_flashline"><mark class="flashline-mark" /></p>

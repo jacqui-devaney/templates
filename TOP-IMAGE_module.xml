@@ -7,6 +7,30 @@
 		jpml: {
 			background-color: =options.background_color,
 			border-color: #d8d8d8
+		},
+		image: {
+			options: {
+				source: {
+					if: {$count:[=article.thumbnail]},
+					more-than: 0,
+					then: {
+						$switch: [
+							{if: =scale.phone, then:
+								{$join: ["url(", =article.id, "_", "phone", ".jpg)"]}
+							},
+							{if: =portrait, then:
+								{$join: ["url(", =article.id, "_", "tablet", ".jpg)"]}
+							},
+							{if: =landscape, then:
+								{$join: ["url(", =article.id, "_", "tablet", ".jpg)"]}
+							},
+							{if: =rail, then:
+								{$join: ["url(", =article.id, "_", "rail", ".jpg)"]}
+							}
+						]
+					}
+				}
+			}
 		}
 	}</style>
 	<style>{
@@ -54,8 +78,8 @@
 				image: {
 					pixels-per-point-x:1,
 					pixels-per-point-y:1,
-	                image-scale: 1,
-	                display: { if: =options.show_image, then:inherit, else:none },
+          image-scale: 1,
+          display: { if: =options.show_image, then:inherit, else:none },
 					height: {$multiply: [=view.width, .665 ]},
 					padding: [0, 0, 17, 0],
 					options: {
@@ -104,7 +128,7 @@
 			#summary: {
 				display: inherit
 			},
-			.opinion_dek: { 
+			.opinion_dek: {
 				display: none
 			},
 			#vertical: {
@@ -156,7 +180,6 @@
 		}
 	}
 	</style>
-	
 	<box id="deco_container" embed="deco-image">
 		<image/>
 	</box>

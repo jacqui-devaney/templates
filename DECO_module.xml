@@ -21,7 +21,7 @@
 								{if: =landscape, then:
 									{$join: ["url(", =article.id, "_", "tablet", ".jpg)"]}
 								},
-								{if: =rail, then:
+								{if: =scale.rail, then:
 									{$join: ["url(", =article.id, "_", "rail", ".jpg)"]}
 								}
 							]

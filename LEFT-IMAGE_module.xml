@@ -95,24 +95,31 @@
 					image-scale: 1,
 					options: {
 						source: {
-							if: {$count:[=article.thumbnail]},
-							more-than: 0,
-							then: {
-								$switch: [
-									{if: =scale.phone, then:
-										{$join: ["url(", =article.id, "_", "phone", ".jpg)"]}
-									},
-									{if: =portrait, then:
-										{$join: ["url(", =article.id, "_", "tablet", ".jpg)"]}
-									},
-									{if: =landscape, then:
-										{$join: ["url(", =article.id, "_", "tablet", ".jpg)"]}
-									},
-									{if: =rail, then:
-										{$join: ["url(", =article.id, "_", "rail", ".jpg)"]}
-									}
-								]
-							}
+						  $switch: [
+						    {
+						      if: {$count:[=options.image_url]}, more-than:0, then: =options.image_url
+						    },
+						    {
+						      if: {$count:[=article.thumbnail]},
+						      more-than: 0,
+						      then: {
+						        $switch: [
+						          {if: =scale.phone, then:
+						            {$join: ["url(", =article.id, "_", "phone", ".jpg)"]}
+						          },
+											{if: =scale.rail, then:
+						            {$join: ["url(", =article.id, "_", "rail", ".jpg)"]}
+						          },
+						          {if: =portrait, then:
+						            {$join: ["url(", =article.id, "_", "tablet", ".jpg)"]}
+						          },
+						          {if: =landscape, then:
+						            {$join: ["url(", =article.id, "_", "tablet", ".jpg)"]}
+						          }
+						        ]
+						      }
+						    }
+						  ]
 						}
 					}
 	      },

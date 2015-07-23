@@ -13,6 +13,7 @@
     <style>{
 		#b1: {
 			options:{$switch:[
+				{if: =scale.rail, then: { }},
 				{if: =scale.phone, then: { bind: none,large_headline:true, show_image:true}},
 				{if: =portrait, then: { bind: none, medium_headline:true, show_body:true, tall_image:true}},
 				{if: =landscape, then: { bind: none, medium_headline:true, show_body:true, large_image:true}}
@@ -20,12 +21,14 @@
 		}},
 		#b2: {
 			options:{$switch:[
+				{if: =scale.rail, then: { }},
 				{if: =portrait, then: { bind: none, medium_headline:true, top_border:true, show_body:true}},
 				{if: =landscape, then: { bind: none, medium_headline:true, top_border:true, show_body:true, square_image:true}}
 			]
 		}},
 		#b3: {
 			options:{$switch:[
+				{if: =scale.rail, then: { }},
 				{if: =scale.phone, then: { bind: none, small_headline:true}},
 				{if: =portrait, then: { bind: none, medium_headline:true, top_border:true, show_body:true}},
 				{if: =landscape, then: { bind: none, medium_headline:true, top_border:true, square_image:true, show_body:true}}
@@ -43,6 +46,8 @@
 	}</style>
 	<style> {
 		$switch: [
+			{if: =scale.rail, then: {
+			}},
 			{if: =scale.phone, then: {
 
 			}},

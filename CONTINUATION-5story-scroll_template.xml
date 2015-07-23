@@ -54,6 +54,8 @@
 	}</style>
 	<style> {
 		$switch: [
+			{if: =scale.rail, then: {
+			}},
 			{if: =scale.phone, then: {
 
 			}},

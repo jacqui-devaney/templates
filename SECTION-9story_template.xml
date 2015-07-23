@@ -213,33 +213,7 @@
 	<style>{
 		if: =scale.phone,
 		then: {
-			#b1 : {
-				options: { bind: none }
-			},
-			#b2 : {
-				options: { bind: none }
-			},
-			#b3 : {
-				options: { bind: none }
-			},
-			#b4 : {
-				bind: none
-			},
-			#b5 : {
-				bind: none
-			},
-			#b6 : {
-				bind: none
-			},
-			#b7 : {
-				bind: none
-			},
-			#b8 : {
-				bind: none
-			},
-			#b9 : {
-				bind: none
-			}
+
 		},
 		else: {
 			#b1: {

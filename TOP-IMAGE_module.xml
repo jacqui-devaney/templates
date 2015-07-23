@@ -158,7 +158,7 @@
 	</style>
 	
 	<box id="deco_container" embed="deco-image">
-		<image embed="summary-image" />
+		<image/>
 	</box>
 	<panel id="vertical">
 		<box id="article_status" embed="article-status"></box>

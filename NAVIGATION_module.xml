@@ -25,15 +25,10 @@
 					max-width: 553
 				},
 				source: {
-					if: {$count:[=article.thumbnail]},
+					if: {$count:[=article.images.rail]},
 					more-than: 0,
 					then: {
-						$join: [
-							"url(",
-							=article.id,
-							"_rail",
-							".jpg)"
-						]
+						$join: ["url(", =article.images.rail, ")"]
 					}
 				}
 			},

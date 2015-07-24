@@ -31,11 +31,7 @@
 						top_image: true,
 						show_top_flashline: true,
 						show_body: true,
-						image_url: {
-							if: {$count:[=article.thumbnail]},
-							more-than: 0,
-							then: {$join: ["url(", =article.id, "_", "portrait", ".jpg)"]}
-						}
+						image_idiom: "portrait"
 					}
 				},
 	            #b2 : {
@@ -47,11 +43,7 @@
 						top_image: true,
 						show_top_flashline: true,
 						show_body: true,
-						image_url: {
-							if: {$count:[=article.thumbnail]},
-							more-than: 0,
-							then: {$join: ["url(", =article.id, "_", "portrait", ".jpg)"]}
-						}
+						image_idiom: "portrait"
 					}
 				},
 	            #b3 : {
@@ -63,11 +55,7 @@
 						squarish_image: true,
 						show_top_flashline: true,
 						show_body: true,
-						image_url: {
-							if: {$count:[=article.thumbnail]},
-							more-than: 0,
-							then: {$join: ["url(", =article.id, "_", "portrait", ".jpg)"]}
-						}
+						image_idiom: "portrait"
 					}
 				},
 				#b4 : {
@@ -79,11 +67,7 @@
 						squarish_image: true,
 						show_top_flashline: true,
 						show_body: true,
-						image_url: {
-							if: {$count:[=article.thumbnail]},
-							more-than: 0,
-							then: {$join: ["url(", =article.id, "_", "portrait", ".jpg)"]}
-						}
+						image_idiom: "portrait"
 					}
 				},
 				#b5 : {
@@ -95,11 +79,7 @@
 						squarish_image: true,
 						show_top_flashline: true,
 						show_body: true,
-						image_url: {
-							if: {$count:[=article.thumbnail]},
-							more-than: 0,
-							then: {$join: ["url(", =article.id, "_", "portrait", ".jpg)"]}
-						}
+						image_idiom: "portrait"
 					}
 				},
 				#b6 : {
@@ -111,11 +91,7 @@
 						squarish_image: true,
 						show_top_flashline: true,
 						show_body: true,
-						image_url: {
-							if: {$count:[=article.thumbnail]},
-							more-than: 0,
-							then: {$join: ["url(", =article.id, "_", "portrait", ".jpg)"]}
-						}
+						image_idiom: "portrait"
 					}
 				}
 	        }},
@@ -128,11 +104,7 @@
 						large_headline: true,
 						show_top_flashline: true,
 						show_body: true,
-						image_url: {
-							if: {$count:[=article.thumbnail]},
-							more-than: 0,
-							then: {$join: ["url(", =article.id, "_", "landscape", ".jpg)"]}
-						}
+						image_idiom: "landscape"
 					}
 				},
 	            #b2 : {
@@ -144,11 +116,7 @@
 						top_border: true,
 						show_top_flashline: true,
 						show_body: true,
-						image_url: {
-							if: {$count:[=article.thumbnail]},
-							more-than: 0,
-							then: {$join: ["url(", =article.id, "_", "landscape", ".jpg)"]}
-						}
+						image_idiom: "landscape"
 					}
 				},
 	            #b3 : {
@@ -159,11 +127,7 @@
 						top_image: true,
 						show_top_flashline: true,
 						show_body: true,
-						image_url: {
-							if: {$count:[=article.thumbnail]},
-							more-than: 0,
-							then: {$join: ["url(", =article.id, "_", "landscape", ".jpg)"]}
-						}
+						image_idiom: "landscape"
 					}
 				},
 				#b4 : {
@@ -174,11 +138,7 @@
 						top_image: true,
 						show_top_flashline: true,
 						show_body: true,
-						image_url: {
-							if: {$count:[=article.thumbnail]},
-							more-than: 0,
-							then: {$join: ["url(", =article.id, "_", "landscape", ".jpg)"]}
-						}
+						image_idiom: "landscape"
 					}
 				},
 				#b5 : {
@@ -190,11 +150,7 @@
 						top_border: true,
 						show_top_flashline: true,
 						show_body: true,
-						image_url: {
-							if: {$count:[=article.thumbnail]},
-							more-than: 0,
-							then: {$join: ["url(", =article.id, "_", "landscape", ".jpg)"]}
-						}
+						image_idiom: "landscape"
 					}
 				},
 				#b6 : {
@@ -206,11 +162,7 @@
 						top_border: true,
 						show_top_flashline: true,
 						show_body: true,
-						image_url: {
-							if: {$count:[=article.thumbnail]},
-							more-than: 0,
-							then: {$join: ["url(", =article.id, "_", "landscape", ".jpg)"]}
-						}
+						image_idiom: "landscape"
 					}
 				}
 	        }}

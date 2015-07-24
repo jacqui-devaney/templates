@@ -57,16 +57,6 @@
         "boxes": [
           {
             "id": "b1",
-            "actual-image-sizes": {
-              "portrait": {
-                "width": 546,
-                "height": 356
-              },
-              "landscape": {
-                "width": 512,
-                "height": 342
-              }
-            },
             "images": {
               "tablet": {
                 "width": 546,
@@ -390,16 +380,6 @@
           },
           {
             "id": "b2",
-            "actual-image-sizes": {
-              "landscape": {
-                "width": 236,
-                "height": 153
-              },
-              "portrait": {
-                "width": 292,
-                "height": 195
-              }
-            },
             "images": {
               "tablet": {
                 "width": 292,
@@ -445,16 +425,6 @@
           },
           {
             "id": "b2",
-            "actual-image-sizes": {
-              "portrait": {
-                "width": 292,
-                "height": 195
-              },
-              "landscape": {
-                "width": 236,
-                "height": 153
-              }
-            },
             "images": {
               "tablet": {
                 "width": 292,

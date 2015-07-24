@@ -58,13 +58,9 @@
           {
             "id": "b1",
             "images": {
-              "portrait": {
+              "tablet": {
                 "width": 546,
                 "height": 356
-              },
-              "landscape": {
-                "width": 512,
-                "height": 342
               }
             }
           },
@@ -385,11 +381,7 @@
           {
             "id": "b2",
             "images": {
-              "landscape": {
-                "width": 236,
-                "height": 153
-              },
-              "portrait": {
+              "tablet": {
                 "width": 292,
                 "height": 195
               }
@@ -434,13 +426,9 @@
           {
             "id": "b2",
             "images": {
-              "portrait": {
+              "tablet": {
                 "width": 292,
                 "height": 195
-              },
-              "landscape": {
-                "width": 236,
-                "height": 153
               }
             }
           },

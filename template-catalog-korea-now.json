@@ -103,17 +103,13 @@
           {
             "id": "b2",
             "images": {
-              "landscape": {
-                "width": 236,
-                "height": 151
-              },
-              "portrait": {
-                "width": 264,
-                "height": 176
-              },
               "phone": {
                 "width": 111,
                 "height": 142
+              },
+              "tablet": {
+                "width": 264,
+                "height": 176
               }
             }
           },

@@ -25,11 +25,18 @@
 					max-width: 553
 				},
 				source: {
-					if: {$count:[=article.images.rail]},
-					more-than: 0,
-					then: {
-						$join: ["url(", =article.images.rail, ")"]
-					}
+					$switch : [
+						{if: {$count:[=article.images.rail]},
+						more-than: 0,
+						then: {
+							$join: ["url(", =article.images.rail, ")"]
+						}},
+						{if: {$count:[=article.image_rail]},
+						more-than: 0,
+						then: {
+							$join: ["url(", =article.image_rail, ")"]
+						}}
+					]
 				}
 			},
 			background-color:inherit

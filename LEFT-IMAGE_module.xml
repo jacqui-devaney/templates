@@ -96,21 +96,40 @@
 					options: {
 						source: {
 							$switch: [
-								{if-all: [{if: =options.image_idiom, equals: portrait}, {$count: [=article.images.portrait]}], then:
-									{$join: ["url(", =article.images.portrait, ")"]}
-								},
-								{if-all: [{if: =options.image_idiom, equals: landscape}, {$count: [=article.images.landscape]}], then:
-									{$join: ["url(", =article.images.landscape, ")"]}
-								},
-								{if-all: [=scale.phone, {$count: [=article.images.phone]}], then:
-									{$join: ["url(", =article.images.phone, ")"]}
-								},
-								{if-all: [=scale.rail, {$count: [=article.images.rail]}], then:
-									{$join: ["url(", =article.images.rail, ")"]}
-								},
-								{if-all: [=scale.tablet, {$count: [=article.images.tablet]}], then:
-									{$join: ["url(", =article.images.tablet, ")"]}
-								}
+								{$switch: [
+									{if-all: [{if: =options.image_idiom, equals: portrait}, {$count: [=article.images.portrait]}], then:
+										{$join: ["url(", =article.images.portrait, ")"]}
+									},
+									{if-all: [{if: =options.image_idiom, equals: landscape}, {$count: [=article.images.landscape]}], then:
+										{$join: ["url(", =article.images.landscape, ")"]}
+									},
+									{if-all: [=scale.phone, {$count: [=article.images.phone]}], then:
+										{$join: ["url(", =article.images.phone, ")"]}
+									},
+									{if-all: [=scale.rail, {$count: [=article.images.rail]}], then:
+										{$join: ["url(", =article.images.rail, ")"]}
+									},
+									{if-all: [=scale.tablet, {$count: [=article.images.tablet]}], then:
+										{$join: ["url(", =article.images.tablet, ")"]}
+									}
+								]},
+								{$switch: [
+									{if-all: [{if: =options.image_idiom, equals: portrait}, {$count: [=article.image_portrait]}], then:
+										{$join: ["url(", =article.image_portrait, ")"]}
+									},
+									{if-all: [{if: =options.image_idiom, equals: landscape}, {$count: [=article.image_landscape]}], then:
+										{$join: ["url(", =article.image_landscape, ")"]}
+									},
+									{if-all: [=scale.phone, {$count: [=article.image_phone]}], then:
+										{$join: ["url(", =article.image_phone, ")"]}
+									},
+									{if-all: [=scale.rail, {$count: [=article.image_rail]}], then:
+										{$join: ["url(", =article.image_rail, ")"]}
+									},
+									{if-all: [=scale.tablet, {$count: [=article.image_tablet]}], then:
+										{$join: ["url(", =article.image_tablet, ")"]}
+									}
+								]}
 							]
 						}
 					}

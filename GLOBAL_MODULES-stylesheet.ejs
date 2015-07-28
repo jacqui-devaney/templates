@@ -139,7 +139,7 @@
 	},
 	#m_subsection: { content: =article.subsection },
 	.m_headline: { content: =article.headline },
-	.body-mark: { content: =article.body_extract },
+	.body-mark: { content: { $switch: [=article.body_extract, =article.summary] } },
 	.byline-mark: {	content: =article.byline },
 	.flashline-mark: { content: =article.flashline },
 	.subhed-mark: {	content: =article.deckline },

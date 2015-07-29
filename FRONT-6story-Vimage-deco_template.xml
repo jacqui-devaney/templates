@@ -18,9 +18,6 @@
                 #b1:    {
                     options:{bind:none}
                 },
-                #deco:  {
-                    options:{bind:none}
-                },
                 #b2:    {
                     options:{bind:none}
                 },
@@ -44,7 +41,7 @@
                 #deco:	{
                     top:20,
                     height:400,
-                    options:{bind:none, medium_headline:true}
+                    options:{medium_headline:true}
                 },
                 #b2:	{
                     top:430,
@@ -76,7 +73,7 @@
                 #deco:	{
                     top:20,
                     height:400,
-                    options:{bind:none, medium_headline:true}
+                    options:{medium_headline:true}
                 },
                 #b2:	{
                     top:20,

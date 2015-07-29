@@ -25,7 +25,7 @@
 				#deco:	{
 					top:0,
 					height:1024,
-					options:{ bind: none, very_large_caps_headline:true, image_idiom:portrait, white_text:true, full_screen:true, large_body:true}
+					options:{very_large_caps_headline:true, image_idiom:portrait, white_text:true, full_screen:true, large_body:true}
 				}
 
 			}},
@@ -34,7 +34,7 @@
 				#deco:	{
 					top:0,
 					height:768,
-					options:{ bind: none, very_large_caps_headline:true, white_text:true, image_idiom:landscape, full_screen:true, large_body:true}
+					options:{very_large_caps_headline:true, white_text:true, image_idiom:landscape, full_screen:true, large_body:true}
 				}
 			}}
 		]

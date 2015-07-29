@@ -34,7 +34,7 @@
 				#deco: {
 					top:0,
 					height:363,
-					options:{ bind: none, medium_headline:true, show_byline:true, show_flashline:true}
+					options:{medium_headline:true, show_byline:true, show_flashline:true}
 				},
 				#b4: {
 					top:0,
@@ -76,7 +76,7 @@
 				#deco: {
 					top:0,
 					height:363,
-					options:{ bind: none, medium_headline:true, show_byline:true, show_flashline:true}
+					options:{medium_headline:true, show_byline:true, show_flashline:true}
 				},
 				#b4: {
 					top:392,

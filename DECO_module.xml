@@ -4,49 +4,7 @@
 	<style>{
 			image:{
 				width:=view.width,
-				height: {$subtract:[=view.height, 1]},
-				image-scale: {if: =options.full_screen, then:.9, else:1},
-				options: {
-					source: {
-						$switch: [
-							{$switch: [
-								{if-all: [{if: =options.image_idiom, equals: portrait}, {$count: [=article.images.portrait]}], then:
-									{$join: ["url(", =article.images.portrait, ")"]}
-								},
-								{if-all: [{if: =options.image_idiom, equals: landscape}, {$count: [=article.images.landscape]}], then:
-									{$join: ["url(", =article.images.landscape, ")"]}
-								},
-								{if-all: [=scale.phone, {$count: [=article.images.phone]}], then:
-									{$join: ["url(", =article.images.phone, ")"]}
-								},
-								{if-all: [=scale.rail, {$count: [=article.images.rail]}], then:
-									{$join: ["url(", =article.images.rail, ")"]}
-								},
-								{if-all: [=scale.tablet, {$count: [=article.images.tablet]}], then:
-									{$join: ["url(", =article.images.tablet, ")"]}
-								}
-							]},
-							{$switch: [
-								{if-all: [{if: =options.image_idiom, equals: portrait}, {$count: [=article.image_portrait]}], then:
-									{$join: ["url(", =article.image_portrait, ")"]}
-								},
-								{if-all: [{if: =options.image_idiom, equals: landscape}, {$count: [=article.image_landscape]}], then:
-									{$join: ["url(", =article.image_landscape, ")"]}
-								},
-								{if-all: [=scale.phone, {$count: [=article.image_phone]}], then:
-									{$join: ["url(", =article.image_phone, ")"]}
-								},
-								{if-all: [=scale.rail, {$count: [=article.image_rail]}], then:
-									{$join: ["url(", =article.image_rail, ")"]}
-								},
-								{if-all: [=scale.tablet, {$count: [=article.image_tablet]}], then:
-									{$join: ["url(", =article.image_tablet, ")"]}
-								}
-							]}
-						]
-					}
-				}
-
+				height: {$subtract:[=view.height, 1]}
 			},
 			#deco_caption_container: {
 				background-color:"rgba(0, 0, 0, .5)",
@@ -71,7 +29,7 @@
 			}
 	}</style>
 			<box id="deco_container" embed="deco-image">
-				<box><image/></box>
+				<box><image class="summary-image"/></box>
 				<box id="deco_caption_container">
 					<p id="headline" class="deco_headline"><mark class="m_headline" /><mark class="key" /></p>
 					<p class="deco_caption"><mark class="subhed-mark" /></p>

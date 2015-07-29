@@ -13,49 +13,7 @@
 			image:{
 				width:=view.width,
 				height: {$subtract:[=view.height, 1]},
-				image-scale: 1,
-				gravity:aspect-fill,
-				options: {
-				 match: { prefer: aspect-ratio },
-				 source: {
-					 $switch: [
-						{$switch: [
-							{if-all: [{if: =options.image_idiom, equals: portrait}, {$count: [=article.images.portrait]}], then:
-								{$join: ["url(", =article.images.portrait, ")"]}
-							},
-							{if-all: [{if: =options.image_idiom, equals: landscape}, {$count: [=article.images.landscape]}], then:
-								{$join: ["url(", =article.images.landscape, ")"]}
-							},
-							{if-all: [=scale.phone, {$count: [=article.images.phone]}], then:
-								{$join: ["url(", =article.images.phone, ")"]}
-							},
-							{if-all: [=scale.rail, {$count: [=article.images.rail]}], then:
-								{$join: ["url(", =article.images.rail, ")"]}
-							},
-							{if-all: [=scale.tablet, {$count: [=article.images.tablet]}], then:
-								{$join: ["url(", =article.images.tablet, ")"]}
-							}
-						]},
-						{$switch: [
-							{if-all: [{if: =options.image_idiom, equals: portrait}, {$count: [=article.image_portrait]}], then:
-								{$join: ["url(", =article.image_portrait, ")"]}
-							},
-							{if-all: [{if: =options.image_idiom, equals: landscape}, {$count: [=article.image_landscape]}], then:
-								{$join: ["url(", =article.image_landscape, ")"]}
-							},
-							{if-all: [=scale.phone, {$count: [=article.image_phone]}], then:
-								{$join: ["url(", =article.image_phone, ")"]}
-							},
-							{if-all: [=scale.rail, {$count: [=article.image_rail]}], then:
-								{$join: ["url(", =article.image_rail, ")"]}
-							},
-							{if-all: [=scale.tablet, {$count: [=article.image_tablet]}], then:
-								{$join: ["url(", =article.image_tablet, ")"]}
-							}
-						]}
-					]
-				 }
-				}
+				gravity:aspect-fill
 			},
 			#deco_caption_container: {
 				background-color:"rgba(0, 0, 0, .6)",
@@ -102,7 +60,7 @@
 		}
 	}</style>
 			<box id="deco_container" embed="deco-image">
-				<image/>
+				<image class="summary-image"/>
 				<box id="deco_caption_container">
 					<panel id="headline">
 						<p class="module_headline"><mark class="m_headline" /><mark class="key" /></p>

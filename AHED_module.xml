@@ -39,12 +39,10 @@
         ]},
         {
         #image_wrapper: {
-        width: 90,
+        width: 80,
         height: 80,
         anchor-x: right,
-        bottom: 8
-        },
-        image: {
+        bottom: 8,
         padding: [0, 0, 0, 10]
         },
         .ahed_subhed: {

@@ -9,7 +9,39 @@
 			options: {
 				tintTitle: true
 			}
-		}
+		},
+		#b1:  { display: { if: {$count: [=articles.b1]},  equals: 0, then: none} },
+		#b2:  { display: { if: {$count: [=articles.b2]},  equals: 0, then: none} },
+		#b3:  { display: { if: {$count: [=articles.b3]},  equals: 0, then: none} },
+		#b4:  { display: { if: {$count: [=articles.b4]},  equals: 0, then: none} },
+		#b5:  { display: { if: {$count: [=articles.b5]},  equals: 0, then: none} },
+		#b6:  { display: { if: {$count: [=articles.b6]},  equals: 0, then: none} },
+		#b7:  { display: { if: {$count: [=articles.b7]},  equals: 0, then: none} },
+		#b8:  { display: { if: {$count: [=articles.b8]},  equals: 0, then: none} },
+		#b9:  { display: { if: {$count: [=articles.b9]},  equals: 0, then: none} },
+		#b10: { display: { if: {$count: [=articles.b10]}, equals: 0, then: none} },
+		#b11: { display: { if: {$count: [=articles.b11]}, equals: 0, then: none} },
+		#b12: { display: { if: {$count: [=articles.b12]}, equals: 0, then: none} },
+		#b13: { display: { if: {$count: [=articles.b13]}, equals: 0, then: none} },
+		#b14: { display: { if: {$count: [=articles.b14]}, equals: 0, then: none} },
+		#b15: { display: { if: {$count: [=articles.b15]}, equals: 0, then: none} },
+		#b16: { display: { if: {$count: [=articles.b16]}, equals: 0, then: none} },
+		#b17: { display: { if: {$count: [=articles.b17]}, equals: 0, then: none} },
+		#b18: { display: { if: {$count: [=articles.b18]}, equals: 0, then: none} },
+		#b19: { display: { if: {$count: [=articles.b19]}, equals: 0, then: none} },
+		#b20: { display: { if: {$count: [=articles.b20]}, equals: 0, then: none} },
+		#b21: { display: { if: {$count: [=articles.b21]}, equals: 0, then: none} },
+		#b22: { display: { if: {$count: [=articles.b22]}, equals: 0, then: none} },
+		#b23: { display: { if: {$count: [=articles.b23]}, equals: 0, then: none} },
+		#b24: { display: { if: {$count: [=articles.b24]}, equals: 0, then: none} },
+		#b25: { display: { if: {$count: [=articles.b25]}, equals: 0, then: none} },
+		#b26: { display: { if: {$count: [=articles.b26]}, equals: 0, then: none} },
+		#b27: { display: { if: {$count: [=articles.b27]}, equals: 0, then: none} },
+		#b28: { display: { if: {$count: [=articles.b28]}, equals: 0, then: none} },
+		#b29: { display: { if: {$count: [=articles.b29]}, equals: 0, then: none} },
+		#b30: { display: { if: {$count: [=articles.b30]}, equals: 0, then: none} },
+		#b31: { display: { if: {$count: [=articles.b31]}, equals: 0, then: none} },
+		#b32: { display: { if: {$count: [=articles.b32]}, equals: 0, then: none} }
 	}</style>
 	<style>{
 		$switch: [

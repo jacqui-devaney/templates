@@ -130,6 +130,7 @@
       {
         "filename": "CONTINUATION-generic-32_template.xml",
         "usage": "continuation",
+        "partial_binding": true,
         "boxes": [
           {
             "id": "b1",

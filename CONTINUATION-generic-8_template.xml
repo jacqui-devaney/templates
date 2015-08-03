@@ -16,30 +16,6 @@
 			{if: =scale.rail, then: {
 			}},
 	        {if: =scale.phone, then: {
-	        	#b1 : {
-					options: { bind: none }
-				},
-				#b2 : {
-					options: { bind: none }
-				},
-				#b3 : {
-					options: { bind: none }
-				},
-				#b4 : {
-					options: { bind: none }
-				},
-				#b5 : {
-					options: { bind: none }
-				},
-				#b6 : {
-					options: { bind: none }
-				},
-				#b7 : {
-					options: { bind: none }
-				},
-				#b8 : {
-					options: { bind: none }
-				}
 	        }},
 	        {if: =portrait, then: {
 				#b1 : {

@@ -9,18 +9,6 @@
 			{if: =scale.rail, then: {
 			}},
 	        {if: =scale.phone, then: {
-	        	#b1 : { 
-					options: { bind: none }
-				},
-				#b2 : { 
-					options: { bind: none }
-				},
-				#b3 : {  
-					options: { bind: none }
-				},
-				#b4 : { 
-					options: { bind: none }
-				}
 	        }},
 	        {if: =portrait, then: {
 		        #b1 : { 

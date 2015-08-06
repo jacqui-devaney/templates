@@ -21,30 +21,30 @@
 				#b1:	{
 					top:377,
 					height:125,
-					options:{ bind: none, large_headline:true}			
+					options:{ bind: {if: =articles.b1.no_binding, then: none}, large_headline:true}
 				},
 				#deco:	{
 					top:20,
 					height:340,
-					options:{ medium_headline:true}
+					options:{ bind: {if: =articles.deco.no_binding, then: none}, medium_headline:true}
 				},
 				#b2:	{
 					width:267,
 					top:509,
 					height:175,
-					options:{ bind: none, medium_headline:true, top_border:true}
+					options:{ bind: {if: =articles.b2.no_binding, then: none}, medium_headline:true, top_border:true}
 				},
 				#b3:	{
 					left:483,
 					width:267,
 					top:509,
 					height:175,
-					options:{ bind: none, medium_headline:true, top_border:true}
+					options:{ bind: {if: =articles.b3.no_binding, then: none}, medium_headline:true, top_border:true}
 				},
 				#b4: {
 					top:691,
 					height:122,
-					options:{ bind: none, medium_headline:true, bottom_align:true, show_byline:false, top_border:true}
+					options:{ bind: {if: =articles.b4.no_binding, then: none}, medium_headline:true, bottom_align:true, show_byline:false, top_border:true}
 				}
 
 			}},
@@ -52,30 +52,30 @@
 				#b1:	{
 					top:20,
 					height:342,
-					options:{ bind: none, large_headline:true}
+					options:{ bind: {if: =articles.b1.no_binding, then: none}, large_headline:true}
 				},
 				#deco:	{
 					top:20,
 					height:341,
-					options:{ medium_headline:true}
+					options:{ bind: {if: =articles.deco.no_binding, then: none}, medium_headline:true}
 				},
 				#b2:	{
 					width:267,
 					top:370,
 					height:194,
-					options:{ bind: none, medium_headline:true, top_border:true}
+					options:{ bind: {if: =articles.b2.no_binding, then: none}, medium_headline:true, top_border:true}
 				},
 				#b3:	{
 					left:487,
 					width:267,
 					top:370,
 					height:194,
-					options:{ bind: none, medium_headline:true, top_border:true}
+					options:{ bind: {if: =articles.b3.no_binding, then: none}, medium_headline:true, top_border:true}
 				},
 				#b4:	{
 					top:370,
 					height:187,
-					options:{ bind: none, medium_headline:true, top_border:true, show_byline:false}
+					options:{ bind: {if: =articles.b4.no_binding, then: none}, medium_headline:true, top_border:true, show_byline:false}
 				}
 			}}
 		]

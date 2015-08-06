@@ -4,7 +4,7 @@
 	<style src="ADVERTISING-stylesheet.ejs"/>
 	<style src="FRONT-stylesheet.ejs"/>
 	<style src="PHONE-stylesheet.ejs"/>
-    <style src="RAIL-stylesheet.ejs" />    
+    <style src="RAIL-stylesheet.ejs" />
 	<style>{
 		#page_details: {
             options: {
@@ -15,85 +15,88 @@
 	<style> {
 		$switch: [
             {if: =scale.phone, then: {
+								#deco: {
+									options:{bind: {if: =articles.deco.no_binding, then: none}}
+								},
                 #b1:    {
-                    options:{bind:none}
+                    options:{bind: {if: =articles.b1.no_binding, then: none}}
                 },
                 #b2:    {
-                    options:{bind:none}
+                    options:{bind: {if: =articles.b2.no_binding, then: none}}
                 },
                 #b3:    {
-                    options:{bind:none}
+                    options:{bind: {if: =articles.b3.no_binding, then: none}}
                 },
                 #b4: {
-                    options:{bind:none}
+                    options:{bind: {if: =articles.b4.no_binding, then: none}}
                 },
                 #b5: {
-                    options:{bind:none}
+                    options:{bind: {if: =articles.b5.no_binding, then: none}}
                 }
-        
+
             }},
             {if: =portrait, then: {
                 #b1:	{
                     top:20,
                     height:400,
-                    options:{bind:none, large_headline:true}
+                    options:{bind: {if: =articles.b1.no_binding, then: none}, large_headline:true}
                 },
                 #deco:	{
                     top:20,
                     height:400,
-                    options:{medium_headline:true}
+                    options:{bind: {if: =articles.deco.no_binding, then: none}, medium_headline:true}
                 },
                 #b2:	{
                     top:430,
                     height:254,
-                    options:{bind:none, medium_headline:true, top_border:true}
+                    options:{bind: {if: =articles.b2.no_binding, then: none}, medium_headline:true, top_border:true}
                 },
                 #b3:	{
                     top:430,
                     height:254,
-                    options:{bind:none, medium_headline:true, top_border:true}
+                    options:{bind: {if: =articles.b3.no_binding, then: none}, medium_headline:true, top_border:true}
                 },
                 #b4: {
                     top:430,
                     height:254,
-                    options:{bind:none, medium_headline:true, top_border:true}
+                    options:{bind: {if: =articles.b4.no_binding, then: none}, medium_headline:true, top_border:true}
                 },
                 #b5: {
                     top:690,
                     height:125,
-                    options:{bind:none, medium_headline:true, bottom_align:true, show_byline:false, top_border:true}
+                    options:{bind: {if: =articles.b5.no_binding, then: none}, medium_headline:true, bottom_align:true, show_byline:false, top_border:true}
                 }
             }},
             {if: =landscape, then: {
                 #b1:	{
                     top:20,
                     height:350,
-                    options:{bind:none, large_headline:true}
+                    options:{bind: {if: =articles.b1.no_binding, then: none}, large_headline:true}
                 },
                 #deco:	{
                     top:20,
                     height:400,
-                    options:{medium_headline:true}
+                    options:{bind: {if: =articles.deco.no_binding, then: none}, medium_headline:true}
                 },
                 #b2:	{
                     top:20,
                     height:260,
-                    options:{bind:none, medium_headline:true}
+                    options:{bind: {if: =articles.b2.no_binding, then: none}, medium_headline:true}
                 },
                 #b3:	{
                     top:290,
                     height:270,
-                    options:{bind:none, medium_headline:true, top_border:true}
+                    options:{bind: {if: =articles.b3.no_binding, then: none}, medium_headline:true, top_border:true}
                 },
                 #b4:	{
                     top:440,
                     height:120,
-                    options:{bind:none, medium_headline:true, top_border:true}
+                    options:{bind: {if: =articles.b4.no_binding, then: none}, medium_headline:true, top_border:true}
                 },
                 #b5:	{
                     top:380,
                     height:185,
-                    options:{bind:none, medium_headline:true, top_border:true, show_byline:false}
+                    options:{bind: {if: =articles.b5.no_binding, then: none}, medium_headline:true, top_border:true, show_byline:false}
                 }
             }}
 		]
@@ -125,5 +128,5 @@
 	<box id="front_page" class="tablet_only positionx_full column_full maude unit_ad">
 		<box id="banner_ad" class="ad-banner front_ad" embed="advertisement" />
 	</box>
-    
+
 </jpml>

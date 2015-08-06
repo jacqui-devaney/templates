@@ -72,77 +72,77 @@
 					display: none
 				},
 				#b1 : {
-					options: { bind: none, show_body: true, medium_headline: true }
+					options: { bind: {if: =articles.b1.no_binding, then: none}, show_body: true, medium_headline: true }
 				},
 				#b2 : {
 					height: =size.continuation_height_large,
-					options: { bind: none, show_body: true, small_headline: true, module: url(CONTINUATION-dynamic_module.xml) }
+					options: { bind: {if: =articles.b2.no_binding, then: none}, show_body: true, small_headline: true, module: url(CONTINUATION-dynamic_module.xml) }
 				},
 				#b3 : {
 					height: =size.continuation_height_normal,
-					options: { bind: none, show_body: false, small_headline: true }
+					options: { bind: {if: =articles.b3.no_binding, then: none}, show_body: false, small_headline: true }
 				},
 				#b4 : {
 					height: =size.continuation_height_normal,
-					options: { bind: none, show_body: false, small_headline: true }
+					options: { bind: {if: =articles.b4.no_binding, then: none}, show_body: false, small_headline: true }
 				},
 				#b5 : {
 					height: =size.continuation_height_normal,
-					options: { bind: none, show_body: false, small_headline: true }
+					options: { bind: {if: =articles.b5.no_binding, then: none}, show_body: false, small_headline: true }
 				}
 			}},
 			{if: =portrait, then: {
 				#b1:	{
 					top:30,
 					height:645,
-					options: { bind: none }
+					options: { bind: {if: =articles.b1.no_binding, then: none} }
 				},
 				#b2:	{
 					top:695,
 					height:200,
-					options: { bind: none }
+					options: { bind: {if: =articles.b2.no_binding, then: none} }
 				},
 				#b3:{
 					top:30,
 					height:290,
-					options: { bind: none }
+					options: { bind: {if: =articles.b3.no_binding, then: none} }
 				},
 				#b4:	{
 					top:325,
 					height:290,
-					options: { bind: none }
+					options: { bind: {if: =articles.b4.no_binding, then: none} }
 				},
 				#b5:	{
 					top:620,
 					height:280,
-					options: { bind: none }
+					options: { bind: {if: =articles.b5.no_binding, then: none} }
 				}
 			}},
 			{if: =landscape, then: {
 				#b1:	{
 					top:30,
 					height:615,
-					options: { bind: none }
+					options: { bind: {if: =articles.b1.no_binding, then: none} }
 				},
 				#b2:	{
 					top:30,
 					height:155,
-					options: { bind: none }
+					options: { bind: {if: =articles.b2.no_binding, then: none} }
 				},
 				#b3:	{
 					top:190,
 					height:155,
-					options: { bind: none }
+					options: { bind: {if: =articles.b3.no_binding, then: none} }
 				},
 				#b4:	{
 					top:350,
 					height:155,
-					options: { bind: none }
+					options: { bind: {if: =articles.b4.no_binding, then: none} }
 				},
 				#b5:{
 					top:510,
 					height:140,
-					options: { bind: none }
+					options: { bind: {if: =articles.b5.no_binding, then: none} }
 				}
 			}}
 		]
@@ -151,19 +151,19 @@
 		if: =scale.phone,
 		then: {
 				#b1:	{
-					options: { bind: none }
+					options: { bind: {if: =articles.b1.no_binding, then: none} }
 				},
 				#b2:	{
-					options: { bind: none }
+					options: { bind: {if: =articles.b2.no_binding, then: none} }
 				},
 				#b3:	{
-					options: { bind: none }
+					options: { bind: {if: =articles.b3.no_binding, then: none} }
 				},
 				#b4:	{
-					options: { bind: none }
+					options: { bind: {if: =articles.b4.no_binding, then: none} }
 				},
 				#b5:{
-					options: { bind: none }
+					options: { bind: {if: =articles.b5.no_binding, then: none} }
 				}
 		},
 		else: {
@@ -172,7 +172,7 @@
 					medium_headline:true,
 					show_image:true,
 					background_color: =color.background,
-					bind:none
+					bind:{if: =article.b1.no_binding, then: none}
 				}
 			},
 			#b2: {
@@ -182,7 +182,7 @@
 					show_image: true,
 					smedium_headline: true,
 					background_color: =color.background,
-					bind:none
+					bind:{if: =article.b2.no_binding, then: none}
 				}
 			},
 			#b3: {
@@ -191,7 +191,7 @@
 					show_body: true,
 					small_headline: true,
 					background_color: =color.background,
-					bind:none
+					bind:{if: =article.b3.no_binding, then: none}
 				}
 			},
 			#b4: {
@@ -199,7 +199,7 @@
 					show_body: true,
 					small_headline: true,
 					background_color: =color.background,
-					bind:none
+					bind:{if: =article.b4.no_binding, then: none}
 				}
 			},
 			#b5: {
@@ -207,7 +207,7 @@
 					show_body: true,
 					small_headline: true,
 					background_color: =color.background,
-					bind:none
+					bind:{if: =article.b5.no_binding, then: none}
 				}
 			}
 		}

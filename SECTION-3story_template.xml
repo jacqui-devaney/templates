@@ -21,34 +21,34 @@
 				#deco:	{
 					top:0,
 					height:545,
-					options:{large_headline:true, show_image:true, one_line_caption:true}
+					options:{bind: {if: =articles.deco.no_binding, then: none}, large_headline:true, show_image:true, one_line_caption:true}
 				},
 				#b1:	{
 					top:559,
 					height:260,
-					options:{bind: none, medium_headline:true, show_body:true, show_flashline:true, small_image:true}
+					options:{bind: {if: =articles.b1.no_binding, then: none}, medium_headline:true, show_body:true, show_flashline:true, small_image:true}
 				},
 				#b2:	{
 					top:559,
 					height:260,
-					options:{bind: none, medium_headline:true, show_body:true, show_flashline:true, small_image:true}
+					options:{bind: {if: =articles.b2.no_binding, then: none}, medium_headline:true, show_body:true, show_flashline:true, small_image:true}
 				}
 			}},
 			{if: =landscape, then: {
 				#deco:	{
 					top:0,
 					height:545,
-					options:{large_headline:true, show_image:true, one_line_caption:true}
+					options:{bind: {if: =articles.deco.no_binding, then: none}, large_headline:true, show_image:true, one_line_caption:true}
 				},
 				#b1:	{
 					top:0,
 					height:280,
-					options:{bind: none, medium_headline:true, show_body:true, show_flashline:true, small_image:true}
+					options:{bind: {if: =articles.b1.no_binding, then: none}, medium_headline:true, show_body:true, show_flashline:true, small_image:true}
 				},
 				#b2:	{
 					top:295,
 					height:240,
-					options:{bind: none, medium_headline:true, show_body:true, show_flashline:true, small_image:true}
+					options:{bind: {if: =articles.b2.no_binding, then: none}, medium_headline:true, show_body:true, show_flashline:true, small_image:true}
 				}
 			}}
 		]

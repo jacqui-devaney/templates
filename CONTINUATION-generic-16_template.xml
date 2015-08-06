@@ -20,166 +20,166 @@
 	        {if: =portrait, then: {
 				#b1 : {
 	 				height:240,
-					top:0, 
-					options: { bind: none }
+					top:0,
+					options: { bind: {if: =articles.b1.no_binding, then: none} }
 				},
 				#b2 : {
 	 				height:240,
-					top:0, 
-					options: { bind: none }
+					top:0,
+					options: { bind: {if: =articles.b2.no_binding, then: none} }
 				},
 				#b3 : {
 	 				height:240,
-					top:0, 
-					options: { bind: none }
+					top:0,
+					options: { bind: {if: =articles.b3.no_binding, then: none} }
 				},
 				#b4 : {
 	 				height:240,
-					top:0, 
-					options: { bind: none }
+					top:0,
+					options: { bind: {if: =articles.b4.no_binding, then: none} }
 				},
 				#b5 : {
 	 				height:240,
-					top:240, 
-					options: { bind: none }
+					top:240,
+					options: { bind: {if: =articles.b5.no_binding, then: none} }
 				},
 				#b6 : {
 	 				height:240,
-					top:240, 
-					options: { bind: none }
+					top:240,
+					options: { bind: {if: =articles.b6.no_binding, then: none} }
 				},
 				#b7 : {
 	 				height:240,
-					top:240, 
-					options: { bind: none }
+					top:240,
+					options: { bind: {if: =articles.b7.no_binding, then: none} }
 				},
 				#b8 : {
 	 				height:240,
-					top:240, 
-					options: { bind: none }
+					top:240,
+					options: { bind: {if: =articles.b8.no_binding, then: none} }
 				},
 				#b9 : {
 	 				height:240,
-					top:480, 
-					options: { bind: none }
+					top:480,
+					options: { bind: {if: =articles.b9.no_binding, then: none} }
 				},
 				#b10 : {
 	 				height:240,
-					top:480, 
-					options: { bind: none }
+					top:480,
+					options: { bind: {if: =articles.b10.no_binding, then: none} }
 				},
 				#b11 : {
 	 				height:240,
-					top:480, 
-					options: { bind: none }
+					top:480,
+					options: { bind: {if: =articles.b11.no_binding, then: none} }
 				},
 				#b12 : {
 	 				height:240,
-					top:480, 
-					options: { bind: none }
+					top:480,
+					options: { bind: {if: =articles.b12.no_binding, then: none} }
 				},
 				#b13 : {
 	 				height:240,
-					top:720, 
-					options: { bind: none }
+					top:720,
+					options: { bind: {if: =articles.b13.no_binding, then: none} }
 				},
 				#b14 : {
 	 				height:240,
-					top:720, 
-					options: { bind: none }
+					top:720,
+					options: { bind: {if: =articles.b14.no_binding, then: none} }
 				},
 				#b15 : {
 	 				height:240,
-					top:720, 
-					options: { bind: none }
+					top:720,
+					options: { bind: {if: =articles.b15.no_binding, then: none} }
 				},
 				#b16 : {
 	 				height:240,
-					top:720, 
-					options: { bind: none }
+					top:720,
+					options: { bind: {if: =articles.b16.no_binding, then: none} }
 				}
 
         	}},
 			{if: =landscape, then: {
 				#b1 : {
 	 				height:235,
-					top:0, 
-					options: { bind: none }
+					top:0,
+					options: { bind: {if: =articles.b1.no_binding, then: none} }
 				},
 				#b2 : {
 	 				height:235,
-					top:0, 
-					options: { bind: none }
+					top:0,
+					options: { bind: {if: =articles.b2.no_binding, then: none} }
 				},
 				#b3 : {
 	 				height:235,
-					top:0, 
-					options: { bind: none }
+					top:0,
+					options: { bind: {if: =articles.b3.no_binding, then: none} }
 				},
 				#b4 : {
 	 				height:235,
-					top:0, 
-					options: { bind: none }
+					top:0,
+					options: { bind: {if: =articles.b4.no_binding, then: none} }
 				},
 				#b5 : {
 	 				height:235,
-					top:0, 
-					options: { bind: none }
+					top:0,
+					options: { bind: {if: =articles.b5.no_binding, then: none} }
 				},
 				#b6 : {
 	 				height:235,
-					top:0, 
-					options: { bind: none }
+					top:0,
+					options: { bind: {if: =articles.b6.no_binding, then: none} }
 				},
 				#b7 : {
 	 				height:235,
-					top:0, 
-					options: { bind: none }
+					top:0,
+					options: { bind: {if: =articles.b7.no_binding, then: none} }
 				},
 				#b8 : {
 	 				height:235,
-					top:0, 
-					options: { bind: none }
+					top:0,
+					options: { bind: {if: =articles.b8.no_binding, then: none} }
 				},
 				#b9 : {
 	 				height:235,
-					top:235, 
-					options: { bind: none }
+					top:235,
+					options: { bind: {if: =articles.b9.no_binding, then: none} }
 				},
 				#b10 : {
 	 				height:235,
-					top:235, 
-					options: { bind: none }
+					top:235,
+					options: { bind: {if: =articles.b10.no_binding, then: none} }
 				},
 				#b11 : {
 	 				height:235,
-					top:235, 
-					options: { bind: none }
+					top:235,
+					options: { bind: {if: =articles.b11.no_binding, then: none} }
 				},
 				#b12 : {
 	 				height:235,
-					top:235, 
-					options: { bind: none }
+					top:235,
+					options: { bind: {if: =articles.b12.no_binding, then: none} }
 				},
 				#b13 : {
 	 				height:235,
-					top:235, 
-					options: { bind: none }
+					top:235,
+					options: { bind: {if: =articles.b13.no_binding, then: none} }
 				},
 				#b14 : {
 	 				height:235,
-					top:235, 
-					options: { bind: none }
+					top:235,
+					options: { bind: {if: =articles.b14.no_binding, then: none} }
 				},
 				#b15 : {
 	 				height:235,
-					top:235, 
-					options: { bind: none }
+					top:235,
+					options: { bind: {if: =articles.b15.no_binding, then: none} }
 				},
 				#b16 : {
 	 				height:235,
-					top:235, 
-					options: { bind: none }
+					top:235,
+					options: { bind: {if: =articles.b16.no_binding, then: none} }
 				}
 	        }}
 		]

@@ -14,6 +14,8 @@
     }</style>
 	<style> {
 		$switch: [
+						{if: =scale.rail, then: {
+						}},
             {if: =scale.phone, then: {
 								#deco: {
 									options:{bind: {if: =articles.deco.no_binding, then: none}}

@@ -57,7 +57,6 @@
           image-scale: 1,
           display: { if: =options.show_image, then:inherit, else:none },
 					height: {$multiply: [=view.width, .665 ]},
-					padding: [0, 0, 17, 0],
 					options: {
 						$switch: [
 							{ if: =options.F_image, then: {match: { width:571, height:226, max-height:226 } } },
@@ -66,7 +65,10 @@
 							{ if: =options.G_image, then: {match: { width:553, height:369, min-height:369 } } }
 						]
 					}
-	            },
+	      },
+				#deco_container: {
+					padding: [0, 0, 17, 0]
+				},
 				.byline: {
 					display:{if: =options.show_byline, then:inherit, else:none}
 

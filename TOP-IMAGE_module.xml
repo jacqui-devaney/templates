@@ -47,9 +47,10 @@
 		        #deco_container: {
 		        	if: =options.float_image, equals: right, then: {
 		        		anchor-x: right,
-		        		padding: [8],
 		        		width: 111
-		        	}
+		        	}, else: {
+								padding: [0, 0, 17, 0]
+							}
 		        },
 				image: {
 					pixels-per-point-x:1,
@@ -66,9 +67,6 @@
 						]
 					}
 	      },
-				#deco_container: {
-					padding: [0, 0, 17, 0]
-				},
 				.byline: {
 					display:{if: =options.show_byline, then:inherit, else:none}
 
@@ -113,7 +111,7 @@
 				padding: [0, 24, 0, 0]
 			},
 			#deco_container: {
-				padding: {if: =view.height, less-than: 200, then: [0, 24, 0, 0], else: [0]}
+				padding: {if: =view.height, less-than: 200, then: [0, 24, 0, 0], else: [8]}
 			},
 			#article_status: {
 				position: relative,

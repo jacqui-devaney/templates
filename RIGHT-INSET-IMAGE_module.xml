@@ -44,11 +44,12 @@
 				#image_wrapper: {
 					anchor-x:right,
 					width: {$switch:[
-						{if: =options.A_image, then:110},
-						{if: =options.small_image, then:121},
-						{if: =options.square_image, then:182},
+						{if: =options.A_image, then:100},
+						{if: =options.small_image, then:113},
+						{if: =options.square_image, then:174},
 						242
 					]},
+					padding: [0, 0, 0, 8],
 					anchor-y:{if: =options.A_image, then:bottom, else:top},
 					display:{if: =options.hide_image, then:none, else:inherit}
 
@@ -61,7 +62,6 @@
 						{if: =options.square_image, then:150},
 						92
 					]},
-					padding: [0, 0, 0, 8],
 					width: {$switch:[
 						{if: =options.A_image, then:100},
 						{if: =options.small_image, then:113},

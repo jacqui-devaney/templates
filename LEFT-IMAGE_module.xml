@@ -58,7 +58,8 @@
 						{if: =options.squarish_image, then:{
 							anchor-x:left,
 							anchor-y:top,
-							width: 184
+							width: 174,
+							padding: [0, 10, 0, 0]
 						}},
 						{if: =options.large_image, then:{
 							anchor-x:left,
@@ -72,7 +73,12 @@
 							width: {$switch:[
 								{if: =options.small_image, then:119},
 								{if: =options.tall_image, then:=view.width},
-								248
+								236
+							]},
+							padding: {$switch:[
+								{if: =options.small_image, then:[0, 0, 0, 0]},
+								{if: =options.tall_image, then:[0, 0, 0, 0]},
+								[0, 12, 0, 0]
 							]}
 						}}
 

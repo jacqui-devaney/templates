@@ -44,14 +44,6 @@
 				#body: {
 					display: {if: =options.hide_body, then:none, else:inherit}
 		        },
-		        #deco_container: {
-		        	if: =options.float_image, equals: right, then: {
-		        		anchor-x: right,
-		        		width: 111
-		        	}, else: {
-								padding: [0, 0, 17, 0]
-							}
-		        },
 				image: {
 					pixels-per-point-x:1,
 					pixels-per-point-y:1,
@@ -67,6 +59,9 @@
 						]
 					}
 	      },
+				#deco_container: {
+					padding: [0, 0, 17, 0]
+				},
 				.byline: {
 					display:{if: =options.show_byline, then:inherit, else:none}
 
@@ -110,8 +105,13 @@
 			#vertical: {
 				padding: [0, 24, 0, 0]
 			},
+
 			#deco_container: {
-				padding: {if: =view.height, less-than: 200, then: [0, 24, 0, 0], else: [8]}
+				if: =options.float_image, equals: right, then: {
+					anchor-x: right,
+					padding: [8],
+					width: 111
+				}, else: {if: =view.height, less-than: 200, then: [0, 24, 0, 0], else: [0]}
 			},
 			#article_status: {
 				position: relative,

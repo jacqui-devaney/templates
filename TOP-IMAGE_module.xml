@@ -170,7 +170,7 @@
 			<p class="byline"><mark class="byline-mark"/></p>
 			<p id="summary" class="body"><mark class="body-first-p-mark" /><mark class="module_summary" /></p>
 			<panel class="body">
-				<p><mark class="body-mark"/></p>
+				<p><mark class="body-first-p-mark" /><mark class="body-mark"/></p>
 			</panel>
 		</panel>
 	</panel>

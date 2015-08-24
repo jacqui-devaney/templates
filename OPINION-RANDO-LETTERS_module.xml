@@ -69,7 +69,7 @@
 		<p id="headline" class="opinion_headline"><mark class="m_headline" /></p>
 		<h2 class="opinion_dek"><mark class="subhed-mark" /></h2>
 		<panel class="body">
-			<p><mark class="body-mark"/></p>
+			<p><mark class="body-first-p-mark" /><mark class="body-mark"/></p>
 		</panel>
 	</panel>
 </jpml>

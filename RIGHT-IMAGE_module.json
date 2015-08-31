@@ -8,25 +8,37 @@
         {
           "label": "Small",
           "values": {
-            "medium_headline":false,
-            "large_headline": false,
-            "small_headline": true
+            "small_headline": true,
+            "smedium_headline": false,
+            "medium_headline": false,
+            "large_headline": false
+          }
+        },
+        {
+          "label": "SMedium",
+          "values": {
+            "small_headline": false,
+            "smedium_headline": true,
+            "medium_headline": false,
+            "large_headline": false
           }
         },
         {
           "label": "Medium",
           "values": {
-          	"medium_headline":true,
-            "large_headline": false,
-            "small_headline": false
+            "small_headline": false,
+            "smedium_headline": false,
+            "medium_headline": false,
+            "large_headline": true
           }
         },
         {
           "label": "Large",
           "values": {
-          	"medium_headline":false,
-            "large_headline": true,
-            "small_headline": false
+            "small_headline": false,
+            "smedium_headline": false,
+            "medium_headline": false,
+            "large_headline": true
           }
         }
       ]

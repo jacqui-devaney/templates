@@ -8,7 +8,7 @@
     "url": "https://github.dowjones.net/DJMobile/templates-wsj.git"
   },
   "devDependencies": {
-    "gitSync": "git+https://github.dowjones.net/andrewcabrera/git-s3-sync#test",
+    "gitSync": "git+https://github.dowjones.net/andrewcabrera/git-s3-sync",
     "gulp": "^3.9.0"
   },
   "keywords": [

@@ -1,4 +1,4 @@
-var GitSync = require('./node_modules/git-s3-sync/Gulpfile.js');
+var slingshot = require('./node_modules/slingshot/Gulpfile.js');
 var path = require('path');
 
 module.exports = function(gulp){

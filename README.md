@@ -54,3 +54,4 @@ curl -X PUT -H "Content-Type: application/json" -d '{"template":"ARTICLE-deloitt
 curl -X PUT -H "Content-Type: application/json" -d '{"template":"ARTICLE-deloitte_template.xml"}' $API/publications/wsj/regions/us/mastheads/SWEET/layout/articles/type/Deloitte%20Riskandcompliance%20Blog
 ```
 
+

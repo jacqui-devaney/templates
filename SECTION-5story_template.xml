@@ -79,16 +79,16 @@
 					options: { bind: {if: =articles.b2.no_binding, then: none}, show_body: true, small_headline: true, module: url(CONTINUATION-dynamic_module.xml) }
 				},
 				#b3 : {
-					height: =size.continuation_height_normal,
-					options: { bind: {if: =articles.b3.no_binding, then: none}, show_body: false, small_headline: true }
+					height: =size.continuation_height_large,
+					options: { bind: {if: =articles.b3.no_binding, then: none}, show_body: true, small_headline: true }
 				},
 				#b4 : {
-					height: =size.continuation_height_normal,
-					options: { bind: {if: =articles.b4.no_binding, then: none}, show_body: false, small_headline: true }
+					height: =size.continuation_height_large,
+					options: { bind: {if: =articles.b4.no_binding, then: none}, show_body: true, small_headline: true }
 				},
 				#b5 : {
-					height: =size.continuation_height_normal,
-					options: { bind: {if: =articles.b5.no_binding, then: none}, show_body: false, small_headline: true }
+					height: =size.continuation_height_large,
+					options: { bind: {if: =articles.b5.no_binding, then: none}, show_body: true, small_headline: true }
 				}
 			}},
 			{if: =portrait, then: {

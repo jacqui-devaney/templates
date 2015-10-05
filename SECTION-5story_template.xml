@@ -94,27 +94,27 @@
 			{if: =portrait, then: {
 				#b1:	{
 					top:30,
-					height:645,
+					height:530,
 					options: { bind: {if: =articles.b1.no_binding, then: none} }
 				},
 				#b2:	{
-					top:695,
-					height:200,
+					top:570,
+					height:340,
 					options: { bind: {if: =articles.b2.no_binding, then: none} }
 				},
 				#b3:{
-					top:30,
-					height:290,
+					top:570,
+					height:340,
 					options: { bind: {if: =articles.b3.no_binding, then: none} }
 				},
 				#b4:	{
-					top:325,
-					height:290,
+					top:30,
+					height:270,
 					options: { bind: {if: =articles.b4.no_binding, then: none} }
 				},
 				#b5:	{
-					top:620,
-					height:280,
+					top:305,
+					height:265,
 					options: { bind: {if: =articles.b5.no_binding, then: none} }
 				}
 			}},
@@ -150,64 +150,50 @@
 	<style>{
 		if: =scale.phone,
 		then: {
-				#b1:	{
-					options: { bind: {if: =articles.b1.no_binding, then: none} }
-				},
-				#b2:	{
-					options: { bind: {if: =articles.b2.no_binding, then: none} }
-				},
-				#b3:	{
-					options: { bind: {if: =articles.b3.no_binding, then: none} }
-				},
-				#b4:	{
-					options: { bind: {if: =articles.b4.no_binding, then: none} }
-				},
-				#b5:{
-					options: { bind: {if: =articles.b5.no_binding, then: none} }
-				}
+
 		},
 		else: {
 			#b1: {
 				options: {
+					bind: {if: =articles.b1.no_binding, then: none},
 					medium_headline:true,
 					show_image:true,
-					background_color: =color.background,
-					bind:{if: =article.b1.no_binding, then: none}
+					background_color: =color.background
 				}
 			},
 			#b2: {
 				options: {
-					top_border: =portrait,
+					bind: {if: =articles.b2.no_binding, then: none},
 					show_body: true,
 					show_image: true,
 					smedium_headline: true,
-					background_color: =color.background,
-					bind:{if: =article.b2.no_binding, then: none}
+					background_color: =color.background
 				}
 			},
 			#b3: {
 				options: {
-					hide_border: =portrait,
+					bind: {if: =articles.b3.no_binding, then: none},
 					show_body: true,
-					small_headline: true,
-					background_color: =color.background,
-					bind:{if: =article.b3.no_binding, then: none}
+					show_image: true,
+					smedium_headline: true,
+					background_color: =color.background
 				}
 			},
 			#b4: {
 				options: {
+					bind: {if: =articles.b4.no_binding, then: none},
+					hide_border: =portrait,
 					show_body: true,
 					small_headline: true,
-					background_color: =color.background,
-					bind:{if: =article.b4.no_binding, then: none}
+					background_color: =color.background
 				}
 			},
 			#b5: {
 				options: {
+					bind: {if: =articles.b5.no_binding, then: none},
 					show_body: true,
 					small_headline: true,
-					background_color: =color.background,
-					bind:{if: =article.b5.no_binding, then: none}
+					background_color: =color.background
 				}
 			}
 		}

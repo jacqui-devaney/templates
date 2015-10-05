@@ -1,0 +1,22 @@
+{
+  "pubcrawl" : {
+    "url": "http://dev.pubcrawl.virginia.onservo.com/api/v1/",
+    "local_url": "http://127.0.0.1:8080/api/v1/",
+    "catalog-map": {
+      "template-catalog-us-itp.json" : "publications/wsj/regions/us/mastheads/ITP/templates",
+      "template-catalog-us-now.json" : "publications/wsj/regions/us/mastheads/WEB/templates",
+      "template-catalog-us-sweet.json" : "publications/wsj/regions/us/mastheads/SWEET/templates",
+      "template-catalog-asia-itp.json" : "publications/wsj/regions/asia/mastheads/ITP/templates",
+      "template-catalog-asia-now.json" : "publications/wsj/regions/asia/mastheads/WEB/templates",
+      "template-catalog-europe-itp.json" : "publications/wsj/regions/europe/mastheads/ITP/templates",
+      "template-catalog-europe-now.json" : "publications/wsj/regions/europe/mastheads/WEB/templates",
+      "template-catalog-japan-now.json" : "publications/wsj/regions/japan/mastheads/WEB/templates",
+      "template-catalog-korea-now.json" : "publications/wsj/regions/korea/mastheads/WEB/templates",
+      "template-catalog-us-featured.json" : "publications/wsj/regions/us/mastheads/MAG/templates",
+      "template-catalog-asia-featured.json" : "publications/wsj/regions/asia/mastheads/MAG/templates",
+      "template-catalog-europe-featured.json" : "publications/wsj/regions/europe/mastheads/MAG/templates"
+    }
+  },
+  "name": "templates-wsj",
+  "repo" : "https://github.dowjones.net/DJMobile/templates-wsj.git"
+}

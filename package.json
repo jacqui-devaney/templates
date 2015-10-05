@@ -1,0 +1,21 @@
+{
+  "name": "templates-wsj",
+  "version": "1.0.0",
+  "description": "Templates for WSJ.",
+  "main": "Gulpfile.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.dowjones.net/DJMobile/templates-wsj.git"
+  },
+  "devDependencies": {
+    "slingshot": "git+https://github.dowjones.net/andrewcabrera/slingshot",
+    "gulp": "^3.9.0"
+  },
+  "keywords": [
+    "gulp",
+    "templates",
+    "javascript"
+  ],
+  "author": "Andrew Cabrera",
+  "license": "ISC"
+}

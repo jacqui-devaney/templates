@@ -207,6 +207,23 @@
 	.hidden_phone: {
 		display: none
 	},
+	.body-paragraph: {
+		page-break-after: always
+	},
+	.body-panel: {
+		page-break-after: always
+	},
+
+	#media_asset: {
+		top: 0,
+		left: 0,
+		right: 0,
+		position: relative,
+		height: {$min: [{$divide: [=view.width, =media.aspect]}, {$subtract:[=view.height, 220]}]}
+	},
+	#media_caption: {
+		padding: [0, 10]
+	},
 
 	#ad_inline_inner: {
 		pixels-per-point-x: 1,

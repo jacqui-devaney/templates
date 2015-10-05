@@ -14,18 +14,6 @@
 			padding: [0, 10, 0, 10],
 			flow: article_body
 		},
-		#media: {
-			top: 0,
-			left: 0,
-			right: 0,
-			position: relative
-		},
-		#media_asset: {
-			height: {$min: [{$divide: [=view.width, =media.aspect]}, {$subtract:[=view.height, 220]}]}
-		},
-		#media_caption: {
-			padding: [0, 10]
-		},
 		#header_top: {padding:[5,10,5,10]},
 		.article_body: {
 			line-height: {$multiply: [22, =view.zoomlevel]},
@@ -39,11 +27,16 @@
 		}
 	}</style>
 
+    <box id="prototype">
+        <box id="media-item-prototype">
+            <box id="media_asset" embed="media"/>
+            <p id="media_caption"><mark id="mark_caption" /></p>
+        </box>
+    </box>
+
 	<p class="article_flashline" embed="flashline"/>
-	<box id="media">
-		<box id="media_asset" embed="media"/>
-		<p id="media_caption"><mark id="mark_caption" /></p>
-	</box>
+	<panel class="media-item" embed="media-item" />
+	
 	<panel id="header_top">
 		<p class="article_headline"><span embed="headline"/></p>
 		<h2 class="article_subhed" embed="subhed" />

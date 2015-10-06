@@ -27,15 +27,9 @@
 		}
 	}</style>
 
-    <box id="prototype">
-        <box id="media-item-prototype">
-            <box id="media_asset" embed="media"/>
-            <p id="media_caption"><mark id="mark_caption" /></p>
-        </box>
-    </box>
-
 	<p class="article_flashline" embed="flashline"/>
-	<panel class="media-item" embed="media-item" />
+	<box id="media_asset" embed="media"/>
+    <p id="media_caption"><mark id="mark_caption" /></p>
 	
 	<panel id="header_top">
 		<p class="article_headline"><span embed="headline"/></p>

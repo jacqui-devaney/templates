@@ -15,9 +15,24 @@
 		{#body_continuation: {
 			content: from-flow(article_body),
 			flow: article_body
+		}},
+		{#media_cpation_container: {
+            padding: [5, 0, 10, 0]
+		}},
+		{#media_asset: {
+            padding: [0, 0]
 		}}
 		]
     }</style>
+
+    <box id="prototype">
+        <box id="media-item-prototype">
+        	<box id="media_cpation_container">
+	            <box id="media_asset" embed="media"/>
+	            <p id="media_caption"><mark id="mark_caption" /></p>
+	        </box>
+        </box>
+    </box>
 
 	<panel id="body_container">
     	<panel class="article_body" id="body_continuation" embed="body" />

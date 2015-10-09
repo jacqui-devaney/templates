@@ -16,18 +16,21 @@
 			content: from-flow(article_body),
 			flow: article_body
 		}},
-		{#media_cpation_container: {
+		{#media_container: {
             padding: [5, 0, 10, 0]
 		}},
 		{#media_asset: {
-            padding: [0, 0]
+            padding: [0, 0, 6, 0]
+		}},
+		{#media_caption: {
+			padding: [0, 0]
 		}}
 		]
     }</style>
 
     <box id="prototype">
         <box id="media-item-prototype">
-        	<box id="media_cpation_container">
+        	<box id="media_container">
 	            <box id="media_asset" embed="media"/>
 	            <p id="media_caption"><mark id="mark_caption" /></p>
 	        </box>

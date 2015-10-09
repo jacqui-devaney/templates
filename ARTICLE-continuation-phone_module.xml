@@ -23,7 +23,8 @@
             padding: [0, 0, 6, 0]
 		}},
 		{#media_caption: {
-			padding: [0, 0]
+			padding: [0, 0],
+			text-indent: 0
 		}}
 		]
     }</style>

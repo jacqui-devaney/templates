@@ -128,9 +128,7 @@
 				#latest_news_mark: {
 					content: {
 						$switch: [
-							{ if: =page.section, equals: CIO, then: "Latest Technology News" },
-							{ if: =page.section, equals: CFO, then: "Latest Finance News" },
-							{ if: =page.section, equals: RISK_AND_COMPLIANCE, then: "Latest News" }
+							{ if: =page.section, equals: CMO_TODAY, then: "Latest Finance News" }
 						]
 					}
 				},
@@ -395,10 +393,10 @@
 			font-size:14
 		},
 		#sponsored_subhed_mark: {
-			content: "CMO Today from Adobe"
+			content: "Insight written and compiled by Adobe"
 		},
 		#sponsoredimage: {
-			background-image: "url(adobe@2x.png)",
+			background-image: "url(Adobe@2x.png)",
 			position: relative,
 			background-position: aspect-fit,
 			left: 0,

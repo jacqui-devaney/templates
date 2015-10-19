@@ -1,0 +1,37 @@
+<jpml id="ARTICLE-adobe-continuation_template">
+    <style src="GLOBAL-stylesheet.ejs"/>
+    <style src="GRID-stylesheet.ejs"/>
+    <style src="adobe-stylesheet.ejs" />
+    <style>{
+        #page_details: {
+            options: {
+                hideHeaderBorder: true,
+                tintTitle: true
+            }
+        }
+    }</style>
+    <style>{
+        #view: {
+            top:0,
+            bottom:44
+        }
+    }</style>
+    <style>{
+        jpml: {
+            background-color: =color.background,
+            padding: [64, 0, 0, 0]
+        },
+        #view: {
+            options: {
+                background_color: =color.background
+            },
+            padding: [40, 0, 0, 0]
+        }
+    }</style>
+    <box id="page_details" embed="pagedescription" />
+    <panel id="adobe_strap">
+        <box class="adobe_strap_image"/>
+        <p id="adobe_strap_p"><mark id="deloitte_strap_mark"/></p>
+    </panel>
+    <box id="view" embed="article" class="column16-12 positionx1" module="ARTICLE-adobe-continuation_module.xml" />
+</jpml>

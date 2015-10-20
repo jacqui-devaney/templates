@@ -1,7 +1,7 @@
 <jpml id="ARTICLE-ups-front_template">
 	<style src="GLOBAL-stylesheet.ejs"/>
     <style src="GRID-stylesheet.ejs"/>
-    <style src="ups-stylesheet.ejs" />
+    <style src="UPS-stylesheet.ejs" />
     <style>{
         #page_details: {
             options: {

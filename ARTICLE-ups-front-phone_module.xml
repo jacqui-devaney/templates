@@ -1,9 +1,9 @@
-<jpml id="ARTICLE-ups-front-phone_module">
+<jpml id="ARTICLE-UPS-front-phone_module">
 	<style src="GLOBAL-stylesheet.ejs" />
 	<style src="GLOBAL_MODULES-stylesheet.ejs" />
 	<style src="ARTICLE-stylesheet.ejs" />
 	<style src="PHONE-MODULES-stylesheet.ejs" />
-	<style src="ups-stylesheet.ejs" />
+	<style src="UPS-stylesheet.ejs" />
 	<style>{
 		jpml: {
 			background-color: =options.background_color
@@ -82,7 +82,7 @@
 		.border-mark: {
 			line-height: 1,
 			color: transparent,
-			content: "ups"
+			content: "sponsored"
 		}
 	}</style>
 	<box id="media">
@@ -96,7 +96,7 @@
 	</panel>
 
 	<panel id="body_container">
-		<p class="module_flashline">CONTENT FROM OUR SPONSOR</p>
+        <p class="module_flashline">CONTENT FROM OUR SPONSOR</p>
 		<p class="article_pubdate">Updated
 			<span  embed="pubdate-string"/>
 		</p>

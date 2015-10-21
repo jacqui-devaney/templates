@@ -405,7 +405,7 @@
 		},
 		#sponsored_list: {
 			background-color: #f6f8f9,
-            height:{if: =landscape, then:520, else:800},
+            height:{if: =landscape, then:550, else:800},
 			top: 100,
 			options: {
 				shadow_height: 40,

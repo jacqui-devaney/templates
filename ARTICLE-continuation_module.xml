@@ -52,18 +52,7 @@
 		]
     }</style>
 	<style>{
-		if-any: [
-			=page.hasad,
-			{if: =page.number, equals: 2},
-			{if-all: [
-				{if: =page.sentinel.width, more-than: 0},
-				{if: =page.sentinel.left, more-than: 0},
-				{if: =page.sentinel.left, less-than: 
-					{if: =portrait, then: 256, else: 512}
-				}
-			], then: true}
-		],
-		then: {
+		if: =page.hasad, then: {
 			#media: {
 				display: none
 			},

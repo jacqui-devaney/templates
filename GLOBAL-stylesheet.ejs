@@ -29,6 +29,13 @@
 
 	#body-first-media: {
 	    display: none
-	}
+	},
 
+	#page_details: {
+		display: { if: =scale.tablet, then: inherit, else: none },
+		frame: [0, 0, 10, 10],
+		options: {
+			tintTitle: true
+		}
+	}
 }

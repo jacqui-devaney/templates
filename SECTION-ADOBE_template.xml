@@ -394,10 +394,10 @@
 			background-image: "url(CMO-module@2x.png)",
 			position: relative,
 			background-position: aspect-fit,
-            top: {if: =scale.tablet, then:20, else:5},
+            top: {if: =scale.tablet, then:20, else:10},
 			left: 10,
 			right: 0,
-			height: 85,
+            height: {if: =scale.phone, then:95, else:83},
             width: {if: =scale.phone, then:220, else:200},
             anchor-x: {if: =scale.tablet, then:center}
             },

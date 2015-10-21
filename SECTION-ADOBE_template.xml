@@ -397,8 +397,8 @@
             top: {if: =scale.tablet, then:20, else:10},
 			left: 10,
 			right: 0,
-            height: {if: =scale.phone, then:95, else:83},
-            width: {if: =scale.phone, then:220, else:200},
+            height: 83,
+            width: 200,
             anchor-x: {if: =scale.tablet, then:center}
             },
 		#sponsored_list: {

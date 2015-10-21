@@ -114,7 +114,7 @@
 					font-name: "Whitney-Semibold",
 					font-size: 14,
 					line-height: 14,
-					padding: [0,0,10,0]
+                    padding: [0,0,10,0]
 				},
 				#sponsored_subhed: {
 					font-name: "Whitney-Medium",
@@ -364,7 +364,7 @@
 			},
 			#sponsored-content: {
 				font-name: "Whitney-Semibold",
-				padding: [12,0,12,0]
+                padding: [12,0,12,0]
 			},
 			#sponsored_subhed: {
 				font-name: "Whitney-Medium",
@@ -379,9 +379,7 @@
 			#latest_news_mark: {
 				content: {
 					$switch: [
-						{ if: =page.section, equals: CIO, then: "LATEST TECHNOLOGY NEWS" },
-						{ if: =page.section, equals: CFO, then: "LATEST FINANCE NEWS" },
-						{ if: =page.section, equals: RISK_AND_COMPLIANCE, then: "LATEST NEWS" }
+						{ if: =page.section, equals: LOGISTICS, then: "FEATURED" }
 					]
 				}
 			}
@@ -389,28 +387,26 @@
 	}</style>
 	<style>{
 		#sponsoredheader: {
-			background-color: #e8eeee,
+		    background-color: #e6e5df,
 			text-align:center,
 			color: #333333,
 			font-size:14
 		},
-		#sponsored_subhed_mark: {
-			content: "Logistics Report Today from UPS"
-		},
 		#sponsoredimage: {
-			background-image: "url(UPS-module@2x.png)",
 			position: relative,
+            background-image: "url(UPS-module@2x.png)",
 			background-position: aspect-fit,
 			left: 0,
 			right: 0,
-			height: 20,
-			width: 103,
+            top: 20,
+			height: 75,
+			width: 200,
 			anchor-x: center
 		},
 		#sponsored_list: {
-			background-color: #e8eeee,
-			height:{if: =landscape, then:520, else:770},
-			top: 130,
+			background-color: #f6f8f9,
+            height:{if: =landscape, then:520, else:800},
+			top: 100,
 			options: {
 				shadow_height: 40,
 				shadow_color: "rgba(.2, .2, .2, 0.5)"
@@ -427,7 +423,6 @@
 	<box id="b2" embed="article" class="column6-8 positionx1 maude unit_plain unit_166" module="RIGHT-IMAGE_module.xml" />
 
 	<box id="sponsoredheader" class="column4 positionx13-9 maude unit_plain">
-        <p id="sponsored-content">CONTENT FROM OUR SPONSOR</p>
 		<panel id="sponsoredimage-panel"><box id="sponsoredimage" /></panel>
 		<p id="sponsored_subhed"><mark id="sponsored_subhed_mark" /></p>
 	</box>

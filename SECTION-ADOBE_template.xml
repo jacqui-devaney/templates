@@ -377,9 +377,7 @@
 			#latest_news_mark: {
 				content: {
 					$switch: [
-						{ if: =page.section, equals: CIO, then: "LATEST TECHNOLOGY NEWS" },
-						{ if: =page.section, equals: CFO, then: "LATEST FINANCE NEWS" },
-						{ if: =page.section, equals: RISK_AND_COMPLIANCE, then: "LATEST NEWS" }
+						{ if: =page.section, equals: CMO, then: "FEATURED" }
 					]
 				}
 			}
@@ -387,28 +385,26 @@
 	}</style>
 	<style>{
 		#sponsoredheader: {
-			background-color: #e8eeee,
+		    background-color: #f6f8f9,
 			text-align:center,
 			color: #333333,
 			font-size:14
 		},
-		#sponsored_subhed_mark: {
-			content: "Insight written and compiled by Adobe"
-		},
 		#sponsoredimage: {
-			background-image: "url(Adobe@2x.png)",
+			background-image: "url(CMO-module@2x.png)",
 			position: relative,
 			background-position: aspect-fit,
+            top: 20,
 			left: 0,
 			right: 0,
-			height: 20,
-			width: 103,
+			height: 110,
+			width: 200,
 			anchor-x: center
 		},
 		#sponsored_list: {
 			background-color: #e8eeee,
-			height:{if: =landscape, then:520, else:770},
-			top: 130,
+			height:{if: =landscape, then:520, else:780},
+			top: 120,
 			options: {
 				shadow_height: 40,
 				shadow_color: "rgba(.2, .2, .2, 0.5)"
@@ -425,7 +421,6 @@
 	<box id="b2" embed="article" class="column6-8 positionx1 maude unit_plain unit_166" module="RIGHT-IMAGE_module.xml" />
 
 	<box id="sponsoredheader" class="column4 positionx13-9 maude unit_plain">
-		<p id="sponsored-content">CONTENT FROM OUR SPONSOR</p>
 		<panel id="sponsoredimage-panel"><box id="sponsoredimage" /></panel>
 		<p id="sponsored_subhed"><mark id="sponsored_subhed_mark" /></p>
 	</box>

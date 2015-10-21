@@ -2,7 +2,7 @@
 	<style src="GLOBAL-stylesheet.ejs"/>
 	<style src="GLOBAL_MODULES-stylesheet.ejs" />
 	<style src="ARTICLE-stylesheet.ejs" />
-	<style src="ups-stylesheet.ejs" />
+	<style src="UPS-stylesheet.ejs" />
 	<style>{
 		jpml: {
 			background-color: =options.background_color

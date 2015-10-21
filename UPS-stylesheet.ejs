@@ -25,7 +25,8 @@
 		content: "CONTENT FROM OUR SPONSOR"
 	},
 	.sponsored_strap_image:{
-		background-image: "url(sponsored@2x.png)",
+        background-image: "url(UPS-module@2x.png)",
+        position: relative,
 		background-position: aspect-fit,
 		top: 10,
 		left: 0,
@@ -36,7 +37,7 @@
 	#sponsored_list: {
 		min-height: 0,
 		max-height: 10000,
-		background-color: #e8eeee
+		background-color: #e6e5df
 	},
 
 	#sponsored_inner: {
@@ -44,25 +45,25 @@
 	},
 
 	#sponsored_phone: {
-		background-color: #e8eeee,
+		background-color: #e6e5df,
 		padding: [0, 10]
 	},
 
 	.sponsored_item: {
 		padding: { if: =scale.phone, then: [15, 0, 14.5, 0], else: [20, 0, 19.5, 0] },
 		border-width: [0, 0, 0.5, 0],
-		border-color: #979797
+		border-color: #e3e4e3
 	},
 
 	.sponsored_item_first: {
 		if: =scale.phone, then: {
 			padding: [14.5, 0, 14.5, 0],
 			border-width: [0.5, 0, 0.5, 0],
-			border-color: #979797
+			border-color: #e3e4e3
 		}, else: {
 			padding: [14.5, 0, 19.5, 0],
 			border-width: [0.5, 0, 0.5, 0],
-			border-color: #979797
+			border-color: #e3e4e3
 		}
 	},
 
@@ -75,14 +76,14 @@
 		font-name: "Whitney-Medium",
 		font-size: 20,
 		line-height: 25,
-		color: #10427E,
+		color: #351c15,
 		padding: [0, 0, 5, 0]
 	},
 	.sponsored_summary: {
 		font-name: "Whitney-Book",
 		font-size: { if: =scale.phone, then: 16, else: 14 },
 		line-height: { if: =scale.phone, then: 25, else: 18 },
-		color: #222221
+		color: #333333
 	},
 
 	.body-last-p-mark: {
@@ -137,7 +138,7 @@
 		layout-grid-line: 0,
 		layout-grid-line-offset: 0,
 		background-color: transparent,
-		border-color: #D8D8D8
+		border-color: #FFFFFF
 	},
 
 	.sponsored-divider-mark: {

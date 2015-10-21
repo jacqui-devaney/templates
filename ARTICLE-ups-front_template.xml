@@ -31,7 +31,6 @@
 	}</style>
     <box id="page_details" embed="pagedescription" />
     <panel id="ups_strap">
-        <box class="ups_strap_image"/>
         <p id="ups_strap_p"><mark id="ups_strap_mark"/></p>
     </panel>
     <box id="view" embed="article" class="column16-12 positionx1" module="ARTICLE-ups-front_module.xml" />

@@ -1,7 +1,7 @@
 <jpml id="ARTICLE-ups-front-phone_template">
 	<!-- GLOBAL not included -->
 	<style src="PHONE-stylesheet.ejs" />
-    <style src="ups-stylesheet.ejs" />
+    <style src="UPS-stylesheet.ejs" />
 	<style>{
 		#view: {
 			width:=view.width,

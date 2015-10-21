@@ -31,7 +31,7 @@
     <box id="page_details" embed="pagedescription" />
     <panel id="adobe_strap">
         <box class="adobe_strap_image"/>
-        <p id="adobe_strap_p"><mark id="deloitte_strap_mark"/></p>
+        <p id="adobe_strap_p"><mark id="adobe_strap_mark"/></p>
     </panel>
     <box id="view" embed="article" class="column16-12 positionx1" module="ARTICLE-adobe-continuation_module.xml" />
 </jpml>

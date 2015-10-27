@@ -393,8 +393,8 @@
 			font-size:14
 		},
 		#sponsoredimage: {
-			position: relative,
             background-image: "url(UPS-module@2x.png)",
+			position: relative,
 			background-position: aspect-fit,
 			left: 0,
 			right: 0,

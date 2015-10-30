@@ -1,0 +1,73 @@
+<jpml id="ARTICLE-adobe-continuation_module">
+	<style src="GLOBAL-stylesheet.ejs"/>
+	<style src="GLOBAL_MODULES-stylesheet.ejs" />
+	<style src="GRID-stylesheet.ejs" />
+	<style src="ADVERTISING-stylesheet.ejs" />
+	<style src="ARTICLE-stylesheet.ejs" />
+	<style src="ADOBE-stylesheet.ejs" />
+	<style>{
+		jpml:{
+			background-color: =options.background_color
+		}
+	}</style>
+	<style>{
+
+		$join: [
+		{#body_container : {
+			min-height:200,
+			padding:[20, 0, 0, 0]
+		}},
+		{.article_body: {
+            column-count: { if: =portrait, then: 3, else: 4},
+            column-gutter: 12,
+			layout-grid-line: {$multiply: [20, =view.zoomlevel]},
+			layout-grid-line-offset: {$multiply: [20, =view.zoomlevel]},
+			font-name: "Whitney-Medium",
+			color: #222222
+        }},
+
+		{#body_continuation: {
+			content: from-flow(article_body),
+			flow: article_body
+		}},
+
+		{#media_caption:{
+			font-name: "Whitney-Medium",
+			font-size: 12,
+			color: #666666
+		}},
+
+		{if: =portrait, then: {
+			#media: {
+				top: 0,
+				left:{if: =media.width, less-than: 360, then: 0, else: {if: =media.width, more-than: 484, then: 0, else: 0}},
+				width: {$switch: [
+					{if: =media.width, less-than: 360, then: 236},
+					{if: =media.width, more-than: 484, then: 484},
+					236
+				]}
+			}
+        }, else: {
+			#media: {
+				top: 0,
+				left:{if: =media.width, less-than: 360, then: 248, else: {if: =media.width, more-than: 484, then: 248, else: 248}},
+				width: {$switch: [
+					{if: =media.width, less-than: 360, then: 236},
+					{if: =media.width, more-than: 484, then: 484},
+					236
+				]}
+			}
+        }}
+		]
+    }</style>
+
+    <panel id="body_container">
+		<box id="media">
+			<box id="media_asset" embed="media"/>
+			<p id="media_caption"><mark id="mark_caption" /></p>
+		</box>
+		<panel class="article_body">
+			<panel id="body_continuation" embed="body"/>
+		</panel>
+    </panel>
+</jpml>

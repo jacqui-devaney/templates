@@ -1,0 +1,22 @@
+<jpml id="ARTICLE-ups-front-phone_template">
+	<!-- GLOBAL not included -->
+	<style src="PHONE-stylesheet.ejs" />
+    <style src="UPS-stylesheet.ejs" />
+	<style>{
+		#view: {
+			width:=view.width,
+			height:{$multiply: [2, =view.height]},
+			options: {
+				indent: true
+			}
+		},
+		#ups_strap:{
+			padding: [0, 12, 0, 12]
+		}
+	}</style>
+    <panel id="ups_strap">
+        <box class="ups_strap_image"/>
+        <p id="ups_strap_p"><mark id="ups_strap_mark"/></p>
+    </panel>
+    <box id="view" embed="article" class="maude" module="ARTICLE-ups-front-phone_module.xml" />
+</jpml>

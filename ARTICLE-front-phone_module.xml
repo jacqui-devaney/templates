@@ -3,6 +3,7 @@
 	<style src="GLOBAL_MODULES-stylesheet.ejs" />
 	<style src="ARTICLE-stylesheet.ejs" />
 	<style src="PHONE-MODULES-stylesheet.ejs" />
+	<style src="MEDIA-stylesheet.ejs" />
 	<style>{
 		jpml: {
 			background-color: =options.background_color
@@ -28,9 +29,15 @@
 	}</style>
 
 	<p class="article_flashline" embed="flashline"/>
-	<box id="media_asset" embed="media"/>
-    <p id="media_caption"><mark id="mark_caption" /></p>
-	
+	<box id="media_container">
+		<p id="media_title"><mark id="mark_media_title"/></p>
+		<p id="media_vr_header"><mark id="mark_media_vr_header"/></p>
+        <box id="media_asset" embed="media"/>
+		<p id="media_vr_footer"><mark id="mark_media_vr_footer"/></p>
+        <p id="media_caption"><mark id="mark_caption" /></p>
+        <p id="media_vr_link"><a class="http://wsj.com/virtual-reality"><mark id="mark_media_vr_link"/></a></p>
+    </box>
+
 	<panel id="header_top">
 		<p class="article_headline"><span embed="headline"/></p>
 		<h2 class="article_subhed" embed="subhed" />

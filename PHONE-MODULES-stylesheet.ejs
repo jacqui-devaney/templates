@@ -162,9 +162,6 @@
 		background-color: #e1e0df,
 		border-color:white
 	},
-	#media: {
-		display: {if: =page.hasmedia, then:inherit, else:none}
-	},
 	.opinion_headline: {
 		font-size:18,
 		line-height:25,
@@ -213,15 +210,6 @@
 	.body-panel: {
 		page-break-after: always
 	},
-
-	#media_asset: {
-		top: 0,
-		height: {$min: [{$divide: [=view.width, =media.aspect]}, {$subtract:[=view.height, 220]}]}
-	},
-	#media_caption: {
-		padding: [0, 10]
-	},
-
 	#ad_inline_inner: {
 		pixels-per-point-x: 1,
 		pixels-per-point-y: 1,

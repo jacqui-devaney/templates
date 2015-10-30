@@ -118,42 +118,5 @@
 	    hyphens: none,
 	    color: transparent,
 		content: "TWTR-TWTR-"
-	},
-	#media: {
-		display: {if: =page.hasmedia, then: inherit, else: none},
-		padding: [0, 0, 5, 0]
-	},
-	#media_caption: {
-		layout-grid-line: 1,
-		layout-grid-line-offset: 0,
-        color: #212121,
-        font-size: 11,
-        line-height: 15,
-        font-name: "DJ5Exchange-Medium",
-        border-width: [0, 0, 1, 0],
-        border-color: #d8d8d8
-	},
-	#mark_caption: {
-		content: =media.caption
-	},
-	#media_asset: {
-		position: relative,
-		left: 0,
-		right: 0,
-		height: {$min: [{$max: [{$switch: [
-			{if: =media.width, less-than: 360, then: {$divide: [236, =media.aspect]}},
-			{if: =media.width, more-than: 484, then: {$divide: [484, =media.aspect]}},
-			{$divide: [236, =media.aspect]}
-		]}, {$multiply: [.1, =view.height]}]}, {$multiply: [.69, =view.height]}]},
-		options: {
-			id: {
-				if: =page.mediaindex,
-				at-least: 0,
-				then: =page.mediaindex,
-				else: =page.number
-			},
-			hideCaption: true
-		},
-		padding: [0, 0, 8, 0]
 	}
 }

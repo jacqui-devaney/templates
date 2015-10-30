@@ -4,6 +4,7 @@
 	<style src="ARTICLE-stylesheet.ejs" />
 	<style src="PHONE-MODULES-stylesheet.ejs" />
 	<style src="DELOITTE-stylesheet.ejs" />
+	<style src="MEDIA-stylesheet.ejs" />
 	<style>{
 		jpml: {
 			background-color: =options.background_color

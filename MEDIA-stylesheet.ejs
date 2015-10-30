@@ -2,12 +2,10 @@
 	$join: [
 		{
 			#media_container: {
+				display: {if: =page.hasmedia, then: inherit, else: none},
+				padding: {if: =scale.phone, then: [0, 0, 0, 0], else: [0, 0, 5, 0] },
 				position: relative,
 				layout-grid-line: 0
-			},
-			#media: {
-				display: {if: =page.hasmedia, then: inherit, else: none},
-				padding: [0, 0, 5, 0]
 			},
 			#media_asset: {
 				position: relative,

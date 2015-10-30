@@ -16,7 +16,7 @@
 			padding: [0, 10, 0, 10],
 			flow: article_body
 		},
-		#media: {
+		#media_container: {
 			top: 0,
 			left: 0,
 			right: 0,
@@ -86,7 +86,7 @@
 			content: "deloitte"
 		}
 	}</style>
-	<box id="media">
+	<box id="media_container">
 		<box id="media_asset" embed="media"/>
 		<p id="media_caption"><mark id="mark_caption" /></p>
 	</box>

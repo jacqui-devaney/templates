@@ -30,7 +30,7 @@
 		}},
 
 		{if: =portrait, then: {
-			#media: {
+			#media_container: {
 				top: 0,
 				left:{if: =media.width, less-than: 360, then: 0, else: {if: =media.width, more-than: 484, then: 0, else: 0}},
 				width: {$switch: [
@@ -40,7 +40,7 @@
 				]}
 			}
         }, else: {
-			#media: {
+			#media_container: {
 				top: 0,
 				left:{if: =media.width, less-than: 360, then: 248, else: {if: =media.width, more-than: 484, then: 248, else: 248}},
 				width: {$switch: [
@@ -65,7 +65,7 @@
 			], then: true}
 		],
 		then: {
-			#media: {
+			#media_container: {
 				display: none
 			},
 			.article_body: {
@@ -83,7 +83,7 @@
 		<box id="article_advertisement">
 			<box id="skyscraper_ad" class="ad-skyscraper" embed="advertisement" />
 		</box>
-		<box id="media">
+		<box id="media_container">
 			<box id="media_asset" embed="media"/>
 			<p id="media_caption"><mark id="mark_caption" /></p>
 		</box>

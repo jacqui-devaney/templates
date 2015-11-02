@@ -87,10 +87,18 @@
 				color: #4f5757
 			},
 			#mark_media_vr_footer: {
-				content: "TILT & ROTATE TO LOOK AROUND"
+				content: "PLAY VIDEO THEN TILT & TURN TO LOOK AROUND"
 			},
 			#media_vr_link: {
-				display: {if: =page.number, equals: 0, then: none}
+		        font-size: 11,
+		        line-height: 15,
+		        font-name: "DJ5Exchange-Medium",
+				padding: { if-all: [
+						{ if: =page.number, equals: 0, then: true, else: false },
+						{ if: =scale.phone, then: true, else: false }
+					], then: [6, 10, 0, 10], else: [6, 0, 0, 0]
+				},
+				text-indent: 0
 			},
 			#mark_media_vr_link: {
 				font-size: 12,

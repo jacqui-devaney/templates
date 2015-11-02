@@ -64,7 +64,7 @@
 				content: =media.caption
 			}
 		},
-		{if: true, else: {}, then: {
+		{if: =media.caption, starts-with: "vrvideo_", then: {
 			#media_vr_header: {
 				padding: [10, 0, 6, 0],
 				font-name: "Whitney-Semibold",
@@ -105,6 +105,6 @@
 				text-indent: 0,
 				content: "Learn more about WSJ virtual reality \u00BB"
 			}
-		}}
+		}, else: {}}
 	]
 }

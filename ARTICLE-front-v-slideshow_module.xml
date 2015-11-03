@@ -11,7 +11,7 @@
 			options: {
 				id: =page.number,
 				hideCaption: true
-			}			
+			}
 		},
 		.module_flashline: {
 			display: { if: =page.section, equals: WSJ_MAGAZINE, else: none },
@@ -39,7 +39,7 @@
 			font-size: 11,
 			line-height: 16,
 			color: white,
-			padding: [12]
+            padding: [0, 16, 0, 16]
 		},
 		#body_container: {
 			padding: [0, 0, 0, 12]

@@ -17,9 +17,8 @@
 			}},
 			{if: =portrait, then: {
 				#deco:	{
-					top:0,
 					height:380,
-					options:{bind: {if: =articles.deco.no_binding, then: none}, medium_headline:true, show_image:true}
+                    options:{bind: {if: =articles.deco.no_binding, then: none}, medium_headline:true, show_image:true}
 				},
 				#b1:	{
 					top: 386,

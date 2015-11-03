@@ -11,30 +11,32 @@
 	<style>{
 		jpml: { min-height: 0 },
 		#body_container: {
-			padding: [0, 10, 0, 10],
+			padding: [0, 16, 0, 16],
 			flow: article_body
 		},
-		#header_top: {padding:[5,10,5,10]},
+		#header_top: {padding:[5,16,5,16]},
 		.article_body: {
 			line-height: {$multiply: [22, =view.zoomlevel]},
 			text-align: justify,
 			hyphens: auto
 		},
 		.article_flashline: {
-			padding: [14, 0, 8.5, 0],
-			border-width: [0, 0, 0.5, 0],
-			border-color: #e1e0df
+            font-name: Whitney-Semibold,
+            font-size: 13,
+            padding: [6,16,20,16],
+            line-height: 22,
+            border-width: [0, 0, 1, 0],
+            border-color: #e1e0df
 		}
 	}</style>
-
 	<p class="article_flashline" embed="flashline"/>
-	<box id="media_asset" embed="media"/>
-    <p id="media_caption"><mark id="mark_caption" /></p>
-	
 	<panel id="header_top">
 		<p class="article_headline"><span embed="headline"/></p>
 		<h2 class="article_subhed" embed="subhed" />
 	</panel>
+
+	<box id="media_asset" embed="media"/>
+    <p id="media_caption"><mark id="mark_caption" /></p>
 
 	<panel id="body_container">
 		<p class="article_byline" embed="byline"></p>

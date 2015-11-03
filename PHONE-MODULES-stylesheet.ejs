@@ -8,14 +8,16 @@
 		color:#948464
 	},
 	.module_summary: {
-		font-name: DJ5Exchange-Medium,
-		font-size: 16
+		font-name: Whitney-Book,
+		font-size:17,
+		line-height:22,
+		color:#a7afaf
 	},
 	.module_headline: {
 		$join: [
 			{
-				padding: [0, 0, 8, 0],
-				font-name: "DJ5Exchange-Semibold",
+				padding: [0, 2.5, 11, 2.5],
+                font-name: Whitney-Semibold,
 				color:{if: =article.read, then: color.articleReadColor}
 			},
 			{
@@ -34,22 +36,21 @@
 		]
 	},
 	.body: {
-		text-indent:0,
 		font-size:16,
 		line-height:24,
 		color:{if: =article.read, then: color.articleReadColor}
 	},
 	.ahed_headline:{
-		font-size:20,
-		line-height:20,
+		font-size:17,
+		line-height:22,
 		padding:[0, 0, 0, 0],
 		text-overflow: =text.overflow,
-		font-name:DJ5EscrowCond-Bold,
+		font-name: Whitney-Book,
 		color:#333
 
 	},
 	.highlight_flashline: {
-		font-name:DJ5RetinaCd-Semibold,
+        font-name: Whitney-Semibold,
 		font-size:16,
 		line-height:18,
 		color:#656565,
@@ -66,6 +67,7 @@
 	},
 	.deco_caption: {
 		font-size:14,
+		padding: [0, 16, 22, 16],
 		line-height:14
 	},
 	#strap: {
@@ -84,7 +86,10 @@
 	.strap: {
 		font-size:15,
 		line-height:16,
-		text-transform:uppercase
+        text-transform:uppercase,
+        border-width: [0, 0, 0.5, 0],
+        border-color: #e1e0df
+
 	},
 	.highlight_flashline: {
 		font-size:14,
@@ -108,39 +113,42 @@
 		line-height:14
 	},
 	.article_flashline: {
-		font-size:15,
-		text-align: center,
-		font-name: "DJ5Exchange-Bold",
+		font-size:13,
+        line-height:22,
+        font-name: Whitney-Semibold,
+        color: #2fbfbf,
 		text-transform:uppercase,
-		padding: [10,0,0,0]
+        padding: [6,16,20,16],
+        border-width: [0, 0, 0.5, 0],
+        border-color: #e1e0df
 	},
 	.article_headline: {
-		font-size:23,
-		line-height:26,
-		font-name: "DJ5Exchange-Semibold",
-		padding: [10,0,10,0]
+		font-size:28,
+		line-height:32,
+		font-name: ChronicleDisplay-Bold
 	},
 	.article_subhed: {
+		font-name: Whitney-Book,
 		font-size:17,
-		line-height:20,
-		font-name: "DJ5Exchange-BoldItalic",
-		color: #5D5D5D
+		line-height:22,
+		color:#4f5757
 	},
 	.article_byline: {
-		font-name: "DJ5Exchange-Bold",
-		font-size:15,
-		line-height:20
+		font-name: Whitney-Book,
+		font-size:17,
+		line-height:22
 	},
 	.article_pubdate: {
-		font-name: "DJ5Exchange-Medium",
-		font-size:15,
-		line-height: 15
+		font-name: Whitney-Book,
+		font-size:13,
+        line-height:22,
+        color: #a7afaf
 	},
 	.article_body: {
-		font-size:{$multiply: [16, =view.zoomlevel]},
-		line-height:{$multiply: [20, =view.zoomlevel]},
-		font-name:"DJ5Exchange-Medium",
-		text-indent: 13
+		font-size:{$multiply: [15, =view.zoomlevel]},
+		line-height:{$multiply: [22, =view.zoomlevel]},
+        font-name: ChronicleDisplay-Roman,
+        padding: [0, 3.5, 11, 3.5]
 	},
 	.border-mark: {
 		line-height: 4,
@@ -148,9 +156,6 @@
 		content: "unfortunate"
 	},
 	.border-p:{
-		border-width:[10, 180, 10, 0],
-		background-color: #e1e0df,
-		border-color:white
 	},
 	.border-flashline-mark: {
 		line-height: 1,
@@ -158,9 +163,9 @@
 		content: "unfortunate"
 	},
 	.border-flashline:{
-		border-width:[0, 0, 0, 0],
+		border-width:[0, 0, 0.5, 0],
 		background-color: #e1e0df,
-		border-color:white
+		border-color:black
 	},
 	#media: {
 		display: {if: =page.hasmedia, then:inherit, else:none}
@@ -215,11 +220,11 @@
 	},
 
 	#media_asset: {
-		top: 0,
-		height: {$min: [{$divide: [=view.width, =media.aspect]}, {$subtract:[=view.height, 220]}]}
+        padding: [0, 4, 4, 4],
+		height: {$min: [{$divide: [=view.width, =media.aspect]}, {$subtract:[=view.height, 770]}]}
 	},
 	#media_caption: {
-		padding: [0, 10]
+		padding: [0, 16, 22, 16]
 	},
 
 	#ad_inline_inner: {

@@ -12,7 +12,7 @@
 			options: {
 				id: =page.number,
 				hideCaption: true
-			}			
+			}
 		},
 		.module_flashline: {
 			display: { if: =page.section, equals: WSJ_MAGAZINE, else: none },

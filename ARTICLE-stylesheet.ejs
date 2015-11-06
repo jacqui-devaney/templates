@@ -7,14 +7,14 @@
 		font-size: 28,
 		line-height:32,
 		color:#2b3333,
-		padding:[0, 0, 5, 0]
+		padding:[4, 0, 22, 0]
 	},
 	.article_subhed: {
 		font-name: Whitney-Book,
 		text-align:left,
-		font-size:28,
-		line-height:32,
-        color:#2b3333
+		font-size:17,
+		line-height:22,
+        color:#4f5757
 	},
 	.module_flashline: {
         font-name: Whitney-Semibold,
@@ -68,9 +68,6 @@
 	cite: {
 		font-name:{if: =intent.article, then:ChronicleDisp-BlackItalic, else:ChronicleDisp-Black}
 	},
-	#mediabucket_container: {
-		display: {if: =page.mediabucket, then:inherit, else:none}
-	},
 	.byline-credit: {
 		display: {if-any: [
 			{if: =page.section, equals: "CIO", then:true},
@@ -117,15 +114,11 @@
 		line-height: 90
 	},
 	.tweet-mark: {
-		font-name: "HelveticaNeue",
+		font-name: "Whitney-Book",
 		font-size: 60,
 	    hyphens: none,
 	    color: transparent,
 		content: "TWTR-TWTR-"
-	},
-	#media: {
-		display: {if: =page.hasmedia, then: inherit, else: none},
-		padding: [4, 4, 4, 4]
 	},
 	#media_caption: {
         color: #4f5757,

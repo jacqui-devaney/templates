@@ -2,6 +2,7 @@
 	<style src="GLOBAL-stylesheet.ejs"/>
 	<style src="GLOBAL_MODULES-stylesheet.ejs" />
 	<style src="ARTICLE-stylesheet.ejs" />
+	<style src="MEDIA-stylesheet.ejs" />
 	<style>{
 		jpml: {
 			background-color: =options.background_color
@@ -26,7 +27,7 @@
 
 		}},
 		{if: =portrait, then: {
-			#media: {
+			#media_container: {
 				top: 0,
 				left: {if: =media.width, less-than: 360, then: 248, else: {if: =media.width, more-than: 484, then: 248, else: 248}},
 				width: {$switch: [
@@ -36,7 +37,7 @@
 				]}
 			}
         }, else: {
-			#media: {
+			#media_container: {
 				top: 0,
 				left: {if: =media.width, less-than: 360, then: 248, else: {if: =media.width, more-than: 484, then: 248, else: 248}},
 				width: {$switch: [
@@ -54,9 +55,13 @@
 	</panel>
 
 	<panel id="body_container">
-		<box id="media">
+		<box id="media_container">
+			<p id="media_title"><mark id="mark_media_title"/></p>
+			<p id="media_vr_header"><mark id="mark_media_vr_header"/></p>
 			<box id="media_asset" embed="media"/>
+			<p id="media_vr_footer"><mark id="mark_media_vr_footer"/></p>
 			<p id="media_caption"><mark id="mark_caption" /></p>
+			<p id="media_vr_link"><a href="http://wsj.com/virtual-reality"><mark id="mark_media_vr_link"/></a></p>
 		</box>
 		<p class="module_flashline" embed="flashline"/>
     	<p class="byline" embed="byline"/>

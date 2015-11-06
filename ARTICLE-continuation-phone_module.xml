@@ -3,6 +3,7 @@
 	<style src="GLOBAL_MODULES-stylesheet.ejs" />
 	<style src="ARTICLE-stylesheet.ejs" />
 	<style src="PHONE-MODULES-stylesheet.ejs" />
+	<style src="MEDIA-stylesheet.ejs" />
 	<style>{
 		$join: [
 		{jpml: { min-height: 0 }},
@@ -32,8 +33,12 @@
     <box id="prototype">
         <box id="media-item-prototype">
         	<box id="media_container">
+        		<p id="media_title"><mark id="mark_media_title"/></p>
+        		<p id="media_vr_header"><mark id="mark_media_vr_header"/></p>
 	            <box id="media_asset" embed="media"/>
+        		<p id="media_vr_footer"><mark id="mark_media_vr_footer"/></p>
 	            <p id="media_caption"><mark id="mark_caption" /></p>
+	            <p id="media_vr_link"><a href="http://wsj.com/virtual-reality"><mark id="mark_media_vr_link"/></a></p>
 	        </box>
         </box>
     </box>

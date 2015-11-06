@@ -59,7 +59,7 @@
 			{if-all: [
 				{if: =page.sentinel.width, more-than: 0},
 				{if: =page.sentinel.left, more-than: 0},
-				{if: =page.sentinel.left, less-than: 
+				{if: =page.sentinel.left, less-than:
 					{if: =portrait, then: 256, else: 512}
 				}
 			], then: true}
@@ -70,7 +70,7 @@
 			},
 			.article_body: {
 	            column-count: {if: =landscape, then:2, else:1},
-				padding:[0, 12, 0, 0]
+				padding:[0, 6, 0, 0]
 	        }
 	    },
 	    else: {

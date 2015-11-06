@@ -10,7 +10,7 @@
 		{#body_container : { padding: [0, 10, 0, 10]}},
 		{.article_body: {
 			line-height: {$multiply: [22, =view.zoomlevel]},
-			text-align: justify,
+			text-align: left,
 			hyphens: auto
         }},
 		{#body_continuation: {
@@ -18,7 +18,7 @@
 			flow: article_body
 		}},
 		{#media_container: {
-            padding: [5, 0, 10, 0]
+            padding: [4, 0, 0, 0]
 		}},
 		{#media_asset: {
             padding: [4, 4, 4, 4]

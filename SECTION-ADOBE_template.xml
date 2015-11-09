@@ -26,6 +26,12 @@
 				},
 
 				#b1: {
+                    height:{
+                        if: {$count:[=articles.b1.images.phone]},
+                        more-than: 0,
+                        then: 433,
+                        else: 255
+                    },
 					options: {
 						bind: {if: =articles.b1.no_binding, then: none},
 						module: url(TOP-IMAGE_module.xml),

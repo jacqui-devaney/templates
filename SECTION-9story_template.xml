@@ -214,7 +214,7 @@
                 height:{
                     if: {$count:[=articles.b1.images.phone]},
                     more-than: 0,
-                    then: 433,
+                    then: 458,
                     else: 255
                 },
 				options: {

@@ -42,17 +42,18 @@
 			then: {
 			},
 			else: {
-				vertical-align: middle
+                text-overflow: =text.overflow
 			}
 		},
+
 		#image_container: {
-			width: 111,
-			padding: [0, 0, 0, 8],
+            width: {if: =scale.phone, then:150, else: 183},
+			padding: [62, 0, 0, 8],
 			image-scale: 0.5,
 			anchor-x: right
 		},
 		image: {
-			height: 111
+            height: {if: =scale.phone, then:100, else: 122}
 		},
 		.key: {
 			display: {
@@ -71,6 +72,8 @@
     <style>{
     	if: =scale.phone, then: {
 			.module_headline: {
+				padding: [{if: =options.medium_headline, then: 12, else: 5}, 4, 0, 4],
+                width: 500,
 				padding: { if: =options.show_body, else: [4, 0, 0, 0] },
 				color:{if: =article.read, then: color.articleReadColor}
 			},

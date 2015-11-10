@@ -214,8 +214,8 @@
                 height:{
                     if: {$count:[=articles.b1.images.phone]},
                     more-than: 0,
-                    then: {$multiply: [=device.width, 1.139]},
-                    else: {$multiply: [=device.width, 0.6]}
+                    then: 458,
+                    else: 255
                 },
 				options: {
 					bind: {if: =articles.b1.no_binding, then: none},
@@ -230,7 +230,8 @@
 					show_body: true,
 					show_image: true,
 					smedium_headline: true,
-					background_color: =color.background
+                    background_color: =color.background,
+                    middle_align_text: true
 				}
 			},
 			#b3: {

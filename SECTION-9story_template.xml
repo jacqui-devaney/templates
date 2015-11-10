@@ -214,8 +214,8 @@
                 height:{
                     if: {$count:[=articles.b1.images.phone]},
                     more-than: 0,
-                    then: 458,
-                    else: 255
+                    then: {$multiply: [=device.width, 1.139]},
+                    else: {$multiply: [=device.width, 0.6]}
                 },
 				options: {
 					bind: {if: =articles.b1.no_binding, then: none},

@@ -221,12 +221,12 @@
             },
 
 			#b1: {
-                    options: {
-						bind: {if: =articles.b1.no_binding, then: none},
-						module: url(TOP-IMAGE_module.xml),
-						show_body: true,
-						medium_headline: true
-					}
+				options: {
+					bind: {if: =articles.b1.no_binding, then: none},
+					medium_headline:true,
+					show_image:true,
+					background_color: =color.background
+				}
 				},
 			#b2: {
 				options: {

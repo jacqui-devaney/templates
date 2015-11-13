@@ -42,10 +42,10 @@
 			then: {
 			},
 			else: {
-                text-overflow: =text.overflow
+				vertical-align: middle
 			}
 		},
-        #image_container: {
+		#image_container: {
 			width: 111,
 			padding: [0, 0, 0, 8],
 			image-scale: 0.5,
@@ -70,18 +70,7 @@
     }</style>
     <style>{
     	if: =scale.phone, then: {
-            #image_container: {
-                width: {if: =scale.phone, then:150, else: 183},
-                padding: [62, 0, 0, 8],
-                image-scale: 0.5,
-                anchor-x: right
-            },
-            image: {
-                height: {if: =scale.phone, then:100, else: 122}
-            },
 			.module_headline: {
-				padding: [{if: =options.medium_headline, then: 12, else: 5}, 4, 0, 4],
-                width: 500,
 				padding: { if: =options.show_body, else: [4, 0, 0, 0] },
 				color:{if: =article.read, then: color.articleReadColor}
 			},
@@ -131,3 +120,4 @@
         </panel>
 	</panel>
 </jpml>
+

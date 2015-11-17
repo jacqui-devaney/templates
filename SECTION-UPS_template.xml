@@ -33,7 +33,7 @@
                         }, else: {
                         if: {$count:[=articles.b1.images.phone]},
                         more-than: 0,
-                        then: {$multiply: [=view.width, 1.35]},
+                        then: {$multiply: [=view.width, 1.32]},
                         else: {$multiply: [=view.width, 0.6]}
                         }
                     },

@@ -75,7 +75,7 @@
                 height:{ if: =view.width, more-than: 320, then:{
                         if: {$count:[=articles.b1.images.phone]},
                         more-than: 0,
-                        then: {$multiply: [=view.width, 1.391]},
+                        then: {$multiply: [=view.width, 1.139]},
                         else: {$multiply: [=view.width, 0.6]}
                         }, else: 518
                     },

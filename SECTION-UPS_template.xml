@@ -25,12 +25,13 @@
 					display: none
 				},
 
-				#b1: {
-                    height:{
+                #b1 : {
+                    height:{ if: =view.width, more-than: 320, then:{
                         if: {$count:[=articles.b1.images.phone]},
                         more-than: 0,
-                        then: {$multiply: [=device.width, 1.139]},
-                        else: {$multiply: [=device.width, 0.6]}
+                        then: {$multiply: [=view.width, 1.139]},
+                        else: {$multiply: [=view.width, 0.6]}
+                        }, else: 418
                     },
 					options: {
 						bind: {if: =articles.b1.no_binding, then: none},
@@ -39,7 +40,6 @@
 						medium_headline: true
 					}
 				},
-
 				#b2: {
 					height: =size.continuation_height_large,
 					options: {

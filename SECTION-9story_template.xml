@@ -83,8 +83,8 @@
                         more-than: 0,
                         then: {$multiply: [=view.width, 1.32]},
                         else: {$multiply: [=view.width, 0.6]}
-                        }
-                    },
+                    }
+                },
 					options: { bind: {if: =articles.b1.no_binding, then: none}, show_body: true, medium_headline: true }
 				},
 				#b2 : {
@@ -119,7 +119,7 @@
 					height: =size.continuation_height_large,
 					options: { bind: {if: =articles.b9.no_binding, then: none}, show_body: true, small_headline: true }
 				}
-			},
+			}},
 			{if: =portrait, then: {
 				#b1:	{
 					top:30,
@@ -218,10 +218,8 @@
 		]
 	} </style>
 	<style>{
-		if: =scale.phone,
-		then: {
-
-		},
+        if: =scale.phone, then: {
+			},
 		else: {
             #page_details: {
                 display: none

@@ -20,22 +20,6 @@
     		display: {if: =page.section, equals: "TOP_NEWS", else: none},
     		position: relative
     	},
-        #b1 : {
-            height:{ if: =view.width, more-than: 320, then:{
-                    if: {$count:[=articles.b1.images.phone]},
-                    more-than: 0,
-                    then: {$multiply: [=view.width, 1.139]},
-                    else: {$multiply: [=view.width, 0.6]}
-                    }, else: {
-                    if: {$count:[=articles.b1.images.phone]},
-                    more-than: 0,
-                    then: {$multiply: [=view.width, 1.32]},
-                    else: {$multiply: [=view.width, 0.6]}
-                    }
-                },
-            options: { bind: {if: =articles.b1.no_binding, then: none}, show_body: true, medium_headline: true }
-        },
-
 		#b2 : {
 			height: =size.continuation_height_large,
 			options: { bind: {if: =articles.b2.no_binding, then: none}, show_body: true }
@@ -64,7 +48,7 @@
 	<box id="page_details" embed="pagedescription" />
 	<box id="ad_placeholder" class="ad-banner" embed="pagedescription" />
 	<box id="marketstrap" embed="marketstrap" />
-	<box id="b1" embed="article" class="column6-8 positionx1 maude unit_plain unit_418" module="TOP-IMAGE_module.xml" />
+	<box id="b1" embed="article" class="maude unit_plain" module="TOP-IMAGE_module.xml" />
 	<box id="b2" embed="article" class="maude unit_plain" module="CONTINUATION-dynamic_module.xml" />
 	<box id="b3" embed="article" class="maude unit_plain" module="CONTINUATION-dynamic_module.xml" />
 	<box id="b4" embed="article" class="maude unit_plain" module="CONTINUATION-dynamic_module.xml" />

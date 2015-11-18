@@ -72,12 +72,12 @@
 					display: none
 				},
 				#b1 : {
-                height:{
+                 height:{
                     if: =view.width, more-than: 320, then:{
                         if: {$count:[=articles.b1.images.phone]},
                         more-than: 0,
-                        then: {$multiply: [=device.width, 1.137]},
-                        else: {$multiply: [=device.width, 0.6]}
+                        then: {$multiply: [=view.width, 1.137]},
+                        else: {$multiply: [=view.width, 0.6]}
                         }, else: {
                         if: {$count:[=articles.b1.images.phone]},
                         more-than: 0,
@@ -218,13 +218,11 @@
 		]
 	} </style>
 	<style>{
-        if: =scale.phone, then: {
-			},
-		else: {
-            #page_details: {
-                display: none
-            },
+		if: =scale.phone,
+		then: {
 
+		},
+		else: {
 			#b1: {
 				options: {
 					bind: {if: =articles.b1.no_binding, then: none},
@@ -232,15 +230,14 @@
 					show_image:true,
 					background_color: =color.background
 				}
-				},
+			},
 			#b2: {
 				options: {
 					bind: {if: =articles.b2.no_binding, then: none},
 					show_body: true,
 					show_image: true,
 					smedium_headline: true,
-                    background_color: =color.background,
-                    middle_align_text: true
+					background_color: =color.background
 				}
 			},
 			#b3: {
@@ -495,7 +492,7 @@
 			</p>
 		</box>
 	</box>
-	<box id="b1" embed="article" class="column6-8 positionx1 maude unit_plain unit_418" module="TOP-IMAGE_module.xml" />
+	<box id="b1" embed="article" class="column8 positionx1 maude unit_plain unit_418" module="TOP-IMAGE_module.xml" />
 	<box id="b2" embed="article" class="column4 positionx9-1  maude unit_plain unit_166" module="TOP-IMAGE_module.xml" />
 	<box id="b3" embed="article" class="column4 positionx13-5 maude unit_plain unit_166" module="TOP-IMAGE_module.xml" />
 	<box id="b4" embed="article" class="column4 positionx1-9  maude unit_plain unit_50" module="CONTINUATION-dynamic_module.xml" />

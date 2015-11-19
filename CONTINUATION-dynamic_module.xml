@@ -70,24 +70,31 @@
     }</style>
     <style>{
     	if: =scale.phone, then: {
-			.module_headline: {
-				padding: { if: =options.show_body, else: [4, 0, 0, 0] },
-				color:{if: =article.read, then: color.articleReadColor}
-			},
-			#vertical: {
-				padding: [0, 0, 0, 24]
-			},
-			.body: {
-				padding: [0, 0, 0, 24]
-			},
-			#article_status: {
-				position: relative,
-				padding: [{if: =options.show_body, then: 1, else: 5}, 4, 0, 4],
-				top: 0,
-				left: -24,
-				width: 16,
-				height: 16,
-				options: {
+                .module_headline: {
+                    padding: { if: =options.show_body, else: [4, 0, 0, 0] },
+                    color:{if: =article.read, then: color.articleReadColor}
+                },
+                #image_container: {
+                    width: 156,
+                    padding: [52, 0, 0, 4],
+                    image-scale: 0.5,
+                    anchor-x: right
+                },
+                image: {
+                    height: 85
+                },
+                #vertical: {
+                    padding: [0, 0, 0, 24]
+                },
+                .body: {
+                    padding: [0, 0, 0, 24]
+                },
+                #article_status: {
+                    padding: [{if: =options.show_body, then: 1, else: 5}, 4, 0, 4],
+                    top: 0,
+                    left: -24,
+                    width: 16,
+                    options: {
 					identifier: =article.id
 				}
 			}
@@ -108,13 +115,13 @@
 		<p class="subsection"><mark id="m_subsection"/></p>
 	</panel>
 	<panel id="content">
-	 	<box id="image_container" embed="deco-image">
-			<image class="summary-image" />
-		</box>
 		<panel id="vertical">
 			<box id="article_status" embed="article-status"></box>
 			<p id="headline" class="module_headline"><mark class="m_headline" /><mark class="key" /></p>
 		</panel>
+	 	<box id="image_container" embed="deco-image">
+			<image class="summary-image" />
+		</box>
         <panel class="body">
         	<p id="body-first-p"><mark class="body-first-p-mark" /><mark class="module_summary" /></p>
         </panel>

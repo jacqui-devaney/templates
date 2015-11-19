@@ -47,10 +47,10 @@
 				image: {
 					pixels-per-point-x:1,
 					pixels-per-point-y:1,
-          image-scale: 1,
-          display: { if: =options.show_image, then:inherit, else:none },
-					height: {$multiply: [=view.width, .665 ]},
-					options: {
+                    image-scale: 1,
+                    display: { if: =options.show_image, then:inherit, else:none },
+                            height: {$multiply: [=view.width, .665 ]},
+                            options: {
 						$switch: [
 							{ if: =options.F_image, then: {match: { width:571, height:226, max-height:226 } } },
 							{ if: =options.OZ_image,then: {match: { width:570, height:612, min-height:612 } } },

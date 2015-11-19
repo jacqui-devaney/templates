@@ -71,17 +71,11 @@
     <style>{
     	if: =scale.phone, then: {
                 .module_headline: {
-                    padding: { if: =options.show_body, else: [4, 0, 0, 0] },
+                    padding: { if: =options.show_body, else: [4, 0, 4, 0] },
                     color:{if: =article.read, then: color.articleReadColor}
                 },
-                #image_container: {
-                    width: 156,
-                    padding: [52, 0, 0, 4],
-                    image-scale: 0.5,
-                    anchor-x: right
-                },
                 image: {
-                    height: 85
+                    height: 100
                 },
                 #vertical: {
                     padding: [0, 0, 0, 24]
@@ -90,14 +84,22 @@
                     padding: [0, 0, 0, 24]
                 },
                 #article_status: {
-                    padding: [{if: =options.show_body, then: 1, else: 5}, 4, 0, 4],
+                    padding: [{if: =options.show_body, then: 1, else: 5}, 4, 24, 4],
                     top: 0,
                     left: -24,
                     width: 16,
+                    height: -100,
                     options: {
 					identifier: =article.id
-				}
-			}
+                    }
+                },
+                #image_container: {
+                    width: 182,
+                    padding: [0, 0, 0, 4],
+                    image-scale: 1,
+                    anchor-x: right,
+                    position: relative
+                }
     	}, else: {
     		#strap: {
     			display: none

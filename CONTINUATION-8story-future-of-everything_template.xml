@@ -28,7 +28,7 @@
 					options: {
 						bind: {if: =articles.b1.no_binding, then: none},
 						top_image: true,
-						show_top_flashline: true,
+
 						show_body: true,
 						image_idiom: "portrait"
 					}
@@ -39,7 +39,7 @@
 					options: {
 						bind: {if: =articles.b1.no_binding, then: none},
 						top_image: true,
-						show_top_flashline: true,
+
 						show_body: true,
 						top_border: true,
 						image_idiom: "portrait"
@@ -52,7 +52,7 @@
 						bind: {if: =articles.b3.no_binding, then: none},
 						top_border: true,
 						squarish_image: true,
-						show_top_flashline: true,
+
 						show_body: true,
 						image_idiom: "portrait"
 					}
@@ -64,7 +64,7 @@
 						bind: {if: =articles.b4.no_binding, then: none},
 						top_border: true,
 						squarish_image: true,
-						show_top_flashline: true,
+
 						show_body: true,
 						image_idiom: "portrait"
 					}
@@ -76,7 +76,7 @@
 						bind: {if: =articles.b5.no_binding, then: none},
 						top_border: true,
 						squarish_image: true,
-						show_top_flashline: true,
+
 						show_body: true,
 						image_idiom: "portrait"
 					}
@@ -88,7 +88,7 @@
 						bind: {if: =articles.b6.no_binding, then: none},
 						top_border: true,
 						squarish_image: true,
-						show_top_flashline: true,
+
 						show_body: true,
 						image_idiom: "portrait"
 					}
@@ -99,7 +99,7 @@
 					options: {
 						bind: {if: =articles.b5.no_binding, then: none},
 						squarish_image: true,
-						show_top_flashline: true,
+
 						show_body: true,
 						image_idiom: "portrait"
 					}
@@ -111,7 +111,7 @@
 						bind: {if: =articles.b6.no_binding, then: none},
 						top_border: true,
 						squarish_image: true,
-						show_top_flashline: true,
+
 						show_body: true,
 						image_idiom: "portrait"
 					}
@@ -123,7 +123,7 @@
 					top:0,
 					options: {
 						bind: {if: =articles.b1.no_binding, then: none},
-						show_top_flashline: true,
+
 						show_body: true,
 						image_idiom: "landscape"
 					}
@@ -133,7 +133,7 @@
 					top:0,
 					options: {
 						bind: {if: =articles.b2.no_binding, then: none},
-						show_top_flashline: true,
+
 						show_body: true,
 						image_idiom: "landscape"
 					}
@@ -144,7 +144,7 @@
 					options: {
 						bind: {if: =articles.b3.no_binding, then: none},
 						top_image: true,
-						show_top_flashline: true,
+
 						show_body: true,
 						image_idiom: "landscape"
 					}
@@ -155,7 +155,7 @@
 					options: {
 						bind: {if: =articles.b4.no_binding, then: none},
 						top_image: true,
-						show_top_flashline: true,
+
 						show_body: true,
 						image_idiom: "landscape"
 					}
@@ -167,7 +167,7 @@
 						bind: {if: =articles.b5.no_binding, then: none},
 						top_image: true,
 						top_border: true,
-						show_top_flashline: true,
+
 						show_body: true,
 						image_idiom: "landscape"
 					}
@@ -179,7 +179,7 @@
 						bind: {if: =articles.b5.no_binding, then: none},
 						top_image: true,
 						top_border: true,
-						show_top_flashline: true,
+
 						show_body: true,
 						image_idiom: "landscape"
 					}
@@ -191,7 +191,7 @@
 						bind: {if: =articles.b5.no_binding, then: none},
 						top_image: true,
 						top_border: true,
-						show_top_flashline: true,
+
 						show_body: true,
 						image_idiom: "landscape"
 					}
@@ -203,7 +203,7 @@
 						bind: {if: =articles.b5.no_binding, then: none},
 						top_image: true,
 						top_border: true,
-						show_top_flashline: true,
+
 						show_body: true,
 						image_idiom: "landscape"
 					}

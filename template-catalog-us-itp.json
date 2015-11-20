@@ -398,22 +398,58 @@
         "title": "4 story - Future of Everything",
         "usage": "continuation",
         "boxes": [
-          {
+            {
             "id": "b1",
-            "images": {}
+            "images": {
+              "landscape": {
+                "width": 236,
+                "height": 274
+              },
+              "portrait": {
+                "width": 360,
+                "height": 240
+              }
+            }
           },
           {
             "id": "b2",
-            "images": {}
-          },
-          {
+            "images": {
+              "landscape": {
+                "width": 236,
+                "height": 287
+              },
+              "portrait": {
+                "width": 360,
+                "height": 240
+              }
+            }, 
+            {
             "id": "b3",
-            "images": {}
+            "images": {
+              "landscape": {
+                "width": 236,
+                "height": 274
+              },
+              "portrait": {
+                "width": 360,
+                "height": 240
+              }
+            }
           },
           {
             "id": "b4",
-            "images": {}
-          }
+            "images": {
+              "landscape": {
+                "width": 236,
+                "height": 287
+              },
+              "portrait": {
+                "width": 360,
+                "height": 240
+              }
+            }
+
+
         ]
       },
       {

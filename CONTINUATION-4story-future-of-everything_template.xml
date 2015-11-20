@@ -29,7 +29,7 @@
 						bind: {if: =articles.b1.no_binding, then: none},
 						large_headline: true,
 						top_image: true,
-						show_top_flashline: true,
+
 						show_body: true,
 						image_idiom: "portrait"
 					}
@@ -41,7 +41,7 @@
 						bind: {if: =articles.b2.no_binding, then: none},
 						large_headline: true,
 						top_image: true,
-						show_top_flashline: true,
+
 						show_body: true,
 						image_idiom: "portrait"
 					}
@@ -52,7 +52,7 @@
 					options: {
 						bind: {if: =articles.b3.no_binding, then: none},
 						large_headline: true,
-						show_top_flashline: true,
+
 						show_body: true,
 						image_idiom: "portrait"
 					}
@@ -64,7 +64,7 @@
 						bind: {if: =articles.b4.no_binding, then: none},
 						large_headline: true,
 						show_body: true,
-						show_top_flashline: true,
+
 						show_body: true,
 						image_idiom: "portrait"
 					}
@@ -77,7 +77,7 @@
 					options: {
 						bind: {if: =articles.b1.no_binding, then: none},
 						large_headline: true,
-						show_top_flashline: true,
+
 						show_body: true,
 						image_idiom: "landscape"
 					}
@@ -89,7 +89,7 @@
 						bind: {if: =articles.b2.no_binding, then: none},
 						large_headline: true,
 						top_border: true,
-						show_top_flashline: true,
+
 						show_body: true,
 						image_idiom: "landscape"
 					}
@@ -100,7 +100,7 @@
 					options: {
 						bind: {if: =articles.b1.no_binding, then: none},
 						large_headline: true,
-						show_top_flashline: true,
+
 						show_body: true,
 						image_idiom: "landscape"
 					}
@@ -112,7 +112,7 @@
 						bind: {if: =articles.b2.no_binding, then: none},
 						large_headline: true,
 						top_border: true,
-						show_top_flashline: true,
+
 						show_body: true,
 						image_idiom: "landscape"
 					}

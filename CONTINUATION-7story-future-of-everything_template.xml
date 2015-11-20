@@ -29,7 +29,6 @@
 						bind: {if: =articles.b1.no_binding, then: none},
 						large_headline: true,
 						top_image: true,
-						show_top_flashline: true,
 						show_body: true,
 						image_idiom: "portrait"
 					}
@@ -41,7 +40,7 @@
 						bind: {if: =articles.b3.no_binding, then: none},
 						top_border: true,
 						squarish_image: true,
-						show_top_flashline: true,
+
 						show_body: true,
 						image_idiom: "portrait"
 					}
@@ -53,7 +52,7 @@
 						bind: {if: =articles.b4.no_binding, then: none},
 						top_border: true,
 						squarish_image: true,
-						show_top_flashline: true,
+
 						show_body: true,
 						image_idiom: "portrait"
 					}
@@ -65,7 +64,7 @@
 						bind: {if: =articles.b5.no_binding, then: none},
 						top_border: true,
 						squarish_image: true,
-						show_top_flashline: true,
+
 						show_body: true,
 						image_idiom: "portrait"
 					}
@@ -77,7 +76,7 @@
 						bind: {if: =articles.b6.no_binding, then: none},
 						top_border: true,
 						squarish_image: true,
-						show_top_flashline: true,
+
 						show_body: true,
 						image_idiom: "portrait"
 					}
@@ -87,9 +86,8 @@
 					top:0,
 					options: {
 						bind: {if: =articles.b5.no_binding, then: none},
-						top_border: true,
 						squarish_image: true,
-						show_top_flashline: true,
+
 						show_body: true,
 						image_idiom: "portrait"
 					}
@@ -101,7 +99,7 @@
 						bind: {if: =articles.b6.no_binding, then: none},
 						top_border: true,
 						squarish_image: true,
-						show_top_flashline: true,
+
 						show_body: true,
 						image_idiom: "portrait"
 					}
@@ -114,7 +112,7 @@
 					options: {
 						bind: {if: =articles.b1.no_binding, then: none},
 						large_headline: true,
-						show_top_flashline: true,
+
 						show_body: true,
 						image_idiom: "landscape"
 					}
@@ -125,7 +123,7 @@
 					options: {
 						bind: {if: =articles.b2.no_binding, then: none},
 						top_border: true,
-						show_top_flashline: true,
+
 						show_body: true,
 						image_idiom: "landscape"
 					}
@@ -136,7 +134,7 @@
 					options: {
 						bind: {if: =articles.b3.no_binding, then: none},
 						top_image: true,
-						show_top_flashline: true,
+
 						show_body: true,
 						image_idiom: "landscape"
 					}
@@ -147,7 +145,7 @@
 					options: {
 						bind: {if: =articles.b4.no_binding, then: none},
 						top_image: true,
-						show_top_flashline: true,
+
 						show_body: true,
 						image_idiom: "landscape"
 					}
@@ -159,7 +157,7 @@
 						bind: {if: =articles.b5.no_binding, then: none},
 						top_image: true,
 						top_border: true,
-						show_top_flashline: true,
+
 						show_body: true,
 						image_idiom: "landscape"
 					}
@@ -171,7 +169,7 @@
 						bind: {if: =articles.b5.no_binding, then: none},
 						top_image: true,
 						top_border: true,
-						show_top_flashline: true,
+
 						show_body: true,
 						image_idiom: "landscape"
 					}
@@ -183,7 +181,7 @@
 						bind: {if: =articles.b5.no_binding, then: none},
 						top_image: true,
 						top_border: true,
-						show_top_flashline: true,
+
 						show_body: true,
 						image_idiom: "landscape"
 					}
@@ -194,7 +192,7 @@
 	<box id="page_details" class="tablet_only" embed="pagedescription" />
 
 <box id="page_details" class="tablet_only" embed="pagedescription" />
-    <box id="b1" embed="article" class="column6 positionx1 maude unit_plain" module="LEFT-IMAGE_module.xml" />
+    <box id="b1" embed="article" class="column8-6 positionx1 maude unit_plain" module="LEFT-IMAGE_module.xml" />
     <box id="b2" embed="article" class="column4-6 positionx9-1 maude unit_plain" module="LEFT-IMAGE_module.xml" />
     <box id="b3" embed="article" class="column4-6 positionx13-7 maude unit_plain" module="LEFT-IMAGE_module.xml" />
     <box id="b4" embed="article" class="column4-6 positionx9-1 maude unit_plain" module="LEFT-IMAGE_module.xml" />

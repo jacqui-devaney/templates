@@ -16,8 +16,8 @@
 	.module_headline: {
 		$join: [
 			{
-				padding: [0, 2.5, 11, 2.5],
                 font-name: Whitney-Semibold,
+                padding:[{if: {$count: [=article.images.phone]}, more-than:0, then:0, else:12},0,8,0],
 				color:{if: =article.read, then: color.articleReadColor}
 			},
 			{
@@ -28,7 +28,11 @@
 						line-height: 25
 					}},
 					{
-						font-size: 23,
+                    font-size:{
+                        if: {$count:[=article.images.phone]},
+                        more-than: 0,
+                        then: 23,
+                        else: 24},
 						line-height: 32
 					}
 				]

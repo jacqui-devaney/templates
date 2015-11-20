@@ -71,7 +71,19 @@
 				#tabbar-container: {
 					display: none
 				},
-				#b1 : {
+             #b1 : {
+                height:{ if: =view.width, more-than: 320, then:{
+                        if: {$count:[=articles.b1.images.phone]},
+                        more-than: 0,
+                        then: {$multiply: [=view.width, 1.139]},
+                        else: {$multiply: [=view.width, 0.6]}
+                        }, else: {
+                        if: {$count:[=articles.b1.images.phone]},
+                        more-than: 0,
+                        then: {$multiply: [=view.width, 1.32]},
+                        else: {$multiply: [=view.width, 0.6]}
+                        }
+                    },
 					options: { bind: {if: =articles.b1.no_binding, then: none}, show_body: true, medium_headline: true }
 				},
 				#b2 : {

@@ -65,6 +65,7 @@
 			], then: true}
 		],
 		then: {
+		if: =page.hasad, then: {
 			#media_container: {
 				display: none
 			},

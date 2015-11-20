@@ -24,8 +24,18 @@
 				#page_details: {
 					display: none
 				},
-
-				#b1: {
+                #b1: {
+                height: {
+                    if: {$count:[=articles.b1.images.phone]},
+                        more-than: 0,
+                        then: {$multiply: [=device.width, 1.137]},
+                        else: {$multiply: [=view.width, 0.6]}
+                        }, else: {
+                        if: {$count:[=articles.b1.images.phone]},
+                        more-than: 0,
+                        then: {$multiply: [=view.width, 1.32]},
+                        else: {$multiply: [=view.width, 0.6]}
+                    },
 					options: {
 						bind: {if: =articles.b1.no_binding, then: none},
 						module: url(TOP-IMAGE_module.xml),
@@ -38,7 +48,7 @@
 					height: =size.continuation_height_large,
 					options: {
 						bind: {if: =articles.b2.no_binding, then: none},
-						module: url(TOP-IMAGE_module.xml),
+						module: url(CONTINUATION-dynamic_module.xml),
 						top_border: true,
 						show_body: true,
 						show_image: true,
@@ -52,7 +62,7 @@
 					padding: [22,0,0,0],
 					options: {
 						bind: {if: =articles.b3.no_binding, then: none},
-						module: url(TOP-IMAGE_module.xml),
+						module: url(CONTINUATION-dynamic_module.xml),
 						show_body: true,
 						show_image: true,
 						float_image: right,

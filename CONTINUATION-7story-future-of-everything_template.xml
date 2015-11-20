@@ -123,7 +123,7 @@
 					options: {
 						bind: {if: =articles.b2.no_binding, then: none},
 						top_border: true,
-
+						top_image: true,
 						show_body: true,
 						image_idiom: "landscape"
 					}

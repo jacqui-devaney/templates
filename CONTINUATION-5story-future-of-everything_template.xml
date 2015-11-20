@@ -40,7 +40,7 @@
 					options: {
 						bind: {if: =articles.b2.no_binding, then: none},
 						large_headline: true,
-						squarish_image: true,
+						top_image: true,
 
 						show_body: true,
 						image_idiom: "portrait"
@@ -48,12 +48,12 @@
                 },
                     #b3 : {
                     height:420,
-                    top:419,
+                    top:430,
                     options: {
                         bind: {if: =articles.b3.no_binding, then: none},
                         top_border: true,
                         large_headline: true,
-                        squarish_image: true,
+                        top_image: true,
 
                         show_body: true,
                         image_idiom: "portrait"
@@ -71,7 +71,7 @@
 						image_idiom: "portrait"
 					}
 				},
-							#b5 : {
+                #b5 : {
 					height:190,
 					top:620,
 					options: {
@@ -125,7 +125,6 @@
 					top:0,
 					options: {
 						bind: {if: =articles.b4.no_binding, then: none},
-						top_image: true,
 						large_headline: true,
 
 						show_body: true,

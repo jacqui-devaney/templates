@@ -14,109 +14,193 @@
 			}
 		}
 	}</style>
-	<style> {
+  <style>{
 		$switch: [
 			{if: =scale.rail, then: {
+	        }},
+	        {if: =scale.phone, then: {
+	        }},
 
-			}},
-            {if: =portrait, then: {
-                #b1:	{
+	        {if: =portrait, then: {
+	            #b1 : {
+					height:420,
 					top:0,
-					height:582,
-					options:{ bind: {if: =articles.b1.no_binding, then: none}, large_headline:true, show_image:true}
+					options: {
+						bind: {if: =articles.b1.no_binding, then: none},
+						large_headline: true,
+						top_image: true,
+						show_top_flashline: true,
+						show_body: true,
+						image_idiom: "portrait"
+					}
 				},
-				#b2:	{
-					top:586,
-					height:219,
-					options:{ bind: {if: =articles.b2.no_binding, then: none}, medium_headline:true, show_body:true, top_border:true, show_flashline:true}
+                #b2 : {
+					height:190,
+					top:420,
+					options: {
+						bind: {if: =articles.b3.no_binding, then: none},
+						top_border: true,
+						squarish_image: true,
+						show_top_flashline: true,
+						show_body: true,
+						image_idiom: "portrait"
+					}
+				},
+				#b3 : {
+					height:190,
+					top:420,
+					options: {
+						bind: {if: =articles.b4.no_binding, then: none},
+						top_border: true,
+						squarish_image: true,
+						show_top_flashline: true,
+						show_body: true,
+						image_idiom: "portrait"
+					}
+				},
+				#b4 : {
+					height:190,
+					top:620,
+					options: {
+						bind: {if: =articles.b5.no_binding, then: none},
+						top_border: true,
+						squarish_image: true,
+						show_top_flashline: true,
+						show_body: true,
+						image_idiom: "portrait"
+					}
+				},
+				#b5 : {
+					height:190,
+					top:620,
+					options: {
+						bind: {if: =articles.b6.no_binding, then: none},
+						top_border: true,
+						squarish_image: true,
+						show_top_flashline: true,
+						show_body: true,
+						image_idiom: "portrait"
+					}
                 },
-                #b3:	{
-					top:586,
-					height:219,
-					options:{ bind: {if: =articles.b2.no_binding, then: none}, medium_headline:true, show_body:true, top_border:true, show_flashline:true}
-				},
-				#b4:	{
+				#b6 : {
+					height:190,
 					top:0,
-					height:188,
-					options:{ bind: {if: =articles.b3.no_binding, then: none}, medium_headline:true, show_flashline:true}
+					options: {
+						bind: {if: =articles.b5.no_binding, then: none},
+						top_border: true,
+						squarish_image: true,
+						show_top_flashline: true,
+						show_body: true,
+						image_idiom: "portrait"
+					}
 				},
-				#b5:	{
-					top:187,
-					height:196,
-					options:{ bind: {if: =articles.b4.no_binding, then: none}, medium_headline:true, top_border:true, show_flashline:true}
-
-				},
-				#b6:	{
-					top:386,
-					height:196,
-					options:{ bind: {if: =articles.b5.no_binding, then: none}, medium_headline:true, top_border:true, show_flashline:true}
-
-				},
-				#b7:	{
-					top:586,
-					height:219,
-					options:{ bind: {if: =articles.b6.no_binding, then: none}, medium_headline:true, show_body:true, top_border:true, show_flashline:true}
+				#b7 : {
+					height:190,
+					top:189,
+					options: {
+						bind: {if: =articles.b6.no_binding, then: none},
+						top_border: true,
+						squarish_image: true,
+						show_top_flashline: true,
+						show_body: true,
+						image_idiom: "portrait"
+					}
 				}
-
-			}},
+	        }},
 			{if: =landscape, then: {
-				#b1:	{
+	            #b1 : {
+					height:260,
 					top:0,
-					height:563,
-					options:{ bind: {if: =articles.b1.no_binding, then: none}, large_headline:true, show_image:true}
+					options: {
+						bind: {if: =articles.b1.no_binding, then: none},
+						large_headline: true,
+						show_top_flashline: true,
+						show_body: true,
+						image_idiom: "landscape"
+					}
+				},
+	            #b2 : {
+					height:270,
+					top:270,
+					options: {
+						bind: {if: =articles.b2.no_binding, then: none},
+						top_border: true,
+						show_top_flashline: true,
+						show_body: true,
+						image_idiom: "landscape"
+					}
+				},
+	            #b3 : {
+					height:260,
+					top:0,
+					options: {
+						bind: {if: =articles.b3.no_binding, then: none},
+						top_image: true,
+						show_top_flashline: true,
+						show_body: true,
+						image_idiom: "landscape"
+					}
+				},
+				#b4 : {
+					height:260,
+					top:0,
+					options: {
+						bind: {if: =articles.b4.no_binding, then: none},
+						top_image: true,
+						show_top_flashline: true,
+						show_body: true,
+						image_idiom: "landscape"
+					}
+				},
+				#b5 : {
+					height:270,
+					top:270,
+					options: {
+						bind: {if: =articles.b5.no_binding, then: none},
+						top_image: true,
+						top_border: true,
+						show_top_flashline: true,
+						show_body: true,
+						image_idiom: "landscape"
+					}
                 },
-                #b2:	{
-					top:0,
-					height:563,
-					options:{ bind: {if: =articles.b1.no_binding, then: none}, large_headline:true, show_image:true}
-				},
-
-				#b2:	{
-					top:0,
-					height:165,
-					options:{ bind: {if: =articles.b2.no_binding, then: none}, medium_headline:true, show_body:true, show_flashline:true}
-				},
-				#b3:	{
-					top:0,
-					height:165,
-					options:{ bind: {if: =articles.b3.no_binding, then: none}, medium_headline:true, bottom_border:true, show_body:true, show_flashline:true}
-				},
-				#b4:	{
-					top:175,
-					height:175,
-					options:{ bind: {if: =articles.b3.no_binding, then: none}, medium_headline:true, top_border:true, show_flashline:true}
-				},
-				#b5:	{
-					top:345,
-					height:220,
-					options:{ bind: {if: =articles.b4.no_binding, then: none}, medium_headline:true, top_border:true, show_flashline:true}
-				},
-				#b6:	{
-					top:175,
-					height:175,
-					options:{ bind: {if: =articles.b5.no_binding, then: none}, medium_headline:true, top_border:true, show_flashline:true}
-				},
-				#b7:	{
-					top:345,
-					height:220,
-					options:{ bind: {if: =articles.b6.no_binding, then: none}, medium_headline:true, top_border:true, show_flashline:true}
-				}
-
-			}}
+                #b6 : {
+					height:270,
+					top:269,
+					options: {
+						bind: {if: =articles.b5.no_binding, then: none},
+						top_image: true,
+						top_border: true,
+						show_top_flashline: true,
+						show_body: true,
+						image_idiom: "landscape"
+					}
+                },
+                #b7 : {
+					height:270,
+					top:269,
+					options: {
+						bind: {if: =articles.b5.no_binding, then: none},
+						top_image: true,
+						top_border: true,
+						show_top_flashline: true,
+						show_body: true,
+						image_idiom: "landscape"
+					}
+                }
+            }}
 		]
-	} </style>
+    }</style>
 	<box id="page_details" class="tablet_only" embed="pagedescription" />
 
-	<box id="b1" embed="article" class="column8 positionx1 maude unit_plain" module="TOP-IMAGE_module.xml" />
-
-	<box id="b2" embed="article" class="column4 positionx9-1 maude unit_plain" module="RIGHT-IMAGE_module.xml" />
-	<box id="b3" embed="article" class="column4 positionx13-5 maude unit_plain" module="TOP-IMAGE_module.xml" />
-
-	<box id="b4" embed="article" class="column4 positionx9 maude unit_plain" module="TOP-IMAGE_module.xml" />
-	<box id="b5" embed="article" class="column4 positionx9 maude unit_plain" module="TOP-IMAGE_module.xml" />
-	<box id="b6" embed="article" class="column4 positionx13-9 maude unit_plain" module="TOP-IMAGE_module.xml" />
-	<box id="b7" embed="article" class="column4 positionx13-9 maude unit_plain" module="TOP-IMAGE_module.xml" />
-	<box id="b8" embed="article" class="column4 positionx13-9 maude unit_plain" module="TOP-IMAGE_module.xml" />
+<box id="page_details" class="tablet_only" embed="pagedescription" />
+    <box id="b1" embed="article" class="column6 positionx1 maude unit_plain" module="LEFT-IMAGE_module.xml" />
+    <box id="b2" embed="article" class="column4-6 positionx9-1 maude unit_plain" module="LEFT-IMAGE_module.xml" />
+    <box id="b3" embed="article" class="column4-6 positionx13-7 maude unit_plain" module="LEFT-IMAGE_module.xml" />
+    <box id="b4" embed="article" class="column4-6 positionx9-1 maude unit_plain" module="LEFT-IMAGE_module.xml" />
+    <box id="b5" embed="article" class="column4-6 positionx13-7 maude unit_plain" module="LEFT-IMAGE_module.xml" />
+    <box id="b6" embed="article" class="column4-6 positionx1-7 maude unit_plain" module="LEFT-IMAGE_module.xml" />
+    <box id="b7" embed="article" class="column4-6 positionx5-7 maude unit_plain" module="LEFT-IMAGE_module.xml" />
 	<box id="front_page" class="tablet_only positionx_full column_full maude unit_ad">
 		<box id="banner_ad" class="ad-banner front_ad" embed="advertisement" />
 	</box>

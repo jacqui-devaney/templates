@@ -78,10 +78,10 @@
                     height: 100
                 },
                 #vertical: {
-                    padding: [0, 0, 0, 24]
+                    padding: [0, 0, 0, 16]
                 },
                 .body: {
-                    padding: [0, 0, 0, 24]
+                    padding: [0, 0, 0, 16]
                 },
                 #article_status: {
                     padding: [{if: =options.show_body, then: 1, else: 5}, 4, 24, 4],

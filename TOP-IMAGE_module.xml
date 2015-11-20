@@ -97,13 +97,14 @@
 				display: none
 			},
 			#summary: {
-				display: inherit
+                display: inherit,
+                text-align:left
 			},
 			.opinion_dek: {
 				display: none
 			},
 			#vertical: {
-				padding: [0, 24, 0, 0]
+				padding: [0, 0, 0, 12]
 			},
 
 			#deco_container: {

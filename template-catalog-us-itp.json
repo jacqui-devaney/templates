@@ -497,6 +497,7 @@
         "title": "5 story - Future of Everything",
         "usage": "continuation",
         "boxes": [
+            {
             "id": "b1",
             "images": {
               "landscape": {
@@ -520,7 +521,8 @@
                 "width": 360,
                 "height": 240
               }
-            }, 
+            }
+          },
             {
             "id": "b3",
             "images": {
@@ -533,6 +535,7 @@
                 "height": 240
               }
             }
+            },
 
           {
             "id": "b4",
@@ -546,6 +549,7 @@
                 "height": 178
               }
             }
+          },
           {
             "id": "b4",
             "images": {
@@ -558,7 +562,6 @@
                 "height": 178
               }
             }
-          },
           },
           {
             "id": "b5",
@@ -605,7 +608,8 @@
                 "width": 360,
                 "height": 240
               }
-            }, 
+            } 
+          },
             {
             "id": "b3",
             "images": {
@@ -631,6 +635,7 @@
                 "height": 240
               }
             }
+          }
 
 
         ]

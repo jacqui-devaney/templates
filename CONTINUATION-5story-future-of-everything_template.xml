@@ -1,0 +1,112 @@
+<jpml id="CONTINUATION-5story-future-of-everything_template">
+	<style src="GLOBAL-stylesheet.ejs" />
+	<style src="GRID-stylesheet.ejs" />
+	<style src="ADVERTISING-stylesheet.ejs"/>
+<style src="PHONE-stylesheet.ejs" />
+<style src="RAIL-stylesheet.ejs" />
+	<style>{
+    	#page_details: {
+			display: inherit,
+			frame: [0, 0, 10, 10],
+			options: {
+				title: "Future of Everything",
+				tintTitle: true
+			}
+		}
+	}</style>
+	<style> {
+		$switch: [
+			{if: =scale.rail, then: {
+
+			}},
+			{if: =scale.phone, then: {
+				#b1:	{
+					options:{ bind: {if: =articles.b1.no_binding, then: none} }
+				},
+				#b2:	{
+					options:{ bind: {if: =articles.b2.no_binding, then: none} }
+				},
+				#b3:	{
+					options:{ bind: {if: =articles.b3.no_binding, then: none} }
+				},
+				#b4:	{
+					options:{ bind: {if: =articles.b4.no_binding, then: none} }
+				},
+				#b5:	{
+					options:{ bind: {if: =articles.b5.no_binding, then: none} }
+				},
+				#b6:	{
+					options:{ bind: {if: =articles.b6.no_binding, then: none} }
+				}
+			}},
+			{if: =portrait, then: {
+				#b1:	{
+					top:0,
+					height:582,
+					options:{ bind: {if: =articles.b1.no_binding, then: none}, large_headline:true, show_image:true}
+				},
+				#b2:	{
+					top:586,
+					height:219,
+					options:{ bind: {if: =articles.b2.no_binding, then: none}, medium_headline:true, show_body:true, top_border:true, show_flashline:true}
+				},
+				#b3:	{
+					top:0,
+					height:268,
+					options:{ bind: {if: =articles.b3.no_binding, then: none}, medium_headline:true, show_flashline:true}
+				},
+				#b4:	{
+					top:269,
+					height:268,
+					options:{ bind: {if: =articles.b4.no_binding, then: none}, medium_headline:true, top_border:true, show_flashline:true}
+
+				},
+				#b5:	{
+					top:542,
+					height:267,
+					options:{ bind: {if: =articles.b5.no_binding, then: none}, medium_headline:true, top_border:true, show_flashline:true}
+
+				}
+                }},
+			{if: =landscape, then: {
+				#b1:	{
+					top:0,
+					height:563,
+					options:{ bind: {if: =articles.b1.no_binding, then: none}, large_headline:true, show_image:true}
+				},
+				#b2:	{
+					top:0,
+					height:140,
+					options:{ bind: {if: =articles.b2.no_binding, then: none}, medium_headline:true, show_body:true, show_flashline:true}
+				},
+				#b3:	{
+					top:150,
+					height:140,
+					options:{ bind: {if: =articles.b3.no_binding, then: none}, medium_headline:true, top_border:true, show_body:true, show_flashline:true}
+				},
+				#b4:	{
+					top:310,
+					height:140,
+					options:{ bind: {if: =articles.b4.no_binding, then: none}, medium_headline:true, top_border:true, show_body:true, show_flashline:true}
+				},
+				#b5:	{
+					top:465,
+					height:140,
+					options:{ bind: {if: =articles.b5.no_binding, then: none}, medium_headline:true, top_border:true, show_body:true, show_flashline:true}
+				}
+			}}
+		]
+	} </style>
+	<box id="page_details" class="tablet_only" embed="pagedescription" />
+
+	<box id="b1" embed="article" class="column8 positionx1 maude unit_plain" module="TOP-IMAGE_module.xml" />
+	<box id="b2" embed="article" class="column8 positionx9-1 maude unit_plain" module="RIGHT-IMAGE_module.xml" />
+
+	<box id="b3" embed="article" class="column8 positionx9-1 maude unit_plain" module="TOP-IMAGE_module.xml" />
+	<box id="b4" embed="article" class="column8 positionx9-1 maude unit_plain" module="TOP-IMAGE_module.xml" />
+
+	<box id="b5" embed="article" class="column8 positionx9-1 maude unit_plain" module="TOP-IMAGE_module.xml" />
+	<box id="front_page" class="tablet_only positionx_full column_full maude unit_ad">
+		<box id="banner_ad" class="ad-banner front_ad" embed="advertisement" />
+	</box>
+</jpml>

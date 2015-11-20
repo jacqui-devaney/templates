@@ -1,0 +1,128 @@
+<jpml id="CONTINUATION-7story-future-of-everything_template">
+	<style src="GLOBAL-stylesheet.ejs" />
+	<style src="GRID-stylesheet.ejs" />
+	<style src="ADVERTISING-stylesheet.ejs"/>
+<style src="PHONE-stylesheet.ejs" />
+<style src="RAIL-stylesheet.ejs" />
+	<style>{
+    	#page_details: {
+			display: inherit,
+			frame: [0, 0, 10, 10],
+			options: {
+				title: "Future of Everything",
+				tintTitle: true
+			}
+		}
+	}</style>
+	<style> {
+		$switch: [
+			{if: =scale.rail, then: {
+
+			}},
+			{if: =portrait, then: {
+                #b1:	{
+					top:0,
+					height:582,
+					options:{ bind: {if: =articles.b1.no_binding, then: none}, large_headline:true, show_image:true}
+				},
+				#b2:	{
+					top:586,
+					height:219,
+					options:{ bind: {if: =articles.b2.no_binding, then: none}, medium_headline:true, show_body:true, top_border:true, show_flashline:true}
+                },
+                #b3:	{
+					top:0,
+					height:133,
+					options:{ bind: {if: =articles.b2.no_binding, then: none}, medium_headline:true, show_body:true, top_border:true, show_flashline:true}
+				},
+				#b4:	{
+					top:133,
+					height:133,
+					options:{ bind: {if: =articles.b3.no_binding, then: none}, medium_headline:true, show_flashline:true}
+				},
+				#b5:	{
+					top:266,
+					height:133,
+					options:{ bind: {if: =articles.b4.no_binding, then: none}, medium_headline:true, top_border:true, show_flashline:true}
+
+				},
+				#b6:	{
+					top:399,
+					height:133,
+					options:{ bind: {if: =articles.b5.no_binding, then: none}, medium_headline:true, top_border:true, show_flashline:true}
+
+				},
+				#b7:	{
+					top:540,
+					height:133,
+					options:{ bind: {if: =articles.b6.no_binding, then: none}, medium_headline:true, show_body:true, top_border:true, show_flashline:true}
+                },
+                #b8:	{
+					top:663,
+					height:133,
+					options:{ bind: {if: =articles.b6.no_binding, then: none}, medium_headline:true, show_body:true, top_border:true, show_flashline:true}
+				}
+
+			}},
+			{if: =landscape, then: {
+				#b1:	{
+					top:0,
+					height:563,
+					options:{ bind: {if: =articles.b1.no_binding, then: none}, large_headline:true, show_image:true}
+                },
+                #b2:	{
+					top:330,
+					height:563,
+					options:{ bind: {if: =articles.b1.no_binding, then: none}, large_headline:true, show_image:true}
+				},
+				#b3:	{
+					top:0,
+					height:165,
+					options:{ bind: {if: =articles.b2.no_binding, then: none}, medium_headline:true, show_body:true, show_flashline:true}
+				},
+				#b4:	{
+					top:0,
+					height:165,
+					options:{ bind: {if: =articles.b3.no_binding, then: none}, medium_headline:true, bottom_border:true, show_body:true, show_flashline:true}
+				},
+				#b5:	{
+					top:175,
+					height:175,
+					options:{ bind: {if: =articles.b3.no_binding, then: none}, medium_headline:true, top_border:true, show_flashline:true}
+				},
+				#b6:	{
+					top:345,
+					height:220,
+					options:{ bind: {if: =articles.b4.no_binding, then: none}, medium_headline:true, top_border:true, show_flashline:true}
+				},
+				#b7:	{
+					top:175,
+					height:175,
+					options:{ bind: {if: =articles.b5.no_binding, then: none}, medium_headline:true, top_border:true, show_flashline:true}
+				},
+				#b8:	{
+					top:345,
+					height:220,
+					options:{ bind: {if: =articles.b6.no_binding, then: none}, medium_headline:true, top_border:true, show_flashline:true}
+				}
+
+			}}
+		]
+	} </style>
+	<box id="page_details" class="tablet_only" embed="pagedescription" />
+
+	<box id="b1" embed="article" class="column8 positionx1 maude unit_plain" module="TOP-IMAGE_module.xml" />
+	<box id="b2" embed="article" class="column8 positionx1 maude unit_plain" module="TOP-IMAGE_module.xml" />
+
+	<box id="b3" embed="article" class="column4 positionx9 maude unit_plain" module="RIGHT-IMAGE_module.xml" />
+	<box id="b4" embed="article" class="column4 positionx13-9 maude unit_plain" module="TOP-IMAGE_module.xml" />
+
+	<box id="b5" embed="article" class="column4 positionx9 maude unit_plain" module="TOP-IMAGE_module.xml" />
+	<box id="b6" embed="article" class="column4 positionx9 maude unit_plain" module="TOP-IMAGE_module.xml" />
+	<box id="b7" embed="article" class="column4 positionx13-9 maude unit_plain" module="TOP-IMAGE_module.xml" />
+	<box id="b8" embed="article" class="column4 positionx13-9 maude unit_plain" module="TOP-IMAGE_module.xml" />
+	<box id="front_page" class="tablet_only positionx_full column_full maude unit_ad">
+		<box id="banner_ad" class="ad-banner front_ad" embed="advertisement" />
+	</box>
+
+</jpml>

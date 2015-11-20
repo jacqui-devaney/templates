@@ -27,7 +27,6 @@
 					top:0,
 					options: {
 						bind: {if: =articles.b1.no_binding, then: none},
-						top_image: true,
 
 						show_body: true,
 						image_idiom: "portrait"
@@ -38,7 +37,6 @@
 					top:189,
 					options: {
 						bind: {if: =articles.b1.no_binding, then: none},
-						top_image: true,
 
 						show_body: true,
 						top_border: true,

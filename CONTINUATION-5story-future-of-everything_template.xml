@@ -38,7 +38,7 @@
 					height:420,
 					top:0,
 					options: {
-						bind: {if: =articles.b3.no_binding, then: none},
+						bind: {if: =articles.b2.no_binding, then: none},
 						large_headline: true,
 						squarish_image: true,
 
@@ -50,7 +50,7 @@
                     height:420,
                     top:419,
                     options: {
-                        bind: {if: =articles.b5.no_binding, then: none},
+                        bind: {if: =articles.b3.no_binding, then: none},
                         top_border: true,
                         large_headline: true,
                         squarish_image: true,
@@ -75,7 +75,7 @@
 					height:190,
 					top:620,
 					options: {
-						bind: {if: =articles.b6.no_binding, then: none},
+						bind: {if: =articles.b5.no_binding, then: none},
 						top_border: true,
 						squarish_image: true,
 
@@ -89,7 +89,7 @@
 					height:260,
 					top:0,
 					options: {
-						bind: {if: =articles.b1.no_binding, then: none},
+						bind: {if: =articles.b6.no_binding, then: none},
 						large_headline: true,
 
 						show_body: true,
@@ -112,7 +112,7 @@
 					height:260,
 					top:270,
 					options: {
-						bind: {if: =articles.b4.no_binding, then: none},
+						bind: {if: =articles.b3.no_binding, then: none},
 						top_image: true,
 
 						top_border: true,
@@ -124,7 +124,7 @@
 					height:260,
 					top:0,
 					options: {
-						bind: {if: =articles.b3.no_binding, then: none},
+						bind: {if: =articles.b4.no_binding, then: none},
 						top_image: true,
 						large_headline: true,
 

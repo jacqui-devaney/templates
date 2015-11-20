@@ -36,7 +36,7 @@
 					height:190,
 					top:189,
 					options: {
-						bind: {if: =articles.b1.no_binding, then: none},
+						bind: {if: =articles.b2.no_binding, then: none},
 
 						show_body: true,
 						top_border: true,
@@ -95,7 +95,7 @@
 					height:190,
 					top:0,
 					options: {
-						bind: {if: =articles.b5.no_binding, then: none},
+						bind: {if: =articles.b7.no_binding, then: none},
 						squarish_image: true,
 
 						show_body: true,
@@ -106,7 +106,7 @@
 					height:190,
 					top:189,
 					options: {
-						bind: {if: =articles.b6.no_binding, then: none},
+						bind: {if: =articles.b8.no_binding, then: none},
 						top_border: true,
 						squarish_image: true,
 
@@ -174,7 +174,7 @@
 					height:270,
 					top:269,
 					options: {
-						bind: {if: =articles.b5.no_binding, then: none},
+						bind: {if: =articles.b6.no_binding, then: none},
 						top_image: true,
 						top_border: true,
 
@@ -186,7 +186,7 @@
 					height:270,
 					top:269,
 					options: {
-						bind: {if: =articles.b5.no_binding, then: none},
+						bind: {if: =articles.b7.no_binding, then: none},
 						top_image: true,
 						top_border: true,
 
@@ -198,7 +198,7 @@
 					height:270,
 					top:269,
 					options: {
-						bind: {if: =articles.b5.no_binding, then: none},
+						bind: {if: =articles.b8.no_binding, then: none},
 						top_image: true,
 						top_border: true,
 

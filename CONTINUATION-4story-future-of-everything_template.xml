@@ -83,13 +83,11 @@
 					}
 				},
 	            #b2 : {
-					height:270,
+					height:260,
 					top:270,
 					options: {
 						bind: {if: =articles.b2.no_binding, then: none},
 						large_headline: true,
-						top_border: true,
-
 						show_body: true,
 						image_idiom: "landscape"
 					}
@@ -98,7 +96,7 @@
 					height:260,
 					top:0,
 					options: {
-						bind: {if: =articles.b1.no_binding, then: none},
+						bind: {if: =articles.b3.no_binding, then: none},
 						large_headline: true,
 
 						show_body: true,
@@ -106,13 +104,11 @@
 					}
 				},
 	            #b4 : {
-					height:270,
+					height:260,
 					top:270,
 					options: {
-						bind: {if: =articles.b2.no_binding, then: none},
+						bind: {if: =articles.b4.no_binding, then: none},
 						large_headline: true,
-						top_border: true,
-
 						show_body: true,
 						image_idiom: "landscape"
 					}

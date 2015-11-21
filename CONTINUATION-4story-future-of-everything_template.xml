@@ -48,7 +48,7 @@
 				},
                 #b3 : {
 					height:168,
-					top:420,
+					top:178,
 					options: {
 						bind: {if: =articles.b3.no_binding, then: none},
 						large_headline: true,
@@ -60,7 +60,7 @@
 				},
 				#b4 : {
 					height:168,
-					top:420,
+					top:178,
 					options: {
 						bind: {if: =articles.b4.no_binding, then: none},
 						large_headline: true,

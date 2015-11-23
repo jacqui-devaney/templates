@@ -23,7 +23,7 @@
 
 	        {if: =portrait, then: {
 	            #b1 : {
-					height:168,
+					height:400,
 					top:0,
 					options: {
 						bind: {if: =articles.b1.no_binding, then: none},
@@ -35,7 +35,7 @@
 					}
 				},
 	            #b2 : {
-					height:168,
+					height:400,
 					top:0,
 					options: {
 						bind: {if: =articles.b2.no_binding, then: none},
@@ -47,8 +47,8 @@
 					}
 				},
                 #b3 : {
-					height:168,
-					top:178,
+					height:400,
+					top:488,
 					options: {
 						bind: {if: =articles.b3.no_binding, then: none},
 						large_headline: true,
@@ -59,8 +59,8 @@
 					}
 				},
 				#b4 : {
-					height:168,
-					top:178,
+					height:400,
+					top:388,
 					options: {
 						bind: {if: =articles.b4.no_binding, then: none},
 						large_headline: true,

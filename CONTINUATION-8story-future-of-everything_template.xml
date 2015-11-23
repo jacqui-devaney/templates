@@ -35,7 +35,7 @@
                 },
                 #b2 : {
 					height:228,
-					top:210,
+					top:228,
 					options: {
 						bind: {if: =articles.b2.no_binding, then: none},
 
@@ -47,7 +47,7 @@
 				},
                 #b3 : {
 					height:228,
-					top:410,
+					top:446,
 					options: {
 						bind: {if: =articles.b3.no_binding, then: none},
 						top_border: true,
@@ -59,7 +59,7 @@
 				},
 				#b4 : {
 					height:228,
-					top:410,
+					top:446,
 					options: {
 						bind: {if: =articles.b4.no_binding, then: none},
 						top_border: true,
@@ -71,7 +71,7 @@
 				},
 				#b5 : {
 					height:228,
-					top:610,
+					top:672,
 					options: {
 						bind: {if: =articles.b5.no_binding, then: none},
 						top_border: true,
@@ -83,7 +83,7 @@
 				},
 				#b6 : {
 					height:228,
-					top:610,
+					top:672,
 					options: {
 						bind: {if: =articles.b6.no_binding, then: none},
 						top_border: true,
@@ -106,7 +106,7 @@
 				},
 				#b8 : {
 					height:228,
-					top:210,
+					top:228,
 					options: {
 						bind: {if: =articles.b8.no_binding, then: none},
 						top_border: true,

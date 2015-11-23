@@ -32,7 +32,7 @@
 						image_idiom: "portrait"
 					}
 				},
-	            #b1 : {
+	            #b2 : {
 					height:420,
 					top:0,
 					options: {
@@ -97,7 +97,7 @@
 					options: {
 						bind: {if: =articles.b3.no_binding, then: none},
 						large_headline: true,
-
+                        top_border: true,
 						show_body: true,
 						image_idiom: "landscape"
 					}
@@ -108,6 +108,7 @@
 					options: {
 						bind: {if: =articles.b4.no_binding, then: none},
 						large_headline: true,
+                        top_border: true,
 						show_body: true,
 						image_idiom: "landscape"
 					}

@@ -88,10 +88,11 @@
 
 			},
 			.byline: {
-				display: none
+				display: inheirt
 			},
 			#body: {
-				padding: [0, 0, 0, 0]
+                padding: [0, 0, 0, 0],
+                display: inherit
 			},
 			.body: {
 				display: none
@@ -135,7 +136,7 @@
 				display: none
 			},
 			#summary: {
-				display: none
+				display: inhert
 			}
 		}
 	}</style>
@@ -168,11 +169,7 @@
 		</panel>
 		<panel id="body">
 			<p class="module_flashline"><mark class="flashline-mark" /></p>
-			<p class="byline"><mark class="byline-mark"/></p>
-			<p id="summary" class="body"><mark class="body-first-p-mark" /><mark class="module_summary" /></p>
-			<panel class="body">
-				<p><mark class="body-first-p-mark" /><mark class="body-mark"/></p>
-			</panel>
+			<p id="summary" class="body-first-p-mark"><mark class="module_summary" /></p>
 		</panel>
 	</panel>
 </jpml>

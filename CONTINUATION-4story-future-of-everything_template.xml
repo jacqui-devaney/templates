@@ -28,7 +28,6 @@
 					options: {
 						bind: {if: =articles.b1.no_binding, then: none},
 						large_headline: true,
-						top_image: true,
 
 						show_body: true,
 						image_idiom: "portrait"
@@ -40,7 +39,6 @@
 					options: {
 						bind: {if: =articles.b2.no_binding, then: none},
 						large_headline: true,
-						top_image: true,
 
 						show_body: true,
 						image_idiom: "portrait"
@@ -52,7 +50,6 @@
 					options: {
 						bind: {if: =articles.b3.no_binding, then: none},
 						large_headline: true,
-						top_image: true,
 
 						show_body: true,
 						image_idiom: "portrait"
@@ -65,7 +62,6 @@
 						bind: {if: =articles.b4.no_binding, then: none},
 						large_headline: true,
 
-						top_image: true,
 						show_body: true,
 						image_idiom: "portrait"
 					}
@@ -120,8 +116,8 @@
     <box id="page_details" class="tablet_only" embed="pagedescription" />
     <box id="b1" embed="article" class="column8-6 positionx1 maude unit_plain" module="LEFT-IMAGE_module.xml" />
     <box id="b2" embed="article" class="column8-6 positionx1-7 maude unit_plain" module="LEFT-IMAGE_module.xml" />
-    <box id="b3" embed="article" class="column8-6 positionx1 maude unit_plain" module="LEFT-IMAGE_module.xml" />
-    <box id="b4" embed="article" class="column8-6 positionx1-7 maude unit_plain" module="LEFT-IMAGE_module.xml" />
+    <box id="b3" embed="article" class="column8-6 positionx9-1 maude unit_plain" module="LEFT-IMAGE_module.xml" />
+    <box id="b4" embed="article" class="column8-6 positionx9-7 maude unit_plain" module="LEFT-IMAGE_module.xml" />
 	<box id="front_page" class="tablet_only positionx_full column_full maude unit_ad">
 		<box id="banner_ad" class="ad-banner front_ad" embed="advertisement" />
 	</box>

@@ -97,7 +97,7 @@
 					}
 				},
 	            #b2 : {
-					height:270,
+					height:260,
 					top:270,
 					options: {
 						bind: {if: =articles.b2.no_binding, then: none},

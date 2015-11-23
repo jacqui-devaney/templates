@@ -23,7 +23,7 @@
 
 	        {if: =portrait, then: {
 	            #b1 : {
-					height:200,
+					height:228,
 					top:0,
 					options: {
 						bind: {if: =articles.b1.no_binding, then: none},
@@ -34,7 +34,7 @@
 					}
                 },
                 #b2 : {
-					height:200,
+					height:228,
 					top:210,
 					options: {
 						bind: {if: =articles.b2.no_binding, then: none},
@@ -46,7 +46,7 @@
 					}
 				},
                 #b3 : {
-					height:200,
+					height:228,
 					top:410,
 					options: {
 						bind: {if: =articles.b3.no_binding, then: none},
@@ -58,7 +58,7 @@
 					}
 				},
 				#b4 : {
-					height:200,
+					height:228,
 					top:410,
 					options: {
 						bind: {if: =articles.b4.no_binding, then: none},
@@ -70,7 +70,7 @@
 					}
 				},
 				#b5 : {
-					height:200,
+					height:228,
 					top:610,
 					options: {
 						bind: {if: =articles.b5.no_binding, then: none},
@@ -82,7 +82,7 @@
 					}
 				},
 				#b6 : {
-					height:200,
+					height:228,
 					top:610,
 					options: {
 						bind: {if: =articles.b6.no_binding, then: none},
@@ -94,7 +94,7 @@
 					}
                 },
 				#b7 : {
-					height:200,
+					height:228,
 					top:0,
 					options: {
 						bind: {if: =articles.b7.no_binding, then: none},
@@ -105,7 +105,7 @@
 					}
 				},
 				#b8 : {
-					height:200,
+					height:228,
 					top:210,
 					options: {
 						bind: {if: =articles.b8.no_binding, then: none},

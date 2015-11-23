@@ -551,6 +551,27 @@
         ]
       },
       {
+        "filename": "SECTION-1story-future-of-everything_template.xml",
+        "section": "SPECIAL_REPORT",
+        "title": "Full size Deco",
+        "usage": "front",
+        "boxes": [
+          {
+            "id": "deco",
+            "images": {
+              "portrait": {
+                "width": 768,
+                "height": 1024
+              },
+              "landscape": {
+                "width": 1024,
+                "height": 768
+              }
+            }
+          }
+        ]
+      },
+      {
         "filename": "CONTINUATION-generic-32_template.xml",
         "usage": "continuation",
         "partial_binding": true,

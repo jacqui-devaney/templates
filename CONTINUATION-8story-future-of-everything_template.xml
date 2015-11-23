@@ -47,7 +47,7 @@
 				},
                 #b3 : {
 					height:228,
-					top:446,
+					top:456,
 					options: {
 						bind: {if: =articles.b3.no_binding, then: none},
 						top_border: true,
@@ -59,7 +59,7 @@
 				},
 				#b4 : {
 					height:228,
-					top:446,
+					top:456,
 					options: {
 						bind: {if: =articles.b4.no_binding, then: none},
 						top_border: true,

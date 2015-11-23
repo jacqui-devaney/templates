@@ -86,7 +86,7 @@
 	        }},
 			{if: =landscape, then: {
 	            #b1 : {
-					height:260,
+					height:300,
 					top:0,
 					options: {
 						bind: {if: =articles.b6.no_binding, then: none},
@@ -97,8 +97,8 @@
 					}
 				},
 	            #b2 : {
-					height:260,
-					top:270,
+					height:300,
+					top:310,
 					options: {
 						bind: {if: =articles.b2.no_binding, then: none},
 						top_border: true,
@@ -109,8 +109,8 @@
 					}
 				},
                 #b3 : {
-					height:260,
-					top:270,
+					height:300,
+					top:310,
 					options: {
 						bind: {if: =articles.b3.no_binding, then: none},
 						top_image: true,
@@ -121,7 +121,7 @@
 					}
 				},
 	            #b4 : {
-					height:260,
+					height:300,
 					top:0,
 					options: {
 						bind: {if: =articles.b4.no_binding, then: none},
@@ -132,8 +132,8 @@
 					}
 				},
                 #b5 : {
-					height:270,
-					top:270,
+					height:300,
+					top:310,
 					options: {
 						bind: {if: =articles.b5.no_binding, then: none},
 						top_image: true,

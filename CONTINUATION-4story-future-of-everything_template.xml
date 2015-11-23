@@ -7,7 +7,6 @@
 	<style>{
     	#page_details: {
 			display: inherit,
-			frame: [0, 0, 10, 10],
 			options: {
 				title: "Future of Everything",
 				tintTitle: true
@@ -20,7 +19,6 @@
 	        }},
 	        {if: =scale.phone, then: {
 	        }},
-
 	        {if: =portrait, then: {
 	            #b1 : {
 					height:420,
@@ -28,18 +26,20 @@
 					options: {
 						bind: {if: =articles.b1.no_binding, then: none},
 						large_headline: true,
+						top_image: true,
+
 						show_body: true,
-                        top_image: true,
 						image_idiom: "portrait"
 					}
 				},
-	            #b2 : {
+	            #b1 : {
 					height:420,
 					top:0,
 					options: {
-						bind: {if: =articles.b2.no_binding, then: none},
+						bind: {if: =articles.b1.no_binding, then: none},
 						large_headline: true,
-                        top_image: true,
+						top_image: true,
+
 						show_body: true,
 						image_idiom: "portrait"
 					}

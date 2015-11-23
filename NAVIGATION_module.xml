@@ -65,7 +65,8 @@
 		.module_headline: {
 			font-name: DJ5Exchange-Semibold,
 			font-size: 18,
-			line-height:21
+			line-height:21,
+			padding: { if: {$count:[=article.thumbnail]}, more-than: 0, then: [0, 0, 9, 0], else: [-2, 0, 9, 0]}
 		},
 		#module_text: {
 			padding:[5,0,10,0]

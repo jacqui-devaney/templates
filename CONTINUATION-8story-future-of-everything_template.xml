@@ -28,6 +28,7 @@
 					options: {
 						bind: {if: =articles.b1.no_binding, then: none},
 
+						squarish_image: true,
 						show_body: true,
 						image_idiom: "portrait"
 					}
@@ -38,6 +39,7 @@
 					options: {
 						bind: {if: =articles.b2.no_binding, then: none},
 
+						squarish_image: true,
 						show_body: true,
 						top_border: true,
 						image_idiom: "portrait"
@@ -121,6 +123,7 @@
 					top:0,
 					options: {
 						bind: {if: =articles.b1.no_binding, then: none},
+						top_image: true,
 
 						show_body: true,
 						image_idiom: "landscape"
@@ -131,6 +134,7 @@
 					top:0,
 					options: {
 						bind: {if: =articles.b2.no_binding, then: none},
+						top_image: true,
 
 						show_body: true,
 						image_idiom: "landscape"

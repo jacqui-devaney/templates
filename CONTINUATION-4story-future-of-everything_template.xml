@@ -29,6 +29,7 @@
 						bind: {if: =articles.b1.no_binding, then: none},
 						large_headline: true,
 						show_body: true,
+                        top_image: true,
 						image_idiom: "portrait"
 					}
 				},
@@ -38,6 +39,7 @@
 					options: {
 						bind: {if: =articles.b2.no_binding, then: none},
 						large_headline: true,
+                        top_image: true,
 						show_body: true,
 						image_idiom: "portrait"
 					}

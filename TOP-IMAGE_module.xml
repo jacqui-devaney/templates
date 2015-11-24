@@ -60,7 +60,7 @@
 					}
 	      },
 				#deco_container: {
-					padding: [0, 0, 17, 0]
+					padding: [0, 0, 12, 0]
 				},
 				.byline: {
 					display:{if: =options.show_byline, then:inherit, else:none}
@@ -78,7 +78,7 @@
 				padding:[0]
 			},
 			#headline: {
-				padding: [8, 0, 0, 0]
+				padding: [8, 0, 0, 6]
 			},
 			image: {
 				height: {$multiply: [=view.width, .665 ]},
@@ -91,8 +91,8 @@
 				display: inheirt
 			},
 			#body: {
-                padding: [0, 0, 0, 0],
-                display: inherit
+                display: inherit,
+                padding: [0, 24, 0, 6]
 			},
 			.body: {
 				display: none
@@ -105,13 +105,13 @@
 				display: none
 			},
 			#vertical: {
-				padding: [0, 0, 0, 12]
+				padding: [0, 0, 0, 0]
 			},
 
 			#deco_container: {
 				if: =options.float_image, equals: right, then: {
 					anchor-x: right,
-					padding: [8],
+					padding: [0],
 					width: 111
 				}, else: {if: =view.height, less-than: 200, then: [0, 24, 0, 0], else: [0]}
 			},

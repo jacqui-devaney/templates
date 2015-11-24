@@ -49,7 +49,6 @@
 		text-indent:0
 	},
 	.article_body: {
-		font-name: ChronicleSsm-Book-Pro,
 		font-size:{$multiply: [15, =view.zoomlevel]},
 		line-height:{$multiply: [22, =view.zoomlevel]},
         color:#3b4343
@@ -61,13 +60,14 @@
 		content: " Y"
 	},
 	strong: {
-    font-name:{if: =intent.article, then:ChronicleDisp-Bold, else:ChroniceDisp-Black}
+        font-name:{if: =intent.article, then:ChronicleDisplay-Bold, else:ChronicleDisplay-Black},
+        color: #2fbfbf
 	},
 	em: {
-    font-name:{if: =intent.article, then:ChronicleDisp-BlackItalic, else:ChronicleDisp-Black}
+        font-name:{if: =intent.article, then:ChronicleDisplay-BlackItalic, else:ChronicleDisplay-Black}
 	},
 	cite: {
-		font-name:{if: =intent.article, then:ChronicleDisp-BlackItalic, else:ChronicleDisp-Black}
+		font-name:{if: =intent.article, then:ChronicleDisplay-BlackItalic, else:ChronicleDisplay-Black}
 	},
 	.byline-credit: {
 		display: {if-any: [

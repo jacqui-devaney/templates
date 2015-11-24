@@ -81,14 +81,12 @@
                     padding: [0, 0, 0, 16]
                 },
                 .body: {
-                    padding: [0, 0, 0, 16]
+                    padding: [4, 0, 0, 16]
                 },
                 #article_status: {
                     padding: [{if: =options.show_body, then: 1, else: 5}, 4, 24, 4],
-                    top: 0,
                     left: -24,
                     width: 16,
-                    height: -100,
                     options: {
 					identifier: =article.id
                     }

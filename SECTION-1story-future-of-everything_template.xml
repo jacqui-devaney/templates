@@ -5,17 +5,17 @@
 <style src="PHONE-stylesheet.ejs" />
 <style src="RAIL-stylesheet.ejs" />
     <style>{
+		if: =scale.tablet,then: {
     	#page_details: {
-			display: inherit,
 			frame: [0, 0, 10, 10],
 			options: {
-				tintColor: white,
-				tintTitle: true,
-                title: { if: =page.section, equals: "SPECIAL_REPORT", then: "FUTURE OF EVERYTHING" },
-                font-name: "SharpSansNo1-Black"
+                if: =portrait, then: {
+				title: ""
 			}
 		}
-	}</style>
+        }}, else:{tintTitle: true}}
+    </style>
+
 	<style> {
 		$switch: [
 			{if: =scale.rail, then: {

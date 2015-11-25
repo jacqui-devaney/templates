@@ -4,15 +4,17 @@
 	<style src="ADVERTISING-stylesheet.ejs"/>
 <style src="PHONE-stylesheet.ejs" />
 <style src="RAIL-stylesheet.ejs" />
-    <style>{if: =portrait, then: {
+    <style>{
+		if: =scale.tablet,then: {
     	#page_details: {
 			frame: [0, 0, 10, 10],
 			options: {
-				title: "",
-                tintTitle: true
+                if: =portrait, then: {
+				title: ""
 			}
 		}
-        }}</style>
+        }}, else:{tintTitle: true}}
+    </style>
     <style>{
 		$switch: [
 			{if: =scale.rail, then: {

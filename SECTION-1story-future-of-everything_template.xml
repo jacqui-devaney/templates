@@ -4,13 +4,15 @@
 	<style src="ADVERTISING-stylesheet.ejs"/>
 <style src="PHONE-stylesheet.ejs" />
 <style src="RAIL-stylesheet.ejs" />
-	<style>{
+    <style>{
     	#page_details: {
 			display: inherit,
 			frame: [0, 0, 10, 10],
 			options: {
-				title: "Future of Everything",
-				tintTitle: true
+				tintColor: white,
+				tintTitle: true,
+                title: { if: =page.section, equals: "SPECIAL_REPORT", then: "FUTURE OF EVERYTHING" },
+                font-name: "SharpSansNo1-Black"
 			}
 		}
 	}</style>

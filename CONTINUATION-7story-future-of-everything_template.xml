@@ -40,7 +40,7 @@
 						bind: {if: =articles.b2.no_binding, then: none},
 						top_border: true,
 						squarish_image: true,
-
+                        medium_headline: true,
 						show_body: true,
 						image_idiom: "portrait"
 					}
@@ -52,7 +52,7 @@
 						bind: {if: =articles.b3.no_binding, then: none},
 						top_border: true,
 						squarish_image: true,
-
+                        medium_headline: true,
 						show_body: true,
 						image_idiom: "portrait"
 					}
@@ -64,7 +64,7 @@
 						bind: {if: =articles.b4.no_binding, then: none},
 						top_border: true,
 						squarish_image: true,
-
+                        medium_headline: true,
 						show_body: true,
 						image_idiom: "portrait"
 					}
@@ -76,7 +76,7 @@
 						bind: {if: =articles.b5.no_binding, then: none},
 						top_border: true,
 						squarish_image: true,
-
+                        medium_headline: true,
 						show_body: true,
 						image_idiom: "portrait"
 					}
@@ -87,7 +87,7 @@
 					options: {
 						bind: {if: =articles.b6.no_binding, then: none},
 						squarish_image: true,
-
+                        medium_headline: true,
 						show_body: true,
 						image_idiom: "portrait"
 					}
@@ -99,7 +99,7 @@
 						bind: {if: =articles.b7.no_binding, then: none},
 						top_border: true,
 						squarish_image: true,
-
+                        medium_headline: true,
 						show_body: true,
 						image_idiom: "portrait"
 					}
@@ -124,6 +124,7 @@
 						bind: {if: =articles.b2.no_binding, then: none},
 						top_border: true,
 						top_image: true,
+                        medium_headline: true,
 						show_body: true,
 						image_idiom: "landscape"
 					}
@@ -134,7 +135,7 @@
 					options: {
 						bind: {if: =articles.b3.no_binding, then: none},
 						top_image: true,
-
+                        medium_headline: true,
 						show_body: true,
 						image_idiom: "landscape"
 					}
@@ -145,7 +146,7 @@
 					options: {
 						bind: {if: =articles.b4.no_binding, then: none},
 						top_image: true,
-
+                        medium_headline: true,
 						show_body: true,
 						image_idiom: "landscape"
 					}
@@ -157,7 +158,7 @@
 						bind: {if: =articles.b5.no_binding, then: none},
 						top_image: true,
 						top_border: true,
-
+                        medium_headline: true,
 						show_body: true,
 						image_idiom: "landscape"
 					}
@@ -169,7 +170,7 @@
 						bind: {if: =articles.b6.no_binding, then: none},
 						top_image: true,
 						top_border: true,
-
+                        medium_headline: true,
 						show_body: true,
 						image_idiom: "landscape"
 					}
@@ -181,7 +182,7 @@
 						bind: {if: =articles.b7.no_binding, then: none},
 						top_image: true,
 						top_border: true,
-
+                        medium_headline: true,
 						show_body: true,
 						image_idiom: "landscape"
 					}

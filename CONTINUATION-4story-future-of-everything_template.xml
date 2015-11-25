@@ -21,7 +21,7 @@
 	        }},
 	        {if: =portrait, then: {
 	            #b1 : {
-					height:457,
+					height:400,
 					top:0,
 					options: {
 						bind: {if: =articles.b1.no_binding, then: none},
@@ -33,7 +33,7 @@
 					}
 				},
 	            #b2 : {
-					height:457,
+					height:400,
 					top:0,
 					options: {
 						bind: {if: =articles.b2.no_binding, then: none},
@@ -45,8 +45,8 @@
 					}
 				},
                 #b3 : {
-					height:457,
-					top:457,
+					height:400,
+					top:400,
 					options: {
 						bind: {if: =articles.b3.no_binding, then: none},
 						large_headline: true,
@@ -57,8 +57,8 @@
 					}
 				},
 				#b4 : {
-					height:457,
-					top:457,
+					height:400,
+					top:400,
 					options: {
 						bind: {if: =articles.b4.no_binding, then: none},
 						large_headline: true,
@@ -71,7 +71,7 @@
 	        }},
 			{if: =landscape, then: {
 	            #b1 : {
-					height:300,
+					height:260,
 					top:0,
 					options: {
 						bind: {if: =articles.b6.no_binding, then: none},
@@ -82,8 +82,8 @@
 					}
 				},
 	            #b2 : {
-					height:300,
-					top:310,
+					height:270,
+					top:270,
 					options: {
 						bind: {if: =articles.b2.no_binding, then: none},
 						large_headline: true,
@@ -93,7 +93,7 @@
 					}
 				},
 	            #b3 : {
-					height:300,
+					height:260,
 					top:0,
 					options: {
 						bind: {if: =articles.b3.no_binding, then: none},
@@ -103,8 +103,8 @@
 					}
 				},
 	            #b4 : {
-					height:300,
-					top:310,
+					height:270,
+					top:270,
 					options: {
 						bind: {if: =articles.b4.no_binding, then: none},
 						large_headline: true,

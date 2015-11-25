@@ -23,7 +23,7 @@
 
 	        {if: =portrait, then: {
 	            #b1 : {
-					height:457,
+					height:400,
 					top:0,
 					options: {
 						bind: {if: =articles.b1.no_binding, then: none},
@@ -35,7 +35,7 @@
 					}
 				},
                 #b2 : {
-					height:457,
+					height:400,
 					top:0,
 					options: {
 						bind: {if: =articles.b2.no_binding, then: none},
@@ -47,8 +47,8 @@
 					}
                 },
                     #b3 : {
-                    height:457,
-                    top:457,
+                    height:400,
+                    top:400,
                     options: {
                         bind: {if: =articles.b3.no_binding, then: none},
                         top_border: true,
@@ -60,25 +60,25 @@
                     }
 				},
 				#b4 : {
-					height:228,
-					top:458,
+					height:190,
+					top:400,
 					options: {
 						bind: {if: =articles.b4.no_binding, then: none},
 						top_border: true,
+                        medium_headline: true,
 						squarish_image: true,
-
 						show_body: true,
 						image_idiom: "portrait"
 					}
 				},
                 #b5 : {
-					height:228,
-					top:685,
+					height:190,
+					top:590,
 					options: {
 						bind: {if: =articles.b5.no_binding, then: none},
 						top_border: true,
 						squarish_image: true,
-
+                        medium_headline: true,
 						show_body: true,
 						image_idiom: "portrait"
 					}
@@ -86,7 +86,7 @@
 	        }},
 			{if: =landscape, then: {
 	            #b1 : {
-					height:300,
+					height:260,
 					top:0,
 					options: {
 						bind: {if: =articles.b6.no_binding, then: none},
@@ -97,8 +97,8 @@
 					}
 				},
 	            #b2 : {
-					height:300,
-					top:310,
+					height:270,
+					top:270,
 					options: {
 						bind: {if: =articles.b2.no_binding, then: none},
 						top_border: true,
@@ -109,8 +109,8 @@
 					}
 				},
                 #b3 : {
-					height:300,
-					top:310,
+					height:270,
+					top:270,
 					options: {
 						bind: {if: =articles.b3.no_binding, then: none},
 						top_image: true,
@@ -121,7 +121,7 @@
 					}
 				},
 	            #b4 : {
-					height:300,
+					height:260,
 					top:0,
 					options: {
 						bind: {if: =articles.b4.no_binding, then: none},
@@ -132,8 +132,8 @@
 					}
 				},
                 #b5 : {
-					height:300,
-					top:310,
+					height:270,
+					top:270,
 					options: {
 						bind: {if: =articles.b5.no_binding, then: none},
 						top_image: true,

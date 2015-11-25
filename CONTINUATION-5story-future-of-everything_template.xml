@@ -115,6 +115,7 @@
 						bind: {if: =articles.b3.no_binding, then: none},
 						top_image: true,
 
+                        medium_headline: true,
 						top_border: true,
 						show_body: true,
 						image_idiom: "landscape"
@@ -139,6 +140,7 @@
 						top_image: true,
 						top_border: true,
 
+                        medium_headline: true,
 						show_body: true,
 						image_idiom: "landscape"
 					}

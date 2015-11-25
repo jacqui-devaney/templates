@@ -157,13 +157,13 @@
 			}
 		}</style>
 		<style>{
-			if: =page.section, equals: "FUTURE_OF_EVERYTHING", then: {
+			if: =page.section, equals: "SPECIAL_REPORT", then: {
                 .module_headline: {
 					font-size: {if: =options.large_headline, then: 32, else: 24},
 					line-height: {if: =options.large_headline, then: 36, else: 24},
 					text-transform: uppercase,
 					padding:[0, 0, 2, 0],
-                    font-name: SharpSansNo1-Medium
+                    font-name: "SharpSansNo1-Medium"
 				},
 				.body: {
 					color: #222221

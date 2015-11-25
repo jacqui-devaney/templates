@@ -4,13 +4,15 @@
 	<style src="ADVERTISING-stylesheet.ejs"/>
 	<style src="PHONE-stylesheet.ejs"/>
 	<style src="RAIL-stylesheet.ejs" />
-	<style>{
-		#page_details: {
+    <style>{if: =portrait, then: {
+    	#page_details: {
+			frame: [0, 0, 10, 10],
 			options: {
-				tintTitle: true
+				title: "FUTURE OF EVERYTHING",
+                tintTitle: true
 			}
 		}
-	}</style>
+        }}</style>
 	<style>{
 		jpml: {
 			background-color: =color.background

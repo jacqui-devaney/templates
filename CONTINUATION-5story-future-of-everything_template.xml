@@ -4,17 +4,15 @@
 	<style src="ADVERTISING-stylesheet.ejs"/>
 <style src="PHONE-stylesheet.ejs" />
 <style src="RAIL-stylesheet.ejs" />
-	<style>{
+    <style>{if: =portrait, then: {
     	#page_details: {
-			display: inherit,
 			frame: [0, 0, 10, 10],
 			options: {
-				title: "FUTURE OF EVERYTHING",
-                tintTitle: true,
-                font-name: SharpSansNo1-Black
+				title: "",
+                tintTitle: true
 			}
 		}
-	}</style>
+        }}</style>
     <style>{
 		$switch: [
 			{if: =scale.rail, then: {

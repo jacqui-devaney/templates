@@ -75,7 +75,7 @@
                     color:{if: =article.read, then: color.articleReadColor}
                 },
                 image: {
-                    height: 115
+                    height: 122
                 },
                 #vertical: {
                     padding: [0, 0, 0, 16]
@@ -84,7 +84,7 @@
                     padding: [4, 0, 0, 16]
                 },
                 #article_status: {
-                    padding: [{if: =options.show_body, then: 1, else: 5}, 4, 24, 4],
+                    padding: [{if: =options.show_body, then: 12, else: 5}, 4, 24, 4],
                     left: -24,
                     width: 16,
                     options: {
@@ -92,8 +92,8 @@
                     }
                 },
                 #image_container: {
-                    width: 172,
-                    padding: [0, 0, 0, 4],
+                    width: 183,
+                    padding: [6, 0, 0, 4],
                     image-scale: 1,
                     anchor-x: right,
                     position: relative

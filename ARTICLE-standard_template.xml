@@ -8,7 +8,7 @@
       background-color: =color.background
     },
     #page_details: {
-      display: {if: =scale.phone, then: none},
+      display: none,
       options: {
           tintTitle: true
       }

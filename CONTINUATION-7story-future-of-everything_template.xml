@@ -95,7 +95,7 @@
 				},
 				#b7 : {
 					height:190,
-					top:200,
+					top:220,
 					options: {
 						bind: {if: =articles.b7.no_binding, then: none},
 						top_border: true,

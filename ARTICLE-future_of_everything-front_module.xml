@@ -65,9 +65,11 @@
             font-size:{$multiply: [14, =view.zoomlevel]},
             line-height:{$multiply: [20, =view.zoomlevel]},
             hyphens:auto,
-            color:#222221,
-            text-indent:-1
+            color:#222221
 		}},
+        {.body:{
+            text-indent:-1
+        }},
 		{#mark_category:{
 			content: =article.category
 		}},

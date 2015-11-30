@@ -12,12 +12,6 @@
     }</style>
 	<style>{
 		#view: {
-            top:0,
-            bottom:24
-        }
-    }</style>
-	<style>{
-		#view: {
 			options: {
 				background_color: =color.background,
 				indent: true

@@ -25,7 +25,8 @@
 			layout-grid-line-offset: 0,
 			background-color: #CACACA,
 			border-color: =color.background,
-			padding:[0,0,0,0]
+			padding:[0,0,0,0],
+            color:#000
 
 		}},
 		{.border-mark: {

@@ -94,9 +94,15 @@
 
 	<panel id="body_container">
 		<box id="media_container">
+			<p id="media_title"><mark id="mark_media_title"/></p>
+			<p id="media_vr_header"><mark id="mark_media_vr_header"/></p>
 			<box id="media_asset" embed="media"/>
+			<p id="media_vr_footer"><mark id="mark_media_vr_footer"/></p>
 			<p id="media_caption"><mark id="mark_caption" /></p>
+			<p id="media_vr_link"><a href="http://wsj.com/virtual-reality"><mark id="mark_media_vr_link"/></a></p>
 		</box>
+		<p class="module_flashline" embed="flashline"/>
+    	<p class="byline" embed="byline"/>
 		<p class="border-p"><mark class="border-mark"/></p>
 		<panel class="article_body" embed="body"/>
 	</panel>

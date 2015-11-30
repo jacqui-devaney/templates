@@ -1,8 +1,9 @@
 <jpml id="ARTICLE-future_of_everything_template">
 	<style src="GLOBAL-stylesheet.ejs"/>
   <style src="GRID-stylesheet.ejs"/>
-  <style src="FUTURE-stylesheet.ejs" />
   <style src="ADVERTISING-stylesheet.ejs" />
+  <style src="FUTURE-stylesheet.ejs" />
+
   <style>{
     jpml: {
       background-color: =color.background
@@ -18,8 +19,18 @@
           bottom:44
     }
   }</style>
-  <style>{
-        {if: =scale.rail, then: {
+  <style> {
+		$switch: [
+			{if: =scale.phone, then: {
+        #view: {
+          options: {
+            background_color: =color.background,
+            indent: true,
+            module: {if: =page.number, equals: 0, then: url(ARTICLE-front-phone_module.xml), else: url(ARTICLE-continuation-phone_module.xml)}
+          }
+        }
+			}},
+            {
         #view: {
           options: {
             background_color: =color.background,
@@ -27,7 +38,8 @@
             module: {if: =page.number, equals: 0, then: url(ARTICLE-future_of_everything-front_module.xml), else: url(ARTICLE-future_of_everything-continuation_module.xml)}
           }
         }
-    }}</style>
+        }]
+    }</style>
   <style>{
     if: =intent.ad, then: {
       jpml: {

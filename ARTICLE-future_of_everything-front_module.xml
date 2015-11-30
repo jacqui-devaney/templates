@@ -52,13 +52,13 @@
 			color: #004990
 		}},
 		{.article_body:{
-			font-name: "Whitney-Medium",
-			color: #222222
-		}},
-		{#media_caption:{
-			font-name: "Whitney-Medium",
-			font-size: 12,
-			color: #666666
+            font-name: "DJ5Exchange-Medium",
+            font-size:{$multiply: [14, =view.zoomlevel]},
+            line-height:{$multiply: [20, =view.zoomlevel]},
+            text-align: justify,
+            hyphens:auto,
+            color:#222221,
+            text-indent:=text.indent
 		}},
 		{#mark_category:{
 			content: =article.category

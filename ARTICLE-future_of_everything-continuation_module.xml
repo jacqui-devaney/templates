@@ -19,23 +19,18 @@
 			padding:[20, 0, 0, 0]
 		}},
 		{.article_body: {
-            column-count: { if: =portrait, then: 3, else: 4},
-            column-gutter: 12,
-			layout-grid-line: {$multiply: [20, =view.zoomlevel]},
-			layout-grid-line-offset: {$multiply: [20, =view.zoomlevel]},
-			font-name: "Whitney-Medium",
-			color: #222222
+            font-name: "DJ5Exchange-Medium",
+            font-size:{$multiply: [14, =view.zoomlevel]},
+            line-height:{$multiply: [20, =view.zoomlevel]},
+            text-align: justify,
+            hyphens:auto,
+            color:#222221,
+            text-indent:=text.indent
         }},
 
 		{#body_continuation: {
 			content: from-flow(article_body),
 			flow: article_body
-		}},
-
-		{#media_caption:{
-			font-name: "Whitney-Medium",
-			font-size: 12,
-			color: #666666
 		}},
 
 		{if: =portrait, then: {

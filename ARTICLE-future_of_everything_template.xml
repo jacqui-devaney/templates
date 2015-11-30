@@ -5,19 +5,19 @@
   <style src="FUTURE-stylesheet.ejs" />
 
   <style>{
-    jpml: {
-      background-color: =color.background
-    },
     #page_details: {
       display: {if: =scale.phone, then: none},
       options: {
           tintTitle: true
       }
     },
-    #view: {if: =scale.rail, then: {
-          top:0,
-          bottom:44
-    }
+		#view: {if: =scale.phone, then: {
+      width:=view.width,
+      height:{$multiply: [2, =view.height]}
+    }, else: {
+      top:0,
+      bottom:44
+    }}
   }</style>
   <style> {
 		$switch: [

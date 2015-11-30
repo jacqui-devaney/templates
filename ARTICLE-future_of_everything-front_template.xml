@@ -30,9 +30,5 @@
 		}
 	}</style>
     <box id="page_details" embed="pagedescription" />
-    <panel id="future_of_everything_strap">
-        <box class="future_of_everything_strap_image"/>
-        <p id="future_of_everything_strap_p"><mark id="deloitte_strap_mark"/></p>
-    </panel>
     <box id="view" embed="article" class="column16-12 positionx1" module="ARTICLE-future_of_everything-front_module.xml" />
 </jpml>

@@ -27,7 +27,7 @@
             { if: =page.section, equals: WSJ_MAGAZINE, then: "DJ5EscrowCond-Light" },
             { if: =page.section, equals: SPECIAL_REPORT, then: "SharpSansNo1-Medium" }
             ]},
-			font-size: 38,
+			font-size: { if: =page.section, equals: SPECIAL_REPORT, then: 40, else: 38 },
 			line-height: 40,
 			color: { if: =page.section, equals: WSJ_MAGAZINE, then: #212121 },
 			text-transform: { if: =page.section, equals: WSJ_MAGAZINE, then: uppercase }

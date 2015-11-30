@@ -32,7 +32,7 @@
 		{.border-mark: {
 			font-size: 1,
 			line-height: 1,
-			color: transparent,
+            color:#000,
 			content: "Future_Of_Everything"
 		}},
 		{.article_headline:{
@@ -48,22 +48,6 @@
 			line-height: 28,
 			color: #5D5D5D,
 			padding: [6, 0, 0, 0]
-        }},
-        {#media_caption: {
-				layout-grid-line: 1,
-				layout-grid-line-offset: 0,
-		        color: #212121,
-		        font-size: 11,
-		        line-height: 15,
-                font-name: "SharpSansNo1-Medium",
-		        border-width: [0, 0, 1, 0],
-		        border-color: #d8d8d8,
-				padding: { if-all: [
-						{ if: =page.number, equals: 0, then: true, else: false },
-						{ if: =scale.phone, then: true, else: false }
-					], then: [6, 10, 0, 10], else: [6, 0, 0, 0]
-				},
-				text-indent: 0
         }},
         {#media_caption: {
 				layout-grid-line: 1,
@@ -99,8 +83,7 @@
             line-height:{$multiply: [20, =view.zoomlevel]},
             text-align: justify,
             hyphens:auto,
-            color:#222221,
-            text-indent:=text.indent
+            color:#222221
 		}},
 		{#mark_category:{
 			content: =article.category

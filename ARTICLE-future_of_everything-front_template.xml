@@ -21,12 +21,10 @@
 			options: {
 				background_color: =color.background,
 				indent: true
-			},
-            padding: [40, 0, 0, 0]
+			}
 		},
 		jpml: {
-			background-color: =color.background,
-			padding: [64, 0, 0, 0]
+			background-color: =color.background
 		}
 	}</style>
     <box id="page_details" embed="pagedescription" />

@@ -5,7 +5,6 @@
     <style>{
         #page_details: {
             options: {
-                hideHeaderBorder: true,
                 tintTitle: true
             }
         }

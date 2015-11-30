@@ -35,7 +35,7 @@
 		}},
 		{.article_headline:{
 			font-name: "SharpSansNo1-Bold",
-			font-size: 36,
+			font-size: 38,
 			line-height:42,
 			color: #262626,
 			padding:[16, 0, 0, 0]
@@ -49,7 +49,9 @@
 		}},
 		{.module_flashline:{
 			font-name: "SharpSansNo1-Medium",
-			color: #004990
+            color: #004990,
+            font-size:{$multiply: [14, =view.zoomlevel]},
+            line-height:{$multiply: [15, =view.zoomlevel]}
 		}},
 		{.article_body:{
             font-name: "DJ5Exchange-Medium",

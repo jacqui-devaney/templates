@@ -83,7 +83,7 @@
 					}
                 },
 				#b6 : {
-					height:190,
+					height:210,
 					top:0,
 					options: {
 						bind: {if: =articles.b6.no_binding, then: none},
@@ -94,7 +94,7 @@
 					}
 				},
 				#b7 : {
-					height:190,
+					height:210,
 					top:220,
 					options: {
 						bind: {if: =articles.b7.no_binding, then: none},

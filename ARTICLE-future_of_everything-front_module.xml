@@ -20,12 +20,10 @@
 			layout-grid-line-offset: {$multiply: [20, =view.zoomlevel]}
         }},
 		{.border-p:{
-			border-width:[6, 0, 5, 0],
 			layout-grid-line: 0,
 			layout-grid-line-offset: 0,
-			background-color: #CACACA,
-			border-color: =color.background,
-			padding:[0,0,0,0]
+			border-color: =color.background
+
 		}},
 		{.border-mark: {
 			font-size: 1,
@@ -46,7 +44,23 @@
 			line-height: 28,
 			color: #5D5D5D,
 			padding: [6, 0, 0, 0]
-		}},
+        }},
+        {#media_caption: {
+				layout-grid-line: 1,
+				layout-grid-line-offset: 0,
+		        color: #212121,
+		        font-size: 11,
+		        line-height: 15,
+                font-name: "SharpSansNo1-Medium",
+		        border-width: [0, 0, 1, 0],
+		        border-color: #d8d8d8,
+				padding: { if-all: [
+						{ if: =page.number, equals: 0, then: true, else: false },
+						{ if: =scale.phone, then: true, else: false }
+					], then: [6, 10, 0, 10], else: [6, 0, 0, 0]
+				},
+				text-indent: 0
+        }},
 		{.module_flashline:{
 			font-name: "SharpSansNo1-Medium",
             color: #004990,

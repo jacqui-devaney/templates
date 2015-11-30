@@ -18,9 +18,7 @@
           bottom:44
     }
   }</style>
-  <style> {
-        {if: =scale.phone, then: {
-			{
+  <style>{if: =scale.rail, then: {
         #view: {
           options: {
             background_color: =color.background,
@@ -28,8 +26,7 @@
             module: {if: =page.number, equals: 0, then: url(ARTICLE-future_of_everything-front_module.xml), else: url(ARTICLE-future_of_everything-continuation_module.xml)}
           }
         }
-      }
-      }}}</style>
+      }}</style>
   <style>{
     if: =intent.ad, then: {
       jpml: {

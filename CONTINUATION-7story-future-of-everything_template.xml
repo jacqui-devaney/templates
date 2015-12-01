@@ -48,7 +48,7 @@
 				},
 				#b3 : {
 					height:190,
-					top:420,
+					top:620,
 					options: {
 						bind: {if: =articles.b3.no_binding, then: none},
 						top_border: true,
@@ -60,10 +60,9 @@
 				},
 				#b4 : {
 					height:190,
-					top:620,
+                    top:0,
 					options: {
 						bind: {if: =articles.b4.no_binding, then: none},
-						top_border: true,
 						squarish_image: true,
                         medium_headline: true,
 						show_body: true,
@@ -72,7 +71,7 @@
 				},
 				#b5 : {
 					height:190,
-					top:620,
+					top:220,
 					options: {
 						bind: {if: =articles.b5.no_binding, then: none},
 						top_border: true,
@@ -84,18 +83,19 @@
                 },
 				#b6 : {
 					height:210,
-					top:0,
+					top:420,
 					options: {
 						bind: {if: =articles.b6.no_binding, then: none},
 						squarish_image: true,
                         medium_headline: true,
+						top_border: true,
 						show_body: true,
 						image_idiom: "portrait"
 					}
 				},
 				#b7 : {
 					height:190,
-					top:220,
+					top:620,
 					options: {
 						bind: {if: =articles.b7.no_binding, then: none},
 						top_border: true,
@@ -196,8 +196,8 @@
 <box id="page_details" class="tablet_only" embed="pagedescription" />
     <box id="b1" embed="article" class="column8-6 positionx1 maude unit_plain" module="LEFT-IMAGE_module.xml" />
     <box id="b2" embed="article" class="column4-6 positionx9-1 maude unit_plain" module="LEFT-IMAGE_module.xml" />
-    <box id="b3" embed="article" class="column4-6 positionx13-7 maude unit_plain" module="LEFT-IMAGE_module.xml" />
-    <box id="b4" embed="article" class="column4-6 positionx9-1 maude unit_plain" module="LEFT-IMAGE_module.xml" />
+    <box id="b3" embed="article" class="column4-6 positionx13-1 maude unit_plain" module="LEFT-IMAGE_module.xml" />
+    <box id="b4" embed="article" class="column4-6 positionx9-7 maude unit_plain" module="LEFT-IMAGE_module.xml" />
     <box id="b5" embed="article" class="column4-6 positionx13-7 maude unit_plain" module="LEFT-IMAGE_module.xml" />
     <box id="b6" embed="article" class="column4-6 positionx1-7 maude unit_plain" module="LEFT-IMAGE_module.xml" />
     <box id="b7" embed="article" class="column4-6 positionx5-7 maude unit_plain" module="LEFT-IMAGE_module.xml" />

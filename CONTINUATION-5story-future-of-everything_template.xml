@@ -9,9 +9,7 @@
     	#page_details: {
 			frame: [0, 0, 10, 10],
 			options: {
-                if: =portrait, then: {
 				title: ""
-			}
 		}
         }}, else:{tintTitle: true}}
     </style>
@@ -115,6 +113,7 @@
 						bind: {if: =articles.b3.no_binding, then: none},
 						top_image: true,
 
+                        top_border: true,
 						large_headline: true,
 						show_body: true,
 						image_idiom: "landscape"

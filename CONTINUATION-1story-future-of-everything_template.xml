@@ -9,9 +9,7 @@
     	#page_details: {
 			frame: [0, 0, 10, 10],
 			options: {
-                if: =portrait, then: {
 				title: ""
-			}
 		}
         }}, else:{tintTitle: true}}
     </style>

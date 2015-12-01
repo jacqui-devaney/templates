@@ -50,6 +50,7 @@
 			padding: [0, 0, 0, 12]
 		},
 		.article_body: {
+            font-name: { if: =page.section, equals: SPECIAL_REPORT, then: "SharpSansNo1-Medium" }
 		}
 	}</style>
 	<box id="large_media" embed="media"/>

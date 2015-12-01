@@ -62,7 +62,9 @@
 			height: 1
 		},
 		.article_body: {
-			text-align: center
+            text-align: center,
+            font-name: { if: =page.section, equals: SPECIAL_REPORT, then: "SharpSansNo1-Medium" }
+
 		},
 		.body-last-p-mark: {
 			display: none

@@ -75,7 +75,10 @@
                     color:{if: =article.read, then: color.articleReadColor}
                 },
                 image: {
-                    height: 122
+                    height: {
+                    $switch: [
+                    if: =view.width, equals: 320, then:{
+                    ]}
                 },
                 #vertical: {
                     padding: [0, 0, 0, 16]

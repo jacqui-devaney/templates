@@ -868,13 +868,34 @@
         ]
       },
       {
-        "filename": "CONTINUATION-1story-future-of-everything_template.xml",
+        "filename": "DECO-1story-future-of-everything_template.xml",
         "section": "SPECIAL_REPORT",
         "title": "Full size Deco",
         "usage": "front",
         "boxes": [
           {
             "id": "deco",
+            "images": {
+              "portrait": {
+                "width": 768,
+                "height": 1024
+              },
+              "landscape": {
+                "width": 1024,
+                "height": 768
+              }
+            }
+          }
+        ]
+      },
+      {
+        "filename": "CONTINUATION-1story-future-of-everything_template.xml",
+        "section": "SPECIAL_REPORT",
+        "title": "Full size 1 story",
+        "usage": "front",
+        "boxes": [
+          {
+            "id": "b1",
             "images": {
               "portrait": {
                 "width": 768,

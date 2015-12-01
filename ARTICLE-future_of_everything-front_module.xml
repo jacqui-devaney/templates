@@ -67,7 +67,8 @@
             line-height:{$multiply: [20, =view.zoomlevel]},
             hyphens:auto,
             color:#222221,
-            text-align: justify
+            text-align: justify,
+            text-indent:=text.indent
 		}},
         {.body:{
         }},

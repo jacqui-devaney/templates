@@ -77,7 +77,9 @@
                 image: {
                     height: {
                     $switch: [
-                    if: =view.width, equals: 320, then:{
+                    {if: =view.width, equals: 320, then: 78},
+                    {if: =view.width, equals: 375, then: 100},
+                    {if: =view.width, equals: 414, then: 122}
                     ]}
                 },
                 #vertical: {
@@ -95,7 +97,13 @@
                     }
                 },
                 #image_container: {
-                    width: 183,
+                    width: {
+                       $switch:[
+                        {if: =view.width, equals: 320, then: 117},
+                        {if: =view.width, equals: 375, then: 150},
+                        {if: =view.width, equals: 414, then: 183}
+                       ]
+                    },
                     padding: [6, 0, 0, 4],
                     image-scale: 1,
                     anchor-x: right,

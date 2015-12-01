@@ -111,7 +111,6 @@
 					top:270,
 					options: {
 						bind: {if: =articles.b3.no_binding, then: none},
-						top_image: true,
 
                         top_border: true,
 						large_headline: true,
@@ -128,6 +127,7 @@
                         top_border: true,
                         medium_headline: true,
 						show_body: true,
+                        top_border: true,
 						image_idiom: "landscape"
 					}
 				},

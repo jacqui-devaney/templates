@@ -43,6 +43,7 @@
 		}},
 		{.article_subhed:{
 			font-name: "SharpSansNo1-MediumItalic",
+            text-align: left,
 			font-size: 22,
 			line-height: 28,
 			color: #5D5D5D,
@@ -65,7 +66,8 @@
             font-size:{$multiply: [14, =view.zoomlevel]},
             line-height:{$multiply: [20, =view.zoomlevel]},
             hyphens:auto,
-            color:#222221
+            color:#222221,
+            text-align: justify
 		}},
         {.body:{
         }},

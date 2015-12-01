@@ -19,13 +19,13 @@
 	<style> {
 		$switch: [
 			{if: =scale.rail, then: {
-				#b1: {
+				#deco: {
 					width: =view.width
 				}
 			}},
 			{if: =portrait, then: {
 				jpml: {padding:[0]},
-				#b1:	{
+				#deco:	{
 					top:0,
 					height:1024,
 					options:{very_large_caps_headline:true, image_idiom:portrait, white_text:true, full_screen:true, large_body:true}
@@ -34,7 +34,7 @@
 			}},
 			{if: =landscape, then: {
 				jpml: {padding:[0]},
-				#b1:	{
+				#deco:	{
 					top:0,
 					height:768,
 					options:{very_large_caps_headline:true, white_text:true, image_idiom:landscape, full_screen:true, large_body:true}
@@ -43,5 +43,5 @@
 		]
 	} </style>
 	<box id="page_details" class="tablet_only" embed="pagedescription" />
-	<box id="b1" embed="article" class="column_full positionx_full maude unit_full" module="FULL-SIZE_module.xml" />
+	<box id="deco" embed="article" class="column_full positionx_full maude unit_full" module="FULL-SIZE_module.xml" />
 </jpml>

@@ -11,7 +11,7 @@
 		{.article_body: {
 			line-height: {$multiply: [22, =view.zoomlevel]},
 			text-align: left,
-			hyphens: auto
+            hyphens: auto
         }},
 		{#body_continuation: {
 			content: from-flow(article_body),
@@ -21,10 +21,9 @@
             padding: [4, 0, 0, 0]
 		}},
 		{#media_asset: {
-            padding: [4, 4, 4, 4]
+            padding: [4, 0, 4, 0]
 		}},
 		{#media_caption: {
-			padding: [0, 16, 0, 16],
 			text-indent: 0
 		}}
 		]

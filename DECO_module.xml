@@ -13,7 +13,7 @@
 				anchor-y: { if: =options.caption_top, then: top, else: bottom },
 				display:{if: =options.no_caption, then:none, else:inherit}
 			},
-      .deco_headline: {
+          .deco_headline: {
 				font-size: {$switch: [
 					{if: =options.large_headline, then:36},
 					{if: =options.medium_headline, then:24},

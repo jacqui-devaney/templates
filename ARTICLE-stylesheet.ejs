@@ -39,7 +39,7 @@
 
 	},
 	.byline-author: {
-		font-name: ChronicleDisplay-Italic,
+		font-name: "ChronicleSSm-Book-Italic",
         font-size: 15,
         line-height: 22,
         color: #2fbfbf
@@ -60,14 +60,16 @@
 		content: " Y"
 	},
 	strong: {
-        font-name:{if: =intent.article, then:ChronicleDisplay-Bold, else:ChronicleDisplay-Black},
+        font-name:{if: =intent.article, then:ChronicleSSm-Book},
         color: #2fbfbf
 	},
 	em: {
-        font-name:{if: =intent.article, then:ChronicleDisplay-BlackItalic, else:ChronicleDisplay-Black}
+        font-name:{if: =intent.article, then:ChronicleSSm-Book},
+        color: #2fbfbf
 	},
 	cite: {
-		font-name:{if: =intent.article, then:ChronicleDisplay-BlackItalic, else:ChronicleDisplay-Black}
+        font-name:{if: =intent.article, then:ChronicleSSm-Book},
+        color: #2fbfbf
 	},
 	.byline-credit: {
 		display: {if-any: [
@@ -77,7 +79,7 @@
 		then: none,
         else: inherit},
         font-name:Whitney-Book,
-        color: #a7afaf,
+        color: #878f8f,
         font-size: 13,
         line-height: 22,
         text-transform: uppercase
@@ -122,10 +124,9 @@
 		content: "TWTR-TWTR-"
 	},
 	#media_caption: {
-        color: #4f5757,
+        color: #878f8f,
         font-size: 17,
         line-height: 22,
-        padding: [8, 16, 22, 16],
 		font-name: "Whitney-Book"
 	},
 	#mark_caption: {

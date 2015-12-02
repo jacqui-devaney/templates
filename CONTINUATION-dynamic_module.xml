@@ -27,7 +27,6 @@
 				},
 				else: {
 					padding: [
-						{if: =options.show_body, then: {if: =scale.phone, then: 24.5, else: 9.5}, else: 0.5},
 						{if: =scale.phone, then: {if: =options.show_body, then: 16, else: 24}, else: 0},
 						{if: =options.show_body, then: {if: =scale.phone, then: 8, else: 0}, else: 0},
 						{if: =scale.phone, then: 16, else: 0}

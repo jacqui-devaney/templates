@@ -11,7 +11,7 @@
 		font-name: Whitney-Book,
 		font-size:17,
 		line-height:22,
-		color:#3b4343
+        color:#3b4343
 	},
 	.module_headline: {
 		$join: [
@@ -40,14 +40,13 @@
 		]
 	},
 	.body: {
-		font-size:16,
-		line-height:24,
-		color:{if: =article.read, then: color.articleReadColor}
+		font-size:15,
+		line-height:22,
+        color:{if: =article.read, then: color.articleReadColor}
 	},
 	.ahed_headline:{
 		font-size:17,
 		line-height:22,
-		padding:[0, 0, 0, 0],
 		text-overflow: =text.overflow,
 		font-name: Whitney-Book,
 		color:#333
@@ -57,8 +56,7 @@
         font-name: Whitney-Semibold,
 		font-size:16,
 		line-height:18,
-		color:#656565,
-		paragraph-padding: [ 0, 0, 20, 0 ]
+		color:#656565
 	},
 
 	#deco_headline: {
@@ -71,7 +69,7 @@
 	},
 	.deco_caption: {
 		font-size:14,
-		padding: [0, 16, 22, 16],
+		padding: [0, 20, 22, 16],
 		line-height:14
 	},
 	#strap: {
@@ -97,7 +95,6 @@
 	},
 	.highlight_flashline: {
 		font-size:14,
-		padding: [ 0, 0, 0, 0 ],
 		line-height:14
 	},
 	.highlight_headline: {
@@ -147,14 +144,15 @@
 		font-name: Whitney-Book,
 		font-size:13,
         line-height:22,
-        color: #a7afaf
+        color: #a7afaf,
+        padding: [0, 0, 11, 0]
 	},
 	.article_body: {
 		font-size:{$multiply: [15, =view.zoomlevel]},
 		line-height:{$multiply: [22, =view.zoomlevel]},
         padding: [0, 3.5, 11, 3.5],
         font-name: ChronicleSSm-Book,
-        text-indent: -1
+        color:#3b4343
 	},
 	.border-mark: {
 		line-height: 4,

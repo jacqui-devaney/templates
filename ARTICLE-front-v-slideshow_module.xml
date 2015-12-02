@@ -16,14 +16,18 @@
 		},
 		.module_flashline: {
 			display: { if: =page.section, equals: WSJ_MAGAZINE, else: none },
-			font-name: { if: =page.section, equals: WSJ_MAGAZINE, then: "HelveticaNeue-Light" },
+            font-name:{ if: =page.section, equals: WSJ_MAGAZINE, then: "HelveticaNeue-Light" },
 			font-size: 10,
 			line-height: 14,
 			color: { if: =page.section, equals: WSJ_MAGAZINE, then: #212121 }
 		},
 		.article_headline: {
-			font-name: { if: =page.section, equals: WSJ_MAGAZINE, then: "DJ5EscrowCond-Light" },
-			font-size: 38,
+			font-name: { if: =page.section, equals: WSJ_MAGAZINE, then: "" },
+            font-name: {$switch:[
+            { if: =page.section, equals: WSJ_MAGAZINE, then: "DJ5EscrowCond-Light" },
+            { if: =page.section, equals: SPECIAL_REPORT, then: "SharpSansNo1-Medium" }
+            ]},
+			font-size: { if: =page.section, equals: SPECIAL_REPORT, then: 40, else: 38 },
 			line-height: 40,
 			color: { if: =page.section, equals: WSJ_MAGAZINE, then: #212121 },
 			text-transform: { if: =page.section, equals: WSJ_MAGAZINE, then: uppercase }
@@ -46,6 +50,7 @@
 			padding: [0, 0, 0, 12]
 		},
 		.article_body: {
+            font-name: { if: =page.section, equals: SPECIAL_REPORT, then: "SharpSansNo1-Medium" }
 		}
 	}</style>
 	<box id="large_media" embed="media"/>

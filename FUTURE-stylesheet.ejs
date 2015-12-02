@@ -1,0 +1,63 @@
+{
+	strong: {
+		font-name:{if: =intent.article, then:SharpSansNo1-Bold}
+	},
+	em: {
+		font-name:{if: =intent.article, then:DJ5Exchange-MediumItalic, else:DJ5Exchange-Medium}
+	},
+	cite: {
+		font-name:{if: =intent.article, then:DJ5Exchange-MediumItalic, else:DJ5Exchange-Medium}
+	},
+
+
+	h2: {
+		font-name:{if: =intent.article, then:SharpSansNo1-Bold},
+		text-indent:0
+	},
+
+	h3: {
+		font-name:{if: =intent.article, then:SharpSansNo1-Bold},
+		text-indent: 0,
+		text-align: center
+	},
+
+    .body: {
+    },
+
+	.body-last-p-mark: {
+		display: {if:=intent.article, then:default, else:none},
+		font-name: "DJ5Utility-Regular",
+		font-size:{$multiply: [15, =view.zoomlevel]},
+		content: " Y"
+	},
+
+	.future-divider-mark: {
+		font-size: 1,
+		line-height: 1,
+		color: transparent,
+		content: "divider"
+	},
+
+	.future-footnotes: {
+		font-name: "Whitney-Medium",
+		font-size: { if: =scale.phone, then: {$multiply: [14, =view.zoomlevel]}, else: {$multiply: [11, =view.zoomlevel]} },
+		line-height: { if: =scale.phone, then: {$multiply: [18, =view.zoomlevel]}, else: {$multiply: [15, =view.zoomlevel]} },
+		layout-grid-line: 0,
+		layout-grid-line-offset: 0,
+		color: #898B8E
+	},
+
+	.future-related-content: {
+		layout-grid-line: 0,
+		layout-grid-line-offset: 0,
+		font-name: "Whitney-Medium",
+		color: #222222
+	},
+
+	.future-questions: {
+		layout-grid-line: 0,
+		layout-grid-line-offset: 0,
+		font-name: "Whitney-Medium",
+		color: #222222
+	}
+}

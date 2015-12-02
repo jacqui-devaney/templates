@@ -1,0 +1,17 @@
+<pages preprocessor="preprocessor.ejs" class="article">
+
+                <page template="ARTICLE-future_of_everything-front_template.xml" type="prefix" for="tablet">
+                                <link id="view" module="ARTICLE-future_of_everything-front_module.xml"/>
+                </page>
+
+    <!-- These pages will repeat as needed, hence the "repeat" type -->
+                <page template="ARTICLE-future_of_everything-continuation_template.xml" type="repeat" for="tablet">
+                                <link id="view" module="ARTICLE-future_of_everything-continuation_module.xml"/>
+                </page>
+
+    <!-- The "suffix" type is used to render the last page. -->
+                <page template="ARTICLE-future_of_everything-continuation_template.xml" type="suffix" for="tablet">
+                                <link id="view" module="ARTICLE-future_of_everything-continuation_module.xml"/>
+                </page>
+
+</pages>

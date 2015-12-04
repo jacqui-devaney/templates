@@ -90,34 +90,57 @@
 				},
 				#b2 : {
 					height: =size.continuation_height_large,
-					options: { bind: {if: =articles.b2.no_binding, then: none}, show_body: true, small_headline: true, module: url(CONTINUATION-dynamic_module.xml) }
+					options: { bind: {if: =articles.b2.no_binding, then: none}, show_body: true, small_headline: true, module: url(CONTINUATION-dynamic_module.xml) },
+                    bottom: -11,
+                    top: -11
 				},
 				#b3 : {
 					height: =size.continuation_height_large,
+                    position: relative,
+                    top: -11,
+                    bottom: -11,
 					options: { bind: {if: =articles.b3.no_binding, then: none}, show_body: true, small_headline: true, module: url(CONTINUATION-dynamic_module.xml) }
 				},
 				#b4 : {
 					height: =size.continuation_height_large,
+                    position: relative,
+                    top: -11,
+                    bottom: -11,
 					options: { bind: {if: =articles.b4.no_binding, then: none}, show_body: true, small_headline: true }
 				},
 				#b5 : {
 					height: =size.continuation_height_large,
+                    position: relative,
+                    top: -11,
+                    bottom: -11,
 					options: { bind: {if: =articles.b5.no_binding, then: none}, show_body: true, small_headline: true }
 				},
 				#b6 : {
 					height: =size.continuation_height_large,
+                    position: relative,
+                    top: -11,
+                    bottom: -11,
 					options: { bind: {if: =articles.b6.no_binding, then: none}, show_body: true, small_headline: true }
 				},
 				#b7 : {
 					height: =size.continuation_height_large,
+                    position: relative,
+                    top: -11,
+                    bottom: -11,
 					options: { bind: {if: =articles.b7.no_binding, then: none}, show_body: true, small_headline: true }
 				},
 				#b8 : {
 					height: =size.continuation_height_large,
+                    position: relative,
+                    top: -11,
+                    bottom: -11,
 					options: { bind: {if: =articles.b8.no_binding, then: none}, show_body: true, small_headline: true }
 				},
 				#b9 : {
 					height: =size.continuation_height_large,
+                    position: relative,
+                    top: -11,
+                    bottom: -11,
 					options: { bind: {if: =articles.b9.no_binding, then: none}, show_body: true, small_headline: true }
 				}
 			}},

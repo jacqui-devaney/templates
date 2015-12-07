@@ -1,4 +1,4 @@
-<jpml id="ARTICLE-standard_template">
+<jpml id="ARTICLE-front_template">
 	<style src="GLOBAL-stylesheet.ejs"/>
   <style src="GRID-stylesheet.ejs"/>
   <style src="PHONE-stylesheet.ejs" />
@@ -8,7 +8,7 @@
       background-color: =color.background
     },
     #page_details: {
-      display: none,
+      display: {if: =scale.phone, then: none},
       options: {
           tintTitle: true
       }
@@ -18,7 +18,7 @@
       height:{$multiply: [2, =view.height]}
     }, else: {
       top:0,
-      bottom:24
+      bottom:44
     }}
   }</style>
   <style> {
@@ -27,7 +27,7 @@
         #view: {
           options: {
             background_color: =color.background,
-            indent: false,
+            indent: true,
             module: {if: =page.number, equals: 0, then: url(ARTICLE-front-phone_module.xml), else: url(ARTICLE-continuation-phone_module.xml)}
           }
         }

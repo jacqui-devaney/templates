@@ -13,8 +13,7 @@
 			image:{
 				width:=view.width,
 				height: {$subtract:[=view.height, 1]},
-                gravity:aspect-fill,
-                padding: [40, 40, 40, 40]
+				gravity:aspect-fill
 			},
 			#deco_caption_container: {
 				background-color:"rgba(0, 0, 0, .6)",

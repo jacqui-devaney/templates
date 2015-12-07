@@ -3,7 +3,6 @@
 	<style src="GLOBAL_MODULES-stylesheet.ejs" />
 	<style>{
 			image:{
-                padding: [4, 4, 4, 4],
 				width:=view.width,
                 height: {$subtract:[=view.height, 1]}
 			},

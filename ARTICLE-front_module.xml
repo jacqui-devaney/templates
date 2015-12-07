@@ -15,7 +15,7 @@
             column-gutter: 12,
 			flow: article_body,
 			min-height: {if: =page.hasmedia, then:400, else:300},
-			padding:[4, 0, 0, 0],
+			padding:[10, 0, 0, 0],
 			layout-grid-line: {$multiply: [20, =view.zoomlevel]},
 			layout-grid-line-offset: {$multiply: [20, =view.zoomlevel]}
 

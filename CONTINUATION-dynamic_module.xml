@@ -18,18 +18,19 @@
 		#content: {
 			if: =options.show_strap,
 			then: {
-				padding: {if: =scale.phone, then: [16, 24, 16, 0]}
+				padding: {if: =scale.phone, then: [16, 24, 0, 0]}
 			},
 			else: {
 				if: =options.hide_border,
 				then: {
-					padding: {if: =scale.phone, then: [16, 24, 16, 0]}
+					padding: {if: =scale.phone, then: [0, 24, 0, 0]}
 				},
 				else: {
 					padding: [
-						{if: =scale.phone, then: {if: =options.show_body, then: 16, else: 24}, else: 0},
+						{if: =options.show_body, then: {if: =scale.phone, then: 24.5, else: 9.5}, else: 0.5},
+						{if: =scale.phone, then: {if: =options.show_body, then: 9, else: 24}, else: 0},
 						{if: =options.show_body, then: {if: =scale.phone, then: 8, else: 0}, else: 0},
-						{if: =scale.phone, then: 16, else: 0}
+						{if: =scale.phone, then: 0, else: 0}
 					],
 					border-width: [0.5, 0, 0, 0],
 					border-color: #d8d8d8
@@ -46,12 +47,12 @@
 		},
 		#image_container: {
 			width: 111,
+			padding: [0, 0, 0, 8],
 			image-scale: 0.5,
-            anchor-x: right,
-            padding: [0, 0, 22, 0]
+			anchor-x: right
 		},
 		image: {
-			height: 78
+			height: 111
 		},
 		.key: {
 			display: {
@@ -69,31 +70,24 @@
     }</style>
     <style>{
     	if: =scale.phone, then: {
-                .module_headline: {
-                    padding: { if: =options.show_body, else: [4, 0, 4, 0] },
-                    color:{if: =article.read, then: color.articleReadColor}
-                },
-                image: {
-                    height: {
-                    $switch: [
-                    {if: =view.width, equals: 320, then: 78},
-                    {if: =view.width, equals: 375, then: 100},
-                    {if: =view.width, equals: 414, then: 122}
-                    ]}
-                },
-                #vertical: {
-                    padding: [0, 0, 0, 16]
-                },
-                #body: {
-                    height: 176,
-                    position: relative,
-                    padding: [4, 0, 0, 16]
-                },
-                #article_status: {
-                    padding: [{if: =options.show_body, then: 12, else: 5}, 4, 24, 4],
-                    left: -24,
-                    width: 16,
-                    options: {
+			.module_headline: {
+				padding: { if: =options.show_body, else: [4, 0, 0, 0] },
+				color:{if: =article.read, then: color.articleReadColor}
+			},
+			#vertical: {
+				padding: [0, 0, 0, 24]
+			},
+			.body: {
+				padding: [0, 0, 0, 24]
+			},
+			#article_status: {
+				position: relative,
+				padding: [{if: =options.show_body, then: 1, else: 5}, 4, 0, 4],
+				top: 0,
+				left: -24,
+				width: 16,
+				height: 16,
+				options: {
 					identifier: =article.id
                     }
                 },
@@ -122,20 +116,20 @@
     		}
     	}
     }</style>
-	<box id="page_details" embed="pagedescription" />
+    <box id="page_details" embed="pagedescription" />
 	<panel id="strap">
 		<p class="subsection"><mark id="m_subsection"/></p>
 	</panel>
 	<panel id="content">
 		<panel id="vertical">
+        <p id="headline" class="module_headline"><mark class="m_headline" /><mark class="key" /></p>
 			<box id="article_status" embed="article-status"></box>
-			<p id="headline" class="module_headline"><mark class="m_headline" /><mark class="key" /></p>
 		</panel>
-        <box id="body">
 	 	<box id="image_container" embed="deco-image">
 			<image class="summary-image" />
 		</box>
+        <panel class="body">
         	<p id="body-first-p"><mark class="body-first-p-mark" /><mark class="module_summary" /></p>
-        </box>
+        </panel>
 	</panel>
 </jpml>

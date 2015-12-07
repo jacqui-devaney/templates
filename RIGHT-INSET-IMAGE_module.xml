@@ -75,7 +75,7 @@
 
 				},
 				.body: {
-                    display: {if: =options.show_body, then:inherit, else:none}
+					display: {if: =options.show_body, then:inherit, else:none}
 
 				},
 				.module_flashline: {

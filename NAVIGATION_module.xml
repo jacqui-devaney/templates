@@ -56,10 +56,10 @@
 	}</style>
 	<style>{
 		.article_subhed: {
-			font-name: Whitney-Book,
-			font-size:17,
-			line-height:22,
-			color: #4f5757,
+			font-name: DJ5Exchange-MediumItalic,
+			font-size:14,
+			line-height:17,
+			color: #666666,
 			padding:[-2,0,0,0]
 		},
 		.module_headline: {
@@ -78,11 +78,12 @@
 			color: #555555
 		},
 		.byline: {
-			font-size:17,
-			font-name: Whitney-Book,
-			line-height:22,
+			font-size:14,
+			font-name: DJ5Exchange-Medium,
+			line-height:16,
+			text-transform:uppercase,
 			padding:[-4,0,4,0],
-			color: #a7afaf
+			color: #666666
 		}
 	}</style>
 

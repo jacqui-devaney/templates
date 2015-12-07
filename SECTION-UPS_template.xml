@@ -47,7 +47,7 @@
 					height: =size.continuation_height_large,
 					options: {
 						bind: {if: =articles.b2.no_binding, then: none},
-						module: url(CONTINUATION-dynamic_module.xml),
+						module: url(TOP-IMAGE_module.xml),
 						top_border: true,
 						show_body: true,
 						show_image: true,
@@ -61,7 +61,7 @@
 					padding: [22,0,0,0],
 					options: {
 						bind: {if: =articles.b3.no_binding, then: none},
-						module: url(CONTINUATION-dynamic_module.xml),
+						module: url(TOP-IMAGE_module.xml),
 						show_body: true,
 						show_image: true,
 						float_image: right,

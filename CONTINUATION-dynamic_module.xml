@@ -78,8 +78,13 @@
 				padding: [0, 0, 0, 24]
 			},
 			.body: {
-				padding: [0, 0, 0, 24]
+				padding: [0, 12, 0, 24]
 			},
+            .body-first-p-mark:{
+                text-indent: -22,
+                position: relative,
+                font-size: 12
+            },
 			#article_status: {
 				position: relative,
 				padding: [{if: =options.show_body, then: 1, else: 5}, 4, 0, 4],
@@ -91,6 +96,14 @@
 					identifier: =article.id
                     }
                 },
+                #image:{
+                    height: {
+                        $switch: [
+                        {if: =view.width, equals: 320, then: 78},
+                        {if: =view.width, equals: 375, then: 100},
+                        {if: =view.width, equals: 414, then: 122}
+                        ]}
+                },
                 #image_container: {
                     width: {
                        $switch:[
@@ -99,16 +112,13 @@
                         {if: =view.width, equals: 414, then: 183}
                        ]
                     },
-                    padding: [6, 0, 0, 4],
+                    padding: [0, -4, 0, 0],
                     image-scale: 1,
                     anchor-x: right,
                     position: relative
                 }
     	}, else: {
     		#strap: {
-    			display: none
-    		},
-    		#image_container: {
     			display: none
     		},
     		#article_status: {
@@ -123,7 +133,6 @@
 	<panel id="content">
 		<panel id="vertical">
         <p id="headline" class="module_headline"><mark class="m_headline" /><mark class="key" /></p>
-			<box id="article_status" embed="article-status"></box>
 		</panel>
 	 	<box id="image_container" embed="deco-image">
 			<image class="summary-image" />

@@ -80,6 +80,9 @@
 			#headline: {
 				padding: [8, 0, 0, 0]
 			},
+            .module_headline: {
+                padding: [0, 0, 0, 8]
+            },
 			image: {
 				height: {$multiply: [=view.width, .665 ]},
 				width:=view.width,

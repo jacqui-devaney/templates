@@ -75,10 +75,10 @@
 				color:{if: =article.read, then: color.articleReadColor}
 			},
 			#vertical: {
-				padding: [0, 0, 0, 24]
+				padding: [0, 23, 0, 23]
 			},
 			.body: {
-				padding: [0, 12, 0, 24]
+				padding: [4, 12, 0, 24]
 			},
             .body-first-p-mark:{
                 text-indent: -22,
@@ -96,13 +96,13 @@
 					identifier: =article.id
                     }
                 },
-                #image:{
+                image:{
                     height: {
                         $switch: [
                         {if: =view.width, equals: 320, then: 78},
                         {if: =view.width, equals: 375, then: 100},
                         {if: =view.width, equals: 414, then: 122}
-                        ]}
+                    ]}
                 },
                 #image_container: {
                     width: {
@@ -112,7 +112,7 @@
                         {if: =view.width, equals: 414, then: 183}
                        ]
                     },
-                    padding: [0, -4, 0, 0],
+                    padding: [6, -4, 0, 0],
                     image-scale: 1,
                     anchor-x: right,
                     position: relative

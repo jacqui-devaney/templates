@@ -36,11 +36,10 @@
 		line-height:4,
 		color: transparent,
 		content: "unfortunate"
-
 	},
 	.byline-author: {
-		text-transform:uppercase
-	},
+        text-transform: {if: =scale.phone, then: none, else: uppercase}
+    },
 	h2: {
 		font-name:{if: =intent.article, then:DJ5Exchange-Bold, else:DJ5Exchange-Medium},
 		text-indent:0

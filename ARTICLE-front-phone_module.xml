@@ -28,7 +28,22 @@
             line-height: 22,
             border-width: [0, 0, 1, 0],
             border-color: #e1e0df
-		}
+		},
+        #media_caption: {
+        layout-grid-line: 1,
+        layout-grid-line-offset: 0,
+        color: #4f5757,
+        font-size: 17,
+        line-height: 22,
+        font-name: "Whitney-Book",
+        padding: { if-all: [
+                { if: =page.number, equals: 0, then: true, else: false },
+                { if: =scale.phone, then: true, else: false }
+            ], then: [6, 16, 22, 16], else: [6, 0, 0, 0]
+        }},
+        #mark_caption: {
+            content: =media.caption
+        }
 	}</style>
 	<p class="article_flashline" embed="flashline"/>
 

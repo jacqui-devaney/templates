@@ -78,8 +78,7 @@
 				padding: [0, 23, 0, 23]
 			},
 			.body: {
-				padding: [4, 12, 0, 24],
-                height: 176
+				padding: [4, 12, 0, 24]
 			},
 			#article_status: {
 				position: relative,
@@ -133,8 +132,8 @@
 	 	<box id="image_container" embed="deco-image">
 			<image class="summary-image" />
 		</box>
-        <box class="body">
+        <panel class="body">
         	<p id="body-first-p"><mark class="body-first-p-mark" /><mark class="module_summary" /></p>
-        </box>
+        </panel>
 	</panel>
 </jpml>

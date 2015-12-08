@@ -36,26 +36,25 @@
 		}},
 		{.article_headline:{
             font-name: "WhitneySSm-Semibold",
-			font-size: 40,
-			line-height:42,
-			color: #262626,
-			padding:[16, 0, 0, 0]
+			font-size: 37,
+			line-height:40,
+			color: #262626
 		}},
 		{.article_subhed:{
 			font-name: "WhitneySSm-BookItalic",
-			font-size: 22,
-			line-height: 28,
+			font-size: 21,
+			line-height: 26,
 			color: #5D5D5D,
 			padding: [6, 0, 0, 0]
         }},
         {.byline: {
-            font-name: "WhitneySSm-Book",
+            font-name: "WhitneySSm-Semibold",
             font-size:{$multiply: [14, =view.zoomlevel]},
             line-height:{$multiply: [20, =view.zoomlevel]},
             color:#000
         }},
 		{.module_flashline:{
-			font-name: "WhitneySSm-Book",
+			font-name: "WhitneySSm-Semibold",
             color: #004990,
             font-size:{$multiply: [14, =view.zoomlevel]},
             line-height:{$multiply: [15, =view.zoomlevel]}

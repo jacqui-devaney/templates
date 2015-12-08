@@ -24,7 +24,7 @@
 		.article_headline: {
             font-name: {$switch:[
             { if: =page.section, equals: WSJ_MAGAZINE, then: "DJ5EscrowCond-Light" },
-            { if: =page.section, equals: SPECIAL_REPORT, then: "SharpSansNo1-Medium" }
+            { if: =page.section, equals: SPECIAL_REPORT, then: "WhitneySSm-Book" }
             ]},
 			font-size: { if: =page.section, equals: SPECIAL_REPORT, then: 40, else: 38 },
 			line-height: 40,
@@ -49,7 +49,7 @@
 			padding: [0, 0, 0, 12]
 		},
 		.article_body: {
-            font-name: { if: =page.section, equals: SPECIAL_REPORT, then: "SharpSansNo1-Medium" }
+            font-name: { if: =page.section, equals: SPECIAL_REPORT, then: "WhitneySSm-Book" }
 		}
 	}</style>
 	<box id="large_media" embed="media"/>

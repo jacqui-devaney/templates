@@ -162,7 +162,7 @@
 					font-size: {if: =options.large_headline, then: 32, else: 24},
 					line-height: {if: =options.large_headline, then: 36, else: 24},
 					padding:[0, 0, 2, 0],
-                    font-name: "SharpSansNo1-Bold"
+                    font-name: "WhitneySSm-Bold"
 				},
 				.body: {
 					color: #222221

@@ -35,27 +35,27 @@
 			content: "Future_Of_Everything"
 		}},
 		{.article_headline:{
-			font-name: "SharpSansNo1-Bold",
+			font-name: "WhitneySSm-Bold",
 			font-size: 40,
 			line-height:42,
 			color: #262626,
 			padding:[16, 0, 0, 0]
 		}},
 		{.article_subhed:{
-			font-name: "SharpSansNo1-MediumItalic",
+			font-name: "WhitneySSm-BookItalic",
 			font-size: 22,
 			line-height: 28,
 			color: #5D5D5D,
 			padding: [6, 0, 0, 0]
         }},
         {.byline: {
-            font-name: "SharpSansNo1-Medium",
+            font-name: "WhitneySSm-Book",
             font-size:{$multiply: [14, =view.zoomlevel]},
             line-height:{$multiply: [20, =view.zoomlevel]},
             color:#000
         }},
 		{.module_flashline:{
-			font-name: "SharpSansNo1-Medium",
+			font-name: "WhitneySSm-Book",
             color: #004990,
             font-size:{$multiply: [14, =view.zoomlevel]},
             line-height:{$multiply: [15, =view.zoomlevel]}

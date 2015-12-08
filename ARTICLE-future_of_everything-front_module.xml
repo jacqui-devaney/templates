@@ -51,7 +51,8 @@
             font-name: "WhitneySSm-Semibold",
             font-size:{$multiply: [14, =view.zoomlevel]},
             line-height:{$multiply: [20, =view.zoomlevel]},
-            color:#000
+            color:#000,
+            padding: [0, 0, 4, 0]
         }},
 		{.module_flashline:{
 			font-name: "WhitneySSm-Semibold",

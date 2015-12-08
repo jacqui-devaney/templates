@@ -159,13 +159,14 @@
 		<style>{
 			if: =page.section, equals: "SPECIAL_REPORT", then: {
                 .module_headline: {
-					font-size: {if: =options.large_headline, then: 32, else: 24},
-					line-height: {if: =options.large_headline, then: 36, else: 24},
-					padding:[0, 0, 2, 0],
-                    font-name: "WhitneySSm-Bold"
+					font-size: {if: =options.large_headline, then: 28, else: 20},
+					line-height: {if: =options.large_headline, then: 32, else: 20},
+					padding:[0, 0, 6, 0],
+                    font-name: "WhitneySSm-Black"
 				},
 				.body: {
-					color: #222221
+                    color: #222221,
+                    text-indent: 0
 				}
 			}
 		}</style>

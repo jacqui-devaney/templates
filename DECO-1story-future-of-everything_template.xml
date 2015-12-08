@@ -10,7 +10,8 @@
 			frame: [0, 0, 10, 10],
 			options: {
                 if: =portrait, then: {
-				title: ""
+                title: "",
+                tintTitle: true
 			}
 		}
         }}, else:{tintTitle: true}}

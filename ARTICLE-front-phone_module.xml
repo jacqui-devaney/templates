@@ -19,7 +19,7 @@
 		.article_body: {
 			line-height: {$multiply: [22, =view.zoomlevel]},
 			text-align: justify,
-			hyphens: auto
+            hyphens: auto
 		},
 		.article_flashline: {
             font-name: Whitney-Semibold,

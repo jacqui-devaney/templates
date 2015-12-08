@@ -162,7 +162,7 @@
 					font-size: {if: =options.large_headline, then: 28, else: 20},
 					line-height: {if: =options.large_headline, then: 32, else: 20},
 					padding:[0, 0, 6, 0],
-                    font-name: "WhitneySSm-Black"
+                    font-name: "WhitneySSm-Semibold"
 				},
 				.body: {
                     color: #222221,

@@ -89,138 +89,176 @@
 					options: { bind: {if: =articles.b1.no_binding, then: none}, show_body: true, medium_headline: true, module: url(TOP-IMAGE_module.xml) }
 				},
 				#b2 : {
-                    padding: [0, 0, 24, 0],
+                    position: relative,
+                    padding: [0, 0, 11, 0],
                     height:{
-                        if: =view.width, more-than: 320, then:{
+                        if: =view.width, equals: 414, then:{
                             if: {$count:[=articles.b2.headline]},
-                            more-than: 30,
+                            more-than: 35,
                             then:{
                             if: {$count:[=articles.b2.body_extract]},
                             less-than: 140,
                             then: {$multiply: [=view.width, .55]},
                             else: {$multiply: [=view.width, .65]}
+                            }, else:{
+                            if: {$count:[=articles.b2.body_extract]},
+                            less-than: 140,
+                            then: {$multiply: [=view.width, .55]},
+                            else: {$multiply: [=view.width, .6]}
                             }}},
-					options: { bind: {if: =articles.b2.no_binding, then: none}, show_body: true, small_headline: true, module: url(CONTINUATION-dynamic_module.xml) },
-                    bottom: -11,
-                    top: -11
+					options: { bind: {if: =articles.b2.no_binding, then: none}, show_body: true, small_headline: true }
 				},
 				#b3 : {
-                    padding: [0, 0, 24, 0],
+                    position: relative,
+                    padding: [0, 0, 11, 0],
                     height:{
-                        if: =view.width, more-than: 320, then:{
+                        if: =view.width, equals: 414, then:{
                             if: {$count:[=articles.b3.headline]},
-                            more-than: 30,
+                            more-than: 35,
                             then:{
                             if: {$count:[=articles.b3.body_extract]},
                             less-than: 140,
                             then: {$multiply: [=view.width, .55]},
                             else: {$multiply: [=view.width, .65]}
+                            }, else:{
+                            if: {$count:[=articles.b3.body_extract]},
+                            less-than: 140,
+                            then: {$multiply: [=view.width, .55]},
+                            else: {$multiply: [=view.width, .6]}
                             }}},
+					options: { bind: {if: =articles.b3.no_binding, then: none}, show_body: true, small_headline: true }
+				},
+				#b4 : {
                     position: relative,
                     top: -11,
                     bottom: -11,
-					options: { bind: {if: =articles.b3.no_binding, then: none}, show_body: true, small_headline: true, module: url(CONTINUATION-dynamic_module.xml) }
-				},
-				#b4 : {
-                    padding: [0, 0, 24, 0],
+                    padding: [0, 0, 11, 0],
                     height:{
-                        if: =view.width, more-than: 320, then:{
+                        if: =view.width, equals: 414, then:{
                             if: {$count:[=articles.b4.headline]},
-                            more-than: 30,
+                            more-than: 35,
                             then:{
                             if: {$count:[=articles.b4.body_extract]},
                             less-than: 140,
                             then: {$multiply: [=view.width, .55]},
                             else: {$multiply: [=view.width, .65]}
-                            }}},
-                    position: relative,
-                    top: -11,
-                    bottom: -11,
+                            }, else:{
+                            if: {$count:[=articles.b4.body_extract]},
+                            less-than: 140,
+                            then: {$multiply: [=view.width, .55]},
+                            else: {$multiply: [=view.width, .6]}
+                    }}},
 					options: { bind: {if: =articles.b4.no_binding, then: none}, show_body: true, small_headline: true }
 				},
 				#b5 : {
-                    padding: [0, 0, 24, 0],
+                    position: relative,
+                    top: -11,
+                    bottom: -11,
+                    padding: [0, 0, 11, 0],
                     height:{
-                        if: =view.width, more-than: 320, then:{
+                        if: =view.width, equals: 414, then:{
                             if: {$count:[=articles.b5.headline]},
-                            more-than: 30,
+                            more-than: 35,
                             then:{
                             if: {$count:[=articles.b5.body_extract]},
                             less-than: 140,
                             then: {$multiply: [=view.width, .55]},
                             else: {$multiply: [=view.width, .65]}
-                            }}},
-                    position: relative,
-                    top: -11,
-                    bottom: -11,
+                            }, else:{
+                            if: {$count:[=articles.b5.body_extract]},
+                            less-than: 140,
+                            then: {$multiply: [=view.width, .55]},
+                            else: {$multiply: [=view.width, .6]}
+                    }}},
 					options: { bind: {if: =articles.b5.no_binding, then: none}, show_body: true, small_headline: true }
 				},
 				#b6 : {
-                    padding: [0, 0, 24, 0],
+                    position: relative,
+                    top: -11,
+                    bottom: -11,
+                    padding: [0, 0, 11, 0],
                     height:{
-                        if: =view.width, more-than: 320, then:{
+                        if: =view.width, equals: 414, then:{
                             if: {$count:[=articles.b6.headline]},
-                            more-than: 30,
+                            more-than: 35,
                             then:{
                             if: {$count:[=articles.b6.body_extract]},
                             less-than: 140,
                             then: {$multiply: [=view.width, .55]},
                             else: {$multiply: [=view.width, .65]}
+                            }, else:{
+                            if: {$count:[=articles.b6.body_extract]},
+                            less-than: 140,
+                            then: {$multiply: [=view.width, .55]},
+                            else: {$multiply: [=view.width, .6]}
                     }}},
-                    position: relative,
-                    top: -11,
-                    bottom: -11,
 					options: { bind: {if: =articles.b6.no_binding, then: none}, show_body: true, small_headline: true }
 				},
 				#b7 : {
-                    padding: [0, 0, 24, 0],
+                    position: relative,
+                    top: -11,
+                    bottom: -11,
+                    padding: [0, 0, 11, 0],
                     height:{
-                        if: =view.width, more-than: 320, then:{
-                            if: {$count:[=articles.b7.headline]},
-                            more-than: 30,
+                        if: =view.width, equals: 414, then:{
+                            if: {$count:[=articles.b6.headline]},
+                            more-than: 35,
                             then:{
                             if: {$count:[=articles.b7.body_extract]},
                             less-than: 140,
                             then: {$multiply: [=view.width, .55]},
                             else: {$multiply: [=view.width, .65]}
+                            }, else:{
+                            if: {$count:[=articles.b7.body_extract]},
+                            less-than: 140,
+                            then: {$multiply: [=view.width, .55]},
+                            else: {$multiply: [=view.width, .6]}
                     }}},
-                    position: relative,
-                    top: -11,
-                    bottom: -11,
+
 					options: { bind: {if: =articles.b7.no_binding, then: none}, show_body: true, small_headline: true }
 				},
 				#b8 : {
-                    padding: [0, 0, 24, 0],
+                    position: relative,
+                    top: -11,
+                    bottom: -11,
+                    padding: [0, 0, 11, 0],
                     height:{
-                        if: =view.width, more-than: 320, then:{
+                        if: =view.width, equals: 414, then:{
                             if: {$count:[=articles.b8.headline]},
-                            more-than: 30,
+                            more-than: 35,
                             then:{
                             if: {$count:[=articles.b8.body_extract]},
                             less-than: 140,
                             then: {$multiply: [=view.width, .55]},
                             else: {$multiply: [=view.width, .65]}
+                            }, else:{
+                            if: {$count:[=articles.b8.body_extract]},
+                            less-than: 140,
+                            then: {$multiply: [=view.width, .55]},
+                            else: {$multiply: [=view.width, .6]}
                     }}},
-                    position: relative,
-                    top: -11,
-                    bottom: -11,
 					options: { bind: {if: =articles.b8.no_binding, then: none}, show_body: true, small_headline: true }
 				},
 				#b9 : {
-                    padding: [0, 0, 24, 0],
+                    position: relative,
+                    top: -11,
+                    bottom: -11,
+                    padding: [0, 0, 11, 0],
                     height:{
-                        if: =view.width, more-than: 320, then:{
+                        if: =view.width, equals: 414, then:{
                             if: {$count:[=articles.b9.headline]},
-                            more-than: 30,
+                            more-than: 35,
                             then:{
                             if: {$count:[=articles.b9.body_extract]},
                             less-than: 140,
                             then: {$multiply: [=view.width, .55]},
                             else: {$multiply: [=view.width, .65]}
+                            }, else:{
+                            if: {$count:[=articles.b9.body_extract]},
+                            less-than: 140,
+                            then: {$multiply: [=view.width, .55]},
+                            else: {$multiply: [=view.width, .6]}
                     }}},
-                    position: relative,
-                    top: -11,
-                    bottom: -11,
 					options: { bind: {if: =articles.b9.no_binding, then: none}, show_body: true, small_headline: true }
 				}
 			}},
@@ -597,8 +635,8 @@
 		</box>
 	</box>
 	<box id="b1" embed="article" class="column8 positionx1 maude unit_plain unit_418" module="TOP-IMAGE_module.xml" />
-	<box id="b2" embed="article" class="column4 positionx9-1  maude unit_plain unit_166" module="TOP-IMAGE_module.xml" />
-	<box id="b3" embed="article" class="column4 positionx13-5 maude unit_plain unit_166" module="TOP-IMAGE_module.xml" />
+	<box id="b2" embed="article" class="column4 positionx9-1  maude unit_plain unit_166" module="CONTINUATION-dynamic_module.xml" />
+	<box id="b3" embed="article" class="column4 positionx13-5 maude unit_plain unit_166" module="CONTINUATION-dynamic_module.xml" />
 	<box id="b4" embed="article" class="column4 positionx1-9  maude unit_plain unit_50" module="CONTINUATION-dynamic_module.xml" />
 	<box id="b5" embed="article" class="column4 positionx5-9  maude unit_plain unit_50" module="CONTINUATION-dynamic_module.xml" />
 	<box id="b6" embed="article" class="column4 positionx9    maude unit_plain unit_50" module="CONTINUATION-dynamic_module.xml" />

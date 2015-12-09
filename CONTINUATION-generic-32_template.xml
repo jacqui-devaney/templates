@@ -51,7 +51,7 @@
 	        	#b1 : {
                     padding: [0, 0, 11, 0],
                     height:{
-                        if: =view.width, more-than: 320, then:{
+                        if: =view.width, equals: 414, then:{
                             if: {$count:[=articles.b1.headline]},
                             more-than: 35,
                             then:{
@@ -73,7 +73,7 @@
                     bottom: -11,
                     padding: [0, 0, 11, 0],
                     height:{
-                        if: =view.width, more-than: 320, then:{
+                        if: =view.width, equals: 414, then:{
                             if: {$count:[=articles.b2.headline]},
                             more-than: 35,
                             then:{
@@ -95,7 +95,7 @@
                     bottom: -11,
                     padding: [0, 0, 11, 0],
                     height:{
-                        if: =view.width, more-than: 320, then:{
+                        if: =view.width, equals: 414, then:{
                             if: {$count:[=articles.b3.headline]},
                             more-than: 35,
                             then:{
@@ -117,7 +117,7 @@
                     bottom: -11,
                     padding: [0, 0, 11, 0],
                     height:{
-                        if: =view.width, more-than: 320, then:{
+                        if: =view.width, equals: 414, then:{
                             if: {$count:[=articles.b4.headline]},
                             more-than: 35,
                             then:{
@@ -139,7 +139,7 @@
                     bottom: -11,
                     padding: [0, 0, 11, 0],
                     height:{
-                        if: =view.width, more-than: 320, then:{
+                        if: =view.width, equals: 414, then:{
                             if: {$count:[=articles.b5.headline]},
                             more-than: 35,
                             then:{
@@ -161,7 +161,7 @@
                     bottom: -11,
                     padding: [0, 0, 11, 0],
                     height:{
-                        if: =view.width, more-than: 320, then:{
+                        if: =view.width, equals: 414, then:{
                             if: {$count:[=articles.b6.headline]},
                             more-than: 35,
                             then:{
@@ -183,7 +183,7 @@
                     bottom: -11,
                     padding: [0, 0, 11, 0],
                     height:{
-                        if: =view.width, more-than: 320, then:{
+                        if: =view.width, equals: 414, then:{
                             if: {$count:[=articles.b6.headline]},
                             more-than: 35,
                             then:{
@@ -206,7 +206,7 @@
                     bottom: -11,
                     padding: [0, 0, 11, 0],
                     height:{
-                        if: =view.width, more-than: 320, then:{
+                        if: =view.width, equals: 414, then:{
                             if: {$count:[=articles.b8.headline]},
                             more-than: 35,
                             then:{
@@ -228,7 +228,7 @@
                     bottom: -11,
                     padding: [0, 0, 11, 0],
                     height:{
-                        if: =view.width, more-than: 320, then:{
+                        if: =view.width, equals: 414, then:{
                             if: {$count:[=articles.b9.headline]},
                             more-than: 35,
                             then:{
@@ -250,7 +250,7 @@
                     bottom: -11,
                     padding: [0, 0, 11, 0],
                     height:{
-                        if: =view.width, more-than: 320, then:{
+                        if: =view.width, equals: 414, then:{
                             if: {$count:[=articles.b10.headline]},
                             more-than: 35,
                             then:{
@@ -272,7 +272,7 @@
                     bottom: -11,
                     padding: [0, 0, 11, 0],
                     height:{
-                        if: =view.width, more-than: 320, then:{
+                        if: =view.width, equals: 414, then:{
                             if: {$count:[=articles.b11.headline]},
                             more-than: 35,
                             then:{
@@ -294,7 +294,7 @@
                     bottom: -11,
                     padding: [0, 0, 11, 0],
                     height:{
-                        if: =view.width, more-than: 320, then:{
+                        if: =view.width, equals: 414, then:{
                             if: {$count:[=articles.b12.headline]},
                             more-than: 35,
                             then:{
@@ -316,7 +316,7 @@
                     bottom: -11,
                     padding: [0, 0, 11, 0],
                     height:{
-                        if: =view.width, more-than: 320, then:{
+                        if: =view.width, equals: 414, then:{
                             if: {$count:[=articles.b13.headline]},
                             more-than: 35,
                             then:{
@@ -338,7 +338,7 @@
                     bottom: -11,
                     padding: [0, 0, 11, 0],
                     height:{
-                        if: =view.width, more-than: 320, then:{
+                        if: =view.width, equals: 414, then:{
                             if: {$count:[=articles.b14.headline]},
                             more-than: 35,
                             then:{
@@ -360,7 +360,7 @@
                     bottom: -11,
                     padding: [0, 0, 11, 0],
                     height:{
-                        if: =view.width, more-than: 320, then:{
+                        if: =view.width, equals: 414, then:{
                             if: {$count:[=articles.b15.headline]},
                             more-than: 35,
                             then:{
@@ -382,7 +382,7 @@
                     bottom: -11,
                     padding: [0, 0, 11, 0],
                     height:{
-                        if: =view.width, more-than: 320, then:{
+                        if: =view.width, equals: 414, then:{
                             if: {$count:[=articles.b16.headline]},
                             more-than: 35,
                             then:{
@@ -405,7 +405,7 @@
                     bottom: -11,
                     padding: [0, 0, 11, 0],
                     height:{
-                        if: =view.width, more-than: 320, then:{
+                        if: =view.width, equals: 414, then:{
                             if: {$count:[=articles.b17.headline]},
                             more-than: 35,
                             then:{
@@ -427,7 +427,7 @@
                     bottom: -11,
                     padding: [0, 0, 11, 0],
                     height:{
-                        if: =view.width, more-than: 320, then:{
+                        if: =view.width, equals: 414, then:{
                             if: {$count:[=articles.b18.headline]},
                             more-than: 35,
                             then:{
@@ -449,7 +449,7 @@
                     bottom: -11,
                     padding: [0, 0, 11, 0],
                     height:{
-                        if: =view.width, more-than: 320, then:{
+                        if: =view.width, equals: 414, then:{
                             if: {$count:[=articles.b19.headline]},
                             more-than: 35,
                             then:{
@@ -472,7 +472,7 @@
                     bottom: -11,
                     padding: [0, 0, 11, 0],
                     height:{
-                        if: =view.width, more-than: 320, then:{
+                        if: =view.width, equals: 414, then:{
                             if: {$count:[=articles.b20.headline]},
                             more-than: 35,
                             then:{
@@ -495,7 +495,7 @@
                     bottom: -11,
                     padding: [0, 0, 11, 0],
                     height:{
-                        if: =view.width, more-than: 320, then:{
+                        if: =view.width, equals: 414, then:{
                             if: {$count:[=articles.b21.headline]},
                             more-than: 35,
                             then:{
@@ -519,7 +519,7 @@
                     bottom: -11,
                     padding: [0, 0, 11, 0],
                     height:{
-                        if: =view.width, more-than: 320, then:{
+                        if: =view.width, equals: 414, then:{
                             if: {$count:[=articles.b22.headline]},
                             more-than: 35,
                             then:{
@@ -541,7 +541,7 @@
                     bottom: -11,
                     padding: [0, 0, 11, 0],
                     height:{
-                        if: =view.width, more-than: 320, then:{
+                        if: =view.width, equals: 414, then:{
                             if: {$count:[=articles.b23.headline]},
                             more-than: 35,
                             then:{
@@ -564,7 +564,7 @@
                     bottom: -11,
                     padding: [0, 0, 11, 0],
                     height:{
-                        if: =view.width, more-than: 320, then:{
+                        if: =view.width, equals: 414, then:{
                             if: {$count:[=articles.b24.headline]},
                             more-than: 35,
                             then:{
@@ -587,7 +587,7 @@
                     bottom: -11,
                     padding: [0, 0, 11, 0],
                     height:{
-                        if: =view.width, more-than: 320, then:{
+                        if: =view.width, equals: 414, then:{
                             if: {$count:[=articles.b25.headline]},
                             more-than: 35,
                             then:{
@@ -610,7 +610,7 @@
                     bottom: -11,
                     padding: [0, 0, 11, 0],
                     height:{
-                        if: =view.width, more-than: 320, then:{
+                        if: =view.width, equals: 414, then:{
                             if: {$count:[=articles.b26.headline]},
                             more-than: 35,
                             then:{
@@ -633,7 +633,7 @@
                     bottom: -11,
                     padding: [0, 0, 11, 0],
                     height:{
-                        if: =view.width, more-than: 320, then:{
+                        if: =view.width, equals: 414, then:{
                             if: {$count:[=articles.b27.headline]},
                             more-than: 35,
                             then:{
@@ -656,7 +656,7 @@
                     bottom: -11,
                     padding: [0, 0, 11, 0],
                     height:{
-                        if: =view.width, more-than: 320, then:{
+                        if: =view.width, equals: 414, then:{
                             if: {$count:[=articles.b28.headline]},
                             more-than: 35,
                             then:{
@@ -679,7 +679,7 @@
                     bottom: -11,
                     padding: [0, 0, 11, 0],
                     height:{
-                        if: =view.width, more-than: 320, then:{
+                        if: =view.width, equals: 414, then:{
                             if: {$count:[=articles.b29.headline]},
                             more-than: 35,
                             then:{
@@ -701,7 +701,7 @@
                     bottom: -11,
                     padding: [0, 0, 11, 0],
                     height:{
-                        if: =view.width, more-than: 320, then:{
+                        if: =view.width, equals: 414, then:{
                             if: {$count:[=articles.b30.headline]},
                             more-than: 35,
                             then:{
@@ -724,7 +724,7 @@
                     bottom: -11,
                     padding: [0, 0, 11, 0],
                     height:{
-                        if: =view.width, more-than: 320, then:{
+                        if: =view.width, equals: 414, then:{
                             if: {$count:[=articles.b31.headline]},
                             more-than: 35,
                             then:{
@@ -746,7 +746,7 @@
                     bottom: -11,
                     padding: [0, 0, 11, 0],
                     height:{
-                        if: =view.width, more-than: 320, then:{
+                        if: =view.width, equals: 414, then:{
                             if: {$count:[=articles.b32.headline]},
                             more-than: 35,
                             then:{

@@ -25,7 +25,7 @@
 		.article_headline: {
             font-name: {$switch:[
                 { if: =page.section, equals: WSJ_MAGAZINE, then: "DJ5EscrowCond-Light" },
-                { if: =page.section, equals: SPECIAL_REPORT, then: "WhitneySSm-Bold" }
+                { if: =page.section, equals: SPECIAL_REPORT, then: "WhitneySSm-Semibold" }
             ]},
 			font-size: { if: =page.section, equals: SPECIAL_REPORT, then: 40, else: 38 },
 			line-height: 40,

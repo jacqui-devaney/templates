@@ -1,17 +1,24 @@
 {if: =scale.phone, then: {
 
+	.link-pdf: {
+        color: #2fbfbf
+	},
+	.link-external: {
+        color: #2fbfbf
+	},
+	a: {
+        color: #2fbfbf
+	},
+	.link-article: {
+		text-decoration: none,
+		color:{if: =intent.article, then:{if: =page.tint, equals: "rgba(0.000000, 0.000000, 0.000000, 1.000000)", then: #004990, else: =page.tint}}
+	},
 	.key: {
 		font-name: "DJ5Utility-Regular",
 		font-size:16,
 		content: "\u00a0K",
 		display: { if-all: [=issue.locked, =article.paid], then: default, else: none },
         color:#948464
-	},
-	.module_summary: {
-		font-name: Whitney-Book,
-		font-size:17,
-		line-height:22,
-        color:#3b4343
 	},
 	.module_headline: {
 		$join: [
@@ -78,6 +85,18 @@
 		padding: [8.5, 8, 8.5, 8],
 		border-color: black
     },
+	.module_caption: {
+        layout-grid-line: 1,
+        layout-grid-line-offset: 0,
+        color: #878f8f,
+        font-size: 17,
+        line-height: 22,
+        font-name: "Whitney-Book",
+        padding: { if-all: [
+                { if: =page.number, equals: 0, then: true, else: false },
+                { if: =scale.phone, then: true, else: false }
+            ], then: [6, 16, 22, 16], else: [6, 0, 0, 0]
+    }},
 	.subsection: {
 		font-name: "Whitney-Book",
 		font-size: 17,
@@ -126,7 +145,7 @@
 		line-height:32,
         font-name: "ChronicleDisplay-Semi",
 		color:#2b3333,
-		padding:[10, 0, 0, 0]
+		padding:[10, 0, 22, 0]
 	},
 	.article_subhed: {
 		font-name: Whitney-Book,
@@ -177,6 +196,16 @@
 	strong: {
         font-name:{if: =intent.article, then:ChronicleSSm-Book},
         color: #2fbfbf
+	},
+	.blockquote: {
+		padding: [0, 16, 10, 20]
+	},
+	.blockquote-p: {
+		padding: [0, 0, 0, 8],
+		border-width: [0, 0, 0, 1],
+        border-color: transparent,
+        color:#a7afaf,
+		font-name: Whitney-Book
 	},
 	em: {
         font-name:{if: =intent.article, then:ChronicleSSm-Book},
@@ -260,7 +289,7 @@
     #media_caption: {
         layout-grid-line: 1,
         layout-grid-line-offset: 0,
-        color: #878f8f,
+        color: #4f5757,
         font-size: 17,
         line-height: 22,
         font-name: "Whitney-Book",
@@ -271,8 +300,17 @@
     }},
 
 	#mark_caption: {
-		content: =media.caption
-	},
+        layout-grid-line: 1,
+        layout-grid-line-offset: 0,
+        color: #4f5757,
+        font-size: 17,
+        line-height: 22,
+        font-name: "Whitney-Book",
+        padding: { if-all: [
+                { if: =page.number, equals: 0, then: true, else: false },
+                { if: =scale.phone, then: true, else: false }
+            ], then: [6, 16, 22, 16], else: [6, 0, 0, 0]
+    }},
 
 	#media_asset: {
 		position: relative,

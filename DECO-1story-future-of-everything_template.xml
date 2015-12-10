@@ -12,6 +12,7 @@
                 title: "",
 				tintColor: white,
                 tintTitle: true
+			}
 		}
         }}, else:{tintTitle: true}}
     </style>

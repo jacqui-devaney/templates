@@ -1,0 +1,36 @@
+<jpml id="FOOTER_module">
+	<style src="GLOBAL-stylesheet.ejs"/>
+	<style src="GLOBAL_MODULES-stylesheet.ejs" />
+	<style src="FOOTER-stylesheet.ejs" />
+
+	<style>
+        { if: =options.top_border, then: {
+        jpml: {
+        border-width: [10, 0, 0, 0],
+        padding: [10, 0, 0, 0],
+        border-color: #cfcfcf
+        }}}
+    </style>
+
+    <style>
+        {
+        .footer_headline: {
+            font-name:DJ5EscrowCond-Roman,
+            font-size: 22,
+            line-height: 42,
+            text-align:center,
+            color: #2b3333,
+            padding:[0, 0, 4, 0],
+            content: "CONTENT FROM OUR SPONSOR"
+        },
+        .footer_tip: {
+            font-name:DJ5EscrowCond-Roman,
+            font-size: 20,
+            line-height: 26,
+            text-align:center,
+            color: #2b3333,
+            padding:[0, 0, 8, 0],
+            content: "DID YOU KNOW?"
+        }}
+    </style>
+</jpml>

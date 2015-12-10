@@ -29,6 +29,7 @@
             ]},
 			font-size: { if: =page.section, equals: SPECIAL_REPORT, then: 40, else: 38 },
 			line-height: 40,
+            padding: { if: =page.section, equals: SPECIAL_REPORT, then: [0, 0, 10, 0] },
 			color: { if: =page.section, equals: WSJ_MAGAZINE, then: #212121 },
 			text-transform: { if: =page.section, equals: WSJ_MAGAZINE, then: uppercase }
 		},

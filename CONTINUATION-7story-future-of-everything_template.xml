@@ -1,0 +1,208 @@
+<jpml id="CONTINUATION-7story-future-of-everything_template">
+	<style src="GLOBAL-stylesheet.ejs" />
+	<style src="GRID-stylesheet.ejs" />
+	<style src="ADVERTISING-stylesheet.ejs"/>
+<style src="PHONE-stylesheet.ejs" />
+<style src="RAIL-stylesheet.ejs" />
+    <style>{
+		if: =scale.tablet,then: {
+    	#page_details: {
+			frame: [0, 0, 10, 10],
+			options: {
+                if: =portrait, then: {
+				title: ""
+			}
+		}
+        }}, else:{tintTitle: true}}
+    </style>
+  <style>{
+		$switch: [
+			{if: =scale.rail, then: {
+	        }},
+	        {if: =scale.phone, then: {
+	        }},
+
+	        {if: =portrait, then: {
+	            #b1 : {
+					height:420,
+					top:0,
+					options: {
+						bind: {if: =articles.b1.no_binding, then: none},
+						large_headline: true,
+						top_image: true,
+						show_body: true,
+						image_idiom: "portrait"
+					}
+				},
+                #b2 : {
+					height:210,
+					top:0,
+					options: {
+						bind: {if: =articles.b2.no_binding, then: none},
+						squarish_image: true,
+                        medium_headline: true,
+						show_body: true,
+						image_idiom: "portrait"
+					}
+				},
+				#b3 : {
+					height:190,
+					top:220,
+					options: {
+						bind: {if: =articles.b3.no_binding, then: none},
+						top_border: true,
+						squarish_image: true,
+                        medium_headline: true,
+						show_body: true,
+						image_idiom: "portrait"
+					}
+				},
+				#b4 : {
+					height:190,
+                    top:420,
+					options: {
+						bind: {if: =articles.b4.no_binding, then: none},
+						squarish_image: true,
+                        medium_headline: true,
+						top_border: true,
+						show_body: true,
+						image_idiom: "portrait"
+					}
+				},
+				#b5 : {
+					height:190,
+					top:420,
+					options: {
+						bind: {if: =articles.b5.no_binding, then: none},
+						top_border: true,
+						squarish_image: true,
+                        medium_headline: true,
+						show_body: true,
+						image_idiom: "portrait"
+					}
+                },
+				#b6 : {
+					height:190,
+					top:620,
+					options: {
+						bind: {if: =articles.b6.no_binding, then: none},
+						squarish_image: true,
+                        medium_headline: true,
+						top_border: true,
+						show_body: true,
+						image_idiom: "portrait"
+					}
+				},
+				#b7 : {
+					height:190,
+					top:620,
+					options: {
+						bind: {if: =articles.b7.no_binding, then: none},
+						top_border: true,
+						squarish_image: true,
+                        medium_headline: true,
+						show_body: true,
+						image_idiom: "portrait"
+					}
+				}
+	        }},
+			{if: =landscape, then: {
+	            #b1 : {
+					height:260,
+					top:0,
+					options: {
+						bind: {if: =articles.b1.no_binding, then: none},
+						large_headline: true,
+
+						show_body: true,
+						image_idiom: "landscape"
+					}
+				},
+	            #b2 : {
+					height:260,
+					top:0,
+					options: {
+						bind: {if: =articles.b2.no_binding, then: none},
+						top_image: true,
+                        medium_headline: true,
+						show_body: true,
+						image_idiom: "landscape"
+					}
+				},
+	            #b3 : {
+					height:260,
+					top:0,
+					options: {
+						bind: {if: =articles.b3.no_binding, then: none},
+						top_image: true,
+                        medium_headline: true,
+						show_body: true,
+						image_idiom: "landscape"
+					}
+				},
+				#b4 : {
+					height:260,
+					top:270,
+					options: {
+						bind: {if: =articles.b4.no_binding, then: none},
+						top_image: true,
+                        medium_headline: true,
+						top_border: true,
+						show_body: true,
+						image_idiom: "landscape"
+					}
+				},
+				#b5 : {
+					height:260,
+					top:270,
+					options: {
+						bind: {if: =articles.b5.no_binding, then: none},
+						top_image: true,
+						top_border: true,
+                        medium_headline: true,
+						show_body: true,
+						image_idiom: "landscape"
+					}
+                },
+                #b6 : {
+					height:260,
+					top:270,
+					options: {
+						bind: {if: =articles.b6.no_binding, then: none},
+						top_image: true,
+						top_border: true,
+                        medium_headline: true,
+						show_body: true,
+						image_idiom: "landscape"
+					}
+                },
+                #b7 : {
+					height:260,
+					top:270,
+					options: {
+						bind: {if: =articles.b7.no_binding, then: none},
+						top_image: true,
+						top_border: true,
+                        medium_headline: true,
+						show_body: true,
+						image_idiom: "landscape"
+					}
+                }
+            }}
+		]
+    }</style>
+	<box id="page_details" class="tablet_only" embed="pagedescription" />
+
+<box id="page_details" class="tablet_only" embed="pagedescription" />
+    <box id="b1" embed="article" class="column8-6 positionx1 maude unit_plain" module="LEFT-IMAGE_module.xml" />
+    <box id="b2" embed="article" class="column4-6 positionx9-7 maude unit_plain" module="LEFT-IMAGE_module.xml" />
+    <box id="b3" embed="article" class="column4-6 positionx13-7 maude unit_plain" module="LEFT-IMAGE_module.xml" />
+    <box id="b4" embed="article" class="column4-6 positionx1 maude unit_plain" module="LEFT-IMAGE_module.xml" />
+    <box id="b5" embed="article" class="column4-6 positionx5-7 maude unit_plain" module="LEFT-IMAGE_module.xml" />
+    <box id="b6" embed="article" class="column4-6 positionx9-1 maude unit_plain" module="LEFT-IMAGE_module.xml" />
+    <box id="b7" embed="article" class="column4-6 positionx13-7 maude unit_plain" module="LEFT-IMAGE_module.xml" />
+	<box id="front_page" class="tablet_only positionx_full column_full maude unit_ad">
+		<box id="banner_ad" class="ad-banner front_ad" embed="advertisement" />
+	</box>
+
+</jpml>

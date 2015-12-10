@@ -1,0 +1,24 @@
+<jpml id="ARTICLE-future_of_everything-continuation_template">
+    <style src="GLOBAL-stylesheet.ejs"/>
+    <style src="GRID-stylesheet.ejs"/>
+    <style src="FUTURE-stylesheet.ejs" />
+    <style>{
+        #page_details: {
+            options: {
+                tintTitle: true
+            }
+        }
+    }</style>
+	<style>{
+		jpml: {
+			background-color: =color.background
+		},
+		#view: {
+			options: {
+				background_color: =color.background
+			}
+		}
+	}</style>
+    <box id="page_details" embed="pagedescription" />
+    <box id="view" embed="article" class="column16-12 positionx1" module="ARTICLE-future_of_everything-continuation_module.xml" />
+</jpml>

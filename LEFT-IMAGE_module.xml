@@ -156,6 +156,20 @@
 				}
 			}
 		}</style>
+		<style>{
+			if: =page.section, equals: "SPECIAL_REPORT", then: {
+                .module_headline: {
+					font-size: {if: =options.large_headline, then: 26, else: 17},
+					line-height: {if: =options.large_headline, then: 30, else: 21},
+					padding:[0, 0, 6, 0],
+                    font-name: "WhitneySSm-Semibold"
+				},
+				.body: {
+                    color: #222221,
+                    text-indent: 0
+				}
+			}
+		}</style>
 		<box id="deco_container" embed="deco-image">
 			<image class="summary-image"/>
 		</box>

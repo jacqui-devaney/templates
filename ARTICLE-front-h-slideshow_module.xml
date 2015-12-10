@@ -13,7 +13,7 @@
 			options: {
 				id: =page.number,
 				hideCaption: true
-			}			
+			}
 		},
 		.module_flashline: {
 			display: { if: =page.section, equals: WSJ_MAGAZINE, else: none },
@@ -23,8 +23,11 @@
 			color: { if: =page.section, equals: WSJ_MAGAZINE, then: #212121 }
 		},
 		.article_headline: {
-			font-name: { if: =page.section, equals: WSJ_MAGAZINE, then: "DJ5EscrowCond-Light" },
-			font-size: 38,
+            font-name: {$switch:[
+                { if: =page.section, equals: WSJ_MAGAZINE, then: "DJ5EscrowCond-Light" },
+                { if: =page.section, equals: SPECIAL_REPORT, then: "WhitneySSm-Semibold" }
+            ]},
+			font-size: { if: =page.section, equals: SPECIAL_REPORT, then: 40, else: 38 },
 			line-height: 40,
 			color: { if: =page.section, equals: WSJ_MAGAZINE, then: #212121 },
 			text-transform: { if: =page.section, equals: WSJ_MAGAZINE, then: uppercase }
@@ -59,7 +62,9 @@
 			height: 1
 		},
 		.article_body: {
-			text-align: center
+            text-align: center,
+            font-name: { if: =page.section, equals: SPECIAL_REPORT, then: "WhitneySSm-Book" }
+
 		},
 		.body-last-p-mark: {
 			display: none

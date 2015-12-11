@@ -20,9 +20,6 @@
 		display: { if-all: [=issue.locked, =article.paid], then: default, else: none },
         color:#948464
 	},
-    #body-first-p: {
-        text-align: none
-    },
 	.module_headline: {
 		$join: [
 			{
@@ -172,7 +169,6 @@
         text-transform:uppercase,
         padding: [6, 16, 28, 16]
     },
-
 	.article_pubdate: {
 		font-name: Whitney-Book,
 		font-size:13,
@@ -279,7 +275,9 @@
 	.body-panel: {
 		page-break-after: always
 	},
-
+    .body-last-p-mark:{
+        display: none
+    },
     #media_caption: {
         layout-grid-line: 1,
         layout-grid-line-offset: 0,

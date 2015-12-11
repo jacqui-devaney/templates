@@ -15,13 +15,6 @@
 		{#body_continuation: {
 			content: from-flow(article_body),
 			flow: article_body
-		}},
-		{#media_container: {
-		}},
-		{#media_asset: {
-		}},
-		{#media_caption: {
-			text-indent: 0
 		}}
 		]
     }</style>

@@ -9,11 +9,10 @@
     	#page_details: {
 			frame: [0, 0, 10, 10],
 			options: {
-                if: =portrait, then: {
                 title: "",
+				tintColor: white,
                 tintTitle: true
-			}
-		}
+            }
         }}, else:{tintTitle: true}}
     </style>
 

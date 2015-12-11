@@ -13,6 +13,9 @@
 				title: ""
 			}
 		}
+				title: "",
+				tintColor: white
+			}
         }}, else:{tintTitle: true}}
     </style>
 

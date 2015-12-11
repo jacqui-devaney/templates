@@ -1,7 +1,7 @@
 {if: =scale.phone, then: {
 
 	.link-pdf: {
-        color: #2fbfbf
+        color: {if: =intent.article, then: inherit, else: #2fbfbf}
 	},
 	.link-external: {
         color: #2fbfbf
@@ -186,8 +186,8 @@
 	},
 	strong: {
         font-name:{if: =intent.article, then:ChronicleSSmMedium-Regular},
-        color:#3b4343
-	},
+        color: #2fbfbf
+    },
 	.blockquote: {
 		padding: [0, 0, 0, 0]
 	},
@@ -197,13 +197,19 @@
         color: #878f8f,
         font-name: ChronicleSSm-Book
 	},
+    .blockquote: {
+		padding: [0, 8, 0, 16],
+        border-color: transparent,
+        color: #878f8f,
+        font-name: ChronicleSSm-Book
+    },
 	em: {
         font-name:{if: =intent.article, then:ChronicleSSmMedium-Regular},
-        color:#3b4343
-	},
+        color: {if: =intent.article, then: inherit, else: #3b4343}
+    },
 	cite: {
-        font-name:{if: =intent.article, then:ChronicleSSm-Book},
-        color: #2fbfbf
+        font-name:{if: =intent.article, then:ChronicleSSmMedium-Regular},
+        color: #3b4343
     },	
 
     .byline-credit: {

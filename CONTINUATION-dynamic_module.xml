@@ -71,13 +71,13 @@
     <style>{
     	if: =scale.phone, then: {
 			.module_headline: {
-				color:{if: =article.read, then: color.articleReadColor}
+				color:{if: =article.read, then: color.articleReadColor},
+                padding: [0, 23, 0, 23]
 			},
 			#vertical: {
-				padding: [0, 23, 0, 23]
 			},
 			.body: {
-				padding: [4, 0, 0, 24]
+				padding: [4, 24, 0, 24]
 			},
 			#article_status: {
 				position: relative,

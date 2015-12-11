@@ -46,6 +46,12 @@
 			}
 		]
 	},
+    .module_summary:{
+        font-name: "Whitney-Book",
+        line-height: 22,
+        font-size:17,
+        color: #3b4343
+    },
 	.body: {
 		font-size:15,
 		line-height:22,
@@ -185,8 +191,8 @@
         padding: [0, 8, 11, 8]
 	},
 	strong: {
-        font-name:{if: =intent.article, then: "ChronicleSSm-Book"},
-        color:#3b4343
+        font-name:{if: =intent.article, then: "ChronicleSSm-Medium"},
+        color: {if: =intent.article, then: inherit}
     },
 	.blockquote: {
 		padding: [0, 0, 0, 0]
@@ -282,8 +288,10 @@
 		page-break-after: always
 	},
     .body-last-p-mark:{
-        display: none,
-        height: 22
+        display: none
+    },
+    #body-last-p:{
+        padding: [0, 0, 33, 0]
     },
     #media_caption: {
         layout-grid-line: 1,
@@ -345,10 +353,10 @@
 
 	.byline-author: {
         padding: [0, 16, 0, 16],
-		font-name:ChronicleDisplay-Italic,
-        font-size: 18,
+		font-name:ChronicleSSmMedium-Italic,
+        font-size: 16,
         line-height: 22,
-        color: #2fbfbf
+        color: #4f5757
 	},
 
 	.byline: {

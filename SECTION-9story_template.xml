@@ -90,7 +90,9 @@
 				},
 				#b2 : {
                     position: relative,
-                    padding: [0, 0, 11, 0],
+                    .module_headline:{
+                        padding: [-10, 0, 0, 0]
+                    },
                     height:{
                         if: =view.width, more-than: 320, then:{
                             if: {$count:[=articles.b2.headline]},

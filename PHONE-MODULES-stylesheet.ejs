@@ -24,7 +24,7 @@
 		$join: [
 			{
                 font-name: "ChronicleDisplay-Semi",
-                padding:[{if: {$count: [=article.images.phone]}, more-than:0, then:0, else:12},24,0,0],
+                padding:[{if: {$count: [=article.images.phone]}, more-than:0, then:0, else:10},24,0,0],
 				color:{if: =article.read, then: color.articleReadColor}
 			},
 			{
@@ -353,7 +353,7 @@
 
 	.byline-author: {
         padding: [0, 16, 0, 16],
-		font-name:ChronicleSSmMedium-Italic,
+		font-name:ChronicleSSm-Medium-Italic,
         font-size: 16,
         line-height: 22,
         color: #4f5757

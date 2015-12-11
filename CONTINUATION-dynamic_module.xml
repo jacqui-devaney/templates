@@ -71,7 +71,6 @@
     <style>{
     	if: =scale.phone, then: {
 			.module_headline: {
-				padding: { if: =options.show_body, else: [4, 0, 0, 0] },
 				color:{if: =article.read, then: color.articleReadColor}
 			},
 			#vertical: {
@@ -83,7 +82,6 @@
 			#article_status: {
 				position: relative,
 				padding: [{if: =options.show_body, then: 1, else: 5}, 4, 0, 4],
-				top: 0,
 				left: -24,
 				width: 16,
 				height: 16,

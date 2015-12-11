@@ -7,7 +7,6 @@
 	<style>{
 		$join: [
 		{jpml: { min-height: 0 }},
-		{#body_container : { padding: [0, 10, 0, 10]}},
 		{.article_body: {
 			line-height: {$multiply: [22, =view.zoomlevel]},
 			text-align: left,
@@ -18,10 +17,8 @@
 			flow: article_body
 		}},
 		{#media_container: {
-            padding: [4, 0, 0, 0]
 		}},
 		{#media_asset: {
-            padding: [4, 0, 4, 0]
 		}},
 		{#media_caption: {
 			text-indent: 0

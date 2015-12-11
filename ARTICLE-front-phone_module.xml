@@ -12,23 +12,21 @@
 	<style>{
 		jpml: { min-height: 0 },
 		#body_container: {
-			padding: [0, 16, 0, 16],
 			flow: article_body
 		},
-		#header_top: {padding:[5,16,5,16]},
 		.article_body: {
-			line-height: {$multiply: [22, =view.zoomlevel]},
-			text-align: justify,
             hyphens: auto
 		},
 		.article_flashline: {
             font-name: Whitney-Semibold,
             font-size: 13,
-            padding: [16,16,11,18],
             line-height: 22,
             border-width: [0, 0, 1, 0],
             border-color: #e1e0df
 		},
+        #media_asset:{
+            padding: [0, 4, 10, 4]
+        },
         #media_caption: {
         layout-grid-line: 1,
         layout-grid-line-offset: 0,
@@ -39,7 +37,7 @@
         padding: { if-all: [
                 { if: =page.number, equals: 0, then: true, else: false },
                 { if: =scale.phone, then: true, else: false }
-            ], then: [6, 16, 22, 16], else: [6, 0, 0, 0]
+            ], then: [0, 16, 22, 16], else: [0, 0, 0, 0]
         }},
         #mark_caption: {
             content: =media.caption
@@ -66,7 +64,6 @@
 		<p class="article_pubdate">Updated
 			<span  embed="pubdate-string"/>
 		</p>
-		<p class="border-p"><mark class="border-mark"/></p>
 		<panel class="article_body" embed="body"/>
 	</panel>
 

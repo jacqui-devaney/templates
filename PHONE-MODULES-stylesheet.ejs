@@ -20,6 +20,9 @@
 		display: { if-all: [=issue.locked, =article.paid], then: default, else: none },
         color:#948464
 	},
+    #body-first-p: {
+        text-align: none
+    },
 	.module_headline: {
 		$join: [
 			{
@@ -145,16 +148,17 @@
 		line-height:32,
         font-name: "ChronicleDisplay-Semi",
 		color:#2b3333,
-		padding:[10, 0, 22, 0]
+		padding:[14, 16, 10, 14]
 	},
 	.article_subhed: {
 		font-name: Whitney-Book,
 		font-size:17,
 		line-height:22,
         color:#4f5757,
-        padding: [0, 0, 2, 0]
+        padding: [0, 16, 6, 16]
 	},
 	.article_byline: {
+        padding: [0, 16, 0, 16],
 		font-name: Whitney-Book,
 		font-size:17,
 		line-height:22,
@@ -174,42 +178,32 @@
 		font-size:13,
         line-height:22,
         color: #a7afaf,
-        padding: [0, 0, 11, 0]
+        padding: [0, 16, 11, 16]
 	},
 	.article_body: {
-		font-size:{$multiply: [15, =view.zoomlevel]},
-		line-height:{$multiply: [22, =view.zoomlevel]},
-        padding: [0, 3.5, 11, 3.5],
+		font-size:{$multiply: [16, =view.zoomlevel]},
+        line-height: 22,
         font-name: ChronicleSSm-Book,
         color:#3b4343,
-        text-indent: 0
-	},
-	.border-mark: {
-		line-height: 4,
-		color: transparent,
-		content: "unfortunate"
-	},
-	.border-p:{
-        display:none,
-        padding: [0, 0, 16, 0]
+        text-indent: 0,
+        padding: [0, 8, 11, 8]
 	},
 	strong: {
-        font-name:{if: =intent.article, then:ChronicleSSm-Book},
-        color: #2fbfbf
+        font-name:{if: =intent.article, then:ChronicleSSmMedium-Regular},
+        color:#3b4343
 	},
 	.blockquote: {
-		padding: [0, 16, 10, 20]
+		padding: [0, 0, 0, 0]
 	},
 	.blockquote-p: {
-		padding: [0, 0, 0, 8],
-		border-width: [0, 0, 0, 1],
+		padding: [0, 8, 0, 16],
         border-color: transparent,
-        color:#a7afaf,
-		font-name: Whitney-Book
+        color: #878f8f,
+        font-name: ChronicleSSm-Book
 	},
 	em: {
-        font-name:{if: =intent.article, then:ChronicleSSm-Book},
-        color: #2fbfbf
+        font-name:{if: =intent.article, then:ChronicleSSmMedium-Regular},
+        color:#3b4343
 	},
 	cite: {
         font-name:{if: =intent.article, then:ChronicleSSm-Book},
@@ -289,27 +283,27 @@
     #media_caption: {
         layout-grid-line: 1,
         layout-grid-line-offset: 0,
-        color: #4f5757,
+        color: #878f8f,
         font-size: 17,
         line-height: 22,
         font-name: "Whitney-Book",
         padding: { if-all: [
                 { if: =page.number, equals: 0, then: true, else: false },
                 { if: =scale.phone, then: true, else: false }
-            ], then: [6, 16, 22, 16], else: [6, 0, 0, 0]
+            ], then: [0, 16, 22, 16], else: [0, 0, 0, 0]
     }},
 
 	#mark_caption: {
         layout-grid-line: 1,
         layout-grid-line-offset: 0,
-        color: #4f5757,
+        color: #878f8f,
         font-size: 17,
         line-height: 22,
         font-name: "Whitney-Book",
         padding: { if-all: [
                 { if: =page.number, equals: 0, then: true, else: false },
                 { if: =scale.phone, then: true, else: false }
-            ], then: [6, 16, 22, 16], else: [6, 0, 0, 0]
+            ], then: [0, 16, 0, 16], else: [0, 0, 0, 0]
     }},
 
 	#media_asset: {
@@ -330,7 +324,7 @@
 			},
 			hideCaption: true
 		},
-		padding: [4, 4, 12, 4]
+		padding: [4, 0, 6, 0]
 	},
 
 	#ad_inline_inner: {
@@ -345,13 +339,15 @@
 	},
 
 	.byline-author: {
-		font-name: "ChronicleDisplay-Italic",
-        font-size: 15,
+        padding: [0, 16, 0, 16],
+		font-name: "ChronicleSSmBook-Italic",
+        font-size: 16,
         line-height: 22,
         color: #2fbfbf
 	},
 
 	.byline: {
+        padding: [0, 16, 0, 16],
 		font-name: Whitney-Book,
 		font-size:{$multiply: [17, =view.zoomlevel]},
 		line-height:{$multiply: [22, =view.zoomlevel]},

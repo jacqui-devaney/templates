@@ -78,7 +78,7 @@
 				padding: [0, 23, 0, 23]
 			},
 			.body: {
-				padding: [4, 12, 0, 24]
+				padding: [4, 0, 0, 24]
 			},
 			#article_status: {
 				position: relative,
@@ -111,6 +111,9 @@
                     image-scale: 1,
                     anchor-x: right,
                     position: relative
+                },
+                #body-first-p:{
+                    padding: [0, 0, 0, 0]
                 }
     	}, else: {
     		#strap: {

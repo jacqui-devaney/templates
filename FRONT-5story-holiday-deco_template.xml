@@ -65,7 +65,7 @@
 				},
 				#b5: {
 					top:691,
-					height:122,
+					height:175,
 					options:{ bind: {if: =articles.b5.no_binding, then: none}, medium_headline:true, top_border:true}
 				},
                 #footer: {
@@ -103,7 +103,7 @@
 				},
 				#b5:	{
 					top:370,
-					height:187,
+					height:194,
 					options:{ bind: {if: =articles.b5.no_binding, then: none}, medium_headline:true, top_border:true}
 				},
                 #footer: {

@@ -208,7 +208,7 @@
                         else: {$add: [{$divide: [=view.width, {$avg: [{$count: [=articles.b4.summary, =articles.b4.headline]}]}]},
                         {$switch:
                         [{if: =view.width, equals: 320, then: 110},
-                        {if: =view.width, equals: 375, then: 110},
+                        {if: =view.width, equals: 375, then: 132},
                         {if: =view.width, equals: 414, then: 66}
                         ]}]
 

@@ -4,6 +4,7 @@
 	<style src="ADVERTISING-stylesheet.ejs"/>
     <style src="PHONE-stylesheet.ejs"/>
 	<style src="RAIL-stylesheet.ejs" />
+	<style src="FRONT-stylesheet.ejs"/>
     <style>{
         #page_details: {
             options: {
@@ -34,8 +35,7 @@
                 #footer: {
                     top: 820,
                     height: 100,
-                    text-align: center,
-                    options:{bind: none, top_border: true}
+                    text-align: center
                 }
 			}},
 			{if: =landscape, then: {
@@ -57,8 +57,7 @@
                 #footer: {
                     top: 570,
                     height: 100,
-                    text-align: center,
-                    options:{bind: none, top_border: true}
+                    text-align: center
                 }
 			}}
 		]

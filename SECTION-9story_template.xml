@@ -208,7 +208,7 @@
                         else: {$add: [{$divide: [=view.width, {$avg: [{$count: [=articles.b4.summary, =articles.b4.headline]}]}]},
                         {$switch:
                         [{if: =view.width, equals: 320, then: 110},
-                        {if: =view.width, equals: 375, then: 88},
+                        {if: =view.width, equals: 375, then: 110},
                         {if: =view.width, equals: 414, then: 66}
                         ]}]
 
@@ -243,7 +243,8 @@
                             ]}]}
                         }}
                     ]},
-                    padding: [0, 0, 24, 0],
+                    padding: [0, 0, {
+                    if: {$count: [=article.b5.headline]}, more-than: 60, then: 50, else: {if: {$count: [=article.b5.headline]}, less-than: 35, then: 28, else: 24 }}, 0],
                     top: -22,
 					options: { bind: {if: =articles.b4.no_binding, then: none}, show_body: true, small_headline: true }
 				},
@@ -393,7 +394,7 @@
                             then: {
                             if: {$count:[=articles.b7.summary]},
                             less-than: 140,
-                            then: {$add: [{$divide: [=view.width, {$avg: [{$count: [=articles.b7.summary, =articles.b7.headline]}]}]}, 44]},
+                            then: {$add: [{$divide: [=view.width, {$avg: [{$count: [=articles.b7.summary, =articles.b7.headline]}]}]}, {if: =view.width, equals: 320, then: 66, else: {if: =view.width, equals: 414, then: 0, else: 22}}]},
                             else: {$add: [{$divide: [=view.width, {$avg: [{$count: [=articles.b7.summary, =articles.b7.headline]}]}]},
                             {$switch:
                             [{if: =view.width, equals: 320, then: 110},
@@ -427,7 +428,10 @@
                         }}},
 
                         {if: {$count:[=articles.b8.headline]},
-                        more-than: 35, and: {$count: [=articles.b8.headlines]}, less-than: 60,
+                        more-than: 35,
+                        and:
+                        {if: {$count:[=articles.b8.headline]}},
+                        less-than: 60,
                         then:{
 
                         if: {$count:[=articles.b8.summary]},
@@ -436,7 +440,7 @@
                         else: {$add: [{$divide: [=view.width, {$avg: [{$count: [=articles.b8.summary, =articles.b8.headline]}]}]},
                         {$switch:
                         [{if: =view.width, equals: 320, then: 110},
-                        {if: =view.width, equals: 375, then: 88},
+                        {if: =view.width, equals: 375, then: 22},
                         {if: =view.width, equals: 414, then: 66}
                         ]}]}
                         }},
@@ -455,7 +459,8 @@
                             ]}]}
                         }}
                     ]},
-                    padding: [0, 0, 24, 0],
+                    padding: [0, 0, {
+                    if: {$count: [=article.b5.headline]}, more-than: 60, then: 50, else: {if: {$count: [=article.b5.headline]}, less-than: 35, then: 20, else: 24 }}, 0],
                     top: -22,
 					options: { bind: {if: =articles.b8.no_binding, then: none}, show_body: true, small_headline: true }
 				},

@@ -27,7 +27,7 @@
 				},
 				else: {
 					padding: [
-						{if: =options.show_body, then: {if: =scale.phone, then: 24.5, else: 9.5}, else: 0.5},
+						{if: =options.show_body, then: {if: =scale.phone, then: 24, else: 9.5}, else: 0.5},
 						{if: =scale.phone, then: {if: =options.show_body, then: 9, else: 24}, else: 0},
 						{if: =options.show_body, then: {if: =scale.phone, then: 8, else: 0}, else: 0},
 						{if: =scale.phone, then: 0, else: 0}
@@ -73,8 +73,6 @@
 			.module_headline: {
 				color:{if: =article.read, then: color.articleReadColor},
                 padding: [0, 23, 0, 23]
-			},
-			#vertical: {
 			},
 			.body: {
 				padding: [4, 24, 0, 24]

@@ -49,710 +49,1023 @@
 			}},
 	        {if: =scale.phone, then: {
 	        	#b1 : {
-                    height:{
-                        if: =view.width, more-than: 320, then:{
-                            if: {$count:[=articles.b1.headline]},
-                            more-than: 35,
-                            then:{
-                            if: {$count:[=articles.b1.body_extract]},
-                            less-than: 140,
-                            then: {$multiply: [=view.width, .55]},
-                            else: {$multiply: [=view.width, .65]}
-                            }, else:{
-                            if: {$count:[=articles.b1.body_extract]},
-                            less-than: 140,
-                            then: {$multiply: [=view.width, .55]},
-                            else: {$multiply: [=view.width, .6]}
-                            }}},
-					options: { bind: {if: =articles.b1.no_binding, then: none}, show_body: true, small_headline: true }
+                     top: {if: =view.width, equals: 320, then: -11, else: -22},
+                     height:{
+                        if: {$count:[=articles.b1.headline]},
+                        more-than: 60,
+                        then:{
+
+                        if: {$count:[=articles.b1.body_extract]},
+                        less-than: 140,
+                        then: {$add: [{$divide: [=view.width, {$avg: [{$count: [=articles.b1.body_extract, =articles.b1.headline]}]}]}, 44]},
+                        else: {$add: [{$divide: [=view.width, {$avg: [{$count: [=articles.b1.body_extract, =articles.b1.headline]}]}]}, {if: =view.width, equals: 320, then: 110, else: 88}]}},
+
+                        else:{
+
+                        if: {$count:[=articles.b1.headline]},
+                        more-than: 35,
+                        then:{
+
+                        if: {$count:[=articles.b1.body_extract]},
+                        less-than: 140,
+                        then: {$add: [{$divide: [=view.width, {$avg: [{$count: [=articles.b1.body_extract, =articles.b1.headline]}]}]}, 44]},
+                        else: {$add: [{$divide: [=view.width, {$avg: [{$count: [=articles.b1.body_extract, =articles.b1.headline]}]}]}, {if: =view.width, equals: 320, then: 88, else: 88}]}}
+
+                        },else:{
+                        if: {$count:[=articles.b1.body_extract]},
+                        less-than: 140,
+                        then: {$add: [{$divide: [=view.width, {$avg: [{$count: [=articles.b1.body_extract, =articles.b1.headline]}]}]}, 44]},
+                        else: {$add: [{$divide: [=view.width, {$avg: [{$count: [=articles.b1.body_extract, =articles.b1.headline]}]}]}, {if: =view.width, equals: 320, then: 88, else: 88}]}}
+                    },
+                    padding: [0, 0, 24, 0],
+					options: { bind: {if: =articles.b1.no_binding, then: none}, show_body: true, small_headline: true, top_border: true }
 				},
-				#b2 : {
-                    position: relative,
-                    height:{
-                        if: =view.width, more-than: 320, then:{
-                            if: {$count:[=articles.b2.headline]},
-                            more-than: 35,
-                            then:{
-                            if: {$count:[=articles.b2.body_extract]},
-                            less-than: 140,
-                            then: {$multiply: [=view.width, .55]},
-                            else: {$multiply: [=view.width, .65]}
-                            }, else:{
-                            if: {$count:[=articles.b2.body_extract]},
-                            less-than: 140,
-                            then: {$multiply: [=view.width, .55]},
-                            else: {$multiply: [=view.width, .6]}
-                            }}},
+			   #b2 : {
+                    top: {if: =view.width, equals: 320, then: -11, else: -22},
+                     height:{
+                        if: {$count:[=articles.b2.headline]},
+                        more-than: 60,
+                        then:{
+
+                        if: {$count:[=articles.b2.body_extract]},
+                        less-than: 140,
+                        then: {$add: [{$divide: [=view.width, {$avg: [{$count: [=articles.b2.body_extract, =articles.b2.headline]}]}]}, 44]},
+                        else: {$add: [{$divide: [=view.width, {$avg: [{$count: [=articles.b2.body_extract, =articles.b2.headline]}]}]}, {if: =view.width, equals: 320, then: 110, else: 88}]}},
+
+                        else:{
+
+                        if: {$count:[=articles.b2.headline]},
+                        more-than: 35,
+                        then:{
+
+                        if: {$count:[=articles.b2.body_extract]},
+                        less-than: 140,
+                        then: {$add: [{$divide: [=view.width, {$avg: [{$count: [=articles.b2.body_extract, =articles.b2.headline]}]}]}, 44]},
+                        else: {$add: [{$divide: [=view.width, {$avg: [{$count: [=articles.b2.body_extract, =articles.b2.headline]}]}]}, {if: =view.width, equals: 320, then: 88, else: 88}]}}
+
+                        },else:{
+                        if: {$count:[=articles.b2.body_extract]},
+                        less-than: 140,
+                        then: {$add: [{$divide: [=view.width, {$avg: [{$count: [=articles.b2.body_extract, =articles.b2.headline]}]}]}, 44]},
+                        else: {$add: [{$divide: [=view.width, {$avg: [{$count: [=articles.b2.body_extract, =articles.b2.headline]}]}]}, {if: =view.width, equals: 320, then: 88, else: 88}]}}
+                    },
+                    padding: [0, 0, 24, 0],
 					options: { bind: {if: =articles.b2.no_binding, then: none}, show_body: true, small_headline: true }
 				},
 				#b3 : {
-                    position: relative,
+                    top: {if: =view.width, equals: 320, then: -11, else: -22},
                     height:{
-                        if: =view.width, more-than: 320, then:{
-                            if: {$count:[=articles.b3.headline]},
-                            more-than: 35,
-                            then:{
-                            if: {$count:[=articles.b3.body_extract]},
-                            less-than: 140,
-                            then: {$multiply: [=view.width, .55]},
-                            else: {$multiply: [=view.width, .65]}
-                            }, else:{
-                            if: {$count:[=articles.b3.body_extract]},
-                            less-than: 140,
-                            then: {$multiply: [=view.width, .55]},
-                            else: {$multiply: [=view.width, .6]}
-                            }}},
+                        if: {$count:[=articles.b3.headline]},
+                        more-than: 60,
+                        then:{
+
+                        if: {$count:[=articles.b3.body_extract]},
+                        less-than: 140,
+                        then: {$add: [{$divide: [=view.width, {$avg: [{$count: [=articles.b3.body_extract, =articles.b3.headline]}]}]}, 44]},
+                        else: {$add: [{$divide: [=view.width, {$avg: [{$count: [=articles.b3.body_extract, =articles.b3.headline]}]}]}, {if: =view.width, equals: 320, then: 110, else: 88}]}},
+
+                        else:{
+
+                        if: {$count:[=articles.b3.headline]},
+                        more-than: 35,
+                        then:{
+
+                        if: {$count:[=articles.b3.body_extract]},
+                        less-than: 140,
+                        then: {$add: [{$divide: [=view.width, {$avg: [{$count: [=articles.b3.body_extract, =articles.b3.headline]}]}]}, 44]},
+                        else: {$add: [{$divide: [=view.width, {$avg: [{$count: [=articles.b3.body_extract, =articles.b3.headline]}]}]}, {if: =view.width, equals: 320, then: 88, else: 88}]}}
+
+                        },else:{
+                        if: {$count:[=articles.b3.body_extract]},
+                        less-than: 140,
+                        then: {$add: [{$divide: [=view.width, {$avg: [{$count: [=articles.b3.body_extract, =articles.b3.headline]}]}]}, 44]},
+                        else: {$add: [{$divide: [=view.width, {$avg: [{$count: [=articles.b3.body_extract, =articles.b3.headline]}]}]}, {if: =view.width, equals: 320, then: 88, else: 66}]}}
+                    },
+                    padding: [0, 0, 24, 0],
 					options: { bind: {if: =articles.b3.no_binding, then: none}, show_body: true, small_headline: true }
 				},
 				#b4 : {
-                    position: relative,
-                    top: -11,
-                    bottom: -11,
-                    padding: [0, 0, 11, 0],
+                    top: {if: =view.width, equals: 320, then: -11, else: -22},
                     height:{
-                        if: =view.width, more-than: 320, then:{
-                            if: {$count:[=articles.b4.headline]},
-                            more-than: 35,
-                            then:{
-                            if: {$count:[=articles.b4.body_extract]},
-                            less-than: 140,
-                            then: {$multiply: [=view.width, .55]},
-                            else: {$multiply: [=view.width, .65]}
-                            }, else:{
-                            if: {$count:[=articles.b4.body_extract]},
-                            less-than: 140,
-                            then: {$multiply: [=view.width, .55]},
-                            else: {$multiply: [=view.width, .6]}
-                    }}},
+                        if: {$count:[=articles.b4.headline]},
+                        more-than: 60,
+                        then:{
+
+                        if: {$count:[=articles.b4.body_extract]},
+                        less-than: 140,
+                        then: {$add: [{$divide: [=view.width, {$avg: [{$count: [=articles.b4.body_extract, =articles.b4.headline]}]}]}, 44]},
+                        else: {$add: [{$divide: [=view.width, {$avg: [{$count: [=articles.b4.body_extract, =articles.b4.headline]}]}]}, {if: =view.width, equals: 320, then: 110, else: 88}]}},
+
+                        else:{
+
+                        if: {$count:[=articles.b4.headline]},
+                        more-than: 35,
+                        then:{
+
+                        if: {$count:[=articles.b4.body_extract]},
+                        less-than: 140,
+                        then: {$add: [{$divide: [=view.width, {$avg: [{$count: [=articles.b4.body_extract, =articles.b4.headline]}]}]}, 44]},
+                        else: {$add: [{$divide: [=view.width, {$avg: [{$count: [=articles.b4.body_extract, =articles.b4.headline]}]}]}, {if: =view.width, equals: 320, then: 110, else: 88}]}}
+
+                        },else:{
+                        if: {$count:[=articles.b4.body_extract]},
+                        less-than: 140,
+                        then: {$add: [{$divide: [=view.width, {$avg: [{$count: [=articles.b4.body_extract, =articles.b4.headline]}]}]}, 44]},
+                        else: {$add: [{$divide: [=view.width, {$avg: [{$count: [=articles.b4.body_extract, =articles.b4.headline]}]}]}, {if: =view.width, equals: 320, then: 88, else: 66}]}}
+                    },
+                    padding: [0, 0, 24, 0],
 					options: { bind: {if: =articles.b4.no_binding, then: none}, show_body: true, small_headline: true }
 				},
 				#b5 : {
-                    position: relative,
-                    top: -11,
-                    bottom: -11,
-                    padding: [0, 0, 11, 0],
+                    top: {if: =view.width, equals: 320, then: -11, else: -22},
+                    padding: [0, 0, 24, 0],
                     height:{
-                        if: =view.width, more-than: 320, then:{
-                            if: {$count:[=articles.b5.headline]},
-                            more-than: 35,
-                            then:{
-                            if: {$count:[=articles.b5.body_extract]},
-                            less-than: 140,
-                            then: {$multiply: [=view.width, .55]},
-                            else: {$multiply: [=view.width, .65]}
-                            }, else:{
-                            if: {$count:[=articles.b5.body_extract]},
-                            less-than: 140,
-                            then: {$multiply: [=view.width, .55]},
-                            else: {$multiply: [=view.width, .6]}
-                    }}},
+                        if: {$count:[=articles.b5.headline]},
+                        more-than: 60,
+                        then:{
+
+                        if: {$count:[=articles.b5.body_extract]},
+                        less-than: 140,
+                        then: {$add: [{$divide: [=view.width, {$avg: [{$count: [=articles.b5.body_extract, =articles.b5.headline]}]}]}, 44]},
+                        else: {$add: [{$divide: [=view.width, {$avg: [{$count: [=articles.b5.body_extract, =articles.b5.headline]}]}]}, {if: =view.width, equals: 320, then: 110, else: 88}]}},
+
+                        else:{
+
+                        if: {$count:[=articles.b5.headline]},
+                        more-than: 35,
+                        then:{
+
+                        if: {$count:[=articles.b5.body_extract]},
+                        less-than: 140,
+                        then: {$add: [{$divide: [=view.width, {$avg: [{$count: [=articles.b5.body_extract, =articles.b5.headline]}]}]}, 44]},
+                        else: {$add: [{$divide: [=view.width, {$avg: [{$count: [=articles.b5.body_extract, =articles.b5.headline]}]}]}, {if: =view.width, equals: 320, then: 110, else: 88}]}}
+
+                        },else:{
+                        if: {$count:[=articles.b5.body_extract]},
+                        less-than: 140,
+                        then: {$add: [{$divide: [=view.width, {$avg: [{$count: [=articles.b5.body_extract, =articles.b5.headline]}]}]}, 44]},
+                        else: {$add: [{$divide: [=view.width, {$avg: [{$count: [=articles.b5.body_extract, =articles.b5.headline]}]}]}, {if: =view.width, equals: 320, then: 88, else: 66}]}}
+                    },
 					options: { bind: {if: =articles.b5.no_binding, then: none}, show_body: true, small_headline: true }
 				},
 				#b6 : {
-                    position: relative,
-                    top: -11,
-                    bottom: -11,
-                    padding: [0, 0, 11, 0],
+                    top: {if: =view.width, equals: 320, then: -11, else: -22},
+                    padding: [0, 0, 24, 0],
                     height:{
-                        if: =view.width, more-than: 320, then:{
-                            if: {$count:[=articles.b6.headline]},
-                            more-than: 35,
-                            then:{
-                            if: {$count:[=articles.b6.body_extract]},
-                            less-than: 140,
-                            then: {$multiply: [=view.width, .55]},
-                            else: {$multiply: [=view.width, .65]}
-                            }, else:{
-                            if: {$count:[=articles.b6.body_extract]},
-                            less-than: 140,
-                            then: {$multiply: [=view.width, .55]},
-                            else: {$multiply: [=view.width, .6]}
-                    }}},
+                        if: {$count:[=articles.b6.headline]},
+                        more-than: 60,
+                        then:{
+
+                        if: {$count:[=articles.b6.body_extract]},
+                        less-than: 140,
+                        then: {$add: [{$divide: [=view.width, {$avg: [{$count: [=articles.b6.body_extract, =articles.b6.headline]}]}]}, 44]},
+                        else: {$add: [{$divide: [=view.width, {$avg: [{$count: [=articles.b6.body_extract, =articles.b6.headline]}]}]}, {if: =view.width, equals: 320, then: 110, else: 88}]}},
+
+                        else:{
+
+                        if: {$count:[=articles.b6.headline]},
+                        more-than: 35,
+                        then:{
+
+                        if: {$count:[=articles.b6.body_extract]},
+                        less-than: 140,
+                        then: {$add: [{$divide: [=view.width, {$avg: [{$count: [=articles.b6.body_extract, =articles.b6.headline]}]}]}, 44]},
+                        else: {$add: [{$divide: [=view.width, {$avg: [{$count: [=articles.b6.body_extract, =articles.b6.headline]}]}]}, {if: =view.width, equals: 320, then: 110, else: 88}]}}
+
+                        },else:{
+                        if: {$count:[=articles.b6.body_extract]},
+                        less-than: 140,
+                        then: {$add: [{$divide: [=view.width, {$avg: [{$count: [=articles.b6.body_extract, =articles.b6.headline]}]}]}, 44]},
+                        else: {$add: [{$divide: [=view.width, {$avg: [{$count: [=articles.b6.body_extract, =articles.b6.headline]}]}]}, {if: =view.width, equals: 320, then: 88, else: 66}]}}
+                    },
 					options: { bind: {if: =articles.b6.no_binding, then: none}, show_body: true, small_headline: true }
 				},
 				#b7 : {
-                    position: relative,
-                    top: -11,
-                    bottom: -11,
-                    padding: [0, 0, 11, 0],
+                    top: {if: =view.width, equals: 320, then: -11, else: -22},
                     height:{
-                        if: =view.width, more-than: 320, then:{
-                            if: {$count:[=articles.b6.headline]},
-                            more-than: 35,
-                            then:{
-                            if: {$count:[=articles.b7.body_extract]},
-                            less-than: 140,
-                            then: {$multiply: [=view.width, .55]},
-                            else: {$multiply: [=view.width, .65]}
-                            }, else:{
-                            if: {$count:[=articles.b7.body_extract]},
-                            less-than: 140,
-                            then: {$multiply: [=view.width, .55]},
-                            else: {$multiply: [=view.width, .6]}
-                    }}},
+                        if: {$count:[=articles.b7.headline]},
+                        more-than: 60,
+                        then:{
 
+                        if: {$count:[=articles.b7.body_extract]},
+                        less-than: 140,
+                        then: {$add: [{$divide: [=view.width, {$avg: [{$count: [=articles.b7.body_extract, =articles.b7.headline]}]}]}, 44]},
+                        else: {$add: [{$divide: [=view.width, {$avg: [{$count: [=articles.b7.body_extract, =articles.b7.headline]}]}]}, {if: =view.width, equals: 320, then: 110, else: 88}]}},
+
+                        else:{
+
+                        if: {$count:[=articles.b7.headline]},
+                        more-than: 35,
+                        then:{
+
+                        if: {$count:[=articles.b7.body_extract]},
+                        less-than: 140,
+                        then: {$add: [{$divide: [=view.width, {$avg: [{$count: [=articles.b7.body_extract, =articles.b7.headline]}]}]}, 44]},
+                        else: {$add: [{$divide: [=view.width, {$avg: [{$count: [=articles.b7.body_extract, =articles.b7.headline]}]}]}, {if: =view.width, equals: 320, then: 110, else: 88}]}}
+
+                        },else:{
+                        if: {$count:[=articles.b7.body_extract]},
+                        less-than: 140,
+                        then: {$add: [{$divide: [=view.width, {$avg: [{$count: [=articles.b7.body_extract, =articles.b7.headline]}]}]}, 44]},
+                        else: {$add: [{$divide: [=view.width, {$avg: [{$count: [=articles.b7.body_extract, =articles.b7.headline]}]}]}, {if: =view.width, equals: 320, then: 88, else: 66}]}}
+                    },
+                    padding: [0, 0, 24, 0],
 					options: { bind: {if: =articles.b7.no_binding, then: none}, show_body: true, small_headline: true }
 				},
 				#b8 : {
-                    position: relative,
-                    top: -11,
-                    bottom: -11,
-                    padding: [0, 0, 11, 0],
                     height:{
-                        if: =view.width, more-than: 320, then:{
-                            if: {$count:[=articles.b8.headline]},
-                            more-than: 35,
-                            then:{
-                            if: {$count:[=articles.b8.body_extract]},
-                            less-than: 140,
-                            then: {$multiply: [=view.width, .55]},
-                            else: {$multiply: [=view.width, .65]}
-                            }, else:{
-                            if: {$count:[=articles.b8.body_extract]},
-                            less-than: 140,
-                            then: {$multiply: [=view.width, .55]},
-                            else: {$multiply: [=view.width, .6]}
-                    }}},
+                        if: {$count:[=articles.b8.headline]},
+                        more-than: 60,
+                        then:{
+
+                        if: {$count:[=articles.b8.body_extract]},
+                        less-than: 140,
+                        then: {$add: [{$divide: [=view.width, {$avg: [{$count: [=articles.b8.body_extract, =articles.b8.headline]}]}]}, 44]},
+                        else: {$add: [{$divide: [=view.width, {$avg: [{$count: [=articles.b8.body_extract, =articles.b8.headline]}]}]}, {if: =view.width, equals: 320, then: 110, else: 88}]}},
+
+                        else:{
+
+                        if: {$count:[=articles.b8.headline]},
+                        more-than: 35,
+                        then:{
+
+                        if: {$count:[=articles.b8.body_extract]},
+                        less-than: 140,
+                        then: {$add: [{$divide: [=view.width, {$avg: [{$count: [=articles.b8.body_extract, =articles.b8.headline]}]}]}, 44]},
+                        else: {$add: [{$divide: [=view.width, {$avg: [{$count: [=articles.b8.body_extract, =articles.b8.headline]}]}]}, {if: =view.width, equals: 320, then: 110, else: 88}]}}
+
+                        },else:{
+                        if: {$count:[=articles.b8.body_extract]},
+                        less-than: 140,
+                        then: {$add: [{$divide: [=view.width, {$avg: [{$count: [=articles.b8.body_extract, =articles.b8.headline]}]}]}, 44]},
+                        else: {$add: [{$divide: [=view.width, {$avg: [{$count: [=articles.b8.body_extract, =articles.b8.headline]}]}]}, {if: =view.width, equals: 320, then: 88, else: 66}]}}
+                    },
+                    padding: [0, 0, 24, 0],
+                    top: {if: =view.width, equals: 320, then: -11, else: -22},
 					options: { bind: {if: =articles.b8.no_binding, then: none}, show_body: true, small_headline: true }
 				},
 				#b9 : {
-                    position: relative,
-                    top: -11,
-                    bottom: -11,
-                    padding: [0, 0, 11, 0],
                     height:{
-                        if: =view.width, more-than: 320, then:{
-                            if: {$count:[=articles.b9.headline]},
-                            more-than: 35,
-                            then:{
-                            if: {$count:[=articles.b9.body_extract]},
-                            less-than: 140,
-                            then: {$multiply: [=view.width, .55]},
-                            else: {$multiply: [=view.width, .65]}
-                            }, else:{
-                            if: {$count:[=articles.b9.body_extract]},
-                            less-than: 140,
-                            then: {$multiply: [=view.width, .55]},
-                            else: {$multiply: [=view.width, .6]}
-                    }}},
+                        if: {$count:[=articles.b9.headline]},
+                        more-than: 60,
+                        then:{
+
+                        if: {$count:[=articles.b9.body_extract]},
+                        less-than: 140,
+                        then: {$add: [{$divide: [=view.width, {$avg: [{$count: [=articles.b9.body_extract, =articles.b9.headline]}]}]}, 44]},
+                        else: {$add: [{$divide: [=view.width, {$avg: [{$count: [=articles.b9.body_extract, =articles.b9.headline]}]}]}, {if: =view.width, equals: 320, then: 110, else: 88}]}},
+
+                        else:{
+
+                        if: {$count:[=articles.b9.headline]},
+                        more-than: 35,
+                        then:{
+
+                        if: {$count:[=articles.b9.body_extract]},
+                        less-than: 140,
+                        then: {$add: [{$divide: [=view.width, {$avg: [{$count: [=articles.b9.body_extract, =articles.b9.headline]}]}]}, 44]},
+                        else: {$add: [{$divide: [=view.width, {$avg: [{$count: [=articles.b9.body_extract, =articles.b9.headline]}]}]}, {if: =view.width, equals: 320, then: 110, else: 88}]}}
+
+                        },else:{
+                        if: {$count:[=articles.b9.body_extract]},
+                        less-than: 140,
+                        then: {$add: [{$divide: [=view.width, {$avg: [{$count: [=articles.b9.body_extract, =articles.b9.headline]}]}]}, 44]},
+                        else: {$add: [{$divide: [=view.width, {$avg: [{$count: [=articles.b9.body_extract, =articles.b9.headline]}]}]}, {if: =view.width, equals: 320, then: 88, else: 66}]}}
+                    },
+                    top: {if: =view.width, equals: 320, then: -11, else: -22},
+                    padding: [0, 0, 24, 0],
 					options: { bind: {if: =articles.b9.no_binding, then: none}, show_body: true, small_headline: true }
 				},
 				#b10 : {
-                    position: relative,
-                    top: -11,
-                    bottom: -11,
-                    padding: [0, 0, 11, 0],
                     height:{
-                        if: =view.width, more-than: 320, then:{
-                            if: {$count:[=articles.b10.headline]},
-                            more-than: 35,
-                            then:{
-                            if: {$count:[=articles.b10.body_extract]},
-                            less-than: 140,
-                            then: {$multiply: [=view.width, .55]},
-                            else: {$multiply: [=view.width, .65]}
-                            }, else:{
-                            if: {$count:[=articles.b10.body_extract]},
-                            less-than: 140,
-                            then: {$multiply: [=view.width, .55]},
-                            else: {$multiply: [=view.width, .6]}
-                    }}},
+                        if: {$count:[=articles.b10.headline]},
+                        more-than: 60,
+                        then:{
+
+                        if: {$count:[=articles.b10.body_extract]},
+                        less-than: 140,
+                        then: {$add: [{$divide: [=view.width, {$avg: [{$count: [=articles.b10.body_extract, =articles.b10.headline]}]}]}, 44]},
+                        else: {$add: [{$divide: [=view.width, {$avg: [{$count: [=articles.b10.body_extract, =articles.b10.headline]}]}]}, {if: =view.width, equals: 320, then: 110, else: 88}]}},
+
+                        else:{
+
+                        if: {$count:[=articles.b10.headline]},
+                        more-than: 35,
+                        then:{
+
+                        if: {$count:[=articles.b10.body_extract]},
+                        less-than: 140,
+                        then: {$add: [{$divide: [=view.width, {$avg: [{$count: [=articles.b10.body_extract, =articles.b10.headline]}]}]}, 44]},
+                        else: {$add: [{$divide: [=view.width, {$avg: [{$count: [=articles.b10.body_extract, =articles.b10.headline]}]}]}, {if: =view.width, equals: 320, then: 110, else: 88}]}}
+
+                        },else:{
+                        if: {$count:[=articles.b10.body_extract]},
+                        less-than: 140,
+                        then: {$add: [{$divide: [=view.width, {$avg: [{$count: [=articles.b10.body_extract, =articles.b10.headline]}]}]}, 44]},
+                        else: {$add: [{$divide: [=view.width, {$avg: [{$count: [=articles.b10.body_extract, =articles.b10.headline]}]}]}, {if: =view.width, equals: 320, then: 88, else: 66}]}}
+                    },
+                    top: {if: =view.width, equals: 320, then: -11, else: -22},
+                    padding: [0, 0, 24, 0],
 					options: { bind: {if: =articles.b10.no_binding, then: none}, show_body: true, small_headline: true }
 				},
 				#b11 : {
-                    position: relative,
-                    top: -11,
-                    bottom: -11,
-                    padding: [0, 0, 11, 0],
                     height:{
-                        if: =view.width, more-than: 320, then:{
-                            if: {$count:[=articles.b11.headline]},
-                            more-than: 35,
-                            then:{
-                            if: {$count:[=articles.b11.body_extract]},
-                            less-than: 140,
-                            then: {$multiply: [=view.width, .55]},
-                            else: {$multiply: [=view.width, .65]}
-                            }, else:{
-                            if: {$count:[=articles.b11.body_extract]},
-                            less-than: 140,
-                            then: {$multiply: [=view.width, .55]},
-                            else: {$multiply: [=view.width, .6]}
-                    }}},
+                        if: {$count:[=articles.b11.headline]},
+                        more-than: 60,
+                        then:{
+
+                        if: {$count:[=articles.b11.body_extract]},
+                        less-than: 140,
+                        then: {$add: [{$divide: [=view.width, {$avg: [{$count: [=articles.b11.body_extract, =articles.b11.headline]}]}]}, 44]},
+                        else: {$add: [{$divide: [=view.width, {$avg: [{$count: [=articles.b11.body_extract, =articles.b11.headline]}]}]}, {if: =view.width, equals: 320, then: 110, else: 88}]}},
+
+                        else:{
+
+                        if: {$count:[=articles.b11.headline]},
+                        more-than: 35,
+                        then:{
+
+                        if: {$count:[=articles.b11.body_extract]},
+                        less-than: 140,
+                        then: {$add: [{$divide: [=view.width, {$avg: [{$count: [=articles.b11.body_extract, =articles.b11.headline]}]}]}, 44]},
+                        else: {$add: [{$divide: [=view.width, {$avg: [{$count: [=articles.b11.body_extract, =articles.b11.headline]}]}]}, {if: =view.width, equals: 320, then: 110, else: 88}]}}
+
+                        },else:{
+                        if: {$count:[=articles.b11.body_extract]},
+                        less-than: 140,
+                        then: {$add: [{$divide: [=view.width, {$avg: [{$count: [=articles.b11.body_extract, =articles.b11.headline]}]}]}, 44]},
+                        else: {$add: [{$divide: [=view.width, {$avg: [{$count: [=articles.b11.body_extract, =articles.b11.headline]}]}]}, {if: =view.width, equals: 320, then: 88, else: 66}]}}
+                    },
+                    top: {if: =view.width, equals: 320, then: -11, else: -22},
+                    padding: [0, 0, 24, 0],
 					options: { bind: {if: =articles.b11.no_binding, then: none}, show_body: true, small_headline: true }
 				},
 				#b12 : {
-                    position: relative,
-                    top: -11,
-                    bottom: -11,
-                    padding: [0, 0, 11, 0],
-                    height:{
-                        if: =view.width, more-than: 320, then:{
-                            if: {$count:[=articles.b12.headline]},
-                            more-than: 35,
-                            then:{
-                            if: {$count:[=articles.b12.body_extract]},
-                            less-than: 140,
-                            then: {$multiply: [=view.width, .55]},
-                            else: {$multiply: [=view.width, .65]}
-                            }, else:{
-                            if: {$count:[=articles.b12.body_extract]},
-                            less-than: 140,
-                            then: {$multiply: [=view.width, .55]},
-                            else: {$multiply: [=view.width, .6]}
-                    }}},
+                   height:{
+                        if: {$count:[=articles.b12.headline]},
+                        more-than: 60,
+                        then:{
+
+                        if: {$count:[=articles.b12.body_extract]},
+                        less-than: 140,
+                        then: {$add: [{$divide: [=view.width, {$avg: [{$count: [=articles.b12.body_extract, =articles.b12.headline]}]}]}, 44]},
+                        else: {$add: [{$divide: [=view.width, {$avg: [{$count: [=articles.b12.body_extract, =articles.b12.headline]}]}]}, {if: =view.width, equals: 320, then: 110, else: 88}]}},
+
+                        else:{
+
+                        if: {$count:[=articles.b12.headline]},
+                        more-than: 35,
+                        then:{
+
+                        if: {$count:[=articles.b12.body_extract]},
+                        less-than: 140,
+                        then: {$add: [{$divide: [=view.width, {$avg: [{$count: [=articles.b12.body_extract, =articles.b12.headline]}]}]}, 44]},
+                        else: {$add: [{$divide: [=view.width, {$avg: [{$count: [=articles.b12.body_extract, =articles.b12.headline]}]}]}, {if: =view.width, equals: 320, then: 110, else: 88}]}}
+
+                        },else:{
+                        if: {$count:[=articles.b12.body_extract]},
+                        less-than: 140,
+                        then: {$add: [{$divide: [=view.width, {$avg: [{$count: [=articles.b12.body_extract, =articles.b12.headline]}]}]}, 44]},
+                        else: {$add: [{$divide: [=view.width, {$avg: [{$count: [=articles.b12.body_extract, =articles.b12.headline]}]}]}, {if: =view.width, equals: 320, then: 88, else: 66}]}}
+                    },
+                    top: {if: =view.width, equals: 320, then: -11, else: -22},
+                    padding: [0, 0, 24, 0],
 					options: { bind: {if: =articles.b12.no_binding, then: none}, show_body: true, small_headline: true }
 				},
 				#b13 : {
-                    position: relative,
-                    top: -11,
-                    bottom: -11,
-                    padding: [0, 0, 11, 0],
                     height:{
-                        if: =view.width, more-than: 320, then:{
-                            if: {$count:[=articles.b13.headline]},
-                            more-than: 35,
-                            then:{
-                            if: {$count:[=articles.b13.body_extract]},
-                            less-than: 140,
-                            then: {$multiply: [=view.width, .55]},
-                            else: {$multiply: [=view.width, .65]}
-                            }, else:{
-                            if: {$count:[=articles.b13.body_extract]},
-                            less-than: 140,
-                            then: {$multiply: [=view.width, .55]},
-                            else: {$multiply: [=view.width, .6]}
-                    }}},
+                        if: {$count:[=articles.b13.headline]},
+                        more-than: 60,
+                        then:{
+
+                        if: {$count:[=articles.b13.body_extract]},
+                        less-than: 140,
+                        then: {$add: [{$divide: [=view.width, {$avg: [{$count: [=articles.b13.body_extract, =articles.b13.headline]}]}]}, 44]},
+                        else: {$add: [{$divide: [=view.width, {$avg: [{$count: [=articles.b13.body_extract, =articles.b13.headline]}]}]}, {if: =view.width, equals: 320, then: 110, else: 88}]}},
+
+                        else:{
+
+                        if: {$count:[=articles.b13.headline]},
+                        more-than: 35,
+                        then:{
+
+                        if: {$count:[=articles.b13.body_extract]},
+                        less-than: 140,
+                        then: {$add: [{$divide: [=view.width, {$avg: [{$count: [=articles.b13.body_extract, =articles.b13.headline]}]}]}, 44]},
+                        else: {$add: [{$divide: [=view.width, {$avg: [{$count: [=articles.b13.body_extract, =articles.b13.headline]}]}]}, {if: =view.width, equals: 320, then: 110, else: 88}]}}
+
+                        },else:{
+                        if: {$count:[=articles.b13.body_extract]},
+                        less-than: 140,
+                        then: {$add: [{$divide: [=view.width, {$avg: [{$count: [=articles.b13.body_extract, =articles.b13.headline]}]}]}, 44]},
+                        else: {$add: [{$divide: [=view.width, {$avg: [{$count: [=articles.b13.body_extract, =articles.b13.headline]}]}]}, {if: =view.width, equals: 320, then: 88, else: 66}]}}
+                    },
+                    top: {if: =view.width, equals: 320, then: -11, else: -22},
+                    padding: [0, 0, 24, 0],
 					options: { bind: {if: =articles.b13.no_binding, then: none}, show_body: true, small_headline: true }
 				},
 				#b14 : {
-                    position: relative,
-                    top: -11,
-                    bottom: -11,
-                    padding: [0, 0, 11, 0],
                     height:{
-                        if: =view.width, more-than: 320, then:{
-                            if: {$count:[=articles.b14.headline]},
-                            more-than: 35,
-                            then:{
-                            if: {$count:[=articles.b14.body_extract]},
-                            less-than: 140,
-                            then: {$multiply: [=view.width, .55]},
-                            else: {$multiply: [=view.width, .65]}
-                            }, else:{
-                            if: {$count:[=articles.b14.body_extract]},
-                            less-than: 140,
-                            then: {$multiply: [=view.width, .55]},
-                            else: {$multiply: [=view.width, .6]}
-                    }}},
+                        if: {$count:[=articles.b14.headline]},
+                        more-than: 60,
+                        then:{
+
+                        if: {$count:[=articles.b14.body_extract]},
+                        less-than: 140,
+                        then: {$add: [{$divide: [=view.width, {$avg: [{$count: [=articles.b14.body_extract, =articles.b14.headline]}]}]}, 44]},
+                        else: {$add: [{$divide: [=view.width, {$avg: [{$count: [=articles.b14.body_extract, =articles.b14.headline]}]}]}, {if: =view.width, equals: 320, then: 110, else: 88}]}},
+
+                        else:{
+
+                        if: {$count:[=articles.b14.headline]},
+                        more-than: 35,
+                        then:{
+
+                        if: {$count:[=articles.b14.body_extract]},
+                        less-than: 140,
+                        then: {$add: [{$divide: [=view.width, {$avg: [{$count: [=articles.b14.body_extract, =articles.b14.headline]}]}]}, 44]},
+                        else: {$add: [{$divide: [=view.width, {$avg: [{$count: [=articles.b14.body_extract, =articles.b14.headline]}]}]}, {if: =view.width, equals: 320, then: 110, else: 88}]}}
+
+                        },else:{
+                        if: {$count:[=articles.b14.body_extract]},
+                        less-than: 140,
+                        then: {$add: [{$divide: [=view.width, {$avg: [{$count: [=articles.b14.body_extract, =articles.b14.headline]}]}]}, 44]},
+                        else: {$add: [{$divide: [=view.width, {$avg: [{$count: [=articles.b14.body_extract, =articles.b14.headline]}]}]}, {if: =view.width, equals: 320, then: 88, else: 66}]}}
+                    },
+                    top: {if: =view.width, equals: 320, then: -11, else: -22},
+                    padding: [0, 0, 24, 0],
 					options: { bind: {if: =articles.b14.no_binding, then: none}, show_body: true, small_headline: true }
 				},
 				#b15 : {
-                    position: relative,
-                    top: -11,
-                    bottom: -11,
-                    padding: [0, 0, 11, 0],
                     height:{
-                        if: =view.width, more-than: 320, then:{
-                            if: {$count:[=articles.b15.headline]},
-                            more-than: 35,
-                            then:{
-                            if: {$count:[=articles.b15.body_extract]},
-                            less-than: 140,
-                            then: {$multiply: [=view.width, .55]},
-                            else: {$multiply: [=view.width, .65]}
-                            }, else:{
-                            if: {$count:[=articles.b15.body_extract]},
-                            less-than: 140,
-                            then: {$multiply: [=view.width, .55]},
-                            else: {$multiply: [=view.width, .6]}
-                    }}},
+                        if: {$count:[=articles.b15.headline]},
+                        more-than: 60,
+                        then:{
+
+                        if: {$count:[=articles.b15.body_extract]},
+                        less-than: 140,
+                        then: {$add: [{$divide: [=view.width, {$avg: [{$count: [=articles.b15.body_extract, =articles.b15.headline]}]}]}, 44]},
+                        else: {$add: [{$divide: [=view.width, {$avg: [{$count: [=articles.b15.body_extract, =articles.b15.headline]}]}]}, {if: =view.width, equals: 320, then: 110, else: 88}]}},
+
+                        else:{
+
+                        if: {$count:[=articles.b15.headline]},
+                        more-than: 35,
+                        then:{
+
+                        if: {$count:[=articles.b15.body_extract]},
+                        less-than: 140,
+                        then: {$add: [{$divide: [=view.width, {$avg: [{$count: [=articles.b15.body_extract, =articles.b15.headline]}]}]}, 44]},
+                        else: {$add: [{$divide: [=view.width, {$avg: [{$count: [=articles.b15.body_extract, =articles.b15.headline]}]}]}, {if: =view.width, equals: 320, then: 110, else: 88}]}}
+
+                        },else:{
+                        if: {$count:[=articles.b15.body_extract]},
+                        less-than: 140,
+                        then: {$add: [{$divide: [=view.width, {$avg: [{$count: [=articles.b15.body_extract, =articles.b15.headline]}]}]}, 44]},
+                        else: {$add: [{$divide: [=view.width, {$avg: [{$count: [=articles.b15.body_extract, =articles.b15.headline]}]}]}, {if: =view.width, equals: 320, then: 88, else: 66}]}}
+                    },
+                    top: {if: =view.width, equals: 320, then: -11, else: -22},
+                    padding: [0, 0, 24, 0],
 					options: { bind: {if: =articles.b15.no_binding, then: none}, show_body: true, small_headline: true }
 				},
 				#b16 : {
-                    position: relative,
-                    top: -11,
-                    bottom: -11,
-                    padding: [0, 0, 11, 0],
                     height:{
-                        if: =view.width, more-than: 320, then:{
-                            if: {$count:[=articles.b16.headline]},
-                            more-than: 35,
-                            then:{
-                            if: {$count:[=articles.b16.body_extract]},
-                            less-than: 140,
-                            then: {$multiply: [=view.width, .55]},
-                            else: {$multiply: [=view.width, .65]}
-                            }, else:{
-                            if: {$count:[=articles.b16.body_extract]},
-                            less-than: 140,
-                            then: {$multiply: [=view.width, .55]},
-                            else: {$multiply: [=view.width, .6]}
-                    }}},
+                        if: {$count:[=articles.b16.headline]},
+                        more-than: 60,
+                        then:{
+
+                        if: {$count:[=articles.b16.body_extract]},
+                        less-than: 140,
+                        then: {$add: [{$divide: [=view.width, {$avg: [{$count: [=articles.b16.body_extract, =articles.b16.headline]}]}]}, 44]},
+                        else: {$add: [{$divide: [=view.width, {$avg: [{$count: [=articles.b16.body_extract, =articles.b16.headline]}]}]}, {if: =view.width, equals: 320, then: 110, else: 88}]}},
+
+                        else:{
+
+                        if: {$count:[=articles.b16.headline]},
+                        more-than: 35,
+                        then:{
+
+                        if: {$count:[=articles.b16.body_extract]},
+                        less-than: 140,
+                        then: {$add: [{$divide: [=view.width, {$avg: [{$count: [=articles.b16.body_extract, =articles.b16.headline]}]}]}, 44]},
+                        else: {$add: [{$divide: [=view.width, {$avg: [{$count: [=articles.b16.body_extract, =articles.b16.headline]}]}]}, {if: =view.width, equals: 320, then: 110, else: 88}]}}
+
+                        },else:{
+                        if: {$count:[=articles.b16.body_extract]},
+                        less-than: 140,
+                        then: {$add: [{$divide: [=view.width, {$avg: [{$count: [=articles.b16.body_extract, =articles.b16.headline]}]}]}, 44]},
+                        else: {$add: [{$divide: [=view.width, {$avg: [{$count: [=articles.b16.body_extract, =articles.b16.headline]}]}]}, {if: =view.width, equals: 320, then: 88, else: 66}]}}
+                    },
+                    top: {if: =view.width, equals: 320, then: -11, else: -22},
+                    padding: [0, 0, 24, 0],
 					options: { bind: {if: =articles.b16.no_binding, then: none}, show_body: true, small_headline: true }
 				},
 
 				#b17 : {
-                    position: relative,
-                    top: -11,
-                    bottom: -11,
-                    padding: [0, 0, 11, 0],
                     height:{
-                        if: =view.width, more-than: 320, then:{
-                            if: {$count:[=articles.b17.headline]},
-                            more-than: 35,
-                            then:{
-                            if: {$count:[=articles.b17.body_extract]},
-                            less-than: 140,
-                            then: {$multiply: [=view.width, .55]},
-                            else: {$multiply: [=view.width, .65]}
-                            }, else:{
-                            if: {$count:[=articles.b17.body_extract]},
-                            less-than: 140,
-                            then: {$multiply: [=view.width, .55]},
-                            else: {$multiply: [=view.width, .6]}
-                    }}},
+                        if: {$count:[=articles.b17.headline]},
+                        more-than: 60,
+                        then:{
+
+                        if: {$count:[=articles.b17.body_extract]},
+                        less-than: 140,
+                        then: {$add: [{$divide: [=view.width, {$avg: [{$count: [=articles.b17.body_extract, =articles.b17.headline]}]}]}, 44]},
+                        else: {$add: [{$divide: [=view.width, {$avg: [{$count: [=articles.b17.body_extract, =articles.b17.headline]}]}]}, {if: =view.width, equals: 320, then: 110, else: 88}]}},
+
+                        else:{
+
+                        if: {$count:[=articles.b17.headline]},
+                        more-than: 35,
+                        then:{
+
+                        if: {$count:[=articles.b17.body_extract]},
+                        less-than: 140,
+                        then: {$add: [{$divide: [=view.width, {$avg: [{$count: [=articles.b17.body_extract, =articles.b17.headline]}]}]}, 44]},
+                        else: {$add: [{$divide: [=view.width, {$avg: [{$count: [=articles.b17.body_extract, =articles.b17.headline]}]}]}, {if: =view.width, equals: 320, then: 110, else: 88}]}}
+
+                        },else:{
+                        if: {$count:[=articles.b17.body_extract]},
+                        less-than: 140,
+                        then: {$add: [{$divide: [=view.width, {$avg: [{$count: [=articles.b17.body_extract, =articles.b17.headline]}]}]}, 44]},
+                        else: {$add: [{$divide: [=view.width, {$avg: [{$count: [=articles.b17.body_extract, =articles.b17.headline]}]}]}, {if: =view.width, equals: 320, then: 88, else: 66}]}}
+                    },
+                    top: {if: =view.width, equals: 320, then: -11, else: -22},
+                    padding: [0, 0, 24, 0],
 					options: { bind: {if: =articles.b17.no_binding, then: none}, show_body: true, small_headline: true }
 				},
 				#b18 : {
-                    position: relative,
-                    top: -11,
-                    bottom: -11,
-                    padding: [0, 0, 11, 0],
-                    height:{
-                        if: =view.width, more-than: 320, then:{
-                            if: {$count:[=articles.b18.headline]},
-                            more-than: 35,
-                            then:{
-                            if: {$count:[=articles.b18.body_extract]},
-                            less-than: 140,
-                            then: {$multiply: [=view.width, .55]},
-                            else: {$multiply: [=view.width, .65]}
-                            }, else:{
-                            if: {$count:[=articles.b18.body_extract]},
-                            less-than: 140,
-                            then: {$multiply: [=view.width, .55]},
-                            else: {$multiply: [=view.width, .6]}
-                    }}},
+                  height:{
+                        if: {$count:[=articles.b18.headline]},
+                        more-than: 60,
+                        then:{
+
+                        if: {$count:[=articles.b18.body_extract]},
+                        less-than: 140,
+                        then: {$add: [{$divide: [=view.width, {$avg: [{$count: [=articles.b18.body_extract, =articles.b18.headline]}]}]}, 44]},
+                        else: {$add: [{$divide: [=view.width, {$avg: [{$count: [=articles.b18.body_extract, =articles.b18.headline]}]}]}, {if: =view.width, equals: 320, then: 110, else: 88}]}},
+
+                        else:{
+
+                        if: {$count:[=articles.b18.headline]},
+                        more-than: 35,
+                        then:{
+
+                        if: {$count:[=articles.b18.body_extract]},
+                        less-than: 140,
+                        then: {$add: [{$divide: [=view.width, {$avg: [{$count: [=articles.b18.body_extract, =articles.b18.headline]}]}]}, 44]},
+                        else: {$add: [{$divide: [=view.width, {$avg: [{$count: [=articles.b18.body_extract, =articles.b18.headline]}]}]}, {if: =view.width, equals: 320, then: 110, else: 88}]}}
+
+                        },else:{
+                        if: {$count:[=articles.b18.body_extract]},
+                        less-than: 140,
+                        then: {$add: [{$divide: [=view.width, {$avg: [{$count: [=articles.b18.body_extract, =articles.b18.headline]}]}]}, 44]},
+                        else: {$add: [{$divide: [=view.width, {$avg: [{$count: [=articles.b18.body_extract, =articles.b18.headline]}]}]}, {if: =view.width, equals: 320, then: 88, else: 66}]}}
+                    },
+                    top: {if: =view.width, equals: 320, then: -11, else: -22},
+                    padding: [0, 0, 24, 0],
+
 					options: { bind: {if: =articles.b18.no_binding, then: none}, show_body: true, small_headline: true }
 				},
 				#b19 : {
-                    position: relative,
-                    top: -11,
-                    bottom: -11,
-                    padding: [0, 0, 11, 0],
-                    height:{
-                        if: =view.width, more-than: 320, then:{
-                            if: {$count:[=articles.b19.headline]},
-                            more-than: 35,
-                            then:{
-                            if: {$count:[=articles.b19.body_extract]},
-                            less-than: 140,
-                            then: {$multiply: [=view.width, .55]},
-                            else: {$multiply: [=view.width, .65]}
-                            }, else:{
-                            if: {$count:[=articles.b19.body_extract]},
-                            less-than: 140,
-                            then: {$multiply: [=view.width, .55]},
-                            else: {$multiply: [=view.width, .6]}
-                    }}},
+                     height:{
+                        if: {$count:[=articles.b19.headline]},
+                        more-than: 60,
+                        then:{
 
+                        if: {$count:[=articles.b19.body_extract]},
+                        less-than: 140,
+                        then: {$add: [{$divide: [=view.width, {$avg: [{$count: [=articles.b19.body_extract, =articles.b19.headline]}]}]}, 44]},
+                        else: {$add: [{$divide: [=view.width, {$avg: [{$count: [=articles.b19.body_extract, =articles.b19.headline]}]}]}, {if: =view.width, equals: 320, then: 110, else: 88}]}},
+
+                        else:{
+
+                        if: {$count:[=articles.b19.headline]},
+                        more-than: 35,
+                        then:{
+
+                        if: {$count:[=articles.b19.body_extract]},
+                        less-than: 140,
+                        then: {$add: [{$divide: [=view.width, {$avg: [{$count: [=articles.b19.body_extract, =articles.b19.headline]}]}]}, 44]},
+                        else: {$add: [{$divide: [=view.width, {$avg: [{$count: [=articles.b19.body_extract, =articles.b19.headline]}]}]}, {if: =view.width, equals: 320, then: 110, else: 88}]}}
+
+                        },else:{
+                        if: {$count:[=articles.b19.body_extract]},
+                        less-than: 140,
+                        then: {$add: [{$divide: [=view.width, {$avg: [{$count: [=articles.b19.body_extract, =articles.b19.headline]}]}]}, 44]},
+                        else: {$add: [{$divide: [=view.width, {$avg: [{$count: [=articles.b19.body_extract, =articles.b19.headline]}]}]}, {if: =view.width, equals: 320, then: 88, else: 66}]}}
+                    },
+                    top: {if: =view.width, equals: 320, then: -11, else: -22},
+                    padding: [0, 0, 24, 0],
 					options: { bind: {if: =articles.b19.no_binding, then: none}, show_body: true, small_headline: true }
 				},
 				#b20 : {
-                    position: relative,
-                    top: -11,
-                    bottom: -11,
-                    padding: [0, 0, 11, 0],
                     height:{
-                        if: =view.width, more-than: 320, then:{
-                            if: {$count:[=articles.b20.headline]},
-                            more-than: 35,
-                            then:{
-                            if: {$count:[=articles.b20.body_extract]},
-                            less-than: 140,
-                            then: {$multiply: [=view.width, .55]},
-                            else: {$multiply: [=view.width, .65]}
-                            }, else:{
-                            if: {$count:[=articles.b20.body_extract]},
-                            less-than: 140,
-                            then: {$multiply: [=view.width, .55]},
-                            else: {$multiply: [=view.width, .6]}
-                    }}},
+                        if: {$count:[=articles.b20.headline]},
+                        more-than: 60,
+                        then:{
 
+                        if: {$count:[=articles.b20.body_extract]},
+                        less-than: 140,
+                        then: {$add: [{$divide: [=view.width, {$avg: [{$count: [=articles.b20.body_extract, =articles.b20.headline]}]}]}, 44]},
+                        else: {$add: [{$divide: [=view.width, {$avg: [{$count: [=articles.b20.body_extract, =articles.b20.headline]}]}]}, {if: =view.width, equals: 320, then: 110, else: 88}]}},
+
+                        else:{
+
+                        if: {$count:[=articles.b20.headline]},
+                        more-than: 35,
+                        then:{
+
+                        if: {$count:[=articles.b20.body_extract]},
+                        less-than: 140,
+                        then: {$add: [{$divide: [=view.width, {$avg: [{$count: [=articles.b20.body_extract, =articles.b20.headline]}]}]}, 44]},
+                        else: {$add: [{$divide: [=view.width, {$avg: [{$count: [=articles.b20.body_extract, =articles.b20.headline]}]}]}, {if: =view.width, equals: 320, then: 110, else: 88}]}}
+
+                        },else:{
+                        if: {$count:[=articles.b20.body_extract]},
+                        less-than: 140,
+                        then: {$add: [{$divide: [=view.width, {$avg: [{$count: [=articles.b20.body_extract, =articles.b20.headline]}]}]}, 44]},
+                        else: {$add: [{$divide: [=view.width, {$avg: [{$count: [=articles.b20.body_extract, =articles.b20.headline]}]}]}, {if: =view.width, equals: 320, then: 88, else: 66}]}}
+                    },
+                    top: {if: =view.width, equals: 320, then: -11, else: -22},
+                    padding: [0, 0, 24, 0],
 					options: { bind: {if: =articles.b20.no_binding, then: none}, show_body: true, small_headline: true }
 				},
 				#b21 : {
-                    position: relative,
-                    top: -11,
-                    bottom: -11,
-                    padding: [0, 0, 11, 0],
-                    height:{
-                        if: =view.width, more-than: 320, then:{
-                            if: {$count:[=articles.b21.headline]},
-                            more-than: 35,
-                            then:{
-                            if: {$count:[=articles.b21.body_extract]},
-                            less-than: 140,
-                            then: {$multiply: [=view.width, .55]},
-                            else: {$multiply: [=view.width, .65]}
-                            }, else:{
-                            if: {$count:[=articles.b21.body_extract]},
-                            less-than: 140,
-                            then: {$multiply: [=view.width, .55]},
-                            else: {$multiply: [=view.width, .6]}
-                    }}},
+                   height:{
+                        if: {$count:[=articles.b21.headline]},
+                        more-than: 60,
+                        then:{
 
+                        if: {$count:[=articles.b21.body_extract]},
+                        less-than: 140,
+                        then: {$add: [{$divide: [=view.width, {$avg: [{$count: [=articles.b21.body_extract, =articles.b21.headline]}]}]}, 44]},
+                        else: {$add: [{$divide: [=view.width, {$avg: [{$count: [=articles.b21.body_extract, =articles.b21.headline]}]}]}, {if: =view.width, equals: 320, then: 110, else: 88}]}},
 
+                        else:{
+
+                        if: {$count:[=articles.b21.headline]},
+                        more-than: 35,
+                        then:{
+
+                        if: {$count:[=articles.b21.body_extract]},
+                        less-than: 140,
+                        then: {$add: [{$divide: [=view.width, {$avg: [{$count: [=articles.b21.body_extract, =articles.b21.headline]}]}]}, 44]},
+                        else: {$add: [{$divide: [=view.width, {$avg: [{$count: [=articles.b21.body_extract, =articles.b21.headline]}]}]}, {if: =view.width, equals: 320, then: 110, else: 88}]}}
+
+                        },else:{
+                        if: {$count:[=articles.b21.body_extract]},
+                        less-than: 140,
+                        then: {$add: [{$divide: [=view.width, {$avg: [{$count: [=articles.b21.body_extract, =articles.b21.headline]}]}]}, 44]},
+                        else: {$add: [{$divide: [=view.width, {$avg: [{$count: [=articles.b21.body_extract, =articles.b21.headline]}]}]}, {if: =view.width, equals: 320, then: 88, else: 66}]}}
+                    },
+                    top: {if: =view.width, equals: 320, then: -11, else: -22},
+                    padding: [0, 0, 24, 0],
 					options: { bind: {if: =articles.b21.no_binding, then: none}, show_body: true, small_headline: true }
 				},
 				#b22 : {
-                    position: relative,
-                    top: -11,
-                    bottom: -11,
-                    padding: [0, 0, 11, 0],
-                    height:{
-                        if: =view.width, more-than: 320, then:{
-                            if: {$count:[=articles.b22.headline]},
-                            more-than: 35,
-                            then:{
-                            if: {$count:[=articles.b22.body_extract]},
-                            less-than: 140,
-                            then: {$multiply: [=view.width, .55]},
-                            else: {$multiply: [=view.width, .65]}
-                            }, else:{
-                            if: {$count:[=articles.b22.body_extract]},
-                            less-than: 140,
-                            then: {$multiply: [=view.width, .55]},
-                            else: {$multiply: [=view.width, .6]}
-                    }}},
+                   height:{
+                        if: {$count:[=articles.b22.headline]},
+                        more-than: 60,
+                        then:{
+
+                        if: {$count:[=articles.b22.body_extract]},
+                        less-than: 140,
+                        then: {$add: [{$divide: [=view.width, {$avg: [{$count: [=articles.b22.body_extract, =articles.b22.headline]}]}]}, 44]},
+                        else: {$add: [{$divide: [=view.width, {$avg: [{$count: [=articles.b22.body_extract, =articles.b22.headline]}]}]}, {if: =view.width, equals: 320, then: 110, else: 88}]}},
+
+                        else:{
+
+                        if: {$count:[=articles.b22.headline]},
+                        more-than: 35,
+                        then:{
+
+                        if: {$count:[=articles.b22.body_extract]},
+                        less-than: 140,
+                        then: {$add: [{$divide: [=view.width, {$avg: [{$count: [=articles.b22.body_extract, =articles.b22.headline]}]}]}, 44]},
+                        else: {$add: [{$divide: [=view.width, {$avg: [{$count: [=articles.b22.body_extract, =articles.b22.headline]}]}]}, {if: =view.width, equals: 320, then: 110, else: 88}]}}
+
+                        },else:{
+                        if: {$count:[=articles.b22.body_extract]},
+                        less-than: 140,
+                        then: {$add: [{$divide: [=view.width, {$avg: [{$count: [=articles.b22.body_extract, =articles.b22.headline]}]}]}, 44]},
+                        else: {$add: [{$divide: [=view.width, {$avg: [{$count: [=articles.b22.body_extract, =articles.b22.headline]}]}]}, {if: =view.width, equals: 320, then: 88, else: 66}]}}
+                    },
+                    top: {if: =view.width, equals: 320, then: -11, else: -22},
+                    padding: [0, 0, 24, 0],
 					options: { bind: {if: =articles.b22.no_binding, then: none}, show_body: true, small_headline: true }
 				},
 				#b23 : {
-                    position: relative,
-                    top: -11,
-                    bottom: -11,
-                    padding: [0, 0, 11, 0],
-                    height:{
-                        if: =view.width, more-than: 320, then:{
-                            if: {$count:[=articles.b23.headline]},
-                            more-than: 35,
-                            then:{
-                            if: {$count:[=articles.b23.body_extract]},
-                            less-than: 140,
-                            then: {$multiply: [=view.width, .55]},
-                            else: {$multiply: [=view.width, .65]}
-                            }, else:{
-                            if: {$count:[=articles.b23.body_extract]},
-                            less-than: 140,
-                            then: {$multiply: [=view.width, .55]},
-                            else: {$multiply: [=view.width, .6]}
-                    }}},
+                   height:{
+                        if: {$count:[=articles.b23.headline]},
+                        more-than: 60,
+                        then:{
+
+                        if: {$count:[=articles.b23.body_extract]},
+                        less-than: 140,
+                        then: {$add: [{$divide: [=view.width, {$avg: [{$count: [=articles.b23.body_extract, =articles.b23.headline]}]}]}, 44]},
+                        else: {$add: [{$divide: [=view.width, {$avg: [{$count: [=articles.b23.body_extract, =articles.b23.headline]}]}]}, {if: =view.width, equals: 320, then: 110, else: 88}]}},
+
+                        else:{
+
+                        if: {$count:[=articles.b23.headline]},
+                        more-than: 35,
+                        then:{
+
+                        if: {$count:[=articles.b23.body_extract]},
+                        less-than: 140,
+                        then: {$add: [{$divide: [=view.width, {$avg: [{$count: [=articles.b23.body_extract, =articles.b23.headline]}]}]}, 44]},
+                        else: {$add: [{$divide: [=view.width, {$avg: [{$count: [=articles.b23.body_extract, =articles.b23.headline]}]}]}, {if: =view.width, equals: 320, then: 110, else: 88}]}}
+
+                        },else:{
+                        if: {$count:[=articles.b23.body_extract]},
+                        less-than: 140,
+                        then: {$add: [{$divide: [=view.width, {$avg: [{$count: [=articles.b23.body_extract, =articles.b23.headline]}]}]}, 44]},
+                        else: {$add: [{$divide: [=view.width, {$avg: [{$count: [=articles.b23.body_extract, =articles.b23.headline]}]}]}, {if: =view.width, equals: 320, then: 88, else: 66}]}}
+                    },
+                    top: {if: =view.width, equals: 320, then: -11, else: -22},
+                    padding: [0, 0, 24, 0],
 
 					options: { bind: {if: =articles.b23.no_binding, then: none}, show_body: true, small_headline: true }
 				},
 				#b24 : {
-                    position: relative,
-                    top: -11,
-                    bottom: -11,
-                    padding: [0, 0, 11, 0],
-                    height:{
-                        if: =view.width, more-than: 320, then:{
-                            if: {$count:[=articles.b24.headline]},
-                            more-than: 35,
-                            then:{
-                            if: {$count:[=articles.b24.body_extract]},
-                            less-than: 140,
-                            then: {$multiply: [=view.width, .55]},
-                            else: {$multiply: [=view.width, .65]}
-                            }, else:{
-                            if: {$count:[=articles.b24.body_extract]},
-                            less-than: 140,
-                            then: {$multiply: [=view.width, .55]},
-                            else: {$multiply: [=view.width, .6]}
-                    }}},
+                   height:{
+                        if: {$count:[=articles.b24.headline]},
+                        more-than: 60,
+                        then:{
 
+                        if: {$count:[=articles.b24.body_extract]},
+                        less-than: 140,
+                        then: {$add: [{$divide: [=view.width, {$avg: [{$count: [=articles.b24.body_extract, =articles.b24.headline]}]}]}, 44]},
+                        else: {$add: [{$divide: [=view.width, {$avg: [{$count: [=articles.b24.body_extract, =articles.b24.headline]}]}]}, {if: =view.width, equals: 320, then: 110, else: 88}]}},
+
+                        else:{
+
+                        if: {$count:[=articles.b24.headline]},
+                        more-than: 35,
+                        then:{
+
+                        if: {$count:[=articles.b24.body_extract]},
+                        less-than: 140,
+                        then: {$add: [{$divide: [=view.width, {$avg: [{$count: [=articles.b24.body_extract, =articles.b24.headline]}]}]}, 44]},
+                        else: {$add: [{$divide: [=view.width, {$avg: [{$count: [=articles.b24.body_extract, =articles.b24.headline]}]}]}, {if: =view.width, equals: 320, then: 110, else: 88}]}}
+
+                        },else:{
+                        if: {$count:[=articles.b24.body_extract]},
+                        less-than: 140,
+                        then: {$add: [{$divide: [=view.width, {$avg: [{$count: [=articles.b24.body_extract, =articles.b24.headline]}]}]}, 44]},
+                        else: {$add: [{$divide: [=view.width, {$avg: [{$count: [=articles.b24.body_extract, =articles.b24.headline]}]}]}, {if: =view.width, equals: 320, then: 88, else: 66}]}}
+                    },
+                    top: {if: =view.width, equals: 320, then: -11, else: -22},
+                    padding: [0, 0, 24, 0],
 					options: { bind: {if: =articles.b24.no_binding, then: none}, show_body: true, small_headline: true }
 				},
-				#b25 : {
-                    position: relative,
-                    top: -11,
-                    bottom: -11,
-                    padding: [0, 0, 11, 0],
+                #b25 : {
                     height:{
-                        if: =view.width, more-than: 320, then:{
-                            if: {$count:[=articles.b25.headline]},
-                            more-than: 35,
-                            then:{
-                            if: {$count:[=articles.b25.body_extract]},
-                            less-than: 140,
-                            then: {$multiply: [=view.width, .55]},
-                            else: {$multiply: [=view.width, .65]}
-                            }, else:{
-                            if: {$count:[=articles.b25.body_extract]},
-                            less-than: 140,
-                            then: {$multiply: [=view.width, .55]},
-                            else: {$multiply: [=view.width, .6]}
-                    }}},
+                        if: {$count:[=articles.b25.headline]},
+                        more-than: 60,
+                        then:{
+
+                        if: {$count:[=articles.b25.body_extract]},
+                        less-than: 140,
+                        then: {$add: [{$divide: [=view.width, {$avg: [{$count: [=articles.b25.body_extract, =articles.b25.headline]}]}]}, 44]},
+                        else: {$add: [{$divide: [=view.width, {$avg: [{$count: [=articles.b25.body_extract, =articles.b25.headline]}]}]}, {if: =view.width, equals: 320, then: 110, else: 88}]}},
+
+                        else:{
+
+                        if: {$count:[=articles.b25.headline]},
+                        more-than: 35,
+                        then:{
+
+                        if: {$count:[=articles.b25.body_extract]},
+                        less-than: 140,
+                        then: {$add: [{$divide: [=view.width, {$avg: [{$count: [=articles.b25.body_extract, =articles.b25.headline]}]}]}, 44]},
+                        else: {$add: [{$divide: [=view.width, {$avg: [{$count: [=articles.b25.body_extract, =articles.b25.headline]}]}]}, {if: =view.width, equals: 320, then: 110, else: 88}]}}
+
+                        },else:{
+                        if: {$count:[=articles.b25.body_extract]},
+                        less-than: 140,
+                        then: {$add: [{$divide: [=view.width, {$avg: [{$count: [=articles.b25.body_extract, =articles.b25.headline]}]}]}, 44]},
+                        else: {$add: [{$divide: [=view.width, {$avg: [{$count: [=articles.b25.body_extract, =articles.b25.headline]}]}]}, {if: =view.width, equals: 320, then: 88, else: 66}]}}
+                    },
+                    top: {if: =view.width, equals: 320, then: -11, else: -22},
+                    padding: [0, 0, 24, 0],
 
 					options: { bind: {if: =articles.b25.no_binding, then: none}, show_body: true, small_headline: true }
 				},
 				#b26 : {
-                    position: relative,
-                    top: -11,
-                    bottom: -11,
-                    padding: [0, 0, 11, 0],
                     height:{
-                        if: =view.width, more-than: 320, then:{
-                            if: {$count:[=articles.b26.headline]},
-                            more-than: 35,
-                            then:{
-                            if: {$count:[=articles.b26.body_extract]},
-                            less-than: 140,
-                            then: {$multiply: [=view.width, .55]},
-                            else: {$multiply: [=view.width, .65]}
-                            }, else:{
-                            if: {$count:[=articles.b26.body_extract]},
-                            less-than: 140,
-                            then: {$multiply: [=view.width, .55]},
-                            else: {$multiply: [=view.width, .6]}
-                    }}},
+                        if: {$count:[=articles.b26.headline]},
+                        more-than: 60,
+                        then:{
 
+                        if: {$count:[=articles.b26.body_extract]},
+                        less-than: 140,
+                        then: {$add: [{$divide: [=view.width, {$avg: [{$count: [=articles.b26.body_extract, =articles.b26.headline]}]}]}, 44]},
+                        else: {$add: [{$divide: [=view.width, {$avg: [{$count: [=articles.b26.body_extract, =articles.b26.headline]}]}]}, {if: =view.width, equals: 320, then: 110, else: 88}]}},
+
+                        else:{
+
+                        if: {$count:[=articles.b26.headline]},
+                        more-than: 35,
+                        then:{
+
+                        if: {$count:[=articles.b26.body_extract]},
+                        less-than: 140,
+                        then: {$add: [{$divide: [=view.width, {$avg: [{$count: [=articles.b26.body_extract, =articles.b26.headline]}]}]}, 44]},
+                        else: {$add: [{$divide: [=view.width, {$avg: [{$count: [=articles.b26.body_extract, =articles.b26.headline]}]}]}, {if: =view.width, equals: 320, then: 110, else: 88}]}}
+
+                        },else:{
+                        if: {$count:[=articles.b26.body_extract]},
+                        less-than: 140,
+                        then: {$add: [{$divide: [=view.width, {$avg: [{$count: [=articles.b26.body_extract, =articles.b26.headline]}]}]}, 44]},
+                        else: {$add: [{$divide: [=view.width, {$avg: [{$count: [=articles.b26.body_extract, =articles.b26.headline]}]}]}, {if: =view.width, equals: 320, then: 88, else: 66}]}}
+                    },
+                    top: {if: =view.width, equals: 320, then: -11, else: -22},
 					options: { bind: {if: =articles.b26.no_binding, then: none}, show_body: true, small_headline: true }
 				},
 				#b27 : {
-                    position: relative,
-                    top: -11,
-                    bottom: -11,
-                    padding: [0, 0, 11, 0],
                     height:{
-                        if: =view.width, more-than: 320, then:{
-                            if: {$count:[=articles.b27.headline]},
-                            more-than: 35,
-                            then:{
-                            if: {$count:[=articles.b27.body_extract]},
-                            less-than: 140,
-                            then: {$multiply: [=view.width, .55]},
-                            else: {$multiply: [=view.width, .65]}
-                            }, else:{
-                            if: {$count:[=articles.b27.body_extract]},
-                            less-than: 140,
-                            then: {$multiply: [=view.width, .55]},
-                            else: {$multiply: [=view.width, .6]}
-                    }}},
+                        if: {$count:[=articles.b27.headline]},
+                        more-than: 60,
+                        then:{
 
+                        if: {$count:[=articles.b27.body_extract]},
+                        less-than: 140,
+                        then: {$add: [{$divide: [=view.width, {$avg: [{$count: [=articles.b27.body_extract, =articles.b27.headline]}]}]}, 44]},
+                        else: {$add: [{$divide: [=view.width, {$avg: [{$count: [=articles.b27.body_extract, =articles.b27.headline]}]}]}, {if: =view.width, equals: 320, then: 110, else: 88}]}},
+
+                        else:{
+
+                        if: {$count:[=articles.b27.headline]},
+                        more-than: 35,
+                        then:{
+
+                        if: {$count:[=articles.b27.body_extract]},
+                        less-than: 140,
+                        then: {$add: [{$divide: [=view.width, {$avg: [{$count: [=articles.b27.body_extract, =articles.b27.headline]}]}]}, 44]},
+                        else: {$add: [{$divide: [=view.width, {$avg: [{$count: [=articles.b27.body_extract, =articles.b27.headline]}]}]}, {if: =view.width, equals: 320, then: 110, else: 88}]}}
+
+                        },else:{
+                        if: {$count:[=articles.b27.body_extract]},
+                        less-than: 140,
+                        then: {$add: [{$divide: [=view.width, {$avg: [{$count: [=articles.b27.body_extract, =articles.b27.headline]}]}]}, 44]},
+                        else: {$add: [{$divide: [=view.width, {$avg: [{$count: [=articles.b27.body_extract, =articles.b27.headline]}]}]}, {if: =view.width, equals: 320, then: 88, else: 66}]}}
+                    },
+                    top: {if: =view.width, equals: 320, then: -11, else: -22},
 					options: { bind: {if: =articles.b27.no_binding, then: none}, show_body: true, small_headline: true }
 				},
 				#b28 : {
-                    position: relative,
-                    top: -11,
-                    bottom: -11,
-                    padding: [0, 0, 11, 0],
-                    height:{
-                        if: =view.width, more-than: 320, then:{
-                            if: {$count:[=articles.b28.headline]},
-                            more-than: 35,
-                            then:{
-                            if: {$count:[=articles.b28.body_extract]},
-                            less-than: 140,
-                            then: {$multiply: [=view.width, .55]},
-                            else: {$multiply: [=view.width, .65]}
-                            }, else:{
-                            if: {$count:[=articles.b28.body_extract]},
-                            less-than: 140,
-                            then: {$multiply: [=view.width, .55]},
-                            else: {$multiply: [=view.width, .6]}
-                    }}},
+                  height:{
+                        if: {$count:[=articles.b28.headline]},
+                        more-than: 60,
+                        then:{
 
+                        if: {$count:[=articles.b28.body_extract]},
+                        less-than: 140,
+                        then: {$add: [{$divide: [=view.width, {$avg: [{$count: [=articles.b28.body_extract, =articles.b28.headline]}]}]}, 44]},
+                        else: {$add: [{$divide: [=view.width, {$avg: [{$count: [=articles.b28.body_extract, =articles.b28.headline]}]}]}, {if: =view.width, equals: 320, then: 110, else: 88}]}},
+
+                        else:{
+
+                        if: {$count:[=articles.b28.headline]},
+                        more-than: 35,
+                        then:{
+
+                        if: {$count:[=articles.b28.body_extract]},
+                        less-than: 140,
+                        then: {$add: [{$divide: [=view.width, {$avg: [{$count: [=articles.b28.body_extract, =articles.b28.headline]}]}]}, 44]},
+                        else: {$add: [{$divide: [=view.width, {$avg: [{$count: [=articles.b28.body_extract, =articles.b28.headline]}]}]}, {if: =view.width, equals: 320, then: 110, else: 88}]}}
+
+                        },else:{
+                        if: {$count:[=articles.b28.body_extract]},
+                        less-than: 140,
+                        then: {$add: [{$divide: [=view.width, {$avg: [{$count: [=articles.b28.body_extract, =articles.b28.headline]}]}]}, 44]},
+                        else: {$add: [{$divide: [=view.width, {$avg: [{$count: [=articles.b28.body_extract, =articles.b28.headline]}]}]}, {if: =view.width, equals: 320, then: 88, else: 66}]}}
+                    },
+                    top: {if: =view.width, equals: 320, then: -11, else: -22},
 					options: { bind: {if: =articles.b28.no_binding, then: none}, show_body: true, small_headline: true }
 				},
 				#b29 : {
-                    position: relative,
-                    top: -11,
-                    bottom: -11,
-                    padding: [0, 0, 11, 0],
                     height:{
-                        if: =view.width, more-than: 320, then:{
-                            if: {$count:[=articles.b29.headline]},
-                            more-than: 35,
-                            then:{
-                            if: {$count:[=articles.b29.body_extract]},
-                            less-than: 140,
-                            then: {$multiply: [=view.width, .55]},
-                            else: {$multiply: [=view.width, .65]}
-                            }, else:{
-                            if: {$count:[=articles.b29.body_extract]},
-                            less-than: 140,
-                            then: {$multiply: [=view.width, .55]},
-                            else: {$multiply: [=view.width, .6]}
-                    }}},
+                        if: {$count:[=articles.b29.headline]},
+                        more-than: 60,
+                        then:{
+
+                        if: {$count:[=articles.b29.body_extract]},
+                        less-than: 140,
+                        then: {$add: [{$divide: [=view.width, {$avg: [{$count: [=articles.b29.body_extract, =articles.b29.headline]}]}]}, 44]},
+                        else: {$add: [{$divide: [=view.width, {$avg: [{$count: [=articles.b29.body_extract, =articles.b29.headline]}]}]}, {if: =view.width, equals: 320, then: 110, else: 88}]}},
+
+                        else:{
+
+                        if: {$count:[=articles.b29.headline]},
+                        more-than: 35,
+                        then:{
+
+                        if: {$count:[=articles.b29.body_extract]},
+                        less-than: 140,
+                        then: {$add: [{$divide: [=view.width, {$avg: [{$count: [=articles.b29.body_extract, =articles.b29.headline]}]}]}, 44]},
+                        else: {$add: [{$divide: [=view.width, {$avg: [{$count: [=articles.b29.body_extract, =articles.b29.headline]}]}]}, {if: =view.width, equals: 320, then: 110, else: 88}]}}
+
+                        },else:{
+                        if: {$count:[=articles.b29.body_extract]},
+                        less-than: 140,
+                        then: {$add: [{$divide: [=view.width, {$avg: [{$count: [=articles.b29.body_extract, =articles.b29.headline]}]}]}, 44]},
+                        else: {$add: [{$divide: [=view.width, {$avg: [{$count: [=articles.b29.body_extract, =articles.b29.headline]}]}]}, {if: =view.width, equals: 320, then: 88, else: 66}]}}
+                    },
+                    top: {if: =view.width, equals: 320, then: -11, else: -22},
 					options: { bind: {if: =articles.b29.no_binding, then: none}, show_body: true, small_headline: true }
 				},
 				#b30 : {
-                    position: relative,
-                    top: -11,
-                    bottom: -11,
-                    padding: [0, 0, 11, 0],
                     height:{
-                        if: =view.width, more-than: 320, then:{
-                            if: {$count:[=articles.b30.headline]},
-                            more-than: 35,
-                            then:{
-                            if: {$count:[=articles.b30.body_extract]},
-                            less-than: 140,
-                            then: {$multiply: [=view.width, .55]},
-                            else: {$multiply: [=view.width, .65]}
-                            }, else:{
-                            if: {$count:[=articles.b30.body_extract]},
-                            less-than: 140,
-                            then: {$multiply: [=view.width, .55]},
-                            else: {$multiply: [=view.width, .6]}
-                    }}},
+                        if: {$count:[=articles.b30.headline]},
+                        more-than: 60,
+                        then:{
 
+                        if: {$count:[=articles.b30.body_extract]},
+                        less-than: 140,
+                        then: {$add: [{$divide: [=view.width, {$avg: [{$count: [=articles.b30.body_extract, =articles.b30.headline]}]}]}, 44]},
+                        else: {$add: [{$divide: [=view.width, {$avg: [{$count: [=articles.b30.body_extract, =articles.b30.headline]}]}]}, {if: =view.width, equals: 320, then: 110, else: 88}]}},
+
+                        else:{
+
+                        if: {$count:[=articles.b30.headline]},
+                        more-than: 35,
+                        then:{
+
+                        if: {$count:[=articles.b30.body_extract]},
+                        less-than: 140,
+                        then: {$add: [{$divide: [=view.width, {$avg: [{$count: [=articles.b30.body_extract, =articles.b30.headline]}]}]}, 44]},
+                        else: {$add: [{$divide: [=view.width, {$avg: [{$count: [=articles.b30.body_extract, =articles.b30.headline]}]}]}, {if: =view.width, equals: 320, then: 110, else: 88}]}}
+
+                        },else:{
+                        if: {$count:[=articles.b30.body_extract]},
+                        less-than: 140,
+                        then: {$add: [{$divide: [=view.width, {$avg: [{$count: [=articles.b30.body_extract, =articles.b30.headline]}]}]}, 44]},
+                        else: {$add: [{$divide: [=view.width, {$avg: [{$count: [=articles.b30.body_extract, =articles.b30.headline]}]}]}, {if: =view.width, equals: 320, then: 88, else: 66}]}}
+                    },
+                    top: {if: =view.width, equals: 320, then: -11, else: -22},
 					options: { bind: {if: =articles.b30.no_binding, then: none}, show_body: true, small_headline: true }
 				},
 				#b31 : {
-                    position: relative,
-                    top: -11,
-                    bottom: -11,
-                    padding: [0, 0, 11, 0],
                     height:{
-                        if: =view.width, more-than: 320, then:{
-                            if: {$count:[=articles.b31.headline]},
-                            more-than: 35,
-                            then:{
-                            if: {$count:[=articles.b31.body_extract]},
-                            less-than: 140,
-                            then: {$multiply: [=view.width, .55]},
-                            else: {$multiply: [=view.width, .65]}
-                            }, else:{
-                            if: {$count:[=articles.b31.body_extract]},
-                            less-than: 140,
-                            then: {$multiply: [=view.width, .55]},
-                            else: {$multiply: [=view.width, .6]}
-                    }}},
+                        if: {$count:[=articles.b31.headline]},
+                        more-than: 60,
+                        then:{
+
+                        if: {$count:[=articles.b31.body_extract]},
+                        less-than: 140,
+                        then: {$add: [{$divide: [=view.width, {$avg: [{$count: [=articles.b31.body_extract, =articles.b31.headline]}]}]}, 44]},
+                        else: {$add: [{$divide: [=view.width, {$avg: [{$count: [=articles.b31.body_extract, =articles.b31.headline]}]}]}, {if: =view.width, equals: 320, then: 110, else: 88}]}},
+
+                        else:{
+
+                        if: {$count:[=articles.b31.headline]},
+                        more-than: 35,
+                        then:{
+
+                        if: {$count:[=articles.b31.body_extract]},
+                        less-than: 140,
+                        then: {$add: [{$divide: [=view.width, {$avg: [{$count: [=articles.b31.body_extract, =articles.b31.headline]}]}]}, 44]},
+                        else: {$add: [{$divide: [=view.width, {$avg: [{$count: [=articles.b31.body_extract, =articles.b31.headline]}]}]}, {if: =view.width, equals: 320, then: 110, else: 88}]}}
+
+                        },else:{
+                        if: {$count:[=articles.b31.body_extract]},
+                        less-than: 140,
+                        then: {$add: [{$divide: [=view.width, {$avg: [{$count: [=articles.b31.body_extract, =articles.b31.headline]}]}]}, 44]},
+                        else: {$add: [{$divide: [=view.width, {$avg: [{$count: [=articles.b31.body_extract, =articles.b31.headline]}]}]}, {if: =view.width, equals: 320, then: 88, else: 66}]}}
+                    },
+                    top: {if: =view.width, equals: 320, then: -11, else: -22},
 					options: { bind: {if: =articles.b31.no_binding, then: none}, show_body: true, small_headline: true }
 				},
 				#b32 : {
-                    position: relative,
-                    top: -11,
-                    bottom: -11,
-                    padding: [0, 0, 11, 0],
                     height:{
-                        if: =view.width, more-than: 320, then:{
-                            if: {$count:[=articles.b32.headline]},
-                            more-than: 35,
-                            then:{
-                            if: {$count:[=articles.b32.body_extract]},
-                            less-than: 140,
-                            then: {$multiply: [=view.width, .55]},
-                            else: {$multiply: [=view.width, .65]}
-                            }, else:{
-                            if: {$count:[=articles.b32.body_extract]},
-                            less-than: 140,
-                            then: {$multiply: [=view.width, .55]},
-                            else: {$multiply: [=view.width, .6]}
-                    }}},
+                        if: {$count:[=articles.b32.headline]},
+                        more-than: 60,
+                        then:{
+
+                        if: {$count:[=articles.b32.body_extract]},
+                        less-than: 140,
+                        then: {$add: [{$divide: [=view.width, {$avg: [{$count: [=articles.b32.body_extract, =articles.b32.headline]}]}]}, 44]},
+                        else: {$add: [{$divide: [=view.width, {$avg: [{$count: [=articles.b32.body_extract, =articles.b32.headline]}]}]}, {if: =view.width, equals: 320, then: 110, else: 88}]}},
+
+                        else:{
+
+                        if: {$count:[=articles.b32.headline]},
+                        more-than: 35,
+                        then:{
+
+                        if: {$count:[=articles.b32.body_extract]},
+                        less-than: 140,
+                        then: {$add: [{$divide: [=view.width, {$avg: [{$count: [=articles.b32.body_extract, =articles.b32.headline]}]}]}, 44]},
+                        else: {$add: [{$divide: [=view.width, {$avg: [{$count: [=articles.b32.body_extract, =articles.b32.headline]}]}]}, {if: =view.width, equals: 320, then: 110, else: 88}]}}
+
+                        },else:{
+                        if: {$count:[=articles.b32.body_extract]},
+                        less-than: 140,
+                        then: {$add: [{$divide: [=view.width, {$avg: [{$count: [=articles.b32.body_extract, =articles.b32.headline]}]}]}, 44]},
+                        else: {$add: [{$divide: [=view.width, {$avg: [{$count: [=articles.b32.body_extract, =articles.b32.headline]}]}]}, {if: =view.width, equals: 320, then: 88, else: 66}]}}
+                    },
 					options: { bind: {if: =articles.b32.no_binding, then: none}, show_body: true, small_headline: true }
 				}
 	        }},

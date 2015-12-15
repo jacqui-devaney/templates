@@ -4,6 +4,7 @@
 	<style src="ADVERTISING-stylesheet.ejs"/>
 	<style src="PHONE-stylesheet.ejs"/>
 	<style src="RAIL-stylesheet.ejs" />
+	<style src="FRONT-stylesheet.ejs"/>
 	<style>{
 		#page_details: {
 			options: {
@@ -55,7 +56,13 @@
 					top:584,
 					height:212,
 					options:{ bind: {if: =articles.b7.no_binding, then: none}, medium_headline:true, show_byline:true, show_flashline:true, top_border:true}
-				}
+				},
+                #footer: {
+                    top: 820,
+                    height: 100,
+                    text-align: center,
+                    options:{bind: none, top_border: true}
+                }
 			}},
 			{if: =landscape, then: {
 				#b1: {
@@ -97,7 +104,13 @@
 					top:392,
 					height:176,
 					options:{ bind: {if: =articles.b7.no_binding, then: none}, medium_headline:true, show_byline:true, show_flashline:true, top_border:true}
-				}
+				},
+                #footer: {
+                    top: 570,
+                    height: 100,
+                    text-align: center,
+                    options:{bind: none, top_border: true}
+                }
 
 			}}
 		]
@@ -116,6 +129,10 @@
 	</box>
 
 
-
-
+	<box id="footer" class="tablet_only column16-12 positionx1" module="RAIL-footer_module.xml">
+		<box id="footerstrapinner">
+        <p id="footer_headline" class="footer_headline">Did You Know?</p>
+		<p id="footer_tip"><mark id="footer_tip" /></p>
+        </box>
+    </box>
 </jpml>

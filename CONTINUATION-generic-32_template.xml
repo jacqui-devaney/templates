@@ -49,7 +49,6 @@
 			}},
 	        {if: =scale.phone, then: {
 	        	#b1 : {
-                     top: {if: =view.width, equals: 320, then: -11, else: -22},
                      height:{
                         if: {$count:[=articles.b1.headline]},
                         more-than: 60,
@@ -78,7 +77,7 @@
                         else: {$add: [{$divide: [=view.width, {$avg: [{$count: [=articles.b1.body_extract, =articles.b1.headline]}]}]}, {if: =view.width, equals: 320, then: 88, else: 88}]}}
                     },
                     padding: [0, 0, 24, 0],
-					options: { bind: {if: =articles.b1.no_binding, then: none}, show_body: true, small_headline: true, top_border: true }
+					options: { bind: {if: =articles.b1.no_binding, then: none}, show_body: true, small_headline: true}
 				},
 			   #b2 : {
                     top: {if: =view.width, equals: 320, then: -11, else: -22},

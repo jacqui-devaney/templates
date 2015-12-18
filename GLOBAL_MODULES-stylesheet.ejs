@@ -58,7 +58,7 @@
 		]
 	},
 	.module_summary: {
-		content: =article.summary
+		content: { $switch: [=article.body_extract, =article.summary] }
 	},
 	.body: {
 		font-name: "DJ5Exchange-Medium",

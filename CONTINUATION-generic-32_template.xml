@@ -115,8 +115,7 @@
                             ]}]}
                         }}
                     ]},
-                    options: { bind: {if: =articles.b1.no_binding, then: none}, show_body: true, small_headline: true },
-                    padding: [0, 0, {if: =view.width, equals: 320, then: 24, else: {if: {$count: [=articles.b1.images.phone]}, equals: 0, then: 0, else: 24}}, 0]
+                    options: { bind: {if: =articles.b1.no_binding, then: none}, show_body: true, small_headline: true }
 				},
 
 	        	#b2 : {

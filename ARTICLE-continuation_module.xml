@@ -4,7 +4,6 @@
 	<style src="GRID-stylesheet.ejs" />
 	<style src="ADVERTISING-stylesheet.ejs" />
 	<style src="ARTICLE-stylesheet.ejs" />
-	<style src="MEDIA-stylesheet.ejs" />
 	<style>{
 		jpml:{
 			background-color: =options.background_color
@@ -30,7 +29,7 @@
 		}},
 
 		{if: =portrait, then: {
-			#media_container: {
+			#media: {
 				top: 0,
 				left:{if: =media.width, less-than: 360, then: 0, else: {if: =media.width, more-than: 484, then: 0, else: 0}},
 				width: {$switch: [
@@ -40,7 +39,7 @@
 				]}
 			}
         }, else: {
-			#media_container: {
+			#media: {
 				top: 0,
 				left:{if: =media.width, less-than: 360, then: 248, else: {if: =media.width, more-than: 484, then: 248, else: 248}},
 				width: {$switch: [
@@ -53,19 +52,8 @@
 		]
     }</style>
 	<style>{
-		if-any: [
-			=page.hasad,
-			{if: =page.number, equals: 2},
-			{if-all: [
-				{if: =page.sentinel.width, more-than: 0},
-				{if: =page.sentinel.left, more-than: 0},
-				{if: =page.sentinel.left, less-than:
-					{if: =portrait, then: 256, else: 512}
-				}
-			], then: true}
-		],
-		then: {
-			#media_container: {
+		if: =page.hasad, then: {
+			#media: {
 				display: none
 			},
 			.article_body: {
@@ -83,13 +71,9 @@
 		<box id="article_advertisement">
 			<box id="skyscraper_ad" class="ad-skyscraper" embed="advertisement" />
 		</box>
-		<box id="media_container">
-			<p id="media_title"><mark id="mark_media_title"/></p>
-			<p id="media_vr_header"><mark id="mark_media_vr_header"/></p>
+		<box id="media">
 			<box id="media_asset" embed="media"/>
-			<p id="media_vr_footer"><mark id="mark_media_vr_footer"/></p>
 			<p id="media_caption"><mark id="mark_caption" /></p>
-			<p id="media_vr_link"><a href="http://wsj.com/virtual-reality"><mark id="mark_media_vr_link"/></a></p>
 		</box>
 		<panel class="article_body">
 			<panel id="body_continuation" embed="body"/>

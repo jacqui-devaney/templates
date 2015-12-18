@@ -50,7 +50,13 @@
 					top:584,
 					height:212,
 					options:{medium_headline:true, show_byline:true, show_flashline:true, top_border:true}
-				}
+                },
+                #footer: {
+                    top: 820,
+                    height: 100,
+                    text-align: center,
+                    options:{bind: none, top_border: true}
+                }
 			}},
 			{if: =landscape, then: {
 				#b1: {
@@ -87,7 +93,13 @@
 					top:392,
 					height:176,
 					options:{medium_headline:true, show_byline:true, show_flashline:true, top_border:true}
-				}
+				},
+                #footer: {
+                    top: 570,
+                    height: 100,
+                    text-align: center,
+                    options:{bind: none, top_border: true}
+                }
 			}}
 		]
     }</style>
@@ -102,8 +114,5 @@
 	<box id="front_page" class="tablet_only positionx_full column_full maude unit_ad">
 		<box id="banner_ad" class="ad-banner front_ad" embed="advertisement" />
 	</box>
-
-
-
 
 </jpml>

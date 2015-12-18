@@ -9,6 +9,87 @@
     "templates": [
       {
         "section": "FRONT_SECTION",
+        "filename": "FRONT-4story-holiday-deco_template.xml",
+        "title": "4 story G Holiday Liondoor",
+        "usage": "front",
+        "boxes": [
+          {
+            "id": "b1",
+            "images": {}
+          },
+          {
+            "id": "deco",
+            "images": {
+              "tablet": {
+                "width": 546,
+                "height": 356
+              }
+            }
+          },
+          {
+            "id": "b2",
+            "images": {}
+          },
+          {
+            "id": "b3",
+            "images": {}
+          },
+          {
+            "id": "b4",
+            "images": {
+              "tablet": {
+                "width": 55,
+                "height": 55
+              }
+            }
+          }
+        ]
+      },
+      {
+        "section": "FRONT_SECTION",
+        "filename": "FRONT-5story-holiday-deco_template.xml",
+        "title": "Default: 5 story G Holiday",
+        "usage": "front",
+        "boxes": [
+          {
+            "id": "b1",
+            "images": {}
+          },
+          {
+            "id": "deco",
+            "images": {
+              "tablet": {
+                "width": 546,
+                "height": 356
+              }
+            }
+          },
+          {
+            "id": "b2",
+            "images": {}
+          },
+          {
+            "id": "b3",
+            "images": {}
+          },
+          {
+            "id": "b4",
+            "images": {}
+          },
+          {
+            "id": "b5",
+            "images": {
+              "tablet": {
+                "width": 55,
+                "height": 55
+              }
+            }
+          }
+        ]
+      },
+
+      {
+        "section": "FRONT_SECTION",
         "filename": "FRONT-5story-deco_template.xml",
         "title": "Default: 5 story G Liondoor",
         "usage": "front",

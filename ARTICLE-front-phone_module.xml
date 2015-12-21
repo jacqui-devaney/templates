@@ -25,6 +25,10 @@
             border-width: [0, 0, 1, 0],
             border-color: #e1e0df
 		},
+        #media_credit:{
+            padding: [0, 16, 22, 16],
+            text-transform: uppercase
+        },
         #media_asset:{
             padding: [0, 4, 10, 4]
         },
@@ -38,7 +42,7 @@
             padding: { if-all: [
                     { if: =page.number, equals: 0, then: true, else: false },
                     { if: =scale.phone, then: true, else: false }
-                ], then: [0, 16, 22, 16], else: [0, 0, 0, 0]
+                ], then: [0, 16, 0, 16], else: [0, 0, 0, 0]
         }},
         #mark_caption: {
             content: =media.caption
@@ -57,6 +61,7 @@
         <box id="media_asset" embed="media"/>
 		<p id="media_vr_footer"><mark id="mark_media_vr_footer"/></p>
         <p id="media_caption"><mark id="mark_caption" /></p>
+        <p id="media_credit"><mark id="mark_credit"/></p>
         <p id="media_vr_link"><a href="http://wsj.com/virtual-reality"><mark id="mark_media_vr_link"/></a></p>
     </box>
 

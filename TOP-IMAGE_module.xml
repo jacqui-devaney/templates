@@ -81,7 +81,7 @@
 				padding: [8, 0, 0, 0]
 			},
             .module_headline: {
-                padding: [0, 23, 4, 6]
+                padding: [0, 24, 4, 6]
             },
 			image: {
 				height: {$multiply: [=view.width, .665 ]},
@@ -95,7 +95,7 @@
 			},
 			#body: {
                 display: inherit,
-                padding: [0, 24, {if: =view.width, equals:375, then: 18, else: {if: =view.width, equals: 320, then: 9.5, else: 0}}, 6]
+                padding: [0, 24, 0, 8]
 			},
 			.body: {
 				display: none

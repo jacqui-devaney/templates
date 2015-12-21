@@ -95,7 +95,7 @@
 			},
 			#body: {
                 display: inherit,
-                padding: [0, 24, 0, 6]
+                padding: [0, 24, 20, 6]
 			},
 			.body: {
 				display: none

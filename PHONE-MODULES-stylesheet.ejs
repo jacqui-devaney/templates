@@ -24,7 +24,8 @@
 		$join: [
 			{
                 font-name: "ChronicleDisplay-Semi",
-				color:{if: =article.read, then: color.articleReadColor}
+                color:{if: =article.read, then: color.articleReadColor},
+                padding: [24, 0, 0, 0]
 			},
 			{
 				$switch: [
@@ -47,7 +48,7 @@
 	},
     .module_summary:{
         font-name: "Whitney-Book",
-        line-height: 20,
+        line-height: 24,
         font-size:17,
         color: #3b4343
     },

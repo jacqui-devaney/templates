@@ -72,7 +72,6 @@
 					display: none
 				},
 				#b1 : {
-                 padding: [4, 4, 4, 4],
                  height:{
                     if: =view.width, more-than: 320, then:{
                         if: {$count:[=articles.b1.images.phone]},

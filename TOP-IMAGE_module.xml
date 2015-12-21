@@ -95,7 +95,7 @@
 			},
 			#body: {
                 display: inherit,
-                padding: [0, 24, 20, 6]
+                padding: [0, 24, {if: =view.width, equals:375, then: 18, else: {if: =view.width, equals: 320, then: 9.5, else: 0}}, 6]
 			},
 			.body: {
 				display: none

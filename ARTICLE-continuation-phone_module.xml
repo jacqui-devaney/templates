@@ -16,7 +16,10 @@
 			content: from-flow(article_body),
 			flow: article_body
         }},
-        {#media_container: {
+        {#media_caption: {
+            padding: [0, 0, 0, 0]
+        }},
+        {#body-last-media:{
             padding: [0, 0, 22, 0]
         }}
 		]

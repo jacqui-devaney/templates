@@ -78,13 +78,13 @@
 	#m_subsection: { content: =article.subsection },
 	#m_headline: { content: =article.headline },
 	.list-item: {
-		text-indent: -16,
-        padding: {if: =scale.phone, then: [0, 0, 22, 24]}
+        padding: [0, 16, 22, 12],
+        text-indent: -18
     },
 	.list-item-bullet: {
 		content: "\u00a0\u2022 ",
-		color:#a7afaf,
-        padding: {if: =scale.phone, then: [0, 0, 0, 0]}
+        color:#a7afaf,
+        font-size: 20
 	},
 	.ticker: {
 		display: inherit,

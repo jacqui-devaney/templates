@@ -17,9 +17,16 @@
 			flow: article_body
         }},
         {#media_caption: {
-            padding: [0, 0, 0, 0]
+            padding: [8, 0, 0, 0]
         }},
         {#media_container: {
+            padding: [0, 0, 22, 0]
+        }},
+        {#media_credit: {
+            text-transform: uppercase,
+            padding: [0, 0, 0, 0]
+        }},
+        {#list-item :{
             padding: [0, 0, 22, 0]
         }}
     ]
@@ -33,6 +40,7 @@
 	            <box id="media_asset" embed="media"/>
         		<p id="media_vr_footer"><mark id="mark_media_vr_footer"/></p>
 	            <p id="media_caption"><mark id="mark_caption" /></p>
+                <p id="media_credit"><mark id="mark_credit"/></p>
 	            <p id="media_vr_link"><a href="http://wsj.com/virtual-reality"><mark id="mark_media_vr_link"/></a></p>
 	        </box>
         </box>

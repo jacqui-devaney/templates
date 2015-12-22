@@ -168,7 +168,7 @@
 		font-size:16,
 		line-height:22,
         color:#4f5757,
-        padding: [0, 16, {if: =media.height, equals: 0, then: 22, else: 6}, 16]
+        padding: [0, 16, {if: =media.height, equals: 0, then: 22, else: 4}, 16]
 	},
 	.article_byline: {
         padding: [0, 16, 0, 16],
@@ -183,7 +183,7 @@
         line-height:12,
         color: =page.tint,
         text-transform:uppercase,
-        padding: [6, 16, 28, 16]
+        padding: [6, 16, 30, 16]
     },
 	.article_pubdate: {
 		font-name: Whitney-Book,
@@ -395,7 +395,8 @@
 
 	.ticker: {
 		display: {if: =intent.article, then: inherit, else: none},
-		color: transparent
+        color: transparent,
+        line-height: 22
 	}
 
 }, else:{}}

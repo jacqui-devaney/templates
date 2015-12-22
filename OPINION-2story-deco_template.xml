@@ -70,4 +70,10 @@
 		<box id="banner_ad" class="ad-banner front_ad" embed="advertisement" />
 	</box>
 
+    <box id="footer" class="tablet_only column16-12 positionx1" module="RAIL-footer_module.xml">
+		<box id="footerstrapinner">
+        <p id="footer_headline" class="footer_headline">Did You Know?</p>
+		<p id="footer_tip"><mark id="footer_tip" /></p>
+        </box>
+    </box>
 </jpml>

@@ -26,8 +26,11 @@
             border-color: #e1e0df
 		},
         #media_credit:{
-            padding: [0, 16, 22, 16],
+            padding: [0, 16, 0, 16],
             text-transform: uppercase
+        },
+        #media_container:{
+            padding: [0, 0, 22, 0]
         },
         #media_asset:{
             padding: [0, 4, 10, 4]

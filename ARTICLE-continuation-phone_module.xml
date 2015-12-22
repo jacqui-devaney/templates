@@ -15,7 +15,10 @@
 		{#body_continuation: {
 			content: from-flow(article_body),
 			flow: article_body
-		}}
+        }},
+        {#media_container: {
+            padding: [0, 0, 22, 0]
+        }}
 		]
     }</style>
 

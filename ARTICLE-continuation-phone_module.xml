@@ -19,10 +19,10 @@
         {#media_caption: {
             padding: [0, 0, 0, 0]
         }},
-        {#body-last-media:{
+        {#media_container: {
             padding: [0, 0, 22, 0]
         }}
-		]
+    ]
     }</style>
 
     <box id="prototype">

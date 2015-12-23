@@ -9,7 +9,7 @@
 			options: {
 				tintColor: white,
 				tintTitle: true,
-				title: { if: =page.section, equals: "WSJ_MAGAZINE", then: "WSJ." }
+				title: { if: =page.section, equals: "WSJ_MAGAZINE", then: "WSJ. MAGAZINE" }
 			}
 		}
 	}</style>

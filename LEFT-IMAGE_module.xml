@@ -141,6 +141,7 @@
 		<style>{
 			if: =page.section, equals: "WSJ_MAGAZINE", then: {
 				.module_flashline: {
+					display: {if: =options.show_flashline, then:inherit, else:none},
 					font-name: HelveticaNeue-Light,
 					font-size: 12
 				},

@@ -60,7 +60,7 @@
 					}
 	      },
 				#deco_container: {
-					padding: [0, 0, 17, 0]
+					padding: [0, 0, 20, 0]
 				},
 				.byline: {
 					display:{if: =options.show_byline, then:inherit, else:none}

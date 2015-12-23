@@ -39,10 +39,10 @@
                 }
 			}},
 			{if: =landscape, then: {
-				#deco: {
+				#deco:	{
 					top:0,
-					height:545,
-					options:{bind: {if: =articles.deco.no_binding, then: none}, large_headline:true, show_image:true, one_line_caption:true}
+					height:380,
+					options:{bind: {if: =articles.deco.no_binding, then: none}, medium_headline:true, show_image:true}
 				},
 				#b1: {
 					top:0,

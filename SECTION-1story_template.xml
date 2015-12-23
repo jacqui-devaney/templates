@@ -7,7 +7,7 @@
 			display: inherit,
 			frame: [0, 0, 10, 10],
 			options: {
-				tintColor: white,
+                tintColor: { if: =page.section, equals: "WSJ_MAGAZINE", then: #66, else: white },
 				tintTitle: true,
 				title: { if: =page.section, equals: "WSJ_MAGAZINE", then: "WSJ. MAGAZINE" }
 			}

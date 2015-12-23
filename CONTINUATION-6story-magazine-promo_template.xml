@@ -10,7 +10,8 @@
 			frame: [0, 0, 10, 10],
 			options: {
 				title: "WSJ. MAGAZINE",
-				tintTitle: true
+                tintTitle: true,
+                tintColor: #66
 			}
 		}
 	}</style>

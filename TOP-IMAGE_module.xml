@@ -47,8 +47,8 @@
 				image: {
 					pixels-per-point-x:1,
 					pixels-per-point-y:1,
-          image-scale: 1,
-          display: { if: =options.show_image, then:inherit, else:none },
+                    image-scale: 1,
+                    display: { if: =options.show_image, then:inherit, else:none },
 					height: {$multiply: [=view.width, .665 ]},
 					options: {
 						$switch: [

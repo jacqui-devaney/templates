@@ -208,6 +208,48 @@
       },
       {
         "section": "FRONT_SECTION",
+        "filename": "FRONT-6story-NO-WHATSNEWS.xml",
+        "title": "5 Story plus 1 image deco/No What's News/No A-HED",
+        "usage": "front",
+        "boxes": [
+          {
+            "id": "b1",
+            "images": {}
+          },
+          {
+            "id": "deco",
+            "images": {
+              "tablet": {
+                "width": 360,
+                "height": 346
+              }
+            }
+          },
+          {
+            "id": "b2",
+            "images": {}
+          },
+          {
+            "id": "b3",
+            "images": {}
+          },
+          {
+            "id": "b4",
+            "images": {}
+          },
+          {
+            "id": "b5",
+            "images": {
+              "tablet": {
+                "width": 55,
+                "height": 55
+              }
+            }
+          }
+        ]
+      },
+      {
+        "section": "FRONT_SECTION",
         "filename": "FRONT-6story-Vimage-deco_template.xml",
         "title": "5 Story plus 1 image deco",
         "usage": "front",

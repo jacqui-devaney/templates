@@ -4,6 +4,7 @@
 	<style src="GRID-stylesheet.ejs" />
 	<style src="ADVERTISING-stylesheet.ejs" />
 	<style src="ARTICLE-stylesheet.ejs" />
+	<style src="MEDIA-stylesheet.ejs" />
 	<style>{
 		jpml:{
 			background-color: =options.background_color

@@ -1,0 +1,12 @@
+WSJ-Templates Changelog: 01/05/16
+- iPhone Reskin Template Level Changes
+	- New fonts - Whitney/Chronicle-SSm.
+	- Change in fixed section box sizes.
+	- Changed image sizes per device width.
+	- Content placement/adjustments on section fronts and articles.
+	- Exclusion of super tall images inside articles through media stylesheet.
+	- Vertical top images inside of articles to be padded within
+	  headline/summary bounds.
+	- Proper padding for bullet lists inside articles.
+	- No top image in section fronts.
+	- Text decorations inside of articles for links, citations, etc.

@@ -39,7 +39,7 @@
                 }
 			}},
 			{if: =landscape, then: {
-				#deco: {
+				#deco:	{
 					top:0,
                     height:535,
 					options:{bind: {if: =articles.deco.no_binding, then: none}, large_headline:true, show_image:true, one_line_caption:true}

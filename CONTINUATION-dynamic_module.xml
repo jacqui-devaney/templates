@@ -27,9 +27,9 @@
 				},
 				else: {
 					padding: [
-						{if: =options.show_body, then: {if: =scale.phone, then: 24.5, else: 9.5}, else: 0.5},
+						{if: =options.show_body, then: {if: =scale.phone, then: 20, else: 9.5}, else: 0.5},
 						{if: =scale.phone, then: {if: =options.show_body, then: 9, else: 24}, else: 0},
-						{if: =options.show_body, then: {if: =scale.phone, then: 8, else: 0}, else: 0},
+						{if: =options.show_body, then: {if: =scale.phone, then: 0, else: 0}, else: 0},
 						{if: =scale.phone, then: 0, else: 0}
 					],
 					border-width: [0.5, 0, 0, 0],
@@ -71,31 +71,48 @@
     <style>{
     	if: =scale.phone, then: {
 			.module_headline: {
-				padding: { if: =options.show_body, else: [4, 0, 0, 0] },
-				color:{if: =article.read, then: color.articleReadColor}
+				color:{if: =article.read, then: color.articleReadColor},
+                padding: [0, 16, 0, 23]
 			},
-			#vertical: {
-				padding: [0, 0, 0, 24]
-			},
+            p: {
+				padding: [0, 0, 0, 0]
+               },
 			.body: {
-				padding: [0, 0, 0, 24]
+				padding: [4, 24, 8, 24]
 			},
 			#article_status: {
 				position: relative,
 				padding: [{if: =options.show_body, then: 1, else: 5}, 4, 0, 4],
-				top: 0,
 				left: -24,
 				width: 16,
 				height: 16,
 				options: {
 					identifier: =article.id
-				}
-			}
+                    }
+                },
+                image:{
+                    height: {
+                        $switch: [
+                        {if: =view.width, equals: 320, then: 78},
+                        {if: =view.width, equals: 375, then: 100},
+                        {if: =view.width, equals: 414, then: 122}
+                    ]}
+                },
+                #image_container: {
+                    width: {
+                       $switch:[
+                        {if: =view.width, equals: 320, then: 117},
+                        {if: =view.width, equals: 375, then: 150},
+                        {if: =view.width, equals: 414, then: 183}
+                       ]
+                    },
+                    padding: [6, -4, 0, 4],
+                    image-scale: 1,
+                    anchor-x: right,
+                    position: relative
+                }
     	}, else: {
     		#strap: {
-    			display: none
-    		},
-    		#image_container: {
     			display: none
     		},
     		#article_status: {
@@ -103,18 +120,17 @@
     		}
     	}
     }</style>
-	<box id="page_details" embed="pagedescription" />
+    <box id="page_details" embed="pagedescription" />
 	<panel id="strap">
 		<p class="subsection"><mark id="m_subsection"/></p>
 	</panel>
 	<panel id="content">
+		<panel id="vertical">
+        <p id="headline" class="module_headline"><mark class="m_headline" /><mark class="key" /></p>
+		</panel>
 	 	<box id="image_container" embed="deco-image">
 			<image class="summary-image" />
 		</box>
-		<panel id="vertical">
-			<box id="article_status" embed="article-status"></box>
-			<p id="headline" class="module_headline"><mark class="m_headline" /><mark class="key" /></p>
-		</panel>
         <panel class="body">
         	<p id="body-first-p"><mark class="body-first-p-mark" /><mark class="module_summary" /></p>
         </panel>

@@ -4,7 +4,7 @@
 	<style>{
 			image:{
 				width:=view.width,
-				height: {$subtract:[=view.height, 1]}
+                height: {$subtract:[=view.height, 1]}
 			},
 			#deco_caption_container: {
 				background-color:"rgba(0, 0, 0, .5)",
@@ -12,7 +12,7 @@
 				anchor-y: { if: =options.caption_top, then: top, else: bottom },
 				display:{if: =options.no_caption, then:none, else:inherit}
 			},
-      .deco_headline: {
+          .deco_headline: {
 				font-size: {$switch: [
 					{if: =options.large_headline, then:36},
 					{if: =options.medium_headline, then:24},

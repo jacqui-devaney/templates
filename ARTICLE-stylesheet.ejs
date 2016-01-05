@@ -27,7 +27,6 @@
 		color:#000
 	},
 	.border-p:{
-		border-width:[4, 123, 0, 0],
 		background-color: #e1e0df,
 		border-color:white
 	},
@@ -36,11 +35,10 @@
 		line-height:4,
 		color: transparent,
 		content: "unfortunate"
-
 	},
 	.byline-author: {
-		text-transform:uppercase
-	},
+        text-transform: {if: =scale.phone, then: none, else: uppercase}
+    },
 	h2: {
 		font-name:{if: =intent.article, then:DJ5Exchange-Bold, else:DJ5Exchange-Medium},
 		text-indent:0
@@ -80,19 +78,13 @@
 	#m_subsection: { content: =article.subsection },
 	#m_headline: { content: =article.headline },
 	.list-item: {
-		text-indent: -16,
-		padding: [0, 0, 0, 16]
-	},
+        padding: [0, 16, 22, 12],
+        text-indent: -18
+    },
 	.list-item-bullet: {
-		content: "\u00a0\u2022 "
-	},
-	.blockquote: {
-		padding: [0, 0, 10, 20]
-	},
-	.blockquote-p: {
-		padding: [0, 0, 0, 8],
-		border-width: [0, 0, 0, 1],
-		border-color: black
+		content: "\u00a0\u2022 ",
+        color:#a7afaf,
+        font-size: 20
 	},
 	.ticker: {
 		display: inherit,

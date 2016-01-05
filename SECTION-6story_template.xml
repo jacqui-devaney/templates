@@ -19,21 +19,27 @@
 			}},
 			{if: =scale.phone, then: {
 				#b1:	{
+                    height: =size.continuation_height_large,
 					options:{ bind: {if: =articles.b1.no_binding, then: none} }
 				},
 				#b2:	{
+                    height: =size.continuation_height_large,
 					options:{ bind: {if: =articles.b2.no_binding, then: none} }
 				},
 				#b3:	{
+                    height: =size.continuation_height_large,
 					options:{ bind: {if: =articles.b3.no_binding, then: none} }
 				},
 				#b4:	{
+                    height: =size.continuation_height_large,
 					options:{ bind: {if: =articles.b4.no_binding, then: none} }
 				},
 				#b5:	{
+                    height: =size.continuation_height_large,
 					options:{ bind: {if: =articles.b5.no_binding, then: none} }
 				},
 				#b6:	{
+                    height: =size.continuation_height_large,
 					options:{ bind: {if: =articles.b6.no_binding, then: none} }
 				}
 			}},

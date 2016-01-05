@@ -30,7 +30,7 @@
             text-transform: uppercase
         },
         #media_container:{
-            padding: [0, 0, 22, 0]
+            padding: [0, 0, 19, 0]
         },
         #media_asset:{
             padding: [{if: =media.height, more-than: =media.width, then: -22, else: 0}, {if: =media.height, more-than: =media.width, then: 16, else: 4}, {if: =media.height, more-than: =media.width, then: -10, else: 10}, {if: =media.height, more-than: =media.width, then: 16, else: 4}]

@@ -14,7 +14,6 @@
 				height: {$ceiling: [
 					{if: =scale.phone, then: {
 						$switch: [
-                            {if: =media.height, more-than: =media.width, then: {$divide: [=view.width, 2]}},
 							{$divide: [{$subtract:[=view.width, {if: =page.number, equals: 0, then: 0, else: 20}]}, =media.aspect]},
 							{$subtract:[=view.height, 220]}
 						]

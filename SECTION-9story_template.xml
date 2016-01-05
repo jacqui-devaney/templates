@@ -85,6 +85,7 @@
                         else: {$multiply: [=view.width, 0.6]}
                     }
                 },
+                    padding: [0, 4, 0, 4],
 					options: { bind: {if: =articles.b1.no_binding, then: none}, show_body: true, medium_headline: true, module: url(TOP-IMAGE_module.xml) }
 				},
                 #b2 : {

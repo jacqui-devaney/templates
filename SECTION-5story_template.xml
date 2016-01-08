@@ -84,8 +84,8 @@
                         else: {$multiply: [=view.width, 0.6]}
                         }
                     },
-					options: { bind: {if: =articles.b1.no_binding, then: none}, show_body: true, medium_headline: true },
-                    padding: [{if: {$count:[=articles.b1.imagesp.phone]}, more-than: 0, then: 0, else: 22}, 4, 0, 4]
+					options: { bind: {if: =articles.b1.no_binding, then: none}, show_body: true, medium_headline: true, module: url(TOP-IMAGE_module.xml) },
+                    padding: [{if: {$count:[=articles.b1.images.phone]}, more-than: 0, then: 0, else: 22}, 4, 0, 4]
 				},
 				#b2 : {
 					height: =size.continuation_height_large,

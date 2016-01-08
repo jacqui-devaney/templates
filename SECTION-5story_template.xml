@@ -85,7 +85,7 @@
                         }
                     },
 					options: { bind: {if: =articles.b1.no_binding, then: none}, show_body: true, medium_headline: true },
-                    padding: [0, 4, 0, 4]
+                    padding: [{if: {$count:[=articles.b1.imagesp.phone]}, more-than: 0, then: 0, else: 22}, 4, 0, 4]
 				},
 				#b2 : {
 					height: =size.continuation_height_large,

@@ -4,7 +4,8 @@
     <style>{
         #page_details: {
             options: {
-                tintTitle: true
+                tintTitle: true,
+                tintColor: { if: =page.section, equals: "WSJ_MAGAZINE", then: #66, else: white },
             }
         }
     }</style>

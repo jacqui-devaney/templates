@@ -1,3 +1,212 @@
 {
-  "influence": []
+  "influence": [
+    {
+      "key": "caption",
+      "title": "Hide/Show Caption",
+      "type": "toggle",
+      "options": [{
+        "label": "Show",
+        "values": { "no_caption": false }
+      }, {
+        "label": "Hide",
+        "values": { "no_caption": true }
+      }]
+    },
+
+    {
+      "key": "caption_position",
+      "title": "Caption Position",
+      "type": "toggle",
+      "disabled": ["no_caption"],
+      "options": [{
+        "label": "Bottom",
+        "values": { "caption_top": false }
+      },
+      {
+        "label": "Top",
+        "values": { "caption_top": true }
+      }]
+    },
+    {
+      "key": "headline",
+      "title": "Headline Size/Position",
+      "type": "select",
+      "options": [
+        {
+          "label": "Top Medium",
+          "values": {
+            "small_headline": false,
+            "medium_headline": true,
+            "normal_headline": false,
+            "bottom_headline": false,
+            "small_bottom_headline": false
+          }
+        },
+        {
+          "label": "Top Standard",
+          "values": {
+            "small_headline": false,
+            "medium_headline": false,
+            "normal_headline": true,
+            "bottom_headline": false,
+            "small_bottom_headline": false
+          }
+        },
+        {
+          "label": "Top Small",
+          "values": {
+            "small_headline": false,
+            "medium_headline": false,
+            "normal_headline": true,
+            "bottom_headline": false,
+            "small_bottom_headline": false
+          }
+        },
+        {
+          "label": "Bottom Standard",
+          "values": {
+            "small_headline": false,
+            "medium_headline": false,
+            "normal_headline": false,
+            "bottom_headline": true,
+            "small_bottom_headline": false
+          }
+        },
+        {
+          "label": "Bottom Small",
+          "values": {
+            "small_headline": false,
+            "medium_headline": false,
+            "normal_headline": false,
+            "bottom_headline": false,
+            "small_bottom_headline": true
+          }
+        }
+      ]
+    },
+    {
+      "key": "image_size",
+      "title": "Image Size",
+      "type": "select",
+      "options": [
+        {
+         "label": "Dynamic",
+         "values": {
+           "G_image": false,
+           "G-tall_image": false,
+           "F_image": false,
+           "PT_image": false,
+           "OV_image": false,
+           "OZ_image": false,
+           "P_image": false,
+           "H_image": false
+          }
+        },
+        {
+          "label": "G 553w 369h",
+          "values": {
+            "G_image": true,
+            "G-tall_image": false,
+            "F_image": false,
+            "PT_image": false,
+            "OV_image": false,
+            "OZ_image": false,
+            "P_image": false,
+            "H_image": false
+          }
+        },
+        {
+          "label": "G Tall 553w 400h",
+          "values": {
+            "G_image": false,
+            "G-tall_image": true,
+            "F_image": false,
+            "PT_image": false,
+            "OV_image": false,
+            "OZ_image": false,
+            "P_image": false,
+            "H_image": false
+          }
+        },
+        {
+          "label": "F 571w 226h",
+          "values": {
+            "G_image": false,
+            "G-tall_image": false,
+            "F_image": true,
+            "PT_image": false,
+            "OV_image": false,
+            "OZ_image": false,
+            "P_image": false,
+            "H_image": false
+          }
+        },
+        {
+          "label": "PT 264w 455h",
+          "values": {
+            "G_image": false,
+            "G-tall_image": false,
+            "F_image": false,
+            "PT_image": true,
+            "OV_image": false,
+            "OZ_image": false,
+            "P_image": false,
+            "H_image": false
+          }
+        },
+        {
+          "label": "OV 239w 340h",
+          "values": {
+            "G_image": false,
+            "G-tall_image": false,
+            "F_image": false,
+            "PT_image": false,
+            "OV_image": true,
+            "OZ_image": false,
+            "P_image": false,
+            "H_image": false
+          }
+        },
+        {
+          "label": "OZ 570w 612h",
+          "values": {
+            "G_image": false,
+            "G-tall_image": false,
+            "F_image": false,
+            "PT_image": false,
+            "OV_image": false,
+            "OZ_image": true,
+            "P_image": false,
+            "H_image": false
+          }
+        },
+        {
+          "label": "P 749w 499h",
+          "values": {
+            "G_image": false,
+            "G-tall_image": false,
+            "F_image": false,
+            "PT_image": false,
+            "OV_image": false,
+            "OZ_image": false,
+            "P_image": true,
+            "H_image": false
+          }
+        },
+        {
+          "label": "H 659w 439h",
+          "values": {
+            "G_image": false,
+            "G-tall_image": false,
+            "F_image": false,
+            "PT_image": false,
+            "OV_image": false,
+            "OZ_image": false,
+            "P_image": false,
+            "H_image": true
+          }
+        }
+      ]
+    }
+  ]
 }

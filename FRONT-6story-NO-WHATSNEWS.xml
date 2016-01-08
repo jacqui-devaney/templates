@@ -1,4 +1,4 @@
-<jpml id="SECTION-6story-deco_template">
+<jpml id="FRONT-6story-NO-WHATSNEWS_template">
 	<style src="GLOBAL-stylesheet.ejs"/>
     <style src="GRID-stylesheet.ejs"/>
 	<style src="ADVERTISING-stylesheet.ejs"/>
@@ -7,19 +7,19 @@
 	<style src="FRONT-stylesheet.ejs"/>
 	<style>{
 		#page_details: {
-			options: {
-				tintTitle: true
-			}
-		}
-	}</style>
+            options: {
+                hideHeaderBorder: true
+            }
+        }
+    }</style>
 	<style> {
 		$switch: [
 			{if: =scale.phone, then: {
 			}},
 			{if: =portrait, then: {
 				#deco:	{
-					top:0,
-					height:380,
+					top:20,
+					height:348,
 					options:{bind: {if: =articles.deco.no_binding, then: none}, medium_headline:true, show_image:true}
 				},
 				#b1:	{
@@ -33,8 +33,8 @@
 					options:{bind: {if: =articles.b2.no_binding, then: none}, medium_headline:true, show_body:true, top_border:true, show_flashline:true}
 				},
 				#b3:	{
-					top:0,
-					height:188,
+					top:20,
+					height:168,
 					options:{bind: {if: =articles.b3.no_binding, then: none}, medium_headline:true, show_flashline:true}
 				},
 				#b4:	{
@@ -44,14 +44,9 @@
 				},
 				#b5:	{
 					top:386,
-					height:196,
+					height:392,
 					options:{bind: {if: =articles.b5.no_binding, then: none}, medium_headline:true, top_border:true, show_flashline:true}
 
-				},
-				#b6:	{
-					top:586,
-					height:219,
-					options:{bind: {if: =articles.b6.no_binding, then: none}, medium_headline:true, top_border:true, show_flashline:true}
 				},
                 #footer: {
                     top: 820,
@@ -72,8 +67,8 @@
 					options:{bind: {if: =articles.b1.no_binding, then: none}, large_headline:true, show_body:true, top_border:true, show_flashline:false}
 				},
 				#b2:	{
-					top:0,
-					height:165,
+					top:20,
+					height:145,
 					options:{bind: {if: =articles.b2.no_binding, then: none}, medium_headline:true, bottom_border:true, show_body:true, show_flashline:true}
 				},
 				#b3:	{
@@ -87,14 +82,9 @@
 					options:{bind: {if: =articles.b4.no_binding, then: none}, medium_headline:true, top_border:true, show_flashline:true}
 				},
 				#b5:	{
-					top:175,
-					height:175,
-					options:{bind: {if: =articles.b5.no_binding, then: none}, medium_headline:true, top_border:false, show_flashline:true}
-				},
-				#b6:	{
 					top:345,
 					height:220,
-					options:{bind: {if: =articles.b6.no_binding, then: none}, medium_headline:true, top_border:true, show_flashline:true}
+					options:{bind: {if: =articles.b5.no_binding, then: none}, medium_headline:true, top_border:true, show_flashline:true}
 				},
                 #footer: {
                     top: 570,
@@ -105,16 +95,29 @@
 			}}
 		]
 	} </style>
-	<box id="page_details" class="tablet_only" embed="pagedescription" />
+    <box id="page_details" class="tablet_only" embed="pagedescription" />
+	<box class="tablet_only latest_news_box positionx1">
+        <p class="latest_news">
+            <a href="//NOW/LATEST_NEWS">LATEST NEWS &#187;</a>
+        </p>
+	</box>
+	<box id="marketstrap" class="tablet_only" embed="marketstrap">
+		<box id="marketstrapinner">
+			<panel id="marketstrappanel">
+				<p id="marketstrapp1"><strong class="marketstrapstrong">DJIA</strong> 31337.42 +89.01 <mark class="marketstraparrow"/> 2.34%</p>
+				<p id="marketstrapp2"><strong class="marketstrapstrong">NASDAQ</strong> 5678.90 +12.34 <mark class="marketstraparrow"/> 5.67%</p>
+				<p id="marketstrapp3"><strong class="marketstrapstrong">S&amp;P 500</strong> 1234.56 +7.89 <mark class="marketstraparrow"/> 0.12%</p>
+			</panel>
+		</box>
+	</box>
 
 	<box id="b1" embed="article" class="column8 positionx1 maude unit_plain" module="TOP-IMAGE_module.xml" />
 	<box id="deco" embed="article" class="column8 positionx1 maude unit_deco" module="DECO_module.xml" options="G_size" />
 	<box id="b2" embed="article" class="column8 positionx9-1 maude unit_plain" module="RIGHT-IMAGE_module.xml" />
+	<box id="b3" embed="article" class="column8-4 positionx9 maude unit_plain" module="TOP-IMAGE_module.xml" />
 
-	<box id="b3" embed="article" class="column4 positionx9 maude unit_plain" module="TOP-IMAGE_module.xml" />
 	<box id="b4" embed="article" class="column4 positionx9 maude unit_plain" module="TOP-IMAGE_module.xml" />
 	<box id="b5" embed="article" class="column4 positionx13-9 maude unit_plain" module="TOP-IMAGE_module.xml" />
-	<box id="b6" embed="article" class="column4 positionx13-9 maude unit_plain" module="TOP-IMAGE_module.xml" />
 	<box id="front_page" class="tablet_only positionx_full column_full maude unit_ad">
 		<box id="banner_ad" class="ad-banner front_ad" embed="advertisement" />
 	</box>

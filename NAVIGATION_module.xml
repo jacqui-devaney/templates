@@ -6,7 +6,8 @@
 	<style>{
 		jpml: {
 			background-color: =options.background_color,
-			padding:[{if: =view.height, less-than: =size.rail_height_with_image, then: 10, else: 4},25,{if: =view.height, less-than: =size.rail_height_with_image, then: -10, else: -2}, 25],
+			padding:
+            [{if: =view.height, less-than: =size.rail_height_with_image, then: 10, else: 4},25,{if: =view.height, less-than: =size.rail_height_with_image, then: -10, else: -2}, 25],
 			height:130
 		}
 	}</style>

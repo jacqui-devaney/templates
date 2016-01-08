@@ -44,45 +44,44 @@
 
 			]},
 			{
-				#deco_container: {
-					$switch: [
-						{if: =options.top_image, then:{
-							width:=view.width,
-							padding: [0, 0, 10, 0]
-						}},
-						{if: =options.tall_image, then:{
-							width:=view.width,
-							padding: [0, 0, 10, 0],
-							height: 362
-						}},
-						{if: =options.squarish_image, then:{
-							anchor-x:left,
-							anchor-y:top,
-							width: 174,
-							padding: [0, 10, 0, 0]
-						}},
-						{if: =options.large_image, then:{
-							anchor-x:left,
-							anchor-y:{if: =options.A_image, then:bottom, else:top},
-							width: 486,
-							padding: [0, 16, 0, 0]
-						}},
-						{if: true, then: {
-							anchor-x:left,
-							anchor-y:{if: =options.A_image, then:bottom, else:top},
-							width: {$switch:[
-								{if: =options.small_image, then:119},
-								{if: =options.tall_image, then:=view.width},
-								236
-							]},
-							padding: {$switch:[
-								{if: =options.small_image, then:[0, 0, 0, 0]},
-								{if: =options.tall_image, then:[0, 0, 0, 0]},
-								[0, 12, 0, 0]
-							]}
-						}}
-
-					]
+            #deco_container: {
+                $switch: [
+                {if: =options.top_image, then:{
+                    width:=view.width,
+                    padding: [0, 0, 10, 0]
+                }},
+                {if: =options.tall_image, then:{
+                    width:=view.width,
+                    padding: [0, 0, 10, 0],
+                    height: 362
+                }},
+                {if: =options.squarish_image, then:{
+                    anchor-x:left,
+                    anchor-y:top,
+                    width: 174,
+                    padding: [0, 10, 0, 0]
+                }},
+                {if: =options.large_image, then:{
+                    anchor-x:left,
+                    anchor-y:{if: =options.A_image, then:bottom, else:top},
+                    width: 486,
+                    padding: [0, 16, 0, 0]
+                }},
+                {if: true, then: {
+                    anchor-x:left,
+                    anchor-y:{if: =options.A_image, then:bottom, else:top},
+                    width: {$switch:[
+                        {if: =options.small_image, then:119},
+                        {if: =options.tall_image, then:=view.width},
+                        236
+                    ]},
+                    padding: {$switch:[
+                        {if: =options.small_image, then:[0, 0, 0, 0]},
+                        {if: =options.tall_image, then:[0, 0, 0, 0]},
+                        [0, 12, 0, 0]
+                    ]}
+                }}
+                ]
 				},
 
 				image: {
@@ -141,6 +140,7 @@
 		<style>{
 			if: =page.section, equals: "WSJ_MAGAZINE", then: {
 				.module_flashline: {
+					display: {if: =options.show_flashline, then:inherit, else:none},
 					font-name: HelveticaNeue-Light,
 					font-size: 12
 				},

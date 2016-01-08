@@ -1,8 +1,7 @@
-<jpml id="AHED_module">
+<jpml id="FOOTER_module">
 	<style src="GLOBAL-stylesheet.ejs"/>
 	<style src="GLOBAL_MODULES-stylesheet.ejs" />
-	<style src="AHED-stylesheet.ejs" />
-	<style src="PHONE-MODULES-stylesheet.ejs" />
+	<style src="FOOTER-stylesheet.ejs" />
 	<style>{
 		$join: [
         { $switch: [

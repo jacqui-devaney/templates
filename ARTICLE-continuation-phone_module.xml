@@ -7,20 +7,29 @@
 	<style>{
 		$join: [
 		{jpml: { min-height: 0 }},
-		{#body_container : { padding: [0, 10, 0, 10]}},
 		{.article_body: {
 			line-height: {$multiply: [22, =view.zoomlevel]},
-			text-align: justify,
-			hyphens: auto
+			text-align: left,
+            hyphens: auto
         }},
 		{#body_continuation: {
 			content: from-flow(article_body),
 			flow: article_body
-		}},
-		{#media_container: {
-            padding: [5, 0, 10, 0]
-		}}
-		]
+        }},
+        {#media_caption: {
+            padding: [8, 0, 0, 0]
+        }},
+        {#media_container: {
+            padding: [0, 0, 22, 0]
+        }},
+        {#media_credit: {
+            text-transform: uppercase,
+            padding: [0, 0, 0, 0]
+        }},
+        {#list-item :{
+            padding: [0, 0, 22, 0]
+        }}
+    ]
     }</style>
 
     <box id="prototype">
@@ -31,6 +40,7 @@
 	            <box id="media_asset" embed="media"/>
         		<p id="media_vr_footer"><mark id="mark_media_vr_footer"/></p>
 	            <p id="media_caption"><mark id="mark_caption" /></p>
+                <p id="media_credit"><mark id="mark_credit"/></p>
 	            <p id="media_vr_link"><a href="http://wsj.com/virtual-reality"><mark id="mark_media_vr_link"/></a></p>
 	        </box>
         </box>

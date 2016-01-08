@@ -78,7 +78,7 @@
 				padding: [0, 0, 0, 0]
                },
 			.body: {
-				padding: [4, 24, 8, 24]
+				padding: [4, 16, 8, 24]
 			},
 			#article_status: {
 				position: relative,
@@ -106,7 +106,7 @@
                         {if: =view.width, equals: 414, then: 183}
                        ]
                     },
-                    padding: [4, -4, 0, 4],
+                    padding: [6, -4, 0, 0],
                     image-scale: 1,
                     anchor-x: right,
                     position: relative

@@ -22,7 +22,7 @@
 				#deco:	{
 					top:0,
 					height:545,
-					options:{bind: {if: =articles.deco.no_binding, then: none}, large_headline:true, show_image:true, one_line_caption:true}
+					options:{bind: {if: =articles.deco.no_binding, then: none}, large_headline:true, show_image:true}
 				},
 				#b1:	{
 					top:559,
@@ -45,7 +45,7 @@
 				#deco:	{
 					top:0,
 					height:545,
-					options:{bind: {if: =articles.deco.no_binding, then: none}, large_headline:true, show_image:true, one_line_caption:true}
+					options:{bind: {if: =articles.deco.no_binding, then: none}, large_headline:true, show_image:true}
 				},
 				#b1:	{
 					top:0,

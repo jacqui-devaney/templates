@@ -106,7 +106,7 @@
                         {if: =view.width, equals: 414, then: 183}
                        ]
                     },
-                    padding: [6, -4, 0, 4],
+                    padding: [4, -4, 0, 4],
                     image-scale: 1,
                     anchor-x: right,
                     position: relative

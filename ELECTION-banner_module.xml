@@ -1,0 +1,46 @@
+<jpml id="ELECTION-banner_module">
+	<style src="GLOBAL-stylesheet.ejs" />
+	<style src="GLOBAL_MODULES-stylesheet.ejs" />
+	<style src="PHONE-MODULES-stylesheet.ejs" />
+
+	<style>{
+		jpml: {
+			background-color: =options.background_color,
+			border-color: #d8d8d8
+		},
+		#page_details: {
+			options: {
+				tintTitle: true
+			}
+		}
+	}</style>
+    <style>{
+    	if: =scale.phone, then: {
+            #election_container:{
+                background-color: red
+            },
+			.banner_headline: {
+                padding: [20, 16, 0, 23],
+                font-name: "ChronicleDisplay-Semi",
+                content: "Follow Election 2016",
+                font-size: 18
+
+			},
+			.banner_caption: {
+                padding: [0, 0, 22, 23],
+                font-name: Whitney-Book,
+                font-size: 18,
+                content: "Tap the bell in sections to manage your notifications"
+			}
+        }
+    }</style>
+
+    <box id="page_details" embed="pagedescription" />
+	<panel id="strap">
+		<p class="subsection"><mark id="m_subsection"/></p>
+	</panel>
+    <box id="election_container">
+            <p id="headline" class="banner_headline"><mark class="banner_headline" /></p>
+        	<p id="banner_caption" class="banner_caption"><mark class="banner_caption" /></p>
+    </box>
+</jpml>

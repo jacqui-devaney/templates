@@ -70,7 +70,7 @@
 			padding: { if: {$count:[=article.thumbnail]}, more-than: 0, then: [0, 0, 9, 0], else: [-2, 0, 9, 0]}
 		},
 		#module_text: {
-			padding:[5,0,10,0]
+			padding:[5,0,0,0]
 		},
 		.body: {
 			font-name: DJ5Exchange-Medium,

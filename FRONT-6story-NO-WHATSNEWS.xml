@@ -34,17 +34,17 @@
 				},
 				#b3:	{
 					top:20,
-					height:245,
+					height:260,
 					options:{bind: {if: =articles.b3.no_binding, then: none}, medium_headline:true, show_flashline:true}
 				},
 				#b4:	{
-					top:265,
-					height: 245,
+					top:285,
+					height: 260,
 					options:{bind: {if: =articles.b4.no_binding, then: none}, medium_headline:true, top_border:true, show_flashline:true}
 				},
 				#b5:	{
-					top:520,
-					height:245,
+					top:540,
+					height:260,
 					options:{bind: {if: =articles.b5.no_binding, then: none}, medium_headline:true, top_border:true, show_flashline:true}
 
 				},

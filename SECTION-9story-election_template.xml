@@ -58,6 +58,29 @@
 			{if: =scale.rail, then: {
 			}},
 			{if: =scale.phone, then: {
+                #election_container:{
+                    background-color: #dfe7df,
+                    height: 100
+                },
+                #election:{
+                    padding: [0, 4, 22, 4]
+                },
+                .banner_headline: {
+                    padding: [11, 72, 0, 24],
+                    font-name: "ChronicleSSm-Medium",
+                    content: "Follow Election 2016",
+                    line-height: 22,
+                    color: #3b4343,
+                    font-size: 16
+                },
+                .banner_caption: {
+                    padding: [0, 72, 22, 24],
+                    font-name: WhitneySSm-Book,
+                    font-size: 16,
+                    color: #4f5757,
+                    line-height: 22,
+                    content: "Tap the bell in sections to manage your notifications"
+                },
 				#page_details: {
 					display: none
 				},
@@ -72,10 +95,6 @@
 				#tabbar-container: {
 					display: none
 				},
-                #election:{
-                    height: 122,
-                    padding: [0, 4, 24, 4]
-                },
 				#b1 : {
                      height:{
                         if: =view.width, more-than: 320, then:{
@@ -90,7 +109,7 @@
                             else: {$multiply: [=view.width, 0.6]}
                         }
                     },
-                    padding: [{if: {$count:[=articles.b1.images.phone]}, more-than: 0, then: 0, else: 22}, 0, 0, 0],
+                    padding: [{if: {$count:[=articles.b1.images.phone]}, more-than: 0, then: 0, else: 22}, 4, 0, 4],
 					options: { bind: {if: =articles.b1.no_binding, then: none}, show_body: true, medium_headline: true, module: url(TOP-IMAGE_module.xml) }
 				},
                 #b2 : {
@@ -498,7 +517,13 @@
 		</box>
 	</box>
 
-	<box id="election" class="column8 positionx1 maude unit_plain unit_418" module="ELECTION-banner_module.xml" />
+    <box id="election">
+	<box id="election_container" embed="article" class="maude unit_166" module="ELECTION-banner_module.xml">
+            <p id="headline" class="banner_headline"><mark class="banner_headline" /></p>
+        	<p id="banner_caption" class="banner_caption"><mark class="banner_caption" /></p>
+    </box>
+    </box>
+
 	<box id="b1" embed="article" class="column8 positionx1 maude unit_plain unit_418" module="TOP-IMAGE_module.xml" />
 	<box id="b2" embed="article" class="column4 positionx9-1  maude unit_plain unit_166" module="TOP-IMAGE_module.xml" />
 	<box id="b3" embed="article" class="column4 positionx13-5 maude unit_plain unit_166" module="TOP-IMAGE_module.xml" />

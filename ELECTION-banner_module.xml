@@ -16,6 +16,12 @@
 	}</style>
     <style>{
     	if: =scale.phone, then: {
+        {if: =page.section, equals: "POLITICS", then: {
+            .politics-link: {
+					color: #004990,
+					border-width:[0, 0, 3, 0],
+					border-color:#0037A2
+            },
             #election_container:{
                 background-color: red
             },
@@ -33,7 +39,7 @@
                 content: "Tap the bell in sections to manage your notifications"
 			}
         }
-    }</style>
+    }}}</style>
 
     <box id="page_details" embed="pagedescription" />
 	<panel id="strap">

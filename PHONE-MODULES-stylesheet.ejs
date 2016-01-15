@@ -203,7 +203,8 @@
 	},
 	strong: {
         font-name:{if: =intent.article, then: "ChronicleSSm-Medium"},
-        color: {if: =intent.article, then: inherit}
+        color: {if: =intent.article, then: inherit},
+        line-height: 22
     },
 	.blockquote: {
 		padding: [0, 0, 22, 0]
@@ -222,7 +223,9 @@
     },
 	em: {
         font-name:{if: =intent.article, then:ChronicleSSmBook-Italic},
-        color: {if: =intent.article, then: inherit, else: #3b4343}
+        color: {if: =intent.article, then: inherit, else: #3b4343},
+        line-height: 22
+
     },
 	cite: {
         line-height: 22,

@@ -15,31 +15,26 @@
 		}
 	}</style>
     <style>{
-    	if: =scale.phone, then: {
-        {if: =page.section, equals: "POLITICS", then: {
-            .politics-link: {
-					color: #004990,
-					border-width:[0, 0, 3, 0],
-					border-color:#0037A2
-            },
             #election_container:{
-                background-color: red
+                background-color: #dfe7df
             },
 			.banner_headline: {
-                padding: [20, 16, 0, 23],
-                font-name: "ChronicleDisplay-Semi",
+                padding: [11, 24, 0, 24],
+                font-name: "ChronicleSSm-Medium",
                 content: "Follow Election 2016",
-                font-size: 18
+                line-height: 22,
+                font-size: 16
 
 			},
 			.banner_caption: {
-                padding: [0, 0, 22, 23],
-                font-name: Whitney-Book,
-                font-size: 18,
+                padding: [0, 24, 22, 24],
+                font-name: WhitneySSm-Book,
+                font-size: 16,
+                line-height: 22,
                 content: "Tap the bell in sections to manage your notifications"
 			}
         }
-    }}}</style>
+    </style>
 
     <box id="page_details" embed="pagedescription" />
 	<panel id="strap">

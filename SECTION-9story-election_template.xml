@@ -498,7 +498,7 @@
 		</box>
 	</box>
 
-	<box id="election" embed="article" class="column8 positionx1 maude unit_plain unit_418" module="ELECTION-banner_module.xml" />
+	<box id="election" class="column8 positionx1 maude unit_plain unit_418" module="ELECTION-banner_module.xml" />
 	<box id="b1" embed="article" class="column8 positionx1 maude unit_plain unit_418" module="TOP-IMAGE_module.xml" />
 	<box id="b2" embed="article" class="column4 positionx9-1  maude unit_plain unit_166" module="TOP-IMAGE_module.xml" />
 	<box id="b3" embed="article" class="column4 positionx13-5 maude unit_plain unit_166" module="TOP-IMAGE_module.xml" />

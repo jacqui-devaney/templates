@@ -61,10 +61,9 @@
         .banner_headline: {
             padding: [15, 24, 16, 24],
             font-name: "WhitneySSm-Medium",
-            content: "Follow Election 2016",
+            color: #4f5757,
             line-height: 22,
-            font-size: 16,
-            text-transform: uppercase
+            font-size: 16
         },
         .banner_caption: {
             padding: [12, 24, 22, 24],
@@ -80,9 +79,9 @@
 
 	<p class="article_flashline" embed="flashline"/>
 
-    <panel id="election_container" href="subscribe:tag-string?tag-group">
+    <panel id="election_container">
     <box id="headline_container">
-        <p id="headline" class="banner_headline"><mark class="banner_headline" /></p>
+        <p id="banner_headline" class="banner_headline"><a id="banner_headline" href="subscribe:tag-string?tag-group"><span class="banner_headline">FOLLOW ELECTION 2016</span><mark class="space"/></a></p>
     </box>
         <p id="banner_caption" class="banner_caption"><mark class="banner_caption" /></p>
     </panel>

@@ -1,10 +1,13 @@
-<jpml id="ARTICLE-future_of_everything_template">
-	<style src="GLOBAL-stylesheet.ejs"/>
+<jpml id="ARTICLE-election_template">
+  <style src="GLOBAL-stylesheet.ejs"/>
   <style src="GRID-stylesheet.ejs"/>
+  <style src="PHONE-stylesheet.ejs" />
   <style src="ADVERTISING-stylesheet.ejs" />
-  <style src="FUTURE-stylesheet.ejs" />
 
   <style>{
+    jpml: {
+      background-color: =color.background
+    },
     #page_details: {
       display: {if: =scale.phone, then: none},
       options: {
@@ -16,21 +19,22 @@
       height:{$multiply: [2, =view.height]}
     }, else: {
       top:0,
-      bottom:24
+      bottom:44
     }}
   }</style>
+
   <style> {
 		$switch: [
 			{if: =scale.phone, then: {
         #view: {
           options: {
             background_color: =color.background,
-            indent: true,
-            module: {if: =page.section, equals: "POLITICS", then: url(ARTICLE-election-front-phone_module.xml), else: url(ARTICLE-continuation-phone_module.xml)}
+            indent: false,
+            module: {if: =page.number, equals: 0, then: url(ARTICLE-election-front-phone_module.xml), else: url(ARTICLE-continuation-phone_module.xml)}
           }
         }
         }},
-        {
+			{
         #view: {
           options: {
             background_color: =color.background,
@@ -38,8 +42,10 @@
             module: {if: =page.number, equals: 0, then: url(ARTICLE-front_module.xml), else: url(ARTICLE-continuation_module.xml)}
           }
         }
-        }]
-    }</style>
+      }
+		]
+	}</style>
+
   <style>{
     if: =intent.ad, then: {
       jpml: {
@@ -61,6 +67,7 @@
       }
     }
   }</style>
+
   <box id="fullpage_container">
       <box id="fullpage_ad" class="ad-fullpage" embed="fullpagead" />
   </box>

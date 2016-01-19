@@ -28,8 +28,10 @@
           options: {
             background_color: =color.background,
             indent: false,
-            module: {if: =page.number, equals: 0, then: url(ARTICLE-front-phone_module.xml), else: url(ARTICLE-continuation-phone_module.xml)},
-			}},
+            module: {if: =page.number, equals: 0, then: url(ARTICLE-front-phone_module.xml), else: url(ARTICLE-continuation-phone_module.xml)}
+          }
+        }
+        }},
 			{
         #view: {
           options: {

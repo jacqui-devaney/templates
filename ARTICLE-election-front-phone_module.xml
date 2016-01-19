@@ -80,7 +80,7 @@
 
 	<p class="article_flashline" embed="flashline"/>
 
-    <panel id="election_container">
+    <panel id="election_container" href="subscribe:tag-string?tag-group">
     <box id="headline_container">
         <p id="headline" class="banner_headline"><mark class="banner_headline" /></p>
     </box>

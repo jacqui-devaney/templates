@@ -18,8 +18,8 @@
 			}},
 			{if: =portrait, then: {
 				#deco:	{
-					top:0,
-					height:380,
+					top:20,
+					height:348,
 					options:{bind: {if: =articles.deco.no_binding, then: none}, medium_headline:true, show_image:true}
 				},
 				#b1:	{
@@ -34,17 +34,17 @@
 				},
 				#b3:	{
 					top:20,
-					height:168,
+					height:260,
 					options:{bind: {if: =articles.b3.no_binding, then: none}, medium_headline:true, show_flashline:true}
 				},
 				#b4:	{
-					top:187,
-					height:196,
+					top:285,
+					height: 260,
 					options:{bind: {if: =articles.b4.no_binding, then: none}, medium_headline:true, top_border:true, show_flashline:true}
 				},
 				#b5:	{
-					top:386,
-					height:392,
+					top:540,
+					height:260,
 					options:{bind: {if: =articles.b5.no_binding, then: none}, medium_headline:true, top_border:true, show_flashline:true}
 
 				},
@@ -57,8 +57,8 @@
 			}},
 			{if: =landscape, then: {
 				#deco:	{
-					top:0,
-					height:380,
+					top:20,
+					height:360,
 					options:{bind: {if: =articles.deco.no_binding, then: none}, medium_headline:true, show_image:true}
 				},
 				#b1:	{
@@ -68,23 +68,23 @@
 				},
 				#b2:	{
 					top:20,
-					height:145,
-					options:{bind: {if: =articles.b2.no_binding, then: none}, medium_headline:true, bottom_border:true, show_body:true, show_flashline:true}
+					height:270,
+					options:{bind: {if: =articles.b2.no_binding, then: none}, medium_headline:true, show_body:true, show_flashline:true}
 				},
 				#b3:	{
-					top:175,
-					height:175,
-					options:{bind: {if: =articles.b3.no_binding, then: none}, medium_headline:true, top_border:false, show_flashline:true}
+					top:20,
+					height:270,
+					options:{bind: {if: =articles.b3.no_binding, then: none}, medium_headline:true, show_body:true, show_flashline:true}
 				},
 				#b4:	{
-					top:345,
-					height:220,
-					options:{bind: {if: =articles.b4.no_binding, then: none}, medium_headline:true, top_border:true, show_flashline:true}
+					top:290,
+					height:270,
+					options:{bind: {if: =articles.b4.no_binding, then: none}, medium_headline:true, top_border:true, show_body:true, show_flashline:true}
 				},
 				#b5:	{
-					top:345,
-					height:220,
-					options:{bind: {if: =articles.b5.no_binding, then: none}, medium_headline:true, top_border:true, show_flashline:true}
+					top:290,
+					height:270,
+					options:{bind: {if: =articles.b5.no_binding, then: none}, medium_headline:true, show_flashline:true, top_border: true}
 				},
                 #footer: {
                     top: 570,
@@ -113,9 +113,9 @@
 
 	<box id="b1" embed="article" class="column8 positionx1 maude unit_plain" module="TOP-IMAGE_module.xml" />
 	<box id="deco" embed="article" class="column8 positionx1 maude unit_deco" module="DECO_module.xml" options="G_size" />
-	<box id="b2" embed="article" class="column8 positionx9-1 maude unit_plain" module="RIGHT-IMAGE_module.xml" />
-	<box id="b3" embed="article" class="column8-4 positionx9 maude unit_plain" module="TOP-IMAGE_module.xml" />
+	<box id="b2" embed="article" class="column4-8 positionx9-1 maude unit_plain" module="RIGHT-IMAGE_module.xml" />
 
+    <box id="b3" embed="article" class="column4 positionx13-9 maude unit_plain" module="TOP-IMAGE_module.xml" />
 	<box id="b4" embed="article" class="column4 positionx9 maude unit_plain" module="TOP-IMAGE_module.xml" />
 	<box id="b5" embed="article" class="column4 positionx13-9 maude unit_plain" module="TOP-IMAGE_module.xml" />
 	<box id="front_page" class="tablet_only positionx_full column_full maude unit_ad">

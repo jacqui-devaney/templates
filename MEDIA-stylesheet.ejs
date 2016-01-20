@@ -11,10 +11,9 @@
 				position: relative,
 				left: 0,
 				right: 0,
-                display: {if: =media.filename, contains: "/images/", then: {if: =media.height, less-than: 105, then: none}},
 				height: {$ceiling: [
 					{if: =scale.phone, then: {
-						$min: [
+						$switch: [
 							{$divide: [{$subtract:[=view.width, {if: =page.number, equals: 0, then: 0, else: 20}]}, =media.aspect]},
 							{$subtract:[=view.height, 220]}
 						]

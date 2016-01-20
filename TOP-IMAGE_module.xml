@@ -92,7 +92,7 @@
 			},
 			#body: {
                 display: inherit,
-				padding: [0, 16, 0, 24]
+				padding: [0, 24, 0, 24]
 			},
 			.body: {
 				display: none
@@ -110,7 +110,7 @@
 					anchor-x: right,
 					padding: [0],
 					width: 111
-				}, else: {if: =view.height, less-than: 200, then: [0, 24, 14, 0], else: [0, 0, 14, 0]}
+				}, else: {if: =view.height, less-than: 200, then: [0, 24, 14, 0], else: [0]}
 			}
 		}, else: {
 			.opinion_dek:{

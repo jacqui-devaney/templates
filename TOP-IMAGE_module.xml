@@ -78,7 +78,7 @@
 				padding:[0]
 			},
             .module_headline: {
-                padding: [0, 24, 4, 6]
+                padding: [0, 16, 4, 24]
             },
 			image: {
 				height: {$multiply: [=view.width, .665 ]},
@@ -92,7 +92,7 @@
 			},
 			#body: {
                 display: inherit,
-                padding: [0, 24, 0, 8]
+				padding: [0, 16, 0, 24]
 			},
 			.body: {
 				display: none
@@ -110,17 +110,7 @@
 					anchor-x: right,
 					padding: [0],
 					width: 111
-				}, else: {if: =view.height, less-than: 200, then: [0, 24, 0, 0], else: [0]}
-			},
-			#article_status: {
-				position: relative,
-				top: 0,
-				bottom: 5,
-				left: 8,
-				width: 16,
-				options: {
-					identifier: =article.id
-				}
+				}, else: {if: =view.height, less-than: 200, then: [0, 24, 14, 0], else: [0, 0, 14, 0]}
 			}
 		}, else: {
 			.opinion_dek:{
@@ -158,7 +148,7 @@
 		<image class="summary-image"/>
 	</box>
 	<panel id="vertical">
-		<box id="article_status" embed="article-status">t</box>
+		<box id="article_status" embed="article-status"></box>
 		<panel id="headline">
 			<p class="module_headline"><mark class="m_headline" /></p>
 			<h2 class="opinion_dek"><mark class="subhed-mark" /></h2>

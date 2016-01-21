@@ -28,58 +28,44 @@
       }]
     },
     {
-      "key": "headline",
-      "title": "Headline Size/Position",
+      "key": "headline_size",
+      "title": "Headline Size",
       "type": "select",
       "options": [
         {
-          "label": "Top Medium",
+          "label": "Small",
           "values": {
-            "small_headline": false,
-            "medium_headline": true,
-            "normal_headline": false,
-            "bottom_headline": false,
-            "small_bottom_headline": false
+            "small_headline": true,
+            "smedium_headline": false,
+            "medium_headline": false,
+            "large_headline": false
           }
         },
         {
-          "label": "Top Standard",
+          "label": "SMedium",
           "values": {
             "small_headline": false,
+            "smedium_headline": true,
             "medium_headline": false,
-            "normal_headline": true,
-            "bottom_headline": false,
-            "small_bottom_headline": false
+            "large_headline": false
           }
         },
         {
-          "label": "Top Small",
+          "label": "Medium",
           "values": {
             "small_headline": false,
+            "smedium_headline": false,
             "medium_headline": false,
-            "normal_headline": true,
-            "bottom_headline": false,
-            "small_bottom_headline": false
+            "large_headline": true
           }
         },
         {
-          "label": "Bottom Standard",
+          "label": "Large",
           "values": {
             "small_headline": false,
+            "smedium_headline": false,
             "medium_headline": false,
-            "normal_headline": false,
-            "bottom_headline": true,
-            "small_bottom_headline": false
-          }
-        },
-        {
-          "label": "Bottom Small",
-          "values": {
-            "small_headline": false,
-            "medium_headline": false,
-            "normal_headline": false,
-            "bottom_headline": false,
-            "small_bottom_headline": true
+            "large_headline": true
           }
         }
       ]

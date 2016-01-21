@@ -78,13 +78,12 @@
 				padding:[0]
 			},
             .module_headline: {
-                padding: [0, 24, 4, 6]
+                padding: [0, 16, 4, 24]
             },
 			image: {
 				height: {$multiply: [=view.width, .665 ]},
-				width:=view.width,
 				display:inherit,
-				padding: [0]
+				padding: [0, 4, 0, 4]
 
 			},
 			.byline: {
@@ -92,7 +91,7 @@
 			},
 			#body: {
                 display: inherit,
-                padding: [0, 24, 0, 8]
+				padding: [0, 24, 0, 24]
 			},
 			.body: {
 				display: none
@@ -105,22 +104,23 @@
 			.opinion_dek: {
 				display: none
 			},
-			#deco_container: {
-				if: =options.float_image, equals: right, then: {
-					anchor-x: right,
-					padding: [0],
-					width: 111
-				}, else: {if: =view.height, less-than: 200, then: [0, 24, 0, 0], else: [0]}
-			},
 			#article_status: {
 				position: relative,
-				top: 0,
-				bottom: 0,
-				left: 0,
+				padding: [{if: =options.show_body, then: 1, else: 5}, 4, 0, 4],
+				left: -24,
 				width: 16,
+				height: 16,
 				options: {
 					identifier: =article.id
-				}
+                    }
+            },
+			#deco_container: {
+                padding: [0, 4, 0, 4],
+				if: =options.float_image, equals: right, then: {
+					anchor-x: right,
+                    padding: [0, 4, 0, 4],
+					width: 111
+				}, else: {if: =view.height, less-than: 200, then: [0, 24, 14, 0], else: [0, 4, 0, 4]}
 			}
 		}, else: {
 			.opinion_dek:{
@@ -141,7 +141,7 @@
 			image: {
 				width: 111,
 				height: 111,
-				padding: [0],
+				padding: [0, 4, 0, 4],
 				image-scale: 0.5
 			}
 		}

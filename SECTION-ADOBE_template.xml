@@ -26,18 +26,19 @@
 					display: none
 				},
                 #b1: {
-                height: {
-                    if: {$count:[=articles.b1.images.phone]},
-                        more-than: 0,
-                        then: {$multiply: [=device.width, 1.137]},
-                        else: {$multiply: [=view.width, 0.6]}
-                        }, else: {
+                    height: {
                         if: {$count:[=articles.b1.images.phone]},
-                        more-than: 0,
-                        then: {$multiply: [=view.width, 1.32]},
-                        else: {$multiply: [=view.width, 0.6]}
-                    },
-					options: {
+                            more-than: 0,
+                            then: {$multiply: [=device.width, 1.137]},
+                            else: {$multiply: [=view.width, 0.6]}
+                            }, else: {
+                            if: {$count:[=articles.b1.images.phone]},
+                            more-than: 0,
+                            then: {$multiply: [=view.width, 1.32]},
+                            else: {$multiply: [=view.width, 0.6]}
+                        },
+                    padding: [{if: {$count:[=articles.b1.images.phone]}, more-than: 0, then: 0, else: 22}, 0, 0, 0],
+                    options: {
 						bind: {if: =articles.b1.no_binding, then: none},
 						module: url(TOP-IMAGE_module.xml),
 						show_body: true,

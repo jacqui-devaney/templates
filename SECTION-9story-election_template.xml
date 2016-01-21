@@ -60,7 +60,8 @@
 			{if: =scale.phone, then: {
                 #election_container:{
                     background-color: #dfe7df,
-                    height: 100
+                    height: 100,
+                    display: {if: =app.push.tags.topic.politics, then: none, else: inherit}
                 },
                 #election:{
                     padding: [0, 4, 22, 4]

@@ -56,7 +56,8 @@
             padding: [12, 12, 12, 12],
             background-color: #red,
             text-align: center,
-            background-color: #dfe7df
+            background-color: #dfe7df,
+            display: {if: =app.push.tags.topic.politics, then: none, else: inherit}
         },
         .banner_headline: {
             padding: [15, 24, 16, 24],

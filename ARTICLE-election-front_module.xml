@@ -60,7 +60,7 @@
             background-color: #dfe7df,
             display: {if: =app.push.tags.topic.politics, then: none, else: inherit},
             top: 600,
-            width: 340
+            width:{if: =landscape, then: 340, else:460}
         },
         .banner_headline: {
             padding: [15, 24, 16, 24],

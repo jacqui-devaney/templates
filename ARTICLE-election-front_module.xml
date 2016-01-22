@@ -1,0 +1,110 @@
+<jpml id="ARTICLE-election-front_module">
+	<style src="GLOBAL-stylesheet.ejs"/>
+	<style src="GLOBAL_MODULES-stylesheet.ejs" />
+	<style src="ARTICLE-stylesheet.ejs" />
+	<style src="MEDIA-stylesheet.ejs" />
+	<style>{
+		jpml: {
+			background-color: =options.background_color
+		}
+	}</style>
+	<style>{
+		$join: [
+		{#body_container: {
+            column-count: { if: =portrait, then: 3, else: 4},
+            column-gutter: 12,
+			flow: article_body,
+			min-height: {if: =page.hasmedia, then:400, else:300},
+			padding:[10, 0, 0, 0],
+			layout-grid-line: {$multiply: [20, =view.zoomlevel]},
+			layout-grid-line-offset: {$multiply: [20, =view.zoomlevel]}
+
+        }},
+		{.border-p:{
+			layout-grid-line: 0,
+			layout-grid-line-offset: 0,
+			border-color: =color.background
+
+		}},
+		{if: =portrait, then: {
+			#media_container: {
+				top: 0,
+				left: {if: =media.width, less-than: 360, then: 248, else: {if: =media.width, more-than: 484, then: 248, else: 248}},
+				width: {$switch: [
+					{if: =media.width, less-than: 360, then: 237},
+					{if: =media.width, more-than: 484, then: 485},
+					237
+				]}
+			}
+        }, else: {
+			#media_container: {
+				top: 0,
+				left: {if: =media.width, less-than: 360, then: 248, else: {if: =media.width, more-than: 484, then: 248, else: 248}},
+				width: {$switch: [
+					{if: =media.width, less-than: 360, then: 236},
+					{if: =media.width, more-than: 484, then: 484},
+					236
+				]}
+			}
+        }}
+		]
+    }</style>
+
+    <style>{
+        #headline_container:{
+            background-color: #fff
+        },
+        #election_container:{
+            padding: [12, 12, -20, 12],
+            text-align: center,
+            background-color: #dfe7df,
+            display: {if: =app.push.tags.topic.politics, then: none, else: inherit},
+            top: 600,
+            width: 340
+        },
+        .banner_headline: {
+            padding: [15, 24, 16, 24],
+            font-name: "WhitneySSm-Medium",
+            color: #4f5757,
+            line-height: 22,
+            font-size: 16
+        },
+        .banner_caption: {
+            padding: [5, 24, 24, 24],
+            font-name: WhitneySSm-Book,
+            font-size: 16,
+            line-height: 22,
+            color: #4f5757,
+            content: "Tap the bell to manage your notifications",
+            text-align: center
+        }
+    }
+    </style>
+
+    <box id="election_container" class="tablet_only column4 positionx1">
+    <box id="headline_container">
+        <p id="banner_headline" class="banner_headline"><a id="banner_headline" href="subscribe://tag-string?tag-group"><span class="banner_headline">FOLLOW ELECTION 2016</span><mark class="space"/></a></p>
+    </box>
+        <p id="banner_caption" class="banner_caption"><mark class="banner_caption" /></p>
+    </box>
+
+    <panel id="header_top">
+        <p class="article_headline"><span embed="headline"/></p>
+		<h2 class="article_subhed" embed="subhed" />
+	</panel>
+
+	<panel id="body_container">
+		<box id="media_container">
+			<p id="media_title"><mark id="mark_media_title"/></p>
+			<p id="media_vr_header"><mark id="mark_media_vr_header"/></p>
+			<box id="media_asset" embed="media"/>
+			<p id="media_vr_footer"><mark id="mark_media_vr_footer"/></p>
+			<p id="media_caption"><mark id="mark_caption" /></p>
+			<p id="media_vr_link"><a href="http://wsj.com/virtual-reality"><mark id="mark_media_vr_link"/></a></p>
+		</box>
+		<p class="module_flashline" embed="flashline"/>
+    	<p class="byline" embed="byline"/>
+		<p class="border-p"><mark class="border-mark"/></p>
+		<panel class="article_body" embed="body"/>
+	</panel>
+</jpml>

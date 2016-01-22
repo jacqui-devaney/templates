@@ -879,6 +879,47 @@
         ]
       },
       {
+        "filename": "SECTION-6-election-story_template.xml",
+        "title": "6 story - G photo",
+        "usage": "front",
+        "boxes": [
+          {
+            "id": "b1",
+            "images": {
+              "tablet": {
+                "width": 484,
+                "height": 322
+              }
+            }
+          },
+          {
+            "id": "b2",
+            "images": {
+              "tablet": {
+                "width": 292,
+                "height": 195
+              }
+            }
+          },
+          {
+            "id": "b3",
+            "images": {}
+          },
+          {
+            "id": "b4",
+            "images": {}
+          },
+          {
+            "id": "b5",
+            "images": {}
+          },
+          {
+            "id": "b6",
+            "images": {}
+          }
+        ]
+      },
+      {
         "filename": "SECTION-6story-deco_template.xml",
         "title": "6 story plus deco",
         "usage": "front",

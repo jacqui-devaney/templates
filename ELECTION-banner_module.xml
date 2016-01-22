@@ -18,20 +18,16 @@
             #election_container:{
                 background-color: #dfe7df
             },
-			.banner_headline: {
-                padding: [11, 24, 0, 24],
+            .banner_headline: {
                 font-name: "ChronicleSSm-Medium",
-                content: "Follow Election 2016",
                 line-height: 22,
+                color: #3b4343,
                 font-size: 16
-
-			},
+            },
 			.banner_caption: {
-                padding: [0, 24, 22, 24],
                 font-name: WhitneySSm-Book,
                 font-size: 16,
-                line-height: 22,
-                content: "Tap the bell in sections to manage your notifications"
+                line-height: 22
 			}
         }
     </style>

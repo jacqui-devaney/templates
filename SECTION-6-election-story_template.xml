@@ -1,0 +1,206 @@
+<jpml id="SECTION-6story_template">
+	<style src="GLOBAL-stylesheet.ejs"/>
+    <style src="GRID-stylesheet.ejs"/>
+	<style src="ADVERTISING-stylesheet.ejs"/>
+    <style src="PHONE-stylesheet.ejs"/>
+	<style src="RAIL-stylesheet.ejs" />
+	<style src="FRONT-stylesheet.ejs"/>
+	<style>{
+		#page_details: {
+			options: {
+				tintTitle: true
+			}
+		}
+	}</style>
+	<style> {
+		$switch: [
+			{if: =scale.rail, then: {
+
+			}},
+			{if: =scale.phone, then: {
+                #b1 : {
+                 height:{
+                    if: =view.width, more-than: 320, then:{
+                        if: {$count:[=articles.b1.images.phone]},
+                        more-than: 0,
+                        then: {$multiply: [=view.width, 1.135]},
+                        else: {$multiply: [=view.width, 0.6]}
+                        }, else: {
+                        if: {$count:[=articles.b1.images.phone]},
+                        more-than: 0,
+                        then: {$multiply: [=view.width, 1.32]},
+                        else: {$multiply: [=view.width, 0.6]}
+                    }
+                },
+                    padding: [{if: {$count:[=articles.b1.images.phone]}, more-than: 0, then: 0, else: 22}, 0, 0, 0],
+                    options: { bind: {if: =articles.b1.no_binding, then: none}, show_body: true, medium_headline: true, module: url(TOP-IMAGE_module.xml) }
+                },
+				#b2:	{
+                    height: =size.continuation_height_large,
+					options:{ bind: {if: =articles.b2.no_binding, then: none} }
+				},
+				#b3:	{
+                    height: =size.continuation_height_large,
+					options:{ bind: {if: =articles.b3.no_binding, then: none} }
+				},
+				#b4:	{
+                    height: =size.continuation_height_large,
+					options:{ bind: {if: =articles.b4.no_binding, then: none} }
+				},
+				#b5:	{
+                    height: =size.continuation_height_large,
+					options:{ bind: {if: =articles.b5.no_binding, then: none} }
+				},
+				#b6:	{
+                    height: =size.continuation_height_large,
+					options:{ bind: {if: =articles.b6.no_binding, then: none} }
+				}
+			}},
+			{if: =portrait, then: {
+				#b1:	{
+					top:0,
+					height:582,
+					options:{ bind: {if: =articles.b1.no_binding, then: none}, large_headline:true, show_image:true}
+				},
+				#b2:	{
+					top:586,
+					height:219,
+					options:{ bind: {if: =articles.b2.no_binding, then: none}, medium_headline:true, show_body:true, top_border:true, show_flashline:true}
+				},
+				#b3:	{
+					top:586,
+					height:219,
+					options:{ bind: {if: =articles.b3.no_binding, then: none}, medium_headline:true, show_body:true, top_border:true, show_flashline:true}
+				},
+                #election_container:{
+                    background-color: #dfe7df,
+                    height: 180,
+                    display: {if: =app.push.tags.topic.politics, then: none, else: inherit}
+                },
+                .banner_headline: {
+                    font-name: "ChronicleSSm-Medium",
+                    content: "Follow Election 2016",
+                    line-height: 22,
+                    color: #3b4343,
+                    font-size: 16,
+                    padding: [40, 0, 0, 22]
+                },
+                .banner_caption: {
+                    font-name: WhitneySSm-Book,
+                    font-size: 16,
+                    color: #4f5757,
+                    line-height: 22,
+                    content: "Tap the bell in sections to manage your notifications",
+                    padding: [6, 0, 0, 22]
+                },
+				#b4:	{
+					top:187,
+					height:196,
+					options:{ bind: {if: =articles.b4.no_binding, then: none}, medium_headline:true, top_border:true, show_flashline:true}
+
+				},
+				#b5:	{
+					top:386,
+					height:196,
+					options:{ bind: {if: =articles.b5.no_binding, then: none}, medium_headline:true, top_border:true, show_flashline:true}
+
+				},
+				#b6:	{
+					top:586,
+					height:219,
+					options:{ bind: {if: =articles.b6.no_binding, then: none}, medium_headline:true, top_border:true, show_flashline:true}
+				},
+                #footer: {
+                    top: 820,
+                    height: 100,
+                    text-align: center
+                }
+			}},
+			{if: =landscape, then: {
+				#b1:	{
+					top:0,
+					height:563,
+					options:{ bind: {if: =articles.b1.no_binding, then: none}, large_headline:true, show_image:true}
+				},
+				#b2:	{
+					top:0,
+					height:165,
+					options:{ bind: {if: =articles.b2.no_binding, then: none}, medium_headline:true, bottom_border:true, show_body:true, show_flashline:true}
+				},
+				#b3:	{
+					top:175,
+					height:175,
+					options:{ bind: {if: =articles.b3.no_binding, then: none}, medium_headline:true, top_border:false, show_flashline:true}
+				},
+                 #election_container:{
+                    background-color: #dfe7df,
+                    height: 165,
+                    display: {if: =app.push.tags.topic.politics, then: none, else: inherit}
+                },
+                .banner_headline: {
+                    font-name: "ChronicleSSm-Medium",
+                    content: "Follow Election 2016",
+                    line-height: 22,
+                    color: #3b4343,
+                    font-size: 16,
+                    padding: [40, 0, 0, 22]
+                },
+                .banner_caption: {
+                    font-name: WhitneySSm-Book,
+                    font-size: 16,
+                    color: #4f5757,
+                    line-height: 22,
+                    content: "Tap the bell in sections to manage your notifications",
+                    padding: [6, 0, 0, 22]
+                },
+
+				#b4:	{
+					top:345,
+					height:220,
+					options:{ bind: {if: =articles.b4.no_binding, then: none}, medium_headline:true, top_border:true, show_flashline:true}
+				},
+				#b5:	{
+					top:175,
+					height:175,
+					options:{ bind: {if: =articles.b5.no_binding, then: none}, medium_headline:true, top_border:false, show_flashline:true}
+				},
+				#b6:	{
+					top:345,
+					height:220,
+					options:{ bind: {if: =articles.b6.no_binding, then: none}, medium_headline:true, top_border:true, show_flashline:true}
+                },
+                #footer: {
+                    top: 570,
+                    height: 100,
+                    text-align: center,
+                    options:{bind: none, top_border: true}
+                }
+			}}
+		]
+	} </style>
+	<box id="page_details" class="tablet_only" embed="pagedescription" />
+
+	<box id="b1" embed="article" class="column8 positionx1 maude unit_plain" module="TOP-IMAGE_module.xml" />
+	<box id="b2" embed="article" class="column4 positionx9-1 maude unit_plain" module="RIGHT-IMAGE_module.xml" />
+
+	<box id="b3" embed="article" class="column4 positionx9-5 maude unit_plain" module="TOP-IMAGE_module.xml" />
+    <box id="election">
+	<box id="election_container" embed="article" class="column4 positionx13-9 maude unit_plain" module="ELECTION-banner_module.xml">
+            <p id="headline" class="banner_headline"><mark class="banner_headline" /></p>
+        	<p id="banner_caption" class="banner_caption"><mark class="banner_caption" /></p>
+    </box>
+    </box>
+	<box id="b4" embed="article" class="column4 positionx9 maude unit_plain" module="TOP-IMAGE_module.xml" />
+	<box id="b5" embed="article" class="column4 positionx13-9 maude unit_plain" module="TOP-IMAGE_module.xml" />
+	<box id="b6" embed="article" class="column4 positionx13-9 maude unit_plain" module="TOP-IMAGE_module.xml" />
+	<box id="front_page" class="tablet_only positionx_full column_full maude unit_ad">
+		<box id="banner_ad" class="ad-banner front_ad" embed="advertisement" />
+	</box>
+
+    <box id="footer" class="tablet_only column16-12 positionx1" module="RAIL-footer_module.xml">
+		<box id="footerstrapinner">
+        <p id="footer_headline" class="footer_headline">Did You Know?</p>
+		<p id="footer_tip"><mark id="footer_tip" /></p>
+        </box>
+    </box>
+</jpml>

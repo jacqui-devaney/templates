@@ -82,6 +82,17 @@
                     line-height: 22,
                     content: "Tap the bell in sections to manage your notifications"
                 },
+                #electionimage: {
+                    background-image: "url(arrow@2x.png)",
+                    background-position: aspect-fit,
+                    left: {$switch: [
+                    {if: =view.width, equals: 320, then: 280},
+                    {if: =view.width, equals: 375, then: 336},
+                    {if: =view.width, equals: 414, then: 370}]},
+                    height: 64,
+                    width: 16,
+                    top: -85
+                },
 				#page_details: {
 					display: none
 				},
@@ -110,7 +121,7 @@
                             else: {$multiply: [=view.width, 0.6]}
                         }
                     },
-                    padding: [{if: {$count:[=articles.b1.images.phone]}, more-than: 0, then: 0, else: 22}, 4, 0, 4],
+                    padding: [{if: {$count:[=articles.b1.images.phone]}, more-than: 0, then: 0, else: 22}, 0, 0, 0],
 					options: { bind: {if: =articles.b1.no_binding, then: none}, show_body: true, medium_headline: true, module: url(TOP-IMAGE_module.xml) }
 				},
                 #b2 : {
@@ -522,6 +533,7 @@
 	<box id="election_container" embed="article" class="maude unit_166" module="ELECTION-banner_module.xml">
             <p id="headline" class="banner_headline"><mark class="banner_headline" /></p>
         	<p id="banner_caption" class="banner_caption"><mark class="banner_caption" /></p>
+            <panel id="electionimage-panel"><box id="electionimage" /></panel>
     </box>
     </box>
 

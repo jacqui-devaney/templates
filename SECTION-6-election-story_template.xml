@@ -65,7 +65,7 @@
 				#b2:	{
 					top:586,
 					height:219,
-                    options:{ bind: {if: =articles.b2.no_binding, then: none}, medium_headline:true, top_border:true, show_body:true, show_flashline:true, module: {if: =app.push.tags.topic.politics, then: url(TOP-IMAGE_module.xml)}}
+                    options:{ bind: {if: =articles.b2.no_binding, then: none}, medium_headline:true, top_border:true, show_body:true, show_flashline:true, module: {if: =app.push.tags.topic.politics, then: url(RIGHT-IMAGE_module.xml), else: url(TOP-IMAGE_module.xml)}}
 				},
 				#b3:	{
 					top:586,
@@ -83,7 +83,7 @@
                     line-height: 22,
                     color: #3b4343,
                     font-size: 16,
-                    padding: [10, 0, 0, 22]
+                    padding: [20, 0, 0, 22]
                 },
                 .banner_caption: {
                     font-name: WhitneySSm-Book,
@@ -91,17 +91,17 @@
                     color: #4f5757,
                     line-height: 22,
                     content: "Tap the bell to manage your notifications",
-                    padding: [6, 0, 0, 22]
+                    padding: [10, 0, 0, 22]
                 },
 				#b4:	{
                     top: {if: =app.push.tags.topic.politics, then: 0, else: 127},
-                    height: {if: =app.push.tags.topic.politics, then: 291, else: 237},
+                    height: {if: =app.push.tags.topic.politics, then: 291, else: 210},
                     options:{ bind: {if: =articles.b4.no_binding, then: none}, medium_headline:true, top_border: {if: =app.push.tags.topic.politics, then: false, else: true}, show_flashline:true}
 
 				},
 				#b5:	{
-                    top: {if: =app.push.tags.topic.politics, then: 300, else: 344},
-                    height: {if: =app.push.tags.topic.politics, then: 280, else: 237},
+                    top: {if: =app.push.tags.topic.politics, then: 300, else: 324},
+                    height: {if: =app.push.tags.topic.politics, then: 280, else: 260},
 					options:{ bind: {if: =articles.b5.no_binding, then: none}, medium_headline:true, top_border:true, show_flashline:true}
 
 				},
@@ -125,16 +125,16 @@
 				#b2:	{
 					top:0,
 					height:165,
-                    options:{ bind: {if: =articles.b2.no_binding, then: none}, medium_headline:true, bottom_border:true, show_body:true, show_flashline:true}
+                    options:{ bind: {if: =articles.b2.no_binding, then: none}, medium_headline:true, bottom_border:true, show_body:true, show_flashline:true, module: {if: =app.push.tags.topic.politics, then: url(RIGHT-IMAGE_module.xml), else: url(TOP-IMAGE_module.xml)}}
                 },
 				#b3:	{
 					top:175,
 					height:175,
-					options:{ bind: {if: =articles.b3.no_binding, then: none}, medium_headline:true, top_border:false, show_flashline:true}
+					options:{ bind: {if: =articles.b3.no_binding, then: none}, medium_headline:true, top_border:true, show_flashline:true}
 				},
                  #election_container:{
                     background-color: #dfe7df,
-                    height: 112,
+                    height: 160,
                     display: {if: =app.push.tags.topic.politics, then: none, else: inherit}
                 },
                 .banner_headline: {
@@ -151,7 +151,7 @@
                     color: #4f5757,
                     line-height: 22,
                     content: "Tap the bell in sections to manage your notifications",
-                    padding: [6, 0, 0, 22]
+                    padding: [6, 22, 0, 22]
                 },
 
 				#b4:	{
@@ -162,7 +162,7 @@
 				#b5:	{
 					top:175,
 					height:175,
-					options:{ bind: {if: =articles.b5.no_binding, then: none}, medium_headline:true, top_border:false, show_flashline:true}
+					options:{ bind: {if: =articles.b5.no_binding, then: none}, medium_headline:true, top_border:true, show_flashline:true}
 				},
 				#b6:	{
 					top:345,
@@ -181,7 +181,7 @@
 	<box id="page_details" class="tablet_only" embed="pagedescription" />
 
 	<box id="b1" embed="article" class="column8 positionx1 maude unit_plain" module="TOP-IMAGE_module.xml" />
-	<box id="b2" embed="article" class="column8-4 positionx9-1 maude unit_plain" module="RIGHT-IMAGE_module.xml" />
+	<box id="b2" embed="article" class="column4 positionx9-1 maude unit_plain" module="RIGHT-IMAGE_module.xml" />
 
 	<box id="b3" embed="article" class="column4 positionx9-5 maude unit_plain" module="TOP-IMAGE_module.xml" />
     <box id="election">

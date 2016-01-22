@@ -60,14 +60,14 @@
 			{if: =scale.phone, then: {
                 #election_container:{
                     background-color: #dfe7df,
-                    height: 100,
-                    display: {if: =app.push.tags.topic.politics, then: none, else: inherit}
+                    display: {if: =app.push.tags.topic.politics, then: none, else: inherit},
+                    height: 112
                 },
                 #election:{
                     padding: [0, 4, 22, 4]
                 },
                 .banner_headline: {
-                    padding: [11, 72, 0, 24],
+                    padding: [22, 72, 0, 24],
                     font-name: "ChronicleSSm-Medium",
                     content: "Follow Election 2016",
                     line-height: 22,
@@ -75,7 +75,7 @@
                     font-size: 16
                 },
                 .banner_caption: {
-                    padding: [0, 72, 22, 24],
+                    padding: [0, 72, 0, 24],
                     font-name: WhitneySSm-Book,
                     font-size: 16,
                     color: #4f5757,
@@ -91,7 +91,7 @@
                     {if: =view.width, equals: 414, then: 370}]},
                     height: 64,
                     width: 16,
-                    top: -85
+                    top: -64
                 },
 				#page_details: {
 					display: none

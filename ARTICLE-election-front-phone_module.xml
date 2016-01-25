@@ -50,30 +50,30 @@
 
     <style>{
         #headline_container:{
-            background-color: #fff
+            background-color: #4f5757
         },
         #election_container:{
             padding: [12, 12, 12, 12],
-            background-color: #red,
             text-align: center,
             background-color: #dfe7df,
             display: {if: =app.push.tags.topic.politics, then: none, else: inherit}
         },
         .banner_headline: {
-            padding: [15, 24, 16, 24],
+            padding: [15, {if: =view.width, more-than: 320, then: 76, else: 44}, 16, {if: =view.width, more-than: 320, then: 76, else: 44}],
             font-name: "WhitneySSm-Medium",
-            color: #4f5757,
+            color: #fff,
             line-height: 22,
-            font-size: 16
+            font-size: 16,
+            width: 48
         },
         .banner_caption: {
-            padding: [12, 24, 22, 24],
+            padding: [12, 24, 0, 24],
             font-name: WhitneySSm-Book,
             font-size: 16,
             line-height: 22,
             color: #4f5757,
-            content: "Tap the bell to manage your notifications",
-            text-align: center
+            text-align: center,
+            content: "to manage your notifications"
         }
     }
     </style>
@@ -84,8 +84,8 @@
     <box id="headline_container">
         <p id="banner_headline" class="banner_headline"><a id="banner_headline" href="subscribe:politics?tag-group=topic"><span class="banner_headline">FOLLOW ELECTION 2016</span><mark class="space"/></a></p>
     </box>
-        <p id="banner_caption" class="banner_caption"><mark class="banner_caption" /></p>
-    </panel>
+    <p id="banner_caption" class="banner_caption">Tap the BELL <mark class="banner_caption" /></p>
+</panel>
 
 	<panel id="header_top">
 		<p class="article_headline"><span embed="headline"/></p>

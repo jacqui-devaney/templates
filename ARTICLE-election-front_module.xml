@@ -52,7 +52,7 @@
 
     <style>{
         #headline_container:{
-            background-color: #fff
+            background-color: #4f5757
         },
         #election_container:{
             padding: [12, 12, -20, 12],
@@ -65,7 +65,7 @@
         .banner_headline: {
             padding: [15, 24, 16, 24],
             font-name: "WhitneySSm-Medium",
-            color: #4f5757,
+            color: #fff,
             line-height: 22,
             font-size: 16
         },

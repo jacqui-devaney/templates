@@ -74,7 +74,7 @@
 				},
                 #election_container:{
                     background-color: #dfe7df,
-                    display: {if: =app.push.tags.topic.politics, then: none, else: inherit},
+                    display: {if: =app.push.tags.topic.politics, then: none, else: {if: =app.version, less-than: "7.4", then: none, else: inherit}},
                     height: 112
                 },
                 .banner_headline: {
@@ -94,14 +94,14 @@
                     padding: [10, 0, 0, 22]
                 },
 				#b4:	{
-                    top: {if: =app.push.tags.topic.politics, then: 0, else: 127},
-                    height: {if: =app.push.tags.topic.politics, then: 291, else: 210},
+                    top: {if: =app.push.tags.topic.politics, then: 0, else: {if: =app.version, less-than: "7.4", then: 0, else: 127}},
+                    height: {if: =app.push.tags.topic.politics, then: 291, else: {if: =app.version, less-than: "7.4", then: 291, else: 210}},
                     options:{ bind: {if: =articles.b4.no_binding, then: none}, medium_headline:true, top_border: {if: =app.push.tags.topic.politics, then: false, else: true}, show_flashline:true}
 
 				},
 				#b5:	{
-                    top: {if: =app.push.tags.topic.politics, then: 300, else: 324},
-                    height: {if: =app.push.tags.topic.politics, then: 280, else: 260},
+                    top: {if: =app.push.tags.topic.politics, then: 300, else: {if: =app.version, less-than: "7.4", then: 300, else: 324}},
+                    height: {if: =app.push.tags.topic.politics, then: 280, else: {if: =app.version, less-than: "7.4", then: 280, else: 260}},
 					options:{ bind: {if: =articles.b5.no_binding, then: none}, medium_headline:true, top_border:true, show_flashline:true}
 
 				},
@@ -125,8 +125,8 @@
 				#b2:	{
 					top:0,
 					height:165,
-                    width: {if: =app.push.tags.topic.politics, then: 484, else: 174},
-                    options:{ bind: {if: =articles.b2.no_binding, then: none}, medium_headline:true, show_body:true, show_flashline:true, module: {if: =app.push.tags.topic.politics, then: url(RIGHT-IMAGE_module.xml), else: url(TOP-IMAGE_module.xml)}}
+                    width: {if: =app.push.tags.topic.politics, then: 484, else: {if: =app.version, less-than: "7.4", then: 484, else: 174}},
+                    options:{ bind: {if: =articles.b2.no_binding, then: none}, medium_headline:true, show_body:true, show_flashline:true, module: {if: =app.push.tags.topic.politics, then: url(RIGHT-IMAGE_module.xml), else: {if: =app.version, less-than: "7.4", then: url(RIGHT-IMAGE_module.xml), else: url(TOP-IMAGE_module.xml)}}}
                 },
 				#b3:	{
 					top:175,

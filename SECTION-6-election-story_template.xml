@@ -65,7 +65,7 @@
 				#b2:	{
 					top:586,
 					height:219,
-                    options:{ bind: {if: =articles.b2.no_binding, then: none}, medium_headline:true, top_border:true, show_body:true, show_flashline:true, module: {if: =app.push.tags.topic.politics, then: url(RIGHT-IMAGE_module.xml), else: url(TOP-IMAGE_module.xml)}}
+                    options:{ bind: {if: =articles.b2.no_binding, then: none}, medium_headline:true, top_border:true, show_body:true, show_flashline:true, module: {if: =app.push.tags.topic.politics, then: url(TOP-IMAGE_module.xml), else: url(TOP-IMAGE_module.xml)}}
 				},
 				#b3:	{
 					top:586,
@@ -125,7 +125,8 @@
 				#b2:	{
 					top:0,
 					height:165,
-                    options:{ bind: {if: =articles.b2.no_binding, then: none}, medium_headline:true, bottom_border:true, show_body:true, show_flashline:true, module: {if: =app.push.tags.topic.politics, then: url(RIGHT-IMAGE_module.xml), else: url(TOP-IMAGE_module.xml)}}
+                    width: {if: =app.push.tags.topic.politics, then: 484, else: 174},
+                    options:{ bind: {if: =articles.b2.no_binding, then: none}, medium_headline:true, show_body:true, show_flashline:true, module: {if: =app.push.tags.topic.politics, then: url(RIGHT-IMAGE_module.xml), else: url(TOP-IMAGE_module.xml)}}
                 },
 				#b3:	{
 					top:175,
@@ -181,7 +182,7 @@
 	<box id="page_details" class="tablet_only" embed="pagedescription" />
 
 	<box id="b1" embed="article" class="column8 positionx1 maude unit_plain" module="TOP-IMAGE_module.xml" />
-	<box id="b2" embed="article" class="column4 positionx9-1 maude unit_plain" module="RIGHT-IMAGE_module.xml" />
+	<box id="b2" embed="article" class="column4 positionx9-1 maude unit_plain" module="TOP-IMAGE_module.xml" />
 
 	<box id="b3" embed="article" class="column4 positionx9-5 maude unit_plain" module="TOP-IMAGE_module.xml" />
     <box id="election">

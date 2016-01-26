@@ -90,7 +90,7 @@
 				},
                 #b2 : {
                     height: =size.continuation_height_large,
-                    options: { bind: {if: =articles.b2.no_binding, then: none}, show_body: true, small_headline: true, module: url(CONTINUATION-dynamic_module.xml) }
+                    options: { bind: {if: =articles.b2.no_binding, then: none}, show_body: true, small_headline: true, module: url(CONTINUATION-dynamic_module.xml), show_flashline: true }
 				},
 				#b3 : {
                     height: =size.continuation_height_large,

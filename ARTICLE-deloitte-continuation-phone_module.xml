@@ -18,7 +18,29 @@
 		{#body_continuation: {
 			content: from-flow(article_body),
 			flow: article_body
-		}}
+        }},
+		{if: =portrait, then: {
+			#media: {
+				top: 0,
+				left:{if: =media.width, less-than: 360, then: 0, else: {if: =media.width, more-than: 484, then: 0, else: 0}},
+				width: {$switch: [
+					{if: =media.width, less-than: 360, then: 236},
+					{if: =media.width, more-than: 484, then: 484},
+					236
+				]}
+			}
+        }, else: {
+			#media: {
+				top: 0,
+				left:{if: =media.width, less-than: 360, then: 248, else: {if: =media.width, more-than: 484, then: 248, else: 248}},
+				width: {$switch: [
+					{if: =media.width, less-than: 360, then: 236},
+					{if: =media.width, more-than: 484, then: 484},
+					236
+				]}
+			}
+        }}
+		]
 		]
     }</style>
 

@@ -11,40 +11,45 @@
 		{#body_container : { padding: [0, 10, 0, 10]}},
 		{.article_body: {
 			line-height: {$multiply: [22, =view.zoomlevel]},
-			text-align: justify,
-			hyphens: auto,
-			font-name: "Whitney-Medium"
+			text-align: left,
+            hyphens: auto
         }},
 		{#body_continuation: {
 			content: from-flow(article_body),
 			flow: article_body
         }},
-		{if: =portrait, then: {
-			#media: {
-				top: 0,
-				left:{if: =media.width, less-than: 360, then: 0, else: {if: =media.width, more-than: 484, then: 0, else: 0}},
-				width: {$switch: [
-					{if: =media.width, less-than: 360, then: 236},
-					{if: =media.width, more-than: 484, then: 484},
-					236
-				]}
-			}
-        }, else: {
-			#media: {
-				top: 0,
-				left:{if: =media.width, less-than: 360, then: 248, else: {if: =media.width, more-than: 484, then: 248, else: 248}},
-				width: {$switch: [
-					{if: =media.width, less-than: 360, then: 236},
-					{if: =media.width, more-than: 484, then: 484},
-					236
-				]}
-			}
+        {#media_caption: {
+            padding: [8, 0, 0, 0]
+        }},
+        {#media_container: {
+            padding: [0, 0, 22, 0]
+        }},
+        {#media_credit: {
+            text-transform: uppercase,
+            padding: [0, 0, 0, 0]
+        }},
+        {#list-item :{
+            padding: [0, 0, 22, 0]
         }}
 		]
-		]
     }</style>
+
+    <box id="prototype">
+        <box id="media-item-prototype">
+        	<box id="media_container">
+        		<p id="media_title"><mark id="mark_media_title"/></p>
+        		<p id="media_vr_header"><mark id="mark_media_vr_header"/></p>
+	            <box id="media_asset" embed="media"/>
+        		<p id="media_vr_footer"><mark id="mark_media_vr_footer"/></p>
+	            <p id="media_caption"><mark id="mark_caption" /></p>
+                <p id="media_credit"><mark id="mark_credit"/></p>
+	            <p id="media_vr_link"><a href="http://wsj.com/virtual-reality"><mark id="mark_media_vr_link"/></a></p>
+	        </box>
+        </box>
+    </box>
 
 	<panel id="body_container">
     	<panel class="article_body" id="body_continuation" embed="body" />
 	</panel>
+
 </jpml>

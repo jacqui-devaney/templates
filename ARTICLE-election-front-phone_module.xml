@@ -87,16 +87,15 @@
             color: #4f5757,
             position: absolute,
             anchor-y: top,
-            padding: [-33, 0, 24, 100]
+            padding: [-33, 0, 0, 100]
         },
         .notifications: {
             font-name: WhitneySSm-Book,
             font-size: 16,
-            line-height: 22,
             color: #4f5757,
             position: absolute,
             text-align: center,
-            padding: [0, 24, 0, 34]
+            padding: [0, 24, 8, 34]
         },
         #bell: {
             background-image: "url(thickBell_promo.png)",

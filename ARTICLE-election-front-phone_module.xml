@@ -98,18 +98,18 @@
             padding: [0, 24, 8, 34]
         },
         #bell: {
-            background-image: "url(thickBell_promo.png)",
+            background-image: "url(thickBell_promo@3x.png)",
             width: 24,
             height: 24,
+            background-position: aspect-fit,
             position: absolute,
-            top: 5,
-            left: {if: =view.width, equals: 414, then: 150, else: {if: =view.width, equals: 320, then: 106, else: 133 }}
+            top: 8,
+            left: {if: =view.width, equals: 414, then: 150, else: {if: =view.width, equals: 320, then: 110, else: 133 }}
 
         }
     }
     </style>
 
-	<p class="article_flashline" embed="flashline"/>
 
     <box id="election">
     <panel id="election_container">
@@ -123,6 +123,8 @@
         </panel>
     </panel>
     </box>
+
+	<p class="article_flashline" embed="flashline"/>
 
 	<panel id="header_top">
 		<p class="article_headline"><span embed="headline"/></p>

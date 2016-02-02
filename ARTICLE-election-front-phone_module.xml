@@ -63,7 +63,7 @@
             display: {if: =app.push.tags.topic.politics, then: none, else: inherit}
         },
         .banner_headline: {
-            padding: [15, {if: =view.width, more-than: 320, then: 56, else: 44}, 16, {if: =view.width, more-than: 320, then: 56, else: 44}],
+        padding: [15, {if: =view.width, equals: 375, then: 56, else: {if: =view.width, equals: 414, then: 84, else: 44}}, 16, {if: =view.width, equals: 375, then: 56, else: {if: =view.width, equals: 414, then: 84, else: 44}}],
             font-name: "WhitneySSm-Medium",
             color: #fff,
             line-height: 22,
@@ -73,7 +73,7 @@
             width: 48
         },
         .banner_caption: {
-            padding: [12, 24, 0, 70],
+            padding: [12, 24, 0, {if: =view.width, equals: 414, then: 86, else: {if: =view.width, equals: 320, then: 45, else: 70}}],
             font-name: WhitneySSm-Book,
             font-size: 16,
             line-height: 22,
@@ -103,7 +103,8 @@
             height: 24,
             position: absolute,
             top: 5,
-            left: 133
+            left: {if: =view.width, equals: 414, then: 150, else: {if: =view.width, equals: 320, then: 106, else: 133 }}
+
         }
     }
     </style>

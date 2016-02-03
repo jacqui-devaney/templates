@@ -23,7 +23,7 @@
             font-size: 13,
             line-height: 22,
             border-width: [0, 0, 1, 0],
-            border-color: {if: =app.push.tags.topic.politics, then: #e1e0df, else: #fff}
+            border-color: #e1e0df
         },
         #media_container:{
             padding: [0, 0, 19, 0]
@@ -53,8 +53,7 @@
             background-color: #4f5757
         },
         #election: {
-            top: 44,
-            padding: [0, 4, 0, 4]
+            padding: [4, 4, 0, 4]
         },
         #election_container:{
             padding: [12, 12, 12, 12],
@@ -63,11 +62,11 @@
             display: {if: =app.push.tags.topic.politics, then: none, else: inherit}
         },
         .banner_headline: {
-        padding: [15, {if: =view.width, equals: 375, then: 56, else: {if: =view.width, equals: 414, then: 84, else: 44}}, 16, {if: =view.width, equals: 375, then: 56, else: {if: =view.width, equals: 414, then: 84, else: 44}}],
-            font-name: "WhitneySSm-Medium",
+            padding: [8, {if: =view.width, equals: 375, then: 90, else: {if: =view.width, equals: 414, then: 99, else: 44}}, 10, {if: =view.width, equals: 375, then: 90, else: {if: =view.width, equals: 414, then: 99, else: 44}}],
+            font-name: "WhitneySSm-Semibold",
             color: #fff,
             line-height: 22,
-            font-size: 16,
+            font-size: 12,
             text-align: center,
             position: relative,
             width: 48
@@ -104,7 +103,7 @@
             background-position: aspect-fit,
             position: absolute,
             top: 8,
-            left: {if: =view.width, equals: 414, then: 150, else: {if: =view.width, equals: 320, then: 110, else: 133 }}
+            left: {if: =view.width, equals: 414, then: 150, else: {if: =view.width, equals: 320, then: 106, else: 133 }}
 
         }
     }

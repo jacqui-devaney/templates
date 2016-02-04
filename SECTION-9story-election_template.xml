@@ -162,7 +162,8 @@
 			{if: =portrait, then: {
                 #election_container:{
                     background-color: #dfe7df,
-                    top: 30
+                    top: 30,
+                    display: {if: =app.push.tags.topic.politics, then: none, else: inherit}
                 },
                 .banner_headline: {
                     font-name: "ChronicleSSm-Medium",
@@ -195,8 +196,8 @@
                     right: 438
                 },
 				#b1:	{
-					top:120,
-					height:440,
+                    top: {if: =app.push.tags.topic.politics, then: 30, else: 120},
+                    height: {if: =app.push.tags.topic.politics, then: 530,else: 440},
 					options: { bind: {if: =articles.b1.no_binding, then: none}, module: url(TOP-IMAGE_module.xml)}
                 },
 				#b2:	{
@@ -220,18 +221,18 @@
 					options: { bind: {if: =articles.b5.no_binding, then: none} }
 				},
 				#b6:	{
-					top:340,
-					height:120,
+                    top: {if: =app.push.tags.topic.politics, then: 320, else: 340},
+                    height: {if: =app.push.tags.topic.politics, then: 135, else: 120},
 					options: { bind: {if: =articles.b6.no_binding, then: none} }
 				},
 				#b7:	{
-					top:460,
-					height:140,
+                    top: {if: =app.push.tags.topic.politics, then: 465, else: 460},
+                    height: {if: =app.push.tags.topic.politics, then: 135, else: 140},
 					options: { bind: {if: =articles.b7.no_binding, then: none} }
 				},
 				#b8:	{
-					top:600,
-					height:140,
+                    top: {if: =app.push.tags.topic.politics, then: 600, else: 610},
+                    height: {if: =app.push.tags.topic.politics, then: 135, else: 140},
 					options: { bind: {if: =articles.b8.no_binding, then: none} }
 				},
 				#b9:	{
@@ -243,7 +244,8 @@
 			{if: =landscape, then: {
                 #election_container:{
                     background-color: #dfe7df,
-                    top: 20
+                    top: 20,
+                    display: {if: =app.push.tags.topic.politics, then: none, else: inherit}
                 },
                 .banner_headline: {
                     font-name: "ChronicleSSm-Medium",
@@ -275,18 +277,18 @@
                     right: 307
                 },
 				#b1:	{
-					top:20,
-					height:465,
+                    top: {if: =app.push.tags.topic.politics, then: 20, else: 30},
+                    height: 465,
 					options: { bind: {if: =articles.b1.no_binding, then: none} }
 				},
 				#b2:	{
-					top:104,
-					height:290,
+                    top: {if: =app.push.tags.topic.politics, then: 30, else: 104},
+                    height: {if: =app.push.tags.topic.politics, then: 310, else: 290},
 					options: { bind: {if: =articles.b2.no_binding, then: none} }
 				},
 				#b3:	{
-					top:104,
-					height:310,
+                    top: {if: =app.push.tags.topic.politics, then: 30, else: 104},
+                    height: {if: =app.push.tags.topic.politics, then: 310, else: 290},
 					options: { bind: {if: =articles.b3.no_binding, then: none} }
 				},
 				#b4:	{
@@ -300,13 +302,13 @@
 					options: { bind: {if: =articles.b5.no_binding, then: none} }
 				},
 				#b6:	{
-					top:395,
-					height:130,
+                    top: {if: =app.push.tags.topic.politics, then: 350, else: 395},
+                    height: {if: =app.push.tags.topic.politics, then: 145, else: 130},
 					options: { bind: {if: =articles.b6.no_binding, then: none} }
 				},
 				#b7:	{
-					top:395,
-					height:130,
+                    top: {if: =app.push.tags.topic.politics, then: 350, else: 395},
+                    height: {if: =app.push.tags.topic.politics, then: 145, else: 130},
 					options: { bind: {if: =articles.b7.no_binding, then: none} }
 				},
 				#b8:	{

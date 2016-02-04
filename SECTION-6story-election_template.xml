@@ -73,22 +73,9 @@
                     font-name: WhitneySSm-Book,
                     font-size: 16,
                     color: #4f5757,
-                    padding: [0, 0, 10, 250]
-                },
-                .cont_caption: {
-                    font-name: WhitneySSm-Book,
-                    font-size: 16,
-                    line-height: 45,
-                    color: #4f5757,
-                    padding: [-41, 0, 0, 320]
-                },
-                #bell: {
-                    background-image: "url(thickBell_promo@3x.png)",
-                    width: 24,
-                    height: 24,
-                    background-position: aspect-fit,
-                    right: 420
-
+                    text-align: center,
+                    content: "Tap the bell to manage your notifications",
+                    padding: [0, 0, 10, 22]
                 },
 				#b1:	{
                     top: 75,
@@ -146,22 +133,9 @@
                     font-name: WhitneySSm-Book,
                     font-size: 16,
                     color: #4f5757,
-                    padding: [0, 0, 10, 120]
-                },
-                .cont_caption: {
-                    font-name: WhitneySSm-Book,
-                    font-size: 16,
-                    line-height: 45,
-                    color: #4f5757,
-                    padding: [-41, 0, 0, 180]
-                },
-                #bell: {
-                    background-image: "url(thickBell_promo@3x.png)",
-                    width: 24,
-                    height: 24,
-                    background-position: aspect-fit,
-                    right: 307
-
+                    text-align: center,
+                    content: "Tap the bell to manage your notifications",
+                    padding: [0, 0, 10, 22]
                 },
 				#b1:	{
 					top:0,
@@ -208,11 +182,7 @@
     <box id="election">
 	<box id="election_container" embed="article" class="column8-12 positionx9-1 maude unit_plain" module="ELECTION-banner_module.xml">
             <p id="headline" class="banner_headline"><mark class="banner_headline" /></p>
-        <p id="banner_caption" class="banner_caption"><mark class="banner_caption" /></p>
-        <panel id="bell-panel"><box id="bell" />
-            <p id="banner_caption" class="banner_caption">Tap <mark class="banner_caption" /></p>
-            <p id="cont_caption" class="cont_caption"> to manage your notifications<mark class="cont_caption" /></p>
-        </panel>
+        	<p id="banner_caption" class="banner_caption"><mark class="banner_caption" /></p>
     </box>
     </box>
 

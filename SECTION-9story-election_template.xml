@@ -61,7 +61,7 @@
                 #election_container:{
                     background-color: #dfe7df,
                     display: {if: =app.push.tags.topic.politics, then: none, else: inherit},
-                    height: 101
+                    height: {if: =view.width, equals: 320, then: 120, else: 101}
                 },
                 #election:{
                     padding: [4, 4, 22, 4]
@@ -89,12 +89,12 @@
                     background-image: "url(arrow@2x.png)",
                     background-position: aspect-fit,
                     left: {$switch: [
-                    {if: =view.width, equals: 320, then: 210},
+                    {if: =view.width, equals: 320, then: 280},
                     {if: =view.width, equals: 375, then: 336},
                     {if: =view.width, equals: 414, then: 370}]},
-                    height: 64,
+                    height: {if: =view.width, equals: 320, then: 86, else: 64},
                     width: 16,
-                    top: -69
+                    top: {if: =view.width, equals: 320, then: -90, else: -69}
                 },
 				#page_details: {
 					display: none
@@ -176,22 +176,23 @@
                     font-name: WhitneySSm-Book,
                     font-size: 16,
                     color: #4f5757,
-                    padding: [7, 0, 10, 250]
+                    padding: [2, 0, 10, 240],
+                    content: "Tap"
                 },
                 .cont_caption: {
                     font-name: WhitneySSm-Book,
                     font-size: 16,
                     line-height: 60,
                     color: #4f5757,
-                    padding: [-50, 0, 0, 320]
+                    padding: [-49, 0, 0, 296]
                 },
                 #bell: {
                     background-image: "url(thickBell_promo@3x.png)",
                     width: 24,
                     height: 24,
-                    top: 3,
+                    top: 1,
                     background-position: aspect-fit,
-                    right: 420
+                    right: 438
                 },
 				#b1:	{
 					top:120,
@@ -242,7 +243,7 @@
 			{if: =landscape, then: {
                 #election_container:{
                     background-color: #dfe7df,
-                    top: 30
+                    top: 20
                 },
                 .banner_headline: {
                     font-name: "ChronicleSSm-Medium",
@@ -256,14 +257,15 @@
                     font-name: WhitneySSm-Book,
                     font-size: 16,
                     color: #4f5757,
-                    padding: [0, 0, 7, 120]
+                    content: "Tap",
+                    padding: [0, 0, 7, 122]
                 },
                 .cont_caption: {
                     font-name: WhitneySSm-Book,
                     font-size: 16,
                     line-height: 45,
                     color: #4f5757,
-                    padding: [-38, 0, 0, 180]
+                    padding: [-39.5, 0, 10, 180]
                 },
                 #bell: {
                     background-image: "url(thickBell_promo@3x.png)",
@@ -273,7 +275,7 @@
                     right: 307
                 },
 				#b1:	{
-					top:30,
+					top:20,
 					height:465,
 					options: { bind: {if: =articles.b1.no_binding, then: none} }
 				},
@@ -601,7 +603,7 @@
 	<box id="election_container" embed="article" class="column8-12 positionx9-1 maude unit_plain" module="ELECTION-banner_module.xml">
             <p id="headline" class="banner_headline"><mark class="banner_headline" /></p>
             <panel id="bell-panel"><box id="bell" />
-                <p id="banner_caption" class="banner_caption">Tap <mark class="banner_caption" /></p>
+                <p id="banner_caption" class="banner_caption"><mark class="banner_caption" /></p>
                 <p id="cont_caption" class="cont_caption"> to manage your notifications<mark class="cont_caption" /></p>
             </panel>
             <panel id="electionimage-panel"><box id="electionimage" /></panel>

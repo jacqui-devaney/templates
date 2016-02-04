@@ -72,7 +72,7 @@
             width: 48
         },
         .banner_caption: {
-            padding: [12, 24, 0, {if: =view.width, equals: 414, then: 86, else: {if: =view.width, equals: 320, then: 45, else: 70}}],
+            padding: [12, 24, 0, {if: =view.width, equals: 414, then: 106, else: {if: =view.width, equals: 320, then: 45, else: 94}}],
             font-name: WhitneySSm-Book,
             font-size: 16,
             line-height: 22,
@@ -86,7 +86,7 @@
             color: #4f5757,
             position: absolute,
             anchor-y: top,
-            padding: [-33, 0, 0, 100]
+            padding: [-33, 0, 0, 80]
         },
         .notifications: {
             font-name: WhitneySSm-Book,
@@ -102,8 +102,8 @@
             height: 24,
             background-position: aspect-fit,
             position: absolute,
-            top: 8,
-            left: {if: =view.width, equals: 414, then: 150, else: {if: =view.width, equals: 320, then: 106, else: 133 }}
+            top: 10,
+            left: {if: =view.width, equals: 414, then: 140, else: {if: =view.width, equals: 320, then: 106, else: 124 }}
 
         }
     }
@@ -116,7 +116,7 @@
             <p id="banner_headline" class="banner_headline"><a id="banner_headline" href="subscribe:politics?tag-group=topic"><span class="banner_headline">FOLLOW ELECTION 2016</span><mark class="space"/></a></p>
         </panel>
         <panel id="bell-panel"><box id="bell" />
-            <p id="banner_caption" class="banner_caption">Tap the <mark class="banner_caption" /></p>
+            <p id="banner_caption" class="banner_caption">Tap <mark class="banner_caption" /></p>
             <p id="cont_caption" class="cont_caption"> to manage your <mark class="cont_caption" /></p>
             <p id="notifications" class="notifications">notifications<mark class="notifications" /></p>
         </panel>

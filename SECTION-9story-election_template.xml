@@ -278,12 +278,12 @@
 					options: { bind: {if: =articles.b1.no_binding, then: none} }
 				},
 				#b2:	{
-					top:110,
+					top:104,
 					height:290,
 					options: { bind: {if: =articles.b2.no_binding, then: none} }
 				},
 				#b3:	{
-					top:110,
+					top:104,
 					height:310,
 					options: { bind: {if: =articles.b3.no_binding, then: none} }
 				},
@@ -298,13 +298,13 @@
 					options: { bind: {if: =articles.b5.no_binding, then: none} }
 				},
 				#b6:	{
-					top:425,
-					height:145,
+					top:395,
+					height:130,
 					options: { bind: {if: =articles.b6.no_binding, then: none} }
 				},
 				#b7:	{
-					top:425,
-					height:145,
+					top:395,
+					height:130,
 					options: { bind: {if: =articles.b7.no_binding, then: none} }
 				},
 				#b8:	{

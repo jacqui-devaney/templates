@@ -4,16 +4,16 @@
 	<style src="ARTICLE-stylesheet.ejs" />
 	<style src="MEDIA-stylesheet.ejs" />
 	<style>{
-		#large_media: {
+        #media_container: {
 			top: 0,
 			left: 0,
-			bottom: 0,
-			width: { if: =portrait, then: 484, else: 732 },
+			right: 0,
+            width: {if: =portrait, then: 484, else: 485},
 			options: {
 				id: =page.number,
 				hideCaption: true
 			}
-		},
+        },
 		.module_flashline: {
 			display: { if: =page.section, equals: WSJ_MAGAZINE, else: none },
             font-name:{ if: =page.section, equals: WSJ_MAGAZINE, then: "HelveticaNeue-Light" },
@@ -52,10 +52,16 @@
             font-name: { if: =page.section, equals: SPECIAL_REPORT, then: "WhitneySSm-Book" }
 		}
 	}</style>
-	<box id="large_media" embed="media"/>
-	<box id="caption_box">
-		<p id="media_caption"><mark id="mark_caption" /></p>
-	</box>
+    <box id="media_container">
+        <p id="media_title"><mark id="mark_media_title"/></p>
+        <p id="media_vr_header"><mark id="mark_media_vr_header"/></p>
+        <box id="media_asset" embed="media"/>
+        <p id="media_vr_footer"><mark id="mark_media_vr_footer"/></p>
+        <box id="media_box">
+            <p id="media_caption"><mark id="mark_caption" /></p>
+        </box>
+        <p id="media_vr_link"><a href="http://wsj.com/virtual-reality"><mark id="mark_media_vr_link"/></a></p>
+    </box>
 	<panel class="column4 positionx13-9" id="body_container">
         <p class="module_flashline" embed="flashline"/>
 		<p class="article_headline"><span embed="headline"/></p>

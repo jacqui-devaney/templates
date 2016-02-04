@@ -211,13 +211,13 @@
 					options: { bind: {if: =articles.b3.no_binding, then: none} }
 				},
 				#b4:	{
-					top:120,
-					height:120,
+                    top: {if: =app.push.tags.topic.politics, then: 30, else: 120},
+                    height: {if: =app.push.tags.topic.politics, then: 135, else: 120},
 					options: { bind: {if: =articles.b4.no_binding, then: none} }
 				},
 				#b5:	{
-					top:220,
-					height:120,
+                    top:{if: =app.push.tags.topic.politics, then: 175, else: 220},
+                    height: {if: =app.push.tags.topic.politics, then: 135, else: 120},
 					options: { bind: {if: =articles.b5.no_binding, then: none} }
 				},
 				#b6:	{

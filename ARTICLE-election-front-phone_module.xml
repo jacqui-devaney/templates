@@ -72,7 +72,7 @@
             width: 48
         },
         .banner_caption: {
-            padding: [12, 24, 0, {if: =view.width, equals: 414, then: 106, else: {if: =view.width, equals: 320, then: 45, else: 94}}],
+            padding: [12, 24, 0, {if: =view.width, equals: 414, then: 106, else: {if: =view.width, equals: 320, then: 56, else: 94}}],
             font-name: WhitneySSm-Book,
             font-size: 16,
             line-height: 22,
@@ -86,7 +86,7 @@
             color: #4f5757,
             position: absolute,
             anchor-y: top,
-            padding: [-33, 0, 0, 80]
+            padding: [-33, 0, 0, {if: =view.width, equals: 320, then: 60, else: 80}]
         },
         .notifications: {
             font-name: WhitneySSm-Book,
@@ -102,8 +102,8 @@
             height: 24,
             background-position: aspect-fit,
             position: absolute,
-            top: 10,
-            left: {if: =view.width, equals: 414, then: 140, else: {if: =view.width, equals: 320, then: 106, else: 124 }}
+            top: 9,
+            left: {if: =view.width, equals: 414, then: 140, else: {if: =view.width, equals: 320, then: 86, else: 124 }}
 
         }
     }

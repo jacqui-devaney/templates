@@ -4,17 +4,15 @@
 	<style src="ARTICLE-stylesheet.ejs" />
 	<style src="MEDIA-stylesheet.ejs" />
 	<style>{
-		#large_media: {
-			top: 0,
-			left: 0,
-			right: 0,
-			height: { if: =portrait, then: 550, else: 440 },
-			padding: [0, 0, { if: =portrait, then: 10, else: 20 }, 0],
-			options: {
-				id: =page.number,
-				hideCaption: true
-			}
-		},
+        #media_container: {
+            top: 0,
+            left: {if: =media.width, less-than: 360, then: 248, else: {if: =media.width, more-than: 484, then: 248, else: 248}},
+            width: {$switch: [
+                {if: =media.width, less-than: 360, then: 236},
+                {if: =media.width, more-than: 484, then: 484},
+                236
+            ]}
+        }
 		.module_flashline: {
 			display: { if: =page.section, equals: WSJ_MAGAZINE, else: none },
 			font-name: { if: =page.section, equals: WSJ_MAGAZINE, then: "HelveticaNeue-Light" },
@@ -33,13 +31,6 @@
 			color: { if: =page.section, equals: WSJ_MAGAZINE, then: #212121 },
 			text-transform: { if: =page.section, equals: WSJ_MAGAZINE, then: uppercase }
 		},
-		#caption_box: {
-			background-color: black,
-			position: relative,
-			left: 0,
-			right: 0,
-			bottom: 0
-		},
 		#media_caption: {
 			font-name: "DJ5Exchange-Medium",
 			font-size: 11,
@@ -52,16 +43,6 @@
 			position: relative,
 			padding: [{ if: =portrait, then: 80, else: 10 }, 120, 0, 120]
 		},
-		#hairline_panel: {
-			padding: [5, 0, 15, 0]
-		},
-		#hairline: {
-			position: relative,
-			background-color: #d8d8d8,
-			anchor-x: center,
-			width: 230,
-			height: 1
-		},
 		.article_body: {
             text-align: center,
             font-name: { if: =page.section, equals: SPECIAL_REPORT, then: "WhitneySSm-Book" }
@@ -72,13 +53,17 @@
 		}
 
 	}</style>
-	<box id="large_media" embed="media"/>
+    <box id="media_container">
+        <p id="media_title"><mark id="mark_media_title"/></p>
+        <p id="media_vr_header"><mark id="mark_media_vr_header"/></p>
+        <box id="media_asset" embed="media"/>
+        <p id="media_vr_footer"><mark id="mark_media_vr_footer"/></p>
+        <p id="media_caption"><mark id="mark_caption" /></p>
+        <p id="media_vr_link"><a href="http://wsj.com/virtual-reality"><mark id="mark_media_vr_link"/></a></p>
+    </box>
 	<box id="body_container">
         <p class="module_flashline" embed="flashline"/>
 		<p class="article_headline"><span embed="headline"/></p>
-		<panel id="hairline_panel">
-			<box id="hairline"/>
-		</panel>
 		<panel class="article_body" embed="body"/>
 	</box>
 </jpml>

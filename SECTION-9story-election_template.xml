@@ -82,9 +82,6 @@
                     line-height: 22,
                     content: "WSJ's politics team covers the 2016 U.S. Election and beyond"
                 },
-                .cont_caption:{
-                    display: none
-                },
                 #electionimage: {
                     background-image: "url(arrow@2x.png)",
                     background-position: aspect-fit,
@@ -177,37 +174,23 @@
                     font-name: WhitneySSm-Book,
                     font-size: 16,
                     color: #4f5757,
-                    padding: [5, 0, 9, 225],
-                    content: "Tap"
-                },
-                .cont_caption: {
-                    font-name: WhitneySSm-Book,
-                    font-size: 16,
-                    line-height: 60,
-                    color: #4f5757,
-                    padding: [-49, 0, 0, 284]
-                },
-                #bell: {
-                    background-image: "url(thickBell_promo@3x.png)",
-                    width: 24,
-                    height: 24,
-                    top: 1,
-                    background-position: aspect-fit,
-                    right: 452
+                    padding: [5, 0, 12, 0],
+                    text-align: center,
+                    content: "WSJ's politics team covers the 2016 U.S. Election and beyond"
                 },
 				#b1:	{
                     top: {if: =app.push.tags.topic.politics, then: 30, else: 120},
-                    height: {if: =app.push.tags.topic.politics, then: 530,else: 440},
+                    height: {if: =app.push.tags.topic.politics, then: 530, else: 480},
 					options: { bind: {if: =articles.b1.no_binding, then: none}, module: url(TOP-IMAGE_module.xml)}
                 },
 				#b2:	{
-					top:570,
-					height:340,
+                    top: {if: =app.push.tags.topic.politics, then: 570, else: 600},
+                    height: {if: =app.push.tags.topic.poltiics, then: 340, else: 300},
 					options: { bind: {if: =articles.b2.no_binding, then: none} }
 				},
 				#b3:{
-					top:570,
-					height:340,
+                    top: {if: =app.push.tags.topic.politics, then: 570, else: 600},
+                    height: {if: =app.push.tags.topic.politics, then: 340, else: 300},
 					options: { bind: {if: =articles.b3.no_binding, then: none} }
 				},
 				#b4:	{
@@ -252,74 +235,60 @@
                     content: "Follow Election 2016",
                     color: #3b4343,
                     font-size: 16,
-                    padding: [15, 0, -5, 22],
+                    padding: [16, 0, 0, 0],
                     text-align: center
                 },
                 .banner_caption: {
                     font-name: WhitneySSm-Book,
                     font-size: 16,
                     color: #4f5757,
-                    content: "Tap",
-                    padding: [9, 0, 5, 105]
-                },
-                .cont_caption: {
-                    font-name: WhitneySSm-Book,
-                    font-size: 16,
-                    line-height: 45,
-                    color: #4f5757,
-                    padding: [-37, 0, 0, 160]
-                },
-                #bell: {
-                    background-image: "url(thickBell_promo@3x.png)",
-                    width: 24,
-                    height: 24,
-                    background-position: aspect-fit,
-                    right: 326,
-                    top: 7
+                    padding: [5, 14, 12, 14],
+                    text-align: center,
+                    content: "WSJ's politics team covers the 2016 U.S. Election and beyond"
                 },
 				#b1:	{
                     top: 20,
-                    height: 465,
+                    height: {if: =app.push.tags.topic.politics, then: 465, else: 510},
 					options: { bind: {if: =articles.b1.no_binding, then: none} }
 				},
 				#b2:	{
-                    top: {if: =app.push.tags.topic.politics, then: 30, else: 104},
+                    top: {if: =app.push.tags.topic.politics, then: 30, else: 120},
                     height: {if: =app.push.tags.topic.politics, then: 310, else: 290},
 					options: { bind: {if: =articles.b2.no_binding, then: none} }
 				},
 				#b3:	{
-                    top: {if: =app.push.tags.topic.politics, then: 30, else: 104},
+                    top: {if: =app.push.tags.topic.politics, then: 30, else: 120},
                     height: {if: =app.push.tags.topic.politics, then: 310, else: 290},
 					options: { bind: {if: =articles.b3.no_binding, then: none} }
 				},
 				#b4:	{
-					top:505,
-					height:145,
+                    top: {if: =app.push.tags.topic.politics, then: 505, else: 525},
+                    height: {if: =app.push.tags.topic.politics, then: 145, else: 120},
 					options: { bind: {if: =articles.b4.no_binding, then: none} }
 				},
 				#b5:{
-					top:505,
-					height:145,
+                    top: {if: =app.push.tags.topic.politics, then: 505, else: 525},
+                    height: {if: =app.push.tags.topic.politics, then: 145, else: 120},
 					options: { bind: {if: =articles.b5.no_binding, then: none} }
 				},
 				#b6:	{
-                    top: {if: =app.push.tags.topic.politics, then: 350, else: 395},
+                    top: {if: =app.push.tags.topic.politics, then: 350, else: 400},
                     height: {if: =app.push.tags.topic.politics, then: 145, else: 130},
 					options: { bind: {if: =articles.b6.no_binding, then: none} }
 				},
 				#b7:	{
-                    top: {if: =app.push.tags.topic.politics, then: 350, else: 395},
+                    top: {if: =app.push.tags.topic.politics, then: 350, else: 400},
                     height: {if: =app.push.tags.topic.politics, then: 145, else: 130},
 					options: { bind: {if: =articles.b7.no_binding, then: none} }
 				},
 				#b8:	{
-					top:505,
-					height:145,
+                    top: {if: =app.push.tags.topic.politics, then: 505, else: 525},
+                    height: {if: =app.push.tags.topic.politics, then: 145, else: 120},
 					options: { bind: {if: =articles.b8.no_binding, then: none} }
 				},
 				#b9:	{
-					top:505,
-					height:145,
+                    top: {if: =app.push.tags.topic.politics, then: 505, else: 525},
+                    height: {if: =app.push.tags.topic.politics, then: 145, else: 120},
 					options: { bind: {if: =articles.b9.no_binding, then: none} }
 				}
 
@@ -607,7 +576,6 @@
             <p id="headline" class="banner_headline"><mark class="banner_headline" /></p>
             <panel id="bell-panel"><box id="bell" />
                 <p id="banner_caption" class="banner_caption"><mark class="banner_caption" /></p>
-                <p id="cont_caption" class="cont_caption"> to manage your notifications<mark class="cont_caption" /></p>
             </panel>
             <panel id="electionimage-panel"><box id="electionimage" /></panel>
     </box>

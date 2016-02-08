@@ -61,6 +61,9 @@
 				else: none
 			}
 		},
+        .module_flashline: {
+            display: { if: =options.show_flashline, then: inherit, else: none }
+        },
 		.body: {
 			display: { if: =options.show_body, else: none }
 		},

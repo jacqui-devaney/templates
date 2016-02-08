@@ -107,14 +107,14 @@
 
 				},
 				#b5:	{
-					top:412,
-                    height: {if: =app.push.tags.topic.politics, then: 160, else: 250},
+                    top:{if: =app.push.tags.topic.politics, then: 412, else: 400},
+                    height: {if: =app.push.tags.topic.politics, then: 186, else: 160},
 					options:{ bind: {if: =articles.b5.no_binding, then: none}, medium_headline:true, top_border:true, show_flashline:true}
 
 				},
 				#b6:	{
-                    top:{if: =app.push.tags.topic.politics, then: 586, else: 650},
-                    height: {if: =app.push.tags.topic.politics, then: 186, else: 160},
+                    top:{if: =app.push.tags.topic.politics, then: 586, else: 560},
+                    height: {if: =app.push.tags.topic.politics, then: 160, else: 250},
 					options:{ bind: {if: =articles.b6.no_binding, then: none}, medium_headline:true, top_border:true, show_flashline:true}
 				},
                 #footer: {

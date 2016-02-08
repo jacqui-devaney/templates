@@ -157,6 +157,11 @@
                     options: { bind: {if: =articles.b9.no_binding, then: none}, show_body: true, small_headline: true }
 			}}},
 			{if: =portrait, then: {
+                #sleepy_election:{
+                    position: absolute,
+                    font-size: 24,
+                    padding: [-20, 0, -20, 0]
+                },
                 #election_container:{
                     background-color: #dfe7df,
                     top: 30,
@@ -577,6 +582,7 @@
 
     <box id="election">
 	<box id="election_container" embed="article" class="column8-12 positionx9-1 maude unit_plain" module="ELECTION-banner_module.xml">
+                <p id="sleepy_election" class="sleepy_election"><a id="sleepy_election" href="subscribe:politics?tag-group=topic"><span class="sleepy_election"></span>zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz<mark class="space"/></a></p>
             <p id="headline" class="banner_headline"><mark class="banner_headline" /></p>
             <panel id="bell-panel"><box id="bell" />
                 <p id="banner_caption" class="banner_caption"><mark class="banner_caption" /></p>

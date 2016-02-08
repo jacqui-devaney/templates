@@ -58,6 +58,9 @@
 			{if: =scale.rail, then: {
 			}},
 			{if: =scale.phone, then: {
+                #mattress:{
+                    display: none
+                },
                 #election_container:{
                     background-color: #dfe7df,
                     display: {if: =app.push.tags.topic.politics, then: none, else: inherit},
@@ -157,10 +160,10 @@
                     options: { bind: {if: =articles.b9.no_binding, then: none}, show_body: true, small_headline: true }
 			}}},
 			{if: =portrait, then: {
-                #sleepy_election:{
-                    position: absolute,
+                .sleepy_election:{
                     font-size: 24,
-                    padding: [-20, 0, -20, 0]
+                    position: relative,
+                    color: transparent
                 },
                 #election_container:{
                     background-color: #dfe7df,
@@ -232,6 +235,11 @@
 				}
 			}},
 			{if: =landscape, then: {
+                .sleepy_election:{
+                    font-size: 24,
+                    position: relative,
+                    color: transparent
+                },
                 #election_container:{
                     background-color: #dfe7df,
                     top: 20,
@@ -581,14 +589,16 @@
 	</box>
 
     <box id="election">
-	<box id="election_container" embed="article" class="column8-12 positionx9-1 maude unit_plain" module="ELECTION-banner_module.xml">
-                <p id="sleepy_election" class="sleepy_election"><a id="sleepy_election" href="subscribe:politics?tag-group=topic"><span class="sleepy_election"></span>zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz<mark class="space"/></a></p>
+	<box id="election_container" class="column8-12 positionx9-1 maude unit_plain">
             <p id="headline" class="banner_headline"><mark class="banner_headline" /></p>
             <panel id="bell-panel"><box id="bell" />
                 <p id="banner_caption" class="banner_caption"><mark class="banner_caption" /></p>
             </panel>
             <panel id="electionimage-panel"><box id="electionimage" /></panel>
     </box>
+        <box id="mattress">
+            <p id="sleepy_election" class="sleepy_election"><a id="sleepy_election" href="subscribe:politics?tag-group=topic">zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz</a></p>
+        </box>
     </box>
 
 	<box id="b1" embed="article" class="column8 positionx1 maude unit_plain unit_418" module="TOP-IMAGE_module.xml" />

@@ -57,6 +57,11 @@
 				}
 			}},
 			{if: =portrait, then: {
+                .sleepy_election:{
+                    font-size: 24,
+                    position: relative,
+                    color: transparent
+                },
                 #election_container:{
                     background-color: #dfe7df,
                     top: 0,
@@ -120,6 +125,11 @@
                 }
 			}},
 			{if: =landscape, then: {
+                .sleepy_election:{
+                    font-size: 24,
+                    position: relative,
+                    color: transparent
+                },
                 #election_container:{
                     background-color: #dfe7df,
                     top: 0,
@@ -187,10 +197,13 @@
 	<box id="page_details" class="tablet_only" embed="pagedescription" />
 
     <box id="election">
-	<box id="election_container" embed="article" class="column8-12 positionx9-1 maude unit_plain" module="ELECTION-banner_module.xml">
+	<box id="election_container" class="column8-12 positionx9-1 maude unit_plain">
         <p id="headline" class="banner_headline"><mark class="banner_headline" /></p>
         <p id="banner_caption" class="banner_caption"><mark class="banner_caption" /></p>
     </box>
+        <box id="mattress">
+            <p id="sleepy_election" class="sleepy_election"><a id="sleepy_election" href="subscribe:politics?tag-group=topic">zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz</a></p>
+        </box>
     </box>
 
 	<box id="b1" embed="article" class="column8 positionx1 maude unit_plain" module="TOP-IMAGE_module.xml" />

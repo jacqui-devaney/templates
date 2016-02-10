@@ -124,6 +124,9 @@
                     position: relative
                 }
     	}, else: {
+            .opinion_flashline: {
+                display: none
+            },
     		#strap: {
     			display: none
     		},

@@ -251,7 +251,7 @@
                     color: #3b4343,
                     font-size: 16,
                     line-height: 22,
-                    padding: [16, 0, 0, 0],
+                    padding: [10, 0, 0, 0],
                     text-align: center
                 },
                 .banner_caption: {
@@ -259,7 +259,7 @@
                     font-size: 16,
                     color: #4f5757,
                     line-height: 22,
-                    padding: [5, 50, 12, 50],
+                    padding: [5, 50, 16, 50],
                     text-align: center,
                     content: "WSJ's politics team covers the 2016 U.S. Election and beyond"
                 },
@@ -270,12 +270,12 @@
 				},
 				#b2:	{
                     top: {if: =app.push.tags.topic.politics, then: 30, else: 130},
-                    height: {if: =app.push.tags.topic.politics, then: 310, else: 290},
+                    height: {if: =app.push.tags.topic.politics, then: 310, else: 270},
 					options: { bind: {if: =articles.b2.no_binding, then: none} }
 				},
 				#b3:	{
                     top: {if: =app.push.tags.topic.politics, then: 30, else: 130},
-                    height: {if: =app.push.tags.topic.politics, then: 310, else: 290},
+                    height: {if: =app.push.tags.topic.politics, then: 310, else: 270},
 					options: { bind: {if: =articles.b3.no_binding, then: none} }
 				},
 				#b4:	{

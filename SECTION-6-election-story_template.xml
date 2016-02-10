@@ -141,16 +141,15 @@
                     color: #3b4343,
                     font-size: 16,
                     line-height: 22,
-                    padding: [16, 0, 0, 0],
+                    padding: [10, 0, 0, 0],
                     text-align: center
                 },
                 .banner_caption: {
                     font-name: WhitneySSm-Book,
                     font-size: 16,
                     color: #4f5757,
-                    padding: [0, 40, 12, 40],
+                    padding: [0, 40, 16, 40],
                     text-align: center,
-
                     line-height: 22,
                     content: "WSJ's politics team covers the 2016 U.S. Election and beyond"
                 },

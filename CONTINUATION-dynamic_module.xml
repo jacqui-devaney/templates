@@ -61,9 +61,6 @@
 				else: none
 			}
 		},
-        .module_flashline: {
-            display: { if: =options.show_flashline, then: inherit, else: none }
-        },
 		.body: {
 			display: { if: =options.show_body, else: none }
 		},
@@ -73,6 +70,18 @@
     }</style>
     <style>{
     	if: =scale.phone, then: {
+            .opinion_flashline: {
+                font-name: WhitneySSm-Semibold,
+                font-size:12,
+                line-height: 22,
+                text-transform:uppercase,
+                color: #878f8f,
+                padding: [0, 0, 4, 24],
+                display: {if: =page.section, equals: "OPINION", then: none, else: {if: =article.category, equals: "Opinion", then: inherit, else: none}}
+            },
+            .module_flashline:{
+                display: none
+            },
 			.module_headline: {
 				color:{if: =article.read, then: color.articleReadColor},
                 padding: [0, 16, 0, 24]
@@ -129,6 +138,7 @@
 	</panel>
 	<panel id="content">
 		<panel id="vertical">
+        <p class="opinion_flashline">OPINION</p>
         <p class="module_flashline"><mark class="flashline-mark" /></p>
         <p id="headline" class="module_headline"><mark class="m_headline" /><mark class="key" /></p>
 		</panel>

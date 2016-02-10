@@ -178,12 +178,13 @@
         color: #3b4343
 	},
 	.module_flashline: {
-        font-name: Whitney-Semibold,
+        font-name: WhitneySSm-Semibold,
         font-size:12,
-        line-height:12,
-        color: =page.tint,
+        line-height: 22,
         text-transform:uppercase,
-        padding: [6, 16, 30, 16]
+        color: #878f8f,
+        padding: [0, 0, 4, 24],
+        display: {if: =page.section, equals: "OPINION", then: none, else: {if: =article.category, equals: "Opinion", then: inherit, else: none}}
     },
 	.article_pubdate: {
 		font-name: Whitney-Book,

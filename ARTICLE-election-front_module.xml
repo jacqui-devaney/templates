@@ -62,7 +62,7 @@
             text-align: center,
             background-color: #dfe7df,
             display: {if: =app.push.tags.topic.politics, then: none, else: inherit},
-            top: {if: =portrait, then: 779, else: 515},
+            top: {if: =portrait, then: 795, else: 535},
             width: 460
         },
         .banner_headline: {

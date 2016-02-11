@@ -73,6 +73,15 @@
             text-align: center,
             position: absolute
         },
+        .banner_headline: {
+            font-name: "WhitneySSm-Semibold",
+            color: #fff,
+            line-height: 22,
+            font-size: 12,
+            text-align: center,
+            position: relative,
+            width: 48
+        },
         .banner_caption: {
             font-name: WhitneySSm-Book,
             font-size: 16,
@@ -96,6 +105,11 @@
             background-position: aspect-fit,
             top: -32,
             right: 310
+        },
+        #sleepy_election:{
+            font-size: 24,
+            position: relative,
+            color: transparent
         }
     }
     </style>
@@ -110,6 +124,9 @@
             <p id="cont_caption" class="cont_caption"> to manage your notifications.<mark class="cont_caption" /></p>
         </panel>
     </box>
+        <box id="mattress">
+            <p id="sleepy_election" class="sleepy_election"><a id="sleepy_election" href="subscribe:politics?tag-group=topic">zzzzzzzzzzzzzzzzzzzzzzzzzzzzz</a></p>
+        </box>
     </box>
 
     <panel id="header_top">

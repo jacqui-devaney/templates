@@ -30,7 +30,7 @@
 				},
 				else: {
 					padding: [
-						{if: =options.show_body, then: {if: =scale.phone, then: 24.5, else: 9.5}, else: 0.5},
+						{if: =options.show_body, then: {if: =scale.phone, then: {if: =page.section, equals: "OPINION", then: 26.5, else: 24.5}, else: 9.5}, else: 0.5},
 						{if: =scale.phone, then: {if: =options.show_body, then: 9, else: 24}, else: 0},
 						{if: =options.show_body, then: {if: =scale.phone, then: 8, else: 0}, else: 0},
 						{if: =scale.phone, then: 0, else: 0}
@@ -79,7 +79,7 @@
                 line-height: 22,
                 text-transform:uppercase,
                 color: #878f8f,
-                padding: [-11, 0, 4, 24],
+                padding: [-9, 0, 8, 24],
                 display: {if: =page.section, equals: "OPINION", then: none, else: {if: =article.category, equals: "Opinion", then: inherit, else: none}}
             },
             .module_flashline:{

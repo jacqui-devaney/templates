@@ -79,7 +79,7 @@
                 line-height: 22,
                 text-transform:uppercase,
                 color: #878f8f,
-                padding: [0, 0, 4, 24],
+                padding: [-11, 0, 4, 24],
                 display: {if: =page.section, equals: "OPINION", then: none, else: {if: =article.category, equals: "Opinion", then: inherit, else: none}}
             },
             .module_flashline:{

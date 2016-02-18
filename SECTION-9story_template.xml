@@ -90,7 +90,7 @@
 				},
                 #b2 : {
                     height: =size.continuation_height_large,
-                    options: { bind: {if: =articles.b2.no_binding, then: none}, show_body: true, small_headline: true, module: url(CONTINUATION-dynamic_module.xml) }
+                    options: { bind: {if: =articles.b2.no_binding, then: none}, show_body: true, small_headline: true, module: url(CONTINUATION-dynamic_module.xml), show_flashline: true }
 				},
 				#b3 : {
                     height: =size.continuation_height_large,
@@ -184,22 +184,22 @@
 					options: { bind: {if: =articles.b3.no_binding, then: none} }
 				},
 				#b4:	{
-					top:505,
+					top:350,
 					height:145,
 					options: { bind: {if: =articles.b4.no_binding, then: none} }
 				},
 				#b5:{
-					top:505,
+					top:350,
 					height:145,
 					options: { bind: {if: =articles.b5.no_binding, then: none} }
 				},
 				#b6:	{
-					top:350,
+					top:505,
 					height:145,
 					options: { bind: {if: =articles.b6.no_binding, then: none} }
 				},
 				#b7:	{
-					top:350,
+					top:505,
 					height:145,
 					options: { bind: {if: =articles.b7.no_binding, then: none} }
 				},
@@ -495,10 +495,10 @@
 	<box id="b1" embed="article" class="column8 positionx1 maude unit_plain unit_418" module="TOP-IMAGE_module.xml" />
 	<box id="b2" embed="article" class="column4 positionx9-1  maude unit_plain unit_166" module="TOP-IMAGE_module.xml" />
 	<box id="b3" embed="article" class="column4 positionx13-5 maude unit_plain unit_166" module="TOP-IMAGE_module.xml" />
-	<box id="b4" embed="article" class="column4 positionx1-9  maude unit_plain unit_50" module="CONTINUATION-dynamic_module.xml" />
-	<box id="b5" embed="article" class="column4 positionx5-9  maude unit_plain unit_50" module="CONTINUATION-dynamic_module.xml" />
-	<box id="b6" embed="article" class="column4 positionx9    maude unit_plain unit_50" module="CONTINUATION-dynamic_module.xml" />
-	<box id="b7" embed="article" class="column4 positionx13-9 maude unit_plain unit_50" module="CONTINUATION-dynamic_module.xml" />
+	<box id="b4" embed="article" class="column4 positionx9  maude unit_plain unit_50" module="CONTINUATION-dynamic_module.xml" />
+	<box id="b5" embed="article" class="column4 positionx13-9  maude unit_plain unit_50" module="CONTINUATION-dynamic_module.xml" />
+	<box id="b6" embed="article" class="column4 positionx1-9    maude unit_plain unit_50" module="CONTINUATION-dynamic_module.xml" />
+	<box id="b7" embed="article" class="column4 positionx5-9 maude unit_plain unit_50" module="CONTINUATION-dynamic_module.xml" />
 	<box id="b8" embed="article" class="column4 positionx9    maude unit_plain unit_50" module="CONTINUATION-dynamic_module.xml" />
 	<box id="b9" embed="article" class="column4 positionx13-9 maude unit_plain unit_50" module="CONTINUATION-dynamic_module.xml" />
 

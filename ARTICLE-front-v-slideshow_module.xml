@@ -55,15 +55,6 @@
 		}
 	}</style>
     <box id="media_container">
-<<<<<<< HEAD
-        <p id="media_title"><mark id="mark_media_title"/></p>
-        <p id="media_vr_header"><mark id="mark_media_vr_header"/></p>
-        <box id="media_asset" embed="media"/>
-        <p id="media_vr_footer"><mark id="mark_media_vr_footer"/></p>
-        <p id="media_caption"><mark id="mark_caption" /></p>
-        <p id="media_vr_link"><a href="http://wsj.com/virtual-reality"><mark id="mark_media_vr_link"/></a></p>
-    </box>
-=======
             <p id="media_title"><mark id="mark_media_title"/></p>
             <p id="media_vr_header"><mark id="mark_media_vr_header"/></p>
             <box id="media_asset" embed="media"/>
@@ -74,7 +65,6 @@
             <p id="media_vr_link"><a href="http://wsj.com/virtual-reality"><mark id="mark_media_vr_link"/></a></p>
     </box>
 
->>>>>>> dev
 	<panel class="column4 positionx13-9" id="body_container">
         <p class="module_flashline" embed="flashline"/>
 		<p class="article_headline"><span embed="headline"/></p>

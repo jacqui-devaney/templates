@@ -4,17 +4,6 @@
 	<style src="ARTICLE-stylesheet.ejs" />
 	<style src="MEDIA-stylesheet.ejs" />
 	<style>{
-<<<<<<< HEAD
-        #media_container: {
-            top: 0,
-            left: {if: =media.width, less-than: 360, then: 248, else: {if: =media.width, more-than: 484, then: 248, else: 248}},
-            width: {$switch: [
-                {if: =media.width, less-than: 360, then: 236},
-                {if: =media.width, more-than: 484, then: 484},
-                236
-            ]}
-        }
-=======
 		#media_container: {
 			top: 0,
 			left: 0,
@@ -26,7 +15,6 @@
 				hideCaption: true
 			}
 		},
->>>>>>> dev
 		.module_flashline: {
 			display: { if: =page.section, equals: WSJ_MAGAZINE, else: none },
 			font-name: { if: =page.section, equals: WSJ_MAGAZINE, then: "HelveticaNeue-Light" },
@@ -68,15 +56,6 @@
 
 	}</style>
     <box id="media_container">
-<<<<<<< HEAD
-        <p id="media_title"><mark id="mark_media_title"/></p>
-        <p id="media_vr_header"><mark id="mark_media_vr_header"/></p>
-        <box id="media_asset" embed="media"/>
-        <p id="media_vr_footer"><mark id="mark_media_vr_footer"/></p>
-        <p id="media_caption"><mark id="mark_caption" /></p>
-        <p id="media_vr_link"><a href="http://wsj.com/virtual-reality"><mark id="mark_media_vr_link"/></a></p>
-    </box>
-=======
             <p id="media_title"><mark id="mark_media_title"/></p>
             <p id="media_vr_header"><mark id="mark_media_vr_header"/></p>
             <box id="media_asset" embed="media"/>
@@ -87,7 +66,6 @@
             <p id="media_vr_link"><a href="http://wsj.com/virtual-reality"><mark id="mark_media_vr_link"/></a></p>
     </box>
 
->>>>>>> dev
 	<box id="body_container">
         <p class="module_flashline" embed="flashline"/>
 		<p class="article_headline"><span embed="headline"/></p>

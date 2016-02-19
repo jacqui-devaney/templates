@@ -69,6 +69,9 @@
 	<box id="body_container">
         <p class="module_flashline" embed="flashline"/>
 		<p class="article_headline"><span embed="headline"/></p>
+		<panel id="hairline_panel">
+			<box id="hairline"/>
+		</panel>
 		<panel class="article_body" embed="body"/>
 	</box>
 </jpml>

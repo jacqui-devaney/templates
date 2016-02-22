@@ -4,7 +4,7 @@
 	<style src="ARTICLE-stylesheet.ejs" />
 	<style src="MEDIA-stylesheet.ejs" />
 	<style>{
-		#media_container: {
+		#large_media: {
 			top: 0,
 			left: 0,
 			right: 0,
@@ -33,13 +33,6 @@
 			color: { if: =page.section, equals: WSJ_MAGAZINE, then: #212121 },
 			text-transform: { if: =page.section, equals: WSJ_MAGAZINE, then: uppercase }
 		},
-		#media_caption: {
-			font-name: "DJ5Exchange-Medium",
-			font-size: 11,
-			line-height: 16,
-			color: white,
-			padding: [12]
-		},
 		#body_container: {
 			text-align: center,
 			position: relative,
@@ -50,6 +43,16 @@
             font-name: { if: =page.section, equals: SPECIAL_REPORT, then: "WhitneySSm-Book" }
 
 		},
+		#hairline_panel: {
+			padding: [5, 0, 15, 0]
+		},
+		#hairline: {
+			position: relative,
+			background-color: #d8d8d8,
+			anchor-x: center,
+			width: 230,
+			height: 1
+		},
 		.body-last-p-mark: {
 			display: none
 		}
@@ -58,11 +61,8 @@
     <box id="media_container">
             <p id="media_title"><mark id="mark_media_title"/></p>
             <p id="media_vr_header"><mark id="mark_media_vr_header"/></p>
-            <box id="media_asset" embed="media"/>
+            <box id="large_media" embed="media"/>
             <p id="media_vr_footer"><mark id="mark_media_vr_footer"/></p>
-        <box id="caption_box">
-            <p id="media_caption"><mark id="mark_caption" /></p>
-        </box>
             <p id="media_vr_link"><a href="http://wsj.com/virtual-reality"><mark id="mark_media_vr_link"/></a></p>
     </box>
 

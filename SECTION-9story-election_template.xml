@@ -83,7 +83,7 @@
                     font-size: 16,
                     color: #4f5757,
                     line-height: 22,
-                    content: "WSJ's politics team covers the 2016 U.S. Election and beyond"
+                    content: "The Journal's politics team covers the 2016 U.S. Election and beyond"
                 },
                 #electionimage: {
                     background-image: "url(arrow@2x.png)",
@@ -91,7 +91,7 @@
                     left: {$switch: [
                     {if: =view.width, equals: 320, then: 280},
                     {if: =view.width, equals: 375, then: 336},
-                    {if: =view.width, equals: 414, then: 370}]},
+                    {if: =view.width, equals: 414, then: 372}]},
                     height: {if: =view.width, equals: 320, then: 86, else: 64},
                     width: 16,
                     top: {if: =view.width, equals: 320, then: -90, else: -69}
@@ -186,7 +186,7 @@
                     line-height: 22,
                     padding: [0, 0, 17, 0],
                     text-align: center,
-                    content: "WSJ's politics team covers the 2016 U.S. Election and beyond"
+                    content: "The Journal's politics team covers the 2016 U.S. Election and beyond"
                 },
 				#b1:	{
                     top: {if: =app.push.tags.topic.politics, then: 30, else: 120},

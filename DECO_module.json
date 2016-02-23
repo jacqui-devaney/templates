@@ -85,7 +85,8 @@
            "OV_image": false,
            "OZ_image": false,
            "P_image": false,
-           "H_image": false
+           "H_image": false,
+           "FR_image": false
           }
         },
         {
@@ -98,7 +99,8 @@
             "OV_image": false,
             "OZ_image": false,
             "P_image": false,
-            "H_image": false
+            "H_image": false,
+            "FR_image": false
           }
         },
         {
@@ -111,7 +113,8 @@
             "OV_image": false,
             "OZ_image": false,
             "P_image": false,
-            "H_image": false
+            "H_image": false,
+            "FR_image": false
           }
         },
         {
@@ -124,7 +127,8 @@
             "OV_image": false,
             "OZ_image": false,
             "P_image": false,
-            "H_image": false
+            "H_image": false,
+            "FR_image": false
           }
         },
         {
@@ -137,7 +141,8 @@
             "OV_image": false,
             "OZ_image": false,
             "P_image": false,
-            "H_image": false
+            "H_image": false,
+            "FR_image": false
           }
         },
         {
@@ -150,7 +155,8 @@
             "OV_image": true,
             "OZ_image": false,
             "P_image": false,
-            "H_image": false
+            "H_image": false,
+            "FR_image": false
           }
         },
         {
@@ -163,7 +169,8 @@
             "OV_image": false,
             "OZ_image": true,
             "P_image": false,
-            "H_image": false
+            "H_image": false,
+            "FR_image": false
           }
         },
         {
@@ -176,7 +183,22 @@
             "OV_image": false,
             "OZ_image": false,
             "P_image": true,
-            "H_image": false
+            "H_image": false,
+            "FR_image": false
+          }
+        },
+        {
+          "label": "FR 632w 810h",
+          "values": {
+            "G_image": false,
+            "G-tall_image": false,
+            "F_image": false,
+            "PT_image": false,
+            "OV_image": false,
+            "OZ_image": false,
+            "P_image": false,
+            "H_image": false,
+            "FR_image": true
           }
         },
         {
@@ -189,7 +211,8 @@
             "OV_image": false,
             "OZ_image": false,
             "P_image": false,
-            "H_image": true
+            "H_image": true,
+            "FR_image": false
           }
         }
       ]

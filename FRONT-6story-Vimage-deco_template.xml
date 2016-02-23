@@ -136,7 +136,7 @@
 	<box id="whatsnews" class="tablet_only column3 positionx1" embed="list">
 	</box>
 	<box id="b1" embed="article" class="column4-3 positionx13-10 maude unit_plain" module="TOP-IMAGE_module.xml" />
-	<box id="deco" embed="article" class="column6 positionx7-4 maude unit_deco" module="DECO_module.xml" />
+	<box id="deco" embed="article" class="column6 positionx7-4 maude unit_deco" module="DECO_module.xml" options="FR_size"/>
 	<box id="b2" embed="article" class="column3 positionx4 maude unit_plain" module="TOP-IMAGE_module.xml" />
 	<box id="b3" embed="article" class="column3 positionx4-7 maude unit_plain" module="TOP-IMAGE_module.xml" />
 	<box id="b4" embed="article" class="column6-3 positionx7-10 maude unit_plain" module="TOP-IMAGE_module.xml" />

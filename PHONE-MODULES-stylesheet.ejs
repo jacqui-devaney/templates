@@ -12,12 +12,16 @@
 	a: {
         color: #2fbfbf
 	},
+    h2:{
+        font-name: "ChronicleSSm-Medium",
+        padding: [0, 0, 22, 0]
+    },
 	.link-article: {
 		text-decoration: none,
 		color:{if: =intent.article, then:{if: =page.tint, equals: "rgba(0.000000, 0.000000, 0.000000, 1.000000)", then: #004990, else: =page.tint}}
 	},
 	.key: {
-		font-name: "DJ5Utility-Regular",
+		font-name: "ChronicleSSm-Book",
 		font-size:16,
 		content: "\u00a0K",
 		display: { if-all: [=issue.locked, =article.paid], then: default, else: none },
@@ -180,7 +184,7 @@
 	.module_flashline: {
         font-name: WhitneySSm-Semibold,
         font-size:12,
-        line-height: 66,
+        line-height: 22,
         text-transform:uppercase,
         color: #878f8f,
         padding: [0, 0, 4, 24],

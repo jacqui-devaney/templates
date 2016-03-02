@@ -150,7 +150,6 @@
 	</panel>
 	<panel id="content">
 		<panel id="vertical">
-        <p class="opinion_flashline">OPINION</p>
         <p class="module_flashline"><mark class="flashline-mark" /></p>
         <box id="article_status" embed="article-status"></box>
         <p id="headline" class="module_headline"><mark class="m_headline" /><mark class="key" /></p>

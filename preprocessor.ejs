@@ -44,6 +44,7 @@
 				if: =page.mediaindex,
 				at-least: 0,
 				then: {
+					type: {if: =page.hasmedia, then: "=article.media[page.mediaindex].type", else:""} ,
 					width: {if: =page.hasmedia, then: "=article.media[page.mediaindex].width", else:0} ,
 					height: {if: =page.hasmedia, then: "=article.media[page.mediaindex].height", else:0} ,
 					aspect: {if: =page.hasmedia, then: {$divide:["=article.media[page.mediaindex].width", "=article.media[page.mediaindex].height"]}, else:0},
@@ -52,6 +53,7 @@
 					filename: {if: =page.hasmedia, then: "=article.media[page.mediaindex].filename", else:""}
 				},
 				else: {
+					type: {if: =page.hasmedia, then: "=article.media[page.number].type", else:""},
 					width: {if: =page.hasmedia, then: "=article.media[page.number].width", else:0} ,
 					height: {if: =page.hasmedia, then: "=article.media[page.number].height", else:0} ,
 					aspect: {if: =page.hasmedia, then: {$divide:["=article.media[page.number].width", "=article.media[page.number].height"]}, else:0},

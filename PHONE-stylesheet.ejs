@@ -80,11 +80,11 @@
     #ad_headline:{
         font-name: "Whitney-Book",
         font-size: 13,
-        line-height: 40,
+        line-height: 45,
         color: #a7afaf,
         display: inherit,
         text-align: center,
-        padding: [-39, 40, 10, 40]
+        padding: [-43, 40, 10, 40]
     },
     #footer_headline: {
         font-name: ChronicleDisplay-Semi,
@@ -103,7 +103,7 @@
         line-height: 26,
         anchor-x: center,
         anchor-y: middle,
-        padding: [0, 30, 0, 30],
+        padding: [0, {if: =view.width, equals: 375, then: 32, else: 45}, 0, {if: =view.width, equals: 375, then: 32, else: 45}],
         content: =footer_tips[footer_tip]
     },
     #footerstrapinner: {

@@ -236,13 +236,7 @@
 
 		},
 		else: {
-            #fullpage_ad:{
-                display: none
-            },
-            #footer:{
-                display: none
-            },
-			#b1: {
+            #b1: {
 				options: {
 					bind: {if: =articles.b1.no_binding, then: none},
 					medium_headline:true,
@@ -516,13 +510,13 @@
 	<box id="b3" embed="article" class="column4 positionx13-5 maude unit_plain unit_166" module="TOP-IMAGE_module.xml" />
 	<box id="b4" embed="article" class="column4 positionx9  maude unit_plain unit_50" module="CONTINUATION-dynamic_module.xml" />
 
-    <box id="frontpage" class="maude unit_ad">
+    <box id="frontpage" class="phone_only maude unit_ad">
         <box id="fullpage_ad" class="ad-fullpage" embed="fullpagead">
             <p id="ad_headline" class="ad_headline">ADVERTISEMENT</p>
         </box>
     </box>
 
-    <box id="footer" class="column4 positionx9    maude unit_plain unit_50">
+    <box id="footer" class="phone_only    maude unit_plain unit_50">
         <box id="footerstrapinner">
             <p id="footer_headline" class="footer_headline">Did You Know?</p>
                 <p id="footer_tip"><mark id="footer_tip" /></p>

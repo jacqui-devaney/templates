@@ -101,7 +101,7 @@
 					options:{ bind: {if: =articles.b3.no_binding, then: none}, medium_headline:true, show_flashline:true}
 				},
 				#b4:	{
-                    top: {if: =app.push.tags.topic.politics, then: 220, else: 280},
+                    top: {if: =app.push.tags.topic.politics, then: 220, else: 270},
                     height: {if: =app.push.tags.topic.politics, then: 186, else: 190},
 					options:{ bind: {if: =articles.b4.no_binding, then: none}, medium_headline:true, top_border:true, show_flashline:true}
 

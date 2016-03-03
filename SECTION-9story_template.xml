@@ -71,6 +71,11 @@
 				#tabbar-container: {
 					display: none
 				},
+                #fullpage_ad: {
+                    border-width: {if: =scale.phone, then: [50]},
+                    border-color: {if: =scale.phone, then: #edf1ed},
+                    bottom: 10
+                },
 				#b1 : {
                  height:{
                     if: =view.width, more-than: 320, then:{

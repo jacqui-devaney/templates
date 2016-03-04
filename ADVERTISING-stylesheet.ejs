@@ -38,12 +38,12 @@
 	#fullpage_container: {
 		height: {if: =scale.phone, then:270}
 	},
-	#fullpage_ad: {
+    #fullpage_ad: {
 		anchor-x:center,
-		anchor-y:middle,
+        display: inherit,
 		pixels-per-point-x: 1,
 		pixels-per-point-y: 1,
 		width: {if: =scale.phone, then: 300, else: =view.width},
 		height: {if: =scale.phone, then: 250, else: =view.height}
-	}
+    }
 }

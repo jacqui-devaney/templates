@@ -65,7 +65,7 @@
                 #election_container:{
                     background-color: #dfe7df,
                     top: 0,
-                    display: {if: =app.push.tags.topic.politics, then: none, else: inherit}
+                    display: {if: =app.push.tags.topic.politics, then: none, else: {if: =app.version, at-least: 7.5, then: inherit, else: none }}
                 },
                 .banner_headline: {
                     font-name: "ChronicleSSm-Medium",
@@ -96,25 +96,25 @@
 					options:{ bind: {if: =articles.b2.no_binding, then: none}, medium_headline:true, show_body:true, top_border:true, show_flashline:true}
 				},
 				#b3:	{
-                    top:{if: =app.push.tags.topic.politics, then: 0, else: 90},
-                    height: {if: =app.push.tags.topic.politics, then: 230, else: 185},
+                    top:{if: =app.push.tags.topic.politics, then: 0, else: {if: =app.version, at-least: 7.5, then: 90, else: 0}},
+                    height: {if: =app.push.tags.topic.politics, then: 230, else: {if: =app.version, at-least: 7.5, then: 185, else: 230}},
 					options:{ bind: {if: =articles.b3.no_binding, then: none}, medium_headline:true, show_flashline:true}
 				},
 				#b4:	{
-                    top: {if: =app.push.tags.topic.politics, then: 220, else: 270},
-                    height: {if: =app.push.tags.topic.politics, then: 186, else: 190},
+                    top: {if: =app.push.tags.topic.politics, then: 220, else: {if: =app.version, at-least: 7.5, then: 270, else: 220 }},
+                    height: {if: =app.push.tags.topic.politics, then: 210, else: {if: =app.version, at-least: 7.5, then: 190, else: 210 }},
 					options:{ bind: {if: =articles.b4.no_binding, then: none}, medium_headline:true, top_border:true, show_flashline:true}
 
 				},
 				#b5:	{
-                    top:{if: =app.push.tags.topic.politics, then: 412, else: 460},
-                    height: {if: =app.push.tags.topic.politics, then: 210, else: 190},
+                    top:{if: =app.push.tags.topic.politics, then: 412, else: {if: =app.version, at-least: 7.5, then: 460, else: 412}},
+                    height: {if: =app.push.tags.topic.politics, then: 210, else: {if: =app.version, at-least: 7.5, then: 190, else: 210 }},
 					options:{ bind: {if: =articles.b5.no_binding, then: none}, medium_headline:true, top_border:true, show_flashline:true}
 
 				},
 				#b6:	{
-                    top:{if: =app.push.tags.topic.politics, then: 620, else: 640},
-                    height: {if: =app.push.tags.topic.politics, then: 186, else: 180},
+                    top:{if: =app.push.tags.topic.politics, then: 620, else: {if: =app.version, at-least: 7.5, then: 640, else: 620}},
+                    height: {if: =app.push.tags.topic.politics, then: 186, else: {if: =app.version, at-least: 7.5, then: 180, else: 186}},
 					options:{ bind: {if: =articles.b6.no_binding, then: none}, medium_headline:true, top_border:true, show_flashline:true}
 				},
                 #footer: {
@@ -133,7 +133,7 @@
                 #election_container:{
                     background-color: #dfe7df,
                     top: 0,
-                    display: {if: =app.push.tags.topic.politics, then: none, else: inherit}
+                    display: {if: =app.push.tags.topic.politics, then: none, else: {if: =app.version, at-least: 7.5, then: inherit, else: none }}
                 },
                 .banner_headline: {
                     font-name: "ChronicleSSm-Medium",
@@ -159,29 +159,29 @@
 					options:{ bind: {if: =articles.b1.no_binding, then: none}, large_headline:true, show_image:true}
 				},
 				#b2:	{
-                    top: {if: =app.push.tags.topic.politics, then: 0, else: 102},
-                    height: {if: =app.push.tags.topic.politics, then: 165, else: 120},
+                    top: {if: =app.push.tags.topic.politics, then: 0, else: {if: =app.version, at-least: 7.5, then: 102, else: 0},
+                    height: {if: =app.push.tags.topic.politics, then: 165, else: {if: =app.version, at-least: 7.5, then: 120, else: 165}},
 					options:{ bind: {if: =articles.b2.no_binding, then: none}, medium_headline:true, bottom_border:true, show_body:true, show_flashline:true}
 				},
 				#b3:	{
-                    top:{if: =app.push.tags.topic.politics, then: 175, else: 225},
+                    top:{if: =app.push.tags.topic.politics, then: 175, else: {if: =app.version, at-least: 7.5, then: 225, else: 175}},
 					height:175,
                     left: {if: =app.push.tags.topic.politics, then: 518, else: 518},
 					options:{ bind: {if: =articles.b3.no_binding, then: none}, medium_headline:true, top_border:false, show_flashline:true}
 				},
 				#b4:	{
-                    top:{if: =app.push.tags.topic.politics, then: 345, else: 400},
-                    height: {if: =app.push.tags.topic.politics, then: 220, else: 160},
+                    top:{if: =app.push.tags.topic.politics, then: 345, else: {if: =app.version, at-least: 7.5, then: 400, else: 345}},
+                    height: {if: =app.push.tags.topic.politics, then: 220, else: {if: =app.version, at-least: 7.5, then: 160, else:  220}},
 					options:{ bind: {if: =articles.b4.no_binding, then: none}, medium_headline:true, top_border:true, show_flashline:true}
 				},
 				#b5:	{
-                    top:{if: =app.push.tags.topic.politics, then: 175, else: 225},
+                    top:{if: =app.push.tags.topic.politics, then: 175, else: {if: =app.version, at-least: 7.5, then: 225, else: 175}},
 					height:175,
 					options:{ bind: {if: =articles.b5.no_binding, then: none}, medium_headline:true, top_border:false, show_flashline:true}
 				},
 				#b6:	{
-                    top:{if: =app.push.tags.topic.politics, then: 345, else: 400},
-                    height: {if: =app.push.tags.topic.politics, then: 220, else: 160},
+                    top:{if: =app.push.tags.topic.politics, then: 345, else: {if: =app.version, at-least: 7.5, then: 400, else: 345}},
+                    height: {if: =app.push.tags.topic.politics, then: 220, else: {if: =app.version, at-least: 7.5, then: 160, else: 220}},
 					options:{ bind: {if: =articles.b6.no_binding, then: none}, medium_headline:true, top_border:true, show_flashline:true}
                 },
                 #footer: {

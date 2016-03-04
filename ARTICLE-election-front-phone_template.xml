@@ -1,0 +1,14 @@
+<jpml id="ARTICLE-election-front-phone_template">
+	<!-- GLOBAL not included -->
+	<style src="PHONE-stylesheet.ejs" />
+	<style>{
+		#view: {
+			width:=view.width,
+			height:{$multiply: [2, =view.height]},
+			options: {
+				indent: true
+			}
+		}
+	}</style>
+    <box id="view" embed="article" class="maude" module="ARTICLE-election-front-phone_module.xml" />
+</jpml>

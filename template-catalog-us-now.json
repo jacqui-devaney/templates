@@ -108,6 +108,106 @@
         ]
       },
       {
+        "filename": "SECTION-9story-election_template.xml",
+        "title": "9 story - G photo",
+        "usage": "front",
+        "boxes": [
+          {
+            "id": "b1",
+            "images": {
+              "tablet": {
+                "width": 484,
+                "height": 322
+              },
+              "phone": {
+                "width": 414,
+                "height": 275
+              }
+            }
+          },
+          {
+            "id": "b2",
+            "images": {
+              "tablet": {
+                "width": 236,
+                "height": 157
+              },
+              "phone": {
+                "width": 182,
+                "height": 122
+              }
+            }
+          },
+          {
+            "id": "b3",
+            "images": {
+              "tablet": {
+                "width": 236,
+                "height": 157
+              },
+              "phone": {
+                "width": 182,
+                "height": 122
+              }
+            }
+          },
+          {
+            "id": "b4",
+            "images": {
+              "phone": {
+                "width": 182,
+                "height": 122
+              }
+            }
+          },
+          {
+            "id": "b5",
+            "images": {
+              "phone": {
+                "width": 182,
+                "height": 122
+              }
+            }
+          },
+          {
+            "id": "b6",
+            "images": {
+              "phone": {
+                "width": 182,
+                "height": 122
+              }
+            }
+          },
+          {
+            "id": "b7",
+            "images": {
+              "phone": {
+                "width": 182,
+                "height": 122
+              }
+            }
+          },
+          {
+            "id": "b8",
+            "images": {
+              "phone": {
+                "width": 182,
+                "height": 122
+              }
+            }
+          },
+          {
+            "id": "b9",
+            "images": {
+              "phone": {
+                "width": 182,
+                "height": 122
+              }
+            }
+          }
+        ]
+      },
+      {
         "filename": "SECTION-5story_template.xml",
         "title": "5 story G Photo",
         "usage": "front",
@@ -630,8 +730,20 @@
         "title": "Standard Article Template"
       },
       {
+        "filename": "ARTICLE-election_template.xml",
+        "title": "Standard Election Template"
+      },
+      {
         "filename": "ARTICLE-h-slideshow_template.xml",
         "title": "Slideshow Article Template"
+      },
+      {
+        "filename": "ARTICLE-election_template.xml",
+        "title": "Politics/Business Election Template"
+      },
+      {
+        "filename": "ARTICLE-v-slideshow_template.xml",
+        "title": "Slideshow Article Template (Vertical)"
       },
       {
         "filename": "ARTICLE-v-slideshow_template.xml",

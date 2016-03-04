@@ -7,13 +7,13 @@
 		#large_media: {
 			top: 0,
 			left: 0,
-			bottom: 0,
-			width: { if: =portrait, then: 484, else: 732 },
+			right: 0,
+            width: {if: =portrait, then: 484, else: 485},
 			options: {
 				id: =page.number,
 				hideCaption: true
 			}
-		},
+        },
 		.module_flashline: {
 			display: { if: =page.section, equals: WSJ_MAGAZINE, else: none },
             font-name:{ if: =page.section, equals: WSJ_MAGAZINE, then: "HelveticaNeue-Light" },
@@ -71,7 +71,6 @@
             </box>
             <p id="media_vr_link"><a href="http://wsj.com/virtual-reality"><mark id="mark_media_vr_link"/></a></p>
     </box>
-
 	<panel class="column4 positionx13-9" id="body_container">
         <p class="module_flashline" embed="flashline"/>
 		<p class="article_headline"><span embed="headline"/></p>

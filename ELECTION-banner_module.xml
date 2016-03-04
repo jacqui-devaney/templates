@@ -1,0 +1,43 @@
+<jpml id="ELECTION-banner_module">
+	<style src="GLOBAL-stylesheet.ejs" />
+	<style src="GLOBAL_MODULES-stylesheet.ejs" />
+	<style src="PHONE-MODULES-stylesheet.ejs" />
+
+	<style>{
+		jpml: {
+			background-color: =options.background_color,
+			border-color: #d8d8d8
+		},
+		#page_details: {
+			options: {
+				tintTitle: true
+			}
+		}
+	}</style>
+    <style>{
+            #election_container:{
+                background-color: #dfe7df
+            },
+            .banner_headline: {
+                font-name: "ChronicleSSm-Medium",
+                line-height: 22,
+                color: #3b4343,
+                font-size: 16
+            },
+			.banner_caption: {
+                font-name: WhitneySSm-Book,
+                font-size: 16,
+                line-height: 22
+			}
+        }
+    </style>
+
+    <box id="page_details" embed="pagedescription" />
+	<panel id="strap">
+		<p class="subsection"><mark id="m_subsection"/></p>
+	</panel>
+    <box id="election_container">
+            <p id="headline" class="banner_headline"><mark class="banner_headline" /></p>
+        	<p id="banner_caption" class="banner_caption"><mark class="banner_caption" /></p>
+    </box>
+</jpml>

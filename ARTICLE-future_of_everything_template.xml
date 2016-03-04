@@ -26,7 +26,7 @@
           options: {
             background_color: =color.background,
             indent: true,
-            module: {if: =page.number, equals: 0, then: url(ARTICLE-front-phone_module.xml), else: url(ARTICLE-continuation-phone_module.xml)}
+            module: {if: =page.section, equals: "POLITICS", then: url(ARTICLE-election-front-phone_module.xml), else: url(ARTICLE-continuation-phone_module.xml)}
           }
         }
 			}},
@@ -35,7 +35,7 @@
           options: {
             background_color: =color.background,
             indent: true,
-            module: {if: =page.number, equals: 0, then: url(ARTICLE-future_of_everything-front_module.xml), else: url(ARTICLE-future_of_everything-continuation_module.xml)}
+            module: {if: =page.number, equals: 0, then: url(ARTICLE-front_module.xml), else: url(ARTICLE-continuation_module.xml)}
           }
         }
         }]

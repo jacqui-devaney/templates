@@ -78,9 +78,9 @@
 	#m_subsection: { content: =article.subsection },
 	#m_headline: { content: =article.headline },
 	.list-item: {
-        padding: [0, 16, 22, 12],
+        padding: [11, 16, 8, 12],
         text-indent: -18,
-        line-height: 22
+        line-height: {$multiply: [20, =view.zoomlevel]}
     },
 	.list-item-bullet: {
 		content: "\u00a0\u2022 ",

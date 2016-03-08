@@ -16,7 +16,7 @@
 		$switch: [
 			{if: =scale.rail, then: {
 
-			}},
+			 }},
 			{if: =scale.phone, then: {
                 #b1 : {
                  height:{
@@ -65,7 +65,7 @@
                 #election_container:{
                     background-color: #dfe7df,
                     top: 0,
-                    display: {if: =app.push.tags.topic.politics, then: none, else: {if: =app.version, at-least: 7.5, then: inherit, else: none }}
+                    display: {if: =app.push.tags.topic.politics, then: none, else: {if: =app.version, at-least: 7.5, then: inherit, else: none}}
                 },
                 .banner_headline: {
                     font-name: "ChronicleSSm-Medium",
@@ -83,15 +83,15 @@
                     line-height: 22,
                     padding: [0, 0, 18, 0],
                     text-align: center,
-                    content: "The Journal's politics team covers the 2016 U.S. Election and beyond"
+                    content: "The Journal's politics team covers the 2016 U.S.Election and beyond"
                 },
 				#b1:	{
-                    top:{if: =app.push.tags.topic.politics, then: 0, else: 90},
+                    top:{if: =app.push.tags.topic.politics, then: 0, else: {if: =app.version, at-least: 7.5, then: 90, else: 0}},
                     height: {if: =app.push.tags.topic.politics, then: 570, else: 560},
 					options:{ bind: {if: =articles.b1.no_binding, then: none}, large_headline:true, show_image:true}
 				},
 				#b2:	{
-                    top: {if: =app.push.tags.topic.politics, then: 586, else: 650},
+                    top: {if: =app.push.tags.topic.politics, then: 586, else: {if: =app.version, at-least: 7.5, then: 586, else: 650}},
                     height: {if: =app.push.tags.topic.politics, then: 219, else: 160},
 					options:{ bind: {if: =articles.b2.no_binding, then: none}, medium_headline:true, show_body:true, top_border:true, show_flashline:true}
 				},
@@ -102,7 +102,7 @@
 				},
 				#b4:	{
                     top: {if: =app.push.tags.topic.politics, then: 220, else: {if: =app.version, at-least: 7.5, then: 270, else: 220 }},
-                    height: {if: =app.push.tags.topic.politics, then: 210, else: {if: =app.version, at-least: 7.5, then: 190, else: 210 }},
+                    height: {if: =app.push.tags.topic.politics, then: 190, else: {if: =app.version, at-least: 7.5, then: 190, else: 210 }},
 					options:{ bind: {if: =articles.b4.no_binding, then: none}, medium_headline:true, top_border:true, show_flashline:true}
 
 				},
@@ -133,7 +133,7 @@
                 #election_container:{
                     background-color: #dfe7df,
                     top: 0,
-                    display: {if: =app.push.tags.topic.politics, then: none, else: {if: =app.version, at-least: 7.5, then: inherit, else: none }}
+                    display: {if: =app.push.tags.topic.politics, then: none, else: {if: =app.version, at-least: 7.5, then: inherit, else: none}}
                 },
                 .banner_headline: {
                     font-name: "ChronicleSSm-Medium",
@@ -159,7 +159,7 @@
 					options:{ bind: {if: =articles.b1.no_binding, then: none}, large_headline:true, show_image:true}
 				},
 				#b2:	{
-                    top: {if: =app.push.tags.topic.politics, then: 0, else: {if: =app.version, at-least: 7.5, then: 102, else: 0},
+                    top: {if: =app.push.tags.topic.politics, then: 0, else: {if: =app.version, at-least: 7.5, then: 102, else: 0}},
                     height: {if: =app.push.tags.topic.politics, then: 165, else: {if: =app.version, at-least: 7.5, then: 120, else: 165}},
 					options:{ bind: {if: =articles.b2.no_binding, then: none}, medium_headline:true, bottom_border:true, show_body:true, show_flashline:true}
 				},
@@ -213,6 +213,7 @@
 	<box id="b4" embed="article" class="column4 positionx9 maude unit_plain" module="TOP-IMAGE_module.xml" />
 	<box id="b5" embed="article" class="column4 positionx13-9 maude unit_plain" module="TOP-IMAGE_module.xml" />
 	<box id="b6" embed="article" class="column4 positionx13-9 maude unit_plain" module="TOP-IMAGE_module.xml" />
+
 	<box id="front_page" class="tablet_only positionx_full column_full maude unit_ad">
 		<box id="banner_ad" class="ad-banner front_ad" embed="advertisement" />
 	</box>

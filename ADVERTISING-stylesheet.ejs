@@ -16,6 +16,7 @@
 		pixels-per-point-y: 1,
 		anchor-x:center,
 		anchor-y:middle,
+        display: none,
 		width: =view.width,
 		height: {if: =scale.phone, then:50, else:90}
 	},
@@ -40,7 +41,7 @@
 	},
     #fullpage_ad: {
 		anchor-x:center,
-        display: inherit,
+        display: none,
 		pixels-per-point-x: 1,
 		pixels-per-point-y: 1,
 		width: {if: =scale.phone, then: 300, else: =view.width},

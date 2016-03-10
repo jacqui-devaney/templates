@@ -55,6 +55,12 @@
 	<style> {
 		$switch: [
 			{if: =scale.rail, then: {
+                #footer:{
+                    display: none
+                },
+                #frontpage:{
+                    display: none
+                }
 			}},
 			{if: =scale.phone, then: {
 				#page_details: {

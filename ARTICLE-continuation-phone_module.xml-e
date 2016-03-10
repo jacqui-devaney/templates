@@ -35,11 +35,11 @@
 
     <box id="prototype">
         <box id="media-item-prototype">
-        	<box id="media_container">
-        		<p id="media_title"><mark id="mark_media_title"/></p>
-        		<p id="media_vr_header"><mark id="mark_media_vr_header"/></p>
+		<box id="media_container">
+			<p id="media_title"><mark id="mark_media_title"/></p>
+			<p id="media_vr_header"><mark id="mark_media_vr_header"/></p>
 	            <box id="media_asset" embed="media"/>
-        		<p id="media_vr_footer"><mark id="mark_media_vr_footer"/></p>
+			<p id="media_vr_footer"><mark id="mark_media_vr_footer"/></p>
 	            <p id="media_caption"><mark id="mark_caption" /></p>
                 <p id="media_credit"><mark id="mark_credit"/></p>
 	            <p id="media_vr_link"><a href="http://wsj.com/virtual-reality"><mark id="mark_media_vr_link"/></a></p>
@@ -48,7 +48,7 @@
     </box>
 
 	<panel id="body_container">
-    	<panel class="article_body" id="body_continuation" embed="body" />
+	<panel class="article_body" id="body_continuation" embed="body" />
 	</panel>
 
     <style>{
@@ -58,12 +58,12 @@
     .maude: {
         position: relative,
         top: 0,
-        left: 0,        
+        left: 0,
         right: 0,
         width:inherit
     },
     .unit_ad: {
-        width: 320, 
+        width: 320,
         height: 50,
         background-color: #e7e2d8
     },
@@ -75,7 +75,7 @@
         padding: [36, 0, 0, 0]
     },
     #ad_headline:{
-        font-name: "WhitneySSm-Book",
+        font-name: "Whitney-Book",
         font-size: 13,
         line-height: 45,
         color: #a7afaf,

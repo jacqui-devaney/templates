@@ -53,7 +53,7 @@
 		]
 	},
     .module_summary:{
-        font-name: "WhitneySSm-Book",
+        font-name: "Whitney-Book",
         line-height: 22,
         font-size:17,
         color: #3b4343
@@ -68,12 +68,12 @@
 		font-size:17,
 		line-height:22,
 		text-overflow: =text.overflow,
-		font-name: WhitneySSm-Book,
+		font-name: Whitney-Book,
         color:#333
 
 	},
 	.highlight_flashline: {
-        font-name: WhitneySSm-Semibold,
+        font-name: Whitney-Semibold,
 		font-size:17,
 		line-height:18,
 		color:#656565
@@ -111,14 +111,14 @@
         color: #878f8f,
         font-size: 17,
         line-height: 22,
-        font-name: "WhitneySSm-Book",
+        font-name: "Whitney-Book",
         padding: { if-all: [
                 { if: =page.number, equals: 0, then: true, else: false },
                 { if: =scale.phone, then: true, else: false }
             ], then: [6, 16, 22, 16], else: [6, 0, 0, 0]
     }},
 	.subsection: {
-		font-name: "WhitneySSm-Book",
+		font-name: "Whitney-Book",
 		font-size: 17,
 		line-height: 16,
 		color: =page.tint,
@@ -154,7 +154,7 @@
 	.article_flashline: {
 		font-size:12,
         line-height:22,
-        font-name: WhitneySSm-Semibold,
+        font-name: Whitney-Semibold,
         color: #2fbfbf,
 		text-transform:uppercase,
         padding: [14,16,8,16],
@@ -168,7 +168,7 @@
 		padding:[14, 16, 10, 14]
 	},
 	.article_subhed: {
-		font-name: WhitneySSm-Book,
+		font-name: Whitney-Book,
 		font-size:17,
 		line-height:22,
         color:#4f5757,
@@ -176,7 +176,7 @@
 	},
 	.article_byline: {
         padding: [0, 16, 0, 16],
-		font-name: WhitneySSm-Book,
+		font-name: Whitney-Book,
 		font-size:17,
 		line-height:22,
         color: #3b4343
@@ -191,7 +191,7 @@
         display: {if: =page.section, equals: "OPINION", then: none, else: {if: =article.category, equals: "Opinion", then: inherit, else: none}}
     },
 	.article_pubdate: {
-		font-name: WhitneySSm-Book,
+		font-name: Whitney-Book,
 		font-size:13,
         line-height:22,
         color: #878f8f,
@@ -235,7 +235,7 @@
         line-height: 22,
         font-name:{if: =intent.article, then: ChronicleSSmBook-Italic},
         color: #3b4343
-    },	
+    },
 
     .byline-credit: {
 		display: {if-any: [
@@ -244,7 +244,7 @@
 		],
 		then: none,
         else: inherit},
-        font-name:WhitneySSm-Book,
+        font-name:Whitney-Book,
         color:#3b4343,
         font-size: 13,
         line-height: 22,
@@ -281,7 +281,7 @@
 		padding:[2, 0, 0, 0]
 	},
 	.large_dek: {
-		font-name:"WhitneySSm-Book",
+		font-name:"Whitney-Book",
 		text-indent:0,
 		font-size:17,
 		line-height:22,
@@ -317,7 +317,7 @@
         color: #878f8f,
         font-size: 17,
         line-height: 22,
-        font-name: "WhitneySSm-Book",
+        font-name: "Whitney-Book",
         padding: { if-all: [
                 { if: =page.number, equals: 0, then: true, else: false },
                 { if: =scale.phone, then: true, else: false }
@@ -330,7 +330,7 @@
         color: #878f8f,
         font-size: 17,
         line-height: 22,
-        font-name: "WhitneySSm-Book"
+        font-name: "Whitney-Book"
         },
 
 	#media_asset: {
@@ -375,7 +375,7 @@
 
 	.byline: {
         padding: [0, 16, 0, 16],
-		font-name: WhitneySSm-Book,
+		font-name: Whitney-Book,
 		font-size:{$multiply: [21, =view.zoomlevel]},
 		line-height:{$multiply: [22, =view.zoomlevel]},
         color:#3b4343

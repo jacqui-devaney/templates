@@ -8,18 +8,18 @@
 			min-height: 0
 		},
 		padding:[0]
-	},	
+	},
 	.maude: {
 		position: relative,
 		top: 0,
-		left: 0,		
+		left: 0,
 		right: 0,
 		width:inherit
 	},
-	#front_page: { 
+	#front_page: {
 		top: 0
 	},
-	#section_ad: { 
+	#section_ad: {
 		top: 0
 	},
 	#h1: {
@@ -32,38 +32,38 @@
         color: red,
 		top:22,
         text-indent: 0
-		
+
 	},
-	#highlight_ad: 	{ 
-		width: 320, 
+	#highlight_ad: 	{
+		width: 320,
 		height: 50,
 		background-color: #e7e2d8
 	},
-	#cube_ad:{ 
-		width: 320, 
+	#cube_ad:{
+		width: 320,
 		height: 50,
 		background-color: #e7e2d8
 	},
-	
-	#marketdata_background: { 
+
+	#marketdata_background: {
 		display:none
 	},
-	#fullpage_container : { 
+	#fullpage_container : {
 		display:none,
 	    width:=view.width,
         height:=view.height
     },
-	#deco: { 
-		display: {if: =articles.deco.type, ends-with: "TabletOnly", then: none } 
+	#deco: {
+		display: {if: =articles.deco.type, ends-with: "TabletOnly", then: none }
 	},
-	#deco1: { 
-		display: {if: =articles.deco1.type, ends-with: "TabletOnly", then: none } 
+	#deco1: {
+		display: {if: =articles.deco1.type, ends-with: "TabletOnly", then: none }
 	},
-	#deco2: { 
-		display: {if: =articles.deco2.type, ends-with: "TabletOnly", then: none } 
+	#deco2: {
+		display: {if: =articles.deco2.type, ends-with: "TabletOnly", then: none }
 	},
-	#deco3: { 
-		display: {if: =articles.deco3.type, ends-with: "TabletOnly", then: none } 
+	#deco3: {
+		display: {if: =articles.deco3.type, ends-with: "TabletOnly", then: none }
 	},
 	.hidden_tablet: {
 		display: inherit
@@ -71,14 +71,14 @@
 	.hidden_phone: {
 		display: none
 	},
-	#marketstrap:	{ 
+	#marketstrap:	{
 		top:0,
 		height:{if: =app.version, at-least: 7.6, then: 52, else: 32},
 		left:0,
 		right:0
 	},
 	 #ad_headline:{
-        font-name: "WhitneySSm-Book",
+        font-name: "Whitney-Book",
         font-size: 13,
         line-height: 45,
         color: #a7afaf,
@@ -104,7 +104,7 @@
         anchor-x: center,
         anchor-y: middle,
         padding: [0, {if: =view.width, equals: 375, then: 32, else: 48}, 0, {if: =view.width, equals: 375, then: 32, else: 48}],
-        content: =phone_footer_tips[footer_tip]
+        content: =footer_tips[footer_tip]
     },
     #footerstrapinner: {
         border-color: #cfd7d7,
@@ -123,10 +123,10 @@
 		height:416
 	},
 	.unit_ad: {
-		width: 320, 
+		width: 320,
 		height: 50,
 		background-color: #e7e2d8
-		
+
 	},
 	.unit_G_deco: {
 		height:214
@@ -155,5 +155,5 @@
 	.unit_418: {
 		height:418
 	}
-	
+
 }, else:{}}

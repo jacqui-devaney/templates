@@ -23,7 +23,7 @@
             column-gutter: 12,
 			layout-grid-line: {$multiply: [20, =view.zoomlevel]},
 			layout-grid-line-offset: {$multiply: [20, =view.zoomlevel]},
-			font-name: "WhitneySSm-Medium",
+			font-name: "Whitney-Medium",
 			color: #222222
         }},
 
@@ -33,7 +33,7 @@
 		}},
 
 		{#media_caption:{
-			font-name: "WhitneySSm-Medium",
+			font-name: "Whitney-Medium",
 			font-size: 12,
 			color: #666666
 		}},

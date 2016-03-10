@@ -39,7 +39,7 @@
 	},
 
 	.future-footnotes: {
-		font-name: "WhitneySSm-Medium",
+		font-name: "Whitney-Medium",
 		font-size: { if: =scale.phone, then: {$multiply: [14, =view.zoomlevel]}, else: {$multiply: [11, =view.zoomlevel]} },
 		line-height: { if: =scale.phone, then: {$multiply: [18, =view.zoomlevel]}, else: {$multiply: [15, =view.zoomlevel]} },
 		layout-grid-line: 0,
@@ -50,14 +50,14 @@
 	.future-related-content: {
 		layout-grid-line: 0,
 		layout-grid-line-offset: 0,
-		font-name: "WhitneySSm-Medium",
+		font-name: "Whitney-Medium",
 		color: #222222
 	},
 
 	.future-questions: {
 		layout-grid-line: 0,
 		layout-grid-line-offset: 0,
-		font-name: "WhitneySSm-Medium",
+		font-name: "Whitney-Medium",
 		color: #222222
 	}
 }

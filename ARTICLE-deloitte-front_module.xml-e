@@ -35,29 +35,29 @@
 			content: "deloitte"
 		}},
 		{.article_headline:{
-			font-name: "WhitneySSm-Medium",
+			font-name: "Whitney-Medium",
 			font-size: 36,
 			line-height:42,
 			color: #262626,
 			padding:[16, 0, 0, 0]
 		}},
 		{.article_subhed:{
-			font-name: "WhitneySSm-BookItalic",
+			font-name: "Whitney-BookItalic",
 			font-size: 22,
 			line-height: 28,
 			color: #5D5D5D,
 			padding: [6, 0, 0, 0]
 		}},
 		{.module_flashline:{
-			font-name: "WhitneySSm-Semibold",
+			font-name: "Whitney-Semibold",
 			color: #004990
 		}},
 		{.article_body:{
-			font-name: "WhitneySSm-Medium",
+			font-name: "Whitney-Medium",
 			color: #222222
 		}},
 		{#media_caption:{
-			font-name: "WhitneySSm-Medium",
+			font-name: "Whitney-Medium",
 			font-size: 12,
 			color: #666666
 		}},

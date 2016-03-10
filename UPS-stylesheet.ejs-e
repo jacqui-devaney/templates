@@ -1,12 +1,12 @@
 {
 	strong: {
-		font-name:{if: =intent.article, then:WhitneySSm-Semibold}
+		font-name:{if: =intent.article, then:Whitney-Semibold}
 	},
 	em: {
-		font-name:{if: =intent.article, then:WhitneySSm-MediumItalic}
+		font-name:{if: =intent.article, then:Whitney-MediumItalic}
 	},
 	cite: {
-		font-name:{if: =intent.article, then:WhitneySSm-BookItalic}
+		font-name:{if: =intent.article, then:Whitney-BookItalic}
 	},
 	#sponsored_strap:{
 		min-height: 40,
@@ -19,24 +19,24 @@
 		padding: [14, 0, 0, 0]
 	},
 	#sponsored_strap_mark:{
-		font-name: "WhitneySSm-Semibold",
+		font-name: "Whitney-Semibold",
 		font-size: 12,
 		color: #333333,
 		content: "CONTENT FROM OUR SPONSOR"
 	},
 	.sponsored_strap_image:{
-		background-image: "url(CMO-strip@2x.png)",
+        background-image: "url(UPS-module@2x.png)",
 		background-position: aspect-fit,
 		top: 10,
 		left: 0,
-		width: 520,
-		height: 20
+		width: 87,
+		height: 87
 	},
 
 	#sponsored_list: {
 		min-height: 0,
 		max-height: 10000,
-		background-color: #f6f8f9
+		background-color: #e6e5df
 	},
 
 	#sponsored_inner: {
@@ -44,25 +44,25 @@
 	},
 
 	#sponsored_phone: {
-		background-color: #f6f8f9,
-		padding: [0, 10]
+		background-color: #e6e5df,
+		padding: [0, 30]
 	},
 
 	.sponsored_item: {
 		padding: { if: =scale.phone, then: [15, 0, 14.5, 0], else: [20, 0, 19.5, 0] },
 		border-width: [0, 0, 0.5, 0],
-		border-color: #FFFFFF
+		border-color: #e3e4e3
 	},
 
 	.sponsored_item_first: {
 		if: =scale.phone, then: {
 			padding: [14.5, 0, 14.5, 0],
 			border-width: [0.5, 0, 0.5, 0],
-			border-color: #FFFFFF
+			border-color: #e3e4e3
 		}, else: {
 			padding: [14.5, 0, 19.5, 0],
 			border-width: [0.5, 0, 0.5, 0],
-			border-color: #FFFFFF
+			border-color: #e3e4e3
 		}
 	},
 
@@ -72,14 +72,14 @@
 	},
 
 	.sponsored_headline: {
-		font-name: "WhitneySSm-Medium",
+		font-name: "Whitney-Medium",
 		font-size: 20,
 		line-height: 25,
-		color: #333333,
+		color: #351c15,
 		padding: [0, 0, 5, 0]
 	},
 	.sponsored_summary: {
-		font-name: "WhitneySSm-Book",
+		font-name: "Whitney-Book",
 		font-size: { if: =scale.phone, then: 16, else: 14 },
 		line-height: { if: =scale.phone, then: 25, else: 18 },
 		color: #333333
@@ -102,7 +102,7 @@
 		text-indent: 0,
 		text-align: center
 	},
-	
+
 	p: {
 		padding:[0,0,20,0]
 	},
@@ -137,7 +137,7 @@
 		layout-grid-line: 0,
 		layout-grid-line-offset: 0,
 		background-color: transparent,
-		border-color: #FFFFFF
+		border-color: #e3e4e3
 	},
 
 	.sponsored-divider-mark: {
@@ -148,7 +148,7 @@
 	},
 
 	.sponsored-footnotes: {
-		font-name: "WhitneySSm-Medium",
+		font-name: "Whitney-Medium",
 		font-size: { if: =scale.phone, then: {$multiply: [14, =view.zoomlevel]}, else: {$multiply: [11, =view.zoomlevel]} },
 		line-height: { if: =scale.phone, then: {$multiply: [18, =view.zoomlevel]}, else: {$multiply: [15, =view.zoomlevel]} },
 		layout-grid-line: 0,
@@ -159,19 +159,19 @@
 	.sponsored-related-content: {
 		layout-grid-line: 0,
 		layout-grid-line-offset: 0,
-		font-name: "WhitneySSm-Medium",
+		font-name: "Whitney-Medium",
 		color: #222222
 	},
 
 	.sponsored-questions: {
 		layout-grid-line: 0,
 		layout-grid-line-offset: 0,
-		font-name: "WhitneySSm-Medium",
+		font-name: "Whitney-Medium",
 		color: #222222
 	},
 
 	.sponsored-disclaimer: {
-		font-name: "WhitneySSm-Medium",
+		font-name: "Whitney-Medium",
 		font-size: { if: =scale.phone, then: {$multiply: [14, =view.zoomlevel]}, else: {$multiply: [11, =view.zoomlevel]} },
 		line-height: { if: =scale.phone, then: {$multiply: [18, =view.zoomlevel]}, else: {$multiply: [15, =view.zoomlevel]} },
 		layout-grid-line: 0,

@@ -23,7 +23,7 @@
 			line-height: {$multiply: [22, =view.zoomlevel]},
 			text-align: justify,
 			hyphens: auto,
-			font-name: "Whitney-Medium",
+			font-name: "WhitneySSm-Medium",
 			padding: [16, 0, 0, 0]
 		},
 		.article_flashline: {
@@ -32,14 +32,14 @@
 			border-color: #e1e0df
 		},
 		.article_headline: {
-			font-name: "Whitney-Medium",
+			font-name: "WhitneySSm-Medium",
 			font-size: 30,
 			line-height:36,
 			color: #262626,
 			padding:[0, 0, 0, 0]
 		},
 		.article_subhed:{
-			font-name: "Whitney-BookItalic",
+			font-name: "WhitneySSm-BookItalic",
 			font-size: 20,
 			line-height: 27,
 			color: #6D6D5D,
@@ -47,7 +47,7 @@
 		},
 		.module_flashline: {
 			font-size: 16,
-			font-name: "Whitney-Semibold",
+			font-name: "WhitneySSm-Semibold",
 			color: #004990,
 			padding: [16, 0, 0, 0]
 		},
@@ -60,7 +60,7 @@
 			padding: [0, 0, 0, 0]
 		},
 		.article_pubdate: {
-			font-name: "Whitney-Medium",
+			font-name: "WhitneySSm-Medium",
 			font-size: 16,
 			color: #222222,
 			padding: [10, 0, 0, 0]

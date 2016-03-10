@@ -1,12 +1,12 @@
 {
 	strong: {
-		font-name:{if: =intent.article, then:Whitney-Semibold}
+		font-name:{if: =intent.article, then:WhitneySSm-Semibold}
 	},
 	em: {
-		font-name:{if: =intent.article, then:Whitney-MediumItalic}
+		font-name:{if: =intent.article, then:WhitneySSm-MediumItalic}
 	},
 	cite: {
-		font-name:{if: =intent.article, then:Whitney-BookItalic}
+		font-name:{if: =intent.article, then:WhitneySSm-BookItalic}
 	},
 	#sponsored_strap:{
 		min-height: 40,
@@ -19,7 +19,7 @@
 		padding: [14, 0, 0, 0]
 	},
 	#sponsored_strap_mark:{
-		font-name: "Whitney-Semibold",
+		font-name: "WhitneySSm-Semibold",
 		font-size: 12,
 		color: #333333,
 		content: "CONTENT FROM OUR SPONSOR"
@@ -72,14 +72,14 @@
 	},
 
 	.sponsored_headline: {
-		font-name: "Whitney-Medium",
+		font-name: "WhitneySSm-Medium",
 		font-size: 20,
 		line-height: 25,
 		color: #351c15,
 		padding: [0, 0, 5, 0]
 	},
 	.sponsored_summary: {
-		font-name: "Whitney-Book",
+		font-name: "WhitneySSm-Book",
 		font-size: { if: =scale.phone, then: 16, else: 14 },
 		line-height: { if: =scale.phone, then: 25, else: 18 },
 		color: #333333
@@ -148,7 +148,7 @@
 	},
 
 	.sponsored-footnotes: {
-		font-name: "Whitney-Medium",
+		font-name: "WhitneySSm-Medium",
 		font-size: { if: =scale.phone, then: {$multiply: [14, =view.zoomlevel]}, else: {$multiply: [11, =view.zoomlevel]} },
 		line-height: { if: =scale.phone, then: {$multiply: [18, =view.zoomlevel]}, else: {$multiply: [15, =view.zoomlevel]} },
 		layout-grid-line: 0,
@@ -159,19 +159,19 @@
 	.sponsored-related-content: {
 		layout-grid-line: 0,
 		layout-grid-line-offset: 0,
-		font-name: "Whitney-Medium",
+		font-name: "WhitneySSm-Medium",
 		color: #222222
 	},
 
 	.sponsored-questions: {
 		layout-grid-line: 0,
 		layout-grid-line-offset: 0,
-		font-name: "Whitney-Medium",
+		font-name: "WhitneySSm-Medium",
 		color: #222222
 	},
 
 	.sponsored-disclaimer: {
-		font-name: "Whitney-Medium",
+		font-name: "WhitneySSm-Medium",
 		font-size: { if: =scale.phone, then: {$multiply: [14, =view.zoomlevel]}, else: {$multiply: [11, =view.zoomlevel]} },
 		line-height: { if: =scale.phone, then: {$multiply: [18, =view.zoomlevel]}, else: {$multiply: [15, =view.zoomlevel]} },
 		layout-grid-line: 0,

@@ -19,7 +19,7 @@
             padding: [0, 16, 0, 16]
 		},
 		.article_flashline: {
-            font-name: Whitney-Semibold,
+            font-name: WhitneySSm-Semibold,
             font-size: 13,
             line-height: 22,
             border-width: [0, 0, 1, 0],
@@ -37,7 +37,7 @@
             color: #4f5757,
             font-size: 17,
             line-height: 22,
-            font-name: "Whitney-Book",
+            font-name: "WhitneySSm-Book",
             padding: { if-all: [
                     { if: =page.number, equals: 0, then: true, else: false },
                     { if: =scale.phone, then: true, else: false }

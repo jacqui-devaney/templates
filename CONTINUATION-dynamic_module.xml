@@ -87,13 +87,13 @@
             },
 			.module_headline: {
 				color:{if: =article.read, then: color.articleReadColor},
-                padding: [0, 16, 0, 24]
+                padding: [0, 16, 0, 20]
 			},
             p: {
 				padding: [0, 0, 0, 0]
                },
 			.body: {
-				padding: [4, 16, 0, 24]
+				padding: [4, 16, 0, 20]
 			},
 			#article_status: {
 				position: relative,

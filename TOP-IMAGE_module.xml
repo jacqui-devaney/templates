@@ -74,11 +74,8 @@
 	}</style>
 	<style>{
 		if: =scale.phone, then: {
-			jpml: {
-				padding:[0]
-			},
             .module_headline: {
-                padding: [0, 16, 4, 24]
+                padding: [0, 20, 4, 20]
             },
 			image: {
 				height: {$multiply: [=view.width, .665 ]},
@@ -90,8 +87,7 @@
 				display: none
 			},
 			#body: {
-                display: inherit,
-				padding: [0, 24, 0, 24]
+                display: inherit
 			},
 			.body: {
 				display: none
@@ -99,7 +95,7 @@
 			#summary: {
                 display: inherit,
                 text-align:left,
-                padding: [0, 0, 0, 0]
+                padding: [0, 20, 0, 20]
 			},
 			.opinion_dek: {
 				display: none
@@ -107,7 +103,7 @@
 			#article_status: {
 				position: relative,
 				padding: [{if: =options.show_body, then: 1, else: 5}, 4, 0, 4],
-				left: -24,
+				left: -20,
 				width: 16,
 				height: 16,
 				options: {
@@ -120,7 +116,7 @@
 					anchor-x: right,
                     padding: [0, 4, 0, 4],
 					width: 111
-				}, else: {if: =view.height, less-than: 200, then: [0, 24, 14, 0], else: [0, 4, 0, 4]}
+				}, else: {if: =view.height, less-than: 200, then: [0, 20, 14, 20], else: [0, 4, 0, 4]}
 			},
             .opinion_flashline: {
                 font-name: WhitneySSm-Semibold,
@@ -128,7 +124,7 @@
                 line-height: 22,
                 text-transform:uppercase,
                 color: #878f8f,
-                padding: [-11, 0, 4, 24],
+                padding: [-11, 0, 4, 20],
                 display: {if: =page.section, equals: "OPINION", then: none, else: {if: =article.category, equals: "Opinion", then: inherit, else: none}}
             }
 		}, else: {
@@ -177,7 +173,6 @@
 	</box>
 	<panel id="vertical">
         <p class="opinion_flashline">OPINION</p>
-		<box id="article_status" embed="article-status"></box>
 		<panel id="headline">
 			<p class="module_headline"><mark class="m_headline" /></p>
 			<h2 class="opinion_dek"><mark class="subhed-mark" /></h2>

@@ -15,8 +15,7 @@
 			flow: article_body
 		},
 		.article_body: {
-            hyphens: auto,
-            padding: [0, 16, 0, 16]
+            hyphens: auto
 		},
 		.article_flashline: {
             font-name: WhitneySSm-Semibold,
@@ -26,10 +25,10 @@
             border-color: #e1e0df
 		},
         #media_container:{
-            padding: [0, 0, 19, 0]
+            padding: [0, 0, 20, 0]
         },
         #media_asset:{
-            padding: [{if: =media.height, more-than: =media.width, then: -18, else: 0}, {if: =media.height, more-than: =media.width, then: 16, else: 4}, {if: =media.height, more-than: =media.width, then: -10, else: 10}, {if: =media.height, more-than: =media.width, then: 16, else: 4}]
+            padding: [{if: =media.height, more-than: =media.width, then: -18, else: 0}, {if: =media.height, more-than: =media.width, then: 20, else: 4}, {if: =media.height, more-than: =media.width, then: -10, else: 10}, {if: =media.height, more-than: =media.width, then: 16, else: 4}]
         },
         #media_caption: {
             layout-grid-line: 1,
@@ -41,7 +40,7 @@
             padding: { if-all: [
                     { if: =page.number, equals: 0, then: true, else: false },
                     { if: =scale.phone, then: true, else: false }
-                ], then: [0, 16, 0, 16], else: [0, 0, 0, 0]
+                ], then: [0, 20, 0, 20], else: [0, 0, 0, 0]
         }},
         #mark_caption: {
             content: =media.caption

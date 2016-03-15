@@ -108,78 +108,7 @@
                 "You can search for WSJ articles by scrolling to the very top of the navigation menu."
             ],
 
-            footer_tip: { if: =display.width.regular, then: {$random: [0, 11]}, else: {$random: [0, 7] }},
-
-			ad: {
-				prefix: { $join: [
-					{ $switch: [
-						{ if: =device.model, starts-with: iPad, then: ipad },
-						{ if: =device.model, starts-with: iPhone, then: iphone },
-						{ if: =device.model, starts-with: iPod, then: iphone },
-						{ if: =device.platform, equals: Android, then: honeycomb },
-						"default"
-					] },
-                    ".",
-                    { $switch: [ =issue.edition,
-                      { if: =article.headline, ends-with: "\u200a", then: "asia" },
-                      { if: =article.headline, ends-with: "\u2009", then: "europe" },
-                    "us"] },
-                    ".wsj.app/",
-					{ $switch: [
-						{ if: =page.section, equals: FRONT_SECTION, then:
-							{ if: =article.frompage, equals: 1, then: frontpage, else: front }
-						},
-						{ if: =page.section, equals: OPINION, then: opinion },
-						{ if: =page.section, equals: MARKETPLACE, then: marketplace },
-                        { if: =page.section, equals: BUSINESS_AND_TECH, then: marketplace },
-						{ if: =page.section, equals: MONEY_AND_INVESTING, then: money },
-						{ if: =page.section, equals: WEEKEND_JOURNAL, then: weekendjournal },
-						{ if: =page.section, equals: FRIDAY_JOURNAL, then: fridayjournal },
-						{ if: =page.section, equals: ARENA, then: arena },
-						{ if: =page.section, equals: PERSONAL_JOURNAL, then: personaljournal },
-						{ if: =page.section, equals: JOURNAL_REPORT, then: journalreport },
-						{ if: =page.section, equals: WHATS_NEWS, then: whatsnews },
-						{ if: =page.section, equals: NEW_YORK, then: greaterny },
-						{ if: =page.section, equals: BUSINESS_AND_FINANCE, then: businessfinance },
-						{ if: =page.section, equals: REVIEW, then: review },
-						{ if: =page.section, equals: OFF_DUTY, then: offduty },
-						{ if: =page.section, equals: CAMPAIGN, then: campaign },
-						{ if: =page.section, equals: WSJ_MAGAZINE, then: magazine },
-						{ if: =page.section, equals: SPECIAL_REPORT, then: specialreport },
-						{ if: =page.section, equals: SPECIAL_REPORT_TWO, then: specialreporttwo },
-						{ if: =page.section, equals: EUROPE, then: europe },
-						{ if: =page.section, equals: ASIA, then: asia },
-						{ if: =page.section, equals: LIFE_AND_STYLE, then: lifeandstyle },
-						{ if: =page.section, equals: MANSION, then: realestate },
-						{ if: =page.section, equals: HONG_KONG, then: hongkong },
-						{ if: =page.section, equals: DEUTSCHLAND, then: deutschland },
-						{ if: =page.section, equals: ANALYSE, then: analyse },
-						{ if: =page.section, equals: WIRTSCHAFT_AND_FINANZEN, then: wirtschaft },
-						{ if: =page.section, equals: UNTERNEHMEN, then: unternehmen },
-						{ if: =page.section, equals: INTERNATIONAL, then: international },
-						{ if: =page.section, equals: TECHNOLOGIE, then: technologie },
-						{ if: =page.section, equals: SEITE_EINS, then:
-							{ if: =article.frompage, equals: 1, then: aufmacher, else: seiteeins }
-						},
-						{ if: =page.section, equals: JAPAN_AND_WORLD, then: japan },
-						{ if: =page.section, equals: LIFESTYLE, then: lifestyle },
-						{ if: =page.section, equals: BUSINESS_AND_MARKETS, then: businessmarkets },
-						{ if: =page.section, equals: BUSINESS_AND_ECONOMY, then: businesseconomy },
-						{ if: =page.section, equals: WSJ_MONEY, then: wsjmoney },
-						{ if: =page.section, equals: SAVED, then: saved },
-						{ if: =page.section, equals: TOP_NEWS, then: topnews },
-						{ if: =page.section, equals: WORLD, then: world },
-						{ if: =page.section, equals: BUSINESS, then: business },
-						{ if: =page.section, equals: TECHNOLOGY, then: technology },
-						{ if: =page.section, equals: TECH, then: technology },
-						{ if: =page.section, equals: MARKETS, then: markets },
-						{ if: =page.section, equals: LIFE_AND_CULTURE, then: lifeandculture },
-						{ if: =page.section, equals: US, then: us },
-
-						"default"
-					] }
-				] }
-			}
+            footer_tip: { if: =display.width.regular, then: {$random: [0, 11]}, else: {$random: [0, 7] }}
 		}
 	]
 

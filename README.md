@@ -45,3 +45,24 @@ CIO, CFO, and Risk & Compliance all require affinity and article templates to be
 	curl -X PUT -H "Content-Type: application/json" -d '{"template":"ARTICLE-deloitte_template.xml"}' $API/publications/wsj/regions/us/mastheads/SWEET/layout/articles/type/Deloitte%20Cfo%20Blog
 
 	curl -X PUT -H "Content-Type: application/json" -d '{"template":"ARTICLE-deloitte_template.xml"}' $API/publications/wsj/regions/us/mastheads/SWEET/layout/articles/type/Deloitte%20Riskandcompliance%20Blog
+
+## Debugging
+
+To debug ads you can display the passed in ads dictionary with this `ejs` and `JPML` pair:
+
+
+	<style>{
+		#m_debug: { background-color:"rgba(232, 0, 0, .3)" },
+		#m_debug_page: { content: { $join: ["page = ", =page.number ] }},
+		#m_debug_id: { content: { $join: ["lineItemID = ", =ad.lineItemID ] }},
+		#m_debug_loaded: { content: { if: =ad.loaded, then: "loaded", else: "not loaded" }},
+		#m_debug_type: { content: { $join: ["type = ", =ad.type ] }}
+	}</style>
+
+
+	<panel id="m_debug">
+		<p><mark id="m_debug_loaded"/></p>
+		<p><mark id="m_debug_id"/></p>
+		<p><mark id="m_debug_type"/></p>
+		<p><mark id="m_debug_page"/></p>
+	</panel>

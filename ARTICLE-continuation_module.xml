@@ -101,11 +101,22 @@
 					}
 				}
 			}, else: {
-				#article_advertisement: {
-					display: none
+				<!-- Show Ad -->
+				if: =ad.type, equals: 3, then: {
+					<!-- Skyscraper Ad -->
+					#media: {
+						display: none
+					},
+					.article_body: {
+						column-count: {if: =landscape, then:2, else:1},
+						padding: [0, 12, 0, 0]
+					}
+				}, else: {
+					<!-- Fullpage Ad -->
 				}
 			}
 		}, else: {
+			<!-- Hide not loaded ad -->
 			#article_advertisement: {
 				display: none
 			}

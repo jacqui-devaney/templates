@@ -43,27 +43,54 @@
       }
 		]
 	}</style>
-  <style>{
-	if: =intent.ad, then: {
-		jpml: {
-			min-height:0,
-			padding: [0,0,0,0]
-		},
-		#fullpage_container: {
-			display: inherit
-		},
-		#view: {
-			display: none
-		},
-		#page_details: {
-			display: none
+	<style>{
+		if-all: [ { if: =page.number, equals: 1 }, =ad.loaded ], then: { 
+			if: ["383422586", "383422226", "383421746"], contains: ad.lineItemID, then: { 
+				if: =ad.type, equals: 4, then: {
+					<!-- Fullpage Phantom Ad -->
+					#fullpage_container: {
+						position: absolute,
+						height: 1,
+						width: 1 
+					}
+				}, else: {
+					<!-- Hide other phantom ads -->
+					#fullpage_container: {
+						display: none
+					}
+				}
+			}, else: {
+				if: =ad.type, equals: 4, then: { 
+					<!-- Fullpage Ad -->
+					jpml: {
+						min-height:0,
+						padding: [0,0,0,0]
+					},
+					#fullpage_container: {
+						display: inherit
+					},
+					#view: {
+						position: absolute,
+						height: 1,
+						width: 1 
+					},
+					#page_details: {
+						display: none
+					}
+				}, else: {
+					<!-- Hide other ads -->
+					#fullpage_container: {
+						display: none
+					}
+				}
+			}
+		}, else: {
+			<!-- No Loaded ad, just hide the ad -->
+			#fullpage_container: {
+				display: none
+			}
 		}
-	}, else: {
-		#fullpage_container: {
-			display: none
-		}
-	}
-  }</style>
+	}</style>
   <box id="fullpage_container">
       <box id="fullpage_ad" class="ad-fullpage" embed="fullpagead" />
   </box>

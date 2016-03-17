@@ -45,13 +45,13 @@ grid_builder.prototype.widthForLandscapeColumnCount = function(columnCount) {
 };
 
 grid_builder.prototype.positionForPortraitPositionIndex = function(positionIndex) {
-  var startingIndex = this.portraitLeftMargin;
+  var startingValue = this.portraitLeftMargin;
 
   if (positionIndex <= 1) {
-    return startingIndex;
+    return startingValue;
   }
 
-  var finalPosition = startingIndex + this.widthForPortraitColumnCount(positionIndex - 1);
+  var finalPosition = startingValue + this.widthForPortraitColumnCount(positionIndex - 1) + this.interColumnMargin;
 
   return finalPosition;
 };
@@ -63,7 +63,7 @@ grid_builder.prototype.positionForLandscapePositionIndex = function(positionInde
     return startingIndex;
   }
 
-  var finalPosition = startingIndex + this.widthForLandscapeColumnCount(positionIndex - 1);
+  var finalPosition = startingIndex + this.widthForLandscapeColumnCount(positionIndex - 1) + this.interColumnMargin;
   return finalPosition;
 };
 

@@ -52,37 +52,6 @@
         }}
 		]
     }</style>
-
-	<!-- <style>{ -->
-	<!-- 	if-all: [ { if: =page.number, equals: 1 }, =ad.loaded ], then: { -->
-	<!-- 		if: ["383422586", "383422226", "383421746"], contains: ad.lineItemID, then: { -->
-	<!-- 			if: =ad.type, equals: 4, then: { -->
-	<!-- 				#article_advertisement: { -->
-	<!-- 					position: absolute, -->
-	<!-- 					height: 1, -->
-	<!-- 					width: 1 -->
-	<!-- 				} -->
-	<!-- 			}, else: { -->
-	<!-- 			} -->
-	<!-- 		}, else: { -->
-	<!-- 			if: =ad.type, equals: 4, then: { -->
-	<!-- 				#media: { -->
-	<!-- 					display: none -->
-	<!-- 				}, -->
-	<!-- 				.article_body: { -->
-	<!-- 					column-count: {if: =landscape, then:2, else:1}, -->
-	<!-- 					padding:[0, 12, 0, 0] -->
-	<!-- 				} -->
-	<!-- 			}, else: { -->
-	<!-- 			} -->
-	<!-- 		} -->
-	<!-- 	}, else: { -->
-	<!-- 		#article_advertisement: { -->
-	<!-- 			display: none -->
-	<!-- 		} -->
-	<!-- 	} -->
-	<!-- }</style> -->
-
 	<style>{
 		if-all: [ { if: =page.number, equals: 1 }, =ad.loaded ], then: {
 			if: ["383422586", "383422226", "383421746"], contains: ad.lineItemID, then: {
@@ -95,15 +64,13 @@
 						width: 1
 					}
 				}, else: {
-					<!-- Full Page Phantom Ad -->
+					<!-- Hide other phantom ads -->
 					#article_advertisement: {
-						position: absolute,
-						height: 1,
-						width: 1 
+						display: none
 					}
 				}
 			}, else: {
-				<!-- Show Ad -->
+				<!-- Not Phantom Ad -->
 				if: =ad.type, equals: 3, then: {
 					<!-- Skyscraper Ad -->
 					#media: {
@@ -114,11 +81,18 @@
 						padding: [0, 12, 0, 0]
 					}
 				}, else: {
-					<!-- Fullpage Ad -->
-					#body_continuation: {
-						content: from-flow(article_body),
-						flow: article_body
+					<!-- Hide all other ads -->
+					#article_advertisement: {
+						display: none
 					}
+					<!-- Might need this for fullpage ads? -->
+					<!-- if: =ad.type, equals: 4, then: { -->
+					<!-- 	#body_continuation: { -->
+					<!-- 		content: from-flow(article_body), -->
+					<!-- 		flow: article_body -->
+					<!-- 	} -->
+
+					<!-- } -->
 				}
 			}
 		}, else: {

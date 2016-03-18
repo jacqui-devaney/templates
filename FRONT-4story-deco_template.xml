@@ -10,10 +10,7 @@
 			options: {
 				hideHeaderBorder: true
 			}
-		},
-		jpml: {
-			background-color: red
-		},
+		}
 	}</style>
 	<style> {
 		$switch: [
@@ -34,8 +31,7 @@
 				#b2:	{
 					top:509,
 					height:175,
-					options:{ bind: {if: =articles.b2.no_binding, then: none}, medium_headline:true, top_border:true},
-					background-color:red
+					options:{ bind: {if: =articles.b2.no_binding, then: none}, medium_headline:true, top_border:true}
 				},
 				#b3:	{
 					top:509,

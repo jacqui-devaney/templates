@@ -12,7 +12,7 @@
 		$join: [
 		{#body_container: {
             column-count: { if: =portrait, then: 3, else: 4},
-            column-gutter: 12,
+            column-gutter: 20,
 			flow: article_body,
 			min-height: {if: =page.hasmedia, then:400, else:300},
 			padding:[10, 0, 0, 0],

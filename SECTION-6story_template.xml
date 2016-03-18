@@ -89,12 +89,12 @@
 					height:219,
 					options:{ bind: {if: =articles.b6.no_binding, then: none}, medium_headline:true, top_border:true, show_flashline:true}
 				},
-                #footer: {
-                    top: 820,
-                    height: 100,
-                    display: {if: =page.hasad, then: none, else: inherit},
-                    text-align: center
-                }
+				#footer: {
+					top: 820,
+					height: 100,
+					display: {if: =page.hasad, then: none, else: inherit},
+					text-align: center
+				}
 			}},
 			{if: =landscape, then: {
 				#b1:	{
@@ -126,14 +126,14 @@
 					top:395,
 					height:165,
 					options:{ bind: {if: =articles.b6.no_binding, then: none}, medium_headline:true, top_border:true, show_flashline:true}
-                },
-                #footer: {
-                    top: 570,
-                    height: 100,
-                    text-align: center,
-                    display: {if: =page.hasad, then: none, else: inherit},
-                    options:{bind: none, top_border: true}
-                }
+				},
+				#footer: {
+					top: 570,
+					height: 100,
+					text-align: center,
+					display: {if: =page.hasad, then: none, else: inherit},
+					options:{bind: none, top_border: true}
+				}
 			}}
 		]
 	} </style>

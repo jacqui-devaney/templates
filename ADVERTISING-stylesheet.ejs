@@ -1,46 +1,88 @@
 {
-	.hidden_tablet: {display:none},
-	.hidden_phone: {display:inherit},
-
-	#front_page: {
-		display:{if: =scale.phone, then:none, else:inherit},
-		position:{if: =scale.phone, then:absolute, else:inherit},
-		top: {if: =landscape, then:568, else:824},
-		height: {if: =scale.phone, then:50, else:90}
-	},
-	#banner_ad: 	{
-		pixels-per-point-x: 1,
-		pixels-per-point-y: 1,
-		anchor-x:center,
-		anchor-y:middle,
-		width: =view.width,
-		height: {if: =scale.phone, then:50, else:90}
-	},
-	#article_advertisement: {
-		pixels-per-point-x: 1,
-		pixels-per-point-y: 1,
-		width:484,
-		top:0,
-		bottom:0,
-		right:0,
-		border-width:[0, 0, 0, 1],
-		border-color:#d8d8d8
-	},
-	#skyscraper_ad:{
-		width:300,
-		height:600,
-		left:{if: =portrait, then:101, else:103},
-		anchor-y:middle
-	},
-	#fullpage_container: {
-		height: {if: =scale.phone, then:270}
-	},
-	#fullpage_ad: {
-		anchor-x:center,
-		display: inherit,
-		pixels-per-point-x: 1,
-		pixels-per-point-y: 1,
-		width: {if: =scale.phone, then: 300, else: =view.width},
-		height: {if: =scale.phone, then: 250, else: =view.height}
-	}
+	$join: [
+		{
+			#front_page: {
+				display:{if: =scale.phone, then:none, else:inherit},
+				position:{if: =scale.phone, then:absolute, else:inherit},
+				top: {if: =landscape, then:568, else:824},
+				height: {if: =scale.phone, then:50, else:90}
+			},
+			#banner_ad: 	{
+				pixels-per-point-x: 1,
+				pixels-per-point-y: 1,
+				anchor-x:center,
+				anchor-y:middle,
+				width: =view.width,
+				height: {if: =scale.phone, then:50, else:90}
+			},
+			#article_advertisement: {
+				pixels-per-point-x: 1,
+				pixels-per-point-y: 1,
+				width:484,
+				top:0,
+				bottom:0,
+				right:0,
+				border-width:[0, 0, 0, 1],
+				border-color:#d8d8d8
+			},
+			#skyscraper_ad:{
+				width:300,
+				height:600,
+				left:{if: =portrait, then:101, else:103},
+				anchor-y:middle
+			},
+			#fullpage_container: {
+				height: {if: =scale.phone, then:270}
+			},
+			#fullpage_ad: {
+				anchor-x:center,
+				display: inherit,
+				pixels-per-point-x: 1,
+				pixels-per-point-y: 1,
+				width: {if: =scale.phone, then: 300, else: =view.width},
+				height: {if: =scale.phone, then: 250, else: =view.height}
+			},
+			.hidden_tablet: { display:none },
+            .article_body: {column-count: { if: =portrait, then: 3, else: 4}},
+			.hidden_phone: { display:inherit }
+		},
+		{
+			if: =intent.article, then: {
+				if-all: [ { if: =page.number, equals: 1 }, =ad.loaded ], then: { 
+					if: ["383422586", "383422226", "383421746"], contains: ad.lineItemID, then: { 
+						if: =ad.type, equals: "Skyscraper", then: {
+							#article_advertisement: {
+								position: absolute,
+								height: 1,
+								width: 1
+							}
+						}, else: {
+							#article_advertisement: {
+								display: none
+							}
+						}
+					}, else: {
+						if: =ad.type, equals: "Skyscraper", then: {
+							#media: {
+								display: none
+							},
+							.article_body: {
+								column-count: {if: =landscape, then:2, else:1},
+								padding: [0, 12, 0, 0]
+							}
+						}, else: {
+							#article_advertisement: {
+								display: none
+							}
+						}
+					}
+				}, else: {
+					#article_advertisement: {
+						display: none
+					}
+				}
+			}, else: {
+			}
+		}
+	]
 }

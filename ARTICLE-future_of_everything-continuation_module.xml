@@ -53,15 +53,42 @@
 		]
     }</style>
 	<style>{
-		if: =page.hasad, then: {
-			#media_container: {
-				display: none
-			},
-			.article_body: {
-				column-count: {if: =landscape, then:2, else:1},
-				padding:[0, 12, 0, 0]
+		if-all: [ { if: =page.number, equals: 1 }, =ad.loaded ], then: { 
+			if: ["383422586", "383422226", "383421746"], contains: ad.lineItemID, then: { 
+				<!-- Show 1px for Phantom Ad -->
+				if: =ad.type, equals: 3, then: {
+					<!-- Skyscraper Phantom Ad -->
+					#article_advertisement: {
+						position: absolute,
+						height: 1,
+						width: 1
+					}
+				}, else: {
+					<!-- Hide other phantom ads -->
+					#article_advertisement: {
+						display: none
+					}
+				}
+			}, else: {
+				<!-- Not Phantom Ad -->
+				if: =ad.type, equals: 3, then: {
+					<!-- Skyscraper Ad -->
+					#media: {
+						display: none
+					},
+					.article_body: {
+						column-count: {if: =landscape, then:2, else:1},
+						padding: [0, 12, 0, 0]
+					}
+				}, else: {
+					<!-- Hide all other ads -->
+					#article_advertisement: {
+						display: none
+					}
+				}
 			}
 		}, else: {
+			<!-- Hide not loaded ad -->
 			#article_advertisement: {
 				display: none
 			}

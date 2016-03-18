@@ -71,8 +71,8 @@
 					},
 					#view: {
 						position: absolute,
-						height: 1,
-						width: 1 
+						height: 200,
+						width: 10
 					},
 					#page_details: {
 						display: none
@@ -91,9 +91,9 @@
 			}
 		}
 	}</style>
+  <box id="page_details" embed="pagedescription" />
+  <box id="view" embed="article" class="column16-12 positionx1 maude" />
   <box id="fullpage_container">
       <box id="fullpage_ad" class="ad-fullpage" embed="fullpagead" />
   </box>
-  <box id="page_details" embed="pagedescription" />
-  <box id="view" embed="article" class="column16-12 positionx1 maude" />
 </jpml>

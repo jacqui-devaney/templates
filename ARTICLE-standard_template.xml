@@ -46,7 +46,7 @@
 	<style>{
 		if-all: [ { if: =page.number, equals: 1 }, =ad.loaded ], then: { 
 			if: ["383422586", "383422226", "383421746"], contains: ad.lineItemID, then: { 
-				if: =ad.type, equals: 4, then: {
+				if: =ad.type, equals: "Fullpage", then: {
 					<!-- Fullpage Phantom Ad -->
 					#fullpage_container: {
 						position: absolute,
@@ -60,7 +60,7 @@
 					}
 				}
 			}, else: {
-				if: =ad.type, equals: 4, then: { 
+				if: =ad.type, equals: "Fullpage", then: { 
 					<!-- Fullpage Ad -->
 					jpml: {
 						min-height:0,

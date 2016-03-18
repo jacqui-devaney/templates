@@ -71,7 +71,7 @@
 				}
 			}, else: {
 				<!-- Not Phantom Ad -->
-				if: =ad.type, equals: 3, then: {
+				if: =ad.type, equals: "Skyscraper", then: {
 					<!-- Skyscraper Ad -->
 					#media: {
 						display: none

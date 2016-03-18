@@ -43,54 +43,6 @@
       }
 		]
 	}</style>
-	<style>{
-		if-all: [ { if: =page.number, equals: 1 }, =ad.loaded ], then: { 
-			if: ["383422586", "383422226", "383421746"], contains: ad.lineItemID, then: { 
-				if: =ad.type, equals: "Fullpage", then: {
-					<!-- Fullpage Phantom Ad -->
-					#fullpage_container: {
-						position: absolute,
-						height: 1,
-						width: 1 
-					}
-				}, else: {
-					<!-- Hide other phantom ads -->
-					#fullpage_container: {
-						display: none
-					}
-				}
-			}, else: {
-				if: =ad.type, equals: "Fullpage", then: { 
-					<!-- Fullpage Ad -->
-					jpml: {
-						min-height:0,
-						padding: [0,0,0,0]
-					},
-					#fullpage_container: {
-						display: inherit
-					},
-					#view: {
-						position: absolute,
-						height: 200,
-						width: 1
-					},
-					#page_details: {
-						display: none
-					}
-				}, else: {
-					<!-- Hide other ads -->
-					#fullpage_container: {
-						display: none
-					}
-				}
-			}
-		}, else: {
-			<!-- No Loaded ad, just hide the ad -->
-			#fullpage_container: {
-				display: none
-			}
-		}
-	}</style>
   <box id="page_details" embed="pagedescription" />
   <box id="view" embed="article" class="column16-12 positionx1 maude" />
   <box id="fullpage_container">

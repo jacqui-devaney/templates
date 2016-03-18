@@ -58,17 +58,16 @@
 				display: none
 			},
 			.article_body: {
-	            column-count: {if: =landscape, then:2, else:1},
+				column-count: {if: =landscape, then:2, else:1},
 				padding:[0, 12, 0, 0]
-	        }
-	    },
-	    else: {
+			}
+		}, else: {
 			#article_advertisement: {
 				display: none
 			}
-	    }
+		}
 	}</style>
-    <panel id="body_container">
+	<panel id="body_container">
 		<box id="article_advertisement">
 			<box id="skyscraper_ad" class="ad-skyscraper" embed="advertisement" />
 		</box>
@@ -86,5 +85,5 @@
 		<panel class="article_body">
 			<panel id="body_continuation" embed="body"/>
 		</panel>
-    </panel>
+	</panel>
 </jpml>

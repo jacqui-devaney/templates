@@ -81,20 +81,9 @@
 						padding: [0, 12, 0, 0]
 					}
 				}, else: {
-					if: =ad.type, equals: 4, then: {
-						<!-- Make sure articles with fullpage ads flow -->
-						#body_continuation: {
-							content: from-flow(article_body),
-							flow: article_body
-						},
-						#article_advertisement: {
-							display: none
-						}
-					}, else: {
-						<!-- Hide all other ads -->
-						#article_advertisement: {
-							display: none
-						}
+					<!-- Hide all other ads -->
+					#article_advertisement: {
+						display: none
 					}
 				}
 			}

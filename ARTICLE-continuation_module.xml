@@ -94,8 +94,7 @@
 			}
 		}
 	}</style>
-
-    <panel id="body_container">
+	<panel id="body_container">
 		<box id="article_advertisement">
 			<box id="skyscraper_ad" class="ad-skyscraper" embed="advertisement" />
 		</box>
@@ -111,13 +110,7 @@
             <p id="media_vr_link"><a href="http://wsj.com/virtual-reality"><mark id="mark_media_vr_link"/></a></p>
 		</box>
 		<panel class="article_body">
-			<panel id="m_debug">
-				<p><mark id="m_debug_loaded"/></p>
-				<p><mark id="m_debug_id"/></p>
-				<p><mark id="m_debug_type"/></p>
-				<p><mark id="m_debug_page"/></p>
-			</panel>
 			<panel id="body_continuation" embed="body"/>
 		</panel>
-    </panel>
+	</panel>
 </jpml>

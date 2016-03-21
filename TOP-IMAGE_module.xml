@@ -139,10 +139,11 @@
             },
 			.opinion_dek:{
 				padding:[0, 0, 8, 0],
-				font-name:DJ5Exchange-MediumItalic,
+				font-name:ChronicleSSmMedium-Italic,
 				font-size:14,
 				line-height:20,
-				color:#5D5D5D,
+				color1:#5D5D5D,
+				color:red,
 				display: none
 			},
 			#summary: {

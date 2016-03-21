@@ -43,7 +43,12 @@
 				height: {if: =scale.phone, then: 250, else: =view.height}
 			},
 			.hidden_tablet: { display:none },
-			.hidden_phone: { display:inherit }
+			.hidden_phone: { display:inherit },
+			#page_details: {
+			    options: {
+			        fullPageAd: false
+			    }
+			}
 		},
 		{
 			if: =intent.article, then: {
@@ -117,7 +122,9 @@
 								width: 1
 							},
 							#page_details: {
-								display: none
+							    options: {
+							        fullPageAd: true
+							    }
 							}
 						}, else: {
 							#fullpage_container: {

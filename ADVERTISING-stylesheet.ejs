@@ -86,9 +86,14 @@
 		{
 			if: =intent.article, then: {
 				if-all: [ { if: =page.number, equals: 1 }, =ad.loaded ], then: {
-					if: ["383422586", "383422226", "383421746"], contains: ad.lineitemid, then: {
+					if: ["383422586", "383422226", "383421746"], contains: =ad.lineItemID, then: {
 						if: =ad.type, equals: "Fullpage", then: {
 							#fullpage_container: {
+								position: absolute,
+								height: 1,
+								width: 1
+							},
+							#fullpage_ad: {
 								position: absolute,
 								height: 1,
 								width: 1

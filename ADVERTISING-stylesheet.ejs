@@ -85,8 +85,10 @@
 						display: none
 					}
 				}
+			}, else: {
+
 			}
-		}, 
+		},
 		{
 			if: =intent.article, then: {
 				if-all: [ { if: =page.number, equals: 1 }, =ad.loaded ], then: {
@@ -137,6 +139,8 @@
 						display: none
 					}
 				}
+			}, else: {
+
 			}
 		}
 	]

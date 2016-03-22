@@ -119,8 +119,8 @@
 			<image class="summary-image"/>
 		</box>
 		<panel id="headline">
-			<p class="module_headline"><mark class="m_headline" /></p>
 			<p class="module_flashline"><mark class="flashline-mark" /></p>
+			<p class="module_headline"><mark class="m_headline" /></p>
             <p class="byline"><mark class="byline-mark"/></p>
             <panel class="body">
             	<p><mark class="body-first-p-mark" /><mark class="body-mark"/></p>

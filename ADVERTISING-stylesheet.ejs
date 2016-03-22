@@ -53,7 +53,7 @@
 		{
 			if: =intent.article, then: {
 				if-all: [ { if: =page.number, equals: 1 }, =ad.loaded ], then: {
-					if: ["383422586", "383422226", "383421746"], contains: ad.lineItemID, then: {
+					if: ["383422586", "383422226", "383421746"], contains: =ad.lineItemID, then: {
 						if: =ad.type, equals: "Skyscraper", then: {
 							#article_advertisement: {
 								position: absolute,

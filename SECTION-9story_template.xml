@@ -58,7 +58,7 @@
                 #footer:{
                     display: none
                 },
-                #frontpage:{
+                #cube_ad_container:{
                     display: none
                 }
 			}},
@@ -77,7 +77,7 @@
 				#tabbar-container: {
 					display: none
 				},
-                #fullpage_ad: {
+                #cube_ad: {
                     border-width: {if: =scale.phone, then: [50]},
                     border-color: {if: =scale.phone, then: #edf1ed},
                     bottom: 10
@@ -120,7 +120,7 @@
                     text-align: center,
                     options:{bind: none, top_border: true}
                 },
-                #frontpage:{
+                #cube_ad_container:{
                     display: inherit,
                     width: =view.width,
                     background-color: #edf1ed,
@@ -521,8 +521,8 @@
 	<box id="b3" embed="article" class="column4 positionx13-5 maude unit_plain unit_166" module="TOP-IMAGE_module.xml" />
 	<box id="b4" embed="article" class="column4 positionx9  maude unit_plain unit_50" module="CONTINUATION-dynamic_module.xml" />
 
-    <box id="frontpage" class="phone_only maude unit_ad">
-        <box id="fullpage_ad" class="ad-fullpage" embed="fullpagead">
+    <box id="cube_ad_container" class="phone_only maude unit_ad">
+        <box id="cube_ad" class="ad-fullpage" embed="advertisement">
             <p id="ad_headline" class="ad_headline">ADVERTISEMENT</p>
         </box>
     </box>

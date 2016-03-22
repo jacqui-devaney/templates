@@ -39,8 +39,16 @@
 				display: inherit,
 				pixels-per-point-x: 1,
 				pixels-per-point-y: 1,
-				width: {if: =scale.phone, then: 300, else: =view.width},
-				height: {if: =scale.phone, then: 250, else: =view.height}
+				width: =view.width,
+				height: =view.height
+			},
+			#cube_ad: {
+				anchor-x:center,
+				display: inherit,
+				pixels-per-point-x: 1,
+				pixels-per-point-y: 1,
+				width: 300,
+				height: 250
 			},
 			.hidden_tablet: { display:none },
 			.hidden_phone: { display:inherit },
@@ -85,7 +93,6 @@
 						display: none
 					}
 				}
-
 			}, else: {
 				if: =ad.loaded, then: {
 					if: ["383422586", "383422226", "383421746"], contains: =ad.lineItemID, then: {
@@ -103,7 +110,6 @@
 					}
 				}
 			}
-
 		},
 		{
 			if: =intent.article, then: {

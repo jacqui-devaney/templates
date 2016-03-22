@@ -55,9 +55,6 @@
 	</panel>
 
     <style>{
-    .version_75_only: {
-        display: { if: =app.version, equals: "7.5", then: inherit, else: none }
-    },
     .maude: {
         position: relative,
         top: 0,
@@ -70,10 +67,9 @@
         height: 50,
         background-color: #e7e2d8
     },
-    #frontpage:{
+    #cube_ad_container:{
         width: =view.width,
         background-color: #edf1ed,
-        position: absolute,
         height: 320,
         padding: [36, 0, 0, 0]
     },
@@ -86,59 +82,16 @@
         text-align: center,
         padding: [-43, 40, 10, 40]
     },
-
-    #fullpage_ad: {
-        border-width: {if: =scale.phone, then: [46]},
-        border-color: {if: =scale.phone, then: #edf1ed},
+    #cube_ad: {
+        border-width: [46],
+        border-color: #edf1ed,
         bottom: 10
-    },
-
-    #footer: {
-        height: 325,
-        text-align: center,
-        options:{bind: none, top_border: true}
-    },
-
-    #footer_headline: {
-        font-name: ChronicleDisplay-Semi,
-        color: #2b333,
-        padding: [95, 30, 0, 30],
-        anchor-x: center,
-        anchor-y: middle,
-        font-size: 22,
-        line-height: 26,
-        content: "CONTENT FROM OUR SPONSOR"
-    },
-    #footer_tip: {
-        font-name: ChronicleDisplay-Semi,
-        color: #a7afaf,
-        font-size: 22,
-        line-height: 26,
-        anchor-x: center,
-        anchor-y: middle,
-        padding: [0, {if: =view.width, equals: 375, then: 32, else: 48}, 0, {if: =view.width, equals: 375, then: 32, else: 48}],
-        content: =phone_footer_tips[footer_tip]
-    },
-    #footerstrapinner: {
-        border-color: #cfd7d7,
-        border-width: [1, 0, 0, 0],
-        padding: [12, 8, 0, 8],
-        left: 0,
-        top: 0,
-        right: 0,
-        bottom: 0
     }
     }</style>
 
-    <box id="frontpage" class="version_75_only maude unit_ad">
-        <box id="fullpage_ad" class="ad-fullpage" embed="fullpagead">
+    <box id="cube_ad_container" class="maude unit_ad">
+        <box id="cube_ad" class="ad-fullpage" embed="advertisement">
             <p id="ad_headline" class="ad_headline">ADVERTISEMENT</p>
-        </box>
-    </box>
-    <box id="footer" class="version_75_only maude unit_plain unit_50">
-        <box id="footerstrapinner">
-            <p id="footer_headline" class="footer_headline">Did You Know?</p>
-                <p id="footer_tip"><mark id="footer_tip" /></p>
         </box>
     </box>
 </jpml>

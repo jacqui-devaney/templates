@@ -74,7 +74,10 @@
 	}</style>
     <box id="media_container">
             <p id="media_title"><mark id="mark_media_title"/></p>
-            <p id="media_vr_header"><mark id="mark_media_vr_header"/></p>
+            <panel id="media_vr_header">
+                <p id="media_vr_header_left"><mark id="mark_media_vr_header_left"/></p>
+                <p id="media_vr_header_right"><mark id="mark_media_vr_header_right"/></p>
+            </panel>
             <box id="large_media" embed="media"/>
             <p id="media_vr_footer"><mark id="mark_media_vr_footer"/></p>
             <box id="caption box">

@@ -68,13 +68,21 @@
 			}
 	    }
 	}</style>
+
     <panel id="body_container">
 		<box id="article_advertisement">
 			<box id="skyscraper_ad" class="ad-skyscraper" embed="advertisement" />
 		</box>
 		<box id="media">
-			<box id="media_asset" embed="media"/>
-			<p id="media_caption"><mark id="mark_caption" /></p>
+    		<p id="media_title"><mark id="mark_media_title"/></p>
+            <panel id="media_vr_header">
+                <p id="media_vr_header_left"><mark id="mark_media_vr_header_left"/></p>
+                <p id="media_vr_header_right"><mark id="mark_media_vr_header_right"/></p>
+            </panel>
+            <box id="media_asset" embed="media"/>
+    		<p id="media_vr_footer"><mark id="mark_media_vr_footer"/></p>
+            <p id="media_caption"><mark id="mark_caption" /></p>
+            <p id="media_vr_link"><a href="http://wsj.com/virtual-reality"><mark id="mark_media_vr_link"/></a></p>
 		</box>
 		<panel class="article_body">
 			<panel id="body_continuation" embed="body"/>

@@ -120,7 +120,6 @@
 				#footer: {
 					top: 820,
 					height: 100,
-					display: {if: =page.hasad, then: none, else: inherit},
 					text-align: center
 				}
 			}},
@@ -188,7 +187,6 @@
 			top: 570,
 			height: 100,
 			text-align: center,
-			display: {if: =page.hasad, then: none, else: inherit},
 			options:{bind: none, top_border: true}
 		}
 	}}

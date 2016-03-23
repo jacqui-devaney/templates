@@ -63,7 +63,6 @@
 			top: 820,
 			height: 100,
 			text-align: center,
-			display: {if: =page.hasad, then: none, else: inherit},
 			options:{bind: none, top_border: true}
 		}
 			}},
@@ -97,7 +96,6 @@
 			top: 570,
 			height: 100,
 			text-align: center,
-			display: {if: =page.hasad, then: none, else: inherit},
 			options:{bind: none, top_border: true}
 		}
 			}}

@@ -90,32 +90,29 @@
 			}
 		},
 		{
-			if: =intent.article, then: {
-				if: =ad.loaded, then: {
-					if: ["383422586", "383422226", "383421746"], contains: =ad.lineItemID, then: {
-						if: =ad.type, equals: "Cube", then: {
-							#cube_ad_container: {
-								position: absolute,
-								height: 1,
-								width: 1
-							},
-							#cube_ad: {
-								position: absolute,
-								height: 1,
-								width: 1
-							}
-						}, else: {
-
+			if: =ad.loaded, then: {
+				if: ["383422586", "383422226", "383421746"], contains: =ad.lineItemID, then: {
+					if: =ad.type, equals: "Cube", then: {
+						#cube_ad_container: {
+							position: absolute,
+							height: 1,
+							width: 1
+						},
+						#cube_ad: {
+							position: absolute,
+							height: 1,
+							width: 1
 						}
 					}, else: {
 
 					}
 				}, else: {
-					#cube_ad_container: {
-						display: none
-					}
+
 				}
 			}, else: {
+				#cube_ad_container: {
+					display: none
+				}
 			}
 		},
 		{

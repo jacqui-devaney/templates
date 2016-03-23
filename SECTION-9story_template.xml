@@ -55,12 +55,9 @@
 	<style> {
 		$switch: [
 			{if: =scale.rail, then: {
-                #footer:{
-                    display: none
-                },
-                #cube_ad_container:{
-                    display: none
-                }
+				#footer:{
+					display: none
+				}
 			}},
 			{if: =scale.phone, then: {
 				#page_details: {
@@ -77,11 +74,6 @@
 				#tabbar-container: {
 					display: none
 				},
-                #cube_ad: {
-                    border-width: {if: =scale.phone, then: [50]},
-                    border-color: {if: =scale.phone, then: #edf1ed},
-                    bottom: 10
-                },
 				#b1 : {
                  height:{
                     if: =view.width, more-than: 320, then:{
@@ -115,19 +107,11 @@
                     height: =size.continuation_height_large,
                     options: { bind: {if: =articles.b5.no_binding, then: none}, show_body: true, small_headline: true }
 				},
-                #footer: {
-                    height: 325,
-                    text-align: center,
-                    options:{bind: none, top_border: true}
-                },
-                #cube_ad_container:{
-                    display: inherit,
-                    width: =view.width,
-                    background-color: #edf1ed,
-                    position: absolute,
-                    height: 320,
-                    padding: [36, 0, 0, 0]
-                },
+				#footer: {
+				    height: 325,
+				    text-align: center,
+				    options:{bind: none, top_border: true}
+				},
 				#b6 : {
                     height: =size.continuation_height_large,
                     options: { bind: {if: =articles.b6.no_binding, then: none}, show_body: true, small_headline: true }

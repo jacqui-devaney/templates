@@ -15,47 +15,122 @@
 				width: =view.width,
 				height: {if: =scale.phone, then:50, else:90}
 			},
-			#article_advertisement: {
-				pixels-per-point-x: 1,
-				pixels-per-point-y: 1,
-				width:484,
-				top:0,
-				bottom:0,
-				right:0,
-				border-width:[0, 0, 0, 1],
-				border-color:#d8d8d8
-			},
-			#skyscraper_ad:{
-				width:300,
-				height:600,
-				left:{if: =portrait, then:101, else:103},
-				anchor-y:middle
-			},
-			#fullpage_container: {
-				height: {if: =scale.phone, then:270}
-			},
-			#fullpage_ad: {
-				anchor-x:center,
-				display: inherit,
-				pixels-per-point-x: 1,
-				pixels-per-point-y: 1,
-				width: =view.width,
-				height: =view.height
-			},
-			#cube_ad: {
-				anchor-x:center,
-				display: inherit,
-				pixels-per-point-x: 1,
-				pixels-per-point-y: 1,
-				width: 300,
-				height: 250
-			},
 			.hidden_tablet: { display:none },
 			.hidden_phone: { display:inherit },
 			#page_details: {
 			    options: {
 			        fullPageAd: false
 			    }
+			}
+		},
+		{
+			if: =scale.phone, then:{
+				#cube_ad_container: {
+					width: =view.width,
+					background-color: #edf1ed,
+					height: 320,
+					padding: [36, 0, 0, 0],
+					display: { if: =scale.rail, then: none, else: inherit },
+					position: { if: =intent.section, then: absolute, else: inherit }
+				},
+				#cube_ad: {
+					border-width: [46],
+					border-color: #edf1ed,
+					bottom: 10
+				},
+				.unit_ad: {
+					width: 320,
+					height: 50,
+					background-color: #e7e2d8
+				},
+				#cube_ad: {
+					anchor-x:center,
+					display: inherit,
+					pixels-per-point-x: 1,
+					pixels-per-point-y: 1,
+					width: 300,
+					height: 250
+				},
+				#ad_headline:{
+					font-name: "WhitneySSm-Book",
+					font-size: 13,
+					line-height: 45,
+					color: #a7afaf,
+					display: inherit,
+					text-align: center,
+					padding: [-43, 40, 10, 40]
+				}
+			}, else: {
+				#fullpage_ad: {
+					anchor-x:center,
+					display: inherit,
+					pixels-per-point-x: 1,
+					pixels-per-point-y: 1,
+					width: =view.width,
+					height: =view.height
+				},				#article_advertisement: {
+					pixels-per-point-x: 1,
+					pixels-per-point-y: 1,
+					width:484,
+					top:0,
+					bottom:0,
+					right:0,
+					border-width:[0, 0, 0, 1],
+					border-color:#d8d8d8
+				},
+				#skyscraper_ad:{
+					width:300,
+					height:600,
+					left:{if: =portrait, then:101, else:103},
+					anchor-y:middle
+				},
+				#fullpage_container: {
+					height: 270
+				}
+			}
+		},
+		{
+			if: =intent.article, then: {
+				if: =ad.loaded, then: {
+					if: ["383422586", "383422226", "383421746"], contains: =ad.lineItemID, then: {
+						if: =ad.type, equals: "Cube", then: {
+							#cube_ad_container: {
+								position: absolute,
+								height: 1,
+								width: 1
+							},
+							#cube_ad: {
+								position: absolute,
+								height: 1,
+								width: 1
+							}
+						}, else: {
+
+						}
+					}, else: {
+
+					}
+				}, else: {
+					#cube_ad_container: {
+						display: none
+					}
+				}
+			}, else: {
+				if: =ad.loaded, then: {
+					if: ["383422586", "383422226", "383421746"], contains: =ad.lineItemID, then: {
+						#banner_ad: {
+							position: absolute,
+							height: 1,
+							width: 1
+						}
+					}, else: {
+
+					}
+				}, else: {
+					#banner_ad: {
+						display: none
+					}
+				}
 			}
 		},
 		{

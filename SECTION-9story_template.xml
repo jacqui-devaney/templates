@@ -146,75 +146,75 @@
 			}}},
 			{if: =portrait, then: {
 				#b1:	{
-					top:22,
+					top:28,
 					height:510,
 					options: { bind: {if: =articles.b1.no_binding, then: none}, module: url(TOP-IMAGE_module.xml)}
                 },
 				#b2:	{
-					top:554,
+					top:549,
 					height:360,
 					options: { bind: {if: =articles.b2.no_binding, then: none} }
 				},
 				#b3:{
-					top:554,
+					top:549,
 					height:360,
 					options: { bind: {if: =articles.b3.no_binding, then: none} }
 				},
 				#b4:	{
-					top:26,
+					top:25,
 					height:160,
 					options: { bind: {if: =articles.b4.no_binding, then: none} }
 				},
 				#b5:	{
-					top:194,
+					top:195,
 					height:150,
 					options: { bind: {if: =articles.b5.no_binding, then: none} }
 				},
 				#b6:	{
-					top:354,
+					top:355,
 					height:130,
 					options: { bind: {if: =articles.b6.no_binding, then: none} }
 				},
 				#b7:	{
-					top:494,
+					top:495,
 					height:130,
 					options: { bind: {if: =articles.b7.no_binding, then: none} }
 				},
 				#b8:	{
-					top:634,
+					top:635,
 					height:130,
 					options: { bind: {if: =articles.b8.no_binding, then: none} }
 				},
 				#b9:	{
-					top:774,
+					top:775,
 					height:130,
 					options: { bind: {if: =articles.b9.no_binding, then: none} }
 				}
 			}},
 			{if: =landscape, then: {
 				#b1:	{
-					top:33,
-					height:470,
+					top:30,
+					height:480,
 					options: { bind: {if: =articles.b1.no_binding, then: none} }
 				},
 				#b2:	{
 					top:30,
-					height:315,
+					height:325,
 					options: { bind: {if: =articles.b2.no_binding, then: none} }
 				},
 				#b3:	{
 					top:30,
-					height:315,
+					height:325,
 					options: { bind: {if: =articles.b3.no_binding, then: none} }
 				},
 				#b4:	{
-					top:355,
+					top:356,
 					height:150,
 					options: { bind: {if: =articles.b4.no_binding, then: none} }
 				},
 				#b5:{
-					top:355,
-					height:150,
+					top:356,
+					height:165,
 					options: { bind: {if: =articles.b5.no_binding, then: none} }
 				},
 				#b6:	{

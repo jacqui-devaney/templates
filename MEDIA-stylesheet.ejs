@@ -55,7 +55,7 @@
                 content: =media.credit
             },
 			#media_caption: {
-				layout-grid-line: 1,
+				layout-grid-line: 20,
 				layout-grid-line-offset: 0,
 		        color: #878f8f,
 		        font-size: 13,
@@ -65,7 +65,7 @@
 				padding: { if-all: [
 						{ if: =page.number, equals: 0, then: true, else: false },
 						{ if: =scale.phone, then: true, else: false }
-					], then: [6, 10, 0, 10], else: [6, 0, 0, 0]
+					], then: [6, 10, 0, 10], else: [5, 0, 5, 0]
 				},
 				text-indent: 0
 			},

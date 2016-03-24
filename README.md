@@ -56,7 +56,8 @@ To debug ads you can display the passed in ads dictionary with this `ejs` and `J
 		#m_debug_page: { content: { $join: ["page = ", =page.number ] }},
 		#m_debug_id: { content: { $join: ["lineItemID = ", =ad.lineItemID ] }},
 		#m_debug_loaded: { content: { if: =ad.loaded, then: "loaded", else: "not loaded" }},
-		#m_debug_type: { content: { $join: ["type = ", =ad.type ] }}
+		#m_debug_type: { content: { $join: ["type = ", =ad.type ] }},
+		#m_debug_zone: { content: { $join: ["zone = ", =ad.zone ] }}
 	}</style>
 
 
@@ -65,4 +66,5 @@ To debug ads you can display the passed in ads dictionary with this `ejs` and `J
 		<p><mark id="m_debug_id"/></p>
 		<p><mark id="m_debug_type"/></p>
 		<p><mark id="m_debug_page"/></p>
+		<p><mark id="m_debug_zone"/></p>
 	</panel>

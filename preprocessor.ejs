@@ -106,6 +106,27 @@
 				"You can search for WSJ articles by scrolling to the very top of the navigation menu."
 			],
 			footer_tip: { if: =display.width.regular, then: {$random: [0, 11]}, else: {$random: [0, 7] }}
+		},
+		{
+			if: =app.version, less-than: 7.6, then: {
+				ad: {
+					loaded: {
+						if: =intent.section, then: true, else: {
+							if: =page.hasad, then: true, else: {
+								if: =page.number, equals: -1, then: true, else: false
+							}
+						}
+					},
+					type: {
+						if: =app.idiom, equals: "phone", then: "Cube", else: {
+							if: =intent.section, then: "Banner", else: {
+								if: =page.number, equals: -1, then: "Fullpage", else: "Skyscraper"
+							}
+						}
+					},
+					lineItemID: "000000"
+				}
+			}
 		}
 	]
 }

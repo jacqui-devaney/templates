@@ -18,18 +18,18 @@
 			}},
 			{if: =portrait, then: {
 				#b1: {
-					top:383,
-					height:158,
+					top:370,
+					height:160,
 					options:{ bind: {if: =articles.b1.no_binding, then: none}, rando_header:true, top_border:true}
 				},
 				#b2: {
-					top:545,
-					height:119,
+					top:543,
+					height:130,
 					options:{ bind: {if: =articles.b2.no_binding, then: none}, top_border:true}
 				},
 				#b3: {
-					top:668,
-					height:119,
+					top:683,
+					height:130,
 					options:{ bind: {if: =articles.b3.no_binding, then: none}, top_border:true}
 				},
 				#deco: {
@@ -38,71 +38,71 @@
 					options:{ bind: {if: =articles.deco.no_binding, then: none}, medium_headline:true, show_byline:true, show_flashline:true}
 				},
 				#b4: {
-					top:0,
-					height:188,
+					top:5,
+					height:210,
 					options:{ bind: {if: =articles.b4.no_binding, then: none}, medium_headline:true, show_byline:true, show_flashline:true}
 				},
 				#b5: {
-					top:188,
-					height:198,
+					top:220,
+					height:210,
 					options:{ bind: {if: =articles.b5.no_binding, then: none}, medium_headline:true, show_byline:true, show_flashline:true, top_border:true}
 				},
 				#b6: {
-					top:386,
-					height:198,
+					top:440,
+					height:190,
 					options:{ bind: {if: =articles.b6.no_binding, then: none}, medium_headline:true, show_byline:true, show_flashline:true, top_border:true}
 				},
 				#b7: {
-					top:584,
-					height:212,
+					top:640,
+					height:170,
 					options:{ bind: {if: =articles.b7.no_binding, then: none}, medium_headline:true, show_byline:true, show_flashline:true, top_border:true}
 				},
-                #footer: {
-                    top: 820,
-                    height: 100,
-                    text-align: center,
-                    options:{bind: none, top_border: true}
-                }
+        #footer: {
+            top: 820,
+            height: 100,
+            text-align: center,
+            options:{bind: none, top_border: true}
+        }
 			}},
 			{if: =landscape, then: {
 				#b1: {
-					top:0,
-					height:144,
+					top:1,
+					height:126,
 					options:{ bind: {if: =articles.b1.no_binding, then: none}, rando_header:true}
 				},
 				#b2: {
-					top:147,
-					height:119,
+					top:143,
+					height:130,
 					options:{ bind: {if: =articles.b2.no_binding, then: none}, top_border:true}
 				},
 				#b3: {
-					top:268,
-					height:119,
+					top:283,
+					height:130,
 					options:{ bind: {if: =articles.b3.no_binding, then: none}, top_border:true}
 				},
 				#deco: {
 					top:0,
-					height:363,
+					height:400,
 					options:{ bind: {if: =articles.deco.no_binding, then: none}, medium_headline:true, show_byline:true, show_flashline:true}
 				},
 				#b4: {
-					top:392,
-					height:176,
+					top:419,
+					height:148,
 					options:{ bind: {if: =articles.b4.no_binding, then: none}, medium_headline:true, show_byline:true, show_flashline:true, top_border:true}
 				},
 				#b5: {
-					top:392,
-					height:176,
+					top:419,
+					height:148,
 					options:{ bind: {if: =articles.b5.no_binding, then: none}, medium_headline:true, show_byline:true, show_flashline:true, top_border:true}
 				},
 				#b6: {
-					top:392,
-					height:176,
+					top:419,
+					height:148,
 					options:{ bind: {if: =articles.b6.no_binding, then: none}, medium_headline:true, show_byline:true, show_flashline:true, top_border:true}
 				},
 				#b7: {
-					top:392,
-					height:176,
+					top:419,
+					height:148,
 					options:{ bind: {if: =articles.b7.no_binding, then: none}, medium_headline:true, show_byline:true, show_flashline:true, top_border:true}
 				},
                 #footer: {
@@ -123,7 +123,7 @@
 	<box id="b4" embed="article" class="column4 positionx1-9 maude unit_plain" module="TOP-IMAGE_module.xml" />
 	<box id="b5" embed="article" class="column4 positionx5-9 maude unit_plain" module="TOP-IMAGE_module.xml" />
 	<box id="b6" embed="article" class="column4 positionx9 maude unit_plain" module="TOP-IMAGE_module.xml" />
-	<box id="b7" embed="article" class="column4 positionx13-9 maude unit_plain" module="TOP-IMAGE_module.xml" />
+	<box id="b7" embed="article" class="column3 positionx13-9 maude unit_plain" module="TOP-IMAGE_module.xml" />
 	<box id="front_page" class="tablet_only positionx_full column_full maude unit_ad">
 		<box id="banner_ad" class="ad-banner front_ad" embed="advertisement" />
 	</box>

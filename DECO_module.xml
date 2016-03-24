@@ -8,7 +8,7 @@
 			},
 			#deco_caption_container: {
 				background-color:"rgba(0, 0, 0, .5)",
-				padding:[12, 14, 5, 14],
+				padding:[12, 10, 10, 10],
 				anchor-y: { if: =options.caption_top, then: top, else: bottom },
 				display:{if: =options.no_caption, then:none, else:inherit}
 			},

@@ -15,7 +15,7 @@
 				{ if: =options.top_border, then: {
 					jpml: {
 						border-width: [1, 0, 0, 0],
-						padding: [3, 10, 0, 0]
+						padding: [5, 10, 0, 0]
 					}
 
 				}},
@@ -60,7 +60,7 @@
 					}
 	      },
 				#deco_container: {
-					padding: [0, 0, 20, 0]
+					padding: [0, 0, 7, 0]
 				},
 				.byline: {
 					display:{if: =options.show_byline, then:inherit, else:none}

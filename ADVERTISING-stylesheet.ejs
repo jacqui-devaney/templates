@@ -168,46 +168,46 @@
 		},
 		{
 			if: =intent.article, then: {
-				if-all: [ { if: =page.number, equals: 1 }, =ad.loaded ], then: {
-					if: ["383422586", "383422226", "383421746"], contains: =ad.lineItemID, then: {
-						if: =ad.type, equals: "Fullpage", then: {
-							#fullpage_container: {
-								position: absolute,
-								height: 1,
-								width: 1
-							},
-							#fullpage_ad: {
-								position: absolute,
-								height: 1,
-								width: 1
-							}
+				if-all: [
+					{
+						if: =app.version, at-most: 7.6, then: {
+							if: =page.number, greater-than: 1000000, then: true, else: false
 						}, else: {
-							#fullpage_container: {
-								display: none
-							}
+							if: =page.number, equals: 1, then: true, else: false
+						}
+					},
+					=ad.loaded,
+					{ if: =ad.type, equals: "Fullpage" }
+				], then: {
+					if: ["383422586", "383422226", "383421746"], contains: =ad.lineItemID, then: {
+						#fullpage_container: {
+							position: absolute,
+							height: 1,
+							width: 1
+						},
+						#fullpage_ad: {
+							position: absolute,
+							height: 1,
+							width: 1
 						}
 					}, else: {
-						if: =ad.type, equals: "Fullpage", then: {
-							jpml: {
-								min-height:0,
-								padding: [0,0,0,0]
-							},
-							#fullpage_container: {
-								display: inherit
-							},
-							#view: {
-								position: absolute,
-								height: 200,
-								width: 1
-							},
-							#page_details: {
-								options: {
-									fullPageAd: true
-								}
-							}
-						}, else: {
-							#fullpage_container: {
-								display: none
+						jpml: {
+							min-height:0,
+							padding: [0,0,0,0]
+						},
+						#fullpage_container: {
+							display: inherit
+						},
+						#view: {
+							display: { if: =app.version, at-most: 7.6, then: none, else: inherit },
+							position: absolute,
+							height: 200,
+							width: 1
+						},
+						#page_details: {
+							display: { if: =app.version, at-most: 7.6, then: none, else: inherit },
+							options: {
+								fullPageAd: true
 							}
 						}
 					}

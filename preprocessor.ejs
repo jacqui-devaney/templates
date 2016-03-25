@@ -108,19 +108,19 @@
 			footer_tip: { if: =display.width.regular, then: {$random: [0, 11]}, else: {$random: [0, 7] }}
 		},
 		{
-			if: =app.version, less-than: 7.6, then: {
+			if: =app.version, at-most: 7.6, then: {
 				ad: {
 					loaded: {
 						if: =intent.section, then: true, else: {
 							if: =page.hasad, then: true, else: {
-								if: =page.number, greater-than: 100000000, then: true, else: false
+								if: =page.number, greater-than: 1000000, then: true, else: false
 							}
 						}
 					},
 					type: {
 						if: =app.idiom, equals: "phone", then: "Cube", else: {
 							if: =intent.section, then: "Banner", else: {
-								if: =page.number, greater-than: 100000000, then: "Fullpage", else: "Skyscraper"
+								if: =page.number, greater-than: 1000000, then: "Fullpage", else: "Skyscraper"
 							}
 						}
 					},

@@ -65,7 +65,7 @@
     }</style>
 
     <box id="cube_ad_container" class="maude unit_ad">
-        <box id="cube_ad" class="ad-fullpage" embed="advertisement">
+        <box id="cube_ad" class="ad-fullpage" embed="fullpagead">
             <p id="ad_headline" class="ad_headline">ADVERTISEMENT</p>
         </box>
     </box>

@@ -113,14 +113,14 @@
 					loaded: {
 						if: =intent.section, then: true, else: {
 							if: =page.hasad, then: true, else: {
-								if: =page.number, equals: -1, then: true, else: false
+								if: =page.number, greater-than: 100000000, then: true, else: false
 							}
 						}
 					},
 					type: {
 						if: =app.idiom, equals: "phone", then: "Cube", else: {
 							if: =intent.section, then: "Banner", else: {
-								if: =page.number, equals: -1, then: "Fullpage", else: "Skyscraper"
+								if: =page.number, greater-than: 100000000, then: "Fullpage", else: "Skyscraper"
 							}
 						}
 					},

@@ -171,7 +171,7 @@
 				if-all: [
 					{
 						if: =app.version, at-most: 7.6, then: {
-							if: =page.number, greater-than: 1000000, then: true, else: false
+							if: =page.number, more-than: 1000000, then: true, else: false
 						}, else: {
 							if: =page.number, equals: 1, then: true, else: false
 						}

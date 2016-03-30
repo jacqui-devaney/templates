@@ -108,7 +108,7 @@
 			footer_tip: { if: =display.width.regular, then: {$random: [0, 11]}, else: {$random: [0, 7] }}
 		},
 		{
-			if: =app.version, at-most: 7.5, then: {
+			if: =app.version, at-most: "7.6", then: {
 				ad: {
 					loaded: {
 						if: =intent.section, then: true, else: {

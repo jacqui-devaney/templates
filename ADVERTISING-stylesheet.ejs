@@ -170,7 +170,7 @@
 			if: =intent.article, then: {
 				if-all: [
 					{
-						if: =app.version, at-most: 7.6, then: {
+						if: =app.version, at-most: "7.6", then: {
 							if: =page.number, more-than: 1000000, then: true, else: false
 						}, else: {
 							if: =page.number, equals: 1, then: true, else: false
@@ -199,13 +199,13 @@
 							display: inherit
 						},
 						#view: {
-							display: { if: =app.version, at-most: 7.6, then: none, else: inherit },
+							display: { if: =app.version, at-most: "7.6", then: none, else: inherit },
 							position: absolute,
 							height: 200,
 							width: 1
 						},
 						#page_details: {
-							display: { if: =app.version, at-most: 7.6, then: none, else: inherit },
+							display: { if: =app.version, at-most: "7.6", then: none, else: inherit },
 							options: {
 								fullPageAd: true
 							}

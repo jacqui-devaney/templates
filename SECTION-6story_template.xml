@@ -104,27 +104,27 @@
 				},
 				#b2:	{
 					top:0,
-					height:165,
+					height:185,
 					options:{ bind: {if: =articles.b2.no_binding, then: none}, medium_headline:true, bottom_border:true, show_body:true, show_flashline:true}
 				},
 				#b3:	{
-					top:175,
+					top:202,
 					height:175,
 					options:{ bind: {if: =articles.b3.no_binding, then: none}, medium_headline:true, top_border:false, show_flashline:true}
 				},
 				#b4:	{
-					top:345,
-					height:220,
+					top:395,
+					height:165,
 					options:{ bind: {if: =articles.b4.no_binding, then: none}, medium_headline:true, top_border:true, show_flashline:true}
 				},
 				#b5:	{
-					top:175,
+					top:202,
 					height:175,
 					options:{ bind: {if: =articles.b5.no_binding, then: none}, medium_headline:true, top_border:false, show_flashline:true}
 				},
 				#b6:	{
-					top:345,
-					height:220,
+					top:395,
+					height:165,
 					options:{ bind: {if: =articles.b6.no_binding, then: none}, medium_headline:true, top_border:true, show_flashline:true}
                 },
                 #footer: {

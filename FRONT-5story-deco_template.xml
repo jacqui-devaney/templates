@@ -77,13 +77,13 @@
 			}},
 			{if: =landscape, then: {
 				#b1:	{
-					top:20,
+					top:24,
 					height:342,
 					options:{ bind: {if: =articles.b1.no_binding, then: none}, large_headline:true}
 				},
 				#deco:	{
 					top:20,
-					height:341,
+					height:331,
 					options:{ bind: {if: =articles.deco.no_binding, then: none}, medium_headline:true}
 				},
 				#b2:	{

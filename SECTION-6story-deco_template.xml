@@ -23,17 +23,17 @@
 					options:{bind: {if: =articles.deco.no_binding, then: none}, medium_headline:true, show_image:true}
 				},
 				#b1:	{
-					top: 395,
+					top: 407,
 					height: 196,
 					options:{bind: {if: =articles.b1.no_binding, then: none}, large_headline:true, show_body:true, top_border:true, show_flashline:false}
 				},
 				#b2:	{
-					top:605,
+					top:602,
 					height:210,
 					options:{bind: {if: =articles.b2.no_binding, then: none}, medium_headline:true, show_body:true, top_border:true, show_flashline:true}
 				},
 				#b3:	{
-					top:9,
+					top:10,
 					height:200,
 					options:{bind: {if: =articles.b3.no_binding, then: none}, medium_headline:true, show_flashline:true}
 				},
@@ -63,12 +63,12 @@
 			}},
 			{if: =landscape, then: {
 				#deco:	{
-					top:0,
-					height:380,
+					top:6,
+					height:364,
 					options:{bind: {if: =articles.deco.no_binding, then: none}, medium_headline:true, show_image:true}
 				},
 				#b1:	{
-					top:396,
+					top:398,
 					height:170,
 					options:{bind: {if: =articles.b1.no_binding, then: none}, large_headline:true, show_body:true, top_border:true, show_flashline:false}
 				},
@@ -78,23 +78,23 @@
 					options:{bind: {if: =articles.b2.no_binding, then: none}, medium_headline:true, bottom_border:true, show_body:true, show_flashline:true}
 				},
 				#b3:	{
-					top:192,
+					top:202,
 					height:175,
 					options:{bind: {if: =articles.b3.no_binding, then: none}, medium_headline:true, top_border:false, show_flashline:true}
 				},
 				#b4:	{
-					top:385,
-					height:185,
+					top:395,
+					height:165,
 					options:{bind: {if: =articles.b4.no_binding, then: none}, medium_headline:true, top_border:true, show_flashline:true}
 				},
 				#b5:	{
-					top:192,
+					top:202,
 					height:175,
 					options:{bind: {if: =articles.b5.no_binding, then: none}, medium_headline:true, top_border:false, show_flashline:true}
 				},
 				#b6:	{
-					top:385,
-					height:185,
+					top:395,
+					height:165,
 					options:{bind: {if: =articles.b6.no_binding, then: none}, medium_headline:true, top_border:true, show_flashline:true}
 				},
                 #footer: {

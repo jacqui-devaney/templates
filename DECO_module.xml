@@ -14,13 +14,13 @@
 			},
           .deco_headline: {
 				font-size: {$switch: [
-					{if: =options.large_headline, then:36},
-					{if: =options.medium_headline, then:24},
+					{if: =options.large_headline, then:35},
+					{if: =options.medium_headline, then:20},
 					18
 				]},
 				line-height: {$switch: [
-					{if: =options.large_headline, then:36},
-					{if: =options.medium_headline, then:24},
+					{if: =options.large_headline, then:40},
+					{if: =options.medium_headline, then:25},
 					18
 				]}
 			},

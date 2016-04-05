@@ -30,7 +30,7 @@
 					width: 300,
 					height: 250,
 					options: {
-						excludedLineItemIds: ["383422586", "383422226", "383421746"]
+						excludedLineItemIds: ["383422586", "383422226", "383421746", "440015306"]
 					}
 				},
 				#ad_headline:{
@@ -57,7 +57,7 @@
 					width: =view.width,
 					height: 90,
 					options: {
-						excludedLineItemIds: ["383422586", "383422226", "383421746"]
+						excludedLineItemIds: ["383422586", "383422226", "383421746", "440015306"]
 					}
 				},
 				#fullpage_ad: {
@@ -93,7 +93,7 @@
 			if: =ad.type, equals: "Cube", then: {
 				if: =intent.article, then: {
 					if: =ad.loaded, then: {
-						if: ["383422586", "383422226", "383421746"], contains: =ad.lineItemID, then: {
+						if: ["383422586", "383422226", "383421746", "440015306"], contains: =ad.lineItemID, then: {
 							#cube_ad_container: {
 								position: absolute,
 								height: 1,
@@ -127,8 +127,13 @@
 		{
 			if: =ad.type, equals: "Skyscraper", then: {
 				if-all: [{ if: =page.number, equals: 1 }, =ad.loaded], then: {
-					if: ["383422586", "383422226", "383421746"], contains: =ad.lineItemID, then: {
+					if: ["383422586", "383422226", "383421746", "440015306"], contains: =ad.lineItemID, then: {
 						#article_advertisement: {
+							position: absolute,
+							height: 1,
+							width: 1
+						},
+						#skyscraper_ad: {
 							position: absolute,
 							height: 1,
 							width: 1
@@ -165,7 +170,7 @@
 					},
 					=ad.loaded
 				], then: {
-					if: ["383422586", "383422226", "383421746"], contains: =ad.lineItemID, then: {
+					if: ["383422586", "383422226", "383421746", "440015306"], contains: =ad.lineItemID, then: {
 						#fullpage_container: {
 							position: absolute,
 							height: 1,

@@ -104,7 +104,13 @@
 								height: 1,
 								width: 1
 							}
-						}, else: {}
+						}, else: {
+							if: =app.version, at-most: "7.6", then: {
+								#body_container: {
+									display: none
+								}
+							}, else: {}
+						}
 					}, else: {
 						#cube_ad_container: {
 							display: none

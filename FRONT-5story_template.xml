@@ -40,17 +40,17 @@
 					options:{ bind: {if: =articles.b1.no_binding, then: none}, large_headline:true, show_image:true, top_image: true, show_body:true}
 				},
 				#b2:	{
-					top:509,
+					top:512,
 					height:175,
 					options:{ bind: {if: =articles.b2.no_binding, then: none}, medium_headline:true, top_border:true}
 				},
 				#b3:	{
-					top:509,
+					top:512,
 					height:175,
 					options:{ bind: {if: =articles.b3.no_binding, then: none}, medium_headline:true, top_border:true}
 				},
 				#b4: {
-					top:509,
+					top:512,
 					height:175,
 					options:{ bind: {if: =articles.b4.no_binding, then: none}, medium_headline:true, top_border:true}
 				},
@@ -70,26 +70,26 @@
 			{if: =landscape, then: {
 				#b1:	{
 					top:20,
-					height:342,
+					height:330,
 					options:{ bind: {if: =articles.b1.no_binding, then: none}, large_headline:true, show_image:true, large_image: true, show_body:true}
 				},
 				#b2:	{
-					top:370,
+					top:362,
 					height:194,
 					options:{ bind: {if: =articles.b2.no_binding, then: none}, medium_headline:true, top_border:true}
 				},
 				#b3:	{
-					top:370,
+					top:362,
 					height:194,
 					options:{ bind: {if: =articles.b3.no_binding, then: none}, medium_headline:true, top_border:true}
 				},
 				#b4:	{
-					top:370,
+					top:362,
 					height:194,
 					options:{ bind: {if: =articles.b4.no_binding, then: none}, medium_headline:true, top_border:true}
 				},
 				#b5:	{
-					top:370,
+					top:362,
 					height:187,
 					options:{ bind: {if: =articles.b5.no_binding, then: none}, medium_headline:true, top_border:true, show_byline:false}
 				},
@@ -106,7 +106,7 @@
     <box id="page_details" class="tablet_only" embed="pagedescription" />
 	<box class="tablet_only latest_news_box positionx1">
 			<p class="latest_news">
-				<a href="//NOW/LATEST_NEWS">LATEST NEWS &#187;</a>
+				<a href="//NOW/LATEST_NEWS">LATEST NEWS</a>
 			</p>
 	</box>
 	<box id="marketstrap" class="tablet_only" embed="marketstrap">

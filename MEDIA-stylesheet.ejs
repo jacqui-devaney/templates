@@ -46,25 +46,26 @@
 			},
             #media_credit: {
                 color: #878f8f,
-                font-size: 13,
-                line-height: 22,
-                font-name: "WhitneySSm-Book"
+                font-size: 10,
+                line-height: 20,
+                font-name: WhitneySSm-Medium,
+								text-transform:uppercase
             },
             #mark_credit: {
                 content: =media.credit
             },
 			#media_caption: {
-				layout-grid-line: 1,
+				layout-grid-line: 20,
 				layout-grid-line-offset: 0,
-		        color: #212121,
-		        font-size: 11,
-		        line-height: 15,
-		        font-name: "DJ5Exchange-Medium",
+		        color: #878f8f,
+		        font-size: 13,
+		        line-height: 20,
+		        font-name: WhitneySSm-Book,
 		        border-color: #d8d8d8,
 				padding: { if-all: [
 						{ if: =page.number, equals: 0, then: true, else: false },
 						{ if: =scale.phone, then: true, else: false }
-					], then: [6, 10, 0, 10], else: [6, 0, 0, 0]
+					], then: [6, 10, 0, 10], else: [5, 0, 5, 0]
 				},
 				text-indent: 0
 			},

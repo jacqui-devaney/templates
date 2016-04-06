@@ -8,7 +8,7 @@
 				{ if: =options.top_border, then: {
 					jpml: {
 						border-width: [1, 0, 0, 0],
-						padding: [12, 0, 0, 0],
+						padding: [6, 0, 0, 0],
 						border-color: #d8d8d8
 					}
 
@@ -60,24 +60,24 @@
 						{if: =options.square_image, then:173},
 						{if: =options.wide_image, then:298},
 						{if: =options.small_wide_image, then:{$multiply: [1.25, =view.height]}},
-						236
+						228
 					]},
 					anchor-y:{if: =options.A_image, then:bottom, else:top},
 					display:{if: =options.hide_image, then:none, else:inherit},
-					padding: [0, 0, 0, 6]
+					padding: [6, 0, 0, 20]
 
 				},
 				image: {
 					pixels-per-point-x:1,
 					pixels-per-point-y:1,
-					height: {if: =options.small_wide_image, then: inherit, else: {$subtract:[=view.height, {if: =options.top_border, then:24, else:12}]}},
+					height: {if: =options.small_wide_image, then: inherit, else: {$subtract:[=view.height, {if: =options.top_border, then:25, else:12}]}},
 					width: {$switch:[
 						{if: =options.A_image, then:100},
 						{if: =options.small_image, then:92},
 						{if: =options.square_image, then:173},
 						{if: =options.wide_image, then:298},
 						{if: =options.small_wide_image, then:{$multiply: [1.25, =view.height]}},
-						236
+						228
 					]}
 				},
 
@@ -119,8 +119,8 @@
 			<image class="summary-image"/>
 		</box>
 		<panel id="headline">
-			<p class="module_headline"><mark class="m_headline" /></p>
 			<p class="module_flashline"><mark class="flashline-mark" /></p>
+			<p class="module_headline"><mark class="m_headline" /></p>
             <p class="byline"><mark class="byline-mark"/></p>
             <panel class="body">
             	<p><mark class="body-first-p-mark" /><mark class="body-mark"/></p>

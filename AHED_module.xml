@@ -8,7 +8,7 @@
         { if: =options.top_border, then: {
         jpml: {
         border-width: [1, 0, 0, 0],
-        padding: [10, 0, 0, 0],
+        padding: [5, 0, 0, 0],
         border-color: #cfcfcf
         }
 
@@ -45,11 +45,10 @@
         padding: [0, 0, 0, 10]
         },
         .ahed_subhed: {
-        color: black,
-        font-size: 16,
+					color:{if: =options.white_text, then:#fff, else:#3b4343},
+        font-size: 13,
         line-height: 20,
-        font-name: "DJ5Exchange-Medium",
-        padding: [10, 0, 3, 0]
+        font-name: "WhitneySSm-Book"
         },
         #stars: {
         font-size: 22,
@@ -59,9 +58,11 @@
         color: #898b8e
         },
         .ahed_headline: {
-        font-name: "DJ5EscrowCond-BoldItalic",
-        font-size: 22,
-        line-height: 22
+					padding:[0, 0, 2, 0],
+					color:#2b3333,
+					font-size: 20,
+					line-height: 25,
+					font-name:ChronicleDisplay-SemiItalic
         }
         }
 
@@ -76,7 +77,7 @@
 
     <panel>
         <p id="headline" class="ahed_headline"><mark class="m_headline" /></p>
-        <p><mark id="stars"/></p>
+        <!-- <p><mark id="stars"/></p> -->
         <p class="ahed_subhed"><mark class="subhed-mark"/></p>
         <panel class="body">
             <p><mark class="body-first-p-mark" /><mark class="body-mark"/></p>

@@ -6,7 +6,7 @@
 	<style>{
 		jpml: {
 			background-color: =options.background_color,
-			border-color: #d8d8d8
+			border-color: #cfd7d7
 		}
 	}</style>
 	<style>{
@@ -15,7 +15,7 @@
 				{ if: =options.top_border, then: {
 					jpml: {
 						border-width: [1, 0, 0, 0],
-						padding: [7, 10, 0, 0]
+						padding: [5, 10, 0, 0]
 					}
 
 				}},
@@ -60,7 +60,7 @@
 					}
 	      },
 				#deco_container: {
-					padding: [0, 0, 20, 0]
+					padding: [0, 0, 8, 0]
 				},
 				.byline: {
 					display:{if: =options.show_byline, then:inherit, else:none}
@@ -138,11 +138,10 @@
                 padding:[0, 0, 6, 0]
             },
 			.opinion_dek:{
-				padding:[0, 0, 8, 0],
-				font-name:DJ5Exchange-MediumItalic,
-				font-size:14,
+				font-name:WhitneySSm-Medium,
+				font-size:13,
 				line-height:20,
-				color:#5D5D5D,
+				color: #3b4343,
 				display: none
 			},
 			#summary: {
@@ -168,22 +167,22 @@
 		}
 	}
 	</style>
-	<box id="deco_container" embed="deco-image">
-		<image class="summary-image"/>
-	</box>
-	<panel id="vertical">
-        <p class="opinion_flashline">OPINION</p>
-		<panel id="headline">
-			<p class="module_headline"><mark class="m_headline" /></p>
-			<h2 class="opinion_dek"><mark class="subhed-mark" /></h2>
-		</panel>
-		<panel id="body">
-			<p class="module_flashline"><mark class="flashline-mark" /></p>
-			<p class="byline"><mark class="byline-mark"/></p>
-			<p id="summary" class="body"><mark class="body-first-p-mark" /><mark class="module_summary" /></p>
-			<panel class="body">
-				<p><mark class="body-first-p-mark" /><mark class="body-mark"/></p>
-			</panel>
-		</panel>
-	</panel>
+	 <box id="deco_container" embed="deco-image">
+		 <image class="summary-image"/>
+	 </box>
+	 <panel id="vertical">
+     <p class="opinion_flashline">OPINION</p>
+	 	 <panel id="headline">
+			 <p class="module_flashline"><mark class="flashline-mark" /></p>
+	 		 <p class="module_headline"><mark class="m_headline" /></p>
+	 		 <h2 class="opinion_dek"><mark class="subhed-mark" /></h2>
+	 	 </panel>
+	 	<panel id="body">
+	 		 <p class="byline"><mark class="byline-mark"/></p>
+	 		 <p id="summary" class="body"><mark class="body-first-p-mark" /><mark class="module_summary" /></p>
+	 		<panel class="body">
+	 			<p><mark class="body-first-p-mark" /><mark class="body-mark"/></p>
+	 		</panel>
+	 	</panel>
+	 </panel>
 </jpml>

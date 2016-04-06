@@ -196,7 +196,14 @@ grid_builder.prototype.generateStylesheet = function() {
   grid.jpml = {
     padding: {
       if: "=scale.phone",
-      else: [{if: "=intent.article", then:80, else:110}, 0, 0, 0]
+      else: {
+        if: "=portrait",
+        then: [{if: "=intent.article", then:80, else:104}, 0, 0, 0],
+        else: [{if: "=intent.article", then:80, else:108}, 0, 0, 0]
+      }
+
+
+
     }
   };
 

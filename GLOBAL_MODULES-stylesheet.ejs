@@ -7,40 +7,43 @@
 			{
 				font-name: {
 					$switch: [
-						{if: =issue.type, equals: "NOW", then: "DJ5Exchange-Semibold"},
-						{if: =issue.type, equals: "CSUITE", then: "DJ5Exchange-Semibold"},
-						{if: =options.small_headline, then: "DJ5EscrowCond-Semibold"},
-						{if: =options.smedium_headline, then: "DJ5EscrowCond-Semibold"},
-						{if: =options.medium_headline, then: "DJ5EscrowCond-Semibold"},
-						{if: =options.very_large_caps_headline, then: "DJ5Escrow-Roman"},
-						"DJ5EscrowCond-Semibold"
+						{if: =issue.type, equals: "NOW", then: "ChronicleDisplay-Semi"},
+						{if: =issue.type, equals: "CSUITE", then: "WhitneySSm-Medium"},
+						{if: =options.small_headline, then: "ChronicleSSm-Medium"},
+						{if: =options.smedium_headline, then: "ChronicleDisplay-Semi"},
+						{if: =options.medium_headline, then: "ChronicleDisplay-Semi"},
+						{if: =options.very_large_caps_headline, then: "ChronicleDisplay-Semi"},
+						"ChronicleDisplay-Semi"
 					]
 				}
 			},
 			{
-				color:{if: =options.white_text, then:#fff, else:#000}
+				color:{if: =options.white_text, then:#fff, else:#2b3333}
 			},
 			{
 				$switch:[
 					{if: =options.small_headline, then:{
-						padding:[0, 0, 2, 0],
-						font-size: 16,
-						line-height: 21
+						font-size: 13,
+						line-height: 20,
+						color:#3b4343
 					}},
 					{if: =options.smedium_headline, then:{
 						padding:[0, 0, 2, 0],
+						color:#2b3333,
 						font-size: 20,
-						line-height: 24
+						line-height: 25
 					}},
 					{if: =options.medium_headline, then:{
-						padding:[0, 0, 7, 0],
-						font-size: 24,
-						line-height: 26
+						padding:[0, 0, 2, 0],
+						color:#2b3333,
+						font-size: 20,
+						line-height: 25
 					}},
 					{if: =options.large_headline, then: {
-						padding:[0, 0, 4, 0],
-						font-size: 36,
-						line-height: 39
+						padding:[8, 0, 4, 0],
+						color:#2b3333,
+						font-size: 35,
+						line-height: 40
 					}},
 					{if: =options.very_large_caps_headline, then: {
 						padding:[0, 0, 20, 0],
@@ -61,14 +64,14 @@
 		content: { $switch: [=article.body_extract, =article.summary] }
 	},
 	.body: {
-		font-name: "DJ5Exchange-Medium",
-		text-indent: =text.indent,
-		font-size:{$multiply:{if: =options.large_body, then:20, else:14}},
+		font-name: ChronicleSSm-Book,
+		text-indent: 0,
+		font-size:{$multiply:{if: =options.large_body, then:20, else:13}},
 		line-height:{$multiply:{if: =options.large_body, then:26, else:20}},
 		text-overflow: =text.overflow,
         text-align: left,
 		hyphens:auto,
-		color:{if: =options.white_text, then:#fff, else:#222221}
+		color:{if: =options.white_text, then:#fff, else:#3b4343}
 
 
 	},
@@ -83,24 +86,26 @@
 
 	},
 	.deco_caption: {
-		font-name: DJ5Exchange-Medium,
-		font-size:14,
+		font-name: ChronicleSSm-Book,
+		font-size:13,
 		line-height:20,
 		color:#fff
 
 	},
 	.deco_headline:{
-		font-name: DJ5EscrowCond-Semibold,
-		color:#fff,
-		padding:[0, 0, 6, 0]
+		font-name: ChronicleDisplay-Semi,
+		padding:[0, 0, 2, 0],
+		color:white,
+		font-size: 20,
+		line-height: 25
 	},
 	.module_flashline: {
-		font-name:DJ5Exchange-Bold,
-		font-size:12,
-		line-height:12,
-		color: =page.tint,
+		font-name:WhitneySSm-SemiBold,
+		font-size:11,
+		line-height:20,
+		color: #a7afaf,
 		text-transform:uppercase,
-		padding:[0, 0, 6, 0]
+		padding:[0, 0, 3, 0]
 	},
 	.module_caption: {
 		font-name:DJ5Exchange-Medium,
@@ -117,7 +122,7 @@
 		color: #948464
 	},
 	#body-first-p: {
-		text-indent: {if: =options.indent, then: =text.indent, else: 0}
+		text-indent: 0
 	},
 	.body-first-p-mark: {
 		font-name: "DJ5Utility-Regular",
@@ -126,10 +131,10 @@
 		color: #948464
 	},
 	.byline: {
-		font-name:DJ5Exchange-Medium,
-		font-size:14,
+		font-name:ChronicleSSmMedium-Italic,
+		font-size:13,
 		line-height:20,
-		color:#5D5D5D
+		color:#a7afaf
 	},
 	.hidden_tablet: {
 		display: none
@@ -138,11 +143,13 @@
 		display: inherit
 	},
 	#m_subsection: { content: =article.subsection },
-	.m_headline: { content: =article.headline },
+	.m_headline: { content: =article.headline},
 	.body-mark: { content: { $switch: [=article.body_extract, =article.summary] } },
 	.byline-mark: {	content: =article.byline },
 	.flashline-mark: { content: =article.flashline },
-	.subhed-mark: {	content: =article.deckline },
+	.subhed-mark: {
+		content: =article.deckline
+	},
 	em: {
 		font-name:DJ5Exchange-MediumItalic
 	},

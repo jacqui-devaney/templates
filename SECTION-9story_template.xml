@@ -146,94 +146,94 @@
 			}}},
 			{if: =portrait, then: {
 				#b1:	{
-					top:30,
-					height:530,
+					top:28,
+					height:510,
 					options: { bind: {if: =articles.b1.no_binding, then: none}, module: url(TOP-IMAGE_module.xml)}
                 },
 				#b2:	{
-					top:570,
-					height:340,
+					top:549,
+					height:360,
 					options: { bind: {if: =articles.b2.no_binding, then: none} }
 				},
 				#b3:{
-					top:570,
-					height:340,
+					top:549,
+					height:360,
 					options: { bind: {if: =articles.b3.no_binding, then: none} }
 				},
 				#b4:	{
-					top:30,
-					height:135,
+					top:25,
+					height:160,
 					options: { bind: {if: =articles.b4.no_binding, then: none} }
 				},
 				#b5:	{
-					top:175,
-					height:135,
+					top:195,
+					height:150,
 					options: { bind: {if: =articles.b5.no_binding, then: none} }
 				},
 				#b6:	{
-					top:320,
-					height:135,
+					top:355,
+					height:130,
 					options: { bind: {if: =articles.b6.no_binding, then: none} }
 				},
 				#b7:	{
-					top:465,
-					height:135,
+					top:495,
+					height:130,
 					options: { bind: {if: =articles.b7.no_binding, then: none} }
 				},
 				#b8:	{
-					top:610,
-					height:135,
+					top:635,
+					height:130,
 					options: { bind: {if: =articles.b8.no_binding, then: none} }
 				},
 				#b9:	{
-					top:755,
-					height:155,
+					top:775,
+					height:130,
 					options: { bind: {if: =articles.b9.no_binding, then: none} }
 				}
 			}},
 			{if: =landscape, then: {
 				#b1:	{
 					top:30,
-					height:465,
+					height:480,
 					options: { bind: {if: =articles.b1.no_binding, then: none} }
 				},
 				#b2:	{
 					top:30,
-					height:310,
+					height:325,
 					options: { bind: {if: =articles.b2.no_binding, then: none} }
 				},
 				#b3:	{
 					top:30,
-					height:310,
+					height:325,
 					options: { bind: {if: =articles.b3.no_binding, then: none} }
 				},
 				#b4:	{
-					top:350,
-					height:145,
+					top:356,
+					height:150,
 					options: { bind: {if: =articles.b4.no_binding, then: none} }
 				},
 				#b5:{
-					top:350,
-					height:145,
+					top:356,
+					height:165,
 					options: { bind: {if: =articles.b5.no_binding, then: none} }
 				},
 				#b6:	{
-					top:505,
+					top:516,
 					height:145,
 					options: { bind: {if: =articles.b6.no_binding, then: none} }
 				},
 				#b7:	{
-					top:505,
+					top:516,
 					height:145,
 					options: { bind: {if: =articles.b7.no_binding, then: none} }
 				},
 				#b8:	{
-					top:505,
+					top:516,
 					height:145,
 					options: { bind: {if: =articles.b8.no_binding, then: none} }
 				},
 				#b9:	{
-					top:505,
+					top:516,
 					height:145,
 					options: { bind: {if: =articles.b9.no_binding, then: none} }
 				}
@@ -250,7 +250,7 @@
             #b1: {
 				options: {
 					bind: {if: =articles.b1.no_binding, then: none},
-					medium_headline:true,
+					large_headline:true,
 					show_image:true,
 					background_color: =color.background
 				}

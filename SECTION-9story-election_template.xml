@@ -205,7 +205,7 @@
 				},
 				#b4:	{
                     top: {if: =app.push.tags.topic.politics, then: 30, else: {if: =app.version, at-least: 7.5, then: 120, else: 30}},
-                    height: {if: =app.push.tags.topic.politics, then: 135, else: {if: =app.version, at-least: 7.5, then: 140, else: 135}},
+                    height: {if: =app.push.tags.topic.politics, then: 135, else: {if: =app.version, at-least: 7.5, then: 130, else: 135}},
 					options: { bind: {if: =articles.b4.no_binding, then: none} }
 				},
 				#b5:	{
@@ -305,7 +305,7 @@
 				},
 				#b9:	{
                     top: {if: =app.push.tags.topic.politics, then: 505, else: {if: =app.version, at-least: 7.5, then: 545, else: 505}},
-                    height: {if: =app.push.tags.topic.politics, then: 145, else: {if: =app.version, at-least: 7.5, then: 145, else: 110}},
+                    height: {if: =app.push.tags.topic.politics, then: 145, else: {if: =app.version, at-least: 7.5, then: 110, else: 140}},
 					options: { bind: {if: =articles.b9.no_binding, then: none} }
 				}
 

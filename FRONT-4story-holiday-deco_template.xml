@@ -43,13 +43,12 @@
 					height:122,
 					options:{ bind: {if: =articles.b4.no_binding, then: none}, medium_headline:true, top_border:true}
 				},
-                #footer: {
-                    top: 820,
-                    height: 100,
-                    text-align: center,
-                    display: {if: =page.hasad, then: none, else: inherit},
-                    options:{bind: none, top_border: true}
-                }
+		#footer: {
+			top: 820,
+			height: 100,
+			text-align: center,
+			options:{bind: none, top_border: true}
+		}
 			}},
 			{if: =landscape, then: {
 				#b1:	{
@@ -77,13 +76,12 @@
 					height:194,
 					options:{ bind: {if: =articles.b4.no_binding, then: none}, medium_headline:true, top_border:true}
 				},
-                #footer: {
-                    top: 570,
-                    height: 100,
-                    text-align: center,
-                    display: {if: =page.hasad, then: none, else: inherit},
-                    options:{bind: none, top_border: true}
-                }
+		#footer: {
+			top: 570,
+			height: 100,
+			text-align: center,
+			options:{bind: none, top_border: true}
+		}
             }}
 		]
 	} </style>

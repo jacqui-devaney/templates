@@ -32,6 +32,7 @@
 		text-indent:0
 	},
 	.article_body: {
+		column-count: { if: =scale.tablet, then: { if: =portrait, then: 3, else: 4 } },
 		font-name: ChronicleSSm-Book,
 		font-size:{$multiply: [13, =view.zoomlevel]},
 		line-height:{$multiply: [20, =view.zoomlevel]},

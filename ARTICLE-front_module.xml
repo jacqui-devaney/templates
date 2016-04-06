@@ -42,12 +42,11 @@
 			}
         }}
 		]
-    }</style>
-    <panel id="header_top">
-        <p class="article_headline"><span embed="headline"/></p>
+	}</style>
+	<panel id="header_top">
+	<p class="article_headline"><span embed="headline"/></p>
 		<h2 class="article_subhed" embed="subhed" />
 	</panel>
-
 	<panel id="body_container">
 		<box id="media_container">
 			<p id="media_title"><mark id="mark_media_title"/></p>
@@ -62,7 +61,6 @@
 		</box>
 		<p class="module_flashline" embed="flashline"/>
     	<p class="byline" embed="byline"/>
-
 		<panel class="article_body" embed="body"/>
 	</panel>
 </jpml>

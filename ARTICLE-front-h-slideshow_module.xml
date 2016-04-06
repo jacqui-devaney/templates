@@ -54,8 +54,8 @@
 		},
 		.article_body: {
             text-align: center,
-            font-name: { if: =page.section, equals: SPECIAL_REPORT, then: "WhitneySSm-Book" }
-
+            font-name: { if: =page.section, equals: SPECIAL_REPORT, then: "WhitneySSm-Book" },
+            column-count: 1
 		},
 		#hairline_panel: {
 			padding: [5, 0, 15, 0]

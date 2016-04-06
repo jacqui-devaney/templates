@@ -58,7 +58,8 @@
 			padding: [0, 0, 0, 12]
 		},
 		.article_body: {
-            font-name: { if: =page.section, equals: SPECIAL_REPORT, then: "WhitneySSm-Book" }
+            font-name: { if: =page.section, equals: SPECIAL_REPORT, then: "WhitneySSm-Book" },
+            column-count: 1
 		}
 	}</style>
     <box id="media_container">

@@ -7,7 +7,7 @@
 		jpml: {
 			background-color: =options.background_color,
 			padding:
-            [{if: =view.height, less-than: =size.rail_height_with_image, then: 10, else: 4},25,{if: =view.height, less-than: =size.rail_height_with_image, then: -10, else: -2}, 25],
+            [{if: =view.height, less-than: =size.rail_height_with_image, then: 10, else: 4},20,{if: =view.height, less-than: =size.rail_height_with_image, then: -10, else: -20}, 16],
 			height:130
 		}
 	}</style>
@@ -16,7 +16,7 @@
 			display: { if: {$count:[=article.thumbnail]}, more-than: 0, then: inherit, else: none},
 			anchor-x:left,
 			anchor-y:left,
-			padding:[5, 15, 0, 0],
+			padding:[5, 16, 0, 0],
 			width: 160,
 			height: 115
 		},
@@ -58,43 +58,42 @@
 	<style>{
         .opinion_flashline: {
             display: {if: =page.section, equals: "OPINION", then: none, else: {if: =article.category, equals: "Opinion", then: inherit, else: none}},
-            font-name:DJ5Exchange-Bold,
-            font-size:12,
-            line-height:12,
-            color: =page.tint,
+            font-name:WhitneySSm-Medium,
+            font-size:10,
+            line-height:18,
+            color: #a7afaf,
             text-transform:uppercase,
-            padding:[0, 0, 6, 0]
+            padding:[0, 0, 4, 0]
         },
 		.article_subhed: {
-			font-name: DJ5Exchange-MediumItalic,
-			font-size:14,
-			line-height:17,
-			color: #666666,
-			padding:[-2,0,0,0]
+			font-name: WhitneySSm-BookItalic,
+			font-size:13,
+			line-height:18,
+			color: #3b4343,
+			padding:[0,0,0,0]
 		},
 		.module_headline: {
-			font-name: DJ5Exchange-Semibold,
-			font-size: 18,
-			line-height:21,
-			padding: { if: {$count:[=article.thumbnail]}, more-than: 0, then: [0, 0, 4, 0], else: [-2, 0, 9, 0]}
+			font-name: "ChronicleDisplay-Semi",
+			font-size: 17,
+			line-height:20,
+			padding: [0, 0, 2, 0],
+			color: #2b3333
 		},
 		#module_text: {
-			padding:[5,0,0,0]
+			padding:[6,0,0,0]
 		},
 		.body: {
-			font-name: DJ5Exchange-Medium,
-			font-size:14,
-			line-height:17,
-			padding:[{if: =options.show_subhed, then:2, else:-4},0,0,0],
-			color: #555555
+			font-name: ChronicleSSm-Book,
+			font-size:13,
+			line-height:18,
+			color: #4f5757
 		},
 		.byline: {
-			font-size:14,
-			font-name: DJ5Exchange-Medium,
-			line-height:16,
-			text-transform:uppercase,
-			padding:[-4,0,4,0],
-			color: #666666
+			font-size:13,
+			font-name: ChronicleSSmBook-Italic,
+			line-height:18,
+			padding:[0,0,4,0],
+			color: #a7afaf
 		}
 	}</style>
 

@@ -24,15 +24,15 @@
     	},
 		#tabbar-container: {
 			top:-20,
-			height:32
+			height:36
 		},
 		.tabbar-p: {
 			font-name:"WhitneySSm-Semibold",
 			color:#4F5757,
-			padding: [6, 0, 12, 0],
+			padding: [10.5, 0, 11.5, 0],
 			font-size:10,
 			line-height:12,
-			border-width:[1, 0],
+			border-width:[0.5, 0],
 			border-color:#CFD7D7,
 			letter-spacing: 2.0
 		},

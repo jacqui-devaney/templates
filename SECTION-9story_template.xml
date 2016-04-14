@@ -27,16 +27,17 @@
 			height:32
 		},
 		.tabbar-p: {
-			font-name:DJ5Exchange-Bold,
-			color:#343434,
-			padding: [9, 0],
-			font-size:12,
+			font-name:"WhitneySSm-Semibold",
+			color:#4F5757,
+			padding: [6, 0, 12, 0],
+			font-size:10,
 			line-height:12,
 			border-width:[1, 0],
-			border-color:#E1E1E1
+			border-color:#CFD7D7,
+			letter-spacing: 2.0
 		},
 		.space: {
-			font-size: 6,
+			font-size: 1,
 			line-height:4,
 			color: transparent,
 			content: "unfortunate"
@@ -313,128 +314,146 @@
 		$switch: [
 			{if: =page.section, equals: "TOP_NEWS", then: {
 				.top-news-link: {
-					color: #004990,
-					border-width:[0, 0, 3, 0],
-					border-color:#0037A2
+					color: #2FBFBF,
+					padding:[0, 2, 10, 0],
+					border-width:[0, 0, 2, 0],
+					border-color:#2FBFBF
 				}
 			}},
 			{if: =page.section, equals: "WORLD", then: {
 				.world-link: {
-					color: #004990,
-					border-width:[0, 0, 3, 0],
-					border-color:#0037A2
+					color: #2FBFBF,
+					padding:[0, 2, 10, 0],
+					border-width:[0, 0, 2, 0],
+					border-color:#2FBFBF
 				}
 			}},
 			{if: =page.section, equals: "US", then: {
 				.us-link: {
-					color: #004990,
-					border-width:[0, 0, 3, 0],
-					border-color:#0037A2
+					color: #2FBFBF,
+					padding:[0, 2, 10, 0],
+					border-width:[0, 0, 2, 0],
+					border-color:#2FBFBF
 				}
 			}},
 			{if: =page.section, equals: "BUSINESS", then: {
 				.business-link: {
-					color: #004990,
-					border-width:[0, 0, 3, 0],
-					border-color:#0037A2
+					color: #2FBFBF,
+					padding:[0, 2, 10, 0],
+					border-width:[0, 0, 2, 0],
+					border-color:#2FBFBF
 				}
 			}},
 			{if: =page.section, equals: "TECH", then: {
 				.tech-link: {
-					color: #004990,
-					border-width:[0, 0, 3, 0],
-					border-color:#0037A2
+					color: #2FBFBF,
+					padding:[0, 2, 10, 0],
+					border-width:[0, 0, 2, 0],
+					border-color:#2FBFBF
 				}
 			}},
 			{if: =page.section, equals: "MARKETS", then: {
 				.markets-link: {
-					color: #004990,
-					border-width:[0, 0, 3, 0],
-					border-color:#0037A2
+					color: #2FBFBF,
+					padding:[0, 2, 10, 0],
+					border-width:[0, 0, 2, 0],
+					border-color:#2FBFBF
 				}
 			}},
 			{if: =page.section, equals: "OPINION", then: {
 				.opinion-link: {
-					color: #004990,
-					border-width:[0, 0, 3, 0],
-					border-color:#0037A2
+					color: #2FBFBF,
+					padding:[0, 2, 10, 0],
+					border-width:[0, 0, 2, 0],
+					border-color:#2FBFBF
 				}
 			}},
 			{if: =page.section, equals: "LIFE_AND_CULTURE", then: {
 				.life-and-culture-link: {
-					color: #004990,
-					border-width:[0, 0, 3, 0],
-					border-color:#0037A2
+					color: #2FBFBF,
+					padding:[0, 2, 10, 0],
+					border-width:[0, 0, 2, 0],
+					border-color:#2FBFBF
 				}
 			}},
 			{if: =page.section, equals: "LIFE", then: {
 				.life-link: {
-					color: #004990,
-					border-width:[0, 0, 3, 0],
-					border-color:#0037A2
+					color: #2FBFBF,
+					padding:[0, 2, 10, 0],
+					border-width:[0, 0, 2, 0],
+					border-color:#2FBFBF
 				}
 			}},
 			{if: =page.section, equals: "ARTS", then: {
 				.arts-link: {
-					color: #004990,
-					border-width:[0, 0, 3, 0],
-					border-color:#0037A2
+					color: #2FBFBF,
+					padding:[0, 2, 10, 0],
+					border-width:[0, 0, 2, 0],
+					border-color:#2FBFBF
 				}
 			}},
 			{if: =page.section, equals: "EUROPE", then: {
 				.europe-link: {
-					color: #004990,
-					border-width:[0, 0, 3, 0],
-					border-color:#0037A2
+					color: #2FBFBF,
+					padding:[0, 2, 10, 0],
+					border-width:[0, 0, 2, 0],
+					border-color:#2FBFBF
 				}
 			}},
 			{if: =page.section, equals: "LIFE_AND_STYLE", then: {
 				.life-and-style-link: {
-					color: #004990,
-					border-width:[0, 0, 3, 0],
-					border-color:#0037A2
+					color: #2FBFBF,
+					padding:[0, 2, 10, 0],
+					border-width:[0, 0, 2, 0],
+					border-color:#2FBFBF
 				}
 			}},
 			{if: =page.section, equals: "ASIA", then: {
 				.asia-link: {
-					color: #004990,
-					border-width:[0, 0, 3, 0],
-					border-color:#0037A2
+					color: #2FBFBF,
+					padding:[0, 2, 10, 0],
+					border-width:[0, 0, 2, 0],
+					border-color:#2FBFBF
 				}
 			}},
 			{if: =page.section, equals: "BUSINESS_AND_FINANCE", then: {
 				.business-and-finance-link: {
-					color: #004990,
-					border-width:[0, 0, 3, 0],
-					border-color:#0037A2
+					color: #2FBFBF,
+					padding:[0, 2, 10, 0],
+					border-width:[0, 0, 2, 0],
+					border-color:#2FBFBF
 				}
 			}},
 			{if: =page.section, equals: "FRONT_SECTION", then: {
 				.front-section-link: {
-					color: #004990,
-					border-width:[0, 0, 3, 0],
-					border-color:#0037A2
+					color: #2FBFBF,
+					padding:[0, 2, 10, 0],
+					border-width:[0, 0, 2, 0],
+					border-color:#2FBFBF
 				}
 			}},
 			{if: =page.section, equals: "BUSINESS_AND_MARKETS", then: {
 				.business-and-markets-link: {
-					color: #004990,
-					border-width:[0, 0, 3, 0],
-					border-color:#0037A2
+					color: #2FBFBF,
+					padding:[0, 2, 10, 0],
+					border-width:[0, 0, 2, 0],
+					border-color:#2FBFBF
 				}
 			}},
 			{if: =page.section, equals: "JAPAN_AND_WORLD", then: {
 				.japan-and-world-link: {
-					color: #004990,
-					border-width:[0, 0, 3, 0],
-					border-color:#0037A2
+					color: #2FBFBF,
+					padding:[0, 2, 10, 0],
+					border-width:[0, 0, 2, 0],
+					border-color:#2FBFBF
 				}
 			}},
 			{if: =page.section, equals: "LIFESTYLE", then: {
 				.lifestyle-link: {
-					color: #0037A2,
-					border-width:[0, 0, 3, 0],
-					border-color:#0037A2
+					color: #2FBFBF,
+					padding:[0, 2, 10, 0],
+					border-width:[0, 0, 2, 0],
+					border-color:#2FBFBF
 				}
 			}}
 		]

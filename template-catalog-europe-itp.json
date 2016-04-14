@@ -46,7 +46,87 @@
         ]
       },
       {
+        "section": "FRONT_SECTION_ITP",
+        "filename": "FRONT-4story-holiday-deco_template.xml",
+        "title": "4 story G Holiday Liondoor",
+        "usage": "front",
+        "boxes": [
+          {
+            "id": "b1",
+            "images": {}
+          },
+          {
+            "id": "deco",
+            "images": {
+              "tablet": {
+                "width": 546,
+                "height": 356
+              }
+            }
+          },
+          {
+            "id": "b2",
+            "images": {}
+          },
+          {
+            "id": "b3",
+            "images": {}
+          },
+          {
+            "id": "b4",
+            "images": {
+              "tablet": {
+                "width": 55,
+                "height": 55
+              }
+            }
+          }
+        ]
+      },
+      {
         "section": "FRONT_SECTION",
+        "filename": "FRONT-5story-holiday-deco_template.xml",
+        "title": "Default: 5 story G Holiday",
+        "usage": "front",
+        "boxes": [
+          {
+            "id": "b1",
+            "images": {}
+          },
+          {
+            "id": "deco",
+            "images": {
+              "tablet": {
+                "width": 546,
+                "height": 356
+              }
+            }
+          },
+          {
+            "id": "b2",
+            "images": {}
+          },
+          {
+            "id": "b3",
+            "images": {}
+          },
+          {
+            "id": "b4",
+            "images": {}
+          },
+          {
+            "id": "b5",
+            "images": {
+              "tablet": {
+                "width": 55,
+                "height": 55
+              }
+            }
+          }
+        ]
+      },
+      {
+        "section": "FRONT_SECTION_ITP",
         "filename": "FRONT-5story-holiday-deco_template.xml",
         "title": "Default: 5 story G Holiday",
         "usage": "front",
@@ -130,7 +210,87 @@
         ]
       },
       {
+        "section": "FRONT_SECTION_ITP",
+        "filename": "FRONT-5story-deco_template.xml",
+        "title": "Default: 5 story G Liondoor",
+        "usage": "front",
+        "boxes": [
+          {
+            "id": "b1",
+            "images": {}
+          },
+          {
+            "id": "deco",
+            "images": {
+              "tablet": {
+                "width": 546,
+                "height": 356
+              }
+            }
+          },
+          {
+            "id": "b2",
+            "images": {}
+          },
+          {
+            "id": "b3",
+            "images": {}
+          },
+          {
+            "id": "b4",
+            "images": {}
+          },
+          {
+            "id": "b5",
+            "images": {
+              "tablet": {
+                "width": 55,
+                "height": 55
+              }
+            }
+          }
+        ]
+      },
+      {
         "section": "FRONT_SECTION",
+        "filename": "FRONT-5story_template.xml",
+        "title": "5 story G",
+        "usage": "front",
+        "boxes": [
+          {
+            "id": "b1",
+            "images": {
+              "tablet": {
+                "width": 546,
+                "height": 356
+              }
+            }
+          },
+          {
+            "id": "b2",
+            "images": {}
+          },
+          {
+            "id": "b3",
+            "images": {}
+          },
+          {
+            "id": "b4",
+            "images": {}
+          },
+          {
+            "id": "b5",
+            "images": {
+              "tablet": {
+                "width": 55,
+                "height": 55
+              }
+            }
+          }
+        ]
+      },
+      {
+        "section": "FRONT_SECTION_ITP",
         "filename": "FRONT-5story_template.xml",
         "title": "5 story G",
         "usage": "front",
@@ -210,7 +370,91 @@
         ]
       },
       {
+        "section": "FRONT_SECTION_ITP",
+        "filename": "FRONT-6story-NO-WHATSNEWS.xml",
+        "title": "5 Story plus 1 image deco/No What's News/No A-HED",
+        "usage": "front",
+        "boxes": [
+          {
+            "id": "b1",
+            "images": {}
+          },
+          {
+            "id": "deco",
+            "images": {
+              "tablet": {
+                "width": 360,
+                "height": 346
+              }
+            }
+          },
+          {
+            "id": "b2",
+            "images": {}
+          },
+          {
+            "id": "b3",
+            "images": {}
+          },
+          {
+            "id": "b4",
+            "images": {}
+          },
+          {
+            "id": "b5",
+            "images": {
+              "tablet": {
+                "width": 55,
+                "height": 55
+              }
+            }
+          }
+        ]
+      },
+      {
         "section": "FRONT_SECTION",
+        "filename": "FRONT-6story-Vimage-deco_template.xml",
+        "title": "5 Story plus 1 image deco",
+        "usage": "front",
+        "boxes": [
+          {
+            "id": "b1",
+            "images": {}
+          },
+          {
+            "id": "deco",
+            "images": {
+              "tablet": {
+                "width": 360,
+                "height": 346
+              }
+            }
+          },
+          {
+            "id": "b2",
+            "images": {}
+          },
+          {
+            "id": "b3",
+            "images": {}
+          },
+          {
+            "id": "b4",
+            "images": {}
+          },
+          {
+            "id": "b5",
+            "images": {
+              "tablet": {
+                "width": 55,
+                "height": 55
+              }
+            }
+          }
+        ]
+      },
+      {
+        "section": "FRONT_SECTION_ITP",
         "filename": "FRONT-6story-Vimage-deco_template.xml",
         "title": "5 Story plus 1 image deco",
         "usage": "front",
@@ -297,6 +541,51 @@
         ]
       },
       {
+        "section": "OPINION_ITP",
+        "filename": "OPINION-7story-deco_template.xml",
+        "title": "Default: 7 story plus deco (3RandO-4CMTY)",
+        "usage": "front",
+        "boxes": [
+          {
+            "id": "b1",
+            "images": {}
+          },
+          {
+            "id": "b2",
+            "images": {}
+          },
+          {
+            "id": "b3",
+            "images": {}
+          },
+          {
+            "id": "deco",
+            "images": {
+              "tablet": {
+                "width": 542,
+                "height": 362
+              }
+            }
+          },
+          {
+            "id": "b4",
+            "images": {}
+          },
+          {
+            "id": "b5",
+            "images": {}
+          },
+          {
+            "id": "b6",
+            "images": {}
+          },
+          {
+            "id": "b7",
+            "images": {}
+          }
+        ]
+      },
+      {
         "section": "OPINION",
         "filename": "OPINION-6story-deco_template.xml",
         "title": "6 story plus deco",
@@ -338,7 +627,73 @@
         ]
       },
       {
+        "section": "OPINION_ITP",
+        "filename": "OPINION-6story-deco_template.xml",
+        "title": "6 story plus deco",
+        "usage": "front",
+        "boxes": [
+          {
+            "id": "b1",
+            "images": {}
+          },
+          {
+            "id": "b2",
+            "images": {}
+          },
+          {
+            "id": "b3",
+            "images": {}
+          },
+          {
+            "id": "deco",
+            "images": {
+              "tablet": {
+                "width": 542,
+                "height": 362
+              }
+            }
+          },
+          {
+            "id": "b4",
+            "images": {}
+          },
+          {
+            "id": "b5",
+            "images": {}
+          },
+          {
+            "id": "b6",
+            "images": {}
+          }
+        ]
+      },
+      {
         "section": "OPINION",
+        "filename": "OPINION-2story-deco_template.xml",
+        "title": "2 story plus deco",
+        "usage": "front",
+        "boxes": [
+          {
+            "id": "deco",
+            "images": {
+              "tablet": {
+                "width": 640,
+                "height": 426
+              }
+            }
+          },
+          {
+            "id": "b1",
+            "images": {}
+          },
+          {
+            "id": "b2",
+            "images": {}
+          }
+        ]
+      },
+      {
+        "section": "OPINION_ITP",
         "filename": "OPINION-2story-deco_template.xml",
         "title": "2 story plus deco",
         "usage": "front",

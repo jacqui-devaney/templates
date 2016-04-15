@@ -1,4 +1,4 @@
-
+#!/usr/bin/env node
 
 var util = require('util');
 var extend = require('util')._extend;
@@ -14,16 +14,12 @@ function grid_builder() {
   this.portraitPixelCount = 768;
   this.landscapePixelCount = 1024;
 
-
-
-  //Computed
+  // Computed
   this.gridPortraitSize = this.portraitPixelCount - this.portraitLeftMargin - this.portraitRightMargin;
   this.gridLandscapeSize = this.landscapePixelCount - this.landscapeLeftMargin - this.landscapeRightMargin;
 
   this.portraitColumnWidth = (this.gridPortraitSize - (this.portraitColCount - 1) * this.interColumnMargin) / this.portraitColCount;
   this.landscapeColumnWidth = (this.gridLandscapeSize - (this.landscapeColCount - 1) * this.interColumnMargin) / this.landscapeColCount;
-
-
 }
 
 module.exports = grid_builder;

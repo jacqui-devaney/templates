@@ -123,9 +123,9 @@ grid_builder.prototype.basicColumnStyles = function() {
 
 grid_builder.prototype.allColumnStylePermutations = function() {
   var styles = {};
-  for(var landscapeIndex = 1; landscapeIndex <= this.grid.horizontal.landscape.columns; landscapeIndex++) {
+  for (var landscapeIndex = 1; landscapeIndex <= this.grid.horizontal.landscape.columns; landscapeIndex++) {
     var landscapeWidth = this.widthForLandscapeColumnCount(landscapeIndex);
-    for(var portraitIndex = 1; portraitIndex <= this.grid.horizontal.portrait.columns; portraitIndex++) {
+    for (var portraitIndex = 1; portraitIndex <= this.grid.horizontal.portrait.columns; portraitIndex++) {
       var portraitWidth = this.widthForPortraitColumnCount(portraitIndex);
 
       var styleName = util.format(".column%s-%s", landscapeIndex, portraitIndex);
@@ -147,7 +147,7 @@ grid_builder.prototype.allColumnStylePermutations = function() {
 grid_builder.prototype.basicPositions = function() {
   var positions = {};
 
-  for(var i = 1; i <= this.grid.horizontal.landscape.columns; i++) {
+  for (var i = 1; i <= this.grid.horizontal.landscape.columns; i++) {
     var landscapeValue = this.positionForLandscapePositionIndex(i);
     var portraitValue = this.positionForPortraitPositionIndex(i);
 
@@ -255,16 +255,6 @@ grid_builder.prototype.generateStylesheet = function() {
 
 if (require.main === module) {
   var gridBuilder = new grid_builder();
-
-  var basicColumns = gridBuilder.basicColumnStyles();
-  // var allColPermutations = gridBuilder.allColumnStylePermutations();
-
-  // var basicPositions = gridBuilder.basicPositions();
-
-  // var allPositionPermutations = gridBuilder.allPositionPermutations();
   var allValues = gridBuilder.generateStylesheet();
-
   console.log(JSON.stringify(allValues, {}, 2).replace(/"/g, ''));
-
-  // console.log("BLAH IS: " + gridBuilder.widthForColumnCount(2));
 }

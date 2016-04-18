@@ -92,15 +92,12 @@ grid_builder.prototype.positionForLandscapePositionIndex = function(positionInde
   return finalPosition;
 };
 
-
 grid_builder.prototype.landscapeAndPortraitPositionsForIndices = function(landscapeIndex, portraitIndex) {
   var landscapePosition = this.positionForLandscapePositionIndex(landscapeIndex);
   var portraitPosition = this.positionForPortraitPositionIndex(portraitIndex);
 
   return [landscapePosition, portraitPosition];
 };
-
-
 
 grid_builder.prototype.basicColumnStyles = function() {
   var styles = {};
@@ -121,29 +118,7 @@ grid_builder.prototype.basicColumnStyles = function() {
   return styles;
 };
 
-grid_builder.prototype.allColumnStylePermutations = function() {
-  var styles = {};
-  for (var landscapeIndex = 1; landscapeIndex <= this.grid.horizontal.landscape.columns; landscapeIndex++) {
-    var landscapeWidth = this.widthForLandscapeColumnCount(landscapeIndex);
-    for (var portraitIndex = 1; portraitIndex <= this.grid.horizontal.portrait.columns; portraitIndex++) {
-      var portraitWidth = this.widthForPortraitColumnCount(portraitIndex);
-
-      var styleName = util.format(".column%s-%s", landscapeIndex, portraitIndex);
-      styles[styleName] = {
-        width: {
-          if: "=landscape",
-          then: landscapeWidth,
-          else: portraitWidth
-        }
-      };
-
-    }
-  }
-
-  return styles;
-};
-
-//TODO: Come back for different left and right margins
+// TODO: Come back for different left and right margins
 grid_builder.prototype.basicPositions = function() {
   var positions = {};
 
@@ -166,35 +141,10 @@ grid_builder.prototype.basicPositions = function() {
   return positions;
 };
 
-grid_builder.prototype.allPositionPermutations = function() {
-  var positions = {};
-  for (var landscapeIndex = 1; landscapeIndex <= this.grid.horizontal.landscape.columns; landscapeIndex++) {
-    var landscapePosition = this.positionForLandscapePositionIndex(landscapeIndex);
-    for (var portraitIndex = 1; portraitIndex <= this.grid.horizontal.portrait.columns; portraitIndex++) {
-      var portraitPosition = this.positionForPortraitPositionIndex(portraitIndex);
-
-      var positionName = util.format('.positionx%s-%s', landscapeIndex, portraitIndex);
-
-      positions[positionName] = {
-        left: {
-          if: "=landscape",
-          then: landscapePosition,
-          else: portraitPosition
-        }
-      };
-    }
-
-  }
-
-  return positions;
-};
-
 grid_builder.prototype.generateStylesheet = function() {
 
   var basicColumns = this.basicColumnStyles();
-  var allColPermutations = this.allColumnStylePermutations();
   var basicPositions = this.basicPositions();
-  var allPositionPermutations = this.allPositionPermutations();
 
   var grid = {};
 
@@ -226,9 +176,6 @@ grid_builder.prototype.generateStylesheet = function() {
         then: [{if: "=intent.article", then:80, else:104}, 0, 0, 0],
         else: [{if: "=intent.article", then:80, else:108}, 0, 0, 0]
       }
-
-
-
     }
   };
 
@@ -237,16 +184,8 @@ grid_builder.prototype.generateStylesheet = function() {
     grid[key] = basicColumns[key];
   }
 
-  for(key in allColPermutations) {
-    grid[key] = allColPermutations[key];
-  }
-
   for(key in basicPositions) {
     grid[key] = basicPositions[key];
-  }
-
-  for(key in allPositionPermutations) {
-    grid[key] = allPositionPermutations[key];
   }
 
   return grid;

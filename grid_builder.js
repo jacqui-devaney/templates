@@ -10,7 +10,7 @@ function grid_builder() {
   this.portraitRightMargin = 22; //Col widths don't use this; positions do
   this.landscapeLeftMargin = 26; //Col widths don't use this; positions do
   this.landscapeRightMargin = 26; //Col widths don't use this; positions do
-  this.interColumnMargin = 20;
+  this.gutterWidth = 20;
   this.portraitPixelCount = 768;
   this.landscapePixelCount = 1024;
 
@@ -18,8 +18,8 @@ function grid_builder() {
   this.gridPortraitSize = this.portraitPixelCount - this.portraitLeftMargin - this.portraitRightMargin;
   this.gridLandscapeSize = this.landscapePixelCount - this.landscapeLeftMargin - this.landscapeRightMargin;
 
-  this.portraitColumnWidth = (this.gridPortraitSize - (this.portraitColCount - 1) * this.interColumnMargin) / this.portraitColCount;
-  this.landscapeColumnWidth = (this.gridLandscapeSize - (this.landscapeColCount - 1) * this.interColumnMargin) / this.landscapeColCount;
+  this.portraitColumnWidth = (this.gridPortraitSize - (this.portraitColCount - 1) * this.gutterWidth) / this.portraitColCount;
+  this.landscapeColumnWidth = (this.gridLandscapeSize - (this.landscapeColCount - 1) * this.gutterWidth) / this.landscapeColCount;
 }
 
 module.exports = grid_builder;
@@ -27,17 +27,17 @@ module.exports = grid_builder;
 
 grid_builder.prototype.widthForPortraitColumnCount = function(columnCount) {
   var baseWidth = this.portraitColumnWidth * columnCount;
-  var marginWidth = this.interColumnMargin * (columnCount - 1);
+  var gutterWidthSum = this.gutterWidth * (columnCount - 1);
 
-  var finalWidth = baseWidth + marginWidth;
-  return finalWidth;
+  var totalWidth = baseWidth + gutterWidthSum;
+  return totalWidth;
 };
 
 grid_builder.prototype.widthForLandscapeColumnCount = function(columnCount) {
   var baseWidth = this.landscapeColumnWidth * columnCount;
-  var marginWidth = this.interColumnMargin * (columnCount - 1);
-  var finalWidth = baseWidth + marginWidth;
-  return finalWidth;
+  var gutterWidthSum = this.gutterWidth * (columnCount - 1);
+  var totalWidth = baseWidth + gutterWidthSum;
+  return totalWidth;
 };
 
 grid_builder.prototype.positionForPortraitPositionIndex = function(positionIndex) {
@@ -47,7 +47,7 @@ grid_builder.prototype.positionForPortraitPositionIndex = function(positionIndex
     return startingValue;
   }
 
-  var finalPosition = startingValue + this.widthForPortraitColumnCount(positionIndex - 1) + this.interColumnMargin;
+  var finalPosition = startingValue + this.widthForPortraitColumnCount(positionIndex - 1) + this.gutterWidth;
 
   return finalPosition;
 };
@@ -59,7 +59,7 @@ grid_builder.prototype.positionForLandscapePositionIndex = function(positionInde
     return startingIndex;
   }
 
-  var finalPosition = startingIndex + this.widthForLandscapeColumnCount(positionIndex - 1) + this.interColumnMargin;
+  var finalPosition = startingIndex + this.widthForLandscapeColumnCount(positionIndex - 1) + this.gutterWidth;
   return finalPosition;
 };
 

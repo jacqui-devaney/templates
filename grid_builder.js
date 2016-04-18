@@ -6,7 +6,7 @@ var extend = require('util')._extend;
 function grid_builder() {
   this.grid = {
     vertical: {
-      potrait: {
+      portrait: {
         columns: 12,
         margin: {
           left: 22,

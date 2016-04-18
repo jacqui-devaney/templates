@@ -1,7 +1,20 @@
 #!/usr/bin/env node
 
-var util = require('util');
-var extend = require('util')._extend;
+var LANDSCAPE_STYLE_COMPONENT = "landscape";
+var PORTRAIT_STYLE_COMPONENT = "portrait";
+var COLUMNS_STYLE_COMPONENT = "columns";
+var POSITION_STYLE_COMPONENT = "position";
+var STYLE_COMPONENT_SEPARATOR = "-";
+var STYLE_COMPONENT_PREFIX = ".";
+
+function styleTag(components) {
+  var tag = STYLE_COMPONENT_PREFIX + components[0];
+  components.splice(0, 1);
+  for (var i = 0; i < components.length; i++) {
+    tag += STYLE_COMPONENT_SEPARATOR + components[i];
+  }
+  return tag;
+}
 
 function grid_builder() {
   this.grid = {
@@ -53,7 +66,6 @@ function grid_builder() {
 
 module.exports = grid_builder;
 
-
 grid_builder.prototype.widthForPortraitColumnCount = function(columnCount) {
   var baseWidth = this.grid.horizontal.portrait.column.width * columnCount;
   var gutterWidthSum = this.grid.horizontal.portrait.gutter * (columnCount - 1);
@@ -92,25 +104,43 @@ grid_builder.prototype.positionForLandscapePositionIndex = function(positionInde
   return finalPosition;
 };
 
-grid_builder.prototype.landscapeAndPortraitPositionsForIndices = function(landscapeIndex, portraitIndex) {
-  var landscapePosition = this.positionForLandscapePositionIndex(landscapeIndex);
-  var portraitPosition = this.positionForPortraitPositionIndex(portraitIndex);
-
-  return [landscapePosition, portraitPosition];
-};
-
-grid_builder.prototype.basicColumnStyles = function() {
+grid_builder.prototype.getHorizontalStyles = function() {
   var styles = {};
-  for(var i = 1; i <= this.grid.horizontal.landscape.columns; i++) {
-    var columnName = ".column" + i;
 
-    var portraitWidth = this.widthForPortraitColumnCount(i);
-    var landscapeWidth = this.widthForLandscapeColumnCount(i);
-    styles[columnName] = {
+  for (var i = 1; i <= this.grid.horizontal.landscape.columns; i++) {
+
+    // Columns
+    
+    // Portrait
+    styles[styleTag([PORTRAIT_STYLE_COMPONENT, COLUMNS_STYLE_COMPONENT, i])] = {
+      "width": {
+        if: "=portrait",
+        then: this.widthForPortraitColumnCount(i),
+      }
+    };
+    // Landscape
+    styles[styleTag([LANDSCAPE_STYLE_COMPONENT, COLUMNS_STYLE_COMPONENT, i])] = {
       "width": {
         if: "=landscape",
-        then: landscapeWidth,
-        else: portraitWidth
+        then: this.widthForLandscapeColumnCount(i),
+      }
+    };
+
+    // Positions
+
+    // Portrait
+    styles[styleTag([PORTRAIT_STYLE_COMPONENT, POSITION_STYLE_COMPONENT, i])] = {
+      left: {
+        if: "=portrait",
+        then: this.positionForPortraitPositionIndex(i),
+      }
+    };
+    
+    // Landscape
+    styles[styleTag([LANDSCAPE_STYLE_COMPONENT, POSITION_STYLE_COMPONENT, i])] = {
+      left: {
+        if: "=landscape",
+        then: this.positionForLandscapePositionIndex(i),
       }
     };
   }
@@ -118,37 +148,12 @@ grid_builder.prototype.basicColumnStyles = function() {
   return styles;
 };
 
-// TODO: Come back for different left and right margins
-grid_builder.prototype.basicPositions = function() {
-  var positions = {};
-
-  for (var i = 1; i <= this.grid.horizontal.landscape.columns; i++) {
-    var landscapeValue = this.positionForLandscapePositionIndex(i);
-    var portraitValue = this.positionForPortraitPositionIndex(i);
-
-    var positionName = util.format('.positionx%s', i);
-
-    positions[positionName] = {
-      left: {
-        if: "=landscape",
-        then: landscapeValue,
-        else: portraitValue
-      }
-    };
-
-
-  }
-  return positions;
-};
-
 grid_builder.prototype.generateStylesheet = function() {
 
-  var basicColumns = this.basicColumnStyles();
-  var basicPositions = this.basicPositions();
 
   var grid = {};
 
-  //Setup defaults
+  // Defaults
   grid[".column_full"] = {
       width: {
           if: "=landscape",
@@ -178,14 +183,13 @@ grid_builder.prototype.generateStylesheet = function() {
       }
     }
   };
+  
+  // Computed Styles
+  var horizontalStyles = this.getHorizontalStyles();
 
   var key;
-  for(key in basicColumns) {
-    grid[key] = basicColumns[key];
-  }
-
-  for(key in basicPositions) {
-    grid[key] = basicPositions[key];
+  for (key in horizontalStyles) {
+    grid[key] = horizontalStyles[key];
   }
 
   return grid;

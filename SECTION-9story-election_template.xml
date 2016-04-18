@@ -31,14 +31,14 @@
 			font-name:"WhitneySSm-Semibold",
 			color:#4F5757,
 			padding: [10.5, 0, 11.5, 0],
-			font-size:10,
+			font-size:{if: =app.version, at-least: 7.6, then: 10, else: 12},
 			line-height:12,
 			border-width:[0.5, 0],
 			border-color:#CFD7D7,
 			letter-spacing: 2.0
 		},
 		.space: {
-			font-size: 1,
+			font-size: {if: =app.version, at-least: 7.6, then: 1, else: 6},
 			line-height:4,
 			color: transparent,
 			content: "unfortunate"

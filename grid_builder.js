@@ -88,7 +88,7 @@ grid_builder.prototype.positionForLandscapePositionIndex = function(positionInde
     return startingIndex;
   }
 
-  var finalPosition = startingIndex + this.widthForLandscapeColumnCount(positionIndex - 1) + this.grid.horizontal.portrait.gutter;
+  var finalPosition = startingIndex + this.widthForLandscapeColumnCount(positionIndex - 1) + this.grid.horizontal.landscape.gutter;
   return finalPosition;
 };
 

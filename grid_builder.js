@@ -13,7 +13,15 @@ function grid_builder() {
           right: 22
         },
         gutter: 20,
-        width: 768
+        screen: {
+          width: 768
+        },
+        grid: {
+          // Computed
+        },
+        column: {
+          // Computed
+        }
       },
       landscape: {
         columns: 16,
@@ -22,24 +30,32 @@ function grid_builder() {
           right: 26
         },
         gutter: 20,
-        width: 1024
+        screen: {
+          width: 1024
+        },
+        grid: {
+          // Computed
+        },
+        column: {
+          // Computed
+        }
       }
     }
   };
 
   // Computed
-  this.gridPortraitSize = this.grid.horizontal.portrait.width - this.grid.horizontal.portrait.margin.left - this.grid.horizontal.portrait.margin.right;
-  this.gridLandscapeSize = this.grid.horizontal.landscape.width - this.grid.horizontal.landscape.margin.left - this.grid.horizontal.landscape.margin.right;
+  this.grid.horizontal.portrait.grid.width = this.grid.horizontal.portrait.screen.width - this.grid.horizontal.portrait.margin.left - this.grid.horizontal.portrait.margin.right;
+  this.grid.horizontal.landscape.grid.width = this.grid.horizontal.landscape.screen.width - this.grid.horizontal.landscape.margin.left - this.grid.horizontal.landscape.margin.right;
 
-  this.portraitColumnWidth = (this.gridPortraitSize - (this.grid.horizontal.portrait.columns - 1) * this.grid.horizontal.portrait.gutter) / this.grid.horizontal.portrait.columns;
-  this.landscapeColumnWidth = (this.gridLandscapeSize - (this.grid.horizontal.landscape.columns - 1) * this.grid.horizontal.portrait.gutter) / this.grid.horizontal.landscape.columns;
+  this.grid.horizontal.portrait.column.width = (this.grid.horizontal.portrait.grid.width - (this.grid.horizontal.portrait.columns - 1) * this.grid.horizontal.portrait.gutter) / this.grid.horizontal.portrait.columns;
+  this.grid.horizontal.landscape.column.width = (this.grid.horizontal.landscape.grid.width - (this.grid.horizontal.landscape.columns - 1) * this.grid.horizontal.landscape.gutter) / this.grid.horizontal.landscape.columns;
 }
 
 module.exports = grid_builder;
 
 
 grid_builder.prototype.widthForPortraitColumnCount = function(columnCount) {
-  var baseWidth = this.portraitColumnWidth * columnCount;
+  var baseWidth = this.grid.horizontal.portrait.column.width * columnCount;
   var gutterWidthSum = this.grid.horizontal.portrait.gutter * (columnCount - 1);
 
   var totalWidth = baseWidth + gutterWidthSum;
@@ -47,7 +63,7 @@ grid_builder.prototype.widthForPortraitColumnCount = function(columnCount) {
 };
 
 grid_builder.prototype.widthForLandscapeColumnCount = function(columnCount) {
-  var baseWidth = this.landscapeColumnWidth * columnCount;
+  var baseWidth = this.grid.horizontal.landscape.column.width * columnCount;
   var gutterWidthSum = this.grid.horizontal.portrait.gutter * (columnCount - 1);
   var totalWidth = baseWidth + gutterWidthSum;
   return totalWidth;
@@ -186,8 +202,8 @@ grid_builder.prototype.generateStylesheet = function() {
   grid[".column_full"] = {
       width: {
           if: "=landscape",
-          then: this.grid.horizontal.landscape.width,
-          else: this.grid.horizontal.portrait.width
+          then: this.grid.horizontal.landscape.screen.width,
+          else: this.grid.horizontal.portrait.screen.width
       }
   };
 

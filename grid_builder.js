@@ -4,6 +4,29 @@ var util = require('util');
 var extend = require('util')._extend;
 
 function grid_builder() {
+  this.grid = {
+    vertical: {
+      potrait: {
+        columns: 12,
+        margin: {
+          left: 22,
+          right: 22
+        },
+        gutter: 20,
+        width: 768
+      },
+      landscape: {
+        columns: 16,
+        margin: {
+          left: 26,
+          right: 26
+        },
+        gutter: 20,
+        width: 1024
+      }
+    }
+  };
+
   this.portraitColCount = 12;
   this.landscapeColCount = 16;
   this.portraitLeftMargin = 22; //Col widths don't use this; positions do

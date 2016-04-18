@@ -34,12 +34,12 @@ function grid_builder() {
   this.landscapeLeftMargin = 26; //Col widths don't use this; positions do
   this.landscapeRightMargin = 26; //Col widths don't use this; positions do
   this.gutterWidth = 20;
-  this.portraitPixelCount = 768;
-  this.landscapePixelCount = 1024;
+  this.portraitScreenWidth = 768;
+  this.landscapeScreenWidth = 1024;
 
   // Computed
-  this.gridPortraitSize = this.portraitPixelCount - this.portraitLeftMargin - this.portraitRightMargin;
-  this.gridLandscapeSize = this.landscapePixelCount - this.landscapeLeftMargin - this.landscapeRightMargin;
+  this.gridPortraitSize = this.portraitScreenWidth - this.portraitLeftMargin - this.portraitRightMargin;
+  this.gridLandscapeSize = this.landscapeScreenWidth - this.landscapeLeftMargin - this.landscapeRightMargin;
 
   this.portraitColumnWidth = (this.gridPortraitSize - (this.portraitColCount - 1) * this.gutterWidth) / this.portraitColCount;
   this.landscapeColumnWidth = (this.gridLandscapeSize - (this.landscapeColCount - 1) * this.gutterWidth) / this.landscapeColCount;
@@ -196,8 +196,8 @@ grid_builder.prototype.generateStylesheet = function() {
   grid[".column_full"] = {
       width: {
           if: "=landscape",
-          then: this.landscapePixelCount,
-          else: this.portraitPixelCount
+          then: this.landscapeScreenWidth,
+          else: this.portraitScreenWidth
       }
   };
 

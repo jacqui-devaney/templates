@@ -4,12 +4,28 @@
 	<style src="ARTICLE-stylesheet.ejs" />
 	<style src="MEDIA-stylesheet.ejs" />
 	<style>{
-		#large_media: {
+		#large_media_container: {
 			top: 0,
 			left: 0,
 			right: 0,
-			height: { if: =portrait, then: 550, else: 440 },
-			padding: [0, 0, { if: =portrait, then: 10, else: 20 }, 0],
+			padding: [0, 0, {if: =portrait, then: 10, else: 20}, 0],
+			height: {if: =portrait, then: 550, else: 440}
+		},
+		#large_media: {
+		  	anchor-x: center,
+			anchor-y: middle,
+			width: {
+				if: {$divide: [=view.width, =media.width]},
+				less-than: {$divide: [{if: =portrait, then: 550, else: 440}, =media.height]},
+				then: =view.width,
+				else: {$multiply: [=media.width, {$divide: [{if: =portrait, then: 550, else: 440}, =media.height]}]}
+			},
+			height: {
+				if: {$divide: [=view.width, =media.width]},
+				less-than: {$divide: [{if: =portrait, then: 550, else: 440}, =media.height]},
+				then: {$multiply: [=media.height, {$divide: [=view.width, =media.width]}]},
+				else: {if: =portrait, then: 550, else: 440}
+			},
 			options: {
 				id: =page.number,
 				hideCaption: true
@@ -78,7 +94,9 @@
                 <p id="media_vr_header_left"><mark id="mark_media_vr_header_left"/></p>
                 <p id="media_vr_header_right"><mark id="mark_media_vr_header_right"/></p>
             </panel>
-            <box id="large_media" embed="media"/>
+            <box id="large_media_container">
+	            <box id="large_media" embed="media"/>
+            </box>
             <p id="media_vr_footer"><mark id="mark_media_vr_footer"/></p>
             <box id="caption box">
                 <p id="media_caption"><mark id="mark_caption"/></p>

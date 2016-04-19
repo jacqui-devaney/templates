@@ -190,7 +190,8 @@ grid_builder.prototype.landscapePositionXForIndex = function(positionIndex) {
 
 grid_builder.prototype.getVerticalStyles = function() {
   var styles = {};
-  
+
+  var linesLength = Math.max(this.grid.vertical.landscape.lines, this.grid.vertical.portrait.lines);
   for (var i = 1; i <= this.grid.vertical.landscape.lines; i++) {
     
     // Lines
@@ -253,6 +254,7 @@ grid_builder.prototype.getVerticalStyles = function() {
 grid_builder.prototype.getHorizontalStyles = function() {
   var styles = {};
 
+  var columnsLength = Math.max(this.grid.horizontal.landscape.columns, this.grid.horizontal.portrait.columns);
   for (var i = 1; i <= this.grid.horizontal.landscape.columns; i++) {
 
     // Columns

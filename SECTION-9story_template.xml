@@ -476,7 +476,7 @@
 	<box id="page_details" embed="pagedescription" />
 	<box id="ad_placeholder" class="ad-banner" embed="pagedescription" />
 	<box id="marketstrap" embed="marketstrap" />
-	<box id="tabbar-container" class="column16-12 xposition-1" >
+	<box id="tabbar-container" class="landscape-columns-16 portrait-columns-12 xposition-1" >
 		<box class="center-me">
 			<p id="tabbar-us" class="tabbar-p">
 				<a class="tabbar-link" href="/TOP_NEWS"><span class="top-news-link">TOP STORIES</span><mark class="space"/></a>

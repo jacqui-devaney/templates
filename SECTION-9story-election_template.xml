@@ -563,7 +563,7 @@
 	<box id="page_details" embed="pagedescription" />
 	<box id="ad_placeholder" class="ad-banner" embed="pagedescription" />
 	<box id="marketstrap" embed="marketstrap" />
-	<box id="tabbar-container" class="column16-12 xposition-1" >
+	<box id="tabbar-container" class="landscape-columns-16 portrait-columns-12 xposition-1" >
 		<box class="center-me">
 			<p id="tabbar-us" class="tabbar-p">
 				<a class="tabbar-link" href="/TOP_NEWS"><span class="top-news-link">TOP STORIES</span><mark class="space"/></a>
@@ -608,7 +608,7 @@
 	</box>
 
     <box id="election">
-	<box id="election_container" class="column8-12 landscape-xposition-9 portrait-xposition-1 maude unit_plain">
+	<box id="election_container" class="landscape-columns-8 portrait-columns-12 landscape-xposition-9 portrait-xposition-1 maude unit_plain">
             <p id="headline" class="banner_headline"><mark class="banner_headline" /></p>
             <panel id="bell-panel"><box id="bell" />
                 <p id="banner_caption" class="banner_caption"><mark class="banner_caption" /></p>

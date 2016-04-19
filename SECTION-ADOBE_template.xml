@@ -429,8 +429,8 @@
 	}</style>
 	<box id="page_details" embed="pagedescription" />
 
-	<box id="b1" embed="article" class="column6-8 xposition-1 maude unit_plain unit_418" module="RIGHT-IMAGE_module.xml" />
-	<box id="b2" embed="article" class="column6-8 xposition-1 maude unit_plain unit_166" module="RIGHT-IMAGE_module.xml" />
+	<box id="b1" embed="article" class="landscape-columns-6 portrait-columns-8 xposition-1 maude unit_plain unit_418" module="RIGHT-IMAGE_module.xml" />
+	<box id="b2" embed="article" class="landscape-columns-6 portrait-columns-8 xposition-1 maude unit_plain unit_166" module="RIGHT-IMAGE_module.xml" />
 
 	<box id="sponsoredheader" class="column4 landscape-xposition-13 portrait-xposition-9 maude unit_plain">
 		<panel id="sponsoredimage-panel"><box id="sponsoredimage" /></panel>
@@ -485,10 +485,10 @@
 	<box id="d2" embed="article" class="rail_only maude unit_adobe" module="CONTINUATION-dynamic_module.xml" />
 	<box id="d3" embed="article" class="rail_only maude unit_adobe" module="CONTINUATION-dynamic_module.xml" />
 
-	<box id="b3" embed="article" class="column6-8 xposition-1 maude unit_plain unit_166" module="RIGHT-IMAGE_module.xml" />
-	<box id="b4" embed="article" class="column6-8 landscape-xposition-7 portrait-xposition-1 maude unit_plain unit_50" module="RIGHT-IMAGE_module.xml" />
-	<box id="b5" embed="article" class="column6-8 landscape-xposition-7 portrait-xposition-1 maude unit_plain unit_50" module="RIGHT-IMAGE_module.xml" />
-	<box id="b6" embed="article" class="column6-8 landscape-xposition-7 portrait-xposition-1 maude unit_plain unit_50" module="RIGHT-IMAGE_module.xml" />
+	<box id="b3" embed="article" class="landscape-columns-6 portrait-columns-8 xposition-1 maude unit_plain unit_166" module="RIGHT-IMAGE_module.xml" />
+	<box id="b4" embed="article" class="landscape-columns-6 portrait-columns-8 landscape-xposition-7 portrait-xposition-1 maude unit_plain unit_50" module="RIGHT-IMAGE_module.xml" />
+	<box id="b5" embed="article" class="landscape-columns-6 portrait-columns-8 landscape-xposition-7 portrait-xposition-1 maude unit_plain unit_50" module="RIGHT-IMAGE_module.xml" />
+	<box id="b6" embed="article" class="landscape-columns-6 portrait-columns-8 landscape-xposition-7 portrait-xposition-1 maude unit_plain unit_50" module="RIGHT-IMAGE_module.xml" />
 
 	<box id="b7" embed="article"  class="phone_only rail_only maude unit_plain unit_50" module="RIGHT-IMAGE_module.xml" />
 	<box id="b8" embed="article"  class="phone_only rail_only maude unit_plain unit_50" module="RIGHT-IMAGE_module.xml" />
@@ -497,11 +497,11 @@
 
 
 	<box id="latest_news_header_wrapper" class="maude unit_plain">
-		<box id="latest_news_header" class="column6-8 landscape-xposition-7 portrait-xposition-1 maude unit_plain">
+		<box id="latest_news_header" class="landscape-columns-6 portrait-columns-8 landscape-xposition-7 portrait-xposition-1 maude unit_plain">
 			<p><mark id="latest_news_mark" /></p>
 		</box>
 	</box>
 
-	<box id="b11" embed="article" class="column6-8 landscape-xposition-7 portrait-xposition-1 maude unit_plain unit_50" module="RIGHT-IMAGE_module.xml" />
-	<box id="b12" embed="article" class="column6-8 landscape-xposition-7 portrait-xposition-1 maude unit_plain unit_50" module="RIGHT-IMAGE_module.xml" />
+	<box id="b11" embed="article" class="landscape-columns-6 portrait-columns-8 landscape-xposition-7 portrait-xposition-1 maude unit_plain unit_50" module="RIGHT-IMAGE_module.xml" />
+	<box id="b12" embed="article" class="landscape-columns-6 portrait-columns-8 landscape-xposition-7 portrait-xposition-1 maude unit_plain unit_50" module="RIGHT-IMAGE_module.xml" />
 </jpml>

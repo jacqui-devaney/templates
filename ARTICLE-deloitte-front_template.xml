@@ -34,5 +34,5 @@
         <box class="deloitte_strap_image"/>
         <p id="deloitte_strap_p"><mark id="deloitte_strap_mark"/></p>
     </panel>
-    <box id="view" embed="article" class="column16-12 xposition-1" module="ARTICLE-deloitte-front_module.xml" />
+    <box id="view" embed="article" class="landscape-columns-16 portrait-columns-12 xposition-1" module="ARTICLE-deloitte-front_module.xml" />
 </jpml>

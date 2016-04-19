@@ -44,7 +44,7 @@
 		]
 	}</style>
   <box id="page_details" embed="pagedescription" />
-  <box id="view" embed="article" class="column16-12 xposition-1 maude" />
+  <box id="view" embed="article" class="landscape-columns-16 portrait-columns-12 xposition-1 maude" />
   <box id="fullpage_container">
       <box id="fullpage_ad" class="ad-fullpage" embed="fullpagead" />
   </box>

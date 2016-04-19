@@ -111,36 +111,50 @@ grid_builder.prototype.getHorizontalStyles = function() {
 
     // Columns
     
+    // All
+    styles[styleTag([COLUMNS_STYLE_COMPONENT, i])] = {
+      "width": {
+        if: "=portrait",
+        then: this.widthForPortraitColumnCount(i),
+        else: this.widthForLandscapeColumnCount(i)
+      }
+    };
     // Portrait
     styles[styleTag([PORTRAIT_STYLE_COMPONENT, COLUMNS_STYLE_COMPONENT, i])] = {
       "width": {
         if: "=portrait",
-        then: this.widthForPortraitColumnCount(i),
+        then: this.widthForPortraitColumnCount(i)
       }
     };
     // Landscape
     styles[styleTag([LANDSCAPE_STYLE_COMPONENT, COLUMNS_STYLE_COMPONENT, i])] = {
       "width": {
         if: "=landscape",
-        then: this.widthForLandscapeColumnCount(i),
+        then: this.widthForLandscapeColumnCount(i)
       }
     };
 
     // Positions
-
-    // Portrait
-    styles[styleTag([PORTRAIT_STYLE_COMPONENT, XPOSITION_STYLE_COMPONENT, i])] = {
+    // All
+    styles[styleTag([XPOSITION_STYLE_COMPONENT, i])] = {
       left: {
         if: "=portrait",
         then: this.positionForPortraitPositionIndex(i),
+        else: this.positionForLandscapePositionIndex(i)
       }
     };
-    
+   // Portrait
+    styles[styleTag([PORTRAIT_STYLE_COMPONENT, XPOSITION_STYLE_COMPONENT, i])] = {
+      left: {
+        if: "=portrait",
+        then: this.positionForPortraitPositionIndex(i)
+      }
+    };
     // Landscape
     styles[styleTag([LANDSCAPE_STYLE_COMPONENT, XPOSITION_STYLE_COMPONENT, i])] = {
       left: {
         if: "=landscape",
-        then: this.positionForLandscapePositionIndex(i),
+        then: this.positionForLandscapePositionIndex(i)
       }
     };
   }

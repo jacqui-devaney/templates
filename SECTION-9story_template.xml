@@ -476,7 +476,7 @@
 	<box id="page_details" embed="pagedescription" />
 	<box id="ad_placeholder" class="ad-banner" embed="pagedescription" />
 	<box id="marketstrap" embed="marketstrap" />
-	<box id="tabbar-container" class="column16-12 positionx1" >
+	<box id="tabbar-container" class="column16-12 xposition-1" >
 		<box class="center-me">
 			<p id="tabbar-us" class="tabbar-p">
 				<a class="tabbar-link" href="/TOP_NEWS"><span class="top-news-link">TOP STORIES</span><mark class="space"/></a>
@@ -519,10 +519,10 @@
 			</p>
 		</box>
 	</box>
-	<box id="b1" embed="article" class="column8 positionx1 maude unit_plain unit_418" module="TOP-IMAGE_module.xml" />
+	<box id="b1" embed="article" class="column8 xposition-1 maude unit_plain unit_418" module="TOP-IMAGE_module.xml" />
 	<box id="b2" embed="article" class="column4 landscape-xposition-9 portrait-xposition-1  maude unit_plain unit_166" module="TOP-IMAGE_module.xml" />
 	<box id="b3" embed="article" class="column4 landscape-xposition-13 portrait-xposition-5 maude unit_plain unit_166" module="TOP-IMAGE_module.xml" />
-	<box id="b4" embed="article" class="column4 positionx9  maude unit_plain unit_50" module="CONTINUATION-dynamic_module.xml" />
+	<box id="b4" embed="article" class="column4 xposition-9  maude unit_plain unit_50" module="CONTINUATION-dynamic_module.xml" />
 
     <box id="cube_ad_container" class="phone_only maude unit_ad">
         <box id="cube_ad" class="ad-fullpage" embed="fullpagead">
@@ -539,7 +539,7 @@
 	<box id="b5" embed="article" class="column4 landscape-xposition-13 portrait-xposition-9  maude unit_plain unit_50" module="CONTINUATION-dynamic_module.xml" />
 	<box id="b6" embed="article" class="column4 landscape-xposition-1 portrait-xposition-9    maude unit_plain unit_50" module="CONTINUATION-dynamic_module.xml" />
 	<box id="b7" embed="article" class="column4 landscape-xposition-5 portrait-xposition-9 maude unit_plain unit_50" module="CONTINUATION-dynamic_module.xml" />
-	<box id="b8" embed="article" class="column4 positionx9    maude unit_plain unit_50" module="CONTINUATION-dynamic_module.xml" />
+	<box id="b8" embed="article" class="column4 xposition-9    maude unit_plain unit_50" module="CONTINUATION-dynamic_module.xml" />
 	<box id="b9" embed="article" class="column4 landscape-xposition-13 portrait-xposition-9 maude unit_plain unit_50" module="CONTINUATION-dynamic_module.xml" />
 
 </jpml>

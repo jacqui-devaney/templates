@@ -77,7 +77,7 @@ function grid_builder() {
         },
         lineHeight: 20,
         screen: {
-          width: 1024
+          height: 1024
         },
         grid: {
           // Computed
@@ -94,11 +94,11 @@ function grid_builder() {
   // Grid width (screen size minus the top and bottom margins)
   this.grid.vertical.portrait.grid.height = this.grid.vertical.portrait.screen.height - this.grid.vertical.portrait.margin.top - this.grid.vertical.portrait.margin.bottom;
   this.grid.vertical.landscape.grid.height = this.grid.vertical.landscape.screen.height - this.grid.vertical.landscape.margin.top - this.grid.vertical.landscape.margin.bottom;
-
+  
   // Lines count
   this.grid.vertical.portrait.lines = this.grid.vertical.portrait.grid.height / this.grid.vertical.portrait.lineHeight;
   this.grid.vertical.landscape.lines = this.grid.vertical.landscape.grid.height / this.grid.vertical.landscape.lineHeight;
-
+  
   // Horizontal
 
   // Grid width (screen size minus the left and right margins)
@@ -115,11 +115,11 @@ module.exports = grid_builder;
 // Vertical Helpers
 
 grid_builder.prototype.portraitHeightForLines = function(lineCount) {
-  return this.grid.horizontal.portrait.lineHeight * lineCount;
+  return this.grid.vertical.portrait.lineHeight * lineCount;
 };
 
 grid_builder.prototype.landscapeHeightForLines = function(lineCount) {
-  return this.grid.horizontal.landscape.lineHeight * lineCount;
+  return this.grid.vertical.landscape.lineHeight * lineCount;
 };
 
 grid_builder.prototype.portraitPositionYForIndex = function(positionIndex) {

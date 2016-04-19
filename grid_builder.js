@@ -245,6 +245,7 @@ grid_builder.prototype.getVerticalStyles = function() {
   
   }
 
+  return styles;
 };
 
 // Get Horizontal Styles
@@ -310,10 +311,9 @@ grid_builder.prototype.getHorizontalStyles = function() {
 
 grid_builder.prototype.generateStylesheet = function() {
 
-
   var grid = {};
 
-  // Defaults
+  // Defaults Styles
   grid[".column_full"] = {
       width: {
           if: "=landscape",
@@ -345,15 +345,22 @@ grid_builder.prototype.generateStylesheet = function() {
   };
   
   // Computed Styles
+  
+  // Horizontal
   var horizontalStyles = this.getHorizontalStyles();
-
-  var key;
-  for (key in horizontalStyles) {
-    grid[key] = horizontalStyles[key];
+  var horizontalKey;
+  for (horizontalKey in horizontalStyles) {
+    grid[horizontalKey] = horizontalStyles[horizontalKey];
   }
 
+  // Vertical
+  var verticalStyles = this.getVerticalStyles();
+  var verticalKey;
+  for (verticalKey in horizontalStyles) {
+    grid[verticalKey] = horizontalStyles[verticalKey];
+  }
+  
   return grid;
-
 };
 
 if (require.main === module) {

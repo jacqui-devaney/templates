@@ -111,13 +111,13 @@
 		</box>
 	</box>
 
-	<box id="b1" embed="article" class="column8 xposition-1 maude unit_plain" module="TOP-IMAGE_module.xml" />
-	<box id="deco" embed="article" class="column8 xposition-1 maude unit_deco" module="DECO_module.xml" options="G_size" />
+	<box id="b1" embed="article" class="columns-8 xposition-1 maude unit_plain" module="TOP-IMAGE_module.xml" />
+	<box id="deco" embed="article" class="columns-8 xposition-1 maude unit_deco" module="DECO_module.xml" options="G_size" />
 	<box id="b2" embed="article" class="landscape-columns-4 portrait-columns-8 landscape-xposition-9 portrait-xposition-1 maude unit_plain" module="RIGHT-IMAGE_module.xml" />
 
-    <box id="b3" embed="article" class="column4 landscape-xposition-13 portrait-xposition-9 maude unit_plain" module="TOP-IMAGE_module.xml" />
-	<box id="b4" embed="article" class="column4 xposition-9 maude unit_plain" module="TOP-IMAGE_module.xml" />
-	<box id="b5" embed="article" class="column4 landscape-xposition-13 portrait-xposition-9 maude unit_plain" module="TOP-IMAGE_module.xml" />
+    <box id="b3" embed="article" class="columns-4 landscape-xposition-13 portrait-xposition-9 maude unit_plain" module="TOP-IMAGE_module.xml" />
+	<box id="b4" embed="article" class="columns-4 xposition-9 maude unit_plain" module="TOP-IMAGE_module.xml" />
+	<box id="b5" embed="article" class="columns-4 landscape-xposition-13 portrait-xposition-9 maude unit_plain" module="TOP-IMAGE_module.xml" />
 	<box id="front_page" class="tablet_only positionx_full column_full maude unit_ad">
 		<box id="banner_ad" class="ad-banner front_ad" embed="advertisement" />
 	</box>

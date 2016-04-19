@@ -423,8 +423,8 @@
 			</p>
 		</box>
 	</box>
-	<box id="b1" embed="article" class="column8 xposition-1 maude unit_plain unit_418" module="TOP-IMAGE_module.xml" />
-	<box id="b2" embed="article" class="column8 landscape-xposition-9 portrait-xposition-1  maude unit_plain unit_166" module="RIGHT-IMAGE_module.xml" />
+	<box id="b1" embed="article" class="columns-8 xposition-1 maude unit_plain unit_418" module="TOP-IMAGE_module.xml" />
+	<box id="b2" embed="article" class="columns-8 landscape-xposition-9 portrait-xposition-1  maude unit_plain unit_166" module="RIGHT-IMAGE_module.xml" />
 	<box id="b3" embed="article" class="landscape-columns-8 portrait-columns-4 xposition-9  maude unit_plain unit_50" module="CONTINUATION-dynamic_module.xml" />
 	<box id="b4" embed="article" class="landscape-columns-8 portrait-columns-4 xposition-9  maude unit_plain unit_50" module="CONTINUATION-dynamic_module.xml" />
 	<box id="b5" embed="article" class="landscape-columns-8 portrait-columns-4 xposition-9  maude unit_plain unit_50" module="CONTINUATION-dynamic_module.xml" />

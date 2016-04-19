@@ -130,14 +130,14 @@
 			</panel>
 		</box>
 	</box>
-	<box id="whatsnewsheader" class="tablet_only column3 xposition-1"><p><mark id="whatsnewsheadertext"/></p></box>
-	<box id="whatsnews" class="tablet_only column3 xposition-1" embed="list">
+	<box id="whatsnewsheader" class="tablet_only columns-3 xposition-1"><p><mark id="whatsnewsheadertext"/></p></box>
+	<box id="whatsnews" class="tablet_only columns-3 xposition-1" embed="list">
 	</box>
 	<box id="b1" embed="article" class="landscape-columns-4 portrait-columns-9 landscape-xposition-13 portrait-xposition-4 maude unit_plain" module="TOP-IMAGE_module.xml" />
-	<box id="deco" embed="article" class="column9 xposition-4 maude unit_deco" module="DECO_module.xml" options="G_size" />
-	<box id="b2" embed="article" class="column3 xposition-4 maude unit_plain" module="TOP-IMAGE_module.xml" />
-	<box id="b3" embed="article" class="column3 xposition-7 maude unit_plain" module="TOP-IMAGE_module.xml" />
-	<box id="b4" embed="article" class="column3 xposition-10 maude unit_plain" module="TOP-IMAGE_module.xml" />
+	<box id="deco" embed="article" class="columns-9 xposition-4 maude unit_deco" module="DECO_module.xml" options="G_size" />
+	<box id="b2" embed="article" class="columns-3 xposition-4 maude unit_plain" module="TOP-IMAGE_module.xml" />
+	<box id="b3" embed="article" class="columns-3 xposition-7 maude unit_plain" module="TOP-IMAGE_module.xml" />
+	<box id="b4" embed="article" class="columns-3 xposition-10 maude unit_plain" module="TOP-IMAGE_module.xml" />
 	<box id="b5" embed="article" class="landscape-columns-4 portrait-columns-9 landscape-xposition-13 portrait-xposition-4 maude unit_plain" module="AHED_module.xml" />
 	<box id="front_page" class="tablet_only positionx_full column_full maude unit_ad">
 		<box id="banner_ad" class="ad-banner front_ad" embed="advertisement" />

@@ -111,10 +111,10 @@
 		]
 	} </style>
 	<box id="page_details" embed="pagedescription" />
-	<box id="b1" embed="article" class="column8 xposition-1 maude unit_plain" module="TOP-IMAGE_module.xml" />
-	<box id="b2" embed="article" class="column4 landscape-xposition-9 portrait-xposition-1 maude unit_plain" module="TOP-IMAGE_module.xml" />
-	<box id="b3" embed="article" class="column4 landscape-xposition-9 portrait-xposition-5 maude unit_plain" module="TOP-IMAGE_module.xml" />
+	<box id="b1" embed="article" class="columns-8 xposition-1 maude unit_plain" module="TOP-IMAGE_module.xml" />
+	<box id="b2" embed="article" class="columns-4 landscape-xposition-9 portrait-xposition-1 maude unit_plain" module="TOP-IMAGE_module.xml" />
+	<box id="b3" embed="article" class="columns-4 landscape-xposition-9 portrait-xposition-5 maude unit_plain" module="TOP-IMAGE_module.xml" />
 	<box id="b4" embed="article" class="landscape-columns-6 portrait-columns-4 xposition-1 maude unit_plain" module="RIGHT-INSET-IMAGE_module.xml" />
 	<box id="b5" embed="article" class="landscape-columns-6 portrait-columns-4 landscape-xposition-7 portrait-xposition-5 maude unit_plain" module="RIGHT-INSET-IMAGE_module.xml" />
-	<box id="rail_content" class="column4 landscape-xposition-13 portrait-xposition-9" embed="list" />
+	<box id="rail_content" class="columns-4 landscape-xposition-13 portrait-xposition-9" embed="list" />
 </jpml>

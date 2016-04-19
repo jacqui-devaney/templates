@@ -445,12 +445,12 @@
 	<box id="b1" embed="article" class="landscape-columns-6 portrait-columns-8 xposition-1 maude unit_plain unit_418" module="RIGHT-IMAGE_module.xml" />
 	<box id="b2" embed="article" class="landscape-columns-6 portrait-columns-8 xposition-1 maude unit_plain unit_166" module="RIGHT-IMAGE_module.xml" />
 
-	<box id="deloitteheader" class="column4 landscape-xposition-13 portrait-xposition-9 maude unit_plain">
+	<box id="deloitteheader" class="columns-4 landscape-xposition-13 portrait-xposition-9 maude unit_plain">
 		<p id="sponsored-content">CONTENT FROM OUR SPONSOR</p>
 		<panel id="deloitteimage-panel"><box id="deloitteimage" /></panel>
 		<p id="deloitte_subhed"><mark id="deloitte_subhed_mark" /></p>
 	</box>
-	<box id="deloitte_list" class="tablet_only column4 landscape-xposition-13 portrait-xposition-9" embed="list">
+	<box id="deloitte_list" class="tablet_only columns-4 landscape-xposition-13 portrait-xposition-9" embed="list">
 		<style src="DELOITTE-stylesheet.ejs"/>
 		<panel id="deloitte_inner">
 			<panel id="deloitte_item_1" class="deloitte_item deloitte_item_first">

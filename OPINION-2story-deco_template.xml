@@ -63,7 +63,7 @@
 		]
 	} </style>
     <box id="page_details" class="tablet_only" embed="pagedescription" />
-	<box id="deco" embed="article" class="column12 xposition-1 maude unit_deco" module="DECO_module.xml" />
+	<box id="deco" embed="article" class="columns-12 xposition-1 maude unit_deco" module="DECO_module.xml" />
 	<box id="b1" embed="article" class="landscape-columns-4 portrait-columns-6 landscape-xposition-13 portrait-xposition-1 maude unit_plain" module="TOP-IMAGE_module.xml" />
 	<box id="b2" embed="article" class="landscape-columns-4 portrait-columns-6 landscape-xposition-13 portrait-xposition-7 maude unit_plain" module="TOP-IMAGE_module.xml" />
 	<box id="front_page" class="tablet_only positionx_full column_full maude unit_ad">

@@ -432,11 +432,11 @@
 	<box id="b1" embed="article" class="landscape-columns-6 portrait-columns-8 xposition-1 maude unit_plain unit_418" module="RIGHT-IMAGE_module.xml" />
 	<box id="b2" embed="article" class="landscape-columns-6 portrait-columns-8 xposition-1 maude unit_plain unit_166" module="RIGHT-IMAGE_module.xml" />
 
-	<box id="sponsoredheader" class="column4 landscape-xposition-13 portrait-xposition-9 maude unit_plain">
+	<box id="sponsoredheader" class="columns-4 landscape-xposition-13 portrait-xposition-9 maude unit_plain">
 		<panel id="sponsoredimage-panel"><box id="sponsoredimage" /></panel>
 		<p id="sponsored_subhed"><mark id="sponsored_subhed_mark" /></p>
 	</box>
-	<box id="sponsored_list" class="tablet_only column4 landscape-xposition-13 portrait-xposition-9" embed="list">
+	<box id="sponsored_list" class="tablet_only columns-4 landscape-xposition-13 portrait-xposition-9" embed="list">
 		<style src="ADOBE-stylesheet.ejs"/>
 		<panel id="sponsored_inner">
 			<panel id="sponsored_item_1" class="sponsored_item sponsored_item_first">

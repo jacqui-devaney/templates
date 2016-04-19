@@ -75,7 +75,7 @@
             </box>
             <p id="media_vr_link"><a href="http://wsj.com/virtual-reality"><mark id="mark_media_vr_link"/></a></p>
     </box>
-	<panel class="column4 landscape-xposition-13 portrait-xposition-9" id="body_container">
+	<panel class="columns-4 landscape-xposition-13 portrait-xposition-9" id="body_container">
         <p class="module_flashline" embed="flashline"/>
 		<p class="article_headline"><span embed="headline"/></p>
 		<panel class="article_body" embed="body"/>

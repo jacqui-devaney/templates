@@ -356,8 +356,8 @@ grid_builder.prototype.generateStylesheet = function() {
   // Vertical
   var verticalStyles = this.getVerticalStyles();
   var verticalKey;
-  for (verticalKey in horizontalStyles) {
-    grid[verticalKey] = horizontalStyles[verticalKey];
+  for (verticalKey in verticalStyles) {
+    grid[verticalKey] = verticalStyles[verticalKey];
   }
   
   return grid;

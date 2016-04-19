@@ -509,36 +509,36 @@
     }</style>
 	<box id="page_details" class="tablet_only" embed="pagedescription" />
     <box id="b1" embed="article" class="column2-3 positionx1 maude unit_plain" module="CONTINUATION-dynamic_module.xml" />
-    <box id="b2" embed="article" class="column2-3 positionx3-4 maude unit_plain" module="CONTINUATION-dynamic_module.xml" />
-    <box id="b3" embed="article" class="column2-3 positionx5-7 maude unit_plain" module="CONTINUATION-dynamic_module.xml" />
-    <box id="b4" embed="article" class="column2-3 positionx7-10 maude unit_plain" module="CONTINUATION-dynamic_module.xml" />
-    <box id="b5" embed="article" class="column2-3 positionx9-1 maude unit_plain" module="CONTINUATION-dynamic_module.xml" />
-    <box id="b6" embed="article" class="column2-3 positionx11-4 maude unit_plain" module="CONTINUATION-dynamic_module.xml" />
-    <box id="b7" embed="article" class="column2-3 positionx13-7 maude unit_plain" module="CONTINUATION-dynamic_module.xml" />
-    <box id="b8" embed="article" class="column2-3 positionx15-10 maude unit_plain" module="CONTINUATION-dynamic_module.xml" />
+    <box id="b2" embed="article" class="column2-3 landscape-xposition-3 portrait-xposition-4 maude unit_plain" module="CONTINUATION-dynamic_module.xml" />
+    <box id="b3" embed="article" class="column2-3 landscape-xposition-5 portrait-xposition-7 maude unit_plain" module="CONTINUATION-dynamic_module.xml" />
+    <box id="b4" embed="article" class="column2-3 landscape-xposition-7 portrait-xposition-10 maude unit_plain" module="CONTINUATION-dynamic_module.xml" />
+    <box id="b5" embed="article" class="column2-3 landscape-xposition-9 portrait-xposition-1 maude unit_plain" module="CONTINUATION-dynamic_module.xml" />
+    <box id="b6" embed="article" class="column2-3 landscape-xposition-11 portrait-xposition-4 maude unit_plain" module="CONTINUATION-dynamic_module.xml" />
+    <box id="b7" embed="article" class="column2-3 landscape-xposition-13 portrait-xposition-7 maude unit_plain" module="CONTINUATION-dynamic_module.xml" />
+    <box id="b8" embed="article" class="column2-3 landscape-xposition-15 portrait-xposition-10 maude unit_plain" module="CONTINUATION-dynamic_module.xml" />
     <box id="b9" embed="article" class="column2-3 positionx1 maude unit_plain" module="CONTINUATION-dynamic_module.xml" />
-    <box id="b10" embed="article" class="column2-3 positionx3-4 maude unit_plain" module="CONTINUATION-dynamic_module.xml" />
-    <box id="b11" embed="article" class="column2-3 positionx5-7 maude unit_plain" module="CONTINUATION-dynamic_module.xml" />
-    <box id="b12" embed="article" class="column2-3 positionx7-10 maude unit_plain" module="CONTINUATION-dynamic_module.xml" />
-    <box id="b13" embed="article" class="column2-3 positionx9-1 maude unit_plain" module="CONTINUATION-dynamic_module.xml" />
-    <box id="b14" embed="article" class="column2-3 positionx11-4 maude unit_plain" module="CONTINUATION-dynamic_module.xml" />
-    <box id="b15" embed="article" class="column2-3 positionx13-7 maude unit_plain" module="CONTINUATION-dynamic_module.xml" />
-    <box id="b16" embed="article" class="column2-3 positionx15-10 maude unit_plain" module="CONTINUATION-dynamic_module.xml" />
+    <box id="b10" embed="article" class="column2-3 landscape-xposition-3 portrait-xposition-4 maude unit_plain" module="CONTINUATION-dynamic_module.xml" />
+    <box id="b11" embed="article" class="column2-3 landscape-xposition-5 portrait-xposition-7 maude unit_plain" module="CONTINUATION-dynamic_module.xml" />
+    <box id="b12" embed="article" class="column2-3 landscape-xposition-7 portrait-xposition-10 maude unit_plain" module="CONTINUATION-dynamic_module.xml" />
+    <box id="b13" embed="article" class="column2-3 landscape-xposition-9 portrait-xposition-1 maude unit_plain" module="CONTINUATION-dynamic_module.xml" />
+    <box id="b14" embed="article" class="column2-3 landscape-xposition-11 portrait-xposition-4 maude unit_plain" module="CONTINUATION-dynamic_module.xml" />
+    <box id="b15" embed="article" class="column2-3 landscape-xposition-13 portrait-xposition-7 maude unit_plain" module="CONTINUATION-dynamic_module.xml" />
+    <box id="b16" embed="article" class="column2-3 landscape-xposition-15 portrait-xposition-10 maude unit_plain" module="CONTINUATION-dynamic_module.xml" />
 
     <box id="b17" embed="article" class="column2-3 positionx1 maude unit_plain" module="CONTINUATION-dynamic_module.xml" />
-    <box id="b18" embed="article" class="column2-3 positionx3-4 maude unit_plain" module="CONTINUATION-dynamic_module.xml" />
-    <box id="b19" embed="article" class="column2-3 positionx5-7 maude unit_plain" module="CONTINUATION-dynamic_module.xml" />
-    <box id="b20" embed="article" class="column2-3 positionx7-10 maude unit_plain" module="CONTINUATION-dynamic_module.xml" />
-    <box id="b21" embed="article" class="column2-3 positionx9-1 maude unit_plain" module="CONTINUATION-dynamic_module.xml" />
-    <box id="b22" embed="article" class="column2-3 positionx11-4 maude unit_plain" module="CONTINUATION-dynamic_module.xml" />
-    <box id="b23" embed="article" class="column2-3 positionx13-7 maude unit_plain" module="CONTINUATION-dynamic_module.xml" />
-    <box id="b24" embed="article" class="column2-3 positionx15-10 maude unit_plain" module="CONTINUATION-dynamic_module.xml" />
+    <box id="b18" embed="article" class="column2-3 landscape-xposition-3 portrait-xposition-4 maude unit_plain" module="CONTINUATION-dynamic_module.xml" />
+    <box id="b19" embed="article" class="column2-3 landscape-xposition-5 portrait-xposition-7 maude unit_plain" module="CONTINUATION-dynamic_module.xml" />
+    <box id="b20" embed="article" class="column2-3 landscape-xposition-7 portrait-xposition-10 maude unit_plain" module="CONTINUATION-dynamic_module.xml" />
+    <box id="b21" embed="article" class="column2-3 landscape-xposition-9 portrait-xposition-1 maude unit_plain" module="CONTINUATION-dynamic_module.xml" />
+    <box id="b22" embed="article" class="column2-3 landscape-xposition-11 portrait-xposition-4 maude unit_plain" module="CONTINUATION-dynamic_module.xml" />
+    <box id="b23" embed="article" class="column2-3 landscape-xposition-13 portrait-xposition-7 maude unit_plain" module="CONTINUATION-dynamic_module.xml" />
+    <box id="b24" embed="article" class="column2-3 landscape-xposition-15 portrait-xposition-10 maude unit_plain" module="CONTINUATION-dynamic_module.xml" />
     <box id="b25" embed="article" class="column2-3 positionx1 maude unit_plain" module="CONTINUATION-dynamic_module.xml" />
-    <box id="b26" embed="article" class="column2-3 positionx3-4 maude unit_plain" module="CONTINUATION-dynamic_module.xml" />
-    <box id="b27" embed="article" class="column2-3 positionx5-7 maude unit_plain" module="CONTINUATION-dynamic_module.xml" />
-    <box id="b28" embed="article" class="column2-3 positionx7-10 maude unit_plain" module="CONTINUATION-dynamic_module.xml" />
-    <box id="b29" embed="article" class="column2-3 positionx9-1 maude unit_plain" module="CONTINUATION-dynamic_module.xml" />
-    <box id="b30" embed="article" class="column2-3 positionx11-4 maude unit_plain" module="CONTINUATION-dynamic_module.xml" />
-    <box id="b31" embed="article" class="column2-3 positionx13-7 maude unit_plain" module="CONTINUATION-dynamic_module.xml" />
-    <box id="b32" embed="article" class="column2-3 positionx15-10 maude unit_plain" module="CONTINUATION-dynamic_module.xml" />
+    <box id="b26" embed="article" class="column2-3 landscape-xposition-3 portrait-xposition-4 maude unit_plain" module="CONTINUATION-dynamic_module.xml" />
+    <box id="b27" embed="article" class="column2-3 landscape-xposition-5 portrait-xposition-7 maude unit_plain" module="CONTINUATION-dynamic_module.xml" />
+    <box id="b28" embed="article" class="column2-3 landscape-xposition-7 portrait-xposition-10 maude unit_plain" module="CONTINUATION-dynamic_module.xml" />
+    <box id="b29" embed="article" class="column2-3 landscape-xposition-9 portrait-xposition-1 maude unit_plain" module="CONTINUATION-dynamic_module.xml" />
+    <box id="b30" embed="article" class="column2-3 landscape-xposition-11 portrait-xposition-4 maude unit_plain" module="CONTINUATION-dynamic_module.xml" />
+    <box id="b31" embed="article" class="column2-3 landscape-xposition-13 portrait-xposition-7 maude unit_plain" module="CONTINUATION-dynamic_module.xml" />
+    <box id="b32" embed="article" class="column2-3 landscape-xposition-15 portrait-xposition-10 maude unit_plain" module="CONTINUATION-dynamic_module.xml" />
 </jpml>

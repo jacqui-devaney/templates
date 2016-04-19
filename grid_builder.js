@@ -3,7 +3,7 @@
 var LANDSCAPE_STYLE_COMPONENT = "landscape";
 var PORTRAIT_STYLE_COMPONENT = "portrait";
 var COLUMNS_STYLE_COMPONENT = "columns";
-var POSITION_STYLE_COMPONENT = "position";
+var XPOSITION_STYLE_COMPONENT = "xposition";
 var STYLE_COMPONENT_SEPARATOR = "-";
 var STYLE_COMPONENT_PREFIX = ".";
 
@@ -129,7 +129,7 @@ grid_builder.prototype.getHorizontalStyles = function() {
     // Positions
 
     // Portrait
-    styles[styleTag([PORTRAIT_STYLE_COMPONENT, POSITION_STYLE_COMPONENT, i])] = {
+    styles[styleTag([PORTRAIT_STYLE_COMPONENT, XPOSITION_STYLE_COMPONENT, i])] = {
       left: {
         if: "=portrait",
         then: this.positionForPortraitPositionIndex(i),
@@ -137,7 +137,7 @@ grid_builder.prototype.getHorizontalStyles = function() {
     };
     
     // Landscape
-    styles[styleTag([LANDSCAPE_STYLE_COMPONENT, POSITION_STYLE_COMPONENT, i])] = {
+    styles[styleTag([LANDSCAPE_STYLE_COMPONENT, XPOSITION_STYLE_COMPONENT, i])] = {
       left: {
         if: "=landscape",
         then: this.positionForLandscapePositionIndex(i),

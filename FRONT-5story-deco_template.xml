@@ -115,7 +115,7 @@
 		}}
 		]
 	}</style>
-  <box id="page_details" class="tablet_only" embed="pagedescription" />
+	<box id="page_details" class="tablet_only" embed="pagedescription" />
 	<box class="tablet_only latest_news_box xposition-1">
 			<p class="latest_news">
 				<a href="//NOW/LATEST_NEWS">LATEST NEWS</a>
@@ -144,8 +144,8 @@
 	</box>
 	<box id="footer" class="tablet_only landscape-columns-16 portrait-columns-12 xposition-1" module="RAIL-footer_module.xml">
 		<box id="footerstrapinner">
-        <p id="footer_headline" class="footer_headline">Did You Know?</p>
-		<p id="footer_tip"><mark id="footer_tip" /></p>
-        </box>
-    </box>
+			<p id="footer_headline" class="footer_headline">Did You Know?</p>
+			<p id="footer_tip"><mark id="footer_tip" /></p>
+		</box>
+	</box>
 </jpml>

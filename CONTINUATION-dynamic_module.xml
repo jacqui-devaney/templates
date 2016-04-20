@@ -98,7 +98,7 @@
 			#article_status: {
 				position: relative,
 				padding: [{if: =options.show_body, then: 1, else: 5}, 4, 0, 4],
-				left: -24,
+				left: 0,
 				width: 16,
 				height: 16,
 				options: {

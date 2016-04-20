@@ -315,37 +315,6 @@ grid_builder.prototype.generateStylesheet = function() {
 
   var grid = {};
 
-  // Defaults Styles
-  grid[".column_full"] = {
-      width: {
-          if: "=landscape",
-          then: this.grid.horizontal.landscape.screen.width,
-          else: this.grid.horizontal.portrait.screen.width
-      }
-  };
-
-  grid["#rail_content"] = {
-      top: 0,
-      height: {
-          if: "=landscape",
-          then: 658,
-          else: 914
-      },
-      "border-width": [0,0,0,1],
-      "border-color": "#d8d8d8"
-  };
-
-  grid.jpml = {
-    padding: {
-      if: "=scale.phone",
-      else: {
-        if: "=portrait",
-        then: [{if: "=intent.article", then:80, else:104}, 0, 0, 0],
-        else: [{if: "=intent.article", then:80, else:108}, 0, 0, 0]
-      }
-    }
-  };
-  
   // Computed Styles
   
   // Horizontal

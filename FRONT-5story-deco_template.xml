@@ -68,12 +68,12 @@
 					height:122,
 					options:{ bind: {if: =articles.b5.no_binding, then: none}, medium_headline:true, bottom_align:true, show_byline:false, top_border:true}
 				},
-                #footer: {
-                    top: 820,
-                    height: 100,
-                    text-align: center,
-                    options:{bind: none, top_border: true}
-                }
+				#footer: {
+					top: 820,
+					height: 100,
+					text-align: center,
+					options:{bind: none, top_border: true}
+				}
 			}},
 			{if: =landscape, then: {
 				#b1:	{
@@ -117,9 +117,9 @@
 	}</style>
 	<box id="page_details" class="tablet_only" embed="pagedescription" />
 	<box class="tablet_only latest_news_box xposition-1">
-			<p class="latest_news">
-				<a href="//NOW/LATEST_NEWS">LATEST NEWS</a>
-			</p>
+		<p class="latest_news">
+			<a href="//NOW/LATEST_NEWS">LATEST NEWS</a>
+		</p>
 	</box>
 	<box id="marketstrap" class="tablet_only" embed="marketstrap">
 		<box id="marketstrapinner">

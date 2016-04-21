@@ -2,7 +2,6 @@
 	<style src="GLOBAL-stylesheet.ejs" />
 	<style src="GLOBAL_MODULES-stylesheet.ejs" />
 	<style src="PHONE-MODULES-stylesheet.ejs" />
-
 	<style>{
 		jpml: {
 			background-color: =options.background_color,
@@ -17,21 +16,18 @@
 						border-width: [1, 0, 0, 0],
 						padding: [5, 10, 0, 0]
 					}
-
 				}},
 				{ if: =options.left_border, then: {
 					jpml: {
 						border-width: [0, 0, 0, 1],
 						padding: [0, 0, 0, 10]
 					}
-
 				}},
 				{ if: =options.right_border, then: {
 					jpml: {
 						border-width: [0, 1, 0, 0],
 						padding: [0, 10, 0, 0]
 					}
-
 				}},
 				{ if: true, then: {
 					jpml: {
@@ -43,12 +39,12 @@
 			{
 				#body: {
 					display: {if: =options.hide_body, then:none, else:inherit}
-		        },
+			},
 				image: {
 					pixels-per-point-x:1,
 					pixels-per-point-y:1,
-                    image-scale: 1,
-                    display: { if: =options.show_image, then:inherit, else:none },
+					image-scale: 1,
+					display: { if: =options.show_image, then:inherit, else:none },
 					height: {$multiply: [=view.width, .665 ]},
 					options: {
 						$switch: [
@@ -58,13 +54,12 @@
 							{ if: =options.G_image, then: {match: { width:553, height:369, max-height:369 } } }
 						]
 					}
-	      },
+				},
 				#deco_container: {
 					padding: [0, 0, 8, 0]
 				},
 				.byline: {
 					display:{if: =options.show_byline, then:inherit, else:none}
-
 				},
 				.module_flashline: {
 					display: {if: =options.show_flashline, then:inherit, else:none}
@@ -74,28 +69,27 @@
 	}</style>
 	<style>{
 		if: =scale.phone, then: {
-            .module_headline: {
-                padding: [0, 20, 4, 20]
-            },
+			.module_headline: {
+				padding: [0, 20, 4, 20]
+			},
 			image: {
 				height: {$multiply: [=view.width, .665 ]},
 				display:inherit,
 				padding: [0, 4, 0, 4]
-
 			},
 			.byline: {
 				display: none
 			},
 			#body: {
-                display: inherit
+				display: inherit
 			},
 			.body: {
 				display: none
 			},
 			#summary: {
-                display: inherit,
-                text-align:left,
-                padding: [0, 20, 0, 20]
+				display: inherit,
+				text-align:left,
+				padding: [0, 20, 0, 20]
 			},
 			.opinion_dek: {
 				display: none

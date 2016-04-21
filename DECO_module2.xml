@@ -1,0 +1,39 @@
+<jpml id="DECO_module" class="visual-content">
+	<style src="GLOBAL-stylesheet2.ejs" />
+	<style src="GLOBAL_MODULES-stylesheet.ejs" />
+	<style src="GRID-extras2.ejs" />
+	<style>{
+		image:{
+			width:=view.width,
+			height: {$subtract:[=view.height, 11]}
+		},
+		#deco_caption_container: {
+			background-color:"rgba(0, 0, 0, .5)",
+			padding:[12, 10, 10, 10],
+			anchor-y: { if: =options.caption_top, then: top, else: bottom },
+			display:{if: =options.no_caption, then:none, else:inherit}
+		},
+		.deco_headline: {
+			font-size: {$switch: [
+				{if: =options.large_headline, then:35},
+				{if: =options.medium_headline, then:20},
+				18
+			]},
+			line-height: {$switch: [
+				{if: =options.large_headline, then:40},
+				{if: =options.medium_headline, then:25},
+				18
+			]}
+		},
+		.deco_caption: {
+			line-clamp: {if: =options.one_line_caption, then:1}
+		}
+	}</style>
+			<box id="deco_container" embed="deco-image">
+				<box><image class="summary-image"/></box>
+				<box id="deco_caption_container">
+					<p id="headline" class="deco_headline"><mark class="m_headline" /><mark class="key" /></p>
+					<p class="deco_caption"><mark class="subhed-mark" /></p>
+				</box>
+			</box>
+</jpml>

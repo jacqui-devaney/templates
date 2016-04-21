@@ -1,59 +1,12 @@
 {
-	#before_content: {
-		top: 90
+	.vertical-grid-module: {
+		layout-grid-line: {$multiply: [20, =view.zoomlevel]},
+		layout-grid-line-offset: 0
 	},
-	#content: {
-		top: 128,
+	#vertical-grid: {
+		top: 68
+	},
+	.visual-content: {
 		padding: [10, 0, 0, 0]
-	},
-	.column_full: {
-		width: {
-			if: =landscape,
-			then: 1024,
-			else: 768
-		}
-	},
-	#rail_content: {
-		top: 0,
-		height: {
-			if: =landscape,
-			then: 658,
-			else: 914
-		},
-		border-width: [
-			0,
-			0,
-			0,
-			1
-		],
-		border-color: #d8d8d8
-	},
-	jpml: {
-		padding: {
-			if: =scale.phone,
-			else: {
-				if: =portrait,
-				then: [
-					{
-						if: =intent.article,
-						then: 80,
-						else: 0
-					},
-					0,
-					0,
-					0
-				],
-				else: [
-					{
-						if: =intent.article,
-						then: 80,
-						else: 108
-					},
-					0,
-					0,
-					0
-				]
-			}
-		}
 	}
 }

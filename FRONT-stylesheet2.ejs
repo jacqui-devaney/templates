@@ -1,7 +1,9 @@
 {
+	#strap: {
+		top: 90
+	},
 	#whatsnewsheader: {
 		background-color: #ebe7df,
-		top: 20,
 		height: 48,
 		padding: [15, -7, 0, 7]
 	},
@@ -16,7 +18,7 @@
 	#whatsnews: {
 		background-color: #ebe7df,
 		height:{if: =landscape, then:481, else:731},
-		top: 68,
+		top: 40,
 		options: {
 			filename: "WHATS_NEWS.jpml",
 			shadow_height: 40,
@@ -24,7 +26,7 @@
 		}
 	},
 	#marketstrap: {
-		top:-20,
+		top:0,
 		height:25,
 		width:{if: =portrait, then: 590, else:846},
 		left:160
@@ -32,7 +34,7 @@
 	.latest_news_box: {
 		background-color:#ff7757,
 		height:25,
-		top:-20,
+		top:0,
 		width:128
 	},
 	.latest_news: {

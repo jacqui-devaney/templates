@@ -34,15 +34,13 @@
 						line-height: 25
 					}},
 					{if: =options.medium_headline, then:{
-						padding:[0, 0, 2, 0],
 						color:#2b3333,
 						font-size: 20,
 						line-height: 25
 					}},
 					{if: =options.large_headline, then: {
-						padding:[8, 0, 4, 0],
 						color:#2b3333,
-						font-size: 35,
+						font-size: 36,
 						line-height: 40
 					}},
 					{if: =options.very_large_caps_headline, then: {
@@ -69,7 +67,7 @@
 		font-size:{$multiply:{if: =options.large_body, then:20, else:13}},
 		line-height:{$multiply:{if: =options.large_body, then:26, else:20}},
 		text-overflow: =text.overflow,
-		text-align: left,
+        text-align: left,
 		hyphens:auto,
 		color:{if: =options.white_text, then:#fff, else:#3b4343}
 

@@ -108,25 +108,25 @@
 				height: 16,
 				options: {
 					identifier: =article.id
-                    }
-            },
+				}
+			},
 			#deco_container: {
-                padding: [0, 4, 0, 4],
+				padding: [0, 4, 0, 4],
 				if: =options.float_image, equals: right, then: {
 					anchor-x: right,
-                    padding: [0, 4, 0, 4],
+					padding: [0, 4, 0, 4],
 					width: 111
 				}, else: {if: =view.height, less-than: 200, then: [0, 20, 14, 20], else: [0, 4, 0, 4]}
 			},
-            .opinion_flashline: {
-                font-name: WhitneySSm-Semibold,
-                font-size:12,
-                line-height: 22,
-                text-transform:uppercase,
-                color: #878f8f,
-                padding: [-11, 0, 4, 20],
-                display: {if: =page.section, equals: "OPINION", then: none, else: {if: =article.category, equals: "Opinion", then: inherit, else: none}}
-            }
+			.opinion_flashline: {
+				font-name: WhitneySSm-Semibold,
+				font-size:12,
+				line-height: 22,
+				text-transform:uppercase,
+				color: #878f8f,
+				padding: [-11, 0, 4, 20],
+				display: {if: =page.section, equals: "OPINION", then: none, else: {if: =article.category, equals: "Opinion", then: inherit, else: none}}
+			}
 		}, else: {
             .opinion_flashline: {
                 display: {if: =page.section, equals: "OPINION", then: none, else: {if: =article.category, equals: "Opinion", then: inherit, else: none}},

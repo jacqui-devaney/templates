@@ -59,8 +59,8 @@ function grid_builder() {
     vertical: {
       portrait: {
         margin: {
-          top: 8,
-          bottom: 8
+          top: 0,
+          bottom: 0
         },
         lineHeight: 20,
         screen: {
@@ -72,8 +72,8 @@ function grid_builder() {
       },
       landscape: {
         margin: {
-          top: 8,
-          bottom: 8
+          top: 0,
+          bottom: 0
         },
         lineHeight: 20,
         screen: {
@@ -129,7 +129,7 @@ grid_builder.prototype.portraitPositionYForIndex = function(positionIndex) {
     return startingValue;
   }
 
-  var finalPosition = startingValue + this.portraitHeightForLines(positionIndex - 1);
+  var finalPosition = startingValue + this.portraitHeightForLines(positionIndex);
 
   return finalPosition;
 };
@@ -141,7 +141,7 @@ grid_builder.prototype.landscapePositionYForIndex = function(positionIndex) {
     return startingValue;
   }
 
-  var finalPosition = startingValue + this.landscapeHeightForLines(positionIndex - 1);
+  var finalPosition = startingValue + this.landscapeHeightForLines(positionIndex);
 
   return finalPosition;
 };

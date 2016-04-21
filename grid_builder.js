@@ -230,14 +230,14 @@ grid_builder.prototype.getVerticalStyles = function() {
       }
     };
     // Portait
-    styles[styleTag([YPOSITION_STYLE_COMPONENT, i])] = {
+    styles[styleTag([PORTRAIT_STYLE_COMPONENT, YPOSITION_STYLE_COMPONENT, i])] = {
       top: {
         if: "=portrait",
         then: this.portraitPositionYForIndex(i),
       }
     };
     // Landscape
-    styles[styleTag([YPOSITION_STYLE_COMPONENT, i])] = {
+    styles[styleTag([LANDSCAPE_STYLE_COMPONENT, YPOSITION_STYLE_COMPONENT, i])] = {
       top: {
         if: "=landscape",
         then: this.landscapePositionYForIndex(i),

@@ -38,16 +38,16 @@
 				}
 			}},
 			{if: =portrait, then: {
-				#b1:	{
+				#b1: {
 					options:{ bind: {if: =articles.b1.no_binding, then: none}, large_headline:true}
 				},
-				#deco:	{
+				#deco: {
 					options:{ bind: {if: =articles.deco.no_binding, then: none}, medium_headline:true}
 				},
-				#b2:	{
+				#b2: {
 					options:{ bind: {if: =articles.b2.no_binding, then: none}, medium_headline:true, top_border:true}
 				},
-				#b3:	{
+				#b3: {
 					options:{ bind: {if: =articles.b3.no_binding, then: none}, medium_headline:true, top_border:true}
 				},
 				#b4: {

@@ -1,0 +1,119 @@
+<jpml id="FOOTER_module">
+	<style src="GRID-extras2.ejs"/>
+	<style src="GLOBAL-stylesheet2.ejs"/>
+	<style src="GLOBAL_MODULES-stylesheet2.ejs" />
+	<style src="FOOTER-stylesheet.ejs" />
+	<style>
+{  
+   $join:[  
+      {  
+         $switch:[  
+            {  
+               if:=options.top_border,
+               then:{  
+                  jpml:{  
+                     border-width:[  
+                        1,
+                        0,
+                        0,
+                        0
+                     ],
+                     border-color:#cfcfcf
+                  }
+               }
+            },
+            {  
+               if:=options.left_border,
+               then:{  
+                  jpml:{  
+                     border-width:[  
+                        0,
+                        0,
+                        0,
+                        1
+                     ],
+                     border-color:#cfcfcf
+                  }
+               }
+            },
+            {  
+               if:=options.right_border,
+               then:{  
+                  jpml:{  
+                     border-width:[  
+                        0,
+                        1,
+                        0,
+                        0
+                     ],
+                     border-color:#cfcfcf
+                  }
+               }
+            },
+            {  
+               if:true,
+               then:{  
+                  jpml:{  
+                     border-width:[  
+                        0,
+                        0,
+                        0,
+                        0
+                     ]
+                  }
+               }
+            }
+         ]
+      },
+      {  
+         #image_wrapper:{  
+            width:80,
+            height:80,
+            anchor-x:right,
+            bottom:8,
+            padding:[  
+               0,
+               0,
+               0,
+               10
+            ]
+         },
+         .ahed_subhed:{  
+            color:{  
+               if:=options.white_text,
+               then:#fff,
+               else:#3b4343
+            }
+         },
+         #stars:{  
+            font-size:22,
+            line-height:10,
+            content:"*\u00a0\u00a0\u00a0*\u00a0\u00a0\u00a0*",
+            text-align:center,
+            color:#898b8e
+         },
+         .ahed_headline:{  
+	    padding:[6, 0, 0, 0],
+            color:#2b3333,
+            font-size:21,
+            line-height:25,
+            font-name:ChronicleDisplay-SemiItalic
+         }
+      }
+   ]
+}
+	</style>
+	<box id="image_wrapper">
+		<image class="summary-image"/>
+	</box>
+	<panel>
+		<p id="headline" class="ahed_headline"><mark class="m_headline" /></p>
+		<!-- <p><mark id="stars"/></p> -->
+		<panel class="vertical-grid-module">
+			<panel class="body">
+				<p class="ahed_subhed"><mark class="subhed-mark"/></p>
+				<p><mark class="body-first-p-mark" /><mark class="body-mark"/></p>
+			</panel>
+		</panel>
+	</panel>
+</jpml>

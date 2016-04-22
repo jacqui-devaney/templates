@@ -14,26 +14,22 @@
 			{ $switch: [
 				{ if: =options.top_border, then: {
 					jpml: {
-						border-width: [1, 0, 0, 0],
-						padding: [5, 10, 0, 0]
+						border-width: [1, 0, 0, 0]
 					}
 				}},
 				{ if: =options.left_border, then: {
 					jpml: {
-						border-width: [0, 0, 0, 1],
-						padding: [0, 0, 0, 10]
+						border-width: [0, 0, 0, 1]
 					}
 				}},
 				{ if: =options.right_border, then: {
 					jpml: {
-						border-width: [0, 1, 0, 0],
-						padding: [0, 10, 0, 0]
+						border-width: [0, 1, 0, 0]
 					}
 				}},
 				{ if: true, then: {
 					jpml: {
-						border-width: [0, 0, 0, 0],
-						padding: [0, 0, 0, 0]
+						border-width: [0, 0, 0, 0]
 					}
 				}}
 			]},

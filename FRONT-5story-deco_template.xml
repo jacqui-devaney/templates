@@ -83,8 +83,8 @@
 					options:{ bind: {if: =articles.b5.no_binding, then: none}, medium_headline:true, top_border:true, show_byline:false}
 				},
 				#footer: {
-					top: 668,
-					height: 100,
+					top: 680,
+					height: 90,
 					text-align: center,
 					options:{bind: none, top_border: true}
 				}

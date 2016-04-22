@@ -109,7 +109,7 @@
 		</box>
 	</box>
 	<box id="vertical-grid">
-		<box id="whatsnews-container" class="tablet_only visual-content columns-3 xposition-1 portrait-yposition-2">
+		<box class="tablet_only columns-3 visual-content xposition-1 portrait-yposition-3">
 			<box id="whatsnewsheader">
 				<p>
 					<mark id="whatsnewsheadertext"/>

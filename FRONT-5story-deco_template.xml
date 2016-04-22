@@ -109,13 +109,15 @@
 		</box>
 	</box>
 	<box id="vertical-grid">
-		<box class="tablet_only columns-3 visual-content xposition-1 yposition-3">
-			<box id="whatsnewsheader">
-				<p>
-					<mark id="whatsnewsheadertext"/>
-				</p>
+		<box class="tablet_only columns-3 xposition-1 yposition-3">
+			<box id="whatsnews_container" class="columns-3">
+				<box id="whatsnewsheader" class="visual-content-top">
+					<p>
+						<mark id="whatsnewsheadertext"/>
+					</p>
+				</box>
+				<box id="whatsnews" embed="list" class="landscape-lines-25" />
 			</box>
-			<box id="whatsnews" class="columns-3" embed="list" />
 		</box>
 		<box id="deco" embed="article" class="lines-17 yposition-3 columns-9 xposition-4 maude unit_deco" module="DECO_module2.xml" options="G_size" />
 		<box id="b1" embed="article" class="portrait-yposition-20 portrait-lines-8 landscape-yposition-2 landscape-lines-18 landscape-columns-4 portrait-columns-9 landscape-xposition-13 portrait-xposition-4 maude unit_plain" module="TOP-IMAGE_module2.xml" />

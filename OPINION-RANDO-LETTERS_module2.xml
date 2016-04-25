@@ -55,8 +55,8 @@
 			}
 		}, else:{}
 	}</style>
-	<panel id="rando_header" class="vertical-grid-module">
-		<p class="rando_heading"><mark class="rando" /></p>
+	<panel id="rando_header">
+		<p class="rando_heading small-vertical-grid-module"><mark class="rando" /></p>
 	</panel>
 	<panel id="vertical">
 		<p class="highlight_flashline hidden_tablet"><mark class="flashline-mark" /></p>

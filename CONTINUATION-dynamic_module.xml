@@ -96,11 +96,10 @@
 				padding: [4, 16, 0, 20]
 			},
 			#article_status: {
-				position: relative,
-				padding: [{if: =options.show_body, then: 1, else: 5}, 4, 0, 4],
-				left: -24,
-				width: 16,
-				height: 16,
+				padding: [{if: =page.section, equals: "OPINION", then: 3.5, else: {if: =article.category, equals: "Opinion", then: 18.5, else: 3.5}}, 0, 0, 4],
+				left: 0,
+				width: 13,
+				height: 13,
 				options: {
 					identifier: =article.id
                     }
@@ -151,9 +150,9 @@
 		<panel id="vertical">
         <p class="opinion_flashline">OPINION</p>
         <p class="module_flashline"><mark class="flashline-mark" /></p>
-        <box id="article_status" embed="article-status"></box>
         <p id="headline" class="module_headline"><mark class="m_headline" /><mark class="key" /></p>
 		</panel>
+		<box id="article_status" embed="article-status"></box>
 	 	<box id="image_container" embed="deco-image">
 			<image class="summary-image" />
 		</box>

@@ -125,10 +125,6 @@ grid_builder.prototype.landscapeHeightForLines = function(lineCount) {
 grid_builder.prototype.portraitPositionYForIndex = function(positionIndex) {
   var startingValue = this.grid.vertical.portrait.margin.top;
 
-  if (positionIndex <= 1) {
-    return startingValue;
-  }
-
   var finalPosition = startingValue + this.portraitHeightForLines(positionIndex);
 
   return finalPosition;
@@ -136,10 +132,6 @@ grid_builder.prototype.portraitPositionYForIndex = function(positionIndex) {
 
 grid_builder.prototype.landscapePositionYForIndex = function(positionIndex) {
   var startingValue = this.grid.vertical.landscape.margin.top;
-
-  if (positionIndex <= 1) {
-    return startingValue;
-  }
 
   var finalPosition = startingValue + this.landscapeHeightForLines(positionIndex);
 

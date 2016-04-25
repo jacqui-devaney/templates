@@ -63,6 +63,7 @@ function grid_builder() {
           bottom: 0
         },
         lineHeight: 20,
+        bottomPadding: 10,
         screen: {
           height: 768
         },
@@ -192,22 +193,22 @@ grid_builder.prototype.getVerticalStyles = function() {
     styles[styleTag([LINES_STYLE_COMPONENT, i])] = {
       "height": {
         if: "=portrait",
-        then: this.portraitHeightForLines(i),
-        else: this.landscapeHeightForLines(i)
+        then: this.portraitHeightForLines(i) + this.grid.vertical.portrait.bottomPadding,
+        else: this.landscapeHeightForLines(i) + this.grid.vertical.portrait.bottomPadding
       }
     };
     // Portrait
     styles[styleTag([PORTRAIT_STYLE_COMPONENT, LINES_STYLE_COMPONENT, i])] = {
       "height": {
         if: "=portrait",
-        then: this.portraitHeightForLines(i),
+        then: this.portraitHeightForLines(i) + this.grid.vertical.portrait.bottomPadding,
       }
     };
     // Landscape
     styles[styleTag([LANDSCAPE_STYLE_COMPONENT, LINES_STYLE_COMPONENT, i])] = {
       "height": {
         if: "=landscape",
-        then: this.landscapeHeightForLines(i),
+        then: this.landscapeHeightForLines(i) + this.grid.vertical.portrait.bottomPadding,
       }
     };
   

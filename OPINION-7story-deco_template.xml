@@ -86,7 +86,7 @@
 	<box id="vertical-grid">
 		<box id="page_details" class="tablet_only" embed="pagedescription" />
 		<box id="deco" embed="article" class="portrait-yposition-2 landscape-yposition-1 lines-19 columns-8 landscape-xposition-9 portrait-xposition-1 maude unit_deco" module="DECO_module2.xml" />
-		<box id="b1" embed="article" class="portrait-yposition-21 landscape-yposition-2 portrait-lines-7 landscape-lines-6 columns-8 xposition-1 maude unit_rando" module="OPINION-RANDO-LETTERS_module2.xml" />
+		<box id="b1" embed="article" class="portrait-yposition-21 landscape-yposition-1 portrait-lines-7 landscape-lines-7 columns-8 xposition-1 maude unit_rando" module="OPINION-RANDO-LETTERS_module2.xml" />
 		<box id="b2" embed="article" class="portrait-yposition-29 landscape-yposition-9 lines-6 columns-8 xposition-1 maude unit_rando" module="OPINION-RANDO-LETTERS_module2.xml" />
 		<box id="b3" embed="article" class="portrait-yposition-36 landscape-yposition-16 lines-6 columns-8 xposition-1 maude unit_rando" module="OPINION-RANDO-LETTERS_module2.xml" />
 		<box id="b4" embed="article" class="portrait-yposition-1 landscape-yposition-23 portrait-lines-11 landscape-lines-7 columns-4 landscape-xposition-1 portrait-xposition-9 maude unit_plain" module="TOP-IMAGE_module2.xml" />

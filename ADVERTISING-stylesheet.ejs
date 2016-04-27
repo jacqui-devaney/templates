@@ -14,15 +14,14 @@
 				#cube_ad_container: {
 					width: =view.width,
 					background-color: #ffffff,
-					height: 320,
-					padding: { if: =intent.section, then: [36, 0, 0, 0], else: [0, 0, 0, 0] },
+					height: 342,
+					padding: { if: =intent.section, then: [36, 0, 0, 0] },
 					display: { if: =scale.rail, then: none, else: inherit },
 					position: { if: =intent.section, then: absolute }
 				},
 				#cube_ad: {
 					border-width: [46],
 					border-color: #ffffff,
-					bottom: 10,
 					anchor-x:center,
 					display: inherit,
 					pixels-per-point-x: 1,

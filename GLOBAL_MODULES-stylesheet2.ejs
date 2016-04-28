@@ -25,6 +25,10 @@
 					{if: =options.small_headline, then:{
 						font-size: 13,
 						line-height: 20,
+						layout-grid-line-offset: -15,
+						layout-grid-line: { 
+							if: =intent.article, then: { $multiply: [20, =view.zoomlevel] }, else: 20 
+						},
 						color:#3b4343
 					}},
 					{if: =options.smedium_headline, then:{

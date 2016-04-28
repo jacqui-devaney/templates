@@ -5,6 +5,7 @@
 	<style src="PHONE-MODULES-stylesheet.ejs" />
 	<style>{
 		jpml: {
+			padding: { if: =options.show_image, then: [10, 0, 0, 0], else:none },
 			background-color: =options.background_color,
 			border-color: #e7ebeb
 		}
@@ -36,7 +37,7 @@
 			{
 				#body: {
 					display: {if: =options.hide_body, then:none, else:inherit}
-			},
+				},
 				image: {
 					pixels-per-point-x:1,
 					pixels-per-point-y:1,

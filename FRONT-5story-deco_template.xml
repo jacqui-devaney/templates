@@ -101,13 +101,13 @@
 	<box id="page_details" class="tablet_only" embed="pagedescription" />
 	<box id="vertical-grid">
 		<box class="tablet_only columns-3 xposition-1 yposition-3">
-			<box id="whatsnews_container" class="columns-3">
+			<box class="columns-3">
 				<box id="whatsnewsheader" class="visual-content-top">
 					<p>
 						<mark id="whatsnewsheadertext"/>
 					</p>
 				</box>
-				<box id="whatsnews" embed="list" class="landscape-lines-25 portrait-lines-37" />
+				<box id="whatsnews" embed="list" class="landscape-lines-24 portrait-lines-36" />
 			</box>
 		</box>
 		<box id="deco" embed="article" class="lines-17 yposition-3 columns-9 xposition-4 maude unit_deco" module="DECO_module2.xml"/>

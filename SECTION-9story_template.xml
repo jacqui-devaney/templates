@@ -486,7 +486,7 @@
 		</box>
 	</box>
 	<box id="vertical-grid">
-		<box id="b1" embed="article" class="yposition-3 lines-25 columns-8 xposition-1 maude unit_plain unit_418" module="TOP-IMAGE_module2.xml" />
+		<box id="b1" embed="article" class="yposition-3 landscape-lines-24 portrait-lines-25 columns-8 xposition-1 maude unit_plain unit_418" module="TOP-IMAGE_module2.xml" />
 		<box id="b2" embed="article" class="portrait-yposition-29 landscape-yposition-3 portrait-lines-18 landscape-lines-17 columns-4 landscape-xposition-9 portrait-xposition-1  maude unit_plain unit_166" module="TOP-IMAGE_module2.xml" />
 		<box id="b3" embed="article" class="portrait-yposition-29 landscape-yposition-3 portrait-lines-18 landscape-lines-17 columns-4 landscape-xposition-13 portrait-xposition-5 maude unit_plain unit_166" module="TOP-IMAGE_module2.xml" />
 		<box id="b4" embed="article" class="portrait-yposition-3 landscape-yposition-21 portrait-lines-8 landscape-lines-6 columns-4 xposition-9  maude unit_plain unit_50" module="CONTINUATION-dynamic_module2.xml" />
@@ -504,9 +504,9 @@
 			</box>
 		</box>
 		<box id="b5" embed="article" class="portrait-yposition-12 landscape-yposition-21 portrait-lines-7 landscape-lines-6 columns-4 landscape-xposition-13 portrait-xposition-9 maude unit_plain unit_50" module="CONTINUATION-dynamic_module2.xml" />
-		<box id="b6" embed="article" class="portrait-yposition-20 portrait-lines-6 columns-4 landscape-xposition-1 portrait-xposition-9 maude unit_plain unit_50" module="CONTINUATION-dynamic_module2.xml" />
-		<box id="b7" embed="article" class="portrait-yposition-27 portrait-lines-6 columns-4 landscape-xposition-5 portrait-xposition-9 maude unit_plain unit_50" module="CONTINUATION-dynamic_module2.xml" />
-		<box id="b8" embed="article" class="portrait-yposition-34 portrait-lines-6 columns-4 xposition-9 maude unit_plain unit_50" module="CONTINUATION-dynamic_module2.xml" />
-		<box id="b9" embed="article" class="portrait-yposition-41 portrait-lines-6 columns-4 landscape-xposition-13 portrait-xposition-9 maude unit_plain unit_50" module="CONTINUATION-dynamic_module2.xml" />
+		<box id="b6" embed="article" class="portrait-yposition-20 landscape-yposition-28 lines-6 columns-4 landscape-xposition-1 portrait-xposition-9 maude unit_plain unit_50" module="CONTINUATION-dynamic_module2.xml" />
+		<box id="b7" embed="article" class="portrait-yposition-27 landscape-yposition-28 lines-6 columns-4 landscape-xposition-5 portrait-xposition-9 maude unit_plain unit_50" module="CONTINUATION-dynamic_module2.xml" />
+		<box id="b8" embed="article" class="portrait-yposition-34 landscape-yposition-28 lines-6 columns-4 xposition-9 maude unit_plain unit_50" module="CONTINUATION-dynamic_module2.xml" />
+		<box id="b9" embed="article" class="portrait-yposition-41 landscape-yposition-28 lines-6 columns-4 landscape-xposition-13 portrait-xposition-9 maude unit_plain unit_50" module="CONTINUATION-dynamic_module2.xml" />
 	</box>
 </jpml>

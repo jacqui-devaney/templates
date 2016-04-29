@@ -9,7 +9,7 @@
 					$switch: [
 						{if: =issue.type, equals: "NOW", then: "ChronicleDisplay-Semi"},
 						{if: =issue.type, equals: "CSUITE", then: "WhitneySSm-Medium"},
-						{if: =options.small_headline, then: "ChronicleSSm-Medium"},
+						{if: =options.small_headline, then: "ChronicleSSmMedium-Regular"},
 						{if: =options.smedium_headline, then: "ChronicleDisplay-Semi"},
 						{if: =options.medium_headline, then: "ChronicleDisplay-Semi"},
 						{if: =options.very_large_caps_headline, then: "ChronicleDisplay-Semi"},
@@ -67,7 +67,7 @@
 		content: { $switch: [=article.body_extract, =article.summary] }
 	},
 	.body: {
-		font-name: ChronicleSSm-Book,
+		font-name: ChronicleSSmBook-Regular,
 		text-indent: 0,
 		font-size:{$multiply:{if: =options.large_body, then:20, else:13}},
 		line-height:{$multiply:{if: =options.large_body, then:26, else:20}},
@@ -85,7 +85,7 @@
 		color:{if: =options.white_text, then:#fff, else:#222221}
 	},
 	.deco_caption: {
-		font-name: ChronicleSSm-Book,
+		font-name: ChronicleSSmBook-Regular,
 		font-size:13,
 		line-height:20,
 		color:#fff

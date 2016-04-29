@@ -68,7 +68,7 @@
                     display: {if: =app.push.tags.topic.politics, then: none, else: {if: =app.version, at-least: 7.5, then: inherit, else: none}}
                 },
                 .banner_headline: {
-                    font-name: "ChronicleSSm-Medium",
+                    font-name: "ChronicleSSmMedium-Regular",
                     content: "Follow Election 2016",
                     color: #3b4343,
                     line-height: 22,
@@ -135,7 +135,7 @@
                     display: {if: =app.push.tags.topic.politics, then: none, else: {if: =app.version, at-least: 7.5, then: inherit, else: none}}
                 },
                 .banner_headline: {
-                    font-name: "ChronicleSSm-Medium",
+                    font-name: "ChronicleSSmMedium-Regular",
                     content: "Follow Election 2016",
                     color: #3b4343,
                     font-size: 16,

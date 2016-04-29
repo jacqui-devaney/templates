@@ -13,7 +13,7 @@
         color: #2fbfbf
 	},
     h2:{
-        font-name: "ChronicleSSm-Medium",
+        font-name: "ChronicleSSmMedium-Regular",
         padding: [0, 0, 22, 0]
     },
 	.link-article: {
@@ -21,7 +21,7 @@
 		color:{if: =intent.article, then:{if: =page.tint, equals: "rgba(0.000000, 0.000000, 0.000000, 1.000000)", then: #004990, else: =page.tint}}
 	},
 	.key: {
-		font-name: "ChronicleSSm-Book",
+		font-name: "ChronicleSSmBook-Regular",
 		font-size:16,
 		content: "\u00a0K",
 		display: { if-all: [=issue.locked, =article.paid], then: default, else: none },
@@ -100,7 +100,7 @@
     #body-first-p:{
 		font-size:{$multiply: [16, =view.zoomlevel]},
         line-height: {$multiply: [22, =view.zoomlevel]},
-        font-name: ChronicleSSm-Book,
+        font-name: ChronicleSSmBook-Regular,
         text-indent: 0,
         text-align: left,
         hyphens: none
@@ -201,12 +201,12 @@
 		font-size:{$multiply: [16, =view.zoomlevel]},
         line-height: 22,
         padding: [0, 10, 0, 10],
-        font-name: ChronicleSSm-Book,
+        font-name: ChronicleSSmBook-Regular,
         text-indent: 0,
         text-align: left
 	},
 	strong: {
-        font-name:{if: =intent.article, then: "ChronicleSSm-Medium"},
+        font-name:{if: =intent.article, then: "ChronicleSSmMedium-Regular"},
         color: {if: =intent.article, then: inherit},
         line-height: 22
     },
@@ -217,13 +217,13 @@
 		padding: [0, 8, 22, 20],
         border-color: transparent,
         color: #878f8f,
-        font-name: ChronicleSSm-Book
+        font-name: ChronicleSSmBook-Regular
 	},
     .blockquote: {
 		padding: [0, 8, 0, 8],
         border-color: transparent,
         color: #878f8f,
-        font-name: ChronicleSSm-Book
+        font-name: ChronicleSSmBook-Regular
     },
 	em: {
         font-name:{if: =intent.article, then:ChronicleSSmBook-Italic},

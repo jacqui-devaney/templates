@@ -28,12 +28,12 @@
 		padding: [0,0,{$multiply: [20, =view.zoomlevel]},0]
 	},
 	h2: {
-		font-name:{if: =intent.article, then:ChronicleSSm-Medium, else:ChronicleSSm-Medium},
+		font-name:{if: =intent.article, then:ChronicleSSmMedium-Regular, else:ChronicleSSmMedium-Regular},
 		text-indent:0
 	},
 	.article_body: {
 		column-count: { if: =scale.tablet, then: { if: =portrait, then: 3, else: 4 } },
-		font-name: ChronicleSSm-Book,
+		font-name: ChronicleSSmBook-Regular,
 		font-size:{$multiply: [13, =view.zoomlevel]},
 		line-height:{$multiply: [20, =view.zoomlevel]},
 	    text-align: left,
@@ -42,7 +42,7 @@
 		text-indent:=text.indent
 	},
 	strong: {
-		font-name:{if: =intent.article, then:ChronicleSSm-Medium, else:ChronicleSSm-Medium}
+		font-name:{if: =intent.article, then:ChronicleSSmMedium-Regular, else:ChronicleSSmMedium-Regular}
 	},
 	em: {
 		font-name:{if: =intent.article, then:ChronicleSSmBook-Italic, else:ChronicleSSmBook-Italic}

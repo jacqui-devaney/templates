@@ -45,7 +45,7 @@
         padding: [0, 0, 0, 10]
         },
         .ahed_subhed: {
-					color:{if: =options.white_text, then:#fff, else:#2b3333},
+				color:{if: =options.white_text, then:#fff, else:#2b3333},
         font-size: 13,
         line-height: 20,
         font-name: "WhitneySSm-Book"

@@ -28,6 +28,11 @@
 						border-width: [0, 1, 0, 0]
 					}
 				}},
+				{ if: =options.bottom_border, then: {
+					jpml: {
+						border-width: [0, 0, 1, 0]
+					}
+				}},
 				{ if: true, then: {
 					jpml: {
 						border-width: [0, 0, 0, 0]

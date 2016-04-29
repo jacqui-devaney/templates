@@ -133,13 +133,13 @@
 			}},
 			{if: =portrait, then: {
 				#b1:	{
-					options: { bind: {if: =articles.b1.no_binding, then: none}, module: url(TOP-IMAGE_module2.xml)}
+					options: { bind: {if: =articles.b1.no_binding, then: none}, module: url(TOP-IMAGE_module2.xml) }
 				},
 				#b2:	{
-					options: { bind: {if: =articles.b2.no_binding, then: none} }
+					options: { bind: {if: =articles.b2.no_binding, then: none}, top_border: true }
 				},
 				#b3:{
-					options: { bind: {if: =articles.b3.no_binding, then: none} }
+					options: { bind: {if: =articles.b3.no_binding, then: none}, top_border: true }
 				},
 				#b4:	{
 					options: { bind: {if: =articles.b4.no_binding, then: none} }

@@ -5,7 +5,7 @@
 	<style>{
 		image:{
 			width:=view.width,
-			height: {$subtract:[=view.height, 11]}
+			height: {$subtract:[=view.height, 21]}
 		},
 		#deco_caption_container: {
 			background-color:"rgba(0, 0, 0, .5)",

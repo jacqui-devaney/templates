@@ -38,7 +38,7 @@
 					top: 930,
 					height: 100,
 					text-align: center,
-					options:{bind: none, top_border: true}
+					options:{top_border: true}
 				}
 			}},
 			{if: =landscape, then: {
@@ -64,7 +64,7 @@
 					top: 680,
 					height: 90,
 					text-align: center,
-					options:{bind: none, top_border: true}
+					options:{top_border: true}
 				}
 		}}
 		]

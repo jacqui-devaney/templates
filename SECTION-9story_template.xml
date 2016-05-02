@@ -112,7 +112,7 @@
 				#footer: {
 					height: 325,
 					text-align: center,
-					options:{bind: none, top_border: true}
+					options:{top_border: true}
 				},
 				#b6 : {
 					height: =size.continuation_height_large,

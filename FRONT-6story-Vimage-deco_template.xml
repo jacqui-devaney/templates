@@ -14,29 +14,6 @@
     }</style>
 	<style> {
 		$switch: [
-						{if: =scale.rail, then: {
-						}},
-            {if: =scale.phone, then: {
-								#deco: {
-									options:{bind: {if: =articles.deco.no_binding, then: none}}
-								},
-                #b1:    {
-                    options:{bind: {if: =articles.b1.no_binding, then: none}}
-                },
-                #b2:    {
-                    options:{bind: {if: =articles.b2.no_binding, then: none}}
-                },
-                #b3:    {
-                    options:{bind: {if: =articles.b3.no_binding, then: none}}
-                },
-                #b4: {
-                    options:{bind: {if: =articles.b4.no_binding, then: none}}
-                },
-                #b5: {
-                    options:{bind: {if: =articles.b5.no_binding, then: none}}
-                }
-
-            }},
             {if: =portrait, then: {
                 #b1:	{
                     top:20,

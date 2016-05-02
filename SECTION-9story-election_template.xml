@@ -321,7 +321,6 @@
 		else: {
 			#b1: {
 				options: {
-					bind: {if: =articles.b1.no_binding, then: none},
 					medium_headline:true,
 					show_image:true,
                     background_color: =color.background
@@ -329,7 +328,6 @@
 			},
 			#b2: {
 				options: {
-					bind: {if: =articles.b2.no_binding, then: none},
 					show_body: true,
 					show_image: true,
 					smedium_headline: true,
@@ -338,7 +336,6 @@
 			},
 			#b3: {
 				options: {
-					bind: {if: =articles.b3.no_binding, then: none},
 					show_body: true,
 					show_image: true,
 					smedium_headline: true,
@@ -347,7 +344,6 @@
 			},
 			#b4: {
 				options: {
-					bind: {if: =articles.b4.no_binding, then: none},
 					hide_border: =portrait,
 					show_body: true,
 					small_headline: true,
@@ -356,7 +352,6 @@
 			},
 			#b5: {
 				options: {
-					bind: {if: =articles.b5.no_binding, then: none},
 					show_body: true,
 					small_headline: true,
 					background_color: =color.background
@@ -364,7 +359,6 @@
 			},
 			#b6: {
 				options: {
-					bind: {if: =articles.b6.no_binding, then: none},
 					show_body: true,
 					small_headline: true,
 					background_color: =color.background
@@ -372,7 +366,6 @@
 			},
 			#b7: {
 				options: {
-					bind: {if: =articles.b7.no_binding, then: none},
 					show_body: true,
 					small_headline: true,
 					background_color: =color.background
@@ -380,7 +373,6 @@
 			},
 			#b8: {
 				options: {
-					bind: {if: =articles.b8.no_binding, then: none},
 					show_body: true,
 					small_headline: true,
                     background_color: =color.background
@@ -388,7 +380,6 @@
 			},
 			#b9: {
 				options: {
-					bind: {if: =articles.b9.no_binding, then: none},
 					show_body: true,
 					small_headline: true,
                     background_color: =color.background

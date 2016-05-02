@@ -140,55 +140,7 @@
 				},
 				#b3:{
 					options: { bind: {if: =articles.b3.no_binding, then: none}, top_border: true }
-				},
-				#b4:	{
-					options: { bind: {if: =articles.b4.no_binding, then: none} }
-				},
-				#b5:	{
-					options: { bind: {if: =articles.b5.no_binding, then: none} }
-				},
-				#b6:	{
-					options: { bind: {if: =articles.b6.no_binding, then: none} }
-				},
-				#b7:	{
-					options: { bind: {if: =articles.b7.no_binding, then: none} }
-				},
-				#b8:	{
-					options: { bind: {if: =articles.b8.no_binding, then: none} }
-				},
-				#b9:	{
-					options: { bind: {if: =articles.b9.no_binding, then: none} }
 				}
-			}},
-			{if: =landscape, then: {
-				#b1:	{
-					options: { bind: {if: =articles.b1.no_binding, then: none} }
-				},
-				#b2:	{
-					options: { bind: {if: =articles.b2.no_binding, then: none} }
-				},
-				#b3:	{
-					options: { bind: {if: =articles.b3.no_binding, then: none} }
-				},
-				#b4:	{
-					options: { bind: {if: =articles.b4.no_binding, then: none} }
-				},
-				#b5:{
-					options: { bind: {if: =articles.b5.no_binding, then: none} }
-				},
-				#b6:	{
-					options: { bind: {if: =articles.b6.no_binding, then: none} }
-				},
-				#b7:	{
-					options: { bind: {if: =articles.b7.no_binding, then: none} }
-				},
-				#b8:	{
-					options: { bind: {if: =articles.b8.no_binding, then: none} }
-				},
-				#b9:	{
-					options: { bind: {if: =articles.b9.no_binding, then: none} }
-				}
-
 			}}
 		]
 	} </style>

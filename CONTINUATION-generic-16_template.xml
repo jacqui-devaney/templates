@@ -20,166 +20,134 @@
 	        {if: =portrait, then: {
 				#b1 : {
 	 				height:240,
-					top:0,
-					options: { bind: {if: =articles.b1.no_binding, then: none} }
+					top:0
 				},
 				#b2 : {
 	 				height:240,
-					top:0,
-					options: { bind: {if: =articles.b2.no_binding, then: none} }
+					top:0
 				},
 				#b3 : {
 	 				height:240,
-					top:0,
-					options: { bind: {if: =articles.b3.no_binding, then: none} }
+					top:0
 				},
 				#b4 : {
 	 				height:240,
-					top:0,
-					options: { bind: {if: =articles.b4.no_binding, then: none} }
+					top:0
 				},
 				#b5 : {
 	 				height:240,
-					top:240,
-					options: { bind: {if: =articles.b5.no_binding, then: none} }
+					top:240
 				},
 				#b6 : {
 	 				height:240,
-					top:240,
-					options: { bind: {if: =articles.b6.no_binding, then: none} }
+					top:240
 				},
 				#b7 : {
 	 				height:240,
-					top:240,
-					options: { bind: {if: =articles.b7.no_binding, then: none} }
+					top:240
 				},
 				#b8 : {
 	 				height:240,
-					top:240,
-					options: { bind: {if: =articles.b8.no_binding, then: none} }
+					top:240
 				},
 				#b9 : {
 	 				height:240,
-					top:480,
-					options: { bind: {if: =articles.b9.no_binding, then: none} }
+					top:480
 				},
 				#b10 : {
 	 				height:240,
-					top:480,
-					options: { bind: {if: =articles.b10.no_binding, then: none} }
+					top:480
 				},
 				#b11 : {
 	 				height:240,
-					top:480,
-					options: { bind: {if: =articles.b11.no_binding, then: none} }
+					top:480
 				},
 				#b12 : {
 	 				height:240,
-					top:480,
-					options: { bind: {if: =articles.b12.no_binding, then: none} }
+					top:480
 				},
 				#b13 : {
 	 				height:240,
-					top:720,
-					options: { bind: {if: =articles.b13.no_binding, then: none} }
+					top:720
 				},
 				#b14 : {
 	 				height:240,
-					top:720,
-					options: { bind: {if: =articles.b14.no_binding, then: none} }
+					top:720
 				},
 				#b15 : {
 	 				height:240,
-					top:720,
-					options: { bind: {if: =articles.b15.no_binding, then: none} }
+					top:720
 				},
 				#b16 : {
 	 				height:240,
-					top:720,
-					options: { bind: {if: =articles.b16.no_binding, then: none} }
+					top:720
 				}
 
         	}},
 			{if: =landscape, then: {
 				#b1 : {
 	 				height:235,
-					top:0,
-					options: { bind: {if: =articles.b1.no_binding, then: none} }
+					top:0
 				},
 				#b2 : {
 	 				height:235,
-					top:0,
-					options: { bind: {if: =articles.b2.no_binding, then: none} }
+					top:0
 				},
 				#b3 : {
 	 				height:235,
-					top:0,
-					options: { bind: {if: =articles.b3.no_binding, then: none} }
+					top:0
 				},
 				#b4 : {
 	 				height:235,
-					top:0,
-					options: { bind: {if: =articles.b4.no_binding, then: none} }
+					top:0
 				},
 				#b5 : {
 	 				height:235,
-					top:0,
-					options: { bind: {if: =articles.b5.no_binding, then: none} }
+					top:0
 				},
 				#b6 : {
 	 				height:235,
-					top:0,
-					options: { bind: {if: =articles.b6.no_binding, then: none} }
+					top:0
 				},
 				#b7 : {
 	 				height:235,
-					top:0,
-					options: { bind: {if: =articles.b7.no_binding, then: none} }
+					top:0
 				},
 				#b8 : {
 	 				height:235,
-					top:0,
-					options: { bind: {if: =articles.b8.no_binding, then: none} }
+					top:0
 				},
 				#b9 : {
 	 				height:235,
-					top:235,
-					options: { bind: {if: =articles.b9.no_binding, then: none} }
+					top:235
 				},
 				#b10 : {
 	 				height:235,
-					top:235,
-					options: { bind: {if: =articles.b10.no_binding, then: none} }
+					top:235
 				},
 				#b11 : {
 	 				height:235,
-					top:235,
-					options: { bind: {if: =articles.b11.no_binding, then: none} }
+					top:235
 				},
 				#b12 : {
 	 				height:235,
-					top:235,
-					options: { bind: {if: =articles.b12.no_binding, then: none} }
+					top:235
 				},
 				#b13 : {
 	 				height:235,
-					top:235,
-					options: { bind: {if: =articles.b13.no_binding, then: none} }
+					top:235
 				},
 				#b14 : {
 	 				height:235,
-					top:235,
-					options: { bind: {if: =articles.b14.no_binding, then: none} }
+					top:235
 				},
 				#b15 : {
 	 				height:235,
-					top:235,
-					options: { bind: {if: =articles.b15.no_binding, then: none} }
+					top:235
 				},
 				#b16 : {
 	 				height:235,
-					top:235,
-					options: { bind: {if: =articles.b16.no_binding, then: none} }
+					top:235
 				}
 	        }}
 		]

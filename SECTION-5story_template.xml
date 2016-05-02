@@ -109,55 +109,45 @@
 			{if: =portrait, then: {
 				#b1:	{
 					top:30,
-					height:530,
-					options: { bind: {if: =articles.b1.no_binding, then: none} }
+					height:530
 				},
 				#b2:	{
 					top:570,
-					height:340,
-					options: { bind: {if: =articles.b2.no_binding, then: none} }
+					height:340
 				},
 				#b3:{
 					top:570,
-					height:340,
-					options: { bind: {if: =articles.b3.no_binding, then: none} }
+					height:340
 				},
 				#b4:	{
 					top:30,
-					height:270,
-					options: { bind: {if: =articles.b4.no_binding, then: none} }
+					height:270
 				},
 				#b5:	{
 					top:305,
-					height:265,
-					options: { bind: {if: =articles.b5.no_binding, then: none} }
+					height:265
 				}
 			}},
 			{if: =landscape, then: {
 				#b1:	{
 					top:30,
-					height:615,
-					options: { bind: {if: =articles.b1.no_binding, then: none} }
+					height:615
 				},
 				#b2:	{
 					top:30,
-					height:155,
-					options: { bind: {if: =articles.b2.no_binding, then: none} }
+					height:155
 				},
 				#b3:	{
 					top:190,
-					height:155,
-					options: { bind: {if: =articles.b3.no_binding, then: none} }
+					height:155
 				},
 				#b4:	{
 					top:350,
-					height:155,
-					options: { bind: {if: =articles.b4.no_binding, then: none} }
+					height:155
 				},
 				#b5:{
 					top:510,
-					height:140,
-					options: { bind: {if: =articles.b5.no_binding, then: none} }
+					height:140
 				}
 			}}
 		]

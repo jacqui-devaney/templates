@@ -196,43 +196,35 @@
                 },
 				#b2:	{
                     top: {if: =app.push.tags.topic.politics, then: 570, else: {if: =app.version, at-least: 7.5, then: 600, else: 570}},
-                    height: {if: =app.push.tags.topic.poltiics, then: 340, else: {if: =app.version, at-least: 7.5, then: 300, else: 340}},
-					options: { bind: {if: =articles.b2.no_binding, then: none} }
+                    height: {if: =app.push.tags.topic.poltiics, then: 340, else: {if: =app.version, at-least: 7.5, then: 300, else: 340}}
 				},
 				#b3:{
                     top: {if: =app.push.tags.topic.politics, then: 570, else: {if: =app.version, at-least: 7.5, then: 600, else: 570}},
-                    height: {if: =app.push.tags.topic.poltiics, then: 340, else: {if: =app.version, at-least: 7.5, then: 300, else: 340}},
-					options: { bind: {if: =articles.b3.no_binding, then: none} }
+                    height: {if: =app.push.tags.topic.poltiics, then: 340, else: {if: =app.version, at-least: 7.5, then: 300, else: 340}}
 				},
 				#b4:	{
                     top: {if: =app.push.tags.topic.politics, then: 30, else: {if: =app.version, at-least: 7.5, then: 120, else: 30}},
-                    height: {if: =app.push.tags.topic.politics, then: 135, else: {if: =app.version, at-least: 7.5, then: 130, else: 135}},
-					options: { bind: {if: =articles.b4.no_binding, then: none} }
+                    height: {if: =app.push.tags.topic.politics, then: 135, else: {if: =app.version, at-least: 7.5, then: 130, else: 135}}
 				},
 				#b5:	{
                     top:{if: =app.push.tags.topic.politics, then: 175, else: {if: =app.version, at-least: 7.5, then: 250, else:175}},
-                    height: {if: =app.push.tags.topic.politics, then: 135, else: {if: =app.version, at-least: 7.5, then: 140, else: 135}},
-					options: { bind: {if: =articles.b5.no_binding, then: none} }
+                    height: {if: =app.push.tags.topic.politics, then: 135, else: {if: =app.version, at-least: 7.5, then: 140, else: 135}}
 				},
 				#b6:	{
                     top: {if: =app.push.tags.topic.politics, then: 320, else: {if: =app.version, at-least: 7.5, then: 390, else:320}},
-                    height: {if: =app.push.tags.topic.politics, then: 135, else: {if: =app.version, at-least: 7.5, then: 140, else: 135}},
-					options: { bind: {if: =articles.b6.no_binding, then: none} }
+                    height: {if: =app.push.tags.topic.politics, then: 135, else: {if: =app.version, at-least: 7.5, then: 140, else: 135}}
 				},
 				#b7:	{
                     top: {if: =app.push.tags.topic.politics, then: 465, else: {if: =app.version, at-least: 7.5, then: 530, else: 465}},
-                    height: {if: =app.push.tags.topic.politics, then: 135, else: {if: =app.version, at-least: 7.5, then: 120, else: 135}},
-					options: { bind: {if: =articles.b7.no_binding, then: none} }
+                    height: {if: =app.push.tags.topic.politics, then: 135, else: {if: =app.version, at-least: 7.5, then: 120, else: 135}}
 				},
 				#b8:	{
                     top: {if: =app.push.tags.topic.politics, then: 600, else: {if: =app.version, at-least: 7.5, then: 650, else: 600}},
-                    height: {if: =app.push.tags.topic.politics, then: 135, else: {if: =app.version, at-least: 7.5, then: 120, else: 135}},
-					options: {bind: {if: =articles.b8.no_binding, then: none}}
+                    height: {if: =app.push.tags.topic.politics, then: 135, else: {if: =app.version, at-least: 7.5, then: 120, else: 135}}
 				},
 				#b9:	{
                     top:{if: =app.push.tags.topic.politics, then: 745, else: {if: =app.version, at-least: 7.5, then: 770, else: 745}},
-                    height: {if: =app.push.tags.topic.politics, then: 140, else: {if: =app.version, at-least: 7.5, then: 120, else: 140}},
-					options: { bind: {if: =articles.b9.no_binding, then: none}}
+                    height: {if: =app.push.tags.topic.politics, then: 140, else: {if: =app.version, at-least: 7.5, then: 120, else: 140}}
 				}
 			}},
 			{if: =landscape, then: {
@@ -266,48 +258,39 @@
                 },
 				#b1:	{
                     top: 20,
-                    height: {if: =app.push.tags.topic.politics, then: 465, else: {if: =app.version, at-least: 7.5, then: 510, else: 465}},
-					options: { bind: {if: =articles.b1.no_binding, then: none} }
+                    height: {if: =app.push.tags.topic.politics, then: 465, else: {if: =app.version, at-least: 7.5, then: 510, else: 465}}
 				},
 				#b2:	{
                     top: {if: =app.push.tags.topic.politics, then: 30, else: {if: =app.version, at-least: 7.5, then: 125, else: 30}},
-                    height: {if: =app.push.tags.topic.politics, then: 310, else: {if: =app.version, at-least: 7.5, then: 290, else: 310}},
-					options: { bind: {if: =articles.b2.no_binding, then: none} }
+                    height: {if: =app.push.tags.topic.politics, then: 310, else: {if: =app.version, at-least: 7.5, then: 290, else: 310}}
 				},
 				#b3:	{
                     top: {if: =app.push.tags.topic.politics, then: 30, else: {if: =app.version, at-least: 7.5, then: 125, else: 30}},
-                    height: {if: =app.push.tags.topic.politics, then: 310, else: {if: =app.version, at-least: 7.5, then: 290, else: 310}},
-					options: { bind: {if: =articles.b3.no_binding, then: none} }
+                    height: {if: =app.push.tags.topic.politics, then: 310, else: {if: =app.version, at-least: 7.5, then: 290, else: 310}}
 				},
 				#b4:	{
                     top: {if: =app.push.tags.topic.politics, then: 505, else: {if: =app.version, at-least: 7.5, then: 525, else: 505}},
-                    height: {if: =app.push.tags.topic.politics, then: 145, else: {if: =app.version, at-least: 7.5, then: 120, else: 145}},
-					options: { bind: {if: =articles.b4.no_binding, then: none} }
+                    height: {if: =app.push.tags.topic.politics, then: 145, else: {if: =app.version, at-least: 7.5, then: 120, else: 145}}
 				},
 				#b5:{
                     top: {if: =app.push.tags.topic.politics, then: 505, else: {if: =app.version, at-least: 7.5, then: 525, else: 505}},
-                    height: {if: =app.push.tags.topic.politics, then: 145, else: {if: =app.version, at-least: 7.5, then: 120, else: 145}},
-					options: { bind: {if: =articles.b5.no_binding, then: none} }
+                    height: {if: =app.push.tags.topic.politics, then: 145, else: {if: =app.version, at-least: 7.5, then: 120, else: 145}}
 				},
 				#b6:	{
                     top: {if: =app.push.tags.topic.politics, then: 350, else: {if: =app.version, at-least: 7.5, then: 420, else: 350}},
-                    height: {if: =app.push.tags.topic.politics, then: 145, else: {if: =app.version, at-least: 7.5, then: 120, else: 145}},
-					options: { bind: {if: =articles.b6.no_binding, then: none} }
+                    height: {if: =app.push.tags.topic.politics, then: 145, else: {if: =app.version, at-least: 7.5, then: 120, else: 145}}
 				},
 				#b7:	{
                     top: {if: =app.push.tags.topic.politics, then: 350, else: {if: =app.version, at-least: 7.5, then: 420, else: 350}},
-                    height: {if: =app.push.tags.topic.politics, then: 145, else: {if: =app.version, at-least: 7.5, then: 120, else: 145}},
-					options: { bind: {if: =articles.b7.no_binding, then: none} }
+                    height: {if: =app.push.tags.topic.politics, then: 145, else: {if: =app.version, at-least: 7.5, then: 120, else: 145}}
 				},
 				#b8:	{
                     top: {if: =app.push.tags.topic.politics, then: 505, else: {if: =app.version, at-least: 7.5, then: 545, else: 505}},
-                    height: {if: =app.push.tags.topic.politics, then: 145, else: {if: =app.version, at-least: 7.5, then: 110, else: 145}},
-					options: { bind: {if: =articles.b8.no_binding, then: none} }
+                    height: {if: =app.push.tags.topic.politics, then: 145, else: {if: =app.version, at-least: 7.5, then: 110, else: 145}}
 				},
 				#b9:	{
                     top: {if: =app.push.tags.topic.politics, then: 505, else: {if: =app.version, at-least: 7.5, then: 545, else: 505}},
-                    height: {if: =app.push.tags.topic.politics, then: 145, else: {if: =app.version, at-least: 7.5, then: 110, else: 140}},
-					options: { bind: {if: =articles.b9.no_binding, then: none} }
+                    height: {if: =app.push.tags.topic.politics, then: 145, else: {if: =app.version, at-least: 7.5, then: 110, else: 140}}
 				}
 
 			}}

@@ -20,26 +20,22 @@
 	        {if: =portrait, then: {
 				#b1 : {
 	 				height:960,
-					top:0,
-					options : { bind: {if: =articles.b1.no_binding, then: none} }
+					top:0
 				},
 				#b2 : {
 	 				height:960,
-					top:0,
-					options : { bind: {if: =articles.b2.no_binding, then: none} }
+					top:0
 				}
 
 	        }},
 			{if: =landscape, then: {
 				#b1 : {
 	 				height:706,
-					top:0,
-					options : { bind: {if: =articles.b1.no_binding, then: none} }
+					top:0
 				},
 				#b2 : {
 	 				height:706,
-					top:0,
-					options : { bind: {if: =articles.b2.no_binding, then: none} }
+					top:0
 				}
 
 	        }}

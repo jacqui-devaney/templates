@@ -33,7 +33,7 @@
                     }
                 },
                     padding: [{if: {$count:[=articles.b1.images.phone]}, more-than: 0, then: 0, else: 22}, 0, 0, 0],
-                    options: { bind: {if: =articles.b1.no_binding, then: none}, show_body: true, medium_headline: true, module: url(TOP-IMAGE_module.xml) }
+                    options: { show_body: true, medium_headline: true, module: url(TOP-IMAGE_module.xml) }
                 },
 				#b2:	{
                     height: =size.continuation_height_large
@@ -55,34 +55,34 @@
 				#b1:	{
 					top:0,
 					height:582,
-					options:{ bind: {if: =articles.b1.no_binding, then: none}, large_headline:true, show_image:true}
+					options:{ large_headline:true, show_image:true}
 				},
 				#b2:	{
 					top:586,
 					height:219,
-					options:{ bind: {if: =articles.b2.no_binding, then: none}, medium_headline:true, show_body:true, top_border:true, show_flashline:true}
+					options:{ medium_headline:true, show_body:true, top_border:true, show_flashline:true}
 				},
 				#b3:	{
 					top:0,
 					height:188,
-					options:{ bind: {if: =articles.b3.no_binding, then: none}, medium_headline:true, show_flashline:true}
+					options:{ medium_headline:true, show_flashline:true}
 				},
 				#b4:	{
 					top:187,
 					height:196,
-					options:{ bind: {if: =articles.b4.no_binding, then: none}, medium_headline:true, top_border:true, show_flashline:true}
+					options:{ medium_headline:true, top_border:true, show_flashline:true}
 
 				},
 				#b5:	{
 					top:386,
 					height:196,
-					options:{ bind: {if: =articles.b5.no_binding, then: none}, medium_headline:true, top_border:true, show_flashline:true}
+					options:{ medium_headline:true, top_border:true, show_flashline:true}
 
 				},
 				#b6:	{
 					top:586,
 					height:219,
-					options:{ bind: {if: =articles.b6.no_binding, then: none}, medium_headline:true, top_border:true, show_flashline:true}
+					options:{ medium_headline:true, top_border:true, show_flashline:true}
 				},
 				#footer: {
 					top: 820,
@@ -94,32 +94,32 @@
 				#b1:	{
 					top:0,
 					height:563,
-					options:{ bind: {if: =articles.b1.no_binding, then: none}, large_headline:true, show_image:true}
+					options:{ large_headline:true, show_image:true}
 				},
 				#b2:	{
 					top:0,
 					height:185,
-					options:{ bind: {if: =articles.b2.no_binding, then: none}, medium_headline:true, bottom_border:true, show_body:true, show_flashline:true}
+					options:{ medium_headline:true, bottom_border:true, show_body:true, show_flashline:true}
 				},
 				#b3:	{
 					top:202,
 					height:175,
-					options:{ bind: {if: =articles.b3.no_binding, then: none}, medium_headline:true, top_border:false, show_flashline:true}
+					options:{ medium_headline:true, top_border:false, show_flashline:true}
 				},
 				#b4:	{
 					top:395,
 					height:165,
-					options:{ bind: {if: =articles.b4.no_binding, then: none}, medium_headline:true, top_border:true, show_flashline:true}
+					options:{ medium_headline:true, top_border:true, show_flashline:true}
 				},
 				#b5:	{
 					top:202,
 					height:175,
-					options:{ bind: {if: =articles.b5.no_binding, then: none}, medium_headline:true, top_border:false, show_flashline:true}
+					options:{ medium_headline:true, top_border:false, show_flashline:true}
 				},
 				#b6:	{
 					top:395,
 					height:165,
-					options:{ bind: {if: =articles.b6.no_binding, then: none}, medium_headline:true, top_border:true, show_flashline:true}
+					options:{ medium_headline:true, top_border:true, show_flashline:true}
 				},
 				#footer: {
 					top: 570,

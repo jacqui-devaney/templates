@@ -35,15 +35,15 @@
             }
         },
             padding: [{if: {$count:[=articles.b1.images.phone]}, more-than: 0, then: 0, else: 22}, 0, 0, 0],
-            options: { bind: {if: =articles.b1.no_binding, then: none}, show_body: true, medium_headline: true, module: url(TOP-IMAGE_module.xml) }
+            options: { show_body: true, medium_headline: true, module: url(TOP-IMAGE_module.xml) }
         },
 		#b2 : {
 			height: =size.continuation_height_large,
-			options: { bind: {if: =articles.b2.no_binding, then: none}, show_body: true }
+			options: { show_body: true }
 		},
 		#b3 : {
 			height: =size.continuation_height_large,
-			options: { bind: {if: =articles.b3.no_binding, then: none}, show_body: true }
+			options: { show_body: true }
 		},
 		#b4 : {
 			height: =size.continuation_height_normal

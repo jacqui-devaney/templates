@@ -50,132 +50,132 @@
 	        {if: =scale.phone, then: {
 	        	#b1 : {
 	 				height: =size.continuation_height_large,
-					options: { bind: {if: =articles.b1.no_binding, then: none}, show_body: true, small_headline: true }
+					options: { show_body: true, small_headline: true }
 				},
 				#b2 : {
 	 				height: =size.continuation_height_large,
-					options: { bind: {if: =articles.b2.no_binding, then: none}, show_body: true, small_headline: true }
+					options: { show_body: true, small_headline: true }
 				},
 				#b3 : {
 	 				height: =size.continuation_height_large,
-					options: { bind: {if: =articles.b3.no_binding, then: none}, show_body: true, small_headline: true }
+					options: { show_body: true, small_headline: true }
 				},
 				#b4 : {
 	 				height: =size.continuation_height_large,
-					options: { bind: {if: =articles.b4.no_binding, then: none}, show_body: true, small_headline: true }
+					options: { show_body: true, small_headline: true }
 				},
 				#b5 : {
 	 				height: =size.continuation_height_large,
-					options: { bind: {if: =articles.b5.no_binding, then: none}, show_body: true, small_headline: true }
+					options: { show_body: true, small_headline: true }
 				},
 				#b6 : {
 	 				height: =size.continuation_height_large,
-					options: { bind: {if: =articles.b6.no_binding, then: none}, show_body: true, small_headline: true }
+					options: { show_body: true, small_headline: true }
 				},
 				#b7 : {
 	 				height: =size.continuation_height_large,
-					options: { bind: {if: =articles.b7.no_binding, then: none}, show_body: true, small_headline: true }
+					options: { show_body: true, small_headline: true }
 				},
 				#b8 : {
 	 				height: =size.continuation_height_large,
-					options: { bind: {if: =articles.b8.no_binding, then: none}, show_body: true, small_headline: true }
+					options: { show_body: true, small_headline: true }
 				},
 				#b9 : {
 	 				height: =size.continuation_height_large,
-					options: { bind: {if: =articles.b9.no_binding, then: none}, show_body: true, small_headline: true }
+					options: { show_body: true, small_headline: true }
 				},
 				#b10 : {
 	 				height: =size.continuation_height_large,
-					options: { bind: {if: =articles.b10.no_binding, then: none}, show_body: true, small_headline: true }
+					options: { show_body: true, small_headline: true }
 				},
 				#b11 : {
 	 				height: =size.continuation_height_large,
-					options: { bind: {if: =articles.b11.no_binding, then: none}, show_body: true, small_headline: true }
+					options: { show_body: true, small_headline: true }
 				},
 				#b12 : {
 	 				height: =size.continuation_height_large,
-					options: { bind: {if: =articles.b12.no_binding, then: none}, show_body: true, small_headline: true }
+					options: { show_body: true, small_headline: true }
 				},
 				#b13 : {
 	 				height: =size.continuation_height_large,
-					options: { bind: {if: =articles.b13.no_binding, then: none}, show_body: true, small_headline: true }
+					options: { show_body: true, small_headline: true }
 				},
 				#b14 : {
 	 				height: =size.continuation_height_large,
-					options: { bind: {if: =articles.b14.no_binding, then: none}, show_body: true, small_headline: true }
+					options: { show_body: true, small_headline: true }
 				},
 				#b15 : {
 	 				height: =size.continuation_height_large,
-					options: { bind: {if: =articles.b15.no_binding, then: none}, show_body: true, small_headline: true }
+					options: { show_body: true, small_headline: true }
 				},
 				#b16 : {
 	 				height: =size.continuation_height_large,
-					options: { bind: {if: =articles.b16.no_binding, then: none}, show_body: true, small_headline: true }
+					options: { show_body: true, small_headline: true }
 				},
 
 				#b17 : {
 	 				height: =size.continuation_height_large,
-					options: { bind: {if: =articles.b17.no_binding, then: none}, show_body: true, small_headline: true }
+					options: { show_body: true, small_headline: true }
 				},
 				#b18 : {
 	 				height: =size.continuation_height_large,
-					options: { bind: {if: =articles.b18.no_binding, then: none}, show_body: true, small_headline: true }
+					options: { show_body: true, small_headline: true }
 				},
 				#b19 : {
 	 				height: =size.continuation_height_large,
-					options: { bind: {if: =articles.b19.no_binding, then: none}, show_body: true, small_headline: true }
+					options: { show_body: true, small_headline: true }
 				},
 				#b20 : {
 	 				height: =size.continuation_height_large,
-					options: { bind: {if: =articles.b20.no_binding, then: none}, show_body: true, small_headline: true }
+					options: { show_body: true, small_headline: true }
 				},
 				#b21 : {
 	 				height: =size.continuation_height_large,
-					options: { bind: {if: =articles.b21.no_binding, then: none}, show_body: true, small_headline: true }
+					options: { show_body: true, small_headline: true }
 				},
 				#b22 : {
 	 				height: =size.continuation_height_large,
-					options: { bind: {if: =articles.b22.no_binding, then: none}, show_body: true, small_headline: true }
+					options: { show_body: true, small_headline: true }
 				},
 				#b23 : {
 	 				height: =size.continuation_height_large,
-					options: { bind: {if: =articles.b23.no_binding, then: none}, show_body: true, small_headline: true }
+					options: { show_body: true, small_headline: true }
 				},
 				#b24 : {
 	 				height: =size.continuation_height_large,
-					options: { bind: {if: =articles.b24.no_binding, then: none}, show_body: true, small_headline: true }
+					options: { show_body: true, small_headline: true }
 				},
 				#b25 : {
 	 				height: =size.continuation_height_large,
-					options: { bind: {if: =articles.b25.no_binding, then: none}, show_body: true, small_headline: true }
+					options: { show_body: true, small_headline: true }
 				},
 				#b26 : {
 	 				height: =size.continuation_height_large,
-					options: { bind: {if: =articles.b26.no_binding, then: none}, show_body: true, small_headline: true }
+					options: { show_body: true, small_headline: true }
 				},
 				#b27 : {
 	 				height: =size.continuation_height_large,
-					options: { bind: {if: =articles.b27.no_binding, then: none}, show_body: true, small_headline: true }
+					options: { show_body: true, small_headline: true }
 				},
 				#b28 : {
 	 				height: =size.continuation_height_large,
-					options: { bind: {if: =articles.b28.no_binding, then: none}, show_body: true, small_headline: true }
+					options: { show_body: true, small_headline: true }
 				},
 				#b29 : {
 	 				height: =size.continuation_height_large,
-					options: { bind: {if: =articles.b29.no_binding, then: none}, show_body: true, small_headline: true }
+					options: { show_body: true, small_headline: true }
 				},
 				#b30 : {
 	 				height: =size.continuation_height_large,
-					options: { bind: {if: =articles.b30.no_binding, then: none}, show_body: true, small_headline: true }
+					options: { show_body: true, small_headline: true }
 				},
 				#b31 : {
 	 				height: =size.continuation_height_large,
-					options: { bind: {if: =articles.b31.no_binding, then: none}, show_body: true, small_headline: true }
+					options: { show_body: true, small_headline: true }
 				},
 				#b32 : {
 	 				height: =size.continuation_height_large,
-					options: { bind: {if: =articles.b32.no_binding, then: none}, show_body: true, small_headline: true }
+					options: { show_body: true, small_headline: true }
 				}
 	        }},
 	        {if: =portrait, then: {

@@ -20,32 +20,32 @@
 				#deco:	{
 					top:20,
 					height:348,
-					options:{bind: {if: =articles.deco.no_binding, then: none}, medium_headline:true, show_image:true}
+					options:{medium_headline:true, show_image:true}
 				},
 				#b1:	{
 					top: 386,
 					height: 196,
-					options:{bind: {if: =articles.b1.no_binding, then: none}, large_headline:true, show_body:true, top_border:true, show_flashline:false}
+					options:{large_headline:true, show_body:true, top_border:true, show_flashline:false}
 				},
 				#b2:	{
 					top:586,
 					height:219,
-					options:{bind: {if: =articles.b2.no_binding, then: none}, medium_headline:true, show_body:true, top_border:true, show_flashline:true}
+					options:{medium_headline:true, show_body:true, top_border:true, show_flashline:true}
 				},
 				#b3:	{
 					top:20,
 					height:260,
-					options:{bind: {if: =articles.b3.no_binding, then: none}, medium_headline:true, show_flashline:true}
+					options:{medium_headline:true, show_flashline:true}
 				},
 				#b4:	{
 					top:285,
 					height: 260,
-					options:{bind: {if: =articles.b4.no_binding, then: none}, medium_headline:true, top_border:true, show_flashline:true}
+					options:{medium_headline:true, top_border:true, show_flashline:true}
 				},
 				#b5:	{
 					top:540,
 					height:260,
-					options:{bind: {if: =articles.b5.no_binding, then: none}, medium_headline:true, top_border:true, show_flashline:true}
+					options:{medium_headline:true, top_border:true, show_flashline:true}
 
 				},
 		#footer: {
@@ -59,32 +59,32 @@
 				#deco:	{
 					top:20,
 					height:360,
-					options:{bind: {if: =articles.deco.no_binding, then: none}, medium_headline:true, show_image:true}
+					options:{medium_headline:true, show_image:true}
 				},
 				#b1:	{
 					top:386,
 					height:170,
-					options:{bind: {if: =articles.b1.no_binding, then: none}, large_headline:true, show_body:true, top_border:true, show_flashline:false}
+					options:{large_headline:true, show_body:true, top_border:true, show_flashline:false}
 				},
 				#b2:	{
 					top:20,
 					height:270,
-					options:{bind: {if: =articles.b2.no_binding, then: none}, medium_headline:true, show_body:true, show_flashline:true}
+					options:{medium_headline:true, show_body:true, show_flashline:true}
 				},
 				#b3:	{
 					top:20,
 					height:270,
-					options:{bind: {if: =articles.b3.no_binding, then: none}, medium_headline:true, show_body:true, show_flashline:true}
+					options:{medium_headline:true, show_body:true, show_flashline:true}
 				},
 				#b4:	{
 					top:290,
 					height:270,
-					options:{bind: {if: =articles.b4.no_binding, then: none}, medium_headline:true, top_border:true, show_body:true, show_flashline:true}
+					options:{medium_headline:true, top_border:true, show_body:true, show_flashline:true}
 				},
 				#b5:	{
 					top:290,
 					height:270,
-					options:{bind: {if: =articles.b5.no_binding, then: none}, medium_headline:true, show_flashline:true, top_border: true}
+					options:{medium_headline:true, show_flashline:true, top_border: true}
 				},
 		#footer: {
 			top: 570,

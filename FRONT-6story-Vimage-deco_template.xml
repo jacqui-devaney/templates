@@ -18,32 +18,32 @@
                 #b1:	{
                     top:20,
                     height:400,
-                    options:{bind: {if: =articles.b1.no_binding, then: none}, large_headline:true}
+                    options:{large_headline:true}
                 },
                 #deco:	{
                     top:20,
                     height:400,
-                    options:{bind: {if: =articles.deco.no_binding, then: none}, medium_headline:true}
+                    options:{medium_headline:true}
                 },
                 #b2:	{
                     top:430,
                     height:254,
-                    options:{bind: {if: =articles.b2.no_binding, then: none}, medium_headline:true, top_border:true}
+                    options:{medium_headline:true, top_border:true}
                 },
                 #b3:	{
                     top:430,
                     height:254,
-                    options:{bind: {if: =articles.b3.no_binding, then: none}, medium_headline:true, top_border:true}
+                    options:{medium_headline:true, top_border:true}
                 },
                 #b4: {
                     top:430,
                     height:254,
-                    options:{bind: {if: =articles.b4.no_binding, then: none}, medium_headline:true, top_border:true}
+                    options:{medium_headline:true, top_border:true}
                 },
                 #b5: {
                     top:690,
                     height:125,
-                    options:{bind: {if: =articles.b5.no_binding, then: none}, medium_headline:true, bottom_align:true, show_byline:false, top_border:true}
+                    options:{medium_headline:true, bottom_align:true, show_byline:false, top_border:true}
                 },
 		#footer: {
 			top: 820,
@@ -56,32 +56,32 @@
                 #b1:	{
                     top:20,
                     height:350,
-                    options:{bind: {if: =articles.b1.no_binding, then: none}, large_headline:true}
+                    options:{large_headline:true}
                 },
                 #deco:	{
                     top:20,
                     height:400,
-                    options:{bind: {if: =articles.deco.no_binding, then: none}, medium_headline:true}
+                    options:{medium_headline:true}
                 },
                 #b2:	{
                     top:20,
                     height:260,
-                    options:{bind: {if: =articles.b2.no_binding, then: none}, medium_headline:true}
+                    options:{medium_headline:true}
                 },
                 #b3:	{
                     top:290,
                     height:270,
-                    options:{bind: {if: =articles.b3.no_binding, then: none}, medium_headline:true, top_border:true}
+                    options:{medium_headline:true, top_border:true}
                 },
                 #b4:	{
                     top:440,
                     height:120,
-                    options:{bind: {if: =articles.b4.no_binding, then: none}, medium_headline:true, top_border:true}
+                    options:{medium_headline:true, top_border:true}
                 },
                 #b5:	{
                     top:380,
                     height:185,
-                    options:{bind: {if: =articles.b5.no_binding, then: none}, medium_headline:true, top_border:true, show_byline:false}
+                    options:{medium_headline:true, top_border:true, show_byline:false}
                 },
 		#footer: {
 			top: 570,

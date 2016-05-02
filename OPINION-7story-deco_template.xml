@@ -19,28 +19,28 @@
 			}},
 			{if: =portrait, then: {
 				#b1: {
-					options:{ bind: {if: =articles.b1.no_binding, then: none}, rando_header:true, top_border:true}
+					options:{ rando_header:true, top_border:true}
 				},
 				#b2: {
-					options:{ bind: {if: =articles.b2.no_binding, then: none}, top_border:true}
+					options:{ top_border:true}
 				},
 				#b3: {
-					options:{ bind: {if: =articles.b3.no_binding, then: none}, top_border:true}
+					options:{ top_border:true}
 				},
 				#deco: {
-					options:{ bind: {if: =articles.deco.no_binding, then: none}, medium_headline:true, show_byline:true, show_flashline:true}
+					options:{ medium_headline:true, show_byline:true, show_flashline:true}
 				},
 				#b4: {
-					options:{ bind: {if: =articles.b4.no_binding, then: none}, medium_headline:true, show_byline:true, show_flashline:true}
+					options:{ medium_headline:true, show_byline:true, show_flashline:true}
 				},
 				#b5: {
-					options:{ bind: {if: =articles.b5.no_binding, then: none}, medium_headline:true, show_byline:true, show_flashline:true, top_border:true}
+					options:{ medium_headline:true, show_byline:true, show_flashline:true, top_border:true}
 				},
 				#b6: {
-					options:{ bind: {if: =articles.b6.no_binding, then: none}, medium_headline:true, show_byline:true, show_flashline:true, top_border:true}
+					options:{ medium_headline:true, show_byline:true, show_flashline:true, top_border:true}
 				},
 				#b7: {
-					options:{ bind: {if: =articles.b7.no_binding, then: none}, medium_headline:true, show_byline:true, show_flashline:true, top_border:true}
+					options:{ medium_headline:true, show_byline:true, show_flashline:true, top_border:true}
 				},
 				#footer: {
 					top: 930,
@@ -51,28 +51,28 @@
 			}},
 			{if: =landscape, then: {
 				#b1: {
-					options:{ bind: {if: =articles.b1.no_binding, then: none}, rando_header:true}
+					options:{ rando_header:true}
 				},
 				#b2: {
-					options:{ bind: {if: =articles.b2.no_binding, then: none}, top_border:true}
+					options:{ top_border:true}
 				},
 				#b3: {
-					options:{ bind: {if: =articles.b3.no_binding, then: none}, top_border:true}
+					options:{ top_border:true}
 				},
 				#deco: {
-					options:{ bind: {if: =articles.deco.no_binding, then: none}, medium_headline:true, show_byline:true, show_flashline:true}
+					options:{ medium_headline:true, show_byline:true, show_flashline:true}
 				},
 				#b4: {
-					options:{ bind: {if: =articles.b4.no_binding, then: none}, medium_headline:true, show_byline:true, show_flashline:true, top_border:true}
+					options:{ medium_headline:true, show_byline:true, show_flashline:true, top_border:true}
 				},
 				#b5: {
-					options:{ bind: {if: =articles.b5.no_binding, then: none}, medium_headline:true, show_byline:true, show_flashline:true, top_border:true}
+					options:{ medium_headline:true, show_byline:true, show_flashline:true, top_border:true}
 				},
 				#b6: {
-					options:{ bind: {if: =articles.b6.no_binding, then: none}, medium_headline:true, show_byline:true, show_flashline:true, top_border:true}
+					options:{ medium_headline:true, show_byline:true, show_flashline:true, top_border:true}
 				},
 				#b7: {
-					options:{ bind: {if: =articles.b7.no_binding, then: none}, medium_headline:true, show_byline:true, show_flashline:true, top_border:true}
+					options:{ medium_headline:true, show_byline:true, show_flashline:true, top_border:true}
 				},
 				#footer: {
 					top: 680,

@@ -13,8 +13,7 @@
 	<style>{
 		jpml: { min-height: 0 },
 		#body_container: {
-			padding: [0, 10, 0, 10],
-			flow: article_body
+			padding: [0, 10, 0, 10]
 		},
 		#header_top: {
 			padding:[14,10,0,10]
@@ -24,7 +23,8 @@
 			text-align: justify,
 			hyphens: auto,
 			font-name: "WhitneySSm-Medium",
-			padding: [16, 0, 0, 0]
+			padding: [16, 0, 0, 0],
+			flow: article_body
 		},
 		.article_flashline: {
 			padding: [14, 0, 8.5, 0],

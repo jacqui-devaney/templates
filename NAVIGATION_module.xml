@@ -67,9 +67,9 @@
         },
 		.article_subhed: {
 			font-name: WhitneySSm-BookItalic,
-			font-size:13,
+			font-size:14,
 			line-height:18,
-			color: #3b4343,
+			color: #2b3333,
 			padding:[0,0,0,0]
 		},
 		.module_headline: {
@@ -84,12 +84,12 @@
 		},
 		.body: {
 			font-name: ChronicleSSm-Book,
-			font-size:13,
+			font-size:14,
 			line-height:18,
 			color: #4f5757
 		},
 		.byline: {
-			font-size:13,
+			font-size:14,
 			font-name: ChronicleSSmBook-Italic,
 			line-height:18,
 			padding:[0,0,4,0],

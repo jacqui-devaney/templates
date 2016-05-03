@@ -23,11 +23,11 @@
 			{
 				$switch:[
 					{if: =options.small_headline, then:{
-						font-size: 13,
+						font-size: 14,
 						line-height: 20,
 						layout-grid-line-offset: -15,
 						layout-grid-line: 20,
-						color:#3b4343
+						color:#2b3333
 					}},
 					{if: =options.smedium_headline, then:{
 						padding:[2, 0, 0, 0],
@@ -69,12 +69,12 @@
 	.body: {
 		font-name: ChronicleSSmBook-Regular,
 		text-indent: 0,
-		font-size:{$multiply:{if: =options.large_body, then:20, else:13}},
+		font-size:{$multiply:{if: =options.large_body, then:20, else:14}},
 		line-height:{$multiply:{if: =options.large_body, then:26, else:20}},
 		text-overflow: =text.overflow,
 		text-align: left,
 		hyphens:auto,
-		color:{if: =options.white_text, then:#fff, else:#3b4343}
+		color:{if: =options.white_text, then:#fff, else:#2b3333}
 	},
 	.escrow_body: {
 		font-name: DJ5Escrow-Roman,
@@ -86,7 +86,7 @@
 	},
 	.deco_caption: {
 		font-name: ChronicleSSmBook-Regular,
-		font-size:13,
+		font-size:14,
 		line-height:20,
 		color:#fff
 	},
@@ -129,7 +129,7 @@
 	},
 	.byline: {
 		font-name:ChronicleSSmMedium-Italic,
-		font-size:13,
+		font-size:14,
 		line-height:20,
 		color:#a7afaf
 	},

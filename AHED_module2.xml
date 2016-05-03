@@ -82,7 +82,7 @@
             color:{  
                if:=options.white_text,
                then:#fff,
-               else:#3b4343
+               else:#2b3333
             }
          },
          #stars:{  

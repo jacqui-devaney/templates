@@ -14,17 +14,17 @@
 		text-align:left,
 		font-size:17,
 		line-height:25,
-		color:#3b4343
+		color:#2b3333
 	},
 	.module_flashline: {
 		font-size:{$multiply: [12, =view.zoomlevel]},
 		line-height:{$multiply: [13, =view.zoomlevel]}
 	},
 	.byline: {
-		font-name: ChronicleSSmMedium-Italic,
+		font-name: ChronicleSSmBook-Italic,
 		font-size:{$multiply: [14, =view.zoomlevel]},
 		line-height:{$multiply: [20, =view.zoomlevel]},
-		color:#3b4343,
+		color:#2b3333,
 		padding: [0,0,{$multiply: [20, =view.zoomlevel]},0]
 	},
 	h2: {
@@ -34,11 +34,11 @@
 	.article_body: {
 		column-count: { if: =scale.tablet, then: { if: =portrait, then: 3, else: 4 } },
 		font-name: ChronicleSSmBook-Regular,
-		font-size:{$multiply: [13, =view.zoomlevel]},
+		font-size:{$multiply: [14, =view.zoomlevel]},
 		line-height:{$multiply: [20, =view.zoomlevel]},
 	    text-align: left,
 	    hyphens:auto,
-		color:#3b4343,
+		color:#2b3333,
 		text-indent:=text.indent
 	},
 	strong: {

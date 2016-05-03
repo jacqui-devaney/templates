@@ -48,7 +48,7 @@
 
     <style>{
         #headline_container:{
-            background-color: #3b4343
+            background-color: #2b3333
         },
         #election: {
             padding: [4, 4, 0, 4]
@@ -74,7 +74,7 @@
             font-name: WhitneySSm-Book,
             font-size: 16,
             line-height: 22,
-            color: #3b4343,
+            color: #2b3333,
             text-align: left
         },
         .cont_caption: {

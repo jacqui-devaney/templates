@@ -1,0 +1,69 @@
+<jpml id="OPINION-RANDO-LETTERS_module">
+	<style src="GLOBAL-stylesheet2.ejs" />
+	<style src="GRID-extras2.ejs" />
+	<style src="GLOBAL_MODULES-stylesheet2.ejs" />
+	<style src="OPINION-stylesheet2.ejs" />
+	<style src="PHONE-MODULES-stylesheet.ejs" />
+	<style>{
+		$join: [
+			{ $switch: [
+				{ if: =options.top_border, then: {
+					jpml: {
+						border-width: [1, 0, 0, 0],
+						border-color: #d8d8d8
+					}
+
+				}},
+				{ if: =options.left_border, then: {
+					jpml: {
+						border-width: [0, 0, 0, 1],
+						border-color: #d8d8d8
+					}
+
+				}},
+				{ if: =options.right_border, then: {
+					jpml: {
+						border-width: [0, 1, 0, 0],
+						border-color: #d8d8d8
+					}
+
+				}},
+				{ if: true, then: {
+					jpml: {
+						border-width: [0, 0, 0, 0]
+					}
+				}}
+			]},
+			{#rando_header: {
+				display: {if: =options.rando_header, then:inherit, else:none}
+			}}
+		]
+
+	}</style>
+	<style>{
+		if: =scale.phone, then: {
+			jpml: {
+				border-width:[ 0, 0, {if: =options.no_border, then: 0, else:1}, 0],
+				border-color:#d6d6d6,
+				padding: [6, 8, 6, 8]
+			},
+			#rando_header: {
+				display:none
+			},
+			#vertical: {
+				vertical-align:middle
+			}
+		}, else:{}
+	}</style>
+	<panel id="rando_header">
+		<p class="rando_heading small-vertical-grid-module"><mark class="rando" /></p>
+	</panel>
+	<panel id="vertical">
+		<p class="highlight_flashline hidden_tablet"><mark class="flashline-mark" /></p>
+		<p id="headline" class="opinion_headline"><mark class="m_headline" /></p>
+		<panel class="body vertical-grid-module">
+			<h2 class="opinion_dek"><mark class="subhed-mark" /></h2>
+			<p><mark class="body-first-p-mark" /><mark class="body-mark"/></p>
+		</panel>
+	</panel>
+</jpml>

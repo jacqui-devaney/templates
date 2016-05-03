@@ -12,9 +12,9 @@
 	<style>{
 		jpml: { min-height: 0 },
 		.article_body: {
-            hyphens: auto,
-            padding: [0, 16, 0, 16],
-						flow: article_body
+			hyphens: auto,
+			padding: [0, 16, 0, 16],
+			flow: article_body
 		},
 		.article_flashline: {
             font-name: WhitneySSm-Semibold,

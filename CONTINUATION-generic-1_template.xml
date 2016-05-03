@@ -20,19 +20,17 @@
 			{if: =portrait, then: {
 	            #b1 : {
 	 				height:960,
-					top:0,
-					options : { bind: {if: =articles.b1.no_binding, then: none} }
+					top:0
 				}
 	        }},
 			{if: =landscape, then: {
 	            #b1 : {
 	 				height:706,
-					top:0,
-					options : { bind: {if: =articles.b1.no_binding, then: none} }
+					top:0
 				}
 	        }}
 		]
     }</style>
     <box id="page_details" class="tablet_only" embed="pagedescription" />
-    <box id="b1" embed="article" class="column16-12 positionx1 maude unit_plain" module="CONTINUATION-dynamic_module.xml" />
+    <box id="b1" embed="article" class="landscape-columns-16 portrait-columns-12 xposition-1 maude unit_plain" module="CONTINUATION-dynamic_module.xml" />
 </jpml>

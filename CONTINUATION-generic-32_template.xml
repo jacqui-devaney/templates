@@ -50,495 +50,431 @@
 	        {if: =scale.phone, then: {
 	        	#b1 : {
 	 				height: =size.continuation_height_large,
-					options: { bind: {if: =articles.b1.no_binding, then: none}, show_body: true, small_headline: true }
+					options: { show_body: true, small_headline: true }
 				},
 				#b2 : {
 	 				height: =size.continuation_height_large,
-					options: { bind: {if: =articles.b2.no_binding, then: none}, show_body: true, small_headline: true }
+					options: { show_body: true, small_headline: true }
 				},
 				#b3 : {
 	 				height: =size.continuation_height_large,
-					options: { bind: {if: =articles.b3.no_binding, then: none}, show_body: true, small_headline: true }
+					options: { show_body: true, small_headline: true }
 				},
 				#b4 : {
 	 				height: =size.continuation_height_large,
-					options: { bind: {if: =articles.b4.no_binding, then: none}, show_body: true, small_headline: true }
+					options: { show_body: true, small_headline: true }
 				},
 				#b5 : {
 	 				height: =size.continuation_height_large,
-					options: { bind: {if: =articles.b5.no_binding, then: none}, show_body: true, small_headline: true }
+					options: { show_body: true, small_headline: true }
 				},
 				#b6 : {
 	 				height: =size.continuation_height_large,
-					options: { bind: {if: =articles.b6.no_binding, then: none}, show_body: true, small_headline: true }
+					options: { show_body: true, small_headline: true }
 				},
 				#b7 : {
 	 				height: =size.continuation_height_large,
-					options: { bind: {if: =articles.b7.no_binding, then: none}, show_body: true, small_headline: true }
+					options: { show_body: true, small_headline: true }
 				},
 				#b8 : {
 	 				height: =size.continuation_height_large,
-					options: { bind: {if: =articles.b8.no_binding, then: none}, show_body: true, small_headline: true }
+					options: { show_body: true, small_headline: true }
 				},
 				#b9 : {
 	 				height: =size.continuation_height_large,
-					options: { bind: {if: =articles.b9.no_binding, then: none}, show_body: true, small_headline: true }
+					options: { show_body: true, small_headline: true }
 				},
 				#b10 : {
 	 				height: =size.continuation_height_large,
-					options: { bind: {if: =articles.b10.no_binding, then: none}, show_body: true, small_headline: true }
+					options: { show_body: true, small_headline: true }
 				},
 				#b11 : {
 	 				height: =size.continuation_height_large,
-					options: { bind: {if: =articles.b11.no_binding, then: none}, show_body: true, small_headline: true }
+					options: { show_body: true, small_headline: true }
 				},
 				#b12 : {
 	 				height: =size.continuation_height_large,
-					options: { bind: {if: =articles.b12.no_binding, then: none}, show_body: true, small_headline: true }
+					options: { show_body: true, small_headline: true }
 				},
 				#b13 : {
 	 				height: =size.continuation_height_large,
-					options: { bind: {if: =articles.b13.no_binding, then: none}, show_body: true, small_headline: true }
+					options: { show_body: true, small_headline: true }
 				},
 				#b14 : {
 	 				height: =size.continuation_height_large,
-					options: { bind: {if: =articles.b14.no_binding, then: none}, show_body: true, small_headline: true }
+					options: { show_body: true, small_headline: true }
 				},
 				#b15 : {
 	 				height: =size.continuation_height_large,
-					options: { bind: {if: =articles.b15.no_binding, then: none}, show_body: true, small_headline: true }
+					options: { show_body: true, small_headline: true }
 				},
 				#b16 : {
 	 				height: =size.continuation_height_large,
-					options: { bind: {if: =articles.b16.no_binding, then: none}, show_body: true, small_headline: true }
+					options: { show_body: true, small_headline: true }
 				},
 
 				#b17 : {
 	 				height: =size.continuation_height_large,
-					options: { bind: {if: =articles.b17.no_binding, then: none}, show_body: true, small_headline: true }
+					options: { show_body: true, small_headline: true }
 				},
 				#b18 : {
 	 				height: =size.continuation_height_large,
-					options: { bind: {if: =articles.b18.no_binding, then: none}, show_body: true, small_headline: true }
+					options: { show_body: true, small_headline: true }
 				},
 				#b19 : {
 	 				height: =size.continuation_height_large,
-					options: { bind: {if: =articles.b19.no_binding, then: none}, show_body: true, small_headline: true }
+					options: { show_body: true, small_headline: true }
 				},
 				#b20 : {
 	 				height: =size.continuation_height_large,
-					options: { bind: {if: =articles.b20.no_binding, then: none}, show_body: true, small_headline: true }
+					options: { show_body: true, small_headline: true }
 				},
 				#b21 : {
 	 				height: =size.continuation_height_large,
-					options: { bind: {if: =articles.b21.no_binding, then: none}, show_body: true, small_headline: true }
+					options: { show_body: true, small_headline: true }
 				},
 				#b22 : {
 	 				height: =size.continuation_height_large,
-					options: { bind: {if: =articles.b22.no_binding, then: none}, show_body: true, small_headline: true }
+					options: { show_body: true, small_headline: true }
 				},
 				#b23 : {
 	 				height: =size.continuation_height_large,
-					options: { bind: {if: =articles.b23.no_binding, then: none}, show_body: true, small_headline: true }
+					options: { show_body: true, small_headline: true }
 				},
 				#b24 : {
 	 				height: =size.continuation_height_large,
-					options: { bind: {if: =articles.b24.no_binding, then: none}, show_body: true, small_headline: true }
+					options: { show_body: true, small_headline: true }
 				},
 				#b25 : {
 	 				height: =size.continuation_height_large,
-					options: { bind: {if: =articles.b25.no_binding, then: none}, show_body: true, small_headline: true }
+					options: { show_body: true, small_headline: true }
 				},
 				#b26 : {
 	 				height: =size.continuation_height_large,
-					options: { bind: {if: =articles.b26.no_binding, then: none}, show_body: true, small_headline: true }
+					options: { show_body: true, small_headline: true }
 				},
 				#b27 : {
 	 				height: =size.continuation_height_large,
-					options: { bind: {if: =articles.b27.no_binding, then: none}, show_body: true, small_headline: true }
+					options: { show_body: true, small_headline: true }
 				},
 				#b28 : {
 	 				height: =size.continuation_height_large,
-					options: { bind: {if: =articles.b28.no_binding, then: none}, show_body: true, small_headline: true }
+					options: { show_body: true, small_headline: true }
 				},
 				#b29 : {
 	 				height: =size.continuation_height_large,
-					options: { bind: {if: =articles.b29.no_binding, then: none}, show_body: true, small_headline: true }
+					options: { show_body: true, small_headline: true }
 				},
 				#b30 : {
 	 				height: =size.continuation_height_large,
-					options: { bind: {if: =articles.b30.no_binding, then: none}, show_body: true, small_headline: true }
+					options: { show_body: true, small_headline: true }
 				},
 				#b31 : {
 	 				height: =size.continuation_height_large,
-					options: { bind: {if: =articles.b31.no_binding, then: none}, show_body: true, small_headline: true }
+					options: { show_body: true, small_headline: true }
 				},
 				#b32 : {
 	 				height: =size.continuation_height_large,
-					options: { bind: {if: =articles.b32.no_binding, then: none}, show_body: true, small_headline: true }
+					options: { show_body: true, small_headline: true }
 				}
 	        }},
 	        {if: =portrait, then: {
 				#b1 : {
 	 				height:120,
-					top:0,
-					options : { bind: {if: =articles.b1.no_binding, then: none} }
+					top:0
 				},
 				#b2 : {
 	 				height:120,
-					top:0,
-					options : { bind: {if: =articles.b2.no_binding, then: none} }
+					top:0
 				},
 				#b3 : {
 	 				height:120,
-					top:0,
-					options : { bind: {if: =articles.b3.no_binding, then: none} }
+					top:0
 				},
 				#b4 : {
 	 				height:120,
-					top:0,
-					options : { bind: {if: =articles.b4.no_binding, then: none} }
+					top:0
 				},
 				#b5 : {
 	 				height:120,
-					top:120,
-					options : { bind: {if: =articles.b5.no_binding, then: none} }
+					top:120
 				},
 				#b6 : {
 	 				height:120,
-					top:120,
-					options : { bind: {if: =articles.b6.no_binding, then: none} }
+					top:120
 				},
 				#b7 : {
 	 				height:120,
-					top:120,
-					options : { bind: {if: =articles.b7.no_binding, then: none} }
+					top:120
 				},
 				#b8 : {
 	 				height:120,
-					top:120,
-					options : { bind: {if: =articles.b8.no_binding, then: none} }
+					top:120
 				},
 				#b9 : {
 	 				height:120,
-					top:240,
-					options : { bind: {if: =articles.b9.no_binding, then: none} }
+					top:240
 				},
 				#b10 : {
 	 				height:120,
-					top:240,
-					options : { bind: {if: =articles.b10.no_binding, then: none} }
+					top:240
 				},
 				#b11 : {
 	 				height:120,
-					top:240,
-					options : { bind: {if: =articles.b11.no_binding, then: none} }
+					top:240
 				},
 				#b12 : {
 	 				height:120,
-					top:240,
-					options : { bind: {if: =articles.b12.no_binding, then: none} }
+					top:240
 				},
 				#b13 : {
 	 				height:120,
-					top:360,
-					options : { bind: {if: =articles.b13.no_binding, then: none} }
+					top:360
 				},
 				#b14 : {
 	 				height:120,
-					top:360,
-					options : { bind: {if: =articles.b14.no_binding, then: none} }
+					top:360
 				},
 				#b15 : {
 	 				height:120,
-					top:360,
-					options : { bind: {if: =articles.b15.no_binding, then: none} }
+					top:360
 				},
 				#b16 : {
 	 				height:120,
-					top:360,
-					options : { bind: {if: =articles.b16.no_binding, then: none} }
+					top:360
 				},
 
 				#b17 : {
 	 				height:120,
-					top:480,
-					options : { bind: {if: =articles.b17.no_binding, then: none} }
+					top:480
 				},
 				#b18 : {
 	 				height:120,
-					top:480,
-					options : { bind: {if: =articles.b18.no_binding, then: none} }
+					top:480
 				},
 				#b19 : {
 	 				height:120,
-					top:480,
-					options : { bind: {if: =articles.b19.no_binding, then: none} }
+					top:480
 				},
 				#b20 : {
 	 				height:120,
-					top:480,
-					options : { bind: {if: =articles.b20.no_binding, then: none} }
+					top:480
 				},
 				#b21 : {
 	 				height:120,
-					top:600,
-					options : { bind: {if: =articles.b21.no_binding, then: none} }
+					top:600
 				},
 				#b22 : {
 	 				height:120,
-					top:600,
-					options : { bind: {if: =articles.b22.no_binding, then: none} }
+					top:600
 				},
 				#b23 : {
 	 				height:120,
-					top:600,
-					options : { bind: {if: =articles.b23.no_binding, then: none} }
+					top:600
 				},
 				#b24 : {
 	 				height:120,
-					top:600,
-					options : { bind: {if: =articles.b24.no_binding, then: none} }
+					top:600
 				},
 				#b25 : {
 	 				height:120,
-					top:720,
-					options : { bind: {if: =articles.b25.no_binding, then: none} }
+					top:720
 				},
 				#b26 : {
 	 				height:120,
-					top:720,
-					options : { bind: {if: =articles.b26.no_binding, then: none} }
+					top:720
 				},
 				#b27 : {
 	 				height:120,
-					top:720,
-					options : { bind: {if: =articles.b27.no_binding, then: none} }
+					top:720
 				},
 				#b28 : {
 	 				height:120,
-					top:720,
-					options : { bind: {if: =articles.b28.no_binding, then: none} }
+					top:720
 				},
 				#b29 : {
 	 				height:120,
-					top:840,
-					options : { bind: {if: =articles.b29.no_binding, then: none} }
+					top:840
 				},
 				#b30 : {
 	 				height:120,
-					top:840,
-					options : { bind: {if: =articles.b30.no_binding, then: none} }
+					top:840
 				},
 				#b31 : {
 	 				height:120,
-					top:840,
-					options : { bind: {if: =articles.b31.no_binding, then: none} }
+					top:840
 				},
 				#b32 : {
 	 				height:120,
-					top:840,
-					options : { bind: {if: =articles.b32.no_binding, then: none} }
+					top:840
 				}
 
         	}},
 			{if: =landscape, then: {
 				#b1 : {
 	 				height:60,
-					top:0,
-					options : { bind: {if: =articles.b1.no_binding, then: none} }
+					top:0
 				},
 				#b2 : {
 	 				height:60,
-					top:0,
-					options : { bind: {if: =articles.b2.no_binding, then: none} }
+					top:0
 				},
 				#b3 : {
 	 				height:60,
-					top:0,
-					options : { bind: {if: =articles.b3.no_binding, then: none} }
+					top:0
 				},
 				#b4 : {
 	 				height:60,
-					top:0,
-					options : { bind: {if: =articles.b4.no_binding, then: none} }
+					top:0
 				},
 				#b5 : {
 	 				height:60,
-					top:0,
-					options : { bind: {if: =articles.b5.no_binding, then: none} }
+					top:0
 				},
 				#b6 : {
 	 				height:60,
-					top:0,
-					options : { bind: {if: =articles.b6.no_binding, then: none} }
+					top:0
 				},
 				#b7 : {
 	 				height:60,
-					top:0,
-					options : { bind: {if: =articles.b7.no_binding, then: none} }
+					top:0
 				},
 				#b8 : {
 	 				height:60,
-					top:0,
-					options : { bind: {if: =articles.b8.no_binding, then: none} }
+					top:0
 				},
 				#b9 : {
 	 				height:60,
-					top:60,
-					options : { bind: {if: =articles.b9.no_binding, then: none} }
+					top:60
 				},
 				#b10 : {
 	 				height:60,
-					top:60,
-					options : { bind: {if: =articles.b10.no_binding, then: none} }
+					top:60
 				},
 				#b11 : {
 	 				height:60,
-					top:60,
-					options : { bind: {if: =articles.b11.no_binding, then: none} }
+					top:60
 				},
 				#b12 : {
 	 				height:60,
-					top:60,
-					options : { bind: {if: =articles.b12.no_binding, then: none} }
+					top:60
 				},
 				#b13 : {
 	 				height:60,
-					top:60,
-					options : { bind: {if: =articles.b13.no_binding, then: none} }
+					top:60
 				},
 				#b14 : {
 	 				height:60,
-					top:60,
-					options : { bind: {if: =articles.b14.no_binding, then: none} }
+					top:60
 				},
 				#b15 : {
 	 				height:60,
-					top:60,
-					options : { bind: {if: =articles.b15.no_binding, then: none} }
+					top:60
 				},
 				#b16 : {
 	 				height:60,
-					top:60,
-					options : { bind: {if: =articles.b16.no_binding, then: none} }
+					top:60
 				},
 
 				#b17 : {
 	 				height:60,
-					top:120,
-					options : { bind: {if: =articles.b17.no_binding, then: none} }
+					top:120
 				},
 				#b18 : {
 	 				height:60,
-					top:120,
-					options : { bind: {if: =articles.b18.no_binding, then: none} }
+					top:120
 				},
 				#b19 : {
 	 				height:60,
-					top:120,
-					options : { bind: {if: =articles.b19.no_binding, then: none} }
+					top:120
 				},
 				#b20 : {
 	 				height:60,
-					top:120,
-					options : { bind: {if: =articles.b20.no_binding, then: none} }
+					top:120
 				},
 				#b21 : {
 	 				height:60,
-					top:120,
-					options : { bind: {if: =articles.b21.no_binding, then: none} }
+					top:120
 				},
 				#b22 : {
 	 				height:60,
-					top:120,
-					options : { bind: {if: =articles.b22.no_binding, then: none} }
+					top:120
 				},
 				#b23 : {
 	 				height:60,
-					top:120,
-					options : { bind: {if: =articles.b23.no_binding, then: none} }
+					top:120
 				},
 				#b24 : {
 	 				height:60,
-					top:120,
-					options : { bind: {if: =articles.b24.no_binding, then: none} }
+					top:120
 				},
 				#b25 : {
 	 				height:60,
-					top:180,
-					options : { bind: {if: =articles.b25.no_binding, then: none} }
+					top:180
 				},
 				#b26 : {
 	 				height:60,
-					top:180,
-					options : { bind: {if: =articles.b26.no_binding, then: none} }
+					top:180
 				},
 				#b27 : {
 	 				height:60,
-					top:180,
-					options : { bind: {if: =articles.b27.no_binding, then: none} }
+					top:180
 				},
 				#b28 : {
 	 				height:60,
-					top:180,
-					options : { bind: {if: =articles.b28.no_binding, then: none} }
+					top:180
 				},
 				#b29 : {
 	 				height:60,
-					top:180,
-					options : { bind: {if: =articles.b29.no_binding, then: none} }
+					top:180
 				},
 				#b30 : {
 	 				height:60,
-					top:180,
-					options : { bind: {if: =articles.b30.no_binding, then: none} }
+					top:180
 				},
 				#b31 : {
 	 				height:60,
-					top:180,
-					options : { bind: {if: =articles.b31.no_binding, then: none} }
+					top:180
 				},
 				#b32 : {
 	 				height:60,
-					top:180,
-					options : { bind: {if: =articles.b32.no_binding, then: none} }
+					top:180
 				}
 	        }}
 		]
     }</style>
 	<box id="page_details" class="tablet_only" embed="pagedescription" />
-    <box id="b1" embed="article" class="column2-3 positionx1 maude unit_plain" module="CONTINUATION-dynamic_module.xml" />
-    <box id="b2" embed="article" class="column2-3 positionx3-4 maude unit_plain" module="CONTINUATION-dynamic_module.xml" />
-    <box id="b3" embed="article" class="column2-3 positionx5-7 maude unit_plain" module="CONTINUATION-dynamic_module.xml" />
-    <box id="b4" embed="article" class="column2-3 positionx7-10 maude unit_plain" module="CONTINUATION-dynamic_module.xml" />
-    <box id="b5" embed="article" class="column2-3 positionx9-1 maude unit_plain" module="CONTINUATION-dynamic_module.xml" />
-    <box id="b6" embed="article" class="column2-3 positionx11-4 maude unit_plain" module="CONTINUATION-dynamic_module.xml" />
-    <box id="b7" embed="article" class="column2-3 positionx13-7 maude unit_plain" module="CONTINUATION-dynamic_module.xml" />
-    <box id="b8" embed="article" class="column2-3 positionx15-10 maude unit_plain" module="CONTINUATION-dynamic_module.xml" />
-    <box id="b9" embed="article" class="column2-3 positionx1 maude unit_plain" module="CONTINUATION-dynamic_module.xml" />
-    <box id="b10" embed="article" class="column2-3 positionx3-4 maude unit_plain" module="CONTINUATION-dynamic_module.xml" />
-    <box id="b11" embed="article" class="column2-3 positionx5-7 maude unit_plain" module="CONTINUATION-dynamic_module.xml" />
-    <box id="b12" embed="article" class="column2-3 positionx7-10 maude unit_plain" module="CONTINUATION-dynamic_module.xml" />
-    <box id="b13" embed="article" class="column2-3 positionx9-1 maude unit_plain" module="CONTINUATION-dynamic_module.xml" />
-    <box id="b14" embed="article" class="column2-3 positionx11-4 maude unit_plain" module="CONTINUATION-dynamic_module.xml" />
-    <box id="b15" embed="article" class="column2-3 positionx13-7 maude unit_plain" module="CONTINUATION-dynamic_module.xml" />
-    <box id="b16" embed="article" class="column2-3 positionx15-10 maude unit_plain" module="CONTINUATION-dynamic_module.xml" />
+    <box id="b1" embed="article" class="landscape-columns-2 portrait-columns-3 xposition-1 maude unit_plain" module="CONTINUATION-dynamic_module.xml" />
+    <box id="b2" embed="article" class="landscape-columns-2 portrait-columns-3 landscape-xposition-3 portrait-xposition-4 maude unit_plain" module="CONTINUATION-dynamic_module.xml" />
+    <box id="b3" embed="article" class="landscape-columns-2 portrait-columns-3 landscape-xposition-5 portrait-xposition-7 maude unit_plain" module="CONTINUATION-dynamic_module.xml" />
+    <box id="b4" embed="article" class="landscape-columns-2 portrait-columns-3 landscape-xposition-7 portrait-xposition-10 maude unit_plain" module="CONTINUATION-dynamic_module.xml" />
+    <box id="b5" embed="article" class="landscape-columns-2 portrait-columns-3 landscape-xposition-9 portrait-xposition-1 maude unit_plain" module="CONTINUATION-dynamic_module.xml" />
+    <box id="b6" embed="article" class="landscape-columns-2 portrait-columns-3 landscape-xposition-11 portrait-xposition-4 maude unit_plain" module="CONTINUATION-dynamic_module.xml" />
+    <box id="b7" embed="article" class="landscape-columns-2 portrait-columns-3 landscape-xposition-13 portrait-xposition-7 maude unit_plain" module="CONTINUATION-dynamic_module.xml" />
+    <box id="b8" embed="article" class="landscape-columns-2 portrait-columns-3 landscape-xposition-15 portrait-xposition-10 maude unit_plain" module="CONTINUATION-dynamic_module.xml" />
+    <box id="b9" embed="article" class="landscape-columns-2 portrait-columns-3 xposition-1 maude unit_plain" module="CONTINUATION-dynamic_module.xml" />
+    <box id="b10" embed="article" class="landscape-columns-2 portrait-columns-3 landscape-xposition-3 portrait-xposition-4 maude unit_plain" module="CONTINUATION-dynamic_module.xml" />
+    <box id="b11" embed="article" class="landscape-columns-2 portrait-columns-3 landscape-xposition-5 portrait-xposition-7 maude unit_plain" module="CONTINUATION-dynamic_module.xml" />
+    <box id="b12" embed="article" class="landscape-columns-2 portrait-columns-3 landscape-xposition-7 portrait-xposition-10 maude unit_plain" module="CONTINUATION-dynamic_module.xml" />
+    <box id="b13" embed="article" class="landscape-columns-2 portrait-columns-3 landscape-xposition-9 portrait-xposition-1 maude unit_plain" module="CONTINUATION-dynamic_module.xml" />
+    <box id="b14" embed="article" class="landscape-columns-2 portrait-columns-3 landscape-xposition-11 portrait-xposition-4 maude unit_plain" module="CONTINUATION-dynamic_module.xml" />
+    <box id="b15" embed="article" class="landscape-columns-2 portrait-columns-3 landscape-xposition-13 portrait-xposition-7 maude unit_plain" module="CONTINUATION-dynamic_module.xml" />
+    <box id="b16" embed="article" class="landscape-columns-2 portrait-columns-3 landscape-xposition-15 portrait-xposition-10 maude unit_plain" module="CONTINUATION-dynamic_module.xml" />
 
-    <box id="b17" embed="article" class="column2-3 positionx1 maude unit_plain" module="CONTINUATION-dynamic_module.xml" />
-    <box id="b18" embed="article" class="column2-3 positionx3-4 maude unit_plain" module="CONTINUATION-dynamic_module.xml" />
-    <box id="b19" embed="article" class="column2-3 positionx5-7 maude unit_plain" module="CONTINUATION-dynamic_module.xml" />
-    <box id="b20" embed="article" class="column2-3 positionx7-10 maude unit_plain" module="CONTINUATION-dynamic_module.xml" />
-    <box id="b21" embed="article" class="column2-3 positionx9-1 maude unit_plain" module="CONTINUATION-dynamic_module.xml" />
-    <box id="b22" embed="article" class="column2-3 positionx11-4 maude unit_plain" module="CONTINUATION-dynamic_module.xml" />
-    <box id="b23" embed="article" class="column2-3 positionx13-7 maude unit_plain" module="CONTINUATION-dynamic_module.xml" />
-    <box id="b24" embed="article" class="column2-3 positionx15-10 maude unit_plain" module="CONTINUATION-dynamic_module.xml" />
-    <box id="b25" embed="article" class="column2-3 positionx1 maude unit_plain" module="CONTINUATION-dynamic_module.xml" />
-    <box id="b26" embed="article" class="column2-3 positionx3-4 maude unit_plain" module="CONTINUATION-dynamic_module.xml" />
-    <box id="b27" embed="article" class="column2-3 positionx5-7 maude unit_plain" module="CONTINUATION-dynamic_module.xml" />
-    <box id="b28" embed="article" class="column2-3 positionx7-10 maude unit_plain" module="CONTINUATION-dynamic_module.xml" />
-    <box id="b29" embed="article" class="column2-3 positionx9-1 maude unit_plain" module="CONTINUATION-dynamic_module.xml" />
-    <box id="b30" embed="article" class="column2-3 positionx11-4 maude unit_plain" module="CONTINUATION-dynamic_module.xml" />
-    <box id="b31" embed="article" class="column2-3 positionx13-7 maude unit_plain" module="CONTINUATION-dynamic_module.xml" />
-    <box id="b32" embed="article" class="column2-3 positionx15-10 maude unit_plain" module="CONTINUATION-dynamic_module.xml" />
+    <box id="b17" embed="article" class="landscape-columns-2 portrait-columns-3 xposition-1 maude unit_plain" module="CONTINUATION-dynamic_module.xml" />
+    <box id="b18" embed="article" class="landscape-columns-2 portrait-columns-3 landscape-xposition-3 portrait-xposition-4 maude unit_plain" module="CONTINUATION-dynamic_module.xml" />
+    <box id="b19" embed="article" class="landscape-columns-2 portrait-columns-3 landscape-xposition-5 portrait-xposition-7 maude unit_plain" module="CONTINUATION-dynamic_module.xml" />
+    <box id="b20" embed="article" class="landscape-columns-2 portrait-columns-3 landscape-xposition-7 portrait-xposition-10 maude unit_plain" module="CONTINUATION-dynamic_module.xml" />
+    <box id="b21" embed="article" class="landscape-columns-2 portrait-columns-3 landscape-xposition-9 portrait-xposition-1 maude unit_plain" module="CONTINUATION-dynamic_module.xml" />
+    <box id="b22" embed="article" class="landscape-columns-2 portrait-columns-3 landscape-xposition-11 portrait-xposition-4 maude unit_plain" module="CONTINUATION-dynamic_module.xml" />
+    <box id="b23" embed="article" class="landscape-columns-2 portrait-columns-3 landscape-xposition-13 portrait-xposition-7 maude unit_plain" module="CONTINUATION-dynamic_module.xml" />
+    <box id="b24" embed="article" class="landscape-columns-2 portrait-columns-3 landscape-xposition-15 portrait-xposition-10 maude unit_plain" module="CONTINUATION-dynamic_module.xml" />
+    <box id="b25" embed="article" class="landscape-columns-2 portrait-columns-3 xposition-1 maude unit_plain" module="CONTINUATION-dynamic_module.xml" />
+    <box id="b26" embed="article" class="landscape-columns-2 portrait-columns-3 landscape-xposition-3 portrait-xposition-4 maude unit_plain" module="CONTINUATION-dynamic_module.xml" />
+    <box id="b27" embed="article" class="landscape-columns-2 portrait-columns-3 landscape-xposition-5 portrait-xposition-7 maude unit_plain" module="CONTINUATION-dynamic_module.xml" />
+    <box id="b28" embed="article" class="landscape-columns-2 portrait-columns-3 landscape-xposition-7 portrait-xposition-10 maude unit_plain" module="CONTINUATION-dynamic_module.xml" />
+    <box id="b29" embed="article" class="landscape-columns-2 portrait-columns-3 landscape-xposition-9 portrait-xposition-1 maude unit_plain" module="CONTINUATION-dynamic_module.xml" />
+    <box id="b30" embed="article" class="landscape-columns-2 portrait-columns-3 landscape-xposition-11 portrait-xposition-4 maude unit_plain" module="CONTINUATION-dynamic_module.xml" />
+    <box id="b31" embed="article" class="landscape-columns-2 portrait-columns-3 landscape-xposition-13 portrait-xposition-7 maude unit_plain" module="CONTINUATION-dynamic_module.xml" />
+    <box id="b32" embed="article" class="landscape-columns-2 portrait-columns-3 landscape-xposition-15 portrait-xposition-10 maude unit_plain" module="CONTINUATION-dynamic_module.xml" />
 </jpml>

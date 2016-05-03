@@ -14,24 +14,24 @@
 		#b1: {
 			options:{$switch:[
 				{if: =scale.rail, then: { }},
-				{if: =scale.phone, then: { bind: {if: =articles.b1.no_binding, then: none},large_headline:true, show_image:true}},
-				{if: =portrait, then: { bind: {if: =articles.b1.no_binding, then: none}, medium_headline:true, show_body:true, tall_image:true}},
-				{if: =landscape, then: { bind: {if: =articles.b1.no_binding, then: none}, medium_headline:true, show_body:true, large_image:true}}
+				{if: =scale.phone, then: { large_headline:true, show_image:true}},
+				{if: =portrait, then: { medium_headline:true, show_body:true, tall_image:true}},
+				{if: =landscape, then: { medium_headline:true, show_body:true, large_image:true}}
 			]
 		}},
 		#b2: {
 			options:{$switch:[
 				{if: =scale.rail, then: { }},
-				{if: =portrait, then: { bind: {if: =articles.b2.no_binding, then: none}, medium_headline:true, top_border:true, show_body:true}},
-				{if: =landscape, then: { bind: {if: =articles.b2.no_binding, then: none}, medium_headline:true, top_border:true, show_body:true, square_image:true}}
+				{if: =portrait, then: { medium_headline:true, top_border:true, show_body:true}},
+				{if: =landscape, then: { medium_headline:true, top_border:true, show_body:true, square_image:true}}
 			]
 		}},
 		#b3: {
 			options:{$switch:[
 				{if: =scale.rail, then: { }},
-				{if: =scale.phone, then: { bind: {if: =articles.b3.no_binding, then: none}, small_headline:true}},
-				{if: =portrait, then: { bind: {if: =articles.b3.no_binding, then: none}, medium_headline:true, top_border:true, show_body:true}},
-				{if: =landscape, then: { bind: {if: =articles.b3.no_binding, then: none}, medium_headline:true, top_border:true, square_image:true, show_body:true}}
+				{if: =scale.phone, then: { small_headline:true}},
+				{if: =portrait, then: { medium_headline:true, top_border:true, show_body:true}},
+				{if: =landscape, then: { medium_headline:true, top_border:true, square_image:true, show_body:true}}
 			]
 		}},
 		#rail_content: {
@@ -84,10 +84,10 @@
 		]
 	} </style>
 	<box id="page_details" embed="pagedescription" />
-	<box id="b1" embed="article" class="column12-8 positionx1 maude unit_plain" module="LEFT-IMAGE_module.xml" />
-	<box id="b2" embed="article" class="column6-8 positionx1 maude unit_plain" module="RIGHT-IMAGE_module.xml" />
-	<box id="b3" embed="article" class="column6-8 positionx7-1 maude unit_plain" module="RIGHT-IMAGE_module.xml" />
-	<box id="rail_content" class="column4 positionx13-9" embed="list" />
+	<box id="b1" embed="article" class="landscape-columns-12 portrait-columns-8 xposition-1 maude unit_plain" module="LEFT-IMAGE_module.xml" />
+	<box id="b2" embed="article" class="landscape-columns-6 portrait-columns-8 xposition-1 maude unit_plain" module="RIGHT-IMAGE_module.xml" />
+	<box id="b3" embed="article" class="landscape-columns-6 portrait-columns-8 landscape-xposition-7 portrait-xposition-1 maude unit_plain" module="RIGHT-IMAGE_module.xml" />
+	<box id="rail_content" class="columns-4 landscape-xposition-13 portrait-xposition-9" embed="list" />
 	<box id="front_page" class="positionx_full column_full maude unit_ad">
 		<box id="banner_ad" class="ad-banner front_ad" embed="advertisement" />
 	</box>

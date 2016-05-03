@@ -13,51 +13,43 @@
 	        {if: =portrait, then: {
 		        #b1 : {
 	 				height:480,
-					top:0,
-					options: { bind: {if: =articles.b1.no_binding, then: none} }
+					top:0
 				},
 				#b2 : {
 	 				height:480,
-					top:0,
-					options: { bind: {if: =articles.b2.no_binding, then: none} }
+					top:0
 				},
 				#b3 : {
 	 				height:480,
-					top:480,
-					options: { bind: {if: =articles.b3.no_binding, then: none} }
+					top:480
 				},
 				#b4 : {
 	 				height:480,
-					top:480,
-					options: { bind: {if: =articles.b4.no_binding, then: none} }
+					top:480
 				}
 			}},
 			{if: =landscape, then: {
 	        	#b1 : {
 	 				height:353,
-					top:0,
-					options: { bind: {if: =articles.b1.no_binding, then: none} }
+					top:0
 				},
 				#b2 : {
 	 				height:353,
-					top:0,
-					options: { bind: {if: =articles.b2.no_binding, then: none} }
+					top:0
 				},
 				#b3 : {
 	 				height:353,
-					top:353,
-					options: { bind: {if: =articles.b3.no_binding, then: none} }
+					top:353
 				},
 				#b4 : {
 	 				height:353,
-					top:353,
-					options: { bind: {if: =articles.b4.no_binding, then: none} }
+					top:353
 				}
 			}}
 		]
     }</style>
-    <box id="b1" embed="article" class="column8-6 positionx1 maude unit_plain" module="CONTINUATION-dynamic_module.xml" />
-    <box id="b2" embed="article" class="column8-6 positionx9-7 maude unit_plain" module="CONTINUATION-dynamic_module.xml" />
-    <box id="b3" embed="article" class="column8-6 positionx1 maude unit_plain" module="CONTINUATION-dynamic_module.xml" />
-    <box id="b4" embed="article" class="column8-6 positionx9-7 maude unit_plain" module="CONTINUATION-dynamic_module.xml" />
+    <box id="b1" embed="article" class="landscape-columns-8 portrait-columns-6 xposition-1 maude unit_plain" module="CONTINUATION-dynamic_module.xml" />
+    <box id="b2" embed="article" class="landscape-columns-8 portrait-columns-6 landscape-xposition-9 portrait-xposition-7 maude unit_plain" module="CONTINUATION-dynamic_module.xml" />
+    <box id="b3" embed="article" class="landscape-columns-8 portrait-columns-6 xposition-1 maude unit_plain" module="CONTINUATION-dynamic_module.xml" />
+    <box id="b4" embed="article" class="landscape-columns-8 portrait-columns-6 landscape-xposition-9 portrait-xposition-7 maude unit_plain" module="CONTINUATION-dynamic_module.xml" />
 </jpml>

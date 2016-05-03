@@ -39,7 +39,6 @@
                         },
                     padding: [{if: {$count:[=articles.b1.images.phone]}, more-than: 0, then: 0, else: 22}, 0, 0, 0],
                     options: {
-						bind: {if: =articles.b1.no_binding, then: none},
 						module: url(TOP-IMAGE_module.xml),
 						show_body: true,
 						medium_headline: true
@@ -49,7 +48,6 @@
 				#b2: {
 					height: =size.continuation_height_large,
 					options: {
-						bind: {if: =articles.b2.no_binding, then: none},
 						module: url(CONTINUATION-dynamic_module.xml),
 						top_border: true,
 						show_body: true,
@@ -63,7 +61,6 @@
 					height: =size.continuation_height_large,
 					padding: [22,0,0,0],
 					options: {
-						bind: {if: =articles.b3.no_binding, then: none},
 						module: url(CONTINUATION-dynamic_module.xml),
 						show_body: true,
 						show_image: true,
@@ -75,7 +72,6 @@
 				#b4: {
 					height: =size.continuation_height_normal,
 					options: {
-						bind: {if: =articles.b4.no_binding, then: none},
 						module: url(CONTINUATION-dynamic_module.xml),
 						show_body: false,
 						small_headline: true
@@ -85,7 +81,6 @@
 				#b5: {
 					height: =size.continuation_height_normal,
 					options: {
-						bind: {if: =articles.b5.no_binding, then: none},
 						module: url(CONTINUATION-dynamic_module.xml),
 						show_body: false,
 						small_headline: true
@@ -95,7 +90,6 @@
 				#b6: {
 					height: =size.continuation_height_normal,
 					options: {
-						bind: {if: =articles.b6.no_binding, then: none},
 						module: url(CONTINUATION-dynamic_module.xml),
 						show_body: false,
 						small_headline: true
@@ -105,7 +99,6 @@
 				#b11: {
 					height: =size.continuation_height_normal,
 					options: {
-						bind: {if: =articles.b11.no_binding, then: none},
 						module: url(CONTINUATION-dynamic_module.xml),
 						show_body: false,
 						small_headline: true,
@@ -116,7 +109,6 @@
 				#b12: {
 					height: =size.continuation_height_normal,
 					options: {
-						bind: {if: =articles.b12.no_binding, then: none},
 						module: url(CONTINUATION-dynamic_module.xml),
 						show_body: false,
 						small_headline: true
@@ -284,13 +276,11 @@
 			#b1: {
 				options: {
 					if:=portrait, then: {
-						bind: {if: =articles.b1.no_binding, then: none},
 						smedium_headline:true,
 						show_body: true,
 						background_color: =color.background,
 						wide_image: true
 					}, else: {
-						bind: {if: =articles.b1.no_binding, then: none},
 						smedium_headline:true,
 						show_image: true,
 						background_color: =color.background,
@@ -300,7 +290,6 @@
 			},
 			#b2: {
 				options: {
-					bind: {if: =articles.b2.no_binding, then: none},
 					show_body: true,
 					small_headline: true,
 					background_color: =color.background,
@@ -310,7 +299,6 @@
 			},
 			#b3: {
 				options: {
-					bind: {if: =articles.b3.no_binding, then: none},
 					show_body: true,
 					small_headline: true,
 					background_color: blue,
@@ -320,7 +308,6 @@
 			},
 			#b4: {
 				options: {
-					bind: {if: =articles.b4.no_binding, then: none},
 					show_body: true,
 					small_headline: true,
 					background_color: =color.background,
@@ -330,7 +317,6 @@
 			},
 			#b5: {
 				options: {
-					bind: {if: =articles.b5.no_binding, then: none},
 					show_body: true,
 					small_headline: true,
 					background_color: =color.background,
@@ -340,7 +326,6 @@
 			},
 			#b6: {
 				options: {
-					bind: {if: =articles.b6.no_binding, then: none},
 					show_body: true,
 					small_headline: true,
 					background_color: =color.background,
@@ -350,7 +335,6 @@
 			},
 			#b11: {
 				options: {
-					bind: {if: =articles.b11.no_binding, then: none},
 					show_body: true,
 					small_headline: true,
 					background_color: =color.background,
@@ -360,7 +344,6 @@
 			},
 			#b12: {
 				options: {
-					bind: {if: =articles.b12.no_binding, then: none},
 					show_body: true,
 					small_headline: true,
 					background_color: =color.background,
@@ -429,14 +412,14 @@
 	}</style>
 	<box id="page_details" embed="pagedescription" />
 
-	<box id="b1" embed="article" class="column6-8 positionx1 maude unit_plain unit_418" module="RIGHT-IMAGE_module.xml" />
-	<box id="b2" embed="article" class="column6-8 positionx1 maude unit_plain unit_166" module="RIGHT-IMAGE_module.xml" />
+	<box id="b1" embed="article" class="landscape-columns-6 portrait-columns-8 xposition-1 maude unit_plain unit_418" module="RIGHT-IMAGE_module.xml" />
+	<box id="b2" embed="article" class="landscape-columns-6 portrait-columns-8 xposition-1 maude unit_plain unit_166" module="RIGHT-IMAGE_module.xml" />
 
-	<box id="sponsoredheader" class="column4 positionx13-9 maude unit_plain">
+	<box id="sponsoredheader" class="columns-4 landscape-xposition-13 portrait-xposition-9 maude unit_plain">
 		<panel id="sponsoredimage-panel"><box id="sponsoredimage" /></panel>
 		<p id="sponsored_subhed"><mark id="sponsored_subhed_mark" /></p>
 	</box>
-	<box id="sponsored_list" class="tablet_only column4 positionx13-9" embed="list">
+	<box id="sponsored_list" class="tablet_only columns-4 landscape-xposition-13 portrait-xposition-9" embed="list">
 		<style src="ADOBE-stylesheet.ejs"/>
 		<panel id="sponsored_inner">
 			<panel id="sponsored_item_1" class="sponsored_item sponsored_item_first">
@@ -485,10 +468,10 @@
 	<box id="d2" embed="article" class="rail_only maude unit_adobe" module="CONTINUATION-dynamic_module.xml" />
 	<box id="d3" embed="article" class="rail_only maude unit_adobe" module="CONTINUATION-dynamic_module.xml" />
 
-	<box id="b3" embed="article" class="column6-8 positionx1 maude unit_plain unit_166" module="RIGHT-IMAGE_module.xml" />
-	<box id="b4" embed="article" class="column6-8 positionx7-1 maude unit_plain unit_50" module="RIGHT-IMAGE_module.xml" />
-	<box id="b5" embed="article" class="column6-8 positionx7-1 maude unit_plain unit_50" module="RIGHT-IMAGE_module.xml" />
-	<box id="b6" embed="article" class="column6-8 positionx7-1 maude unit_plain unit_50" module="RIGHT-IMAGE_module.xml" />
+	<box id="b3" embed="article" class="landscape-columns-6 portrait-columns-8 xposition-1 maude unit_plain unit_166" module="RIGHT-IMAGE_module.xml" />
+	<box id="b4" embed="article" class="landscape-columns-6 portrait-columns-8 landscape-xposition-7 portrait-xposition-1 maude unit_plain unit_50" module="RIGHT-IMAGE_module.xml" />
+	<box id="b5" embed="article" class="landscape-columns-6 portrait-columns-8 landscape-xposition-7 portrait-xposition-1 maude unit_plain unit_50" module="RIGHT-IMAGE_module.xml" />
+	<box id="b6" embed="article" class="landscape-columns-6 portrait-columns-8 landscape-xposition-7 portrait-xposition-1 maude unit_plain unit_50" module="RIGHT-IMAGE_module.xml" />
 
 	<box id="b7" embed="article"  class="phone_only rail_only maude unit_plain unit_50" module="RIGHT-IMAGE_module.xml" />
 	<box id="b8" embed="article"  class="phone_only rail_only maude unit_plain unit_50" module="RIGHT-IMAGE_module.xml" />
@@ -497,11 +480,11 @@
 
 
 	<box id="latest_news_header_wrapper" class="maude unit_plain">
-		<box id="latest_news_header" class="column6-8 positionx7-1 maude unit_plain">
+		<box id="latest_news_header" class="landscape-columns-6 portrait-columns-8 landscape-xposition-7 portrait-xposition-1 maude unit_plain">
 			<p><mark id="latest_news_mark" /></p>
 		</box>
 	</box>
 
-	<box id="b11" embed="article" class="column6-8 positionx7-1 maude unit_plain unit_50" module="RIGHT-IMAGE_module.xml" />
-	<box id="b12" embed="article" class="column6-8 positionx7-1 maude unit_plain unit_50" module="RIGHT-IMAGE_module.xml" />
+	<box id="b11" embed="article" class="landscape-columns-6 portrait-columns-8 landscape-xposition-7 portrait-xposition-1 maude unit_plain unit_50" module="RIGHT-IMAGE_module.xml" />
+	<box id="b12" embed="article" class="landscape-columns-6 portrait-columns-8 landscape-xposition-7 portrait-xposition-1 maude unit_plain unit_50" module="RIGHT-IMAGE_module.xml" />
 </jpml>

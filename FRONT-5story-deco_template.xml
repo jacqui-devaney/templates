@@ -1,8 +1,9 @@
 <jpml id="FRONT-5story-deco_template">
-	<style src="GLOBAL-stylesheet.ejs" />
-	<style src="GRID-stylesheet.ejs"/>
-	<style src="ADVERTISING-stylesheet.ejs"/>
-	<style src="FRONT-stylesheet.ejs"/>
+	<style src="GLOBAL-stylesheet2.ejs" />
+	<style src="GRID-stylesheet2.ejs"/>
+	<style src="GRID-extras2.ejs"/>
+	<style src="ADVERTISING-stylesheet2.ejs"/>
+	<style src="FRONT-stylesheet2.ejs"/>
 	<style src="PHONE-stylesheet.ejs"/>
 	<style src="RAIL-stylesheet.ejs" />
 	<style>{
@@ -14,138 +15,107 @@
 	}</style>
 	<style> {
 		$switch: [
-			{if: =scale.rail, then: {
-			}},
-			{if: =scale.phone, then: {
-				#b1:	{
-					options:{ bind: {if: =articles.b1.no_binding, then: none}}
+			{if: =portrait, then: {
+				#b1: {
+					options:{ large_headline:true}
 				},
 				#deco: {
-					options: {bind: {if: =articles.deco.no_binding, then: none}}
+					options:{ medium_headline:true}
 				},
-				#b2:	{
-					options:{ bind: {if: =articles.b2.no_binding, then: none}}
+				#b2: {
+					options:{ medium_headline:true, top_border:true}
 				},
-				#b3:	{
-					options:{ bind: {if: =articles.b3.no_binding, then: none}}
+				#b3: {
+					options:{ medium_headline:true, top_border:true}
 				},
 				#b4: {
-					options:{ bind: {if: =articles.b4.no_binding, then: none}}
+					options:{ medium_headline:true, top_border:true}
 				},
 				#b5: {
-					options:{ bind: {if: =articles.b5.no_binding, then: none}}
+					options:{ medium_headline:true, bottom_align:true, show_byline:false, top_border:true}
+				},
+				#footer: {
+					top: 930,
+					height: 100,
+					text-align: center,
+					options:{top_border: true}
 				}
-			}},
-			{if: =portrait, then: {
-				#b1:	{
-					top:377,
-					height:125,
-					options:{ bind: {if: =articles.b1.no_binding, then: none}, large_headline:true}
-				},
-				#deco:	{
-					top:20,
-					height:340,
-					options:{ bind: {if: =articles.deco.no_binding, then: none}, medium_headline:true}
-				},
-				#b2:	{
-					top:509,
-					height:175,
-					options:{ bind: {if: =articles.b2.no_binding, then: none}, medium_headline:true, top_border:true}
-				},
-				#b3:	{
-					top:509,
-					height:175,
-					options:{ bind: {if: =articles.b3.no_binding, then: none}, medium_headline:true, top_border:true}
-
-				},
-				#b4: {
-					top:509,
-					height:175,
-					options:{ bind: {if: =articles.b4.no_binding, then: none}, medium_headline:true, top_border:true}
-				},
-				#b5: {
-					top:691,
-					height:122,
-					options:{ bind: {if: =articles.b5.no_binding, then: none}, medium_headline:true, bottom_align:true, show_byline:false, top_border:true}
-				},
-                #footer: {
-                    top: 820,
-                    height: 100,
-                    text-align: center,
-                    options:{bind: none, top_border: true}
-                }
 			}},
 			{if: =landscape, then: {
 				#b1:	{
-					top:24,
-					height:342,
-					options:{ bind: {if: =articles.b1.no_binding, then: none}, large_headline:true}
+					options:{ large_headline:true}
 				},
 				#deco:	{
-					top:20,
-					height:331,
-					options:{ bind: {if: =articles.deco.no_binding, then: none}, medium_headline:true}
+					options:{ medium_headline:true}
 				},
 				#b2:	{
-					top:370,
-					height:194,
-					options:{ bind: {if: =articles.b2.no_binding, then: none}, medium_headline:true, top_border:true}
+					options:{ medium_headline:true, top_border:true}
 				},
 				#b3:	{
-					top:370,
-					height:194,
-					options:{ bind: {if: =articles.b3.no_binding, then: none}, medium_headline:true, top_border:true}
+					options:{ medium_headline:true, top_border:true}
 				},
 				#b4:	{
-					top:370,
-					height:194,
-					options:{ bind: {if: =articles.b4.no_binding, then: none}, medium_headline:true, top_border:true}
+					options:{ medium_headline:true, top_border:true}
 				},
 				#b5:	{
-					top:370,
-					height:187,
-					options:{ bind: {if: =articles.b5.no_binding, then: none}, medium_headline:true, top_border:true, show_byline:false}
+					options:{ medium_headline:true, top_border:true, show_byline:false}
 				},
 				#footer: {
-					top: 570,
-					height: 100,
+					top: 680,
+					height: 90,
 					text-align: center,
-					options:{bind: none, top_border: true}
+					options:{top_border: true}
 				}
 		}}
 		]
 	}</style>
-  <box id="page_details" class="tablet_only" embed="pagedescription" />
-	<box class="tablet_only latest_news_box positionx1">
-			<p class="latest_news">
-				<a href="//NOW/LATEST_NEWS">LATEST NEWS</a>
-			</p>
+	<style>{
+		.latest_news_box: {
+			options: {
+				reference: "//NOW/LATEST_NEWS"
+			}
+		}
+	}</style>
+	<box id="page_details" class="tablet_only" embed="pagedescription" />
+	<box id="vertical-grid">
+		<box class="tablet_only columns-3 xposition-1 yposition-3">
+			<box class="columns-3">
+				<box id="whatsnewsheader" class="visual-content-top">
+					<p>
+						<mark id="whatsnewsheadertext"/>
+					</p>
+				</box>
+				<box id="whatsnews" embed="list" class="landscape-lines-24 portrait-lines-36" />
+			</box>
+		</box>
+		<box id="deco" embed="article" class="lines-17 yposition-3 columns-9 xposition-4 maude unit_deco" module="DECO_module2.xml"/>
+		<box id="b1" embed="article" class="portrait-yposition-20 portrait-lines-8 landscape-yposition-2 landscape-lines-18 landscape-columns-4 portrait-columns-9 landscape-xposition-13 portrait-xposition-4 maude unit_plain" module="TOP-IMAGE_module2.xml" />
+		<box id="b2" embed="article" class="portrait-yposition-29 portrait-lines-7 landscape-yposition-21 landscape-lines-9 columns-3 xposition-4 maude unit_plain" module="TOP-IMAGE_module2.xml" />
+		<box id="b3" embed="article" class="portrait-yposition-29 portrait-lines-7 landscape-yposition-21 landscape-lines-9 columns-3 xposition-7 maude unit_plain" module="TOP-IMAGE_module2.xml" />
+		<box id="b4" embed="article" class="portrait-yposition-29 portrait-lines-7 landscape-yposition-21 landscape-lines-9 columns-3 xposition-10 maude unit_plain" module="TOP-IMAGE_module2.xml" />
+		<box id="b5" embed="article" class="portrait-yposition-37 portrait-lines-5 landscape-yposition-21 landscape-lines-9 landscape-columns-4 portrait-columns-9 landscape-xposition-13 portrait-xposition-4 maude unit_plain" module="AHED_module2.xml" />
 	</box>
-	<box id="marketstrap" class="tablet_only" embed="marketstrap">
-		<box id="marketstrapinner">
-			<panel id="marketstrappanel">
-				<p id="marketstrapp1"><strong class="marketstrapstrong">DJIA</strong> 31337.42 +89.01 <mark class="marketstraparrow"/> 2.34%</p>
-				<p id="marketstrapp2"><strong class="marketstrapstrong">NASDAQ</strong> 5678.90 +12.34 <mark class="marketstraparrow"/> 5.67%</p>
-				<p id="marketstrapp3"><strong class="marketstrapstrong">S&amp;P 500</strong> 1234.56 +7.89 <mark class="marketstraparrow"/> 0.12%</p>
-			</panel>
+	<box id="strap">
+		<box class="tablet_only latest_news_box xposition-1">
+			<p class="latest_news">LATEST NEWS</p>
+		</box>
+		<box id="marketstrap" class="tablet_only" embed="marketstrap">
+			<box id="marketstrapinner">
+				<panel id="marketstrappanel">
+					<p id="marketstrapp1"><strong class="marketstrapstrong">DJIA</strong> 31337.42 +89.01 <mark class="marketstraparrow"/> 2.34%</p>
+					<p id="marketstrapp2"><strong class="marketstrapstrong">NASDAQ</strong> 5678.90 +12.34 <mark class="marketstraparrow"/> 5.67%</p>
+					<p id="marketstrapp3"><strong class="marketstrapstrong">S&amp;P 500</strong> 1234.56 +7.89 <mark class="marketstraparrow"/> 0.12%</p>
+				</panel>
+			</box>
 		</box>
 	</box>
-	<box id="whatsnewsheader" class="tablet_only column3 positionx1"><p><mark id="whatsnewsheadertext"/></p></box>
-	<box id="whatsnews" class="tablet_only column3 positionx1" embed="list">
-	</box>
-	<box id="b1" embed="article" class="column4-9 positionx13-4 maude unit_plain" module="TOP-IMAGE_module.xml" />
-	<box id="deco" embed="article" class="column9 positionx4 maude unit_deco" module="DECO_module.xml" options="G_size" />
-	<box id="b2" embed="article" class="column3 positionx4 maude unit_plain" module="TOP-IMAGE_module.xml" />
-	<box id="b3" embed="article" class="column3 positionx7 maude unit_plain" module="TOP-IMAGE_module.xml" />
-	<box id="b4" embed="article" class="column3 positionx10 maude unit_plain" module="TOP-IMAGE_module.xml" />
-	<box id="b5" embed="article" class="column4-9 positionx13-4 maude unit_plain" module="AHED_module.xml" />
 	<box id="front_page" class="tablet_only positionx_full column_full maude unit_ad">
 		<box id="banner_ad" class="ad-banner front_ad" embed="advertisement" />
 	</box>
-	<box id="footer" class="tablet_only column16-12 positionx1" module="RAIL-footer_module.xml">
+	<box id="footer" class="tablet_only landscape-columns-16 portrait-columns-12 xposition-1" module="RAIL-footer_module.xml">
 		<box id="footerstrapinner">
-        <p id="footer_headline" class="footer_headline">Did You Know?</p>
-		<p id="footer_tip"><mark id="footer_tip" /></p>
-        </box>
-    </box>
+			<p id="footer_headline" class="footer_headline">Did You Know?</p>
+			<p id="footer_tip"><mark id="footer_tip" /></p>
+		</box>
+	</box>
 </jpml>

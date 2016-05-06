@@ -14,15 +14,13 @@
 				#cube_ad_container: {
 					width: =view.width,
 					background-color: #ffffff,
-					height: 320,
-					padding: [36, 0, 0, 0],
+					height: 342,
 					display: { if: =scale.rail, then: none, else: inherit },
-					position: { if: =intent.section, then: absolute, else: inherit }
+					position: { if: =intent.section, then: absolute }
 				},
 				#cube_ad: {
 					border-width: [46],
 					border-color: #ffffff,
-					bottom: 10,
 					anchor-x:center,
 					display: inherit,
 					pixels-per-point-x: 1,
@@ -132,7 +130,10 @@
 		},
 		{
 			if: =ad.type, equals: "Skyscraper", then: {
-				if-all: [{ if: =page.number, equals: 1 }, =ad.loaded], then: {
+				if-any: [
+					{ if: [3, 5, 7], contains: =page.number },
+					{ if-all: [ {if: =page.number, equals: 1}, =ad.loaded] }
+				], then: {
 					if: ["383422586", "383422226", "383421746", "440015306"], contains: =ad.lineItemID, then: {
 						#article_advertisement: {
 							position: absolute,

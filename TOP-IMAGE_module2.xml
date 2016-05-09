@@ -15,7 +15,8 @@
 			{ $switch: [
 				{ if: =options.top_border, then: {
 					jpml: {
-						border-width: [1, 0, 0, 0]
+						border-width: [1, 0, 0, 0],
+						padding: { if: =options.show_image, then: [9, 0, 0, 0], else:none }
 					}
 				}},
 				{ if: =options.left_border, then: {
@@ -48,7 +49,7 @@
 					pixels-per-point-y:1,
 					image-scale: 1,
 					display: { if: =options.show_image, then:inherit, else:none },
-					height: {$multiply: [=view.width, .653 ]},
+					height: {$multiply: [{$ceiling: [{$divide: [{$multiply: [=view.width, .651]}, 10]}]}, 10]},
 					options: {
 						$switch: [
 							{ if: =options.F_image, then: {match: { width:571, height:226, max-height:226 } } },

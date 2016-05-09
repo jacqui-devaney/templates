@@ -14,12 +14,31 @@
 
 		$join: [
 		{#body_container : {
+			top: 1,
 			min-height:200
 		}},
 		{.article_body: {
             column-gutter: 20,
 			layout-grid-line: {$multiply: [20, =view.zoomlevel]},
-			layout-grid-line-offset: {$multiply: [20, =view.zoomlevel]}
+			layout-grid-line-offset: 1
+		}},
+		{#lastpage_ad_container: {
+			display: { if-any: [
+				=page.hasmedia,
+				{ if-all: [
+					{ if: =ad.type, equals: "Skyscraper", then: true, else: false },
+					{ if: [1], contains: =page.number, then: true, else: false }
+				], then: true, else: false }
+			], then: none },
+			position: absolute,
+			border-color: #d8d8d8,
+			border-width: [0, 0, 0, 1],
+			min-width: 300,
+			min-height: 600,
+			top: 0,
+			bottom: 0,
+			left: 239,
+			right: 0
 		}},
 		{#body_continuation: {
 			content: from-flow(article_body),
@@ -48,7 +67,12 @@
         }}
 		]
     }</style>
-	<panel id="body_container">
+    <!--
+		#body_container makes one pixel of space so that #lastpage_ad_container
+		can lay out if .article_body doesn't overflow and doesn't render more than
+		one column of text.
+	-->
+	<box id="body_container">
 		<box id="article_advertisement">
 			<box id="skyscraper_ad" class="ad-skyscraper" embed="advertisement" />
 		</box>
@@ -66,5 +90,17 @@
 		<panel class="article_body">
 			<panel id="body_continuation" embed="body"/>
 		</panel>
-	</panel>
+	</box>
+	<!--
+		Only appears if less than one column of text rendered into .article_body and
+		the page has no media. This is effectively #article_advertisement but that
+		identifier cannot be reused since ad frequency logic may have already chosen
+		to show an ad on this page, versus showing one due to layout results.
+
+		Hide this element if this page is already showing #article_advertisement so
+		it doesn't have ad on top of ad, or if there's no media on the page.
+	-->
+	<box id="lastpage_ad_container">
+		<box id="skyscraper_ad" class="ad-skyscraper" embed="advertisement" />
+	</box>
 </jpml>

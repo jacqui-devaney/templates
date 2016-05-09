@@ -25,10 +25,8 @@
 		{#lastpage_ad_container: {
 			display: { if-any: [
 				=page.hasmedia,
-				{ if-all: [
-					{ if: =ad.type, equals: "Skyscraper", then: true, else: false },
-					{ if: [1], contains: =page.number, then: true, else: false }
-				], then: true, else: false }
+				{ if: =ad.type, not-equal-to: "Skyscraper", then: true, else: false },
+				{ if: [1], contains: =page.number, then: true, else: false }
 			], then: none },
 			position: absolute,
 			border-color: #d8d8d8,

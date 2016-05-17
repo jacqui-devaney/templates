@@ -48,8 +48,7 @@ CIO, CFO, and Risk & Compliance all require affinity and article templates to be
 
 ## Debugging
 
-To debug ads you can display the passed in ads dictionary with this `ejs` and `JPML` pair:
-
+To debug ads you can display the passed in ads dictionary with this `ejs` and `JPML` pair. Good files to add this to are the `TOP-IMAGE_module.xml` for section fronts and the `ARTICLE-front_module.xml` for articles.
 
 	<style>{
 		#m_debug: { background-color:"rgba(232, 0, 0, .3)" },

@@ -48,25 +48,19 @@
 	            <p id="media_vr_link"><a href="http://wsj.com/virtual-reality"><mark id="mark_media_vr_link"/></a></p>
 	        </box>
         </box>
+        <box id="inner-article-ad-prototype">
+            <box id="cube_ad_container">
+                <box id="cube_ad" embed="fullpagead">
+                    <p id="ad_headline">ADVERTISEMENT</p>
+                </box>
+            </box>
+        </box>
     </box>
 
 	<panel id="body_container">
     	<panel class="article_body" id="body_continuation" embed="body" />
 	</panel>
 
-    <style>{
-    .maude: {
-        position: relative,
-        top: 0,
-        left: 0,
-        right: 0,
-        width:inherit
-    }
-    }</style>
+    <panel embed="inner-article-ad"/>
 
-    <box id="cube_ad_container" class="maude unit_ad">
-        <box id="cube_ad" class="ad-fullpage" embed="fullpagead">
-            <p id="ad_headline" class="ad_headline">ADVERTISEMENT</p>
-        </box>
-    </box>
 </jpml>

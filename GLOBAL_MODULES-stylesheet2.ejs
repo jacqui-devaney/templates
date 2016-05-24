@@ -25,8 +25,8 @@
 					{if: =options.small_headline, then:{
 						font-size: 14,
 						line-height: 20,
-						layout-grid-line-offset: -15,
-						layout-grid-line: 20,
+						layout-grid-line-offset: {if: =scale.tablet, then: -15, else: inherit},
+						layout-grid-line: {if: =scale.tablet, then: 20, else: inherit},
 						color:#2b3333
 					}},
 					{if: =options.smedium_headline, then:{
@@ -42,8 +42,8 @@
 						line-height: 25
 					}},
 					{if: =options.large_headline, then: {
-						layout-grid-line-offset: -25,
-						layout-grid-line: 40,
+						layout-grid-line-offset: {if: =scale.tablet, then: -25, else: inherit},
+						layout-grid-line: {if: =scale.tablet, then: 40, else: inherit},
 						color:#2b3333,
 						font-size: 36,
 						line-height: 40

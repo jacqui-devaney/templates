@@ -30,9 +30,6 @@
         },
         #list-item: {
             padding: [0, 0, 22, 0]
-        },
-        #last_page_ad: {
-            display: { if: =page.number, less-than: 10, then: none }
         }
     }</style>
 
@@ -64,6 +61,6 @@
     	<panel class="article_body" id="body_continuation" embed="body" />
 	</panel>
 
-    <panel class="last_page_ad" embed="inner-article-ad"/>
+    <panel embed="inner-article-ad"/>
 
 </jpml>

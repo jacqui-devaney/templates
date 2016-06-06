@@ -12,7 +12,7 @@
 		}
 	},
 	#vertical-grid: {
-		top: 68
+		top: { if: =scale.tablet, then: 68, else: inherit }
 	},
 	.visual-content-padding: {
 		padding: [10, 0, 10, 0]

@@ -12,11 +12,13 @@
 		{
 			if: =scale.phone, then:{
 				#cube_ad_container: {
-					width: =view.width,
-					background-color: #ffffff,
+					position: { if: =intent.section, then: absolute, else: relative },
+					top: 0,
+					left: 0,
+					right: 0,
 					height: 342,
-					display: { if: =scale.rail, then: none, else: inherit },
-					position: { if: =intent.section, then: absolute }
+					background-color: #ffffff,
+					display: { if: =scale.rail, then: none, else: inherit }
 				},
 				#cube_ad: {
 					border-width: [46],
@@ -93,14 +95,13 @@
 					if: =ad.loaded, then: {
 						if: ["383422586", "383422226", "383421746", "440015306"], contains: =ad.lineItemID, then: {
 							#cube_ad_container: {
-								position: absolute,
-								height: 1,
-								width: 1
+								height: 1
 							},
 							#cube_ad: {
-								position: absolute,
-								height: 1,
-								width: 1
+								height: 1
+							},
+							#ad_headline: {
+								display: none
 							}
 						}, else: {
 							if: =app.version, at-most: "7.6", then: {
@@ -131,8 +132,8 @@
 		{
 			if: =ad.type, equals: "Skyscraper", then: {
 				if-any: [
-					{ if: [3, 5, 7], contains: =page.number },
-					{ if-all: [ {if: =page.number, equals: 1}, =ad.loaded] }
+					{ if: [3, 5, 7], contains: =page.number, then: true, else: false },
+					{ if-all: [ {if: =page.number, equals: 1}, =ad.loaded], then: true, else: false }
 				], then: {
 					if: ["383422586", "383422226", "383421746", "440015306"], contains: =ad.lineItemID, then: {
 						#article_advertisement: {

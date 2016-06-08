@@ -173,6 +173,65 @@
 						}, else: {
 							#article_advertisement: {
 								display: none
+							},
+							if: ad.cache.FullPage.loaded, then: {
+								if-all: [
+									{
+										if: =app.version, less-than: "7.6", then: {
+											if: =page.number, more-than: 1000000, then: true, else: false
+										}, else: {
+											if: =page.number, equals: 1, then: true, else: false
+										}
+									},
+									=ad.loaded
+								], then: {
+									if: ["383422586", "383422226", "383421746", "440015306"], contains: =ad.lineItemID, then: {
+										#fullpage_container: {
+											position: absolute,
+											height: 1,
+											width: 1
+										},
+										#fullpage_ad: {
+											position: absolute,
+											height: 1,
+											width: 1
+										}
+									}, else: {
+										jpml: {
+											min-height:0,
+											padding: [0,0,0,0]
+										},
+										#fullpage_container: {
+											display: inherit
+										},
+										#view: {
+											display: { if: =app.version, less-than: "7.6", then: none, else: inherit },
+											position: absolute,
+											height: 200,
+											width: 1
+										},
+										#media: {
+											display: none
+										},
+										#media_container: {
+											display: none
+										},
+										#page_details: {
+											display: { if: =app.version, less-than: "7.6", then: none, else: inherit },
+										    options: {
+											fullPageAd: true
+										    }
+										}
+									}
+								}, else: {
+									#fullpage_container: {
+										display: none
+									}
+								}
+							}, else: {
+								#fullpage_container: {
+									display: none
+								}
 							}
 						}
 					}, else: {

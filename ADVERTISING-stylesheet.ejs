@@ -90,13 +90,45 @@
 			}
 		},
 		{
-			if: =intent.article, then: {
-			}, else: {
-				if: =ad.cache.Banner.type, equals: "Banner", then: {
-
+			if: =scale.phone, then: {
+				if: =ad.cache.Cube.type, equals: "Cube", then: {
+					if: =intent.article, then: {
+						if: =ad.cache.Cube.loaded, then: {
+							if: ["383422586", "383422226", "383421746", "440015306"], contains: =ad.cache.Cube.lineItemID, then: {
+								#cube_ad_container: {
+									height: 1
+								},
+								#cube_ad: {
+									height: 1
+								},
+								#ad_headline: {
+									display: none
+								}
+							}, else: {
+							
+							}
+						}, else: {
+							#cube_ad_container: {
+								display: none
+							}
+						}
+					}, else: {
+					
+					}
 				}, else: {
-					#banner_ad: {
+					#cube_ad_container: {
 						display: none
+					}
+				}
+			}, else: {
+				if: =intent.article, then: {
+				}, else: {
+					if: =ad.cache.Banner.type, equals: "Banner", then: {
+
+					}, else: {
+						#banner_ad: {
+							display: none
+						}
 					}
 				}
 			}

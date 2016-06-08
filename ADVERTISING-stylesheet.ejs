@@ -88,6 +88,18 @@
 					height: 270
 				}
 			}
+		},
+		{
+			if: =intent.article, then: {
+			}, else: {
+				if: =ad.cache.Banner.type, equals: "Banner", then: {
+
+				}, else: {
+					#banner_ad: {
+						display: none
+					}
+				}
+			}
 		}
 	]
 }

@@ -73,6 +73,7 @@ To debug ads you can display the passed in ads dictionary with this `ejs` and `J
 	<style>{
 		#m_debug: { background-color:"rgba(232, 0, 0, .3)" },
 		#m_debug_page: { content: { $join: ["page = ", =page.number ] }},
+		#m_debug_lastpagetype: { content: { $join: ["lastAdType = ", =ad.lastAdType ] }},
 		#m_debug_Skyscraper_type: { content: { $join: ["Skyscraper type = ", =ad.cache.Skyscraper.type ] }},
 		#m_debug_Skyscraper_id: { content: { $join: ["lineItemID = ", =ad.cache.Skyscraper.lineItemID ] }},
 		#m_debug_Skyscraper_loaded: { content: { if: =ad.cache.Skyscraper.loaded, then: "loaded", else: "not loaded" }},
@@ -88,6 +89,7 @@ To debug ads you can display the passed in ads dictionary with this `ejs` and `J
 	}</style>
 	<panel id="m_debug">
 		<p><mark id="m_debug_page"/></p>
+		<p><mark id="m_debug_lastpagetype"/></p>
 		<p><mark id="m_debug_Skyscraper_type"/></p>
 		<p><mark id="m_debug_Skyscraper_id"/></p>
 		<p><mark id="m_debug_Skyscraper_loaded"/></p>
@@ -101,3 +103,4 @@ To debug ads you can display the passed in ads dictionary with this `ejs` and `J
 		<p><mark id="m_debug_Banner_id"/></p>
 		<p><mark id="m_debug_Banner_loaded"/></p>
 	</panel>
+

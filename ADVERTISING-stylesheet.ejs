@@ -126,14 +126,14 @@
 						if-any: [
 							{
 								if-all: [
-									{ if: =ad.lastAdType, equals: "FullPage", then: true, else: false  },
+									{ if: =ad.lastAdType, equals: "Skyscraper", then: false, else: true  },
 									ad.cache.Skyscraper.loaded
 								]
 							},
 							{
 								if-all: [
-									{ if: =ad.lastAdType, equals: "FullPage", then: false, else: true },
-									{ if: ad.cached.FullPage.loaded, then: false, else: true },
+									{ if: =ad.lastAdType, equals: "Fullpage", then: false, else: true },
+									{ if: ad.cached.Fullpage.loaded, then: false, else: true },
 									ad.cache.Skyscraper.loaded
 								]
 							}
@@ -179,7 +179,7 @@
 							#article_advertisement: {
 								display: none
 							},
-							if: ad.cache.FullPage.loaded, then: {
+							if: ad.cache.Fullpage.loaded, then: {
 								if-all: [
 									{
 										if: =app.version, less-than: "7.6", then: {

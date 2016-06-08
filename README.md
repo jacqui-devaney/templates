@@ -77,9 +77,9 @@ To debug ads you can display the passed in ads dictionary with this `ejs` and `J
 		#m_debug_Skyscraper_type: { content: { $join: ["Skyscraper type = ", =ad.cache.Skyscraper.type ] }},
 		#m_debug_Skyscraper_id: { content: { $join: ["lineItemID = ", =ad.cache.Skyscraper.lineItemID ] }},
 		#m_debug_Skyscraper_loaded: { content: { if: =ad.cache.Skyscraper.loaded, then: "loaded", else: "not loaded" }},
-		#m_debug_FullPage_type: { content: { $join: ["FullPage type = ", =ad.cache.FullPage.type ] }},
-		#m_debug_FullPage_id: { content: { $join: ["lineItemID = ", =ad.cache.FullPage.lineItemID ] }},
-		#m_debug_FullPage_loaded: { content: { if: =ad.cache.FullPage.loaded, then: "loaded", else: "not loaded" }},
+		#m_debug_Fullpage_type: { content: { $join: ["Fullpage type = ", =ad.cache.Fullpage.type ] }},
+		#m_debug_Fullpage_id: { content: { $join: ["lineItemID = ", =ad.cache.Fullpage.lineItemID ] }},
+		#m_debug_Fullpage_loaded: { content: { if: =ad.cache.Fullpage.loaded, then: "loaded", else: "not loaded" }},
 		#m_debug_Banner_type: { content: { $join: ["Banner type = ", =ad.cache.Banner.type ] }},
 		#m_debug_Banner_id: { content: { $join: ["lineItemID = ", =ad.cache.Banner.lineItemID ] }},
 		#m_debug_Banner_loaded: { content: { if: =ad.cache.Banner.loaded, then: "loaded", else: "not loaded" }},
@@ -93,9 +93,9 @@ To debug ads you can display the passed in ads dictionary with this `ejs` and `J
 		<p><mark id="m_debug_Skyscraper_type"/></p>
 		<p><mark id="m_debug_Skyscraper_id"/></p>
 		<p><mark id="m_debug_Skyscraper_loaded"/></p>
-		<p><mark id="m_debug_FullPage_type"/></p>
-		<p><mark id="m_debug_FullPage_id"/></p>
-		<p><mark id="m_debug_FullPage_loaded"/></p>
+		<p><mark id="m_debug_Fullpage_type"/></p>
+		<p><mark id="m_debug_Fullpage_id"/></p>
+		<p><mark id="m_debug_Fullpage_loaded"/></p>
 		<p><mark id="m_debug_Cube_type"/></p>
 		<p><mark id="m_debug_Cube_id"/></p>
 		<p><mark id="m_debug_Cube_loaded"/></p>

@@ -138,36 +138,41 @@
 								]
 							}
 						], then: {
-							if-any: [
-								{ if: [3, 5, 7], contains: =page.number, then: true, else: false },
-								{ if-all: [ {if: =page.number, equals: 1}, =ad.loaded], then: true, else: false }
-							], then: {
-								if: ["383422586", "383422226", "383421746", "440015306"], contains: =ad.lineItemID, then: {
-									#article_advertisement: {
-										position: absolute,
-										height: 1,
-										width: 1
-									},
-									#skyscraper_ad: {
-										position: absolute,
-										height: 1,
-										width: 1
+							#fullpage_container: {
+								display: none
+							},
+							{
+								if-any: [
+									{ if: [3, 5, 7], contains: =page.number, then: true, else: false },
+									{ if-all: [ {if: =page.number, equals: 1}, =ad.loaded], then: true, else: false }
+								], then: {
+									if: ["383422586", "383422226", "383421746", "440015306"], contains: =ad.lineItemID, then: {
+										#article_advertisement: {
+											position: absolute,
+											height: 1,
+											width: 1
+										},
+										#skyscraper_ad: {
+											position: absolute,
+											height: 1,
+											width: 1
+										}
+									}, else: {
+										#media: {
+											display: none
+										},
+										#media_container: {
+											display: none
+										},
+										.article_body: {
+											column-count: {if: =landscape, then:2, else:1},
+											padding: [0, 12, 0, 0]
+										}
 									}
 								}, else: {
-									#media: {
+									#article_advertisement: {
 										display: none
-									},
-									#media_container: {
-										display: none
-									},
-									.article_body: {
-										column-count: {if: =landscape, then:2, else:1},
-										padding: [0, 12, 0, 0]
 									}
-								}
-							}, else: {
-								#article_advertisement: {
-									display: none
 								}
 							}
 						}, else: {

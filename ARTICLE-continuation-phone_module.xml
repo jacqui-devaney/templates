@@ -4,7 +4,8 @@
 	<style src="ARTICLE-stylesheet.ejs" />
 	<style src="PHONE-MODULES-stylesheet.ejs" />
 	<style src="MEDIA-stylesheet.ejs" />
-  <style src="ADVERTISING-stylesheet.ejs" />
+	<style src="ADVERTISING-stylesheet.ejs" />
+	<style src="ADVERTISING-fallback-stylesheet.ejs" />
 	<style>{
 		jpml: {
             min-height: 0

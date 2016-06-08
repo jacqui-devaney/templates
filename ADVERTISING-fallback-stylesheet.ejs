@@ -1,0 +1,157 @@
+{
+	$join: [
+		{
+			if: =app.version, less-than: "7.7", then: {
+				if: =ad.type, equals: "Cube", then: {
+					if: =intent.article, then: {
+						if: =ad.loaded, then: {
+							if: ["383422586", "383422226", "383421746", "440015306"], contains: =ad.lineItemID, then: {
+								#cube_ad_container: {
+									height: 1
+								},
+								#cube_ad: {
+									height: 1
+								},
+								#ad_headline: {
+									display: none
+								}
+							}, else: {
+								if: =app.version, less-than: "7.6", then: {
+									#body_container: {
+										display: none
+									}
+								}, else: {}
+							}
+						}, else: {
+							#cube_ad_container: {
+								display: none
+							}
+						}
+					}, else: {}
+				}, else: {
+					#cube_ad_container: {
+						display: none
+					}
+				}
+			}, else: {
+			}
+		},
+		{
+			if: =app.version, less-than: "7.7", then: {
+				if: =ad.type, equals: "Banner", then: {}, else: {
+					#banner_ad: {
+						display: none
+					}
+				}
+			}, else: {
+			}
+		},
+		{
+			if: =app.version, less-than: "7.7", then: {
+				if: =ad.type, equals: "Skyscraper", then: {
+					if-any: [
+						{ if: [3, 5, 7], contains: =page.number, then: true, else: false },
+						{ if-all: [ {if: =page.number, equals: 1}, =ad.loaded], then: true, else: false }
+					], then: {
+						if: ["383422586", "383422226", "383421746", "440015306"], contains: =ad.lineItemID, then: {
+							#article_advertisement: {
+								position: absolute,
+								height: 1,
+								width: 1
+							},
+							#skyscraper_ad: {
+								position: absolute,
+								height: 1,
+								width: 1
+							}
+						}, else: {
+							#media: {
+								display: none
+							},
+							#media_container: {
+								display: none
+							},
+							.article_body: {
+								column-count: {if: =landscape, then:2, else:1},
+								padding: [0, 12, 0, 0]
+							}
+						}
+					}, else: {
+						#article_advertisement: {
+							display: none
+						}
+					}
+				}, else: {
+					#article_advertisement: {
+						display: none
+					}
+				}
+			}, else: {
+			}
+		},
+		{
+			if: =app.version, less-than: "7.7", then: {
+				if: =ad.type, equals: "Fullpage", then: {
+					if-all: [
+						{
+							if: =app.version, less-than: "7.6", then: {
+								if: =page.number, more-than: 1000000, then: true, else: false
+							}, else: {
+								if: =page.number, equals: 1, then: true, else: false
+							}
+						},
+						=ad.loaded
+					], then: {
+						if: ["383422586", "383422226", "383421746", "440015306"], contains: =ad.lineItemID, then: {
+							#fullpage_container: {
+								position: absolute,
+								height: 1,
+								width: 1
+							},
+							#fullpage_ad: {
+								position: absolute,
+								height: 1,
+								width: 1
+							}
+						}, else: {
+							jpml: {
+								min-height:0,
+								padding: [0,0,0,0]
+							},
+							#fullpage_container: {
+								display: inherit
+							},
+							#view: {
+								display: { if: =app.version, less-than: "7.6", then: none, else: inherit },
+								position: absolute,
+								height: 200,
+								width: 1
+							},
+							#media: {
+								display: none
+							},
+							#media_container: {
+								display: none
+							},
+							#page_details: {
+								display: { if: =app.version, less-than: "7.6", then: none, else: inherit },
+							    options: {
+								fullPageAd: true
+							    }
+							}
+						}
+					}, else: {
+						#fullpage_container: {
+							display: none
+						}
+					}
+				}, else: {
+					#fullpage_container: {
+						display: none
+					}
+				}
+			}, else: {
+			}
+		}
+	]
+}

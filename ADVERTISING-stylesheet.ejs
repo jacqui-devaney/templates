@@ -21,19 +21,6 @@
 						background-color: #ffffff,
 						display: { if: =scale.rail, then: none, else: inherit }
 					},
-					#cube_ad: {
-						border-width: [46],
-						border-color: #ffffff,
-						anchor-x:center,
-						display: inherit,
-						pixels-per-point-x: 1,
-						pixels-per-point-y: 1,
-						width: 300,
-						height: 250,
-						options: {
-							excludedLineItemIds: ["383422586", "383422226", "383421746", "440015306"]
-						}
-					},
 					#ad_headline:{
 						font-name: "WhitneySSm-Book",
 						font-size: 13,
@@ -50,25 +37,6 @@
 						top: {if: =landscape, then:568, else:824},
 						height: 90
 					},
-					#banner_ad: {
-						pixels-per-point-x: 1,
-						pixels-per-point-y: 1,
-						anchor-x:center,
-						anchor-y:middle,
-						width: =view.width,
-						height: 90,
-						options: {
-							excludedLineItemIds: ["383422586", "383422226", "383421746", "440015306"]
-						}
-					},
-					#fullpage_ad: {
-						anchor-x:center,
-						display: inherit,
-						pixels-per-point-x: 1,
-						pixels-per-point-y: 1,
-						width: =view.width,
-						height: =view.height
-					},				
 					#article_advertisement: {
 						pixels-per-point-x: 1,
 						pixels-per-point-y: 1,
@@ -78,12 +46,6 @@
 						right:0,
 						border-width:[0, 0, 0, 1],
 						border-color:#d8d8d8
-					},
-					#skyscraper_ad:{
-						width:300,
-						height:600,
-						anchor-x:center,
-						anchor-y:middle
 					},
 					#fullpage_container: {
 						height: 270
@@ -100,13 +62,30 @@
 										height: 1
 									},
 									#cube_ad: {
+										options: {
+											adType: "Cube",
+											excludedLineItemIds: ["383422586", "383422226", "383421746", "440015306"]
+										},
 										height: 1
 									},
 									#ad_headline: {
 										display: none
 									}
 								}, else: {
-								
+									#cube_ad: {
+										border-width: [46],
+										border-color: #ffffff,
+										anchor-x:center,
+										display: inherit,
+										pixels-per-point-x: 1,
+										pixels-per-point-y: 1,
+										width: 300,
+										height: 250,
+										options: {
+											adType: "Cube",
+											excludedLineItemIds: ["383422586", "383422226", "383421746", "440015306"]
+										}
+									}
 								}
 							}, else: {
 								#cube_ad_container: {
@@ -169,7 +148,11 @@
 											#skyscraper_ad: {
 												position: absolute,
 												height: 1,
-												width: 1
+												width: 1,
+												options: {
+													adType: "Skyscraper",
+													excludedLineItemIds: ["383422586", "383422226", "383421746", "440015306"]
+												}
 											}
 										}, else: {
 											#media: {
@@ -181,6 +164,16 @@
 											.article_body: {
 												column-count: {if: =landscape, then:2, else:1},
 												padding: [0, 12, 0, 0]
+											},
+											#skyscraper_ad:{
+												width:300,
+												height:600,
+												anchor-x:center,
+												anchor-y:middle,
+												options: {
+													adType: "Skyscraper",
+													excludedLineItemIds: ["383422586", "383422226", "383421746", "440015306"]
+												}
 											}
 										}
 									}, else: {
@@ -215,11 +208,27 @@
 													width: 1
 												},
 												#fullpage_ad: {
+													options: {
+														adType: "FullPage",
+														excludedLineItemIds: ["383422586", "383422226", "383421746", "440015306"]
+													},
 													position: absolute,
 													height: 1,
 													width: 1
 												}
 											}, else: {
+												#fullpage_ad: {
+													options: {
+														adType: "FullPage",
+														excludedLineItemIds: ["383422586", "383422226", "383421746", "440015306"]
+													},
+													anchor-x:center,
+													display: inherit,
+													pixels-per-point-x: 1,
+													pixels-per-point-y: 1,
+													width: =view.width,
+													height: =view.height
+												},				
 												jpml: {
 													min-height:0,
 													padding: [0,0,0,0]
@@ -241,9 +250,9 @@
 												},
 												#page_details: {
 													display: { if: =app.version, less-than: "7.6", then: none, else: inherit },
-												    options: {
-													fullPageAd: true
-												    }
+													options: {
+														fullPageAd: true
+													}
 												}
 											}
 										}, else: {
@@ -261,7 +270,18 @@
 						}
 					}, else: {
 						if: =ad.cache.Banner.type, equals: "Banner", then: {
-
+							#banner_ad: {
+								pixels-per-point-x: 1,
+								pixels-per-point-y: 1,
+								anchor-x:center,
+								anchor-y:middle,
+								width: =view.width,
+								height: 90,
+								options: {
+									adType: "Banner",
+									excludedLineItemIds: ["383422586", "383422226", "383421746", "440015306"]
+								}
+							}
 						}, else: {
 							#banner_ad: {
 								display: none

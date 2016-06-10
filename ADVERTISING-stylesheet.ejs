@@ -67,7 +67,8 @@
 						{ 
 							if-all: [
 								{ if: =ad.cache.Cube.type, equals: "Cube", then: true, else: false },
-								{ if: =ad.cache.HalfScreen.loaded, then: false, else: true }
+								{ if: =ad.cache.HalfScreen.loaded, then: false, else: true },
+								=ad.cache.Cube.loaded
 							],
 							then: true,
 							else: false

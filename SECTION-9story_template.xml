@@ -4,6 +4,7 @@
 	<style src="GRID-extras2.ejs"/>
 	<style src="ADVERTISING-stylesheet.ejs"/>
 	<style src="ADVERTISING-stylesheet-gridoverride.ejs"/>
+	<style src="ADVERTISING-fallback-stylesheet.ejs" />
 	<style src="PHONE-stylesheet.ejs"/>
 	<style src="RAIL-stylesheet.ejs" />
 	<style>{
@@ -454,5 +455,18 @@
 			</p>
 		</box>
 	</box>
-
+	<box id="small_ad_container" class="phone_only">
+		<box id="cube_ad" embed="fullpagead">
+			<p id="ad_headline">ADVERTISEMENT</p>
+		</box>
+		<box id="halfscreen_ad" embed="fullpagead">
+			<p id="ad_headline">ADVERTISEMENT</p>
+		</box>
+	</box>
+	<box id="footer" class="phone_only    maude unit_plain unit_50">
+		<box id="footerstrapinner">
+			<p id="footer_headline" class="footer_headline">Did You Know?</p>
+			<p id="footer_tip"><mark id="footer_tip" /></p>
+		</box>
+	</box>
 </jpml>

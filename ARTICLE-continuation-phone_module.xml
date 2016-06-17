@@ -4,7 +4,8 @@
 	<style src="ARTICLE-stylesheet.ejs" />
 	<style src="PHONE-MODULES-stylesheet.ejs" />
 	<style src="MEDIA-stylesheet.ejs" />
-  <style src="ADVERTISING-stylesheet.ejs" />
+	<style src="ADVERTISING-stylesheet.ejs" />
+	<style src="ADVERTISING-fallback-stylesheet.ejs" />
 	<style>{
 		jpml: {
             min-height: 0
@@ -49,10 +50,13 @@
 	        </box>
         </box>
         <box id="inner-article-ad-prototype">
-            <box id="cube_ad_container">
+            <box id="small_ad_container">
                 <box id="cube_ad" embed="fullpagead">
                     <p id="ad_headline">ADVERTISEMENT</p>
                 </box>
+		<box id="halfscreen_ad" embed="fullpagead">
+		    <p id="ad_headline">ADVERTISEMENT</p>
+		</box>
             </box>
         </box>
     </box>

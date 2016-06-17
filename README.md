@@ -67,3 +67,40 @@ To debug ads you can display the passed in ads dictionary with this `ejs` and `J
 		<p><mark id="m_debug_page"/></p>
 		<p><mark id="m_debug_zone"/></p>
 	</panel>
+
+## New Debug Blocks
+
+	<style>{
+		#m_debug: { background-color:"rgba(232, 0, 0, .3)" },
+		#m_debug_page: { content: { $join: ["page = ", =page.number ] }},
+		#m_debug_lastpagetype: { content: { $join: ["lastAdType = ", =ad.lastAdType ] }},
+		#m_debug_Skyscraper_type: { content: { $join: ["Skyscraper type = ", =ad.cache.Skyscraper.type ] }},
+		#m_debug_Skyscraper_id: { content: { $join: ["lineItemID = ", =ad.cache.Skyscraper.lineItemID ] }},
+		#m_debug_Skyscraper_loaded: { content: { if: =ad.cache.Skyscraper.loaded, then: "loaded", else: "not loaded" }},
+		#m_debug_Fullpage_type: { content: { $join: ["Fullpage type = ", =ad.cache.Fullpage.type ] }},
+		#m_debug_Fullpage_id: { content: { $join: ["lineItemID = ", =ad.cache.Fullpage.lineItemID ] }},
+		#m_debug_Fullpage_loaded: { content: { if: =ad.cache.Fullpage.loaded, then: "loaded", else: "not loaded" }},
+		#m_debug_Banner_type: { content: { $join: ["Banner type = ", =ad.cache.Banner.type ] }},
+		#m_debug_Banner_id: { content: { $join: ["lineItemID = ", =ad.cache.Banner.lineItemID ] }},
+		#m_debug_Banner_loaded: { content: { if: =ad.cache.Banner.loaded, then: "loaded", else: "not loaded" }},
+		#m_debug_Cube_type: { content: { $join: ["Cube type = ", =ad.cache.Cube.type ] }},
+		#m_debug_Cube_id: { content: { $join: ["lineItemID = ", =ad.cache.Cube.lineItemID ] }},
+		#m_debug_Cube_loaded: { content: { if: =ad.cache.Cube.loaded, then: "loaded", else: "not loaded" }}
+	}</style>
+	<panel id="m_debug">
+		<p><mark id="m_debug_page"/></p>
+		<p><mark id="m_debug_lastpagetype"/></p>
+		<p><mark id="m_debug_Skyscraper_type"/></p>
+		<p><mark id="m_debug_Skyscraper_id"/></p>
+		<p><mark id="m_debug_Skyscraper_loaded"/></p>
+		<p><mark id="m_debug_Fullpage_type"/></p>
+		<p><mark id="m_debug_Fullpage_id"/></p>
+		<p><mark id="m_debug_Fullpage_loaded"/></p>
+		<p><mark id="m_debug_Cube_type"/></p>
+		<p><mark id="m_debug_Cube_id"/></p>
+		<p><mark id="m_debug_Cube_loaded"/></p>
+		<p><mark id="m_debug_Banner_type"/></p>
+		<p><mark id="m_debug_Banner_id"/></p>
+		<p><mark id="m_debug_Banner_loaded"/></p>
+	</panel>
+

@@ -218,7 +218,14 @@
 								},
 								{
 									if-any: [
-										{ if: [3, 5, 7], contains: =page.number, then: true, else: false },
+										{
+											if-all: [ 
+												{ if: [3, 5, 7], contains: =page.number, then: true, else: false },
+												=ad.cache.Skyscraper.loaded 
+											], 
+											then: true, 
+											else: false 
+										},
 										{ 
 											if-all: [ 
 												{ if: =page.number, equals: 1 }, 

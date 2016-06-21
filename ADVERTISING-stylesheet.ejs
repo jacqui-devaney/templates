@@ -58,8 +58,8 @@
 						{
 							if-all: [
 								{ if: =ad.cache.Cube.type, equals: "Cube", then: true, else: false },
-								{ if: ["383422586", "383422226", "383421746", "440015306"], contains: =ad.cache.Cube.lineItemID, then: false, else: true },
-								=ad.cache.Cube.loaded
+								=ad.cache.Cube.loaded,
+								{ if: ["383422586", "383422226", "383421746", "440015306"], contains: =ad.cache.Cube.lineItemID, then: false, else: true }
 							], 
 							then: true,
 							else: false
@@ -170,21 +170,21 @@
 							},
 							else: {
 								#halfscreen_ad: {
-									display: none
-								},
-								#cube_ad: {
-									border-width: [46],
-									border-color: #ffffff,
+									border-width: [46,0,0,0],
+									border-color: #FFFFFF,
 									anchor-x:center,
 									display: inherit,
 									pixels-per-point-x: 1,
 									pixels-per-point-y: 1,
-									width: 300,
-									height: 250,
+									width: =view.width,
+									height: 320,
 									options: {
-										adType: "Cube",
+										adType: "HalfScreen",
 										excludedLineItemIds: ["383422586", "383422226", "383421746", "440015306"]
 									}
+								},
+								#cube_ad: {
+									display: none
 								}
 							}
 						}

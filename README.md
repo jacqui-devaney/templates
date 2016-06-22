@@ -46,6 +46,10 @@ CIO, CFO, and Risk & Compliance all require affinity and article templates to be
 
 	curl -X PUT -H "Content-Type: application/json" -d '{"template":"ARTICLE-deloitte_template.xml"}' $API/publications/wsj/regions/us/mastheads/SWEET/layout/articles/type/Deloitte%20Riskandcompliance%20Blog
 
+## Phantom Ads
+
+The phantom ad units are: "383422586", "383422226", "383421746", "440015306"
+
 ## Debugging
 
 To debug ads you can display the passed in ads dictionary with this `ejs` and `JPML` pair. Good files to add this to are the `TOP-IMAGE_module.xml` for section fronts and the `ARTICLE-front_module.xml` for articles.

@@ -53,6 +53,44 @@
 				}
 			},
 			{
+				if: =scale.tablet, then: { 
+					if-all: [
+						{ if: =page.hasmedia, then: false, else: true },
+						{ if: =ad.cache.Skyscraper.type, equals: "Skyscraper", then: true, else: false },
+						=ad.cache.Skyscraper.loaded,
+						{ if: [1], contains: =page.number, then: false, else: true }
+					], then: {
+						if-all: [
+							=intent.article,
+							{ if: ["383422586", "383422226", "383421746", "440015306"], contains: =ad.cache.Skyscraper.lineItemID, then: true, else: false }
+						], then: {
+							#lastpage_ad_container: {
+								height: 1
+							}
+						}, else: {
+							#lastpage_ad_container: {
+								position: absolute,
+								border-color: #d8d8d8,
+								border-width: [0, 0, 0, 1],
+								min-width: 300,
+								min-height: 600,
+								top: 0,
+								bottom: 0,
+								left: 239,
+								right: 0
+							}
+						}
+
+
+					}, else: {
+						#lastpage_ad_container: {
+							display: none
+						}
+					}
+				}, else: {
+				}
+			},
+			{
 				if: =scale.phone, then: {
 					if-any: [
 						{

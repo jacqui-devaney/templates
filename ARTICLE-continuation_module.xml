@@ -19,7 +19,7 @@
 			min-height:200
 		}},
 		{.article_body: {
-            column-gutter: 20,
+			column-gutter: 20,
 			layout-grid-line: {$multiply: [20, =view.zoomlevel]},
 			layout-grid-line-offset: {
 				if: =app.version,
@@ -29,36 +29,6 @@
 					$subtract: [ {$multiply: [20, =view.zoomlevel]}, 1 ]
 				}
 			}
-		}},
-		{#lastpage_ad_container: {
-			display: { 
-				if: =app.version, less-than: "7.7", 
-				then: {
-					if-any: [
-						=page.hasmedia,
-						{ if: =ad.type, not-equal-to: "Skyscraper", then: true, else: false },
-						{ if: [1], contains: =page.number, then: true, else: false }
-					], 
-					then: none 
-				}, else: {
-					if-any: [
-						=page.hasmedia,
-						{ if: =ad.cache.Skyscraper.type, equals: "Skyscraper", then: false, else: true },
-						{ if: =ad.cache.Skyscraper.loaded, then: false, else: true },
-						{ if: [1], contains: =page.number, then: true, else: false }
-					], 
-					then: none 
-				}
-			},
-			position: absolute,
-			border-color: #d8d8d8,
-			border-width: [0, 0, 0, 1],
-			min-width: 300,
-			min-height: 600,
-			top: 0,
-			bottom: 0,
-			left: 239,
-			right: 0
 		}},
 		{#body_continuation: {
 			content: from-flow(article_body),

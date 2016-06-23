@@ -64,10 +64,29 @@
 							=intent.article,
 							{ if: ["383422586", "383422226", "383421746", "440015306"], contains: =ad.cache.Skyscraper.lineItemID, then: true, else: false }
 						], then: {
+							#skyscraper_ad: {
+								position: absolute,
+								height: 1,
+								width: 1,
+								options: {
+									adType: "Skyscraper",
+									excludedLineItemIds: ["383422586", "383422226", "383421746", "440015306"]
+								}
+							},
 							#lastpage_ad_container: {
 								height: 1
 							}
 						}, else: {
+							#skyscraper_ad:{
+								width:300,
+								height:600,
+								anchor-x:center,
+								anchor-y:middle,
+								options: {
+									adType: "Skyscraper",
+									excludedLineItemIds: ["383422586", "383422226", "383421746", "440015306"]
+								}
+							},
 							#lastpage_ad_container: {
 								position: absolute,
 								border-color: #d8d8d8,
@@ -80,8 +99,6 @@
 								right: 0
 							}
 						}
-
-
 					}, else: {
 						#lastpage_ad_container: {
 							display: none

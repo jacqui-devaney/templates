@@ -2,6 +2,88 @@
 	$join: [
 		{
 			if: =app.version, less-than: "7.7", then: {
+				if: =scale.phone, then:{
+					#cube_ad_container: {
+						position: { if: =intent.section, then: absolute, else: relative },
+						top: 0,
+						left: 0,
+						right: 0,
+						height: 342,
+						background-color: #ffffff,
+						display: { if: =scale.rail, then: none, else: inherit }
+					},
+					#cube_ad: {
+						border-width: [46],
+						border-color: #ffffff,
+						anchor-x:center,
+						display: inherit,
+						pixels-per-point-x: 1,
+						pixels-per-point-y: 1,
+						width: 300,
+						height: 250,
+						options: {
+							excludedLineItemIds: ["383422586", "383422226", "383421746", "440015306"]
+						}
+					},
+					#ad_headline:{
+						font-name: "WhitneySSm-Book",
+						font-size: 13,
+						line-height: 45,
+						color: #a7afaf,
+						display: inherit,
+						text-align: center,
+						padding: [-43, 40, 10, 40]
+					}
+				}, else: {
+					#front_page: {
+						display: inherit,
+						position: inherit,
+						top: {if: =landscape, then:568, else:824},
+						height: 90
+					},
+					#banner_ad: {
+						pixels-per-point-x: 1,
+						pixels-per-point-y: 1,
+						anchor-x:center,
+						anchor-y:middle,
+						width: =view.width,
+						height: 90,
+						options: {
+							excludedLineItemIds: ["383422586", "383422226", "383421746", "440015306"]
+						}
+					},
+					#fullpage_ad: {
+						anchor-x:center,
+						display: inherit,
+						pixels-per-point-x: 1,
+						pixels-per-point-y: 1,
+						width: =view.width,
+						height: =view.height
+					},				
+					#article_advertisement: {
+						pixels-per-point-x: 1,
+						pixels-per-point-y: 1,
+						width:484,
+						top:0,
+						bottom:0,
+						right:0,
+						border-width:[0, 0, 0, 1],
+						border-color:#d8d8d8
+					},
+					#skyscraper_ad:{
+						width:300,
+						height:600,
+						anchor-x:center,
+						anchor-y:middle
+					},
+					#fullpage_container: {
+						height: 270
+					}
+				}
+			}
+		},
+		{
+			if: =app.version, less-than: "7.7", then: {
 				#lastpage_ad_container: {
 					display: { if-any: [
 						=page.hasmedia,
@@ -59,7 +141,8 @@
 		},
 		{
 			if: =app.version, less-than: "7.7", then: {
-				if: =ad.type, equals: "Banner", then: {}, else: {
+				if: =ad.type, equals: "Banner", then: {
+				}, else: {
 					#banner_ad: {
 						display: none
 					}

@@ -109,7 +109,6 @@
 					if-any: [
 						{
 							if-all: [
-								{ if: =ad.cache.Cube.type, equals: "Cube", then: true, else: false },
 								=ad.cache.Cube.loaded,
 								{ if: ["383422586", "383422226", "383421746", "440015306"], contains: =ad.cache.Cube.lineItemID, then: false, else: true }
 							], 
@@ -118,7 +117,6 @@
 						},
 						{ 
 							if-all: [
-								{ if: =ad.cache.Cube.type, equals: "Cube", then: true, else: false },
 								{ if: =ad.cache.HalfScreen.loaded, then: false, else: true },
 								=ad.cache.Cube.loaded
 							],
@@ -169,10 +167,7 @@
 						}
 					},
 					else: {
-						if-all: [
-							{ if: =ad.cache.HalfScreen.type, equals: "HalfScreen", then: true, else: false },
-							=ad.cache.HalfScreen.loaded
-						], 
+						if: =ad.cache.HalfScreen.loaded, 
 						then: {
 							if-all: [
 								=intent.article,

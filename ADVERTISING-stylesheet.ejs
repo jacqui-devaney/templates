@@ -34,7 +34,7 @@
 					#front_page: {
 						display: inherit,
 						position: inherit,
-						top: {if: =landscape, then:568, else:824},
+						bottom: 0,
 						height: 90
 					},
 					#article_advertisement: {
@@ -46,9 +46,6 @@
 						right:0,
 						border-width:[0, 0, 0, 1],
 						border-color:#d8d8d8
-					},
-					#fullpage_container: {
-						height: 270
 					}
 				}
 			},
@@ -56,13 +53,12 @@
 				if: =scale.tablet, then: { 
 					if-all: [
 						{ if: =page.hasmedia, then: false, else: true },
-						{ if: =ad.cache.Skyscraper.type, equals: "Skyscraper", then: true, else: false },
 						=ad.cache.Skyscraper.loaded,
 						{ if: [1], contains: =page.number, then: false, else: true }
 					], then: {
 						if-all: [
 							=intent.article,
-							{ if: ["383422586", "383422226", "383421746", "440015306"], contains: =ad.cache.Skyscraper.lineItemID, then: true, else: false }
+							{ if: =phantomAdLineItemIDs, contains: =ad.cache.Skyscraper.lineItemID, then: true, else: false }
 						], then: {
 							#skyscraper_ad: {
 								position: absolute,
@@ -70,7 +66,7 @@
 								width: 1,
 								options: {
 									adType: "Skyscraper",
-									excludedLineItemIds: ["383422586", "383422226", "383421746", "440015306"]
+									excludedLineItemIds: =phantomAdLineItemIDs
 								}
 							},
 							#lastpage_ad_container: {
@@ -84,7 +80,7 @@
 								anchor-y:middle,
 								options: {
 									adType: "Skyscraper",
-									excludedLineItemIds: ["383422586", "383422226", "383421746", "440015306"]
+									excludedLineItemIds: =phantomAdLineItemIDs
 								}
 							},
 							#lastpage_ad_container: {
@@ -112,16 +108,14 @@
 					if-any: [
 						{
 							if-all: [
-								{ if: =ad.cache.Cube.type, equals: "Cube", then: true, else: false },
 								=ad.cache.Cube.loaded,
-								{ if: ["383422586", "383422226", "383421746", "440015306"], contains: =ad.cache.Cube.lineItemID, then: false, else: true }
+								{ if: =phantomAdLineItemIDs, contains: =ad.cache.Cube.lineItemID, then: false, else: true }
 							], 
 							then: true,
 							else: false
 						},
 						{ 
 							if-all: [
-								{ if: =ad.cache.Cube.type, equals: "Cube", then: true, else: false },
 								{ if: =ad.cache.HalfScreen.loaded, then: false, else: true },
 								=ad.cache.Cube.loaded
 							],
@@ -132,7 +126,7 @@
 					then: {
 						if-all: [
 							=intent.article,
-							{ if: ["383422586", "383422226", "383421746", "440015306"], contains: =ad.cache.Cube.lineItemID, then: true, else: false }
+							{ if: =phantomAdLineItemIDs, contains: =ad.cache.Cube.lineItemID, then: true, else: false }
 						], then: {
 							#small_ad_container: {
 								height: 1
@@ -140,7 +134,7 @@
 							#cube_ad: {
 								options: {
 									adType: "Cube",
-									excludedLineItemIds: ["383422586", "383422226", "383421746", "440015306"]
+									excludedLineItemIds: =phantomAdLineItemIDs
 								},
 								width: 1,
 								height: 1
@@ -166,20 +160,17 @@
 								height: 250,
 								options: {
 									adType: "Cube",
-									excludedLineItemIds: ["383422586", "383422226", "383421746", "440015306"]
+									excludedLineItemIds: =phantomAdLineItemIDs
 								}
 							}
 						}
 					},
 					else: {
-						if-all: [
-							{ if: =ad.cache.HalfScreen.type, equals: "HalfScreen", then: true, else: false },
-							=ad.cache.HalfScreen.loaded
-						], 
+						if: =ad.cache.HalfScreen.loaded, 
 						then: {
 							if-all: [
 								=intent.article,
-								{ if: ["383422586", "383422226", "383421746", "440015306"], contains: =ad.cache.HalfScreen.lineItemID, then: true, else: false }
+								{ if: =phantomAdLineItemIDs, contains: =ad.cache.HalfScreen.lineItemID, then: true, else: false }
 							], then: {
 								#small_ad_container: {
 									height: 1
@@ -187,7 +178,7 @@
 								#halfscreen_ad: {
 									options: {
 										adType: "HalfScreen",
-										excludedLineItemIds: ["383422586", "383422226", "383421746", "440015306"]
+										excludedLineItemIds: =phantomAdLineItemIDs
 									},
 									width: 1,
 									height: 1
@@ -210,7 +201,7 @@
 									height: 320,
 									options: {
 										adType: "HalfScreen",
-										excludedLineItemIds: ["383422586", "383422226", "383421746", "440015306"]
+										excludedLineItemIds: =phantomAdLineItemIDs
 									}
 								},
 								#cube_ad: {
@@ -237,7 +228,7 @@
 									height: 320,
 									options: {
 										adType: "HalfScreen",
-										excludedLineItemIds: ["383422586", "383422226", "383421746", "440015306"]
+										excludedLineItemIds: =phantomAdLineItemIDs
 									}
 								},
 								#cube_ad: {
@@ -292,7 +283,7 @@
 											else: false 
 										}
 									], then: {
-										if: ["383422586", "383422226", "383421746", "440015306"], contains: =ad.cache.Skyscraper.lineItemID, then: {
+										if: =phantomAdLineItemIDs, contains: =ad.cache.Skyscraper.lineItemID, then: {
 											#article_advertisement: {
 												position: absolute,
 												height: 1,
@@ -304,7 +295,7 @@
 												width: 1,
 												options: {
 													adType: "Skyscraper",
-													excludedLineItemIds: ["383422586", "383422226", "383421746", "440015306"]
+													excludedLineItemIds: =phantomAdLineItemIDs
 												}
 											}
 										}, else: {
@@ -325,7 +316,7 @@
 												anchor-y:middle,
 												options: {
 													adType: "Skyscraper",
-													excludedLineItemIds: ["383422586", "383422226", "383421746", "440015306"]
+													excludedLineItemIds: =phantomAdLineItemIDs
 												}
 											}
 										}
@@ -354,7 +345,7 @@
 												}
 											}
 										], then: {
-											if: ["383422586", "383422226", "383421746", "440015306"], contains: =ad.cache.Fullpage.lineItemID, then: {
+											if: =phantomAdLineItemIDs, contains: =ad.cache.Fullpage.lineItemID, then: {
 												#fullpage_container: {
 													position: absolute,
 													height: 1,
@@ -363,7 +354,7 @@
 												#fullpage_ad: {
 													options: {
 														adType: "FullPage",
-														excludedLineItemIds: ["383422586", "383422226", "383421746", "440015306"]
+														excludedLineItemIds: =phantomAdLineItemIDs
 													},
 													position: absolute,
 													height: 1,
@@ -373,7 +364,7 @@
 												#fullpage_ad: {
 													options: {
 														adType: "FullPage",
-														excludedLineItemIds: ["383422586", "383422226", "383421746", "440015306"]
+														excludedLineItemIds: =phantomAdLineItemIDs
 													},
 													anchor-x:center,
 													display: inherit,
@@ -432,7 +423,7 @@
 								height: 90,
 								options: {
 									adType: "Banner",
-									excludedLineItemIds: ["383422586", "383422226", "383421746", "440015306"]
+									excludedLineItemIds: =phantomAdLineItemIDs
 								}
 							}
 						}, else: {

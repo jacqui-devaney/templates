@@ -525,11 +525,14 @@
 	<box id="b3" embed="article" class="columns-4 landscape-xposition-13 portrait-xposition-5 maude unit_plain unit_166" module="TOP-IMAGE_module.xml" />
 	<box id="b4" embed="article" class="columns-4 xposition-9  maude unit_plain unit_50" module="CONTINUATION-dynamic_module.xml" />
 
-    <box id="cube_ad_container" class="phone_only maude unit_ad">
-        <box id="cube_ad" class="ad-fullpage" embed="fullpagead">
-            <p id="ad_headline" class="ad_headline">ADVERTISEMENT</p>
-        </box>
-    </box>
+	<box id="small_ad_container" class="phone_only">
+		<box id="cube_ad" embed="fullpagead">
+			<p id="ad_headline">ADVERTISEMENT</p>
+		</box>
+		<box id="halfscreen_ad" embed="fullpagead">
+			<p id="ad_headline">ADVERTISEMENT</p>
+		</box>
+	</box>
 
     <box id="footer" class="phone_only    maude unit_plain unit_50">
         <box id="footerstrapinner">

@@ -3,8 +3,17 @@
 		=$,
 		{
 			phantomAdLineItemIDs: ["383422586", "383422226", "383421746", "440015306"],
-			portrait: { if: =view.width, less-than: =view.height },
-			landscape: { if: =view.width, more-than: =view.height },
+
+			portrait: { if-all: [
+				{ if: =display.width.regular, then: true, else: false },
+				{ if: =display.height.regular, then: true, else: false },
+				{ if: =view.width, less-than: =view.height, then: true, else: false }
+			], then: true, else: false},
+			landscape: { if-all: [
+				{ if: =display.width.regular, then: true, else: false },
+				{ if: =display.height.regular, then: true, else: false },
+				{ if: =view.width, more-than: =view.height, then: true, else: false }
+			], then: true, else: false},
 
 			scale: {
 				width: { if: =view.width, more-than: 480, then: {
@@ -20,24 +29,15 @@
 					else: { $divide: [=view.height, 768] }
 				}, else: 1},
 
-				phone: { if-any: [=display.width.compact, =display.width.regular], then: =display.width.compact, else:
-					{ if: =app.idiom, equals: "phone", then: true, else: false }
-				},
-
-				tablet: { if-any: [=display.width.compact, =display.width.regular], then: =display.width.regular, else:
-					{ if: =app.idiom, equals: "tablet", then: true, else: false }
-				},
+				phone: =display.width.compact,
+				tablet: =display.width.regular,
 
 				rail: { if-all: [
 					{ if: =app.idiom, equals: "tablet", then: true, else: false },
 					=display.width.compact,
 					=display.height.regular
-				], then: true, else: false},
-
-				old_phone: { if: =app.idiom, equals: "phone", then:true, else:false },
-				old_tablet: { if: =app.idiom, equals: "tablet" }
+				], then: true, else: false}
 			},
-
 
 			justify: "left",
 

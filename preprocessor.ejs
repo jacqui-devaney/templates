@@ -6,12 +6,12 @@
 
 			portrait: { if-all: [
 				{ if: =app.idiom, equals: "tablet", then: true, else: false },
-				{ if: =view.width, at-least: 768, then: true, else: false },
+				{ if: =view.width, at-least: 700, then: true, else: false },
 				{ if: =view.width, less-than: =view.height, then: true, else: false }
 			], then: true, else: false},
 			landscape: { if-all: [
 				{ if: =app.idiom, equals: "tablet", then: true, else: false },
-				{ if: =view.width, at-least: 768, then: true, else: false },
+				{ if: =view.width, at-least: 700, then: true, else: false },
 				{ if: =view.width, more-than: =view.height, then: true, else: false }
 			], then: true, else: false},
 

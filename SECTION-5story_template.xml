@@ -57,6 +57,9 @@
 	<style> {
 		$switch: [
 			{if: =scale.rail, then: {
+				#tabbar-container:{
+					display: none
+				}
 			}},
 			{if: =scale.phone, then: {
 				#page_details: {

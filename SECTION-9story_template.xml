@@ -59,6 +59,9 @@
 			{if: =scale.rail, then: {
 				#footer:{
 					display: none
+				},
+				#tabbar-container:{
+					display: none
 				}
 			}},
 			{if: =scale.phone, then: {

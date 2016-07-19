@@ -58,6 +58,9 @@
 	<style> {
 		$switch: [
 			{if: =scale.rail, then: {
+				#footer:{
+					display: none
+				},
 				#tabbar-container:{
 					display: none
 				}

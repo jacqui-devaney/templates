@@ -27,13 +27,12 @@
 			},
 			.module_headline: {
 				font-name: WhitneySSm-Semibold,
-				font-size: 26,
-				line-height: 33,
+				font-size: 22,
+				line-height: 26,
 				color: #2b3333,
 				letter-spacing: 2.0,
 				text-align: center,
-				padding: [6, 20, -6, 20],
-				text-transform: uppercase
+				padding: [6, 20, -6, 20]
 			},
 			#deco_container: {
 				padding: [21, 0, 12, 0]
@@ -50,7 +49,7 @@
 			},
 			.module_summary: {
 				text-align: center,
-				font-name: ChronicleSSm-Book,
+				font-name: ChronicleSSmBook-Regular,
 				font-size: 16,
 				line-height: 22,
 				color: #878f8f

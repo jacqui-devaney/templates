@@ -35,7 +35,8 @@
 			.summary-image: {
 				height: {$multiply: [=view.width, .668 ]},
 				display:inherit,
-				padding: [0, 20, 0, 20]
+				padding: [21, 20, 12, 20],
+				background-color: white
 			},
 			#summary: {
 				display: inherit,
@@ -74,10 +75,8 @@
 		<panel id="headline">
 			<box id="top_diamond_box"><p class="diamond-p"><mark class="diamond-mark"/></p></box>
 			<p class="module_flashline"><mark class="flashline-mark" /></p>
+			<image class="summary-image" embed="deco-image"/>
 			<p class="module_headline"><mark class="m_headline" /></p>
-		</panel>
-		<panel id="deco_container" embed="deco-image">
-			<image class="summary-image"/>
 		</panel>
 		<panel id="body">
 				<box id="bottom_diamond_box"><p class="diamond-p"><mark class="diamond-mark"/></p></box>

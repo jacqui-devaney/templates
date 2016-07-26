@@ -31,7 +31,8 @@
 			},
 			#deco_container: {
 				padding: [21, 20, 12, 20],
-				width: =view.width
+				width: =view.width,
+				position: relative
 			},
 			.summary-image: {
 				height: {$multiply: [=view.width, .668 ]},

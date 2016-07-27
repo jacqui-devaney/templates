@@ -23,19 +23,19 @@
 				letter-spacing: 2.0,
 				display: default,
 				text-align: center,
-				padding: [4, 20, -6, 20]
+				padding: [4, 20, -3, 20]
 			},
 			.module_headline: {
 				text-align: center,
-				padding: [6, 20, -6, 20]
+				padding: [6, 20, 0, 20]
 			},
 			#deco_container: {
-				padding: [21, 20, 12, 20],
+				padding: [15, 20, 12, 20],
 				width: =view.width,
 				position: relative
 			},
 			.summary-image: {
-				height: {$multiply: [=view.width, .668 ]},
+				height: {$multiply: [=view.width, .5 ]},
 				display:inherit,
 				width: {$subtract: [=view.width, 40 ]},
 				padding: [0, 0, 0, 0],
@@ -44,7 +44,7 @@
 			#summary: {
 				display: inherit,
 				text-align:left,
-				padding: [4, 20, 0, 20]
+				padding: [3, 20, 0, 20]
 			},
 			.module_summary: {
 				text-align: center,

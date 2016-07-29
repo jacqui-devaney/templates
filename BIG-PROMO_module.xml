@@ -1,0 +1,91 @@
+<jpml id="SMALL-PROMO_module">
+	<style src="GLOBAL-stylesheet.ejs" />
+	<style src="GLOBAL_MODULES-stylesheet.ejs" />
+	<style src="PHONE-MODULES-stylesheet.ejs" />
+	<style>{
+		jpml: {
+			background-color: =options.background_color,
+			border-width: [1, 0, 0, 0],
+			padding: [5, 0, 0, 0],
+			border-color: #d8d8d8
+		}
+	}</style>
+	<style>{
+		if: =scale.phone, then: {
+			#headline: {
+				padding: [14, 0, 0, 0]
+			},
+			.module_flashline: {
+				font-name: WhitneySSm-Medium,
+				font-size: 12,
+				line-height: 22,
+				color: #2fbfbf,
+				letter-spacing: 2.0,
+				display: default,
+				text-align: center,
+				padding: [4, 20, -3, 20]
+			},
+			.module_headline: {
+				text-align: center,
+				padding: [6, 20, 0, 20]
+			},
+			#deco_container: {
+				padding: [15, 20, 12, 20],
+				width: =view.width,
+				position: relative
+			},
+			.summary-image: {
+				height: {$multiply: [=view.width, .5 ]},
+				display:inherit,
+				width: {$subtract: [=view.width, 40 ]},
+				padding: [0, 0, 0, 0],
+				background-color: white
+			},
+			#summary: {
+				display: inherit,
+				text-align:left,
+				padding: [3, 20, 0, 20]
+			},
+			.module_summary: {
+				text-align: center,
+				font-name: ChronicleSSmBook-Regular,
+				font-size: 16,
+				line-height: 22,
+				color: #878f8f
+			},
+			#top_diamond_box: {
+				padding: [0, 0, 0, 0]
+			},
+			.diamond-p: {
+				font-name: DJ5Utility-Regular,
+				font-size: 12,
+				line-height: 12,
+				color: #cfd7d7,
+				text-align: center,
+				padding: [0, 0, 0, 0]
+			},
+			.diamond-mark: {
+				content: "\uE013"
+			},
+			#bottom_diamond_box: {
+				bottom: 0,
+				padding: [6, 0, 21, 0]
+			}
+		}
+	}</style>
+
+	<panel id="vertical">
+		<panel id="headline">
+			<box id="top_diamond_box"><p class="diamond-p"><mark class="diamond-mark"/></p></box>
+			<p class="module_flashline"><mark class="flashline-mark" /></p>
+			<box id="deco_container" embed="deco-image">
+				<image class="summary-image"/>
+			</box>
+			<p class="module_headline"><mark class="m_headline" /></p>
+		</panel>
+		<panel id="body">
+				<box id="bottom_diamond_box"><p class="diamond-p"><mark class="diamond-mark"/></p></box>
+				<p id="summary" class="body"><mark class="module_summary" /></p>
+		</panel>
+	</panel>
+</jpml>

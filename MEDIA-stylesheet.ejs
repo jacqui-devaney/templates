@@ -4,17 +4,20 @@
 			#media_container: {
 				display: {if: =page.hasmedia, then: inherit, else: none},
 				padding: {if: =scale.phone, then: [0, 0, 0, 0], else: [0, 0, 5, 0] },
-				position: relative,
+				left: 0,
+				top: 0,
+				width: {$add: [=size.phone_media_container_width, =size.phone_media_asset_left_origin]},
 				layout-grid-line: 0
 			},
 			#media_asset: {
 				position: relative,
-				left: 0,
+				left: =size.phone_media_asset_left_origin,
+				top: 0,
 				right: 0,
 				height: {$ceiling: [
 					{if: =scale.phone, then: {
 						$switch: [
-							{$divide: [{$subtract:[=view.width, {if: =page.number, equals: 0, then: 0, else: 20}]}, =media.aspect]},
+							{$divide: [{$subtract: [=size.phone_media_container_width, 10]}, =media.aspect]},
 							{$subtract:[=view.height, 220]}
 						]
 					}, else: {

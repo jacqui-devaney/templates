@@ -26,7 +26,12 @@
             padding: [0, 0, 20, 0]
         },
         #media_asset:{
-            padding: [{if: =media.height, more-than: =media.width, then: -18, else: 0}, {if: =media.height, more-than: =media.width, then: 20, else: 4}, {if: =media.height, more-than: =media.width, then: -10, else: 10}, {if: =media.height, more-than: =media.width, then: 16, else: 4}]
+            padding: [
+				{if: =media.height, more-than: =media.width, then: -18, else: 0},
+				{if: =media.height, more-than: =media.width, then: 20, else: 4},
+				{if: =media.height, more-than: =media.width, then: -10, else: 10},
+				{if: =media.height, more-than: =media.width, then: 16, else: 4}
+            ]
         },
         #media_caption: {
             layout-grid-line: 1,
@@ -51,23 +56,22 @@
 		<h2 class="article_subhed" embed="subhed" />
 	</panel>
 
-	<box id="media_container">
-		<p id="media_title"><mark id="mark_media_title"/></p>
-        <panel id="media_vr_header">
-            <p id="media_vr_header_left"><mark id="mark_media_vr_header_left"/></p>
-            <p id="media_vr_header_right"><mark id="mark_media_vr_header_right"/></p>
-        </panel>
-        <box id="media_asset" embed="media"/>
-		<p id="media_vr_footer"><mark id="mark_media_vr_footer"/></p>
-        <p id="media_caption"><mark id="mark_caption" /></p>
-        <p id="media_vr_link"><a href="http://wsj.com/virtual-reality"><mark id="mark_media_vr_link"/></a></p>
-    </box>
-
 	<panel id="body_container">
+
+		<box id="media_container">
+			<p id="media_title"><mark id="mark_media_title"/></p>
+	        <panel id="media_vr_header">
+	            <p id="media_vr_header_left"><mark id="mark_media_vr_header_left"/></p>
+	            <p id="media_vr_header_right"><mark id="mark_media_vr_header_right"/></p>
+	        </panel>
+	        <box id="media_asset" embed="media"/>
+			<p id="media_vr_footer"><mark id="mark_media_vr_footer"/></p>
+	        <p id="media_caption"><mark id="mark_caption" /></p>
+	        <p id="media_vr_link"><a href="http://wsj.com/virtual-reality"><mark id="mark_media_vr_link"/></a></p>
+	    </box>
+
 		<p class="article_byline" embed="byline"></p>
-		<p class="article_pubdate">Updated
-			<span  embed="pubdate-string"/>
-		</p>
+		<p class="article_pubdate">Updated <span embed="pubdate-string"/></p>
 		<panel class="article_body" embed="body"/>
 	</panel>
 

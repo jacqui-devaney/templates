@@ -22,8 +22,8 @@
 						]
 					}, else: {
 						$min: [{$max: [{$switch: [
-							{if: =media.width, less-than: 360, then: {$divide: [236, =media.aspect]}},
-							{if: =media.width, more-than: 484, then: {$divide: [484, =media.aspect]}},
+							{if: =media.width, less-than: 720, then: {$divide: [236, =media.aspect]}},
+							{if: =media.width, more-than: 968, then: {$divide: [484, =media.aspect]}},
 							{$divide: [236, =media.aspect]}
 						]}, {$multiply: [.1, =view.height]}]}, {$multiply: [.69, =view.height]}]
 					}}

@@ -23,20 +23,20 @@
 		{if: =portrait, then: {
 			#media_container: {
 				top: 6,
-				left: {if: =media.width, less-than: 360, then: 248, else: {if: =media.width, more-than: 484, then: 248, else: 248}},
+				left: {if: =media.width, less-than: 720, then: 248, else: {if: =media.width, more-than: 968, then: 248, else: 248}},
 				width: {$switch: [
-					{if: =media.width, less-than: 360, then: 228},
-					{if: =media.width, more-than: 484, then: 477},
+					{if: =media.width, less-than: 720, then: 228},
+					{if: =media.width, more-than: 968, then: 477},
 					228
 				]}
 			}
         }, else: {
 			#media_container: {
 				top: 10,
-				left: {if: =media.width, less-than: 360, then: 248, else: {if: =media.width, more-than: 484, then: 248, else: 248}},
+				left: {if: =media.width, less-than: 720, then: 248, else: {if: =media.width, more-than: 968, then: 248, else: 248}},
 				width: {$switch: [
-					{if: =media.width, less-than: 360, then: 236},
-					{if: =media.width, more-than: 484, then: 484},
+					{if: =media.width, less-than: 720, then: 236},
+					{if: =media.width, more-than: 968, then: 484},
 					236
 				]}
 			}

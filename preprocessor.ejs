@@ -87,8 +87,19 @@
 				rail_height_without_image: 104,
 				continuation_height_normal: 90,
 				continuation_height_large: 270,
-				continuation_height_strap: 226
+				continuation_height_strap: 226,
+				phone_media_container_width: { if-all: [
+					{if: =page.number, equals: 0, then: true, else: false},
+					{if: "=article.media[page.mediaindex].type", equals: video, then: true, else: false},
+					{if: "=article.media[page.mediaindex].height", more-than: "=article.media[page.mediaindex].width", then: true, else: false}
+				], then: 167, else: =view.width},
+				phone_media_asset_left_origin: { if-all: [
+					{if: =page.number, equals: 0, then: true, else: false},
+					{if: "=article.media[page.mediaindex].type", equals: video, then: true, else: false},
+					{if: "=article.media[page.mediaindex].height", more-than: "=article.media[page.mediaindex].width", then: true, else: false}
+				], then: 15, else: 0}
 			},
+
 			tablet_footer_tips: [
 				"You can move the WSJ icon from the Newsstand folder to your home screen.",
 				"Your WSJ app supports virtual reality video. Look for a moving play button.",

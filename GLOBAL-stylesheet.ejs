@@ -28,8 +28,13 @@
 	},
 
 	#body-first-media: {
-	    display: none
+	    display: none,
+	    page-break-after: never
 	},
+
+	#body-first-p: {
+	    page-break-after: never
+    },
 
 	#page_details: {
 		display: { if: =scale.tablet, then: inherit, else: none },

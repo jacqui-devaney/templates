@@ -5,7 +5,7 @@
 	<style src="PHONE-MODULES-stylesheet.ejs" />
 	<style>{
 		jpml: {
-			padding: { if: =options.show_image, then: [10, 0, 0, 0], else:none },
+			padding: { if: =options.show_image, then: [0, 0, 0, 0], else:none },
 			background-color: =options.background_color,
 			border-color: #e7ebeb
 		}
@@ -74,7 +74,7 @@
 	<style>{
 		if: =scale.phone, then: {
 			.module_headline: {
-				padding: [0, 20, 4, 20]
+				padding: [-10, 19.5, 4, 19.5]
 			},
 			image: {
 				height: {$multiply: [=view.width, .665 ]},
@@ -139,7 +139,7 @@
 				font-name:WhitneySSm-Medium,
 				font-size:14,
 				line-height:20,
-				color: #878f8f,
+				color: #2b3333,
 				display: none
 			},
 			#summary: {

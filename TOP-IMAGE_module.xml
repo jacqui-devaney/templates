@@ -70,7 +70,7 @@
 	<style>{
 		if: =scale.phone, then: {
 			.module_headline: {
-				padding: [0, 20, 4, 20]
+				padding: [8, 19.5, 4, 19.5]
 			},
 			image: {
 				height: {$multiply: [=view.width, .665 ]},
@@ -89,7 +89,7 @@
 			#summary: {
 				display: inherit,
 				text-align:left,
-				padding: [0, 20, 0, 20]
+				padding: [0, 20, 8, 20]
 			},
 			.opinion_dek: {
 				display: none
@@ -112,11 +112,11 @@
 				}, else: {if: =view.height, less-than: 200, then: [0, 20, 14, 20], else: [0, 4, 0, 4]}
 			},
 			.opinion_flashline: {
-				font-name: WhitneySSm-Semibold,
+				font-name: WhitneySSm-Medium,
 				font-size:12,
-				line-height: 22,
+				line-height: 18,
 				text-transform:uppercase,
-				color: #878f8f,
+				color: #2fbfbf,
 				padding: [-11, 0, 4, 20],
 				display: {if: =page.section, equals: "OPINION", then: none, else: {if: =article.category, equals: "Opinion", then: inherit, else: none}}
 			}
@@ -130,12 +130,15 @@
                 text-transform:uppercase,
                 padding:[0, 0, 6, 0]
             },
+            <!-- This is the deck that can be toggled in ITP editions via xavier -->
 			.opinion_dek:{
 				font-name:WhitneySSm-Medium,
-				font-size:14,
-				line-height:20,
+				font-size: 12,
+				line-height: 18,
 				color: #878f8f,
-				display: none
+				display: none,
+				padding:[0, 0, 10, 0]
+
 			},
 			#summary: {
 				display: none

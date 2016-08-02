@@ -5,16 +5,16 @@
 	.article_headline: {
 		font-name: ChronicleDisplay-Semi,
 		font-size: 41,
-		line-height:45,
-		color:#2b3333,
+		line-height: 45,
+		color: #2b3333,
 		padding:[5, 0, 5, 0]
 	},
 	.article_subhed: {
 		font-name: WhitneySSm-Book,
-		text-align:left,
-		font-size:17,
-		line-height:25,
-		color:#2b3333
+		text-align: left,
+		font-size: 15,
+		line-height: 25,
+		color: #2b3333
 	},
 	.module_flashline: {
 		font-size:{$multiply: [12, =view.zoomlevel]},
@@ -22,14 +22,14 @@
 	},
 	.byline: {
 		font-name: ChronicleSSmBook-Italic,
-		font-size:{$multiply: [14, =view.zoomlevel]},
-		line-height:{$multiply: [20, =view.zoomlevel]},
-		color:#2b3333,
+		font-size: {$multiply: [14, =view.zoomlevel]},
+		line-height: {$multiply: [20, =view.zoomlevel]},
+		color: #2b3333,
 		padding: [0,0,{$multiply: [20, =view.zoomlevel]},0]
 	},
 	h2: {
-		font-name:{if: =intent.article, then:ChronicleSSmMedium-Regular, else:ChronicleSSmMedium-Regular},
-		text-indent:0
+		font-name: {if: =intent.article, then:ChronicleSSmMedium-Regular, else:ChronicleSSmMedium-Regular},
+		text-indent: 0
 	},
 	.article_body: {
 		column-count: { if: =scale.tablet, then: { if: =portrait, then: 3, else: 4 } },
@@ -37,9 +37,9 @@
 		font-size:{$multiply: [14, =view.zoomlevel]},
 		line-height:{$multiply: [20, =view.zoomlevel]},
 	    text-align: left,
-	    hyphens:auto,
-		color:#2b3333,
-		text-indent:=text.indent
+	    hyphens: auto,
+		color: #2b3333,
+		text-indent: =text.indent
 	},
 	strong: {
 		font-name:{if: =intent.article, then:ChronicleSSmMedium-Regular, else:ChronicleSSmMedium-Regular}
@@ -67,7 +67,7 @@
     },
 	.list-item-bullet: {
 		content: "\u00a0\u2022 ",
-        color:#a7afaf
+        color: #a7afaf
 	},
 	.blockquote: {
 		padding: [0, 0, 10, 20]

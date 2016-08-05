@@ -4,6 +4,9 @@
 	<style src="ARTICLE-stylesheet.ejs" />
 	<style src="MEDIA-stylesheet.ejs" />
 	<style>{
+		#media_container: {
+			width: =view.width
+		},
 		#large_media_container: {
 			top: 0,
 			left: 0,
@@ -50,17 +53,13 @@
 			text-transform: { if: =page.section, equals: WSJ_MAGAZINE, then: uppercase }
 		},
         #caption_box: {
-            background-color: black,
             position: relative,
-            left: 0,
-            right: 0,
-            bottom: 0
+            display: none
         },
         #media_caption: {
             font-name: "DJ5Exchange-Medium",
             font-size: 11,
             line-height: 16,
-            color: white,
             padding: [12]
         },
 		#body_container: {
@@ -98,7 +97,7 @@
 	            <box id="large_media" embed="media"/>
             </box>
             <p id="media_vr_footer"><mark id="mark_media_vr_footer"/></p>
-            <box id="caption box">
+            <box id="caption_box">
                 <p id="media_caption"><mark id="mark_caption"/></p>
             </box>
             <p id="media_vr_link"><a href="http://wsj.com/virtual-reality"><mark id="mark_media_vr_link"/></a></p>

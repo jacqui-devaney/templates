@@ -118,7 +118,7 @@
 				text-transform:uppercase,
 				color: #878f8f,
 				padding: [0, 0, 0, 20],
-				display: {if: =page.section, equals: "OPINION", then: none, else: {if: =article.category, equals: "Opinion", then: inherit, else: none}}
+                display: {if: =page.section, equals: "OPINION", then: none, else: {if: =article.category, equals: "Opinion", then: inherit, else: none}}
 			}
 		}, else: {
             .opinion_flashline: {

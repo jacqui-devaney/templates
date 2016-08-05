@@ -88,16 +88,35 @@
 				continuation_height_normal: 90,
 				continuation_height_large: 270,
 				continuation_height_strap: 226,
-				phone_media_container_width: { if-all: [
-					{if: =page.number, equals: 0, then: true, else: false},
-					{if: "=article.media[page.mediaindex].type", equals: video, then: true, else: false},
-					{if: "=article.media[page.mediaindex].height", more-than: "=article.media[page.mediaindex].width", then: true, else: false}
-				], then: 167, else: =view.width},
-				phone_media_asset_left_origin: { if-all: [
-					{if: =page.number, equals: 0, then: true, else: false},
-					{if: "=article.media[page.mediaindex].type", equals: video, then: true, else: false},
-					{if: "=article.media[page.mediaindex].height", more-than: "=article.media[page.mediaindex].width", then: true, else: false}
-				], then: 15, else: 0}
+				media: {
+					if-all: [
+						=display.width.compact,
+						{ if: =page.number, equals: 0 }
+					], then: {
+						if-all: [
+							{if:"=article.media[page.mediaindex].type", equals: video},
+							{if: "=article.media[page.mediaindex].height", more-than: "=article.media[page.mediaindex].width"}
+						], then: {
+							is_inset: true,
+							width: {$divide: [{$subtract: [=view.width, 60]}, 2]},
+							left_border: 20,
+							right_border: -10,
+							caption_padding: 0
+						}, else: {
+							is_inset: false,
+							width: {$subtract: [=view.width, 10]},
+							left_border: 5,
+							right_border: 5,
+							caption_padding: 15
+						}
+					}, else: {
+						is_inset: false,
+						width: {$subtract: [=view.width, 40]},
+						left_border: 0,
+						right_border: 0,
+						caption_padding: 0
+					}
+				}
 			},
 
 			tablet_footer_tips: [

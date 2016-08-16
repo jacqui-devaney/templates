@@ -75,12 +75,12 @@
 	<style>{
 		if: =scale.phone, then: {
 			.opinion_flashline: {
-				font-name: WhitneySSm-Semibold,
-				font-size:12,
-				line-height: 22,
-				text-transform:uppercase,
+				font-name: WhitneySSm-Medium,
+				font-size: 12,
+				line-height: 18,
+				text-transform: uppercase,
 				color: #878f8f,
-				padding: [-11, 0, 4, 24],
+				padding: [4, 0, 0, 20],
 				display: {if: =page.section, equals: "OPINION", then: none, else: {if: =article.category, equals: "Opinion", then: inherit, else: none}}
 			},
 			.module_flashline:{
@@ -88,13 +88,13 @@
 			},
 			.module_headline: {
 				color:{if: =article.read, then: color.articleReadColor},
-				padding: [0, 16, 0, 20]
+				padding: [8, 19.5, 4, 19.5]
 			},
 			p: {
-				padding: [0, 0, 0, 0]
+				padding: [0, 0, 8, 0]
 			},
 			.body: {
-				padding: [4, 16, 0, 20]
+				padding: [0, 20, 0, 20]
 			},
 			#article_status: {
 				padding: [{if: =page.section, equals: "OPINION", then: 3.5, else: {if: =article.category, equals: "Opinion", then: 18.5, else: 3.5}}, 0, 0, 4],
@@ -109,7 +109,7 @@
 			height: {
 				$switch: [
 					{if: =view.width, equals: 320, then: 78},
-					{if: =view.width, equals: 375, then: 100},
+					{if: =view.width, equals: 375, then: 107},
 					{if: =view.width, equals: 414, then: 122}
 				]}
 			},
@@ -131,11 +131,11 @@
 				display: {if: =page.section, equals: "OPINION", then: none, else: {if: =article.category, equals: "Opinion", then: inherit, else: none}},
 				layout-grid-line-offset: -13,
 				layout-grid-line: 20,
-				font-name:WhitneySSm-SemiBold,
-				font-size:11,
-				line-height:18,
+				font-name: WhitneySSm-SemiBold,
+				font-size: 11,
+				line-height: 18,
 				color: #a7afaf,
-				text-transform:uppercase
+				text-transform: uppercase
 			},
 			#strap: {
 				display: none

@@ -16,13 +16,6 @@
 			padding: [0, 16, 0, 16],
 			flow: article_body
 		},
-		.article_flashline: {
-            font-name: WhitneySSm-Semibold,
-            font-size: 13,
-            line-height: 22,
-            border-width: [0, 0, 1, 0],
-            border-color: #e1e0df
-        },
         #media_container:{
             padding: [0, 0, 19, 0]
         },

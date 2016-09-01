@@ -135,12 +135,15 @@
 				text-transform:uppercase,
 				padding:[0, 0, 6, 0]
 			},
+			   <!-- This is the deck that can be toggled in ITP editions via xavier -->
 			.opinion_dek:{
 				font-name:WhitneySSm-Medium,
-				font-size:14,
-				line-height:20,
-				color: #2b3333,
-				display: none
+				font-size: 12,
+				line-height: 18,
+				color: #878f8f,
+				display: none,
+				padding:[0, 0, 10, 0]
+
 			},
 			#summary: {
 				display: none

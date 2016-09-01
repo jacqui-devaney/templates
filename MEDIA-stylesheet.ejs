@@ -8,6 +8,7 @@
 				width: =size.media.width,
 				border-width: [0, =size.media.right_border, 0, =size.media.left_border],
 				border-color: transparent,
+				anchor-x: { if: =page.number, equals: 0, else: center },
 				layout-grid-line: 0
 			},
 			#media_asset: {

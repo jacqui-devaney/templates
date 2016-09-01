@@ -90,8 +90,7 @@
 				continuation_height_strap: 226,
 				media: {
 					if-all: [
-						=display.width.compact,
-						{ if: =page.number, equals: 0 }
+						=display.width.compact
 					], then: {
 						if-all: [
 							{if:"=article.media[page.mediaindex].type", equals: video},
@@ -99,8 +98,8 @@
 						], then: {
 							is_inset: true,
 							width: {$divide: [{$subtract: [=view.width, 60]}, 2]},
-							left_border: 20,
-							right_border: -10,
+							left_border: { if: =page.number, equals: 0, then: 20, else: 0 },
+							right_border: { if: =page.number, equals: 0, then: -10, else: 0 },
 							caption_padding: 0
 						}, else: {
 							is_inset: false,

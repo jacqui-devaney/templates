@@ -122,18 +122,20 @@
 		<h2 class="article_subhed" embed="subhed" />
 	</panel>
 
-	<box id="media_container">
-		<p id="media_title"><mark id="mark_media_title"/></p>
-        <panel id="media_vr_header">
-            <p id="media_vr_header_left"><mark id="mark_media_vr_header_left"/></p>
-            <p id="media_vr_header_right"><mark id="mark_media_vr_header_right"/></p>
-        </panel>
-        <box id="media_asset" embed="media"/>
-		<p id="media_vr_footer"><mark id="mark_media_vr_footer"/></p>
-        <p id="media_caption"><mark id="mark_caption" /></p>
-        <p id="media_vr_link"><a href="http://wsj.com/virtual-reality"><mark id="mark_media_vr_link"/></a></p>
-    </box>
-
+    <panel>
+    	<box id="media_container">
+    		<p id="media_title"><mark id="mark_media_title"/></p>
+            <panel id="media_vr_header">
+                <p id="media_vr_header_left"><mark id="mark_media_vr_header_left"/></p>
+                <p id="media_vr_header_right"><mark id="mark_media_vr_header_right"/></p>
+            </panel>
+            <box id="media_asset" embed="media"/>
+    		<p id="media_vr_footer"><mark id="mark_media_vr_footer"/></p>
+            <p id="media_caption"><mark id="mark_caption" /></p>
+            <p id="media_vr_link"><a href="http://wsj.com/virtual-reality"><mark id="mark_media_vr_link"/></a></p>
+        </box>
+    </panel>
+    
 	<panel id="body_container">
 		<p class="article_byline" embed="byline"></p>
 		<p class="article_pubdate">Updated

@@ -73,7 +73,6 @@
     }</style>
     <style>{
     	if: =scale.phone, then: {
-    	<!-- This is the opinion flashline that appears on section fronts -->
             .opinion_flashline: {
                 font-name: WhitneySSm-Medium,
                 font-size: 12,

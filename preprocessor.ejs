@@ -99,7 +99,7 @@
 							is_inset: true,
 							width: {$divide: [{$subtract: [=view.width, 60]}, 2]},
 							left_border: { if: =page.number, equals: 0, then: 20, else: 0 },
-							right_border: { if: =page.number, equals: 0, then: -10, else: 0 },
+							right_border: 0,
 							caption_padding: 0
 						}, else: {
 							is_inset: false,

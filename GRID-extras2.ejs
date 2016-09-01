@@ -12,7 +12,15 @@
 		}
 	},
 	#vertical-grid: {
-		top: { if: =scale.tablet, then: 68, else: inherit }
+		top: {
+			$switch: [
+				{ if: =scale.tablet, then: 68 },
+				{ if-all: [
+					=scale.phone,
+					{ if: =page.section, equals: "TOP_NEWS" }
+				], then: 52 }
+			]
+		}
 	},
 	.visual-content-padding: {
 		padding: [10, 0, 10, 0]

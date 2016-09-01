@@ -25,49 +25,55 @@
         #media_container:{
             padding: [0, 0, 20, 0]
         },
-        #media_asset:{
-            padding: [{if: =media.height, more-than: =media.width, then: -18, else: 0}, {if: =media.height, more-than: =media.width, then: 20, else: 4}, {if: =media.height, more-than: =media.width, then: -10, else: 10}, {if: =media.height, more-than: =media.width, then: 16, else: 4}]
-        },
         #media_caption: {
             layout-grid-line: 1,
             layout-grid-line-offset: 0,
             color: #4f5757,
             font-size: 12,
             line-height: 18,
-            font-name: "WhitneySSm-Book",
-            padding: { if-all: [
-                    { if: =page.number, equals: 0, then: true, else: false },
-                    { if: =scale.phone, then: true, else: false }
-                ], then: [0, 20, 0, 20], else: [0, 0, 0, 0]
-        }},
+            font-name: "WhitneySSm-Book"
+        },
         #mark_caption: {
             content: =media.caption
+        },
+        #byline-in-header: {
+        	if: =size.media.is_inset, else: { display: none }
+        },
+        #byline-below-media: {
+        	if: =size.media.is_inset, then: { display: none }
         }
 	}</style>
+
+    <box id="prototype">
+    	<box id="byline-pubdate-prototype">
+			<p class="article_byline" embed="byline"></p>
+			<p class="article_pubdate">Updated <span embed="pubdate-string"/></p>
+    	</box>
+    </box>
+
 	<p class="article_flashline" embed="flashline"/>
 
 	<panel id="header_top">
 		<p class="article_headline"><span embed="headline"/></p>
 		<h2 class="article_subhed" embed="subhed" />
+		<panel id="byline-in-header" embed="byline-pubdate"/>
 	</panel>
 
-	<box id="media_container">
-		<p id="media_title"><mark id="mark_media_title"/></p>
-        <panel id="media_vr_header">
-            <p id="media_vr_header_left"><mark id="mark_media_vr_header_left"/></p>
-            <p id="media_vr_header_right"><mark id="mark_media_vr_header_right"/></p>
-        </panel>
-        <box id="media_asset" embed="media"/>
-		<p id="media_vr_footer"><mark id="mark_media_vr_footer"/></p>
-        <p id="media_caption"><mark id="mark_caption" /></p>
-        <p id="media_vr_link"><a href="http://wsj.com/virtual-reality"><mark id="mark_media_vr_link"/></a></p>
-    </box>
-
 	<panel id="body_container">
-		<p class="article_byline" embed="byline"></p>
-		<p class="article_pubdate">Updated
-			<span  embed="pubdate-string"/>
-		</p>
+
+		<box id="media_container">
+			<p id="media_title"><mark id="mark_media_title"/></p>
+	        <panel id="media_vr_header">
+	            <p id="media_vr_header_left"><mark id="mark_media_vr_header_left"/></p>
+	            <p id="media_vr_header_right"><mark id="mark_media_vr_header_right"/></p>
+	        </panel>
+	        <box id="media_asset" embed="media"/>
+			<p id="media_vr_footer"><mark id="mark_media_vr_footer"/></p>
+	        <p id="media_caption"><mark id="mark_caption" /></p>
+	        <p id="media_vr_link"><a href="http://wsj.com/virtual-reality"><mark id="mark_media_vr_link"/></a></p>
+	    </box>
+
+		<panel id="byline-below-media" embed="byline-pubdate"/>
 		<panel class="article_body" embed="body"/>
 	</panel>
 

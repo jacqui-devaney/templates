@@ -4,23 +4,25 @@
 			#media_container: {
 				display: {if: =page.hasmedia, then: inherit, else: none},
 				padding: {if: =scale.phone, then: [0, 0, 0, 0], else: [0, 0, 5, 0] },
-				position: relative,
+				top: 0,
+				width: =size.media.width,
+				border-width: [0, =size.media.right_border, 0, =size.media.left_border],
+				border-color: transparent,
+				anchor-x: { if: =page.number, equals: 0, else: center },
 				layout-grid-line: 0
 			},
 			#media_asset: {
 				position: relative,
+				top: 0,
 				left: 0,
 				right: 0,
 				height: {$ceiling: [
 					{if: =scale.phone, then: {
-						$switch: [
-							{$divide: [{$subtract:[=view.width, {if: =page.number, equals: 0, then: 0, else: 20}]}, =media.aspect]},
-							{$subtract:[=view.height, 220]}
-						]
+						$divide: [=size.media.width, =media.aspect]
 					}, else: {
 						$min: [{$max: [{$switch: [
-							{if: =media.width, less-than: 360, then: {$divide: [236, =media.aspect]}},
-							{if: =media.width, more-than: 484, then: {$divide: [484, =media.aspect]}},
+							{if: =media.width, less-than: 720, then: {$divide: [236, =media.aspect]}},
+							{if: =media.width, more-than: 968, then: {$divide: [484, =media.aspect]}},
 							{$divide: [236, =media.aspect]}
 						]}, {$multiply: [.1, =view.height]}]}, {$multiply: [.69, =view.height]}]
 					}}
@@ -62,11 +64,7 @@
 		        line-height: 20,
 		        font-name: WhitneySSm-Book,
 		        border-color: #d8d8d8,
-				padding: { if-all: [
-						{ if: =page.number, equals: 0, then: true, else: false },
-						{ if: =scale.phone, then: true, else: false }
-					], then: [6, 10, 0, 10], else: [5, 0, 5, 0]
-				},
+		        padding: [0, =size.media.caption_padding, 0, =size.media.caption_padding],
 				text-indent: 0
 			},
 			#mark_caption: {

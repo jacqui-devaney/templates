@@ -97,7 +97,7 @@
 	#strap: {
 		display: { if:=options.show_strap, then:default, else:none },
 		padding: [8.5, 8, 8.5, 8],
-		border-color: red
+		border-color: #878f8f
     },
     #body-first-p:{
 		font-size:{$multiply: [16, =view.zoomlevel]},
@@ -129,9 +129,7 @@
 	.strap: {
 		font-size: 12,
 		line-height: 18,
-        text-transform: uppercase,
-        border-color: #e1e0df
-
+        text-transform: uppercase
 	},
 	.highlight_flashline: {
 		font-size: 12,
@@ -157,23 +155,23 @@
 		font-size: 12,
         line-height: 18,
         font-name: WhitneySSm-Medium,
-        color: red,
+        color: #878f8f,
 		text-transform: uppercase,
-        padding: [16,20,0,20]
+        padding: [10,20,0,20]
 	},
 	.article_headline: {
 		font-size: 28,
 		line-height: 32,
         font-name: "ChronicleDisplay-Semi",
 		color: #2b3333,
-		padding: [14, 19, 8, 19]
+		padding: [9, 19, 10, 19]
 	},
 	.article_subhed: {
 		font-name: WhitneySSm-Book,
 		font-size: 16,
 		line-height: 24,
         color: #878f8f,
-        padding: [0, 20, {if: =media.height, equals: 0, then: 16, else: 8}, 20]
+        padding: [0, 20, {if: =media.height, equals: 0, then: 16, else: 11}, 20]
 	},
 	.article_byline: {
         padding: [0, 20, 0, 20],
@@ -196,7 +194,7 @@
 		font-size: 12,
         line-height: 24,
         color: #878f8f,
-        padding: [0, 20, 16, 20]
+        padding: [0, 20, 15, 20]
 	},
 	.article_body: {
 		font-size:{$multiply: [16, =view.zoomlevel]},
@@ -253,7 +251,7 @@
 	},
 
 	.border-flashline-mark: {
-		line-height: 1,
+		line-height: 0,
 		color: transparent,
 		content: "unfortunate"
 	},
@@ -322,7 +320,7 @@
         padding: { if-all: [
                 { if: =page.number, equals: 0, then: true, else: false },
                 { if: =scale.phone, then: true, else: false }
-            ], then: [10, 20, 16, 20], else: [0, 0, 0, 0]
+            ], then: [12, 20, 16, 20], else: [0, 0, 0, 0]
     }},
 
 	#mark_caption: {
@@ -339,8 +337,8 @@
 		left: 0,
 		right: 0,
 		height: {$min: [{$max: [{$switch: [
-			{if: =media.width, less-than: 360, then: {$divide: [236, =media.aspect]}},
-			{if: =media.width, more-than: 484, then: {$divide: [484, =media.aspect]}},
+			{if: =media.width, less-than: 720, then: {$divide: [236, =media.aspect]}},
+			{if: =media.width, more-than: 968, then: {$divide: [484, =media.aspect]}},
 			{$divide: [236, =media.aspect]}
 		]}, {$multiply: [.1, =view.height]}]}, {$multiply: [.69, =view.height]}]},
 		options: {

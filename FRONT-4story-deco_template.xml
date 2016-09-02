@@ -90,6 +90,13 @@
             }}
 		]
 	} </style>
+	<style>{
+		.latest_news_box: {
+			options: {
+				reference: "//NOW/LATEST_NEWS"
+			}
+		}
+	}</style>
     <box id="page_details" class="tablet_only" embed="pagedescription" />
 	<box class="tablet_only latest_news_box xposition-1">
 			<p class="latest_news">LATEST NEWS</p>

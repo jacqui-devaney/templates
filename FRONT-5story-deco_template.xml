@@ -71,13 +71,6 @@
 		}}
 		]
 	}</style>
-	<style>{
-		.latest_news_box: {
-			options: {
-				reference: "//NOW/LATEST_NEWS"
-			}
-		}
-	}</style>
 	<box id="page_details" class="tablet_only" embed="pagedescription" />
 	<box id="vertical-grid">
 		<box class="tablet_only columns-3 xposition-1 yposition-3">

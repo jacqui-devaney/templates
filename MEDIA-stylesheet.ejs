@@ -68,7 +68,27 @@
 				text-indent: 0
 			},
 			#mark_caption: {
-				content: =media.caption
+				content: { 
+					if-all: [
+						=landscape,
+						{
+							if: {
+								$min: [{$max: [{$switch: [
+									{if: =media.width, less-than: 720, then: {$divide: [236, =media.aspect]}},
+									{if: =media.width, more-than: 968, then: {$divide: [484, =media.aspect]}},
+									{$divide: [236, =media.aspect]}
+								]}, {$multiply: [.1, =view.height]}]}, {$multiply: [.69, =view.height]}]
+							},
+							more-than: 400
+						},
+						{ if: { $count: =media.caption }, more-than: 130 }
+					], 
+					then: { $join: [
+						{ $substr: [=media.caption, 0, 130] },
+						=text.overflow
+					]},
+					else: =media.caption
+				}
 			}
 		},
 		{if: =media.type, equals: "vrvideo", then: {

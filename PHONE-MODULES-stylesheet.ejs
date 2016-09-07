@@ -99,14 +99,14 @@
 		padding: [8.5, 8, 8.5, 8],
 		border-color: #878f8f
     },
-    #body-first-p:{
+    #body-first-p:{ if: =intent.section, then: {
 		font-size:{$multiply: [16, =view.zoomlevel]},
         line-height: {$multiply: [24, =view.zoomlevel]},
         font-name: ChronicleSSmBook-Regular,
         text-indent: 0,
         text-align: left,
         hyphens: none
-    },
+    }},
 	.module_caption: {
         layout-grid-line: 1,
         layout-grid-line-offset: 0,
@@ -198,7 +198,7 @@
 	},
 	.article_body: {
 		font-size:{$multiply: [16, =view.zoomlevel]},
-        line-height: 24,
+        line-height: {$multiply: [24, =view.zoomlevel]},
         padding: [0, 20, 0, 20],
         font-name: ChronicleSSmBook-Regular,
         text-indent: 0,

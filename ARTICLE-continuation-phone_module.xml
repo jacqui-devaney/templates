@@ -11,7 +11,6 @@
             min-height: 0
         },
 		.article_body: {
-			line-height: {$multiply: [24, =view.zoomlevel]},
 			text-align: left,
             hyphens: auto
         },

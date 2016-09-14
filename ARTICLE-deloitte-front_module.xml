@@ -56,11 +56,6 @@
 			font-name: "WhitneySSm-Medium",
 			color: #222222
 		}},
-		{#media_caption:{
-			font-name: "WhitneySSm-Medium",
-			font-size: 12,
-			color: #666666
-		}},
 		{#mark_category:{
 			content: =article.category
 		}},

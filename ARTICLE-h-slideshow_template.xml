@@ -16,7 +16,7 @@
     },
 		#view: {if: =scale.phone, then: {
       width:=view.width,
-      height:{$multiply: [2, =view.height]}
+      height:{$multiply: [4, =view.height]}
     }, else: {
       top:0,
       bottom:44

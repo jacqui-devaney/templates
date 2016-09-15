@@ -32,12 +32,6 @@
 			flow: article_body
 		}},
 
-		{#media_caption:{
-			font-name: "WhitneySSm-Medium",
-			font-size: 12,
-			color: #666666
-		}},
-
 		{if: =portrait, then: {
 			#media_container: {
 				top: 0,

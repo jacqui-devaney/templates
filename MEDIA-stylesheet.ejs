@@ -3,7 +3,7 @@
 		{
 			#media_container: {
 				display: {if: =page.hasmedia, then: inherit, else: none},
-				padding: {if: =scale.phone, then: [0, 0, 0, 0], else: [0, 0, 5, 0] },
+				padding: {if: =scale.phone, then: [0, 0, 22, 0], else: [0, 0, 5, 0] },
 				top: 0,
 				width: =size.media.width,
 				border-width: [0, =size.media.right_border, 0, =size.media.left_border],
@@ -51,7 +51,8 @@
                 font-size: 10,
                 line-height: 20,
                 font-name: WhitneySSm-Medium,
-				text-transform:uppercase
+				text-transform:uppercase,
+		        padding: [0, =size.media.caption_padding, 0, =size.media.caption_padding]
             },
             #mark_credit: {
                 content: =media.credit
@@ -60,8 +61,8 @@
 				layout-grid-line: 0,
 				layout-grid-line-offset: 0,
 		        color: #878f8f,
-		        font-size: 13,
-		        line-height: 20,
+		        font-size: { if: =scale.phone, then: 12, else: 13 },
+		        line-height: { if: =scale.phone, then: 18, else: 20 },
 		        font-name: WhitneySSm-Book,
 		        border-color: #d8d8d8,
 		        padding: [0, =size.media.caption_padding, 0, =size.media.caption_padding],

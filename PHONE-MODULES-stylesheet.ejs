@@ -310,48 +310,6 @@
         padding: [0, 0, 56, 0],
         hyphens: none
     },
-    #media_caption: {
-        layout-grid-line: 1,
-        layout-grid-line-offset: 0,
-        color: #878f8f,
-        font-size: 12,
-        line-height: 18,
-        font-name: "WhitneySSm-Book",
-        padding: { if-all: [
-                { if: =page.number, equals: 0, then: true, else: false },
-                { if: =scale.phone, then: true, else: false }
-            ], then: [12, 20, 16, 20], else: [0, 0, 0, 0]
-    }},
-
-	#mark_caption: {
-        layout-grid-line: 1,
-        layout-grid-line-offset: 0,
-        color: #878f8f,
-        font-size: 12,
-        line-height: 18,
-        font-name: "WhitneySSm-Book"
-        },
-
-	#media_asset: {
-		position: relative,
-		left: 0,
-		right: 0,
-		height: {$min: [{$max: [{$switch: [
-			{if: =media.width, less-than: 720, then: {$divide: [236, =media.aspect]}},
-			{if: =media.width, more-than: 968, then: {$divide: [484, =media.aspect]}},
-			{$divide: [236, =media.aspect]}
-		]}, {$multiply: [.1, =view.height]}]}, {$multiply: [.69, =view.height]}]},
-		options: {
-			id: {
-				if: =page.mediaindex,
-				at-least: 0,
-				then: =page.mediaindex,
-				else: =page.number
-			},
-			hideCaption: true
-		},
-		padding: [4, 0, 0, 0]
-	},
 
 	#ad_inline_inner: {
 		pixels-per-point-x: 1,

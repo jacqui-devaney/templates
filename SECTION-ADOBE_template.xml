@@ -1,10 +1,11 @@
-<jpml id="SECTION-DELOITTE_template">
+<jpml id="SECTION-ADOBE_template">
 	<style src="GLOBAL-stylesheet.ejs"/>
 	<style src="GRID-stylesheet.ejs"/>
 	<style src="ADVERTISING-stylesheet.ejs"/>
 	
 	<style src="PHONE-stylesheet.ejs"/>
 	<style src="RAIL-stylesheet.ejs" />
+
 	<style>{
 		#page_details: {
 			options: {
@@ -26,25 +27,23 @@
 					display: none
 				},
                 #b1: {
-                height: {
-                    if: =view.width, more-than: 320, then:{
+                    height: {
                         if: {$count:[=articles.b1.images.phone]},
-                        more-than: 0,
-                        then: {$multiply: [=device.width, 1.137]},
-                        else: {$multiply: [=device.width, 0.6]}
-                        }, else: {
-                        if: {$count:[=articles.b1.images.phone]},
-                        more-than: 0,
-                        then: {$multiply: [=view.width, 1.32]},
-                        else: {$multiply: [=view.width, 0.6]}
-                        }
-                    },
-                        padding: [{if: {$count:[=articles.b1.images.phone]}, more-than: 0, then: 0, else: 22}, 0, 0, 0],
-                        options: {
-                            module: url(TOP-IMAGE_module.xml),
-                            show_body: true,
-                            medium_headline: true
-                    }
+                            more-than: 0,
+                            then: {$multiply: [=device.width, 1.137]},
+                            else: {$multiply: [=view.width, 0.6]}
+                            }, else: {
+                            if: {$count:[=articles.b1.images.phone]},
+                            more-than: 0,
+                            then: {$multiply: [=view.width, 1.32]},
+                            else: {$multiply: [=view.width, 0.6]}
+                        },
+                    padding: [{if: {$count:[=articles.b1.images.phone]}, more-than: 0, then: 0, else: 22}, 0, 0, 0],
+                    options: {
+						module: url(TOP-IMAGE_module.xml),
+						show_body: true,
+						medium_headline: true
+					}
 				},
 
 				#b2: {
@@ -122,22 +121,19 @@
 					line-height: 14,
 					padding: [0,0,10,0]
 				},
-				#deloitte_subhed: {
+				#sponsored_subhed: {
 					font-name: "WhitneySSm-Medium",
 					font-size:12,
 					line-height:15,
 					padding: [10,10,0,10]
 				},
-				#deloitteheader: {
+				#sponsoredheader: {
 					padding: [15,0,12,0]
 				},
 				#latest_news_mark: {
 					content: {
 						$switch: [
-							{ if: =page.section, equals: CIO, then: "Latest Technology News" },
-							{ if: =page.section, equals: CFO, then: "Latest Finance News" },
-							{ if: =page.section, equals: CMO, then: "Latest News" },
-							{ if: =page.section, equals: RISK_AND_COMPLIANCE, then: "Latest News" }
+							{ if: =page.section, equals: CMO_TODAY, then: "Latest Finance News" }
 						]
 					}
 				},
@@ -356,7 +352,7 @@
 					middle_align_text: true
 				}
 			},
-			#deloitteheader: {
+			#sponsoredheader: {
 				top: 0,
 				height: 130
 			},
@@ -364,7 +360,7 @@
 				font-name: "WhitneySSm-Semibold",
 				padding: [12,0,12,0]
 			},
-			#deloitte_subhed: {
+			#sponsored_subhed: {
 				font-name: "WhitneySSm-Medium",
 				padding: [12,12,0,12],
 				line-height:18
@@ -377,52 +373,40 @@
 			#latest_news_mark: {
 				content: {
 					$switch: [
-						{ if: =page.section, equals: CIO, then: "LATEST TECHNOLOGY NEWS" },
-						{ if: =page.section, equals: CFO, then: "LATEST FINANCE NEWS" },
-						{ if: =page.section, equals: CMO, then: "LATEST NEWS" },
-						{ if: =page.section, equals: RISK_AND_COMPLIANCE, then: "LATEST NEWS" }
+						{ if: =page.section, equals: CMO, then: "FEATURED" }
 					]
 				}
 			}
 		}
 	}</style>
 	<style>{
-		#deloitteheader: {
-			background-color: #e8eeee,
+		#sponsoredheader: {
+		    background-color: #f6f8f9,
 			text-align:center,
 			color: #333333,
 			font-size:14
 		},
-		#deloitte_subhed_mark: {
-			content: {
-				$switch: [
-					{ if: =page.section, equals: CIO, then: "CIO Insights and Analysis from Deloitte" },
-					{ if: =page.section, equals: CFO, then: "CFO Insights and Analysis from Deloitte" },
-					{ if: =page.section, equals: CMO, then: "CMO Insights and Analysis from Deloitte" },
-					{ if: =page.section, equals: RISK_AND_COMPLIANCE, then: "Risk Management, Strategy and Analysis from Deloitte" }
-				]
-			}
-		},
-		#deloitteimage: {
-			background-image: "url(deloitte@2x.png)",
+		#sponsoredimage: {
+			background-image: "url(CMO-module@2x.png)",
 			position: relative,
 			background-position: aspect-fit,
-			left: 0,
+            top: {if: =scale.tablet, then:20, else:10},
+			left: 10,
 			right: 0,
-			height: 20,
-			width: 103,
-			anchor-x: center
-		},
-		#deloitte_list: {
+            height: 83,
+            width: 200,
+            anchor-x: {if: =scale.tablet, then:center}
+            },
+		#sponsored_list: {
 			background-color: #e8eeee,
-			height:{if: =landscape, then:520, else:770},
-			top: 130,
+			height:{if: =landscape, then:530, else:780},
+			top: 120,
 			options: {
 				shadow_height: 40,
 				shadow_color: "rgba(.2, .2, .2, 0.5)"
 			}
 		},
-		#deloitte_inner: {
+		#sponsored_inner: {
 			display: none
 		}
 
@@ -432,59 +416,58 @@
 	<box id="b1" embed="article" class="landscape-columns-6 portrait-columns-8 xposition-1 maude unit_plain unit_418" module="RIGHT-IMAGE_module.xml" />
 	<box id="b2" embed="article" class="landscape-columns-6 portrait-columns-8 xposition-1 maude unit_plain unit_166" module="RIGHT-IMAGE_module.xml" />
 
-	<box id="deloitteheader" class="columns-4 landscape-xposition-13 portrait-xposition-9 maude unit_plain">
-		<p id="sponsored-content">CONTENT FROM OUR SPONSOR</p>
-		<panel id="deloitteimage-panel"><box id="deloitteimage" /></panel>
-		<p id="deloitte_subhed"><mark id="deloitte_subhed_mark" /></p>
+	<box id="sponsoredheader" class="columns-4 landscape-xposition-13 portrait-xposition-9 maude unit_plain">
+		<panel id="sponsoredimage-panel"><box id="sponsoredimage" /></panel>
+		<p id="sponsored_subhed"><mark id="sponsored_subhed_mark" /></p>
 	</box>
-	<box id="deloitte_list" class="tablet_only columns-4 landscape-xposition-13 portrait-xposition-9" embed="list">
-		<style src="DELOITTE-stylesheet.ejs"/>
-		<panel id="deloitte_inner">
-			<panel id="deloitte_item_1" class="deloitte_item deloitte_item_first">
-				<p class="deloitte_headline"><mark id="deloitte_headline_1"/></p>
-				<p class="deloitte_summary"><mark id="deloitte_summary_1"/></p>
+	<box id="sponsored_list" class="tablet_only columns-4 landscape-xposition-13 portrait-xposition-9" embed="list">
+		<style src="ADOBE-stylesheet.ejs"/>
+		<panel id="sponsored_inner">
+			<panel id="sponsored_item_1" class="sponsored_item sponsored_item_first">
+				<p class="sponsored_headline"><mark id="sponsored_headline_1"/></p>
+				<p class="sponsored_summary"><mark id="sponsored_summary_1"/></p>
 			</panel>
-			<panel id="deloitte_item_2" class="deloitte_item">
-				<p class="deloitte_headline"><mark id="deloitte_headline_2"/></p>
-				<p class="deloitte_summary"><mark id="deloitte_summary_2"/></p>
+			<panel id="sponsored_item_2" class="sponsored_item">
+				<p class="sponsored_headline"><mark id="sponsored_headline_2"/></p>
+				<p class="sponsored_summary"><mark id="sponsored_summary_2"/></p>
 			</panel>
-			<panel id="deloitte_item_3" class="deloitte_item">
-				<p class="deloitte_headline"><mark id="deloitte_headline_3"/></p>
-				<p class="deloitte_summary"><mark id="deloitte_summary_3"/></p>
+			<panel id="sponsored_item_3" class="sponsored_item">
+				<p class="sponsored_headline"><mark id="sponsored_headline_3"/></p>
+				<p class="sponsored_summary"><mark id="sponsored_summary_3"/></p>
 			</panel>
-			<panel id="deloitte_item_4" class="deloitte_item">
-				<p class="deloitte_headline"><mark id="deloitte_headline_4"/></p>
-				<p class="deloitte_summary"><mark id="deloitte_summary_4"/></p>
+			<panel id="sponsored_item_4" class="sponsored_item">
+				<p class="sponsored_headline"><mark id="sponsored_headline_4"/></p>
+				<p class="sponsored_summary"><mark id="sponsored_summary_4"/></p>
 			</panel>
-			<panel id="deloitte_item_5" class="deloitte_item">
-				<p class="deloitte_headline"><mark id="deloitte_headline_5"/></p>
-				<p class="deloitte_summary"><mark id="deloitte_summary_5"/></p>
+			<panel id="sponsored_item_5" class="sponsored_item">
+				<p class="sponsored_headline"><mark id="sponsored_headline_5"/></p>
+				<p class="sponsored_summary"><mark id="sponsored_summary_5"/></p>
 			</panel>
-			<panel id="deloitte_item_6" class="deloitte_item deloitte_item_last">
-				<p class="deloitte_headline"><mark id="deloitte_headline_6"/></p>
-				<p class="deloitte_summary"><mark id="deloitte_summary_6"/></p>
+			<panel id="sponsored_item_6" class="sponsored_item sponsored_item_last">
+				<p class="sponsored_headline"><mark id="sponsored_headline_6"/></p>
+				<p class="sponsored_summary"><mark id="sponsored_summary_6"/></p>
 			</panel>
 		</panel>
 	</box>
-	<panel id="deloitte_phone" class="phone_only">
-		<style src="DELOITTE-stylesheet.ejs"/>
-		<panel id="deloitte_item_1" class="deloitte_item deloitte_item_first">
-			<p class="deloitte_headline"><mark id="deloitte_headline_1"/></p>
-			<p class="deloitte_summary"><mark id="deloitte_summary_1"/></p>
+	<panel id="sponsored_phone" class="phone_only">
+		<style src="ADOBE-stylesheet.ejs"/>
+		<panel id="sponsored_item_1" class="sponsored_item sponsored_item_first">
+			<p class="sponsored_headline"><mark id="sponsored_headline_1"/></p>
+			<p class="sponsored_summary"><mark id="sponsored_summary_1"/></p>
 		</panel>
-		<panel id="deloitte_item_2" class="deloitte_item">
-			<p class="deloitte_headline"><mark id="deloitte_headline_2"/></p>
-			<p class="deloitte_summary"><mark id="deloitte_summary_2"/></p>
+		<panel id="sponsored_item_2" class="sponsored_item">
+			<p class="sponsored_headline"><mark id="sponsored_headline_2"/></p>
+			<p class="sponsored_summary"><mark id="sponsored_summary_2"/></p>
 		</panel>
-		<panel id="deloitte_item_3" class="deloitte_item deloitte_item_last">
-			<p class="deloitte_headline"><mark id="deloitte_headline_3"/></p>
-			<p class="deloitte_summary"><mark id="deloitte_summary_3"/></p>
+		<panel id="sponsored_item_3" class="sponsored_item sponsored_item_last">
+			<p class="sponsored_headline"><mark id="sponsored_headline_3"/></p>
+			<p class="sponsored_summary"><mark id="sponsored_summary_3"/></p>
 		</panel>
 	</panel>
 
-	<box id="d1" embed="article" class="rail_only maude unit_deloitte" module="CONTINUATION-dynamic_module.xml" />
-	<box id="d2" embed="article" class="rail_only maude unit_deloitte" module="CONTINUATION-dynamic_module.xml" />
-	<box id="d3" embed="article" class="rail_only maude unit_deloitte" module="CONTINUATION-dynamic_module.xml" />
+	<box id="d1" embed="article" class="rail_only maude unit_adobe" module="CONTINUATION-dynamic_module.xml" />
+	<box id="d2" embed="article" class="rail_only maude unit_adobe" module="CONTINUATION-dynamic_module.xml" />
+	<box id="d3" embed="article" class="rail_only maude unit_adobe" module="CONTINUATION-dynamic_module.xml" />
 
 	<box id="b3" embed="article" class="landscape-columns-6 portrait-columns-8 xposition-1 maude unit_plain unit_166" module="RIGHT-IMAGE_module.xml" />
 	<box id="b4" embed="article" class="landscape-columns-6 portrait-columns-8 landscape-xposition-7 portrait-xposition-1 maude unit_plain unit_50" module="RIGHT-IMAGE_module.xml" />

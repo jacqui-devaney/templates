@@ -11,23 +11,12 @@
             min-height: 0
         },
 		.article_body: {
-			line-height: {$multiply: [24, =view.zoomlevel]},
 			text-align: left,
             hyphens: auto
         },
 		#body_continuation: {
 			content: from-flow(article_body),
 			flow: article_body
-        },
-        #media_caption: {
-            padding: [6, 0, 0, 0]
-        },
-        #media_container: {
-            padding: [0, 0, 22, 0]
-        },
-        #media_credit: {
-            text-transform: uppercase,
-            padding: [0, 0, 0, 0]
         },
         #list-item: {
             padding: [0, 0, 24, 0]

@@ -5,7 +5,7 @@
 	<style>{
 		#view: {
 			width:=view.width,
-			height:{$multiply: [2, =view.height]},
+			height:{$multiply: [4, =view.height]},
 			options: {
 				indent: true
 			}

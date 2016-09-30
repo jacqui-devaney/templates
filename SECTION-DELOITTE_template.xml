@@ -136,6 +136,7 @@
 						$switch: [
 							{ if: =page.section, equals: CIO, then: "Latest Technology News" },
 							{ if: =page.section, equals: CFO, then: "Latest Finance News" },
+							{ if: =page.section, equals: CMO, then: "Latest News" },
 							{ if: =page.section, equals: RISK_AND_COMPLIANCE, then: "Latest News" }
 						]
 					}
@@ -378,6 +379,7 @@
 					$switch: [
 						{ if: =page.section, equals: CIO, then: "LATEST TECHNOLOGY NEWS" },
 						{ if: =page.section, equals: CFO, then: "LATEST FINANCE NEWS" },
+						{ if: =page.section, equals: CMO, then: "LATEST NEWS" },
 						{ if: =page.section, equals: RISK_AND_COMPLIANCE, then: "LATEST NEWS" }
 					]
 				}
@@ -396,6 +398,7 @@
 				$switch: [
 					{ if: =page.section, equals: CIO, then: "CIO Insights and Analysis from Deloitte" },
 					{ if: =page.section, equals: CFO, then: "CFO Insights and Analysis from Deloitte" },
+					{ if: =page.section, equals: CMO, then: "CMO Insights and Analysis from Deloitte" },
 					{ if: =page.section, equals: RISK_AND_COMPLIANCE, then: "Risk Management, Strategy and Analysis from Deloitte" }
 				]
 			}

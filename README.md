@@ -30,7 +30,7 @@ An important note to make: The fault article djml for whats news has embedded li
 
 ## Bootstrapping Deloitte sections
 
-CIO, CFO, and Risk & Compliance all require affinity and article templates to be set, triggered by the Deloitte article types.
+CIO, CFO, CMO, and Risk & Compliance all require affinity and article templates to be set, triggered by the Deloitte article types.
 
 	export API=http://pubcrawlhost/api/v1
 
@@ -43,6 +43,8 @@ CIO, CFO, and Risk & Compliance all require affinity and article templates to be
 	curl -X PUT -H "Content-Type: application/json" -d '{"template":"ARTICLE-deloitte_template.xml"}' $API/publications/wsj/regions/us/mastheads/SWEET/layout/articles/type/Deloitte%20Cio%20Blog
 
 	curl -X PUT -H "Content-Type: application/json" -d '{"template":"ARTICLE-deloitte_template.xml"}' $API/publications/wsj/regions/us/mastheads/SWEET/layout/articles/type/Deloitte%20Cfo%20Blog
+
+	curl -X PUT -H "Content-Type: application/json" -d '{"template":"ARTICLE-deloitte_template.xml"}' $API/publications/wsj/regions/us/mastheads/SWEET/layout/articles/type/Deloitte%20Cmo%20Blog
 
 	curl -X PUT -H "Content-Type: application/json" -d '{"template":"ARTICLE-deloitte_template.xml"}' $API/publications/wsj/regions/us/mastheads/SWEET/layout/articles/type/Deloitte%20Riskandcompliance%20Blog
 

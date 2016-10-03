@@ -1,0 +1,79 @@
+{$join: [
+	{
+		if: =issue.edition, equals: "us", then: {
+			.us-only: {
+				display: inherit
+			}
+		}, else: {
+			.us-only: {
+				display: none
+			}
+		}
+	},
+	{
+		if: =issue.edition, equals: "japan", then: {
+			#tabbar-main:{
+				display: none
+			}
+		}, else: {
+			#tabbar-japan:{
+				display: none
+			}
+		}
+	},
+	{
+		if: =issue.edition, in: ["us", "europe", "asia"], then: {
+			if: =page.section, in: ["TOP_NEWS","POPULAR","OPINION","WORLD","US","POLITICS","ECONOMY","BUSINESS"], then: {
+				.first-sections: {
+					display: inherit
+				},
+				.second-sections: {
+					display: none
+				},
+				.third-sections: {
+					display: none
+				}
+			}, else: {
+				if: =page.section, in: ["TECH", "MARKETS", "ARTS", "LIFE", "REAL_ESTATE", "VR"], then: {
+						.first-sections: {
+							display: none
+						},
+						.second-sections: {
+							display: inherit
+						},
+						.third-sections: {
+							display: none
+						},
+						.space: {
+							content: "spacee"
+						}
+				}, else: {
+					if: =page.section, in: ["JOURNAL_REPORT", "SPECIAL_LN_COLLEGE", "HEARD", "NEW_YORK", "WSJ_MAGAZINE"], then: {
+						.first-sections: {
+							display: none
+						},
+						.second-sections: {
+							display: none
+						},
+						.third-sections: {
+							display: inherit
+						},
+						.space: {
+							content: "s"
+						}
+					}, else: {
+						.first-sections: {
+							display: inherit
+						},
+						.second-sections: {
+							display: none
+						},
+						.third-sections: {
+							display: none
+						}
+					}
+				}
+			}
+		}
+	}
+]}

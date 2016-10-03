@@ -1,0 +1,31 @@
+<jpml id="SAVED_ARTICLES-template">
+	<!-- Do not delete me: used by the app to lay out Saved Articles -->
+	<style src="GLOBAL-stylesheet.ejs" />
+	<style src="GRID-stylesheet.ejs" />
+	<style src="CONTINUATION-stylesheet.ejs" />
+	<style src="PHONE-stylesheet.ejs" />
+	<style src="RAIL-stylesheet.ejs" />
+	<style>{
+		#b1: {
+			left: 0,
+			right: 0,
+			top: 0,
+			height: 135,
+			position: relative,
+			options: {
+				module: url(NAVIGATION_module.xml),
+				medium_headline: true,
+				show_body: true,
+				top_border: true
+			},
+			border-width: [0, 0, 1, 0],
+			border-color: #DDDDDD
+		},
+		jpml: {
+			padding:[90, 0, 0, 0],
+			min-height: 0,
+			max-height: 10000
+		}
+	}</style>
+	<box id="b1" embed="article" class="maude unit_plain" module="LEFT-IMAGE_module.xml" />
+</jpml>

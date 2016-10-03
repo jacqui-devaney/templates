@@ -133,6 +133,7 @@
 						$switch: [
 							{ if: =page.section, equals: CIO, then: "Latest Technology News" },
 							{ if: =page.section, equals: CFO, then: "Latest Finance News" },
+							{ if: =page.section, equals: CMO, then: "Latest News" },
 							{ if: =page.section, equals: RISK_AND_COMPLIANCE, then: "Latest News" }
 						]
 					}

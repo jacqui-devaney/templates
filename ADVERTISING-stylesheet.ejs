@@ -205,7 +205,10 @@
 							}
 						},
 						else: {
-							if: =intent.article,
+							if-any: [
+								{ if: =intent.article },
+								{ if: =app.version, less-than: "8.0" }
+							],					
 							then: {
 								#small_ad_container: {
 									display: none

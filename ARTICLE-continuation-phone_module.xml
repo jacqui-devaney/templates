@@ -5,7 +5,6 @@
 	<style src="PHONE-MODULES-stylesheet.ejs" />
 	<style src="MEDIA-stylesheet.ejs" />
 	<style src="ADVERTISING-stylesheet.ejs" />
-	
 	<style>{
 		jpml: {
             min-height: 0
@@ -43,9 +42,9 @@
                 <box id="cube_ad" embed="fullpagead">
                     <p id="ad_headline">ADVERTISEMENT</p>
                 </box>
-        		<box id="halfscreen_ad" embed="fullpagead">
-        		    <p id="ad_headline">ADVERTISEMENT</p>
-        		</box>
+                <box id="halfscreen_ad" embed="fullpagead">
+                    <p id="ad_headline">ADVERTISEMENT</p>
+                </box>
             </box>
         </box>
     </box>

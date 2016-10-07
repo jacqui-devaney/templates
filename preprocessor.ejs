@@ -131,7 +131,7 @@
 				"You can share and save articles by swiping left on them in the side menu.",
 				"You can search for WSJ articles by tapping the magnifying glass in the upper-right corner."
 			],
-			footer_tip: { if: =display.width.regular, then: {$random: [0, 11]}, else: {$random: [0, 7] }}
+			footer_tip: { $random: [0, 11] }
 		},
 		{
 			if: =app.version, at-most: "7.6", then: {

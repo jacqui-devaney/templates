@@ -185,8 +185,16 @@
 									display: none
 								}
 							}, else: {
+								#small_ad_container: {
+									top: 0,
+									left: 0,
+									right: 0,
+									height: 386,
+									background-color: #ffffff,
+									display: { if: =scale.rail, then: none, else: inherit }
+								},
 								#halfscreen_ad: {
-									border-width: [46,0,0,0],
+									border-width: [46,0,20,0],
 									border-color: #FFFFFF,
 									anchor-x:center,
 									display: inherit,

@@ -2,9 +2,8 @@
 	<style src="GLOBAL-stylesheet.ejs" />
 	<style src="GRID-stylesheet.ejs" />
 	<style src="ADVERTISING-stylesheet.ejs"/>
-	<style src="ADVERTISING-fallback-stylesheet.ejs" />
-<style src="PHONE-stylesheet.ejs" />
-<style src="RAIL-stylesheet.ejs" />
+	<style src="PHONE-stylesheet.ejs" />
+	<style src="RAIL-stylesheet.ejs" />
     <style>{
 		if: =scale.tablet,then: {
     	#page_details: {

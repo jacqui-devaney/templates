@@ -26,7 +26,8 @@
 			]}
 		},
 		.deco_caption: {
-			line-clamp: {if: =options.one_line_caption, then:1}
+			line-clamp: {if: =options.one_line_caption, then:1},
+			padding: { if: =options.pad_caption_for_icon, then: [0, 0, 0, 40] }
 		}
 	}</style>
 			<box id="deco_container" embed="deco-image">

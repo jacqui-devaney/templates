@@ -45,8 +45,8 @@
 					options:{ medium_headline:true, show_byline:true, show_flashline:true, top_border:true}
 				},
 				#footer: {
-					top: 930,
-					height: 100,
+					top: 924,
+					height: 90,
 					text-align: center,
 					options:{top_border: true}
 				}
@@ -77,7 +77,7 @@
 					options:{ medium_headline:true, show_byline:true, show_flashline:true, top_border:true}
 				},
 				#footer: {
-					top: 680,
+					top: 678,
 					height: 90,
 					text-align: center,
 					options:{top_border: true}

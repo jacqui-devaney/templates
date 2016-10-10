@@ -13,7 +13,6 @@
 			{
 				if: =scale.phone, then:{
 					#small_ad_container: {
-						position: { if: =intent.section, then: absolute, else: relative },
 						top: 0,
 						left: 0,
 						right: 0,
@@ -124,10 +123,8 @@
 						}
 					],
 					then: {
-						if-all: [
-							=intent.article,
-							{ if: =phantomAdLineItemIDs, contains: =ad.cache.Cube.lineItemID, then: true, else: false }
-						], then: {
+						if: =phantomAdLineItemIDs, contains: =ad.cache.Cube.lineItemID, then: true, else: false,
+						then: {
 							#small_ad_container: {
 								height: 1
 							},
@@ -168,10 +165,8 @@
 					else: {
 						if: =ad.cache.HalfScreen.loaded, 
 						then: {
-							if-all: [
-								=intent.article,
-								{ if: =phantomAdLineItemIDs, contains: =ad.cache.HalfScreen.lineItemID, then: true, else: false }
-							], then: {
+							if: =phantomAdLineItemIDs, contains: =ad.cache.HalfScreen.lineItemID, then: true, else: false,
+							then: {
 								#small_ad_container: {
 									height: 1
 								},
@@ -190,8 +185,16 @@
 									display: none
 								}
 							}, else: {
+								#small_ad_container: {
+									top: 0,
+									left: 0,
+									right: 0,
+									height: 386,
+									background-color: #ffffff,
+									display: { if: =scale.rail, then: none, else: inherit }
+								},
 								#halfscreen_ad: {
-									border-width: [46,0,0,0],
+									border-width: [46,0,20,0],
 									border-color: #FFFFFF,
 									anchor-x:center,
 									display: inherit,
@@ -210,28 +213,31 @@
 							}
 						},
 						else: {
-							if: =intent.article,
+							if-any: [
+								{ if: =intent.article },
+								{ if: =app.version, less-than: "8.0" }
+							],					
 							then: {
 								#small_ad_container: {
 									display: none
 								}
 							},
 							else: {
-								#halfscreen_ad: {
-									border-width: [46,0,0,0],
-									border-color: #FFFFFF,
-									anchor-x:center,
-									display: inherit,
-									pixels-per-point-x: 1,
-									pixels-per-point-y: 1,
-									width: =view.width,
-									height: 320,
-									options: {
-										adType: "HalfScreen",
-										excludedLineItemIds: =phantomAdLineItemIDs
-									}
+								#small_ad_container: {
+									height: 1
 								},
 								#cube_ad: {
+									options: {
+										adType: "Cube",
+										excludedLineItemIds: =phantomAdLineItemIDs
+									},
+									width: 1,
+									height: 1
+								},
+								#ad_headline: {
+									display: none
+								},
+								#halfscreen_ad: {
 									display: none
 								}
 							}

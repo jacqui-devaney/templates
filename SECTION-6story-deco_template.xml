@@ -1,8 +1,7 @@
 <jpml id="SECTION-6story-deco_template">
 	<style src="GLOBAL-stylesheet.ejs"/>
     <style src="GRID-stylesheet.ejs"/>
-	<style src="ADVERTISING-stylesheet.ejs"/>
-	<style src="ADVERTISING-fallback-stylesheet.ejs" />
+	<style src="ADVERTISING-stylesheet.ejs"/>	
     <style src="PHONE-stylesheet.ejs"/>
 	<style src="RAIL-stylesheet.ejs" />
 	<style src="FRONT-stylesheet.ejs"/>
@@ -56,7 +55,7 @@
 				},
 				#footer: {
 					top: 820,
-					height: 100,
+					height: 90,
 					text-align: center,
 					options:{top_border: true}
 				}
@@ -99,7 +98,7 @@
 				},
 				#footer: {
 					top: 570,
-					height: 100,
+					height: 90,
 					text-align: center,
 					options:{top_border: true}
 				}

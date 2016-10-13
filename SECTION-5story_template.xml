@@ -1,8 +1,7 @@
 <jpml id="SECTION-9story_template">
 	<style src="GLOBAL-stylesheet.ejs"/>
 	<style src="GRID-stylesheet.ejs"/>
-	<style src="ADVERTISING-stylesheet.ejs"/>
-	<style src="ADVERTISING-fallback-stylesheet.ejs" />
+	<style src="ADVERTISING-stylesheet.ejs"/>	
 	<style src="PHONE-stylesheet.ejs"/>
 	<style src="RAIL-stylesheet.ejs" />
 	<style src="SECTION-HIGHLIGHT-stylesheet.ejs" />
@@ -258,9 +257,8 @@
 				<a class="third-sections">
 					<a class="tabbar-link" href="/VR"><span class="more-link">&lt;MORE</span><mark class="space"/></a>
 					<a class="tabbar-link" href="/JOURNAL_REPORT"><span class="journal-report-link">JOURNAL REPORT</span><mark class="space"/></a>
-					<a class="tabbar-link us-only" href="/SPECIAL_LN_COLLEGE"><span class="special-ln-college-link">COLLEGE RANKINGS</span><mark class="space"/></a>
 					<a class="tabbar-link" href="/HEARD"><span class="heard-link">HEARD ON THE STREET</span><mark class="space"/></a>
-					<a class="tabbar-link" href="/NEW_YORK"><span class="new-york-link">N.Y.</span><mark class="space"/></a>
+					<a class="tabbar-link" href="/NEW_YORK"><span class="new-york-link">NEW YORK</span><mark class="space"/></a>
 					<a class="tabbar-link" href="/WSJ_MAGAZINE"><span class="magazine-link">WSJ. MAGAZINE</span></a>
 				</a>
 			</p>

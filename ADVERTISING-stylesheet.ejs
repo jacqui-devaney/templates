@@ -13,6 +13,8 @@
 			{
 				if: =scale.phone, then:{
 					#small_ad_container: {
+						border-width: { if: =intent.article, then: [0], else: [1, 0, 0] },
+						border-color: #d8d8d8,
 						top: 0,
 						left: 0,
 						right: 0,
@@ -186,6 +188,8 @@
 								}
 							}, else: {
 								#small_ad_container: {
+									border-width: { if: =intent.article, then: [0], else: [1, 0, 0] },
+									border-color: #d8d8d8,
 									top: 0,
 									left: 0,
 									right: 0,

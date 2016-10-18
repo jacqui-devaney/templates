@@ -1,0 +1,306 @@
+<jpml id="SECTION-9story_template">
+	<style src="GLOBAL-stylesheet2.ejs"/>
+	<style src="GRID-stylesheet2.ejs"/>
+	<style src="GRID-extras2.ejs"/>
+	<style src="ADVERTISING-stylesheet.ejs"/>
+	<style src="ADVERTISING-stylesheet-gridoverride.ejs"/>	
+	<style src="PHONE-stylesheet.ejs"/>
+	<style src="RAIL-stylesheet.ejs" />
+	<style src="SECTION-HIGHLIGHT-stylesheet.ejs" />
+	<style src="EDITION-SECTION-TABBAR-stylesheet.ejs"/>
+	<style>{
+		#page_details: {
+			options: {
+		        hideHeaderBorder: true,
+				tintTitle: true
+			}
+		}
+	}</style>
+	<style>{
+		jpml: {
+			background-color: =color.background
+		},
+		#ad_placeholder: {
+			display: none
+		},
+		#marketstrap: {
+			display: none
+		},
+		#tabbar-container: {
+			top: 14,
+			height:36
+		},
+		.tabbar-p: {
+			font-name:"WhitneySSm-Semibold",
+			color:#4F5757,
+			padding: [10.5, 0, 11.5, 0],
+			font-size:{if: =app.version, at-least: 7.6, then: 10, else: 12},
+			line-height:12,
+			border-width:[0.5, 0],
+			border-color:#CFD7D7,
+			letter-spacing: 2.0
+		},
+		.space: {
+			font-size: {if: =app.version, at-least: 7.6, then: 1, else: 6},
+			line-height:4,
+			color: transparent,
+			content: "unforta"
+		},
+		.center-me: {
+			text-align:center,
+			anchor-y: middle
+		},
+		a: {
+			padding: [8, 0]
+		},
+		span: {
+			padding: [3, 0]
+		},
+		.more-link: {
+			font-name: "WhitneySSm-Book"
+		}
+	}</style>
+	<style> {
+		$switch: [
+			{if: =scale.rail, then: {
+				#footer:{
+					display: none
+				}
+			}},
+			{if: =scale.phone, then: {
+				#page_details: {
+					display: none
+				},
+				#ad_placeholder: {
+					display: inherit,
+					frame: [0, 0, 10, 10]
+				},
+				#marketstrap: {
+					display: none
+				},
+  				#election-bar: {
+	  				frame: [0, 0, =view.width, 75],
+	  				padding: [10, 15, 0, 0],
+					background-color: #ffff00, 
+ 					options: {
+						href: "url(http://graphics.dev.wsj.com/elections/2016/live-results/?embed=1&amp;banner=1)",
+						src: "url(http://graphics.dev.wsj.com/elections/2016/live-results/?embed=1&amp;banner=1)"
+					} 
+				}, 			
+				#tabbar-container: {
+					display: none
+				},
+				#b1 : {
+					height:{
+						if: =view.width, more-than: 320, then:{
+							if: {$count:[=articles.b1.images.phone]},
+							more-than: 0,
+							then: {$multiply: [=view.width, 1.135]},
+							else: {$multiply: [=view.width, 0.6]}
+						}, else: {
+							if: {$count:[=articles.b1.images.phone]},
+							more-than: 0,
+							then: {$multiply: [=view.width, 1.32]},
+							else: {$multiply: [=view.width, 0.6]}
+						}
+					},
+					padding: [{if: {$count:[=articles.b1.images.phone]}, more-than: 0, then: 0, else: 22}, 0, 0, 0],
+					options: { show_body: true, medium_headline: true, module: url(TOP-IMAGE_module.xml) }
+				},
+				#b2 : {
+					height: =size.continuation_height_large,
+					options: { show_body: true, small_headline: true, module: url(CONTINUATION-dynamic_module.xml), show_flashline: true }
+				},
+				#b3 : {
+					height: =size.continuation_height_large,
+					options: { show_body: true, small_headline: true, module: url(CONTINUATION-dynamic_module.xml) }
+				},
+				#b4 : {
+					height: =size.continuation_height_large,
+					options: { show_body: true, small_headline: true }
+				},
+				#b5 : {
+					height: =size.continuation_height_large,
+					options: { show_body: true, small_headline: true }
+				},
+				#footer: {
+					height: 342,
+					text-align: center,
+					options:{top_border: true}
+				},
+				#b6 : {
+					height: =size.continuation_height_large,
+					options: { show_body: true, small_headline: true }
+				},
+				#b7 : {
+					height: =size.continuation_height_large,
+					options: { show_body: true, small_headline: true }
+				},
+				#b8 : {
+					height: =size.continuation_height_large,
+					options: { show_body: true, small_headline: true }
+				},
+				#b9 : {
+				    height: =size.continuation_height_large,
+				    options: { show_body: true, small_headline: true }
+				    }
+			}},
+			{if: =portrait, then: {
+				#b1:	{
+					options: { module: url(TOP-IMAGE_module2.xml) }
+				},
+				#b2:	{
+					options: { top_border: true }
+				},
+				#b3:{
+					options: { top_border: true }
+				}
+			}}
+		]
+	} </style>
+	<style>{
+		if: =scale.phone,
+		then: {
+
+		},
+		else: {
+			#b1: {
+				options: {
+					large_headline:true,
+					show_image:true,
+					background_color: =color.background
+				}
+			},
+			#b2: {
+				options: {
+					show_body: true,
+					show_image: true,
+					smedium_headline: true,
+					background_color: =color.background
+				}
+			},
+			#b3: {
+				options: {
+					show_body: true,
+					show_image: true,
+					smedium_headline: true,
+					background_color: =color.background
+				}
+			},
+			#b4: {
+				options: {
+					hide_border: =portrait,
+					show_body: true,
+					small_headline: true,
+					background_color: =color.background
+				}
+			},
+			#b5: {
+				options: {
+					show_body: true,
+					small_headline: true,
+					background_color: =color.background
+				}
+			},
+			#b6: {
+				options: {
+					show_body: true,
+					small_headline: true,
+					background_color: =color.background
+				}
+			},
+			#b7: {
+				options: {
+					show_body: true,
+					small_headline: true,
+					background_color: =color.background
+				}
+			},
+			#b8: {
+				options: {
+					show_body: true,
+					small_headline: true,
+					background_color: =color.background
+				}
+			},
+			#b9: {
+				options: {
+					show_body: true,
+					small_headline: true,
+					background_color: =color.background
+				}
+			}
+		}
+	}</style>
+
+	<style src="PROMO-PHONE-stylesheet.ejs" />
+	<box id="page_details" embed="pagedescription" />
+	<box id="ad_placeholder" class="ad-banner" embed="pagedescription" />
+	<box id="marketstrap" embed="marketstrap" />
+	<box id="election-bar" embed="webview" />
+
+	<box id="b1" embed="article" class="yposition-3 landscape-lines-24 portrait-lines-25 columns-8 xposition-1 maude unit_plain unit_418" module="TOP-IMAGE_module2.xml" />
+	<box id="b2" embed="article" class="portrait-yposition-29 landscape-yposition-3 portrait-lines-18 landscape-lines-17 columns-4 landscape-xposition-9 portrait-xposition-1  maude unit_plain unit_166" module="TOP-IMAGE_module2.xml" />
+	<box id="b3" embed="article" class="portrait-yposition-29 landscape-yposition-3 portrait-lines-18 landscape-lines-17 columns-4 landscape-xposition-13 portrait-xposition-5 maude unit_plain unit_166" module="TOP-IMAGE_module2.xml" />
+	<box id="b4" embed="article" class="portrait-yposition-3 landscape-yposition-21 portrait-lines-7 landscape-lines-6 columns-4 xposition-9  maude unit_plain unit_50" module="CONTINUATION-dynamic_module2.xml" />
+	<box id="small_ad_container" class="phone_only maude unit_ad">
+		<box id="cube_ad" embed="fullpagead">
+			<p id="ad_headline">ADVERTISEMENT</p>
+		</box>
+		<box id="halfscreen_ad" embed="fullpagead">
+			<p id="ad_headline">ADVERTISEMENT</p>
+		</box>
+	</box>
+	<box id="b5" embed="article" class="portrait-yposition-11 landscape-yposition-21 portrait-lines-7 landscape-lines-6 columns-4 landscape-xposition-13 portrait-xposition-9 maude unit_plain unit_50" module="CONTINUATION-dynamic_module2.xml" />
+	<box id="b6" embed="article" class="portrait-yposition-19 landscape-yposition-28 portrait-lines-7 landscape-lines-6 columns-4 landscape-xposition-1 portrait-xposition-9 maude unit_plain unit_50" module="CONTINUATION-dynamic_module2.xml" />
+	<box id="b7" embed="article" class="portrait-yposition-27 landscape-yposition-28 lines-6 columns-4 landscape-xposition-5 portrait-xposition-9 maude unit_plain unit_50" module="CONTINUATION-dynamic_module2.xml" />
+	<box id="b8" embed="article" class="portrait-yposition-34 landscape-yposition-28 lines-6 columns-4 xposition-9 maude unit_plain unit_50" module="CONTINUATION-dynamic_module2.xml" />
+	<box id="b9" embed="article" class="portrait-yposition-41 landscape-yposition-28 lines-6 columns-4 landscape-xposition-13 portrait-xposition-9 maude unit_plain unit_50" module="CONTINUATION-dynamic_module2.xml" />
+
+	<box id="tabbar-container" class="landscape-columns-16 portrait-columns-12 xposition-1" >
+		<box class="center-me">
+			<p id="tabbar-japan" class="tabbar-p">
+				<a class="tabbar-link" href="/FRONT_SECTION"><span class="front-section-link">TOP STORIES</span><mark class="space"/></a>
+				<a class="tabbar-link" href="/BUSINESS_AND_MARKETS"><span class="business-and-markets-link">BUSINESS &amp; MARKETS</span><mark class="space"/></a>
+				<a class="tabbar-link" href="/JAPAN_AND_WORLD"><span class="japan-and-world-link">JAPAN &amp; WORLD</span><mark class="space"/></a>
+				<a class="tabbar-link" href="/LIFESTYLE"><span class="lifestyle-link">LIFESTYLE</span></a>
+			</p>
+
+			<p id="tabbar-main" class="tabbar-p">
+				<a class="first-sections">
+					<a class="tabbar-link" href="/TOP_NEWS"><span class="top-news-link">TOP STORIES</span><mark class="space"/></a>
+					<a class="tabbar-link" href="/POPULAR"><span class="popular-link">POPULAR</span><mark class="space"/></a>
+					<a class="tabbar-link" href="/OPINION"><span class="opinion-link">OPINION</span><mark class="space"/></a>
+					<a class="tabbar-link" href="/WORLD"><span class="world-link">WORLD</span><mark class="space"/></a>
+					<a class="tabbar-link" href="/US"><span class="us-link">U.S.</span><mark class="space"/></a>
+					<a class="tabbar-link" href="/POLITICS"><span class="politics-link">POLITICS</span><mark class="space"/></a>
+					<a class="tabbar-link" href="/ECONOMY"><span class="economy-link">ECONOMY</span><mark class="space"/></a>
+					<a class="tabbar-link" href="/BUSINESS"><span class="business-link">BUSINESS</span><mark class="space"/></a>
+					<a class="tabbar-link" href="/TECH"><span class="more-link">MORE&gt;</span><mark class="space"/></a>
+				</a>
+
+				<a class="second-sections">
+					<a class="tabbar-link" href="/BUSINESS"><span class="more-link">&lt;MORE</span><mark class="space"/></a>
+					<a class="tabbar-link" href="/TECH"><span class="tech-link">TECH</span><mark class="space"/></a>
+					<a class="tabbar-link" href="/MARKETS"><span class="markets-link">MARKETS</span><mark class="space"/></a>
+					<a class="tabbar-link" href="/ARTS"><span class="arts-link">ARTS</span><mark class="space"/></a>
+					<a class="tabbar-link" href="/LIFE"><span class="life-link">LIFE</span><mark class="space"/></a>
+					<a class="tabbar-link" href="/REAL_ESTATE"><span class="real-estate-link">REAL ESTATE</span><mark class="space"/></a>
+					<a class="tabbar-link" href="/VR"><span class="vr-link">VIRTUAL REALITY</span><mark class="space"/></a>
+					<a class="tabbar-link" href="/JOURNAL_REPORT"><span class="more-link">MORE&gt;</span><mark class="space"/></a>
+				</a>
+
+				<a class="third-sections">
+					<a class="tabbar-link" href="/VR"><span class="more-link">&lt;MORE</span><mark class="space"/></a>
+					<a class="tabbar-link" href="/JOURNAL_REPORT"><span class="journal-report-link">JOURNAL REPORT</span><mark class="space"/></a>
+					<a class="tabbar-link" href="/HEARD"><span class="heard-link">HEARD ON THE STREET</span><mark class="space"/></a>
+					<a class="tabbar-link" href="/NEW_YORK"><span class="new-york-link">NEW YORK</span><mark class="space"/></a>
+					<a class="tabbar-link" href="/WSJ_MAGAZINE"><span class="magazine-link">WSJ. MAGAZINE</span></a>
+				</a>
+
+			</p>
+
+		</box>
+	</box>
+
+</jpml>

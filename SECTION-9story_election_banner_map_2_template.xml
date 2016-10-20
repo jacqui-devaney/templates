@@ -80,17 +80,26 @@
 				},
   				#election-bar: {
 	  				frame: [0, 0, =view.width, 100],
+	  				padding: [0.5, 0, 0],
  					options: {
 						href: "url(http://graphics.dev.wsj.com/elections/2016/live-results/?embed=1&amp;banner=1)",
 						src: "url(http://graphics.dev.wsj.com/elections/2016/live-results/?embed=1&amp;banner=1)"
 					} 
 				}, 
+				#election-container: {
+					height: {$multiply: [=view.width, 0.7]},
+					padding: [0.5, 0, 0],
+					border-width: [0.5, 0, 0],
+					border-color: #d8d8d8,
+					top: 0,
+					left: 0,
+					right: 0
+				},
 				#election-map: {
-					height: {$multiply: [=view.width, 0.666]},
+					height: {$multiply: [=view.width, 0.6666]},
+					top: 0,
 					left: 0,
 					right: 0,
-					border-color: #d8d8d8,
-					border-width: [0.5, 0, 0],
 					options: {
 						href: "url(http://graphics.dev.wsj.com/ballot-box-map/embed-test.html)",
 						src: "url(http://graphics.dev.wsj.com/ballot-box-map/embed-test.html)"
@@ -249,7 +258,9 @@
 	<box id="election-bar" embed="webview" />
 
 	<box id="b1" embed="article" class="yposition-3 landscape-lines-24 portrait-lines-25 columns-8 xposition-1 maude unit_plain unit_418" module="TOP-IMAGE_module2.xml" />
-	<box id="election-map" class="phone_only maude unit_plain unit_166" embed="webview" />
+	<box id="election-container" class="phone_only maude unit_plain">
+		<box id="election-map" embed="webview" />
+	</box>
 	<box id="b2" embed="article" class="portrait-yposition-29 landscape-yposition-3 portrait-lines-18 landscape-lines-17 columns-4 landscape-xposition-9 portrait-xposition-1  maude unit_plain unit_166" module="TOP-IMAGE_module2.xml" />
 	<box id="b3" embed="article" class="portrait-yposition-29 landscape-yposition-3 portrait-lines-18 landscape-lines-17 columns-4 landscape-xposition-13 portrait-xposition-5 maude unit_plain unit_166" module="TOP-IMAGE_module2.xml" />
 	<box id="b4" embed="article" class="portrait-yposition-3 landscape-yposition-21 portrait-lines-7 landscape-lines-6 columns-4 xposition-9  maude unit_plain unit_50" module="CONTINUATION-dynamic_module2.xml" />

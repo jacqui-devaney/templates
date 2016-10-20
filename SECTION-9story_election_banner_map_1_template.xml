@@ -80,16 +80,11 @@
 				},
   				#election-bar: {
 	  				frame: [0, 0, =view.width, 100],
-	  				padding: [10, 0, 15, 0],
  					options: {
 						href: "url(http://graphics.dev.wsj.com/elections/2016/live-results/?embed=1&amp;banner=1)",
 						src: "url(http://graphics.dev.wsj.com/elections/2016/live-results/?embed=1&amp;banner=1)"
 					} 
 				}, 
-				#election-map-container: {
-					border-color: #d8d8d8,
-					border-width: [0.5, 0, 0]
-				},
 				#election-map: {
 					height: {$multiply: [=view.width, 0.666]},
 					left: 0,
@@ -100,17 +95,6 @@
 						href: "url(http://graphics.dev.wsj.com/elections/2016/map-embed/?embed=1&amp;mobile=1)",
 						src: "url(http://graphics.dev.wsj.com/elections/2016/map-embed/?embed=1&amp;mobile=1)"
 					}
-				},
-				#election-headline: {
-					font-name: "WhitneySSm-Book",
-					line-height: 45,
-					font-size: 12,
-					color: #878f8f,
-					display: inherit,
-					text-align: left,
-					padding: [-40, 40, 20, 40],
-					border-width: [1, 0, 0],
-					border-color: #d8d8d8
 				},				
 				#tabbar-container: {
 					display: none

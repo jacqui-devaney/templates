@@ -1,24 +1,24 @@
 <jpml id="FRONT-3story-election_template">
-   	<style src="GLOBAL-stylesheet.ejs" />
+	<style src="GLOBAL-stylesheet.ejs" />
     <style src="GRID-stylesheet.ejs"/>
-	<style src="ADVERTISING-stylesheet.ejs"/>	
-    <style src="PHONE-stylesheet.ejs"/>
 	<style src="RAIL-stylesheet.ejs" />
-	<style src="FRONT-stylesheet.ejs"/>
     <style>{
-        #page_details: {
+    	#page_details: {
+			display: inherit,
+			frame: [0, 0, 10, 10],
 			options: {
                 tintColor: { if: =page.section, equals: "WSJ_MAGAZINE", then: #66, else: white },
 				tintTitle: true,
 				title: { if: =page.section, equals: "WSJ_MAGAZINE", then: "WSJ. MAGAZINE" }
 			}
 		}
-    }</style>
+	}</style>
 	<style> {
 		$switch: [
 			{if: =scale.rail, then: {
-			}},
-			{if: =scale.phone, then: {
+				#deco: {
+					width: =view.width
+				}
 			}},
 			{if: =portrait, then: {
 				jpml: {padding:[0]},
@@ -38,9 +38,10 @@
 					height:150,
 					options:{medium_headline:false, show_body:false, show_flashline:false, small_image:false, show_image:false, show_headline:false}
 				}
+
 			}},
 			{if: =landscape, then: {
-			jpml: {padding:[0]},
+				jpml: {padding:[0]},
 				#deco:	{
 					top:0,
 					height:768,
@@ -50,20 +51,19 @@
 				#b1:	{
 					top:400,
 					height:150,
-					position: absolute,
-					z-index: 1,
-					options:{medium_headline:true, show_body:true, show_flashline:true, small_image:true}
+					options:{}
 				},
 				#b2:	{
 					top:600,
 					height:150,
-					options:{medium_headline:true, show_body:true, show_flashline:true, small_image:true}
+					options:{}
 				}
 			}}
 		]
 	} </style>
-    <box id="page_details" class="tablet_only" embed="pagedescription" />
+	<box id="page_details" class="tablet_only" embed="pagedescription" />
 	<box id="deco" embed="article" class="column_full positionx_full maude unit_full" module="FULL-SIZE_module.xml" />
 	<box id="b1" embed="article" class="landscape-columns-6 portrait-columns-6 landscape-xposition-1 portrait-xposition-1 maude unit_plain" module="ELECTION_COVER_module.xml" />
 	<box id="b2" embed="article" class="landscape-columns-6 portrait-columns-6 landscape-xposition-1 portrait-xposition-1 maude unit_plain" module="ELECTION_COVER_module.xml" />
+
 </jpml>

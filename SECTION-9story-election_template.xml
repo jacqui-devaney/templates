@@ -1,8 +1,9 @@
 <jpml id="SECTION-9story-election_template">
-	<style src="GLOBAL-stylesheet.ejs"/>
-	<style src="GRID-stylesheet.ejs"/>
+	<style src="GLOBAL-stylesheet2.ejs"/>
+	<style src="GRID-stylesheet2.ejs"/>
+	<style src="GRID-extras2.ejs"/>
 	<style src="ADVERTISING-stylesheet.ejs"/>
-	<style src="ADVERTISING-fallback-stylesheet.ejs" />
+	<style src="ADVERTISING-stylesheet-gridoverride.ejs"/>	
 	<style src="PHONE-stylesheet.ejs"/>
 	<style src="RAIL-stylesheet.ejs" />
 	<style src="SECTION-HIGHLIGHT-stylesheet.ejs" />
@@ -26,7 +27,7 @@
     		display: none
     	},
 		#tabbar-container: {
-			top:-20,
+			top: 14,
 			height:36
 		},
 		.tabbar-p: {
@@ -43,7 +44,7 @@
 			font-size: {if: =app.version, at-least: 7.6, then: 1, else: 6},
 			line-height:4,
 			color: transparent,
-			content: "unfortu"
+			content: "unforta"
 		},
 		.center-me: {
 			text-align:center,
@@ -179,7 +180,6 @@
                 },
                 #election_container:{
                     background-color: #dfe7df,
-                    top: 30,
                     display: {if: =app.push.tags.topic.politics, then: none, else: {if: =app.version, at-least: 7.5, then: inherit, else: none}}
                 },
                 .banner_headline: {
@@ -200,42 +200,16 @@
                     text-align: center,
                     content: "The Journal's politics team covers the 2016 U.S. Election and beyond"
                 },
-				#b1:	{
-                    top: {if: =app.push.tags.topic.politics, then: 30, else: {if: =app.version, at-least: 7.5, then: 120, else: 30}},
-                    height: {if: =app.push.tags.topic.politics, then: 530, else: {if: =app.version, at-least: 7.5, then: 480, else: 530}},
-					options: { module: url(TOP-IMAGE_module.xml)}
-                },
+                #b1:	{
+					options: { module: url(TOP-IMAGE_module2.xml) },
+					padding: [10,0,0,0]
+
+				},
 				#b2:	{
-                    top: {if: =app.push.tags.topic.politics, then: 570, else: {if: =app.version, at-least: 7.5, then: 600, else: 570}},
-                    height: {if: =app.push.tags.topic.poltiics, then: 340, else: {if: =app.version, at-least: 7.5, then: 300, else: 340}}
+					options: { top_border: true }
 				},
 				#b3:{
-                    top: {if: =app.push.tags.topic.politics, then: 570, else: {if: =app.version, at-least: 7.5, then: 600, else: 570}},
-                    height: {if: =app.push.tags.topic.poltiics, then: 340, else: {if: =app.version, at-least: 7.5, then: 300, else: 340}}
-				},
-				#b4:	{
-                    top: {if: =app.push.tags.topic.politics, then: 30, else: {if: =app.version, at-least: 7.5, then: 120, else: 30}},
-                    height: {if: =app.push.tags.topic.politics, then: 135, else: {if: =app.version, at-least: 7.5, then: 130, else: 135}}
-				},
-				#b5:	{
-                    top:{if: =app.push.tags.topic.politics, then: 175, else: {if: =app.version, at-least: 7.5, then: 250, else:175}},
-                    height: {if: =app.push.tags.topic.politics, then: 135, else: {if: =app.version, at-least: 7.5, then: 140, else: 135}}
-				},
-				#b6:	{
-                    top: {if: =app.push.tags.topic.politics, then: 320, else: {if: =app.version, at-least: 7.5, then: 390, else:320}},
-                    height: {if: =app.push.tags.topic.politics, then: 135, else: {if: =app.version, at-least: 7.5, then: 140, else: 135}}
-				},
-				#b7:	{
-                    top: {if: =app.push.tags.topic.politics, then: 465, else: {if: =app.version, at-least: 7.5, then: 530, else: 465}},
-                    height: {if: =app.push.tags.topic.politics, then: 135, else: {if: =app.version, at-least: 7.5, then: 120, else: 135}}
-				},
-				#b8:	{
-                    top: {if: =app.push.tags.topic.politics, then: 600, else: {if: =app.version, at-least: 7.5, then: 650, else: 600}},
-                    height: {if: =app.push.tags.topic.politics, then: 135, else: {if: =app.version, at-least: 7.5, then: 120, else: 135}}
-				},
-				#b9:	{
-                    top:{if: =app.push.tags.topic.politics, then: 745, else: {if: =app.version, at-least: 7.5, then: 770, else: 745}},
-                    height: {if: =app.push.tags.topic.politics, then: 140, else: {if: =app.version, at-least: 7.5, then: 120, else: 140}}
+					options: { top_border: true }
 				}
 			}},
 			{if: =landscape, then: {
@@ -246,7 +220,6 @@
                 },
                 #election_container:{
                     background-color: #dfe7df,
-                    top: 20,
                     display: {if: =app.push.tags.topic.politics, then: none, else: {if: =app.version, at-least: 7.5, then: inherit, else: none}}
                 },
                 .banner_headline: {
@@ -266,43 +239,7 @@
                     padding: [0, 50, 16, 50],
                     text-align: center,
                     content: "WSJ's politics team covers the 2016 U.S. Election and beyond"
-                },
-				#b1:	{
-                    top: 20,
-                    height: {if: =app.push.tags.topic.politics, then: 465, else: {if: =app.version, at-least: 7.5, then: 510, else: 465}}
-				},
-				#b2:	{
-                    top: {if: =app.push.tags.topic.politics, then: 30, else: {if: =app.version, at-least: 7.5, then: 125, else: 30}},
-                    height: {if: =app.push.tags.topic.politics, then: 310, else: {if: =app.version, at-least: 7.5, then: 290, else: 310}}
-				},
-				#b3:	{
-                    top: {if: =app.push.tags.topic.politics, then: 30, else: {if: =app.version, at-least: 7.5, then: 125, else: 30}},
-                    height: {if: =app.push.tags.topic.politics, then: 310, else: {if: =app.version, at-least: 7.5, then: 290, else: 310}}
-				},
-				#b4:	{
-                    top: {if: =app.push.tags.topic.politics, then: 505, else: {if: =app.version, at-least: 7.5, then: 525, else: 505}},
-                    height: {if: =app.push.tags.topic.politics, then: 145, else: {if: =app.version, at-least: 7.5, then: 120, else: 145}}
-				},
-				#b5:{
-                    top: {if: =app.push.tags.topic.politics, then: 505, else: {if: =app.version, at-least: 7.5, then: 525, else: 505}},
-                    height: {if: =app.push.tags.topic.politics, then: 145, else: {if: =app.version, at-least: 7.5, then: 120, else: 145}}
-				},
-				#b6:	{
-                    top: {if: =app.push.tags.topic.politics, then: 350, else: {if: =app.version, at-least: 7.5, then: 420, else: 350}},
-                    height: {if: =app.push.tags.topic.politics, then: 145, else: {if: =app.version, at-least: 7.5, then: 120, else: 145}}
-				},
-				#b7:	{
-                    top: {if: =app.push.tags.topic.politics, then: 350, else: {if: =app.version, at-least: 7.5, then: 420, else: 350}},
-                    height: {if: =app.push.tags.topic.politics, then: 145, else: {if: =app.version, at-least: 7.5, then: 120, else: 145}}
-				},
-				#b8:	{
-                    top: {if: =app.push.tags.topic.politics, then: 505, else: {if: =app.version, at-least: 7.5, then: 545, else: 505}},
-                    height: {if: =app.push.tags.topic.politics, then: 145, else: {if: =app.version, at-least: 7.5, then: 110, else: 145}}
-				},
-				#b9:	{
-                    top: {if: =app.push.tags.topic.politics, then: 505, else: {if: =app.version, at-least: 7.5, then: 545, else: 505}},
-                    height: {if: =app.push.tags.topic.politics, then: 145, else: {if: =app.version, at-least: 7.5, then: 110, else: 140}}
-				}
+                }
 
 			}}
 		]
@@ -387,6 +324,29 @@
 	<box id="ad_placeholder" class="ad-banner" embed="pagedescription" />
 	<box id="marketstrap" embed="marketstrap" />
 
+	<box id="election">
+	<box id="election_container" class="landscape-columns-8 portrait-columns-12 landscape-xposition-9 portrait-xposition-1 portrait-yposition-3 landscape-yposition-3 maude unit_plain">
+            <p id="headline" class="banner_headline"><mark class="banner_headline" /></p>
+            <panel id="bell-panel"><box id="bell" />
+                <p id="banner_caption" class="banner_caption"><mark class="banner_caption" /></p>
+            </panel>
+            <panel id="electionimage-panel"><box id="electionimage" /></panel>
+    </box>
+        <box id="mattress">
+            <p id="sleepy_election" class="sleepy_election"><a id="sleepy_election" href="subscribe:politics?tag-group=topic">zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz</a></p>
+        </box>
+    </box>
+
+	<box id="b1" embed="article" class="portrait-yposition-7 landscape-yposition-3 landscape-lines-24 portrait-lines-21 columns-8 xposition-1 maude unit_plain unit_418" module="TOP-IMAGE_module2.xml" />
+	<box id="b2" embed="article" class="portrait-yposition-29 landscape-yposition-8 portrait-lines-18 landscape-lines-15 columns-4 landscape-xposition-9 portrait-xposition-1  maude unit_plain unit_166" module="TOP-IMAGE_module2.xml" />
+	<box id="b3" embed="article" class="portrait-yposition-29 landscape-yposition-8 portrait-lines-18 landscape-lines-15 columns-4 landscape-xposition-13 portrait-xposition-5 maude unit_plain unit_166" module="TOP-IMAGE_module2.xml" />
+	<box id="b4" embed="article" class="portrait-yposition-7 landscape-yposition-24 portrait-lines-7 landscape-lines-5 columns-4 xposition-9  maude unit_plain unit_50" module="CONTINUATION-dynamic_module2.xml" />
+	<box id="b5" embed="article" class="portrait-yposition-15 landscape-yposition-24 portrait-lines-7 landscape-lines-5 columns-4 landscape-xposition-13 portrait-xposition-9 maude unit_plain unit_50" module="CONTINUATION-dynamic_module2.xml" />
+	<box id="b6" embed="article" class="portrait-yposition-23 landscape-yposition-28 portrait-lines-6 landscape-lines-6 columns-4 landscape-xposition-1 portrait-xposition-9 maude unit_plain unit_50" module="CONTINUATION-dynamic_module2.xml" />
+	<box id="b7" embed="article" class="portrait-yposition-30 landscape-yposition-28 portrait-lines-5 landscape-lines-6 columns-4 landscape-xposition-5 portrait-xposition-9 maude unit_plain unit_50" module="CONTINUATION-dynamic_module2.xml" />
+	<box id="b8" embed="article" class="portrait-yposition-36 landscape-yposition-30 portrait-lines-5 landscape-lines-4 columns-4 xposition-9 maude unit_plain unit_50" module="CONTINUATION-dynamic_module2.xml" />
+	<box id="b9" embed="article" class="portrait-yposition-42 landscape-yposition-30 portrait-lines-5 landscape-lines-4 columns-4 landscape-xposition-13 portrait-xposition-9 maude unit_plain unit_50" module="CONTINUATION-dynamic_module2.xml" />
+
 	<box id="tabbar-container" class="landscape-columns-16 portrait-columns-12 xposition-1" >
 		<box class="center-me">
 			<p id="tabbar-japan" class="tabbar-p">
@@ -432,27 +392,5 @@
 		</box>
 	</box>
 
-    <box id="election">
-	<box id="election_container" class="landscape-columns-8 portrait-columns-12 landscape-xposition-9 portrait-xposition-1 maude unit_plain">
-            <p id="headline" class="banner_headline"><mark class="banner_headline" /></p>
-            <panel id="bell-panel"><box id="bell" />
-                <p id="banner_caption" class="banner_caption"><mark class="banner_caption" /></p>
-            </panel>
-            <panel id="electionimage-panel"><box id="electionimage" /></panel>
-    </box>
-        <box id="mattress">
-            <p id="sleepy_election" class="sleepy_election"><a id="sleepy_election" href="subscribe:politics?tag-group=topic">zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz</a></p>
-        </box>
-    </box>
-
-	<box id="b1" embed="article" class="columns-8 xposition-1 maude unit_plain unit_418" module="TOP-IMAGE_module.xml" />
-	<box id="b2" embed="article" class="columns-4 landscape-xposition-9 portrait-xposition-1  maude unit_plain unit_166" module="TOP-IMAGE_module.xml" />
-	<box id="b3" embed="article" class="columns-4 landscape-xposition-13 portrait-xposition-5 maude unit_plain unit_166" module="TOP-IMAGE_module.xml" />
-	<box id="b4" embed="article" class="columns-4 landscape-xposition-1 portrait-xposition-9  maude unit_plain unit_50" module="CONTINUATION-dynamic_module.xml" />
-	<box id="b5" embed="article" class="columns-4 landscape-xposition-5 portrait-xposition-9  maude unit_plain unit_50" module="CONTINUATION-dynamic_module.xml" />
-	<box id="b6" embed="article" class="columns-4 xposition-9    maude unit_plain unit_50" module="CONTINUATION-dynamic_module.xml" />
-	<box id="b7" embed="article" class="columns-4 landscape-xposition-13 portrait-xposition-9 maude unit_plain unit_50" module="CONTINUATION-dynamic_module.xml" />
-	<box id="b8" embed="article" class="columns-4 xposition-9    maude unit_plain unit_50" module="CONTINUATION-dynamic_module.xml" />
-	<box id="b9" embed="article" class="columns-4 landscape-xposition-13 portrait-xposition-9 maude unit_plain unit_50" module="CONTINUATION-dynamic_module.xml" />
 
 </jpml>

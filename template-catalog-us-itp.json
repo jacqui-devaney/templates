@@ -951,6 +951,60 @@
         ]
       },
       {
+        "section": "FRONT_SECTION_ITP",
+        "filename": "FRONT-3story-election_template.xml",
+        "title": "Election Template with 2 Tap Areas",
+        "usage": "front",
+        "boxes": [
+          {
+            "id": "b1",
+            "images": {}
+          },
+          {
+            "id": "deco",
+            "images": {
+              "tablet": {
+                "width": 768,
+                "height": 1024
+              }
+            }
+          },
+          {
+            "id": "b2",
+            "images": {}
+          }
+        ]
+      },
+      {
+        "section": "FRONT_SECTION_ITP",
+        "filename": "FRONT-4story-election_template.xml",
+        "title": "Election Template with 3 Tap Areas",
+        "usage": "front",
+        "boxes": [
+          {
+            "id": "b1",
+            "images": {}
+          },
+          {
+            "id": "deco",
+            "images": {
+              "tablet": {
+                "width": 768,
+                "height": 1024
+              }
+            }
+          },
+          {
+            "id": "b2",
+            "images": {}
+          },
+          {
+            "id": "b3",
+            "images": {}
+          }
+        ]
+      },
+      {
         "section": "OPINION",
         "filename": "OPINION-7story-deco_template.xml",
         "title": "Default: 7 story plus deco (3RandO-4CMTY)",

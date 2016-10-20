@@ -8,6 +8,141 @@
     },
     "templates": [
       {
+        "filename": "CONTINUATION-generic-32_template.xml",
+        "usage": "continuation",
+        "partial_binding": true,
+        "boxes": [
+          {
+            "id": "b1",
+            "images": {}
+          },
+          {
+            "id": "b2",
+            "images": {}
+          },
+          {
+            "id": "b3",
+            "images": {}
+          },
+          {
+            "id": "b4",
+            "images": {}
+          },
+          {
+            "id": "b5",
+            "images": {}
+          },
+          {
+            "id": "b6",
+            "images": {}
+          },
+          {
+            "id": "b7",
+            "images": {}
+          },
+          {
+            "id": "b8",
+            "images": {}
+          },
+          {
+            "id": "b9",
+            "images": {}
+          },
+          {
+            "id": "b10",
+            "images": {}
+          },
+          {
+            "id": "b11",
+            "images": {}
+          },
+          {
+            "id": "b12",
+            "images": {}
+          },
+          {
+            "id": "b13",
+            "images": {}
+          },
+          {
+            "id": "b14",
+            "images": {}
+          },
+          {
+            "id": "b15",
+            "images": {}
+          },
+          {
+            "id": "b16",
+            "images": {}
+          },
+          {
+            "id": "b17",
+            "images": {}
+          },
+          {
+            "id": "b18",
+            "images": {}
+          },
+          {
+            "id": "b19",
+            "images": {}
+          },
+          {
+            "id": "b20",
+            "images": {}
+          },
+          {
+            "id": "b21",
+            "images": {}
+          },
+          {
+            "id": "b22",
+            "images": {}
+          },
+          {
+            "id": "b23",
+            "images": {}
+          },
+          {
+            "id": "b24",
+            "images": {}
+          },
+          {
+            "id": "b25",
+            "images": {}
+          },
+          {
+            "id": "b26",
+            "images": {}
+          },
+          {
+            "id": "b27",
+            "images": {}
+          },
+          {
+            "id": "b28",
+            "images": {}
+          },
+          {
+            "id": "b29",
+            "images": {}
+          },
+          {
+            "id": "b30",
+            "images": {}
+          },
+          {
+            "id": "b31",
+            "images": {}
+          },
+          {
+            "id": "b32",
+            "images": {}
+          }
+        ]
+      },      
+      {
         "section": "FRONT_SECTION",
         "filename": "FRONT-4story-holiday-deco_template.xml",
         "title": "4 story G Holiday Liondoor",
@@ -1867,141 +2002,6 @@
                 "height": 768
               }
             }
-          }
-        ]
-      },
-      {
-        "filename": "CONTINUATION-generic-32_template.xml",
-        "usage": "continuation",
-        "partial_binding": true,
-        "boxes": [
-          {
-            "id": "b1",
-            "images": {}
-          },
-          {
-            "id": "b2",
-            "images": {}
-          },
-          {
-            "id": "b3",
-            "images": {}
-          },
-          {
-            "id": "b4",
-            "images": {}
-          },
-          {
-            "id": "b5",
-            "images": {}
-          },
-          {
-            "id": "b6",
-            "images": {}
-          },
-          {
-            "id": "b7",
-            "images": {}
-          },
-          {
-            "id": "b8",
-            "images": {}
-          },
-          {
-            "id": "b9",
-            "images": {}
-          },
-          {
-            "id": "b10",
-            "images": {}
-          },
-          {
-            "id": "b11",
-            "images": {}
-          },
-          {
-            "id": "b12",
-            "images": {}
-          },
-          {
-            "id": "b13",
-            "images": {}
-          },
-          {
-            "id": "b14",
-            "images": {}
-          },
-          {
-            "id": "b15",
-            "images": {}
-          },
-          {
-            "id": "b16",
-            "images": {}
-          },
-          {
-            "id": "b17",
-            "images": {}
-          },
-          {
-            "id": "b18",
-            "images": {}
-          },
-          {
-            "id": "b19",
-            "images": {}
-          },
-          {
-            "id": "b20",
-            "images": {}
-          },
-          {
-            "id": "b21",
-            "images": {}
-          },
-          {
-            "id": "b22",
-            "images": {}
-          },
-          {
-            "id": "b23",
-            "images": {}
-          },
-          {
-            "id": "b24",
-            "images": {}
-          },
-          {
-            "id": "b25",
-            "images": {}
-          },
-          {
-            "id": "b26",
-            "images": {}
-          },
-          {
-            "id": "b27",
-            "images": {}
-          },
-          {
-            "id": "b28",
-            "images": {}
-          },
-          {
-            "id": "b29",
-            "images": {}
-          },
-          {
-            "id": "b30",
-            "images": {}
-          },
-          {
-            "id": "b31",
-            "images": {}
-          },
-          {
-            "id": "b32",
-            "images": {}
           }
         ]
       }

@@ -4,8 +4,7 @@
 	<style src="GRID-extras2.ejs"/>
 	<style src="ADVERTISING-stylesheet.ejs"/>
 	<style src="ADVERTISING-stylesheet-gridoverride.ejs"/>
-	<style src="FRONT-stylesheet2.ejs"/>
-	<style src="ADVERTISING-fallback-stylesheet.ejs" />
+	<style src="FRONT-stylesheet2.ejs"/>	
 	<style src="PHONE-stylesheet.ejs"/>
 	<style src="RAIL-stylesheet.ejs" />
 	<style>{
@@ -37,8 +36,8 @@
 					options:{ medium_headline:true, bottom_align:true, show_byline:false, top_border:true}
 				},
 				#footer: {
-					top: 930,
-					height: 100,
+					bottom: 0,
+					height: 90,
 					text-align: center,
 					options:{top_border: true}
 				}
@@ -63,7 +62,7 @@
 					options:{ medium_headline:true, top_border:true, show_byline:false}
 				},
 				#footer: {
-					top: 680,
+					bottom: 0,
 					height: 90,
 					text-align: center,
 					options:{top_border: true}
@@ -72,25 +71,25 @@
 		]
 	}</style>
 	<box id="page_details" class="tablet_only" embed="pagedescription" />
-	<box id="vertical-grid">
-		<box class="tablet_only columns-3 xposition-1 yposition-3">
-			<box class="columns-3">
-				<box id="whatsnewsheader" class="visual-content-top">
-					<p>
-						<mark id="whatsnewsheadertext"/>
-					</p>
-				</box>
-				<box id="whatsnews" embed="list" class="landscape-lines-24 portrait-lines-36" />
+
+	<box class="tablet_only columns-3 xposition-1 yposition-3">
+		<box class="columns-3">
+			<box id="whatsnewsheader" class="visual-content-top">
+				<p>
+					<mark id="whatsnewsheadertext"/>
+				</p>
 			</box>
+			<box id="whatsnews" embed="list" class="landscape-lines-24 portrait-lines-36" />
 		</box>
-		<box id="deco" embed="article" class="lines-17 yposition-3 columns-9 xposition-4 maude unit_deco" module="DECO_module2.xml"/>
-		<box id="b1" embed="article" class="portrait-yposition-20 portrait-lines-8 landscape-yposition-3 landscape-lines-17 landscape-columns-4 portrait-columns-9 landscape-xposition-13 portrait-xposition-4 maude unit_plain" module="TOP-IMAGE_module2.xml" />
-		<box id="b2" embed="article" class="portrait-yposition-29 portrait-lines-7 landscape-yposition-21 landscape-lines-9 columns-3 xposition-4 maude unit_plain" module="TOP-IMAGE_module2.xml" />
-		<box id="b3" embed="article" class="portrait-yposition-29 portrait-lines-7 landscape-yposition-21 landscape-lines-9 columns-3 xposition-7 maude unit_plain" module="TOP-IMAGE_module2.xml" />
-		<box id="b4" embed="article" class="portrait-yposition-29 portrait-lines-7 landscape-yposition-21 landscape-lines-9 columns-3 xposition-10 maude unit_plain" module="TOP-IMAGE_module2.xml" />
-		<box id="b5" embed="article" class="portrait-yposition-37 portrait-lines-5 landscape-yposition-21 landscape-lines-9 landscape-columns-4 portrait-columns-9 landscape-xposition-13 portrait-xposition-4 maude unit_plain" module="AHED_module2.xml" />
 	</box>
-	<box id="strap">
+	<box id="deco" embed="article" class="lines-17 yposition-3 columns-9 xposition-4 maude unit_deco" module="DECO_module2.xml"/>
+	<box id="b1" embed="article" class="portrait-yposition-20 portrait-lines-8 landscape-yposition-3 landscape-lines-17 landscape-columns-4 portrait-columns-9 landscape-xposition-13 portrait-xposition-4 maude unit_plain" module="TOP-IMAGE_module2.xml" />
+	<box id="b2" embed="article" class="portrait-yposition-29 portrait-lines-7 landscape-yposition-21 landscape-lines-9 columns-3 xposition-4 maude unit_plain" module="TOP-IMAGE_module2.xml" />
+	<box id="b3" embed="article" class="portrait-yposition-29 portrait-lines-7 landscape-yposition-21 landscape-lines-9 columns-3 xposition-7 maude unit_plain" module="TOP-IMAGE_module2.xml" />
+	<box id="b4" embed="article" class="portrait-yposition-29 portrait-lines-7 landscape-yposition-21 landscape-lines-9 columns-3 xposition-10 maude unit_plain" module="TOP-IMAGE_module2.xml" />
+	<box id="b5" embed="article" class="portrait-yposition-37 portrait-lines-5 landscape-yposition-21 landscape-lines-9 landscape-columns-4 portrait-columns-9 landscape-xposition-13 portrait-xposition-4 maude unit_plain" module="AHED_module2.xml" />
+
+	<box id="strap" class="tablet_only yposition-1">
 		<box class="tablet_only latest_news_box xposition-1">
 			<p class="latest_news">LATEST NEWS</p>
 		</box>

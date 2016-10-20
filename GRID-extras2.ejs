@@ -1,4 +1,19 @@
 {
+	jpml: {
+		padding: [{
+			$switch: [
+				{ if-all: [
+					=scale.tablet,
+					=intent.template
+				], then: 68 },
+				{ if-all: [
+					=scale.phone,
+					=intent.template,
+					{ if: =page.section, equals: "TOP_NEWS" }
+				], then: 0 }
+			]
+		}, 0, 0, 0]
+	},
 	.vertical-grid-module: {
 		layout-grid-line-offset: 5,
 		layout-grid-line: { 
@@ -9,17 +24,6 @@
 		layout-grid-line-offset: -31,
 		layout-grid-line: { 
 			if: =intent.article, then: { $multiply: [20, =view.zoomlevel] }, else: 20 
-		}
-	},
-	#vertical-grid: {
-		top: {
-			$switch: [
-				{ if: =scale.tablet, then: 68 },
-				{ if-all: [
-					=scale.phone,
-					{ if: =page.section, equals: "TOP_NEWS" }
-				], then: 52 }
-			]
 		}
 	},
 	.visual-content-padding: {

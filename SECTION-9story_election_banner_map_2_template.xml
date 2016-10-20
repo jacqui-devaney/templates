@@ -79,16 +79,18 @@
 					display: none
 				},
   				#election-bar: {
-	  				frame: [0, 0, =view.width, 52],
-					background-color: #ffff00, 
+	  				frame: [0, 0, =view.width, 100],
  					options: {
 						href: "url(http://graphics.dev.wsj.com/elections/2016/live-results/?embed=1&amp;banner=1)",
 						src: "url(http://graphics.dev.wsj.com/elections/2016/live-results/?embed=1&amp;banner=1)"
 					} 
 				}, 
 				#election-map: {
-					height: =size.continuation_height_large,
-					background-color: #0000ff,
+					height: {$multiply: [=view.width, 0.666]},
+					left: 0,
+					right: 0,
+					border-color: #d8d8d8,
+					border-width: [0.5, 0, 0],
 					options: {
 						href: "url(http://graphics.dev.wsj.com/ballot-box-map/embed-test.html)",
 						src: "url(http://graphics.dev.wsj.com/ballot-box-map/embed-test.html)"
@@ -247,7 +249,7 @@
 	<box id="election-bar" embed="webview" />
 
 	<box id="b1" embed="article" class="yposition-3 landscape-lines-24 portrait-lines-25 columns-8 xposition-1 maude unit_plain unit_418" module="TOP-IMAGE_module2.xml" />
-	<box id="election-map" class="phone_only maude unit_plain unit_166" />
+	<box id="election-map" class="phone_only maude unit_plain unit_166" embed="webview" />
 	<box id="b2" embed="article" class="portrait-yposition-29 landscape-yposition-3 portrait-lines-18 landscape-lines-17 columns-4 landscape-xposition-9 portrait-xposition-1  maude unit_plain unit_166" module="TOP-IMAGE_module2.xml" />
 	<box id="b3" embed="article" class="portrait-yposition-29 landscape-yposition-3 portrait-lines-18 landscape-lines-17 columns-4 landscape-xposition-13 portrait-xposition-5 maude unit_plain unit_166" module="TOP-IMAGE_module2.xml" />
 	<box id="b4" embed="article" class="portrait-yposition-3 landscape-yposition-21 portrait-lines-7 landscape-lines-6 columns-4 xposition-9  maude unit_plain unit_50" module="CONTINUATION-dynamic_module2.xml" />

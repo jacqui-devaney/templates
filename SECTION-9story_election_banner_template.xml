@@ -79,8 +79,7 @@
 					display: none
 				},
   				#election-bar: {
-	  				frame: [0, 0, =view.width, 75],
-	  				padding: [10, 15, 0, 0],
+	  				frame: [0, 0, =view.width, 100],
 					background-color: #ffff00, 
  					options: {
 						href: "url(http://graphics.dev.wsj.com/elections/2016/live-results/?embed=1&amp;banner=1)",

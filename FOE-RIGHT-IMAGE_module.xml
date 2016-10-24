@@ -1,0 +1,144 @@
+<jpml id="RIGHT-IMAGE_module">
+	<style src="GLOBAL-stylesheet.ejs" />
+	<style src="GLOBAL_MODULES-stylesheet.ejs" />
+	<style src="PHONE-MODULES-stylesheet.ejs" />
+	<style>{
+		$join: [
+			{$switch: [
+				{ if: =options.top_border, then: {
+					jpml: {
+						border-width: [1, 0, 0, 0],
+						padding: [6, 0, 0, 0],
+						border-color: #d8d8d8
+					}
+
+				}},
+				{ if: =options.left_border, then: {
+					jpml: {
+						border-width: [0, 0, 0, 1],
+						border-color: #d8d8d8,
+						padding: [0, 0, 0, 10]
+					}
+
+				}},
+				{ if: =options.right_border, then: {
+					jpml: {
+						border-width: [0, 1, 0, 0],
+						border-color: #d8d8d8,
+						padding: [0, 10, 0, 0]
+					}
+
+				}},
+				{ if: =options.bottom_border, then: {
+					jpml: {
+						border-width: [0, 0, 1, 0],
+						border-color: #d8d8d8,
+						padding: [0, 0, 0, 0]
+					}
+
+				}},
+				{ if: =options.middle_align_text, then: {
+					#headline: {
+						vertical-align:middle
+					}
+
+				}},
+				{ if: true, then: {
+					jpml: {
+						border-width: [0, 0, 0, 0],
+						padding: [0, 0, 0, 0]
+					}
+				}}
+
+			]},
+			{
+				#deco_container: {
+					anchor-x: right,
+					width: {$switch:[
+						{if: =options.A_image, then:170},
+						{if: =options.small_image, then:200},
+						{if: =options.square_image, then:173},
+						{if: =options.wide_image, then:350},
+						{if: =options.small_wide_image, then:=view.width},
+						228
+					]},
+					anchor-y:{if: =options.wide_image, then:bottom, else:top},
+					display:{if: =options.hide_image, then:none, else:inherit},
+					padding: {if: =options.image_padding, then: [10, 0, 0, 0], else: none},
+					padding: {if: =options.bottom_image_padding, then: [0, 0, 5, 0], else: none}
+				},
+				image: {
+					pixels-per-point-x:1,
+					pixels-per-point-y:1,
+					height: {$switch:[
+						{if: =options.A_image, then:{$subtract:[=view.height, {if: =options.top_border, then:25, else:12}]}},
+						{if: =options.small_image, then:{$subtract:[=view.height, {if: =options.top_border, then:25, else:12}]}},
+						{if: =options.square_image, then:{$subtract:[=view.height, {if: =options.top_border, then:25, else:12}]}},
+						{if: =options.wide_image, then:{$multiply: [=view.width, .42 ]}},
+						{if: =options.small_wide_image, then:{$multiply: [=view.width, .6 ]}},
+						228
+					]},
+					width: {$switch:[
+						{if: =options.A_image, then:170},
+						{if: =options.small_image, then:200},
+						{if: =options.square_image, then:173},
+						{if: =options.wide_image, then:350},
+						{if: =options.small_wide_image, then:=view.width},
+						228
+					]}
+				},
+
+				.byline: {
+					display: {if: =options.show_byline, then:inherit, else:none}
+
+				},
+				.body: {
+					display: {if: =options.show_body, then:inherit, else:none},
+					font-name: SharpSansNo1-Book,
+					column-count: {if: =options.show_columns, then: 3, else:none},
+					padding: [0, 10, 0, 0]
+				},
+				.module_flashline: {
+					display: {if: =options.show_flashline, then:inherit, else:none}
+				},
+				.module_headline: { 
+					font-name: SharpSansNo1-Book,
+					padding: {if: =options.headline_padding, then: [20, 0, 10, 0], else: [0, 0, 10, 0]}
+				}
+			}
+		]
+
+		}</style>
+		<style>{
+			if: =scale.phone, then:{
+				jpml:{
+					padding:[0, 8],
+					border-width: [{if: =options.top_border, then:1, else:0}, 0, {if: =options.no_border, then:0, else:1}, 0],
+					border-color: #d6d6d6
+				},
+				#deco_container: {
+					display:none
+				},
+				#body: {
+					display:none
+				},
+				#headline: {
+					vertical-align:middle
+				}
+			}, else:{
+
+			}
+		}</style>
+		<box id="deco_container" embed="deco-image">
+			<image class="summary-image"/>
+		</box>
+		<panel id="headline">
+			<p class="module_flashline"><mark class="flashline-mark" /></p>
+			<p class="module_headline"><mark class="m_headline" /></p>
+            <p class="byline"><mark class="byline-mark"/></p>
+            <panel class="body">
+            	<p><mark class="body-first-p-mark" /><mark class="body-mark"/></p>
+            </panel>
+        </panel>
+
+</jpml>

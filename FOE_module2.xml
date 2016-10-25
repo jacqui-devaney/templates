@@ -126,8 +126,18 @@
 				},
 				.body: {
 					font-name: SharpSansNo1-Book,
-					column-count: {if: =options.show_columns, then: 3, else:none},
-					column-gap: 0
+					column-count: {if: =options.two_columns, then: 2, else:3},
+					column-gap: 10					
+				},
+				#body_container: { 
+					width: {if: =options.move_body, then:{$multiply: [=view.width, .48 ]}, else:=view.width},
+					anchor-x: {if: =options.anchor_body, then:right, else: none},
+					padding: [8, 0, 0, 0]
+				},
+				#headline_container: { 
+					width: {if: =options.move_body, then:{$multiply: [=view.width, .5 ]}, else:=view.width},
+					anchor-x: {if: =options.anchor_headline, then:left, else: none}
+
 				}
 			}
 		]
@@ -233,20 +243,24 @@
 	</box>
 	<panel id="vertical" >
 		<p class="opinion_flashline">OPINION</p>
-		<panel id="headline">
-			 <h2 class="opinion_dek"><mark class="subhed-mark" /></h2>
-			 <p class="module_flashline small-vertical-grid-module"><mark class="flashline-mark" /></p>
-			<p class="module_headline"><mark class="m_headline" /></p>
-		</panel>
+		<box id="headline_container">
+			<panel id="headline">
+				 <h2 class="opinion_dek"><mark class="subhed-mark" /></h2>
+				 <p class="module_flashline small-vertical-grid-module"><mark class="flashline-mark" /></p>
+				<p class="module_headline"><mark class="m_headline" /></p>
+			</panel>
+		</box>
 		<panel id="body" class="vertical-grid-module">
 			<p class="byline"><mark class="byline-mark"/></p>
 			<p id="summary" class="body"><mark class="body-first-p-mark" /><mark class="module_summary" /></p>
+			<box id="body_container">
 			<panel class="body">
 				<p>
 					<mark class="body-first-p-mark" />
 					<mark class="body-mark"/>
 				</p>
 			</panel>
+		</box>
 		</panel>
 	 </panel>
 </jpml>

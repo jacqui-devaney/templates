@@ -82,8 +82,8 @@
 	  				frame: [0, 0, =view.width, 100],
 					background-color: #ffff00, 
  					options: {
-						href: "url(http://graphics.dev.wsj.com/elections/2016/live-results/?embed=1&amp;banner=1)",
-						src: "url(http://graphics.dev.wsj.com/elections/2016/live-results/?embed=1&amp;banner=1)"
+						href: "url(http://graphics.dev.wsj.com/elections/2016/banner-homepage/?layout=president)",
+						src: "url(http://graphics.dev.wsj.com/elections/2016/banner-homepage/?layout=president)"
 					} 
 				}, 			
 				#tabbar-container: {

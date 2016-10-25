@@ -1,54 +1,7 @@
 <jpml id="ELECTION-COVER.module.xml">
-	<style src="GLOBAL-stylesheet2.ejs" />
-	<style src="GRID-extras2.ejs" />
-	<style src="GLOBAL_MODULES-stylesheet2.ejs" />
-	<style src="PHONE-MODULES-stylesheet.ejs" />
 	<style>{
 		jpml: {
 			background-color: transparent
 		}
 	}</style>
-	<style>{
-			{
-				#body: {
-					display: {if: =options.hide_body, then:none, else:inherit}
-				},
-				#deco_container: {
-					display:none
-				},
-				.byline: {
-					display:{if: =options.show_byline, then:inherit, else:none}
-				},
-				.module_flashline: {
-					display: {if: =options.show_flashline, then:inherit, else:none}
-				}
-			}
-		]
-	}</style>
-	<style>{
-		if: =options.float_image, equals: right, then: {
-			image: {
-				width: 111,
-				height: 111,
-				padding: [0, 4, 0, 4],
-				image-scale: 0.5
-			}
-		}
-	}</style>
-	<style>{
-		if: =options.show_opinion_dek, equals: true, then: {
-			.opinion_dek: {
-				display: inherit
-			}
-		}
-	}
-	</style>
-	<box id="deco_container" embed="deco-image">
-	</box>
-	<panel id="vertical" >
-		<panel id="body" class="vertical-grid-module">
-			<panel class="body">
-			</panel>
-		</panel>
-	 </panel>
 </jpml>

@@ -1,4 +1,4 @@
-<jpml id="SECTION-1story_template">
+<jpml id="ELECTION-FullCoverPlusThree_template">
 	<style src="GLOBAL-stylesheet.ejs" />
     <style src="GRID-stylesheet.ejs"/>
 	<style src="RAIL-stylesheet.ejs" />
@@ -31,17 +31,17 @@
 				#b1:	{
 					top:600,
 					height:100,
-					options:{medium_headline:false, hide_body:true, show_flashline:false, small_image:false, show_image:false, show_headline:false}
+					options:{}
 				},
 				#b2:	{
 					top:750,
 					height:100,
-					options:{medium_headline:false, show_body:false, show_flashline:false, small_image:false, show_image:false, show_headline:false}
+					options:{}
 				},
 				#b3:	{
 					top:900,
 					height:100,
-					options:{medium_headline:false, show_body:false, show_flashline:false, small_image:false, show_image:false, show_headline:false}
+					options:{}
 				}
 			}},
 			{if: =landscape, then: {
@@ -65,7 +65,7 @@
 				#b3:	{
 					top:650,
 					height:100,
-					options:{medium_headline:true, show_body:true, show_flashline:true, small_image:true}
+					options:{}
 				}
 			}}
 		]

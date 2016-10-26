@@ -1,0 +1,16 @@
+{
+  "influence": [
+    {
+      "key": "Page Tint",
+      "title": "Change Header Color Black/White",
+      "type": "toggle",
+      "options": [{
+        "label": "White",
+        "values": { "page_tint_color": false }
+      }, {
+        "label": "Black",
+        "values": { "page_tint_color": true }
+      }]
+    }
+  ]
+}

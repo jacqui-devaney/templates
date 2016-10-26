@@ -79,13 +79,25 @@
 					display: none
 				},
   				#election-bar: {
-	  				frame: [0, 0, =view.width, 100],
-					background-color: #ffff00, 
+	  				top: 0,
+	  				left: 0,
+	  				height: 75,
+	  				padding: [10, 0, 15, 0],
+	  				background-image: "url(thickBell_promo@3x.png)",
+					background-position: center,
  					options: {
 						href: "url(http://graphics.dev.wsj.com/elections/2016/banner-homepage/?layout=president)",
 						src: "url(http://graphics.dev.wsj.com/elections/2016/banner-homepage/?layout=president)"
 					} 
-				}, 			
+				}, 
+				#election-container: {
+					padding: [0.5, 10, 0, 10],
+					border-width: [0.5, 0, 0],
+					border-color: #d8d8d8,
+					top: 0,
+					left: 0,
+					right: 0
+				},		
 				#tabbar-container: {
 					display: none
 				},
@@ -236,7 +248,9 @@
 	<box id="page_details" embed="pagedescription" />
 	<box id="ad_placeholder" class="ad-banner" embed="pagedescription" />
 	<box id="marketstrap" embed="marketstrap" />
-	<box id="election-bar" embed="webview" />
+	<box id="election-container">
+		<box id="election-bar" embed="webview" class="maude" />
+	</box>
 
 	<box id="b1" embed="article" class="yposition-3 landscape-lines-24 portrait-lines-25 columns-8 xposition-1 maude unit_plain unit_418" module="TOP-IMAGE_module2.xml" />
 	<box id="b2" embed="article" class="portrait-yposition-29 landscape-yposition-3 portrait-lines-18 landscape-lines-17 columns-4 landscape-xposition-9 portrait-xposition-1  maude unit_plain unit_166" module="TOP-IMAGE_module2.xml" />

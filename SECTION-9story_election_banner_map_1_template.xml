@@ -79,14 +79,19 @@
 					display: none
 				},
   				#election-bar: {
-	  				frame: [0, 0, =view.width, 100],
+	  				top: 0,
+	  				left: 0,
+	  				height: 75,
+	  				padding: [10, 0, 15, 0],
+	  				background-image: "url(thickBell_promo@3x.png)",
+					background-position: center,
  					options: {
 						href: "url(http://graphics.dev.wsj.com/elections/2016/banner-homepage/?layout=president)",
 						src: "url(http://graphics.dev.wsj.com/elections/2016/banner-homepage/?layout=president)"
 					} 
 				}, 
 				#election-container: {
-					padding: [0.5, 0, 0],
+					padding: [0.5, 10, 0, 10],
 					border-width: [0.5, 0, 0],
 					border-color: #d8d8d8,
 					top: 0,
@@ -95,20 +100,23 @@
 				},
 				#election-map: {
 					height: {$multiply: [=view.width, 0.666]},
+					background-image: "url(thickBell_promo@3x.png)",
+					background-position: center,
+					top: 0,
 					left: 0,
 					right: 0,
 					options: {
-						href: "url(http://graphics.dev.wsj.com/ballot-box-map/embed-test.html)",
-						src: "url(http://graphics.dev.wsj.com/ballot-box-map/embed-test.html)"
+						href: "url(http://graphics.dev.wsj.com/elections/2016/map-embed/?embed=1&amp;mobile=1)",
+						src: "url(http://graphics.dev.wsj.com/elections/2016/map-embed/?embed=1&amp;mobile=1)"
 					}
 				},
 				#election-headline: {
-					font-name: "ChronicleDisplay-Semi",
-					font-size: 22,
-					line-height: 26,
-					color: #2b3333,
-					text-align: left,
-					padding: [9, 19, 10, 19]
+						font-name: "ChronicleDisplay-Semi",
+						font-size: 22,
+						line-height: 26,
+						color: #2b3333,
+						text-align: left,
+						padding: [9, 19, 10, 19]
 				},					
 				#tabbar-container: {
 					display: none
@@ -248,9 +256,11 @@
 	<box id="page_details" embed="pagedescription" />
 	<box id="ad_placeholder" class="ad-banner" embed="pagedescription" />
 	<box id="marketstrap" embed="marketstrap" />
-	<box id="election-bar" embed="webview" />
+	<box id="election-container">
+		<box id="election-bar" embed="webview" class="maude" />
+	</box>
 
- 	<box id="election-container" class="phone_only maude unit_plain">
+	<box id="election-container" class="phone_only maude unit_plain">
 		<box id="election-map" embed="webview" />
 		<h2 id="election-headline">Get live results</h2>
 	</box>

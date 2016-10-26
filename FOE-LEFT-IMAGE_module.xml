@@ -1,4 +1,4 @@
-<jpml id="LEFT-IMAGE_module">
+<jpml id="FOE-LEFT-IMAGE_module">
 	<style src="GLOBAL-stylesheet.ejs" />
 	<style src="GLOBAL_MODULES-stylesheet2.ejs" />
 	<style src="PHONE-MODULES-stylesheet.ejs" />
@@ -116,7 +116,7 @@
 					font-name: SharpSansNo1-Book,
 					column-count: {if: =options.show_columns, then: 2, else:none},
 					column-gap: 0, 
-					padding: [0, 0, 0, 0]
+					padding: [10, 0, 0, 0]
 				},
 				#top_flashline: {
 					display: {if: =options.show_top_flashline, then:inherit, else:none}

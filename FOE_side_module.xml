@@ -1,4 +1,4 @@
-<jpml id="TOP-IMAGE_module">
+<jpml id="FOE_side_module">
 	<style src="GLOBAL-stylesheet2.ejs" />
 	<style src="GRID-extras2.ejs" />
 	<style src="GLOBAL_MODULES-stylesheet2.ejs" />
@@ -57,16 +57,14 @@
                 }},
                 {if: =options.squarish_image, then:{
                     anchor-x:left,
-                    anchor-y:top,
+                    anchor-y: {if: =options.anchor_bottom, then: bottom, else: top},
                     width: 174,
-                    padding: [0, 10, 0, 0]
+                    padding: {if: =options.image_padding, then:[0, 10, 15, 0], else: [0, 10, 0, 0]}
                 }},
                 {if: =options.large_image, then:{
-                    anchor-x:left,
-                    anchor-y:{if: =options.A_image, then:bottom, else:top},
-                    width: 486,
-                    padding: [0, 16, 0, 0]
-                }},
+                    anchor-y:bottom,
+                    width:=view.width
+                 }},
                 {if: true, then: {
                     anchor-x:left,
                     anchor-y:{if: =options.A_image, then:bottom, else:top},
@@ -92,11 +90,12 @@
 							{if: =options.tall_image, then:150},
 							{if: =options.squarish_image, then:125},
 							{if: =options.top_image, then:{$multiply: [=view.width, .6 ]}},
+							{if: =options.large_image, then:{$multiply: [=view.width, .6 ]}},
 							{$subtract:[=view.height, {if: =options.top_border, then:12, else:10}]}
 						]
 					},
 					width: {$switch:[
-						{if: =options.large_image, then:486},
+						{if: =options.large_image, then:=view.width},
 						{if: =options.small_image, then:92},
 						{if: =options.squarish_image, then:165},
 						{if: =options.top_image, then:=view.width},

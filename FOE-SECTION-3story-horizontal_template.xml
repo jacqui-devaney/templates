@@ -1,4 +1,4 @@
-<jpml id="FOE-SECTION-3story-vertical_template">
+<jpml id="FOE-SECTION-3story-horizontal_template">
 	<style src="FUTURE-stylesheet.ejs" />
 	<style src="GLOBAL-stylesheet2.ejs"/>
     <style src="GRID-stylesheet2.ejs"/>
@@ -49,10 +49,10 @@
 					options:{ future_large_headline:true, show_image:true, top_image:true, show_columns:true, column_gap: true}
 				},
 				#b2:	{
-					options:{ medium_headline:true, show_body:true, top_border:true, show_image:true}
+					options:{ medium_headline:true, show_body:true, top_border:true, show_image:true, headline_padding:true}
 				},
 				#b3:	{
-					options:{ future_medium_headline:true, show_body:true, show_image:true, tall_image:true}
+					options:{ future_medium_headline:true, show_body:true, show_image:true, tall_image:true, headline_padding:true}
 				}
 			}},
 			{if: =landscape, then: {

@@ -1,4 +1,4 @@
-<jpml id="TOP-IMAGE_module">
+<jpml id="FOE_module2">
 	<style src="GLOBAL-stylesheet2.ejs" />
 	<style src="GRID-extras2.ejs" />
 	<style src="GLOBAL_MODULES-stylesheet2.ejs" />
@@ -70,10 +70,10 @@
                     padding: [0, 0, 10, 0]
                 }},
                 {if: =options.squarish_image, then:{
-                    anchor-x:left,
-                    anchor-y:top,
-                    width: 174,
-                    padding: [0, 10, 0, 0]
+                    anchor-x:right,
+                    anchor-y: bottom,
+                    width: 400,
+                    padding: [30, 0, 0, 0]
                 }},
                 {if: =options.large_image, then:{
                     anchor-x:left,
@@ -104,7 +104,7 @@
 					height: {
 						$switch: [
 							{if: =options.tall_image, then:{$multiply: [=view.width, .8 ]}},
-							{if: =options.squarish_image, then:125},
+							{if: =options.squarish_image, then:570},
 							{if: =options.top_image, then:{$multiply: [=view.width, .651 ]}},
 							{$subtract:[=view.height, {if: =options.top_border, then:12, else:10}]}
 						]
@@ -112,7 +112,7 @@
 					width: {$switch:[
 						{if: =options.large_image, then:486},
 						{if: =options.small_image, then:92},
-						{if: =options.squarish_image, then:165},
+						{if: =options.squarish_image, then:400},
 						{if: =options.top_image, then:=view.width},
 						{if: =options.tall_image, then:=view.width},
 						236
@@ -127,7 +127,7 @@
 				.body: {
 					font-name: SharpSansNo1-Book,
 					column-count: {if: =options.two_columns, then: 2, else:3},
-					column-gap: 10					
+					column-gap: 10
 				},
 				#body_container: { 
 					width: {if: =options.move_body, then:{$multiply: [=view.width, .48 ]}, else:=view.width},

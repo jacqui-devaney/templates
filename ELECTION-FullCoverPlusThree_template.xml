@@ -1,4 +1,4 @@
-<jpml id="FRONT-3story-election_template">
+<jpml id="ELECTION-FullCoverPlusThree_template">
 	<style src="GLOBAL-stylesheet.ejs" />
     <style src="GRID-stylesheet.ejs"/>
 	<style src="RAIL-stylesheet.ejs" />
@@ -29,16 +29,20 @@
 					options:{very_large_caps_headline:true, image_idiom:portrait, white_text:true, full_screen:true, large_body:true}
 				},
 				#b1:	{
-					top:550,
-					height:150,
-					options:{medium_headline:false, hide_body:true, show_flashline:false, small_image:false, show_image:false, show_headline:false}
+					top:600,
+					height:100,
+					options:{}
 				},
 				#b2:	{
-					top:800,
-					height:150,
-					options:{medium_headline:false, show_body:false, show_flashline:false, small_image:false, show_image:false, show_headline:false}
+					top:750,
+					height:100,
+					options:{}
+				},
+				#b3:	{
+					top:900,
+					height:100,
+					options:{}
 				}
-
 			}},
 			{if: =landscape, then: {
 				jpml: {padding:[0]},
@@ -49,13 +53,18 @@
 					options:{very_large_caps_headline:true, white_text:true, image_idiom:landscape, full_screen:true, large_body:true}
 				},
 				#b1:	{
-					top:400,
-					height:150,
+					top:410,
+					height:100,
 					options:{}
 				},
 				#b2:	{
-					top:600,
-					height:150,
+					top:530,
+					height:100,
+					options:{}
+				},
+				#b3:	{
+					top:650,
+					height:100,
 					options:{}
 				}
 			}}
@@ -65,5 +74,6 @@
 	<box id="deco" embed="article" class="column_full positionx_full maude unit_full" module="FULL-SIZE_module.xml" />
 	<box id="b1" embed="article" class="landscape-columns-6 portrait-columns-6 landscape-xposition-1 portrait-xposition-1 maude unit_plain" module="ELECTION_COVER_module.xml" />
 	<box id="b2" embed="article" class="landscape-columns-6 portrait-columns-6 landscape-xposition-1 portrait-xposition-1 maude unit_plain" module="ELECTION_COVER_module.xml" />
+	<box id="b3" embed="article" class="landscape-columns-6 portrait-columns-6 landscape-xposition-1 portrait-xposition-1 maude unit_plain" module="ELECTION_COVER_module.xml" />
 
 </jpml>

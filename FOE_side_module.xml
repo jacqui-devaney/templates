@@ -59,7 +59,7 @@
                     anchor-x:left,
                     anchor-y: {if: =options.anchor_bottom, then: bottom, else: top},
                     width: 174,
-                    padding: {if: =options.image_padding, then:[0, 10, 15, 0], else: [0, 10, 0, 0]}
+                    padding: {if: =options.image_padding, then:[0, 10, 15, 0], else: [0, 10, 5, 0]}
                 }},
                 {if: =options.large_image, then:{
                     anchor-y:bottom,
@@ -87,8 +87,8 @@
 					pixels-per-point-y:1,
 					height: {
 						$switch: [
-							{if: =options.tall_image, then:150},
-							{if: =options.squarish_image, then:125},
+							{if: =options.tall_image, then:{$multiply: [=view.width, .9 ]}},
+							{if: =options.squarish_image, then:{$multiply: [=view.width, .645 ]}},
 							{if: =options.top_image, then:{$multiply: [=view.width, .6 ]}},
 							{if: =options.large_image, then:{$multiply: [=view.width, .6 ]}},
 							{$subtract:[=view.height, {if: =options.top_border, then:12, else:10}]}
@@ -111,7 +111,8 @@
 				},
 				.body: {
 					font-name: SharpSansNo1-Book,
-					column-count: {if: =options.show_columns, then: 3, else:none}
+					column-count: {if: =options.show_columns, then: 3, else:none},
+					padding: {if: =options.body_padding, then: [0, 0, 10, 0], else: [0, 0, 0, 0]}
 				}
 			}
 		]
@@ -191,16 +192,6 @@
 			},
 			#summary: {
 				display: none
-			}
-		}
-	}</style>
-	<style>{
-		if: =options.float_image, equals: right, then: {
-			image: {
-				width: 111,
-				height: 111,
-				padding: [0, 4, 0, 4],
-				image-scale: 0.5
 			}
 		}
 	}</style>

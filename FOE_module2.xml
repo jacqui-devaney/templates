@@ -73,7 +73,7 @@
                     anchor-x:right,
                     anchor-y: bottom,
                     width: 400,
-                    padding: [30, 0, 0, 0]
+                    padding: [30, 0, 10, 0]
                 }},
                 {if: =options.large_image, then:{
                     anchor-x:left,
@@ -104,7 +104,7 @@
 					height: {
 						$switch: [
 							{if: =options.tall_image, then:{$multiply: [=view.width, .8 ]}},
-							{if: =options.squarish_image, then:570},
+							{if: =options.squarish_image, then:560},
 							{if: =options.top_image, then:{$multiply: [=view.width, .651 ]}},
 							{$subtract:[=view.height, {if: =options.top_border, then:12, else:10}]}
 						]
@@ -132,11 +132,12 @@
 				#body_container: { 
 					width: {if: =options.move_body, then:{$multiply: [=view.width, .48 ]}, else:=view.width},
 					anchor-x: {if: =options.anchor_body, then:right, else: none},
-					padding: [8, 0, 0, 0]
+					padding: {if: options.body_padding, then:[8, 0, 0, 0], else: [0, 0, 0, 0]}
 				},
 				#headline_container: { 
 					width: {if: =options.move_body, then:{$multiply: [=view.width, .5 ]}, else:=view.width},
-					anchor-x: {if: =options.anchor_headline, then:left, else: none}
+					anchor-x: {if: =options.anchor_headline, then:left, else: none},
+					padding: {if: options.headline_padding, then:[0, 0, 20, 0], else: [0, 0, 0, 0]}
 
 				}
 			}
@@ -242,7 +243,6 @@
 		 <image class="summary-image"/>
 	</box>
 	<panel id="vertical" >
-		<p class="opinion_flashline">OPINION</p>
 		<box id="headline_container">
 			<panel id="headline">
 				 <h2 class="opinion_dek"><mark class="subhed-mark" /></h2>

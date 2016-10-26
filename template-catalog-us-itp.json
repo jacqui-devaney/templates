@@ -952,31 +952,6 @@
       },
       {
         "section": "FRONT_SECTION",
-        "filename": "FRONT-3story-election_template.xml",
-        "title": "Election Template with 2 Tap Areas",
-        "usage": "front",
-        "boxes": [
-          {
-            "id": "b1",
-            "images": {}
-          },
-          {
-            "id": "deco",
-            "images": {
-              "tablet": {
-                "width": 768,
-                "height": 1024
-              }
-            }
-          },
-          {
-            "id": "b2",
-            "images": {}
-          }
-        ]
-      },
-      {
-        "section": "FRONT_SECTION",
         "filename": "ELECTION-FullCoverPlusThree_template.xml",
         "title": "Election Template with 3 Tap Areas",
         "usage": "front",

@@ -1,6 +1,6 @@
 <jpml id="FOE-RIGHT-IMAGE_module">
 	<style src="GLOBAL-stylesheet.ejs" />
-	<style src="GLOBAL_MODULES-stylesheet.ejs" />
+	<style src="GLOBAL_MODULES-stylesheet2.ejs" />
 	<style src="PHONE-MODULES-stylesheet.ejs" />
 	<style>{
 		$join: [
@@ -62,10 +62,9 @@
 						{if: =options.small_wide_image, then:=view.width},
 						228
 					]},
-					anchor-y:{if: =options.wide_image, then:bottom, else:top},
+					anchor-y:{if: =options.anchor_image, then:bottom, else:top},
 					display:{if: =options.hide_image, then:none, else:inherit},
-					padding: {if: =options.image_padding, then: [10, 0, 0, 0], else: none},
-					padding: {if: =options.bottom_image_padding, then: [0, 0, 5, 0], else: none}
+					padding: {if: =options.bottom_image_padding, then: [0, 0, 10, 0], else: none}
 				},
 				image: {
 					pixels-per-point-x:1,
@@ -74,7 +73,7 @@
 						{if: =options.A_image, then:{$subtract:[=view.height, {if: =options.top_border, then:25, else:12}]}},
 						{if: =options.small_image, then:{$subtract:[=view.height, {if: =options.top_border, then:25, else:12}]}},
 						{if: =options.square_image, then:{$subtract:[=view.height, {if: =options.top_border, then:25, else:12}]}},
-						{if: =options.wide_image, then:{$multiply: [=view.width, .42 ]}},
+						{if: =options.wide_image, then:{$multiply: [=view.width, .44 ]}},
 						{if: =options.small_wide_image, then:{$multiply: [=view.width, .6 ]}},
 						228
 					]},
@@ -102,8 +101,7 @@
 					display: {if: =options.show_flashline, then:inherit, else:none}
 				},
 				.module_headline: { 
-					font-name: SharpSansNo1-Book,
-					padding: {if: =options.headline_padding, then: [20, 0, 10, 0], else: [0, 0, 10, 0]}
+					padding: [0, 0, 10, 0]
 				}
 			}
 		]

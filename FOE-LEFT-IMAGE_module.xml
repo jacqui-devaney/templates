@@ -49,19 +49,19 @@
                 {if: =options.top_image, then:{
                 	anchor-y: bottom,
                     width: 175,
-                     padding: [0, 5, 5, 5]
+                     padding: [0, 15, 25, 5]
                 }},
                 {if: =options.tall_image, then:{
                 	anchor-x:right,
                     anchor-y:top,
                     width: 175,
-                    padding: [0, 5, 10, 5]
+                    padding: [0, 5, 10, 0]
                 }},
                 {if: =options.squarish_image, then:{
                     anchor-x:left,
                     anchor-y:top,
                     width: 174,
-                    padding: [0, 10, 10, 0]
+                    padding: [0, 10, 15, 0]
                 }},
                 {if: =options.large_image, then:{
                     anchor-x:left,
@@ -95,6 +95,7 @@
 							{if: =options.top_image, then:{$multiply: [=view.width, .4 ]}},
 							{if: =options.squarish_image, then:{$multiply: [=view.width, .8 ]}},
 							{if: =options.small_image, then:{$multiply: [=view.width, .8 ]}},
+							{if: =options.A_image, then:{$multiply: [=view.width, .85 ]}},
 							{$subtract:[=view.height, {if: =options.top_border, then:12, else:10}]}
 						]
 					},
@@ -120,6 +121,9 @@
 				},
 				#top_flashline: {
 					display: {if: =options.show_top_flashline, then:inherit, else:none}
+				},
+				.module_headline: {
+					padding:  {if: =options.body_padding, then:[0, 0, 10, 0], else: [0, 0, 0, 0]}
 				}
 			}
 		]
@@ -159,20 +163,6 @@
 				},
 				.body: {
 					color: #222221
-				}
-			}
-		}</style>
-		<style>{
-			if: =page.section, equals: "SPECIAL_REPORT", then: {
-                .module_headline: {
-					font-size: {if: =options.large_headline, then: 26, else: 17},
-					line-height: {if: =options.large_headline, then: 30, else: 21},
-					padding:[0, 0, 6, 0],
-                    font-name: "WhitneySSm-Semibold"
-				},
-				.body: {
-                    color: #222221,
-                    text-indent: 0
 				}
 			}
 		}</style>

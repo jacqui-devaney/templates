@@ -79,16 +79,19 @@
 					display: none
 				},
   				#election-bar: {
-	  				frame: [0, 0, =view.width, 100],
-	  				border-width: [0, 0, 0.5, 0],
-	  				border-color: #d8d8d8,
+	  				top: 0,
+	  				left: 0,
+	  				height: 75,
+	  				padding: [10, 0, 15, 0],
+	  				background-image: "url(thickBell_promo@3x.png)",
+					background-position: center,
  					options: {
 						href: "url(http://graphics.dev.wsj.com/elections/2016/banner-homepage/?layout=president)",
 						src: "url(http://graphics.dev.wsj.com/elections/2016/banner-homepage/?layout=president)"
 					} 
 				}, 
 				#election-container: {
-					padding: [0.5, 0, 0],
+					padding: [0.5, 10, 0, 10],
 					border-width: [0.5, 0, 0],
 					border-color: #d8d8d8,
 					top: 0,
@@ -97,7 +100,8 @@
 				},
 				#election-map: {
 					height: {$multiply: [=view.width, 0.666]},
-					padding: [0, 20, 0, 0],
+					background-image: "url(thickBell_promo@3x.png)",
+					background-position: center,
 					top: 0,
 					left: 0,
 					right: 0,
@@ -131,7 +135,7 @@
 							else: {$multiply: [=view.width, 0.6]}
 						}
 					},
-					padding: [{if: {$count:[=articles.b1.images.phone]}, more-than: 0, then: 0, else: 22}, 0, 0, 0],
+					padding: [{if: {$count:[=articles.b1.images.phone]}, more-than: 0, then: 10, else: 30}, 0, 0, 0],
 					options: { show_body: true, medium_headline: true, module: url(TOP-IMAGE_module.xml) }
 				},
 				#b2 : {
@@ -263,9 +267,13 @@
 	<style src="PROMO-PHONE-stylesheet.ejs" />
 	<box id="page_details" embed="pagedescription" />
 	<box id="ad_placeholder" class="ad-banner" embed="pagedescription" />
-	<box id="election-bar" embed="webview" />
+	<box id="election-container">
+		<box id="election-bar" embed="webview" class="maude" />
+	</box>
 
-	<box id="b1" embed="article" class="yposition-3 landscape-lines-24 portrait-lines-25 columns-8 xposition-1 maude unit_plain unit_418" module="TOP-IMAGE_module2.xml" />
+	<box id="election-container" class="phone-only maude unit_plain">
+		<box id="b1" embed="article" class="yposition-3 landscape-lines-24 portrait-lines-25 columns-8 xposition-1 maude unit_plain unit_418" module="TOP-IMAGE_module2.xml" />
+	</box>
 	<box id="election-container" class="phone_only maude unit_plain">
 		<box id="election-map" embed="webview" />
 		<h2 id="election-headline">Get live results</h2>

@@ -264,10 +264,9 @@
 		<box id="election-map" embed="webview" />
 		<h2 id="election-headline">Get live results</h2>
 	</box>
-<!-- 	<box id="b1" embed="article" class="yposition-3 landscape-lines-24 portrait-lines-25 columns-8 xposition-1 maude unit_plain unit_418" module="TOP-IMAGE_module2.xml" /> -->
-	<box id="b2" embed="article" class="portrait-yposition-29 landscape-yposition-3 portrait-lines-18 landscape-lines-17 columns-4 landscape-xposition-9 portrait-xposition-1  maude unit_plain unit_166" module="TOP-IMAGE_module2.xml" />
-	<box id="b3" embed="article" class="portrait-yposition-29 landscape-yposition-3 portrait-lines-18 landscape-lines-17 columns-4 landscape-xposition-13 portrait-xposition-5 maude unit_plain unit_166" module="TOP-IMAGE_module2.xml" />
-	<box id="b4" embed="article" class="portrait-yposition-3 landscape-yposition-21 portrait-lines-7 landscape-lines-6 columns-4 xposition-9  maude unit_plain unit_50" module="CONTINUATION-dynamic_module2.xml" />
+	<box id="b1" embed="article" class="portrait-yposition-29 landscape-yposition-3 portrait-lines-18 landscape-lines-17 columns-4 landscape-xposition-9 portrait-xposition-1  maude unit_plain unit_166" module="TOP-IMAGE_module2.xml" />
+	<box id="b2" embed="article" class="portrait-yposition-29 landscape-yposition-3 portrait-lines-18 landscape-lines-17 columns-4 landscape-xposition-13 portrait-xposition-5 maude unit_plain unit_166" module="TOP-IMAGE_module2.xml" />
+	<box id="b3" embed="article" class="portrait-yposition-3 landscape-yposition-21 portrait-lines-7 landscape-lines-6 columns-4 xposition-9  maude unit_plain unit_50" module="CONTINUATION-dynamic_module2.xml" />
 	<box id="small_ad_container" class="phone_only maude unit_ad">
 		<box id="cube_ad" embed="fullpagead">
 			<p id="ad_headline">ADVERTISEMENT</p>
@@ -276,11 +275,11 @@
 			<p id="ad_headline">ADVERTISEMENT</p>
 		</box>
 	</box>
-	<box id="b5" embed="article" class="portrait-yposition-11 landscape-yposition-21 portrait-lines-7 landscape-lines-6 columns-4 landscape-xposition-13 portrait-xposition-9 maude unit_plain unit_50" module="CONTINUATION-dynamic_module2.xml" />
-	<box id="b6" embed="article" class="portrait-yposition-19 landscape-yposition-28 portrait-lines-7 landscape-lines-6 columns-4 landscape-xposition-1 portrait-xposition-9 maude unit_plain unit_50" module="CONTINUATION-dynamic_module2.xml" />
-	<box id="b7" embed="article" class="portrait-yposition-27 landscape-yposition-28 lines-6 columns-4 landscape-xposition-5 portrait-xposition-9 maude unit_plain unit_50" module="CONTINUATION-dynamic_module2.xml" />
-	<box id="b8" embed="article" class="portrait-yposition-34 landscape-yposition-28 lines-6 columns-4 xposition-9 maude unit_plain unit_50" module="CONTINUATION-dynamic_module2.xml" />
-	<box id="b9" embed="article" class="portrait-yposition-41 landscape-yposition-28 lines-6 columns-4 landscape-xposition-13 portrait-xposition-9 maude unit_plain unit_50" module="CONTINUATION-dynamic_module2.xml" />
+	<box id="b4" embed="article" class="portrait-yposition-11 landscape-yposition-21 portrait-lines-7 landscape-lines-6 columns-4 landscape-xposition-13 portrait-xposition-9 maude unit_plain unit_50" module="CONTINUATION-dynamic_module2.xml" />
+	<box id="b5" embed="article" class="portrait-yposition-19 landscape-yposition-28 portrait-lines-7 landscape-lines-6 columns-4 landscape-xposition-1 portrait-xposition-9 maude unit_plain unit_50" module="CONTINUATION-dynamic_module2.xml" />
+	<box id="b6" embed="article" class="portrait-yposition-27 landscape-yposition-28 lines-6 columns-4 landscape-xposition-5 portrait-xposition-9 maude unit_plain unit_50" module="CONTINUATION-dynamic_module2.xml" />
+	<box id="b7" embed="article" class="portrait-yposition-34 landscape-yposition-28 lines-6 columns-4 xposition-9 maude unit_plain unit_50" module="CONTINUATION-dynamic_module2.xml" />
+	<box id="b8" embed="article" class="portrait-yposition-41 landscape-yposition-28 lines-6 columns-4 landscape-xposition-13 portrait-xposition-9 maude unit_plain unit_50" module="CONTINUATION-dynamic_module2.xml" />
 
 	<box id="tabbar-container" class="landscape-columns-16 portrait-columns-12 xposition-1" >
 		<box class="center-me">

@@ -144,6 +144,173 @@
       },
       {
         "section": "SPECIAL_REPORT",
+        "filename": "FOE-SECTION-5story_template.xml",
+        "title": "5 story - Future of Everything",
+        "usage": "continuation",
+        "boxes": [
+            {
+            "id": "b1",
+           "images": {
+              "tablet": {
+                "width": 640,
+                "height": 426
+              }
+            }
+          },
+          {
+            "id": "b2",
+            "images": {
+              "tablet": {
+                "width": 640,
+                "height": 426
+              }
+            }
+          },
+            {
+            "id": "b3",
+            "images": {
+              "tablet": {
+                "width": 640,
+                "height": 426
+              }
+            }
+          },
+          {
+            "id": "b4",
+            "images": {
+              "tablet": {
+                "width": 640,
+                "height": 426
+              }
+            }
+          },
+          {
+            "id": "b5",
+            "images": {
+              "tablet": {
+                "width": 640,
+                "height": 426
+              }
+            }
+          }
+        ]
+      }, 
+      {
+        "section": "SPECIAL_REPORT",
+        "filename": "FOE-SECTION-4story_template.xml",
+        "title": "5 story - Future of Everything",
+        "usage": "continuation",
+        "boxes": [
+            {
+            "id": "b1",
+            "images": {
+              "tablet": {
+                "width": 640,
+                "height": 426
+              }
+            }
+          },
+          {
+            "id": "b2",
+            "images": {
+              "tablet": {
+                "width": 640,
+                "height": 426
+              }
+            }
+          },
+            {
+            "id": "b3",
+            "images": {
+              "tablet": {
+                "width": 640,
+                "height": 426
+              }
+            }
+          },
+          {
+            "id": "b4",
+            "images": {
+              "tablet": {
+                "width": 640,
+                "height": 426
+              }
+            }
+          }
+        ]
+      },  
+       {
+        "section": "SPECIAL_REPORT",
+        "filename": "FOE-SECTION-3story-horizontal_template.xml",
+        "title": "3 story horizontal photo",
+        "usage": "continuation",
+        "boxes": [
+          {
+            "id": "b1",
+            "images": {
+              "tablet": {
+                "width": 640,
+                "height": 426
+              }
+            }
+          },
+          {
+            "id": "b2",
+            "images": {
+              "tablet": {
+                "width": 640,
+                "height": 426
+              }
+            }
+          },
+          {
+            "id": "b3",
+            "images": {
+              "tablet": {
+                "width": 640,
+                "height": 426
+              }
+            }
+          }
+        ]
+      },
+      {
+        "section": "SPECIAL_REPORT",
+        "filename": "FOE-SECTION-3story-vertical_template.xml",
+        "title": "3 story vertical photo",
+        "usage": "continuation",
+        "boxes": [
+          {
+            "id": "b1",
+            "images": {
+              "tablet": {
+                "width": 640,
+                "height": 426
+              }
+            }
+          },
+          {
+            "id": "b2",
+            "images": {
+              "tablet": {
+                "width": 640,
+                "height": 426
+              }
+            }
+          },
+          {
+            "id": "b3",
+            "images": {
+              "tablet": {
+                "width": 640,
+                "height": 426
+              }
+            }
+          }
+        ]
+      },
+      {
+        "section": "SPECIAL_REPORT",
         "filename": "CONTINUATION-8story-future-of-everything_template.xml",
         "usage": "continuation",
         "boxes": [

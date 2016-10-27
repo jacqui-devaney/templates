@@ -1,0 +1,86 @@
+<jpml id="FOE-SECTION-4story_template">
+	<style src="FUTURE-stylesheet.ejs" />
+	<style src="GLOBAL-stylesheet2.ejs"/>
+    <style src="GRID-stylesheet2.ejs"/>
+    <style src="PHONE-stylesheet.ejs"/>
+	<style src="RAIL-stylesheet.ejs" />
+	<style>{
+		#page_details: {
+			options: {
+		        hideHeaderBorder: true,
+				tintTitle: true
+			}
+		}
+	}</style>
+	<style>{
+		jpml: {
+			background-color: =color.background
+			},
+    	#ad_placeholder: {
+    		display: none
+    	},
+    	#marketstrap: {
+    		display: none
+    	},
+		.center-me: {
+			text-align:center,
+			anchor-y: middle
+		},
+		a: {
+			padding: [8, 0]
+		},
+		span: {
+			padding: [3, 0]
+		},
+		.more-link: {
+			font-name: "WhitneySSm-Book"
+		}
+	}</style>
+	<style> {
+		$switch: [
+			{if: =scale.rail, then: {
+				#footer:{
+					display: none
+				},
+				#tabbar-container:{
+					display: none
+				}
+			}},
+		{if: =portrait, then: {
+				#b1:	{
+					options:{ future_large_headline:true, show_image:true, top_image:true, show_columns:true, column_gap: true}
+				},
+				#b2:	{
+					options:{ future_medium_light_headline:true, show_body:true, top_border:true, show_image:true, wide_image:true, image_padding: true, body_padding:true, bottom_image_padding:true, anchor_image:true}
+				},
+				#b3:	{
+					options:{ future_medium_headline:true, show_body:true, show_image:true, tall_image:true}
+				},
+				#b4:	{
+					options:{ future_medium_headline:true, top_border:true, show_body:true, show_image:true, tall_image:true}
+
+				}
+			}},
+			{if: =landscape, then: {
+				#b1:	{
+					options:{ future_large_headline:true, show_image:true, tall_image:true, show_columns:true}
+				},
+				#b2:	{
+					padding: [5, 0, 0, 0],
+					options:{ future_medium_light_headline:true, show_body:true, show_image:true, A_image:true, top_border:true}
+				},
+				#b3:	{
+					options:{ future_medium_headline:true, top_border:false, show_image:true, top_image:true}
+				},
+				#b4:	{
+					options:{ future_medium_headline:true, top_border:false, show_image:true, top_image:true}
+				}
+			}}
+		]
+	} </style>
+
+	<box id="b1" embed="article" class="portrait-columns-9 landscape-columns-10 portrait-xposition-1 landscape-xposition-1 portrait-yposition-5 landscape-yposition-5 portrait-lines-30 landscape-lines-33 maude unit_plain" module="FOE_module2.xml" />
+	<box id="b2" embed="article" class="portrait-columns-9 landscape-columns-6 portrait-yposition-36 landscape-yposition-28 landscape-xposition-11 portrait-xposition-1 portrait-lines-14 landscape-lines-10  maude unit_plain" module="FOE-RIGHT-IMAGE_module.xml" />
+	<box id="b3" embed="article" class="landscape-columns-3 portrait-columns-3 landscape-yposition-5 portrait-yposition-5 portrait-xposition-10 landscape-xposition-11 portrait-lines-22 landscape-lines-22 maude unit_plain" module="FOE_side_module.xml" />
+	<box id="b4" embed="article" class="landscape-columns-3 portrait-columns-3 landscape-yposition-5 portrait-yposition-28 landscape-xposition-14 portrait-xposition-10 portrait-lines-22 landscape-lines-22 maude unit_plain" module="FOE_side_module.xml" />
+</jpml>

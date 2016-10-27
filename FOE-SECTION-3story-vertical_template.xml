@@ -2,6 +2,8 @@
 	<style src="FUTURE-stylesheet.ejs" />
 	<style src="GLOBAL-stylesheet2.ejs"/>
     <style src="GRID-stylesheet2.ejs"/>
+    <style src="PHONE-stylesheet.ejs"/>
+	<style src="RAIL-stylesheet.ejs" />
 	<style>{
 		#page_details: {
 			options: {
@@ -57,7 +59,7 @@
 			}},
 			{if: =landscape, then: {
 				#b1:	{
-					options:{ future_large_headline:true, show_image:true, squarish_image:true, module: url(FOE_module2.xml)}
+					options:{ future_large_headline:true, show_image:true, squarish_image:true, headline_padding: true, body_padding: true, two_columns: false, module: url(FOE_module2.xml)}
 				},
 				#b2:	{
 					options:{ future_medium_light_headline:true, show_body:true, show_image:true, squarish_image:true, image_padding:true}

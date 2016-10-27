@@ -55,7 +55,7 @@
                 	anchor-x:right,
                     anchor-y:top,
                     width: 175,
-                    padding: [0, 5, 10, 0]
+                    padding: [0, 5, 0, 0]
                 }},
                 {if: =options.squarish_image, then:{
                     anchor-x:left,
@@ -76,6 +76,7 @@
                         {if: =options.small_image, then:=view.width},
                         {if: =options.tall_image, then:=view.width},
                         236
+                        
                     ]},
                     padding: {$switch:[
                         {if: =options.small_image, then:[0, 0, 10, 0]},

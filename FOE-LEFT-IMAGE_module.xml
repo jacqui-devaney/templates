@@ -1,0 +1,182 @@
+<jpml id="FOE-LEFT-IMAGE_module">
+	<style src="GLOBAL-stylesheet.ejs" />
+	<style src="GLOBAL_MODULES-stylesheet2.ejs" />
+	<style src="PHONE-MODULES-stylesheet.ejs" />
+	<style>{
+		jpml: {
+			background-color: =options.background_color,
+			border-color: #d8d8d8
+		},
+		#top_flashline: {
+			display: none
+		}
+	}</style>
+	<style>{
+		$join: [
+			{$switch: [
+				{ if: =options.top_border, then: {
+					jpml: {
+						border-width: [1, 0, 0, 0],
+						padding: [5, 0, 0, 0]
+					}
+
+				}},
+				{ if: =options.left_border, then: {
+					jpml: {
+						border-width: [0, 0, 0, 1],
+						padding: [0, 0, 0, 10]
+					}
+
+				}},
+				{ if: =options.right_border, then: {
+					jpml: {
+						border-width: [0, 1, 0, 0],
+						padding: [0, 10, 0, 0]
+					}
+
+				}},
+				{ if: true, then: {
+					jpml: {
+						border-width: [0, 0, 0, 0],
+						padding: [0, 0, 0, 0]
+					}
+				}}
+
+			]},
+			{
+            #deco_container: {
+                $switch: [
+                {if: =options.top_image, then:{
+                	anchor-y: bottom,
+                    width: 175,
+                     padding: [0, 15, 25, 5]
+                }},
+                {if: =options.tall_image, then:{
+                	anchor-x:right,
+                    anchor-y:top,
+                    width: 175,
+                    padding: [0, 5, 0, 0]
+                }},
+                {if: =options.squarish_image, then:{
+                    anchor-x:left,
+                    anchor-y:top,
+                    width: 174,
+                    padding: [0, 10, 15, 0]
+                }},
+                {if: =options.large_image, then:{
+                    anchor-x:left,
+                    anchor-y:{if: =options.A_image, then:bottom, else:top},
+                    width: 486,
+                    padding: [0, 16, 0, 0]
+                }},
+                {if: true, then: {
+                    anchor-x:left,
+                    anchor-y:{if: =options.small_image, then:bottom, else:top},
+                    width: {$switch:[
+                        {if: =options.small_image, then:=view.width},
+                        {if: =options.tall_image, then:=view.width},
+                        236
+                        
+                    ]},
+                    padding: {$switch:[
+                        {if: =options.small_image, then:[0, 0, 10, 0]},
+                        {if: =options.tall_image, then:[0, 0, 0, 0]},
+                        [0, 12, 0, 0]
+                    ]}
+                }}
+                ]
+				},
+
+				image: {
+					pixels-per-point-x:1,
+					pixels-per-point-y:1,
+					height: {
+						$switch: [
+							{if: =options.tall_image, then:{$multiply: [=view.width, .4 ]}},
+							{if: =options.top_image, then:{$multiply: [=view.width, .4 ]}},
+							{if: =options.squarish_image, then:{$multiply: [=view.width, .8 ]}},
+							{if: =options.small_image, then:{$multiply: [=view.width, .8 ]}},
+							{if: =options.A_image, then:{$multiply: [=view.width, .85 ]}},
+							{$subtract:[=view.height, {if: =options.top_border, then:12, else:10}]}
+						]
+					},
+					width: {$switch:[
+						{if: =options.large_image, then:486},
+						{if: =options.small_image, then:=view.width},
+						{if: =options.squarish_image, then:174},
+						{if: =options.top_image, then: 175},
+						{if: =options.tall_image, then: 175},
+						236
+					]}
+				},
+
+				.byline: {
+					display: {if: =options.show_byline, then:inherit, else:none}
+
+				},
+				.body: {
+					font-name: SharpSansNo1-Book,
+					column-count: {if: =options.show_columns, then: 2, else:none},
+					column-gap: 0, 
+					padding: [10, 0, 0, 0]
+				},
+				#top_flashline: {
+					display: {if: =options.show_top_flashline, then:inherit, else:none}
+				},
+				.module_headline: {
+					padding:  {if: =options.body_padding, then:[0, 0, 10, 0], else: [0, 0, 0, 0]}
+				}
+			}
+		]
+
+		}</style>
+		<style>{
+			if: =scale.phone, then:{
+				jpml:{
+					padding:[0, 8],
+					border-width: [{if: =options.top_border, then:1, else:0}, 0, {if: =options.no_border, then:0, else:1}, 0],
+					border-color: #d6d6d6
+				},
+				#image_wrapper: {
+					display:none
+				},
+				#body: {
+					display:none
+				},
+				#headline: {
+					vertical-align:middle
+				}
+			}, else:{}
+		}</style>
+		<style>{
+			if: =page.section, equals: "WSJ_MAGAZINE", then: {
+				.module_flashline: {
+					display: {if: =options.show_flashline, then:inherit, else:none},
+					font-name: HelveticaNeue-Light,
+					font-size: 12
+				},
+				.module_headline: {
+					font-name: DJ5EscrowCond-Light,
+					font-size: {if: =options.large_headline, then: 32, else: 24},
+					line-height: {if: =options.large_headline, then: 36, else: 24},
+					text-transform: uppercase,
+					padding:[0, 0, 2, 0]
+				},
+				.body: {
+					color: #222221
+				}
+			}
+		}</style>
+		<box id="deco_container" embed="deco-image">
+			<image class="summary-image"/>
+		</box>
+		<panel id="headline">
+			<p class="module_flashline" id="top_flashline"><mark class="flashline-mark" /></p>
+			<p id="headline" class="module_headline"><mark class="m_headline" /></p>
+            <p class="byline"><mark class="byline-mark"/></p>
+            <panel class="body">
+            	<p><mark class="body-first-p-mark" /><mark class="body-mark"/></p>
+            </panel>
+        </panel>
+
+</jpml>

@@ -63,7 +63,7 @@
                 $switch: [
                 {if: =options.top_image, then:{
                     width:=view.width,
-                    padding: [0, 0, 12, 0]
+                    padding: [0, 0, 0, 0]
                 }},
                 {if: =options.tall_image, then:{
                     width:=view.width,
@@ -100,9 +100,9 @@
 					pixels-per-point-y:1,
 					height: {
 						$switch: [
-							{if: =options.tall_image, then:{$multiply: [=view.width, .96 ]}},
+							{if: =options.tall_image, then:{$multiply: [=view.width, .99 ]}},
 							{if: =options.squarish_image, then:545},
-							{if: =options.top_image, then:{$multiply: [=view.width, .87 ]}},
+							{if: =options.top_image, then:{$multiply: [=view.width, .93 ]}},
 							{if: =options.large_image, then:700},
 							{$subtract:[=view.height, {if: =options.top_border, then:12, else:10}]}
 						]
@@ -126,6 +126,9 @@
 					font-name: SharpSansNo1-Book,
 					column-count: {if: =options.show_columns, then: 3, else:none},
 					column-gap: 0
+				},
+				#headline_container: {
+					padding: [0,0,10,0]
 				}
 			}
 		]
@@ -227,10 +230,11 @@
 	}
 	</style>
 	<box id="deco_container" embed="deco-image">
-		<panel id="headline">
-			<p class="module_flashline small-vertical-grid-module"><mark class="flashline-mark" /></p>
-			<p class="module_headline"><mark class="m_headline" /></p>
-		</panel>
+		<box id="headline_container">
+			<panel id="headline">
+				<p class="module_headline"><mark class="m_headline" /></p>
+			</panel>
+		</box>
 		 <image class="summary-image"/>
 	</box>
 	<panel id="vertical" >

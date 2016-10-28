@@ -2,6 +2,8 @@
 	<style src="FUTURE-stylesheet.ejs" />
 	<style src="GLOBAL-stylesheet2.ejs"/>
     <style src="GRID-stylesheet2.ejs"/>
+    <style src="PHONE-stylesheet.ejs"/>
+	<style src="RAIL-stylesheet.ejs" />
 	<style>{
 		#page_details: {
 			options: {
@@ -46,10 +48,10 @@
 			}},
 		{if: =portrait, then: {
 				#b1:	{
-					options:{ future_large_headline:true, show_image:true, large_image:true, show_columns:true, column_gap: true, headline_padding:true}
+					options:{ future_large_headline:true, show_image:true, large_image:true, headline_padding:true}
 				},
 				#b2:	{
-					options:{ future_medium_light_headline:true, show_body:true, top_border:true, show_image:true, top_image: true}
+					options:{ future_medium_light_headline:true, show_body:true, top_border:false, show_image:true, top_image: true}
 				},
 				#b3:	{
 					options:{ future_medium_light_headline:true, show_body:true, show_image:true, large_image:true, top_border:true}
@@ -57,7 +59,7 @@
 			}},
 			{if: =landscape, then: {
 				#b1:	{
-					options:{ future_large_headline:true, show_image:true, squarish_image:true,module: url(FOE_module2.xml)}
+					options:{ future_large_headline:true, show_image:true, squarish_image:true, headline_padding: true, body_padding: true, two_columns: false, module: url(FOE_module2.xml)}
 				},
 				#b2:	{
 					options:{ future_medium_light_headline:true, show_body:true, show_image:true, squarish_image:true, image_padding:true}
@@ -69,7 +71,7 @@
 		]
 	} </style>
 
-	<box id="b1" embed="article" class="portrait-columns-9 landscape-columns-10 portrait-xposition-1 landscape-xposition-1 portrait-yposition-5 landscape-yposition-5 portrait-lines-45 landscape-lines-31 maude unit_plain" module="FOE_module.xml" />
+	<box id="b1" embed="article" class="portrait-columns-9 landscape-columns-10 portrait-xposition-1 landscape-xposition-1 portrait-yposition-5 landscape-yposition-5 portrait-lines-45 landscape-lines-32 maude unit_plain" module="FOE_module.xml" />
 	<box id="b2" embed="article" class="portrait-columns-3 landscape-columns-3 portrait-yposition-5 landscape-yposition-5 landscape-xposition-11 portrait-xposition-10 portrait-lines-22 landscape-lines-32  maude unit_plain" module="FOE_side_module.xml" />
 	<box id="b3" embed="article" class="landscape-columns-3 portrait-columns-3 landscape-yposition-5 portrait-yposition-28 portrait-xposition-10 landscape-xposition-14 portrait-lines-22 landscape-lines-32 maude unit_plain" module="FOE_side_module.xml" />
 </jpml>

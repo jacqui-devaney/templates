@@ -1,4 +1,4 @@
-<jpml id="SECTION-9story_template">
+<jpml id="SECTION-9story_election_banner_map_2_template">
 	<style src="GLOBAL-stylesheet2.ejs"/>
 	<style src="GRID-stylesheet2.ejs"/>
 	<style src="GRID-extras2.ejs"/>
@@ -276,7 +276,7 @@
 	</box>
 	<box id="election-container" class="phone_only maude unit_plain">
 		<box id="election-map" embed="webview" />
-		<h2 id="election-headline">Get live results</h2>
+		<p id="election-headline">Get live results</p>
 	</box>
 	<box id="b2" embed="article" class="portrait-yposition-29 landscape-yposition-3 portrait-lines-18 landscape-lines-17 columns-4 landscape-xposition-9 portrait-xposition-1  maude unit_plain unit_166" module="TOP-IMAGE_module2.xml" />
 	<box id="b3" embed="article" class="portrait-yposition-29 landscape-yposition-3 portrait-lines-18 landscape-lines-17 columns-4 landscape-xposition-13 portrait-xposition-5 maude unit_plain unit_166" module="TOP-IMAGE_module2.xml" />

@@ -81,7 +81,8 @@
   				#election-bar: {
 	  				top: 0,
 	  				left: 0,
-	  				height: 75,
+	  				width: {if-any: [=loadables.election-bar.loaded, {if: =loadables.election-bar, then: false, else: true}], then: inherit, else: 1},
+	  				height: {if-any: [=loadables.election-bar.loaded, {if: =loadables.election-bar, then: false, else: true}], then: 75, else: 1},
 	  				padding: [10, 0, 15, 0],
 	  				background-image: "url(thickBell_promo@3x.png)",
 					background-position: center,
@@ -99,7 +100,8 @@
 					right: 0
 				},
 				#election-map: {
-					height: {$multiply: [=view.width, 0.666]},
+	  				width: {if-any: [=loadables.election-map.loaded, {if: =loadables.election-map, then: false, else: true}], then: inherit, else: 1},
+	  				height: {if-any: [=loadables.election-map.loaded, {if: =loadables.election-map, then: false, else: true}], then: {$multiply: [=view.width, 0.666]}, else: 1},
 					background-image: "url(thickBell_promo@3x.png)",
 					background-position: center,
 					top: 0,
@@ -123,8 +125,7 @@
 				},
 				#b1 : {
 					height: =size.continuation_height_large,
-					padding: [{if: {$count:[=articles.b1.images.phone]}, more-than: 0, then: 0, else: 22}, 0, 0, 0],
-					options: { show_body: true, medium_headline: true, module: url(TOP-IMAGE_module.xml) }
+					options: { show_body: true, medium_headline: true, module: url(CONTINUATION-dynamic_module.xml) }
 				},
 				#b2 : {
 					height: =size.continuation_height_large,
@@ -166,7 +167,7 @@
 			}},
 			{if: =portrait, then: {
 				#b1:	{
-					options: { module: url(TOP-IMAGE_module2.xml) }
+					options: { top_border: true }
 				},
 				#b2:	{
 					options: { top_border: true }

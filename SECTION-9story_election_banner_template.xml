@@ -81,8 +81,8 @@
   				#election-bar: {
 	  				top: 0,
 	  				left: 0,
-	  				width: {if-any: [{if: =loadables.election-bar.loaded, then: true, else: false}, {if: =loadables.election-bar, then: true, else: false}], then: inherit, else: 1},
-	  				height: {if-any: [{if: =loadables.election-bar.loaded, then: true, else: false}, {if: =loadables.election-bar, then: true, else: false}], then: 75, else: 1},
+	  				width: {if-any: [=loadables.election-bar.loaded, {if: =loadables.election-bar, then: false, else: true}], then: inherit, else: 1},
+	  				height: {if-any: [=loadables.election-bar.loaded, {if: =loadables.election-bar, then: false, else: true}], then: 75, else: 1},
 	  				padding: [10, 0, 15, 0],
 	  				background-image: "url(thickBell_promo@3x.png)",
 					background-position: center,

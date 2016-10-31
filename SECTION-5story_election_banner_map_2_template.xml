@@ -240,11 +240,11 @@
 				top: { if: =portrait, then: 620, else: 120}
 			},
 			#election-map: {
-				height: 290,
-				width: 476,
+				height: { if: =portrait, then: 290, else: 270},
+				width: { if: =portrait, then: 458, else: 410},
 				padding: [0, 0, 0, 0],
 				top: { if: =portrait, then: 25, else: 20},
-				left: 0,
+				left: { if: =portrait, then: 0, else: 30},
 				right: 0,
 				options: {
 					href: "url(http://graphics.dev.wsj.com/elections/2016/map-embed/?embed=1&amp;mobile=1)",

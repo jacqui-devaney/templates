@@ -86,7 +86,7 @@
 	  				background-image: "url(thickBell_promo@3x.png)",
 					background-position: center,
  					options: {
-						href: "url(http://graphics.dev.wsj.com/elections/2016/banner-homepage/?layout=president)",
+						href: "url(http://graphics.dev.wsj.com/elections/2016/live-results/)",
 						src: "url(http://graphics.dev.wsj.com/elections/2016/banner-homepage/?layout=president)"
 					}
 				},
@@ -184,7 +184,7 @@
 				background-position: center,
 				background-image: "url(thickBell_promo@3x.png)",
 				options: {
-					href: "url(http://graphics.dev.wsj.com/elections/2016/banner-homepage/?layout=president-ipad)",
+					href: "url(http://graphics.dev.wsj.com/elections/2016/live-results/)",
 					src: "url(http://graphics.dev.wsj.com/elections/2016/banner-homepage/?layout=president-ipad)"
 				}
 			},
@@ -197,7 +197,7 @@
 				background-position: center,
 				background-image: "url(thickBell_promo@3x.png)",
 				options: {
-					href: "url(http://graphics.dev.wsj.com/elections/2016/banner-homepage/?layout=senate-house-stack)",
+					href: "url(http://graphics.dev.wsj.com/elections/2016/live-results/)",
 					src: "url(http://graphics.dev.wsj.com/elections/2016/banner-homepage/?layout=senate-house-stack)"
 				}
 			},

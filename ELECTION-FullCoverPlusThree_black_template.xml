@@ -1,4 +1,4 @@
-<jpml id="ELECTION-FullCoverPlusThree_template">
+<jpml id="ELECTION-FullCoverPlusThree_black_template">
 	<style src="GLOBAL-stylesheet.ejs" />
     <style src="GRID-stylesheet.ejs"/>
 	<style src="RAIL-stylesheet.ejs" />
@@ -7,7 +7,7 @@
 			display: inherit,
 			frame: [0, 0, 10, 10],
 			options: {
-                tintColor: { if: =page.section, equals: "WSJ_MAGAZINE", then: #66, else: white },
+                tintColor: { if: =page.section, equals: "WSJ_MAGAZINE", then: #66, else: #2b3333 },
 				tintTitle: true,
 				title: { if: =page.section, equals: "WSJ_MAGAZINE", then: "WSJ. MAGAZINE" }
 			}

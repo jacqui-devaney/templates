@@ -99,7 +99,7 @@
 					right: 0
 				},
 				#election-map-container: {
-					padding: [0.5, 10, 0, 10],
+					padding: [0.5, 16, 0, 10],
 					border-width: [0.5, 0, 0],
 					border-color: #d8d8d8,
 					height: {$multiply: [=view.width, 0.8]},
@@ -125,7 +125,7 @@
 						line-height: 26,
 						color: #2b3333,
 						text-align: left,
-						padding: [{$multiply: [=view.width, 0.7]}, 19, 10, 19]
+						padding: [{$multiply: [=view.width, 0.7]}, 9, 10, 9]
 				},
 				#tabbar-container: {
 					display: none

@@ -952,7 +952,40 @@
       },
       {
         "section": "FRONT_SECTION",
-        "filename": "ELECTION-FullCoverPlusThree_template.xml",
+        "filename": "ELECTION-FullCoverPlusThree_white_template.xml",
+        "title": "Election Template with 3 Tap Areas",
+        "usage": "front",
+        "boxes": [
+          {
+            "id": "b1",
+            "images": {}
+          },
+          {
+            "id": "deco",
+            "images": {
+              "portrait": {
+                "width": 768,
+                "height": 1024
+              },
+              "landscape": {
+                "width": 1024,
+                "height": 768
+              }
+            }
+          },
+          {
+            "id": "b2",
+            "images": {}
+          },
+          {
+            "id": "b3",
+            "images": {}
+          }
+        ]
+      },
+      {
+        "section": "FRONT_SECTION",
+        "filename": "ELECTION-FullCoverPlusThree_black_template.xml",
         "title": "Election Template with 3 Tap Areas",
         "usage": "front",
         "boxes": [

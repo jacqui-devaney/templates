@@ -403,8 +403,8 @@
         ]
       },
       {
-        "filename": "SECTION-9story_election_banner_template.xml",
-        "title": "9 story - election banner only",
+        "filename": "SECTION-7story_election_banner_template.xml",
+        "title": "7 story - election banner only",
         "usage": "front",
         "boxes": [
           {
@@ -481,117 +481,12 @@
                 "height": 122
               }
             }
-          },
-          {
-            "id": "b8",
-            "images": {
-              "phone": {
-                "width": 182,
-                "height": 122
-              }
-            }
-          },
-          {
-            "id": "b9",
-            "images": {
-              "phone": {
-                "width": 182,
-                "height": 122
-              }
-            }
           }
         ]
       },
       {
-        "filename": "SECTION-9story_election_banner_map_1_template.xml",
-        "title": "8 story - election banner and map 1",
-        "usage": "front",
-        "boxes": [
-          {
-            "id": "b1",
-            "images": {
-              "tablet": {
-                "width": 236,
-                "height": 157
-              },
-              "phone": {
-                "width": 182,
-                "height": 122
-              }
-            }
-          },
-          {
-            "id": "b2",
-            "images": {
-              "tablet": {
-                "width": 236,
-                "height": 157
-              },
-              "phone": {
-                "width": 182,
-                "height": 122
-              }
-            }
-          },
-          {
-            "id": "b3",
-            "images": {
-              "phone": {
-                "width": 182,
-                "height": 122
-              }
-            }
-          },
-          {
-            "id": "b4",
-            "images": {
-              "phone": {
-                "width": 182,
-                "height": 122
-              }
-            }
-          },
-          {
-            "id": "b5",
-            "images": {
-              "phone": {
-                "width": 182,
-                "height": 122
-              }
-            }
-          },
-          {
-            "id": "b6",
-            "images": {
-              "phone": {
-                "width": 182,
-                "height": 122
-              }
-            }
-          },
-          {
-            "id": "b7",
-            "images": {
-              "phone": {
-                "width": 182,
-                "height": 122
-              }
-            }
-          },
-          {
-            "id": "b8",
-            "images": {
-              "phone": {
-                "width": 182,
-                "height": 122
-              }
-            }
-          }
-        ]
-      },
-      {
-        "filename": "SECTION-9story_election_banner_map_2_template.xml",
-        "title": "8 story - election banner and map 2",
+        "filename": "SECTION-5story_election_banner_map_2_template.xml",
+        "title": "5 story - Election banner and Map in 2",
         "usage": "front",
         "boxes": [
           {
@@ -610,10 +505,6 @@
           {
             "id": "b2",
             "images": {
-              "tablet": {
-                "width": 236,
-                "height": 157
-              },
               "phone": {
                 "width": 182,
                 "height": 122
@@ -640,33 +531,6 @@
           },
           {
             "id": "b5",
-            "images": {
-              "phone": {
-                "width": 182,
-                "height": 122
-              }
-            }
-          },
-          {
-            "id": "b6",
-            "images": {
-              "phone": {
-                "width": 182,
-                "height": 122
-              }
-            }
-          },
-          {
-            "id": "b7",
-            "images": {
-              "phone": {
-                "width": 182,
-                "height": 122
-              }
-            }
-          },
-          {
-            "id": "b8",
             "images": {
               "phone": {
                 "width": 182,

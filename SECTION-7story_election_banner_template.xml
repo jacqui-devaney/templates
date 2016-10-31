@@ -1,9 +1,9 @@
-<jpml id="SECTION-9story_election_banner_template">
+<jpml id="SECTION-7story_election_banner_template">
 	<style src="GLOBAL-stylesheet2.ejs"/>
 	<style src="GRID-stylesheet2.ejs"/>
 	<style src="GRID-extras2.ejs"/>
 	<style src="ADVERTISING-stylesheet.ejs"/>
-	<style src="ADVERTISING-stylesheet-gridoverride.ejs"/>	
+	<style src="ADVERTISING-stylesheet-gridoverride.ejs"/>
 	<style src="PHONE-stylesheet.ejs"/>
 	<style src="RAIL-stylesheet.ejs" />
 	<style src="SECTION-HIGHLIGHT-stylesheet.ejs" />
@@ -88,8 +88,8 @@
  					options: {
 						href: "url(http://graphics.dev.wsj.com/elections/2016/banner-homepage/?layout=president)",
 						src: "url(http://graphics.dev.wsj.com/elections/2016/banner-homepage/?layout=president)"
-					} 
-				}, 
+					}
+				},
 				#election-container: {
 					padding: [0.5, 10, 0, 10],
 					border-width: [0.5, 0, 0],
@@ -97,7 +97,7 @@
 					top: 0,
 					left: 0,
 					right: 0
-				},		
+				},
 				#tabbar-container: {
 					display: none
 				},

@@ -294,8 +294,78 @@
 				}
 			}
 		}, else: {
-			.alternate-view: {
-				display: none
+			if: =scale.phone, then: {
+				if-any: [
+					{if: =loadables.presidential-election-bar.loaded},
+					{if: =loadables.presidential-election-bar, then: false, else: true},
+				], 
+				then: {
+					.alternate-view: {
+						display: none
+					}
+				}, 
+				else: {
+					.primary-view: {
+						display: none
+					},
+					#b2: {
+						options: {
+							show_image:true
+						}
+					},
+					#b3: {
+						options: {
+							show_image:true
+						}
+					},
+					#b4: {
+						options: {
+							show_image:true
+						}
+					},
+					#b5: {
+						options: {
+							show_image:true
+						}
+					}
+				}
+			},  else: {
+				if-any: [
+					{if: =loadables.presidential-election-bar.loaded},
+					{if: =loadables.presidential-election-bar, then: false, else: true},
+					{if: =loadables.legislative-election-bar.loaded},
+					{if: =loadables.legislative-election-bar, then: false, else: true},
+				], 
+				then: {
+					.alternate-view: {
+						display: none
+					}
+				}, 
+				else: {
+					.primary-view: {
+						display: none
+					},
+					#b2: {
+						options: {
+							show_image:true
+						}
+					},
+					#b3: {
+						options: {
+							show_image:true
+						}
+					},
+					#b4: {
+						options: {
+							show_image:true
+						}
+					},
+					#b5: {
+						options: {
+							show_image:true
+						}
+					}
+				}
 			}
 		}
 	}</style>

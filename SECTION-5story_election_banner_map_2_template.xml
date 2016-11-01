@@ -78,19 +78,11 @@
 				#marketstrap: {
 					display: none
 				},
-				#debug: {
-					height: 100,
-					padding: [30, 0, 30, 0]
-				},
-				#m_debug: {
-					content: {$join: ["Hel= -------bar-loaded=", {if: =loadables.presidential-election-bar.loaded, equals: null, then: "TRUE", else: "FALSE"}, "------lo", =hello]}
-				},
   				#presidential-election-bar: {
 	  				top: 0,
 	  				left: 0,
-<!-- 	  				width: {if-any: [=loadables.presidential-election-bar.loaded, {if: =loadables.presidential-election-bar, equals: null}], then: inherit, else: 1}, -->
-	  				height: {if-any: [=loadables.presidential-election-bar.loaded, {if: =loadables.presidential-election-bar, equals: null}], then: 75, else: 1},
-	  				padding: [10, 0, {if: =loadables.presidential-election-bar, equals: null, then: 100, else: 15}, 0],
+	  				height: 75,
+	  				padding: [10, 0, 15, 0],
 	  				background-image: "url(thickBell_promo@3x.png)",
 					background-position: center,
  					options: {
@@ -116,8 +108,7 @@
 					right: 0
 				},
 				#election-map: {
-	  				width: {if-any: [=loadables.election-map.loaded, {if: =loadables.election-map, then: false, else: true}], then: inherit, else: 1},
-	  				height: {if-any: [=loadables.election-map.loaded, {if: =loadables.election-map, then: false, else: true}], then: {$multiply: [=view.width, 0.666]}, else: 1},
+	  				height: {$multiply: [=view.width, 0.666]},
 					background-image: "url(thickBell_promo@3x.png)",
 					background-position: center,
 					top: 0,
@@ -359,8 +350,82 @@
 				}
 			}
 		}, else: {
-			.alternate-view: {
-				display: none
+			if: =scale.phone, then: {
+				if-any: [
+					{if: =loadables.presidential-election-bar.loaded},
+					{if: =loadables.presidential-election-bar, then: false, else: true},
+					{if: =loadables.election-map.loaded},
+					{if: =loadables.election-map, then: false, else: true}
+				], 
+				then: {
+					.alternate-view: {
+						display: none
+					}
+				}, 
+				else: {
+					.primary-view: {
+						display: none
+					},
+					#b2: {
+						options: {
+							show_image:true
+						}
+					},
+					#b3: {
+						options: {
+							show_image:true
+						}
+					},
+					#b4: {
+						options: {
+							show_image:true
+						}
+					},
+					#b5: {
+						options: {
+							show_image:true
+						}
+					}
+				}
+			},  else: {
+				if-any: [
+					{if: =loadables.presidential-election-bar.loaded},
+					{if: =loadables.presidential-election-bar, then: false, else: true},
+					{if: =loadables.legislative-election-bar.loaded},
+					{if: =loadables.legislative-election-bar, then: false, else: true},
+					{if: =loadables.election-map.loaded},
+					{if: =loadables.election-map, then: false, else: true}
+				], 
+				then: {
+					.alternate-view: {
+						display: none
+					}
+				}, 
+				else: {
+					.primary-view: {
+						display: none
+					},
+					#b2: {
+						options: {
+							show_image:true
+						}
+					},
+					#b3: {
+						options: {
+							show_image:true
+						}
+					},
+					#b4: {
+						options: {
+							show_image:true
+						}
+					},
+					#b5: {
+						options: {
+							show_image:true
+						}
+					}
+				}
 			}
 		}
 	}</style>
@@ -371,9 +436,6 @@
 	<box id="election-banner" class="primary-view election_container">
 		<box id="presidential-election-bar" embed="webview" class="primary-view maude" />
 		<box id="legislative-election-bar" embed="webview" class="primary-view maude" />
-	</box>
-	<box id="debug" class="maude unit_plain">
-		<p><mark id="m_debug"/></p>
 	</box>
 
 	<box id="first-container" class="primary-view election_container maude unit_plain">

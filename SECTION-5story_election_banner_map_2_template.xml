@@ -94,8 +94,8 @@
 	  				background-image: "url(thickBell_promo@3x.png)",
 					background-position: center,
  					options: {
-						href: "url(http://graphics.dev.wsj.com/elections/2016/banner-homepage/?layout=president)",
-						src: "url(http://graphics.dev.wsj.com/elections/2016/banner-homepage/?layout=president)"
+						src: "url(http://graphics.dev.wsj.com/elections/2016/live-results/)",
+						href: "url(http://graphics.dev.wsj.com/elections/2016/banner-homepage/?layout=president)"
 					}
 				},
 				.election_container: {
@@ -107,7 +107,7 @@
 					right: 0
 				},
 				#election-map-container: {
-					padding: [0.5, 10, 0, 10],
+					padding: [0.5, 16, 0, 10],
 					border-width: [0.5, 0, 0],
 					border-color: #d8d8d8,
 					height: {$multiply: [=view.width, 0.8]},
@@ -124,8 +124,8 @@
 					left: 0,
 					right: 0,
 					options: {
-						href: "url(http://graphics.dev.wsj.com/elections/2016/map-embed/?embed=1&amp;mobile=1)",
-						src: "url(http://graphics.dev.wsj.com/elections/2016/map-embed/?embed=1&amp;mobile=1)"
+						src: "url(http://graphics.dev.wsj.com/elections/2016/live-results/)",
+						href: "url(http://graphics.dev.wsj.com/elections/2016/map-embed/?embed=1&amp;mobile=1)"
 					}
 				},
 				#election-headline: {
@@ -134,7 +134,7 @@
 						line-height: 26,
 						color: #2b3333,
 						text-align: left,
-						padding: [{$multiply: [=view.width, 0.7]}, 19, 10, 19]
+						padding: [{$multiply: [=view.width, 0.7]}, 9, 10, 9]
 				},
 				#tabbar-container: {
 					display: none
@@ -218,12 +218,11 @@
 				border-width: [0.5, 0, 0.5],
 				border-color: #d8d8d8,
 				frame: { if: =portrait, then: [24, 60, 476, 45], else: [26, 60, 720, 55] },
-				background-color: #ffff00,
 				background-position: center,
 				background-image: "url(thickBell_promo@3x.png)",
 				options: {
-					href: "url(http://graphics.dev.wsj.com/elections/2016/banner-homepage/?layout=president-ipad)",
-					src: "url(http://graphics.dev.wsj.com/elections/2016/banner-homepage/?layout=president-ipad)"
+					src: "url(http://graphics.dev.wsj.com/elections/2016/live-results/)",
+					href: "url(http://graphics.dev.wsj.com/elections/2016/banner-homepage/?layout=president-ipad)"
 				}
 			},
 			#legislative-election-bar: {
@@ -231,12 +230,11 @@
 				border-width: [0.5, 0, 0.5],
 				border-color: #d8d8d8,
 				frame: { if: =portrait, then: [518, 60, 228, 45], else: [770, 60, 228, 55] },
-				background-color: #ffff00,
 				background-position: center,
 				background-image: "url(thickBell_promo@3x.png)",
 				options: {
-					href: "url(http://graphics.dev.wsj.com/elections/2016/banner-homepage/?layout=senate-house-stack)",
-					src: "url(http://graphics.dev.wsj.com/elections/2016/banner-homepage/?layout=senate-house-stack)"
+					src: "url(http://graphics.dev.wsj.com/elections/2016/live-results/)",
+					href: "url(http://graphics.dev.wsj.com/elections/2016/banner-homepage/?layout=senate-house-stack)"
 				}
 			},
 			#election-map-container: {
@@ -256,8 +254,8 @@
 				left: { if: =portrait, then: 0, else: 30},
 				right: 0,
 				options: {
-					href: "url(http://graphics.dev.wsj.com/elections/2016/map-embed/?embed=1&amp;mobile=1)",
-					src: "url(http://graphics.dev.wsj.com/elections/2016/map-embed/?embed=1&amp;mobile=1)"
+					src: "url(http://graphics.dev.wsj.com/elections/2016/live-results/)",
+					href: "url(http://graphics.dev.wsj.com/elections/2016/map-embed/?embed=1&amp;mobile=1)"
 				}
 			},
 			#election-headline: {
@@ -335,29 +333,60 @@
 			}
 		}
 	}</style>
+	<style>{
+		if: =app.version, less-than: "8.1", then: {
+			.primary-view: {
+				display: none
+			},
+			#b2: {
+				options: {
+					show_image:true
+				}
+			},
+			#b3: {
+				options: {
+					show_image:true
+				}
+			},
+			#b4: {
+				options: {
+					show_image:true
+				}
+			},
+			#b5: {
+				options: {
+					show_image:true
+				}
+			}
+		}, else: {
+			.alternate-view: {
+				display: none
+			}
+		}
+	}</style>
 
 	<style src="PROMO-PHONE-stylesheet.ejs" />
 	<box id="page_details" embed="pagedescription" />
 	<box id="ad_placeholder" class="ad-banner" embed="pagedescription" />
-	<box id="election-banner" class="election_container">
-		<box id="presidential-election-bar" embed="webview" class="maude" />
-		<box id="legislative-election-bar" embed="webview" class="maude" />
+	<box id="election-banner" class="primary-view election_container">
+		<box id="presidential-election-bar" embed="webview" class="primary-view maude" />
+		<box id="legislative-election-bar" embed="webview" class="primary-view maude" />
 	</box>
 	<box id="debug" class="maude unit_plain">
 		<p><mark id="m_debug"/></p>
 	</box>
 
-	<box id="first-container" class="election_container maude unit_plain">
-		<box id="b1" embed="article" class="yposition-6 landscape-lines-28 portrait-lines-24 columns-8 xposition-1 maude unit_plain unit_418" module="TOP-IMAGE_module2.xml" />
+	<box id="first-container" class="primary-view election_container maude unit_plain">
+		<box id="b1" embed="article" class="primary-view yposition-6 landscape-lines-28 portrait-lines-24 columns-8 xposition-1 maude unit_plain unit_418" module="TOP-IMAGE_module2.xml" />
 	</box>
-	<box id="election-map-container" class="maude">
+	<box id="election-map-container" class="primary-view maude">
 		<p id="election-headline">Get live results</p>
 		<box id="election-map" embed="webview" />
 	</box>
-	<box id="b2" embed="article" class="portrait-yposition-6 landscape-yposition-21 portrait-lines-10 landscape-lines-6 columns-4 xposition-9  maude unit_plain unit_50" module="CONTINUATION-dynamic_module2.xml" />
-	<box id="b3" embed="article" class="portrait-yposition-17 landscape-yposition-21 portrait-lines-10 landscape-lines-6 columns-4 landscape-xposition-13 portrait-xposition-9 maude unit_plain unit_50" module="CONTINUATION-dynamic_module2.xml" />
-	<box id="b4" embed="article" class="portrait-yposition-28 landscape-yposition-28 portrait-lines-9 landscape-lines-6 columns-4 xposition-9 maude unit_plain unit_50" module="CONTINUATION-dynamic_module2.xml" />
-	<box id="small_ad_container" class="phone_only maude unit_ad">
+	<box id="b2" embed="article" class="primary-view portrait-yposition-6 landscape-yposition-21 portrait-lines-10 landscape-lines-6 columns-4 xposition-9  maude unit_plain unit_50" module="CONTINUATION-dynamic_module2.xml" />
+	<box id="b3" embed="article" class="primary-view portrait-yposition-17 landscape-yposition-21 portrait-lines-10 landscape-lines-6 columns-4 landscape-xposition-13 portrait-xposition-9 maude unit_plain unit_50" module="CONTINUATION-dynamic_module2.xml" />
+	<box id="b4" embed="article" class="primary-view portrait-yposition-28 landscape-yposition-28 portrait-lines-9 landscape-lines-6 columns-4 xposition-9 maude unit_plain unit_50" module="CONTINUATION-dynamic_module2.xml" />
+	<box id="small_ad_container" class="primary-view phone_only maude unit_ad">
 		<box id="cube_ad" embed="fullpagead">
 			<p id="ad_headline">ADVERTISEMENT</p>
 		</box>
@@ -365,7 +394,26 @@
 			<p id="ad_headline">ADVERTISEMENT</p>
 		</box>
 	</box>
-	<box id="b5" embed="article" class="portrait-yposition-38 landscape-yposition-28 portrait-lines-9 landscape-lines-6 columns-4 landscape-xposition-13 portrait-xposition-9 maude unit_plain unit_50" module="CONTINUATION-dynamic_module2.xml" />
+	<box id="b5" embed="article" class="primary-view portrait-yposition-38 landscape-yposition-28 portrait-lines-9 landscape-lines-6 columns-4 landscape-xposition-13 portrait-xposition-9 maude unit_plain unit_50" module="CONTINUATION-dynamic_module2.xml" />
+
+
+	<!-- For those on 7.8 -->
+	<!-- START -->
+		<box id="b1" embed="article" class="alternate-view yposition-3 landscape-lines-31 portrait-lines-25 columns-8 xposition-1 maude unit_plain unit_418" module="TOP-IMAGE_module2.xml" />
+		<box id="b2" embed="article" class="alternate-view portrait-yposition-29 landscape-yposition-3 portrait-lines-18 landscape-lines-17 columns-4 landscape-xposition-9 portrait-xposition-1  maude unit_plain unit_166" module="TOP-IMAGE_module2.xml" />
+		<box id="b3" embed="article" class="alternate-view portrait-yposition-29 landscape-yposition-3 portrait-lines-18 landscape-lines-17 columns-4 landscape-xposition-13 portrait-xposition-5 maude unit_plain unit_166" module="TOP-IMAGE_module2.xml" />
+		<box id="b4" embed="article" class="alternate-view portrait-yposition-3 landscape-yposition-21 portrait-lines-22 landscape-lines-13 columns-4 xposition-9  maude unit_plain unit_50" module="CONTINUATION-dynamic_module2.xml" />
+		<box id="small_ad_container" class="alternate-view phone_only maude unit_ad">
+			<box id="cube_ad" embed="fullpagead">
+				<p id="ad_headline">ADVERTISEMENT</p>
+			</box>
+			<box id="halfscreen_ad" embed="fullpagead">
+				<p id="ad_headline">ADVERTISEMENT</p>
+			</box>
+		</box>
+		<box id="b5" embed="article" class="alternate-view portrait-yposition-26 landscape-yposition-21 portrait-lines-21 landscape-lines-13 columns-4 landscape-xposition-13 portrait-xposition-9 maude unit_plain unit_50" module="CONTINUATION-dynamic_module2.xml" />
+
+		<!-- END -->
 
 	<box id="tabbar-container" class="landscape-columns-16 portrait-columns-12 xposition-1" >
 		<box class="center-me">

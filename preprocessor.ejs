@@ -134,23 +134,30 @@
 			footer_tip: { $random: [0, 11] }
 		},
 		{
-			if: =app.version, at-most: "7.6", then: {
+			if: =app.version, equals: "7.8", then: {
 				ad: {
-					loaded: {
-						if: =intent.section, then: true, else: {
-							if: =page.hasad, then: true, else: {
-								if: =page.number, more-than: 1000000, then: true, else: false
-							}
+					cache: {
+						Cube: {
+							loaded: false,
+							lineItemID: "0"
+						},
+						HalfScreen: {
+							loaded: false,
+							lineItemID: "0"
+						},
+						Skyscraper: {
+							loaded: false,
+							lineItemID: "0"
+						},
+						Banner: {
+							loaded: false,
+							lineItemID: "0"
+						},
+						Fullpage: {
+							loaded: false,
+							lineItemID: "0"
 						}
-					},
-					type: {
-						if: =app.idiom, equals: "phone", then: "Cube", else: {
-							if: =intent.section, then: "Banner", else: {
-								if: =page.number, more-than: 1000000, then: "Fullpage", else: "Skyscraper"
-							}
-						}
-					},
-					lineItemID: "0"
+					}
 				}
 			}, else: {
 

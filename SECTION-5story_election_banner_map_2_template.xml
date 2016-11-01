@@ -78,12 +78,19 @@
 				#marketstrap: {
 					display: none
 				},
+				#debug: {
+					height: 100,
+					padding: [30, 0, 30, 0]
+				},
+				#m_debug: {
+					content: {$join: ["Hel= -------bar-loaded=", {if: =loadables.presidential-election-bar.loaded, equals: null, then: "TRUE", else: "FALSE"}, "------lo", =hello]}
+				},
   				#presidential-election-bar: {
 	  				top: 0,
 	  				left: 0,
-	  				width: {if-any: [=loadables.election-bar.loaded, {if: =loadables.election-bar, then: false, else: true}], then: inherit, else: 1},
-	  				height: {if-any: [=loadables.election-bar.loaded, {if: =loadables.election-bar, then: false, else: true}], then: 75, else: 1},
-	  				padding: [10, 0, 15, 0],
+<!-- 	  				width: {if-any: [=loadables.presidential-election-bar.loaded, {if: =loadables.presidential-election-bar, equals: null}], then: inherit, else: 1}, -->
+	  				height: {if-any: [=loadables.presidential-election-bar.loaded, {if: =loadables.presidential-election-bar, equals: null}], then: 75, else: 1},
+	  				padding: [10, 0, {if: =loadables.presidential-election-bar, equals: null, then: 100, else: 15}, 0],
 	  				background-image: "url(thickBell_promo@3x.png)",
 					background-position: center,
  					options: {
@@ -335,6 +342,9 @@
 	<box id="election-banner" class="election_container">
 		<box id="presidential-election-bar" embed="webview" class="maude" />
 		<box id="legislative-election-bar" embed="webview" class="maude" />
+	</box>
+	<box id="debug" class="maude unit_plain">
+		<p><mark id="m_debug"/></p>
 	</box>
 
 	<box id="first-container" class="election_container maude unit_plain">

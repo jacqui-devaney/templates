@@ -268,7 +268,7 @@
 		}
 	}</style>
 	<style>{
-		if: =app.version, less-than: "8.0", then: {
+		if: =app.version, less-than: "8.1", then: {
 			.primary-view: {
 				display: none
 			},

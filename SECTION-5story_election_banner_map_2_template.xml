@@ -155,16 +155,6 @@
 						], then: inherit, else: none},
 					padding: [{$multiply: [=view.width, 0.7]}, 9, 10, 9]
 				},
-				#primary_small_ad_container: {
-					padding: { if: =intent.article, then: [0], else: [0.5, 0, 0] }, 
-					border-width: { if: =intent.article, then: [0], else: [0.5, 0, 0] },
-					border-color: #d8d8d8,
-					top: 0,
-					left: 0,
-					right: 0,
-					height: 342,
-					background-color: #ffffff
-				},
 				#tabbar-container: {
 					display: none
 				},

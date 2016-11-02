@@ -409,6 +409,10 @@
 					.primary-view: {
 						display: none
 					},
+					.election_feature: {
+						width: 1,
+						height: 1
+					},
 					#b2: {
 						options: {
 							show_image:true
@@ -437,9 +441,9 @@
 	<style src="PROMO-PHONE-stylesheet.ejs" />
 	<box id="page_details" embed="pagedescription" />
 	<box id="ad_placeholder" class="ad-banner" embed="pagedescription" />
-	<box id="election-banner" class="primary-view election_container">
-		<box id="presidential-election-bar" embed="webview" class="primary-view maude" />
-		<box id="legislative-election-bar" embed="webview" class="primary-view maude" />
+	<box id="election-banner" class="election_feature election_container">
+		<box id="presidential-election-bar" embed="webview" class="election_feature maude" />
+		<box id="legislative-election-bar" embed="webview" class="election_feature maude" />
 	</box>
 
 	<box id="first-container" class="primary-view election_container maude unit_plain">

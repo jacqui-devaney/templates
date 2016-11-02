@@ -325,6 +325,10 @@
 					.primary-view: {
 						display: none
 					},
+					.election_feature: {
+						width: 1,
+						height: 1
+					},
 					#b2: {
 						options: {
 							show_image:true
@@ -354,9 +358,9 @@
 	<box id="page_details" embed="pagedescription" />
 	<box id="ad_placeholder" class="ad-banner" embed="pagedescription" />
 	<box id="marketstrap" embed="marketstrap" />
-	<box id="election-container" class="primary-view">
-		<box id="presidential-election-bar" embed="webview" class="primary-view maude" />
-		<box id="legislative-election-bar" embed="webview" class="primary-view maude" />
+	<box id="election-container" class="election_feature">
+		<box id="presidential-election-bar" embed="webview" class="election_feature maude" />
+		<box id="legislative-election-bar" embed="webview" class="election_feature maude" />
 	</box>
 
 	<box id="b1" embed="article" class="primary-view yposition-6 landscape-lines-28 portrait-lines-24 columns-8 xposition-1 maude unit_plain unit_418" module="TOP-IMAGE_module2.xml" />

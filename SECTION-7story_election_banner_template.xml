@@ -192,8 +192,8 @@
 				border-width: [0.5, 0, 0.5],
 				border-color: #d8d8d8,
 				frame: { if: =portrait, then: [24, 60, 476, 45], else: [26, 60, 720, 55] },
-				background-position: center,
-				background-image: "url(thickBell_promo@3x.png)",
+				background-position: stretch,
+				background-image: { if: =portrait, then: "url(elec_ipad_bar1_portrait.png)", else: "url(elec_ipad_bar1_landscape.png)" },
 				options: {
 					src: "url(http://graphics.dev.wsj.com/elections/2016/live-results/)",
 					href: "url(http://graphics.dev.wsj.com/elections/2016/banner-homepage/?layout=president-ipad)"
@@ -204,8 +204,8 @@
 				border-width: [0.5, 0, 0.5],
 				border-color: #d8d8d8,
 				frame: { if: =portrait, then: [518, 60, 228, 45], else: [770, 60, 228, 55] },
-				background-position: center,
-				background-image: "url(thickBell_promo@3x.png)",
+				background-position: stretch,
+				background-image: "url(elec_ipad_bar2_legislative.png)",
 				options: {
 					src: "url(http://graphics.dev.wsj.com/elections/2016/live-results/)",
 					href: "url(http://graphics.dev.wsj.com/elections/2016/banner-homepage/?layout=senate-house-stack)"

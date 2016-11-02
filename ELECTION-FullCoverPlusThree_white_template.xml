@@ -1,6 +1,7 @@
 <jpml id="ELECTION-FullCoverPlusThree_white_template">
-	<style src="GLOBAL-stylesheet.ejs" />
-    <style src="GRID-stylesheet.ejs"/>
+	<style src="GLOBAL-stylesheet2.ejs"/>
+	<style src="GRID-stylesheet2.ejs"/>
+	<style src="GRID-extras2.ejs"/>
 	<style src="RAIL-stylesheet.ejs" />
     <style>{
     	#page_details: {
@@ -17,6 +18,15 @@
 		$switch: [
 			{if: =scale.rail, then: {
 				#deco: {
+					width: =view.width
+				},
+				#b1:	{
+					width: =view.width
+				},
+				#b2:	{
+					width: =view.width
+				},
+				#b3:	{
 					width: =view.width
 				}
 			}},

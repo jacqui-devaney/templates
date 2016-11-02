@@ -81,9 +81,20 @@
   				#presidential-election-bar: {
 	  				top: 0,
 	  				left: 0,
-	  				width: {if-any: [=loadables.election-bar.loaded, {if: =loadables.election-bar, then: false, else: true}], then: inherit, else: 1},
-	  				height: {if-any: [=loadables.election-bar.loaded, {if: =loadables.election-bar, then: false, else: true}], then: 75, else: 1},
-	  				padding: [10, 0, 15, 0],
+	  				width: {
+	  					if-any: [
+	  						{if: =loadables.presidential-election-bar.loaded},
+							{if: =loadables.presidential-election-bar, then: false, else: true}
+						], then: inherit, else: 1},
+	  				height: {
+	  					if-any: [
+	  						{if: =loadables.presidential-election-bar.loaded},
+							{if: =loadables.presidential-election-bar, then: false, else: true}
+						], then: 75, else: 1},
+	  				padding: {if-any: [
+	  						{if: =loadables.presidential-election-bar.loaded},
+							{if: =loadables.presidential-election-bar, then: false, else: true}
+	  				], then: [10, 0, 15, 0], else: [0]},
 	  				background-image: "url(thickBell_promo@3x.png)",
 					background-position: center,
  					options: {
@@ -295,46 +306,15 @@
 			}
 		}, else: {
 			if: =scale.phone, then: {
-				if-any: [
-					{if: =loadables.presidential-election-bar.loaded},
-					{if: =loadables.presidential-election-bar, then: false, else: true},
-				], 
-				then: {
-					.alternate-view: {
-						display: none
-					}
-				}, 
-				else: {
-					.primary-view: {
-						display: none
-					},
-					#b2: {
-						options: {
-							show_image:true
-						}
-					},
-					#b3: {
-						options: {
-							show_image:true
-						}
-					},
-					#b4: {
-						options: {
-							show_image:true
-						}
-					},
-					#b5: {
-						options: {
-							show_image:true
-						}
-					}
+				.alternate-view: {
+					display: none
 				}
 			},  else: {
 				if-any: [
 					{if: =loadables.presidential-election-bar.loaded},
 					{if: =loadables.presidential-election-bar, then: false, else: true},
 					{if: =loadables.legislative-election-bar.loaded},
-					{if: =loadables.legislative-election-bar, then: false, else: true},
+					{if: =loadables.legislative-election-bar, then: false, else: true}
 				], 
 				then: {
 					.alternate-view: {
@@ -375,14 +355,24 @@
 	<box id="ad_placeholder" class="ad-banner" embed="pagedescription" />
 	<box id="marketstrap" embed="marketstrap" />
 	<box id="election-container" class="primary-view">
-		<box id="presidential-election-bar" embed="webview" class="maude" />
-		<box id="legislative-election-bar" embed="webview" class="maude" />
+		<box id="presidential-election-bar" embed="webview" class="primary-view maude" />
+		<box id="legislative-election-bar" embed="webview" class="primary-view maude" />
 	</box>
 
 	<box id="b1" embed="article" class="primary-view yposition-6 landscape-lines-28 portrait-lines-24 columns-8 xposition-1 maude unit_plain unit_418" module="TOP-IMAGE_module2.xml" />
 	<box id="b2" embed="article" class="primary-view portrait-yposition-31 landscape-yposition-6 portrait-lines-16 landscape-lines-14 columns-4 landscape-xposition-9 portrait-xposition-1  maude unit_plain unit_50" module="TOP-IMAGE_module2.xml" />
 	<box id="b3" embed="article" class="primary-view portrait-yposition-31 landscape-yposition-6 portrait-lines-16 landscape-lines-14 columns-4 landscape-xposition-13 portrait-xposition-5 maude unit_plain unit_50" module="TOP-IMAGE_module2.xml" />
 	<box id="b4" embed="article" class="primary-view portrait-yposition-6 landscape-yposition-21 portrait-lines-10 landscape-lines-6 columns-4 xposition-9  maude unit_plain unit_50" module="CONTINUATION-dynamic_module2.xml" />
+
+	<!-- for those on 7.8 -->
+	<!-- START -->
+		<box id="b1" embed="article" class="alternate-view yposition-3 landscape-lines-31 portrait-lines-25 columns-8 xposition-1 maude unit_plain unit_418" module="TOP-IMAGE_module2.xml" />
+		<box id="b2" embed="article" class="alternate-view portrait-yposition-29 landscape-yposition-3 portrait-lines-18 landscape-lines-17 columns-4 landscape-xposition-9 portrait-xposition-1  maude unit_plain unit_166" module="TOP-IMAGE_module2.xml" />
+		<box id="b3" embed="article" class="alternate-view portrait-yposition-29 landscape-yposition-3 portrait-lines-18 landscape-lines-17 columns-4 landscape-xposition-13 portrait-xposition-5 maude unit_plain unit_166" module="TOP-IMAGE_module2.xml" />
+		<box id="b4" embed="article" class="alternate-view portrait-yposition-3 landscape-yposition-21 portrait-lines-11 landscape-lines-6 columns-4 xposition-9  maude unit_plain unit_50" module="CONTINUATION-dynamic_module2.xml" />
+	<!-- END -->
+
+
 	<box id="small_ad_container" class="primary-view phone_only maude unit_ad">
 		<box id="cube_ad" embed="fullpagead">
 			<p id="ad_headline">ADVERTISEMENT</p>
@@ -391,24 +381,12 @@
 			<p id="ad_headline">ADVERTISEMENT</p>
 		</box>
 	</box>
+
 	<box id="b5" embed="article" class="primary-view portrait-yposition-17 landscape-yposition-21 portrait-lines-10 landscape-lines-6 columns-4 landscape-xposition-13 portrait-xposition-9 maude unit_plain unit_50" module="CONTINUATION-dynamic_module2.xml" />
 	<box id="b6" embed="article" class="primary-view portrait-yposition-28 landscape-yposition-28 portrait-lines-9 landscape-lines-6 columns-4 xposition-9 maude unit_plain unit_50" module="CONTINUATION-dynamic_module2.xml" />
 	<box id="b7" embed="article" class="primary-view portrait-yposition-38 landscape-yposition-28 portrait-lines-9 landscape-lines-6 columns-4 landscape-xposition-13 portrait-xposition-9 maude unit_plain unit_50" module="CONTINUATION-dynamic_module2.xml" />
-
 	<!-- for those on 7.8 -->
 	<!-- START -->
-		<box id="b1" embed="article" class="alternate-view yposition-3 landscape-lines-31 portrait-lines-25 columns-8 xposition-1 maude unit_plain unit_418" module="TOP-IMAGE_module2.xml" />
-		<box id="b2" embed="article" class="alternate-view portrait-yposition-29 landscape-yposition-3 portrait-lines-18 landscape-lines-17 columns-4 landscape-xposition-9 portrait-xposition-1  maude unit_plain unit_166" module="TOP-IMAGE_module2.xml" />
-		<box id="b3" embed="article" class="alternate-view portrait-yposition-29 landscape-yposition-3 portrait-lines-18 landscape-lines-17 columns-4 landscape-xposition-13 portrait-xposition-5 maude unit_plain unit_166" module="TOP-IMAGE_module2.xml" />
-		<box id="b4" embed="article" class="alternate-view portrait-yposition-3 landscape-yposition-21 portrait-lines-11 landscape-lines-6 columns-4 xposition-9  maude unit_plain unit_50" module="CONTINUATION-dynamic_module2.xml" />
-		<box id="small_ad_container" class="alternate-view phone_only maude unit_ad">
-			<box id="cube_ad" embed="fullpagead">
-				<p id="ad_headline">ADVERTISEMENT</p>
-			</box>
-			<box id="halfscreen_ad" embed="fullpagead">
-				<p id="ad_headline">ADVERTISEMENT</p>
-			</box>
-		</box>
 		<box id="b5" embed="article" class="alternate-view portrait-yposition-15 landscape-yposition-21 portrait-lines-10 landscape-lines-6 columns-4 landscape-xposition-13 portrait-xposition-9 maude unit_plain unit_50" module="CONTINUATION-dynamic_module2.xml" />
 		<box id="b6" embed="article" class="alternate-view portrait-yposition-26 landscape-yposition-28 portrait-lines-10 landscape-lines-6 columns-4 landscape-xposition-9 portrait-xposition-9 maude unit_plain unit_50" module="CONTINUATION-dynamic_module2.xml" />
 		<box id="b7" embed="article" class="alternate-view portrait-yposition-37 landscape-yposition-28 portrait-lines-10 landscape-lines-6 columns-4 landscape-xposition-13 portrait-xposition-9 maude unit_plain unit_50" module="CONTINUATION-dynamic_module2.xml" />

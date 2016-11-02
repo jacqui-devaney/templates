@@ -95,8 +95,12 @@
 	  						{if: =loadables.presidential-election-bar.loaded},
 							{if: =loadables.presidential-election-bar, then: false, else: true}
 	  				], then: [10, 0, 15, 0], else: [0]},
-	  				background-image: "url(thickBell_promo@3x.png)",
-					background-position: center,
+					background-image: {$switch: [
+                           {if: =view.width, equals: 320, then: "url(elections_ios_iph_sml.png)"},
+                           {if: =view.width, equals: 375, then: "url(elections_ios_iph_M.png)"},
+                           {if: =view.width, equals: 414, then: "url(elections_ios_iphone_L.png)"}
+                       ]},
+					background-position: stretch,
  					options: {
 						src: "url(http://graphics.dev.wsj.com/elections/2016/live-results/)",
 						href: "url(http://graphics.dev.wsj.com/elections/2016/banner-homepage/?layout=president)"
@@ -132,8 +136,8 @@
 	  						{if: =loadables.election-map.loaded},
 							{if: =loadables.election-map, then: false, else: true}
 						], then: {$multiply: [=view.width, 0.666]}, else: 1},
-					background-image: "url(thickBell_promo@3x.png)",
-					background-position: center,
+					background-image: "url(elections_ios_iphone_map.png)",
+					background-position: stretch,
 					top: 0,
 					left: 0,
 					right: 0,

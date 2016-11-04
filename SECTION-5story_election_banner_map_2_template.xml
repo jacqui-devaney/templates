@@ -106,7 +106,7 @@
 						href: "url(http://graphics.dev.wsj.com/elections/2016/banner-homepage/?layout=president)"
 					}
 				},
-				.keyline_container: {
+				.keyline-container: {
 					padding: [0.5, 0, 0, 0],
 					border-width: [0.5, 0, 0],
 					border-color: #d8d8d8,
@@ -450,7 +450,7 @@
 		<box id="legislative-election-bar" embed="webview" class="election_feature maude" />
 	</box>
 
-	<box id="first-container" class="primary-view keyline_container maude unit_plain">
+	<box id="first-container" class="primary-view keyline-container maude unit_plain">
 		<box id="b1" embed="article" class="primary-view yposition-6 landscape-lines-28 portrait-lines-24 columns-8 xposition-1 maude unit_plain unit_418" module="TOP-IMAGE_module2.xml" />
 	</box>
 	<box id="election-map-container" class="primary-view maude unit_plain">

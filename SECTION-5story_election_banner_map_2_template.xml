@@ -270,7 +270,7 @@
 			},
 			#election-map-container: {
 				padding: [0, 0, 0, 0],
-				border-width: [0.5, 0, 0],
+				border-width: { if: =portrait, then: [0.5, 0, 0], else: [0, 0, 0]},
 				border-color: #d8d8d8,
 				left: { if: =portrait, then: 22, else: 522},
 				height: 312,
@@ -281,7 +281,7 @@
 				height: { if: =portrait, then: 290, else: 270},
 				width: { if: =portrait, then: 458, else: 410},
 				padding: [0, 0, 0, 0],
-				top: { if: =portrait, then: 25, else: 20},
+				top: { if: =portrait, then: 35, else: 25},
 				left: { if: =portrait, then: 0, else: 30},
 				right: 0,
 				background-image: "url(elec_ipad_MAP.png)",
@@ -297,7 +297,7 @@
 				line-height: 26,
 				color: #2b3333,
 				text-align: left,
-				padding: [0, 0, 0, 0]
+				padding: { if: =portrait, then: [10, 0, 0, 0], else: [-2, 0, 0, 0]}
 			},
 			#b1: {
 				options: {

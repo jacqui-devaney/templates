@@ -160,7 +160,7 @@
 					line-height: 26,
 					color: #2b3333,
 					text-align: left,
-					display:{ 	  					
+					display:{
 					if-any: [
 	  						{if: =loadables.election-map.loaded},
 							{if: =loadables.election-map, then: false, else: true}
@@ -248,7 +248,7 @@
 				padding: [0, 0, 0, 0],
 				border-width: [0.5, 0, 0.5],
 				border-color: #d8d8d8,
-				frame: { if: =portrait, then: [24, 60, 476, 45], else: [26, 60, 720, 55] },
+				frame: { if: =portrait, then: [24, 60, 476, 45], else: [26, 60, 720, 45] },
 				background-position: stretch,
 				background-image: { if: =portrait, then: "url(elec_ipad_bar1_portrait.png)", else: "url(elec_ipad_bar1_landscape.png)" },
 				options: {
@@ -260,7 +260,7 @@
 				padding: [0, 0, 0, 0],
 				border-width: [0.5, 0, 0.5],
 				border-color: #d8d8d8,
-				frame: { if: =portrait, then: [518, 60, 228, 45], else: [770, 60, 228, 55] },
+				frame: { if: =portrait, then: [518, 60, 228, 45], else: [770, 60, 228, 45] },
 				background-position: stretch,
 				background-image: "url(elec_ipad_bar2_legislative.png)",
 				options: {
@@ -403,12 +403,12 @@
 					{if: =loadables.legislative-election-bar, then: false, else: true},
 					{if: =loadables.election-map.loaded},
 					{if: =loadables.election-map, then: false, else: true}
-				], 
+				],
 				then: {
 					.alternate-view: {
 						display: none
 					}
-				}, 
+				},
 				else: {
 					.primary-view: {
 						display: none

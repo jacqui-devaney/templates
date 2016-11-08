@@ -102,7 +102,7 @@
                        ]},
 					background-position: stretch,
  					options: {
-						src: "url(http://graphics.wsj.com/elections/2016/results/)",
+						src: "url(http://graphics.wsj.com/elections/2016/results/?mod=wsjapp)",
 						href: "url(http://graphics.wsj.com/elections/2016/banner-only/?layout=president)"
 					}
 				},
@@ -199,7 +199,7 @@
 				background-position: stretch,
 				background-image: { if: =portrait, then: "url(elec_ipad_bar1_portrait.png)", else: "url(elec_ipad_bar1_landscape.png)" },
 				options: {
-					src: "url(http://graphics.wsj.com/elections/2016/results/)",
+					src: "url(http://graphics.wsj.com/elections/2016/results/?mod=wsjapp)",
 					href: "url(http://graphics.wsj.com/elections/2016/banner-only/?layout=president-ipad)"
 				}
 			},
@@ -211,7 +211,7 @@
 				background-position: stretch,
 				background-image: "url(elec_ipad_bar2_legislative.png)",
 				options: {
-					src: "url(http://graphics.wsj.com/elections/2016/results/)",
+					src: "url(http://graphics.wsj.com/elections/2016/results/?mod=wsjapp)",
 					href: "url(http://graphics.wsj.com/elections/2016/banner-only/?layout=senate-house-stack)"
 				}
 			},

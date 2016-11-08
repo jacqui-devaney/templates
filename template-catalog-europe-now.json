@@ -461,6 +461,144 @@
             }
           }
         ]
+      },
+      {
+        "filename": "SECTION-7story_election_banner_template.xml",
+        "title": "7 story - election banner only",
+        "usage": "front",
+        "boxes": [
+          {
+            "id": "b1",
+            "images": {
+              "tablet": {
+                "width": 484,
+                "height": 322
+              },
+              "phone": {
+                "width": 414,
+                "height": 275
+              }
+            }
+          },
+          {
+            "id": "b2",
+            "images": {
+              "tablet": {
+                "width": 236,
+                "height": 157
+              },
+              "phone": {
+                "width": 182,
+                "height": 122
+              }
+            }
+          },
+          {
+            "id": "b3",
+            "images": {
+              "tablet": {
+                "width": 236,
+                "height": 157
+              },
+              "phone": {
+                "width": 182,
+                "height": 122
+              }
+            }
+          },
+          {
+            "id": "b4",
+            "images": {
+              "phone": {
+                "width": 182,
+                "height": 122
+              }
+            }
+          },
+          {
+            "id": "b5",
+            "images": {
+              "phone": {
+                "width": 182,
+                "height": 122
+              }
+            }
+          },
+          {
+            "id": "b6",
+            "images": {
+              "phone": {
+                "width": 182,
+                "height": 122
+              }
+            }
+          },
+          {
+            "id": "b7",
+            "images": {
+              "phone": {
+                "width": 182,
+                "height": 122
+              }
+            }
+          }
+        ]
+      },
+      {
+        "filename": "SECTION-5story_election_banner_map_2_template.xml",
+        "title": "5 story - Election banner and Map in 2",
+        "usage": "front",
+        "boxes": [
+          {
+            "id": "b1",
+            "images": {
+              "tablet": {
+                "width": 484,
+                "height": 322
+              },
+              "phone": {
+                "width": 414,
+                "height": 275
+              }
+            }
+          },
+          {
+            "id": "b2",
+            "images": {
+              "phone": {
+                "width": 182,
+                "height": 122
+              }
+            }
+          },
+          {
+            "id": "b3",
+            "images": {
+              "phone": {
+                "width": 182,
+                "height": 122
+              }
+            }
+          },
+          {
+            "id": "b4",
+            "images": {
+              "phone": {
+                "width": 182,
+                "height": 122
+              }
+            }
+          },
+          {
+            "id": "b5",
+            "images": {
+              "phone": {
+                "width": 182,
+                "height": 122
+              }
+            }
+          }
+        ]
       }
     ]
   },

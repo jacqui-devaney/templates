@@ -102,8 +102,8 @@
                        ]},
 					background-position: stretch,
  					options: {
-						src: "url(http://graphics.dev.wsj.com/elections/2016/live-results/)",
-						href: "url(http://graphics.dev.wsj.com/elections/2016/banner-homepage/?layout=president)"
+						src: "url(http://graphics.wsj.com/elections/2016/results/)",
+						href: "url(http://graphics.wsj.com/elections/2016/banner-only/?layout=president)"
 					}
 				},
 				#election-container: {
@@ -199,8 +199,8 @@
 				background-position: stretch,
 				background-image: { if: =portrait, then: "url(elec_ipad_bar1_portrait.png)", else: "url(elec_ipad_bar1_landscape.png)" },
 				options: {
-					src: "url(http://graphics.dev.wsj.com/elections/2016/live-results/)",
-					href: "url(http://graphics.dev.wsj.com/elections/2016/banner-homepage/?layout=president-ipad)"
+					src: "url(http://graphics.wsj.com/elections/2016/results/)",
+					href: "url(http://graphics.wsj.com/elections/2016/banner-only/?layout=president-ipad)"
 				}
 			},
 			#legislative-election-bar: {
@@ -211,8 +211,8 @@
 				background-position: stretch,
 				background-image: "url(elec_ipad_bar2_legislative.png)",
 				options: {
-					src: "url(http://graphics.dev.wsj.com/elections/2016/live-results/)",
-					href: "url(http://graphics.dev.wsj.com/elections/2016/banner-homepage/?layout=senate-house-stack)"
+					src: "url(http://graphics.wsj.com/elections/2016/results/)",
+					href: "url(http://graphics.wsj.com/elections/2016/banner-only/?layout=senate-house-stack)"
 				}
 			},
 			#b1: {

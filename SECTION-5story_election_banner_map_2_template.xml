@@ -151,7 +151,7 @@
 					right: 0,
 					options: {
 						src: "url(http://graphics.wsj.com/elections/2016/results/)",
-						href: "url(http://graphics.wsj.com/elections/2016/map-embed/?embed=1&amp;mobile=1)"
+						href: "url(http://graphics.wsj.com/elections/2016/map-only/?mobile=1)"
 					}
 				},
 				#election-headline: {
@@ -288,7 +288,7 @@
 				background-position: stretch,
 				options: {
 					src: "url(http://graphics.wsj.com/elections/2016/results/)",
-					href: "url(http://graphics.wsj.com/elections/2016/map-embed/?embed=1&amp;mobile=1)"
+					href: "url(http://graphics.wsj.com/elections/2016/map-only/?mobile=1)"
 				}
 			},
 			#election-headline: {

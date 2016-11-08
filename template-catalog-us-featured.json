@@ -194,7 +194,7 @@
             }
           }
         ]
-      }, 
+      },
       {
         "section": "SPECIAL_REPORT",
         "filename": "FOE-SECTION-4story_template.xml",
@@ -238,7 +238,7 @@
             }
           }
         ]
-      },  
+      },
        {
         "section": "SPECIAL_REPORT",
         "filename": "FOE-SECTION-3story-horizontal_template.xml",
@@ -420,7 +420,7 @@
             }
           }
         ]
-      },  
+      },
       {
         "section": "SPECIAL_REPORT",
         "filename": "CONTINUATION-7story-future-of-everything_template.xml",
@@ -520,7 +520,7 @@
             }
           }
         ]
-      },  
+      },
       {
         "section": "SPECIAL_REPORT",
         "filename": "CONTINUATION-5story-future-of-everything_template.xml",
@@ -594,7 +594,7 @@
             }
           }
         ]
-      },  
+      },
       {
         "section": "SPECIAL_REPORT",
         "filename": "CONTINUATION-4story-future-of-everything_template.xml",
@@ -625,7 +625,7 @@
                 "width": 360,
                 "height": 240
               }
-            } 
+            }
           },
             {
             "id": "b3",
@@ -740,6 +740,70 @@
                 "height": 178
               }
             }
+          }
+        ]
+      },
+      {
+        "filename": "SECTION-FullCoverPlusThree_NORAIL_white_template.xml",
+        "title": "Full Cover Template with 3 Tap Areas - NO RAIL",
+        "usage": "front",
+        "boxes": [
+          {
+            "id": "b1",
+            "images": {}
+          },
+          {
+            "id": "deco",
+            "images": {
+              "portrait": {
+                "width": 768,
+                "height": 1024
+              },
+              "landscape": {
+                "width": 1024,
+                "height": 768
+              }
+            }
+          },
+          {
+            "id": "b2",
+            "images": {}
+          },
+          {
+            "id": "b3",
+            "images": {}
+          }
+        ]
+      },
+      {
+        "filename": "SECTION-FullCoverPlusThree_NORAIL_black_template.xml",
+        "title": "Full Cover Template with 3 Tap Areas - NO RAIL",
+        "usage": "front",
+        "boxes": [
+          {
+            "id": "b1",
+            "images": {}
+          },
+          {
+            "id": "deco",
+            "images": {
+              "portrait": {
+                "width": 768,
+                "height": 1024
+              },
+              "landscape": {
+                "width": 1024,
+                "height": 768
+              }
+            }
+          },
+          {
+            "id": "b2",
+            "images": {}
+          },
+          {
+            "id": "b3",
+            "images": {}
           }
         ]
       },

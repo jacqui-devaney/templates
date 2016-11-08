@@ -454,7 +454,7 @@
 		<box id="b1" embed="article" class="primary-view yposition-6 landscape-lines-28 portrait-lines-24 columns-8 xposition-1 maude unit_plain unit_418" module="TOP-IMAGE_module2.xml" />
 	</box>
 	<box id="election-map-container" class="primary-view maude unit_plain">
-		<p id="election-headline">Full state-by-state results</p>
+		<p id="election-headline">See Full Election Results</p>
 		<box id="election-map" embed="webview" />
 	</box>
 	<box id="b2" embed="article" class="primary-view portrait-yposition-6 landscape-yposition-21 portrait-lines-10 landscape-lines-6 columns-4 xposition-9  maude unit_plain unit_50" module="CONTINUATION-dynamic_module2.xml" />

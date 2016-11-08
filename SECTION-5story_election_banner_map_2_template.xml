@@ -102,8 +102,8 @@
                        ]},
 					background-position: stretch,
  					options: {
-						src: "url(http://graphics.dev.wsj.com/elections/2016/live-results/)",
-						href: "url(http://graphics.dev.wsj.com/elections/2016/banner-homepage/?layout=president)"
+						src: "url(http://graphics.wsj.com/elections/2016/results/)",
+						href: "url(http://graphics.wsj.com/elections/2016/banner-homepage/?layout=president)"
 					}
 				},
 				.keyline-container: {
@@ -150,8 +150,8 @@
 					left: 0,
 					right: 0,
 					options: {
-						src: "url(http://graphics.dev.wsj.com/elections/2016/live-results/)",
-						href: "url(http://graphics.dev.wsj.com/elections/2016/map-embed/?embed=1&amp;mobile=1)"
+						src: "url(http://graphics.wsj.com/elections/2016/results/)",
+						href: "url(http://graphics.wsj.com/elections/2016/map-embed/?embed=1&amp;mobile=1)"
 					}
 				},
 				#election-headline: {
@@ -252,8 +252,8 @@
 				background-position: stretch,
 				background-image: { if: =portrait, then: "url(elec_ipad_bar1_portrait.png)", else: "url(elec_ipad_bar1_landscape.png)" },
 				options: {
-					src: "url(http://graphics.dev.wsj.com/elections/2016/live-results/)",
-					href: "url(http://graphics.dev.wsj.com/elections/2016/banner-homepage/?layout=president-ipad)"
+					src: "url(http://graphics.wsj.com/elections/2016/results/)",
+					href: "url(http://graphics.wsj.com/elections/2016/banner-homepage/?layout=president-ipad)"
 				}
 			},
 			#legislative-election-bar: {
@@ -264,8 +264,8 @@
 				background-position: stretch,
 				background-image: "url(elec_ipad_bar2_legislative.png)",
 				options: {
-					src: "url(http://graphics.dev.wsj.com/elections/2016/live-results/)",
-					href: "url(http://graphics.dev.wsj.com/elections/2016/banner-homepage/?layout=senate-house-stack)"
+					src: "url(http://graphics.wsj.com/elections/2016/results/)",
+					href: "url(http://graphics.wsj.com/elections/2016/banner-homepage/?layout=senate-house-stack)"
 				}
 			},
 			#election-map-container: {
@@ -287,8 +287,8 @@
 				background-image: "url(elec_ipad_MAP.png)",
 				background-position: stretch,
 				options: {
-					src: "url(http://graphics.dev.wsj.com/elections/2016/live-results/)",
-					href: "url(http://graphics.dev.wsj.com/elections/2016/map-embed/?embed=1&amp;mobile=1)"
+					src: "url(http://graphics.wsj.com/elections/2016/results/)",
+					href: "url(http://graphics.wsj.com/elections/2016/map-embed/?embed=1&amp;mobile=1)"
 				}
 			},
 			#election-headline: {
@@ -454,7 +454,7 @@
 		<box id="b1" embed="article" class="primary-view yposition-6 landscape-lines-28 portrait-lines-24 columns-8 xposition-1 maude unit_plain unit_418" module="TOP-IMAGE_module2.xml" />
 	</box>
 	<box id="election-map-container" class="primary-view maude unit_plain">
-		<p id="election-headline">Get live results</p>
+		<p id="election-headline">Full state-by-state results</p>
 		<box id="election-map" embed="webview" />
 	</box>
 	<box id="b2" embed="article" class="primary-view portrait-yposition-6 landscape-yposition-21 portrait-lines-10 landscape-lines-6 columns-4 xposition-9  maude unit_plain unit_50" module="CONTINUATION-dynamic_module2.xml" />

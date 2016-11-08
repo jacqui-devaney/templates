@@ -81,16 +81,40 @@
   				#presidential-election-bar: {
 	  				top: 0,
 	  				left: 0,
-	  				height: 75,
-	  				padding: [10, 0, 15, 0],
-	  				background-image: "url(thickBell_promo@3x.png)",
-					background-position: center,
+	  				width: {
+	  					if-any: [
+	  						{if: =loadables.presidential-election-bar.loaded},
+							{if: =loadables.presidential-election-bar, then: false, else: true}
+						], then: inherit, else: 1},
+	  				height: {
+	  					if-any: [
+	  						{if: =loadables.presidential-election-bar.loaded},
+							{if: =loadables.presidential-election-bar, then: false, else: true}
+						], then: 75, else: 1},
+	  				padding: {if-any: [
+	  						{if: =loadables.presidential-election-bar.loaded},
+							{if: =loadables.presidential-election-bar, then: false, else: true}
+	  				], then: [10, 0, 15, 0], else: [0]},
+					background-image: {$switch: [
+                           {if: =view.width, equals: 320, then: "url(elections_ios_iph_sml.png)"},
+                           {if: =view.width, equals: 375, then: "url(elections_ios_iph_M.png)"},
+                           {if: =view.width, equals: 414, then: "url(elections_ios_iphone_L.png)"}
+                       ]},
+					background-position: stretch,
  					options: {
-						src: "url(http://graphics.dev.wsj.com/elections/2016/live-results/)",
-						href: "url(http://graphics.dev.wsj.com/elections/2016/banner-homepage/?layout=president)"
+						src: "url(http://graphics.wsj.com/elections/2016/results/?mod=wsjapp)",
+						href: "url(http://graphics.wsj.com/elections/2016/banner-only/?layout=president)"
 					}
 				},
-				.election_container: {
+				.keyline-container: {
+					padding: [0.5, 0, 0, 0],
+					border-width: [0.5, 0, 0],
+					border-color: #d8d8d8,
+					top: 0,
+					left: 0,
+					right: 0
+				},
+				.election-container: {
 					padding: [0.5, 10, 0, 10],
 					border-width: [0.5, 0, 0],
 					border-color: #d8d8d8,
@@ -99,33 +123,49 @@
 					right: 0
 				},
 				#election-map-container: {
-					padding: [0.5, 16, 0, 10],
+	  				width: {
+	  					if-any: [
+	  						{if: =loadables.election-map.loaded},
+							{if: =loadables.election-map, then: false, else: true}
+						], then: inherit, else: 1},
+	  				padding: {if-any: [
+	  						{if: =loadables.election-map.loaded},
+							{if: =loadables.election-map, then: false, else: true}
+	  				], then: [0.5, 16, 0, 10], else: [0]},
 					border-width: [0.5, 0, 0],
 					border-color: #d8d8d8,
-					height: {$multiply: [=view.width, 0.8]},
 					top: 0,
 					left: 0,
 					right: 0
 				},
 				#election-map: {
-					height: {$multiply: [=view.width, 0.666]},
-					background-image: "url(thickBell_promo@3x.png)",
-					background-position: center,
+	  				height: {
+	  					if-any: [
+	  						{if: =loadables.election-map.loaded},
+							{if: =loadables.election-map, then: false, else: true}
+						], then: {$multiply: [=view.width, 0.666]}, else: 1},
+					background-image: "url(elections_ios_iphone_map.png)",
+					background-position: stretch,
 					top: 0,
 					left: 0,
 					right: 0,
 					options: {
-						src: "url(http://graphics.dev.wsj.com/elections/2016/live-results/)",
-						href: "url(http://graphics.dev.wsj.com/elections/2016/map-embed/?embed=1&amp;mobile=1)"
+						src: "url(http://graphics.wsj.com/elections/2016/results/?mod=wsjapp)",
+						href: "url(http://graphics.wsj.com/elections/2016/map-only/?mobile=1)"
 					}
 				},
 				#election-headline: {
-						font-name: "ChronicleDisplay-Semi",
-						font-size: 22,
-						line-height: 26,
-						color: #2b3333,
-						text-align: left,
-						padding: [{$multiply: [=view.width, 0.7]}, 9, 10, 9]
+					font-name: "ChronicleDisplay-Semi",
+					font-size: 22,
+					line-height: 26,
+					color: #2b3333,
+					text-align: left,
+					display:{
+					if-any: [
+	  						{if: =loadables.election-map.loaded},
+							{if: =loadables.election-map, then: false, else: true}
+						], then: inherit, else: none},
+					padding: [{$multiply: [=view.width, 0.7]}, 9, 10, 9]
 				},
 				#tabbar-container: {
 					display: none
@@ -208,29 +248,29 @@
 				padding: [0, 0, 0, 0],
 				border-width: [0.5, 0, 0.5],
 				border-color: #d8d8d8,
-				frame: { if: =portrait, then: [24, 60, 476, 45], else: [26, 60, 720, 55] },
-				background-position: center,
-				background-image: "url(thickBell_promo@3x.png)",
+				frame: { if: =portrait, then: [24, 60, 476, 45], else: [26, 60, 720, 45] },
+				background-position: stretch,
+				background-image: { if: =portrait, then: "url(elec_ipad_bar1_portrait.png)", else: "url(elec_ipad_bar1_landscape.png)" },
 				options: {
-					src: "url(http://graphics.dev.wsj.com/elections/2016/live-results/)",
-					href: "url(http://graphics.dev.wsj.com/elections/2016/banner-homepage/?layout=president-ipad)"
+					src: "url(http://graphics.wsj.com/elections/2016/results/?mod=wsjapp)",
+					href: "url(http://graphics.wsj.com/elections/2016/banner-only/?layout=president-ipad)"
 				}
 			},
 			#legislative-election-bar: {
 				padding: [0, 0, 0, 0],
 				border-width: [0.5, 0, 0.5],
 				border-color: #d8d8d8,
-				frame: { if: =portrait, then: [518, 60, 228, 45], else: [770, 60, 228, 55] },
-				background-position: center,
-				background-image: "url(thickBell_promo@3x.png)",
+				frame: { if: =portrait, then: [518, 60, 228, 45], else: [770, 60, 228, 45] },
+				background-position: stretch,
+				background-image: "url(elec_ipad_bar2_legislative.png)",
 				options: {
-					src: "url(http://graphics.dev.wsj.com/elections/2016/live-results/)",
-					href: "url(http://graphics.dev.wsj.com/elections/2016/banner-homepage/?layout=senate-house-stack)"
+					src: "url(http://graphics.wsj.com/elections/2016/results/?mod=wsjapp)",
+					href: "url(http://graphics.wsj.com/elections/2016/banner-only/?layout=senate-house-stack)"
 				}
 			},
 			#election-map-container: {
 				padding: [0, 0, 0, 0],
-				border-width: [0.5, 0, 0],
+				border-width: { if: =portrait, then: [0.5, 0, 0], else: [0, 0, 0]},
 				border-color: #d8d8d8,
 				left: { if: =portrait, then: 22, else: 522},
 				height: 312,
@@ -241,12 +281,14 @@
 				height: { if: =portrait, then: 290, else: 270},
 				width: { if: =portrait, then: 458, else: 410},
 				padding: [0, 0, 0, 0],
-				top: { if: =portrait, then: 25, else: 20},
+				top: { if: =portrait, then: 35, else: 25},
 				left: { if: =portrait, then: 0, else: 30},
 				right: 0,
+				background-image: "url(elec_ipad_MAP.png)",
+				background-position: stretch,
 				options: {
-					src: "url(http://graphics.dev.wsj.com/elections/2016/live-results/)",
-					href: "url(http://graphics.dev.wsj.com/elections/2016/map-embed/?embed=1&amp;mobile=1)"
+					src: "url(http://graphics.wsj.com/elections/2016/results/?mod=wsjapp)",
+					href: "url(http://graphics.wsj.com/elections/2016/map-only/?mobile=1)"
 				}
 			},
 			#election-headline: {
@@ -255,7 +297,7 @@
 				line-height: 26,
 				color: #2b3333,
 				text-align: left,
-				padding: [0, 0, 0, 0]
+				padding: { if: =portrait, then: [10, 0, 0, 0], else: [-2, 0, 0, 0]}
 			},
 			#b1: {
 				options: {
@@ -268,8 +310,7 @@
 				options: {
 					show_body: true,
 					show_image: false,
-					small_headline: true,
-					background_color: =color.background
+					small_headline: true
 				}
 			},
 			#b3: {
@@ -350,8 +391,53 @@
 				}
 			}
 		}, else: {
-			.alternate-view: {
-				display: none
+			if: =scale.phone, then: {
+				.alternate-view: {
+					display: none
+				}
+			},  else: {
+				if-any: [
+					{if: =loadables.presidential-election-bar.loaded},
+					{if: =loadables.presidential-election-bar, then: false, else: true},
+					{if: =loadables.legislative-election-bar.loaded},
+					{if: =loadables.legislative-election-bar, then: false, else: true},
+					{if: =loadables.election-map.loaded},
+					{if: =loadables.election-map, then: false, else: true}
+				],
+				then: {
+					.alternate-view: {
+						display: none
+					}
+				},
+				else: {
+					.primary-view: {
+						display: none
+					},
+					.election_feature: {
+						width: 1,
+						height: 1
+					},
+					#b2: {
+						options: {
+							show_image:true
+						}
+					},
+					#b3: {
+						options: {
+							show_image:true
+						}
+					},
+					#b4: {
+						options: {
+							show_image:true
+						}
+					},
+					#b5: {
+						options: {
+							show_image:true
+						}
+					}
+				}
 			}
 		}
 	}</style>
@@ -359,31 +445,21 @@
 	<style src="PROMO-PHONE-stylesheet.ejs" />
 	<box id="page_details" embed="pagedescription" />
 	<box id="ad_placeholder" class="ad-banner" embed="pagedescription" />
-	<box id="election-banner" class="primary-view election_container">
-		<box id="presidential-election-bar" embed="webview" class="primary-view maude" />
-		<box id="legislative-election-bar" embed="webview" class="primary-view maude" />
+	<box id="election-banner" class="election_feature election-container">
+		<box id="presidential-election-bar" embed="webview" class="election_feature maude" />
+		<box id="legislative-election-bar" embed="webview" class="election_feature maude" />
 	</box>
 
-	<box id="first-container" class="primary-view election_container maude unit_plain">
+	<box id="first-container" class="primary-view keyline-container maude unit_plain">
 		<box id="b1" embed="article" class="primary-view yposition-6 landscape-lines-28 portrait-lines-24 columns-8 xposition-1 maude unit_plain unit_418" module="TOP-IMAGE_module2.xml" />
 	</box>
-	<box id="election-map-container" class="primary-view maude">
-		<p id="election-headline">Get live results</p>
+	<box id="election-map-container" class="primary-view maude unit_plain">
+		<p id="election-headline">See Full Election Results</p>
 		<box id="election-map" embed="webview" />
 	</box>
 	<box id="b2" embed="article" class="primary-view portrait-yposition-6 landscape-yposition-21 portrait-lines-10 landscape-lines-6 columns-4 xposition-9  maude unit_plain unit_50" module="CONTINUATION-dynamic_module2.xml" />
 	<box id="b3" embed="article" class="primary-view portrait-yposition-17 landscape-yposition-21 portrait-lines-10 landscape-lines-6 columns-4 landscape-xposition-13 portrait-xposition-9 maude unit_plain unit_50" module="CONTINUATION-dynamic_module2.xml" />
 	<box id="b4" embed="article" class="primary-view portrait-yposition-28 landscape-yposition-28 portrait-lines-9 landscape-lines-6 columns-4 xposition-9 maude unit_plain unit_50" module="CONTINUATION-dynamic_module2.xml" />
-	<box id="small_ad_container" class="primary-view phone_only maude unit_ad">
-		<box id="cube_ad" embed="fullpagead">
-			<p id="ad_headline">ADVERTISEMENT</p>
-		</box>
-		<box id="halfscreen_ad" embed="fullpagead">
-			<p id="ad_headline">ADVERTISEMENT</p>
-		</box>
-	</box>
-	<box id="b5" embed="article" class="primary-view portrait-yposition-38 landscape-yposition-28 portrait-lines-9 landscape-lines-6 columns-4 landscape-xposition-13 portrait-xposition-9 maude unit_plain unit_50" module="CONTINUATION-dynamic_module2.xml" />
-
 
 	<!-- For those on 7.8 -->
 	<!-- START -->
@@ -391,17 +467,24 @@
 		<box id="b2" embed="article" class="alternate-view portrait-yposition-29 landscape-yposition-3 portrait-lines-18 landscape-lines-17 columns-4 landscape-xposition-9 portrait-xposition-1  maude unit_plain unit_166" module="TOP-IMAGE_module2.xml" />
 		<box id="b3" embed="article" class="alternate-view portrait-yposition-29 landscape-yposition-3 portrait-lines-18 landscape-lines-17 columns-4 landscape-xposition-13 portrait-xposition-5 maude unit_plain unit_166" module="TOP-IMAGE_module2.xml" />
 		<box id="b4" embed="article" class="alternate-view portrait-yposition-3 landscape-yposition-21 portrait-lines-22 landscape-lines-13 columns-4 xposition-9  maude unit_plain unit_50" module="CONTINUATION-dynamic_module2.xml" />
-		<box id="small_ad_container" class="alternate-view phone_only maude unit_ad">
-			<box id="cube_ad" embed="fullpagead">
-				<p id="ad_headline">ADVERTISEMENT</p>
-			</box>
-			<box id="halfscreen_ad" embed="fullpagead">
-				<p id="ad_headline">ADVERTISEMENT</p>
-			</box>
-		</box>
-		<box id="b5" embed="article" class="alternate-view portrait-yposition-26 landscape-yposition-21 portrait-lines-21 landscape-lines-13 columns-4 landscape-xposition-13 portrait-xposition-9 maude unit_plain unit_50" module="CONTINUATION-dynamic_module2.xml" />
 
 		<!-- END -->
+
+	<box id="small_ad_container" class="phone_only maude unit_ad">
+		<box id="cube_ad" embed="fullpagead">
+			<p id="ad_headline">ADVERTISEMENT</p>
+		</box>
+		<box id="halfscreen_ad" embed="fullpagead">
+			<p id="ad_headline">ADVERTISEMENT</p>
+		</box>
+	</box>
+
+	<box id="b5" embed="article" class="primary-view portrait-yposition-38 landscape-yposition-28 portrait-lines-9 landscape-lines-6 columns-4 landscape-xposition-13 portrait-xposition-9 maude unit_plain unit_50" module="CONTINUATION-dynamic_module2.xml" />
+
+	<!-- For those on 7.8 -->
+	<!-- START -->
+	<box id="b5" embed="article" class="alternate-view portrait-yposition-26 landscape-yposition-21 portrait-lines-21 landscape-lines-13 columns-4 landscape-xposition-13 portrait-xposition-9 maude unit_plain unit_50" module="CONTINUATION-dynamic_module2.xml" />
+	<!-- END -->
 
 	<box id="tabbar-container" class="landscape-columns-16 portrait-columns-12 xposition-1" >
 		<box class="center-me">

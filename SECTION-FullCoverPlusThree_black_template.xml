@@ -1,0 +1,89 @@
+<jpml id="SECTION-FullCoverPlusThree_black_template">
+	<style src="GLOBAL-stylesheet2.ejs"/>
+	<style src="GRID-stylesheet2.ejs"/>
+	<style src="GRID-extras2.ejs"/>
+	<style src="RAIL-stylesheet.ejs" />
+    <style>{
+    	#page_details: {
+			display: inherit,
+			frame: [0, 0, 10, 10],
+			options: {
+                tintColor: { if: =page.section, equals: "WSJ_MAGAZINE", then: #66, else: #2b3333 },
+				tintTitle: true,
+				title: { if: =page.section, equals: "WSJ_MAGAZINE", then: "WSJ. MAGAZINE" }
+			}
+		}
+	}</style>
+	<style> {
+		$switch: [
+			{if: =scale.rail, then: {
+				#deco: {
+					width: =view.width
+				},
+				#b1:	{
+					width: =view.width
+				},
+				#b2:	{
+					width: =view.width
+				},
+				#b3:	{
+					width: =view.width
+				}
+			}},
+			{if: =portrait, then: {
+				jpml: {padding:[0]},
+				#deco:	{
+					top:0,
+					height:1024,
+					position: absolute,
+					options:{very_large_caps_headline:true, image_idiom:portrait, white_text:true, full_screen:true, large_body:true}
+				},
+				#b1:	{
+					top:600,
+					height:100,
+					options:{}
+				},
+				#b2:	{
+					top:750,
+					height:100,
+					options:{}
+				},
+				#b3:	{
+					top:900,
+					height:100,
+					options:{}
+				}
+			}},
+			{if: =landscape, then: {
+				jpml: {padding:[0]},
+				#deco:	{
+					top:0,
+					height:768,
+					position: absolute,
+					options:{very_large_caps_headline:true, white_text:true, image_idiom:landscape, full_screen:true, large_body:true}
+				},
+				#b1:	{
+					top:410,
+					height:100,
+					options:{}
+				},
+				#b2:	{
+					top:530,
+					height:100,
+					options:{}
+				},
+				#b3:	{
+					top:650,
+					height:100,
+					options:{}
+				}
+			}}
+		]
+	} </style>
+	<box id="page_details" class="tablet_only" embed="pagedescription" />
+	<box id="deco" embed="article" class="column_full positionx_full maude unit_full" module="FULL-SIZE_module.xml" />
+	<box id="b1" embed="article" class="landscape-columns-6 portrait-columns-6 landscape-xposition-1 portrait-xposition-1 maude unit_plain" module="ELECTION_COVER_module.xml" />
+	<box id="b2" embed="article" class="landscape-columns-6 portrait-columns-6 landscape-xposition-1 portrait-xposition-1 maude unit_plain" module="ELECTION_COVER_module.xml" />
+	<box id="b3" embed="article" class="landscape-columns-6 portrait-columns-6 landscape-xposition-1 portrait-xposition-1 maude unit_plain" module="ELECTION_COVER_module.xml" />
+
+</jpml>

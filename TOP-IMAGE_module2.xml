@@ -49,7 +49,7 @@
 					pixels-per-point-y:1,
 					image-scale: 1,
 					display: { if: =options.show_image, then:inherit, else:none },
-					height: {$multiply: [{$ceiling: [{$divide: [{$multiply: [=view.width, .651]}, 10]}]}, 10]},
+					height: {$multiply: [=view.width, .662 ]},
 					options: {
 						$switch: [
 							{ if: =options.F_image, then: {match: { width:571, height:226, max-height:226 } } },

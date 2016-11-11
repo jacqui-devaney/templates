@@ -12,30 +12,49 @@
 			}
 		}, else: {
 			jpml: {
-				padding:[90, 0, 0, 0]
+				padding:[{if: =page.number, equals: 0, then: 100, else: 0}, 15, 0, 15]
 			}
 		}
 	}</style>
 	<style>{
-		#b1: {
-			left: 0,
-			right: 0,
-			top: 0,
-			height: 135,
-			position: relative,
-			options: {
-				module: url(NAVIGATION_module.xml),
-				medium_headline: true,
-				show_body: true,
-				top_border: true
+		if: =scale.phone, then: {
+			#b1: {
+				left: 0, 
+				right: 0, 
+				top: 0, 
+				height: 135, 
+				position: relative,
+				options: {
+					module: url(NAVIGATION_module.xml),
+					medium_headline: true, 
+					show_body: true,
+					top_border: true
+				}
 			},
-			border-width: [0, 0, 1, 0],
-			border-color: #DDDDDD
-		},
-		jpml: {
-			min-height: 0,
-			max-height: 10000
+			jpml: {
+				min-height: 0,
+				max-height: 10000
+			}
+		}, else: {
+			#b1: {
+				left: 0,
+				right: 0,
+				top: 0,
+				height: {if: =scale.tablet, then: 170, else: 135},
+				position: relative,
+				options: {
+					module: {if: =scale.tablet, then: url(LEFT-IMAGE_module.xml), else: url(NAVIGATION_module.xml)},
+					medium_headline: true,
+					show_body: true,
+					top_border: {if: =page.number, equals: 0, then: false, else: true}
+				}
+			},
+			jpml: {
+				min-height: 0,
+				max-height: 10000
+			}		
 		}
+
 	}</style>
-	<box id="b1" embed="article" class="maude unit_plain" module="LEFT-IMAGE_module.xml" />
+	<box id="b1" embed="article"/>
 </jpml>

@@ -180,6 +180,7 @@
           }
         ]
       },
+       
       {
         "section": "FRONT_SECTION_ITP",
         "filename": "FRONT-4story-holiday-deco_template.xml",
@@ -219,7 +220,129 @@
         ]
       },
       {
+        "section": "FRONT_SECTION_ITP",
+        "filename": "FRONT-4story-holiday-deco_template.xml",
+        "title": "4 story G Holiday Liondoor",
+        "usage": "continuation",
+        "boxes": [
+          {
+            "id": "b1",
+            "images": {}
+          },
+          {
+            "id": "deco",
+            "images": {
+              "tablet": {
+                "width": 546,
+                "height": 356
+              }
+            }
+          },
+          {
+            "id": "b2",
+            "images": {}
+          },
+          {
+            "id": "b3",
+            "images": {}
+          },
+          {
+            "id": "b4",
+            "images": {
+              "tablet": {
+                "width": 55,
+                "height": 55
+              }
+            }
+          }
+        ]
+      },
+      {
         "section": "FRONT_SECTION",
+        "filename": "FRONT-5story-holiday-deco_template.xml",
+        "title": "Default: 5 story G Holiday",
+        "usage": "front",
+        "boxes": [
+          {
+            "id": "b1",
+            "images": {}
+          },
+          {
+            "id": "deco",
+            "images": {
+              "tablet": {
+                "width": 546,
+                "height": 356
+              }
+            }
+          },
+          {
+            "id": "b2",
+            "images": {}
+          },
+          {
+            "id": "b3",
+            "images": {}
+          },
+          {
+            "id": "b4",
+            "images": {}
+          },
+          {
+            "id": "b5",
+            "images": {
+              "tablet": {
+                "width": 55,
+                "height": 55
+              }
+            }
+          }
+        ]
+      },
+      {
+        "section": "FRONT_SECTION",
+        "filename": "FRONT-5story-holiday-deco_template.xml",
+        "title": "Default: 5 story G Holiday",
+        "usage": "continuation",
+        "boxes": [
+          {
+            "id": "b1",
+            "images": {}
+          },
+          {
+            "id": "deco",
+            "images": {
+              "tablet": {
+                "width": 546,
+                "height": 356
+              }
+            }
+          },
+          {
+            "id": "b2",
+            "images": {}
+          },
+          {
+            "id": "b3",
+            "images": {}
+          },
+          {
+            "id": "b4",
+            "images": {}
+          },
+          {
+            "id": "b5",
+            "images": {
+              "tablet": {
+                "width": 55,
+                "height": 55
+              }
+            }
+          }
+        ]
+      },
+      {
+        "section": "FRONT_SECTION_ITP",
         "filename": "FRONT-5story-holiday-deco_template.xml",
         "title": "Default: 5 story G Holiday",
         "usage": "front",
@@ -264,7 +387,7 @@
         "section": "FRONT_SECTION_ITP",
         "filename": "FRONT-5story-holiday-deco_template.xml",
         "title": "Default: 5 story G Holiday",
-        "usage": "front",
+        "usage": "continuation",
         "boxes": [
           {
             "id": "b1",
@@ -345,10 +468,94 @@
         ]
       },
       {
+        "section": "FRONT_SECTION",
+        "filename": "FRONT-5story-deco_template.xml",
+        "title": "Default: 5 story G Liondoor",
+        "usage": "continuation",
+        "boxes": [
+          {
+            "id": "b1",
+            "images": {}
+          },
+          {
+            "id": "deco",
+            "images": {
+              "tablet": {
+                "width": 546,
+                "height": 356
+              }
+            }
+          },
+          {
+            "id": "b2",
+            "images": {}
+          },
+          {
+            "id": "b3",
+            "images": {}
+          },
+          {
+            "id": "b4",
+            "images": {}
+          },
+          {
+            "id": "b5",
+            "images": {
+              "tablet": {
+                "width": 55,
+                "height": 55
+              }
+            }
+          }
+        ]
+      },
+      {
         "section": "FRONT_SECTION_ITP",
         "filename": "FRONT-5story-deco_template.xml",
         "title": "Default: 5 story G Liondoor",
         "usage": "front",
+        "boxes": [
+          {
+            "id": "b1",
+            "images": {}
+          },
+          {
+            "id": "deco",
+            "images": {
+              "tablet": {
+                "width": 546,
+                "height": 356
+              }
+            }
+          },
+          {
+            "id": "b2",
+            "images": {}
+          },
+          {
+            "id": "b3",
+            "images": {}
+          },
+          {
+            "id": "b4",
+            "images": {}
+          },
+          {
+            "id": "b5",
+            "images": {
+              "tablet": {
+                "width": 55,
+                "height": 55
+              }
+            }
+          }
+        ]
+      },
+      {
+        "section": "FRONT_SECTION_ITP",
+        "filename": "FRONT-5story-deco_template.xml",
+        "title": "Default: 5 story G Liondoor",
+        "usage": "continuation",
         "boxes": [
           {
             "id": "b1",
@@ -425,10 +632,86 @@
         ]
       },
       {
+        "section": "FRONT_SECTION",
+        "filename": "FRONT-5story_template.xml",
+        "title": "5 story G",
+        "usage": "continuation",
+        "boxes": [
+          {
+            "id": "b1",
+            "images": {
+              "tablet": {
+                "width": 546,
+                "height": 356
+              }
+            }
+          },
+          {
+            "id": "b2",
+            "images": {}
+          },
+          {
+            "id": "b3",
+            "images": {}
+          },
+          {
+            "id": "b4",
+            "images": {}
+          },
+          {
+            "id": "b5",
+            "images": {
+              "tablet": {
+                "width": 55,
+                "height": 55
+              }
+            }
+          }
+        ]
+      },
+      {
         "section": "FRONT_SECTION_ITP",
         "filename": "FRONT-5story_template.xml",
         "title": "5 story G",
         "usage": "front",
+        "boxes": [
+          {
+            "id": "b1",
+            "images": {
+              "tablet": {
+                "width": 546,
+                "height": 356
+              }
+            }
+          },
+          {
+            "id": "b2",
+            "images": {}
+          },
+          {
+            "id": "b3",
+            "images": {}
+          },
+          {
+            "id": "b4",
+            "images": {}
+          },
+          {
+            "id": "b5",
+            "images": {
+              "tablet": {
+                "width": 55,
+                "height": 55
+              }
+            }
+          }
+        ]
+      },
+      {
+        "section": "FRONT_SECTION_ITP",
+        "filename": "FRONT-5story_template.xml",
+        "title": "5 story G",
+        "usage": "continuation",
         "boxes": [
           {
             "id": "b1",
@@ -850,6 +1133,356 @@
             "id": "b2",
             "images": {}
           }
+        ]
+      },
+      {
+        "section": "SPECIAL_REPORT",
+        "filename": "CONTINUATION-8story-future-of-everything_template.xml",
+        "usage": "continuation",
+        "boxes": [
+          {
+            "id": "b1",
+            "images": {
+             "landscape": {
+                "width": 236,
+                "height": 153
+              },
+              "portrait": {
+                "width": 178,
+                "height": 178
+              }
+            }
+          },
+          {
+            "id": "b2",
+            "images": {
+             "landscape": {
+                "width": 236,
+                "height": 153
+              },
+              "portrait": {
+                "width": 178,
+                "height": 178
+              }
+            }
+          },
+          {
+            "id": "b3",
+            "images": {
+             "landscape": {
+                "width": 236,
+                "height": 153
+              },
+              "portrait": {
+                "width": 178,
+                "height": 178
+              }
+            }
+          },
+          {
+            "id": "b4",
+            "images": {
+             "landscape": {
+                "width": 236,
+                "height": 153
+              },
+              "portrait": {
+                "width": 178,
+                "height": 178
+              }
+            }
+          },
+          {
+            "id": "b5",
+            "images": {
+             "landscape": {
+                "width": 236,
+                "height": 153
+              },
+              "portrait": {
+                "width": 178,
+                "height": 178
+              }
+            }
+
+          },
+          {
+            "id": "b6",
+            "images": {
+             "landscape": {
+                "width": 236,
+                "height": 153
+              },
+              "portrait": {
+                "width": 178,
+                "height": 178
+              }
+            }
+          },
+          {
+            "id": "b7",
+            "images": {
+             "landscape": {
+                "width": 236,
+                "height": 153
+              },
+              "portrait": {
+                "width": 178,
+                "height": 178
+              }
+            }
+          },
+          {
+            "id": "b8",
+            "images": {
+             "landscape": {
+                "width": 236,
+                "height": 153
+              },
+              "portrait": {
+                "width": 178,
+                "height": 178
+              }
+
+            }
+          }
+        ]
+      },
+      {
+        "section": "SPECIAL_REPORT",
+        "filename": "CONTINUATION-7story-future-of-everything_template.xml",
+        "title": "7 story - Future of Everything",
+        "usage": "continuation",
+        "boxes": [
+          {
+            "id": "b1",
+            "images": {
+              "landscape": {
+                "width": 236,
+                "height": 274
+              },
+              "portrait": {
+                "width": 360,
+                "height": 240
+              }
+            }
+
+          },
+          {
+            "id": "b2",
+            "images": {
+              "landscape": {
+                "width": 236,
+                "height": 153
+              },
+              "portrait": {
+                "width": 178,
+                "height": 178
+              }
+            }
+          },
+          {
+            "id": "b3",
+            "images": {
+              "landscape": {
+                "width": 236,
+                "height": 153
+              },
+              "portrait": {
+                "width": 178,
+                "height": 178
+              }
+            }
+          },
+         {
+            "id": "b4",
+            "images": {
+              "landscape": {
+                "width": 236,
+                "height": 153
+              },
+              "portrait": {
+                "width": 178,
+                "height": 178
+              }
+            }
+          },
+          {
+            "id": "b5",
+            "images": {
+              "landscape": {
+                "width": 236,
+                "height": 153
+              },
+              "portrait": {
+                "width": 178,
+                "height": 178
+              }
+            }
+          },
+          {
+            "id": "b6",
+            "images": {
+              "landscape": {
+                "width": 236,
+                "height": 153
+              },
+              "portrait": {
+                "width": 178,
+                "height": 178
+              }
+            }
+          },
+          {
+            "id": "b7",
+            "images": {
+              "landscape": {
+                "width": 236,
+                "height": 153
+              },
+              "portrait": {
+                "width": 178,
+                "height": 178
+              }
+            }
+          }
+        ]
+      },
+      {
+        "section": "SPECIAL_REPORT",
+        "filename": "CONTINUATION-5story-future-of-everything_template.xml",
+        "title": "5 story - Future of Everything",
+        "usage": "continuation",
+        "boxes": [
+            {
+            "id": "b1",
+            "images": {
+              "landscape": {
+                "width": 236,
+                "height": 287
+                            },
+              "portrait": {
+                "width": 360,
+                "height": 240
+              }
+            }
+          },
+          {
+            "id": "b2",
+            "images": {
+              "landscape": {
+                "width": 236,
+                "height": 274
+              },
+              "portrait": {
+                "width": 360,
+                "height": 240
+              }
+            }
+          },
+            {
+            "id": "b3",
+            "images": {
+              "landscape": {
+                "width": 236,
+                "height": 274
+
+              },
+              "portrait": {
+                "width": 360,
+                "height": 240
+              }
+            }
+            },
+
+          {
+            "id": "b4",
+            "images": {
+              "landscape": {
+                "width": 236,
+                "height": 153
+              },
+              "portrait": {
+                "width": 178,
+                "height": 178
+              }
+            }
+          },
+          {
+            "id": "b5",
+            "images": {
+              "landscape": {
+                "width": 236,
+                "height": 153
+              },
+              "portrait": {
+                "width": 178,
+                "height": 178
+              }
+            }
+          }
+        ]
+      },
+      {
+        "section": "SPECIAL_REPORT",
+        "filename": "CONTINUATION-4story-future-of-everything_template.xml",
+        "title": "4 story - Future of Everything",
+        "usage": "continuation",
+        "boxes": [
+            {
+            "id": "b1",
+            "images": {
+              "landscape": {
+                "width": 236,
+                "height": 274
+              },
+              "portrait": {
+                "width": 360,
+                "height": 240
+              }
+            }
+          },
+          {
+            "id": "b2",
+            "images": {
+              "landscape": {
+                "width": 236,
+                "height": 274
+              },
+              "portrait": {
+                "width": 360,
+                "height": 240
+              }
+            }
+          },
+            {
+            "id": "b3",
+            "images": {
+              "landscape": {
+                "width": 236,
+                "height": 274
+              },
+              "portrait": {
+                "width": 360,
+                "height": 240
+              }
+            }
+          },
+          {
+            "id": "b4",
+            "images": {
+              "landscape": {
+                "width": 236,
+                "height": 274
+              },
+              "portrait": {
+                "width": 360,
+                "height": 240
+              }
+            }
+          }
+
+
         ]
       },
       {
@@ -1044,9 +1677,136 @@
         ]
       },
       {
+        "filename": "SECTION-6-election-story_template.xml",
+        "title": "6 story - G photo",
+        "usage": "front",
+        "boxes": [
+          {
+            "id": "b1",
+            "images": {
+              "tablet": {
+                "width": 484,
+                "height": 322
+              }
+            }
+          },
+          {
+            "id": "b2",
+            "images": {
+              "tablet": {
+                "width": 292,
+                "height": 195
+              }
+            }
+          },
+          {
+            "id": "b3",
+            "images": {}
+          },
+          {
+            "id": "b4",
+            "images": {}
+          },
+          {
+            "id": "b5",
+            "images": {}
+          },
+          {
+            "id": "b6",
+            "images": {}
+          }
+        ]
+      },
+      {
+        "filename": "SECTION-6-election-story_template.xml",
+        "title": "6 story - G photo",
+        "usage": "continuation",
+        "boxes": [
+          {
+            "id": "b1",
+            "images": {
+              "tablet": {
+                "width": 484,
+                "height": 322
+              }
+            }
+          },
+          {
+            "id": "b2",
+            "images": {
+              "tablet": {
+                "width": 292,
+                "height": 195
+              }
+            }
+          },
+          {
+            "id": "b3",
+            "images": {}
+          },
+          {
+            "id": "b4",
+            "images": {}
+          },
+          {
+            "id": "b5",
+            "images": {}
+          },
+          {
+            "id": "b6",
+            "images": {}
+          }
+        ]
+      },
+      {
         "filename": "SECTION-6story-deco_template.xml",
         "title": "6 story plus deco",
         "usage": "front",
+        "boxes": [
+          {
+            "id": "b1",
+            "images": {}
+          },
+          {
+            "id": "deco",
+            "images": {
+              "tablet": {
+                "width": 567,
+                "height": 379
+              }
+            }
+          },
+          {
+            "id": "b2",
+            "images": {
+              "tablet": {
+                "width": 292,
+                "height": 195
+              }
+            }
+          },
+          {
+            "id": "b3",
+            "images": {}
+          },
+          {
+            "id": "b4",
+            "images": {}
+          },
+          {
+            "id": "b5",
+            "images": {}
+          },
+          {
+            "id": "b6",
+            "images": {}
+          }
+        ]
+      },
+      {
+        "filename": "SECTION-6story-deco_template.xml",
+        "title": "6 story plus deco",
+        "usage": "continuation",
         "boxes": [
           {
             "id": "b1",
@@ -1123,6 +1883,60 @@
         ]
       },
       {
+        "filename": "SECTION-3story_template.xml",
+        "title": "3 story - Large Photo",
+        "usage": "continuation",
+        "boxes": [
+          {
+            "id": "deco",
+            "images": {
+              "tablet": {
+                "width": 640,
+                "height": 426
+              }
+            }
+          },
+          {
+            "id": "b1",
+            "images": {
+              "tablet": {
+                "width": 113,
+                "height": 92
+              }
+            }
+          },
+          {
+            "id": "b2",
+            "images": {
+              "tablet": {
+                "width": 113,
+                "height": 92
+              }
+            }
+          }
+        ]
+      },
+      {
+        "filename": "SECTION-1story_template.xml",
+        "title": "Full size Deco",
+        "usage": "front",
+        "boxes": [
+          {
+            "id": "deco",
+            "images": {
+              "portrait": {
+                "width": 768,
+                "height": 1024
+              },
+              "landscape": {
+                "width": 1024,
+                "height": 768
+              }
+            }
+          }
+        ]
+      },
+      {
         "filename": "SECTION-FullCoverPlusThree_white_template.xml",
         "title": "Full Cover Template with 3 Tap Areas",
         "usage": "front",
@@ -1187,12 +2001,34 @@
         ]
       },
       {
-        "filename": "SECTION-1story_template.xml",
+        "filename": "DECO-1story-future-of-everything_template.xml",
+        "section": "SPECIAL_REPORT",
         "title": "Full size Deco",
         "usage": "front",
         "boxes": [
           {
             "id": "deco",
+            "images": {
+              "portrait": {
+                "width": 768,
+                "height": 1024
+              },
+              "landscape": {
+                "width": 1024,
+                "height": 768
+              }
+            }
+          }
+        ]
+      },
+      {
+        "filename": "CONTINUATION-1story-future-of-everything_template.xml",
+        "section": "SPECIAL_REPORT",
+        "title": "Full size 1 story",
+        "usage": "continuation",
+        "boxes": [
+          {
+            "id": "b1",
             "images": {
               "portrait": {
                 "width": 768,
@@ -1213,6 +2049,14 @@
       {
         "filename": "ARTICLE-standard_template.xml",
         "title": "Standard Article Template"
+      },
+      {
+        "filename": "ARTICLE-election_template.xml",
+        "title": "Election Article Template"
+      },
+      {
+        "filename": "ARTICLE-future_of_everything_template.xml",
+        "title": "Future of Everything Article Template"
       },
       {
         "filename": "ARTICLE-h-slideshow_template.xml",

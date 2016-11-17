@@ -144,6 +144,326 @@
       },
       {
         "section": "FRONT_SECTION",
+        "filename": "FRONT-5story-deco_template.xml",
+        "title": "Default: 5 story G Liondoor",
+        "usage": "front",
+        "boxes": [
+          {
+            "id": "b1",
+            "images": {}
+          },
+          {
+            "id": "deco",
+            "images": {
+              "tablet": {
+                "width": 546,
+                "height": 356
+              }
+            }
+          },
+          {
+            "id": "b2",
+            "images": {}
+          },
+          {
+            "id": "b3",
+            "images": {}
+          },
+          {
+            "id": "b4",
+            "images": {}
+          },
+          {
+            "id": "b5",
+            "images": {
+              "tablet": {
+                "width": 55,
+                "height": 55
+              }
+            }
+          }
+        ]
+      },
+      {
+        "section": "FRONT_SECTION",
+        "filename": "FRONT-5story-deco_template.xml",
+        "title": "Default: 5 story G Liondoor",
+        "usage": "continuation",
+        "boxes": [
+          {
+            "id": "b1",
+            "images": {}
+          },
+          {
+            "id": "deco",
+            "images": {
+              "tablet": {
+                "width": 546,
+                "height": 356
+              }
+            }
+          },
+          {
+            "id": "b2",
+            "images": {}
+          },
+          {
+            "id": "b3",
+            "images": {}
+          },
+          {
+            "id": "b4",
+            "images": {}
+          },
+          {
+            "id": "b5",
+            "images": {
+              "tablet": {
+                "width": 55,
+                "height": 55
+              }
+            }
+          }
+        ]
+      },
+      {
+        "section": "FRONT_SECTION_ITP",
+        "filename": "FRONT-5story-deco_template.xml",
+        "title": "Default: 5 story G Liondoor",
+        "usage": "front",
+        "boxes": [
+          {
+            "id": "b1",
+            "images": {}
+          },
+          {
+            "id": "deco",
+            "images": {
+              "tablet": {
+                "width": 546,
+                "height": 356
+              }
+            }
+          },
+          {
+            "id": "b2",
+            "images": {}
+          },
+          {
+            "id": "b3",
+            "images": {}
+          },
+          {
+            "id": "b4",
+            "images": {}
+          },
+          {
+            "id": "b5",
+            "images": {
+              "tablet": {
+                "width": 55,
+                "height": 55
+              }
+            }
+          }
+        ]
+      },
+      {
+        "section": "FRONT_SECTION_ITP",
+        "filename": "FRONT-5story-deco_template.xml",
+        "title": "Default: 5 story G Liondoor",
+        "usage": "continuation",
+        "boxes": [
+          {
+            "id": "b1",
+            "images": {}
+          },
+          {
+            "id": "deco",
+            "images": {
+              "tablet": {
+                "width": 546,
+                "height": 356
+              }
+            }
+          },
+          {
+            "id": "b2",
+            "images": {}
+          },
+          {
+            "id": "b3",
+            "images": {}
+          },
+          {
+            "id": "b4",
+            "images": {}
+          },
+          {
+            "id": "b5",
+            "images": {
+              "tablet": {
+                "width": 55,
+                "height": 55
+              }
+            }
+          }
+        ]
+      },
+      {
+        "section": "FRONT_SECTION",
+        "filename": "FRONT-5story_template.xml",
+        "title": "5 story G",
+        "usage": "front",
+        "boxes": [
+          {
+            "id": "b1",
+            "images": {
+              "tablet": {
+                "width": 546,
+                "height": 356
+              }
+            }
+          },
+          {
+            "id": "b2",
+            "images": {}
+          },
+          {
+            "id": "b3",
+            "images": {}
+          },
+          {
+            "id": "b4",
+            "images": {}
+          },
+          {
+            "id": "b5",
+            "images": {
+              "tablet": {
+                "width": 55,
+                "height": 55
+              }
+            }
+          }
+        ]
+      },
+      {
+        "section": "FRONT_SECTION",
+        "filename": "FRONT-5story_template.xml",
+        "title": "5 story G",
+        "usage": "continuation",
+        "boxes": [
+          {
+            "id": "b1",
+            "images": {
+              "tablet": {
+                "width": 546,
+                "height": 356
+              }
+            }
+          },
+          {
+            "id": "b2",
+            "images": {}
+          },
+          {
+            "id": "b3",
+            "images": {}
+          },
+          {
+            "id": "b4",
+            "images": {}
+          },
+          {
+            "id": "b5",
+            "images": {
+              "tablet": {
+                "width": 55,
+                "height": 55
+              }
+            }
+          }
+        ]
+      },
+      {
+        "section": "FRONT_SECTION_ITP",
+        "filename": "FRONT-5story_template.xml",
+        "title": "5 story G",
+        "usage": "front",
+        "boxes": [
+          {
+            "id": "b1",
+            "images": {
+              "tablet": {
+                "width": 546,
+                "height": 356
+              }
+            }
+          },
+          {
+            "id": "b2",
+            "images": {}
+          },
+          {
+            "id": "b3",
+            "images": {}
+          },
+          {
+            "id": "b4",
+            "images": {}
+          },
+          {
+            "id": "b5",
+            "images": {
+              "tablet": {
+                "width": 55,
+                "height": 55
+              }
+            }
+          }
+        ]
+      },
+      {
+        "section": "FRONT_SECTION_ITP",
+        "filename": "FRONT-5story_template.xml",
+        "title": "5 story G",
+        "usage": "continuation",
+        "boxes": [
+          {
+            "id": "b1",
+            "images": {
+              "tablet": {
+                "width": 546,
+                "height": 356
+              }
+            }
+          },
+          {
+            "id": "b2",
+            "images": {}
+          },
+          {
+            "id": "b3",
+            "images": {}
+          },
+          {
+            "id": "b4",
+            "images": {}
+          },
+          {
+            "id": "b5",
+            "images": {
+              "tablet": {
+                "width": 55,
+                "height": 55
+              }
+            }
+          }
+        ]
+      },
+      {
+        "section": "FRONT_SECTION",
         "filename": "FRONT-4story-holiday-deco_template.xml",
         "title": "4 story G Holiday Liondoor",
         "usage": "front",
@@ -180,7 +500,44 @@
           }
         ]
       },
-       
+      {
+        "section": "FRONT_SECTION",
+        "filename": "FRONT-4story-holiday-deco_template.xml",
+        "title": "4 story G Holiday Liondoor",
+        "usage": "continuation",
+        "boxes": [
+          {
+            "id": "b1",
+            "images": {}
+          },
+          {
+            "id": "deco",
+            "images": {
+              "tablet": {
+                "width": 546,
+                "height": 356
+              }
+            }
+          },
+          {
+            "id": "b2",
+            "images": {}
+          },
+          {
+            "id": "b3",
+            "images": {}
+          },
+          {
+            "id": "b4",
+            "images": {
+              "tablet": {
+                "width": 55,
+                "height": 55
+              }
+            }
+          }
+        ]
+      },
       {
         "section": "FRONT_SECTION_ITP",
         "filename": "FRONT-4story-holiday-deco_template.xml",
@@ -395,326 +752,6 @@
           },
           {
             "id": "deco",
-            "images": {
-              "tablet": {
-                "width": 546,
-                "height": 356
-              }
-            }
-          },
-          {
-            "id": "b2",
-            "images": {}
-          },
-          {
-            "id": "b3",
-            "images": {}
-          },
-          {
-            "id": "b4",
-            "images": {}
-          },
-          {
-            "id": "b5",
-            "images": {
-              "tablet": {
-                "width": 55,
-                "height": 55
-              }
-            }
-          }
-        ]
-      },
-      {
-        "section": "FRONT_SECTION",
-        "filename": "FRONT-5story-deco_template.xml",
-        "title": "Default: 5 story G Liondoor",
-        "usage": "front",
-        "boxes": [
-          {
-            "id": "b1",
-            "images": {}
-          },
-          {
-            "id": "deco",
-            "images": {
-              "tablet": {
-                "width": 546,
-                "height": 356
-              }
-            }
-          },
-          {
-            "id": "b2",
-            "images": {}
-          },
-          {
-            "id": "b3",
-            "images": {}
-          },
-          {
-            "id": "b4",
-            "images": {}
-          },
-          {
-            "id": "b5",
-            "images": {
-              "tablet": {
-                "width": 55,
-                "height": 55
-              }
-            }
-          }
-        ]
-      },
-      {
-        "section": "FRONT_SECTION",
-        "filename": "FRONT-5story-deco_template.xml",
-        "title": "Default: 5 story G Liondoor",
-        "usage": "continuation",
-        "boxes": [
-          {
-            "id": "b1",
-            "images": {}
-          },
-          {
-            "id": "deco",
-            "images": {
-              "tablet": {
-                "width": 546,
-                "height": 356
-              }
-            }
-          },
-          {
-            "id": "b2",
-            "images": {}
-          },
-          {
-            "id": "b3",
-            "images": {}
-          },
-          {
-            "id": "b4",
-            "images": {}
-          },
-          {
-            "id": "b5",
-            "images": {
-              "tablet": {
-                "width": 55,
-                "height": 55
-              }
-            }
-          }
-        ]
-      },
-      {
-        "section": "FRONT_SECTION_ITP",
-        "filename": "FRONT-5story-deco_template.xml",
-        "title": "Default: 5 story G Liondoor",
-        "usage": "front",
-        "boxes": [
-          {
-            "id": "b1",
-            "images": {}
-          },
-          {
-            "id": "deco",
-            "images": {
-              "tablet": {
-                "width": 546,
-                "height": 356
-              }
-            }
-          },
-          {
-            "id": "b2",
-            "images": {}
-          },
-          {
-            "id": "b3",
-            "images": {}
-          },
-          {
-            "id": "b4",
-            "images": {}
-          },
-          {
-            "id": "b5",
-            "images": {
-              "tablet": {
-                "width": 55,
-                "height": 55
-              }
-            }
-          }
-        ]
-      },
-      {
-        "section": "FRONT_SECTION_ITP",
-        "filename": "FRONT-5story-deco_template.xml",
-        "title": "Default: 5 story G Liondoor",
-        "usage": "continuation",
-        "boxes": [
-          {
-            "id": "b1",
-            "images": {}
-          },
-          {
-            "id": "deco",
-            "images": {
-              "tablet": {
-                "width": 546,
-                "height": 356
-              }
-            }
-          },
-          {
-            "id": "b2",
-            "images": {}
-          },
-          {
-            "id": "b3",
-            "images": {}
-          },
-          {
-            "id": "b4",
-            "images": {}
-          },
-          {
-            "id": "b5",
-            "images": {
-              "tablet": {
-                "width": 55,
-                "height": 55
-              }
-            }
-          }
-        ]
-      },
-      {
-        "section": "FRONT_SECTION",
-        "filename": "FRONT-5story_template.xml",
-        "title": "5 story G",
-        "usage": "front",
-        "boxes": [
-          {
-            "id": "b1",
-            "images": {
-              "tablet": {
-                "width": 546,
-                "height": 356
-              }
-            }
-          },
-          {
-            "id": "b2",
-            "images": {}
-          },
-          {
-            "id": "b3",
-            "images": {}
-          },
-          {
-            "id": "b4",
-            "images": {}
-          },
-          {
-            "id": "b5",
-            "images": {
-              "tablet": {
-                "width": 55,
-                "height": 55
-              }
-            }
-          }
-        ]
-      },
-      {
-        "section": "FRONT_SECTION",
-        "filename": "FRONT-5story_template.xml",
-        "title": "5 story G",
-        "usage": "continuation",
-        "boxes": [
-          {
-            "id": "b1",
-            "images": {
-              "tablet": {
-                "width": 546,
-                "height": 356
-              }
-            }
-          },
-          {
-            "id": "b2",
-            "images": {}
-          },
-          {
-            "id": "b3",
-            "images": {}
-          },
-          {
-            "id": "b4",
-            "images": {}
-          },
-          {
-            "id": "b5",
-            "images": {
-              "tablet": {
-                "width": 55,
-                "height": 55
-              }
-            }
-          }
-        ]
-      },
-      {
-        "section": "FRONT_SECTION_ITP",
-        "filename": "FRONT-5story_template.xml",
-        "title": "5 story G",
-        "usage": "front",
-        "boxes": [
-          {
-            "id": "b1",
-            "images": {
-              "tablet": {
-                "width": 546,
-                "height": 356
-              }
-            }
-          },
-          {
-            "id": "b2",
-            "images": {}
-          },
-          {
-            "id": "b3",
-            "images": {}
-          },
-          {
-            "id": "b4",
-            "images": {}
-          },
-          {
-            "id": "b5",
-            "images": {
-              "tablet": {
-                "width": 55,
-                "height": 55
-              }
-            }
-          }
-        ]
-      },
-      {
-        "section": "FRONT_SECTION_ITP",
-        "filename": "FRONT-5story_template.xml",
-        "title": "5 story G",
-        "usage": "continuation",
-        "boxes": [
-          {
-            "id": "b1",
             "images": {
               "tablet": {
                 "width": 546,
@@ -1572,6 +1609,92 @@
         ]
       },
       {
+        "filename": "SECTION-6story_template.xml",
+        "title": "6 story - G photo",
+        "usage": "front",
+        "boxes": [
+          {
+            "id": "b1",
+            "images": {
+              "tablet": {
+                "width": 484,
+                "height": 322
+              }
+            }
+          },
+          {
+            "id": "b2",
+            "images": {
+              "tablet": {
+                "width": 292,
+                "height": 195
+              }
+            }
+          },
+          {
+            "id": "b3",
+            "images": {}
+          },
+          {
+            "id": "b4",
+            "images": {}
+          },
+          {
+            "id": "b5",
+            "images": {}
+          },
+          {
+            "id": "b6",
+            "images": {}
+          }
+        ]
+      },
+      {
+        "filename": "SECTION-6story-deco_template.xml",
+        "title": "6 story plus deco",
+        "usage": "front",
+        "boxes": [
+          {
+            "id": "b1",
+            "images": {}
+          },
+          {
+            "id": "deco",
+            "images": {
+              "tablet": {
+                "width": 567,
+                "height": 379
+              }
+            }
+          },
+          {
+            "id": "b2",
+            "images": {
+              "tablet": {
+                "width": 292,
+                "height": 195
+              }
+            }
+          },
+          {
+            "id": "b3",
+            "images": {}
+          },
+          {
+            "id": "b4",
+            "images": {}
+          },
+          {
+            "id": "b5",
+            "images": {}
+          },
+          {
+            "id": "b6",
+            "images": {}
+          }
+        ]
+      },
+      {
         "filename": "SECTION-FullCoverPlusThree_NORAIL_white_template.xml",
         "title": "Full Cover Template with 3 Tap Areas - NO RAIL",
         "usage": "front",
@@ -1636,47 +1759,6 @@
         ]
       },
       {
-        "filename": "SECTION-6story_template.xml",
-        "title": "6 story - G photo",
-        "usage": "front",
-        "boxes": [
-          {
-            "id": "b1",
-            "images": {
-              "tablet": {
-                "width": 484,
-                "height": 322
-              }
-            }
-          },
-          {
-            "id": "b2",
-            "images": {
-              "tablet": {
-                "width": 292,
-                "height": 195
-              }
-            }
-          },
-          {
-            "id": "b3",
-            "images": {}
-          },
-          {
-            "id": "b4",
-            "images": {}
-          },
-          {
-            "id": "b5",
-            "images": {}
-          },
-          {
-            "id": "b6",
-            "images": {}
-          }
-        ]
-      },
-      {
         "filename": "SECTION-6-election-story_template.xml",
         "title": "6 story - G photo",
         "usage": "front",
@@ -1728,51 +1810,6 @@
               "tablet": {
                 "width": 484,
                 "height": 322
-              }
-            }
-          },
-          {
-            "id": "b2",
-            "images": {
-              "tablet": {
-                "width": 292,
-                "height": 195
-              }
-            }
-          },
-          {
-            "id": "b3",
-            "images": {}
-          },
-          {
-            "id": "b4",
-            "images": {}
-          },
-          {
-            "id": "b5",
-            "images": {}
-          },
-          {
-            "id": "b6",
-            "images": {}
-          }
-        ]
-      },
-      {
-        "filename": "SECTION-6story-deco_template.xml",
-        "title": "6 story plus deco",
-        "usage": "front",
-        "boxes": [
-          {
-            "id": "b1",
-            "images": {}
-          },
-          {
-            "id": "deco",
-            "images": {
-              "tablet": {
-                "width": 567,
-                "height": 379
               }
             }
           },

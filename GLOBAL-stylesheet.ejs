@@ -4,8 +4,8 @@
 		pixels-per-point-x: { if: =intent.template, then: =scale.width, else: 1 },
 		pixels-per-point-y: { if: =intent.template, then: =scale.height, else: 1 },
 
-		min-height: {if-all: [=intent.template, =intent.section, =scale.phone], then: 0},
-		max-height: {if-all: [=intent.template, =intent.section, =scale.phone], then: 10000}
+		min-height: {if-all: [=intent.template, =intent.section], then: 0},
+		max-height: {if-all: [=intent.template, =intent.section], then: 10000}
 	},
 
 	.tablet_only: {

@@ -1,0 +1,181 @@
+<jpml id="SECTION-6story-POC_template">
+	<style src="GLOBAL-stylesheet.ejs"/>
+    <style src="GRID-stylesheet.ejs"/>
+	<style src="ADVERTISING-stylesheet.ejs"/>
+    <style src="PHONE-stylesheet.ejs"/>
+	<style src="RAIL-stylesheet.ejs" />
+	<style src="FRONT-stylesheet.ejs"/>
+	<style>{
+		#page_details: {
+			options: {
+				tintTitle: true
+			}
+		}
+	}</style>
+	<style> {
+		$switch: [
+			{if: =scale.rail, then: {
+
+			}},
+			{if: =scale.phone, then: {
+                #b1 : {
+                 height:{
+                    if: =view.width, more-than: 320, then:{
+                        if: {$count:[=articles.b1.images.phone]},
+                        more-than: 0,
+                        then: {$multiply: [=view.width, 1.135]},
+                        else: {$multiply: [=view.width, 0.6]}
+                        }, else: {
+                        if: {$count:[=articles.b1.images.phone]},
+                        more-than: 0,
+                        then: {$multiply: [=view.width, 1.32]},
+                        else: {$multiply: [=view.width, 0.6]}
+                    }
+                },
+                    padding: [{if: {$count:[=articles.b1.images.phone]}, more-than: 0, then: 0, else: 22}, 0, 0, 0],
+                    options: { show_body: true, medium_headline: true, module: url(TOP-IMAGE_module.xml) }
+                },
+				#b2:	{
+                    height: =size.continuation_height_large
+				},
+				#b3:	{
+                    height: =size.continuation_height_large
+				},
+				#b4:	{
+                    height: =size.continuation_height_large
+				},
+				#b5:	{
+                    height: =size.continuation_height_large
+				},
+				#b6:	{
+                    height: =size.continuation_height_large
+				}
+			}},
+			{if: =portrait, then: {
+				#b1:	{
+					top:0,
+					height:582,
+					options:{ large_headline:true, show_image:true}
+				},
+				#b2:	{
+					top:586,
+					height:219,
+					options:{ medium_headline:true, show_body:true, top_border:true, show_flashline:true}
+				},
+				#b3:	{
+					top:0,
+					height:188,
+					options:{ medium_headline:true, show_flashline:true}
+				},
+				#b4:	{
+					top:187,
+					height:196,
+					options:{ medium_headline:true, top_border:true, show_flashline:true}
+
+				},
+				#b5:	{
+					top:386,
+					height:196,
+					options:{ medium_headline:true, top_border:true, show_flashline:true}
+
+				},
+				#b6:	{
+					top:586,
+					height:219,
+					options:{ medium_headline:true, top_border:true, show_flashline:true}
+				},
+				#footer: {
+					top: 820,
+					height: 90,
+					text-align: center
+				}
+			}},
+			{if: =landscape, then: {
+				#b1:	{
+					top:0,
+					height:563,
+					options:{ large_headline:true, show_image:true}
+				},
+				#b2:	{
+					top:0,
+					height:185,
+					options:{ medium_headline:true, bottom_border:true, show_body:true, show_flashline:true}
+				},
+				#b3:	{
+					top:202,
+					height:175,
+					options:{ medium_headline:true, top_border:false, show_flashline:true}
+				},
+				#b4:	{
+					top:395,
+					height:165,
+					options:{ medium_headline:true, top_border:true, show_flashline:true}
+				},
+				#b5:	{
+					top:202,
+					height:175,
+					options:{ medium_headline:true, top_border:false, show_flashline:true}
+				},
+				#b6:	{
+					top:395,
+					height:165,
+					options:{ medium_headline:true, top_border:true, show_flashline:true}
+				},
+				#footer: {
+					top: 570,
+					height: 90,
+					text-align: center,
+					options:{top_border: true}
+				}
+			}}
+		]
+	} </style>
+	<style>{
+		.smooth_only: {
+			display: {if: =smoothPagination, then: inherit, else: none}
+		},
+		.paged_only: {
+			display: {if: =pagedPagination, then: inherit, else: none}
+		},
+		#peek: {
+			top: {if: =portrait, then: 820, else: 570},
+			height: 90,
+			text-align: center,
+			display: { if-all: [
+				=pagedPagination,
+				{ if: =page.number, equals: $subtract:[=page.count, 1], then: false, else: true }
+			], then: inherit, else: none }
+		},
+		#section_peek: {
+			padding: [0],
+			top: 5,
+			left: {if: =portrait, then: 336, else: 460},
+			width: 25,
+			height: 25,
+			content: =page.number,
+			background-image: "url(Arrows-Down-icon@2x.png)",
+			background-position: aspect-fit
+		},
+		jpml: {
+			padding: {
+				if: =smoothPagination,
+				then:
+				[40, 0, -70, 0]
+			}
+		}
+	}</style>
+	<box id="page_details" class="tablet_only" embed="pagedescription" />
+
+	<box id="b1" embed="article" class="columns-8 xposition-1 maude unit_plain" module="TOP-IMAGE_module.xml" />
+	<box id="b2" embed="article" class="columns-8 landscape-xposition-9 portrait-xposition-1 maude unit_plain" module="RIGHT-IMAGE_module.xml" />
+
+	<box id="b3" embed="article" class="columns-4 xposition-9 maude unit_plain" module="TOP-IMAGE_module.xml" />
+	<box id="b4" embed="article" class="columns-4 xposition-9 maude unit_plain" module="TOP-IMAGE_module.xml" />
+	<box id="b5" embed="article" class="columns-4 landscape-xposition-13 portrait-xposition-9 maude unit_plain" module="TOP-IMAGE_module.xml" />
+	<box id="b6" embed="article" class="columns-4 landscape-xposition-13 portrait-xposition-9 maude unit_plain" module="TOP-IMAGE_module.xml" />
+
+	<box id="peek" class="tablet_only paged_only landscape-columns-16 portrait-columns-12 xposition-1" module="RAIL-footer_module.xml">
+		<box id="section_peek" embed="section-peek"></box>
+	</box>
+
+</jpml>

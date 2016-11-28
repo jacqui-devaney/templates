@@ -87,7 +87,7 @@
             },
 			.module_headline: {
 				color:{if: =article.read, then: color.articleReadColor},
-                padding: [-10, 19.5, 4, 19.5]
+                padding: [8, 19.5, 4, 19.5]
 			},
             p: {
 				padding: [0, 0, 0, 0]
@@ -96,7 +96,7 @@
 				padding: [4, 20, 0, 20]
 			},
 			#article_status: {
-				padding: [{if: =page.section, equals: "OPINION", then: 3.5, else: {if: =article.category, equals: "Opinion", then: 18.5, else: 3.5}}, 0, 0, 4],
+				padding: [12, 0, 0, 4],
 				left: 0,
 				width: 13,
 				height: 13,
@@ -147,12 +147,12 @@
 		<p class="subsection"><mark id="m_subsection"/></p>
 	</panel>
 	<panel id="content">
-		<panel id="vertical">
         <p class="opinion_flashline">OPINION</p>
         <p class="module_flashline"><mark class="flashline-mark" /></p>
-        <p id="headline" class="module_headline"><mark class="m_headline" /><mark class="key" /></p>
+		<panel id="vertical">
+			<p id="headline" class="module_headline"><mark class="m_headline" /><mark class="key" /></p>
+			<box id="article_status" embed="article-status"/>
 		</panel>
-		<box id="article_status" embed="article-status"></box>
 	 	<box id="image_container" embed="deco-image">
 			<image class="summary-image" />
 		</box>

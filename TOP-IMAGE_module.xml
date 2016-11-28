@@ -95,7 +95,7 @@
 				display: none
 			},
 			#article_status: {
-				padding: [{if: =page.section, equals: "OPINION", then: 3.5, else: {if: =article.category, equals: "Opinion", then: 18.5, else: 3.5}}, 0, 0, 4],
+				padding: [12, 0, 0, 4],
 				left: 0,
 				width: 13,
 				height: 13,
@@ -167,12 +167,12 @@
 	 </box>
 	 <panel id="vertical">
      <p class="opinion_flashline">OPINION</p>
+		 <p class="module_flashline"><mark class="flashline-mark" /></p>
 	 	 <panel id="headline">
-			 <p class="module_flashline"><mark class="flashline-mark" /></p>
-	 		 <p class="module_headline"><mark class="m_headline" /></p>
-	 		 <h2 class="opinion_dek"><mark class="subhed-mark" /></h2>
+			<p class="module_headline"><mark class="m_headline" /></p>
+			<h2 class="opinion_dek"><mark class="subhed-mark" /></h2>
+			<box id="article_status" embed="article-status"/>
 	 	 </panel>
-		<box id="article_status" embed="article-status"></box>
 	 	<panel id="body">
 	 		 <p class="byline"><mark class="byline-mark"/></p>
 	 		 <p id="summary" class="body"><mark class="body-first-p-mark" /><mark class="module_summary" /></p>

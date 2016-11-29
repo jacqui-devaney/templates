@@ -11,8 +11,11 @@
 		{#body_container : { padding: [0, 10, 0, 10]}},
 		{.article_body: {
 			line-height: {$multiply: [22, =view.zoomlevel]},
-			text-align: left,
-            hyphens: auto
+			text-align: justify,
+			hyphens: auto,
+			font-name: "WhitneySSm-Medium",
+			padding: [0],
+			flow: article_body
         }},
 		{#body_continuation: {
 			content: from-flow(article_body),

@@ -137,16 +137,13 @@
 		.paged_only: {
 			display: {if: =pagedPagination, then: inherit, else: none}
 		},
-		#peek: {
+		#next_page: {
 			top: {if: =portrait, then: 820, else: 570},
 			height: 90,
 			text-align: center,
-			display: { if-all: [
-				=pagedPagination,
-				{ if: =page.number, equals: $subtract:[=page.count, 1], then: false, else: true }
-			], then: inherit, else: none }
+			display: {if: =pagedPagination, then: {if: =page.number, less-than: {$subtract: [=page.count, 1]}, then: inherit, else: none }, else: none }
 		},
-		#section_peek: {
+		#next_page_button: {
 			padding: [0],
 			top: 5,
 			left: {if: =portrait, then: 336, else: 460},
@@ -155,13 +152,6 @@
 			content: =page.number,
 			background-image: "url(Arrows-Down-icon@2x.png)",
 			background-position: aspect-fit
-		},
-		jpml: {
-			padding: {
-				if: =smoothPagination,
-				then:
-				[40, 0, -70, 0]
-			}
 		}
 	}</style>
 	<box id="page_details" class="tablet_only" embed="pagedescription" />
@@ -174,8 +164,8 @@
 	<box id="b5" embed="article" class="columns-4 landscape-xposition-13 portrait-xposition-9 maude unit_plain" module="TOP-IMAGE_module.xml" />
 	<box id="b6" embed="article" class="columns-4 landscape-xposition-13 portrait-xposition-9 maude unit_plain" module="TOP-IMAGE_module.xml" />
 
-	<box id="peek" class="tablet_only paged_only landscape-columns-16 portrait-columns-12 xposition-1" module="RAIL-footer_module.xml">
-		<box id="section_peek" embed="section-peek"></box>
+	<box id="next_page" class="tablet_only paged_only landscape-columns-16 portrait-columns-12 xposition-1">
+		<box id="next_page_button" embed="next-page-arrow"></box>
 	</box>
 
 </jpml>

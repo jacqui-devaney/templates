@@ -1,0 +1,59 @@
+<jpml id="MEDIA-VIDEO-STANDARD_module">
+	<style src="GLOBAL-stylesheet2.ejs" />
+	<style src="GLOBAL_MODULES-stylesheet.ejs" />
+
+	<style>{
+		image:{
+			width:=view.width,
+			gravity:aspect-fill,
+			height: { $subtract: [=view.height, { $min:[{ $max:[{ $multiply: [=view.height , 0.4] }, 45] }, 120] }] }
+		},
+		#caption: {
+			padding: [10, 0, 10, 0],
+			width: =view.width,
+			<!-- fit at least #timestamp and single line of caption/headline, but dont go above 120px in order to avoid too much white spase -->
+			height: { $subtract: [{ $min:[{ $max:[{ $multiply: [=view.height , 0.4] }, 45] }, 120] }, 20] }
+		},
+		.align_bottom: {
+			bottom: 0
+		},
+		#headline: {
+			font-name: ChronicleDisp-Semibold,
+			color: #2B3333,
+			font-size: 14,
+			line-height: 20
+		},
+		#timestamp: {
+			font-name: WhitneySSm-Book,
+			color: #2FBFBF,
+			font-size: 13,
+			line-height: 20
+		},
+		.m_timestamp: {
+			content: =article.video_timestamp
+		},
+		jpml: {
+			background-color: =options.background_color,
+			border-color: #d8d8d8,
+			padding: { $switch: [
+				{if: =options.top_border, more-than:0, then: [5, 0, 0, 0], else: [0] },
+				{if: =options.bottom_border, more-than:0, then: [0, 0, 5, 0], else: [0] }
+			]},
+			border-width: { $switch: [
+				{ if: =options.top_border, then: [2, 0, 0, 0] },
+				{ if: =options.left_border, then: [0, 0, 0, 2] },
+				{ if: =options.right_border, then: [0, 2, 0, 0] },
+				{ if: =options.bottom_border, then: [0, 0, 2, 0] }
+			]}
+		}
+	}</style>
+
+	<box embed="deco-image">
+		<image class="summary-image"/>
+	</box>
+	<box id="caption" class="align_bottom">
+		<p id="timestamp"><mark class="m_timestamp" /></p>
+		<p id="headline"><mark class="m_headline" /></p>
+	</box>
+	
+</jpml>

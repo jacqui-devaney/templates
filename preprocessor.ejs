@@ -53,6 +53,9 @@
 
 			justify: "left",
 
+			firstPage: {if: =page.number, equals: 0, then: true, else: false },
+			lastPage: {if: =page.number, equals: {$subtract: [=page.count, 1]}, then: true, else: false },
+
 			media: {
 				if: =page.hasmedia,
 				then: {

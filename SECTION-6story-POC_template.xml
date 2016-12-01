@@ -1,14 +1,48 @@
 <jpml id="SECTION-6story-POC_template">
 	<style src="GLOBAL-stylesheet.ejs"/>
-    <style src="GRID-stylesheet.ejs"/>
+	<style src="GRID-stylesheet.ejs"/>
 	<style src="ADVERTISING-stylesheet.ejs"/>
-    <style src="PHONE-stylesheet.ejs"/>
+	<style src="PHONE-stylesheet.ejs"/>
 	<style src="RAIL-stylesheet.ejs" />
 	<style src="FRONT-stylesheet.ejs"/>
 	<style>{
 		#page_details: {
 			options: {
 				tintTitle: true
+			}
+		},
+		jpml: {
+			padding: {
+				if: =scale.phone,
+				else: {
+					if: =portrait,
+					then: [
+						{
+							if-any: [
+								=pagedPagination,
+								{ if-all: [=smoothPagination, =firstPage], then: true, else: false }
+							],
+							then: 104,
+							else: 10
+						},
+						0,
+						0,
+						0
+					],
+					else: [
+						{
+							if-any: [
+								=pagedPagination,
+								{ if-all: [=smoothPagination, =firstPage], then: true, else: false }
+							],
+							then: 108,
+							else: 10
+						},
+						0,
+						0,
+						0
+					]
+				}
 			}
 		}
 	}</style>
@@ -18,37 +52,37 @@
 
 			}},
 			{if: =scale.phone, then: {
-                #b1 : {
-                 height:{
-                    if: =view.width, more-than: 320, then:{
-                        if: {$count:[=articles.b1.images.phone]},
-                        more-than: 0,
-                        then: {$multiply: [=view.width, 1.135]},
-                        else: {$multiply: [=view.width, 0.6]}
-                        }, else: {
-                        if: {$count:[=articles.b1.images.phone]},
-                        more-than: 0,
-                        then: {$multiply: [=view.width, 1.32]},
-                        else: {$multiply: [=view.width, 0.6]}
-                    }
-                },
-                    padding: [{if: {$count:[=articles.b1.images.phone]}, more-than: 0, then: 0, else: 22}, 0, 0, 0],
-                    options: { show_body: true, medium_headline: true, module: url(TOP-IMAGE_module.xml) }
-                },
+								#b1 : {
+								 height:{
+										if: =view.width, more-than: 320, then:{
+												if: {$count:[=articles.b1.images.phone]},
+												more-than: 0,
+												then: {$multiply: [=view.width, 1.135]},
+												else: {$multiply: [=view.width, 0.6]}
+												}, else: {
+												if: {$count:[=articles.b1.images.phone]},
+												more-than: 0,
+												then: {$multiply: [=view.width, 1.32]},
+												else: {$multiply: [=view.width, 0.6]}
+										}
+								},
+										padding: [{if: {$count:[=articles.b1.images.phone]}, more-than: 0, then: 0, else: 22}, 0, 0, 0],
+										options: { show_body: true, medium_headline: true, module: url(TOP-IMAGE_module.xml) }
+								},
 				#b2:	{
-                    height: =size.continuation_height_large
+										height: =size.continuation_height_large
 				},
 				#b3:	{
-                    height: =size.continuation_height_large
+										height: =size.continuation_height_large
 				},
 				#b4:	{
-                    height: =size.continuation_height_large
+										height: =size.continuation_height_large
 				},
 				#b5:	{
-                    height: =size.continuation_height_large
+										height: =size.continuation_height_large
 				},
 				#b6:	{
-                    height: =size.continuation_height_large
+										height: =size.continuation_height_large
 				}
 			}},
 			{if: =portrait, then: {
@@ -130,30 +164,7 @@
 			}}
 		]
 	} </style>
-	<style>{
-		.smooth_only: {
-			display: {if: =smoothPagination, then: inherit, else: none}
-		},
-		.paged_only: {
-			display: {if: =pagedPagination, then: inherit, else: none}
-		},
-		#next_page: {
-			top: {if: =portrait, then: 820, else: 570},
-			height: 90,
-			text-align: center,
-			display: {if: =pagedPagination, then: {if: =page.number, less-than: {$subtract: [=page.count, 1]}, then: inherit, else: none }, else: none }
-		},
-		#next_page_button: {
-			padding: [0],
-			top: 5,
-			left: {if: =portrait, then: 336, else: 460},
-			width: 25,
-			height: 25,
-			content: =page.number,
-			background-image: "url(Arrows-Down-icon@2x.png)",
-			background-position: aspect-fit
-		}
-	}</style>
+
 	<box id="page_details" class="tablet_only" embed="pagedescription" />
 
 	<box id="b1" embed="article" class="columns-8 xposition-1 maude unit_plain" module="TOP-IMAGE_module.xml" />

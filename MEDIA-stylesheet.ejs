@@ -58,8 +58,15 @@
                 content: =media.credit
             },
 			#media_caption: {
-				layout-grid-line: 0,
-				layout-grid-line-offset: 0,
+                layout-grid-line: {$multiply: [20, =view.zoomlevel]},
+                layout-grid-line-offset: {
+                    if: =app.version,
+                    at-least: "7.7",
+                    then: 1,
+                    else: {
+                        $subtract: [ {$multiply: [20, =view.zoomlevel]}, 1 ]
+                    }
+                },
 		        color: #878f8f,
 		        font-size: { if: =scale.phone, then: 12, else: 13 },
 		        line-height: { if: =scale.phone, then: 18, else: 20 },

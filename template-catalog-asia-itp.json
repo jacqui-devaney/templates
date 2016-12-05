@@ -951,6 +951,47 @@
         ]
       },
       {
+        "section": "FRONT_SECTION",
+        "filename": "PEARLHARBOR_template.xml",
+        "title": "Special Pearl Harbor Template",
+        "usage": "front",
+        "boxes": [
+          {
+            "id": "b1",
+            "images": {}
+          },
+          {
+            "id": "deco",
+            "images": {
+              "tablet": {
+                "width": 546,
+                "height": 356
+              }
+            }
+          },
+          {
+            "id": "b2",
+            "images": {}
+          },
+          {
+            "id": "b3",
+            "images": {}
+          },
+          {
+            "id": "b4",
+            "images": {}
+          },
+          {
+            "id": "b5",
+            "images": {}
+          },
+          {
+            "id": "b6",
+            "images": {}
+          }
+        ]
+      },
+      {
         "section": "OPINION",
         "filename": "OPINION-7story-deco_template.xml",
         "title": "Default: 7 story plus deco (3RandO-4CMTY)",
@@ -2033,6 +2074,46 @@
           },
           {
             "id": "b3",
+            "images": {}
+          }
+        ]
+      },
+      {
+        "filename": "PEARLHARBOR_template.xml",
+        "title": "Special Pearl Harbor Template",
+        "usage": "front",
+        "boxes": [
+          {
+            "id": "b1",
+            "images": {}
+          },
+          {
+            "id": "deco",
+            "images": {
+              "tablet": {
+                "width": 546,
+                "height": 356
+              }
+            }
+          },
+          {
+            "id": "b2",
+            "images": {}
+          },
+          {
+            "id": "b3",
+            "images": {}
+          },
+          {
+            "id": "b4",
+            "images": {}
+          },
+          {
+            "id": "b5",
+            "images": {}
+          },
+          {
+            "id": "b6",
             "images": {}
           }
         ]

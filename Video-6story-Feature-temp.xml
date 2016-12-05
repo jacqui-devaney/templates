@@ -1,0 +1,96 @@
+<jpml id="Video-6story-Feature-temp">
+    <style src="GLOBAL-stylesheet2.ejs"/>
+    <style src="ADVERTISING-stylesheet.ejs"/>
+    <style src="ADVERTISING-stylesheet-gridoverride.ejs"/>
+
+    <style>
+        { $switch: [
+            { if: =scale.phone,
+                then: {
+                    #b1:	{
+                        top:0,
+                        left: 0,
+                        width: =view.width,
+                        height:292,
+                        options:{ top_border: true }
+                    },
+                    #b2:	{
+                        top:292,
+                        left: 0,
+                        width: =view.width,
+                        height:292,
+                        options:{ top_border: true }
+                    },
+                    #b3:	{
+                        top:584,
+                        left: 0,
+                        width: =view.width,
+                        height:292,
+                        options:{ top_border: true }
+                    },
+                    #small_ad_container: {
+                        padding: { if: =intent.article, then: [0], else: [0.5, 0, 0] },
+                        border-width: { if: =intent.article, then: [0], else: [0.5, 0, 0] },
+                        border-color: #d8d8d8,
+                        top: 876,
+                        left: 0,
+                        width: =view.width,
+                        height: 342,
+                        background-color: #906090,
+                        display: inherit
+                    },
+                    #b4:	{
+                        top:1218,
+                        left: 0,
+                        width: =view.width,
+                        height:292,
+                        options:{ top_border: true }
+                    },
+                    #b5:	{
+                        top:1510,
+                        left: 0,
+                        width: =view.width,
+                        height:292,
+                        options:{ top_border: true }
+                    },
+                    #b6:	{
+                        top:1802,
+                        left: 0,
+                        width: =view.width,
+                        height:292,
+                        options:{ top_border: true }
+                    },
+                    #b7:	{
+                        top:2094,
+                        left: 0,
+                        width: =view.width,
+                        height:292,
+                        options:{ top_border: true }
+                    }
+                },
+                else: {}
+            },
+            { if: =scale.tablet,
+                then: {},
+                else: {}
+            }
+        ]}
+    </style>
+
+    <box id="b1" embed="article" module="MEDIA-VIDEO-STANDARD_module.xml" />
+    <box id="b2" embed="article" module="MEDIA-VIDEO-STANDARD_module.xml" />
+    <box id="b3" embed="article" module="MEDIA-VIDEO-STANDARD_module.xml" />
+    <box id="small_ad_container" class="phone_only maude unit_ad">
+        <box id="cube_ad" embed="fullpagead">
+            <p id="ad_headline">ADVERTISEMENT</p>
+        </box>
+        <box id="halfscreen_ad" embed="fullpagead">
+            <p id="ad_headline">ADVERTISEMENT</p>
+        </box>
+    </box>
+    <box id="b4" embed="article" module="MEDIA-VIDEO-STANDARD_module.xml" />
+    <box id="b5" embed="article" module="MEDIA-VIDEO-STANDARD_module.xml" />
+    <box id="b6" embed="article" module="MEDIA-VIDEO-STANDARD_module.xml" />
+    <box id="b7" embed="article" module="MEDIA-VIDEO-STANDARD_module.xml" />
+
+</jpml>

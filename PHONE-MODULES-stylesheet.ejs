@@ -22,7 +22,7 @@
 		color:{if: =intent.article, then:{if: =page.tint, equals: "rgba(0.000000, 0.000000, 0.000000, 1.000000)", then: #004990, else: =page.tint}}
 	},
 	.key: {
-		font-name: "ChronicleSSmBook-Regular",
+		font-name: "DJ5Utility-Regular",
 		font-size: 16,
 		content: "\u00a0K",
 		display: { if-all: [=issue.locked, =article.paid], then: default, else: none },
@@ -303,9 +303,6 @@
 	.body-panel: {
 		page-break-after: always
 	},
-    .body-last-p-mark:{
-        display: none
-    },
     #body-last-p:{
         padding: [0, 0, 56, 0],
         hyphens: none

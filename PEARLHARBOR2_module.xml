@@ -69,7 +69,11 @@
 					display: {if: =options.show_flashline, then:inherit, else:none}
 				},
 				.module_headline: { 
-					font-name: {if: =options.italics, then: ChronicleDisplay-SemiItalic, else: ChronicleDisplay-Semi}
+					font-name: {if: =options.italics, then: ChronicleDisplay-SemiItalic, else: ChronicleDisplay-Semi},
+					padding: [0, 0, 0, 0]
+				},
+				.body: {
+					padding: [0, 0, 0, 0]
 				}
 			}
 		]
@@ -91,7 +95,8 @@
 				display: inherit
 			},
 			.body: {
-				display: none
+				display: none,
+				padding: [10, 0, 0, 0]
 			},
 			#summary: {
 				display: inherit,
@@ -177,7 +182,6 @@
 		 <image class="summary-image"/>
 	</box>
 	<panel id="vertical" >
-		<p class="opinion_flashline">OPINION</p>
 		<panel id="headline">
 			 <p class="module_flashline small-vertical-grid-module"><mark class="flashline-mark" /></p>
 			 <p class="module_headline"><mark class="m_headline" /></p>

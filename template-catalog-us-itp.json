@@ -950,12 +950,25 @@
           }
         ]
       },
-      {
-        "section": "FRONT_SECTION",
+       {
+        "section": "FRONT_SECTION_ITP",
         "filename": "PEARLHARBOR_template.xml",
-        "title": "Special Pearl Harbor Template",
+        "title": "6 story plus deco",
         "usage": "front",
         "boxes": [
+          {
+            "id": "bg", 
+            "images": {
+              "portrait": {
+                "width": 768,
+                "height": 1024
+              },
+              "landscape": {
+                "width": 1024,
+                "height": 768
+              }
+            }
+          },
           {
             "id": "b1",
             "images": {}
@@ -964,14 +977,19 @@
             "id": "deco",
             "images": {
               "tablet": {
-                "width": 546,
-                "height": 356
+                "width": 567,
+                "height": 379
               }
             }
           },
           {
             "id": "b2",
-            "images": {}
+            "images": {
+              "tablet": {
+                "width": 292,
+                "height": 195
+              }
+            }
           },
           {
             "id": "b3",
@@ -1736,6 +1754,51 @@
         ]
       },
       {
+        "filename": "PEARLHARBOR_template.xml",
+        "title": "6 story plus deco",
+        "usage": "front",
+        "boxes": [
+          {
+            "id": "b1",
+            "images": {}
+          },
+          {
+            "id": "deco",
+            "images": {
+              "tablet": {
+                "width": 567,
+                "height": 379
+              }
+            }
+          },
+          {
+            "id": "b2",
+            "images": {
+              "tablet": {
+                "width": 292,
+                "height": 195
+              }
+            }
+          },
+          {
+            "id": "b3",
+            "images": {}
+          },
+          {
+            "id": "b4",
+            "images": {}
+          },
+          {
+            "id": "b5",
+            "images": {}
+          },
+          {
+            "id": "b6",
+            "images": {}
+          }
+        ]
+      },
+      {
         "filename": "SECTION-FullCoverPlusThree_NORAIL_white_template.xml",
         "title": "Full Cover Template with 3 Tap Areas - NO RAIL",
         "usage": "front",
@@ -2074,46 +2137,6 @@
           },
           {
             "id": "b3",
-            "images": {}
-          }
-        ]
-      },
-      {
-        "filename": "PEARLHARBOR_template.xml",
-        "title": "Special Pearl Harbor Template",
-        "usage": "front",
-        "boxes": [
-          {
-            "id": "b1",
-            "images": {}
-          },
-          {
-            "id": "deco",
-            "images": {
-              "tablet": {
-                "width": 546,
-                "height": 356
-              }
-            }
-          },
-          {
-            "id": "b2",
-            "images": {}
-          },
-          {
-            "id": "b3",
-            "images": {}
-          },
-          {
-            "id": "b4",
-            "images": {}
-          },
-          {
-            "id": "b5",
-            "images": {}
-          },
-          {
-            "id": "b6",
             "images": {}
           }
         ]

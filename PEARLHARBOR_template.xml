@@ -22,12 +22,19 @@
 			}
 		}
 	}</style>
+	<style>{
+		#whats_news_background: {
+			background-color: #F7F3DE
+		}
+
+	}</style>
 	<style> {
 		$switch: [
 			{if: =portrait, then: {
 				jpml: {padding:[0]},
 				#b1: {
 					options:{ large_headline:true, big_headline:true}
+
 				},
 				#deco: {
 					options:{ medium_headline:true}
@@ -78,18 +85,21 @@
 
 	<box id="page_details" class="tablet_only" embed="pagedescription" />
 	<box id="bg" />
-	<box class="tablet_only columns-3 xposition-1 portrait-yposition-14 landscape-yposition-6">
-		<box class="columns-3">
-			<box id="whatsnewsheader">
-				<p>
-					<mark id="whatsnewsheadertext"/>
-				</p>
+	<!-- Adding this box, because what's news  -->
+	<box id="whats_news_background" class="columns-3 xposition-1 portrait-yposition-14 landscape-yposition-5 landscape-lines-29 portrait-lines-33">
+		<box class="tablet_only">
+			<box class="columns-3">
+				<box id="whatsnewsheader" class="visual-content-top test2">
+					<p>
+						<mark id="whatsnewsheadertext"/>
+					</p>
+				</box>
+				<box id="whatsnews" embed="list" class="landscape-lines-29 portrait-lines-33" />
 			</box>
-			<box id="whatsnews" embed="list" class="landscape-lines-29 portrait-lines-33" />
 		</box>
-	</box>
+	</box>	
 	<box id="deco" embed="article" class="lines-17 portrait-yposition-14 landscape-yposition-5 portrait-columns-9 landscape-columns-8 portrait-xposition-4 landscape-xposition-4 maude unit_deco" module="PEARLHARBORDECO_module.xml"/>
-	<box id="b1" embed="article" class="portrait-yposition-4 portrait-lines-9 landscape-yposition-5 landscape-lines-17 landscape-columns-5 portrait-columns-12 landscape-xposition-12 portrait-xposition-1 maude unit_plain" module="PEARLHARBOR2_module.xml" />
+	<box id="b1" embed="article" class="portrait-yposition-4 portrait-lines-9 landscape-yposition-5 landscape-lines-17 landscape-columns-5 portrait-columns-12 landscape-xposition-12 portrait-xposition-1 maude unit_plain " module="PEARLHARBOR2_module.xml" />
 	<box id="b2" embed="article" class="portrait-yposition-32 portrait-lines-8 landscape-yposition-23 landscape-lines-11 portrait-columns-3 landscape-columns-5 portrait-xposition-4 landscape-xposition-4  maude unit_plain" module="PEARLHARBOR_module.xml" />
 	<box id="b3" embed="article" class="portrait-yposition-32 portrait-lines-8 landscape-yposition-23 landscape-lines-8 portrait-columns-3 landscape-columns-4 portrait-xposition-7 landscape-xposition-9 maude unit_plain" module="PEARLHARBOR_module.xml" />
 	<box id="b4" embed="article" class="portrait-yposition-32 portrait-lines-13 landscape-yposition-23 landscape-lines-8 portrait-columns-3 landscape-columns-4 portrait-xposition-10 landscape-xposition-13 maude unit_plain" module="PEARLHARBOR_module.xml" />

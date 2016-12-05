@@ -2,35 +2,74 @@
 	<style src="GLOBAL-stylesheet2.ejs" />
 	<style src="GLOBAL_MODULES-stylesheet.ejs" />
 
-	<style>{
-		image:{
-			width:=view.width,
-			gravity:aspect-fill,
-			height: { $subtract: [=view.height, { $min:[{ $max:[{ $multiply: [=view.height , 0.4] }, 45] }, 120] }] }
+	<style>
+	{ $switch: [
+		{ if: =scale.phone,
+			then: {
+				image:{
+					width: { $subtract: [=view.width, 10] },
+					gravity:aspect-fill,
+					height: { $subtract: [=view.height, { $min:[{ $max:[{ $multiply: [=view.height , 0.4] }, 45] }, 120] }] }
+				},
+				#caption: {
+					padding: [18, 10, 18, 10],
+					width: =view.width,
+					<!-- fit at least #timestamp and single line of caption/headline, but dont go above 120px in order to avoid too much white spase -->
+					height: { $subtract: [{ $min:[{ $max:[{ $multiply: [=view.height , 0.4] }, 45] }, 120] }, 36] }
+				},
+				#headline: {
+					font-name: ChronicleDisp-Semibold,
+					color: #2B3333,
+					font-size: 22,
+					line-height: 26
+				},
+				#timestamp: {
+					font-name: WhitneySSm-Book,
+					color: #2FBFBF,
+					font-size: 16,
+					line-height: 22
+				},
+				#pad: {
+					padding: [0, 5, 0, 5]
+				}
+			}
 		},
-		#caption: {
-			padding: [10, 0, 10, 0],
-			width: =view.width,
-			<!-- fit at least #timestamp and single line of caption/headline, but dont go above 120px in order to avoid too much white spase -->
-			height: { $subtract: [{ $min:[{ $max:[{ $multiply: [=view.height , 0.4] }, 45] }, 120] }, 20] }
+		{ if: =scale.tablet,
+			then: {
+				image:{
+					width:=view.width,
+					gravity:aspect-fill,
+					height: { $subtract: [=view.height, { $min:[{ $max:[{ $multiply: [=view.height , 0.4] }, 45] }, 120] }] }
+				},
+				#caption: {
+					padding: [10, 0, 10, 0],
+					width: =view.width,
+					<!-- fit at least #timestamp and single line of caption/headline, but dont go above 120px in order to avoid too much white spase -->
+					height: { $subtract: [{ $min:[{ $max:[{ $multiply: [=view.height , 0.4] }, 45] }, 120] }, 20] }
+				},
+				#headline: {
+					font-name: ChronicleDisp-Semibold,
+					color: #2B3333,
+					font-size: 14,
+					line-height: 20
+				},
+				#timestamp: {
+					font-name: WhitneySSm-Book,
+					color: #2FBFBF,
+					font-size: 13,
+					line-height: 20
+				}
+			}
+		}
+	] }
+	</style>
+
+	<style>{
+		.m_timestamp: {
+			content: =article.video_timestamp
 		},
 		.align_bottom: {
 			bottom: 0
-		},
-		#headline: {
-			font-name: ChronicleDisp-Semibold,
-			color: #2B3333,
-			font-size: 14,
-			line-height: 20
-		},
-		#timestamp: {
-			font-name: WhitneySSm-Book,
-			color: #2FBFBF,
-			font-size: 13,
-			line-height: 20
-		},
-		.m_timestamp: {
-			content: =article.video_timestamp
 		},
 		jpml: {
 			background-color: =options.background_color,
@@ -48,7 +87,7 @@
 		}
 	}</style>
 
-	<box embed="deco-image">
+	<box id="pad" embed="deco-image">
 		<image class="summary-image"/>
 	</box>
 	<box id="caption" class="align_bottom">

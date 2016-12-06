@@ -950,12 +950,25 @@
           }
         ]
       },
-      {
+       {
         "section": "FRONT_SECTION_ITP",
         "filename": "PEARLHARBOR_template.xml",
-        "title": "Pearl Harbor Special Template",
+        "title": "6 story plus deco",
         "usage": "front",
         "boxes": [
+          {
+            "id": "bg", 
+            "images": {
+              "portrait": {
+                "width": 768,
+                "height": 1024
+              },
+              "landscape": {
+                "width": 1024,
+                "height": 768
+              }
+            }
+          },
           {
             "id": "b1",
             "images": {}
@@ -971,7 +984,12 @@
           },
           {
             "id": "b2",
-            "images": {}
+            "images": {
+              "tablet": {
+                "width": 292,
+                "height": 195
+              }
+            }
           },
           {
             "id": "b3",
@@ -1737,7 +1755,7 @@
       },
       {
         "filename": "PEARLHARBOR_template.xml",
-        "title": "Pearl Harbor Special Template",
+        "title": "6 story plus deco",
         "usage": "front",
         "boxes": [
           {
@@ -1755,7 +1773,12 @@
           },
           {
             "id": "b2",
-            "images": {}
+            "images": {
+              "tablet": {
+                "width": 292,
+                "height": 195
+              }
+            }
           },
           {
             "id": "b3",
@@ -2179,7 +2202,11 @@
       {
         "filename": "ARTICLE-h-slideshow_template.xml",
         "title": "Slideshow Article Template"
-      }
+      },
+      {
+        "filename": "ARTICLE-pearlharbor_template.xml",
+        "title": "Pearl Harbor Special Article Template"
+      },
     ]
   }
 }

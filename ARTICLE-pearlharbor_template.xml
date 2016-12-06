@@ -5,7 +5,7 @@
   <style src="ADVERTISING-stylesheet.ejs" />
   <style>{
      #bg: {
-            background-image: "url(bg-template.png)",
+            background-image: "url(pearlharbor-bg-template.png)",
             frame: [0, 0, =view.width, {$subtract: [=view.height, 1]} ],
             padding: [0]
         }

@@ -169,7 +169,13 @@
 		}
 	}
 	</style>
-	<box id="deco_container" embed="deco-image">
+	<style>
+        {
+            #deco_icon: { frame: [-10000, 0, 1, 1] }
+        }
+    </style>
+    <box id="deco_icon" embed="deco-image"/>
+	<box id="deco_container">
 		 <image class="summary-image"/>
 	</box>
 	<panel id="vertical" >

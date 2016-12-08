@@ -3,68 +3,37 @@
     <style src="GRID-stylesheet2.ejs"/>
     <style src="ADVERTISING-stylesheet.ejs"/>
     <style src="ADVERTISING-stylesheet-gridoverride.ejs"/>
+    <style src="PHONE-stylesheet.ejs"/>
 
     <style>
         { $switch: [
             { if: =scale.phone,
                 then: {
                     #b1:	{
-                        top:0,
-                        left: 0,
-                        width: =view.width,
                         height:292,
                         options:{ top_border: true }
                     },
                     #b2:	{
-                        top:292,
-                        left: 0,
-                        width: =view.width,
                         height:292,
                         options:{ top_border: true }
                     },
                     #b3:	{
-                        top:584,
-                        left: 0,
-                        width: =view.width,
                         height:292,
                         options:{ top_border: true }
                     },
-                    #small_ad_container: {
-                        padding: { if: =intent.article, then: [0], else: [0.5, 0, 0] },
-                        border-width: [2, 0, 0, 0],
-                        border-color: #d8d8d8,
-                        top: 876,
-                        left: 0,
-                        width: =view.width,
-                        height: 342,
-                        background-color: #FFFFFF,
-                        display: inherit
-                    },
                     #b4:	{
-                        top:1218,
-                        left: 0,
-                        width: =view.width,
                         height:292,
                         options:{ top_border: true }
                     },
                     #b5:	{
-                        top:1510,
-                        left: 0,
-                        width: =view.width,
                         height:292,
                         options:{ top_border: true }
                     },
                     #b6:	{
-                        top:1802,
-                        left: 0,
-                        width: =view.width,
                         height:292,
                         options:{ top_border: true }
                     },
                     #b7:	{
-                        top:2094,
-                        left: 0,
-                        width: =view.width,
                         height:292,
                         options:{ top_border: true }
                     }
@@ -104,19 +73,11 @@
         ]}
     </style>
 
-    <box id="b1" embed="article" class="portrait-xposition-1 portrait-yposition-5 portrait-columns-12 portrait-lines-21 landscape-xposition-1 landscape-yposition-5 landscape-columns-12 landscape-lines-21" module="MEDIA-VIDEO-STANDARD_module.xml" />
+    <box id="b1" embed="article" class="portrait-xposition-1 portrait-yposition-5 portrait-columns-12 portrait-lines-21 landscape-xposition-1 landscape-yposition-5 landscape-columns-12 landscape-lines-21 maude" module="MEDIA-VIDEO-STANDARD_module.xml" />
 
-    <box id="b2" embed="article" class="portrait-xposition-1 portrait-yposition-28 portrait-columns-4 portrait-lines-10 landscape-xposition-1 landscape-yposition-27 landscape-columns-4 landscape-lines-10" module="MEDIA-VIDEO-STANDARD_module.xml" />
+    <box id="b2" embed="article" class="portrait-xposition-1 portrait-yposition-28 portrait-columns-4 portrait-lines-10 landscape-xposition-1 landscape-yposition-27 landscape-columns-4 landscape-lines-10 maude" module="MEDIA-VIDEO-STANDARD_module.xml" />
 
-    <box id="b3" embed="article" class="portrait-xposition-5 portrait-yposition-28 portrait-columns-4 portrait-lines-10 landscape-xposition-5 landscape-yposition-27 landscape-columns-4 landscape-lines-10" module="MEDIA-VIDEO-STANDARD_module.xml" />
-
-    <box id="b4" embed="article" class="portrait-xposition-9 portrait-yposition-28 portrait-columns-4 portrait-lines-10 landscape-xposition-9 landscape-yposition-27 landscape-columns-4 landscape-lines-10" module="MEDIA-VIDEO-STANDARD_module.xml" />
-
-    <box id="b5" embed="article" class="portrait-xposition-1 portrait-yposition-40 portrait-columns-4 portrait-lines-10 landscape-xposition-13 landscape-yposition-5 landscape-columns-4 landscape-lines-10" module="MEDIA-VIDEO-STANDARD_module.xml" />
-
-    <box id="b6" embed="article" class="portrait-xposition-5 portrait-yposition-40 portrait-columns-4 portrait-lines-10 landscape-xposition-13 landscape-yposition-16 landscape-columns-4 landscape-lines-10" module="MEDIA-VIDEO-STANDARD_module.xml" />
-
-    <box id="b7" embed="article" class="portrait-xposition-9 portrait-yposition-40 portrait-columns-4 portrait-lines-10 landscape-xposition-13 landscape-yposition-27 landscape-columns-4 landscape-lines-10" module="MEDIA-VIDEO-STANDARD_module.xml" />
+    <box id="b3" embed="article" class="portrait-xposition-5 portrait-yposition-28 portrait-columns-4 portrait-lines-10 landscape-xposition-5 landscape-yposition-27 landscape-columns-4 landscape-lines-10 maude" module="MEDIA-VIDEO-STANDARD_module.xml" />
 
     <box id="small_ad_container" class="phone_only maude unit_ad">
         <box id="cube_ad" embed="fullpagead">
@@ -126,5 +87,13 @@
             <p id="ad_headline">ADVERTISEMENT</p>
         </box>
     </box>
+
+    <box id="b4" embed="article" class="portrait-xposition-9 portrait-yposition-28 portrait-columns-4 portrait-lines-10 landscape-xposition-9 landscape-yposition-27 landscape-columns-4 landscape-lines-10 maude" module="MEDIA-VIDEO-STANDARD_module.xml" />
+
+    <box id="b5" embed="article" class="portrait-xposition-1 portrait-yposition-40 portrait-columns-4 portrait-lines-10 landscape-xposition-13 landscape-yposition-5 landscape-columns-4 landscape-lines-10 maude" module="MEDIA-VIDEO-STANDARD_module.xml" />
+
+    <box id="b6" embed="article" class="portrait-xposition-5 portrait-yposition-40 portrait-columns-4 portrait-lines-10 landscape-xposition-13 landscape-yposition-16 landscape-columns-4 landscape-lines-10 maude" module="MEDIA-VIDEO-STANDARD_module.xml" />
+
+    <box id="b7" embed="article" class="portrait-xposition-9 portrait-yposition-40 portrait-columns-4 portrait-lines-10 landscape-xposition-13 landscape-yposition-27 landscape-columns-4 landscape-lines-10 maude" module="MEDIA-VIDEO-STANDARD_module.xml" />
 
 </jpml>

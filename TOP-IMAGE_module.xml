@@ -70,7 +70,7 @@
 	<style>{
 		if: =scale.phone, then: {
 			.module_headline: {
-				padding: [8, 19.5, 4, 19.5]
+		padding: [4, 19.5, 4, 19.5]
 			},
 			image: {
 				height: {$multiply: [=view.width, .665 ]},
@@ -95,7 +95,7 @@
 				display: none
 			},
 			#article_status: {
-				padding: [12, 0, 0, 4],
+				padding: [{if: =page.section, equals: "OPINION", then: 8, else: {if: =article.category, equals: "Opinion", then: 29, else: 8}}, 0, 0, 4],
 				left: 0,
 				width: 13,
 				height: 13,
@@ -117,7 +117,7 @@
 				line-height: 18,
 				text-transform:uppercase,
 				color: #878f8f,
-				padding: [0, 0, 0, 20],
+				padding: [4, 0, 0, 19.5],
                 display: {if: =page.section, equals: "OPINION", then: none, else: {if: =article.category, equals: "Opinion", then: inherit, else: none}}
 			}
 		}, else: {
@@ -167,12 +167,12 @@
 	 </box>
 	 <panel id="vertical">
      <p class="opinion_flashline">OPINION</p>
-		 <p class="module_flashline"><mark class="flashline-mark" /></p>
 	 	 <panel id="headline">
-			<p class="module_headline"><mark class="m_headline" /></p>
-			<h2 class="opinion_dek"><mark class="subhed-mark" /></h2>
-			<box id="article_status" embed="article-status"/>
+			 <p class="module_flashline"><mark class="flashline-mark" /></p>
+	 		 <p class="module_headline"><mark class="m_headline" /></p>
+	 		 <h2 class="opinion_dek"><mark class="subhed-mark" /></h2>
 	 	 </panel>
+		<box id="article_status" embed="article-status"/>
 	 	<panel id="body">
 	 		 <p class="byline"><mark class="byline-mark"/></p>
 	 		 <p id="summary" class="body"><mark class="body-first-p-mark" /><mark class="module_summary" /></p>

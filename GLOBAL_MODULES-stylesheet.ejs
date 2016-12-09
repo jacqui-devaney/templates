@@ -146,6 +146,7 @@
 	.m_headline: { content: =article.headline},
 	.body-mark: { content: { $switch: [=article.body_extract, =article.summary] } },
 	.byline-mark: {	content: =article.byline },
+	.summary-mark: { content: =article.summary },
 	.flashline-mark: { content: =article.flashline },
 	.subhed-mark: {
 		content: =article.deckline

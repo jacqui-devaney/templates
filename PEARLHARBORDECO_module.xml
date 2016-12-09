@@ -3,6 +3,12 @@
 	<style src="GLOBAL_MODULES-stylesheet.ejs" />
 	<style src="GRID-extras2.ejs" />
 	<style>{
+		jpml: {
+			padding: { if: =options.show_image, then: [0, 0, 0, 0], else:none },
+			background-color: transparent
+			}
+	}</style>
+	<style>{
 		image:{
 			width:=view.width,
 			height: {$subtract:[=view.height, 21]}

@@ -10,41 +10,7 @@
 			options: {
 				tintTitle: true
 			}
-		},
-		jpml: {
-			padding: {
-				if: =scale.phone,
-				else: {
-					if: =portrait,
-					then: [
-						{
-							if-any: [
-								=pagedPagination,
-								{ if-all: [=smoothPagination, =firstPage], then: true, else: false }
-							],
-							then: 104,
-							else: 10
-						},
-						0,
-						0,
-						0
-					],
-					else: [
-						{
-							if-any: [
-								=pagedPagination,
-								{ if-all: [=smoothPagination, =firstPage], then: true, else: false }
-							],
-							then: 108,
-							else: 10
-						},
-						0,
-						0,
-						0
-					]
-				}
-			}
-		}
+		} 
 	}</style>
 	<style> {
 		$switch: [

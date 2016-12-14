@@ -1,8 +1,8 @@
 {
   "influence": [
   {
-      "key": "caption",
-      "title": "Move Caption for Icon",
+      "key": "move_summary",
+      "title": "Move Summary for Icon",
       "type": "toggle",
       "options": [{
         "label": "Show",
@@ -11,11 +11,10 @@
         "label": "Hide",
         "values": { "pad_caption_for_icon": true }
       }]
-    },
-    
+    },    
     {
       "key": "caption",
-      "title": "Hide/Show Caption",
+      "title": "Hide/Show Caption Box",
       "type": "toggle",
       "options": [{
         "label": "Show",
@@ -28,7 +27,7 @@
 
     {
       "key": "caption_position",
-      "title": "Caption Position",
+      "title": "Caption Box Position",
       "type": "toggle",
       "disabled": ["no_caption"],
       "options": [{

@@ -950,65 +950,6 @@
           }
         ]
       },
-       {
-        "section": "FRONT_SECTION_ITP",
-        "filename": "PEARLHARBOR_template.xml",
-        "title": "6 story plus deco",
-        "usage": "front",
-        "boxes": [
-          {
-            "id": "bg", 
-            "images": {
-              "portrait": {
-                "width": 768,
-                "height": 1024
-              },
-              "landscape": {
-                "width": 1024,
-                "height": 768
-              }
-            }
-          },
-          {
-            "id": "b1",
-            "images": {}
-          },
-          {
-            "id": "deco",
-            "images": {
-              "tablet": {
-                "width": 567,
-                "height": 379
-              }
-            }
-          },
-          {
-            "id": "b2",
-            "images": {
-              "tablet": {
-                "width": 292,
-                "height": 195
-              }
-            }
-          },
-          {
-            "id": "b3",
-            "images": {}
-          },
-          {
-            "id": "b4",
-            "images": {}
-          },
-          {
-            "id": "b5",
-            "images": {}
-          },
-          {
-            "id": "b6",
-            "images": {}
-          }
-        ]
-      },
       {
         "section": "OPINION",
         "filename": "OPINION-7story-deco_template.xml",
@@ -1904,7 +1845,7 @@
         ]
       },
       {
-        "filename": "SECTION-6-election-story_template.xml",
+        "filename": "SECTION-6story_template.xml",
         "title": "6 story - G photo",
         "usage": "continuation",
         "boxes": [

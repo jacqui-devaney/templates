@@ -1,7 +1,7 @@
 <jpml id="SECTION-6story_template">
 	<style src="GLOBAL-stylesheet.ejs"/>
     <style src="GRID-stylesheet.ejs"/>
-	<style src="ADVERTISING-stylesheet.ejs"/>	
+	<style src="ADVERTISING-stylesheet.ejs"/>
     <style src="PHONE-stylesheet.ejs"/>
 	<style src="RAIL-stylesheet.ejs" />
 	<style src="FRONT-stylesheet.ejs"/>
@@ -187,6 +187,17 @@
 	}}
 	]
 	}</style>
+	<style>
+	{
+		#sleepy_election_link_old: {
+			display: {if: =app.version, more-than: 8.3, then: none, else: inherit}
+		},
+		#sleepy_election_link_new: {
+			display: {if: =app.version, more-than: 8.3, then: inherit, else: none}
+		}
+	}
+	</style>
+
 	<box id="page_details" class="tablet_only" embed="pagedescription" />
 
     <box id="election">
@@ -195,7 +206,10 @@
         <p id="banner_caption" class="banner_caption"><mark class="banner_caption" /></p>
     </box>
         <box id="mattress">
-            <p id="sleepy_election" class="sleepy_election"><a id="sleepy_election" href="subscribe:politics?tag-group=topic">zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz</a></p>
+            <p id="sleepy_election" class="sleepy_election">
+							<a id="sleepy_election_link_old" href="subscribe:politics?tag-group=topic">zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz</a>
+							<a id="sleepy_election_link_new" href="wsj:///subscribe?tag=politics&amp;tag-group=topic">zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz</a>
+						</p>
         </box>
     </box>
 

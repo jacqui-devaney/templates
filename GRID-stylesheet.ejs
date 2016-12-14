@@ -21,34 +21,62 @@
     ],
     border-color: #d8d8d8
   },
-  jpml: {
-    padding: {
-      if: =scale.phone,
-      else: {
-        if: =portrait,
-        then: [
-          {
-            if: =intent.article,
-            then: 80,
-            else: 104
-          },
-          0,
-          0,
-          0
-        ],
-        else: [
-          {
-            if: =intent.article,
-            then: 80,
-            else: 108
-          },
-          0,
-          0,
-          0
-        ]
-      }
-    }
-  },
+	jpml: {
+		padding: {
+			if: =scale.phone,
+			else: {
+				if: =portrait,
+				then: [
+					{
+						if: =intent.article,
+						then: 80,
+						else: {
+							if-any: [
+								=pagedPagination,
+								=smoothPagination
+							],
+							then: {
+								if-any: [
+									=pagedPagination,
+									{ if-all: [=smoothPagination, =firstPage], then: true, else: false }
+								],
+								then: 104,
+								else: 10
+							},
+							else: 104
+						}
+					},
+					0,
+					0,
+					0
+				],
+				else: [
+					{
+						if: =intent.article,
+						then: 80,
+						else: {
+							if-any: [
+								=pagedPagination,
+								=smoothPagination
+							],
+							then: {
+								if-any: [
+									=pagedPagination,
+									{ if-all: [=smoothPagination, =firstPage], then: true, else: false }
+								],
+								then: 108,
+								else: 10
+							},
+							else: 108
+						}
+					},
+					0,
+					0,
+					0
+				]
+			}
+		}
+	},
   .columns-1: {
     width: {
       if: =portrait,

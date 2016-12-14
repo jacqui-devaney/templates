@@ -44,7 +44,17 @@
 				], then: true, else: false}
 			},
 
+			smoothPagination: { if-any: [
+				{if: =scale.phone, then: true, else: false},
+				{if: =layoutStrategy.pagination, equals: "smooth", then: true, else: false}
+				], then: true, else: false },
+
+			pagedPagination: {if: =layoutStrategy.pagination, equals: "paged", then: true, else: false},
+
 			justify: "left",
+
+			firstPage: {if: =page.number, equals: 0, then: true, else: false },
+			lastPage: {if: =page.number, equals: {$subtract: [=page.count, 1]}, then: true, else: false },
 
 			media: {
 				if: =page.hasmedia,

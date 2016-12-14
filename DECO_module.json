@@ -14,7 +14,7 @@
     },
     {
       "key": "caption",
-      "title": "Hide/Show Hed/Sum Container",
+      "title": "Hide/Show Caption Box",
       "type": "toggle",
       "options": [{
         "label": "Show",
@@ -27,7 +27,7 @@
 
     {
       "key": "caption_position",
-      "title": "Caption Position",
+      "title": "Caption Box Position",
       "type": "toggle",
       "disabled": ["no_caption"],
       "options": [{

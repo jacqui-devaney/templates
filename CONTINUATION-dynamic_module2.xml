@@ -80,7 +80,7 @@
 				line-height: 18,
 				text-transform: uppercase,
 				color: #878f8f,
-				padding: [4, 0, 0, 20],
+				padding: [4, 0, 0, 19.5],
 				display: {if: =page.section, equals: "OPINION", then: none, else: {if: =article.category, equals: "Opinion", then: inherit, else: none}}
 			},
 			.module_flashline:{
@@ -88,7 +88,7 @@
 			},
 			.module_headline: {
 				color:{if: =article.read, then: color.articleReadColor},
-				padding: [8, 19.5, 4, 19.5]
+				padding: [4, 19.5, 4, 19.5]
 			},
 			p: {
 				padding: [0, 0, 8, 0]
@@ -97,7 +97,7 @@
 				padding: [0, 20, 0, 20]
 			},
 			#article_status: {
-				padding: [{if: =page.section, equals: "OPINION", then: 3.5, else: {if: =article.category, equals: "Opinion", then: 18.5, else: 3.5}}, 0, 0, 4],
+				padding: [{if: =page.section, equals: "OPINION", then: 8, else: {if: =article.category, equals: "Opinion", then: 29, else: 8}}, 0, 0, 4],
 				left: 0,
 				width: 13,
 				height: 13,
@@ -155,7 +155,7 @@
 			<p class="module_flashline"><mark class="flashline-mark" /></p>
 			<p id="headline" class="module_headline"><mark class="m_headline" /><mark class="key" /></p>
 		</panel>
-		<box id="article_status" embed="article-status"></box>
+		<box id="article_status" embed="article-status"/>
 		<box id="image_container" embed="deco-image">
 			<image class="summary-image" />
 		</box>

@@ -78,7 +78,7 @@
 
 	<style>{
 		#next_page: {
-			top: {if: =portrait, then: 990, else: 733},
+			top: {if: =portrait, then: 990, else: 733}
 		}
 	}</style>
 

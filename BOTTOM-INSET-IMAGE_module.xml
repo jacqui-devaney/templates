@@ -1,0 +1,42 @@
+<jpml id="BOTTOM-INSET-IMAGE_module">
+	<style src="GLOBAL-stylesheet2.ejs" />
+	<style src="GLOBAL_MODULES-stylesheet2.ejs" />
+	<style src="MODULES_COMMON-stylesheet.ejs" />
+	<style>{
+    	#deco_container: {
+        	anchor-x:left,
+            anchor-y:bottom,
+        	padding:[2, 12, 10, 0],
+        	height: { $switch: [
+				{ if: =options.xlarge_image, then: { $multiply: [=view.height, 0.8] } },
+				{ if: =options.large_image, then: { $multiply: [=view.height, 0.7] } },
+				{ if: =options.small_image, then: { $multiply: [=view.height, 0.3] } },
+				{ if: =options.tiny_image, then: { $multiply: [=view.height, 0.2] } },
+				{ if: true, then: { $multiply: [=view.height, 0.5] } }
+			]},
+			width: {$divide:[{$subtract:[=view.width, 12]}, 2]},
+			display: { if: =options.show_image, then:inherit, else:none }
+		}
+	}</style>
+	
+	<box id="deco_container" embed="deco-image">
+		 <image class="summary-image"/>
+	</box>
+	<panel id="vertical" >
+		<panel id="headline">
+			 <p class="module_flashline"><mark class="flashline-mark" /></p>
+			 <p class="module_headline"><mark class="m_headline" /></p>
+			 <h2 id="subhead"><mark class="subhed-mark" /></h2>
+		</panel>
+		<panel id="body" class="vertical-grid-module">
+			<panel class="body">
+				<p class="byline"><mark class="byline-mark"/></p>
+				<p>
+					<mark class="body-first-p-mark" />
+					<mark class="body-mark"/>
+				</p>
+			</panel>
+		</panel>
+	 </panel>
+</jpml>
+

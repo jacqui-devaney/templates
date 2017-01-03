@@ -1,0 +1,88 @@
+<jpml id="DECO_SOLID_CAPTION_module">
+	<style src="GLOBAL-stylesheet2.ejs" />
+	<style src="GLOBAL_MODULES-stylesheet.ejs" />
+
+	<style>{
+		.deco_headline: {
+			font-size: {$switch: [
+				{if: =options.large_headline, then:35},
+				{if: =options.medium_headline, then:20},
+				18
+			]},
+			line-height: {$switch: [
+				{if: =options.large_headline, then:40},
+				{if: =options.medium_headline, then:25},
+				18
+			]},
+			padding: [0,0,5,0]
+		},
+		#ovfl2: {
+			padding: [15],
+			max-height: {
+				if-any: [
+					{if: =options.caption_position, equals: 2 },
+					{if: =options.caption_position, equals: 8 } 
+				],
+					then: 100 <!-- 1line large text(40) + 3 lines med text(20) if this overflows the image will not display, TODO aqquire information how to cut/end flow -->
+			}
+		},
+		#ovfl: {
+			padding: { $switch: [
+				{ if: =options.top_border, then: [10, 0, 0, 0] },
+				{ if: =options.left_border, then: [0, 0, 0, 10] },
+				{ if: =options.right_border, then: [0, 10, 0, 0] },
+				{ if: =options.bottom_border, then: [0, 0, 10, 0] }
+			]}
+		},
+		#caption_position: {
+			background-color: #202726,
+			anchor-x: { 
+				$switch:[ 
+					{if: =options.caption_position, equals: 4, then: left },
+					{if: =options.caption_position, equals: 6, then: right }
+				]
+			},
+			anchor-y: { 
+				$switch:[ 
+					{if: =options.caption_position, equals: 2, then: bottom },
+					{if: =options.caption_position, equals: 8, then: top }
+				]
+			},
+			width: {
+				if-any: [
+					{if: =options.caption_position, equals: 4 },
+					{if: =options.caption_position, equals: 6 } 
+				],
+					then: { $multiply: [=view.width, 0.3] }
+			},
+			height: {
+				if-any: [
+					{if: =options.caption_position, equals: 4 },
+					{if: =options.caption_position, equals: 6 } 
+				],
+					then: =view.height
+			},
+			display:{if: =options.no_caption, then:none, else:inherit}
+		},
+		jpml: {
+			background-color: =options.background_color,
+			border-color: #d8d8d8,
+			border-width: { $switch: [
+				{ if: =options.top_border, then: [2, 0, 0, 0] },
+				{ if: =options.left_border, then: [0, 0, 0, 2] },
+				{ if: =options.right_border, then: [0, 2, 0, 0] },
+				{ if: =options.bottom_border, then: [0, 0, 2, 0] }
+			]}
+		}
+	}</style>
+
+	<panel id="ovfl">
+		<box id="caption_position">
+			<panel id="ovfl2">
+				<p id="headline" class="deco_headline"><mark class="m_headline" /><mark class="key" /></p>
+				<p class="deco_caption"><mark class="subhed-mark" /></p>
+			</panel>
+		</box>
+		<image class="summary-image"/>
+	</panel>
+</jpml>

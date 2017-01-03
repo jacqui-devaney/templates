@@ -65,22 +65,8 @@
 	</box>
 
 	<style>{
-		<!-- TODO remove this -->
-		<!-- TODO smooth should be opposite to paged from what I know, one of those is a bug -->
-		.smooth_only: {
-			<!--display: {if: =smoothPagination, then: inherit, else: none}-->
-			display: inherit
-		},
-		.paged_only: {
-			<!--display: {if: =pagedPagination, then: inherit, else: none}-->
-			display: inherit
-		},
 		#next_page: {
-			top: {if: =portrait, then: 990, else: 733},
-			height: 34,
-			text-align: center,
-			<!--display: {if: =pagedPagination, then: {if: =page.number, less-than: {$subtract: [=page.count, 1]}, then: inherit, else: none }, else: none }-->
-			display: inherit
+			top: {if: =portrait, then: 990, else: 733}
 		}
 	}</style>
 

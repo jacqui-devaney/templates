@@ -1,0 +1,62 @@
+<jpml id="ARTICLE-continuation-phone_module">
+	<style src="GLOBAL-stylesheet.ejs" />
+	<style src="GLOBAL_MODULES-stylesheet.ejs" />
+	<style src="ARTICLE-stylesheet.ejs" />
+	<style src="PHONE-MODULES-stylesheet.ejs" />
+	<style src="MEDIA-stylesheet.ejs" />
+	<style src="ADVERTISING-stylesheet.ejs" />
+	<style>{
+		jpml: {
+            min-height: 0
+        },
+		.article_body: {
+			text-align: left,
+            hyphens: auto
+        },
+		#body_continuation: {
+			content: from-flow(article_body),
+			flow: article_body
+        },
+        #list-item: {
+            padding: [0, 0, 24, 0]
+        },
+        #body-first-media: {
+            display: inherit
+        }
+    }</style>
+
+    <box id="prototype">
+        <box id="media-item-prototype">
+        	<box id="media_container">
+        		<p id="media_title"><mark id="mark_media_title"/></p>
+                <panel id="media_vr_header">
+                    <p id="media_vr_header_left"><mark id="mark_media_vr_header_left"/></p>
+                    <p id="media_vr_header_right"><mark id="mark_media_vr_header_right"/></p>
+                </panel>
+	            <box id="media_asset" embed="media"/>
+        		<p id="media_vr_footer"><mark id="mark_media_vr_footer"/></p>
+	            <p id="media_caption"><mark id="mark_caption" /></p>
+                <p id="media_credit"><mark id="mark_credit"/></p>
+	            <p id="media_vr_link"><a href="http://wsj.com/virtual-reality"><mark id="mark_media_vr_link"/></a></p>
+	        </box>
+        </box>
+        <box id="inner-article-ad-prototype">
+            <box id="small_ad_container">
+                <box id="cube_ad" embed="fullpagead">
+                    <p id="ad_headline">ADVERTISEMENT</p>
+                </box>
+                <box id="halfscreen_ad" embed="fullpagead">
+                    <p id="ad_headline">ADVERTISEMENT</p>
+                </box>
+            </box>
+        </box>
+    </box>
+
+	<panel id="body_container">
+    	<panel class="article_body" id="body_continuation" embed="body" />
+	</panel>
+
+    <panel embed="inner-article-ad"/>
+    
+
+</jpml>

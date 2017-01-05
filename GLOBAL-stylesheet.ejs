@@ -4,7 +4,7 @@
 		pixels-per-point-x: { if: =intent.template, then: =scale.width, else: 1 },
 		pixels-per-point-y: { if: =intent.template, then: =scale.height, else: 1 },
 
-		min-height: {if-all: [=intent.template, =intent.section, =scale.phone], then: 0},
+		min-height: {if-all: [=intent.template, =intent.section, =smoothPagination], then: 0},
 		max-height: {if-all: [=intent.template, =intent.section, =scale.phone], then: 10000}
 	},
 
@@ -42,5 +42,31 @@
 		options: {
 			tintTitle: true
 		}
+	},
+
+	.smooth_only: {
+		display: {if: =smoothPagination, then: inherit, else: none}
+	},
+
+	.paged_only: {
+		display: {if: =pagedPagination, then: inherit, else: none}
+	},
+
+	#next_page: {
+		top: {if: =portrait, then: 820, else: 570},
+		height: 90,
+		text-align: center,
+		display: {if: =pagedPagination, then: {if: =page.number, less-than: {$subtract: [=page.count, 1]}, then: inherit, else: none }, else: none }
+	},
+
+	#next_page_button: {
+		padding: [0],
+		top: 5,
+		left: {if: =portrait, then: 336, else: 460},
+		width: 25,
+		height: 25,
+		content: =page.number,
+		background-image: "url(Arrows-Down-icon@2x.png)",
+		background-position: aspect-fit
 	}
 }

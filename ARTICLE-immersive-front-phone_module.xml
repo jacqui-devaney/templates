@@ -1,0 +1,72 @@
+<jpml id="ARTICLE-front-phone_module">
+	<style src="GLOBAL-stylesheet.ejs" />
+	<style src="GLOBAL_MODULES-stylesheet.ejs" />
+	<style src="ARTICLE-stylesheet.ejs" />
+	<style src="PHONE-MODULES-stylesheet.ejs" />
+	<style src="MEDIA-stylesheet.ejs" />
+	<style>{
+		jpml: {
+			background-color: =options.background_color
+		}
+	}</style>
+	<style>{
+		jpml: { min-height: 0 },
+		.article_body: {
+			hyphens: auto,
+			flow: article_body
+		},
+		.article_flashline: {
+            font-name: WhitneySSm-Medium,
+            font-size: 12,
+            color: #878f8f,
+            line-height: 18 
+        },
+        #byline-in-header: {
+        	if: =size.media.is_inset, else: { display: none }
+        },
+        #byline-below-media: {
+        	if: =size.media.is_inset, then: { display: none }
+        },
+    	#body-first-media: {
+		    display: inherit
+		},
+		#media_container: {
+			padding: [0, 0, 22, -20]
+		}
+	}</style>
+
+    <box id="prototype">
+        <box id="media-item-prototype">
+        	<box id="media_container">
+        		<p id="media_title"><mark id="mark_media_title"/></p>
+                <panel id="media_vr_header">
+                    <p id="media_vr_header_left"><mark id="mark_media_vr_header_left"/></p>
+                    <p id="media_vr_header_right"><mark id="mark_media_vr_header_right"/></p>
+                </panel>
+	            <box id="media_asset" embed="media"/>
+        		<p id="media_vr_footer"><mark id="mark_media_vr_footer"/></p>
+	            <p id="media_caption"><mark id="mark_caption" /></p>
+                <p id="media_credit"><mark id="mark_credit"/></p>
+	            <p id="media_vr_link"><a href="http://wsj.com/virtual-reality"><mark id="mark_media_vr_link"/></a></p>
+	        </box>
+        </box>
+    	<box id="byline-pubdate-prototype">
+			<p class="article_byline" embed="byline"></p>
+			<p class="article_pubdate">Updated <span embed="pubdate-string"/></p>
+    	</box>
+    </box>
+
+	<p class="article_flashline" embed="flashline"/>
+
+	<panel id="header_top">
+		<p class="article_headline"><span embed="headline"/></p>
+		<h2 class="article_subhed" embed="subhed" />
+		<panel id="byline-in-header" embed="byline-pubdate"/>
+	</panel>
+
+	<panel id="body_container">
+		<panel id="byline-below-media" embed="byline-pubdate"/>
+		<panel class="article_body" embed="body"/>
+	</panel>
+
+</jpml>

@@ -82,8 +82,8 @@
 	} </style>
 	<box id="page_details" class="tablet_only" embed="pagedescription" />
 	<box id="deco" embed="article" class="column_full positionx_full maude unit_full" module="FULL-SIZE_module.xml" />
-	<box id="b1" embed="article" class="landscape-columns-6 portrait-columns-6 landscape-xposition-1 portrait-xposition-1 maude unit_plain" module="ELECTION_COVER_module.xml" />
-	<box id="b2" embed="article" class="landscape-columns-6 portrait-columns-6 landscape-xposition-1 portrait-xposition-1 maude unit_plain" module="ELECTION_COVER_module.xml" />
-	<box id="b3" embed="article" class="landscape-columns-6 portrait-columns-6 landscape-xposition-1 portrait-xposition-1 maude unit_plain" module="ELECTION_COVER_module.xml" />
+	<box id="b1" embed="article" class="landscape-columns-6 portrait-columns-6 landscape-xposition-1 portrait-xposition-1 maude unit_plain" module="TRANSPARENT_module.xml" />
+	<box id="b2" embed="article" class="landscape-columns-6 portrait-columns-6 landscape-xposition-1 portrait-xposition-1 maude unit_plain" module="TRANSPARENT_module.xml" />
+	<box id="b3" embed="article" class="landscape-columns-6 portrait-columns-6 landscape-xposition-1 portrait-xposition-1 maude unit_plain" module="TRANSPARENT_module.xml" />
 
 </jpml>

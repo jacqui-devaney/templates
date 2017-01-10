@@ -1,0 +1,60 @@
+<jpml id="FRONT-2Story-NoAD">
+	<style src="GLOBAL-stylesheet.ejs" />
+	<style src="GRID-stylesheet2.ejs"/>
+
+	<style>{
+		#page_details: {
+			options: { hideHeaderBorder: true, tintTitle: true }
+		}
+	}</style>
+
+	<style> {
+		$switch: [
+			{if: =portrait, then: {
+				#b1:	{
+					options:{ large_headline: true, show_image: true, show_flashline: true, show_byline: true, show_subhead: true, top_border: true, body_column_count: 3 }
+				},
+				#b2:	{
+					options:{ medium_headline: true, show_image: true, show_flashline: true, show_byline: true, show_subhead: false, top_border: true, body_column_count: 4, image_column_number: 2 }
+				}
+			}},
+			{if: =landscape, then: {
+				#b1:	{
+					options:{ large_headline: true, show_image: true, show_flashline: true, show_byline: true, show_subhead: true, top_border: true, body_column_count: 3 }
+				},
+				#b2:	{
+					options:{ small_headline: true, show_image: true, tiny_image: true, show_flashline: true, show_byline: true, show_subhead: false, top_border: true, module: url(BOTTOM-IMAGE_module.xml) }
+				}
+			}}
+		]
+	} </style>
+
+	<box id="page_details" embed="pagedescription" />
+	<box id="b1" embed="article" class="portrait-xposition-1 portrait-yposition-16 portrait-columns-12 portrait-lines-33 landscape-xposition-1 landscape-yposition-5 landscape-columns-12 landscape-lines-31" module="TOP-IMAGE_module3.xml" />
+
+	<box id="b2" embed="article" class="portrait-xposition-1 portrait-yposition-5 portrait-columns-12 portrait-lines-10 landscape-xposition-13 landscape-yposition-5 landscape-columns-4 landscape-lines-31" module="COLUMN-IMAGE_module.xml" />
+
+	<style>{
+		<!-- TODO remove this -->
+		<!-- TODO smooth should be opposite to paged from what I know, one of those is a bug -->
+		.smooth_only: {
+			<!--display: {if: =smoothPagination, then: inherit, else: none}-->
+			display: inherit
+		},
+		.paged_only: {
+			<!--display: {if: =pagedPagination, then: inherit, else: none}-->
+			display: inherit
+		},
+		#next_page: {
+			top: {if: =portrait, then: 990, else: 733},
+			height: 34,
+			text-align: center,
+			<!--display: {if: =pagedPagination, then: {if: =page.number, less-than: {$subtract: [=page.count, 1]}, then: inherit, else: none }, else: none }-->
+			display: inherit
+		}
+	}</style>
+
+	<box id="next_page" class="tablet_only paged_only landscape-columns-16 portrait-columns-12 xposition-1">
+		<box id="next_page_button" embed="next-page-arrow"/>
+	</box>
+</jpml>

@@ -29,7 +29,7 @@
 	},
 	.latest_news_box: {
 		options: {
-			reference: "//NOW/LATEST_NEWS"
+			reference: { if: =app.version, more-than: "8.3.1", then: "wsj://us/NOW/LATEST_NEWS/", else: "//NOW/LATEST_NEWS" }
 		},
 		background-color:#ff7757,
 		height:25,

@@ -78,12 +78,24 @@
         }
     }
     </style>
-
+    <style>
+    {
+        #banner_headline_link_old: {
+            display: {if: =app.version, more-than: "8.3", then: none, else: inherit}
+        },
+        #banner_headline_link_new: {
+            display: {if: =app.version, more-than: "8.3", then: inherit, else: none}
+        }
+    }
+    </style>
 
     <box id="election">
     <panel id="election_container">
         <panel id="headline_container">
-            <p id="banner_headline" class="banner_headline"><a id="banner_headline" href="subscribe:politics?tag-group=topic"><span class="banner_headline">FOLLOW ELECTION 2016</span><mark class="space"/></a></p>
+            <p id="banner_headline" class="banner_headline">
+                <a id="banner_headline_link_old" href="subscribe:politics?tag-group=topic"><span class="banner_headline">FOLLOW ELECTION 2016</span><mark class="space"/></a>
+                <a id="banner_headline_link_new" href="wsj:///subscribe?tag=politics&amp;tag-group=topic"><span class="banner_headline">FOLLOW ELECTION 2016</span><mark class="space"/></a>
+            </p>
         </panel>
 
         <panel id="bell-panel"><box id="bell" />

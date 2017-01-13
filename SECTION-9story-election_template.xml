@@ -384,10 +384,10 @@
 	<style>
 	{
 		#sleepy_election_link_old: {
-			display: {if: =app.version, more-than: 8.3, then: none, else: inherit}
+			display: {if: =app.version, more-than: "8.3", then: none, else: inherit}
 		},
 		#sleepy_election_link_new: {
-			display: {if: =app.version, more-than: 8.3, then: inherit, else: none}
+			display: {if: =app.version, more-than: "8.3", then: inherit, else: none}
 		}
 	}
 	</style>

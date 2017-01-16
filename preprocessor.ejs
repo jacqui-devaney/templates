@@ -142,36 +142,6 @@
 				"You can search for WSJ articles by tapping the magnifying glass in the upper-right corner."
 			],
 			footer_tip: { $random: [0, 11] }
-		},
-		{
-			if: =app.version, equals: "7.8", then: {
-				ad: {
-					cache: {
-						Cube: {
-							loaded: false,
-							lineItemID: "0"
-						},
-						HalfScreen: {
-							loaded: false,
-							lineItemID: "0"
-						},
-						Skyscraper: {
-							loaded: false,
-							lineItemID: "0"
-						},
-						Banner: {
-							loaded: false,
-							lineItemID: "0"
-						},
-						Fullpage: {
-							loaded: false,
-							lineItemID: "0"
-						}
-					}
-				}
-			}, else: {
-
-			}
 		}
 	]
 }

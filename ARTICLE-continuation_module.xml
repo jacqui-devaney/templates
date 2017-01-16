@@ -20,14 +20,7 @@
 		{.article_body: {
 			column-gutter: 20,
 			layout-grid-line: {$multiply: [20, =view.zoomlevel]},
-			layout-grid-line-offset: {
-				if: =app.version,
-				at-least: "7.7",
-				then: 1,
-				else: {
-					$subtract: [ {$multiply: [20, =view.zoomlevel]}, 1 ]
-				}
-			}
+			layout-grid-line-offset: 1
 		}},
 		{#body_continuation: {
 			content: from-flow(article_body),

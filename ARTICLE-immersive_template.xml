@@ -1,0 +1,123 @@
+<jpml id="ARTICLE-front_template">
+	<style src="GLOBAL-stylesheet.ejs"/>
+  <style src="PHONE-stylesheet.ejs" />
+  <style src="GLOBAL_MODULES-stylesheet.ejs" />
+  <style src="ARTICLE-stylesheet.ejs" />
+  <style src="GRID-stylesheet.ejs"/>
+  <style src="ADVERTISING-stylesheet.ejs" />
+  <style>{
+    jpml: {
+      background-color: =color.background,
+      padding: {if: =scale.phone, else:[{$subtract: [{$multiply: [0.5, =view.height]}, {$multiply: [0.28, =view.width]}]},0,0,0]}
+    },
+    #page_details: {
+      display: {if: =scale.phone, then: none},
+      options: {
+          tintTitle: true
+      }
+    },
+    #webview: {if: =scale.phone, then: {
+      width:=view.width,
+      height:{$multiply: [0.75, =view.width]}
+    }, else: {
+      top:0,
+      left:0,
+      right:0,
+      height: {$multiply: [0.416, =view.width]}
+    }},
+    #nativeview: {if: =scale.phone, then: {
+      width:=view.width,
+      height:{$multiply: [4, =view.height]}
+    }, else: {
+      top:0,
+      height: 1
+    }}
+  }</style>
+  <style>{
+    #nativeview: {
+      if: =scale.phone, then: {
+        options: {
+          background_color: =color.background,
+          indent: false,
+          module: {if: =page.number, equals: 0, then: url(ARTICLE-immersive-front-phone_module.xml), else: url(ARTICLE-immersive-continuation-phone_module.xml)}
+        }
+      }, else: {
+        options: {
+          background_color: =color.background,
+          indent: false,
+          module: url(TRANSPARENT_module.xml)
+        }
+      }
+    },
+    #webview: {
+      display: {if-all: [=scale.phone, =page.number], then: none},
+      background-image: {if: =scale.phone, then: "url(immersive-offline-phone.jpg)", else:"url(immersive-offline-tablet.jpg)"},
+      background-position: stretch,
+      options: {
+        href: "url(http://online.wsj.com/media/background-video.html)",
+        src: "url(http://on.wsj.com/bonnevillemobile)"
+      }
+    },
+
+    .module_flashline: {
+      display: { if: =page.section, equals: WSJ_MAGAZINE, else: none },
+      font-name: { if: =page.section, equals: WSJ_MAGAZINE, then: "HelveticaNeue-Light" },
+      font-size: 10,
+      line-height: 14,
+      color: { if: =page.section, equals: WSJ_MAGAZINE, then: #212121 }
+    },
+    .article_headline: {
+      font-size: 38,
+      line-height: 40
+    },
+        #caption_box: {
+            position: relative,
+            display: none
+        },
+        #media_caption: {
+            font-name: "DJ5Exchange-Medium",
+            font-size: 11,
+            line-height: 16,
+            padding: [12]
+        },
+    #body_container: {
+      text-align: center,
+      top: {$multiply: [0.45, =view.width]},
+      display: {if: =scale.phone, then: none}
+    },
+    .article_body: {
+      text-align: center,
+      font-name: { if: =page.section, equals: SPECIAL_REPORT, then: "WhitneySSm-Book" },
+      column-count: 1,
+      text-indent: 0,
+      padding:[0]
+    },
+    .article_subhed: {
+      text-align: center
+    },
+    #hairline_panel: {
+      padding: [5, 0, 15, 0]
+    },
+    #hairline: {
+      position: relative,
+      background-color: #d8d8d8,
+      anchor-x: center,
+      width: 230,
+      height: 1
+    },
+    .textlink: {
+      color: #333333
+    }
+	}</style>
+  <box id="page_details" embed="pagedescription" />
+  <box id="webview" embed="webview" class="maude" />
+  <box id="nativeview" embed="article" class="landscape-columns-12 portrait-columns-12 portrait-xposition-1 landscape-xposition-3 maude" />
+  <box id="body_container" class="landscape-columns-12 portrait-columns-12 portrait-xposition-1 landscape-xposition-3">
+    <p class="article_headline"><a class="textlink" href="http://on.wsj.com/bonnevillemobile"><span embed="headline"/></a></p>
+    <h2 class="article_subhed"><a class="textlink" href="http://on.wsj.com/bonnevillemobile"><span embed="summary" /></a></h2>
+    <panel id="hairline_panel">
+      <box id="hairline"/>
+    </panel>
+    <p class="article_body"><a href="http://on.wsj.com/bonnevillemobile">Tap to view article.</a></p>
+  </box>
+</jpml>

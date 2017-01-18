@@ -221,7 +221,7 @@
 	<box id="b4" embed="article" class="landscape-columns-8 portrait-columns-4 xposition-9  maude unit_plain unit_50" module="CONTINUATION-dynamic_module.xml" />
 	<box id="b5" embed="article" class="landscape-columns-8 portrait-columns-4 xposition-9  maude unit_plain unit_50" module="CONTINUATION-dynamic_module.xml" />
 
-	<box id="tabbar-container" class="landscape-columns-16 portrait-columns-12 xposition-1" >
+		<box id="tabbar-container" class="landscape-columns-16 portrait-columns-12 xposition-1" >
 		<box class="center-me">
 			<p id="tabbar-japan" class="tabbar-p">
 				<a class="tabbar-link" href="/FRONT_SECTION"><span class="front-section-link">TOP STORIES</span><mark class="space"/></a>
@@ -239,23 +239,24 @@
 					<a class="tabbar-link" href="/US"><span class="us-link">U.S.</span><mark class="space"/></a>
 					<a class="tabbar-link" href="/POLITICS"><span class="politics-link">POLITICS</span><mark class="space"/></a>
 					<a class="tabbar-link" href="/ECONOMY"><span class="economy-link">ECONOMY</span><mark class="space"/></a>
-					<a class="tabbar-link" href="/BUSINESS"><span class="business-link">BUSINESS</span><mark class="space"/></a>
-					<a class="tabbar-link" href="/TECH"><span class="more-link">MORE&gt;</span><mark class="space"/></a>
+					<a class="tabbar-link" href="/SPECIAL_LN_DAVOS_US"><span class="more-link">MORE&gt;</span><mark class="space"/></a>
 				</a>
 
 				<a class="second-sections">
-					<a class="tabbar-link" href="/BUSINESS"><span class="more-link">&lt;MORE</span><mark class="space"/></a>
+					<a class="tabbar-link" href="/ECONOMY"><span class="more-link">&lt;MORE</span><mark class="space"/></a>
+					<a class="tabbar-link" href="/SPECIAL_LN_DAVOS_US"><span class="davos-link">DAVOS 2017</span><mark class="space"/></a>
+					<a class="tabbar-link" href="/BUSINESS"><span class="business-link">BUSINESS</span><mark class="space"/></a>
 					<a class="tabbar-link" href="/TECH"><span class="tech-link">TECH</span><mark class="space"/></a>
 					<a class="tabbar-link" href="/MARKETS"><span class="markets-link">MARKETS</span><mark class="space"/></a>
 					<a class="tabbar-link" href="/ARTS"><span class="arts-link">ARTS</span><mark class="space"/></a>
 					<a class="tabbar-link" href="/LIFE"><span class="life-link">LIFE</span><mark class="space"/></a>
 					<a class="tabbar-link" href="/REAL_ESTATE"><span class="real-estate-link">REAL ESTATE</span><mark class="space"/></a>
-					<a class="tabbar-link" href="/VR"><span class="vr-link">VIRTUAL REALITY</span><mark class="space"/></a>
-					<a class="tabbar-link" href="/JOURNAL_REPORT"><span class="more-link">MORE&gt;</span><mark class="space"/></a>
+					<a class="tabbar-link" href="/VR"><span class="more-link">MORE&gt;</span><mark class="space"/></a>
 				</a>
 
 				<a class="third-sections">
-					<a class="tabbar-link" href="/VR"><span class="more-link">&lt;MORE</span><mark class="space"/></a>
+					<a class="tabbar-link" href="/REAL_ESTATE"><span class="more-link">&lt;MORE</span><mark class="space"/></a>
+					<a class="tabbar-link" href="/VR"><span class="vr-link">VIRTUAL REALITY</span><mark class="space"/></a>
 					<a class="tabbar-link" href="/JOURNAL_REPORT"><span class="journal-report-link">JOURNAL REPORT</span><mark class="space"/></a>
 					<a class="tabbar-link" href="/HEARD"><span class="heard-link">HEARD ON THE STREET</span><mark class="space"/></a>
 					<a class="tabbar-link" href="/NEW_YORK"><span class="new-york-link">NEW YORK</span><mark class="space"/></a>

@@ -23,7 +23,7 @@
 	},
 	{
 		if: =issue.edition, in: ["us", "europe", "asia"], then: {
-			if: =page.section, in: ["TOP_NEWS","POPULAR","OPINION","WORLD","US","POLITICS","ECONOMY","BUSINESS"], then: {
+			if: =page.section, in: ["TOP_NEWS","POPULAR","OPINION","WORLD","US","POLITICS","ECONOMY"], then: {
 				.first-sections: {
 					display: inherit
 				},
@@ -34,7 +34,7 @@
 					display: none
 				}
 			}, else: {
-				if: =page.section, in: ["TECH", "MARKETS", "ARTS", "LIFE", "REAL_ESTATE", "VR"], then: {
+				if: =page.section, in: ["SPECIAL_LN_DAVOS_US", "BUSINESS", "TECH", "MARKETS", "ARTS", "LIFE", "REAL_ESTATE"], then: {
 						.first-sections: {
 							display: none
 						},
@@ -48,7 +48,7 @@
 							content: "spacee"
 						}
 				}, else: {
-					if: =page.section, in: ["JOURNAL_REPORT", "HEARD", "NEW_YORK", "WSJ_MAGAZINE"], then: {
+					if: =page.section, in: ["VR", "JOURNAL_REPORT", "HEARD", "NEW_YORK", "WSJ_MAGAZINE"], then: {
 						.first-sections: {
 							display: none
 						},

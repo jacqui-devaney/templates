@@ -8,6 +8,11 @@
 		max-height: {if-all: [=intent.template, =intent.section, =scale.phone], then: 10000}
 	},
 
+	box: { options: { reference: =article.link } },
+    panel: { options: { reference: =article.link } },
+    img: { options: { reference: =article.link } },
+    p: { options: { reference: =article.link } },
+
 	.tablet_only: {
 		display: { if: =scale.tablet, then: inherit, else: none }
 	},

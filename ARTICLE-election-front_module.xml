@@ -106,17 +106,27 @@
             top: -32,
             right: 310
         },
-        #sleepy_election:{
+        .sleepy_election:{
             font-size: 24,
             position: relative,
             color: transparent
         }
     }
     </style>
+    <style>
+    {
+        #sleepy_election_link_old: {
+            display: {if: =app.version, more-than: "8.3", then: none, else: inherit}
+        },
+        #sleepy_election_link_new: {
+            display: {if: =app.version, more-than: "8.3", then: inherit, else: none}
+        }
+    }
+    </style>
 
     <box id="election_container" class="tablet_only columns-4 xposition-1">
     <box id="headline_container">
-        <p id="banner_headline" class="banner_headline"><a id="banner_headline" href="subscribe:politics?tag-group=topic"><span class="banner_headline">FOLLOW ELECTION 2016</span><mark class="space"/></a></p>
+        <p id="banner_headline" class="banner_headline"><span class="banner_headline">FOLLOW ELECTION 2016</span><mark class="space"/></p>
     </box>
     <box id="caption_container">
             <p id="banner_caption" class="banner_caption">Tap <mark class="banner_caption" /></p>
@@ -125,7 +135,10 @@
         </panel>
     </box>
         <box id="mattress">
-            <p id="sleepy_election" class="sleepy_election"><a id="sleepy_election" href="subscribe:politics?tag-group=topic">zzzzzzzzzzzzzzzzzzzzzzzzzzzzz</a></p>
+            <p id="sleepy_election" class="sleepy_election">
+                <a id="sleepy_election_link_old" class="sleepy_election" href="subscribe:politics?tag-group=topic">zzzzzzzzzzzzzzzzzzzzzzzzzzzzz</a>
+                <a id="sleepy_election_link_new" class="sleepy_election" href="wsj:///subscribe?tag=politics&amp;tag-group=topic">zzzzzzzzzzzzzzzzzzzzzzzzzzzzz</a>
+            </p>
         </box>
     </box>
 

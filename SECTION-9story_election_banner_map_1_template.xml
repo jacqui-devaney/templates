@@ -285,42 +285,42 @@
 	<box id="tabbar-container" class="landscape-columns-16 portrait-columns-12 xposition-1" >
 		<box class="center-me">
 			<p id="tabbar-japan" class="tabbar-p">
-				<a class="tabbar-link" href="/FRONT_SECTION"><span class="front-section-link">TOP STORIES</span><mark class="space"/></a>
-				<a class="tabbar-link" href="/BUSINESS_AND_MARKETS"><span class="business-and-markets-link">BUSINESS &amp; MARKETS</span><mark class="space"/></a>
-				<a class="tabbar-link" href="/JAPAN_AND_WORLD"><span class="japan-and-world-link">JAPAN &amp; WORLD</span><mark class="space"/></a>
-				<a class="tabbar-link" href="/LIFESTYLE"><span class="lifestyle-link">LIFESTYLE</span></a>
+				<a class="tabbar-link" href="../FRONT_SECTION"><span class="front-section-link">TOP STORIES</span><mark class="space"/></a>
+				<a class="tabbar-link" href="../BUSINESS_AND_MARKETS"><span class="business-and-markets-link">BUSINESS &amp; MARKETS</span><mark class="space"/></a>
+				<a class="tabbar-link" href="../JAPAN_AND_WORLD"><span class="japan-and-world-link">JAPAN &amp; WORLD</span><mark class="space"/></a>
+				<a class="tabbar-link" href="../LIFESTYLE"><span class="lifestyle-link">LIFESTYLE</span></a>
 			</p>
 
 			<p id="tabbar-main" class="tabbar-p">
 				<a class="first-sections">
-					<a class="tabbar-link" href="/TOP_NEWS"><span class="top-news-link">TOP STORIES</span><mark class="space"/></a>
-					<a class="tabbar-link" href="/POPULAR"><span class="popular-link">POPULAR</span><mark class="space"/></a>
-					<a class="tabbar-link" href="/OPINION"><span class="opinion-link">OPINION</span><mark class="space"/></a>
-					<a class="tabbar-link" href="/WORLD"><span class="world-link">WORLD</span><mark class="space"/></a>
-					<a class="tabbar-link" href="/US"><span class="us-link">U.S.</span><mark class="space"/></a>
-					<a class="tabbar-link" href="/POLITICS"><span class="politics-link">POLITICS</span><mark class="space"/></a>
-					<a class="tabbar-link" href="/ECONOMY"><span class="economy-link">ECONOMY</span><mark class="space"/></a>
-					<a class="tabbar-link" href="/BUSINESS"><span class="business-link">BUSINESS</span><mark class="space"/></a>
-					<a class="tabbar-link" href="/TECH"><span class="more-link">MORE&gt;</span><mark class="space"/></a>
+					<a class="tabbar-link" href="../TOP_NEWS"><span class="top-news-link">TOP STORIES</span><mark class="space"/></a>
+					<a class="tabbar-link" href="../POPULAR"><span class="popular-link">POPULAR</span><mark class="space"/></a>
+					<a class="tabbar-link" href="../OPINION"><span class="opinion-link">OPINION</span><mark class="space"/></a>
+					<a class="tabbar-link" href="../WORLD"><span class="world-link">WORLD</span><mark class="space"/></a>
+					<a class="tabbar-link" href="../US"><span class="us-link">U.S.</span><mark class="space"/></a>
+					<a class="tabbar-link" href="../POLITICS"><span class="politics-link">POLITICS</span><mark class="space"/></a>
+					<a class="tabbar-link" href="../ECONOMY"><span class="economy-link">ECONOMY</span><mark class="space"/></a>
+					<a class="tabbar-link" href="../BUSINESS"><span class="business-link">BUSINESS</span><mark class="space"/></a>
+					<a class="tabbar-link" href="../TECH"><span class="more-link">MORE&gt;</span><mark class="space"/></a>
 				</a>
 
 				<a class="second-sections">
-					<a class="tabbar-link" href="/BUSINESS"><span class="more-link">&lt;MORE</span><mark class="space"/></a>
-					<a class="tabbar-link" href="/TECH"><span class="tech-link">TECH</span><mark class="space"/></a>
-					<a class="tabbar-link" href="/MARKETS"><span class="markets-link">MARKETS</span><mark class="space"/></a>
-					<a class="tabbar-link" href="/ARTS"><span class="arts-link">ARTS</span><mark class="space"/></a>
-					<a class="tabbar-link" href="/LIFE"><span class="life-link">LIFE</span><mark class="space"/></a>
-					<a class="tabbar-link" href="/REAL_ESTATE"><span class="real-estate-link">REAL ESTATE</span><mark class="space"/></a>
-					<a class="tabbar-link" href="/VR"><span class="vr-link">VIRTUAL REALITY</span><mark class="space"/></a>
-					<a class="tabbar-link" href="/JOURNAL_REPORT"><span class="more-link">MORE&gt;</span><mark class="space"/></a>
+					<a class="tabbar-link" href="../BUSINESS"><span class="more-link">&lt;MORE</span><mark class="space"/></a>
+					<a class="tabbar-link" href="../TECH"><span class="tech-link">TECH</span><mark class="space"/></a>
+					<a class="tabbar-link" href="../MARKETS"><span class="markets-link">MARKETS</span><mark class="space"/></a>
+					<a class="tabbar-link" href="../ARTS"><span class="arts-link">ARTS</span><mark class="space"/></a>
+					<a class="tabbar-link" href="../LIFE"><span class="life-link">LIFE</span><mark class="space"/></a>
+					<a class="tabbar-link" href="../REAL_ESTATE"><span class="real-estate-link">REAL ESTATE</span><mark class="space"/></a>
+					<a class="tabbar-link" href="../VR"><span class="vr-link">VIRTUAL REALITY</span><mark class="space"/></a>
+					<a class="tabbar-link" href="../JOURNAL_REPORT"><span class="more-link">MORE&gt;</span><mark class="space"/></a>
 				</a>
 
 				<a class="third-sections">
-					<a class="tabbar-link" href="/VR"><span class="more-link">&lt;MORE</span><mark class="space"/></a>
-					<a class="tabbar-link" href="/JOURNAL_REPORT"><span class="journal-report-link">JOURNAL REPORT</span><mark class="space"/></a>
-					<a class="tabbar-link" href="/HEARD"><span class="heard-link">HEARD ON THE STREET</span><mark class="space"/></a>
-					<a class="tabbar-link" href="/NEW_YORK"><span class="new-york-link">NEW YORK</span><mark class="space"/></a>
-					<a class="tabbar-link" href="/WSJ_MAGAZINE"><span class="magazine-link">WSJ. MAGAZINE</span></a>
+					<a class="tabbar-link" href="../VR"><span class="more-link">&lt;MORE</span><mark class="space"/></a>
+					<a class="tabbar-link" href="../JOURNAL_REPORT"><span class="journal-report-link">JOURNAL REPORT</span><mark class="space"/></a>
+					<a class="tabbar-link" href="../HEARD"><span class="heard-link">HEARD ON THE STREET</span><mark class="space"/></a>
+					<a class="tabbar-link" href="../NEW_YORK"><span class="new-york-link">NEW YORK</span><mark class="space"/></a>
+					<a class="tabbar-link" href="../WSJ_MAGAZINE"><span class="magazine-link">WSJ. MAGAZINE</span></a>
 				</a>
 
 			</p>

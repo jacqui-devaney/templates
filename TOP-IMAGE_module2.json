@@ -20,25 +20,6 @@
       ]
     },
     {
-      "key": "hide_icon",
-      "title": "Hide/Show Icon",
-    "comment":"Toggling Icon so that it's hidden",
-      "type": "toggle",
-      "options": [
-        {
-          "label": "Hide",
-          "values": {
-            "show_image": true
-          }
-        }, {
-          "label": "Show",
-          "values": {
-            "show_image": false
-          }
-        }
-      ]
-    },
-    {
       "key": "image_size",
       "title": "Image Size",
       "type": "select",

@@ -1,0 +1,111 @@
+{
+	jpml: {
+		background-color: =options.background_color,
+		border-color: #d8d8d8,
+		padding:[
+			{if: =options.padding_top, more-than:0, then:=options.padding_top, else: 0},
+			{if: =options.padding_right, more-than:0, then:=options.padding_right, else: 0},
+			{if: =options.padding_bottom, more-than:0, then:=options.padding_bottom, else: 0},
+			{if: =options.padding_left, more-than:0, then:=options.padding_left, else: 0}
+		],
+		border-width: { $switch: [
+			{ if: =options.top_border, then: [2, 0, 0, 0] },
+			{ if: =options.left_border, then: [0, 0, 0, 2] },
+			{ if: =options.right_border, then: [0, 2, 0, 0] },
+			{ if: =options.bottom_border, then: [0, 0, 2, 0] }
+		]}
+	},
+	#body: {
+		column-count: {if: =options.body_column_count, more-than:0, then:=options.body_column_count, else: 1},
+		column-gutter: 12,
+		display: {if: =options.hide_body, then:none, else:inherit}
+	},
+	image: {
+		pixels-per-point-x:1,
+		pixels-per-point-y:1,
+		image-scale: 1
+	},
+	.byline: {
+		color: #303737,
+		display:{if: =options.show_byline, then:inherit, else:none}
+	},
+	.module_flashline: {
+		font-name: HelveticaNeue-Light,
+		font-size: 12,
+		color: #4EB6B5,
+		display: {if: =options.show_flashline, then:inherit, else:none}
+	},
+	#headline: {
+		display: inherit,
+		padding: [10,0,8,0]
+	},
+	#subhead: {
+		font-name:WhitneySSm-Medium,
+		font-size: 12,
+		line-height: 18,
+		color: #878f8f,
+		padding:[0, 0, 10, 0],
+		display: {if: =options.show_subhead, then:inherit, else:none}
+	},
+	.module_headline: {
+		$join: [
+			{
+				font-name: {
+					$switch: [
+						{if: =issue.type, equals: "NOW", then: "ChronicleDisplay-Semi"},
+						{if: =issue.type, equals: "CSUITE", then: "WhitneySSm-Medium"},
+						{if: =options.small_headline, then: "ChronicleSSmMedium-Regular"},
+						{if: =options.smedium_headline, then: "ChronicleDisplay-Semi"},
+						{if: =options.medium_headline, then: "ChronicleDisplay-Semi"},
+						{if: =options.very_large_caps_headline, then: "ChronicleDisplay-Semi"},
+						"ChronicleDisplay-Semi"
+					]
+				}
+			},
+			{
+				color:{if: =options.white_text, then:#fff, else:#2b3333}
+			},
+			{
+				$switch:[
+					{if: =options.small_headline, then:{
+						font-size: 14,
+						line-height: 20,
+						layout-grid-line-offset: {if: =scale.tablet, then: -15, else: inherit},
+						layout-grid-line: {if: =scale.tablet, then: 20, else: inherit},
+						color:#2b3333
+					}},
+					{if: =options.smedium_headline, then:{
+						padding:[2, 0, 0, 0],
+						color:#2b3333,
+						font-size: 21,
+						line-height: 25
+					}},
+					{if: =options.medium_headline, then:{
+						padding:[7, 0, 0, 0],
+						color:#2b3333,
+						font-size: 21,
+						line-height: 25
+					}},
+					{if: =options.large_headline, then: {
+						layout-grid-line-offset: {if: =scale.tablet, then: -25, else: inherit},
+						layout-grid-line: {if: =scale.tablet, then: 20, else: inherit},
+						color:#2b3333,
+						font-size: 36,
+						line-height: 40
+					}},
+					{if: =options.very_large_caps_headline, then: {
+						padding:[0, 0, 20, 0],
+						font-size: 56,
+						line-height: 60,
+						text-transform:uppercase
+					}},
+					{if: true, then: {
+						padding:[0, 0, 20, 0],
+						font-size:19,
+						line-height: 23
+					}}
+				]
+			}
+		]
+	}
+}

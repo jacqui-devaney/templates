@@ -1,0 +1,76 @@
+<jpml id="MEDIA-VIDEO-HERO_module">
+	<style src="GLOBAL-stylesheet2.ejs" />
+	<style src="GLOBAL_MODULES-stylesheet2.ejs" />
+	<style>{
+		image:{
+			width:=view.width,
+			gravity:aspect-fill,
+			<!-- 
+				not sure what the reason,
+				but if the image fills the whole view - no other content will be rendered.
+				Regardles the fact that we are overlaying the content on top of the image itself
+			 -->
+			height: { 
+				$subtract:[
+					=view.height,
+					{if-any: [ =options.top_border, =options.bottom_border ], then: 8, else: 1 }
+				]
+			}
+		},
+		#black: {
+			background-color:"rgba(0, 0, 0, .5)"
+		},
+		.align_bottom: {
+			bottom: 0
+		},
+		#media_marker: {
+			top: 0,
+			left: 0,
+			width:=view.width,
+			height: 100
+		},
+		.headline_wrapper: {
+			padding: [10]
+		},
+		#headline: {
+			font-name: ChronicleDisp-Semibold,
+			color: #FFFFFF,
+			font-size: 36,
+			line-height: 40
+		},
+		#timestamp: {
+			font-name: WhitneySSm-Book,
+			color: #2FBFBF,
+			font-size: 13,
+			line-height: 20
+		},
+		.m_timestamp: {
+			content: =article.video_timestamp
+		},
+		jpml: {
+			background-color: =options.background_color,
+			border-color: #d8d8d8,
+			padding: { $switch: [
+				{if: =options.top_border, more-than:0, then: [5, 0, 0, 0], else: [0] },
+				{if: =options.bottom_border, more-than:0, then: [0, 0, 5, 0], else: [0] }
+			]},
+			border-width: { $switch: [
+				{ if: =options.top_border, then: [2, 0, 0, 0] },
+				{ if: =options.left_border, then: [0, 0, 0, 2] },
+				{ if: =options.right_border, then: [0, 2, 0, 0] },
+				{ if: =options.bottom_border, then: [0, 0, 2, 0] }
+			]}
+		}
+	}</style>
+
+	<image class="summary-image"/>
+	<box class="align_bottom">
+		<panel>
+			<box id="media_marker" embed="deco-image"/>
+			<panel id="black" class="headline_wrapper">
+				<p id="timestamp"><mark class="m_timestamp" /></p>
+				<p id="headline"><mark class="m_headline" /></p>
+			</panel>
+		</panel>
+	</box>
+</jpml>

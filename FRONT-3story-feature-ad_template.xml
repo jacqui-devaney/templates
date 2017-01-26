@@ -1,0 +1,60 @@
+<jpml id="FRONT-3story-feature-ad_template">
+	<style src="GLOBAL-stylesheet2.ejs" />
+	<style src="GRID-stylesheet2.ejs"/>
+	<style src="ADVERTISING-fallback-stylesheet.ejs" />
+	<style src="ADVERTISING-stylesheet2.ejs"/>
+	<style>{
+		#page_details: {
+			options: { hideHeaderBorder: true, tintTitle: true }
+		}
+	}</style>
+	<style> {
+		$switch: [
+			{if: =portrait, then: {
+				#b1:	{
+					options:{ medium_headline: true, show_image: true, show_flashline: false, show_byline: false, show_subhead: false, top_border: true, caption_position: 6 }
+				},
+				#b2:	{
+					options:{ medium_headline: true, show_image: true, show_flashline: true, show_byline: true, show_subhead: false, top_border: true, body_column_count: 3, image_column_number: 2 }
+				},
+				#b3:	{
+					options:{ medium_headline: true, show_image: true, small_image: true, show_flashline: true, show_byline: true, show_subhead: false, top_border: true, body_column_count: 2 }
+				}
+			}},
+			{if: =landscape, then: {
+				#b1:	{
+					options:{ medium_headline: true, show_image: true, show_flashline: false, show_byline: false, show_subhead: false, top_border: true, caption_position: 4 }
+				},
+				#b2:	{
+					options:{ medium_headline: true, show_image: true, tiny_image: true, show_flashline: true, show_byline: true, show_subhead: false, top_border: true, module: url(BOTTOM-IMAGE_module.xml) }
+				},
+				#b3:	{
+					options:{ medium_headline: true, show_image: true, small_image: true, show_flashline: true, show_byline: true, show_subhead: false, top_border: true, body_column_count: 2 }
+				}
+			}}
+		]
+	} </style>
+
+	<box id="page_details" embed="pagedescription" />
+	<box id="b1" embed="article" class="portrait-xposition-1 portrait-yposition-17 portrait-columns-12 portrait-lines-17 landscape-xposition-1 landscape-yposition-5 landscape-columns-13 landscape-lines-17" module="DECO_SOLID_CAPTION_module.xml" />
+
+	<box id="b2" embed="article" class="portrait-xposition-1 portrait-yposition-5 portrait-columns-12 portrait-lines-11 landscape-xposition-14 landscape-yposition-5 landscape-columns-3 landscape-lines-31" module="COLUMN-IMAGE_module.xml" />
+
+	<box id="b3" embed="article" class="portrait-xposition-7 portrait-yposition-35 portrait-columns-6 portrait-lines-14 landscape-xposition-7 landscape-yposition-23 landscape-columns-7 landscape-lines-13" module="BOTTOM-INSET-IMAGE_module.xml" />
+
+	<box id="advertisement_container" class="portrait-xposition-1 portrait-yposition-35 portrait-columns-6 portrait-lines-14 landscape-xposition-1 landscape-yposition-23 landscape-columns-6 landscape-lines-13">
+		<p id="advertisement_paragraph"><mark id="advertisement_mark"/></p>
+		<box id= "advertisement" embed="advertisement"/>
+	</box>
+
+	<style>{
+		#next_page: {
+			top: {if: =portrait, then: 990, else: 733}
+		}
+	}</style>
+
+	<box id="next_page" class="tablet_only paged_only landscape-columns-16 portrait-columns-12 xposition-1">
+		<box id="next_page_button" embed="next-page-arrow"/>
+	</box>
+
+</jpml>

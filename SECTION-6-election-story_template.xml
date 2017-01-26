@@ -64,7 +64,7 @@
                 },
                 .banner_headline: {
                     font-name: "ChronicleSSmMedium-Regular",
-                    content: "Follow Election 2016",
+                    content: "Get Politics notifications",
                     color: #2b3333,
                     line-height: 22,
                     font-size: 16,
@@ -78,7 +78,7 @@
                     line-height: 22,
                     padding: [0, 0, 18, 0],
                     text-align: center,
-                    content: "The Journal's politics team covers the 2016 U.S.Election and beyond"
+                    content: "Tap the bell to receive alerts of news and analysis of the forces shaping U.S. politics"
                 },
 				#b1:	{
                     top: { if: =app.push.tags.topic.politics, then: 0, else: 90 },
@@ -131,7 +131,7 @@
                 },
                 .banner_headline: {
                     font-name: "ChronicleSSmMedium-Regular",
-                    content: "Follow Election 2016",
+                    content: "Get Politics notifications",
                     color: #2b3333,
                     font-size: 16,
                     line-height: 22,
@@ -145,7 +145,7 @@
                     padding: [0, 40, 16, 40],
                     text-align: center,
                     line-height: 22,
-                    content: "WSJ's politics team covers the 2016 U.S. Election and beyond"
+                    content: "Tap the bell to receive alerts of news and analysis of the forces shaping U.S. politics"
                 },
 				#b1:	{
 					top:0,

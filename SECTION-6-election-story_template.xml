@@ -60,7 +60,7 @@
                 #election_container:{
                     background-color: #dfe7df,
                     top: 0,
-                    display: {if: =app.push.tags.topic.politics, then: none, else: {if: =app.version, at-least: 7.5, then: inherit, else: none}}
+                    display: {if: =app.push.tags.topic.politics, then: none, else: inherit }
                 },
                 .banner_headline: {
                     font-name: "ChronicleSSmMedium-Regular",
@@ -81,36 +81,36 @@
                     content: "Tap the bell to receive alerts of news and analysis of the forces shaping U.S. politics"
                 },
 				#b1:	{
-                    top:{if: =app.push.tags.topic.politics, then: 0, else: {if: =app.version, at-least: 7.5, then: 90, else: 0}},
-                    height: {if: =app.push.tags.topic.politics, then: 570, else: 560},
+                    top: { if: =app.push.tags.topic.politics, then: 0, else: 90 },
+                    height: { if: =app.push.tags.topic.politics, then: 570, else: 560 },
 					options:{ large_headline:true, show_image:true}
 				},
 				#b2:	{
-                    top: {if: =app.push.tags.topic.politics, then: 586, else: {if: =app.version, at-least: 7.5, then: 650, else: 586}},
-                    height: {if: =app.push.tags.topic.politics, then: 219, else: {if: =app.version, at-least: 7.5, then: 160, else: 219}},
-					options:{ medium_headline:true, show_body:true, top_border:true, show_flashline:true}
+                    top: {if: =app.push.tags.topic.politics, then: 586, else: 650 },
+                    height: {if: =app.push.tags.topic.politics, then: 219, else: 160 },
+					options: { medium_headline:true, show_body:true, top_border:true, show_flashline:true}
 				},
 				#b3:	{
-                    top:{if: =app.push.tags.topic.politics, then: 0, else: {if: =app.version, at-least: 7.5, then: 90, else: 0}},
-                    height: {if: =app.push.tags.topic.politics, then: 230, else: {if: =app.version, at-least: 7.5, then: 185, else: 230}},
+                    top: { if: =app.push.tags.topic.politics, then: 0, else: 90 },
+                    height: { if: =app.push.tags.topic.politics, then: 230, else: 185 },
 					options:{ medium_headline:true, show_flashline:true}
 				},
 				#b4:	{
-                    top: {if: =app.push.tags.topic.politics, then: 220, else: {if: =app.version, at-least: 7.5, then: 270, else: 220 }},
-                    height: {if: =app.push.tags.topic.politics, then: 190, else: {if: =app.version, at-least: 7.5, then: 190, else: 210 }},
+                    top: { if: =app.push.tags.topic.politics, then: 220, else: 270 },
+                    height: 190,
 					options:{ medium_headline:true, top_border:true, show_flashline:true}
 
 				},
 				#b5:	{
-                    top:{if: =app.push.tags.topic.politics, then: 412, else: {if: =app.version, at-least: 7.5, then: 460, else: 412}},
-                    height: {if: =app.push.tags.topic.politics, then: 210, else: {if: =app.version, at-least: 7.5, then: 190, else: 210 }},
-					options:{ medium_headline:true, top_border:true, show_flashline:true}
+                    top: { if: =app.push.tags.topic.politics, then: 412, else: 460 },
+                    height: { if: =app.push.tags.topic.politics, then: 210, else: 190 },
+					options: { medium_headline:true, top_border:true, show_flashline:true}
 
 				},
 				#b6:	{
-                    top:{if: =app.push.tags.topic.politics, then: 620, else: {if: =app.version, at-least: 7.5, then: 640, else: 620}},
-                    height: {if: =app.push.tags.topic.politics, then: 186, else: {if: =app.version, at-least: 7.5, then: 180, else: 186}},
-					options:{ medium_headline:true, top_border:true, show_flashline:true}
+                    top: { if: =app.push.tags.topic.politics, then: 620, else: 640 },
+                    height: { if: =app.push.tags.topic.politics, then: 186, else: 180 },
+					options: { medium_headline:true, top_border:true, show_flashline:true}
 				},
 				#footer: {
 					top: 820,
@@ -127,7 +127,7 @@
                 #election_container:{
                     background-color: #dfe7df,
                     top: 0,
-                    display: {if: =app.push.tags.topic.politics, then: none, else: {if: =app.version, at-least: 7.5, then: inherit, else: none}}
+                    display: {if: =app.push.tags.topic.politics, then: none, else: inherit }
                 },
                 .banner_headline: {
                     font-name: "ChronicleSSmMedium-Regular",
@@ -153,30 +153,30 @@
 					options:{ large_headline:true, show_image:true}
 				},
 				#b2:	{
-                    top: {if: =app.push.tags.topic.politics, then: 0, else: {if: =app.version, at-least: 7.5, then: 102, else: 0}},
-                    height: {if: =app.push.tags.topic.politics, then: 165, else: {if: =app.version, at-least: 7.5, then: 120, else: 165}},
+                    top: { if: =app.push.tags.topic.politics, then: 0, else: 102 },
+                    height: { if: =app.push.tags.topic.politics, then: 165, else: 120 },
 					options:{ medium_headline:true, bottom_border:true, show_body:true, show_flashline:true}
 				},
 				#b3:	{
-                    top:{if: =app.push.tags.topic.politics, then: 175, else: {if: =app.version, at-least: 7.5, then: 225, else: 175}},
-					height:175,
-                    left: {if: =app.push.tags.topic.politics, then: 518, else: 518},
-					options:{ medium_headline:true, top_border:false, show_flashline:true}
+                    top: { if: =app.push.tags.topic.politics, then: 175, else: 225 },
+					height: 175,
+                    left: { if: =app.push.tags.topic.politics, then: 518, else: 518 },
+					options:{ medium_headline:true, top_border:false, show_flashline:true }
 				},
 				#b4:	{
-                    top:{if: =app.push.tags.topic.politics, then: 345, else: {if: =app.version, at-least: 7.5, then: 400, else: 345}},
-                    height: {if: =app.push.tags.topic.politics, then: 220, else: {if: =app.version, at-least: 7.5, then: 160, else:  220}},
-					options:{ medium_headline:true, top_border:true, show_flashline:true}
+                    top: { if: =app.push.tags.topic.politics, then: 345, else: 400 },
+                    height: { if: =app.push.tags.topic.politics, then: 220, else: 160 },
+					options:{ medium_headline:true, top_border:true, show_flashline:true }
 				},
 				#b5:	{
-                    top:{if: =app.push.tags.topic.politics, then: 175, else: {if: =app.version, at-least: 7.5, then: 225, else: 175}},
-					height:175,
-					options:{ medium_headline:true, top_border:false, show_flashline:true}
+                    top: {if: =app.push.tags.topic.politics, then: 175, else: 225 },
+					height: 175,
+					options: { medium_headline:true, top_border:false, show_flashline:true }
 				},
 				#b6:	{
-                    top:{if: =app.push.tags.topic.politics, then: 345, else: {if: =app.version, at-least: 7.5, then: 400, else: 345}},
-                    height: {if: =app.push.tags.topic.politics, then: 220, else: {if: =app.version, at-least: 7.5, then: 160, else: 220}},
-					options:{ medium_headline:true, top_border:true, show_flashline:true}
+                    top: { if: =app.push.tags.topic.politics, then: 345, else: 400 },
+                    height: { if: =app.push.tags.topic.politics, then: 220, else: 160 },
+					options: { medium_headline:true, top_border:true, show_flashline:true }
                 },
 		#footer: {
 			top: 570,

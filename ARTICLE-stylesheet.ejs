@@ -110,26 +110,18 @@
 		content: " \u00A0 \u00A0 "
 	},
 	.pullquote: {
-        display: inherit
+	    layout-grid-line: { if: =scale.phone, then: 0, else: {$multiply: [20, =view.zoomlevel]} },
+	    layout-grid-line-offset: { if: =scale.phone, then: 0, else: 1 },
+	    color: #878f8f,
+	    line-height:{$multiply: [20, =view.zoomlevel]},
+	    font-name: ChronicleSSmMedium-Italic,
+	    padding: [0, 0, 10, 0],
+        text-indent: 0
     },
     .pullquote-p: {
-        layout-grid-line: { if: =scale.phone, then: 0, else: {$multiply: [20, =view.zoomlevel]} },
-        layout-grid-line-offset: { if: =scale.phone, then: 0, else: 1 },
-        color: #878f8f,
-        font-size:{$multiply: [16, =view.zoomlevel]},
-        line-height:{$multiply: [20, =view.zoomlevel]},
-        font-name: ChronicleSSmMedium-Italic,
-        padding: [0, 0, 10, 0],
-        text-indent: 0
+        font-size:{$multiply: [16, =view.zoomlevel]}
     },
     .pullquote-tagline: {
-        layout-grid-line: { if: =scale.phone, then: 0, else: {$multiply: [20, =view.zoomlevel]} },
-        layout-grid-line-offset: { if: =scale.phone, then: 0, else: 1 },
-        color: #878f8f,
-        font-size:{$multiply: [14, =view.zoomlevel]},
-        line-height:{$multiply: [20, =view.zoomlevel]},
-        font-name: ChronicleSSmMedium-Italic,
-        padding: [0, 0, 10, 0],
-        text-indent: 0
+        font-size:{$multiply: [14, =view.zoomlevel]}
     }
 }

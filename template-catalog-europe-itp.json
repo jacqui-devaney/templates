@@ -2123,6 +2123,418 @@
             }
           }
         ]
+      },
+      {
+        "filename": "CONTINUATION-4story-ad_template.xml",
+        "title": "Inside page: 4 stories",
+        "usage": "continuation",
+        "boxes": [
+          {
+            "id": "b1",
+            "images": {
+              "tablet": {
+                "width": 258,
+                "height": 145
+              }
+            }
+          },
+          {
+            "id": "b2",
+            "images": {
+              "tablet": {
+                "width": 258,
+                "height": 145
+              }
+            }
+          },
+          {
+            "id": "b3",
+            "images": {
+              "tablet": {
+                "width": 178,
+                "height": 100
+              }
+            }
+          },
+          {
+            "id": "b4",
+            "images": {
+              "tablet": {
+                "width": 178,
+                "height": 100
+              }
+            }
+          }
+        ]
+      },
+      {
+        "filename": "CONTINUATION-5story-ad_template.xml",
+        "title": "Inside page: 5 stories",
+        "usage": "continuation",
+        "boxes": [
+          {
+            "id": "b1",
+            "images": {}
+          },
+          {
+            "id": "b2",
+            "images": {}
+          },
+          {
+            "id": "b3",
+            "images": {}
+          },
+          {
+            "id": "b4",
+            "images": {
+              "tablet": {
+                "width": 620,
+                "height": 350
+              }
+            }
+          },
+          {
+            "id": "b5",
+            "images": {
+              "tablet": {
+                "width": 178,
+                "height": 100
+              }
+            }
+          }
+        ]
+      },
+      {
+        "filename": "CONTINUATION-5story-deco-ad_template.xml",
+        "title": "Inside page: 5 stories with feature spot",
+        "usage": "continuation",
+        "boxes": [
+          {
+            "id": "b1",
+            "images": {}
+          },
+          {
+            "id": "deco",
+            "images": {
+              "tablet": {
+                "width": 542,
+                "height": 305
+              }
+            }
+          },
+          {
+            "id": "b2",
+            "images": {}
+          },
+          {
+            "id": "b3",
+            "images": {}
+          },
+          {
+            "id": "b4",
+            "images": {
+              "tablet": {
+                "width": 620,
+                "height": 350
+              }
+            }
+          }
+        ]
+      },
+      {
+        "filename": "CONTINUATION-6story-ad_template.xml",
+        "title": "Inside page: 6 stories",
+        "usage": "continuation",
+        "boxes": [
+          {
+            "id": "b1",
+            "images": {
+              "tablet": {
+                "width": 534,
+                "height": 300
+              }
+            }
+          },
+          {
+            "id": "b2",
+            "images": {}
+          },
+          {
+            "id": "b3",
+            "images": {}
+          },
+          {
+            "id": "b4",
+            "images": {}
+          },
+          {
+            "id": "b5",
+            "images": {}
+          },
+          {
+            "id": "b5",
+            "images": {}
+          }
+        ]
+      },
+      {
+        "filename": "FRONT-2Story-no-ad_template.xml",
+        "title": "Section front: 2 stories",
+        "usage": "front",
+        "boxes": [
+          {
+            "id": "b1",
+            "images": {
+              "tablet": {
+                "width": 605,
+                "height": 340
+              }
+            }
+          },
+          {
+            "id": "b2",
+            "images": {
+              "tablet": {
+                "width": 258,
+                "height": 145
+              }
+            }
+          }
+        ]
+      },
+      {
+        "filename": "FRONT-3story-feature-ad_template.xml",
+        "title": "Section front: 3 stories with feature spot",
+        "usage": "front",
+        "boxes": [
+          {
+            "id": "b1",
+            "images": {
+              "tablet": {
+                "width": 605,
+                "height": 340
+              }
+            }
+          },
+          {
+            "id": "b2",
+            "images": {
+              "tablet": {
+                "width": 258,
+                "height": 145
+              }
+            }
+          },
+          {
+            "id": "b3",
+            "images": {
+              "tablet": {
+                "width": 258,
+                "height": 145
+              }
+            }
+          }
+        ]
+      },
+      {
+        "filename": "FRONT-3story-feature-no-ad_template.xml",
+        "title": "Section front: 3 stories with feature spot and No AD",
+        "usage": "front",
+        "boxes": [
+          {
+            "id": "b1",
+            "images": {
+              "tablet": {
+                "width": 1031,
+                "height": 580
+              }
+            }
+          },
+          {
+            "id": "b2",
+            "images": {
+              "tablet": {
+                "width": 258,
+                "height": 145
+              }
+            }
+          },
+          {
+            "id": "b3",
+            "images": {
+              "tablet": {
+                "width": 258,
+                "height": 145
+              }
+            }
+          }
+        ]
+      },
+      {
+        "filename": "FRONT-5story-ad_template.xml",
+        "title": "Section front: 5 stories",
+        "usage": "front",
+        "boxes": [
+          {
+            "id": "b1",
+            "images": {
+              "tablet": {
+                "width": 590,
+                "height": 332
+              }
+            }
+          },
+          {
+            "id": "b2",
+            "images": {
+              "tablet": {
+                "width": 258,
+                "height": 145
+              }
+            }
+          },
+          {
+            "id": "b3",
+            "images": {}
+          },
+          {
+            "id": "b4",
+            "images": {}
+          },
+          {
+            "id": "b5",
+            "images": {}
+          }
+        ]
+      },
+      {
+        "filename": "FRONT-5story-liondoor_template.xml",
+        "title": "Section front: 5 stories with feature spot",
+        "usage": "front",
+        "boxes": [
+          {
+            "id": "b1",
+            "images": {}
+          },
+          {
+            "id": "b2",
+            "images": {
+              "tablet": {
+                "width": 764,
+                "height": 430
+              }
+            }
+          },
+          {
+            "id": "b3",
+            "images": {}
+          },
+          {
+            "id": "b4",
+            "images": {}
+          },
+          {
+            "id": "b5",
+            "images": {
+              "tablet": {
+                "width": 258,
+                "height": 145
+              }
+            }
+          }
+        ]
+      },
+      {
+        "filename": "FRONT-6story-ad-liondoor_template.xml",
+        "title": "Section front: 6 stories with feature spot",
+        "usage": "front",
+        "boxes": [
+          {
+            "id": "b1",
+            "images": {}
+          },
+          {
+            "id": "b2",
+            "images": {
+              "tablet": {
+                "width": 764,
+                "height": 430
+              }
+            }
+          },
+          {
+            "id": "b3",
+            "images": {}
+          },
+          {
+            "id": "b4",
+            "images": {}
+          },
+          {
+            "id": "b5",
+            "images": {}
+          },
+          {
+            "id": "b6",
+            "images": {}
+          }
+        ]
+      },
+      {
+        "filename": "FRONT-6story-ad_template.xml",
+        "title": "Section front: 6 stories",
+        "usage": "front",
+        "boxes": [
+          {
+            "id": "b1",
+            "images": {
+              "tablet": {
+                "width": 587,
+                "height": 330
+              }
+            }
+          },
+          {
+            "id": "b2",
+            "images": {}
+          },
+          {
+            "id": "b3",
+            "images": {}
+          },
+          {
+            "id": "b4",
+            "images": {}
+          },
+          {
+            "id": "b5",
+            "images": {}
+          },
+          {
+            "id": "b6",
+            "images": {}
+          }
+        ]
+      },
+      {
+        "filename": "UNIVERSAL-2story-feature-no-ad_template.xml",
+        "title": "Section front: 2 stories with feature spot",
+        "usage": "front",
+        "boxes": [
+          {
+            "id": "b1",
+            "images": {
+              "tablet": {
+                "width": 1100,
+                "height": 620
+              }
+            }
+          },
+          {
+            "id": "b2",
+            "images": {}
+          }
+        ]
       }
     ]
   },

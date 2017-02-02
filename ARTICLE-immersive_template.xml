@@ -54,8 +54,8 @@
       background-image: {if: =scale.phone, then: "url(immersive-offline-phone.jpg)", else:"url(immersive-offline-tablet.jpg)"},
       background-position: stretch,
       options: {
-        href: "url(http://online.wsj.com/media/background-video.html)",
-        src: "url(http://on.wsj.com/bonnevillemobile)"
+        href: "url(http://online.wsj.com/media/background-contractor.html)",
+        src: "url(https://www.wsj.com/articles/the-end-of-employees-1486050443)"
       }
     },
 
@@ -113,11 +113,11 @@
   <box id="webview" embed="webview" class="maude" />
   <box id="nativeview" embed="article" class="landscape-columns-12 portrait-columns-12 portrait-xposition-1 landscape-xposition-3 maude" />
   <box id="body_container" class="landscape-columns-12 portrait-columns-12 portrait-xposition-1 landscape-xposition-3">
-    <p class="article_headline"><a class="textlink" href="http://on.wsj.com/bonnevillemobile"><span embed="headline"/></a></p>
-    <h2 class="article_subhed"><a class="textlink" href="http://on.wsj.com/bonnevillemobile"><span embed="summary" /></a></h2>
+    <p class="article_headline"><a class="textlink" href="https://www.wsj.com/articles/the-end-of-employees-1486050443"><span embed="headline"/></a></p>
+    <h2 class="article_subhed"><a class="textlink" href="https://www.wsj.com/articles/the-end-of-employees-1486050443"><span embed="summary" /></a></h2>
     <panel id="hairline_panel">
       <box id="hairline"/>
     </panel>
-    <p class="article_body"><a href="http://on.wsj.com/bonnevillemobile">Tap to view article.</a></p>
+    <p class="article_body"><a href="https://www.wsj.com/articles/the-end-of-employees-1486050443">Tap to view article.</a></p>
   </box>
 </jpml>

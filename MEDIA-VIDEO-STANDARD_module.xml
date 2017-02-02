@@ -18,7 +18,7 @@
 					height: { $subtract: [{ $min:[{ $max:[{ $multiply: [=view.height , 0.4] }, 45] }, 120] }, 36] }
 				},
 				#headline: {
-					font-name: ChronicleDisp-Semibold,
+					font-name: ChronicleDisplay-Semi,
 					color: #2B3333,
 					font-size: 22,
 					line-height: 26
@@ -48,7 +48,7 @@
 					height: { $subtract: [{ $min:[{ $max:[{ $multiply: [=view.height , 0.4] }, 45] }, 120] }, 20] }
 				},
 				#headline: {
-					font-name: ChronicleDisp-Semibold,
+					font-name: "ChronicleSSmMedium-Regular",
 					color: #2B3333,
 					font-size: 14,
 					line-height: 20

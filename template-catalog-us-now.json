@@ -957,104 +957,103 @@
                 "height": 122
               }
             }
+          }
+        ]
+      },
+      {
+        "filename": "VIDEO-6story-feature_template.xml",
+        "title": "6 + 1 story - video only",
+        "boxes": [
+          {
+            "id": "b1",
+            "images": {
+              "tablet": {
+                "width": 725,
+                "height": 435
+              },
+              "phone": {
+                "width": 365,
+                "height": 175
+              }
+            }
           },
           {
-            "filename": "VIDEO-6story-feature_template.xml",
-            "title": "6 + 1 story - video only",
-            "usage": "front",
-            "boxes": [
-              {
-                "id": "b1",
-                "images": {
-                  "tablet": {
-                    "width": 725,
-                    "height": 435
-                  },
-                  "phone": {
-                    "width": 365,
-                    "height": 175
-                  }
-                }
+            "id": "b2",
+            "images": {
+              "tablet": {
+                "width": 230,
+                "height": 128
               },
-              {
-                "id": "b2",
-                "images": {
-                  "tablet": {
-                    "width": 230,
-                    "height": 128
-                  },
-                  "phone": {
-                    "width": 365,
-                    "height": 175
-                  }
-                }
-              },
-              {
-                "id": "b3",
-                "images": {
-                  "tablet": {
-                    "width": 230,
-                    "height": 128
-                  },
-                  "phone": {
-                    "width": 365,
-                    "height": 175
-                  }
-                }
-              },
-              {
-                "id": "b4",
-                "images": {
-                  "tablet": {
-                    "width": 230,
-                    "height": 128
-                  },
-                  "phone": {
-                    "width": 365,
-                    "height": 175
-                  }
-                }
-              },
-              {
-                "id": "b5",
-                "images": {
-                  "tablet": {
-                    "width": 230,
-                    "height": 128
-                  },
-                  "phone": {
-                    "width": 365,
-                    "height": 175
-                  }
-                }
-              },
-              {
-                "id": "b6",
-                "images": {
-                  "tablet": {
-                    "width": 230,
-                    "height": 128
-                  },
-                  "phone": {
-                    "width": 365,
-                    "height": 175
-                  }
-                }
-              },
-              {
-                "id": "b7",
-                "images": {
-                  "tablet": {
-                    "width": 230,
-                    "height": 128
-                  },
-                  "phone": {
-                    "width": 365,
-                    "height": 175
-                  }
-                }
+              "phone": {
+                "width": 365,
+                "height": 175
               }
-            ]
+            }
+          },
+          {
+            "id": "b3",
+            "images": {
+              "tablet": {
+                "width": 230,
+                "height": 128
+              },
+              "phone": {
+                "width": 365,
+                "height": 175
+              }
+            }
+          },
+          {
+            "id": "b4",
+            "images": {
+              "tablet": {
+                "width": 230,
+                "height": 128
+              },
+              "phone": {
+                "width": 365,
+                "height": 175
+              }
+            }
+          },
+          {
+            "id": "b5",
+            "images": {
+              "tablet": {
+                "width": 230,
+                "height": 128
+              },
+              "phone": {
+                "width": 365,
+                "height": 175
+              }
+            }
+          },
+          {
+            "id": "b6",
+            "images": {
+              "tablet": {
+                "width": 230,
+                "height": 128
+              },
+              "phone": {
+                "width": 365,
+                "height": 175
+              }
+            }
+          },
+          {
+            "id": "b7",
+            "images": {
+              "tablet": {
+                "width": 230,
+                "height": 128
+              },
+              "phone": {
+                "width": 365,
+                "height": 175
+              }
+            }
           }
         ]
       }

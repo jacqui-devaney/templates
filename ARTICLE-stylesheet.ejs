@@ -87,7 +87,7 @@
 		display: inherit,
 		color: transparent,
 		hyphens: none,
-		font-name: {if: =app.version, at-least: 7.6, then: "WhitneySSm-Medium"}
+		font-name: "WhitneySSm-Medium"
 	},
 	.tweet: {
 		display: {if: =app.version, equals: "17.0", then: inherit, else: none}
@@ -108,5 +108,20 @@
 	},
 	.body-last-p-mark: {
 		content: " \u00A0 \u00A0 "
-	}
+	},
+	.pullquote: {
+	    layout-grid-line: { if: =scale.phone, then: 0, else: {$multiply: [20, =view.zoomlevel]} },
+	    layout-grid-line-offset: { if: =scale.phone, then: 0, else: 1 },
+	    color: #878f8f,
+	    line-height:{$multiply: [20, =view.zoomlevel]},
+	    font-name: ChronicleSSmMedium-Italic,
+	    padding: [0, 0, 10, 0],
+        text-indent: 0
+    },
+    .pullquote-p: {
+        font-size:{$multiply: [16, =view.zoomlevel]}
+    },
+    .pullquote-tagline: {
+        font-size:{$multiply: [14, =view.zoomlevel]}
+    }
 }

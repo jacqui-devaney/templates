@@ -1,460 +1,447 @@
 {
-	if: =app.version, at-least: "7.7", then: {
-		$join: [
-			{
-				.hidden_tablet: { display:none },
-				.hidden_phone: { display:inherit },
-				#page_details: {
-					options: {
-						fullPageAd: false
-					}
-				}
-			},
-			{
-				if: =scale.phone, then:{
-					#small_ad_container: {
-						padding: { if: =intent.article, then: [0], else: [0.5, 0, 0] }, 
-						border-width: { if: =intent.article, then: [0], else: [0.5, 0, 0] },
-						border-color: #d8d8d8,
-						top: 0,
-						left: 0,
-						right: 0,
-						height: 342,
-						background-color: #ffffff,
-						display: { if: =scale.rail, then: none, else: inherit }
-					},
-					#ad_headline:{
-						font-name: "WhitneySSm-Book",
-						font-size: 12,
-						line-height: 45,
-						color: #878f8f,
-						display: inherit,
-						text-align: center,
-						padding: [-44, 40, 20, 40]
-					}
-				}, else: {
-					#front_page: {
-						display: inherit,
-						position: inherit,
-						bottom: 0,
-						height: 90
-					},
-					#article_advertisement: {
-						pixels-per-point-x: 1,
-						pixels-per-point-y: 1,
-						width:484,
-						top:0,
-						bottom:0,
-						right:0,
-						border-width:[0, 0, 0, 1],
-						border-color:#d8d8d8
-					}
-				}
-			},
-			{
-				if: =scale.tablet, then: { 
-					if-all: [
-						{ if: =page.hasmedia, then: false, else: true },
-						=ad.cache.Skyscraper.loaded,
-						{ if: [1], contains: =page.number, then: false, else: true }
-					], then: {
-						if-all: [
-							=intent.article,
-							{ if: =phantomAdLineItemIDs, contains: =ad.cache.Skyscraper.lineItemID, then: true, else: false }
-						], then: {
-							#skyscraper_ad: {
-								position: absolute,
-								height: 1,
-								width: 1,
-								options: {
-									adType: "Skyscraper",
-									excludedLineItemIds: =phantomAdLineItemIDs
-								}
-							},
-							#lastpage_ad_container: {
-								height: 1
-							}
-						}, else: {
-							#skyscraper_ad:{
-								width:300,
-								height:600,
-								anchor-x:center,
-								anchor-y:middle,
-								options: {
-									adType: "Skyscraper",
-									excludedLineItemIds: =phantomAdLineItemIDs
-								}
-							},
-							#lastpage_ad_container: {
-								position: absolute,
-								border-color: #d8d8d8,
-								border-width: [0, 0, 0, 1],
-								min-width: 300,
-								min-height: 600,
-								top: 0,
-								bottom: 0,
-								left: 239,
-								right: 0
-							}
-						}
-					}, else: {
-						#lastpage_ad_container: {
-							display: none
-						}
-					}
-				}, else: {
-				}
-			},
-			{
-				if: =scale.phone, then: {
-					if-any: [
-						{
-							if-all: [
-								=ad.cache.Cube.loaded,
-								{ if: =phantomAdLineItemIDs, contains: =ad.cache.Cube.lineItemID, then: false, else: true }
-							], 
-							then: true,
-							else: false
-						},
-						{ 
-							if-all: [
-								{ if: =ad.cache.HalfScreen.loaded, then: false, else: true },
-								=ad.cache.Cube.loaded
-							],
-							then: true,
-							else: false
-						}
-					],
-					then: {
-						if: =phantomAdLineItemIDs, contains: =ad.cache.Cube.lineItemID, then: true, else: false,
-						then: {
-							#small_ad_container: {
-								padding: [0],
-								border-width: [0],
-								background-color: #ffffff,
-								height: 1
-							},
-							#cube_ad: {
-								options: {
-									adType: "Cube",
-									excludedLineItemIds: =phantomAdLineItemIDs
-								},
-								width: 1,
-								height: 1
-							},
-							#ad_headline: {
-								display: none
-							},
-							#halfscreen_ad: {
-								display: none
-							}
-						}, else: {
-							#halfscreen_ad: {
-								display: none
-							},
-							#cube_ad: {
-								border-width: [46],
-								border-color: #ffffff,
-								anchor-x:center,
-								display: inherit,
-								pixels-per-point-x: 1,
-								pixels-per-point-y: 1,
-								width: 300,
-								height: 250,
-								options: {
-									adType: "Cube",
-									excludedLineItemIds: =phantomAdLineItemIDs
-								}
-							}
-						}
-					},
-					else: {
-						if: =ad.cache.HalfScreen.loaded, 
-						then: {
-							if: =phantomAdLineItemIDs, contains: =ad.cache.HalfScreen.lineItemID, then: true, else: false,
-							then: {
-								#small_ad_container: {
-									padding: [0],
-									border-width: [0],
-									background-color: #ffffff,
-									height: 1
-								},
-								#halfscreen_ad: {
-									options: {
-										adType: "HalfScreen",
-										excludedLineItemIds: =phantomAdLineItemIDs
-									},
-									width: 1,
-									height: 1
-								},
-								#ad_headline: {
-									display: none
-								},
-								#cube_ad: {
-									display: none
-								}
-							}, else: {
-								#small_ad_container: {
-									padding: { if: =intent.article, then: [0], else: [0.5, 0, 0] }, 
-									border-width: { if: =intent.article, then: [0], else: [0.5, 0, 0] },
-									border-color: #d8d8d8,
-									top: 0,
-									left: 0,
-									right: 0,
-									height: 386,
-									background-color: #ffffff,
-									display: { if: =scale.rail, then: none, else: inherit }
-								},
-								#halfscreen_ad: {
-									border-width: [46,0,20,0],
-									border-color: #FFFFFF,
-									anchor-x:center,
-									display: inherit,
-									pixels-per-point-x: 1,
-									pixels-per-point-y: 1,
-									width: =view.width,
-									height: 320,
-									options: {
-										adType: "HalfScreen",
-										excludedLineItemIds: =phantomAdLineItemIDs
-									}
-								},
-								#cube_ad: {
-									display: none
-								}
-							}
-						},
-						else: {
-							if-any: [
-								{ if: =intent.article },
-								{ if: =app.version, less-than: "8.0" }
-							],					
-							then: {
-								#small_ad_container: {
-									display: none
-								}
-							},
-							else: {
-								#small_ad_container: {
-									padding: [0],
-									border-width: [0],
-									background-color: #ffffff,
-									height: 1
-								},
-								#cube_ad: {
-									options: {
-										adType: "Cube",
-										excludedLineItemIds: =phantomAdLineItemIDs
-									},
-									width: 1,
-									height: 1
-								},
-								#ad_headline: {
-									display: none
-								},
-								#halfscreen_ad: {
-									display: none
-								}
-							}
-						}
-					}
-				}, else: {
-					if: =intent.article, then: {
-						if-any: [
-							{
-								if-all: [
-									{ if: =ad.lastAdType, equals: "Skyscraper", then: false, else: true  },
-									=ad.cache.Skyscraper.loaded
-								],
-								then: true,
-								else: false
-							},
-							{
-								if-all: [
-									{ if: =ad.lastAdType, equals: "Fullpage", then: false, else: true },
-									{ if: =ad.cache.Fullpage.loaded, then: false, else: true },
-									=ad.cache.Skyscraper.loaded
-								],
-								then: true,
-								else: false
-							}
-						], then: {
-							$join: [
-								{
-									#fullpage_container: {
-										display: none
-									}
-								},
-								{
-									if-any: [
-										{
-											if-all: [ 
-												{ if: [3, 5, 7], contains: =page.number, then: true, else: false },
-												=ad.cache.Skyscraper.loaded 
-											], 
-											then: true, 
-											else: false 
-										},
-										{ 
-											if-all: [ 
-												{ if: =page.number, equals: 1 }, 
-												=ad.cache.Skyscraper.loaded 
-											], 
-											then: true, 
-											else: false 
-										}
-									], then: {
-										if: =phantomAdLineItemIDs, contains: =ad.cache.Skyscraper.lineItemID, then: {
-											#article_advertisement: {
-												position: absolute,
-												height: 1,
-												width: 1
-											},
-											#skyscraper_ad: {
-												position: absolute,
-												height: 1,
-												width: 1,
-												options: {
-													adType: "Skyscraper",
-													excludedLineItemIds: =phantomAdLineItemIDs
-												}
-											}
-										}, else: {
-											#media: {
-												display: none
-											},
-											#media_container: {
-												display: none
-											},
-											.article_body: {
-												column-count: {if: =landscape, then:2, else:1},
-												padding: [0, 12, 0, 0]
-											},
-											#skyscraper_ad:{
-												width:300,
-												height:600,
-												anchor-x:center,
-												anchor-y:middle,
-												options: {
-													adType: "Skyscraper",
-													excludedLineItemIds: =phantomAdLineItemIDs
-												}
-											}
-										}
-									}, else: {
-										#article_advertisement: {
-											display: none
-										}
-									}
-								}
-							]
-						}, else: {
-							$join: [
-								{
-									#article_advertisement: {
-										display: none
-									}
-								},
-								{
-									if: =ad.cache.Fullpage.loaded, then: {
-										if-all: [
-											{
-												if: =app.version, less-than: "7.6", then: {
-													if: =page.number, more-than: 1000000, then: true, else: false
-												}, else: {
-													if: =page.number, equals: 1, then: true, else: false
-												}
-											}
-										], then: {
-											if: =phantomAdLineItemIDs, contains: =ad.cache.Fullpage.lineItemID, then: {
-												#fullpage_container: {
-													position: absolute,
-													height: 1,
-													width: 1
-												},
-												#fullpage_ad: {
-													options: {
-														adType: "FullPage",
-														excludedLineItemIds: =phantomAdLineItemIDs
-													},
-													position: absolute,
-													height: 1,
-													width: 1
-												}
-											}, else: {
-												#fullpage_ad: {
-													options: {
-														adType: "FullPage",
-														excludedLineItemIds: =phantomAdLineItemIDs
-													},
-													anchor-x:center,
-													display: inherit,
-													pixels-per-point-x: 1,
-													pixels-per-point-y: 1,
-													width: =view.width,
-													height: =view.height
-												},				
-												jpml: {
-													min-height:0,
-													padding: [0,0,0,0]
-												},
-												#fullpage_container: {
-													display: inherit
-												},
-												#view: {
-													display: { if: =app.version, less-than: "7.6", then: none, else: inherit },
-													position: absolute,
-													height: 200,
-													width: 1
-												},
-												#media: {
-													display: none
-												},
-												#media_container: {
-													display: none
-												},
-												#page_details: {
-													display: { if: =app.version, less-than: "7.6", then: none, else: inherit },
-													options: {
-														fullPageAd: true
-													}
-												}
-											}
-										}, else: {
-											#fullpage_container: {
-												display: none
-											}
-										}
-									}, else: {
-										#fullpage_container: {
-											display: none
-										}
-									}
-								}
-							]
-						}
-					}, else: {
-						if: =ad.cache.Banner.type, equals: "Banner", then: {
-							#banner_ad: {
-								pixels-per-point-x: 1,
-								pixels-per-point-y: 1,
-								anchor-x:center,
-								anchor-y:middle,
-								width: =view.width,
-								height: 90,
-								options: {
-									adType: "Banner",
-									excludedLineItemIds: =phantomAdLineItemIDs
-								}
-							}
-						}, else: {
-							#banner_ad: {
-								display: none
-							}
-						}
-					}
-				}
-			}
-		]
-	}
+    $join: [
+        {
+            .hidden_tablet: { display:none },
+            .hidden_phone: { display:inherit },
+            #page_details: {
+                options: {
+                    fullPageAd: false
+                }
+            }
+        },
+        {
+            if: =scale.phone, then:{
+                #small_ad_container: {
+                    padding: { if: =intent.article, then: [0], else: [0.5, 0, 0] },
+                    border-width: { if: =intent.article, then: [0], else: [0.5, 0, 0] },
+                    border-color: #d8d8d8,
+                    top: 0,
+                    left: 0,
+                    right: 0,
+                    height: 342,
+                    background-color: #ffffff,
+                    display: { if: =scale.rail, then: none, else: inherit }
+                },
+                #ad_headline:{
+                    font-name: "WhitneySSm-Book",
+                    font-size: 12,
+                    line-height: 45,
+                    color: #878f8f,
+                    display: inherit,
+                    text-align: center,
+                    padding: [-44, 40, 20, 40]
+                }
+            }, else: {
+                #front_page: {
+                    display: inherit,
+                    position: inherit,
+                    bottom: 0,
+                    height: 90
+                },
+                #article_advertisement: {
+                    pixels-per-point-x: 1,
+                    pixels-per-point-y: 1,
+                    width:484,
+                    top:0,
+                    bottom:0,
+                    right:0,
+                    border-width:[0, 0, 0, 1],
+                    border-color:#d8d8d8
+                }
+            }
+        },
+        {
+            if: =scale.tablet, then: {
+                if-all: [
+                    { if: =page.hasmedia, then: false, else: true },
+                    =ad.cache.Skyscraper.loaded,
+                    { if: [1], contains: =page.number, then: false, else: true }
+                ], then: {
+                    if-all: [
+                        =intent.article,
+                        { if: =phantomAdLineItemIDs, contains: =ad.cache.Skyscraper.lineItemID, then: true, else: false }
+                    ], then: {
+                        #skyscraper_ad: {
+                            position: absolute,
+                            height: 1,
+                            width: 1,
+                            options: {
+                                adType: "Skyscraper",
+                                excludedLineItemIds: =phantomAdLineItemIDs
+                            }
+                        },
+                        #lastpage_ad_container: {
+                            height: 1
+                        }
+                    }, else: {
+                        #skyscraper_ad:{
+                            width:300,
+                            height:600,
+                            anchor-x:center,
+                            anchor-y:middle,
+                            options: {
+                                adType: "Skyscraper",
+                                excludedLineItemIds: =phantomAdLineItemIDs
+                            }
+                        },
+                        #lastpage_ad_container: {
+                            position: absolute,
+                            border-color: #d8d8d8,
+                            border-width: [0, 0, 0, 1],
+                            min-width: 300,
+                            min-height: 600,
+                            top: 0,
+                            bottom: 0,
+                            left: 239,
+                            right: 0
+                        }
+                    }
+                }, else: {
+                    #lastpage_ad_container: {
+                        display: none
+                    }
+                }
+            }, else: {
+            }
+        },
+        {
+            if: =scale.phone, then: {
+                if-any: [
+                    {
+                        if-all: [
+                            =ad.cache.Cube.loaded,
+                            { if: =phantomAdLineItemIDs, contains: =ad.cache.Cube.lineItemID, then: false, else: true }
+                        ],
+                        then: true,
+                        else: false
+                    },
+                    {
+                        if-all: [
+                            { if: =ad.cache.HalfScreen.loaded, then: false, else: true },
+                            =ad.cache.Cube.loaded
+                        ],
+                        then: true,
+                        else: false
+                    }
+                ],
+                then: {
+                    if: =phantomAdLineItemIDs, contains: =ad.cache.Cube.lineItemID, then: true, else: false,
+                    then: {
+                        #small_ad_container: {
+                            padding: [0],
+                            border-width: [0],
+                            background-color: #ffffff,
+                            height: 1
+                        },
+                        #cube_ad: {
+                            options: {
+                                adType: "Cube",
+                                excludedLineItemIds: =phantomAdLineItemIDs
+                            },
+                            width: 1,
+                            height: 1
+                        },
+                        #ad_headline: {
+                            display: none
+                        },
+                        #halfscreen_ad: {
+                            display: none
+                        }
+                    }, else: {
+                        #halfscreen_ad: {
+                            display: none
+                        },
+                        #cube_ad: {
+                            border-width: [46],
+                            border-color: #ffffff,
+                            anchor-x:center,
+                            display: inherit,
+                            pixels-per-point-x: 1,
+                            pixels-per-point-y: 1,
+                            width: 300,
+                            height: 250,
+                            options: {
+                                adType: "Cube",
+                                excludedLineItemIds: =phantomAdLineItemIDs
+                            }
+                        }
+                    }
+                },
+                else: {
+                    if: =ad.cache.HalfScreen.loaded,
+                    then: {
+                        if: =phantomAdLineItemIDs, contains: =ad.cache.HalfScreen.lineItemID, then: true, else: false,
+                        then: {
+                            #small_ad_container: {
+                                padding: [0],
+                                border-width: [0],
+                                background-color: #ffffff,
+                                height: 1
+                            },
+                            #halfscreen_ad: {
+                                options: {
+                                    adType: "HalfScreen",
+                                    excludedLineItemIds: =phantomAdLineItemIDs
+                                },
+                                width: 1,
+                                height: 1
+                            },
+                            #ad_headline: {
+                                display: none
+                            },
+                            #cube_ad: {
+                                display: none
+                            }
+                        }, else: {
+                            #small_ad_container: {
+                                padding: { if: =intent.article, then: [0], else: [0.5, 0, 0] },
+                                border-width: { if: =intent.article, then: [0], else: [0.5, 0, 0] },
+                                border-color: #d8d8d8,
+                                top: 0,
+                                left: 0,
+                                right: 0,
+                                height: 386,
+                                background-color: #ffffff,
+                                display: { if: =scale.rail, then: none, else: inherit }
+                            },
+                            #halfscreen_ad: {
+                                border-width: [46,0,20,0],
+                                border-color: #FFFFFF,
+                                anchor-x:center,
+                                display: inherit,
+                                pixels-per-point-x: 1,
+                                pixels-per-point-y: 1,
+                                width: =view.width,
+                                height: 320,
+                                options: {
+                                    adType: "HalfScreen",
+                                    excludedLineItemIds: =phantomAdLineItemIDs
+                                }
+                            },
+                            #cube_ad: {
+                                display: none
+                            }
+                        }
+                    },
+                    else: {
+                        if: =intent.article,
+                        then: {
+                            #small_ad_container: {
+                                display: none
+                            }
+                        },
+                        else: {
+                            #small_ad_container: {
+                                padding: [0],
+                                border-width: [0],
+                                background-color: #ffffff,
+                                height: 1
+                            },
+                            #cube_ad: {
+                                options: {
+                                    adType: "Cube",
+                                    excludedLineItemIds: =phantomAdLineItemIDs
+                                },
+                                width: 1,
+                                height: 1
+                            },
+                            #ad_headline: {
+                                display: none
+                            },
+                            #halfscreen_ad: {
+                                display: none
+                            }
+                        }
+                    }
+                }
+            }, else: {
+                if: =intent.article, then: {
+                    if-any: [
+                        {
+                            if-all: [
+                                { if: =ad.lastAdType, equals: "Skyscraper", then: false, else: true  },
+                                =ad.cache.Skyscraper.loaded
+                            ],
+                            then: true,
+                            else: false
+                        },
+                        {
+                            if-all: [
+                                { if: =ad.lastAdType, equals: "Fullpage", then: false, else: true },
+                                { if: =ad.cache.Fullpage.loaded, then: false, else: true },
+                                =ad.cache.Skyscraper.loaded
+                            ],
+                            then: true,
+                            else: false
+                        }
+                    ], then: {
+                        $join: [
+                            {
+                                #fullpage_container: {
+                                    display: none
+                                }
+                            },
+                            {
+                                if-any: [
+                                    {
+                                        if-all: [
+                                            { if: [3, 5, 7], contains: =page.number, then: true, else: false },
+                                            =ad.cache.Skyscraper.loaded
+                                        ],
+                                        then: true,
+                                        else: false
+                                    },
+                                    {
+                                        if-all: [
+                                            { if: =page.number, equals: 1 },
+                                            =ad.cache.Skyscraper.loaded
+                                        ],
+                                        then: true,
+                                        else: false
+                                    }
+                                ], then: {
+                                    if: =phantomAdLineItemIDs, contains: =ad.cache.Skyscraper.lineItemID, then: {
+                                        #article_advertisement: {
+                                            position: absolute,
+                                            height: 1,
+                                            width: 1
+                                        },
+                                        #skyscraper_ad: {
+                                            position: absolute,
+                                            height: 1,
+                                            width: 1,
+                                            options: {
+                                                adType: "Skyscraper",
+                                                excludedLineItemIds: =phantomAdLineItemIDs
+                                            }
+                                        }
+                                    }, else: {
+                                        #media: {
+                                            display: none
+                                        },
+                                        #media_container: {
+                                            display: none
+                                        },
+                                        .article_body: {
+                                            column-count: {if: =landscape, then:2, else:1},
+                                            padding: [0, 12, 0, 0]
+                                        },
+                                        #skyscraper_ad:{
+                                            width:300,
+                                            height:600,
+                                            anchor-x:center,
+                                            anchor-y:middle,
+                                            options: {
+                                                adType: "Skyscraper",
+                                                excludedLineItemIds: =phantomAdLineItemIDs
+                                            }
+                                        }
+                                    }
+                                }, else: {
+                                    #article_advertisement: {
+                                        display: none
+                                    }
+                                }
+                            }
+                        ]
+                    }, else: {
+                        $join: [
+                            {
+                                #article_advertisement: {
+                                    display: none
+                                }
+                            },
+                            {
+                                if: =ad.cache.Fullpage.loaded, then: {
+                                    if: =page.number, equals: 1, then: {
+                                        if: =phantomAdLineItemIDs, contains: =ad.cache.Fullpage.lineItemID, then: {
+                                            #fullpage_container: {
+                                                position: absolute,
+                                                height: 1,
+                                                width: 1
+                                            },
+                                            #fullpage_ad: {
+                                                options: {
+                                                    adType: "FullPage",
+                                                    excludedLineItemIds: =phantomAdLineItemIDs
+                                                },
+                                                position: absolute,
+                                                height: 1,
+                                                width: 1
+                                            }
+                                        }, else: {
+                                            #fullpage_ad: {
+                                                options: {
+                                                    adType: "FullPage",
+                                                    excludedLineItemIds: =phantomAdLineItemIDs
+                                                },
+                                                anchor-x:center,
+                                                display: inherit,
+                                                pixels-per-point-x: 1,
+                                                pixels-per-point-y: 1,
+                                                width: =view.width,
+                                                height: =view.height
+                                            },
+                                            jpml: {
+                                                min-height:0,
+                                                padding: [0,0,0,0]
+                                            },
+                                            #fullpage_container: {
+                                                display: inherit
+                                            },
+                                            #view: {
+                                                display: inherit,
+                                                position: absolute,
+                                                height: 200,
+                                                width: 1
+                                            },
+                                            #media: {
+                                                display: none
+                                            },
+                                            #media_container: {
+                                                display: none
+                                            },
+                                            #page_details: {
+                                                display: inherit,
+                                                options: {
+                                                    fullPageAd: true
+                                                }
+                                            }
+                                        }
+                                    }, else: {
+                                        #fullpage_container: {
+                                            display: none
+                                        }
+                                    }
+                                }, else: {
+                                    #fullpage_container: {
+                                        display: none
+                                    }
+                                }
+                            }
+                        ]
+                    }
+                }, else: {
+                    if: =ad.cache.Banner.type, equals: "Banner", then: {
+                        #banner_ad: {
+                            pixels-per-point-x: 1,
+                            pixels-per-point-y: 1,
+                            anchor-x:center,
+                            anchor-y:middle,
+                            width: =view.width,
+                            height: 90,
+                            options: {
+                                adType: "Banner",
+                                excludedLineItemIds: =phantomAdLineItemIDs
+                            }
+                        }
+                    }, else: {
+                        #banner_ad: {
+                            display: none
+                        }
+                    }
+                }
+            }
+        }
+    ]
 }

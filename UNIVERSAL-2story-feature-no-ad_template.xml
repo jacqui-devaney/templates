@@ -1,0 +1,46 @@
+<jpml id="UNIVERSAL-2story-feature-no-ad_template">
+	<style src="GLOBAL-stylesheet2.ejs" />
+	<style src="GRID-stylesheet2.ejs"/>
+
+	<style>{
+		#page_details: {
+			options: { hideHeaderBorder: true, tintTitle: true }
+		}
+	}</style>
+
+	<style> {
+		$switch: [
+			{if: =portrait, then: {
+				#b1:	{
+					options:{ large_headline: true, caption_position: 8, caption_size: 1, top_border: true }
+				},
+				#b2:	{
+					options:{ large_headline: true, show_image: false, show_flashline: true, show_byline: true, show_subhead: true, top_border: true, body_column_count: 3 }
+				}
+			}},
+			{if: =landscape, then: {
+				#b1:	{
+					options:{ large_headline: true, caption_position: 8, caption_size: 2, top_border: true }
+				},
+				#b2:	{
+					options:{ large_headline: true, show_image: false, small_image: true, show_flashline: true, show_byline: true, show_subhead: true, top_border: true }
+				}
+			}}
+		]
+	} </style>
+
+	<box id="page_details" embed="pagedescription" />
+	<box id="b1" embed="article" class="portrait-xposition-1 portrait-yposition-20 portrait-columns-12 portrait-lines-29 landscape-xposition-1 landscape-yposition-5 landscape-columns-13 landscape-lines-31" module="DECO_SOLID_CAPTION_module.xml" />
+
+	<box id="b2" embed="article" class="portrait-xposition-1 portrait-yposition-5 portrait-columns-12 portrait-lines-14 landscape-xposition-14 landscape-yposition-5 landscape-columns-3 landscape-lines-31" module="TOP-IMAGE_module3.xml" />
+
+	<style>{
+		#next_page: {
+			top: {if: =portrait, then: 990, else: 733}
+		}
+	}</style>
+
+	<box id="next_page" class="tablet_only paged_only landscape-columns-16 portrait-columns-12 xposition-1">
+		<box id="next_page_button" embed="next-page-arrow"/>
+	</box>
+</jpml>

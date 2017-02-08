@@ -29,7 +29,7 @@
             padding: [12, 12, 12, 12],
             text-align: center,
             background-color: #dfe7df,
-            display: {if: =app.push.tags.topic.politics, then: none, else: {if: =app.version, less-than: "7.4", then: none, else: inherit}}
+            display: inherit
         },
         .banner_headline: {
             padding: [8, {if: =view.width, equals: 375, then: 90, else: {if: =view.width, equals: 414, then: 99, else: 44}}, 10, {if: =view.width, equals: 375, then: 90, else: {if: =view.width, equals: 414, then: 99, else: 44}}],

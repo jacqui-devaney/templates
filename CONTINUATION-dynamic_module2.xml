@@ -146,15 +146,13 @@
 		}
 	}</style>
 	<style>
-	if: =scale.tablet, then: {
         {
             if: =options.hide_icon, equals: true, then: {
                 #image_container: { 
-                    frame: [-10000, 0, 1, 1] 
+                    frame: [-10000, -10000, 1, 1] 
                 }
             }
-       }
-    }
+        }
     </style>
 	<box id="page_details" embed="pagedescription" />
 	<panel id="strap">

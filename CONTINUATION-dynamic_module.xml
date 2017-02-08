@@ -143,14 +143,12 @@
     	}
     }</style>
     <style>
-  	if: =scale.tablet, then: {
-        {
-            if: =options.hide_icon, equals: true, then: {
-                #image_container: { 
-                    frame: [-10000, 0, 1, 1] 
-                }
+    {
+        if: =options.hide_icon, equals: true, then: {
+            #image_container: { 
+                frame: [-20000, 0, 1, 1] 
             }
-       }
+        }
     }
     </style>
     <box id="page_details" embed="pagedescription" />

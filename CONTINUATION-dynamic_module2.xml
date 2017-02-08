@@ -146,13 +146,15 @@
 		}
 	}</style>
 	<style>
+	if: =scale.tablet, then: {
         {
             if: =options.hide_icon, equals: true, then: {
-                #deco_icon: { 
+                #image_container: { 
                     frame: [-10000, 0, 1, 1] 
                 }
             }
-        }
+       }
+    }
     </style>
 	<box id="page_details" embed="pagedescription" />
 	<panel id="strap">
@@ -165,8 +167,7 @@
 			<p id="headline" class="module_headline"><mark class="m_headline" /><mark class="key" /></p>
 		</panel>
 		<box id="article_status" embed="article-status"/>
-		<box id="deco_icon" embed="deco-image"/>
-		<box id="image_container">
+		<box id="image_container" embed="deco-image">
 			<image class="summary-image" />
 		</box>
 		<panel class="body">

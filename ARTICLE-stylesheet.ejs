@@ -1,4 +1,5 @@
-{
+{ $join: [
+  {
 	jpml: {
 		padding:[0]
 	},
@@ -26,6 +27,15 @@
 		line-height: {$multiply: [20, =view.zoomlevel]},
 		color: #2b3333,
 		padding: [0,0,{$multiply: [20, =view.zoomlevel]},0]
+	},
+	.byline-author: {
+		if: =app.version, at-least: "8.4", then: {
+			padding: [0, 22, 0, 0],
+			background-position: right,
+			background-size: contain,
+			background-repeat: no-repeat,
+			white-space: nowrap
+		}
 	},
 	h2: {
 		font-name: {if: =intent.article, then:ChronicleSSmMedium-Regular, else:ChronicleSSmMedium-Regular},
@@ -130,4 +140,33 @@
     .pullquote-tagline: {
         font-size:{$multiply: [14, =view.zoomlevel]}
     }
+  },
+  {
+  	$associate: {
+  		flatmap: { $range: [0, 6] },
+  		let: x,
+  		in: [
+  			{ $join: [#byline-author-span-, =x] },
+  			{
+				if: =app.push.tags.author, 
+				contains: =article.authors[x], 
+				then: {
+					background-image: url(follow_on_icon.png),
+					options: { reference: { $join: [
+						"wsj:///unsubscribe?tag-group=author&tag=",
+						{ $urlencode: [=article.authors[x]]}
+					] } }
+				},
+				else: {
+					background-image: url(follow_off_icon.png),
+					options: { reference: { $join: [
+						"wsj:///subscribe?tag-group=author&tag=",
+						{ $urlencode: [=article.authors[x]]}
+					] } }
+				}
+			}
+		]
+	}  
+  }
+  ]
 }

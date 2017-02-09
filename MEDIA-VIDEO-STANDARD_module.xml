@@ -13,7 +13,6 @@
 				},
 				#caption: {
 					padding: [18, 10, 18, 10],
-					width: =view.width,
 					<!-- fit at least #timestamp and single line of caption/headline, but dont go above 120px in order to avoid too much white spase -->
 					height: { $subtract: [{ $min:[{ $max:[{ $multiply: [=view.height , 0.4] }, 45] }, 120] }, 36] }
 				},
@@ -43,7 +42,6 @@
 				},
 				#caption: {
 					padding: [10, 0, 10, 0],
-					width: =view.width,
 					<!-- fit at least #timestamp and single line of caption/headline, but dont go above 120px in order to avoid too much white spase -->
 					height: { $subtract: [{ $min:[{ $max:[{ $multiply: [=view.height , 0.4] }, 45] }, 120] }, 20] }
 				},

@@ -145,6 +145,7 @@
       {
         "section": "FRONT_SECTION",
         "filename": "FRONT-5story-deco_template.xml",
+        "title": "FRONT-5story-deco_template.xml",
         "usage": "front",
         "boxes": [
           {
@@ -186,6 +187,7 @@
       {
         "section": "FRONT_SECTION",
         "filename": "FRONT-5story-deco_template.xml",
+        "title": "FRONT-5story-deco_template.xml",
         "usage": "continuation",
         "boxes": [
           {
@@ -227,6 +229,7 @@
       {
         "section": "FRONT_SECTION_ITP",
         "filename": "FRONT-5story-deco_template.xml",
+        "title": "FRONT-5story-deco_template.xml",
         "usage": "front",
         "boxes": [
           {
@@ -268,6 +271,7 @@
       {
         "section": "FRONT_SECTION_ITP",
         "filename": "FRONT-5story-deco_template.xml",
+        "title": "FRONT-5story-deco_template.xml",
         "usage": "continuation",
         "boxes": [
           {
@@ -309,6 +313,7 @@
       {
         "section": "FRONT_SECTION",
         "filename": "FRONT-5story_template.xml",
+        "title": "FRONT-5story_template.xml",
         "usage": "front",
         "boxes": [
           {
@@ -346,6 +351,7 @@
       {
         "section": "FRONT_SECTION",
         "filename": "FRONT-5story_template.xml",
+        "title": "FRONT-5story_template.xml",
         "usage": "continuation",
         "boxes": [
           {
@@ -383,6 +389,7 @@
       {
         "section": "FRONT_SECTION_ITP",
         "filename": "FRONT-5story_template.xml",
+        "title": "FRONT-5story_template.xml",
         "usage": "front",
         "boxes": [
           {
@@ -420,6 +427,7 @@
       {
         "section": "FRONT_SECTION_ITP",
         "filename": "FRONT-5story_template.xml",
+        "title": "FRONT-5story_template.xml",
         "usage": "continuation",
         "boxes": [
           {
@@ -457,6 +465,7 @@
       {
         "section": "FRONT_SECTION",
         "filename": "FRONT-4story-holiday-deco_template.xml",
+        "title": "FRONT-4story-holiday-deco_template.xml",
         "usage": "front",
         "boxes": [
           {
@@ -494,6 +503,7 @@
       {
         "section": "FRONT_SECTION",
         "filename": "FRONT-4story-holiday-deco_template.xml",
+        "title": "FRONT-4story-holiday-deco_template.xml",
         "usage": "continuation",
         "boxes": [
           {
@@ -531,6 +541,7 @@
       {
         "section": "FRONT_SECTION_ITP",
         "filename": "FRONT-4story-holiday-deco_template.xml",
+        "title": "FRONT-4story-holiday-deco_template.xml",
         "usage": "front",
         "boxes": [
           {
@@ -568,6 +579,7 @@
       {
         "section": "FRONT_SECTION_ITP",
         "filename": "FRONT-4story-holiday-deco_template.xml",
+        "title": "FRONT-4story-holiday-deco_template.xml",
         "usage": "continuation",
         "boxes": [
           {
@@ -605,48 +617,8 @@
       {
         "section": "FRONT_SECTION",
         "filename": "FRONT-5story-holiday-deco_template.xml",
+        "title": "FRONT-5story-holiday-deco_template.xml",
         "usage": "front",
-        "boxes": [
-          {
-            "id": "b1",
-            "images": {}
-          },
-          {
-            "id": "deco",
-            "images": {
-              "tablet": {
-                "width": 546,
-                "height": 356
-              }
-            }
-          },
-          {
-            "id": "b2",
-            "images": {}
-          },
-          {
-            "id": "b3",
-            "images": {}
-          },
-          {
-            "id": "b4",
-            "images": {}
-          },
-          {
-            "id": "b5",
-            "images": {
-              "tablet": {
-                "width": 55,
-                "height": 55
-              }
-            }
-          }
-        ]
-      },
-      {
-        "section": "FRONT_SECTION",
-        "filename": "FRONT-5story-holiday-deco_template.xml",
-        "usage": "continuation",
         "boxes": [
           {
             "id": "b1",
@@ -685,9 +657,10 @@
         ]
       },
       {
-        "section": "FRONT_SECTION_ITP",
+        "section": "FRONT_SECTION",
         "filename": "FRONT-5story-holiday-deco_template.xml",
-        "usage": "front",
+        "title": "FRONT-5story-holiday-deco_template.xml",
+        "usage": "continuation",
         "boxes": [
           {
             "id": "b1",
@@ -728,6 +701,49 @@
       {
         "section": "FRONT_SECTION_ITP",
         "filename": "FRONT-5story-holiday-deco_template.xml",
+        "title": "FRONT-5story-holiday-deco_template.xml",
+        "usage": "front",
+        "boxes": [
+          {
+            "id": "b1",
+            "images": {}
+          },
+          {
+            "id": "deco",
+            "images": {
+              "tablet": {
+                "width": 546,
+                "height": 356
+              }
+            }
+          },
+          {
+            "id": "b2",
+            "images": {}
+          },
+          {
+            "id": "b3",
+            "images": {}
+          },
+          {
+            "id": "b4",
+            "images": {}
+          },
+          {
+            "id": "b5",
+            "images": {
+              "tablet": {
+                "width": 55,
+                "height": 55
+              }
+            }
+          }
+        ]
+      },
+      {
+        "section": "FRONT_SECTION_ITP",
+        "filename": "FRONT-5story-holiday-deco_template.xml",
+        "title": "FRONT-5story-holiday-deco_template.xml",
         "usage": "continuation",
         "boxes": [
           {
@@ -769,6 +785,7 @@
       {
         "section": "FRONT_SECTION",
         "filename": "FRONT-6story-NO-WHATSNEWS.xml",
+        "title": "FRONT-6story-NO-WHATSNEWS.xml",
         "usage": "front",
         "boxes": [
           {
@@ -810,6 +827,7 @@
       {
         "section": "FRONT_SECTION_ITP",
         "filename": "FRONT-6story-NO-WHATSNEWS.xml",
+        "title": "FRONT-6story-NO-WHATSNEWS.xml",
         "usage": "front",
         "boxes": [
           {
@@ -851,6 +869,7 @@
       {
         "section": "FRONT_SECTION",
         "filename": "FRONT-6story-Vimage-deco_template.xml",
+        "title": "FRONT-6story-Vimage-deco_template.xml",
         "usage": "front",
         "boxes": [
           {
@@ -892,6 +911,7 @@
       {
         "section": "FRONT_SECTION_ITP",
         "filename": "FRONT-6story-Vimage-deco_template.xml",
+        "title": "FRONT-6story-Vimage-deco_template.xml",
         "usage": "front",
         "boxes": [
           {
@@ -933,6 +953,7 @@
       {
         "section": "OPINION",
         "filename": "OPINION-7story-deco_template.xml",
+        "title": "OPINION-7story-deco_template.xml",
         "usage": "front",
         "boxes": [
           {
@@ -977,6 +998,7 @@
       {
         "section": "OPINION_ITP",
         "filename": "OPINION-7story-deco_template.xml",
+        "title": "OPINION-7story-deco_template.xml",
         "usage": "front",
         "boxes": [
           {
@@ -1021,6 +1043,7 @@
       {
         "section": "OPINION",
         "filename": "OPINION-6story-deco_template.xml",
+        "title": "OPINION-6story-deco_template.xml",
         "usage": "front",
         "boxes": [
           {
@@ -1061,6 +1084,7 @@
       {
         "section": "OPINION_ITP",
         "filename": "OPINION-6story-deco_template.xml",
+        "title": "OPINION-6story-deco_template.xml",
         "usage": "front",
         "boxes": [
           {
@@ -1101,6 +1125,7 @@
       {
         "section": "OPINION",
         "filename": "OPINION-2story-deco_template.xml",
+        "title": "OPINION-2story-deco_template.xml",
         "usage": "front",
         "boxes": [
           {
@@ -1125,6 +1150,7 @@
       {
         "section": "OPINION_ITP",
         "filename": "OPINION-2story-deco_template.xml",
+        "title": "OPINION-2story-deco_template.xml",
         "usage": "front",
         "boxes": [
           {
@@ -1149,6 +1175,7 @@
       {
         "section": "SPECIAL_REPORT",
         "filename": "CONTINUATION-8story-future-of-everything_template.xml",
+        "title": "CONTINUATION-8story-future-of-everything_template.xml",
         "usage": "continuation",
         "boxes": [
           {
@@ -1262,7 +1289,7 @@
       {
         "section": "SPECIAL_REPORT",
         "filename": "CONTINUATION-7story-future-of-everything_template.xml",
-        "title": "7 story - Future of Everything",
+        "title": "CONTINUATION-7story-future-of-everything_template.xml",
         "usage": "continuation",
         "boxes": [
           {
@@ -1362,7 +1389,7 @@
       {
         "section": "SPECIAL_REPORT",
         "filename": "CONTINUATION-5story-future-of-everything_template.xml",
-        "title": "5 story - Future of Everything",
+        "title": "CONTINUATION-5story-future-of-everything_template.xml",
         "usage": "continuation",
         "boxes": [
             {
@@ -1437,7 +1464,7 @@
       {
         "section": "SPECIAL_REPORT",
         "filename": "CONTINUATION-4story-future-of-everything_template.xml",
-        "title": "4 story - Future of Everything",
+        "title": "CONTINUATION-4story-future-of-everything_template.xml",
         "usage": "continuation",
         "boxes": [
             {
@@ -1499,6 +1526,7 @@
       {
         "section": "WSJ_MAGAZINE",
         "filename": "CONTINUATION-6story-magazine-promo_template.xml",
+        "title": "CONTINUATION-6story-magazine-promo_template.xml",
         "usage": "continuation",
         "boxes": [
           {
@@ -1583,6 +1611,7 @@
       },
       {
         "filename": "SECTION-6story_template.xml",
+        "title": "SECTION-6story_template.xml",
         "usage": "front",
         "boxes": [
           {
@@ -1623,6 +1652,7 @@
       },
       {
         "filename": "SECTION-6story-deco_template.xml",
+        "title": "SECTION-6story-deco_template.xml",
         "usage": "front",
         "boxes": [
           {
@@ -1667,6 +1697,7 @@
       },
       {
         "filename": "PEARLHARBOR_template.xml",
+        "title": "PEARLHARBOR_template.xml",
         "usage": "front",
         "boxes": [
           {
@@ -1711,6 +1742,7 @@
       },
       {
         "filename": "SECTION-FullCoverPlusThree_NORAIL_white_template.xml",
+        "title": "SECTION-FullCoverPlusThree_NORAIL_white_template.xml",
         "usage": "front",
         "boxes": [
           {
@@ -1742,6 +1774,7 @@
       },
       {
         "filename": "SECTION-FullCoverPlusThree_NORAIL_black_template.xml",
+        "title": "SECTION-FullCoverPlusThree_NORAIL_black_template.xml",
         "usage": "front",
         "boxes": [
           {
@@ -1773,6 +1806,7 @@
       },
       {
         "filename": "SECTION-6story_template.xml",
+        "title": "SECTION-6story_template.xml",
         "usage": "continuation",
         "boxes": [
           {
@@ -1813,6 +1847,7 @@
       },
       {
         "filename": "SECTION-6story-deco_template.xml",
+        "title": "SECTION-6story-deco_template.xml",
         "usage": "continuation",
         "boxes": [
           {
@@ -1857,6 +1892,7 @@
       },
       {
         "filename": "SECTION-6story-POC_template.xml",
+        "title": "SECTION-6story-POC_template.xml",
         "usage": "front",
         "boxes": [
           {
@@ -1897,6 +1933,7 @@
       },
       {
         "filename": "SECTION-6story-POC_template.xml",
+        "title": "SECTION-6story-POC_template.xml",
         "usage": "continuation",
         "boxes": [
           {
@@ -1937,6 +1974,7 @@
       },
       {
         "filename": "SECTION-3story_template.xml",
+        "title": "SECTION-3story_template.xml",
         "usage": "front",
         "boxes": [
           {
@@ -1970,6 +2008,7 @@
       },
       {
         "filename": "SECTION-3story_template.xml",
+        "title": "SECTION-3story_template.xml",
         "usage": "continuation",
         "boxes": [
           {
@@ -2003,6 +2042,7 @@
       },
       {
         "filename": "SECTION-1story_template.xml",
+        "title": "SECTION-1story_template.xml",
         "usage": "front",
         "boxes": [
           {
@@ -2022,6 +2062,7 @@
       },
       {
         "filename": "SECTION-FullCoverPlusThree_white_template.xml",
+        "title": "SECTION-FullCoverPlusThree_white_template.xml",
         "usage": "front",
         "boxes": [
           {
@@ -2053,6 +2094,7 @@
       },
       {
         "filename": "SECTION-FullCoverPlusThree_black_template.xml",
+        "title": "SECTION-FullCoverPlusThree_black_template.xml",
         "usage": "front",
         "boxes": [
           {
@@ -2084,6 +2126,7 @@
       },
       {
         "filename": "DECO-1story-future-of-everything_template.xml",
+        "title": "DECO-1story-future-of-everything_template.xml",
         "section": "SPECIAL_REPORT",
         "usage": "front",
         "boxes": [
@@ -2104,6 +2147,7 @@
       },
       {
         "filename": "CONTINUATION-1story-future-of-everything_template.xml",
+        "title": "CONTINUATION-1story-future-of-everything_template.xml",
         "section": "SPECIAL_REPORT",
         "usage": "continuation",
         "boxes": [

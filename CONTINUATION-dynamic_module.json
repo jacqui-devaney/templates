@@ -1,24 +1,17 @@
 {
   "influence": [
-    {
+     {
       "key": "hide_icon",
-      "title": "Hide/Show Icon",
-    "comment":"Toggling Icon so that it's hidden",
+      "title": "Hide | Show Icon",
       "type": "toggle",
-      "options": [
-        {
-          "label": "Hide",
-          "values": {
-            "show_image": true
-          }
-        }, {
-          "label": "Show",
-          "values": {
-            "show_image": false
-          }
-        }
-      ]
-    },
+      "options": [{
+        "label": "Show",
+        "values": { "hide_icon": false }
+      }, {
+        "label": "Hide",
+        "values": { "hide_icon": true }
+      }]
+    },  
     {
       "key": "strap",
       "title": "Subsection Strap",

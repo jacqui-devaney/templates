@@ -13,12 +13,11 @@
 				},
 				#caption: {
 					padding: [18, 10, 18, 10],
-					width: =view.width,
 					<!-- fit at least #timestamp and single line of caption/headline, but dont go above 120px in order to avoid too much white spase -->
 					height: { $subtract: [{ $min:[{ $max:[{ $multiply: [=view.height , 0.4] }, 45] }, 120] }, 36] }
 				},
 				#headline: {
-					font-name: ChronicleDisp-Semibold,
+					font-name: ChronicleDisplay-Semi,
 					color: #2B3333,
 					font-size: 22,
 					line-height: 26
@@ -43,12 +42,11 @@
 				},
 				#caption: {
 					padding: [10, 0, 10, 0],
-					width: =view.width,
 					<!-- fit at least #timestamp and single line of caption/headline, but dont go above 120px in order to avoid too much white spase -->
 					height: { $subtract: [{ $min:[{ $max:[{ $multiply: [=view.height , 0.4] }, 45] }, 120] }, 20] }
 				},
 				#headline: {
-					font-name: ChronicleDisp-Semibold,
+					font-name: "ChronicleSSmMedium-Regular",
 					color: #2B3333,
 					font-size: 14,
 					line-height: 20

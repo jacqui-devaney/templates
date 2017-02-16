@@ -82,7 +82,7 @@
 							},
 							more-than: 400
 						},
-						{ if: { $count: =media.caption }, more-than: 130 }
+						{ if: { $count: [=media.caption] }, more-than: 130 }
 					], 
 					then: { $join: [
 						{ $substr: [=media.caption, 0, 130] },

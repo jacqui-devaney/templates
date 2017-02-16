@@ -470,8 +470,8 @@
             "id": "b1",
             "images": {
               "tablet": {
-                "width": 725,
-                "height": 435
+                "width": 640,
+                "height": 360
               },
               "phone": {
                 "width": 365,
@@ -554,6 +554,66 @@
               "phone": {
                 "width": 365,
                 "height": 175
+              }
+            }
+          }
+        ]
+      },
+      {
+        "filename": "SECTION-5story_template2.xml",
+        "title": "5 story G Photo, set on the vertical grid",
+        "usage": "front",
+        "boxes": [
+          {
+            "id": "b1",
+            "images": {
+              "tablet": {
+                "width": 484,
+                "height": 322
+              },
+              "phone": {
+                "width": 414,
+                "height": 275
+              }
+            }
+          },
+          {
+            "id": "b2",
+            "images": {
+              "phone": {
+                "width": 182,
+                "height": 122
+              },
+              "tablet": {
+                "width": 264,
+                "height": 176
+              }
+            }
+          },
+          {
+            "id": "b3",
+            "images": {
+              "phone": {
+                "width": 182,
+                "height": 122
+              }
+            }
+          },
+          {
+            "id": "b4",
+            "images": {
+              "phone": {
+                "width": 182,
+                "height": 122
+              }
+            }
+          },
+          {
+            "id": "b5",
+            "images": {
+              "phone": {
+                "width": 182,
+                "height": 122
               }
             }
           }

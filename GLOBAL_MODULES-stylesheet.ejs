@@ -66,8 +66,8 @@
 	.body: {
 		font-name: ChronicleSSmBook-Regular,
 		text-indent: 0,
-		font-size:{$multiply:{if: =options.large_body, then:20, else:14}},
-		line-height:{$multiply:{if: =options.large_body, then:26, else:20}},
+		font-size:{if: =options.large_body, then:20, else:14},
+		line-height:{if: =options.large_body, then:26, else:20},
 		text-overflow: =text.overflow,
 		text-align: left,
 		hyphens:auto,

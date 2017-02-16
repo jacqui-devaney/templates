@@ -98,12 +98,29 @@
 			},
 			#article_status: {
 				padding: [{if: =page.section, equals: "OPINION", then: 8, else: {if: =article.category, equals: "Opinion", then: 29, else: 8}}, 0, 0, 4],
+				display: { if-all: [=issue.locked, =article.paid], then: none, else: inherit },
 				left: 0,
 				width: 13,
 				height: 13,
 				options: {
 					identifier: =article.id
 				}
+			},
+			.body-first-p-mark: {
+				<!--trim the non-breaking space from the content, as we dont want to add extra width to the "Lock_box"-->
+				content: "K"
+			},
+			#lock_box: {
+				padding: [{if: =page.section, equals: "OPINION", then: 4, else: {if: =article.category, equals: "Opinion", then: 29, else: 4}}, 0, 0, 4],
+				display: { if-all: [=issue.locked, =article.paid, =options.show_body], then: inherit, else: none },
+				font-size: 18,
+				<!--key glyph seems to add a second line regardless it can render on just one, so squash the lines so it renders in the same vertical space as a single line of Hedadline -->
+				line-height: 9,
+				left: 0,
+				width: 13
+			},
+			#key_inline: {
+				display: none
 			},
 			image:{
 			height: {
@@ -142,6 +159,9 @@
 			},
 			#article_status: {
 				display: none
+			},
+			#lock_box: {
+				display: none
 			}
 		}
 	}</style>
@@ -165,11 +185,13 @@
 			<p id="headline" class="module_headline"><mark class="m_headline" /><mark class="key" /></p>
 		</panel>
 		<box id="article_status" embed="article-status"/>
+		<box id="lock_box"><p><mark class="body-first-p-mark" /></p></box>
+		<box id="deco_icon" embed="deco-image"/>
 		<box id="image_container" embed="deco-image">
 			<image class="summary-image" />
 		</box>
 		<panel class="body">
-			<p id="body-first-p"><mark class="body-first-p-mark" /><mark class="module_summary" /></p>
+			<p id="body-first-p"><mark id="key_inline" class="body-first-p-mark" /><mark class="module_summary" /></p>
 		</panel>
 	</panel>
 </jpml>

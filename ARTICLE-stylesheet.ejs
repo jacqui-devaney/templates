@@ -34,7 +34,8 @@
 	h3: { 
 		font-name: {if: =intent.article, then:ChronicleSSmMedium-Regular, else:ChronicleSSmMedium-Regular},
 		text-indent: 0,
-		text-transform: uppercase
+		text-transform: uppercase,
+		padding: {if: scale.tablet, then: [20, 0, 0, 0], else: [0, 0, 0, 0]}
 	},
 	.article_body: {
 		column-count: { if: =scale.tablet, then: { if: =portrait, then: 3, else: 4 } },

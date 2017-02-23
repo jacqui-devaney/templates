@@ -4,9 +4,11 @@
     <style src="ADVERTISING-stylesheet.ejs"/>
     <style src="ADVERTISING-stylesheet-gridoverride.ejs"/>
     <style src="PHONE-stylesheet.ejs"/>
+    <style src="RAIL-stylesheet.ejs" />
 
     <style>
         { $switch: [
+            { if: =scale.rail, then: {} },
             { if: =scale.phone,
                 then: {
                     #b1:	{
@@ -73,11 +75,11 @@
         ]}
     </style>
 
-    <box id="b1" embed="article" class="portrait-xposition-1 portrait-yposition-5 portrait-columns-12 portrait-lines-21 landscape-xposition-1 landscape-yposition-5 landscape-columns-12 landscape-lines-21 maude" module="MEDIA-VIDEO-STANDARD_module.xml" />
+    <box id="b1" embed="article" class="portrait-xposition-1 portrait-yposition-5 portrait-columns-12 portrait-lines-21 landscape-xposition-1 landscape-yposition-5 landscape-columns-12 landscape-lines-21 maude unit_plain" module="MEDIA-VIDEO-STANDARD_module.xml" />
 
-    <box id="b2" embed="article" class="portrait-xposition-1 portrait-yposition-28 portrait-columns-4 portrait-lines-10 landscape-xposition-1 landscape-yposition-27 landscape-columns-4 landscape-lines-10 maude" module="MEDIA-VIDEO-STANDARD_module.xml" />
+    <box id="b2" embed="article" class="portrait-xposition-1 portrait-yposition-28 portrait-columns-4 portrait-lines-10 landscape-xposition-1 landscape-yposition-27 landscape-columns-4 landscape-lines-10 maude unit_plain" module="MEDIA-VIDEO-STANDARD_module.xml" />
 
-    <box id="b3" embed="article" class="portrait-xposition-5 portrait-yposition-28 portrait-columns-4 portrait-lines-10 landscape-xposition-5 landscape-yposition-27 landscape-columns-4 landscape-lines-10 maude" module="MEDIA-VIDEO-STANDARD_module.xml" />
+    <box id="b3" embed="article" class="portrait-xposition-5 portrait-yposition-28 portrait-columns-4 portrait-lines-10 landscape-xposition-5 landscape-yposition-27 landscape-columns-4 landscape-lines-10 maude unit_plain" module="MEDIA-VIDEO-STANDARD_module.xml" />
 
     <box id="small_ad_container" class="phone_only maude unit_ad">
         <box id="cube_ad" embed="fullpagead">
@@ -88,12 +90,12 @@
         </box>
     </box>
 
-    <box id="b4" embed="article" class="portrait-xposition-9 portrait-yposition-28 portrait-columns-4 portrait-lines-10 landscape-xposition-9 landscape-yposition-27 landscape-columns-4 landscape-lines-10 maude" module="MEDIA-VIDEO-STANDARD_module.xml" />
+    <box id="b4" embed="article" class="portrait-xposition-9 portrait-yposition-28 portrait-columns-4 portrait-lines-10 landscape-xposition-9 landscape-yposition-27 landscape-columns-4 landscape-lines-10 maude unit_plain" module="MEDIA-VIDEO-STANDARD_module.xml" />
 
-    <box id="b5" embed="article" class="portrait-xposition-1 portrait-yposition-40 portrait-columns-4 portrait-lines-10 landscape-xposition-13 landscape-yposition-5 landscape-columns-4 landscape-lines-10 maude" module="MEDIA-VIDEO-STANDARD_module.xml" />
+    <box id="b5" embed="article" class="portrait-xposition-1 portrait-yposition-40 portrait-columns-4 portrait-lines-10 landscape-xposition-13 landscape-yposition-5 landscape-columns-4 landscape-lines-10 maude unit_plain" module="MEDIA-VIDEO-STANDARD_module.xml" />
 
-    <box id="b6" embed="article" class="portrait-xposition-5 portrait-yposition-40 portrait-columns-4 portrait-lines-10 landscape-xposition-13 landscape-yposition-16 landscape-columns-4 landscape-lines-10 maude" module="MEDIA-VIDEO-STANDARD_module.xml" />
+    <box id="b6" embed="article" class="portrait-xposition-5 portrait-yposition-40 portrait-columns-4 portrait-lines-10 landscape-xposition-13 landscape-yposition-16 landscape-columns-4 landscape-lines-10 maude unit_plain" module="MEDIA-VIDEO-STANDARD_module.xml" />
 
-    <box id="b7" embed="article" class="portrait-xposition-9 portrait-yposition-40 portrait-columns-4 portrait-lines-10 landscape-xposition-13 landscape-yposition-27 landscape-columns-4 landscape-lines-10 maude" module="MEDIA-VIDEO-STANDARD_module.xml" />
+    <box id="b7" embed="article" class="portrait-xposition-9 portrait-yposition-40 portrait-columns-4 portrait-lines-10 landscape-xposition-13 landscape-yposition-27 landscape-columns-4 landscape-lines-10 maude unit_plain" module="MEDIA-VIDEO-STANDARD_module.xml" />
 
 </jpml>

@@ -6,234 +6,333 @@
 	{if: =scale.phone, then: {
 		#b1:	{
 			$switch: [
-				{ if: =articles.b1.type,	equals: MobileDecoSmallPromo, then: { height: 402, options: { module: SMALL-PROMO_module.xml } }},
-				{ if: =articles.b1.type,	equals: MobileDecoBigPromo, then: { height: 468, options: { module: BIG-PROMO_module.xml } }},
-				{ if: =articles.b1.type,	equals: MobileDecoTextPromo, then: { height: 205, options: { module: TEXT-PROMO_module.xml } }},
-				{ if: =articles.b1.type,	equals: MobileDecoQuiz, then: { height: 402, options: { module: SMALL-PROMO_module.xml } }}
+				{ if: =articles.b1.layout.module, 		equals: SMALL-PROMO, 					then: { height: 402, options: { module: SMALL-PROMO_module.xml } }},
+				{ if: =articles.b1.layout.module, 		equals: BIG-PROMO, 						then: { height: 468, options: { module: BIG-PROMO_module.xml } }},
+				{ if: =articles.b1.layout.module, 		equals: TEXT-PROMO, 					then: { height: 205, options: { module: TEXT-PROMO_module.xml } }},
+				{ if: =articles.b1.type,							equals: MobileDecoSmallPromo, then: { height: 402, options: { module: SMALL-PROMO_module.xml } }},
+				{ if: =articles.b1.type,							equals: MobileDecoBigPromo, 	then: { height: 468, options: { module: BIG-PROMO_module.xml } }},
+				{ if: =articles.b1.type,							equals: MobileDecoTextPromo, 	then: { height: 205, options: { module: TEXT-PROMO_module.xml } }},
+				{ if: =articles.b1.type,							equals: MobileDecoQuiz, 			then: { height: 402, options: { module: SMALL-PROMO_module.xml } }}
 		]},
 		#b2:	{
 			$switch: [
-				{ if: =articles.b2.type,	equals: MobileDecoSmallPromo, then: { height: 402, options: { module: SMALL-PROMO_module.xml } }},
-				{ if: =articles.b2.type,	equals: MobileDecoBigPromo, then: { height: 468, options: { module: BIG-PROMO_module.xml } }},
-				{ if: =articles.b2.type,	equals: MobileDecoTextPromo, then: { height: 205, options: { module: TEXT-PROMO_module.xml } }},
-				{ if: =articles.b2.type,	equals: MobileDecoQuiz, then: { height: 402, options: { module: SMALL-PROMO_module.xml } }}
+				{ if: =articles.b2.layout.module, 		equals: SMALL-PROMO, 					then: { height: 402, options: { module: SMALL-PROMO_module.xml } }},
+				{ if: =articles.b2.layout.module, 		equals: BIG-PROMO, 						then: { height: 468, options: { module: BIG-PROMO_module.xml } }},
+				{ if: =articles.b2.layout.module, 		equals: TEXT-PROMO, 					then: { height: 205, options: { module: TEXT-PROMO_module.xml } }},
+				{ if: =articles.b2.type,							equals: MobileDecoSmallPromo, then: { height: 402, options: { module: SMALL-PROMO_module.xml } }},
+				{ if: =articles.b2.type,							equals: MobileDecoBigPromo, 	then: { height: 468, options: { module: BIG-PROMO_module.xml } }},
+				{ if: =articles.b2.type,							equals: MobileDecoTextPromo, 	then: { height: 205, options: { module: TEXT-PROMO_module.xml } }},
+				{ if: =articles.b2.type,							equals: MobileDecoQuiz, 			then: { height: 402, options: { module: SMALL-PROMO_module.xml } }}
 		]},
 		#b3:	{
 			$switch: [
-				{ if: =articles.b3.type,	equals: MobileDecoSmallPromo, then: { height: 402, options: { module: SMALL-PROMO_module.xml } }},
-				{ if: =articles.b3.type,	equals: MobileDecoBigPromo, then: { height: 468, options: { module: BIG-PROMO_module.xml } }},
-				{ if: =articles.b3.type,	equals: MobileDecoTextPromo, then: { height: 205, options: { module: TEXT-PROMO_module.xml } }},
-				{ if: =articles.b3.type,	equals: MobileDecoQuiz, then: { height: 402, options: { module: SMALL-PROMO_module.xml } }}
+				{ if: =articles.b3.layout.module, 		equals: SMALL-PROMO, 					then: { height: 402, options: { module: SMALL-PROMO_module.xml } }},
+				{ if: =articles.b3.layout.module, 		equals: BIG-PROMO, 						then: { height: 468, options: { module: BIG-PROMO_module.xml } }},
+				{ if: =articles.b3.layout.module, 		equals: TEXT-PROMO, 					then: { height: 205, options: { module: TEXT-PROMO_module.xml } }},
+				{ if: =articles.b3.type,							equals: MobileDecoSmallPromo, then: { height: 402, options: { module: SMALL-PROMO_module.xml } }},
+				{ if: =articles.b3.type,							equals: MobileDecoBigPromo, 	then: { height: 468, options: { module: BIG-PROMO_module.xml } }},
+				{ if: =articles.b3.type,							equals: MobileDecoTextPromo, 	then: { height: 205, options: { module: TEXT-PROMO_module.xml } }},
+				{ if: =articles.b3.type,							equals: MobileDecoQuiz, 			then: { height: 402, options: { module: SMALL-PROMO_module.xml } }}
 		]},
 		#b4:	{
 			$switch: [
-				{ if: =articles.b4.type,	equals: MobileDecoSmallPromo, then: { height: 402, options: { module: SMALL-PROMO_module.xml } }},
-				{ if: =articles.b4.type,	equals: MobileDecoBigPromo, then: { height: 468, options: { module: BIG-PROMO_module.xml } }},
-				{ if: =articles.b4.type,	equals: MobileDecoTextPromo, then: { height: 205, options: { module: TEXT-PROMO_module.xml } }},
-				{ if: =articles.b4.type,	equals: MobileDecoQuiz, then: { height: 402, options: { module: SMALL-PROMO_module.xml } }}
+				{ if: =articles.b4.layout.module, 		equals: SMALL-PROMO, 					then: { height: 402, options: { module: SMALL-PROMO_module.xml } }},
+				{ if: =articles.b4.layout.module, 		equals: BIG-PROMO, 						then: { height: 468, options: { module: BIG-PROMO_module.xml } }},
+				{ if: =articles.b4.layout.module, 		equals: TEXT-PROMO, 					then: { height: 205, options: { module: TEXT-PROMO_module.xml } }},
+				{ if: =articles.b4.type,							equals: MobileDecoSmallPromo, then: { height: 402, options: { module: SMALL-PROMO_module.xml } }},
+				{ if: =articles.b4.type,							equals: MobileDecoBigPromo, 	then: { height: 468, options: { module: BIG-PROMO_module.xml } }},
+				{ if: =articles.b4.type,							equals: MobileDecoTextPromo, 	then: { height: 205, options: { module: TEXT-PROMO_module.xml } }},
+				{ if: =articles.b4.type,							equals: MobileDecoQuiz, 			then: { height: 402, options: { module: SMALL-PROMO_module.xml } }}
 		]},
 		#b5:	{
 			$switch: [
-				{ if: =articles.b5.type,	equals: MobileDecoSmallPromo, then: { height: 402, options: { module: SMALL-PROMO_module.xml } }},
-				{ if: =articles.b5.type,	equals: MobileDecoBigPromo, then: { height: 468, options: { module: BIG-PROMO_module.xml } }},
-				{ if: =articles.b5.type,	equals: MobileDecoTextPromo, then: { height: 205, options: { module: TEXT-PROMO_module.xml } }},
-				{ if: =articles.b5.type,	equals: MobileDecoQuiz, then: { height: 402, options: { module: SMALL-PROMO_module.xml } }}
+				{ if: =articles.b5.layout.module, 		equals: SMALL-PROMO, 					then: { height: 402, options: { module: SMALL-PROMO_module.xml } }},
+				{ if: =articles.b5.layout.module, 		equals: BIG-PROMO, 						then: { height: 468, options: { module: BIG-PROMO_module.xml } }},
+				{ if: =articles.b5.layout.module, 		equals: TEXT-PROMO, 					then: { height: 205, options: { module: TEXT-PROMO_module.xml } }},
+				{ if: =articles.b5.type,							equals: MobileDecoSmallPromo, then: { height: 402, options: { module: SMALL-PROMO_module.xml } }},
+				{ if: =articles.b5.type,							equals: MobileDecoBigPromo, 	then: { height: 468, options: { module: BIG-PROMO_module.xml } }},
+				{ if: =articles.b5.type,							equals: MobileDecoTextPromo, 	then: { height: 205, options: { module: TEXT-PROMO_module.xml } }},
+				{ if: =articles.b5.type,							equals: MobileDecoQuiz, 			then: { height: 402, options: { module: SMALL-PROMO_module.xml } }}
 		]},
 		#b6:	{
 			$switch: [
-				{ if: =articles.b6.type,	equals: MobileDecoSmallPromo, then: { height: 402, options: { module: SMALL-PROMO_module.xml } }},
-				{ if: =articles.b6.type,	equals: MobileDecoBigPromo, then: { height: 468, options: { module: BIG-PROMO_module.xml } }},
-				{ if: =articles.b6.type,	equals: MobileDecoTextPromo, then: { height: 205, options: { module: TEXT-PROMO_module.xml } }},
-				{ if: =articles.b6.type,	equals: MobileDecoQuiz, then: { height: 402, options: { module: SMALL-PROMO_module.xml } }}
+				{ if: =articles.b6.layout.module, 		equals: SMALL-PROMO, 					then: { height: 402, options: { module: SMALL-PROMO_module.xml } }},
+				{ if: =articles.b6.layout.module, 		equals: BIG-PROMO, 						then: { height: 468, options: { module: BIG-PROMO_module.xml } }},
+				{ if: =articles.b6.layout.module, 		equals: TEXT-PROMO, 					then: { height: 205, options: { module: TEXT-PROMO_module.xml } }},
+				{ if: =articles.b6.type,							equals: MobileDecoSmallPromo, then: { height: 402, options: { module: SMALL-PROMO_module.xml } }},
+				{ if: =articles.b6.type,							equals: MobileDecoBigPromo, 	then: { height: 468, options: { module: BIG-PROMO_module.xml } }},
+				{ if: =articles.b6.type,							equals: MobileDecoTextPromo, 	then: { height: 205, options: { module: TEXT-PROMO_module.xml } }},
+				{ if: =articles.b6.type,							equals: MobileDecoQuiz, 			then: { height: 402, options: { module: SMALL-PROMO_module.xml } }}
 		]},
 		#b7:	{
 			$switch: [
-				{ if: =articles.b7.type,	equals: MobileDecoSmallPromo, then: { height: 402, options: { module: SMALL-PROMO_module.xml } }},
-				{ if: =articles.b7.type,	equals: MobileDecoBigPromo, then: { height: 468, options: { module: BIG-PROMO_module.xml } }},
-				{ if: =articles.b7.type,	equals: MobileDecoTextPromo, then: { height: 205, options: { module: TEXT-PROMO_module.xml } }},
-				{ if: =articles.b7.type,	equals: MobileDecoQuiz, then: { height: 402, options: { module: SMALL-PROMO_module.xml } }}
+				{ if: =articles.b7.layout.module, 		equals: SMALL-PROMO, 					then: { height: 402, options: { module: SMALL-PROMO_module.xml } }},
+				{ if: =articles.b7.layout.module, 		equals: BIG-PROMO, 						then: { height: 468, options: { module: BIG-PROMO_module.xml } }},
+				{ if: =articles.b7.layout.module, 		equals: TEXT-PROMO, 					then: { height: 205, options: { module: TEXT-PROMO_module.xml } }},
+				{ if: =articles.b7.type,							equals: MobileDecoSmallPromo, then: { height: 402, options: { module: SMALL-PROMO_module.xml } }},
+				{ if: =articles.b7.type,							equals: MobileDecoBigPromo, 	then: { height: 468, options: { module: BIG-PROMO_module.xml } }},
+				{ if: =articles.b7.type,							equals: MobileDecoTextPromo, 	then: { height: 205, options: { module: TEXT-PROMO_module.xml } }},
+				{ if: =articles.b7.type,							equals: MobileDecoQuiz, 			then: { height: 402, options: { module: SMALL-PROMO_module.xml } }}
 		]},
 		#b8:	{
 			$switch: [
-				{ if: =articles.b8.type,	equals: MobileDecoSmallPromo, then: { height: 402, options: { module: SMALL-PROMO_module.xml } }},
-				{ if: =articles.b8.type,	equals: MobileDecoBigPromo, then: { height: 468, options: { module: BIG-PROMO_module.xml } }},
-				{ if: =articles.b8.type,	equals: MobileDecoTextPromo, then: { height: 205, options: { module: TEXT-PROMO_module.xml } }},
-				{ if: =articles.b8.type,	equals: MobileDecoQuiz, then: { height: 402, options: { module: SMALL-PROMO_module.xml } }}
+				{ if: =articles.b8.layout.module, 		equals: SMALL-PROMO, 					then: { height: 402, options: { module: SMALL-PROMO_module.xml } }},
+				{ if: =articles.b8.layout.module, 		equals: BIG-PROMO, 						then: { height: 468, options: { module: BIG-PROMO_module.xml } }},
+				{ if: =articles.b8.layout.module, 		equals: TEXT-PROMO, 					then: { height: 205, options: { module: TEXT-PROMO_module.xml } }},
+				{ if: =articles.b8.type,							equals: MobileDecoSmallPromo, then: { height: 402, options: { module: SMALL-PROMO_module.xml } }},
+				{ if: =articles.b8.type,							equals: MobileDecoBigPromo, 	then: { height: 468, options: { module: BIG-PROMO_module.xml } }},
+				{ if: =articles.b8.type,							equals: MobileDecoTextPromo, 	then: { height: 205, options: { module: TEXT-PROMO_module.xml } }},
+				{ if: =articles.b8.type,							equals: MobileDecoQuiz, 			then: { height: 402, options: { module: SMALL-PROMO_module.xml } }}
 		]},
 		#b9:	{
 			$switch: [
-				{ if: =articles.b9.type,	equals: MobileDecoSmallPromo, then: { height: 402, options: { module: SMALL-PROMO_module.xml } }},
-				{ if: =articles.b9.type,	equals: MobileDecoBigPromo, then: { height: 468, options: { module: BIG-PROMO_module.xml } }},
-				{ if: =articles.b9.type,	equals: MobileDecoTextPromo, then: { height: 205, options: { module: TEXT-PROMO_module.xml } }},
-				{ if: =articles.b9.type,	equals: MobileDecoQuiz, then: { height: 402, options: { module: SMALL-PROMO_module.xml } }}
+				{ if: =articles.b9.layout.module, 		equals: SMALL-PROMO, 					then: { height: 402, options: { module: SMALL-PROMO_module.xml } }},
+				{ if: =articles.b9.layout.module, 		equals: BIG-PROMO, 						then: { height: 468, options: { module: BIG-PROMO_module.xml } }},
+				{ if: =articles.b9.layout.module, 		equals: TEXT-PROMO, 					then: { height: 205, options: { module: TEXT-PROMO_module.xml } }},
+				{ if: =articles.b9.type,							equals: MobileDecoSmallPromo, then: { height: 402, options: { module: SMALL-PROMO_module.xml } }},
+				{ if: =articles.b9.type,							equals: MobileDecoBigPromo, 	then: { height: 468, options: { module: BIG-PROMO_module.xml } }},
+				{ if: =articles.b9.type,							equals: MobileDecoTextPromo, 	then: { height: 205, options: { module: TEXT-PROMO_module.xml } }},
+				{ if: =articles.b9.type,							equals: MobileDecoQuiz, 			then: { height: 402, options: { module: SMALL-PROMO_module.xml } }}
 		]},
 		#b10: {
 			$switch: [
-				{ if: =articles.b10.type,	equals: MobileDecoSmallPromo, then: { height: 402, options: { module: SMALL-PROMO_module.xml } }},
-				{ if: =articles.b10.type,	equals: MobileDecoBigPromo, then: { height: 468, options: { module: BIG-PROMO_module.xml } }},
-				{ if: =articles.b10.type,	equals: MobileDecoTextPromo, then: { height: 205, options: { module: TEXT-PROMO_module.xml } }},
-				{ if: =articles.b10.type,	equals: MobileDecoQuiz, then: { height: 402, options: { module: SMALL-PROMO_module.xml } }}
+				{ if: =articles.b10.layout.module, 		equals: SMALL-PROMO, 					then: { height: 402, options: { module: SMALL-PROMO_module.xml } }},
+				{ if: =articles.b10.layout.module, 		equals: BIG-PROMO, 						then: { height: 468, options: { module: BIG-PROMO_module.xml } }},
+				{ if: =articles.b10.layout.module, 		equals: TEXT-PROMO, 					then: { height: 205, options: { module: TEXT-PROMO_module.xml } }},
+				{ if: =articles.b10.type,							equals: MobileDecoSmallPromo, then: { height: 402, options: { module: SMALL-PROMO_module.xml } }},
+				{ if: =articles.b10.type,							equals: MobileDecoBigPromo, 	then: { height: 468, options: { module: BIG-PROMO_module.xml } }},
+				{ if: =articles.b10.type,							equals: MobileDecoTextPromo, 	then: { height: 205, options: { module: TEXT-PROMO_module.xml } }},
+				{ if: =articles.b10.type,							equals: MobileDecoQuiz, 			then: { height: 402, options: { module: SMALL-PROMO_module.xml } }}
 		]},
 		#b11: {
 			$switch: [
-				{ if: =articles.b11.type,	equals: MobileDecoSmallPromo, then: { height: 402, options: { module: SMALL-PROMO_module.xml } }},
-				{ if: =articles.b11.type,	equals: MobileDecoBigPromo, then: { height: 468, options: { module: BIG-PROMO_module.xml } }},
-				{ if: =articles.b11.type,	equals: MobileDecoTextPromo, then: { height: 205, options: { module: TEXT-PROMO_module.xml } }},
-				{ if: =articles.b11.type,	equals: MobileDecoQuiz, then: { height: 402, options: { module: SMALL-PROMO_module.xml } }}
+				{ if: =articles.b11.layout.module, 		equals: SMALL-PROMO, 					then: { height: 402, options: { module: SMALL-PROMO_module.xml } }},
+				{ if: =articles.b11.layout.module, 		equals: BIG-PROMO, 						then: { height: 468, options: { module: BIG-PROMO_module.xml } }},
+				{ if: =articles.b11.layout.module, 		equals: TEXT-PROMO, 					then: { height: 205, options: { module: TEXT-PROMO_module.xml } }},
+				{ if: =articles.b11.type,							equals: MobileDecoSmallPromo, then: { height: 402, options: { module: SMALL-PROMO_module.xml } }},
+				{ if: =articles.b11.type,							equals: MobileDecoBigPromo, 	then: { height: 468, options: { module: BIG-PROMO_module.xml } }},
+				{ if: =articles.b11.type,							equals: MobileDecoTextPromo, 	then: { height: 205, options: { module: TEXT-PROMO_module.xml } }},
+				{ if: =articles.b11.type,							equals: MobileDecoQuiz, 			then: { height: 402, options: { module: SMALL-PROMO_module.xml } }}
 		]},
 		#b12: {
 			$switch: [
-				{ if: =articles.b12.type,	equals: MobileDecoSmallPromo, then: { height: 402, options: { module: SMALL-PROMO_module.xml } }},
-				{ if: =articles.b12.type,	equals: MobileDecoBigPromo, then: { height: 468, options: { module: BIG-PROMO_module.xml } }},
-				{ if: =articles.b12.type,	equals: MobileDecoTextPromo, then: { height: 205, options: { module: TEXT-PROMO_module.xml } }},
-				{ if: =articles.b12.type,	equals: MobileDecoQuiz, then: { height: 402, options: { module: SMALL-PROMO_module.xml } }}
+				{ if: =articles.b12.layout.module, 		equals: SMALL-PROMO, 					then: { height: 402, options: { module: SMALL-PROMO_module.xml } }},
+				{ if: =articles.b12.layout.module, 		equals: BIG-PROMO, 						then: { height: 468, options: { module: BIG-PROMO_module.xml } }},
+				{ if: =articles.b12.layout.module, 		equals: TEXT-PROMO, 					then: { height: 205, options: { module: TEXT-PROMO_module.xml } }},
+				{ if: =articles.b12.type,							equals: MobileDecoSmallPromo, then: { height: 402, options: { module: SMALL-PROMO_module.xml } }},
+				{ if: =articles.b12.type,							equals: MobileDecoBigPromo, 	then: { height: 468, options: { module: BIG-PROMO_module.xml } }},
+				{ if: =articles.b12.type,							equals: MobileDecoTextPromo, 	then: { height: 205, options: { module: TEXT-PROMO_module.xml } }},
+				{ if: =articles.b12.type,							equals: MobileDecoQuiz, 			then: { height: 402, options: { module: SMALL-PROMO_module.xml } }}
 		]},
 		#b13: {
 			$switch: [
-				{ if: =articles.b13.type,	equals: MobileDecoSmallPromo, then: { height: 402, options: { module: SMALL-PROMO_module.xml } }},
-				{ if: =articles.b13.type,	equals: MobileDecoBigPromo, then: { height: 468, options: { module: BIG-PROMO_module.xml } }},
-				{ if: =articles.b13.type,	equals: MobileDecoTextPromo, then: { height: 205, options: { module: TEXT-PROMO_module.xml } }},
-				{ if: =articles.b13.type,	equals: MobileDecoQuiz, then: { height: 402, options: { module: SMALL-PROMO_module.xml } }}
+				{ if: =articles.b13.layout.module, 		equals: SMALL-PROMO, 					then: { height: 402, options: { module: SMALL-PROMO_module.xml } }},
+				{ if: =articles.b13.layout.module, 		equals: BIG-PROMO, 						then: { height: 468, options: { module: BIG-PROMO_module.xml } }},
+				{ if: =articles.b13.layout.module, 		equals: TEXT-PROMO, 					then: { height: 205, options: { module: TEXT-PROMO_module.xml } }},
+				{ if: =articles.b13.type,							equals: MobileDecoSmallPromo, then: { height: 402, options: { module: SMALL-PROMO_module.xml } }},
+				{ if: =articles.b13.type,							equals: MobileDecoBigPromo, 	then: { height: 468, options: { module: BIG-PROMO_module.xml } }},
+				{ if: =articles.b13.type,							equals: MobileDecoTextPromo, 	then: { height: 205, options: { module: TEXT-PROMO_module.xml } }},
+				{ if: =articles.b13.type,							equals: MobileDecoQuiz, 			then: { height: 402, options: { module: SMALL-PROMO_module.xml } }}
 		]},
 		#b14: {
 			$switch: [
-				{ if: =articles.b14.type,	equals: MobileDecoSmallPromo, then: { height: 402, options: { module: SMALL-PROMO_module.xml } }},
-				{ if: =articles.b14.type,	equals: MobileDecoBigPromo, then: { height: 468, options: { module: BIG-PROMO_module.xml } }},
-				{ if: =articles.b14.type,	equals: MobileDecoTextPromo, then: { height: 205, options: { module: TEXT-PROMO_module.xml } }},
-				{ if: =articles.b14.type,	equals: MobileDecoQuiz, then: { height: 402, options: { module: SMALL-PROMO_module.xml } }}
+				{ if: =articles.b14.layout.module, 		equals: SMALL-PROMO, 					then: { height: 402, options: { module: SMALL-PROMO_module.xml } }},
+				{ if: =articles.b14.layout.module, 		equals: BIG-PROMO, 						then: { height: 468, options: { module: BIG-PROMO_module.xml } }},
+				{ if: =articles.b14.layout.module, 		equals: TEXT-PROMO, 					then: { height: 205, options: { module: TEXT-PROMO_module.xml } }},
+				{ if: =articles.b14.type,							equals: MobileDecoSmallPromo, then: { height: 402, options: { module: SMALL-PROMO_module.xml } }},
+				{ if: =articles.b14.type,							equals: MobileDecoBigPromo, 	then: { height: 468, options: { module: BIG-PROMO_module.xml } }},
+				{ if: =articles.b14.type,							equals: MobileDecoTextPromo, 	then: { height: 205, options: { module: TEXT-PROMO_module.xml } }},
+				{ if: =articles.b14.type,							equals: MobileDecoQuiz, 			then: { height: 402, options: { module: SMALL-PROMO_module.xml } }}
 		]},
 		#b15: {
 			$switch: [
-				{ if: =articles.b15.type,	equals: MobileDecoSmallPromo, then: { height: 402, options: { module: SMALL-PROMO_module.xml } }},
-				{ if: =articles.b15.type,	equals: MobileDecoBigPromo, then: { height: 468, options: { module: BIG-PROMO_module.xml } }},
-				{ if: =articles.b15.type,	equals: MobileDecoTextPromo, then: { height: 205, options: { module: TEXT-PROMO_module.xml } }},
-				{ if: =articles.b15.type,	equals: MobileDecoQuiz, then: { height: 402, options: { module: SMALL-PROMO_module.xml } }}
+				{ if: =articles.b15.layout.module, 		equals: SMALL-PROMO, 					then: { height: 402, options: { module: SMALL-PROMO_module.xml } }},
+				{ if: =articles.b15.layout.module, 		equals: BIG-PROMO, 						then: { height: 468, options: { module: BIG-PROMO_module.xml } }},
+				{ if: =articles.b15.layout.module, 		equals: TEXT-PROMO, 					then: { height: 205, options: { module: TEXT-PROMO_module.xml } }},
+				{ if: =articles.b15.type,							equals: MobileDecoSmallPromo, then: { height: 402, options: { module: SMALL-PROMO_module.xml } }},
+				{ if: =articles.b15.type,							equals: MobileDecoBigPromo, 	then: { height: 468, options: { module: BIG-PROMO_module.xml } }},
+				{ if: =articles.b15.type,							equals: MobileDecoTextPromo, 	then: { height: 205, options: { module: TEXT-PROMO_module.xml } }},
+				{ if: =articles.b15.type,							equals: MobileDecoQuiz, 			then: { height: 402, options: { module: SMALL-PROMO_module.xml } }}
 		]},
 		#b16: {
 			$switch: [
-				{ if: =articles.b16.type,	equals: MobileDecoSmallPromo, then: { height: 402, options: { module: SMALL-PROMO_module.xml } }},
-				{ if: =articles.b16.type,	equals: MobileDecoBigPromo, then: { height: 468, options: { module: BIG-PROMO_module.xml } }},
-				{ if: =articles.b16.type,	equals: MobileDecoTextPromo, then: { height: 205, options: { module: TEXT-PROMO_module.xml } }},
-				{ if: =articles.b16.type,	equals: MobileDecoQuiz, then: { height: 402, options: { module: SMALL-PROMO_module.xml } }}
+				{ if: =articles.b16.layout.module, 		equals: SMALL-PROMO, 					then: { height: 402, options: { module: SMALL-PROMO_module.xml } }},
+				{ if: =articles.b16.layout.module, 		equals: BIG-PROMO, 						then: { height: 468, options: { module: BIG-PROMO_module.xml } }},
+				{ if: =articles.b16.layout.module, 		equals: TEXT-PROMO, 					then: { height: 205, options: { module: TEXT-PROMO_module.xml } }},
+				{ if: =articles.b16.type,							equals: MobileDecoSmallPromo, then: { height: 402, options: { module: SMALL-PROMO_module.xml } }},
+				{ if: =articles.b16.type,							equals: MobileDecoBigPromo, 	then: { height: 468, options: { module: BIG-PROMO_module.xml } }},
+				{ if: =articles.b16.type,							equals: MobileDecoTextPromo, 	then: { height: 205, options: { module: TEXT-PROMO_module.xml } }},
+				{ if: =articles.b16.type,							equals: MobileDecoQuiz, 			then: { height: 402, options: { module: SMALL-PROMO_module.xml } }}
 		]},
 		#b17: {
 			$switch: [
-				{ if: =articles.b17.type,	equals: MobileDecoSmallPromo, then: { height: 402, options: { module: SMALL-PROMO_module.xml } }},
-				{ if: =articles.b17.type,	equals: MobileDecoBigPromo, then: { height: 468, options: { module: BIG-PROMO_module.xml } }},
-				{ if: =articles.b17.type,	equals: MobileDecoTextPromo, then: { height: 205, options: { module: TEXT-PROMO_module.xml } }},
-				{ if: =articles.b17.type,	equals: MobileDecoQuiz, then: { height: 402, options: { module: SMALL-PROMO_module.xml } }}
+				{ if: =articles.b17.layout.module, 		equals: SMALL-PROMO, 					then: { height: 402, options: { module: SMALL-PROMO_module.xml } }},
+				{ if: =articles.b17.layout.module, 		equals: BIG-PROMO, 						then: { height: 468, options: { module: BIG-PROMO_module.xml } }},
+				{ if: =articles.b17.layout.module, 		equals: TEXT-PROMO, 					then: { height: 205, options: { module: TEXT-PROMO_module.xml } }},
+				{ if: =articles.b17.type,							equals: MobileDecoSmallPromo, then: { height: 402, options: { module: SMALL-PROMO_module.xml } }},
+				{ if: =articles.b17.type,							equals: MobileDecoBigPromo, 	then: { height: 468, options: { module: BIG-PROMO_module.xml } }},
+				{ if: =articles.b17.type,							equals: MobileDecoTextPromo, 	then: { height: 205, options: { module: TEXT-PROMO_module.xml } }},
+				{ if: =articles.b17.type,							equals: MobileDecoQuiz, 			then: { height: 402, options: { module: SMALL-PROMO_module.xml } }}
 		]},
 		#b18: {
 			$switch: [
-				{ if: =articles.b18.type,	equals: MobileDecoSmallPromo, then: { height: 402, options: { module: SMALL-PROMO_module.xml } }},
-				{ if: =articles.b18.type,	equals: MobileDecoBigPromo, then: { height: 468, options: { module: BIG-PROMO_module.xml } }},
-				{ if: =articles.b18.type,	equals: MobileDecoTextPromo, then: { height: 205, options: { module: TEXT-PROMO_module.xml } }},
-				{ if: =articles.b18.type,	equals: MobileDecoQuiz, then: { height: 402, options: { module: SMALL-PROMO_module.xml } }}
+				{ if: =articles.b18.layout.module, 		equals: SMALL-PROMO, 					then: { height: 402, options: { module: SMALL-PROMO_module.xml } }},
+				{ if: =articles.b18.layout.module, 		equals: BIG-PROMO, 						then: { height: 468, options: { module: BIG-PROMO_module.xml } }},
+				{ if: =articles.b18.layout.module, 		equals: TEXT-PROMO, 					then: { height: 205, options: { module: TEXT-PROMO_module.xml } }},
+				{ if: =articles.b18.type,							equals: MobileDecoSmallPromo, then: { height: 402, options: { module: SMALL-PROMO_module.xml } }},
+				{ if: =articles.b18.type,							equals: MobileDecoBigPromo, 	then: { height: 468, options: { module: BIG-PROMO_module.xml } }},
+				{ if: =articles.b18.type,							equals: MobileDecoTextPromo, 	then: { height: 205, options: { module: TEXT-PROMO_module.xml } }},
+				{ if: =articles.b18.type,							equals: MobileDecoQuiz, 			then: { height: 402, options: { module: SMALL-PROMO_module.xml } }}
 		]},
 		#b19: {
 			$switch: [
-				{ if: =articles.b19.type,	equals: MobileDecoSmallPromo, then: { height: 402, options: { module: SMALL-PROMO_module.xml } }},
-				{ if: =articles.b19.type,	equals: MobileDecoBigPromo, then: { height: 468, options: { module: BIG-PROMO_module.xml } }},
-				{ if: =articles.b19.type,	equals: MobileDecoTextPromo, then: { height: 205, options: { module: TEXT-PROMO_module.xml } }},
-				{ if: =articles.b19.type,	equals: MobileDecoQuiz, then: { height: 402, options: { module: SMALL-PROMO_module.xml } }}
+				{ if: =articles.b19.layout.module, 		equals: SMALL-PROMO, 					then: { height: 402, options: { module: SMALL-PROMO_module.xml } }},
+				{ if: =articles.b19.layout.module, 		equals: BIG-PROMO, 						then: { height: 468, options: { module: BIG-PROMO_module.xml } }},
+				{ if: =articles.b19.layout.module, 		equals: TEXT-PROMO, 					then: { height: 205, options: { module: TEXT-PROMO_module.xml } }},
+				{ if: =articles.b19.type,							equals: MobileDecoSmallPromo, then: { height: 402, options: { module: SMALL-PROMO_module.xml } }},
+				{ if: =articles.b19.type,							equals: MobileDecoBigPromo, 	then: { height: 468, options: { module: BIG-PROMO_module.xml } }},
+				{ if: =articles.b19.type,							equals: MobileDecoTextPromo, 	then: { height: 205, options: { module: TEXT-PROMO_module.xml } }},
+				{ if: =articles.b19.type,							equals: MobileDecoQuiz, 			then: { height: 402, options: { module: SMALL-PROMO_module.xml } }}
 		]},
 		#b20: {
 			$switch: [
-				{ if: =articles.b20.type,	equals: MobileDecoSmallPromo, then: { height: 402, options: { module: SMALL-PROMO_module.xml } }},
-				{ if: =articles.b20.type,	equals: MobileDecoBigPromo, then: { height: 468, options: { module: BIG-PROMO_module.xml } }},
-				{ if: =articles.b20.type,	equals: MobileDecoTextPromo, then: { height: 205, options: { module: TEXT-PROMO_module.xml } }},
-				{ if: =articles.b20.type,	equals: MobileDecoQuiz, then: { height: 402, options: { module: SMALL-PROMO_module.xml } }}
+				{ if: =articles.b20.layout.module, 		equals: SMALL-PROMO, 					then: { height: 402, options: { module: SMALL-PROMO_module.xml } }},
+				{ if: =articles.b20.layout.module, 		equals: BIG-PROMO, 						then: { height: 468, options: { module: BIG-PROMO_module.xml } }},
+				{ if: =articles.b20.layout.module, 		equals: TEXT-PROMO, 					then: { height: 205, options: { module: TEXT-PROMO_module.xml } }},
+				{ if: =articles.b20.type,							equals: MobileDecoSmallPromo, then: { height: 402, options: { module: SMALL-PROMO_module.xml } }},
+				{ if: =articles.b20.type,							equals: MobileDecoBigPromo, 	then: { height: 468, options: { module: BIG-PROMO_module.xml } }},
+				{ if: =articles.b20.type,							equals: MobileDecoTextPromo, 	then: { height: 205, options: { module: TEXT-PROMO_module.xml } }},
+				{ if: =articles.b20.type,							equals: MobileDecoQuiz, 			then: { height: 402, options: { module: SMALL-PROMO_module.xml } }}
 		]},
 		#b21: {
 			$switch: [
-				{ if: =articles.b21.type,	equals: MobileDecoSmallPromo, then: { height: 402, options: { module: SMALL-PROMO_module.xml } }},
-				{ if: =articles.b21.type,	equals: MobileDecoBigPromo, then: { height: 468, options: { module: BIG-PROMO_module.xml } }},
-				{ if: =articles.b21.type,	equals: MobileDecoTextPromo, then: { height: 205, options: { module: TEXT-PROMO_module.xml } }},
-				{ if: =articles.b21.type,	equals: MobileDecoQuiz, then: { height: 402, options: { module: SMALL-PROMO_module.xml } }}
+				{ if: =articles.b21.layout.module, 		equals: SMALL-PROMO, 					then: { height: 402, options: { module: SMALL-PROMO_module.xml } }},
+				{ if: =articles.b21.layout.module, 		equals: BIG-PROMO, 						then: { height: 468, options: { module: BIG-PROMO_module.xml } }},
+				{ if: =articles.b21.layout.module, 		equals: TEXT-PROMO, 					then: { height: 205, options: { module: TEXT-PROMO_module.xml } }},
+				{ if: =articles.b21.type,							equals: MobileDecoSmallPromo, then: { height: 402, options: { module: SMALL-PROMO_module.xml } }},
+				{ if: =articles.b21.type,							equals: MobileDecoBigPromo, 	then: { height: 468, options: { module: BIG-PROMO_module.xml } }},
+				{ if: =articles.b21.type,							equals: MobileDecoTextPromo, 	then: { height: 205, options: { module: TEXT-PROMO_module.xml } }},
+				{ if: =articles.b21.type,							equals: MobileDecoQuiz, 			then: { height: 402, options: { module: SMALL-PROMO_module.xml } }}
 		]},
 		#b22: {
 			$switch: [
-				{ if: =articles.b22.type,	equals: MobileDecoSmallPromo, then: { height: 402, options: { module: SMALL-PROMO_module.xml } }},
-				{ if: =articles.b22.type,	equals: MobileDecoBigPromo, then: { height: 468, options: { module: BIG-PROMO_module.xml } }},
-				{ if: =articles.b22.type,	equals: MobileDecoTextPromo, then: { height: 205, options: { module: TEXT-PROMO_module.xml } }},
-				{ if: =articles.b22.type,	equals: MobileDecoQuiz, then: { height: 402, options: { module: SMALL-PROMO_module.xml } }}
+				{ if: =articles.b22.layout.module, 		equals: SMALL-PROMO, 					then: { height: 402, options: { module: SMALL-PROMO_module.xml } }},
+				{ if: =articles.b22.layout.module, 		equals: BIG-PROMO, 						then: { height: 468, options: { module: BIG-PROMO_module.xml } }},
+				{ if: =articles.b22.layout.module, 		equals: TEXT-PROMO, 					then: { height: 205, options: { module: TEXT-PROMO_module.xml } }},
+				{ if: =articles.b22.type,							equals: MobileDecoSmallPromo, then: { height: 402, options: { module: SMALL-PROMO_module.xml } }},
+				{ if: =articles.b22.type,							equals: MobileDecoBigPromo, 	then: { height: 468, options: { module: BIG-PROMO_module.xml } }},
+				{ if: =articles.b22.type,							equals: MobileDecoTextPromo, 	then: { height: 205, options: { module: TEXT-PROMO_module.xml } }},
+				{ if: =articles.b22.type,							equals: MobileDecoQuiz, 			then: { height: 402, options: { module: SMALL-PROMO_module.xml } }}
 		]},
 		#b23: {
 			$switch: [
-				{ if: =articles.b23.type,	equals: MobileDecoSmallPromo, then: { height: 402, options: { module: SMALL-PROMO_module.xml } }},
-				{ if: =articles.b23.type,	equals: MobileDecoBigPromo, then: { height: 468, options: { module: BIG-PROMO_module.xml } }},
-				{ if: =articles.b23.type,	equals: MobileDecoTextPromo, then: { height: 205, options: { module: TEXT-PROMO_module.xml } }},
-				{ if: =articles.b23.type,	equals: MobileDecoQuiz, then: { height: 402, options: { module: SMALL-PROMO_module.xml } }}
+				{ if: =articles.b23.layout.module, 		equals: SMALL-PROMO, 					then: { height: 402, options: { module: SMALL-PROMO_module.xml } }},
+				{ if: =articles.b23.layout.module, 		equals: BIG-PROMO, 						then: { height: 468, options: { module: BIG-PROMO_module.xml } }},
+				{ if: =articles.b23.layout.module, 		equals: TEXT-PROMO, 					then: { height: 205, options: { module: TEXT-PROMO_module.xml } }},
+				{ if: =articles.b23.type,							equals: MobileDecoSmallPromo, then: { height: 402, options: { module: SMALL-PROMO_module.xml } }},
+				{ if: =articles.b23.type,							equals: MobileDecoBigPromo, 	then: { height: 468, options: { module: BIG-PROMO_module.xml } }},
+				{ if: =articles.b23.type,							equals: MobileDecoTextPromo, 	then: { height: 205, options: { module: TEXT-PROMO_module.xml } }},
+				{ if: =articles.b23.type,							equals: MobileDecoQuiz, 			then: { height: 402, options: { module: SMALL-PROMO_module.xml } }}
 		]},
 		#b24: {
 			$switch: [
-				{ if: =articles.b24.type,	equals: MobileDecoSmallPromo, then: { height: 402, options: { module: SMALL-PROMO_module.xml } }},
-				{ if: =articles.b24.type,	equals: MobileDecoBigPromo, then: { height: 468, options: { module: BIG-PROMO_module.xml } }},
-				{ if: =articles.b24.type,	equals: MobileDecoTextPromo, then: { height: 205, options: { module: TEXT-PROMO_module.xml } }},
-				{ if: =articles.b24.type,	equals: MobileDecoQuiz, then: { height: 402, options: { module: SMALL-PROMO_module.xml } }}
+				{ if: =articles.b24.layout.module, 		equals: SMALL-PROMO, 					then: { height: 402, options: { module: SMALL-PROMO_module.xml } }},
+				{ if: =articles.b24.layout.module, 		equals: BIG-PROMO, 						then: { height: 468, options: { module: BIG-PROMO_module.xml } }},
+				{ if: =articles.b24.layout.module, 		equals: TEXT-PROMO, 					then: { height: 205, options: { module: TEXT-PROMO_module.xml } }},
+				{ if: =articles.b24.type,							equals: MobileDecoSmallPromo, then: { height: 402, options: { module: SMALL-PROMO_module.xml } }},
+				{ if: =articles.b24.type,							equals: MobileDecoBigPromo, 	then: { height: 468, options: { module: BIG-PROMO_module.xml } }},
+				{ if: =articles.b24.type,							equals: MobileDecoTextPromo, 	then: { height: 205, options: { module: TEXT-PROMO_module.xml } }},
+				{ if: =articles.b24.type,							equals: MobileDecoQuiz, 			then: { height: 402, options: { module: SMALL-PROMO_module.xml } }}
 		]},
 		#b25: {
 			$switch: [
-				{ if: =articles.b25.type,	equals: MobileDecoSmallPromo, then: { height: 402, options: { module: SMALL-PROMO_module.xml } }},
-				{ if: =articles.b25.type,	equals: MobileDecoBigPromo, then: { height: 468, options: { module: BIG-PROMO_module.xml } }},
-				{ if: =articles.b25.type,	equals: MobileDecoTextPromo, then: { height: 205, options: { module: TEXT-PROMO_module.xml } }},
-				{ if: =articles.b25.type,	equals: MobileDecoQuiz, then: { height: 402, options: { module: SMALL-PROMO_module.xml } }}
+				{ if: =articles.b25.layout.module, 		equals: SMALL-PROMO, 					then: { height: 402, options: { module: SMALL-PROMO_module.xml } }},
+				{ if: =articles.b25.layout.module, 		equals: BIG-PROMO, 						then: { height: 468, options: { module: BIG-PROMO_module.xml } }},
+				{ if: =articles.b25.layout.module, 		equals: TEXT-PROMO, 					then: { height: 205, options: { module: TEXT-PROMO_module.xml } }},
+				{ if: =articles.b25.type,							equals: MobileDecoSmallPromo, then: { height: 402, options: { module: SMALL-PROMO_module.xml } }},
+				{ if: =articles.b25.type,							equals: MobileDecoBigPromo, 	then: { height: 468, options: { module: BIG-PROMO_module.xml } }},
+				{ if: =articles.b25.type,							equals: MobileDecoTextPromo, 	then: { height: 205, options: { module: TEXT-PROMO_module.xml } }},
+				{ if: =articles.b25.type,							equals: MobileDecoQuiz, 			then: { height: 402, options: { module: SMALL-PROMO_module.xml } }}
 		]},
 		#b26: {
 			$switch: [
-				{ if: =articles.b26.type,	equals: MobileDecoSmallPromo, then: { height: 402, options: { module: SMALL-PROMO_module.xml } }},
-				{ if: =articles.b26.type,	equals: MobileDecoBigPromo, then: { height: 468, options: { module: BIG-PROMO_module.xml } }},
-				{ if: =articles.b26.type,	equals: MobileDecoTextPromo, then: { height: 205, options: { module: TEXT-PROMO_module.xml } }},
-				{ if: =articles.b26.type,	equals: MobileDecoQuiz, then: { height: 402, options: { module: SMALL-PROMO_module.xml } }}
+				{ if: =articles.b26.layout.module, 		equals: SMALL-PROMO, 					then: { height: 402, options: { module: SMALL-PROMO_module.xml } }},
+				{ if: =articles.b26.layout.module, 		equals: BIG-PROMO, 						then: { height: 468, options: { module: BIG-PROMO_module.xml } }},
+				{ if: =articles.b26.layout.module, 		equals: TEXT-PROMO, 					then: { height: 205, options: { module: TEXT-PROMO_module.xml } }},
+				{ if: =articles.b26.type,							equals: MobileDecoSmallPromo, then: { height: 402, options: { module: SMALL-PROMO_module.xml } }},
+				{ if: =articles.b26.type,							equals: MobileDecoBigPromo, 	then: { height: 468, options: { module: BIG-PROMO_module.xml } }},
+				{ if: =articles.b26.type,							equals: MobileDecoTextPromo, 	then: { height: 205, options: { module: TEXT-PROMO_module.xml } }},
+				{ if: =articles.b26.type,							equals: MobileDecoQuiz, 			then: { height: 402, options: { module: SMALL-PROMO_module.xml } }}
 		]},
 		#b27: {
 			$switch: [
-				{ if: =articles.b27.type,	equals: MobileDecoSmallPromo, then: { height: 402, options: { module: SMALL-PROMO_module.xml } }},
-				{ if: =articles.b27.type,	equals: MobileDecoBigPromo, then: { height: 468, options: { module: BIG-PROMO_module.xml } }},
-				{ if: =articles.b27.type,	equals: MobileDecoTextPromo, then: { height: 205, options: { module: TEXT-PROMO_module.xml } }},
-				{ if: =articles.b27.type,	equals: MobileDecoQuiz, then: { height: 402, options: { module: SMALL-PROMO_module.xml } }}
+				{ if: =articles.b27.layout.module, 		equals: SMALL-PROMO, 					then: { height: 402, options: { module: SMALL-PROMO_module.xml } }},
+				{ if: =articles.b27.layout.module, 		equals: BIG-PROMO, 						then: { height: 468, options: { module: BIG-PROMO_module.xml } }},
+				{ if: =articles.b27.layout.module, 		equals: TEXT-PROMO, 					then: { height: 205, options: { module: TEXT-PROMO_module.xml } }},
+				{ if: =articles.b27.type,							equals: MobileDecoSmallPromo, then: { height: 402, options: { module: SMALL-PROMO_module.xml } }},
+				{ if: =articles.b27.type,							equals: MobileDecoBigPromo, 	then: { height: 468, options: { module: BIG-PROMO_module.xml } }},
+				{ if: =articles.b27.type,							equals: MobileDecoTextPromo, 	then: { height: 205, options: { module: TEXT-PROMO_module.xml } }},
+				{ if: =articles.b27.type,							equals: MobileDecoQuiz, 			then: { height: 402, options: { module: SMALL-PROMO_module.xml } }}
 		]},
 		#b28: {
 			$switch: [
-				{ if: =articles.b28.type,	equals: MobileDecoSmallPromo, then: { height: 402, options: { module: SMALL-PROMO_module.xml } }},
-				{ if: =articles.b28.type,	equals: MobileDecoBigPromo, then: { height: 468, options: { module: BIG-PROMO_module.xml } }},
-				{ if: =articles.b28.type,	equals: MobileDecoTextPromo, then: { height: 205, options: { module: TEXT-PROMO_module.xml } }},
-				{ if: =articles.b28.type,	equals: MobileDecoQuiz, then: { height: 402, options: { module: SMALL-PROMO_module.xml } }}
+				{ if: =articles.b28.layout.module, 		equals: SMALL-PROMO, 					then: { height: 402, options: { module: SMALL-PROMO_module.xml } }},
+				{ if: =articles.b28.layout.module, 		equals: BIG-PROMO, 						then: { height: 468, options: { module: BIG-PROMO_module.xml } }},
+				{ if: =articles.b28.layout.module, 		equals: TEXT-PROMO, 					then: { height: 205, options: { module: TEXT-PROMO_module.xml } }},
+				{ if: =articles.b28.type,							equals: MobileDecoSmallPromo, then: { height: 402, options: { module: SMALL-PROMO_module.xml } }},
+				{ if: =articles.b28.type,							equals: MobileDecoBigPromo, 	then: { height: 468, options: { module: BIG-PROMO_module.xml } }},
+				{ if: =articles.b28.type,							equals: MobileDecoTextPromo, 	then: { height: 205, options: { module: TEXT-PROMO_module.xml } }},
+				{ if: =articles.b28.type,							equals: MobileDecoQuiz, 			then: { height: 402, options: { module: SMALL-PROMO_module.xml } }}
 		]},
 		#b29: {
 			$switch: [
-				{ if: =articles.b29.type,	equals: MobileDecoSmallPromo, then: { height: 402, options: { module: SMALL-PROMO_module.xml } }},
-				{ if: =articles.b29.type,	equals: MobileDecoBigPromo, then: { height: 468, options: { module: BIG-PROMO_module.xml } }},
-				{ if: =articles.b29.type,	equals: MobileDecoTextPromo, then: { height: 205, options: { module: TEXT-PROMO_module.xml } }},
-				{ if: =articles.b29.type,	equals: MobileDecoQuiz, then: { height: 402, options: { module: SMALL-PROMO_module.xml } }}
+				{ if: =articles.b29.layout.module, 		equals: SMALL-PROMO, 					then: { height: 402, options: { module: SMALL-PROMO_module.xml } }},
+				{ if: =articles.b29.layout.module, 		equals: BIG-PROMO, 						then: { height: 468, options: { module: BIG-PROMO_module.xml } }},
+				{ if: =articles.b29.layout.module, 		equals: TEXT-PROMO, 					then: { height: 205, options: { module: TEXT-PROMO_module.xml } }},
+				{ if: =articles.b29.type,							equals: MobileDecoSmallPromo, then: { height: 402, options: { module: SMALL-PROMO_module.xml } }},
+				{ if: =articles.b29.type,							equals: MobileDecoBigPromo, 	then: { height: 468, options: { module: BIG-PROMO_module.xml } }},
+				{ if: =articles.b29.type,							equals: MobileDecoTextPromo, 	then: { height: 205, options: { module: TEXT-PROMO_module.xml } }},
+				{ if: =articles.b29.type,							equals: MobileDecoQuiz, 			then: { height: 402, options: { module: SMALL-PROMO_module.xml } }}
 		]},
 		#b30: {
 			$switch: [
-				{ if: =articles.b30.type,	equals: MobileDecoSmallPromo, then: { height: 402, options: { module: SMALL-PROMO_module.xml } }},
-				{ if: =articles.b30.type,	equals: MobileDecoBigPromo, then: { height: 468, options: { module: BIG-PROMO_module.xml } }},
-				{ if: =articles.b30.type,	equals: MobileDecoTextPromo, then: { height: 205, options: { module: TEXT-PROMO_module.xml } }},
-				{ if: =articles.b30.type,	equals: MobileDecoQuiz, then: { height: 402, options: { module: SMALL-PROMO_module.xml } }}
+				{ if: =articles.b30.layout.module, 		equals: SMALL-PROMO, 					then: { height: 402, options: { module: SMALL-PROMO_module.xml } }},
+				{ if: =articles.b30.layout.module, 		equals: BIG-PROMO, 						then: { height: 468, options: { module: BIG-PROMO_module.xml } }},
+				{ if: =articles.b30.layout.module, 		equals: TEXT-PROMO, 					then: { height: 205, options: { module: TEXT-PROMO_module.xml } }},
+				{ if: =articles.b30.type,							equals: MobileDecoSmallPromo, then: { height: 402, options: { module: SMALL-PROMO_module.xml } }},
+				{ if: =articles.b30.type,							equals: MobileDecoBigPromo, 	then: { height: 468, options: { module: BIG-PROMO_module.xml } }},
+				{ if: =articles.b30.type,							equals: MobileDecoTextPromo, 	then: { height: 205, options: { module: TEXT-PROMO_module.xml } }},
+				{ if: =articles.b30.type,							equals: MobileDecoQuiz, 			then: { height: 402, options: { module: SMALL-PROMO_module.xml } }}
 		]},
 		#b31: {
 			$switch: [
-				{ if: =articles.b31.type,	equals: MobileDecoSmallPromo, then: { height: 402, options: { module: SMALL-PROMO_module.xml } }},
-				{ if: =articles.b31.type,	equals: MobileDecoBigPromo, then: { height: 468, options: { module: BIG-PROMO_module.xml } }},
-				{ if: =articles.b31.type,	equals: MobileDecoTextPromo, then: { height: 205, options: { module: TEXT-PROMO_module.xml } }},
-				{ if: =articles.b31.type,	equals: MobileDecoQuiz, then: { height: 402, options: { module: SMALL-PROMO_module.xml } }}
+				{ if: =articles.b31.layout.module, 		equals: SMALL-PROMO, 					then: { height: 402, options: { module: SMALL-PROMO_module.xml } }},
+				{ if: =articles.b31.layout.module, 		equals: BIG-PROMO, 						then: { height: 468, options: { module: BIG-PROMO_module.xml } }},
+				{ if: =articles.b31.layout.module, 		equals: TEXT-PROMO, 					then: { height: 205, options: { module: TEXT-PROMO_module.xml } }},
+				{ if: =articles.b31.type,							equals: MobileDecoSmallPromo, then: { height: 402, options: { module: SMALL-PROMO_module.xml } }},
+				{ if: =articles.b31.type,							equals: MobileDecoBigPromo, 	then: { height: 468, options: { module: BIG-PROMO_module.xml } }},
+				{ if: =articles.b31.type,							equals: MobileDecoTextPromo, 	then: { height: 205, options: { module: TEXT-PROMO_module.xml } }},
+				{ if: =articles.b31.type,							equals: MobileDecoQuiz, 			then: { height: 402, options: { module: SMALL-PROMO_module.xml } }}
 		]},
 		#b32: {
 			$switch: [
-				{ if: =articles.b32.type,	equals: MobileDecoSmallPromo, then: { height: 402, options: { module: SMALL-PROMO_module.xml } }},
-				{ if: =articles.b32.type,	equals: MobileDecoBigPromo, then: { height: 468, options: { module: BIG-PROMO_module.xml } }},
-				{ if: =articles.b32.type,	equals: MobileDecoTextPromo, then: { height: 205, options: { module: TEXT-PROMO_module.xml } }},
-				{ if: =articles.b32.type,	equals: MobileDecoQuiz, then: { height: 402, options: { module: SMALL-PROMO_module.xml } }}
+				{ if: =articles.b32.layout.module, 		equals: SMALL-PROMO, 					then: { height: 402, options: { module: SMALL-PROMO_module.xml } }},
+				{ if: =articles.b32.layout.module, 		equals: BIG-PROMO, 						then: { height: 468, options: { module: BIG-PROMO_module.xml } }},
+				{ if: =articles.b32.layout.module, 		equals: TEXT-PROMO, 					then: { height: 205, options: { module: TEXT-PROMO_module.xml } }},
+				{ if: =articles.b32.type,							equals: MobileDecoSmallPromo, then: { height: 402, options: { module: SMALL-PROMO_module.xml } }},
+				{ if: =articles.b32.type,							equals: MobileDecoBigPromo, 	then: { height: 468, options: { module: BIG-PROMO_module.xml } }},
+				{ if: =articles.b32.type,							equals: MobileDecoTextPromo, 	then: { height: 205, options: { module: TEXT-PROMO_module.xml } }},
+				{ if: =articles.b32.type,							equals: MobileDecoQuiz, 			then: { height: 402, options: { module: SMALL-PROMO_module.xml } }}
 		]},
 		#deco:{
 			$switch: [
-				{ if: =articles.deco.type,	equals: MobileDecoSmallPromo, then: { height: 402, options: { module: SMALL-PROMO_module.xml } }},
-				{ if: =articles.deco.type,	equals: MobileDecoBigPromo, then: { height: 468, options: { module: BIG-PROMO_module.xml } }},
-				{ if: =articles.deco.type,	equals: MobileDecoTextPromo, then: { height: 205, options: { module: TEXT-PROMO_module.xml } }},
-				{ if: =articles.deco.type,	equals: MobileDecoQuiz, then: { height: 402, options: { module: SMALL-PROMO_module.xml } }}
+				{ if: =articles.deco.layout.module, 		equals: SMALL-PROMO, 					then: { height: 402, options: { module: SMALL-PROMO_module.xml } }},
+				{ if: =articles.deco.layout.module, 		equals: BIG-PROMO, 						then: { height: 468, options: { module: BIG-PROMO_module.xml } }},
+				{ if: =articles.deco.layout.module, 		equals: TEXT-PROMO, 					then: { height: 205, options: { module: TEXT-PROMO_module.xml } }},
+				{ if: =articles.deco.type,							equals: MobileDecoSmallPromo, then: { height: 402, options: { module: SMALL-PROMO_module.xml } }},
+				{ if: =articles.deco.type,							equals: MobileDecoBigPromo, 	then: { height: 468, options: { module: BIG-PROMO_module.xml } }},
+				{ if: =articles.deco.type,							equals: MobileDecoTextPromo, 	then: { height: 205, options: { module: TEXT-PROMO_module.xml } }},
+				{ if: =articles.deco.type,							equals: MobileDecoQuiz, 			then: { height: 402, options: { module: SMALL-PROMO_module.xml } }}
 		]}
 	}}
 	]

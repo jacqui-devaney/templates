@@ -1,0 +1,234 @@
+<jpml id="SECTION-5story_template2">
+	<style src="GLOBAL-stylesheet2.ejs"/>
+	<style src="GRID-stylesheet2.ejs"/>
+	<style src="GRID-extras2.ejs"/>
+	<style src="ADVERTISING-stylesheet2.ejs"/>
+	<style src="ADVERTISING-stylesheet-gridoverride.ejs"/>
+	<style src="PHONE-stylesheet.ejs"/>
+	<style src="RAIL-stylesheet.ejs" />
+	<style src="SECTION-HIGHLIGHT-stylesheet.ejs" />
+	<style src="EDITION-SECTION-TABBAR-stylesheet.ejs"/>
+	<style>{
+		#page_details: {
+			options: {
+		        hideHeaderBorder: true,
+				tintTitle: true
+			}
+		}
+	}</style>
+	<style>{
+		jpml: {
+			background-color: =color.background,
+			padding: [{
+				$switch: [
+					{ if-all: [
+						=scale.tablet,
+						=intent.template
+					], then: 68 },
+						{ if-all: [
+							=scale.phone,
+							=intent.template,
+							{ if: =page.section, equals: "TOP_NEWS" }
+						], then: 0 }
+					]
+				}, 0, 0, 0]
+		},
+    	#ad_placeholder: {
+    		display: none
+    	},
+    	#marketstrap: {
+    		display: none
+    	},
+		.tabbar-p: {
+			font-name:"WhitneySSm-Semibold",
+			color:#4F5757,
+			padding: [10.5, 0, 11.5, 0],
+			font-size:{if: =app.version, at-least: 7.6, then: 10, else: 12},
+			line-height:12,
+			border-width:[0.5, 0],
+			border-color:#CFD7D7,
+			letter-spacing: 2.0
+		},
+		.space: {
+			font-size: {if: =app.version, at-least: 7.6, then: 1, else: 6},
+			line-height:4,
+			color: transparent,
+			content: "unfortu"
+		},
+		.center-me: {
+			text-align:center,
+			anchor-y: middle
+		},
+		a: {
+			padding: [8, 0]
+		},
+		span: {
+			padding: [3, 0]
+		},
+		.more-link: {
+			font-name: "WhitneySSm-Book"
+		}
+	}</style>
+	<style> {
+		$switch: [
+			{if: =scale.rail, then: {
+				#footer:{
+					display: none
+				},
+				#tabbar-container:{
+					display: none
+				}
+			}},
+			{if: =scale.phone, then: {
+				#page_details: {
+					display: none
+				},
+		    	#ad_placeholder: {
+					display: inherit,
+					frame: [0, 0, 10, 10]
+				},
+		    	#marketstrap: {
+		    		display: {if: =page.section, equals: "TOP_NEWS", else: none},
+		    		position: relative
+		    	},
+				#tabbar-container: {
+					display: none
+				},
+				#b1 : {
+                 height:{
+                    if: =view.width, more-than: 320, then:{
+                        if: {$count:[=articles.b1.images.phone]},
+                        more-than: 0,
+                        then: {$multiply: [=view.width, 1.135]},
+                        else: {$multiply: [=view.width, 0.6]}
+                        }, else: {
+                        if: {$count:[=articles.b1.images.phone]},
+                        more-than: 0,
+                        then: {$multiply: [=view.width, 1.32]},
+                        else: {$multiply: [=view.width, 0.6]}
+                    }
+                },
+                    padding: [{if: {$count:[=articles.b1.images.phone]}, more-than: 0, then: 0, else: 22}, 0, 0, 0],
+					options: { show_body: true, medium_headline: true, module: url(TOP-IMAGE_module.xml), background_color: #00FFFF }
+				},
+				#b2 : {
+					height: =size.continuation_height_large,
+					options: { show_body: true, small_headline: true, module: url(CONTINUATION-dynamic_module.xml), background_color: #00FFFF }
+				},
+				#b3 : {
+					height: =size.continuation_height_large,
+					options: { show_body: true, small_headline: true, background_color: #00FFFF }
+				},
+				#b4 : {
+					height: =size.continuation_height_large,
+					options: { show_body: true, small_headline: true, background_color: #00FFFF }
+				},
+				#b5 : {
+					height: =size.continuation_height_large,
+					options: { show_body: true, small_headline: true, background_color: #00FFFF }
+				}
+			}}
+		]
+	} </style>
+	<style>{
+		if: =scale.phone,
+		then: {
+
+		},
+		else: {
+			#b1: {
+				options: {
+					medium_headline:true,
+					show_image:true,
+					background_color: =color.background
+				}
+			},
+			#b2: {
+				options: {
+					show_body: true,
+					show_image: true,
+					smedium_headline: true,
+					background_color: =color.background
+				}
+			},
+			#b3: {
+				options: {
+					show_body: true,
+					show_image: true,
+					smedium_headline: true,
+					background_color: =color.background
+				}
+			},
+			#b4: {
+				options: {
+					hide_border: =portrait,
+					show_body: true,
+					small_headline: true,
+					background_color: =color.background
+				}
+			},
+			#b5: {
+				options: {
+					show_body: true,
+					small_headline: true,
+					background_color: =color.background
+				}
+			}
+		}
+	}</style>
+
+	<style src="PROMO-PHONE-stylesheet.ejs" />
+	<box id="page_details" embed="pagedescription" />
+	<box id="ad_placeholder" class="ad-banner" embed="pagedescription" />
+	<box id="marketstrap" embed="marketstrap" />
+
+	<box id="b1" embed="article" class="portrait-xposition-1 portrait-yposition-4 portrait-columns-8 portrait-lines-26 landscape-xposition-1 landscape-yposition-4 landscape-columns-8 landscape-lines-30 maude unit_plain unit_418" module="TOP-IMAGE_module.xml" />
+	<box id="b2" embed="article" class="portrait-xposition-1 portrait-yposition-31 portrait-columns-8 portrait-lines-16 landscape-xposition-9 landscape-yposition-4 landscape-columns-8 landscape-lines-7 maude unit_plain unit_166" module="RIGHT-IMAGE_module.xml" />
+	<box id="b3" embed="article" class="portrait-xposition-9 portrait-yposition-31 portrait-columns-4 portrait-lines-16 landscape-xposition-9 landscape-yposition-12 landscape-columns-8 landscape-lines-7 maude unit_plain unit_50" module="CONTINUATION-dynamic_module.xml" />
+	<box id="b4" embed="article" class="portrait-xposition-9 portrait-yposition-4 portrait-columns-4 portrait-lines-13 landscape-xposition-9 landscape-yposition-20 landscape-columns-8 landscape-lines-7 maude unit_plain unit_50" module="CONTINUATION-dynamic_module.xml" />
+	<box id="b5" embed="article" class="portrait-xposition-9 portrait-yposition-18 portrait-columns-4 portrait-lines-12 landscape-xposition-9 landscape-yposition-28 landscape-columns-8 landscape-lines-6 maude unit_plain unit_50" module="CONTINUATION-dynamic_module.xml" />
+
+	<box id="tabbar-container" class="landscape-columns-16 portrait-columns-12 xposition-1 yposition-1 lines-2" >
+		<box class="center-me">
+			<p id="tabbar-japan" class="tabbar-p">
+				<a class="tabbar-link" href="/FRONT_SECTION"><span class="front-section-link">TOP STORIES</span><mark class="space"/></a>
+				<a class="tabbar-link" href="/BUSINESS_AND_MARKETS"><span class="business-and-markets-link">BUSINESS &amp; MARKETS</span><mark class="space"/></a>
+				<a class="tabbar-link" href="/JAPAN_AND_WORLD"><span class="japan-and-world-link">JAPAN &amp; WORLD</span><mark class="space"/></a>
+				<a class="tabbar-link" href="/LIFESTYLE"><span class="lifestyle-link">LIFESTYLE</span></a>
+			</p>
+
+			<p id="tabbar-main" class="tabbar-p">
+				<a class="first-sections">
+					<a class="tabbar-link" href="/TOP_NEWS"><span class="top-news-link">TOP STORIES</span><mark class="space"/></a>
+					<a class="tabbar-link" href="/POPULAR"><span class="popular-link">POPULAR</span><mark class="space"/></a>
+					<a class="tabbar-link" href="/OPINION"><span class="opinion-link">OPINION</span><mark class="space"/></a>
+					<a class="tabbar-link" href="/WORLD"><span class="world-link">WORLD</span><mark class="space"/></a>
+					<a class="tabbar-link" href="/US"><span class="us-link">U.S.</span><mark class="space"/></a>
+					<a class="tabbar-link" href="/POLITICS"><span class="politics-link">POLITICS</span><mark class="space"/></a>
+					<a class="tabbar-link" href="/ECONOMY"><span class="economy-link">ECONOMY</span><mark class="space"/></a>
+					<a class="tabbar-link" href="/BUSINESS"><span class="business-link">BUSINESS</span><mark class="space"/></a>
+					<a class="tabbar-link" href="/TECH"><span class="more-link">MORE&gt;</span><mark class="space"/></a>
+				</a>
+
+				<a class="second-sections">
+					<a class="tabbar-link" href="/BUSINESS"><span class="more-link">&lt;MORE</span><mark class="space"/></a>
+					<a class="tabbar-link" href="/TECH"><span class="tech-link">TECH</span><mark class="space"/></a>
+					<a class="tabbar-link" href="/MARKETS"><span class="markets-link">MARKETS</span><mark class="space"/></a>
+					<a class="tabbar-link" href="/ARTS"><span class="arts-link">ARTS</span><mark class="space"/></a>
+					<a class="tabbar-link" href="/LIFE"><span class="life-link">LIFE</span><mark class="space"/></a>
+					<a class="tabbar-link" href="/REAL_ESTATE"><span class="real-estate-link">REAL ESTATE</span><mark class="space"/></a>
+					<a class="tabbar-link" href="/VR"><span class="vr-link">VIRTUAL REALITY</span><mark class="space"/></a>
+					<a class="tabbar-link" href="/JOURNAL_REPORT"><span class="more-link">MORE&gt;</span><mark class="space"/></a>
+				</a>
+
+				<a class="third-sections">
+					<a class="tabbar-link" href="/VR"><span class="more-link">&lt;MORE</span><mark class="space"/></a>
+					<a class="tabbar-link" href="/JOURNAL_REPORT"><span class="journal-report-link">JOURNAL REPORT</span><mark class="space"/></a>
+					<a class="tabbar-link" href="/HEARD"><span class="heard-link">HEARD ON THE STREET</span><mark class="space"/></a>
+					<a class="tabbar-link" href="/NEW_YORK"><span class="new-york-link">NEW YORK</span><mark class="space"/></a>
+					<a class="tabbar-link" href="/WSJ_MAGAZINE"><span class="magazine-link">WSJ. MAGAZINE</span></a>
+				</a>
+			</p>
+		</box>
+	</box>
+</jpml>

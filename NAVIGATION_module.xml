@@ -5,7 +5,7 @@
 	<style src="PHONE-MODULES-stylesheet.ejs" />
 	<style>{
 		jpml: {
-			background-color: =options.background_color,
+			background-color: transparent,
 			padding:
             [{if: =view.height, less-than: =size.rail_height_with_image, then: 10, else: 4},20,{if: =view.height, less-than: =size.rail_height_with_image, then: -10, else: -20}, 16],
 			height:130

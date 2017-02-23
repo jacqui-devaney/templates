@@ -65,6 +65,15 @@
             text-transform:uppercase,
             padding:[0, 0, 4, 0]
         },
+         .module_flashline: {
+            display: {if: =page.section, equals: "OPINION", then: inherit, else: {if: =article.category, equals: "Opinion", then: none, else: inherit}},
+            font-name:WhitneySSm-Medium,
+            font-size:10,
+            line-height:18,
+            color: #a7afaf,
+            text-transform:uppercase,
+            padding:[0, 0, 4, 0]
+        },
 		.article_subhed: {
 			font-name: WhitneySSm-BookItalic,
 			font-size:14,
@@ -102,6 +111,7 @@
 	</box>
 	<panel id="module_text">
         <p class="opinion_flashline">OPINION</p>
+        <p class="module_flashline"><mark class="flashline-mark" /></p>
 		<p id="headline" class="module_headline"><mark class="m_headline" /></p>
 		<p class="article_subhed"><mark class="subhed-mark" /></p>
 		<p class="byline"><mark class="byline-mark" /></p>

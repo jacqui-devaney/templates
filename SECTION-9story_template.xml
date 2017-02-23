@@ -168,7 +168,8 @@
 					show_body: true,
 					show_image: true,
 					smedium_headline: true,
-					background_color: =color.background
+					background_color: =color.background,
+					show_flashline: true
 				}
 			},
 			#b3: {
@@ -176,7 +177,8 @@
 					show_body: true,
 					show_image: true,
 					smedium_headline: true,
-					background_color: =color.background
+					background_color: =color.background,
+					show_flashline: true
 				}
 			},
 			#b4: {
@@ -184,42 +186,51 @@
 					hide_border: =portrait,
 					show_body: true,
 					small_headline: true,
-					background_color: =color.background
+					background_color: =color.background,
+					show_flashline: true
 				}
 			},
 			#b5: {
 				options: {
 					show_body: true,
 					small_headline: true,
-					background_color: =color.background
+					background_color: =color.background,
+					show_flashline: true
+
 				}
 			},
 			#b6: {
 				options: {
 					show_body: true,
 					small_headline: true,
-					background_color: =color.background
+					background_color: =color.background,
+					show_flashline: true
+
 				}
 			},
 			#b7: {
 				options: {
 					show_body: true,
 					small_headline: true,
-					background_color: =color.background
+					background_color: =color.background,
+					show_flashline: true
+
 				}
 			},
 			#b8: {
 				options: {
 					show_body: true,
 					small_headline: true,
-					background_color: =color.background
+					background_color: =color.background,
+					show_flashline: true
 				}
 			},
 			#b9: {
 				options: {
 					show_body: true,
 					small_headline: true,
-					background_color: =color.background
+					background_color: =color.background,
+					show_flashline: true
 				}
 			}
 		}

@@ -11,7 +11,19 @@
         "label": "Hide",
         "values": { "hide_icon": true }
       }]
-    },  
+    }, 
+    {
+      "key": "flashline",
+      "title": "Hide/Show Flashline",
+      "type": "toggle",
+      "options": [{
+        "label": "Show",
+        "values": { "show_flashline": true }
+      }, {
+        "label": "Hide",
+        "values": { "show_flashline": false }
+      }]
+    }, 
     {
       "key": "strap",
       "title": "Subsection Strap",

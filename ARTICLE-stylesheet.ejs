@@ -32,10 +32,14 @@
 		text-indent: 0
 	},
 	h3: { 
-		font-name: {if: =intent.article, then:ChronicleSSmMedium-Regular, else:ChronicleSSmMedium-Regular},
+		font-name: {if: =intent.article, then:WhitneySSm-Medium, else:WhitneySSm-Medium},
 		text-indent: 0,
 		text-transform: uppercase,
-		padding: {if: scale.tablet, then: [20, 0, 0, 0], else: [0, 0, 0, 0]}
+		font-size: 12,
+		padding: {if: =scale.tablet, then: [20, 0, 0, 0], else: {if: =scale.phone, then: none}}
+	},
+	.body-panel: { 
+		text-transform: italic
 	},
 	.article_body: {
 		column-count: { if: =scale.tablet, then: { if: =portrait, then: 3, else: 4 } },

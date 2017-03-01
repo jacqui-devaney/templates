@@ -48,6 +48,13 @@
 				line-height: 22,
 				color: #878f8f
 			},
+			.summary-mark: {
+				text-align: center,
+				font-name: ChronicleSSmBook-Regular,
+				font-size: 16,
+				line-height: 22,
+				color: #878f8f
+			},
 			#top_diamond_box: {
 				padding: [0, 0, 0, 0]
 			},
@@ -77,7 +84,7 @@
 		</panel>
 		<panel id="body">
 				<box id="bottom_diamond_box"><p class="diamond-p"><mark class="diamond-mark"/></p></box>
-				<p id="summary" class="body"><mark class="module_summary" /></p>
+				<p id="summary" class="body"><mark class="summary-mark" /></p>
 		</panel>
 	</panel>
 </jpml>

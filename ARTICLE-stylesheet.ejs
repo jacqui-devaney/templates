@@ -69,8 +69,8 @@
 		font-name:{if: =intent.article, then:ChronicleSSmBook-Italic, else:ChronicleSSmBook-Italic}
 	},
 	cite: {
-		font-name:{if: =intent.article, then:ChronicleSSmBook-Italic, else:ChronicleSSmBook-Italic}
-	},
+        font-name:{if: =intent.article, then:ChronicleSSmBook-Italic, else:ChronicleSSmBook-Italic}
+    },
 	.byline-credit: {
 		display: {if-any: [
 			{if: =page.section, equals: "CIO", then:true},
@@ -126,19 +126,19 @@
 		content: " \u00A0 \u00A0 "
 	},
 	.pullquote: {
-	    layout-grid-line: { if: =scale.phone, then: 0, else: {$multiply: [20, =view.zoomlevel]} },
-	    layout-grid-line-offset: { if: =scale.phone, then: 0, else: 1 },
-	    color: #878f8f,
-	    line-height:{$multiply: [20, =view.zoomlevel]},
-	    font-name: ChronicleSSmMedium-Italic,
-	    padding: [0, 0, 10, 0],
-        text-indent: 0
+	    color: #3b4343,
+	    padding: [0, 0, 10, 0]
     },
     .pullquote-p: {
-        font-size:{$multiply: [16, =view.zoomlevel]}
+        font-name: "ChronicleDisplay-Light",
+        font-size:{$multiply: [32, =view.zoomlevel]},
+        line-height:{$multiply: [36, =view.zoomlevel]},
+        text-indent: -12
     },
     .pullquote-tagline: {
-        font-size:{$multiply: [14, =view.zoomlevel]}
+        font-name: "ChronicleSSmMedium-Italic",
+        font-size:{$multiply: [16, =view.zoomlevel]},
+        line-height:{$multiply: [24, =view.zoomlevel]}
     }
   },
   {
@@ -148,8 +148,8 @@
   		in: [
   			{ $join: [#byline-author-span-, =x] },
   			{
-				if: =app.push.tags.author, 
-				contains: =article.authors[x], 
+				if: =app.push.tags.author,
+				contains: =article.authors[x],
 				then: {
 					background-image: url(follow_on_icon.png),
 					options: { reference: { $join: [
@@ -166,7 +166,7 @@
 				}
 			}
 		]
-	}  
+	}
   }
   ]
 }

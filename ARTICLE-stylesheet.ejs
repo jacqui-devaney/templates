@@ -121,11 +121,9 @@
 		content: " \u00A0 \u00A0 "
 	},
 	.pullquote: {
-	    color: #3b4343,
-	    padding: [0, 0, 10, 0]
+	    color: #3b4343
     },
     .pullquote-p: {
-        font-name: "ChronicleDisplay-Light",
         font-size:{$multiply: [32, =view.zoomlevel]},
         line-height:{$multiply: [36, =view.zoomlevel]},
         text-indent: -12
@@ -134,6 +132,18 @@
         font-name: "ChronicleSSmMedium-Italic",
         font-size:{$multiply: [16, =view.zoomlevel]},
         line-height:{$multiply: [24, =view.zoomlevel]}
+    },
+    .mark-quote-prologue: {
+        content: "\u201c"
+    },
+    .mark-quote-epilogue: {
+        content: "\u201d"
+    },
+    .pullquote-inset-cite: {
+        font-name: "ChronicleSSmMedium-Italic"
+    },
+    .pullquote-quote: {
+        font-name: "ChronicleDisplay-Light"
     }
   },
   {

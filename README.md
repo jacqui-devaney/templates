@@ -28,6 +28,7 @@ Take the output from the previous step and generate the Whats_news.jpml file:
 
 An important note to make: The fault article djml for whats news has embedded links for accessing articles.  The transformation assumes these will be DJML filenames and fails if they are links.
 
+
 ## Bootstrapping Deloitte sections
 
 CIO, CFO, CMO, and Risk & Compliance all require affinity and article templates to be set, triggered by the Deloitte article types.

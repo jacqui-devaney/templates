@@ -1,4 +1,5 @@
-{
+{ $join: [
+  {
 	jpml: {
 		padding:[0]
 	},
@@ -27,15 +28,26 @@
 		color: #2b3333,
 		padding: [0,0,{$multiply: [20, =view.zoomlevel]},0]
 	},
+	.byline-author: {
+		if: =app.version, at-least: "8.4", then: {
+			padding: [0, 22, 0, 0],
+			background-position: right,
+			background-size: contain,
+			background-repeat: no-repeat,
+			white-space: nowrap
+		}
+	},
 	h2: {
 		font-name: {if: =intent.article, then:ChronicleSSmMedium-Regular, else:ChronicleSSmMedium-Regular},
 		text-indent: 0
 	},
 	h3: { 
-		font-name: {if: =intent.article, then:ChronicleSSmMedium-Regular, else:ChronicleSSmMedium-Regular},
+		font-name: {if: =intent.article, then:WhitneySSm-Medium, else:WhitneySSm-Medium},
 		text-indent: 0,
 		text-transform: uppercase,
-		padding: {if: scale.tablet, then: [20, 0, 0, 0], else: [0, 0, 0, 0]}
+		font-size: 12,
+		letter-spacing: 2,
+		padding: {if: =scale.tablet, then: [20, 0, 0, 0], else: {if: =scale.phone, then: none}}
 	},
 	.article_body: {
 		column-count: { if: =scale.tablet, then: { if: =portrait, then: 3, else: 4 } },
@@ -54,8 +66,8 @@
 		font-name:{if: =intent.article, then:ChronicleSSmBook-Italic, else:ChronicleSSmBook-Italic}
 	},
 	cite: {
-		font-name:{if: =intent.article, then:ChronicleSSmBook-Italic, else:ChronicleSSmBook-Italic}
-	},
+        font-name:{if: =intent.article, then:ChronicleSSmBook-Italic, else:ChronicleSSmBook-Italic}
+    },
 	.byline-credit: {
 		display: {if-any: [
 			{if: =page.section, equals: "CIO", then:true},
@@ -111,18 +123,57 @@
 		content: " \u00A0 \u00A0 "
 	},
 	.pullquote: {
-	    layout-grid-line: { if: =scale.phone, then: 0, else: {$multiply: [20, =view.zoomlevel]} },
-	    layout-grid-line-offset: { if: =scale.phone, then: 0, else: 1 },
-	    color: #878f8f,
-	    line-height:{$multiply: [20, =view.zoomlevel]},
-	    font-name: ChronicleSSmMedium-Italic,
-	    padding: [0, 0, 10, 0],
-        text-indent: 0
+	    color: #3b4343
     },
     .pullquote-p: {
-        font-size:{$multiply: [16, =view.zoomlevel]}
+        font-size: 32,
+        line-height: 36
     },
     .pullquote-tagline: {
-        font-size:{$multiply: [14, =view.zoomlevel]}
+        font-name: "ChronicleSSmMedium-Italic",
+        font-size: 16,
+        line-height: 24
+    },
+    .mark-quote-prologue: {
+        content: "\u201c",
+        text-indent: -12
+    },
+    .mark-quote-epilogue: {
+        content: "\u201d"
+    },
+    .pullquote-inset-cite: {
+        font-name: "ChronicleSSmMedium-Italic"
+    },
+    .pullquote-quote: {
+        font-name: "ChronicleDisplay-Light"
     }
+  },
+  {
+  	$associate: {
+  		flatmap: { $range: [0, 6] },
+  		let: x,
+  		in: [
+  			{ $join: [#byline-author-span-, =x] },
+  			{
+				if: =app.push.tags.author,
+				contains: =article.authors[x],
+				then: {
+					background-image: url(follow_on_icon.png),
+					options: { reference: { $join: [
+						"wsj:///unsubscribe?tag-group=author&tag=",
+						{ $urlencode: [=article.authors[x]]}
+					] } }
+				},
+				else: {
+					background-image: url(follow_off_icon.png),
+					options: { reference: { $join: [
+						"wsj:///subscribe?tag-group=author&tag=",
+						{ $urlencode: [=article.authors[x]]}
+					] } }
+				}
+			}
+		]
+	}
+  }
+  ]
 }

@@ -68,7 +68,7 @@
 					text-transform:uppercase,
 					color: #878f8f,
 					padding: [4, 0, 0, 19.5],
-					display: inherit
+					display: {if: =page.section, equals: "OPINION", then: inherit, else: {if: =article.category, equals: "Opinion", then: none, else: inherit}}
 				}
 			}
 		]

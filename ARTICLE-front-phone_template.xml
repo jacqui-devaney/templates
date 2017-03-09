@@ -6,7 +6,8 @@
 			width:=view.width,
 			height:{$multiply: [4, =view.height]},
 			options: {
-				indent: true
+				indent: true,
+				show_flashline: true
 			}
 		}
 	}</style>

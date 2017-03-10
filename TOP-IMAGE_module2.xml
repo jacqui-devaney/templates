@@ -66,7 +66,7 @@
 					display:{if: =options.show_byline, then:inherit, else:none}
 				},
 				.module_flashline: {
-					display: {if: =options.show_flashline, then:inherit, else:none},
+					display: {if: =page.section, equals: "OPINION", then: inherit, else: {if: =article.category, equals: "Opinion", then: none, else: inherit}},
 					layout-grid-line-offset: -13,
 					layout-grid-line: 20,
 					font-name: WhitneySSm-SemiBold,

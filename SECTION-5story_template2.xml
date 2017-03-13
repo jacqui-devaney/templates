@@ -113,19 +113,19 @@
 				},
 				#b2 : {
 					height: =size.continuation_height_large,
-					options: { show_body: true, small_headline: true, module: url(CONTINUATION-dynamic_module.xml), background_color: #00FFFF }
+					options: { show_body: true, show_flashline: true, small_headline: true, module: url(CONTINUATION-dynamic_module.xml), background_color: #00FFFF }
 				},
 				#b3 : {
 					height: =size.continuation_height_large,
-					options: { show_body: true, small_headline: true, background_color: #00FFFF }
+					options: { show_body: true, show_flashline: true, small_headline: true, background_color: #00FFFF }
 				},
 				#b4 : {
 					height: =size.continuation_height_large,
-					options: { show_body: true, small_headline: true, background_color: #00FFFF }
+					options: { show_body: true, show_flashline: true, small_headline: true, background_color: #00FFFF }
 				},
 				#b5 : {
 					height: =size.continuation_height_large,
-					options: { show_body: true, small_headline: true, background_color: #00FFFF }
+					options: { show_body: true, show_flashline: true, small_headline: true, background_color: #00FFFF }
 				}
 			}}
 		]

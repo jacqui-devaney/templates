@@ -18,7 +18,8 @@
 		$switch: [
 			{if: =portrait, then: {
 				#b1: {
-					options:{ large_headline:true, show_image:true}
+					options:{ large_headline:true, show_image:true},
+					padding: [-4, 0, 0, 0]
 				},
 				#deco: {
 					options:{ medium_headline:true}

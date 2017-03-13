@@ -62,13 +62,7 @@
 					display:{if: =options.show_byline, then:inherit, else:none}
 				},
 				.module_flashline: {
-					font-name: WhitneySSm-Medium,
-					font-size:12,
-					line-height: 18,
-					text-transform:uppercase,
-					color: #878f8f,
-					padding: [4, 0, 0, 19.5],
-					display: inherit
+					display: none
 				}
 			}
 		]

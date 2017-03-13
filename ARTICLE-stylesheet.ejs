@@ -30,7 +30,7 @@
 	},
 	.byline-author: {
 		if: =app.version, at-least: "8.4", then: {
-			padding: [0, 22, 0, 0],
+			padding: [1, 24, 0, 0],
 			background-position: right,
 			background-size: contain,
 			background-repeat: no-repeat,
@@ -158,14 +158,14 @@
 				if: =app.push.tags.author,
 				contains: =article.authors[x],
 				then: {
-					background-image: url(follow_on_icon.png),
+					background-image: url(default_follow_on.png),
 					options: { reference: { $join: [
 						"wsj:///unsubscribe?tag-group=author&tag=",
 						{ $urlencode: [=article.authors[x]]}
 					] } }
 				},
 				else: {
-					background-image: url(follow_off_icon.png),
+					background-image: url(default_follow_off.png),
 					options: { reference: { $join: [
 						"wsj:///subscribe?tag-group=author&tag=",
 						{ $urlencode: [=article.authors[x]]}

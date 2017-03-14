@@ -86,6 +86,7 @@
       "key": "image_size",
       "title": "Image Size",
       "type": "select",
+      "metadata": ["border"],
       "options": [
         {
          "label": "Dynamic",

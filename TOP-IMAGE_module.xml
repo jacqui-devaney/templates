@@ -62,7 +62,7 @@
 					display:{if: =options.show_byline, then:inherit, else:none}
 				},
 				.module_flashline: {
-					display: none
+					display: {if: =options.show_flashline, then:inherit, else:none}
 				}
 			}
 		]

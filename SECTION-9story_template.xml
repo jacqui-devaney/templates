@@ -97,7 +97,7 @@
 						}
 					},
 					padding: [{if: {$count:[=articles.b1.images.phone]}, more-than: 0, then: 0, else: 22}, 0, 0, 0],
-					options: { show_body: true, medium_headline: true, module: url(TOP-IMAGE_module.xml) }
+					options: { show_body: true, medium_headline: true, module: url(TOP-IMAGE_LN_module.xml) }
 				},
 				#b2 : {
 					height: =size.continuation_height_large,
@@ -139,7 +139,7 @@
 			}},
 			{if: =portrait, then: {
 				#b1:	{
-					options: { module: url(TOP-IMAGE_module2.xml) }
+					options: { module: url(TOP-IMAGE_LN_module.xml) }
 				},
 				#b2:	{
 					options: { top_border: true }
@@ -241,9 +241,9 @@
 	<box id="ad_placeholder" class="ad-banner" embed="pagedescription" />
 	<box id="marketstrap" embed="marketstrap" />
 
-	<box id="b1" embed="article" class="yposition-3 landscape-lines-24 portrait-lines-25 columns-8 xposition-1 maude unit_plain unit_418" module="TOP-IMAGE_module2.xml" />
-	<box id="b2" embed="article" class="portrait-yposition-29 landscape-yposition-3 portrait-lines-18 landscape-lines-17 columns-4 landscape-xposition-9 portrait-xposition-1  maude unit_plain unit_166" module="TOP-IMAGE_module2.xml" />
-	<box id="b3" embed="article" class="portrait-yposition-29 landscape-yposition-3 portrait-lines-18 landscape-lines-17 columns-4 landscape-xposition-13 portrait-xposition-5 maude unit_plain unit_166" module="TOP-IMAGE_module2.xml" />
+	<box id="b1" embed="article" class="yposition-3 landscape-lines-24 portrait-lines-25 columns-8 xposition-1 maude unit_plain unit_418" module="TOP-IMAGE_LN_module.xml" />
+	<box id="b2" embed="article" class="portrait-yposition-29 landscape-yposition-3 portrait-lines-18 landscape-lines-17 columns-4 landscape-xposition-9 portrait-xposition-1  maude unit_plain unit_166" module="TOP-IMAGE_LN_module.xml" />
+	<box id="b3" embed="article" class="portrait-yposition-29 landscape-yposition-3 portrait-lines-18 landscape-lines-17 columns-4 landscape-xposition-13 portrait-xposition-5 maude unit_plain unit_166" module="TOP-IMAGE_LN_module.xml" />
 	<box id="b4" embed="article" class="portrait-yposition-3 landscape-yposition-21 portrait-lines-7 landscape-lines-6 columns-4 xposition-9  maude unit_plain unit_50" module="CONTINUATION-dynamic_module2.xml" />
 	<box id="small_ad_container" class="phone_only maude unit_ad">
 		<box id="cube_ad" embed="fullpagead">

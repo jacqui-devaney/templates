@@ -97,7 +97,7 @@
 						}
 					},
 					padding: [{if: {$count:[=articles.b1.images.phone]}, more-than: 0, then: 0, else: 22}, 0, 0, 0],
-					options: { show_body: true, medium_headline: true, module: url(TOP-IMAGE_LN_module.xml) }
+					options: { show_body: true, medium_headline: true, module: url(TOP-IMAGE_module.xml) }
 				},
 				#b2 : {
 					height: =size.continuation_height_large,

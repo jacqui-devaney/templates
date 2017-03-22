@@ -77,6 +77,7 @@
 				},
 				.module_headline: { 
 					layout-grid-line-offset: {if: =options.show_flashline, then: 0, else: -30}
+					display: {if: =options.show_flashline, then:inherit, else:none}
 				}
 			}
 		]
@@ -172,8 +173,7 @@
 	<style>{
 		if: =options.show_opinion_dek, equals: true, then: {
 			.opinion_dek: {
-				display: inherit,
-				padding: [2, 0, 5, 0]
+				display: inherit
 			}
 		}
 	}

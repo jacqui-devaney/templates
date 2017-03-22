@@ -24,7 +24,7 @@
         "values": { "show_flashline": false }
       }]
     },  
-    {
+        {
       "key": "strap",
       "title": "Subsection Strap",
       "comment": "Note: hiding the strap disables the dynamic generation of the strap based on subsection mapping.",
@@ -39,4 +39,5 @@
     }
   ],
   "metadata": ["headline", "flashline", "summary", "subsection"]
+
 }

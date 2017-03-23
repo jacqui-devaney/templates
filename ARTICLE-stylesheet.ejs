@@ -28,13 +28,13 @@
 		color: #2b3333,
 		padding: [0,0,{$multiply: [20, =view.zoomlevel]},0]
 	},
-	.byline-author: {
+	.byline-author-mark: {
 		if: =app.version, at-least: "8.4", then: {
-			padding: [1, 24, 0, 0],
+			content: ".....",
+			color: transparent,
 			background-position: right,
 			background-size: contain,
-			background-repeat: no-repeat,
-			white-space: nowrap
+			background-repeat: no-repeat
 		}
 	},
 	h2: {
@@ -153,7 +153,7 @@
   		flatmap: { $range: [0, 6] },
   		let: x,
   		in: [
-  			{ $join: [#byline-author-span-, =x] },
+  			{ $join: [#byline-author-mark-, =x] },
   			{
 				if: =app.push.tags.author,
 				contains: =article.authors[x],

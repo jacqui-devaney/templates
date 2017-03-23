@@ -90,13 +90,6 @@
                 display: {if: =page.section, equals: "OPINION", then: none, else: {if: =article.category, equals: "Opinion", then: inherit, else: none}}
             },
             .module_flashline:{
-                font-name: WhitneySSm-Medium,
-                font-size: 12,
-                line-height: 18,
-                text-transform: uppercase,
-                color: #878f8f,
-                padding: [4, 0, 0, 19.5],
-                display: {if: =page.section, equals: "OPINION", then: inherit, else: {if: =article.category, equals: "Opinion", then: none, else: inherit}}
                 display: none
             },
 			.module_headline: {

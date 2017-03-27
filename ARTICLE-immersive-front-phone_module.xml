@@ -32,6 +32,12 @@
 		},
 		#media_container: {
 			padding: [0, 0, 22, -20]
+		},
+		#continue_flow: {
+			flow: foobar
+		},
+		#continue_break: {
+			page-break-after: always
 		}
 	}</style>
 
@@ -66,7 +72,6 @@
 
 	<panel id="body_container">
 		<panel id="byline-below-media" embed="byline-pubdate"/>
-		<panel class="article_body" embed="body"/>
 	</panel>
-
+	<panel id="continue_flow"><panel id="continue_break"></panel><panel></panel></panel>
 </jpml>

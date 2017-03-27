@@ -30,7 +30,13 @@
         },
         #byline-below-media: {
         	if: =size.media.is_inset, then: { display: none }
-        }
+        },
+		#continue_flow: {
+			flow: foobar
+		},
+		#continue_break: {
+			page-break-after: always
+		}
 	}</style>
 
     <box id="prototype">
@@ -63,7 +69,6 @@
 	    </box>
 
 		<panel id="byline-below-media" embed="byline-pubdate"/>
-		<panel class="article_body" embed="body"/>
 	</panel>
-
+	<panel id="continue_flow"><panel id="continue_break"></panel><panel></panel></panel>
 </jpml>

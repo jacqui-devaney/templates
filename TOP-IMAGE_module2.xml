@@ -66,17 +66,7 @@
 					display:{if: =options.show_byline, then:inherit, else:none}
 				},
 				.module_flashline: {
-					display: {if: =page.section, equals: "OPINION", then: inherit, else: {if: =article.category, equals: "Opinion", then: none, else: inherit}},
-					layout-grid-line-offset: -13,
-					layout-grid-line: 20,
-					font-name: WhitneySSm-SemiBold,
-					font-size: 11,
-					line-height: 18,
-					color: #a7afaf,
-					text-transform: uppercase
-				},
-				.module_headline: { 
-					layout-grid-line-offset: {if: =options.show_flashline, then: 0, else: -30}
+					display: {if: =options.show_flashline, then:inherit, else:none}
 				}
 			}
 		]
@@ -172,8 +162,7 @@
 	<style>{
 		if: =options.show_opinion_dek, equals: true, then: {
 			.opinion_dek: {
-				display: inherit,
-				padding: [2, 0, 5, 0]
+				display: inherit
 			}
 		}
 	}

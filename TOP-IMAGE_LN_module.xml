@@ -1,11 +1,13 @@
 <jpml id="TOP-IMAGE_module">
-	<style src="GLOBAL-stylesheet.ejs" />
-	<style src="GLOBAL_MODULES-stylesheet.ejs" />
+	<style src="GLOBAL-stylesheet2.ejs" />
+	<style src="GRID-extras2.ejs" />
+	<style src="GLOBAL_MODULES-stylesheet2.ejs" />
 	<style src="PHONE-MODULES-stylesheet.ejs" />
 	<style>{
 		jpml: {
+			padding: { if: =options.show_image, then: [0, 0, 0, 0], else:none },
 			background-color: =options.background_color,
-			border-color: #cfd7d7
+			border-color: #e7ebeb
 		}
 	}</style>
 	<style>{
@@ -14,38 +16,40 @@
 				{ if: =options.top_border, then: {
 					jpml: {
 						border-width: [1, 0, 0, 0],
-						padding: [5, 10, 0, 0]
+						padding: { if: =options.show_image, then: [9, 0, 0, 0], else:none }
 					}
 				}},
 				{ if: =options.left_border, then: {
 					jpml: {
-						border-width: [0, 0, 0, 1],
-						padding: [0, 0, 0, 10]
+						border-width: [0, 0, 0, 1]
 					}
 				}},
 				{ if: =options.right_border, then: {
 					jpml: {
-						border-width: [0, 1, 0, 0],
-						padding: [0, 10, 0, 0]
+						border-width: [0, 1, 0, 0]
+					}
+				}},
+				{ if: =options.bottom_border, then: {
+					jpml: {
+						border-width: [0, 0, 1, 0]
 					}
 				}},
 				{ if: true, then: {
 					jpml: {
-						border-width: [0, 0, 0, 0],
-						padding: [0, 0, 0, 0]
+						border-width: [0, 0, 0, 0]
 					}
 				}}
 			]},
 			{
 				#body: {
 					display: {if: =options.hide_body, then:none, else:inherit}
-			},
+				},
 				image: {
 					pixels-per-point-x:1,
 					pixels-per-point-y:1,
 					image-scale: 1,
 					display: { if: =options.show_image, then:inherit, else:none },
-					height: {$multiply: [=view.width, .665 ]},
+					height: {$multiply: [{$ceiling: [{$divide: [{$multiply: [=view.width, .651]}, 10]}]}, 10]},
 					options: {
 						$switch: [
 							{ if: =options.F_image, then: {match: { width:571, height:226, max-height:226 } } },
@@ -62,7 +66,17 @@
 					display:{if: =options.show_byline, then:inherit, else:none}
 				},
 				.module_flashline: {
-					display: {if: =options.show_flashline, then:inherit, else:none}
+					display: {if: =options.show_flashline, then:inherit, else:none},
+					layout-grid-line-offset: -13,
+					layout-grid-line: 20,
+					font-name: WhitneySSm-SemiBold,
+					font-size: 11,
+					line-height: 18,
+					color: #a7afaf,
+					text-transform: uppercase
+				},
+				.module_headline: { 
+					layout-grid-line-offset: {if: =options.show_flashline, then: 0, else: -30}
 				}
 			}
 		]
@@ -70,11 +84,11 @@
 	<style>{
 		if: =scale.phone, then: {
 			.module_headline: {
-		padding: [4, 19.5, 4, 19.5]
+				padding: [-10, 19.5, 4, 19.5]
 			},
 			image: {
 				height: {$multiply: [=view.width, .665 ]},
-				display:inherit,
+				display: inherit,
 				padding: [0, 4, 0, 4]
 			},
 			.byline: {
@@ -89,16 +103,17 @@
 			#summary: {
 				display: inherit,
 				text-align:left,
-				padding: [0, 20, 8, 20]
+				padding: [0, 20, 0, 20]
 			},
 			.opinion_dek: {
 				display: none
 			},
 			#article_status: {
-				padding: [{if: =page.section, equals: "OPINION", then: 8, else: {if: =article.category, equals: "Opinion", then: 29, else: 8}}, 0, 0, 4],
-				left: 0,
-				width: 13,
-				height: 13,
+				position: relative,
+				padding: [{if: =options.show_body, then: 1, else: 5}, 4, 0, 4],
+				left: -20,
+				width: 16,
+				height: 16,
 				options: {
 					identifier: =article.id
 				}
@@ -112,24 +127,24 @@
 				}, else: {if: =view.height, less-than: 200, then: [0, 20, 14, 20], else: [0, 4, 0, 4]}
 			},
 			.opinion_flashline: {
-				font-name: WhitneySSm-Medium,
+				font-name: WhitneySSm-Semibold,
 				font-size:12,
-				line-height: 18,
+				line-height: 22,
 				text-transform:uppercase,
 				color: #878f8f,
-				padding: [4, 0, 0, 19.5],
-                display: {if: =page.section, equals: "OPINION", then: none, else: {if: =article.category, equals: "Opinion", then: inherit, else: none}}
+				padding: [-11, 0, 4, 20],
+				display: {if: =page.section, equals: "OPINION", then: none, else: {if: =article.category, equals: "Opinion", then: inherit, else: none}}
 			}
 		}, else: {
-            .opinion_flashline: {
-                display: {if: =page.section, equals: "OPINION", then: none, else: {if: =article.category, equals: "Opinion", then: inherit, else: none}},
-                font-name:DJ5Exchange-Bold,
-                font-size:12,
-                line-height:12,
-                color: =page.tint,
-                text-transform:uppercase,
-                padding:[0, 0, 6, 0]
-            },
+			.opinion_flashline: {
+				display: {if: =page.section, equals: "OPINION", then: none, else: {if: =article.category, equals: "Opinion", then: inherit, else: none}},
+				font-name:DJ5Exchange-Bold,
+				font-size:12,
+				line-height:12,
+				color: =page.tint,
+				text-transform:uppercase,
+				padding:[0, 0, 6, 0]
+			},
 			.opinion_dek:{
 				font-name:WhitneySSm-Medium,
 				font-size: 12,
@@ -157,28 +172,31 @@
 	<style>{
 		if: =options.show_opinion_dek, equals: true, then: {
 			.opinion_dek: {
-				display: inherit
+				display: inherit,
+				padding: [2, 0, 5, 0]
 			}
 		}
 	}
 	</style>
-	 <box id="deco_container" embed="deco-image">
+	<box id="deco_container" embed="deco-image">
 		 <image class="summary-image"/>
-	 </box>
-	 <panel id="vertical">
-     <p class="opinion_flashline">OPINION</p>
-	 	 <panel id="headline">
-			 <p class="module_flashline"><mark class="flashline-mark" /></p>
-	 		 <p class="module_headline"><mark class="m_headline" /></p>
-	 		 <h2 class="opinion_dek"><mark class="subhed-mark" /></h2>
-	 	 </panel>
-		<box id="article_status" embed="article-status"/>
-	 	<panel id="body">
-	 		 <p class="byline"><mark class="byline-mark"/></p>
-	 		 <p id="summary" class="body"><mark class="body-first-p-mark" /><mark class="module_summary" /></p>
-	 		<panel class="body">
-	 			<p><mark class="body-first-p-mark" /><mark class="body-mark"/></p>
-	 		</panel>
-	 	</panel>
+	</box>
+	<panel id="vertical" >
+		<p class="opinion_flashline">OPINION</p>
+		<panel id="headline">
+			 <p class="module_flashline small-vertical-grid-module"><mark class="flashline-mark" /></p>
+			 <p class="module_headline"><mark class="m_headline" /></p>
+			 <h2 class="opinion_dek"><mark class="subhed-mark" /></h2>
+		</panel>
+		<panel id="body" class="vertical-grid-module">
+			<p class="byline"><mark class="byline-mark"/></p>
+			<p id="summary" class="body"><mark class="body-first-p-mark" /><mark class="module_summary" /></p>
+			<panel class="body">
+				<p>
+					<mark class="body-first-p-mark" />
+					<mark class="body-mark"/>
+				</p>
+			</panel>
+		</panel>
 	 </panel>
 </jpml>

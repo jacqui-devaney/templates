@@ -3,7 +3,7 @@
     {
       "key": "image",
       "title": "Hide/Show Image",
-    "comment":"Checking 'Show' will only show an image ONLY if an appropriately sized image can be found.",
+		"comment":"Checking 'Show' will only show an image ONLY if an appropriately sized image can be found.",
       "type": "toggle",
       "options": [
         {
@@ -37,11 +37,11 @@
         {
           "label": "G 553w 369h",
           "values": {
-            "F_image": false,
-            "OZ_image": false,
-            "C_image": false,
-            "DV_image": false,
-            "G_image": true
+	          "F_image": false,
+	          "OZ_image": false,
+	          "C_image": false,
+	          "DV_image": false,
+	          "G_image": true
           }
         },
         {
@@ -155,4 +155,5 @@
     }
   ],
   "metadata": ["headline", "flashline", "summary", "deckline", "subsection"]
+
 }

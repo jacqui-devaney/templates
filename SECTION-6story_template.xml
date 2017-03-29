@@ -55,12 +55,12 @@
 				#b1:	{
 					top:0,
 					height:582,
-					options:{ large_headline:true, show_image:true}
+					options:{ large_headline:true, show_image:true, show_flashline:false}
 				},
 				#b2:	{
 					top:586,
 					height:219,
-					options:{ medium_headline:true, show_body:true, top_border:true, show_flashline:true}
+					options:{ medium_headline:true, show_body:true, top_border:true, show_flashline: true}
 				},
 				#b3:	{
 					top:0,
@@ -94,7 +94,7 @@
 				#b1:	{
 					top:0,
 					height:563,
-					options:{ large_headline:true, show_image:true}
+					options:{ large_headline:true, show_image:true, show_flashline:false}
 				},
 				#b2:	{
 					top:0,

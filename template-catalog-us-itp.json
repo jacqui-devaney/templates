@@ -470,6 +470,10 @@
         "boxes": [
           {
             "id": "b1",
+            "images": {}
+          },
+          {
+            "id": "deco",
             "images": {
               "tablet": {
                 "width": 546,
@@ -499,8 +503,7 @@
             }
           }
         ]
-      },
-      {
+      },{
         "section": "FRONT_SECTION",
         "filename": "FRONT-5story-lowerdeco_template.xml",
         "title": "FRONT-5story-lowerdeco_template.xml",
@@ -508,6 +511,10 @@
         "boxes": [
           {
             "id": "b1",
+            "images": {}
+          },
+          {
+            "id": "deco",
             "images": {
               "tablet": {
                 "width": 546,
@@ -537,8 +544,7 @@
             }
           }
         ]
-      },
-      {
+      },{
         "section": "FRONT_SECTION_ITP",
         "filename": "FRONT-5story-lowerdeco_template.xml",
         "title": "FRONT-5story-lowerdeco_template.xml",
@@ -546,6 +552,10 @@
         "boxes": [
           {
             "id": "b1",
+            "images": {}
+          },
+          {
+            "id": "deco",
             "images": {
               "tablet": {
                 "width": 546,
@@ -575,8 +585,7 @@
             }
           }
         ]
-      },
-      {
+      },{
         "section": "FRONT_SECTION_ITP",
         "filename": "FRONT-5story-lowerdeco_template.xml",
         "title": "FRONT-5story-lowerdeco_template.xml",
@@ -584,6 +593,10 @@
         "boxes": [
           {
             "id": "b1",
+            "images": {}
+          },
+          {
+            "id": "deco",
             "images": {
               "tablet": {
                 "width": 546,

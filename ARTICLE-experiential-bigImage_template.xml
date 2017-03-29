@@ -1,0 +1,85 @@
+<jpml id="ARTICLE-front_template">
+	<style src="GLOBAL-stylesheet.ejs" />
+	<style src="GLOBAL_MODULES-stylesheet.ejs" />
+	<style src="ARTICLE-stylesheet.ejs" />
+	<style src="PHONE-MODULES-stylesheet.ejs" />
+	<style src="MEDIA-stylesheet.ejs" />
+	<style>{
+		jpml: {
+			background-color: =options.background_color
+		}
+	}</style>
+	<style>{
+		jpml: { min-height: 0 },
+		.article_body: {
+			hyphens: auto,
+			flow: article_body
+		},
+		.article_flashline: {
+            font-name: WhitneySSm-Medium,
+            font-size: 12,
+            color: #878f8f,
+            line-height: 18 
+        },
+        #byline-in-header: {
+        	if: =size.media.is_inset, else: { display: none }
+        },
+        #byline-below-media: {
+        	if: =size.media.is_inset, then: { display: none }
+        }
+	}</style>
+	<style> {
+		if: =article.type, equals: "Experiential", then: {
+			.article_flashline: {
+            	font-name: WhitneySSm-Medium,
+            	font-size: 12,
+            	color: #878f8f,
+            	line-height: 18,
+            	padding: [-10,20,0,20]
+        	},
+        	#media_container: {
+				display: {if: =page.hasmedia, then: inherit, else: none},
+				padding: {if: =scale.phone, then: [-8, 0, 22, 0], else: [0, 0, 5, 0] },
+				top: 0,
+				width: =size.media.width,
+				border-width: [0, =size.media.right_border, 0, =size.media.left_border],
+				border-color: transparent,
+				anchor-x: { if: =page.number, equals: 0, else: center },
+				layout-grid-line: 0
+			}
+		}
+    }</style>
+
+    <box id="prototype">
+    	<box id="byline-pubdate-prototype">
+			<p class="article_byline" embed="byline"></p>
+			<p class="article_pubdate">Updated <span embed="pubdate-string"/></p>
+    	</box>
+    </box>
+
+    <box id="media_container">
+			<p id="media_title"><mark id="mark_media_title"/></p>
+	        <panel id="media_vr_header">
+	            <p id="media_vr_header_left"><mark id="mark_media_vr_header_left"/></p>
+	            <p id="media_vr_header_right"><mark id="mark_media_vr_header_right"/></p>
+	        </panel>
+	        <box id="media_asset" embed="media"/>
+			<p id="media_vr_footer"><mark id="mark_media_vr_footer"/></p>
+	        <p id="media_vr_link"><a href="http://wsj.com/virtual-reality"><mark id="mark_media_vr_link"/></a></p>
+	    </box>
+
+	<p class="article_flashline" embed="flashline"/>
+
+	<panel id="header_top">
+		<p class="article_headline"><span embed="grouphed"/></p>
+		<h2 class="article_subhed" embed="subhed" />
+		<panel id="byline-in-header" embed="byline-pubdate"/>
+	</panel>
+
+	<panel id="body_container">
+
+		<panel id="byline-below-media" embed="byline-pubdate"/>
+		<panel class="article_body" embed="body"/>
+	</panel>
+
+</jpml>

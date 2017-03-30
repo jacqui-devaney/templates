@@ -51,8 +51,6 @@ CIO, CFO, CMO, and Risk & Compliance all require affinity and article templates 
 
 ## Phantom Ads
 
-*test*
-
 The phantom ad units are: "383422586", "383422226", "383421746", "440015306"
 
 ## Debugging

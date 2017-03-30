@@ -56,7 +56,7 @@ CIO, CFO, CMO, and Risk & Compliance all require affinity and article templates 
 The phantom ad units are: "383422586", "383422226", "383421746", "440015306"
 
 ## Debugging
-
+*Test*
 To debug ads you can display the passed in ads dictionary with this `ejs` and `JPML` pair. Good files to add this to are the `TOP-IMAGE_module.xml` for section fronts and the `ARTICLE-front_module.xml` for articles.
 
 	<style>{

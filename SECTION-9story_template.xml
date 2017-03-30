@@ -101,7 +101,7 @@
 				},
 				#b2 : {
 					height: =size.continuation_height_large,
-					options: { show_body: true, small_headline: true, module: url(CONTINUATION-dynamic_module.xml), show_flashline: true }
+					options: { show_body: true, small_headline: true, module: url(CONTINUATION-dynamic_module.xml)}
 				},
 				#b3 : {
 					height: =size.continuation_height_large,

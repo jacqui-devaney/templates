@@ -5,11 +5,11 @@
   "main": "Gulpfile.js",
   "repository": {
     "type": "git",
-    "url": "https://github.dowjones.net/DJMobile/templates-wsj.git"
+    "url": "https://github.com/dowjones-mobile/templates-wsj"
   },
   "devDependencies": {
-    "slingshot": "git+https://github.dowjones.net/djmobile/slingshot",
-    "gulp": "^3.9.0"
+    "gulp": "^3.9.0",
+    "slingshot": "git+ssh://git@github.com:dowjones-mobile/slingshot.git"
   },
   "keywords": [
     "gulp",

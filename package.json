@@ -16,6 +16,9 @@
     "templates",
     "javascript"
   ],
+  "scripts": {
+    "postinstall": "cd node_modules/iconv && node-gyp rebuild"
+  },
   "author": "Andrew Cabrera",
   "license": "ISC"
 }

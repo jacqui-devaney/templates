@@ -12,6 +12,7 @@ else
 	exit 1
 fi
 
+# The prebuild script needs to sit next to the .xcodeproj file
 echo "Copying BuddyBuild prebuild step into the T3PaginationKit folder"
 cp $BUDDYBUILD_PREBUILD_FILE $PAGINATIONKIT_FOLDER/$BUDDYBUILD_PREBUILD_FILE
 
